@@ -4,6 +4,179 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-pcep3002-deep-review",
+      "title": "PCEP-30-02 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "PCEP-30-02"
+      ],
+      "results": [
+        {
+          "exam_code": "PCEP-30-02",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCEP-30-02-python-certified-entry-level-programmer.md",
+          "baseline_sha256": "1e9fa37210b6717523007bd99ade60ea326549f4acbe133f7c97450f6fa67c6d",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Web reader retrieved full current HTML and all five PDF pages as extracted text after direct timeouts. Manual comparison confirms PCEP-30-02 remains active with 15 numbered objectives/84 bullets and 18/29/25/28 weights. PCEP-30-03 remains announced/in development; no successful automated hash comparison or snapshot rewrite."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected official Python 3.13 reference/tutorial and PEP 8 sections read with explicit boundaries. Four original public blocks actually executed with 136 checks on existing CPython 3.13.14; versioned source header 3.13.15 and general tutorial 3.14.7 disclosed."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current credential/version table and dated syllabus/policy reviewed. Q3 2026 announcement alone does not prove PCEP-30-03 release. No unseen announcement or paid booking availability inferred."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Complete public Edube, practice-store, Microsoft and Pluralsight descriptions read. 42-hour Edube listing, five practice launches and 12-month redemption validity, four Microsoft modules and 47-hour Pluralsight headline separated from paid-content claims. Three selected Pluralsight courses total 6h15m."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Direct Python Institute/Harvard requests time out, two paid sources returned HTTP 403 and Cisco/YouTube render shells. Syllabus introductory count, practice weights and account-role instructions disagree across vendor pages. Paid interiors, purchase UI, exact PCEP-30-03 availability and human review remain unverified."
+            }
+          },
+          "findings": [
+            {
+              "id": "pcep3002-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Boolean operators can return non-Boolean values",
+              "url": "https://docs.python.org/3.13/reference/expressions.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCEP-30-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Official expression rules return the selected operand for and/or; original examples verify integers, strings and empty lists.",
+              "recommendation": "Clarify operand values, short-circuiting and bitwise contrast with executed traces.",
+              "disposition": "applied",
+              "source_id": "python313-expressions",
+              "resolution": "Clarify operand values, short-circuiting and bitwise contrast with executed traces."
+            },
+            {
+              "id": "pcep3002-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Spelling mistakes have different failure stages",
+              "url": "https://docs.python.org/3.13/tutorial/errors.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCEP-30-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "A fixed pritn call compiles and raises NameError at execution; malformed iff syntax is rejected during compilation.",
+              "recommendation": "Replace blanket lexical-failure wording with concrete syntax/runtime examples.",
+              "disposition": "applied",
+              "source_id": "python313-errors",
+              "resolution": "Replace blanket lexical-failure wording with concrete syntax/runtime examples."
+            },
+            {
+              "id": "pcep3002-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Method results and copy depth require explicit tracing",
+              "url": "https://docs.python.org/3.13/library/stdtypes.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCEP-30-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "String find/split return integer/list values; dictionary views are dynamic; repeated nested lists share inner objects.",
+              "recommendation": "Add original executed return-type, identity, view and independent-row examples.",
+              "disposition": "applied",
+              "source_id": "python313-types",
+              "resolution": "Add original executed return-type, identity, view and independent-row examples."
+            },
+            {
+              "id": "pcep3002-deep-4",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Displayed objective entries are the scope authority",
+              "url": "https://pythoninstitute.org/pcep-exam-syllabus/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCEP-30-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "HTML block 4 introductory count disagrees with its four numbered objectives and 23 bullets; PDF entries agree with the displayed syllabus. Practice weights also differ from the canonical table.",
+              "recommendation": "Map all 15 numbered objectives and 84 bullets, retain 18/29/25/28 and disclose inconsistencies without inventing scope or scoring.",
+              "disposition": "applied",
+              "source_id": "pcep-30-02-syllabus",
+              "resolution": "Map all 15 numbered objectives and 84 bullets, retain 18/29/25/28 and disclose inconsistencies without inventing scope or scoring."
+            },
+            {
+              "id": "pcep3002-deep-5",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Public certification metadata is separate from paid content",
+              "url": "https://pythoninstitute.org/pcep/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCEP-30-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The current public credential page lists an exam from USD69, a USD29 practice option and two free aligned courses; it does not establish paid lesson quality or exact account behavior.",
+              "recommendation": "Retain the verified public metadata, label prices as volatile, and distinguish source listing review from paid content or account actions.",
+              "disposition": "applied",
+              "source_id": "pcep-certification-page",
+              "resolution": "Retain the verified public metadata, label prices as volatile, and distinguish source listing review from paid content or account actions."
+            },
+            {
+              "id": "pcep3002-deep-6",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Future version and paid booking remain unverified",
+              "url": "https://pythoninstitute.org/pcep/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCEP-30-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "PCEP-30-03 is still labeled in development despite its Q3 2026 announced target; actual paid product and account UI were not inspected.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped 84 syllabus bullets across all 15 numbered objectives. Repaired failure-stage, Boolean-operand, copy, method-return and scope explanations; preserved and improved 40 answers. Four public code blocks passed 136 offline checks, including three worked scenarios. Refreshed course metadata and disclosed conflicting vendor counts/weights and practice-role instructions. Direct primary fetches, paid interiors, current exam rollout and human review remain qualified. Same-context AI review; human review pending. See docs/research/2026-09-29-pcep-30-02-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 5,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-29-crisc-deep-review",
       "title": "CRISC complete guide and learning-content review",
       "rubric_version": 1,

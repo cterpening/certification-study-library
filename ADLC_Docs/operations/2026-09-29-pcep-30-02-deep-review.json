@@ -1,0 +1,2534 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "PCEP-30-02",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/PCEP-30-02-python-certified-entry-level-programmer.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "6a9c98e85c4d62aea1c94b3857101cd9398bae00e1285e3a250d6144bce0b1b2",
+  "guide_after_sha256": "26fec862e3024f72f6d9d6e1dda7ed45711102d89791114649a23b3492113243",
+  "prior_records": {
+    "exam": {
+      "code": "PCEP-30-02",
+      "level": "beginner",
+      "vendor_id": "python-institute",
+      "title": "PCEP Certified Entry-Level Python Programmer",
+      "status": "changing",
+      "study_guide_url": "https://pythoninstitute.org/pcep-exam-syllabus/",
+      "guide_path": "guides/PCEP-30-02-python-certified-entry-level-programmer.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite is published. Practice predicting, writing, running, testing, and debugging small Python 3 programs across execution and syntax, scalar types and operators, console I/O, conditionals and loops, collections and aliasing, functions and scope, generators/recursion, and exception hierarchy/handling. PCEP-30-03 is announced for Q3 2026, but the live page still identifies PCEP-30-02 as current; confirm the purchased code and matching syllabus."
+    },
+    "review": {
+      "id": "pcep-30-02-2026-09-02-source-validation",
+      "exam_code": "PCEP-30-02",
+      "guide_path": "guides/PCEP-30-02-python-certified-entry-level-programmer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/pcep-30-02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "fc0a0b67b1f15a4430075b889978a82e162d98642f0b822768bc3796c322ca57",
+      "objective_coverage": [
+        {
+          "objective_group": "Computer Programming and Python Fundamentals (18%)",
+          "guide_sections": [
+            "Section 1",
+            "Scenario 1",
+            "Labs 1–3"
+          ]
+        },
+        {
+          "objective_group": "Control Flow — Conditional Blocks and Loops (29%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Data Collections — Tuples, Dictionaries, Lists, and Strings (25%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 2–3",
+            "Labs 5–6"
+          ]
+        },
+        {
+          "objective_group": "Functions and Exceptions (28%)",
+          "guide_sections": [
+            "Section 4",
+            "All scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 12,
+        "reachable": 10,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All four PCEP-30-02 blocks and published subtopics are mapped through execution/syntax, literals/types/operators/I/O, traceable decisions and loops, sequence/mapping/mutability/aliasing reasoning, functions/scope/recursion/generation, and exception hierarchy/handling. Three integrated programming scenarios, eight hands-on labs and 40 original checks are included. The canonical syllabus's 18/29/25/28 weights are retained and the official practice product's conflicting 18/28/26/28 display is labeled rather than normalized. PCEP-30-03 remains a scheduled Q3 2026 watch item while the live page identifies 30-02 as current. No recalled/live item, answer dump or copied course question is used."
+    },
+    "sources": [
+      {
+        "id": "pcep-30-02-syllabus",
+        "title": "PCEP-30-02 Exam Syllabus",
+        "url": "https://pythoninstitute.org/pcep-exam-syllabus/",
+        "publisher": "OpenEDG Python Institute",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEP-30-02"
+        ],
+        "notes": "Canonical detailed four-block 18/29/25/28 syllabus, item distribution, objective hierarchy, active status and minimally qualified candidate profile."
+      },
+      {
+        "id": "pcep-certification-page",
+        "title": "PCEP Certified Entry-Level Python Programmer",
+        "url": "https://pythoninstitute.org/pcep/",
+        "publisher": "OpenEDG Python Institute",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEP-30-02"
+        ],
+        "notes": "Current exam version, format, duration, languages, price, validity, delivery, retake policy, aligned courses and PCEP-30-03 Q3 2026 announcement."
+      },
+      {
+        "id": "python-3-tutorial",
+        "title": "The Python Tutorial",
+        "url": "https://docs.python.org/3/tutorial/",
+        "publisher": "Python Software Foundation",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEP-30-02",
+          "PCAP-31-03"
+        ],
+        "notes": "Authoritative current Python 3 language tutorial for validating stable syntax and behavior; broader than the entry-level boundary."
+      },
+      {
+        "id": "openedg-python-essentials-1",
+        "title": "Python Essentials - Part 1",
+        "url": "https://edube.org/study/pe1",
+        "publisher": "OpenEDG Python Institute / Edube",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEP-30-02"
+        ],
+        "notes": "Free official aligned beginner course with four syllabus modules and 42-hour listed study time."
+      },
+      {
+        "id": "cisco-python-essentials-1",
+        "title": "Python Essentials 1",
+        "url": "https://www.netacad.com/courses/python-essentials-1",
+        "publisher": "Cisco Networking Academy / OpenEDG Python Institute",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEP-30-02"
+        ],
+        "notes": "Free official partner delivery of Python Essentials 1. The public page requires JavaScript; verify the current enrollment and duration estimate."
+      },
+      {
+        "id": "openedg-pcep-practice",
+        "title": "PCEP-30-02 Practice Test Compendium",
+        "url": "https://ums.edube.org/products/0-pi-pcep-3002-pt",
+        "publisher": "OpenEDG Python Institute",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEP-30-02"
+        ],
+        "notes": "Official practice voucher with study pages, section sets, and multiple full-test launches. Its displayed 18/28/26/28 weights currently conflict with the canonical 18/29/25/28 syllabus."
+      },
+      {
+        "id": "microsoft-learn-python-fundamentals",
+        "title": "Get Started with Python Programming: Part 1 - Fundamentals",
+        "url": "https://learn.microsoft.com/en-us/training/paths/get-started-with-python-fundamentals/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "third-party-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEP-30-02"
+        ],
+        "notes": "Free 3h12m beginner path covering console I/O, strings, variables, types, numeric operations, conversions and conditionals; not complete PCEP coverage."
+      },
+      {
+        "id": "pluralsight-python-essentials",
+        "title": "Python Essentials",
+        "url": "https://www.pluralsight.com/paths/python-essentials",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEP-30-02"
+        ],
+        "notes": "46-hour broad path in active production. Select core-language courses and labs rather than consuming the entire path for PCEP."
+      },
+      {
+        "id": "oreilly-learning-python-6",
+        "title": "Learning Python, 6th Edition",
+        "url": "https://www.oreilly.com/library/view/learning-python-6th/9781098171292/",
+        "publisher": "O'Reilly / Mark Lutz",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEP-30-02"
+        ],
+        "notes": "February 2025, 1,172-page, 42h20m comprehensive language reference. Select relevant early chapters; it is broader and deeper than PCEP."
+      },
+      {
+        "id": "udemy-python-pcep-wiech",
+        "title": "Python PCEP: Become Certified Entry-Level Python Programmer",
+        "url": "https://www.udemy.com/course/python-pcep/",
+        "publisher": "Udemy / Adrian Wiech",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEP-30-02"
+        ],
+        "notes": "4h27m PCEP-30-02 course listed as updated August 2026, with coding exercises, block quizzes and a mock exam. Keep the official syllabus authoritative."
+      },
+      {
+        "id": "harvard-cs50-python",
+        "title": "CS50's Introduction to Programming with Python",
+        "url": "https://cs50.harvard.edu/python/",
+        "publisher": "Harvard University / CS50",
+        "authority_class": 2,
+        "source_type": "third-party-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEP-30-02",
+          "PCAP-31-03"
+        ],
+        "notes": "Free OpenCourseWare with lectures, notes, transcripts and problems. It is not certification-aligned; select the portions that match the current objective map."
+      },
+      {
+        "id": "youtube-freecodecamp-python-beginner",
+        "title": "Learn Python - Full Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=rfscVS0vtbw",
+        "publisher": "freeCodeCamp.org / Giraffe Academy",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEP-30-02"
+        ],
+        "notes": "Popular free approximately 4h26m beginner video. Older but useful for fundamentals; reconcile details and omissions with the current official syllabus and Python documentation."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "14d7f825f7b1d1bdddf565a073a77f62554c95b9f6d3904ae8af8b6ea002b3e6",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "e16dcabe1c7ec764cad1e49fee16e1d27b6b4146f80f6d4027705b1f89e18af6",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "acc2b58a0b34eb881139187ad30a355a00fe42c35ee54ab35f9c5dd03e2783a5",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "c0f743eeae4d5e1440758bd21a5ac6ccb84b19b08cc208fc105e93f53ca07dcf",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "2385e270b98950ad4f2300d6866fe844641fc28e5fc5257e5b1b71e2993df733",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "47371e5a4ed851112fa65398a17769d4001f2f68e953567a892df200c2ba6946",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "af7f7cee3229bb6dbd9d6c8598efc72c01cebdf04547771d52e0d8e9fb2c22a1",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "2dfce2930a9f0dcb7034328af7c0247900f83b491678a4954d0af41171a005fe",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "0b70577db6b23690cc7f098c36064320921bafe529aa1f475795370b36e467c8",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "63607d2bbc9ab3396a4ee558bdbfd90c53314fa982d98213edb82ca85b213ee9",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "f00bbb390a48639172be9c7f94c4b63330dd97aeb1d4e6604ef4cf76d9bf03be",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "0caa72691417eee943b91cf40b2bd49fc9739c6d7445f6ee40565794bb16d435",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "7d8243e13442f7bc17a17e1fc8c1068e9a76125e4cbe576398bb47640f267b0e",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "026d728a868a805f87159e584858ed8ee758e2f6f9d921b2ee019e2d9b6a72a2",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "44025b47f56791ae16993cc45e6bd1b5f785f0f7f5c306055575c2d255322cd3",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "aafe28c1c2efadd9e93bdf0ce3b47858597f36263678d8581b67a3414c6638d9",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "a94161b58ceb8a8af438cb7f4a294cba1878cf003286cf7b5093748b65e7e8df",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "3581aaa83f918439292bc3f406ac7b9812170c07ea2282996cec800ff0a70dc0",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "66c80a7a779fbb811c68bcaca61f1cef8c908d49656db2c4d10a6de445acf03d",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "c97c90a723e8eadd744bcb7b14d8af743d3234ba720c7a650bb5aae3fdd650f0",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "c18140086d6eae06d19295e016671eebbc267f11222db9cc6f2fdc4f1cff1bdb",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "7ef501c4c1e8c3df42e1144e69f5b8e1511eac33c3532edd0a6c6b609ceb54f9",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 10,
+      "objective_sha256": "38865734c6e0fcf44b461c050c27a848a246ea8b2e402ab8f55844aee0168945",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 11,
+      "objective_sha256": "b7d8da4f20becf420622a0dd00316d130872406308fe7a1eeb2975fcbdfe4c7e",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "c3eb004cd180fa025b7030ee5aec61cf511a3f33766e727f36796ffa7de14b08",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "8315053b1a1c5e4a2f08ef15d3c087cf3aaefe11c020f1169518885d813af021",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "5b16f23b6b029976fe6284c3cda78a3dd9911a6b32067871d2040890377a60d2",
+      "guide_sections": [
+        "1. Computer programming and Python fundamentals — 18%",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "e343a753785adae5059a837119e7f93842819f6e775f8016fd58a139ee481278",
+      "guide_sections": [
+        "2. Control flow — 29%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "a1ae8f22bc9c095489ce2b45228e5f8588259ae7cbab8174f18e6b3b2f50350a",
+      "guide_sections": [
+        "2. Control flow — 29%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "71bbbada196da08e8f9fda47a830544263010832fda7b4f6a4182ee2a50a8651",
+      "guide_sections": [
+        "2. Control flow — 29%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "46e5958196c9b444fd57a03b7b4b0f28972832cf2f73980480cc86b4adbf480a",
+      "guide_sections": [
+        "2. Control flow — 29%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "ae9faaebba6f94f952f579d44ace33c1db903c6a26f719df786219a11b039c48",
+      "guide_sections": [
+        "2. Control flow — 29%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "9c4c236a9b6ed7caf43da9723ca68fc17b040b2c70ec155b0d9fa9e86bebe822",
+      "guide_sections": [
+        "2. Control flow — 29%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "9d55e527f699ed6663d8c3cbeb1bd9c6ba1953bec7b9cbdbc78188c653dcf290",
+      "guide_sections": [
+        "2. Control flow — 29%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "ccc4f9e22ac67398706f45a96949adb1ab9dd212549026ea5fda797062bdcda1",
+      "guide_sections": [
+        "2. Control flow — 29%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "00378877c8b9bc769e132ce15a85ab2c65f002b8b2322a9835a127f49b32167e",
+      "guide_sections": [
+        "2. Control flow — 29%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "aee25ced9d5a52e399010ccefe2a07948984fde4295a46bc2a6a9479d202af6d",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "e6a64e6f93fd2d12719b43d18d1db9268fa37d3d236d3d054fe2518555ed30fd",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "d29d426273f564404d10b0ca4344ce4543879270e1f993bac900583e12310863",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "652ab5e56edc7d88f968bc150b87e47591107dbb18a019444afb1e09b51a3180",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "1f3dc83055aeafc660b232ad6f1b18102116fa22c8dd13aee883da6ba8debbb5",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 6,
+      "objective_sha256": "008d8d656713d94b5b01c32755e3c5300f91af9fd0755fc215634d6c0488bf7a",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 7,
+      "objective_sha256": "8d20b884a5544efee37897d532837d508883c3254024b5b593f5da23d1c2480e",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 8,
+      "objective_sha256": "462278b1c2da4ac5f34384cdb81aea438ffef19f8c2e3f40b6b67850605198d8",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 9,
+      "objective_sha256": "bbeed1862e958c2e8e695bc00a2bf128086a6bd477cb35c5fbd96cdd85c84e18",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 10,
+      "objective_sha256": "83235950cb05839a216e64797fc34755ef5f0d0fb43f862545c89e08c7188396",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 11,
+      "objective_sha256": "6defdf8929cb3531be704a0a846cb8c7d1f645a5d9ed126db4ae2bc94ce6a13b",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 12,
+      "objective_sha256": "523408b6de6f2a81d801de53541a098ab1b114c1adccd415425a3f579533d98d",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "8d3d91c2735d06a7f55a9e9cde635ce9094d8942ceb1888d3deda6f2ce010350",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "56c4a4aacc92ab255eddaa905fdbd98f34a628768980d226d041b3c0147ac6fe",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "9e5339403fb28b6a726a059f0f1130033db0489b12172ea6402a191853b83c88",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "8e510a1b7a6c9ed2ff7dba934ae5c42cf930585a05a5bfd2309e32eda98bb5c9",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "0b2dcb396d84db90bfc510bf85347bb96d6e0f958f2d48cdc27de7acf684ee07",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "85667b61a0f35d22b71720502b70fab2ba7029329062a42ca879bfc8143697a1",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "a9f0c2473eecc8cb218540b31bc014f669b47a6da87c3e75954a079bae75567a",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "7f1db6517ad1a4f72496a19059e9ee12136f6dd7a9a747fb5ae1f0123ea92855",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "5f041db569c639d300760056f9ad218bc54235956fc2b133fef98af16d13dfdb",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "d701e61b7331297c27550e7e2032fd78a017882ab191f9913fb8f85eecbc54b8",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "011f107837b2addbeb1097462a502dd4b288559abd44739db64ad36945d82d6e",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "d6bc6ee76f633df87f19e251c32adb045439ac3ed5b7b7b26a11920496c06f8b",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 6,
+      "objective_sha256": "997a13a9d48dc48269a3ef62989e517a71e9f124b5f90af31b0cc2197729cbf5",
+      "guide_sections": [
+        "3. Data collections — 25%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "ed7765a54733afb4ee100423acbdc52b16510afc30a43f552d7613cc06d2ad11",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "f2a3538dac11cfca108c5895984de86e3c20b7a232be6ad46883d6119f59fc53",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "ddaafeb42f0fd5614e5eec0befb71b3e84c5c0aee3338c392e6e7550fb2a7cf7",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "8d9cbc8cd5b85afdc5cc26351fecfbe0aa9569006ae9f8d247272601224ebc9e",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "fd90d7079d34b088bccac025bb9caa8c5656168618d4ffc10d5a516897df1535",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "af79d18a6e144ee575d4d256c660b2394680b03f1caca630ac1084bd5df1a7b1",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "b646279c065aa95b5de2829191f49dace0ff4019f619cee78f45685843302b49",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "2762ee9be14731a81889245ff1278e06b58d9c5b4e8303afae1b48bf5e5dc1df",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "ec7eefeefd732644feec06557774030a132da3e1566290620cd8d1c2e08de057",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "5a0b12c60a4e38a70982d16e8cfc05230ad052736032f0f96eecee5edb51a3fd",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "41460391b8934c80e8f2b40b883a2f183f1dd0177d00bfda9ccd69ea430721f3",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 4,
+      "objective_sha256": "539ec52b5821d6503038d8e251770942ff18b928c6e52ddec13b5f769b6f99de",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 5,
+      "objective_sha256": "7bc7c81c403c2f5b69118c6efecc5a7d14ebd3dad1ae453081f3c8d3225f9663",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 6,
+      "objective_sha256": "fb186ca960fd5785ec4e7b2dddfed9a77c43d19f8e7f6c695a5f84b138056d98",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 7,
+      "objective_sha256": "8d05d2e77214e44c846b64e5175d382627fbd9c90130cdaf320b975676390e17",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 8,
+      "objective_sha256": "8fc50ae593a1fc8f7697213761539300fb5b85d33a39bfc7dd9c5c84c2d48ee4",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 9,
+      "objective_sha256": "643e50d94f55aa5da6c5fd38b0c2fcbb50c8d573693b8dd76c6069dbd3e768d2",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 10,
+      "objective_sha256": "a755d34932d9770593618425c990b2915b32b17dd8c3d603aa3bb8305614d2f7",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 11,
+      "objective_sha256": "ee2e1f432bc694e013fa818aa6865ec8f0c4d73e86cb51d11afd0ab50392d4af",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 1,
+      "objective_sha256": "8dcb37623b65ee56301ac9577e906ec7417a20814347b2792fa096c6e0f1edef",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 2,
+      "objective_sha256": "329dcb4ea89216e14ddc0dedeb9ac9148edeb3cd4c9dd562a700662b514384ae",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 3,
+      "objective_sha256": "b4fbbe9a33b5550acfea6b9d109ac5caec476958577c89b57aaac886593c6677",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 4,
+      "objective_sha256": "2b7502022352728650510ffc86f52d54a81fc596b0c08bc2ddc176055755aa81",
+      "guide_sections": [
+        "4. Functions and exceptions — 28%",
+        "Integrated scenarios",
+        "Executed trace workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [
+      "PCEP-30-02"
+    ],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "PCEP-30-02",
+        "title": "PCEP Certified Entry-Level Python Programmer",
+        "url": "https://pythoninstitute.org/pcep-exam-syllabus/",
+        "guide_path": "guides/PCEP-30-02-python-certified-entry-level-programmer.md",
+        "snapshot_path": "data\\objective-snapshots\\pcep-30-02-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\pcep-30-02-official-status.json",
+        "status": "error",
+        "changed": false,
+        "error": "URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 25,
+    "reachable": 18,
+    "access_blocked": 2,
+    "missing_or_error": 5
+  },
+  "source_fetches": [
+    {
+      "id": "pcep-30-02-syllabus",
+      "url": "https://pythoninstitute.org/pcep-exam-syllabus/",
+      "checked_at": "2026-09-29T19:19:10.902861+00:00",
+      "health": {
+        "id": "pcep-30-02-syllabus",
+        "url": "https://pythoninstitute.org/pcep-exam-syllabus/",
+        "checked_at": "2026-09-29T19:19:10+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pcep-exam-syllabus/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "pcep-certification-page",
+      "url": "https://pythoninstitute.org/pcep/",
+      "checked_at": "2026-09-29T19:19:10.903862+00:00",
+      "health": {
+        "id": "pcep-certification-page",
+        "url": "https://pythoninstitute.org/pcep/",
+        "checked_at": "2026-09-29T19:19:10+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pcep/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "python-3-tutorial",
+      "url": "https://docs.python.org/3/tutorial/",
+      "checked_at": "2026-09-29T19:19:10.904391+00:00",
+      "health": {
+        "id": "python-3-tutorial",
+        "url": "https://docs.python.org/3/tutorial/",
+        "checked_at": "2026-09-29T19:19:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3/tutorial/",
+        "content_type": "text/html",
+        "page_title": "The Python Tutorial",
+        "canonical_url": "https://docs.python.org/3/tutorial/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "b58e930004bfc98b8cf20279a440b5e116881060ca526084ee4f8c1c73bfbdae",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3/tutorial/",
+      "sha256": "637e34ba8e004a7f5815c2665140657e29097bbcecbab5ebd8c78ad5347352b1",
+      "text_characters": 7108
+    },
+    {
+      "id": "openedg-python-essentials-1",
+      "url": "https://edube.org/study/pe1",
+      "checked_at": "2026-09-29T19:19:11.199503+00:00",
+      "health": {
+        "id": "openedg-python-essentials-1",
+        "url": "https://edube.org/study/pe1",
+        "checked_at": "2026-09-29T19:19:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edube.org/study/pe1",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Edube Interactive :: Python Essentials - Part 1",
+        "canonical_url": "https://edube.org/study/pe1",
+        "duration_signals": [
+          "42 hours"
+        ],
+        "signal_fingerprint": "8a71d3a85ca02742b357e9eb7ad674f0f30dbfce608e5b103498ada2cbe6ce25",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edube.org/study/pe1",
+      "sha256": "0f4c736711baa537011b872ab5b1b5479763564ec348e1d447b68f5421ff9ad2",
+      "text_characters": 5167
+    },
+    {
+      "id": "cisco-python-essentials-1",
+      "url": "https://www.netacad.com/courses/python-essentials-1",
+      "checked_at": "2026-09-29T19:19:12.085168+00:00",
+      "health": {
+        "id": "cisco-python-essentials-1",
+        "url": "https://www.netacad.com/courses/python-essentials-1",
+        "checked_at": "2026-09-29T19:19:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.netacad.com/courses/python-essentials-1",
+        "content_type": "text/html",
+        "page_title": "Python Essentials 1 – Skills for All",
+        "canonical_url": "https://www.netacad.com/courses/python-essentials-1",
+        "duration_signals": [],
+        "signal_fingerprint": "da9cd173eb12b86487f12d966dbf75392972d42df12683487c1fc51a40c65ac4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.netacad.com/courses/python-essentials-1",
+      "sha256": "b379dadf0d49e9ef162bd31d2c619147468e312c8323002845718c73eccdb9e7",
+      "text_characters": 59
+    },
+    {
+      "id": "openedg-pcep-practice",
+      "url": "https://ums.edube.org/products/0-pi-pcep-3002-pt",
+      "checked_at": "2026-09-29T19:19:12.431458+00:00",
+      "health": {
+        "id": "openedg-pcep-practice",
+        "url": "https://ums.edube.org/products/0-pi-pcep-3002-pt",
+        "checked_at": "2026-09-29T19:19:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://ums.edube.org/products/0-pi-pcep-3002-pt",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "OpenEDG - Store",
+        "canonical_url": "https://ums.edube.org/products/0-pi-pcep-3002-pt",
+        "duration_signals": [],
+        "signal_fingerprint": "0d8c1c21d6abaaf07cec14421346a76164f2473003e08cd0b94f7e2cc10cd2f3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://ums.edube.org/products/0-pi-pcep-3002-pt",
+      "sha256": "fea1d12811365c95e457ecdd88ceca2755ee2592bbc0e608c01d461518260b9d",
+      "text_characters": 3334
+    },
+    {
+      "id": "microsoft-learn-python-fundamentals",
+      "url": "https://learn.microsoft.com/en-us/training/paths/get-started-with-python-fundamentals/",
+      "checked_at": "2026-09-29T19:19:13.138917+00:00",
+      "health": {
+        "id": "microsoft-learn-python-fundamentals",
+        "url": "https://learn.microsoft.com/en-us/training/paths/get-started-with-python-fundamentals/",
+        "checked_at": "2026-09-29T19:19:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/get-started-with-python-fundamentals/",
+        "content_type": "text/html",
+        "page_title": "Get Started with Python Programming: Part 1 - Fundamentals - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/get-started-with-python-fundamentals/",
+        "duration_signals": [],
+        "signal_fingerprint": "dc782da2cdaa814091eabf3162f2a9b64ab5d170213eb7067009efc56b886e7f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/get-started-with-python-fundamentals/",
+      "sha256": "b090cd662f51833efdaa383a82e6e48ab83aff0984d8dee75b87d78c0b614188",
+      "text_characters": 1467
+    },
+    {
+      "id": "pluralsight-python-essentials",
+      "url": "https://www.pluralsight.com/paths/python-essentials",
+      "checked_at": "2026-09-29T19:19:13.684898+00:00",
+      "health": {
+        "id": "pluralsight-python-essentials",
+        "url": "https://www.pluralsight.com/paths/python-essentials",
+        "checked_at": "2026-09-29T19:19:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/python-essentials",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Python Essentials",
+        "canonical_url": "https://www.pluralsight.com/paths/python-essentials",
+        "duration_signals": [
+          "10 minutes",
+          "47 Hours"
+        ],
+        "signal_fingerprint": "b6f32a868eb9c420c43c72a3159342dec60ae2bc153c9c4edcc8fe9d3a3ebc3f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/python-essentials",
+      "sha256": "56c0901e591c69aedf766cdfb0cc8a44c889fb5117d4c6bcb81c04027df2a5fa",
+      "text_characters": 14739
+    },
+    {
+      "id": "oreilly-learning-python-6",
+      "url": "https://www.oreilly.com/library/view/learning-python-6th/9781098171292/",
+      "checked_at": "2026-09-29T19:19:14.192145+00:00",
+      "health": {
+        "id": "oreilly-learning-python-6",
+        "url": "https://www.oreilly.com/library/view/learning-python-6th/9781098171292/",
+        "checked_at": "2026-09-29T19:19:14+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/learning-python-6th/9781098171292/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "udemy-python-pcep-wiech",
+      "url": "https://www.udemy.com/course/python-pcep/",
+      "checked_at": "2026-09-29T19:19:14.334926+00:00",
+      "health": {
+        "id": "udemy-python-pcep-wiech",
+        "url": "https://www.udemy.com/course/python-pcep/",
+        "checked_at": "2026-09-29T19:19:14+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/python-pcep/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "harvard-cs50-python",
+      "url": "https://cs50.harvard.edu/python/",
+      "checked_at": "2026-09-29T19:19:14.417827+00:00",
+      "health": {
+        "id": "harvard-cs50-python",
+        "url": "https://cs50.harvard.edu/python/",
+        "checked_at": "2026-09-29T19:19:14+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://cs50.harvard.edu/python/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "youtube-freecodecamp-python-beginner",
+      "url": "https://www.youtube.com/watch?v=rfscVS0vtbw",
+      "checked_at": "2026-09-29T19:19:29.519452+00:00",
+      "health": {
+        "id": "youtube-freecodecamp-python-beginner",
+        "url": "https://www.youtube.com/watch?v=rfscVS0vtbw",
+        "checked_at": "2026-09-29T19:19:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=rfscVS0vtbw",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Learn Python - Full Course for Beginners [Tutorial]",
+        "canonical_url": "https://www.youtube.com/watch?v=rfscVS0vtbw",
+        "duration_signals": [],
+        "signal_fingerprint": "92642985f5298bd56cd31d1700cfe5b9cb9546ecba401d0135cfcdaeca7947ec",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=rfscVS0vtbw",
+      "sha256": "d20c5a193c4ba6988177a7632a1a6acc9b5468272847c7f9fe84c99cc435bb5a",
+      "text_characters": 214
+    },
+    {
+      "id": "pcep-testing-policies",
+      "url": "https://pythoninstitute.org/pcep-testing-policies",
+      "checked_at": "2026-09-29T19:25:18.512535+00:00",
+      "health": {
+        "id": "pcep-testing-policies",
+        "url": "https://pythoninstitute.org/pcep-testing-policies",
+        "checked_at": "2026-09-29T19:25:18+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pcep-testing-policies",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "pcep-syllabus-pdf",
+      "url": "https://pythoninstitute.org/assets/627e61bc29de3989767095.pdf",
+      "checked_at": "2026-09-29T19:25:18.513452+00:00",
+      "health": {
+        "id": "pcep-syllabus-pdf",
+        "url": "https://pythoninstitute.org/assets/627e61bc29de3989767095.pdf",
+        "checked_at": "2026-09-29T19:25:18+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/assets/627e61bc29de3989767095.pdf",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "python313-datastructures",
+      "url": "https://docs.python.org/3.13/tutorial/datastructures.html",
+      "checked_at": "2026-09-29T19:25:18.513919+00:00",
+      "health": {
+        "id": "python313-datastructures",
+        "url": "https://docs.python.org/3.13/tutorial/datastructures.html",
+        "checked_at": "2026-09-29T19:25:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/tutorial/datastructures.html",
+        "content_type": "text/html",
+        "page_title": "5. Data Structures",
+        "canonical_url": "https://docs.python.org/3/tutorial/datastructures.html",
+        "duration_signals": [],
+        "signal_fingerprint": "2c8eec6117bd1e7629d54154623a7ff35b4b25c3bd33f6b04d214869b1c42d2b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/tutorial/datastructures.html",
+      "sha256": "6a2af5257a46816f7ed036e5db86ca2e10919fa835d774077b28d1cbbe390f96",
+      "text_characters": 23868
+    },
+    {
+      "id": "python313-expressions",
+      "url": "https://docs.python.org/3.13/reference/expressions.html",
+      "checked_at": "2026-09-29T19:25:18.870664+00:00",
+      "health": {
+        "id": "python313-expressions",
+        "url": "https://docs.python.org/3.13/reference/expressions.html",
+        "checked_at": "2026-09-29T19:25:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/reference/expressions.html",
+        "content_type": "text/html",
+        "page_title": "6. Expressions",
+        "canonical_url": "https://docs.python.org/3/reference/expressions.html",
+        "duration_signals": [],
+        "signal_fingerprint": "5e69a6eefb32dfe4d96ae30f26d84ea0f7e1269cca0c19da915b6e8a691b7b31",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/reference/expressions.html",
+      "sha256": "c487dbe82d1b884eef55522c1f1b50d5bc948acba145b21fd08734e1cf73e5be",
+      "text_characters": 68724
+    },
+    {
+      "id": "python313-errors",
+      "url": "https://docs.python.org/3.13/tutorial/errors.html",
+      "checked_at": "2026-09-29T19:25:19.157811+00:00",
+      "health": {
+        "id": "python313-errors",
+        "url": "https://docs.python.org/3.13/tutorial/errors.html",
+        "checked_at": "2026-09-29T19:25:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/tutorial/errors.html",
+        "content_type": "text/html",
+        "page_title": "8. Errors and Exceptions",
+        "canonical_url": "https://docs.python.org/3/tutorial/errors.html",
+        "duration_signals": [],
+        "signal_fingerprint": "b40ac60cabe17dfbe924f42f7068d420dcba816dd64e25336ad6a9851da689b3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/tutorial/errors.html",
+      "sha256": "b0fa9a216d2c3fd9d1d64195ad9a5abd63e12dd78e925e65350b3cd0dec36d4e",
+      "text_characters": 22087
+    },
+    {
+      "id": "python313-exceptions",
+      "url": "https://docs.python.org/3.13/library/exceptions.html",
+      "checked_at": "2026-09-29T19:25:19.381888+00:00",
+      "health": {
+        "id": "python313-exceptions",
+        "url": "https://docs.python.org/3.13/library/exceptions.html",
+        "checked_at": "2026-09-29T19:25:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/builtins/exceptions.html",
+        "content_type": "text/html",
+        "page_title": "Built-in Exceptions",
+        "canonical_url": "https://docs.python.org/3/builtins/exceptions.html",
+        "duration_signals": [],
+        "signal_fingerprint": "b1efdacd7e92b950e7bc523181b88484eabadf64241120554a2ad5a33d85b1cf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/builtins/exceptions.html",
+      "sha256": "6ba84d2631f80e13ad4a3c36a7d471705fc7da35c205048b581588e281d1f024",
+      "text_characters": 34922
+    },
+    {
+      "id": "python313-classes",
+      "url": "https://docs.python.org/3.13/tutorial/classes.html",
+      "checked_at": "2026-09-29T19:25:19.759325+00:00",
+      "health": {
+        "id": "python313-classes",
+        "url": "https://docs.python.org/3.13/tutorial/classes.html",
+        "checked_at": "2026-09-29T19:25:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/tutorial/classes.html",
+        "content_type": "text/html",
+        "page_title": "9. Classes",
+        "canonical_url": "https://docs.python.org/3/tutorial/classes.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d29475fe35cb575c3c06dac14271a90a6be0320e6d2f9da774021df8ae5d8e9a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/tutorial/classes.html",
+      "sha256": "aea3ad424780f4bc155039d8a0f3e2aa3d7f37278e49b24b96d3f17be92f17df",
+      "text_characters": 34814
+    },
+    {
+      "id": "python313-lexical",
+      "url": "https://docs.python.org/3.13/reference/lexical_analysis.html",
+      "checked_at": "2026-09-29T19:25:19.973578+00:00",
+      "health": {
+        "id": "python313-lexical",
+        "url": "https://docs.python.org/3.13/reference/lexical_analysis.html",
+        "checked_at": "2026-09-29T19:25:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/reference/lexical_analysis.html",
+        "content_type": "text/html",
+        "page_title": "2. Lexical analysis",
+        "canonical_url": "https://docs.python.org/3/reference/lexical_analysis.html",
+        "duration_signals": [],
+        "signal_fingerprint": "5410ab4de4ea5fad223bdfaa03f2ea57e7abda36459ebc6a1ae75e08ffc50402",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/reference/lexical_analysis.html",
+      "sha256": "bf08922eb36489630177e88598a13da7ebf14284ef73ea8310fde1a18538a6c1",
+      "text_characters": 32865
+    },
+    {
+      "id": "python313-float",
+      "url": "https://docs.python.org/3.13/tutorial/floatingpoint.html",
+      "checked_at": "2026-09-29T19:25:20.195803+00:00",
+      "health": {
+        "id": "python313-float",
+        "url": "https://docs.python.org/3.13/tutorial/floatingpoint.html",
+        "checked_at": "2026-09-29T19:25:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/tutorial/floatingpoint.html",
+        "content_type": "text/html",
+        "page_title": "15. Floating-Point Arithmetic: Issues and Limitations",
+        "canonical_url": "https://docs.python.org/3/tutorial/floatingpoint.html",
+        "duration_signals": [],
+        "signal_fingerprint": "8835da6f87f94273f8c7ab151132db6bc8c6fb66505aafa3363bdfb07c4c62ed",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/tutorial/floatingpoint.html",
+      "sha256": "7546f1613f646ff93b663a78ee1a853409da5b728fbcc7a5e445d9db801400cc",
+      "text_characters": 13004
+    },
+    {
+      "id": "python313-builtins",
+      "url": "https://docs.python.org/3.13/library/functions.html",
+      "checked_at": "2026-09-29T19:25:20.419904+00:00",
+      "health": {
+        "id": "python313-builtins",
+        "url": "https://docs.python.org/3.13/library/functions.html",
+        "checked_at": "2026-09-29T19:25:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/builtins/functions.html",
+        "content_type": "text/html",
+        "page_title": "Built-in Functions",
+        "canonical_url": "https://docs.python.org/3/builtins/functions.html",
+        "duration_signals": [],
+        "signal_fingerprint": "39038bbc67029ad5b5517e724a69dd482b9d1f95c81f69163b6f29707153c8f8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/builtins/functions.html",
+      "sha256": "926b3da0f5bdf0b3d3b376c4ed42508b5c9a91ca6286b292b1a4f24f3d0e5cfc",
+      "text_characters": 77893
+    },
+    {
+      "id": "python313-control-flow",
+      "url": "https://docs.python.org/3.13/tutorial/controlflow.html",
+      "checked_at": "2026-09-29T19:26:45.252398+00:00",
+      "health": {
+        "id": "python313-control-flow",
+        "url": "https://docs.python.org/3.13/tutorial/controlflow.html",
+        "checked_at": "2026-09-29T19:26:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/tutorial/controlflow.html",
+        "content_type": "text/html",
+        "page_title": "4. More Control Flow Tools",
+        "canonical_url": "https://docs.python.org/3/tutorial/controlflow.html",
+        "duration_signals": [],
+        "signal_fingerprint": "80fc72cdf98a887730e8bfc2b67d55483d1807974f5a6849bf34f6570e9eadd2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/tutorial/controlflow.html",
+      "sha256": "757a26aef2bdbad226fc5e52c370a84fcc6596e74adeac8ba6820b8f674e7eca",
+      "text_characters": 36778
+    },
+    {
+      "id": "pep-8-style-guide",
+      "url": "https://peps.python.org/pep-0008/",
+      "checked_at": "2026-09-29T19:26:45.253101+00:00",
+      "health": {
+        "id": "pep-8-style-guide",
+        "url": "https://peps.python.org/pep-0008/",
+        "checked_at": "2026-09-29T19:26:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://peps.python.org/pep-0008/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "PEP 8 – Style Guide for Python Code | peps.python.org",
+        "canonical_url": "https://peps.python.org/pep-0008/",
+        "duration_signals": [],
+        "signal_fingerprint": "2aa97037b316b7fa38aedd940936d7d4635eeb65363312f92e41470ffbb8af08",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://peps.python.org/pep-0008/",
+      "sha256": "9f4e669bee0fab4b1b0e60321b9ca8822b2f1e61a6ebe0243760294eaba0248e",
+      "text_characters": 44302
+    },
+    {
+      "id": "python313-types",
+      "url": "https://docs.python.org/3.13/library/stdtypes.html",
+      "checked_at": "2026-09-29T19:31:04.071955+00:00",
+      "health": {
+        "id": "python313-types",
+        "url": "https://docs.python.org/3.13/library/stdtypes.html",
+        "checked_at": "2026-09-29T19:31:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/builtins/stdtypes.html",
+        "content_type": "text/html",
+        "page_title": "Built-in Types",
+        "canonical_url": "https://docs.python.org/3/builtins/stdtypes.html",
+        "duration_signals": [],
+        "signal_fingerprint": "00330b7d3715c9f679c07698c5fb340f4efd818ce9cb90292160a7de65ceb478",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/builtins/stdtypes.html",
+      "sha256": "bef32bd4644b700fcc7643f446950971c51aa5658590a8d419e0409995ce2034",
+      "text_characters": 173181
+    }
+  ],
+  "added_source_ids": [
+    "pcep-testing-policies",
+    "pcep-syllabus-pdf",
+    "python313-datastructures",
+    "python313-expressions",
+    "python313-errors",
+    "python313-exceptions",
+    "python313-classes",
+    "python313-lexical",
+    "python313-float",
+    "python313-builtins",
+    "python313-types"
+  ],
+  "findings": [
+    {
+      "id": "pcep3002-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Boolean operators can return non-Boolean values",
+      "url": "https://docs.python.org/3.13/reference/expressions.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCEP-30-02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Official expression rules return the selected operand for and/or; original examples verify integers, strings and empty lists.",
+      "recommendation": "Clarify operand values, short-circuiting and bitwise contrast with executed traces.",
+      "disposition": "applied",
+      "source_id": "python313-expressions",
+      "resolution": "Clarify operand values, short-circuiting and bitwise contrast with executed traces."
+    },
+    {
+      "id": "pcep3002-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Spelling mistakes have different failure stages",
+      "url": "https://docs.python.org/3.13/tutorial/errors.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCEP-30-02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "A fixed pritn call compiles and raises NameError at execution; malformed iff syntax is rejected during compilation.",
+      "recommendation": "Replace blanket lexical-failure wording with concrete syntax/runtime examples.",
+      "disposition": "applied",
+      "source_id": "python313-errors",
+      "resolution": "Replace blanket lexical-failure wording with concrete syntax/runtime examples."
+    },
+    {
+      "id": "pcep3002-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Method results and copy depth require explicit tracing",
+      "url": "https://docs.python.org/3.13/library/stdtypes.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCEP-30-02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "String find/split return integer/list values; dictionary views are dynamic; repeated nested lists share inner objects.",
+      "recommendation": "Add original executed return-type, identity, view and independent-row examples.",
+      "disposition": "applied",
+      "source_id": "python313-types",
+      "resolution": "Add original executed return-type, identity, view and independent-row examples."
+    },
+    {
+      "id": "pcep3002-deep-4",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Displayed objective entries are the scope authority",
+      "url": "https://pythoninstitute.org/pcep-exam-syllabus/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCEP-30-02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "HTML block 4 introductory count disagrees with its four numbered objectives and 23 bullets; PDF entries agree with the displayed syllabus. Practice weights also differ from the canonical table.",
+      "recommendation": "Map all 15 numbered objectives and 84 bullets, retain 18/29/25/28 and disclose inconsistencies without inventing scope or scoring.",
+      "disposition": "applied",
+      "source_id": "pcep-30-02-syllabus",
+      "resolution": "Map all 15 numbered objectives and 84 bullets, retain 18/29/25/28 and disclose inconsistencies without inventing scope or scoring."
+    },
+    {
+      "id": "pcep3002-deep-5",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Public certification metadata is separate from paid content",
+      "url": "https://pythoninstitute.org/pcep/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCEP-30-02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The current public credential page lists an exam from USD69, a USD29 practice option and two free aligned courses; it does not establish paid lesson quality or exact account behavior.",
+      "recommendation": "Retain the verified public metadata, label prices as volatile, and distinguish source listing review from paid content or account actions.",
+      "disposition": "applied",
+      "source_id": "pcep-certification-page",
+      "resolution": "Retain the verified public metadata, label prices as volatile, and distinguish source listing review from paid content or account actions."
+    },
+    {
+      "id": "pcep3002-deep-6",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Future version and paid booking remain unverified",
+      "url": "https://pythoninstitute.org/pcep/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCEP-30-02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "PCEP-30-03 is still labeled in development despite its Q3 2026 announced target; actual paid product and account UI were not inspected.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "pcep-certification-page",
+      "review": "Current public version/status table read through web reader. No separate unseen release announcement, newsletter or community post adopted."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 4,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 136,
+      "python_blocks_executed": 4,
+      "python_version": "3.13.14",
+      "trace_workbook_checks": 82,
+      "additional_execution_checks": 54,
+      "trace_labels": [
+        "bases",
+        "scientific notation",
+        "unary minus and power",
+        "power groups right",
+        "negative division",
+        "integer division identity",
+        "negative divisor",
+        "bitwise",
+        "and returns operand",
+        "or returns operand",
+        "not returns bool",
+        "short circuit",
+        "float approximation",
+        "exact binary fraction",
+        "numeric text",
+        "decimal text is not integer text",
+        "incompatible addition",
+        "string repetition",
+        "invalid binary literal",
+        "missing colon",
+        "keyword spelling changes grammar",
+        "valid name can fail at runtime",
+        "unreached runtime failure",
+        "style is not syntax",
+        "descending range",
+        "incompatible range direction",
+        "zero range step",
+        "empty loop else",
+        "continue permits else",
+        "break skips else",
+        "inner break only",
+        "while false condition reaches else",
+        "return skips loop else",
+        "outer identities",
+        "shallow nested sharing",
+        "copied rows isolated",
+        "outer append isolated",
+        "repeated row alias",
+        "independent rows",
+        "sorted copy",
+        "sort return",
+        "sort mutation",
+        "pop returns removed item",
+        "insert and delete",
+        "reverse slice",
+        "overlong slice",
+        "direct index past end",
+        "missing list value",
+        "singleton tuple",
+        "tuple nested mutation",
+        "tuple with list is unhashable",
+        "dictionary view updates",
+        "present zero differs from absent",
+        "items carry pairs",
+        "missing dictionary key",
+        "escape has one character",
+        "string transform",
+        "string methods have varied result types",
+        "first mutable default",
+        "second mutable default",
+        "fresh default state",
+        "local rebind return",
+        "caller sees mutation",
+        "assignment makes local name",
+        "global changes module binding",
+        "argument binding",
+        "duplicate argument",
+        "unknown argument",
+        "implicit return",
+        "recursive base case",
+        "recursive small result",
+        "recursive negative input rejected",
+        "generator call is deferred",
+        "first yield",
+        "state before resumption",
+        "second yield",
+        "generator exhaustion",
+        "generator side effects",
+        "exception crosses call boundary",
+        "different handler",
+        "normal path",
+        "hierarchy"
+      ],
+      "additional_labels": [
+        "area valid input and actual prompts",
+        "area zero accepted in original snippet",
+        "area negative accepted in original snippet",
+        "area decimal width rejected",
+        "area empty width rejected",
+        "area invalid height rejected",
+        "odd-number loop output",
+        "complete scenario stdout",
+        "quote A boundary 1",
+        "quote B boundary 1",
+        "quote A boundary 999",
+        "quote B boundary 999",
+        "quote A boundary 1000",
+        "quote B boundary 1000",
+        "quote A boundary 1001",
+        "quote B boundary 1001",
+        "quote A boundary 4999",
+        "quote B boundary 4999",
+        "quote A boundary 5000",
+        "quote B boundary 5000",
+        "quote A boundary 5001",
+        "quote B boundary 5001",
+        "quote A boundary 10000",
+        "quote B boundary 10000",
+        "quote rejects '0'",
+        "quote rejects '-1'",
+        "quote rejects '10001'",
+        "quote rejects ''",
+        "quote rejects '2.5'",
+        "quote rejects 'nan'",
+        "quote rejects 'oops'",
+        "quote rejects unsupported zone",
+        "quote normalized zone",
+        "quote conversion recovery",
+        "empty scores are missing",
+        "zero score is not missing",
+        "maximum score",
+        "cutoff selected correctly",
+        "negative score",
+        "oversized score",
+        "boolean score rejected by chosen rule",
+        "string score rejected",
+        "copy preserves original scores",
+        "empty inventory",
+        "first match can be zero",
+        "last match",
+        "absent item",
+        "empty search",
+        "search standalone first duplicate",
+        "stock constructor rejects duplicates",
+        "negative stock",
+        "fractional stock",
+        "low stock excludes exact threshold",
+        "empty low stock"
+      ],
+      "scenario_stdout": "Quote: 18.00\nInvalid weight or zone\n({'Mina': 70.0, 'Lee': 50.0, 'Ari': None}, ['Mina'])\n90.0 70.0\n0 None\n['P', 'R']\n",
+      "public_example_sha256": [
+        "d8fac5aa44319718c80e262955ccc2b54c0cbd115c43b3a2a8e732b5a2c20772",
+        "5c415096368bcf0ecd0ceb0720c021765d3efbacef2449f94c3e8ebdca2c2555",
+        "a4f7b5cb112f6c65f7c3cde7f2057a32afef07a2d25fafea96143a5c661c89a2",
+        "3e470aeffe864b3a85431e2ece3aa841b336c5c07bdb533a0f665e16042502eb"
+      ],
+      "execution_boundary": "Four original guide blocks executed locally on existing CPython 3.13.14, with simulated stdin for console cases, captured stdout and fixed in-memory data. No package installation, network, accounts, exam attempt or course completion. Eight broader learner activities remain proposed.",
+      "scope_limits": "The workbook checks selected fundamental behavior, not every interpreter or input. Shipping rates, score thresholds and inventory rules are fictional. The small recursion assumes integers and small input; copy isolation is specific to lists of immutable integers."
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Direct official objective monitoring timed out; manual web-reader comparison is separate evidence. Objective/status snapshots remain untouched. PDF page text was read through the web reader; no local genuine PDF hash or visual inspection is claimed.",
+    "PCEP-30-03 remains an announced Q3 2026 version in development on examined pages. Purchase availability, final release date, full future syllabus and account UI remain unverified. Current practice role instructions disagree across public pages.",
+    "Public course descriptions and selected documentation sections were read, not all paid lessons, official practice items or linked reference material. OReilly/Udemy returned HTTP 403; Cisco/YouTube were shells and Harvard required web-reader fallback.",
+    "136 offline checks cover four original public blocks on existing CPython 3.13.14. Documentation displayed 3.13.15/general 3.14.7. These are selected behavior checks, not every interpreter/input, exam performance or production validation; eight broader learner activities remain proposed.",
+    "Shipping rates, score cutoff and inventory rules are fictional. Input contracts, small recursion, shallow nested-copy limits and first-match search behavior are explicit. No installations, accounts, exam attempts, remote services, course completion or human review occurred."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 180,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Four original guide blocks executed locally on existing CPython 3.13.14, with simulated stdin for console cases, captured stdout and fixed in-memory data. No package installation, network, accounts, exam attempt or course completion. Eight broader learner activities remain proposed.",
+    "passed": 136,
+    "python_blocks_executed": 4,
+    "python_version": "3.13.14",
+    "trace_workbook_checks": 82,
+    "additional_execution_checks": 54,
+    "trace_labels": [
+      "bases",
+      "scientific notation",
+      "unary minus and power",
+      "power groups right",
+      "negative division",
+      "integer division identity",
+      "negative divisor",
+      "bitwise",
+      "and returns operand",
+      "or returns operand",
+      "not returns bool",
+      "short circuit",
+      "float approximation",
+      "exact binary fraction",
+      "numeric text",
+      "decimal text is not integer text",
+      "incompatible addition",
+      "string repetition",
+      "invalid binary literal",
+      "missing colon",
+      "keyword spelling changes grammar",
+      "valid name can fail at runtime",
+      "unreached runtime failure",
+      "style is not syntax",
+      "descending range",
+      "incompatible range direction",
+      "zero range step",
+      "empty loop else",
+      "continue permits else",
+      "break skips else",
+      "inner break only",
+      "while false condition reaches else",
+      "return skips loop else",
+      "outer identities",
+      "shallow nested sharing",
+      "copied rows isolated",
+      "outer append isolated",
+      "repeated row alias",
+      "independent rows",
+      "sorted copy",
+      "sort return",
+      "sort mutation",
+      "pop returns removed item",
+      "insert and delete",
+      "reverse slice",
+      "overlong slice",
+      "direct index past end",
+      "missing list value",
+      "singleton tuple",
+      "tuple nested mutation",
+      "tuple with list is unhashable",
+      "dictionary view updates",
+      "present zero differs from absent",
+      "items carry pairs",
+      "missing dictionary key",
+      "escape has one character",
+      "string transform",
+      "string methods have varied result types",
+      "first mutable default",
+      "second mutable default",
+      "fresh default state",
+      "local rebind return",
+      "caller sees mutation",
+      "assignment makes local name",
+      "global changes module binding",
+      "argument binding",
+      "duplicate argument",
+      "unknown argument",
+      "implicit return",
+      "recursive base case",
+      "recursive small result",
+      "recursive negative input rejected",
+      "generator call is deferred",
+      "first yield",
+      "state before resumption",
+      "second yield",
+      "generator exhaustion",
+      "generator side effects",
+      "exception crosses call boundary",
+      "different handler",
+      "normal path",
+      "hierarchy"
+    ],
+    "additional_labels": [
+      "area valid input and actual prompts",
+      "area zero accepted in original snippet",
+      "area negative accepted in original snippet",
+      "area decimal width rejected",
+      "area empty width rejected",
+      "area invalid height rejected",
+      "odd-number loop output",
+      "complete scenario stdout",
+      "quote A boundary 1",
+      "quote B boundary 1",
+      "quote A boundary 999",
+      "quote B boundary 999",
+      "quote A boundary 1000",
+      "quote B boundary 1000",
+      "quote A boundary 1001",
+      "quote B boundary 1001",
+      "quote A boundary 4999",
+      "quote B boundary 4999",
+      "quote A boundary 5000",
+      "quote B boundary 5000",
+      "quote A boundary 5001",
+      "quote B boundary 5001",
+      "quote A boundary 10000",
+      "quote B boundary 10000",
+      "quote rejects '0'",
+      "quote rejects '-1'",
+      "quote rejects '10001'",
+      "quote rejects ''",
+      "quote rejects '2.5'",
+      "quote rejects 'nan'",
+      "quote rejects 'oops'",
+      "quote rejects unsupported zone",
+      "quote normalized zone",
+      "quote conversion recovery",
+      "empty scores are missing",
+      "zero score is not missing",
+      "maximum score",
+      "cutoff selected correctly",
+      "negative score",
+      "oversized score",
+      "boolean score rejected by chosen rule",
+      "string score rejected",
+      "copy preserves original scores",
+      "empty inventory",
+      "first match can be zero",
+      "last match",
+      "absent item",
+      "empty search",
+      "search standalone first duplicate",
+      "stock constructor rejects duplicates",
+      "negative stock",
+      "fractional stock",
+      "low stock excludes exact threshold",
+      "empty low stock"
+    ],
+    "scenario_stdout": "Quote: 18.00\nInvalid weight or zone\n({'Mina': 70.0, 'Lee': 50.0, 'Ari': None}, ['Mina'])\n90.0 70.0\n0 None\n['P', 'R']\n",
+    "public_example_sha256": [
+      "d8fac5aa44319718c80e262955ccc2b54c0cbd115c43b3a2a8e732b5a2c20772",
+      "5c415096368bcf0ecd0ceb0720c021765d3efbacef2449f94c3e8ebdca2c2555",
+      "a4f7b5cb112f6c65f7c3cde7f2057a32afef07a2d25fafea96143a5c661c89a2",
+      "3e470aeffe864b3a85431e2ece3aa841b336c5c07bdb533a0f665e16042502eb"
+    ],
+    "scope_limits": "The workbook checks selected fundamental behavior, not every interpreter or input. Shipping rates, score thresholds and inventory rules are fictional. The small recursion assumes integers and small input; copy isolation is specific to lists of immutable integers.",
+    "learning_catalog_consistency": "passed"
+  },
+  "source_reading_boundaries": {
+    "pcep-30-02-syllabus": "Direct HTTP health request and objective monitor timed out. Web reader retrieved and displayed the full current HTML syllabus, compared manually with the retained snapshot: 15 numbered objectives and 84 listed bullets (27/9/25/23), weights 18/29/25/28 and item counts 7/8/7/8. February 23, 2022 date remains. Block 4 introductory count says seven objectives/19 sub-objectives but lists four numbered objectives/23 bullets; the PDF agrees with the actual entries. MQC prose groups topics differently. No successful direct hash comparison or snapshot rewrite claimed.",
+    "pcep-certification-page": "Direct HTTP request timed out; complete public page read through web reader. Still identifies PCEP-30-02 as active, PCEP-30-03 in development with Q3 2026 announcement; no launch inferred from calendar. Thirty questions, 40-minute exam plus five-minute NDA/tutorial, 70% threshold, five languages, five-year credential validity, no prerequisites and exam from USD69. Failed-retake wait seven days. Practice redemption role differs from current store instructions; exact account UI not verified. Marketing employment/salary promises not adopted.",
+    "python-3-tutorial": "Complete tutorial index/introduction read; capture displays Python 3.14.7. It explicitly targets programmers new to Python and does not claim to be exhaustive. Index retrieval is not full tutorial completion. Detailed behavior was researched in separately registered versioned 3.13 pages; existing local interpreter is 3.13.14.",
+    "openedg-python-essentials-1": "Complete public 5167-character landing and four-section syllabus read. Free online self-study, 42 hours at recommended seven hours/week, English/Spanish/Japanese. Lists PCEP-30-01 and PCEP-30-02 alignment, which does not supersede active exam status. Lessons require account and were not entered; course quality/completion not established.",
+    "cisco-python-essentials-1": "HTTP200 but extracted body was a 59-character application shell. No rendered curriculum or current runtime verified. Historical 30–42-hour estimate is explicitly qualified. No account or enrollment.",
+    "openedg-pcep-practice": "Complete public 3334-character product description/terms read. USD29 practice-only product, 12-month voucher redemption validity, five launches per test, study pages and section sets advertised. Does not include an exam attempt. Store domain weights 18/28/26/28 disagree with canonical 18/29/25/28. Store instructs Test Candidate role while credential page says Learner. Paid items not read; no account, cart, checkout or voucher redemption. Static cart-confirmation template text is not evidence of a cart action.",
+    "microsoft-learn-python-fundamentals": "Complete current public 1467-character page and four module descriptions read: first code, data, VS Code configuration and decisions. Intro mentions functions but listed modules do not establish that coverage. Previous three-hour-12-minute total not present and not reverified. No lesson completion, tooling installation or Copilot action.",
+    "pluralsight-python-essentials": "Complete 14739-character public landing and listing read. Header 17 courses, 25 labs, 47 hours; includes September 2026 additions and broad advanced topics. Foundations 2h41m, Data Structures 1h56m and Simplifying Python Applications Through Functions and Modules 1h38m total 375 minutes/6h15m. This is catalog arithmetic, not a watched-content or full PCEP alignment claim. No paid course/lab playback, assessment or trial.",
+    "oreilly-learning-python-6": "Direct HTTP403. Prior 42h20m metadata, current edition contents and paid interior not reverified. Selective 15–25 hours is an author planning estimate.",
+    "udemy-python-pcep-wiech": "Direct HTTP403. Prior 4h27m runtime and advertised course contents not reverified. No paid questions or videos accessed; extra practice time is an author estimate.",
+    "harvard-cs50-python": "Direct HTTP timeout; complete current public landing read through web reader. Ten-week free OpenCourseWare, first four topics functions/variables, conditionals, loops and exceptions. No lectures, problem sets, final project, account or submission. Selective 15–25 hours is author judgment, not a provider duration.",
+    "youtube-freecodecamp-python-beginner": "HTTP200 with 214-character title/shell text. No playback or transcript read; old roughly 4h26m duration not reverified. This is limited title-level availability evidence, not a content review.",
+    "pcep-testing-policies": "Direct request timed out; full public policy page read through web reader, revised November 18, 2025. Proctored default/partner delivery, seven-day failed-retake wait, admission, security and technical requirements read for context. Only concise delivery/retake implications adopted; no system/network setting changes, personal booking/eligibility determination or exam attempt. No current account UI verified.",
+    "pcep-syllabus-pdf": "Direct download timed out. All five pages of web-reader extracted PDF text read, including first-page weights and numbered sections. Matches 15 numbered objectives/84 bullets and 18/29/25/28 weights. No locally captured genuine PDF bytes, hash or visual-table inspection claimed. HTML introductory count inconsistency is not hidden additional scope.",
+    "python313-control-flow": "Selected sections read: if, for, range, break/continue, loop else, pass, defining functions, default arguments and keyword arguments. Explicit return/exception loop exits and one-time mutable default evaluation inform repairs. Full tutorial chapter and linked advanced sections not claimed. Versioned 3.13 page displays 3.13.15; local execution uses 3.13.14.",
+    "python313-datastructures": "Selected sections read: all More on Lists subsections, del, tuples, dictionaries, looping techniques and conditions. Mutating method return differences, shallow copying, tuple-contained mutables and mapping membership incorporated. Set/deque/zip references seen as supporting context, not added exam requirements; entire chapter not claimed.",
+    "python313-expressions": "Selected power, unary/binary arithmetic, shifts, bitwise, Boolean operations and precedence sections read. Operand-returning and/or, negative floor/modulo and exponentiation grouping actually executed. No custom-operator, asynchronous-generator or complete-reference audit.",
+    "python313-errors": "Sections 8.1–8.4 read: syntax, runtime exceptions, handling and raising. NameError versus syntax rejection, first matching handler and propagation through function boundaries incorporated. Fixed original snippets executed; linked or later exception-group chapters not adopted.",
+    "python313-exceptions": "Base classes, IndexError, KeyError, TypeError, ValueError, UnboundLocalError and complete displayed hierarchy read. Grouping bases distinguished from construction prohibition; SystemExit/KeyboardInterrupt outside Exception verified with issubclass, not by interrupting or exiting the host. Full exception catalog not audited.",
+    "python313-classes": "Sections 9.1–9.2 including scopes example and 9.9 generators read. Names/objects, assignment, global scope, deferred generator body and StopIteration inform original traces. Classes, inheritance and nonlocal examples are supporting reference context, not added PCEP scope.",
+    "python313-lexical": "Comments, indentation, identifiers including reserved/soft keywords, integer literals and float literals read. Lexical versus parse/runtime failures clarified. Invalid fixed code rejected by compile; no claim that every typo is lexical failure. Full lexical chapter, Unicode standard and formatting features not audited.",
+    "python313-float": "Complete chapter 15 main text and representation-error subsection read. Binary approximation versus decimal display incorporated; float also accepts infinities/NaN per builtins page. Only selected original simple arithmetic was executed, not every source calculation or linked numeric library.",
+    "pep-8-style-guide": "Selected indentation, tabs/spaces, maximum line length, function/variable naming and constants sections read. Four spaces and naming are style guidance; two-space example actually compiles. Full PEP and linked style materials not audited.",
+    "python313-builtins": "Complete compile, input, int, float and print entries read. Fixed string compilation, actual input with simulated stdin and captured prompts, integer truncation and conversion failures exercised. Full built-in catalog not audited; no untrusted code execution.",
+    "python313-types": "Selected string upper/find/split, dictionary view objects, truth value testing and common sequence operations read. Return types, dynamic views, repetition aliases and slicing inform traces. Full 173181-character reference capture is not a full-document reading claim."
+  },
+  "public_examples": [
+    {
+      "language": "python",
+      "code": "width = int(input(\"Width: \"))\nheight = float(input(\"Height: \"))\nprint(\"Area\", width * height, sep=\": \", end=\"\\n\")\n",
+      "sha256": "d8fac5aa44319718c80e262955ccc2b54c0cbd115c43b3a2a8e732b5a2c20772"
+    },
+    {
+      "language": "python",
+      "code": "total = 0\nfor number in range(1, 6):\n    if number % 2 == 0:\n        continue\n    total += number\nelse:\n    print(total)\n",
+      "sha256": "5c415096368bcf0ecd0ceb0720c021765d3efbacef2449f94c3e8ebdca2c2555"
+    },
+    {
+      "language": "python",
+      "code": "\"\"\"Original small programs with fictional business rules and integer inputs.\"\"\"\n\n\ndef shipping_quote(grams_text, zone_text):\n    grams = int(grams_text)\n    zone = zone_text.strip().upper()\n    if not 1 <= grams <= 10000:\n        raise ValueError(\"weight must be 1 through 10000 grams\")\n    if zone not in (\"A\", \"B\"):\n        raise ValueError(\"zone must be A or B\")\n    if grams <= 1000:\n        cents = 500\n    elif grams <= 5000:\n        cents = 900\n    else:\n        cents = 1400\n    if zone == \"B\":\n        cents *= 2\n    return cents\n\n\ndef show_quote(grams_text, zone_text):\n    try:\n        cents = shipping_quote(grams_text, zone_text)\n    except ValueError:\n        return \"Invalid weight or zone\"\n    return f\"Quote: {cents // 100}.{cents % 100:02d}\"\n\n\ndef average(scores):\n    if not scores:\n        return None\n    for score in scores:\n        if type(score) is not int:\n            raise TypeError(\"scores must be integers\")\n        if not 0 <= score <= 100:\n            raise ValueError(\"score must be 0 through 100\")\n    return sum(scores) / len(scores)\n\n\ndef summarize(records):\n    averages = {name: average(scores) for name, scores in records.items()}\n    passing = [name for name, result in averages.items()\n               if result is not None and result >= 70]\n    return averages, passing\n\n\ndef build_stock(records):\n    stock = {}\n    for code, quantity in records:\n        if code in stock:\n            raise ValueError(\"duplicate code\")\n        if type(quantity) is not int:\n            raise TypeError(\"quantity must be an integer\")\n        if quantity < 0:\n            raise ValueError(\"quantity cannot be negative\")\n        stock[code] = quantity\n    return stock\n\n\ndef find_quantity(records, wanted):\n    for code, quantity in records:\n        if code == wanted:\n            break\n    else:\n        return None\n    return quantity\n\n\ndef low_stock(stock, threshold=2):\n    for code, quantity in stock.items():\n        if quantity < threshold:\n            yield code\n\n\nscores = {\"Mina\": [60, 80], \"Lee\": [50], \"Ari\": []}\nadjusted = {name: values[:] for name, values in scores.items()}\nadjusted[\"Mina\"][0] = 100\nrecords = [(\"P\", 0), (\"Q\", 4), (\"R\", 1)]\nprint(show_quote(\"1001\", \"B\"))\nprint(show_quote(\"2.5\", \"A\"))\nprint(summarize(scores))\nprint(average(adjusted[\"Mina\"]), average(scores[\"Mina\"]))\nprint(find_quantity(records, \"P\"), find_quantity(records, \"Z\"))\nprint(list(low_stock(build_stock(records))))\n",
+      "sha256": "a4f7b5cb112f6c65f7c3cde7f2057a32afef07a2d25fafea96143a5c661c89a2"
+    },
+    {
+      "language": "python",
+      "code": "\"\"\"Original PCEP traces: run locally with Python 3; no network or packages.\"\"\"\nimport json\n\npassed = []\n\n\ndef check(label, actual, expected):\n    if actual != expected:\n        raise AssertionError((label, actual, expected))\n    passed.append(label)\n\n\ndef raises(label, expected, operation):\n    try:\n        operation()\n    except expected:\n        passed.append(label)\n    else:\n        raise AssertionError((label, \"expected\", expected.__name__))\n\n\n# Values, types and the difference between grouping and evaluation.\ncheck(\"bases\", [0b1101, 0o15, 0xD], [13, 13, 13])\ncheck(\"scientific notation\", (1.25e2, type(1.25e2).__name__), (125.0, \"float\"))\ncheck(\"unary minus and power\", (-3 ** 2, (-3) ** 2, 2 ** -3), (-9, 9, 0.125))\ncheck(\"power groups right\", 2 ** 3 ** 2, 512)\ncheck(\"negative division\", (-11 // 4, -11 % 4, int(-11 / 4)), (-3, 1, -2))\ncheck(\"integer division identity\", (-11 // 4) * 4 + (-11 % 4), -11)\ncheck(\"negative divisor\", (11 // -4, 11 % -4), (-3, -1))\ncheck(\"bitwise\", (6 & 3, 6 | 3, 6 ^ 3, ~6, 3 << 2, 12 >> 2),\n      (2, 7, 5, -7, 12, 3))\ncheck(\"and returns operand\", (\"ready\" and 8, [] and 8), (8, []))\ncheck(\"or returns operand\", (\"\" or \"fallback\", 5 or 1 / 0), (\"fallback\", 5))\ncheck(\"not returns bool\", (not [], type(not []).__name__), (True, \"bool\"))\ncheck(\"short circuit\", False and 1 / 0, False)\ncheck(\"float approximation\", 0.1 + 0.2 == 0.3, False)\ncheck(\"exact binary fraction\", 0.125 * 8, 1.0)\ncheck(\"numeric text\", (int(\" 13 \"), float(\"1.25e2\")), (13, 125.0))\nraises(\"decimal text is not integer text\", ValueError, lambda: int(\"2.5\"))\nraises(\"incompatible addition\", TypeError, lambda: \"2\" + 5)\ncheck(\"string repetition\", \"ab\" * 3, \"ababab\")\n\n# Only these fixed strings are compiled; no external source is executed.\nraises(\"invalid binary literal\", SyntaxError,\n       lambda: compile(\"value = 0b102\", \"literal\", \"exec\"))\nraises(\"missing colon\", SyntaxError,\n       lambda: compile(\"if True\\n    value = 1\", \"suite\", \"exec\"))\nraises(\"keyword spelling changes grammar\", SyntaxError,\n       lambda: compile(\"iff True:\\n    pass\", \"keyword\", \"exec\"))\ntypo = compile(\"pritn('hello')\", \"name\", \"exec\")\nraises(\"valid name can fail at runtime\", NameError, lambda: exec(typo, {}))\ndead_path = compile(\"if False:\\n    1 / 0\", \"unreached\", \"exec\")\ncheck(\"unreached runtime failure\", exec(dead_path, {}), None)\nstyle_scope = {}\nexec(compile(\"if True:\\n  MixedName = 7\", \"style\", \"exec\"), style_scope)\ncheck(\"style is not syntax\", style_scope[\"MixedName\"], 7)\n\n# Control flow: every path has an explicit expected result.\ncheck(\"descending range\", list(range(7, 0, -3)), [7, 4, 1])\ncheck(\"incompatible range direction\", list(range(0, 7, -1)), [])\nraises(\"zero range step\", ValueError, lambda: range(0, 7, 0))\n\n\ndef loop_trace(values, stop):\n    seen = []\n    for value in values:\n        if value == stop:\n            break\n        if value < 0:\n            continue\n        seen.append(value)\n    else:\n        seen.append(\"exhausted\")\n    return seen\n\n\ncheck(\"empty loop else\", loop_trace([], 9), [\"exhausted\"])\ncheck(\"continue permits else\", loop_trace([-1, 2], 9), [2, \"exhausted\"])\ncheck(\"break skips else\", loop_trace([2, 9, 3], 9), [2])\npairs = []\nfor row in range(2):\n    for column in range(3):\n        if column == 1:\n            break\n        pairs.append((row, column))\ncheck(\"inner break only\", pairs, [(0, 0), (1, 0)])\ncount = 2\nwhile count:\n    count -= 1\nelse:\n    count = \"finished\"\ncheck(\"while false condition reaches else\", count, \"finished\")\n\n\ndef early_return():\n    for value in [1]:\n        return value\n    else:\n        return \"exhausted\"\n\n\ncheck(\"return skips loop else\", early_return(), 1)\n\n# Collections: compare object identity separately from equal contents.\noriginal = [[1], [2]]\nalias = original\nshallow = original[:]\nindependent = [row[:] for row in original]\ncheck(\"outer identities\", (alias is original, shallow is original), (True, False))\noriginal[0].append(9)\ncheck(\"shallow nested sharing\", shallow, [[1, 9], [2]])\ncheck(\"copied rows isolated\", independent, [[1], [2]])\nshallow.append([3])\ncheck(\"outer append isolated\", len(original), 2)\nbad_grid = [[0, 0]] * 2\nbad_grid[0][1] = 7\ncheck(\"repeated row alias\", bad_grid, [[0, 7], [0, 7]])\ngrid = [[0, 0] for _ in range(2)]\ngrid[0][1] = 7\ncheck(\"independent rows\", grid, [[0, 7], [0, 0]])\nvalues = [4, 1, 3]\ncheck(\"sorted copy\", sorted(values), [1, 3, 4])\ncheck(\"sort return\", values.sort(), None)\ncheck(\"sort mutation\", values, [1, 3, 4])\ncheck(\"pop returns removed item\", values.pop(), 4)\nvalues.insert(1, 8)\ndel values[0]\ncheck(\"insert and delete\", values, [8, 3])\ncheck(\"reverse slice\", values[::-1], [3, 8])\ncheck(\"overlong slice\", values[:100], [8, 3])\nraises(\"direct index past end\", IndexError, lambda: values[2])\nraises(\"missing list value\", ValueError, lambda: values.index(99))\ncheck(\"singleton tuple\", ((7), (7,)), (7, (7,)))\nrecord = (\"A\", [2])\nrecord[1].append(3)\ncheck(\"tuple nested mutation\", record, (\"A\", [2, 3]))\nraises(\"tuple with list is unhashable\", TypeError, lambda: hash(record))\nstock = {\"A\": 0}\nkeys = stock.keys()\nstock[\"B\"] = 3\ncheck(\"dictionary view updates\", list(keys), [\"A\", \"B\"])\ncheck(\"present zero differs from absent\", (\"A\" in stock, bool(stock[\"A\"]),\n      \"C\" in stock), (True, False, False))\ncheck(\"items carry pairs\", list(stock.items()), [(\"A\", 0), (\"B\", 3)])\nraises(\"missing dictionary key\", KeyError, lambda: stock[\"C\"])\ntext = \"a\\nb\"\ncheck(\"escape has one character\", (len(text), text[1]), (3, \"\\n\"))\ncheck(\"string transform\", (text.upper(), text), (\"A\\nB\", \"a\\nb\"))\ncheck(\"string methods have varied result types\", (text.find(\"b\"), text.split()),\n      (2, [\"a\", \"b\"]))\n\n# Function state, scope, deferred execution and exception propagation.\ndef accumulate(value, history=[]):\n    history.append(value)\n    return history\n\n\ncheck(\"first mutable default\", accumulate(\"A\")[:], [\"A\"])\ncheck(\"second mutable default\", accumulate(\"B\")[:], [\"A\", \"B\"])\n\n\ndef isolated(value, history=None):\n    if history is None:\n        history = []\n    history.append(value)\n    return history\n\n\ncheck(\"fresh default state\", (isolated(\"A\"), isolated(\"B\")), ([\"A\"], [\"B\"]))\n\n\ndef alter(values):\n    values.append(3)\n    values = [99]\n    return values\n\n\ndata = [1]\ncheck(\"local rebind return\", alter(data), [99])\ncheck(\"caller sees mutation\", data, [1, 3])\ncount = 10\n\n\ndef bump():\n    count += 1\n\n\ndef bump_global():\n    global count\n    count += 1\n\n\nraises(\"assignment makes local name\", UnboundLocalError, bump)\nbump_global()\ncheck(\"global changes module binding\", count, 11)\n\n\ndef add(left, right=2):\n    return left + right\n\n\ncheck(\"argument binding\", (add(3), add(right=4, left=3)), (5, 7))\nraises(\"duplicate argument\", TypeError, lambda: add(3, left=4))\nraises(\"unknown argument\", TypeError, lambda: add(3, extra=4))\n\n\ndef do_nothing():\n    pass\n\n\ncheck(\"implicit return\", do_nothing(), None)\n\n\ndef sum_to(n):\n    if n < 0:\n        raise ValueError(\"nonnegative input required\")\n    if n == 0:\n        return 0\n    return n + sum_to(n - 1)\n\n\ncheck(\"recursive base case\", sum_to(0), 0)\ncheck(\"recursive small result\", sum_to(4), 10)\nraises(\"recursive negative input rejected\", ValueError, lambda: sum_to(-1))\nevents = []\n\n\ndef small_generator():\n    events.append(\"started\")\n    yield 4\n    events.append(\"resumed\")\n    yield 6\n\n\nstream = small_generator()\ncheck(\"generator call is deferred\", events[:], [])\ncheck(\"first yield\", next(stream), 4)\ncheck(\"state before resumption\", events[:], [\"started\"])\ncheck(\"second yield\", next(stream), 6)\nraises(\"generator exhaustion\", StopIteration, lambda: next(stream))\ncheck(\"generator side effects\", events, [\"started\", \"resumed\"])\n\n\ndef convert(text):\n    return int(text)\n\n\ndef handled(text):\n    try:\n        return convert(text)\n    except ValueError:\n        return \"bad value\"\n    except Exception:\n        return \"other ordinary error\"\n\n\ncheck(\"exception crosses call boundary\", handled(\"oops\"), \"bad value\")\ncheck(\"different handler\", handled(None), \"other ordinary error\")\ncheck(\"normal path\", handled(\"7\"), 7)\ncheck(\"hierarchy\", (issubclass(IndexError, LookupError),\n      issubclass(KeyError, LookupError), issubclass(ZeroDivisionError, ArithmeticError),\n      issubclass(SystemExit, Exception), issubclass(KeyboardInterrupt, Exception)),\n      (True, True, True, False, False))\n\nprint(json.dumps({\"passed\": len(passed), \"checks\": passed}, indent=2))\n",
+      "sha256": "3e470aeffe864b3a85431e2ece3aa841b336c5c07bdb533a0f665e16042502eb"
+    }
+  ],
+  "manual_objective_confirmation": {
+    "checked_on": "2026-09-29",
+    "method": "Public web reader after direct network timeout",
+    "numbered_objectives": 15,
+    "listed_bullets": 84,
+    "bullets_per_block": [
+      27,
+      9,
+      25,
+      23
+    ],
+    "weights": [
+      18,
+      29,
+      25,
+      28
+    ],
+    "items_per_block": [
+      7,
+      8,
+      7,
+      8
+    ],
+    "active_version": "PCEP-30-02",
+    "future_version": "PCEP-30-03 still in development with Q3 2026 announced target",
+    "snapshot_action": "No objective/status snapshot rewrite and no successful direct monitor hash comparison claimed",
+    "pdf_reading": "All five pages of extracted text read through web reader; no local genuine PDF hash or visual inspection claimed",
+    "groups": [
+      {
+        "title": "1.1 Understand fundamental terms and definitions",
+        "objectives": [
+          "1.1: interpreting and the interpreter, compilation and the compiler",
+          "1.1: lexis, syntax, and semantics"
+        ]
+      },
+      {
+        "title": "1.2 Understand Python’s logic and structure",
+        "objectives": [
+          "1.2: keywords",
+          "1.2: instructions",
+          "1.2: indentation",
+          "1.2: comments"
+        ]
+      },
+      {
+        "title": "1.3 Introduce literals and variables into code and use different numeral systems",
+        "objectives": [
+          "1.3: Boolean, integers, floating-point numbers",
+          "1.3: scientific notation",
+          "1.3: strings",
+          "1.3: binary, octal, decimal, and hexadecimal numeral systems",
+          "1.3: variables",
+          "1.3: naming conventions",
+          "1.3: implementing PEP-8 recommendations"
+        ]
+      },
+      {
+        "title": "1.4 Choose operators and data types adequate to the problem",
+        "objectives": [
+          "1.4: numeric operators: ** * / % // + –",
+          "1.4: string operators: * +",
+          "1.4: assignment and shortcut operators",
+          "1.4: unary and binary operators",
+          "1.4: priorities and binding",
+          "1.4: bitwise operators: ~ & ^ | << >>",
+          "1.4: Boolean operators: not, and, or",
+          "1.4: Boolean expressions",
+          "1.4: relational operators ( == != > >= < <= )",
+          "1.4: the accuracy of floating-point numbers",
+          "1.4: type casting"
+        ]
+      },
+      {
+        "title": "1.5 Perform Input/Output console operations",
+        "objectives": [
+          "1.5: the print() and input() functions",
+          "1.5: the sep= and end= keyword parameters",
+          "1.5: the int() and float() functions"
+        ]
+      },
+      {
+        "title": "2.1 Make decisions and branch the flow with the if instruction",
+        "objectives": [
+          "2.1: conditional statements: if, if-else, if-elif, if-elif-else",
+          "2.1: multiple conditional statements",
+          "2.1: nesting conditional statements"
+        ]
+      },
+      {
+        "title": "2.2 Perform different types of iterations",
+        "objectives": [
+          "2.2: the pass instruction",
+          "2.2: building loops with while, for, range(), and in",
+          "2.2: iterating through sequences",
+          "2.2: expanding loops with while-else and for-else",
+          "2.2: nesting loops and conditional statements",
+          "2.2: controlling loop execution with break and continue"
+        ]
+      },
+      {
+        "title": "3.1 Collect and process data using lists",
+        "objectives": [
+          "3.1: constructing vectors",
+          "3.1: indexing and slicing",
+          "3.1: the len() function",
+          "3.1: list methods: append(), insert(), index(), etc.",
+          "3.1: functions: len(), sorted()",
+          "3.1: the del instruction",
+          "3.1: iterating through lists with the for loop",
+          "3.1: initializing loops",
+          "3.1: the in and not in operators",
+          "3.1: list comprehensions",
+          "3.1: copying and cloning",
+          "3.1: lists in lists: matrices and cubes"
+        ]
+      },
+      {
+        "title": "3.2 Collect and process data using tuples",
+        "objectives": [
+          "3.2: tuples: indexing, slicing, building, immutability",
+          "3.2: tuples vs. lists: similarities and differences",
+          "3.2: lists inside tuples and tuples inside lists"
+        ]
+      },
+      {
+        "title": "3.3 Collect and process data using dictionaries",
+        "objectives": [
+          "3.3: dictionaries: building, indexing, adding and removing keys",
+          "3.3: iterating through dictionaries and their keys and values",
+          "3.3: checking the existence of keys",
+          "3.3: methods: keys(), items(), and values()"
+        ]
+      },
+      {
+        "title": "3.4 Operate with strings",
+        "objectives": [
+          "3.4: constructing strings",
+          "3.4: indexing, slicing, immutability",
+          "3.4: escaping using the \\ character",
+          "3.4: quotes and apostrophes inside strings",
+          "3.4: multi-line strings",
+          "3.4: basic string functions and methods"
+        ]
+      },
+      {
+        "title": "4.1 Decompose the code using functions",
+        "objectives": [
+          "4.1: defining and invoking user-defined functions and generators",
+          "4.1: the return keyword, returning results",
+          "4.1: the None keyword",
+          "4.1: recursion"
+        ]
+      },
+      {
+        "title": "4.2 Organize interaction between the function and its environment",
+        "objectives": [
+          "4.2: parameters vs. arguments",
+          "4.2: positional, keyword, and mixed argument passing",
+          "4.2: default parameter values",
+          "4.2: name scopes, name hiding (shadowing), and the global keyword"
+        ]
+      },
+      {
+        "title": "4.3 Python Built-In Exceptions Hierarchy",
+        "objectives": [
+          "4.3: BaseException",
+          "4.3: Exception",
+          "4.3: SystemExit",
+          "4.3: KeyboardInterrupt",
+          "4.3: abstract exceptions",
+          "4.3: ArithmeticError",
+          "4.3: LookupError",
+          "4.3: IndexError",
+          "4.3: KeyError",
+          "4.3: TypeError",
+          "4.3: ValueError"
+        ]
+      },
+      {
+        "title": "4.4 Basics of Python Exception Handling",
+        "objectives": [
+          "4.4: try-except / the try-except Exception",
+          "4.4: ordering the except branches",
+          "4.4: propagating exceptions through function boundaries",
+          "4.4: delegating responsibility for handling exceptions"
+        ]
+      }
+    ]
+  },
+  "shared_metadata_refresh": {
+    "exam_code": "PCAP-31-03",
+    "link_evidence": {
+      "unique_external_links": 11,
+      "reachable": 9,
+      "access_blocked": 1,
+      "missing_or_error": 1
+    },
+    "boundary": "Only shared health-driven link counts refreshed. Guide content, review date and objective evidence unchanged."
+  },
+  "source_health_boundary": "25 direct health receipts: 18 successes, two HTTP403 blocks and five timeouts. The web reader retrieved complete public Python Institute pages, extracted PDF text and Harvard landing despite direct timeouts. Cisco/YouTube direct bodies were shells. No authenticated or paid lesson/practice access.",
+  "review_provenance": "The existing 40 original questions/answers were reviewed and improved; they were not all newly added. Four original public code blocks executed with 136 checks. Source captures are not blanket full-document reading claims."
+}

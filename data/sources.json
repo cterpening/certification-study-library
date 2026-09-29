@@ -3,6 +3,160 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "pcep-testing-policies",
+      "title": "PCEP testing policies",
+      "url": "https://pythoninstitute.org/pcep-testing-policies",
+      "publisher": "Python Institute",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEP-30-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCEP-30-02 deep review: Direct request timed out; full public policy page read through web reader, revised November 18, 2025. Proctored default/partner delivery, seven-day failed-retake wait, admission, security and technical requirements read for context. Only concise delivery/retake implications adopted; no system/network setting changes, personal booking/eligibility determination or exam attempt. No current account UI verified. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pcep-syllabus-pdf",
+      "title": "PCEP-30-02 official syllabus PDF",
+      "url": "https://pythoninstitute.org/assets/627e61bc29de3989767095.pdf",
+      "publisher": "Python Institute",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEP-30-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCEP-30-02 deep review: Direct download timed out. All five pages of web-reader extracted PDF text read, including first-page weights and numbered sections. Matches 15 numbered objectives/84 bullets and 18/29/25/28 weights. No locally captured genuine PDF bytes, hash or visual-table inspection claimed. HTML introductory count inconsistency is not hidden additional scope. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-datastructures",
+      "title": "Python 3.13 data structures",
+      "url": "https://docs.python.org/3.13/tutorial/datastructures.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEP-30-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCEP-30-02 deep review: Selected sections read: all More on Lists subsections, del, tuples, dictionaries, looping techniques and conditions. Mutating method return differences, shallow copying, tuple-contained mutables and mapping membership incorporated. Set/deque/zip references seen as supporting context, not added exam requirements; entire chapter not claimed. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-expressions",
+      "title": "Python 3.13 expression reference",
+      "url": "https://docs.python.org/3.13/reference/expressions.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEP-30-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCEP-30-02 deep review: Selected power, unary/binary arithmetic, shifts, bitwise, Boolean operations and precedence sections read. Operand-returning and/or, negative floor/modulo and exponentiation grouping actually executed. No custom-operator, asynchronous-generator or complete-reference audit. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-errors",
+      "title": "Python 3.13 errors and exceptions tutorial",
+      "url": "https://docs.python.org/3.13/tutorial/errors.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEP-30-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCEP-30-02 deep review: Sections 8.1–8.4 read: syntax, runtime exceptions, handling and raising. NameError versus syntax rejection, first matching handler and propagation through function boundaries incorporated. Fixed original snippets executed; linked or later exception-group chapters not adopted. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-exceptions",
+      "title": "Python 3.13 built-in exceptions",
+      "url": "https://docs.python.org/3.13/library/exceptions.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEP-30-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCEP-30-02 deep review: Base classes, IndexError, KeyError, TypeError, ValueError, UnboundLocalError and complete displayed hierarchy read. Grouping bases distinguished from construction prohibition; SystemExit/KeyboardInterrupt outside Exception verified with issubclass, not by interrupting or exiting the host. Full exception catalog not audited. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-classes",
+      "title": "Python 3.13 names, scope and generators",
+      "url": "https://docs.python.org/3.13/tutorial/classes.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEP-30-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCEP-30-02 deep review: Sections 9.1–9.2 including scopes example and 9.9 generators read. Names/objects, assignment, global scope, deferred generator body and StopIteration inform original traces. Classes, inheritance and nonlocal examples are supporting reference context, not added PCEP scope. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-lexical",
+      "title": "Python 3.13 lexical analysis",
+      "url": "https://docs.python.org/3.13/reference/lexical_analysis.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEP-30-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCEP-30-02 deep review: Comments, indentation, identifiers including reserved/soft keywords, integer literals and float literals read. Lexical versus parse/runtime failures clarified. Invalid fixed code rejected by compile; no claim that every typo is lexical failure. Full lexical chapter, Unicode standard and formatting features not audited. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-float",
+      "title": "Python 3.13 floating-point arithmetic",
+      "url": "https://docs.python.org/3.13/tutorial/floatingpoint.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEP-30-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCEP-30-02 deep review: Complete chapter 15 main text and representation-error subsection read. Binary approximation versus decimal display incorporated; float also accepts infinities/NaN per builtins page. Only selected original simple arithmetic was executed, not every source calculation or linked numeric library. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-builtins",
+      "title": "Python 3.13 built-in functions",
+      "url": "https://docs.python.org/3.13/library/functions.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEP-30-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCEP-30-02 deep review: Complete compile, input, int, float and print entries read. Fixed string compilation, actual input with simulated stdin and captured prompts, integer truncation and conversion failures exercised. Full built-in catalog not audited; no untrusted code execution. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-types",
+      "title": "Python 3.13 built-in types",
+      "url": "https://docs.python.org/3.13/library/stdtypes.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEP-30-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCEP-30-02 deep review: Selected string upper/find/split, dictionary view objects, truth value testing and common sequence operations read. Return types, dynamic views, repetition aliases and slicing inform traces. Full 173181-character reference capture is not a full-document reading claim. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "crisc-2025-update",
       "title": "ISACA updates CRISC/CDPSE for 2025",
       "url": "https://www.isaca.org/about-us/newsroom/press-releases/2025/isaca-updates-cdpse-and-crisc-exams-to-reflect-latest-risk-and-privacy-priorities",
@@ -9225,10 +9379,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "FC0-U71"
+        "FC0-U71",
+        "PCEP-30-02"
       ],
-      "last_checked": "2026-09-28",
-      "notes": "September 28 FC0-U71 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-fc0-u71-deep-review.md No live infrastructure execution."
+      "last_checked": "2026-09-29",
+      "notes": "September 28 FC0-U71 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-fc0-u71-deep-review.md No live infrastructure execution. September 29 PCEP-30-02 deep review: Selected sections read: if, for, range, break/continue, loop else, pass, defining functions, default arguments and keyword arguments. Explicit return/exception loop exits and one-time mutable default evaluation inform repairs. Full tutorial chapter and linked advanced sections not claimed. Versioned 3.13 page displays 3.13.15; local execution uses 3.13.14. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "python313-sqlite3",
@@ -54109,40 +54264,174 @@
       "notes": "Approximately 19-hour supplementary course listed as updated 2026; keep the official ISACA outline authoritative. September 29 CRISC deep review: Direct HTTP 403. Earlier about-19-hour duration and updated-2026 title not reverified. Paid lessons and question contents unreviewed. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pcep-30-02-syllabus","title":"PCEP-30-02 Exam Syllabus","url":"https://pythoninstitute.org/pcep-exam-syllabus/","publisher":"OpenEDG Python Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCEP-30-02"],"notes":"Canonical detailed four-block 18/29/25/28 syllabus, item distribution, objective hierarchy, active status and minimally qualified candidate profile."
+      "id": "pcep-30-02-syllabus",
+      "title": "PCEP-30-02 Exam Syllabus",
+      "url": "https://pythoninstitute.org/pcep-exam-syllabus/",
+      "publisher": "OpenEDG Python Institute",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCEP-30-02"
+      ],
+      "notes": "Canonical detailed four-block 18/29/25/28 syllabus, item distribution, objective hierarchy, active status and minimally qualified candidate profile. September 29 PCEP-30-02 deep review: Direct HTTP health request and objective monitor timed out. Web reader retrieved and displayed the full current HTML syllabus, compared manually with the retained snapshot: 15 numbered objectives and 84 listed bullets (27/9/25/23), weights 18/29/25/28 and item counts 7/8/7/8. February 23, 2022 date remains. Block 4 introductory count says seven objectives/19 sub-objectives but lists four numbered objectives/23 bullets; the PDF agrees with the actual entries. MQC prose groups topics differently. No successful direct hash comparison or snapshot rewrite claimed. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pcep-certification-page","title":"PCEP Certified Entry-Level Python Programmer","url":"https://pythoninstitute.org/pcep/","publisher":"OpenEDG Python Institute","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCEP-30-02"],"notes":"Current exam version, format, duration, languages, price, validity, delivery, retake policy, aligned courses and PCEP-30-03 Q3 2026 announcement."
+      "id": "pcep-certification-page",
+      "title": "PCEP Certified Entry-Level Python Programmer",
+      "url": "https://pythoninstitute.org/pcep/",
+      "publisher": "OpenEDG Python Institute",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCEP-30-02"
+      ],
+      "notes": "Current exam version, format, duration, languages, price, validity, delivery, retake policy, aligned courses and PCEP-30-03 Q3 2026 announcement. September 29 PCEP-30-02 deep review: Direct HTTP request timed out; complete public page read through web reader. Still identifies PCEP-30-02 as active, PCEP-30-03 in development with Q3 2026 announcement; no launch inferred from calendar. Thirty questions, 40-minute exam plus five-minute NDA/tutorial, 70% threshold, five languages, five-year credential validity, no prerequisites and exam from USD69. Failed-retake wait seven days. Practice redemption role differs from current store instructions; exact account UI not verified. Marketing employment/salary promises not adopted. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"python-3-tutorial","title":"The Python Tutorial","url":"https://docs.python.org/3/tutorial/","publisher":"Python Software Foundation","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCEP-30-02","PCAP-31-03"],"notes":"Authoritative current Python 3 language tutorial for validating stable syntax and behavior; broader than the entry-level boundary."
+      "id": "python-3-tutorial",
+      "title": "The Python Tutorial",
+      "url": "https://docs.python.org/3/tutorial/",
+      "publisher": "Python Software Foundation",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCEP-30-02",
+        "PCAP-31-03"
+      ],
+      "notes": "Authoritative current Python 3 language tutorial for validating stable syntax and behavior; broader than the entry-level boundary. September 29 PCEP-30-02 deep review: Complete tutorial index/introduction read; capture displays Python 3.14.7. It explicitly targets programmers new to Python and does not claim to be exhaustive. Index retrieval is not full tutorial completion. Detailed behavior was researched in separately registered versioned 3.13 pages; existing local interpreter is 3.13.14. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"openedg-python-essentials-1","title":"Python Essentials - Part 1","url":"https://edube.org/study/pe1","publisher":"OpenEDG Python Institute / Edube","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["PCEP-30-02"],"notes":"Free official aligned beginner course with four syllabus modules and 42-hour listed study time."
+      "id": "openedg-python-essentials-1",
+      "title": "Python Essentials - Part 1",
+      "url": "https://edube.org/study/pe1",
+      "publisher": "OpenEDG Python Institute / Edube",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCEP-30-02"
+      ],
+      "notes": "Free official aligned beginner course with four syllabus modules and 42-hour listed study time. September 29 PCEP-30-02 deep review: Complete public 5167-character landing and four-section syllabus read. Free online self-study, 42 hours at recommended seven hours/week, English/Spanish/Japanese. Lists PCEP-30-01 and PCEP-30-02 alignment, which does not supersede active exam status. Lessons require account and were not entered; course quality/completion not established. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cisco-python-essentials-1","title":"Python Essentials 1","url":"https://www.netacad.com/courses/python-essentials-1","publisher":"Cisco Networking Academy / OpenEDG Python Institute","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["PCEP-30-02"],"notes":"Free official partner delivery of Python Essentials 1. The public page requires JavaScript; verify the current enrollment and duration estimate."
+      "id": "cisco-python-essentials-1",
+      "title": "Python Essentials 1",
+      "url": "https://www.netacad.com/courses/python-essentials-1",
+      "publisher": "Cisco Networking Academy / OpenEDG Python Institute",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCEP-30-02"
+      ],
+      "notes": "Free official partner delivery of Python Essentials 1. The public page requires JavaScript; verify the current enrollment and duration estimate. September 29 PCEP-30-02 deep review: HTTP200 but extracted body was a 59-character application shell. No rendered curriculum or current runtime verified. Historical 30–42-hour estimate is explicitly qualified. No account or enrollment. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"openedg-pcep-practice","title":"PCEP-30-02 Practice Test Compendium","url":"https://ums.edube.org/products/0-pi-pcep-3002-pt","publisher":"OpenEDG Python Institute","authority_class":1,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["PCEP-30-02"],"notes":"Official practice voucher with study pages, section sets, and multiple full-test launches. Its displayed 18/28/26/28 weights currently conflict with the canonical 18/29/25/28 syllabus."
+      "id": "openedg-pcep-practice",
+      "title": "PCEP-30-02 Practice Test Compendium",
+      "url": "https://ums.edube.org/products/0-pi-pcep-3002-pt",
+      "publisher": "OpenEDG Python Institute",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCEP-30-02"
+      ],
+      "notes": "Official practice voucher with study pages, section sets, and multiple full-test launches. Its displayed 18/28/26/28 weights currently conflict with the canonical 18/29/25/28 syllabus. September 29 PCEP-30-02 deep review: Complete public 3334-character product description/terms read. USD29 practice-only product, 12-month voucher redemption validity, five launches per test, study pages and section sets advertised. Does not include an exam attempt. Store domain weights 18/28/26/28 disagree with canonical 18/29/25/28. Store instructs Test Candidate role while credential page says Learner. Paid items not read; no account, cart, checkout or voucher redemption. Static cart-confirmation template text is not evidence of a cart action. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"microsoft-learn-python-fundamentals","title":"Get Started with Python Programming: Part 1 - Fundamentals","url":"https://learn.microsoft.com/en-us/training/paths/get-started-with-python-fundamentals/","publisher":"Microsoft Learn","authority_class":2,"source_type":"third-party-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCEP-30-02"],"notes":"Free 3h12m beginner path covering console I/O, strings, variables, types, numeric operations, conversions and conditionals; not complete PCEP coverage."
+      "id": "microsoft-learn-python-fundamentals",
+      "title": "Get Started with Python Programming: Part 1 - Fundamentals",
+      "url": "https://learn.microsoft.com/en-us/training/paths/get-started-with-python-fundamentals/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 2,
+      "source_type": "third-party-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCEP-30-02"
+      ],
+      "notes": "Free 3h12m beginner path covering console I/O, strings, variables, types, numeric operations, conversions and conditionals; not complete PCEP coverage. September 29 PCEP-30-02 deep review: Complete current public 1467-character page and four module descriptions read: first code, data, VS Code configuration and decisions. Intro mentions functions but listed modules do not establish that coverage. Previous three-hour-12-minute total not present and not reverified. No lesson completion, tooling installation or Copilot action. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pluralsight-python-essentials","title":"Python Essentials","url":"https://www.pluralsight.com/paths/python-essentials","publisher":"Pluralsight","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["PCEP-30-02"],"notes":"46-hour broad path in active production. Select core-language courses and labs rather than consuming the entire path for PCEP."
+      "id": "pluralsight-python-essentials",
+      "title": "Python Essentials",
+      "url": "https://www.pluralsight.com/paths/python-essentials",
+      "publisher": "Pluralsight",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCEP-30-02"
+      ],
+      "notes": "46-hour broad path in active production. Select core-language courses and labs rather than consuming the entire path for PCEP. September 29 PCEP-30-02 deep review: Complete 14739-character public landing and listing read. Header 17 courses, 25 labs, 47 hours; includes September 2026 additions and broad advanced topics. Foundations 2h41m, Data Structures 1h56m and Simplifying Python Applications Through Functions and Modules 1h38m total 375 minutes/6h15m. This is catalog arithmetic, not a watched-content or full PCEP alignment claim. No paid course/lab playback, assessment or trial. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-learning-python-6","title":"Learning Python, 6th Edition","url":"https://www.oreilly.com/library/view/learning-python-6th/9781098171292/","publisher":"O'Reilly / Mark Lutz","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["PCEP-30-02"],"notes":"February 2025, 1,172-page, 42h20m comprehensive language reference. Select relevant early chapters; it is broader and deeper than PCEP."
+      "id": "oreilly-learning-python-6",
+      "title": "Learning Python, 6th Edition",
+      "url": "https://www.oreilly.com/library/view/learning-python-6th/9781098171292/",
+      "publisher": "O'Reilly / Mark Lutz",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCEP-30-02"
+      ],
+      "notes": "February 2025, 1,172-page, 42h20m comprehensive language reference. Select relevant early chapters; it is broader and deeper than PCEP. September 29 PCEP-30-02 deep review: Direct HTTP403. Prior 42h20m metadata, current edition contents and paid interior not reverified. Selective 15–25 hours is an author planning estimate. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-python-pcep-wiech","title":"Python PCEP: Become Certified Entry-Level Python Programmer","url":"https://www.udemy.com/course/python-pcep/","publisher":"Udemy / Adrian Wiech","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["PCEP-30-02"],"notes":"4h27m PCEP-30-02 course listed as updated August 2026, with coding exercises, block quizzes and a mock exam. Keep the official syllabus authoritative."
+      "id": "udemy-python-pcep-wiech",
+      "title": "Python PCEP: Become Certified Entry-Level Python Programmer",
+      "url": "https://www.udemy.com/course/python-pcep/",
+      "publisher": "Udemy / Adrian Wiech",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCEP-30-02"
+      ],
+      "notes": "4h27m PCEP-30-02 course listed as updated August 2026, with coding exercises, block quizzes and a mock exam. Keep the official syllabus authoritative. September 29 PCEP-30-02 deep review: Direct HTTP403. Prior 4h27m runtime and advertised course contents not reverified. No paid questions or videos accessed; extra practice time is an author estimate. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"harvard-cs50-python","title":"CS50's Introduction to Programming with Python","url":"https://cs50.harvard.edu/python/","publisher":"Harvard University / CS50","authority_class":2,"source_type":"third-party-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCEP-30-02","PCAP-31-03"],"notes":"Free OpenCourseWare with lectures, notes, transcripts and problems. It is not certification-aligned; select the portions that match the current objective map."
+      "id": "harvard-cs50-python",
+      "title": "CS50's Introduction to Programming with Python",
+      "url": "https://cs50.harvard.edu/python/",
+      "publisher": "Harvard University / CS50",
+      "authority_class": 2,
+      "source_type": "third-party-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCEP-30-02",
+        "PCAP-31-03"
+      ],
+      "notes": "Free OpenCourseWare with lectures, notes, transcripts and problems. It is not certification-aligned; select the portions that match the current objective map. September 29 PCEP-30-02 deep review: Direct HTTP timeout; complete current public landing read through web reader. Ten-week free OpenCourseWare, first four topics functions/variables, conditionals, loops and exceptions. No lectures, problem sets, final project, account or submission. Selective 15–25 hours is author judgment, not a provider duration. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"youtube-freecodecamp-python-beginner","title":"Learn Python - Full Course for Beginners","url":"https://www.youtube.com/watch?v=rfscVS0vtbw","publisher":"freeCodeCamp.org / Giraffe Academy","authority_class":3,"source_type":"third-party-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCEP-30-02"],"notes":"Popular free approximately 4h26m beginner video. Older but useful for fundamentals; reconcile details and omissions with the current official syllabus and Python documentation."
+      "id": "youtube-freecodecamp-python-beginner",
+      "title": "Learn Python - Full Course for Beginners",
+      "url": "https://www.youtube.com/watch?v=rfscVS0vtbw",
+      "publisher": "freeCodeCamp.org / Giraffe Academy",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCEP-30-02"
+      ],
+      "notes": "Popular free approximately 4h26m beginner video. Older but useful for fundamentals; reconcile details and omissions with the current official syllabus and Python documentation. September 29 PCEP-30-02 deep review: HTTP200 with 214-character title/shell text. No playback or transcript read; old roughly 4h26m duration not reverified. This is limited title-level availability evidence, not a content review. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
     },
     {
       "id":"cpe-20-01-syllabus","title":"CPE C++ Certified Entry-Level Programmer","url":"https://cppinstitute.org/cpe","publisher":"OpenEDG C++ Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["CPE-20-01"],"notes":"Canonical active exam page with four-block 28/28/24/20 syllabus, format, price, delivery, aligned resources, minimally qualified candidate profile and July 22, 2025 syllabus date."
@@ -54460,7 +54749,19 @@
       "id":"pcpp1-certification-page","title":"PCPP1 Certified Professional Python Programmer Level 1","url":"https://pythoninstitute.org/pcpp1","publisher":"OpenEDG Python Institute","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCPP-32-101"],"notes":"Current exam/version, announced PCPP-32-102 development, prerequisites, lifetime validity, format, price, delivery, retake and official practice-test status."
     },
     {
-      "id":"pep-8-style-guide","title":"PEP 8 — Style Guide for Python Code","url":"https://peps.python.org/pep-0008/","publisher":"Python Software Foundation","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCPP-32-101"],"notes":"Primary coding-style convention named by the blueprint; use its current text while respecting the dated exam scope."
+      "id": "pep-8-style-guide",
+      "title": "PEP 8 — Style Guide for Python Code",
+      "url": "https://peps.python.org/pep-0008/",
+      "publisher": "Python Software Foundation",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCPP-32-101",
+        "PCEP-30-02"
+      ],
+      "notes": "Primary coding-style convention named by the blueprint; use its current text while respecting the dated exam scope. September 29 PCEP-30-02 deep review: Selected indentation, tabs/spaces, maximum line length, function/variable naming and constants sections read. Four spaces and naming are style guidance; two-space example actually compiles. Full PEP and linked style materials not audited. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
     },
     {
       "id":"pep-257-docstrings","title":"PEP 257 — Docstring Conventions","url":"https://peps.python.org/pep-0257/","publisher":"Python Software Foundation","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCPP-32-101"],"notes":"Primary docstring convention named by the blueprint."

@@ -5,6 +5,25 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "PCEP-30-02",
+      "reviewed_on": "2026-09-29",
+      "guide_sha256": "26fec862e3024f72f6d9d6e1dda7ed45711102d89791114649a23b3492113243",
+      "objective_count": 84,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-29-pcep-30-02-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-29-pcep-30-02-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "Direct official objective monitoring timed out; manual web-reader comparison is separate evidence. Objective/status snapshots remain untouched. PDF page text was read through the web reader; no local genuine PDF hash or visual inspection is claimed.",
+        "PCEP-30-03 remains an announced Q3 2026 version in development on examined pages. Purchase availability, final release date, full future syllabus and account UI remain unverified. Current practice role instructions disagree across public pages.",
+        "Public course descriptions and selected documentation sections were read, not all paid lessons, official practice items or linked reference material. OReilly/Udemy returned HTTP 403; Cisco/YouTube were shells and Harvard required web-reader fallback.",
+        "136 offline checks cover four original public blocks on existing CPython 3.13.14. Documentation displayed 3.13.15/general 3.14.7. These are selected behavior checks, not every interpreter/input, exam performance or production validation; eight broader learner activities remain proposed.",
+        "Shipping rates, score cutoff and inventory rules are fictional. Input contracts, small recursion, shallow nested-copy limits and first-match search behavior are explicit. No installations, accounts, exam attempts, remote services, course completion or human review occurred."
+      ]
+    },
+    {
       "exam_code": "CRISC",
       "reviewed_on": "2026-09-29",
       "guide_sha256": "88d49379a47760646c67a21fdc478c1f4c9a60203593629dd6010257498df922",

@@ -1931,6 +1931,8 @@ official item-style sources. Blueprint SHA-256:
 
 ## PCEP-30-02 coverage record
 
+The September 29 [deep review](research/2026-09-29-pcep-30-02-deep-review.md) maps 84 detailed objectives. Mapped 84 syllabus bullets across all 15 numbered objectives. Repaired failure-stage, Boolean-operand, copy, method-return and scope explanations; preserved and improved 40 answers. Four public code blocks passed 136 offline checks, including three worked scenarios. Refreshed course metadata and disclosed conflicting vendor counts/weights and practice-role instructions. Direct primary fetches, paid interiors, current exam rollout and human review remain qualified. Current guide citations: 25 registered, 18 reachable, 2 access-blocked, 5 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Computer Programming and Python Fundamentals (18%); Control Flow — Conditional Blocks and Loops (29%); Data Collections — Tuples, Dictionaries, Lists, and Strings (25%); Functions and Exceptions (28%)

@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [PCEP-30-02 deep review](docs/research/2026-09-29-pcep-30-02-deep-review.md): Mapped 84 syllabus bullets and corrected Python tracing explanations; four public code blocks passed 136 offline checks with three worked programs. Refreshed catalogs and documented current-version, source-access and vendor-page discrepancies; human review pending.
+
 - September 29, 2026: [CRISC deep review](docs/research/2026-09-29-crisc-deep-review.md): Mapped 68 canonical entries; corrected QAE count and added 40 answers, three worked scenarios and 52 executed schema, simulation and portfolio checks.
 
 - September 29, 2026: [CISM deep review](docs/research/2026-09-29-cism-deep-review.md): Mapped 72 current entries; corrected November weights/architecture changes and added 40 answers, three worked scenarios and 47 executed management checks.

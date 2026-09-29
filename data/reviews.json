@@ -10843,23 +10843,160 @@
       "notes": "Mapped 44 canonical domain-list entries and 24 tasks, explaining the PDF heading/count difference. Added 40 answer notes, three worked scenarios, eight proposed activities and 52 executed schema, simulation and portfolio checks. Corrected the QAE pool to 833 and resource durations; qualified a NIST confidence-example inconsistency. Paid interiors, personal eligibility, organizational controls and human review remain pending. See docs/research/2026-09-29-crisc-deep-review.md"
     },
     {
-      "id":"pcep-30-02-2026-09-02-source-validation",
-      "exam_code":"PCEP-30-02",
-      "guide_path":"guides/PCEP-30-02-python-certified-entry-level-programmer.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-02",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/pcep-30-02-official-objectives.txt",
-      "blueprint_snapshot_sha256":"fc0a0b67b1f15a4430075b889978a82e162d98642f0b822768bc3796c322ca57",
-      "objective_coverage":[
-        {"objective_group":"Computer Programming and Python Fundamentals (18%)","guide_sections":["Section 1","Scenario 1","Labs 1–3"]},
-        {"objective_group":"Control Flow — Conditional Blocks and Loops (29%)","guide_sections":["Section 2","All scenarios","Lab 4"]},
-        {"objective_group":"Data Collections — Tuples, Dictionaries, Lists, and Strings (25%)","guide_sections":["Section 3","Scenarios 2–3","Labs 5–6"]},
-        {"objective_group":"Functions and Exceptions (28%)","guide_sections":["Section 4","All scenarios","Labs 7–8"]}
+      "id": "pcep3002-2026-09-29-source-validation",
+      "exam_code": "PCEP-30-02",
+      "guide_path": "guides/PCEP-30-02-python-certified-entry-level-programmer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/pcep-30-02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "fc0a0b67b1f15a4430075b889978a82e162d98642f0b822768bc3796c322ca57",
+      "objective_coverage": [
+        {
+          "objective_group": "1.1 Understand fundamental terms and definitions",
+          "guide_sections": [
+            "1. Computer programming and Python fundamentals — 18%",
+            "Executed trace workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "1.2 Understand Python’s logic and structure",
+          "guide_sections": [
+            "1. Computer programming and Python fundamentals — 18%",
+            "Executed trace workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "1.3 Introduce literals and variables into code and use different numeral systems",
+          "guide_sections": [
+            "1. Computer programming and Python fundamentals — 18%",
+            "Executed trace workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "1.4 Choose operators and data types adequate to the problem",
+          "guide_sections": [
+            "1. Computer programming and Python fundamentals — 18%",
+            "Executed trace workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "1.5 Perform Input/Output console operations",
+          "guide_sections": [
+            "1. Computer programming and Python fundamentals — 18%",
+            "Executed trace workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "2.1 Make decisions and branch the flow with the if instruction",
+          "guide_sections": [
+            "2. Control flow — 29%",
+            "Integrated scenarios",
+            "Executed trace workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "2.2 Perform different types of iterations",
+          "guide_sections": [
+            "2. Control flow — 29%",
+            "Integrated scenarios",
+            "Executed trace workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "3.1 Collect and process data using lists",
+          "guide_sections": [
+            "3. Data collections — 25%",
+            "Integrated scenarios",
+            "Executed trace workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "3.2 Collect and process data using tuples",
+          "guide_sections": [
+            "3. Data collections — 25%",
+            "Integrated scenarios",
+            "Executed trace workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "3.3 Collect and process data using dictionaries",
+          "guide_sections": [
+            "3. Data collections — 25%",
+            "Integrated scenarios",
+            "Executed trace workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "3.4 Operate with strings",
+          "guide_sections": [
+            "3. Data collections — 25%",
+            "Integrated scenarios",
+            "Executed trace workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "4.1 Decompose the code using functions",
+          "guide_sections": [
+            "4. Functions and exceptions — 28%",
+            "Integrated scenarios",
+            "Executed trace workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "4.2 Organize interaction between the function and its environment",
+          "guide_sections": [
+            "4. Functions and exceptions — 28%",
+            "Integrated scenarios",
+            "Executed trace workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "4.3 Python Built-In Exceptions Hierarchy",
+          "guide_sections": [
+            "4. Functions and exceptions — 28%",
+            "Integrated scenarios",
+            "Executed trace workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "4.4 Basics of Python Exception Handling",
+          "guide_sections": [
+            "4. Functions and exceptions — 28%",
+            "Integrated scenarios",
+            "Executed trace workbook",
+            "Answers and reasoning"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":12,"reachable":10,"access_blocked":2,"missing_or_error":0},
-      "notes":"All four PCEP-30-02 blocks and published subtopics are mapped through execution/syntax, literals/types/operators/I/O, traceable decisions and loops, sequence/mapping/mutability/aliasing reasoning, functions/scope/recursion/generation, and exception hierarchy/handling. Three integrated programming scenarios, eight hands-on labs and 40 original checks are included. The canonical syllabus's 18/29/25/28 weights are retained and the official practice product's conflicting 18/28/26/28 display is labeled rather than normalized. PCEP-30-03 remains a scheduled Q3 2026 watch item while the live page identifies 30-02 as current. No recalled/live item, answer dump or copied course question is used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 25,
+        "reachable": 18,
+        "access_blocked": 2,
+        "missing_or_error": 5
+      },
+      "notes": "Mapped 84 syllabus bullets across all 15 numbered objectives. Repaired failure-stage, Boolean-operand, copy, method-return and scope explanations; preserved and improved 40 answers. Four public code blocks passed 136 offline checks, including three worked scenarios. Refreshed course metadata and disclosed conflicting vendor counts/weights and practice-role instructions. Direct primary fetches, paid interiors, current exam rollout and human review remain qualified. See docs/research/2026-09-29-pcep-30-02-deep-review.md"
     },
     {
       "id":"cpe-20-01-2026-09-02-source-validation",
@@ -10925,24 +11062,70 @@
       "notes":"All eight CLE-10-01 syllabus blocks are mapped through translation stages, literals and data representation, declarations/types/conversions/formatted I/O, operator and control-flow tracing, arrays and pointer bounds, allocation lifetimes, null-terminated strings, and value-versus-pointer function parameters. Three scenarios, eight labs and 30 original checks are included. The guide uses precise C terminology where the official syllabus is informal, labels implementation and language-version boundaries, and treats the SEI, O'Reilly and Udemy pages as automation-blocked rather than broken. No recalled/live item, answer dump or copied course question is used. September 17, 2026 link-only maintenance: the SEI reference moved to the official cmu-sei.github.io site and is reachable; link counts were refreshed. This does not represent a new full-content or practitioner review."
     },
     {
-      "id":"pcap-31-03-2026-09-02-source-validation",
-      "exam_code":"PCAP-31-03",
-      "guide_path":"guides/PCAP-31-03-python-certified-associate-python-programmer.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-02",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/pcap-31-03-official-objectives.txt",
-      "blueprint_snapshot_sha256":"189719f136c042874d3fb6530214fa39ee69cc34f73f26675db41dd50e3eca85",
-      "objective_coverage":[
-        {"objective_group":"Modules and Packages (12%)","guide_sections":["Section 1","Scenarios 1 and 3","Labs 1–2"]},
-        {"objective_group":"Exceptions (14%)","guide_sections":["Section 2","All scenarios","Labs 3–4"]},
-        {"objective_group":"Strings (18%)","guide_sections":["Section 3","Scenario 2","Labs 5–6"]},
-        {"objective_group":"Object-Oriented Programming (34%)","guide_sections":["Section 4","Scenario 1","Labs 7–8"]},
-        {"objective_group":"Comprehensions, Lambdas, Closures, and I/O (22%)","guide_sections":["Section 5","All scenarios","Labs 9–10"]}
+      "id": "pcap-31-03-2026-09-02-source-validation",
+      "exam_code": "PCAP-31-03",
+      "guide_path": "guides/PCAP-31-03-python-certified-associate-python-programmer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/pcap-31-03-official-objectives.txt",
+      "blueprint_snapshot_sha256": "189719f136c042874d3fb6530214fa39ee69cc34f73f26675db41dd50e3eca85",
+      "objective_coverage": [
+        {
+          "objective_group": "Modules and Packages (12%)",
+          "guide_sections": [
+            "Section 1",
+            "Scenarios 1 and 3",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Exceptions (14%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Strings (18%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenario 2",
+            "Labs 5–6"
+          ]
+        },
+        {
+          "objective_group": "Object-Oriented Programming (34%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenario 1",
+            "Labs 7–8"
+          ]
+        },
+        {
+          "objective_group": "Comprehensions, Lambdas, Closures, and I/O (22%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 9–10"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":11,"reachable":10,"access_blocked":1,"missing_or_error":0},
-      "notes":"All five PCAP-31-03 sections are mapped through module/package namespace behavior and named standard-library calls, exception matching and custom hierarchies, Unicode/string operations, class/instance state and inheritance, comprehensions/functional tools/closures, and text/binary I/O. Three scenarios, ten labs and 27 original checks are included. The announced PCAP-31-04 Q3 2026 version remains a prominent transition watch while the live credential page identifies 31-03 as current. The initially supplied practice URL was rejected after a 404 and replaced with the verified live OpenEDG product page. O'Reilly is automation-blocked; no guide link is missing. No recalled/live item, answer dump or copied course question is used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 9,
+        "access_blocked": 1,
+        "missing_or_error": 1
+      },
+      "notes": "All five PCAP-31-03 sections are mapped through module/package namespace behavior and named standard-library calls, exception matching and custom hierarchies, Unicode/string operations, class/instance state and inheritance, comprehensions/functional tools/closures, and text/binary I/O. Three scenarios, ten labs and 27 original checks are included. The announced PCAP-31-04 Q3 2026 version remains a prominent transition watch while the live credential page identifies 31-03 as current. The initially supplied practice URL was rejected after a 404 and replaced with the verified live OpenEDG product page. O'Reilly is automation-blocked; no guide link is missing. No recalled/live item, answer dump or copied course question is used. September 29 PCEP source-health refresh updated shared-link counts only; PCAP content and review date were not re-reviewed."
     },
     {
       "id":"jsa-41-01-2026-09-02-source-validation",

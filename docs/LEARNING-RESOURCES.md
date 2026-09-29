@@ -3433,6 +3433,29 @@ This is not a complete list. Choose sections that close your measured gaps. The 
 
 Reject dumps, recalled or “actual” questions and guaranteed-pass products. A large question pool, polished dashboard or valid JSON record does not replace evidence and reasoned decisions.
 
+### PCEP-30-02 — PCEP Certified Entry-Level Python Programmer
+
+Resource details from the [PCEP-30-02 guide](../guides/PCEP-30-02-python-certified-entry-level-programmer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list and is not meant to be consumed in full. Choose one coherent primary course or book, write and debug code for every block, and use one explanation-led assessment to identify gaps. The official syllabus—not any third-party “pass” claim—is the final scope authority.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [PCEP-30-02 exam syllabus](https://pythoninstitute.org/pcep-exam-syllabus/) | Free official blueprint | 1–2 hours to map and recheck |
+| [Python Essentials 1](https://edube.org/study/pe1) | Free official aligned self-study; account required | 42 hours listed |
+| [Cisco Networking Academy Python Essentials 1](https://www.netacad.com/courses/python-essentials-1) | Free official partner listing; direct response was an application shell | Current runtime not verified; earlier 30–42-hour estimate retained only as historical context |
+| [OpenEDG PCEP practice-test compendium](https://ums.edube.org/products/0-pi-pcep-3002-pt) | Paid official practice; public terms describe five launches per test and 12-month voucher redemption validity; items not accessed | 4–8 hours is an author planning estimate, not a listed runtime |
+| [Microsoft Learn: Python Programming Fundamentals](https://learn.microsoft.com/en-us/training/paths/get-started-with-python-fundamentals/) | Free four-module fundamentals/tooling path; public descriptions read, lessons not completed | Current total not displayed in capture; prior 3h12m not reverified |
+| [Pluralsight Python Essentials](https://www.pluralsight.com/paths/python-essentials) | Subscription; public list shows 17 courses, 25 labs and broader material; interiors not accessed | Headline 47 hours; Foundations + Data Structures + Functions/Modules listings total 6h15m, before practice |
+| [Learning Python, 6th Edition](https://www.oreilly.com/library/view/learning-python-6th/9781098171292/) | O'Reilly subscription/book; direct HTTP 403; current metadata/interior unverified | Author estimate 15–25 hours selectively; historical 42h20m not reverified |
+| [Udemy: Python PCEP by Adrian Wiech](https://www.udemy.com/course/python-pcep/) | Paid marketplace listing; direct HTTP 403; current contents unverified | Historical 4h27m not reverified; author estimate 6–10 extra practice hours |
+| [CS50's Introduction to Programming with Python](https://cs50.harvard.edu/python/) | Free Harvard OpenCourseWare; web reader confirmed ten-week course and first four topic headings; lectures/problems not completed | Select weeks 0–3; 15–25 hours is an author estimate |
+| [freeCodeCamp beginner Python course](https://www.youtube.com/watch?v=rfscVS0vtbw) | Free older YouTube course; direct capture only verified title, no playback | Historical about 4h26m not reverified; add coding time |
+
+No exact current PCEP product from Whizlabs or MeasureUp, and no dedicated PCEP path on Pluralsight or O'Reilly, was independently verified in this review; that is a search boundary, not proof none exists. Generic resources can teach Python well without matching every exam edge; reconcile them against the four blocks. Prices, access, runtimes, course revisions, practice weights, and exam-version claims are volatile—verify before purchase, especially during the PCEP-30-03 transition.
+
+The Edube landing lists 42 hours and four course sections, but an account would be needed to assess the lessons. The practice store lists voucher redemption and launch limits; it does not establish paid-item quality. Pluralsight lists Foundations (2h41m), Data Structures (1h56m) and Simplifying Python Applications Through Functions and Modules (1h38m): the 6h15m sum is catalog arithmetic, not a full PCEP coverage claim. Microsoft's path currently lists first code, data, VS Code setup and decisions; neither its four-module count nor its tooling overview proves functions, generators and exception coverage. None of these courses was completed during this review.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.
