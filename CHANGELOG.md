@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [XK0-006 deep review](docs/research/2026-09-29-xk0-006-deep-review.md): 29 numbered objectives mapped; umask/ACL, current tools and orchestration/monitoring teaching improved; 44 local MSYS/Python checks passed; native Linux runtime blocker deferred and baseline history retained.
+
 - September 29, 2026: [SY0-701 deep review](docs/research/2026-09-29-sy0-701-deep-review.md): 28 numbered objectives mapped; original crypto/certificate examples passed 34 checks, current identity/incident/risk distinctions added, 46 answers strengthened; duration-only metadata accepted with history retained.
 
 - September 29, 2026: [N10-009 deep review](docs/research/2026-09-29-n10-009-deep-review.md): 25 numbered objectives mapped; routing/DNS/MTU and modern-network teaching strengthened, 72 local checks and 24 loopback DNS exchanges passed; duration-only baseline change archived and accepted.

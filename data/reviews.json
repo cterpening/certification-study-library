@@ -3,6 +3,72 @@
   "schema_version": 1,
   "reviews": [
     {
+      "id": "xk0-006-2026-09-01-source-validation",
+      "exam_code": "XK0-006",
+      "guide_path": "guides/XK0-006-comptia-linux-plus.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/xk0-006-2026-09-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "145e8c39625ce15055b7d8e0098b2cbde174c84538e11eb25b3b81ae8e0f4832",
+      "objective_coverage": [
+        {
+          "objective_group": "System management (23%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios 1–2",
+            "Labs 1–2, 4, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Services and user management (20%)",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 1, 3, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security (18%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios 2–3",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Automation, orchestration, and scripting (17%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenario 3",
+            "Labs 6–8"
+          ]
+        },
+        {
+          "objective_group": "Troubleshooting (22%)",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "All labs"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 7,
+        "reachable": 5,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All five weighted V8 domains are mapped to runtime state, persistent configuration, restart/reboot/recreate and revalidation, with three scenarios, eight cross-distribution break/fix labs and 42 original checks. All seven guide URLs are cataloged: five reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. Distribution-specific behavior is a verification boundary. No proprietary objectives, PBQs, course labs or recalled items are used."
+    },
+    {
       "id": "sy0-701-2026-09-06-source-validation",
       "exam_code": "SY0-701",
       "guide_path": "guides/SY0-701-comptia-security-plus.md",
@@ -6511,24 +6577,70 @@
       "notes": "Mapped all 28 numbered objectives in public PDF document 7.0. Added original cryptography and certificate examples with 34 executed checks, zero-trust roles, protocol/identity boundaries, current incident-response and severity context, worked risk/evidence/detection cases, 46 answers and eight proposed full labs. Corrected a stale replacement-exam answer, qualified blocked catalog claims and explicitly accepted duration-only monitor metadata while preserving history. See docs/research/2026-09-29-sy0-701-deep-review.md"
     },
     {
-      "id":"xk0-006-2026-09-01-source-validation",
-      "exam_code":"XK0-006",
-      "guide_path":"guides/XK0-006-comptia-linux-plus.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-01",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/xk0-006-official-objectives.txt",
-      "blueprint_snapshot_sha256":"145e8c39625ce15055b7d8e0098b2cbde174c84538e11eb25b3b81ae8e0f4832",
-      "objective_coverage":[
-        {"objective_group":"System management (23%)","guide_sections":["Section 1","Integrated scenarios 1–2","Labs 1–2, 4, 6 and 8"]},
-        {"objective_group":"Services and user management (20%)","guide_sections":["Section 2","All integrated scenarios","Labs 1, 3, 6 and 8"]},
-        {"objective_group":"Security (18%)","guide_sections":["Section 3","Integrated scenarios 2–3","Labs 4–5 and 8"]},
-        {"objective_group":"Automation, orchestration, and scripting (17%)","guide_sections":["Section 4","Integrated scenario 3","Labs 6–8"]},
-        {"objective_group":"Troubleshooting (22%)","guide_sections":["Section 5","All integrated scenarios","All labs"]}
+      "id": "xk0-006-2026-09-29-source-validation",
+      "exam_code": "XK0-006",
+      "guide_path": "guides/XK0-006-comptia-linux-plus.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/xk0-006-official-objectives.txt",
+      "blueprint_snapshot_sha256": "7092fafe78142df3f4be33e42aea257143769cc6268b90a4e1059f994c00496e",
+      "objective_coverage": [
+        {
+          "objective_group": "System management (23%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios 1–2",
+            "Labs 1–2, 4, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Services and user management (20%)",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 1, 3, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security (18%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios 2–3",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Automation, orchestration, and scripting (17%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenario 3",
+            "Labs 6–8"
+          ]
+        },
+        {
+          "objective_group": "Troubleshooting (22%)",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "All labs"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":7,"reachable":5,"access_blocked":2,"missing_or_error":0},
-      "notes":"All five weighted V8 domains are mapped to runtime state, persistent configuration, restart/reboot/recreate and revalidation, with three scenarios, eight cross-distribution break/fix labs and 42 original checks. All seven guide URLs are cataloged: five reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. Distribution-specific behavior is a verification boundary. No proprietary objectives, PBQs, course labs or recalled items are used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 29,
+        "reachable": 27,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Mapped all 29 numbered PDF objectives and command-level details. Corrected umask/ACL and shell distinctions, documented older/misnamed outline tools against upstream references, expanded explicit OpenTofu/orchestration and monitoring scope, added original Bash/Python examples with 44 checks and an actual MSYS archive/restore, strengthened 46 answers/eight proposed labs, and accepted duration-only metadata with prior history retained. Native Linux runtime execution remains blocked and deferred. See docs/research/2026-09-29-xk0-006-deep-review.md"
     },
     {
       "id":"cv0-004-2026-09-01-source-validation",

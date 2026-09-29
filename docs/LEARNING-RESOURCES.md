@@ -3185,15 +3185,20 @@ This is not a complete list and is not meant to be consumed in full. Given the s
 
 ### CompTIA Linux+ (XK0-006)
 
-- Official baseline: [CompTIA Linux+ V8](https://www.comptia.org/en-us/certifications/linux/) (**3–6 hours mapping five domains and delivery**); treat 2028 as an estimate rather than a dated retirement
-- Official options: [CertMaster Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/), [Labs](https://www.comptia.org/en-us/resources/certmaster-training/labs/), and [Practice](https://www.comptia.org/en-us/resources/certmaster-training/practice/) (**60–120 combined hours estimated**); select the exact XK0-006 product/bundle
-- Current course/lab path: [Pluralsight XK0-006](https://www.pluralsight.com/paths/comptia-linux-xk0-006) (**27 listed hours plus 35–70 lab/review hours**), five courses, four 2026 labs and practice exam
-- Detailed video route: [LinkedIn Learning / Total Seminars XK0-006](https://www.linkedin.com/learning/comptia-linux-plus-xk0-006-v8-cert-prep) (**15 hours 42 minutes plus 35–70 lab/review hours**), ten quizzes
-- Structured book: [O'Reilly/Sybex Linux+ Study Guide](https://www.oreilly.com/library/view/comptia-linux-study/9781394316328/) (**about 25–45 reading hours plus 35–70 lab/review hours**), current sixth edition with online practice
-- Detailed marketplace route: [Udemy / Jason Dion XK0-006](https://www.udemy.com/course/comptia-linux/) (**34 hours 39 minutes plus 30–60 lab/review hours**), updated August 2026
-- Course and assessment bundle: [MeasureUp XK0-006 CertKit](https://www.measureup.com/xk0-006-comptia-linux-certkit.html) (**about 35–70 selected hours estimated**), exam simulation and mentoring listed; verify current access/bundle
+Resource details from the [XK0-006 guide](../guides/XK0-006-comptia-linux-plus.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Choose one current route, spend at least as much time operating and breaking/fixing disposable Debian- and RPM-family systems as watching, and use one ethical explanation-led assessment. No exact current Whizlabs XK0-006 route or established complete free creator course was independently selected. Reject recalled-question products and copied destructive commands.
+This is not a complete list and is not meant to be consumed in full. Choose one current XK0-006 path, spend at least as much time operating and breaking/fixing disposable Linux systems as watching, and use one explanation-led assessment for remediation.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| CompTIA [CertMaster Perform](https://www.comptia.org/en-us/resources/certmaster-training/perform/), [Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/), Labs, and Practice | Paid official platform; select exact XK0-006 product/bundle | Provider estimates: Perform 30–60h, Learn 25–40h, Practice 10–20h, Labs 15–25h; overlapping options, not additive requirements |
+| [Pluralsight Linux+ path](https://www.pluralsight.com/paths/comptia-linux-xk0-006) | Subscription; 5 courses, 4 labs and practice exam listed; course and lab dates vary | 27 listed hours plus 35–70 suggested additional lab/review hours |
+| [LinkedIn Learning / Total Seminars XK0-006](https://www.linkedin.com/learning/comptia-linux-plus-xk0-006-v8-cert-prep) | Subscription; Total Seminars V8 course released March 18, 2026; 10 quizzes | 15 hours 42 minutes listed plus 35–70 suggested lab/review hours |
+| [O'Reilly/Sybex Linux+ Study Guide](https://www.oreilly.com/library/view/comptia-linux-study/9781394316328/) | Subscription book; automated catalog access blocked; prior sixth-edition claim not reverified | Suggested 25–45 reading hours plus 35–70 lab/review hours; verify current edition |
+| [Udemy / Jason Dion XK0-006](https://www.udemy.com/course/comptia-linux/) | Paid marketplace course; automated catalog access blocked | Earlier 34h39 runtime not reverified; inspect current syllabus/revision |
+| [MeasureUp XK0-006 CertKit](https://www.measureup.com/xk0-006-comptia-linux-certkit.html) | Paid course bundle, exam simulation and Online Mentor listed; different access periods | Suggested 35–70 selected learning/practice hours; listed e-learning 365 days and practice 60 days from first practice access; verify terms |
+
+**VERIFY CURRENT:** Public metadata checked September 29, 2026; paid interiors, question banks and provider labs were not accessed. Pluralsight courses are dated March/April 2025 and its four labs April–August 2026; newer lab dates do not re-date every lesson. The 27-hour path estimate already includes listed path content. Extra study-hour ranges are planning judgments, not provider guarantees. No exact current Whizlabs XK0-006 route or established complete free creator course was independently selected during this review. Reject “actual questions,” dumps and copied destructive commands. Provider duration, bundle, practice bank, revision, price and access details are volatile.
 
 ### CompTIA Cloud+ (CV0-004)
 

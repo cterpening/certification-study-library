@@ -4,6 +4,235 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-xk0006-deep-review",
+      "title": "XK0-006 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "XK0-006"
+      ],
+      "results": [
+        {
+          "exam_code": "XK0-006",
+          "vendor_id": "comptia",
+          "guide_path": "guides/XK0-006-comptia-linux-plus.md",
+          "baseline_sha256": "9541e13356170e8a4ac085128893b7d5d0be42530610c346db5adae3e43f4bd6",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "V8 XK0-006 launched July 15, 2025; weights 23/20/18/17/22, maximum 90 questions/90 minutes/720 score/English remain current. Retirement is estimated 2028, no exact date. PDF document 5.0 has 29 numbered objectives in groups 7/6/6/5/5, 20 pages; page 11 layout verifies 3.1 authentication/accounting, 3.2 firewalls, 3.3 OS hardening. Monitor adds only Duration: 90 minutes, archived and explicitly accepted."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Read all numbered PDF objectives and detailed bullets. Targeted GNU Bash/tar, Linux man-pages umask/ACL, systemd units/timers/analyze, NetworkManager clients, virt-manager, Linux-PAM release/module guidance, rsync, OpenTofu state, Python path/hash and Red Hat backporting material reviewed. Distinguish command examples from distro-specific operational validation."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current CompTIA page and public document version checked. Upstream Linux-PAM 1.5.0 removal of pam_tally2 conflicts with the older term retained in current objectives; teach recognition and current supported implementation separately. Installed local MSYS Bash 5.3.15, GNU tar 1.35, Findutils 4.11.0 and Python 3.13.14 recorded; systemd latest docs identify version 262, not an assumed installed Linux version."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Pluralsight 5 courses/4 labs/27h, course dates March-April 2025 and lab dates April-August 2026; LinkedIn Total Seminars 15h42/10 quizzes/March 18, 2026. MeasureUp CertKit course/simulation/mentor metadata and distinct access periods read. OReilly and Udemy blocked; earlier edition/runtime claims qualified. CompTIA Perform/Learn/Practice/Labs estimates overlap. Paid interiors not accessed; Places to learn final."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Corrected arithmetic-subtraction umask wording to bit clearing with default-ACL caveat; distinguish ACL mask/mode correspondence. PDF command labels nmconnect, vit-manager, systemd-blame and here-doc/<<< grouping cross-checked against upstream implementation names. Explicit OpenTofu/Kubernetes/Swarm/Compose/cloud-init/Kickstart scope added, along with monitoring 5.1. No universal version-only vulnerability or file-overwrite sanitization claim."
+            }
+          },
+          "findings": [
+            {
+              "id": "xk0006-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Monitor found only duration metadata",
+              "url": "https://www.comptia.org/en-us/certifications/linux/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "XK0-006"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The only normalized addition is Duration: 90 minutes, already taught; no topic, weight or retirement text changed.",
+              "recommendation": "Retain byte-identical prior objectives and historical review/audit evidence, then explicitly accept the reviewed metadata.",
+              "disposition": "applied",
+              "source_id": "comptia-xk0-006-blueprint",
+              "resolution": "Retain byte-identical prior objectives and historical review/audit evidence, then explicitly accept the reviewed metadata."
+            },
+            {
+              "id": "xk0006-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Full outline contains explicit orchestration and monitoring detail",
+              "url": "https://lecbyo.files.cmp.optimizely.com/download/90b9ac985c0e11f0b004a2a93c999a21?checkExpiry=false",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "XK0-006"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Objective 4.1 names OpenTofu and orchestration/bootstrap tools; 5.1 covers SLIs/SLOs/SLAs and collection/alerting.",
+              "recommendation": "Map all 29 numbered objectives and add tool-role and original monitoring cases; do not treat the main-page summary as the complete command list.",
+              "disposition": "applied",
+              "source_id": "comptia-xk0-006-objectives-pdf",
+              "resolution": "Map all 29 numbered objectives and add tool-role and original monitoring cases; do not treat the main-page summary as the complete command list."
+            },
+            {
+              "id": "xk0006-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Umask was described as subtraction",
+              "url": "https://man7.org/linux/man-pages/man2/umask.2.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "XK0-006"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Linux creation masks clear requested bits; default ACLs alter creation inheritance.",
+              "recommendation": "Correct explanation with 0666 masked by 0003 yielding 0664, default ACL caveat and checked arithmetic; no native enforcement claim.",
+              "disposition": "applied",
+              "source_id": "linux-man-umask",
+              "resolution": "Correct explanation with 0666 masked by 0003 yielding 0664, default ACL caveat and checked arithmetic; no native enforcement claim."
+            },
+            {
+              "id": "xk0006-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "ACL masks and mode bits need a precise relationship",
+              "url": "https://man7.org/linux/man-pages/man5/acl.5.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "XK0-006"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The ACL mask limits named-user/group-class permissions and corresponds to the displayed group-class mode bits for extended ACLs.",
+              "recommendation": "Add effective-permission case and distinguish owner/other, path traversal and MAC; no blanket override metaphor.",
+              "disposition": "applied",
+              "source_id": "linux-man-acl",
+              "resolution": "Add effective-permission case and distinguish owner/other, path traversal and MAC; no blanket override metaphor."
+            },
+            {
+              "id": "xk0006-deep-5",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "The current PDF retains a removed upstream module name",
+              "url": "https://github.com/linux-pam/linux-pam/blob/master/NEWS",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "XK0-006"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Objective 3.4 lists pam_tally2; Linux-PAM removed deprecated tally modules in 1.5.0 and points to faillock.",
+              "recommendation": "Preserve exam recognition, explain current module and different stack configuration, and require distro-supported configuration; no PAM edits.",
+              "disposition": "applied",
+              "source_id": "linux-pam-news",
+              "resolution": "Preserve exam recognition, explain current module and different stack configuration, and require distro-supported configuration; no PAM edits."
+            },
+            {
+              "id": "xk0006-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Published utility label differs from documented command",
+              "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd-analyze.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "XK0-006"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The PDF lists systemd-blame; upstream documents the systemd-analyze blame subcommand and its activation-timing limits.",
+              "recommendation": "Add verified name and explain dependency/parallel-start caveats; do not claim a Linux service-manager test.",
+              "disposition": "applied",
+              "source_id": "systemd-analyze",
+              "resolution": "Add verified name and explain dependency/parallel-start caveats; do not claim a Linux service-manager test."
+            },
+            {
+              "id": "xk0006-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Shell redirection and pipeline errors need distinct models",
+              "url": "https://www.gnu.org/software/bash/manual/bash.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "XK0-006"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Bash distinguishes << here-documents from <<< here-strings, default last-stage status from pipefail, and subshell context from parent state.",
+              "recommendation": "Teach the distinction and execute original filename/pipeline examples with negative inputs and producer failure.",
+              "disposition": "applied",
+              "source_id": "gnu-bash-manual",
+              "resolution": "Teach the distinction and execute original filename/pipeline examples with negative inputs and producer failure."
+            },
+            {
+              "id": "xk0006-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Archive mode alone does not preserve every property",
+              "url": "https://download.samba.org/pub/rsync/rsync.1",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "XK0-006"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The manual excludes ACLs, xattrs and hard-link preservation from -a and distinguishes trailing-source-slash behavior.",
+              "recommendation": "Explain separate options/capability checks, preview versus actual restore evidence and destination deletion risk; no rsync run claimed.",
+              "disposition": "applied",
+              "source_id": "rsync-upstream-manual",
+              "resolution": "Explain separate options/capability checks, preview versus actual restore evidence and destination deletion risk; no rsync run claimed."
+            },
+            {
+              "id": "xk0006-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Upstream version alone does not establish vulnerability status",
+              "url": "https://access.redhat.com/security/updates/backporting",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "XK0-006"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Vendor security fixes can be backported to older-version packages; advisories explain exact affected/fixed builds.",
+              "recommendation": "Add vendor-package/advisory evidence workflow while avoiding blanket dismissal of scanner findings or current support claims for old article examples.",
+              "disposition": "applied",
+              "source_id": "redhat-backporting",
+              "resolution": "Add vendor-package/advisory evidence workflow while avoiding blanket dismissal of scanner findings or current support claims for old article examples."
+            }
+          ],
+          "notes": "Mapped all 29 numbered PDF objectives and command-level details. Corrected umask/ACL and shell distinctions, documented older/misnamed outline tools against upstream references, expanded explicit OpenTofu/orchestration and monitoring scope, added original Bash/Python examples with 44 checks and an actual MSYS archive/restore, strengthened 46 answers/eight proposed labs, and accepted duration-only metadata with prior history retained. Native Linux runtime execution remains blocked and deferred. Same-context AI review; human review pending. See docs/research/2026-09-29-xk0-006-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 9,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-sy0701-deep-review",
       "title": "SY0-701 complete guide and learning-content review",
       "rubric_version": 1,

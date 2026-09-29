@@ -1303,6 +1303,8 @@ The review maps every public V7 domain and summary task into an asset → threat
 
 ## XK0-006 coverage record
 
+The September 29 [deep review](research/2026-09-29-xk0-006-deep-review.md) maps 29 detailed objectives. Mapped all 29 numbered PDF objectives and command-level details. Corrected umask/ACL and shell distinctions, documented older/misnamed outline tools against upstream references, expanded explicit OpenTofu/orchestration and monitoring scope, added original Bash/Python examples with 44 checks and an actual MSYS archive/restore, strengthened 46 answers/eight proposed labs, and accepted duration-only metadata with prior history retained. Native Linux runtime execution remains blocked and deferred. Current guide citations: 29 registered, 27 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 1, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: five weighted V8 domains—System management (23%), Services and user management (20%), Security (18%), Automation, orchestration, and scripting (17%), and Troubleshooting (22%)

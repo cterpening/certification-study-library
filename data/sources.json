@@ -3,6 +3,286 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "comptia-xk0-006-objectives-pdf",
+      "title": "Linux+ XK0-006 public objectives document 5.0",
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/90b9ac985c0e11f0b004a2a93c999a21?checkExpiry=false",
+      "publisher": "CompTIA",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "XK0-006"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 XK0-006 deep review: Public 20-page document 5.0: all 29 numbered objectives and detailed bullets read, groups 7/6/6/5/5; original paraphrases mapped. Page 11 layout confirms security numbering despite extraction order. PDF not redistributed. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gnu-bash-manual",
+      "title": "GNU Bash reference manual",
+      "url": "https://www.gnu.org/software/bash/manual/bash.html",
+      "publisher": "GNU Project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "XK0-006"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 XK0-006 deep review: Targeted quoting, read/NUL delimiter, pipeline/pipefail/subshell, here-document/here-string and errexit passages reviewed; selected behavior actually tested in MSYS Bash 5.3.15, not a native Linux shell environment. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gnu-findutils-nul",
+      "title": "GNU Findutils manual and safe file-name handling",
+      "url": "https://www.gnu.org/software/findutils/manual/find.pdf",
+      "publisher": "GNU Project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "XK0-006"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 XK0-006 deep review: Targeted safe-filename/NUL handling only. Initial HTML/manual routes failed and PDF retrieval was intermittent; indexed official section and installed Findutils 4.11.0 help independently support -print0. Generic PDF-as-HTML output is not treated as meaningful text. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gnu-tar-security",
+      "title": "GNU tar security guidance",
+      "url": "https://www.gnu.org/software/tar/manual/html_section/Security.html",
+      "publisher": "GNU Project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "XK0-006"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 XK0-006 deep review: Security section including privacy, integrity, live-untrusted-data and rules of thumb read; actual owned synthetic archive/restore executed under MSYS GNU tar 1.35, no untrusted archive extracted. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gnu-coreutils-umask",
+      "title": "GNU Coreutils file permission structure",
+      "url": "https://www.gnu.org/software/coreutils/manual/html_node/Mode-Structure.html",
+      "publisher": "GNU Project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "XK0-006"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 XK0-006 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "linux-man-umask",
+      "title": "Linux man-pages umask and default ACL behavior",
+      "url": "https://man7.org/linux/man-pages/man2/umask.2.html",
+      "publisher": "Linux man-pages project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "XK0-006"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 XK0-006 deep review: Creation-mode bit clearing and default-ACL behavior read; arithmetic models tested, native Linux creation/enforcement not executed. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "linux-man-acl",
+      "title": "Linux man-pages POSIX access control lists",
+      "url": "https://man7.org/linux/man-pages/man5/acl.5.html",
+      "publisher": "Linux man-pages project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "XK0-006"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 XK0-006 deep review: Entry/mask, mode correspondence, default ACL and access algorithm sections read; native ACL installation/enforcement not executed. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "systemd-systemctl",
+      "title": "systemctl unit management",
+      "url": "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html",
+      "publisher": "systemd project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "XK0-006"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 XK0-006 deep review: Targeted unit state, enable/disable/mask, reload/restart/daemon-reload discussion; online latest is systemd 262, not a local Linux version claim. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "systemd-timer",
+      "title": "systemd timer units",
+      "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.timer.html",
+      "publisher": "systemd project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "XK0-006"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 XK0-006 deep review: Targeted monotonic/calendar, persistent catch-up, accuracy/randomization and already-active unit behavior; no timer installed or run. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "systemd-analyze",
+      "title": "systemd analysis commands",
+      "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd-analyze.html",
+      "publisher": "systemd project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "XK0-006"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 XK0-006 deep review: Targeted blame/time/critical-chain command and measurement limits; online latest is systemd 262. No boot benchmark. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "networkmanager-nmtui",
+      "title": "NetworkManager nmtui command",
+      "url": "https://networkmanager.dev/docs/api/latest/nmtui.html",
+      "publisher": "NetworkManager project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "XK0-006"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 XK0-006 deep review: Upstream command synopsis and activities read; nmtui connect/nmtui-connect distinguished from PDF nmconnect label. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "networkmanager-nmcli",
+      "title": "NetworkManager nmcli command",
+      "url": "https://networkmanager.dev/docs/api/latest/nmcli.html",
+      "publisher": "NetworkManager project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "XK0-006"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 XK0-006 deep review: Targeted connection-profile/device and reload/activation distinction; installed distro must determine command and persistence support. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "virt-manager-upstream",
+      "title": "Virtual Machine Manager project",
+      "url": "https://github.com/virt-manager/virt-manager",
+      "publisher": "virt-manager project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "XK0-006"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 XK0-006 deep review: Upstream README tool names/roles read; PDF vit-manager spelling not copied as a runnable command. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "linux-pam-news",
+      "title": "Linux-PAM release changes",
+      "url": "https://github.com/linux-pam/linux-pam/blob/master/NEWS",
+      "publisher": "Linux-PAM project",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "supported_exams": [
+        "XK0-006"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 XK0-006 deep review: Targeted 1.4.0 deprecation and 1.5.0 removal entries read; historical lifecycle fact applied to current outline terminology. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "linux-pam-faillock",
+      "title": "Linux-PAM faillock module",
+      "url": "https://man7.org/linux/man-pages/man8/pam_faillock.8.html",
+      "publisher": "Linux-PAM project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "XK0-006"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 XK0-006 deep review: Upstream Linux-PAM manual rendered on man7: description, stack modes, config location and different pam_tally2 setup read. Historical telnet/rsh context not adopted as current access advice; no module/stack changed. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "rsync-upstream-manual",
+      "title": "rsync upstream manual",
+      "url": "https://download.samba.org/pub/rsync/rsync.1",
+      "publisher": "rsync project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "XK0-006"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 XK0-006 deep review: Targeted source slash, archive expansion/exclusions and deletion options read; no rsync transfer or full manual audit. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "redhat-backporting",
+      "title": "Red Hat security backporting policy",
+      "url": "https://access.redhat.com/security/updates/backporting",
+      "publisher": "Red Hat",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "XK0-006"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 XK0-006 deep review: Public explanatory article read for the backport/advisory method. Old RHEL/PHP examples are historical; no current support conclusion derived. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "opentofu-state",
+      "title": "OpenTofu state purpose",
+      "url": "https://opentofu.org/docs/language/state/",
+      "publisher": "OpenTofu",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "XK0-006"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 XK0-006 deep review: State purpose, one-to-one resource mapping and supported inspection/modification guidance read; no provider resource or state mutation executed. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-pathlib",
+      "title": "Python 3.13 pathlib",
+      "url": "https://docs.python.org/3.13/library/pathlib.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "XK0-006"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 XK0-006 deep review: Targeted path/link/junction/relative-path APIs for the original static-tree comparator; no race-resistance or Linux metadata guarantee. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-hashlib",
+      "title": "Python 3.13 hashlib",
+      "url": "https://docs.python.org/3.13/library/hashlib.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "XK0-006"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 XK0-006 deep review: Targeted SHA-256 and file_digest API for actual synthetic-file checks; a hash is not independent proof of origin. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "comptia-sy0-701-objectives-pdf",
       "title": "Security+ SY0-701 objectives document7.0",
       "url": "https://lecbyo.files.cmp.optimizely.com/download/cf25ec24b8a511ef9ecbb69c0f9687be?checkExpiry=false",
@@ -642,10 +922,11 @@
       "access_model": "public",
       "supported_exams": [
         "220-1202",
-        "SY0-701"
+        "SY0-701",
+        "XK0-006"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 28 220-1202 deep review: Read targeted sections 3.1,3.2.2–3.2.3,4.3.5–4.3.6,4.4,4.5.1–4.5.2 and 4.6. No sanitization operation or separately licensed IEEE/ISO standard reviewed. See docs/research/2026-09-28-220-1202-deep-review.md No live infrastructure execution. September 29 SY0-701 deep review: Current PDF byte-identical to September 28 Core 2 review; retained targeted sanitization method, verification/validation and media-limit context; no erasure performed. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution."
+      "notes": "September 28 220-1202 deep review: Read targeted sections 3.1,3.2.2–3.2.3,4.3.5–4.3.6,4.4,4.5.1–4.5.2 and 4.6. No sanitization operation or separately licensed IEEE/ISO standard reviewed. See docs/research/2026-09-28-220-1202-deep-review.md No live infrastructure execution. September 29 SY0-701 deep review: Current PDF byte-identical to September 28 Core 2 review; retained targeted sanitization method, verification/validation and media-limit context; no erasure performed. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution. September 29 XK0-006 deep review: Current document used for targeted sanitization method/verification and media-limit context carried from the preceding reviewed publication. No storage erasure or destructive tool executed. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
     },
     {
       "id": "apple-filevault-mac",
@@ -685,10 +966,11 @@
       "access_model": "public",
       "supported_exams": [
         "220-1202",
-        "N10-009"
+        "N10-009",
+        "XK0-006"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 28 220-1202 deep review: Public product page read; integrated learning/practice features and official exam-page duration estimates only. Paid product not accessed. See docs/research/2026-09-28-220-1202-deep-review.md No live infrastructure execution. September 29 N10-009 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-n10-009-deep-review.md No live infrastructure execution."
+      "notes": "September 28 220-1202 deep review: Public product page read; integrated learning/practice features and official exam-page duration estimates only. Paid product not accessed. See docs/research/2026-09-28-220-1202-deep-review.md No live infrastructure execution. September 29 N10-009 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-n10-009-deep-review.md No live infrastructure execution. September 29 XK0-006 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
     },
     {
       "id": "comptia-220-1201-objectives-pdf",
@@ -901,10 +1183,11 @@
         "220-1201",
         "220-1202",
         "N10-009",
-        "SY0-701"
+        "SY0-701",
+        "XK0-006"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 28 FC0-U71 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-fc0-u71-deep-review.md No live infrastructure execution. September 28 220-1201 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1201-deep-review.md No live infrastructure execution. September 28 220-1202 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1202-deep-review.md No live infrastructure execution. September 29 N10-009 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-n10-009-deep-review.md No live infrastructure execution. September 29 SY0-701 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution."
+      "notes": "September 28 FC0-U71 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-fc0-u71-deep-review.md No live infrastructure execution. September 28 220-1201 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1201-deep-review.md No live infrastructure execution. September 28 220-1202 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1202-deep-review.md No live infrastructure execution. September 29 N10-009 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-n10-009-deep-review.md No live infrastructure execution. September 29 SY0-701 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution. September 29 XK0-006 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
     },
     {
       "id": "comptia-fc0-u71-objectives-pdf",

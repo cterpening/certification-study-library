@@ -1,0 +1,1863 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "XK0-006",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/XK0-006-comptia-linux-plus.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "bb2fff4a5093e60b356b9d21951f0d74a1778d379c3d61196316d6a722ea3e5d",
+  "guide_after_sha256": "b5b0a756128071efef9d5907a2c18dfada3b6478da93804f15c1ab7d91634170",
+  "prior_records": {
+    "exam": {
+      "code": "XK0-006",
+      "level": "intermediate",
+      "vendor_id": "comptia",
+      "title": "CompTIA Linux+ (V8)",
+      "status": "active",
+      "study_guide_url": "https://www.comptia.org/en-us/certifications/linux/",
+      "guide_path": "guides/XK0-006-comptia-linux-plus.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "CompTIA recommends about 12 months of Linux server experience. Practice on Debian- and RPM-family systems: boot/kernel/devices, LVM/RAID/filesystems/mounts, network/shell/backups/virtualization, users/permissions/processes/packages/systemd/containers, authentication/firewalls/hardening/cryptography/compliance, Bash/Python/Git/automation/AI review, and evidence-led break/fix with persistent revalidation after reboot."
+    },
+    "review": {
+      "id": "xk0-006-2026-09-01-source-validation",
+      "exam_code": "XK0-006",
+      "guide_path": "guides/XK0-006-comptia-linux-plus.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/xk0-006-official-objectives.txt",
+      "blueprint_snapshot_sha256": "145e8c39625ce15055b7d8e0098b2cbde174c84538e11eb25b3b81ae8e0f4832",
+      "objective_coverage": [
+        {
+          "objective_group": "System management (23%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios 1–2",
+            "Labs 1–2, 4, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Services and user management (20%)",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 1, 3, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security (18%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios 2–3",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Automation, orchestration, and scripting (17%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenario 3",
+            "Labs 6–8"
+          ]
+        },
+        {
+          "objective_group": "Troubleshooting (22%)",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "All labs"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 7,
+        "reachable": 5,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All five weighted V8 domains are mapped to runtime state, persistent configuration, restart/reboot/recreate and revalidation, with three scenarios, eight cross-distribution break/fix labs and 42 original checks. All seven guide URLs are cataloged: five reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. Distribution-specific behavior is a verification boundary. No proprietary objectives, PBQs, course labs or recalled items are used."
+    },
+    "sources": [
+      {
+        "id": "comptia-certmaster-learn",
+        "title": "CompTIA CertMaster Learn",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "publisher": "CompTIA",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71",
+          "220-1201",
+          "220-1202",
+          "N10-009",
+          "SY0-701",
+          "XK0-006",
+          "CV0-004"
+        ],
+        "notes": "Official self-paced learning platform; exact certification availability, bundle, price, duration and access vary."
+      },
+      {
+        "id": "comptia-certmaster-labs",
+        "title": "CompTIA CertMaster Labs",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "publisher": "CompTIA",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71",
+          "220-1201",
+          "220-1202",
+          "N10-009",
+          "SY0-701",
+          "XK0-006",
+          "CV0-004"
+        ],
+        "notes": "Official browser-based practical environment; verify exam inclusion and current bundle details."
+      },
+      {
+        "id": "comptia-certmaster-practice",
+        "title": "CompTIA CertMaster Practice",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "publisher": "CompTIA",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71",
+          "220-1201",
+          "220-1202",
+          "N10-009",
+          "SY0-701",
+          "XK0-006",
+          "CV0-004"
+        ],
+        "notes": "Official adaptive assessment and remediation platform; not a source of actual exam items."
+      },
+      {
+        "id": "comptia-xk0-006-blueprint",
+        "title": "CompTIA Linux+ V8",
+        "url": "https://www.comptia.org/en-us/certifications/linux/",
+        "publisher": "CompTIA",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "XK0-006"
+        ],
+        "notes": "Canonical five-domain weighted outline and delivery/lifecycle page. Lists July 15, 2025 launch, maximum 90 questions, 90 minutes, 720/900 score, English, and estimated-2028 retirement without an exact date."
+      },
+      {
+        "id": "comptia-xk0-006-pluralsight",
+        "title": "CompTIA Linux+ XK0-006 path",
+        "url": "https://www.pluralsight.com/paths/comptia-linux-xk0-006",
+        "publisher": "Pluralsight",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "XK0-006"
+        ],
+        "notes": "Five courses, four 2026 labs, 27 hours and a practice exam listed; covers all five V8 domains."
+      },
+      {
+        "id": "comptia-xk0-006-linkedin",
+        "title": "CompTIA Linux+ XK0-006 V8 Cert Prep",
+        "url": "https://www.linkedin.com/learning/comptia-linux-plus-xk0-006-v8-cert-prep",
+        "publisher": "LinkedIn Learning / Total Seminars",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "XK0-006"
+        ],
+        "notes": "Fifteen hours 42 minutes, ten quizzes, released March 2026; current cross-domain administrator route."
+      },
+      {
+        "id": "comptia-xk0-006-oreilly-sybex",
+        "title": "CompTIA Linux+ Study Guide, 6th Edition",
+        "url": "https://www.oreilly.com/library/view/comptia-linux-study/9781394316328/",
+        "publisher": "O'Reilly / Sybex / Richard Blum",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "XK0-006"
+        ],
+        "notes": "Current sixth-edition XK0-006 book with 30 chapters and Sybex online assessment, questions, flashcards and glossary."
+      },
+      {
+        "id": "comptia-xk0-006-udemy-dion",
+        "title": "CompTIA Linux+ XK0-006 Complete Course and Exam",
+        "url": "https://www.udemy.com/course/comptia-linux/",
+        "publisher": "Udemy / Jason Dion / Jeremiah Minner",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "XK0-006"
+        ],
+        "notes": "Thirty-four hours 39 minutes and 305 lectures listed, updated August 2026; current V8 course and practice."
+      },
+      {
+        "id": "comptia-xk0-006-measureup-certkit",
+        "title": "MeasureUp XK0-006 CompTIA Linux+ CertKit",
+        "url": "https://www.measureup.com/xk0-006-comptia-linux-certkit.html",
+        "publisher": "MeasureUp",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "XK0-006"
+        ],
+        "notes": "Current course bundle listing detailed XK0-006 modules, exam simulation and online mentoring; verify access durations and exact practice bank."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "428927aeb25928296a687b1b94cba4a856107311f8bc1e8847a99c98255ca170",
+      "guide_sections": [
+        "1. System management — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "0a9627badd68d75e058be73aa134a16bdc69e41faa86221b9689ef47a20128c5",
+      "guide_sections": [
+        "1. System management — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "9ce7769a85e41d6458b42bd81991509957b03c4d8a2137966b1ba2f61c808b90",
+      "guide_sections": [
+        "1. System management — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "4d90294b381d1bca03dadb85b73755461a33b84163dcc6cff10deb369db19551",
+      "guide_sections": [
+        "1. System management — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "eaf5cd4206a77f4285aa482fb005fb03c9ee4245d80e1decebd14db13568cde5",
+      "guide_sections": [
+        "1. System management — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "01326a8146f8ef8391d9bcf28cce3e530f0e798e790edb7b69d0820189c9d530",
+      "guide_sections": [
+        "1. System management — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "800155e1382a21c2bd76e089b819b6dd9314851e931c94579d208774f0f8f19a",
+      "guide_sections": [
+        "1. System management — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "6baeb350502dfe1714b797c965a8da7a63137de4f9e819bdd728c32e19b641ab",
+      "guide_sections": [
+        "2. Services and user management — 20%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "e2075dab0dfc513789024f5663e7cb5393a7a5a28f3b6d21b88874b4b15c33c6",
+      "guide_sections": [
+        "2. Services and user management — 20%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "2f91a1dfdcedd9a25d8e4fe0a392dec09a55bc26b2a67e67b344052195911ff4",
+      "guide_sections": [
+        "2. Services and user management — 20%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "6599b7ee110477a0dfbf0e1d0f53148549c38af9c43d4ac71d681cf922c72b1a",
+      "guide_sections": [
+        "2. Services and user management — 20%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "09fbc6139e59a4dd61deb21f45cdb01e934ce1f760ba99f5e327c1e0cf67c574",
+      "guide_sections": [
+        "2. Services and user management — 20%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "c70f8655416081eed64cedf87a66e7f4941fe561340ccedb0b946530fcf77178",
+      "guide_sections": [
+        "2. Services and user management — 20%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "bcef4c94f9dc5b207e5891ee9d9e9d05ac929e82ca17c5ce8e61716f25bab733",
+      "guide_sections": [
+        "3. Security — 18%",
+        "Answers and reasoning",
+        "Hands-on labs",
+        "2. Services and user management — 20%"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "a3cf1555d5a641e5293c81462c6fc1ab6467d3b9ff546db445a9f355922db614",
+      "guide_sections": [
+        "3. Security — 18%",
+        "Answers and reasoning",
+        "Hands-on labs",
+        "2. Services and user management — 20%"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "6c868cae55ffac2c717710fe51409d3682d3ecf1300b1acafee46a82e9ee7cf5",
+      "guide_sections": [
+        "3. Security — 18%",
+        "Answers and reasoning",
+        "Hands-on labs",
+        "2. Services and user management — 20%"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "138642fed5fe10a1344495ec15ed1ac878b130c6069d9ecae86ccdc1b4f5728f",
+      "guide_sections": [
+        "3. Security — 18%",
+        "Answers and reasoning",
+        "Hands-on labs",
+        "2. Services and user management — 20%"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "dc6503fa746103c174b691202d76e7446edf8a2def943cb1b78f18e941294be6",
+      "guide_sections": [
+        "3. Security — 18%",
+        "Answers and reasoning",
+        "Hands-on labs",
+        "2. Services and user management — 20%"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "64c256787e41fd6c292afaafbdec69fa47954301836c55dc9709459a8aa51ef8",
+      "guide_sections": [
+        "3. Security — 18%",
+        "Answers and reasoning",
+        "Hands-on labs",
+        "2. Services and user management — 20%"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "6dda7cfa0ebb577532a80c6e3807fe847741196e67dcc13febfbe838ca9c04b7",
+      "guide_sections": [
+        "4. Automation, orchestration, and scripting — 17%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "d526c156c9d7df35f4780594f9337a00944dd61b8d9669aa3893de3dca17016c",
+      "guide_sections": [
+        "4. Automation, orchestration, and scripting — 17%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "de0857471294addca002a021a99d244e0d7d020874bf9beebad433b2daf1510e",
+      "guide_sections": [
+        "4. Automation, orchestration, and scripting — 17%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "6e6b44691bf67dc07035da1b3a16cbfb248f04dec82afb1bdfe38a5715b370a4",
+      "guide_sections": [
+        "4. Automation, orchestration, and scripting — 17%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "15cef0b42a546d842bf3db9a0f5f01a368c9323de72446ffcbc9dab71228678a",
+      "guide_sections": [
+        "4. Automation, orchestration, and scripting — 17%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "b13b4abe600496c04ce091686b594e46487088f77c1285669a82e2767dc204d2",
+      "guide_sections": [
+        "5. Troubleshooting — 22%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "9541c60d8a38dae39817514efe5877c3c29ea1a2edaff4fe5bc93bbe1e6f41a2",
+      "guide_sections": [
+        "5. Troubleshooting — 22%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "279a6631fcf900c9724aacab8b8ee1977fe4e351fa805e6dda91357c95cbc96e",
+      "guide_sections": [
+        "5. Troubleshooting — 22%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "87c16b8164f809ad75ebae3dc733f075ee738c39f381a2fc0434dcf99c446f9a",
+      "guide_sections": [
+        "5. Troubleshooting — 22%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "0805bedac16c39c7cddeb46ffdeea9f7be7434172be142fe11786c77bd1743a3",
+      "guide_sections": [
+        "5. Troubleshooting — 22%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "XK0-006"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "XK0-006",
+        "title": "CompTIA Linux+ (V8)",
+        "url": "https://www.comptia.org/en-us/certifications/linux/",
+        "guide_path": "guides/XK0-006-comptia-linux-plus.md",
+        "snapshot_path": "data\\objective-snapshots\\xk0-006-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\xk0-006-official-status.json",
+        "previous_sha256": "145e8c39625ce15055b7d8e0098b2cbde174c84538e11eb25b3b81ae8e0f4832",
+        "current_sha256": "7092fafe78142df3f4be33e42aea257143769cc6268b90a4e1059f994c00496e",
+        "previous_status_sha256": "6f436c8b2563efee7159d9645d7c60a39576a7f7b873ba1e259310cfa6fc3f1c",
+        "current_status_sha256": "82f353d9b191630d922342c5e4d81ed300e4c6e34bb13f654c78e5a3621df4ca",
+        "official_status": {
+          "skills_versions": [
+            "Exam version: V8",
+            "Exam series code: XK0-006",
+            "Launch date: July 15, 2025",
+            "Number of questions: Maximum of 90 (multiple-choice and performance-based)",
+            "Duration: 90 minutes",
+            "Passing score: 720 (on a scale of 100–900)",
+            "Languages: English",
+            "Retirement: usually three years after launch (estimated 2028)"
+          ],
+          "upcoming_announcements": [
+            "Retirement: usually three years after launch (estimated 2028)"
+          ]
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 29,
+    "reachable": 27,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "comptia-certmaster-learn",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+      "checked_at": "2026-09-29T04:36:26.501130+00:00",
+      "health": {
+        "id": "comptia-certmaster-learn",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "checked_at": "2026-09-29T04:36:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CompTIA CertMaster Learn",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "duration_signals": [],
+        "signal_fingerprint": "65786e0e6431fcfe2e58ba358241f9cdb456812d6ade43fbd74876ee340cfef2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+      "sha256": "9bee308577f1977bd0f56dca8d4bae5b76f9c414dd50ad6eefa6ce5961e80e06",
+      "text_characters": 1692
+    },
+    {
+      "id": "comptia-certmaster-labs",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+      "checked_at": "2026-09-29T04:36:26.501810+00:00",
+      "health": {
+        "id": "comptia-certmaster-labs",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "checked_at": "2026-09-29T04:36:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CompTIA CertMaster Labs | CompTIA UK",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "duration_signals": [],
+        "signal_fingerprint": "4b7552b7bda3589184d03b2dfcb4182095d6fc6dfc7d5cfddea7650446126f7f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+      "sha256": "37496f082d45d2dc2e76ce2d12a62de9f2e4b77bcf222b42cceb0c52f93d10e6",
+      "text_characters": 1552
+    },
+    {
+      "id": "comptia-certmaster-practice",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+      "checked_at": "2026-09-29T04:36:26.502382+00:00",
+      "health": {
+        "id": "comptia-certmaster-practice",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "checked_at": "2026-09-29T04:36:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CertMaster Practice",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "duration_signals": [],
+        "signal_fingerprint": "87ff57590e3cf2e101143725a522c14d9cbd91afd9e8d02bb27f86e7af1751c4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+      "sha256": "8d8ab7b20b45cc2623ce1437a79c68745eeb183d210d537fd32ce9839f994bf9",
+      "text_characters": 3505
+    },
+    {
+      "id": "comptia-xk0-006-blueprint",
+      "url": "https://www.comptia.org/en-us/certifications/linux/",
+      "checked_at": "2026-09-29T04:36:31.170774+00:00",
+      "health": {
+        "id": "comptia-xk0-006-blueprint",
+        "url": "https://www.comptia.org/en-us/certifications/linux/",
+        "checked_at": "2026-09-29T04:36:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/certifications/linux/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Linux+ Certification V8 | CompTIA",
+        "canonical_url": "https://www.comptia.org/en-us/certifications/linux/",
+        "duration_signals": [
+          "20 hours",
+          "25 hours",
+          "40 hours",
+          "60 hours",
+          "90 minutes"
+        ],
+        "signal_fingerprint": "ad33b07ceb1589e80abb2baa0713364c82f90a04603db7a1b38156ff99002523",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/certifications/linux/",
+      "sha256": "8d0851a63b62e38334ef7d8d2a056c495f3eacfc919985d015496ddba5548abd",
+      "text_characters": 6783
+    },
+    {
+      "id": "comptia-xk0-006-pluralsight",
+      "url": "https://www.pluralsight.com/paths/comptia-linux-xk0-006",
+      "checked_at": "2026-09-29T04:36:31.575481+00:00",
+      "health": {
+        "id": "comptia-xk0-006-pluralsight",
+        "url": "https://www.pluralsight.com/paths/comptia-linux-xk0-006",
+        "checked_at": "2026-09-29T04:36:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/comptia-linux-xk0-006",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "CompTIA Linux+ (XK0-006)",
+        "canonical_url": "https://www.pluralsight.com/paths/comptia-linux-xk0-006",
+        "duration_signals": [
+          "27 Hours"
+        ],
+        "signal_fingerprint": "4211fe48f1f4ba8a145c02f32ef69899f2edd50adc6379ec3a52ae2ace49041e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/comptia-linux-xk0-006",
+      "sha256": "921a9baf99e085a5af700aaa711d59b68b1b74f1d77c2d3bcb86cb34e3744033",
+      "text_characters": 4614
+    },
+    {
+      "id": "comptia-xk0-006-linkedin",
+      "url": "https://www.linkedin.com/learning/comptia-linux-plus-xk0-006-v8-cert-prep",
+      "checked_at": "2026-09-29T04:36:31.602648+00:00",
+      "health": {
+        "id": "comptia-xk0-006-linkedin",
+        "url": "https://www.linkedin.com/learning/comptia-linux-plus-xk0-006-v8-cert-prep",
+        "checked_at": "2026-09-29T04:36:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.linkedin.com/learning/comptia-linux-plus-xk0-006-v8-cert-prep",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CompTIA Linux+ (XK0-006) V8 Cert Prep Online Class | LinkedIn Learning, formerly Lynda.com",
+        "canonical_url": "https://www.linkedin.com/learning/comptia-linux-plus-xk0-006-v8-cert-prep",
+        "duration_signals": [
+          "PT10M17S",
+          "PT10M18S",
+          "PT10M24S",
+          "PT10M5S",
+          "PT11M",
+          "PT11M19S",
+          "PT11M21S",
+          "PT11M28S",
+          "PT11M3S",
+          "PT11M57S",
+          "PT12M13S",
+          "PT12M15S",
+          "PT12M1S",
+          "PT12M25S",
+          "PT12M56S",
+          "PT12M6S",
+          "PT13M10S",
+          "PT13M13S",
+          "PT13M15S",
+          "PT13M16S",
+          "PT13M19S",
+          "PT13M25S",
+          "PT13M36S",
+          "PT13M41S",
+          "PT13M59S",
+          "PT13M9S",
+          "PT14M",
+          "PT14M16S",
+          "PT14M31S",
+          "PT14M53S"
+        ],
+        "signal_fingerprint": "e6a92255c64d1aa5e899dbc95b63e90f98f07976491c0b7eed279593a08654e1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.linkedin.com/learning/comptia-linux-plus-xk0-006-v8-cert-prep",
+      "sha256": "43d75e615dea2efe1d413256c99a8f2a6a71f267cfdf213803f036b6798cf3b5",
+      "text_characters": 6134
+    },
+    {
+      "id": "comptia-xk0-006-oreilly-sybex",
+      "url": "https://www.oreilly.com/library/view/comptia-linux-study/9781394316328/",
+      "checked_at": "2026-09-29T04:36:35.353289+00:00",
+      "health": {
+        "id": "comptia-xk0-006-oreilly-sybex",
+        "url": "https://www.oreilly.com/library/view/comptia-linux-study/9781394316328/",
+        "checked_at": "2026-09-29T04:36:35+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/comptia-linux-study/9781394316328/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "comptia-xk0-006-udemy-dion",
+      "url": "https://www.udemy.com/course/comptia-linux/",
+      "checked_at": "2026-09-29T04:36:36.014836+00:00",
+      "health": {
+        "id": "comptia-xk0-006-udemy-dion",
+        "url": "https://www.udemy.com/course/comptia-linux/",
+        "checked_at": "2026-09-29T04:36:36+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/comptia-linux/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "comptia-xk0-006-measureup-certkit",
+      "url": "https://www.measureup.com/xk0-006-comptia-linux-certkit.html",
+      "checked_at": "2026-09-29T04:36:36.381542+00:00",
+      "health": {
+        "id": "comptia-xk0-006-measureup-certkit",
+        "url": "https://www.measureup.com/xk0-006-comptia-linux-certkit.html",
+        "checked_at": "2026-09-29T04:36:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/xk0-006-comptia-linux-certkit.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "CertKit XK0-006: CompTIA Linux+",
+        "canonical_url": "https://www.measureup.com/xk0-006-comptia-linux-practice-test.html",
+        "duration_signals": [],
+        "signal_fingerprint": "2515b4d877fdaf7d90150eb95fea841221cd165fab21338d8108a9f106194303",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/xk0-006-comptia-linux-certkit.html",
+      "sha256": "043437c1551bf37adaa345f842c7a78deb2f01101ac24c02a594530a03f459e3",
+      "text_characters": 5296
+    },
+    {
+      "id": "comptia-certmaster-perform",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/perform/",
+      "checked_at": "2026-09-29T04:39:15.954215+00:00",
+      "health": {
+        "id": "comptia-certmaster-perform",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/perform/",
+        "checked_at": "2026-09-29T04:39:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/perform/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CertMaster Perform",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/perform/",
+        "duration_signals": [],
+        "signal_fingerprint": "9f733cd9323fb2d342292e1f99473168f956344ae0963b65ab179e22ee2a16a8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/perform/",
+      "sha256": "2f735ec2c8262941eaf049c2c35d34023cc1a6f0aacd7c301c41547a7fc72e7d",
+      "text_characters": 2011
+    },
+    {
+      "id": "gnu-bash-manual",
+      "url": "https://www.gnu.org/software/bash/manual/bash.html",
+      "checked_at": "2026-09-29T04:39:15.954787+00:00",
+      "health": {
+        "id": "gnu-bash-manual",
+        "url": "https://www.gnu.org/software/bash/manual/bash.html",
+        "checked_at": "2026-09-29T04:39:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.gnu.org/software/bash/manual/bash.html",
+        "content_type": "text/html",
+        "page_title": "Bash Reference Manual",
+        "canonical_url": "https://www.gnu.org/software/bash/manual/bash.html",
+        "duration_signals": [],
+        "signal_fingerprint": "7c8054c78d42591bc5f45eafda511c192afdea545fab39c4de1f1c93e7d26685",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.gnu.org/software/bash/manual/bash.html",
+      "sha256": "78d0eefbe60cfe7345ffdafede7294f055b04e53bd520360ff699b24f81e2b4b",
+      "text_characters": 516943
+    },
+    {
+      "id": "gnu-findutils-nul",
+      "url": "https://www.gnu.org/software/findutils/manual/find.pdf",
+      "checked_at": "2026-09-29T04:47:47.824212+00:00",
+      "health": {
+        "id": "gnu-findutils-nul",
+        "url": "https://www.gnu.org/software/findutils/manual/find.pdf",
+        "checked_at": "2026-09-29T04:47:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.gnu.org/software/findutils/manual/find.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.gnu.org/software/findutils/manual/find.pdf",
+      "sha256": "97983912cb1f3dd06cd0e817885dc1c0e3f2dd50b70af7f9efb376c3cfa122dd",
+      "representation_note": "One generic urllib fetch returned PDF bytes decoded as HTML; that output is not meaningful document text. Separate requests PDF fetches returned HTTP 403. Official safe-filename section was available through web indexing; installed GNU find 4.11.0 help confirms -print0.",
+      "decoded_pdf_characters_not_content_evidence": 442011,
+      "content_evidence_url": "https://www.gnu.org/software/findutils/manual/html_node/find_html/Safe-File-Name-Handling.html"
+    },
+    {
+      "id": "gnu-tar-security",
+      "url": "https://www.gnu.org/software/tar/manual/html_section/Security.html",
+      "checked_at": "2026-09-29T04:40:51.421373+00:00",
+      "health": {
+        "id": "gnu-tar-security",
+        "url": "https://www.gnu.org/software/tar/manual/html_section/Security.html",
+        "checked_at": "2026-09-29T04:40:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.gnu.org/software/tar/manual/html_section/Security.html",
+        "content_type": "text/html",
+        "page_title": "GNU tar 1.35: 10.2 Security",
+        "canonical_url": "https://www.gnu.org/software/tar/manual/html_section/Security.html",
+        "duration_signals": [],
+        "signal_fingerprint": "68d2aef4fe91b4d144e1c229140bcc6e57d3ed366090e0d75f8579a50b605a6e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.gnu.org/software/tar/manual/html_section/Security.html",
+      "sha256": "db751cdde8e4f4bb5cd1ce94ae6fddd7d1742a93e62356b4c601f85e6e5d7526",
+      "text_characters": 7559
+    },
+    {
+      "id": "gnu-coreutils-umask",
+      "url": "https://www.gnu.org/software/coreutils/manual/html_node/Mode-Structure.html",
+      "checked_at": "2026-09-29T04:39:17.216100+00:00",
+      "health": {
+        "id": "gnu-coreutils-umask",
+        "url": "https://www.gnu.org/software/coreutils/manual/html_node/Mode-Structure.html",
+        "checked_at": "2026-09-29T04:39:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.gnu.org/software/coreutils/manual/html_node/Mode-Structure.html",
+        "content_type": "text/html",
+        "page_title": "Mode Structure (GNU Coreutils 9.12)",
+        "canonical_url": "https://www.gnu.org/software/coreutils/manual/html_node/Mode-Structure.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6c809eee9cca8afd357e41d1de8142c1577425092c1ad7bd3fe4f063a956e097",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.gnu.org/software/coreutils/manual/html_node/Mode-Structure.html",
+      "sha256": "71cbd7adee9be6457fbdd5147086391a83fa8b12404468afd9556c724930003f",
+      "text_characters": 3411
+    },
+    {
+      "id": "linux-man-umask",
+      "url": "https://man7.org/linux/man-pages/man2/umask.2.html",
+      "checked_at": "2026-09-29T04:39:17.838279+00:00",
+      "health": {
+        "id": "linux-man-umask",
+        "url": "https://man7.org/linux/man-pages/man2/umask.2.html",
+        "checked_at": "2026-09-29T04:39:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://man7.org/linux/man-pages/man2/umask.2.html",
+        "content_type": "text/html",
+        "page_title": "umask(2) - Linux manual page",
+        "canonical_url": "https://man7.org/linux/man-pages/man2/umask.2.html",
+        "duration_signals": [],
+        "signal_fingerprint": "c557d298330d0e83a84ada9911d2a4b8fe571a9de9996e3fd489940160cd191d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man2/umask.2.html",
+      "sha256": "94ec1e381d25f0c0d4647630654453beaa6313afc76cb52a4aaf755c505f6d4c",
+      "text_characters": 4304
+    },
+    {
+      "id": "linux-man-acl",
+      "url": "https://man7.org/linux/man-pages/man5/acl.5.html",
+      "checked_at": "2026-09-29T04:39:19.663323+00:00",
+      "health": {
+        "id": "linux-man-acl",
+        "url": "https://man7.org/linux/man-pages/man5/acl.5.html",
+        "checked_at": "2026-09-29T04:39:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://man7.org/linux/man-pages/man5/acl.5.html",
+        "content_type": "text/html",
+        "page_title": "acl(5) - Linux manual page",
+        "canonical_url": "https://man7.org/linux/man-pages/man5/acl.5.html",
+        "duration_signals": [],
+        "signal_fingerprint": "004aff45dbd5b0bf26d5cf8ab62f0b9e4dfb589c3ded2dae1b231e8d0942084a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man5/acl.5.html",
+      "sha256": "6c004a658fbd601b2820bab886bc86e777a832f36855bc2312a17888e4c62228",
+      "text_characters": 15739
+    },
+    {
+      "id": "systemd-systemctl",
+      "url": "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html",
+      "checked_at": "2026-09-29T04:39:19.664096+00:00",
+      "health": {
+        "id": "systemd-systemctl",
+        "url": "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html",
+        "checked_at": "2026-09-29T04:39:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html",
+        "content_type": "text/html",
+        "page_title": "systemctl",
+        "canonical_url": "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html",
+        "duration_signals": [
+          "1min",
+          "3min",
+          "42min"
+        ],
+        "signal_fingerprint": "95b584ab3ddcaadd09270a34b024b728837c03503915140eab57c3e5e0146344",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html",
+      "sha256": "f95e4bc82edf115aa4736ec9c9871cb1fd7f8c4cbe1b9be4f7790ab02c000d6f",
+      "text_characters": 98866
+    },
+    {
+      "id": "systemd-timer",
+      "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.timer.html",
+      "checked_at": "2026-09-29T04:39:19.889506+00:00",
+      "health": {
+        "id": "systemd-timer",
+        "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.timer.html",
+        "checked_at": "2026-09-29T04:39:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.timer.html",
+        "content_type": "text/html",
+        "page_title": "systemd.timer",
+        "canonical_url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.timer.html",
+        "duration_signals": [
+          "1 minute",
+          "1min",
+          "30min",
+          "5 hours and 30 minutes"
+        ],
+        "signal_fingerprint": "96e03eb71f4764fd9460db85c66dde8159f9ce2014e7d08886746375c1efe39e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.timer.html",
+      "sha256": "393ec35e3e58013ac7b9356ef850dbbfbe8be8eaeb4b0e1fe76d7e54908b5caa",
+      "text_characters": 17533
+    },
+    {
+      "id": "systemd-analyze",
+      "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd-analyze.html",
+      "checked_at": "2026-09-29T04:39:20.740787+00:00",
+      "health": {
+        "id": "systemd-analyze",
+        "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd-analyze.html",
+        "checked_at": "2026-09-29T04:39:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.freedesktop.org/software/systemd/man/latest/systemd-analyze.html",
+        "content_type": "text/html",
+        "page_title": "systemd-analyze",
+        "canonical_url": "https://www.freedesktop.org/software/systemd/man/latest/systemd-analyze.html",
+        "duration_signals": [
+          "1min",
+          "5min"
+        ],
+        "signal_fingerprint": "8fd2665d0b0064c8aa743fee7e56265af44b12771663aa3fae1fdda70a746532",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.freedesktop.org/software/systemd/man/latest/systemd-analyze.html",
+      "sha256": "a5453acc487ed18874f76feb2e7b14648d00f9fb2fad3eca70ceb145ded4e0a5",
+      "text_characters": 57682
+    },
+    {
+      "id": "networkmanager-nmtui",
+      "url": "https://networkmanager.dev/docs/api/latest/nmtui.html",
+      "checked_at": "2026-09-29T04:39:20.883129+00:00",
+      "health": {
+        "id": "networkmanager-nmtui",
+        "url": "https://networkmanager.dev/docs/api/latest/nmtui.html",
+        "checked_at": "2026-09-29T04:39:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://networkmanager.dev/docs/api/latest/nmtui.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "nmtui: NetworkManager Reference Manual",
+        "canonical_url": "https://networkmanager.dev/docs/api/latest/nmtui.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6c9d59173c7a2b020f11cea0e7434bc466994328498921127784e1a6d2171b96",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://networkmanager.dev/docs/api/latest/nmtui.html",
+      "sha256": "0f54652cae34e55a3cea65574a97905f4a07ad72efde2eca20910b513037a27f",
+      "text_characters": 1412
+    },
+    {
+      "id": "networkmanager-nmcli",
+      "url": "https://networkmanager.dev/docs/api/latest/nmcli.html",
+      "checked_at": "2026-09-29T04:39:21.345371+00:00",
+      "health": {
+        "id": "networkmanager-nmcli",
+        "url": "https://networkmanager.dev/docs/api/latest/nmcli.html",
+        "checked_at": "2026-09-29T04:39:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://networkmanager.dev/docs/api/latest/nmcli.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "nmcli: NetworkManager Reference Manual",
+        "canonical_url": "https://networkmanager.dev/docs/api/latest/nmcli.html",
+        "duration_signals": [],
+        "signal_fingerprint": "9a8f3292a8c9f036d4b2036152d469decb512f68bc10d66445d78fcd64b7647c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://networkmanager.dev/docs/api/latest/nmcli.html",
+      "sha256": "fdecaf26138b80965a135642c2874656b57e81909b22ed10fbf9717563672f90",
+      "text_characters": 42958
+    },
+    {
+      "id": "virt-manager-upstream",
+      "url": "https://github.com/virt-manager/virt-manager",
+      "checked_at": "2026-09-29T04:39:21.643513+00:00",
+      "health": {
+        "id": "virt-manager-upstream",
+        "url": "https://github.com/virt-manager/virt-manager",
+        "checked_at": "2026-09-29T04:39:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/virt-manager/virt-manager",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - virt-manager/virt-manager: Desktop tool for managing virtual machines via libvirt",
+        "canonical_url": "https://github.com/virt-manager/virt-manager",
+        "duration_signals": [],
+        "signal_fingerprint": "139a914a41625b8093ed0510b2ef7e0b22f406530d19b555447471f3de92fb1f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/virt-manager/virt-manager",
+      "sha256": "2e16e02ed79bc903e7b9866a0eb197613eb22934c9f55c3e2b11c1ea0cb746ca",
+      "text_characters": 2108
+    },
+    {
+      "id": "linux-pam-news",
+      "url": "https://github.com/linux-pam/linux-pam/blob/master/NEWS",
+      "checked_at": "2026-09-29T04:39:22.020267+00:00",
+      "health": {
+        "id": "linux-pam-news",
+        "url": "https://github.com/linux-pam/linux-pam/blob/master/NEWS",
+        "checked_at": "2026-09-29T04:39:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/linux-pam/linux-pam/blob/master/NEWS",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "linux-pam/NEWS at master · linux-pam/linux-pam",
+        "canonical_url": "https://github.com/linux-pam/linux-pam/blob/master/NEWS",
+        "duration_signals": [],
+        "signal_fingerprint": "36bb38410068127ea118191844d372010fcf37c725f8c54fddb2f8b28f087c5a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/linux-pam/linux-pam/blob/master/NEWS",
+      "sha256": "91196f644e4b2542bb20bbcdf298ee85b0175dabdbc6b434e1faa57cbdbee7c8",
+      "text_characters": 26246
+    },
+    {
+      "id": "linux-pam-faillock",
+      "url": "https://man7.org/linux/man-pages/man8/pam_faillock.8.html",
+      "checked_at": "2026-09-29T04:40:51.792155+00:00",
+      "health": {
+        "id": "linux-pam-faillock",
+        "url": "https://man7.org/linux/man-pages/man8/pam_faillock.8.html",
+        "checked_at": "2026-09-29T04:40:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://man7.org/linux/man-pages/man8/pam_faillock.8.html",
+        "content_type": "text/html",
+        "page_title": "pam_faillock(8) - Linux manual page",
+        "canonical_url": "https://man7.org/linux/man-pages/man8/pam_faillock.8.html",
+        "duration_signals": [
+          "15 minutes",
+          "20 minutes"
+        ],
+        "signal_fingerprint": "2bb55266e5d3440cd52465f6ca6c0bbca898638b8315b67cd603be1c05314aa4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man8/pam_faillock.8.html",
+      "sha256": "61ed38a5feea94e89abb6c8e5e074218c1913495cc12e26926f2a54648b2dc44",
+      "text_characters": 8868
+    },
+    {
+      "id": "rsync-upstream-manual",
+      "url": "https://download.samba.org/pub/rsync/rsync.1",
+      "checked_at": "2026-09-29T04:39:23.239428+00:00",
+      "health": {
+        "id": "rsync-upstream-manual",
+        "url": "https://download.samba.org/pub/rsync/rsync.1",
+        "checked_at": "2026-09-29T04:39:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://download.samba.org/pub/rsync/rsync.1",
+        "content_type": "text/html",
+        "page_title": "rsync(1) manpage",
+        "canonical_url": "https://download.samba.org/pub/rsync/rsync.1",
+        "duration_signals": [],
+        "signal_fingerprint": "3935a2b76429a862456717c9f57df84f043e303fee79b4b206bedf819d6c0fdf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://download.samba.org/pub/rsync/rsync.1",
+      "sha256": "9160de49f8f56f4905fbc4b9ee4e0ac347570865092abde0784f8713fad9e771",
+      "text_characters": 229114
+    },
+    {
+      "id": "redhat-backporting",
+      "url": "https://access.redhat.com/security/updates/backporting",
+      "checked_at": "2026-09-29T04:39:23.528223+00:00",
+      "health": {
+        "id": "redhat-backporting",
+        "url": "https://access.redhat.com/security/updates/backporting",
+        "checked_at": "2026-09-29T04:39:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://access.redhat.com/security/updates/backporting",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Security Backporting Practice - Red Hat Customer Portal",
+        "canonical_url": "https://access.redhat.com/security/updates/backporting",
+        "duration_signals": [],
+        "signal_fingerprint": "c1bd47970c3ee8774e68f6bce62d80e606ac922bf4f4163d2341d622819aba77",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://access.redhat.com/security/updates/backporting",
+      "sha256": "8e1dc4dea5d5f65db33254cabcff74f862461c19ef14424e9e018f0ebb6af0ec",
+      "text_characters": 4056
+    },
+    {
+      "id": "opentofu-state",
+      "url": "https://opentofu.org/docs/language/state/",
+      "checked_at": "2026-09-29T04:39:24.085639+00:00",
+      "health": {
+        "id": "opentofu-state",
+        "url": "https://opentofu.org/docs/language/state/",
+        "checked_at": "2026-09-29T04:39:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://opentofu.org/docs/language/state/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "State | OpenTofu",
+        "canonical_url": "https://opentofu.org/docs/language/state/",
+        "duration_signals": [],
+        "signal_fingerprint": "55bb6c1fd10f57479dbb17888c5685991303a647487177435d2ff9e2bb200fd6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://opentofu.org/docs/language/state/",
+      "sha256": "98ae8b94188f0644fb005a2443f9381cfa5943edd06f700709844825b249fc1b",
+      "text_characters": 3838
+    },
+    {
+      "id": "python313-pathlib",
+      "url": "https://docs.python.org/3.13/library/pathlib.html",
+      "checked_at": "2026-09-29T04:39:24.562210+00:00",
+      "health": {
+        "id": "python313-pathlib",
+        "url": "https://docs.python.org/3.13/library/pathlib.html",
+        "checked_at": "2026-09-29T04:39:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/pathlib.html",
+        "content_type": "text/html",
+        "page_title": "pathlib — Object-oriented filesystem paths",
+        "canonical_url": "https://docs.python.org/3/library/pathlib.html",
+        "duration_signals": [],
+        "signal_fingerprint": "a106f22af81358eccd41f10fec97100066be1038aa4c6b1db01a7b249037c880",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/pathlib.html",
+      "sha256": "2f3fbf3f3931043bc96f5cbd3a32f93f1cadb30929db16f8d59c690885c9ccd7",
+      "text_characters": 52595
+    },
+    {
+      "id": "python313-hashlib",
+      "url": "https://docs.python.org/3.13/library/hashlib.html",
+      "checked_at": "2026-09-29T04:39:24.752725+00:00",
+      "health": {
+        "id": "python313-hashlib",
+        "url": "https://docs.python.org/3.13/library/hashlib.html",
+        "checked_at": "2026-09-29T04:39:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/hashlib.html",
+        "content_type": "text/html",
+        "page_title": "hashlib — Secure hashes and message digests",
+        "canonical_url": "https://docs.python.org/3/library/hashlib.html",
+        "duration_signals": [],
+        "signal_fingerprint": "46075f87cce2166cae3d3483b4917244d6204a0481190c2089d905e5a60fb1fe",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/hashlib.html",
+      "sha256": "62aaaaa6ee704f948a9270876912f8f0ce215c444225c7f7ed5bbf1c1ce0d51a",
+      "text_characters": 27649
+    },
+    {
+      "id": "comptia-partner-resources",
+      "url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+      "checked_at": "2026-09-29T04:40:51.420109+00:00",
+      "health": {
+        "id": "comptia-partner-resources",
+        "url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+        "checked_at": "2026-09-29T04:40:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Partner Resources",
+        "canonical_url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+        "duration_signals": [],
+        "signal_fingerprint": "be631fe463c6d0a7c5e51dfcf4ec7e4813a2eeae48c6ca7bc993534faf97d57e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+      "sha256": "14576ecf6117f8f05f0462c05865386b5da334d76d89e1da2474161210a21a35",
+      "text_characters": 4747
+    },
+    {
+      "id": "comptia-xk0-006-objectives-pdf",
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/90b9ac985c0e11f0b004a2a93c999a21?checkExpiry=false",
+      "checked_at": "2026-09-29T04:40:55.191099+00:00",
+      "health": {
+        "id": "comptia-xk0-006-objectives-pdf",
+        "url": "https://lecbyo.files.cmp.optimizely.com/download/90b9ac985c0e11f0b004a2a93c999a21?checkExpiry=false",
+        "checked_at": "2026-09-29T04:40:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://lecbyo.files.cmp.optimizely.com/download/90b9ac985c0e11f0b004a2a93c999a21?checkExpiry=false",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://lecbyo.files.cmp.optimizely.com/download/90b9ac985c0e11f0b004a2a93c999a21?checkExpiry=false",
+      "sha256": "dd62fc91a7e9b53752bb082f13ffe98318cf18082f73a44105d69e4e67e075ea",
+      "bytes": 283581,
+      "pdf_pages": 20,
+      "text_characters": 29279
+    },
+    {
+      "id": "nist-800-88r2",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "checked_at": "2026-09-29T04:40:57.026142+00:00",
+      "health": {
+        "id": "nist-800-88r2",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+        "checked_at": "2026-09-29T04:40:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "sha256": "39bb805c72723ed74f08e5806cd8463ca2554a62abb4f97b9d19c0398a8a7c55",
+      "bytes": 983677,
+      "pdf_pages": 48,
+      "text_characters": 112546
+    }
+  ],
+  "added_source_ids": [
+    "comptia-xk0-006-objectives-pdf",
+    "gnu-bash-manual",
+    "gnu-findutils-nul",
+    "gnu-tar-security",
+    "gnu-coreutils-umask",
+    "linux-man-umask",
+    "linux-man-acl",
+    "systemd-systemctl",
+    "systemd-timer",
+    "systemd-analyze",
+    "networkmanager-nmtui",
+    "networkmanager-nmcli",
+    "virt-manager-upstream",
+    "linux-pam-news",
+    "linux-pam-faillock",
+    "rsync-upstream-manual",
+    "redhat-backporting",
+    "opentofu-state",
+    "python313-pathlib",
+    "python313-hashlib"
+  ],
+  "findings": [
+    {
+      "id": "xk0006-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Monitor found only duration metadata",
+      "url": "https://www.comptia.org/en-us/certifications/linux/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "XK0-006"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The only normalized addition is Duration: 90 minutes, already taught; no topic, weight or retirement text changed.",
+      "recommendation": "Retain byte-identical prior objectives and historical review/audit evidence, then explicitly accept the reviewed metadata.",
+      "disposition": "applied",
+      "source_id": "comptia-xk0-006-blueprint",
+      "resolution": "Retain byte-identical prior objectives and historical review/audit evidence, then explicitly accept the reviewed metadata."
+    },
+    {
+      "id": "xk0006-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Full outline contains explicit orchestration and monitoring detail",
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/90b9ac985c0e11f0b004a2a93c999a21?checkExpiry=false",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "XK0-006"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Objective 4.1 names OpenTofu and orchestration/bootstrap tools; 5.1 covers SLIs/SLOs/SLAs and collection/alerting.",
+      "recommendation": "Map all 29 numbered objectives and add tool-role and original monitoring cases; do not treat the main-page summary as the complete command list.",
+      "disposition": "applied",
+      "source_id": "comptia-xk0-006-objectives-pdf",
+      "resolution": "Map all 29 numbered objectives and add tool-role and original monitoring cases; do not treat the main-page summary as the complete command list."
+    },
+    {
+      "id": "xk0006-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Umask was described as subtraction",
+      "url": "https://man7.org/linux/man-pages/man2/umask.2.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "XK0-006"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Linux creation masks clear requested bits; default ACLs alter creation inheritance.",
+      "recommendation": "Correct explanation with 0666 masked by 0003 yielding 0664, default ACL caveat and checked arithmetic; no native enforcement claim.",
+      "disposition": "applied",
+      "source_id": "linux-man-umask",
+      "resolution": "Correct explanation with 0666 masked by 0003 yielding 0664, default ACL caveat and checked arithmetic; no native enforcement claim."
+    },
+    {
+      "id": "xk0006-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "ACL masks and mode bits need a precise relationship",
+      "url": "https://man7.org/linux/man-pages/man5/acl.5.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "XK0-006"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The ACL mask limits named-user/group-class permissions and corresponds to the displayed group-class mode bits for extended ACLs.",
+      "recommendation": "Add effective-permission case and distinguish owner/other, path traversal and MAC; no blanket override metaphor.",
+      "disposition": "applied",
+      "source_id": "linux-man-acl",
+      "resolution": "Add effective-permission case and distinguish owner/other, path traversal and MAC; no blanket override metaphor."
+    },
+    {
+      "id": "xk0006-deep-5",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "The current PDF retains a removed upstream module name",
+      "url": "https://github.com/linux-pam/linux-pam/blob/master/NEWS",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "XK0-006"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Objective 3.4 lists pam_tally2; Linux-PAM removed deprecated tally modules in 1.5.0 and points to faillock.",
+      "recommendation": "Preserve exam recognition, explain current module and different stack configuration, and require distro-supported configuration; no PAM edits.",
+      "disposition": "applied",
+      "source_id": "linux-pam-news",
+      "resolution": "Preserve exam recognition, explain current module and different stack configuration, and require distro-supported configuration; no PAM edits."
+    },
+    {
+      "id": "xk0006-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Published utility label differs from documented command",
+      "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd-analyze.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "XK0-006"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The PDF lists systemd-blame; upstream documents the systemd-analyze blame subcommand and its activation-timing limits.",
+      "recommendation": "Add verified name and explain dependency/parallel-start caveats; do not claim a Linux service-manager test.",
+      "disposition": "applied",
+      "source_id": "systemd-analyze",
+      "resolution": "Add verified name and explain dependency/parallel-start caveats; do not claim a Linux service-manager test."
+    },
+    {
+      "id": "xk0006-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Shell redirection and pipeline errors need distinct models",
+      "url": "https://www.gnu.org/software/bash/manual/bash.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "XK0-006"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Bash distinguishes << here-documents from <<< here-strings, default last-stage status from pipefail, and subshell context from parent state.",
+      "recommendation": "Teach the distinction and execute original filename/pipeline examples with negative inputs and producer failure.",
+      "disposition": "applied",
+      "source_id": "gnu-bash-manual",
+      "resolution": "Teach the distinction and execute original filename/pipeline examples with negative inputs and producer failure."
+    },
+    {
+      "id": "xk0006-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Archive mode alone does not preserve every property",
+      "url": "https://download.samba.org/pub/rsync/rsync.1",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "XK0-006"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The manual excludes ACLs, xattrs and hard-link preservation from -a and distinguishes trailing-source-slash behavior.",
+      "recommendation": "Explain separate options/capability checks, preview versus actual restore evidence and destination deletion risk; no rsync run claimed.",
+      "disposition": "applied",
+      "source_id": "rsync-upstream-manual",
+      "resolution": "Explain separate options/capability checks, preview versus actual restore evidence and destination deletion risk; no rsync run claimed."
+    },
+    {
+      "id": "xk0006-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Upstream version alone does not establish vulnerability status",
+      "url": "https://access.redhat.com/security/updates/backporting",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "XK0-006"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Vendor security fixes can be backported to older-version packages; advisories explain exact affected/fixed builds.",
+      "recommendation": "Add vendor-package/advisory evidence workflow while avoiding blanket dismissal of scanner findings or current support claims for old article examples.",
+      "disposition": "applied",
+      "source_id": "redhat-backporting",
+      "resolution": "Add vendor-package/advisory evidence workflow while avoiding blanket dismissal of scanner findings or current support claims for old article examples."
+    }
+  ],
+  "blog_intake": [],
+  "labs": {
+    "proposed": 8,
+    "service_labs_executed": 0,
+    "local_file_and_shell_exercises": 2,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 44,
+      "failed": 0,
+      "checks": [
+        "MSYS synthetic unusual-name fixtures created",
+        "six regular files inventoried",
+        "public Bash script success",
+        "public Bash reports six files",
+        "escaped display stays one line per filename",
+        "newline filename escaped in output",
+        "spaces quoted in output",
+        "leading hyphen name handled",
+        "public Bash missing argument fails",
+        "public Bash absent root fails",
+        "public Bash file root fails",
+        "empty directory is a successful zero",
+        "failed producer propagates through public pipeline",
+        "pipeline default hides producer status",
+        "pipefail reports rightmost nonzero",
+        "default pipeline loop counter stays in subshell",
+        "here string adds newline",
+        "quoted heredoc preserves dollar syntax",
+        "test context is an errexit exception",
+        "actual GNU tar archive created",
+        "actual GNU tar restore completed",
+        "restore names directories and bytes agree",
+        "public Python comparison exits zero",
+        "empty directory retained",
+        "binary content retained",
+        "changed file identified",
+        "public changed comparison exits one",
+        "extra file identified",
+        "missing file identified",
+        "missing empty directory identified",
+        "extra directory identified",
+        "source fixture content was not modified",
+        "repaired restore agrees",
+        "Python file root rejected",
+        "owned temporary practice tree cleaned",
+        "permission-bit model 666 mask 22",
+        "permission-bit model 777 mask 22",
+        "permission-bit model 666 mask 3",
+        "permission-bit model 666 mask 77",
+        "permission-bit model 777 mask 77",
+        "ACL named-entry mask model",
+        "30-day 99.9 percent time-budget example",
+        "sample request SLI",
+        "LVM 4MiB extent arithmetic for 1GiB"
+      ],
+      "python": "3.13.14",
+      "tools": {
+        "bash": "GNU bash, version 5.3.15(2)-release (x86_64-pc-cygwin)",
+        "tar": "tar (GNU tar) 1.35",
+        "find": "find (GNU findutils) 4.11.0"
+      },
+      "sources": {
+        "list_regular_files.sh": "62e557b3b246737f7c18fbbd646c998e6371f0fcff3f0d3cf4cb5085b54c1da9",
+        "compare_restore.py": "9269b3c536065c9c92617b186ce2b3ce46cf9d81247a5d1c5bf18d2f8458b60e"
+      },
+      "public_example_outputs": {
+        "list_regular_files.sh": "/c/src/certification-study-library/.maintenance/linux-practice-cbnzj2fx/source\\ odd/--help\n/c/src/certification-study-library/.maintenance/linux-practice-cbnzj2fx/source\\ odd/a\\ b.txt\n/c/src/certification-study-library/.maintenance/linux-practice-cbnzj2fx/source\\ odd/empty\n$'/c/src/certification-study-library/.maintenance/linux-practice-cbnzj2fx/source odd/line\\nbreak'\n/c/src/certification-study-library/.maintenance/linux-practice-cbnzj2fx/source\\ odd/quote\\'s.txt\n/c/src/certification-study-library/.maintenance/linux-practice-cbnzj2fx/source\\ odd/\\[literal\\]\\*\nregular_files=6\n",
+        "compare_restore.py": "{\n  \"missing_files\": [],\n  \"extra_files\": [],\n  \"changed_files\": [],\n  \"missing_directories\": [],\n  \"extra_directories\": []\n}\n"
+      },
+      "execution_boundary": "Windows Python plus Git for Windows MSYS Bash/GNU utilities on synthetic files in an owned temporary workspace. Actual archive/restore and shell behavior tested; no native Linux kernel, mode/ACL enforcement, systemd/PAM, block device, network, account, firewall or cloud change.",
+      "limits": [
+        "Earlier WSL startup blocker remains deferred; no new Linux service or VM execution claimed.",
+        "Permission/ACL and SLO/LVM cases are arithmetic models, not OS policy or operational performance tests.",
+        "MSYS filename mapping is not native Linux filesystem behavior; no symlink/junction or adversarial filesystem-race test claimed.",
+        "The file comparator checks only static owned trees, paths, directory structure and bytes; it does not preserve or prove Linux ownership, ACLs, xattrs, timestamps, sparse layout, hard-link identity or application-consistent backup.",
+        "All eight full Linux labs remain proposed."
+      ]
+    }
+  },
+  "answered_checks": 46,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Earlier Linux runtime/WSL startup blocker remains deferred. MSYS utility tests do not establish native Linux kernel, filesystem, mode/ACL or service-manager behavior.",
+    "44 checks passed with Windows Python and Git for Windows Bash/GNU tools, including actual synthetic archive/restore and negative file comparisons. Owned temporary tree cleaned.",
+    "No systemd/PAM, Linux account, firewall, network, physical/block device, VM/container, cloud resource, reboot or complete distribution lab executed. All eight full labs remain proposed.",
+    "Permission/ACL, LVM and SLO calculations are models, not observed OS policy, storage allocation or operational monitoring.",
+    "The comparator checks static owned trees only; no adversarial race, symlink/junction, Linux metadata, hard-link identity or application-consistency validation claimed.",
+    "Two paid catalog pages blocked automated rechecking; prior OReilly edition and Udemy runtime unverified. Paid interiors, assessment banks and provider labs unreviewed.",
+    "Retirement remains estimated 2028 without an exact date. Upstream documentation is not a guarantee of installed distribution feature availability."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Windows Python plus Git for Windows MSYS Bash/GNU utilities on synthetic files in an owned temporary workspace. Actual archive/restore and shell behavior tested; no native Linux kernel, mode/ACL enforcement, systemd/PAM, block device, network, account, firewall or cloud change.",
+    "learning_catalog_consistency": "passed",
+    "passed": 44,
+    "failed": 0,
+    "checks": [
+      "MSYS synthetic unusual-name fixtures created",
+      "six regular files inventoried",
+      "public Bash script success",
+      "public Bash reports six files",
+      "escaped display stays one line per filename",
+      "newline filename escaped in output",
+      "spaces quoted in output",
+      "leading hyphen name handled",
+      "public Bash missing argument fails",
+      "public Bash absent root fails",
+      "public Bash file root fails",
+      "empty directory is a successful zero",
+      "failed producer propagates through public pipeline",
+      "pipeline default hides producer status",
+      "pipefail reports rightmost nonzero",
+      "default pipeline loop counter stays in subshell",
+      "here string adds newline",
+      "quoted heredoc preserves dollar syntax",
+      "test context is an errexit exception",
+      "actual GNU tar archive created",
+      "actual GNU tar restore completed",
+      "restore names directories and bytes agree",
+      "public Python comparison exits zero",
+      "empty directory retained",
+      "binary content retained",
+      "changed file identified",
+      "public changed comparison exits one",
+      "extra file identified",
+      "missing file identified",
+      "missing empty directory identified",
+      "extra directory identified",
+      "source fixture content was not modified",
+      "repaired restore agrees",
+      "Python file root rejected",
+      "owned temporary practice tree cleaned",
+      "permission-bit model 666 mask 22",
+      "permission-bit model 777 mask 22",
+      "permission-bit model 666 mask 3",
+      "permission-bit model 666 mask 77",
+      "permission-bit model 777 mask 77",
+      "ACL named-entry mask model",
+      "30-day 99.9 percent time-budget example",
+      "sample request SLI",
+      "LVM 4MiB extent arithmetic for 1GiB"
+    ],
+    "python": "3.13.14",
+    "tools": {
+      "bash": "GNU bash, version 5.3.15(2)-release (x86_64-pc-cygwin)",
+      "tar": "tar (GNU tar) 1.35",
+      "find": "find (GNU findutils) 4.11.0"
+    },
+    "sources": {
+      "list_regular_files.sh": "62e557b3b246737f7c18fbbd646c998e6371f0fcff3f0d3cf4cb5085b54c1da9",
+      "compare_restore.py": "9269b3c536065c9c92617b186ce2b3ce46cf9d81247a5d1c5bf18d2f8458b60e"
+    },
+    "public_example_outputs": {
+      "list_regular_files.sh": "/c/src/certification-study-library/.maintenance/linux-practice-cbnzj2fx/source\\ odd/--help\n/c/src/certification-study-library/.maintenance/linux-practice-cbnzj2fx/source\\ odd/a\\ b.txt\n/c/src/certification-study-library/.maintenance/linux-practice-cbnzj2fx/source\\ odd/empty\n$'/c/src/certification-study-library/.maintenance/linux-practice-cbnzj2fx/source odd/line\\nbreak'\n/c/src/certification-study-library/.maintenance/linux-practice-cbnzj2fx/source\\ odd/quote\\'s.txt\n/c/src/certification-study-library/.maintenance/linux-practice-cbnzj2fx/source\\ odd/\\[literal\\]\\*\nregular_files=6\n",
+      "compare_restore.py": "{\n  \"missing_files\": [],\n  \"extra_files\": [],\n  \"changed_files\": [],\n  \"missing_directories\": [],\n  \"extra_directories\": []\n}\n"
+    },
+    "limits": [
+      "Earlier WSL startup blocker remains deferred; no new Linux service or VM execution claimed.",
+      "Permission/ACL and SLO/LVM cases are arithmetic models, not OS policy or operational performance tests.",
+      "MSYS filename mapping is not native Linux filesystem behavior; no symlink/junction or adversarial filesystem-race test claimed.",
+      "The file comparator checks only static owned trees, paths, directory structure and bytes; it does not preserve or prove Linux ownership, ACLs, xattrs, timestamps, sparse layout, hard-link identity or application-consistent backup.",
+      "All eight full Linux labs remain proposed."
+    ]
+  },
+  "archived_prior_objective_snapshot": {
+    "path": "data/objective-snapshots/xk0-006-2026-09-01-official-objectives.txt",
+    "sha256": "145e8c39625ce15055b7d8e0098b2cbde174c84538e11eb25b3b81ae8e0f4832",
+    "historical_audit_paths_updated": 1,
+    "note": "Byte-identical prior snapshot; historical dates, hashes and conclusions retained."
+  },
+  "prior_status": {
+    "skills_versions": [
+      "Exam version: V8",
+      "Exam series code: XK0-006",
+      "Launch date: July 15, 2025",
+      "Number of questions: Maximum of 90 (multiple-choice and performance-based)",
+      "Passing score: 720 (on a scale of 100–900)",
+      "Languages: English",
+      "Retirement: usually three years after launch (estimated 2028)"
+    ],
+    "upcoming_announcements": [
+      "Retirement: usually three years after launch (estimated 2028)"
+    ]
+  },
+  "objective_baseline_acceptance": {
+    "changed": [
+      "XK0-006"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "XK0-006",
+        "title": "CompTIA Linux+ (V8)",
+        "url": "https://www.comptia.org/en-us/certifications/linux/",
+        "guide_path": "guides/XK0-006-comptia-linux-plus.md",
+        "snapshot_path": "data\\objective-snapshots\\xk0-006-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\xk0-006-official-status.json",
+        "previous_sha256": "145e8c39625ce15055b7d8e0098b2cbde174c84538e11eb25b3b81ae8e0f4832",
+        "current_sha256": "7092fafe78142df3f4be33e42aea257143769cc6268b90a4e1059f994c00496e",
+        "previous_status_sha256": "6f436c8b2563efee7159d9645d7c60a39576a7f7b873ba1e259310cfa6fc3f1c",
+        "current_status_sha256": "82f353d9b191630d922342c5e4d81ed300e4c6e34bb13f654c78e5a3621df4ca",
+        "official_status": {
+          "skills_versions": [
+            "Exam version: V8",
+            "Exam series code: XK0-006",
+            "Launch date: July 15, 2025",
+            "Number of questions: Maximum of 90 (multiple-choice and performance-based)",
+            "Duration: 90 minutes",
+            "Passing score: 720 (on a scale of 100–900)",
+            "Languages: English",
+            "Retirement: usually three years after launch (estimated 2028)"
+          ],
+          "upcoming_announcements": [
+            "Retirement: usually three years after launch (estimated 2028)"
+          ]
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ]
+  },
+  "objective_diff": "--- \n\n+++ \n\n@@ -2,6 +2,7 @@\n\n Exam series code: XK0-006\n Launch date: July 15, 2025\n Number of questions: Maximum of 90 (multiple-choice and performance-based)\n+Duration: 90 minutes\n Passing score: 720 (on a scale of 100–900)\n Languages: English\n Retirement: usually three years after launch (estimated 2028)\n",
+  "version_specific_pdf_review": {
+    "receipt": {
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/90b9ac985c0e11f0b004a2a93c999a21?checkExpiry=false",
+      "discovery_page": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+      "collection_url": "https://lecbyo.collections.cmp.optimizely.com/api/library-collection/b9074fb6207711f08b1d2e4ad712ca04",
+      "asset": {
+        "guid": "90b9ac985c0e11f0b004a2a93c999a21",
+        "title": "CompTIA Linux+ XK0-006 Exam Objectives (5.0).pdf",
+        "type": "raw_file",
+        "mimeType": "application/pdf",
+        "thumbnailUrl": "https://images4.cmp.optimizely.com/Zz1kODFmNDc3ZWNhMmIxMWYwOTAwMjIyYzdkYzE2MzUwMw==",
+        "previewUrl": "https://lecbyo.files.cmp.optimizely.com/download/90b9ac985c0e11f0b004a2a93c999a21?checkExpiry=false",
+        "mediaUrl": "https://lecbyo.files.cmp.optimizely.com/download/90b9ac985c0e11f0b004a2a93c999a21?checkExpiry=false",
+        "transcodedUrl": "",
+        "description": "",
+        "lastModified": "2025-11-25T18:23:31",
+        "lastModifiedRelative": "10 months ago",
+        "createdAt": "2025-07-08T15:16:48",
+        "custom_labels": {},
+        "fields": []
+      },
+      "sha256": "dd62fc91a7e9b53752bb082f13ffe98318cf18082f73a44105d69e4e67e075ea",
+      "bytes": 283581,
+      "pages": 20,
+      "status": 200
+    },
+    "numbered_objectives": 29,
+    "objective_group_counts": [
+      7,
+      6,
+      6,
+      5,
+      5
+    ],
+    "main_page_summary_rows": 29,
+    "layout_check": "Page 11 confirms 3.1 authentication/accounting, 3.2 firewalls, 3.3 OS hardening.",
+    "mapping": "Original paraphrases with published IDs; all numbered objectives and detailed bullets read."
+  }
+}
