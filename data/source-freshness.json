@@ -4,6 +4,307 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-200301-deep-review",
+      "title": "200-301 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "200-301"
+      ],
+      "results": [
+        {
+          "exam_code": "200-301",
+          "vendor_id": "cisco",
+          "guide_path": "guides/200-301-cisco-certified-network-associate.md",
+          "baseline_sha256": "d7a257e8d7883c4b804ee39ea6222aec83a7d6e11f856945584d4643db359602",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "BothactualPDFsfullyread:current53(13/9/5/9/10/7),future29(7/5/4/7/6). DatedMay20/July1 notices establishFeb2lastcurrent/Feb3,2027new. Canonical120min300USD EnglishJapanese vscredential400Englishconflict remains. Canonicalobjective507885a84f0680df787cde210d2181632c549ce95c9581ad8b516143dd4d2ddc andlifec16d726dd24f65482ee4872f1cd2abdcf614c5a9c33951c5a366c9039047e71a unchanged. No snapshot rewrite."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "TargetedCisco RIB/forwarding,OSPF states/MTU,LACP min-links,ACL wildcards/ACK-RST,DAItrust/staticbindings,STP generic/platformlabels,APIpagination/errors andRFC4291. Exactpublicworkbook48checks;4separateworkedexamplechecks. No live CLI/API execution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "May20andJuly1 RyanRose first-party articles read;CCNA futurepracticaldepth/date corroborated. CurrentCML2.10publicfeaturelist includesbetawireless; notprooflabsupported. Expiredgiveaway andothercertificationchanges notadopted."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Pluralsight22cards3461min57h41vs58hheader,dated2020–2026;CiscoPress2024two-volume8+videohoursonly;NetAcad22/2hprerequisitesnotfullCCNA. CML5nodefreeadvertisement;noinstallation. OReilly/Udemy403,YouTubeshell,previousdurationsunverified. No paidinteriors."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "DHCPmovednotremoved,SNMP/syslogretained,future29separated;canonicalprice/languageconflictretained. Clarifiedselectionphases/floatingbackup/AD255,OSPF2WAY/MTU,LACPmin-links,ACLstate/wildcards,staticDAI,STProle/state,IPv6workedexample,APIpagination andcataloglimits.48answers8proposedlabs."
+            }
+          },
+          "findings": [
+            {
+              "id": "200301-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "DHCP moves into troubleshooting rather than leaving the future scope",
+              "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-301"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Objective1.7 names client/server/relay troubleshooting;5.4/5.6retainSNMP/syslog.",
+              "recommendation": "Correct transition callout and preserve separate29objective map.",
+              "disposition": "applied",
+              "source_id": "cisco-200-301-v2-blueprint",
+              "resolution": "Correct transition callout and preserve separate29objective map."
+            },
+            {
+              "id": "200301-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "The exam landing page is not the detailed scope",
+              "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-301"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Actual4pagePDFhas53numberedobjectives plusbullets, includingL2/L3LACP andSTPguards.",
+              "recommendation": "Mapallcurrentobjectives andrecordPDFreceipts separatelyfromunchangedHTMLmonitor.",
+              "disposition": "applied",
+              "source_id": "cisco-200-301-v1-1-blueprint",
+              "resolution": "Mapallcurrentobjectives andrecordPDFreceipts separatelyfromunchangedHTMLmonitor."
+            },
+            {
+              "id": "200301-deep-3",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Official logistics still disagree",
+              "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-301"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Credentialpage400USD/English;canonical300USD/EnglishJapanese;centralpricing300.",
+              "recommendation": "Retain dateddiscrepancy andactualcheckoutverification,notinventreconciliation.",
+              "disposition": "applied",
+              "source_id": "cisco-ccna-credential-page-conflict",
+              "resolution": "Retain dateddiscrepancy andactualcheckoutverification,notinventreconciliation."
+            },
+            {
+              "id": "200301-deep-4",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Future blueprint availability is different from exam availability",
+              "url": "https://blogs.cisco.com/learning/ai-updates-ccna-ccie-automation",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-301"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "May20topics released;Feb3,2027exam launch;JulyarticlelastcurrentFeb2.",
+              "recommendation": "Keep datedversionboundary andfuturetasks separatelylabeled.",
+              "disposition": "applied",
+              "source_id": "cisco-ccna-refresh-announcement",
+              "resolution": "Keep datedversionboundary andfuturetasks separatelylabeled."
+            },
+            {
+              "id": "200301-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Route installation and packet forwarding are different stages",
+              "url": "https://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/15986-admin-distance.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-301"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Metrics selectprocesscandidates;ADcomparessameprefixsources;forwardinguseslongestinstalledprefix.",
+              "recommendation": "Teachstages andexecute more-specific/ECMP/withdrawal/restorecounterexamples.",
+              "disposition": "applied",
+              "source_id": "cisco-admin-distance",
+              "resolution": "Teachstages andexecute more-specific/ECMP/withdrawal/restorecounterexamples."
+            },
+            {
+              "id": "200301-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A floating static is not an application health check",
+              "url": "https://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/15986-admin-distance.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-301"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Backupneedseligible nexthop andpreferredsameprefixroute withdrawal;AD255notinstalled.",
+              "recommendation": "Stateeligibilityboundary andtestprovidedeligible/unusablecandidateswithoutclaimingprobes.",
+              "disposition": "applied",
+              "source_id": "cisco-admin-distance",
+              "resolution": "Stateeligibilityboundary andtestprovidedeligible/unusablecandidateswithoutclaimingprobes."
+            },
+            {
+              "id": "200301-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Member loss does not guarantee a working aggregate",
+              "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/etherchannel/etherchannel-configuration-guide/etherchannels.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-301"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Minimumlinksthresholdcanmakelogicalchannelinactive.",
+              "recommendation": "Conditionfailureprediction andlabexpectedresult onmin-links.",
+              "disposition": "applied",
+              "source_id": "ccna-etherchannel-config-guide",
+              "resolution": "Conditionfailureprediction andlabexpectedresult onmin-links."
+            },
+            {
+              "id": "200301-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A stable 2-WAY relationship can be healthy",
+              "url": "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/13685-13.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-301"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "BroadcastDROTHERpeerscanremain2WAYwithFULLtowardDRBDR.",
+              "recommendation": "DistinguishnormalstatefrompersistentDBDexchangetrouble.",
+              "disposition": "applied",
+              "source_id": "cisco-ospf-neighbor-states",
+              "resolution": "DistinguishnormalstatefrompersistentDBDexchangetrouble."
+            },
+            {
+              "id": "200301-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "TCP established flag matching does not track sessions",
+              "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/15-sy/sec-data-acl-15-sy-book/sec-create-ip-apply.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-301"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "MatchisACKorRST,notproofprevioussession.",
+              "recommendation": "Executeforged-fixtureACK/nohistorycounterexample andindependentreply-directiondenial.",
+              "disposition": "applied",
+              "source_id": "cisco-ip-acl-create",
+              "resolution": "Executeforged-fixtureACK/nohistorycounterexample andindependentreply-directiondenial."
+            },
+            {
+              "id": "200301-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A wildcard is not always a contiguous inverse subnet mask",
+              "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/15-mt/sec-data-acl-15-mt-book/sec-access-list-ov.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-301"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Zerobitscompare,onesignore;noncontiguousbitsallowed.",
+              "recommendation": "Addbitwisematchingandexecutepositive/negative/noncontiguouscases.",
+              "disposition": "applied",
+              "source_id": "cisco-ip-acl-overview",
+              "resolution": "Addbitwisematchingandexecutepositive/negative/noncontiguouscases."
+            },
+            {
+              "id": "200301-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Static hosts and broad interface trust need separate treatment",
+              "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-18/configuration_guide/sec/b_1718_sec_9300_cg/configuring_dynamic_arp_inspection.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-301"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "StaticARPACLsserve nonDHCPbindings;trustedportsbypassvalidation.",
+              "recommendation": "Addlegitimate-static/invalidbindinglabcaseswithouttrust-allworkaround.",
+              "disposition": "applied",
+              "source_id": "cisco-dai-1718",
+              "resolution": "Addlegitimate-static/invalidbindinglabcaseswithouttrust-allworkaround."
+            },
+            {
+              "id": "200301-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Port role and state use different meanings and display vocabularies",
+              "url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/spanning-tree-protocol/24062-146.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-301"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "GenericRSTPthree-state modeldiffersfromplatformblocking/disabledlabels;learningdoesnotforwarddata.",
+              "recommendation": "Addlearningstateandrole distinction,explainNXOSlabelboundary.",
+              "disposition": "applied",
+              "source_id": "cisco-rstp-explanation",
+              "resolution": "Addlearningstateandrole distinction,explainNXOSlabelboundary."
+            },
+            {
+              "id": "200301-deep-13",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "One successful API response need not contain complete inventory",
+              "url": "https://developer.cisco.com/docs/secure-endpoint/overview/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-301"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Overviewdocumentspagination,JSONenvelope and400/401/429errors.",
+              "recommendation": "ExtendAPIevidenceplanningwithoutauthenticatingorclaimingendpointuniformity.",
+              "disposition": "applied",
+              "source_id": "ccna-secure-endpoint-api-overview",
+              "resolution": "ExtendAPIevidenceplanningwithoutauthenticatingorclaimingendpointuniformity."
+            }
+          ],
+          "notes": "Mapped all53 current numbered objectives and supporting bullets from the actual four-page PDF; kept29 scheduledv2 objectives separate. Corrected DHCP/SNMP transition placement, clarified route installation/forwarding and LACP failover, added48 executed local checks and48 answers, and reconciled catalog evidence. Canonical objective/lifecycle digests unchanged; official price/language conflict retained. Eight device labs and independent human review remain pending. Same-context AI review; human review pending. See docs/research/2026-09-29-200-301-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 13,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-100160-deep-review",
       "title": "100-160 complete guide and learning-content review",
       "rubric_version": 1,

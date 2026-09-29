@@ -7875,26 +7875,86 @@
       "notes": "Mapped 23 numbered objectives and supporting bullets from the actual three-page PDF. Corrected dated CCST renewal policy, reconciled the older exam-referenced incident structure with NIST revision3, added40executed evidence/timeline checks and48answered prompts, and updated catalog evidence. Objective digest unchanged; missing lifecycle baseline explicitly initialized and rechecked unchanged. Eight live/system labs and independent human review remain pending. See docs/research/2026-09-29-100-160-deep-review.md"
     },
     {
-      "id":"200-301-2026-09-06-source-validation",
-      "exam_code":"200-301",
-      "guide_path":"guides/200-301-cisco-certified-network-associate.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-07",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/200-301-official-objectives.txt",
-      "blueprint_snapshot_sha256":"507885a84f0680df787cde210d2181632c549ce95c9581ad8b516143dd4d2ddc",
-      "objective_coverage":[
-        {"objective_group":"Network Fundamentals (20%)","guide_sections":["Section 1","All scenarios","Labs 1 and 8"]},
-        {"objective_group":"Network Access (20%)","guide_sections":["Section 2","Scenarios 1–2","Labs 2–3 and 8"]},
-        {"objective_group":"IP Connectivity (25%)","guide_sections":["Section 3","Scenario 1","Labs 4 and 8"]},
-        {"objective_group":"IP Services (10%)","guide_sections":["Section 4","Scenarios 1 and 3","Labs 5 and 8"]},
-        {"objective_group":"Security Fundamentals (15%)","guide_sections":["Section 5","All scenarios","Labs 6 and 8"]},
-        {"objective_group":"Automation and Programmability (10%)","guide_sections":["Section 6","Scenario 3","Labs 7 and 8"]},
-        {"objective_group":"Scheduled CCNA v2.0 delta","guide_sections":["Scheduled v2.0 transition map","Related item — scheduled v2.0 callouts","Labs 1–8"]}
+      "id": "200-301-2026-09-06-source-validation",
+      "exam_code": "200-301",
+      "guide_path": "guides/200-301-cisco-certified-network-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/200-301-official-objectives.txt",
+      "blueprint_snapshot_sha256": "507885a84f0680df787cde210d2181632c549ce95c9581ad8b516143dd4d2ddc",
+      "objective_coverage": [
+        {
+          "objective_group": "Network Fundamentals (20%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network Access (20%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1–2",
+            "Labs 2–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "IP Connectivity (25%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenario 1",
+            "Labs 4 and 8"
+          ]
+        },
+        {
+          "objective_group": "IP Services (10%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1 and 3",
+            "Labs 5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security Fundamentals (15%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Automation and Programmability (10%)",
+          "guide_sections": [
+            "Section 6",
+            "Scenario 3",
+            "Labs 7 and 8"
+          ]
+        },
+        {
+          "objective_group": "Scheduled CCNA v2.0 delta",
+          "guide_sections": [
+            "Scheduled v2.0 transition map",
+            "Related item — scheduled v2.0 callouts",
+            "Labs 1–8"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":14,"reachable":12,"access_blocked":2,"missing_or_error":0},
-      "notes":"All six current v1.1 domains and their complete official objective set are mapped through packet/control-plane behavior, configuration, verification, likely failure and safe correction. Layer 2 and Layer 3 LACP EtherChannel, awareness/training/physical access controls and representative REST authentication types have explicit first-party support. The September 7 review also registers and cites Cisco's conflicting USD 400/English-only credential page while retaining the USD 300/English-and-Japanese exam page as the planning contract and requiring checkout verification. A separately labeled transition map covers every published v2.0 domain and material delta without representing future scope as current. Three scenarios, eight authorized labs and 36 checks are included. Twelve URLs are reachable; O'Reilly and Udemy are automation-blocked; none are broken."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 28,
+        "reachable": 26,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Mapped all53 current numbered objectives and supporting bullets from the actual four-page PDF; kept29 scheduledv2 objectives separate. Corrected DHCP/SNMP transition placement, clarified route installation/forwarding and LACP failover, added48 executed local checks and48 answers, and reconciled catalog evidence. Canonical objective/lifecycle digests unchanged; official price/language conflict retained. Eight device labs and independent human review remain pending. See docs/research/2026-09-29-200-301-deep-review.md"
     },
     {
       "id":"200-901-2026-09-02-source-validation",

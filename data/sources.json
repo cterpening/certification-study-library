@@ -3,6 +3,188 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "cisco-ccna-refresh-announcement",
+      "title": "CCNA refresh announcement May 2026",
+      "url": "https://blogs.cisco.com/learning/ai-updates-ccna-ccie-automation",
+      "publisher": "Cisco",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "supported_exams": [
+        "200-301"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 200-301 deep review: May20,2026 Ryan Rose announcement read, including portfolio context. CCNA-specific future practical depth andFeb3,2027date adopted; CCIE/human-skills marketing not transplanted into CCNA objectives. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cisco-admin-distance",
+      "title": "Administrative distance and forwarding selection",
+      "url": "https://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/15986-admin-distance.html",
+      "publisher": "Cisco",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "200-301"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 200-301 deep review: Targeted background,source-metric/RIB/forwarding phases,AD table and floating-static example/limits read. Not all examples or redistribution. AD255 not installed; usable next-hop required; no cross-protocol metric comparison. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cisco-ospf-neighbor-states",
+      "title": "OSPF neighbor states",
+      "url": "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/13685-13.html",
+      "publisher": "Cisco",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "200-301"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 200-301 deep review: State definitions Down throughFull and broadcast2-WAY exception read; no OSPF process execution. Explanation distinguishes normal DROTHER relationship from a fault. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cisco-ospf-exstart",
+      "title": "OSPF Exstart and Exchange troubleshooting",
+      "url": "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/13684-12.html",
+      "publisher": "Cisco",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "200-301"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 200-301 deep review: Background andSolution/cause list read,plus selected old lab configuration lines. No fulldebug walkthrough or device execution. MTU mismatch is one cause; matching actualMTU preferred to blind mtu-ignore. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cisco-ip-acl-overview",
+      "title": "IP access list matching overview",
+      "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/15-mt/sec-data-acl-15-mt-book/sec-access-list-ov.html",
+      "publisher": "Cisco",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "200-301"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 200-301 deep review: Targeted standard/extended distinctions, matching and wildcard bit/noncontiguous sections read. No full44k guide, historical hardware restrictions or reflexive ACL tutorial adopted. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cisco-ip-acl-create",
+      "title": "Creating and applying an IP access list",
+      "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/15-sy/sec-data-acl-15-sy-book/sec-create-ip-apply.html",
+      "publisher": "Cisco",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "200-301"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 200-301 deep review: Targeted first-match/implicit deny/create-before-apply,example syntax and establishedACK/RST clause read. OldIOS15SY source used for semantics,not universal contemporary hardware template; no actual ACL deployment. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cisco-ccna-book-library",
+      "title": "CCNA Official Cert Guide Library second edition public catalog",
+      "url": "https://www.ciscopress.com/store/ccna-200-301-official-cert-guide-library-9780138221393",
+      "publisher": "Cisco Press",
+      "authority_class": 3,
+      "source_type": "commercial-learning-path",
+      "access_model": "paid",
+      "supported_exams": [
+        "200-301"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 200-301 deep review: Public bibliographic metadata and description/update/companion sections read:Jul25,2024,secondedition,threeauthors,two volumes,8+video hours,800+advertised questions. No book interior or questions viewed; provider efficacy/completeness claims not validated. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cisco-exam-pricing",
+      "title": "Cisco certification exams and pricing",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/index.html",
+      "publisher": "Cisco",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "200-301"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 200-301 deep review: Current central pricing table read:Associate300USD;page still has stale CCNAv1.0 and oldDevNet labels elsewhere. Pricing corroboration only; canonical page andPDFs control scope. Initial /cost.html discovery404 replaced with validindex URL before registration. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cisco-dai-1718",
+      "title": "Catalyst 9300 IOS XE 17.18 dynamic ARP inspection",
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-18/configuration_guide/sec/b_1718_sec_9300_cg/configuring_dynamic_arp_inspection.html",
+      "publisher": "Cisco",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "200-301"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 200-301 deep review: Selected restrictions,operation/trust, DHCP binding and static ARP ACL sections read. Trusted interfaces bypasschecks. No fullguide/rate-limit/stack behavior review or deployment. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cisco-stp-guide",
+      "title": "Catalyst 9000 spanning tree guide",
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/stp/stp-configuration-guide/m-stp.html",
+      "publisher": "Cisco",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "200-301"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 200-301 deep review: Selected roles/root/bridgeID/BPDU and state information read. No full54kconfigurationguide, default/supportlimits generalized or CLI execution. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "rfc-4291",
+      "title": "IPv6 addressing architecture",
+      "url": "https://www.rfc-editor.org/rfc/rfc4291.html",
+      "publisher": "RFC Editor / IETF",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "200-301"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 200-301 deep review: Section2 address types/no-broadcast and targetedAppendixA 48bit-to-modifiedEUI64 construction read. Not fullRFC or all subsequentupdates; example not current-host universaladdress-generationpolicy. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cisco-rstp-states",
+      "title": "Rapid PVST roles and states NX-OS 9.2",
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/92x/Layer-2_switching/configuration/guide/b-cisco-nexus-9000-nx-os-layer-2-switching-configuration-guide-92x/b-cisco-nexus-9000-nx-os-layer-2-switching-configuration-guide-92x_chapter_01001.html",
+      "publisher": "Cisco",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "200-301"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 200-301 deep review: NXOS9.2 selectedport-state/learning/forwarding section read. Fourplatformlabels reconciled withgenericRSTP3states; noNXOScommands transplant or full67kguide review. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cisco-rstp-explanation",
+      "title": "RSTP role and state explanation",
+      "url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/spanning-tree-protocol/24062-146.html",
+      "publisher": "Cisco",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "200-301"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 200-301 deep review: PortStates/PortRoles section fullyread,includinggenericdiscarding/learning/forwarding versus Cisco blocking label andalternate/backup roles. Not wholeproposal/agreementdiagramsequence or convergencevalidation. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "cisco-ccst-cybersecurity-objectives-pdf",
       "title": "CCST Cybersecurity objective domains",
       "url": "https://learningcontent.cisco.com/documents/CCST+Cybersecurity+Objecitve+Domain_Cisco_Final_wCiscoLogo.pdf",
@@ -237,10 +419,11 @@
       "access_model": "public",
       "supported_exams": [
         "100-150",
-        "100-160"
+        "100-160",
+        "200-301"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 100-150 deep review: Entire public text read,especially EntryCCST exact qualifyingexam list/noCE and active-periodrenewal. GeneralCE text does not override CCST-specific exception. See docs/research/2026-09-29-100-150-deep-review.md No live infrastructure execution. September 29 100-160 deep review: Full page read for networking in same session/currenthealthyfetch; CCST-specific qualifyingexams/noCE/beforeexpiry retained,not genericCE assumptions. See docs/research/2026-09-29-100-160-deep-review.md No live infrastructure execution."
+      "notes": "September 29 100-150 deep review: Entire public text read,especially EntryCCST exact qualifyingexam list/noCE and active-periodrenewal. GeneralCE text does not override CCST-specific exception. See docs/research/2026-09-29-100-150-deep-review.md No live infrastructure execution. September 29 100-160 deep review: Full page read for networking in same session/currenthealthyfetch; CCST-specific qualifyingexams/noCE/beforeexpiry retained,not genericCE assumptions. See docs/research/2026-09-29-100-160-deep-review.md No live infrastructure execution. September 29 200-301 deep review: Current timing,active-period completion andAssociate30CE section read. Qualifying-exam policy acknowledged; no account/credit balance checked. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
     },
     {
       "id": "cisco-ccst-networking-book",
@@ -45379,7 +45562,7 @@
         "100-160",
         "200-301"
       ],
-      "notes": "First-party course and career-path catalog, including networking, cybersecurity and Packet Tracer routes from entry-level through CCNA preparation. September 29 100-150 deep review: Completepubliccatalogread:NetworkingBasics22h/PacketTracerintro2h;selfpacedfree. No authenticated lessons/download. See docs/research/2026-09-29-100-150-deep-review.md No live infrastructure execution. September 29 100-160 deep review: Complete public page read in same session/current healthy re-fetch: cybersecurity introduction6h,NetworkingBasics22h,PacketTracerintro2h. No authenticated lessons. See docs/research/2026-09-29-100-160-deep-review.md No live infrastructure execution."
+      "notes": "First-party course and career-path catalog, including networking, cybersecurity and Packet Tracer routes from entry-level through CCNA preparation. September 29 100-150 deep review: Completepubliccatalogread:NetworkingBasics22h/PacketTracerintro2h;selfpacedfree. No authenticated lessons/download. See docs/research/2026-09-29-100-150-deep-review.md No live infrastructure execution. September 29 100-160 deep review: Complete public page read in same session/current healthy re-fetch: cybersecurity introduction6h,NetworkingBasics22h,PacketTracerintro2h. No authenticated lessons. See docs/research/2026-09-29-100-160-deep-review.md No live infrastructure execution. September 29 200-301 deep review: Public landing page course/career sections read: Networking Basics 22h and Packet Tracer introduction 2h. Does not establish full CCNA 70–210h route; no authenticated course content. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
     },
     {
       "id": "cisco-100-150-oreilly-official",
@@ -45522,40 +45705,172 @@
       "notes": "Broad 37-hour, 16-course/15-lab foundation across Windows, Linux, networking and applications; useful hands-on supplement, not an exam-specific path. September 29 100-160 deep review: Entire public path read;17course+17lab cards total2302min=38h22,header38h. September2026 AI andOAuth additions; public metadata only, not lesson/lab execution or Cisco exam coverage proof. See docs/research/2026-09-29-100-160-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cisco-200-301-exam","title":"200-301 CCNA exam","url":"https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html","publisher":"Cisco","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["200-301"],"notes":"Canonical live v1.1 identity, 120-minute duration, languages, USD 300 listed price and preparation route; monitored by the Cisco adapter."
+      "id": "cisco-200-301-exam",
+      "title": "200-301 CCNA exam",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html",
+      "publisher": "Cisco",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "200-301"
+      ],
+      "notes": "Canonical live v1.1 identity, 120-minute duration, languages, USD 300 listed price and preparation route; monitored by the Cisco adapter. September 29 200-301 deep review: Canonical page read in full: v1.1,120 minutes,English/Japanese,USD300. Separate PDF/dated notices establish detailed scope and transition; page monitor alone does not cover them. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cisco-200-301-v1-1-blueprint","title":"CCNA Exam v1.1 (200-301) topics","url":"https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf","publisher":"Cisco","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["200-301"],"notes":"Current Cisco Public six-domain 20/20/25/10/15/10 blueprint, active through February 2, 2027."
+      "id": "cisco-200-301-v1-1-blueprint",
+      "title": "CCNA Exam v1.1 (200-301) topics",
+      "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf",
+      "publisher": "Cisco",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "200-301"
+      ],
+      "notes": "Current Cisco Public six-domain 20/20/25/10/15/10 blueprint, active through February 2, 2027. September 29 200-301 deep review: Actual four-page PDF fully read, binary hash/page receipt preserved.53 numbered objectives [13,9,5,9,10,7], all supporting bullets included.2024 copyright is not an inferred revision date. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cisco-200-301-v2-blueprint","title":"CCNA v2.0 (200-301) topics","url":"https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf","publisher":"Cisco","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["200-301"],"notes":"Scheduled Cisco Public five-domain 25/25/20/20/10 blueprint for exams beginning February 3, 2027; includes deeper troubleshooting and explicit agentic-AI/prompting scope."
+      "id": "cisco-200-301-v2-blueprint",
+      "title": "CCNA v2.0 (200-301) topics",
+      "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf",
+      "publisher": "Cisco",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "200-301"
+      ],
+      "notes": "Scheduled Cisco Public five-domain 25/25/20/20/10 blueprint for exams beginning February 3, 2027; includes deeper troubleshooting and explicit agentic-AI/prompting scope. September 29 200-301 deep review: Actual three-page PDF fully read.29 numbered future objectives [7,5,4,7,6], supporting bullets included; weights25/25/20/20/10 and120minutes. Kept separate from current scope. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cisco-200-301-transition","title":"Stay on Track: Get Certified Before the CCNA Refresh","url":"https://blogs.cisco.com/learning/stay-on-track-get-certified-before-the-ccna-refresh","publisher":"Cisco Learning","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["200-301"],"notes":"First-party date authority: v1.1 last testing February 2, 2027 and v2.0 launch February 3, 2027."
+      "id": "cisco-200-301-transition",
+      "title": "Stay on Track: Get Certified Before the CCNA Refresh",
+      "url": "https://blogs.cisco.com/learning/stay-on-track-get-certified-before-the-ccna-refresh",
+      "publisher": "Cisco Learning",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "200-301"
+      ],
+      "notes": "First-party date authority: v1.1 last testing February 2, 2027 and v2.0 launch February 3, 2027. September 29 200-301 deep review: July1,2026 Ryan Rose article and transition FAQ read: current throughFeb2,2027,newFeb3. ExpiredAug31 giveaway not promoted; marketing outcome claims not validated. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"ccna-etherchannel-config-guide","title":"EtherChannel Configuration Guide","url":"https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/etherchannel/etherchannel-configuration-guide/etherchannels.html","publisher":"Cisco","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-06","supported_exams":["200-301"],"notes":"Current first-party Layer 2 and routed Layer 3 LACP EtherChannel configuration and verification reference."
+      "id": "ccna-etherchannel-config-guide",
+      "title": "EtherChannel Configuration Guide",
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/etherchannel/etherchannel-configuration-guide/etherchannels.html",
+      "publisher": "Cisco",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "200-301"
+      ],
+      "notes": "Current first-party Layer 2 and routed Layer 3 LACP EtherChannel configuration and verification reference. September 29 200-301 deep review: Selective LACP active/passive, grouping/min-links, logical/member configuration and Layer3 sections read. Platform-specific guide, not all73k characters or all release/platform constraints; no device execution. Member loss does not guarantee bundle remains up. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"ccna-secure-endpoint-api-overview","title":"Cisco Secure Endpoint API overview","url":"https://developer.cisco.com/docs/secure-endpoint/overview/","publisher":"Cisco DevNet","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-06","supported_exams":["200-301"],"notes":"Representative Cisco REST implementation evidence for Basic and Bearer authentication; each API's own contract remains authoritative."
+      "id": "ccna-secure-endpoint-api-overview",
+      "title": "Cisco Secure Endpoint API overview",
+      "url": "https://developer.cisco.com/docs/secure-endpoint/overview/",
+      "publisher": "Cisco DevNet",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "200-301"
+      ],
+      "notes": "Representative Cisco REST implementation evidence for Basic and Bearer authentication; each API's own contract remains authoritative. September 29 200-301 deep review: Public short overview read: Basic/Bearer,400/401/429,JSON envelope and pagination. Did not use credentials, URLs containing secrets, authenticate or call an API. Not proof every Cisco API has this contract. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"ccna-social-engineering","title":"What is social engineering?","url":"https://www.cisco.com/site/us/en/learn/topics/security/what-is-social-engineering.html","publisher":"Cisco","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-06","supported_exams":["200-301"],"notes":"First-party awareness, training and physical-access context for the current security-program objective."
+      "id": "ccna-social-engineering",
+      "title": "What is social engineering?",
+      "url": "https://www.cisco.com/site/us/en/learn/topics/security/what-is-social-engineering.html",
+      "publisher": "Cisco",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "200-301"
+      ],
+      "notes": "First-party awareness, training and physical-access context for the current security-program objective. September 29 200-301 deep review: Targeted awareness/training, attack categories and physical controls sections read. Public password-composition/periodic-change suggestions not adopted as universal policy; no simulated phishing or deployment. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cisco-modeling-labs","title":"Cisco Modeling Labs","url":"https://www.cisco.com/c/en/us/products/cloud-systems-management/modeling-labs/index.html","publisher":"Cisco","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["200-301"],"notes":"First-party Cisco network simulation/emulation option with free and paid availability; licensing and host requirements vary."
+      "id": "cisco-modeling-labs",
+      "title": "Cisco Modeling Labs",
+      "url": "https://www.cisco.com/c/en/us/products/cloud-systems-management/modeling-labs/index.html",
+      "publisher": "Cisco",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "200-301"
+      ],
+      "notes": "First-party Cisco network simulation/emulation option with free and paid availability; licensing and host requirements vary. September 29 200-301 deep review: Full public overview/editions/current2.10 feature list read. Five-node free experience, beta wireless and current feature claims observed; no installation, entitlement or lab compatibility verified. Prices not adopted. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cisco-200-301-oreilly-official","title":"CCNA 200-301 Official Cert Guide Library, 2nd Edition","url":"https://www.oreilly.com/library/view/ccna-200-301-official/9780138221539/","publisher":"O'Reilly / Cisco Press / Wendell Odom, Jason Gooley and David Hucaby","authority_class":2,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["200-301"],"notes":"July 2024, 1,854-page v1.1-aligned library; O'Reilly estimates 63h06m plus companion practice/labs. Requires a v2.0 delta for post-February 2, 2027 testing."
+      "id": "cisco-200-301-oreilly-official",
+      "title": "CCNA 200-301 Official Cert Guide Library, 2nd Edition",
+      "url": "https://www.oreilly.com/library/view/ccna-200-301-official/9780138221539/",
+      "publisher": "O'Reilly / Cisco Press / Wendell Odom, Jason Gooley and David Hucaby",
+      "authority_class": 2,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "200-301"
+      ],
+      "notes": "July 2024, 1,854-page v1.1-aligned library; O'Reilly estimates 63h06m plus companion practice/labs. Requires a v2.0 delta for post-February 2, 2027 testing. September 29 200-301 deep review: HTTP403. Earlier63h6min estimate explicitly unverified; no book interior accessed. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pluralsight-200-301-path","title":"Cisco CCNA 200-301 certification path","url":"https://www.pluralsight.com/paths/cisco-ccna-cisco-certified-network-associate-200-301","publisher":"Pluralsight","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["200-301"],"notes":"22-course, 59-hour path with practice; many component courses predate v1.1, so close AI/Terraform and all v2.0 deltas from official sources."
+      "id": "pluralsight-200-301-path",
+      "title": "Cisco CCNA 200-301 certification path",
+      "url": "https://www.pluralsight.com/paths/cisco-ccna-cisco-certified-network-associate-200-301",
+      "publisher": "Pluralsight",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "200-301"
+      ],
+      "notes": "22-course, 59-hour path with practice; many component courses predate v1.1, so close AI/Terraform and all v2.0 deltas from official sources. September 29 200-301 deep review: All22 public course cards read and durations summed3461min=57h41 versus58h header. Mostly2020–21,twoAug2024 updates,IPv4Sep11,2026. CoreTech library required. No paid lessons, provider labs or assessment viewed; dates not quality/full-v2 proof. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"youtube-jeremys-it-lab-ccna","title":"Jeremy's IT Lab free CCNA course","url":"https://www.youtube.com/watch?v=H8W9oMNSuwo","publisher":"YouTube / Jeremy's IT Lab","authority_class":3,"source_type":"third-party-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["200-301"],"notes":"Popular free lecture/lab/flashcard sequence. Estimated 60–90 hours with practice; verify version and close v1.1/v2.0 deltas officially."
+      "id": "youtube-jeremys-it-lab-ccna",
+      "title": "Jeremy's IT Lab free CCNA course",
+      "url": "https://www.youtube.com/watch?v=H8W9oMNSuwo",
+      "publisher": "YouTube / Jeremy's IT Lab",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "200-301"
+      ],
+      "notes": "Popular free lecture/lab/flashcard sequence. Estimated 60–90 hours with practice; verify version and close v1.1/v2.0 deltas officially. September 29 200-301 deep review: 229-character title/footer shell, not playable content/playlist/transcript. No current total or full scope verified; previous60–90h was a study budget. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-neil-anderson-ccna","title":"Cisco CCNA 200-301 – The Complete Guide to Getting Certified","url":"https://www.udemy.com/course/ccna-complete/","publisher":"Udemy / Neil Anderson","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["200-301"],"notes":"42h42m v1.1 course last updated August 2026 with labs, notes and flashcards; verify announced v2.0 coverage before post-transition use."
+      "id": "udemy-neil-anderson-ccna",
+      "title": "Cisco CCNA 200-301 – The Complete Guide to Getting Certified",
+      "url": "https://www.udemy.com/course/ccna-complete/",
+      "publisher": "Udemy / Neil Anderson",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "200-301"
+      ],
+      "notes": "42h42m v1.1 course last updated August 2026 with labs, notes and flashcards; verify announced v2.0 coverage before post-transition use. September 29 200-301 deep review: HTTP403. Earlier42h42min/Aug2026 update not reconfirmed; no paid lessons viewed. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
     },
     {
       "id":"cisco-200-901-exam","title":"200-901 CCNAAUTO exam","url":"https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccnaauto.html","publisher":"Cisco","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["200-901"],"notes":"Canonical exam identity, 120-minute duration, USD 300 listed price, languages and official preparation links. Page renders v1.0 while Cisco's detailed current PDF and 2026 course overview say v1.1; monitored by the Cisco adapter."
@@ -52124,9 +52439,11 @@
       "authority_class": 1,
       "source_type": "credential-page",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["200-301"],
-      "notes": "Checked September 7, 2026: lists USD 400 and English only, conflicting with the dedicated exam page and central pricing table (USD 300, English/Japanese). Retained as discrepancy evidence; booking checkout is the final logistics check."
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "200-301"
+      ],
+      "notes": "Checked September 7, 2026: lists USD 400 and English only, conflicting with the dedicated exam page and central pricing table (USD 300, English/Japanese). Retained as discrepancy evidence; booking checkout is the final logistics check. September 29 200-301 deep review: Full public page read;USD400/English contradict canonicalUSD300/EnglishJapanese.120minutes,no prerequisites,3year validity corroborated; conflict retained, no checkout price inferred. See docs/research/2026-09-29-200-301-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-400-transition-blueprint",

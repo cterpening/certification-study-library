@@ -1,0 +1,2333 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "200-301",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/200-301-cisco-certified-network-associate.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "ca480bf71c1a7fcec021cda80a271ced11d8911116ea2d54acf361f27285a924",
+  "guide_after_sha256": "3b8c80c848c67161044774a629a5c92dd377a5ce2eeee705983dfa0f5f0b1019",
+  "prior_records": {
+    "exam": {
+      "code": "200-301",
+      "level": "intermediate",
+      "vendor_id": "cisco",
+      "title": "Cisco Certified Network Associate",
+      "status": "active",
+      "study_guide_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html",
+      "guide_path": "guides/200-301-cisco-certified-network-associate.md",
+      "blueprint_last_checked": "2026-09-07",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-07",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite. For v1.1, configure and troubleshoot IPv4/IPv6, VLANs/trunks/LACP/Rapid PVST+, static routing and OSPFv2, NAT/NTP/DHCP/SSH, ACL/Layer 2/wireless security, and interpret wireless, QoS, monitoring, controller/API/JSON/AI/Ansible/Terraform behavior. If testing February 3, 2027 or later, add the official v2.0 troubleshooting depth, OSPFv3, DNS records, central AAA, SFTP/SCP, storm control, RA Guard, agentic AI/prompting and Ansible execution."
+    },
+    "review": {
+      "id": "200-301-2026-09-06-source-validation",
+      "exam_code": "200-301",
+      "guide_path": "guides/200-301-cisco-certified-network-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-07",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/200-301-official-objectives.txt",
+      "blueprint_snapshot_sha256": "507885a84f0680df787cde210d2181632c549ce95c9581ad8b516143dd4d2ddc",
+      "objective_coverage": [
+        {
+          "objective_group": "Network Fundamentals (20%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network Access (20%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1–2",
+            "Labs 2–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "IP Connectivity (25%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenario 1",
+            "Labs 4 and 8"
+          ]
+        },
+        {
+          "objective_group": "IP Services (10%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1 and 3",
+            "Labs 5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security Fundamentals (15%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Automation and Programmability (10%)",
+          "guide_sections": [
+            "Section 6",
+            "Scenario 3",
+            "Labs 7 and 8"
+          ]
+        },
+        {
+          "objective_group": "Scheduled CCNA v2.0 delta",
+          "guide_sections": [
+            "Scheduled v2.0 transition map",
+            "Related item — scheduled v2.0 callouts",
+            "Labs 1–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 14,
+        "reachable": 12,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All six current v1.1 domains and their complete official objective set are mapped through packet/control-plane behavior, configuration, verification, likely failure and safe correction. Layer 2 and Layer 3 LACP EtherChannel, awareness/training/physical access controls and representative REST authentication types have explicit first-party support. The September 7 review also registers and cites Cisco's conflicting USD 400/English-only credential page while retaining the USD 300/English-and-Japanese exam page as the planning contract and requiring checkout verification. A separately labeled transition map covers every published v2.0 domain and material delta without representing future scope as current. Three scenarios, eight authorized labs and 36 checks are included. Twelve URLs are reachable; O'Reilly and Udemy are automation-blocked; none are broken."
+    },
+    "sources": [
+      {
+        "id": "cisco-netacad-catalog",
+        "title": "Cisco Networking Academy",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+        "publisher": "Cisco",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "100-150",
+          "100-160",
+          "200-301"
+        ],
+        "notes": "First-party course and career-path catalog, including networking, cybersecurity and Packet Tracer routes from entry-level through CCNA preparation. September 29 100-150 deep review: Completepubliccatalogread:NetworkingBasics22h/PacketTracerintro2h;selfpacedfree. No authenticated lessons/download. See docs/research/2026-09-29-100-150-deep-review.md No live infrastructure execution. September 29 100-160 deep review: Complete public page read in same session/current healthy re-fetch: cybersecurity introduction6h,NetworkingBasics22h,PacketTracerintro2h. No authenticated lessons. See docs/research/2026-09-29-100-160-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "cisco-200-301-exam",
+        "title": "200-301 CCNA exam",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html",
+        "publisher": "Cisco",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "200-301"
+        ],
+        "notes": "Canonical live v1.1 identity, 120-minute duration, languages, USD 300 listed price and preparation route; monitored by the Cisco adapter."
+      },
+      {
+        "id": "cisco-200-301-v1-1-blueprint",
+        "title": "CCNA Exam v1.1 (200-301) topics",
+        "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf",
+        "publisher": "Cisco",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "200-301"
+        ],
+        "notes": "Current Cisco Public six-domain 20/20/25/10/15/10 blueprint, active through February 2, 2027."
+      },
+      {
+        "id": "cisco-200-301-v2-blueprint",
+        "title": "CCNA v2.0 (200-301) topics",
+        "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf",
+        "publisher": "Cisco",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "200-301"
+        ],
+        "notes": "Scheduled Cisco Public five-domain 25/25/20/20/10 blueprint for exams beginning February 3, 2027; includes deeper troubleshooting and explicit agentic-AI/prompting scope."
+      },
+      {
+        "id": "cisco-200-301-transition",
+        "title": "Stay on Track: Get Certified Before the CCNA Refresh",
+        "url": "https://blogs.cisco.com/learning/stay-on-track-get-certified-before-the-ccna-refresh",
+        "publisher": "Cisco Learning",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "200-301"
+        ],
+        "notes": "First-party date authority: v1.1 last testing February 2, 2027 and v2.0 launch February 3, 2027."
+      },
+      {
+        "id": "ccna-etherchannel-config-guide",
+        "title": "EtherChannel Configuration Guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/etherchannel/etherchannel-configuration-guide/etherchannels.html",
+        "publisher": "Cisco",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "200-301"
+        ],
+        "notes": "Current first-party Layer 2 and routed Layer 3 LACP EtherChannel configuration and verification reference."
+      },
+      {
+        "id": "ccna-secure-endpoint-api-overview",
+        "title": "Cisco Secure Endpoint API overview",
+        "url": "https://developer.cisco.com/docs/secure-endpoint/overview/",
+        "publisher": "Cisco DevNet",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "200-301"
+        ],
+        "notes": "Representative Cisco REST implementation evidence for Basic and Bearer authentication; each API's own contract remains authoritative."
+      },
+      {
+        "id": "ccna-social-engineering",
+        "title": "What is social engineering?",
+        "url": "https://www.cisco.com/site/us/en/learn/topics/security/what-is-social-engineering.html",
+        "publisher": "Cisco",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "200-301"
+        ],
+        "notes": "First-party awareness, training and physical-access context for the current security-program objective."
+      },
+      {
+        "id": "cisco-modeling-labs",
+        "title": "Cisco Modeling Labs",
+        "url": "https://www.cisco.com/c/en/us/products/cloud-systems-management/modeling-labs/index.html",
+        "publisher": "Cisco",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "200-301"
+        ],
+        "notes": "First-party Cisco network simulation/emulation option with free and paid availability; licensing and host requirements vary."
+      },
+      {
+        "id": "cisco-200-301-oreilly-official",
+        "title": "CCNA 200-301 Official Cert Guide Library, 2nd Edition",
+        "url": "https://www.oreilly.com/library/view/ccna-200-301-official/9780138221539/",
+        "publisher": "O'Reilly / Cisco Press / Wendell Odom, Jason Gooley and David Hucaby",
+        "authority_class": 2,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "200-301"
+        ],
+        "notes": "July 2024, 1,854-page v1.1-aligned library; O'Reilly estimates 63h06m plus companion practice/labs. Requires a v2.0 delta for post-February 2, 2027 testing."
+      },
+      {
+        "id": "pluralsight-200-301-path",
+        "title": "Cisco CCNA 200-301 certification path",
+        "url": "https://www.pluralsight.com/paths/cisco-ccna-cisco-certified-network-associate-200-301",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "200-301"
+        ],
+        "notes": "22-course, 59-hour path with practice; many component courses predate v1.1, so close AI/Terraform and all v2.0 deltas from official sources."
+      },
+      {
+        "id": "youtube-jeremys-it-lab-ccna",
+        "title": "Jeremy's IT Lab free CCNA course",
+        "url": "https://www.youtube.com/watch?v=H8W9oMNSuwo",
+        "publisher": "YouTube / Jeremy's IT Lab",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "200-301"
+        ],
+        "notes": "Popular free lecture/lab/flashcard sequence. Estimated 60–90 hours with practice; verify version and close v1.1/v2.0 deltas officially."
+      },
+      {
+        "id": "udemy-neil-anderson-ccna",
+        "title": "Cisco CCNA 200-301 – The Complete Guide to Getting Certified",
+        "url": "https://www.udemy.com/course/ccna-complete/",
+        "publisher": "Udemy / Neil Anderson",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "200-301"
+        ],
+        "notes": "42h42m v1.1 course last updated August 2026 with labs, notes and flashcards; verify announced v2.0 coverage before post-transition use."
+      },
+      {
+        "id": "cisco-ccna-credential-page-conflict",
+        "title": "CCNA",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html",
+        "publisher": "Cisco",
+        "authority_class": 1,
+        "source_type": "credential-page",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "200-301"
+        ],
+        "notes": "Checked September 7, 2026: lists USD 400 and English only, conflicting with the dedicated exam page and central pricing table (USD 300, English/Japanese). Retained as discrepancy evidence; booking checkout is the final logistics check."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "1a0e8ce7afca2488ef47719c598992258bc1cf8640c8a174d15e84bd19be1677",
+      "guide_sections": [
+        "1. Network Fundamentals — 20%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "cecdbceab138ac8c0660d120a805065b2c99deb92cc33ba269ad48ae44952f61",
+      "guide_sections": [
+        "1. Network Fundamentals — 20%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "2f43a60578ef271e0bde10b2e4116bdc68d9548b7430e0eb5d79377be05bb583",
+      "guide_sections": [
+        "1. Network Fundamentals — 20%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "286c1037ba3e8f0b2558baceedc9bdde4c6b962f21a6d4767f1451d63f4d81de",
+      "guide_sections": [
+        "1. Network Fundamentals — 20%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "98374ba71518c3ec000c6dfaa9335923ce8a069b3624adc9042d5264531a3a9b",
+      "guide_sections": [
+        "1. Network Fundamentals — 20%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "15ce120ff3a42ad226b4e3de9e307dd88e3e639342a54411648363a4c253dc5c",
+      "guide_sections": [
+        "1. Network Fundamentals — 20%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "c269bf18235117f78dc03264290ea5d02a4c34e0be1537360e980f09eabf1f46",
+      "guide_sections": [
+        "1. Network Fundamentals — 20%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "7b84ff42814d46f0676658474d7ca7b6be64274d48effe491233739b9a399a26",
+      "guide_sections": [
+        "1. Network Fundamentals — 20%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "708b8bbfe6b579b05c65c184a404f944d366f54ffd2ab3a5b660fc651c3b9afb",
+      "guide_sections": [
+        "1. Network Fundamentals — 20%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "196bbfa6b2a7b0b1644c47908f7ed2b97df57f0131f569962a9799ba54f5fa6b",
+      "guide_sections": [
+        "1. Network Fundamentals — 20%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 11,
+      "objective_sha256": "700f9fa6ab5b3c1ce9b57564b053fcc28a0063a54458e0fd8f82123b0b1578b8",
+      "guide_sections": [
+        "1. Network Fundamentals — 20%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 12,
+      "objective_sha256": "5d328f807dd25df5271a986b0f2960a3621e9c4e3c45fffb6ee8a232889f15e9",
+      "guide_sections": [
+        "1. Network Fundamentals — 20%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 13,
+      "objective_sha256": "12e36e1eb0d8ff71fa3fca93bfbddc1b9000ca6e61815a313a9e4b13e01d232b",
+      "guide_sections": [
+        "1. Network Fundamentals — 20%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "65111acd9062b65aa00a9f73b4c419ac95789123b94888ffac98f2490fb71b97",
+      "guide_sections": [
+        "2. Network Access — 20%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "e79d6be2d95562764b3e026bc6a68faabb215ed444b63ef600e15f66a29b1e7b",
+      "guide_sections": [
+        "2. Network Access — 20%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "6609ec3c97365eb678ec967ade74f87cff610f06bfaa583a4e222887a112772e",
+      "guide_sections": [
+        "2. Network Access — 20%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "60643edbc7a5c53252b3894e8b55d0ef8e06402ce53e33dbfb2b381bacb77427",
+      "guide_sections": [
+        "2. Network Access — 20%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "6c96787973bfbb22f9d0ecd351064b4b3af0ca0e3a33d6bfcd5c642ed95ea215",
+      "guide_sections": [
+        "2. Network Access — 20%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "9aede28088af3c2c3ccad0bca34c07a850313433fc76bc8c2189c34e75a714ba",
+      "guide_sections": [
+        "2. Network Access — 20%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "ee396c91c247b40299f7682d1eb2068c91023681bd419a1dd9a3023f890d15bc",
+      "guide_sections": [
+        "2. Network Access — 20%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "8349f986d641b4e8053d355700fb2f20a932ee2d4880e0f6418b7ad9c7e691b2",
+      "guide_sections": [
+        "2. Network Access — 20%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "3039e99a689225c2b1ebe82dd6fc288c99dc39cc2c0bc8684c8943fef58bcc76",
+      "guide_sections": [
+        "2. Network Access — 20%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "2b312c3d237847eb3c097e492a7b6a2787ac6f0fe86c2f0989b5a07c42ff4441",
+      "guide_sections": [
+        "3. IP Connectivity — 25%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "b63dcb4a5d66eff5ddf9ea2fb85b0d9c6d8c25bfefa9064e3f836a66c6f8699c",
+      "guide_sections": [
+        "3. IP Connectivity — 25%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "394de8ee0e9fd408f16e1ddc28ce42a628474062b2d9968e6e31ad36acbf2f56",
+      "guide_sections": [
+        "3. IP Connectivity — 25%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "d245ea59489f28d1c04dcbc4dbcbd5ece6daa63156948249c2723d1316c4665f",
+      "guide_sections": [
+        "3. IP Connectivity — 25%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "687bb4f79af35f6d4c124fe6a248e0917de9de7f0089d66f5db9aa6966e98a9d",
+      "guide_sections": [
+        "3. IP Connectivity — 25%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "87910bf9b235196b72708416c90b9a4d094f12d8d0b68f1d68aa2d0e86a5cb7c",
+      "guide_sections": [
+        "4. IP Services — 10%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "2a37471e5a7b37771d741a62e147e4294df802ee9b576ee94423ee3489df27fa",
+      "guide_sections": [
+        "4. IP Services — 10%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "02b6523c4364c020f96acc84f398d358738d5e98f4b91b34d20b45de184f7797",
+      "guide_sections": [
+        "4. IP Services — 10%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "92429962be32d7e247fcbfa14a57eb3d8b5aec9ff168a43c837ed1921f072c05",
+      "guide_sections": [
+        "4. IP Services — 10%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "957de2b1def80bb919fbc8eb60d9ee6d4ba48ab0627d327c7908c98d8cc31c61",
+      "guide_sections": [
+        "4. IP Services — 10%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "ac4ca3e6f41d7f0a86a98a49f06e2d3a27a9a20b48c15b8344068d7e728252fc",
+      "guide_sections": [
+        "4. IP Services — 10%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "04393c7442e01382bc2afc04814243c939d8ab4bcb38dbe2eb04c8db625d5cd0",
+      "guide_sections": [
+        "4. IP Services — 10%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "ba9aab6d77a61676796f5c9d58d41a1e5813a04e753df53aa467c2c5bfe923c4",
+      "guide_sections": [
+        "4. IP Services — 10%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "90828312dc540de879a439b262b6ffdfd234ea9f80631ba759772b600c61c9de",
+      "guide_sections": [
+        "4. IP Services — 10%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "ef7f16863c9a309103ab8fa1680b6d6a5cf35bf4c03088afc4393c8aeb43f31e",
+      "guide_sections": [
+        "5. Security Fundamentals — 15%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "e8189855cd447e017cd63e51bd2e4b1959517c2edcbfaa35f68d94cf8dc0428f",
+      "guide_sections": [
+        "5. Security Fundamentals — 15%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "70890f3cddda79119df9cd8e28734d4a97f7548be7ee3721c5c74fd347fb1edc",
+      "guide_sections": [
+        "5. Security Fundamentals — 15%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "7a7f1a2e699e806fefff336afd10a0d01091dc05d253dbf78ad9975ca2e2d89c",
+      "guide_sections": [
+        "5. Security Fundamentals — 15%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "ed40d9f903ed0396aa3acf4643c6ebb9a052120ffaf97baa9831389cc2f8f398",
+      "guide_sections": [
+        "5. Security Fundamentals — 15%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "232a2efcb11ecbd9e8d4ccfd19d7e0a86a51c1b337a9ee68377584646018510a",
+      "guide_sections": [
+        "5. Security Fundamentals — 15%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "d227e2cacaa1aa0b2a02a4fb38534e098161caf893894bdb7bf72548edb16afd",
+      "guide_sections": [
+        "5. Security Fundamentals — 15%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 8,
+      "objective_sha256": "b2a170af9f32e8c04a019e4be6e604e0d5e99cd663f9e13d69ef2dbc0189e071",
+      "guide_sections": [
+        "5. Security Fundamentals — 15%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 9,
+      "objective_sha256": "7268c5a549dd58220c03fc892e43d33bb05dc624483ecaadbca3ae7fb62ad83a",
+      "guide_sections": [
+        "5. Security Fundamentals — 15%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 10,
+      "objective_sha256": "e41e24152b8ef56f3dce554bb9e277267840c3fe8617b7a51b15aa4d02b793e1",
+      "guide_sections": [
+        "5. Security Fundamentals — 15%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "e64569a09b06004b95e1da13b3c1fc03407531f5689c50cd664a26ab71cdac09",
+      "guide_sections": [
+        "6. Automation and Programmability — 10%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "c83000e7a63c3d001d3e970aaf96d22579dd1c64028f4c38d387d80dc0be68f4",
+      "guide_sections": [
+        "6. Automation and Programmability — 10%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "f1ceed607a8d6412dce856e8c3c0d7b522d48c3ea67f92856049dee530b5a829",
+      "guide_sections": [
+        "6. Automation and Programmability — 10%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "da81778f65cca613d21418d886a623ca9412c699a9b520fc0d7307844ec6f606",
+      "guide_sections": [
+        "6. Automation and Programmability — 10%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "dbb26f62a044dfcc6a2d60acbc7c8b932606a6cae3242a6b4feaf167fc5c62f8",
+      "guide_sections": [
+        "6. Automation and Programmability — 10%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "2fbca1f9ee678139dedd827392c58fcb796b620796c4402c5fbfad6a3e162da1",
+      "guide_sections": [
+        "6. Automation and Programmability — 10%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "79d3bbdf5ddaeb1d94c9be6e82fca2c83d4d6a79333bf66ce36f856c308a0c05",
+      "guide_sections": [
+        "6. Automation and Programmability — 10%",
+        "Hands-on evidence labs",
+        "Executed local routing and ACL workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "200-301",
+        "title": "Cisco Certified Network Associate",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html",
+        "guide_path": "guides/200-301-cisco-certified-network-associate.md",
+        "snapshot_path": "data\\objective-snapshots\\200-301-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\200-301-official-status.json",
+        "previous_sha256": "507885a84f0680df787cde210d2181632c549ce95c9581ad8b516143dd4d2ddc",
+        "current_sha256": "507885a84f0680df787cde210d2181632c549ce95c9581ad8b516143dd4d2ddc",
+        "previous_status_sha256": "c16d726dd24f65482ee4872f1cd2abdcf614c5a9c33951c5a366c9039047e71a",
+        "current_status_sha256": "c16d726dd24f65482ee4872f1cd2abdcf614c5a9c33951c5a366c9039047e71a",
+        "official_status": {
+          "skills_versions": [
+            "Implementing and Administering Cisco Solutions (200-301 CCNA) v1.1 is a 120-minute exam that tests a candidate's knowledge and skills related to network fundamentals, network access, IP connectivity, IP services, security fundamentals, and automation and programmability.",
+            "Languages: English, Japanese",
+            "Duration: 120 minutes",
+            "Price: $US300, or use Cisco Learning Credits"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 28,
+    "reachable": 26,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "cisco-netacad-catalog",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+      "checked_at": "2026-09-29T09:33:14.326018+00:00",
+      "health": {
+        "id": "cisco-netacad-catalog",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+        "checked_at": "2026-09-29T09:33:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Cisco Networking Academy",
+        "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "c6be3bf4fdb3ae942b7c1ad62efb24023fb474639af6cbd90c332fe6af0e08ae",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+      "sha256": "3f8847a4aafaf5035716be2ac19f43ed2a3cd435afe0eb22f2e1207ab2458b70",
+      "text_characters": 4150
+    },
+    {
+      "id": "cisco-200-301-exam",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html",
+      "checked_at": "2026-09-29T09:33:14.326604+00:00",
+      "health": {
+        "id": "cisco-200-301-exam",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html",
+        "checked_at": "2026-09-29T09:33:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Cisco named in Gartner Magic Quadrant for LAN infrastructure",
+        "canonical_url": "https://www.cisco.com/site/us/en/products/networking/2026-gartner-mq-wired-wireless-lan-report.html",
+        "duration_signals": [
+          "120 minutes"
+        ],
+        "signal_fingerprint": "652ce14e578ce3257709e9c9a11ce17a0315e917396579ec526e2b894b48b85b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html",
+      "sha256": "e53fdc1f7572e1bfb81e3079605344e944d5d34360b5fca01eb50fd9637cae26",
+      "text_characters": 2710
+    },
+    {
+      "id": "cisco-200-301-v1-1-blueprint",
+      "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf",
+      "checked_at": "2026-09-29T09:38:46.687879+00:00",
+      "health": {
+        "id": "cisco-200-301-v1-1-blueprint",
+        "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf",
+        "checked_at": "2026-09-29T09:38:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf",
+      "sha256": "da15a22dda1afb61af1a14a53264eea6b87d81e8a3036dbaa69cb1b6260bebd5",
+      "bytes": 172632,
+      "pdf_pages": 4,
+      "text_characters": 6655
+    },
+    {
+      "id": "cisco-200-301-v2-blueprint",
+      "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf",
+      "checked_at": "2026-09-29T09:38:46.764368+00:00",
+      "health": {
+        "id": "cisco-200-301-v2-blueprint",
+        "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf",
+        "checked_at": "2026-09-29T09:38:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf",
+      "sha256": "5f0bf00d2d459c1f2b52c54c9680fd7c5bb261b6842641a1f445fb0a0ca9923e",
+      "bytes": 274745,
+      "pdf_pages": 3,
+      "text_characters": 5140
+    },
+    {
+      "id": "cisco-200-301-transition",
+      "url": "https://blogs.cisco.com/learning/stay-on-track-get-certified-before-the-ccna-refresh",
+      "checked_at": "2026-09-29T09:33:15.085485+00:00",
+      "health": {
+        "id": "cisco-200-301-transition",
+        "url": "https://blogs.cisco.com/learning/stay-on-track-get-certified-before-the-ccna-refresh",
+        "checked_at": "2026-09-29T09:33:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://blogs.cisco.com/learning/stay-on-track-get-certified-before-the-ccna-refresh",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Stay on Track: Get Certified Before the CCNA Refresh",
+        "canonical_url": "https://blogs.cisco.com/learning/stay-on-track-get-certified-before-the-ccna-refresh",
+        "duration_signals": [
+          "4 min"
+        ],
+        "signal_fingerprint": "b84a36573b42be0f5f8a2f202c9d67fc0105347ff43b8f38cc4ad1d430b2f9ce",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://blogs.cisco.com/learning/stay-on-track-get-certified-before-the-ccna-refresh",
+      "sha256": "27a2503b61deabccd962d816b2d80ca5bce92f1493d6b43f9c6ad77baedefb61",
+      "text_characters": 6119
+    },
+    {
+      "id": "ccna-etherchannel-config-guide",
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/etherchannel/etherchannel-configuration-guide/etherchannels.html",
+      "checked_at": "2026-09-29T09:33:15.240247+00:00",
+      "health": {
+        "id": "ccna-etherchannel-config-guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/etherchannel/etherchannel-configuration-guide/etherchannels.html",
+        "checked_at": "2026-09-29T09:33:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/etherchannel/etherchannel-configuration-guide/etherchannels.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Etherchannel Configuration Guide - Etherchannels [Cisco IOS XE 17]",
+        "canonical_url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/etherchannel/etherchannel-configuration-guide/etherchannels.html",
+        "duration_signals": [],
+        "signal_fingerprint": "9a88907c42c9064c1fae075aeb9db5b65ba4ad77ca2fe62b2ab577713f1ea84f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/etherchannel/etherchannel-configuration-guide/etherchannels.html",
+      "sha256": "b7c6835a5ee753b50c770d92aee02e5ba6fea30aba763877fd0cfc35d8f1e7b3",
+      "text_characters": 73541
+    },
+    {
+      "id": "ccna-secure-endpoint-api-overview",
+      "url": "https://developer.cisco.com/docs/secure-endpoint/overview/",
+      "checked_at": "2026-09-29T09:33:15.656871+00:00",
+      "health": {
+        "id": "ccna-secure-endpoint-api-overview",
+        "url": "https://developer.cisco.com/docs/secure-endpoint/overview/",
+        "checked_at": "2026-09-29T09:33:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.cisco.com/docs/secure-endpoint/overview/",
+        "content_type": "text/html",
+        "page_title": "Overview - Secure Endpoint API - Cisco DevNet",
+        "canonical_url": "https://developer.cisco.com/docs/secure-endpoint/overview/",
+        "duration_signals": [],
+        "signal_fingerprint": "5a1eac0372103d31876c4db8cfb664c2c13320cc587bb9d414c6d848430caf40",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.cisco.com/docs/secure-endpoint/overview/",
+      "sha256": "a19e41804369a44c84cf92594b0a3a7c20bfa39c5812fccc02c1fb9e189ecd4e",
+      "text_characters": 3864
+    },
+    {
+      "id": "ccna-social-engineering",
+      "url": "https://www.cisco.com/site/us/en/learn/topics/security/what-is-social-engineering.html",
+      "checked_at": "2026-09-29T09:33:16.079298+00:00",
+      "health": {
+        "id": "ccna-social-engineering",
+        "url": "https://www.cisco.com/site/us/en/learn/topics/security/what-is-social-engineering.html",
+        "checked_at": "2026-09-29T09:33:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/topics/security/what-is-social-engineering.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "What Is Social Engineering in Cybersecurity?",
+        "canonical_url": "https://www.cisco.com/site/us/en/learn/topics/security/what-is-social-engineering.html",
+        "duration_signals": [],
+        "signal_fingerprint": "1c4ffb00e0ac2facf9306bdd224ae8dae9cb31eb719c110915ee9ad4e166f18b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/topics/security/what-is-social-engineering.html",
+      "sha256": "97eb342f5e28eae8bcc357fe8397049c55bd77aea4b8911f8d4da127b2452cff",
+      "text_characters": 7909
+    },
+    {
+      "id": "cisco-modeling-labs",
+      "url": "https://www.cisco.com/c/en/us/products/cloud-systems-management/modeling-labs/index.html",
+      "checked_at": "2026-09-29T09:33:16.159642+00:00",
+      "health": {
+        "id": "cisco-modeling-labs",
+        "url": "https://www.cisco.com/c/en/us/products/cloud-systems-management/modeling-labs/index.html",
+        "checked_at": "2026-09-29T09:33:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/modeling-labs/index.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Cisco Modeling Labs",
+        "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/modeling-labs/index.html",
+        "duration_signals": [
+          "65"
+        ],
+        "signal_fingerprint": "611c27000e626762e4037d9914e2a5e39ca733e04dd1b49bf158e6324a419693",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/modeling-labs/index.html",
+      "sha256": "e80626b6898889489c95f915211152d153b1061d465386dae03c3856daed545a",
+      "text_characters": 5057
+    },
+    {
+      "id": "cisco-200-301-oreilly-official",
+      "url": "https://www.oreilly.com/library/view/ccna-200-301-official/9780138221539/",
+      "checked_at": "2026-09-29T09:33:24.197996+00:00",
+      "health": {
+        "id": "cisco-200-301-oreilly-official",
+        "url": "https://www.oreilly.com/library/view/ccna-200-301-official/9780138221539/",
+        "checked_at": "2026-09-29T09:33:24+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/ccna-200-301-official/9780138221539/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "pluralsight-200-301-path",
+      "url": "https://www.pluralsight.com/paths/cisco-ccna-cisco-certified-network-associate-200-301",
+      "checked_at": "2026-09-29T09:33:24.339563+00:00",
+      "health": {
+        "id": "pluralsight-200-301-path",
+        "url": "https://www.pluralsight.com/paths/cisco-ccna-cisco-certified-network-associate-200-301",
+        "checked_at": "2026-09-29T09:33:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/cisco-ccna-cisco-certified-network-associate-200-301",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Cisco CCNA: Cisco Certified Network Associate (CCNA 200-301)",
+        "canonical_url": "https://www.pluralsight.com/paths/cisco-ccna-cisco-certified-network-associate-200-301",
+        "duration_signals": [
+          "58 Hours"
+        ],
+        "signal_fingerprint": "84d0182cac41dc97e1f6699333e89ee45ac631c7ce832f53ffa226722907194a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/cisco-ccna-cisco-certified-network-associate-200-301",
+      "sha256": "c800a0c1469396d0206f08af08725552b191ac8e50012fca6fa04fa67e122246",
+      "text_characters": 5481
+    },
+    {
+      "id": "youtube-jeremys-it-lab-ccna",
+      "url": "https://www.youtube.com/watch?v=H8W9oMNSuwo",
+      "checked_at": "2026-09-29T09:33:26.937501+00:00",
+      "health": {
+        "id": "youtube-jeremys-it-lab-ccna",
+        "url": "https://www.youtube.com/watch?v=H8W9oMNSuwo",
+        "checked_at": "2026-09-29T09:33:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=H8W9oMNSuwo",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Free CCNA | Network Devices | Day 1 | CCNA 200-301 Complete Course",
+        "canonical_url": "https://www.youtube.com/watch?v=H8W9oMNSuwo",
+        "duration_signals": [],
+        "signal_fingerprint": "5834be9078a5572d97d7487514e5c25e9a2aa976e6169a59c317057075b64b58",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=H8W9oMNSuwo",
+      "sha256": "d755cbaf6a71b7f25eb154aed4d75f9c14cccbf5c8b840bebb0cf8f992ab0331",
+      "text_characters": 229
+    },
+    {
+      "id": "udemy-neil-anderson-ccna",
+      "url": "https://www.udemy.com/course/ccna-complete/",
+      "checked_at": "2026-09-29T09:33:50.035874+00:00",
+      "health": {
+        "id": "udemy-neil-anderson-ccna",
+        "url": "https://www.udemy.com/course/ccna-complete/",
+        "checked_at": "2026-09-29T09:33:50+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/ccna-complete/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "cisco-ccna-credential-page-conflict",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html",
+      "checked_at": "2026-09-29T09:33:51.015007+00:00",
+      "health": {
+        "id": "cisco-ccna-credential-page-conflict",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html",
+        "checked_at": "2026-09-29T09:33:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "CCNA",
+        "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html",
+        "duration_signals": [
+          "120 minutes",
+          "48 hours"
+        ],
+        "signal_fingerprint": "8eabf04f2d9f82ba1e7402040e97faff50315862b2809f820666c698c03bb41e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html",
+      "sha256": "e624ed32bfc336a290c515bdc9dfd782eeaa98dc1a93d5fe7e1663bc53def2cc",
+      "text_characters": 5768
+    },
+    {
+      "id": "cisco-ccna-refresh-announcement",
+      "url": "https://blogs.cisco.com/learning/ai-updates-ccna-ccie-automation",
+      "checked_at": "2026-09-29T09:38:41.724202+00:00",
+      "health": {
+        "id": "cisco-ccna-refresh-announcement",
+        "url": "https://blogs.cisco.com/learning/ai-updates-ccna-ccie-automation",
+        "checked_at": "2026-09-29T09:38:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://blogs.cisco.com/learning/ai-updates-ccna-ccie-automation",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Real-World Skills for Real World Challenges: AI-Led Updates Across Cisco Certification Portfolio",
+        "canonical_url": "https://blogs.cisco.com/learning/ai-updates-ccna-ccie-automation",
+        "duration_signals": [
+          "4 min"
+        ],
+        "signal_fingerprint": "c91e962caba12036be1f83f4c420a4ffb55552d572c77f05935c9a9b804ce6eb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://blogs.cisco.com/learning/ai-updates-ccna-ccie-automation",
+      "sha256": "0865b577569c53fa8963dbfe27084a3c4d07cd0f273370f398a307ee8719bff7",
+      "text_characters": 7391
+    },
+    {
+      "id": "cisco-admin-distance",
+      "url": "https://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/15986-admin-distance.html",
+      "checked_at": "2026-09-29T09:38:41.724893+00:00",
+      "health": {
+        "id": "cisco-admin-distance",
+        "url": "https://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/15986-admin-distance.html",
+        "checked_at": "2026-09-29T09:38:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/15986-admin-distance.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Understand Administrative Distance",
+        "canonical_url": "https://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/15986-admin-distance.html",
+        "duration_signals": [],
+        "signal_fingerprint": "4ae1037b271cc24512944d4919e201c558a18684374f624b9a0e00dc51c0dda6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/15986-admin-distance.html",
+      "sha256": "d30a8e94f273208d4125d4dfc814e35fe5b69e418536b345dfe7db866a924a63",
+      "text_characters": 20587
+    },
+    {
+      "id": "cisco-ospf-neighbor-states",
+      "url": "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/13685-13.html",
+      "checked_at": "2026-09-29T09:38:41.725261+00:00",
+      "health": {
+        "id": "cisco-ospf-neighbor-states",
+        "url": "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/13685-13.html",
+        "checked_at": "2026-09-29T09:38:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/13685-13.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Understand OSPF Neighbor States",
+        "canonical_url": "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/13685-13.html",
+        "duration_signals": [],
+        "signal_fingerprint": "c3788ec472623886e27022d8d97bc1a27fb4cfa97baa97f50473e5c585bcc7b7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/13685-13.html",
+      "sha256": "cb2a05f557c3ad5d0a220f23af2cac2f26cab45ae3c7a8fd1395cfc2a556bd7d",
+      "text_characters": 8139
+    },
+    {
+      "id": "cisco-ospf-exstart",
+      "url": "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/13684-12.html",
+      "checked_at": "2026-09-29T09:38:42.200357+00:00",
+      "health": {
+        "id": "cisco-ospf-exstart",
+        "url": "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/13684-12.html",
+        "checked_at": "2026-09-29T09:38:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/13684-12.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Troubleshoot OSPF Neighbors Stuck in Exstart/Exchange State",
+        "canonical_url": "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/13684-12.html",
+        "duration_signals": [],
+        "signal_fingerprint": "603bda91ce9f5abd99c95e7e84ae8522c194771af6143ae3cf837ec4e3c67260",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/13684-12.html",
+      "sha256": "9ed8c850e5f2f0ae3fb87b19ee0fe02ebaa60a55b2be61d6342f78e74f802a97",
+      "text_characters": 17957
+    },
+    {
+      "id": "cisco-ip-acl-overview",
+      "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/15-mt/sec-data-acl-15-mt-book/sec-access-list-ov.html",
+      "checked_at": "2026-09-29T09:38:42.210593+00:00",
+      "health": {
+        "id": "cisco-ip-acl-overview",
+        "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/15-mt/sec-data-acl-15-mt-book/sec-access-list-ov.html",
+        "checked_at": "2026-09-29T09:38:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/15-mt/sec-data-acl-15-mt-book/sec-access-list-ov.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Security Configuration Guide: Access Control Lists, Cisco IOS Release 15M&T - IP Access List Overview [Support]",
+        "canonical_url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/15-mt/sec-data-acl-15-mt-book/sec-access-list-ov.html",
+        "duration_signals": [
+          "5 minutes"
+        ],
+        "signal_fingerprint": "a5d889138f934334f53a68d29c6de36f2e33dbede2166d37d439738f71ddf047",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/15-mt/sec-data-acl-15-mt-book/sec-access-list-ov.html",
+      "sha256": "0de6d16792b4281d75e974991d00bbddf133c93dc8d8a1638fb26c4389ddb2d0",
+      "text_characters": 37455
+    },
+    {
+      "id": "cisco-ip-acl-create",
+      "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/15-sy/sec-data-acl-15-sy-book/sec-create-ip-apply.html",
+      "checked_at": "2026-09-29T09:38:42.538995+00:00",
+      "health": {
+        "id": "cisco-ip-acl-create",
+        "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/15-sy/sec-data-acl-15-sy-book/sec-create-ip-apply.html",
+        "checked_at": "2026-09-29T09:38:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/15-sy/sec-data-acl-15-sy-book/sec-create-ip-apply.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Security Configuration Guide: Access Control Lists, Cisco IOS Release 15SY - Creating an IP Access List and Applying It to an Interface [Support]",
+        "canonical_url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/15-sy/sec-data-acl-15-sy-book/sec-create-ip-apply.html",
+        "duration_signals": [],
+        "signal_fingerprint": "aad8123e92e116c7df6ba3e2340a2430f0fe15d048db49f3745457504c1013db",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/15-sy/sec-data-acl-15-sy-book/sec-create-ip-apply.html",
+      "sha256": "b5b14b54273e587ed5714621a6fc78341e4d2f1797633929cbd6e6c6f16c6ec0",
+      "text_characters": 44167
+    },
+    {
+      "id": "cisco-ccna-book-library",
+      "url": "https://www.ciscopress.com/store/ccna-200-301-official-cert-guide-library-9780138221393",
+      "checked_at": "2026-09-29T09:38:42.708225+00:00",
+      "health": {
+        "id": "cisco-ccna-book-library",
+        "url": "https://www.ciscopress.com/store/ccna-200-301-official-cert-guide-library-9780138221393",
+        "checked_at": "2026-09-29T09:38:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.ciscopress.com/store/ccna-200-301-official-cert-guide-library-9780138221393",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CCNA 200-301 Official Cert Guide Library, 2nd Edition | Cisco Press",
+        "canonical_url": "https://www.ciscopress.com/store/ccna-200-301-official-cert-guide-library-9780138221393",
+        "duration_signals": [
+          "24 hours",
+          "8 hours"
+        ],
+        "signal_fingerprint": "2c34a0eb24f197c462cc042ba2e0c88499c954e5d6c4d54a9055d60d8fe042cf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.ciscopress.com/store/ccna-200-301-official-cert-guide-library-9780138221393",
+      "sha256": "cdd6a429af5bc64a6c42e52e6e82c3e3de6f52b36ca895829240b8d05f8169a1",
+      "text_characters": 13929
+    },
+    {
+      "id": "cisco-recertification",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+      "checked_at": "2026-09-29T09:38:43.018561+00:00",
+      "health": {
+        "id": "cisco-recertification",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+        "checked_at": "2026-09-29T09:38:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Recertification Policy",
+        "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+        "duration_signals": [
+          "101",
+          "48 hours"
+        ],
+        "signal_fingerprint": "9fb89f31fd657cdbb10c6e5e66c233c2d4ba480a35bca373edae6ad05c7f8808",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+      "sha256": "9213dbe497b1860298f03920b2d9e55b00aa900b9e96d6b76cddc900f89ca891",
+      "text_characters": 7250
+    },
+    {
+      "id": "cisco-exam-pricing",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/index.html",
+      "checked_at": "2026-09-29T09:39:38.109441+00:00",
+      "health": {
+        "id": "cisco-exam-pricing",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/index.html",
+        "checked_at": "2026-09-29T09:39:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/index.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Cisco Certification Exams",
+        "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/index.html",
+        "duration_signals": [
+          "2 hours",
+          "24 hours",
+          "48 hours",
+          "8 hours",
+          "90 minutes"
+        ],
+        "signal_fingerprint": "605cd68955f7dec9df0c09ce424f51ad425d2bca99da95fdfcbe72ff33e1e8ab",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/index.html",
+      "sha256": "6b1243cc0b00fdfbdb5ba646cbdeec1f8189be688f7c52aa37633ef24630bddc",
+      "text_characters": 11256
+    },
+    {
+      "id": "cisco-dai-1718",
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-18/configuration_guide/sec/b_1718_sec_9300_cg/configuring_dynamic_arp_inspection.html",
+      "checked_at": "2026-09-29T09:39:38.110152+00:00",
+      "health": {
+        "id": "cisco-dai-1718",
+        "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-18/configuration_guide/sec/b_1718_sec_9300_cg/configuring_dynamic_arp_inspection.html",
+        "checked_at": "2026-09-29T09:39:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-18/configuration_guide/sec/b_1718_sec_9300_cg/configuring_dynamic_arp_inspection.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Security Configuration Guide, Cisco IOS XE 17.18.x (Catalyst 9300 Switches) - Configuring Dynamic ARP Inspection [Cisco Catalyst 9300 Series Switches]",
+        "canonical_url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-18/configuration_guide/sec/b_1718_sec_9300_cg/configuring_dynamic_arp_inspection.html",
+        "duration_signals": [],
+        "signal_fingerprint": "2c2a4f9de2679f323e532f64c79f14bd95ffa38955a2c745b6cba4ab08514e1a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-18/configuration_guide/sec/b_1718_sec_9300_cg/configuring_dynamic_arp_inspection.html",
+      "sha256": "48c5ece5348b1e3ea3f3f56cc8f25d70f4591a2978842a408cd3d2c578c42885",
+      "text_characters": 35277
+    },
+    {
+      "id": "cisco-stp-guide",
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/stp/stp-configuration-guide/m-stp.html",
+      "checked_at": "2026-09-29T09:40:55.452469+00:00",
+      "health": {
+        "id": "cisco-stp-guide",
+        "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/stp/stp-configuration-guide/m-stp.html",
+        "checked_at": "2026-09-29T09:40:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/stp/stp-configuration-guide/m-stp.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "STP Configuration Guide - Spanning Tree Protocol [Cisco IOS XE 17]",
+        "canonical_url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/stp/stp-configuration-guide/m-stp.html",
+        "duration_signals": [
+          "5 minutes"
+        ],
+        "signal_fingerprint": "8cd9edf60faa2df1f327e5fc8075a55eb680b65f3ff44c980dc498c681b8d139",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/stp/stp-configuration-guide/m-stp.html",
+      "sha256": "7f2b903c3bc4e17934ba4b64bf1cd3618cce713a29aed7a9ec76b7aaa0877cde",
+      "text_characters": 54611
+    },
+    {
+      "id": "rfc-4291",
+      "url": "https://www.rfc-editor.org/rfc/rfc4291.html",
+      "checked_at": "2026-09-29T09:52:07.225355+00:00",
+      "health": {
+        "id": "rfc-4291",
+        "url": "https://www.rfc-editor.org/rfc/rfc4291.html",
+        "checked_at": "2026-09-29T09:52:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc4291.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc4291.html",
+        "duration_signals": [],
+        "signal_fingerprint": "73c47085bb780b5a2d8f9ea7ae018b23e3bc40553f9c729aa3a5d415466f7990",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc4291.html",
+      "sha256": "19109aac12dd88a72ee6388f79c57bac9c6014930d3e314ad2f5957783fcf099",
+      "text_characters": 44588
+    },
+    {
+      "id": "cisco-rstp-states",
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/92x/Layer-2_switching/configuration/guide/b-cisco-nexus-9000-nx-os-layer-2-switching-configuration-guide-92x/b-cisco-nexus-9000-nx-os-layer-2-switching-configuration-guide-92x_chapter_01001.html",
+      "checked_at": "2026-09-29T09:52:07.225911+00:00",
+      "health": {
+        "id": "cisco-rstp-states",
+        "url": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/92x/Layer-2_switching/configuration/guide/b-cisco-nexus-9000-nx-os-layer-2-switching-configuration-guide-92x/b-cisco-nexus-9000-nx-os-layer-2-switching-configuration-guide-92x_chapter_01001.html",
+        "checked_at": "2026-09-29T09:52:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/92x/Layer-2_switching/configuration/guide/b-cisco-nexus-9000-nx-os-layer-2-switching-configuration-guide-92x/b-cisco-nexus-9000-nx-os-layer-2-switching-configuration-guide-92x_chapter_01001.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Cisco Nexus 9000 Series NX-OS Layer 2 Switching Configuration Guide, Release 9.2(x) - Configuring Rapid PVST+ Using Cisco NX-OS [Cisco Nexus 9000 Series Switches]",
+        "canonical_url": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/92x/Layer-2_switching/configuration/guide/b-cisco-nexus-9000-nx-os-layer-2-switching-configuration-guide-92x/b-cisco-nexus-9000-nx-os-layer-2-switching-configuration-guide-92x_chapter_01001.html",
+        "duration_signals": [],
+        "signal_fingerprint": "bf90404d3757e6b1a5bbc0775a5a9cbefcfab7e2e697fbbb249cd65bd4962c37",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/92x/Layer-2_switching/configuration/guide/b-cisco-nexus-9000-nx-os-layer-2-switching-configuration-guide-92x/b-cisco-nexus-9000-nx-os-layer-2-switching-configuration-guide-92x_chapter_01001.html",
+      "sha256": "60842f50c66b0376c3a2050d4cde6f25e345ee11ffdd3c14f4c71cd370bea335",
+      "text_characters": 67259
+    },
+    {
+      "id": "cisco-rstp-explanation",
+      "url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/spanning-tree-protocol/24062-146.html",
+      "checked_at": "2026-09-29T09:53:03.605387+00:00",
+      "health": {
+        "id": "cisco-rstp-explanation",
+        "url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/spanning-tree-protocol/24062-146.html",
+        "checked_at": "2026-09-29T09:53:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/spanning-tree-protocol/24062-146.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Understand Rapid Spanning Tree Protocol (802.1w)",
+        "canonical_url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/spanning-tree-protocol/24062-146.html",
+        "duration_signals": [],
+        "signal_fingerprint": "9774fbabdd49dbf5ec441d3d0ef512a8e9176e5dc149d39a80fce839c569a180",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/spanning-tree-protocol/24062-146.html",
+      "sha256": "6fdfdbe975d63b4f9167b7c3fa4999220fffa27c39c66d15d9db0776febaa2b9",
+      "text_characters": 27705
+    }
+  ],
+  "added_source_ids": [
+    "cisco-ccna-refresh-announcement",
+    "cisco-admin-distance",
+    "cisco-ospf-neighbor-states",
+    "cisco-ospf-exstart",
+    "cisco-ip-acl-overview",
+    "cisco-ip-acl-create",
+    "cisco-ccna-book-library",
+    "cisco-exam-pricing",
+    "cisco-dai-1718",
+    "cisco-stp-guide",
+    "rfc-4291",
+    "cisco-rstp-states",
+    "cisco-rstp-explanation"
+  ],
+  "findings": [
+    {
+      "id": "200301-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "DHCP moves into troubleshooting rather than leaving the future scope",
+      "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-301"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Objective1.7 names client/server/relay troubleshooting;5.4/5.6retainSNMP/syslog.",
+      "recommendation": "Correct transition callout and preserve separate29objective map.",
+      "disposition": "applied",
+      "source_id": "cisco-200-301-v2-blueprint",
+      "resolution": "Correct transition callout and preserve separate29objective map."
+    },
+    {
+      "id": "200301-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "The exam landing page is not the detailed scope",
+      "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-301"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Actual4pagePDFhas53numberedobjectives plusbullets, includingL2/L3LACP andSTPguards.",
+      "recommendation": "Mapallcurrentobjectives andrecordPDFreceipts separatelyfromunchangedHTMLmonitor.",
+      "disposition": "applied",
+      "source_id": "cisco-200-301-v1-1-blueprint",
+      "resolution": "Mapallcurrentobjectives andrecordPDFreceipts separatelyfromunchangedHTMLmonitor."
+    },
+    {
+      "id": "200301-deep-3",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Official logistics still disagree",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-301"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Credentialpage400USD/English;canonical300USD/EnglishJapanese;centralpricing300.",
+      "recommendation": "Retain dateddiscrepancy andactualcheckoutverification,notinventreconciliation.",
+      "disposition": "applied",
+      "source_id": "cisco-ccna-credential-page-conflict",
+      "resolution": "Retain dateddiscrepancy andactualcheckoutverification,notinventreconciliation."
+    },
+    {
+      "id": "200301-deep-4",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Future blueprint availability is different from exam availability",
+      "url": "https://blogs.cisco.com/learning/ai-updates-ccna-ccie-automation",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-301"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "May20topics released;Feb3,2027exam launch;JulyarticlelastcurrentFeb2.",
+      "recommendation": "Keep datedversionboundary andfuturetasks separatelylabeled.",
+      "disposition": "applied",
+      "source_id": "cisco-ccna-refresh-announcement",
+      "resolution": "Keep datedversionboundary andfuturetasks separatelylabeled."
+    },
+    {
+      "id": "200301-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Route installation and packet forwarding are different stages",
+      "url": "https://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/15986-admin-distance.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-301"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Metrics selectprocesscandidates;ADcomparessameprefixsources;forwardinguseslongestinstalledprefix.",
+      "recommendation": "Teachstages andexecute more-specific/ECMP/withdrawal/restorecounterexamples.",
+      "disposition": "applied",
+      "source_id": "cisco-admin-distance",
+      "resolution": "Teachstages andexecute more-specific/ECMP/withdrawal/restorecounterexamples."
+    },
+    {
+      "id": "200301-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A floating static is not an application health check",
+      "url": "https://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/15986-admin-distance.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-301"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Backupneedseligible nexthop andpreferredsameprefixroute withdrawal;AD255notinstalled.",
+      "recommendation": "Stateeligibilityboundary andtestprovidedeligible/unusablecandidateswithoutclaimingprobes.",
+      "disposition": "applied",
+      "source_id": "cisco-admin-distance",
+      "resolution": "Stateeligibilityboundary andtestprovidedeligible/unusablecandidateswithoutclaimingprobes."
+    },
+    {
+      "id": "200301-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Member loss does not guarantee a working aggregate",
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/etherchannel/etherchannel-configuration-guide/etherchannels.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-301"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Minimumlinksthresholdcanmakelogicalchannelinactive.",
+      "recommendation": "Conditionfailureprediction andlabexpectedresult onmin-links.",
+      "disposition": "applied",
+      "source_id": "ccna-etherchannel-config-guide",
+      "resolution": "Conditionfailureprediction andlabexpectedresult onmin-links."
+    },
+    {
+      "id": "200301-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A stable 2-WAY relationship can be healthy",
+      "url": "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/13685-13.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-301"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "BroadcastDROTHERpeerscanremain2WAYwithFULLtowardDRBDR.",
+      "recommendation": "DistinguishnormalstatefrompersistentDBDexchangetrouble.",
+      "disposition": "applied",
+      "source_id": "cisco-ospf-neighbor-states",
+      "resolution": "DistinguishnormalstatefrompersistentDBDexchangetrouble."
+    },
+    {
+      "id": "200301-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "TCP established flag matching does not track sessions",
+      "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/15-sy/sec-data-acl-15-sy-book/sec-create-ip-apply.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-301"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "MatchisACKorRST,notproofprevioussession.",
+      "recommendation": "Executeforged-fixtureACK/nohistorycounterexample andindependentreply-directiondenial.",
+      "disposition": "applied",
+      "source_id": "cisco-ip-acl-create",
+      "resolution": "Executeforged-fixtureACK/nohistorycounterexample andindependentreply-directiondenial."
+    },
+    {
+      "id": "200301-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A wildcard is not always a contiguous inverse subnet mask",
+      "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/15-mt/sec-data-acl-15-mt-book/sec-access-list-ov.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-301"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Zerobitscompare,onesignore;noncontiguousbitsallowed.",
+      "recommendation": "Addbitwisematchingandexecutepositive/negative/noncontiguouscases.",
+      "disposition": "applied",
+      "source_id": "cisco-ip-acl-overview",
+      "resolution": "Addbitwisematchingandexecutepositive/negative/noncontiguouscases."
+    },
+    {
+      "id": "200301-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Static hosts and broad interface trust need separate treatment",
+      "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-18/configuration_guide/sec/b_1718_sec_9300_cg/configuring_dynamic_arp_inspection.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-301"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "StaticARPACLsserve nonDHCPbindings;trustedportsbypassvalidation.",
+      "recommendation": "Addlegitimate-static/invalidbindinglabcaseswithouttrust-allworkaround.",
+      "disposition": "applied",
+      "source_id": "cisco-dai-1718",
+      "resolution": "Addlegitimate-static/invalidbindinglabcaseswithouttrust-allworkaround."
+    },
+    {
+      "id": "200301-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Port role and state use different meanings and display vocabularies",
+      "url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/spanning-tree-protocol/24062-146.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-301"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "GenericRSTPthree-state modeldiffersfromplatformblocking/disabledlabels;learningdoesnotforwarddata.",
+      "recommendation": "Addlearningstateandrole distinction,explainNXOSlabelboundary.",
+      "disposition": "applied",
+      "source_id": "cisco-rstp-explanation",
+      "resolution": "Addlearningstateandrole distinction,explainNXOSlabelboundary."
+    },
+    {
+      "id": "200301-deep-13",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "One successful API response need not contain complete inventory",
+      "url": "https://developer.cisco.com/docs/secure-endpoint/overview/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-301"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Overviewdocumentspagination,JSONenvelope and400/401/429errors.",
+      "recommendation": "ExtendAPIevidenceplanningwithoutauthenticatingorclaimingendpointuniformity.",
+      "disposition": "applied",
+      "source_id": "ccna-secure-endpoint-api-overview",
+      "resolution": "ExtendAPIevidenceplanningwithoutauthenticatingorclaimingendpointuniformity."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "cisco-ccna-refresh-announcement",
+      "publisher": "Cisco",
+      "author": "Ryan Rose",
+      "published_on": "2026-05-20",
+      "disposition": "accepted-with-limits",
+      "value": "CCNAfuturepracticaldepthandFeb3,2027launch.",
+      "limits": "CCNA-specific facts only; otherportfoliochanges/marketingnotexamrequirements."
+    },
+    {
+      "source_id": "cisco-200-301-transition",
+      "publisher": "Cisco",
+      "author": "Ryan Rose",
+      "published_on": "2026-07-01",
+      "disposition": "accepted-with-limits",
+      "value": "LastcurrentFeb2andnewFeb3,2027corroboration.",
+      "limits": "Expiredgiveawaynotpromoted;providerpass/careerclaimsnotvalidated."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 48,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "82ecc55d5ae301769ac1cc10b4fbc27f4c1a1e6934ba1644d176fdf708eda2d2",
+      "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+      "execution_stdout": "{\"installed_prefixes\": 6, \"selected\": [\"ospf-a\", \"ospf-b\"], \"backup\": [\"floating\"], \"denied\": [\"deny\", \"blocked-host\"]}\n48 local checks passed",
+      "results": {
+        "installed_prefixes": 6,
+        "selected": [
+          "ospf-a",
+          "ospf-b"
+        ],
+        "backup": [
+          "floating"
+        ],
+        "denied": [
+          "deny",
+          "blocked-host"
+        ]
+      },
+      "separate_worked_example_checks": 4,
+      "execution_boundary": "Actual standard-library synthetic RIB installation/forwarding/ECMP candidate retention,withdrawal/restoration,IPv4/IPv6 separation,ACL ordered matching/noncontiguous wildcards/reverse tuple/ACK-RST flag limitation andJSON roundtrip. No sockets,network tools,device,simulator,OSPF process,authenticatedAPI,credentials,wireless or infrastructure lab.",
+      "model_limits": "One process and comparable metric class per source; mixedAD andcross-source equalAD rejected. Eligibility supplied,not probed; no recursion/SPF/route-types/convergence/PBR/ECMPhashing. SelectedparsedIPv4fields only; noIOSparser/fragmentation/NAT/interface-policy/sessiontracking or comprehensiveconfigurationvalidation."
+    }
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "Eight device/network/simulator/wireless/AAA/API/automation/restore labs remain proposed; independent human review pending. No live IOS/IOSXE,PacketTracer,CML,OSPF or authenticated API execution.",
+    "48 local checks include structural/input-rejection assertions on synthetic fixtures. Four separate worked-example checks validate subnet/range/hostcount andEUI64 arithmetic. No network activity,credentials,device configuration or packet replay.",
+    "RIB model requires one process/comparablemetricclass per source,preprovidedeligibility; rejects mixedAD/cross-sourceADties. No recursive resolution,SPF/route-types,convergence,PBR,tracking or ECMP hashing.",
+    "ACL model uses trusted rules and selectedparsedIPv4fields; no fullconfigvalidation,IOSsyntax,packetparse,fragments,NAT,interface-directionlogic or sessiontracking.",
+    "Canonical HTML monitor is unchanged but does not cover the completePDFscope/transitionnotice. Both actualPDFs read fully; technicaldocumentation selectivelyread asindividualnotesrecord. No binaryhistorychange claim from firstfreshreceipts.",
+    "Cisco canonical andcredential pages still disagree onprice/languages. No schedulingcheckout verification or invented reconciliation.",
+    "OReilly andUdemy403;YouTubeonlyshell;no currenttotals/paidcontent verified there. NetAcadlandingpage not completeCCNAcurriculumtotal. CMLbeta/publicfeatureclaims not labcompatibility evidence.",
+    "No runtime installation,accountauthentication,service changes,notification or reservedfiveGitHubguide edits."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Actual standard-library synthetic RIB installation/forwarding/ECMP candidate retention,withdrawal/restoration,IPv4/IPv6 separation,ACL ordered matching/noncontiguous wildcards/reverse tuple/ACK-RST flag limitation andJSON roundtrip. No sockets,network tools,device,simulator,OSPF process,authenticatedAPI,credentials,wireless or infrastructure lab.",
+    "passed": 48,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "82ecc55d5ae301769ac1cc10b4fbc27f4c1a1e6934ba1644d176fdf708eda2d2",
+    "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "execution_stdout": "{\"installed_prefixes\": 6, \"selected\": [\"ospf-a\", \"ospf-b\"], \"backup\": [\"floating\"], \"denied\": [\"deny\", \"blocked-host\"]}\n48 local checks passed",
+    "results": {
+      "installed_prefixes": 6,
+      "selected": [
+        "ospf-a",
+        "ospf-b"
+      ],
+      "backup": [
+        "floating"
+      ],
+      "denied": [
+        "deny",
+        "blocked-host"
+      ]
+    },
+    "separate_worked_example_checks": 4,
+    "model_limits": "One process and comparable metric class per source; mixedAD andcross-source equalAD rejected. Eligibility supplied,not probed; no recursion/SPF/route-types/convergence/PBR/ECMPhashing. SelectedparsedIPv4fields only; noIOSparser/fragmentation/NAT/interface-policy/sessiontracking or comprehensiveconfigurationvalidation.",
+    "learning_catalog_consistency": "passed"
+  },
+  "actual_pdf_receipts": [
+    {
+      "id": "cisco-200-301-v1-1-blueprint",
+      "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf",
+      "checked_at": "2026-09-29T09:38:46.687879+00:00",
+      "health": {
+        "id": "cisco-200-301-v1-1-blueprint",
+        "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf",
+        "checked_at": "2026-09-29T09:38:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf",
+      "sha256": "da15a22dda1afb61af1a14a53264eea6b87d81e8a3036dbaa69cb1b6260bebd5",
+      "bytes": 172632,
+      "pdf_pages": 4,
+      "text_characters": 6655
+    },
+    {
+      "id": "cisco-200-301-v2-blueprint",
+      "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf",
+      "checked_at": "2026-09-29T09:38:46.764368+00:00",
+      "health": {
+        "id": "cisco-200-301-v2-blueprint",
+        "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf",
+        "checked_at": "2026-09-29T09:38:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf",
+      "sha256": "5f0bf00d2d459c1f2b52c54c9680fd7c5bb261b6842641a1f445fb0a0ca9923e",
+      "bytes": 274745,
+      "pdf_pages": 3,
+      "text_characters": 5140
+    }
+  ],
+  "post_review_objective_and_lifecycle_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "200-301",
+        "title": "Cisco Certified Network Associate",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html",
+        "guide_path": "guides/200-301-cisco-certified-network-associate.md",
+        "snapshot_path": "data\\objective-snapshots\\200-301-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\200-301-official-status.json",
+        "previous_sha256": "507885a84f0680df787cde210d2181632c549ce95c9581ad8b516143dd4d2ddc",
+        "current_sha256": "507885a84f0680df787cde210d2181632c549ce95c9581ad8b516143dd4d2ddc",
+        "previous_status_sha256": "c16d726dd24f65482ee4872f1cd2abdcf614c5a9c33951c5a366c9039047e71a",
+        "current_status_sha256": "c16d726dd24f65482ee4872f1cd2abdcf614c5a9c33951c5a366c9039047e71a",
+        "official_status": {
+          "skills_versions": [
+            "Implementing and Administering Cisco Solutions (200-301 CCNA) v1.1 is a 120-minute exam that tests a candidate's knowledge and skills related to network fundamentals, network access, IP connectivity, IP services, security fundamentals, and automation and programmability.",
+            "Languages: English, Japanese",
+            "Duration: 120 minutes",
+            "Price: $US300, or use Cisco Learning Credits"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "numbered_current_objective_counts_by_domain": [
+    13,
+    9,
+    5,
+    9,
+    10,
+    7
+  ],
+  "current_objective_groups": [
+    {
+      "title": "Network Fundamentals — 20%",
+      "objectives": [
+        "1.1 Explain the role and function of network components 1.1.a Routers 1.1.b Layer 2 and Layer 3 switches 1.1.c Next-generation firewalls and IPS 1.1.d Access points 1.1.e Controllers 1.1.f Endpoints 1.1.g Servers 1.1.h PoE",
+        "1.2 Describe characteristics of network topology architectures 1.2.a Two-tier 1.2.b Three-tier 1.2.c Spine-leaf 1.2.d WAN 1.2.e Small office/home office (SOHO) 1.2.f On-premises and cloud",
+        "1.3 Compare physical interface and cabling types 1.3.a Single-mode fiber, multimode fiber, copper 1.3.b Connections (Ethernet shared media and point-to-point)",
+        "1.4 Identify interface and cable issues (collisions, errors, mismatch duplex, and/or speed)",
+        "1.5 Compare TCP to UDP",
+        "1.6 Configure and verify IPv4 addressing and subnetting",
+        "1.7 Describe private IPv4 addressing",
+        "1.8 Configure and verify IPv6 addressing and prefix",
+        "1.9 Describe IPv6 address types 1.9.a Unicast (global, unique local, and link local) 1.9.b Anycast 1.9.c Multicast 1.9.d Modified EUI 64",
+        "1.10 Verify IP parameters for Client OS (Windows, Mac OS, Linux)",
+        "1.11 Describe wireless principles 1.11.a Nonoverlapping Wi-Fi channels 1.11.b SSID 1.11.c RF 1.11.d Encryption",
+        "1.12 Explain virtualization fundamentals (server virtualization, containers, and VRFs)",
+        "1.13 Describe switching concepts 1.13.a MAC learning and aging 1.13.b Frame switching 1.13.c Frame flooding 1.13.d MAC address table"
+      ]
+    },
+    {
+      "title": "Network Access — 20%",
+      "objectives": [
+        "2.1 Configure and verify VLANs (normal range) spanning multiple switches 2.1.a Access ports (data and voice) 2.1.b Default VLAN 2.1.c InterVLAN connectivity",
+        "2.2 Configure and verify interswitch connectivity 2.2.a Trunk ports 2.2.b 802.1Q 2.2.c Native VLAN",
+        "2.3 Configure and verify Layer 2 discovery protocols (Cisco Discovery Protocol and LLDP)",
+        "2.4 Configure and verify (Layer 2/Layer 3) EtherChannel (LACP)",
+        "2.5 Interpret basic operations of Rapid PVST+ Spanning Tree Protocol 2.5.a Root port, root bridge (primary/secondary), and other port names 2.5.b Port states and roles 2.5.c PortFast 2.5.d Root guard, loop guard, BPDU filter, and BPDU guard",
+        "2.6 Describe Cisco Wireless Architectures and AP modes",
+        "2.7 Describe physical infrastructure connections of WLAN components (AP, WLC, access/trunk ports, and LAG)",
+        "2.8 Describe network device management access (Telnet, SSH, HTTP, HTTPS, console, TACACS+/RADIUS, and cloud managed)",
+        "2.9 Interpret the wireless LAN GUI configuration for client connectivity, such as WLAN creation, security settings, QoS profiles, and advanced settings"
+      ]
+    },
+    {
+      "title": "IP Connectivity — 25%",
+      "objectives": [
+        "3.1 Interpret the components of routing table 3.1.a Routing protocol code 3.1.b Prefix 3.1.c Network mask 3.1.d Next hop 3.1.e Administrative distance 3.1.f Metric 3.1.g Gateway of last resort",
+        "3.2 Determine how a router makes a forwarding decision by default 3.2.a Longest prefix match 3.2.b Administrative distance 3.2.c Routing protocol metric",
+        "3.3 Configure and verify IPv4 and IPv6 static routing 3.3.a Default route 3.3.b Network route 3.3.c Host route 3.3.d Floating static",
+        "3.4 Configure and verify single area OSPFv2 3.4.a Neighbor adjacencies 3.4.b Point-to-point 3.4.c Broadcast (DR/BDR selection) 3.4.d Router ID",
+        "3.5 Describe the purpose, functions, and concepts of first hop redundancy protocols"
+      ]
+    },
+    {
+      "title": "IP Services — 10%",
+      "objectives": [
+        "4.1 Configure and verify inside source NAT using static and pools",
+        "4.2 Configure and verify NTP operating in a client and server mode",
+        "4.3 Explain the role of DHCP and DNS within the network",
+        "4.4 Explain the function of SNMP in network operations",
+        "4.5 Describe the use of syslog features, including facilities and severity levels",
+        "4.6 Configure and verify DHCP client and relay",
+        "4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, and shaping",
+        "4.8 Configure network devices for remote access using SSH",
+        "4.9 Describe the capabilities and functions of TFTP/FTP in the network"
+      ]
+    },
+    {
+      "title": "Security Fundamentals — 15%",
+      "objectives": [
+        "5.1 Define key security concepts (threats, vulnerabilities, exploits, and mitigation techniques)",
+        "5.2 Describe security program elements (user awareness, training, and physical access control)",
+        "5.3 Configure and verify device access control using local passwords",
+        "5.4 Describe security password policy elements, such as management, complexity, and password alternatives (multifactor authentication, certificates, and biometrics)",
+        "5.5 Describe IPsec remote access and site-to-site VPNs",
+        "5.6 Configure and verify access control lists",
+        "5.7 Configure and verify Layer 2 security features (DHCP snooping, dynamic ARP inspection, and port security)",
+        "5.8 Compare authentication, authorization, and accounting concepts",
+        "5.9 Describe wireless security protocols (WPA, WPA2, and WPA3)",
+        "5.10 Configure and verify WLAN within the GUI using WPA2 PSK"
+      ]
+    },
+    {
+      "title": "Automation and Programmability — 10%",
+      "objectives": [
+        "6.1 Explain how automation impacts network management",
+        "6.2 Compare traditional networks with controller-based networking",
+        "6.3 Describe controller-based, software defined architecture (overlay, underlay, and fabric) 6.3.a Separation of control plane and data plane 6.3.b Northbound and Southbound APIs",
+        "6.4 Explain AI (generative and predictive) and machine learning in network operations",
+        "6.5 Describe characteristics of REST-based APIs (authentication types, CRUD, HTTP verbs, and data encoding)",
+        "6.6 Recognize the capabilities of configuration management mechanisms such as Ansible and Terraform",
+        "6.7 Recognize components of JSON-encoded data"
+      ]
+    }
+  ],
+  "scheduled_objective_groups": [
+    {
+      "title": "Network Infrastructure and Connectivity — 25%",
+      "objectives": [
+        "1.1 Diagnose interface and cable (copper and fiber) issues such as collisions, errors, mismatched duplex, speed, distance, interface, signal levels, pin out, and cable types",
+        "1.2 Describe the role and function of hypervisors, virtual machines, and containers",
+        "1.3 Troubleshoot IPv4 address configuration, assignment, and subnetting (public and private)",
+        "1.4 Troubleshoot IPv6 address configuration, assignment, and prefix sizing (unicast and modified EUI 64)",
+        "1.5 Describe wireless principles 1.5.a Band and channel selection 1.5.b RF characteristics 1.5.c Security protocols 1.5.d Cause of interference",
+        "1.6 Troubleshoot wired and wireless client connectivity (IP configuration, network reachability, and wireless security parameters on Windows, MacOS, and Linux)",
+        "1.7 Troubleshoot DHCPv4 client, server, and relay on IOS devices"
+      ]
+    },
+    {
+      "title": "Switching and Network Access — 25%",
+      "objectives": [
+        "2.1 Configure network infrastructure connectivity (switch-to-switch and switch-to-router) 2.1.a Layer 2/Layer 3 physical interfaces 2.1.b Layer 2 802.1Q trunk interfaces 2.1.c Layer 2/Layer 3 LACP port-channel/EtherChannel 2.1.d Switch virtual interface (SVI)",
+        "2.2 Configure Layer 2 switch port attributes for edge-host connectivity (VLAN, PoE, port channel, and LACP) 2.2.a Desktop, printer, and IOT appliances 2.2.b Wireless access points (standalone and controller based) 2.2.c Voice over IP phone 2.2.d Virtualized hosts 2.2.e Network appliances",
+        "2.3 Validate the accuracy of network documentation using CDP and LLDP",
+        "2.4 Troubleshoot basic Layer 2/Layer 3 connectivity and device operations using show commands (including show logs), ping, extended ping, trace route, and packet capture output",
+        "2.5 Configure operations of the Rapid Per VLAN Spanning Tree Protocol (Rapid PVST+) 2.5.a Root port, root bridge (primary/secondary), and other port names 2.5.b Port states and roles 2.5.c PortFast 2.5.d Root guard, loop guard, and BPDU guard"
+      ]
+    },
+    {
+      "title": "IP Routing — 20%",
+      "objectives": [
+        "3.1 Interpret a routing table to identify the next hop for a packet (routing protocol, prefix/mask, administrative distance, metric, and default route)",
+        "3.2 Troubleshoot IPv4 and IPv6 static routing 3.2.a Default route 3.2.b Network route 3.2.c Host route 3.2.d Floating static",
+        "3.3 Configure single area OSPFv2 for IPv4 and OSPFv3 for IPv6 3.3.a Neighbor adjacencies (excluding authentication) 3.3.b Point-to-point 3.3.c Broadcast (DR/BDR selection) 3.3.d Router ID",
+        "3.4 Interpret the operational status of First Hop Redundancy Protocols (HSRP and VRRP)"
+      ]
+    },
+    {
+      "title": "Network Services and Security — 20%",
+      "objectives": [
+        "4.1 Configure network devices with local usernames and as an AAA client (TACACS+ and RADIUS) for management",
+        "4.2 Manage device configuration and software files using secure file transfer operations with SFTP/SCP",
+        "4.3 Configure NAT/PAT on IOS XE routers",
+        "4.4 Diagnose issues with DNS records (A, AAAA, CNAME, MX, NS, and PTR) to support host, web application, and mail server access by name",
+        "4.5 Describe IPsec remote access and site-to-site VPNs (protocols and transport modes)",
+        "4.6 Configure IPv4 access control lists (standard, extended, numbered, and named ACLs)",
+        "4.7 Configure Layer 2 security features 4.7.a DHCP snooping 4.7.b Dynamic ARP inspection 4.7.c Storm control 4.7.d RA guard 4.7.e Port security"
+      ]
+    },
+    {
+      "title": "AI, and Network Operations and Management — 10%",
+      "objectives": [
+        "5.1 Describe the role of agentic AI in network operations",
+        "5.2 Select a prompt to send to a generative AI system to support network operations considering prompt components such as data classification, output format, persona, and instructions",
+        "5.3 Describe network management approaches (device-based, cloud-based, controller- based, automation-based, and infrastructure as code)",
+        "5.4 Describe the function of SNMP in network operations",
+        "5.5 Use configuration management mechanisms such as Ansible to execute commands",
+        "5.6 Interpret syslog message content, severity levels, and facilities"
+      ]
+    }
+  ],
+  "scheduled_mapping": [
+    {
+      "domain": "Network Infrastructure and Connectivity — 25%",
+      "objectives": [
+        "1.1 Diagnose interface and cable (copper and fiber) issues such as collisions, errors, mismatched duplex, speed, distance, interface, signal levels, pin out, and cable types",
+        "1.2 Describe the role and function of hypervisors, virtual machines, and containers",
+        "1.3 Troubleshoot IPv4 address configuration, assignment, and subnetting (public and private)",
+        "1.4 Troubleshoot IPv6 address configuration, assignment, and prefix sizing (unicast and modified EUI 64)",
+        "1.5 Describe wireless principles 1.5.a Band and channel selection 1.5.b RF characteristics 1.5.c Security protocols 1.5.d Cause of interference",
+        "1.6 Troubleshoot wired and wireless client connectivity (IP configuration, network reachability, and wireless security parameters on Windows, MacOS, and Linux)",
+        "1.7 Troubleshoot DHCPv4 client, server, and relay on IOS devices"
+      ],
+      "guide_sections": [
+        "Scheduled v2.0 transition map",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "1. Network Fundamentals — 20%",
+        "4. IP Services — 10%"
+      ]
+    },
+    {
+      "domain": "Switching and Network Access — 25%",
+      "objectives": [
+        "2.1 Configure network infrastructure connectivity (switch-to-switch and switch-to-router) 2.1.a Layer 2/Layer 3 physical interfaces 2.1.b Layer 2 802.1Q trunk interfaces 2.1.c Layer 2/Layer 3 LACP port-channel/EtherChannel 2.1.d Switch virtual interface (SVI)",
+        "2.2 Configure Layer 2 switch port attributes for edge-host connectivity (VLAN, PoE, port channel, and LACP) 2.2.a Desktop, printer, and IOT appliances 2.2.b Wireless access points (standalone and controller based) 2.2.c Voice over IP phone 2.2.d Virtualized hosts 2.2.e Network appliances",
+        "2.3 Validate the accuracy of network documentation using CDP and LLDP",
+        "2.4 Troubleshoot basic Layer 2/Layer 3 connectivity and device operations using show commands (including show logs), ping, extended ping, trace route, and packet capture output",
+        "2.5 Configure operations of the Rapid Per VLAN Spanning Tree Protocol (Rapid PVST+) 2.5.a Root port, root bridge (primary/secondary), and other port names 2.5.b Port states and roles 2.5.c PortFast 2.5.d Root guard, loop guard, and BPDU guard"
+      ],
+      "guide_sections": [
+        "Scheduled v2.0 transition map",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "2. Network Access — 20%"
+      ]
+    },
+    {
+      "domain": "IP Routing — 20%",
+      "objectives": [
+        "3.1 Interpret a routing table to identify the next hop for a packet (routing protocol, prefix/mask, administrative distance, metric, and default route)",
+        "3.2 Troubleshoot IPv4 and IPv6 static routing 3.2.a Default route 3.2.b Network route 3.2.c Host route 3.2.d Floating static",
+        "3.3 Configure single area OSPFv2 for IPv4 and OSPFv3 for IPv6 3.3.a Neighbor adjacencies (excluding authentication) 3.3.b Point-to-point 3.3.c Broadcast (DR/BDR selection) 3.3.d Router ID",
+        "3.4 Interpret the operational status of First Hop Redundancy Protocols (HSRP and VRRP)"
+      ],
+      "guide_sections": [
+        "Scheduled v2.0 transition map",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "3. IP Connectivity — 25%"
+      ]
+    },
+    {
+      "domain": "Network Services and Security — 20%",
+      "objectives": [
+        "4.1 Configure network devices with local usernames and as an AAA client (TACACS+ and RADIUS) for management",
+        "4.2 Manage device configuration and software files using secure file transfer operations with SFTP/SCP",
+        "4.3 Configure NAT/PAT on IOS XE routers",
+        "4.4 Diagnose issues with DNS records (A, AAAA, CNAME, MX, NS, and PTR) to support host, web application, and mail server access by name",
+        "4.5 Describe IPsec remote access and site-to-site VPNs (protocols and transport modes)",
+        "4.6 Configure IPv4 access control lists (standard, extended, numbered, and named ACLs)",
+        "4.7 Configure Layer 2 security features 4.7.a DHCP snooping 4.7.b Dynamic ARP inspection 4.7.c Storm control 4.7.d RA guard 4.7.e Port security"
+      ],
+      "guide_sections": [
+        "Scheduled v2.0 transition map",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "4. IP Services — 10%",
+        "5. Security Fundamentals — 15%"
+      ]
+    },
+    {
+      "domain": "AI, and Network Operations and Management — 10%",
+      "objectives": [
+        "5.1 Describe the role of agentic AI in network operations",
+        "5.2 Select a prompt to send to a generative AI system to support network operations considering prompt components such as data classification, output format, persona, and instructions",
+        "5.3 Describe network management approaches (device-based, cloud-based, controller- based, automation-based, and infrastructure as code)",
+        "5.4 Describe the function of SNMP in network operations",
+        "5.5 Use configuration management mechanisms such as Ansible to execute commands",
+        "5.6 Interpret syslog message content, severity levels, and facilities"
+      ],
+      "guide_sections": [
+        "Scheduled v2.0 transition map",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "6. Automation and Programmability — 10%",
+        "4. IP Services — 10%"
+      ]
+    }
+  ],
+  "scheduled_mapping_boundary": "29 future numbered objectives are separate from the 53 current objectives. Cross-domain moves are explained in the transition map; this is not a claim that future device labs were executed or every future task fully demonstrated.",
+  "catalog_card_counts": {
+    "courses": 22,
+    "minutes": 3461,
+    "header_hours": 58,
+    "listed_duration_count": 22
+  },
+  "receipt_recovery": "A transient Windows OSError22 interrupted the optional JSON formatting helper after finalization. The source catalog was reconstructed exactly from the prior committed baseline and saved reviewed source rows/notes, formatted in memory and atomically replaced. Semantic equality verified. Final repository,176tests,strictbuild,generatedsite,catalog anddiff checks passed."
+}

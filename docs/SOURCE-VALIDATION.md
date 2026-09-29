@@ -1524,6 +1524,8 @@ The review maps the current public work areas and every detailed official traini
 
 ## 200-301 coverage record
 
+The September 29 [deep review](research/2026-09-29-200-301-deep-review.md) maps 53 detailed objectives. Mapped all53 current numbered objectives and supporting bullets from the actual four-page PDF; kept29 scheduledv2 objectives separate. Corrected DHCP/SNMP transition placement, clarified route installation/forwarding and LACP failover, added48 executed local checks and48 answers, and reconciled catalog evidence. Canonical objective/lifecycle digests unchanged; official price/language conflict retained. Eight device labs and independent human review remain pending. Current guide citations: 28 registered, 26 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 6, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: current CCNA v1.1 through February 2, 2027—Network Fundamentals (20%), Network Access (20%), IP Connectivity (25%), IP Services (10%), Security Fundamentals (15%), and Automation and Programmability (10%)—with the separately published v2.0 replacement beginning February 3

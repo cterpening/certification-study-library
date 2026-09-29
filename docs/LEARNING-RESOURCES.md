@@ -2696,6 +2696,27 @@ The MeasureUp listing divides its 150 practice questions 31/30/30/30/29 across d
 
 Use legitimate practice to explain mistakes and repeat evidence tasks. Reject recalled/live exam questions, answer-only banks and guaranteed-pass claims. Reconcile disputed material with primary documentation and the stated exam scope.
 
+### 200-301 — Cisco Certified Network Associate
+
+Resource details from the [200-301 guide](../guides/200-301-cisco-certified-network-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Pick one primary explanation, one lab route, and one legitimate assessment; use the official versioned PDF to close gaps. Times are provider values where published and otherwise explicit estimates.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Cisco v1.1 topics](https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf) and [v2.0 topics](https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf): choose by attempt date; 53 current versus 29 future numbered objectives | Public | 2–4 h mapping budget (editorial) |
+| [Cisco U. learning/practice route](https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html): guided learning, instructor-led options and assessment; full duration and entitlement not verified | Account; free/paid options | 40–80 h selected-study budget (editorial), plus labs |
+| [Cisco Networking Academy](https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html): networking and Packet Tracer prerequisites; this landing page does not establish a complete CCNA course total | Public catalog/account or academy | Networking Basics 22 h; Packet Tracer introduction 2 h; full CCNA route not verified |
+| [Cisco Modeling Labs](https://www.cisco.com/c/en/us/products/cloud-systems-management/modeling-labs/index.html): advertises a five-node free experience and paid editions; version 2.10 lists beta wireless support, not proof of support for every WLAN lab | Free tier/paid; verify image/features | 10–40 h deliberate-lab budget (editorial) |
+| [CCNA Official Cert Guide Library, second edition](https://www.ciscopress.com/store/ccna-200-301-official-cert-guide-library-9780138221393): July 25, 2024 publication by Wendell Odom, David Hucaby and Jason Gooley; two volumes, companion practice and update program; public catalog only | Paid; public description | More than 8 h companion video advertised; complete book study time not published |
+| [O’Reilly library listing](https://www.oreilly.com/library/view/ccna-200-301-official/9780138221539/): blocked during review; no book interior read | Paid | Earlier 63 h 6 min estimate not currently verified |
+| [Pluralsight CCNA path](https://www.pluralsight.com/paths/cisco-ccna-cisco-certified-network-associate-200-301): 22 course cards, largely 2020–2021 with two August 2024 updates and a September 11, 2026 IPv4 course; Core Tech library; no paid lessons/assessment read | Paid/trial; verify library | Cards total **57 h 41 min**; header **58 h**; add independent labs |
+| [Jeremy’s IT Lab video route](https://www.youtube.com/watch?v=H8W9oMNSuwo): response was a shell; playlist, labs and current alignment not verified | Public | Current total not verified; earlier 60–90 h was a study budget |
+| [Neil Anderson CCNA course](https://www.udemy.com/course/ccna-complete/): public page blocked; previous update/version claims not reconfirmed | Paid | Earlier 42 h 42 min listing not currently verified |
+| This guide’s eight proposed labs, 48 answered prompts and executed local workbook | Public | 25–45 h practice budget (editorial); not a readiness guarantee |
+
+This comparison uses public metadata, not paid lessons, book interiors, proprietary questions or subscriber labs. Dates/durations describe listings, not verified teaching quality or full v2.0 coverage. Use a legitimate explanation-rich assessment to locate gaps, then demonstrate behavior in your lab; avoid recalled/live items and answer-only banks.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.
