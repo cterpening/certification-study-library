@@ -1,0 +1,2292 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "CRISC",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/CRISC-isaca-certified-risk-information-systems-control.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "07d954288b859fc90b609420c8d61a51cafb0b7ba72cdeb37d62cac5b8d6d78e",
+  "guide_after_sha256": "88d49379a47760646c67a21fdc478c1f4c9a60203593629dd6010257498df922",
+  "prior_records": {
+    "exam": {
+      "code": "CRISC",
+      "level": "expert",
+      "vendor_id": "isaca",
+      "title": "Certified in Risk and Information Systems Control",
+      "status": "active",
+      "study_guide_url": "https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline",
+      "guide_path": "guides/CRISC-isaca-certified-risk-information-systems-control.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Anyone may sit the exam, but the CRISC designation requires a timely application and three years of qualifying professional experience across at least two domains. Practice the full governance-to-scenario-to-analysis-to-owned-response/control-to-monitoring loop, with technology and security translated into business-risk decisions."
+    },
+    "review": {
+      "id": "crisc-2026-09-02-source-validation",
+      "exam_code": "CRISC",
+      "guide_path": "guides/CRISC-isaca-certified-risk-information-systems-control.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/crisc-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8a607e350fc322e463cf56ebad620f53e5c2826017f3235aab6f04baf97bd614",
+      "objective_coverage": [
+        {
+          "objective_group": "Governance (26%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Risk Assessment (22%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Risk Response and Reporting (32%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 5–7"
+          ]
+        },
+        {
+          "objective_group": "Technology and Security (20%)",
+          "guide_sections": [
+            "Section 4",
+            "All scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 12,
+        "reachable": 10,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All four effective-2025 domains are mapped through enterprise governance and appetite, complete cause-event-impact scenarios and defensible analysis, owned response/control/test/metric/reporting lifecycles, and architecture/operations/SDLC/data/resilience/security context. Three scenarios, eight safe risk-workflow labs and 40 original checks are included. Passing is separated from the three-year, two-domain experience and application/maintenance requirements. Only ISACA sources are named for official item style; no recalled/live item, dump or copied course content is used."
+    },
+    "sources": [
+      {
+        "id": "isaca-certification-candidate-guide",
+        "title": "ISACA Certification Exams Candidate Guide",
+        "url": "https://www.isaca.org/credentialing/-/media/fa494652c5f149289af38cef18328650.ashx",
+        "publisher": "ISACA",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "CISA",
+          "CISM",
+          "CRISC"
+        ],
+        "notes": "2026 authoritative registration, scheduling, four-hour delivery, fee, rules, scoring, and detailed CISA/CISM/CRISC job-practice outlines. September 29 CISA deep review: Genuine 43-page PDF, version 1.26. Pages 1–2, 6–12, 14–15, 21–25 and CISA appendix 27–30 read. CISA column on page 6 visually inspected. No full guide, other exam appendix, full legal agreement or remote-proctoring audit. 150 questions/four hours, scaled 200–800 with 450 passing, fees 575/760, 30/90/90 retake waits, rolling four-attempt limit, five-year application period, up to three-year CISA waiver ceiling. Account, specific waiver categories and booking unverified. See docs/research/2026-09-29-cisa-deep-review.md No live infrastructure execution. September 29 CISM deep review: Genuine 43-page version 1.26 PDF reused from the same-day CISA capture; fresh CISM receipt has matching byte hash. Pages 1–2, 6–12, 14–15 and 21–25 read in that review; CISM appendix pages 34–36 additionally read here. Page 6 table visually inspected earlier and CISM two-year maximum waiver distinguished from CISA three-year maximum. Current appendix 2022, 35 subtopics/37 tasks. Specific waiver categories, personal eligibility and other unread pages not audited. See docs/research/2026-09-29-cism-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "isaca-cpe-2027",
+        "title": "ISACA CPE Policy Changes Effective 2027",
+        "url": "https://www.isaca.org/credentialing/cpe-2027",
+        "publisher": "ISACA",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "CISA",
+          "CISM",
+          "CRISC"
+        ],
+        "notes": "Scheduled January 1, 2027 framework: 120 CPEs remain, with 90–120 certification-aligned hours and up to 30 professional-development hours outside the credential domains. September 29 CISA deep review: Complete public 6647-character main and FAQs read. January 1, 2027 transition: 90 aligned minimum, up to 30 other qualifying professional development, unchanged 120 total. Volunteering caps and vendor demo exclusion distinguished from case studies. Multi-credential credit still requires relevance. No 2026 system enforcement change; no video playback. See docs/research/2026-09-29-cisa-deep-review.md No live infrastructure execution. September 29 CISM deep review: Complete public main/FAQs read during same-day CISA review, fresh CISM receipt captured. January 1, 2027 transition preserves 120 total, at least 90 aligned and up to 30 other qualifying professional-development hours; all 120 may align. Activity caps remain. No personal CPE claim or video review. See docs/research/2026-09-29-cism-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "nist-cybersecurity-framework-2",
+        "title": "NIST Cybersecurity Framework 2.0",
+        "url": "https://www.nist.gov/cyberframework",
+        "publisher": "NIST",
+        "authority_class": 1,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "CISA",
+          "CISM",
+          "CRISC",
+          "PANW-SECURITY-OPERATIONS-ARCHITECT",
+          "CC",
+          "CISSP"
+        ],
+        "notes": "Authoritative outcome-oriented cybersecurity governance and risk reference; use selected material for related context, not as an ISACA blueprint. September 29 CC deep review: Current main portal/resource descriptions and latestupdates read. SixFunction explanation supported by SP800-61r3summary. AIanalysisdraft banner not adopted as finalized guidance;not all CSF resources/profiles read. See docs/research/2026-09-29-cc-deep-review.md No live infrastructure execution. September 29 CISSP deep review: Fresh main portal announcement/resource context selected. CSF2governance/outcomes andSeptemberAIinitialpublicdraft consultation distinguished fromfinalbaseline. NotfullCSFpublication oralllinkedresources. See docs/research/2026-09-29-cissp-deep-review.md No live infrastructure execution. September 29 CISA deep review: Complete public landing main/resource directory read, not full CSF PDF or every linked quick-start guide. Current AI analysis/reporting quick-start is a draft with October 15 comment deadline; not a new CISA outline. No draft guidance adopted as mandatory criteria. See docs/research/2026-09-29-cisa-deep-review.md No live infrastructure execution. September 29 CISM deep review: Complete public landing/resource directory read during same-day CISA review and fresh CISM receipt captured. Full CSF PDF and linked draft quick-start guides not consumed; no draft adopted as exam scope. See docs/research/2026-09-29-cism-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "crisc-exam-content-outline",
+        "title": "CRISC Exam Content Outline",
+        "url": "https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline",
+        "publisher": "ISACA",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CRISC"
+        ],
+        "notes": "Canonical effective-2025 four-domain 26/22/32/20 job-practice outline and 150-question statement."
+      },
+      {
+        "id": "crisc-certification-page",
+        "title": "CRISC Certification",
+        "url": "https://www.isaca.org/credentialing/crisc",
+        "publisher": "ISACA",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CRISC"
+        ],
+        "notes": "Official exam registration and preparation route, including official course/manual and 600-question QAE options."
+      },
+      {
+        "id": "crisc-free-practice-quiz",
+        "title": "Free CRISC Practice Quiz",
+        "url": "https://www.isaca.org/credentialing/crisc/crisc-practice-quiz",
+        "publisher": "ISACA",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CRISC"
+        ],
+        "notes": "Small official item-style preview; approximately 15–25 minutes plus review and not a readiness score."
+      },
+      {
+        "id": "crisc-certification-requirements",
+        "title": "CRISC Certification Requirements",
+        "url": "https://www.isaca.org/credentialing/crisc/get-crisc-certified",
+        "publisher": "ISACA",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CRISC"
+        ],
+        "notes": "Five-year application window and verified three years of experience across at least two domains, gained within the preceding ten years, plus application, ethics and CPE duties."
+      },
+      {
+        "id": "crisc-maintenance-requirements",
+        "title": "Maintain CRISC Certification",
+        "url": "https://www.isaca.org/credentialing/crisc/maintain-crisc-certification",
+        "publisher": "ISACA",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CRISC"
+        ],
+        "notes": "Current 20 annual/120 three-year CPE, annual fee, audit, ethics and status requirements."
+      },
+      {
+        "id": "pluralsight-crisc-path",
+        "title": "CRISC Certification Path",
+        "url": "https://www.pluralsight.com/paths/crisctm-certified-in-risk-and-information-systems-controltm",
+        "publisher": "Pluralsight / Kevin Henry",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CRISC"
+        ],
+        "notes": "Five-hour, six-course 2025–26 path covering all four domains, with labs and practice exam."
+      },
+      {
+        "id": "oreilly-crisc-aci-learning",
+        "title": "CRISC: Certified in Risk and Information Systems Control",
+        "url": "https://www.oreilly.com/videos/crisc-certified-in/9781835886465/",
+        "publisher": "O'Reilly / Packt / ACI Learning",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CRISC"
+        ],
+        "notes": "February 2024 intermediate 16h28m four-domain course with quizzes."
+      },
+      {
+        "id": "linkedin-crisc-cert-prep",
+        "title": "ISACA CRISC Cert Prep",
+        "url": "https://www.linkedin.com/learning/isaca-certified-in-risk-and-information-systems-control-crisc-cert-prep",
+        "publisher": "LinkedIn Learning / Cybrary",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CRISC"
+        ],
+        "notes": "6h3m course released December 11, 2025 and aligned to the four effective-2025 domains."
+      },
+      {
+        "id": "udemy-crisc-masterclass-doshi",
+        "title": "Masterclass - CRISC Exam (Updated 2026)",
+        "url": "https://www.udemy.com/course/masterclass-crisc-exam/",
+        "publisher": "Udemy / Hemang Doshi",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CRISC"
+        ],
+        "notes": "Approximately 19-hour supplementary course listed as updated 2026; keep the official ISACA outline authoritative."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "d9df110e46ddd4ced31598812d8ae88907050d7fd3c28714a096db9a30e0200e",
+      "guide_sections": [
+        "1. Governance (26%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "c68e9eed57063f64f6c5eae0ee0c68cb521f7518b580cfc2856b136344f9fd96",
+      "guide_sections": [
+        "1. Governance (26%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "2bb57cfdadba0a652ceff076ce866e305f0fd99a71d1c1ed4cc52908dcad3128",
+      "guide_sections": [
+        "1. Governance (26%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "607f1261879875affae77b2aece405616a6bad6661bfa5be7ea6c8227ec5f496",
+      "guide_sections": [
+        "1. Governance (26%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "4e6ec7378137c1e2d6f2c0e3c145af709876b6e71cf609ee84734d5e20ad9196",
+      "guide_sections": [
+        "1. Governance (26%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "77b1a9a37bea26f3c5ebf1254bc922d5f30e45051fe7c5c24c9d0d9b532467ea",
+      "guide_sections": [
+        "1. Governance (26%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "c887448516baf61e0b2a0cc154cd3c2db9d64841740846966d6fc871fc4e8f82",
+      "guide_sections": [
+        "1. Governance (26%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "fe1ce69b7b2de9bc3bea3aade13f98a9e08a89f3a7640762755c3a8a570a0b8e",
+      "guide_sections": [
+        "1. Governance (26%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "8359b2842ba028b2c29f4c9652cf8b1523286ebe326be46021e9b1cc0f9a8afa",
+      "guide_sections": [
+        "1. Governance (26%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "eae88d462ccc0464f100855db773b2caf5ab36d8ea56a4ebbd21e710f43cfc04",
+      "guide_sections": [
+        "1. Governance (26%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 11,
+      "objective_sha256": "1765b6bd91e60b003f036dbccde3b1fbdc29310fe558b52d3a4aca784b6a1cc9",
+      "guide_sections": [
+        "1. Governance (26%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "9ac2c2d0e679ed3e7c8efda8d5c3900fcaf20a44dd091e731a33206280bcd077",
+      "guide_sections": [
+        "2. Risk Assessment (22%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "a486adecee2a079d4d1036998b33dc79851a9c965a40c818b1673dda27c18a82",
+      "guide_sections": [
+        "2. Risk Assessment (22%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "058dd16ef2f1219f8bac83dae5743f83bb8d8cb6f394f2f89c89992f44b671d0",
+      "guide_sections": [
+        "2. Risk Assessment (22%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "16223250c974bdde7c8964c5978fa6e9bc0feb51f9a1d9fe4082374f76d3b6bb",
+      "guide_sections": [
+        "2. Risk Assessment (22%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "b0cf266a09fb7438f17a873086fb2efc4fba2e416d1fcc28e033997d071071f4",
+      "guide_sections": [
+        "2. Risk Assessment (22%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "c683cc55c1017593335e3ea6feed3cde45b72b0918fbfe281dfcb175f1ad87a6",
+      "guide_sections": [
+        "2. Risk Assessment (22%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "1ce6332ee4dc6c3234fd6fcdf603bea5e195372a00cb52a300d1aa405dd9f51e",
+      "guide_sections": [
+        "2. Risk Assessment (22%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "0d1d11d2908f417cf9c56367bbd9a4f9916efc8776e549c047164346ffba80aa",
+      "guide_sections": [
+        "2. Risk Assessment (22%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "6e576524bb6ffac1a070943c9c84f0cb4d7c76097280315d8e62809a38a616a0",
+      "guide_sections": [
+        "2. Risk Assessment (22%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "231d3da5c06d68b3445fe7e86b5aac34b917b04be757958f27b0d08fbc04d0ea",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "20965ab791363ad4d755314017ce7ac02261784af089109be40206e7b2391651",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "2849a7bf05ad13077237a5de49bf5fdaf604172f8316d34426533530950d1029",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "fd74ab100be6d13f01a06e8d1488c5f402d5558f9cc0f11c30c8e0247c702d31",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "06a94485116922ad52c1616c802cebae3cf585bd24e99f2e5dde65596bd90204",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "4225636d89dbe2e6d69ea7d8de5f41dae672bc1340939328049787fb2185a5f8",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "3f1104b7426763930779b262cdfd9370518b7aeadb0271d50e3357efae7e1c61",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "564682e2a5e854b52e31145c6e19fa6569ee44129a75dbafdfb5dd6f6956a57e",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "a43afadb849d3224d8a4997134d620c281a137b942bdc1d23650ff256a19fc82",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 10,
+      "objective_sha256": "7b4fa508cc832cf15eaec788428d527e82c7ef7ab281c186859e3b2df37ec8e8",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 11,
+      "objective_sha256": "c1e5253ff3f2585524cbb09da32b12418d710dc1a180b8ecd22d2b07b0f4ab4e",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 12,
+      "objective_sha256": "16238cf77df89c744db30d94432e44c927d36e37162aec4b33f7bbd489a353dd",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 13,
+      "objective_sha256": "7cead059eb3339093edfa9c0853c79956d6f71495d684d1addfc2c73dda8dcfa",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "c5753b1e1f3fefc38ad51d332195270ee544cb086d030f1b8a1a4ecd50c77e89",
+      "guide_sections": [
+        "4. Technology and Security (20%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "4e093fc2366ee41ab1ddcec93af9d1b822dc83426c5ad59bccabe45f7dbf4ca0",
+      "guide_sections": [
+        "4. Technology and Security (20%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "6e054139e45abbbf74a67c471a355735931ec271c6585521671f33f6cf02b01d",
+      "guide_sections": [
+        "4. Technology and Security (20%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "057e6fcccfe81e600b9cce713bee04b7df68446bd3f37771fff48d960638b656",
+      "guide_sections": [
+        "4. Technology and Security (20%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "754d2abc8377da9cb7ffe6c3908993207b85d70377f6d660dcf39c15ae07ae34",
+      "guide_sections": [
+        "4. Technology and Security (20%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "9fbd240788d16caf1f9bb0ecb21fec886e92dbc82198085955270e8a32e73f89",
+      "guide_sections": [
+        "4. Technology and Security (20%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "7020d9160e3b6225c9d48e2ab6a26a7367cc2d852721f5ac860f671d3ead548c",
+      "guide_sections": [
+        "4. Technology and Security (20%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "c807dc7e530ac6f56166512c9ff395e64af05d16787124e82851d19b89f0b526",
+      "guide_sections": [
+        "4. Technology and Security (20%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "9ef4ff0f64e33403423c49cc28cbc3a3e4dbb5f651f8c3e22817b0d7674ae8e3",
+      "guide_sections": [
+        "4. Technology and Security (20%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 10,
+      "objective_sha256": "379b90965022cfe5165175eee359b84750acd29311cf2fa93b22bad477823568",
+      "guide_sections": [
+        "4. Technology and Security (20%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 11,
+      "objective_sha256": "24c9cc71cc2380909ef67be2c7d742729632dfc82b86fcaf01809a0e4bcd3a89",
+      "guide_sections": [
+        "4. Technology and Security (20%)",
+        "Worked results for the three scenarios",
+        "Executed offline risk workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "1b4e4af6f874d66332b2585e7922186873face6152e0c00a9d595cb8dd759443",
+      "guide_sections": [
+        "1. Governance (26%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "c7f8666fa40eddad9b468916fd0c20f420446367116d0249aa05c505ff682d03",
+      "guide_sections": [
+        "1. Governance (26%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "8b1b258a37e54dff1818b2efec850e53b742aa0fbb96b44d055434ddc37c5e84",
+      "guide_sections": [
+        "2. Risk Assessment (22%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "c9b84f3899ded8c0847659ce336b6af3be93eb722312c946e42aa751faba7261",
+      "guide_sections": [
+        "2. Risk Assessment (22%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "75e7da2f36ac727467da801776f75c204156e08f549c2570c8dc6a9cc3ff048d",
+      "guide_sections": [
+        "1. Governance (26%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "0db32810a6612e085d155f21ba0c22938fc1a0fe4235d418f54211a0b94be18f",
+      "guide_sections": [
+        "2. Risk Assessment (22%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "6f919f70add458196bc4dbb70ae6f2d5dd9e955edfc67427a3957e80e43d18df",
+      "guide_sections": [
+        "1. Governance (26%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 8,
+      "objective_sha256": "f06b50aede8d16543180bfd18a470718b84476007cf887f4017a28198d55dd2d",
+      "guide_sections": [
+        "4. Technology and Security (20%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 9,
+      "objective_sha256": "9e4fb35358334629de90b64a69fe08f293368773e293c76b262e097431225af2",
+      "guide_sections": [
+        "2. Risk Assessment (22%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 10,
+      "objective_sha256": "01549fac747aafa1c9f99607df649f43a363c2c61155db7a3da77f5237714901",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 11,
+      "objective_sha256": "7ee2e011243b66edf2b44ad48a2d963e7d98f062ef8f2b70955a6084e0cad872",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 12,
+      "objective_sha256": "e05a16ca9487aea8d05948e3bd48bbea96a18a09bb2a927190e2100c6fe3e8e3",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 13,
+      "objective_sha256": "92e8b9c26f2275f1f92c0e88898c81fc3d1ce0a9a4e1e4cd0ff6ea7b91e5bd80",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 14,
+      "objective_sha256": "fcd936747bb81a708c961165b7e88a807ae6a43c9e5eb1fc71594a359de92b21",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 15,
+      "objective_sha256": "a08babdfcc334e31be0c6f0b4ab2c8f8e9be469320bdefec76b6ef4368ef9f32",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 16,
+      "objective_sha256": "9982a4c746e4f0d1a6a54eaa1eda926961e2976f3dd1695aaf4e7e59559db832",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 17,
+      "objective_sha256": "4a9fa66cd476e8b83d19baebe9636d027dcc157491858597bfd9813a4e4452b5",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 18,
+      "objective_sha256": "ac43c8f8e60368c2a3b4420591c0559f07cd84526257fc01c0a3682e41de9b41",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 19,
+      "objective_sha256": "1ae5ea1771e102f269b754cb6ddad2d8e9124567428697fbd9031dc290bcd80f",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 20,
+      "objective_sha256": "eade8a1a5821d8b24910c2751b26c7b21271ce9b94c73eadc51e05b9f22e4dec",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 21,
+      "objective_sha256": "8e3516a3b9dff145ba709941213f61119365b04a38a4407f2c31d139ceea3b29",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 22,
+      "objective_sha256": "e6e6d52eba8b2d4d85e9baf0abd67ce9f9700730af6b65d3db1fd5ee7373cca7",
+      "guide_sections": [
+        "4. Technology and Security (20%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 23,
+      "objective_sha256": "3f2918f0da2d59eedf20e68cf6f7e2b2a7ad2a6c8342d328f19adb2bbdf5f313",
+      "guide_sections": [
+        "1. Governance (26%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 24,
+      "objective_sha256": "90d83f2da2afea4f008d8475f4348c360dbfb783a3d184fd3ee4ea0fb7afb008",
+      "guide_sections": [
+        "3. Risk Response and Reporting (32%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "CRISC",
+        "title": "Certified in Risk and Information Systems Control",
+        "url": "https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline",
+        "guide_path": "guides/CRISC-isaca-certified-risk-information-systems-control.md",
+        "snapshot_path": "data\\objective-snapshots\\crisc-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\crisc-official-status.json",
+        "previous_sha256": "8a607e350fc322e463cf56ebad620f53e5c2826017f3235aab6f04baf97bd614",
+        "current_sha256": "8a607e350fc322e463cf56ebad620f53e5c2826017f3235aab6f04baf97bd614",
+        "previous_status_sha256": "2131e1b85d69e12a992e873a4b4122db29e03db5edebe9d07c07774b54d52bbc",
+        "current_status_sha256": "2131e1b85d69e12a992e873a4b4122db29e03db5edebe9d07c07774b54d52bbc",
+        "official_status": {
+          "skills_versions": [
+            "The Certified in Risk and Information Systems Control® (CRISC®) exam consists of 150 questions covering 4 job practice domains, all testing your knowledge and ability on real-life job practices leveraged by expert professionals."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 19,
+    "reachable": 17,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "isaca-certification-candidate-guide",
+      "url": "https://www.isaca.org/credentialing/-/media/fa494652c5f149289af38cef18328650.ashx",
+      "checked_at": "2026-09-29T18:54:47.511407+00:00",
+      "health": {
+        "id": "isaca-certification-candidate-guide",
+        "url": "https://www.isaca.org/credentialing/-/media/fa494652c5f149289af38cef18328650.ashx",
+        "checked_at": "2026-09-29T18:54:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/credentialing/-/media/fa494652c5f149289af38cef18328650.ashx",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/credentialing/-/media/fa494652c5f149289af38cef18328650.ashx",
+      "sha256": "bfcbddc2a8391f08601ab45d9269ec24233e60258fe95074f34e21bdbf28866a",
+      "text_characters": 1043108
+    },
+    {
+      "id": "isaca-cpe-2027",
+      "url": "https://www.isaca.org/credentialing/cpe-2027",
+      "checked_at": "2026-09-29T18:54:47.512339+00:00",
+      "health": {
+        "id": "isaca-cpe-2027",
+        "url": "https://www.isaca.org/credentialing/cpe-2027",
+        "checked_at": "2026-09-29T18:54:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/credentialing/cpe-2027",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ISACA CPE 2027",
+        "canonical_url": "https://www.isaca.org/credentialing/cpe-2027",
+        "duration_signals": [],
+        "signal_fingerprint": "a1b4f8b25d4c62569005528f54cfec2369f803c8e090e5f049ec8de6e58f873f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/credentialing/cpe-2027",
+      "sha256": "163e15373a97f6a60efdc435e3cc0f9469e866225c1adb3bfda88b46aecf9dc6",
+      "text_characters": 6647
+    },
+    {
+      "id": "nist-cybersecurity-framework-2",
+      "url": "https://www.nist.gov/cyberframework",
+      "checked_at": "2026-09-29T18:54:47.512917+00:00",
+      "health": {
+        "id": "nist-cybersecurity-framework-2",
+        "url": "https://www.nist.gov/cyberframework",
+        "checked_at": "2026-09-29T18:54:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nist.gov/cyberframework",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Cybersecurity Framework",
+        "canonical_url": "https://www.nist.gov/cyberframework",
+        "duration_signals": [],
+        "signal_fingerprint": "7ece8c5ce2c87131c09b887c735e648ca2d6d75ec5c85b3dd2a99cc4a072d0bc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nist.gov/cyberframework",
+      "sha256": "e941f2ffc06d2a7b7d2de40def33a8788ad399fcad1bbbc9d3cb346f5bc25ab0",
+      "text_characters": 5335
+    },
+    {
+      "id": "crisc-exam-content-outline",
+      "url": "https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline",
+      "checked_at": "2026-09-29T18:54:47.998088+00:00",
+      "health": {
+        "id": "crisc-exam-content-outline",
+        "url": "https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline",
+        "checked_at": "2026-09-29T18:54:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CRISC® Exam Content Outline",
+        "canonical_url": "https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline",
+        "duration_signals": [],
+        "signal_fingerprint": "6a2417ba9016a66c10c678ef4bb10ddee745d24d6016927d3f22a6061d36f76b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline",
+      "sha256": "1fcedcb6e1a91ace7134994b6b547eb487497b6a20d91bc0c1701210ae82455f",
+      "text_characters": 7598
+    },
+    {
+      "id": "crisc-certification-page",
+      "url": "https://www.isaca.org/credentialing/crisc",
+      "checked_at": "2026-09-29T18:54:48.006166+00:00",
+      "health": {
+        "id": "crisc-certification-page",
+        "url": "https://www.isaca.org/credentialing/crisc",
+        "checked_at": "2026-09-29T18:54:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/credentialing/crisc",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CRISC® Certification | Certified in Risk and Information Systems Control®",
+        "canonical_url": "https://www.isaca.org/credentialing/crisc",
+        "duration_signals": [
+          "48 hours"
+        ],
+        "signal_fingerprint": "ff54b31f52682597885f01807505e82523a1b3816270bb1b84071d5bb96bcd16",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/credentialing/crisc",
+      "sha256": "fbe1047070284b7518e9e69a68cc6f51fce749ebfd39ab217ccf141a2523a253",
+      "text_characters": 7362
+    },
+    {
+      "id": "crisc-free-practice-quiz",
+      "url": "https://www.isaca.org/credentialing/crisc/crisc-practice-quiz",
+      "checked_at": "2026-09-29T18:54:48.304906+00:00",
+      "health": {
+        "id": "crisc-free-practice-quiz",
+        "url": "https://www.isaca.org/credentialing/crisc/crisc-practice-quiz",
+        "checked_at": "2026-09-29T18:54:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/credentialing/crisc/crisc-practice-quiz",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CRISC® Practice Quiz",
+        "canonical_url": "https://www.isaca.org/credentialing/crisc/crisc-practice-quiz",
+        "duration_signals": [],
+        "signal_fingerprint": "8b28c3c3f8d2e8906fb32e77f820d5227a56d25aa3eb3614a460f2ab57f9169f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/credentialing/crisc/crisc-practice-quiz",
+      "sha256": "acc48af5ce670022b63d1e77bb08c526fba4a37b6c4b4f5ad5e6249d94d4d773",
+      "text_characters": 14959
+    },
+    {
+      "id": "crisc-certification-requirements",
+      "url": "https://www.isaca.org/credentialing/crisc/get-crisc-certified",
+      "checked_at": "2026-09-29T18:54:48.485807+00:00",
+      "health": {
+        "id": "crisc-certification-requirements",
+        "url": "https://www.isaca.org/credentialing/crisc/get-crisc-certified",
+        "checked_at": "2026-09-29T18:54:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/credentialing/crisc/get-crisc-certified",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Earn a CRISC® Certification",
+        "canonical_url": "https://www.isaca.org/credentialing/crisc/get-crisc-certified",
+        "duration_signals": [],
+        "signal_fingerprint": "9446dfadabd357f29e89ac499ddc0adc2b3e15060795c769ff3c6a3576951220",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/credentialing/crisc/get-crisc-certified",
+      "sha256": "db3710b72f633d9b2b374f01ec9c4fac6d7019d0b0718b1169bbef3334d13c02",
+      "text_characters": 3119
+    },
+    {
+      "id": "crisc-maintenance-requirements",
+      "url": "https://www.isaca.org/credentialing/crisc/maintain-crisc-certification",
+      "checked_at": "2026-09-29T18:54:48.557264+00:00",
+      "health": {
+        "id": "crisc-maintenance-requirements",
+        "url": "https://www.isaca.org/credentialing/crisc/maintain-crisc-certification",
+        "checked_at": "2026-09-29T18:54:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/credentialing/crisc/maintain-crisc-certification",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Maintain CRISC® Certification",
+        "canonical_url": "https://www.isaca.org/credentialing/crisc/maintain-crisc-certification",
+        "duration_signals": [],
+        "signal_fingerprint": "0252f318d382b6632a4347edd23c7921b4bef180f5f310f676ba12fe49ca5ba3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/credentialing/crisc/maintain-crisc-certification",
+      "sha256": "2e21c5ffe083a166b022f3ceb5ce9b2c67afc8be2fa1dca3a8cf39350cd7fcec",
+      "text_characters": 7839
+    },
+    {
+      "id": "pluralsight-crisc-path",
+      "url": "https://www.pluralsight.com/paths/crisctm-certified-in-risk-and-information-systems-controltm",
+      "checked_at": "2026-09-29T18:54:48.843713+00:00",
+      "health": {
+        "id": "pluralsight-crisc-path",
+        "url": "https://www.pluralsight.com/paths/crisctm-certified-in-risk-and-information-systems-controltm",
+        "checked_at": "2026-09-29T18:54:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/crisctm-certified-in-risk-and-information-systems-controltm",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "CRISC™ (Certified in Risk and Information Systems Control™)",
+        "canonical_url": "https://www.pluralsight.com/paths/crisctm-certified-in-risk-and-information-systems-controltm",
+        "duration_signals": [
+          "5 Hours"
+        ],
+        "signal_fingerprint": "6f8b57abac212e1e59c9652ccccef1cd250d9397b14243b4885249729c9c2caa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/crisctm-certified-in-risk-and-information-systems-controltm",
+      "sha256": "2dc364c3771280b490f415912b032cfa54aba61a02f90ab92b3ad61bed18e9d0",
+      "text_characters": 3619
+    },
+    {
+      "id": "oreilly-crisc-aci-learning",
+      "url": "https://www.oreilly.com/videos/crisc-certified-in/9781835886465/",
+      "checked_at": "2026-09-29T18:54:48.969563+00:00",
+      "health": {
+        "id": "oreilly-crisc-aci-learning",
+        "url": "https://www.oreilly.com/videos/crisc-certified-in/9781835886465/",
+        "checked_at": "2026-09-29T18:54:48+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/crisc-certified-in/9781835886465/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "linkedin-crisc-cert-prep",
+      "url": "https://www.linkedin.com/learning/isaca-certified-in-risk-and-information-systems-control-crisc-cert-prep",
+      "checked_at": "2026-09-29T18:54:49.179573+00:00",
+      "health": {
+        "id": "linkedin-crisc-cert-prep",
+        "url": "https://www.linkedin.com/learning/isaca-certified-in-risk-and-information-systems-control-crisc-cert-prep",
+        "checked_at": "2026-09-29T18:54:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.linkedin.com/learning/isaca-certified-in-risk-and-information-systems-control-crisc-cert-prep",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ISACA Certified in Risk and Information Systems Control (CRISC) Cert Prep Online Class | LinkedIn Learning, formerly Lynda.com",
+        "canonical_url": "https://www.linkedin.com/learning/isaca-certified-in-risk-and-information-systems-control-crisc-cert-prep",
+        "duration_signals": [
+          "PT10M1S",
+          "PT11M56S",
+          "PT11M8S",
+          "PT13M30S",
+          "PT14M20S",
+          "PT14M42S",
+          "PT15M3S",
+          "PT16M19S",
+          "PT17M47S",
+          "PT17M5S",
+          "PT3M19S",
+          "PT3M23S",
+          "PT3M29S",
+          "PT3M51S",
+          "PT40S",
+          "PT4M3S",
+          "PT4M44S",
+          "PT4M47S",
+          "PT5M29S",
+          "PT5M46S",
+          "PT6H3M3S",
+          "PT6M19S",
+          "PT6M32S",
+          "PT6M36S",
+          "PT6M4S",
+          "PT6M54S",
+          "PT6M59S",
+          "PT7M27S",
+          "PT7M30S",
+          "PT7M35S"
+        ],
+        "signal_fingerprint": "8cd3577d63f0b43e5e936ea1ae2ad9fefb8c6b2aeb7614f67b38b6d73b8e47d2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.linkedin.com/learning/isaca-certified-in-risk-and-information-systems-control-crisc-cert-prep",
+      "sha256": "5f4aeec3efd46ddbe60bf852df97d819d4f88d043564410a10512feba0d8559c",
+      "text_characters": 5796
+    },
+    {
+      "id": "udemy-crisc-masterclass-doshi",
+      "url": "https://www.udemy.com/course/masterclass-crisc-exam/",
+      "checked_at": "2026-09-29T18:54:49.341334+00:00",
+      "health": {
+        "id": "udemy-crisc-masterclass-doshi",
+        "url": "https://www.udemy.com/course/masterclass-crisc-exam/",
+        "checked_at": "2026-09-29T18:54:49+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/masterclass-crisc-exam/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "crisc-2025-update",
+      "url": "https://www.isaca.org/about-us/newsroom/press-releases/2025/isaca-updates-cdpse-and-crisc-exams-to-reflect-latest-risk-and-privacy-priorities",
+      "checked_at": "2026-09-29T18:58:23.013022+00:00",
+      "health": {
+        "id": "crisc-2025-update",
+        "url": "https://www.isaca.org/about-us/newsroom/press-releases/2025/isaca-updates-cdpse-and-crisc-exams-to-reflect-latest-risk-and-privacy-priorities",
+        "checked_at": "2026-09-29T18:58:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/about-us/newsroom/press-releases/2025/isaca-updates-cdpse-and-crisc-exams-to-reflect-latest-risk-and-privacy-priorities",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Press Releases 2025 ISACA Updates CDPSE and CRISC Exams to Reflect Latest Risk and Privacy Priorities",
+        "canonical_url": "https://www.isaca.org/about-us/newsroom/press-releases/2025/isaca-updates-cdpse-and-crisc-exams-to-reflect-latest-risk-and-privacy-priorities",
+        "duration_signals": [
+          "3 minutes"
+        ],
+        "signal_fingerprint": "8d775fa86ca515d9d6c949237b589de81b366e851deffa99df21f0ebd8d10007",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/about-us/newsroom/press-releases/2025/isaca-updates-cdpse-and-crisc-exams-to-reflect-latest-risk-and-privacy-priorities",
+      "sha256": "5f4268649327eec7f8793044d7eaaca63082692786628cb0d506801fb284fe7e",
+      "text_characters": 5173
+    },
+    {
+      "id": "isaca-cpe-policy",
+      "url": "https://www.isaca.org/-/media/files/isacadp/project/isaca/certification/general/cpe_policy.pdf",
+      "checked_at": "2026-09-29T18:58:23.013716+00:00",
+      "health": {
+        "id": "isaca-cpe-policy",
+        "url": "https://www.isaca.org/-/media/files/isacadp/project/isaca/certification/general/cpe_policy.pdf",
+        "checked_at": "2026-09-29T18:58:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/-/media/files/isacadp/project/isaca/certification/general/cpe_policy.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/-/media/files/isacadp/project/isaca/certification/general/cpe_policy.pdf",
+      "sha256": "601d30ccff38aa900564dbc37926d3f9d4895b6477e88f2534a311103184186c",
+      "text_characters": 243446
+    },
+    {
+      "id": "isaca-code-ethics",
+      "url": "https://www.isaca.org/code-of-professional-ethics",
+      "checked_at": "2026-09-29T18:58:23.014096+00:00",
+      "health": {
+        "id": "isaca-code-ethics",
+        "url": "https://www.isaca.org/code-of-professional-ethics",
+        "checked_at": "2026-09-29T18:58:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/code-of-professional-ethics",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Code of Professional Ethics",
+        "canonical_url": "https://www.isaca.org/code-of-professional-ethics",
+        "duration_signals": [],
+        "signal_fingerprint": "79b9b33860bca8e5ab33de1226fcf7803732ac32251b6b67a23659371bb16887",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/code-of-professional-ethics",
+      "sha256": "15199d2a3ba74cfb053129c01b84e495a48569d2831e32b03b84fb5527ac6fc0",
+      "text_characters": 2735
+    },
+    {
+      "id": "nist-ir-8286-rev1",
+      "url": "https://csrc.nist.gov/pubs/ir/8286/r1/final",
+      "checked_at": "2026-09-29T18:58:23.684042+00:00",
+      "health": {
+        "id": "nist-ir-8286-rev1",
+        "url": "https://csrc.nist.gov/pubs/ir/8286/r1/final",
+        "checked_at": "2026-09-29T18:58:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://csrc.nist.gov/pubs/ir/8286/r1/final",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "IR 8286 Rev. 1, Integrating Cybersecurity and Enterprise Risk Management (ERM) | CSRCLock",
+        "canonical_url": "https://csrc.nist.gov/pubs/ir/8286/r1/final",
+        "duration_signals": [],
+        "signal_fingerprint": "0ecf7a800773b12dfdd8aa026e0b2b83ccb687b1b71bb4c37927ac7861ceddfd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://csrc.nist.gov/pubs/ir/8286/r1/final",
+      "sha256": "00d89defcd76508ebd1be62590da2a03f1683e62fdbe0b5c234a1de8f41ed1db",
+      "text_characters": 7510
+    },
+    {
+      "id": "nist-ir8286a-r1",
+      "url": "https://csrc.nist.gov/pubs/ir/8286/a/r1/final",
+      "checked_at": "2026-09-29T18:58:23.848139+00:00",
+      "health": {
+        "id": "nist-ir8286a-r1",
+        "url": "https://csrc.nist.gov/pubs/ir/8286/a/r1/final",
+        "checked_at": "2026-09-29T18:58:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://csrc.nist.gov/pubs/ir/8286/a/r1/final",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "IR 8286A Rev. 1, Identifying and Estimating Cybersecurity Risk for Enterprise Risk Management | CSRCLock",
+        "canonical_url": "https://csrc.nist.gov/pubs/ir/8286/a/r1/final",
+        "duration_signals": [],
+        "signal_fingerprint": "59d7c5a53adb98ee798d6a1061918850d3e64b2439d92184a1ec8c5635d66b8f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://csrc.nist.gov/pubs/ir/8286/a/r1/final",
+      "sha256": "c511ce6465ab70471e14188124861fbd814a26b5a503241d1f6d48a511a18c03",
+      "text_characters": 5444
+    },
+    {
+      "id": "nist-ir8286b-upd1",
+      "url": "https://csrc.nist.gov/pubs/ir/8286/b/upd1/final",
+      "checked_at": "2026-09-29T18:58:24.138673+00:00",
+      "health": {
+        "id": "nist-ir8286b-upd1",
+        "url": "https://csrc.nist.gov/pubs/ir/8286/b/upd1/final",
+        "checked_at": "2026-09-29T18:58:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://csrc.nist.gov/pubs/ir/8286/b/upd1/final",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "IR 8286B, Prioritizing Cybersecurity Risk for Enterprise Risk Management | CSRCLock",
+        "canonical_url": "https://csrc.nist.gov/pubs/ir/8286/b/upd1/final",
+        "duration_signals": [],
+        "signal_fingerprint": "5be327a4b8270a0fe7a062e520dceaa74d953b55a31cb3f728c63d374e85a3e7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://csrc.nist.gov/pubs/ir/8286/b/upd1/final",
+      "sha256": "454926bc933fa8db9fe741ad3d5f59144896692eb1ca614c7af212abaa3718f7",
+      "text_characters": 5587
+    },
+    {
+      "id": "crisc-course-route",
+      "url": "https://www.isaca.org/store/items/crisc_orc_c",
+      "checked_at": "2026-09-29T18:58:24.312130+00:00",
+      "health": {
+        "id": "crisc-course-route",
+        "url": "https://www.isaca.org/store/items/crisc_orc_c",
+        "checked_at": "2026-09-29T18:58:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/store2/product/CRISC-ORC-C",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CRISC Online Review Course",
+        "canonical_url": "https://www.isaca.org/store2/product/CRISC-ORC-C",
+        "duration_signals": [],
+        "signal_fingerprint": "ca7f6ba561fd2ad0022878c3e6a25b4d217f9f1c980218f8f4a447a17d2f410c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/store2/product/CRISC-ORC-C",
+      "sha256": "c9127dfcd82fae4662b9a29908cce72028380eb2f83195f2ac43827c638789b3",
+      "text_characters": 619
+    },
+    {
+      "id": "crisc-qae-route",
+      "url": "https://www.isaca.org/store/items/crisc_qae_c",
+      "checked_at": "2026-09-29T18:58:24.553748+00:00",
+      "health": {
+        "id": "crisc-qae-route",
+        "url": "https://www.isaca.org/store/items/crisc_qae_c",
+        "checked_at": "2026-09-29T18:58:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/store2/product/CRISC-QAE-C",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CRISC Questions, Answers & Explanations",
+        "canonical_url": "https://www.isaca.org/store2/product/CRISC-QAE-C",
+        "duration_signals": [],
+        "signal_fingerprint": "7dceb7ba292aa61eb3a342d6d4e6bd4cae91591982978a5bf62be6a91a4f4eb4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/store2/product/CRISC-QAE-C",
+      "sha256": "3b8b9f3d907ec41130349da3131b29f5af7bd611b838bda8e58de7b77310b4f0",
+      "text_characters": 619
+    },
+    {
+      "id": "crisc-manual-route",
+      "url": "https://www.isaca.org/store/items/crisc_rm_c",
+      "checked_at": "2026-09-29T18:58:24.598024+00:00",
+      "health": {
+        "id": "crisc-manual-route",
+        "url": "https://www.isaca.org/store/items/crisc_rm_c",
+        "checked_at": "2026-09-29T18:58:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/store2/product/CRISC-RM-C",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CRISC Review Manual",
+        "canonical_url": "https://www.isaca.org/store2/product/CRISC-RM-C",
+        "duration_signals": [],
+        "signal_fingerprint": "cb87766a10ca83d575ac1943605356ee8488280f18b59aa05e14654483d4dc00",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/store2/product/CRISC-RM-C",
+      "sha256": "665fdc03efa58f45f76d6b9bcb2e794f9d057fa4ef5954cd359ef4a1fdce025c",
+      "text_characters": 619
+    },
+    {
+      "id": "nist-ir8286-risk-register-schema",
+      "url": "https://csrc.nist.gov/files/pubs/ir/8286/r1/final/docs/risk_register_schema.json",
+      "checked_at": "2026-09-29T18:58:48.458400+00:00",
+      "health": {
+        "id": "nist-ir8286-risk-register-schema",
+        "url": "https://csrc.nist.gov/files/pubs/ir/8286/r1/final/docs/risk_register_schema.json",
+        "checked_at": "2026-09-29T18:58:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://csrc.nist.gov/files/pubs/ir/8286/r1/final/docs/risk_register_schema.json",
+        "content_type": "application/json",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "error": "HTTP Error 406: Not Acceptable"
+    },
+    {
+      "id": "nist-confidence-mean",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+      "checked_at": "2026-09-29T19:06:13.791358+00:00",
+      "health": {
+        "id": "nist-confidence-mean",
+        "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+        "checked_at": "2026-09-29T19:06:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "1.3.5.2. Confidence Limits for the Mean",
+        "canonical_url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+        "duration_signals": [],
+        "signal_fingerprint": "cf08375433817e782a5f77d1881e4e99d596f5336aa7c5626eab0ed9c0f79e78",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+      "sha256": "357189adccf1f235cd1455b2868fad2f6be397c747eab3752aaf4092405a6862",
+      "text_characters": 5590
+    }
+  ],
+  "added_source_ids": [
+    "crisc-2025-update",
+    "nist-ir8286a-r1",
+    "nist-ir8286b-upd1",
+    "crisc-course-route",
+    "crisc-qae-route",
+    "crisc-manual-route",
+    "nist-confidence-mean"
+  ],
+  "findings": [
+    {
+      "id": "crisc-deep-1",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Official QAE pool changed",
+      "url": "https://www.isaca.org/credentialing/crisc",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CRISC"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current public certification page advertises 833 items rather than the guide’s 600.",
+      "recommendation": "Update count and six-month access; distinguish landing metadata from unread product details.",
+      "disposition": "applied",
+      "source_id": "crisc-certification-page",
+      "resolution": "Update count and six-month access; distinguish landing metadata from unread product details."
+    },
+    {
+      "id": "crisc-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Canonical list and candidate PDF count differ structurally",
+      "url": "https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CRISC"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Technology Principles is an HTML list entry but a PDF subgroup heading; weights and 24 tasks agree.",
+      "recommendation": "Map all 44 HTML entries without treating the heading difference as a new exam revision.",
+      "disposition": "applied",
+      "source_id": "crisc-exam-content-outline",
+      "resolution": "Map all 44 HTML entries without treating the heading difference as a new exam revision."
+    },
+    {
+      "id": "crisc-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Structural validation does not establish risk quality",
+      "url": "https://csrc.nist.gov/files/pubs/ir/8286/r1/final/docs/risk_register_schema.json",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CRISC"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Published schema enforces field types and response values but accepts invalid percentages, blank owners and inconsistent exposure.",
+      "recommendation": "Execute negative fixtures and teach separate chosen decision-data rules plus evidence and authority limits.",
+      "disposition": "applied",
+      "source_id": "nist-ir8286-risk-register-schema",
+      "resolution": "Execute negative fixtures and teach separate chosen decision-data rules plus evidence and authority limits."
+    },
+    {
+      "id": "crisc-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Model ranges and confidence for the mean differ",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CRISC"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "NIST handbook distinguishes uncertainty of an estimated mean; the risk PDF’s three-point passage has arithmetic and interpretation inconsistencies.",
+      "recommendation": "Use an explicit triangular model, analytic exceedance and seeded simulation; do not adopt the inconsistent confidence example.",
+      "disposition": "applied",
+      "source_id": "nist-confidence-mean",
+      "resolution": "Use an explicit triangular model, analytic exceedance and seeded simulation; do not adopt the inconsistent confidence example."
+    },
+    {
+      "id": "crisc-deep-5",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Exact paid preparation content remains unread",
+      "url": "https://www.isaca.org/store/items/crisc_orc_c",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CRISC"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Course, manual and QAE public product routes returned application shells; paid interiors were not accessed.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "crisc-2025-update",
+      "review": "Complete April 7, 2025 central press release read. CRISC exam effective November 3, 2025, materials September 3, 2025, weights 26/22/32/20; risk assessment rose from 20 to 22 and technology fell from 22 to 20. CDPSE changes and marketing claims distinguished. No future 2026 CRISC cutover inferred."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 52,
+      "python_blocks_executed": 1,
+      "python_version": "3.13.14",
+      "jsonschema_version": "4.26.0",
+      "public_example_sha256": "270ba7a5c2ca83aaf071cac13879c543df5f4ae45708f9312d530a1bb64a80ee",
+      "results": {
+        "passed": 52,
+        "checks": [
+          "complete synthetic record has valid structure",
+          "missing identity rejected",
+          "percentage text rejected",
+          "empty response list rejected",
+          "duplicate response rejected",
+          "unknown response rejected",
+          "array instead of record rejected",
+          "valid record passes chosen extra rules",
+          "blank owner passes structural schema",
+          "blank owner fails extra decision rule",
+          "blank risk ID passes structural schema",
+          "blank risk ID fails extra decision rule",
+          "percentage above 100 passes structural schema",
+          "percentage above 100 fails extra decision rule",
+          "negative percentage passes structural schema",
+          "negative percentage fails extra decision rule",
+          "wrong exposure passes structural schema",
+          "wrong exposure fails extra decision rule",
+          "unknown status passes structural schema",
+          "unknown status fails extra decision rule",
+          "negative response cost passes structural schema",
+          "negative response cost fails extra decision rule",
+          "local extension permitted structurally",
+          "planned remains planned",
+          "schema validation does not mutate source record",
+          "event tree conserves probability",
+          "all leaf probabilities valid",
+          "conditional loss probability",
+          "illustrative expected loss",
+          "second-stage success leaf",
+          "first-stage success leaf",
+          "triangular mean",
+          "triangular variance",
+          "weighted three-point mean differs",
+          "lower support CDF",
+          "upper support CDF",
+          "mode CDF",
+          "exceedance of 60",
+          "actual simulation sample count",
+          "simulation stays in chosen support",
+          "simulation mean agrees within 0.3 thousand",
+          "simulation exceedance agrees within 0.01",
+          "all four-action subsets considered",
+          "identity without prerequisite rejected",
+          "duplicate action rejected",
+          "unknown action rejected",
+          "over-budget portfolio rejected",
+          "largest projected additive benefit",
+          "best portfolio annual cost and benefit",
+          "mandatory recovery changes portfolio",
+          "constrained annual cost and benefit",
+          "old optimum violates required outcome"
+        ],
+        "jsonschema_version": "4.26.0",
+        "schema_sha256": "ff85e9c917bce3e7646b974c7b8b62ba9fcf5d90d12906e6f46be4d3653b2e69",
+        "results": {
+          "loss_event_probability": 0.024,
+          "triangular_mean": 53.333333333333336,
+          "simulated_mean": 53.28664196854108,
+          "simulated_exceedance": 0.33159,
+          "unconstrained_portfolio": [
+            "inventory",
+            "identity"
+          ],
+          "constrained_portfolio": [
+            "inventory",
+            "recovery"
+          ]
+        },
+        "boundary": "Actual offline schema validation, seeded simulation and enumeration. Inputs and decision rules are fictional; no empirical risk estimate, organizational control test or real approval."
+      },
+      "execution_stdout": "{\n  \"passed\": 52,\n  \"checks\": [\n    \"complete synthetic record has valid structure\",\n    \"missing identity rejected\",\n    \"percentage text rejected\",\n    \"empty response list rejected\",\n    \"duplicate response rejected\",\n    \"unknown response rejected\",\n    \"array instead of record rejected\",\n    \"valid record passes chosen extra rules\",\n    \"blank owner passes structural schema\",\n    \"blank owner fails extra decision rule\",\n    \"blank risk ID passes structural schema\",\n    \"blank risk ID fails extra decision rule\",\n    \"percentage above 100 passes structural schema\",\n    \"percentage above 100 fails extra decision rule\",\n    \"negative percentage passes structural schema\",\n    \"negative percentage fails extra decision rule\",\n    \"wrong exposure passes structural schema\",\n    \"wrong exposure fails extra decision rule\",\n    \"unknown status passes structural schema\",\n    \"unknown status fails extra decision rule\",\n    \"negative response cost passes structural schema\",\n    \"negative response cost fails extra decision rule\",\n    \"local extension permitted structurally\",\n    \"planned remains planned\",\n    \"schema validation does not mutate source record\",\n    \"event tree conserves probability\",\n    \"all leaf probabilities valid\",\n    \"conditional loss probability\",\n    \"illustrative expected loss\",\n    \"second-stage success leaf\",\n    \"first-stage success leaf\",\n    \"triangular mean\",\n    \"triangular variance\",\n    \"weighted three-point mean differs\",\n    \"lower support CDF\",\n    \"upper support CDF\",\n    \"mode CDF\",\n    \"exceedance of 60\",\n    \"actual simulation sample count\",\n    \"simulation stays in chosen support\",\n    \"simulation mean agrees within 0.3 thousand\",\n    \"simulation exceedance agrees within 0.01\",\n    \"all four-action subsets considered\",\n    \"identity without prerequisite rejected\",\n    \"duplicate action rejected\",\n    \"unknown action rejected\",\n    \"over-budget portfolio rejected\",\n    \"largest projected additive benefit\",\n    \"best portfolio annual cost and benefit\",\n    \"mandatory recovery changes portfolio\",\n    \"constrained annual cost and benefit\",\n    \"old optimum violates required outcome\"\n  ],\n  \"jsonschema_version\": \"4.26.0\",\n  \"schema_sha256\": \"ff85e9c917bce3e7646b974c7b8b62ba9fcf5d90d12906e6f46be4d3653b2e69\",\n  \"results\": {\n    \"loss_event_probability\": 0.024,\n    \"triangular_mean\": 53.333333333333336,\n    \"simulated_mean\": 53.28664196854108,\n    \"simulated_exceedance\": 0.33159,\n    \"unconstrained_portfolio\": [\n      \"inventory\",\n      \"identity\"\n    ],\n    \"constrained_portfolio\": [\n      \"inventory\",\n      \"recovery\"\n    ]\n  },\n  \"boundary\": \"Actual offline schema validation, seeded simulation and enumeration. Inputs and decision rules are fictional; no empirical risk estimate, organizational control test or real approval.\"\n}",
+      "execution_boundary": "Actual offline schema validation, seeded simulation and enumeration. Inputs and decision rules are fictional; no empirical risk estimate, organizational control test or real approval.",
+      "model_limits": "Unmodified public schema validates structure, not evidence or authority. Added rules, probabilities, distribution, costs, benefits and mandatory actions are fictional. Simulation matches its chosen analytic distribution; it is not an empirical loss estimate or confidence statement. Portfolio enumeration assumes additive annual benefits and is not an organizational decision."
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Paid course/manual/QAE interiors and exact editions remain unverified. Two training sources returned 403; three public store routes rendered only shells. The 833-item QAE count is verified landing metadata, not a paid-content assessment.",
+    "Fifty-two offline checks executed public schema validation, 100000 seeded triangular draws and 16 portfolio subsets. Inputs and additional rules are fictional. No organizational control, cloud migration, AI model, incident, restore or risk acceptance executed. Eight broader activities remain proposed.",
+    "Schema-valid records can still lack meaningful owners or contain implausible numbers. The chosen exposure equation is a narrow one-scenario model, not a universal risk rule. More simulation draws do not validate assumptions.",
+    "Canonical HTML has 44 domain entries, including Technology Principles as an entry, while the PDF uses it as a heading with 43 numbered subtopics. All 24 tasks and weights agree. Snapshots unchanged; no silent objective-history rewrite.",
+    "Only selected NIST PDF pages read. IR 8286A confidence-example arithmetic and interpretation are qualified, not adopted as authoritative statistical guidance. No complete standards, risk-framework or legal-procedure audit.",
+    "Personal experience/application, booking and CPE-cycle/recordkeeping transition unverified. Common candidate and CPE reading reused with fresh matching hashes. Human review pending.",
+    "No paid playback, quiz-item review or submission, purchases, accounts, installs, runtime/service/reboot/auth/permission changes or external messages. Five GitHub guides reserved; notification pilot disabled."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 180,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Actual offline schema validation, seeded simulation and enumeration. Inputs and decision rules are fictional; no empirical risk estimate, organizational control test or real approval.",
+    "passed": 52,
+    "python_blocks_executed": 1,
+    "python_version": "3.13.14",
+    "jsonschema_version": "4.26.0",
+    "public_example_sha256": "270ba7a5c2ca83aaf071cac13879c543df5f4ae45708f9312d530a1bb64a80ee",
+    "results": {
+      "passed": 52,
+      "checks": [
+        "complete synthetic record has valid structure",
+        "missing identity rejected",
+        "percentage text rejected",
+        "empty response list rejected",
+        "duplicate response rejected",
+        "unknown response rejected",
+        "array instead of record rejected",
+        "valid record passes chosen extra rules",
+        "blank owner passes structural schema",
+        "blank owner fails extra decision rule",
+        "blank risk ID passes structural schema",
+        "blank risk ID fails extra decision rule",
+        "percentage above 100 passes structural schema",
+        "percentage above 100 fails extra decision rule",
+        "negative percentage passes structural schema",
+        "negative percentage fails extra decision rule",
+        "wrong exposure passes structural schema",
+        "wrong exposure fails extra decision rule",
+        "unknown status passes structural schema",
+        "unknown status fails extra decision rule",
+        "negative response cost passes structural schema",
+        "negative response cost fails extra decision rule",
+        "local extension permitted structurally",
+        "planned remains planned",
+        "schema validation does not mutate source record",
+        "event tree conserves probability",
+        "all leaf probabilities valid",
+        "conditional loss probability",
+        "illustrative expected loss",
+        "second-stage success leaf",
+        "first-stage success leaf",
+        "triangular mean",
+        "triangular variance",
+        "weighted three-point mean differs",
+        "lower support CDF",
+        "upper support CDF",
+        "mode CDF",
+        "exceedance of 60",
+        "actual simulation sample count",
+        "simulation stays in chosen support",
+        "simulation mean agrees within 0.3 thousand",
+        "simulation exceedance agrees within 0.01",
+        "all four-action subsets considered",
+        "identity without prerequisite rejected",
+        "duplicate action rejected",
+        "unknown action rejected",
+        "over-budget portfolio rejected",
+        "largest projected additive benefit",
+        "best portfolio annual cost and benefit",
+        "mandatory recovery changes portfolio",
+        "constrained annual cost and benefit",
+        "old optimum violates required outcome"
+      ],
+      "jsonschema_version": "4.26.0",
+      "schema_sha256": "ff85e9c917bce3e7646b974c7b8b62ba9fcf5d90d12906e6f46be4d3653b2e69",
+      "results": {
+        "loss_event_probability": 0.024,
+        "triangular_mean": 53.333333333333336,
+        "simulated_mean": 53.28664196854108,
+        "simulated_exceedance": 0.33159,
+        "unconstrained_portfolio": [
+          "inventory",
+          "identity"
+        ],
+        "constrained_portfolio": [
+          "inventory",
+          "recovery"
+        ]
+      },
+      "boundary": "Actual offline schema validation, seeded simulation and enumeration. Inputs and decision rules are fictional; no empirical risk estimate, organizational control test or real approval."
+    },
+    "execution_stdout": "{\n  \"passed\": 52,\n  \"checks\": [\n    \"complete synthetic record has valid structure\",\n    \"missing identity rejected\",\n    \"percentage text rejected\",\n    \"empty response list rejected\",\n    \"duplicate response rejected\",\n    \"unknown response rejected\",\n    \"array instead of record rejected\",\n    \"valid record passes chosen extra rules\",\n    \"blank owner passes structural schema\",\n    \"blank owner fails extra decision rule\",\n    \"blank risk ID passes structural schema\",\n    \"blank risk ID fails extra decision rule\",\n    \"percentage above 100 passes structural schema\",\n    \"percentage above 100 fails extra decision rule\",\n    \"negative percentage passes structural schema\",\n    \"negative percentage fails extra decision rule\",\n    \"wrong exposure passes structural schema\",\n    \"wrong exposure fails extra decision rule\",\n    \"unknown status passes structural schema\",\n    \"unknown status fails extra decision rule\",\n    \"negative response cost passes structural schema\",\n    \"negative response cost fails extra decision rule\",\n    \"local extension permitted structurally\",\n    \"planned remains planned\",\n    \"schema validation does not mutate source record\",\n    \"event tree conserves probability\",\n    \"all leaf probabilities valid\",\n    \"conditional loss probability\",\n    \"illustrative expected loss\",\n    \"second-stage success leaf\",\n    \"first-stage success leaf\",\n    \"triangular mean\",\n    \"triangular variance\",\n    \"weighted three-point mean differs\",\n    \"lower support CDF\",\n    \"upper support CDF\",\n    \"mode CDF\",\n    \"exceedance of 60\",\n    \"actual simulation sample count\",\n    \"simulation stays in chosen support\",\n    \"simulation mean agrees within 0.3 thousand\",\n    \"simulation exceedance agrees within 0.01\",\n    \"all four-action subsets considered\",\n    \"identity without prerequisite rejected\",\n    \"duplicate action rejected\",\n    \"unknown action rejected\",\n    \"over-budget portfolio rejected\",\n    \"largest projected additive benefit\",\n    \"best portfolio annual cost and benefit\",\n    \"mandatory recovery changes portfolio\",\n    \"constrained annual cost and benefit\",\n    \"old optimum violates required outcome\"\n  ],\n  \"jsonschema_version\": \"4.26.0\",\n  \"schema_sha256\": \"ff85e9c917bce3e7646b974c7b8b62ba9fcf5d90d12906e6f46be4d3653b2e69\",\n  \"results\": {\n    \"loss_event_probability\": 0.024,\n    \"triangular_mean\": 53.333333333333336,\n    \"simulated_mean\": 53.28664196854108,\n    \"simulated_exceedance\": 0.33159,\n    \"unconstrained_portfolio\": [\n      \"inventory\",\n      \"identity\"\n    ],\n    \"constrained_portfolio\": [\n      \"inventory\",\n      \"recovery\"\n    ]\n  },\n  \"boundary\": \"Actual offline schema validation, seeded simulation and enumeration. Inputs and decision rules are fictional; no empirical risk estimate, organizational control test or real approval.\"\n}",
+    "model_limits": "Unmodified public schema validates structure, not evidence or authority. Added rules, probabilities, distribution, costs, benefits and mandatory actions are fictional. Simulation matches its chosen analytic distribution; it is not an empirical loss estimate or confidence statement. Portfolio enumeration assumes additive annual benefits and is not an organizational decision.",
+    "learning_catalog_consistency": "passed"
+  },
+  "source_reading_boundaries": {
+    "isaca-certification-candidate-guide": "Genuine 43-page version 1.26 PDF reused from the same-day CISM/CISA capture with matching fresh CRISC hash. Common policy pages 1–2, 6–12, 14–15 and 21–25 previously read; CRISC appendix 31–33 read here and page 6 CRISC column rechecked. CRISC has no experience waivers or substitutions. PDF has 43 numbered subtopics versus 44 HTML list entries because Technology Principles is a PDF heading and an HTML entry. The 24 tasks and weights agree. No full guide or personal application review.",
+    "isaca-cpe-2027": "Complete public main and FAQs read during the same-day CISA review; fresh CRISC capture obtained. January 2027 preserves 120 total hours, requires at least 90 aligned and permits up to 30 other qualifying development hours. All 120 may align. Activity caps and personal-cycle application remain distinct. No account action or video playback.",
+    "nist-cybersecurity-framework-2": "Complete public landing and resource directory read during the same-day CISA review and freshly captured here. Full framework PDF and linked drafts not consumed; no draft quick-start topic adopted as CRISC scope.",
+    "crisc-exam-content-outline": "Complete public main read. Current weights 26/22/32/20, 44 domain-list entries and 24 tasks. Counts are 11/9/13/11; Technology Principles appears as a domain 4 list entry while the candidate PDF uses it as a heading. Objective and status hashes unchanged; canonical baseline preserved.",
+    "crisc-certification-page": "Complete public main read. Advertises 833 QAE items and six-month access, correcting the guide’s 600-item claim. Public course/manual/QAE links followed to store redirects, but descriptions remained shells. Salary and career claims not adopted. Landing metadata does not verify paid contents or exact product editions.",
+    "crisc-free-practice-quiz": "Public fetch captured but items not reviewed, answered or submitted. Certification landing advertises ten questions. No copied questions, score or readiness claim.",
+    "crisc-certification-requirements": "Complete 3119-character public main read. Three years across at least two domains, preceding ten-year window, verified application within five years of passing and US$50 fee. Anyone may sit. A CGEIT ethics label appears on this CRISC page; the copied credential label is not adopted. No personal eligibility or application action.",
+    "crisc-maintenance-requirements": "Complete 7839-character public main read. Annual 20/three-year 120 CPE, fees 45/85, ethics, audit and retention 12 months after a cycle. New linked policy specifies a minimum three years; personal transition unverified. Appeals paragraph says CISA Working Group and is not adopted as CRISC routing. No CPE or account mutation.",
+    "pluralsight-crisc-path": "Complete public path and six-course listing read. Five-hour headline; durations 90+68+80+52+23+6 total 319 minutes or 5 hours 19 minutes. Domain courses November 2025–January 2026, exam preparation April 17, 2026, lab introduction October 7, 2021. Advertised labs and practice exam not performed. Full lesson alignment and quality are not established from listings.",
+    "oreilly-crisc-aci-learning": "Direct HTTP 403. Prior 16-hour-28-minute metadata, version and paid interiors not reverified.",
+    "linkedin-crisc-cert-prep": "Complete public main and table of contents read: Cybrary, beginner, December 11, 2025, 6 hours 3 minutes and four current domain titles. No paid lessons, playback, practice exam or quality assessment. Learner comments are not adopted as independently verified evidence.",
+    "udemy-crisc-masterclass-doshi": "Direct HTTP 403. Earlier about-19-hour duration and updated-2026 title not reverified. Paid lessons and question contents unreviewed.",
+    "crisc-2025-update": "Complete April 7, 2025 central press release read. CRISC exam effective November 3, 2025, materials September 3, 2025, weights 26/22/32/20; risk assessment rose from 20 to 22 and technology fell from 22 to 20. CDPSE changes and marketing claims distinguished. No future 2026 CRISC cutover inferred.",
+    "isaca-cpe-policy": "All nine genuine PDF pages read during the same-day CISA review; page 5 visually inspected. Reused capture has a matching fresh CRISC hash. Announcement supplies January 2027 effective date. Minimum 90 aligned, up to 30 other qualifying hours, annual minimum, caps and evidence retention distinguished. Personal applicability unverified.",
+    "isaca-code-ethics": "Complete public main read during the same-day CISA review and freshly captured. Objectivity, due care, competence, confidentiality and significant-fact reporting inform teaching. Full linked complaint policies and forms unreviewed; no complaint or legal action.",
+    "nist-ir-8286-rev1": "Complete landing and selected genuine 78-page PDF material read in the same-day CISM review; fresh CRISC landing and same PDF bytes captured. Pages 5, 7–9, 16, 21–25 and 48–52 cover audience, register/detail records, ownership and enterprise reporting. Full publication and series not audited; definitions normalized explicitly.",
+    "nist-ir8286a-r1": "Publication landing main read. Genuine 79-page December 2025 final PDF captured; pages 7–9, 40–41 and 58–68 read. Methods, bias, conditional event trees, three-point estimates, Monte Carlo and Bayesian overview considered. Page 64 (printed 53) visually inspected: stated sigma formula gives US$7500, but prose interval uses US$13500, and an individual-loss range is called a confidence interval. Those assertions are not adopted. Full publication, linked standards and broader Bayesian model not audited.",
+    "nist-ir8286b-upd1": "Publication landing main read. Genuine 50-page February 2025 update PDF captured; pages 7–8, 21–23, 30–32, 37–38 and 40–43 read for prioritization, criteria, acceptance/avoidance/transfer, deferred treatment, cost, ownership and status. Not every method, table or legal example was read. Teaching distinguishes a toy planning optimum from enterprise authority and implementation evidence.",
+    "nist-ir8286-risk-register-schema": "Entire public JSON Schema 2020-12 document read and validated using the existing jsonschema 4.26.0 installation. Initial health GET succeeded; generic HTML-only follow-up received 406, and a plain urllib attempt received 403. Explicit public JSON Accept request succeeded with byte hash and receipt. Eleven required fields, response enumeration, minimum count and uniqueness are enforced; probability bounds, nonempty owners, exposure equation and local status vocabulary are not. Actual negative fixtures expose these limits. Additional business rules are explicitly chosen for the exercise. No network in workbook.",
+    "crisc-course-route": "Direct HTTP 200 returned a 619-character shell. Fresh unsigned Chrome followed the observed old route to /store2/product/CRISC-ORC-C and returned a 725-character shell. Exact duration, edition and paid course contents unverified. No account, cart or checkout.",
+    "crisc-qae-route": "Direct HTTP 200 returned a 619-character shell. Fresh unsigned Chrome redirected to /store2/product/CRISC-QAE-C and returned a 725-character shell. The 833-item figure comes from the complete certification landing, not the unread product interior. No paid questions or checkout.",
+    "crisc-manual-route": "Direct HTTP 200 returned a 619-character shell. Fresh unsigned Chrome redirected to /store2/product/CRISC-RM-C and returned a 725-character shell. Exact edition, availability and interior unverified. No purchase or account.",
+    "nist-confidence-mean": "Complete 5590-character NIST handbook page read. Confidence intervals describe uncertainty of an estimated population mean with a repeated-sampling interpretation; they are not percentile ranges for individual future losses. Formula and example read, but external datasets, software and linked case study not executed. Used to qualify the IR 8286A confidence example; no real statistical estimate claimed."
+  },
+  "public_examples": [
+    {
+      "language": "python",
+      "code": "\"\"\"Offline fictional risk models. Pass a local copy of the linked NIST JSON schema.\"\"\"\nfrom fractions import Fraction as F\nimport hashlib\nfrom importlib.metadata import version\nfrom itertools import combinations\nimport json\nfrom pathlib import Path\nimport random\nfrom statistics import mean\nimport sys\nfrom jsonschema import Draft202012Validator\n\nchecks = []\n\n\ndef check(name, actual, expected):\n    if actual != expected:\n        raise AssertionError((name, actual, expected))\n    checks.append(name)\n\n\nschema_bytes = Path(sys.argv[1]).read_bytes()\nschema = json.loads(schema_bytes)\nDraft202012Validator.check_schema(schema)\nvalidator = Draft202012Validator(schema)\nrecord = dict(riskId='R-1', riskDescription='Stolen supplier token discloses records',\n              riskCategory='Information disclosure', riskLikelihood=25,\n              riskImpact=200_000, exposureRating=50_000,\n              riskResponseType=['Mitigate'], riskResponseCost=10_000,\n              riskResponseDescription='Restrict token privileges and test access boundaries',\n              riskOwnerPointOfContact='Customer service owner', status='planned')\ncheck('complete synthetic record has valid structure', validator.is_valid(record), True)\ncheck('missing identity rejected', validator.is_valid({k: v for k, v in record.items() if k != 'riskId'}), False)\ncheck('percentage text rejected', validator.is_valid(dict(record, riskLikelihood='25%')), False)\ncheck('empty response list rejected', validator.is_valid(dict(record, riskResponseType=[])), False)\ncheck('duplicate response rejected', validator.is_valid(dict(record, riskResponseType=['Mitigate', 'Mitigate'])), False)\ncheck('unknown response rejected', validator.is_valid(dict(record, riskResponseType=['Ignore'])), False)\ncheck('array instead of record rejected', validator.is_valid([record]), False)\n\n\ndef decision_data_errors(row):\n    \"\"\"Chosen exercise rules, additional to the unmodified NIST schema.\"\"\"\n    errors = []\n    if not row['riskId'].strip():\n        errors.append('empty risk ID')\n    if not row['riskOwnerPointOfContact'].strip():\n        errors.append('empty owner')\n    if not 0 <= row['riskLikelihood'] <= 100:\n        errors.append('likelihood outside percentage range')\n    if row['riskImpact'] < 0 or row['riskResponseCost'] < 0:\n        errors.append('negative cost or impact in loss-only model')\n    expected = F(row['riskLikelihood']) * row['riskImpact'] / 100\n    if F(row['exposureRating']) != expected:\n        errors.append('inconsistent illustrative expected loss')\n    if row['status'] not in {'assessed', 'planned', 'implemented', 'accepted'}:\n        errors.append('unknown local status')\n    return errors\n\n\ncheck('valid record passes chosen extra rules', decision_data_errors(record), [])\nbad_rows = [\n    ('blank owner', dict(record, riskOwnerPointOfContact=''), 'empty owner'),\n    ('blank risk ID', dict(record, riskId=''), 'empty risk ID'),\n    ('percentage above 100', dict(record, riskLikelihood=120), 'likelihood outside percentage range'),\n    ('negative percentage', dict(record, riskLikelihood=-1), 'likelihood outside percentage range'),\n    ('wrong exposure', dict(record, exposureRating=1), 'inconsistent illustrative expected loss'),\n    ('unknown status', dict(record, status='banana'), 'unknown local status'),\n    ('negative response cost', dict(record, riskResponseCost=-1), 'negative cost or impact in loss-only model'),\n]\nfor name, row, expected_error in bad_rows:\n    check(name + ' passes structural schema', validator.is_valid(row), True)\n    check(name + ' fails extra decision rule', expected_error in decision_data_errors(row), True)\ncheck('local extension permitted structurally', validator.is_valid(dict(record, assessmentPeriod='one year')), True)\ncheck('planned remains planned', record['status'], 'planned')\ncheck('schema validation does not mutate source record', record['exposureRating'], 50_000)\n\nevent = F(1, 5)\nfirst_fails_given_event = F(3, 10)\nsecond_fails_given_first = F(2, 5)\nleaves = {\n    'no initiating event': 1 - event,\n    'first control stops event': event * (1 - first_fails_given_event),\n    'second control stops event': event * first_fails_given_event * (1 - second_fails_given_first),\n    'loss event': event * first_fails_given_event * second_fails_given_first,\n}\ncheck('event tree conserves probability', sum(leaves.values()), 1)\ncheck('all leaf probabilities valid', all(0 <= p <= 1 for p in leaves.values()), True)\ncheck('conditional loss probability', leaves['loss event'], F(3, 125))\ncheck('illustrative expected loss', leaves['loss event'] * 1_000_000, 24_000)\ncheck('second-stage success leaf', leaves['second control stops event'], F(9, 250))\ncheck('first-stage success leaf', leaves['first control stops event'], F(7, 50))\n\nlow, mode, high = 20, 40, 100  # Thousands of dollars, conditional on a loss.\ntriangular_mean = F(low + mode + high, 3)\ntriangular_variance = F(low**2 + mode**2 + high**2 - low*mode - low*high - mode*high, 18)\ncheck('triangular mean', triangular_mean, F(160, 3))\ncheck('triangular variance', triangular_variance, F(2600, 9))\ncheck('weighted three-point mean differs', F(low + 4*mode + high, 6), F(140, 3))\n\n\ndef triangular_cdf(x):\n    if x <= low:\n        return F(0)\n    if x >= high:\n        return F(1)\n    if x <= mode:\n        return F((x-low)**2, (high-low)*(mode-low))\n    return 1 - F((high-x)**2, (high-low)*(high-mode))\n\n\ncheck('lower support CDF', triangular_cdf(low), 0)\ncheck('upper support CDF', triangular_cdf(high), 1)\ncheck('mode CDF', triangular_cdf(mode), F(1, 4))\ncheck('exceedance of 60', 1 - triangular_cdf(60), F(1, 3))\nrng = random.Random(20260929)\nsamples = [rng.triangular(low, high, mode) for _ in range(100_000)]\nsimulated_mean = mean(samples)\nsimulated_exceedance = sum(x > 60 for x in samples) / len(samples)\ncheck('actual simulation sample count', len(samples), 100_000)\ncheck('simulation stays in chosen support', all(low <= x <= high for x in samples), True)\ncheck('simulation mean agrees within 0.3 thousand', abs(simulated_mean - float(triangular_mean)) < 0.3, True)\ncheck('simulation exceedance agrees within 0.01', abs(simulated_exceedance - 1/3) < 0.01, True)\n\n# Costs and projected benefits are annual, in thousands, additive by assumption.\nactions = {\n    'inventory': dict(cost=20, benefit=20, requires=set()),\n    'identity': dict(cost=40, benefit=100, requires={'inventory'}),\n    'recovery': dict(cost=45, benefit=95, requires=set()),\n    'logging': dict(cost=15, benefit=25, requires={'inventory'}),\n}\nbudget = 65\n\n\ndef portfolio(names, mandatory=frozenset()):\n    selected = set(names)\n    if len(selected) != len(names) or not selected <= actions.keys():\n        return None\n    cost = sum(actions[n]['cost'] for n in selected)\n    if cost > budget or not mandatory <= selected:\n        return None\n    if any(not actions[n]['requires'] <= selected for n in selected):\n        return None\n    return cost, sum(actions[n]['benefit'] for n in selected)\n\n\nchoices = [tuple(c) for size in range(5) for c in combinations(actions, size)]\ncheck('all four-action subsets considered', len(choices), 16)\ncheck('identity without prerequisite rejected', portfolio(('identity',)), None)\ncheck('duplicate action rejected', portfolio(('inventory', 'inventory')), None)\ncheck('unknown action rejected', portfolio(('magic',)), None)\ncheck('over-budget portfolio rejected', portfolio(tuple(actions)), None)\nfeasible = [(names, portfolio(names)) for names in choices if portfolio(names) is not None]\nbest_names, best_values = max(feasible, key=lambda item: item[1][1])\ncheck('largest projected additive benefit', set(best_names), {'inventory', 'identity'})\ncheck('best portfolio annual cost and benefit', best_values, (60, 120))\nmandatory = frozenset({'recovery'})\nconstrained = [(names, portfolio(names, mandatory)) for names in choices if portfolio(names, mandatory) is not None]\nrequired_names, required_values = max(constrained, key=lambda item: item[1][1])\ncheck('mandatory recovery changes portfolio', set(required_names), {'inventory', 'recovery'})\ncheck('constrained annual cost and benefit', required_values, (65, 115))\ncheck('old optimum violates required outcome', portfolio(best_names, mandatory), None)\n\nprint(json.dumps(dict(\n    passed=len(checks), checks=checks, jsonschema_version=version('jsonschema'),\n    schema_sha256=hashlib.sha256(schema_bytes).hexdigest(),\n    results=dict(loss_event_probability=float(leaves['loss event']),\n                 triangular_mean=float(triangular_mean), simulated_mean=simulated_mean,\n                 simulated_exceedance=simulated_exceedance,\n                 unconstrained_portfolio=list(best_names), constrained_portfolio=list(required_names)),\n    boundary='Actual offline schema validation, seeded simulation and enumeration. Inputs and decision rules are fictional; no empirical risk estimate, organizational control test or real approval.'\n), indent=2))\n",
+      "boundary": "Actual offline schema validation, seeded simulation and enumeration. Inputs and decision rules are fictional; no empirical risk estimate, organizational control test or real approval."
+    }
+  ],
+  "pdf_receipts": [
+    {
+      "id": "isaca-certification-candidate-guide",
+      "source_url": "https://www.isaca.org/credentialing/-/media/fa494652c5f149289af38cef18328650.ashx",
+      "download_url": "https://www.isaca.org/credentialing/-/media/fa494652c5f149289af38cef18328650.ashx",
+      "sha256": "bfcbddc2a8391f08601ab45d9269ec24233e60258fe95074f34e21bdbf28866a",
+      "pages": 43,
+      "method": "Same-day genuine public PDF reused, hash preserved; reading boundaries tracked separately."
+    },
+    {
+      "id": "isaca-cpe-policy",
+      "source_url": "https://www.isaca.org/-/media/files/isacadp/project/isaca/certification/general/cpe_policy.pdf",
+      "download_url": "https://www.isaca.org/-/media/files/isacadp/project/isaca/certification/general/cpe_policy.pdf",
+      "sha256": "601d30ccff38aa900564dbc37926d3f9d4895b6477e88f2534a311103184186c",
+      "pages": 9,
+      "method": "Same-day genuine public PDF reused, hash preserved; reading boundaries tracked separately."
+    },
+    {
+      "id": "nist-ir-8286-rev1",
+      "source_url": "https://csrc.nist.gov/pubs/ir/8286/r1/final",
+      "download_url": "https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8286r1.pdf",
+      "sha256": "1b20de63eced97a8b57e8f39af611ad4fa785084e01ea62511e4e2accdd685ed",
+      "pages": 78,
+      "method": "Same-day genuine public PDF reused, hash preserved; reading boundaries tracked separately."
+    },
+    {
+      "id": "nist-ir8286a-r1",
+      "source_url": "https://csrc.nist.gov/pubs/ir/8286/a/r1/final",
+      "download_url": "https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8286Ar1.pdf",
+      "sha256": "8701ddb49e2a60fb9a1d7131ff0333706507644137b8a0f1b2a320921ef8ad40",
+      "pages": 79,
+      "method": "Genuine public PDF bytes and pypdf extraction; capture does not imply complete reading."
+    },
+    {
+      "id": "nist-ir8286b-upd1",
+      "source_url": "https://csrc.nist.gov/pubs/ir/8286/b/upd1/final",
+      "download_url": "https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8286B-upd1.pdf",
+      "sha256": "28ad23fe12632b1de11f5fe366032466819ff467a3a396503e52cafcedb95aa9",
+      "pages": 50,
+      "method": "Genuine public PDF bytes and pypdf extraction; capture does not imply complete reading."
+    }
+  ],
+  "browser_receipts": [
+    {
+      "id": "crisc-course-route",
+      "url": "https://www.isaca.org/store/items/crisc_orc_c",
+      "boundary": "Fresh unsigned Chrome public body only; no account, cart, checkout or transaction.",
+      "content_wait": "TimeoutError",
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/store2/product/CRISC-ORC-C",
+      "characters": 725,
+      "sha256": "1910a04e59f32176d2e66b3a4ad72314b3caea1bc07629f653ef986d26b8669e"
+    },
+    {
+      "id": "crisc-qae-route",
+      "url": "https://www.isaca.org/store/items/crisc_qae_c",
+      "boundary": "Fresh unsigned Chrome public body only; no account, cart, checkout or transaction.",
+      "content_wait": "TimeoutError",
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/store2/product/CRISC-QAE-C",
+      "characters": 725,
+      "sha256": "1910a04e59f32176d2e66b3a4ad72314b3caea1bc07629f653ef986d26b8669e"
+    },
+    {
+      "id": "crisc-manual-route",
+      "url": "https://www.isaca.org/store/items/crisc_rm_c",
+      "boundary": "Fresh unsigned Chrome public body only; no account, cart, checkout or transaction.",
+      "content_wait": "TimeoutError",
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/store2/product/CRISC-RM-C",
+      "characters": 725,
+      "sha256": "1910a04e59f32176d2e66b3a4ad72314b3caea1bc07629f653ef986d26b8669e"
+    }
+  ],
+  "detailed_objective_coverage": {
+    "canonical_html_entries_per_domain": [
+      11,
+      9,
+      13,
+      11
+    ],
+    "candidate_pdf_numbered_subtopics_per_domain": [
+      11,
+      9,
+      13,
+      10
+    ],
+    "supporting_tasks": 24,
+    "groups": [
+      {
+        "title": "Governance (26%)",
+        "objectives": [
+          "Strategy, Goals, and Objectives",
+          "Organizational Structure, Roles, and Responsibilities",
+          "Organizational Culture and Ethics",
+          "Policies and Standards",
+          "Business Processes and Resilience (e.g., DRP, BCP)",
+          "Organizational Asset Management",
+          "Enterprise Risk Management (ERM)",
+          "Lines of Defense",
+          "Risk Profile",
+          "Risk Appetite and Risk Tolerance",
+          "Risk Frameworks, Legal, Regulatory, and Contractual Requirements"
+        ]
+      },
+      {
+        "title": "Risk Assessment (22%)",
+        "objectives": [
+          "Risk Events",
+          "Threat Modeling and Threat Landscape",
+          "Vulnerability Management",
+          "Risk Scenario Development and Evaluation",
+          "Risk Assessment Concepts and Standards",
+          "Business Impact Analysis (BIA)",
+          "Risk Register",
+          "Risk Analysis Methodologies",
+          "Inherent and Residual Risk"
+        ]
+      },
+      {
+        "title": "Risk Response And Reporting (32%)",
+        "objectives": [
+          "Risk Response Options",
+          "Risk and Control Ownership",
+          "Vendor/Supply Chain Risk Management",
+          "Issues, Findings, Exceptions and Exemptions Management",
+          "Control Frameworks, Types, and Standards",
+          "Control Design, Selection, Implementation, and Analysis",
+          "Control Testing Methodologies",
+          "Risk Action Plans",
+          "Data Collection, Aggregation, Analysis, and Validation",
+          "Risk and Control Metrics (e.g., KRIs, KCIs, KPIs)",
+          "Risk and Control Monitoring Techniques",
+          "Risk and Control Reporting Techniques (e.g., heatmap, scorecards, dashboards)",
+          "Monitoring and Reporting of Emerging Risks"
+        ]
+      },
+      {
+        "title": "Technology And Security (20%)",
+        "objectives": [
+          "Technology Principles",
+          "Technology Roadmaps and Enterprise Architecture (EA)",
+          "Operations Management (e.g., change management, assets, DevOps, problems, incidents)",
+          "System Development Life Cycle (SDLC)",
+          "Data Lifecycle Management",
+          "Portfolio and Project Management (e.g. Agile)",
+          "Technology Resilience and Disaster Response/Recovery",
+          "Emerging Technologies",
+          "Security Concepts, Frameworks, and Standards",
+          "Security/Risk Awareness and Training",
+          "Data Privacy and Data Protection Principles"
+        ]
+      },
+      {
+        "title": "Supporting tasks across the four domains",
+        "objectives": [
+          "1. Collect, review, and evaluate existing information regarding the organization’s business and information system environments.",
+          "2. Identify potential or realized impacts of information system risk to the organization’s business objectives and operations.",
+          "3. Identify threats and vulnerabilities to the organization’s people, processes, and technologies.",
+          "4. Evaluate threats, vulnerabilities, and risk to create information system risk scenarios.",
+          "5. Establish accountability by assigning and validating appropriate levels of risk and control ownership.",
+          "6. Maintain or establish the information system risk register and incorporate it into the enterprisewide risk profile.",
+          "7. Assist key stakeholders in the selection of risk appetite and tolerance thresholds and the impact on business objectives.",
+          "8. Promote a risk-aware culture by contributing to the development and implementation of security/risk awareness and training.",
+          "9. Conduct a risk assessment by analyzing information system risk scenarios and events to generate a risk score/rating.",
+          "10. Identify the current state of existing controls and evaluate their effectiveness for information system risk treatment.",
+          "11. Determine if risk exceeds appetite and tolerance thresholds to recommend treatment options and rectify concerns.",
+          "12. Review the results of risk and/or control analysis to assess any gaps between current and desired states of the risk environment.",
+          "13. Collaborate with risk owners on the development of risk treatment plans.",
+          "14. Collaborate with control owners on the selection, design, implementation, and maintenance of controls.",
+          "15. Validate that risk responses have been executed according to risk action plans.",
+          "16. Define, implement, and refine key risk indicators (KRIs).",
+          "17. Collaborate with control owners on the identification and refinement of key performance indicators (KPIs) and key control indicators (KCIs).",
+          "18. Monitor and analyze key risk indicators (KRIs), key performance indicators (KPIs), and key control indicators (KCIs).",
+          "19. Review the results of control assessments to determine the adequacy, effectiveness, and maturity of the control environment.",
+          "20. Conduct aggregation, analysis, and validation of risk and control data.",
+          "21. Report relevant risk and control information to applicable stakeholders to facilitate risk-based decision-making.",
+          "22. Evaluate emerging technologies and changes to the environment for threats, vulnerabilities, and opportunities.",
+          "23. Evaluate alignment of business practices with risk management frameworks, standards, and regulations.",
+          "24. Facilitate tabletop exercises to verify and identify gaps in risk scenarios, capabilities, and responses."
+        ]
+      }
+    ],
+    "basis": "Canonical HTML retained. Technology Principles is an HTML list entry but a PDF domain 4A heading. Both have the same weights and 24 tasks; the count difference is disclosed rather than silently normalized. Both monitor hashes unchanged."
+  },
+  "pdf_reading": {
+    "candidate_guide": {
+      "pages_read": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        21,
+        22,
+        23,
+        24,
+        25,
+        31,
+        32,
+        33
+      ],
+      "visual_pages": [
+        6
+      ],
+      "shared_reading": "Common policy pages read during same-day CISA review, page6 table visually inspected then; CRISC column and appendix rechecked here."
+    },
+    "cpe_policy": {
+      "pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "visual_pages": [
+        5
+      ],
+      "shared_reading": "Complete same-day CISA reading; fresh CRISC bytehash verified."
+    },
+    "nist_8286r1": {
+      "pages_read": [
+        5,
+        7,
+        8,
+        9,
+        16,
+        21,
+        22,
+        23,
+        24,
+        25,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "full_document": false,
+      "shared_reading": "Same-day CISM selective reading; identical genuine PDF bytes reused."
+    },
+    "nist_8286ar1": {
+      "pages_read": [
+        7,
+        8,
+        9,
+        40,
+        41,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68
+      ],
+      "visual_pages": [
+        64
+      ],
+      "full_document": false
+    },
+    "nist_8286b": {
+      "pages_read": [
+        7,
+        8,
+        21,
+        22,
+        23,
+        30,
+        31,
+        32,
+        37,
+        38,
+        40,
+        41,
+        42,
+        43
+      ],
+      "full_document": false
+    }
+  },
+  "schema_artifact": {
+    "url": "https://csrc.nist.gov/files/pubs/ir/8286/r1/final/docs/risk_register_schema.json",
+    "http_status": 200,
+    "sha256": "ff85e9c917bce3e7646b974c7b8b62ba9fcf5d90d12906e6f46be4d3653b2e69",
+    "bytes": 2576,
+    "method": "Public JSON representation requested with Accept application/json; earlier HTML-only follow-up received 406.",
+    "utf8_text": "{\r\n    \"$id\": \"https://csrc.nist.gov/csrc/media/schema/olir/risk_register.v2.schema.json\",\r\n    \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\r\n    \"description\": \"The use of cybersecurity risk registers provides consistency in capturing and communicating risk-related information (including risk response) throughout the ERM process. It provides a framework for organizing and communicating risk information from the individual system level up through the organizational level and finally to the highest enterprise level. The risk registers used at each level convey information about risk assessments, evaluation decisions, responses, and monitoring activities.\",\r\n    \"title\": \"Risk Register\",\r\n    \"type\": \"object\",\r\n    \"properties\": {\r\n        \"riskId\": {\r\n            \"description\": \"Risk ID\",\r\n            \"type\": \"string\"\r\n        },\r\n        \"riskDescription\": {\r\n            \"description\": \"Risk Description\",\r\n            \"type\": \"string\"\r\n        },\r\n        \"riskCategory\": {\r\n            \"description\": \"Risk Category\",\r\n            \"type\": \"string\"\r\n        },\r\n        \"riskLikelihood\": {\r\n            \"description\": \"Current Assessment: Likelihood (%)\",\r\n            \"type\": \"number\"\r\n        },\r\n        \"riskImpact\": {\r\n            \"description\": \"Current Assessment: Impact ($)\",\r\n            \"type\": \"number\"\r\n        },\r\n        \"exposureRating\": {\r\n            \"description\": \"Current Assessment: Exposure Rating ($)\",\r\n            \"type\": \"number\"\r\n        },\r\n        \"riskResponseType\": {\r\n            \"description\": \"Planned Risk Response\",\r\n            \"type\": \"array\",\r\n            \"minItems\": 1,\r\n            \"items\": {\r\n                \"enum\": [ \"Accept\", \"Avoid\", \"Transfer\", \"Mitigate\", \"Realize\", \"Share\", \"Enhance\" ]\r\n            },\r\n            \"uniqueItems\": true\r\n          },\r\n        \"riskResponseCost\": {\r\n            \"description\": \"Risk Response Cost ($)\",\r\n            \"type\": \"number\"\r\n        },\r\n        \"riskResponseDescription\": {\r\n            \"description\": \"Planned Risk Response Description\",\r\n            \"type\": \"string\"\r\n        },\r\n        \"riskOwnerPointOfContact\": {\r\n            \"description\": \"Risk owner(s) / point(s) of contact\",\r\n            \"type\": \"string\"\r\n        },\r\n        \"status\": {\r\n            \"description\": \"Status\",\r\n            \"type\": \"string\"\r\n        }\r\n    },\r\n    \"required\": [ \"riskId\", \"riskDescription\", \"riskCategory\", \"riskLikelihood\", \"riskImpact\", \"exposureRating\", \"riskResponseType\", \"riskResponseCost\", \"riskResponseDescription\", \"riskOwnerPointOfContact\", \"status\" ]\r\n}",
+    "boundary": "Entire unmodified public NIST JSON schema; exact bytes represented by UTF-8 text including original line endings. Tested offline with the existing jsonschema 4.26.0 installation. Additional exercise rules are separate."
+  },
+  "source_health_boundary": "23 direct health receipts: 21 HTTP successes and two blocks. Three store descriptions remain shells. The schema’s generic HTML-only follow-up received 406 despite a successful health GET; an explicit JSON representation was captured and validated separately. No account, checkout or paid-content action.",
+  "source_cautions": [
+    "NIST IR 8286A PDF page 64 (printed 53): the formula gives a US$7500 standard-deviation approximation from the stated inputs, but the prose interval uses US$13500; its statistical interpretation also conflates an individual-loss range with confidence for a mean. Visually checked and not adopted; the handbook and an explicit model inform the guide instead.",
+    "Candidate PDF and HTML use Technology Principles at different hierarchy levels. No unsupported exam-scope change inferred.",
+    "The CRISC requirements page has a CGEIT ethics label, and its maintenance appeals paragraph says CISA Working Group. These copied labels are not adopted as program-specific routing."
+  ]
+}

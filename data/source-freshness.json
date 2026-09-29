@@ -4,6 +4,161 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-crisc-deep-review",
+      "title": "CRISC complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CRISC"
+      ],
+      "results": [
+        {
+          "exam_code": "CRISC",
+          "vendor_id": "isaca",
+          "guide_path": "guides/CRISC-isaca-certified-risk-information-systems-control.md",
+          "baseline_sha256": "2906518695d337be182e26a867b15716d361382b3d399e92bd353418664af037",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Complete HTML outline, candidate appendix and April 2025 release confirm 26/22/32/20 weights and November 2025 effective date. All 68 HTML entries mapped. PDF 43 versus HTML 44 domain entries reflect Technology Principles heading placement. Snapshots unchanged."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected genuine NIST PDFs and full published schema read. Fifty-two executed checks cover schema fixtures, 100000 seeded draws and 16 treatment subsets. Confidence-example inconsistencies qualified using the NIST statistics handbook; no empirical risk or control-effectiveness claim."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "April 2025 CRISC update and January 2027 CPE announcement reviewed. No later CRISC replacement in examined sources. CISM’s November 2026 cutover is not applied to CRISC."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Complete official landing advertises 833 QAE items; Pluralsight’s six listed durations total 319 minutes and LinkedIn lists 6 hours 3 minutes. Store shells, paid interiors and blocked older metadata explicitly qualified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Paid course/QAE/manual contents and exact editions unreviewed. Personal eligibility/CPE transition, organizational control evidence and human review remain pending. HTML/PDF heading difference and NIST confidence-example inconsistencies disclosed."
+            }
+          },
+          "findings": [
+            {
+              "id": "crisc-deep-1",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Official QAE pool changed",
+              "url": "https://www.isaca.org/credentialing/crisc",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CRISC"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current public certification page advertises 833 items rather than the guide’s 600.",
+              "recommendation": "Update count and six-month access; distinguish landing metadata from unread product details.",
+              "disposition": "applied",
+              "source_id": "crisc-certification-page",
+              "resolution": "Update count and six-month access; distinguish landing metadata from unread product details."
+            },
+            {
+              "id": "crisc-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Canonical list and candidate PDF count differ structurally",
+              "url": "https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CRISC"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Technology Principles is an HTML list entry but a PDF subgroup heading; weights and 24 tasks agree.",
+              "recommendation": "Map all 44 HTML entries without treating the heading difference as a new exam revision.",
+              "disposition": "applied",
+              "source_id": "crisc-exam-content-outline",
+              "resolution": "Map all 44 HTML entries without treating the heading difference as a new exam revision."
+            },
+            {
+              "id": "crisc-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Structural validation does not establish risk quality",
+              "url": "https://csrc.nist.gov/files/pubs/ir/8286/r1/final/docs/risk_register_schema.json",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CRISC"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Published schema enforces field types and response values but accepts invalid percentages, blank owners and inconsistent exposure.",
+              "recommendation": "Execute negative fixtures and teach separate chosen decision-data rules plus evidence and authority limits.",
+              "disposition": "applied",
+              "source_id": "nist-ir8286-risk-register-schema",
+              "resolution": "Execute negative fixtures and teach separate chosen decision-data rules plus evidence and authority limits."
+            },
+            {
+              "id": "crisc-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Model ranges and confidence for the mean differ",
+              "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CRISC"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "NIST handbook distinguishes uncertainty of an estimated mean; the risk PDF’s three-point passage has arithmetic and interpretation inconsistencies.",
+              "recommendation": "Use an explicit triangular model, analytic exceedance and seeded simulation; do not adopt the inconsistent confidence example.",
+              "disposition": "applied",
+              "source_id": "nist-confidence-mean",
+              "resolution": "Use an explicit triangular model, analytic exceedance and seeded simulation; do not adopt the inconsistent confidence example."
+            },
+            {
+              "id": "crisc-deep-5",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Exact paid preparation content remains unread",
+              "url": "https://www.isaca.org/store/items/crisc_orc_c",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CRISC"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Course, manual and QAE public product routes returned application shells; paid interiors were not accessed.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped 44 canonical domain-list entries and 24 tasks, explaining the PDF heading/count difference. Added 40 answer notes, three worked scenarios, eight proposed activities and 52 executed schema, simulation and portfolio checks. Corrected the QAE pool to 833 and resource durations; qualified a NIST confidence-example inconsistency. Paid interiors, personal eligibility, organizational controls and human review remain pending. Same-context AI review; human review pending. See docs/research/2026-09-29-crisc-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 4,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-29-cism-deep-review",
       "title": "CISM complete guide and learning-content review",
       "rubric_version": 1,

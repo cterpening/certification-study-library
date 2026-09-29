@@ -3404,6 +3404,35 @@ This is not a complete list. Choose resources for your measured gaps and intende
 
 Reject dumps, recalled or “actual” questions and guaranteed-pass products. Match materials to the date-specific official scope; neither a marketing title nor a large question pool proves complete coverage.
 
+### CRISC — Certified in Risk and Information Systems Control
+
+Resource details from the [CRISC guide](../guides/CRISC-isaca-certified-risk-information-systems-control.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list. Choose sections that close your measured gaps. The effective-November-2025 official outline controls scope; related standards and practical exercises do not add exam requirements. Estimates are study budgets unless a publisher duration is explicitly stated.
+
+| Best use and reading boundary | Resource | Access | Estimated time |
+|---|---|---|---:|
+| Canonical current lists, weights and supporting tasks | [CRISC exam outline](https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline) | Public | 30–60 min |
+| Exam policy and detailed appendix; selected pages read | [Candidate guide](https://www.isaca.org/credentialing/-/media/fa494652c5f149289af38cef18328650.ashx) | Public PDF | 60–90 min |
+| Dates and changes for the current 2025 version | [ISACA update announcement](https://www.isaca.org/about-us/newsroom/press-releases/2025/isaca-updates-cdpse-and-crisc-exams-to-reflect-latest-risk-and-privacy-priorities) | Public | 10–15 min |
+| Current 833-item/six-month QAE claim and official preparation routes; individual store descriptions remain unread | [Certification/preparation page](https://www.isaca.org/credentialing/crisc) | Public/paid | 20–30 min orientation; 20–40 hr prep budget |
+| Ten-item style sample advertised; items and submission unreviewed | [Free CRISC quiz](https://www.isaca.org/credentialing/crisc/crisc-practice-quiz) | Public/form | 15–25 min |
+| Six public course listings; domain courses 2025–26, exam-preparation course April 2026, lab introduction 2021; paid content unreviewed | [Pluralsight CRISC path](https://www.pluralsight.com/paths/crisctm-certified-in-risk-and-information-systems-controltm) | Paid/trial | 5 hr headline; listed videos total 5 hr 19 min |
+| Access returned 403; prior duration/interior not reverified | [O'Reilly/Packt — ACI Learning](https://www.oreilly.com/videos/crisc-certified-in/9781835886465/) | Paid | Prior 16 hr 28 min; verify live |
+| Public Cybrary listing/TOC, beginner, December 11, 2025; lessons unreviewed | [LinkedIn Learning CRISC Cert Prep](https://www.linkedin.com/learning/isaca-certified-in-risk-and-information-systems-control-crisc-cert-prep) | Paid/trial | 6 hr 3 min stated |
+| Access returned 403; exact revision, duration and content unverified | [Udemy — Hemang Doshi](https://www.udemy.com/course/masterclass-crisc-exam/) | Paid | Prior about 19 hr; verify live |
+| Governance/outcome context; full framework PDF not reviewed here | [NIST CSF 2.0](https://www.nist.gov/cyberframework) | Public | 1–2 hr selected |
+| Registers, detailed records and enterprise reporting; selected pages read | [NIST IR 8286 Rev. 1](https://csrc.nist.gov/pubs/ir/8286/r1/final) | Public | 2–4 hr selected |
+| Bias, estimation and analysis; selected pages, with confidence-example limitations noted | [NIST IR 8286A Rev. 1](https://csrc.nist.gov/pubs/ir/8286/a/r1/final) | Public | 3–5 hr selected |
+| Prioritization, response costs/authority and deferred treatment; selected pages read | [NIST IR 8286B Update 1](https://csrc.nist.gov/pubs/ir/8286/b/upd1/final) | Public | 2–4 hr selected |
+| Structure for the offline validation exercise; business criteria still required | [NIST risk-register schema](https://csrc.nist.gov/files/pubs/ir/8286/r1/final/docs/risk_register_schema.json) | Public JSON | 30–60 min |
+| Clarifies confidence intervals for the mean; optional statistical depth | [NIST statistics handbook](https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm) | Public | 20–40 min |
+| Experience/application versus exam eligibility | [Certification requirements](https://www.isaca.org/credentialing/crisc/get-crisc-certified) | Public | 10–15 min |
+| Current renewal obligations and separate January 2027 transition | [Maintenance](https://www.isaca.org/credentialing/crisc/maintain-crisc-certification) and [2027 CPE changes](https://www.isaca.org/credentialing/cpe-2027) | Public | 20–30 min |
+| Objectivity, competence, confidentiality and material facts | [ISACA ethics](https://www.isaca.org/code-of-professional-ethics) | Public | 10–15 min |
+
+Reject dumps, recalled or “actual” questions and guaranteed-pass products. A large question pool, polished dashboard or valid JSON record does not replace evidence and reasoned decisions.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

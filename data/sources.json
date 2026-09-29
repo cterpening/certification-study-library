@@ -3,6 +3,104 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "crisc-2025-update",
+      "title": "ISACA updates CRISC/CDPSE for 2025",
+      "url": "https://www.isaca.org/about-us/newsroom/press-releases/2025/isaca-updates-cdpse-and-crisc-exams-to-reflect-latest-risk-and-privacy-priorities",
+      "publisher": "ISACA",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "supported_exams": [
+        "CRISC"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CRISC deep review: Complete April 7, 2025 central press release read. CRISC exam effective November 3, 2025, materials September 3, 2025, weights 26/22/32/20; risk assessment rose from 20 to 22 and technology fell from 22 to 20. CDPSE changes and marketing claims distinguished. No future 2026 CRISC cutover inferred. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nist-ir8286a-r1",
+      "title": "NIST IR 8286A Rev. 1 risk identification and estimation",
+      "url": "https://csrc.nist.gov/pubs/ir/8286/a/r1/final",
+      "publisher": "NIST",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CRISC"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CRISC deep review: Publication landing main read. Genuine 79-page December 2025 final PDF captured; pages 7–9, 40–41 and 58–68 read. Methods, bias, conditional event trees, three-point estimates, Monte Carlo and Bayesian overview considered. Page 64 (printed 53) visually inspected: stated sigma formula gives US$7500, but prose interval uses US$13500, and an individual-loss range is called a confidence interval. Those assertions are not adopted. Full publication, linked standards and broader Bayesian model not audited. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nist-ir8286b-upd1",
+      "title": "NIST IR 8286B prioritizing cybersecurity risk",
+      "url": "https://csrc.nist.gov/pubs/ir/8286/b/upd1/final",
+      "publisher": "NIST",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CRISC"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CRISC deep review: Publication landing main read. Genuine 50-page February 2025 update PDF captured; pages 7–8, 21–23, 30–32, 37–38 and 40–43 read for prioritization, criteria, acceptance/avoidance/transfer, deferred treatment, cost, ownership and status. Not every method, table or legal example was read. Teaching distinguishes a toy planning optimum from enterprise authority and implementation evidence. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "crisc-course-route",
+      "title": "CRISC course public route",
+      "url": "https://www.isaca.org/store/items/crisc_orc_c",
+      "publisher": "ISACA",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "supported_exams": [
+        "CRISC"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CRISC deep review: Direct HTTP 200 returned a 619-character shell. Fresh unsigned Chrome followed the observed old route to /store2/product/CRISC-ORC-C and returned a 725-character shell. Exact duration, edition and paid course contents unverified. No account, cart or checkout. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "crisc-qae-route",
+      "title": "CRISC QAE public route",
+      "url": "https://www.isaca.org/store/items/crisc_qae_c",
+      "publisher": "ISACA",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "supported_exams": [
+        "CRISC"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CRISC deep review: Direct HTTP 200 returned a 619-character shell. Fresh unsigned Chrome redirected to /store2/product/CRISC-QAE-C and returned a 725-character shell. The 833-item figure comes from the complete certification landing, not the unread product interior. No paid questions or checkout. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "crisc-manual-route",
+      "title": "CRISC manual public route",
+      "url": "https://www.isaca.org/store/items/crisc_rm_c",
+      "publisher": "ISACA",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "supported_exams": [
+        "CRISC"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CRISC deep review: Direct HTTP 200 returned a 619-character shell. Fresh unsigned Chrome redirected to /store2/product/CRISC-RM-C and returned a 725-character shell. Exact edition, availability and interior unverified. No purchase or account. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nist-confidence-mean",
+      "title": "NIST confidence limits for the mean",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+      "publisher": "NIST",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CRISC"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CRISC deep review: Complete 5590-character NIST handbook page read. Confidence intervals describe uncertainty of an estimated population mean with a repeated-sampling interpretation; they are not percentile ranges for individual future losses. Formula and example read, but external datasets, software and linked case study not executed. Used to qualify the IR 8286A confidence example; no real statistical estimate claimed. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "cism-2026-update-announcement",
       "title": "ISACA CISM update announcement — September 10, 2026",
       "url": "https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-updates-cism-exam-content-outline-factoring-in-todays-technologies-security-responsibilities",
@@ -166,10 +264,11 @@
       "access_model": "public",
       "supported_exams": [
         "CISA",
-        "CISM"
+        "CISM",
+        "CRISC"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 CISA deep review: All nine genuine PDF pages read; page 5 table visually inspected. Landing announcement supplies January 2027 effective date. At least 90 aligned plus up to 30 other qualifying hours; all 120 can align, despite confusing table header. Activity caps, 50-minute/quarter-hour calculation, three-year recordkeeping and status/appeal text read. Personal applicability and transition from maintenance-page wording remain unverified; no legal interpretation or claim submission. See docs/research/2026-09-29-cisa-deep-review.md No live infrastructure execution. September 29 CISM deep review: All nine genuine PDF pages and page 5 visual table read during same-day CISA review; fresh CISM hash matches reused capture. Announcement supplies effective date. At least 90 aligned, optional up to 30 other qualifying hours, annual minimum/caps and recordkeeping distinguished. Personal-cycle transition not determined. See docs/research/2026-09-29-cism-deep-review.md No live infrastructure execution."
+      "notes": "September 29 CISA deep review: All nine genuine PDF pages read; page 5 table visually inspected. Landing announcement supplies January 2027 effective date. At least 90 aligned plus up to 30 other qualifying hours; all 120 can align, despite confusing table header. Activity caps, 50-minute/quarter-hour calculation, three-year recordkeeping and status/appeal text read. Personal applicability and transition from maintenance-page wording remain unverified; no legal interpretation or claim submission. See docs/research/2026-09-29-cisa-deep-review.md No live infrastructure execution. September 29 CISM deep review: All nine genuine PDF pages and page 5 visual table read during same-day CISA review; fresh CISM hash matches reused capture. Announcement supplies effective date. At least 90 aligned, optional up to 30 other qualifying hours, annual minimum/caps and recordkeeping distinguished. Personal-cycle transition not determined. See docs/research/2026-09-29-cism-deep-review.md No live infrastructure execution. September 29 CRISC deep review: All nine genuine PDF pages read during the same-day CISA review; page 5 visually inspected. Reused capture has a matching fresh CRISC hash. Announcement supplies January 2027 effective date. Minimum 90 aligned, up to 30 other qualifying hours, annual minimum, caps and evidence retention distinguished. Personal applicability unverified. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
     },
     {
       "id": "isaca-code-ethics",
@@ -181,10 +280,11 @@
       "access_model": "public",
       "supported_exams": [
         "CISA",
-        "CISM"
+        "CISM",
+        "CRISC"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 CISA deep review: Complete public main read, including objectivity, due care, competence, confidentiality, significant facts and complaint-process overview. Linked full policy/forms not read or submitted. No legal advice or complaint action. See docs/research/2026-09-29-cisa-deep-review.md No live infrastructure execution. September 29 CISM deep review: Complete public main read during same-day CISA review and freshly captured for CISM. Objectivity, due care, competence, confidentiality and significant-fact reporting inform teaching. Linked full complaint policies/forms unreviewed; no complaint or legal action. See docs/research/2026-09-29-cism-deep-review.md No live infrastructure execution."
+      "notes": "September 29 CISA deep review: Complete public main read, including objectivity, due care, competence, confidentiality, significant facts and complaint-process overview. Linked full policy/forms not read or submitted. No legal advice or complaint action. See docs/research/2026-09-29-cisa-deep-review.md No live infrastructure execution. September 29 CISM deep review: Complete public main read during same-day CISA review and freshly captured for CISM. Objectivity, due care, competence, confidentiality and significant-fact reporting inform teaching. Linked full complaint policies/forms unreviewed; no complaint or legal action. See docs/research/2026-09-29-cism-deep-review.md No live infrastructure execution. September 29 CRISC deep review: Complete public main read during the same-day CISA review and freshly captured. Objectivity, due care, competence, confidentiality and significant-fact reporting inform teaching. Full linked complaint policies and forms unreviewed; no complaint or legal action. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
     },
     {
       "id": "nist-sp80053a-r5",
@@ -2989,15 +3089,16 @@
       "id": "nist-ir8286-risk-register-schema",
       "title": "NISTIR8286r1 risk register JSON schema",
       "url": "https://csrc.nist.gov/files/pubs/ir/8286/r1/final/docs/risk_register_schema.json",
-      "publisher": "National Institute of Standards and Technology",
+      "publisher": "NIST",
       "authority_class": 2,
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "CISSP"
+        "CISSP",
+        "CRISC"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 CISSP deep review: Complete actual60line officialJSON read;validDraft202012metaschema. Initialtext/htmlAccept406recoveredwithapplication/json,receiptretained. UnchangedJSON embedded and23actualsyntheticchecks executed. Range/nonblank/arithmetic/status/extra-propertiesnotconstrained;originalsemanticrulesseparate. See docs/research/2026-09-29-cissp-deep-review.md No live infrastructure execution."
+      "notes": "September 29 CISSP deep review: Complete actual60line officialJSON read;validDraft202012metaschema. Initialtext/htmlAccept406recoveredwithapplication/json,receiptretained. UnchangedJSON embedded and23actualsyntheticchecks executed. Range/nonblank/arithmetic/status/extra-propertiesnotconstrained;originalsemanticrulesseparate. See docs/research/2026-09-29-cissp-deep-review.md No live infrastructure execution. September 29 CRISC deep review: Entire public JSON Schema 2020-12 document read and validated using the existing jsonschema 4.26.0 installation. Initial health GET succeeded; generic HTML-only follow-up received 406, and a plain urllib attempt received 403. Explicit public JSON Accept request succeeded with byte hash and receipt. Eleven required fields, response enumeration, minimum count and uniqueness are enforced; probability bounds, nonempty owners, exposure equation and local status vocabulary are not. Actual negative fixtures expose these limits. Additional business rules are explicitly chosen for the exercise. No network in workbook. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
     },
     {
       "id": "nist-ir8286-risk-detail-schema",
@@ -53563,7 +53664,7 @@
         "CISM",
         "CRISC"
       ],
-      "notes": "2026 authoritative registration, scheduling, four-hour delivery, fee, rules, scoring, and detailed CISA/CISM/CRISC job-practice outlines. September 29 CISA deep review: Genuine 43-page PDF, version 1.26. Pages 1–2, 6–12, 14–15, 21–25 and CISA appendix 27–30 read. CISA column on page 6 visually inspected. No full guide, other exam appendix, full legal agreement or remote-proctoring audit. 150 questions/four hours, scaled 200–800 with 450 passing, fees 575/760, 30/90/90 retake waits, rolling four-attempt limit, five-year application period, up to three-year CISA waiver ceiling. Account, specific waiver categories and booking unverified. See docs/research/2026-09-29-cisa-deep-review.md No live infrastructure execution. September 29 CISM deep review: Genuine 43-page version 1.26 PDF reused from the same-day CISA capture; fresh CISM receipt has matching byte hash. Pages 1–2, 6–12, 14–15 and 21–25 read in that review; CISM appendix pages 34–36 additionally read here. Page 6 table visually inspected earlier and CISM two-year maximum waiver distinguished from CISA three-year maximum. Current appendix 2022, 35 subtopics/37 tasks. Specific waiver categories, personal eligibility and other unread pages not audited. See docs/research/2026-09-29-cism-deep-review.md No live infrastructure execution."
+      "notes": "2026 authoritative registration, scheduling, four-hour delivery, fee, rules, scoring, and detailed CISA/CISM/CRISC job-practice outlines. September 29 CISA deep review: Genuine 43-page PDF, version 1.26. Pages 1–2, 6–12, 14–15, 21–25 and CISA appendix 27–30 read. CISA column on page 6 visually inspected. No full guide, other exam appendix, full legal agreement or remote-proctoring audit. 150 questions/four hours, scaled 200–800 with 450 passing, fees 575/760, 30/90/90 retake waits, rolling four-attempt limit, five-year application period, up to three-year CISA waiver ceiling. Account, specific waiver categories and booking unverified. See docs/research/2026-09-29-cisa-deep-review.md No live infrastructure execution. September 29 CISM deep review: Genuine 43-page version 1.26 PDF reused from the same-day CISA capture; fresh CISM receipt has matching byte hash. Pages 1–2, 6–12, 14–15 and 21–25 read in that review; CISM appendix pages 34–36 additionally read here. Page 6 table visually inspected earlier and CISM two-year maximum waiver distinguished from CISA three-year maximum. Current appendix 2022, 35 subtopics/37 tasks. Specific waiver categories, personal eligibility and other unread pages not audited. See docs/research/2026-09-29-cism-deep-review.md No live infrastructure execution. September 29 CRISC deep review: Genuine 43-page version 1.26 PDF reused from the same-day CISM/CISA capture with matching fresh CRISC hash. Common policy pages 1–2, 6–12, 14–15 and 21–25 previously read; CRISC appendix 31–33 read here and page 6 CRISC column rechecked. CRISC has no experience waivers or substitutions. PDF has 43 numbered subtopics versus 44 HTML list entries because Technology Principles is a PDF heading and an HTML entry. The 24 tasks and weights agree. No full guide or personal application review. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
     },
     {
       "id": "cisa-certification-requirements",
@@ -53607,7 +53708,7 @@
         "CISM",
         "CRISC"
       ],
-      "notes": "Scheduled January 1, 2027 framework: 120 CPEs remain, with 90–120 certification-aligned hours and up to 30 professional-development hours outside the credential domains. September 29 CISA deep review: Complete public 6647-character main and FAQs read. January 1, 2027 transition: 90 aligned minimum, up to 30 other qualifying professional development, unchanged 120 total. Volunteering caps and vendor demo exclusion distinguished from case studies. Multi-credential credit still requires relevance. No 2026 system enforcement change; no video playback. See docs/research/2026-09-29-cisa-deep-review.md No live infrastructure execution. September 29 CISM deep review: Complete public main/FAQs read during same-day CISA review, fresh CISM receipt captured. January 1, 2027 transition preserves 120 total, at least 90 aligned and up to 30 other qualifying professional-development hours; all 120 may align. Activity caps remain. No personal CPE claim or video review. See docs/research/2026-09-29-cism-deep-review.md No live infrastructure execution."
+      "notes": "Scheduled January 1, 2027 framework: 120 CPEs remain, with 90–120 certification-aligned hours and up to 30 professional-development hours outside the credential domains. September 29 CISA deep review: Complete public 6647-character main and FAQs read. January 1, 2027 transition: 90 aligned minimum, up to 30 other qualifying professional development, unchanged 120 total. Volunteering caps and vendor demo exclusion distinguished from case studies. Multi-credential credit still requires relevance. No 2026 system enforcement change; no video playback. See docs/research/2026-09-29-cisa-deep-review.md No live infrastructure execution. September 29 CISM deep review: Complete public main/FAQs read during same-day CISA review, fresh CISM receipt captured. January 1, 2027 transition preserves 120 total, at least 90 aligned and up to 30 other qualifying professional-development hours; all 120 may align. Activity caps remain. No personal CPE claim or video review. See docs/research/2026-09-29-cism-deep-review.md No live infrastructure execution. September 29 CRISC deep review: Complete public main and FAQs read during the same-day CISA review; fresh CRISC capture obtained. January 2027 preserves 120 total hours, requires at least 90 aligned and permits up to 30 other qualifying development hours. All 120 may align. Activity caps and personal-cycle application remain distinct. No account action or video playback. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
     },
     {
       "id": "isaca-online-review-courses",
@@ -53725,7 +53826,7 @@
         "CC",
         "CISSP"
       ],
-      "notes": "Authoritative outcome-oriented cybersecurity governance and risk reference; use selected material for related context, not as an ISACA blueprint. September 29 CC deep review: Current main portal/resource descriptions and latestupdates read. SixFunction explanation supported by SP800-61r3summary. AIanalysisdraft banner not adopted as finalized guidance;not all CSF resources/profiles read. See docs/research/2026-09-29-cc-deep-review.md No live infrastructure execution. September 29 CISSP deep review: Fresh main portal announcement/resource context selected. CSF2governance/outcomes andSeptemberAIinitialpublicdraft consultation distinguished fromfinalbaseline. NotfullCSFpublication oralllinkedresources. See docs/research/2026-09-29-cissp-deep-review.md No live infrastructure execution. September 29 CISA deep review: Complete public landing main/resource directory read, not full CSF PDF or every linked quick-start guide. Current AI analysis/reporting quick-start is a draft with October 15 comment deadline; not a new CISA outline. No draft guidance adopted as mandatory criteria. See docs/research/2026-09-29-cisa-deep-review.md No live infrastructure execution. September 29 CISM deep review: Complete public landing/resource directory read during same-day CISA review and fresh CISM receipt captured. Full CSF PDF and linked draft quick-start guides not consumed; no draft adopted as exam scope. See docs/research/2026-09-29-cism-deep-review.md No live infrastructure execution."
+      "notes": "Authoritative outcome-oriented cybersecurity governance and risk reference; use selected material for related context, not as an ISACA blueprint. September 29 CC deep review: Current main portal/resource descriptions and latestupdates read. SixFunction explanation supported by SP800-61r3summary. AIanalysisdraft banner not adopted as finalized guidance;not all CSF resources/profiles read. See docs/research/2026-09-29-cc-deep-review.md No live infrastructure execution. September 29 CISSP deep review: Fresh main portal announcement/resource context selected. CSF2governance/outcomes andSeptemberAIinitialpublicdraft consultation distinguished fromfinalbaseline. NotfullCSFpublication oralllinkedresources. See docs/research/2026-09-29-cissp-deep-review.md No live infrastructure execution. September 29 CISA deep review: Complete public landing main/resource directory read, not full CSF PDF or every linked quick-start guide. Current AI analysis/reporting quick-start is a draft with October 15 comment deadline; not a new CISA outline. No draft guidance adopted as mandatory criteria. See docs/research/2026-09-29-cisa-deep-review.md No live infrastructure execution. September 29 CISM deep review: Complete public landing/resource directory read during same-day CISA review and fresh CISM receipt captured. Full CSF PDF and linked draft quick-start guides not consumed; no draft adopted as exam scope. See docs/research/2026-09-29-cism-deep-review.md No live infrastructure execution. September 29 CRISC deep review: Complete public landing and resource directory read during the same-day CISA review and freshly captured here. Full framework PDF and linked drafts not consumed; no draft quick-start topic adopted as CRISC scope. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
     },
     {
       "id": "nist-sp-800-53-rev5",
@@ -53882,31 +53983,130 @@
       "notes": "Supplementary current-outline instruction; verify live duration and do not assume November 2026 alignment until explicitly updated. September 29 CISM deep review: Direct HTTP 403. Live duration, revision and paid lesson contents remain unverified. See docs/research/2026-09-29-cism-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"crisc-exam-content-outline","title":"CRISC Exam Content Outline","url":"https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline","publisher":"ISACA","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["CRISC"],"notes":"Canonical effective-2025 four-domain 26/22/32/20 job-practice outline and 150-question statement."
+      "id": "crisc-exam-content-outline",
+      "title": "CRISC Exam Content Outline",
+      "url": "https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline",
+      "publisher": "ISACA",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CRISC"
+      ],
+      "notes": "Canonical effective-2025 four-domain 26/22/32/20 job-practice outline and 150-question statement. September 29 CRISC deep review: Complete public main read. Current weights 26/22/32/20, 44 domain-list entries and 24 tasks. Counts are 11/9/13/11; Technology Principles appears as a domain 4 list entry while the candidate PDF uses it as a heading. Objective and status hashes unchanged; canonical baseline preserved. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"crisc-certification-page","title":"CRISC Certification","url":"https://www.isaca.org/credentialing/crisc","publisher":"ISACA","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["CRISC"],"notes":"Official exam registration and preparation route, including official course/manual and 600-question QAE options."
+      "id": "crisc-certification-page",
+      "title": "CRISC Certification",
+      "url": "https://www.isaca.org/credentialing/crisc",
+      "publisher": "ISACA",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CRISC"
+      ],
+      "notes": "Official exam registration and preparation route, including official course/manual and 600-question QAE options. September 29 CRISC deep review: Complete public main read. Advertises 833 QAE items and six-month access, correcting the guide’s 600-item claim. Public course/manual/QAE links followed to store redirects, but descriptions remained shells. Salary and career claims not adopted. Landing metadata does not verify paid contents or exact product editions. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"crisc-free-practice-quiz","title":"Free CRISC Practice Quiz","url":"https://www.isaca.org/credentialing/crisc/crisc-practice-quiz","publisher":"ISACA","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["CRISC"],"notes":"Small official item-style preview; approximately 15–25 minutes plus review and not a readiness score."
+      "id": "crisc-free-practice-quiz",
+      "title": "Free CRISC Practice Quiz",
+      "url": "https://www.isaca.org/credentialing/crisc/crisc-practice-quiz",
+      "publisher": "ISACA",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CRISC"
+      ],
+      "notes": "Small official item-style preview; approximately 15–25 minutes plus review and not a readiness score. September 29 CRISC deep review: Public fetch captured but items not reviewed, answered or submitted. Certification landing advertises ten questions. No copied questions, score or readiness claim. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"crisc-certification-requirements","title":"CRISC Certification Requirements","url":"https://www.isaca.org/credentialing/crisc/get-crisc-certified","publisher":"ISACA","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["CRISC"],"notes":"Five-year application window and verified three years of experience across at least two domains, gained within the preceding ten years, plus application, ethics and CPE duties."
+      "id": "crisc-certification-requirements",
+      "title": "CRISC Certification Requirements",
+      "url": "https://www.isaca.org/credentialing/crisc/get-crisc-certified",
+      "publisher": "ISACA",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CRISC"
+      ],
+      "notes": "Five-year application window and verified three years of experience across at least two domains, gained within the preceding ten years, plus application, ethics and CPE duties. September 29 CRISC deep review: Complete 3119-character public main read. Three years across at least two domains, preceding ten-year window, verified application within five years of passing and US$50 fee. Anyone may sit. A CGEIT ethics label appears on this CRISC page; the copied credential label is not adopted. No personal eligibility or application action. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"crisc-maintenance-requirements","title":"Maintain CRISC Certification","url":"https://www.isaca.org/credentialing/crisc/maintain-crisc-certification","publisher":"ISACA","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["CRISC"],"notes":"Current 20 annual/120 three-year CPE, annual fee, audit, ethics and status requirements."
+      "id": "crisc-maintenance-requirements",
+      "title": "Maintain CRISC Certification",
+      "url": "https://www.isaca.org/credentialing/crisc/maintain-crisc-certification",
+      "publisher": "ISACA",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CRISC"
+      ],
+      "notes": "Current 20 annual/120 three-year CPE, annual fee, audit, ethics and status requirements. September 29 CRISC deep review: Complete 7839-character public main read. Annual 20/three-year 120 CPE, fees 45/85, ethics, audit and retention 12 months after a cycle. New linked policy specifies a minimum three years; personal transition unverified. Appeals paragraph says CISA Working Group and is not adopted as CRISC routing. No CPE or account mutation. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pluralsight-crisc-path","title":"CRISC Certification Path","url":"https://www.pluralsight.com/paths/crisctm-certified-in-risk-and-information-systems-controltm","publisher":"Pluralsight / Kevin Henry","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["CRISC"],"notes":"Five-hour, six-course 2025–26 path covering all four domains, with labs and practice exam."
+      "id": "pluralsight-crisc-path",
+      "title": "CRISC Certification Path",
+      "url": "https://www.pluralsight.com/paths/crisctm-certified-in-risk-and-information-systems-controltm",
+      "publisher": "Pluralsight / Kevin Henry",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CRISC"
+      ],
+      "notes": "Five-hour, six-course 2025–26 path covering all four domains, with labs and practice exam. September 29 CRISC deep review: Complete public path and six-course listing read. Five-hour headline; durations 90+68+80+52+23+6 total 319 minutes or 5 hours 19 minutes. Domain courses November 2025–January 2026, exam preparation April 17, 2026, lab introduction October 7, 2021. Advertised labs and practice exam not performed. Full lesson alignment and quality are not established from listings. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-crisc-aci-learning","title":"CRISC: Certified in Risk and Information Systems Control","url":"https://www.oreilly.com/videos/crisc-certified-in/9781835886465/","publisher":"O'Reilly / Packt / ACI Learning","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["CRISC"],"notes":"February 2024 intermediate 16h28m four-domain course with quizzes."
+      "id": "oreilly-crisc-aci-learning",
+      "title": "CRISC: Certified in Risk and Information Systems Control",
+      "url": "https://www.oreilly.com/videos/crisc-certified-in/9781835886465/",
+      "publisher": "O'Reilly / Packt / ACI Learning",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CRISC"
+      ],
+      "notes": "February 2024 intermediate 16h28m four-domain course with quizzes. September 29 CRISC deep review: Direct HTTP 403. Prior 16-hour-28-minute metadata, version and paid interiors not reverified. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"linkedin-crisc-cert-prep","title":"ISACA CRISC Cert Prep","url":"https://www.linkedin.com/learning/isaca-certified-in-risk-and-information-systems-control-crisc-cert-prep","publisher":"LinkedIn Learning / Cybrary","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["CRISC"],"notes":"6h3m course released December 11, 2025 and aligned to the four effective-2025 domains."
+      "id": "linkedin-crisc-cert-prep",
+      "title": "ISACA CRISC Cert Prep",
+      "url": "https://www.linkedin.com/learning/isaca-certified-in-risk-and-information-systems-control-crisc-cert-prep",
+      "publisher": "LinkedIn Learning / Cybrary",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CRISC"
+      ],
+      "notes": "6h3m course released December 11, 2025 and aligned to the four effective-2025 domains. September 29 CRISC deep review: Complete public main and table of contents read: Cybrary, beginner, December 11, 2025, 6 hours 3 minutes and four current domain titles. No paid lessons, playback, practice exam or quality assessment. Learner comments are not adopted as independently verified evidence. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-crisc-masterclass-doshi","title":"Masterclass - CRISC Exam (Updated 2026)","url":"https://www.udemy.com/course/masterclass-crisc-exam/","publisher":"Udemy / Hemang Doshi","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["CRISC"],"notes":"Approximately 19-hour supplementary course listed as updated 2026; keep the official ISACA outline authoritative."
+      "id": "udemy-crisc-masterclass-doshi",
+      "title": "Masterclass - CRISC Exam (Updated 2026)",
+      "url": "https://www.udemy.com/course/masterclass-crisc-exam/",
+      "publisher": "Udemy / Hemang Doshi",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CRISC"
+      ],
+      "notes": "Approximately 19-hour supplementary course listed as updated 2026; keep the official ISACA outline authoritative. September 29 CRISC deep review: Direct HTTP 403. Earlier about-19-hour duration and updated-2026 title not reverified. Paid lessons and question contents unreviewed. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
     },
     {
       "id":"pcep-30-02-syllabus","title":"PCEP-30-02 Exam Syllabus","url":"https://pythoninstitute.org/pcep-exam-syllabus/","publisher":"OpenEDG Python Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCEP-30-02"],"notes":"Canonical detailed four-block 18/29/25/28 syllabus, item distribution, objective hierarchy, active status and minimally qualified candidate profile."
@@ -59408,16 +59608,17 @@
       "id": "nist-ir-8286-rev1",
       "title": "NIST IR 8286 Rev. 1 — Integrating Cybersecurity and Enterprise Risk Management",
       "url": "https://csrc.nist.gov/pubs/ir/8286/r1/final",
-      "publisher": "National Institute of Standards and Technology",
+      "publisher": "NIST",
       "authority_class": 2,
       "source_type": "official-guidance",
       "access_model": "public",
       "last_checked": "2026-09-29",
       "supported_exams": [
         "CISM",
-        "CISSP"
+        "CISSP",
+        "CRISC"
       ],
-      "notes": "Transferable ERM, cyber-risk-register, aggregation, appetite, and tolerance guidance; not an ISACA exam blueprint. September 29 CISSP deep review: Complete main publication/planningnote/abstract/parts andsupplementlinks read. December18 2025finalsupersedes2020;actual78pagePDF andtwoschemasdownloaded. Notallrelatedseriespublications. See docs/research/2026-09-29-cissp-deep-review.md No live infrastructure execution. September 29 CISM deep review: Complete publication landing read; final December 18, 2025 revision replaces original 2020 publication. Genuine 78-page PDF captured. Selected pages 5, 7–9, 16, 21–25 and 48–52 read: audience/contents, appetite/tolerance, register/detail record, roles and enterprise aggregation. Other pages only searched or captured; full series/schema not validated. Inconsistent current/inherent wording in notional table is handled by explicit exercise definitions. See docs/research/2026-09-29-cism-deep-review.md No live infrastructure execution."
+      "notes": "Transferable ERM, cyber-risk-register, aggregation, appetite, and tolerance guidance; not an ISACA exam blueprint. September 29 CISSP deep review: Complete main publication/planningnote/abstract/parts andsupplementlinks read. December18 2025finalsupersedes2020;actual78pagePDF andtwoschemasdownloaded. Notallrelatedseriespublications. See docs/research/2026-09-29-cissp-deep-review.md No live infrastructure execution. September 29 CISM deep review: Complete publication landing read; final December 18, 2025 revision replaces original 2020 publication. Genuine 78-page PDF captured. Selected pages 5, 7–9, 16, 21–25 and 48–52 read: audience/contents, appetite/tolerance, register/detail record, roles and enterprise aggregation. Other pages only searched or captured; full series/schema not validated. Inconsistent current/inherent wording in notional table is handled by explicit exercise definitions. See docs/research/2026-09-29-cism-deep-review.md No live infrastructure execution. September 29 CRISC deep review: Complete landing and selected genuine 78-page PDF material read in the same-day CISM review; fresh CRISC landing and same PDF bytes captured. Pages 5, 7–9, 16, 21–25 and 48–52 cover audience, register/detail records, ownership and enterprise reporting. Full publication and series not audited; definitions normalized explicitly. See docs/research/2026-09-29-crisc-deep-review.md No live infrastructure execution."
     },
     {
       "id": "cisa-msp-customer-advisory",

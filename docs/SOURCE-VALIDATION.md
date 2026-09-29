@@ -1910,6 +1910,8 @@ resources are named as official item-style sources. Blueprint SHA-256:
 
 ## CRISC coverage record
 
+The September 29 [deep review](research/2026-09-29-crisc-deep-review.md) maps 68 detailed objectives. Mapped 44 canonical domain-list entries and 24 tasks, explaining the PDF heading/count difference. Added 40 answer notes, three worked scenarios, eight proposed activities and 52 executed schema, simulation and portfolio checks. Corrected the QAE pool to 833 and resource durations; qualified a NIST confidence-example inconsistency. Paid interiors, personal eligibility, organizational controls and human review remain pending. Current guide citations: 19 registered, 17 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Governance (26%), Risk Assessment (22%), Risk Response and Reporting (32%), and Technology and Security (20%)

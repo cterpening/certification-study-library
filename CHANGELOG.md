@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [CRISC deep review](docs/research/2026-09-29-crisc-deep-review.md): Mapped 68 canonical entries; corrected QAE count and added 40 answers, three worked scenarios and 52 executed schema, simulation and portfolio checks.
+
 - September 29, 2026: [CISM deep review](docs/research/2026-09-29-cism-deep-review.md): Mapped 72 current entries; corrected November weights/architecture changes and added 40 answers, three worked scenarios and 47 executed management checks.
 
 - September 29, 2026: [CISA deep review](docs/research/2026-09-29-cisa-deep-review.md): Mapped 60 subtopics and 43 tasks; added 40 answers and 47 executed checks including SQLite backup/restore, and updated ITAF, QAE and 2027 CPE guidance.
