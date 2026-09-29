@@ -4,6 +4,253 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-cks-deep-review",
+      "title": "CKS complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CKS"
+      ],
+      "results": [
+        {
+          "exam_code": "CKS",
+          "vendor_id": "linux-foundation",
+          "guide_path": "guides/CKS-certified-kubernetes-security-specialist.md",
+          "baseline_sha256": "5aa66561728ca823b0a74b6912d8eb7113d7fcc78e32d94b843cefaca71502d0",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Full LinuxFoundation and CNCF overview read, repositorycontents listing checked and actual three-page v1.34-namedPDF read.26competencies in groups5/4/4/4/4/5 match live15/15/10/20/20/20weights despite filename; overview retains10/15/15firstweights. Canonicalv1.35,twohour,twoyr,12montheligibility,1retake,2x36hsimulators. Current simulator17 replaces older20–25guideclaim; not realexamcount. PriorCKApass required,neednotactive perCNCF. Bothmonitorsunchanged,no baseline rewrite; scheduledflagcorrected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Targeted versioned audit/APItypes,PSA/labels/PSS,seccomp/AppArmor,encryption,RBAC,webhooks,Secrets/ServiceAccounts/securitycontext/networkpolicy read. OpenSSL3.5signature/keygeneration and current Istio/Cilium/Falco boundaries read. Exact two public examples executed:17 real local cryptographic/claimchecks plus12 restricted Python audit-policy model checks. No cluster/kernel/API/backend/mesh behavior executed."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Canonicalexam remainsv1.35; v1.37 release is only approximate alignmentwatch,not announcedtransition. RepositorycurrentlyonlynamesCKSPDFv1.34butitscontentsmatchcurrentobjectives. Ingress-nginxretirement notice fullyread inprecedingreview and reused ascontroller-specificboundary. Currentupstream productdocs may exceedexaminstalledversions; verify components beforelab."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "LFS26026–30h,ninechapters,Linux+cloud/VirtualBoxlabaccess andpossiblecosts. Pluralsight7courses/3labs/12h with2022intro,2025courses,2026clustercontent andJul/Aug/Sep2026labs. KodeKloud8.75h,8modules150lessons,May2025v1.33inprogresshistory,optionalobsoletePSPtitle,noexplicitSBOM/signaturetitlesvisible. Paidinteriors/runtimeunknown; OReilly/Udemyblocked andinheriteddurations/datesqualified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Distinguish PDFfilename fromactualscope; authoritativepagecontrolsCNCFoverviewconflict. Teach signaturetrust/claim/digest/release separately,firstmatchauditordering/omitStagesunion,Secretbodyprotection,PSAtemplatesversusPods,profileAPIversuskerneladmission,encryptedwritesversusmigration/keyretention,webhookdenialversuscallfailure,namedRBACanddelegation,IstiomTLSversusauthorization,Ciliumcoverage andFalcoruleseverity/noise.46answeredchecks,8fullclusterlabsproposed,Places to learnfinal."
+            }
+          },
+          "findings": [
+            {
+              "id": "cks-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Older PDF filename does not mean older objective weights",
+              "url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKS_Curriculum%20v1.34.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Actual three-page v1.34-named PDF lists current 15/15/10/20/20/20 weights and 26 competencies, while CNCF overview retains older first-three weights.",
+              "recommendation": "Clarify discrepancy and retain Linux Foundation canonical scope; do not overwrite baselines.",
+              "disposition": "applied",
+              "source_id": "cks134-curriculum-pdf",
+              "resolution": "Clarify discrepancy and retain Linux Foundation canonical scope; do not overwrite baselines."
+            },
+            {
+              "id": "cks-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Current simulator count differs from guide metadata",
+              "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current page lists17questions per simulator activation; guide inherited20–25datedSeptember17. No concrete exam-version switch date is announced.",
+              "recommendation": "Update simulator-only number and date; replace unsupported scheduled flag with none-announced while keeping approximate watch.",
+              "disposition": "applied",
+              "source_id": "lf-cks-blueprint",
+              "resolution": "Update simulator-only number and date; replace unsupported scheduled flag with none-announced while keeping approximate watch."
+            },
+            {
+              "id": "cks-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A signature check does not establish signer identity or deployment policy",
+              "url": "https://docs.openssl.org/3.5/man1/openssl-dgst/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Detached signature verification validates signed bytes against a supplied key, not its publisher identity or all related claims.",
+              "recommendation": "Execute original real positive/negative checks plus signed claim/digest/release approval conditions with explicit trust limits.",
+              "disposition": "applied",
+              "source_id": "openssl35-dgst",
+              "resolution": "Execute original real positive/negative checks plus signed claim/digest/release approval conditions with explicit trust limits."
+            },
+            {
+              "id": "cks-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Audit rules are first-match and omitted stages are combined",
+              "url": "https://raw.githubusercontent.com/kubernetes/apiserver/release-1.35/pkg/apis/audit/v1/types.go",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "A broad earlier body-logging rule can bypass later SecretMetadata intent; no matching rule means noevent.",
+              "recommendation": "Add exact restricted model and12checks; distinguish prediction from actual auditing/backendverification.",
+              "disposition": "applied",
+              "source_id": "k8s135-audit-types",
+              "resolution": "Add exact restricted model and12checks; distinguish prediction from actual auditing/backendverification."
+            },
+            {
+              "id": "cks-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Workload admission and Pod security enforcement are different checks",
+              "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/security/pod-security-admission.md",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Enforce applies to resultingPods; audit/warn also evaluate workloadtemplates and exemptions skipallmodes.",
+              "recommendation": "Explain existingDeployment/deniedPods and strengthen liveevidence requirements.",
+              "disposition": "applied",
+              "source_id": "k8s135-psa-source",
+              "resolution": "Explain existingDeployment/deniedPods and strengthen liveevidence requirements."
+            },
+            {
+              "id": "cks-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Omitted seccomp fields do not prove runtime-default enforcement",
+              "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tutorials/security/seccomp.md",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Effective default depends on kubeletseccompDefault; APIfieldsneednotchange andprivilegedcontainersrunUnconfined.",
+              "recommendation": "Require installednode/runtimeevidence and explain explicitprofileversusdefault.",
+              "disposition": "applied",
+              "source_id": "k8s135-seccomp-source",
+              "resolution": "Require installednode/runtimeevidence and explain explicitprofileversusdefault."
+            },
+            {
+              "id": "cks-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "API creation does not prove requested AppArmor profile runs",
+              "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tutorials/security/apparmor.md",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "A missing explicitprofile can cause kubeletrefusal after APIobjectcreation.",
+              "recommendation": "Correct profilecoverage answer and add pernode/replacement verification.",
+              "disposition": "applied",
+              "source_id": "k8s135-apparmor-source",
+              "resolution": "Correct profilecoverage answer and add pernode/replacement verification."
+            },
+            {
+              "id": "cks-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "New encryption configuration does not migrate all old records",
+              "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/administer-cluster/encrypt-data.md",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Firstprovider/keywrites;matchingprovidersdecrypt;olddatarequiresrewrite andoldkeyretentionuntilmigration/recoveryproof.",
+              "recommendation": "Add controlledmigration/backupboundary with no actualstorage or globalrewrite operation.",
+              "disposition": "applied",
+              "source_id": "k8s135-encrypt-data-source",
+              "resolution": "Add controlledmigration/backupboundary with no actualstorage or globalrewrite operation."
+            },
+            {
+              "id": "cks-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Ignore handles call failures rather than overriding explicit denial",
+              "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/reference/access-authn-authz/extensible-admission-controllers.md",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "failurePolicy controls errors/timeouts; admissionresponse allowedfalse is a policyrejection.",
+              "recommendation": "Teach separate callhealth andallow/denytests plusdryrun/persistencebounds.",
+              "disposition": "applied",
+              "source_id": "k8s135-admission-webhooks-source",
+              "resolution": "Teach separate callhealth andallow/denytests plusdryrun/persistencebounds."
+            },
+            {
+              "id": "cks-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Encryption coverage depends on traffic path and mode",
+              "url": "https://docs.cilium.io/en/stable/security/network/encryption-wireguard/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Same-nodepacketsareunencrypted;nodeencryptionhasadditionalconfiguration andcontrol-planeoptoutdistinctfromPodtraffic.",
+              "recommendation": "Add proposedcoverage matrix andqualifyinstalledversion; no networkconfigurationorpacket capture.",
+              "disposition": "applied",
+              "source_id": "cilium-wireguard",
+              "resolution": "Add proposedcoverage matrix andqualifyinstalledversion; no networkconfigurationorpacket capture."
+            }
+          ],
+          "notes": "Mapped all 26 live competencies and read the actual three-page CKS PDF: its older filename still contains the current outline and weights, while the CNCF overview weights remain inconsistent. Retained unchanged monitor snapshots, corrected current simulator metadata and unsupported scheduled status, and added exact original exercises with 17 real signature/claim checks plus 12 restricted audit-model checks. Expanded admission, encryption, RBAC, kernel and telemetry distinctions, answered 46 checks and strengthened eight proposed cluster labs; native cluster validation remains deferred. Same-context AI review; human review pending. See docs/research/2026-09-29-cks-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 10,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-ckad-deep-review",
       "title": "CKAD complete guide and learning-content review",
       "rubric_version": 1,

@@ -1,0 +1,1740 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "CKS",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/CKS-certified-kubernetes-security-specialist.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "a0558b77be560263164e634ab83770c782f19ca4c71540509e8545cb3fca7a3a",
+  "guide_after_sha256": "302301c7ac22f14d4b0bb7568ae125a2f99c2a5c5c0a8fd82f8de41c4f04b601",
+  "prior_records": {
+    "exam": {
+      "code": "CKS",
+      "level": "expert",
+      "vendor_id": "linux-foundation",
+      "title": "Certified Kubernetes Security Specialist",
+      "status": "active",
+      "study_guide_url": "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/",
+      "guide_path": "guides/CKS-certified-kubernetes-security-specialist.md",
+      "blueprint_last_checked": "2026-09-06",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-06",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Must previously have passed CKA; the current official policy says CKA need not remain active. Practice v1.35 cluster/setup/system hardening; RBAC, ServiceAccounts and API exposure; Pod Security, Secrets, sandboxing and mTLS; SBOM/provenance/signing/admission/scanning; audit/runtime detection, investigation, immutability and recovery. Verify the live version and weights because v1.37 is in the provider's 4–8-week watch window and the CNCF overview retains older weights while the v1.34-named PDF matches the current Linux Foundation outline."
+    },
+    "review": {
+      "id": "cks-2026-09-01-source-validation",
+      "exam_code": "CKS",
+      "guide_path": "guides/CKS-certified-kubernetes-security-specialist.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-06",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/cks-official-objectives.txt",
+      "blueprint_snapshot_sha256": "26ca4b0afc590f0df1dbf0ed60a435ce420efc6ac6d4ae95ec41dac302925c98",
+      "objective_coverage": [
+        {
+          "objective_group": "Cluster Setup (15%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenario 1",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Cluster Hardening (15%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenario 1",
+            "Labs 2 and 8"
+          ]
+        },
+        {
+          "objective_group": "System Hardening (10%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenario 1",
+            "Labs 3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Minimize Microservice Vulnerabilities (20%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenario 2",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Supply Chain Security (20%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenario 2",
+            "Labs 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Monitoring, Logging and Runtime Security (20%)",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenario 3",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 9,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All six live Linux Foundation Kubernetes v1.35 domains are mapped through prevention, detection, response and recovery, with three defensive scenarios, eight authorized labs and 42 original checks. All 11 guide URLs are cataloged: nine reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The live 15/15/10 weights, lagging CNCF 10/15/15 overview/v1.34 PDF and previously-passed-but-not-active CKA policy are explicit. The August 26 v1.37 release creates a bounded September 23–October 21 recheck window without overriding v1.35, and the retired community ingress-nginx controller is distinguished from the stable Ingress API and current objective. No offensive target instructions, proprietary simulator tasks, course labs or recalled exam tasks are used. September 17, 2026 public delivery-page maintenance: corrected the listed simulator question range to 20–25, explicitly separated from live exam item counts. Historical objective and full-review dates are unchanged."
+    },
+    "sources": [
+      {
+        "id": "kubernetes-v1-35-docs",
+        "title": "Kubernetes v1.35 documentation",
+        "url": "https://v1-35.docs.kubernetes.io/docs/home/",
+        "publisher": "Kubernetes project",
+        "authority_class": 2,
+        "source_type": "official-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "CKA",
+          "CKAD",
+          "CKS"
+        ],
+        "notes": "Version-matched technical reference. The docs site labels v1.35 a static older snapshot because newer Kubernetes releases exist; the live Linux Foundation CKA, CKAD and CKS pages nevertheless still name v1.35."
+      },
+      {
+        "id": "kubernetes-v1-37-release",
+        "title": "Kubernetes v1.37: Garhwal",
+        "url": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
+        "publisher": "Kubernetes project",
+        "authority_class": 1,
+        "source_type": "release-notes",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "CKA",
+          "CKAD",
+          "CKS"
+        ],
+        "notes": "Official August 26, 2026 minor-release announcement. It triggers the Linux Foundation 4–8-week exam-version recheck but does not override the live v1.35 CKA, CKAD, or CKS pages and curricula."
+      },
+      {
+        "id": "kubernetes-ingress-nginx-retirement",
+        "title": "Ingress NGINX Retirement: What You Need to Know",
+        "url": "https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/",
+        "publisher": "Kubernetes project",
+        "authority_class": 1,
+        "source_type": "lifecycle-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "CKA",
+          "CKAD",
+          "CKS"
+        ],
+        "notes": "Official notice that the community ingress-nginx controller retired in March 2026. The Kubernetes Ingress API and the current CKA, CKAD, and CKS objectives were not retired."
+      },
+      {
+        "id": "lf-cks-blueprint",
+        "title": "Certified Kubernetes Security Specialist",
+        "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/",
+        "publisher": "Linux Foundation / CNCF",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "CKS"
+        ],
+        "notes": "Canonical current six-domain page; Kubernetes v1.35 with 15/15/10/20/20/20 weights, two-hour online performance exam, two-year validity, 12-month eligibility, one retake and simulator listed. Requires a previously passed CKA, which need not remain active."
+      },
+      {
+        "id": "cncf-cks-overview",
+        "title": "CNCF Certified Kubernetes Security Specialist overview",
+        "url": "https://www.cncf.io/training/certification/cks/",
+        "publisher": "CNCF",
+        "authority_class": 1,
+        "source_type": "official-reference",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "CKS"
+        ],
+        "notes": "Official program and prerequisite page, but it still shows earlier 10/15/15 first-three weights. Use the live Linux Foundation v1.35 page for current objective weights until reconciled."
+      },
+      {
+        "id": "cncf-cks-curriculum",
+        "title": "CNCF CKS v1.34 curriculum",
+        "url": "https://github.com/cncf/curriculum/blob/master/CKS_Curriculum%20v1.34.pdf",
+        "publisher": "CNCF",
+        "authority_class": 1,
+        "source_type": "official-reference",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "CKS"
+        ],
+        "notes": "Latest publicly named CKS PDF visible in the CNCF curriculum repository is v1.34 while the exam page names v1.35; gap-check and do not use it to override the live page."
+      },
+      {
+        "id": "lf-cks-lfs260",
+        "title": "Kubernetes Security Essentials (LFS260)",
+        "url": "https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/",
+        "publisher": "Linux Foundation",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "CKS"
+        ],
+        "notes": "Official aligned self-paced course with 26–30 hours, hands-on labs and assignments listed; requires strong CKA-level readiness."
+      },
+      {
+        "id": "lf-cks-pluralsight",
+        "title": "Certified Kubernetes Security Specialist path",
+        "url": "https://www.pluralsight.com/paths/certified-kubernetes-security-specialist-cks",
+        "publisher": "Pluralsight",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "CKS"
+        ],
+        "notes": "Seven courses, three refreshed 2026 labs, 12 hours and practice exam listed; domain courses span 2025–2026, with an older introduction."
+      },
+      {
+        "id": "lf-cks-kodekloud",
+        "title": "Certified Kubernetes Security Specialist course",
+        "url": "https://kodekloud.com/courses/certified-kubernetes-security-specialist-cks/",
+        "publisher": "KodeKloud / Mumshad Mannambeth / Vijin Palazhi",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "CKS"
+        ],
+        "notes": "8.75 video hours plus browser labs and mock exams listed; public update history stops at Kubernetes 1.33 and needs explicit v1.35/weight gap work."
+      },
+      {
+        "id": "lf-cks-oreilly-jackson",
+        "title": "Certified Kubernetes Security Specialist CKS",
+        "url": "https://www.oreilly.com/videos/certified-kubernetes-security/9780138296537/",
+        "publisher": "O'Reilly / Pearson / Chris Jackson",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "CKS"
+        ],
+        "notes": "February 2025 intermediate on-demand course, 19 hours 38 minutes; gap-check v1.35 APIs, tools and the live 15/15/10 weights."
+      },
+      {
+        "id": "lf-cks-udemy-vora",
+        "title": "Certified Kubernetes Security Specialist 2026",
+        "url": "https://www.udemy.com/course/certified-kubernetes-security-specialist-certification/",
+        "publisher": "Udemy / Zeal Vora",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "CKS"
+        ],
+        "notes": "19 hours 58 minutes, 129 lectures and lab-oriented coverage listed, updated July 2026; independently map against the current live objectives."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "fa737f97faed639090c35f7d69666929fd57cb69be9cb9ad13ae935530369767",
+      "guide_sections": [
+        "1. Cluster setup",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "f357bd65069d7b0b63d2e62a7b638d57280ad2e00c59e4b95a6fbffcd95ce6bc",
+      "guide_sections": [
+        "1. Cluster setup",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "b26087d6c708b10d27925eeb2d58eca64a21c1e7c91b95d57f84d1773bf897fb",
+      "guide_sections": [
+        "1. Cluster setup",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "323a517b85c218fd1fe13af9e8896253500ad482e18beda5b5ae4d2cb6bf5082",
+      "guide_sections": [
+        "1. Cluster setup",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "71b9f00b96c239b044970b2468fee78f98a5720c89d1fa7b27a7fff62213ba82",
+      "guide_sections": [
+        "1. Cluster setup",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "8d8920d4d5b07ec19303b73b23a7ee7dbb5e9daef163a63052abff0a70c5a835",
+      "guide_sections": [
+        "2. Cluster hardening",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "aca309116d2b43362f441acbc2f6afd3201453ebd25cff4c19c315558684a057",
+      "guide_sections": [
+        "2. Cluster hardening",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "53a8e06ccb3ae4de749382fdbca7426eb098559b068b69147e65ffd54e2119cb",
+      "guide_sections": [
+        "2. Cluster hardening",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "ccfce33f91eda3224616039934a66af5043fe0bbbf1b407ce7886c160880f103",
+      "guide_sections": [
+        "2. Cluster hardening",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "6dee210bd2f782cf0d84518b8497341036970c1d1c59750ce431962f940d49ce",
+      "guide_sections": [
+        "3. System hardening",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "d0dc98c500e089e0a60a7c55dbc57fcc2679a110ffdfc11d29963a1eb917390f",
+      "guide_sections": [
+        "3. System hardening",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "e17e5409fc454e42a6610ac1687939a94faf1c4ddae2107c0c2f8216477743ea",
+      "guide_sections": [
+        "3. System hardening",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "9ffbb46f5018cb8c1248cebec6319bb2918243ded34d6504bef6001e7e806dcd",
+      "guide_sections": [
+        "3. System hardening",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "c9d0008053dca4118b8cef486e84a30d47aa023a5e972624e3566e7c8677f75a",
+      "guide_sections": [
+        "4. Minimize microservice vulnerabilities",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "b9b4d90c4653e3f1e35b9d4b989563a99e5a260b852fc3cca612c6046e112da6",
+      "guide_sections": [
+        "4. Minimize microservice vulnerabilities",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "d5a4b5739265961fbf1a4ac2b1cdd5a2228dd40af7c8c42788ee18d926583f0f",
+      "guide_sections": [
+        "4. Minimize microservice vulnerabilities",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "6c641d45d8c180d17cfbffc51c7ca266c558b34007aab450ae7ba2885989514c",
+      "guide_sections": [
+        "4. Minimize microservice vulnerabilities",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "c02b75d9ec3e9e198fc10225f72e6bbb79166820bc3fe8958419a802b31f3d89",
+      "guide_sections": [
+        "5. Supply chain security",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "1f4060ff031d89bd5ac4a2860e009e3b62f0c81c05250b7144aed0f22c08c0d7",
+      "guide_sections": [
+        "5. Supply chain security",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "ab320b54429d4ad22e2fe89cbf0a3480ebbf37b28f91caaaf382c4795725311e",
+      "guide_sections": [
+        "5. Supply chain security",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "5f7222089db03d564dac410e408a41f06d7f5556dfbad42945c72ee393a3bb32",
+      "guide_sections": [
+        "5. Supply chain security",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "4e12969df884a6f73559b48e3b7dc3ca8bc85f51ecb72660392d9f89b58d59d7",
+      "guide_sections": [
+        "6. Monitoring, logging and runtime security",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "52aae0bb9265fd349fa6ce81861d26402dd5d00f647dc2e37b67f1099ccfe2ea",
+      "guide_sections": [
+        "6. Monitoring, logging and runtime security",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "f6f6a6f1e0857e8a5f322e548b9ab126354be3f7a68db29b86f99fc9df76684a",
+      "guide_sections": [
+        "6. Monitoring, logging and runtime security",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "28dbef1d4d40df271e765e951d159a0ccd3d98314994769cf882006752cc9b8e",
+      "guide_sections": [
+        "6. Monitoring, logging and runtime security",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "470c16aed748ba0f115eba4481c0639fdf9ff4a081461075a43e737e93b37f6b",
+      "guide_sections": [
+        "6. Monitoring, logging and runtime security",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "CKS",
+        "title": "Certified Kubernetes Security Specialist",
+        "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/",
+        "guide_path": "guides/CKS-certified-kubernetes-security-specialist.md",
+        "snapshot_path": "data\\objective-snapshots\\cks-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\cks-official-status.json",
+        "previous_sha256": "26ca4b0afc590f0df1dbf0ed60a435ce420efc6ac6d4ae95ec41dac302925c98",
+        "current_sha256": "26ca4b0afc590f0df1dbf0ed60a435ce420efc6ac6d4ae95ec41dac302925c98",
+        "previous_status_sha256": "16a166fc77a8a2e390c7b994a090650b90dde91f3f9cb52c94bbd6263880e389",
+        "current_status_sha256": "16a166fc77a8a2e390c7b994a090650b90dde91f3f9cb52c94bbd6263880e389",
+        "official_status": {
+          "skills_versions": [
+            "This exam is an online, proctored, performance-based test that requires solving multiple tasks from a command line running Kubernetes. Candidates have 2 hours to complete the tasks. Certified Kubernetes Security Specialist (CKS) candidates must have taken and passed the Certified Kubernetes Administrator (CKA) exam prior to attempting the CKS exam.",
+            "The exam is based on Kubernetes v1.35",
+            "Certified Kubernetes Security Specialist (CKS) candidates must have taken and passed the Certified Kubernetes Administrator (CKA) exam prior to attempting the CKS exam.",
+            "Duration of Exam 2 Hours",
+            "Software Version: Kubernetes v1.35"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 31,
+    "reachable": 29,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "kubernetes-v1-35-docs",
+      "url": "https://v1-35.docs.kubernetes.io/docs/home/",
+      "checked_at": "2026-09-29T06:20:13.214232+00:00",
+      "health": {
+        "id": "kubernetes-v1-35-docs",
+        "url": "https://v1-35.docs.kubernetes.io/docs/home/",
+        "checked_at": "2026-09-29T06:20:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://v1-35.docs.kubernetes.io/docs/home/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Kubernetes Documentation",
+        "canonical_url": "https://v1-35.docs.kubernetes.io/docs/home/",
+        "duration_signals": [],
+        "signal_fingerprint": "beee925ba93f3af4bbaa19f71f4f188658da5b308587378eca6dc7388f40fa27",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://v1-35.docs.kubernetes.io/docs/home/",
+      "sha256": "1f4b9577e755911bc289a7f763e2fb0b285aaf37d944d89019ab8de75d10b062",
+      "text_characters": 2331
+    },
+    {
+      "id": "kubernetes-v1-37-release",
+      "url": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
+      "checked_at": "2026-09-29T06:20:13.214938+00:00",
+      "health": {
+        "id": "kubernetes-v1-37-release",
+        "url": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
+        "checked_at": "2026-09-29T06:20:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Kubernetes v1.37: Garhwal",
+        "canonical_url": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
+        "duration_signals": [],
+        "signal_fingerprint": "537a7fdd296cb8f2c0a0e30e2269ab1ff8a168a7dede070ab22fb04b854ada17",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
+      "sha256": "744fe3c027f3af2a26df32943076e3a591fe3c943137efad8c9cfadc84e295bf",
+      "text_characters": 57279
+    },
+    {
+      "id": "kubernetes-ingress-nginx-retirement",
+      "url": "https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/",
+      "checked_at": "2026-09-29T06:20:13.215327+00:00",
+      "health": {
+        "id": "kubernetes-ingress-nginx-retirement",
+        "url": "https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/",
+        "checked_at": "2026-09-29T06:20:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Ingress NGINX Retirement: What You Need to Know",
+        "canonical_url": "https://www.kubernetes.dev/blog/2025/11/12/ingress-nginx-retirement",
+        "duration_signals": [],
+        "signal_fingerprint": "cf6b5c875f4470003a0ff500f44d079a5349d7c84649926c3ff6c1d97fed4bc5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/",
+      "sha256": "dfef12da6a0b9fd45cdee565cde290023482e7f7f07478b33353fa2489a8334d",
+      "text_characters": 4951
+    },
+    {
+      "id": "lf-cks-blueprint",
+      "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/",
+      "checked_at": "2026-09-29T06:20:14.702038+00:00",
+      "health": {
+        "id": "lf-cks-blueprint",
+        "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/",
+        "checked_at": "2026-09-29T06:20:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Certified Kubernetes Security Specialist (CKS) | Linux Foundation Education",
+        "canonical_url": "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/",
+        "duration_signals": [
+          "2 Hours",
+          "2 hours",
+          "36 hours"
+        ],
+        "signal_fingerprint": "3f79257afaef4b750c5a53bd092bae3851a9176964728eaacff5a3ef03468e33",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/",
+      "sha256": "a705ebba894c74410b4ec40c905e701db34324d2db56796cd94d1c9b7e74223e",
+      "text_characters": 14528
+    },
+    {
+      "id": "cncf-cks-overview",
+      "url": "https://www.cncf.io/training/certification/cks/",
+      "checked_at": "2026-09-29T06:20:15.268376+00:00",
+      "health": {
+        "id": "cncf-cks-overview",
+        "url": "https://www.cncf.io/training/certification/cks/",
+        "checked_at": "2026-09-29T06:20:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cncf.io/training/certification/cks/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Certified Kubernetes Security Specialist (CKS)",
+        "canonical_url": "https://www.cncf.io/training/certification/cks/",
+        "duration_signals": [],
+        "signal_fingerprint": "1a7d93f755d1c5c40816dbd90383f9ba726c853b4b429b562ab73cda94f59249",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cncf.io/training/certification/cks/",
+      "sha256": "dafd4f094c9c77afcdceec2c58817acdfd073253904124a4614dae04bc1da526",
+      "text_characters": 3134
+    },
+    {
+      "id": "cncf-cks-curriculum",
+      "url": "https://github.com/cncf/curriculum/blob/master/CKS_Curriculum%20v1.34.pdf",
+      "checked_at": "2026-09-29T06:20:15.384468+00:00",
+      "health": {
+        "id": "cncf-cks-curriculum",
+        "url": "https://github.com/cncf/curriculum/blob/master/CKS_Curriculum%20v1.34.pdf",
+        "checked_at": "2026-09-29T06:20:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/cncf/curriculum/blob/master/CKS_Curriculum%20v1.34.pdf",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "curriculum/CKS_Curriculum v1.34.pdf at master · cncf/curriculum",
+        "canonical_url": "https://github.com/cncf/curriculum/blob/master/CKS_Curriculum%20v1.34.pdf",
+        "duration_signals": [],
+        "signal_fingerprint": "9f00edd67bbdbf38e87f3c564ffa65cc96fbae1622b5d0b5eaa23b8f26e36d83",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/cncf/curriculum/blob/master/CKS_Curriculum%20v1.34.pdf",
+      "sha256": "83a1e4d6397e12e73debf35c9913cc4c5c636bd987d6887d03acf5c5b871edda",
+      "text_characters": 606
+    },
+    {
+      "id": "lf-cks-lfs260",
+      "url": "https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/",
+      "checked_at": "2026-09-29T06:20:15.911627+00:00",
+      "health": {
+        "id": "lf-cks-lfs260",
+        "url": "https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/",
+        "checked_at": "2026-09-29T06:20:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Kubernetes Security Essentials (LFS260) | Linux Foundation Education",
+        "canonical_url": "https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/",
+        "duration_signals": [
+          "30 Hours"
+        ],
+        "signal_fingerprint": "abf51f9262057cf4da050f7a2e3ecbdfcc7ee039e1b61fb62393efb50482a2c1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/",
+      "sha256": "e286ba9ec676919778b35e7c8f4d9df30a3df0d5062ac60ecda8968ab3882bd7",
+      "text_characters": 8941
+    },
+    {
+      "id": "lf-cks-pluralsight",
+      "url": "https://www.pluralsight.com/paths/certified-kubernetes-security-specialist-cks",
+      "checked_at": "2026-09-29T06:20:16.002539+00:00",
+      "health": {
+        "id": "lf-cks-pluralsight",
+        "url": "https://www.pluralsight.com/paths/certified-kubernetes-security-specialist-cks",
+        "checked_at": "2026-09-29T06:20:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/certified-kubernetes-security-specialist-cks",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Certified Kubernetes Security Specialist (CKS)",
+        "canonical_url": "https://www.pluralsight.com/paths/certified-kubernetes-security-specialist-cks",
+        "duration_signals": [
+          "12 Hours"
+        ],
+        "signal_fingerprint": "55d2de7ad588cd5701aa75e3deb6dce01a6f3604ed8ea77159989418c8b36666",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/certified-kubernetes-security-specialist-cks",
+      "sha256": "31b346744a4600a112c9a3cc336bf45e6b075cc437668ddad44301af3ed4e541",
+      "text_characters": 4026
+    },
+    {
+      "id": "lf-cks-kodekloud",
+      "url": "https://kodekloud.com/courses/certified-kubernetes-security-specialist-cks/",
+      "checked_at": "2026-09-29T06:20:16.534018+00:00",
+      "health": {
+        "id": "lf-cks-kodekloud",
+        "url": "https://kodekloud.com/courses/certified-kubernetes-security-specialist-cks/",
+        "checked_at": "2026-09-29T06:20:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://kodekloud.com/courses/certified-kubernetes-security-specialist-cks/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Certified Kubernetes Security Specialist (CKS) Course | KodeKloud",
+        "canonical_url": "https://kodekloud.com/courses/certified-kubernetes-security-specialist-cks",
+        "duration_signals": [
+          "08.75 Hours",
+          "15 Hours",
+          "20 Hours",
+          "48 Hours",
+          "6 Hours",
+          "9 Hours"
+        ],
+        "signal_fingerprint": "71617af6f801596b18d2293087891ac5d726782c217205bbd36f2311baf41110",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://kodekloud.com/courses/certified-kubernetes-security-specialist-cks/",
+      "sha256": "fff2a576de727a42046c44b67a02ceac858a4b7d732b5f823c8dbfea15ff39a1",
+      "text_characters": 17158
+    },
+    {
+      "id": "lf-cks-oreilly-jackson",
+      "url": "https://www.oreilly.com/videos/certified-kubernetes-security/9780138296537/",
+      "checked_at": "2026-09-29T06:20:17.029591+00:00",
+      "health": {
+        "id": "lf-cks-oreilly-jackson",
+        "url": "https://www.oreilly.com/videos/certified-kubernetes-security/9780138296537/",
+        "checked_at": "2026-09-29T06:20:17+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/certified-kubernetes-security/9780138296537/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "lf-cks-udemy-vora",
+      "url": "https://www.udemy.com/course/certified-kubernetes-security-specialist-certification/",
+      "checked_at": "2026-09-29T06:20:17.240731+00:00",
+      "health": {
+        "id": "lf-cks-udemy-vora",
+        "url": "https://www.udemy.com/course/certified-kubernetes-security-specialist-certification/",
+        "checked_at": "2026-09-29T06:20:17+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/certified-kubernetes-security-specialist-certification/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "cks134-curriculum-pdf",
+      "url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKS_Curriculum%20v1.34.pdf",
+      "checked_at": "2026-09-29T06:23:20.531724+00:00",
+      "health": {
+        "id": "cks134-curriculum-pdf",
+        "url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKS_Curriculum%20v1.34.pdf",
+        "checked_at": "2026-09-29T06:23:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKS_Curriculum%20v1.34.pdf",
+        "content_type": "application/octet-stream",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKS_Curriculum%20v1.34.pdf",
+      "sha256": "a755a5680bec6978de4a3074d7f0c7fe978bd7a9ad5e4f1681597aedda6f6637",
+      "bytes": 170239,
+      "pdf_pages": 3,
+      "text_characters": 2836
+    },
+    {
+      "id": "k8s135-audit-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/debug/debug-cluster/audit.md",
+      "checked_at": "2026-09-29T06:24:48.566103+00:00",
+      "health": {
+        "id": "k8s135-audit-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/debug/debug-cluster/audit.md",
+        "checked_at": "2026-09-29T06:24:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/debug/debug-cluster/audit.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/debug/debug-cluster/audit.md",
+      "sha256": "8886dbd0e43eb408967de225f511a0291321fc342b615fde45edff76daa0f3e6",
+      "text_characters": 12470
+    },
+    {
+      "id": "k8s135-psa-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/security/pod-security-admission.md",
+      "checked_at": "2026-09-29T06:24:48.566951+00:00",
+      "health": {
+        "id": "k8s135-psa-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/security/pod-security-admission.md",
+        "checked_at": "2026-09-29T06:24:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/security/pod-security-admission.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/security/pod-security-admission.md",
+      "sha256": "8797794316084b9d6a26ccccf6b9a1b15e0ef9a244c04eab12379d95d2286cc4",
+      "text_characters": 7518
+    },
+    {
+      "id": "k8s135-pss-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/security/pod-security-standards.md",
+      "checked_at": "2026-09-29T06:24:48.567270+00:00",
+      "health": {
+        "id": "k8s135-pss-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/security/pod-security-standards.md",
+        "checked_at": "2026-09-29T06:24:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/security/pod-security-standards.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/security/pod-security-standards.md",
+      "sha256": "7b45386d6f083d0a02871918e7648f09deb3f65f408c6117932d89dd56e040c6",
+      "text_characters": 16411
+    },
+    {
+      "id": "k8s135-seccomp-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tutorials/security/seccomp.md",
+      "checked_at": "2026-09-29T06:24:48.848664+00:00",
+      "health": {
+        "id": "k8s135-seccomp-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tutorials/security/seccomp.md",
+        "checked_at": "2026-09-29T06:24:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tutorials/security/seccomp.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tutorials/security/seccomp.md",
+      "sha256": "547c8551cf4ffedb33ae431d3e93400d7e00f86d9a45b8966cc418a3571a3834",
+      "text_characters": 19889
+    },
+    {
+      "id": "k8s135-apparmor-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tutorials/security/apparmor.md",
+      "checked_at": "2026-09-29T06:24:48.857910+00:00",
+      "health": {
+        "id": "k8s135-apparmor-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tutorials/security/apparmor.md",
+        "checked_at": "2026-09-29T06:24:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tutorials/security/apparmor.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tutorials/security/apparmor.md",
+      "sha256": "fa5223a6cec31b0e6c4758694495a1e626289461bb739d21674d6469458025b6",
+      "text_characters": 9447
+    },
+    {
+      "id": "k8s135-encrypt-data-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/administer-cluster/encrypt-data.md",
+      "checked_at": "2026-09-29T06:24:48.883345+00:00",
+      "health": {
+        "id": "k8s135-encrypt-data-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/administer-cluster/encrypt-data.md",
+        "checked_at": "2026-09-29T06:24:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/administer-cluster/encrypt-data.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/administer-cluster/encrypt-data.md",
+      "sha256": "aa9b1441b32a270db67ab41969c34fbf345f4c6ef898e7bb104afa9cea66fbbc",
+      "text_characters": 26681
+    },
+    {
+      "id": "k8s135-rbac-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/reference/access-authn-authz/rbac.md",
+      "checked_at": "2026-09-29T06:24:49.038668+00:00",
+      "health": {
+        "id": "k8s135-rbac-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/reference/access-authn-authz/rbac.md",
+        "checked_at": "2026-09-29T06:24:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/reference/access-authn-authz/rbac.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/reference/access-authn-authz/rbac.md",
+      "sha256": "15018b3f3085c259738f59cbd2bfcdaa4a4c10cc5b78aa04037cfc6320aa1e40",
+      "text_characters": 44578
+    },
+    {
+      "id": "k8s135-admission-webhooks-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/reference/access-authn-authz/extensible-admission-controllers.md",
+      "checked_at": "2026-09-29T06:24:49.061028+00:00",
+      "health": {
+        "id": "k8s135-admission-webhooks-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/reference/access-authn-authz/extensible-admission-controllers.md",
+        "checked_at": "2026-09-29T06:24:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/reference/access-authn-authz/extensible-admission-controllers.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/reference/access-authn-authz/extensible-admission-controllers.md",
+      "sha256": "3ccbd3024378f26c01bccc00ba51f9d32aed812263a0d0cdb41ec7eb46bf4016",
+      "text_characters": 45482
+    },
+    {
+      "id": "k8s135-secrets-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/configuration/secret.md",
+      "checked_at": "2026-09-29T06:24:49.106427+00:00",
+      "health": {
+        "id": "k8s135-secrets-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/configuration/secret.md",
+        "checked_at": "2026-09-29T06:24:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/configuration/secret.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/configuration/secret.md",
+      "sha256": "7b39556e8ee3853333baa278f8b770048a334c38fe076181ee29deffc813dbac",
+      "text_characters": 32285
+    },
+    {
+      "id": "k8s135-serviceaccounts-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/configure-service-account.md",
+      "checked_at": "2026-09-29T06:24:49.265275+00:00",
+      "health": {
+        "id": "k8s135-serviceaccounts-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/configure-service-account.md",
+        "checked_at": "2026-09-29T06:24:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/configure-service-account.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/configure-service-account.md",
+      "sha256": "bed151229b4f94e8d393e95528a391284dc5d172c0f65e41d1338243f3b1e2f5",
+      "text_characters": 18191
+    },
+    {
+      "id": "k8s135-security-context-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/security-context.md",
+      "checked_at": "2026-09-29T06:24:49.276587+00:00",
+      "health": {
+        "id": "k8s135-security-context-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/security-context.md",
+        "checked_at": "2026-09-29T06:24:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/security-context.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/security-context.md",
+      "sha256": "63e083b03909a614ae5c2a9ce7231db3b905119eb58ccb52a114e9ec5ac16bae",
+      "text_characters": 31967
+    },
+    {
+      "id": "k8s135-network-policies-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/services-networking/network-policies.md",
+      "checked_at": "2026-09-29T06:24:49.311604+00:00",
+      "health": {
+        "id": "k8s135-network-policies-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/services-networking/network-policies.md",
+        "checked_at": "2026-09-29T06:24:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/services-networking/network-policies.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/services-networking/network-policies.md",
+      "sha256": "c5ab165e6c6d91f6abff48b06d57a57a600d7e8c5e91c3ced2cf0cf777e409a9",
+      "text_characters": 22521
+    },
+    {
+      "id": "openssl35-dgst",
+      "url": "https://docs.openssl.org/3.5/man1/openssl-dgst/",
+      "checked_at": "2026-09-29T06:24:49.446546+00:00",
+      "health": {
+        "id": "openssl35-dgst",
+        "url": "https://docs.openssl.org/3.5/man1/openssl-dgst/",
+        "checked_at": "2026-09-29T06:24:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.openssl.org/3.5/man1/openssl-dgst/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "openssl-dgst - OpenSSL Documentation",
+        "canonical_url": "https://docs.openssl.org/3.5/man1/openssl-dgst/",
+        "duration_signals": [],
+        "signal_fingerprint": "1f0ab332d24288a659826c1a11787284bfb381f435db34874f3633cfd72650b5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.openssl.org/3.5/man1/openssl-dgst/",
+      "sha256": "d9d078a6b3b43e3d762ed0cc3a374f8a485b4ea0e2e0b217b1785e759e380254",
+      "text_characters": 9141
+    },
+    {
+      "id": "openssl35-genpkey",
+      "url": "https://docs.openssl.org/3.5/man1/openssl-genpkey/",
+      "checked_at": "2026-09-29T06:24:49.456884+00:00",
+      "health": {
+        "id": "openssl35-genpkey",
+        "url": "https://docs.openssl.org/3.5/man1/openssl-genpkey/",
+        "checked_at": "2026-09-29T06:24:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.openssl.org/3.5/man1/openssl-genpkey/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "openssl-genpkey - OpenSSL Documentation",
+        "canonical_url": "https://docs.openssl.org/3.5/man1/openssl-genpkey/",
+        "duration_signals": [],
+        "signal_fingerprint": "7338b9084ad08a633a0a7ca7a8175c67cc08851e2aa541b8f6c8b87a052b3f9c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.openssl.org/3.5/man1/openssl-genpkey/",
+      "sha256": "a45e06a51976d114ed443a20a2d51ed2c854882abec3ca16d6c40d83fbad0cfc",
+      "text_characters": 17688
+    },
+    {
+      "id": "istio-peer-authentication",
+      "url": "https://istio.io/latest/docs/reference/config/security/peer_authentication/",
+      "checked_at": "2026-09-29T06:24:49.519142+00:00",
+      "health": {
+        "id": "istio-peer-authentication",
+        "url": "https://istio.io/latest/docs/reference/config/security/peer_authentication/",
+        "checked_at": "2026-09-29T06:24:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://istio.io/latest/docs/reference/config/security/peer_authentication/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "PeerAuthentication",
+        "canonical_url": "https://istio.io/latest/docs/reference/config/security/peer_authentication/",
+        "duration_signals": [
+          "3 minute"
+        ],
+        "signal_fingerprint": "09c2a09f22911c8cd8813727436e9d95e0c92296177bb5dcbe25f433bbd2341c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://istio.io/latest/docs/reference/config/security/peer_authentication/",
+      "sha256": "a8551c4addd6c2ff4bff87c39add023a24d6fbb617c6960df34dfb4c7012d249",
+      "text_characters": 12098
+    },
+    {
+      "id": "istio-authorization-policy",
+      "url": "https://istio.io/latest/docs/reference/config/security/authorization-policy/",
+      "checked_at": "2026-09-29T06:24:49.654114+00:00",
+      "health": {
+        "id": "istio-authorization-policy",
+        "url": "https://istio.io/latest/docs/reference/config/security/authorization-policy/",
+        "checked_at": "2026-09-29T06:24:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://istio.io/latest/docs/reference/config/security/authorization-policy/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Authorization Policy",
+        "canonical_url": "https://istio.io/latest/docs/reference/config/security/authorization-policy/",
+        "duration_signals": [
+          "13 minute"
+        ],
+        "signal_fingerprint": "0e231a24955be738b0ddd7ce7d2b1e67fa8cf95a26e7c2735e652e8cf3bdc0d8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://istio.io/latest/docs/reference/config/security/authorization-policy/",
+      "sha256": "734585c0c996e8aee2202dfb240aec053d0d97c51c78fae433b4569e33dcbf80",
+      "text_characters": 26278
+    },
+    {
+      "id": "cilium-wireguard",
+      "url": "https://docs.cilium.io/en/stable/security/network/encryption-wireguard/",
+      "checked_at": "2026-09-29T06:24:49.723967+00:00",
+      "health": {
+        "id": "cilium-wireguard",
+        "url": "https://docs.cilium.io/en/stable/security/network/encryption-wireguard/",
+        "checked_at": "2026-09-29T06:24:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cilium.io/en/stable/security/network/encryption-wireguard/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "WireGuard Transparent Encryption — Cilium 1.20.2 documentation",
+        "canonical_url": "https://docs.cilium.io/en/stable/security/network/encryption-wireguard/",
+        "duration_signals": [],
+        "signal_fingerprint": "4c89a4d7b976b74f3b16827d0bd5ef01baf29faa9a20368b6600cda5f2803a46",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cilium.io/en/stable/security/network/encryption-wireguard/",
+      "sha256": "b1ee3de56b015f22625b63e6524bb4886ea16d40e57029b0d78182ab143bb3fa",
+      "text_characters": 14848
+    },
+    {
+      "id": "falco-basic-rules",
+      "url": "https://falco.org/docs/concepts/rules/basic-elements/",
+      "checked_at": "2026-09-29T06:24:50.094310+00:00",
+      "health": {
+        "id": "falco-basic-rules",
+        "url": "https://falco.org/docs/concepts/rules/basic-elements/",
+        "checked_at": "2026-09-29T06:24:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://falco.org/docs/concepts/rules/basic-elements/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Basic Elements of Falco Rules",
+        "canonical_url": "https://falco.org/docs/concepts/rules/basic-elements/",
+        "duration_signals": [],
+        "signal_fingerprint": "d3396e4a6b4201074a405e64ed5a0868a47bdfb926e08b2b781b2bf2d59a4780",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://falco.org/docs/concepts/rules/basic-elements/",
+      "sha256": "09715f29a02fca7c8c4ab6603a9363049d4156e0ee6fe24bbab7f6dadb56882d",
+      "text_characters": 9994
+    },
+    {
+      "id": "k8s135-audit-types",
+      "url": "https://raw.githubusercontent.com/kubernetes/apiserver/release-1.35/pkg/apis/audit/v1/types.go",
+      "checked_at": "2026-09-29T06:25:50.027937+00:00",
+      "health": {
+        "id": "k8s135-audit-types",
+        "url": "https://raw.githubusercontent.com/kubernetes/apiserver/release-1.35/pkg/apis/audit/v1/types.go",
+        "checked_at": "2026-09-29T06:25:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/apiserver/release-1.35/pkg/apis/audit/v1/types.go",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/apiserver/release-1.35/pkg/apis/audit/v1/types.go",
+      "sha256": "10e353331f1dbbe645b5a2b361e3a14fd0aeb16667bbe43a3053d49434480715",
+      "text_characters": 15258
+    },
+    {
+      "id": "k8s135-psa-labels-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/enforce-standards-namespace-labels.md",
+      "checked_at": "2026-09-29T06:25:50.028471+00:00",
+      "health": {
+        "id": "k8s135-psa-labels-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/enforce-standards-namespace-labels.md",
+        "checked_at": "2026-09-29T06:25:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/enforce-standards-namespace-labels.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/enforce-standards-namespace-labels.md",
+      "sha256": "c56331f1115e86ff6ab59f7c2774fbf9c3e42189bb6aa7e2b8f86f5d07ed4c13",
+      "text_characters": 3597
+    }
+  ],
+  "added_source_ids": [
+    "cks134-curriculum-pdf",
+    "k8s135-audit-source",
+    "k8s135-psa-source",
+    "k8s135-pss-source",
+    "k8s135-seccomp-source",
+    "k8s135-apparmor-source",
+    "k8s135-encrypt-data-source",
+    "k8s135-admission-webhooks-source",
+    "openssl35-dgst",
+    "openssl35-genpkey",
+    "istio-peer-authentication",
+    "istio-authorization-policy",
+    "cilium-wireguard",
+    "falco-basic-rules",
+    "k8s135-audit-types",
+    "k8s135-psa-labels-source"
+  ],
+  "findings": [
+    {
+      "id": "cks-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Older PDF filename does not mean older objective weights",
+      "url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKS_Curriculum%20v1.34.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CKS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Actual three-page v1.34-named PDF lists current 15/15/10/20/20/20 weights and 26 competencies, while CNCF overview retains older first-three weights.",
+      "recommendation": "Clarify discrepancy and retain Linux Foundation canonical scope; do not overwrite baselines.",
+      "disposition": "applied",
+      "source_id": "cks134-curriculum-pdf",
+      "resolution": "Clarify discrepancy and retain Linux Foundation canonical scope; do not overwrite baselines."
+    },
+    {
+      "id": "cks-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Current simulator count differs from guide metadata",
+      "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CKS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current page lists17questions per simulator activation; guide inherited20–25datedSeptember17. No concrete exam-version switch date is announced.",
+      "recommendation": "Update simulator-only number and date; replace unsupported scheduled flag with none-announced while keeping approximate watch.",
+      "disposition": "applied",
+      "source_id": "lf-cks-blueprint",
+      "resolution": "Update simulator-only number and date; replace unsupported scheduled flag with none-announced while keeping approximate watch."
+    },
+    {
+      "id": "cks-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A signature check does not establish signer identity or deployment policy",
+      "url": "https://docs.openssl.org/3.5/man1/openssl-dgst/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CKS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Detached signature verification validates signed bytes against a supplied key, not its publisher identity or all related claims.",
+      "recommendation": "Execute original real positive/negative checks plus signed claim/digest/release approval conditions with explicit trust limits.",
+      "disposition": "applied",
+      "source_id": "openssl35-dgst",
+      "resolution": "Execute original real positive/negative checks plus signed claim/digest/release approval conditions with explicit trust limits."
+    },
+    {
+      "id": "cks-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Audit rules are first-match and omitted stages are combined",
+      "url": "https://raw.githubusercontent.com/kubernetes/apiserver/release-1.35/pkg/apis/audit/v1/types.go",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CKS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "A broad earlier body-logging rule can bypass later SecretMetadata intent; no matching rule means noevent.",
+      "recommendation": "Add exact restricted model and12checks; distinguish prediction from actual auditing/backendverification.",
+      "disposition": "applied",
+      "source_id": "k8s135-audit-types",
+      "resolution": "Add exact restricted model and12checks; distinguish prediction from actual auditing/backendverification."
+    },
+    {
+      "id": "cks-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Workload admission and Pod security enforcement are different checks",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/security/pod-security-admission.md",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CKS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Enforce applies to resultingPods; audit/warn also evaluate workloadtemplates and exemptions skipallmodes.",
+      "recommendation": "Explain existingDeployment/deniedPods and strengthen liveevidence requirements.",
+      "disposition": "applied",
+      "source_id": "k8s135-psa-source",
+      "resolution": "Explain existingDeployment/deniedPods and strengthen liveevidence requirements."
+    },
+    {
+      "id": "cks-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Omitted seccomp fields do not prove runtime-default enforcement",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tutorials/security/seccomp.md",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CKS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Effective default depends on kubeletseccompDefault; APIfieldsneednotchange andprivilegedcontainersrunUnconfined.",
+      "recommendation": "Require installednode/runtimeevidence and explain explicitprofileversusdefault.",
+      "disposition": "applied",
+      "source_id": "k8s135-seccomp-source",
+      "resolution": "Require installednode/runtimeevidence and explain explicitprofileversusdefault."
+    },
+    {
+      "id": "cks-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "API creation does not prove requested AppArmor profile runs",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tutorials/security/apparmor.md",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CKS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "A missing explicitprofile can cause kubeletrefusal after APIobjectcreation.",
+      "recommendation": "Correct profilecoverage answer and add pernode/replacement verification.",
+      "disposition": "applied",
+      "source_id": "k8s135-apparmor-source",
+      "resolution": "Correct profilecoverage answer and add pernode/replacement verification."
+    },
+    {
+      "id": "cks-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "New encryption configuration does not migrate all old records",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/administer-cluster/encrypt-data.md",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CKS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Firstprovider/keywrites;matchingprovidersdecrypt;olddatarequiresrewrite andoldkeyretentionuntilmigration/recoveryproof.",
+      "recommendation": "Add controlledmigration/backupboundary with no actualstorage or globalrewrite operation.",
+      "disposition": "applied",
+      "source_id": "k8s135-encrypt-data-source",
+      "resolution": "Add controlledmigration/backupboundary with no actualstorage or globalrewrite operation."
+    },
+    {
+      "id": "cks-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Ignore handles call failures rather than overriding explicit denial",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/reference/access-authn-authz/extensible-admission-controllers.md",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CKS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "failurePolicy controls errors/timeouts; admissionresponse allowedfalse is a policyrejection.",
+      "recommendation": "Teach separate callhealth andallow/denytests plusdryrun/persistencebounds.",
+      "disposition": "applied",
+      "source_id": "k8s135-admission-webhooks-source",
+      "resolution": "Teach separate callhealth andallow/denytests plusdryrun/persistencebounds."
+    },
+    {
+      "id": "cks-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Encryption coverage depends on traffic path and mode",
+      "url": "https://docs.cilium.io/en/stable/security/network/encryption-wireguard/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CKS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Same-nodepacketsareunencrypted;nodeencryptionhasadditionalconfiguration andcontrol-planeoptoutdistinctfromPodtraffic.",
+      "recommendation": "Add proposedcoverage matrix andqualifyinstalledversion; no networkconfigurationorpacket capture.",
+      "disposition": "applied",
+      "source_id": "cilium-wireguard",
+      "resolution": "Add proposedcoverage matrix andqualifyinstalledversion; no networkconfigurationorpacket capture."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "kubernetes-ingress-nginx-retirement",
+      "authors": [
+        "Tabitha Sable, Kubernetes Security Response Committee"
+      ],
+      "published_on": "2025-11-11",
+      "disposition": "accepted-with-limits",
+      "value": "Retain controller-specific retirement distinct from IngressAPI/CKSTLSobjective.",
+      "limits": "FullnoticealreadyreadinprecedingCKAreview;no controllerinventory/migration executed."
+    },
+    {
+      "source_id": "kubernetes-v1-37-release",
+      "published_on": "2026-08-26",
+      "disposition": "accepted-for-release-watch-only",
+      "value": "Publicationdate triggers officialexamversionrecheck.",
+      "limits": "Date/introductionreadpreviously,notfullfeaturebody;no1.37features adopted."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "cluster_labs_executed": 0,
+    "actual_local_signature_exercises": 1,
+    "restricted_audit_models": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 29,
+      "actual_signature_checks": {
+        "passed": 17,
+        "checks": [
+          "expected signature verifies",
+          "expected claims and artifact accepted",
+          "different trusted key rejected",
+          "valid old release rejected by new release requirement",
+          "statement signature alone does not inspect artifact",
+          "changed artifact fails signed digest binding",
+          "even whitespace changes signed bytes",
+          "damaged signature rejected",
+          "restored bytes and signature accepted",
+          "valid signature on unapproved builder",
+          "valid signature on unapproved schema",
+          "valid signature on unapproved release",
+          "valid signature on wrong repository claim rejected",
+          "signed malformed claim rejected",
+          "signed incomplete claim rejected",
+          "repaired original claim accepted",
+          "owned temporary keys and payloads removed"
+        ],
+        "openssl": "OpenSSL 3.5.7 9 Jun 2026 (Library: OpenSSL 3.5.7 9 Jun 2026)",
+        "cleanup_verified": true,
+        "boundary": "Synthetic detached signatures and deliberately narrow claim checks only; no publisher identity proof, standard attestation, transparency log, registry, image scan, admission or live cluster."
+      },
+      "restricted_audit_model": {
+        "passed": 12,
+        "checks": [
+          "Secret reads retain metadata",
+          "Secret lists also retain metadata",
+          "selected ConfigMap writes include bodies",
+          "read verb uses metadata fallback",
+          "different namespace uses metadata fallback",
+          "different API group uses fallback",
+          "global omitted stage suppresses event",
+          "rule omitted stage suppresses without fallthrough",
+          "no matching rule means no event",
+          "early broad rule defeats later Secret protection",
+          "early metadata fallback hides intended detailed write",
+          "unsupported user selector rejected explicitly"
+        ],
+        "boundary": "Restricted reasoning model: exact resource/group/namespace/verb matching and stage omission only; no API server audit event or backend emission tested."
+      },
+      "public_example_sha256": {
+        "cks_signature_practice.py": "c4a49015f77dbceb489549d726cc8e3dca6299f920776391b0b6be5e4f5f48f0",
+        "cks_audit_practice.py": "92c3abd96284605e885bc514c127cf84a36abfa46ed7ab1e1ce1669a62dcede2"
+      },
+      "execution_boundary": "Actual local OpenSSL signatures plus explicitly restricted Python audit-policy model; no cluster auditing, admission, image, registry, kernel or service changes.",
+      "public_examples_hash_matched": true
+    }
+  },
+  "answered_checks": 46,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "All eight complete cluster labs remain proposed. Earlier same-session Docker Linux-engine endpoint was unavailable; native Linux runtime blocker is deferred for tomorrow. No services started/restarted.",
+    "17 actual local OpenSSL 3.5.7 signature/claim checks and 12 explicitly restricted Python audit-policy model checks. Two public examples exactly hash-matched; no Kubernetes audit event generated.",
+    "Synthetic payload and custom teaching statement only: not an OCI image, SBOM, SLSA, DSSE, keyless identity, transparency verification, vulnerability scan, admission test or publisher identity proof. The trusted verification key is an explicit local assumption.",
+    "Owned temporary EC keys, signatures, statements and payloads removed. No real credentials, registry, cluster, Secret, etcd data, system trust, global OpenSSL configuration or external endpoint accessed by exercises.",
+    "No CIS, kernel/seccomp/AppArmor, PSA/RBAC/webhook, at-rest encryption/rotation, mesh/Cilium, scanner/Falco, audit backend, incident containment or cluster persistence lab executed.",
+    "The CNCF overview still has 10/15/15 first-domain weights; the canonical LF page and actual PDF agree on 15/15/10. The older PDF filename does not override the exam version. Both monitor hashes are unchanged; the release watch is approximate.",
+    "Current Istio/Cilium/Falco references have installed version/mode limits; no assumption of exact exam component versions.",
+    "Paid catalog metadata gaps and blocked O'Reilly/Udemy claims are retained. No paid lessons, provider labs, mock questions, simulator tasks or recalled exam content were accessed."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "17 actual OpenSSL signature/claim checks and 12 explicitly restricted audit-policy model checks. No API, cluster, kernel, registry, image, audit backend or mesh execution.",
+    "passed": 29,
+    "actual_signature_checks": {
+      "passed": 17,
+      "checks": [
+        "expected signature verifies",
+        "expected claims and artifact accepted",
+        "different trusted key rejected",
+        "valid old release rejected by new release requirement",
+        "statement signature alone does not inspect artifact",
+        "changed artifact fails signed digest binding",
+        "even whitespace changes signed bytes",
+        "damaged signature rejected",
+        "restored bytes and signature accepted",
+        "valid signature on unapproved builder",
+        "valid signature on unapproved schema",
+        "valid signature on unapproved release",
+        "valid signature on wrong repository claim rejected",
+        "signed malformed claim rejected",
+        "signed incomplete claim rejected",
+        "repaired original claim accepted",
+        "owned temporary keys and payloads removed"
+      ],
+      "openssl": "OpenSSL 3.5.7 9 Jun 2026 (Library: OpenSSL 3.5.7 9 Jun 2026)",
+      "cleanup_verified": true,
+      "boundary": "Synthetic detached signatures and deliberately narrow claim checks only; no publisher identity proof, standard attestation, transparency log, registry, image scan, admission or live cluster."
+    },
+    "restricted_audit_model": {
+      "passed": 12,
+      "checks": [
+        "Secret reads retain metadata",
+        "Secret lists also retain metadata",
+        "selected ConfigMap writes include bodies",
+        "read verb uses metadata fallback",
+        "different namespace uses metadata fallback",
+        "different API group uses fallback",
+        "global omitted stage suppresses event",
+        "rule omitted stage suppresses without fallthrough",
+        "no matching rule means no event",
+        "early broad rule defeats later Secret protection",
+        "early metadata fallback hides intended detailed write",
+        "unsupported user selector rejected explicitly"
+      ],
+      "boundary": "Restricted reasoning model: exact resource/group/namespace/verb matching and stage omission only; no API server audit event or backend emission tested."
+    },
+    "public_example_sha256": {
+      "cks_signature_practice.py": "c4a49015f77dbceb489549d726cc8e3dca6299f920776391b0b6be5e4f5f48f0",
+      "cks_audit_practice.py": "92c3abd96284605e885bc514c127cf84a36abfa46ed7ab1e1ce1669a62dcede2"
+    },
+    "public_examples_hash_matched": true,
+    "learning_catalog_consistency": "passed"
+  },
+  "curriculum_pdf_receipt": {
+    "id": "cks134-curriculum-pdf",
+    "url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKS_Curriculum%20v1.34.pdf",
+    "checked_at": "2026-09-29T06:23:20.531724+00:00",
+    "health": {
+      "id": "cks134-curriculum-pdf",
+      "url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKS_Curriculum%20v1.34.pdf",
+      "checked_at": "2026-09-29T06:23:19+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKS_Curriculum%20v1.34.pdf",
+      "content_type": "application/octet-stream",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": ""
+    },
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKS_Curriculum%20v1.34.pdf",
+    "sha256": "a755a5680bec6978de4a3074d7f0c7fe978bd7a9ad5e4f1681597aedda6f6637",
+    "bytes": 170239,
+    "pdf_pages": 3,
+    "text_characters": 2836
+  },
+  "curriculum_repository_listing": {
+    "checked_on": "2026-09-29",
+    "url": "https://api.github.com/repos/cncf/curriculum/contents/",
+    "matching_files": [
+      {
+        "name": "CKS_Curriculum v1.34.pdf",
+        "sha": "6867a1b1a563fd159047bec4ec1551ca19da83bd",
+        "download_url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKS_Curriculum%20v1.34.pdf"
+      }
+    ]
+  },
+  "runtime_blocker": {
+    "checked_on": "2026-09-29",
+    "operation": "Read-only Docker Linux engine version probe",
+    "endpoint": "npipe:////./pipe/dockerDesktopLinuxEngine",
+    "exit_code": 1,
+    "result": "Named pipe was not found; local Docker Linux engine unavailable at this endpoint.",
+    "action": "No service started or restarted; prior WSL/Linux startup blocker remains deferred for tomorrow.",
+    "installed_client": "Docker bundled kubectl v1.36.1, kustomize v5.8.1; no cluster contacted.",
+    "scope": "Earlier same-session read-only result reused; no additional runtime/service/startup attempt in CKS."
+  }
+}

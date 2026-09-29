@@ -5,6 +5,29 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "CKS",
+      "reviewed_on": "2026-09-29",
+      "guide_sha256": "302301c7ac22f14d4b0bb7568ae125a2f99c2a5c5c0a8fd82f8de41c4f04b601",
+      "objective_count": 26,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-29-cks-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-29-cks-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "Same-context AI review; independent human review pending.",
+        "All eight complete cluster labs remain proposed. Earlier same-session Docker Linux-engine endpoint was unavailable; native Linux runtime blocker is deferred for tomorrow. No services started/restarted.",
+        "17 actual local OpenSSL 3.5.7 signature/claim checks and 12 explicitly restricted Python audit-policy model checks. Two public examples exactly hash-matched; no Kubernetes audit event generated.",
+        "Synthetic payload and custom teaching statement only: not an OCI image, SBOM, SLSA, DSSE, keyless identity, transparency verification, vulnerability scan, admission test or publisher identity proof. The trusted verification key is an explicit local assumption.",
+        "Owned temporary EC keys, signatures, statements and payloads removed. No real credentials, registry, cluster, Secret, etcd data, system trust, global OpenSSL configuration or external endpoint accessed by exercises.",
+        "No CIS, kernel/seccomp/AppArmor, PSA/RBAC/webhook, at-rest encryption/rotation, mesh/Cilium, scanner/Falco, audit backend, incident containment or cluster persistence lab executed.",
+        "The CNCF overview still has 10/15/15 first-domain weights; the canonical LF page and actual PDF agree on 15/15/10. The older PDF filename does not override the exam version. Both monitor hashes are unchanged; the release watch is approximate.",
+        "Current Istio/Cilium/Falco references have installed version/mode limits; no assumption of exact exam component versions.",
+        "Paid catalog metadata gaps and blocked O'Reilly/Udemy claims are retained. No paid lessons, provider labs, mock questions, simulator tasks or recalled exam content were accessed."
+      ]
+    },
+    {
       "exam_code": "CKAD",
       "reviewed_on": "2026-09-29",
       "guide_sha256": "37c79539ba518fe5d6ab9fe0c41ff0bcdb25ad49d7e283ad05f45216a31297a5",

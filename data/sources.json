@@ -3,6 +3,230 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "cks134-curriculum-pdf",
+      "title": "CNCF CKS v1.34 curriculum PDF",
+      "url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKS_Curriculum%20v1.34.pdf",
+      "publisher": "CNCF",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKS deep review: Actual170239byte three-pagePDF fullyread,SHAreceiptretained;26competencies/currentweights matchcanonicalapartfromminorwording/case,despitev1.34filename. RepositorycontentsAPIshowsnootherCKSfilename atcheck. See docs/research/2026-09-29-cks-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-audit-source",
+      "title": "Kubernetes 1.35 audit documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/debug/debug-cluster/audit.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKS deep review: Targeted relevant primary documentation read; actual runtime claims limited to the separate local exercises and full cluster labs remain proposed. See docs/research/2026-09-29-cks-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-psa-source",
+      "title": "Kubernetes 1.35 psa documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/security/pod-security-admission.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKS deep review: Whole overviewread;enforceonlyPods,audit/warnworkloadtemplates,exemptions andcontrolleridentity boundaries. See docs/research/2026-09-29-cks-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-pss-source",
+      "title": "Kubernetes 1.35 pss documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/security/pod-security-standards.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKS deep review: Targeted hostPath/hostPorts,v1.34probe/lifecyclehostrestrictions andLinuxRestrictednonroot/seccomp/capabilityfields read; no claim of full policy emulator. See docs/research/2026-09-29-cks-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-seccomp-source",
+      "title": "Kubernetes 1.35 seccomp documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tutorials/security/seccomp.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKS deep review: Targeted privilegedUnconfined,seccompDefault andAPI/runtimeevidence passagesread. Stablev1.27sectionused;olderbetawordingnotadopted. See docs/research/2026-09-29-cks-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-apparmor-source",
+      "title": "Kubernetes 1.35 apparmor documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tutorials/security/apparmor.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKS deep review: Targeted hostsupport/preloadedprofile/currentprofilefield andAPIcreatedbutPendingexample read;nohostprofileload orkerneltest. See docs/research/2026-09-29-cks-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-encrypt-data-source",
+      "title": "Kubernetes 1.35 encrypt-data documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/administer-cluster/encrypt-data.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKS deep review: Targeted firstprovider/firstkeywrites,readfallback,oldrecords,migration/backup/keyrotation andsameconfigHArequirements read. No secretsdump,etcdaccessorbulkrewrite. See docs/research/2026-09-29-cks-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-admission-webhooks-source",
+      "title": "Kubernetes 1.35 admission-webhooks documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/reference/access-authn-authz/extensible-admission-controllers.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKS deep review: Targeted allowedfalse,responsehandling,failurePolicy,timeouts,dryrunsideeffects andadmissionversuspersistence read; no webhookconfigured. See docs/research/2026-09-29-cks-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "openssl35-dgst",
+      "title": "OpenSSL 3.5 digest and detached signatures",
+      "url": "https://docs.openssl.org/3.5/man1/openssl-dgst/",
+      "publisher": "OpenSSL project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKS deep review: Targeted SHA256binarydetachedsign/verify andrawsignatureversusidentitylimitations read andexecuted withsyntheticECkeys. See docs/research/2026-09-29-cks-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "openssl35-genpkey",
+      "title": "OpenSSL 3.5 key generation",
+      "url": "https://docs.openssl.org/3.5/man1/openssl-genpkey/",
+      "publisher": "OpenSSL project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKS deep review: TargetedECkeygeneration/P-256/pkeyoptread andexecuted. Unrelatedalgorithms/examplesnotadopted. See docs/research/2026-09-29-cks-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "istio-peer-authentication",
+      "title": "Istio PeerAuthentication reference",
+      "url": "https://istio.io/latest/docs/reference/config/security/peer_authentication/",
+      "publisher": "Istio project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKS deep review: TargetedSTRICT/PERMISSIVE,sidecar/ambient differences andworkload-portexception read;no meshconfigured. See docs/research/2026-09-29-cks-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "istio-authorization-policy",
+      "title": "Istio AuthorizationPolicy reference",
+      "url": "https://istio.io/latest/docs/reference/config/security/authorization-policy/",
+      "publisher": "Istio project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKS deep review: TargetedCUSTOM/DENY/ALLOWevaluation andAUDITpluginrequirement read;onlyauthentication/authorization/audit boundaryadopted. See docs/research/2026-09-29-cks-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cilium-wireguard",
+      "title": "Cilium WireGuard encryption scope",
+      "url": "https://docs.cilium.io/en/stable/security/network/encryption-wireguard/",
+      "publisher": "Cilium project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKS deep review: Targeted same-nodeexception,cross-nodePodencryption,nodeencryptionbeta/control-planeoptout andcoverage tableintro read;notallimplementationmodesvalidated. See docs/research/2026-09-29-cks-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "falco-basic-rules",
+      "title": "Falco rule elements and event sources",
+      "url": "https://falco.org/docs/concepts/rules/basic-elements/",
+      "publisher": "Falco project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKS deep review: Targeted eventtype/processconditionnoise,availableoutputfields,priorityseverity andrulefields read;no sensor/rules/runtimeeventexecuted. See docs/research/2026-09-29-cks-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-audit-types",
+      "title": "Kubernetes 1.35 audit policy API types",
+      "url": "https://raw.githubusercontent.com/kubernetes/apiserver/release-1.35/pkg/apis/audit/v1/types.go",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKS deep review: Read firstmatchingrule/defaultNone,fieldintersection,exactresource/group/namespace/verb semantics,omitStagesunion anddifferentomitManagedFieldsoverride. Modelusesonlydocumentedsubsetandrejectsunsupportedselectors;notfullAPIvalidator. See docs/research/2026-09-29-cks-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-psa-labels-source",
+      "title": "Kubernetes 1.35 namespace Pod Security labels",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/enforce-standards-namespace-labels.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKS deep review: Whole shorttaskread;labelchangesassessexistingPodswithwarnings andserverdryrunlabelscheckwithoutmutation. No namespacechanged. See docs/research/2026-09-29-cks-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "ckad135-curriculum-pdf",
       "title": "CNCF CKAD v1.35 curriculum PDF",
       "url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKAD_Curriculum_v1.35.pdf",
@@ -95,10 +319,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "CKAD"
+        "CKAD",
+        "CKS"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 CKAD deep review: Targeted relevant primary documentation sections read; version boundary retained and full runtime labs remain proposed. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+      "notes": "September 29 CKAD deep review: Targeted relevant primary documentation sections read; version boundary retained and full runtime labs remain proposed. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution. September 29 CKS deep review: Targeted relevant primary documentation read; actual runtime claims limited to the separate local exercises and full cluster labs remain proposed. See docs/research/2026-09-29-cks-deep-review.md No live infrastructure execution."
     },
     {
       "id": "k8s135-serviceaccounts-source",
@@ -109,10 +334,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "CKAD"
+        "CKAD",
+        "CKS"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 CKAD deep review: Targeted relevant primary documentation sections read; version boundary retained and full runtime labs remain proposed. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+      "notes": "September 29 CKAD deep review: Targeted relevant primary documentation sections read; version boundary retained and full runtime labs remain proposed. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution. September 29 CKS deep review: Targeted relevant primary documentation read; actual runtime claims limited to the separate local exercises and full cluster labs remain proposed. See docs/research/2026-09-29-cks-deep-review.md No live infrastructure execution."
     },
     {
       "id": "k8s135-resources-source",
@@ -263,10 +489,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "CKAD"
+        "CKAD",
+        "CKS"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 CKAD deep review: Targeted eventual volumeprojection and subPath exception read; no secretvalues or realtokens accessed. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+      "notes": "September 29 CKAD deep review: Targeted eventual volumeprojection and subPath exception read; no secretvalues or realtokens accessed. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution. September 29 CKS deep review: Targeted relevant primary documentation read; actual runtime claims limited to the separate local exercises and full cluster labs remain proposed. See docs/research/2026-09-29-cks-deep-review.md No live infrastructure execution."
     },
     {
       "id": "cka135-curriculum-pdf",
@@ -305,10 +532,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "CKA"
+        "CKA",
+        "CKS"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution. September 29 CKS deep review: Targeted resourceNames top-levelcreate/deletecollection/listwatchfieldselector androle/bindingescalationrestrictions read; noauthorizationprobeexecuted. See docs/research/2026-09-29-cks-deep-review.md No live infrastructure execution."
     },
     {
       "id": "k8s135-deployment-source",
@@ -378,10 +606,11 @@
       "access_model": "public",
       "supported_exams": [
         "CKA",
-        "CKAD"
+        "CKAD",
+        "CKS"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution. September 29 CKAD deep review: Targeted relevant primary documentation sections read; version boundary retained and full runtime labs remain proposed. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution. September 29 CKAD deep review: Targeted relevant primary documentation sections read; version boundary retained and full runtime labs remain proposed. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution. September 29 CKS deep review: Targeted relevant primary documentation read; actual runtime claims limited to the separate local exercises and full cluster labs remain proposed. See docs/research/2026-09-29-cks-deep-review.md No live infrastructure execution."
     },
     {
       "id": "k8s135-configmap-source",

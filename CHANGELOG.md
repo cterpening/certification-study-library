@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [CKS deep review](docs/research/2026-09-29-cks-deep-review.md): 26 competencies; actual PDF reconciliation; 17 real signature checks and 12 audit-model checks; 46 answers and eight proposed cluster labs; refreshed public evidence.
+
 - September 29, 2026: [CKAD deep review](docs/research/2026-09-29-ckad-deep-review.md): 24 competencies, 27 executed Helm checks, native sidecar and rollout corrections, 46 answers, eight proposed cluster labs, current catalog and dated tooling support.
 
 - September 29, 2026: [CKA deep review](docs/research/2026-09-29-cka-deep-review.md): 27competencies;22actual kubectl/Kustomize checks;EndpointSlice/PDB corrections;Gateway/storage/recovery distinctions;46answers and eight proposed cluster labs;current catalog and retainedv1.35watch.

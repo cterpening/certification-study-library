@@ -3306,16 +3306,24 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 ### Certified Kubernetes Security Specialist (CKS)
 
-- Official scope: [Linux Foundation CKS page](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) (**3–5 hours mapping/review**) plus the included Killer.sh simulator (**8–14 selected hours estimated**); CKA must have been passed previously but need not remain active
-- Discrepancy watch: [CNCF CKS overview](https://www.cncf.io/training/certification/cks/) still shows the earlier 10/15/15 first-three weights and its [public curriculum is named v1.34](https://github.com/cncf/curriculum/blob/master/CKS_Curriculum%20v1.34.pdf) (**1–2 hours comparison**); follow the live Linux Foundation v1.35 page's 15/15/10 weights
-- Versioned reference: [Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) (**20–35 selected security reading/lab hours**), not a cover-to-cover course
-- Official course: [Kubernetes Security Essentials (LFS260)](https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/) (**26–30 listed course hours plus 35–70 independent lab hours**)
-- Modular route: [Pluralsight CKS path](https://www.pluralsight.com/paths/certified-kubernetes-security-specialist-cks) (**12 listed hours plus 35–70 lab hours**), seven domain courses, three refreshed 2026 labs and a practice exam
-- Lab-first route: [KodeKloud CKS](https://kodekloud.com/courses/certified-kubernetes-security-specialist-cks/) (**8.75 listed video hours plus browser labs/mock exams; allow 30–55 hours with gap work**); its public update history stops at v1.33
-- Deep route: [O'Reilly Certified Kubernetes Security Specialist](https://www.oreilly.com/videos/certified-kubernetes-security/9780138296537/) (**19 hours 38 minutes listed plus 35–70 lab hours**), published February 2025
-- Current marketplace route: [Udemy Certified Kubernetes Security Specialist 2026](https://www.udemy.com/course/certified-kubernetes-security-specialist-certification/) (**19 hours 58 minutes listed plus independent labs**), updated July 2026
+Resource details from the [CKS guide](../guides/CKS-certified-kubernetes-security-specialist.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Earn CKA first, choose one current structured security route, and treat the live Linux Foundation v1.35 objectives as authoritative while the CNCF page/PDF lag. Build every control in disposable infrastructure, preserve recovery access, and verify legitimate behavior plus the denied/detected case. Gap-check current Pod Security Standards, admission APIs, seccomp/AppArmor fields, signatures/provenance, runtime detection and the 15/15/10 weights. Reject recalled questions and simulator-task reproduction.
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official CKS page](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) and [CNCF CKS page](https://www.cncf.io/training/certification/cks/) | Public; exam paid | 3–5 hours mapping/discrepancy review, plus 8–14 selected simulator hours |
+| [Public CNCF CKS v1.34 curriculum](https://github.com/cncf/curriculum/blob/master/CKS_Curriculum%20v1.34.pdf) | Public | 1–2 hours; actual outline and weights match the live v1.35 page despite the older filename |
+| [Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) | Public | 20–35 selected security reading/lab hours; use as a reference |
+| [Kubernetes v1.37 release](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/) | Public release watch; use only to trigger the exam-version recheck | 20–40 minutes |
+| [Ingress NGINX retirement notice](https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/) | Public operational warning; distinguishes the controller from the Ingress API | 15–25 minutes |
+| [Linux Foundation Kubernetes Security Essentials (LFS260)](https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/) | Paid | 26–30 listed course hours, nine chapters; Linux plus cloud/VirtualBox labs; add 35–70 independent lab hours |
+| [Pluralsight CKS path](https://www.pluralsight.com/paths/certified-kubernetes-security-specialist-cks) | Subscription/trial | 12 listed hours, seven courses, three refreshed 2026 labs and practice exam; add 35–70 lab hours |
+| [KodeKloud CKS](https://kodekloud.com/courses/certified-kubernetes-security-specialist-cks/) | Subscription/free preview | 8.75 listed video hours, eight modules/150 lessons; public history still says v1.33 in progress in May 2025; allow 30–55 hours with gap work |
+| [O'Reilly Certified Kubernetes Security Specialist](https://www.oreilly.com/videos/certified-kubernetes-security/9780138296537/) | Subscription/trial | Earlier listing: 19 hours 38 minutes, February 2025; blocked now and not reverified; add 35–70 proposed lab hours |
+| [Udemy Certified Kubernetes Security Specialist 2026](https://www.udemy.com/course/certified-kubernetes-security-specialist-certification/) | Paid; price varies | Earlier listing: 19 hours 58 minutes, July 2026 update; blocked now and not reverified; add independent labs |
+
+Pluralsight mixes a 2022 introduction, 2025 courses and 2026 cluster courses/labs; a refreshed lab does not date every lesson. KodeKloud's public outline still lists optional Pod Security Policies and does not visibly name SBOM/signature lessons; check modern Pod Security Admission and supply-chain coverage against the official objectives. This does not establish what is inside paid lessons or the actual current lab runtime. LFS260 requires self-managed lab access and possible cloud charges. Public metadata only was reviewed; no paid lessons, mock questions or provider labs were accessed. Added independent study times are planning estimates.
+
+This is not a complete list and is not meant to be consumed in full. Earn CKA first, choose one current structured security route, and use the live Linux Foundation v1.35 objectives as the source of truth while the CNCF overview weights remain inconsistent and the PDF retains its older filename. Build every control in disposable infrastructure and verify both legitimate behavior and denial/detection. Check tools and course examples for current Pod Security Standards, admission APIs, seccomp/AppArmor fields, signatures/provenance, runtime detection and the 15/15/10 weights. Avoid recalled tasks and question dumps; this is a defensive performance exam.
 
 ### AWS Certified Security - Specialty (SCS-C03)
 

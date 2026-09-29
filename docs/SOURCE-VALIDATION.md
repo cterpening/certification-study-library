@@ -1381,6 +1381,8 @@ The review maps every v1.35 domain to one source/image → workload/volume → r
 
 ## CKS coverage record
 
+The September 29 [deep review](research/2026-09-29-cks-deep-review.md) maps 26 detailed objectives. Mapped all 26 live competencies and read the actual three-page CKS PDF: its older filename still contains the current outline and weights, while the CNCF overview weights remain inconsistent. Retained unchanged monitor snapshots, corrected current simulator metadata and unsupported scheduled status, and added exact original exercises with 17 real signature/claim checks plus 12 restricted audit-model checks. Expanded admission, encryption, RBAC, kernel and telemetry distinctions, answered 46 checks and strengthened eight proposed cluster labs; native cluster validation remains deferred. Current guide citations: 31 registered, 29 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 6, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Kubernetes v1.35 and six live-page weighted domains—Cluster Setup (15%), Cluster Hardening (15%), System Hardening (10%), Minimize Microservice Vulnerabilities (20%), Supply Chain Security (20%), and Monitoring, Logging and Runtime Security (20%)
