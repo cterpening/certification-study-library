@@ -4,6 +4,217 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-cv0004-deep-review",
+      "title": "CV0-004 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CV0-004"
+      ],
+      "results": [
+        {
+          "exam_code": "CV0-004",
+          "vendor_id": "comptia",
+          "guide_path": "guides/CV0-004-comptia-cloud-plus.md",
+          "baseline_sha256": "29196c66cff57a2ddc5f438f9f74cd4b89e8ad9c5fd6c2dcce51d790f1fce9e9",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "V4 CV0-004 launched September 24, 2024; weights 23/19/17/19/10/12, maximum 90 questions/90 minutes/750 score, English/Japanese, retirement estimated 2027 without exact date. Public PDF document 5.0 has 33 numbered objectives, 17 pages, groups 11/5/4/6/4/3; page 9 layout confirms 3.1 observability, 3.2 scaling, 3.3 backup, 3.4 lifecycle. Both monitored snapshots unchanged, no baseline write."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "All numbered PDF objectives/bullets read. NIST cloud deployment models; targeted Terraform built-in data, variable, validation/plan and sensitive-state docs; SQS duplicate delivery, AWS budget delay/CLI/IoT boundaries; Python SQLite and SQLite transaction/recovery; RFC HTTP status sections reviewed. Local code executed without an external cloud provider or service."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current canonical exam page and public document 5.0 checked; no new retirement/replacement announcement. Terraform example deliberately tested/pinned to 1.12.2, not presented as latest; newer online terraform_data store or validate features not adopted. Python 3.13.14 and SQLite 3.50.4 recorded."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Pluralsight 6 courses/14h, July-October 2024 dates and no verified lab count; LinkedIn Total Seminars 6h13/12 quizzes/December 1, 2025; MeasureUp product-specific 186 questions/March 2025 versus generic FAQ around 150. OReilly and Udemy blocked; earlier book/runtime/instructor/revision claims qualified. Current CompTIA Perform/Learn/Practice/Labs provider estimates overlap. Paid interiors unreviewed; Places to learn final."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current page and PDF recommend 2–3 years as systems administrator or cloud engineer, not an additional mandatory 12 months in cloud; PDF also recommends Network+/Server+ or equivalent knowledge. Add explicit 1.11 AI/IoT and 2.1 community cloud. Correct PDF CLI expansion in implementation context; distinguish Terraform sensitive display/state and delayed budget alerts/hard caps, local deduplication/distributed delivery, and HTTP status/root cause."
+            }
+          },
+          "findings": [
+            {
+              "id": "cv0004-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Experience advice added an unsupported extra year",
+              "url": "https://www.comptia.org/en-us/certifications/cloud/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CV0-004"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current page recommends 2–3 years as systems administrator or cloud engineer; PDF adds equivalent Network+/Server+ knowledge, without an extra 12-month requirement.",
+              "recommendation": "Correct both guide and exam catalog and distinguish recommendations from mandatory prerequisites.",
+              "disposition": "applied",
+              "source_id": "comptia-cv0-004-blueprint",
+              "resolution": "Correct both guide and exam catalog and distinguish recommendations from mandatory prerequisites."
+            },
+            {
+              "id": "cv0004-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "The summary omitted explicit detailed scope",
+              "url": "https://lecbyo.files.cmp.optimizely.com/download/1caf96e2bef111efba33a6b3d2c966cf?checkExpiry=false",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CV0-004"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "PDF objective 1.11 includes AI/ML and IoT; 2.1 includes community cloud, and 5.3/5.4 enumerate integration styles and tools.",
+              "recommendation": "Map all 33 numbered objectives and add original capability/evaluation, deployment-model and integration-role teaching.",
+              "disposition": "applied",
+              "source_id": "comptia-cv0-004-objectives-pdf",
+              "resolution": "Map all 33 numbered objectives and add original capability/evaluation, deployment-model and integration-role teaching."
+            },
+            {
+              "id": "cv0004-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "PDF expands CLI incorrectly for this management context",
+              "url": "https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CV0-004"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The outline prints Common Language Infrastructure in cloud-management access; the provider interface documentation explicitly names Command Line Interface.",
+              "recommendation": "Teach the correct management-interface meaning while identifying the outline wording, without introducing unrelated .NET execution semantics.",
+              "disposition": "applied",
+              "source_id": "aws-cli-welcome",
+              "resolution": "Teach the correct management-interface meaning while identifying the outline wording, without introducing unrelated .NET execution semantics."
+            },
+            {
+              "id": "cv0004-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Secret-free state is not guaranteed by output redaction",
+              "url": "https://developer.hashicorp.com/terraform/language/manage-sensitive-data",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CV0-004"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Sensitive flags can hide normal display while state and saved plan files still contain values; ephemeral/write-only capabilities have constraints.",
+              "recommendation": "Replace blanket keep-secrets-out-of-state wording with artifact protection and version/context/provider-aware guidance.",
+              "disposition": "applied",
+              "source_id": "terraform-sensitive-data",
+              "resolution": "Replace blanket keep-secrets-out-of-state wording with artifact protection and version/context/provider-aware guidance."
+            },
+            {
+              "id": "cv0004-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A successful change plan has a nonzero detailed code",
+              "url": "https://developer.hashicorp.com/terraform/cli/commands/plan",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CV0-004"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The documented detailed exit codes are zero unchanged, one error and two changes present.",
+              "recommendation": "Teach automation interpretation and execute unchanged/update/replacement/invalid-input cases using only local terraform_data.",
+              "disposition": "applied",
+              "source_id": "terraform-cli-plan-command",
+              "resolution": "Teach automation interpretation and execute unchanged/update/replacement/invalid-input cases using only local terraform_data."
+            },
+            {
+              "id": "cv0004-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Cost notification is delayed rather than an instantaneous cap",
+              "url": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CV0-004"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "AWS documents billing/notification delay and possible further charges before or after an alert.",
+              "recommendation": "Explain budget signals versus enforced controls with invented cost/capacity examples and no vendor price or spend-cap guarantee.",
+              "disposition": "applied",
+              "source_id": "aws-budgets-managing-cost",
+              "resolution": "Explain budget signals versus enforced controls with invented cost/capacity examples and no vendor price or spend-cap guarantee."
+            },
+            {
+              "id": "cv0004-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Delivery retries need explicit effect handling",
+              "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues-at-least-once-delivery.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CV0-004"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "A standard queue can deliver another copy; consumer idempotence must be designed rather than inferred from acknowledgement.",
+              "recommendation": "Add an original locally executed receipt/effect transaction and explain external-action, acknowledgement and retention limits.",
+              "disposition": "applied",
+              "source_id": "aws-sqs-at-least-once",
+              "resolution": "Add an original locally executed receipt/effect transaction and explain external-action, acknowledgement and retention limits."
+            },
+            {
+              "id": "cv0004-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Response codes are discriminating evidence, not a diagnosis",
+              "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CV0-004"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "RFC 9110 distinguishes authentication, refusal/non-disclosure and gateway/upstream status meanings.",
+              "recommendation": "Add a qualified HTTP investigation table and preserve host/certificate context during alternate-address tests.",
+              "disposition": "applied",
+              "source_id": "http-semantics-rfc9110",
+              "resolution": "Add a qualified HTTP investigation table and preserve host/certificate context during alternate-address tests."
+            }
+          ],
+          "notes": "Mapped all 33 numbered PDF objectives against 31 main-page summary rows. Corrected unsupported experience advice in guide/catalog, filled community-cloud and AI/IoT scope, clarified CLI/state/budget/retry boundaries, added original Terraform and SQLite examples with 61 executed local checks, strengthened 46 answers and eight proposed labs, and qualified blocked catalog claims. Accepted objective and lifecycle snapshots remain unchanged. Same-context AI review; human review pending. See docs/research/2026-09-29-cv0-004-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 8,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-xk0006-deep-review",
       "title": "XK0-006 complete guide and learning-content review",
       "rubric_version": 1,

@@ -1,0 +1,2195 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "CV0-004",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/CV0-004-comptia-cloud-plus.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "9128a086a8a836c46d53366808886a75e01befa3c21dd20f69f43561de29bfc4",
+  "guide_after_sha256": "15906266b1d8fcd110c3228d7edc4313fdef196c2fdad5323d9e079aa20345e7",
+  "prior_records": {
+    "exam": {
+      "code": "CV0-004",
+      "level": "intermediate",
+      "vendor_id": "comptia",
+      "title": "CompTIA Cloud+ (V4)",
+      "status": "active",
+      "study_guide_url": "https://www.comptia.org/en-us/certifications/cloud/",
+      "guide_path": "guides/CV0-004-comptia-cloud-plus.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "CompTIA recommends 2–3 years in systems administration or networking plus 12 months of hands-on cloud experience. Practice provider-neutral requirement mapping, availability/network/compute/storage/database/cost architecture, migrations and IaC, scaling/backup/observability, IAM/data/network/container security and compliance evidence, CI/CD and event-driven integration, and layered troubleshooting across at least one cloud with translation to a second provider."
+    },
+    "review": {
+      "id": "cv0-004-2026-09-01-source-validation",
+      "exam_code": "CV0-004",
+      "guide_path": "guides/CV0-004-comptia-cloud-plus.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/cv0-004-official-objectives.txt",
+      "blueprint_snapshot_sha256": "6fb337abbad0ccde4c7a29dceb3c7e3611211edf97a676fe7bd7800406c0a192",
+      "objective_coverage": [
+        {
+          "objective_group": "Cloud architecture (23%)",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2, 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Deployment (19%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1 and 3",
+            "Labs 3–4, 7–8"
+          ]
+        },
+        {
+          "objective_group": "Operations (17%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios 1–2",
+            "Labs 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security (19%)",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 1–2 and 6–8"
+          ]
+        },
+        {
+          "objective_group": "DevOps fundamentals (10%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios 2–3",
+            "Labs 3 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Troubleshooting (12%)",
+          "guide_sections": [
+            "Section 6",
+            "All integrated scenarios",
+            "All labs"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 9,
+        "reachable": 7,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All six weighted V4 domains are mapped to requirements, selection, IaC deployment, observable operations, layered security, DevOps delivery and systematic troubleshooting, with three scenarios, eight safe multi-provider labs and 42 original checks. The estimated-2027 statement is explicitly not an exact retirement date. All nine guide URLs are cataloged; source health is recorded separately. No proprietary objectives, PBQs, course labs or recalled items are used."
+    },
+    "sources": [
+      {
+        "id": "comptia-certmaster-learn",
+        "title": "CompTIA CertMaster Learn",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "publisher": "CompTIA",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71",
+          "220-1201",
+          "220-1202",
+          "N10-009",
+          "SY0-701",
+          "XK0-006",
+          "CV0-004"
+        ],
+        "notes": "Official self-paced learning platform; exact certification availability, bundle, price, duration and access vary."
+      },
+      {
+        "id": "comptia-certmaster-labs",
+        "title": "CompTIA CertMaster Labs",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "publisher": "CompTIA",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71",
+          "220-1201",
+          "220-1202",
+          "N10-009",
+          "SY0-701",
+          "XK0-006",
+          "CV0-004"
+        ],
+        "notes": "Official browser-based practical environment; verify exam inclusion and current bundle details."
+      },
+      {
+        "id": "comptia-certmaster-practice",
+        "title": "CompTIA CertMaster Practice",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "publisher": "CompTIA",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71",
+          "220-1201",
+          "220-1202",
+          "N10-009",
+          "SY0-701",
+          "XK0-006",
+          "CV0-004"
+        ],
+        "notes": "Official adaptive assessment and remediation platform; not a source of actual exam items."
+      },
+      {
+        "id": "comptia-cv0-004-blueprint",
+        "title": "CompTIA Cloud+ V4",
+        "url": "https://www.comptia.org/en-us/certifications/cloud/",
+        "publisher": "CompTIA",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "CV0-004"
+        ],
+        "notes": "Canonical six-domain weighted outline and delivery/lifecycle page. Lists September 24, 2024 launch, maximum 90 questions, 90 minutes, 750/900 score, English/Japanese, and estimated-2027 retirement without an exact date or replacement."
+      },
+      {
+        "id": "comptia-cv0-004-pluralsight",
+        "title": "CompTIA Cloud+ CV0-004 path",
+        "url": "https://www.pluralsight.com/paths/comptia-cloud-cvo-004",
+        "publisher": "Pluralsight",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "CV0-004"
+        ],
+        "notes": "Six domain courses, 14 hours and a practice exam listed; the provider URL uses cvo although the displayed exam is CV0-004."
+      },
+      {
+        "id": "comptia-cv0-004-linkedin",
+        "title": "CompTIA Cloud+ CV0-004 Cert Prep",
+        "url": "https://www.linkedin.com/learning/comptia-cloud-plus-cv0-004-cert-prep",
+        "publisher": "LinkedIn Learning / Total Seminars",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "CV0-004"
+        ],
+        "notes": "Six hours 13 minutes, 12 quizzes, released December 2025; concise current six-domain route."
+      },
+      {
+        "id": "comptia-cv0-004-oreilly-sybex",
+        "title": "CompTIA Cloud+ Study Guide, 4th Edition",
+        "url": "https://www.oreilly.com/library/view/comptia-cloud-study/9781394333776/",
+        "publisher": "O'Reilly / Sybex / Ben Piper",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "CV0-004"
+        ],
+        "notes": "August 2025, 480 pages and 12 hours 34 minutes listed, with current CV0-004 coverage and Sybex online assessment tools."
+      },
+      {
+        "id": "comptia-cv0-004-udemy",
+        "title": "CompTIA Cloud+ CV0-004 Complete Course and Practice Exams",
+        "url": "https://www.udemy.com/course/comptia-cloud-plus/",
+        "publisher": "Udemy / Anthony Sequeira / Michael Shannon",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "CV0-004"
+        ],
+        "notes": "Ten hours 54 minutes, 106 lectures, assignments, quizzes and two practice exams listed; updated July 2026."
+      },
+      {
+        "id": "comptia-cv0-004-measureup",
+        "title": "CompTIA Cloud+ CV0-004 practice test",
+        "url": "https://www.measureup.com/comptia-cloud-cv0-004-practice-test.html",
+        "publisher": "MeasureUp",
+        "authority_class": 4,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "CV0-004"
+        ],
+        "notes": "186 questions, March 2025 release and practice/certification modes listed; use explanations for remediation rather than item memorization."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "78c9d4568e65ae56a4b1f7f5fd9e5e6557b9e0a365908e6f8238b61124682121",
+      "guide_sections": [
+        "1. Cloud architecture — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "1753d2ff5c0adec52afda4e762f5d79bb515061bf41f7d25b00700d80f2e2c14",
+      "guide_sections": [
+        "1. Cloud architecture — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "69597f85edbef2aee9b46c2cec949fa691eb49001a86da3a49848aec34117c35",
+      "guide_sections": [
+        "1. Cloud architecture — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "40706123077ccc49d1eeccfcc3d65f972377b7d5a47ddd6fb232b79b3275c894",
+      "guide_sections": [
+        "1. Cloud architecture — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "75f949c6508851b1c9035c1b36631e9ecb3c4510aa859c6546c71f60bf658496",
+      "guide_sections": [
+        "1. Cloud architecture — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "7a17d58a26aae1f18b73068868a53f65ecef3b60db520f0c1140486ff6ac6b1d",
+      "guide_sections": [
+        "1. Cloud architecture — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "800155e1382a21c2bd76e089b819b6dd9314851e931c94579d208774f0f8f19a",
+      "guide_sections": [
+        "1. Cloud architecture — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "fffc1c8b1e23814e1b9db104e7aeba1fe4c408f0283e749deebfc8ea150f952d",
+      "guide_sections": [
+        "1. Cloud architecture — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "d031094320134d0aef60504e2e5403e410a24626eb862de3bed64f3e6ac69d45",
+      "guide_sections": [
+        "1. Cloud architecture — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "cfbee0f1928b0617e687a78724e180b0cf83033d2db9a55ca6675f7cf9f79d7a",
+      "guide_sections": [
+        "1. Cloud architecture — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 11,
+      "objective_sha256": "94dbd04707f0cb2ef85a6d670ba9afb2ae41896e9d2b1260795b14dacb6d38da",
+      "guide_sections": [
+        "1. Cloud architecture — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "970145f10e7baa605222e1907269bf5f2623c03b5c5f72cd41fc985ca982690d",
+      "guide_sections": [
+        "2. Deployment — 19%",
+        "Answers and reasoning",
+        "Hands-on labs",
+        "1. Cloud architecture — 23%"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "7213925acb0d68375462e2cffa63b2c7014528316f1343095314401c1b313093",
+      "guide_sections": [
+        "2. Deployment — 19%",
+        "Answers and reasoning",
+        "Hands-on labs",
+        "1. Cloud architecture — 23%"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "6d78abd6ab4b960dd35cc8fb4e9bc7ec6ad2bc6b97f2022a5d93fe221c7713dc",
+      "guide_sections": [
+        "2. Deployment — 19%",
+        "Answers and reasoning",
+        "Hands-on labs",
+        "1. Cloud architecture — 23%"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "a7068b4b8acb9cfd383faa48fbfa74b8d76712861ddc743827e054c6a2f8fa43",
+      "guide_sections": [
+        "2. Deployment — 19%",
+        "Answers and reasoning",
+        "Hands-on labs",
+        "1. Cloud architecture — 23%"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "57d0a9987bf145cd1a615c20e455053b8a7fa7a7f1bae09385e304a923abe213",
+      "guide_sections": [
+        "2. Deployment — 19%",
+        "Answers and reasoning",
+        "Hands-on labs",
+        "1. Cloud architecture — 23%"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "25add9a113aa20fc99a16025aef762ccf948c4757f0de84a2c62bf0671075d01",
+      "guide_sections": [
+        "3. Operations — 17%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "3a201c22591bff17c0eabdf914121a8b4e83833045f87bb1d614b9c5f45d04f0",
+      "guide_sections": [
+        "3. Operations — 17%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "ac915d6467832acd0f9bef1e3ce952ec53e75f1dc1300a21c5e0cca05d5e22b4",
+      "guide_sections": [
+        "3. Operations — 17%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "f9570ed8d24acab4ad1addf21601aed859d352d0c1015fb89d7977bdec98b242",
+      "guide_sections": [
+        "3. Operations — 17%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "8788934da259c23447383555ad8a6e68108b84e182e983d096bb96b51f568fa6",
+      "guide_sections": [
+        "4. Security — 19%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "ccf77757d365acd820d5f2bcd3482ece7223671f727c1841cc05def0325c4b4e",
+      "guide_sections": [
+        "4. Security — 19%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "8e0e11cf72fd9f6e98b26e88d93c59afd9a6c02a9fc39984287601bbae764a9a",
+      "guide_sections": [
+        "4. Security — 19%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "92a0285390401b5f7473d97841728fda752aa0e2745435a5463f9399528eece6",
+      "guide_sections": [
+        "4. Security — 19%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "6f10656d6ec1f662eaba7ac93e144bca027f4a261847c8457684d56818b464fa",
+      "guide_sections": [
+        "4. Security — 19%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "aeb0fe36265a04d43f2a712f9f6d7cf5aa7def27c73bc1d36eed3b1136436a29",
+      "guide_sections": [
+        "4. Security — 19%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "15eee90afc12daee37769cd7e34591f205fc3e10fcd5b43f3e26cc4dc3a10b7f",
+      "guide_sections": [
+        "5. DevOps fundamentals — 10%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "940dbda0fcfa0b252e18a093e6f1582990ac5d9e89614e88b1210249f1746025",
+      "guide_sections": [
+        "5. DevOps fundamentals — 10%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "8eaea12eba21258bfddaf3148fcca643ebc5a8b1089ad9df787e1c32965b9b0b",
+      "guide_sections": [
+        "5. DevOps fundamentals — 10%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "b48c58a97eda8f37c58fb25ad47234fc621159e03d23ec04244175970b99f624",
+      "guide_sections": [
+        "5. DevOps fundamentals — 10%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "e57ce85b617784a3764e8d778e8355ae9a41d7926e5f38fbdf3b60314e4ea60f",
+      "guide_sections": [
+        "6. Troubleshooting — 12%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "f2593e921a7408a09a688739e5ee6b8d8f54d30a9eee7ba8a10032b8f80852db",
+      "guide_sections": [
+        "6. Troubleshooting — 12%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "2ef77787ad5350ff03a268330f7fa0efccec50f2658dd8f8ae79bc7db3959c8f",
+      "guide_sections": [
+        "6. Troubleshooting — 12%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "CV0-004",
+        "title": "CompTIA Cloud+ (V4)",
+        "url": "https://www.comptia.org/en-us/certifications/cloud/",
+        "guide_path": "guides/CV0-004-comptia-cloud-plus.md",
+        "snapshot_path": "data\\objective-snapshots\\cv0-004-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\cv0-004-official-status.json",
+        "previous_sha256": "6fb337abbad0ccde4c7a29dceb3c7e3611211edf97a676fe7bd7800406c0a192",
+        "current_sha256": "6fb337abbad0ccde4c7a29dceb3c7e3611211edf97a676fe7bd7800406c0a192",
+        "previous_status_sha256": "c11be924b038299b54c641f8d1c59b79f3e8925ce750628308bbf72ef2b4609f",
+        "current_status_sha256": "c11be924b038299b54c641f8d1c59b79f3e8925ce750628308bbf72ef2b4609f",
+        "official_status": {
+          "skills_versions": [
+            "Exam version: V4",
+            "Launch date: September 24, 2024",
+            "Exam series code: CV0-004",
+            "Number of questions: maximum of 90, including multiple-choice and performance-based questions",
+            "Length of test: 90 minutes",
+            "Passing score: 750 (on a scale of 100-900)",
+            "Languages: English and Japanese",
+            "Retirement: Usually three years after launch (estimated 2027)"
+          ],
+          "upcoming_announcements": [
+            "Retirement: Usually three years after launch (estimated 2027)"
+          ]
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 27,
+    "reachable": 25,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "comptia-certmaster-learn",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+      "checked_at": "2026-09-29T04:53:53.602876+00:00",
+      "health": {
+        "id": "comptia-certmaster-learn",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "checked_at": "2026-09-29T04:53:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CompTIA CertMaster Learn",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "duration_signals": [],
+        "signal_fingerprint": "65786e0e6431fcfe2e58ba358241f9cdb456812d6ade43fbd74876ee340cfef2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+      "sha256": "9bee308577f1977bd0f56dca8d4bae5b76f9c414dd50ad6eefa6ce5961e80e06",
+      "text_characters": 1692
+    },
+    {
+      "id": "comptia-certmaster-labs",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+      "checked_at": "2026-09-29T04:53:53.603476+00:00",
+      "health": {
+        "id": "comptia-certmaster-labs",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "checked_at": "2026-09-29T04:53:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CompTIA CertMaster Labs | CompTIA UK",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "duration_signals": [],
+        "signal_fingerprint": "4b7552b7bda3589184d03b2dfcb4182095d6fc6dfc7d5cfddea7650446126f7f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+      "sha256": "37496f082d45d2dc2e76ce2d12a62de9f2e4b77bcf222b42cceb0c52f93d10e6",
+      "text_characters": 1552
+    },
+    {
+      "id": "comptia-certmaster-practice",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+      "checked_at": "2026-09-29T04:53:53.603851+00:00",
+      "health": {
+        "id": "comptia-certmaster-practice",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "checked_at": "2026-09-29T04:53:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CertMaster Practice",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "duration_signals": [],
+        "signal_fingerprint": "87ff57590e3cf2e101143725a522c14d9cbd91afd9e8d02bb27f86e7af1751c4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+      "sha256": "8d8ab7b20b45cc2623ce1437a79c68745eeb183d210d537fd32ce9839f994bf9",
+      "text_characters": 3505
+    },
+    {
+      "id": "comptia-cv0-004-blueprint",
+      "url": "https://www.comptia.org/en-us/certifications/cloud/",
+      "checked_at": "2026-09-29T04:53:55.437256+00:00",
+      "health": {
+        "id": "comptia-cv0-004-blueprint",
+        "url": "https://www.comptia.org/en-us/certifications/cloud/",
+        "checked_at": "2026-09-29T04:53:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/certifications/cloud/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Cloud+ Certification | CompTIA",
+        "canonical_url": "https://www.comptia.org/en-us/certifications/cloud/",
+        "duration_signals": [
+          "20 hours",
+          "25 hours",
+          "40 hours",
+          "60 hours",
+          "90 minutes"
+        ],
+        "signal_fingerprint": "cc54636fe7864a016f07bc3d000482505ed7b55770b238eecf73fe51158dbf1d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/certifications/cloud/",
+      "sha256": "7ae9ac7d2d05929792ee16b87587293e8e9d4724d58a06606211f2e21f1ea84e",
+      "text_characters": 7378
+    },
+    {
+      "id": "comptia-cv0-004-pluralsight",
+      "url": "https://www.pluralsight.com/paths/comptia-cloud-cvo-004",
+      "checked_at": "2026-09-29T04:53:55.963117+00:00",
+      "health": {
+        "id": "comptia-cv0-004-pluralsight",
+        "url": "https://www.pluralsight.com/paths/comptia-cloud-cvo-004",
+        "checked_at": "2026-09-29T04:53:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/comptia-cloud-cvo-004",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "CompTIA Cloud+ (CV0-004)",
+        "canonical_url": "https://www.pluralsight.com/paths/comptia-cloud-cvo-004",
+        "duration_signals": [
+          "14 Hours"
+        ],
+        "signal_fingerprint": "3644b7d163042663bce12d1af13b2b75d522d5a3c77897571a1427dcc0c8b46f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/comptia-cloud-cvo-004",
+      "sha256": "017a8c9d21ca9720446ad2ea3aa070210903e99df6e27a4df4536a450628e0c3",
+      "text_characters": 3790
+    },
+    {
+      "id": "comptia-cv0-004-linkedin",
+      "url": "https://www.linkedin.com/learning/comptia-cloud-plus-cv0-004-cert-prep",
+      "checked_at": "2026-09-29T04:53:55.987897+00:00",
+      "health": {
+        "id": "comptia-cv0-004-linkedin",
+        "url": "https://www.linkedin.com/learning/comptia-cloud-plus-cv0-004-cert-prep",
+        "checked_at": "2026-09-29T04:53:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.linkedin.com/learning/comptia-cloud-plus-cv0-004-cert-prep",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CompTIA Cloud+ (CV0-004) Cert Prep Online Class | LinkedIn Learning, formerly Lynda.com",
+        "canonical_url": "https://www.linkedin.com/learning/comptia-cloud-plus-cv0-004-cert-prep",
+        "duration_signals": [
+          "PT10M15S",
+          "PT10M45S",
+          "PT10M50S",
+          "PT10M56S",
+          "PT11M49S",
+          "PT12M1S",
+          "PT12M20S",
+          "PT2M11S",
+          "PT2M36S",
+          "PT3M39S",
+          "PT4M12S",
+          "PT4M28S",
+          "PT4M31S",
+          "PT4M43S",
+          "PT4M49S",
+          "PT4M58S",
+          "PT5M16S",
+          "PT5M22S",
+          "PT5M28S",
+          "PT5M3S",
+          "PT5M51S",
+          "PT6H13M53S",
+          "PT6M12S",
+          "PT6M27S",
+          "PT6M29S",
+          "PT6M33S",
+          "PT6M36S",
+          "PT6M45S",
+          "PT6M48S",
+          "PT6M51S"
+        ],
+        "signal_fingerprint": "94f4cbbfa299d94116eb3e01564d8e9647425b1752cace0ee2cccb57ec30bdb0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.linkedin.com/learning/comptia-cloud-plus-cv0-004-cert-prep",
+      "sha256": "72ccf9094f227e291d538324a4eaf879b6d466686849918f2c005fae515922d6",
+      "text_characters": 5517
+    },
+    {
+      "id": "comptia-cv0-004-oreilly-sybex",
+      "url": "https://www.oreilly.com/library/view/comptia-cloud-study/9781394333776/",
+      "checked_at": "2026-09-29T04:53:57.422914+00:00",
+      "health": {
+        "id": "comptia-cv0-004-oreilly-sybex",
+        "url": "https://www.oreilly.com/library/view/comptia-cloud-study/9781394333776/",
+        "checked_at": "2026-09-29T04:53:57+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/comptia-cloud-study/9781394333776/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "comptia-cv0-004-udemy",
+      "url": "https://www.udemy.com/course/comptia-cloud-plus/",
+      "checked_at": "2026-09-29T04:53:57.610049+00:00",
+      "health": {
+        "id": "comptia-cv0-004-udemy",
+        "url": "https://www.udemy.com/course/comptia-cloud-plus/",
+        "checked_at": "2026-09-29T04:53:57+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/comptia-cloud-plus/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "comptia-cv0-004-measureup",
+      "url": "https://www.measureup.com/comptia-cloud-cv0-004-practice-test.html",
+      "checked_at": "2026-09-29T04:53:58.095768+00:00",
+      "health": {
+        "id": "comptia-cv0-004-measureup",
+        "url": "https://www.measureup.com/comptia-cloud-cv0-004-practice-test.html",
+        "checked_at": "2026-09-29T04:53:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/comptia-cloud-cv0-004-practice-test.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Practice Test CV0-004: CompTIA Cloud+",
+        "canonical_url": "https://www.measureup.com/comptia-cloud-cv0-004-practice-test.html",
+        "duration_signals": [
+          "90 minutes"
+        ],
+        "signal_fingerprint": "de8866ff32abcbeafd0a390e95621f9c6f997db081d4487dc2f2c4c6058d1a08",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/comptia-cloud-cv0-004-practice-test.html",
+      "sha256": "4e9a6df8e9f0f22d99250eee13b550decaa0383b61e5c8152aa3e8d7ea0f6579",
+      "text_characters": 16283
+    },
+    {
+      "id": "comptia-partner-resources",
+      "url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+      "checked_at": "2026-09-29T04:56:32.653212+00:00",
+      "health": {
+        "id": "comptia-partner-resources",
+        "url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+        "checked_at": "2026-09-29T04:56:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Partner Resources",
+        "canonical_url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+        "duration_signals": [],
+        "signal_fingerprint": "be631fe463c6d0a7c5e51dfcf4ec7e4813a2eeae48c6ca7bc993534faf97d57e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+      "sha256": "14ecc2fbf065fe11370420c291b29dfd5543640cc1fa5134d601dbf985fb9026",
+      "text_characters": 4747
+    },
+    {
+      "id": "comptia-certmaster-perform",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/perform/",
+      "checked_at": "2026-09-29T04:56:32.654660+00:00",
+      "health": {
+        "id": "comptia-certmaster-perform",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/perform/",
+        "checked_at": "2026-09-29T04:56:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/perform/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CertMaster Perform",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/perform/",
+        "duration_signals": [],
+        "signal_fingerprint": "9f733cd9323fb2d342292e1f99473168f956344ae0963b65ab179e22ee2a16a8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/perform/",
+      "sha256": "2f735ec2c8262941eaf049c2c35d34023cc1a6f0aacd7c301c41547a7fc72e7d",
+      "text_characters": 2011
+    },
+    {
+      "id": "terraform-data-resource",
+      "url": "https://developer.hashicorp.com/terraform/language/resources/terraform-data",
+      "checked_at": "2026-09-29T04:56:32.655551+00:00",
+      "health": {
+        "id": "terraform-data-resource",
+        "url": "https://developer.hashicorp.com/terraform/language/resources/terraform-data",
+        "checked_at": "2026-09-29T04:56:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/language/resources/terraform-data",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "terraform_data resource reference | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/language/resources/terraform-data",
+        "duration_signals": [],
+        "signal_fingerprint": "845b3ca7fb173aa79f60ec000a2fcab2e9578bea971793891b52d7c3ec52abc0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/language/resources/terraform-data",
+      "sha256": "ced28454a65bb56dca862b609bb38e5426d5ff9582e2f657a1e7960dfedd0aa5",
+      "text_characters": 4214
+    },
+    {
+      "id": "terraform-validate-command",
+      "url": "https://developer.hashicorp.com/terraform/cli/commands/validate",
+      "checked_at": "2026-09-29T04:56:34.004704+00:00",
+      "health": {
+        "id": "terraform-validate-command",
+        "url": "https://developer.hashicorp.com/terraform/cli/commands/validate",
+        "checked_at": "2026-09-29T04:56:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/cli/commands/validate",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "terraform validate command reference | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/cli/commands/validate",
+        "duration_signals": [],
+        "signal_fingerprint": "06ff43d4667a563502e738b6fa53d7a71c428ea2bb601deb1c708717281be27a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/cli/commands/validate",
+      "sha256": "7ff3825e6a18b88788c51bd319dff0d0676e822df7d61ecfcd3329db355dee23",
+      "text_characters": 10018
+    },
+    {
+      "id": "terraform-sensitive-data",
+      "url": "https://developer.hashicorp.com/terraform/language/manage-sensitive-data",
+      "checked_at": "2026-09-29T04:56:34.205397+00:00",
+      "health": {
+        "id": "terraform-sensitive-data",
+        "url": "https://developer.hashicorp.com/terraform/language/manage-sensitive-data",
+        "checked_at": "2026-09-29T04:56:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/language/manage-sensitive-data",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Manage sensitive data in your configuration | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/language/manage-sensitive-data",
+        "duration_signals": [],
+        "signal_fingerprint": "9e77689f40a80cc0dccfafbdc480a2183aebadce967bc5ab37a240028d93286d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/language/manage-sensitive-data",
+      "sha256": "e086a940b4fc1f8d85706a214436ca8750cc6c96cddb8c8a653bbf4faa3f8963",
+      "text_characters": 12494
+    },
+    {
+      "id": "aws-sqs-at-least-once",
+      "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues-at-least-once-delivery.html",
+      "checked_at": "2026-09-29T04:56:34.970615+00:00",
+      "health": {
+        "id": "aws-sqs-at-least-once",
+        "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues-at-least-once-delivery.html",
+        "checked_at": "2026-09-29T04:56:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues-at-least-once-delivery.html",
+        "content_type": "text/html",
+        "page_title": "Amazon SQS at-least-once delivery - Amazon Simple Queue ServiceAmazon SQS at-least-once delivery - Amazon Simple Queue Service",
+        "canonical_url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues-at-least-once-delivery.html",
+        "duration_signals": [],
+        "signal_fingerprint": "9be71e01442eb0301d8a6779b02edd5ccb67ffd62d4848ea974a3ecb5c447de5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues-at-least-once-delivery.html",
+      "sha256": "559a1225ab5055cca4156ea993c0ad745d8c1bb3974f97663a8535facb1fea30",
+      "text_characters": 1190
+    },
+    {
+      "id": "aws-idempotent-apis-article",
+      "url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+      "checked_at": "2026-09-29T04:56:35.228031+00:00",
+      "health": {
+        "id": "aws-idempotent-apis-article",
+        "url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+        "checked_at": "2026-09-29T04:56:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "references-details-empty",
+        "canonical_url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+        "duration_signals": [],
+        "signal_fingerprint": "f2a66505716bf30f701b674f8577d16d02ff21b972c096bd3ba38db9d73517a9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+      "sha256": "7c4e98a3c06c06c0397b3e81fe534e0d3ecd07c33f66f17eee2b9f39d28a05d7",
+      "text_characters": 20063
+    },
+    {
+      "id": "aws-budgets-managing-cost",
+      "url": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html",
+      "checked_at": "2026-09-29T04:56:35.491267+00:00",
+      "health": {
+        "id": "aws-budgets-managing-cost",
+        "url": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html",
+        "checked_at": "2026-09-29T04:56:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html",
+        "content_type": "text/html",
+        "page_title": "Managing your costs with AWS Budgets - AWS Cost ManagementManaging your costs with AWS Budgets - AWS Cost Management",
+        "canonical_url": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html",
+        "duration_signals": [
+          "12 hours"
+        ],
+        "signal_fingerprint": "5009e25e2292d58d835e9e312c5d797f71050ebeca25ffa94b7fa395af3afac4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html",
+      "sha256": "0bcf0317035414894b351410d6cfef55b6d154f24e8f6b9036055ce4db7a424e",
+      "text_characters": 5754
+    },
+    {
+      "id": "aws-cli-welcome",
+      "url": "https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html",
+      "checked_at": "2026-09-29T04:56:35.498290+00:00",
+      "health": {
+        "id": "aws-cli-welcome",
+        "url": "https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html",
+        "checked_at": "2026-09-29T04:56:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html",
+        "content_type": "text/html",
+        "page_title": "What is the AWS Command Line Interface? - AWS Command Line InterfaceWhat is the AWS Command Line Interface? - AWS Command Line Interface",
+        "canonical_url": "https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html",
+        "duration_signals": [],
+        "signal_fingerprint": "075ada45183414e04e8e09b8c754103329e78b278c0ef29cd83acd87680b0b2b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html",
+      "sha256": "40979bb62f532d4c4c906f5f4b9d1b809bdbf8f3855eb1a92152a77d620026cf",
+      "text_characters": 4346
+    },
+    {
+      "id": "aws-iot-overview",
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html",
+      "checked_at": "2026-09-29T04:56:35.896195+00:00",
+      "health": {
+        "id": "aws-iot-overview",
+        "url": "https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html",
+        "checked_at": "2026-09-29T04:56:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html",
+        "content_type": "text/html",
+        "page_title": "What is AWS IoT? - AWS IoT CoreWhat is AWS IoT? - AWS IoT Core",
+        "canonical_url": "https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html",
+        "duration_signals": [],
+        "signal_fingerprint": "b6a6c886b1e75051caab0c515573a5fb2cfb5e586571914359aaa8d76f70eaea",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html",
+      "sha256": "fa60f54f6b9aae5f9248f9aee4e0d7645931cea69d1a2d20a519f926504831db",
+      "text_characters": 3544
+    },
+    {
+      "id": "python313-sqlite3",
+      "url": "https://docs.python.org/3.13/library/sqlite3.html",
+      "checked_at": "2026-09-29T04:56:35.968330+00:00",
+      "health": {
+        "id": "python313-sqlite3",
+        "url": "https://docs.python.org/3.13/library/sqlite3.html",
+        "checked_at": "2026-09-29T04:56:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/sqlite3.html",
+        "content_type": "text/html",
+        "page_title": "sqlite3 — DB-API 2.0 interface for SQLite databases",
+        "canonical_url": "https://docs.python.org/3/library/sqlite3.html",
+        "duration_signals": [],
+        "signal_fingerprint": "731da9a47040f7dd9c7b7508d358e75f75c3c6f2c963f66c2f41fe9b0b62ff76",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/sqlite3.html",
+      "sha256": "755e12bec8e8f950d336f75e6b38cae3f0395077e8d0c961041a66eee4045968",
+      "text_characters": 72366
+    },
+    {
+      "id": "sqlite-transactions",
+      "url": "https://www.sqlite.org/lang_transaction.html",
+      "checked_at": "2026-09-29T04:56:36.274251+00:00",
+      "health": {
+        "id": "sqlite-transactions",
+        "url": "https://www.sqlite.org/lang_transaction.html",
+        "checked_at": "2026-09-29T04:56:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.sqlite.org/lang_transaction.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Transaction",
+        "canonical_url": "https://www.sqlite.org/lang_transaction.html",
+        "duration_signals": [],
+        "signal_fingerprint": "34f864c72104dbead7fce0958239e4458ad87412acc05349e9dd266fb151bc68",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.sqlite.org/lang_transaction.html",
+      "sha256": "b65dc308fd9e0ce471844c97366a4f5ad3a1f42833a3b19486ad7d6555a8e24e",
+      "text_characters": 8082
+    },
+    {
+      "id": "sqlite-atomic-commit",
+      "url": "https://www.sqlite.org/atomiccommit.html",
+      "checked_at": "2026-09-29T04:56:36.593458+00:00",
+      "health": {
+        "id": "sqlite-atomic-commit",
+        "url": "https://www.sqlite.org/atomiccommit.html",
+        "checked_at": "2026-09-29T04:56:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.sqlite.org/atomiccommit.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Atomic Commit In SQLite",
+        "canonical_url": "https://www.sqlite.org/atomiccommit.html",
+        "duration_signals": [],
+        "signal_fingerprint": "34330ea9a87a8a983db24a1d63dcf57121017ea61f3bd331fb79254156439a80",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.sqlite.org/atomiccommit.html",
+      "sha256": "5a5be7b660217c9408c8a81eaf2faa2d08832ed3790f895a0a713916ad856ea1",
+      "text_characters": 61643
+    },
+    {
+      "id": "http-semantics-rfc9110",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "checked_at": "2026-09-29T04:56:37.002249+00:00",
+      "health": {
+        "id": "http-semantics-rfc9110",
+        "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+        "checked_at": "2026-09-29T04:56:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+        "content_type": "text/html",
+        "page_title": "RFC 9110: HTTP Semantics",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+        "duration_signals": [
+          "2 minutes"
+        ],
+        "signal_fingerprint": "bb870d57d9b1622466fa690710e062318165285908a6124aa6aa2dda345256c4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "sha256": "d431760660ea44e130f6e919dab216df2d0b3a490567a98089267523368fe1e5",
+      "text_characters": 446020
+    },
+    {
+      "id": "terraform-input-variables",
+      "url": "https://developer.hashicorp.com/terraform/language/values/variables",
+      "checked_at": "2026-09-29T04:57:45.885084+00:00",
+      "health": {
+        "id": "terraform-input-variables",
+        "url": "https://developer.hashicorp.com/terraform/language/values/variables",
+        "checked_at": "2026-09-29T04:57:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/language/values/variables",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Use input variables to add module arguments | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/language/values/variables",
+        "duration_signals": [],
+        "signal_fingerprint": "d108cd1f3a5b16ff0cd46835d5f7df98e141f809dfeb99dfb6d6ad4aa6328a1f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/language/values/variables",
+      "sha256": "c9d317c8676e7a0d1dac1c0abfdf55b3b350cbd8fab3cb6afc2bd41b57921f4a",
+      "text_characters": 10100
+    },
+    {
+      "id": "terraform-cli-plan-command",
+      "url": "https://developer.hashicorp.com/terraform/cli/commands/plan",
+      "checked_at": "2026-09-29T04:57:45.885839+00:00",
+      "health": {
+        "id": "terraform-cli-plan-command",
+        "url": "https://developer.hashicorp.com/terraform/cli/commands/plan",
+        "checked_at": "2026-09-29T04:57:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/cli/commands/plan",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "terraform plan command reference | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/cli/commands/plan",
+        "duration_signals": [],
+        "signal_fingerprint": "30a0860c300d17d5162882b9035a54a8a6f21ec77e43c19318390276eafeeb6c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/cli/commands/plan",
+      "sha256": "4ef2870f415437c3f414ae6a37fa7bf359d0151278bd07297f3c7c6eca29ed06",
+      "text_characters": 19938
+    },
+    {
+      "id": "comptia-cv0-004-objectives-pdf",
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/1caf96e2bef111efba33a6b3d2c966cf?checkExpiry=false",
+      "checked_at": "2026-09-29T04:57:48.358619+00:00",
+      "health": {
+        "id": "comptia-cv0-004-objectives-pdf",
+        "url": "https://lecbyo.files.cmp.optimizely.com/download/1caf96e2bef111efba33a6b3d2c966cf?checkExpiry=false",
+        "checked_at": "2026-09-29T04:57:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://lecbyo.files.cmp.optimizely.com/download/1caf96e2bef111efba33a6b3d2c966cf?checkExpiry=false",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://lecbyo.files.cmp.optimizely.com/download/1caf96e2bef111efba33a6b3d2c966cf?checkExpiry=false",
+      "sha256": "8ef39880896bb27acb72249cd6e4baa11306119ca8da065bb595a9331a2416bb",
+      "bytes": 197359,
+      "pdf_pages": 17,
+      "text_characters": 20570
+    },
+    {
+      "id": "nist-sp800-145",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf",
+      "checked_at": "2026-09-29T04:57:48.163135+00:00",
+      "health": {
+        "id": "nist-sp800-145",
+        "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf",
+        "checked_at": "2026-09-29T04:57:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf",
+      "sha256": "7b0c1a9fdfc67218b8ba2098f448c100c27070db91736b3c87fed63bfa21d418",
+      "bytes": 85781,
+      "pdf_pages": 7,
+      "text_characters": 11207
+    }
+  ],
+  "added_source_ids": [
+    "comptia-cv0-004-objectives-pdf",
+    "nist-sp800-145",
+    "terraform-data-resource",
+    "terraform-validate-command",
+    "aws-sqs-at-least-once",
+    "aws-idempotent-apis-article",
+    "aws-budgets-managing-cost",
+    "aws-cli-welcome",
+    "aws-iot-overview",
+    "sqlite-transactions",
+    "sqlite-atomic-commit",
+    "http-semantics-rfc9110"
+  ],
+  "findings": [
+    {
+      "id": "cv0004-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Experience advice added an unsupported extra year",
+      "url": "https://www.comptia.org/en-us/certifications/cloud/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CV0-004"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current page recommends 2–3 years as systems administrator or cloud engineer; PDF adds equivalent Network+/Server+ knowledge, without an extra 12-month requirement.",
+      "recommendation": "Correct both guide and exam catalog and distinguish recommendations from mandatory prerequisites.",
+      "disposition": "applied",
+      "source_id": "comptia-cv0-004-blueprint",
+      "resolution": "Correct both guide and exam catalog and distinguish recommendations from mandatory prerequisites."
+    },
+    {
+      "id": "cv0004-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "The summary omitted explicit detailed scope",
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/1caf96e2bef111efba33a6b3d2c966cf?checkExpiry=false",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CV0-004"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "PDF objective 1.11 includes AI/ML and IoT; 2.1 includes community cloud, and 5.3/5.4 enumerate integration styles and tools.",
+      "recommendation": "Map all 33 numbered objectives and add original capability/evaluation, deployment-model and integration-role teaching.",
+      "disposition": "applied",
+      "source_id": "comptia-cv0-004-objectives-pdf",
+      "resolution": "Map all 33 numbered objectives and add original capability/evaluation, deployment-model and integration-role teaching."
+    },
+    {
+      "id": "cv0004-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "PDF expands CLI incorrectly for this management context",
+      "url": "https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CV0-004"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The outline prints Common Language Infrastructure in cloud-management access; the provider interface documentation explicitly names Command Line Interface.",
+      "recommendation": "Teach the correct management-interface meaning while identifying the outline wording, without introducing unrelated .NET execution semantics.",
+      "disposition": "applied",
+      "source_id": "aws-cli-welcome",
+      "resolution": "Teach the correct management-interface meaning while identifying the outline wording, without introducing unrelated .NET execution semantics."
+    },
+    {
+      "id": "cv0004-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Secret-free state is not guaranteed by output redaction",
+      "url": "https://developer.hashicorp.com/terraform/language/manage-sensitive-data",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CV0-004"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Sensitive flags can hide normal display while state and saved plan files still contain values; ephemeral/write-only capabilities have constraints.",
+      "recommendation": "Replace blanket keep-secrets-out-of-state wording with artifact protection and version/context/provider-aware guidance.",
+      "disposition": "applied",
+      "source_id": "terraform-sensitive-data",
+      "resolution": "Replace blanket keep-secrets-out-of-state wording with artifact protection and version/context/provider-aware guidance."
+    },
+    {
+      "id": "cv0004-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A successful change plan has a nonzero detailed code",
+      "url": "https://developer.hashicorp.com/terraform/cli/commands/plan",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CV0-004"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The documented detailed exit codes are zero unchanged, one error and two changes present.",
+      "recommendation": "Teach automation interpretation and execute unchanged/update/replacement/invalid-input cases using only local terraform_data.",
+      "disposition": "applied",
+      "source_id": "terraform-cli-plan-command",
+      "resolution": "Teach automation interpretation and execute unchanged/update/replacement/invalid-input cases using only local terraform_data."
+    },
+    {
+      "id": "cv0004-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Cost notification is delayed rather than an instantaneous cap",
+      "url": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CV0-004"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "AWS documents billing/notification delay and possible further charges before or after an alert.",
+      "recommendation": "Explain budget signals versus enforced controls with invented cost/capacity examples and no vendor price or spend-cap guarantee.",
+      "disposition": "applied",
+      "source_id": "aws-budgets-managing-cost",
+      "resolution": "Explain budget signals versus enforced controls with invented cost/capacity examples and no vendor price or spend-cap guarantee."
+    },
+    {
+      "id": "cv0004-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Delivery retries need explicit effect handling",
+      "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues-at-least-once-delivery.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CV0-004"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "A standard queue can deliver another copy; consumer idempotence must be designed rather than inferred from acknowledgement.",
+      "recommendation": "Add an original locally executed receipt/effect transaction and explain external-action, acknowledgement and retention limits.",
+      "disposition": "applied",
+      "source_id": "aws-sqs-at-least-once",
+      "resolution": "Add an original locally executed receipt/effect transaction and explain external-action, acknowledgement and retention limits."
+    },
+    {
+      "id": "cv0004-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Response codes are discriminating evidence, not a diagnosis",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CV0-004"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "RFC 9110 distinguishes authentication, refusal/non-disclosure and gateway/upstream status meanings.",
+      "recommendation": "Add a qualified HTTP investigation table and preserve host/certificate context during alternate-address tests.",
+      "disposition": "applied",
+      "source_id": "http-semantics-rfc9110",
+      "resolution": "Add a qualified HTTP investigation table and preserve host/certificate context during alternate-address tests."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "aws-idempotent-apis-article",
+      "author": "Malcolm Featonby",
+      "disposition": "accepted-with-limits",
+      "value": "Caller-scoped request identity, intent mismatch and retention-contract reasoning inform the original local exercise.",
+      "limits": "Publication date not confirmed. No AWS implementation, service-specific retention promise, global exactly-once claim or production deployment adopted."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "service_labs_executed": 0,
+    "local_iac_and_database_exercises": 2,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 61,
+      "failed": 0,
+      "checks": [
+        "Terraform init with only built-in provider",
+        "public HCL formatting accepted",
+        "public configuration native validation",
+        "initial plan returns detailed changes code",
+        "plan creates one local terraform_data resource",
+        "apply saved local plan",
+        "default synthetic input stored",
+        "repeat plan returns no changes",
+        "changed input produces a plan",
+        "ordinary input change plans in-place update",
+        "apply reviewed input update",
+        "input update retains resource identity",
+        "digest change creates replacement plan",
+        "explicit replacement trigger causes delete-create",
+        "apply local replacement",
+        "replacement has distinct local identity",
+        "native plan rejects fractional replicas",
+        "native plan rejects zero replicas",
+        "native plan rejects over-limit replicas",
+        "native plan rejects unknown environment",
+        "native plan rejects blank owner",
+        "native plan rejects invalid digest",
+        "restored input is unchanged",
+        "destroy only local terraform_data",
+        "local state has no resources",
+        "first event effect and receipt",
+        "repeated event returns prior result",
+        "distinct caller same ID is distinct intent",
+        "later event increments same item",
+        "late duplicate returns original receipt not current aggregate",
+        "same key rejected with changed amount",
+        "same key rejected with changed item",
+        "intent mismatch leaves aggregate intact",
+        "injected exception before commit propagated",
+        "failed operation rolled back both receipt and effect",
+        "retry after rollback applies once",
+        "invalid amount rejected 0",
+        "invalid amount rejected -1",
+        "invalid amount rejected 1.5",
+        "invalid amount rejected True",
+        "invalid amount rejected 1001",
+        "empty caller rejected",
+        "bound unusual identifier remains ordinary data",
+        "persistent receipt survives reconnect",
+        "owned worker terminated before transaction commit",
+        "uncommitted effect and receipt absent after worker exit",
+        "retry after worker exit commits",
+        "eight concurrent callers produce one new effect",
+        "concurrent callers receive same receipt",
+        "concurrent aggregate remains two",
+        "public Python example ran standalone",
+        "owned local state and database fixture cleaned",
+        "three equal zones require six total units for four-unit failover load",
+        "queue drain capacity example",
+        "series availability arithmetic only",
+        "parallel independent availability arithmetic only",
+        "synthetic monthly compute and egress sum",
+        "storage throughput from IOPS and block bytes",
+        "recovery example meets fifteen minute RPO",
+        "recovery example misses sixty minute RTO",
+        "three attempts at each of three nested retry layers"
+      ],
+      "python": "3.13.14",
+      "sqlite": "3.50.4",
+      "terraform": "1.12.2",
+      "sources": {
+        "main.tf": "d8d8bd383306f80ae79fb45809a86396403a9e58d573bdcd559aacf824f54190",
+        "event_consumer.py": "f20962fa040598f32935fc2120fbb2fd61cb3e37ad3bb232c4f8d48d99f76300"
+      },
+      "terraform_commands": [
+        {
+          "command": [
+            "init",
+            "-backend=false",
+            "-input=false",
+            "-no-color"
+          ],
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "fmt",
+            "-check",
+            "-no-color"
+          ],
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "validate",
+            "-json"
+          ],
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "plan",
+            "-input=false",
+            "-no-color",
+            "-detailed-exitcode",
+            "-out=practice.tfplan"
+          ],
+          "exit_code": 2
+        },
+        {
+          "command": [
+            "show",
+            "-json",
+            "practice.tfplan"
+          ],
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "apply",
+            "-input=false",
+            "-no-color",
+            "practice.tfplan"
+          ],
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "show",
+            "-json"
+          ],
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "plan",
+            "-input=false",
+            "-no-color",
+            "-detailed-exitcode",
+            "-out=practice.tfplan"
+          ],
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "plan",
+            "-input=false",
+            "-no-color",
+            "-detailed-exitcode",
+            "-out=practice.tfplan"
+          ],
+          "exit_code": 2
+        },
+        {
+          "command": [
+            "show",
+            "-json",
+            "practice.tfplan"
+          ],
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "apply",
+            "-input=false",
+            "-no-color",
+            "practice.tfplan"
+          ],
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "show",
+            "-json"
+          ],
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "plan",
+            "-input=false",
+            "-no-color",
+            "-detailed-exitcode",
+            "-out=practice.tfplan"
+          ],
+          "exit_code": 2
+        },
+        {
+          "command": [
+            "show",
+            "-json",
+            "practice.tfplan"
+          ],
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "apply",
+            "-input=false",
+            "-no-color",
+            "practice.tfplan"
+          ],
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "show",
+            "-json"
+          ],
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "plan",
+            "-input=false",
+            "-no-color",
+            "-detailed-exitcode",
+            "-out=practice.tfplan"
+          ],
+          "exit_code": 1
+        },
+        {
+          "command": [
+            "plan",
+            "-input=false",
+            "-no-color",
+            "-detailed-exitcode",
+            "-out=practice.tfplan"
+          ],
+          "exit_code": 1
+        },
+        {
+          "command": [
+            "plan",
+            "-input=false",
+            "-no-color",
+            "-detailed-exitcode",
+            "-out=practice.tfplan"
+          ],
+          "exit_code": 1
+        },
+        {
+          "command": [
+            "plan",
+            "-input=false",
+            "-no-color",
+            "-detailed-exitcode",
+            "-out=practice.tfplan"
+          ],
+          "exit_code": 1
+        },
+        {
+          "command": [
+            "plan",
+            "-input=false",
+            "-no-color",
+            "-detailed-exitcode",
+            "-out=practice.tfplan"
+          ],
+          "exit_code": 1
+        },
+        {
+          "command": [
+            "plan",
+            "-input=false",
+            "-no-color",
+            "-detailed-exitcode",
+            "-out=practice.tfplan"
+          ],
+          "exit_code": 1
+        },
+        {
+          "command": [
+            "plan",
+            "-input=false",
+            "-no-color",
+            "-detailed-exitcode",
+            "-out=practice.tfplan"
+          ],
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "destroy",
+            "-auto-approve",
+            "-input=false",
+            "-no-color"
+          ],
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "state",
+            "list"
+          ],
+          "exit_code": 0
+        }
+      ],
+      "public_example_outputs": {
+        "expected_or_actual_errors": [
+          "\nError: Invalid value for variable\n\n  on inputs.auto.tfvars.json line 1:\n   1: {\"deployment\": {\"replicas\": 1.5, \"environment\": \"lab\", \"owner\": \"practice-team\", \"image_digest\": \"sha256:1111111111111111111111111111111111111111111111111111111111111111\"}}\n    ├────────────────\n    │ var.deployment.replicas is 1.5\n\nChoose an integer replica count from 1 through 6.\n\nThis was checked by the validation rule at main.tf:18,3-13.\n",
+          "\nError: Invalid value for variable\n\n  on inputs.auto.tfvars.json line 1:\n   1: {\"deployment\": {\"replicas\": 0, \"environment\": \"lab\", \"owner\": \"practice-team\", \"image_digest\": \"sha256:1111111111111111111111111111111111111111111111111111111111111111\"}}\n    ├────────────────\n    │ var.deployment.replicas is 0\n\nChoose an integer replica count from 1 through 6.\n\nThis was checked by the validation rule at main.tf:18,3-13.\n",
+          "\nError: Invalid value for variable\n\n  on inputs.auto.tfvars.json line 1:\n   1: {\"deployment\": {\"replicas\": 7, \"environment\": \"lab\", \"owner\": \"practice-team\", \"image_digest\": \"sha256:1111111111111111111111111111111111111111111111111111111111111111\"}}\n    ├────────────────\n    │ var.deployment.replicas is 7\n\nChoose an integer replica count from 1 through 6.\n\nThis was checked by the validation rule at main.tf:18,3-13.\n",
+          "\nError: Invalid value for variable\n\n  on inputs.auto.tfvars.json line 1:\n   1: {\"deployment\": {\"replicas\": 3, \"environment\": \"unknown\", \"owner\": \"practice-team\", \"image_digest\": \"sha256:1111111111111111111111111111111111111111111111111111111111111111\"}}\n    ├────────────────\n    │ var.deployment.environment is \"unknown\"\n    │ var.deployment.owner is \"practice-team\"\n\nChoose an allowed environment and a nonempty owner.\n\nThis was checked by the validation rule at main.tf:22,3-13.\n",
+          "\nError: Invalid value for variable\n\n  on inputs.auto.tfvars.json line 1:\n   1: {\"deployment\": {\"replicas\": 3, \"environment\": \"lab\", \"owner\": \"  \", \"image_digest\": \"sha256:1111111111111111111111111111111111111111111111111111111111111111\"}}\n    ├────────────────\n    │ var.deployment.environment is \"lab\"\n    │ var.deployment.owner is \"  \"\n\nChoose an allowed environment and a nonempty owner.\n\nThis was checked by the validation rule at main.tf:22,3-13.\n",
+          "\nError: Invalid value for variable\n\n  on inputs.auto.tfvars.json line 1:\n   1: {\"deployment\": {\"replicas\": 3, \"environment\": \"lab\", \"owner\": \"practice-team\", \"image_digest\": \"mutable-tag\"}}\n    ├────────────────\n    │ var.deployment.image_digest is \"mutable-tag\"\n\nUse a syntactically valid lowercase SHA-256 digest reference.\n\nThis was checked by the validation rule at main.tf:26,3-13.\n"
+        ],
+        "event_consumer.py": "{'duplicate': False, 'result': 3}\n{'duplicate': True, 'result': 3}\n"
+      },
+      "execution_boundary": "Terraform built-in terraform_data and SQLite acted only on synthetic local state/databases in an owned temporary workspace. No external Terraform provider, cloud API, credentials, queue, remote message, workload deployment or billed resource used. Temporary fixtures cleaned.",
+      "limits": [
+        "Terraform lifecycle is real but its resource represents local state only; no actual cloud replicas, image pulls, policy enforcement, provider drift or availability test.",
+        "SQLite tests cover transaction rollback, reconnect, an owned worker exit before commit and concurrent connections; not arbitrary storage/power-loss durability or distributed exactly-once processing.",
+        "Receipt deduplication has no expiry/retention cleanup; no external side effect or queue acknowledgement is atomic with this local transaction.",
+        "Availability, capacity, throughput, recovery, retries and cost are invented arithmetic models, not measured performance, vendor SLAs or prices.",
+        "All eight complete cloud labs remain proposed."
+      ]
+    }
+  },
+  "answered_checks": 46,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "61 local checks passed with Terraform 1.12.2 built-in terraform_data and Python 3.13.14/SQLite 3.50.4. Temporary state/databases cleaned.",
+    "No external Terraform provider, cloud API/credentials, queue, remote message, image pull, billed resource, workload rollout, live backup/failover or full cloud lab executed. All eight complete labs remain proposed.",
+    "SQLite checks cover rollback, reconnect, an owned worker exit before commit and concurrent connections; no arbitrary storage corruption/power-loss or distributed exactly-once guarantee.",
+    "Local receipts have no expiry cleanup or production authentication; external side effects/queue acknowledgement are outside the database transaction.",
+    "Availability, failover capacity, queue drain, throughput, RTO/RPO, retry and cost examples are invented models, not measured performance, current prices or vendor SLAs.",
+    "OReilly and Udemy blocked automated catalog rechecking; earlier edition/page/runtime/instructor/date/assessment claims remain unverified. Paid interiors and banks unreviewed.",
+    "Retirement remains estimated 2027 without an exact date; public document 5.0 is not a replacement exam announcement."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Terraform built-in terraform_data and SQLite acted only on synthetic local state/databases in an owned temporary workspace. No external Terraform provider, cloud API, credentials, queue, remote message, workload deployment or billed resource used. Temporary fixtures cleaned.",
+    "learning_catalog_consistency": "passed",
+    "passed": 61,
+    "failed": 0,
+    "checks": [
+      "Terraform init with only built-in provider",
+      "public HCL formatting accepted",
+      "public configuration native validation",
+      "initial plan returns detailed changes code",
+      "plan creates one local terraform_data resource",
+      "apply saved local plan",
+      "default synthetic input stored",
+      "repeat plan returns no changes",
+      "changed input produces a plan",
+      "ordinary input change plans in-place update",
+      "apply reviewed input update",
+      "input update retains resource identity",
+      "digest change creates replacement plan",
+      "explicit replacement trigger causes delete-create",
+      "apply local replacement",
+      "replacement has distinct local identity",
+      "native plan rejects fractional replicas",
+      "native plan rejects zero replicas",
+      "native plan rejects over-limit replicas",
+      "native plan rejects unknown environment",
+      "native plan rejects blank owner",
+      "native plan rejects invalid digest",
+      "restored input is unchanged",
+      "destroy only local terraform_data",
+      "local state has no resources",
+      "first event effect and receipt",
+      "repeated event returns prior result",
+      "distinct caller same ID is distinct intent",
+      "later event increments same item",
+      "late duplicate returns original receipt not current aggregate",
+      "same key rejected with changed amount",
+      "same key rejected with changed item",
+      "intent mismatch leaves aggregate intact",
+      "injected exception before commit propagated",
+      "failed operation rolled back both receipt and effect",
+      "retry after rollback applies once",
+      "invalid amount rejected 0",
+      "invalid amount rejected -1",
+      "invalid amount rejected 1.5",
+      "invalid amount rejected True",
+      "invalid amount rejected 1001",
+      "empty caller rejected",
+      "bound unusual identifier remains ordinary data",
+      "persistent receipt survives reconnect",
+      "owned worker terminated before transaction commit",
+      "uncommitted effect and receipt absent after worker exit",
+      "retry after worker exit commits",
+      "eight concurrent callers produce one new effect",
+      "concurrent callers receive same receipt",
+      "concurrent aggregate remains two",
+      "public Python example ran standalone",
+      "owned local state and database fixture cleaned",
+      "three equal zones require six total units for four-unit failover load",
+      "queue drain capacity example",
+      "series availability arithmetic only",
+      "parallel independent availability arithmetic only",
+      "synthetic monthly compute and egress sum",
+      "storage throughput from IOPS and block bytes",
+      "recovery example meets fifteen minute RPO",
+      "recovery example misses sixty minute RTO",
+      "three attempts at each of three nested retry layers"
+    ],
+    "python": "3.13.14",
+    "sqlite": "3.50.4",
+    "terraform": "1.12.2",
+    "sources": {
+      "main.tf": "d8d8bd383306f80ae79fb45809a86396403a9e58d573bdcd559aacf824f54190",
+      "event_consumer.py": "f20962fa040598f32935fc2120fbb2fd61cb3e37ad3bb232c4f8d48d99f76300"
+    },
+    "terraform_commands": [
+      {
+        "command": [
+          "init",
+          "-backend=false",
+          "-input=false",
+          "-no-color"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "fmt",
+          "-check",
+          "-no-color"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "validate",
+          "-json"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "plan",
+          "-input=false",
+          "-no-color",
+          "-detailed-exitcode",
+          "-out=practice.tfplan"
+        ],
+        "exit_code": 2
+      },
+      {
+        "command": [
+          "show",
+          "-json",
+          "practice.tfplan"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "apply",
+          "-input=false",
+          "-no-color",
+          "practice.tfplan"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "show",
+          "-json"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "plan",
+          "-input=false",
+          "-no-color",
+          "-detailed-exitcode",
+          "-out=practice.tfplan"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "plan",
+          "-input=false",
+          "-no-color",
+          "-detailed-exitcode",
+          "-out=practice.tfplan"
+        ],
+        "exit_code": 2
+      },
+      {
+        "command": [
+          "show",
+          "-json",
+          "practice.tfplan"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "apply",
+          "-input=false",
+          "-no-color",
+          "practice.tfplan"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "show",
+          "-json"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "plan",
+          "-input=false",
+          "-no-color",
+          "-detailed-exitcode",
+          "-out=practice.tfplan"
+        ],
+        "exit_code": 2
+      },
+      {
+        "command": [
+          "show",
+          "-json",
+          "practice.tfplan"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "apply",
+          "-input=false",
+          "-no-color",
+          "practice.tfplan"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "show",
+          "-json"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "plan",
+          "-input=false",
+          "-no-color",
+          "-detailed-exitcode",
+          "-out=practice.tfplan"
+        ],
+        "exit_code": 1
+      },
+      {
+        "command": [
+          "plan",
+          "-input=false",
+          "-no-color",
+          "-detailed-exitcode",
+          "-out=practice.tfplan"
+        ],
+        "exit_code": 1
+      },
+      {
+        "command": [
+          "plan",
+          "-input=false",
+          "-no-color",
+          "-detailed-exitcode",
+          "-out=practice.tfplan"
+        ],
+        "exit_code": 1
+      },
+      {
+        "command": [
+          "plan",
+          "-input=false",
+          "-no-color",
+          "-detailed-exitcode",
+          "-out=practice.tfplan"
+        ],
+        "exit_code": 1
+      },
+      {
+        "command": [
+          "plan",
+          "-input=false",
+          "-no-color",
+          "-detailed-exitcode",
+          "-out=practice.tfplan"
+        ],
+        "exit_code": 1
+      },
+      {
+        "command": [
+          "plan",
+          "-input=false",
+          "-no-color",
+          "-detailed-exitcode",
+          "-out=practice.tfplan"
+        ],
+        "exit_code": 1
+      },
+      {
+        "command": [
+          "plan",
+          "-input=false",
+          "-no-color",
+          "-detailed-exitcode",
+          "-out=practice.tfplan"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "destroy",
+          "-auto-approve",
+          "-input=false",
+          "-no-color"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "state",
+          "list"
+        ],
+        "exit_code": 0
+      }
+    ],
+    "public_example_outputs": {
+      "expected_or_actual_errors": [
+        "\nError: Invalid value for variable\n\n  on inputs.auto.tfvars.json line 1:\n   1: {\"deployment\": {\"replicas\": 1.5, \"environment\": \"lab\", \"owner\": \"practice-team\", \"image_digest\": \"sha256:1111111111111111111111111111111111111111111111111111111111111111\"}}\n    ├────────────────\n    │ var.deployment.replicas is 1.5\n\nChoose an integer replica count from 1 through 6.\n\nThis was checked by the validation rule at main.tf:18,3-13.\n",
+        "\nError: Invalid value for variable\n\n  on inputs.auto.tfvars.json line 1:\n   1: {\"deployment\": {\"replicas\": 0, \"environment\": \"lab\", \"owner\": \"practice-team\", \"image_digest\": \"sha256:1111111111111111111111111111111111111111111111111111111111111111\"}}\n    ├────────────────\n    │ var.deployment.replicas is 0\n\nChoose an integer replica count from 1 through 6.\n\nThis was checked by the validation rule at main.tf:18,3-13.\n",
+        "\nError: Invalid value for variable\n\n  on inputs.auto.tfvars.json line 1:\n   1: {\"deployment\": {\"replicas\": 7, \"environment\": \"lab\", \"owner\": \"practice-team\", \"image_digest\": \"sha256:1111111111111111111111111111111111111111111111111111111111111111\"}}\n    ├────────────────\n    │ var.deployment.replicas is 7\n\nChoose an integer replica count from 1 through 6.\n\nThis was checked by the validation rule at main.tf:18,3-13.\n",
+        "\nError: Invalid value for variable\n\n  on inputs.auto.tfvars.json line 1:\n   1: {\"deployment\": {\"replicas\": 3, \"environment\": \"unknown\", \"owner\": \"practice-team\", \"image_digest\": \"sha256:1111111111111111111111111111111111111111111111111111111111111111\"}}\n    ├────────────────\n    │ var.deployment.environment is \"unknown\"\n    │ var.deployment.owner is \"practice-team\"\n\nChoose an allowed environment and a nonempty owner.\n\nThis was checked by the validation rule at main.tf:22,3-13.\n",
+        "\nError: Invalid value for variable\n\n  on inputs.auto.tfvars.json line 1:\n   1: {\"deployment\": {\"replicas\": 3, \"environment\": \"lab\", \"owner\": \"  \", \"image_digest\": \"sha256:1111111111111111111111111111111111111111111111111111111111111111\"}}\n    ├────────────────\n    │ var.deployment.environment is \"lab\"\n    │ var.deployment.owner is \"  \"\n\nChoose an allowed environment and a nonempty owner.\n\nThis was checked by the validation rule at main.tf:22,3-13.\n",
+        "\nError: Invalid value for variable\n\n  on inputs.auto.tfvars.json line 1:\n   1: {\"deployment\": {\"replicas\": 3, \"environment\": \"lab\", \"owner\": \"practice-team\", \"image_digest\": \"mutable-tag\"}}\n    ├────────────────\n    │ var.deployment.image_digest is \"mutable-tag\"\n\nUse a syntactically valid lowercase SHA-256 digest reference.\n\nThis was checked by the validation rule at main.tf:26,3-13.\n"
+      ],
+      "event_consumer.py": "{'duplicate': False, 'result': 3}\n{'duplicate': True, 'result': 3}\n"
+    },
+    "limits": [
+      "Terraform lifecycle is real but its resource represents local state only; no actual cloud replicas, image pulls, policy enforcement, provider drift or availability test.",
+      "SQLite tests cover transaction rollback, reconnect, an owned worker exit before commit and concurrent connections; not arbitrary storage/power-loss durability or distributed exactly-once processing.",
+      "Receipt deduplication has no expiry/retention cleanup; no external side effect or queue acknowledgement is atomic with this local transaction.",
+      "Availability, capacity, throughput, recovery, retries and cost are invented arithmetic models, not measured performance, vendor SLAs or prices.",
+      "All eight complete cloud labs remain proposed."
+    ]
+  },
+  "version_specific_pdf_review": {
+    "receipt": {
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/1caf96e2bef111efba33a6b3d2c966cf?checkExpiry=false",
+      "discovery_page": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+      "collection_url": "https://lecbyo.collections.cmp.optimizely.com/api/library-collection/b9074fb6207711f08b1d2e4ad712ca04",
+      "asset": {
+        "guid": "1caf96e2bef111efba33a6b3d2c966cf",
+        "title": "CompTIA Cloud+ CV0-004 Exam Objectives (5.0).pdf",
+        "type": "raw_file",
+        "mimeType": "application/pdf",
+        "thumbnailUrl": "https://images4.cmp.optimizely.com/Zz03ODExYjMwMmNhMmMxMWYwYjY2MzIyYzdkYzE2MzUwMw==",
+        "previewUrl": "https://lecbyo.files.cmp.optimizely.com/download/1caf96e2bef111efba33a6b3d2c966cf?checkExpiry=false",
+        "mediaUrl": "https://lecbyo.files.cmp.optimizely.com/download/1caf96e2bef111efba33a6b3d2c966cf?checkExpiry=false",
+        "transcodedUrl": "",
+        "description": "",
+        "lastModified": "2025-11-25T18:27:59",
+        "lastModifiedRelative": "10 months ago",
+        "createdAt": "2024-12-20T16:40:25",
+        "custom_labels": {},
+        "fields": []
+      },
+      "sha256": "8ef39880896bb27acb72249cd6e4baa11306119ca8da065bb595a9331a2416bb",
+      "bytes": 197359,
+      "pages": 17,
+      "status": 200
+    },
+    "numbered_objectives": 33,
+    "objective_group_counts": [
+      11,
+      5,
+      4,
+      6,
+      4,
+      3
+    ],
+    "main_page_summary_rows": 31,
+    "layout_check": "Page 9 confirms observability 3.1, scaling 3.2, backup 3.3, lifecycle 3.4.",
+    "mapping": "Original paraphrases with published IDs; all numbered objectives/bullets read."
+  }
+}

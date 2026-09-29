@@ -3,6 +3,174 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "comptia-cv0-004-objectives-pdf",
+      "title": "CompTIA Cloud+ public objectives document 5.0",
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/1caf96e2bef111efba33a6b3d2c966cf?checkExpiry=false",
+      "publisher": "CompTIA",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CV0-004"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CV0-004 deep review: Public 17-page document 5.0: all 33 numbered objectives and detailed bullets read; page 9 layout confirms operations numbering; original paraphrase mapping, PDF not redistributed. See docs/research/2026-09-29-cv0-004-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nist-sp800-145",
+      "title": "NIST cloud definition and deployment models",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf",
+      "publisher": "NIST",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CV0-004"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CV0-004 deep review: 2011 publication, seven PDF pages; core definition/service/deployment-model sections read. Used as foundational taxonomy, not current provider feature or complete modern service catalog. See docs/research/2026-09-29-cv0-004-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "terraform-data-resource",
+      "title": "Terraform built-in terraform_data resource",
+      "url": "https://developer.hashicorp.com/terraform/language/resources/terraform-data",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CV0-004"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CV0-004 deep review: Current page includes newer store features; only input/triggers_replace and built-in local resource lifecycle used in the Terraform 1.12.2 example. See docs/research/2026-09-29-cv0-004-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "terraform-validate-command",
+      "title": "Terraform validate command",
+      "url": "https://developer.hashicorp.com/terraform/cli/commands/validate",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CV0-004"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CV0-004 deep review: Targeted local validation and initialized-directory boundaries; no newer validate flags adopted in the pinned 1.12.2 example. See docs/research/2026-09-29-cv0-004-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-sqs-at-least-once",
+      "title": "AWS SQS standard queue delivery",
+      "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues-at-least-once-delivery.html",
+      "publisher": "Amazon Web Services",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CV0-004"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CV0-004 deep review: Public duplicate-delivery explanation read; no queue/API call or provider delivery test. See docs/research/2026-09-29-cv0-004-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-idempotent-apis-article",
+      "title": "AWS Builders Library idempotent API design",
+      "url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+      "publisher": "Amazon Web Services",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CV0-004"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CV0-004 deep review: Malcolm Featonby article read for retry ambiguity, caller request IDs, atomic intent/effect, later retries and parameter mismatch/retention boundaries. Publication date not confirmed; local original SQLite exercise does not reproduce an AWS service. See docs/research/2026-09-29-cv0-004-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-budgets-managing-cost",
+      "title": "AWS Budgets cost-management behavior",
+      "url": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html",
+      "publisher": "Amazon Web Services",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CV0-004"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CV0-004 deep review: Current budget types/actions, update cadence and delay caveat read; no budget/notification configured and no real prices adopted. See docs/research/2026-09-29-cv0-004-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-cli-welcome",
+      "title": "AWS command line interface introduction",
+      "url": "https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html",
+      "publisher": "Amazon Web Services",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CV0-004"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CV0-004 deep review: Interface naming and introductory role read; not a full CLI support/feature-parity audit or executed AWS command. See docs/research/2026-09-29-cv0-004-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-iot-overview",
+      "title": "AWS IoT concepts",
+      "url": "https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html",
+      "publisher": "Amazon Web Services",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CV0-004"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CV0-004 deep review: Protocol/interface overview read, including MQTT/MQTT-over-WSS publish/subscribe versus HTTPS publish. No device, gateway, certificate or broker provisioned. See docs/research/2026-09-29-cv0-004-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sqlite-transactions",
+      "title": "SQLite transactions",
+      "url": "https://www.sqlite.org/lang_transaction.html",
+      "publisher": "SQLite project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CV0-004"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CV0-004 deep review: Read transaction control, read/write concurrency and BEGIN IMMEDIATE/locking discussion; application uses one local database per fixture. See docs/research/2026-09-29-cv0-004-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sqlite-atomic-commit",
+      "title": "SQLite atomic commit",
+      "url": "https://www.sqlite.org/atomiccommit.html",
+      "publisher": "SQLite project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CV0-004"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CV0-004 deep review: Targeted section 4 rollback/hot-journal recovery discussion read. Owned process-exit-before-commit test does not establish arbitrary power-loss/storage durability. See docs/research/2026-09-29-cv0-004-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "http-semantics-rfc9110",
+      "title": "HTTP semantics and status codes",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "publisher": "IETF",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CV0-004"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CV0-004 deep review: Targeted 400/401/403/404/502/503/504 definitions read; no HTTP server or network probe executed. See docs/research/2026-09-29-cv0-004-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "comptia-xk0-006-objectives-pdf",
       "title": "Linux+ XK0-006 public objectives document 5.0",
       "url": "https://lecbyo.files.cmp.optimizely.com/download/90b9ac985c0e11f0b004a2a93c999a21?checkExpiry=false",
@@ -967,10 +1135,11 @@
       "supported_exams": [
         "220-1202",
         "N10-009",
-        "XK0-006"
+        "XK0-006",
+        "CV0-004"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 28 220-1202 deep review: Public product page read; integrated learning/practice features and official exam-page duration estimates only. Paid product not accessed. See docs/research/2026-09-28-220-1202-deep-review.md No live infrastructure execution. September 29 N10-009 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-n10-009-deep-review.md No live infrastructure execution. September 29 XK0-006 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+      "notes": "September 28 220-1202 deep review: Public product page read; integrated learning/practice features and official exam-page duration estimates only. Paid product not accessed. See docs/research/2026-09-28-220-1202-deep-review.md No live infrastructure execution. September 29 N10-009 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-n10-009-deep-review.md No live infrastructure execution. September 29 XK0-006 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution. September 29 CV0-004 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-cv0-004-deep-review.md No live infrastructure execution."
     },
     {
       "id": "comptia-220-1201-objectives-pdf",
@@ -1184,10 +1353,11 @@
         "220-1202",
         "N10-009",
         "SY0-701",
-        "XK0-006"
+        "XK0-006",
+        "CV0-004"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 28 FC0-U71 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-fc0-u71-deep-review.md No live infrastructure execution. September 28 220-1201 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1201-deep-review.md No live infrastructure execution. September 28 220-1202 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1202-deep-review.md No live infrastructure execution. September 29 N10-009 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-n10-009-deep-review.md No live infrastructure execution. September 29 SY0-701 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution. September 29 XK0-006 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+      "notes": "September 28 FC0-U71 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-fc0-u71-deep-review.md No live infrastructure execution. September 28 220-1201 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1201-deep-review.md No live infrastructure execution. September 28 220-1202 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1202-deep-review.md No live infrastructure execution. September 29 N10-009 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-n10-009-deep-review.md No live infrastructure execution. September 29 SY0-701 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution. September 29 XK0-006 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution. September 29 CV0-004 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-cv0-004-deep-review.md No live infrastructure execution."
     },
     {
       "id": "comptia-fc0-u71-objectives-pdf",
@@ -1226,10 +1396,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "FC0-U71"
+        "FC0-U71",
+        "CV0-004"
       ],
-      "last_checked": "2026-09-28",
-      "notes": "September 28 FC0-U71 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-fc0-u71-deep-review.md No live infrastructure execution."
+      "last_checked": "2026-09-29",
+      "notes": "September 28 FC0-U71 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-fc0-u71-deep-review.md No live infrastructure execution. September 29 CV0-004 deep review: Targeted connection, parameter binding, autocommit and in_transaction API; explicit SQL BEGIN/COMMIT/ROLLBACK used in real local tests. See docs/research/2026-09-29-cv0-004-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sqlite-foreign-keys",
@@ -20653,8 +20824,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["TERRAFORM-ASSOCIATE-004"]
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "TERRAFORM-ASSOCIATE-004",
+        "CV0-004"
+      ],
+      "notes": "September 29 CV0-004 deep review: Targeted type/default/validation/sensitive passages; native invalid-input plan checks executed. No universal provider policy enforcement inferred. See docs/research/2026-09-29-cv0-004-deep-review.md No live infrastructure execution."
     },
     {
       "id": "terraform-output-values",
@@ -24124,8 +24299,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"]
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL",
+        "CV0-004"
+      ],
+      "notes": "September 29 CV0-004 deep review: Targeted detailed exit codes, saved-plan and sensitive-artifact discussion; actual native unchanged/update/replacement/error cases executed. See docs/research/2026-09-29-cv0-004-deep-review.md No live infrastructure execution."
     },
     {
       "id": "terraform-import-blocks",
@@ -24146,8 +24325,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"]
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL",
+        "CV0-004"
+      ],
+      "notes": "September 29 CV0-004 deep review: Targeted sensitive display versus state/plan persistence, ephemeral/write-only version/provider/context requirements. No actual credential used or inspected. See docs/research/2026-09-29-cv0-004-deep-review.md No live infrastructure execution."
     },
     {
       "id": "terraform-remote-state",

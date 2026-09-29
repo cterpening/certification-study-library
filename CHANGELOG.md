@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [CV0-004 deep review](docs/research/2026-09-29-cv0-004-deep-review.md): 33 numbered objectives mapped; experience, community/AI/IoT and state/retry boundaries strengthened; original Terraform/SQLite examples passed 61 local checks; 46 answers and eight proposed labs expanded.
+
 - September 29, 2026: [XK0-006 deep review](docs/research/2026-09-29-xk0-006-deep-review.md): 29 numbered objectives mapped; umask/ACL, current tools and orchestration/monitoring teaching improved; 44 local MSYS/Python checks passed; native Linux runtime blocker deferred and baseline history retained.
 
 - September 29, 2026: [SY0-701 deep review](docs/research/2026-09-29-sy0-701-deep-review.md): 28 numbered objectives mapped; original crypto/certificate examples passed 34 checks, current identity/incident/risk distinctions added, 46 answers strengthened; duration-only metadata accepted with history retained.

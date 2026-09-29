@@ -1316,6 +1316,8 @@ The review maps every public V8 domain and summary task to runtime state → per
 
 ## CV0-004 coverage record
 
+The September 29 [deep review](research/2026-09-29-cv0-004-deep-review.md) maps 33 detailed objectives. Mapped all 33 numbered PDF objectives against 31 main-page summary rows. Corrected unsupported experience advice in guide/catalog, filled community-cloud and AI/IoT scope, clarified CLI/state/budget/retry boundaries, added original Terraform and SQLite examples with 61 executed local checks, strengthened 46 answers and eight proposed labs, and qualified blocked catalog claims. Accepted objective and lifecycle snapshots remain unchanged. Current guide citations: 27 registered, 25 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 1, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: six weighted V4 domains—Cloud architecture (23%), Deployment (19%), Operations (17%), Security (19%), DevOps fundamentals (10%), and Troubleshooting (12%)

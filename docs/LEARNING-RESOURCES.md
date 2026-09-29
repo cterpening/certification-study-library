@@ -3202,15 +3202,26 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 ### CompTIA Cloud+ (CV0-004)
 
-- Official baseline: [CompTIA Cloud+ V4](https://www.comptia.org/en-us/certifications/cloud/) (**3–6 hours mapping six domains and delivery**); treat 2027 as an estimate rather than a dated retirement
-- Official options: [CertMaster Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/), [Labs](https://www.comptia.org/en-us/resources/certmaster-training/labs/), and [Practice](https://www.comptia.org/en-us/resources/certmaster-training/practice/) (**40–80 combined hours estimated**); select and verify the exact CV0-004 product/bundle
-- Current course path: [Pluralsight CV0-004](https://www.pluralsight.com/paths/comptia-cloud-cvo-004) (**14 listed hours plus 25–50 lab/review hours**), six domain courses and practice exam
-- Compact current route: [LinkedIn Learning / Total Seminars CV0-004](https://www.linkedin.com/learning/comptia-cloud-plus-cv0-004-cert-prep) (**6 hours 13 minutes plus 25–50 lab/review hours**), 12 quizzes
-- Structured book: [O'Reilly/Sybex Cloud+ Study Guide, 4th Edition](https://www.oreilly.com/library/view/comptia-cloud-study/9781394333776/) (**12 hours 34 minutes listed plus 20–40 lab/review hours**), 480 pages and online assessment tools
-- Marketplace route: [Udemy / Anthony Sequeira and Michael Shannon](https://www.udemy.com/course/comptia-cloud-plus/) (**10 hours 54 minutes plus 25–50 lab/review hours**), assignments, quizzes and two practice exams; updated July 2026
-- Explanation-led assessment: [MeasureUp CV0-004](https://www.measureup.com/comptia-cloud-cv0-004-practice-test.html) (**about 5–9 hours across attempts and remediation**), 186 questions listed
+Resource details from the [CV0-004 guide](../guides/CV0-004-comptia-cloud-plus.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Choose one coherent route, translate every product-specific lab into provider-neutral intent and ideally a second provider, and use one ethical explanation-led assessment. No exact current Whizlabs CV0-004 route or established complete free creator course was independently selected. Reject recalled-question products and remove paid cloud resources after authorized practice.
+This is not a complete list, and it is not meant to be consumed end to end. Pick the formats that work for you, map them to the six official domains, practice weak areas, and recheck version/date before paying.
+
+| Resource | Access | Estimated time | Best use and boundary |
+|---|---|---:|---|
+| [CompTIA Cloud+ V4](https://www.comptia.org/en-us/certifications/cloud/) | Public | 3–6 hours | Map public domains, delivery and lifecycle; repeat at the end |
+| [CompTIA CertMaster Perform](https://www.comptia.org/en-us/resources/certmaster-training/perform/) | Paid | 30–60 hours, provider estimate | Combined learning/practice option; verify exact CV0-004 bundle |
+| [CompTIA CertMaster Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/) | Paid | 25–40 hours, provider estimate | Official self-paced route listed on the current exam page |
+| [CompTIA CertMaster Labs](https://www.comptia.org/en-us/resources/certmaster-training/labs/) | Paid | 15–25 hours, provider estimate | Select weak-domain labs, then reproduce key work independently |
+| [CompTIA CertMaster Practice](https://www.comptia.org/en-us/resources/certmaster-training/practice/) | Paid | 10–20 hours, provider estimate | Baseline, explanation-led remediation and final checks |
+| [Pluralsight Cloud+ CV0-004 path](https://www.pluralsight.com/paths/comptia-cloud-cvo-004) | Paid | 14 hours listed | Six domain courses dated July–October 2024 plus practice exam; no verified lab count |
+| [LinkedIn Learning Cloud+ CV0-004 Cert Prep](https://www.linkedin.com/learning/comptia-cloud-plus-cv0-004-cert-prep) | Paid | 6 hours 13 minutes listed | Total Seminars route released December 1, 2025, with 12 quizzes |
+| [O’Reilly/Sybex CompTIA Cloud+ Study Guide, 4th Edition](https://www.oreilly.com/library/view/comptia-cloud-study/9781394333776/) | Paid; automated catalog access blocked | Earlier 12h34 runtime not reverified | Prior fourth-edition/480-page catalog claims unverified in this review; inspect current edition before purchase |
+| [Udemy Cloud+ CV0-004 Complete Course](https://www.udemy.com/course/comptia-cloud-plus/) | Paid; automated catalog access blocked | Earlier 10h54 runtime not reverified | Earlier instructor, update-date and assessment details not reverified; inspect current syllabus |
+| [MeasureUp CV0-004 practice test](https://www.measureup.com/comptia-cloud-cv0-004-practice-test.html) | Paid | 5–9 hours estimated | Product-specific 186 questions, March 2025 release; suggested time includes explanation-led remediation |
+
+**VERIFY CURRENT:** Public metadata checked September 29, 2026; paid interiors, provider labs and assessment questions were not accessed. CompTIA’s product estimates overlap and should not be added into a mandatory workload. Other estimated hours are planning suggestions. MeasureUp’s specific 186-question listing takes precedence over its generic FAQ’s approximate 150. A course’s publication date or runtime does not establish complete current coverage.
+
+Use practice assessments to find gaps, not to memorize items. Avoid any product claiming live, leaked or recalled exam questions.
 
 ### Linux Foundation Certified IT Associate (LFCA)
 
