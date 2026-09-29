@@ -4257,22 +4257,54 @@
       "notes": "Mapped 48 PDF objectives; explain AutoML 18.0+ packaging and Hyperopt post-16.4 limits while retaining exam scope, feature-time/uniqueness contracts, alias versus endpoint deployment, and leakage-safe local training. Added four worked decisions and ten answers. See docs/research/2026-09-28-databricks-machine-learning-associate-deep-review.md"
     },
     {
-      "id": "databricks-machine-learning-professional-2026-09-01-source-validation",
+      "id": "databricks-machine-learning-professional-2026-09-28-source-validation",
       "exam_code": "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
       "guide_path": "guides/DATABRICKS-MACHINE-LEARNING-PROFESSIONAL-databricks-machine-learning-professional.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-01",
+      "reviewed_on": "2026-09-28",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/databricks-machine-learning-professional-official-objectives.txt",
       "blueprint_snapshot_sha256": "90c1a98f80cb5fb4bf172563055256b49ba45f967caa4bbe4a0d5a9b88d124f7",
       "objective_coverage": [
-        {"objective_group": "Model Development", "guide_sections": ["Section 1", "All integrated scenarios", "Labs 1–4"]},
-        {"objective_group": "ML Ops", "guide_sections": ["Section 2", "Drift-retraining scenario", "Labs 5–7"]},
-        {"objective_group": "Model Deployment", "guide_sections": ["Section 3", "Real-time/Drift scenarios", "Lab 8"]}
+        {
+          "objective_group": "Model Development",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–4"
+          ]
+        },
+        {
+          "objective_group": "ML Ops",
+          "guide_sections": [
+            "Section 2",
+            "Drift-retraining scenario",
+            "Labs 5–7"
+          ]
+        },
+        {
+          "objective_group": "Model Deployment",
+          "guide_sections": [
+            "Section 3",
+            "Real-time/Drift scenarios",
+            "Lab 8"
+          ]
+        }
       ],
-      "checks": {"official_objectives_mapped": true, "material_claims_sourced": true, "volatile_claims_labeled": true, "links_and_local_references_valid": true, "exam_integrity_policy_passed": true},
-      "link_evidence": {"unique_external_links": 17, "reachable": 15, "access_blocked": 2, "missing_or_error": 0},
-      "notes": "The September 30, 2025 detailed live-version PDF and current three-domain weighted page were reconciled, with current live delivery metadata controlling the PDF discrepancy. Three scenarios, eight labs and 32 original checks cover Spark versus single-node, vertical/horizontal/model/data/trial/group parallelism, Ray and Optuna, nested MLflow/PyFunc, point-in-time/online/on-demand features; deploy-code lifecycle mapping, bundle environments, unit/integration gates, governed automated retraining, snapshot/time-series/inference monitoring, drift/slices/custom metrics/endpoint health and alerts; plus blue-green/canary/shadow rollout and custom-model REST/SDK serving. All 17 guide URLs are cataloged: 15 reachable and MLflow Optuna/O'Reilly automation-blocked; none missing or broken. DAB and Lakehouse Monitoring terminology is preserved as published and translated to current product names; vendor sample questions are linked rather than reproduced."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 22,
+        "reachable": 21,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Mapped 47 detailed objectives; repair online-store and Optuna references, distinguish profiling/anomaly/API generations, add drift metrics and Ray support boundaries, and execute local PyFunc/nested-Optuna checks. Monitoring 30-day wording remains unresolved with October 5 follow-up. See docs/research/2026-09-28-databricks-machine-learning-professional-deep-review.md"
     },
     {
       "id": "databricks-generative-ai-engineer-associate-2026-09-01-source-validation",

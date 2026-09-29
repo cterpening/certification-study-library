@@ -6,18 +6,18 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-28
 ---
 
 # Databricks Certified Machine Learning Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-machine-learning-professional-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/machine-learning-professional) and its linked exam guide are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-machine-learning-professional-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/machine-learning-professional) and its linked exam guide are authoritative.
 
 **Library identifier:** `DATABRICKS-MACHINE-LEARNING-PROFESSIONAL`; Databricks does not publish a short exam code on the official page checked.<br>
-**Current baseline:** Detailed official guide for the live version as of September 30, 2025; live three-domain weighted page checked September 1, 2026.<br>
-**Upcoming blueprint change:** None announced as of September 1, 2026. The PDF uses older “Databricks Asset Bundles” and “Lakehouse Monitoring” wording; current documentation uses Declarative Automation Bundles and expanded data-quality/monitoring terminology. Preserve the published objectives and verify current interfaces.<br>
+**Current baseline:** Detailed official guide for the live version as of September 30, 2025; live three-domain weighted page checked September 28, 2026.<br>
+**Upcoming blueprint change:** None announced as of September 28, 2026. The PDF uses older “Databricks Asset Bundles” and “Lakehouse Monitoring” wording; current documentation uses Declarative Automation Bundles and expanded data-quality/monitoring terminology. Preserve the published objectives and verify current interfaces.<br>
 **Lifecycle status:** Active; valid for two years, with the currently live exam required for recertification.<br>
 **Assessment:** 59 scored multiple-choice questions, 120 minutes, USD 200, no test aids, English, online or test-center delivery. The September PDF lists online proctoring only; the live page controls current delivery metadata.<br>
 **Prerequisite:** None required. The official guide highly recommends course attendance and one year of hands-on Databricks experience. This guide assumes associate-level ML/statistics plus production Spark, MLflow, Unity Catalog, testing, CI/CD, monitoring and serving experience.
@@ -70,11 +70,13 @@ For batch or streaming inference, load the Spark `PipelineModel` once and transf
 
 Spark excels at data preparation, Spark ML algorithms and grouped operations. [Ray on Databricks](https://docs.databricks.com/aws/en/machine-learning/ray/) supports distributed Python ML ecosystems and training/tuning patterns. Compare library compatibility, fault tolerance, scheduler/topology, GPU support, data movement, observability and operational ownership—not “which is faster” in the abstract.
 
+**VERIFY CURRENT:** the [Ray integration](https://docs.databricks.com/aws/en/machine-learning/ray/) distinguishes Ray on Spark from Ray on AI Runtime. Ray-on-Spark cannot start on serverless-based runtimes; its documented access modes are dedicated, no-isolation shared and job clusters. Install dependencies before initializing Ray: `%pip` on a running Ray cluster can shut it down. Do not apply this restriction to the separate serverless GPU integration without checking its own support matrix.
+
 ### Tune with Optuna or Ray without losing reproducibility
 
-Optuna chooses trials through a sampler/pruner and can use [MLflow integration](https://mlflow.org/docs/latest/ml/traditional-ml/hyperparameter-tuning/with-optuna/) to record studies/trials. Ray Tune distributes supported search workloads. Define search space, objective direction, seed, budget, pruning rule, storage/concurrency, per-trial resources and failure policy. Limit nested parallelism so trials and each model do not both seize all CPUs/GPUs.
+Optuna chooses trials through a sampler/pruner and can use [nested MLflow tracking](https://mlflow.org/docs/latest/ml/getting-started/hyperparameter-tuning/) to record studies/trials. Ray Tune distributes supported search workloads. Define search space, objective direction, seed, budget, pruning rule, storage/concurrency, per-trial resources and failure policy. Limit nested parallelism so trials and each model do not both seize all CPUs/GPUs.
 
-Log each trial as a child run under a parent search run. Aggregate cross-validation metrics and retain the final refit/evaluation as a clearly associated run. Nested runs keep experiment comparison coherent; they do not validate that folds are leakage-safe.
+Log each trial as a child run under a parent search run. Aggregate cross-validation metrics and retain the final refit/evaluation as a clearly associated run. Nested runs keep experiment comparison coherent; they do not validate that folds are leakage-safe. For distributed workers, carry the parent run identifier explicitly and verify each child's parent tag; do not assume the driver's active-run context is inherited by another process. Record failed and pruned trials as well as successful candidates. A local sequential Optuna example verifies tracking mechanics only, not distributed execution.
 
 ### Use advanced MLflow records as lineage, not decoration
 
@@ -86,7 +88,7 @@ A custom [MLflow PyFunc](https://mlflow.org/docs/latest/ml/model/python_model/) 
 
 For every training row, feature values must come only from information available at its prediction timestamp. Use entity/time keys and point-in-time joins. A latest-value join leaks future state. Validate duplicate keys, late corrections, timezone and feature availability lag.
 
-Automate offline feature computation through governed pipelines and a Feature Engineering client. Publish selected values to online tables for low-latency lookups, with synchronization, TTL/freshness and missing-key behavior. [Online feature stores](https://docs.databricks.com/aws/en/machine-learning/feature-store/online-feature-stores) are derivatives, not historical training truth.
+Automate offline feature computation through governed pipelines and a Feature Engineering client. Publish selected values to online tables for low-latency lookups, with synchronization, TTL/freshness and missing-key behavior. [Databricks Online Feature Stores](https://docs.databricks.com/aws/en/machine-learning/feature-store/online-feature-store) are derivatives, not historical training truth. The earlier plural-URL reference now describes [third-party online stores](https://docs.databricks.com/aws/en/machine-learning/feature-store/online-feature-stores); those are a different configuration route. Current native-store creation uses `FeatureEngineeringClient.create_online_store`, backed by Lakebase Autoscaling, and features must then be published. Do not mechanically substitute this call for every older SDK online-table example. Check client version, source keys, publication state, credentials, capacity and deletion of temporary stores before the lab; no online store was provisioned in this review.
 
 On-demand features compute from request data at inference. Package their function and dependencies with the model so training and serving use identical logic. Combine with retrieved features through a documented schema/signature; test nulls, unknown keys and version changes.
 
@@ -134,7 +136,7 @@ Use aliases to resolve the current champion and an immutable version to reproduc
 
 ### Monitor data, predictions, outcomes and infrastructure
 
-Current [data-quality monitoring](https://docs.databricks.com/aws/en/data-quality-monitoring/) supports profiles/metrics over snapshot, time-series and inference-style data; names and APIs have evolved from Lakehouse Monitoring. Choose table type from semantics:
+Current [data-quality monitoring](https://docs.databricks.com/aws/en/data-quality-monitoring/) includes two capabilities. Anomaly detection checks freshness/completeness across selected tables; **data profiling** is the former Lakehouse Monitoring capability used for detailed statistics, drift and inference quality. A healthy freshness result does not prove model quality. Choose the [profile type](https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/) from data semantics:
 
 | Profile | Use | Required thinking |
 |---|---|---|
@@ -143,6 +145,12 @@ Current [data-quality monitoring](https://docs.databricks.com/aws/en/data-qualit
 | Inference | predictions/features with model and optional labels | model/version, prediction, label delay and performance metrics |
 
 Drift compares current versus baseline or consecutive windows. Numerical tests/distances and categorical distribution tests require sample size and multiple-comparison context; statistical significance is not automatically operational importance. Define thresholds from risk and historical variation.
+
+The [metric table reference](https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/monitor-output) distinguishes numeric `ks_test`/Wasserstein distance from categorical chi-square/Jensen–Shannon distance. A p-value is evidence against a distributional null; a distance measures magnitude. Require a useful effect size and sufficient observations, account for multiple tests, and compare equivalent seasonal windows. Model-quality metrics require prediction and label columns; missing outcomes leave quality unknown.
+
+For new code, consult the [current profile API](https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/create-monitor-api): it uses `WorkspaceClient.data_quality` and SDK 0.68.0 or later, while `quality_monitors` is deprecated. Resolve table/output-schema identifiers and required privileges, then verify refresh status and metric-table results; a create request is not proof that monitoring completed.
+
+**Unconfirmed — validation needed (September 28):** the [overview limits](https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/) describe a last-30-days window, while the [API guide](https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/create-monitor-api) describes an initial 30-day backfill followed by new data. The metric reference also qualifies the initial window. Do not assume automatic coverage of late labels or historical corrections outside that interval. In an authorized disposable table, test an old event, a newly appended old-timestamp event and a delayed label update; inspect refresh and metric windows. Keep an independent evaluation path until the required case is proven. Follow-up is scheduled for October 5.
 
 Slice by region, device, customer segment, label and model version where justified. Avoid exploding combinations or exposing sensitive small groups. Custom metrics should have stable SQL/definition, owner, unit, expected range and alert meaning.
 
@@ -168,6 +176,30 @@ Define pre-deployment load/contract/security tests, traffic steps, minimum obser
 
 Implement a PyFunc `PythonModel` with deterministic `load_context` and `predict`; log dependencies, signature, input example and required artifacts; register the resulting version in Unity Catalog. Test clean-environment loading, missing/extra columns, batch sizes, invalid inputs, concurrency and artifact permissions.
 
+### Make a custom model's input contract explicit
+
+This original local example wraps a small decision rule, not a trained business model. Log/save it with an explicit signature, input example and pinned dependencies. The [PyFunc reference](https://mlflow.org/docs/latest/ml/model/python_model/) explains model packaging and loading; a signature alone does not encode every business invariant.
+
+```python
+import numpy as np
+import pandas as pd
+import mlflow
+
+class MarginRule(mlflow.pyfunc.PythonModel):
+    def predict(self, context, model_input, params=None):
+        required = ["units", "unit_price", "unit_cost"]
+        missing = set(required) - set(model_input.columns)
+        if missing:
+            raise ValueError(f"Missing columns: {sorted(missing)}")
+        values = model_input[required].to_numpy(dtype=float)
+        if not np.isfinite(values).all() or (values < 0).any():
+            raise ValueError("Inputs must be finite and nonnegative")
+        margin = values[:, 0] * (values[:, 1] - values[:, 2])
+        return pd.DataFrame({"margin": margin}, index=model_input.index)
+```
+
+Use rows `(2, 10, 6)` and `(3, 5, 7)` to expect margins `8` and `-6`. Negative margin is valid even though negative input quantities/prices are rejected. Test missing columns, null, infinity, wrong types and empty input. Save and reload the model, then compare predictions; test in a fresh interpreter to catch hidden global dependencies. This does not test serving authentication, network behavior or concurrency.
+
 Deploy a version/alias to Model Serving through supported UI, REST API, Databricks SDK/MLflow Deployments client or bundle resource. Query with the exact payload contract and workspace authentication. The [MLflow Deployments API](https://mlflow.org/docs/latest/api_reference/python_api/mlflow.deployments.html) offers `predict` against an endpoint; REST integration must use headers/body safely, not tokens in query strings.
 
 **VERIFY CURRENT:** route optimization, endpoint resource fields, traffic configuration, scale-to-zero, inference tables, AI Gateway, online features and monitoring vary by cloud/region and release. Recheck [Model Serving](https://docs.databricks.com/aws/en/machine-learning/model-serving/) before implementation.
@@ -189,6 +221,28 @@ Train grouped models through Pandas function APIs only after measuring group siz
 ### Scenario C — drift-triggered fraud retraining
 
 An inference table records request features, model version, probability, decision, latency and delayed label. Configure time-series/inference monitoring with baseline and slices, alert after sample/freshness checks, then trigger retraining. A bundle deploys code/resources to test; integration tests exercise feature-to-inference; the candidate must beat champion on log loss/calibration, action costs, slices, latency and errors before canary promotion.
+
+## Worked operational decisions and answers
+
+| Original scenario | Expected decision |
+|---|---|
+| Eight independent trials each request four CPUs; the cluster exposes sixteen usable CPUs | At most four fit concurrently under this simplified CPU-only budget. Reserve overhead and check memory/GPU constraints before expecting that concurrency. |
+| A canary has 4 errors in 400 requests; champion has 6 in 2,000 | Error rates are 1% and 0.3%. The canary has fewer raw errors but a higher rate; use the predeclared gate and uncertainty/sample requirements. |
+| Prediction inputs drift, but only 120 of 1,000 requests have labels | Investigate drift and label coverage (12%). Do not claim population-wide quality from an unrepresentative labeled subset. |
+| A profile create call succeeds but the latest refresh fails | Monitoring is incomplete. Inspect refresh error and metric freshness; do not present stale output as a current pass. |
+
+1. **Does adding workers make a single-node estimator distributed?** No; choose an algorithm or trial strategy that uses them.
+2. **Can unlimited parallel trials compensate for insufficient trial memory?** No; enforce per-trial resource and concurrency limits.
+3. **Does the driver's active MLflow run automatically exist in every worker?** No; pass and verify explicit run linkage.
+4. **Is a failed trial equivalent to a low-scoring completed trial?** No; record state and failure evidence separately.
+5. **Does schema freshness monitoring replace inference profiling?** No; they assess different properties.
+6. **Does a small drift p-value prove operational harm?** No; inspect effect size, sample, seasonality and outcomes.
+7. **Can missing labels establish acceptable model accuracy?** No; record coverage and delay.
+8. **Does creating a profile prove its metrics refreshed?** No; validate refresh status and output windows.
+9. **Should a model reject every negative output?** No; the margin example permits losses but constrains its inputs.
+10. **Does local model reload prove a serving rollout?** No; endpoint identity, readiness, traffic and recovery require separate workspace tests.
+
+**Review execution boundary — September 28, 2026:** local PyFunc save/load and fresh-process prediction, serial Optuna trials with nested local MLflow tracking, and numerical decision checks were executed. No Spark, Ray cluster, distributed worker, Unity Catalog, online store, monitoring service or endpoint was run. All eight service labs remain proposed.
 
 ## Hands-on lab sequence
 
@@ -246,7 +300,7 @@ An inference table records request features, model version, probability, decisio
 
 ## Places to learn
 
-This is **not a complete list**, and it is not meant to be consumed in full. Select the material that closes measured gaps and spend most effort building an observable, tested release system. Durations are planning estimates checked September 1, 2026 and may change.
+This is **not a complete list**, and it is not meant to be consumed in full. Select the material that closes measured gaps and spend most effort building an observable, tested release system. Public resource availability was checked September 28, 2026. Durations are editorial planning estimates; signed-in Academy and paid lessons were not inspected. O'Reilly access was blocked, and Whizlabs returned an empty body.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -255,6 +309,7 @@ This is **not a complete list**, and it is not meant to be consumed in full. Sel
 | [Databricks ML documentation](https://docs.databricks.com/aws/en/machine-learning/) | Free | 12–20 hours selected implementation across Spark/Ray/features/MLflow/monitoring/serving |
 | Authorized workspace plus the guide's eight labs | Organizational; some labs can start in Free Edition | 30–50 hours including failure, scale, monitoring and rollout experiments |
 | [MLflow documentation](https://mlflow.org/docs/latest/ml/) | Free | 6–12 hours selected nested-run, PyFunc and deployment practice |
+| [Databricks: Data Quality Monitoring at scale (February 4, 2026)](https://www.databricks.com/blog/data-quality-monitoring-scale-agentic-ai) | Free product article | About 30–50 minutes to read and draw separate freshness, drift, performance and alert paths; estimate includes the worksheet. Product context, checked against current profile/API documentation, not added exam scope. |
 | [Databricks YouTube](https://www.youtube.com/@Databricks) | Free | 4–8 hours selected recent MLOps, Ray, MLflow, feature and serving sessions |
 | [Whizlabs: Databricks Machine Learning Professional](https://www.whizlabs.com/databricks-certified-machine-learning-professional/) | Paid; training/practice product | Stable public totals were not exposed; budget 8–18 hours and verify September 2025 alignment |
 | [O'Reilly search: Databricks MLOps](https://www.oreilly.com/search/?q=Databricks%20MLOps) | Paid/trial | 8–20 hours selected current material; map chapters/events to the blueprint rather than assuming completeness |

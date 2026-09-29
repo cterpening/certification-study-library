@@ -4,6 +4,179 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-databricksmachinelearningprofessional-deep-review",
+      "title": "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+      ],
+      "results": [
+        {
+          "exam_code": "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-MACHINE-LEARNING-PROFESSIONAL-databricks-machine-learning-professional.md",
+          "baseline_sha256": "cc03ce1b23e8af89ff989bfb1a46cfc798adbf561c09dce31c47eac5635b698a",
+          "scanned_on": "2026-09-28",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Live page still links September 30, 2025 PDF; three-domain/status monitor unchanged; 47 leaf objectives mapped."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Reviewed registered docs and current online-store, profile API/metrics, Ray restrictions, MLflow PyFunc and nested tracking references."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "February 4 first-party monitoring article reconciled with September product docs; product/API changes distinguished from PDF terminology."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Two named Academy preparation courses retained; signed-in lessons unavailable; OReilly blocked and Whizlabs empty; durations qualified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "API and metrics pages qualify a 30-day initial window but overview reads as ongoing last-30-days limitation. SDK/search did not settle late-label and old-event cases; explicit validation plan and follow-up recorded."
+            }
+          },
+          "findings": [
+            {
+              "id": "databricksmachinelearningprofessional-deep-1",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Monitoring historical window wording remains ambiguous",
+              "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Overview says last 30 days, API says initial 30-day backfill then all new data, and metric reference says initial window. No service lab or official clarification settled old-event corrections or delayed labels.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "databricksmachinelearningprofessional-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Monitoring API and capability distinctions were too broad",
+              "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/create-monitor-api",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current data_quality API replaces deprecated quality_monitors; anomaly freshness/completeness differs from detailed profiling.",
+              "recommendation": "Add capability/API distinction, refresh completion and metric evidence.",
+              "disposition": "applied",
+              "source_id": "databricks-mlp-profile-api",
+              "resolution": "Add capability/API distinction, refresh completion and metric evidence."
+            },
+            {
+              "id": "databricksmachinelearningprofessional-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Online feature-store reference redirected to third-party topic",
+              "url": "https://docs.databricks.com/aws/en/machine-learning/feature-store/online-feature-store",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Plural URL now describes third-party stores; native feature stores use a distinct Lakebase-backed route.",
+              "recommendation": "Register current native reference and qualify older SDK online-table examples.",
+              "disposition": "applied",
+              "source_id": "databricks-native-online-feature-store",
+              "resolution": "Register current native reference and qualify older SDK online-table examples."
+            },
+            {
+              "id": "databricksmachinelearningprofessional-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Ray runtime/dependency restrictions lacked explicit treatment",
+              "url": "https://docs.databricks.com/aws/en/machine-learning/ray/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Ray-on-Spark cannot start on serverless-based runtimes and live pip installation can shut it down.",
+              "recommendation": "Explain integration/access-mode boundary and dependency setup sequence.",
+              "disposition": "applied",
+              "source_id": "databricks-mlp-ray",
+              "resolution": "Explain integration/access-mode boundary and dependency setup sequence."
+            },
+            {
+              "id": "databricksmachinelearningprofessional-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Old Optuna reference unavailable and run ownership lacked evidence",
+              "url": "https://mlflow.org/docs/latest/ml/getting-started/hyperparameter-tuning/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Old upstream URL blocked; current nested-run tutorial accessible.",
+              "recommendation": "Replace guide link; add explicit distributed run identity advice and serial local tracking test.",
+              "disposition": "applied",
+              "source_id": "mlflow-nested-tuning",
+              "resolution": "Replace guide link; add explicit distributed run identity advice and serial local tracking test."
+            },
+            {
+              "id": "databricksmachinelearningprofessional-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Custom-model guidance lacked executable input-contract exercise",
+              "url": "https://mlflow.org/docs/latest/ml/model/python_model/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Signatures do not express all business-value constraints.",
+              "recommendation": "Add original PyFunc, local reload/fresh-process and invalid-input checks.",
+              "disposition": "applied",
+              "source_id": "databricks-mlp-pyfunc",
+              "resolution": "Add original PyFunc, local reload/fresh-process and invalid-input checks."
+            }
+          ],
+          "notes": "Mapped 47 detailed objectives; repair online-store and Optuna references, distinguish profiling/anomaly/API generations, add drift metrics and Ray support boundaries, and execute local PyFunc/nested-Optuna checks. Monitoring 30-day wording remains unresolved with October 5 follow-up. Same-context AI review; human review pending. See docs/research/2026-09-28-databricks-machine-learning-professional-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 5,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-28-databricksmachinelearningassociate-deep-review",
       "title": "DATABRICKS-MACHINE-LEARNING-ASSOCIATE complete guide and learning-content review",
       "rubric_version": 1,

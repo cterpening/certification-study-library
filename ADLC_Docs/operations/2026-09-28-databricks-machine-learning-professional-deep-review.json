@@ -1,0 +1,1722 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/DATABRICKS-MACHINE-LEARNING-PROFESSIONAL-databricks-machine-learning-professional.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "e709e9525adc1e2ff6f82c43992eccf5d1ad9d57ab25eccdda3532501da3f7ab",
+  "guide_after_sha256": "21080f21e47718c4c8b88a0159a38259739baa55bd5d505195178b0e5d9418b6",
+  "prior_records": {
+    "exam": {
+      "code": "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+      "level": "expert",
+      "vendor_id": "databricks",
+      "title": "Databricks Certified Machine Learning Professional",
+      "status": "active",
+      "study_guide_url": "https://www.databricks.com/learn/certification/machine-learning-professional",
+      "guide_path": "guides/DATABRICKS-MACHINE-LEARNING-PROFESSIONAL-databricks-machine-learning-professional.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; the official guide recommends one year of hands-on Databricks experience. Practice scalable Spark/single-node/Ray ML, distributed tuning, point-in-time and online/on-demand features, advanced MLflow, deploy-code environments, complete test gates, automated retraining, sliced monitoring/alerts and controlled custom-model rollout."
+    },
+    "review": {
+      "id": "databricks-machine-learning-professional-2026-09-01-source-validation",
+      "exam_code": "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+      "guide_path": "guides/DATABRICKS-MACHINE-LEARNING-PROFESSIONAL-databricks-machine-learning-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/databricks-machine-learning-professional-official-objectives.txt",
+      "blueprint_snapshot_sha256": "90c1a98f80cb5fb4bf172563055256b49ba45f967caa4bbe4a0d5a9b88d124f7",
+      "objective_coverage": [
+        {
+          "objective_group": "Model Development",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–4"
+          ]
+        },
+        {
+          "objective_group": "ML Ops",
+          "guide_sections": [
+            "Section 2",
+            "Drift-retraining scenario",
+            "Labs 5–7"
+          ]
+        },
+        {
+          "objective_group": "Model Deployment",
+          "guide_sections": [
+            "Section 3",
+            "Real-time/Drift scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 17,
+        "reachable": 15,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "The September 30, 2025 detailed live-version PDF and current three-domain weighted page were reconciled, with current live delivery metadata controlling the PDF discrepancy. Three scenarios, eight labs and 32 original checks cover Spark versus single-node, vertical/horizontal/model/data/trial/group parallelism, Ray and Optuna, nested MLflow/PyFunc, point-in-time/online/on-demand features; deploy-code lifecycle mapping, bundle environments, unit/integration gates, governed automated retraining, snapshot/time-series/inference monitoring, drift/slices/custom metrics/endpoint health and alerts; plus blue-green/canary/shadow rollout and custom-model REST/SDK serving. All 17 guide URLs are cataloged: 15 reachable and MLflow Optuna/O'Reilly automation-blocked; none missing or broken. DAB and Lakehouse Monitoring terminology is preserved as published and translated to current product names; vendor sample questions are linked rather than reproduced."
+    },
+    "sources": [
+      {
+        "id": "dp-750-databricks-youtube-channel",
+        "title": "Databricks YouTube channel",
+        "url": "https://www.youtube.com/@Databricks",
+        "publisher": "Databricks",
+        "authority_class": 3,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750",
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+          "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+          "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+        ]
+      },
+      {
+        "id": "databricks-dea-bundles",
+        "title": "What are Declarative Automation Bundles?",
+        "url": "https://docs.databricks.com/aws/en/dev-tools/bundles/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+        ],
+        "notes": "Current name for the capability formerly known as Databricks Asset Bundles; covers project structure, resources, targets and CLI lifecycle."
+      },
+      {
+        "id": "databricks-dea-academy",
+        "title": "Databricks Academy",
+        "url": "https://customer-academy.databricks.com/",
+        "publisher": "Databricks",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+          "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+          "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE",
+          "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+        ],
+        "notes": "Hosts official self-paced learning; catalog and entitlements can differ for customer, partner and individual accounts."
+      },
+      {
+        "id": "databricks-mla-docs",
+        "title": "Machine learning on Databricks",
+        "url": "https://docs.databricks.com/aws/en/machine-learning/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+        ],
+        "notes": "Current first-party ML, feature engineering, tracking, registry, serving and MLOps hub."
+      },
+      {
+        "id": "databricks-mla-serving",
+        "title": "Mosaic AI Model Serving",
+        "url": "https://docs.databricks.com/aws/en/machine-learning/model-serving/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+        ],
+        "notes": "Current endpoint, served-entity, authentication, scaling, traffic and monitoring hub; behavior is volatile."
+      },
+      {
+        "id": "databricks-mla-mlflow-docs",
+        "title": "MLflow machine learning documentation",
+        "url": "https://mlflow.org/docs/latest/ml/",
+        "publisher": "MLflow",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+        ],
+        "notes": "Current upstream MLflow reference; reconcile open-source interfaces with managed Databricks availability."
+      },
+      {
+        "id": "databricks-mlp-blueprint",
+        "title": "Databricks Certified Machine Learning Professional",
+        "url": "https://www.databricks.com/learn/certification/machine-learning-professional",
+        "publisher": "Databricks",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+        ],
+        "notes": "Canonical live three-domain weighted coverage and assessment-details page; monitored by the Databricks certification adapter."
+      },
+      {
+        "id": "databricks-mlp-exam-guide-sep-2025",
+        "title": "Databricks Certified Machine Learning Professional exam guide — September 30, 2025",
+        "url": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-machine-learning-professional-exam-guide-september.pdf",
+        "publisher": "Databricks",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+        ],
+        "notes": "Detailed official live-version objective baseline; uses DAB/Lakehouse Monitoring terms and contains original vendor sample questions."
+      },
+      {
+        "id": "databricks-mlp-spark-ml",
+        "title": "Spark MLlib guide",
+        "url": "https://spark.apache.org/docs/latest/ml-guide.html",
+        "publisher": "Apache Spark",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+        ],
+        "notes": "Current upstream pipeline, transformer, estimator, tuning and evaluation reference."
+      },
+      {
+        "id": "databricks-mlp-ray",
+        "title": "Ray on Databricks",
+        "url": "https://docs.databricks.com/aws/en/machine-learning/ray/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+        ],
+        "notes": "Current Ray cluster, training/tuning and Databricks integration guidance."
+      },
+      {
+        "id": "databricks-mlp-optuna",
+        "title": "MLflow and Optuna hyperparameter tuning",
+        "url": "https://mlflow.org/docs/latest/ml/traditional-ml/hyperparameter-tuning/with-optuna/",
+        "publisher": "MLflow",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+        ],
+        "notes": "Current upstream Optuna study/trial tracking pattern; verify distributed Databricks integration and runtime support."
+      },
+      {
+        "id": "databricks-mlp-pyfunc",
+        "title": "Custom Python models with MLflow",
+        "url": "https://mlflow.org/docs/latest/ml/model/python_model/",
+        "publisher": "MLflow",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+        ],
+        "notes": "Current PythonModel, artifacts, context, prediction and dependency packaging reference."
+      },
+      {
+        "id": "databricks-mlp-online-features",
+        "title": "Online feature stores",
+        "url": "https://docs.databricks.com/aws/en/machine-learning/feature-store/online-feature-stores",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+        ],
+        "notes": "Current low-latency publication and provider behavior; features, SDKs and availability are volatile."
+      },
+      {
+        "id": "databricks-mlp-monitoring",
+        "title": "Data quality monitoring",
+        "url": "https://docs.databricks.com/aws/en/data-quality-monitoring/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+        ],
+        "notes": "Current evolution of Lakehouse Monitoring across snapshot, time-series and inference data; APIs and terminology are volatile."
+      },
+      {
+        "id": "databricks-mlp-serving-monitor",
+        "title": "Monitor and diagnose model serving endpoints",
+        "url": "https://docs.databricks.com/aws/en/machine-learning/model-serving/monitor-diagnose-endpoints",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+        ],
+        "notes": "Current latency, request, error, CPU/memory and endpoint diagnostic guidance."
+      },
+      {
+        "id": "databricks-mlp-deployments-api",
+        "title": "MLflow Deployments Python API",
+        "url": "https://mlflow.org/docs/latest/api_reference/python_api/mlflow.deployments.html",
+        "publisher": "MLflow",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+        ],
+        "notes": "Current endpoint client and predict interface; reconcile provider-specific managed behavior."
+      },
+      {
+        "id": "databricks-mlp-whizlabs",
+        "title": "Databricks Certified Machine Learning Professional training and practice",
+        "url": "https://www.whizlabs.com/databricks-certified-machine-learning-professional/",
+        "publisher": "Whizlabs",
+        "authority_class": 4,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+        ],
+        "notes": "Training/practice product verified by title; stable public totals were not exposed, so verify blueprint alignment after sign-in and avoid recalled-question claims."
+      },
+      {
+        "id": "databricks-mlp-oreilly-search",
+        "title": "O'Reilly search — Databricks MLOps",
+        "url": "https://www.oreilly.com/search/?q=Databricks%20MLOps",
+        "publisher": "O'Reilly Media",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+        ],
+        "notes": "Catalog discovery rather than a verified complete course; select recent chapters/events and map them to the official guide."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "f220d379b3b534e32cfcd11e45c9410fe0b47c606ae03f0c19e4eda069169f2c",
+      "guide_sections": [
+        "1. Model Development (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "e30dc3097a2f39b6ac57540e717b42889d3afdaf77cd00e7af1ae4373e2432ac",
+      "guide_sections": [
+        "1. Model Development (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "14e126e92ae17026a3d618bec70a14845f58e1c5ffb40e27b1ce9cf99c87bfc8",
+      "guide_sections": [
+        "1. Model Development (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "b5b7a7518aaa6b6e624b47dbc021b80f448f0291856e1815efdd6e4adc896167",
+      "guide_sections": [
+        "1. Model Development (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "97898e701b33931274a5f8ed6ad0be43ed43b38ec68d2a77f3f7cf2963349a18",
+      "guide_sections": [
+        "1. Model Development (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "9ac940ac8c8b5641088f4338160e2a87f7733c3be9f8e930b7654743a806f26e",
+      "guide_sections": [
+        "1. Model Development (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "abbe7655c8a782ac2461fc6c606a11a799a40e825df57a07788c076669f7a227",
+      "guide_sections": [
+        "1. Model Development (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "3edca7ccead8d443dd44bae90b1e26bacea5e4e4da14972281ca33185e278cb3",
+      "guide_sections": [
+        "1. Model Development (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "84dd10d03a19ddce687e54ebb8a72bdf5916f9ca3c7c8270dcf94404b86453f6",
+      "guide_sections": [
+        "1. Model Development (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "75b7dfd74fd422e89da72bbca5662221b98f2408003335b54a5d6c68c31151ab",
+      "guide_sections": [
+        "1. Model Development (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 11,
+      "objective_sha256": "22f8405b78a8fa2f97ab6619e11a7fff977869f9ccbf0b6e2e065e010012d7a8",
+      "guide_sections": [
+        "1. Model Development (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 12,
+      "objective_sha256": "9bc889645809f64a7af7ff9b9438e647fbb0fbd009b3bbfe0bde03b27dc4574a",
+      "guide_sections": [
+        "1. Model Development (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 13,
+      "objective_sha256": "33b5855f697e9707aba524d6f74c8ef5c389e8775a75e691965abd6ea97bc6a6",
+      "guide_sections": [
+        "1. Model Development (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 14,
+      "objective_sha256": "6fd7676755107dbd562b6415308d2c6c7dca1601f48e8390c4b198e70a827c9b",
+      "guide_sections": [
+        "1. Model Development (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 15,
+      "objective_sha256": "3d286e601595b2c9426fc5fde830b1bdc529651c03f94dbae757c8d3e9be6d94",
+      "guide_sections": [
+        "1. Model Development (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 16,
+      "objective_sha256": "6179e8359ccda6a9cbd360bb0a6ffc1db49d20c8468f810d9d84fa9bac924735",
+      "guide_sections": [
+        "1. Model Development (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 17,
+      "objective_sha256": "87ccfc713ce424ff03a0ea3680a66da70172ddc5111aed11f511e21b7c3667cc",
+      "guide_sections": [
+        "1. Model Development (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 18,
+      "objective_sha256": "77c2975f2c101e861475e27ca19af141a85e9a4c8dc13e7712bbb62251b55dc2",
+      "guide_sections": [
+        "1. Model Development (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 19,
+      "objective_sha256": "dbf303d8058c7796827825a3b9d50d7d0e73d912fd5c5ccac43c7531544ea9d7",
+      "guide_sections": [
+        "1. Model Development (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 20,
+      "objective_sha256": "87b8778d5e909f46215436ff1b75c510f7ddbb65ebdfb17a0a44b072b64f90cd",
+      "guide_sections": [
+        "1. Model Development (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 21,
+      "objective_sha256": "014e20dbf9882ddf2f47abe62b5c30aa5e00ba59badf2e0dc9b740820e9c07b6",
+      "guide_sections": [
+        "1. Model Development (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 22,
+      "objective_sha256": "c0ab74df94cc6cfedf422b0e69907ce79ce5b6b422a836626296537d50ffe78c",
+      "guide_sections": [
+        "1. Model Development (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "ee1df1ab14c686e348b8a82e10486461e31f274ad7fe1c83f2f529fd9a8fa738",
+      "guide_sections": [
+        "2. ML Ops (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "2e04c6ceab6116e984ae7c4e4629e2c89a51d843fad83ff20b68e5d5501dd0df",
+      "guide_sections": [
+        "2. ML Ops (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "84ee253cfe3170e405ee82b380e1a7c488a34f9d68266d94f256d468562c93c5",
+      "guide_sections": [
+        "2. ML Ops (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "2311627988677f4814af30b970750b0cacc2e852d73da4df72907ffea282c134",
+      "guide_sections": [
+        "2. ML Ops (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "0e8099b0e7ffed78510dfd30f66060923a4ae5a2fdbe0f05707dc36df1bbaeda",
+      "guide_sections": [
+        "2. ML Ops (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "bb601a0f4625ba571ff4c777378a9b13e6ecbe9e37012a53eafeaf8bc4c73151",
+      "guide_sections": [
+        "2. ML Ops (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "30a106fa536110d5096a118618d8ef6d94486719fca2dc100dc86c254aa6a6f4",
+      "guide_sections": [
+        "2. ML Ops (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "08ecbcd9092f87dddd9631a533302f9ab40190e3a29482fbb16fad54b198fc58",
+      "guide_sections": [
+        "2. ML Ops (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "841ace895e197c775f12d99c96dc8884421562c0540a7250fef2d7b11c8b78a5",
+      "guide_sections": [
+        "2. ML Ops (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 10,
+      "objective_sha256": "13bc64335c56fba2dbbc48ef1598ccfc7636aa87d8613b06773fd975fbd4b2a6",
+      "guide_sections": [
+        "2. ML Ops (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 11,
+      "objective_sha256": "eed89fe9545b48e08a0f867d4980cca1dde1e1bc25873aaf91077d8451fd08da",
+      "guide_sections": [
+        "2. ML Ops (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 12,
+      "objective_sha256": "07dcd182a12795d2a2099d62d4a33d696ecf299a83666ea0337fc56178542638",
+      "guide_sections": [
+        "2. ML Ops (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 13,
+      "objective_sha256": "effcfacfea5c28699d1d597de28c715fe43bef8096d068ae611b76479d4760de",
+      "guide_sections": [
+        "2. ML Ops (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 14,
+      "objective_sha256": "bc31dc2c388571ff5f14c4c8c862de4dee6750d310b1b5a93171a1aa37a3e852",
+      "guide_sections": [
+        "2. ML Ops (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 15,
+      "objective_sha256": "91c57e897147584c9ae4d491b63150e480ed40eda19383c69e292fdd581cea83",
+      "guide_sections": [
+        "2. ML Ops (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 16,
+      "objective_sha256": "86cec7622f8fb185f62ed03a96df1f158e67fcfea67c2403cae01d1f25f60310",
+      "guide_sections": [
+        "2. ML Ops (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 17,
+      "objective_sha256": "950016e4d8581fcd077cd69903fd0860a412369502d61b18d9a8bcacad252e81",
+      "guide_sections": [
+        "2. ML Ops (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 18,
+      "objective_sha256": "6ed0306d2f057bb61fb77c9e75f23cc0e0f15fbcf06d30df5bb146e1e0d89c03",
+      "guide_sections": [
+        "2. ML Ops (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 19,
+      "objective_sha256": "24df814bdf1739fabf9a208953433d7a45a1d6e5cba285568ac23d59a70339fa",
+      "guide_sections": [
+        "2. ML Ops (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 20,
+      "objective_sha256": "b652787eac5b54fd9765a5c5e99bfb56b90794253fa5cc6b970e2696d515a7fd",
+      "guide_sections": [
+        "2. ML Ops (44%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "7f68ab3a6fc4850e6859ef1fc7e8136a82c3a9b8b0c0f9d9f8cba6e08b4811f2",
+      "guide_sections": [
+        "3. Model Deployment (12%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "45f14351e4b2b0f5a6041a104ecd4e1a349e0041fc48b5896d82dc13bc5804e5",
+      "guide_sections": [
+        "3. Model Deployment (12%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "9cda397e9c7293813db47176cc10ca184bc1c03a2bd4abdad503c0f8233948ec",
+      "guide_sections": [
+        "3. Model Deployment (12%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "efbca192a24be2e6ffa5ac769b094376385dc218173f5584451f8a24384f93e5",
+      "guide_sections": [
+        "3. Model Deployment (12%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "ccd2ad27930605486b46f48e4c6c1f58abbde4dd28f2304984d9da7a2bd03da6",
+      "guide_sections": [
+        "3. Model Deployment (12%)",
+        "Worked operational decisions and answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+        "title": "Databricks Certified Machine Learning Professional",
+        "url": "https://www.databricks.com/learn/certification/machine-learning-professional",
+        "guide_path": "guides/DATABRICKS-MACHINE-LEARNING-PROFESSIONAL-databricks-machine-learning-professional.md",
+        "snapshot_path": "data\\objective-snapshots\\databricks-machine-learning-professional-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\databricks-machine-learning-professional-official-status.json",
+        "previous_sha256": "90c1a98f80cb5fb4bf172563055256b49ba45f967caa4bbe4a0d5a9b88d124f7",
+        "current_sha256": "90c1a98f80cb5fb4bf172563055256b49ba45f967caa4bbe4a0d5a9b88d124f7",
+        "previous_status_sha256": "71d3758cd2d148b6ea1167c49f6f5acacf7420b8b723320d71bfc67621416d1b",
+        "current_status_sha256": "71d3758cd2d148b6ea1167c49f6f5acacf7420b8b723320d71bfc67621416d1b",
+        "official_status": {
+          "skills_versions": [
+            "Databricks Certified Machine Learning Professional — public certification page",
+            "Type: Proctored certification",
+            "Total number of scored questions: 59",
+            "Time limit: 120 minutes",
+            "Question types: Multiple choice",
+            "Languages: English",
+            "Delivery Method: Online or test center",
+            "Recommended experience: 1+ years of hands-on experience performing the machine learning tasks outlined in the exam guide",
+            "Validity period: 2 years"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 22,
+    "reachable": 21,
+    "access_blocked": 1,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "dp-750-databricks-youtube-channel",
+      "url": "https://www.youtube.com/@Databricks",
+      "checked_at": "2026-09-29T00:59:34.126597+00:00",
+      "health": {
+        "id": "dp-750-databricks-youtube-channel",
+        "url": "https://www.youtube.com/@Databricks",
+        "checked_at": "2026-09-29T00:59:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@Databricks",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Databricks",
+        "canonical_url": "https://www.youtube.com/channel/UC3q8O3Bh2Le8Rj1-Q-_UUbA",
+        "duration_signals": [],
+        "signal_fingerprint": "17f4cde1f56732213a2396da2e6df783f4f0ee10a774ee38679645ec7ff9927b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@Databricks",
+      "sha256": "fe7132820db6525ee196f8477b58a76456f75968d58e60e9b6bdea1bab6fc4f8",
+      "text_characters": 173
+    },
+    {
+      "id": "databricks-dea-bundles",
+      "url": "https://docs.databricks.com/aws/en/dev-tools/bundles/",
+      "checked_at": "2026-09-29T00:59:34.127142+00:00",
+      "health": {
+        "id": "databricks-dea-bundles",
+        "url": "https://docs.databricks.com/aws/en/dev-tools/bundles/",
+        "checked_at": "2026-09-29T00:59:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/dev-tools/bundles/",
+        "content_type": "text/html",
+        "page_title": "What are Declarative Automation Bundles? | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/dev-tools/bundles/",
+        "duration_signals": [
+          "5 minutes"
+        ],
+        "signal_fingerprint": "4b1e0e497608bb4667509cbd241adac6baaa3a0f45193f39b002f678f2852b35",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/dev-tools/bundles/",
+      "sha256": "407c084f7018fae7326fd8d803d05b8fb1943db7bc9b3c67ba184f046c2dcce4",
+      "text_characters": 7391
+    },
+    {
+      "id": "databricks-dea-academy",
+      "url": "https://customer-academy.databricks.com/",
+      "checked_at": "2026-09-29T00:59:34.127491+00:00",
+      "health": {
+        "id": "databricks-dea-academy",
+        "url": "https://customer-academy.databricks.com/",
+        "checked_at": "2026-09-29T00:59:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://customer-academy.databricks.com/learn",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Loading",
+        "canonical_url": "https://customer-academy.databricks.com/learn",
+        "duration_signals": [],
+        "signal_fingerprint": "1dce398a1aa27fcf333c855d182c5c5ced7396d33bb07d51c89b8e50683ae480",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://customer-academy.databricks.com/learn",
+      "sha256": "14f89b57c71f6fff15e67ea2b452b2e5f796e19a3dd9c6c89a368c9d99df63d5",
+      "text_characters": 7
+    },
+    {
+      "id": "databricks-mla-docs",
+      "url": "https://docs.databricks.com/aws/en/machine-learning/",
+      "checked_at": "2026-09-29T00:59:34.389206+00:00",
+      "health": {
+        "id": "databricks-mla-docs",
+        "url": "https://docs.databricks.com/aws/en/machine-learning/",
+        "checked_at": "2026-09-29T00:59:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/machine-learning/",
+        "content_type": "text/html",
+        "page_title": "Machine learning on Databricks | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/machine-learning/",
+        "duration_signals": [],
+        "signal_fingerprint": "b04857fbdea040bc1afb1263b129be49de1e01114eadbc321d0fde40b10ede7a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/machine-learning/",
+      "sha256": "5e30467b4c5e12a2b708f271968ddd65f15d8fdb6476c8285fe5549bfc1cdad3",
+      "text_characters": 3858
+    },
+    {
+      "id": "databricks-mla-serving",
+      "url": "https://docs.databricks.com/aws/en/machine-learning/model-serving/",
+      "checked_at": "2026-09-29T00:59:34.530295+00:00",
+      "health": {
+        "id": "databricks-mla-serving",
+        "url": "https://docs.databricks.com/aws/en/machine-learning/model-serving/",
+        "checked_at": "2026-09-29T00:59:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/machine-learning/model-serving/",
+        "content_type": "text/html",
+        "page_title": "Deploy models using Model Serving | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/machine-learning/model-serving/",
+        "duration_signals": [],
+        "signal_fingerprint": "d8b1f6f00147e795f7c93a09470ed87f9ca1e1d5bb42e83ff891344e507faf45",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/machine-learning/model-serving/",
+      "sha256": "5c1356fb2b578996f9abfa23625928f85b910aaabeca40b1bef29b32d281a703",
+      "text_characters": 10418
+    },
+    {
+      "id": "databricks-mla-mlflow-docs",
+      "url": "https://mlflow.org/docs/latest/ml/",
+      "checked_at": "2026-09-29T00:59:34.681548+00:00",
+      "health": {
+        "id": "databricks-mla-mlflow-docs",
+        "url": "https://mlflow.org/docs/latest/ml/",
+        "checked_at": "2026-09-29T00:59:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://mlflow.org/docs/latest/ml/",
+        "content_type": "text/html",
+        "page_title": "MLflow — Open Source AI Platform for Agents, LLMs & Models",
+        "canonical_url": "https://mlflow.org/docs/latest/ml/",
+        "duration_signals": [],
+        "signal_fingerprint": "3fa0a19aa5c99b4d43c333b47df9a590f39c10c8962c37c59ece10907e4c5781",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://mlflow.org/docs/latest/ml/",
+      "sha256": "cfd9641b2e3280694ae039d99e9e7cea3ff358daef8dbe374a93e4ad3e390f8a",
+      "text_characters": 5584
+    },
+    {
+      "id": "databricks-mlp-blueprint",
+      "url": "https://www.databricks.com/learn/certification/machine-learning-professional",
+      "checked_at": "2026-09-29T00:59:35.087918+00:00",
+      "health": {
+        "id": "databricks-mlp-blueprint",
+        "url": "https://www.databricks.com/learn/certification/machine-learning-professional",
+        "checked_at": "2026-09-29T00:59:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.databricks.com/learn/certification/machine-learning-professional",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Databricks Certified Machine Learning Professional | Databricks",
+        "canonical_url": "https://www.databricks.com/learn/certification/machine-learning-professional",
+        "duration_signals": [
+          "120 minutes"
+        ],
+        "signal_fingerprint": "908eb2fb9ff9f16439bca08631abecf398128987533736fd108a0dc5ada6200b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.databricks.com/learn/certification/machine-learning-professional",
+      "sha256": "54fa81ea8f5d49b8e8a0c176e9cd27804ddef31cd71f8deff34c046fb484362e",
+      "text_characters": 3300
+    },
+    {
+      "id": "databricks-mlp-exam-guide-sep-2025",
+      "url": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-machine-learning-professional-exam-guide-september.pdf",
+      "checked_at": "2026-09-29T00:59:35.358051+00:00",
+      "health": {
+        "id": "databricks-mlp-exam-guide-sep-2025",
+        "url": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-machine-learning-professional-exam-guide-september.pdf",
+        "checked_at": "2026-09-29T00:59:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-machine-learning-professional-exam-guide-september.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-machine-learning-professional-exam-guide-september.pdf",
+      "sha256": "1f99b597a989a9d5e6d89c1b934ce090098d61cfba8d2bd5dfcda9b4b250487c",
+      "text_characters": 4899,
+      "representation_note": "Original response is a PDF. Separately decoded with pypdf; objective section reviewed before the sample-question section, vendor samples not reproduced. HTML visible-text extraction is not used as objective evidence."
+    },
+    {
+      "id": "databricks-mlp-spark-ml",
+      "url": "https://spark.apache.org/docs/latest/ml-guide.html",
+      "checked_at": "2026-09-29T00:59:35.729622+00:00",
+      "health": {
+        "id": "databricks-mlp-spark-ml",
+        "url": "https://spark.apache.org/docs/latest/ml-guide.html",
+        "checked_at": "2026-09-29T00:59:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://spark.apache.org/docs/latest/ml-guide.html",
+        "content_type": "text/html",
+        "page_title": "MLlib: Main Guide - Spark 4.2.0 Documentation",
+        "canonical_url": "https://spark.apache.org/docs/latest/ml-guide.html",
+        "duration_signals": [],
+        "signal_fingerprint": "a5b086b6469d35a757321046890d2596df3ba8ce5ead536686fb08b3bc9c5cff",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://spark.apache.org/docs/latest/ml-guide.html",
+      "sha256": "62a990a06c9a60310d973246544f3426a69390b5f7342c75abb9fdf9ec859de0",
+      "text_characters": 5802
+    },
+    {
+      "id": "databricks-mlp-ray",
+      "url": "https://docs.databricks.com/aws/en/machine-learning/ray/",
+      "checked_at": "2026-09-29T00:59:35.730509+00:00",
+      "health": {
+        "id": "databricks-mlp-ray",
+        "url": "https://docs.databricks.com/aws/en/machine-learning/ray/",
+        "checked_at": "2026-09-29T00:59:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/machine-learning/ray/",
+        "content_type": "text/html",
+        "page_title": "What is Ray on Databricks? | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/machine-learning/ray/",
+        "duration_signals": [],
+        "signal_fingerprint": "ac4f5ebd9d8125b85addafe6b6ab0dd8afb9dbf91ab2e9303c04f72ddc8f7073",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/machine-learning/ray/",
+      "sha256": "51c4fabcd44cfc050b7e143e3c8b19eaaa28f0c6596f7a8cd535af0fb288acda",
+      "text_characters": 6815
+    },
+    {
+      "id": "databricks-mlp-optuna",
+      "url": "https://mlflow.org/docs/latest/ml/traditional-ml/hyperparameter-tuning/with-optuna/",
+      "checked_at": "2026-09-29T00:59:35.871362+00:00",
+      "health": {
+        "id": "databricks-mlp-optuna",
+        "url": "https://mlflow.org/docs/latest/ml/traditional-ml/hyperparameter-tuning/with-optuna/",
+        "checked_at": "2026-09-29T00:59:35+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://mlflow.org/docs/latest/ml/traditional-ml/hyperparameter-tuning/with-optuna/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "databricks-mlp-pyfunc",
+      "url": "https://mlflow.org/docs/latest/ml/model/python_model/",
+      "checked_at": "2026-09-29T00:59:35.911307+00:00",
+      "health": {
+        "id": "databricks-mlp-pyfunc",
+        "url": "https://mlflow.org/docs/latest/ml/model/python_model/",
+        "checked_at": "2026-09-29T00:59:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://mlflow.org/docs/latest/ml/model/python_model/",
+        "content_type": "text/html",
+        "page_title": "MLflow — Open Source AI Platform for Agents, LLMs & Models",
+        "canonical_url": "https://mlflow.org/docs/latest/ml/model/python_model/",
+        "duration_signals": [],
+        "signal_fingerprint": "e70afd29ceb057aed4b6bb9a12ae2774768e622dae3212ac82448c53c5744a38",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://mlflow.org/docs/latest/ml/model/python_model/",
+      "sha256": "4d92230c439fb858a3b1357bccc0e748ee4a12cc3b3b9d87aec33d06de55d3c0",
+      "text_characters": 15636
+    },
+    {
+      "id": "databricks-mlp-online-features",
+      "url": "https://docs.databricks.com/aws/en/machine-learning/feature-store/online-feature-stores",
+      "checked_at": "2026-09-29T00:59:36.040961+00:00",
+      "health": {
+        "id": "databricks-mlp-online-features",
+        "url": "https://docs.databricks.com/aws/en/machine-learning/feature-store/online-feature-stores",
+        "checked_at": "2026-09-29T00:59:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/machine-learning/feature-store/third-party-online-stores",
+        "content_type": "text/html",
+        "page_title": "Third-party online stores | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/machine-learning/feature-store/third-party-online-stores",
+        "duration_signals": [],
+        "signal_fingerprint": "0ca2ef58b5707208c3ad42a80ebb17a9cb39815cd9ed10a47b938d8d287dc51c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/machine-learning/feature-store/third-party-online-stores",
+      "sha256": "842e2a3ff292ed1cdaeb86316177067df84c0cea3cf8b7697f2f3b4e7c73bfbf",
+      "text_characters": 1726
+    },
+    {
+      "id": "databricks-mlp-monitoring",
+      "url": "https://docs.databricks.com/aws/en/data-quality-monitoring/",
+      "checked_at": "2026-09-29T00:59:36.068006+00:00",
+      "health": {
+        "id": "databricks-mlp-monitoring",
+        "url": "https://docs.databricks.com/aws/en/data-quality-monitoring/",
+        "checked_at": "2026-09-29T00:59:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring",
+        "content_type": "text/html",
+        "page_title": "Data quality monitoring | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "687f085b920d59c2897ead2d88e4e0a4cf00b8ed07fdc4d8cefd29ad9fa2048d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring",
+      "sha256": "7fa9d80ad6395fe0628ef896f6c42b0951b448b308e4b4c45c80a58c36bf65c0",
+      "text_characters": 3958
+    },
+    {
+      "id": "databricks-mlp-serving-monitor",
+      "url": "https://docs.databricks.com/aws/en/machine-learning/model-serving/monitor-diagnose-endpoints",
+      "checked_at": "2026-09-29T00:59:36.486896+00:00",
+      "health": {
+        "id": "databricks-mlp-serving-monitor",
+        "url": "https://docs.databricks.com/aws/en/machine-learning/model-serving/monitor-diagnose-endpoints",
+        "checked_at": "2026-09-29T00:59:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/machine-learning/model-serving/monitor-diagnose-endpoints",
+        "content_type": "text/html",
+        "page_title": "Monitor model quality and endpoint health | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/machine-learning/model-serving/monitor-diagnose-endpoints",
+        "duration_signals": [],
+        "signal_fingerprint": "91b1022d52e067e120a7503d512b8bca41db2e554d78ba37989c727540a3fce9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/machine-learning/model-serving/monitor-diagnose-endpoints",
+      "sha256": "5e9c932e165f69e22e4aaf1bf18bb873681d9841126bd54df91d20daa2ada5ba",
+      "text_characters": 4894
+    },
+    {
+      "id": "databricks-mlp-deployments-api",
+      "url": "https://mlflow.org/docs/latest/api_reference/python_api/mlflow.deployments.html",
+      "checked_at": "2026-09-29T00:59:36.538211+00:00",
+      "health": {
+        "id": "databricks-mlp-deployments-api",
+        "url": "https://mlflow.org/docs/latest/api_reference/python_api/mlflow.deployments.html",
+        "checked_at": "2026-09-29T00:59:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://mlflow.org/docs/latest/api_reference/python_api/mlflow.deployments.html",
+        "content_type": "text/html",
+        "page_title": "mlflow.deployments",
+        "canonical_url": "https://mlflow.org/docs/latest/python_api/mlflow.deployments.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e304ab14f1acff8f611551505a6fa7279c567540f865ab0b65c24419955d289c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://mlflow.org/docs/latest/api_reference/python_api/mlflow.deployments.html",
+      "sha256": "dece6dea042793a3aecaeac32082e4347f786710dc942b32f73e22fb44deac3a",
+      "text_characters": 32409
+    },
+    {
+      "id": "databricks-mlp-whizlabs",
+      "url": "https://www.whizlabs.com/databricks-certified-machine-learning-professional/",
+      "checked_at": "2026-09-29T00:59:36.659000+00:00",
+      "health": {
+        "id": "databricks-mlp-whizlabs",
+        "url": "https://www.whizlabs.com/databricks-certified-machine-learning-professional/",
+        "checked_at": "2026-09-29T00:59:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/databricks-certified-machine-learning-professional/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "https://www.whizlabs.com/databricks-certified-machine-learning-professional/",
+        "duration_signals": [],
+        "signal_fingerprint": "dee56e9fca8fb8ea5351fb4c612d332f528105d043a72b9474802d7fed1fc8a1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/databricks-certified-machine-learning-professional/",
+      "sha256": "b89d456228abbefcce018dad516528e850b77e5aa168a7ee2321146103e3f5ff",
+      "text_characters": 0
+    },
+    {
+      "id": "databricks-mlp-oreilly-search",
+      "url": "https://www.oreilly.com/search/?q=Databricks%20MLOps",
+      "checked_at": "2026-09-29T00:59:36.753635+00:00",
+      "health": {
+        "id": "databricks-mlp-oreilly-search",
+        "url": "https://www.oreilly.com/search/?q=Databricks%20MLOps",
+        "checked_at": "2026-09-29T00:59:36+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/search/?q=Databricks%20MLOps",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "databricks-native-online-feature-store",
+      "url": "https://docs.databricks.com/aws/en/machine-learning/feature-store/online-feature-store",
+      "checked_at": "2026-09-29T01:03:42.978705+00:00",
+      "health": {
+        "id": "databricks-native-online-feature-store",
+        "url": "https://docs.databricks.com/aws/en/machine-learning/feature-store/online-feature-store",
+        "checked_at": "2026-09-29T01:03:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/machine-learning/feature-store/online-feature-store",
+        "content_type": "text/html",
+        "page_title": "Databricks Online Feature Stores | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/machine-learning/feature-store/online-feature-store",
+        "duration_signals": [],
+        "signal_fingerprint": "a59890bf815c29073626d98dce7a5d3af585164088e74fd430d54b64af0831ac",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/machine-learning/feature-store/online-feature-store",
+      "sha256": "8e0b1551c304ce602c98ec9984bc1f63ed17c72a215aebf95d449802f416d6c3",
+      "text_characters": 18799
+    },
+    {
+      "id": "databricks-mlp-profile-overview",
+      "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/",
+      "checked_at": "2026-09-29T01:03:42.979293+00:00",
+      "health": {
+        "id": "databricks-mlp-profile-overview",
+        "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/",
+        "checked_at": "2026-09-29T01:03:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/",
+        "content_type": "text/html",
+        "page_title": "Data profiling | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/",
+        "duration_signals": [],
+        "signal_fingerprint": "d6952b920e5ee6326ab45b4099c494652d15121f955907a462810b1999ac1b67",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/",
+      "sha256": "88e36b36d140c95daf152aab9583bc232c0d76c42e21d64e93c88e3f626b662c",
+      "text_characters": 9335
+    },
+    {
+      "id": "databricks-mlp-profile-api",
+      "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/create-monitor-api",
+      "checked_at": "2026-09-29T01:03:42.979669+00:00",
+      "health": {
+        "id": "databricks-mlp-profile-api",
+        "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/create-monitor-api",
+        "checked_at": "2026-09-29T01:03:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/create-monitor-api",
+        "content_type": "text/html",
+        "page_title": "Create a data profile using the API | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/create-monitor-api",
+        "duration_signals": [],
+        "signal_fingerprint": "fe5509b2762e19af22b74d771ff92689f2ea5fc81e84f15bfccb528e2c66d512",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/create-monitor-api",
+      "sha256": "1b062655532e950634446faa635ff348033a8e23dbcb40bf8ce356be2f5ec50a",
+      "text_characters": 12701
+    },
+    {
+      "id": "databricks-mlp-profile-metrics",
+      "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/monitor-output",
+      "checked_at": "2026-09-29T01:03:43.398595+00:00",
+      "health": {
+        "id": "databricks-mlp-profile-metrics",
+        "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/monitor-output",
+        "checked_at": "2026-09-29T01:03:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/monitor-output",
+        "content_type": "text/html",
+        "page_title": "Data profiling metric tables | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/monitor-output",
+        "duration_signals": [],
+        "signal_fingerprint": "78093b7064110db44f9c1cc0f9f4bb33854928c3943ea905ddaaab8fe222fc3f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/monitor-output",
+      "sha256": "b569342139eac5b6b97c5dd9f2addbe4fe1bf64b36cedbd95ef2f9d4fe074ee6",
+      "text_characters": 21910
+    },
+    {
+      "id": "databricks-mlp-monitor-blog",
+      "url": "https://www.databricks.com/blog/data-quality-monitoring-scale-agentic-ai",
+      "checked_at": "2026-09-29T01:03:43.460438+00:00",
+      "health": {
+        "id": "databricks-mlp-monitor-blog",
+        "url": "https://www.databricks.com/blog/data-quality-monitoring-scale-agentic-ai",
+        "checked_at": "2026-09-29T01:03:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.databricks.com/blog/data-quality-monitoring-scale-agentic-ai",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Data Quality Monitoring at scale with Agentic AI",
+        "canonical_url": "https://www.databricks.com/blog/data-quality-monitoring-scale-agentic-ai",
+        "duration_signals": [],
+        "signal_fingerprint": "d2c6d8079fc7d1b9798d7740d109530a461c022b0016a6d47effa22411f5921c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.databricks.com/blog/data-quality-monitoring-scale-agentic-ai",
+      "sha256": "87ea1874ac8456ce73d6f609a96b8951e61205e570e7b70df62f7f1a11d72bd9",
+      "text_characters": 13654
+    },
+    {
+      "id": "mlflow-nested-tuning",
+      "url": "https://mlflow.org/docs/latest/ml/getting-started/hyperparameter-tuning/",
+      "checked_at": "2026-09-29T01:03:43.487302+00:00",
+      "health": {
+        "id": "mlflow-nested-tuning",
+        "url": "https://mlflow.org/docs/latest/ml/getting-started/hyperparameter-tuning/",
+        "checked_at": "2026-09-29T01:03:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://mlflow.org/docs/latest/ml/getting-started/hyperparameter-tuning/",
+        "content_type": "text/html",
+        "page_title": "MLflow — Open Source AI Platform for Agents, LLMs & Models",
+        "canonical_url": "https://mlflow.org/docs/latest/ml/getting-started/hyperparameter-tuning/",
+        "duration_signals": [],
+        "signal_fingerprint": "ea2a32e417f8d8194d39a7b1e54cbceb10f3e9008e742bb4962e9897c2a05759",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://mlflow.org/docs/latest/ml/getting-started/hyperparameter-tuning/",
+      "sha256": "b101f9834cec172e5fd11281b3b54833942518898060dd23adcf32b7a8bb40ed",
+      "text_characters": 6624
+    },
+    {
+      "id": "databricks-profile-sdk",
+      "url": "https://databricks-sdk-py.readthedocs.io/en/latest/workspace/dataquality/data_quality.html",
+      "checked_at": "2026-09-29T01:03:43.697860+00:00",
+      "health": {
+        "id": "databricks-profile-sdk",
+        "url": "https://databricks-sdk-py.readthedocs.io/en/latest/workspace/dataquality/data_quality.html",
+        "checked_at": "2026-09-29T01:03:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://databricks-sdk-py.readthedocs.io/en/latest/workspace/dataquality/data_quality.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "w.data_quality: DataQuality.v1 — Databricks SDK for Python beta documentation",
+        "canonical_url": "https://databricks-sdk-py.readthedocs.io/en/latest/workspace/dataquality/data_quality.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e1e4b1025c27b5b4fb0d3ef79fb3e39057edb954a0bb0a3f8e4bddd70da546a0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://databricks-sdk-py.readthedocs.io/en/latest/workspace/dataquality/data_quality.html",
+      "sha256": "96e41acdb22f4aca2ccaaab8da8aafe47019b4ce0c33d684e3d28009d740a6cf",
+      "text_characters": 13541
+    }
+  ],
+  "added_source_ids": [
+    "databricks-native-online-feature-store",
+    "databricks-mlp-profile-overview",
+    "databricks-mlp-profile-api",
+    "databricks-mlp-profile-metrics",
+    "databricks-mlp-monitor-blog",
+    "mlflow-nested-tuning",
+    "databricks-profile-sdk"
+  ],
+  "findings": [
+    {
+      "id": "databricksmachinelearningprofessional-deep-1",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Monitoring historical window wording remains ambiguous",
+      "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Overview says last 30 days, API says initial 30-day backfill then all new data, and metric reference says initial window. No service lab or official clarification settled old-event corrections or delayed labels.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "databricksmachinelearningprofessional-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Monitoring API and capability distinctions were too broad",
+      "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/create-monitor-api",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current data_quality API replaces deprecated quality_monitors; anomaly freshness/completeness differs from detailed profiling.",
+      "recommendation": "Add capability/API distinction, refresh completion and metric evidence.",
+      "disposition": "applied",
+      "source_id": "databricks-mlp-profile-api",
+      "resolution": "Add capability/API distinction, refresh completion and metric evidence."
+    },
+    {
+      "id": "databricksmachinelearningprofessional-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Online feature-store reference redirected to third-party topic",
+      "url": "https://docs.databricks.com/aws/en/machine-learning/feature-store/online-feature-store",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Plural URL now describes third-party stores; native feature stores use a distinct Lakebase-backed route.",
+      "recommendation": "Register current native reference and qualify older SDK online-table examples.",
+      "disposition": "applied",
+      "source_id": "databricks-native-online-feature-store",
+      "resolution": "Register current native reference and qualify older SDK online-table examples."
+    },
+    {
+      "id": "databricksmachinelearningprofessional-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Ray runtime/dependency restrictions lacked explicit treatment",
+      "url": "https://docs.databricks.com/aws/en/machine-learning/ray/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Ray-on-Spark cannot start on serverless-based runtimes and live pip installation can shut it down.",
+      "recommendation": "Explain integration/access-mode boundary and dependency setup sequence.",
+      "disposition": "applied",
+      "source_id": "databricks-mlp-ray",
+      "resolution": "Explain integration/access-mode boundary and dependency setup sequence."
+    },
+    {
+      "id": "databricksmachinelearningprofessional-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Old Optuna reference unavailable and run ownership lacked evidence",
+      "url": "https://mlflow.org/docs/latest/ml/getting-started/hyperparameter-tuning/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Old upstream URL blocked; current nested-run tutorial accessible.",
+      "recommendation": "Replace guide link; add explicit distributed run identity advice and serial local tracking test.",
+      "disposition": "applied",
+      "source_id": "mlflow-nested-tuning",
+      "resolution": "Replace guide link; add explicit distributed run identity advice and serial local tracking test."
+    },
+    {
+      "id": "databricksmachinelearningprofessional-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Custom-model guidance lacked executable input-contract exercise",
+      "url": "https://mlflow.org/docs/latest/ml/model/python_model/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Signatures do not express all business-value constraints.",
+      "recommendation": "Add original PyFunc, local reload/fresh-process and invalid-input checks.",
+      "disposition": "applied",
+      "source_id": "databricks-mlp-pyfunc",
+      "resolution": "Add original PyFunc, local reload/fresh-process and invalid-input checks."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "databricks-mlp-monitor-blog",
+      "authors": [
+        "Jacqueline Li",
+        "Danny Chiao",
+        "Saravanan Balasubramanian"
+      ],
+      "published_on": "2026-02-04",
+      "disposition": "accepted-with-limits",
+      "value": "Distinguish schema-level anomaly detection from table-level profiling and downstream-impact triage.",
+      "limits": "Product announcement corroborated by current documentation; no inferred expansion of exam scope or claim of automated model approval."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "service_labs_executed": 0,
+    "reasoning_cases": 4,
+    "local_validation": {
+      "python_version": "3.13.14",
+      "mlflow_version": "3.16.1",
+      "optuna_version": "5.0.0",
+      "numpy_version": "2.5.3",
+      "pandas_version": "3.0.6",
+      "assertions": 20,
+      "checks": [
+        "direct prediction",
+        "saved model round trip",
+        "empty batch",
+        "missing column",
+        "negative input",
+        "null input",
+        "infinite input",
+        "wrong type",
+        "fresh interpreter reload",
+        "four completed Optuna trials",
+        "child parent and completed metric",
+        "child parent and completed metric",
+        "child parent and completed metric",
+        "child parent and completed metric",
+        "selected minimum loss",
+        "parent artifact persisted",
+        "no active run left",
+        "canary error rates",
+        "label coverage",
+        "CPU-only concurrency upper bound"
+      ],
+      "python_blocks_executed": 1,
+      "optuna_trials": 4,
+      "mlflow_parent_runs": 1,
+      "mlflow_child_runs": 4,
+      "fresh_interpreter_model_reload": true,
+      "artifact_directory": ".maintenance/deep-databricks-machine-learning-professional-2026-09-28/local-mlflow-346e29ef",
+      "execution_boundary": "Local file model and SQLite MLflow store; serial Optuna on synthetic data. No listener, remote tracking, distributed workers or Databricks infrastructure."
+    }
+  },
+  "answered_checks": 10,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Overview describes last-30-days profiling, while API and metric docs describe initial 30-day backfill. Late events/historical corrections/delayed labels outside that boundary remain unverified.",
+    "Twenty local assertions cover PyFunc serialization and serial Optuna/MLflow only; no Spark, Ray, distributed workers, Databricks registry, online stores, profiling or serving deployment.",
+    "Academy/paid lessons not accessed; OReilly and old MLflow Optuna route blocked, Whizlabs empty. Alternative current upstream tuning guide read.",
+    "Live monitor covers three weighted domains; all 47 PDF leaf objectives separately read and mapped."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local file model and SQLite MLflow store; serial Optuna on synthetic data. No listener, remote tracking, distributed workers or Databricks infrastructure.",
+    "learning_catalog_consistency": "passed",
+    "python_version": "3.13.14",
+    "mlflow_version": "3.16.1",
+    "optuna_version": "5.0.0",
+    "numpy_version": "2.5.3",
+    "pandas_version": "3.0.6",
+    "assertions": 20,
+    "checks": [
+      "direct prediction",
+      "saved model round trip",
+      "empty batch",
+      "missing column",
+      "negative input",
+      "null input",
+      "infinite input",
+      "wrong type",
+      "fresh interpreter reload",
+      "four completed Optuna trials",
+      "child parent and completed metric",
+      "child parent and completed metric",
+      "child parent and completed metric",
+      "child parent and completed metric",
+      "selected minimum loss",
+      "parent artifact persisted",
+      "no active run left",
+      "canary error rates",
+      "label coverage",
+      "CPU-only concurrency upper bound"
+    ],
+    "python_blocks_executed": 1,
+    "optuna_trials": 4,
+    "mlflow_parent_runs": 1,
+    "mlflow_child_runs": 4,
+    "fresh_interpreter_model_reload": true,
+    "artifact_directory": ".maintenance/deep-databricks-machine-learning-professional-2026-09-28/local-mlflow-346e29ef"
+  },
+  "detailed_objective_pdf": {
+    "url": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-machine-learning-professional-exam-guide-september.pdf",
+    "sha256": "1f99b597a989a9d5e6d89c1b934ce090098d61cfba8d2bd5dfcda9b4b250487c",
+    "pages": 10,
+    "samples_reproduced": false,
+    "objective_count": 47,
+    "counting_note": "47 leaf bullets; unbulleted subsection headings excluded. Unicode ligatures normalized with NFKC."
+  }
+}

@@ -2424,6 +2424,26 @@ This is **not a complete list**, and it is not meant to be consumed in full. Cho
 
 The 2025 blueprint is still live but aged: explicitly gap-check current Unity Catalog model/feature APIs, Lakeflow naming, Hyperopt support and serving behavior. No exact current Pluralsight, O'Reilly, LinkedIn Learning or MeasureUp product was independently verified.
 
+### DATABRICKS-MACHINE-LEARNING-PROFESSIONAL — Databricks Certified Machine Learning Professional
+
+Resource details from the [DATABRICKS-MACHINE-LEARNING-PROFESSIONAL guide](../guides/DATABRICKS-MACHINE-LEARNING-PROFESSIONAL-databricks-machine-learning-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is **not a complete list**, and it is not meant to be consumed in full. Select the material that closes measured gaps and spend most effort building an observable, tested release system. Public resource availability was checked September 28, 2026. Durations are editorial planning estimates; signed-in Academy and paid lessons were not inspected. O'Reilly access was blocked, and Whizlabs returned an empty body.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official certification page and September 30, 2025 guide](https://www.databricks.com/learn/certification/machine-learning-professional) | Free | 2–3 hours to map objectives and inspect vendor sample format; do not redistribute questions |
+| [Databricks Academy](https://customer-academy.databricks.com/) — *Machine Learning at Scale* and *Advanced Machine Learning Operations* | Free account/customer or partner entitlement varies | 25–45 hours with labs; verify current catalog/runtime after sign-in |
+| [Databricks ML documentation](https://docs.databricks.com/aws/en/machine-learning/) | Free | 12–20 hours selected implementation across Spark/Ray/features/MLflow/monitoring/serving |
+| Authorized workspace plus the guide's eight labs | Organizational; some labs can start in Free Edition | 30–50 hours including failure, scale, monitoring and rollout experiments |
+| [MLflow documentation](https://mlflow.org/docs/latest/ml/) | Free | 6–12 hours selected nested-run, PyFunc and deployment practice |
+| [Databricks: Data Quality Monitoring at scale (February 4, 2026)](https://www.databricks.com/blog/data-quality-monitoring-scale-agentic-ai) | Free product article | About 30–50 minutes to read and draw separate freshness, drift, performance and alert paths; estimate includes the worksheet. Product context, checked against current profile/API documentation, not added exam scope. |
+| [Databricks YouTube](https://www.youtube.com/@Databricks) | Free | 4–8 hours selected recent MLOps, Ray, MLflow, feature and serving sessions |
+| [Whizlabs: Databricks Machine Learning Professional](https://www.whizlabs.com/databricks-certified-machine-learning-professional/) | Paid; training/practice product | Stable public totals were not exposed; budget 8–18 hours and verify September 2025 alignment |
+| [O'Reilly search: Databricks MLOps](https://www.oreilly.com/search/?q=Databricks%20MLOps) | Paid/trial | 8–20 hours selected current material; map chapters/events to the blueprint rather than assuming completeness |
+
+The blueprint is current but fast-moving interfaces require explicit checks for bundle names, monitoring terminology, Ray/Optuna integrations, online/on-demand features and serving traffic. No exact current Pluralsight, Udemy, LinkedIn Learning or MeasureUp product was independently verified.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

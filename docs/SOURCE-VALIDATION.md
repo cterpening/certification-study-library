@@ -876,6 +876,8 @@ The review maps every June 10, 2025 subobjective to an architecture/app/lifecycl
 
 ## Databricks Machine Learning Professional coverage record
 
+The September 28 [deep review](research/2026-09-28-databricks-machine-learning-professional-deep-review.md) maps 47 detailed objectives. Mapped 47 detailed objectives; repair online-store and Optuna references, distinguish profiling/anomaly/API generations, add drift metrics and Ray support boundaries, and execute local PyFunc/nested-Optuna checks. Monitoring 30-day wording remains unresolved with October 5 follow-up. Current guide citations: 22 registered, 21 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Model Development | Section 1, all integrated scenarios, and Labs 1–4 |
