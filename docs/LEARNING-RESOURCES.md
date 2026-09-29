@@ -3225,13 +3225,24 @@ Use practice assessments to find gaps, not to memorize items. Avoid any product 
 
 ### Linux Foundation Certified IT Associate (LFCA)
 
-- Official scope: [LFCA certification page](https://training.linuxfoundation.org/certification/certified-it-associate/) and [September 2025 change notice](https://training.linuxfoundation.org/lfca-program-changes-2025/) (**3–5 hours mapping/review**); use the current IT Project Management Fundamentals domain and note retired LFCA-JP
-- Official route: [LFS200 Fundamentals of Open Source IT and Cloud Computing](https://training.linuxfoundation.org/training/fundamentals-of-open-source-it-and-cloud-computing-lfs200/) (**10–15 listed hours plus 20–40 lab/review hours**)
-- Official free menu: [LFCA free resources](https://training.linuxfoundation.org/resources/lfca-free-resources/) and [sample curriculum path](https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCA.pdf) (**25–60 selected hours estimated**); choose gaps instead of consuming every course
-- Coherent video path: [Pluralsight LFCA](https://www.pluralsight.com/paths/linux-foundation-certified-it-associate-lfca) (**11 hours 47 minutes plus 20–40 lab/review hours**); updated August 2025, so close the September project/licensing wording explicitly
-- Deeper Linux route: [Coursera Learning Linux for LFCA](https://www.coursera.org/specializations/linux-for-lfca-certification/) (**35–70 hours estimated**); supplement cloud, security, DevOps and current project/licensing objectives
+Resource details from the [LFCA guide](../guides/LFCA-linux-foundation-certified-it-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Choose one primary route and build Linux, networking, Git and container evidence in disposable labs. No exact current O'Reilly, MeasureUp or Whizlabs LFCA route was independently verified. Reject recalled-question products and remap all pre-September-2025 material.
+This is not a complete list and is not meant to be consumed in full. Choose one primary route, add hands-on Linux/network/Git/container labs, and close the September 2025 project-management/licensing gap explicitly.
+
+| Resource | Access | Estimated time | Best use and boundary |
+|---|---|---:|---|
+| [Official LFCA page](https://training.linuxfoundation.org/certification/certified-it-associate/) and [2025 change notice](https://training.linuxfoundation.org/lfca-program-changes-2025/) | Public | 3–5 hours | Map the six weights, delivery and current IT-project domain |
+| [Official LFCA curriculum path](https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCA.pdf) | Public | 30–90 minutes | Choose among suggested free courses; the path estimates 3–6 months overall, not mandatory seat time |
+| [LFCA free resources](https://training.linuxfoundation.org/resources/lfca-free-resources/) | Free | 25–60 selected hours estimated | Linux, DevOps/SRE, cloud and open-source foundations; select gaps rather than taking all |
+| [Fundamentals of Open Source IT and Cloud Computing (LFS200)](https://training.linuxfoundation.org/training/fundamentals-of-open-source-it-and-cloud-computing-lfs200/) | Paid | 10–15 hours listed plus labs | Official course; public Chapter 11 still uses Supporting Applications and Developers, and its lab page lists Ubuntu 20.04; gap-check current scope and distribution support |
+| [Pluralsight LFCA path](https://www.pluralsight.com/paths/linux-foundation-certified-it-associate-lfca) | Paid | 11 hours 47 minutes listed plus labs | One A Cloud Guru course dated August 6, 2025; public outline still says Supporting Applications and Developers, so map the current project domain explicitly |
+| [Coursera Learning Linux for LFCA specialization](https://www.coursera.org/specializations/linux-for-lfca-certification/) | Paid/subscription | 59 hours summed from four listed courses | LearnQuest: 16/17/14/12-hour courses; landing estimate is four weeks at ten hours/week, so treat timing as approximate and map current project/licensing scope |
+
+**VERIFY CURRENT:** Public catalogs checked September 29, 2026; paid course interiors, assessments and labs were not accessed. Pluralsight rounds its one-course path to 12 hours; the course row lists 11h47. The curriculum PDF is a one-page suggested route with a 3–6 month estimate and explicitly says its courses are not required. Other study-hour ranges in this table are planning suggestions, not provider seat-time guarantees.
+
+[Canonical’s release table](https://ubuntu.com/about/release-cycle) lists Ubuntu 20.04’s standard security maintenance ending in May 2025, with separate extended coverage. A course’s old VM image is not evidence of current standard support. Select an appropriate supported training release and recheck command differences; this review did not install or upgrade a distribution.
+
+No exact current O’Reilly, MeasureUp or Whizlabs LFCA product was independently verified. Marketplace practice banks vary sharply in quality; use original explanation-led questions only, reject any claim of real/recalled items, and return to the official map for scope.
 
 ### Linux Foundation Certified System Administrator (LFCS)
 

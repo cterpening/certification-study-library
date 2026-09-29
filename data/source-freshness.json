@@ -4,6 +4,217 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-lfca-deep-review",
+      "title": "LFCA complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "LFCA"
+      ],
+      "results": [
+        {
+          "exam_code": "LFCA",
+          "vendor_id": "linux-foundation",
+          "guide_path": "guides/LFCA-linux-foundation-certified-it-associate.md",
+          "baseline_sha256": "00535fe0622d4d5d0fa7df8ef2303c1649218398319665289a599652151bc1a9",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Official LFCA page and 2025 notice retain the September 16, 2025 baseline, six weights 16/30/18/14/12/10 and 22 competencies in groups 2/5/5/3/3/4. No replacement announcement observed. Both monitor hashes unchanged. English confirmed by the language table; online proctored multiple-choice/90min/two-year validity/no prerequisite/one retake/12-month eligibility remain listed; MC FAQ lists 75% pass. No question count inferred."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Targeted primary Git add/diff/restore/ignore/merge, Bash maintainer reference, Linux unlink, Debian APT trust, systemctl activation, Docker kernel model, OSI definition, SPDX identifiers and 2020 Scrum accountabilities read. Two exact public scripts and a harness passed 35 native Git/MSYS/local arithmetic checks. No Linux permission/service/package runtime claim."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Canonical LFCA page and September 2025 change notice checked with no new announcement. Git documentation can describe a newer release than the tested 2.55.0.windows.5; only the executed stable commands are adopted. Canonical release table distinguishes Ubuntu 20.04 standard security maintenance ending May 2025 from separate extended coverage. The existing WSL/Linux runtime blocker remains deferred."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "LFS200 10–15h still lists an Ubuntu 20.04 lab and old Chapter 11 title. Pluralsight one A Cloud Guru course 11h47/August 6, 2025, path rounded12h and old final-domain title. Coursera LearnQuest four course rows16/17/14/12h sum59h versus landing4weeksat10h/week. One-page LF curriculum PDF says3–6months and courses not required; free resources inspected. Paid interiors and assessment questions unreviewed."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Correct broad package-signature claim to APT repository metadata/checksum trust. Clarify directory deletion permission, enable/start/health, three Git snapshots, ignore versus tracking/history, kernel boundary on non-Linux hosts, source visibility versus license rights, SPDX identity versus suitability and current Scrum accountabilities. Strengthen all eight lab acceptance/negative cases and 46 answered checks; Places to learn final."
+            }
+          },
+          "findings": [
+            {
+              "id": "lfca-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Staging is a snapshot rather than a live file link",
+              "url": "https://git-scm.com/docs/git-add",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "LFCA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The Git manual says add records content at the time of the command; later changes require another add.",
+              "recommendation": "Add and execute a three-snapshot exercise, cached/ordinary diffs and unstaging that preserves later working content.",
+              "disposition": "applied",
+              "source_id": "git-add",
+              "resolution": "Add and execute a three-snapshot exercise, cached/ordinary diffs and unstaging that preserves later working content."
+            },
+            {
+              "id": "lfca-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "An ignore rule does not remove tracking or history",
+              "url": "https://git-scm.com/docs/gitignore",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "LFCA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Git documents that tracked files are not affected by ignore patterns; removing a path from the index is distinct from deleting history.",
+              "recommendation": "Explain and locally test tracked/untracked synthetic logs, retained working bytes and prior commit content; no real secret used.",
+              "disposition": "applied",
+              "source_id": "git-ignore",
+              "resolution": "Explain and locally test tracked/untracked synthetic logs, retained working bytes and prior commit content; no real secret used."
+            },
+            {
+              "id": "lfca-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Conflict abort requires a suitable starting state",
+              "url": "https://git-scm.com/docs/git-merge",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "LFCA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Git warns that pre-existing uncommitted changes may not be fully reconstructible after an interrupted merge.",
+              "recommendation": "Use a clean synthetic repository, verify abort restores the main branch content, then resolve a second conflict against an explicit accepted requirement.",
+              "disposition": "applied",
+              "source_id": "git-merge",
+              "resolution": "Use a clean synthetic repository, verify abort restores the main branch content, then resolve a second conflict against an explicit accepted requirement."
+            },
+            {
+              "id": "lfca-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Package trust wording collapsed different signature mechanisms",
+              "url": "https://manpages.debian.org/trixie/apt/apt-secure.8.en.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "LFCA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "APT authenticates repository Release metadata and the package-checksum chain; it does not audit package code or verify each package-level signature.",
+              "recommendation": "Correct the package-management teaching and retain repository trust and behavior verification as separate evidence.",
+              "disposition": "applied",
+              "source_id": "debian-apt-secure-trixie",
+              "resolution": "Correct the package-management teaching and retain repository trust and behavior verification as separate evidence."
+            },
+            {
+              "id": "lfca-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Enabled, running and available are separate observations",
+              "url": "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "LFCA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The manual says enable does not imply start and disable does not imply stop, with --now available for runtime actions.",
+              "recommendation": "Add state/activation/readiness distinctions, socket/static/dependency qualifications and proposed Linux evidence checks.",
+              "disposition": "applied",
+              "source_id": "systemd-systemctl",
+              "resolution": "Add state/activation/readiness distinctions, socket/static/dependency qualifications and proposed Linux evidence checks."
+            },
+            {
+              "id": "lfca-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "File write permission alone does not decide deletion",
+              "url": "https://man7.org/linux/man-pages/man2/unlink.2.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "LFCA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Linux unlink documents parent write/search, traversal and sticky-directory restrictions.",
+              "recommendation": "Teach operation-specific directory versus file permission reasoning without claiming MSYS proves Linux access-control behavior.",
+              "disposition": "applied",
+              "source_id": "linux-unlink",
+              "resolution": "Teach operation-specific directory versus file permission reasoning without claiming MSYS proves Linux access-control behavior."
+            },
+            {
+              "id": "lfca-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "The shared-kernel statement needs a host-runtime boundary",
+              "url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "LFCA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Docker describes isolated processes sharing a kernel and containers running within VMs.",
+              "recommendation": "Clarify Linux containers on a non-Linux workstation may share the runtime VM kernel; no container was executed.",
+              "disposition": "applied",
+              "source_id": "docker-container-overview",
+              "resolution": "Clarify Linux containers on a non-Linux workstation may share the runtime VM kernel; no container was executed."
+            },
+            {
+              "id": "lfca-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Readable source alone does not establish open-source rights",
+              "url": "https://opensource.org/osd",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "LFCA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The OSD imposes redistribution, modification and use conditions beyond access to source.",
+              "recommendation": "Clarify license grant, obligations and component inventory; SPDX identification is not a compatibility opinion.",
+              "disposition": "applied",
+              "source_id": "osi-open-source-definition",
+              "resolution": "Clarify license grant, obligations and component inventory; SPDX identification is not a compatibility opinion."
+            }
+          ],
+          "notes": "Mapped all 22 public competencies and retained the unchanged September 2025 objective/lifecycle snapshots. Added exact Git and Bash examples with 35 executed local checks, strengthened permissions/repository authentication/service state, cloud/recovery/project cases, data-control evidence, 46 answers and eight proposed labs. Qualified older course outlines and conflicting duration estimates. Native Linux VM validation remains deferred. Same-context AI review; human review pending. See docs/research/2026-09-29-lfca-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 8,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-cv0004-deep-review",
       "title": "CV0-004 complete guide and learning-content review",
       "rubric_version": 1,

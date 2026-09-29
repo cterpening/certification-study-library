@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-29
 ---
 
 # LFCA Linux Foundation Certified IT Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#lfca-coverage-record). The [official LFCA page](https://training.linuxfoundation.org/certification/certified-it-associate/) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 29, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#lfca-coverage-record). The [official LFCA page](https://training.linuxfoundation.org/certification/certified-it-associate/) is authoritative.
 
 **Current baseline:** Six-domain objectives effective September 16, 2025<br>
 **Lifecycle watch:** No replacement or objective change is announced; the Japanese LFCA-JP offering retired with the 2025 update<br>
@@ -46,6 +46,19 @@ For each concept, explain its purpose, recognize a simple scenario, perform a sa
 | 5. DevOps fundamentals | 12% | Explain collaboration/automation, Git, CI/CD, containers and observable reliable change |
 | 6. IT project management fundamentals | 10% | Connect scope, requirements, architecture, delivery methods and open-source licensing to outcomes |
 
+**CURRENT BLUEPRINT:** The official page and September 2025 notice list **22 competencies**, grouped 2/5/5/3/3/4. They do not publish a detailed command-by-command syllabus. The examples below provide original teaching and practice; they are not additional official objectives.
+
+| Domain | Published competency coverage |
+|---|---|
+| Linux | Operating-system model; command line |
+| Administration | Administration; best practices; networking; troubleshooting; disaster recovery |
+| Cloud | Cloud concepts; performance/availability; budgeting; best practices; networking |
+| Security | Security; sensitive data; compliance |
+| DevOps | DevOps basics; Git concepts; containers |
+| IT projects | Project management; application architecture; functional analysis; open-source software/licensing |
+
+The [official language table](https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/language) confirms English for LFCA. The [multiple-choice FAQ](https://docs.linuxfoundation.org/tc-docs/certification/faq-mc) currently lists a 75% passing score and two-year validity. **VERIFY CURRENT:** recheck scheduling, eligibility, retake terms and delivery requirements before purchase; this guide does not supply recalled questions or infer a question count.
+
 ## 1. Linux fundamentals — 16%
 
 ### Operating system and distribution model
@@ -66,23 +79,73 @@ Linux records owner, group and other permission bits. Read/write/execute have di
 
 > **Related item:** A command that succeeds is not automatically persistent, secure or correct. Verify output, affected object, permissions and behavior after restart when relevant.
 
+### Original stream and exit-status exercise
+
+**PRACTICAL DEPTH:** Run the following Bash example in a new disposable directory with synthetic files only. Inspect `counts.txt`, `combined.txt` and `normal-only.txt`. The [Bash maintainer’s reference](https://tiswww.case.edu/php/chet/bash/bashref.html) explains left-to-right redirection and the pipeline-status rules demonstrated here. Quoting preserves the space in the input name; `uniq` counts adjacent duplicates, so sorting comes first.
+
+```bash
+#!/usr/bin/env bash
+set -u
+# Run in a new disposable directory; these are synthetic files.
+printf 'ok\nfail\nok\n' > 'sample events.txt'
+sort 'sample events.txt' | uniq -c > counts.txt
+emit() { printf 'normal\n'; printf 'diagnostic\n' >&2; }
+emit > combined.txt 2>&1     # both streams go to the file
+emit 2>&1 > normal-only.txt # diagnostic goes to the original stdout
+
+set +o pipefail
+false | cat
+printf 'default pipeline status=%s\n' "$?"
+set -o pipefail
+false | cat
+printf 'pipefail pipeline status=%s\n' "$?"
+
+if grep -q 'absent' 'sample events.txt'; then
+  printf 'matched\n'
+else
+  result=$?
+  printf 'grep result=%s (1 means no match; larger means error)\n' "$result"
+fi
+```
+
+Expected: one `fail` and two `ok` records; `combined.txt` contains both streams, while the second redirection leaves `diagnostic` on the original standard output. The failed first pipeline command is hidden by a successful final command under the default rule; `pipefail` exposes it. Save `$?` immediately because the next command replaces it. This script intentionally continues after the failed pipeline to display its result; do not assume `set -e` is a universal error-handling policy. Interpret exit codes for the specific command: a grep no-match result is different from a missing-input error.
+
+### Permissions and evidence before modification
+
+For a regular file, read permits reading its bytes, write changing them and execute requesting execution, subject to other controls. For a directory, read lists names, execute searches/traverses and write changes directory entries. Removing a file generally depends on write/search permission on its parent and path traversal, not the file’s write bit. [Linux unlink documentation](https://man7.org/linux/man-pages/man2/unlink.2.html) describes additional restrictions such as sticky directories; ACLs, read-only mounts and security policy can also matter. A mode such as 640 is not a complete effective-access test.
+
+Use `id`, `ls -ld`, `stat` and the relevant ACL tools in an authorized Linux lab before changing ownership or mode. An ordinary user may be able to modify one file but not rename it, or list a directory but not open its children. Predict the operation, test as the intended identity and record the error. The MSYS exercise above does not establish native Linux permission behavior.
+
 ## 2. System administration fundamentals — 30%
 
 ### Identities, software, services and storage
 
 Users have numeric UID, primary/supplementary groups, home and shell. Groups simplify shared authorization. Account tools manage creation, membership, password/expiry and removal; offboarding also addresses files, keys, scheduled jobs and service ownership. `sudo` delegates bounded privilege and should be audited; logging in as root for routine work expands risk.
 
-Package managers install signed packages from configured repositories, resolve dependencies and track updates/removal. APT/dpkg and DNF/RPM represent common families. Verify distribution/release, repository trust, architecture, configuration changes and whether a service restart or reboot is needed. Do not pipe an unreviewed Internet script into a privileged shell.
+Package managers obtain packages from configured repositories, resolve dependencies and track updates/removal. Authentication details differ by ecosystem: [APT authenticates repository metadata and its chain of package checksums](https://manpages.debian.org/trixie/apt/apt-secure.8.en.html), which is not the same as verifying a signature inside every downloaded package. Repository trust does not prove that a package is free of malicious code. APT/dpkg and DNF/RPM represent common families. Verify distribution/release, repository trust, architecture, configuration changes and whether a service restart or reboot is needed. Do not pipe an unreviewed Internet script into a privileged shell.
 
 Service managers start, stop, restart, reload, enable and inspect units. “Active” means a process/unit state, not necessarily that users can reach a healthy application. Check configuration, logs, listening socket, identity/permissions, firewall and a real request. Schedule recurring work with cron or timers while defining identity, environment, working directory, output and failure handling.
 
 Disks contain partitions or logical volumes; filesystems organize data; mounts attach a filesystem to the tree. Use capacity tools to distinguish block space from inode/file-count exhaustion. Backups are copies retained for recovery; snapshots and RAID can support operations but are not automatically independent backups. Protect and periodically restore-test data plus configuration, keys and documentation.
 
+### Service state and a beginner troubleshooting record
+
+On systemd systems, [systemctl’s manual](https://www.freedesktop.org/software/systemd/man/latest/systemctl.html) distinguishes starting a unit now from enabling its configured activation links. `enable` alone does not start it, and `disable` alone does not stop it. `--now` combines the corresponding runtime action. A static, socket-activated or dependency-started unit may work without being enabled in the usual way. Do not edit a real host merely to reproduce this distinction.
+
+| Observation in an authorized Linux lab | What it helps establish | What it does not establish |
+|---|---|---|
+| `systemctl is-active` / `is-enabled` for the chosen unit | Runtime versus configured activation state | End-user availability or every activation path |
+| `journalctl -u` for the chosen unit | Recorded service events and errors | Complete application or remote-client evidence |
+| `ss -lnt` | Local listening TCP sockets | Firewall allowance, correct TLS identity or successful request |
+| `df -h` and `df -i` | Block and inode capacity | Why space is consumed or application consistency |
+
+An original incident record should include expected behavior, actual response, timestamp, recent change, one hypothesis, one discriminating test, planned repair/rollback and the final acceptance result. For example, a healthy local request but a failed remote request narrows the path; it does not automatically identify the firewall as the cause.
+
 ### Networking
 
 A host needs an address and prefix, route/default gateway and usually DNS resolver. IPv4 uses dotted decimal; a subnet/prefix divides network and host portions. MAC addresses identify local link interfaces; ARP/neighbor discovery resolves local delivery. Switches forward within a network, routers move between networks, firewalls filter traffic, and NAT translates addresses/ports.
 
-DNS maps names to records; DHCP supplies address configuration; NTP synchronizes time. Common application protocols include HTTP/HTTPS, SSH, SMTP, DNS and DHCP; use secure alternatives and current documentation rather than memorizing a port without purpose. Diagnose from link/interface → address/prefix → route → DNS → firewall → listening service → application and return path. Compare a name with a direct address to isolate DNS.
+DNS maps names to records; DHCP supplies address configuration; NTP synchronizes time. Common application protocols include HTTP/HTTPS, SSH, SMTP, DNS and DHCP; use secure alternatives and current documentation rather than memorizing a port without purpose. Diagnose from link/interface → address/prefix → route → DNS → firewall → listening service → application and return path. Compare resolver evidence and name/address requests to isolate DNS while preserving the intended HTTPS host name, SNI and certificate verification; a raw-IP HTTPS failure alone does not prove application failure.
 
 ### Monitoring, troubleshooting and recovery
 
@@ -93,6 +156,12 @@ Troubleshoot by defining expected/actual behavior, scope, time, impact and recen
 Disaster recovery begins with business priorities, RTO (target restoration time) and RPO (tolerated data-loss window). Recovery needs protected copies, access, dependencies, capacity and rehearsed runbooks. Business continuity keeps critical outcomes operating; high availability reduces interruption; neither replaces backup.
 
 > **Related item:** Incident recovery restores service; problem management finds recurring cause; change management controls the repair and its risk.
+
+### Original recovery and measurement cases
+
+A service fails at 12:05; the newest recoverable data is from 11:55 and usable recovery finishes at 12:50. The ten-minute data-loss window meets a 15-minute RPO, but 45 minutes of restoration misses a 30-minute RTO. Validate application behavior and keys/permissions after the copy completes. These are invented timestamps, not a performed Linux restore.
+
+Three failed requests among 120 attempted requests give a 2.5% observed error fraction. Record the time window, caller mix and denominator; a small synthetic sample does not establish long-term availability. Monitoring an average can hide a slow tail or a failed minority.
 
 ## 3. Cloud computing fundamentals — 18%
 
@@ -106,6 +175,19 @@ Cloud virtual networks still use addresses, subnets, routes, DNS, firewalls/secu
 
 > **Related item:** “Managed” moves tasks to a provider; it does not remove architecture, configuration, security, data or recovery decisions.
 
+### Original cloud decision and budget cases
+
+| Requirement | Compare | Evidence to collect |
+|---|---|---|
+| Control an unusual guest operating system | IaaS versus a managed application platform | Supported OS, patch owner, licensing and recovery responsibilities |
+| Survive one zone loss while serving four capacity units | Three zones with two units each | Four units remain in the simple model; test actual placement, health and dependency behavior |
+| Preserve uploaded files when an app instance is recreated | External data service/volume versus instance-local writes | Restore/recreation test, identity, consistency and retention |
+| Bound costs | Resource quantities, usage duration and transfer | An estimate plus accountable usage review; alerts alone do not establish a spending cap |
+
+With invented rates, three VMs for 100 hours at $0.05/hour, 80 GB storage at $0.10 for the period and 20 GB transfer at $0.20/GB total **$27**. This is arithmetic practice, not a vendor quotation; requests, licenses, backups, taxes and support are omitted. Consider the whole workload and remaining failure capacity before choosing the cheapest component.
+
+[Docker’s container overview](https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/) describes isolated processes sharing a kernel. On a non-Linux workstation, Linux containers may run inside a Linux VM supplied by the runtime; they do not directly share the Windows or macOS kernel. A container image is not a backup of an application’s external data. No container or VM was launched in this review.
+
 ## 4. Security fundamentals — 14%
 
 Confidentiality limits disclosure, integrity prevents/detects unauthorized change, and availability keeps authorized use possible. Risk connects asset value, threat, vulnerability, likelihood and impact. Controls may be preventive, detective, corrective, deterrent, compensating or recovery-oriented and may be administrative, technical or physical. Defense in depth uses independent layers.
@@ -117,6 +199,19 @@ Harden by using supported software, timely patches, minimal services, safe confi
 Classify sensitive data, collect the minimum, restrict access, encrypt appropriately, define retention and dispose safely. Compliance begins by identifying applicable law, contract, policy or framework, then mapping requirements to controls, evidence, tests and accountable owners. Privacy concerns appropriate collection/use and individual rights according to jurisdiction. Escalate legal interpretation.
 
 Incident response prepares, detects/analyzes, contains, eradicates, recovers and learns. Preserve relevant logs and timestamps; do not destroy evidence to make a symptom disappear.
+
+### Original data and control evidence matrix
+
+For a fictional appointment system, collect only a synthetic name and requested time in practice; keep access logs separate from application records. Define who may read, edit, export and administer each dataset, plus retention, backup and deletion owners. A successful authorized request and a denied unauthorized request test different sides of the control.
+
+| Proposed control | Useful evidence | Remaining question |
+|---|---|---|
+| MFA for administrators | Enforced policy and a tested sign-in path | Do recovery accounts or exceptions bypass it? |
+| Encryption for backups | Key access policy and a successful isolated restore | Can an attacker delete both data and recovery keys? |
+| Retention for logs | Applied settings and an expiry test with synthetic records | Are exports and backups governed too? |
+| Patch management | Inventory, version and post-update behavior | Are unsupported components or failed deployments missing? |
+
+These are original control-design examples, not an assertion of compliance with any law or standard. A hash comparison only proves agreement with the chosen reference; if both file and reference were replaced, it does not establish trusted origin. Password storage requires a suitable salted password-hashing scheme, not an ordinary fast file hash.
 
 ## 5. DevOps fundamentals — 12%
 
@@ -130,17 +225,98 @@ Monitoring supplies metrics/logs/events; feedback connects production behavior t
 
 > **Related item:** DevOps is a socio-technical operating model. A tool purchase cannot replace ownership, communication or safe change practice.
 
+### Git snapshots and original conflict-recovery exercise
+
+[Git add](https://git-scm.com/docs/git-add) captures the selected content at that moment. A later edit stays outside the staged snapshot until staged again. [Git diff](https://git-scm.com/docs/git-diff) normally compares working files with staging; `--cached` compares staging with HEAD. [Restore with `--staged`](https://git-scm.com/docs/git-restore) normally resets only staging from HEAD, preserving later working-file edits. Restoring the working tree can discard changes, so inspect the intended target first.
+
+Save the following outside a new empty practice directory, enter that directory and run the script with Bash. It makes synthetic local commits with a fictional identity, disables signing/hooks only in that disposable repository and configures no remote. It refuses a nonempty directory. Review each step and keep the repository until you have inspected both parents of the merge.
+
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+# Run only in a NEW, empty, disposable directory. No remote is used.
+if [ -n "$(ls -A)" ]; then
+  printf 'Choose an empty practice directory.\n' >&2
+  exit 2
+fi
+git init --template= --initial-branch=main .
+git config --local user.name 'Practice Learner'
+git config --local user.email 'practice@example.invalid'
+git config --local commit.gpgsign false
+git config --local core.autocrlf false
+mkdir .git/empty-hooks
+git config --local core.hooksPath .git/empty-hooks
+
+printf 'timeout=10\n' > settings.txt
+git add -- settings.txt
+git commit -m 'Record starting configuration'
+printf 'timeout=20\n' > settings.txt
+git add -- settings.txt
+printf 'timeout=30\n' > settings.txt
+git diff --cached -- settings.txt  # HEAD -> staging: 10 -> 20
+git diff -- settings.txt           # staging -> working tree: 20 -> 30
+git restore --staged -- settings.txt
+git diff -- settings.txt           # working copy is still 30
+git add -- settings.txt
+git commit -m 'Review timeout 30'
+
+git switch -c experiment
+printf 'timeout=40\n' > settings.txt
+git add -- settings.txt
+git commit -m 'Try timeout 40'
+git switch main
+printf 'timeout=20\n' > settings.txt
+git add -- settings.txt
+git commit -m 'Try timeout 20'
+if git merge --no-edit experiment; then
+  printf 'Expected a conflict in this fixture.\n' >&2
+  exit 3
+fi
+git status --short
+git merge --abort
+git status --short             # clean; main still contains timeout=20
+test "$(cat settings.txt)" = 'timeout=20'
+test -z "$(git status --porcelain)"
+if git merge --no-edit experiment; then
+  printf 'Expected a conflict in this fixture.\n' >&2
+  exit 3
+fi
+# The fictional acceptance requirement is now an agreed timeout of 30.
+printf 'timeout=30\n' > settings.txt
+test "$(cat settings.txt)" = 'timeout=30'
+git add -- settings.txt
+git commit -m 'Resolve with agreed timeout 30'
+git log --oneline --graph --all
+git status --short             # clean; no push occurs
+```
+
+The first conflict is aborted; the second is resolved against a newly agreed fictional requirement of 30. That decision is visible and tested, rather than blindly selecting one branch. This tiny content assertion does not test a running application. [Git merge](https://git-scm.com/docs/git-merge) warns that abort may not reconstruct pre-existing uncommitted changes reliably, so begin a real merge from a reviewed clean state.
+
+[Ignore patterns](https://git-scm.com/docs/gitignore) affect untracked files. Adding a tracked file to `.gitignore` does not stop tracking it or remove old commits. `git rm --cached` removes the selected path from staging while preserving its working copy; it does not erase history. For real exposed credentials, revoke/rotate and investigate use before following an approved cleanup process. Only synthetic logs were used to test this behavior.
+
+**Executed September 29, 2026:** both exact public scripts and a harness passed **35 checks**, using Git 2.55.0.windows.5, MSYS Bash 5.3.15 and Python 3.13.14. Checks covered three Git snapshots, staging/unstaging, two merge conflicts with abort/resolution, ignored versus tracked files, retained history, quoted paths, stream order, pipeline/grep statuses and original planning arithmetic. All owned temporary files and repositories were cleaned. No remote, credential, network service, global Git configuration, Linux VM, account, package, firewall, container or cloud was changed. Full Linux administration labs remain proposed; the native Linux runtime blocker is deferred.
+
 ## 6. IT project management fundamentals — 10%
 
 A project has a defined outcome, stakeholders, scope, constraints, plan, risks, dependencies, resources and acceptance criteria. Initiation clarifies value and sponsor; planning defines work/schedule/budget/risk; execution produces deliverables; monitoring controls variance/change; closure obtains acceptance and captures lessons. Operations are ongoing; a project is temporary.
 
-Waterfall-style work sequences phases and suits stable requirements; iterative/incremental approaches deliver and learn in smaller steps; Agile values collaboration and response to change. Scrum commonly uses product backlog, sprint, product owner, Scrum Master and team; Kanban visualizes flow and work-in-progress. Methods are tools, not guarantees.
+Waterfall-style work sequences phases and suits stable requirements; iterative/incremental approaches deliver and learn in smaller steps; Agile values collaboration and response to change. The [2020 Scrum Guide](https://scrumguides.org/scrum-guide.html) defines a Scrum Team with Developers, a Product Owner and a Scrum Master. The Product Owner is accountable for value and backlog management, Developers for the plan and a usable increment, and the Scrum Master for establishing Scrum and helping team effectiveness. Kanban visualizes flow and work-in-progress. Methods are tools, not guarantees.
 
 Functional requirements describe behavior; non-functional requirements describe qualities such as availability, performance, security, usability and maintainability. Functional analysis identifies actors, workflows, inputs/outputs, rules, exceptions and acceptance. Trace a requirement to design, implementation, test and outcome. Uncontrolled scope change affects schedule, cost, risk and quality.
 
 Application architecture may be monolithic or service-oriented/microservice, layered, client-server, event-driven or serverless. Compare coupling, deployment, data consistency, operational complexity and failure modes. APIs define contracts between components; synchronous communication couples response time/availability, while asynchronous queues decouple at the cost of ordering/retry/observability complexity.
 
-Open source makes source available under a license; it does not mean no copyright, no obligations or zero cost. Permissive and copyleft licenses impose different conditions. Track components, notices, source/attribution/distribution obligations and security maintenance; obtain qualified legal guidance for license decisions. Communities use governance, contribution processes and codes of conduct.
+The [Open Source Definition](https://opensource.org/osd) requires more than readable source: distribution terms must also meet conditions concerning redistribution, modification and permitted use. A public repository without a suitable license does not automatically grant those rights. Open source does not mean no copyright, no obligations or zero cost. Permissive and copyleft licenses impose different conditions. Track components, notices, source/attribution/distribution obligations and security maintenance; obtain qualified legal guidance for license decisions. Communities use governance, contribution processes and codes of conduct.
+
+### Original functional-analysis and project worksheet
+
+For a fictional equipment-booking app, a functional requirement is “an authorized user can reserve an available item.” Derive cases for available/unavailable items, overlapping requests, unauthorized users and cancelled reservations. A non-functional requirement might set an explicitly measured response-time threshold under a defined load; “fast and secure” alone is not testable. Trace each requirement to its owner, design decision, test result and acceptance decision.
+
+Start with the least complex architecture that meets the evidence. A single application can simplify deployment and transactions; separate services may support independent change but introduce network, identity, data-consistency and recovery boundaries. An asynchronous notification can avoid holding up a reservation, but duplicates and retries need a design. The architecture label alone establishes neither quality nor scalability.
+
+An invented plan has two days of discovery, then four days of implementation and three days of documentation in parallel, followed by one day of acceptance after both finish. With independent resources and no other delays, elapsed time is **seven days**, not ten. A shared person, review delay or rework changes the calculation. Record dependencies, ownership, assumptions and change impact instead of summing parallel work blindly.
+
+For each reused component, record exact version/source, license text, modifications, notices, distribution context, security owner and unresolved questions. The [SPDX License List](https://spdx.org/licenses/) supplies standardized identifiers and texts; an identifier is not permission to omit an obligation or a compatibility opinion. Keep legal interpretation with the appropriate reviewer. Licensing detail here supports the public competency; it is not a promise that a particular license combination is suitable.
 
 ## Integrated scenarios
 
@@ -158,14 +334,16 @@ Report the incident, revoke/rotate the token, inspect audit/repository/pipeline 
 
 ## Hands-on labs
 
-1. **Linux tour:** install a disposable Ubuntu or Fedora-family VM; identify kernel/distribution, filesystem purposes, users/groups, processes, packages, services and logs.
-2. **Command-line evidence:** create a lab tree; navigate, search, filter, redirect, archive, set permissions/ownership and use help; preview and safely remove only the lab path.
-3. **Administration:** create a user/group, install a trusted package, configure a simple service, inspect logs/socket, schedule a health check, restart and confirm persistence; clean up.
-4. **Network break/fix:** record address/route/DNS/listeners, serve a test page privately, introduce one safe DNS/firewall/service fault at a time and troubleshoot through the layer sequence.
-5. **Backup/recovery:** archive sample data and configuration, record checksum/permissions, delete the working copy in the lab, restore to a new location and validate integrity and elapsed time.
-6. **Cloud comparison:** diagram one small workload as local VM, IaaS VM, managed platform and container; map responsibility, failure domains, networking, security, backup and cost drivers.
-7. **Git/container delivery:** version a small static app, branch/change/merge it, build or run a non-root container with external configuration and a volume, inspect logs and recreate it.
-8. **Project capstone:** write users, functional/non-functional requirements, risks, milestones, acceptance tests, architecture, open-source inventory and incident/recovery plan for the sample application.
+All eight complete labs remain proposed. The executed Git/MSYS exercises above cover narrower command behavior; native Linux administration and container/cloud execution remain unverified. Use an authorized disposable Linux environment, synthetic data and a recorded cleanup inventory.
+
+1. **Linux tour:** identify kernel, distribution, shell, current identity and filesystem purposes on a disposable VM. Compare a normal process with a managed service. Success: explain observed output and separate runtime state from configuration; retain the VM inventory and remove only owned practice resources.
+2. **Command-line evidence:** run the stream exercise, then create a Linux lab tree and predict quoting, matching, redirects and permission results. Test allowed and denied operations as the intended identity. Success: distinguish no-match, command error and success, plus file permissions versus parent-directory deletion rights; preview every cleanup target.
+3. **Administration:** create a practice user/group, install one trusted package and configure a local service. Compare active/enabled states and verify behavior after a controlled VM restart. Success: record package trust, dependencies, logs and an actual request; remove the test account/package/service without touching other workloads.
+4. **Network break/fix:** record addresses, prefix, route, resolver and listening sockets. Introduce one reversible DNS, firewall or listener fault in the sandbox. Success: isolate it with a discriminating test, preserve HTTPS identity checks and restore the baseline; no scanning unrelated networks.
+5. **Backup/recovery:** protect synthetic files and configuration, restore to a separate location and test changed/missing data, permissions and necessary keys. Success: report achieved RPO/RTO with defined timestamps and usable application criteria; a completed archive command alone is insufficient.
+6. **Cloud comparison:** map the same workload to local VM, IaaS and managed-platform options. Record service responsibilities, network/identity flows, failure capacity, recovery and invented cost assumptions. Success: explain one condition under which each option fails the requirement; create billable resources only in an authorized bounded sandbox.
+7. **Git/container delivery:** run the exact Git exercise, inspect all three snapshots and both merge parents, then demonstrate a synthetic ignored-versus-tracked file. In a separate approved container lab, recreate an app and verify external data/configuration. Success: prove the reviewed artifact and negative access case, and distinguish source history from backup; no real secrets or external repository push is needed.
+8. **Project capstone:** define actors, functional/non-functional requirements, dependencies, acceptance tests, risk owners and a component/license inventory. Compare two architectures and calculate a schedule with parallel tasks. Success: trace every accepted requirement to evidence, record unresolved tradeoffs and obtain a fictional stakeholder acceptance decision rather than declaring success from task completion alone.
 
 ## Original knowledge checks
 
@@ -210,6 +388,13 @@ Report the incident, revoke/rotate the token, inspect audit/repository/pipeline 
 39. When does asynchronous architecture help, and what complexity follows?
 40. Why does open source still require license review?
 
+41. A file is staged at value 20 and then edited to 30. Which version will a normal commit record, and what does unstaging preserve?
+42. Why can the two redirection orders in the stream example produce different destinations for standard error?
+43. Does enabling a systemd service guarantee it is running and serving users?
+44. Why does adding a tracked file to an ignore rule fail to remove it from history?
+45. What is wrong with treating readable source and an SPDX identifier as proof of unrestricted use?
+46. How long is the example project with two days of discovery, parallel four/three-day tasks and one day of acceptance, and what assumption could change it?
+
 ## Answers and reasoning
 
 1. Kernel manages hardware/resources; distribution packages kernel/userland/policy; shell interprets; terminal presents the session.
@@ -253,9 +438,25 @@ Report the incident, revoke/rotate the token, inspect audit/repository/pipeline 
 39. It decouples availability/rate but adds queues, duplicates, ordering, retry, dead-letter and observability needs.
 40. Copyright and license obligations still apply to use, modification and distribution; track components and obtain legal guidance.
 
+41. It records the staged value 20 unless staged again. Restoring only staging from HEAD preserves the working-file value 30; inspect the correct diff before committing.
+42. Redirections are processed left to right. Copying standard output into standard error before changing standard output preserves the earlier destination.
+43. No. Activation configuration, current state and application readiness are distinct. Enable alone does not start; socket/dependency activation and static units add other paths.
+44. Ignore rules primarily govern untracked paths; existing tracking and historical commits persist. Untracking a path does not erase history or contain credential exposure.
+45. Source visibility alone is not an open-source license grant, and an identifier identifies terms rather than deciding obligations or compatibility. Review the actual license and use/distribution context.
+46. Seven days if the two tasks can run independently after discovery. Shared staffing, approvals, rework or additional dependencies can extend the critical path.
+
 ## September 2025 baseline checklist
 
 Do not use an older LFCA route without remapping it. The current six domain names remain familiar, but the September 16, 2025 baseline replaces “Supporting Applications and Developers” with **IT Project Management Fundamentals** and explicitly lists project management, application architecture, functional analysis, and open-source software/licensing. LFCA-JP is retired. Verify all six weights and current delivery on the official page.
+
+## Source and freshness notes
+
+- Scope, delivery, prerequisite, validity and exam duration: [official LFCA page](https://training.linuxfoundation.org/certification/certified-it-associate/), checked September 29, 2026.
+- Current effective baseline and retired Japanese version: [official September 2025 change notice](https://training.linuxfoundation.org/lfca-program-changes-2025/).
+- Course hours and third-party metadata were checked September 29, 2026; access, price, paths and content change.
+- Distribution commands, package names, cloud services, security guidance, project practices and license interpretation are verification boundaries. Bash’s GNU-hosted manual timed out during this review; the maintainer-hosted reference and installed runtime supplied the targeted shell evidence.
+- Objective snapshot SHA-256: `fd4278c4b59fa86cc2c014f67f60263670b72193b2f83354fa3712b0f97a77cf`.
+- This guide uses public scope and independently written labs/checks. It does not reproduce proprietary questions or course content.
 
 ## Places to learn
 
@@ -266,17 +467,12 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 | [Official LFCA page](https://training.linuxfoundation.org/certification/certified-it-associate/) and [2025 change notice](https://training.linuxfoundation.org/lfca-program-changes-2025/) | Public | 3–5 hours | Map the six weights, delivery and current IT-project domain |
 | [Official LFCA curriculum path](https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCA.pdf) | Public | 30–90 minutes | Choose among suggested free courses; the path estimates 3–6 months overall, not mandatory seat time |
 | [LFCA free resources](https://training.linuxfoundation.org/resources/lfca-free-resources/) | Free | 25–60 selected hours estimated | Linux, DevOps/SRE, cloud and open-source foundations; select gaps rather than taking all |
-| [Fundamentals of Open Source IT and Cloud Computing (LFS200)](https://training.linuxfoundation.org/training/fundamentals-of-open-source-it-and-cloud-computing-lfs200/) | Paid | 10–15 hours listed plus labs | Official aligned course; use a current distribution rather than its Ubuntu 20.04 lab example alone |
-| [Pluralsight LFCA path](https://www.pluralsight.com/paths/linux-foundation-certified-it-associate-lfca) | Paid | 11 hours 47 minutes listed plus labs | Coherent six-part course updated August 2025; gap-check the September project-management domain wording |
-| [Coursera Learning Linux for LFCA specialization](https://www.coursera.org/specializations/linux-for-lfca-certification/) | Paid/subscription | 35–70 hours estimated | Deeper Linux practice; supplement cloud, security, DevOps and current project/licensing scope |
+| [Fundamentals of Open Source IT and Cloud Computing (LFS200)](https://training.linuxfoundation.org/training/fundamentals-of-open-source-it-and-cloud-computing-lfs200/) | Paid | 10–15 hours listed plus labs | Official course; public Chapter 11 still uses Supporting Applications and Developers, and its lab page lists Ubuntu 20.04; gap-check current scope and distribution support |
+| [Pluralsight LFCA path](https://www.pluralsight.com/paths/linux-foundation-certified-it-associate-lfca) | Paid | 11 hours 47 minutes listed plus labs | One A Cloud Guru course dated August 6, 2025; public outline still says Supporting Applications and Developers, so map the current project domain explicitly |
+| [Coursera Learning Linux for LFCA specialization](https://www.coursera.org/specializations/linux-for-lfca-certification/) | Paid/subscription | 59 hours summed from four listed courses | LearnQuest: 16/17/14/12-hour courses; landing estimate is four weeks at ten hours/week, so treat timing as approximate and map current project/licensing scope |
+
+**VERIFY CURRENT:** Public catalogs checked September 29, 2026; paid course interiors, assessments and labs were not accessed. Pluralsight rounds its one-course path to 12 hours; the course row lists 11h47. The curriculum PDF is a one-page suggested route with a 3–6 month estimate and explicitly says its courses are not required. Other study-hour ranges in this table are planning suggestions, not provider seat-time guarantees.
+
+[Canonical’s release table](https://ubuntu.com/about/release-cycle) lists Ubuntu 20.04’s standard security maintenance ending in May 2025, with separate extended coverage. A course’s old VM image is not evidence of current standard support. Select an appropriate supported training release and recheck command differences; this review did not install or upgrade a distribution.
 
 No exact current O’Reilly, MeasureUp or Whizlabs LFCA product was independently verified. Marketplace practice banks vary sharply in quality; use original explanation-led questions only, reject any claim of real/recalled items, and return to the official map for scope.
-
-## Source and freshness notes
-
-- Scope, delivery, prerequisite, validity and exam duration: [official LFCA page](https://training.linuxfoundation.org/certification/certified-it-associate/), checked September 1, 2026.
-- Current effective baseline and retired Japanese version: [official September 2025 change notice](https://training.linuxfoundation.org/lfca-program-changes-2025/).
-- Course hours and third-party metadata were checked September 1, 2026; access, price, paths and content change.
-- Distribution commands, package names, cloud services, security guidance, project practices and license interpretation are verification boundaries.
-- Objective snapshot SHA-256: `fd4278c4b59fa86cc2c014f67f60263670b72193b2f83354fa3712b0f97a77cf`.
-- This guide uses public scope and independently written labs/checks. It does not reproduce proprietary questions or course content.

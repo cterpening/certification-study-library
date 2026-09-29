@@ -1329,6 +1329,8 @@ The review maps every public V4 domain into a requirement → service/control se
 
 ## LFCA coverage record
 
+The September 29 [deep review](research/2026-09-29-lfca-deep-review.md) maps 22 detailed objectives. Mapped all 22 public competencies and retained the unchanged September 2025 objective/lifecycle snapshots. Added exact Git and Bash examples with 35 executed local checks, strengthened permissions/repository authentication/service state, cloud/recovery/project cases, data-control evidence, 46 answers and eight proposed labs. Qualified older course outlines and conflicting duration estimates. Native Linux VM validation remains deferred. Current guide citations: 23 registered, 23 reachable, 0 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 1, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: September 16, 2025 six-domain map—Linux Fundamentals (16%), System Administration Fundamentals (30%), Cloud Computing Fundamentals (18%), Security Fundamentals (14%), DevOps Fundamentals (12%), and IT Project Management Fundamentals (10%)

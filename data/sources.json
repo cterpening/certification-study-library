@@ -3,6 +3,216 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "git-add",
+      "title": "Git add and index snapshots",
+      "url": "https://git-scm.com/docs/git-add",
+      "publisher": "Git project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCA deep review: Targeted time-of-add snapshot semantics, explicit path staging and re-add behavior read and executed. See docs/research/2026-09-29-lfca-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "git-diff",
+      "title": "Git diff comparisons",
+      "url": "https://git-scm.com/docs/git-diff",
+      "publisher": "Git project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCA deep review: Targeted working tree/index versus cached HEAD/index comparisons read and executed; no newly documented 2.56-only feature adopted. See docs/research/2026-09-29-lfca-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "git-merge",
+      "title": "Git merge and conflict recovery",
+      "url": "https://git-scm.com/docs/git-merge",
+      "publisher": "Git project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCA deep review: Targeted conflict state, abort and pre-existing working-change caveat read; two local synthetic conflicts with abort and resolution executed. See docs/research/2026-09-29-lfca-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "git-restore",
+      "title": "Git restore working tree and index",
+      "url": "https://git-scm.com/docs/git-restore",
+      "publisher": "Git project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCA deep review: Targeted source/destination defaults and staged-only behavior read and executed; no unrelated worktree discarded. See docs/research/2026-09-29-lfca-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "git-ignore",
+      "title": "Git ignore patterns and tracked files",
+      "url": "https://git-scm.com/docs/gitignore",
+      "publisher": "Git project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCA deep review: Targeted untracked versus tracked behavior and rm --cached boundary read; synthetic logs demonstrate working file and history remain. See docs/research/2026-09-29-lfca-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "docker-container-overview",
+      "title": "Docker container basics",
+      "url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/",
+      "publisher": "Docker",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCA deep review: Introductory isolated process/shared kernel and VM combination read; GUI tutorial and actual containers not executed. See docs/research/2026-09-29-lfca-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "osi-open-source-definition",
+      "title": "OSI Open Source Definition",
+      "url": "https://opensource.org/osd",
+      "publisher": "Open Source Initiative",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCA deep review: All ten definition conditions read; used only for source availability versus licensing-rights distinction, not legal compatibility advice. See docs/research/2026-09-29-lfca-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "spdx-license-list",
+      "title": "SPDX License List",
+      "url": "https://spdx.org/licenses/",
+      "publisher": "SPDX",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCA deep review: Introduction, identifier/text purpose and version3.29.0 datedSeptember16,2026 inspected; no full license-list/legal compatibility audit. See docs/research/2026-09-29-lfca-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "scrum-guide-2020",
+      "title": "Scrum Guide 2020",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "publisher": "Scrum Guides",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCA deep review: 2020 HTML guide, targeted Scrum Team, Developer/Product Owner/Scrum Master accountabilities and usable Increment passages read; no claim that framework terminology expands LFCA scope. See docs/research/2026-09-29-lfca-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ubuntu-release-cycle",
+      "title": "Ubuntu release cycle",
+      "url": "https://ubuntu.com/about/release-cycle",
+      "publisher": "Canonical",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCA deep review: Targeted Ubuntu20.04 row confirms standard maintenance May2025 and separate extended coverage; no distribution installed/upgraded. See docs/research/2026-09-29-lfca-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "lf-certification-language",
+      "title": "Linux Foundation exam language availability",
+      "url": "https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/language",
+      "publisher": "Linux Foundation",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCA deep review: LFCA row confirms English and no Japanese exam listing; other-exam language policy not generalized. See docs/research/2026-09-29-lfca-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "lf-multiple-choice-faq",
+      "title": "Linux Foundation multiple-choice exam FAQ",
+      "url": "https://docs.linuxfoundation.org/tc-docs/certification/faq-mc",
+      "publisher": "Linux Foundation",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCA deep review: Targeted duration, passing score, validity and language-pointer sections read; no proctoring software or account action. See docs/research/2026-09-29-lfca-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "bash-maintainer-reference",
+      "title": "GNU Bash reference from its maintainer",
+      "url": "https://tiswww.case.edu/php/chet/bash/bashref.html",
+      "publisher": "GNU Bash maintainer",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCA deep review: Targeted quoting/word splitting, left-to-right redirection and pipeline/pipefail status sections read from the GNU Bash maintainer site; exact local synthetic stream script executed. See docs/research/2026-09-29-lfca-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "linux-unlink",
+      "title": "Linux unlink permissions and errors",
+      "url": "https://man7.org/linux/man-pages/man2/unlink.2.html",
+      "publisher": "Linux man-pages project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCA deep review: Targeted EACCES/EPERM/EROFS and sticky-directory semantics read from Linux man-pages; no native permission mutation executed. See docs/research/2026-09-29-lfca-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "debian-apt-secure-trixie",
+      "title": "Debian APT repository authentication",
+      "url": "https://manpages.debian.org/trixie/apt/apt-secure.8.en.html",
+      "publisher": "Debian",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCA deep review: Debian Trixie apt-secure3.0.3 manual, targeted repository authentication chain and malicious-code/individual-package-signature limitations read; no package installed. See docs/research/2026-09-29-lfca-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "comptia-cv0-004-objectives-pdf",
       "title": "CompTIA Cloud+ public objectives document 5.0",
       "url": "https://lecbyo.files.cmp.optimizely.com/download/1caf96e2bef111efba33a6b3d2c966cf?checkExpiry=false",
@@ -277,10 +487,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "XK0-006"
+        "XK0-006",
+        "LFCA"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 XK0-006 deep review: Targeted unit state, enable/disable/mask, reload/restart/daemon-reload discussion; online latest is systemd 262, not a local Linux version claim. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+      "notes": "September 29 XK0-006 deep review: Targeted unit state, enable/disable/mask, reload/restart/daemon-reload discussion; online latest is systemd 262, not a local Linux version claim. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution. September 29 LFCA deep review: Targeted enable/disable versus start/stop, --now and activation distinctions read; commands remain proposed for a native Linux sandbox. See docs/research/2026-09-29-lfca-deep-review.md No live infrastructure execution."
     },
     {
       "id": "systemd-timer",
@@ -41132,7 +41343,18 @@
       "id":"lf-lfca-free-resources","title":"LFCA free resources","url":"https://training.linuxfoundation.org/resources/lfca-free-resources/","publisher":"Linux Foundation","authority_class":2,"source_type":"official-training","access_model":"public","last_checked":"2026-09-01","supported_exams":["LFCA"],"notes":"Official menu of free Linux, DevOps/SRE, cloud and open-source courses plus candidate resources; select by objective gap."
     },
     {
-      "id":"lf-lfca-curriculum-path","title":"LFCA sample curriculum path","url":"https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCA.pdf","publisher":"Linux Foundation","authority_class":2,"source_type":"official-training","access_model":"public","last_checked":"2026-09-01","supported_exams":["LFCA"],"notes":"One-page optional path of free courses plus LFS200; its three-to-six-month estimate depends on prior experience and is not mandatory seat time."
+      "id": "lf-lfca-curriculum-path",
+      "title": "LFCA sample curriculum path",
+      "url": "https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCA.pdf",
+      "publisher": "Linux Foundation",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "LFCA"
+      ],
+      "notes": "One-page optional path of free courses plus LFS200; its three-to-six-month estimate depends on prior experience and is not mandatory seat time. September 29 LFCA deep review: Actual one-page PDF fetched, SHA/page count retained and all curriculum text read; suggested3–6months and no mandatory-course requirement. Earlier generic decoded-PDF text replaced with real PDF extraction. See docs/research/2026-09-29-lfca-deep-review.md No live infrastructure execution."
     },
     {
       "id":"lf-lfca-pluralsight","title":"Linux Foundation Certified IT Associate LFCA path","url":"https://www.pluralsight.com/paths/linux-foundation-certified-it-associate-lfca","publisher":"Pluralsight / A Cloud Guru","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["LFCA"],"notes":"Eleven hours 47 minutes and six sections listed, updated August 2025; remap its Supporting Applications section to the September 2025 project-management/licensing baseline."

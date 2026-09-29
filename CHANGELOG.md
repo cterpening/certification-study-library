@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [LFCA deep review](docs/research/2026-09-29-lfca-deep-review.md): 22 competencies mapped; original Git/Bash exercises passed 35 checks; package trust, service state, permissions and project/licensing teaching strengthened; 46 answers and eight proposed labs; native Linux blocker deferred.
+
 - September 29, 2026: [CV0-004 deep review](docs/research/2026-09-29-cv0-004-deep-review.md): 33 numbered objectives mapped; experience, community/AI/IoT and state/retry boundaries strengthened; original Terraform/SQLite examples passed 61 local checks; 46 answers and eight proposed labs expanded.
 
 - September 29, 2026: [XK0-006 deep review](docs/research/2026-09-29-xk0-006-deep-review.md): 29 numbered objectives mapped; umask/ACL, current tools and orchestration/monitoring teaching improved; 44 local MSYS/Python checks passed; native Linux runtime blocker deferred and baseline history retained.

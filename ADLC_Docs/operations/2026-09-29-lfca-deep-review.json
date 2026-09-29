@@ -1,0 +1,1347 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "LFCA",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/LFCA-linux-foundation-certified-it-associate.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "4bf2b6b67b6445a704ffd631b4e5834d8f29938a1f75a61095d5d568a55a0e70",
+  "guide_after_sha256": "152a822e1f63ba5d67cb75d7c9a45962512ea04285152abf8d125dc4b5faaa2f",
+  "prior_records": {
+    "exam": {
+      "code": "LFCA",
+      "level": "beginner",
+      "vendor_id": "linux-foundation",
+      "title": "Linux Foundation Certified IT Associate",
+      "status": "active",
+      "study_guide_url": "https://training.linuxfoundation.org/certification/certified-it-associate/",
+      "guide_path": "guides/LFCA-linux-foundation-certified-it-associate.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisites. Build beginner hands-on evidence across Linux and the command line; users, software, services, storage, networking, troubleshooting and recovery; cloud models, performance, availability and cost; identity, systems, networks, sensitive data and compliance; DevOps, Git and containers; plus project management, application architecture, functional analysis and open-source licensing."
+    },
+    "review": {
+      "id": "lfca-2026-09-01-source-validation",
+      "exam_code": "LFCA",
+      "guide_path": "guides/LFCA-linux-foundation-certified-it-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/lfca-official-objectives.txt",
+      "blueprint_snapshot_sha256": "fd4278c4b59fa86cc2c014f67f60263670b72193b2f83354fa3712b0f97a77cf",
+      "objective_coverage": [
+        {
+          "objective_group": "Linux Fundamentals (16%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios 1 and 3",
+            "Labs 1–3 and 7"
+          ]
+        },
+        {
+          "objective_group": "System Administration Fundamentals (30%)",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 1–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Cloud Computing Fundamentals (18%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenario 2",
+            "Labs 4, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security Fundamentals (14%)",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 3–8"
+          ]
+        },
+        {
+          "objective_group": "DevOps Fundamentals (12%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios 1 and 3",
+            "Labs 3, 7–8"
+          ]
+        },
+        {
+          "objective_group": "IT Project Management Fundamentals (10%)",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenario 2",
+            "Labs 6–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 7,
+        "reachable": 7,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All six September 2025 weighted domains are connected through three beginner scenarios, eight safe labs and 40 original checks. The retired LFCA-JP and pre-update Supporting Applications/Developers wording are explicit. All seven guide URLs are cataloged and reachable in the dated run. No proprietary questions or course content are used."
+    },
+    "sources": [
+      {
+        "id": "lf-lfca-blueprint",
+        "title": "Linux Foundation Certified IT Associate",
+        "url": "https://training.linuxfoundation.org/certification/certified-it-associate/",
+        "publisher": "Linux Foundation",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "LFCA"
+        ],
+        "notes": "Canonical current six-domain weighted page; online remotely proctored multiple-choice, 90 minutes, no prerequisite, two-year certification validity, one retake and 12-month eligibility listed."
+      },
+      {
+        "id": "lf-lfca-2025-change",
+        "title": "LFCA program changes effective September 16, 2025",
+        "url": "https://training.linuxfoundation.org/lfca-program-changes-2025/",
+        "publisher": "Linux Foundation",
+        "authority_class": 1,
+        "source_type": "lifecycle-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "LFCA"
+        ],
+        "notes": "Official effective-date and competency baseline; confirms LFCA-JP retirement and current IT Project Management Fundamentals domain."
+      },
+      {
+        "id": "lf-lfca-lfs200",
+        "title": "Fundamentals of Open Source IT and Cloud Computing (LFS200)",
+        "url": "https://training.linuxfoundation.org/training/fundamentals-of-open-source-it-and-cloud-computing-lfs200/",
+        "publisher": "Linux Foundation",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "LFCA"
+        ],
+        "notes": "Official aligned beginner course with 10–15 hours listed, quizzes and VM lab guidance; verify current distribution examples."
+      },
+      {
+        "id": "lf-lfca-free-resources",
+        "title": "LFCA free resources",
+        "url": "https://training.linuxfoundation.org/resources/lfca-free-resources/",
+        "publisher": "Linux Foundation",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "LFCA"
+        ],
+        "notes": "Official menu of free Linux, DevOps/SRE, cloud and open-source courses plus candidate resources; select by objective gap."
+      },
+      {
+        "id": "lf-lfca-curriculum-path",
+        "title": "LFCA sample curriculum path",
+        "url": "https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCA.pdf",
+        "publisher": "Linux Foundation",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "LFCA"
+        ],
+        "notes": "One-page optional path of free courses plus LFS200; its three-to-six-month estimate depends on prior experience and is not mandatory seat time."
+      },
+      {
+        "id": "lf-lfca-pluralsight",
+        "title": "Linux Foundation Certified IT Associate LFCA path",
+        "url": "https://www.pluralsight.com/paths/linux-foundation-certified-it-associate-lfca",
+        "publisher": "Pluralsight / A Cloud Guru",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "LFCA"
+        ],
+        "notes": "Eleven hours 47 minutes and six sections listed, updated August 2025; remap its Supporting Applications section to the September 2025 project-management/licensing baseline."
+      },
+      {
+        "id": "lf-lfca-coursera",
+        "title": "Learning Linux for LFCA Certification specialization",
+        "url": "https://www.coursera.org/specializations/linux-for-lfca-certification/",
+        "publisher": "Coursera / LearnQuest",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "LFCA"
+        ],
+        "notes": "Deeper Linux-focused specialization; useful for hands-on foundation but not represented as complete current cloud/security/DevOps/project coverage."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "75ec08fe2a7b2bea8a2ebdce81ccf54452c710605bd536ca541b4fb7cd89425a",
+      "guide_sections": [
+        "1. Linux fundamentals — 16%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "f303414c309f356955f059cfe7d5e23fbdfe0a6abf150e48b41930989c0ff478",
+      "guide_sections": [
+        "1. Linux fundamentals — 16%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "4b42c6690ebeb867e96784025c16e1b109cf5b688cadce26dd9355a22cc3ad7d",
+      "guide_sections": [
+        "2. System administration fundamentals — 30%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "84f1c65d5992f2ac0eb81945c5dbd4fefd4eb085f12b9beddb1cd9faa9e14fe8",
+      "guide_sections": [
+        "2. System administration fundamentals — 30%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "204de4b6d5a34560d2e3e6b15bfb2f3df0152de7d7b74474ac9a866b74dd70d1",
+      "guide_sections": [
+        "2. System administration fundamentals — 30%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "c3af076f92c5ed8dcb0d0b0d36dd120bc31b68264efea96cf8019ca19f1c13a3",
+      "guide_sections": [
+        "2. System administration fundamentals — 30%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "9617e302aaf1e683e2ca601a3ff5bbca8838399cedbbe2a49592adfa8eaf25fe",
+      "guide_sections": [
+        "2. System administration fundamentals — 30%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "47649fbc2b563b2dbad2938dec66d3bca78506516012612e02cc3286d56360b2",
+      "guide_sections": [
+        "3. Cloud computing fundamentals — 18%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "7a33867d2da6f5a994b998f638a1f0e37810bd6336f95ad7e55a7cf5705e2647",
+      "guide_sections": [
+        "3. Cloud computing fundamentals — 18%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "ecd245ab446165848bfd909d326f1f2dc92b1c8c8eeb836b063e93b8716b08b6",
+      "guide_sections": [
+        "3. Cloud computing fundamentals — 18%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "71acc2e58e97204c6cd6cb694dae5829500395f1a029438a8e6d0ef20a8997b4",
+      "guide_sections": [
+        "3. Cloud computing fundamentals — 18%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "0f51d89a49510c8389bff99ed9ae7acc568d032a6f1124a0cd9970070c131da2",
+      "guide_sections": [
+        "3. Cloud computing fundamentals — 18%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "3f54eb37d65f7dc437de0a1dbfc381c00efff95fc30b0f269f44d792b15e20fc",
+      "guide_sections": [
+        "4. Security fundamentals — 14%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "474de7276ecc120b83bc42291a96a36c648a0f6428bf7c88bfdccf32bfbb4339",
+      "guide_sections": [
+        "4. Security fundamentals — 14%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "4a109cc49467be33772416ac924cc5729dcea700b8b4a0ba12f10bc595e2fa2c",
+      "guide_sections": [
+        "4. Security fundamentals — 14%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "6e8614df5cdde54c9fc930d695c4c8e52888b5645f47384c9eb9b85f7fbdb164",
+      "guide_sections": [
+        "5. DevOps fundamentals — 12%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "fe991414bb242d10c270c352380e42139b5f7ffbb01052a14fa3980e1194ad15",
+      "guide_sections": [
+        "5. DevOps fundamentals — 12%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "a22daa7f02a26cc2335378ad77101373ff0dae12da4a75801d20b4e7219d4612",
+      "guide_sections": [
+        "5. DevOps fundamentals — 12%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "329b3c4622ceca563324d35b682171e5a4c8fc30a405532ef21a01605fc2d6d8",
+      "guide_sections": [
+        "6. IT project management fundamentals — 10%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "5b27a1aeeca906c1016713867bb81ace01e23ff0fdb4f0b437d6c35243454fd5",
+      "guide_sections": [
+        "6. IT project management fundamentals — 10%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "9f1801d2a6e1a52c546e45eb896dcf3959187dd64f43d1ca362bd297ff758d9d",
+      "guide_sections": [
+        "6. IT project management fundamentals — 10%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "bcd8025daca94804a3d8733f09f1cc193578d2b8f4abfc78cc5209dc0e39732c",
+      "guide_sections": [
+        "6. IT project management fundamentals — 10%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "LFCA",
+        "title": "Linux Foundation Certified IT Associate",
+        "url": "https://training.linuxfoundation.org/certification/certified-it-associate/",
+        "guide_path": "guides/LFCA-linux-foundation-certified-it-associate.md",
+        "snapshot_path": "data\\objective-snapshots\\lfca-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\lfca-official-status.json",
+        "previous_sha256": "fd4278c4b59fa86cc2c014f67f60263670b72193b2f83354fa3712b0f97a77cf",
+        "current_sha256": "fd4278c4b59fa86cc2c014f67f60263670b72193b2f83354fa3712b0f97a77cf",
+        "previous_status_sha256": "f1b02ae13b1b33677c3e526dbc24decea8dafe160ca7baf4e1b41c40f4e9d434",
+        "current_status_sha256": "f1b02ae13b1b33677c3e526dbc24decea8dafe160ca7baf4e1b41c40f4e9d434",
+        "official_status": {
+          "skills_versions": [
+            "This exam is an online, proctored, multiple-choice exam.",
+            "Certification Valid for 2 Years",
+            "Duration of Exam 90 minutes"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 23,
+    "reachable": 23,
+    "access_blocked": 0,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "lf-lfca-blueprint",
+      "url": "https://training.linuxfoundation.org/certification/certified-it-associate/",
+      "checked_at": "2026-09-29T05:10:31.888087+00:00",
+      "health": {
+        "id": "lf-lfca-blueprint",
+        "url": "https://training.linuxfoundation.org/certification/certified-it-associate/",
+        "checked_at": "2026-09-29T05:10:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://training.linuxfoundation.org/certification/certified-it-associate/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Linux Foundation Certified IT Associate (LFCA) | Linux Foundation Education",
+        "canonical_url": "https://training.linuxfoundation.org/certification/certified-it-associate/",
+        "duration_signals": [
+          "90 minutes"
+        ],
+        "signal_fingerprint": "b778fee53632edc30fce223e1a7a994d55110b3257883ebca12ec049b5489bf9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://training.linuxfoundation.org/certification/certified-it-associate/",
+      "sha256": "e365135bdfc575f902670b158befd770ade078b2e06e5cefdb44524dd5793058",
+      "text_characters": 8574
+    },
+    {
+      "id": "lf-lfca-2025-change",
+      "url": "https://training.linuxfoundation.org/lfca-program-changes-2025/",
+      "checked_at": "2026-09-29T05:10:31.888691+00:00",
+      "health": {
+        "id": "lf-lfca-2025-change",
+        "url": "https://training.linuxfoundation.org/lfca-program-changes-2025/",
+        "checked_at": "2026-09-29T05:10:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://training.linuxfoundation.org/lfca-program-changes-2025/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "LFCA Upcoming Changes 2025",
+        "canonical_url": "https://training.linuxfoundation.org/lfca-program-changes-2025/",
+        "duration_signals": [],
+        "signal_fingerprint": "4c703fc22b56021ffa11481a12fd3471b4f81c2553f90908d1ded5ff9e21c182",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://training.linuxfoundation.org/lfca-program-changes-2025/",
+      "sha256": "cc5c7172d3197a6899d74687817c94dd797093a843f8fa2e13419f47e2237b10",
+      "text_characters": 5845
+    },
+    {
+      "id": "lf-lfca-lfs200",
+      "url": "https://training.linuxfoundation.org/training/fundamentals-of-open-source-it-and-cloud-computing-lfs200/",
+      "checked_at": "2026-09-29T05:10:31.889207+00:00",
+      "health": {
+        "id": "lf-lfca-lfs200",
+        "url": "https://training.linuxfoundation.org/training/fundamentals-of-open-source-it-and-cloud-computing-lfs200/",
+        "checked_at": "2026-09-29T05:10:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://training.linuxfoundation.org/training/fundamentals-of-open-source-it-and-cloud-computing-lfs200/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Fundamentals of Open Source IT and Cloud Computing (LFS200) | Linux Foundation Education",
+        "canonical_url": "https://training.linuxfoundation.org/training/fundamentals-of-open-source-it-and-cloud-computing-lfs200/",
+        "duration_signals": [
+          "15 Hours"
+        ],
+        "signal_fingerprint": "fc709e49c44ef96675a4e78adea0cf8adb7e96ccf854dea01a768868e63433b5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://training.linuxfoundation.org/training/fundamentals-of-open-source-it-and-cloud-computing-lfs200/",
+      "sha256": "4f107a1fa72513af80d8e43f88393175642b6b226b11a7c7fbd34009c774a645",
+      "text_characters": 11697
+    },
+    {
+      "id": "lf-lfca-free-resources",
+      "url": "https://training.linuxfoundation.org/resources/lfca-free-resources/",
+      "checked_at": "2026-09-29T05:10:36.984478+00:00",
+      "health": {
+        "id": "lf-lfca-free-resources",
+        "url": "https://training.linuxfoundation.org/resources/lfca-free-resources/",
+        "checked_at": "2026-09-29T05:10:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://training.linuxfoundation.org/resources/lfca-free-resources/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "LFCA Free Resources",
+        "canonical_url": "https://training.linuxfoundation.org/resources/lfca-free-resources/",
+        "duration_signals": [],
+        "signal_fingerprint": "d072e0a18b24192e4200475ab35572f3c6a5f4c84d2e082da26b70a4c16404a4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://training.linuxfoundation.org/resources/lfca-free-resources/",
+      "sha256": "5e97e9fab266323b199f91a1552fbafaf2376aa978515c6b6c780b8f1caf17f2",
+      "text_characters": 6552
+    },
+    {
+      "id": "lf-lfca-curriculum-path",
+      "url": "https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCA.pdf",
+      "checked_at": "2026-09-29T05:17:58.419339+00:00",
+      "health": {
+        "id": "lf-lfca-curriculum-path",
+        "url": "https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCA.pdf",
+        "checked_at": "2026-09-29T05:17:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCA.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCA.pdf",
+      "sha256": "7927cdfc224cdeb81c261ad2d6853ed164c3fe7ba64b49c6178c2cdd04d926a5",
+      "bytes": 325891,
+      "pdf_pages": 1,
+      "text_characters": 1585
+    },
+    {
+      "id": "lf-lfca-pluralsight",
+      "url": "https://www.pluralsight.com/paths/linux-foundation-certified-it-associate-lfca",
+      "checked_at": "2026-09-29T05:10:37.198354+00:00",
+      "health": {
+        "id": "lf-lfca-pluralsight",
+        "url": "https://www.pluralsight.com/paths/linux-foundation-certified-it-associate-lfca",
+        "checked_at": "2026-09-29T05:10:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/linux-foundation-certified-it-associate-lfca",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Linux Foundation Certified IT Associate (LFCA)",
+        "canonical_url": "https://www.pluralsight.com/paths/linux-foundation-certified-it-associate-lfca",
+        "duration_signals": [
+          "12 Hours"
+        ],
+        "signal_fingerprint": "6252f13718ab0ad7629cc3e8ceedbdfa3679e0fdb5919f1502bcf2c1dcd7f00d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/linux-foundation-certified-it-associate-lfca",
+      "sha256": "11c855b7194cf1b3ffdf907444b28a024576cd205820f941dcfc743ab4a9cf6c",
+      "text_characters": 1590
+    },
+    {
+      "id": "lf-lfca-coursera",
+      "url": "https://www.coursera.org/specializations/linux-for-lfca-certification/",
+      "checked_at": "2026-09-29T05:10:39.062587+00:00",
+      "health": {
+        "id": "lf-lfca-coursera",
+        "url": "https://www.coursera.org/specializations/linux-for-lfca-certification/",
+        "checked_at": "2026-09-29T05:10:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.coursera.org/specializations/linux-for-lfca-certification/",
+        "content_type": "text/html",
+        "page_title": "Learning Linux for LFCA Certification",
+        "canonical_url": "https://www.coursera.org/specializations/linux-for-lfca-certification",
+        "duration_signals": [
+          "10 hours",
+          "12 hours",
+          "14 hours",
+          "16 hours",
+          "17 hours",
+          "5 hours",
+          "P1M"
+        ],
+        "signal_fingerprint": "71b576b34cb73a4fc8838b780d1e6dd7dcb98bd4031ccb33eae4974d3d890951",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.coursera.org/specializations/linux-for-lfca-certification/",
+      "sha256": "6963f218cce3d4011a6f22ed3a07cf55816e1c85cc20c3623b862f321a7c4394",
+      "text_characters": 12900
+    },
+    {
+      "id": "git-add",
+      "url": "https://git-scm.com/docs/git-add",
+      "checked_at": "2026-09-29T05:16:59.825145+00:00",
+      "health": {
+        "id": "git-add",
+        "url": "https://git-scm.com/docs/git-add",
+        "checked_at": "2026-09-29T05:16:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://git-scm.com/docs/git-add",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Git - git-add Documentation",
+        "canonical_url": "https://git-scm.com/docs/git-add",
+        "duration_signals": [],
+        "signal_fingerprint": "fe1d2cd6d28a98bcefb6102d9a2b9f2d85c6b952e09301f3dc49f46ea04eab97",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://git-scm.com/docs/git-add",
+      "sha256": "8f3397c765edcea7278fd5b8a955efc10842cb6ad389133d8e514da4917f8a05",
+      "text_characters": 18810
+    },
+    {
+      "id": "git-diff",
+      "url": "https://git-scm.com/docs/git-diff",
+      "checked_at": "2026-09-29T05:16:59.825865+00:00",
+      "health": {
+        "id": "git-diff",
+        "url": "https://git-scm.com/docs/git-diff",
+        "checked_at": "2026-09-29T05:16:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://git-scm.com/docs/git-diff",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Git - git-diff Documentation",
+        "canonical_url": "https://git-scm.com/docs/git-diff",
+        "duration_signals": [],
+        "signal_fingerprint": "fbca00668c1a784594d35aef42f6c9cba71de9bcd1f7072149ea406c72975407",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://git-scm.com/docs/git-diff",
+      "sha256": "19f159f8f47b50bdcea78abe730aad156f8960df7ef5c8c0db5ed2c7318fec3b",
+      "text_characters": 61023
+    },
+    {
+      "id": "git-merge",
+      "url": "https://git-scm.com/docs/git-merge",
+      "checked_at": "2026-09-29T05:16:59.826331+00:00",
+      "health": {
+        "id": "git-merge",
+        "url": "https://git-scm.com/docs/git-merge",
+        "checked_at": "2026-09-29T05:16:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://git-scm.com/docs/git-merge",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Git - git-merge Documentation",
+        "canonical_url": "https://git-scm.com/docs/git-merge",
+        "duration_signals": [],
+        "signal_fingerprint": "fe3671b87f59b7f55863a195d6bdcefb32e3a34effaaa641d4d2dfb5fc5a7abf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://git-scm.com/docs/git-merge",
+      "sha256": "401beeedb37c95f7ac7a83906a9624f2cc625fb661876a6037af30b620ec8b8a",
+      "text_characters": 37181
+    },
+    {
+      "id": "git-restore",
+      "url": "https://git-scm.com/docs/git-restore",
+      "checked_at": "2026-09-29T05:17:00.467647+00:00",
+      "health": {
+        "id": "git-restore",
+        "url": "https://git-scm.com/docs/git-restore",
+        "checked_at": "2026-09-29T05:17:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://git-scm.com/docs/git-restore",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Git - git-restore Documentation",
+        "canonical_url": "https://git-scm.com/docs/git-restore",
+        "duration_signals": [],
+        "signal_fingerprint": "6dccdc91f557b74dc634c1a4bcc3501971266d7e4651680c301c88e4a3494767",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://git-scm.com/docs/git-restore",
+      "sha256": "c0088403b6a75bcf367813e30015a3dd358219b8b8b5f6158bdbfe4e2a9bfb2d",
+      "text_characters": 8981
+    },
+    {
+      "id": "git-ignore",
+      "url": "https://git-scm.com/docs/gitignore",
+      "checked_at": "2026-09-29T05:17:00.572310+00:00",
+      "health": {
+        "id": "git-ignore",
+        "url": "https://git-scm.com/docs/gitignore",
+        "checked_at": "2026-09-29T05:17:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://git-scm.com/docs/gitignore",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Git - gitignore Documentation",
+        "canonical_url": "https://git-scm.com/docs/gitignore",
+        "duration_signals": [],
+        "signal_fingerprint": "26ca2fa09154fdf16108197c0df2d71a4f3df74829ed02bad29ea881a2141f6e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://git-scm.com/docs/gitignore",
+      "sha256": "515ebd69188c722c7ece0cb8c100b0be9b777e49f2450f804319d42acd999862",
+      "text_characters": 10822
+    },
+    {
+      "id": "gnu-bash-manual",
+      "url": "https://www.gnu.org/software/bash/manual/bash.html",
+      "checked_at": "2026-09-29T05:17:00.727000+00:00",
+      "health": {
+        "id": "gnu-bash-manual",
+        "url": "https://www.gnu.org/software/bash/manual/bash.html",
+        "checked_at": "2026-09-29T05:17:00+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://www.gnu.org/software/bash/manual/bash.html",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "systemd-systemctl",
+      "url": "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html",
+      "checked_at": "2026-09-29T05:17:00.978856+00:00",
+      "health": {
+        "id": "systemd-systemctl",
+        "url": "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html",
+        "checked_at": "2026-09-29T05:17:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html",
+        "content_type": "text/html",
+        "page_title": "systemctl",
+        "canonical_url": "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html",
+        "duration_signals": [
+          "1min",
+          "3min",
+          "42min"
+        ],
+        "signal_fingerprint": "95b584ab3ddcaadd09270a34b024b728837c03503915140eab57c3e5e0146344",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html",
+      "sha256": "f95e4bc82edf115aa4736ec9c9871cb1fd7f8c4cbe1b9be4f7790ab02c000d6f",
+      "text_characters": 98866
+    },
+    {
+      "id": "docker-container-overview",
+      "url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/",
+      "checked_at": "2026-09-29T05:17:01.044900+00:00",
+      "health": {
+        "id": "docker-container-overview",
+        "url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/",
+        "checked_at": "2026-09-29T05:17:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/",
+        "content_type": "text/html",
+        "page_title": "What is a container?",
+        "canonical_url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/",
+        "duration_signals": [],
+        "signal_fingerprint": "0504c737562a7bf3ad3e7fa86ed14902aed8d9c71e79c75a847648fa8ecdb510",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/",
+      "sha256": "9929415ce8ef8816908e1809d5c0a62a21428726d0bf2d8de988d3bf813381fd",
+      "text_characters": 7383
+    },
+    {
+      "id": "osi-open-source-definition",
+      "url": "https://opensource.org/osd",
+      "checked_at": "2026-09-29T05:17:01.618305+00:00",
+      "health": {
+        "id": "osi-open-source-definition",
+        "url": "https://opensource.org/osd",
+        "checked_at": "2026-09-29T05:17:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://opensource.org/osd",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "The Open Source Definition",
+        "canonical_url": "https://opensource.org/osd",
+        "duration_signals": [],
+        "signal_fingerprint": "6e3722533c49468caae3330e28c95be85364b7d8742ab6d0a6f8eaf07dd677ef",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://opensource.org/osd",
+      "sha256": "184b3a23161620b50e9eddd6967ba98c7cf609b0b01f5382f0a58a19a1bb475b",
+      "text_characters": 3417
+    },
+    {
+      "id": "spdx-license-list",
+      "url": "https://spdx.org/licenses/",
+      "checked_at": "2026-09-29T05:17:02.049339+00:00",
+      "health": {
+        "id": "spdx-license-list",
+        "url": "https://spdx.org/licenses/",
+        "checked_at": "2026-09-29T05:17:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://spdx.org/licenses/",
+        "content_type": "text/html",
+        "page_title": "SPDX License List | Software Package Data Exchange (SPDX)",
+        "canonical_url": "https://spdx.org/licenses/",
+        "duration_signals": [],
+        "signal_fingerprint": "0f89a544e31ff55413e8d6f69acca0dc1bcbd085c72d243f3d273d25f890bb38",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://spdx.org/licenses/",
+      "sha256": "38f2f8605235267d67aa58f34d58aac41d250d2ccdea71561352821f43d4fd75",
+      "text_characters": 37985
+    },
+    {
+      "id": "scrum-guide-2020",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "checked_at": "2026-09-29T05:17:02.430442+00:00",
+      "health": {
+        "id": "scrum-guide-2020",
+        "url": "https://scrumguides.org/scrum-guide.html",
+        "checked_at": "2026-09-29T05:17:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://scrumguides.org/scrum-guide.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Scrum Guide | Scrum Guides",
+        "canonical_url": "https://scrumguides.org/scrum-guide.html",
+        "duration_signals": [],
+        "signal_fingerprint": "67aa8d10585aad93fbeee7690911e62facad89030efd2afeaadb07b771350e4a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://scrumguides.org/scrum-guide.html",
+      "sha256": "64aade688c3f2bceb1051268310e1cdcf503ac424e052a07414f60cabea8bcc0",
+      "text_characters": 25025
+    },
+    {
+      "id": "ubuntu-release-cycle",
+      "url": "https://ubuntu.com/about/release-cycle",
+      "checked_at": "2026-09-29T05:17:02.752789+00:00",
+      "health": {
+        "id": "ubuntu-release-cycle",
+        "url": "https://ubuntu.com/about/release-cycle",
+        "checked_at": "2026-09-29T05:17:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://ubuntu.com/about/release-cycle",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Ubuntu release cycle | Ubuntu",
+        "canonical_url": "https://ubuntu.com/about/release-cycle",
+        "duration_signals": [],
+        "signal_fingerprint": "fe62c3794ea903de009951f97291f7a92bef3145c3accbbb51639edf90098941",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://ubuntu.com/about/release-cycle",
+      "sha256": "b19f2c636f2061c8a8dff23c4e4737956a8460075378e89d45c2ffe72e041e42",
+      "text_characters": 11290
+    },
+    {
+      "id": "lf-certification-language",
+      "url": "https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/language",
+      "checked_at": "2026-09-29T05:18:42.664648+00:00",
+      "health": {
+        "id": "lf-certification-language",
+        "url": "https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/language",
+        "checked_at": "2026-09-29T05:18:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/language",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Language | T&C DOCS (Candidate Facing Resources)",
+        "canonical_url": "https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/language",
+        "duration_signals": [],
+        "signal_fingerprint": "699fc7e18df73085642039d5a371cf0c817bb1641feec00a1677169561349cf9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/language",
+      "sha256": "5906e96c9515cfc808ae60730d854b57c5fa718f97da7317514e701ff14f5164",
+      "text_characters": 4689
+    },
+    {
+      "id": "lf-multiple-choice-faq",
+      "url": "https://docs.linuxfoundation.org/tc-docs/certification/faq-mc",
+      "checked_at": "2026-09-29T05:18:42.665981+00:00",
+      "health": {
+        "id": "lf-multiple-choice-faq",
+        "url": "https://docs.linuxfoundation.org/tc-docs/certification/faq-mc",
+        "checked_at": "2026-09-29T05:18:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.linuxfoundation.org/tc-docs/certification/faq-mc",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Multiple Choice Exams: Frequently Asked Questions | T&C DOCS (Candidate Facing Resources)",
+        "canonical_url": "https://docs.linuxfoundation.org/tc-docs/certification/faq-mc",
+        "duration_signals": [
+          "120 minutes",
+          "24 hours",
+          "90 minutes"
+        ],
+        "signal_fingerprint": "fd1415682af927f0658e0d2c2691d90ba74d938cf0571d3459535cb88f777fb3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.linuxfoundation.org/tc-docs/certification/faq-mc",
+      "sha256": "ce41dc1edf86b0a06ce30e680be8549c2178b2ed07e6e9382f33f2551fa69aa4",
+      "text_characters": 8869
+    },
+    {
+      "id": "bash-maintainer-reference",
+      "url": "https://tiswww.case.edu/php/chet/bash/bashref.html",
+      "checked_at": "2026-09-29T05:18:42.666803+00:00",
+      "health": {
+        "id": "bash-maintainer-reference",
+        "url": "https://tiswww.case.edu/php/chet/bash/bashref.html",
+        "checked_at": "2026-09-29T05:18:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://tiswww.case.edu/php/chet/bash/bashref.html",
+        "content_type": "text/html",
+        "page_title": "Bash Reference Manual",
+        "canonical_url": "https://tiswww.case.edu/php/chet/bash/bashref.html",
+        "duration_signals": [],
+        "signal_fingerprint": "cb2f218eb4bde4403d581d5dfd9fde9467eba197602d96604b8f5511db1f9cf3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://tiswww.case.edu/php/chet/bash/bashref.html",
+      "sha256": "b91026acffb159bd1e842e3116a95539bf858e2b57cbfa74df9e3a53379177a4",
+      "text_characters": 516943
+    },
+    {
+      "id": "linux-unlink",
+      "url": "https://man7.org/linux/man-pages/man2/unlink.2.html",
+      "checked_at": "2026-09-29T05:21:33.924836+00:00",
+      "health": {
+        "id": "linux-unlink",
+        "url": "https://man7.org/linux/man-pages/man2/unlink.2.html",
+        "checked_at": "2026-09-29T05:21:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://man7.org/linux/man-pages/man2/unlink.2.html",
+        "content_type": "text/html",
+        "page_title": "unlink(2) - Linux manual page",
+        "canonical_url": "https://man7.org/linux/man-pages/man2/unlink.2.html",
+        "duration_signals": [],
+        "signal_fingerprint": "ab80b6afd7407be262a4437d138fd51430221b9d3fc22b6780fffd708c8b2af0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man2/unlink.2.html",
+      "sha256": "54342d11f277bc670a1896301752b87abbb27261a1e84e8300f2d4c1b0fbde9b",
+      "text_characters": 6816
+    },
+    {
+      "id": "debian-apt-secure-trixie",
+      "url": "https://manpages.debian.org/trixie/apt/apt-secure.8.en.html",
+      "checked_at": "2026-09-29T05:21:33.925563+00:00",
+      "health": {
+        "id": "debian-apt-secure-trixie",
+        "url": "https://manpages.debian.org/trixie/apt/apt-secure.8.en.html",
+        "checked_at": "2026-09-29T05:21:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://manpages.debian.org/trixie/apt/apt-secure.8.en.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "apt-secure(8) — apt — Debian trixie — Debian Manpages",
+        "canonical_url": "https://manpages.debian.org/trixie/apt/apt-secure.8.en.html",
+        "duration_signals": [],
+        "signal_fingerprint": "a717137aa7e3070a65423133afe214122a122e53637eef4e556391795349f6ec",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://manpages.debian.org/trixie/apt/apt-secure.8.en.html",
+      "sha256": "5f46dc0056ab8df8632dd0204b36447dc1675a91277f0b0b670eb8d4836e5146",
+      "text_characters": 9872
+    }
+  ],
+  "added_source_ids": [
+    "git-add",
+    "git-diff",
+    "git-merge",
+    "git-restore",
+    "git-ignore",
+    "docker-container-overview",
+    "osi-open-source-definition",
+    "spdx-license-list",
+    "scrum-guide-2020",
+    "ubuntu-release-cycle",
+    "lf-certification-language",
+    "lf-multiple-choice-faq",
+    "bash-maintainer-reference",
+    "linux-unlink",
+    "debian-apt-secure-trixie"
+  ],
+  "findings": [
+    {
+      "id": "lfca-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Staging is a snapshot rather than a live file link",
+      "url": "https://git-scm.com/docs/git-add",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "LFCA"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The Git manual says add records content at the time of the command; later changes require another add.",
+      "recommendation": "Add and execute a three-snapshot exercise, cached/ordinary diffs and unstaging that preserves later working content.",
+      "disposition": "applied",
+      "source_id": "git-add",
+      "resolution": "Add and execute a three-snapshot exercise, cached/ordinary diffs and unstaging that preserves later working content."
+    },
+    {
+      "id": "lfca-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "An ignore rule does not remove tracking or history",
+      "url": "https://git-scm.com/docs/gitignore",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "LFCA"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Git documents that tracked files are not affected by ignore patterns; removing a path from the index is distinct from deleting history.",
+      "recommendation": "Explain and locally test tracked/untracked synthetic logs, retained working bytes and prior commit content; no real secret used.",
+      "disposition": "applied",
+      "source_id": "git-ignore",
+      "resolution": "Explain and locally test tracked/untracked synthetic logs, retained working bytes and prior commit content; no real secret used."
+    },
+    {
+      "id": "lfca-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Conflict abort requires a suitable starting state",
+      "url": "https://git-scm.com/docs/git-merge",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "LFCA"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Git warns that pre-existing uncommitted changes may not be fully reconstructible after an interrupted merge.",
+      "recommendation": "Use a clean synthetic repository, verify abort restores the main branch content, then resolve a second conflict against an explicit accepted requirement.",
+      "disposition": "applied",
+      "source_id": "git-merge",
+      "resolution": "Use a clean synthetic repository, verify abort restores the main branch content, then resolve a second conflict against an explicit accepted requirement."
+    },
+    {
+      "id": "lfca-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Package trust wording collapsed different signature mechanisms",
+      "url": "https://manpages.debian.org/trixie/apt/apt-secure.8.en.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "LFCA"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "APT authenticates repository Release metadata and the package-checksum chain; it does not audit package code or verify each package-level signature.",
+      "recommendation": "Correct the package-management teaching and retain repository trust and behavior verification as separate evidence.",
+      "disposition": "applied",
+      "source_id": "debian-apt-secure-trixie",
+      "resolution": "Correct the package-management teaching and retain repository trust and behavior verification as separate evidence."
+    },
+    {
+      "id": "lfca-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Enabled, running and available are separate observations",
+      "url": "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "LFCA"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The manual says enable does not imply start and disable does not imply stop, with --now available for runtime actions.",
+      "recommendation": "Add state/activation/readiness distinctions, socket/static/dependency qualifications and proposed Linux evidence checks.",
+      "disposition": "applied",
+      "source_id": "systemd-systemctl",
+      "resolution": "Add state/activation/readiness distinctions, socket/static/dependency qualifications and proposed Linux evidence checks."
+    },
+    {
+      "id": "lfca-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "File write permission alone does not decide deletion",
+      "url": "https://man7.org/linux/man-pages/man2/unlink.2.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "LFCA"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Linux unlink documents parent write/search, traversal and sticky-directory restrictions.",
+      "recommendation": "Teach operation-specific directory versus file permission reasoning without claiming MSYS proves Linux access-control behavior.",
+      "disposition": "applied",
+      "source_id": "linux-unlink",
+      "resolution": "Teach operation-specific directory versus file permission reasoning without claiming MSYS proves Linux access-control behavior."
+    },
+    {
+      "id": "lfca-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "The shared-kernel statement needs a host-runtime boundary",
+      "url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "LFCA"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Docker describes isolated processes sharing a kernel and containers running within VMs.",
+      "recommendation": "Clarify Linux containers on a non-Linux workstation may share the runtime VM kernel; no container was executed.",
+      "disposition": "applied",
+      "source_id": "docker-container-overview",
+      "resolution": "Clarify Linux containers on a non-Linux workstation may share the runtime VM kernel; no container was executed."
+    },
+    {
+      "id": "lfca-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Readable source alone does not establish open-source rights",
+      "url": "https://opensource.org/osd",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "LFCA"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The OSD imposes redistribution, modification and use conditions beyond access to source.",
+      "recommendation": "Clarify license grant, obligations and component inventory; SPDX identification is not a compatibility opinion.",
+      "disposition": "applied",
+      "source_id": "osi-open-source-definition",
+      "resolution": "Clarify license grant, obligations and component inventory; SPDX identification is not a compatibility opinion."
+    }
+  ],
+  "blog_intake": [],
+  "labs": {
+    "proposed": 8,
+    "linux_vm_labs_executed": 0,
+    "local_git_and_shell_exercises": 2,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 35,
+      "failed": 0,
+      "checks": [
+        "exact public Git script completes",
+        "two intended conflict attempts detected",
+        "resolved working config matches acceptance",
+        "resolved HEAD matches working config",
+        "merge has two parents",
+        "history retains both branch proposals",
+        "final worktree and index clean",
+        "no remote configured",
+        "nonempty directory refuses public rerun",
+        "HEAD retains committed snapshot",
+        "index retains last add snapshot",
+        "working tree retains later edit",
+        "cached diff compares HEAD and index",
+        "ordinary diff compares index and working",
+        "unstage restores index to HEAD",
+        "unstage preserves working edit",
+        "ignore matches untracked synthetic log",
+        "tracked file still appears in diff despite ignore",
+        "untracking preserves working file",
+        "untracking preserves prior history",
+        "local config identity isolated",
+        "exact public streams script completes",
+        "stdout and stderr captured in redirect order",
+        "second redirect leaves diagnostic on original stdout",
+        "default pipeline hides earlier failure",
+        "pipefail propagates earlier failure",
+        "grep no-match distinct from execution failure",
+        "quoted space path and grouped counts",
+        "missing grep input reports error",
+        "independent parallel project path max not sum",
+        "three VM invented cost plus storage and egress",
+        "recovery timestamps meet RPO and miss RTO",
+        "remaining one-zone capacity under simple model",
+        "sample error fraction with explicit denominator",
+        "owned disposable repositories and stream files cleaned"
+      ],
+      "git_version": "git version 2.55.0.windows.5",
+      "bash_version": "GNU bash, version 5.3.15(2)-release (x86_64-pc-cygwin)",
+      "python_version": "3.13.14",
+      "execution_boundary": "Native Git for Windows and MSYS Bash only; disposable synthetic repositories/files, no remotes, network, credential, hooks, global Git configuration, Linux VM, account/service/package/firewall/container/cloud actions. Complete Linux labs remain proposed.",
+      "example_sha256": {
+        "git_practice.sh": "bdcefd5589261a626bac679211ec6e872e5b36e82a32c9eae8c4fbf0405150dd",
+        "streams_practice.sh": "13bc2aa73aa5ee856eb9ca795bff2ed4db6a646330baea0fa427f2b0e5d3f7e9"
+      },
+      "learning_catalog_consistency": "pending"
+    }
+  },
+  "answered_checks": 46,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "35 local checks passed with Git 2.55.0.windows.5, MSYS Bash 5.3.15 and Python 3.13.14; all owned disposable repositories/files cleaned.",
+    "No remote, credentials, external messages, network service, global Git configuration, Linux VM, account, package, service, firewall, container or cloud mutation in the examples. Full eight labs remain proposed.",
+    "Native Linux runtime remains blocked from the earlier WSL startup attempt and is deferred for tomorrow; MSYS does not validate native Linux permissions, systemd, package or networking behavior.",
+    "The exact public Git script checks a synthetic file requirement; it does not demonstrate a running application, server protection rules, remote CI or production merge policy.",
+    "Project critical path, cloud costs/capacity, request errors and recovery timestamps are invented arithmetic cases, not measured service behavior or current prices.",
+    "GNU-hosted Bash manual timed out; targeted sections were read from the maintainer-hosted GNU Bash reference and checked against installed runtime behavior. The timeout is retained in fetch evidence.",
+    "Paid catalog metadata only; LFS200/Pluralsight public outlines retain older final-domain wording, and Coursera timing displays conflict. No paid lessons, questions or labs accessed."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed."
+  },
+  "supplemental_source_attempts": [
+    {
+      "id": "gnu-bash-manual",
+      "url": "https://www.gnu.org/software/bash/manual/bash.html",
+      "checked_at": "2026-09-29T05:17:00.727000+00:00",
+      "health": {
+        "id": "gnu-bash-manual",
+        "url": "https://www.gnu.org/software/bash/manual/bash.html",
+        "checked_at": "2026-09-29T05:17:00+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://www.gnu.org/software/bash/manual/bash.html",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    }
+  ],
+  "supplemental_source_scope": "Unused GNU-hosted endpoint timed out; retained as an exploratory attempt. Current guide cites the successful maintainer-hosted primary reference. Other guides accepted source records are preserved.",
+  "curriculum_pdf_receipt": {
+    "id": "lf-lfca-curriculum-path",
+    "url": "https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCA.pdf",
+    "checked_at": "2026-09-29T05:17:58.419339+00:00",
+    "health": {
+      "id": "lf-lfca-curriculum-path",
+      "url": "https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCA.pdf",
+      "checked_at": "2026-09-29T05:17:57+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCA.pdf",
+      "content_type": "application/pdf",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": ""
+    },
+    "http_status": 200,
+    "final_url": "https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCA.pdf",
+    "sha256": "7927cdfc224cdeb81c261ad2d6853ed164c3fe7ba64b49c6178c2cdd04d926a5",
+    "bytes": 325891,
+    "pdf_pages": 1,
+    "text_characters": 1585
+  }
+}

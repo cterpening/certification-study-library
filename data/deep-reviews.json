@@ -5,6 +5,28 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "LFCA",
+      "reviewed_on": "2026-09-29",
+      "guide_sha256": "152a822e1f63ba5d67cb75d7c9a45962512ea04285152abf8d125dc4b5faaa2f",
+      "objective_count": 22,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-29-lfca-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-29-lfca-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "Same-context AI review; independent human review pending.",
+        "35 local checks passed with Git 2.55.0.windows.5, MSYS Bash 5.3.15 and Python 3.13.14; all owned disposable repositories/files cleaned.",
+        "No remote, credentials, external messages, network service, global Git configuration, Linux VM, account, package, service, firewall, container or cloud mutation in the examples. Full eight labs remain proposed.",
+        "Native Linux runtime remains blocked from the earlier WSL startup attempt and is deferred for tomorrow; MSYS does not validate native Linux permissions, systemd, package or networking behavior.",
+        "The exact public Git script checks a synthetic file requirement; it does not demonstrate a running application, server protection rules, remote CI or production merge policy.",
+        "Project critical path, cloud costs/capacity, request errors and recovery timestamps are invented arithmetic cases, not measured service behavior or current prices.",
+        "GNU-hosted Bash manual timed out; targeted sections were read from the maintainer-hosted GNU Bash reference and checked against installed runtime behavior. The timeout is retained in fetch evidence.",
+        "Paid catalog metadata only; LFS200/Pluralsight public outlines retain older final-domain wording, and Coursera timing displays conflict. No paid lessons, questions or labs accessed."
+      ]
+    },
+    {
       "exam_code": "CV0-004",
       "reviewed_on": "2026-09-29",
       "guide_sha256": "15906266b1d8fcd110c3228d7edc4313fdef196c2fdad5323d9e079aa20345e7",
