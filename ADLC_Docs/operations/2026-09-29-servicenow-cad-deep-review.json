@@ -1,0 +1,1715 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "SERVICENOW-CAD",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/SERVICENOW-CAD-servicenow-certified-application-developer.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "95250617cb3af18160a6c85aa758d3aea2f7e74c100e6615a66c1dd1cf11d0e3",
+  "guide_after_sha256": "ea3427a25e074e596329db59b1e00af32acd7a1af4b1a323b72461d6caa52c15",
+  "prior_records": {
+    "exam": {
+      "code": "SERVICENOW-CAD",
+      "level": "intermediate",
+      "vendor_id": "servicenow",
+      "title": "ServiceNow Certified Application Developer",
+      "status": "active",
+      "study_guide_url": "https://learning.servicenow.com/lxp/en/credentials/certified-application-developer-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011498",
+      "guide_path": "guides/SERVICENOW-CAD-servicenow-certified-application-developer.md",
+      "blueprint_last_checked": "2026-09-07",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-07",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite is published. ServiceNow recommends application-development and system-administration experience, JavaScript/web-development fundamentals, and developer access in a nonproduction instance. Practice a complete scoped-application lifecycle across fit and data model, interfaces, ACL/cross-scope security, declarative and scripted automation, import/REST integration, source review, delegated development, testing, promotion and rollback."
+    },
+    "review": {
+      "id": "servicenow-cad-2026-09-07-source-validation",
+      "exam_code": "SERVICENOW-CAD",
+      "guide_path": "guides/SERVICENOW-CAD-servicenow-certified-application-developer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-07",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/servicenow-cad-official-objectives.txt",
+      "blueprint_snapshot_sha256": "d0d60a1f5b77d3baa45857b05b7e01c67ab7f5afdbc53dc0558c660f244b21b0",
+      "objective_coverage": [
+        {
+          "objective_group": "Designing and Creating an Application (15%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Application User Interface (20%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Security and Restricting Access (20%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Application Automation (20%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1–2",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Working with External Data (10%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenario 2",
+            "Labs 5–6"
+          ]
+        },
+        {
+          "objective_group": "Managing Applications (15%)",
+          "guide_sections": [
+            "Section 6",
+            "Scenarios 1 and 3",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 14,
+        "reachable": 11,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "All six January 2026 evidence-baseline domains remain mapped through a complete scoped-application lifecycle: fit and data model, persona-tested interfaces, layered ACL/module/cross-scope security, declarative and scripted automation, reconciled import/REST integration, and reviewed source/repository/delegated-development promotion and rollback. Three integrated scenarios, eight authorized nonproduction labs and 40 original checks are included. KB0011498 still exposes only its title to deterministic and indexed extraction, so the current detailed objective and contract audit remains freshness-blocked. Current official planning documentation and a ServiceNow employee-authored ACL article add practice context; a May community discussion is explicitly non-authoritative. The official MeasureUp bank's displayed 20/20/20/20/10/10 distribution remains separated from the September 2 mainline evidence baseline of 15/20/20/20/10/15. Only MeasureUp is named for exam-style practice; no recalled/live item, dump or copied course content is used. September 17, 2026 maintenance: recovered the public CAD blueprint in an unsigned browser; corrected domain 1 to 20% and domain 6 to 10%, reconciled the practice-bank discrepancy, and confirmed the public exam contract. Historical review date and snapshot remain unchanged; see docs/research/2026-09-17-exam-validation.md."
+    },
+    "sources": [
+      {
+        "id": "servicenow-credential-catalog",
+        "title": "ServiceNow University Credential Catalog",
+        "url": "https://learning.servicenow.com/lxp/en/credentials",
+        "publisher": "ServiceNow University",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "SERVICENOW-CSA",
+          "SERVICENOW-CAD"
+        ],
+        "notes": "Official catalog and search route for ServiceNow Administration Fundamentals and Application Development Fundamentals. Each is commonly delivered as three instructor-led days; verify current format, entitlement and attempt inclusion. September 29 SERVICENOW-CSA deep review: Direct34-character shell; credential entry only. No authenticated catalog, course interior or entitlement. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "servicenow-product-documentation",
+        "title": "ServiceNow Product Documentation",
+        "url": "https://www.servicenow.com/docs/",
+        "publisher": "ServiceNow",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "SERVICENOW-CSA",
+          "SERVICENOW-CAD"
+        ],
+        "notes": "Release-selectable canonical product reference for platform administration and application design, interface, security, automation, integration, scripting, source and lifecycle behavior. September 29 SERVICENOW-CSA deep review: Direct40-character shell. Specific primary browser main sections reviewed separately; documentation homepage is not a full platform audit. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "servicenow-developer-program",
+        "title": "ServiceNow Developer Program",
+        "url": "https://developer.servicenow.com/",
+        "publisher": "ServiceNow",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "SERVICENOW-CSA",
+          "SERVICENOW-CAD"
+        ],
+        "notes": "Official learning plans, API references and Personal Developer Instance entry point for authorized administration and application-development practice; PDI availability and release choice can change. September 29 SERVICENOW-CSA deep review: Direct125-character entry shell. No account, PDI allocation, runtime, installation or environment changes. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "youtube-servicenow-developers",
+        "title": "ServiceNow Developers YouTube Channel",
+        "url": "https://www.youtube.com/@servicenowdevprogram",
+        "publisher": "ServiceNow Developer Program",
+        "authority_class": 2,
+        "source_type": "official-video",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "SERVICENOW-CSA",
+          "SERVICENOW-CAD"
+        ],
+        "notes": "Official visual demos and release-aware platform and developer context. Select current objective-specific videos instead of treating the full channel as a prescribed course. September 29 SERVICENOW-CSA deep review: Direct185-character title/footer; landing only. No playback or playlist audit. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "servicenow-cad-mainline-blueprint",
+        "title": "Certified Application Developer Mainline Exam Blueprint",
+        "url": "https://learning.servicenow.com/lxp/en/credentials/certified-application-developer-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011498",
+        "publisher": "ServiceNow",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "SERVICENOW-CAD"
+        ],
+        "notes": "Canonical CAD blueprint route. The September 2 evidence baseline records January 2026 six-domain 15/20/20/20/10/15 scope and a 60-question/90-minute contract, but September 7 deterministic and indexed extraction exposed only the page title; detailed current scope remains blocked pending a fully rendered or static official source."
+      },
+      {
+        "id": "servicenow-plan-before-build",
+        "title": "Plan before you build",
+        "url": "https://www.servicenow.com/docs/r/application-development/plan-before-you-build.html",
+        "publisher": "ServiceNow",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "SERVICENOW-CAD"
+        ],
+        "notes": "Australia-release product guidance updated March 12, 2026 covering private/global scope, PDI versus organizational development instances, naming and irreversible decisions. Useful application-design practice, not proof of exam scope."
+      },
+      {
+        "id": "servicenow-community-scoped-app-security-2026",
+        "title": "ServiceNow Custom Scoped App Security: A Developer's Guide to Access Control Lists",
+        "url": "https://www.servicenow.com/community/developer-articles/servicenow-custom-scoped-app-security-a-developer-s-guide-to/ta-p/3484927",
+        "publisher": "ServiceNow Community / CMa_yfield",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "SERVICENOW-CAD"
+        ],
+        "notes": "ServiceNow employee-authored February 2026 community article with ACL security-matrix, scripted-security and negative-test patterns. Treat community guidance as practice context and verify API behavior in current product documentation."
+      },
+      {
+        "id": "servicenow-community-cad-prep-2026",
+        "title": "CAD Exam Prep community discussion",
+        "url": "https://www.servicenow.com/community/training-and-certifications/cad-exam-prep/td-p/3538814",
+        "publisher": "ServiceNow Community",
+        "authority_class": 3,
+        "source_type": "community-learning",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "SERVICENOW-CAD"
+        ],
+        "notes": "May 2026 user discussion reinforces official-course labs and PDI practice around Flow, ACLs, update sets and basic REST. It is not scope authority; rough percentages and third-party mock-test suggestions are excluded."
+      },
+      {
+        "id": "servicenow-cad-learning-path",
+        "title": "Certified Application Developer Learning Path",
+        "url": "https://learning.servicenow.com/lxp/en/now-platform/certified-application-developer?course_id=4c12ba8c87c39ad4a3bc40c5cebb3526&id=learning_content_prev",
+        "publisher": "ServiceNow University",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SERVICENOW-CAD"
+        ],
+        "notes": "Official CAD learning assignment; dynamic display and course access require an account. Verify the current course sequence and duration after sign-in."
+      },
+      {
+        "id": "servicenow-technical-training-catalog",
+        "title": "ServiceNow University Technical Training Catalog",
+        "url": "https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/other-document/technical-training-portfolio.pdf",
+        "publisher": "ServiceNow",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SERVICENOW-CAD"
+        ],
+        "notes": "Official 2025 catalog confirms three-day instructor-led Application Development Fundamentals and Scripting in ServiceNow Fundamentals anchors and describes delivery/access models."
+      },
+      {
+        "id": "servicenow-scripting-fundamentals",
+        "title": "Scripting in ServiceNow Fundamentals",
+        "url": "https://learning.servicenow.com/lxp/en/now-platform/scripting-in-servicenow-fundamentals-on-demand-washington?course_id=f424ca5a87f71e143a3a84c7cebb3509&id=learning_course_prev",
+        "publisher": "ServiceNow University",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SERVICENOW-CAD"
+        ],
+        "notes": "Official scripting foundation offered on demand or as a three-day ILT course. The URL retains a Washington label; verify current assigned release and entitlement."
+      },
+      {
+        "id": "measureup-servicenow-cad",
+        "title": "ServiceNow CAD Practice Test",
+        "url": "https://www.measureup.com/servicenow-cad-practice-test.html",
+        "publisher": "MeasureUp / ServiceNow",
+        "authority_class": 2,
+        "source_type": "official-practice",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SERVICENOW-CAD"
+        ],
+        "notes": "Official March 2026 120-question bank. Its displayed 24/24/24/24/12/12 distribution differs from the current mainline 15/20/20/20/10/15 weights; use for explanation-led practice, not blueprint authority."
+      },
+      {
+        "id": "oreilly-servicenow-application-development",
+        "title": "ServiceNow Application Development",
+        "url": "https://www.oreilly.com/library/view/servicenow-application-development/9781787128712/",
+        "publisher": "O'Reilly / Packt / Sagar Gupta",
+        "authority_class": 3,
+        "source_type": "commercial-book",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SERVICENOW-CAD"
+        ],
+        "notes": "2017 hands-on book covering PDI, application creation, data, access, scripting, automation and integration. It is substantially dated; translate every UI, API and lifecycle claim through current official docs."
+      },
+      {
+        "id": "udemy-servicenow-cad-ultimate",
+        "title": "ServiceNow Certified Application Developer Ultimate Course",
+        "url": "https://www.udemy.com/course/servicenow-certified-application-developer-cad-course-cloud-guru-amit/",
+        "publisher": "Udemy / Cloud Guru Amit",
+        "authority_class": 3,
+        "source_type": "commercial-course",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SERVICENOW-CAD"
+        ],
+        "notes": "6h37m project course listed as updated February 2026, including application, UI, security, Flow, import, REST, ATF and GitLab demonstrations. Use its build portion; use only official MeasureUp for exam-style practice."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "7da043af9e8a94e6566cd65bcf5d4cddfe276d771e265a739c6255a81eae9efe",
+      "guide_sections": [
+        "1. Designing and Creating an Application — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "1ca804418359900dddeca4ba475795cd7f58f16b9f1b25d8eb53b8d168f48a9a",
+      "guide_sections": [
+        "1. Designing and Creating an Application — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "adcbe05618af377b425f5db2a17c450f33ae53fab62a104a6aa0a942279bb1bb",
+      "guide_sections": [
+        "1. Designing and Creating an Application — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "4819d1d9e6891a7ff03c41527ef233bb62a86c4f13aee35774c8a76ba70c521a",
+      "guide_sections": [
+        "1. Designing and Creating an Application — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "5613e360549f48c60d34ff921de153837800e1805ba992a66369fa29d74358d4",
+      "guide_sections": [
+        "2. Application User Interface — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "da991f173e5f2414dcc4a3f8f4d2210441bb9764654fef7e653df82dd9ccdb06",
+      "guide_sections": [
+        "2. Application User Interface — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "975eab9c47ae912bb8ad18fb686d926ef590a7ae1572fc3924916e1dbcd94fe2",
+      "guide_sections": [
+        "2. Application User Interface — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "d3cd8e7bcf07774f47f6c5e4b4628ef3e8e4ce9e9b492709268e49b39786ddb2",
+      "guide_sections": [
+        "2. Application User Interface — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "ca09472ecc5269a742cadcab5db96ad68eee084a1cfa8e9c0619d8972035c805",
+      "guide_sections": [
+        "2. Application User Interface — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "6784810823c74ae0bcbfdab236d55ace54f14fab6d8d4c35178522821e427561",
+      "guide_sections": [
+        "3. Security and Restricting Access — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "d710de125edd7d8eaaaa090fa8e0ac60968923f64181b4612dd0619d9a6ee9d6",
+      "guide_sections": [
+        "3. Security and Restricting Access — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "6ac6070286c319c62f9f1ca31a187c0d3fa8ccf72aba3ad4a9ea3ca4e876e10f",
+      "guide_sections": [
+        "3. Security and Restricting Access — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "8336841ed9304fcfb209e1cc2237fe05ef055ab4df60b43e24bcd6b4b517a777",
+      "guide_sections": [
+        "3. Security and Restricting Access — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "932c07f41ef6b536ca7e27d17a183d3a403d71a57728f8cd416112f2f5b23107",
+      "guide_sections": [
+        "4. Application Automation — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "d7f2f29ebbcef61dc271032b8efb7d9479a36484aad031f1cfb7efaac38e75f9",
+      "guide_sections": [
+        "4. Application Automation — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "7651e7cef8d521c66fe89db1c31d556aa1210faaeb8dcc7e5e7c7043f2889d3f",
+      "guide_sections": [
+        "4. Application Automation — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "83420e2b8a6b1c8f5984dd6097d0a5a84ac1dbaa4a8b7da33c9dd0ce975c1ea2",
+      "guide_sections": [
+        "4. Application Automation — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "95a6b76ab2e9f578989476a2352a273698fcd5c9ed34e7b9541ce6beb941da04",
+      "guide_sections": [
+        "5. Working with External Data — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "4ce799fe3aa4c364aa29195af73216aac2aa26e5eb9d45948c95bf22185030a3",
+      "guide_sections": [
+        "5. Working with External Data — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "070b0fd590bf0644560c1aada7a5ad6b9bdcfc2309879757582c1af2e7de0285",
+      "guide_sections": [
+        "6. Managing Applications — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "1ec818f71639de1eb19279f0e4058bc6cf544484af2e985195afa5b744ad32ad",
+      "guide_sections": [
+        "6. Managing Applications — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "83ce4495dc88236ae14b3276ac755e0e1c6ed4c487c1563a45763669c6a35f87",
+      "guide_sections": [
+        "6. Managing Applications — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [
+      "SERVICENOW-CAD"
+    ],
+    "results": [
+      {
+        "code": "SERVICENOW-CAD",
+        "title": "ServiceNow Certified Application Developer",
+        "url": "https://learning.servicenow.com/lxp/en/credentials/certified-application-developer-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011498",
+        "guide_path": "guides/SERVICENOW-CAD-servicenow-certified-application-developer.md",
+        "snapshot_path": "data\\objective-snapshots\\servicenow-cad-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\servicenow-cad-official-status.json",
+        "status": "manual-review",
+        "changed": false,
+        "error": "ValueError: Could not find ServiceNow Exam Scope",
+        "manual_review_reason": "The reachable ServiceNow learning response does not expose the reviewed Exam Scope in server-rendered HTML to this non-browser extractor.",
+        "review_route": "docs/SOURCE-FRESHNESS.md"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 29,
+    "reachable": 26,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "servicenow-credential-catalog",
+      "url": "https://learning.servicenow.com/lxp/en/credentials",
+      "checked_at": "2026-09-29T16:40:07.413904+00:00",
+      "health": {
+        "id": "servicenow-credential-catalog",
+        "url": "https://learning.servicenow.com/lxp/en/credentials",
+        "checked_at": "2026-09-29T16:40:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learning.servicenow.com/now/lxp/home",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "ServiceNow University | ServiceNow",
+        "canonical_url": "https://learning.servicenow.com/now/lxp/home",
+        "duration_signals": [],
+        "signal_fingerprint": "42a7d40893862a3d199b9b7605dd7fceb05749a86a22d91beca15588f7694d03",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learning.servicenow.com/now/lxp/home",
+      "sha256": "7e77c7d1df8ae6adabb5889846855c19a3444db65f8637052cccdfea984b1179",
+      "text_characters": 34
+    },
+    {
+      "id": "servicenow-product-documentation",
+      "url": "https://www.servicenow.com/docs/",
+      "checked_at": "2026-09-29T16:40:07.414478+00:00",
+      "health": {
+        "id": "servicenow-product-documentation",
+        "url": "https://www.servicenow.com/docs/",
+        "checked_at": "2026-09-29T16:40:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/",
+        "duration_signals": [],
+        "signal_fingerprint": "133ebe6962188524971e9befd4149e6184154aecd4efeb32045330453274817c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/",
+      "sha256": "05d3ddb19398b80ce3bd6698b6ae1ab59e572d79c5621d8e71b884f08ec39f89",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-developer-program",
+      "url": "https://developer.servicenow.com/",
+      "checked_at": "2026-09-29T16:40:07.414824+00:00",
+      "health": {
+        "id": "servicenow-developer-program",
+        "url": "https://developer.servicenow.com/",
+        "checked_at": "2026-09-29T16:40:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.servicenow.com/dev.do",
+        "content_type": "text/html",
+        "page_title": "ServiceNow Developers",
+        "canonical_url": "https://developer.servicenow.com/dev.do",
+        "duration_signals": [],
+        "signal_fingerprint": "d91e4bfd6c1da35ed7296ba97f03d42b4a88cb7e3d70cb47a15c609912a92cfb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.servicenow.com/dev.do",
+      "sha256": "33c09269fad6bd3e4825abcc3dfc84e563f755b3781df6bdce527f40e8972f0e",
+      "text_characters": 125
+    },
+    {
+      "id": "youtube-servicenow-developers",
+      "url": "https://www.youtube.com/@servicenowdevprogram",
+      "checked_at": "2026-09-29T16:40:07.956188+00:00",
+      "health": {
+        "id": "youtube-servicenow-developers",
+        "url": "https://www.youtube.com/@servicenowdevprogram",
+        "checked_at": "2026-09-29T16:40:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@servicenowdevprogram",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ServiceNow Dev Program",
+        "canonical_url": "https://www.youtube.com/channel/UCdXorgCT87YlFRN9n8oJ7_A",
+        "duration_signals": [],
+        "signal_fingerprint": "66cf1feabc300990ba46594d2f2f0923bf4e26ee5da0ab1a7bd6a3174c6d99c5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@servicenowdevprogram",
+      "sha256": "1da834bce6b712dadda21a0598b97beeff7b1ad9382e8895ca0a7318baaf64a7",
+      "text_characters": 185
+    },
+    {
+      "id": "servicenow-cad-mainline-blueprint",
+      "url": "https://learning.servicenow.com/lxp/en/credentials/certified-application-developer-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011498",
+      "checked_at": "2026-09-29T16:40:08.465128+00:00",
+      "health": {
+        "id": "servicenow-cad-mainline-blueprint",
+        "url": "https://learning.servicenow.com/lxp/en/credentials/certified-application-developer-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011498",
+        "checked_at": "2026-09-29T16:40:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learning.servicenow.com/lxp/en/credentials/certified-application-developer-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011498",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Certified Application Developer (CAD) Exam Blueprint - ServiceNow University",
+        "canonical_url": "https://learning.servicenow.com/lxp/en/credentials/certified-application-developer-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011498",
+        "duration_signals": [],
+        "signal_fingerprint": "b830f645634ef3be8dd280b38634eeb70878a6e519d619cf39a85ed5fd808f59",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learning.servicenow.com/lxp/en/credentials/certified-application-developer-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011498",
+      "sha256": "84b54695a3b8a2bbcaf770cdf8d1049e65236182e5048d423b2bdfc0d11ec57d",
+      "text_characters": 0
+    },
+    {
+      "id": "servicenow-plan-before-build",
+      "url": "https://www.servicenow.com/docs/r/application-development/plan-before-you-build.html",
+      "checked_at": "2026-09-29T16:40:09.021195+00:00",
+      "health": {
+        "id": "servicenow-plan-before-build",
+        "url": "https://www.servicenow.com/docs/r/application-development/plan-before-you-build.html",
+        "checked_at": "2026-09-29T16:40:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/application-development/plan-before-you-build.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/application-development/plan-before-you-build.html",
+        "duration_signals": [],
+        "signal_fingerprint": "31e4e62d97cdf8481fffbf7347bdf5759b0de5350ce84a76b4b63da035903f00",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/application-development/plan-before-you-build.html",
+      "sha256": "c9ccbcebea99d55c3bdd25a56ee23e47636e5d1cbd53fa792999b71a785e9f81",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-community-scoped-app-security-2026",
+      "url": "https://www.servicenow.com/community/developer-articles/servicenow-custom-scoped-app-security-a-developer-s-guide-to/ta-p/3484927",
+      "checked_at": "2026-09-29T16:40:09.583342+00:00",
+      "health": {
+        "id": "servicenow-community-scoped-app-security-2026",
+        "url": "https://www.servicenow.com/community/developer-articles/servicenow-custom-scoped-app-security-a-developer-s-guide-to/ta-p/3484927",
+        "checked_at": "2026-09-29T16:40:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/community/developer-articles/servicenow-custom-scoped-app-security-a-developer-s-guide-to/ta-p/3484927",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "ServiceNow Custom Scoped App Security: A Developer's Guide to Access Control Lists (ACLs)",
+        "canonical_url": "https://www.servicenow.com/community/developer-articles/servicenow-custom-scoped-app-security-a-developer-s-guide-to/ta-p/3484927",
+        "duration_signals": [],
+        "signal_fingerprint": "a405cd9976caa8c6100afc71a628da7c693a70c39ad613f13ca1ee076dad264f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/community/developer-articles/servicenow-custom-scoped-app-security-a-developer-s-guide-to/ta-p/3484927",
+      "sha256": "4a985ef3adda370c7923c3a95a8d3a930ec74997065392a50acc9cdabf56a4e1",
+      "text_characters": 29267
+    },
+    {
+      "id": "servicenow-community-cad-prep-2026",
+      "url": "https://www.servicenow.com/community/training-and-certifications/cad-exam-prep/td-p/3538814",
+      "checked_at": "2026-09-29T16:40:09.713121+00:00",
+      "health": {
+        "id": "servicenow-community-cad-prep-2026",
+        "url": "https://www.servicenow.com/community/training-and-certifications/cad-exam-prep/td-p/3538814",
+        "checked_at": "2026-09-29T16:40:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/community/training-and-certifications/cad-exam-prep/td-p/3538814",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "CAD Exam Prep",
+        "canonical_url": "https://www.servicenow.com/community/training-and-certifications/cad-exam-prep/m-p/3538814#M27148",
+        "duration_signals": [],
+        "signal_fingerprint": "f4cd1e7c21243019122c1bdaafed08d48de55397756c0f9d6b7b296b7f3dc7ed",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/community/training-and-certifications/cad-exam-prep/td-p/3538814",
+      "sha256": "03a0425fbc626ad28ad259ab2a0bb8a4271ee44e986bb603a59a8e2c7266d7a6",
+      "text_characters": 6100
+    },
+    {
+      "id": "servicenow-cad-learning-path",
+      "url": "https://learning.servicenow.com/lxp/en/now-platform/certified-application-developer?course_id=4c12ba8c87c39ad4a3bc40c5cebb3526&id=learning_content_prev",
+      "checked_at": "2026-09-29T16:40:10.450711+00:00",
+      "health": {
+        "id": "servicenow-cad-learning-path",
+        "url": "https://learning.servicenow.com/lxp/en/now-platform/certified-application-developer?course_id=4c12ba8c87c39ad4a3bc40c5cebb3526&id=learning_content_prev",
+        "checked_at": "2026-09-29T16:40:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learning.servicenow.com/lxp/en/now-platform/certified-application-developer?course_id=4c12ba8c87c39ad4a3bc40c5cebb3526&id=learning_content_prev",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Certified Application Developer - ServiceNow University",
+        "canonical_url": "https://learning.servicenow.com/lxp/en/now-platform/certified-application-developer?course_id=4c12ba8c87c39ad4a3bc40c5cebb3526&id=learning_content_prev",
+        "duration_signals": [],
+        "signal_fingerprint": "d177d141f651e74fa90e5ef1f51aff8ffb8f6132ae075132c0fa46c2cab08c7b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learning.servicenow.com/lxp/en/now-platform/certified-application-developer?course_id=4c12ba8c87c39ad4a3bc40c5cebb3526&id=learning_content_prev",
+      "sha256": "6e9e1c3ff440971df978635c991edd098a36df483e3fd72ead0f736dfa391d10",
+      "text_characters": 0
+    },
+    {
+      "id": "servicenow-technical-training-catalog",
+      "url": "https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/other-document/technical-training-portfolio.pdf",
+      "checked_at": "2026-09-29T16:40:10.794746+00:00",
+      "health": {
+        "id": "servicenow-technical-training-catalog",
+        "url": "https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/other-document/technical-training-portfolio.pdf",
+        "checked_at": "2026-09-29T16:40:10+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/other-document/technical-training-portfolio.pdf",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "servicenow-scripting-fundamentals",
+      "url": "https://learning.servicenow.com/lxp/en/now-platform/scripting-in-servicenow-fundamentals-on-demand-washington?course_id=f424ca5a87f71e143a3a84c7cebb3509&id=learning_course_prev",
+      "checked_at": "2026-09-29T16:40:10.828980+00:00",
+      "health": {
+        "id": "servicenow-scripting-fundamentals",
+        "url": "https://learning.servicenow.com/lxp/en/now-platform/scripting-in-servicenow-fundamentals-on-demand-washington?course_id=f424ca5a87f71e143a3a84c7cebb3509&id=learning_course_prev",
+        "checked_at": "2026-09-29T16:40:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learning.servicenow.com/lxp/en/now-platform/scripting-in-servicenow-fundamentals-on-demand-washington?course_id=f424ca5a87f71e143a3a84c7cebb3509&id=learning_course_prev",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "ServiceNow Scripting in ServiceNow Fundamentals - ServiceNow University",
+        "canonical_url": "https://learning.servicenow.com/lxp?id=learning_course_prev&course_id=f424ca5a87f71e143a3a84c7cebb3509",
+        "duration_signals": [],
+        "signal_fingerprint": "b747bccdb1dffa854e87e80d10f013ac23ca7e0b97b8752227d224f1110b360b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learning.servicenow.com/lxp/en/now-platform/scripting-in-servicenow-fundamentals-on-demand-washington?course_id=f424ca5a87f71e143a3a84c7cebb3509&id=learning_course_prev",
+      "sha256": "e4077433d8e1bb428ee721dfe91c73fba22ebaa8207f9ee658e87bae38ca0d63",
+      "text_characters": 0
+    },
+    {
+      "id": "measureup-servicenow-cad",
+      "url": "https://www.measureup.com/servicenow-cad-practice-test.html",
+      "checked_at": "2026-09-29T16:40:10.896487+00:00",
+      "health": {
+        "id": "measureup-servicenow-cad",
+        "url": "https://www.measureup.com/servicenow-cad-practice-test.html",
+        "checked_at": "2026-09-29T16:40:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/servicenow-cad-practice-test.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "ServiceNow Official Practice Test CAD: Certified Application Developer",
+        "canonical_url": "https://www.measureup.com/servicenow-cad-practice-test.html",
+        "duration_signals": [
+          "90 minutes"
+        ],
+        "signal_fingerprint": "18c8583e827afdbe910db225980c0abf3492bbca172a46ef8c026c6b0c319c97",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/servicenow-cad-practice-test.html",
+      "sha256": "b4504feb759ce7cd662dbc0769a69f9998f15fd24342be36dadc19d04ed20eb4",
+      "text_characters": 11180
+    },
+    {
+      "id": "oreilly-servicenow-application-development",
+      "url": "https://www.oreilly.com/library/view/servicenow-application-development/9781787128712/",
+      "checked_at": "2026-09-29T16:40:11.903699+00:00",
+      "health": {
+        "id": "oreilly-servicenow-application-development",
+        "url": "https://www.oreilly.com/library/view/servicenow-application-development/9781787128712/",
+        "checked_at": "2026-09-29T16:40:11+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/servicenow-application-development/9781787128712/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "udemy-servicenow-cad-ultimate",
+      "url": "https://www.udemy.com/course/servicenow-certified-application-developer-cad-course-cloud-guru-amit/",
+      "checked_at": "2026-09-29T16:40:12.130737+00:00",
+      "health": {
+        "id": "udemy-servicenow-cad-ultimate",
+        "url": "https://www.udemy.com/course/servicenow-certified-application-developer-cad-course-cloud-guru-amit/",
+        "checked_at": "2026-09-29T16:40:12+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/servicenow-certified-application-developer-cad-course-cloud-guru-amit/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "servicenow-welcome-current",
+      "url": "https://learning.servicenow.com/lxp/en/now-platform/welcome-to-servicenow?course_id=386f3cf847b36a90c00af235126d430c&id=learning_course_prev",
+      "checked_at": "2026-09-29T16:51:43.110572+00:00",
+      "health": {
+        "id": "servicenow-welcome-current",
+        "url": "https://learning.servicenow.com/lxp/en/now-platform/welcome-to-servicenow?course_id=386f3cf847b36a90c00af235126d430c&id=learning_course_prev",
+        "checked_at": "2026-09-29T16:51:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learning.servicenow.com/lxp/en/now-platform/welcome-to-servicenow?course_id=386f3cf847b36a90c00af235126d430c&id=learning_course_prev",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "ServiceNow Welcome to ServiceNow - ServiceNow University",
+        "canonical_url": "https://learning.servicenow.com/lxp/en/now-platform/welcome-to-servicenow?id=learning_course_prev&course_id=386f3cf847b36a90c00af235126d430c",
+        "duration_signals": [],
+        "signal_fingerprint": "48446329a781413dbb86737f1ee857ff5691ccfa85f1914fc21c3f0df39679c6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learning.servicenow.com/lxp/en/now-platform/welcome-to-servicenow?course_id=386f3cf847b36a90c00af235126d430c&id=learning_course_prev",
+      "sha256": "2b856c434c4d8d48a07a687165b006392256080e67fe1d10394f36c7237f7f4a",
+      "text_characters": 0
+    },
+    {
+      "id": "servicenow-pearson-faq",
+      "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0013209",
+      "checked_at": "2026-09-29T16:51:43.111465+00:00",
+      "health": {
+        "id": "servicenow-pearson-faq",
+        "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0013209",
+        "checked_at": "2026-09-29T16:51:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0013209",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Credentials - Exams with Pearson VUE FAQs - Knowledge Portal",
+        "canonical_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0013209",
+        "duration_signals": [],
+        "signal_fingerprint": "36e392003898ee4ac54553d1fce57f6c2c72ae95a26a46d1e15e5ce15b245c00",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0013209",
+      "sha256": "4bbbd01907cc1058ec6e90a2c1d34a6e418244b7f9e63004297d069327f07778",
+      "text_characters": 0
+    },
+    {
+      "id": "servicenow-cmp-payment",
+      "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011114",
+      "checked_at": "2026-09-29T16:51:43.111946+00:00",
+      "health": {
+        "id": "servicenow-cmp-payment",
+        "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011114",
+        "checked_at": "2026-09-29T16:51:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011114",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Credentials - Paying the certification maintenance fee (CMP) with Learning Credits - Knowledge Portal",
+        "canonical_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011114",
+        "duration_signals": [],
+        "signal_fingerprint": "403a96e2035cbb0314d0f7795784c02dba2a2b25864a835d7d102a73f8daaa90",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011114",
+      "sha256": "9438191e117e6e5eda6dcf12490fdc8d56648c3eb68d51514525264f190d3624",
+      "text_characters": 0
+    },
+    {
+      "id": "servicenow-acl-overview",
+      "url": "https://www.servicenow.com/docs/r/platform-security/access-control/exploring-access-control-list.html",
+      "checked_at": "2026-09-29T16:51:43.972924+00:00",
+      "health": {
+        "id": "servicenow-acl-overview",
+        "url": "https://www.servicenow.com/docs/r/platform-security/access-control/exploring-access-control-list.html",
+        "checked_at": "2026-09-29T16:51:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/platform-security/access-control/exploring-access-control-list.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/platform-security/access-control/exploring-access-control-list.html",
+        "duration_signals": [],
+        "signal_fingerprint": "ddcad4bdb5332b8ad39b2f13dd2823096c284b3baa146f2a15d438e919b722c8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/platform-security/access-control/exploring-access-control-list.html",
+      "sha256": "36245f4aee25e4264499b7495e3ba8bcb7b25678aad5eb9e0b81a86793480912",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-acl-deny-unless",
+      "url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-denial-behavior.html",
+      "checked_at": "2026-09-29T16:51:43.981106+00:00",
+      "health": {
+        "id": "servicenow-acl-deny-unless",
+        "url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-denial-behavior.html",
+        "checked_at": "2026-09-29T16:51:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-denial-behavior.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-denial-behavior.html",
+        "duration_signals": [],
+        "signal_fingerprint": "003bd1b563d1b02b2869cfd9a7362b49d716bb8cdd7a9855bcaf036ce6e3beb9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-denial-behavior.html",
+      "sha256": "28060ef9c1475c39bf9f773ccda8046b10e5339998582199bc61150185819fcb",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-business-rules",
+      "url": "https://www.servicenow.com/docs/r/api-reference/business-rules-classic/c_BusinessRules.html",
+      "checked_at": "2026-09-29T16:51:44.573173+00:00",
+      "health": {
+        "id": "servicenow-business-rules",
+        "url": "https://www.servicenow.com/docs/r/api-reference/business-rules-classic/c_BusinessRules.html",
+        "checked_at": "2026-09-29T16:51:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/api-reference/business-rules-classic/c_BusinessRules.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/api-reference/business-rules-classic/c_BusinessRules.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6893898b445f457f60eb13c5bfb21cb8d4442bb125ef56d4ef8f37d7cc59d6be",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/api-reference/business-rules-classic/c_BusinessRules.html",
+      "sha256": "0c822fff86de2e6e7d5fc8627230eac1504e14332b5e5a97a64ca806f5884ce3",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-import-coalesce",
+      "url": "https://www.servicenow.com/docs/r/integrate-applications/system-import-sets/c_ImportSetCoalesce.html",
+      "checked_at": "2026-09-29T16:51:44.579044+00:00",
+      "health": {
+        "id": "servicenow-import-coalesce",
+        "url": "https://www.servicenow.com/docs/r/integrate-applications/system-import-sets/c_ImportSetCoalesce.html",
+        "checked_at": "2026-09-29T16:51:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/integrate-applications/system-import-sets/c_ImportSetCoalesce.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/integrate-applications/system-import-sets/c_ImportSetCoalesce.html",
+        "duration_signals": [],
+        "signal_fingerprint": "0c687d4dfa63511c9b8ea3a96136aeb886fe57f13c3befc98eaa6f49dd5be4c1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/integrate-applications/system-import-sets/c_ImportSetCoalesce.html",
+      "sha256": "00f0363e140da91c9dac80913906922efbd6f7ce42138f41a431da14fcd6700e",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-update-sets-tracked",
+      "url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/customizations-tracked-update-sets.html?contentId=Wesk3KW7yiI5hKC5y~QwUA",
+      "checked_at": "2026-09-29T16:51:44.966319+00:00",
+      "health": {
+        "id": "servicenow-update-sets-tracked",
+        "url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/customizations-tracked-update-sets.html?contentId=Wesk3KW7yiI5hKC5y~QwUA",
+        "checked_at": "2026-09-29T16:51:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/customizations-tracked-update-sets.html?contentId=Wesk3KW7yiI5hKC5y~QwUA",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/customizations-tracked-update-sets.html?contentId=Wesk3KW7yiI5hKC5y~QwUA",
+        "duration_signals": [],
+        "signal_fingerprint": "c1d3cbc0e86ebc2af51e32ce2a272d128e5e4fefa99035c59417e7deca8a0237",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/customizations-tracked-update-sets.html?contentId=Wesk3KW7yiI5hKC5y~QwUA",
+      "sha256": "870fbf0d6534ec5d5ac65cc2493efd8808f68d259bb2fc7471136ded24195324",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-brazil-developer-passport",
+      "url": "https://www.servicenow.com/community/developer-passport-blog/introducing-the-developer-passport-brazil-release-preview/ba-p/3586556",
+      "checked_at": "2026-09-29T16:51:45.100897+00:00",
+      "health": {
+        "id": "servicenow-brazil-developer-passport",
+        "url": "https://www.servicenow.com/community/developer-passport-blog/introducing-the-developer-passport-brazil-release-preview/ba-p/3586556",
+        "checked_at": "2026-09-29T16:51:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/community/developer-passport-blog/introducing-the-developer-passport-brazil-release-preview/ba-p/3586556",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Introducing The Developer Passport: Brazil Release Preview",
+        "canonical_url": "https://www.servicenow.com/community/developer-passport-blog/introducing-the-developer-passport-brazil-release-preview/ba-p/3586556",
+        "duration_signals": [],
+        "signal_fingerprint": "3bc10fc217935780c955e242e9293bcd8b69ceb1137fb54e79b301f9d9828b81",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/community/developer-passport-blog/introducing-the-developer-passport-brazil-release-preview/ba-p/3586556",
+      "sha256": "780189cd8ebb9bf1bea89c9030b9faf7b4ad21837d9712f7b321d43bb456ad95",
+      "text_characters": 3926
+    },
+    {
+      "id": "servicenow-glide-server-apis",
+      "url": "https://www.servicenow.com/docs/r/api-reference/scripts/p_GlideServerAPIs.html",
+      "checked_at": "2026-09-29T16:51:45.106946+00:00",
+      "health": {
+        "id": "servicenow-glide-server-apis",
+        "url": "https://www.servicenow.com/docs/r/api-reference/scripts/p_GlideServerAPIs.html",
+        "checked_at": "2026-09-29T16:51:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/api-reference/scripts/p_GlideServerAPIs.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/api-reference/scripts/p_GlideServerAPIs.html",
+        "duration_signals": [],
+        "signal_fingerprint": "b2bfd73e4a17f7bc8ad538027dbb4cffffb10eb6b416d6bd61164f03f2e1bb46",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/api-reference/scripts/p_GlideServerAPIs.html",
+      "sha256": "bec5aa345981130aac8ebb9f5c8d1e2502a251d0e31350692ae22ecf00761437",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-application-access",
+      "url": "https://www.servicenow.com/docs/r/application-development/c_ApplicationAccessSettings.html",
+      "checked_at": "2026-09-29T16:51:45.471156+00:00",
+      "health": {
+        "id": "servicenow-application-access",
+        "url": "https://www.servicenow.com/docs/r/application-development/c_ApplicationAccessSettings.html",
+        "checked_at": "2026-09-29T16:51:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/application-development/c_ApplicationAccessSettings.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/application-development/c_ApplicationAccessSettings.html",
+        "duration_signals": [],
+        "signal_fingerprint": "dad9338af2d3d2247f2c9a39fb89d6dfb36c1815264ba98c2026539d42ce4a9a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/application-development/c_ApplicationAccessSettings.html",
+      "sha256": "4f8e8948f31bde2b14f8d9ed1926dca618ce3fdafdb49d94cf44bcbf8bd482da",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-table-access",
+      "url": "https://www.servicenow.com/docs/r/application-development/r_TableApplicationAccessFields.html",
+      "checked_at": "2026-09-29T16:51:45.830471+00:00",
+      "health": {
+        "id": "servicenow-table-access",
+        "url": "https://www.servicenow.com/docs/r/application-development/r_TableApplicationAccessFields.html",
+        "checked_at": "2026-09-29T16:51:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/application-development/r_TableApplicationAccessFields.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/application-development/r_TableApplicationAccessFields.html",
+        "duration_signals": [],
+        "signal_fingerprint": "83a1a700c5ca12c6b5e86bc43157a0758c7e13cd2d1d31b7c8c30c1698b973db",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/application-development/r_TableApplicationAccessFields.html",
+      "sha256": "4d34b7094540b917bb279d45c795fa7ba0bf1aa2af2299f32030cf27cd80fc87",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-source-control",
+      "url": "https://www.servicenow.com/docs/r/application-development/servicenow-studio-classic/source-control-integration.html",
+      "checked_at": "2026-09-29T16:51:46.010306+00:00",
+      "health": {
+        "id": "servicenow-source-control",
+        "url": "https://www.servicenow.com/docs/r/application-development/servicenow-studio-classic/source-control-integration.html",
+        "checked_at": "2026-09-29T16:51:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/application-development/servicenow-studio-classic/source-control-integration.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/application-development/servicenow-studio-classic/source-control-integration.html",
+        "duration_signals": [],
+        "signal_fingerprint": "bee3193785a2dd3a797bddc3b6385d4ffbfd4c60593561f6893cb7c2e2c644ab",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/application-development/servicenow-studio-classic/source-control-integration.html",
+      "sha256": "9f90c24ff9adbd66d23de7188eb1579e6d458bf1a7cdb0a431dcdd974507b4a6",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-atf-design",
+      "url": "https://www.servicenow.com/docs/r/application-development/automated-test-framework-atf/automated-test-framework-design-considerations.html",
+      "checked_at": "2026-09-29T16:51:46.053012+00:00",
+      "health": {
+        "id": "servicenow-atf-design",
+        "url": "https://www.servicenow.com/docs/r/application-development/automated-test-framework-atf/automated-test-framework-design-considerations.html",
+        "checked_at": "2026-09-29T16:51:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/application-development/automated-test-framework-atf/automated-test-framework-design-considerations.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/application-development/automated-test-framework-atf/automated-test-framework-design-considerations.html",
+        "duration_signals": [],
+        "signal_fingerprint": "c59f6114376e5e19ec00f1eb7e4b2a260cb26f2e7e2ee9db14c54791bb7a05fc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/application-development/automated-test-framework-atf/automated-test-framework-design-considerations.html",
+      "sha256": "df71a19afc8da203fd5e5059863ee92348b1d207f0950003c9fd45b022bda09e",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-rest-api",
+      "url": "https://www.servicenow.com/docs/r/api-reference/rest-api-explorer/c_RESTAPI.html",
+      "checked_at": "2026-09-29T16:51:46.300367+00:00",
+      "health": {
+        "id": "servicenow-rest-api",
+        "url": "https://www.servicenow.com/docs/r/api-reference/rest-api-explorer/c_RESTAPI.html",
+        "checked_at": "2026-09-29T16:51:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/api-reference/rest-api-explorer/c_RESTAPI.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/api-reference/rest-api-explorer/c_RESTAPI.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d34ca69248fca3c7bba258e2eff6e66bfd709c56d03d307fc018d16b0e66e17e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/api-reference/rest-api-explorer/c_RESTAPI.html",
+      "sha256": "860e5b276f27c5c26254f908f2b9f8a24d559d46f9eff814abf1dbcc530fab7b",
+      "text_characters": 40
+    }
+  ],
+  "added_source_ids": [
+    "servicenow-glide-server-apis",
+    "servicenow-application-access",
+    "servicenow-table-access",
+    "servicenow-source-control",
+    "servicenow-atf-design",
+    "servicenow-rest-api"
+  ],
+  "findings": [
+    {
+      "id": "servicenowcad-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Snapshot and final checklist retained older weights",
+      "url": "https://learning.servicenow.com/lxp/en/credentials/certified-application-developer-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011498",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "September 17 guide headers were corrected, but saved snapshot/final checklist still used 15/20/20/20/10/15. Fresh canonical main has 22 subtopics and 20/20/20/20/10/10.",
+      "recommendation": "Align current snapshot, detailed map and checklist; preserve old byte-exact snapshots and both historical reviews/audit references.",
+      "disposition": "applied",
+      "source_id": "servicenow-cad-mainline-blueprint",
+      "resolution": "Align current snapshot, detailed map and checklist; preserve old byte-exact snapshots and both historical reviews/audit references."
+    },
+    {
+      "id": "servicenowcad-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Field access does not repair missing table authorization",
+      "url": "https://www.servicenow.com/docs/r/platform-security/access-control/exploring-access-control-list.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Community junior/senior example omits a qualifying table grant or inheritance; primary reference requires applicable table and field access.",
+      "recommendation": "Teach separate table/field requirements and original negative cases; do not accept the community example as runtime proof.",
+      "disposition": "applied",
+      "source_id": "servicenow-acl-overview",
+      "resolution": "Teach separate table/field requirements and original negative cases; do not accept the community example as runtime proof."
+    },
+    {
+      "id": "servicenowcad-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Standard secure record access is not automatic query-ACL opt-in",
+      "url": "https://www.servicenow.com/docs/r/api-reference/scripts/p_GlideServerAPIs.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Primary API sections distinguish standard CRUD ACL enforcement from explicitly enabled query ACLs and trusted/untrusted query methods.",
+      "recommendation": "Separate query and output authorization, require a narrow structured contract and verify installed API availability.",
+      "disposition": "applied",
+      "source_id": "servicenow-glide-server-apis",
+      "resolution": "Separate query and output authorization, require a narrow structured contract and verify installed API availability."
+    },
+    {
+      "id": "servicenowcad-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "REST query and pagination behavior need explicit failure handling",
+      "url": "https://www.servicenow.com/docs/r/api-reference/rest-api-explorer/c_RESTAPI.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Limit is applied before ACL filtering; invalid query portions can be dropped; cross-scope CRUD switches do not govern web-service requests.",
+      "recommendation": "Distinguish REST and script gates; teach validated input and endpoint-specific continuation despite an empty page, with bounded local counterexamples.",
+      "disposition": "applied",
+      "source_id": "servicenow-rest-api",
+      "resolution": "Distinguish REST and script gates; teach validated input and endpoint-specific continuation despite an empty page, with bounded local counterexamples."
+    },
+    {
+      "id": "servicenowcad-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Source-control history does not prove safe deployment or individual credential isolation",
+      "url": "https://www.servicenow.com/docs/r/application-development/servicenow-studio-classic/source-control-integration.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Reference limits management to nonproduction, describes shared repository credentials and sanitization for unsupported external edits.",
+      "recommendation": "Separate metadata history, credential scope, supported editing and actual installed-state/promotion evidence.",
+      "disposition": "applied",
+      "source_id": "servicenow-source-control",
+      "resolution": "Separate metadata history, credential scope, supported editing and actual installed-state/promotion evidence."
+    },
+    {
+      "id": "servicenowcad-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Test fixtures and custom UI retrieval require explicit isolation and transport checks",
+      "url": "https://www.servicenow.com/docs/r/application-development/automated-test-framework-atf/automated-test-framework-design-considerations.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Reference recommends isolated test-created users/records and documents custom UI component retrieval limits.",
+      "recommendation": "Require nonproduction fixtures, allowed/denied outcomes and target-environment component verification; do not imply local models executed ATF.",
+      "disposition": "applied",
+      "source_id": "servicenow-atf-design",
+      "resolution": "Require nonproduction fixtures, allowed/denied outcomes and target-environment component verification; do not imply local models executed ATF."
+    },
+    {
+      "id": "servicenowcad-deep-7",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "No-Allow-If behavior is contradictory in the primary page",
+      "url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-denial-behavior.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Pass row both requires explicit Allow-If and describes default grant when none exists.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "servicenow-brazil-developer-passport",
+      "review": "Complete 3,926-character article main/date/author read in preceding same-session CSA review, not linked videos/comments. laurenmcman, Administrator, August 13, 2026; vendor program advertises eleven September 14–18 preview sessions. No playback, calendar subscription, GA or exam-cutover inference."
+    },
+    {
+      "source_id": "servicenow-community-scoped-app-security-2026",
+      "review": "Captured 29,267 characters; main through matrix description read, not remaining comments or attached spreadsheet. CMa_yfield, ServiceNow Employee, February 9, 2026. Junior-user/senior-only table example omits inheritance/other table grant; field access cannot repair failed table access. Blanket server ACL statements, naive per-report ACL-call arithmetic and malformed pasted code not accepted as measured or executable evidence. No attachment/code run or breach/salary claims adopted."
+    },
+    {
+      "source_id": "servicenow-community-cad-prep-2026",
+      "review": "Complete 6,100-character main/replies read. Faisal May 6 question and Sumit May 7 solution; four 20% domains now correctly total 80%. Forum cannot establish sufficient preparation or guaranteed exclusions from non-exhaustive subskills. Reply mock/Udemy recommendations not endorsed."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 38,
+      "javascript_blocks_executed": 1,
+      "node_version": "v24.18.1",
+      "public_example_sha256": "ace4626fddc98590236ca4fe1d75433509c1c4e545bc480f3745f209d8318bde",
+      "results": {
+        "passed": 38,
+        "checks": [
+          "script gates allow",
+          "rest gates allow",
+          "script scope read matters",
+          "rest uses its own route gate",
+          "rest web-service gate matters",
+          "script does not use web-service gate",
+          "caller privilege matters",
+          "target caller decision matters",
+          "user permission remains necessary",
+          "identity label alone insufficient",
+          "unauthenticated fixture denied",
+          "unknown route denied",
+          "junior fails senior-only table requirement",
+          "intentional table policy includes junior",
+          "private field still excludes junior",
+          "derived value needs every contributor",
+          "first page is empty but has continuation",
+          "later authorized records remain reachable",
+          "empty-page stop would omit both records",
+          "cycle rejected",
+          "duplicate record rejected",
+          "allowed structured filter",
+          "unknown field rejected",
+          "unexpected operator rejected",
+          "encoded clause injection rejected",
+          "extra field rejected",
+          "array rejected",
+          "first operation applies",
+          "lost acknowledgment retry finds receipt",
+          "key reuse with different body conflicts",
+          "stale distinct operation rejected",
+          "newer repair applies",
+          "old exact replay does not overwrite repair",
+          "current state preserves repair",
+          "only applied operations have receipts",
+          "Boolean revision rejected",
+          "public practice count total",
+          "practice proportions match current blueprint"
+        ],
+        "authorizedIds": [
+          3,
+          6
+        ],
+        "target": {
+          "version": 5,
+          "state": "open"
+        },
+        "receiptCount": 2,
+        "nodeVersion": "v24.18.1"
+      },
+      "execution_stdout": "{\n  \"passed\": 38,\n  \"checks\": [\n    \"script gates allow\",\n    \"rest gates allow\",\n    \"script scope read matters\",\n    \"rest uses its own route gate\",\n    \"rest web-service gate matters\",\n    \"script does not use web-service gate\",\n    \"caller privilege matters\",\n    \"target caller decision matters\",\n    \"user permission remains necessary\",\n    \"identity label alone insufficient\",\n    \"unauthenticated fixture denied\",\n    \"unknown route denied\",\n    \"junior fails senior-only table requirement\",\n    \"intentional table policy includes junior\",\n    \"private field still excludes junior\",\n    \"derived value needs every contributor\",\n    \"first page is empty but has continuation\",\n    \"later authorized records remain reachable\",\n    \"empty-page stop would omit both records\",\n    \"cycle rejected\",\n    \"duplicate record rejected\",\n    \"allowed structured filter\",\n    \"unknown field rejected\",\n    \"unexpected operator rejected\",\n    \"encoded clause injection rejected\",\n    \"extra field rejected\",\n    \"array rejected\",\n    \"first operation applies\",\n    \"lost acknowledgment retry finds receipt\",\n    \"key reuse with different body conflicts\",\n    \"stale distinct operation rejected\",\n    \"newer repair applies\",\n    \"old exact replay does not overwrite repair\",\n    \"current state preserves repair\",\n    \"only applied operations have receipts\",\n    \"Boolean revision rejected\",\n    \"public practice count total\",\n    \"practice proportions match current blueprint\"\n  ],\n  \"authorizedIds\": [\n    3,\n    6\n  ],\n  \"target\": {\n    \"version\": 5,\n    \"state\": \"open\"\n  },\n  \"receiptCount\": 2,\n  \"nodeVersion\": \"v24.18.1\"\n}",
+      "execution_boundary": "Actual offline Node.js execution of original trusted-label access, fixed pagination, structured input and sequential receipt/version models. No ServiceNow engine, account, instance, plugin, credentials, messages or paid content used.",
+      "model_limits": "Chosen policies are not the complete ACL engine. Fixed fixture continuation is not a live Table API contract or concurrent snapshot. The input validator does not parse encoded queries. In-memory sequential receipts prove no crash durability, concurrency or distributed atomicity. Practice proportions do not predict exam results."
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Deny-Unless default-access prose remains internally contradictory. Installed ACL/API behavior and ServiceNow instance activities have not been executed.",
+    "Canonical blueprint manually verified; automated extractor remains empty/manual-review. Product release labels and preview announcements do not establish exam cutover.",
+    "Assigned annual maintenance and future windows unverified. Three resources blocked, course shells and paid interiors inaccessible; no practice questions or videos consumed.",
+    "Thirty-eight local Node.js checks exercise chosen offline models only; no complete ACL engine, real API pagination, concurrency, crash durability or distributed atomicity proof. Eight instance labs and human review remain pending.",
+    "No installs, account/auth/permission changes, platform runtime/service/reboot changes, paid credits or external messages. Five reserved GitHub guides and disabled notification pilot untouched."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 179,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Actual offline Node.js execution of original trusted-label access, fixed pagination, structured input and sequential receipt/version models. No ServiceNow engine, account, instance, plugin, credentials, messages or paid content used.",
+    "passed": 38,
+    "javascript_blocks_executed": 1,
+    "node_version": "v24.18.1",
+    "public_example_sha256": "ace4626fddc98590236ca4fe1d75433509c1c4e545bc480f3745f209d8318bde",
+    "results": {
+      "passed": 38,
+      "checks": [
+        "script gates allow",
+        "rest gates allow",
+        "script scope read matters",
+        "rest uses its own route gate",
+        "rest web-service gate matters",
+        "script does not use web-service gate",
+        "caller privilege matters",
+        "target caller decision matters",
+        "user permission remains necessary",
+        "identity label alone insufficient",
+        "unauthenticated fixture denied",
+        "unknown route denied",
+        "junior fails senior-only table requirement",
+        "intentional table policy includes junior",
+        "private field still excludes junior",
+        "derived value needs every contributor",
+        "first page is empty but has continuation",
+        "later authorized records remain reachable",
+        "empty-page stop would omit both records",
+        "cycle rejected",
+        "duplicate record rejected",
+        "allowed structured filter",
+        "unknown field rejected",
+        "unexpected operator rejected",
+        "encoded clause injection rejected",
+        "extra field rejected",
+        "array rejected",
+        "first operation applies",
+        "lost acknowledgment retry finds receipt",
+        "key reuse with different body conflicts",
+        "stale distinct operation rejected",
+        "newer repair applies",
+        "old exact replay does not overwrite repair",
+        "current state preserves repair",
+        "only applied operations have receipts",
+        "Boolean revision rejected",
+        "public practice count total",
+        "practice proportions match current blueprint"
+      ],
+      "authorizedIds": [
+        3,
+        6
+      ],
+      "target": {
+        "version": 5,
+        "state": "open"
+      },
+      "receiptCount": 2,
+      "nodeVersion": "v24.18.1"
+    },
+    "execution_stdout": "{\n  \"passed\": 38,\n  \"checks\": [\n    \"script gates allow\",\n    \"rest gates allow\",\n    \"script scope read matters\",\n    \"rest uses its own route gate\",\n    \"rest web-service gate matters\",\n    \"script does not use web-service gate\",\n    \"caller privilege matters\",\n    \"target caller decision matters\",\n    \"user permission remains necessary\",\n    \"identity label alone insufficient\",\n    \"unauthenticated fixture denied\",\n    \"unknown route denied\",\n    \"junior fails senior-only table requirement\",\n    \"intentional table policy includes junior\",\n    \"private field still excludes junior\",\n    \"derived value needs every contributor\",\n    \"first page is empty but has continuation\",\n    \"later authorized records remain reachable\",\n    \"empty-page stop would omit both records\",\n    \"cycle rejected\",\n    \"duplicate record rejected\",\n    \"allowed structured filter\",\n    \"unknown field rejected\",\n    \"unexpected operator rejected\",\n    \"encoded clause injection rejected\",\n    \"extra field rejected\",\n    \"array rejected\",\n    \"first operation applies\",\n    \"lost acknowledgment retry finds receipt\",\n    \"key reuse with different body conflicts\",\n    \"stale distinct operation rejected\",\n    \"newer repair applies\",\n    \"old exact replay does not overwrite repair\",\n    \"current state preserves repair\",\n    \"only applied operations have receipts\",\n    \"Boolean revision rejected\",\n    \"public practice count total\",\n    \"practice proportions match current blueprint\"\n  ],\n  \"authorizedIds\": [\n    3,\n    6\n  ],\n  \"target\": {\n    \"version\": 5,\n    \"state\": \"open\"\n  },\n  \"receiptCount\": 2,\n  \"nodeVersion\": \"v24.18.1\"\n}",
+    "model_limits": "Chosen policies are not the complete ACL engine. Fixed fixture continuation is not a live Table API contract or concurrent snapshot. The input validator does not parse encoded queries. In-memory sequential receipts prove no crash durability, concurrency or distributed atomicity. Practice proportions do not predict exam results.",
+    "learning_catalog_consistency": "passed",
+    "unit_test_seconds": 29.999,
+    "strict_site_build_seconds": 29.76,
+    "initial_site_invocation": "Initial invocation omitted --config-file and stopped before building. Reissued with the repository config .site-build/mkdocs.yml; strict build and generated-site validation passed."
+  },
+  "archived_prior_baselines": {
+    "objectives": {
+      "path": "data/objective-snapshots/servicenow-cad-2026-09-07-official-objectives.txt",
+      "sha256": "d0d60a1f5b77d3baa45857b05b7e01c67ab7f5afdbc53dc0558c660f244b21b0"
+    },
+    "status": {
+      "path": "data/objective-snapshots/servicenow-cad-2026-09-07-official-status.json",
+      "sha256": "e3b4772cbfdcf2428eab25fa1a8fb15f7d58ff4d5473ec9bcfd66a0a7229a410"
+    },
+    "historical_audit_paths_updated": 2
+  },
+  "manual_baseline_acceptance": {
+    "reviewed_on": "2026-09-29",
+    "browser_receipt": {
+      "url": "https://learning.servicenow.com/lxp/en/credentials/certified-application-developer-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011498",
+      "boundary": "Public page in a fresh unsigned headless browser context; no account, existing profile, credential, enrollment or instance action.",
+      "http_status": 200,
+      "final_url": "https://learning.servicenow.com/lxp/en/credentials/certified-application-developer-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011498",
+      "characters": 8322,
+      "sha256": "42a525a2fc7febdd7b8987c99a1983b4e2e645008527efd2b02e8c2d75b5a0ca",
+      "sample_tail_excluded": true
+    },
+    "objective_counts": [
+      4,
+      5,
+      4,
+      4,
+      2,
+      3
+    ],
+    "weights": [
+      20,
+      20,
+      20,
+      20,
+      10,
+      10
+    ],
+    "before": {
+      "objectives": {
+        "path": "data/objective-snapshots/servicenow-cad-2026-09-07-official-objectives.txt",
+        "sha256": "d0d60a1f5b77d3baa45857b05b7e01c67ab7f5afdbc53dc0558c660f244b21b0"
+      },
+      "status": {
+        "path": "data/objective-snapshots/servicenow-cad-2026-09-07-official-status.json",
+        "sha256": "e3b4772cbfdcf2428eab25fa1a8fb15f7d58ff4d5473ec9bcfd66a0a7229a410"
+      },
+      "historical_audit_paths_updated": 2
+    },
+    "after": {
+      "objectives_sha256": "f71371fc8583ec438fbdde805d2e69d8034607333e1bc033ccc74ae5a261b59a",
+      "status_sha256": "e3b4772cbfdcf2428eab25fa1a8fb15f7d58ff4d5473ec9bcfd66a0a7229a410"
+    },
+    "reason": "Fresh unsigned canonical browser main confirms22verbatimsubtopics20/20/20/20/10/10. September17guideheadersalreadycorrected butold15/20/20/20/10/15snapshot/finalchecklistremained. CanonicalstillJanuary2026; repairdrift,nodatestatednewcutover. Direct monitor remains manual-review."
+  },
+  "historical_first_review_recovered": {
+    "source_commit": "9fd0cef083bc4d83b6beb87e37accfd0ff448937",
+    "review": {
+      "id": "servicenow-cad-2026-09-02-source-validation",
+      "exam_code": "SERVICENOW-CAD",
+      "guide_path": "guides/SERVICENOW-CAD-servicenow-certified-application-developer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/servicenow-cad-2026-09-07-official-objectives.txt",
+      "blueprint_snapshot_sha256": "d0d60a1f5b77d3baa45857b05b7e01c67ab7f5afdbc53dc0558c660f244b21b0",
+      "objective_coverage": [
+        {
+          "objective_group": "Designing and Creating an Application (15%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Application User Interface (20%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Security and Restricting Access (20%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Application Automation (20%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1–2",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Working with External Data (10%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenario 2",
+            "Labs 5–6"
+          ]
+        },
+        {
+          "objective_group": "Managing Applications (15%)",
+          "guide_sections": [
+            "Section 6",
+            "Scenarios 1 and 3",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 8,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "All six January 2026 weighted domains are mapped through a complete scoped-application lifecycle: fit and data model, persona-tested interfaces, layered ACL/module/cross-scope security, declarative and scripted automation, reconciled import/REST integration, and reviewed source/repository/delegated-development promotion and rollback. Three integrated scenarios, eight authorized nonproduction labs and 40 original checks are included. The official MeasureUp bank's displayed 20/20/20/20/10/10 distribution is explicitly separated from the mainline blueprint's 15/20/20/20/10/15 authority. Only MeasureUp is named for exam-style practice; no recalled/live item, dump or copied course content is used."
+    },
+    "objective_archive_bytes_equal_original": true
+  },
+  "source_reading_boundaries": {
+    "servicenow-cad-mainline-blueprint": "Direct empty body and web loading shell; complete canonical main recovered in a fresh unsigned Chrome context and manually read. Saved 8,322 characters before the sample-question section, with browser receipt/hash. January 2026 label, 22 subtopics, 20/20/20/20/10/10 weights, 60 questions/90 minutes, Pearson/OnVUE, 90-day schedule-and-complete window, conditional results, unpublished cut score and annual maintenance. Sample items excluded before saving/printing. Manual snapshot repair preserves older exact bytes and historical audits/reviews. Automated monitor remains manual-review.",
+    "servicenow-cad-learning-path": "Direct empty body. Path entry only; no current course body, assignment, entitlement or duration verified.",
+    "servicenow-technical-training-catalog": "HTTP 403. Earlier three-day instructor-led anchors not reverified; no current PDF body read.",
+    "servicenow-scripting-fundamentals": "Direct empty body on older Washington-labeled route. No current lesson, syllabus, duration or entitlement verified.",
+    "servicenow-credential-catalog": "Direct 34-character shell. Entry route only, no authenticated course interiors or assignment.",
+    "servicenow-product-documentation": "Direct 40-character shell. Specific primary articles read separately; homepage capture is not a product audit.",
+    "servicenow-developer-program": "Direct 125-character entry shell. No account, PDI allocation, instance runtime or environment changes.",
+    "measureup-servicenow-cad": "Complete 11,180-character public product main through FAQ read. March 2026 listing, 120 questions, counts 24/24/24/24/12/12 match current blueprint; generic around-150 wording differs. Practice/Certification modes observed. Eleven advertised languages include ten automatic translations, not official exam languages. Readiness, guarantee and salary claims not adopted. No demo, questions, explanations or paid interiors opened.",
+    "youtube-servicenow-developers": "Direct 185-character title/footer only. No video playback or playlist audit.",
+    "servicenow-plan-before-build": "Direct 40-character shell. Complete fresh Brazil September 10 main L1483-1509 read, excluding generated summary. Scope/global capability, namespace, PDI proof-of-concept versus organizational development decisions. No PDI import or namespace migration performed.",
+    "servicenow-community-scoped-app-security-2026": "Captured 29,267 characters; main through matrix description read, not remaining comments or attached spreadsheet. CMa_yfield, ServiceNow Employee, February 9, 2026. Junior-user/senior-only table example omits inheritance/other table grant; field access cannot repair failed table access. Blanket server ACL statements, naive per-report ACL-call arithmetic and malformed pasted code not accepted as measured or executable evidence. No attachment/code run or breach/salary claims adopted.",
+    "servicenow-community-cad-prep-2026": "Complete 6,100-character main/replies read. Faisal May 6 question and Sumit May 7 solution; four 20% domains now correctly total 80%. Forum cannot establish sufficient preparation or guaranteed exclusions from non-exhaustive subskills. Reply mock/Udemy recommendations not endorsed.",
+    "oreilly-servicenow-application-development": "HTTP 403; earlier 2017 context and 11–15 hour estimate not reverified. No paid interior or current coverage/quality claim.",
+    "udemy-servicenow-cad-ultimate": "HTTP 403; earlier February 2026 and 6h37 metadata not reverified. No syllabus, lesson or quality audit.",
+    "servicenow-welcome-current": "Current recommended URL from canonical blueprint. Direct empty and browser loading shell. No lesson or duration; earlier three-hour metadata not reverified.",
+    "servicenow-pearson-faq": "Direct empty body; same-session preceding CSA review read full 129-line public browser FAQ. SNU SSO/provider, recommended training except Expert Architect requirement, ILT attempt inclusion, 90-day window and retake waits. Center rescheduling 48 hours versus OnVUE until scheduled start including check-in. Observed CSA/CAD retake fee not booking advice or a payment action.",
+    "servicenow-cmp-payment": "Direct empty; full 71-line browser main read in preceding same-session CSA review. One annual fee for qualifying multiple certifications. English January 15–April 15, 2026 differs by a day from Japanese KB0011232 indexed dates. No assigned deadline/future window, organization approval or payment action verified.",
+    "servicenow-acl-overview": "Direct 40-character shell. Same-session selected fresh Brazil September 10 main L1804-1957 read, excluding generated summary and final tail. Table plus field access, role-list OR, condition/script requirements, applicability, no-match versus invalid/empty and wildcard/default distinctions. Earlier indexed Australia body differs in family label. No complete engine/runtime proof.",
+    "servicenow-acl-deny-unless": "Direct 40-character shell. Complete short fresh Brazil September 10 main L1769-1785 and indexed Australia main read in same session. Deny-Unless priority; Pass row contradicts itself about explicit Allow-If versus default grant when absent. Unresolved, not implemented as a claimed platform engine.",
+    "servicenow-business-rules": "Direct 40-character shell. Complete fresh Brazil September 10 main L1311-1364 read in same session, excluding generated summary. Workflow Studio recommendation, before-save behavior, recursion, async ordering/previous versus condition-builder behavior and bypass/context limits. No vendor scripts copied/run or rule processing disabled.",
+    "servicenow-import-coalesce": "Direct 40-character shell. Complete indexed Australia March 12 main read in same session, excluding generated summary. All coalesce fields match, first duplicate target updates, no-match inserts, case/empty options. No example vendor code copied/run.",
+    "servicenow-update-sets-tracked": "Direct 40-character shell. Complete fresh Brazil September 10 main L1481-1537 read in same session, excluding generated summary. Metadata versus orders, update_synch restrictions, special handlers and destructive schema/preview limits. No transport, attribute or schema changes.",
+    "servicenow-brazil-developer-passport": "Complete 3,926-character article main/date/author read in preceding same-session CSA review, not linked videos/comments. laurenmcman, Administrator, August 13, 2026; vendor program advertises eleven September 14–18 preview sessions. No playback, calendar subscription, GA or exam-cutover inference.",
+    "servicenow-glide-server-apis": "Direct 40-character shell; selected indexed Australia March 12 GlideRecord/Secure/query ACL sections read, not the entire 14-minute API reference. Standard ACL checks versus explicit query-ACL opt-in; addUserEncodedQuery for untrusted input and addSystemEncodedQuery for trusted conditions. No runtime or vendor code copied/run; inconsistent example identifiers not adopted. Public browser wait timed out without a saved main body; this evidence is indexed primary text.",
+    "servicenow-application-access": "Direct 40-character shell; complete indexed Australia March 12 main read. Caller-owned cross-scope privilege, target-table controls and target-owned restricted-caller records distinguished. No whole linked reference set or installed configuration audit.",
+    "servicenow-table-access": "Direct 40-character shell; complete indexed Australia March 12 main read. Cross-scope CanRead dependency and create/write/delete controls, separate web-service enablement plus caller permission. REST primary reference clarifies those cross-scope CRUD switches do not govern web-service requests.",
+    "servicenow-source-control": "Direct 40-character shell; complete fresh Brazil September 10 main L1496-1547 read, excluding generated summary. Nonproduction global/scoped app support, per-app repository, shared credential set, metadata workflow and limited external editing/sanitization rules. No Git linkage, credentials, MID server, service or production changes.",
+    "servicenow-atf-design": "Direct 40-character shell; complete fresh Brazil September 10 main L1503-1563 read in two chunks, excluding generated summary. Isolated test-created records/users, no system metadata/existing-user fixtures, nonproduction-only testing, parallel conflicts and custom-UI retrieval/transport limits. Not a claim that all ATF test types exclude dashboards. No platform test execution.",
+    "servicenow-rest-api": "Direct 40-character shell; complete fresh Brazil September 10 main L1299-1537 read in chunks, excluding generated summary. Endpoint/version/parameter and security context, limit before ACL filtering, invalid query portions dropped, web-service gate independent of cross-scope CRUD switches, caller permissions and Explorer mutations. Public-table/ACL-deactivation recipe and inconsistent field-key example read but not adopted/executed. No API calls, global property changes, CORS changes or external write."
+  },
+  "public_examples": [
+    {
+      "language": "javascript",
+      "code": "'use strict';\nconst assert = require('node:assert/strict');\nconst checks = [];\nfunction check(name, actual, expected) {\n  assert.deepStrictEqual(actual, expected, name);\n  checks.push(name);\n}\n\n// Trusted fixture labels, not authentication or a ServiceNow ACL engine.\nfunction allow(route, controls) {\n  if (!controls.authenticated || !controls.userAcl) return false;\n  if (route === 'script') {\n    return controls.scopeRead && controls.callingPrivilege && controls.targetCaller;\n  }\n  if (route === 'rest') return controls.webService;\n  return false;\n}\nconst permitted = { authenticated: true, userAcl: true, scopeRead: true,\n  callingPrivilege: true, targetCaller: true, webService: true };\ncheck('script gates allow', allow('script', permitted), true);\ncheck('rest gates allow', allow('rest', permitted), true);\ncheck('script scope read matters', allow('script', {...permitted, scopeRead: false}), false);\ncheck('rest uses its own route gate', allow('rest', {...permitted, scopeRead: false}), true);\ncheck('rest web-service gate matters', allow('rest', {...permitted, webService: false}), false);\ncheck('script does not use web-service gate', allow('script', {...permitted, webService: false}), true);\ncheck('caller privilege matters', allow('script', {...permitted, callingPrivilege: false}), false);\ncheck('target caller decision matters', allow('script', {...permitted, targetCaller: false}), false);\ncheck('user permission remains necessary', allow('rest', {...permitted, userAcl: false}), false);\ncheck('identity label alone insufficient', allow('script', {...permitted, userAcl: false}), false);\ncheck('unauthenticated fixture denied', allow('rest', {...permitted, authenticated: false}), false);\ncheck('unknown route denied', allow('other', permitted), false);\n\nfunction rolePass(actual, required) {\n  return actual.some(role => required.includes(role));\n}\ncheck('junior fails senior-only table requirement', rolePass(['junior'], ['senior']), false);\ncheck('intentional table policy includes junior', rolePass(['junior'], ['junior', 'senior']), true);\ncheck('private field still excludes junior', rolePass(['junior'], ['senior']), false);\ncheck('derived value needs every contributor', [true, false].every(Boolean), false);\n\n// Page limit is applied to the source slice, then access filtering occurs.\n// Explicit next offsets come from this fixed fixture, not a real Table API.\nconst source = [1, 2, 3, 4, 5, 6].map(id => ({id, visible: id === 3 || id === 6}));\nfunction page(offset, limit) {\n  return { rows: source.slice(offset, offset + limit).filter(row => row.visible).map(row => row.id),\n    next: offset + limit < source.length ? offset + limit : null };\n}\nfunction collect(readPage) {\n  const seen = new Set();\n  const records = new Set();\n  const output = [];\n  let offset = 0;\n  while (offset !== null) {\n    if (seen.has(offset) || seen.size >= 10) throw new Error('continuation cycle or bound');\n    seen.add(offset);\n    const result = readPage(offset, 2);\n    for (const id of result.rows) {\n      if (records.has(id)) throw new Error('duplicate identity');\n      records.add(id);\n      output.push(id);\n    }\n    offset = result.next;\n  }\n  return output;\n}\nfunction throws(action) { try { action(); return false; } catch { return true; } }\ncheck('first page is empty but has continuation', page(0, 2), {rows: [], next: 2});\ncheck('later authorized records remain reachable', collect(page), [3, 6]);\ncheck('empty-page stop would omit both records', page(0, 2).rows.length, 0);\ncheck('cycle rejected', throws(() => collect(() => ({rows: [], next: 0}))), true);\ncheck('duplicate record rejected', throws(() => collect(offset =>\n  ({rows: [3], next: offset === 0 ? 2 : null}))), true);\n\n// Deliberately small application query contract; never parses encoded queries.\nfunction validFilter(filter) {\n  return filter !== null && typeof filter === 'object' && !Array.isArray(filter)\n    && Object.keys(filter).sort().join(',') === 'field,op,value'\n    && ['state', 'number'].includes(filter.field) && filter.op === 'eq'\n    && typeof filter.value === 'string' && filter.value.length > 0\n    && filter.value.length <= 32 && !/[\\^\\r\\n]/.test(filter.value);\n}\ncheck('allowed structured filter', validFilter({field: 'state', op: 'eq', value: 'open'}), true);\ncheck('unknown field rejected', validFilter({field: 'satte', op: 'eq', value: 'open'}), false);\ncheck('unexpected operator rejected', validFilter({field: 'state', op: 'script', value: 'open'}), false);\ncheck('encoded clause injection rejected', validFilter({field: 'state', op: 'eq', value: 'open^ORactive=true'}), false);\ncheck('extra field rejected', validFilter({field: 'state', op: 'eq', value: 'open', admin: true}), false);\ncheck('array rejected', validFilter([]), false);\n\n// Sequential in-memory receipt and version guard: no crash durability guarantee.\nconst target = {version: 3, state: 'open'};\nconst receipts = new Map();\nfunction apply(operation) {\n  if (!operation || typeof operation.key !== 'string' || !operation.key\n      || !Number.isInteger(operation.expected) || !['open', 'closed'].includes(operation.state)) {\n    return 'invalid';\n  }\n  const payload = JSON.stringify([operation.expected, operation.state]);\n  if (receipts.has(operation.key)) {\n    return receipts.get(operation.key) === payload ? 'replayed' : 'conflict';\n  }\n  if (target.version !== operation.expected) return 'stale';\n  target.version += 1;\n  target.state = operation.state;\n  receipts.set(operation.key, payload);\n  return 'applied';\n}\nconst close = {key: 'request-7-close', expected: 3, state: 'closed'};\ncheck('first operation applies', apply(close), 'applied');\ncheck('lost acknowledgment retry finds receipt', apply(close), 'replayed');\ncheck('key reuse with different body conflicts', apply({...close, state: 'open'}), 'conflict');\ncheck('stale distinct operation rejected', apply({...close, key: 'another'}), 'stale');\ncheck('newer repair applies', apply({key: 'repair', expected: 4, state: 'open'}), 'applied');\ncheck('old exact replay does not overwrite repair', apply(close), 'replayed');\ncheck('current state preserves repair', target, {version: 5, state: 'open'});\ncheck('only applied operations have receipts', receipts.size, 2);\ncheck('Boolean revision rejected', apply({key: 'invalid', expected: true, state: 'closed'}), 'invalid');\nconst counts = [24, 24, 24, 24, 12, 12];\ncheck('public practice count total', counts.reduce((a, b) => a + b, 0), 120);\ncheck('practice proportions match current blueprint', counts.map(n => n / 120 * 100), [20,20,20,20,10,10]);\nconsole.log(JSON.stringify({passed: checks.length, checks, authorizedIds: collect(page),\n  target, receiptCount: receipts.size, nodeVersion: process.version}, null, 2));\n",
+      "boundary": "Actual offline Node.js execution of original trusted-label access, fixed pagination, structured input and sequential receipt/version models. No ServiceNow engine, account, instance, plugin, credentials, messages or paid content used."
+    }
+  ],
+  "catalog_observations": [
+    {
+      "source_id": "measureup-servicenow-cad",
+      "finding": "Specific 120-question allocation matches 20/20/20/20/10/10; generic approximately-150 wording differs. Advertising translations, score targets and guarantees are not the official exam contract. No practice interiors accessed."
+    },
+    {
+      "source_id": "servicenow-community-cad-prep-2026",
+      "finding": "Four 20% domains total 80%, now consistent with the fresh canonical blueprint; forum claims cannot guarantee exclusions or preparation sufficiency."
+    }
+  ]
+}

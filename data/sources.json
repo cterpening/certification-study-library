@@ -3,6 +3,90 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "servicenow-glide-server-apis",
+      "title": "Glide Server APIs — GlideRecordSecure and query ACLs",
+      "url": "https://www.servicenow.com/docs/r/api-reference/scripts/p_GlideServerAPIs.html",
+      "publisher": "ServiceNow",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SERVICENOW-CAD deep review: Direct 40-character shell; selected indexed Australia March 12 GlideRecord/Secure/query ACL sections read, not the entire 14-minute API reference. Standard ACL checks versus explicit query-ACL opt-in; addUserEncodedQuery for untrusted input and addSystemEncodedQuery for trusted conditions. No runtime or vendor code copied/run; inconsistent example identifiers not adopted. Public browser wait timed out without a saved main body; this evidence is indexed primary text. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "servicenow-application-access",
+      "title": "Application access settings",
+      "url": "https://www.servicenow.com/docs/r/application-development/c_ApplicationAccessSettings.html",
+      "publisher": "ServiceNow",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SERVICENOW-CAD deep review: Direct 40-character shell; complete indexed Australia March 12 main read. Caller-owned cross-scope privilege, target-table controls and target-owned restricted-caller records distinguished. No whole linked reference set or installed configuration audit. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "servicenow-table-access",
+      "title": "Table design and runtime access settings",
+      "url": "https://www.servicenow.com/docs/r/application-development/r_TableApplicationAccessFields.html",
+      "publisher": "ServiceNow",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SERVICENOW-CAD deep review: Direct 40-character shell; complete indexed Australia March 12 main read. Cross-scope CanRead dependency and create/write/delete controls, separate web-service enablement plus caller permission. REST primary reference clarifies those cross-scope CRUD switches do not govern web-service requests. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "servicenow-source-control",
+      "title": "Source control integration in ServiceNow Studio",
+      "url": "https://www.servicenow.com/docs/r/application-development/servicenow-studio-classic/source-control-integration.html",
+      "publisher": "ServiceNow",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SERVICENOW-CAD deep review: Direct 40-character shell; complete fresh Brazil September 10 main L1496-1547 read, excluding generated summary. Nonproduction global/scoped app support, per-app repository, shared credential set, metadata workflow and limited external editing/sanitization rules. No Git linkage, credentials, MID server, service or production changes. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "servicenow-atf-design",
+      "title": "Automated Test Framework design considerations",
+      "url": "https://www.servicenow.com/docs/r/application-development/automated-test-framework-atf/automated-test-framework-design-considerations.html",
+      "publisher": "ServiceNow",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SERVICENOW-CAD deep review: Direct 40-character shell; complete fresh Brazil September 10 main L1503-1563 read in two chunks, excluding generated summary. Isolated test-created records/users, no system metadata/existing-user fixtures, nonproduction-only testing, parallel conflicts and custom-UI retrieval/transport limits. Not a claim that all ATF test types exclude dashboards. No platform test execution. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "servicenow-rest-api",
+      "title": "ServiceNow REST API overview and query/security behavior",
+      "url": "https://www.servicenow.com/docs/r/api-reference/rest-api-explorer/c_RESTAPI.html",
+      "publisher": "ServiceNow",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SERVICENOW-CAD deep review: Direct 40-character shell; complete fresh Brazil September 10 main L1299-1537 read in chunks, excluding generated summary. Endpoint/version/parameter and security context, limit before ACL filtering, invalid query portions dropped, web-service gate independent of cross-scope CRUD switches, caller permissions and Explorer mutations. Public-table/ACL-deactivation recipe and inconsistent field-key example read but not adopted/executed. No API calls, global property changes, CORS changes or external write. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "servicenow-welcome-current",
       "title": "Welcome to ServiceNow — current recommended course",
       "url": "https://learning.servicenow.com/lxp/en/now-platform/welcome-to-servicenow?course_id=386f3cf847b36a90c00af235126d430c&id=learning_course_prev",
@@ -11,10 +95,11 @@
       "source_type": "official-training",
       "access_model": "free-account",
       "supported_exams": [
-        "SERVICENOW-CSA"
+        "SERVICENOW-CSA",
+        "SERVICENOW-CAD"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SERVICENOW-CSA deep review: Correct URL from canonical blueprint course_id386f3cf847b36a90c00af235126d430c. Directempty/browser9lineLoading shell; no duration/interior. Earlier3hoursnotreverified. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SERVICENOW-CSA deep review: Correct URL from canonical blueprint course_id386f3cf847b36a90c00af235126d430c. Directempty/browser9lineLoading shell; no duration/interior. Earlier3hoursnotreverified. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution. September 29 SERVICENOW-CAD deep review: Current recommended URL from canonical blueprint. Direct empty and browser loading shell. No lesson or duration; earlier three-hour metadata not reverified. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
       "id": "servicenow-administration-fundamentals",
@@ -39,10 +124,11 @@
       "source_type": "official-documentation",
       "access_model": "public",
       "supported_exams": [
-        "SERVICENOW-CSA"
+        "SERVICENOW-CSA",
+        "SERVICENOW-CAD"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SERVICENOW-CSA deep review: Directempty; full129linebrowser FAQ read. SSO viaSNU,trainingnotmandatory exceptExpertArchitect,ILTincludesattempt,90daywindow andretakewait distinctions. Centerreschedule48hours versusOnVUEuntilscheduledstartincludingcheckin. CSAretakeUSD150 and3days/30days/6months delays observed but no booking/fee action. No account/auth changes. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SERVICENOW-CSA deep review: Directempty; full129linebrowser FAQ read. SSO viaSNU,trainingnotmandatory exceptExpertArchitect,ILTincludesattempt,90daywindow andretakewait distinctions. Centerreschedule48hours versusOnVUEuntilscheduledstartincludingcheckin. CSAretakeUSD150 and3days/30days/6months delays observed but no booking/fee action. No account/auth changes. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution. September 29 SERVICENOW-CAD deep review: Direct empty body; same-session preceding CSA review read full 129-line public browser FAQ. SNU SSO/provider, recommended training except Expert Architect requirement, ILT attempt inclusion, 90-day window and retake waits. Center rescheduling 48 hours versus OnVUE until scheduled start including check-in. Observed CSA/CAD retake fee not booking advice or a payment action. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
       "id": "servicenow-cmp-payment",
@@ -53,10 +139,11 @@
       "source_type": "official-documentation",
       "access_model": "public",
       "supported_exams": [
-        "SERVICENOW-CSA"
+        "SERVICENOW-CSA",
+        "SERVICENOW-CAD"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SERVICENOW-CSA deep review: Directempty; full71linebrowser payment FAQ read. One annualfee for qualifyingmultiplecerts,organizationcredits needapproval/linking. EnglishJanuary15-April15,2026 differs byday fromsupplementalJapaneseKB0011232indexedJanuary16-April16. No assigneddeadline/futurewindowverified; no payment/request submitted. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SERVICENOW-CSA deep review: Directempty; full71linebrowser payment FAQ read. One annualfee for qualifyingmultiplecerts,organizationcredits needapproval/linking. EnglishJanuary15-April15,2026 differs byday fromsupplementalJapaneseKB0011232indexedJanuary16-April16. No assigneddeadline/futurewindowverified; no payment/request submitted. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution. September 29 SERVICENOW-CAD deep review: Direct empty; full 71-line browser main read in preceding same-session CSA review. One annual fee for qualifying multiple certifications. English January 15–April 15, 2026 differs by a day from Japanese KB0011232 indexed dates. No assigned deadline/future window, organization approval or payment action verified. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
       "id": "servicenow-completing-delta",
@@ -81,10 +168,11 @@
       "source_type": "official-documentation",
       "access_model": "public",
       "supported_exams": [
-        "SERVICENOW-CSA"
+        "SERVICENOW-CSA",
+        "SERVICENOW-CAD"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SERVICENOW-CSA deep review: Direct40-character shell. Selected main read from currentBrazilSeptember10browser L1804-1957 (lastwildcardscope tailnotclaimed), excludingAI-generatedsummary. Conditions,required-roleOR,applicability,table+field,pre/postquery,empty/invalid versusno-match/default property distinctions. PriorindexedAustraliaselectedreading differs inrelease label. No wholeACLengine/runtimeproof. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SERVICENOW-CSA deep review: Direct40-character shell. Selected main read from currentBrazilSeptember10browser L1804-1957 (lastwildcardscope tailnotclaimed), excludingAI-generatedsummary. Conditions,required-roleOR,applicability,table+field,pre/postquery,empty/invalid versusno-match/default property distinctions. PriorindexedAustraliaselectedreading differs inrelease label. No wholeACLengine/runtimeproof. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution. September 29 SERVICENOW-CAD deep review: Direct 40-character shell. Same-session selected fresh Brazil September 10 main L1804-1957 read, excluding generated summary and final tail. Table plus field access, role-list OR, condition/script requirements, applicability, no-match versus invalid/empty and wildcard/default distinctions. Earlier indexed Australia body differs in family label. No complete engine/runtime proof. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
       "id": "servicenow-acl-types",
@@ -109,10 +197,11 @@
       "source_type": "official-documentation",
       "access_model": "public",
       "supported_exams": [
-        "SERVICENOW-CSA"
+        "SERVICENOW-CSA",
+        "SERVICENOW-CAD"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SERVICENOW-CSA deep review: Direct40-character shell. Complete short main read inindexedAustralia andliveBrazilSeptember10L1769-1785. Deny-Unless priority,roleOR plusotherclauses. Passrow internallycontradictory explicitAllowIfrequired versusdefaultgrantwhennone. Preservedunresolved; chosenlocalpolicy not platformengine. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SERVICENOW-CSA deep review: Direct40-character shell. Complete short main read inindexedAustralia andliveBrazilSeptember10L1769-1785. Deny-Unless priority,roleOR plusotherclauses. Passrow internallycontradictory explicitAllowIfrequired versusdefaultgrantwhennone. Preservedunresolved; chosenlocalpolicy not platformengine. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution. September 29 SERVICENOW-CAD deep review: Direct 40-character shell. Complete short fresh Brazil September 10 main L1769-1785 and indexed Australia main read in same session. Deny-Unless priority; Pass row contradicts itself about explicit Allow-If versus default grant when absent. Unresolved, not implemented as a claimed platform engine. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
       "id": "servicenow-acl-function-fields",
@@ -137,10 +226,11 @@
       "source_type": "official-documentation",
       "access_model": "public",
       "supported_exams": [
-        "SERVICENOW-CSA"
+        "SERVICENOW-CSA",
+        "SERVICENOW-CAD"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SERVICENOW-CSA deep review: Direct40-character shell. Complete liveBrazilSeptember10mainL1311-1364 read excludinggeneratedsummary. WorkflowStudiorecommendation,classicBRtiming,asyncscriptprevious/orderlimits versusconditionbuilder,GlideRecord/setWorkflow bypass andACLcontext caveats,current.update recursion,beforeautosave. No vendorcode copied/run orworkflowdisabled. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SERVICENOW-CSA deep review: Direct40-character shell. Complete liveBrazilSeptember10mainL1311-1364 read excludinggeneratedsummary. WorkflowStudiorecommendation,classicBRtiming,asyncscriptprevious/orderlimits versusconditionbuilder,GlideRecord/setWorkflow bypass andACLcontext caveats,current.update recursion,beforeautosave. No vendorcode copied/run orworkflowdisabled. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution. September 29 SERVICENOW-CAD deep review: Direct 40-character shell. Complete fresh Brazil September 10 main L1311-1364 read in same session, excluding generated summary. Workflow Studio recommendation, before-save behavior, recursion, async ordering/previous versus condition-builder behavior and bypass/context limits. No vendor scripts copied/run or rule processing disabled. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
       "id": "servicenow-import-coalesce",
@@ -151,10 +241,11 @@
       "source_type": "official-documentation",
       "access_model": "public",
       "supported_exams": [
-        "SERVICENOW-CSA"
+        "SERVICENOW-CSA",
+        "SERVICENOW-CAD"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SERVICENOW-CSA deep review: Direct40-character shell. Complete indexedAustraliaMarch12main read excludinggeneratedsummary, including example scripts andcase/emptyoptions. Allcoalescefieldsmatch,firstofmultipletargetmatchesupdates,no-matchinserts,defaultcaseinsensitive. No vendorcode copied/run; localquarantine/revisionrules explicitlychosen. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SERVICENOW-CSA deep review: Direct40-character shell. Complete indexedAustraliaMarch12main read excludinggeneratedsummary, including example scripts andcase/emptyoptions. Allcoalescefieldsmatch,firstofmultipletargetmatchesupdates,no-matchinserts,defaultcaseinsensitive. No vendorcode copied/run; localquarantine/revisionrules explicitlychosen. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution. September 29 SERVICENOW-CAD deep review: Direct 40-character shell. Complete indexed Australia March 12 main read in same session, excluding generated summary. All coalesce fields match, first duplicate target updates, no-match inserts, case/empty options. No example vendor code copied/run. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
       "id": "servicenow-update-sets-start",
@@ -221,10 +312,11 @@
       "source_type": "official-documentation",
       "access_model": "public",
       "supported_exams": [
-        "SERVICENOW-CSA"
+        "SERVICENOW-CSA",
+        "SERVICENOW-CAD"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SERVICENOW-CSA deep review: Direct40-character shell. CompleteBrazilSeptember10mainL1481-1537 read excludinggeneratedsummary. Catalogdefinitionnotorders,update_synchnotcustomerworkaround,specialhandlers,destructiveschema/previewlimits,homepage/dashboardcaveats. No schema/attributechanges. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SERVICENOW-CSA deep review: Direct40-character shell. CompleteBrazilSeptember10mainL1481-1537 read excludinggeneratedsummary. Catalogdefinitionnotorders,update_synchnotcustomerworkaround,specialhandlers,destructiveschema/previewlimits,homepage/dashboardcaveats. No schema/attributechanges. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution. September 29 SERVICENOW-CAD deep review: Direct 40-character shell. Complete fresh Brazil September 10 main L1481-1537 read in same session, excluding generated summary. Metadata versus orders, update_synch restrictions, special handlers and destructive schema/preview limits. No transport, attribute or schema changes. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
       "id": "servicenow-update-sets-working",
@@ -249,10 +341,11 @@
       "source_type": "official-announcement",
       "access_model": "public",
       "supported_exams": [
-        "SERVICENOW-CSA"
+        "SERVICENOW-CSA",
+        "SERVICENOW-CAD"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SERVICENOW-CSA deep review: Direct3926-character capture; completearticlemain/date/authorread, notcomments/linkedvideos. laurenmcmanAdministratorAugust13,2026,vendorDeveloperPassportprogram;elevenSept14-18previewsessions. No playback/calendar/subscription/notificationaction andnoGA/examcutoverinference. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SERVICENOW-CSA deep review: Direct3926-character capture; completearticlemain/date/authorread, notcomments/linkedvideos. laurenmcmanAdministratorAugust13,2026,vendorDeveloperPassportprogram;elevenSept14-18previewsessions. No playback/calendar/subscription/notificationaction andnoGA/examcutoverinference. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution. September 29 SERVICENOW-CAD deep review: Complete 3,926-character article main/date/author read in preceding same-session CSA review, not linked videos/comments. laurenmcman, Administrator, August 13, 2026; vendor program advertises eleven September 14–18 preview sessions. No playback, calendar subscription, GA or exam-cutover inference. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mongodb-atlas-course-exam",
@@ -51660,7 +51753,7 @@
         "SERVICENOW-CSA",
         "SERVICENOW-CAD"
       ],
-      "notes": "Official catalog and search route for ServiceNow Administration Fundamentals and Application Development Fundamentals. Each is commonly delivered as three instructor-led days; verify current format, entitlement and attempt inclusion. September 29 SERVICENOW-CSA deep review: Direct34-character shell; credential entry only. No authenticated catalog, course interior or entitlement. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution."
+      "notes": "Official catalog and search route for ServiceNow Administration Fundamentals and Application Development Fundamentals. Each is commonly delivered as three instructor-led days; verify current format, entitlement and attempt inclusion. September 29 SERVICENOW-CSA deep review: Direct34-character shell; credential entry only. No authenticated catalog, course interior or entitlement. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution. September 29 SERVICENOW-CAD deep review: Direct 34-character shell. Entry route only, no authenticated course interiors or assignment. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
       "id": "servicenow-product-documentation",
@@ -51675,7 +51768,7 @@
         "SERVICENOW-CSA",
         "SERVICENOW-CAD"
       ],
-      "notes": "Release-selectable canonical product reference for platform administration and application design, interface, security, automation, integration, scripting, source and lifecycle behavior. September 29 SERVICENOW-CSA deep review: Direct40-character shell. Specific primary browser main sections reviewed separately; documentation homepage is not a full platform audit. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution."
+      "notes": "Release-selectable canonical product reference for platform administration and application design, interface, security, automation, integration, scripting, source and lifecycle behavior. September 29 SERVICENOW-CSA deep review: Direct40-character shell. Specific primary browser main sections reviewed separately; documentation homepage is not a full platform audit. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution. September 29 SERVICENOW-CAD deep review: Direct 40-character shell. Specific primary articles read separately; homepage capture is not a product audit. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
       "id": "servicenow-developer-program",
@@ -51690,7 +51783,7 @@
         "SERVICENOW-CSA",
         "SERVICENOW-CAD"
       ],
-      "notes": "Official learning plans, API references and Personal Developer Instance entry point for authorized administration and application-development practice; PDI availability and release choice can change. September 29 SERVICENOW-CSA deep review: Direct125-character entry shell. No account, PDI allocation, runtime, installation or environment changes. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution."
+      "notes": "Official learning plans, API references and Personal Developer Instance entry point for authorized administration and application-development practice; PDI availability and release choice can change. September 29 SERVICENOW-CSA deep review: Direct125-character entry shell. No account, PDI allocation, runtime, installation or environment changes. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution. September 29 SERVICENOW-CAD deep review: Direct 125-character entry shell. No account, PDI allocation, instance runtime or environment changes. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
       "id": "measureup-servicenow-csa",
@@ -51775,19 +51868,63 @@
         "SERVICENOW-CSA",
         "SERVICENOW-CAD"
       ],
-      "notes": "Official visual demos and release-aware platform and developer context. Select current objective-specific videos instead of treating the full channel as a prescribed course. September 29 SERVICENOW-CSA deep review: Direct185-character title/footer; landing only. No playback or playlist audit. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution."
+      "notes": "Official visual demos and release-aware platform and developer context. Select current objective-specific videos instead of treating the full channel as a prescribed course. September 29 SERVICENOW-CSA deep review: Direct185-character title/footer; landing only. No playback or playlist audit. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution. September 29 SERVICENOW-CAD deep review: Direct 185-character title/footer only. No video playback or playlist audit. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"servicenow-cad-mainline-blueprint","title":"Certified Application Developer Mainline Exam Blueprint","url":"https://learning.servicenow.com/lxp/en/credentials/certified-application-developer-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011498","publisher":"ServiceNow","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-07","supported_exams":["SERVICENOW-CAD"],"notes":"Canonical CAD blueprint route. The September 2 evidence baseline records January 2026 six-domain 15/20/20/20/10/15 scope and a 60-question/90-minute contract, but September 7 deterministic and indexed extraction exposed only the page title; detailed current scope remains blocked pending a fully rendered or static official source."
+      "id": "servicenow-cad-mainline-blueprint",
+      "title": "Certified Application Developer Mainline Exam Blueprint",
+      "url": "https://learning.servicenow.com/lxp/en/credentials/certified-application-developer-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011498",
+      "publisher": "ServiceNow",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "notes": "Canonical CAD blueprint route. The September 2 evidence baseline records January 2026 six-domain 15/20/20/20/10/15 scope and a 60-question/90-minute contract, but September 7 deterministic and indexed extraction exposed only the page title; detailed current scope remains blocked pending a fully rendered or static official source. September 29 SERVICENOW-CAD deep review: Direct empty body and web loading shell; complete canonical main recovered in a fresh unsigned Chrome context and manually read. Saved 8,322 characters before the sample-question section, with browser receipt/hash. January 2026 label, 22 subtopics, 20/20/20/20/10/10 weights, 60 questions/90 minutes, Pearson/OnVUE, 90-day schedule-and-complete window, conditional results, unpublished cut score and annual maintenance. Sample items excluded before saving/printing. Manual snapshot repair preserves older exact bytes and historical audits/reviews. Automated monitor remains manual-review. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"servicenow-plan-before-build","title":"Plan before you build","url":"https://www.servicenow.com/docs/r/application-development/plan-before-you-build.html","publisher":"ServiceNow","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-07","supported_exams":["SERVICENOW-CAD"],"notes":"Australia-release product guidance updated March 12, 2026 covering private/global scope, PDI versus organizational development instances, naming and irreversible decisions. Useful application-design practice, not proof of exam scope."
+      "id": "servicenow-plan-before-build",
+      "title": "Plan before you build",
+      "url": "https://www.servicenow.com/docs/r/application-development/plan-before-you-build.html",
+      "publisher": "ServiceNow",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "notes": "Australia-release product guidance updated March 12, 2026 covering private/global scope, PDI versus organizational development instances, naming and irreversible decisions. Useful application-design practice, not proof of exam scope. September 29 SERVICENOW-CAD deep review: Direct 40-character shell. Complete fresh Brazil September 10 main L1483-1509 read, excluding generated summary. Scope/global capability, namespace, PDI proof-of-concept versus organizational development decisions. No PDI import or namespace migration performed. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"servicenow-community-scoped-app-security-2026","title":"ServiceNow Custom Scoped App Security: A Developer's Guide to Access Control Lists","url":"https://www.servicenow.com/community/developer-articles/servicenow-custom-scoped-app-security-a-developer-s-guide-to/ta-p/3484927","publisher":"ServiceNow Community / CMa_yfield","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-07","supported_exams":["SERVICENOW-CAD"],"notes":"ServiceNow employee-authored February 2026 community article with ACL security-matrix, scripted-security and negative-test patterns. Treat community guidance as practice context and verify API behavior in current product documentation."
+      "id": "servicenow-community-scoped-app-security-2026",
+      "title": "ServiceNow Custom Scoped App Security: A Developer's Guide to Access Control Lists",
+      "url": "https://www.servicenow.com/community/developer-articles/servicenow-custom-scoped-app-security-a-developer-s-guide-to/ta-p/3484927",
+      "publisher": "ServiceNow Community / CMa_yfield",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "notes": "ServiceNow employee-authored February 2026 community article with ACL security-matrix, scripted-security and negative-test patterns. Treat community guidance as practice context and verify API behavior in current product documentation. September 29 SERVICENOW-CAD deep review: Captured 29,267 characters; main through matrix description read, not remaining comments or attached spreadsheet. CMa_yfield, ServiceNow Employee, February 9, 2026. Junior-user/senior-only table example omits inheritance/other table grant; field access cannot repair failed table access. Blanket server ACL statements, naive per-report ACL-call arithmetic and malformed pasted code not accepted as measured or executable evidence. No attachment/code run or breach/salary claims adopted. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"servicenow-community-cad-prep-2026","title":"CAD Exam Prep community discussion","url":"https://www.servicenow.com/community/training-and-certifications/cad-exam-prep/td-p/3538814","publisher":"ServiceNow Community","authority_class":3,"source_type":"community-learning","access_model":"public","last_checked":"2026-09-07","supported_exams":["SERVICENOW-CAD"],"notes":"May 2026 user discussion reinforces official-course labs and PDI practice around Flow, ACLs, update sets and basic REST. It is not scope authority; rough percentages and third-party mock-test suggestions are excluded."
+      "id": "servicenow-community-cad-prep-2026",
+      "title": "CAD Exam Prep community discussion",
+      "url": "https://www.servicenow.com/community/training-and-certifications/cad-exam-prep/td-p/3538814",
+      "publisher": "ServiceNow Community",
+      "authority_class": 3,
+      "source_type": "community-learning",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "notes": "May 2026 user discussion reinforces official-course labs and PDI practice around Flow, ACLs, update sets and basic REST. It is not scope authority; rough percentages and third-party mock-test suggestions are excluded. September 29 SERVICENOW-CAD deep review: Complete 6,100-character main/replies read. Faisal May 6 question and Sumit May 7 solution; four 20% domains now correctly total 80%. Forum cannot establish sufficient preparation or guaranteed exclusions from non-exhaustive subskills. Reply mock/Udemy recommendations not endorsed. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
       "id": "servicenow-community-csa-study-guide",
@@ -51804,22 +51941,88 @@
       "notes": "User-authored July 2025 broad topic checklist and PDI/lab reminder. It predates the January 2026 blueprint, has no authoritative weights or contract, and comments linking arbitrary flashcards or mock sites are outside this library's evidence policy. September 29 SERVICENOW-CSA deep review: Direct6409-character capture; main through author/date/topic list and first comments read, not remaining comments orattachment. TosinDJuly12,2025 user-authored broad checklist, no current authoritative scope/weights. Third-party flashcards/mock recommendations not endorsed. See docs/research/2026-09-29-servicenow-csa-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"servicenow-cad-learning-path","title":"Certified Application Developer Learning Path","url":"https://learning.servicenow.com/lxp/en/now-platform/certified-application-developer?course_id=4c12ba8c87c39ad4a3bc40c5cebb3526&id=learning_content_prev","publisher":"ServiceNow University","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["SERVICENOW-CAD"],"notes":"Official CAD learning assignment; dynamic display and course access require an account. Verify the current course sequence and duration after sign-in."
+      "id": "servicenow-cad-learning-path",
+      "title": "Certified Application Developer Learning Path",
+      "url": "https://learning.servicenow.com/lxp/en/now-platform/certified-application-developer?course_id=4c12ba8c87c39ad4a3bc40c5cebb3526&id=learning_content_prev",
+      "publisher": "ServiceNow University",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "notes": "Official CAD learning assignment; dynamic display and course access require an account. Verify the current course sequence and duration after sign-in. September 29 SERVICENOW-CAD deep review: Direct empty body. Path entry only; no current course body, assignment, entitlement or duration verified. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"servicenow-technical-training-catalog","title":"ServiceNow University Technical Training Catalog","url":"https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/other-document/technical-training-portfolio.pdf","publisher":"ServiceNow","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["SERVICENOW-CAD"],"notes":"Official 2025 catalog confirms three-day instructor-led Application Development Fundamentals and Scripting in ServiceNow Fundamentals anchors and describes delivery/access models."
+      "id": "servicenow-technical-training-catalog",
+      "title": "ServiceNow University Technical Training Catalog",
+      "url": "https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/other-document/technical-training-portfolio.pdf",
+      "publisher": "ServiceNow",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "notes": "Official 2025 catalog confirms three-day instructor-led Application Development Fundamentals and Scripting in ServiceNow Fundamentals anchors and describes delivery/access models. September 29 SERVICENOW-CAD deep review: HTTP 403. Earlier three-day instructor-led anchors not reverified; no current PDF body read. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"servicenow-scripting-fundamentals","title":"Scripting in ServiceNow Fundamentals","url":"https://learning.servicenow.com/lxp/en/now-platform/scripting-in-servicenow-fundamentals-on-demand-washington?course_id=f424ca5a87f71e143a3a84c7cebb3509&id=learning_course_prev","publisher":"ServiceNow University","authority_class":1,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["SERVICENOW-CAD"],"notes":"Official scripting foundation offered on demand or as a three-day ILT course. The URL retains a Washington label; verify current assigned release and entitlement."
+      "id": "servicenow-scripting-fundamentals",
+      "title": "Scripting in ServiceNow Fundamentals",
+      "url": "https://learning.servicenow.com/lxp/en/now-platform/scripting-in-servicenow-fundamentals-on-demand-washington?course_id=f424ca5a87f71e143a3a84c7cebb3509&id=learning_course_prev",
+      "publisher": "ServiceNow University",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "notes": "Official scripting foundation offered on demand or as a three-day ILT course. The URL retains a Washington label; verify current assigned release and entitlement. September 29 SERVICENOW-CAD deep review: Direct empty body on older Washington-labeled route. No current lesson, syllabus, duration or entitlement verified. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"measureup-servicenow-cad","title":"ServiceNow CAD Practice Test","url":"https://www.measureup.com/servicenow-cad-practice-test.html","publisher":"MeasureUp / ServiceNow","authority_class":2,"source_type":"official-practice","access_model":"paid","last_checked":"2026-09-02","supported_exams":["SERVICENOW-CAD"],"notes":"Official March 2026 120-question bank. Its displayed 24/24/24/24/12/12 distribution differs from the current mainline 15/20/20/20/10/15 weights; use for explanation-led practice, not blueprint authority."
+      "id": "measureup-servicenow-cad",
+      "title": "ServiceNow CAD Practice Test",
+      "url": "https://www.measureup.com/servicenow-cad-practice-test.html",
+      "publisher": "MeasureUp / ServiceNow",
+      "authority_class": 2,
+      "source_type": "official-practice",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "notes": "Official March 2026 120-question bank. Its displayed 24/24/24/24/12/12 distribution differs from the current mainline 15/20/20/20/10/15 weights; use for explanation-led practice, not blueprint authority. September 29 SERVICENOW-CAD deep review: Complete 11,180-character public product main through FAQ read. March 2026 listing, 120 questions, counts 24/24/24/24/12/12 match current blueprint; generic around-150 wording differs. Practice/Certification modes observed. Eleven advertised languages include ten automatic translations, not official exam languages. Readiness, guarantee and salary claims not adopted. No demo, questions, explanations or paid interiors opened. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-servicenow-application-development","title":"ServiceNow Application Development","url":"https://www.oreilly.com/library/view/servicenow-application-development/9781787128712/","publisher":"O'Reilly / Packt / Sagar Gupta","authority_class":3,"source_type":"commercial-book","access_model":"paid","last_checked":"2026-09-02","supported_exams":["SERVICENOW-CAD"],"notes":"2017 hands-on book covering PDI, application creation, data, access, scripting, automation and integration. It is substantially dated; translate every UI, API and lifecycle claim through current official docs."
+      "id": "oreilly-servicenow-application-development",
+      "title": "ServiceNow Application Development",
+      "url": "https://www.oreilly.com/library/view/servicenow-application-development/9781787128712/",
+      "publisher": "O'Reilly / Packt / Sagar Gupta",
+      "authority_class": 3,
+      "source_type": "commercial-book",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "notes": "2017 hands-on book covering PDI, application creation, data, access, scripting, automation and integration. It is substantially dated; translate every UI, API and lifecycle claim through current official docs. September 29 SERVICENOW-CAD deep review: HTTP 403; earlier 2017 context and 11–15 hour estimate not reverified. No paid interior or current coverage/quality claim. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-servicenow-cad-ultimate","title":"ServiceNow Certified Application Developer Ultimate Course","url":"https://www.udemy.com/course/servicenow-certified-application-developer-cad-course-cloud-guru-amit/","publisher":"Udemy / Cloud Guru Amit","authority_class":3,"source_type":"commercial-course","access_model":"paid","last_checked":"2026-09-02","supported_exams":["SERVICENOW-CAD"],"notes":"6h37m project course listed as updated February 2026, including application, UI, security, Flow, import, REST, ATF and GitLab demonstrations. Use its build portion; use only official MeasureUp for exam-style practice."
+      "id": "udemy-servicenow-cad-ultimate",
+      "title": "ServiceNow Certified Application Developer Ultimate Course",
+      "url": "https://www.udemy.com/course/servicenow-certified-application-developer-cad-course-cloud-guru-amit/",
+      "publisher": "Udemy / Cloud Guru Amit",
+      "authority_class": 3,
+      "source_type": "commercial-course",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SERVICENOW-CAD"
+      ],
+      "notes": "6h37m project course listed as updated February 2026, including application, UI, security, Flow, import, REST, ATF and GitLab demonstrations. Use its build portion; use only official MeasureUp for exam-style practice. September 29 SERVICENOW-CAD deep review: HTTP 403; earlier February 2026 and 6h37 metadata not reverified. No syllabus, lesson or quality audit. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
       "id":"panw-cybersecurity-apprentice-certification","title":"Palo Alto Networks Certified Cybersecurity Apprentice","url":"https://www.paloaltonetworks.com/services/education/panw-cybersecurity-apprentice","publisher":"Palo Alto Networks","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["PANW-CYBERSECURITY-APPRENTICE"],"notes":"Canonical credential identity and stable objective statement, with links to the May 2026 detailed datasheet and official learning path."

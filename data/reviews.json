@@ -3,6 +3,154 @@
   "schema_version": 1,
   "reviews": [
     {
+      "id": "servicenow-cad-2026-09-02-source-validation",
+      "exam_code": "SERVICENOW-CAD",
+      "guide_path": "guides/SERVICENOW-CAD-servicenow-certified-application-developer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/servicenow-cad-2026-09-07-official-objectives.txt",
+      "blueprint_snapshot_sha256": "d0d60a1f5b77d3baa45857b05b7e01c67ab7f5afdbc53dc0558c660f244b21b0",
+      "objective_coverage": [
+        {
+          "objective_group": "Designing and Creating an Application (15%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Application User Interface (20%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Security and Restricting Access (20%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Application Automation (20%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1–2",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Working with External Data (10%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenario 2",
+            "Labs 5–6"
+          ]
+        },
+        {
+          "objective_group": "Managing Applications (15%)",
+          "guide_sections": [
+            "Section 6",
+            "Scenarios 1 and 3",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 8,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "All six January 2026 weighted domains are mapped through a complete scoped-application lifecycle: fit and data model, persona-tested interfaces, layered ACL/module/cross-scope security, declarative and scripted automation, reconciled import/REST integration, and reviewed source/repository/delegated-development promotion and rollback. Three integrated scenarios, eight authorized nonproduction labs and 40 original checks are included. The official MeasureUp bank's displayed 20/20/20/20/10/10 distribution is explicitly separated from the mainline blueprint's 15/20/20/20/10/15 authority. Only MeasureUp is named for exam-style practice; no recalled/live item, dump or copied course content is used."
+    },
+    {
+      "id": "servicenow-cad-2026-09-07-source-validation",
+      "exam_code": "SERVICENOW-CAD",
+      "guide_path": "guides/SERVICENOW-CAD-servicenow-certified-application-developer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-07",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/servicenow-cad-2026-09-07-official-objectives.txt",
+      "blueprint_snapshot_sha256": "d0d60a1f5b77d3baa45857b05b7e01c67ab7f5afdbc53dc0558c660f244b21b0",
+      "objective_coverage": [
+        {
+          "objective_group": "Designing and Creating an Application (15%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Application User Interface (20%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Security and Restricting Access (20%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Application Automation (20%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1–2",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Working with External Data (10%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenario 2",
+            "Labs 5–6"
+          ]
+        },
+        {
+          "objective_group": "Managing Applications (15%)",
+          "guide_sections": [
+            "Section 6",
+            "Scenarios 1 and 3",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 14,
+        "reachable": 11,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "All six January 2026 evidence-baseline domains remain mapped through a complete scoped-application lifecycle: fit and data model, persona-tested interfaces, layered ACL/module/cross-scope security, declarative and scripted automation, reconciled import/REST integration, and reviewed source/repository/delegated-development promotion and rollback. Three integrated scenarios, eight authorized nonproduction labs and 40 original checks are included. KB0011498 still exposes only its title to deterministic and indexed extraction, so the current detailed objective and contract audit remains freshness-blocked. Current official planning documentation and a ServiceNow employee-authored ACL article add practice context; a May community discussion is explicitly non-authoritative. The official MeasureUp bank's displayed 20/20/20/20/10/10 distribution remains separated from the September 2 mainline evidence baseline of 15/20/20/20/10/15. Only MeasureUp is named for exam-style practice; no recalled/live item, dump or copied course content is used. September 17, 2026 maintenance: recovered the public CAD blueprint in an unsigned browser; corrected domain 1 to 20% and domain 6 to 10%, reconciled the practice-bank discrepancy, and confirmed the public exam contract. Historical review date and snapshot remain unchanged; see docs/research/2026-09-17-exam-validation.md."
+    },
+    {
       "id": "servicenow-csa-2026-09-02-source-validation",
       "exam_code": "SERVICENOW-CSA",
       "guide_path": "guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md",
@@ -10079,25 +10227,78 @@
       "notes": "Mapped all30 current canonical subtopics with historical snapshot preservation, answered40 original prompts andexecuted34 localPython/SQLite checks. Addedthreeworkedscenarios/eightproposedlabs, correctedWelcomelink andcatalogboundaries, qualifiedACL/import/BusinessRule/update-setbehavior. Canonicalmainmanuallyverified; ACLwording/releasehistory,assignedmaintenance,liveinstanceandhumanreviewremainpending. See docs/research/2026-09-29-servicenow-csa-deep-review.md"
     },
     {
-      "id":"servicenow-cad-2026-09-07-source-validation",
-      "exam_code":"SERVICENOW-CAD",
-      "guide_path":"guides/SERVICENOW-CAD-servicenow-certified-application-developer.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-07",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/servicenow-cad-official-objectives.txt",
-      "blueprint_snapshot_sha256":"d0d60a1f5b77d3baa45857b05b7e01c67ab7f5afdbc53dc0558c660f244b21b0",
-      "objective_coverage":[
-        {"objective_group":"Designing and Creating an Application (15%)","guide_sections":["Section 1","All scenarios","Lab 1"]},
-        {"objective_group":"Application User Interface (20%)","guide_sections":["Section 2","Scenarios 1 and 3","Lab 2"]},
-        {"objective_group":"Security and Restricting Access (20%)","guide_sections":["Section 3","All scenarios","Lab 3"]},
-        {"objective_group":"Application Automation (20%)","guide_sections":["Section 4","Scenarios 1–2","Lab 4"]},
-        {"objective_group":"Working with External Data (10%)","guide_sections":["Section 5","Scenario 2","Labs 5–6"]},
-        {"objective_group":"Managing Applications (15%)","guide_sections":["Section 6","Scenarios 1 and 3","Labs 7–8"]}
+      "id": "servicenow-cad-2026-09-29-source-validation",
+      "exam_code": "SERVICENOW-CAD",
+      "guide_path": "guides/SERVICENOW-CAD-servicenow-certified-application-developer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/servicenow-cad-official-objectives.txt",
+      "blueprint_snapshot_sha256": "f71371fc8583ec438fbdde805d2e69d8034607333e1bc033ccc74ae5a261b59a",
+      "objective_coverage": [
+        {
+          "objective_group": "Designing and Creating an Application (20%)",
+          "guide_sections": [
+            "1. Designing and Creating an Application — 20%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        },
+        {
+          "objective_group": "Application User Interface (20%)",
+          "guide_sections": [
+            "2. Application User Interface — 20%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        },
+        {
+          "objective_group": "Security and Restricting Access (20%)",
+          "guide_sections": [
+            "3. Security and Restricting Access — 20%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        },
+        {
+          "objective_group": "Application Automation (20%)",
+          "guide_sections": [
+            "4. Application Automation — 20%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        },
+        {
+          "objective_group": "Working with External Data (10%)",
+          "guide_sections": [
+            "5. Working with External Data — 10%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        },
+        {
+          "objective_group": "Managing Applications (10%)",
+          "guide_sections": [
+            "6. Managing Applications — 10%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":14,"reachable":11,"access_blocked":3,"missing_or_error":0},
-      "notes":"All six January 2026 evidence-baseline domains remain mapped through a complete scoped-application lifecycle: fit and data model, persona-tested interfaces, layered ACL/module/cross-scope security, declarative and scripted automation, reconciled import/REST integration, and reviewed source/repository/delegated-development promotion and rollback. Three integrated scenarios, eight authorized nonproduction labs and 40 original checks are included. KB0011498 still exposes only its title to deterministic and indexed extraction, so the current detailed objective and contract audit remains freshness-blocked. Current official planning documentation and a ServiceNow employee-authored ACL article add practice context; a May community discussion is explicitly non-authoritative. The official MeasureUp bank's displayed 20/20/20/20/10/10 distribution remains separated from the September 2 mainline evidence baseline of 15/20/20/20/10/15. Only MeasureUp is named for exam-style practice; no recalled/live item, dump or copied course content is used. September 17, 2026 maintenance: recovered the public CAD blueprint in an unsigned browser; corrected domain 1 to 20% and domain 6 to 10%, reconciled the practice-bank discrepancy, and confirmed the public exam contract. Historical review date and snapshot remain unchanged; see docs/research/2026-09-17-exam-validation.md."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 29,
+        "reachable": 26,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Mapped all 22 canonical subtopics, aligned stale snapshot/checklist weights while preserving history, answered 40 original prompts and executed 38 local JavaScript checks. Added three worked scenarios and eight proposed instance labs; clarified API/query authorization, pagination, replay, source control and test boundaries. Canonical main manually verified; contradictory ACL prose, live instance work, inaccessible interiors and human review remain pending. See docs/research/2026-09-29-servicenow-cad-deep-review.md"
     },
     {
       "id":"panw-cybersecurity-apprentice-2026-09-02-source-validation",

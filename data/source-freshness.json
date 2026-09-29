@@ -4,6 +4,197 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-servicenowcad-deep-review",
+      "title": "SERVICENOW-CAD complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SERVICENOW-CAD"
+      ],
+      "results": [
+        {
+          "exam_code": "SERVICENOW-CAD",
+          "vendor_id": "servicenow",
+          "guide_path": "guides/SERVICENOW-CAD-servicenow-certified-application-developer.md",
+          "baseline_sha256": "d3251d76f2e960923d02b5feb33f89dc019c88ea6815ec63560a07bf1b60e6c1",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Complete canonical unsigned browser main confirms 22 subtopics, 20/20/20/20/10/10 weights and exam contract. Snapshot repaired with archived history; no new announced cutover. Direct monitor remains manual-review."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Primary scope, API, ACL, automation, import, REST, Git, ATF and transport sections read within per-source bounds. Thirty-eight actual offline Node.js checks; no platform runtime claim."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "August 13 vendor Developer Passport announcement read; eleven September 14–18 preview sessions. Fresh Brazil September 10 documents differ from cached Australia labels. No GA or exam-cutover inference."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Public CAD bank totals 120 and matches canonical weights; generic roughly-150 wording differs. Current course interiors and historical durations unverified; three HTTP 403 resources. No demo/question interiors or playback."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Deny-Unless no-Allow-If prose remains internally contradictory. Installed behavior, assigned maintenance, paid interiors and independent human review remain unverified."
+            }
+          },
+          "findings": [
+            {
+              "id": "servicenowcad-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Snapshot and final checklist retained older weights",
+              "url": "https://learning.servicenow.com/lxp/en/credentials/certified-application-developer-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011498",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SERVICENOW-CAD"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "September 17 guide headers were corrected, but saved snapshot/final checklist still used 15/20/20/20/10/15. Fresh canonical main has 22 subtopics and 20/20/20/20/10/10.",
+              "recommendation": "Align current snapshot, detailed map and checklist; preserve old byte-exact snapshots and both historical reviews/audit references.",
+              "disposition": "applied",
+              "source_id": "servicenow-cad-mainline-blueprint",
+              "resolution": "Align current snapshot, detailed map and checklist; preserve old byte-exact snapshots and both historical reviews/audit references."
+            },
+            {
+              "id": "servicenowcad-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Field access does not repair missing table authorization",
+              "url": "https://www.servicenow.com/docs/r/platform-security/access-control/exploring-access-control-list.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SERVICENOW-CAD"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Community junior/senior example omits a qualifying table grant or inheritance; primary reference requires applicable table and field access.",
+              "recommendation": "Teach separate table/field requirements and original negative cases; do not accept the community example as runtime proof.",
+              "disposition": "applied",
+              "source_id": "servicenow-acl-overview",
+              "resolution": "Teach separate table/field requirements and original negative cases; do not accept the community example as runtime proof."
+            },
+            {
+              "id": "servicenowcad-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Standard secure record access is not automatic query-ACL opt-in",
+              "url": "https://www.servicenow.com/docs/r/api-reference/scripts/p_GlideServerAPIs.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SERVICENOW-CAD"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Primary API sections distinguish standard CRUD ACL enforcement from explicitly enabled query ACLs and trusted/untrusted query methods.",
+              "recommendation": "Separate query and output authorization, require a narrow structured contract and verify installed API availability.",
+              "disposition": "applied",
+              "source_id": "servicenow-glide-server-apis",
+              "resolution": "Separate query and output authorization, require a narrow structured contract and verify installed API availability."
+            },
+            {
+              "id": "servicenowcad-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "REST query and pagination behavior need explicit failure handling",
+              "url": "https://www.servicenow.com/docs/r/api-reference/rest-api-explorer/c_RESTAPI.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SERVICENOW-CAD"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Limit is applied before ACL filtering; invalid query portions can be dropped; cross-scope CRUD switches do not govern web-service requests.",
+              "recommendation": "Distinguish REST and script gates; teach validated input and endpoint-specific continuation despite an empty page, with bounded local counterexamples.",
+              "disposition": "applied",
+              "source_id": "servicenow-rest-api",
+              "resolution": "Distinguish REST and script gates; teach validated input and endpoint-specific continuation despite an empty page, with bounded local counterexamples."
+            },
+            {
+              "id": "servicenowcad-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Source-control history does not prove safe deployment or individual credential isolation",
+              "url": "https://www.servicenow.com/docs/r/application-development/servicenow-studio-classic/source-control-integration.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SERVICENOW-CAD"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Reference limits management to nonproduction, describes shared repository credentials and sanitization for unsupported external edits.",
+              "recommendation": "Separate metadata history, credential scope, supported editing and actual installed-state/promotion evidence.",
+              "disposition": "applied",
+              "source_id": "servicenow-source-control",
+              "resolution": "Separate metadata history, credential scope, supported editing and actual installed-state/promotion evidence."
+            },
+            {
+              "id": "servicenowcad-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Test fixtures and custom UI retrieval require explicit isolation and transport checks",
+              "url": "https://www.servicenow.com/docs/r/application-development/automated-test-framework-atf/automated-test-framework-design-considerations.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SERVICENOW-CAD"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Reference recommends isolated test-created users/records and documents custom UI component retrieval limits.",
+              "recommendation": "Require nonproduction fixtures, allowed/denied outcomes and target-environment component verification; do not imply local models executed ATF.",
+              "disposition": "applied",
+              "source_id": "servicenow-atf-design",
+              "resolution": "Require nonproduction fixtures, allowed/denied outcomes and target-environment component verification; do not imply local models executed ATF."
+            },
+            {
+              "id": "servicenowcad-deep-7",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "No-Allow-If behavior is contradictory in the primary page",
+              "url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-denial-behavior.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SERVICENOW-CAD"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Pass row both requires explicit Allow-If and describes default grant when none exists.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped all 22 canonical subtopics, aligned stale snapshot/checklist weights while preserving history, answered 40 original prompts and executed 38 local JavaScript checks. Added three worked scenarios and eight proposed instance labs; clarified API/query authorization, pagination, replay, source control and test boundaries. Canonical main manually verified; contradictory ACL prose, live instance work, inaccessible interiors and human review remain pending. Same-context AI review; human review pending. See docs/research/2026-09-29-servicenow-cad-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 6,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-29-servicenowcsa-deep-review",
       "title": "SERVICENOW-CSA complete guide and learning-content review",
       "rubric_version": 1,
