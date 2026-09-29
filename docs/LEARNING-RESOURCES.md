@@ -2921,6 +2921,28 @@ This is not a complete list. Start with the official scope and one teaching rout
 
 Use original practice that explains assumptions and decisions. Avoid recalled examination questions and guaranteed-pass claims. Course completion, a valid data file and a locally passing exercise are useful evidence within their limits; each still needs to be connected to the actual objective and accountable action.
 
+### NCA-GENL — NVIDIA-Certified Associate: Generative AI LLMs
+
+Resource details from the [NCA-GENL guide](../guides/NCA-GENL-nvidia-generative-ai-llms-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list. Start with the current topic list and one teaching route, then select targeted practice. Public availability was checked September 29, 2026. Planning estimates are original suggestions; a reachable URL does not prove that its course metadata or paid content was accessible.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [NCA-GENL certification and preparation topics](https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/): canonical five weights and 33 detailed bullets. | Public | 3–5h mapping/review estimate. |
+| [Fundamentals of Deep Learning public materials](https://github.com/NVDLI/fundamentals-of-deep-learning): six listed modules covering neural networks, CNNs, augmentation, transfer and advanced architecture/NLP. | Public repository; compute/dependencies separate | No fixed runtime stated in the checked README; budget by module. README reviewed, notebooks not executed. |
+| [Rapid Application Development with LLMs](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-26+V1): still named on the current preparation page. | Course endpoint returns an empty metadata template; course access unverified | Earlier 8h/runtime/price not reverified; confirm through the current catalog. |
+| [Getting Started with Deep Learning](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-01+V1): earlier recommendation. | Empty public course template | Earlier 8h not reverified; current blueprint instead links open materials. |
+| [Accelerating End-to-End Data Science](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-DS-01+V2): earlier supplemental route. | Empty public course template | Earlier 8h not reverified. |
+| [Introduction to Transformer-Based NLP](https://courses.nvidia.com/courses/course-v1:DLI+S-FX-08+V1/): older endpoint. | Maintenance/moved notice | Earlier 6h not reverified; no current course interior reviewed. |
+| [Building LLM Applications with Prompt Engineering](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-12+V2): earlier supplemental route. | Empty public course template | Earlier 8h not reverified. |
+| [NumPy quickstart](https://numpy.org/doc/stable/user/quickstart.html) and the local workbook: arrays, fitting and retrieval components. | Public; NumPy dependency for execution | 2–4h selected reading and workbook estimate; not LLM/GPU execution. |
+| [scikit-learn pitfalls](https://scikit-learn.org/stable/common_pitfalls.html) and [metrics](https://scikit-learn.org/stable/modules/model_evaluation.html): evaluation references. | Public documentation | 2–4h selected reading estimate; library not run in this review. |
+| [NVIDIA Trustworthy AI](https://www.nvidia.com/en-us/ai-trust-center/trustworthy-ai/) and [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework): principles and risk context. | Public | 2–4h selected reading/scenario estimate; not a complete compliance assessment. |
+| [Udemy NCA-GENL specialization](https://www.udemy.com/course/nca-genl-nvidia-certified-generative-ai-llms-specialization/): HTTP 403. | Paid catalog access blocked | Earlier March 2026/1h48m metadata unverified; no current contents or quality assessment. |
+
+Use original practice that explains decisions and failure cases. Avoid recalled questions, dumps and guaranteed-pass banks; completing a course or a tiny local example does not establish examination or production readiness.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

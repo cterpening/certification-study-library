@@ -945,6 +945,47 @@ def extract_nvidia_objectives(page_html: str) -> str:
     )
     if code_index is None or code_index < 2:
         raise ValueError("Could not find NVIDIA certification identity")
+    preparation_heading = (
+        f"{lines[code_index].strip('()')} Exam Preparation Topics and Recommended Reading"
+    )
+    preparation = next(
+        (
+            index
+            for index, line in enumerate(lines[code_index + 1 :], code_index + 1)
+            if line == preparation_heading
+        ),
+        None,
+    )
+    if preparation is not None:
+        end = next(
+            (
+                index
+                for index, line in enumerate(lines[preparation + 1 :], preparation + 1)
+                if line in {"Ready to Get Certified?", "Get Certified", "Contact Us", "Stay Informed"}
+            ),
+            len(lines),
+        )
+        content = lines[preparation:end]
+        weights = [int(line[:-1]) for line in content if re.fullmatch(r"\d+%", line)]
+        if (
+            len(weights) < 3
+            or sum(weights) != 100
+            or content.count("Exam Topics:") != len(weights)
+            or content.count("Exam Weight") != len(weights)
+        ):
+            raise ValueError("Extracted NVIDIA preparation topics were incomplete")
+        topic_positions = [index for index, line in enumerate(content) if line == "Exam Topics:"]
+        weight_positions = [index for index, line in enumerate(content) if re.fullmatch(r"\d+%", line)]
+        for number, (topic, weight) in enumerate(zip(topic_positions, weight_positions)):
+            next_topic = topic_positions[number + 1] if number + 1 < len(topic_positions) else len(content)
+            if (
+                weight <= topic + 1
+                or weight + 1 >= next_topic
+                or content[weight + 1] != "Exam Weight"
+            ):
+                raise ValueError("Extracted NVIDIA preparation topics were incomplete")
+        selected = [*lines[code_index - 2 : code_index + 1], *content]
+        return "\n".join(selected).strip() + "\n"
     blueprint = next(
         (
             index

@@ -1,0 +1,1781 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "NCA-GENL",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/NCA-GENL-nvidia-generative-ai-llms-associate.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "483a3f34d3a91e0286c03badbd1db4e92114c4d10953eaf368682090fa8816ad",
+  "guide_after_sha256": "ebff59eb31f16d1dcbb1b84c065d7efe5f638dc907bc640b84e88f931b8f604b",
+  "prior_records": {
+    "exam": {
+      "code": "NCA-GENL",
+      "level": "beginner",
+      "vendor_id": "nvidia",
+      "title": "NVIDIA-Certified Associate: Generative AI LLMs",
+      "status": "active",
+      "study_guide_url": "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/",
+      "guide_path": "guides/NCA-GENL-nvidia-generative-ai-llms-associate.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "NVIDIA lists basic generative-AI and LLM understanding. Build lifecycle evidence across ML and transformer foundations, Python application contracts, prompting and RAG, controlled experimentation, data analysis and visualization, deployment, monitoring, and trustworthy-AI controls using synthetic or licensed data."
+    },
+    "review": {
+      "id": "nca-genl-2026-09-02-source-validation",
+      "exam_code": "NCA-GENL",
+      "guide_path": "guides/NCA-GENL-nvidia-generative-ai-llms-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nca-genl-official-objectives.txt",
+      "blueprint_snapshot_sha256": "220607c5f839a196b22d3211345d8fcd09128190fd7f21ffb6d4fd7d2c4bf5c7",
+      "objective_coverage": [
+        {
+          "objective_group": "Core Machine Learning and AI Knowledge (30%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Software Development (24%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1–2",
+            "Labs 3–4 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Experimentation (22%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Data Analysis and Visualization (14%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 2–3",
+            "Labs 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Trustworthy AI (10%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 8,
+        "reachable": 7,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All five live weighted domains are mapped through a governed lifecycle from use case and data through model/adaptation/retrieval choice, implementation, controlled experiment, deployment, monitoring and trustworthy-AI evidence. Three scenarios, eight labs and 40 checks are included. Seven URLs are reachable and Udemy is automation-blocked; none are broken. The certification page's conflicting 50 and 50–60 question statements are preserved rather than reconciled by inference. No recalled/live item, dump or copied course content is used."
+    },
+    "sources": [
+      {
+        "id": "nvidia-nca-genl-certification",
+        "title": "NVIDIA-Certified Associate: Generative AI LLMs",
+        "url": "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/",
+        "publisher": "NVIDIA",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCA-GENL"
+        ],
+        "notes": "Canonical five-domain weighted blueprint, prerequisite, delivery, price and two-year validity baseline; the page says both 50 questions and 50–60 questions, so the guide preserves the discrepancy."
+      },
+      {
+        "id": "nvidia-getting-started-deep-learning",
+        "title": "Getting Started With Deep Learning",
+        "url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-01+V1",
+        "publisher": "NVIDIA Deep Learning Institute",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCA-GENL"
+        ],
+        "notes": "Official eight-hour, USD 90 mapped neural-network and deep-learning foundation course; verify price and access at enrollment."
+      },
+      {
+        "id": "nvidia-end-to-end-data-science",
+        "title": "Accelerating End-to-End Data Science Workflows",
+        "url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-DS-01+V2",
+        "publisher": "NVIDIA Deep Learning Institute",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCA-GENL"
+        ],
+        "notes": "Official eight-hour, USD 90 RAPIDS data preparation, analysis, modeling and deployment course; verify price and access at enrollment."
+      },
+      {
+        "id": "nvidia-intro-transformer-nlp",
+        "title": "Introduction to Transformer-Based Natural Language Processing",
+        "url": "https://courses.nvidia.com/courses/course-v1:DLI+S-FX-08+V1/",
+        "publisher": "NVIDIA Deep Learning Institute",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCA-GENL"
+        ],
+        "notes": "Official six-hour, USD 30 mapped transformer course; direct endpoint displayed a maintenance/move notice when checked, so enter through the certification page and verify availability."
+      },
+      {
+        "id": "nvidia-building-llm-apps-prompt-engineering",
+        "title": "Building LLM Applications With Prompt Engineering",
+        "url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-12+V2",
+        "publisher": "NVIDIA Deep Learning Institute",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCA-GENL"
+        ],
+        "notes": "Official eight-hour, USD 90 prompt and LLM-application course mapped on the certification page; extend it with explicit evaluation, injection and production-control evidence."
+      },
+      {
+        "id": "nvidia-rapid-application-development-llms",
+        "title": "Rapid Application Development With Large Language Models",
+        "url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-26+V1",
+        "publisher": "NVIDIA Deep Learning Institute",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCA-GENL"
+        ],
+        "notes": "Official eight-hour, USD 90 mapped course for encoder/decoder, orchestration and application experimentation; verify price and access at enrollment."
+      },
+      {
+        "id": "nvidia-trustworthy-ai",
+        "title": "NVIDIA Trustworthy AI",
+        "url": "https://www.nvidia.com/en-us/ai-trust-center/trustworthy-ai/",
+        "publisher": "NVIDIA",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCA-GENL"
+        ],
+        "notes": "First-party privacy, safety/security, transparency and nondiscrimination principles plus model-card and guardrail context; translate principles into testable system controls."
+      },
+      {
+        "id": "udemy-nca-genl-specialization",
+        "title": "NCA-GENL NVIDIA Certified Generative AI LLMs Specialization",
+        "url": "https://www.udemy.com/course/nca-genl-nvidia-certified-generative-ai-llms-specialization/",
+        "publisher": "Udemy",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCA-GENL"
+        ],
+        "notes": "One-hour-48-minute course updated March 2026. It is too short to establish applied readiness alone; verify claims against first-party material and build the guide labs."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "557aba19b2f227e15013425de36da49eea14e640144869170f37daf5a0ef5cab",
+      "guide_sections": [
+        "1. Core Machine Learning and AI Knowledge — 30%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "0a8b26619be2288d49f98977d7db322614568b47011b245d61c24e7eb114489e",
+      "guide_sections": [
+        "1. Core Machine Learning and AI Knowledge — 30%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "a42ea4cd02b476064166a089bfbdaf494361c43f28633c2c878d346745ec04d4",
+      "guide_sections": [
+        "1. Core Machine Learning and AI Knowledge — 30%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "d8e730f94eea80d1f7b2b1fdef67b64018dca66391095be24719eb95029269c7",
+      "guide_sections": [
+        "1. Core Machine Learning and AI Knowledge — 30%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "b6fe12702668871cc06959c2680dd50c94a6f42a1e5439207ba7b09484373c7e",
+      "guide_sections": [
+        "1. Core Machine Learning and AI Knowledge — 30%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "a727597bfb862aeb4e017deb7f890ddb8a56d90bd79f9ac9d848e1576583b576",
+      "guide_sections": [
+        "1. Core Machine Learning and AI Knowledge — 30%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "7f3af025a451294de4900f9af0ce1dd11c8e2454ed2135203bce1d25b261e034",
+      "guide_sections": [
+        "1. Core Machine Learning and AI Knowledge — 30%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "9422899f83f352f180a451371ece0835f74d5617f30ccabed57bd7667741b869",
+      "guide_sections": [
+        "1. Core Machine Learning and AI Knowledge — 30%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "85fa9a5745ae29a7ca609a27528f1ca9af192b84802398f8454c9c333849dff5",
+      "guide_sections": [
+        "1. Core Machine Learning and AI Knowledge — 30%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "f419a6a0dcf536102f99639a835a442bd8fb6bcf10a1f8ef7551b7f96b9f8be7",
+      "guide_sections": [
+        "1. Core Machine Learning and AI Knowledge — 30%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "0a8b26619be2288d49f98977d7db322614568b47011b245d61c24e7eb114489e",
+      "guide_sections": [
+        "4. Data Analysis — 14%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "de62228b9a84144f4a271db4c7566aa00435215eb70ca0510078218b00c67f6a",
+      "guide_sections": [
+        "4. Data Analysis — 14%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "95aeb7f17285516bc2b3412a3d9f1489468bd4246f4c2a49be1400143fea8edc",
+      "guide_sections": [
+        "4. Data Analysis — 14%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "1d0919c0eea43383238b54ffe9661bdf1635eac0d56f07fa9f481d93c5ffe91c",
+      "guide_sections": [
+        "4. Data Analysis — 14%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "4b5f00ff45c35133e4e65540ed79e353c28b86d2a14668cf75e722a8e667a7ee",
+      "guide_sections": [
+        "4. Data Analysis — 14%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "fa95100c823ea22b10915bc404ce2e80292831fbf0a274728769ebffcb9d2866",
+      "guide_sections": [
+        "3. Experimentation — 22%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "a3b915df44629aaaf02e19be47d3783598462d5e1bd16814c5e9dcc350c9039b",
+      "guide_sections": [
+        "3. Experimentation — 22%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "1d46f52b6ac5693a5351f3497cfce0d08e6b2cc9d6c28018c710273b7869af81",
+      "guide_sections": [
+        "3. Experimentation — 22%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "1c4ebba56a85a01d90f29ecf4e1dbc388ae57e6b5c0a22bc28948850e30a0106",
+      "guide_sections": [
+        "3. Experimentation — 22%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "84b621f63fc4a910e87ce689229450444d73aa18fdb01b2a725ac12ad142edd8",
+      "guide_sections": [
+        "3. Experimentation — 22%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "660d4e279eeac3e4a3abbe9ed8977216b84da7f521998adb4d753324cbbb9d03",
+      "guide_sections": [
+        "3. Experimentation — 22%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "696f336312664afd2e2374773795df6a08509c3f342058c94a4d3296875ac655",
+      "guide_sections": [
+        "3. Experimentation — 22%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "8132aef06c02b9f6d56bb02632d05b921f3b71d38d55ae63c27464ee38fcfd1d",
+      "guide_sections": [
+        "2. Software Development — 24%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "79a5799612f631cd2ac5b66cb1b2f7595f2fc580319dc941a19163aaa236d9e0",
+      "guide_sections": [
+        "2. Software Development — 24%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "a727597bfb862aeb4e017deb7f890ddb8a56d90bd79f9ac9d848e1576583b576",
+      "guide_sections": [
+        "2. Software Development — 24%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "ceb82964a9504b400e9ded73057c287871af8f22982ddf6ec602f706e406ff89",
+      "guide_sections": [
+        "2. Software Development — 24%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "719791495ce075d40bab5b58b134a698d5fc6b7887b60828d77e64bf42cef920",
+      "guide_sections": [
+        "2. Software Development — 24%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "f419a6a0dcf536102f99639a835a442bd8fb6bcf10a1f8ef7551b7f96b9f8be7",
+      "guide_sections": [
+        "2. Software Development — 24%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "9b8b47a650d0a911166d24d56d0b96ad38f1787407d893434ffd1d937a27aa29",
+      "guide_sections": [
+        "2. Software Development — 24%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "be52d9e292aa6815f433ef069e01d0b4fd3a4c97ce805bab3f7632a743cfc24a",
+      "guide_sections": [
+        "5. Trustworthy AI — 10%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "e3116efbc4d36a200c4114ab4e61b39a68e774a5e7a50b18d8430d3bd4e6b18c",
+      "guide_sections": [
+        "5. Trustworthy AI — 10%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "4f72d1aed216d248278744280e2bbe3566cff1cd24333437ee06d5e551f8d775",
+      "guide_sections": [
+        "5. Trustworthy AI — 10%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "0c8f77e8e445110a2369625fc25b44798c91f66d717deb38f53b4df3a4bffa08",
+      "guide_sections": [
+        "5. Trustworthy AI — 10%",
+        "Executed local NumPy workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "NCA-GENL"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "NCA-GENL",
+        "title": "NVIDIA-Certified Associate: Generative AI LLMs",
+        "url": "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/",
+        "guide_path": "guides/NCA-GENL-nvidia-generative-ai-llms-associate.md",
+        "snapshot_path": "data\\objective-snapshots\\nca-genl-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\nca-genl-official-status.json",
+        "previous_sha256": "220607c5f839a196b22d3211345d8fcd09128190fd7f21ffb6d4fd7d2c4bf5c7",
+        "current_sha256": "58fd36ca6afda349885c81062a5a802dc3c11fd8b09c1eeb21dc98b5bc4f2b9d",
+        "previous_status_sha256": "31475a359647e2b25d4180f1a8fc5f626f9ff4fd9ba758e2673d7e1014d760cf",
+        "current_status_sha256": "31475a359647e2b25d4180f1a8fc5f626f9ff4fd9ba758e2673d7e1014d760cf",
+        "official_status": {
+          "skills_versions": [
+            "NCA-GENL",
+            "Duration: 1 hour",
+            "Price: $125",
+            "Certification level: Associate",
+            "Subject: Generative AI and large language models",
+            "Number of questions: 50-60 multiple-choice",
+            "Prerequisites: A basic understanding of generative AI and large language models",
+            "Language: English",
+            "Validity: This certification is valid for two years from issuance. Recertification may be achieved by retaking the exam."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": false,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 22,
+    "reachable": 21,
+    "access_blocked": 1,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "nvidia-nca-genl-certification",
+      "url": "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/",
+      "checked_at": "2026-09-29T13:17:37.811456+00:00",
+      "health": {
+        "id": "nvidia-nca-genl-certification",
+        "url": "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/",
+        "checked_at": "2026-09-29T13:17:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "NVIDIA GenAI LLM Certification Exam (NCA-GENL)",
+        "canonical_url": "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/",
+        "duration_signals": [
+          "1 hour"
+        ],
+        "signal_fingerprint": "5cf0eefacaa6c5508027ce83e5dd4a94abe3a44c611f1f9fb92695c89dcb49e1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/",
+      "sha256": "0914d04c4ab4693c92be61b9b089f80c9f885356c12fbd1804360a6259c5c85b",
+      "text_characters": 31052
+    },
+    {
+      "id": "nvidia-getting-started-deep-learning",
+      "url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-01+V1",
+      "checked_at": "2026-09-29T13:17:37.812483+00:00",
+      "health": {
+        "id": "nvidia-getting-started-deep-learning",
+        "url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-01+V1",
+        "checked_at": "2026-09-29T13:17:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-01+V1",
+        "content_type": "text/html",
+        "page_title": "Course Detail | NVIDIA",
+        "canonical_url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-01+V1",
+        "duration_signals": [
+          "2 hours"
+        ],
+        "signal_fingerprint": "c9121be29144f73b2f9de61659534d9080927eeaa61a5786936f30a25236f8a3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-01+V1",
+      "sha256": "b616f4527602473c67b96fa752e66ed2bb68fe7611999c668681fc5eb3b6f384",
+      "text_characters": 1514
+    },
+    {
+      "id": "nvidia-end-to-end-data-science",
+      "url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-DS-01+V2",
+      "checked_at": "2026-09-29T13:17:37.813380+00:00",
+      "health": {
+        "id": "nvidia-end-to-end-data-science",
+        "url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-DS-01+V2",
+        "checked_at": "2026-09-29T13:17:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-DS-01+V2",
+        "content_type": "text/html",
+        "page_title": "Course Detail | NVIDIA",
+        "canonical_url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-DS-01+V2",
+        "duration_signals": [
+          "2 hours"
+        ],
+        "signal_fingerprint": "e35543e2d0d35baac6faa47b4c2d60d1b39a5ff7b6d3c1bc0f6e529c2bc3fcb8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-DS-01+V2",
+      "sha256": "b616f4527602473c67b96fa752e66ed2bb68fe7611999c668681fc5eb3b6f384",
+      "text_characters": 1514
+    },
+    {
+      "id": "nvidia-intro-transformer-nlp",
+      "url": "https://courses.nvidia.com/courses/course-v1:DLI+S-FX-08+V1/",
+      "checked_at": "2026-09-29T13:17:38.297027+00:00",
+      "health": {
+        "id": "nvidia-intro-transformer-nlp",
+        "url": "https://courses.nvidia.com/courses/course-v1:DLI+S-FX-08+V1/",
+        "checked_at": "2026-09-29T13:17:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://courses.nvidia.com/courses/course-v1:DLI+S-FX-08+V1/",
+        "content_type": "text/html",
+        "page_title": "NVIDIA Training Solutions | NVIDIA",
+        "canonical_url": "https://courses.nvidia.com/courses/course-v1:DLI+S-FX-08+V1/",
+        "duration_signals": [],
+        "signal_fingerprint": "0516a13e28eed149a68b302fcea675a35c8054bc9047786619a8e08e153fe5f4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://courses.nvidia.com/courses/course-v1:DLI+S-FX-08+V1/",
+      "sha256": "2cedf71f31fa9250d8c36631caf1cd3675961d41da57f4b9a49e0ac8aca28aa4",
+      "text_characters": 335
+    },
+    {
+      "id": "nvidia-building-llm-apps-prompt-engineering",
+      "url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-12+V2",
+      "checked_at": "2026-09-29T13:17:38.382242+00:00",
+      "health": {
+        "id": "nvidia-building-llm-apps-prompt-engineering",
+        "url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-12+V2",
+        "checked_at": "2026-09-29T13:17:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-12+V2",
+        "content_type": "text/html",
+        "page_title": "Course Detail | NVIDIA",
+        "canonical_url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-12+V2",
+        "duration_signals": [
+          "2 hours"
+        ],
+        "signal_fingerprint": "1fd935b2943512869d2015081ab67f091da7ae47824a7fe6b6c38b9616499154",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-12+V2",
+      "sha256": "b616f4527602473c67b96fa752e66ed2bb68fe7611999c668681fc5eb3b6f384",
+      "text_characters": 1514
+    },
+    {
+      "id": "nvidia-rapid-application-development-llms",
+      "url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-26+V1",
+      "checked_at": "2026-09-29T13:17:38.650049+00:00",
+      "health": {
+        "id": "nvidia-rapid-application-development-llms",
+        "url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-26+V1",
+        "checked_at": "2026-09-29T13:17:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-26+V1",
+        "content_type": "text/html",
+        "page_title": "Course Detail | NVIDIA",
+        "canonical_url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-26+V1",
+        "duration_signals": [
+          "2 hours"
+        ],
+        "signal_fingerprint": "f7d08f666b18fdc5310aef17dca7ee95a85f469b68c1217dc10ae18267e779df",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-26+V1",
+      "sha256": "b616f4527602473c67b96fa752e66ed2bb68fe7611999c668681fc5eb3b6f384",
+      "text_characters": 1514
+    },
+    {
+      "id": "nvidia-trustworthy-ai",
+      "url": "https://www.nvidia.com/en-us/ai-trust-center/trustworthy-ai/",
+      "checked_at": "2026-09-29T13:17:38.664038+00:00",
+      "health": {
+        "id": "nvidia-trustworthy-ai",
+        "url": "https://www.nvidia.com/en-us/ai-trust-center/trustworthy-ai/",
+        "checked_at": "2026-09-29T13:17:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nvidia.com/en-us/ai-trust-center/trustworthy-ai/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "NVIDIA Trustworthy AI",
+        "canonical_url": "https://www.nvidia.com/en-us/ai-trust-center/trustworthy-ai/",
+        "duration_signals": [],
+        "signal_fingerprint": "c514d1877029f16789e54868b721124c1511c7a7652034eb8fe145e487a56adb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nvidia.com/en-us/ai-trust-center/trustworthy-ai/",
+      "sha256": "b276791e0206e3e7617e30572dd2566f8626ca69b250652c415772cd7a061d45",
+      "text_characters": 26884
+    },
+    {
+      "id": "udemy-nca-genl-specialization",
+      "url": "https://www.udemy.com/course/nca-genl-nvidia-certified-generative-ai-llms-specialization/",
+      "checked_at": "2026-09-29T13:17:38.945469+00:00",
+      "health": {
+        "id": "udemy-nca-genl-specialization",
+        "url": "https://www.udemy.com/course/nca-genl-nvidia-certified-generative-ai-llms-specialization/",
+        "checked_at": "2026-09-29T13:17:38+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/nca-genl-nvidia-certified-generative-ai-llms-specialization/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "nvidia-certification-policies",
+      "url": "https://www.nvidia.com/en-us/learn/certification/",
+      "checked_at": "2026-09-29T13:22:18.730321+00:00",
+      "health": {
+        "id": "nvidia-certification-policies",
+        "url": "https://www.nvidia.com/en-us/learn/certification/",
+        "checked_at": "2026-09-29T13:22:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nvidia.com/en-us/learn/certification/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "NVIDIA Certification Programs",
+        "canonical_url": "https://www.nvidia.com/en-us/learn/certification/",
+        "duration_signals": [
+          "1 hour",
+          "2 hours",
+          "24 hours"
+        ],
+        "signal_fingerprint": "859325e6934ef37b85afa376b123a54da08180e8d43d452988a11699993433ae",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nvidia.com/en-us/learn/certification/",
+      "sha256": "f521bfd02f185a9329cf0565b117a687d0586a31362aaffdfedcebea8bd49dba",
+      "text_characters": 38167
+    },
+    {
+      "id": "nvidia-open-deep-learning",
+      "url": "https://github.com/NVDLI/fundamentals-of-deep-learning",
+      "checked_at": "2026-09-29T13:22:18.730924+00:00",
+      "health": {
+        "id": "nvidia-open-deep-learning",
+        "url": "https://github.com/NVDLI/fundamentals-of-deep-learning",
+        "checked_at": "2026-09-29T13:22:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/NVDLI/fundamentals-of-deep-learning",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - NVDLI/fundamentals-of-deep-learning: DLI Fundamentals of Deep Learning",
+        "canonical_url": "https://github.com/NVDLI/fundamentals-of-deep-learning",
+        "duration_signals": [
+          "2 minutes"
+        ],
+        "signal_fingerprint": "bc472f4beb570b5895bd26c6de2d9593222302a64799dca318ef345d9d186651",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/NVDLI/fundamentals-of-deep-learning",
+      "sha256": "f2849106acaba80840ede823c0d3f7a78d86da6b7be49dd295e6c6da53b42144",
+      "text_characters": 4415
+    },
+    {
+      "id": "nvidia-rag-explainer",
+      "url": "https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/",
+      "checked_at": "2026-09-29T13:22:18.731345+00:00",
+      "health": {
+        "id": "nvidia-rag-explainer",
+        "url": "https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/",
+        "checked_at": "2026-09-29T13:22:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "What Is Retrieval-Augmented Generation aka RAG?",
+        "canonical_url": "https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/",
+        "duration_signals": [],
+        "signal_fingerprint": "bccf1f9d6bfda9a2693a7df331bdccb05b703ad141e4b62ed617fad974ca6ecc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/",
+      "sha256": "49bc264881ae88a497b00bbf8d2a6b88316361bd40b1420f6c7c6ad0f3076146",
+      "text_characters": 12090
+    },
+    {
+      "id": "nvidia-prompt-ptuning",
+      "url": "https://developer.nvidia.com/blog/an-introduction-to-large-language-models-prompt-engineering-and-p-tuning/",
+      "checked_at": "2026-09-29T13:22:19.295212+00:00",
+      "health": {
+        "id": "nvidia-prompt-ptuning",
+        "url": "https://developer.nvidia.com/blog/an-introduction-to-large-language-models-prompt-engineering-and-p-tuning/",
+        "checked_at": "2026-09-29T13:22:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.nvidia.com/blog/an-introduction-to-large-language-models-prompt-engineering-and-p-tuning/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "An Introduction to Large Language Models: Prompt Engineering and P-Tuning | NVIDIA Technical Blog",
+        "canonical_url": "https://developer.nvidia.com/blog/an-introduction-to-large-language-models-prompt-engineering-and-p-tuning/",
+        "duration_signals": [
+          "20 minutes"
+        ],
+        "signal_fingerprint": "8aa5027ff5dad0693dc4d0ebff562960870acb1f0e3a21c84063f3f1e5ab5e51",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.nvidia.com/blog/an-introduction-to-large-language-models-prompt-engineering-and-p-tuning/",
+      "sha256": "8f6d18c84936cfede921460dfc1ce00d99f2dc92c35821218986cb87e73181da",
+      "text_characters": 11668
+    },
+    {
+      "id": "sklearn-common-pitfalls",
+      "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+      "checked_at": "2026-09-29T13:22:19.404220+00:00",
+      "health": {
+        "id": "sklearn-common-pitfalls",
+        "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+        "checked_at": "2026-09-29T13:22:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://scikit-learn.org/stable/common_pitfalls.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "12. Common pitfalls and recommended practices",
+        "canonical_url": "https://scikit-learn.org/stable/common_pitfalls.html",
+        "duration_signals": [],
+        "signal_fingerprint": "8e61e51592fa4f0fea3b1fd40ae7fd28d925425285fa64f9bd79142aca06760d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://scikit-learn.org/stable/common_pitfalls.html",
+      "sha256": "21fac11c181ab35624dcf8673f0475d403d4f6ecf0f9bead01a573d7642b515c",
+      "text_characters": 22760
+    },
+    {
+      "id": "sklearn-metrics",
+      "url": "https://scikit-learn.org/stable/modules/model_evaluation.html",
+      "checked_at": "2026-09-29T13:22:19.780391+00:00",
+      "health": {
+        "id": "sklearn-metrics",
+        "url": "https://scikit-learn.org/stable/modules/model_evaluation.html",
+        "checked_at": "2026-09-29T13:22:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://scikit-learn.org/stable/modules/model_evaluation.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "3.4. Metrics and scoring: quantifying the quality of predictions",
+        "canonical_url": "https://scikit-learn.org/stable/modules/model_evaluation.html",
+        "duration_signals": [
+          "1 minute"
+        ],
+        "signal_fingerprint": "41625da90dd98dfec95fd04d3a8be123768b8b3a1910d177408fe8cbd940326f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://scikit-learn.org/stable/modules/model_evaluation.html",
+      "sha256": "7e740e140ba75771bb1c7de132babfd958c277b5529d187e7ba744e69729120c",
+      "text_characters": 115400
+    },
+    {
+      "id": "numpy-quickstart",
+      "url": "https://numpy.org/doc/stable/user/quickstart.html",
+      "checked_at": "2026-09-29T13:22:20.053461+00:00",
+      "health": {
+        "id": "numpy-quickstart",
+        "url": "https://numpy.org/doc/stable/user/quickstart.html",
+        "checked_at": "2026-09-29T13:22:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://numpy.org/doc/stable/user/quickstart.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "NumPy quickstart — NumPy v2.5 Manual",
+        "canonical_url": "https://numpy.org/doc/stable/user/quickstart.html",
+        "duration_signals": [],
+        "signal_fingerprint": "bdeed77dd54304afc882e901099f4af5cc43acc86c769dda29dd145668d0a825",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://numpy.org/doc/stable/user/quickstart.html",
+      "sha256": "583e7317c50d9ac397a47c8102cb4c2fe5951d3b199a16ee2ea4ce29989e9f55",
+      "text_characters": 33849
+    },
+    {
+      "id": "nvidia-nim-llm-docs",
+      "url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/overview.html",
+      "checked_at": "2026-09-29T13:23:29.202404+00:00",
+      "health": {
+        "id": "nvidia-nim-llm-docs",
+        "url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/overview.html",
+        "checked_at": "2026-09-29T13:23:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/overview.html",
+        "content_type": "text/html",
+        "page_title": "NVIDIA NIM for LLM and VLM Documentation — NVIDIA NIM for LLM and VLM",
+        "canonical_url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/overview.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e3cd14172bca4917527f60c6d2684133be75dba8f6199390a04f019f6dce0841",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/overview.html",
+      "sha256": "a5bb1bd7745883f7fa17bcfa717560681abac0d4ff5154d99dbbf89a59281ce0",
+      "text_characters": 5097
+    },
+    {
+      "id": "nvidia-triton-getting-started",
+      "url": "https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/getting_started/quickstart.html",
+      "checked_at": "2026-09-29T13:22:20.870368+00:00",
+      "health": {
+        "id": "nvidia-triton-getting-started",
+        "url": "https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/getting_started/quickstart.html",
+        "checked_at": "2026-09-29T13:22:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/getting_started/quickstart.html",
+        "content_type": "text/html",
+        "page_title": "Quickstart — NVIDIA Triton Inference Server",
+        "canonical_url": "https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/getting_started/quickstart.html",
+        "duration_signals": [],
+        "signal_fingerprint": "dd822ffa6e891cefa094d8d2eefa16597fa7dd6e507dd3aa4a5d4680350bc11b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/getting_started/quickstart.html",
+      "sha256": "219fe738ad8a8c4b9b0c2603176d8908b71e79e6d28d26e6ddf600523d3b3ab6",
+      "text_characters": 4719
+    },
+    {
+      "id": "aws-aif-c01-nist-ai-rmf",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "checked_at": "2026-09-29T13:22:21.074407+00:00",
+      "health": {
+        "id": "aws-aif-c01-nist-ai-rmf",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "checked_at": "2026-09-29T13:22:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AI Risk Management Framework",
+        "canonical_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "duration_signals": [],
+        "signal_fingerprint": "75a108a2df92fa648fb28efac890144b2dec8b5278543106f01f1879fae24c4f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "sha256": "35ecc2618457a20363864c0a52c038482ae410c5a4cd0a600ae7613b72deb00d",
+      "text_characters": 7118
+    },
+    {
+      "id": "numpy-norm",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html",
+      "checked_at": "2026-09-29T13:23:29.202983+00:00",
+      "health": {
+        "id": "numpy-norm",
+        "url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html",
+        "checked_at": "2026-09-29T13:23:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "numpy.linalg.norm — NumPy v2.5 Manual",
+        "canonical_url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html",
+        "duration_signals": [
+          "1 min"
+        ],
+        "signal_fingerprint": "d3d6a3df0ed9f34cf810e44942d64833fa126d488083347ef93733bd3f6de45c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html",
+      "sha256": "0eafc2f032c59dd7d40b3a3f31124aee7e7029b956b5b48e471e53b331f86ead",
+      "text_characters": 3775
+    },
+    {
+      "id": "numpy-lstsq",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html",
+      "checked_at": "2026-09-29T13:23:29.203346+00:00",
+      "health": {
+        "id": "numpy-lstsq",
+        "url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html",
+        "checked_at": "2026-09-29T13:23:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "numpy.linalg.lstsq — NumPy v2.5 Manual",
+        "canonical_url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html",
+        "duration_signals": [],
+        "signal_fingerprint": "4153ab7e62762f8e8cf1f50f46788873058a4807821ed73679d1809dbed00615",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html",
+      "sha256": "7d9824ea16e0ed853333c82162d6b3b20426964089f5b448956bb365482f8625",
+      "text_characters": 2915
+    },
+    {
+      "id": "nvidia-nim-release-notes",
+      "url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/release-notes.html",
+      "checked_at": "2026-09-29T13:27:35.552022+00:00",
+      "health": {
+        "id": "nvidia-nim-release-notes",
+        "url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/release-notes.html",
+        "checked_at": "2026-09-29T13:27:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/release-notes.html",
+        "content_type": "text/html",
+        "page_title": "Release Notes — NVIDIA NIM for LLM and VLM",
+        "canonical_url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/release-notes.html",
+        "duration_signals": [],
+        "signal_fingerprint": "29d91666176e40fa031a08cec000390dc6f194ae54122b6fec48ba9f50ccdcad",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/release-notes.html",
+      "sha256": "fdf2b70f9d59a49ab70f2207c0bbcf81bfa48484a284a57911717f9da076b89b",
+      "text_characters": 15489
+    },
+    {
+      "id": "nvidia-nim-offerings",
+      "url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/nim-offerings.html",
+      "checked_at": "2026-09-29T13:27:35.552863+00:00",
+      "health": {
+        "id": "nvidia-nim-offerings",
+        "url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/nim-offerings.html",
+        "checked_at": "2026-09-29T13:27:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/nim-offerings.html",
+        "content_type": "text/html",
+        "page_title": "NIM Offerings — NVIDIA NIM for LLM and VLM",
+        "canonical_url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/nim-offerings.html",
+        "duration_signals": [
+          "about 72 hours"
+        ],
+        "signal_fingerprint": "24c28f16ca21b6dbc8f09f60d3604842df8e6fb27c9e929a61a65d08af7fbf8d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/nim-offerings.html",
+      "sha256": "e5b34d4d612a1f6dbc8fcd1110a901417c1c6ea585f90b963429737701014c41",
+      "text_characters": 3268
+    }
+  ],
+  "added_source_ids": [
+    "nvidia-certification-policies",
+    "nvidia-open-deep-learning",
+    "nvidia-rag-explainer",
+    "nvidia-prompt-ptuning",
+    "nvidia-nim-llm-docs",
+    "nvidia-triton-getting-started",
+    "numpy-norm",
+    "numpy-lstsq",
+    "nvidia-nim-release-notes",
+    "nvidia-nim-offerings"
+  ],
+  "findings": [
+    {
+      "id": "ncagenl-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "The preparation layout now exposes detailed scope",
+      "url": "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCA-GENL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "33topicbullets in5areas; old Exam Blueprint table heading absent.",
+      "recommendation": "Support new exact-code layout with incomplete-content guards andlegacy regressioncoverage;mapallbullets.",
+      "disposition": "applied",
+      "source_id": "nvidia-nca-genl-certification",
+      "resolution": "Support new exact-code layout with incomplete-content guards andlegacy regressioncoverage;mapallbullets."
+    },
+    {
+      "id": "ncagenl-deep-2",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "The prior question-count contradiction no longer appears",
+      "url": "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCA-GENL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Currentdetail50-60;old50questionintroabsent;delivery/statussnapshotunchanged.",
+      "recommendation": "Remove outdated contradiction claim;retain datedbooking verification.",
+      "disposition": "applied",
+      "source_id": "nvidia-nca-genl-certification",
+      "resolution": "Remove outdated contradiction claim;retain datedbooking verification."
+    },
+    {
+      "id": "ncagenl-deep-3",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "An exam score or passing percentage cannot be inferred",
+      "url": "https://www.nvidia.com/en-us/learn/certification/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCA-GENL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "CurrentFAQpass/failwithoutscore and14dayretake/max5attempts/2yrrenewal.",
+      "recommendation": "Statepublicpolicywithindividualbookinglimitations;noinventedpassingpercentage.",
+      "disposition": "applied",
+      "source_id": "nvidia-certification-policies",
+      "resolution": "Statepublicpolicywithindividualbookinglimitations;noinventedpassingpercentage."
+    },
+    {
+      "id": "ncagenl-deep-4",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Public training materials replace the earlier paid-course table route",
+      "url": "https://github.com/NVDLI/fundamentals-of-deep-learning",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCA-GENL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Currentcanonical linksopenFDLrepository plusRapidApplicationDevelopment.",
+      "recommendation": "Describe6publicmodulesandseparatecompute/dependencies;noinventedruntime orcompletednotebooks.",
+      "disposition": "applied",
+      "source_id": "nvidia-open-deep-learning",
+      "resolution": "Describe6publicmodulesandseparatecompute/dependencies;noinventedruntime orcompletednotebooks."
+    },
+    {
+      "id": "ncagenl-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Current NIM architecture differs from older assumptions",
+      "url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/overview.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCA-GENL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Overview2.xusesonebackendpercontainer/vLLM;oldintroURLmeta-refresh.",
+      "recommendation": "Followregisteredactualtargetandteachversion-specificdeployment roles distinctfromTriton.",
+      "disposition": "applied",
+      "source_id": "nvidia-nim-llm-docs",
+      "resolution": "Followregisteredactualtargetandteachversion-specificdeployment roles distinctfromTriton."
+    },
+    {
+      "id": "ncagenl-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Availability and support are different decisions",
+      "url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/nim-offerings.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCA-GENL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "NIMversusNIMCertifiedFB/PB have differentvalidation/support/subscriptionconditions.",
+      "recommendation": "Verifyoffering/tag/entitlementratherthanassumingno-chargeincludesenterprise support.",
+      "disposition": "applied",
+      "source_id": "nvidia-nim-offerings",
+      "resolution": "Verifyoffering/tag/entitlementratherthanassumingno-chargeincludesenterprise support."
+    },
+    {
+      "id": "ncagenl-deep-7",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Serving upgrades can change an accepted request contract",
+      "url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/release-notes.html",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "NCA-GENL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "2.0.13documentsmodel-specificfourstopstringslimit andseparatehostdriver remediation.",
+      "recommendation": "Addcontractregression andenvironment checks asproposedactivities;no universal model-limitclaim.",
+      "disposition": "applied",
+      "source_id": "nvidia-nim-release-notes",
+      "resolution": "Addcontractregression andenvironment checks asproposedactivities;no universal model-limitclaim."
+    },
+    {
+      "id": "ncagenl-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A transform must be fitted within the training boundary",
+      "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCA-GENL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Preprocessingfitontestdataleaksinformation;transformappliesthetrainingfit.",
+      "recommendation": "Demonstrateactualtrain-onlycenter/model fitandheldouterrorsusingNumPy.",
+      "disposition": "applied",
+      "source_id": "sklearn-common-pitfalls",
+      "resolution": "Demonstrateactualtrain-onlycenter/model fitandheldouterrorsusingNumPy."
+    },
+    {
+      "id": "ncagenl-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Solver output is not a generalization result",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCA-GENL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Residualarraycanbeemptybecauseofrank/dimensions;modelcanfittrainingbutfailheldout.",
+      "recommendation": "ComputeheldoutMAE/MSEandinspectfailurecase;state tinysamplelimits.",
+      "disposition": "applied",
+      "source_id": "numpy-lstsq",
+      "resolution": "ComputeheldoutMAE/MSEandinspectfailurecase;state tinysamplelimits."
+    },
+    {
+      "id": "ncagenl-deep-10",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Revision work and concept notes are not a replacement final framework",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCA-GENL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Portalretains1.0and2024profile whiledescribingrevisionandApril2026concept.",
+      "recommendation": "Keepvoluntaryguidanceanddraft/finalstatusseparatefromcompliance claims.",
+      "disposition": "applied",
+      "source_id": "aws-aif-c01-nist-ai-rmf",
+      "resolution": "Keepvoluntaryguidanceanddraft/finalstatusseparatefromcompliance claims."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "nvidia-rag-explainer",
+      "published_on": "2025-01-31",
+      "review": "Complete main updatedarticle;original2023date distinct."
+    },
+    {
+      "source_id": "nvidia-prompt-ptuning",
+      "published_on": "2023-04-26",
+      "review": "Complete main historicalarticle;no currentearlyaccess/runtimeclaim."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 23,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "ebd5057cc1146874f016a07c042affb3c711d33f97b13108036d92b8350f8af0",
+      "python_version": "3.13.14",
+      "numpy_version": "2.5.2",
+      "execution_stdout": "{\"metrics\": {\"numpy\": \"2.5.2\", \"test_mae\": 6.0, \"test_mse\": 72.0, \"held_out_predictions\": [16.0, 18.0], \"retrieval_precision\": 0.5, \"retrieval_recall\": 1.0}, \"checks\": [\"training-only center\", \"test-inclusive center would differ\", \"full-rank two-parameter fit\", \"training fit\", \"held-out predictions\", \"held-out MAE six\", \"held-out MSE seventy-two\", \"better than fixed training-mean baseline\", \"one held-out slice still has large error\", \"underdetermined residual output is empty\", \"authorized current version retrieved\", \"unknown vocabulary yields abstention\", \"unknown tenant denied\", \"unknown role denied\", \"current-manifest removal takes effect\", \"query magnitude does not change cosine ranking\", \"zero vector is explicitly handled\", \"unfiltered top result exposes a forbidden record\", \"post-filtering only the top hit loses an eligible result\", \"boolean k rejected\", \"retrieval precision one-half\", \"retrieval recall one\", \"stale citation is not current evidence\"]}\n23 local NumPy checks passed",
+      "results": {
+        "metrics": {
+          "numpy": "2.5.2",
+          "test_mae": 6.0,
+          "test_mse": 72.0,
+          "held_out_predictions": [
+            16.0,
+            18.0
+          ],
+          "retrieval_precision": 0.5,
+          "retrieval_recall": 1.0
+        },
+        "checks": [
+          "training-only center",
+          "test-inclusive center would differ",
+          "full-rank two-parameter fit",
+          "training fit",
+          "held-out predictions",
+          "held-out MAE six",
+          "held-out MSE seventy-two",
+          "better than fixed training-mean baseline",
+          "one held-out slice still has large error",
+          "underdetermined residual output is empty",
+          "authorized current version retrieved",
+          "unknown vocabulary yields abstention",
+          "unknown tenant denied",
+          "unknown role denied",
+          "current-manifest removal takes effect",
+          "query magnitude does not change cosine ranking",
+          "zero vector is explicitly handled",
+          "unfiltered top result exposes a forbidden record",
+          "post-filtering only the top hit loses an eligible result",
+          "boolean k rejected",
+          "retrieval precision one-half",
+          "retrieval recall one",
+          "stale citation is not current evidence"
+        ]
+      },
+      "execution_boundary": "Actual CPU least-squares fit,held-out predictions/metrics,vector norms/cosine retrieval andtrusted eligibility/version fixture checks. Syntheticdata; nofilewrites/network/install/accounts/GPU/modeldownloads.",
+      "model_limits": "Not anLLM,learnedembedding,generator,completeRAG/authenticationservice orproductionbenchmark. Tinydimensionlessdata andtrustedtenant/role/manifest,globallydistinctdocumentIDs. No realpermission/deletioncachepropagation,concurrency orstatisticalgeneralization."
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Udemy HTTP403; four public course pages return empty metadata templates and one returns a maintenance/moved notice. Earlier course duration/price/revision claims remain unverified; no paid interiors,questions ortrials.",
+    "Independent human review pending; eight infrastructure activities and three original reasoning scenarios proposed. No GPU,LLM,model training framework,container/server,cloud orendpoint deployment.",
+    "23localchecks perform actual NumPy CPU fit/metrics andlexical cosine retrieval withtrustedpermission/versionfixtures. No learnedembedding,LLM/generator,completeRAGorrealidentityservice.",
+    "Tiny dimensionless syntheticdata doesnotestablish statisticalgeneralization,fairness,latency,cost orproductionperformance. No actualdelete/cachepropagation,durableauthorization,concurrencyorend-to-endgrounding.",
+    "Canonicalmain33topics fullyreviewed; otherstandards/APIs selectedsections only as recorded. PubliccourseREADMEreviewed butnotnotebookexecution. NIMrelease selectedchanges,notall21knownissues/modelmatrices.",
+    "NIMofferings/licensing/supportstatements aredatedpublicmetadata;noentitlementpurchase,complianceapproval orhostdriverchange. scikit-learn/torch/matplotlibnotinstalled orrun.",
+    "No individual exam booking,scoreprediction,accommodationrequest,securebrowserinstall oractualexamquestions accessed.",
+    "Five reservedGitHubguides anddisablednotificationpilot untouched;noexternalmessages,service/authchanges,installations ornewpermissions."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 179,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Full repository/site gates and23actualNumPyCPU fit/prediction/loss/vector/cosine/eligibility checks. Syntheticdataandtrustedidentity/versionfixtures;nofilewrites/network/install/accounts/GPU/modeldownloads. NotLLM,semanticembedding,completeRAG/authenticationservice orproductionbenchmark.",
+    "passed": 23,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "ebd5057cc1146874f016a07c042affb3c711d33f97b13108036d92b8350f8af0",
+    "python_version": "3.13.14",
+    "numpy_version": "2.5.2",
+    "execution_stdout": "{\"metrics\": {\"numpy\": \"2.5.2\", \"test_mae\": 6.0, \"test_mse\": 72.0, \"held_out_predictions\": [16.0, 18.0], \"retrieval_precision\": 0.5, \"retrieval_recall\": 1.0}, \"checks\": [\"training-only center\", \"test-inclusive center would differ\", \"full-rank two-parameter fit\", \"training fit\", \"held-out predictions\", \"held-out MAE six\", \"held-out MSE seventy-two\", \"better than fixed training-mean baseline\", \"one held-out slice still has large error\", \"underdetermined residual output is empty\", \"authorized current version retrieved\", \"unknown vocabulary yields abstention\", \"unknown tenant denied\", \"unknown role denied\", \"current-manifest removal takes effect\", \"query magnitude does not change cosine ranking\", \"zero vector is explicitly handled\", \"unfiltered top result exposes a forbidden record\", \"post-filtering only the top hit loses an eligible result\", \"boolean k rejected\", \"retrieval precision one-half\", \"retrieval recall one\", \"stale citation is not current evidence\"]}\n23 local NumPy checks passed",
+    "results": {
+      "metrics": {
+        "numpy": "2.5.2",
+        "test_mae": 6.0,
+        "test_mse": 72.0,
+        "held_out_predictions": [
+          16.0,
+          18.0
+        ],
+        "retrieval_precision": 0.5,
+        "retrieval_recall": 1.0
+      },
+      "checks": [
+        "training-only center",
+        "test-inclusive center would differ",
+        "full-rank two-parameter fit",
+        "training fit",
+        "held-out predictions",
+        "held-out MAE six",
+        "held-out MSE seventy-two",
+        "better than fixed training-mean baseline",
+        "one held-out slice still has large error",
+        "underdetermined residual output is empty",
+        "authorized current version retrieved",
+        "unknown vocabulary yields abstention",
+        "unknown tenant denied",
+        "unknown role denied",
+        "current-manifest removal takes effect",
+        "query magnitude does not change cosine ranking",
+        "zero vector is explicitly handled",
+        "unfiltered top result exposes a forbidden record",
+        "post-filtering only the top hit loses an eligible result",
+        "boolean k rejected",
+        "retrieval precision one-half",
+        "retrieval recall one",
+        "stale citation is not current evidence"
+      ]
+    },
+    "model_limits": "Not anLLM,learnedembedding,generator,completeRAG/authenticationservice orproductionbenchmark. Tinydimensionlessdata andtrustedtenant/role/manifest,globallydistinctdocumentIDs. No realpermission/deletioncachepropagation,concurrency orstatisticalgeneralization.",
+    "learning_catalog_consistency": "passed"
+  },
+  "archived_prior_baselines": {
+    "objectives": {
+      "path": "data/objective-snapshots/nca-genl-2026-09-02-official-objectives.txt",
+      "sha256": "220607c5f839a196b22d3211345d8fcd09128190fd7f21ffb6d4fd7d2c4bf5c7"
+    },
+    "status": {
+      "path": "data/objective-snapshots/nca-genl-2026-09-02-official-status.json",
+      "sha256": "31475a359647e2b25d4180f1a8fc5f626f9ff4fd9ba758e2673d7e1014d760cf"
+    },
+    "historical_audit_paths_updated": 1,
+    "reason": "Current public page exposes33 detailed topic bullets,renamesDataAnalysis,reordersareas andchangestraining/readings. Weightsanddelivery/lifecycleunchanged. Legacyparserretained;newlayoutguardedandregressiontested. Noofficialeffective dateinvented."
+  },
+  "objective_baseline_acceptance": {
+    "changed": [
+      "NCA-GENL"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "NCA-GENL",
+        "title": "NVIDIA-Certified Associate: Generative AI LLMs",
+        "url": "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/",
+        "guide_path": "guides/NCA-GENL-nvidia-generative-ai-llms-associate.md",
+        "snapshot_path": "data\\objective-snapshots\\nca-genl-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\nca-genl-official-status.json",
+        "previous_sha256": "220607c5f839a196b22d3211345d8fcd09128190fd7f21ffb6d4fd7d2c4bf5c7",
+        "current_sha256": "58fd36ca6afda349885c81062a5a802dc3c11fd8b09c1eeb21dc98b5bc4f2b9d",
+        "previous_status_sha256": "31475a359647e2b25d4180f1a8fc5f626f9ff4fd9ba758e2673d7e1014d760cf",
+        "current_status_sha256": "31475a359647e2b25d4180f1a8fc5f626f9ff4fd9ba758e2673d7e1014d760cf",
+        "official_status": {
+          "skills_versions": [
+            "NCA-GENL",
+            "Duration: 1 hour",
+            "Price: $125",
+            "Certification level: Associate",
+            "Subject: Generative AI and large language models",
+            "Number of questions: 50-60 multiple-choice",
+            "Prerequisites: A basic understanding of generative AI and large language models",
+            "Language: English",
+            "Validity: This certification is valid for two years from issuance. Recertification may be achieved by retaking the exam."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": false,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "written": true
+      }
+    ]
+  },
+  "post_acceptance_monitor": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "NCA-GENL",
+        "title": "NVIDIA-Certified Associate: Generative AI LLMs",
+        "url": "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/",
+        "guide_path": "guides/NCA-GENL-nvidia-generative-ai-llms-associate.md",
+        "snapshot_path": "data\\objective-snapshots\\nca-genl-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\nca-genl-official-status.json",
+        "previous_sha256": "58fd36ca6afda349885c81062a5a802dc3c11fd8b09c1eeb21dc98b5bc4f2b9d",
+        "current_sha256": "58fd36ca6afda349885c81062a5a802dc3c11fd8b09c1eeb21dc98b5bc4f2b9d",
+        "previous_status_sha256": "31475a359647e2b25d4180f1a8fc5f626f9ff4fd9ba758e2673d7e1014d760cf",
+        "current_status_sha256": "31475a359647e2b25d4180f1a8fc5f626f9ff4fd9ba758e2673d7e1014d760cf",
+        "official_status": {
+          "skills_versions": [
+            "NCA-GENL",
+            "Duration: 1 hour",
+            "Price: $125",
+            "Certification level: Associate",
+            "Subject: Generative AI and large language models",
+            "Number of questions: 50-60 multiple-choice",
+            "Prerequisites: A basic understanding of generative AI and large language models",
+            "Language: English",
+            "Validity: This certification is valid for two years from issuance. Recertification may be achieved by retaking the exam."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "initial_monitor_layout_failure": {
+    "changed": [],
+    "errors": [
+      "NCA-GENL"
+    ],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "NCA-GENL",
+        "title": "NVIDIA-Certified Associate: Generative AI LLMs",
+        "url": "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/",
+        "guide_path": "guides/NCA-GENL-nvidia-generative-ai-llms-associate.md",
+        "snapshot_path": "data\\objective-snapshots\\nca-genl-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\nca-genl-official-status.json",
+        "status": "error",
+        "changed": false,
+        "error": "ValueError: Could not find NVIDIA exam blueprint"
+      }
+    ]
+  },
+  "public_objective_groups": [
+    {
+      "title": "Core Machine Learning and AI Knowledge",
+      "description": "Knowledge of algorithms, conventions, and techniques that allow computers to learn from and make predictions or decisions based on data.",
+      "weight": "30%",
+      "objectives": [
+        "Assist in deployment and evaluation of model scalability, performance, and reliability under the supervision of senior team members.",
+        "Awareness of the process of extracting insights from large datasets using data mining, data visualization, and similar techniques.",
+        "Build LLM use cases such as retrieval-augmented generation (RAG), chatbots, and summarizers.",
+        "Curate and embed content datasets for RAGs.",
+        "Familiarity with the fundamentals of machine learning (e.g., feature engineering, model comparison, cross validation).",
+        "Familiarity with the capabilities of Python natural language packages (spaCy, NumPy, vector databases, etc.).",
+        "Read research papers (articles, conference papers, etc.) to identify emerging LLM trends and technologies.",
+        "Select and use models to create text embeddings.",
+        "Use prompt engineering principles to create prompts to achieve desired results.",
+        "Use Python packages (spaCy, NumPy, Keras, etc.) to implement specific traditional machine learning analyses."
+      ]
+    },
+    {
+      "title": "Data Analysis",
+      "description": "Inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, informing conclusions, and supporting decision-making.",
+      "weight": "14%",
+      "objectives": [
+        "Awareness of the process of extracting insights from large datasets using data mining, data visualization, and similar techniques.",
+        "Compare models using statistical performance metrics, such as loss functions or proportion of explained variance.",
+        "Conduct data analysis under the supervision of a senior team member.",
+        "Create graphs, charts, or other visualizations to convey the results of data analysis using specialized software.",
+        "Identify relationships and trends or any factors that could affect the results of research."
+      ]
+    },
+    {
+      "title": "Experimentation",
+      "description": "Perform, evaluate, and interpret experiments, including AI model evaluation and the use of human subjects in labeling or reinforcement learning from human feedback (RLHF).",
+      "weight": "22%",
+      "objectives": [
+        "Assist in model training and training optimization under the supervision of a senior team member.",
+        "Assist in preparing (e.g., scraping, tokenization) large datasets for pretraining, fine-tuning, and RLHF.",
+        "Assist in the design and conduct of hardware or software tests for LLM applications.",
+        "Assist in the evaluation of current or emerging technologies to consider factors such as cost, portability, compatibility, or usability.",
+        "Awareness of, and/or participation in, data collection from human subjects (e.g., RLHF).",
+        "Evaluate and refine existing models / benchmarking.",
+        "Executes experimentation to evaluate models and pipelines."
+      ]
+    },
+    {
+      "title": "Software Development",
+      "description": "Create, maintain, and test software.",
+      "weight": "24%",
+      "objectives": [
+        "Assist in the deployment and evaluations of model scalability, performance, and reliability under the supervision of a senior team member.",
+        "Build LLM use cases such as RAGs, chatbots, and summarizers.",
+        "Familiarity with the capabilities of Python natural language packages (spaCy, NumPy, vector databases, etc.).",
+        "Identify system data, hardware, or software components required to meet user needs.",
+        "Monitor functioning of data collection, experiments, and other software processes.",
+        "Use Python packages (spaCy, NumPy, Keras, etc.) to implement specific traditional machine learning analyses.",
+        "Write software components or scripts under the supervision of a senior team member."
+      ]
+    },
+    {
+      "title": "Trustworthy AI",
+      "description": "Creation and assessment of ethical, energy-conscious, and reliable artificial intelligence systems capable of interpreting and integrating various forms of data, ensuring that they're designed and applied in a manner that's transparent, fair, and verifiable.",
+      "weight": "10%",
+      "objectives": [
+        "Describe the ethical principles of trustworthy AI.",
+        "Describe the balance between data privacy and the importance of data consent.",
+        "Describe how to use NVIDIA and other technologies to improve AI trustworthiness.",
+        "Describe how to minimize bias in AI systems."
+      ]
+    }
+  ],
+  "monitor_repair": {
+    "files": [
+      "scripts/check_official_study_guides.py",
+      "tests/test_check_official_study_guides.py"
+    ],
+    "focused_tests_passed": 40,
+    "new_test_methods": 3,
+    "guards": [
+      "exact exam-code preparation heading",
+      "at least three weighted sections",
+      "weights sum to100",
+      "matching topic/weight markers",
+      "nonempty topic block before each weight",
+      "footer excluded"
+    ],
+    "legacy_behavior": "Original Exam Blueprint extraction branch retained and existing regression case passes.",
+    "snapshot_boundary": "Explicit archive/write/post-unchanged; delivery/lifecycle bytes unchanged."
+  },
+  "nim_initial_redirect_receipt": {
+    "id": "nvidia-nim-llm-docs",
+    "url": "https://docs.nvidia.com/nim/large-language-models/latest/introduction.html",
+    "checked_at": "2026-09-29T13:22:20.371484+00:00",
+    "health": {
+      "id": "nvidia-nim-llm-docs",
+      "url": "https://docs.nvidia.com/nim/large-language-models/latest/introduction.html",
+      "checked_at": "2026-09-29T13:22:20+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/nim/large-language-models/latest/introduction.html",
+      "content_type": "text/html",
+      "page_title": "",
+      "canonical_url": "https://docs.nvidia.com/nim/large-language-models/latest/introduction.html",
+      "duration_signals": [],
+      "signal_fingerprint": "58e7800b9ce2e8b5cfd5241acd1a4080d1380b6ac2bb44ca6412a56db5c23f2c",
+      "error": ""
+    },
+    "http_status": 200,
+    "final_url": "https://docs.nvidia.com/nim/large-language-models/latest/introduction.html",
+    "sha256": "4bdb5c01ca9be15a3331e848cc5c9454a19523695902c2724964ec93040bcf83",
+    "text_characters": 0
+  },
+  "nim_redirect_resolution": "Followed public meta-refresh from introduction.html to about-nim-llm/overview.html; source URL now identifies actual reviewed content. No authentication or automatic script execution.",
+  "catalog_metadata_observations": {
+    "current_canonical_recommended_routes": [
+      "Fundamentals of Deep Learning open-source materials",
+      "Rapid Application Development with LLMs"
+    ],
+    "open_course_readme_module_count": 6,
+    "blank_course_templates": [
+      "nvidia-getting-started-deep-learning",
+      "nvidia-end-to-end-data-science",
+      "nvidia-building-llm-apps-prompt-engineering",
+      "nvidia-rapid-application-development-llms"
+    ],
+    "maintenance_page": "nvidia-intro-transformer-nlp",
+    "http403": "udemy-nca-genl-specialization",
+    "old_runtimes_and_prices": "unverified",
+    "course_execution": "none",
+    "old_question_count_contradiction": "50-question introductory prose absent; currentdetail50-60",
+    "passing_score": "not published here; programFAQpass/failwithoutreportedscore"
+  },
+  "catalog_findings": [
+    {
+      "source_id": "nvidia-getting-started-deep-learning",
+      "observation": "HTTP200 public template has no populated course metadata; placeholder workshops are not actual offering evidence.",
+      "resolution": "Disclose unverified old runtime/price/content andretainonlycurrentcanonical recommendation wherepresent."
+    },
+    {
+      "source_id": "nvidia-end-to-end-data-science",
+      "observation": "HTTP200 public template has no populated course metadata; placeholder workshops are not actual offering evidence.",
+      "resolution": "Disclose unverified old runtime/price/content andretainonlycurrentcanonical recommendation wherepresent."
+    },
+    {
+      "source_id": "nvidia-building-llm-apps-prompt-engineering",
+      "observation": "HTTP200 public template has no populated course metadata; placeholder workshops are not actual offering evidence.",
+      "resolution": "Disclose unverified old runtime/price/content andretainonlycurrentcanonical recommendation wherepresent."
+    },
+    {
+      "source_id": "nvidia-rapid-application-development-llms",
+      "observation": "HTTP200 public template has no populated course metadata; placeholder workshops are not actual offering evidence.",
+      "resolution": "Disclose unverified old runtime/price/content andretainonlycurrentcanonical recommendation wherepresent."
+    },
+    {
+      "source_id": "nvidia-intro-transformer-nlp",
+      "observation": "Maintenance/moved notice only.",
+      "resolution": "Earlier runtime and currentavailability unverified."
+    },
+    {
+      "source_id": "udemy-nca-genl-specialization",
+      "observation": "HTTP403.",
+      "resolution": "EarlierMarch2026/1h48mmetadata unverified;nointeriororqualityclaim."
+    }
+  ]
+}

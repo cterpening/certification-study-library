@@ -1654,6 +1654,8 @@ The review maps every objective through mission/stakeholders and ethics/law/poli
 
 ## NCA-GENL coverage record
 
+The September 29 [deep review](research/2026-09-29-nca-genl-deep-review.md) maps 33 detailed objectives. Mapped 33 detailed current topic bullets and repaired the monitor for the redesigned preparation page while preserving earlier snapshots and review history. Added 23 executed NumPy checks, 40 answered prompts and eight proposed activities. Updated serving-version and learning-resource boundaries; one commercial catalog and five course metadata pages remain inaccessible. Human review and GPU/LLM execution are pending. Current guide citations: 22 registered, 21 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: five weighted domains—Core Machine Learning and AI Knowledge (30%), Software Development (24%), Experimentation (22%), Data Analysis and Visualization (14%), and Trustworthy AI (10%)

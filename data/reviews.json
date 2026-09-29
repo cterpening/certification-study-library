@@ -3,6 +3,72 @@
   "schema_version": 1,
   "reviews": [
     {
+      "id": "nca-genl-2026-09-02-source-validation",
+      "exam_code": "NCA-GENL",
+      "guide_path": "guides/NCA-GENL-nvidia-generative-ai-llms-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nca-genl-2026-09-02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "220607c5f839a196b22d3211345d8fcd09128190fd7f21ffb6d4fd7d2c4bf5c7",
+      "objective_coverage": [
+        {
+          "objective_group": "Core Machine Learning and AI Knowledge (30%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Software Development (24%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1–2",
+            "Labs 3–4 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Experimentation (22%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Data Analysis and Visualization (14%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 2–3",
+            "Labs 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Trustworthy AI (10%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 8,
+        "reachable": 7,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All five live weighted domains are mapped through a governed lifecycle from use case and data through model/adaptation/retrieval choice, implementation, controlled experiment, deployment, monitoring and trustworthy-AI evidence. Three scenarios, eight labs and 40 checks are included. Seven URLs are reachable and Udemy is automation-blocked; none are broken. The certification page's conflicting 50 and 50–60 question statements are preserved rather than reconciled by inference. No recalled/live item, dump or copied course content is used."
+    },
+    {
       "id": "cissp-2026-09-02-source-validation",
       "exam_code": "CISSP",
       "guide_path": "guides/CISSP-isc2-certified-information-systems-security-professional.md",
@@ -9009,24 +9075,70 @@
       "notes": "Mapped 62 current objectives, preserved the prior baseline before accepting a testing-center label edit, and reviewed the 2026 waiver policy and current technical guidance. Added 23 executed local risk-register checks, 64 answered prompts and eight proposed infrastructure activities. Two commercial catalogs remain blocked; human review and infrastructure execution are pending. See docs/research/2026-09-29-cissp-deep-review.md"
     },
     {
-      "id":"nca-genl-2026-09-02-source-validation",
-      "exam_code":"NCA-GENL",
-      "guide_path":"guides/NCA-GENL-nvidia-generative-ai-llms-associate.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-02",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/nca-genl-official-objectives.txt",
-      "blueprint_snapshot_sha256":"220607c5f839a196b22d3211345d8fcd09128190fd7f21ffb6d4fd7d2c4bf5c7",
-      "objective_coverage":[
-        {"objective_group":"Core Machine Learning and AI Knowledge (30%)","guide_sections":["Section 1","All scenarios","Labs 1–2 and 8"]},
-        {"objective_group":"Software Development (24%)","guide_sections":["Section 2","Scenarios 1–2","Labs 3–4 and 7–8"]},
-        {"objective_group":"Experimentation (22%)","guide_sections":["Section 3","All scenarios","Labs 4–5 and 8"]},
-        {"objective_group":"Data Analysis and Visualization (14%)","guide_sections":["Section 4","Scenarios 2–3","Labs 5–6 and 8"]},
-        {"objective_group":"Trustworthy AI (10%)","guide_sections":["Section 5","All scenarios","Labs 7–8"]}
+      "id": "nca-genl-2026-09-29-source-validation",
+      "exam_code": "NCA-GENL",
+      "guide_path": "guides/NCA-GENL-nvidia-generative-ai-llms-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nca-genl-official-objectives.txt",
+      "blueprint_snapshot_sha256": "58fd36ca6afda349885c81062a5a802dc3c11fd8b09c1eeb21dc98b5bc4f2b9d",
+      "objective_coverage": [
+        {
+          "objective_group": "Core Machine Learning and AI Knowledge (30%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Software Development (24%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1–2",
+            "Labs 3–4 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Experimentation (22%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Data Analysis and Visualization (14%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 2–3",
+            "Labs 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Trustworthy AI (10%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 7–8"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":8,"reachable":7,"access_blocked":1,"missing_or_error":0},
-      "notes":"All five live weighted domains are mapped through a governed lifecycle from use case and data through model/adaptation/retrieval choice, implementation, controlled experiment, deployment, monitoring and trustworthy-AI evidence. Three scenarios, eight labs and 40 checks are included. Seven URLs are reachable and Udemy is automation-blocked; none are broken. The certification page's conflicting 50 and 50–60 question statements are preserved rather than reconciled by inference. No recalled/live item, dump or copied course content is used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 22,
+        "reachable": 21,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Mapped 33 detailed current topic bullets and repaired the monitor for the redesigned preparation page while preserving earlier snapshots and review history. Added 23 executed NumPy checks, 40 answered prompts and eight proposed activities. Updated serving-version and learning-resource boundaries; one commercial catalog and five course metadata pages remain inaccessible. Human review and GPU/LLM execution are pending. See docs/research/2026-09-29-nca-genl-deep-review.md"
     },
     {
       "id":"nca-aiio-2026-09-02-source-validation",

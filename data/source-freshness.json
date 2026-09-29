@@ -4,6 +4,253 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-ncagenl-deep-review",
+      "title": "NCA-GENL complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "NCA-GENL"
+      ],
+      "results": [
+        {
+          "exam_code": "NCA-GENL",
+          "vendor_id": "nvidia",
+          "guide_path": "guides/NCA-GENL-nvidia-generative-ai-llms-associate.md",
+          "baseline_sha256": "9fe6254e4b08d07305c74135acda7afeb67c1737fa5e289e9752807090fda4f0",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Complete main33topics/5weights reviewed; unchangeddelivery/lifecycle. Redesignedpage parser supportslegacyandcurrentlayout;historicalbytespreserved,explicitwrite/postunchanged."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "SelectedNumPy/sklearn,NIM/Triton andtrust references.23actualCPUchecks withlimits. NIM2.xarchitecture/offering distinctions;nocloud/GPU/LLMoperation."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "SelectedNIM2.0.13release changes anddatedNVIDIA RAG/promptarticles; currentNISTrevision/conceptnote distinguishedfromfinalbaseline."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Currentcanonical2routes,openREADME6modules. Fourblankcourse templates/onemaintenance notice andone403;oldruntime/price unverified. HTTPsuccessnotcontentverification."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Old50vs50-60proseconflict gone;DataAnalysis renamed. New33topics vsoldweightedareas;schema/parserfailure fixed. Model-fitquality/retrievalpermission/currentversion/grounding separate."
+            }
+          },
+          "findings": [
+            {
+              "id": "ncagenl-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "The preparation layout now exposes detailed scope",
+              "url": "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCA-GENL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "33topicbullets in5areas; old Exam Blueprint table heading absent.",
+              "recommendation": "Support new exact-code layout with incomplete-content guards andlegacy regressioncoverage;mapallbullets.",
+              "disposition": "applied",
+              "source_id": "nvidia-nca-genl-certification",
+              "resolution": "Support new exact-code layout with incomplete-content guards andlegacy regressioncoverage;mapallbullets."
+            },
+            {
+              "id": "ncagenl-deep-2",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "The prior question-count contradiction no longer appears",
+              "url": "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCA-GENL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Currentdetail50-60;old50questionintroabsent;delivery/statussnapshotunchanged.",
+              "recommendation": "Remove outdated contradiction claim;retain datedbooking verification.",
+              "disposition": "applied",
+              "source_id": "nvidia-nca-genl-certification",
+              "resolution": "Remove outdated contradiction claim;retain datedbooking verification."
+            },
+            {
+              "id": "ncagenl-deep-3",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "An exam score or passing percentage cannot be inferred",
+              "url": "https://www.nvidia.com/en-us/learn/certification/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCA-GENL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "CurrentFAQpass/failwithoutscore and14dayretake/max5attempts/2yrrenewal.",
+              "recommendation": "Statepublicpolicywithindividualbookinglimitations;noinventedpassingpercentage.",
+              "disposition": "applied",
+              "source_id": "nvidia-certification-policies",
+              "resolution": "Statepublicpolicywithindividualbookinglimitations;noinventedpassingpercentage."
+            },
+            {
+              "id": "ncagenl-deep-4",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Public training materials replace the earlier paid-course table route",
+              "url": "https://github.com/NVDLI/fundamentals-of-deep-learning",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCA-GENL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Currentcanonical linksopenFDLrepository plusRapidApplicationDevelopment.",
+              "recommendation": "Describe6publicmodulesandseparatecompute/dependencies;noinventedruntime orcompletednotebooks.",
+              "disposition": "applied",
+              "source_id": "nvidia-open-deep-learning",
+              "resolution": "Describe6publicmodulesandseparatecompute/dependencies;noinventedruntime orcompletednotebooks."
+            },
+            {
+              "id": "ncagenl-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Current NIM architecture differs from older assumptions",
+              "url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/overview.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCA-GENL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Overview2.xusesonebackendpercontainer/vLLM;oldintroURLmeta-refresh.",
+              "recommendation": "Followregisteredactualtargetandteachversion-specificdeployment roles distinctfromTriton.",
+              "disposition": "applied",
+              "source_id": "nvidia-nim-llm-docs",
+              "resolution": "Followregisteredactualtargetandteachversion-specificdeployment roles distinctfromTriton."
+            },
+            {
+              "id": "ncagenl-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Availability and support are different decisions",
+              "url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/nim-offerings.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCA-GENL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "NIMversusNIMCertifiedFB/PB have differentvalidation/support/subscriptionconditions.",
+              "recommendation": "Verifyoffering/tag/entitlementratherthanassumingno-chargeincludesenterprise support.",
+              "disposition": "applied",
+              "source_id": "nvidia-nim-offerings",
+              "resolution": "Verifyoffering/tag/entitlementratherthanassumingno-chargeincludesenterprise support."
+            },
+            {
+              "id": "ncagenl-deep-7",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Serving upgrades can change an accepted request contract",
+              "url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/release-notes.html",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "NCA-GENL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "2.0.13documentsmodel-specificfourstopstringslimit andseparatehostdriver remediation.",
+              "recommendation": "Addcontractregression andenvironment checks asproposedactivities;no universal model-limitclaim.",
+              "disposition": "applied",
+              "source_id": "nvidia-nim-release-notes",
+              "resolution": "Addcontractregression andenvironment checks asproposedactivities;no universal model-limitclaim."
+            },
+            {
+              "id": "ncagenl-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A transform must be fitted within the training boundary",
+              "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCA-GENL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Preprocessingfitontestdataleaksinformation;transformappliesthetrainingfit.",
+              "recommendation": "Demonstrateactualtrain-onlycenter/model fitandheldouterrorsusingNumPy.",
+              "disposition": "applied",
+              "source_id": "sklearn-common-pitfalls",
+              "resolution": "Demonstrateactualtrain-onlycenter/model fitandheldouterrorsusingNumPy."
+            },
+            {
+              "id": "ncagenl-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Solver output is not a generalization result",
+              "url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCA-GENL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Residualarraycanbeemptybecauseofrank/dimensions;modelcanfittrainingbutfailheldout.",
+              "recommendation": "ComputeheldoutMAE/MSEandinspectfailurecase;state tinysamplelimits.",
+              "disposition": "applied",
+              "source_id": "numpy-lstsq",
+              "resolution": "ComputeheldoutMAE/MSEandinspectfailurecase;state tinysamplelimits."
+            },
+            {
+              "id": "ncagenl-deep-10",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Revision work and concept notes are not a replacement final framework",
+              "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCA-GENL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Portalretains1.0and2024profile whiledescribingrevisionandApril2026concept.",
+              "recommendation": "Keepvoluntaryguidanceanddraft/finalstatusseparatefromcompliance claims.",
+              "disposition": "applied",
+              "source_id": "aws-aif-c01-nist-ai-rmf",
+              "resolution": "Keepvoluntaryguidanceanddraft/finalstatusseparatefromcompliance claims."
+            }
+          ],
+          "notes": "Mapped 33 detailed current topic bullets and repaired the monitor for the redesigned preparation page while preserving earlier snapshots and review history. Added 23 executed NumPy checks, 40 answered prompts and eight proposed activities. Updated serving-version and learning-resource boundaries; one commercial catalog and five course metadata pages remain inaccessible. Human review and GPU/LLM execution are pending. Same-context AI review; human review pending. See docs/research/2026-09-29-nca-genl-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 10,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-cissp-deep-review",
       "title": "CISSP complete guide and learning-content review",
       "rubric_version": 1,

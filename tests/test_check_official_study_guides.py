@@ -775,6 +775,58 @@ class ObjectiveExtractionTests(unittest.TestCase):
         self.assertIn("NCA-EXAI", status["skills_versions"])
         self.assertIn("Duration: 1 hour", status["skills_versions"])
 
+    def test_extracts_nvidia_preparation_topics_without_marketing_footer(self) -> None:
+        body = """
+        <p>NVIDIA-Certified Associate</p><h1>Example AI Exam</h1><p>(NCA-EXAI)</p>
+        <h2>About This Exam</h2><p>Training overview</p>
+        <h2>NCA-EXAI Exam Preparation Topics and Recommended Reading</h2>
+        <nav>Foundations Development Operations</nav>
+        <h3>Foundations</h3><p>Core knowledge.</p>
+        <h4>Exam Topics:</h4><ul><li>Evaluate models.</li><li>Inspect datasets.</li></ul>
+        <p>40%</p><p>Exam Weight</p><h4>Suggested Reading</h4><p>Foundation guide</p>
+        <h3>Development</h3><h4>Exam Topics:</h4><p>Build applications.</p>
+        <p>30%</p><p>Exam Weight</p>
+        <h3>Operations</h3><h4>Exam Topics:</h4><p>Monitor applications.</p>
+        <p>30%</p><p>Exam Weight</p>
+        <h2>Ready to Get Certified?</h2><p>Marketing footer.</p>
+        """
+        objectives = monitor.extract_nvidia_objectives(body)
+        self.assertTrue(objectives.startswith("NVIDIA-Certified Associate\nExample AI Exam\n(NCA-EXAI)\n"))
+        self.assertIn("Evaluate models.\nInspect datasets.", objectives)
+        self.assertIn("Foundation guide", objectives)
+        self.assertIn("Monitor applications.\n30%\nExam Weight", objectives)
+        self.assertNotIn("Marketing footer", objectives)
+        self.assertNotIn("Training overview", objectives)
+
+    def test_rejects_nvidia_preparation_heading_for_another_exam(self) -> None:
+        body = """
+        <p>NVIDIA-Certified Associate</p><h1>Example AI</h1><p>(NCA-EXAI)</p>
+        <h2>NCA-OTHER Exam Preparation Topics and Recommended Reading</h2>
+        <p>40%</p><p>30%</p><p>30%</p>
+        """
+        with self.assertRaisesRegex(ValueError, "Could not find NVIDIA exam blueprint"):
+            monitor.extract_nvidia_objectives(body)
+
+    def test_rejects_incomplete_nvidia_preparation_topics(self) -> None:
+        prefix = """
+        <p>NVIDIA-Certified Associate</p><h1>Example AI</h1><p>(NCA-EXAI)</p>
+        <h2>NCA-EXAI Exam Preparation Topics and Recommended Reading</h2>
+        """
+        complete = """
+        <h3>Foundations</h3><p>Exam Topics:</p><p>Build.</p><p>40%</p><p>Exam Weight</p>
+        <h3>Development</h3><p>Exam Topics:</p><p>Test.</p><p>30%</p><p>Exam Weight</p>
+        <h3>Operations</h3><p>Exam Topics:</p><p>Monitor.</p><p>30%</p><p>Exam Weight</p>
+        """
+        for content in (
+            complete.replace("40%", "45%"),
+            complete.replace("<p>Exam Topics:</p>", "", 1),
+            complete.replace("<p>Exam Weight</p>", "", 1),
+            complete.replace("<p>Build.</p>", "", 1),
+        ):
+            with self.subTest(content=content):
+                with self.assertRaisesRegex(ValueError, "preparation topics were incomplete"):
+                    monitor.extract_nvidia_objectives(prefix + content)
+
     def test_extracts_salesforce_weighted_blueprint_and_status(self) -> None:
         body = """
         <h1>Salesforce Certified Example Exam Guide</h1>

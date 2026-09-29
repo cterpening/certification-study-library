@@ -3,6 +3,146 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "nvidia-certification-policies",
+      "title": "NVIDIA certification program and exam policies",
+      "url": "https://www.nvidia.com/en-us/learn/certification/",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "program-policy",
+      "access_model": "public",
+      "supported_exams": [
+        "NCA-GENL"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCA-GENL deep review: Complete FAQ process,booking/cancellation/security/results/retake/renewal/accommodation/integrity blocks read; portfolio context also inspected. Pass/fail no score;14days/max5in12months;2yrretake;remote no breaks. No booking/contact/browser installation or individual eligibility assessment. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nvidia-open-deep-learning",
+      "title": "NVIDIA DLI Fundamentals of Deep Learning public course",
+      "url": "https://github.com/NVDLI/fundamentals-of-deep-learning",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "supported_exams": [
+        "NCA-GENL"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCA-GENL deep review: Complete main README learning outcomes,six-module table,usage andlicense sections read. Public notebooks/slides listed; no notebook interior execution,dependency installation,Brev/account launch or dataset download. No fixed runtime claimed; compute/license conditions separate. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nvidia-rag-explainer",
+      "title": "NVIDIA RAG explainer updated January2025",
+      "url": "https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "supported_exams": [
+        "NCA-GENL"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCA-GENL deep review: Complete main article read,updated January31 2025 from November15 2023. Retrieval/index/generation distinctions used. Vendor performance/privacy claims not adopted as guarantees; no actual LLM/RAG service. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nvidia-prompt-ptuning",
+      "title": "NVIDIA prompt engineering and P-Tuning introduction",
+      "url": "https://developer.nvidia.com/blog/an-introduction-to-large-language-models-prompt-engineering-and-p-tuning/",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "supported_exams": [
+        "NCA-GENL"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCA-GENL deep review: Complete main April26 2023 article/conclusion read from fresh local capture after webtool timeouts. Prompt/few-shot versus learned virtual tokens; old early-access service/runtime examples historical. AI-generated summary not used as authority; no hidden-reasoning inference. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nvidia-nim-llm-docs",
+      "title": "NVIDIA NIM for LLM and VLM overview",
+      "url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/overview.html",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NCA-GENL"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCA-GENL deep review: Initial introduction.html meta-refresh preserved separately; followed actual relative overview target. Complete main overview/usecases/concepts/components read,updatedSep24 2026. NIM2.x/vLLM onebackend/container andmodel-specific/model-free roles. No installation/model/API operation orsupport-matrix audit. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nvidia-triton-getting-started",
+      "title": "NVIDIA Triton getting started",
+      "url": "https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/getting_started/quickstart.html",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NCA-GENL"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCA-GENL deep review: Complete main quickstart read:repository,CPU/GPUconditions,server/model readiness andinference example. No commands run,images/models pulled,server launched orGPUaccess. CPUserver doesnotmakeGPU-onlymodelconfigsload. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "numpy-norm",
+      "title": "NumPy matrix and vector norm",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html",
+      "publisher": "NumPy contributors",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NCA-GENL"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCA-GENL deep review: Complete API parameters,vector/matrix norm notes andexamples read. Explicit axis/zero-vector handling inoriginal code; not learnedsemanticembeddings. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "numpy-lstsq",
+      "title": "NumPy least-squares solver",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html",
+      "publisher": "NumPy contributors",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NCA-GENL"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCA-GENL deep review: Complete API parameters/returns/rank/residual conditions andline-fit example read. Originaldata/code usesactualsolver;emptyresidualarraynotautomaticzeroerror. No copiedexample orplot execution. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nvidia-nim-release-notes",
+      "title": "NVIDIA NIM LLM and VLM release notes",
+      "url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/release-notes.html",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "supported_exams": [
+        "NCA-GENL"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCA-GENL deep review: Selected2.0.13 highlights/backend/security/bug/support changes throughDockerqualification exception,plus first2knownissues read. Notall21knownissues orlinkedmodelmatrices. Specificfourstopstrings regressionillustratescontracttesting,notuniversallimit. Hostdriverfixseparate;noactualserveroperation. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nvidia-nim-offerings",
+      "title": "NVIDIA NIM and NIM Certified offerings",
+      "url": "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/nim-offerings.html",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NCA-GENL"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCA-GENL deep review: Complete main NIM/NIMCertified/FB/PB descriptions,availability/support table andGovernmentReady scope note read. Exactsupport/licensing distinctions; noentitlementpurchase,legalapproval orallcatalogimages. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "isc2-cissp-outline-2024-pdf",
       "title": "CISSP April2024 English exam outline PDF",
       "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/CISSP-Exam-Outline-April-2024-English.pdf",
@@ -7370,10 +7510,11 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "supported_exams": [
-        "DATABRICKS-MACHINE-LEARNING-ASSOCIATE"
+        "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+        "NCA-GENL"
       ],
-      "last_checked": "2026-09-28",
-      "notes": "September 28 DATABRICKS-MACHINE-LEARNING-ASSOCIATE deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-databricks-machine-learning-associate-deep-review.md No live infrastructure execution."
+      "last_checked": "2026-09-29",
+      "notes": "September 28 DATABRICKS-MACHINE-LEARNING-ASSOCIATE deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-databricks-machine-learning-associate-deep-review.md No live infrastructure execution. September 29 NCA-GENL deep review: Selected12.1 inconsistent preprocessing and12.2/12.2.1 leakage/fit-transform guidance read. Not full feature-selection/randomness sections. scikit-learn not installed or run; referenced principles illustrated with NumPy. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sklearn-gridsearchcv",
@@ -7398,10 +7539,11 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "supported_exams": [
-        "DATABRICKS-MACHINE-LEARNING-ASSOCIATE"
+        "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+        "NCA-GENL"
       ],
-      "last_checked": "2026-09-28",
-      "notes": "September 28 DATABRICKS-MACHINE-LEARNING-ASSOCIATE deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-databricks-machine-learning-associate-deep-review.md No live infrastructure execution."
+      "last_checked": "2026-09-29",
+      "notes": "September 28 DATABRICKS-MACHINE-LEARNING-ASSOCIATE deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-databricks-machine-learning-associate-deep-review.md No live infrastructure execution. September 29 NCA-GENL deep review: Selected3.4.4.9 introductory precision/recall/F-measures and3.4.6.2-3 MAE/MSE definitions/examples read. Not entire115k reference. Actual original NumPy metrics,not scikit-learn execution. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
     },
     {
       "id": "hyperopt-minimizing-functions",
@@ -44974,7 +45116,22 @@
       "id":"aws-aif-c01-genai-lens","title":"AWS Well-Architected Generative AI Lens","url":"https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/generative-ai-lens.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["AIF-C01","AIP-C01"],"notes":"Current cross-pillar architectural and lifecycle context for generative-AI workloads."
     },
     {
-      "id":"aws-aif-c01-nist-ai-rmf","title":"NIST AI Risk Management Framework","url":"https://www.nist.gov/itl/ai-risk-management-framework","publisher":"National Institute of Standards and Technology","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["AIF-C01","AIB-C01","PCEI-30-01","PANW-SECURITY-OPERATIONS-ARCHITECT"],"notes":"Cross-vendor voluntary Govern, Map, Measure and Manage risk context; version 1.0 is under revision and is not a substitute for applicable law or vendor objectives."
+      "id": "aws-aif-c01-nist-ai-rmf",
+      "title": "NIST AI Risk Management Framework",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "publisher": "National Institute of Standards and Technology",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "AIF-C01",
+        "AIB-C01",
+        "PCEI-30-01",
+        "PANW-SECURITY-OPERATIONS-ARCHITECT",
+        "NCA-GENL"
+      ],
+      "notes": "Cross-vendor voluntary Govern, Map, Measure and Manage risk context; version 1.0 is under revision and is not a substitute for applicable law or vendor objectives. September 29 NCA-GENL deep review: Main overview/release history/revision notice andprior-document context read. Voluntary framework,2024GenAIprofile,April2026criticalinfrastructureconcept andongoing1.0revision. Not full framework/profile orlegalcompliance assessment. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
     },
     {
       "id":"aws-aif-c01-skill-builder-plan","title":"Standard Exam Prep Plan: AWS Certified AI Practitioner","url":"https://explore.skillbuilder.aws/learn/learning-plans/2193/standard-exam-prep-plan-aws-certified-ai-practitioner-aif-c01","publisher":"Amazon Web Services","authority_class":2,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-01","supported_exams":["AIF-C01"],"notes":"Official structured plan with free and subscription elements; verify visible March 2026 revision alignment."
@@ -48354,28 +48511,116 @@
       "id":"nist-csf-2","title":"NIST Cybersecurity Framework 2.0","url":"https://www.nist.gov/cyberframework","publisher":"NIST","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["CISSP","PANW-CYBERSECURITY-APPRENTICE","SPLK-5003","PANW-SECURITY-OPERATIONS-ARCHITECT"],"notes":"Authoritative governance and outcome vocabulary across Govern, Identify, Protect, Detect, Respond and Recover; use selectively rather than as an exam outline."
     },
     {
-      "id":"nvidia-nca-genl-certification","title":"NVIDIA-Certified Associate: Generative AI LLMs","url":"https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/","publisher":"NVIDIA","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCA-GENL"],"notes":"Canonical five-domain weighted blueprint, prerequisite, delivery, price and two-year validity baseline; the page says both 50 questions and 50–60 questions, so the guide preserves the discrepancy."
+      "id": "nvidia-nca-genl-certification",
+      "title": "NVIDIA-Certified Associate: Generative AI LLMs",
+      "url": "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/",
+      "publisher": "NVIDIA",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCA-GENL"
+      ],
+      "notes": "Canonical five-domain weighted blueprint, prerequisite, delivery, price and two-year validity baseline; the page says both 50 questions and 50–60 questions, so the guide preserves the discrepancy. September 29 NCA-GENL deep review: Entire current main identity/details, five weighted sections/33 topic bullets and training/readings reviewed. Current order30/14/22/24/10; Data Analysis renamed, training table replaced, old50-question prose absent. No official effective date supplied. Explicit snapshot/history preservation and parser repair, not silent overwrite. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"nvidia-getting-started-deep-learning","title":"Getting Started With Deep Learning","url":"https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-01+V1","publisher":"NVIDIA Deep Learning Institute","authority_class":1,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["NCA-GENL"],"notes":"Official eight-hour, USD 90 mapped neural-network and deep-learning foundation course; verify price and access at enrollment."
+      "id": "nvidia-getting-started-deep-learning",
+      "title": "Getting Started With Deep Learning",
+      "url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-01+V1",
+      "publisher": "NVIDIA Deep Learning Institute",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCA-GENL"
+      ],
+      "notes": "Official eight-hour, USD 90 mapped neural-network and deep-learning foundation course; verify price and access at enrollment. September 29 NCA-GENL deep review: HTTP200 returns blank course template with placeholder 2023 workshops; no actual course duration/price/content populated. Earlier8h/$90 unverified. No course/account access. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"nvidia-end-to-end-data-science","title":"Accelerating End-to-End Data Science Workflows","url":"https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-DS-01+V2","publisher":"NVIDIA Deep Learning Institute","authority_class":1,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["NCA-GENL"],"notes":"Official eight-hour, USD 90 RAPIDS data preparation, analysis, modeling and deployment course; verify price and access at enrollment."
+      "id": "nvidia-end-to-end-data-science",
+      "title": "Accelerating End-to-End Data Science Workflows",
+      "url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-DS-01+V2",
+      "publisher": "NVIDIA Deep Learning Institute",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCA-GENL"
+      ],
+      "notes": "Official eight-hour, USD 90 RAPIDS data preparation, analysis, modeling and deployment course; verify price and access at enrollment. September 29 NCA-GENL deep review: HTTP200 blank course template, matching other course shells. Earlier8h/$90 unverified; no course interiors or execution. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"nvidia-intro-transformer-nlp","title":"Introduction to Transformer-Based Natural Language Processing","url":"https://courses.nvidia.com/courses/course-v1:DLI+S-FX-08+V1/","publisher":"NVIDIA Deep Learning Institute","authority_class":1,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["NCA-GENL"],"notes":"Official six-hour, USD 30 mapped transformer course; direct endpoint displayed a maintenance/move notice when checked, so enter through the certification page and verify availability."
+      "id": "nvidia-intro-transformer-nlp",
+      "title": "Introduction to Transformer-Based Natural Language Processing",
+      "url": "https://courses.nvidia.com/courses/course-v1:DLI+S-FX-08+V1/",
+      "publisher": "NVIDIA Deep Learning Institute",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCA-GENL"
+      ],
+      "notes": "Official six-hour, USD 30 mapped transformer course; direct endpoint displayed a maintenance/move notice when checked, so enter through the certification page and verify availability. September 29 NCA-GENL deep review: Complete335-character maintenance/moved notice read. Earlier6h/$30 and current availability unverified; no lesson access. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"nvidia-building-llm-apps-prompt-engineering","title":"Building LLM Applications With Prompt Engineering","url":"https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-12+V2","publisher":"NVIDIA Deep Learning Institute","authority_class":1,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["NCA-GENL"],"notes":"Official eight-hour, USD 90 prompt and LLM-application course mapped on the certification page; extend it with explicit evaluation, injection and production-control evidence."
+      "id": "nvidia-building-llm-apps-prompt-engineering",
+      "title": "Building LLM Applications With Prompt Engineering",
+      "url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-12+V2",
+      "publisher": "NVIDIA Deep Learning Institute",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCA-GENL"
+      ],
+      "notes": "Official eight-hour, USD 90 prompt and LLM-application course mapped on the certification page; extend it with explicit evaluation, injection and production-control evidence. September 29 NCA-GENL deep review: Complete shared1514-character blank template inspected; fields empty and2023workshops placeholders. Earlier8h/$90 unverified, not evidence of actual scheduled sessions. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"nvidia-rapid-application-development-llms","title":"Rapid Application Development With Large Language Models","url":"https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-26+V1","publisher":"NVIDIA Deep Learning Institute","authority_class":1,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["NCA-GENL"],"notes":"Official eight-hour, USD 90 mapped course for encoder/decoder, orchestration and application experimentation; verify price and access at enrollment."
+      "id": "nvidia-rapid-application-development-llms",
+      "title": "Rapid Application Development With Large Language Models",
+      "url": "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-26+V1",
+      "publisher": "NVIDIA Deep Learning Institute",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCA-GENL"
+      ],
+      "notes": "Official eight-hour, USD 90 mapped course for encoder/decoder, orchestration and application experimentation; verify price and access at enrollment. September 29 NCA-GENL deep review: Still named on current canonical preparation page; course endpoint HTTP200 blank template. Earlier8h/$90 not reverified; no paid lesson/account/checkout. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"nvidia-trustworthy-ai","title":"NVIDIA Trustworthy AI","url":"https://www.nvidia.com/en-us/ai-trust-center/trustworthy-ai/","publisher":"NVIDIA","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCA-GENL"],"notes":"First-party privacy, safety/security, transparency and nondiscrimination principles plus model-card and guardrail context; translate principles into testable system controls."
+      "id": "nvidia-trustworthy-ai",
+      "title": "NVIDIA Trustworthy AI",
+      "url": "https://www.nvidia.com/en-us/ai-trust-center/trustworthy-ai/",
+      "publisher": "NVIDIA",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCA-GENL"
+      ],
+      "notes": "First-party privacy, safety/security, transparency and nondiscrimination principles plus model-card and guardrail context; translate principles into testable system controls. September 29 NCA-GENL deep review: Selected main principles, methods/model-card and solution/partner descriptions, plus first research-title context read. Privacy,safety/security,transparency,nondiscrimination. Not all research/partner claims or linked papers; no product trust guarantee. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-nca-genl-specialization","title":"NCA-GENL NVIDIA Certified Generative AI LLMs Specialization","url":"https://www.udemy.com/course/nca-genl-nvidia-certified-generative-ai-llms-specialization/","publisher":"Udemy","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["NCA-GENL"],"notes":"One-hour-48-minute course updated March 2026. It is too short to establish applied readiness alone; verify claims against first-party material and build the guide labs."
+      "id": "udemy-nca-genl-specialization",
+      "title": "NCA-GENL NVIDIA Certified Generative AI LLMs Specialization",
+      "url": "https://www.udemy.com/course/nca-genl-nvidia-certified-generative-ai-llms-specialization/",
+      "publisher": "Udemy",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCA-GENL"
+      ],
+      "notes": "One-hour-48-minute course updated March 2026. It is too short to establish applied readiness alone; verify claims against first-party material and build the guide labs. September 29 NCA-GENL deep review: HTTP403. Earlier March2026/1h48m and alignment/quality claims unverified. No lesson/question interiors. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
     },
     {
       "id":"nvidia-nca-aiio-certification","title":"NVIDIA-Certified Associate: AI Infrastructure and Operations","url":"https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/","publisher":"NVIDIA","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCA-AIIO"],"notes":"Canonical 38/40/22 weighted blueprint, prerequisite, delivery, USD 125 price and two-year validity baseline; a separate first-party learning-path card showed USD 135, so checkout must be verified."
@@ -49312,7 +49557,19 @@
       "id":"numpy-user-guide","title":"NumPy User Guide","url":"https://numpy.org/doc/stable/user/","publisher":"NumPy project","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCED-30-02"],"notes":"Primary documentation for array concepts and numerical operations; select beginner sections aligned to the syllabus."
     },
     {
-      "id":"numpy-quickstart","title":"NumPy Quickstart","url":"https://numpy.org/doc/stable/user/quickstart.html","publisher":"NumPy project","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCED-30-02"],"notes":"Primary hands-on introduction to arrays and vectorized numerical operations."
+      "id": "numpy-quickstart",
+      "title": "NumPy Quickstart",
+      "url": "https://numpy.org/doc/stable/user/quickstart.html",
+      "publisher": "NumPy project",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCED-30-02",
+        "NCA-GENL"
+      ],
+      "notes": "Primary hands-on introduction to arrays and vectorized numerical operations. September 29 NCA-GENL deep review: Intro/learner objectives/array basics,ndim/shape/dtype/itemsize andinitial array creation example read. Not full quickstart orall examples; no matplotlib installed. Actual original NumPy workbook uses arrays,fit,predictions andvector norms. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
     },
     {
       "id":"openedg-python-voucher-store","title":"OpenEDG Python Institute Voucher and Practice Store","url":"https://ums.edube.org/","publisher":"OpenEDG Python Institute","authority_class":1,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["PCED-30-02","PCAD-31-02"],"notes":"Official store entry point for Python Institute exams and version-specific practice tests; confirm the selected exam code before purchase."

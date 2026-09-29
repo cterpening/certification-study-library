@@ -1,54 +1,131 @@
 NVIDIA-Certified Associate
-Generative AI LLMs
+NVIDIA Generative AI LLM Certification Exam
 (NCA-GENL)
-Exam Blueprint
-Please review the table below. It’s organized by topic and weight to indicate how much of the exam is focused on each subject. Topics are mapped to NVIDIA Training courses and workshops that cover those subjects and that you can use to prepare for the exam.
-Recommended Training
-Type of course | Duration | Cost
-Content Breakdown
-30%
+NCA-GENL Exam Preparation Topics and Recommended Reading
+The information below is intended to help you prepare for this exam.
+Topics covered, weight per topic, recommended training, and additional readings are provided.
 Core Machine Learning and AI Knowledge
-24%
-Software Development
-22%
+Data Analysis
 Experimentation
-14%
-Data Analysis and Visualization
-10%
+Software Development
 Trustworthy AI
-You can take one of these courses:
-Getting Started With Deep Learning
-Self-paced | 8 hours | $90
-Fundamentals of Deep Learning
-Workshop | 8 hours | $500
-See Details
-You can take one of these courses:
-Accelerating End-to-End Data Science Workflows
-Self-paced | 8 hours | $90
-Fundamentals of Accelerated Data Science​
-Workshop | 8 hours | $500
-See Details
-You can take one of these courses:
-Introduction to Transformer-Based Natural Language Processing
-Self-paced | 6 hours | $30
-Building Transformer-Based Natural Language Processing Applications
-Workshop | 8 hours | $500
-See Details
-You can take one of these courses:
-Building LLM Applications with Prompt Engineering
-Self-paced | 8 hours | $90
-Building LLM Applications with Prompt Engineering
-Workshop | 8 hours | $500
-See Details
-You can take one of these courses:
+Core Machine Learning and AI Knowledge
+Knowledge of algorithms, conventions, and techniques that allow computers to learn from and make predictions or decisions based on data.
+Exam Topics:
+Assist in deployment and evaluation of model scalability, performance, and reliability under the supervision of senior team members.
+Awareness of the process of extracting insights from large datasets using data mining, data visualization, and similar techniques.
+Build LLM use cases such as retrieval-augmented generation (RAG), chatbots, and summarizers.
+Curate and embed content datasets for RAGs.
+Familiarity with the fundamentals of machine learning (e.g., feature engineering, model comparison, cross validation).
+Familiarity with the capabilities of Python natural language packages (spaCy, NumPy, vector databases, etc.).
+Read research papers (articles, conference papers, etc.) to identify emerging LLM trends and technologies.
+Select and use models to create text embeddings.
+Use prompt engineering principles to create prompts to achieve desired results.
+Use Python packages (spaCy, NumPy, Keras, etc.) to implement specific traditional machine learning analyses.
+30%
+Exam Weight
+Recommended Training and Suggested Readings:
+Recommended Training
+Fundamentals of Deep Learning — Open-Source Course Materials
 Rapid Application Development With Large Language Models (LLMs)
-Self-paced | 8 hours | $90
+Suggested Reading
+Prompt Engineering Guide
+An Introduction to Large Language Models: Prompt Engineering and P-Tuning
+Attention Is All You Need
+End-to-End AI for NVIDIA-Based PCs: Transitioning AI Models With ONNX
+Generative AI — What Is It and How Does It Work?
+What Are Foundation Models? — NVIDIA Blog
+LoRA: Low-Rank Adaptation of Large Language Models
+Generative AI Research Spotlight: Demystifying Diffusion-Based Models
+scikit-learn User Guide
+What is Milvus
+What Is Retrieval-Augmented Generation aka RAG?, NVIDIA Blogs
+Hugging Face LLM Course — Datasets
+Data Analysis
+Inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, informing conclusions, and supporting decision-making.
+Exam Topics:
+Awareness of the process of extracting insights from large datasets using data mining, data visualization, and similar techniques.
+Compare models using statistical performance metrics, such as loss functions or proportion of explained variance.
+Conduct data analysis under the supervision of a senior team member.
+Create graphs, charts, or other visualizations to convey the results of data analysis using specialized software.
+Identify relationships and trends or any factors that could affect the results of research.
+14%
+Exam Weight
+Recommended Training and Suggested Readings:
+Recommended Training
+Fundamentals of Deep Learning — Open-Source Course Materials
 Rapid Application Development With Large Language Models (LLMs)
-Workshop | 8 hours | $500
-See Details
-Review These Additional Materials
-Getting Started With Large Language Models for Enterprise Solutions (blog, 20 minutes)
-The Fast Path to Developing With LLMs (on-demand video, 50 minutes)
-Running Your Own LLM (on-demand video, 40 minutes)
-What Is Retrieval-Augmented Generation, aka RAG? (blog, 15 minutes)
-Trustworthy AI (webpage)
+Suggested Reading
+cuML Documentation
+Get Started with GPU Acceleration for Data Science
+Matplotlib Tutorials
+Python Data Science Handbook (free)
+RAPIDS cuDF User Guide
+scikit-learn — Metrics and Scoring
+Experimentation
+Perform, evaluate, and interpret experiments, including AI model evaluation and the use of human subjects in labeling or reinforcement learning from human feedback (RLHF).
+Exam Topics:
+Assist in model training and training optimization under the supervision of a senior team member.
+Assist in preparing (e.g., scraping, tokenization) large datasets for pretraining, fine-tuning, and RLHF.
+Assist in the design and conduct of hardware or software tests for LLM applications.
+Assist in the evaluation of current or emerging technologies to consider factors such as cost, portability, compatibility, or usability.
+Awareness of, and/or participation in, data collection from human subjects (e.g., RLHF).
+Evaluate and refine existing models / benchmarking.
+Executes experimentation to evaluate models and pipelines.
+22%
+Exam Weight
+Recommended Training and Suggested Readings:
+Recommended Training
+Fundamentals of Deep Learning — Open-Source Course Materials
+Rapid Application Development With Large Language Models (LLMs)
+Suggested Reading
+Hugging Face LLM Course — Fine-tune LLMs
+Mastering LLM Techniques: Inference Optimization
+Speech and Language Processing — Jurafsky & Martin (free)
+Hugging Face LLM Course — Tokenizers
+Weights & Biases Quickstart
+Illustrating Reinforcement Learning from Human Feedback (RLHF)
+LM Evaluation Harness
+Software Development
+Create, maintain, and test software.
+Exam Topics:
+Assist in the deployment and evaluations of model scalability, performance, and reliability under the supervision of a senior team member.
+Build LLM use cases such as RAGs, chatbots, and summarizers.
+Familiarity with the capabilities of Python natural language packages (spaCy, NumPy, vector databases, etc.).
+Identify system data, hardware, or software components required to meet user needs.
+Monitor functioning of data collection, experiments, and other software processes.
+Use Python packages (spaCy, NumPy, Keras, etc.) to implement specific traditional machine learning analyses.
+Write software components or scripts under the supervision of a senior team member.
+24%
+Exam Weight
+Recommended Training and Suggested Readings:
+Recommended Training
+Fundamentals of Deep Learning — Open-Source Course Materials
+Rapid Application Development With Large Language Models (LLMs)
+Suggested Reading
+NVIDIA Generative AI Examples
+TensorRT — Get Started
+Best Practices — NVIDIA NeMo
+Mastering LLM Techniques: Customization
+Big Data? Datasets to the Rescue! — HuggingFace NLP Course
+BERT: Pretraining of Deep Bidirectional Transformers
+NVIDIA Triton Inference Server Quick Start
+spaCy Documentation
+scikit-learn User Guide
+Trustworthy AI
+Creation and assessment of ethical, energy-conscious, and reliable artificial intelligence systems capable of interpreting and integrating various forms of data, ensuring that they're designed and applied in a manner that's transparent, fair, and verifiable.
+Exam Topics:
+Describe the ethical principles of trustworthy AI.
+Describe the balance between data privacy and the importance of data consent.
+Describe how to use NVIDIA and other technologies to improve AI trustworthiness.
+Describe how to minimize bias in AI systems.
+10%
+Exam Weight
+Recommended Training and Suggested Readings:
+Recommended Training
+Rapid Application Development With Large Language Models (LLMs)
+Suggested Reading
+Trustworthy AI for A Better World, NVIDIA
+What Is Trustworthy AI?, NVIDIA Blog
+NIST AI Risk Management Framework
+Google Responsible AI Practices
