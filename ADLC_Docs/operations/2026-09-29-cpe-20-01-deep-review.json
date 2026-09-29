@@ -1,0 +1,3088 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "CPE-20-01",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/CPE-20-01-cpp-certified-entry-level-programmer.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "ead8e82414fa06f0c7ade0900af30be7a1023fb130cae14595d05fb03acc2b6f",
+  "guide_after_sha256": "9a0b6621c4acc7640d2f4c557f113b56a0208cd005e92e072f9b57ca433f2ee3",
+  "prior_records": {
+    "exam": {
+      "code": "CPE-20-01",
+      "level": "beginner",
+      "vendor_id": "cpp-institute",
+      "title": "CPE C++ Certified Entry-Level Programmer",
+      "status": "active",
+      "study_guide_url": "https://cppinstitute.org/cpe",
+      "guide_path": "guides/CPE-20-01-cpp-certified-entry-level-programmer.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite is published. Practice compiling, tracing, testing, and debugging small C++ programs across types and operators, stream state, control flow, functions and parameter mechanisms, arrays and vectors, pointers and object lifetimes, named casts, manual allocation, structures, and strings. Use at least C++11 for the named features in scope and verify the active version before purchase."
+    },
+    "review": {
+      "id": "cpe-20-01-2026-09-02-source-validation",
+      "exam_code": "CPE-20-01",
+      "guide_path": "guides/CPE-20-01-cpp-certified-entry-level-programmer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/cpe-20-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "faf4501642933ecdc38efb270dda58a7db3a7c95a0028bda125b61544a34f60d",
+      "objective_coverage": [
+        {
+          "objective_group": "Syntax, Literals, and Operators (28%)",
+          "guide_sections": [
+            "Section 1",
+            "Scenarios 1 and 3",
+            "Labs 1–3"
+          ]
+        },
+        {
+          "objective_group": "Flow Control and Functions (28%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Labs 4–5"
+          ]
+        },
+        {
+          "objective_group": "Vectors and Pointers (24%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenario 2",
+            "Labs 5–7"
+          ]
+        },
+        {
+          "objective_group": "Structures and Strings (20%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenario 1",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 9,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All four CPE-20-01 blocks are mapped through translation and diagnostics, types/operators/streams, structured control and function calls, value/reference/pointer parameters and recursion, arrays/vectors/data pointers, named-cast purpose, manual allocation lifetime, structures and strings. Three integrated scenarios, eight hands-on labs and 40 original checks are included. Raw memory operations are taught for syllabus literacy while modern ownership is clearly related context. Nine links are reachable and O'Reilly/Udemy are automation-blocked; none are broken. The local objective monitor encountered a certificate-chain error after the same official page was fetched successfully by the source-health checker, so the exact public objective block was preserved manually and the transport discrepancy is documented. No recalled/live item, answer dump or copied course question is used."
+    },
+    "sources": [
+      {
+        "id": "cpe-20-01-syllabus",
+        "title": "CPE C++ Certified Entry-Level Programmer",
+        "url": "https://cppinstitute.org/cpe",
+        "publisher": "OpenEDG C++ Institute",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CPE-20-01"
+        ],
+        "notes": "Canonical active exam page with four-block 28/28/24/20 syllabus, format, price, delivery, aligned resources, minimally qualified candidate profile and July 22, 2025 syllabus date."
+      },
+      {
+        "id": "cpp-institute-exam-policies",
+        "title": "C++ Institute Exam Policies",
+        "url": "https://cppinstitute.org/exam-policies",
+        "publisher": "OpenEDG C++ Institute",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CPE-20-01",
+          "CLE-10-01",
+          "CLA-11-03",
+          "CLP-12-01",
+          "CPA-21-02",
+          "CPP-22-02"
+        ],
+        "notes": "Identification, NDA, accommodations, security and retake rules across TestNow and Pearson VUE delivery; exam-specific pages remain authoritative for channel and format."
+      },
+      {
+        "id": "cpp-institute-certification-catalog",
+        "title": "C++ Institute Certification Exams",
+        "url": "https://cppinstitute.org/certification-exams",
+        "publisher": "OpenEDG C++ Institute",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CPE-20-01"
+        ],
+        "notes": "Current C and C++ track/level inventory, delivery overview, recommended progression and lifetime/version-preserving certificate statement."
+      },
+      {
+        "id": "openedg-cpp-essentials-1",
+        "title": "C++ Essentials - Part 1",
+        "url": "https://edube.org/study/cppe1",
+        "publisher": "OpenEDG C++ Institute / Edube",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CPE-20-01",
+          "CPA-21-02"
+        ],
+        "notes": "Free official C++ foundation with five modules and 42-hour listed study time. It is directly aligned to CPE and prerequisite repair for CPA; its associated-certification detail contains an apparent code typo, so use the exam page as authority."
+      },
+      {
+        "id": "cisco-cpp-essentials-1",
+        "title": "C++ Essentials 1",
+        "url": "https://www.netacad.com/courses/c-plus-plus-essentials-1?courseLang=en-US",
+        "publisher": "Cisco Networking Academy / OpenEDG C++ Institute",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CPE-20-01"
+        ],
+        "notes": "Official partner delivery linked from the live CPE page. Dynamic public metadata did not provide a dependable current runtime, so the guide labels its estimate."
+      },
+      {
+        "id": "microsoft-cpp-console-calculator",
+        "title": "Create a Console Calculator in C++",
+        "url": "https://learn.microsoft.com/en-us/cpp/get-started/tutorial-console-cpp?view=msvc-170",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "third-party-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CPE-20-01"
+        ],
+        "notes": "Free current Visual Studio tutorial for building, running and debugging a small C++ console application; platform-specific and not complete CPE coverage."
+      },
+      {
+        "id": "cppreference-cpp-language",
+        "title": "C++ Language Reference",
+        "url": "https://en.cppreference.com/cpp/language",
+        "publisher": "cppreference.com",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CPE-20-01"
+        ],
+        "notes": "Detailed independent reference for language constructs and standard-version boundaries; use targeted lookups rather than reading it linearly."
+      },
+      {
+        "id": "pluralsight-cpp-path",
+        "title": "C++ Learning Path",
+        "url": "https://www.pluralsight.com/paths/c-plus-plus",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CPE-20-01",
+          "CPA-21-02",
+          "CPP-22-02"
+        ],
+        "notes": "44-hour, 13-course broad path. Use beginner courses for CPE, object-oriented/exception/pointer sections for CPA, or current Standard Library containers and algorithms for CPP; select only objective-relevant material."
+      },
+      {
+        "id": "oreilly-cpp-crash-course",
+        "title": "C++ Crash Course",
+        "url": "https://www.oreilly.com/library/view/c-crash-course/9781098122553/",
+        "publisher": "O'Reilly / No Starch Press / Josh Lospinoso",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CPE-20-01"
+        ],
+        "notes": "September 2019 intermediate-to-advanced C++17 book, 792 pages and 19h42m listed. Select early core-language chapters; most of the book exceeds CPE."
+      },
+      {
+        "id": "udemy-beginning-cpp-programming",
+        "title": "Beginning C++ Programming - From Beginner to Beyond",
+        "url": "https://www.udemy.com/course/beginning-c-plus-plus-programming/",
+        "publisher": "Udemy / Tim Buchalka's Learn Programming Academy",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CPE-20-01",
+          "CPA-21-02"
+        ],
+        "notes": "Broad 45h51m beginner-to-advanced marketplace course. Select fundamentals through pointers for CPE or OOP/inheritance/exceptions for CPA; keep the official syllabus authoritative."
+      },
+      {
+        "id": "youtube-freecodecamp-cpp-beginner",
+        "title": "C++ Tutorial for Beginners - Full Course",
+        "url": "https://www.youtube.com/watch?v=vLnPwxZdW4Y",
+        "publisher": "freeCodeCamp.org / Giraffe Academy",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CPE-20-01"
+        ],
+        "notes": "Popular free approximately 4h02m beginner video published in 2018. Useful for fundamentals but older and incomplete for the exact current CPE scope."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "b1773ce26051063168d61f1f4bfb6a9945b9224bbebbccee2174c624b19cfa16",
+      "guide_sections": [
+        "1. Syntax, literals, and operators — 28%",
+        "Executed trace workbook",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "6c94495f3413c5df7afc165287565c2d9a07bfac69760df6b32e2765933a3187",
+      "guide_sections": [
+        "1. Syntax, literals, and operators — 28%",
+        "Executed trace workbook",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "4b07e6b2f293dbe74558790837d8f3d89bf3a934721aea14fefb7b1996391499",
+      "guide_sections": [
+        "1. Syntax, literals, and operators — 28%",
+        "Executed trace workbook",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "e5cc98ae588f06bc547e77f01b1ce986fc4f21916972a2575c5b566c6b567b3b",
+      "guide_sections": [
+        "1. Syntax, literals, and operators — 28%",
+        "Executed trace workbook",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "c558a76a587753f958c0158222fe71b28499a134ebff89ef78094e544ce3c6d0",
+      "guide_sections": [
+        "1. Syntax, literals, and operators — 28%",
+        "Executed trace workbook",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "9677a170c6b0e6e3017130c73ddbbeebc5053645a73392dc0a7d42dce717c7f7",
+      "guide_sections": [
+        "1. Syntax, literals, and operators — 28%",
+        "Executed trace workbook",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "cf1eff7e567e133dbc7d16faba6eccd3198f4c692fc495227d4399ffd47dfa7c",
+      "guide_sections": [
+        "1. Syntax, literals, and operators — 28%",
+        "Executed trace workbook",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "e3c93877e53ce77eda4c9985208edd39120c87472730d4e853d91b2962dde08d",
+      "guide_sections": [
+        "2. Flow control and functions — 28%",
+        "Executed trace workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "2535b67876325880f857a849585759056f6a45bf3797a12820a8cbf2510e8633",
+      "guide_sections": [
+        "2. Flow control and functions — 28%",
+        "Executed trace workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "231fa13ea10005faf8f428c579a9101b4dd3f1d1d14ef3235b3a80815042ed69",
+      "guide_sections": [
+        "2. Flow control and functions — 28%",
+        "Executed trace workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "5025af5a7a82891c89a6610f099e5943362fbe2fda5e4afa950fd1be2f9edc2a",
+      "guide_sections": [
+        "2. Flow control and functions — 28%",
+        "Executed trace workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "273619d078d34a7ae5a49812e47782a3f3fdae4a4f1a91b20d4ce39a350bf1ae",
+      "guide_sections": [
+        "2. Flow control and functions — 28%",
+        "Executed trace workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "c2ae4dba8e1144908010cab648a5a360612b6919296eadf845e31c17743286b5",
+      "guide_sections": [
+        "2. Flow control and functions — 28%",
+        "Executed trace workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "93ff412b64b324915f2b7d0ed3b9c2a9554c3d55278911a569121b31574c6f0b",
+      "guide_sections": [
+        "2. Flow control and functions — 28%",
+        "Executed trace workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "b3461c2b477f190d24e451f3683b48bbbeb2715780367c4ac8fe765bb63a2383",
+      "guide_sections": [
+        "2. Flow control and functions — 28%",
+        "Executed trace workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "9ca9077940ece605d765a2d220099ecb04159d29d7403626fcea677b7ec75f4a",
+      "guide_sections": [
+        "3. Vectors and pointers — 24%",
+        "Executed trace workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "ac9f0b9e0fca8a9c02043a2b8596403e44294e7982c28f6cdf255ea89908d764",
+      "guide_sections": [
+        "3. Vectors and pointers — 24%",
+        "Executed trace workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "eaf20a3c60dead07fa66f306f1bb3e2b708b8b2bea55957b2d917879d7ac8620",
+      "guide_sections": [
+        "3. Vectors and pointers — 24%",
+        "Executed trace workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "546a7a9e9f43754d1dfebf698d13a5360ab640adebbfbcef8be7e60be8dab9d4",
+      "guide_sections": [
+        "3. Vectors and pointers — 24%",
+        "Executed trace workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "48f3614e930e32f172b901367d2d3a55d5133856ef0cc8ec38fba1af183b5ea8",
+      "guide_sections": [
+        "3. Vectors and pointers — 24%",
+        "Executed trace workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "31a4932d6ced5a37eb1580c668eeaef512f89fa37d6eb4848ef60f02ac34c80d",
+      "guide_sections": [
+        "3. Vectors and pointers — 24%",
+        "Executed trace workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "7f70b0dd372e748a640c969eac327cf9eedba34ad520a618356c2a84a1755861",
+      "guide_sections": [
+        "4. Structures and strings — 20%",
+        "Executed trace workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "b945ab7cbc2501b7da9293c8ef98805ab0e35732b5a1ecdaf7317fdd4bd02453",
+      "guide_sections": [
+        "4. Structures and strings — 20%",
+        "Executed trace workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "574f6a3157d3a5362d0c5cddb51a18bd2652e6f2f0c53523cee8c32bd0292580",
+      "guide_sections": [
+        "4. Structures and strings — 20%",
+        "Executed trace workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "f7dc567425ddc0cb3b9f3bd94fc82958d1a779eec5c13bcf50cac6de6b24e910",
+      "guide_sections": [
+        "4. Structures and strings — 20%",
+        "Executed trace workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "540751e66f697085cdff0ab2e02f2d8e1c368337de032469b368058fb13e708e",
+      "guide_sections": [
+        "4. Structures and strings — 20%",
+        "Executed trace workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [
+      "CPE-20-01"
+    ],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "CPE-20-01",
+        "title": "CPE C++ Certified Entry-Level Programmer",
+        "url": "https://cppinstitute.org/cpe",
+        "guide_path": "guides/CPE-20-01-cpp-certified-entry-level-programmer.md",
+        "snapshot_path": "data\\objective-snapshots\\cpe-20-01-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\cpe-20-01-official-status.json",
+        "status": "error",
+        "changed": false,
+        "error": "URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 29,
+    "reachable": 23,
+    "access_blocked": 2,
+    "missing_or_error": 4
+  },
+  "source_fetches": [
+    {
+      "id": "cpe-20-01-syllabus",
+      "url": "https://cppinstitute.org/cpe",
+      "checked_at": "2026-09-29T19:41:26.163228+00:00",
+      "health": {
+        "id": "cpe-20-01-syllabus",
+        "url": "https://cppinstitute.org/cpe",
+        "checked_at": "2026-09-29T19:41:26+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://cppinstitute.org/cpe",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "cpp-institute-exam-policies",
+      "url": "https://cppinstitute.org/exam-policies",
+      "checked_at": "2026-09-29T19:41:26.164141+00:00",
+      "health": {
+        "id": "cpp-institute-exam-policies",
+        "url": "https://cppinstitute.org/exam-policies",
+        "checked_at": "2026-09-29T19:41:26+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://cppinstitute.org/exam-policies",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "cpp-institute-certification-catalog",
+      "url": "https://cppinstitute.org/certification-exams",
+      "checked_at": "2026-09-29T19:41:26.164827+00:00",
+      "health": {
+        "id": "cpp-institute-certification-catalog",
+        "url": "https://cppinstitute.org/certification-exams",
+        "checked_at": "2026-09-29T19:41:26+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://cppinstitute.org/certification-exams",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "openedg-cpp-essentials-1",
+      "url": "https://edube.org/study/cppe1",
+      "checked_at": "2026-09-29T19:41:44.654294+00:00",
+      "health": {
+        "id": "openedg-cpp-essentials-1",
+        "url": "https://edube.org/study/cppe1",
+        "checked_at": "2026-09-29T19:41:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edube.org/study/cppe1",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Edube Interactive :: C++ Essentials ‒ Part 1",
+        "canonical_url": "https://edube.org/study/cppe1",
+        "duration_signals": [
+          "42 hours",
+          "7 hours"
+        ],
+        "signal_fingerprint": "107d9330d2c8d588317267f5692c6d8f649c174d3993f6ce626481033a46f2cc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edube.org/study/cppe1",
+      "sha256": "2c69a4b3f5d0e628bc134e21f7e70c82384328cd678b778ee083c8fc92e665d1",
+      "text_characters": 6548
+    },
+    {
+      "id": "cisco-cpp-essentials-1",
+      "url": "https://www.netacad.com/courses/c-plus-plus-essentials-1?courseLang=en-US",
+      "checked_at": "2026-09-29T19:41:44.654668+00:00",
+      "health": {
+        "id": "cisco-cpp-essentials-1",
+        "url": "https://www.netacad.com/courses/c-plus-plus-essentials-1?courseLang=en-US",
+        "checked_at": "2026-09-29T19:41:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.netacad.com/courses/c-plus-plus-essentials-1?courseLang=en-US",
+        "content_type": "text/html",
+        "page_title": "C++ Essentials 1: Intro to Programming for Beginners",
+        "canonical_url": "https://www.netacad.com/courses/c-plus-plus-essentials-1?courseLang=en-US",
+        "duration_signals": [],
+        "signal_fingerprint": "ae928d2d426bad67cf22c1e7e41f6f9f9aac881aac94acce500252f123fe360f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.netacad.com/courses/c-plus-plus-essentials-1?courseLang=en-US",
+      "sha256": "48ae246485fcc23a587b248ddc6b1a1c20b7e5b0099928cd74306d69a752e096",
+      "text_characters": 52
+    },
+    {
+      "id": "microsoft-cpp-console-calculator",
+      "url": "https://learn.microsoft.com/en-us/cpp/get-started/tutorial-console-cpp?view=msvc-170",
+      "checked_at": "2026-09-29T19:41:44.654943+00:00",
+      "health": {
+        "id": "microsoft-cpp-console-calculator",
+        "url": "https://learn.microsoft.com/en-us/cpp/get-started/tutorial-console-cpp?view=msvc-170",
+        "checked_at": "2026-09-29T19:41:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/cpp/get-started/tutorial-console-cpp?view=msvc-170",
+        "content_type": "text/html",
+        "page_title": "Create a console calculator in C++",
+        "canonical_url": "https://learn.microsoft.com/en-us/cpp/get-started/tutorial-console-cpp?view=msvc-170",
+        "duration_signals": [],
+        "signal_fingerprint": "e8db378fd22267b2ec052b8b0ece691c3d2ee67a1a247a3417a448b58bb304a6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/cpp/get-started/tutorial-console-cpp?view=msvc-170",
+      "sha256": "cba6bd7d6e02099c8376d07b0ac9bed7fde6741db372c377cdaa7af2d6a8ca3e",
+      "text_characters": 48934
+    },
+    {
+      "id": "cppreference-cpp-language",
+      "url": "https://en.cppreference.com/cpp/language",
+      "checked_at": "2026-09-29T19:41:44.994176+00:00",
+      "health": {
+        "id": "cppreference-cpp-language",
+        "url": "https://en.cppreference.com/cpp/language",
+        "checked_at": "2026-09-29T19:41:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://en.cppreference.com/cpp/language",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "C++ language - cppreference.com",
+        "canonical_url": "https://en.cppreference.com/cpp/language",
+        "duration_signals": [],
+        "signal_fingerprint": "9b3dc9dd7345b8e3fcc966f653e32c4b2dfe32fb51ca445dd479dcf89709ad6d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://en.cppreference.com/cpp/language",
+      "sha256": "0e2e447e1ff0f44ad93c5be008321c22864b96af5ea22881cfecf5201b9f9f40",
+      "text_characters": 6750
+    },
+    {
+      "id": "pluralsight-cpp-path",
+      "url": "https://www.pluralsight.com/paths/c-plus-plus",
+      "checked_at": "2026-09-29T19:41:45.135296+00:00",
+      "health": {
+        "id": "pluralsight-cpp-path",
+        "url": "https://www.pluralsight.com/paths/c-plus-plus",
+        "checked_at": "2026-09-29T19:41:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/c-plus-plus",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "C++",
+        "canonical_url": "https://www.pluralsight.com/paths/c-plus-plus",
+        "duration_signals": [
+          "10 minutes",
+          "44 Hours"
+        ],
+        "signal_fingerprint": "2ab1c601b3652a6cdf8e049b6b76762ee17130185e8607f83ad060b188d7615c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/c-plus-plus",
+      "sha256": "376a6232b488e69a4170bb916d23de93edc4acd2c1bb050269994cd08a3f76c6",
+      "text_characters": 5729
+    },
+    {
+      "id": "oreilly-cpp-crash-course",
+      "url": "https://www.oreilly.com/library/view/c-crash-course/9781098122553/",
+      "checked_at": "2026-09-29T19:41:45.432317+00:00",
+      "health": {
+        "id": "oreilly-cpp-crash-course",
+        "url": "https://www.oreilly.com/library/view/c-crash-course/9781098122553/",
+        "checked_at": "2026-09-29T19:41:45+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/c-crash-course/9781098122553/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "udemy-beginning-cpp-programming",
+      "url": "https://www.udemy.com/course/beginning-c-plus-plus-programming/",
+      "checked_at": "2026-09-29T19:41:45.477448+00:00",
+      "health": {
+        "id": "udemy-beginning-cpp-programming",
+        "url": "https://www.udemy.com/course/beginning-c-plus-plus-programming/",
+        "checked_at": "2026-09-29T19:41:45+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/beginning-c-plus-plus-programming/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "youtube-freecodecamp-cpp-beginner",
+      "url": "https://www.youtube.com/watch?v=vLnPwxZdW4Y",
+      "checked_at": "2026-09-29T19:41:45.571982+00:00",
+      "health": {
+        "id": "youtube-freecodecamp-cpp-beginner",
+        "url": "https://www.youtube.com/watch?v=vLnPwxZdW4Y",
+        "checked_at": "2026-09-29T19:41:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=vLnPwxZdW4Y",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "C++ Tutorial for Beginners - Full Course",
+        "canonical_url": "https://www.youtube.com/watch?v=vLnPwxZdW4Y",
+        "duration_signals": [],
+        "signal_fingerprint": "8ec1022dc6c58bce1d321d15c3bac3babbfd24a2bda515cd312266f2c4252295",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=vLnPwxZdW4Y",
+      "sha256": "ee0c71e85cde05d5b81615328ed0e76fd773478c00e84f7639de270626c9be90",
+      "text_characters": 203
+    },
+    {
+      "id": "msvc-main",
+      "url": "https://learn.microsoft.com/en-us/cpp/cpp/main-function-command-line-args?view=msvc-170",
+      "checked_at": "2026-09-29T19:47:37.841661+00:00",
+      "health": {
+        "id": "msvc-main",
+        "url": "https://learn.microsoft.com/en-us/cpp/cpp/main-function-command-line-args?view=msvc-170",
+        "checked_at": "2026-09-29T19:47:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/cpp/cpp/main-function-command-line-args?view=msvc-170",
+        "content_type": "text/html",
+        "page_title": "`main` function and command-line arguments (C++)",
+        "canonical_url": "https://learn.microsoft.com/en-us/cpp/cpp/main-function-command-line-args?view=msvc-170",
+        "duration_signals": [],
+        "signal_fingerprint": "6da4826317de64f944f57cb383ca1ed5fd929941c87604cdb9c839800f53cdf8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/cpp/cpp/main-function-command-line-args?view=msvc-170",
+      "sha256": "0e85dc19e8a5bb898f1aa104a3ab8f9f0ebc430a4daf655921bc79933dd7ca15",
+      "text_characters": 10516
+    },
+    {
+      "id": "msvc-expressions",
+      "url": "https://learn.microsoft.com/en-us/cpp/cpp/cpp-built-in-operators-precedence-and-associativity?view=msvc-170",
+      "checked_at": "2026-09-29T19:49:26.258507+00:00",
+      "health": {
+        "id": "msvc-expressions",
+        "url": "https://learn.microsoft.com/en-us/cpp/cpp/cpp-built-in-operators-precedence-and-associativity?view=msvc-170",
+        "checked_at": "2026-09-29T19:49:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/cpp/cpp/cpp-built-in-operators-precedence-and-associativity?view=msvc-170",
+        "content_type": "text/html",
+        "page_title": "C++ built-in operators, precedence, and associativity",
+        "canonical_url": "https://learn.microsoft.com/en-us/cpp/cpp/cpp-built-in-operators-precedence-and-associativity?view=msvc-170",
+        "duration_signals": [],
+        "signal_fingerprint": "c2a8dc9ba5550b162d1b181f5174138aecaa1380cffe10ce395eeecb2da5a99d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/cpp/cpp/cpp-built-in-operators-precedence-and-associativity?view=msvc-170",
+      "sha256": "46508072a9f50ad6afca0aa550f741b6fef736e89784fd0d55f78e56f12047ed",
+      "text_characters": 3854
+    },
+    {
+      "id": "msvc-multiplicative",
+      "url": "https://learn.microsoft.com/en-us/cpp/cpp/multiplicative-operators-and-the-modulus-operator?view=msvc-170",
+      "checked_at": "2026-09-29T19:47:37.843421+00:00",
+      "health": {
+        "id": "msvc-multiplicative",
+        "url": "https://learn.microsoft.com/en-us/cpp/cpp/multiplicative-operators-and-the-modulus-operator?view=msvc-170",
+        "checked_at": "2026-09-29T19:47:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/cpp/cpp/multiplicative-operators-and-the-modulus-operator?view=msvc-170",
+        "content_type": "text/html",
+        "page_title": "Multiplicative Operators and the Modulus Operator",
+        "canonical_url": "https://learn.microsoft.com/en-us/cpp/cpp/multiplicative-operators-and-the-modulus-operator?view=msvc-170",
+        "duration_signals": [],
+        "signal_fingerprint": "26d4917f06e6c995806f7dc248cc1edc8d35dfb1bac894cec37d85794c375549",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/cpp/cpp/multiplicative-operators-and-the-modulus-operator?view=msvc-170",
+      "sha256": "4541f1582f7c38d1f376da742f5d2f90ede1d6a3115f66db36419a453a1e6db0",
+      "text_characters": 3501
+    },
+    {
+      "id": "msvc-vector",
+      "url": "https://learn.microsoft.com/en-us/cpp/standard-library/vector-class?view=msvc-170",
+      "checked_at": "2026-09-29T19:47:38.175963+00:00",
+      "health": {
+        "id": "msvc-vector",
+        "url": "https://learn.microsoft.com/en-us/cpp/standard-library/vector-class?view=msvc-170",
+        "checked_at": "2026-09-29T19:47:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/cpp/standard-library/vector-class?view=msvc-170",
+        "content_type": "text/html",
+        "page_title": "vector class",
+        "canonical_url": "https://learn.microsoft.com/en-us/cpp/standard-library/vector-class?view=msvc-170",
+        "duration_signals": [],
+        "signal_fingerprint": "98519fd82ef9e21e773ea79e5a51ce0114ec22cc1e7d8d918b3ed17cef80514c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/cpp/standard-library/vector-class?view=msvc-170",
+      "sha256": "1dc87827cbfced709974022ee9e973584e5f45d2f03114f13fcce804b815d43c",
+      "text_characters": 47637
+    },
+    {
+      "id": "msvc-string",
+      "url": "https://learn.microsoft.com/en-us/cpp/standard-library/basic-string-class?view=msvc-170",
+      "checked_at": "2026-09-29T19:47:38.319808+00:00",
+      "health": {
+        "id": "msvc-string",
+        "url": "https://learn.microsoft.com/en-us/cpp/standard-library/basic-string-class?view=msvc-170",
+        "checked_at": "2026-09-29T19:47:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/cpp/standard-library/basic-string-class?view=msvc-170",
+        "content_type": "text/html",
+        "page_title": "basic_string class",
+        "canonical_url": "https://learn.microsoft.com/en-us/cpp/standard-library/basic-string-class?view=msvc-170",
+        "duration_signals": [],
+        "signal_fingerprint": "a5ce3582fd2cad0e0ad4ce2b11183ac551edf55a556df10dac08a6f9bd02d3fd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/cpp/standard-library/basic-string-class?view=msvc-170",
+      "sha256": "4efeac359e610988d4a735aa88009b12e827437bf708471e96c189b417865817",
+      "text_characters": 137505
+    },
+    {
+      "id": "msvc-static-cast",
+      "url": "https://learn.microsoft.com/en-us/cpp/cpp/static-cast-operator?view=msvc-170",
+      "checked_at": "2026-09-29T19:47:38.342149+00:00",
+      "health": {
+        "id": "msvc-static-cast",
+        "url": "https://learn.microsoft.com/en-us/cpp/cpp/static-cast-operator?view=msvc-170",
+        "checked_at": "2026-09-29T19:47:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/cpp/cpp/static-cast-operator?view=msvc-170",
+        "content_type": "text/html",
+        "page_title": "static_cast Operator",
+        "canonical_url": "https://learn.microsoft.com/en-us/cpp/cpp/static-cast-operator?view=msvc-170",
+        "duration_signals": [],
+        "signal_fingerprint": "99f72742cab04349d441d7e74d0aa12fd28f492d0f9146cf542e242ba1509bf3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/cpp/cpp/static-cast-operator?view=msvc-170",
+      "sha256": "c08503647d0b588cddf225fe1dae610938b0c0e3158bce47b99b6d8741482d15",
+      "text_characters": 5395
+    },
+    {
+      "id": "msvc-dynamic-cast",
+      "url": "https://learn.microsoft.com/en-us/cpp/cpp/dynamic-cast-operator?view=msvc-170",
+      "checked_at": "2026-09-29T19:47:38.526757+00:00",
+      "health": {
+        "id": "msvc-dynamic-cast",
+        "url": "https://learn.microsoft.com/en-us/cpp/cpp/dynamic-cast-operator?view=msvc-170",
+        "checked_at": "2026-09-29T19:47:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/cpp/cpp/dynamic-cast-operator?view=msvc-170",
+        "content_type": "text/html",
+        "page_title": "dynamic_cast Operator",
+        "canonical_url": "https://learn.microsoft.com/en-us/cpp/cpp/dynamic-cast-operator?view=msvc-170",
+        "duration_signals": [],
+        "signal_fingerprint": "743c35d043b09d77940313711132688b94d206f6e4a0f6603224664caf92fac1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/cpp/cpp/dynamic-cast-operator?view=msvc-170",
+      "sha256": "daa1cf8f97cdd9944247f73fb8ce879273787dd1062243fa2a7a1a53daadcaad",
+      "text_characters": 9884
+    },
+    {
+      "id": "msvc-new-delete",
+      "url": "https://learn.microsoft.com/en-us/cpp/cpp/new-and-delete-operators?view=msvc-170",
+      "checked_at": "2026-09-29T19:47:38.718167+00:00",
+      "health": {
+        "id": "msvc-new-delete",
+        "url": "https://learn.microsoft.com/en-us/cpp/cpp/new-and-delete-operators?view=msvc-170",
+        "checked_at": "2026-09-29T19:47:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/cpp/cpp/new-and-delete-operators?view=msvc-170",
+        "content_type": "text/html",
+        "page_title": "new and delete operators",
+        "canonical_url": "https://learn.microsoft.com/en-us/cpp/cpp/new-and-delete-operators?view=msvc-170",
+        "duration_signals": [],
+        "signal_fingerprint": "70fc80d311466e1a7cc7e230d592550aa84b59ea1ee342a2452688e8acb49894",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/cpp/cpp/new-and-delete-operators?view=msvc-170",
+      "sha256": "369a18c7adbc09da520b4982f19c311b598663e0fecaba07a043503503ab4c67",
+      "text_characters": 9555
+    },
+    {
+      "id": "msvc-basic-istream",
+      "url": "https://learn.microsoft.com/en-us/cpp/standard-library/basic-istream-class?view=msvc-170",
+      "checked_at": "2026-09-29T19:47:38.769221+00:00",
+      "health": {
+        "id": "msvc-basic-istream",
+        "url": "https://learn.microsoft.com/en-us/cpp/standard-library/basic-istream-class?view=msvc-170",
+        "checked_at": "2026-09-29T19:47:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/cpp/standard-library/basic-istream-class?view=msvc-170",
+        "content_type": "text/html",
+        "page_title": "basic_istream Class",
+        "canonical_url": "https://learn.microsoft.com/en-us/cpp/standard-library/basic-istream-class?view=msvc-170",
+        "duration_signals": [],
+        "signal_fingerprint": "3bc5d1efc06b348e94efc6731b7d5656de092fa314da25305175291968fa0d63",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/cpp/standard-library/basic-istream-class?view=msvc-170",
+      "sha256": "659a1a87a6912d42eb7b2e61734f517f238610ccd6ad6cc36c11291f117f808c",
+      "text_characters": 22572
+    },
+    {
+      "id": "msvc-iomanip",
+      "url": "https://learn.microsoft.com/en-us/cpp/standard-library/iomanip-functions?view=msvc-170",
+      "checked_at": "2026-09-29T19:47:38.895098+00:00",
+      "health": {
+        "id": "msvc-iomanip",
+        "url": "https://learn.microsoft.com/en-us/cpp/standard-library/iomanip-functions?view=msvc-170",
+        "checked_at": "2026-09-29T19:47:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/cpp/standard-library/iomanip-functions?view=msvc-170",
+        "content_type": "text/html",
+        "page_title": "<iomanip> functions",
+        "canonical_url": "https://learn.microsoft.com/en-us/cpp/standard-library/iomanip-functions?view=msvc-170",
+        "duration_signals": [],
+        "signal_fingerprint": "137afc1b1b4ccfd0a3cf623b17a4d590f678542ca6b92b2f87a046ba1cfe8153",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/cpp/standard-library/iomanip-functions?view=msvc-170",
+      "sha256": "9d9ed9b8bca2555b9337daf0742a299a6c633a2e948af089c26265a1d8e2007b",
+      "text_characters": 15048
+    },
+    {
+      "id": "compiler-explorer-api",
+      "url": "https://github.com/compiler-explorer/compiler-explorer/blob/main/docs/API.md",
+      "checked_at": "2026-09-29T19:47:39.119388+00:00",
+      "health": {
+        "id": "compiler-explorer-api",
+        "url": "https://github.com/compiler-explorer/compiler-explorer/blob/main/docs/API.md",
+        "checked_at": "2026-09-29T19:47:39+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://github.com/compiler-explorer/compiler-explorer/blob/main/docs/API.md",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "cpp17-multiplicative",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/expr.mul",
+      "checked_at": "2026-09-29T19:49:26.259384+00:00",
+      "health": {
+        "id": "cpp17-multiplicative",
+        "url": "https://timsong-cpp.github.io/cppwp/n4659/expr.mul",
+        "checked_at": "2026-09-29T19:49:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://timsong-cpp.github.io/cppwp/n4659/expr.mul",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "[expr.mul]",
+        "canonical_url": "https://timsong-cpp.github.io/cppwp/n4659/expr.mul",
+        "duration_signals": [],
+        "signal_fingerprint": "9d02cdecf085ab55fffabcb6c2f869e09600d6e9da01715f2aa25a93c33db849",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://timsong-cpp.github.io/cppwp/n4659/expr.mul",
+      "sha256": "30c3424cd09c85f0434393e3b7fe16f1f1c1c3e14507f18f0a641e9f3c19e2d0",
+      "text_characters": 1129
+    },
+    {
+      "id": "cpp17-string-access",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/string.access",
+      "checked_at": "2026-09-29T19:49:26.260069+00:00",
+      "health": {
+        "id": "cpp17-string-access",
+        "url": "https://timsong-cpp.github.io/cppwp/n4659/string.access",
+        "checked_at": "2026-09-29T19:49:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://timsong-cpp.github.io/cppwp/n4659/string.access",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "[string.access]",
+        "canonical_url": "https://timsong-cpp.github.io/cppwp/n4659/string.access",
+        "duration_signals": [],
+        "signal_fingerprint": "ff2c6c53e6e04a45a25d16f54dd4241cfa62bb64defad6451b68baa34fe8410f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://timsong-cpp.github.io/cppwp/n4659/string.access",
+      "sha256": "fbd7b1d45362a2efe661ffb9b3527edff756186915740ebe4ce62d381b7b0810",
+      "text_characters": 955
+    },
+    {
+      "id": "cpp17-vector-capacity",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/vector.capacity",
+      "checked_at": "2026-09-29T19:49:26.631802+00:00",
+      "health": {
+        "id": "cpp17-vector-capacity",
+        "url": "https://timsong-cpp.github.io/cppwp/n4659/vector.capacity",
+        "checked_at": "2026-09-29T19:49:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://timsong-cpp.github.io/cppwp/n4659/vector.capacity",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "[vector.capacity]",
+        "canonical_url": "https://timsong-cpp.github.io/cppwp/n4659/vector.capacity",
+        "duration_signals": [],
+        "signal_fingerprint": "0fae1632a78cc5277a0ad4d46d70737aa9689698feafdbcb32bb72cf4dcf55c8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://timsong-cpp.github.io/cppwp/n4659/vector.capacity",
+      "sha256": "902ad4d3b3138f52e5f45f2eb0e10ea9fe57451b802c5b6fa68e85d8dd78fa64",
+      "text_characters": 3144
+    },
+    {
+      "id": "cpp17-execution",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/intro.execution",
+      "checked_at": "2026-09-29T19:49:26.654597+00:00",
+      "health": {
+        "id": "cpp17-execution",
+        "url": "https://timsong-cpp.github.io/cppwp/n4659/intro.execution",
+        "checked_at": "2026-09-29T19:49:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://timsong-cpp.github.io/cppwp/n4659/intro.execution",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "[intro.execution]",
+        "canonical_url": "https://timsong-cpp.github.io/cppwp/n4659/intro.execution",
+        "duration_signals": [],
+        "signal_fingerprint": "90e82b7cd0c6a81e23dbca98f184070a6742f9331bb9a918671e68de0837d5ac",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://timsong-cpp.github.io/cppwp/n4659/intro.execution",
+      "sha256": "6c83ffd7af1aaa6544aa9b550b7c68bdde4d3657b1369284f2cd59728592eb05",
+      "text_characters": 14168
+    },
+    {
+      "id": "cpp17-main",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/basic.start.main",
+      "checked_at": "2026-09-29T19:56:27.623701+00:00",
+      "health": {
+        "id": "cpp17-main",
+        "url": "https://timsong-cpp.github.io/cppwp/n4659/basic.start.main",
+        "checked_at": "2026-09-29T19:56:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://timsong-cpp.github.io/cppwp/n4659/basic.start.main",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "[basic.start.main]",
+        "canonical_url": "https://timsong-cpp.github.io/cppwp/n4659/basic.start.main",
+        "duration_signals": [],
+        "signal_fingerprint": "10981cedddb9005a8e3c39a93a4b45e1ca5cd8228fa1296f26fc992227050304",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://timsong-cpp.github.io/cppwp/n4659/basic.start.main",
+      "sha256": "4789e2e94c3e3026a33525742fcff6e526c46872895a29581ef578ba7d8173a4",
+      "text_characters": 3322
+    },
+    {
+      "id": "cpp17-ignore",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/istream.unformatted",
+      "checked_at": "2026-09-29T19:56:27.624409+00:00",
+      "health": {
+        "id": "cpp17-ignore",
+        "url": "https://timsong-cpp.github.io/cppwp/n4659/istream.unformatted",
+        "checked_at": "2026-09-29T19:56:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://timsong-cpp.github.io/cppwp/n4659/istream.unformatted",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "[istream.unformatted]",
+        "canonical_url": "https://timsong-cpp.github.io/cppwp/n4659/istream.unformatted",
+        "duration_signals": [],
+        "signal_fingerprint": "c54e93eb63a0e62792155275f42573f6dc557fce17ead7b9e5138f3225110afd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://timsong-cpp.github.io/cppwp/n4659/istream.unformatted",
+      "sha256": "5363d9b3353c899312f8d2b9b3f1be233726c1850f119978fd6d2f36db5e46d0",
+      "text_characters": 12605
+    },
+    {
+      "id": "cpp17-string-io",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/string.io",
+      "checked_at": "2026-09-29T19:56:27.624840+00:00",
+      "health": {
+        "id": "cpp17-string-io",
+        "url": "https://timsong-cpp.github.io/cppwp/n4659/string.io",
+        "checked_at": "2026-09-29T19:56:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://timsong-cpp.github.io/cppwp/n4659/string.io",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "[string.io]",
+        "canonical_url": "https://timsong-cpp.github.io/cppwp/n4659/string.io",
+        "duration_signals": [],
+        "signal_fingerprint": "d0fef2925970c8e9d76a5f0363c68691c52a62e917a077113c11ffa86948a8e1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://timsong-cpp.github.io/cppwp/n4659/string.io",
+      "sha256": "ec0458d61bc2d2ffcd8efc04a6db69affa95c2d13edb657585fa2f3bc6cb606c",
+      "text_characters": 3302
+    }
+  ],
+  "added_source_ids": [
+    "msvc-main",
+    "msvc-expressions",
+    "msvc-multiplicative",
+    "msvc-vector",
+    "msvc-string",
+    "msvc-static-cast",
+    "msvc-dynamic-cast",
+    "msvc-new-delete",
+    "msvc-basic-istream",
+    "msvc-iomanip",
+    "compiler-explorer-api",
+    "cpp17-multiplicative",
+    "cpp17-string-access",
+    "cpp17-vector-capacity",
+    "cpp17-execution",
+    "cpp17-main",
+    "cpp17-ignore",
+    "cpp17-string-io"
+  ],
+  "findings": [
+    {
+      "id": "cpe2001-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Hosted main arguments require a portable contract",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/basic.start.main",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CPE-20-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "C++17 allows nonnegative argc, a null argv[argc], two portable int forms and special return 0 fallthrough. Platform-specific extensions are separate.",
+      "recommendation": "Add objective 1.3 argument/count/lifetime explanation and executed sentinel check.",
+      "disposition": "applied",
+      "source_id": "cpp17-main",
+      "resolution": "Add objective 1.3 argument/count/lifetime explanation and executed sentinel check."
+    },
+    {
+      "id": "cpe2001-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "C++17 remainder sign is defined by truncating division",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/expr.mul",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CPE-20-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "N4659 specifies truncation toward zero and quotient/remainder identity when representable; older vendor wording suggests implementation-defined signs.",
+      "recommendation": "Teach and execute -11/4, -11%4 and 11%-4; exclude undefined division/overflow.",
+      "disposition": "applied",
+      "source_id": "cpp17-multiplicative",
+      "resolution": "Teach and execute -11/4, -11%4 and 11%-4; exclude undefined division/overflow."
+    },
+    {
+      "id": "cpe2001-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Successful integer extraction does not validate a complete line",
+      "url": "https://learn.microsoft.com/en-us/cpp/standard-library/basic-istream-class?view=msvc-170",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CPE-20-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "A public original program accepts 12 from 12x; the tested parser requires the remaining input to be whitespace/EOF and preserves the destination on rejection.",
+      "recommendation": "Add strict-line parsing, explicit domain checks and clear/consume recovery with streamsize limit.",
+      "disposition": "applied",
+      "source_id": "msvc-basic-istream",
+      "resolution": "Add strict-line parsing, explicit domain checks and clear/consume recovery with streamsize limit."
+    },
+    {
+      "id": "cpe2001-deep-4",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Both named pointer conversions are explicit objective 3.5",
+      "url": "https://cppinstitute.org/cpe",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CPE-20-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The active 26-entry syllabus includes static_cast and dynamic_cast pointer conversions. Existing prose treated too much cast machinery as merely adjacent.",
+      "recommendation": "Add a minimal safe polymorphic hierarchy, success/null/failure checks and specific mappings for all 26 entries.",
+      "disposition": "applied",
+      "source_id": "cpe-20-01-syllabus",
+      "resolution": "Add a minimal safe polymorphic hierarchy, success/null/failure checks and specific mappings for all 26 entries."
+    },
+    {
+      "id": "cpe2001-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Container size and storage lifetime need separate traces",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/vector.capacity",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CPE-20-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Reserve does not create elements; reallocation invalidates stored addresses. C++17 string access has a distinct sentinel boundary.",
+      "recommendation": "Add executed reserve/resize/invalidation and string sentinel/at comparisons, discarding old pointers before reallocation.",
+      "disposition": "applied",
+      "source_id": "cpp17-vector-capacity",
+      "resolution": "Add executed reserve/resize/invalidation and string sentinel/at comparisons, discarding old pointers before reallocation."
+    },
+    {
+      "id": "cpe2001-deep-6",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Resource access and vendor copy errors remain limited",
+      "url": "https://cppinstitute.org/cpe",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CPE-20-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current exam scope is clear, but source fetches failed and public Edube labels conflict; paid interiors and booking UI were not inspected.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "cpp-institute-certification-catalog",
+      "review": "Current catalog and dated exam/policy pages examined through web reader. No separate unseen release/news source adopted."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "remote_cpp_builds_and_runs": 13,
+    "public_code_blocks": 10,
+    "reasoning_cases": 3,
+    "remote_validation": {
+      "execution_boundary": "Remote Compiler Explorer public sandbox; no local C++ compiler or installation; only original public code submitted. Three fragments supplied documented main contexts; scenario harness renames entry points and redirects in-memory standard streams.",
+      "compiler_options": "-std=c++17 -Wall -Wextra -pedantic",
+      "public_example_sha256": [
+        "8adc469fc1bae5e603fa347b106622d6690ac304354ba475649ccee6c4515199",
+        "e500e6dbdbaca5faae63f64a58af73710ac3b22e3365e94bc2de9088db949dd9",
+        "5f84f699f07d0f0f83e60e4c196c834f47e481fde2a7546260725168f9037050",
+        "180a77c3deea0bbcb7dacf314af845252026491fe9902d46ea5d25996cd6e407",
+        "d7c7d030ff370a73be90e487b5e533ca831d36b74160942a94ec0bee470bd402",
+        "f0d0809d488a377823fa3441caa6b942043bf861c558911726d0b42c7b073f3c",
+        "d2c153a78f98e27615ec31ab9aec69f02695ac7c3a7a3f2c69bb08768d79cc93",
+        "3634a3383245bf2aeb8fea8bab050318ed5acde6df28d7e00ceec9338d42140b",
+        "be9cd098a881c9a5ae614f5e1f928cf75b0b802129694048ff2ca8d9c5583b4f",
+        "fa832a66e99cd021604cb26e04e509e9fa0842b6cccbfb802f14df5f55532f69"
+      ],
+      "public_blocks": 10,
+      "remote_builds_and_runs": 13,
+      "results": [
+        {
+          "name": "hello",
+          "compiler": "g142",
+          "passed": true,
+          "stdout": "3",
+          "stderr": [],
+          "build_stderr": [],
+          "source_sha256": "8adc469fc1bae5e603fa347b106622d6690ac304354ba475649ccee6c4515199",
+          "mode": "complete public program",
+          "receipt_sha256": "499bb04be18cd67e9da1931ff48bb8dfbfd2dd092bc13e7bf62cbe96220ed45f"
+        },
+        {
+          "name": "quantity-prefix",
+          "compiler": "g142",
+          "passed": true,
+          "stdout": "Quantity: 12",
+          "stderr": [],
+          "build_stderr": [],
+          "source_sha256": "e500e6dbdbaca5faae63f64a58af73710ac3b22e3365e94bc2de9088db949dd9",
+          "mode": "complete public program",
+          "receipt_sha256": "c75eb77643a446d740eee0bc964bcb15305e9af178454a27636430f830b6fe61"
+        },
+        {
+          "name": "parameters",
+          "compiler": "g142",
+          "passed": true,
+          "stdout": "4 parameter checks passed",
+          "stderr": [],
+          "build_stderr": [],
+          "source_sha256": "22ddd544e93249cb650e2306f10b35db7a8f07294ea058fe6fdbb8b453e007e1",
+          "mode": "exact public function fragment plus calling main",
+          "receipt_sha256": "b45a31c86357ffda964e2810e26b5ca8647d99c963158cc591e2e593940ca3d6"
+        },
+        {
+          "name": "factorial",
+          "compiler": "g142",
+          "passed": true,
+          "stdout": "13 factorial checks passed",
+          "stderr": [],
+          "build_stderr": [],
+          "source_sha256": "fc3da1a3a6bfc09a198f6fe11a15ff3b3e3e95cf4843c5571d343d7640c91290",
+          "mode": "exact public function fragment plus bounded calling main",
+          "receipt_sha256": "09b8ba45c8b55bc68e2d1bbd9e3f9c4729f0e4d5ec0ed3bbdeaff1b34329220d"
+        },
+        {
+          "name": "allocation",
+          "compiler": "g142",
+          "passed": true,
+          "stdout": "15 released",
+          "stderr": [],
+          "build_stderr": [],
+          "source_sha256": "acebcf793c4bb647d80aefc3b42b2d07dfc2a7d6b150d9437a5c0bf087b52723",
+          "mode": "exact public statement fragment inside main; total checked after deletion",
+          "receipt_sha256": "2781110d72d5db86e556b5cdd55cb107045440794d4b3a22f8591aeb1b5017b6"
+        },
+        {
+          "name": "product",
+          "compiler": "g142",
+          "passed": true,
+          "stdout": "9.5",
+          "stderr": [],
+          "build_stderr": [],
+          "source_sha256": "f0d0809d488a377823fa3441caa6b942043bf861c558911726d0b42c7b073f3c",
+          "mode": "complete public program",
+          "receipt_sha256": "10ef4037df5f794b0eab5d5ae481dc43c5550919e6ab220ceaeb65d59125902b"
+        },
+        {
+          "name": "workbook-gcc",
+          "compiler": "g142",
+          "passed": true,
+          "stdout": "67 checks passed",
+          "stderr": [],
+          "build_stderr": [],
+          "source_sha256": "d2c153a78f98e27615ec31ab9aec69f02695ac7c3a7a3f2c69bb08768d79cc93",
+          "mode": "complete public program",
+          "receipt_sha256": "a1c961fcaccc6e09daa110ef72e107d85255af58a72ce792b779eaf97da68add"
+        },
+        {
+          "name": "inventory",
+          "compiler": "g142",
+          "passed": true,
+          "stdout": "ID 101 cents 2550",
+          "stderr": [],
+          "build_stderr": [],
+          "source_sha256": "3634a3383245bf2aeb8fea8bab050318ed5acde6df28d7e00ceec9338d42140b",
+          "mode": "complete public program",
+          "receipt_sha256": "4b5142500e4ce016d2311af19d2e2ac5f2da0906e3bbe5030e5f6b5cc3c9437a"
+        },
+        {
+          "name": "sensors",
+          "compiler": "g142",
+          "passed": true,
+          "stdout": "array 53 23\nvector 53 23\nfirst 12\nexpanded 77",
+          "stderr": [],
+          "build_stderr": [],
+          "source_sha256": "be9cd098a881c9a5ae614f5e1f928cf75b0b802129694048ff2ca8d9c5583b4f",
+          "mode": "complete public program",
+          "receipt_sha256": "79b10eae5d92af5eda2555c3a7cbfc2e103e34975148cb8acb5b29066c0e14ba"
+        },
+        {
+          "name": "menu",
+          "compiler": "g142",
+          "passed": true,
+          "stdout": "5\n-12\n1\n120\n479001600",
+          "stderr": [],
+          "build_stderr": [],
+          "source_sha256": "fa832a66e99cd021604cb26e04e509e9fa0842b6cccbfb802f14df5f55532f69",
+          "mode": "complete public program",
+          "receipt_sha256": "871ab93b7e610b8c96c6b13885b9fd85f69d891fe9da1e688c2bbcd83673c89f"
+        },
+        {
+          "name": "workbook-clang",
+          "compiler": "clang1910",
+          "passed": true,
+          "stdout": "67 checks passed",
+          "stderr": [],
+          "build_stderr": [],
+          "source_sha256": "d2c153a78f98e27615ec31ab9aec69f02695ac7c3a7a3f2c69bb08768d79cc93",
+          "mode": "complete public program",
+          "receipt_sha256": "2dae13c9e9c2d82d19562bd1b416792f73bb63eb4c1a7388dbf6d92bee50431e"
+        },
+        {
+          "name": "scenario-harness-gcc",
+          "compiler": "g142",
+          "passed": true,
+          "stdout": "60 scenario checks passed",
+          "stderr": [],
+          "build_stderr": [],
+          "source_sha256": "2b9fc3b493fe0bf0c64c60e2bcbbbf977a4f10635104704e246a7699a36d6ad6",
+          "mode": "exact scenario bodies with main renamed; headers consolidated; original boundary driver",
+          "receipt_sha256": "c0c36b870f6fdbea8a3a284f6d2064b9bcaeb39ea1e5adabb7bcc9c1f6ca376d"
+        },
+        {
+          "name": "scenario-harness-clang",
+          "compiler": "clang1910",
+          "passed": true,
+          "stdout": "60 scenario checks passed",
+          "stderr": [],
+          "build_stderr": [],
+          "source_sha256": "2b9fc3b493fe0bf0c64c60e2bcbbbf977a4f10635104704e246a7699a36d6ad6",
+          "mode": "same scenario boundary driver on second compiler",
+          "receipt_sha256": "8a7d8118e87f761fab0a3be127ed14ee81ee3c2ee8c34fa6fcdb9577d58ed8e2"
+        }
+      ],
+      "passed": true,
+      "runtime_checks_per_compiler": {
+        "workbook-gcc": 67,
+        "workbook-clang": 67,
+        "scenario-harness-gcc": 60,
+        "scenario-harness-clang": 60
+      }
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Direct C++ Institute HTTP requests and objective monitor timed out; web-reader manual comparison is separate evidence. Existing objective/status snapshots were retained; no successful automatic hash comparison claimed.",
+    "Public source reading is section-specific. Paid OReilly/Udemy contents inaccessible; Cisco/YouTube only shells. Edube copy errors and older Microsoft reference wording are disclosed and resolved only to the stated extent.",
+    "Ten public blocks tested remotely through Compiler Explorer with C++17; three fragments need documented main contexts. Thirteen build/run receipts include both compilers for workbook and scenario boundary harness. This is live-partial remote code execution, not local C++ or infrastructure lab execution.",
+    "Selected safe inputs and small allocations only. No deliberate undefined behavior, allocation-failure simulation, sanitizer/debugger session, account, course completion, exam attempt or human review. Eight broader learner activities remain proposed.",
+    "Scenario business limits/prices are fictional. Pointer/count callers must provide enough live storage; parser and arithmetic bounds are explicit. Current prices, delivery, policies and booking UI should be rechecked before purchase."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 180,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Remote Compiler Explorer public sandbox; no local C++ compiler or installation; only original public code submitted. Three fragments supplied documented main contexts; scenario harness renames entry points and redirects in-memory standard streams.",
+    "compiler_options": "-std=c++17 -Wall -Wextra -pedantic",
+    "public_example_sha256": [
+      "8adc469fc1bae5e603fa347b106622d6690ac304354ba475649ccee6c4515199",
+      "e500e6dbdbaca5faae63f64a58af73710ac3b22e3365e94bc2de9088db949dd9",
+      "5f84f699f07d0f0f83e60e4c196c834f47e481fde2a7546260725168f9037050",
+      "180a77c3deea0bbcb7dacf314af845252026491fe9902d46ea5d25996cd6e407",
+      "d7c7d030ff370a73be90e487b5e533ca831d36b74160942a94ec0bee470bd402",
+      "f0d0809d488a377823fa3441caa6b942043bf861c558911726d0b42c7b073f3c",
+      "d2c153a78f98e27615ec31ab9aec69f02695ac7c3a7a3f2c69bb08768d79cc93",
+      "3634a3383245bf2aeb8fea8bab050318ed5acde6df28d7e00ceec9338d42140b",
+      "be9cd098a881c9a5ae614f5e1f928cf75b0b802129694048ff2ca8d9c5583b4f",
+      "fa832a66e99cd021604cb26e04e509e9fa0842b6cccbfb802f14df5f55532f69"
+    ],
+    "public_blocks": 10,
+    "remote_builds_and_runs": 13,
+    "results": [
+      {
+        "name": "hello",
+        "compiler": "g142",
+        "passed": true,
+        "stdout": "3",
+        "stderr": [],
+        "build_stderr": [],
+        "source_sha256": "8adc469fc1bae5e603fa347b106622d6690ac304354ba475649ccee6c4515199",
+        "mode": "complete public program",
+        "receipt_sha256": "499bb04be18cd67e9da1931ff48bb8dfbfd2dd092bc13e7bf62cbe96220ed45f"
+      },
+      {
+        "name": "quantity-prefix",
+        "compiler": "g142",
+        "passed": true,
+        "stdout": "Quantity: 12",
+        "stderr": [],
+        "build_stderr": [],
+        "source_sha256": "e500e6dbdbaca5faae63f64a58af73710ac3b22e3365e94bc2de9088db949dd9",
+        "mode": "complete public program",
+        "receipt_sha256": "c75eb77643a446d740eee0bc964bcb15305e9af178454a27636430f830b6fe61"
+      },
+      {
+        "name": "parameters",
+        "compiler": "g142",
+        "passed": true,
+        "stdout": "4 parameter checks passed",
+        "stderr": [],
+        "build_stderr": [],
+        "source_sha256": "22ddd544e93249cb650e2306f10b35db7a8f07294ea058fe6fdbb8b453e007e1",
+        "mode": "exact public function fragment plus calling main",
+        "receipt_sha256": "b45a31c86357ffda964e2810e26b5ca8647d99c963158cc591e2e593940ca3d6"
+      },
+      {
+        "name": "factorial",
+        "compiler": "g142",
+        "passed": true,
+        "stdout": "13 factorial checks passed",
+        "stderr": [],
+        "build_stderr": [],
+        "source_sha256": "fc3da1a3a6bfc09a198f6fe11a15ff3b3e3e95cf4843c5571d343d7640c91290",
+        "mode": "exact public function fragment plus bounded calling main",
+        "receipt_sha256": "09b8ba45c8b55bc68e2d1bbd9e3f9c4729f0e4d5ec0ed3bbdeaff1b34329220d"
+      },
+      {
+        "name": "allocation",
+        "compiler": "g142",
+        "passed": true,
+        "stdout": "15 released",
+        "stderr": [],
+        "build_stderr": [],
+        "source_sha256": "acebcf793c4bb647d80aefc3b42b2d07dfc2a7d6b150d9437a5c0bf087b52723",
+        "mode": "exact public statement fragment inside main; total checked after deletion",
+        "receipt_sha256": "2781110d72d5db86e556b5cdd55cb107045440794d4b3a22f8591aeb1b5017b6"
+      },
+      {
+        "name": "product",
+        "compiler": "g142",
+        "passed": true,
+        "stdout": "9.5",
+        "stderr": [],
+        "build_stderr": [],
+        "source_sha256": "f0d0809d488a377823fa3441caa6b942043bf861c558911726d0b42c7b073f3c",
+        "mode": "complete public program",
+        "receipt_sha256": "10ef4037df5f794b0eab5d5ae481dc43c5550919e6ab220ceaeb65d59125902b"
+      },
+      {
+        "name": "workbook-gcc",
+        "compiler": "g142",
+        "passed": true,
+        "stdout": "67 checks passed",
+        "stderr": [],
+        "build_stderr": [],
+        "source_sha256": "d2c153a78f98e27615ec31ab9aec69f02695ac7c3a7a3f2c69bb08768d79cc93",
+        "mode": "complete public program",
+        "receipt_sha256": "a1c961fcaccc6e09daa110ef72e107d85255af58a72ce792b779eaf97da68add"
+      },
+      {
+        "name": "inventory",
+        "compiler": "g142",
+        "passed": true,
+        "stdout": "ID 101 cents 2550",
+        "stderr": [],
+        "build_stderr": [],
+        "source_sha256": "3634a3383245bf2aeb8fea8bab050318ed5acde6df28d7e00ceec9338d42140b",
+        "mode": "complete public program",
+        "receipt_sha256": "4b5142500e4ce016d2311af19d2e2ac5f2da0906e3bbe5030e5f6b5cc3c9437a"
+      },
+      {
+        "name": "sensors",
+        "compiler": "g142",
+        "passed": true,
+        "stdout": "array 53 23\nvector 53 23\nfirst 12\nexpanded 77",
+        "stderr": [],
+        "build_stderr": [],
+        "source_sha256": "be9cd098a881c9a5ae614f5e1f928cf75b0b802129694048ff2ca8d9c5583b4f",
+        "mode": "complete public program",
+        "receipt_sha256": "79b10eae5d92af5eda2555c3a7cbfc2e103e34975148cb8acb5b29066c0e14ba"
+      },
+      {
+        "name": "menu",
+        "compiler": "g142",
+        "passed": true,
+        "stdout": "5\n-12\n1\n120\n479001600",
+        "stderr": [],
+        "build_stderr": [],
+        "source_sha256": "fa832a66e99cd021604cb26e04e509e9fa0842b6cccbfb802f14df5f55532f69",
+        "mode": "complete public program",
+        "receipt_sha256": "871ab93b7e610b8c96c6b13885b9fd85f69d891fe9da1e688c2bbcd83673c89f"
+      },
+      {
+        "name": "workbook-clang",
+        "compiler": "clang1910",
+        "passed": true,
+        "stdout": "67 checks passed",
+        "stderr": [],
+        "build_stderr": [],
+        "source_sha256": "d2c153a78f98e27615ec31ab9aec69f02695ac7c3a7a3f2c69bb08768d79cc93",
+        "mode": "complete public program",
+        "receipt_sha256": "2dae13c9e9c2d82d19562bd1b416792f73bb63eb4c1a7388dbf6d92bee50431e"
+      },
+      {
+        "name": "scenario-harness-gcc",
+        "compiler": "g142",
+        "passed": true,
+        "stdout": "60 scenario checks passed",
+        "stderr": [],
+        "build_stderr": [],
+        "source_sha256": "2b9fc3b493fe0bf0c64c60e2bcbbbf977a4f10635104704e246a7699a36d6ad6",
+        "mode": "exact scenario bodies with main renamed; headers consolidated; original boundary driver",
+        "receipt_sha256": "c0c36b870f6fdbea8a3a284f6d2064b9bcaeb39ea1e5adabb7bcc9c1f6ca376d"
+      },
+      {
+        "name": "scenario-harness-clang",
+        "compiler": "clang1910",
+        "passed": true,
+        "stdout": "60 scenario checks passed",
+        "stderr": [],
+        "build_stderr": [],
+        "source_sha256": "2b9fc3b493fe0bf0c64c60e2bcbbbf977a4f10635104704e246a7699a36d6ad6",
+        "mode": "same scenario boundary driver on second compiler",
+        "receipt_sha256": "8a7d8118e87f761fab0a3be127ed14ee81ee3c2ee8c34fa6fcdb9577d58ed8e2"
+      }
+    ],
+    "passed": true,
+    "runtime_checks_per_compiler": {
+      "workbook-gcc": 67,
+      "workbook-clang": 67,
+      "scenario-harness-gcc": 60,
+      "scenario-harness-clang": 60
+    },
+    "learning_catalog_consistency": "passed"
+  },
+  "source_reading_boundaries": {
+    "cpe-20-01-syllabus": "Direct HTTP and objective monitor timed out. Complete current page read through public web reader: active CPE-20-01, syllabus July 22, 2025, 26 objectives in 7/8/6/5 groups, weights 28/28/24/20 and items 9/8/7/6. Thirty questions, 45 minutes plus approximately five for NDA/tutorial, 70% cumulative points with a stated 120 raw-point maximum, TestNow, English, no prerequisite, USD69/86 options. Manual snapshot comparison only; no successful automated hash comparison or snapshot rewrite. Current booking not inspected.",
+    "cpp-institute-exam-policies": "Direct request timed out; complete public policy read via web reader. July 23, 2025 policy separately covers CLE/CPE TestNow and associate/professional Pearson VUE delivery: seven-day failed-retake wait for CLE/CPE versus 15 days in the other section. Admission/security/accommodation context read, not a personal booking determination. No account, exam or settings action.",
+    "cpp-institute-certification-catalog": "Direct request timed out; complete certification-exams catalog read through web reader. CPE remains entry-level, lifetime credential retains completed version, no replacement announcement found on examined pages. General Pearson/OnVUE language does not override CPE-specific TestNow. No unseen release channel or future availability inferred.",
+    "openedg-cpp-essentials-1": "Complete public 6548-character landing read: 42 hours, suggested seven hours/week, English, modules 0–4 and CPE alignment. Body contains conflicting Intermediate/C-language/CLE-20-01 labels and obsolete standards prose. Those copy errors are disclosed and not adopted as exam scope. Account lessons and assessments not entered.",
+    "cisco-cpp-essentials-1": "HTTP200 but only a 52-character application shell extracted. No rendered syllabus, provider duration or lesson content verified. The 35–45-hour figure is labeled an author planning estimate. No enrollment.",
+    "microsoft-cpp-console-calculator": "Public 48934-character capture obtained despite generic authorization banner. Read initial project/setup introduction and selected Add code to do some math, calculator class/call/build subsections, and Fix divide by zero section through its close/source-control text. Other debugger/version tabs not exhaustively read. Shown infinite input loop lacks complete failed-input/EOF handling; no compiler installation, IDE session or tutorial execution claimed.",
+    "cppreference-cpp-language": "Complete 6750-character language index read, with version labels through C++26. Third-party navigation reference only; linked technical chapters not fully read or used as sole authority. Original examples explicitly pinned to C++17.",
+    "pluralsight-cpp-path": "Complete 5729-character public listing read. Thirteen courses/44-hour headline; Learn To Program With C++ 17 is 5h19m dated May 11, 2022, C++ Fundamentals Including C++17 is 5h48m dated July 2, 2025: 667 minutes/11h07m combined. Optional Practical C++14/17 course 2h33m. Advanced path exceeds entry scope; no paid lesson, assessment or trial access.",
+    "oreilly-cpp-crash-course": "Direct HTTP403. Prior 19h42m runtime, current contents and paid interior not reverified; selective 8–12 hours is an author estimate.",
+    "udemy-beginning-cpp-programming": "Direct HTTP403. Prior 45h51m duration/current paid contents not reverified; selective 15–25 hours is an author estimate. No purchased questions or lessons.",
+    "youtube-freecodecamp-cpp-beginner": "HTTP200 with only 203-character title/shell extraction. No transcript or playback read. Prior approximately 4h02m duration not reverified; title-level availability is not content review.",
+    "msvc-main": "Complete main-function page read. Standard int forms, arguments and fallthrough return reviewed; wmain, void-main, envp and Windows command-line conventions are implementation-specific. Portable nonnegative argc and sentinel contract taken from C++17 draft rather than MS-specific argc-at-least-one wording.",
+    "msvc-expressions": "Complete current precedence/associativity page read after correcting an initially guessed 404 URL; prior failed receipt preserved privately. Table used for grouping, not a general evaluation-order promise. Microsoft flags/alternative-keyword extensions not prescribed.",
+    "msvc-multiplicative": "Complete page read. Older implementation-defined remainder sign and opposite-sign wording do not describe the chosen C++17 rule; draft expr.mul resolves the discrepancy. No guaranteed runtime error promised for undefined division/overflow and no undefined cases executed.",
+    "msvc-vector": "Selected at, data, reserve and resize sections including examples read; other members and entire 47637-character document not audited. Reserve capacity versus size, checked access and contiguous ownership inform examples. Precise reallocation/pointer invalidation uses C++17 draft; allocator growth numbers in documentation are not portability guarantees.",
+    "msvc-string": "Selected at, substr and compare sections including examples read. The older const-only sentinel wording is reconciled against C++17 string.access for both overloads. Content comparisons, copied substring and checked access adopted; full 137505-character reference not audited.",
+    "msvc-static-cast": "Complete page read. Supported numeric and safe simple derived-to-base conversion used; no unchecked invalid downcast executed. Platform extensions and broad safety shorthand not adopted as portable guarantees.",
+    "msvc-dynamic-cast": "Read syntax, ordinary up/downcast material, null and failed pointer/reference behavior, and advanced hierarchy examples for context. Only simple public single inheritance with virtual destructor used. CLR/C++ extensions and invalid-source exception promises not adopted. No full class-design requirement added beyond explicit objective 3.5.",
+    "msvc-new-delete": "Complete page read. Ordinary throwing-new and matched single/array deletion inform original small allocations. Custom overload/allocator, obsolete or platform-specific prose and huge source allocations not adopted or executed. No allocation-failure simulation.",
+    "msvc-basic-istream": "Selected operator>> and ignore entries read, not full 22572-character class reference. Formatted integer prefix, failed-state handling and recovery tested. Documentation says numeric_limits<int>::max for ignore; C++17 specifies streamsize, which the original code uses. Member char-array getline is not confused with free std::string getline.",
+    "msvc-iomanip": "Complete setw entry and its examples read, not full header reference. Next numeric field and minimum-width behavior used. No claim all manipulators reset identically; broader precision/base examples not adopted.",
+    "compiler-explorer-api": "Direct GitHub health request timed out; complete public API documentation read via web reader. Compiler list and GCC 14.2/Clang 19.1 compile/execute endpoints actually used for original public programs only, no account, saved-code shortener or publishing action. Exact requests/results and code hashes captured. Remote execution is not local/offline compilation.",
+    "cpp17-multiplicative": "Complete N4659 expr.mul clause read via public rendering. C++17 integer division truncates toward zero, paired remainder identity requires representable quotient, and zero/unrepresentable division is undefined. Small positive/negative cases actually executed; undefined cases deliberately excluded.",
+    "cpp17-string-access": "Complete N4659 string.access clause read. operator[] permits read at size returning the null character, including empty string; non-null modification of sentinel is undefined. at(size) throws. Original code reads sentinel and catches checked failure, never writes or dereferences outside the contract.",
+    "cpp17-vector-capacity": "Complete N4659 vector.capacity clause read. Reserve leaves size unchanged, reallocates when requested capacity exceeds old capacity and invalidates all prior element addresses. Append within sufficient reserved capacity preserves prior element references. Original code discards pointer before forced reallocation; exact growth factor not assumed.",
+    "cpp17-execution": "Read N4659 execution text including implementation-defined/unspecified/undefined distinctions and sequencing paragraphs 14–18. Grouping differs from evaluation order; full-expression boundaries and conflicting unsequenced effects inform traces. Advanced abstract-machine examples were context, not executed or added syllabus.",
+    "cpp17-main": "Complete N4659 main clause read. Portable int forms, nonnegative argc, conditional argv[0] meaning, null argv[argc] and special implicit return 0 support objective 1.3 repair. Original workbook uses parameter form and safely checks sentinel; it does not read private environment variables or host command-line secrets.",
+    "cpp17-ignore": "Selected ignore paragraphs 25–27 and nearby getline/peek context read from N4659. Unlimited count uses numeric_limits<streamsize>::max(), and delimiter is extracted. Full unformatted stream chapter not audited. Tested recovery clears failure before consuming the line.",
+    "cpp17-string-io": "Complete N4659 string.io clause read. Formatted extraction stops before whitespace; free getline extracts its delimiter without appending it. Original in-memory streams exercise numeric extraction, leftover newline and subsequent full name. Linked sentry and locale chapters not fully audited."
+  },
+  "public_examples": [
+    {
+      "language": "cpp",
+      "code": "#include <iostream>\n\nint main() {\n    int count{3};\n    std::cout << count << '\\n';\n    return 0;\n}\n",
+      "sha256": "8adc469fc1bae5e603fa347b106622d6690ac304354ba475649ccee6c4515199"
+    },
+    {
+      "language": "cpp",
+      "code": "#include <iostream>\n\nint main() {\n    int quantity{};\n    if (!(std::cin >> quantity)) {\n        std::cerr << \"Quantity must be an integer\\n\";\n        return 1;\n    }\n    std::cout << \"Quantity: \" << quantity << '\\n';\n}\n",
+      "sha256": "e500e6dbdbaca5faae63f64a58af73710ac3b22e3365e94bc2de9088db949dd9"
+    },
+    {
+      "language": "cpp",
+      "code": "void add_fee_by_value(int amount) { amount += 5; }\nvoid add_fee_by_reference(int& amount) { amount += 5; }\nvoid add_fee_by_pointer(int* amount) {\n    if (amount != nullptr) {\n        *amount += 5;\n    }\n}\n",
+      "sha256": "5f84f699f07d0f0f83e60e4c196c834f47e481fde2a7546260725168f9037050"
+    },
+    {
+      "language": "cpp",
+      "code": "unsigned long long factorial(unsigned n) {\n    if (n <= 1) return 1;\n    return n * factorial(n - 1);\n}\n",
+      "sha256": "180a77c3deea0bbcb7dacf314af845252026491fe9902d46ea5d25996cd6e407"
+    },
+    {
+      "language": "cpp",
+      "code": "int* values = new int[3]{4, 5, 6};\nint total = values[0] + values[1] + values[2];\ndelete[] values;\nvalues = nullptr;\n",
+      "sha256": "d7c7d030ff370a73be90e487b5e533ca831d36b74160942a94ec0bee470bd402"
+    },
+    {
+      "language": "cpp",
+      "code": "#include <iostream>\n#include <string>\n#include <vector>\n\nstruct Product {\n    int id;\n    std::string name;\n    double price;\n};\n\nint main() {\n    std::vector<Product> products{\n        {101, \"Cable\", 8.50},\n        {102, \"Adapter\", 14.00}\n    };\n    products[0].price += 1.00;\n    std::cout << products[0].price << '\\n';\n    return 0;\n}\n",
+      "sha256": "f0d0809d488a377823fa3441caa6b942043bf861c558911726d0b42c7b073f3c"
+    },
+    {
+      "language": "cpp",
+      "code": "#include <iomanip>\n#include <iostream>\n#include <limits>\n#include <sstream>\n#include <stdexcept>\n#include <string>\n#include <typeinfo>\n#include <vector>\n\nint checks = 0;\nvoid check(bool condition, const char* name) {\n    if (!condition) throw std::runtime_error(name);\n    ++checks;\n}\nbool whole_int(const std::string& line, int& value) {\n    std::istringstream input(line);\n    int candidate{};\n    if (!(input >> candidate)) return false;\n    input >> std::ws;\n    if (!input.eof()) return false;\n    value = candidate;\n    return true;\n}\nint by_value(int n) { n += 5; return n; }\nvoid by_reference(int& n) { n += 5; }\nvoid by_pointer(int* n) { if (n != nullptr) *n += 5; }\nvoid reseat_copy(int* n) { n = nullptr; (void)n; }\nstruct Reading { virtual ~Reading() = default; };\nstruct Temperature : Reading { int value{21}; };\nstruct Pressure : Reading {};\nstruct Counted {\n    static int destroyed;\n    ~Counted() { ++destroyed; }\n};\nint Counted::destroyed = 0;\n\nint main(int argc, char* argv[]) {\n    check(argc >= 0 && argv[argc] == nullptr, \"main argument sentinel\");\n    int initialized{};\n    initialized = 3;\n    check(initialized == 3, \"initialization then assignment\");\n    check(sizeof(char) == 1, \"sizeof char is one C++ byte\");\n    check(true && 'A' != 'B' && 42u == 42 && 3.5f == 3.5,\n          \"literal categories with exactly representable values\");\n    check(11 / 4 == 2 && 11 % 4 == 3, \"positive quotient and remainder\");\n    check(-11 / 4 == -2 && -11 % 4 == -3 && 11 % -4 == 3,\n          \"negative operands truncate toward zero\");\n    check(static_cast<double>(11) / 4 == 2.75, \"cast before division\");\n    check(static_cast<double>(11 / 4) == 2.0, \"cast after division\");\n    check(2 + 3 * 4 == 14 && (2 + 3) * 4 == 20, \"precedence\");\n    check(20 - 6 - 2 == 12, \"left grouping\");\n    int left{}, right{};\n    left = right = 7;\n    check(left == 7 && right == 7, \"right grouping of assignment\");\n    check((6u & 3u) == 2u && (6u | 3u) == 7u && (6u ^ 3u) == 5u,\n          \"unsigned bitwise operations\");\n    check((1u << 3) == 8u && (8u >> 2) == 2u, \"safe shift counts\");\n    check(!false && 3 < 4 && 4 >= 4 && 4 != 5, \"logical and comparisons\");\n    int count{4};\n    int old = count++;\n    int fresh = ++count;\n    check(old == 4 && fresh == 6 && count == 6, \"separate increments\");\n    count += 3;\n    count *= 2;\n    check(count == 18, \"compound assignment\");\n    int calls{};\n    bool stop_and = false && (++calls > 0);\n    bool stop_or = true || (++calls > 0);\n    check(!stop_and && stop_or && calls == 0, \"short circuit skips work\");\n    bool called = true && (++calls > 0);\n    check(called && calls == 1, \"right side runs when needed\");\n    int parsed{99};\n    check(whole_int(\"  +12  \", parsed) && parsed == 12, \"whole integer\");\n    check(whole_int(\"-3\", parsed) && parsed == -3, \"negative integer\");\n    check(whole_int(\"0\", parsed) && parsed == 0, \"zero integer\");\n    for (const std::string& bad : std::vector<std::string>{\n            \"\", \"   \", \"word\", \"12x\", \"2.5\", \"1 2\",\n            \"999999999999999999999999999999\"}) {\n        parsed = 77;\n        check(!whole_int(bad, parsed) && parsed == 77,\n              \"invalid line preserves destination\");\n    }\n    std::istringstream prefix(\"12x\");\n    prefix >> parsed;\n    check(parsed == 12 && !prefix.fail() && prefix.peek() == 'x',\n          \"formatted numeric prefix is accepted\");\n    std::istringstream recovery(\"word\\n17\\n\");\n    recovery >> parsed;\n    check(recovery.fail(), \"failed numeric extraction\");\n    recovery.clear();\n    recovery.ignore(std::numeric_limits<std::streamsize>::max(), '\\n');\n    recovery >> parsed;\n    check(parsed == 17 && !recovery.fail(), \"clear and consume bad line\");\n    std::istringstream lines(\"5\\nAda Lovelace\\n\");\n    std::string name;\n    lines >> parsed;\n    std::getline(lines, name);\n    check(name.empty(), \"leftover newline gives empty line\");\n    std::getline(lines, name);\n    check(name == \"Ada Lovelace\", \"whole line retains spaces\");\n    std::ostringstream formatted;\n    formatted << std::setw(4) << 7 << 8;\n    check(formatted.str() == \"   78\", \"setw applies to next numeric field\");\n    int branch{};\n    if (parsed < 0) branch = -1;\n    else if (parsed == 5) branch = 1;\n    else branch = 2;\n    check(branch == 1, \"one conditional branch\");\n    int sum{};\n    for (int i = 0; i < 6; ++i) {\n        if (i == 2) continue;\n        if (i == 5) break;\n        sum += i;\n    }\n    check(sum == 8, \"for continue update and break\");\n    int visits{};\n    while (visits < 0) ++visits;\n    check(visits == 0, \"while can run zero times\");\n    do { ++visits; } while (visits < 0);\n    check(visits == 1, \"do body runs once\");\n    int selected{};\n    switch (2) {\n        case 1: selected = 10; break;\n        case 2: selected += 2; [[fallthrough]];\n        default: selected += 3;\n    }\n    check(selected == 5, \"deliberate switch fallthrough\");\n    int marker{};\n    goto finish_trace;\n    marker = 99;\nfinish_trace:\n    check(marker == 0, \"label within one function\");\n    int amount{10};\n    int returned = by_value(amount);\n    check(returned == 15 && amount == 10, \"value parameter has own integer\");\n    by_reference(amount);\n    check(amount == 15, \"reference aliases caller\");\n    by_pointer(&amount);\n    check(amount == 20, \"pointer changes pointee\");\n    by_pointer(nullptr);\n    check(amount == 20, \"null is explicitly handled\");\n    int* pointer = &amount;\n    reseat_copy(pointer);\n    check(pointer == &amount, \"pointer parameter itself is copied\");\n    { int amount{8}; check(amount == 8, \"inner shadow\"); }\n    check(amount == 20, \"outer object survives inner scope\");\n    int grid[2][3]{{1, 2, 3}, {4, 5, 6}};\n    sum = 0;\n    for (const auto& row : grid) for (int cell : row) sum += cell;\n    check(sum == 21 && grid[1][2] == 6, \"multidimensional bounds\");\n    std::vector<int> values{4, 5};\n    values.reserve(8);\n    check(values.size() == 2 && values.capacity() >= 8, \"reserve keeps size\");\n    int* first = values.data();\n    values.push_back(6);\n    check(first == values.data() && *first == 4, \"reserved append keeps pointer\");\n    values.resize(5);\n    check(values.size() == 5 && values[3] == 0 && values[4] == 0,\n          \"resize creates initialized elements\");\n    first = nullptr;\n    auto previous_capacity = values.capacity();\n    values.reserve(previous_capacity + 1);\n    check(values.capacity() > previous_capacity && values[0] == 4,\n          \"forced reallocation; discarded old pointer is never used\");\n    bool bounds = false;\n    try { (void)values.at(values.size()); }\n    catch (const std::out_of_range&) { bounds = true; }\n    check(bounds, \"vector checked boundary\");\n    const int* read_only = &amount;\n    int* const fixed_pointer = &amount;\n    *fixed_pointer = 22;\n    check(*read_only == 22, \"pointee constness differs from pointer constness\");\n    Temperature temperature;\n    Reading* base = static_cast<Reading*>(&temperature);\n    check(dynamic_cast<Temperature*>(base) == &temperature, \"checked downcast\");\n    check(dynamic_cast<Pressure*>(base) == nullptr, \"wrong pointer type fails\");\n    Reading* absent = nullptr;\n    check(dynamic_cast<Temperature*>(absent) == nullptr, \"null cast stays null\");\n    bool bad_cast = false;\n    try { (void)dynamic_cast<Pressure&>(*base); }\n    catch (const std::bad_cast&) { bad_cast = true; }\n    check(bad_cast, \"wrong reference type throws\");\n    int* single = new int{9};\n    check(*single == 9, \"single allocation\");\n    delete single;\n    single = nullptr;\n    check(single == nullptr, \"owner variable cleared after deletion\");\n    int* buffer = new int[3]{4, 5, 6};\n    check(buffer[0] + buffer[1] + buffer[2] == 15, \"array allocation\");\n    delete[] buffer;\n    buffer = nullptr;\n    Counted* owned = new Counted[3];\n    delete[] owned;\n    check(Counted::destroyed == 3, \"array deletion calls each destructor\");\n    std::string empty;\n    check(empty.empty() && empty.size() == 0 && empty[0] == '\\0',\n          \"C++17 empty string sentinel read\");\n    bounds = false;\n    try { (void)empty.at(0); }\n    catch (const std::out_of_range&) { bounds = true; }\n    check(bounds, \"empty string has no content element\");\n    std::string text{\"Ada\"};\n    text += \" Lovelace\";\n    check(text.size() == 12 && text.substr(4, 8) == \"Lovelace\", \"append and slice\");\n    check(std::string(\"12\") < std::string(\"2\"), \"text comparison is not numeric\");\n    std::string copy = text;\n    copy[0] = 'E';\n    check(text[0] == 'A' && copy[0] == 'E', \"string value copy\");\n    std::cout << checks << \" checks passed\\n\";\n}\n",
+      "sha256": "d2c153a78f98e27615ec31ab9aec69f02695ac7c3a7a3f2c69bb08768d79cc93"
+    },
+    {
+      "language": "cpp",
+      "code": "#include <iomanip>\n#include <iostream>\n#include <sstream>\n#include <string>\n#include <vector>\n\nstruct Product {\n    int id;\n    std::string name;\n    long long price_cents;\n};\nbool valid_catalog(const std::vector<Product>& products) {\n    for (std::size_t i = 0; i < products.size(); ++i) {\n        if (products[i].id <= 0 || products[i].name.empty() ||\n            products[i].price_cents < 0 || products[i].price_cents > 1000000)\n            return false;\n        for (std::size_t j = 0; j < i; ++j)\n            if (products[i].id == products[j].id) return false;\n    }\n    return true;\n}\nstd::string quote(const std::vector<Product>& products, int id, int quantity,\n                  long long& total) {\n    if (!valid_catalog(products)) return \"Invalid catalog\";\n    if (quantity < 1 || quantity > 1000) return \"Quantity must be 1..1000\";\n    for (const Product& product : products) {\n        if (product.id == id) {\n            total = product.price_cents * quantity;\n            return \"OK\";\n        }\n    }\n    return \"Unknown product\";\n}\nint main() {\n    const std::vector<Product> products{{101, \"Cable\", 850}, {102, \"Adapter\", 1400}};\n    std::string line;\n    int id{}, quantity{};\n    if (!std::getline(std::cin, line)) {\n        std::cerr << \"Missing request\\n\";\n        return 1;\n    }\n    std::istringstream input(line);\n    if (!(input >> id >> quantity)) {\n        std::cerr << \"Use: product-id quantity\\n\";\n        return 1;\n    }\n    input >> std::ws;\n    if (!input.eof()) {\n        std::cerr << \"Unexpected trailing input\\n\";\n        return 1;\n    }\n    long long total{};\n    std::string status = quote(products, id, quantity, total);\n    if (status != \"OK\") {\n        std::cerr << status << '\\n';\n        return 1;\n    }\n    std::cout << \"ID \" << std::setw(3) << id << \" cents \" << total << '\\n';\n    return 0;\n}\n",
+      "sha256": "3634a3383245bf2aeb8fea8bab050318ed5acde6df28d7e00ceec9338d42140b"
+    },
+    {
+      "language": "cpp",
+      "code": "#include <cstddef>\n#include <iostream>\n#include <vector>\n\n// Contract: at most 100 readings, each in -1000..1000.\n// A non-null data pointer must designate at least count live elements.\nbool summarize(const int* data, std::size_t count, long long& total, int* highest) {\n    if (count == 0 || count > 100 || data == nullptr) return false;\n    long long candidate_total{};\n    int candidate_high = data[0];\n    for (std::size_t i = 0; i < count; ++i) {\n        if (data[i] < -1000 || data[i] > 1000) return false;\n        candidate_total += data[i];\n        if (data[i] > candidate_high) candidate_high = data[i];\n    }\n    total = candidate_total;\n    if (highest != nullptr) *highest = candidate_high;\n    return true;\n}\nint main() {\n    int fixed[3]{12, 18, 23};\n    std::vector<int> owned{12, 18, 23};\n    long long total{};\n    int highest{};\n    if (!summarize(fixed, 3, total, &highest)) return 1;\n    std::cout << \"array \" << total << ' ' << highest << '\\n';\n    if (!summarize(owned.data(), owned.size(), total, &highest)) return 1;\n    std::cout << \"vector \" << total << ' ' << highest << '\\n';\n    owned.reserve(10);\n    int* saved = owned.data();\n    owned.push_back(24); // Fits reserved capacity; saved still designates first element.\n    std::cout << \"first \" << *saved << '\\n';\n    saved = nullptr;\n    owned.reserve(owned.capacity() + 1); // Reallocates; old addresses are discarded.\n    if (!summarize(owned.data(), owned.size(), total, nullptr)) return 1;\n    std::cout << \"expanded \" << total << '\\n';\n    return 0;\n}\n",
+      "sha256": "be9cd098a881c9a5ae614f5e1f928cf75b0b802129694048ff2ca8d9c5583b4f"
+    },
+    {
+      "language": "cpp",
+      "code": "#include <iostream>\n#include <sstream>\n#include <string>\n\n// Caller establishes n <= 12. This bound also keeps recursion deliberately small.\nunsigned long long factorial(unsigned n) {\n    if (n <= 1) return 1;\n    return n * factorial(n - 1);\n}\nint main() {\n    bool running = true;\n    do {\n        std::string line;\n        if (!std::getline(std::cin, line)) return 0;\n        std::istringstream input(line);\n        char choice{};\n        long long a{}, b{};\n        if (!(input >> choice)) {\n            std::cerr << \"Missing choice\\n\";\n            return 1;\n        }\n        if (choice == 's' || choice == 'p') {\n            if (!(input >> a >> b) || a < -1000 || a > 1000 || b < -1000 || b > 1000) {\n                std::cerr << \"Use two integers in -1000..1000\\n\";\n                return 1;\n            }\n        } else if (choice == 'f') {\n            if (!(input >> a) || a < 0 || a > 12) {\n                std::cerr << \"Factorial needs 0..12\\n\";\n                return 1;\n            }\n        }\n        input >> std::ws;\n        if (!input.eof()) {\n            std::cerr << \"Unexpected trailing input\\n\";\n            return 1;\n        }\n        switch (choice) {\n            case 's': std::cout << a + b << '\\n'; break;\n            case 'p': std::cout << a * b << '\\n'; break;\n            case 'f': std::cout << factorial(static_cast<unsigned>(a)) << '\\n'; break;\n            case 'q': running = false; break;\n            default: std::cerr << \"Unknown choice\\n\"; return 1;\n        }\n    } while (running);\n    return 0;\n}\n",
+      "sha256": "fa832a66e99cd021604cb26e04e509e9fa0842b6cccbfb802f14df5f55532f69"
+    }
+  ],
+  "remote_execution_receipts": [
+    {
+      "name": "hello",
+      "context": "complete public program",
+      "checked_at": "2026-09-29T20:09:50.328986+00:00",
+      "url": "https://godbolt.org/api/compiler/g142/compile",
+      "source_sha256": "8adc469fc1bae5e603fa347b106622d6690ac304354ba475649ccee6c4515199",
+      "request": {
+        "source": "#include <iostream>\n\nint main() {\n    int count{3};\n    std::cout << count << '\\n';\n    return 0;\n}\n",
+        "lang": "c++",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c++17 -Wall -Wextra -pedantic",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": ""
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "3"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 39,
+        "processExecutionResultTime": 0.01722100004553795,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.cpp",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 715,
+          "processExecutionResultTime": 0.0017360001802444458,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compiler9QBfl9/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "-fdiagnostics-color=always",
+            "-std=c++17",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "/app/example.cpp",
+            "-L./lib",
+            "-Wl,-rpath,./lib",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib64",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib32"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/gcc-14.2.0/lib",
+            "/opt/compiler-explorer/gcc-14.2.0/lib32",
+            "/opt/compiler-explorer/gcc-14.2.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 43
+        },
+        "queueTime": 264
+      }
+    },
+    {
+      "name": "quantity-prefix",
+      "context": "complete public program",
+      "checked_at": "2026-09-29T20:09:50.181349+00:00",
+      "url": "https://godbolt.org/api/compiler/g142/compile",
+      "source_sha256": "e500e6dbdbaca5faae63f64a58af73710ac3b22e3365e94bc2de9088db949dd9",
+      "request": {
+        "source": "#include <iostream>\n\nint main() {\n    int quantity{};\n    if (!(std::cin >> quantity)) {\n        std::cerr << \"Quantity must be an integer\\n\";\n        return 1;\n    }\n    std::cout << \"Quantity: \" << quantity << '\\n';\n}\n",
+        "lang": "c++",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c++17 -Wall -Wextra -pedantic",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": "12x\n"
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "Quantity: 12"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 29,
+        "processExecutionResultTime": 0.017238999949768186,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.cpp",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 499,
+          "processExecutionResultTime": 0.00431900005787611,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compilerA4hZYz/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "-fdiagnostics-color=always",
+            "-std=c++17",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "/app/example.cpp",
+            "-L./lib",
+            "-Wl,-rpath,./lib",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib64",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib32"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/gcc-14.2.0/lib",
+            "/opt/compiler-explorer/gcc-14.2.0/lib32",
+            "/opt/compiler-explorer/gcc-14.2.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 53
+        },
+        "queueTime": 249
+      }
+    },
+    {
+      "name": "parameters",
+      "context": "exact public function fragment plus calling main",
+      "checked_at": "2026-09-29T20:09:51.041866+00:00",
+      "url": "https://godbolt.org/api/compiler/g142/compile",
+      "source_sha256": "22ddd544e93249cb650e2306f10b35db7a8f07294ea058fe6fdbb8b453e007e1",
+      "request": {
+        "source": "void add_fee_by_value(int amount) { amount += 5; }\nvoid add_fee_by_reference(int& amount) { amount += 5; }\nvoid add_fee_by_pointer(int* amount) {\n    if (amount != nullptr) {\n        *amount += 5;\n    }\n}\n\n#include <iostream>\nint main() {\n int amount=10; add_fee_by_value(amount);\n if (amount!=10) return 1;\n add_fee_by_reference(amount); if(amount!=15) return 1;\n add_fee_by_pointer(&amount); if(amount!=20) return 1;\n add_fee_by_pointer(nullptr); if(amount!=20) return 1;\n std::cout << \"4 parameter checks passed\\n\";\n}\n",
+        "lang": "c++",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c++17 -Wall -Wextra -pedantic",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": ""
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "4 parameter checks passed"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 26,
+        "processExecutionResultTime": 0.028839000035077333,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.cpp",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 471,
+          "processExecutionResultTime": 0.007258000085130334,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compilerA0grdO/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "-fdiagnostics-color=always",
+            "-std=c++17",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "/app/example.cpp",
+            "-L./lib",
+            "-Wl,-rpath,./lib",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib64",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib32"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/gcc-14.2.0/lib",
+            "/opt/compiler-explorer/gcc-14.2.0/lib32",
+            "/opt/compiler-explorer/gcc-14.2.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 43
+        },
+        "queueTime": 8
+      }
+    },
+    {
+      "name": "factorial",
+      "context": "exact public function fragment plus bounded calling main",
+      "checked_at": "2026-09-29T20:09:51.210255+00:00",
+      "url": "https://godbolt.org/api/compiler/g142/compile",
+      "source_sha256": "fc3da1a3a6bfc09a198f6fe11a15ff3b3e3e95cf4843c5571d343d7640c91290",
+      "request": {
+        "source": "unsigned long long factorial(unsigned n) {\n    if (n <= 1) return 1;\n    return n * factorial(n - 1);\n}\n\n#include <iostream>\nint main() {\n unsigned long long expected[]{1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600};\n for (unsigned n=0;n<=12;++n) if(factorial(n)!=expected[n]) return 1;\n std::cout << \"13 factorial checks passed\\n\";\n}\n",
+        "lang": "c++",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c++17 -Wall -Wextra -pedantic",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": ""
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "13 factorial checks passed"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 19,
+        "processExecutionResultTime": 0.01773100020363927,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.cpp",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 518,
+          "processExecutionResultTime": 0.005384000018239021,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compilerMclReQ/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "-fdiagnostics-color=always",
+            "-std=c++17",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "/app/example.cpp",
+            "-L./lib",
+            "-Wl,-rpath,./lib",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib64",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib32"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/gcc-14.2.0/lib",
+            "/opt/compiler-explorer/gcc-14.2.0/lib32",
+            "/opt/compiler-explorer/gcc-14.2.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 38
+        },
+        "queueTime": 5
+      }
+    },
+    {
+      "name": "allocation",
+      "context": "exact public statement fragment inside main; total checked after deletion",
+      "checked_at": "2026-09-29T20:09:51.925700+00:00",
+      "url": "https://godbolt.org/api/compiler/g142/compile",
+      "source_sha256": "acebcf793c4bb647d80aefc3b42b2d07dfc2a7d6b150d9437a5c0bf087b52723",
+      "request": {
+        "source": "#include <iostream>\nint main() {\nint* values = new int[3]{4, 5, 6};\nint total = values[0] + values[1] + values[2];\ndelete[] values;\nvalues = nullptr;\n\nif(total!=15 || values!=nullptr) return 1;\nstd::cout << \"15 released\\n\";\n}\n",
+        "lang": "c++",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c++17 -Wall -Wextra -pedantic",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": ""
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "15 released"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 25,
+        "processExecutionResultTime": 0.016675999388098717,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.cpp",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 490,
+          "processExecutionResultTime": 0.0017290003597736359,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compilerI46EhQ/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "-fdiagnostics-color=always",
+            "-std=c++17",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "/app/example.cpp",
+            "-L./lib",
+            "-Wl,-rpath,./lib",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib64",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib32"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/gcc-14.2.0/lib",
+            "/opt/compiler-explorer/gcc-14.2.0/lib32",
+            "/opt/compiler-explorer/gcc-14.2.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 58
+        },
+        "queueTime": 6
+      }
+    },
+    {
+      "name": "product",
+      "context": "complete public program",
+      "checked_at": "2026-09-29T20:09:52.334793+00:00",
+      "url": "https://godbolt.org/api/compiler/g142/compile",
+      "source_sha256": "f0d0809d488a377823fa3441caa6b942043bf861c558911726d0b42c7b073f3c",
+      "request": {
+        "source": "#include <iostream>\n#include <string>\n#include <vector>\n\nstruct Product {\n    int id;\n    std::string name;\n    double price;\n};\n\nint main() {\n    std::vector<Product> products{\n        {101, \"Cable\", 8.50},\n        {102, \"Adapter\", 14.00}\n    };\n    products[0].price += 1.00;\n    std::cout << products[0].price << '\\n';\n    return 0;\n}\n",
+        "lang": "c++",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c++17 -Wall -Wextra -pedantic",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": ""
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "9.5"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 26,
+        "processExecutionResultTime": 0.012028001248836517,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.cpp",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 686,
+          "processExecutionResultTime": 0.0018130000680685043,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compilerUD5wJM/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "-fdiagnostics-color=always",
+            "-std=c++17",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "/app/example.cpp",
+            "-L./lib",
+            "-Wl,-rpath,./lib",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib64",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib32"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/gcc-14.2.0/lib",
+            "/opt/compiler-explorer/gcc-14.2.0/lib32",
+            "/opt/compiler-explorer/gcc-14.2.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 43
+        },
+        "queueTime": 4
+      }
+    },
+    {
+      "name": "workbook-gcc",
+      "context": "complete public program",
+      "checked_at": "2026-09-29T20:13:55.500647+00:00",
+      "url": "https://godbolt.org/api/compiler/g142/compile",
+      "source_sha256": "d2c153a78f98e27615ec31ab9aec69f02695ac7c3a7a3f2c69bb08768d79cc93",
+      "request": {
+        "source": "#include <iomanip>\n#include <iostream>\n#include <limits>\n#include <sstream>\n#include <stdexcept>\n#include <string>\n#include <typeinfo>\n#include <vector>\n\nint checks = 0;\nvoid check(bool condition, const char* name) {\n    if (!condition) throw std::runtime_error(name);\n    ++checks;\n}\nbool whole_int(const std::string& line, int& value) {\n    std::istringstream input(line);\n    int candidate{};\n    if (!(input >> candidate)) return false;\n    input >> std::ws;\n    if (!input.eof()) return false;\n    value = candidate;\n    return true;\n}\nint by_value(int n) { n += 5; return n; }\nvoid by_reference(int& n) { n += 5; }\nvoid by_pointer(int* n) { if (n != nullptr) *n += 5; }\nvoid reseat_copy(int* n) { n = nullptr; (void)n; }\nstruct Reading { virtual ~Reading() = default; };\nstruct Temperature : Reading { int value{21}; };\nstruct Pressure : Reading {};\nstruct Counted {\n    static int destroyed;\n    ~Counted() { ++destroyed; }\n};\nint Counted::destroyed = 0;\n\nint main(int argc, char* argv[]) {\n    check(argc >= 0 && argv[argc] == nullptr, \"main argument sentinel\");\n    int initialized{};\n    initialized = 3;\n    check(initialized == 3, \"initialization then assignment\");\n    check(sizeof(char) == 1, \"sizeof char is one C++ byte\");\n    check(true && 'A' != 'B' && 42u == 42 && 3.5f == 3.5,\n          \"literal categories with exactly representable values\");\n    check(11 / 4 == 2 && 11 % 4 == 3, \"positive quotient and remainder\");\n    check(-11 / 4 == -2 && -11 % 4 == -3 && 11 % -4 == 3,\n          \"negative operands truncate toward zero\");\n    check(static_cast<double>(11) / 4 == 2.75, \"cast before division\");\n    check(static_cast<double>(11 / 4) == 2.0, \"cast after division\");\n    check(2 + 3 * 4 == 14 && (2 + 3) * 4 == 20, \"precedence\");\n    check(20 - 6 - 2 == 12, \"left grouping\");\n    int left{}, right{};\n    left = right = 7;\n    check(left == 7 && right == 7, \"right grouping of assignment\");\n    check((6u & 3u) == 2u && (6u | 3u) == 7u && (6u ^ 3u) == 5u,\n          \"unsigned bitwise operations\");\n    check((1u << 3) == 8u && (8u >> 2) == 2u, \"safe shift counts\");\n    check(!false && 3 < 4 && 4 >= 4 && 4 != 5, \"logical and comparisons\");\n    int count{4};\n    int old = count++;\n    int fresh = ++count;\n    check(old == 4 && fresh == 6 && count == 6, \"separate increments\");\n    count += 3;\n    count *= 2;\n    check(count == 18, \"compound assignment\");\n    int calls{};\n    bool stop_and = false && (++calls > 0);\n    bool stop_or = true || (++calls > 0);\n    check(!stop_and && stop_or && calls == 0, \"short circuit skips work\");\n    bool called = true && (++calls > 0);\n    check(called && calls == 1, \"right side runs when needed\");\n    int parsed{99};\n    check(whole_int(\"  +12  \", parsed) && parsed == 12, \"whole integer\");\n    check(whole_int(\"-3\", parsed) && parsed == -3, \"negative integer\");\n    check(whole_int(\"0\", parsed) && parsed == 0, \"zero integer\");\n    for (const std::string& bad : std::vector<std::string>{\n            \"\", \"   \", \"word\", \"12x\", \"2.5\", \"1 2\",\n            \"999999999999999999999999999999\"}) {\n        parsed = 77;\n        check(!whole_int(bad, parsed) && parsed == 77,\n              \"invalid line preserves destination\");\n    }\n    std::istringstream prefix(\"12x\");\n    prefix >> parsed;\n    check(parsed == 12 && !prefix.fail() && prefix.peek() == 'x',\n          \"formatted numeric prefix is accepted\");\n    std::istringstream recovery(\"word\\n17\\n\");\n    recovery >> parsed;\n    check(recovery.fail(), \"failed numeric extraction\");\n    recovery.clear();\n    recovery.ignore(std::numeric_limits<std::streamsize>::max(), '\\n');\n    recovery >> parsed;\n    check(parsed == 17 && !recovery.fail(), \"clear and consume bad line\");\n    std::istringstream lines(\"5\\nAda Lovelace\\n\");\n    std::string name;\n    lines >> parsed;\n    std::getline(lines, name);\n    check(name.empty(), \"leftover newline gives empty line\");\n    std::getline(lines, name);\n    check(name == \"Ada Lovelace\", \"whole line retains spaces\");\n    std::ostringstream formatted;\n    formatted << std::setw(4) << 7 << 8;\n    check(formatted.str() == \"   78\", \"setw applies to next numeric field\");\n    int branch{};\n    if (parsed < 0) branch = -1;\n    else if (parsed == 5) branch = 1;\n    else branch = 2;\n    check(branch == 1, \"one conditional branch\");\n    int sum{};\n    for (int i = 0; i < 6; ++i) {\n        if (i == 2) continue;\n        if (i == 5) break;\n        sum += i;\n    }\n    check(sum == 8, \"for continue update and break\");\n    int visits{};\n    while (visits < 0) ++visits;\n    check(visits == 0, \"while can run zero times\");\n    do { ++visits; } while (visits < 0);\n    check(visits == 1, \"do body runs once\");\n    int selected{};\n    switch (2) {\n        case 1: selected = 10; break;\n        case 2: selected += 2; [[fallthrough]];\n        default: selected += 3;\n    }\n    check(selected == 5, \"deliberate switch fallthrough\");\n    int marker{};\n    goto finish_trace;\n    marker = 99;\nfinish_trace:\n    check(marker == 0, \"label within one function\");\n    int amount{10};\n    int returned = by_value(amount);\n    check(returned == 15 && amount == 10, \"value parameter has own integer\");\n    by_reference(amount);\n    check(amount == 15, \"reference aliases caller\");\n    by_pointer(&amount);\n    check(amount == 20, \"pointer changes pointee\");\n    by_pointer(nullptr);\n    check(amount == 20, \"null is explicitly handled\");\n    int* pointer = &amount;\n    reseat_copy(pointer);\n    check(pointer == &amount, \"pointer parameter itself is copied\");\n    { int amount{8}; check(amount == 8, \"inner shadow\"); }\n    check(amount == 20, \"outer object survives inner scope\");\n    int grid[2][3]{{1, 2, 3}, {4, 5, 6}};\n    sum = 0;\n    for (const auto& row : grid) for (int cell : row) sum += cell;\n    check(sum == 21 && grid[1][2] == 6, \"multidimensional bounds\");\n    std::vector<int> values{4, 5};\n    values.reserve(8);\n    check(values.size() == 2 && values.capacity() >= 8, \"reserve keeps size\");\n    int* first = values.data();\n    values.push_back(6);\n    check(first == values.data() && *first == 4, \"reserved append keeps pointer\");\n    values.resize(5);\n    check(values.size() == 5 && values[3] == 0 && values[4] == 0,\n          \"resize creates initialized elements\");\n    first = nullptr;\n    auto previous_capacity = values.capacity();\n    values.reserve(previous_capacity + 1);\n    check(values.capacity() > previous_capacity && values[0] == 4,\n          \"forced reallocation; discarded old pointer is never used\");\n    bool bounds = false;\n    try { (void)values.at(values.size()); }\n    catch (const std::out_of_range&) { bounds = true; }\n    check(bounds, \"vector checked boundary\");\n    const int* read_only = &amount;\n    int* const fixed_pointer = &amount;\n    *fixed_pointer = 22;\n    check(*read_only == 22, \"pointee constness differs from pointer constness\");\n    Temperature temperature;\n    Reading* base = static_cast<Reading*>(&temperature);\n    check(dynamic_cast<Temperature*>(base) == &temperature, \"checked downcast\");\n    check(dynamic_cast<Pressure*>(base) == nullptr, \"wrong pointer type fails\");\n    Reading* absent = nullptr;\n    check(dynamic_cast<Temperature*>(absent) == nullptr, \"null cast stays null\");\n    bool bad_cast = false;\n    try { (void)dynamic_cast<Pressure&>(*base); }\n    catch (const std::bad_cast&) { bad_cast = true; }\n    check(bad_cast, \"wrong reference type throws\");\n    int* single = new int{9};\n    check(*single == 9, \"single allocation\");\n    delete single;\n    single = nullptr;\n    check(single == nullptr, \"owner variable cleared after deletion\");\n    int* buffer = new int[3]{4, 5, 6};\n    check(buffer[0] + buffer[1] + buffer[2] == 15, \"array allocation\");\n    delete[] buffer;\n    buffer = nullptr;\n    Counted* owned = new Counted[3];\n    delete[] owned;\n    check(Counted::destroyed == 3, \"array deletion calls each destructor\");\n    std::string empty;\n    check(empty.empty() && empty.size() == 0 && empty[0] == '\\0',\n          \"C++17 empty string sentinel read\");\n    bounds = false;\n    try { (void)empty.at(0); }\n    catch (const std::out_of_range&) { bounds = true; }\n    check(bounds, \"empty string has no content element\");\n    std::string text{\"Ada\"};\n    text += \" Lovelace\";\n    check(text.size() == 12 && text.substr(4, 8) == \"Lovelace\", \"append and slice\");\n    check(std::string(\"12\") < std::string(\"2\"), \"text comparison is not numeric\");\n    std::string copy = text;\n    copy[0] = 'E';\n    check(text[0] == 'A' && copy[0] == 'E', \"string value copy\");\n    std::cout << checks << \" checks passed\\n\";\n}\n",
+        "lang": "c++",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c++17 -Wall -Wextra -pedantic",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": ""
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "67 checks passed"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 49,
+        "processExecutionResultTime": 0.029373999685049057,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.cpp",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 748,
+          "processExecutionResultTime": 0.004042999818921089,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compilervHWbba/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "-fdiagnostics-color=always",
+            "-std=c++17",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "/app/example.cpp",
+            "-L./lib",
+            "-Wl,-rpath,./lib",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib64",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib32"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/gcc-14.2.0/lib",
+            "/opt/compiler-explorer/gcc-14.2.0/lib32",
+            "/opt/compiler-explorer/gcc-14.2.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 81
+        },
+        "queueTime": 5
+      }
+    },
+    {
+      "name": "inventory",
+      "context": "complete public program",
+      "checked_at": "2026-09-29T20:09:53.441852+00:00",
+      "url": "https://godbolt.org/api/compiler/g142/compile",
+      "source_sha256": "3634a3383245bf2aeb8fea8bab050318ed5acde6df28d7e00ceec9338d42140b",
+      "request": {
+        "source": "#include <iomanip>\n#include <iostream>\n#include <sstream>\n#include <string>\n#include <vector>\n\nstruct Product {\n    int id;\n    std::string name;\n    long long price_cents;\n};\nbool valid_catalog(const std::vector<Product>& products) {\n    for (std::size_t i = 0; i < products.size(); ++i) {\n        if (products[i].id <= 0 || products[i].name.empty() ||\n            products[i].price_cents < 0 || products[i].price_cents > 1000000)\n            return false;\n        for (std::size_t j = 0; j < i; ++j)\n            if (products[i].id == products[j].id) return false;\n    }\n    return true;\n}\nstd::string quote(const std::vector<Product>& products, int id, int quantity,\n                  long long& total) {\n    if (!valid_catalog(products)) return \"Invalid catalog\";\n    if (quantity < 1 || quantity > 1000) return \"Quantity must be 1..1000\";\n    for (const Product& product : products) {\n        if (product.id == id) {\n            total = product.price_cents * quantity;\n            return \"OK\";\n        }\n    }\n    return \"Unknown product\";\n}\nint main() {\n    const std::vector<Product> products{{101, \"Cable\", 850}, {102, \"Adapter\", 1400}};\n    std::string line;\n    int id{}, quantity{};\n    if (!std::getline(std::cin, line)) {\n        std::cerr << \"Missing request\\n\";\n        return 1;\n    }\n    std::istringstream input(line);\n    if (!(input >> id >> quantity)) {\n        std::cerr << \"Use: product-id quantity\\n\";\n        return 1;\n    }\n    input >> std::ws;\n    if (!input.eof()) {\n        std::cerr << \"Unexpected trailing input\\n\";\n        return 1;\n    }\n    long long total{};\n    std::string status = quote(products, id, quantity, total);\n    if (status != \"OK\") {\n        std::cerr << status << '\\n';\n        return 1;\n    }\n    std::cout << \"ID \" << std::setw(3) << id << \" cents \" << total << '\\n';\n    return 0;\n}\n",
+        "lang": "c++",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c++17 -Wall -Wextra -pedantic",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": "101 3\n"
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "ID 101 cents 2550"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 28,
+        "processExecutionResultTime": 0.021994002163410187,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.cpp",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 697,
+          "processExecutionResultTime": 0.0026400014758110046,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compileruyQQbo/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "-fdiagnostics-color=always",
+            "-std=c++17",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "/app/example.cpp",
+            "-L./lib",
+            "-Wl,-rpath,./lib",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib64",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib32"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/gcc-14.2.0/lib",
+            "/opt/compiler-explorer/gcc-14.2.0/lib32",
+            "/opt/compiler-explorer/gcc-14.2.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 50
+        },
+        "queueTime": 8
+      }
+    },
+    {
+      "name": "sensors",
+      "context": "complete public program",
+      "checked_at": "2026-09-29T20:09:54.308073+00:00",
+      "url": "https://godbolt.org/api/compiler/g142/compile",
+      "source_sha256": "be9cd098a881c9a5ae614f5e1f928cf75b0b802129694048ff2ca8d9c5583b4f",
+      "request": {
+        "source": "#include <cstddef>\n#include <iostream>\n#include <vector>\n\n// Contract: at most 100 readings, each in -1000..1000.\n// A non-null data pointer must designate at least count live elements.\nbool summarize(const int* data, std::size_t count, long long& total, int* highest) {\n    if (count == 0 || count > 100 || data == nullptr) return false;\n    long long candidate_total{};\n    int candidate_high = data[0];\n    for (std::size_t i = 0; i < count; ++i) {\n        if (data[i] < -1000 || data[i] > 1000) return false;\n        candidate_total += data[i];\n        if (data[i] > candidate_high) candidate_high = data[i];\n    }\n    total = candidate_total;\n    if (highest != nullptr) *highest = candidate_high;\n    return true;\n}\nint main() {\n    int fixed[3]{12, 18, 23};\n    std::vector<int> owned{12, 18, 23};\n    long long total{};\n    int highest{};\n    if (!summarize(fixed, 3, total, &highest)) return 1;\n    std::cout << \"array \" << total << ' ' << highest << '\\n';\n    if (!summarize(owned.data(), owned.size(), total, &highest)) return 1;\n    std::cout << \"vector \" << total << ' ' << highest << '\\n';\n    owned.reserve(10);\n    int* saved = owned.data();\n    owned.push_back(24); // Fits reserved capacity; saved still designates first element.\n    std::cout << \"first \" << *saved << '\\n';\n    saved = nullptr;\n    owned.reserve(owned.capacity() + 1); // Reallocates; old addresses are discarded.\n    if (!summarize(owned.data(), owned.size(), total, nullptr)) return 1;\n    std::cout << \"expanded \" << total << '\\n';\n    return 0;\n}\n",
+        "lang": "c++",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c++17 -Wall -Wextra -pedantic",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": ""
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "array 53 23"
+          },
+          {
+            "text": "vector 53 23"
+          },
+          {
+            "text": "first 12"
+          },
+          {
+            "text": "expanded 77"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 26,
+        "processExecutionResultTime": 0.03577999980188906,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.cpp",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 598,
+          "processExecutionResultTime": 0.005785000044852495,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compilerZSuXHE/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "-fdiagnostics-color=always",
+            "-std=c++17",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "/app/example.cpp",
+            "-L./lib",
+            "-Wl,-rpath,./lib",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib64",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib32"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/gcc-14.2.0/lib",
+            "/opt/compiler-explorer/gcc-14.2.0/lib32",
+            "/opt/compiler-explorer/gcc-14.2.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 49
+        },
+        "queueTime": 5
+      }
+    },
+    {
+      "name": "menu",
+      "context": "complete public program",
+      "checked_at": "2026-09-29T20:09:54.408234+00:00",
+      "url": "https://godbolt.org/api/compiler/g142/compile",
+      "source_sha256": "fa832a66e99cd021604cb26e04e509e9fa0842b6cccbfb802f14df5f55532f69",
+      "request": {
+        "source": "#include <iostream>\n#include <sstream>\n#include <string>\n\n// Caller establishes n <= 12. This bound also keeps recursion deliberately small.\nunsigned long long factorial(unsigned n) {\n    if (n <= 1) return 1;\n    return n * factorial(n - 1);\n}\nint main() {\n    bool running = true;\n    do {\n        std::string line;\n        if (!std::getline(std::cin, line)) return 0;\n        std::istringstream input(line);\n        char choice{};\n        long long a{}, b{};\n        if (!(input >> choice)) {\n            std::cerr << \"Missing choice\\n\";\n            return 1;\n        }\n        if (choice == 's' || choice == 'p') {\n            if (!(input >> a >> b) || a < -1000 || a > 1000 || b < -1000 || b > 1000) {\n                std::cerr << \"Use two integers in -1000..1000\\n\";\n                return 1;\n            }\n        } else if (choice == 'f') {\n            if (!(input >> a) || a < 0 || a > 12) {\n                std::cerr << \"Factorial needs 0..12\\n\";\n                return 1;\n            }\n        }\n        input >> std::ws;\n        if (!input.eof()) {\n            std::cerr << \"Unexpected trailing input\\n\";\n            return 1;\n        }\n        switch (choice) {\n            case 's': std::cout << a + b << '\\n'; break;\n            case 'p': std::cout << a * b << '\\n'; break;\n            case 'f': std::cout << factorial(static_cast<unsigned>(a)) << '\\n'; break;\n            case 'q': running = false; break;\n            default: std::cerr << \"Unknown choice\\n\"; return 1;\n        }\n    } while (running);\n    return 0;\n}\n",
+        "lang": "c++",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c++17 -Wall -Wextra -pedantic",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": "s 7 -2\np -3 4\nf 0\nf 5\nf 12\nq\n"
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "5"
+          },
+          {
+            "text": "-12"
+          },
+          {
+            "text": "1"
+          },
+          {
+            "text": "120"
+          },
+          {
+            "text": "479001600"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 17,
+        "processExecutionResultTime": 0.02163000009022653,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.cpp",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 577,
+          "processExecutionResultTime": 0.004392000148072839,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compilerqmOXLX/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "-fdiagnostics-color=always",
+            "-std=c++17",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "/app/example.cpp",
+            "-L./lib",
+            "-Wl,-rpath,./lib",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib64",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib32"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/gcc-14.2.0/lib",
+            "/opt/compiler-explorer/gcc-14.2.0/lib32",
+            "/opt/compiler-explorer/gcc-14.2.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 67
+        },
+        "queueTime": 4
+      }
+    },
+    {
+      "name": "workbook-clang",
+      "context": "complete public program",
+      "checked_at": "2026-09-29T20:13:55.541525+00:00",
+      "url": "https://godbolt.org/api/compiler/clang1910/compile",
+      "source_sha256": "d2c153a78f98e27615ec31ab9aec69f02695ac7c3a7a3f2c69bb08768d79cc93",
+      "request": {
+        "source": "#include <iomanip>\n#include <iostream>\n#include <limits>\n#include <sstream>\n#include <stdexcept>\n#include <string>\n#include <typeinfo>\n#include <vector>\n\nint checks = 0;\nvoid check(bool condition, const char* name) {\n    if (!condition) throw std::runtime_error(name);\n    ++checks;\n}\nbool whole_int(const std::string& line, int& value) {\n    std::istringstream input(line);\n    int candidate{};\n    if (!(input >> candidate)) return false;\n    input >> std::ws;\n    if (!input.eof()) return false;\n    value = candidate;\n    return true;\n}\nint by_value(int n) { n += 5; return n; }\nvoid by_reference(int& n) { n += 5; }\nvoid by_pointer(int* n) { if (n != nullptr) *n += 5; }\nvoid reseat_copy(int* n) { n = nullptr; (void)n; }\nstruct Reading { virtual ~Reading() = default; };\nstruct Temperature : Reading { int value{21}; };\nstruct Pressure : Reading {};\nstruct Counted {\n    static int destroyed;\n    ~Counted() { ++destroyed; }\n};\nint Counted::destroyed = 0;\n\nint main(int argc, char* argv[]) {\n    check(argc >= 0 && argv[argc] == nullptr, \"main argument sentinel\");\n    int initialized{};\n    initialized = 3;\n    check(initialized == 3, \"initialization then assignment\");\n    check(sizeof(char) == 1, \"sizeof char is one C++ byte\");\n    check(true && 'A' != 'B' && 42u == 42 && 3.5f == 3.5,\n          \"literal categories with exactly representable values\");\n    check(11 / 4 == 2 && 11 % 4 == 3, \"positive quotient and remainder\");\n    check(-11 / 4 == -2 && -11 % 4 == -3 && 11 % -4 == 3,\n          \"negative operands truncate toward zero\");\n    check(static_cast<double>(11) / 4 == 2.75, \"cast before division\");\n    check(static_cast<double>(11 / 4) == 2.0, \"cast after division\");\n    check(2 + 3 * 4 == 14 && (2 + 3) * 4 == 20, \"precedence\");\n    check(20 - 6 - 2 == 12, \"left grouping\");\n    int left{}, right{};\n    left = right = 7;\n    check(left == 7 && right == 7, \"right grouping of assignment\");\n    check((6u & 3u) == 2u && (6u | 3u) == 7u && (6u ^ 3u) == 5u,\n          \"unsigned bitwise operations\");\n    check((1u << 3) == 8u && (8u >> 2) == 2u, \"safe shift counts\");\n    check(!false && 3 < 4 && 4 >= 4 && 4 != 5, \"logical and comparisons\");\n    int count{4};\n    int old = count++;\n    int fresh = ++count;\n    check(old == 4 && fresh == 6 && count == 6, \"separate increments\");\n    count += 3;\n    count *= 2;\n    check(count == 18, \"compound assignment\");\n    int calls{};\n    bool stop_and = false && (++calls > 0);\n    bool stop_or = true || (++calls > 0);\n    check(!stop_and && stop_or && calls == 0, \"short circuit skips work\");\n    bool called = true && (++calls > 0);\n    check(called && calls == 1, \"right side runs when needed\");\n    int parsed{99};\n    check(whole_int(\"  +12  \", parsed) && parsed == 12, \"whole integer\");\n    check(whole_int(\"-3\", parsed) && parsed == -3, \"negative integer\");\n    check(whole_int(\"0\", parsed) && parsed == 0, \"zero integer\");\n    for (const std::string& bad : std::vector<std::string>{\n            \"\", \"   \", \"word\", \"12x\", \"2.5\", \"1 2\",\n            \"999999999999999999999999999999\"}) {\n        parsed = 77;\n        check(!whole_int(bad, parsed) && parsed == 77,\n              \"invalid line preserves destination\");\n    }\n    std::istringstream prefix(\"12x\");\n    prefix >> parsed;\n    check(parsed == 12 && !prefix.fail() && prefix.peek() == 'x',\n          \"formatted numeric prefix is accepted\");\n    std::istringstream recovery(\"word\\n17\\n\");\n    recovery >> parsed;\n    check(recovery.fail(), \"failed numeric extraction\");\n    recovery.clear();\n    recovery.ignore(std::numeric_limits<std::streamsize>::max(), '\\n');\n    recovery >> parsed;\n    check(parsed == 17 && !recovery.fail(), \"clear and consume bad line\");\n    std::istringstream lines(\"5\\nAda Lovelace\\n\");\n    std::string name;\n    lines >> parsed;\n    std::getline(lines, name);\n    check(name.empty(), \"leftover newline gives empty line\");\n    std::getline(lines, name);\n    check(name == \"Ada Lovelace\", \"whole line retains spaces\");\n    std::ostringstream formatted;\n    formatted << std::setw(4) << 7 << 8;\n    check(formatted.str() == \"   78\", \"setw applies to next numeric field\");\n    int branch{};\n    if (parsed < 0) branch = -1;\n    else if (parsed == 5) branch = 1;\n    else branch = 2;\n    check(branch == 1, \"one conditional branch\");\n    int sum{};\n    for (int i = 0; i < 6; ++i) {\n        if (i == 2) continue;\n        if (i == 5) break;\n        sum += i;\n    }\n    check(sum == 8, \"for continue update and break\");\n    int visits{};\n    while (visits < 0) ++visits;\n    check(visits == 0, \"while can run zero times\");\n    do { ++visits; } while (visits < 0);\n    check(visits == 1, \"do body runs once\");\n    int selected{};\n    switch (2) {\n        case 1: selected = 10; break;\n        case 2: selected += 2; [[fallthrough]];\n        default: selected += 3;\n    }\n    check(selected == 5, \"deliberate switch fallthrough\");\n    int marker{};\n    goto finish_trace;\n    marker = 99;\nfinish_trace:\n    check(marker == 0, \"label within one function\");\n    int amount{10};\n    int returned = by_value(amount);\n    check(returned == 15 && amount == 10, \"value parameter has own integer\");\n    by_reference(amount);\n    check(amount == 15, \"reference aliases caller\");\n    by_pointer(&amount);\n    check(amount == 20, \"pointer changes pointee\");\n    by_pointer(nullptr);\n    check(amount == 20, \"null is explicitly handled\");\n    int* pointer = &amount;\n    reseat_copy(pointer);\n    check(pointer == &amount, \"pointer parameter itself is copied\");\n    { int amount{8}; check(amount == 8, \"inner shadow\"); }\n    check(amount == 20, \"outer object survives inner scope\");\n    int grid[2][3]{{1, 2, 3}, {4, 5, 6}};\n    sum = 0;\n    for (const auto& row : grid) for (int cell : row) sum += cell;\n    check(sum == 21 && grid[1][2] == 6, \"multidimensional bounds\");\n    std::vector<int> values{4, 5};\n    values.reserve(8);\n    check(values.size() == 2 && values.capacity() >= 8, \"reserve keeps size\");\n    int* first = values.data();\n    values.push_back(6);\n    check(first == values.data() && *first == 4, \"reserved append keeps pointer\");\n    values.resize(5);\n    check(values.size() == 5 && values[3] == 0 && values[4] == 0,\n          \"resize creates initialized elements\");\n    first = nullptr;\n    auto previous_capacity = values.capacity();\n    values.reserve(previous_capacity + 1);\n    check(values.capacity() > previous_capacity && values[0] == 4,\n          \"forced reallocation; discarded old pointer is never used\");\n    bool bounds = false;\n    try { (void)values.at(values.size()); }\n    catch (const std::out_of_range&) { bounds = true; }\n    check(bounds, \"vector checked boundary\");\n    const int* read_only = &amount;\n    int* const fixed_pointer = &amount;\n    *fixed_pointer = 22;\n    check(*read_only == 22, \"pointee constness differs from pointer constness\");\n    Temperature temperature;\n    Reading* base = static_cast<Reading*>(&temperature);\n    check(dynamic_cast<Temperature*>(base) == &temperature, \"checked downcast\");\n    check(dynamic_cast<Pressure*>(base) == nullptr, \"wrong pointer type fails\");\n    Reading* absent = nullptr;\n    check(dynamic_cast<Temperature*>(absent) == nullptr, \"null cast stays null\");\n    bool bad_cast = false;\n    try { (void)dynamic_cast<Pressure&>(*base); }\n    catch (const std::bad_cast&) { bad_cast = true; }\n    check(bad_cast, \"wrong reference type throws\");\n    int* single = new int{9};\n    check(*single == 9, \"single allocation\");\n    delete single;\n    single = nullptr;\n    check(single == nullptr, \"owner variable cleared after deletion\");\n    int* buffer = new int[3]{4, 5, 6};\n    check(buffer[0] + buffer[1] + buffer[2] == 15, \"array allocation\");\n    delete[] buffer;\n    buffer = nullptr;\n    Counted* owned = new Counted[3];\n    delete[] owned;\n    check(Counted::destroyed == 3, \"array deletion calls each destructor\");\n    std::string empty;\n    check(empty.empty() && empty.size() == 0 && empty[0] == '\\0',\n          \"C++17 empty string sentinel read\");\n    bounds = false;\n    try { (void)empty.at(0); }\n    catch (const std::out_of_range&) { bounds = true; }\n    check(bounds, \"empty string has no content element\");\n    std::string text{\"Ada\"};\n    text += \" Lovelace\";\n    check(text.size() == 12 && text.substr(4, 8) == \"Lovelace\", \"append and slice\");\n    check(std::string(\"12\") < std::string(\"2\"), \"text comparison is not numeric\");\n    std::string copy = text;\n    copy[0] = 'E';\n    check(text[0] == 'A' && copy[0] == 'E', \"string value copy\");\n    std::cout << checks << \" checks passed\\n\";\n}\n",
+        "lang": "c++",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c++17 -Wall -Wextra -pedantic",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": ""
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "67 checks passed"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 28,
+        "processExecutionResultTime": 0.01750499987974763,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.cpp",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 758,
+          "processExecutionResultTime": 0.00430699996650219,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compilerNhfIn2/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "--gcc-toolchain=/opt/compiler-explorer/gcc-14.2.0",
+            "-fcolor-diagnostics",
+            "-fno-crash-diagnostics",
+            "-std=c++17",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "/app/example.cpp",
+            "-L./lib",
+            "-Wl,-rpath,./lib",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib64",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib32"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/clang-19.1.0/lib",
+            "/opt/compiler-explorer/clang-19.1.0/lib/x86_64-unknown-linux-gnu"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 45
+        },
+        "queueTime": 10
+      }
+    },
+    {
+      "name": "scenario-harness-gcc",
+      "context": "exact scenario bodies with main renamed; headers consolidated; original boundary driver",
+      "checked_at": "2026-09-29T20:09:56.188813+00:00",
+      "url": "https://godbolt.org/api/compiler/g142/compile",
+      "source_sha256": "2b9fc3b493fe0bf0c64c60e2bcbbbf977a4f10635104704e246a7699a36d6ad6",
+      "request": {
+        "source": "#include <cstddef>\n#include <iomanip>\n#include <iostream>\n#include <sstream>\n#include <stdexcept>\n#include <string>\n#include <vector>\nnamespace inventory {\n\nstruct Product {\n    int id;\n    std::string name;\n    long long price_cents;\n};\nbool valid_catalog(const std::vector<Product>& products) {\n    for (std::size_t i = 0; i < products.size(); ++i) {\n        if (products[i].id <= 0 || products[i].name.empty() ||\n            products[i].price_cents < 0 || products[i].price_cents > 1000000)\n            return false;\n        for (std::size_t j = 0; j < i; ++j)\n            if (products[i].id == products[j].id) return false;\n    }\n    return true;\n}\nstd::string quote(const std::vector<Product>& products, int id, int quantity,\n                  long long& total) {\n    if (!valid_catalog(products)) return \"Invalid catalog\";\n    if (quantity < 1 || quantity > 1000) return \"Quantity must be 1..1000\";\n    for (const Product& product : products) {\n        if (product.id == id) {\n            total = product.price_cents * quantity;\n            return \"OK\";\n        }\n    }\n    return \"Unknown product\";\n}\nint entry() {\n    const std::vector<Product> products{{101, \"Cable\", 850}, {102, \"Adapter\", 1400}};\n    std::string line;\n    int id{}, quantity{};\n    if (!std::getline(std::cin, line)) {\n        std::cerr << \"Missing request\\n\";\n        return 1;\n    }\n    std::istringstream input(line);\n    if (!(input >> id >> quantity)) {\n        std::cerr << \"Use: product-id quantity\\n\";\n        return 1;\n    }\n    input >> std::ws;\n    if (!input.eof()) {\n        std::cerr << \"Unexpected trailing input\\n\";\n        return 1;\n    }\n    long long total{};\n    std::string status = quote(products, id, quantity, total);\n    if (status != \"OK\") {\n        std::cerr << status << '\\n';\n        return 1;\n    }\n    std::cout << \"ID \" << std::setw(3) << id << \" cents \" << total << '\\n';\n    return 0;\n}\n\n}\nnamespace sensors {\n\n// Contract: at most 100 readings, each in -1000..1000.\n// A non-null data pointer must designate at least count live elements.\nbool summarize(const int* data, std::size_t count, long long& total, int* highest) {\n    if (count == 0 || count > 100 || data == nullptr) return false;\n    long long candidate_total{};\n    int candidate_high = data[0];\n    for (std::size_t i = 0; i < count; ++i) {\n        if (data[i] < -1000 || data[i] > 1000) return false;\n        candidate_total += data[i];\n        if (data[i] > candidate_high) candidate_high = data[i];\n    }\n    total = candidate_total;\n    if (highest != nullptr) *highest = candidate_high;\n    return true;\n}\nint entry() {\n    int fixed[3]{12, 18, 23};\n    std::vector<int> owned{12, 18, 23};\n    long long total{};\n    int highest{};\n    if (!summarize(fixed, 3, total, &highest)) return 1;\n    std::cout << \"array \" << total << ' ' << highest << '\\n';\n    if (!summarize(owned.data(), owned.size(), total, &highest)) return 1;\n    std::cout << \"vector \" << total << ' ' << highest << '\\n';\n    owned.reserve(10);\n    int* saved = owned.data();\n    owned.push_back(24); // Fits reserved capacity; saved still designates first element.\n    std::cout << \"first \" << *saved << '\\n';\n    saved = nullptr;\n    owned.reserve(owned.capacity() + 1); // Reallocates; old addresses are discarded.\n    if (!summarize(owned.data(), owned.size(), total, nullptr)) return 1;\n    std::cout << \"expanded \" << total << '\\n';\n    return 0;\n}\n\n}\nnamespace menu {\n\n// Caller establishes n <= 12. This bound also keeps recursion deliberately small.\nunsigned long long factorial(unsigned n) {\n    if (n <= 1) return 1;\n    return n * factorial(n - 1);\n}\nint entry() {\n    bool running = true;\n    do {\n        std::string line;\n        if (!std::getline(std::cin, line)) return 0;\n        std::istringstream input(line);\n        char choice{};\n        long long a{}, b{};\n        if (!(input >> choice)) {\n            std::cerr << \"Missing choice\\n\";\n            return 1;\n        }\n        if (choice == 's' || choice == 'p') {\n            if (!(input >> a >> b) || a < -1000 || a > 1000 || b < -1000 || b > 1000) {\n                std::cerr << \"Use two integers in -1000..1000\\n\";\n                return 1;\n            }\n        } else if (choice == 'f') {\n            if (!(input >> a) || a < 0 || a > 12) {\n                std::cerr << \"Factorial needs 0..12\\n\";\n                return 1;\n            }\n        }\n        input >> std::ws;\n        if (!input.eof()) {\n            std::cerr << \"Unexpected trailing input\\n\";\n            return 1;\n        }\n        switch (choice) {\n            case 's': std::cout << a + b << '\\n'; break;\n            case 'p': std::cout << a * b << '\\n'; break;\n            case 'f': std::cout << factorial(static_cast<unsigned>(a)) << '\\n'; break;\n            case 'q': running = false; break;\n            default: std::cerr << \"Unknown choice\\n\"; return 1;\n        }\n    } while (running);\n    return 0;\n}\n\n}\n\nint checks=0;\nvoid check(bool ok) { if(!ok) throw std::runtime_error(\"scenario mismatch\"); ++checks; }\nvoid console(int (*entry)(), const std::string& input, int expected_code,\n             const std::string& output, const std::string& error) {\n std::istringstream in(input); std::ostringstream out,err;\n auto* old_in=std::cin.rdbuf(in.rdbuf()); auto* old_out=std::cout.rdbuf(out.rdbuf());\n auto* old_err=std::cerr.rdbuf(err.rdbuf()); std::cin.clear();\n int code=entry();\n std::cin.rdbuf(old_in); std::cout.rdbuf(old_out); std::cerr.rdbuf(old_err); std::cin.clear();\n check(code==expected_code && out.str()==output && err.str()==error);\n}\nint main() {\n using inventory::Product; using inventory::quote;\n std::vector<Product> products{{101,\"Cable\",850},{102,\"Adapter\",1400}};\n long long total=77;\n check(quote(products,101,1,total)==\"OK\" && total==850);\n check(quote(products,102,1000,total)==\"OK\" && total==1400000);\n for(int quantity:{-1,0,1001}) { total=77; check(quote(products,101,quantity,total)!=\"OK\" && total==77); }\n total=77; check(quote(products,999,1,total)==\"Unknown product\" && total==77);\n check(quote({},101,1,total)==\"Unknown product\" && total==77);\n check(quote({{101,\"Free\",0}},101,1000,total)==\"OK\" && total==0);\n check(quote({{101,\"Limit\",1000000}},101,1000,total)==\"OK\" && total==1000000000);\n for (const auto& bad : std::vector<std::vector<Product>>{\n  {{101,\"A\",1},{101,\"B\",2}},{{0,\"A\",1}},{{101,\"\",1}},{{101,\"A\",-1}},{{101,\"A\",1000001}}}) {\n  total=77; check(quote(bad,101,1,total)==\"Invalid catalog\" && total==77);\n }\n console(inventory::entry,\"102 1\\n\",0,\"ID 102 cents 1400\\n\",\"\");\n console(inventory::entry,\"101 1000\\n\",0,\"ID 101 cents 850000\\n\",\"\");\n console(inventory::entry,\"  101 1  \\n\",0,\"ID 101 cents 850\\n\",\"\");\n console(inventory::entry,\"\",1,\"\",\"Missing request\\n\");\n for(const std::string& in:std::vector<std::string>{\"\\n\",\"word\\n\",\"101\\n\",\"101 word\\n\",\"999999999999999999999999999 2\\n\"})\n  console(inventory::entry,in,1,\"\",\"Use: product-id quantity\\n\");\n for(const std::string& in:std::vector<std::string>{\"101 2x\\n\",\"101 2.5\\n\",\"101 2 extra\\n\"})\n  console(inventory::entry,in,1,\"\",\"Unexpected trailing input\\n\");\n for(const std::string& in:std::vector<std::string>{\"101 0\\n\",\"101 -1\\n\",\"101 1001\\n\"})\n  console(inventory::entry,in,1,\"\",\"Quantity must be 1..1000\\n\");\n console(inventory::entry,\"999 1\\n\",1,\"\",\"Unknown product\\n\");\n using sensors::summarize;\n int readings[]{-1000,-5,0,1000}; int highest=88; total=77;\n check(summarize(readings,4,total,&highest) && total==-5 && highest==1000);\n highest=88; check(summarize(readings,4,total,nullptr) && highest==88 && total==-5);\n total=77; check(!summarize(readings,0,total,&highest) && total==77 && highest==88);\n check(!summarize(nullptr,4,total,&highest) && total==77 && highest==88);\n int bad[]{1,1001}; check(!summarize(bad,2,total,&highest) && total==77 && highest==88);\n bad[1]=-1001; check(!summarize(bad,2,total,&highest) && total==77 && highest==88);\n int negative[]{-12,-20}; check(summarize(negative,2,total,&highest) && total==-32 && highest==-12);\n std::vector<int> large(100,1000); check(summarize(large.data(),large.size(),total,&highest) && total==100000 && highest==1000);\n large.push_back(1000); total=77; highest=88;\n check(!summarize(large.data(),large.size(),total,&highest) && total==77 && highest==88);\n int zero{}; check(summarize(&zero,1,total,&highest) && total==0 && highest==0);\n console(menu::entry,\"\",0,\"\",\"\");\n console(menu::entry,\"q\\n\",0,\"\",\"\");\n console(menu::entry,\"s -1000 1000\\np -1000 1000\\nf 1\\nf 12\\nq\\n\",0,\"0\\n-1000000\\n1\\n479001600\\n\",\"\");\n console(menu::entry,\"s 2 3\",0,\"5\\n\",\"\");\n for(const std::string& in:std::vector<std::string>{\"f -1\\n\",\"f 13\\n\",\"f word\\n\",\"f\\n\"})\n  console(menu::entry,in,1,\"\",\"Factorial needs 0..12\\n\");\n for(const std::string& in:std::vector<std::string>{\"s 2\\n\",\"p word 2\\n\",\"s 1001 0\\n\",\"p -1001 1\\n\",\"s 0 1001\\n\",\"p 1 -1001\\n\"})\n  console(menu::entry,in,1,\"\",\"Use two integers in -1000..1000\\n\");\n for(const std::string& in:std::vector<std::string>{\"f 2x\\n\",\"f 2.5\\n\",\"s 1 2x\\n\",\"q extra\\n\"})\n  console(menu::entry,in,1,\"\",\"Unexpected trailing input\\n\");\n console(menu::entry,\"x\\n\",1,\"\",\"Unknown choice\\n\");\n console(menu::entry,\"\\n\",1,\"\",\"Missing choice\\n\");\n std::cout << checks << \" scenario checks passed\\n\";\n}\n",
+        "lang": "c++",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c++17 -Wall -Wextra -pedantic",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": ""
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "60 scenario checks passed"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 25,
+        "processExecutionResultTime": 0.019561000168323517,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.cpp",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 1312,
+          "processExecutionResultTime": 0.0019850004464387894,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compilerC7r5HG/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "-fdiagnostics-color=always",
+            "-std=c++17",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "/app/example.cpp",
+            "-L./lib",
+            "-Wl,-rpath,./lib",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib64",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib32"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/gcc-14.2.0/lib",
+            "/opt/compiler-explorer/gcc-14.2.0/lib32",
+            "/opt/compiler-explorer/gcc-14.2.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 50
+        },
+        "queueTime": 4
+      }
+    },
+    {
+      "name": "scenario-harness-clang",
+      "context": "same scenario boundary driver on second compiler",
+      "checked_at": "2026-09-29T20:09:56.541531+00:00",
+      "url": "https://godbolt.org/api/compiler/clang1910/compile",
+      "source_sha256": "2b9fc3b493fe0bf0c64c60e2bcbbbf977a4f10635104704e246a7699a36d6ad6",
+      "request": {
+        "source": "#include <cstddef>\n#include <iomanip>\n#include <iostream>\n#include <sstream>\n#include <stdexcept>\n#include <string>\n#include <vector>\nnamespace inventory {\n\nstruct Product {\n    int id;\n    std::string name;\n    long long price_cents;\n};\nbool valid_catalog(const std::vector<Product>& products) {\n    for (std::size_t i = 0; i < products.size(); ++i) {\n        if (products[i].id <= 0 || products[i].name.empty() ||\n            products[i].price_cents < 0 || products[i].price_cents > 1000000)\n            return false;\n        for (std::size_t j = 0; j < i; ++j)\n            if (products[i].id == products[j].id) return false;\n    }\n    return true;\n}\nstd::string quote(const std::vector<Product>& products, int id, int quantity,\n                  long long& total) {\n    if (!valid_catalog(products)) return \"Invalid catalog\";\n    if (quantity < 1 || quantity > 1000) return \"Quantity must be 1..1000\";\n    for (const Product& product : products) {\n        if (product.id == id) {\n            total = product.price_cents * quantity;\n            return \"OK\";\n        }\n    }\n    return \"Unknown product\";\n}\nint entry() {\n    const std::vector<Product> products{{101, \"Cable\", 850}, {102, \"Adapter\", 1400}};\n    std::string line;\n    int id{}, quantity{};\n    if (!std::getline(std::cin, line)) {\n        std::cerr << \"Missing request\\n\";\n        return 1;\n    }\n    std::istringstream input(line);\n    if (!(input >> id >> quantity)) {\n        std::cerr << \"Use: product-id quantity\\n\";\n        return 1;\n    }\n    input >> std::ws;\n    if (!input.eof()) {\n        std::cerr << \"Unexpected trailing input\\n\";\n        return 1;\n    }\n    long long total{};\n    std::string status = quote(products, id, quantity, total);\n    if (status != \"OK\") {\n        std::cerr << status << '\\n';\n        return 1;\n    }\n    std::cout << \"ID \" << std::setw(3) << id << \" cents \" << total << '\\n';\n    return 0;\n}\n\n}\nnamespace sensors {\n\n// Contract: at most 100 readings, each in -1000..1000.\n// A non-null data pointer must designate at least count live elements.\nbool summarize(const int* data, std::size_t count, long long& total, int* highest) {\n    if (count == 0 || count > 100 || data == nullptr) return false;\n    long long candidate_total{};\n    int candidate_high = data[0];\n    for (std::size_t i = 0; i < count; ++i) {\n        if (data[i] < -1000 || data[i] > 1000) return false;\n        candidate_total += data[i];\n        if (data[i] > candidate_high) candidate_high = data[i];\n    }\n    total = candidate_total;\n    if (highest != nullptr) *highest = candidate_high;\n    return true;\n}\nint entry() {\n    int fixed[3]{12, 18, 23};\n    std::vector<int> owned{12, 18, 23};\n    long long total{};\n    int highest{};\n    if (!summarize(fixed, 3, total, &highest)) return 1;\n    std::cout << \"array \" << total << ' ' << highest << '\\n';\n    if (!summarize(owned.data(), owned.size(), total, &highest)) return 1;\n    std::cout << \"vector \" << total << ' ' << highest << '\\n';\n    owned.reserve(10);\n    int* saved = owned.data();\n    owned.push_back(24); // Fits reserved capacity; saved still designates first element.\n    std::cout << \"first \" << *saved << '\\n';\n    saved = nullptr;\n    owned.reserve(owned.capacity() + 1); // Reallocates; old addresses are discarded.\n    if (!summarize(owned.data(), owned.size(), total, nullptr)) return 1;\n    std::cout << \"expanded \" << total << '\\n';\n    return 0;\n}\n\n}\nnamespace menu {\n\n// Caller establishes n <= 12. This bound also keeps recursion deliberately small.\nunsigned long long factorial(unsigned n) {\n    if (n <= 1) return 1;\n    return n * factorial(n - 1);\n}\nint entry() {\n    bool running = true;\n    do {\n        std::string line;\n        if (!std::getline(std::cin, line)) return 0;\n        std::istringstream input(line);\n        char choice{};\n        long long a{}, b{};\n        if (!(input >> choice)) {\n            std::cerr << \"Missing choice\\n\";\n            return 1;\n        }\n        if (choice == 's' || choice == 'p') {\n            if (!(input >> a >> b) || a < -1000 || a > 1000 || b < -1000 || b > 1000) {\n                std::cerr << \"Use two integers in -1000..1000\\n\";\n                return 1;\n            }\n        } else if (choice == 'f') {\n            if (!(input >> a) || a < 0 || a > 12) {\n                std::cerr << \"Factorial needs 0..12\\n\";\n                return 1;\n            }\n        }\n        input >> std::ws;\n        if (!input.eof()) {\n            std::cerr << \"Unexpected trailing input\\n\";\n            return 1;\n        }\n        switch (choice) {\n            case 's': std::cout << a + b << '\\n'; break;\n            case 'p': std::cout << a * b << '\\n'; break;\n            case 'f': std::cout << factorial(static_cast<unsigned>(a)) << '\\n'; break;\n            case 'q': running = false; break;\n            default: std::cerr << \"Unknown choice\\n\"; return 1;\n        }\n    } while (running);\n    return 0;\n}\n\n}\n\nint checks=0;\nvoid check(bool ok) { if(!ok) throw std::runtime_error(\"scenario mismatch\"); ++checks; }\nvoid console(int (*entry)(), const std::string& input, int expected_code,\n             const std::string& output, const std::string& error) {\n std::istringstream in(input); std::ostringstream out,err;\n auto* old_in=std::cin.rdbuf(in.rdbuf()); auto* old_out=std::cout.rdbuf(out.rdbuf());\n auto* old_err=std::cerr.rdbuf(err.rdbuf()); std::cin.clear();\n int code=entry();\n std::cin.rdbuf(old_in); std::cout.rdbuf(old_out); std::cerr.rdbuf(old_err); std::cin.clear();\n check(code==expected_code && out.str()==output && err.str()==error);\n}\nint main() {\n using inventory::Product; using inventory::quote;\n std::vector<Product> products{{101,\"Cable\",850},{102,\"Adapter\",1400}};\n long long total=77;\n check(quote(products,101,1,total)==\"OK\" && total==850);\n check(quote(products,102,1000,total)==\"OK\" && total==1400000);\n for(int quantity:{-1,0,1001}) { total=77; check(quote(products,101,quantity,total)!=\"OK\" && total==77); }\n total=77; check(quote(products,999,1,total)==\"Unknown product\" && total==77);\n check(quote({},101,1,total)==\"Unknown product\" && total==77);\n check(quote({{101,\"Free\",0}},101,1000,total)==\"OK\" && total==0);\n check(quote({{101,\"Limit\",1000000}},101,1000,total)==\"OK\" && total==1000000000);\n for (const auto& bad : std::vector<std::vector<Product>>{\n  {{101,\"A\",1},{101,\"B\",2}},{{0,\"A\",1}},{{101,\"\",1}},{{101,\"A\",-1}},{{101,\"A\",1000001}}}) {\n  total=77; check(quote(bad,101,1,total)==\"Invalid catalog\" && total==77);\n }\n console(inventory::entry,\"102 1\\n\",0,\"ID 102 cents 1400\\n\",\"\");\n console(inventory::entry,\"101 1000\\n\",0,\"ID 101 cents 850000\\n\",\"\");\n console(inventory::entry,\"  101 1  \\n\",0,\"ID 101 cents 850\\n\",\"\");\n console(inventory::entry,\"\",1,\"\",\"Missing request\\n\");\n for(const std::string& in:std::vector<std::string>{\"\\n\",\"word\\n\",\"101\\n\",\"101 word\\n\",\"999999999999999999999999999 2\\n\"})\n  console(inventory::entry,in,1,\"\",\"Use: product-id quantity\\n\");\n for(const std::string& in:std::vector<std::string>{\"101 2x\\n\",\"101 2.5\\n\",\"101 2 extra\\n\"})\n  console(inventory::entry,in,1,\"\",\"Unexpected trailing input\\n\");\n for(const std::string& in:std::vector<std::string>{\"101 0\\n\",\"101 -1\\n\",\"101 1001\\n\"})\n  console(inventory::entry,in,1,\"\",\"Quantity must be 1..1000\\n\");\n console(inventory::entry,\"999 1\\n\",1,\"\",\"Unknown product\\n\");\n using sensors::summarize;\n int readings[]{-1000,-5,0,1000}; int highest=88; total=77;\n check(summarize(readings,4,total,&highest) && total==-5 && highest==1000);\n highest=88; check(summarize(readings,4,total,nullptr) && highest==88 && total==-5);\n total=77; check(!summarize(readings,0,total,&highest) && total==77 && highest==88);\n check(!summarize(nullptr,4,total,&highest) && total==77 && highest==88);\n int bad[]{1,1001}; check(!summarize(bad,2,total,&highest) && total==77 && highest==88);\n bad[1]=-1001; check(!summarize(bad,2,total,&highest) && total==77 && highest==88);\n int negative[]{-12,-20}; check(summarize(negative,2,total,&highest) && total==-32 && highest==-12);\n std::vector<int> large(100,1000); check(summarize(large.data(),large.size(),total,&highest) && total==100000 && highest==1000);\n large.push_back(1000); total=77; highest=88;\n check(!summarize(large.data(),large.size(),total,&highest) && total==77 && highest==88);\n int zero{}; check(summarize(&zero,1,total,&highest) && total==0 && highest==0);\n console(menu::entry,\"\",0,\"\",\"\");\n console(menu::entry,\"q\\n\",0,\"\",\"\");\n console(menu::entry,\"s -1000 1000\\np -1000 1000\\nf 1\\nf 12\\nq\\n\",0,\"0\\n-1000000\\n1\\n479001600\\n\",\"\");\n console(menu::entry,\"s 2 3\",0,\"5\\n\",\"\");\n for(const std::string& in:std::vector<std::string>{\"f -1\\n\",\"f 13\\n\",\"f word\\n\",\"f\\n\"})\n  console(menu::entry,in,1,\"\",\"Factorial needs 0..12\\n\");\n for(const std::string& in:std::vector<std::string>{\"s 2\\n\",\"p word 2\\n\",\"s 1001 0\\n\",\"p -1001 1\\n\",\"s 0 1001\\n\",\"p 1 -1001\\n\"})\n  console(menu::entry,in,1,\"\",\"Use two integers in -1000..1000\\n\");\n for(const std::string& in:std::vector<std::string>{\"f 2x\\n\",\"f 2.5\\n\",\"s 1 2x\\n\",\"q extra\\n\"})\n  console(menu::entry,in,1,\"\",\"Unexpected trailing input\\n\");\n console(menu::entry,\"x\\n\",1,\"\",\"Unknown choice\\n\");\n console(menu::entry,\"\\n\",1,\"\",\"Missing choice\\n\");\n std::cout << checks << \" scenario checks passed\\n\";\n}\n",
+        "lang": "c++",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c++17 -Wall -Wextra -pedantic",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": ""
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "60 scenario checks passed"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 24,
+        "processExecutionResultTime": 0.015946000814437866,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.cpp",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 744,
+          "processExecutionResultTime": 0.0018310006707906723,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compiler5lkgFi/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "--gcc-toolchain=/opt/compiler-explorer/gcc-14.2.0",
+            "-fcolor-diagnostics",
+            "-fno-crash-diagnostics",
+            "-std=c++17",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "/app/example.cpp",
+            "-L./lib",
+            "-Wl,-rpath,./lib",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib64",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-14.2.0/lib32"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/clang-19.1.0/lib",
+            "/opt/compiler-explorer/clang-19.1.0/lib/x86_64-unknown-linux-gnu"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 64
+        },
+        "queueTime": 4
+      }
+    }
+  ],
+  "manual_objective_confirmation": {
+    "checked_on": "2026-09-29",
+    "method": "Public web-reader full canonical page after direct timeout; manual retained-snapshot comparison",
+    "objectives": 26,
+    "per_block": [
+      7,
+      8,
+      6,
+      5
+    ],
+    "weights": [
+      28,
+      28,
+      24,
+      20
+    ],
+    "items": [
+      9,
+      8,
+      7,
+      6
+    ],
+    "active_code": "CPE-20-01",
+    "syllabus_date": "2025-07-22",
+    "snapshot_action": "Retained; no successful automatic hash comparison",
+    "groups": [
+      {
+        "title": "Block 1 – Syntax, Literals, and Operators",
+        "objectives": [
+          "1.1 Identify valid C++ syntax elements, keywords, and code structures.",
+          "1.2 Recognize C++ built-in data types and corresponding literals.",
+          "1.3 Describe the structure and declaration of the main() function and its parameters.",
+          "1.4 Apply arithmetic, relational, logical, bitwise, and assignment operators.",
+          "1.5 Determine operator precedence, associativity, and the impact on expressions.",
+          "1.6 Apply short-circuit logic in control expressions.",
+          "1.7 Use basic input/output streams (cin, cout, cerr) and manipulators (endl, setw)."
+        ]
+      },
+      {
+        "title": "Block 2 – Flow Control and Functions",
+        "objectives": [
+          "2.1 Describe and use conditional statements (if, else).",
+          "2.2 Use loop constructs (while, do, for) and loop control statements (break, continue).",
+          "2.3 Recognize the purpose of the goto statement and labeled statements.",
+          "2.4 Apply multiple-selection structures using switch, case, and default keywords.",
+          "2.5 Define, declare, and invoke functions with correct syntax.",
+          "2.6 Use return statements in typed and void functions.",
+          "2.7 Pass arguments by value, by reference, and by pointer.",
+          "2.8 Apply basic recursion to solve simple problems."
+        ]
+      },
+      {
+        "title": "Block 3 – Vectors and Pointers",
+        "objectives": [
+          "3.1 Declare, initialize, and manipulate vectors and arrays, including multidimensional arrays.",
+          "3.2 Access vector data using the data() method.",
+          "3.3 Declare and initialize pointers, including the use of nullptr.",
+          "3.4 Dereference pointers and use the address-of operator (&).",
+          "3.5 Perform pointer conversions using static_cast and dynamic_cast.",
+          "3.6 Manage dynamic memory with new, delete, and delete[]."
+        ]
+      },
+      {
+        "title": "Block 4 – Structures and Strings",
+        "objectives": [
+          "4.1 Declare and define structures.",
+          "4.2 Access structure members using the dot (.) operator.",
+          "4.3 Declare vectors of structures and access their fields.",
+          "4.4 Declare, initialize, and manipulate std::string objects.",
+          "4.5 Perform basic string operations and comparisons."
+        ]
+      }
+    ]
+  },
+  "shared_metadata_refresh": [
+    {
+      "exam_code": "CLE-10-01",
+      "link_evidence": {
+        "unique_external_links": 10,
+        "reachable": 7,
+        "access_blocked": 2,
+        "missing_or_error": 1
+      },
+      "boundary": "Shared source health only; guide text and review date unchanged."
+    },
+    {
+      "exam_code": "CLA-11-03",
+      "link_evidence": {
+        "unique_external_links": 10,
+        "reachable": 7,
+        "access_blocked": 2,
+        "missing_or_error": 1
+      },
+      "boundary": "Shared source health only; guide text and review date unchanged."
+    },
+    {
+      "exam_code": "CLP-12-01",
+      "link_evidence": {
+        "unique_external_links": 10,
+        "reachable": 8,
+        "access_blocked": 1,
+        "missing_or_error": 1
+      },
+      "boundary": "Shared source health only; guide text and review date unchanged."
+    },
+    {
+      "exam_code": "CPA-21-02",
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 8,
+        "access_blocked": 2,
+        "missing_or_error": 1
+      },
+      "boundary": "Shared source health only; guide text and review date unchanged."
+    },
+    {
+      "exam_code": "CPP-22-02",
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 8,
+        "access_blocked": 2,
+        "missing_or_error": 1
+      },
+      "boundary": "Shared source health only; guide text and review date unchanged."
+    }
+  ],
+  "source_health_boundary": "29 direct receipts: 23 HTTP200, 2 HTTP403 and 4 errors. Institute/API documentation read via web fallback. Cisco/YouTube HTTP200 bodies were shells. Source reading is qualified per source; no paid interiors or authenticated pages.",
+  "review_provenance": "Existing 40 original answers reviewed and improved, not all newly added. Ten public code blocks ran; three fragments used documented contexts. Remote GCC 14.2 and Clang 19.1 each passed 67 workbook and 60 scenario checks. Final 13 build/run receipts have no compiler warnings. No local C++ installation/execution, live infrastructure lab, undefined-behavior run, sanitizer session or human review."
+}

@@ -10999,23 +10999,65 @@
       "notes": "Mapped 84 syllabus bullets across all 15 numbered objectives. Repaired failure-stage, Boolean-operand, copy, method-return and scope explanations; preserved and improved 40 answers. Four public code blocks passed 136 offline checks, including three worked scenarios. Refreshed course metadata and disclosed conflicting vendor counts/weights and practice-role instructions. Direct primary fetches, paid interiors, current exam rollout and human review remain qualified. See docs/research/2026-09-29-pcep-30-02-deep-review.md"
     },
     {
-      "id":"cpe-20-01-2026-09-02-source-validation",
-      "exam_code":"CPE-20-01",
-      "guide_path":"guides/CPE-20-01-cpp-certified-entry-level-programmer.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-02",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/cpe-20-01-official-objectives.txt",
-      "blueprint_snapshot_sha256":"faf4501642933ecdc38efb270dda58a7db3a7c95a0028bda125b61544a34f60d",
-      "objective_coverage":[
-        {"objective_group":"Syntax, Literals, and Operators (28%)","guide_sections":["Section 1","Scenarios 1 and 3","Labs 1–3"]},
-        {"objective_group":"Flow Control and Functions (28%)","guide_sections":["Section 2","All scenarios","Labs 4–5"]},
-        {"objective_group":"Vectors and Pointers (24%)","guide_sections":["Section 3","Scenario 2","Labs 5–7"]},
-        {"objective_group":"Structures and Strings (20%)","guide_sections":["Section 4","Scenario 1","Lab 8"]}
+      "id": "cpe2001-2026-09-29-source-validation",
+      "exam_code": "CPE-20-01",
+      "guide_path": "guides/CPE-20-01-cpp-certified-entry-level-programmer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/cpe-20-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "faf4501642933ecdc38efb270dda58a7db3a7c95a0028bda125b61544a34f60d",
+      "objective_coverage": [
+        {
+          "objective_group": "Block 1 – Syntax, Literals, and Operators",
+          "guide_sections": [
+            "1. Syntax, literals, and operators — 28%",
+            "Executed trace workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 2 – Flow Control and Functions",
+          "guide_sections": [
+            "2. Flow control and functions — 28%",
+            "Executed trace workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 3 – Vectors and Pointers",
+          "guide_sections": [
+            "3. Vectors and pointers — 24%",
+            "Executed trace workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 4 – Structures and Strings",
+          "guide_sections": [
+            "4. Structures and strings — 20%",
+            "Executed trace workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":11,"reachable":9,"access_blocked":2,"missing_or_error":0},
-      "notes":"All four CPE-20-01 blocks are mapped through translation and diagnostics, types/operators/streams, structured control and function calls, value/reference/pointer parameters and recursion, arrays/vectors/data pointers, named-cast purpose, manual allocation lifetime, structures and strings. Three integrated scenarios, eight hands-on labs and 40 original checks are included. Raw memory operations are taught for syllabus literacy while modern ownership is clearly related context. Nine links are reachable and O'Reilly/Udemy are automation-blocked; none are broken. The local objective monitor encountered a certificate-chain error after the same official page was fetched successfully by the source-health checker, so the exact public objective block was preserved manually and the transport discrepancy is documented. No recalled/live item, answer dump or copied course question is used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 29,
+        "reachable": 23,
+        "access_blocked": 2,
+        "missing_or_error": 4
+      },
+      "notes": "Mapped all 26 numbered objectives; repaired hosted-main arguments, integer remainder, whole-line input, pointer casts, vector capacity/lifetime and string sentinel explanations. Ten public C++ blocks compiled and ran with documented contexts; 67 workbook checks and 60 scenario checks passed on GCC 14.2 and Clang 19.1 remotely. Preserved/improved 40 original answers, completed three worked programs and refreshed resource metadata. Direct primary fetches, paid interiors, vendor copy errors and human review remain qualified. See docs/research/2026-09-29-cpe-20-01-deep-review.md"
     },
     {
       "id":"jse-40-01-2026-09-02-source-validation",
@@ -11058,8 +11100,8 @@
         {"objective_group":"Functions (7%)","guide_sections":["Section 8","All scenarios","Lab 8"]}
       ],
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":10,"reachable":8,"access_blocked":2,"missing_or_error":0},
-      "notes":"All eight CLE-10-01 syllabus blocks are mapped through translation stages, literals and data representation, declarations/types/conversions/formatted I/O, operator and control-flow tracing, arrays and pointer bounds, allocation lifetimes, null-terminated strings, and value-versus-pointer function parameters. Three scenarios, eight labs and 30 original checks are included. The guide uses precise C terminology where the official syllabus is informal, labels implementation and language-version boundaries, and treats the SEI, O'Reilly and Udemy pages as automation-blocked rather than broken. No recalled/live item, answer dump or copied course question is used. September 17, 2026 link-only maintenance: the SEI reference moved to the official cmu-sei.github.io site and is reachable; link counts were refreshed. This does not represent a new full-content or practitioner review."
+      "link_evidence":{"unique_external_links":10,"reachable":7,"access_blocked":2,"missing_or_error":1},
+      "notes":"All eight CLE-10-01 syllabus blocks are mapped through translation stages, literals and data representation, declarations/types/conversions/formatted I/O, operator and control-flow tracing, arrays and pointer bounds, allocation lifetimes, null-terminated strings, and value-versus-pointer function parameters. Three scenarios, eight labs and 30 original checks are included. The guide uses precise C terminology where the official syllabus is informal, labels implementation and language-version boundaries, and treats the SEI, O'Reilly and Udemy pages as automation-blocked rather than broken. No recalled/live item, answer dump or copied course question is used. September 17, 2026 link-only maintenance: the SEI reference moved to the official cmu-sei.github.io site and is reachable; link counts were refreshed. This does not represent a new full-content or practitioner review. September 29 CPE source-health refresh updated shared-link counts only; this guide content and review date were not re-reviewed."
     },
     {
       "id": "pcap-31-03-2026-09-02-source-validation",
@@ -11202,8 +11244,8 @@
         {"objective_group":"Environment (8%)","guide_sections":["Section 4","Scenarios 1 and 2","Lab 8"]}
       ],
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":10,"reachable":8,"access_blocked":2,"missing_or_error":0},
-      "notes":"All 21 named CLA-11-03 objectives are mapped through multi-file declaration/definition and linkage reasoning, structures and storage classes, conversions and side effects, pointer ranges/allocation and lifetime, structured control and function contracts, macro expansion/conditional compilation, and formatted file streams with explicit result checks. Three scenarios, eight labs and 30 original checks are included. Language-version, implementation and undefined-behavior boundaries are labeled. SEI, O'Reilly and Udemy are automation-blocked rather than missing. No recalled/live item, answer dump or copied course question is used. September 17, 2026 link-only maintenance: the SEI reference moved to the official cmu-sei.github.io site and is reachable; link counts were refreshed. This does not represent a new full-content or practitioner review."
+      "link_evidence":{"unique_external_links":10,"reachable":7,"access_blocked":2,"missing_or_error":1},
+      "notes":"All 21 named CLA-11-03 objectives are mapped through multi-file declaration/definition and linkage reasoning, structures and storage classes, conversions and side effects, pointer ranges/allocation and lifetime, structured control and function contracts, macro expansion/conditional compilation, and formatted file streams with explicit result checks. Three scenarios, eight labs and 30 original checks are included. Language-version, implementation and undefined-behavior boundaries are labeled. SEI, O'Reilly and Udemy are automation-blocked rather than missing. No recalled/live item, answer dump or copied course question is used. September 17, 2026 link-only maintenance: the SEI reference moved to the official cmu-sei.github.io site and is reachable; link counts were refreshed. This does not represent a new full-content or practitioner review. September 29 CPE source-health refresh updated shared-link counts only; this guide content and review date were not re-reviewed."
     },
     {
       "id":"clp-12-01-2026-09-02-source-validation",
@@ -11225,8 +11267,8 @@
         {"objective_group":"Specialized Considerations (14.5%)","guide_sections":["Section 8","All scenarios","Lab 8"]}
       ],
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":10,"reachable":9,"access_blocked":1,"missing_or_error":0},
-      "notes":"All 30 CLP-12-01 objectives are mapped through C language evolution and historical constructs, variadic calls, POSIX/Windows/API/ABI distinctions, low-level I/O, memory/string/sort/search behavior, processes/threads and C11 synchronization, numerical behavior, socket framing/serialization, volatile, non-local jumps, undefined behavior and complex declarations. Three scenarios, eight labs and 30 original checks are included. Portable ISO C is explicitly separated from POSIX, Windows, compiler and external-library contracts. SEI and O'Reilly are automation-blocked; no link is missing. No recalled/live item, answer dump or copied course question is used. September 17, 2026 link-only maintenance: the SEI reference moved to the official cmu-sei.github.io site and is reachable; link counts were refreshed. This does not represent a new full-content or practitioner review."
+      "link_evidence":{"unique_external_links":10,"reachable":8,"access_blocked":1,"missing_or_error":1},
+      "notes":"All 30 CLP-12-01 objectives are mapped through C language evolution and historical constructs, variadic calls, POSIX/Windows/API/ABI distinctions, low-level I/O, memory/string/sort/search behavior, processes/threads and C11 synchronization, numerical behavior, socket framing/serialization, volatile, non-local jumps, undefined behavior and complex declarations. Three scenarios, eight labs and 30 original checks are included. Portable ISO C is explicitly separated from POSIX, Windows, compiler and external-library contracts. SEI and O'Reilly are automation-blocked; no link is missing. No recalled/live item, answer dump or copied course question is used. September 17, 2026 link-only maintenance: the SEI reference moved to the official cmu-sei.github.io site and is reachable; link counts were refreshed. This does not represent a new full-content or practitioner review. September 29 CPE source-health refresh updated shared-link counts only; this guide content and review date were not re-reviewed."
     },
     {
       "id":"cpa-21-02-2026-09-02-source-validation",
@@ -11245,8 +11287,8 @@
         {"objective_group":"Classes and Namespaces (29%)","guide_sections":["Section 5","All scenarios","Lab 8"]}
       ],
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":11,"reachable":9,"access_blocked":2,"missing_or_error":0},
-      "notes":"All 35 CPA-21-02 objectives are mapped through types/literals/conversions/operators, strings/aggregates, flow and exception unwinding, overload/default/parameter/macro behavior, pointer ranges and ownership, class invariants and special members, inheritance/access/dispatch/casts, operator overloading, friends and namespaces. Three scenarios, eight labs and 30 original checks are included. Legacy throw() recognition is kept separate from modern RAII/noexcept practice, and the official aligned course's CLA-21-02 field typo is flagged. O'Reilly and Udemy are automation-blocked; no link is missing. No recalled/live item, answer dump or copied course question is used."
+      "link_evidence":{"unique_external_links":11,"reachable":8,"access_blocked":2,"missing_or_error":1},
+      "notes":"All 35 CPA-21-02 objectives are mapped through types/literals/conversions/operators, strings/aggregates, flow and exception unwinding, overload/default/parameter/macro behavior, pointer ranges and ownership, class invariants and special members, inheritance/access/dispatch/casts, operator overloading, friends and namespaces. Three scenarios, eight labs and 30 original checks are included. Legacy throw() recognition is kept separate from modern RAII/noexcept practice, and the official aligned course's CLA-21-02 field typo is flagged. O'Reilly and Udemy are automation-blocked; no link is missing. No recalled/live item, answer dump or copied course question is used. September 29 CPE source-health refresh updated shared-link counts only; this guide content and review date were not re-reviewed."
     },
     {
       "id":"cpp-22-02-2026-09-02-source-validation",
@@ -11269,8 +11311,8 @@
         {"objective_group":"Templates (published 7%)","guide_sections":["Section 9","All scenarios","Lab 10"]}
       ],
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":11,"reachable":9,"access_blocked":2,"missing_or_error":0},
-      "notes":"Every named CPP-22-02 container, adapter, iterator, algorithm, function-object, stream-formatting and template objective is mapped with precondition/result/invalidation reasoning, three scenarios, ten labs and 30 original checks. The guide does not normalize the official internal inconsistency: the page says 40 questions while block counts total 32 and displayed weights total 107%. It also flags legacy ptr_fun and the aligned course's stale CPP-22-01 label. A broken provisional Pluralsight URL was rejected and replaced with the verified active C++ path before publication. O'Reilly and Udemy are automation-blocked. No recalled/live item, answer dump or copied course question is used."
+      "link_evidence":{"unique_external_links":11,"reachable":8,"access_blocked":2,"missing_or_error":1},
+      "notes":"Every named CPP-22-02 container, adapter, iterator, algorithm, function-object, stream-formatting and template objective is mapped with precondition/result/invalidation reasoning, three scenarios, ten labs and 30 original checks. The guide does not normalize the official internal inconsistency: the page says 40 questions while block counts total 32 and displayed weights total 107%. It also flags legacy ptr_fun and the aligned course's stale CPP-22-01 label. A broken provisional Pluralsight URL was rejected and replaced with the verified active C++ path before publication. O'Reilly and Udemy are automation-blocked. No recalled/live item, answer dump or copied course question is used. September 29 CPE source-health refresh updated shared-link counts only; this guide content and review date were not re-reviewed."
     },
     {
       "id":"pcpp-32-101-2026-09-02-source-validation",

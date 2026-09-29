@@ -1955,6 +1955,8 @@ answer dump or copied paid-course question is used. Blueprint SHA-256:
 
 ## CPE-20-01 coverage record
 
+The September 29 [deep review](research/2026-09-29-cpe-20-01-deep-review.md) maps 26 detailed objectives. Mapped all 26 numbered objectives; repaired hosted-main arguments, integer remainder, whole-line input, pointer casts, vector capacity/lifetime and string sentinel explanations. Ten public C++ blocks compiled and ran with documented contexts; 67 workbook checks and 60 scenario checks passed on GCC 14.2 and Clang 19.1 remotely. Preserved/improved 40 original answers, completed three worked programs and refreshed resource metadata. Direct primary fetches, paid interiors, vendor copy errors and human review remain qualified. Current guide citations: 29 registered, 23 reachable, 2 access-blocked, 4 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Syntax, Literals, and Operators (28%); Flow Control and Functions (28%); Vectors and Pointers (24%); Structures and Strings (20%)

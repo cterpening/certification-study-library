@@ -3,6 +3,258 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "msvc-main",
+      "title": "MSVC main function and command-line arguments",
+      "url": "https://learn.microsoft.com/en-us/cpp/cpp/main-function-command-line-args?view=msvc-170",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPE-20-01 deep review: Complete main-function page read. Standard int forms, arguments and fallthrough return reviewed; wmain, void-main, envp and Windows command-line conventions are implementation-specific. Portable nonnegative argc and sentinel contract taken from C++17 draft rather than MS-specific argc-at-least-one wording. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "msvc-expressions",
+      "title": "MSVC C++ operator precedence and associativity",
+      "url": "https://learn.microsoft.com/en-us/cpp/cpp/cpp-built-in-operators-precedence-and-associativity?view=msvc-170",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPE-20-01 deep review: Complete current precedence/associativity page read after correcting an initially guessed 404 URL; prior failed receipt preserved privately. Table used for grouping, not a general evaluation-order promise. Microsoft flags/alternative-keyword extensions not prescribed. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "msvc-multiplicative",
+      "title": "MSVC multiplication division remainder operators",
+      "url": "https://learn.microsoft.com/en-us/cpp/cpp/multiplicative-operators-and-the-modulus-operator?view=msvc-170",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPE-20-01 deep review: Complete page read. Older implementation-defined remainder sign and opposite-sign wording do not describe the chosen C++17 rule; draft expr.mul resolves the discrepancy. No guaranteed runtime error promised for undefined division/overflow and no undefined cases executed. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "msvc-vector",
+      "title": "MSVC vector class",
+      "url": "https://learn.microsoft.com/en-us/cpp/standard-library/vector-class?view=msvc-170",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPE-20-01 deep review: Selected at, data, reserve and resize sections including examples read; other members and entire 47637-character document not audited. Reserve capacity versus size, checked access and contiguous ownership inform examples. Precise reallocation/pointer invalidation uses C++17 draft; allocator growth numbers in documentation are not portability guarantees. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "msvc-string",
+      "title": "MSVC basic_string class",
+      "url": "https://learn.microsoft.com/en-us/cpp/standard-library/basic-string-class?view=msvc-170",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPE-20-01 deep review: Selected at, substr and compare sections including examples read. The older const-only sentinel wording is reconciled against C++17 string.access for both overloads. Content comparisons, copied substring and checked access adopted; full 137505-character reference not audited. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "msvc-static-cast",
+      "title": "MSVC static_cast operator",
+      "url": "https://learn.microsoft.com/en-us/cpp/cpp/static-cast-operator?view=msvc-170",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPE-20-01 deep review: Complete page read. Supported numeric and safe simple derived-to-base conversion used; no unchecked invalid downcast executed. Platform extensions and broad safety shorthand not adopted as portable guarantees. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "msvc-dynamic-cast",
+      "title": "MSVC dynamic_cast operator",
+      "url": "https://learn.microsoft.com/en-us/cpp/cpp/dynamic-cast-operator?view=msvc-170",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPE-20-01 deep review: Read syntax, ordinary up/downcast material, null and failed pointer/reference behavior, and advanced hierarchy examples for context. Only simple public single inheritance with virtual destructor used. CLR/C++ extensions and invalid-source exception promises not adopted. No full class-design requirement added beyond explicit objective 3.5. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "msvc-new-delete",
+      "title": "MSVC new and delete operators",
+      "url": "https://learn.microsoft.com/en-us/cpp/cpp/new-and-delete-operators?view=msvc-170",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPE-20-01 deep review: Complete page read. Ordinary throwing-new and matched single/array deletion inform original small allocations. Custom overload/allocator, obsolete or platform-specific prose and huge source allocations not adopted or executed. No allocation-failure simulation. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "msvc-basic-istream",
+      "title": "MSVC basic_istream class",
+      "url": "https://learn.microsoft.com/en-us/cpp/standard-library/basic-istream-class?view=msvc-170",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPE-20-01 deep review: Selected operator>> and ignore entries read, not full 22572-character class reference. Formatted integer prefix, failed-state handling and recovery tested. Documentation says numeric_limits<int>::max for ignore; C++17 specifies streamsize, which the original code uses. Member char-array getline is not confused with free std::string getline. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "msvc-iomanip",
+      "title": "MSVC iomanip functions",
+      "url": "https://learn.microsoft.com/en-us/cpp/standard-library/iomanip-functions?view=msvc-170",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPE-20-01 deep review: Complete setw entry and its examples read, not full header reference. Next numeric field and minimum-width behavior used. No claim all manipulators reset identically; broader precision/base examples not adopted. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "compiler-explorer-api",
+      "title": "Compiler Explorer public API documentation",
+      "url": "https://github.com/compiler-explorer/compiler-explorer/blob/main/docs/API.md",
+      "publisher": "Compiler Explorer",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPE-20-01 deep review: Direct GitHub health request timed out; complete public API documentation read via web reader. Compiler list and GCC 14.2/Clang 19.1 compile/execute endpoints actually used for original public programs only, no account, saved-code shortener or publishing action. Exact requests/results and code hashes captured. Remote execution is not local/offline compilation. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cpp17-multiplicative",
+      "title": "C++17 draft N4659 multiplicative operators",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/expr.mul",
+      "publisher": "WG21 C++ draft (public rendering)",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPE-20-01 deep review: Complete N4659 expr.mul clause read via public rendering. C++17 integer division truncates toward zero, paired remainder identity requires representable quotient, and zero/unrepresentable division is undefined. Small positive/negative cases actually executed; undefined cases deliberately excluded. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cpp17-string-access",
+      "title": "C++17 draft N4659 string element access",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/string.access",
+      "publisher": "WG21 C++ draft (public rendering)",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPE-20-01 deep review: Complete N4659 string.access clause read. operator[] permits read at size returning the null character, including empty string; non-null modification of sentinel is undefined. at(size) throws. Original code reads sentinel and catches checked failure, never writes or dereferences outside the contract. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cpp17-vector-capacity",
+      "title": "C++17 draft N4659 vector capacity and invalidation",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/vector.capacity",
+      "publisher": "WG21 C++ draft (public rendering)",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPE-20-01 deep review: Complete N4659 vector.capacity clause read. Reserve leaves size unchanged, reallocates when requested capacity exceeds old capacity and invalidates all prior element addresses. Append within sufficient reserved capacity preserves prior element references. Original code discards pointer before forced reallocation; exact growth factor not assumed. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cpp17-execution",
+      "title": "C++17 draft N4659 program execution and sequencing",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/intro.execution",
+      "publisher": "WG21 C++ draft (public rendering)",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPE-20-01 deep review: Read N4659 execution text including implementation-defined/unspecified/undefined distinctions and sequencing paragraphs 14–18. Grouping differs from evaluation order; full-expression boundaries and conflicting unsequenced effects inform traces. Advanced abstract-machine examples were context, not executed or added syllabus. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cpp17-main",
+      "title": "C++17 draft N4659 main function",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/basic.start.main",
+      "publisher": "WG21 C++ draft (public rendering)",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPE-20-01 deep review: Complete N4659 main clause read. Portable int forms, nonnegative argc, conditional argv[0] meaning, null argv[argc] and special implicit return 0 support objective 1.3 repair. Original workbook uses parameter form and safely checks sentinel; it does not read private environment variables or host command-line secrets. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cpp17-ignore",
+      "title": "C++17 draft N4659 unformatted input functions",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/istream.unformatted",
+      "publisher": "WG21 C++ draft (public rendering)",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPE-20-01 deep review: Selected ignore paragraphs 25–27 and nearby getline/peek context read from N4659. Unlimited count uses numeric_limits<streamsize>::max(), and delimiter is extracted. Full unformatted stream chapter not audited. Tested recovery clears failure before consuming the line. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cpp17-string-io",
+      "title": "C++17 draft N4659 string input and output",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/string.io",
+      "publisher": "WG21 C++ draft (public rendering)",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPE-20-01 deep review: Complete N4659 string.io clause read. Formatted extraction stops before whitespace; free getline extracts its delimiter without appending it. Original in-memory streams exercise numeric extraction, leftover newline and subsequent full name. Linked sentry and locale chapters not fully audited. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "pcep-testing-policies",
       "title": "PCEP testing policies",
       "url": "https://pythoninstitute.org/pcep-testing-policies",
@@ -54434,37 +54686,167 @@
       "notes": "Popular free approximately 4h26m beginner video. Older but useful for fundamentals; reconcile details and omissions with the current official syllabus and Python documentation. September 29 PCEP-30-02 deep review: HTTP200 with 214-character title/shell text. No playback or transcript read; old roughly 4h26m duration not reverified. This is limited title-level availability evidence, not a content review. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cpe-20-01-syllabus","title":"CPE C++ Certified Entry-Level Programmer","url":"https://cppinstitute.org/cpe","publisher":"OpenEDG C++ Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["CPE-20-01"],"notes":"Canonical active exam page with four-block 28/28/24/20 syllabus, format, price, delivery, aligned resources, minimally qualified candidate profile and July 22, 2025 syllabus date."
+      "id": "cpe-20-01-syllabus",
+      "title": "CPE C++ Certified Entry-Level Programmer",
+      "url": "https://cppinstitute.org/cpe",
+      "publisher": "OpenEDG C++ Institute",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "notes": "Canonical active exam page with four-block 28/28/24/20 syllabus, format, price, delivery, aligned resources, minimally qualified candidate profile and July 22, 2025 syllabus date. September 29 CPE-20-01 deep review: Direct HTTP and objective monitor timed out. Complete current page read through public web reader: active CPE-20-01, syllabus July 22, 2025, 26 objectives in 7/8/6/5 groups, weights 28/28/24/20 and items 9/8/7/6. Thirty questions, 45 minutes plus approximately five for NDA/tutorial, 70% cumulative points with a stated 120 raw-point maximum, TestNow, English, no prerequisite, USD69/86 options. Manual snapshot comparison only; no successful automated hash comparison or snapshot rewrite. Current booking not inspected. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cpp-institute-exam-policies","title":"C++ Institute Exam Policies","url":"https://cppinstitute.org/exam-policies","publisher":"OpenEDG C++ Institute","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["CPE-20-01","CLE-10-01","CLA-11-03","CLP-12-01","CPA-21-02","CPP-22-02"],"notes":"Identification, NDA, accommodations, security and retake rules across TestNow and Pearson VUE delivery; exam-specific pages remain authoritative for channel and format."
+      "id": "cpp-institute-exam-policies",
+      "title": "C++ Institute Exam Policies",
+      "url": "https://cppinstitute.org/exam-policies",
+      "publisher": "OpenEDG C++ Institute",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CPE-20-01",
+        "CLE-10-01",
+        "CLA-11-03",
+        "CLP-12-01",
+        "CPA-21-02",
+        "CPP-22-02"
+      ],
+      "notes": "Identification, NDA, accommodations, security and retake rules across TestNow and Pearson VUE delivery; exam-specific pages remain authoritative for channel and format. September 29 CPE-20-01 deep review: Direct request timed out; complete public policy read via web reader. July 23, 2025 policy separately covers CLE/CPE TestNow and associate/professional Pearson VUE delivery: seven-day failed-retake wait for CLE/CPE versus 15 days in the other section. Admission/security/accommodation context read, not a personal booking determination. No account, exam or settings action. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cpp-institute-certification-catalog","title":"C++ Institute Certification Exams","url":"https://cppinstitute.org/certification-exams","publisher":"OpenEDG C++ Institute","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["CPE-20-01"],"notes":"Current C and C++ track/level inventory, delivery overview, recommended progression and lifetime/version-preserving certificate statement."
+      "id": "cpp-institute-certification-catalog",
+      "title": "C++ Institute Certification Exams",
+      "url": "https://cppinstitute.org/certification-exams",
+      "publisher": "OpenEDG C++ Institute",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "notes": "Current C and C++ track/level inventory, delivery overview, recommended progression and lifetime/version-preserving certificate statement. September 29 CPE-20-01 deep review: Direct request timed out; complete certification-exams catalog read through web reader. CPE remains entry-level, lifetime credential retains completed version, no replacement announcement found on examined pages. General Pearson/OnVUE language does not override CPE-specific TestNow. No unseen release channel or future availability inferred. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"openedg-cpp-essentials-1","title":"C++ Essentials - Part 1","url":"https://edube.org/study/cppe1","publisher":"OpenEDG C++ Institute / Edube","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["CPE-20-01","CPA-21-02"],"notes":"Free official C++ foundation with five modules and 42-hour listed study time. It is directly aligned to CPE and prerequisite repair for CPA; its associated-certification detail contains an apparent code typo, so use the exam page as authority."
+      "id": "openedg-cpp-essentials-1",
+      "title": "C++ Essentials - Part 1",
+      "url": "https://edube.org/study/cppe1",
+      "publisher": "OpenEDG C++ Institute / Edube",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CPE-20-01",
+        "CPA-21-02"
+      ],
+      "notes": "Free official C++ foundation with five modules and 42-hour listed study time. It is directly aligned to CPE and prerequisite repair for CPA; its associated-certification detail contains an apparent code typo, so use the exam page as authority. September 29 CPE-20-01 deep review: Complete public 6548-character landing read: 42 hours, suggested seven hours/week, English, modules 0–4 and CPE alignment. Body contains conflicting Intermediate/C-language/CLE-20-01 labels and obsolete standards prose. Those copy errors are disclosed and not adopted as exam scope. Account lessons and assessments not entered. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cisco-cpp-essentials-1","title":"C++ Essentials 1","url":"https://www.netacad.com/courses/c-plus-plus-essentials-1?courseLang=en-US","publisher":"Cisco Networking Academy / OpenEDG C++ Institute","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["CPE-20-01"],"notes":"Official partner delivery linked from the live CPE page. Dynamic public metadata did not provide a dependable current runtime, so the guide labels its estimate."
+      "id": "cisco-cpp-essentials-1",
+      "title": "C++ Essentials 1",
+      "url": "https://www.netacad.com/courses/c-plus-plus-essentials-1?courseLang=en-US",
+      "publisher": "Cisco Networking Academy / OpenEDG C++ Institute",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "notes": "Official partner delivery linked from the live CPE page. Dynamic public metadata did not provide a dependable current runtime, so the guide labels its estimate. September 29 CPE-20-01 deep review: HTTP200 but only a 52-character application shell extracted. No rendered syllabus, provider duration or lesson content verified. The 35–45-hour figure is labeled an author planning estimate. No enrollment. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"microsoft-cpp-console-calculator","title":"Create a Console Calculator in C++","url":"https://learn.microsoft.com/en-us/cpp/get-started/tutorial-console-cpp?view=msvc-170","publisher":"Microsoft Learn","authority_class":2,"source_type":"third-party-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["CPE-20-01"],"notes":"Free current Visual Studio tutorial for building, running and debugging a small C++ console application; platform-specific and not complete CPE coverage."
+      "id": "microsoft-cpp-console-calculator",
+      "title": "Create a Console Calculator in C++",
+      "url": "https://learn.microsoft.com/en-us/cpp/get-started/tutorial-console-cpp?view=msvc-170",
+      "publisher": "Microsoft Learn",
+      "authority_class": 2,
+      "source_type": "third-party-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "notes": "Free current Visual Studio tutorial for building, running and debugging a small C++ console application; platform-specific and not complete CPE coverage. September 29 CPE-20-01 deep review: Public 48934-character capture obtained despite generic authorization banner. Read initial project/setup introduction and selected Add code to do some math, calculator class/call/build subsections, and Fix divide by zero section through its close/source-control text. Other debugger/version tabs not exhaustively read. Shown infinite input loop lacks complete failed-input/EOF handling; no compiler installation, IDE session or tutorial execution claimed. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cppreference-cpp-language","title":"C++ Language Reference","url":"https://en.cppreference.com/cpp/language","publisher":"cppreference.com","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["CPE-20-01"],"notes":"Detailed independent reference for language constructs and standard-version boundaries; use targeted lookups rather than reading it linearly."
+      "id": "cppreference-cpp-language",
+      "title": "C++ Language Reference",
+      "url": "https://en.cppreference.com/cpp/language",
+      "publisher": "cppreference.com",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "notes": "Detailed independent reference for language constructs and standard-version boundaries; use targeted lookups rather than reading it linearly. September 29 CPE-20-01 deep review: Complete 6750-character language index read, with version labels through C++26. Third-party navigation reference only; linked technical chapters not fully read or used as sole authority. Original examples explicitly pinned to C++17. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pluralsight-cpp-path","title":"C++ Learning Path","url":"https://www.pluralsight.com/paths/c-plus-plus","publisher":"Pluralsight","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["CPE-20-01","CPA-21-02","CPP-22-02"],"notes":"44-hour, 13-course broad path. Use beginner courses for CPE, object-oriented/exception/pointer sections for CPA, or current Standard Library containers and algorithms for CPP; select only objective-relevant material."
+      "id": "pluralsight-cpp-path",
+      "title": "C++ Learning Path",
+      "url": "https://www.pluralsight.com/paths/c-plus-plus",
+      "publisher": "Pluralsight",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CPE-20-01",
+        "CPA-21-02",
+        "CPP-22-02"
+      ],
+      "notes": "44-hour, 13-course broad path. Use beginner courses for CPE, object-oriented/exception/pointer sections for CPA, or current Standard Library containers and algorithms for CPP; select only objective-relevant material. September 29 CPE-20-01 deep review: Complete 5729-character public listing read. Thirteen courses/44-hour headline; Learn To Program With C++ 17 is 5h19m dated May 11, 2022, C++ Fundamentals Including C++17 is 5h48m dated July 2, 2025: 667 minutes/11h07m combined. Optional Practical C++14/17 course 2h33m. Advanced path exceeds entry scope; no paid lesson, assessment or trial access. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-cpp-crash-course","title":"C++ Crash Course","url":"https://www.oreilly.com/library/view/c-crash-course/9781098122553/","publisher":"O'Reilly / No Starch Press / Josh Lospinoso","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["CPE-20-01"],"notes":"September 2019 intermediate-to-advanced C++17 book, 792 pages and 19h42m listed. Select early core-language chapters; most of the book exceeds CPE."
+      "id": "oreilly-cpp-crash-course",
+      "title": "C++ Crash Course",
+      "url": "https://www.oreilly.com/library/view/c-crash-course/9781098122553/",
+      "publisher": "O'Reilly / No Starch Press / Josh Lospinoso",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "notes": "September 2019 intermediate-to-advanced C++17 book, 792 pages and 19h42m listed. Select early core-language chapters; most of the book exceeds CPE. September 29 CPE-20-01 deep review: Direct HTTP403. Prior 19h42m runtime, current contents and paid interior not reverified; selective 8–12 hours is an author estimate. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-beginning-cpp-programming","title":"Beginning C++ Programming - From Beginner to Beyond","url":"https://www.udemy.com/course/beginning-c-plus-plus-programming/","publisher":"Udemy / Tim Buchalka's Learn Programming Academy","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["CPE-20-01","CPA-21-02"],"notes":"Broad 45h51m beginner-to-advanced marketplace course. Select fundamentals through pointers for CPE or OOP/inheritance/exceptions for CPA; keep the official syllabus authoritative."
+      "id": "udemy-beginning-cpp-programming",
+      "title": "Beginning C++ Programming - From Beginner to Beyond",
+      "url": "https://www.udemy.com/course/beginning-c-plus-plus-programming/",
+      "publisher": "Udemy / Tim Buchalka's Learn Programming Academy",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CPE-20-01",
+        "CPA-21-02"
+      ],
+      "notes": "Broad 45h51m beginner-to-advanced marketplace course. Select fundamentals through pointers for CPE or OOP/inheritance/exceptions for CPA; keep the official syllabus authoritative. September 29 CPE-20-01 deep review: Direct HTTP403. Prior 45h51m duration/current paid contents not reverified; selective 15–25 hours is an author estimate. No purchased questions or lessons. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"youtube-freecodecamp-cpp-beginner","title":"C++ Tutorial for Beginners - Full Course","url":"https://www.youtube.com/watch?v=vLnPwxZdW4Y","publisher":"freeCodeCamp.org / Giraffe Academy","authority_class":3,"source_type":"third-party-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["CPE-20-01"],"notes":"Popular free approximately 4h02m beginner video published in 2018. Useful for fundamentals but older and incomplete for the exact current CPE scope."
+      "id": "youtube-freecodecamp-cpp-beginner",
+      "title": "C++ Tutorial for Beginners - Full Course",
+      "url": "https://www.youtube.com/watch?v=vLnPwxZdW4Y",
+      "publisher": "freeCodeCamp.org / Giraffe Academy",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CPE-20-01"
+      ],
+      "notes": "Popular free approximately 4h02m beginner video published in 2018. Useful for fundamentals but older and incomplete for the exact current CPE scope. September 29 CPE-20-01 deep review: HTTP200 with only 203-character title/shell extraction. No transcript or playback read. Prior approximately 4h02m duration not reverified; title-level availability is not content review. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
     },
     {
       "id":"jse-40-01-scope","title":"JSE Certified Entry-Level JavaScript Programmer","url":"https://jsinstitute.org/jse-certification","publisher":"OpenEDG JS Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["JSE-40-01"],"notes":"Canonical active exam page with six-block public scope, format, languages, price, delivery, practice and aligned course links. The scope itself is unweighted."

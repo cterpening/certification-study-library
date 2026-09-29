@@ -3456,6 +3456,32 @@ No exact current PCEP product from Whizlabs or MeasureUp, and no dedicated PCEP 
 
 The Edube landing lists 42 hours and four course sections, but an account would be needed to assess the lessons. The practice store lists voucher redemption and launch limits; it does not establish paid-item quality. Pluralsight lists Foundations (2h41m), Data Structures (1h56m) and Simplifying Python Applications Through Functions and Modules (1h38m): the 6h15m sum is catalog arithmetic, not a full PCEP coverage claim. Microsoft's path currently lists first code, data, VS Code setup and decisions; neither its four-module count nor its tooling overview proves functions, generators and exception coverage. None of these courses was completed during this review.
 
+### CPE-20-01 — CPE C++ Certified Entry-Level Programmer
+
+Resource details from the [CPE-20-01 guide](../guides/CPE-20-01-cpp-certified-entry-level-programmer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, use another source only where its explanation fits you better, and spend at least as much time predicting, coding, testing, and debugging as watching. All third-party material is supplementary; reconcile it with the current official syllabus.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official CPE exam page and syllabus](https://cppinstitute.org/cpe) | Free official blueprint | 1–2 hours to map and recheck |
+| [C++ Institute exam policies](https://cppinstitute.org/exam-policies) | Free official policy | 20–40 minutes before scheduling |
+| [C++ Institute certification catalog](https://cppinstitute.org/certification-exams) | Free official pathway/lifecycle | 15–30 minutes |
+| [OpenEDG C++ Essentials 1](https://edube.org/study/cppe1) | Free account; public listing read, lessons not entered | 42 hours listed; 7 hours/week suggested |
+| [Cisco Networking Academy C++ Essentials 1](https://www.netacad.com/courses/c-plus-plus-essentials-1?courseLang=en-US) | Free account; application shell retrieved | 35–45 hours is an author estimate; provider duration unverified |
+| [Microsoft C++ console calculator tutorial](https://learn.microsoft.com/en-us/cpp/get-started/tutorial-console-cpp?view=msvc-170) | Free; selected setup, calculator and validation sections read | 1–2 hours plus variations is an author estimate |
+| [cppreference C++ language reference](https://en.cppreference.com/cpp/language) | Free third-party index; linked chapters not fully reviewed | 3–6 hours targeted lookup is an author estimate |
+| [Pluralsight C++ path](https://www.pluralsight.com/paths/c-plus-plus) | Subscription; public listing: 13 courses/44 hours; lessons not watched | First two: 5h19m + 5h48m = 11h07m; full path exceeds CPE scope |
+| [O'Reilly C++ Crash Course](https://www.oreilly.com/library/view/c-crash-course/9781098122553/) | Subscription; HTTP 403; prior 19h42m not reverified | Select early chapters; 8–12 hours is an author estimate |
+| [Udemy Beginning C++ Programming — From Beginner to Beyond](https://www.udemy.com/course/beginning-c-plus-plus-programming/) | Paid marketplace; HTTP 403; prior 45h51m not reverified | Select fundamentals/pointers; 15–25 hours is an author estimate |
+| [freeCodeCamp C++ Tutorial for Beginners](https://www.youtube.com/watch?v=vLnPwxZdW4Y) | Free; title/shell only, no playback or transcript | Prior approximately 4h02m not reverified; add coding time |
+
+**Source boundaries and conflicts:** The [exam page](https://cppinstitute.org/cpe), [catalog](https://cppinstitute.org/certification-exams) and [policies](https://cppinstitute.org/exam-policies) were read through a public web reader after direct timeouts. The objective monitor did not complete a successful hash comparison; snapshots were retained after manual comparison. Policies separate TestNow CLE/CPE from Pearson VUE associate/professional exams: use CPE-specific delivery and its seven-day failed-retake wait. No booking/account UI was inspected.
+
+The Edube listing confirms 42 hours and C++ Essentials 1, but contains inconsistent C-language/CLE-20-01 labels and obsolete standards prose; those copy errors do not replace the current CPE blueprint. Microsoft's calculator demonstrates an IDE workflow, but its shown loop does not fully handle failed input/EOF. Older Microsoft reference wording about remainder signs, string sentinel constness and ignore's maximum count is reconciled against the C++17 draft. Successful HTTP retrieval is not proof of rendered course content. No paid lessons, official practice items, video playback, IDE installation or local C++ execution were claimed. [Compiler Explorer API documentation](https://github.com/compiler-explorer/compiler-explorer/blob/main/docs/API.md) was read for the remote execution interface; only original public examples were submitted.
+
+No exact current MeasureUp or Whizlabs CPE-20-01 practice product was verified during this review. Prefer the provider-aligned course assessments and your own objective-based code checks over products that do not state the active exam version.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

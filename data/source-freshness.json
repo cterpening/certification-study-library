@@ -4,6 +4,179 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-cpe2001-deep-review",
+      "title": "CPE-20-01 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CPE-20-01"
+      ],
+      "results": [
+        {
+          "exam_code": "CPE-20-01",
+          "vendor_id": "cpp-institute",
+          "guide_path": "guides/CPE-20-01-cpp-certified-entry-level-programmer.md",
+          "baseline_sha256": "42e42043d758928d4a5b018d126bed80c678ee248af7d3178833ddb2852b14dd",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Full exam/catalog/policy pages read through web reader after direct timeouts. Manual comparison confirms active CPE-20-01, 26 objectives 7/8/6/5 and weights 28/28/24/20. No successful direct monitor hash comparison or snapshot rewrite."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected Microsoft primary documentation and C++17 N4659 clauses read with boundaries. Original examples executed remotely; GCC 14.2/Clang 19.1 each pass 67 workbook and 60 scenario checks. Older vendor-reference wording resolved using the pinned standard draft."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Exam page dated July 22, 2025 and current public catalog examined. CPE-20-01 remains active; no replacement announced on those pages. No unseen news, future release or booking availability inferred."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Full Edube and Pluralsight public listings read; 42 hours and 13 courses/44 hours respectively. First two Pluralsight courses total 667 minutes/11h07m. Selected Microsoft tutorial sections read with input-handling limitation. Paid lessons not reviewed."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Direct institute requests timed out; OReilly/Udemy HTTP403, Cisco/YouTube shells. Edube labels conflict; older Microsoft remainder/string/ignore wording requires C++17 clarification. Paid contents, current account/booking UI and human review remain unverified."
+            }
+          },
+          "findings": [
+            {
+              "id": "cpe2001-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Hosted main arguments require a portable contract",
+              "url": "https://timsong-cpp.github.io/cppwp/n4659/basic.start.main",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CPE-20-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "C++17 allows nonnegative argc, a null argv[argc], two portable int forms and special return 0 fallthrough. Platform-specific extensions are separate.",
+              "recommendation": "Add objective 1.3 argument/count/lifetime explanation and executed sentinel check.",
+              "disposition": "applied",
+              "source_id": "cpp17-main",
+              "resolution": "Add objective 1.3 argument/count/lifetime explanation and executed sentinel check."
+            },
+            {
+              "id": "cpe2001-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "C++17 remainder sign is defined by truncating division",
+              "url": "https://timsong-cpp.github.io/cppwp/n4659/expr.mul",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CPE-20-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "N4659 specifies truncation toward zero and quotient/remainder identity when representable; older vendor wording suggests implementation-defined signs.",
+              "recommendation": "Teach and execute -11/4, -11%4 and 11%-4; exclude undefined division/overflow.",
+              "disposition": "applied",
+              "source_id": "cpp17-multiplicative",
+              "resolution": "Teach and execute -11/4, -11%4 and 11%-4; exclude undefined division/overflow."
+            },
+            {
+              "id": "cpe2001-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Successful integer extraction does not validate a complete line",
+              "url": "https://learn.microsoft.com/en-us/cpp/standard-library/basic-istream-class?view=msvc-170",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CPE-20-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "A public original program accepts 12 from 12x; the tested parser requires the remaining input to be whitespace/EOF and preserves the destination on rejection.",
+              "recommendation": "Add strict-line parsing, explicit domain checks and clear/consume recovery with streamsize limit.",
+              "disposition": "applied",
+              "source_id": "msvc-basic-istream",
+              "resolution": "Add strict-line parsing, explicit domain checks and clear/consume recovery with streamsize limit."
+            },
+            {
+              "id": "cpe2001-deep-4",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Both named pointer conversions are explicit objective 3.5",
+              "url": "https://cppinstitute.org/cpe",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CPE-20-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The active 26-entry syllabus includes static_cast and dynamic_cast pointer conversions. Existing prose treated too much cast machinery as merely adjacent.",
+              "recommendation": "Add a minimal safe polymorphic hierarchy, success/null/failure checks and specific mappings for all 26 entries.",
+              "disposition": "applied",
+              "source_id": "cpe-20-01-syllabus",
+              "resolution": "Add a minimal safe polymorphic hierarchy, success/null/failure checks and specific mappings for all 26 entries."
+            },
+            {
+              "id": "cpe2001-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Container size and storage lifetime need separate traces",
+              "url": "https://timsong-cpp.github.io/cppwp/n4659/vector.capacity",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CPE-20-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Reserve does not create elements; reallocation invalidates stored addresses. C++17 string access has a distinct sentinel boundary.",
+              "recommendation": "Add executed reserve/resize/invalidation and string sentinel/at comparisons, discarding old pointers before reallocation.",
+              "disposition": "applied",
+              "source_id": "cpp17-vector-capacity",
+              "resolution": "Add executed reserve/resize/invalidation and string sentinel/at comparisons, discarding old pointers before reallocation."
+            },
+            {
+              "id": "cpe2001-deep-6",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Resource access and vendor copy errors remain limited",
+              "url": "https://cppinstitute.org/cpe",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CPE-20-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current exam scope is clear, but source fetches failed and public Edube labels conflict; paid interiors and booking UI were not inspected.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped all 26 numbered objectives; repaired hosted-main arguments, integer remainder, whole-line input, pointer casts, vector capacity/lifetime and string sentinel explanations. Ten public C++ blocks compiled and ran with documented contexts; 67 workbook checks and 60 scenario checks passed on GCC 14.2 and Clang 19.1 remotely. Preserved/improved 40 original answers, completed three worked programs and refreshed resource metadata. Direct primary fetches, paid interiors, vendor copy errors and human review remain qualified. Same-context AI review; human review pending. See docs/research/2026-09-29-cpe-20-01-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 5,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-29-pcep3002-deep-review",
       "title": "PCEP-30-02 complete guide and learning-content review",
       "rubric_version": 1,
