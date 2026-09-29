@@ -4,6 +4,197 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-wde4001-deep-review",
+      "title": "WDE-40-01 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "WDE-40-01"
+      ],
+      "results": [
+        {
+          "exam_code": "WDE-40-01",
+          "vendor_id": "js-institute",
+          "guide_path": "guides/WDE-40-01-certified-entry-level-web-developer.md",
+          "baseline_sha256": "f777738fd0266298a13084f10b68952d6b306b7698cd5d39839f0e30cb473d52",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Complete indexed current English HTML syllabus manually matched 40 subjects in 6/8/8/10/8 groups. Direct monitoring/PDF failed; snapshots retained and no fresh hash success claimed. Active 40-01, September 18 2025 baseline."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected primary MDN/WAI/WCAG/Schema sections support corrected teaching. Exact publicHTML/JS/Python verified;54 core and 128 browser checks and3 Nu-clean pages. Real browser APIs used original intercepted fixtures; geolocation providers/storage failures simulated."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current public credential, HTML syllabus, overview andhomepage content inspected. No replacement shown in these inspected sources; erroneous 41-01 practice row not adopted. No unseen announcement feed or actual booking audit."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Official 25-hour/six-module HTML course andpublic 31-hour/10-course/7-lab Pluralsight path inspected. Core/Pro text comparison ambiguous; Cisco shell andpaid 403 restrict access. Index reading is not course completion; author budgets separated."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Homepage Pearson/OnVUE conflicts with credential TestNow, TestNow supervision wording conflicts, appointment duration/practice product alignment unresolved. Direct official/PDF/paidaccess failed; browser download canceled and screen-reader/zoom/human review unperformed."
+            }
+          },
+          "findings": [
+            {
+              "id": "wde4001-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Forty HTML objectives require concrete examples",
+              "url": "https://jsinstitute.org/wde-exam-syllabus",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "WDE-40-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Existing scenarios were short project prompts, without reproducible original pages or browser evidence.",
+              "recommendation": "Add three complete original pages,54 core and128 browser checks, all 40 expanded answers andexact code/asset hashes; retain eight wider learner labs as proposed.",
+              "disposition": "applied",
+              "source_id": "wde-40-01-syllabus",
+              "resolution": "Add three complete original pages,54 core and128 browser checks, all 40 expanded answers andexact code/asset hashes; retain eight wider learner labs as proposed."
+            },
+            {
+              "id": "wde4001-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Native validation is a precise and bypassable contract",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Constraint_validation",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "WDE-40-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Programmatic length assignments, form.submit, empty patterns, numeric coercion andcustom validity have distinct behaviors; overview shorthand can mislead.",
+              "recommendation": "Teach and test constraints, clear custom error with empty string, distinguish zero/empty andretain server validation; UTF-16 maxlength tested through actual typing.",
+              "disposition": "applied",
+              "source_id": "mdn-html-constraints",
+              "resolution": "Teach and test constraints, clear custom error with empty string, distinguish zero/empty andretain server validation; UTF-16 maxlength tested through actual typing."
+            },
+            {
+              "id": "wde4001-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Form serialization can omit or repeat entries",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/FormData/FormData",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "WDE-40-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Disabled/unnamed/unchecked controls are omitted; repeated names and submitters need explicit treatment.",
+              "recommendation": "Verify actual GET/POST entries, readonly/disabled/legend behavior and FormData.getAll; explain that construction does not validate.",
+              "disposition": "applied",
+              "source_id": "mdn-formdata-constructor",
+              "resolution": "Verify actual GET/POST entries, readonly/disabled/legend behavior and FormData.getAll; explain that construction does not validate."
+            },
+            {
+              "id": "wde4001-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "HTML containers are not all landmarks",
+              "url": "https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "WDE-40-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Article is not a landmark andsection/form need names; header/footer depend on context. ARIA does not add behavior or remove focus.",
+              "recommendation": "Correct landmark teaching and all relevant answers; inspect actual AX names and keyboard operation with native controls.",
+              "disposition": "applied",
+              "source_id": "w3c-wai-landmarks",
+              "resolution": "Correct landmark teaching and all relevant answers; inspect actual AX names and keyboard operation with native controls."
+            },
+            {
+              "id": "wde4001-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Unsupported-element fallback differs from failed-source behavior",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/video",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "WDE-40-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Video child fallback is not automatically shown when all sources fail; Boolean attributes depend on presence and preload is only a hint.",
+              "recommendation": "Provide outside-player transcript/download links; actually decode original silent clip and parse caption, while qualifying unsupported/cross-browser limits.",
+              "disposition": "applied",
+              "source_id": "mdn-html-video",
+              "resolution": "Provide outside-player transcript/download links; actually decode original silent clip and parse caption, while qualifying unsupported/cross-browser limits."
+            },
+            {
+              "id": "wde4001-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Storage access and location require usable fallback paths",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "WDE-40-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Storage getters and writes can fail; invalid values and unrelated keys must be handled; location can fail or be unavailable.",
+              "recommendation": "Add validated preferences, key-scopedforget andexplicit exception paths; exercise eleven fake-provider cases without actual location/permission changes.",
+              "disposition": "applied",
+              "source_id": "mdn-localstorage",
+              "resolution": "Add validated preferences, key-scopedforget andexplicit exception paths; exercise eleven fake-provider cases without actual location/permission changes."
+            },
+            {
+              "id": "wde4001-deep-7",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Delivery and practice-product details conflict",
+              "url": "https://jsinstitute.org/wde-certification",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "WDE-40-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Credential TestNow conflicts with homepage Pearson/OnVUE; practice-row 41-01 differs from active 40-01 and duration/proctoring prose is ambiguous.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped all 40 objectives and improved all 40 answers. Seven exact public code blocks verified, including three complete HTML pages: 54 core and 128 Chrome browser checks, two introductory examples and hash-checked extraction of eleven original assets. Three pages passed Nu validation with zero messages. Corrected form, ARIA/landmark, media, storage and policy boundaries; eight broader labs remain proposed. Same-context AI review; human review pending. See docs/research/2026-09-29-wde-40-01-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 6,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-29-jsa4101-deep-review",
       "title": "JSA-41-01 complete guide and learning-content review",
       "rubric_version": 1,

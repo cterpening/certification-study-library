@@ -2080,6 +2080,8 @@ SHA-256:
 
 ## WDE-40-01 coverage record
 
+The September 29 [deep review](research/2026-09-29-wde-40-01-deep-review.md) maps 40 detailed objectives. Mapped all 40 objectives and improved all 40 answers. Seven exact public code blocks verified, including three complete HTML pages: 54 core and 128 Chrome browser checks, two introductory examples and hash-checked extraction of eleven original assets. Three pages passed Nu validation with zero messages. Corrected form, ARIA/landmark, media, storage and policy boundaries; eight broader labs remain proposed. Current guide citations: 40 registered, 33 reachable, 2 access-blocked, 5 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: HTML Fundamentals (15%); Text Formatting and Structure (20%); Multimedia and Hyperlinks (20%); Forms and Styling (25%); Accessibility, Best Practices, and Modern HTML (20%)

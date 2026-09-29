@@ -3573,6 +3573,29 @@ All selected-hour ranges are author planning estimates unless explicitly labeled
 
 No exact current MeasureUp or Whizlabs JSA-41-01 product was verified. Reject any practice source that cannot identify the active version and explain its question provenance; use practice for diagnosis, not memorization.
 
+### WDE-40-01 — WDE Certified Entry-Level Web Developer
+
+Resource details from the [WDE-40-01 guide](../guides/WDE-40-01-certified-entry-level-web-developer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, add focused references where useful, and spend at least as much time building, validating, and testing pages as watching. Commercial resources are supplementary; reconcile them with the current official syllabus. Times below are author planning budgets unless explicitly marked as a provider-listed total. Public contents and selected reference sections were reviewed, not every linked lesson or any paid course interior. The [review report](research/2026-09-29-wde-40-01-deep-review.md) records exact boundaries.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official WDE-40-01 syllabus](https://jsinstitute.org/wde-exam-syllabus) | Free canonical objectives and weights | 2–3 hours to map and recheck |
+| [Official WDE certification page](https://jsinstitute.org/wde-certification) | Free version, format, cost, delivery, and policy links | 30–60 minutes before purchase |
+| [OpenEDG Web Dev 101: HTML](https://jsinstitute.org/html-essentials) | Free Core / paid Pro; public prose attributes 45+ labs and a diploma to Pro; six modules and 45+ lessons listed | Provider lists 25 hours; no account lessons audited |
+| [Cisco Networking Academy HTML Essentials](https://www.netacad.com/courses/html-essentials) | Partner landing returned only an application shell; account/curriculum details unverified | Author budget about 25 hours; verify actual access |
+| [MDN Learn: Structuring content with HTML](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content) | Free current lessons and challenges | 12–20 hours with project work |
+| [W3C WAI Tutorials](https://www.w3.org/WAI/tutorials/) | Free authoritative accessibility patterns | 6–10 hours for page structure, images, tables, forms, and menus |
+| [web.dev Learn HTML](https://web.dev/learn/html) | Free modern companion; broader in selected areas | 8–12 hours with examples |
+| [Pluralsight HTML and CSS path](https://www.pluralsight.com/paths/html-and-css) | Subscription; broader 10-course/7-lab path | 31 hours listed; select entry-level HTML/CSS and relevant API labs |
+| [O'Reilly Learning Web Design, 6th Edition](https://www.oreilly.com/library/view/learning-web-design/9781098137670/) | Subscription/buy; direct access returned HTTP403, so current edition details/interiors unverified | Author budget 12–18 hours for relevant HTML/form/media/accessibility/SVG topics |
+| [Udemy Learn HTML and CSS in 7 Days](https://www.udemy.com/course/learn-html-and-css-in-7-days-web-developer-bootcamp/) | Paid marketplace course; HTTP403 prevented fresh contents/runtime review | Author budget 6–10 hours building; verify listing and map to WDE |
+
+The official course page lists free Core and USD49 Pro, but its text-rendered comparison repeats the same features for both tiers; visual disabled states may be lost. Do not infer that all Pro features are free. Pluralsight publicly lists 31 hours, ten courses and seven labs, including material beyond entry-level WDE; these are provider totals, not a prescription to complete the whole path. MDN, WAI and web.dev index review does not imply completion of their linked lessons.
+
+No exact current MeasureUp or Whizlabs WDE-40-01 product was verified. Confirm the exact WDE-40-01 practice product and its terms if practice questions are useful, and reject sources that do not identify the active version or question provenance.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

@@ -3,6 +3,412 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "js-institute-home",
+      "title": "JS Institute public home page",
+      "url": "https://www.jsinstitute.org/",
+      "publisher": "OpenEDG JS Institute",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Complete indexed homepage EXAMS/study-resource block read. WDE Pearson VUE/OnVUE wording conflicts with credential TestNow. No booking, account or delivery change performed. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "wde-syllabus-pdf",
+      "title": "WDE September2025 syllabus PDF",
+      "url": "https://jsinstitute.org/assets/68cc0c18ea3df650416107.pdf",
+      "publisher": "OpenEDG JS Institute",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Exact current linked PDF registered. Direct and web retrieval failed; content unread. Complete indexed current HTML supports the manual scope comparison; no older PDF substituted. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "w3c-wai-landmarks",
+      "title": "WAI ARIA landmark regions",
+      "url": "https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/",
+      "publisher": "W3C",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Complete 10329-character guidance body read. Header/footer context, named section/form regions, repeated landmark names, article non-landmark and iframe contexts support the corrections. Selected actual Chrome AX roles checked; no screen-reader session. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "w3c-wai-aria-practices",
+      "title": "WAI read ARIA practices first",
+      "url": "https://www.w3.org/WAI/ARIA/apg/practices/read-me-first/",
+      "publisher": "W3C",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Complete 4392-character body read. A role does not supply behavior, and examples do not guarantee browser/AT/mobile compatibility. Original native-button disclosure used; no vendor widget code copied. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "w3c-nu-validator",
+      "title": "W3C Nu HTML checker",
+      "url": "https://validator.w3.org/nu/",
+      "publisher": "W3C",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Complete 327-character checker landing read. Actually POSTed three final original HTML pages to the Nu JSON endpoint; HTTP success and zero messages, with hashes matched to public examples. Two introductory blocks checked in Chrome, not separately Nu-validated. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "schema-event",
+      "title": "Schema.org Event vocabulary",
+      "url": "https://schema.org/Event",
+      "publisher": "Schema.org",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Selected Event definition/header and properties name, description, location, startDate, endDate, eventAttendanceMode and eventStatus read. Page identifies a development version. Only opening 1300-character excerpts of three examples viewed, not the entire 82480-character page; old Flash code not adopted. Fictional microdata only, no rich-result audit. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-html-input",
+      "title": "MDN input element",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Selected input-types table, labels, client validation, accessibility labels and methods read; not the entire 57846-character page. Overbroad number typeMismatch and setCustomValidity(null) claims rejected using original browser probes. Placeholder accessibility not described as universally absent. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-html-disabled",
+      "title": "MDN disabled attribute",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/disabled",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Complete 6138-character body read. Applicable native controls are omitted, unfocusable and barred from validation. Boolean false-string and fieldset inheritance tested. Exception limited to the first legend. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-html-readonly",
+      "title": "MDN readonly attribute",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/readonly",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Complete 3287-character body read. Applicable text controls remain focusable/submitted but are barred from validation; readonly does not apply to select/checkbox. Actual typing, FormData and checkbox probes verify boundaries. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-html-constraints",
+      "title": "MDN constraint validation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Constraint_validation",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Selected input types, validation attributes, process and custom-message sections read; not all 12893 characters. Overview code-point shorthand conflicts with exact maxlength UTF-16 guidance; use the latter and actual emoji test. Programmatic length, form.submit and noValidate limits taught. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-formdata-constructor",
+      "title": "MDN FormData constructor",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/FormData/FormData",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Complete 3058-character body read. Named successful controls, disabled exclusion, explicit submitter and duplicate names tested. Construction does not validate. The formdata event was documented but not separately tested. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-html-form",
+      "title": "MDN form element",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Complete 7153-character body read. Methods, encoding, action, noValidate and submitter overrides inspected. WAI qualifies named-form landmarks. Actual intercepted GET/POST tested; no real endpoint or uploaded-file validation. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-html-iframe",
+      "title": "MDN iframe element",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Selected sandbox, referrerpolicy, loading, error/load behavior and accessibility sections read; not all 20051 characters. Original titled opaque srcdoc checklist and parent-access restriction checked. No third-party embed audit or load-success assumption. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-html-img",
+      "title": "MDN img element",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Selected alt, width/height, srcset, sizes, loading and meaningful-alt sections read; not all 28043 characters. Correct candidates, actual decoding/currentSrc and layout inspected. Sizes may affect intrinsic sizing; no universal candidate/performance guarantee. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-html-anchor",
+      "title": "MDN anchor element",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Selected download, target, strong text, skip links and security/privacy sections read; not all 18335 characters. Null opener and omitted Referer observed. Download initiation/name checked but save canceled; saved bytes unverified. No mail/telephone handler invoked. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-html-video",
+      "title": "MDN video element",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/video",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Selected controls, autoplay, muted, preload, poster, timed tracks, accessibility and multiple sources read; not all 21611 characters. Original silent WebM decoded and advanced. Outside-player fallback provided; no broad codec, browser or failed-source audit. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-html-track",
+      "title": "MDN track element",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/track",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Complete 6765-character body read. WebVTT kind, language, default and origin constraints distinguished from unsupported-element fallback. Original cue parsed during silent playback; no transcription or caption-usability audit. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-web-storage",
+      "title": "MDN Web Storage API",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Complete 6277-character body read. Origin/tab, synchronous access, third-party contexts and private-mode qualifications inspected. Actual same/different origins, tabs and reload tested; no durable-profile or third-party deployment audit. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-localstorage",
+      "title": "MDN localStorage",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Complete 3508-character body read. Getter SecurityError, scheme-specific origins, undefined file-URL behavior and persistence limits inspected. Allowlist and key-scoped removal tested; getter/quota/removal failures injected without changing permissions. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-sessionstorage",
+      "title": "MDN sessionStorage",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Complete 3683-character body read. Origin/tab scope, reload/restores and initial opener copying documented. Separately created tab and reload checked; opener-copy behavior not separately executed. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-geolocation-position",
+      "title": "MDN Geolocation.getCurrentPosition",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Complete 3273-character body read. Secure context, permission/Permissions Policy, timeout, maximumAge and high-accuracy limits inspected. Eleven fake-provider cases and a UI click tested; no real position request, permission grant or location transmission. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-aria-hidden",
+      "title": "MDN aria-hidden",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-hidden",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Complete 4766-character body read. Inherited AX hiding differs from visual/focus state; a descendant false value cannot undo ancestor true. Decorative SVG hidden while link text remains named; no complete AT audit. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-html-meta",
+      "title": "MDN meta element",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Complete 4196-character body read. Entire UTF-8 declaration within the first 1024 bytes and void metadata semantics support teaching. Actual charset and standards mode checked; no server-encoding deployment audit. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-box-sizing",
+      "title": "MDN box-sizing",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-sizing",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Complete 5873-character body read. Content/border sizing, margins, user-agent defaults and content floor inspected. Actual 100px width, 10px padding and 2px border produced 124/100px rectangles; margins excluded. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-html-maxlength",
+      "title": "MDN maxlength attribute",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/maxlength",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Complete 1981-character body read. UTF-16 units and user-input qualification inspected. Two-unit rocket emoji constrained during actual typing; not a grapheme count. Contradictory overview shorthand rejected. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-html-pattern",
+      "title": "MDN pattern attribute",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/pattern",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Complete 6636-character body read. Current v flag, full-value matching, delimiters and empty/invalid patterns inspected. Internal overview says empty is ignored while a later note says nonempty values fail; the original browser check confirms the latter. No arbitrary-regex performance audit. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-html-fieldset",
+      "title": "MDN fieldset element",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/fieldset",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Complete 5257-character body read. First-legend exception, child form association and minimum inline sizing inspected. Original width fixed for enlarged text; inherited disabled pseudo-class versus own property tested. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-svg-title",
+      "title": "MDN SVG title",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/title",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Complete 1671-character body read. Short accessible name, preference for visible labels and first-child compatibility inspected. Original title/aria-labelledby graphic found by role; no all-AT guarantee. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-svg-use",
+      "title": "MDN SVG use",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/use",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 WDE-40-01 deep review: Complete 5163-character body read. href versus deprecated xlink, cloned shadow tree, viewBox sizing, CSS and external-origin/data-URI limits inspected. Original inline symbol rendered; no external-SVG or browser-matrix audit. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "js-institute-pvue-policies",
       "title": "JS Institute Pearson VUE testing policies",
       "url": "https://jsinstitute.org/pvue-testing-policies",
@@ -25,10 +431,11 @@
       "source_type": "official-guidance",
       "access_model": "public",
       "supported_exams": [
-        "JSA-41-01"
+        "JSA-41-01",
+        "WDE-40-01"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 JSA-41-01 deep review: Correct canonical certification-tracks overview read completely through indexed fallback after direct failure. ActiveJSA 295 USD and Spanish TestNow qualification compared with credential page. Guessed certification-roadmap URL corrected before publication. No replacement announced on inspected exam/syllabus/overview, not an unseen feed or inferred release audit. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+      "notes": "September 29 JSA-41-01 deep review: Correct canonical certification-tracks overview read completely through indexed fallback after direct failure. ActiveJSA 295 USD and Spanish TestNow qualification compared with credential page. Guessed certification-roadmap URL corrected before publication. No replacement announced on inspected exam/syllabus/overview, not an unseen feed or inferred release audit. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution. September 29 WDE-40-01 deep review: Complete indexed certification overview read during immediately preceding same-date JSA research, including active WDE-40-01 and track context. Direct fetch failed. No unseen release-feed or booking audit; no replacement inferred from the practice-row copy error. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mdn-define-property",
@@ -55823,9 +56230,10 @@
       "last_checked": "2026-09-29",
       "supported_exams": [
         "JSE-40-01",
-        "JSA-41-01"
+        "JSA-41-01",
+        "WDE-40-01"
       ],
-      "notes": "Current entry-level default delivery mode, NDA/security, accommodation, age and seven-day failed-attempt wait policies. September 29 JSE-40-01 deep review: Direct timeout; complete public policy read via web reader. Opening section calls entry-level delivery non-proctored by default, but later generic delivery text calls proctoring the global default. Conflict disclosed; no determination of current booking. Failed-retake wait seven days with another voucher potentially required. Admission/NDA/security/accommodation context read; no account or exam action. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution. September 29 JSA-41-01 deep review: Direct request failed; fresh indexed policy sections read for delivery, retake, rescheduling, accommodation and age/security context. AssociateJSA proctored delivery and 7-day failed retake distinguished fromPearson 15 days. Generic entry/proctored wording is not applied as a JSA conflict; no full booking UI/diagnostics review. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+      "notes": "Current entry-level default delivery mode, NDA/security, accommodation, age and seven-day failed-attempt wait policies. September 29 JSE-40-01 deep review: Direct timeout; complete public policy read via web reader. Opening section calls entry-level delivery non-proctored by default, but later generic delivery text calls proctoring the global default. Conflict disclosed; no determination of current booking. Failed-retake wait seven days with another voucher potentially required. Admission/NDA/security/accommodation context read; no account or exam action. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution. September 29 JSA-41-01 deep review: Direct request failed; fresh indexed policy sections read for delivery, retake, rescheduling, accommodation and age/security context. AssociateJSA proctored delivery and 7-day failed retake distinguished fromPearson 15 days. Generic entry/proctored wording is not applied as a JSA conflict; no full booking UI/diagnostics review. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution. September 29 WDE-40-01 deep review: Complete indexed policy read after direct failure. Default entry-level non-proctored wording conflicts with generic proctored-delivery prose. Seven-day failed retake stated; actual WDE voucher, supervision and booking unresolved. No Pearson rules borrowed into TestNow. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "openedg-jse-40-01-practice",
@@ -56402,43 +56810,193 @@
       "notes": "Broad approximately 40-hour marketplace project course. Select object-oriented and asynchronous sections after reconciling them with the official syllabus. September 29 JSA-41-01 deep review: Direct HTTP403. Paid lessons, current curriculum/runtime and question provenance not inspected. Prior unverified 40-hour claim replaced by author-selected 15–25 hour budget. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"wde-40-01-syllabus","title":"WDE-40-01 Exam Syllabus","url":"https://jsinstitute.org/wde-exam-syllabus","publisher":"OpenEDG JS Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["WDE-40-01"],"notes":"Canonical active five-block syllabus with 40 named objectives, 15/20/20/25/20 weighting, passing requirement, candidate profile and September 18, 2025 baseline."
+      "id": "wde-40-01-syllabus",
+      "title": "WDE-40-01 Exam Syllabus",
+      "url": "https://jsinstitute.org/wde-exam-syllabus",
+      "publisher": "OpenEDG JS Institute",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "notes": "Canonical active five-block syllabus with 40 named objectives, 15/20/20/25/20 weighting, passing requirement, candidate profile and September 18, 2025 baseline. September 29 WDE-40-01 deep review: Complete indexed current English HTML syllabus read: active 40-01, September 18, 2025, all 40 objectives in groups of 6/8/8/10/8, identical item counts, and weights 15/20/20/25/20. Direct fetch and automated monitoring failed. Subjects manually matched the retained abbreviated-ID snapshot; no new hash-comparison success. Normalized 75% is not an equal-item shortcut. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"wde-certification-page","title":"WDE Certified Entry-Level Web Developer","url":"https://jsinstitute.org/wde-certification","publisher":"OpenEDG JS Institute","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["WDE-40-01"],"notes":"Current version, scope, duration, format, score, languages, price, TestNow delivery, policy, practice and learning-resource details. The page's practice label says WDE-41-01 while the active exam is WDE-40-01, so purchasers must verify the product code."
+      "id": "wde-certification-page",
+      "title": "WDE Certified Entry-Level Web Developer",
+      "url": "https://jsinstitute.org/wde-certification",
+      "publisher": "OpenEDG JS Institute",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "notes": "Current version, scope, duration, format, score, languages, price, TestNow delivery, policy, practice and learning-resource details. The page's practice label says WDE-41-01 while the active exam is WDE-40-01, so purchasers must verify the product code. September 29 WDE-40-01 deep review: Complete indexed credential page read after direct failure: 40 questions, 75%, English/Spanish, no prerequisite and USD69/86/95/practice29. Headline 60 minutes conflicts with detail separating 2–5 tutorial minutes and approximately 60 exam minutes. TestNow conflicts with homepage Pearson/OnVUE; the WDE-41-01 practice label is not a replacement announcement. No booking, checkout or expiration claim. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"js-institute-html-essentials","title":"Web Dev 101: HTML","url":"https://jsinstitute.org/html-essentials","publisher":"OpenEDG JS Institute","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["WDE-40-01","WDA-41-01"],"notes":"Official HTML foundation with a 25-hour estimate; free core content and optional paid Pro labs. It is aligned directly to WDE and is prerequisite repair rather than a WDA substitute."
+      "id": "js-institute-html-essentials",
+      "title": "Web Dev 101: HTML",
+      "url": "https://jsinstitute.org/html-essentials",
+      "publisher": "OpenEDG JS Institute",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "WDE-40-01",
+        "WDA-41-01"
+      ],
+      "notes": "Official HTML foundation with a 25-hour estimate; free core content and optional paid Pro labs. It is aligned directly to WDE and is prerequisite repair rather than a WDA substitute. September 29 WDE-40-01 deep review: Complete indexed public course landing and six-module listing read: 25 hours, 45+ lessons, free Core and USD49 Pro; prose attributes 45+ labs/diploma to Pro. Text-rendered comparison repeats tier features and may lose visual disabled styling; do not infer all Pro features are free. Unrelated data-analysis copy not adopted. No enrolled lessons or assessments read. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cisco-html-essentials","title":"HTML Essentials","url":"https://www.netacad.com/courses/html-essentials","publisher":"Cisco Networking Academy / OpenEDG JS Institute","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["WDE-40-01"],"notes":"Official partner delivery for HTML foundations. Verify the current listing and runtime after login."
+      "id": "cisco-html-essentials",
+      "title": "HTML Essentials",
+      "url": "https://www.netacad.com/courses/html-essentials",
+      "publisher": "Cisco Networking Academy / OpenEDG JS Institute",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "notes": "Official partner delivery for HTML foundations. Verify the current listing and runtime after login. September 29 WDE-40-01 deep review: HTTP200 returned a 15-character application shell. Actual access, account requirements, curriculum and runtime remain unverified. The guide's 25 hours is an author planning budget. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mdn-structuring-content","title":"Structuring Content with HTML","url":"https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content","publisher":"MDN Web Docs","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["WDE-40-01","WDA-41-01"],"notes":"Current free lessons and challenges for semantic document structure, links, images, media, tables and forms."
+      "id": "mdn-structuring-content",
+      "title": "Structuring Content with HTML",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "WDE-40-01",
+        "WDA-41-01"
+      ],
+      "notes": "Current free lessons and challenges for semantic document structure, links, images, media, tables and forms. September 29 WDE-40-01 deep review: Complete 8912-character tutorial/challenge index read. Navigation and topic comparison only, not every linked lesson. Selected primary MDN pages supply the technical evidence. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"wcag-22-recommendation","title":"Web Content Accessibility Guidelines 2.2","url":"https://www.w3.org/TR/WCAG22/","publisher":"W3C","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["WDE-40-01","WDA-41-01"],"notes":"Authoritative accessibility recommendation for both web-development syllabi; use tutorials and supporting guidance for learning."
+      "id": "wcag-22-recommendation",
+      "title": "Web Content Accessibility Guidelines 2.2",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "publisher": "W3C",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "WDE-40-01",
+        "WDA-41-01"
+      ],
+      "notes": "Authoritative accessibility recommendation for both web-development syllabi; use tutorials and supporting guidance for learning. September 29 WDE-40-01 deep review: Selected complete criterion sections read from the December 12, 2024 Recommendation: 1.1.1, 1.3.1, 1.4.3, 1.4.4, 1.4.10, 2.1.1, 2.4.1, 2.4.7, 2.4.11, 2.5.8, 3.3.1, 3.3.2, 4.1.2 and 4.1.3, including exceptions. Not the entire 155015-character standard or all linked definitions. Contrast, resizing and reflow remain separate requirements; no conformance claim. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"w3c-wai-tutorials","title":"WAI Tutorials","url":"https://www.w3.org/WAI/tutorials/","publisher":"W3C Web Accessibility Initiative","authority_class":1,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["WDE-40-01","WDA-41-01"],"notes":"Authoritative applied accessibility tutorials across page structure, images, tables, forms and menus."
+      "id": "w3c-wai-tutorials",
+      "title": "WAI Tutorials",
+      "url": "https://www.w3.org/WAI/tutorials/",
+      "publisher": "W3C Web Accessibility Initiative",
+      "authority_class": 1,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "WDE-40-01",
+        "WDA-41-01"
+      ],
+      "notes": "Authoritative applied accessibility tutorials across page structure, images, tables, forms and menus. September 29 WDE-40-01 deep review: Complete 2590-character tutorial directory read. Linked page, image and menu lessons were not all read or completed. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"w3c-wai-forms-tutorial","title":"Forms Concepts","url":"https://www.w3.org/WAI/tutorials/forms/","publisher":"W3C Web Accessibility Initiative","authority_class":1,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["WDE-40-01"],"notes":"Accessible form labels, grouping, instructions, validation, notification and multi-page workflow guidance."
+      "id": "w3c-wai-forms-tutorial",
+      "title": "Forms Concepts",
+      "url": "https://www.w3.org/WAI/tutorials/forms/",
+      "publisher": "W3C Web Accessibility Initiative",
+      "authority_class": 1,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "notes": "Accessible form labels, grouping, instructions, validation, notification and multi-page workflow guidance. September 29 WDE-40-01 deep review: Complete 3360-character forms index read for labels, grouping, instructions, validation and notifications. Linked subpages were not fully audited. Original form behavior was tested separately. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"w3c-wai-tables-tutorial","title":"Tables Concepts","url":"https://www.w3.org/WAI/tutorials/tables/","publisher":"W3C Web Accessibility Initiative","authority_class":1,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["WDE-40-01"],"notes":"Accessible data-table captions, header association and complex-table guidance."
+      "id": "w3c-wai-tables-tutorial",
+      "title": "Tables Concepts",
+      "url": "https://www.w3.org/WAI/tutorials/tables/",
+      "publisher": "W3C Web Accessibility Initiative",
+      "authority_class": 1,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "notes": "Accessible data-table captions, header association and complex-table guidance. September 29 WDE-40-01 deep review: Complete 3858-character tables index read. Original simple caption, row groups and row/column headers tested; no complex-table association audit or claim that all linked lessons were read. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"webdev-learn-html","title":"Learn HTML","url":"https://web.dev/learn/html","publisher":"Google web.dev","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["WDE-40-01"],"notes":"Free modern companion covering semantic HTML and platform features; selected topics are broader than the WDE scope."
+      "id": "webdev-learn-html",
+      "title": "Learn HTML",
+      "url": "https://web.dev/learn/html",
+      "publisher": "Google web.dev",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "WDE-40-01"
+      ],
+      "notes": "Free modern companion covering semantic HTML and platform features; selected topics are broader than the WDE scope. September 29 WDE-40-01 deep review: Complete 4218-character public contents listing with 22 sections read. Linked lessons and quizzes not completed; selected hours are author budgets. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pluralsight-html-css-path","title":"HTML and CSS Learning Path","url":"https://www.pluralsight.com/paths/html-and-css","publisher":"Pluralsight","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["WDE-40-01","WDA-41-01"],"notes":"Broad subscription path listed at about 31 hours. Select entry HTML/CSS for WDE or layout, APIs, debugging and optimization for WDA rather than consuming every course."
+      "id": "pluralsight-html-css-path",
+      "title": "HTML and CSS Learning Path",
+      "url": "https://www.pluralsight.com/paths/html-and-css",
+      "publisher": "Pluralsight",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "WDE-40-01",
+        "WDA-41-01"
+      ],
+      "notes": "Broad subscription path listed at about 31 hours. Select entry HTML/CSS for WDE or layout, APIs, debugging and optimization for WDA rather than consuming every course. September 29 WDE-40-01 deep review: Complete 11181-character public path listing read, including titles, dates, durations, prerequisites and author summaries: 31 hours, ten courses and seven labs. Broader CSS/API subjects exceed entry WDE; paid interiors unreviewed. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-learning-web-design-6","title":"Learning Web Design, 6th Edition","url":"https://www.oreilly.com/library/view/learning-web-design/9781098137670/","publisher":"O'Reilly / Jennifer Robbins","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["WDE-40-01","WDA-41-01"],"notes":"June 2025, 912-page, 30h04m listed broad reference. Select HTML/forms/media/accessibility/SVG for WDE or CSS/layout/responsive/animation/production chapters for WDA."
+      "id": "oreilly-learning-web-design-6",
+      "title": "Learning Web Design, 6th Edition",
+      "url": "https://www.oreilly.com/library/view/learning-web-design/9781098137670/",
+      "publisher": "O'Reilly / Jennifer Robbins",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "WDE-40-01",
+        "WDA-41-01"
+      ],
+      "notes": "June 2025, 912-page, 30h04m listed broad reference. Select HTML/forms/media/accessibility/SVG for WDE or CSS/layout/responsive/animation/production chapters for WDA. September 29 WDE-40-01 deep review: HTTP403; subscriber contents unavailable. Historical title retained, but old 912-page/30h04m and date claims removed because not freshly verified. Selected hours are author planning estimates. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-html-css-seven-days","title":"Learn HTML and CSS in 7 Days","url":"https://www.udemy.com/course/learn-html-and-css-in-7-days-web-developer-bootcamp/","publisher":"Udemy","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["WDE-40-01","WDA-41-01"],"notes":"Marketplace project course with about 7h10m video. Map it carefully to the active syllabus and add independent build/testing work; WDA also needs framework, preprocessor, SEO and analytics supplementation."
+      "id": "udemy-html-css-seven-days",
+      "title": "Learn HTML and CSS in 7 Days",
+      "url": "https://www.udemy.com/course/learn-html-and-css-in-7-days-web-developer-bootcamp/",
+      "publisher": "Udemy",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "WDE-40-01",
+        "WDA-41-01"
+      ],
+      "notes": "Marketplace project course with about 7h10m video. Map it carefully to the active syllabus and add independent build/testing work; WDA also needs framework, preprocessor, SEO and analytics supplementation. September 29 WDE-40-01 deep review: HTTP403; current contents, runtime and paid lessons unverified. Removed old 7h10m claim; 6–10 hours building is an author budget. Reconcile the actual listing with WDE before purchase. See docs/research/2026-09-29-wde-40-01-deep-review.md No live infrastructure execution."
     },
     {
       "id":"wda-41-01-syllabus","title":"WDA-41-01 Exam Syllabus","url":"https://jsinstitute.org/wda-exam-syllabus","publisher":"OpenEDG JS Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["WDA-41-01"],"notes":"Canonical active five-block syllabus with 40 named objectives, 25/22.5/25/12.5/15 weighting, candidate profile and September 16, 2025 baseline."
