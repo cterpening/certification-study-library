@@ -4,6 +4,271 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-ccsp-deep-review",
+      "title": "CCSP complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CCSP"
+      ],
+      "results": [
+        {
+          "exam_code": "CCSP",
+          "vendor_id": "isc2",
+          "guide_path": "guides/CCSP-isc2-certified-cloud-security-professional.md",
+          "baseline_sha256": "12dbd5b41c8ff9574f3a764e7fe5ea099c3947ba79be58e960720f9e47595538",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Entirecanonical38objectives and15pagePDF read;3pagesvisually inspected. Sixweights/AI1.6and2.9 retained. Pearsoneditarchived/accepted/postunchanged;April31notcopied. Experience/CPE/CAT distinctions."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected currentAWSKMS/AESGCM,NISTresponse/ZeroTrust/sanitization/CMVP facts.24actualcryptographic/policychecks withexplicitlimits;notfullcloud/standardsaudit."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "June30ISC2refresharticle,SepAIguidanceCCSP12-14,FebCSAtransition andNISTactive-listtransition read. Actualcalendarstatus distinguished from historical futurewording."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Official75percent completion/English90or180days;old20-40hnotreverified. LinkedIn94clips36159s/July2025;Plural5cards294m/generic. TwoHTTP403unverifiedmetadata;no paidinteriors."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "CCM197overviewvs207v4.1;futurewithdrawalnotalreadyretired. BlueprintFIPS1402vsSept22active1403transition,historicalnotrevoked. Keyrotation/rewrap/datare-encryption,context/authz andauthenticity/freshness separated."
+            }
+          },
+          "findings": [
+            {
+              "id": "ccsp-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "The monitored edit does not change the detailed scope",
+              "url": "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CCSP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Only Pearsonlabel shortened;38 numberedobjectives/sixweights unchanged.",
+              "recommendation": "Archiveoldbytes/history andacceptedit explicitly;retainAI1.6/2.9 andexcludeinvalidcalendar.",
+              "disposition": "applied",
+              "source_id": "isc2-ccsp-outline",
+              "resolution": "Archiveoldbytes/history andacceptedit explicitly;retainAI1.6/2.9 andexcludeinvalidcalendar."
+            },
+            {
+              "id": "ccsp-deep-2",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "The June announcement describes an already active refresh",
+              "url": "https://www.isc2.org/insights/2026/06/isc2-ccsp-exam-outline-revised",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CCSP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "August1effective date andsixweights confirmed bycurrentoutline.",
+              "recommendation": "Present it as currentbaseline ratherthan pendingchange.",
+              "disposition": "applied",
+              "source_id": "isc2-ccsp-2026-refresh",
+              "resolution": "Present it as currentbaseline ratherthan pendingchange."
+            },
+            {
+              "id": "ccsp-deep-3",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Experience alternatives do not stack into a two-year waiver",
+              "url": "https://www.isc2.org/certifications/ccsp/ccsp-experience-requirements",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CCSP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Onlyone degree/CCSKyear waived;CISSPsubstitution andAssociate6years distinct.",
+              "recommendation": "Separatepersonaleligibility fromcourse/examcompletion.",
+              "disposition": "applied",
+              "source_id": "isc2-ccsp-experience",
+              "resolution": "Separatepersonaleligibility fromcourse/examcompletion."
+            },
+            {
+              "id": "ccsp-deep-4",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "AI responsibilities are integrated across six domains",
+              "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CCSP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "CompleteCCSP12-14 describes architecture,data,platform,API,operations andrisk context.",
+              "recommendation": "Teachtoolauthorization,provenance/recovery andhumanaccountability without newweights orcomplianceguarantees.",
+              "disposition": "applied",
+              "source_id": "isc2-ai-exam-guidance",
+              "resolution": "Teachtoolauthorization,provenance/recovery andhumanaccountability without newweights orcomplianceguarantees."
+            },
+            {
+              "id": "ccsp-deep-5",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "The versioned release resolves the overview control-count mismatch",
+              "url": "https://cloudsecurityalliance.org/artifacts/cloud-controls-matrix-v4-1",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CCSP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "V4.1release207controls/17domains versusoverview197;referenceCAIQdifferentfromSTARsubmissionform.",
+              "recommendation": "Label exactversion and publicmetadata boundary;do notclaim fullcontrolaudit.",
+              "disposition": "applied",
+              "source_id": "csa-ccm-41-artifact",
+              "resolution": "Label exactversion and publicmetadata boundary;do notclaim fullcontrolaudit."
+            },
+            {
+              "id": "ccsp-deep-6",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Framework release does not mean immediate withdrawal of prior submissions",
+              "url": "https://cloudsecurityalliance.org/blog/2026/02/19/ccm-v4-1-transition-timeline",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CCSP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Dualversiontransition;Dec2027v4.1only timetable andJan2028withdrawal.",
+              "recommendation": "Keepcurrentversusfuturestatus explicit andverify actualengagementrules.",
+              "disposition": "applied",
+              "source_id": "csa-ccm-41-transition",
+              "resolution": "Keepcurrentversusfuturestatus explicit andverify actualengagementrules."
+            },
+            {
+              "id": "ccsp-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "The active-list transition is now past",
+              "url": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/faqs",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CCSP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "OnlyFIPS1403active fromSep22 2026;historicalnotrevoked;module/environment evidence necessary.",
+              "recommendation": "Preserveblueprint1402example whileexplainingcurrentstatus andno wholeproduct/tenantvalidationclaim.",
+              "disposition": "applied",
+              "source_id": "nist-cmvp-faq",
+              "resolution": "Preserveblueprint1402example whileexplainingcurrentstatus andno wholeproduct/tenantvalidationclaim."
+            },
+            {
+              "id": "ccsp-deep-8",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Historical module guidance is scoped to existing systems",
+              "url": "https://csrc.nist.gov/Projects/FIPS-140-3-Transition-Effort",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CCSP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Transitionpage discussescontinuedexisting-system use afterhistoricalmove.",
+              "recommendation": "Avoidblanketrevocationornewprocurementapproval;check actualmodule andrequirements.",
+              "disposition": "applied",
+              "source_id": "nist-fips1403-transition",
+              "resolution": "Avoidblanketrevocationornewprocurementapproval;check actualmodule andrequirements."
+            },
+            {
+              "id": "ccsp-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Authenticated context is non-secret and not itself caller authorization",
+              "url": "https://docs.aws.amazon.com/kms/latest/developerguide/encrypt_context.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CCSP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "AADmustmatch;contextloggedplaintext andcanparticipate inpolicies.",
+              "recommendation": "Keepsecretsout andderivecontextfromtrustedobjectdecision;localnegativecontextchecks.",
+              "disposition": "applied",
+              "source_id": "aws-kms-encryption-context",
+              "resolution": "Keepsecretsout andderivecontextfromtrustedobjectdecision;localnegativecontextchecks."
+            },
+            {
+              "id": "ccsp-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "KMS rotation does not replace DEKs or recover exposed data",
+              "url": "https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CCSP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Olderkeymaterialretained;noautomaticDEKrotation/datareencryption orcompromisedDEKmitigation.",
+              "recommendation": "Distinguish rotation/rewrapping/freshDEK anddemonstrate retainedkey exposure locally.",
+              "disposition": "applied",
+              "source_id": "aws-kms-rotation",
+              "resolution": "Distinguish rotation/rewrapping/freshDEK anddemonstrate retainedkey exposure locally."
+            },
+            {
+              "id": "ccsp-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Authenticity does not supply durable freshness or application permission",
+              "url": "https://cryptography.io/en/50.0.1/hazmat/primitives/aead/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CCSP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "AESGCMrejects changedbytes/key/nonce/AAD;authenticolderciphertext stillvalid.",
+              "recommendation": "Use24executedchecks plus explicittrustedpolicy/versionfixtures andproductionlimits.",
+              "disposition": "applied",
+              "source_id": "cryptography50-aead",
+              "resolution": "Use24executedchecks plus explicittrustedpolicy/versionfixtures andproductionlimits."
+            }
+          ],
+          "notes": "Mapped38 current objectives and preserved prior snapshots/history before accepting a testing-center label edit. Reconciled current FIPS/CSA transitions, course metadata and encryption/authorization boundaries. Added24 executed local checks,48 answered prompts and8 proposed infrastructure activities. Two commercial catalogs remain blocked; human review and infrastructure execution are pending. Same-context AI review; human review pending. See docs/research/2026-09-29-ccsp-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 11,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-sscp-deep-review",
       "title": "SSCP complete guide and learning-content review",
       "rubric_version": 1,

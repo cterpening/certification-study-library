@@ -1,0 +1,2254 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "CCSP",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/CCSP-isc2-certified-cloud-security-professional.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "96810c312e38d5e698a5ade0fffc2a88defa5b1e75f4b057fd456a80cb8f4b61",
+  "guide_after_sha256": "7309409ebb5826275fe8e94497ec8654700ef8cf8f2c872a2634d3ee32b66427",
+  "prior_records": {
+    "exam": {
+      "code": "CCSP",
+      "level": "expert",
+      "vendor_id": "isc2",
+      "title": "Certified Cloud Security Professional",
+      "status": "active",
+      "study_guide_url": "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline",
+      "guide_path": "guides/CCSP-isc2-certified-cloud-security-professional.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "ISC2 requires five years of IT experience including three in cybersecurity and one in a CCSP domain, with current one-year waiver, CISSP substitution and Associate alternatives. Practice vendor-neutral responsibility and evidence across cloud architecture, data lifecycle, platform/infrastructure, secure SDLC, operations/forensics/resilience, and legal/risk/assurance/contract design."
+    },
+    "review": {
+      "id": "ccsp-2026-09-02-source-validation",
+      "exam_code": "CCSP",
+      "guide_path": "guides/CCSP-isc2-certified-cloud-security-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ccsp-official-objectives.txt",
+      "blueprint_snapshot_sha256": "9ee040484826df7b98700a44891301a9fc46fb76351c0a941221e6f5cf1b8288",
+      "objective_coverage": [
+        {
+          "objective_group": "Cloud Concepts, Architecture and Design (17%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1, 3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Cloud Data Security (20%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Cloud Platform and Infrastructure Security (17%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 2–3",
+            "Labs 1, 4 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Cloud Application Security (16%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenario 2",
+            "Labs 5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Cloud Security Operations (17%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenarios 2–3",
+            "Labs 4 and 6–8"
+          ]
+        },
+        {
+          "objective_group": "Legal, Risk and Compliance (13%)",
+          "guide_sections": [
+            "Section 6",
+            "Scenarios 1 and 3",
+            "Labs 3, 7 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 10,
+        "reachable": 8,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Every August 1, 2026 objective is mapped through obligation and data, service/deployment model, customer/provider/partner responsibility, trust boundary, selected control and contract dependency, observable evidence, failure and recovery/exit. New AI/ML, LLM application, cloud-native and current jurisdiction topics are integrated. Three scenarios, eight authorized labs and 40 checks are included. Eight URLs are reachable; O'Reilly and Udemy are automation-blocked; none are broken. Exam readiness is separated from experience/waiver/CISSP substitution, Associate status, endorsement, ethics, 90-CPE three-year cycle and current AMF. No recalled/live item, dump, unauthorized test or copied course content is used."
+    },
+    "sources": [
+      {
+        "id": "isc2-member-policies",
+        "title": "ISC2 Member Policies",
+        "url": "https://www.isc2.org/policies-procedures/member-policies",
+        "publisher": "ISC2",
+        "authority_class": 1,
+        "source_type": "program-policy",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "CC",
+          "SSCP",
+          "CCSP",
+          "CISSP"
+        ],
+        "notes": "Canonical current three-year maintenance, CPE, AMF, suspension and reinstatement rules; extend to other ISC2 guides as published. September 29 CC deep review: Full-page CC maintenance table, CPE/grace/AMF sections and selected appeal/associate context read; not every policy independently audited. CC45GroupA/3years and15suggested annually;CC-only50USD AMF vsothercategories. No personal eligibility/appeal/renewal advice or transaction. See docs/research/2026-09-29-cc-deep-review.md No live infrastructure execution. September 29 SSCP deep review: Full-page SSCP/Associate CPE table and selected AMF, experience-window and cycle context read. 60 CPE/3 years including45 Group A;20 annual suggested. Associate15A annually/50USD versus member135USD. Not every policy or personal eligibility audited; no transaction. See docs/research/2026-09-29-sscp-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "isc2-code-of-ethics",
+        "title": "ISC2 Code of Ethics",
+        "url": "https://www.isc2.org/ethics",
+        "publisher": "ISC2",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "CC",
+          "SSCP",
+          "CCSP",
+          "CISSP"
+        ],
+        "notes": "First-party ethical obligations used for scenario reasoning; extend to other ISC2 guides as published. September 29 CC deep review: Complete public main preamble/four-canons/member-obligation text read. Paraphrased professional judgment and reporting context; no complaint filed, contact made or legal case analyzed. See docs/research/2026-09-29-cc-deep-review.md No live infrastructure execution. September 29 SSCP deep review: Complete public main preamble and four canons read in this review session and freshly fetched for SSCP. Paraphrased authority, competence and evidence responsibilities; no complaint/contact/legal analysis. See docs/research/2026-09-29-sscp-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "isc2-ccsp-outline",
+        "title": "CCSP Certification Exam Outline",
+        "url": "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline",
+        "publisher": "ISC2",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CCSP"
+        ],
+        "notes": "Canonical August 1, 2026 six-domain weighted outline, CAT delivery and five-year experience/waiver/CISSP/Associate contract; monitored by the ISC2 adapter."
+      },
+      {
+        "id": "isc2-ccsp-self-study",
+        "title": "CCSP Study Tools and Resources",
+        "url": "https://www.isc2.org/certifications/ccsp/ccsp-self-study-resources",
+        "publisher": "ISC2",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CCSP"
+        ],
+        "notes": "First-party route to the current outline, adaptive training, flash cards and Study Hub; access varies."
+      },
+      {
+        "id": "isc2-ccsp-adaptive-training",
+        "title": "CCSP Online Self-Paced Training",
+        "url": "https://www.isc2.org/training/online-self-paced/ccsp-online-self-paced",
+        "publisher": "ISC2",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CCSP"
+        ],
+        "notes": "Current adaptive official course with textbook/questions, assessments, flash cards, 90/180-day access and a published general 20–40 hour content range."
+      },
+      {
+        "id": "linkedin-isc2-ccsp-cert-prep",
+        "title": "ISC2 Certified Cloud Security Professional Cert Prep",
+        "url": "https://www.linkedin.com/learning/isc2-certified-cloud-security-professional-ccsp-cert-prep",
+        "publisher": "LinkedIn Learning / Cybrary",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CCSP"
+        ],
+        "notes": "10h02m July 2025 course with transcripts and separate practice exams; close every August 2026 objective delta."
+      },
+      {
+        "id": "pluralsight-cloud-security-path",
+        "title": "Cloud Security",
+        "url": "https://www.pluralsight.com/paths/cloud-security",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CCSP"
+        ],
+        "notes": "Five-course, five-hour current architecture/detection/API/compliance supplement; not a complete or CCSP-specific route."
+      },
+      {
+        "id": "oreilly-isc2-ccsp-study-guide-3e",
+        "title": "ISC2 CCSP Certified Cloud Security Professional Official Study Guide, 3rd Edition",
+        "url": "https://www.oreilly.com/library/view/isc-2-ccsp-certified/9781119909378/",
+        "publisher": "O'Reilly / Sybex / Mike Chapple and David Seidl",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CCSP"
+        ],
+        "notes": "October 2022, 416-page, 11h47m deep reference with practice, explicitly for the 2022–2025 objectives; close the August 2026 delta."
+      },
+      {
+        "id": "udemy-dion-isc2-ccsp-2026",
+        "title": "ISC2 CCSP Full Course and Practice Exam (2026)",
+        "url": "https://www.udemy.com/course/isc2-ccsp-full-course-practice-exam/",
+        "publisher": "Udemy / Dion Training",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CCSP"
+        ],
+        "notes": "19h59m course updated August 2026 and claiming current-outline alignment; verify technical/legal claims and use practice for rationale, never memorization."
+      },
+      {
+        "id": "csa-cloud-controls-matrix",
+        "title": "Cloud Controls Matrix",
+        "url": "https://cloudsecurityalliance.org/research/cloud-controls-matrix",
+        "publisher": "Cloud Security Alliance",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CCSP"
+        ],
+        "notes": "Vendor-neutral cloud control/accountability and assessment context; verify exact current release and organizational applicability."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "d0cad929b76bd88e443a4ed853aee1377325af0d1efffea0b0be136fdfaca74a",
+      "guide_sections": [
+        "1. Cloud Concepts, Architecture and Design — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "03932a074fefb677e1861b5dba7314189cdb59475f563710fdfd4dd82802dfc4",
+      "guide_sections": [
+        "1. Cloud Concepts, Architecture and Design — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "cf31680ba53269b5b095edf5b2fc811c11cae2552d4e29b4f797114ab4c8c187",
+      "guide_sections": [
+        "1. Cloud Concepts, Architecture and Design — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "628b9e3feef931c48776286791b9c1e99fba5a9b0b2371ed1f63d8126affc9ce",
+      "guide_sections": [
+        "1. Cloud Concepts, Architecture and Design — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "f310e0144aa69749281c6293411d478c5ca572edd1819ad98c2ba9c047c4755e",
+      "guide_sections": [
+        "1. Cloud Concepts, Architecture and Design — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "eaf29916612149e488877853204bb2fcf19625175de9229e1aca91d5d4c72bb9",
+      "guide_sections": [
+        "1. Cloud Concepts, Architecture and Design — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "c04db1fd441565e0d2af73b2caf0ccdd4b38eadb5c2352bdb83a45f2e56bd483",
+      "guide_sections": [
+        "2. Cloud Data Security — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local envelope workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "38d791f8ee8894a5ef6462460cd29617f648000c049fba03854923ddda334e96",
+      "guide_sections": [
+        "2. Cloud Data Security — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local envelope workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "7df2e6aa35fca51a450fefc0eee11b6b794ab1e47e5fe259d91ce34ace46c6f2",
+      "guide_sections": [
+        "2. Cloud Data Security — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local envelope workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "2fd76f6cd1c93c6329baad490088d03e26f1a688faec101ff6634e55bc64d047",
+      "guide_sections": [
+        "2. Cloud Data Security — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local envelope workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "6f8d10691f1e25b3d7ab7d8f6ed76f1379d7fef1533b90b4be0b48452ee727bf",
+      "guide_sections": [
+        "2. Cloud Data Security — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local envelope workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "b5a74241bdbd3a6cee251b481b7ad9c6cd193ba152debf1edecb3b53a2f33601",
+      "guide_sections": [
+        "2. Cloud Data Security — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local envelope workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "973b9654dcc53570fde1bea84b85286b193addb6e2d233dfde854923e731a7b4",
+      "guide_sections": [
+        "2. Cloud Data Security — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local envelope workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "707b4fe1fcf38801cd14d108850f80b0a6beed4ad0f13b7c8a26f6d27383b19a",
+      "guide_sections": [
+        "2. Cloud Data Security — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local envelope workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "10fa5d81fef904c46afdb6589875148d69d80cd7d20202da1514ef01d9e3aa59",
+      "guide_sections": [
+        "2. Cloud Data Security — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local envelope workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "8ccc2da027b5ac76882e0858485cd973515374f3420ebb1ecf6c05e9a7f6126d",
+      "guide_sections": [
+        "3. Cloud Platform and Infrastructure Security — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "2572ce7ea0ee5f7d9bfc8b06a45b051565ac73432a15687ba440eb621547cc53",
+      "guide_sections": [
+        "3. Cloud Platform and Infrastructure Security — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "11e60c158250cb633bcb9e458f535fba60ba523c7cda5893796ffad7994f503e",
+      "guide_sections": [
+        "3. Cloud Platform and Infrastructure Security — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "799b0aee3e2126807626e2cdcb2bf077c5ddebe8c2b351900d59ade2faafacff",
+      "guide_sections": [
+        "3. Cloud Platform and Infrastructure Security — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "b35e3abcc735f8b275730211e5e643f39341c9e9383662180926cba712a0abe9",
+      "guide_sections": [
+        "3. Cloud Platform and Infrastructure Security — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "e42099e7966be10c90e4c5c8f369338b15fee5d780cffd11f475f6b732691e35",
+      "guide_sections": [
+        "4. Cloud Application Security — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local envelope workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "48627d02b8b46c5e587836da034f1b27bef5d0b3100f719b82da683b0804ef60",
+      "guide_sections": [
+        "4. Cloud Application Security — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local envelope workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "feb4b59729a3967fb8abb66658e6a721763f82ba63c8c808ae675a3471f12444",
+      "guide_sections": [
+        "4. Cloud Application Security — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local envelope workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "ab32adfe6b295a6ef8899000e7dd16e10d56476fd44b7995e1520545d134b9f5",
+      "guide_sections": [
+        "4. Cloud Application Security — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local envelope workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "fbe80ccdc98c809678aef59bb9ed966aa4ab106bacc32684b871a9a7d88ba00d",
+      "guide_sections": [
+        "4. Cloud Application Security — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local envelope workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "8cb26e2e22bc18aceba64b419706a173d5313c7292443bbb333b5d9dee502349",
+      "guide_sections": [
+        "4. Cloud Application Security — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local envelope workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "38d2bc260ef9137b273cb07e1460dfbd0bb7ab0e672c97669494e47614a89a87",
+      "guide_sections": [
+        "4. Cloud Application Security — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local envelope workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "ec35725e882f97cb60f45de4957fc3ab8c7aafb37e5b4c76ccafa0e0a576be5b",
+      "guide_sections": [
+        "5. Cloud Security Operations — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local envelope workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "212051d11738eb8c4a5e2bafa5cad40c0cbf60f2f3b0f3ceaf10722328e57ee9",
+      "guide_sections": [
+        "5. Cloud Security Operations — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local envelope workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "90538c25a81051c25f09882052db2fb69adee9d101ea6d16856496b022cbf074",
+      "guide_sections": [
+        "5. Cloud Security Operations — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local envelope workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "bedbdc9f949f8959c673686be6faf83190a973ab059fdbc1e3e6ec3c6c521058",
+      "guide_sections": [
+        "5. Cloud Security Operations — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local envelope workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "3ec16b854f7462b021a1652d6565866353b4b7f494a9f59ed078329a8ab2ebca",
+      "guide_sections": [
+        "5. Cloud Security Operations — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local envelope workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "a5741f2dd86a81b40e27be400b68873f292dd95ad5bf76ce13d2747dae763c0d",
+      "guide_sections": [
+        "5. Cloud Security Operations — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local envelope workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "9ebcc5ac6d9e439ea8d0e1226f0b31522b951842c6395ddbc0569278d24bb931",
+      "guide_sections": [
+        "6. Legal, Risk and Compliance — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "1a3bee09d2e3c85da2e20b7f403acb7e7c7ff330b55d546285297ae0696dd645",
+      "guide_sections": [
+        "6. Legal, Risk and Compliance — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "43706946091a293aa5a980c2024518e6f0bbf493ea2d91cca6ec77bfdd1284e5",
+      "guide_sections": [
+        "6. Legal, Risk and Compliance — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "d5e1f87473b5c2905c623b0a46b56c85a9a559cf8e0fdeb59d49b918f14dd5f1",
+      "guide_sections": [
+        "6. Legal, Risk and Compliance — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "3c050f44aa3b390417d8112fb64b38fbadfb448d9d5edafe0106170d4fa8d00b",
+      "guide_sections": [
+        "6. Legal, Risk and Compliance — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "CCSP"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "CCSP",
+        "title": "Certified Cloud Security Professional",
+        "url": "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline",
+        "guide_path": "guides/CCSP-isc2-certified-cloud-security-professional.md",
+        "snapshot_path": "data\\objective-snapshots\\ccsp-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ccsp-official-status.json",
+        "previous_sha256": "9ee040484826df7b98700a44891301a9fc46fb76351c0a941221e6f5cf1b8288",
+        "current_sha256": "fef10f6e4d4ddf5249d19f5b8ab4b70700473671d5435ffea008fa8e3db84ed1",
+        "previous_status_sha256": "4fcffc4974c5e99c5a1ec70536274884c0d81811b9c4289a18bd8c43d1505823",
+        "current_status_sha256": "177065095c252830f8e7a4780387f26a0362751e0148715a260fc690530c1e96",
+        "official_status": {
+          "skills_versions": [
+            "AUGUST 1, 2026",
+            "Length of exam: 3 hours",
+            "Number of items: 100-150",
+            "Item format: Multiple choice and advanced item types",
+            "Passing grade: 700 out of 1000 points",
+            "Exam language availability: English, Chinese, Japanese and German",
+            "Testing center: Pearson Testing Center",
+            "Candidates must have a minimum of five years cumulative, full-time experience in Information Technology (IT). Three years must be in cybersecurity, and one year must be in one or more of the six domains of the current CCSP Exam Outline . Earning a post-secondary degree (bachelors or masters) in computer science, IT or related fields may satisfy up to one year of the required experience. Earning CSA’s CCSK certificate can be substituted for one year of experience. Only one year of experience can be waived. An active CISSP credential can be substituted for the entire CCSP experience requirement. Part-time work and internships may also count towards the experience requirement."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 26,
+    "reachable": 24,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "isc2-member-policies",
+      "url": "https://www.isc2.org/policies-procedures/member-policies",
+      "checked_at": "2026-09-29T12:36:28.474331+00:00",
+      "health": {
+        "id": "isc2-member-policies",
+        "url": "https://www.isc2.org/policies-procedures/member-policies",
+        "checked_at": "2026-09-29T12:36:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/policies-procedures/member-policies",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Member Policies",
+        "canonical_url": "https://www.isc2.org/policies-procedures/member-policies",
+        "duration_signals": [],
+        "signal_fingerprint": "91d58a7a0189afa3c90b0e203247190ea46b5a1d9effcf794a97dc675216775a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/policies-procedures/member-policies",
+      "sha256": "0018b6c861a8f32739506eb6ff5939887565c281597585983a205bc6f248a49d",
+      "text_characters": 442,
+      "full_page_extraction": {
+        "characters": 41110,
+        "sha256": "e8924397368a2b3c9905de59aed15491c3f56d235b38629da5331bfe14d7007f",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "isc2-code-of-ethics",
+      "url": "https://www.isc2.org/ethics",
+      "checked_at": "2026-09-29T12:36:28.475412+00:00",
+      "health": {
+        "id": "isc2-code-of-ethics",
+        "url": "https://www.isc2.org/ethics",
+        "checked_at": "2026-09-29T12:36:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/ethics",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ISC2 Code of Ethics—Guidance for Cybersecurity Professionals",
+        "canonical_url": "https://www.isc2.org/ethics",
+        "duration_signals": [],
+        "signal_fingerprint": "7a9373b56e9e31d711af75585a8c507b34f6bda42c2694067ca96f0d1499903d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/ethics",
+      "sha256": "ad3c77bcdb73cf0303b22b49ce119f963efe64f7fc05d8bd9f9818be5701fe72",
+      "text_characters": 1484,
+      "full_page_extraction": {
+        "characters": 9260,
+        "sha256": "54f59a5c3d6121b84766efb79f01777aeaf95b5603e6209655d258697f6290bb",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "isc2-ccsp-outline",
+      "url": "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline",
+      "checked_at": "2026-09-29T12:36:28.476223+00:00",
+      "health": {
+        "id": "isc2-ccsp-outline",
+        "url": "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline",
+        "checked_at": "2026-09-29T12:36:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CCSP Exam Outline",
+        "canonical_url": "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline",
+        "duration_signals": [
+          "3 hours"
+        ],
+        "signal_fingerprint": "1518b4c8b534717868f465273359bbb5f1aa927163afc74fe0d9d3b3c589979f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline",
+      "sha256": "8b6f1f7d029b1d5782e451004ab4819b9b725f23285c9ee4695bca44a68cf120",
+      "text_characters": 674,
+      "full_page_extraction": {
+        "characters": 28094,
+        "sha256": "f31b13009bdf6ad55c02e895dc62906fe1829209f95f03350d22f1272a80ef2e",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "isc2-ccsp-self-study",
+      "url": "https://www.isc2.org/certifications/ccsp/ccsp-self-study-resources",
+      "checked_at": "2026-09-29T12:36:30.491434+00:00",
+      "health": {
+        "id": "isc2-ccsp-self-study",
+        "url": "https://www.isc2.org/certifications/ccsp/ccsp-self-study-resources",
+        "checked_at": "2026-09-29T12:36:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/certifications/ccsp/ccsp-self-study-resources",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Self-Study Tools and Resources for the ISC2 CCSP Exam",
+        "canonical_url": "https://www.isc2.org/certifications/ccsp/ccsp-self-study-resources",
+        "duration_signals": [],
+        "signal_fingerprint": "7172985fd363cffeb53d8aed1878c1bc63fd1e2e2d786855f7a583db2cf5eae7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/certifications/ccsp/ccsp-self-study-resources",
+      "sha256": "c5c896629c581f333fc61cd74cbe0922c81bc6eea499f94519ecf1d914753238",
+      "text_characters": 1989,
+      "full_page_extraction": {
+        "characters": 3160,
+        "sha256": "daf7717969b2d2dfa85be8987609f5ccc9b4d28e2a736f620856d6bf7d22346a",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "isc2-ccsp-adaptive-training",
+      "url": "https://www.isc2.org/training/online-self-paced/ccsp-online-self-paced",
+      "checked_at": "2026-09-29T12:36:30.671895+00:00",
+      "health": {
+        "id": "isc2-ccsp-adaptive-training",
+        "url": "https://www.isc2.org/training/online-self-paced/ccsp-online-self-paced",
+        "checked_at": "2026-09-29T12:36:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/training/online-self-paced/ccsp-online-self-paced",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CCSP Self-Paced Training, A Custom Learning Experience",
+        "canonical_url": "https://www.isc2.org/training/online-self-paced/ccsp-online-self-paced",
+        "duration_signals": [],
+        "signal_fingerprint": "3b9030b0526a17521e61b8138d8474cfc667a3b8dda6ea725f1794ae699d6fa8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/training/online-self-paced/ccsp-online-self-paced",
+      "sha256": "94f751a0a87b06ffa7a0ccdc62618c71068177e82c7b05c8f243ead8f16777ae",
+      "text_characters": 1911,
+      "full_page_extraction": {
+        "characters": 10766,
+        "sha256": "fd34f7ffd0e4d38e9631a40398f94073f0c6f49acd9de775c15708c63e9fb025",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "linkedin-isc2-ccsp-cert-prep",
+      "url": "https://www.linkedin.com/learning/isc2-certified-cloud-security-professional-ccsp-cert-prep",
+      "checked_at": "2026-09-29T12:36:30.779966+00:00",
+      "health": {
+        "id": "linkedin-isc2-ccsp-cert-prep",
+        "url": "https://www.linkedin.com/learning/isc2-certified-cloud-security-professional-ccsp-cert-prep",
+        "checked_at": "2026-09-29T12:36:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.linkedin.com/learning/isc2-certified-cloud-security-professional-ccsp-cert-prep",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ISC2 Certified Cloud Security Professional (CCSP) Cert Prep Online Class | LinkedIn Learning, formerly Lynda.com",
+        "canonical_url": "https://www.linkedin.com/learning/isc2-certified-cloud-security-professional-ccsp-cert-prep",
+        "duration_signals": [
+          "PT10H2M39S",
+          "PT10M11S",
+          "PT10M21S",
+          "PT12M16S",
+          "PT12M30S",
+          "PT12M5S",
+          "PT13M18S",
+          "PT13M6S",
+          "PT1M57S",
+          "PT1M59S",
+          "PT1M9S",
+          "PT2M36S",
+          "PT2M45S",
+          "PT2M4S",
+          "PT3M16S",
+          "PT3M22S",
+          "PT3M23S",
+          "PT3M47S",
+          "PT3M51S",
+          "PT3M54S",
+          "PT3M59S",
+          "PT3M8S",
+          "PT48S",
+          "PT4M11S",
+          "PT4M13S",
+          "PT4M26S",
+          "PT4M27S",
+          "PT4M39S",
+          "PT4M41S",
+          "PT4M51S"
+        ],
+        "signal_fingerprint": "e5dd742e7255b40974b2de39d2470e8871d41b11449725f3ee348ab02b3dfafa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.linkedin.com/learning/isc2-certified-cloud-security-professional-ccsp-cert-prep",
+      "sha256": "811fa8fe022e418e5cefe9c7cbbba30cc305b935ffac47671335e82ff8713ac6",
+      "text_characters": 7727
+    },
+    {
+      "id": "pluralsight-cloud-security-path",
+      "url": "https://www.pluralsight.com/paths/cloud-security",
+      "checked_at": "2026-09-29T12:36:32.346302+00:00",
+      "health": {
+        "id": "pluralsight-cloud-security-path",
+        "url": "https://www.pluralsight.com/paths/cloud-security",
+        "checked_at": "2026-09-29T12:36:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/cloud-security",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Cloud Security",
+        "canonical_url": "https://www.pluralsight.com/paths/cloud-security",
+        "duration_signals": [
+          "10 minutes",
+          "5 Hours"
+        ],
+        "signal_fingerprint": "3c5de144b3258e1b03c914a673a7bdbeac1639dff5f71288d896a14ed72fc644",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/cloud-security",
+      "sha256": "2bcbe1475a76947063c95a6139da0f260ffbaba97f8bd251f3a19bfa3866ee84",
+      "text_characters": 3086
+    },
+    {
+      "id": "oreilly-isc2-ccsp-study-guide-3e",
+      "url": "https://www.oreilly.com/library/view/isc-2-ccsp-certified/9781119909378/",
+      "checked_at": "2026-09-29T12:36:32.397362+00:00",
+      "health": {
+        "id": "oreilly-isc2-ccsp-study-guide-3e",
+        "url": "https://www.oreilly.com/library/view/isc-2-ccsp-certified/9781119909378/",
+        "checked_at": "2026-09-29T12:36:32+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/isc-2-ccsp-certified/9781119909378/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "udemy-dion-isc2-ccsp-2026",
+      "url": "https://www.udemy.com/course/isc2-ccsp-full-course-practice-exam/",
+      "checked_at": "2026-09-29T12:36:32.597261+00:00",
+      "health": {
+        "id": "udemy-dion-isc2-ccsp-2026",
+        "url": "https://www.udemy.com/course/isc2-ccsp-full-course-practice-exam/",
+        "checked_at": "2026-09-29T12:36:32+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/isc2-ccsp-full-course-practice-exam/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "csa-cloud-controls-matrix",
+      "url": "https://cloudsecurityalliance.org/research/cloud-controls-matrix",
+      "checked_at": "2026-09-29T12:36:32.677163+00:00",
+      "health": {
+        "id": "csa-cloud-controls-matrix",
+        "url": "https://cloudsecurityalliance.org/research/cloud-controls-matrix",
+        "checked_at": "2026-09-29T12:36:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloudsecurityalliance.org/research/cloud-controls-matrix",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Cloud Controls Matrix | CSA",
+        "canonical_url": "https://cloudsecurityalliance.org/research/cloud-controls-matrix",
+        "duration_signals": [],
+        "signal_fingerprint": "d8a0e0d3d5b1862bb52e6bec8d1743697d47fe89fc7c4dfe7fd5de019058c8ab",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cloudsecurityalliance.org/research/cloud-controls-matrix",
+      "sha256": "510c60ca8a3310825210211a077410cd096431e4b20314dcec25c951f8c61ebf",
+      "text_characters": 4577
+    },
+    {
+      "id": "isc2-cat-policy",
+      "url": "https://www.isc2.org/certifications/computerized-adaptive-testing",
+      "checked_at": "2026-09-29T12:38:18.291557+00:00",
+      "health": {
+        "id": "isc2-cat-policy",
+        "url": "https://www.isc2.org/certifications/computerized-adaptive-testing",
+        "checked_at": "2026-09-29T12:38:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/certifications/computerized-adaptive-testing",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Computerized Adaptive Testing",
+        "canonical_url": "https://www.isc2.org/certifications/computerized-adaptive-testing",
+        "duration_signals": [],
+        "signal_fingerprint": "22554610ea2cc26f338669a2bdd622cfd5b7ed8113eff37535bcb0f52e88b928",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/certifications/computerized-adaptive-testing",
+      "sha256": "f087b382340162e9c0134f15ff2af7bdbb5f437781a522e03be8f3950647dede",
+      "text_characters": 847,
+      "full_page_extraction": {
+        "characters": 15171,
+        "sha256": "e75bad8527c9d80e93affdcaa4102d21a4ae3dcdfd1cfb91a7ec5363f17646a1",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "isc2-ccsp-experience",
+      "url": "https://www.isc2.org/certifications/ccsp/ccsp-experience-requirements",
+      "checked_at": "2026-09-29T12:38:18.292399+00:00",
+      "health": {
+        "id": "isc2-ccsp-experience",
+        "url": "https://www.isc2.org/certifications/ccsp/ccsp-experience-requirements",
+        "checked_at": "2026-09-29T12:38:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/certifications/ccsp/ccsp-experience-requirements",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Experience Needed for the ISC2 CCSP Certification",
+        "canonical_url": "https://www.isc2.org/certifications/ccsp/ccsp-experience-requirements",
+        "duration_signals": [
+          "1040 hours",
+          "20 hours",
+          "2080 hours",
+          "34 hours",
+          "35 hours"
+        ],
+        "signal_fingerprint": "591e920e169d09b4da9d6ae88986c1138c97ec500da39396750d2f3b3f9893ff",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/certifications/ccsp/ccsp-experience-requirements",
+      "sha256": "c8585822ff681ef01e8f984e40a4e68f5b86239ffa78dbab8abc2f8518f020da",
+      "text_characters": 2258,
+      "full_page_extraction": {
+        "characters": 3254,
+        "sha256": "37edbfcb54ab9712261f60fae99c05ea1fb1a4ded5c77cdbf9ef10e8c957c5d5",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "isc2-ccsp-2026-refresh",
+      "url": "https://www.isc2.org/insights/2026/06/isc2-ccsp-exam-outline-revised",
+      "checked_at": "2026-09-29T12:38:18.292893+00:00",
+      "health": {
+        "id": "isc2-ccsp-2026-refresh",
+        "url": "https://www.isc2.org/insights/2026/06/isc2-ccsp-exam-outline-revised",
+        "checked_at": "2026-09-29T12:38:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/insights/2026/06/isc2-ccsp-exam-outline-revised",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ISC2 Refreshes CCSP Exam",
+        "canonical_url": "https://www.isc2.org/Insights/2026/06/isc2-ccsp-exam-outline-revised",
+        "duration_signals": [],
+        "signal_fingerprint": "54a1ca0f54487664e10f5e37e6d67b77ad6115e0c5d626272753c398d0993205",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/insights/2026/06/isc2-ccsp-exam-outline-revised",
+      "sha256": "6f0663febda4d8a9b6285fb40fd798554e1644a48af159b1bf2629b8be32953a",
+      "text_characters": 20,
+      "full_page_extraction": {
+        "characters": 3875,
+        "sha256": "87b15929b2eaaf9012900882323b5a8042e28b422cafc45c5f9e5426fe80d359",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "csa-ccm-41-artifact",
+      "url": "https://cloudsecurityalliance.org/artifacts/cloud-controls-matrix-v4-1",
+      "checked_at": "2026-09-29T12:38:19.449541+00:00",
+      "health": {
+        "id": "csa-ccm-41-artifact",
+        "url": "https://cloudsecurityalliance.org/artifacts/cloud-controls-matrix-v4-1",
+        "checked_at": "2026-09-29T12:38:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloudsecurityalliance.org/artifacts/cloud-controls-matrix-v4-1",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Cloud Controls Matrix and CAIQ v4.1 | CSA",
+        "canonical_url": "https://cloudsecurityalliance.org/artifacts/cloud-controls-matrix-v4-1",
+        "duration_signals": [],
+        "signal_fingerprint": "131ec5fba5b5adda9b7b5e987a872bb9a7a1cfed3fbd858d66b9dec8a2c107d0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cloudsecurityalliance.org/artifacts/cloud-controls-matrix-v4-1",
+      "sha256": "4c2f208b2d5db10b3e645b06c86e3ff8b2312bf9fc046236023a4d23065ed22e",
+      "text_characters": 3248
+    },
+    {
+      "id": "csa-ccm-41-transition",
+      "url": "https://cloudsecurityalliance.org/blog/2026/02/19/ccm-v4-1-transition-timeline",
+      "checked_at": "2026-09-29T12:38:19.832380+00:00",
+      "health": {
+        "id": "csa-ccm-41-transition",
+        "url": "https://cloudsecurityalliance.org/blog/2026/02/19/ccm-v4-1-transition-timeline",
+        "checked_at": "2026-09-29T12:38:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloudsecurityalliance.org/blog/2026/02/19/ccm-v4-1-transition-timeline",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CCM v4.1 Transition Timeline | CSA",
+        "canonical_url": "https://cloudsecurityalliance.org/blog/2026/02/19/ccm-v4-1-transition-timeline",
+        "duration_signals": [],
+        "signal_fingerprint": "661cf9b3c992e0accb95fbecae8edac28f68611f565b856b21a5399d1f11ec8b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cloudsecurityalliance.org/blog/2026/02/19/ccm-v4-1-transition-timeline",
+      "sha256": "ea72c819eac15f57fcb4c588b7bf207433934172f4b44932e97f5d412c277f82",
+      "text_characters": 8500
+    },
+    {
+      "id": "aws-kms-key-concepts",
+      "url": "https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html",
+      "checked_at": "2026-09-29T12:38:20.407787+00:00",
+      "health": {
+        "id": "aws-kms-key-concepts",
+        "url": "https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html",
+        "checked_at": "2026-09-29T12:38:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html",
+        "content_type": "text/html",
+        "page_title": "AWS KMS keys - AWS Key Management ServiceAWS KMS keys - AWS Key Management Service",
+        "canonical_url": "https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html",
+        "duration_signals": [],
+        "signal_fingerprint": "0f716a83dad8b3b0f3ba41d2b6c49a14db783e6bb0135c0761ca148d08720633",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html",
+      "sha256": "a1d63be697f9fb19331896708400f3627f318a8ae9a9a712d36f1d3a7e8c1acb",
+      "text_characters": 17156
+    },
+    {
+      "id": "aws-kms-encryption-context",
+      "url": "https://docs.aws.amazon.com/kms/latest/developerguide/encrypt_context.html",
+      "checked_at": "2026-09-29T12:38:20.449268+00:00",
+      "health": {
+        "id": "aws-kms-encryption-context",
+        "url": "https://docs.aws.amazon.com/kms/latest/developerguide/encrypt_context.html",
+        "checked_at": "2026-09-29T12:38:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/kms/latest/developerguide/encrypt_context.html",
+        "content_type": "text/html",
+        "page_title": "Encryption context - AWS Key Management ServiceEncryption context - AWS Key Management Service",
+        "canonical_url": "https://docs.aws.amazon.com/kms/latest/developerguide/encrypt_context.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6df5784ce9de367232317655c0030e1f115013341d67476ee8a4d3a3d2fcb6a1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/kms/latest/developerguide/encrypt_context.html",
+      "sha256": "a7960caa055855a89fec06adb42ff1e17546fc20cdf950cc5bdcfd82bfdcfd45",
+      "text_characters": 7413
+    },
+    {
+      "id": "aws-kms-rotation",
+      "url": "https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html",
+      "checked_at": "2026-09-29T12:38:20.824633+00:00",
+      "health": {
+        "id": "aws-kms-rotation",
+        "url": "https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html",
+        "checked_at": "2026-09-29T12:38:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html",
+        "content_type": "text/html",
+        "page_title": "Rotate AWS KMS keys - AWS Key Management ServiceRotate AWS KMS keys - AWS Key Management Service",
+        "canonical_url": "https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html",
+        "duration_signals": [],
+        "signal_fingerprint": "321276eb217b5c928277e996a969722fd47b6fee6b7c086a5232784f543dce50",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html",
+      "sha256": "9f72ac684e5b55a9dafa01ab51dc9d536ac0803732c7efae33a9f63f8653ac36",
+      "text_characters": 15921
+    },
+    {
+      "id": "cryptography50-aead",
+      "url": "https://cryptography.io/en/50.0.1/hazmat/primitives/aead/",
+      "checked_at": "2026-09-29T12:38:20.834673+00:00",
+      "health": {
+        "id": "cryptography50-aead",
+        "url": "https://cryptography.io/en/50.0.1/hazmat/primitives/aead/",
+        "checked_at": "2026-09-29T12:38:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cryptography.io/en/50.0.1/hazmat/primitives/aead/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Authenticated encryption — Cryptography 50.0.1 documentation",
+        "canonical_url": "https://cryptography.io/en/50.0.1/hazmat/primitives/aead/",
+        "duration_signals": [],
+        "signal_fingerprint": "26380df13823cbb3ad682185d81148dfe1ee6b80e1d1559a49980f812698b086",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cryptography.io/en/50.0.1/hazmat/primitives/aead/",
+      "sha256": "2cd41764081c5feb674dfcfab06d0e037c12096ddf0cde46a55bc20616bdd920",
+      "text_characters": 30808
+    },
+    {
+      "id": "isc2-ai-exam-guidance",
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+      "checked_at": "2026-09-29T12:38:33.887370+00:00",
+      "health": {
+        "id": "isc2-ai-exam-guidance",
+        "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+        "checked_at": "2026-09-29T12:38:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+      "sha256": "69cd0cfa50fac68a60370f812f0ce5f6f33b1a861eac66b4c66e2e410fbb0741",
+      "bytes": 506895,
+      "pdf_pages": 29,
+      "text_characters": 70743
+    },
+    {
+      "id": "nist-sp800-61r3-pdf",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "checked_at": "2026-09-29T12:38:37.552673+00:00",
+      "health": {
+        "id": "nist-sp800-61r3-pdf",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "checked_at": "2026-09-29T12:38:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "sha256": "e5593d6bb85daecec7e8d9549400c7b3473bcc3f06e469c82218073afa7fba2d",
+      "bytes": 1040566,
+      "pdf_pages": 48,
+      "text_characters": 107538
+    },
+    {
+      "id": "nist-800-207",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "checked_at": "2026-09-29T12:38:36.194230+00:00",
+      "health": {
+        "id": "nist-800-207",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "checked_at": "2026-09-29T12:38:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "sha256": "0290d6ece24874287316f4bf430fef770aa4ec08a2227c8f2c1e5b2ff975e03d",
+      "bytes": 966908,
+      "pdf_pages": 59,
+      "text_characters": 156827
+    },
+    {
+      "id": "nist-800-88r2",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "checked_at": "2026-09-29T12:38:39.476372+00:00",
+      "health": {
+        "id": "nist-800-88r2",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+        "checked_at": "2026-09-29T12:38:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "sha256": "39bb805c72723ed74f08e5806cd8463ca2554a62abb4f97b9d19c0398a8a7c55",
+      "bytes": 983677,
+      "pdf_pages": 48,
+      "text_characters": 112553
+    },
+    {
+      "id": "isc2-ccsp-outline-2026-pdf",
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/EXAMS-CCSP-Exam-Outline-English-01-2026-V2.pdf",
+      "checked_at": "2026-09-29T12:38:39.061888+00:00",
+      "health": {
+        "id": "isc2-ccsp-outline-2026-pdf",
+        "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/EXAMS-CCSP-Exam-Outline-English-01-2026-V2.pdf",
+        "checked_at": "2026-09-29T12:38:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/EXAMS-CCSP-Exam-Outline-English-01-2026-V2.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/EXAMS-CCSP-Exam-Outline-English-01-2026-V2.pdf",
+      "sha256": "61189f31c2283b655d7e7a1daa31f3a775f115939b2efe1305400dc87346e41e",
+      "bytes": 302589,
+      "pdf_pages": 15,
+      "text_characters": 22190
+    },
+    {
+      "id": "nist-cmvp-faq",
+      "url": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/faqs",
+      "checked_at": "2026-09-29T12:40:26.034806+00:00",
+      "health": {
+        "id": "nist-cmvp-faq",
+        "url": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/faqs",
+        "checked_at": "2026-09-29T12:40:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/faqs",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Cryptographic Module Validation Program | CSRCLock",
+        "canonical_url": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/faqs",
+        "duration_signals": [],
+        "signal_fingerprint": "c17f02ad90b98a087d59b37e52805105bb7a2c8ec4349dc05bcf03ab2e10bb38",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/faqs",
+      "sha256": "d9782c3c4441ab80a85bc128724ad0ebef2615c1e43186585a384f10c33d5b5a",
+      "text_characters": 24108
+    },
+    {
+      "id": "nist-fips1403-transition",
+      "url": "https://csrc.nist.gov/Projects/FIPS-140-3-Transition-Effort",
+      "checked_at": "2026-09-29T12:40:26.035596+00:00",
+      "health": {
+        "id": "nist-fips1403-transition",
+        "url": "https://csrc.nist.gov/Projects/FIPS-140-3-Transition-Effort",
+        "checked_at": "2026-09-29T12:40:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://csrc.nist.gov/Projects/FIPS-140-3-Transition-Effort",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "FIPS 140-3 Transition Effort | CSRCLock",
+        "canonical_url": "https://csrc.nist.gov/Projects/FIPS-140-3-Transition-Effort",
+        "duration_signals": [],
+        "signal_fingerprint": "a24d679569f8622303cc2a1b4ee915889f4c0d890847dea58f9e44cab7dc1083",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://csrc.nist.gov/Projects/FIPS-140-3-Transition-Effort",
+      "sha256": "a9718b1b929ffbf73a4aa328ea77ea467636846bfa8151322a92a02348be658d",
+      "text_characters": 6813
+    }
+  ],
+  "added_source_ids": [
+    "isc2-ccsp-outline-2026-pdf",
+    "isc2-ccsp-experience",
+    "isc2-ccsp-2026-refresh",
+    "csa-ccm-41-artifact",
+    "csa-ccm-41-transition",
+    "aws-kms-key-concepts",
+    "aws-kms-encryption-context",
+    "nist-cmvp-faq",
+    "nist-fips1403-transition"
+  ],
+  "findings": [
+    {
+      "id": "ccsp-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "The monitored edit does not change the detailed scope",
+      "url": "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CCSP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Only Pearsonlabel shortened;38 numberedobjectives/sixweights unchanged.",
+      "recommendation": "Archiveoldbytes/history andacceptedit explicitly;retainAI1.6/2.9 andexcludeinvalidcalendar.",
+      "disposition": "applied",
+      "source_id": "isc2-ccsp-outline",
+      "resolution": "Archiveoldbytes/history andacceptedit explicitly;retainAI1.6/2.9 andexcludeinvalidcalendar."
+    },
+    {
+      "id": "ccsp-deep-2",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "The June announcement describes an already active refresh",
+      "url": "https://www.isc2.org/insights/2026/06/isc2-ccsp-exam-outline-revised",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CCSP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "August1effective date andsixweights confirmed bycurrentoutline.",
+      "recommendation": "Present it as currentbaseline ratherthan pendingchange.",
+      "disposition": "applied",
+      "source_id": "isc2-ccsp-2026-refresh",
+      "resolution": "Present it as currentbaseline ratherthan pendingchange."
+    },
+    {
+      "id": "ccsp-deep-3",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Experience alternatives do not stack into a two-year waiver",
+      "url": "https://www.isc2.org/certifications/ccsp/ccsp-experience-requirements",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CCSP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Onlyone degree/CCSKyear waived;CISSPsubstitution andAssociate6years distinct.",
+      "recommendation": "Separatepersonaleligibility fromcourse/examcompletion.",
+      "disposition": "applied",
+      "source_id": "isc2-ccsp-experience",
+      "resolution": "Separatepersonaleligibility fromcourse/examcompletion."
+    },
+    {
+      "id": "ccsp-deep-4",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "AI responsibilities are integrated across six domains",
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CCSP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "CompleteCCSP12-14 describes architecture,data,platform,API,operations andrisk context.",
+      "recommendation": "Teachtoolauthorization,provenance/recovery andhumanaccountability without newweights orcomplianceguarantees.",
+      "disposition": "applied",
+      "source_id": "isc2-ai-exam-guidance",
+      "resolution": "Teachtoolauthorization,provenance/recovery andhumanaccountability without newweights orcomplianceguarantees."
+    },
+    {
+      "id": "ccsp-deep-5",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "The versioned release resolves the overview control-count mismatch",
+      "url": "https://cloudsecurityalliance.org/artifacts/cloud-controls-matrix-v4-1",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CCSP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "V4.1release207controls/17domains versusoverview197;referenceCAIQdifferentfromSTARsubmissionform.",
+      "recommendation": "Label exactversion and publicmetadata boundary;do notclaim fullcontrolaudit.",
+      "disposition": "applied",
+      "source_id": "csa-ccm-41-artifact",
+      "resolution": "Label exactversion and publicmetadata boundary;do notclaim fullcontrolaudit."
+    },
+    {
+      "id": "ccsp-deep-6",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Framework release does not mean immediate withdrawal of prior submissions",
+      "url": "https://cloudsecurityalliance.org/blog/2026/02/19/ccm-v4-1-transition-timeline",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CCSP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Dualversiontransition;Dec2027v4.1only timetable andJan2028withdrawal.",
+      "recommendation": "Keepcurrentversusfuturestatus explicit andverify actualengagementrules.",
+      "disposition": "applied",
+      "source_id": "csa-ccm-41-transition",
+      "resolution": "Keepcurrentversusfuturestatus explicit andverify actualengagementrules."
+    },
+    {
+      "id": "ccsp-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "The active-list transition is now past",
+      "url": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/faqs",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CCSP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "OnlyFIPS1403active fromSep22 2026;historicalnotrevoked;module/environment evidence necessary.",
+      "recommendation": "Preserveblueprint1402example whileexplainingcurrentstatus andno wholeproduct/tenantvalidationclaim.",
+      "disposition": "applied",
+      "source_id": "nist-cmvp-faq",
+      "resolution": "Preserveblueprint1402example whileexplainingcurrentstatus andno wholeproduct/tenantvalidationclaim."
+    },
+    {
+      "id": "ccsp-deep-8",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Historical module guidance is scoped to existing systems",
+      "url": "https://csrc.nist.gov/Projects/FIPS-140-3-Transition-Effort",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CCSP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Transitionpage discussescontinuedexisting-system use afterhistoricalmove.",
+      "recommendation": "Avoidblanketrevocationornewprocurementapproval;check actualmodule andrequirements.",
+      "disposition": "applied",
+      "source_id": "nist-fips1403-transition",
+      "resolution": "Avoidblanketrevocationornewprocurementapproval;check actualmodule andrequirements."
+    },
+    {
+      "id": "ccsp-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Authenticated context is non-secret and not itself caller authorization",
+      "url": "https://docs.aws.amazon.com/kms/latest/developerguide/encrypt_context.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CCSP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "AADmustmatch;contextloggedplaintext andcanparticipate inpolicies.",
+      "recommendation": "Keepsecretsout andderivecontextfromtrustedobjectdecision;localnegativecontextchecks.",
+      "disposition": "applied",
+      "source_id": "aws-kms-encryption-context",
+      "resolution": "Keepsecretsout andderivecontextfromtrustedobjectdecision;localnegativecontextchecks."
+    },
+    {
+      "id": "ccsp-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "KMS rotation does not replace DEKs or recover exposed data",
+      "url": "https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CCSP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Olderkeymaterialretained;noautomaticDEKrotation/datareencryption orcompromisedDEKmitigation.",
+      "recommendation": "Distinguish rotation/rewrapping/freshDEK anddemonstrate retainedkey exposure locally.",
+      "disposition": "applied",
+      "source_id": "aws-kms-rotation",
+      "resolution": "Distinguish rotation/rewrapping/freshDEK anddemonstrate retainedkey exposure locally."
+    },
+    {
+      "id": "ccsp-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Authenticity does not supply durable freshness or application permission",
+      "url": "https://cryptography.io/en/50.0.1/hazmat/primitives/aead/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CCSP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "AESGCMrejects changedbytes/key/nonce/AAD;authenticolderciphertext stillvalid.",
+      "recommendation": "Use24executedchecks plus explicittrustedpolicy/versionfixtures andproductionlimits.",
+      "disposition": "applied",
+      "source_id": "cryptography50-aead",
+      "resolution": "Use24executedchecks plus explicittrustedpolicy/versionfixtures andproductionlimits."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "isc2-ccsp-2026-refresh",
+      "published_on": "2026-06-30",
+      "review": "Full main refresh article;August1nowactive."
+    },
+    {
+      "source_id": "csa-ccm-41-transition",
+      "published_on": "2026-02-19",
+      "review": "Full main transition article;currentdualversion versusfuturewithdrawal."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 24,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "041433de7cb4f24da721e40e251d71fc6d6309b919b6c5a915b46d960f799102",
+      "python_version": "Python 3.13.14",
+      "execution_stdout": "{\"checks\": [{\"case\": \"authorized current read\", \"result\": \"passed\"}, {\"case\": \"ungranted principal\", \"result\": \"PermissionError\"}, {\"case\": \"wrong authenticated tenant\", \"result\": \"InvalidTag\"}, {\"case\": \"wrong authenticated object\", \"result\": \"InvalidTag\"}, {\"case\": \"wrong authenticated version\", \"result\": \"InvalidTag\"}, {\"case\": \"tampered ciphertext\", \"result\": \"InvalidTag\"}, {\"case\": \"tampered wrapped_key\", \"result\": \"InvalidTag\"}, {\"case\": \"tampered data_nonce\", \"result\": \"InvalidTag\"}, {\"case\": \"tampered wrap_nonce\", \"result\": \"InvalidTag\"}, {\"case\": \"different wrapping key\", \"result\": \"InvalidTag\"}, {\"case\": \"cross-object wrapped-key substitution\", \"result\": \"InvalidTag\"}, {\"case\": \"cross-object ciphertext substitution\", \"result\": \"InvalidTag\"}, {\"case\": \"rewrapped object decrypts\", \"result\": \"passed\"}, {\"case\": \"rewrapping leaves data ciphertext intact\", \"result\": \"passed\"}, {\"case\": \"old wrapping key absent from fixture\", \"result\": \"KeyError\"}, {\"case\": \"new wrapping key remains usable\", \"result\": \"passed\"}, {\"case\": \"old key copy still opens archived envelope\", \"result\": \"passed\"}, {\"case\": \"application revocation denies future wrapper call\", \"result\": \"PermissionError\"}, {\"case\": \"captured data key bypasses wrapper revocation\", \"result\": \"passed\"}, {\"case\": \"fresh data key and version decrypt\", \"result\": \"passed\"}, {\"case\": \"old data key cannot decrypt new ciphertext\", \"result\": \"InvalidTag\"}, {\"case\": \"old authentic ciphertext is still decryptable\", \"result\": \"passed\"}, {\"case\": \"trusted manifest rejects rollback\", \"result\": \"ValueError\"}, {\"case\": \"trusted manifest accepts current version\", \"result\": \"passed\"}], \"cryptography\": \"50.0.1\", \"boundary\": \"Synthetic in-memory cryptography and trusted policy fixtures; no files or cloud calls\"}\n24 local envelope checks passed",
+      "results": {
+        "checks": [
+          {
+            "case": "authorized current read",
+            "result": "passed"
+          },
+          {
+            "case": "ungranted principal",
+            "result": "PermissionError"
+          },
+          {
+            "case": "wrong authenticated tenant",
+            "result": "InvalidTag"
+          },
+          {
+            "case": "wrong authenticated object",
+            "result": "InvalidTag"
+          },
+          {
+            "case": "wrong authenticated version",
+            "result": "InvalidTag"
+          },
+          {
+            "case": "tampered ciphertext",
+            "result": "InvalidTag"
+          },
+          {
+            "case": "tampered wrapped_key",
+            "result": "InvalidTag"
+          },
+          {
+            "case": "tampered data_nonce",
+            "result": "InvalidTag"
+          },
+          {
+            "case": "tampered wrap_nonce",
+            "result": "InvalidTag"
+          },
+          {
+            "case": "different wrapping key",
+            "result": "InvalidTag"
+          },
+          {
+            "case": "cross-object wrapped-key substitution",
+            "result": "InvalidTag"
+          },
+          {
+            "case": "cross-object ciphertext substitution",
+            "result": "InvalidTag"
+          },
+          {
+            "case": "rewrapped object decrypts",
+            "result": "passed"
+          },
+          {
+            "case": "rewrapping leaves data ciphertext intact",
+            "result": "passed"
+          },
+          {
+            "case": "old wrapping key absent from fixture",
+            "result": "KeyError"
+          },
+          {
+            "case": "new wrapping key remains usable",
+            "result": "passed"
+          },
+          {
+            "case": "old key copy still opens archived envelope",
+            "result": "passed"
+          },
+          {
+            "case": "application revocation denies future wrapper call",
+            "result": "PermissionError"
+          },
+          {
+            "case": "captured data key bypasses wrapper revocation",
+            "result": "passed"
+          },
+          {
+            "case": "fresh data key and version decrypt",
+            "result": "passed"
+          },
+          {
+            "case": "old data key cannot decrypt new ciphertext",
+            "result": "InvalidTag"
+          },
+          {
+            "case": "old authentic ciphertext is still decryptable",
+            "result": "passed"
+          },
+          {
+            "case": "trusted manifest rejects rollback",
+            "result": "ValueError"
+          },
+          {
+            "case": "trusted manifest accepts current version",
+            "result": "passed"
+          }
+        ],
+        "cryptography": "50.0.1",
+        "boundary": "Synthetic in-memory cryptography and trusted policy fixtures; no files or cloud calls"
+      },
+      "execution_boundary": "Actual AES-GCM encryption/wrapping/decryption/tamper rejection in memory with synthetic keys/data and trusted principal/grant/version fixtures. No files,network,cloud/API,systemtrust,installation orrealcredentials.",
+      "model_limits": "No authentication,production KMS wireformat/FIPSvalidation,securedeletion/zeroization,hardwarecustody,durable nonce/version coordination,concurrency/crashrecovery orinfrastructurevalidation. Retained synthetic DEKs intentionally model copied keys."
+    }
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "Two commercial catalogsHTTP403;earlierOReilly/Udemy metadata unverified. Publiccoursecards do notprovepaidquality orcompleteAugust2026alignment;no paidinteriors/questions/trials.",
+    "Eight infrastructureactivities andthree reasoningscenarios remainproposed. Independenthumanreview pending;noidentity/cloud/network/incident/forensic/recoveryinfrastructureexecution.",
+    "24localchecks performactualAESGCMwithsynthetickeys/data andtrustedpolicy/versionfixtures;noauthenticator orcloudKMSAPI/wireformat/productionsecurityboundary.",
+    "NoFIPSvalidation,securedeletion/zeroization,hardwarecustody,persistentnonce/versioncoordination,concurrency/crashrecovery orproductionreadinessproven. CopiedsyntheticDEKs deliberatelyretained.",
+    "15pageoutlinefullyread/3pagesvisuallyreviewed;AI29pagePDF onlyintro/CCSP12-14;otherstandards/APIs selectedsections. NoallCCMcontrolrows/auditofregulations orspecificCMVPmodule.",
+    "CSAoverview/releasecount andJan27artifact/Jan28blogmetadata differ;transitiontiming interpretedasdatedpublicguidance,notactualSTARsubmissionorlegaladvice.",
+    "Noaccountentitlement,individualexperienceapproval,regionalprice,booking,checkout orcoursequality assessed. Course75percent isnotCATscaledscore orcredential.",
+    "FiveGitHubguides anddisablednotificationpilot untouched;noexternalmessages,service/auth/logging changes,installation ornewpermissions."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Repository/site gates and24 actual local AES-GCM/policy checks in memory with synthetic keys/data. No files,network,cloud/API,systemtrust,installation orrealcredentials. Trustedidentity/grant/versionfixtures;not production authentication/storage/KMS orFIPSvalidation.",
+    "passed": 24,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "041433de7cb4f24da721e40e251d71fc6d6309b919b6c5a915b46d960f799102",
+    "python_version": "Python 3.13.14",
+    "execution_stdout": "{\"checks\": [{\"case\": \"authorized current read\", \"result\": \"passed\"}, {\"case\": \"ungranted principal\", \"result\": \"PermissionError\"}, {\"case\": \"wrong authenticated tenant\", \"result\": \"InvalidTag\"}, {\"case\": \"wrong authenticated object\", \"result\": \"InvalidTag\"}, {\"case\": \"wrong authenticated version\", \"result\": \"InvalidTag\"}, {\"case\": \"tampered ciphertext\", \"result\": \"InvalidTag\"}, {\"case\": \"tampered wrapped_key\", \"result\": \"InvalidTag\"}, {\"case\": \"tampered data_nonce\", \"result\": \"InvalidTag\"}, {\"case\": \"tampered wrap_nonce\", \"result\": \"InvalidTag\"}, {\"case\": \"different wrapping key\", \"result\": \"InvalidTag\"}, {\"case\": \"cross-object wrapped-key substitution\", \"result\": \"InvalidTag\"}, {\"case\": \"cross-object ciphertext substitution\", \"result\": \"InvalidTag\"}, {\"case\": \"rewrapped object decrypts\", \"result\": \"passed\"}, {\"case\": \"rewrapping leaves data ciphertext intact\", \"result\": \"passed\"}, {\"case\": \"old wrapping key absent from fixture\", \"result\": \"KeyError\"}, {\"case\": \"new wrapping key remains usable\", \"result\": \"passed\"}, {\"case\": \"old key copy still opens archived envelope\", \"result\": \"passed\"}, {\"case\": \"application revocation denies future wrapper call\", \"result\": \"PermissionError\"}, {\"case\": \"captured data key bypasses wrapper revocation\", \"result\": \"passed\"}, {\"case\": \"fresh data key and version decrypt\", \"result\": \"passed\"}, {\"case\": \"old data key cannot decrypt new ciphertext\", \"result\": \"InvalidTag\"}, {\"case\": \"old authentic ciphertext is still decryptable\", \"result\": \"passed\"}, {\"case\": \"trusted manifest rejects rollback\", \"result\": \"ValueError\"}, {\"case\": \"trusted manifest accepts current version\", \"result\": \"passed\"}], \"cryptography\": \"50.0.1\", \"boundary\": \"Synthetic in-memory cryptography and trusted policy fixtures; no files or cloud calls\"}\n24 local envelope checks passed",
+    "results": {
+      "checks": [
+        {
+          "case": "authorized current read",
+          "result": "passed"
+        },
+        {
+          "case": "ungranted principal",
+          "result": "PermissionError"
+        },
+        {
+          "case": "wrong authenticated tenant",
+          "result": "InvalidTag"
+        },
+        {
+          "case": "wrong authenticated object",
+          "result": "InvalidTag"
+        },
+        {
+          "case": "wrong authenticated version",
+          "result": "InvalidTag"
+        },
+        {
+          "case": "tampered ciphertext",
+          "result": "InvalidTag"
+        },
+        {
+          "case": "tampered wrapped_key",
+          "result": "InvalidTag"
+        },
+        {
+          "case": "tampered data_nonce",
+          "result": "InvalidTag"
+        },
+        {
+          "case": "tampered wrap_nonce",
+          "result": "InvalidTag"
+        },
+        {
+          "case": "different wrapping key",
+          "result": "InvalidTag"
+        },
+        {
+          "case": "cross-object wrapped-key substitution",
+          "result": "InvalidTag"
+        },
+        {
+          "case": "cross-object ciphertext substitution",
+          "result": "InvalidTag"
+        },
+        {
+          "case": "rewrapped object decrypts",
+          "result": "passed"
+        },
+        {
+          "case": "rewrapping leaves data ciphertext intact",
+          "result": "passed"
+        },
+        {
+          "case": "old wrapping key absent from fixture",
+          "result": "KeyError"
+        },
+        {
+          "case": "new wrapping key remains usable",
+          "result": "passed"
+        },
+        {
+          "case": "old key copy still opens archived envelope",
+          "result": "passed"
+        },
+        {
+          "case": "application revocation denies future wrapper call",
+          "result": "PermissionError"
+        },
+        {
+          "case": "captured data key bypasses wrapper revocation",
+          "result": "passed"
+        },
+        {
+          "case": "fresh data key and version decrypt",
+          "result": "passed"
+        },
+        {
+          "case": "old data key cannot decrypt new ciphertext",
+          "result": "InvalidTag"
+        },
+        {
+          "case": "old authentic ciphertext is still decryptable",
+          "result": "passed"
+        },
+        {
+          "case": "trusted manifest rejects rollback",
+          "result": "ValueError"
+        },
+        {
+          "case": "trusted manifest accepts current version",
+          "result": "passed"
+        }
+      ],
+      "cryptography": "50.0.1",
+      "boundary": "Synthetic in-memory cryptography and trusted policy fixtures; no files or cloud calls"
+    },
+    "model_limits": "No authentication,production KMS wireformat/FIPSvalidation,securedeletion/zeroization,hardwarecustody,durable nonce/version coordination,concurrency/crashrecovery orinfrastructurevalidation. Retained synthetic DEKs intentionally model copied keys.",
+    "learning_catalog_consistency": "passed"
+  },
+  "archived_prior_baselines": {
+    "objectives": {
+      "path": "data/objective-snapshots/ccsp-2026-09-02-official-objectives.txt",
+      "sha256": "9ee040484826df7b98700a44891301a9fc46fb76351c0a941221e6f5cf1b8288"
+    },
+    "status": {
+      "path": "data/objective-snapshots/ccsp-2026-09-02-official-status.json",
+      "sha256": "4fcffc4974c5e99c5a1ec70536274884c0d81811b9c4289a18bd8c43d1505823"
+    },
+    "historical_audit_paths_updated": 1,
+    "reason": "Only testing-center label changed; all38 numbered objectives andsix weights unchanged. Reviewed current15page PDF and external standard/framework transitions separately."
+  },
+  "objective_baseline_acceptance": {
+    "changed": [
+      "CCSP"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "CCSP",
+        "title": "Certified Cloud Security Professional",
+        "url": "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline",
+        "guide_path": "guides/CCSP-isc2-certified-cloud-security-professional.md",
+        "snapshot_path": "data\\objective-snapshots\\ccsp-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ccsp-official-status.json",
+        "previous_sha256": "9ee040484826df7b98700a44891301a9fc46fb76351c0a941221e6f5cf1b8288",
+        "current_sha256": "fef10f6e4d4ddf5249d19f5b8ab4b70700473671d5435ffea008fa8e3db84ed1",
+        "previous_status_sha256": "4fcffc4974c5e99c5a1ec70536274884c0d81811b9c4289a18bd8c43d1505823",
+        "current_status_sha256": "177065095c252830f8e7a4780387f26a0362751e0148715a260fc690530c1e96",
+        "official_status": {
+          "skills_versions": [
+            "AUGUST 1, 2026",
+            "Length of exam: 3 hours",
+            "Number of items: 100-150",
+            "Item format: Multiple choice and advanced item types",
+            "Passing grade: 700 out of 1000 points",
+            "Exam language availability: English, Chinese, Japanese and German",
+            "Testing center: Pearson Testing Center",
+            "Candidates must have a minimum of five years cumulative, full-time experience in Information Technology (IT). Three years must be in cybersecurity, and one year must be in one or more of the six domains of the current CCSP Exam Outline . Earning a post-secondary degree (bachelors or masters) in computer science, IT or related fields may satisfy up to one year of the required experience. Earning CSA’s CCSK certificate can be substituted for one year of experience. Only one year of experience can be waived. An active CISSP credential can be substituted for the entire CCSP experience requirement. Part-time work and internships may also count towards the experience requirement."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ]
+  },
+  "post_acceptance_monitor": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "CCSP",
+        "title": "Certified Cloud Security Professional",
+        "url": "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline",
+        "guide_path": "guides/CCSP-isc2-certified-cloud-security-professional.md",
+        "snapshot_path": "data\\objective-snapshots\\ccsp-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ccsp-official-status.json",
+        "previous_sha256": "fef10f6e4d4ddf5249d19f5b8ab4b70700473671d5435ffea008fa8e3db84ed1",
+        "current_sha256": "fef10f6e4d4ddf5249d19f5b8ab4b70700473671d5435ffea008fa8e3db84ed1",
+        "previous_status_sha256": "177065095c252830f8e7a4780387f26a0362751e0148715a260fc690530c1e96",
+        "current_status_sha256": "177065095c252830f8e7a4780387f26a0362751e0148715a260fc690530c1e96",
+        "official_status": {
+          "skills_versions": [
+            "AUGUST 1, 2026",
+            "Length of exam: 3 hours",
+            "Number of items: 100-150",
+            "Item format: Multiple choice and advanced item types",
+            "Passing grade: 700 out of 1000 points",
+            "Exam language availability: English, Chinese, Japanese and German",
+            "Testing center: Pearson Testing Center",
+            "Candidates must have a minimum of five years cumulative, full-time experience in Information Technology (IT). Three years must be in cybersecurity, and one year must be in one or more of the six domains of the current CCSP Exam Outline . Earning a post-secondary degree (bachelors or masters) in computer science, IT or related fields may satisfy up to one year of the required experience. Earning CSA’s CCSK certificate can be substituted for one year of experience. Only one year of experience can be waived. An active CISSP credential can be substituted for the entire CCSP experience requirement. Part-time work and internships may also count towards the experience requirement."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "actual_pdf_receipts": [
+    {
+      "id": "isc2-ai-exam-guidance",
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+      "checked_at": "2026-09-29T12:38:33.887370+00:00",
+      "health": {
+        "id": "isc2-ai-exam-guidance",
+        "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+        "checked_at": "2026-09-29T12:38:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+      "sha256": "69cd0cfa50fac68a60370f812f0ce5f6f33b1a861eac66b4c66e2e410fbb0741",
+      "bytes": 506895,
+      "pdf_pages": 29,
+      "text_characters": 70743
+    },
+    {
+      "id": "nist-sp800-61r3-pdf",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "checked_at": "2026-09-29T12:38:37.552673+00:00",
+      "health": {
+        "id": "nist-sp800-61r3-pdf",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "checked_at": "2026-09-29T12:38:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "sha256": "e5593d6bb85daecec7e8d9549400c7b3473bcc3f06e469c82218073afa7fba2d",
+      "bytes": 1040566,
+      "pdf_pages": 48,
+      "text_characters": 107538
+    },
+    {
+      "id": "nist-800-207",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "checked_at": "2026-09-29T12:38:36.194230+00:00",
+      "health": {
+        "id": "nist-800-207",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "checked_at": "2026-09-29T12:38:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "sha256": "0290d6ece24874287316f4bf430fef770aa4ec08a2227c8f2c1e5b2ff975e03d",
+      "bytes": 966908,
+      "pdf_pages": 59,
+      "text_characters": 156827
+    },
+    {
+      "id": "nist-800-88r2",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "checked_at": "2026-09-29T12:38:39.476372+00:00",
+      "health": {
+        "id": "nist-800-88r2",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+        "checked_at": "2026-09-29T12:38:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "sha256": "39bb805c72723ed74f08e5806cd8463ca2554a62abb4f97b9d19c0398a8a7c55",
+      "bytes": 983677,
+      "pdf_pages": 48,
+      "text_characters": 112553
+    },
+    {
+      "id": "isc2-ccsp-outline-2026-pdf",
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/EXAMS-CCSP-Exam-Outline-English-01-2026-V2.pdf",
+      "checked_at": "2026-09-29T12:38:39.061888+00:00",
+      "health": {
+        "id": "isc2-ccsp-outline-2026-pdf",
+        "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/EXAMS-CCSP-Exam-Outline-English-01-2026-V2.pdf",
+        "checked_at": "2026-09-29T12:38:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/EXAMS-CCSP-Exam-Outline-English-01-2026-V2.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/EXAMS-CCSP-Exam-Outline-English-01-2026-V2.pdf",
+      "sha256": "61189f31c2283b655d7e7a1daa31f3a775f115939b2efe1305400dc87346e41e",
+      "bytes": 302589,
+      "pdf_pages": 15,
+      "text_characters": 22190
+    }
+  ],
+  "pdf_reading_boundary": "CCSP outline all15pages;pages3/6/14 visually inspected. AIguide introduction andCCSPprinted12-14. NISTPDF selectedsections per source notes;notfullstandards.",
+  "visual_inspection": {
+    "source_id": "isc2-ccsp-outline-2026-pdf",
+    "pages_one_based": [
+      3,
+      6,
+      14
+    ],
+    "result": "Confirmed CAT/weights and multi-column data-security/audit topics. PDF retains PearsonVUE andminor wording differences;canonicalweb mapping preserved."
+  },
+  "public_objective_groups": [
+    {
+      "title": "Domain 1: Cloud Concepts, Architecture and Design",
+      "objectives": [
+        "1.1 - Understand cloud computing concepts\nCloud computing definitions\nCloud computing roles and responsibilities (e.g., cloud service customer, Cloud Service Provider (CSP), cloud service partner, cloud service broker, regulator)\nEssential cloud computing characteristics (e.g., on-demand self-service, broad network access, multi-tenancy, rapid elasticity and scalability, resource pooling, measured service)\nBuilding block technologies (e.g., virtualization, storage, networking, databases, orchestration)",
+        "1.2 - Describe cloud reference architecture\nCloud computing activities\nCloud service capabilities (e.g., application capability types, platform capability types, infrastructure capability types)\nCloud service categories (e.g., Software as a Service (SaaS), Infrastructure as a Service (IaaS), Platform as a Service (PaaS))\nCloud deployment models (e.g., public, private, hybrid, community, multi-cloud)\nCloud shared considerations (e.g., interoperability, portability, reversibility, availability, security, privacy, resiliency, performance, governance, maintenance and versioning, service levels and service-level agreements (SLA), auditability, regulatory, outsourcing)\nImpact of related technologies (e.g., data science, machine learning, artificial intelligence (AI), blockchain, Internet of Things (IoT), containers, quantum computing, edge computing, confidential computing)",
+        "1.3 - Understand security concepts relevant to cloud computing\nCryptography and key management\nIdentity and access control (e.g., user access, privilege access, service access)\nData and media sanitization (e.g., overwriting, cryptographic erase)\nNetwork security (e.g., network security groups, traffic inspection, geofencing)\nVirtualization security (e.g., hypervisor security, container security, ephemeral computing, serverless technology, isolation)\nCommon cloud threats\nSecurity hygiene (e.g., patching, baselining, immutable architecture, hardening)",
+        "1.4 - Understand design principles of secure cloud computing\nCloud secure data lifecycle\nCloud-based business continuity (BC) and disaster recovery (DR) planning\nBusiness Impact Analysis (BIA) (e.g., Cost-Benefit Analysis (CBA), Return On Investment (ROI))\nFunctional security requirements (e.g., portability, interoperability, vendor lock-in)\nSecurity considerations and responsibilities for different cloud categories (e.g., Software as a Service (SaaS), Infrastructure as a Service (IaaS), Platform as a Service (PaaS))\nCloud design patterns (e.g., SANS security principles, Well-Architected Framework, Cloud Security Alliance (CSA) Enterprise Architecture, secure by design)\nDevOps security",
+        "1.5 - Evaluate Cloud Service Providers (CSP)\nVerification against criteria\nSystem/subsystem product certifications (e.g., Common Criteria (CC), Federal Information Processing Standard (FIPS) 140-2)",
+        "1.6 - Comprehend Artificial Intelligence (AI)/Machine Learning (ML)\nCloud threat detection and analysis\nData source validation and verification\nSecurity Orchestration, Automation And Response (SOAR)\nEthical concerns\nRegulatory requirements"
+      ]
+    },
+    {
+      "title": "Domain 2: Cloud Data Security",
+      "objectives": [
+        "2.1 - Describe cloud data concepts\nCloud data life cycle phases\nData dispersion\nData flows",
+        "2.2 - Design and implement cloud data storage architectures\nStorage types (e.g., long-term, ephemeral, raw storage, object storage, volume storage)\nThreats to storage types",
+        "2.3 - Design and apply data security technologies and strategies\nEncryption and key management\nHashing (e.g., data integrity, non-repudiation)\nData obfuscation (e.g., masking, anonymization)\nTokenization\nData loss prevention (DLP)\nKeys, secrets and certificates management",
+        "2.4 - Implement data discovery\nStructured data\nUnstructured data\nSemi-structured data\nData location",
+        "2.5 - Plan and implement data classification\nData classification policies\nData mapping\nData labeling and tagging",
+        "2.6 - Design and implement Information Rights Management (IRM)\nObjectives (e.g., data rights, provisioning, access models)\nAppropriate tools (e.g., issuing and revocation of certificates)",
+        "2.7 - Plan and implement data retention, deletion, and archiving policies\nData retention policies\nData deletion procedures and mechanisms\nData archiving procedures and mechanisms\nLegal hold",
+        "2.8 - Design and implement auditability, traceability, and accountability of data events\nDefinition of event sources and requirement of event attributes (e.g., identity, Internet Protocol (IP) address, geolocation)\nLogging, storage and analysis of data events\nChain of custody and non-repudiation",
+        "2.9 - Comprehend data protection of Artificial Intelligence (AI) and Machine Learning (ML) data\nData set and model privacy\nData set and model security (e.g., validation, verification)"
+      ]
+    },
+    {
+      "title": "Domain 3: Cloud Platform and Infrastructure Security",
+      "objectives": [
+        "3.1 - Comprehend cloud infrastructure and platform components\nPhysical environment\nNetwork and communications\nCompute\nVirtualization\nStorage\nManagement plane",
+        "3.2 - Design a secure data center\nLogical design (e.g., tenant partitioning, access control)\nPhysical design (e.g., location, buy or build)\nEnvironmental design (e.g., Heating, Ventilation, and Air Conditioning (HVAC), multi-vendor pathway connectivity)\nDesign resilient\nDesign resilience (e.g., power, Heating, Ventilation, and Air Conditioning (HVAC), connectivity)",
+        "3.3 - Analyze risks associated with cloud infrastructure and platforms\nRisk assessment (e.g., identification, analysis)\nCloud vulnerabilities, threats and attacks\nRisk treatment strategies",
+        "3.4 - Plan and implementation of security controls\nPhysical and environmental protection (e.g., on-premises)\nSystem, storage and communication protection\nIdentification, authentication and authorization in cloud environments\nAudit mechanisms (e.g., log collection, correlation, packet capture)",
+        "3.5 - Plan business continuity (BC) and disaster recovery (DR)\nBusiness continuity (BC) / disaster recovery (DR) strategy\nBusiness requirements (e.g., Recovery Time Objective (RTO), Recovery Point Objective (RPO), recovery service level)\nCreation, implementation and testing of plan"
+      ]
+    },
+    {
+      "title": "Domain 4: Cloud Application Security",
+      "objectives": [
+        "4.1 - Advocate training and awareness for application security\nCloud development basics\nCommon pitfalls\nCommon cloud vulnerabilities (e.g., Open Web Application Security Project (OWASP) Top-10, Application Security Verification Standard (ASVS), Top 10 Application Programming Interface (API), Top 10 for Large Language Model Applications, SANS Top-25)",
+        "4.2 - Describe the Secure Software Development Life Cycle (SDLC) process\nBusiness requirements\nPhases and methodologies (e.g., design, code, test, maintain, waterfall vs. agile)",
+        "4.3 - Apply the Secure Software Development Life Cycle (SDLC)\nCloud-specific risks (e.g., shared technology issues, Cloud Service Provider (CSP) insider threats, lack of visibility and control, legal and jurisdiction issues)\nThreat modeling (e.g., Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege (STRIDE), Disaster, Reproducibility, Exploitability, Affected Users, and Discoverability (DREAD), Architecture, Threats, Attack Surfaces, and Mitigations (ATASM), Process for Attack Simulation and Threat Analysis (PASTA))\nAvoid common vulnerabilities during development\nSecure coding (e.g., Open Web Application Security Project (OWASP) Application Security\nVerification Standard (ASVS), Software Assurance Forum for Excellence in Code (SAFECode))\nSoftware Configuration Management (CM) and versioning",
+        "4.4 - Apply cloud software assurance and validation\nFunctional and non-functional testing (e.g., Continuous Integration And Continuous Delivery (CI/CD) processes)\nSecurity testing methodologies (e.g., blackbox, whitebox, Software Composition Analysis (SCA), Interactive Application Security Testing (IAST), Static Application Security Testing (SAST), Dynamic Application Security Testing (DAST))\nQuality assurance (QA)\nAbuse case testing",
+        "4.5 - Use verified secure software\nSecuring Application Programming Interfaces (API)\nSupply-chain management (e.g., vendor assessment, integrity, authenticity, licensing)\nThird-party software management\nValidated open-source software",
+        "4.6 - Comprehend and apply the specifics of cloud application architecture\nSupplemental security components (e.g., Web Application Firewall (WAF), Database Activity Monitoring (DAM), Extensible Markup Language (XML) firewalls, Application Programming Interface (API) gateway, load balancer)\nCryptography\nSandboxing\nApplication virtualization and orchestration (e.g., microservices, containers, docker, Kubernetes)",
+        "4.7 - Design appropriate Identity and Access Management (IAM) solutions\nFederated identity\nIdentity Providers (IdP)\nSingle Sign-On (SSO)\nMulti-Factor Authentication (MFA)\nCloud Access Security Broker (CASB)\nSecrets, key, and certificate management"
+      ]
+    },
+    {
+      "title": "Domain 5: Cloud Security Operations",
+      "objectives": [
+        "5.1 - Build and implement physical and logical infrastructure for cloud environment\nHardware specific security configuration requirements (e.g., Hardware Security Module (HSM) and Trusted Platform Module (TPM))\nSecure by default\nInstallation and configuration of management plane tools\nVirtual hardware specific security configuration requirements (e.g., network, storage, memory, Central Processing Unit (CPU), Hypervisor type 1 and 2)\nInstallation of guest operating system (OS) virtualization toolsets",
+        "5.2 - Operate and maintain physical and logical infrastructure for cloud environment\nAccess controls for local and remote access (e.g., Remote Desktop Protocol (RDP), secure terminal access, Secure Shell (SSH), console-based access mechanisms, jumpboxes, virtual client, Single Sign-On (SSO))\nSecure network configuration (e.g., Virtual Local Area Networks (VLAN), Transport Layer Security (TLS), Dynamic Host Configuration Protocol (DHCP), Domain Name System Security Extensions (DNSSEC), Virtual Private Network (VPN))\nNetwork security controls (e.g., firewalls, Intrusion Detection Systems (IDS), Intrusion Prevention Systems (IPS), honeypots, vulnerability assessments, network security groups, bastion host, segmentation)\nOperating system (OS) hardening through the application of baselines, monitoring and remediation (e.g., Windows, Linux, VMware)\nPatch management\nAvailability of clustered hosts (e.g., distributed resource scheduling, dynamic optimization, storage clusters, maintenance mode, High Availability (HA))\nAvailability of guest Operating System (OS)\nPerformance and capacity monitoring (e.g., network, compute, storage, response time)\nHardware monitoring (e.g., disk, Central Processing Unit (CPU), fan speed, temperature)\nConfiguration of host and guest Operating System (OS) backup and restore functions\nManagement plane (e.g., scheduling, orchestration, maintenance)",
+        "5.3 - Implement operational controls and standards (e.g., National Institute Of Standards And Technology (NIST), International Organization For Standardization (ISO), Health Insurance Portability and Accountability Act (HIPPA), Control Objectives For Information And Related Technology (COBIT), Center For Internet Security (CIS) Controls, Comittee Of Sponsoring Organizations (COSO), Information Technology Infrastructure Library (ITIL) International Organization For Standardization/International Electrotechnical Commission (ISO/IEC) 20000-1)\nChange management\nContinuity management\nInformation security management\nContinual service improvement management\nIncident management\nProblem management\nRelease management\nDeployment management\nConfiguration Management (CM)\nService-level management\nAvailability management\nCapacity management",
+        "5.4 - Support digital forensics\nForensic data collection methodologies\nEvidence management\nCollecting, acquiring, and preserving digital evidence",
+        "5.5 - Manage communication with relevant parties\nVendors\nCustomers\nPartners\nRegulators\nOther stakeholders",
+        "5.6 - Manage security operations\nSecurity operations center (SOC)\nIntelligent monitoring of security controls (e.g., firewalls, Intrusion Detection Systems (IDS), Intrusion Prevention Systems (IPS), honeypots, network security groups, artificial intelligence (AI))\nLog capture and analysis (e.g., Security Information and Event Management (SIEM), log management, threat intelligence)\nIncident Response (IR)\nVulnerability assessments\nPenetration testing"
+      ]
+    },
+    {
+      "title": "Domain 6: Legal, Risk and Compliance",
+      "objectives": [
+        "6.1 - Articulate legal requirements and unique risks within the cloud environment\nConflicting international legislation\nEvaluation of legal risks specific to cloud computing\nLegal framework and guidelines\neDiscovery (e.g., International Organization for Standardization/International Electrotechnical Commission (ISO/IEC) 27050, Cloud Security Alliance (CSA) Guidance)\nForensics requirements (e.g., Cloud Security Alliance (CSA), International Organization For Standardization/International Electrotechnical Commission (ISO/IEC) 27037:2012/27041:2015/ 27042:2015/27043:2015)",
+        "6.2 - Understand privacy issues\nDifference between contractual and regulated private data (e.g., Protected Health Information (PHI), Personally Identifiable Information (PII))\nCountry-specific legislation related to private data (e.g., Family Educational Rights And Privacy Act (FERPA), The Personal Information Protection And Electronic Documents Act (PIPEDA), General Data Protection Regulation (GDPR), Health Insurance Portability and Accountability Act (HIPPA), Digital Personal Data Protection Act)\nJurisdictional differences in data privacy\nStandard privacy requirements (e.g., International Organization for Standardization/International Electrotechnical Commission (ISO/IEC) 27018, Generally Accepted Privacy Principles (GAPP), General Data Protection Regulation (GDPR))\nPrivacy Impact Assessments (PIA)",
+        "6.3 - Understand audit process, methodologies, and required adaptations for a cloud environment\nInternal and external audit controls\nImpact of audit requirements\nIdentify assurance challenges of virtualization and cloud\nTypes of audit reports (e.g., Statement on Standards for Attestation Engagements (SSAE), Service Organization Control (SOC), International Standard on Assurance Engagements (ISAE))\nRestrictions of audit scope statements (e.g., Statement on Standards for Attestation Engagements (SSAE), International Standard on Assurance Engagements (ISAE))\nGap analysis (e.g., control analysis, baselines, risk and control self-assesment)\nAudit planning\nInternal Information Security Management System (ISMS)\nInternal information security controls system\nPolicies (e.g., organizational, functional, cloud computing)\nIdentification and involvement of relevant stakeholders\nSpecialized compliance requirements for highly-regulated industries (e.g., North American Electric Reliability Corporation Critical Infrastructure Protection (NERC CIP), Health Insurance Portability and Accountability Act (HIPAA), Health Information Technology for Economic and Clinical Health (HITECH) Act, Payment Card Industry (PCI))\nImpact of distributed Information Technology (IT) model (e.g., diverse geographical locations and crossing over legal jurisdictions)",
+        "6.4 - Understand implications of cloud to enterprise risk management\nAssess providers risk management programs (e.g., controls, methodologies, policies, risk profile, risk appetite)\nDifference between data roles (e.g., owner, controller, custodian, processor, stewards)\nRegulatory transparency requirements (e.g., breach notification, Sarbanes-Oxley (SOX), General Data Protection Regulation (GDPR))\nRisk treatment (i.e., avoid, mitigate, transfer, share, accept)\nDifferent risk frameworks\nMetrics for risk management\nAssessment of risk environment (e.g., service, vendor, infrastructure, business)",
+        "6.5 - Understand outsourcing and cloud contract design\nBusiness requirements (e.g., Service-Level Agreement (SLA), Master Service Agreement (MSA), Statement Of Work (SOW))\nVendor management (e.g., vendor assessments, vendor lock-in risks, vendor viability, escrow)\nContract management (e.g., right to audit, metrics, definitions, termination, litigation, assurance, compliance, access to cloud/data, cyber risk insurance, data ownership, security requirements)\nSupply-chain management (e.g., International Organization for Standardization/International Electrotechnical Commission (ISO/IEC) 27036)"
+      ]
+    }
+  ],
+  "catalog_metadata_observations": {
+    "official_adaptive_domain_count": 6,
+    "official_adaptive_course_language": "English",
+    "official_adaptive_course_days": [
+      90,
+      180
+    ],
+    "official_adaptive_access_start": "purchase date",
+    "official_course_completion_percent": 75,
+    "prior_official_20_to_40_hour_range": "not reverified",
+    "linkedin_header": "10h02m",
+    "linkedin_clip_count": 94,
+    "linkedin_total_seconds": 36159,
+    "linkedin_listed_date": "2025-07-03",
+    "linkedin_quiz_count": 6,
+    "pluralsight_course_count": 5,
+    "pluralsight_card_minutes": [
+      82,
+      79,
+      38,
+      45,
+      50
+    ],
+    "pluralsight_minutes_sum": 294,
+    "pluralsight_header_hours": 5,
+    "pluralsight_boundary": "Generic cloud-security path, not CCSP-specific.",
+    "ccm_overview_count": 197,
+    "ccm_v41_release_count": 207,
+    "ccm_domain_count": 17,
+    "ccm_release_page_date": "2026-01-27",
+    "ccm_blog_described_release_date": "2026-01-28",
+    "ccm_v40_withdrawal_timetable": "2028-01",
+    "fips1403_only_active_list_from": "2026-09-22",
+    "required_three_year_cpe": 90,
+    "required_group_a_cpe": 60,
+    "remaining_group_a_or_b": 30,
+    "suggested_annual_cpe": 30,
+    "commercial_catalogs_blocked": 2
+  },
+  "catalog_findings": [
+    {
+      "source_id": "isc2-ccsp-adaptive-training",
+      "observation": "75percent course threshold,English90/180dayaccess; old20-40h range unverified.",
+      "resolution": "Separate completion,exam scaledscore andcredential; remove unverified officialruntimeclaim."
+    },
+    {
+      "source_id": "linkedin-isc2-ccsp-cert-prep",
+      "observation": "94clips36159seconds/10h02mheader,July2025.",
+      "resolution": "Explain rounding andolder scope; no paidlesson oralignmentclaim."
+    },
+    {
+      "source_id": "pluralsight-cloud-security-path",
+      "observation": "5cards294minutes/5hheader,2025genericpath.",
+      "resolution": "Treat as selective supplement; notCCSP-specific orcomplete."
+    },
+    {
+      "source_id": "oreilly-isc2-ccsp-study-guide-3e",
+      "observation": "HTTP403; prior metadata unverified.",
+      "resolution": "Discloseaccessblock/no interiors; do not endorse currentalignment orruntime."
+    },
+    {
+      "source_id": "udemy-dion-isc2-ccsp-2026",
+      "observation": "HTTP403; prior metadata unverified.",
+      "resolution": "Discloseaccessblock/no interiors; do not endorse currentalignment orruntime."
+    }
+  ]
+}

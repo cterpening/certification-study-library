@@ -3,6 +3,80 @@
   "schema_version": 1,
   "reviews": [
     {
+      "id": "ccsp-2026-09-02-source-validation",
+      "exam_code": "CCSP",
+      "guide_path": "guides/CCSP-isc2-certified-cloud-security-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ccsp-2026-09-02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "9ee040484826df7b98700a44891301a9fc46fb76351c0a941221e6f5cf1b8288",
+      "objective_coverage": [
+        {
+          "objective_group": "Cloud Concepts, Architecture and Design (17%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1, 3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Cloud Data Security (20%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Cloud Platform and Infrastructure Security (17%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 2–3",
+            "Labs 1, 4 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Cloud Application Security (16%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenario 2",
+            "Labs 5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Cloud Security Operations (17%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenarios 2–3",
+            "Labs 4 and 6–8"
+          ]
+        },
+        {
+          "objective_group": "Legal, Risk and Compliance (13%)",
+          "guide_sections": [
+            "Section 6",
+            "Scenarios 1 and 3",
+            "Labs 3, 7 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 10,
+        "reachable": 8,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Every August 1, 2026 objective is mapped through obligation and data, service/deployment model, customer/provider/partner responsibility, trust boundary, selected control and contract dependency, observable evidence, failure and recovery/exit. New AI/ML, LLM application, cloud-native and current jurisdiction topics are integrated. Three scenarios, eight authorized labs and 40 checks are included. Eight URLs are reachable; O'Reilly and Udemy are automation-blocked; none are broken. Exam readiness is separated from experience/waiver/CISSP substitution, Associate status, endorsement, ethics, 90-CPE three-year cycle and current AMF. No recalled/live item, dump, unauthorized test or copied course content is used."
+    },
+    {
       "id": "sscp-2026-09-02-source-validation",
       "exam_code": "SSCP",
       "guide_path": "guides/SSCP-isc2-systems-security-certified-practitioner.md",
@@ -8681,25 +8755,78 @@
       "notes": "Mapped36 current numbered objectives, preserved prior snapshots/history before accepting an editorial testing-center label change, and reconciled PDF/web and course-version differences. Added11 executed TLS cases,48 answered prompts and8 proposed infrastructure labs. Two commercial catalogs remain blocked; human review and infrastructure execution are pending. See docs/research/2026-09-29-sscp-deep-review.md"
     },
     {
-      "id":"ccsp-2026-09-02-source-validation",
-      "exam_code":"CCSP",
-      "guide_path":"guides/CCSP-isc2-certified-cloud-security-professional.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-02",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/ccsp-official-objectives.txt",
-      "blueprint_snapshot_sha256":"9ee040484826df7b98700a44891301a9fc46fb76351c0a941221e6f5cf1b8288",
-      "objective_coverage":[
-        {"objective_group":"Cloud Concepts, Architecture and Design (17%)","guide_sections":["Section 1","All scenarios","Labs 1, 3 and 8"]},
-        {"objective_group":"Cloud Data Security (20%)","guide_sections":["Section 2","Scenarios 1 and 3","Labs 2 and 8"]},
-        {"objective_group":"Cloud Platform and Infrastructure Security (17%)","guide_sections":["Section 3","Scenarios 2–3","Labs 1, 4 and 7–8"]},
-        {"objective_group":"Cloud Application Security (16%)","guide_sections":["Section 4","Scenario 2","Labs 5 and 8"]},
-        {"objective_group":"Cloud Security Operations (17%)","guide_sections":["Section 5","Scenarios 2–3","Labs 4 and 6–8"]},
-        {"objective_group":"Legal, Risk and Compliance (13%)","guide_sections":["Section 6","Scenarios 1 and 3","Labs 3, 7 and 8"]}
+      "id": "ccsp-2026-09-29-source-validation",
+      "exam_code": "CCSP",
+      "guide_path": "guides/CCSP-isc2-certified-cloud-security-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ccsp-official-objectives.txt",
+      "blueprint_snapshot_sha256": "fef10f6e4d4ddf5249d19f5b8ab4b70700473671d5435ffea008fa8e3db84ed1",
+      "objective_coverage": [
+        {
+          "objective_group": "Cloud Concepts, Architecture and Design (17%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1, 3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Cloud Data Security (20%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Cloud Platform and Infrastructure Security (17%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 2–3",
+            "Labs 1, 4 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Cloud Application Security (16%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenario 2",
+            "Labs 5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Cloud Security Operations (17%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenarios 2–3",
+            "Labs 4 and 6–8"
+          ]
+        },
+        {
+          "objective_group": "Legal, Risk and Compliance (13%)",
+          "guide_sections": [
+            "Section 6",
+            "Scenarios 1 and 3",
+            "Labs 3, 7 and 8"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":10,"reachable":8,"access_blocked":2,"missing_or_error":0},
-      "notes":"Every August 1, 2026 objective is mapped through obligation and data, service/deployment model, customer/provider/partner responsibility, trust boundary, selected control and contract dependency, observable evidence, failure and recovery/exit. New AI/ML, LLM application, cloud-native and current jurisdiction topics are integrated. Three scenarios, eight authorized labs and 40 checks are included. Eight URLs are reachable; O'Reilly and Udemy are automation-blocked; none are broken. Exam readiness is separated from experience/waiver/CISSP substitution, Associate status, endorsement, ethics, 90-CPE three-year cycle and current AMF. No recalled/live item, dump, unauthorized test or copied course content is used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 26,
+        "reachable": 24,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Mapped38 current objectives and preserved prior snapshots/history before accepting a testing-center label edit. Reconciled current FIPS/CSA transitions, course metadata and encryption/authorization boundaries. Added24 executed local checks,48 answered prompts and8 proposed infrastructure activities. Two commercial catalogs remain blocked; human review and infrastructure execution are pending. See docs/research/2026-09-29-ccsp-deep-review.md"
     },
     {
       "id":"cissp-2026-09-02-source-validation",

@@ -1628,6 +1628,8 @@ The review maps all current objectives through asset and requirement → failure
 
 ## CCSP coverage record
 
+The September 29 [deep review](research/2026-09-29-ccsp-deep-review.md) maps 38 detailed objectives. Mapped38 current objectives and preserved prior snapshots/history before accepting a testing-center label edit. Reconciled current FIPS/CSA transitions, course metadata and encryption/authorization boundaries. Added24 executed local checks,48 answered prompts and8 proposed infrastructure activities. Two commercial catalogs remain blocked; human review and infrastructure execution are pending. Current guide citations: 26 registered, 24 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026, after the August 1 revision took effect
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: August 1, 2026 six-domain outline—Cloud Concepts, Architecture and Design (17%), Cloud Data Security (20%), Cloud Platform and Infrastructure Security (17%), Cloud Application Security (16%), Cloud Security Operations (17%), and Legal, Risk and Compliance (13%)

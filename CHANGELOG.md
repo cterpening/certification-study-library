@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [CCSP deep review](docs/research/2026-09-29-ccsp-deep-review.md): Mapped38 current objectives, reconciled FIPS/CSA transitions and catalogs, and added24 executed encryption checks with48 answers.
+
 - September 29, 2026: [SSCP deep review](docs/research/2026-09-29-sscp-deep-review.md): Mapped36 current objectives, reconciled PDF/course inconsistencies, and added11 executed TLS cases with48 original answers.
 
 - September 29, 2026: [CC deep review](docs/research/2026-09-29-cc-deep-review.md): Mapped 19 current objectives, reconciled program and policy changes, and added 34 executed control/recovery checks with 48 answers.

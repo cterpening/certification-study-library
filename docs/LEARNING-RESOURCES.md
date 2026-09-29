@@ -2876,6 +2876,29 @@ This is not a complete list. Choose a route, map it against the current outline,
 
 Avoid recalled questions, “actual exam” banks and guaranteed passing. Use original practice with explained answers and current primary sources. The [dated deep-review report](research/2026-09-29-sscp-deep-review.md) records the executed work, source limitations and pending human review.
 
+### CCSP — Certified Cloud Security Professional
+
+Resource details from the [CCSP guide](../guides/CCSP-isc2-certified-cloud-security-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list. Select a route and map it against the current outline before adding references or practical work. Public catalog observations were checked September 29, 2026; no paid lessons, book interiors or question banks were accessed. Planning estimates are this guide's suggestions, not verified provider runtimes.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Current CCSP outline](https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline) — canonical 38-objective August 2026 scope | Public | Planning: 5–8h mapping and review |
+| [ISC2 self-study resources](https://www.isc2.org/certifications/ccsp/ccsp-self-study-resources) — official outline, training and study-aid hub | Public hub; linked account/paid resources | Planning: 1–2h selection; study varies |
+| [Official adaptive CCSP training](https://www.isc2.org/training/online-self-paced/ccsp-online-self-paced) — six public domain descriptions; included textbook/questions are catalog claims only | Paid/account; English; 90/180-day access starts at purchase | No fixed runtime verified; previous 20–40h “official range” not reverified |
+| [LinkedIn Learning/Cybrary CCSP Cert Prep](https://www.linkedin.com/learning/isc2-certified-cloud-security-professional-ccsp-cert-prep) — July 3, 2025 listing, six domains/six quizzes; close current objective gaps | Paid/trial; public contents reviewed | Header 10h02m; 94 listed clips total 10h02m39s; planning: add 30–50h practical work |
+| [Pluralsight Cloud Security path](https://www.pluralsight.com/paths/cloud-security) — five 2025 course cards on architecture, detection, authorized testing, APIs and compliance; generic supplement, not CCSP-specific | Paid/trial; public catalog reviewed | Header 5h; cards total 4h54m; planning: add 25–40h practical work |
+| [O'Reilly/Sybex CCSP study guide, 3rd edition](https://www.oreilly.com/library/view/isc-2-ccsp-certified/9781119909378/) — current public access blocked; earlier edition/date/alignment claims unverified here | Paid/trial or book; HTTP 403 | Earlier 11h47m not reverified |
+| [Udemy/Dion CCSP Full Course](https://www.udemy.com/course/isc2-ccsp-full-course-practice-exam/) — public access blocked; earlier August 2026 revision/current-alignment claim unverified | Paid; HTTP 403 | Earlier 19h59m not reverified |
+| [CSA Cloud Controls Matrix](https://cloudsecurityalliance.org/research/cloud-controls-matrix) — control/responsibility context; use the versioned 4.1 release to resolve overview metadata | Public overview; download routes have separate access/licensing terms | Planning: 4–8h selective mapping; full control rows not reviewed here |
+| [ISC2 member policies](https://www.isc2.org/policies-procedures/member-policies) — applicable CCSP/Associate CPE and AMF categories | Public | Planning: 45–90m |
+| [ISC2 Code of Ethics](https://www.isc2.org/ethics) — authority, competence, assurance, disclosure and public trust | Public | Planning: 30–60m plus scenarios |
+
+**VERIFY CURRENT:** Adaptive-course completion requires at least 75% on domain and final assessments plus its acknowledgement/evaluation requirements. This is separate from the certification exam and experience. Training access, exam entitlements and any extension/guarantee have their own conditions; no purchase, account eligibility or course quality was assessed here.
+
+Avoid recalled questions, “actual exam” banks and guaranteed passing. Use original reasoning practice and current primary evidence. The [dated deep-review report](research/2026-09-29-ccsp-deep-review.md) records source limitations, executed checks and pending human/infrastructure review.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.
