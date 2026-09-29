@@ -1,0 +1,1648 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "EX200",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/EX200-red-hat-certified-system-administrator.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "8c9cfd5ba345de5eaf0b3b35300178213c9d676ea24d23a9a7164bbfb77baa8c",
+  "guide_after_sha256": "b4535898d275be66795e0c7692cbc6c6032904302884f997cb407e1df4504129",
+  "prior_records": {
+    "exam": {
+      "code": "EX200",
+      "level": "beginner",
+      "vendor_id": "red-hat",
+      "title": "Red Hat Certified System Administrator",
+      "status": "active",
+      "study_guide_url": "https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam",
+      "guide_path": "guides/EX200-red-hat-certified-system-administrator.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal certification prerequisite. Red Hat recommends RH124 plus RH134, RH199 for experienced Linux administrators, or comparable RHEL experience. Practice every public task on RHEL 10, including shell/files, RPM/Flatpak, Bash, boot/services/logs, GPT/LVM/filesystems/NFS/autofs, scheduling, networking, users, firewalld, SSH and SELinux; validate all required state after reboot."
+    },
+    "review": {
+      "id": "ex200-2026-09-01-source-validation",
+      "exam_code": "EX200",
+      "guide_path": "guides/EX200-red-hat-certified-system-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ex200-official-objectives.txt",
+      "blueprint_snapshot_sha256": "69fa2bc5a08fc6c1cf183b89d6123a1564edab0d8e0e3ca12f80bc70b45916d4",
+      "objective_coverage": [
+        {
+          "objective_group": "Understand and use essential tools",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Manage software",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenario 1",
+            "Labs 2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Create simple shell scripts",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenario 1",
+            "Labs 3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Operate running systems",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios 1 and 3",
+            "Labs 4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Configure local storage",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenario 2",
+            "Labs 5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Create and configure file systems",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenario 2",
+            "Labs 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Deploy, configure, and maintain systems",
+          "guide_sections": [
+            "Section 7",
+            "Integrated scenarios 1 and 3",
+            "Labs 4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Manage basic networking",
+          "guide_sections": [
+            "Section 8",
+            "Integrated scenarios 1 and 3",
+            "Labs 7–8"
+          ]
+        },
+        {
+          "objective_group": "Manage users and groups",
+          "guide_sections": [
+            "Section 9",
+            "Integrated scenario 1",
+            "Labs 3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Manage security",
+          "guide_sections": [
+            "Section 10",
+            "Integrated scenarios 1 and 3",
+            "Labs 6–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 12,
+        "reachable": 10,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "The current unweighted ten-group EX200 objective page was reconciled with the RHEL 10 documentation and current official training routes. Three scenarios, eight safe performance labs and 40 original checks cover shell/local help, RPM/Flatpak, defensive Bash, boot/process/systemd/logging, GPT/LVM/filesystems/NFS/autofs, scheduling/time/bootloader, IPv4/IPv6/NetworkManager/firewalld, users/sudo/aging, SSH and SELinux. Every lab uses runtime validation, persistence, reboot and recovery evidence. All 12 URLs are cataloged: 10 reachable and two O'Reilly routes automation-blocked; none missing or broken. RHEL 9 material has an explicit gap checklist and no recalled exam tasks are used."
+    },
+    "sources": [
+      {
+        "id": "redhat-ex200-blueprint",
+        "title": "Red Hat Certified System Administrator exam EX200",
+        "url": "https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam",
+        "publisher": "Red Hat",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX200"
+        ],
+        "notes": "Canonical current RHEL 10 performance-objective and exam-policy page; task groups are unweighted and required state must persist after reboot."
+      },
+      {
+        "id": "redhat-ex200-rhel10-docs",
+        "title": "Red Hat Enterprise Linux 10 documentation",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10",
+        "publisher": "Red Hat",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX200"
+        ],
+        "notes": "Current first-party system administration, storage, networking and security reference entry point."
+      },
+      {
+        "id": "redhat-ex200-rh124",
+        "title": "Red Hat System Administration I RH124",
+        "url": "https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i",
+        "publisher": "Red Hat",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX200"
+        ],
+        "notes": "Official first standard-path course based on RHEL 10.0 for learners without prior Linux administration experience."
+      },
+      {
+        "id": "redhat-ex200-rh134",
+        "title": "Red Hat System Administration II RH134",
+        "url": "https://www.redhat.com/en/services/training/rh134-red-hat-system-administration-ii",
+        "publisher": "Red Hat",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX200"
+        ],
+        "notes": "Official second standard-path course based on RHEL 10; delivery and lab entitlement vary."
+      },
+      {
+        "id": "redhat-ex200-rh199",
+        "title": "RHCSA Rapid Track Course RH199",
+        "url": "https://www.redhat.com/en/services/training/rh199-red-hat-certified-system-administrator-rapid-track-course",
+        "publisher": "Red Hat",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX200"
+        ],
+        "notes": "Official condensed RHEL 10 course for experienced Linux administrators, combining essential RH124/RH134 content."
+      },
+      {
+        "id": "redhat-ex200-rh024",
+        "title": "Red Hat Enterprise Linux Technical Overview RH024",
+        "url": "https://www.redhat.com/en/services/training/rh024-red-hat-linux-technical-overview",
+        "publisher": "Red Hat",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX200"
+        ],
+        "notes": "Free RHEL 10 technical orientation, approximately three hours; not complete certification preparation."
+      },
+      {
+        "id": "redhat-ex200-developer-download",
+        "title": "Download Red Hat Enterprise Linux",
+        "url": "https://developers.redhat.com/products/rhel/download",
+        "publisher": "Red Hat Developer",
+        "authority_class": 2,
+        "source_type": "hands-on-lab",
+        "access_model": "free-account",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX200"
+        ],
+        "notes": "No-cost Developer membership route to current RHEL images for safe disposable lab VMs."
+      },
+      {
+        "id": "redhat-ex200-oreilly-video",
+        "title": "Red Hat RHCSA RHEL 10 with Exam Labs",
+        "url": "https://www.oreilly.com/videos/red-hat-rhcsa/9780135493137/",
+        "publisher": "O'Reilly / Pearson / Sander van Vugt",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX200"
+        ],
+        "notes": "August 2025 current RHEL 10 video; 15 hours 7 minutes listed, with lesson labs and sample exam."
+      },
+      {
+        "id": "redhat-ex200-oreilly-book",
+        "title": "Red Hat RHCSA 10 Cert Guide EX200",
+        "url": "https://www.oreilly.com/library/view/red-hat-rhcsa/9780135576625/",
+        "publisher": "O'Reilly / Pearson / Sander van Vugt",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX200"
+        ],
+        "notes": "June 2026 RHEL 10 book; 714 pages and 15 hours 39 minutes listed, with chapter labs and four practice exams."
+      },
+      {
+        "id": "redhat-ex200-oreilly-live",
+        "title": "Red Hat RHCSA RHEL 10 Prep live event",
+        "url": "https://www.oreilly.com/live-events/red-hat-rhcsa-rhel-10-prep/0642572442705/0642572442699/",
+        "publisher": "O'Reilly / Sander van Vugt",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX200"
+        ],
+        "notes": "Four-day current RHEL 10 live course with labs and practice review; schedule is volatile."
+      },
+      {
+        "id": "redhat-ex200-kodekloud",
+        "title": "KodeKloud Red Hat Certified System Administrator",
+        "url": "https://kodekloud.com/courses/red-hat-certified-system-administrator-rhcsa",
+        "publisher": "KodeKloud / Andrei Balint",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX200"
+        ],
+        "notes": "Current course with extensive labs and mock exams; KodeKloud identified this route as its RHEL 10 replacement in August 2026, but stable combined runtime was not exposed."
+      },
+      {
+        "id": "redhat-ex200-coursera",
+        "title": "RHCSA Certification Preparation Specialization",
+        "url": "https://www.coursera.org/specializations/rhcsa-certification-prep",
+        "publisher": "Coursera",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX200"
+        ],
+        "notes": "Four-course hands-on RHEL 10 specialization aligned to EX200; allow 45–80 hours as a library planning estimate and verify access."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "cce39337f0cefdd064a54f2f2d0260ddb439c7f229693e06d6a8a17b16004b50",
+      "guide_sections": [
+        "1. Understand and use essential tools",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "1b06df8c68811c3f70f6ceae5c0194fe8eeccc19bb5672cf9d5eb1fa1ddeb04a",
+      "guide_sections": [
+        "1. Understand and use essential tools",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "022cc8a976a685e8eca1dbe602ed8dcde7f4b58ae87882013858e7c9a4f4f0ee",
+      "guide_sections": [
+        "1. Understand and use essential tools",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "2fba4333455424bcb3fd9d7fe2a63e0f46fcd7e42ea58c8f29ea94d262d9011d",
+      "guide_sections": [
+        "1. Understand and use essential tools",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "62cb4b0881de55825218e8283c967b3443acdc5187cf357504134c348834014e",
+      "guide_sections": [
+        "1. Understand and use essential tools",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "44830fcf53712aa99265cc36e0ec27d51840364bc86f676600998d1f3e080318",
+      "guide_sections": [
+        "1. Understand and use essential tools",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "6df3605650dc5f96b62a053275561892c9fc4af29e158a0af4c8b31f61dfa766",
+      "guide_sections": [
+        "1. Understand and use essential tools",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "c6c93ab2e56cc82ce483794fa8b2454f606673c151769ef115dd47640c7fe59f",
+      "guide_sections": [
+        "1. Understand and use essential tools",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "9987763328343e3ddfc59a1f5119ef3cc2f56012b98662377119dc57b660bb9c",
+      "guide_sections": [
+        "1. Understand and use essential tools",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "aec83a2d779c0886420b6473e3e8f52310dd3e1466545d78bb9cc305fcc83215",
+      "guide_sections": [
+        "1. Understand and use essential tools",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 11,
+      "objective_sha256": "66480ac03d35fc9e4b3b538924570940f091601bb8ac433141a4cad418ed2e4c",
+      "guide_sections": [
+        "1. Understand and use essential tools",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "4b60aef36806c5fbcb3abd49e025a1c308873709cc47c7c88953332eb2c1abe0",
+      "guide_sections": [
+        "2. Manage software",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "7fef5458c8ee8ffe75af1d4bced1c7170d6d7fcb5244878e395172486e4b1469",
+      "guide_sections": [
+        "2. Manage software",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "f38e0a7697da381997abb0bd5798b6a2a9e18841dfd479fdb4c3347add819ab7",
+      "guide_sections": [
+        "2. Manage software",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "c7980a0d662e6233790fa6b97eae0b60c1b50859bf911752e3b719aa36e1635f",
+      "guide_sections": [
+        "2. Manage software",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "bc1b2dd559a6904ae157567c26c95a66ac0230c7bf2682c92e79a7e05424de40",
+      "guide_sections": [
+        "3. Create simple shell scripts",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "32317b8b837691a50ed96dae728061708d70cc11dbce64d33314eab9e74add91",
+      "guide_sections": [
+        "3. Create simple shell scripts",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "4f936b7f96a727252cd309fcbbae2b5e4ee04abbe5760e25a31273bcf974243f",
+      "guide_sections": [
+        "3. Create simple shell scripts",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "b42d1df8c1643ba8ff7366190ef05ab21ee4e4f81ab2d713d95963b067abcc5f",
+      "guide_sections": [
+        "3. Create simple shell scripts",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "6c33e62d3a05ea0ddb0c65396f081e69ca5ec7d1cfc1896e7aadd51e63842c4c",
+      "guide_sections": [
+        "4. Operate running systems",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "570f1da74ebf4f4f21809ea69a22a96a0dfd337607294b701b28386c34730566",
+      "guide_sections": [
+        "4. Operate running systems",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "4552bf152eba120e4db1e925fd2b2d02329b6c7aa5e96a036e3bea95085e0828",
+      "guide_sections": [
+        "4. Operate running systems",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "71e10d94b82602913cfc0a0cbdfd6551a5a0cfbfb3a37049d94bcd71fa4e20c8",
+      "guide_sections": [
+        "4. Operate running systems",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "b34aca29c9ee040ff090b6c95c603242d11d665d8b60164b20d0c29befbbbcb3",
+      "guide_sections": [
+        "4. Operate running systems",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "54bddf0e30a0a0fe55c266ca890032de26e2a02f30db80ddcaee1449e5cc0256",
+      "guide_sections": [
+        "4. Operate running systems",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "4cda62d6debec0db053e52fe00373aff8eae483e5db41a621a82baba76196afa",
+      "guide_sections": [
+        "4. Operate running systems",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "559c6fe061d20528a276c596a234a9eb89aa4fbb3e5e9ea17c75acd228864159",
+      "guide_sections": [
+        "4. Operate running systems",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "b643306a56c4b5098b180e3591ab8d76569d13f6bdf9155081b8cb5ca58250cf",
+      "guide_sections": [
+        "4. Operate running systems",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 10,
+      "objective_sha256": "d1a46fc227cb7d7cbdedd000e6dfb21396ef763a7a321ba84eb4d753722be246",
+      "guide_sections": [
+        "4. Operate running systems",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "e776bd2e1b49d77f18507c41f9bbd5f13f73bd73eef681ad741db8ed1431a230",
+      "guide_sections": [
+        "5. Configure local storage",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "6022f623714b1ce82b8cc237871db341c77fd5ec441c543ee12a45426f218671",
+      "guide_sections": [
+        "5. Configure local storage",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "f6b377423d8fa46de165a7564f54573a8bbd2a00e952a74243291ff797dbb627",
+      "guide_sections": [
+        "5. Configure local storage",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "c1718e9e283e41a59a952be6cc0978d53ac8063f690ab8fb588d3d4f5b9cd139",
+      "guide_sections": [
+        "5. Configure local storage",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "52fde0df4d613f0e2a91117431a4c1c991ea514933c354174dcb717f03c84542",
+      "guide_sections": [
+        "5. Configure local storage",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "e9aec70ae94a7b8806c11060ea19ca656767acf2f7621257509cb2eb842a3d5f",
+      "guide_sections": [
+        "5. Configure local storage",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "cfa2e5ebb60e61a7bf4bade2f8ff0c0b63ca5bf25634d8c0e8e0bcd55256191a",
+      "guide_sections": [
+        "6. Create and configure file systems",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "81883be39a7c79b5abc138cdf355be3e3619bc342004895d2a62baebf975d2fc",
+      "guide_sections": [
+        "6. Create and configure file systems",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "4851044bb00a29ab328d7193d85487b90b28052f08d77db6292e5c1d27ea1716",
+      "guide_sections": [
+        "6. Create and configure file systems",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "f913ab41d3fdb772354c79ee88b88299a3b428fa65e47353b0bef2dd023b9716",
+      "guide_sections": [
+        "6. Create and configure file systems",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "dedd793b1017485c0860f1d22302376c5f3068ed6cadabae7d115979fbdf9184",
+      "guide_sections": [
+        "6. Create and configure file systems",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "d6bc54f098d9fb8022ff5087d5bdcc893b29b3c3b86faae4e449fa6004530040",
+      "guide_sections": [
+        "7. Deploy, configure, and maintain systems",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "5049b83f9505525063fd46ccc06b78da251f23da92a05ede251ee6734a7548a8",
+      "guide_sections": [
+        "7. Deploy, configure, and maintain systems",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "f9c4599d305a9c576c1420fee855055741ed0187414de4b1b983a387cb30c685",
+      "guide_sections": [
+        "7. Deploy, configure, and maintain systems",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "173bca3062c4730a9e472f5bb7206064ec048be2bd36d10cc559f32409b5c1bc",
+      "guide_sections": [
+        "7. Deploy, configure, and maintain systems",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "9afe131c44d4f7367da18787a0393ea275abe35e3d071d69c5fe7575f50ae750",
+      "guide_sections": [
+        "7. Deploy, configure, and maintain systems",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "8b4c1d85764e60bc476c601d966eddd177da70ef8d78ca34ca044842506a7b0d",
+      "guide_sections": [
+        "7. Deploy, configure, and maintain systems",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "25593dad8f221e06f0f0ac24ad197e794c3efbcef9d1e5ee84f35ac37cada695",
+      "guide_sections": [
+        "8. Manage basic networking",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "e3f6482207a4908bffb3bd6b9956e80c84da0f1607b1f5ba46f8f9d77f67b49a",
+      "guide_sections": [
+        "8. Manage basic networking",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "a784b67d834f7aba1452ed18d06a61b307eeb7e5faea68c5129991d80ec2f0a8",
+      "guide_sections": [
+        "8. Manage basic networking",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "49bb69e339364f5e13e335dd17c20f3f32eec4f62b0b08e2796209a5f92ce1e6",
+      "guide_sections": [
+        "8. Manage basic networking",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "4e66402562ac4c3ed5cb46392d7a3b9efa185930ef0a9899717a77670db33d81",
+      "guide_sections": [
+        "9. Manage users and groups",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "3479279ef011047dcf87bf8230009580fb9403744bd1e12b97d677e59e5ed70e",
+      "guide_sections": [
+        "9. Manage users and groups",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "ff3d24e1ce77ffed177b7ee710851035b4eba0fdf32d93c17908a1f0b2a4549a",
+      "guide_sections": [
+        "9. Manage users and groups",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "9a741df42ef0a97232d3ce7a12759b3574905292281dd2522fa90d74dee59e7f",
+      "guide_sections": [
+        "9. Manage users and groups",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "7d8d9926ea51ae2531696aed94da62b58c21a37e583f3b3451bae5941ff0ab07",
+      "guide_sections": [
+        "10. Manage security",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "ed83de7abb3c2404416722979303c01cd82a5d7b01f2d339ecb887c324e154a3",
+      "guide_sections": [
+        "10. Manage security",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "d6ff44b385766c8e49d8d2a9bb51e07320193b7951af8855ea64a0fc01c4c1da",
+      "guide_sections": [
+        "10. Manage security",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "06c93f97faf4ed54894691a6418e5af780e346a3bc100c8160458e79758dda6a",
+      "guide_sections": [
+        "10. Manage security",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "3c8a64f5bccdf2b96af18aa00c6a2dcb2f7c805696d63fb9482babb42ac26284",
+      "guide_sections": [
+        "10. Manage security",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "b7f758a820372f2517bdb9bc4cf17907e3c38c2c3573aa8f9dcebd3628ce6056",
+      "guide_sections": [
+        "10. Manage security",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 7,
+      "objective_sha256": "0187c1810b15f3689dcf4069411c9e8a2e581da3a747c7247139d6d925728c49",
+      "guide_sections": [
+        "10. Manage security",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 8,
+      "objective_sha256": "0f62586d5c3b15c3492d9347a55fd399e57e077b477f2963df5f8a5ba84625de",
+      "guide_sections": [
+        "10. Manage security",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "EX200",
+        "title": "Red Hat Certified System Administrator",
+        "url": "https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam",
+        "guide_path": "guides/EX200-red-hat-certified-system-administrator.md",
+        "snapshot_path": "data\\objective-snapshots\\ex200-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ex200-official-status.json",
+        "previous_sha256": "69fa2bc5a08fc6c1cf183b89d6123a1564edab0d8e0e3ca12f80bc70b45916d4",
+        "current_sha256": "69fa2bc5a08fc6c1cf183b89d6123a1564edab0d8e0e3ca12f80bc70b45916d4",
+        "previous_status_sha256": "5d5bdfbf2637c599803523e9d6121fd789356141337a5cd65253c10e1dbac65d",
+        "current_status_sha256": "5d5bdfbf2637c599803523e9d6121fd789356141337a5cd65253c10e1dbac65d",
+        "official_status": {
+          "skills_versions": [
+            "Red Hat Certified System Administrator exam | EX200",
+            "This exam is based on Red Hat® Enterprise Linux® 10."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 19,
+    "reachable": 17,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "redhat-ex200-blueprint",
+      "url": "https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam",
+      "checked_at": "2026-09-29T01:30:59.376091+00:00",
+      "health": {
+        "id": "redhat-ex200-blueprint",
+        "url": "https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam",
+        "checked_at": "2026-09-29T01:30:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Red Hat Certified System Administrator exam | EX200",
+        "canonical_url": "https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam",
+        "duration_signals": [],
+        "signal_fingerprint": "166a7cd2e7e055bc02552277fc926544a1bab1eec3810dc49403e963d437520f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam",
+      "sha256": "138545123055d64b5fb07a2e8cc74f4ee3dd10138aeff5809740cf2e2d3906b5",
+      "text_characters": 13514
+    },
+    {
+      "id": "redhat-ex200-rhel10-docs",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10",
+      "checked_at": "2026-09-29T01:30:59.376734+00:00",
+      "health": {
+        "id": "redhat-ex200-rhel10-docs",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10",
+        "checked_at": "2026-09-29T01:30:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Red Hat Enterprise Linux | 10 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10",
+        "duration_signals": [],
+        "signal_fingerprint": "e8528fb13091e2cb57b923096b7114f525fc4f02c296bb66498d1ee532139225",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10",
+      "sha256": "dcec6e3564d245d5002b25ac58dbdc01756a053258042eda16ab2914eb1fcd52",
+      "text_characters": 9916
+    },
+    {
+      "id": "redhat-ex200-rh124",
+      "url": "https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i",
+      "checked_at": "2026-09-29T01:30:59.377108+00:00",
+      "health": {
+        "id": "redhat-ex200-rh124",
+        "url": "https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i",
+        "checked_at": "2026-09-29T01:30:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Red Hat System Administration I | RH124",
+        "canonical_url": "https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i",
+        "duration_signals": [],
+        "signal_fingerprint": "d33fd31b3fe796ea5640bc2531b5bbf1258681be20a57ec50101df4fc757951f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i",
+      "sha256": "b1166a1e18b5f69b16b84cfdd6508af837f205d9b9517bdf1e17e57656d79083",
+      "text_characters": 12715
+    },
+    {
+      "id": "redhat-ex200-rh134",
+      "url": "https://www.redhat.com/en/services/training/rh134-red-hat-system-administration-ii",
+      "checked_at": "2026-09-29T01:31:00.669022+00:00",
+      "health": {
+        "id": "redhat-ex200-rh134",
+        "url": "https://www.redhat.com/en/services/training/rh134-red-hat-system-administration-ii",
+        "checked_at": "2026-09-29T01:31:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.redhat.com/en/services/training/rh134-red-hat-system-administration-ii",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Red Hat System Administration II | RH134",
+        "canonical_url": "https://www.redhat.com/en/services/training/rh134-red-hat-system-administration-ii",
+        "duration_signals": [],
+        "signal_fingerprint": "d3b2f11d6b31b12e5c222d852f1afef93bb6c79a09cbc852199fe0e12fa59257",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.redhat.com/en/services/training/rh134-red-hat-system-administration-ii",
+      "sha256": "a4250ee3088ec3d7dd94620e872d970bbe2104452059a70ff494abccae4cb06d",
+      "text_characters": 13101
+    },
+    {
+      "id": "redhat-ex200-rh199",
+      "url": "https://www.redhat.com/en/services/training/rh199-red-hat-certified-system-administrator-rapid-track-course",
+      "checked_at": "2026-09-29T01:31:00.687114+00:00",
+      "health": {
+        "id": "redhat-ex200-rh199",
+        "url": "https://www.redhat.com/en/services/training/rh199-red-hat-certified-system-administrator-rapid-track-course",
+        "checked_at": "2026-09-29T01:31:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.redhat.com/en/services/training/rh199-red-hat-certified-system-administrator-rapid-track-course",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Red Hat Certified System Administrator Rapid Track course | RH199",
+        "canonical_url": "https://www.redhat.com/en/services/training/rh199-red-hat-certified-system-administrator-rapid-track-course",
+        "duration_signals": [],
+        "signal_fingerprint": "12891440e47eecf322738c7438aa05a3c1a2d9d5d03ef4e27eef427a7c2b51e1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.redhat.com/en/services/training/rh199-red-hat-certified-system-administrator-rapid-track-course",
+      "sha256": "74a4df50dfee02e67b06f82ca5e7b17a532f01df51e8e94362c7162870b5dd57",
+      "text_characters": 13915
+    },
+    {
+      "id": "redhat-ex200-rh024",
+      "url": "https://www.redhat.com/en/services/training/rh024-red-hat-linux-technical-overview",
+      "checked_at": "2026-09-29T01:31:00.730659+00:00",
+      "health": {
+        "id": "redhat-ex200-rh024",
+        "url": "https://www.redhat.com/en/services/training/rh024-red-hat-linux-technical-overview",
+        "checked_at": "2026-09-29T01:31:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.redhat.com/en/services/training/rh024-red-hat-linux-technical-overview",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Red Hat Enterprise Linux Technical Overview | RH024",
+        "canonical_url": "https://www.redhat.com/en/services/training/rh024-red-hat-linux-technical-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "ae93abb29de4577d384703e2d1c61088de0f94b07b0564ae5a33642153504c5e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.redhat.com/en/services/training/rh024-red-hat-linux-technical-overview",
+      "sha256": "1faba7edd38cacb4daf01d585d55739fa0a6792106e9f424ce1228548527dc5c",
+      "text_characters": 10908
+    },
+    {
+      "id": "redhat-ex200-developer-download",
+      "url": "https://developers.redhat.com/products/rhel/download",
+      "checked_at": "2026-09-29T01:31:01.873458+00:00",
+      "health": {
+        "id": "redhat-ex200-developer-download",
+        "url": "https://developers.redhat.com/products/rhel/download",
+        "checked_at": "2026-09-29T01:31:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developers.redhat.com/products/rhel/download",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Download Red Hat Enterprise Linux (RHEL) | Red Hat Developer",
+        "canonical_url": "https://developers.redhat.com/products/rhel/download",
+        "duration_signals": [],
+        "signal_fingerprint": "92e03fe3e04255a9a4c39f4276ddb91759fb0d14735c21ecf2cf6d6f1a7f98b6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developers.redhat.com/products/rhel/download",
+      "sha256": "8f1ae9d5141c704d94216f86d5153307afd498b3ceb697237c34142258d53096",
+      "text_characters": 14466
+    },
+    {
+      "id": "redhat-ex200-oreilly-video",
+      "url": "https://www.oreilly.com/videos/red-hat-rhcsa/9780135493137/",
+      "checked_at": "2026-09-29T01:31:01.936104+00:00",
+      "health": {
+        "id": "redhat-ex200-oreilly-video",
+        "url": "https://www.oreilly.com/videos/red-hat-rhcsa/9780135493137/",
+        "checked_at": "2026-09-29T01:31:01+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/red-hat-rhcsa/9780135493137/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "redhat-ex200-oreilly-book",
+      "url": "https://www.oreilly.com/library/view/red-hat-rhcsa/9780135576625/",
+      "checked_at": "2026-09-29T01:31:02.099360+00:00",
+      "health": {
+        "id": "redhat-ex200-oreilly-book",
+        "url": "https://www.oreilly.com/library/view/red-hat-rhcsa/9780135576625/",
+        "checked_at": "2026-09-29T01:31:02+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/red-hat-rhcsa/9780135576625/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "redhat-ex200-oreilly-live",
+      "url": "https://www.oreilly.com/live-events/red-hat-rhcsa-rhel-10-prep/0642572442705/0642572442699/",
+      "checked_at": "2026-09-29T01:31:02.300654+00:00",
+      "health": {
+        "id": "redhat-ex200-oreilly-live",
+        "url": "https://www.oreilly.com/live-events/red-hat-rhcsa-rhel-10-prep/0642572442705/0642572442699/",
+        "checked_at": "2026-09-29T01:31:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.oreilly.com/live-events/red-hat-rhcsa-rhel-10-prep/0642572442705/0642572442699/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Red Hat RHCSA RHEL 10 Prep",
+        "canonical_url": "https://www.oreilly.com/live-events/red-hat-rhcsa-rhel-10-prep/0642572442705/",
+        "duration_signals": [
+          "10 minutes",
+          "100 minutes",
+          "110 minutes",
+          "160 minutes",
+          "20 minutes",
+          "40 minutes",
+          "60 minutes",
+          "70 minutes",
+          "PT16H"
+        ],
+        "signal_fingerprint": "39daf939ba3c4a6df0ec2d139116ac4006b8823439aa30339e0a56445b3a57af",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.oreilly.com/live-events/red-hat-rhcsa-rhel-10-prep/0642572442705/0642572442699/",
+      "sha256": "2e24ad7a94bad6fcca2f6ff391b56a6609119d2bcd24586a8502187f760597ed",
+      "text_characters": 3539
+    },
+    {
+      "id": "redhat-ex200-kodekloud",
+      "url": "https://kodekloud.com/courses/red-hat-certified-system-administrator-rhcsa",
+      "checked_at": "2026-09-29T01:31:02.310326+00:00",
+      "health": {
+        "id": "redhat-ex200-kodekloud",
+        "url": "https://kodekloud.com/courses/red-hat-certified-system-administrator-rhcsa",
+        "checked_at": "2026-09-29T01:31:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://kodekloud.com/courses/red-hat-certified-system-administrator-rhcsa",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Red Hat Certified System Administrator (RHCSA) Course | KodeKloud",
+        "canonical_url": "https://kodekloud.com/courses/red-hat-certified-system-administrator-rhcsa",
+        "duration_signals": [
+          "07.07 Hours",
+          "15 Hours",
+          "20 Hours",
+          "48 Hours",
+          "6 Hours",
+          "9 Hours"
+        ],
+        "signal_fingerprint": "f9c626fee9380acf4afde50980444f5a6568b8c22438db570a88723d8bbfc941",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://kodekloud.com/courses/red-hat-certified-system-administrator-rhcsa",
+      "sha256": "ed32856a696c26bd2896f86eafd44d95110853ede2c2bc6f5d1304218daf9ee6",
+      "text_characters": 17321
+    },
+    {
+      "id": "redhat-ex200-coursera",
+      "url": "https://www.coursera.org/specializations/rhcsa-certification-prep",
+      "checked_at": "2026-09-29T01:31:03.787091+00:00",
+      "health": {
+        "id": "redhat-ex200-coursera",
+        "url": "https://www.coursera.org/specializations/rhcsa-certification-prep",
+        "checked_at": "2026-09-29T01:31:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.coursera.org/specializations/rhcsa-certification-prep",
+        "content_type": "text/html",
+        "page_title": "RHCSA Certification Preparation",
+        "canonical_url": "https://www.coursera.org/specializations/rhcsa-certification-prep",
+        "duration_signals": [
+          "10 hours",
+          "4 hours",
+          "6 hours",
+          "7 hours",
+          "P1M"
+        ],
+        "signal_fingerprint": "0b6cae01c8625838b4bf377d17423dc373785d5adc6b6ad7cfda88fdf50bcb43",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.coursera.org/specializations/rhcsa-certification-prep",
+      "sha256": "5c58ff7ef81acd41904c7fc6d5f53e10e12ae23eeaee9e67b8ae8bb90d6b0012",
+      "text_characters": 16278
+    },
+    {
+      "id": "redhat10-fs-overview",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/managing_file_systems/overview-of-available-file-systems",
+      "checked_at": "2026-09-29T01:34:41.963671+00:00",
+      "health": {
+        "id": "redhat10-fs-overview",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/managing_file_systems/overview-of-available-file-systems",
+        "checked_at": "2026-09-29T01:34:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/managing_file_systems/overview-of-available-file-systems",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Chapter 1. Overview of available file systems | Managing file systems | Red Hat Enterprise Linux | 10 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/managing_file_systems/overview-of-available-file-systems",
+        "duration_signals": [],
+        "signal_fingerprint": "b096dbffa2044d5de5b7b8e427247cc078053954e348b9456cc29a148513cea2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/managing_file_systems/overview-of-available-file-systems",
+      "sha256": "25175fb754988f8d3b043c67ee2b879cda32278502d0625ed9f7dc3596ea4b0f",
+      "text_characters": 28605
+    },
+    {
+      "id": "redhat10-storage-adoption",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/considerations_in_adopting_rhel_10/file-systems-and-storage",
+      "checked_at": "2026-09-29T01:34:41.964381+00:00",
+      "health": {
+        "id": "redhat10-storage-adoption",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/considerations_in_adopting_rhel_10/file-systems-and-storage",
+        "checked_at": "2026-09-29T01:34:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/considerations_in_adopting_rhel_10/file-systems-and-storage",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Chapter 10. File systems and storage | Considerations in adopting RHEL 10 | Red Hat Enterprise Linux | 10 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/considerations_in_adopting_rhel_10/file-systems-and-storage",
+        "duration_signals": [],
+        "signal_fingerprint": "ccb9f422ff52185a48be0f5765297abfb11c3351f60a256dee27c03b84db0e8f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/considerations_in_adopting_rhel_10/file-systems-and-storage",
+      "sha256": "d372f57564ae5f5fbac6d47629bab9accc12502a8a33b1810a28f8fc00ad4610",
+      "text_characters": 5117
+    },
+    {
+      "id": "redhat10-firewalld",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_firewalls_and_packet_filters/using-and-configuring-firewalld",
+      "checked_at": "2026-09-29T01:34:41.964810+00:00",
+      "health": {
+        "id": "redhat10-firewalld",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_firewalls_and_packet_filters/using-and-configuring-firewalld",
+        "checked_at": "2026-09-29T01:34:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_firewalls_and_packet_filters/using-and-configuring-firewalld",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Chapter 1. Using and configuring firewalld | Configuring firewalls and packet filters | Red Hat Enterprise Linux | 10 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_firewalls_and_packet_filters/using-and-configuring-firewalld",
+        "duration_signals": [],
+        "signal_fingerprint": "2c394ca2a82df1220b5e8b2505ef38e929c9fc2184cfaddd301bb923ffe78f55",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_firewalls_and_packet_filters/using-and-configuring-firewalld",
+      "sha256": "9e20e181ce7ea654207671ccf4ebb459c0aab77e5f752c2cbdd673c5f493b7fd",
+      "text_characters": 71357
+    },
+    {
+      "id": "redhat10-selinux-troubleshooting",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_selinux/troubleshooting-problems-related-to-selinux",
+      "checked_at": "2026-09-29T01:34:43.178141+00:00",
+      "health": {
+        "id": "redhat10-selinux-troubleshooting",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_selinux/troubleshooting-problems-related-to-selinux",
+        "checked_at": "2026-09-29T01:34:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_selinux/troubleshooting-problems-related-to-selinux",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Chapter 5. Troubleshooting problems related to SELinux | Using SELinux | Red Hat Enterprise Linux | 10 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_selinux/troubleshooting-problems-related-to-selinux",
+        "duration_signals": [],
+        "signal_fingerprint": "6c56122c6800ea3bee7bfdcb40d23a718d11c20dd02129eba4c804b353b0e09d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_selinux/troubleshooting-problems-related-to-selinux",
+      "sha256": "6fc9a30981dbcf0e8ff6d6aedcb4b0fb445efe6c2b7b06b0c77162d526ad3dd5",
+      "text_characters": 24774
+    },
+    {
+      "id": "systemd-timer-upstream",
+      "url": "https://raw.githubusercontent.com/systemd/systemd/main/man/systemd.timer.xml",
+      "checked_at": "2026-09-29T01:34:43.275905+00:00",
+      "health": {
+        "id": "systemd-timer-upstream",
+        "url": "https://raw.githubusercontent.com/systemd/systemd/main/man/systemd.timer.xml",
+        "checked_at": "2026-09-29T01:34:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/systemd/systemd/main/man/systemd.timer.xml",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/systemd/systemd/main/man/systemd.timer.xml",
+      "sha256": "c60ae50a90a2045354e1f34080939bb594e4b790f60385ee5c4c279070483147",
+      "text_characters": 17127
+    },
+    {
+      "id": "redhat-chrony-blog",
+      "url": "https://www.redhat.com/en/blog/chrony-time-services-linux",
+      "checked_at": "2026-09-29T01:34:43.507890+00:00",
+      "health": {
+        "id": "redhat-chrony-blog",
+        "url": "https://www.redhat.com/en/blog/chrony-time-services-linux",
+        "checked_at": "2026-09-29T01:34:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.redhat.com/en/blog/chrony-time-services-linux",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "How to configure chrony as an NTP client or server in Linux",
+        "canonical_url": "https://www.redhat.com/en/blog/chrony-time-services-linux",
+        "duration_signals": [],
+        "signal_fingerprint": "c8904561a1f481197a9fef46910bff3406af2214da3c3e01ce92dd282f2b6c96",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.redhat.com/en/blog/chrony-time-services-linux",
+      "sha256": "60a1cb081cc4344b5af62eb4bf3d9e2324d21245993a4ad0ed067e0326eb1956",
+      "text_characters": 12295
+    },
+    {
+      "id": "redhat10-chrony",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_time_synchronization/using-chrony",
+      "checked_at": "2026-09-29T01:50:31.908763+00:00",
+      "health": {
+        "id": "redhat10-chrony",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_time_synchronization/using-chrony",
+        "checked_at": "2026-09-29T01:50:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_time_synchronization/using-chrony",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Chapter 2. Using chrony | Configuring time synchronization | Red Hat Enterprise Linux | 10 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_time_synchronization/using-chrony",
+        "duration_signals": [],
+        "signal_fingerprint": "f8214c8e4663bdb1ecab7e59cfe8f8c48d8a556957d44788244ed0e8169031a0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_time_synchronization/using-chrony",
+      "sha256": "3a9780dfdb965fbf6f4785a0230a82dcab8b7d00246a153d305a705ab1ba084f",
+      "text_characters": 12777
+    }
+  ],
+  "added_source_ids": [
+    "redhat10-fs-overview",
+    "redhat10-storage-adoption",
+    "redhat10-firewalld",
+    "redhat10-selinux-troubleshooting",
+    "systemd-timer-upstream",
+    "redhat-chrony-blog",
+    "redhat10-chrony"
+  ],
+  "findings": [
+    {
+      "id": "ex200-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Prerequisite wording omitted the explicit experience alternative",
+      "url": "https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Official prerequisites accept named courses or comparable system-administration experience.",
+      "recommendation": "Use course-or-experience wording and distinguish another certification from recommended training.",
+      "disposition": "applied",
+      "source_id": "redhat-ex200-blueprint",
+      "resolution": "Use course-or-experience wording and distinguish another certification from recommended training."
+    },
+    {
+      "id": "ex200-deep-2",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Storage exercises lacked concrete RHEL 10 limits",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/considerations_in_adopting_rhel_10/file-systems-and-storage",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "EX200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "RHEL 10 requires at least 300 MB for new XFS filesystems and removes V4 format.",
+      "recommendation": "Add a suitably sized disposable-lab example and version checks.",
+      "disposition": "applied",
+      "source_id": "redhat10-storage-adoption",
+      "resolution": "Add a suitably sized disposable-lab example and version checks."
+    },
+    {
+      "id": "ex200-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Filesystem growth/shrink explanation was too general",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/managing_file_systems/overview-of-available-file-systems",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "XFS cannot shrink; ext4 shrink is offline; LV and filesystem sizes are separate.",
+      "recommendation": "State supported resize boundaries and verify both layers.",
+      "disposition": "applied",
+      "source_id": "redhat10-fs-overview",
+      "resolution": "State supported resize boundaries and verify both layers."
+    },
+    {
+      "id": "ex200-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Timer persistence needed service-state and missed-run semantics",
+      "url": "https://raw.githubusercontent.com/systemd/systemd/main/man/systemd.timer.xml",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Persistent calendar timers catch up with an activation; active services are not repeatedly restarted.",
+      "recommendation": "Add original service/timer pair, verify steps and RemainAfterExit caveat.",
+      "disposition": "applied",
+      "source_id": "systemd-timer-upstream",
+      "resolution": "Add original service/timer pair, verify steps and RemainAfterExit caveat."
+    },
+    {
+      "id": "ex200-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Persistent controls needed observable before/after evidence",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_firewalls_and_packet_filters/using-and-configuring-firewalld",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Runtime/permanent firewall states, persistent SELinux mappings versus labels and time sources differ from process state.",
+      "recommendation": "Add scoped query and verification examples with appropriate primary references.",
+      "disposition": "applied",
+      "source_id": "redhat10-firewalld",
+      "resolution": "Add scoped query and verification examples with appropriate primary references."
+    },
+    {
+      "id": "ex200-deep-6",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Forty knowledge checks lacked answers and shell work lacked an executable fixture",
+      "url": "https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Existing guide asked questions without worked answers and described scripting only conceptually.",
+      "recommendation": "Answer all checks and execute an original non-mutating Bash example, including caller redirection failure.",
+      "disposition": "applied",
+      "source_id": "redhat-ex200-blueprint",
+      "resolution": "Answer all checks and execute an original non-mutating Bash example, including caller redirection failure."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "redhat-chrony-blog",
+      "authors": [
+        "Morgan Peterman"
+      ],
+      "published_on": "2022-06-06",
+      "disposition": "accepted-with-limits",
+      "value": "Distinguish daemon state, selected NTP sources and actual synchronization; separate client and server responsibilities.",
+      "limits": "Older article corroborated with current RHEL 10 chrony reference; no new server objective inferred and no NTP service deployed."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "service_labs_executed": 0,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "assertions": 21,
+      "bash_blocks_executed": 1,
+      "ini_blocks_parsed": 2,
+      "bash_version": "GNU bash, version 5.3.15(2)-release (x86_64-pc-cygwin)",
+      "script_sha256": "434a6520da82699eb92578ec85cd890fda30520346e5b11126bfcfa200f7728d",
+      "execution_boundary": "Executed Bash in Git for Windows on owned temporary files: syntax, quoting/backslashes/globs, final unterminated line, empty/comments, invalid arguments and caller redirection. Parsed two INI blocks structurally only. No RHEL VM, systemd activation/calendar validation, SELinux, firewall, storage, account or reboot lab executed. WSL runtime remains unavailable for this session."
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Bash ran under Git for Windows, not RHEL; INI parsing does not validate systemd calendar scheduling or activation.",
+    "No RHEL VM, SELinux, firewall, storage, account, boot recovery or reboot lab executed. Existing WSL startup blocker deferred; all eight system labs remain proposed.",
+    "OReilly book/video pages blocked; previously observed editions/durations not reverified. Signed-in courses and KodeKloud RHEL-version claim not independently rechecked.",
+    "Public objectives pin RHEL 10, not every minor-version behavior or appointment metadata. Verify local product manuals and booking details."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Executed Bash in Git for Windows on owned temporary files: syntax, quoting/backslashes/globs, final unterminated line, empty/comments, invalid arguments and caller redirection. Parsed two INI blocks structurally only. No RHEL VM, systemd activation/calendar validation, SELinux, firewall, storage, account or reboot lab executed. WSL runtime remains unavailable for this session.",
+    "learning_catalog_consistency": "passed",
+    "assertions": 21,
+    "bash_blocks_executed": 1,
+    "ini_blocks_parsed": 2,
+    "bash_version": "GNU bash, version 5.3.15(2)-release (x86_64-pc-cygwin)",
+    "script_sha256": "434a6520da82699eb92578ec85cd890fda30520346e5b11126bfcfa200f7728d"
+  }
+}

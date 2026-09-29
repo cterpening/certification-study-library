@@ -2936,18 +2936,33 @@ This is not a complete list and is not meant to be consumed in full. Write, pred
 
 ### Red Hat Certified System Administrator (EX200)
 
-- Official scope: [EX200 public objectives](https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam) and [RHEL 10 documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10) (**8–16 selected hours** for objective mapping and implementation gaps)
-- Official standard route: [RH124](https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i) plus [RH134](https://www.redhat.com/en/services/training/rh134-red-hat-system-administration-ii) (**about ten instructor-led days plus labs**; delivery and entitlement vary)
-- Official rapid route: [RH199](https://www.redhat.com/en/services/training/rh199-red-hat-certified-system-administrator-rapid-track-course) (**about five instructor-led days plus labs**) for experienced Linux administrators
-- Free orientation: [RH024](https://www.redhat.com/en/services/training/rh024-red-hat-linux-technical-overview) (**about three hours**); useful before RH124, not complete EX200 preparation
-- Current video: [O'Reilly/Pearson Red Hat RHCSA RHEL 10 with Exam Labs](https://www.oreilly.com/videos/red-hat-rhcsa/9780135493137/) (**15 hours 7 minutes plus 30–60 hours lab repetition**)
-- Current book: [O'Reilly/Pearson Red Hat RHCSA 10 Cert Guide](https://www.oreilly.com/library/view/red-hat-rhcsa/9780135576625/) (**714 pages / 15 hours 39 minutes listed**, June 2026, with chapter labs and four practice exams)
-- Live option: [O'Reilly Red Hat RHCSA RHEL 10 Prep](https://www.oreilly.com/live-events/red-hat-rhcsa-rhel-10-prep/0642572442705/0642572442699/) (**four live days** with labs and practice review; verify current schedule)
-- Interactive route: [KodeKloud RHCSA](https://kodekloud.com/courses/red-hat-certified-system-administrator-rhcsa) (**35–60 hours estimated with current RHEL 10 labs and mocks**; stable combined runtime was not exposed)
-- Structured alternative: [Coursera RHCSA Certification Preparation](https://www.coursera.org/specializations/rhcsa-certification-prep) (**45–80 hours estimated** across four RHEL 10 courses/projects)
-- Practice environment: [no-cost RHEL Developer access](https://developers.redhat.com/products/rhel/download); use disposable RHEL 10 VMs, snapshots, and safe nonproduction networks
+Resource details from the [EX200 guide](../guides/EX200-red-hat-certified-system-administrator.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Pick one current primary route, use first-party documentation for gaps, and spend at least as much time performing, rebooting, validating and recovering tasks as consuming content. No exact current EX200 Pluralsight, Whizlabs or MeasureUp product was independently verified September 1. Reject recalled-task products and map older RHEL 9 resources line by line to the current RHEL 10 objectives.
+This is **not a complete list**, and it is not meant to be consumed in full. Select one primary RHEL 10 route, use current documentation for gaps, and spend at least as much time performing and recovering tasks as watching or reading. Public metadata was checked September 28, 2026. Both O'Reilly book/video pages blocked automated access, so their previously observed editions and runtimes below were not reverified. Sign-in-only lessons were not reviewed. Other totals are planning estimates.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| EX200 objectives and [RHEL 10 documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10) | Public | 8–16 hours selected mapping/reference |
+| Red Hat RH124 + RH134 | Paid/RHLS | About 10 instructor-led days plus labs |
+| Red Hat RH199 rapid track | Paid/RHLS | About 5 instructor-led days plus labs |
+| O'Reilly / Sander van Vugt RHEL 10 video | Paid/trial | 15 hours 7 minutes plus 30–60 hours labs |
+| O'Reilly / Sander van Vugt RHCSA 10 Cert Guide | Paid/book | 714 pages / 15 hours 39 minutes listed plus labs |
+| O'Reilly live RHEL 10 prep | Paid | Four live days with labs and practice review |
+| [Chrony client verification](https://www.redhat.com/en/blog/chrony-time-services-linux) — Morgan Peterman, June 6, 2022 | Public | 10–15 minutes reading plus 30–45 minutes comparing daemon/source/clock evidence; reconcile with RHEL 10 |
+| KodeKloud RHCSA RHEL 10 | Paid | Runtime varies; plan 35–60 hours with labs/mock exams |
+| Coursera RHCSA Certification Preparation | Paid/audit varies | Provider pacing: four weeks at ten hours/week; plan 45–80 hours with independent RHEL 10 practice |
+
+- **Official standard route:** [RH124](https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i) plus [RH134](https://www.redhat.com/en/services/training/rh134-red-hat-system-administration-ii), both based on RHEL 10. Red Hat's skills path has historically listed five days each; delivery format and lab entitlement vary.
+- **Official experienced route:** [RH199](https://www.redhat.com/en/services/training/rh199-red-hat-certified-system-administrator-rapid-track-course) combines the core path for experienced Linux administrators (**about five instructor-led days** historically). It is intentionally too fast for a new Linux user.
+- **Official free orientation:** [RH024](https://www.redhat.com/en/services/training/rh024-red-hat-linux-technical-overview) is a free technical overview (**about three hours**), useful before RH124 but not complete EX200 preparation.
+- **Previously observed video; metadata not reverified:** [O'Reilly/Pearson Red Hat RHCSA RHEL 10 with Exam Labs](https://www.oreilly.com/videos/red-hat-rhcsa/9780135493137/) by Sander van Vugt is **15 hours 7 minutes**, published August 2025, with lesson labs and a sample exam.
+- **Previously observed book; metadata not reverified:** [O'Reilly/Pearson Red Hat RHCSA 10 Cert Guide](https://www.oreilly.com/library/view/red-hat-rhcsa/9780135576625/) is **714 pages / 15 hours 39 minutes listed**, June 2026, with chapter labs and four practice exams.
+- **Live option:** [O'Reilly Red Hat RHCSA RHEL 10 Prep](https://www.oreilly.com/live-events/red-hat-rhcsa-rhel-10-prep/0642572442705/0642572442699/) is structured as **four live days** with labs and final practice review; verify the next session times and availability.
+- **Interactive labs:** [KodeKloud RHCSA](https://kodekloud.com/courses/red-hat-certified-system-administrator-rhcsa) lists Andrei Balint and lab/course content. The earlier review recorded an August 2026 RHEL 10 replacement announcement; the public page fetched on September 28 did not independently establish that version. Verify the signed-in curriculum. Allow **35–60 hours** as a practice estimate; no stable current combined runtime was exposed.
+- **Structured alternative:** [Coursera RHCSA Certification Preparation](https://www.coursera.org/specializations/rhcsa-certification-prep) publicly describes four RHEL 10 courses and pacing of **four weeks at ten hours/week**. Allow **45–80 hours** with independent repetition; these are planning estimates, not proof that the signed-in lessons cover every objective.
+- **Practice environment:** [RHEL downloads](https://developers.redhat.com/products/rhel/download) are available through no-cost Red Hat Developer membership. Match the major version, use disposable VMs, snapshot risky exercises, and never expose an insecure lab to the internet.
+
+No exact current EX200 Pluralsight, Whizlabs, or MeasureUp product was independently verified September 28. Avoid question-dump claims: performance readiness is demonstrated by observable system state, recovery, and persistence. A realistic total is **120–200 hours** for an experienced Linux user and **250–400 hours** for a Linux beginner.
 
 ### Red Hat Certified Developer in AI (EX267)
 

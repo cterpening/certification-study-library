@@ -4,6 +4,181 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-ex200-deep-review",
+      "title": "EX200 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "EX200"
+      ],
+      "results": [
+        {
+          "exam_code": "EX200",
+          "vendor_id": "red-hat",
+          "guide_path": "guides/EX200-red-hat-certified-system-administrator.md",
+          "baseline_sha256": "a03936af4839341dd70acf39e3765c75889b1f52e477a4a359f1b072fe7037fb",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Read complete live objective list, all 62 tasks in ten groups, RHEL 10 baseline and persistence requirement. Objective/status hashes unchanged. Course-or-experience prerequisite wording clarified."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Read RHEL 10 storage/filesystem, firewalld, SELinux and chrony references plus upstream systemd timer manual; add outcome and persistence checks, not system execution claims."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "RHEL 10 adoption notes confirm XFS minimum size and removed older format; current upstream timer semantics distinguished from locally installed version."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Official courses retained; Coursera four RHEL 10 courses and 4 weeks x 10 hours pacing verified. OReilly blocked metadata and KodeKloud version limits qualified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Repaired incomplete prerequisite wording, unanswered checks and abstract validation steps. Explicitly distinguish Bash/INI checks from RHEL VM practice and restore Places to learn as final section."
+            }
+          },
+          "findings": [
+            {
+              "id": "ex200-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Prerequisite wording omitted the explicit experience alternative",
+              "url": "https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Official prerequisites accept named courses or comparable system-administration experience.",
+              "recommendation": "Use course-or-experience wording and distinguish another certification from recommended training.",
+              "disposition": "applied",
+              "source_id": "redhat-ex200-blueprint",
+              "resolution": "Use course-or-experience wording and distinguish another certification from recommended training."
+            },
+            {
+              "id": "ex200-deep-2",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Storage exercises lacked concrete RHEL 10 limits",
+              "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/considerations_in_adopting_rhel_10/file-systems-and-storage",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "EX200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "RHEL 10 requires at least 300 MB for new XFS filesystems and removes V4 format.",
+              "recommendation": "Add a suitably sized disposable-lab example and version checks.",
+              "disposition": "applied",
+              "source_id": "redhat10-storage-adoption",
+              "resolution": "Add a suitably sized disposable-lab example and version checks."
+            },
+            {
+              "id": "ex200-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Filesystem growth/shrink explanation was too general",
+              "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/managing_file_systems/overview-of-available-file-systems",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "XFS cannot shrink; ext4 shrink is offline; LV and filesystem sizes are separate.",
+              "recommendation": "State supported resize boundaries and verify both layers.",
+              "disposition": "applied",
+              "source_id": "redhat10-fs-overview",
+              "resolution": "State supported resize boundaries and verify both layers."
+            },
+            {
+              "id": "ex200-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Timer persistence needed service-state and missed-run semantics",
+              "url": "https://raw.githubusercontent.com/systemd/systemd/main/man/systemd.timer.xml",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Persistent calendar timers catch up with an activation; active services are not repeatedly restarted.",
+              "recommendation": "Add original service/timer pair, verify steps and RemainAfterExit caveat.",
+              "disposition": "applied",
+              "source_id": "systemd-timer-upstream",
+              "resolution": "Add original service/timer pair, verify steps and RemainAfterExit caveat."
+            },
+            {
+              "id": "ex200-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Persistent controls needed observable before/after evidence",
+              "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_firewalls_and_packet_filters/using-and-configuring-firewalld",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Runtime/permanent firewall states, persistent SELinux mappings versus labels and time sources differ from process state.",
+              "recommendation": "Add scoped query and verification examples with appropriate primary references.",
+              "disposition": "applied",
+              "source_id": "redhat10-firewalld",
+              "resolution": "Add scoped query and verification examples with appropriate primary references."
+            },
+            {
+              "id": "ex200-deep-6",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Forty knowledge checks lacked answers and shell work lacked an executable fixture",
+              "url": "https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Existing guide asked questions without worked answers and described scripting only conceptually.",
+              "recommendation": "Answer all checks and execute an original non-mutating Bash example, including caller redirection failure.",
+              "disposition": "applied",
+              "source_id": "redhat-ex200-blueprint",
+              "resolution": "Answer all checks and execute an original non-mutating Bash example, including caller redirection failure."
+            }
+          ],
+          "notes": "Mapped all 62 unchanged RHEL 10 objectives; clarify course-or-experience prerequisites, add a Bash input/redirection exercise, concrete timer/storage/firewall/SELinux/chrony evidence, and answers to all 40 knowledge checks. Twenty-one local checks pass; RHEL system/reboot labs remain proposed. Same-context AI review; human review pending. See docs/research/2026-09-28-ex200-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 6,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-databricksassociatedeveloperapachespark-deep-review",
       "title": "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK complete guide and learning-content review",
       "rubric_version": 1,

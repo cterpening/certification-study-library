@@ -1173,6 +1173,8 @@ The review reconciles the root SCS-C03 guide with every detailed domain page, th
 
 ## EX200 coverage record
 
+The September 28 [deep review](research/2026-09-28-ex200-deep-review.md) maps 62 detailed objectives. Mapped all 62 unchanged RHEL 10 objectives; clarify course-or-experience prerequisites, add a Bash input/redirection exercise, concrete timer/storage/firewall/SELinux/chrony evidence, and answers to all 40 knowledge checks. Twenty-one local checks pass; RHEL system/reboot labs remain proposed. Current guide citations: 19 registered, 17 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 1, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: ten unweighted RHEL 10 performance groups covering tools, software, scripts, running systems, storage, filesystems, deployment/maintenance, networking, users/groups, and security

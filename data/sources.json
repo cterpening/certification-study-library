@@ -3,6 +3,104 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "redhat10-fs-overview",
+      "title": "RHEL 10 file system comparison",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/managing_file_systems/overview-of-available-file-systems",
+      "publisher": "Red Hat",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX200"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX200 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "redhat10-storage-adoption",
+      "title": "RHEL 10 storage changes",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/considerations_in_adopting_rhel_10/file-systems-and-storage",
+      "publisher": "Red Hat",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "supported_exams": [
+        "EX200"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX200 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "redhat10-firewalld",
+      "title": "RHEL 10 firewalld configuration",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_firewalls_and_packet_filters/using-and-configuring-firewalld",
+      "publisher": "Red Hat",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX200"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX200 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "redhat10-selinux-troubleshooting",
+      "title": "RHEL 10 SELinux troubleshooting",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_selinux/troubleshooting-problems-related-to-selinux",
+      "publisher": "Red Hat",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX200"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX200 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "systemd-timer-upstream",
+      "title": "systemd timer manual source",
+      "url": "https://raw.githubusercontent.com/systemd/systemd/main/man/systemd.timer.xml",
+      "publisher": "systemd project",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX200"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX200 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "redhat-chrony-blog",
+      "title": "How to configure chrony as an NTP client or server in Linux",
+      "url": "https://www.redhat.com/en/blog/chrony-time-services-linux",
+      "publisher": "Red Hat",
+      "authority_class": 3,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "supported_exams": [
+        "EX200"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX200 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "redhat10-chrony",
+      "title": "RHEL 10 chrony operation and synchronization checks",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_time_synchronization/using-chrony",
+      "publisher": "Red Hat",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX200"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX200 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex200-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "spark-jdbc-reference",
       "title": "Apache Spark JDBC partitioning options",
       "url": "https://spark.apache.org/docs/latest/sql-data-sources-jdbc.html",

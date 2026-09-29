@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-28
 ---
 
 # EX200 Red Hat Certified System Administrator Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ex200-coverage-record). The [official EX200 objectives](https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ex200-coverage-record). The [official EX200 objectives](https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam) are authoritative.
 
 **Current baseline:** EX200 based on Red Hat Enterprise Linux 10<br>
-**Upcoming blueprint change:** None announced when checked September 1, 2026<br>
+**Upcoming blueprint change:** None announced when checked September 28, 2026<br>
 **Important freshness boundary:** RHEL 9 and older RHCSA material remains useful for durable Linux concepts, but the current public objectives add or emphasize RHEL 10 details such as Flatpak software management and systemd timers. Practice on RHEL 10 and reconcile every objective.<br>
 **Official source:** [Red Hat Certified System Administrator exam (EX200)](https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam)
 
@@ -24,7 +24,7 @@ upcoming_change_checked: 2026-09-01
 
 EX200 is a performance-based administration exam. You configure real systems without internet access or personal notes; for most exams, product documentation shipped with the environment is available. Red Hat explicitly requires configurations to persist after reboot. Preparation therefore means repeatedly doing each public objective from a clean RHEL 10 machine, verifying the requested outcome, rebooting when safe, and diagnosing failures without a copied recipe.
 
-Red Hat recommends RH124 plus RH134 for learners following the standard path, or RH199 for experienced Linux administrators. These are recommendations, not certification prerequisites. The public exam page does not expose one universal price or appointment duration before location selection; verify the scheduler and the current Certification Program Guide before booking. A Red Hat skills-path resource lists a three-hour exam, but delivery metadata is volatile.
+The official prerequisites section accepts RH124 plus RH134, RH199, or comparable RHEL administration experience. It does not specify another certification as a prerequisite. Red Hat also recommends the courses as preparation. The public exam page does not expose one universal price or appointment duration before location selection; verify the scheduler and the current Certification Program Guide before booking. A Red Hat skills-path resource lists a three-hour exam, but delivery metadata is volatile.
 
 For each task, use a five-part loop:
 
@@ -83,6 +83,33 @@ Distinguish string, numeric, and file tests. Quote `"$1"` and command output whe
 
 **Related item:** Scripting is a force multiplier for both success and mistakes. Limit input scope, verify targets, use temporary test data, and avoid unbounded recursive or destructive operations.
 
+### Run a small shell contract
+
+Save this original example as `record-report.sh`. It reads a plain-text list, preserves spaces and backslashes, skips empty lines and lines starting with `#`, and includes a final line even if its newline is missing. It does not change accounts or system configuration. Run `bash -n record-report.sh`, then `bash record-report.sh "sample list.txt" > report.txt 2> report.log`. Inspect both outputs and the exit code. The input must be a regular readable file; directories and missing arguments are rejected before output starts.
+
+```bash
+#!/usr/bin/env bash
+set -u
+if [[ $# -ne 1 ]]; then
+    printf 'usage: record-report.sh INPUT\n' >&2
+    exit 2
+fi
+input=$1
+if [[ ! -f "$input" || ! -r "$input" ]]; then
+    printf 'input must be a readable regular file\n' >&2
+    exit 2
+fi
+count=0
+while IFS= read -r record || [[ -n "$record" ]]; do
+    [[ -z "$record" || "$record" == \#* ]] && continue
+    count=$((count + 1))
+    printf '%s\n' "$record" || exit 1
+done < "$input"
+printf 'records=%s\n' "$count" >&2
+```
+
+Use `# note`, `alpha beta`, a literal backslash, an empty line and a final unterminated `omega` as fixtures. Expected output contains three records; stderr reports `records=3`. Redirecting with `> report.txt` is performed by the shell before the script validates its input: it can truncate an existing report even when the script fails. For important reports, write to a separate candidate file, verify success/content, then replace the destination deliberately. `set -u` catches unset variables; it does not check every command's success or make the process transactional.
+
 ## 4. Operate running systems
 
 ### Boot, targets, processes, tuning, and services
@@ -107,9 +134,15 @@ Mount file systems at boot by UUID or label where required. An `/etc/fstab` typo
 
 **Related item:** Extending an LV and extending its filesystem are distinct operations. The filesystem-specific growth tool and online/offline behavior matter; inspect both block device and filesystem size afterward.
 
+For a persistent mount, inspect the intended device's `blkid` output, the matching `fstab` entry, and `findmnt` output as separate evidence. Validate file syntax and dependencies before a lab reboot. `mount -a` does not activate swap and does not prove every already-mounted filesystem has the newly requested options. Verify swap with `swapon --show` and compare live mount options with the requested configuration. Keep recovery console access for the disposable VM.
+
 ## 6. Create and configure file systems
 
 Create, mount, unmount, label, and use VFAT, ext4, and XFS according to the requested interoperability and Linux-feature needs. Do not assume shrink/grow behavior is the same: XFS and ext4 have different supported resize semantics. Ensure no busy process prevents unmounting, and validate ownership/mode after mount because the mounted filesystem hides the underlying directory contents.
+
+The current [RHEL 10 filesystem comparison](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/managing_file_systems/overview-of-available-file-systems) is explicit: XFS can grow but has no supported shrink utility; ext4 shrinking requires an unmounted filesystem. Do not reduce an LV underneath a larger filesystem. XFS growth uses `xfs_growfs` after enlarging the underlying device; ext4 uses `resize2fs` for its supported operation. Check device capacity and filesystem capacity separately.
+
+**VERIFY CURRENT — small practice disks:** [RHEL 10 storage changes](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/considerations_in_adopting_rhel_10/file-systems-and-storage) require at least 300 MB for a newly created XFS filesystem and remove the older V4 format. A legacy exercise with a 100 MB XFS LV is unsuitable. Allocate, for example, a 1 GiB disposable LV and inspect the real filesystem format; do not override the limit to preserve an old recipe.
 
 For NFS clients, identify server export/path, network/DNS reachability, mount type/options, persistence, and identity/permission behavior. Use autofs maps for on-demand mounts, restart/reload safely, trigger the map, and confirm the path unmounts according to policy. Diagnose failures across name resolution, route/firewall, export, client package/service, SELinux, mount options, ownership and permissions.
 
@@ -123,6 +156,36 @@ Install/update packages from Red Hat CDN, remote repositories, or local files as
 
 **Related item:** systemd timers can express dependencies, missed-run persistence, random delay, and logging through their service unit. Cron remains appropriate for simpler calendar execution. Choose by required behavior.
 
+### Pair a timer with a service and inspect both
+
+In a disposable RHEL 10 VM, use matching `study-report.service` and `study-report.timer` files. The service below only writes a message to its journal; it illustrates scheduling without changing application data.
+
+```ini
+# study-report.service
+[Unit]
+Description=Study timer observation
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/printf study-timer-ran
+```
+
+```ini
+# study-report.timer
+[Unit]
+Description=Daily study report
+[Timer]
+OnCalendar=*-*-* 03:15:00 UTC
+Persistent=true
+[Install]
+WantedBy=timers.target
+```
+
+First validate the files with `systemd-analyze verify` and the calendar with `systemd-analyze calendar`. After installing the pair in the VM's system unit directory, run `systemctl daemon-reload`, enable/start the timer, and inspect `list-timers`, both units' state and `journalctl -u study-report.service`. Starting a future calendar timer is not necessarily an immediate service invocation; test the service separately when needed. A successful oneshot service normally returns to inactive after completion.
+
+According to the [upstream timer manual](https://raw.githubusercontent.com/systemd/systemd/main/man/systemd.timer.xml), `Persistent=true` applies to calendar timers and triggers a catch-up activation when at least one run was missed. It does not replay one invocation per missed interval. An already-active service is not started again when the timer elapses, so `RemainAfterExit=yes` can defeat a repeating oneshot design. Inspect the locally installed manual because upstream documentation can describe newer options.
+
+For clock evidence, compare `chronyc tracking`, `chronyc sources -v`, daemon status and the approved source configuration using the [RHEL 10 chrony reference](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_time_synchronization/using-chrony). Morgan Peterman's [chrony walkthrough](https://www.redhat.com/en/blog/chrony-time-services-linux) separates client source selection from server access. Use its client verification method with current RHEL documentation; operating an NTP server is related context, not an added EX200 task. A running daemon with no suitable source is not proof of synchronization.
+
 ## 8. Manage basic networking
 
 Use NetworkManager tools such as `nmcli` to inspect connections/devices and configure IPv4/IPv6 addresses, prefix/gateway, DNS, search domains, autoconnect, and hostname resolution. Distinguish a connection profile from the live device state. Activate the correct profile, verify addresses/routes/DNS/listening services, and test the exact protocol from a peer.
@@ -130,6 +193,8 @@ Use NetworkManager tools such as `nmcli` to inspect connections/devices and conf
 Use `/etc/hosts` for deliberate static host mappings and understand its relationship to resolver configuration. A ping test does not validate DNS or the application port. Diagnose local interface → address/prefix → route/gateway → DNS → service listener → firewall/SELinux → remote path.
 
 Restrict network access with firewalld using the correct zone, interface/source binding, service or port/protocol, runtime/permanent state, reload behavior, and rich/direct features only where required. Verify both allowed and denied behavior after reload and reboot.
+
+For a service allowed only in a chosen lab zone, compare `firewall-cmd --zone=ZONE --query-service=SERVICE` with the same query using `--permanent`. Substitute the actual zone and service. The [RHEL firewalld reference](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_firewalls_and_packet_filters/using-and-configuring-firewalld) explains that reload replaces runtime state from permanent configuration. A runtime-only opening can disappear; a permanent-only edit has not yet changed current traffic. Check the interface/source binding, deliberately reconcile both configurations, then verify allowed and denied peer access after reload. `--runtime-to-permanent` saves the entire runtime configuration, so inspect all temporary changes before using it.
 
 ## 9. Manage users and groups
 
@@ -151,6 +216,10 @@ Firewalld controls network traffic; SELinux constrains processes even after netw
 
 **Related item:** `chcon` can be useful for an experiment but its label can be lost on relabel. A persistent `semanage fcontext` rule followed by `restorecon` expresses the durable intent.
 
+The [RHEL 10 SELinux troubleshooting guide](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_selinux/troubleshooting-problems-related-to-selinux) distinguishes policy mappings from actual labels. In a disposable web-server exercise, after confirming `/srv/study-web` is the intended directory, a persistent `httpd_sys_content_t` mapping for `/srv/study-web(/.*)?` must be followed by `restorecon` on that exact tree. Inspect `matchpathcon` and `ls -Z`, then test the confined service. `semanage fcontext` alone does not relabel existing files; `chmod` alone cannot repair an SELinux type mismatch. Review AVC evidence before changing policy.
+
+For permission calculations without ACLs, the creation mode is masked bit by bit: a normal file request of `0666` under `umask 0027` yields `0640`; a directory request of `0777` yields `0750`. Do not subtract decimal-looking mode numbers. A default ACL can change this calculation, and group setgid inheritance does not itself grant group write permission.
+
 ## Integrated scenarios
 
 ### Scenario 1: New application host that survives reboot
@@ -168,6 +237,8 @@ Given a host that cannot be reached, do not immediately disable controls. Confir
 ## Hands-on labs
 
 Use disposable RHEL 10 VMs from an authorized [no-cost Developer subscription](https://developers.redhat.com/products/rhel/download) or an entitled lab. Snapshot before boot/storage recovery exercises and never practice destructive commands on production or personal-data disks.
+
+**Review execution boundary:** the shell example passed local Bash checks in Git for Windows. The timer files were parsed structurally only. No RHEL VM, systemd activation, SELinux, firewall, storage, account or reboot lab was executed; all eight system labs below remain proposed. Local WSL startup was unavailable during this review.
 
 1. **Shell and local-help circuit:** complete 20 file/text/archive/link/permission tasks using only `man`, `info`, `--help`, and `/usr/share/doc`; write assertions that prove every result.
 2. **RPM and Flatpak sources:** create/use a safe test RPM repository and Flatpak remote, install/remove one item from each, inspect provenance/state, break one source, and diagnose it.
@@ -221,6 +292,49 @@ Use disposable RHEL 10 VMs from an authorized [no-cost Developer subscription](h
 39. Which validations should be repeated after every exam-style reboot?
 40. What RHEL 10 objective gaps must older RHCSA material be checked for?
 
+## Answers to the original knowledge checks
+
+1. A shell glob expands file names before a command runs; a regular expression is interpreted by a tool against text. Quote a regex intended for grep.
+2. List the archive, extract into a separate test directory and compare expected paths, contents and required metadata. Successful creation alone is insufficient.
+3. A hard link retains the inode while another link exists; a symlink retains a path and can become dangling when its target name disappears.
+4. Use man, info, --help, package file lists and /usr/share/doc; search by purpose with apropos/man -k.
+5. The command can complete while selecting the wrong path, identity, zone or value. Test the requested outcome and persistence.
+6. RPM inspects/manages package records and files; DNF adds repository and dependency resolution to transactions.
+7. A Flatpak remote supplies application/runtime refs with user/system scope; it is not an RPM repository.
+8. Check configured location, enabled state, architecture, metadata reachability, signing trust, package availability and a permitted transaction.
+9. Quoting preserves one argument containing spaces or glob characters; unquoted expansion can change argument count and meaning.
+10. Validate arguments, file type/readability and prerequisites first; report errors on stderr with nonzero status before changes. Caller redirections still happen first.
+11. Active describes current runtime state; enabled describes activation links for boot or another target. Test both independently.
+12. Capture unit state, journal/exit status, configuration validation and dependencies before replacing the failure evidence with a restart.
+13. Nice/renice adjusts process scheduling priority; a tuned profile applies a coordinated system configuration for a workload.
+14. Persistent journal configuration/storage and correct directory permissions allow disk retention; confirm an earlier boot is readable after a real reboot.
+15. It proves the repaired credentials, boot path, mounts, services and policy work through ordinary startup, beyond the recovery environment.
+16. A partition can host a PV; a VG pools PV space; an LV consumes VG extents; a filesystem lives on a suitable block device and is attached at a mount point.
+17. A stable identity reduces dependence on discovery order, but verify that it uniquely identifies the intended device and remains correct after cloning.
+18. The block-device/LV capacity and the filesystem capacity. Growing one does not by itself prove the other grew.
+19. Inspect fstab syntax, identities and options, then use a controlled mount preflight and findmnt checks. mount -a does not prove swap or all changed live options.
+20. Existing data and configuration must remain intact. Check the exact target, backups and before/after contents; an unintended deletion can succeed.
+21. XFS supports growth but not shrinking; ext4 supports growth and offline shrink. Apply filesystem-specific tools and correct layer order.
+22. The mounted filesystem exposes its own root inode and permissions, hiding the previous directory contents until unmounted.
+23. Check DNS/routes, server export, protocol/firewall, client support, mount options, identities, Unix permissions and applicable SELinux policy.
+24. Use it when access should trigger a mount and inactivity should release it; prove map lookup, access and expiry rather than just daemon activity.
+25. at schedules a one-off job, cron matches recurring calendar fields, and a systemd timer activates a service with unit dependencies/state/logging.
+26. Its PATH, working directory, identity, environment, permissions and interactive assumptions differ. Specify the required contract explicitly.
+27. A suitable selected time source and tracking/synchronization evidence, alongside service state; daemon activity alone is insufficient.
+28. A saved connection profile describes desired configuration; the live device uses its currently activated state. Verify activation and persistence.
+29. ICMP reachability does not prove name lookup, a listening TCP/UDP application, authentication or authorization.
+30. Runtime affects current traffic; permanent supplies state on reload/start. Compare both and test the relevant zone and peer behavior.
+31. Existing memberships can be removed. Preserve the intended list or use the appropriate append operation, then refresh/test the login session.
+32. Password locking blocks that credential, expiration limits account validity, and an unusable shell limits shell sessions; other access paths require separate checks.
+33. Files store numeric ownership. A reused UID can make old files appear owned by the new account unless those files are reviewed.
+34. Use visudo validation, narrow the identity/command scope and test allowed and denied commands as the target account.
+35. Network rules control traffic, the service controls listeners/behavior, Unix permissions control file access, and SELinux constrains process access.
+36. It stops enforcement without establishing the correct policy or labels. Repair the cause, restore enforcing mode and repeat the test.
+37. Use restorecon to apply the expected policy mapping. For a nonstandard path, establish a persistent mapping first; chcon is not durable policy intent.
+38. Correct account/key mapping, directory/file ownership and permissions, server policy, applicable contexts, and a real login with the intended key.
+39. Required mounts/swap, network/resolution, services/timers, access controls, logs/time and the end-to-end application or task outcome.
+40. Map every current task, especially Flatpak/timers and RHEL 10 storage/boot/security behavior. Do not infer exam scope from an older course or new product feature.
+
 ## RHEL 9-to-10 preparation checklist
 
 Before relying on older material, map it line by line to the live objectives. Specifically confirm current practice for:
@@ -234,35 +348,6 @@ Before relying on older material, map it line by line to the live objectives. Sp
 - any removed older objectives—do not study a legacy task as current solely because it appears in an old course;
 - a complete reboot-and-validate loop on the RHEL 10 minor version available to you.
 
-## Places to learn
-
-This is **not a complete list**, and it is not meant to be consumed in full. Select one primary RHEL 10 route, use current documentation for gaps, and spend at least as much time performing and recovering tasks as watching or reading. Provider runtimes are shown where visible; other totals are planning estimates.
-
-| Resource | Access | Estimated time |
-|---|---|---:|
-| EX200 objectives and [RHEL 10 documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10) | Public | 8–16 hours selected mapping/reference |
-| Red Hat RH124 + RH134 | Paid/RHLS | About 10 instructor-led days plus labs |
-| Red Hat RH199 rapid track | Paid/RHLS | About 5 instructor-led days plus labs |
-| O'Reilly / Sander van Vugt RHEL 10 video | Paid/trial | 15 hours 7 minutes plus 30–60 hours labs |
-| O'Reilly / Sander van Vugt RHCSA 10 Cert Guide | Paid/book | 714 pages / 15 hours 39 minutes listed plus labs |
-| O'Reilly live RHEL 10 prep | Paid | Four live days with labs and practice review |
-| KodeKloud RHCSA RHEL 10 | Paid | Runtime varies; plan 35–60 hours with labs/mock exams |
-| Coursera RHCSA Certification Preparation | Paid/audit varies | 45–80 hours estimated across four RHEL 10 courses/projects |
-
-- **Official standard route:** [RH124](https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i) plus [RH134](https://www.redhat.com/en/services/training/rh134-red-hat-system-administration-ii), both based on RHEL 10. Red Hat's skills path has historically listed five days each; delivery format and lab entitlement vary.
-- **Official experienced route:** [RH199](https://www.redhat.com/en/services/training/rh199-red-hat-certified-system-administrator-rapid-track-course) combines the core path for experienced Linux administrators (**about five instructor-led days** historically). It is intentionally too fast for a new Linux user.
-- **Official free orientation:** [RH024](https://www.redhat.com/en/services/training/rh024-red-hat-linux-technical-overview) is a free technical overview (**about three hours**), useful before RH124 but not complete EX200 preparation.
-- **Current video:** [O'Reilly/Pearson Red Hat RHCSA RHEL 10 with Exam Labs](https://www.oreilly.com/videos/red-hat-rhcsa/9780135493137/) by Sander van Vugt is **15 hours 7 minutes**, published August 2025, with lesson labs and a sample exam.
-- **Current book:** [O'Reilly/Pearson Red Hat RHCSA 10 Cert Guide](https://www.oreilly.com/library/view/red-hat-rhcsa/9780135576625/) is **714 pages / 15 hours 39 minutes listed**, June 2026, with chapter labs and four practice exams.
-- **Live option:** [O'Reilly Red Hat RHCSA RHEL 10 Prep](https://www.oreilly.com/live-events/red-hat-rhcsa-rhel-10-prep/0642572442705/0642572442699/) is structured as **four live days** with labs and final practice review; verify the next session times and availability.
-- **Interactive labs:** [KodeKloud RHCSA](https://kodekloud.com/courses/red-hat-certified-system-administrator-rhcsa) includes extensive labs and mock exams. KodeKloud identified the current Andrei Balint course as its RHEL 10 replacement in August 2026; allow **35–60 hours** because a stable current combined runtime was not exposed.
-- **Structured alternative:** [Coursera RHCSA Certification Preparation](https://www.coursera.org/specializations/rhcsa-certification-prep) is a four-course, hands-on RHEL 10 route. Allow **45–80 hours** across demonstrations, assignments, projects and independent repetition; verify individual course estimates after sign-in.
-- **Practice environment:** [RHEL downloads](https://developers.redhat.com/products/rhel/download) are available through no-cost Red Hat Developer membership. Match the major version, use disposable VMs, snapshot risky exercises, and never expose an insecure lab to the internet.
-
-No exact current EX200 Pluralsight, Whizlabs, or MeasureUp product was independently verified September 1. Avoid question-dump claims: performance readiness is demonstrated by observable system state, recovery, and persistence. A realistic total is **120–200 hours** for an experienced Linux user and **250–400 hours** for a Linux beginner.
-
----
-
 ## Source map and freshness notes
 
 The live Red Hat exam page is the objective and product-version contract. RHEL 10 documentation is the technical authority. Official course pages describe recommended preparation; third-party resources are optional learning paths.
@@ -272,3 +357,32 @@ The live Red Hat exam page is the objective and product-version contract. RHEL 1
 - **Older resources:** retain for durable Linux knowledge only after closing every current RHEL 10 objective gap.
 
 This guide uses no recalled exam tasks or restricted course content. The scenarios, labs and checks are original and test only public objectives and product behavior.
+
+
+## Places to learn
+
+This is **not a complete list**, and it is not meant to be consumed in full. Select one primary RHEL 10 route, use current documentation for gaps, and spend at least as much time performing and recovering tasks as watching or reading. Public metadata was checked September 28, 2026. Both O'Reilly book/video pages blocked automated access, so their previously observed editions and runtimes below were not reverified. Sign-in-only lessons were not reviewed. Other totals are planning estimates.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| EX200 objectives and [RHEL 10 documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10) | Public | 8–16 hours selected mapping/reference |
+| Red Hat RH124 + RH134 | Paid/RHLS | About 10 instructor-led days plus labs |
+| Red Hat RH199 rapid track | Paid/RHLS | About 5 instructor-led days plus labs |
+| O'Reilly / Sander van Vugt RHEL 10 video | Paid/trial | 15 hours 7 minutes plus 30–60 hours labs |
+| O'Reilly / Sander van Vugt RHCSA 10 Cert Guide | Paid/book | 714 pages / 15 hours 39 minutes listed plus labs |
+| O'Reilly live RHEL 10 prep | Paid | Four live days with labs and practice review |
+| [Chrony client verification](https://www.redhat.com/en/blog/chrony-time-services-linux) — Morgan Peterman, June 6, 2022 | Public | 10–15 minutes reading plus 30–45 minutes comparing daemon/source/clock evidence; reconcile with RHEL 10 |
+| KodeKloud RHCSA RHEL 10 | Paid | Runtime varies; plan 35–60 hours with labs/mock exams |
+| Coursera RHCSA Certification Preparation | Paid/audit varies | Provider pacing: four weeks at ten hours/week; plan 45–80 hours with independent RHEL 10 practice |
+
+- **Official standard route:** [RH124](https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i) plus [RH134](https://www.redhat.com/en/services/training/rh134-red-hat-system-administration-ii), both based on RHEL 10. Red Hat's skills path has historically listed five days each; delivery format and lab entitlement vary.
+- **Official experienced route:** [RH199](https://www.redhat.com/en/services/training/rh199-red-hat-certified-system-administrator-rapid-track-course) combines the core path for experienced Linux administrators (**about five instructor-led days** historically). It is intentionally too fast for a new Linux user.
+- **Official free orientation:** [RH024](https://www.redhat.com/en/services/training/rh024-red-hat-linux-technical-overview) is a free technical overview (**about three hours**), useful before RH124 but not complete EX200 preparation.
+- **Previously observed video; metadata not reverified:** [O'Reilly/Pearson Red Hat RHCSA RHEL 10 with Exam Labs](https://www.oreilly.com/videos/red-hat-rhcsa/9780135493137/) by Sander van Vugt is **15 hours 7 minutes**, published August 2025, with lesson labs and a sample exam.
+- **Previously observed book; metadata not reverified:** [O'Reilly/Pearson Red Hat RHCSA 10 Cert Guide](https://www.oreilly.com/library/view/red-hat-rhcsa/9780135576625/) is **714 pages / 15 hours 39 minutes listed**, June 2026, with chapter labs and four practice exams.
+- **Live option:** [O'Reilly Red Hat RHCSA RHEL 10 Prep](https://www.oreilly.com/live-events/red-hat-rhcsa-rhel-10-prep/0642572442705/0642572442699/) is structured as **four live days** with labs and final practice review; verify the next session times and availability.
+- **Interactive labs:** [KodeKloud RHCSA](https://kodekloud.com/courses/red-hat-certified-system-administrator-rhcsa) lists Andrei Balint and lab/course content. The earlier review recorded an August 2026 RHEL 10 replacement announcement; the public page fetched on September 28 did not independently establish that version. Verify the signed-in curriculum. Allow **35–60 hours** as a practice estimate; no stable current combined runtime was exposed.
+- **Structured alternative:** [Coursera RHCSA Certification Preparation](https://www.coursera.org/specializations/rhcsa-certification-prep) publicly describes four RHEL 10 courses and pacing of **four weeks at ten hours/week**. Allow **45–80 hours** with independent repetition; these are planning estimates, not proof that the signed-in lessons cover every objective.
+- **Practice environment:** [RHEL downloads](https://developers.redhat.com/products/rhel/download) are available through no-cost Red Hat Developer membership. Match the major version, use disposable VMs, snapshot risky exercises, and never expose an insecure lab to the internet.
+
+No exact current EX200 Pluralsight, Whizlabs, or MeasureUp product was independently verified September 28. Avoid question-dump claims: performance readiness is demonstrated by observable system state, recovery, and persistence. A realistic total is **120–200 hours** for an experienced Linux user and **250–400 hours** for a Linux beginner.
