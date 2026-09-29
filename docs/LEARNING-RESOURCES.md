@@ -2899,6 +2899,28 @@ This is not a complete list. Select a route and map it against the current outli
 
 Avoid recalled questions, “actual exam” banks and guaranteed passing. Use original reasoning practice and current primary evidence. The [dated deep-review report](research/2026-09-29-ccsp-deep-review.md) records source limitations, executed checks and pending human/infrastructure review.
 
+### CISSP — Certified Information Systems Security Professional
+
+Resource details from the [CISSP guide](../guides/CISSP-isc2-certified-information-systems-security-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list. Start with the official scope and one teaching route, then use targeted practice and references. Public metadata was checked September 29, 2026; paid interiors, practice questions and completion quality were not inspected. Supplemental study times below are planning estimates, not provider promises.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Current CISSP outline](https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline): canonical April 2024 scope, eight weights and 62 objectives. | Public | 8–12h mapping and review estimate. |
+| [ISC2 self-study resources](https://www.isc2.org/certifications/cissp/cissp-self-study-resources): route to the outline, adaptive study, cards and support resources. | Public links; some account/paid resources | 1–2h selection estimate; study varies. |
+| [Official adaptive CISSP training](https://www.isc2.org/training/online-self-paced/cissp-online-self-paced): English, eight domains, assessments and eTextbook. Public completion threshold is 60% for domain/final assessments plus acknowledgement and survey; this is not an exam passing percentage. | Paid/account; 90/180-day access starts at purchase | No fixed runtime reverified; earlier “official 20–40h” claim removed. Plan additional practice. |
+| [Pluralsight CISSP 2024 path](https://www.pluralsight.com/paths/cisspr-certified-information-systems-security-professional-certification): 16 course cards and seven labs; 14 certification courses plus two supplemental courses. Public alignment claim is April 2024. | Paid/trial; public catalog | Header 37h; listed course cards total 27h07m and labs 9h15m, or 36h22m combined. Dates span 2021–2026; no interior alignment validation. |
+| [LinkedIn Learning / Mike Chapple CISSP 2024](https://www.linkedin.com/learning/isc2-certified-information-systems-security-professional-cissp-2024-cert-prep): advanced, April 25, 2024; public outline spans eight domains and lists 51 quizzes. | Paid/trial; public contents | Header 21h27m; 365 listed clips total exactly 21h27m. Add practice and current policy review; quizzes were not opened. |
+| [O'Reilly / Sybex Official Study Guide, 10th edition](https://www.oreilly.com/library/view/isc2-cissp-certified/9781394254699/): access blocked HTTP 403. Earlier June 2024, 1,248-page and 40h26m metadata was not reverified. | Paid/trial or book; catalog blocked | Current duration and contents unverified; do not treat an old runtime as a current promise. |
+| [Udemy / Andrew Ramdayal CISSP course](https://www.udemy.com/course/cisspcertification/): access blocked HTTP 403. Earlier October 2025 and 41h27m claims remain unverified. | Paid; catalog blocked | Current runtime and alignment unverified. |
+| [Inside Cloud and Security CISSP hub](https://insidethemicrosoftcloud.com/cissp/): public creator page links cram material, a book, study/practice resources and optional flashcards. Videos and question interiors were not viewed. | Public hub; optional paid material | Runtime and revision unverified; select topics after blueprint mapping. |
+| [NIST IR 8286 Rev. 1 and schemas](https://csrc.nist.gov/pubs/ir/8286/r1/final): enterprise risk context and original local workbook above. | Public | 3–5h selected reading/workbook estimate; not a complete CISSP course. |
+| [NIST CSF 2.0 portal](https://www.nist.gov/cyberframework): governance and outcome references; check each publication's draft/final status. | Public | 4–8h selected mapping estimate. |
+| [ISC2 member policies](https://www.isc2.org/policies-procedures/member-policies) and [Code of Ethics](https://www.isc2.org/ethics): credential obligations and professional judgment. | Public | 1–2h reading/scenarios estimate; individual eligibility remains separate. |
+
+Use original practice that explains assumptions and decisions. Avoid recalled examination questions and guaranteed-pass claims. Course completion, a valid data file and a locally passing exercise are useful evidence within their limits; each still needs to be connected to the actual objective and accountable action.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

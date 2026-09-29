@@ -1641,6 +1641,8 @@ The review maps every objective through business/data obligation → service/dep
 
 ## CISSP coverage record
 
+The September 29 [deep review](research/2026-09-29-cissp-deep-review.md) maps 62 detailed objectives. Mapped 62 current objectives, preserved the prior baseline before accepting a testing-center label edit, and reviewed the 2026 waiver policy and current technical guidance. Added 23 executed local risk-register checks, 64 answered prompts and eight proposed infrastructure activities. Two commercial catalogs remain blocked; human review and infrastructure execution are pending. Current guide citations: 29 registered, 27 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: April 15, 2024 eight-domain outline—Security and Risk Management (16%), Asset Security (10%), Security Architecture and Engineering (13%), Communication and Network Security (13%), IAM (13%), Security Assessment and Testing (12%), Security Operations (13%), and Software Development Security (10%)

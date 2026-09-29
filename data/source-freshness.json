@@ -4,6 +4,253 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-cissp-deep-review",
+      "title": "CISSP complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CISSP"
+      ],
+      "results": [
+        {
+          "exam_code": "CISSP",
+          "vendor_id": "isc2",
+          "guide_path": "guides/CISSP-isc2-certified-information-systems-security-professional.md",
+          "baseline_sha256": "d48bd56e9b5377766120364873eb0aae650e7bfa10ce19f04d15fe2e74b947d1",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Complete62objectiveweb and15pagePDF/3visualpages;8weightsunchanged. Pearsonlabel archived/accepted/postunchanged. Currentwaiverlist andCPE/CAT reviewed."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "SelectedNISTrisk/identity/response/sanitization/ZeroTrust/CMVP andactualJSONschemas.23executedlocalvalidation/fixturechecks;explicitread/executionlimits."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "May2026ISC2waiverarticle,AIguidanceCISSP9-11,December2025NISTriskrelease andselectedPQC/CMVPcontext. Historical2024FAQnotnewfuturechange."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Official60percentcompletion/English90or180days;old20-40hnotreverified. LinkedIn365clips77220s/51quizzes;Plural2182minutescardsversus37h. Creatorhubnointeriors;two403catalogs."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Schema validityversussemanticquality andtrustedapproval;riskdetailrequired/propertydifference valid. Coursecompletionversusscaledexam/credential;probabilityversusfrequency;retainedschemaandhistory."
+            }
+          },
+          "findings": [
+            {
+              "id": "cissp-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Testing-center label changed without a scope revision",
+              "url": "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CISSP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Only Pearson VUE shortened toPearson;62objectives/eightweights unchanged.",
+              "recommendation": "Preserveoldbytes/history andexplicitlyaccept monitored edit.",
+              "disposition": "applied",
+              "source_id": "isc2-cissp-outline",
+              "resolution": "Preserveoldbytes/history andexplicitlyaccept monitored edit."
+            },
+            {
+              "id": "cissp-deep-2",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Historical future wording does not announce a new refresh",
+              "url": "https://www.isc2.org/certifications/cissp/cissp-exam-refresh-faq",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CISSP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "FAQdescribesApril15 2024alreadyactive outline.",
+              "recommendation": "Usecurrentbaselineandseparatenewannouncements;do notinferretirement fromage.",
+              "disposition": "applied",
+              "source_id": "isc2-cissp-refresh-faq",
+              "resolution": "Usecurrentbaselineandseparatenewannouncements;do notinferretirement fromage."
+            },
+            {
+              "id": "cissp-deep-3",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "The approved experience-waiver list changed in 2026",
+              "url": "https://www.isc2.org/Insights/2026/05/CISSP-Experiene-Waiver-Updates",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CISSP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "May18article saysApril1effectiveupdate;one-yearmaxdegreeORcredential.",
+              "recommendation": "Linkcurrentlist andseparatecredentiallistingcriteria fromindividualapproval.",
+              "disposition": "applied",
+              "source_id": "isc2-cissp-waiver-2026",
+              "resolution": "Linkcurrentlist andseparatecredentiallistingcriteria fromindividualapproval."
+            },
+            {
+              "id": "cissp-deep-4",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "CPE categories and Associate rules need separate treatment",
+              "url": "https://www.isc2.org/policies-procedures/member-policies",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CISSP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "CISSP120/3yr including90A plus30AorB;40annualsuggested;member135USD.",
+              "recommendation": "Publishcategories andseparateAssociate15A/50USDannualrequirements.",
+              "disposition": "applied",
+              "source_id": "isc2-member-policies",
+              "resolution": "Publishcategories andseparateAssociate15A/50USDannualrequirements."
+            },
+            {
+              "id": "cissp-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "AI context spans the existing eight domains",
+              "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CISSP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "CompleteCISSPprinted9-11read;governance,data,architecture,network,IAM,assurance,operations,SDLC.",
+              "recommendation": "MaporiginalAIservicecasewithoutnewweights orclaimingfilteringpreventsallinjection.",
+              "disposition": "applied",
+              "source_id": "isc2-ai-exam-guidance",
+              "resolution": "MaporiginalAIservicecasewithoutnewweights orclaimingfilteringpreventsallinjection."
+            },
+            {
+              "id": "cissp-deep-6",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Enterprise risk guidance has a newer final revision",
+              "url": "https://www.nist.gov/news-events/news/2025/12/nist-revises-publications-integrating-cybersecurity-and-enterprise-risk",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CISSP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "December18 2025 releaseintegratesCSF2.0 andriskseriesupdates.",
+              "recommendation": "UseRev1selectedanalysis/rollupcontext;labeloriginalfinancialassumptionsanduncertainty.",
+              "disposition": "applied",
+              "source_id": "nist-ir8286-2025-release",
+              "resolution": "UseRev1selectedanalysis/rollupcontext;labeloriginalfinancialassumptionsanduncertainty."
+            },
+            {
+              "id": "cissp-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Structurally valid data can violate risk-quality rules",
+              "url": "https://csrc.nist.gov/files/pubs/ir/8286/r1/final/docs/risk_register_schema.json",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CISSP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Actualschema accepts150percent,negativeimpact,blankowner andinconsistentexposure;requiresfieldtypes/responseenum.",
+              "recommendation": "Preserveofficialschema anddemonstrateoriginalsemantic/policychecks separately.",
+              "disposition": "applied",
+              "source_id": "nist-ir8286-risk-register-schema",
+              "resolution": "Preserveofficialschema anddemonstrateoriginalsemantic/policychecks separately."
+            },
+            {
+              "id": "cissp-deep-8",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Required presence does not always impose a property type",
+              "url": "https://csrc.nist.gov/files/pubs/ir/8286/r1/final/docs/risk_detail_record_schema.json",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CISSP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "currentRiskAnalysisrequiredwithoutpropertydefinition;plannedRiskResponsepropertyoptional.",
+              "recommendation": "Describevalidschemaboundarywithoutalteringofficialsource orclaimingsyntaxfailure.",
+              "disposition": "applied",
+              "source_id": "nist-ir8286-risk-detail-schema",
+              "resolution": "Describevalidschemaboundarywithoutalteringofficialsource orclaimingsyntaxfailure."
+            },
+            {
+              "id": "cissp-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Active validation and historical status are distinct",
+              "url": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/faqs",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CISSP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "September22only1403active;module/version/environment matters;historicalnotrevoked.",
+              "recommendation": "Explainexactvalidationevidence andavoidwholeproduct/FIPSclaimforlocalcode.",
+              "disposition": "applied",
+              "source_id": "nist-cmvp-faq",
+              "resolution": "Explainexactvalidationevidence andavoidwholeproduct/FIPSclaimforlocalcode."
+            },
+            {
+              "id": "cissp-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Password requirements depend on authenticator context",
+              "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CISSP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "15singlefactor/8MFAminimum;manualOTPnotphishingresistant;activationPINdistinct.",
+              "recommendation": "Separateidentitystrength,scopedrequirements andapplicationauthorization.",
+              "disposition": "applied",
+              "source_id": "nist-800-63b-4",
+              "resolution": "Separateidentitystrength,scopedrequirements andapplicationauthorization."
+            }
+          ],
+          "notes": "Mapped 62 current objectives, preserved the prior baseline before accepting a testing-center label edit, and reviewed the 2026 waiver policy and current technical guidance. Added 23 executed local risk-register checks, 64 answered prompts and eight proposed infrastructure activities. Two commercial catalogs remain blocked; human review and infrastructure execution are pending. Same-context AI review; human review pending. See docs/research/2026-09-29-cissp-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 10,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-ccsp-deep-review",
       "title": "CCSP complete guide and learning-content review",
       "rubric_version": 1,

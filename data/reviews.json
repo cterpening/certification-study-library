@@ -3,6 +3,96 @@
   "schema_version": 1,
   "reviews": [
     {
+      "id": "cissp-2026-09-02-source-validation",
+      "exam_code": "CISSP",
+      "guide_path": "guides/CISSP-isc2-certified-information-systems-security-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/cissp-2026-09-02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "4b2491ad3b07a5d582a38e6c8dd3afd87e4861e26e2cadb58a67fc0bb9d8edb3",
+      "objective_coverage": [
+        {
+          "objective_group": "Security and Risk Management (16%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Asset Security (10%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Labs 2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security Architecture and Engineering (13%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 2–3",
+            "Labs 3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Communication and Network Security (13%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 2–3",
+            "Labs 4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Identity and Access Management (13%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security Assessment and Testing (12%)",
+          "guide_sections": [
+            "Section 6",
+            "All scenarios",
+            "Labs 5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security Operations (13%)",
+          "guide_sections": [
+            "Section 7",
+            "Scenarios 1–2",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Software Development Security (10%)",
+          "guide_sections": [
+            "Section 8",
+            "Scenarios 1 and 3",
+            "Labs 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 10,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Every April 15, 2024 objective is mapped through mission/stakeholders and ethics/law/policy, owned assets and threats, likelihood/impact/risk appetite, design and control alternatives, people/safety/operational consequences, accountable decision, assessment/operational evidence, response/recovery and improvement. AI assets and security work are integrated across domains. Three scenarios, eight authorized labs and 40 checks are included. Ten URLs are reachable and O'Reilly is automation-blocked; none are broken. Exam readiness is separated from experience/waiver, Associate status, endorsement, ethics, 120-CPE three-year cycle and current AMF. No recalled/live item, dump, unauthorized test or copied course content is used."
+    },
+    {
       "id": "ccsp-2026-09-02-source-validation",
       "exam_code": "CCSP",
       "guide_path": "guides/CCSP-isc2-certified-cloud-security-professional.md",
@@ -8829,27 +8919,94 @@
       "notes": "Mapped38 current objectives and preserved prior snapshots/history before accepting a testing-center label edit. Reconciled current FIPS/CSA transitions, course metadata and encryption/authorization boundaries. Added24 executed local checks,48 answered prompts and8 proposed infrastructure activities. Two commercial catalogs remain blocked; human review and infrastructure execution are pending. See docs/research/2026-09-29-ccsp-deep-review.md"
     },
     {
-      "id":"cissp-2026-09-02-source-validation",
-      "exam_code":"CISSP",
-      "guide_path":"guides/CISSP-isc2-certified-information-systems-security-professional.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-02",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/cissp-official-objectives.txt",
-      "blueprint_snapshot_sha256":"4b2491ad3b07a5d582a38e6c8dd3afd87e4861e26e2cadb58a67fc0bb9d8edb3",
-      "objective_coverage":[
-        {"objective_group":"Security and Risk Management (16%)","guide_sections":["Section 1","All scenarios","Labs 1 and 8"]},
-        {"objective_group":"Asset Security (10%)","guide_sections":["Section 2","All scenarios","Labs 2 and 8"]},
-        {"objective_group":"Security Architecture and Engineering (13%)","guide_sections":["Section 3","Scenarios 2–3","Labs 3 and 8"]},
-        {"objective_group":"Communication and Network Security (13%)","guide_sections":["Section 4","Scenarios 2–3","Labs 4 and 8"]},
-        {"objective_group":"Identity and Access Management (13%)","guide_sections":["Section 5","All scenarios","Labs 4 and 8"]},
-        {"objective_group":"Security Assessment and Testing (12%)","guide_sections":["Section 6","All scenarios","Labs 5 and 8"]},
-        {"objective_group":"Security Operations (13%)","guide_sections":["Section 7","Scenarios 1–2","Labs 6–7"]},
-        {"objective_group":"Software Development Security (10%)","guide_sections":["Section 8","Scenarios 1 and 3","Labs 8"]}
+      "id": "cissp-2026-09-29-source-validation",
+      "exam_code": "CISSP",
+      "guide_path": "guides/CISSP-isc2-certified-information-systems-security-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/cissp-official-objectives.txt",
+      "blueprint_snapshot_sha256": "6a66cbffa4cbd4c4a75f7a09f831886f52335b6020dc54ff7cb2da5a9544a22c",
+      "objective_coverage": [
+        {
+          "objective_group": "Security and Risk Management (16%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Asset Security (10%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Labs 2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security Architecture and Engineering (13%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 2–3",
+            "Labs 3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Communication and Network Security (13%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 2–3",
+            "Labs 4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Identity and Access Management (13%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security Assessment and Testing (12%)",
+          "guide_sections": [
+            "Section 6",
+            "All scenarios",
+            "Labs 5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security Operations (13%)",
+          "guide_sections": [
+            "Section 7",
+            "Scenarios 1–2",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Software Development Security (10%)",
+          "guide_sections": [
+            "Section 8",
+            "Scenarios 1 and 3",
+            "Labs 8"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":11,"reachable":10,"access_blocked":1,"missing_or_error":0},
-      "notes":"Every April 15, 2024 objective is mapped through mission/stakeholders and ethics/law/policy, owned assets and threats, likelihood/impact/risk appetite, design and control alternatives, people/safety/operational consequences, accountable decision, assessment/operational evidence, response/recovery and improvement. AI assets and security work are integrated across domains. Three scenarios, eight authorized labs and 40 checks are included. Ten URLs are reachable and O'Reilly is automation-blocked; none are broken. Exam readiness is separated from experience/waiver, Associate status, endorsement, ethics, 120-CPE three-year cycle and current AMF. No recalled/live item, dump, unauthorized test or copied course content is used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 29,
+        "reachable": 27,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Mapped 62 current objectives, preserved the prior baseline before accepting a testing-center label edit, and reviewed the 2026 waiver policy and current technical guidance. Added 23 executed local risk-register checks, 64 answered prompts and eight proposed infrastructure activities. Two commercial catalogs remain blocked; human review and infrastructure execution are pending. See docs/research/2026-09-29-cissp-deep-review.md"
     },
     {
       "id":"nca-genl-2026-09-02-source-validation",

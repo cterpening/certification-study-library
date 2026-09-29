@@ -1,0 +1,2601 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "CISSP",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/CISSP-isc2-certified-information-systems-security-professional.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "51e3e46d93c152c5f3d9c6ed49692360163160ffe9c726d16ccc4aa83848cb74",
+  "guide_after_sha256": "4eebf52320e2ac3e7d4cf8400d8e0784977a787a9e08a7c2c718a65aa4cce782",
+  "prior_records": {
+    "exam": {
+      "code": "CISSP",
+      "level": "expert",
+      "vendor_id": "isc2",
+      "title": "Certified Information Systems Security Professional",
+      "status": "active",
+      "study_guide_url": "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline",
+      "guide_path": "guides/CISSP-isc2-certified-information-systems-security-professional.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "ISC2 requires five years of experience in at least two current domains, with current one-year degree/approved-credential waiver and Associate alternative. Practice leadership decisions connecting mission, ethics/law/governance/risk, asset lifecycle, architecture/crypto/facilities, networks, IAM, assurance, operations/incident/resilience, and secure software/acquisition."
+    },
+    "review": {
+      "id": "cissp-2026-09-02-source-validation",
+      "exam_code": "CISSP",
+      "guide_path": "guides/CISSP-isc2-certified-information-systems-security-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/cissp-official-objectives.txt",
+      "blueprint_snapshot_sha256": "4b2491ad3b07a5d582a38e6c8dd3afd87e4861e26e2cadb58a67fc0bb9d8edb3",
+      "objective_coverage": [
+        {
+          "objective_group": "Security and Risk Management (16%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Asset Security (10%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Labs 2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security Architecture and Engineering (13%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 2–3",
+            "Labs 3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Communication and Network Security (13%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 2–3",
+            "Labs 4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Identity and Access Management (13%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security Assessment and Testing (12%)",
+          "guide_sections": [
+            "Section 6",
+            "All scenarios",
+            "Labs 5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security Operations (13%)",
+          "guide_sections": [
+            "Section 7",
+            "Scenarios 1–2",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Software Development Security (10%)",
+          "guide_sections": [
+            "Section 8",
+            "Scenarios 1 and 3",
+            "Labs 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 10,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Every April 15, 2024 objective is mapped through mission/stakeholders and ethics/law/policy, owned assets and threats, likelihood/impact/risk appetite, design and control alternatives, people/safety/operational consequences, accountable decision, assessment/operational evidence, response/recovery and improvement. AI assets and security work are integrated across domains. Three scenarios, eight authorized labs and 40 checks are included. Ten URLs are reachable and O'Reilly is automation-blocked; none are broken. Exam readiness is separated from experience/waiver, Associate status, endorsement, ethics, 120-CPE three-year cycle and current AMF. No recalled/live item, dump, unauthorized test or copied course content is used."
+    },
+    "sources": [
+      {
+        "id": "isc2-member-policies",
+        "title": "ISC2 Member Policies",
+        "url": "https://www.isc2.org/policies-procedures/member-policies",
+        "publisher": "ISC2",
+        "authority_class": 1,
+        "source_type": "program-policy",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "CC",
+          "SSCP",
+          "CCSP",
+          "CISSP"
+        ],
+        "notes": "Canonical current three-year maintenance, CPE, AMF, suspension and reinstatement rules; extend to other ISC2 guides as published. September 29 CC deep review: Full-page CC maintenance table, CPE/grace/AMF sections and selected appeal/associate context read; not every policy independently audited. CC45GroupA/3years and15suggested annually;CC-only50USD AMF vsothercategories. No personal eligibility/appeal/renewal advice or transaction. See docs/research/2026-09-29-cc-deep-review.md No live infrastructure execution. September 29 SSCP deep review: Full-page SSCP/Associate CPE table and selected AMF, experience-window and cycle context read. 60 CPE/3 years including45 Group A;20 annual suggested. Associate15A annually/50USD versus member135USD. Not every policy or personal eligibility audited; no transaction. See docs/research/2026-09-29-sscp-deep-review.md No live infrastructure execution. September 29 CCSP deep review: Fresh public receipt; same-session full-page CCSP/Associate CPE and AMF sections read. CCSP90/3yr incl60A plus30AorB,30annualsuggested;Associate15A annual. No full policy audit/personal eligibility/transaction. See docs/research/2026-09-29-ccsp-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "isc2-code-of-ethics",
+        "title": "ISC2 Code of Ethics",
+        "url": "https://www.isc2.org/ethics",
+        "publisher": "ISC2",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "CC",
+          "SSCP",
+          "CCSP",
+          "CISSP"
+        ],
+        "notes": "First-party ethical obligations used for scenario reasoning; extend to other ISC2 guides as published. September 29 CC deep review: Complete public main preamble/four-canons/member-obligation text read. Paraphrased professional judgment and reporting context; no complaint filed, contact made or legal case analyzed. See docs/research/2026-09-29-cc-deep-review.md No live infrastructure execution. September 29 SSCP deep review: Complete public main preamble and four canons read in this review session and freshly fetched for SSCP. Paraphrased authority, competence and evidence responsibilities; no complaint/contact/legal analysis. See docs/research/2026-09-29-sscp-deep-review.md No live infrastructure execution. September 29 CCSP deep review: Fresh public receipt; complete main preamble/four canons read in same review session. Applied authority, competence, assurance and evidence responsibilities; no complaint or external contact. See docs/research/2026-09-29-ccsp-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "isc2-cissp-outline",
+        "title": "CISSP Certification Exam Outline",
+        "url": "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline",
+        "publisher": "ISC2",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISSP"
+        ],
+        "notes": "Canonical April 15, 2024 eight-domain weighted outline, CAT delivery and five-year/two-domain experience, waiver and Associate contract; monitored by the ISC2 adapter."
+      },
+      {
+        "id": "isc2-cissp-self-study",
+        "title": "CISSP Study Tools and Resources",
+        "url": "https://www.isc2.org/certifications/cissp/cissp-self-study-resources",
+        "publisher": "ISC2",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISSP"
+        ],
+        "notes": "First-party route to the current outline, adaptive training, flash cards and Study Hub; access varies."
+      },
+      {
+        "id": "isc2-cissp-adaptive-training",
+        "title": "CISSP Online Self-Paced Training",
+        "url": "https://www.isc2.org/training/online-self-paced/cissp-online-self-paced",
+        "publisher": "ISC2",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISSP"
+        ],
+        "notes": "Current adaptive official course with textbook/questions, assessments, flash cards, 90/180-day access and a published general 20–40 hour content range."
+      },
+      {
+        "id": "pluralsight-isc2-cissp-2024-path",
+        "title": "CISSP Certified Information Systems Security Professional Certification",
+        "url": "https://www.pluralsight.com/paths/cisspr-certified-information-systems-security-professional-certification",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISSP"
+        ],
+        "notes": "Thirty-seven-hour path with 16 courses, seven refreshed labs and practice exam explicitly mapped to April 15, 2024."
+      },
+      {
+        "id": "linkedin-isc2-cissp-2024-cert-prep",
+        "title": "ISC2 CISSP 2024 Cert Prep",
+        "url": "https://www.linkedin.com/learning/isc2-certified-information-systems-security-professional-cissp-2024-cert-prep",
+        "publisher": "LinkedIn Learning / Mike Chapple",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISSP"
+        ],
+        "notes": "21h27m advanced course released April 2024 across all eight domains with transcripts and separate practice."
+      },
+      {
+        "id": "oreilly-isc2-cissp-study-guide-10e",
+        "title": "ISC2 CISSP Official Study Guide, 10th Edition",
+        "url": "https://www.oreilly.com/library/view/isc2-cissp-certified/9781394254699/",
+        "publisher": "O'Reilly / Sybex / Mike Chapple, James Michael Stewart and Darril Gibson",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISSP"
+        ],
+        "notes": "June 2024, 1,248-page, 40h26m official study guide mapped to the active outline with explained practice and written labs."
+      },
+      {
+        "id": "udemy-andrew-ramdayal-cissp",
+        "title": "Complete CISSP Course, Exam and the Mindset",
+        "url": "https://www.udemy.com/course/cisspcertification/",
+        "publisher": "Udemy / Andrew Ramdayal and TIA Education",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISSP"
+        ],
+        "notes": "41h27m popular route updated October 2025 and claiming 2024 alignment; validate claims officially and use practice for rationale, never memorization."
+      },
+      {
+        "id": "inside-cloud-security-cissp",
+        "title": "CISSP Exam Prep Resources",
+        "url": "https://insidethemicrosoftcloud.com/cissp/",
+        "publisher": "Inside Cloud and Security / Pete Zerger",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISSP"
+        ],
+        "notes": "Public visual exam-cram and 2024 addendum route with optional book; use for selective review after mapping the current outline."
+      },
+      {
+        "id": "nist-csf-2",
+        "title": "NIST Cybersecurity Framework 2.0",
+        "url": "https://www.nist.gov/cyberframework",
+        "publisher": "NIST",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISSP",
+          "PANW-CYBERSECURITY-APPRENTICE",
+          "SPLK-5003",
+          "PANW-SECURITY-OPERATIONS-ARCHITECT"
+        ],
+        "notes": "Authoritative governance and outcome vocabulary across Govern, Identify, Protect, Detect, Respond and Recover; use selectively rather than as an exam outline."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "dea10a598226f9f0ec02c76705c56b2171814e17c39da6c372822d0c2e53136e",
+      "guide_sections": [
+        "1. Security and Risk Management — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local risk-register workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "b1c6b6956d0c62857f21b84fa0b54adbf09dd42734a541962eeba3665bc23c1a",
+      "guide_sections": [
+        "1. Security and Risk Management — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local risk-register workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "fb39e233b9d542041c0d2ee0ad109d16b054abef2f21817efba9de261d988b8a",
+      "guide_sections": [
+        "1. Security and Risk Management — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local risk-register workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "27aef3963410657413078bb8ab09bc5990edcf9d3ffa0693f5e1a27c9c7ba4d8",
+      "guide_sections": [
+        "1. Security and Risk Management — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local risk-register workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "eca88937a137ddafe28113beb12878dc0cf8878798df3931f7361ed31172db83",
+      "guide_sections": [
+        "1. Security and Risk Management — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local risk-register workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "9db03982241651771ae6c7786c5e8474fdcbde4d83154283ab8d2d58d950f18b",
+      "guide_sections": [
+        "1. Security and Risk Management — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local risk-register workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "860ddc547c56ac33b1ce8bd53c30a6a25b05adc09653ed7151e9bb259ca6eaf4",
+      "guide_sections": [
+        "1. Security and Risk Management — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local risk-register workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "92171140166c64f4d1ffe8650740c03fdfebde2a7e578259e5d662ebb4a42342",
+      "guide_sections": [
+        "1. Security and Risk Management — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local risk-register workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "c16134eab1dad30616a6ae343006c24e38774ef33c7284a81221723340327fd1",
+      "guide_sections": [
+        "1. Security and Risk Management — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local risk-register workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "3e30366e90ca9f5619839a06484d07d107a3116ae487e8fe59bc6d5ec1626641",
+      "guide_sections": [
+        "1. Security and Risk Management — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local risk-register workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 11,
+      "objective_sha256": "88a2580dd3621252210f54ed6cf710e70e334a14617ce630756dcae72d467a80",
+      "guide_sections": [
+        "1. Security and Risk Management — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local risk-register workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 12,
+      "objective_sha256": "261552b0efb7b5f16e8776d1c624330309ba9b3ad7219462f4fdb7c6c940043c",
+      "guide_sections": [
+        "1. Security and Risk Management — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local risk-register workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "0af7aedb80d6637af3573213b59f764d73510d34d7f20790861c4a5a395f1ad8",
+      "guide_sections": [
+        "2. Asset Security — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "a032cc316cef93442d07607d6138ebdddc9a7145630c977f2da63462a8559cc1",
+      "guide_sections": [
+        "2. Asset Security — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "c8b3f1fa57a39924405967ea72b0b644a59ed10a949623f3464424d5ff190979",
+      "guide_sections": [
+        "2. Asset Security — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "72746020006cc5eddb8553883c7c5e3de7795303d9b940ad50bef8f95c7e6b9f",
+      "guide_sections": [
+        "2. Asset Security — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "c4baf9979b2cdfd2e3fde79474bc6b129a3e2790fa8a4afa142037ad6897fbd3",
+      "guide_sections": [
+        "2. Asset Security — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "51e7b254cff192254181bd0d374ce25b37f426bcc4344434c5b3a715c335854d",
+      "guide_sections": [
+        "2. Asset Security — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "c25a827a0d1b2f1dc542148da68f2672ff53aba32477a9c03f74cb4bed514279",
+      "guide_sections": [
+        "3. Security Architecture and Engineering — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "de77681cd0dadf68cd2c7f73e680c02ae3f730f65c3c0ffb44f110cb4aef3e8b",
+      "guide_sections": [
+        "3. Security Architecture and Engineering — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "4f28015965ec65afb950772d9d35e4ca632cdb7a1b78b362bdada1e9df7d5384",
+      "guide_sections": [
+        "3. Security Architecture and Engineering — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "eba22ac393f6c36677fb44606ae5253cd0f58b9f543ebb4fd60c33246d95ef19",
+      "guide_sections": [
+        "3. Security Architecture and Engineering — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "e80bb476b2692fac9a7c9eb3aca1c54626bc708109f8d7a2f9c7cafbee2c4cf3",
+      "guide_sections": [
+        "3. Security Architecture and Engineering — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "a053055825c3b1f90d737aa786da53b4ad47ac291228eb64dc59088030782da9",
+      "guide_sections": [
+        "3. Security Architecture and Engineering — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "8ec1a4d1103c5fae5b8b44ad821186c2d38b453405801b1dacb692e797676fe3",
+      "guide_sections": [
+        "3. Security Architecture and Engineering — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "d27c427f38243e50526a1a4ff23560b6a7e1113564899a21cfcf36c54000bb01",
+      "guide_sections": [
+        "3. Security Architecture and Engineering — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "71df57c667b8991703141ca19f9b247f3bc430820a78635294fc2b18dacd3a57",
+      "guide_sections": [
+        "3. Security Architecture and Engineering — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 10,
+      "objective_sha256": "13af6a5ce1822c1f1f546f1d0d3acba80a722999b26295ba14b4394b4feeea1d",
+      "guide_sections": [
+        "3. Security Architecture and Engineering — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "f075d5a17257c068d9e485b4c9c4d88b7d538809c42f138644e9afbaff7c53eb",
+      "guide_sections": [
+        "4. Communication and Network Security — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "02ad0b3c66f5dd457e1d7afafe67b7b40811a6e5e6fe576474ed528641b185c8",
+      "guide_sections": [
+        "4. Communication and Network Security — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "fe29fe156c11b94d991b92c2314ebfb3e187758570aac9185a1b1898471b0912",
+      "guide_sections": [
+        "4. Communication and Network Security — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "b5c361df0ce3787de8198def3ace906392ac0bbde4a981d6d657d6f2d43389d0",
+      "guide_sections": [
+        "5. Identity and Access Management — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "28cdaa12776a7473a63c57ef21e68d670fac68a4f5ae22932efd310087a13fdb",
+      "guide_sections": [
+        "5. Identity and Access Management — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "e2015588c39b838938c187d8641cc8b0045d5b3f31681541784f824599ad6960",
+      "guide_sections": [
+        "5. Identity and Access Management — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "c1a422742d9121d8fbb78f6298bec9405d6cc8b647c0699692edb8f950dd39e2",
+      "guide_sections": [
+        "5. Identity and Access Management — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "d5e8f5ef0ebf7be2fe442fccf7b7ae2e78c51c28b3c191187577b600ff9099e1",
+      "guide_sections": [
+        "5. Identity and Access Management — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "a61a1e8b1d1a34951922a9319405fda79b3cb4a0dc559a6550c45b046a086dd8",
+      "guide_sections": [
+        "5. Identity and Access Management — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "2b7db19b3322fabc238ac98b474396b51feb690374af491f31cd0f50275bee69",
+      "guide_sections": [
+        "6. Security Assessment and Testing — 12%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local risk-register workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "548498170c593fe76e4e720b7adaaa36c8d0285fded41ea8d7072ce2e4f93efe",
+      "guide_sections": [
+        "6. Security Assessment and Testing — 12%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local risk-register workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "3534a49e6c1078b6fc8273d1d44053ddc03f11d91744cd268408f639ed06e69a",
+      "guide_sections": [
+        "6. Security Assessment and Testing — 12%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local risk-register workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "b43f8c5d42c8f909d1573d5ea1b709d9f785a3caf0176695b53b99b493fa45ab",
+      "guide_sections": [
+        "6. Security Assessment and Testing — 12%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local risk-register workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "86f19af04229e37c85959a0483ba10c3f667a54299a70cca39d27a99e4c75827",
+      "guide_sections": [
+        "6. Security Assessment and Testing — 12%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local risk-register workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "524b74fd0ecc96ffc49366cdf3a4ec22bec1a2d8def0d6966c7ff0326b38a07c",
+      "guide_sections": [
+        "7. Security Operations — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "1fd96cdbde073c5c53fdbc4b518e790be2025c92a586dde871d11eb6435e733e",
+      "guide_sections": [
+        "7. Security Operations — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "7784883a8919bab543ea18fac86e6ca51197045f19bdd01e1df5fbbc06c93759",
+      "guide_sections": [
+        "7. Security Operations — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "7748e1621e67cf6bd31c8bc50f44864a7c42d0f27f782633f51635e1fb0b9694",
+      "guide_sections": [
+        "7. Security Operations — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "6220580b27ac02f00f3f26c61d7a966d9570000c1be40d2d5e621aeb503366b7",
+      "guide_sections": [
+        "7. Security Operations — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "c370e6aa40570f9f1e4fefd18cd602646983e0c315d9c9ceca35a9ec74c2895b",
+      "guide_sections": [
+        "7. Security Operations — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 7,
+      "objective_sha256": "8f6cde2e0ccdc7760bd210f882a6e8715fbc1f068339e21c432cc8b165925a44",
+      "guide_sections": [
+        "7. Security Operations — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 8,
+      "objective_sha256": "643066868fb3de6105548ddcde4a31d232a12a50dabdc2ea53a7cbab281fb2ca",
+      "guide_sections": [
+        "7. Security Operations — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 9,
+      "objective_sha256": "4a54e4bb5abd2527b72d2aa4ea0739af020ddd7ea99d6b729c947c3501a26c8b",
+      "guide_sections": [
+        "7. Security Operations — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 10,
+      "objective_sha256": "79bcf0ec6cc704398fc9cdc82e49c8305444d6bb217c976e97b119092ee63ae4",
+      "guide_sections": [
+        "7. Security Operations — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 11,
+      "objective_sha256": "ed872f14b77b5a830771c727fdc3a48f4e778b3c6ecd3fe8ad3ca499ecae7d81",
+      "guide_sections": [
+        "7. Security Operations — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 12,
+      "objective_sha256": "8a59b160a258502f9c3a5e58c34e061dd9ccaa5fa981bb5e7053754b80b617ec",
+      "guide_sections": [
+        "7. Security Operations — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 13,
+      "objective_sha256": "c94cd6248781ea5f76b55440a72f9e151681e3227727f26482315640c26c3282",
+      "guide_sections": [
+        "7. Security Operations — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 14,
+      "objective_sha256": "de761283dc0d09e28125a84d083d0adbf679e155e40736852e05ad6e9c256591",
+      "guide_sections": [
+        "7. Security Operations — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 15,
+      "objective_sha256": "933d8fea4a65cc706dcd6ed7ae15c1598953f7630f233e3f7c8bc5ca636ba087",
+      "guide_sections": [
+        "7. Security Operations — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "5089d22ae1c6989666b32b8b6c98ece01334a51c26fd8bc53f6d2c31119dc10c",
+      "guide_sections": [
+        "8. Software Development Security — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local risk-register workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "c0e66c36e062e5c163da4d1f1db59262cf3dbde03bcf24276c2dd07c77fd04c5",
+      "guide_sections": [
+        "8. Software Development Security — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local risk-register workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "39e2cb16b53dede617c7ded6a06e7daabd2df83c229c9b7fdaf43c1f39de60d9",
+      "guide_sections": [
+        "8. Software Development Security — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local risk-register workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "15067d434c873a4ba44936b20e15c5a0e9c9e9da993b195824b5b4c785f6efec",
+      "guide_sections": [
+        "8. Software Development Security — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local risk-register workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "701690fc80c608ccfe20ede9a42f2c1233d9d5db4bba6f8f951542d15f22bca6",
+      "guide_sections": [
+        "8. Software Development Security — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local risk-register workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "CISSP"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "CISSP",
+        "title": "Certified Information Systems Security Professional",
+        "url": "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline",
+        "guide_path": "guides/CISSP-isc2-certified-information-systems-security-professional.md",
+        "snapshot_path": "data\\objective-snapshots\\cissp-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\cissp-official-status.json",
+        "previous_sha256": "4b2491ad3b07a5d582a38e6c8dd3afd87e4861e26e2cadb58a67fc0bb9d8edb3",
+        "current_sha256": "6a66cbffa4cbd4c4a75f7a09f831886f52335b6020dc54ff7cb2da5a9544a22c",
+        "previous_status_sha256": "23e68c286cfe23ccdb87f7fa56266e4d8966c81971825ea5858e73770fafe78b",
+        "current_status_sha256": "8101c568ba7eede41190dc3ed10d301d61cd699d060e8f7afa5ef556b8358bbd",
+        "official_status": {
+          "skills_versions": [
+            "Effective Date: April 15, 2024",
+            "Length of exam: 3 hours",
+            "Number of items: 100 - 150",
+            "Item format: Multiple choice and advanced item types",
+            "Passing grade: 700 out of 1000 points",
+            "Exam language availability: Chinese, English, German, Japanese, Spanish",
+            "Testing center: ISC2 Authorized PPC and PVTC Select Pearson Testing Centers",
+            "Candidates must have a minimum of five years cumulative, full-time experience in two or more of the eight domains of the current CISSP Exam Outline. Earning a post-secondary degree (bachelors or masters) in computer science, Information Technology (IT) or related fields may satisfy up to one year of the required experience or an additional credential from the ISC2 approved list may satisfy up to one year of the required experience. Only one year of experience can be waived. Part-time work and internships may also count towards the experience requirement."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 29,
+    "reachable": 27,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "isc2-member-policies",
+      "url": "https://www.isc2.org/policies-procedures/member-policies",
+      "checked_at": "2026-09-29T12:53:45.015463+00:00",
+      "health": {
+        "id": "isc2-member-policies",
+        "url": "https://www.isc2.org/policies-procedures/member-policies",
+        "checked_at": "2026-09-29T12:53:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/policies-procedures/member-policies",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Member Policies",
+        "canonical_url": "https://www.isc2.org/policies-procedures/member-policies",
+        "duration_signals": [],
+        "signal_fingerprint": "91d58a7a0189afa3c90b0e203247190ea46b5a1d9effcf794a97dc675216775a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/policies-procedures/member-policies",
+      "sha256": "b47dac671e108143332c22ae55b8a519b94eab954e5e9507fa34e2a132b4d1d9",
+      "text_characters": 442,
+      "full_page_extraction": {
+        "characters": 41110,
+        "sha256": "e8924397368a2b3c9905de59aed15491c3f56d235b38629da5331bfe14d7007f",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "isc2-code-of-ethics",
+      "url": "https://www.isc2.org/ethics",
+      "checked_at": "2026-09-29T12:53:45.016374+00:00",
+      "health": {
+        "id": "isc2-code-of-ethics",
+        "url": "https://www.isc2.org/ethics",
+        "checked_at": "2026-09-29T12:53:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/ethics",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ISC2 Code of Ethics—Guidance for Cybersecurity Professionals",
+        "canonical_url": "https://www.isc2.org/ethics",
+        "duration_signals": [],
+        "signal_fingerprint": "7a9373b56e9e31d711af75585a8c507b34f6bda42c2694067ca96f0d1499903d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/ethics",
+      "sha256": "c667d09445f97dbf47ae36f876fad55e40330b98122d3c421b64d74608fd65b8",
+      "text_characters": 1484,
+      "full_page_extraction": {
+        "characters": 9260,
+        "sha256": "54f59a5c3d6121b84766efb79f01777aeaf95b5603e6209655d258697f6290bb",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "isc2-cissp-outline",
+      "url": "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline",
+      "checked_at": "2026-09-29T12:53:45.016831+00:00",
+      "health": {
+        "id": "isc2-cissp-outline",
+        "url": "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline",
+        "checked_at": "2026-09-29T12:53:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Review the ISC2 CISSP Certification Exam Outline",
+        "canonical_url": "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline",
+        "duration_signals": [
+          "3 hours"
+        ],
+        "signal_fingerprint": "d70db9e77b7178cd09681b6203ecd97161667844a8738c7ddd7379a07f61fbf1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline",
+      "sha256": "d18f29788c99c0c9c1274b20282ee2ab2117423565fcd1dc52e588d92f591e22",
+      "text_characters": 709,
+      "full_page_extraction": {
+        "characters": 29177,
+        "sha256": "722f7ded9b0afb7c700b4da4a8c986c7ef5b68f222d93b7a5019a0b3814a6cc2",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "isc2-cissp-self-study",
+      "url": "https://www.isc2.org/certifications/cissp/cissp-self-study-resources",
+      "checked_at": "2026-09-29T12:53:45.990282+00:00",
+      "health": {
+        "id": "isc2-cissp-self-study",
+        "url": "https://www.isc2.org/certifications/cissp/cissp-self-study-resources",
+        "checked_at": "2026-09-29T12:53:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/certifications/cissp/cissp-self-study-resources",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Where to Find CISSP Study Tools, Resources, Exam Outlines",
+        "canonical_url": "https://www.isc2.org/certifications/cissp/cissp-self-study-resources",
+        "duration_signals": [],
+        "signal_fingerprint": "931b45dc27d301086ff29e22ec6cec3a8105f45ba19b7a04b5c75e7cbe3b2ff3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/certifications/cissp/cissp-self-study-resources",
+      "sha256": "d4da47c89ef3e5e6389ccffedf3fbb3bdf9f0ca05b41ed053919fc7df7ea802f",
+      "text_characters": 2145,
+      "full_page_extraction": {
+        "characters": 3323,
+        "sha256": "76cd354b1d6750a8c3c2f88f9f8752fe7cefc7b0a81754986ebf927e07b68542",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "isc2-cissp-adaptive-training",
+      "url": "https://www.isc2.org/training/online-self-paced/cissp-online-self-paced",
+      "checked_at": "2026-09-29T12:53:46.018981+00:00",
+      "health": {
+        "id": "isc2-cissp-adaptive-training",
+        "url": "https://www.isc2.org/training/online-self-paced/cissp-online-self-paced",
+        "checked_at": "2026-09-29T12:53:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/training/online-self-paced/cissp-online-self-paced",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CISSP Self-Paced Training, A Custom Learning Experience",
+        "canonical_url": "https://www.isc2.org/training/online-self-paced/cissp-online-self-paced",
+        "duration_signals": [],
+        "signal_fingerprint": "4eacf2baa49d953129b9c945959621fc9cb4038f68dba8bf02af98be972a02ef",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/training/online-self-paced/cissp-online-self-paced",
+      "sha256": "d12a4cf9c5e8ece9071e27555f53a33be33f2b9ce664ccc466ff835475a647d8",
+      "text_characters": 1911,
+      "full_page_extraction": {
+        "characters": 12397,
+        "sha256": "894fa886ad29d33f4c5838bbd92fed61b2663b928980f60e6e226fd9e2181da1",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "pluralsight-isc2-cissp-2024-path",
+      "url": "https://www.pluralsight.com/paths/cisspr-certified-information-systems-security-professional-certification",
+      "checked_at": "2026-09-29T12:53:46.496812+00:00",
+      "health": {
+        "id": "pluralsight-isc2-cissp-2024-path",
+        "url": "https://www.pluralsight.com/paths/cisspr-certified-information-systems-security-professional-certification",
+        "checked_at": "2026-09-29T12:53:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/cisspr-certified-information-systems-security-professional-certification",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "CISSP® (Certified Information Systems Security Professional) Certification",
+        "canonical_url": "https://www.pluralsight.com/paths/cisspr-certified-information-systems-security-professional-certification",
+        "duration_signals": [
+          "37 Hours"
+        ],
+        "signal_fingerprint": "70bd185dca4e3c017ba9677f994cc55f5c238177c7b18ddcf609838bfc306eb9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/cisspr-certified-information-systems-security-professional-certification",
+      "sha256": "5e598e14d14a53accee2bdbd9a3fec2ff0c8a7b379005b3bbf3834e55842af8b",
+      "text_characters": 7299
+    },
+    {
+      "id": "linkedin-isc2-cissp-2024-cert-prep",
+      "url": "https://www.linkedin.com/learning/isc2-certified-information-systems-security-professional-cissp-2024-cert-prep",
+      "checked_at": "2026-09-29T12:53:46.871657+00:00",
+      "health": {
+        "id": "linkedin-isc2-cissp-2024-cert-prep",
+        "url": "https://www.linkedin.com/learning/isc2-certified-information-systems-security-professional-cissp-2024-cert-prep",
+        "checked_at": "2026-09-29T12:53:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.linkedin.com/learning/isc2-certified-information-systems-security-professional-cissp-2024-cert-prep",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ISC2 Certified Information Systems Security Professional (CISSP) (2024) Cert Prep Online Class | LinkedIn Learning, formerly Lynda.com",
+        "canonical_url": "https://www.linkedin.com/learning/isc2-certified-information-systems-security-professional-cissp-2024-cert-prep",
+        "duration_signals": [
+          "PT10M47S",
+          "PT1M10S",
+          "PT1M13S",
+          "PT1M16S",
+          "PT1M22S",
+          "PT1M27S",
+          "PT1M28S",
+          "PT1M30S",
+          "PT1M32S",
+          "PT1M36S",
+          "PT1M39S",
+          "PT1M40S",
+          "PT1M41S",
+          "PT1M42S",
+          "PT1M43S",
+          "PT1M46S",
+          "PT1M47S",
+          "PT1M48S",
+          "PT1M49S",
+          "PT1M4S",
+          "PT1M50S",
+          "PT1M56S",
+          "PT1M57S",
+          "PT1M58S",
+          "PT1M5S",
+          "PT21H27M",
+          "PT2M",
+          "PT2M11S",
+          "PT2M12S",
+          "PT2M13S"
+        ],
+        "signal_fingerprint": "149fd9eb653ab82898afad67488f242ec92d83cee89b577d0438c74ff36805da",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.linkedin.com/learning/isc2-certified-information-systems-security-professional-cissp-2024-cert-prep",
+      "sha256": "efbc6f6ea1da9745e513269c200ce1f6b2948d362291402b37ccdc55669d5bea",
+      "text_characters": 19430
+    },
+    {
+      "id": "oreilly-isc2-cissp-study-guide-10e",
+      "url": "https://www.oreilly.com/library/view/isc2-cissp-certified/9781394254699/",
+      "checked_at": "2026-09-29T12:53:47.200643+00:00",
+      "health": {
+        "id": "oreilly-isc2-cissp-study-guide-10e",
+        "url": "https://www.oreilly.com/library/view/isc2-cissp-certified/9781394254699/",
+        "checked_at": "2026-09-29T12:53:47+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/isc2-cissp-certified/9781394254699/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "udemy-andrew-ramdayal-cissp",
+      "url": "https://www.udemy.com/course/cisspcertification/",
+      "checked_at": "2026-09-29T12:53:47.364008+00:00",
+      "health": {
+        "id": "udemy-andrew-ramdayal-cissp",
+        "url": "https://www.udemy.com/course/cisspcertification/",
+        "checked_at": "2026-09-29T12:53:47+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/cisspcertification/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "inside-cloud-security-cissp",
+      "url": "https://insidethemicrosoftcloud.com/cissp/",
+      "checked_at": "2026-09-29T12:53:47.423816+00:00",
+      "health": {
+        "id": "inside-cloud-security-cissp",
+        "url": "https://insidethemicrosoftcloud.com/cissp/",
+        "checked_at": "2026-09-29T12:53:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://insidethemicrosoftcloud.com/cissp/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "CISSP Exam Prep – Inside Cloud and Security",
+        "canonical_url": "https://insidethemicrosoftcloud.com/cissp/",
+        "duration_signals": [],
+        "signal_fingerprint": "a4fe41fbe3552b1051c5b6df36e09dc5286db3cdc4d6ac85043a3ca8325f1ebe",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://insidethemicrosoftcloud.com/cissp/",
+      "sha256": "98d830925db30641dc983620546501d158c6522d2a8d1f4df570119f515aed55",
+      "text_characters": 555
+    },
+    {
+      "id": "nist-cmvp-faq",
+      "url": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/faqs",
+      "checked_at": "2026-09-29T12:58:58.464412+00:00",
+      "health": {
+        "id": "nist-cmvp-faq",
+        "url": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/faqs",
+        "checked_at": "2026-09-29T12:58:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/faqs",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Cryptographic Module Validation Program | CSRCLock",
+        "canonical_url": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/faqs",
+        "duration_signals": [],
+        "signal_fingerprint": "c17f02ad90b98a087d59b37e52805105bb7a2c8ec4349dc05bcf03ab2e10bb38",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/faqs",
+      "sha256": "c6ddcf7459911e48273989489049a538bb9aae61d83e2bbfdbd274fa1b8d9e7f",
+      "text_characters": 24108
+    },
+    {
+      "id": "isc2-cat-policy",
+      "url": "https://www.isc2.org/certifications/computerized-adaptive-testing",
+      "checked_at": "2026-09-29T12:58:58.465455+00:00",
+      "health": {
+        "id": "isc2-cat-policy",
+        "url": "https://www.isc2.org/certifications/computerized-adaptive-testing",
+        "checked_at": "2026-09-29T12:58:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/certifications/computerized-adaptive-testing",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Computerized Adaptive Testing",
+        "canonical_url": "https://www.isc2.org/certifications/computerized-adaptive-testing",
+        "duration_signals": [],
+        "signal_fingerprint": "22554610ea2cc26f338669a2bdd622cfd5b7ed8113eff37535bcb0f52e88b928",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/certifications/computerized-adaptive-testing",
+      "sha256": "f686be2728e35c814311efa24de3d10ad8a2a443193865fe8713b9e659cd496f",
+      "text_characters": 847,
+      "full_page_extraction": {
+        "characters": 15171,
+        "sha256": "e75bad8527c9d80e93affdcaa4102d21a4ae3dcdfd1cfb91a7ec5363f17646a1",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "nist-pqc-first-standards",
+      "url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+      "checked_at": "2026-09-29T12:58:58.466021+00:00",
+      "health": {
+        "id": "nist-pqc-first-standards",
+        "url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+        "checked_at": "2026-09-29T12:58:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "NIST Releases First 3 Finalized Post-Quantum Encryption Standards",
+        "canonical_url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+        "duration_signals": [],
+        "signal_fingerprint": "e7277cd44446eb1a1faf6735d1374fe4e0dcceec987c99155f82b4afb209c448",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+      "sha256": "849ba7b4a34856294ef922007358db3ae3be8ca7bce6f07f94879b597789fcf1",
+      "text_characters": 12282
+    },
+    {
+      "id": "nist-800-63b-4",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "checked_at": "2026-09-29T12:58:58.984324+00:00",
+      "health": {
+        "id": "nist-800-63b-4",
+        "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+        "checked_at": "2026-09-29T12:58:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+        "content_type": "text/html",
+        "page_title": "NIST Special Publication 800-63B",
+        "canonical_url": "/800-63-4/sp800-63b.html",
+        "duration_signals": [
+          "1 hour",
+          "10 minutes",
+          "12 hours",
+          "15 minutes",
+          "24 hours",
+          "24 hours and 10 minutes"
+        ],
+        "signal_fingerprint": "5ddbbdf4604797a1f84ba2134130ae1d3b228955b507c77d2c1b48e269f67805",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "sha256": "09f2ded7561b50a6f59ffdf839ccdc2cb0d0cd9c0fc661f0891c01ed36105ab9",
+      "text_characters": 253608
+    },
+    {
+      "id": "isc2-cissp-experience",
+      "url": "https://www.isc2.org/certifications/cissp/cissp-experience-requirements",
+      "checked_at": "2026-09-29T12:58:59.820795+00:00",
+      "health": {
+        "id": "isc2-cissp-experience",
+        "url": "https://www.isc2.org/certifications/cissp/cissp-experience-requirements",
+        "checked_at": "2026-09-29T12:58:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/certifications/cissp/cissp-experience-requirements",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Experience Needed for the ISC2 CISSP Certification",
+        "canonical_url": "https://www.isc2.org/certifications/cissp/cissp-experience-requirements",
+        "duration_signals": [
+          "1040 hours",
+          "20 hours",
+          "2080 hours",
+          "34 hours",
+          "35 hours"
+        ],
+        "signal_fingerprint": "2b654eb63410302db7105ecbb3979d00fac0a46ff4be6abc8d85b1578822dc0e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/certifications/cissp/cissp-experience-requirements",
+      "sha256": "0abc26b92de1d83b659e3d6477f589cd587225e9ceb778cea9730f3fe18f543b",
+      "text_characters": 70,
+      "full_page_extraction": {
+        "characters": 4260,
+        "sha256": "5cd36635b5d023ce865369c5dedde2d124c22bed25e803199e7fa9c987f3adbf",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "isc2-cissp-waiver-2026",
+      "url": "https://www.isc2.org/Insights/2026/05/CISSP-Experiene-Waiver-Updates",
+      "checked_at": "2026-09-29T12:58:59.938833+00:00",
+      "health": {
+        "id": "isc2-cissp-waiver-2026",
+        "url": "https://www.isc2.org/Insights/2026/05/CISSP-Experiene-Waiver-Updates",
+        "checked_at": "2026-09-29T12:58:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/Insights/2026/05/CISSP-Experiene-Waiver-Updates",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ISC2 CISSP Experience Waiver Updates Requirements",
+        "canonical_url": "https://www.isc2.org/Insights/2026/05/CISSP-Experiene-Waiver-Updates",
+        "duration_signals": [
+          "040 hours",
+          "080 hours",
+          "34 hours",
+          "35 hours"
+        ],
+        "signal_fingerprint": "18478799ad506a28af713885d6e07fbfc77310337ea57adf87e02234ab2c157d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/Insights/2026/05/CISSP-Experiene-Waiver-Updates",
+      "sha256": "0b153f5cbd932e5df22450b62d868d031c95291d5dc7c723af53e0338265802f",
+      "text_characters": 20,
+      "full_page_extraction": {
+        "characters": 6081,
+        "sha256": "7deefc3df9693fbf50a2aa65ee27711fa3b368d56b7258f2757f7d728cb8ef62",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "isc2-cissp-refresh-faq",
+      "url": "https://www.isc2.org/certifications/cissp/cissp-exam-refresh-faq",
+      "checked_at": "2026-09-29T12:59:00.361839+00:00",
+      "health": {
+        "id": "isc2-cissp-refresh-faq",
+        "url": "https://www.isc2.org/certifications/cissp/cissp-exam-refresh-faq",
+        "checked_at": "2026-09-29T12:59:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/certifications/cissp/cissp-exam-refresh-faq",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CISSP Exam Refresh FAQ",
+        "canonical_url": "https://www.isc2.org/certifications/cissp/cissp-exam-refresh-faq",
+        "duration_signals": [],
+        "signal_fingerprint": "157d9cb5c3cb755bcfc1709f3060ab7844878f8d369c007a577d210642f39c17",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/certifications/cissp/cissp-exam-refresh-faq",
+      "sha256": "3b6ed01c4a654be3914798cd0c8b5c165e40bec40001f43fd6c17e8890eb75f4",
+      "text_characters": 399,
+      "full_page_extraction": {
+        "characters": 4663,
+        "sha256": "63c6c0f1bd180a355477685e112da36128aad6ee8ff548448f2705750d94d48c",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "nist-ir8286-2025-release",
+      "url": "https://www.nist.gov/news-events/news/2025/12/nist-revises-publications-integrating-cybersecurity-and-enterprise-risk",
+      "checked_at": "2026-09-29T12:59:00.808655+00:00",
+      "health": {
+        "id": "nist-ir8286-2025-release",
+        "url": "https://www.nist.gov/news-events/news/2025/12/nist-revises-publications-integrating-cybersecurity-and-enterprise-risk",
+        "checked_at": "2026-09-29T12:59:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nist.gov/news-events/news/2025/12/nist-revises-publications-integrating-cybersecurity-and-enterprise-risk",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "NIST Revises Publications on Integrating Cybersecurity and Enterprise Risk Management",
+        "canonical_url": "https://www.nist.gov/news-events/news/2025/12/nist-revises-publications-integrating-cybersecurity-and-enterprise-risk",
+        "duration_signals": [],
+        "signal_fingerprint": "ec83b28a0864e4ca38b72726f8a508df42dd63b87d2fc3e023fb9e4057a0a072",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nist.gov/news-events/news/2025/12/nist-revises-publications-integrating-cybersecurity-and-enterprise-risk",
+      "sha256": "cffb485d7d102e0d67d43d12bfc0ec3fd620be696e8e287bc9dd427b34cd456a",
+      "text_characters": 5300
+    },
+    {
+      "id": "nist-ir8286-risk-register-schema",
+      "url": "https://csrc.nist.gov/files/pubs/ir/8286/r1/final/docs/risk_register_schema.json",
+      "checked_at": "2026-09-29T13:00:12.453616+00:00",
+      "health": {
+        "id": "nist-ir8286-risk-register-schema",
+        "url": "https://csrc.nist.gov/files/pubs/ir/8286/r1/final/docs/risk_register_schema.json",
+        "checked_at": "2026-09-29T12:59:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://csrc.nist.gov/files/pubs/ir/8286/r1/final/docs/risk_register_schema.json",
+        "content_type": "application/json",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://csrc.nist.gov/files/pubs/ir/8286/r1/final/docs/risk_register_schema.json",
+      "sha256": "ff85e9c917bce3e7646b974c7b8b62ba9fcf5d90d12906e6f46be4d3653b2e69",
+      "bytes": 2576,
+      "retrieval_note": "Initial HTML Accept header returned406; correct application/json representation fetched successfully.",
+      "json_parse": "valid",
+      "json_top_level_keys": [
+        "$id",
+        "$schema",
+        "description",
+        "title",
+        "type",
+        "properties",
+        "required"
+      ]
+    },
+    {
+      "id": "nist-ir8286-risk-detail-schema",
+      "url": "https://csrc.nist.gov/files/pubs/ir/8286/r1/final/docs/risk_detail_record_schema.json",
+      "checked_at": "2026-09-29T13:00:12.972553+00:00",
+      "health": {
+        "id": "nist-ir8286-risk-detail-schema",
+        "url": "https://csrc.nist.gov/files/pubs/ir/8286/r1/final/docs/risk_detail_record_schema.json",
+        "checked_at": "2026-09-29T12:59:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://csrc.nist.gov/files/pubs/ir/8286/r1/final/docs/risk_detail_record_schema.json",
+        "content_type": "application/json",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://csrc.nist.gov/files/pubs/ir/8286/r1/final/docs/risk_detail_record_schema.json",
+      "sha256": "bf9b8c0f888fc2421d094ec697cc8977347ae66d7cfc236e89bd027a23750d60",
+      "bytes": 6343,
+      "retrieval_note": "Initial HTML Accept header returned406; correct application/json representation fetched successfully.",
+      "json_parse": "valid",
+      "json_top_level_keys": [
+        "$id",
+        "$schema",
+        "description",
+        "title",
+        "type",
+        "properties",
+        "required"
+      ]
+    },
+    {
+      "id": "isc2-ai-exam-guidance",
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+      "checked_at": "2026-09-29T12:59:46.729538+00:00",
+      "health": {
+        "id": "isc2-ai-exam-guidance",
+        "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+        "checked_at": "2026-09-29T12:59:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+      "sha256": "69cd0cfa50fac68a60370f812f0ce5f6f33b1a861eac66b4c66e2e410fbb0741",
+      "bytes": 506895,
+      "pdf_pages": 29,
+      "text_characters": 70743
+    },
+    {
+      "id": "nist-sp800-61r3-pdf",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "checked_at": "2026-09-29T12:59:49.723514+00:00",
+      "health": {
+        "id": "nist-sp800-61r3-pdf",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "checked_at": "2026-09-29T12:59:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "sha256": "e5593d6bb85daecec7e8d9549400c7b3473bcc3f06e469c82218073afa7fba2d",
+      "bytes": 1040566,
+      "pdf_pages": 48,
+      "text_characters": 107538
+    },
+    {
+      "id": "nist-800-207",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "checked_at": "2026-09-29T12:59:49.269882+00:00",
+      "health": {
+        "id": "nist-800-207",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "checked_at": "2026-09-29T12:59:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "sha256": "0290d6ece24874287316f4bf430fef770aa4ec08a2227c8f2c1e5b2ff975e03d",
+      "bytes": 966908,
+      "pdf_pages": 59,
+      "text_characters": 156827
+    },
+    {
+      "id": "nist-800-88r2",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "checked_at": "2026-09-29T12:59:51.054963+00:00",
+      "health": {
+        "id": "nist-800-88r2",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+        "checked_at": "2026-09-29T12:59:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "sha256": "39bb805c72723ed74f08e5806cd8463ca2554a62abb4f97b9d19c0398a8a7c55",
+      "bytes": 983677,
+      "pdf_pages": 48,
+      "text_characters": 112553
+    },
+    {
+      "id": "isc2-cissp-outline-2024-pdf",
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/CISSP-Exam-Outline-April-2024-English.pdf",
+      "checked_at": "2026-09-29T12:59:51.564165+00:00",
+      "health": {
+        "id": "isc2-cissp-outline-2024-pdf",
+        "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/CISSP-Exam-Outline-April-2024-English.pdf",
+        "checked_at": "2026-09-29T12:59:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/CISSP-Exam-Outline-April-2024-English.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/CISSP-Exam-Outline-April-2024-English.pdf",
+      "sha256": "16e798ee6f88506e64bca83c48d232aa321d5345640500277dbf8f96beeed6fb",
+      "bytes": 372152,
+      "pdf_pages": 15,
+      "text_characters": 22158
+    },
+    {
+      "id": "nist-ir8286r1-pdf",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8286r1.pdf",
+      "checked_at": "2026-09-29T12:59:55.363822+00:00",
+      "health": {
+        "id": "nist-ir8286r1-pdf",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8286r1.pdf",
+        "checked_at": "2026-09-29T12:59:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8286r1.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8286r1.pdf",
+      "sha256": "1b20de63eced97a8b57e8f39af611ad4fa785084e01ea62511e4e2accdd685ed",
+      "bytes": 2028837,
+      "pdf_pages": 78,
+      "text_characters": 206591
+    },
+    {
+      "id": "nist-cybersecurity-framework-2",
+      "url": "https://www.nist.gov/cyberframework",
+      "checked_at": "2026-09-29T13:00:13.346613+00:00",
+      "health": {
+        "id": "nist-cybersecurity-framework-2",
+        "url": "https://www.nist.gov/cyberframework",
+        "checked_at": "2026-09-29T13:00:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nist.gov/cyberframework",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Cybersecurity Framework",
+        "canonical_url": "https://www.nist.gov/cyberframework",
+        "duration_signals": [],
+        "signal_fingerprint": "7ece8c5ce2c87131c09b887c735e648ca2d6d75ec5c85b3dd2a99cc4a072d0bc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nist.gov/cyberframework",
+      "sha256": "c8905a21d8ffe838886bb87ef308e800eb06dbe52739cdcae0687ae089134442",
+      "text_characters": 5335
+    },
+    {
+      "id": "nist-ir-8286-rev1",
+      "url": "https://csrc.nist.gov/pubs/ir/8286/r1/final",
+      "checked_at": "2026-09-29T13:00:13.347343+00:00",
+      "health": {
+        "id": "nist-ir-8286-rev1",
+        "url": "https://csrc.nist.gov/pubs/ir/8286/r1/final",
+        "checked_at": "2026-09-29T13:00:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://csrc.nist.gov/pubs/ir/8286/r1/final",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "IR 8286 Rev. 1, Integrating Cybersecurity and Enterprise Risk Management (ERM) | CSRCLock",
+        "canonical_url": "https://csrc.nist.gov/pubs/ir/8286/r1/final",
+        "duration_signals": [],
+        "signal_fingerprint": "0ecf7a800773b12dfdd8aa026e0b2b83ccb687b1b71bb4c37927ac7861ceddfd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://csrc.nist.gov/pubs/ir/8286/r1/final",
+      "sha256": "42731a0ab5ae5c0ee8e1acb9f6cc0076ffe0c0ff6def6b98aef6bd08782f2fa8",
+      "text_characters": 7510
+    },
+    {
+      "id": "python-jsonschema-validation",
+      "url": "https://python-jsonschema.readthedocs.io/en/stable/validate/",
+      "checked_at": "2026-09-29T13:05:56.635377+00:00",
+      "health": {
+        "id": "python-jsonschema-validation",
+        "url": "https://python-jsonschema.readthedocs.io/en/stable/validate/",
+        "checked_at": "2026-09-29T13:05:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://python-jsonschema.readthedocs.io/en/stable/validate/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Schema Validation",
+        "canonical_url": "https://python-jsonschema.readthedocs.io/en/stable/validate/",
+        "duration_signals": [],
+        "signal_fingerprint": "61d8d606f924ef29a8d86d247bae7b93204656f7f75641971ddf306593858064",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://python-jsonschema.readthedocs.io/en/stable/validate/",
+      "sha256": "71e8e43dcb6fd3c8162f47b6e44649a15d544f09a67ceaca29b09a2c98d92785",
+      "text_characters": 20641
+    }
+  ],
+  "added_source_ids": [
+    "isc2-cissp-outline-2024-pdf",
+    "isc2-cissp-experience",
+    "isc2-cissp-waiver-2026",
+    "isc2-cissp-refresh-faq",
+    "nist-ir8286r1-pdf",
+    "nist-ir8286-2025-release",
+    "nist-ir8286-risk-register-schema",
+    "nist-ir8286-risk-detail-schema",
+    "python-jsonschema-validation"
+  ],
+  "findings": [
+    {
+      "id": "cissp-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Testing-center label changed without a scope revision",
+      "url": "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CISSP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Only Pearson VUE shortened toPearson;62objectives/eightweights unchanged.",
+      "recommendation": "Preserveoldbytes/history andexplicitlyaccept monitored edit.",
+      "disposition": "applied",
+      "source_id": "isc2-cissp-outline",
+      "resolution": "Preserveoldbytes/history andexplicitlyaccept monitored edit."
+    },
+    {
+      "id": "cissp-deep-2",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Historical future wording does not announce a new refresh",
+      "url": "https://www.isc2.org/certifications/cissp/cissp-exam-refresh-faq",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CISSP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "FAQdescribesApril15 2024alreadyactive outline.",
+      "recommendation": "Usecurrentbaselineandseparatenewannouncements;do notinferretirement fromage.",
+      "disposition": "applied",
+      "source_id": "isc2-cissp-refresh-faq",
+      "resolution": "Usecurrentbaselineandseparatenewannouncements;do notinferretirement fromage."
+    },
+    {
+      "id": "cissp-deep-3",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "The approved experience-waiver list changed in 2026",
+      "url": "https://www.isc2.org/Insights/2026/05/CISSP-Experiene-Waiver-Updates",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CISSP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "May18article saysApril1effectiveupdate;one-yearmaxdegreeORcredential.",
+      "recommendation": "Linkcurrentlist andseparatecredentiallistingcriteria fromindividualapproval.",
+      "disposition": "applied",
+      "source_id": "isc2-cissp-waiver-2026",
+      "resolution": "Linkcurrentlist andseparatecredentiallistingcriteria fromindividualapproval."
+    },
+    {
+      "id": "cissp-deep-4",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "CPE categories and Associate rules need separate treatment",
+      "url": "https://www.isc2.org/policies-procedures/member-policies",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CISSP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "CISSP120/3yr including90A plus30AorB;40annualsuggested;member135USD.",
+      "recommendation": "Publishcategories andseparateAssociate15A/50USDannualrequirements.",
+      "disposition": "applied",
+      "source_id": "isc2-member-policies",
+      "resolution": "Publishcategories andseparateAssociate15A/50USDannualrequirements."
+    },
+    {
+      "id": "cissp-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "AI context spans the existing eight domains",
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CISSP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "CompleteCISSPprinted9-11read;governance,data,architecture,network,IAM,assurance,operations,SDLC.",
+      "recommendation": "MaporiginalAIservicecasewithoutnewweights orclaimingfilteringpreventsallinjection.",
+      "disposition": "applied",
+      "source_id": "isc2-ai-exam-guidance",
+      "resolution": "MaporiginalAIservicecasewithoutnewweights orclaimingfilteringpreventsallinjection."
+    },
+    {
+      "id": "cissp-deep-6",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Enterprise risk guidance has a newer final revision",
+      "url": "https://www.nist.gov/news-events/news/2025/12/nist-revises-publications-integrating-cybersecurity-and-enterprise-risk",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CISSP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "December18 2025 releaseintegratesCSF2.0 andriskseriesupdates.",
+      "recommendation": "UseRev1selectedanalysis/rollupcontext;labeloriginalfinancialassumptionsanduncertainty.",
+      "disposition": "applied",
+      "source_id": "nist-ir8286-2025-release",
+      "resolution": "UseRev1selectedanalysis/rollupcontext;labeloriginalfinancialassumptionsanduncertainty."
+    },
+    {
+      "id": "cissp-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Structurally valid data can violate risk-quality rules",
+      "url": "https://csrc.nist.gov/files/pubs/ir/8286/r1/final/docs/risk_register_schema.json",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CISSP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Actualschema accepts150percent,negativeimpact,blankowner andinconsistentexposure;requiresfieldtypes/responseenum.",
+      "recommendation": "Preserveofficialschema anddemonstrateoriginalsemantic/policychecks separately.",
+      "disposition": "applied",
+      "source_id": "nist-ir8286-risk-register-schema",
+      "resolution": "Preserveofficialschema anddemonstrateoriginalsemantic/policychecks separately."
+    },
+    {
+      "id": "cissp-deep-8",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Required presence does not always impose a property type",
+      "url": "https://csrc.nist.gov/files/pubs/ir/8286/r1/final/docs/risk_detail_record_schema.json",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CISSP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "currentRiskAnalysisrequiredwithoutpropertydefinition;plannedRiskResponsepropertyoptional.",
+      "recommendation": "Describevalidschemaboundarywithoutalteringofficialsource orclaimingsyntaxfailure.",
+      "disposition": "applied",
+      "source_id": "nist-ir8286-risk-detail-schema",
+      "resolution": "Describevalidschemaboundarywithoutalteringofficialsource orclaimingsyntaxfailure."
+    },
+    {
+      "id": "cissp-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Active validation and historical status are distinct",
+      "url": "https://csrc.nist.gov/Projects/cryptographic-module-validation-program/faqs",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CISSP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "September22only1403active;module/version/environment matters;historicalnotrevoked.",
+      "recommendation": "Explainexactvalidationevidence andavoidwholeproduct/FIPSclaimforlocalcode.",
+      "disposition": "applied",
+      "source_id": "nist-cmvp-faq",
+      "resolution": "Explainexactvalidationevidence andavoidwholeproduct/FIPSclaimforlocalcode."
+    },
+    {
+      "id": "cissp-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Password requirements depend on authenticator context",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CISSP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "15singlefactor/8MFAminimum;manualOTPnotphishingresistant;activationPINdistinct.",
+      "recommendation": "Separateidentitystrength,scopedrequirements andapplicationauthorization.",
+      "disposition": "applied",
+      "source_id": "nist-800-63b-4",
+      "resolution": "Separateidentitystrength,scopedrequirements andapplicationauthorization."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "isc2-cissp-waiver-2026",
+      "published_on": "2026-05-18",
+      "review": "Fullmainarticle;approvedlisteffectiveApril1."
+    },
+    {
+      "source_id": "nist-ir8286-2025-release",
+      "published_on": "2025-12-18",
+      "review": "Fullmainreleasearticle;newfinalriskseries revisions."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 23,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "7a9dc0a69c80ad47185ec1b0362a4bc660e4f1c415c896ea96e132002e723b32",
+      "python_version": "3.13.14",
+      "jsonschema_version": "4.26.0",
+      "execution_stdout": "[\"valid original row\", \"required owner field\", \"number is not a numeric string\", \"boolean is not a number\", \"response enumeration\", \"response must be nonempty\", \"responses must be unique\", \"percentage over 100: schema passes, local rules reject\", \"negative loss: schema passes, local rules reject\", \"empty owner: schema passes, local rules reject\", \"incorrect exposure: schema passes, local rules reject\", \"unknown status: schema passes, local rules reject\", \"positive-risk response needs a different model: schema passes, local rules reject\", \"unexpected field is permitted by official schema\", \"non-finite Python number rejected locally\", \"duplicate risk ID rejected at collection boundary\", \"two distinct valid IDs pass local collection checks\", \"authorized acceptance at tolerance\", \"analyst cannot self-approve\", \"forged owner field does not change trusted authority\", \"expired acceptance rejected\", \"above tolerance needs escalation\", \"planned mitigation is not acceptance\"]\n23 local risk-register checks passed",
+      "results": [
+        "valid original row",
+        "required owner field",
+        "number is not a numeric string",
+        "boolean is not a number",
+        "response enumeration",
+        "response must be nonempty",
+        "responses must be unique",
+        "percentage over 100: schema passes, local rules reject",
+        "negative loss: schema passes, local rules reject",
+        "empty owner: schema passes, local rules reject",
+        "incorrect exposure: schema passes, local rules reject",
+        "unknown status: schema passes, local rules reject",
+        "positive-risk response needs a different model: schema passes, local rules reject",
+        "unexpected field is permitted by official schema",
+        "non-finite Python number rejected locally",
+        "duplicate risk ID rejected at collection boundary",
+        "two distinct valid IDs pass local collection checks",
+        "authorized acceptance at tolerance",
+        "analyst cannot self-approve",
+        "forged owner field does not change trusted authority",
+        "expired acceptance rejected",
+        "above tolerance needs escalation",
+        "planned mitigation is not acceptance"
+      ],
+      "execution_boundary": "Actual official schema validation andoriginal semantic/fixture-approval checks in memory. Syntheticdata,nonewinstallation,network,files,accounts orinfrastructure.",
+      "model_limits": "Noempiricalriskestimate,authenticatedactor,durableapproval,concurrency,tailrisk,scenario-overlapdetection orproductionGRCservice. Currency/horizon/single-event assumptions original;notNISTmandates."
+    }
+  },
+  "answered_checks": 64,
+  "limitations": [
+    "Two commercial catalogsHTTP403;OReilly/Udemy oldmetadata unverified. No paidinteriors,practicequestions,trials,checkout orcourse-quality claim.",
+    "Independenthumanreview pending. Eightinfrastructureactivities andthreeoriginalreasoningscenarios proposed;noidentity/network/cloud/incident/recoveryinfrastructureexecuted.",
+    "23localchecks useactualjsonschema4.26.0 withunchangedNISTschema plusoriginalquality/approvalrules;trustedactor/owner/date/tolerancefixturesnotauthenticators ordurableapproval.",
+    "Single-eventannualUSDnegative-lossmodel is original andlimited;noempiricalestimates,control-effectivenessvalidation,tailrisk,scenario-overlapdetection,concurrency orproductionGRCclaim.",
+    "15pageoutlinefullyread/3pagesvisuallyinspected;AIintro/CISSP9-11andselectedNISTsections only. IR8286r1actual78pagesbutnotentirepublicationread;noallstandards/module/legal audit.",
+    "LinkedInmetadata/headings andallcliptimings inspected;notallindividualtitles substantivelyread. Creatorhubpubliclinks only,novideoruntime/revisionverified.",
+    "Noindividualexperienceapproval,regionalprice,booking,coursecompletion oractualexamquestions assessed. Catalogcompletionthresholdnotexamresultorcredential.",
+    "FiveGitHubguides anddisablednotificationpilot untouched;noexternalmessages,service/auth/loggingchanges,installation ornewpermissions."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Repository/site gates and 23 actual local schema/quality/fixture-policy checks in memory. No network, file writes, accounts, installations or infrastructure. Trusted actor/ownership/date/tolerance fixtures; not authenticated or durable approval, an empirical risk estimate or production GRC.",
+    "passed": 23,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "7a9dc0a69c80ad47185ec1b0362a4bc660e4f1c415c896ea96e132002e723b32",
+    "python_version": "3.13.14",
+    "jsonschema_version": "4.26.0",
+    "execution_stdout": "[\"valid original row\", \"required owner field\", \"number is not a numeric string\", \"boolean is not a number\", \"response enumeration\", \"response must be nonempty\", \"responses must be unique\", \"percentage over 100: schema passes, local rules reject\", \"negative loss: schema passes, local rules reject\", \"empty owner: schema passes, local rules reject\", \"incorrect exposure: schema passes, local rules reject\", \"unknown status: schema passes, local rules reject\", \"positive-risk response needs a different model: schema passes, local rules reject\", \"unexpected field is permitted by official schema\", \"non-finite Python number rejected locally\", \"duplicate risk ID rejected at collection boundary\", \"two distinct valid IDs pass local collection checks\", \"authorized acceptance at tolerance\", \"analyst cannot self-approve\", \"forged owner field does not change trusted authority\", \"expired acceptance rejected\", \"above tolerance needs escalation\", \"planned mitigation is not acceptance\"]\n23 local risk-register checks passed",
+    "results": [
+      "valid original row",
+      "required owner field",
+      "number is not a numeric string",
+      "boolean is not a number",
+      "response enumeration",
+      "response must be nonempty",
+      "responses must be unique",
+      "percentage over 100: schema passes, local rules reject",
+      "negative loss: schema passes, local rules reject",
+      "empty owner: schema passes, local rules reject",
+      "incorrect exposure: schema passes, local rules reject",
+      "unknown status: schema passes, local rules reject",
+      "positive-risk response needs a different model: schema passes, local rules reject",
+      "unexpected field is permitted by official schema",
+      "non-finite Python number rejected locally",
+      "duplicate risk ID rejected at collection boundary",
+      "two distinct valid IDs pass local collection checks",
+      "authorized acceptance at tolerance",
+      "analyst cannot self-approve",
+      "forged owner field does not change trusted authority",
+      "expired acceptance rejected",
+      "above tolerance needs escalation",
+      "planned mitigation is not acceptance"
+    ],
+    "model_limits": "Noempiricalriskestimate,authenticatedactor,durableapproval,concurrency,tailrisk,scenario-overlapdetection orproductionGRCservice. Currency/horizon/single-event assumptions original;notNISTmandates.",
+    "learning_catalog_consistency": "passed"
+  },
+  "archived_prior_baselines": {
+    "objectives": {
+      "path": "data/objective-snapshots/cissp-2026-09-02-official-objectives.txt",
+      "sha256": "4b2491ad3b07a5d582a38e6c8dd3afd87e4861e26e2cadb58a67fc0bb9d8edb3"
+    },
+    "status": {
+      "path": "data/objective-snapshots/cissp-2026-09-02-official-status.json",
+      "sha256": "23e68c286cfe23ccdb87f7fa56266e4d8966c81971825ea5858e73770fafe78b"
+    },
+    "historical_audit_paths_updated": 1,
+    "reason": "Only testing-center label changed; all62 numbered objectives andeight weights unchanged. Complete15page PDF reviewed,including visual inspection of pages3/7/11. Current experience-waiver policy reviewed separately."
+  },
+  "objective_baseline_acceptance": {
+    "changed": [
+      "CISSP"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "CISSP",
+        "title": "Certified Information Systems Security Professional",
+        "url": "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline",
+        "guide_path": "guides/CISSP-isc2-certified-information-systems-security-professional.md",
+        "snapshot_path": "data\\objective-snapshots\\cissp-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\cissp-official-status.json",
+        "previous_sha256": "4b2491ad3b07a5d582a38e6c8dd3afd87e4861e26e2cadb58a67fc0bb9d8edb3",
+        "current_sha256": "6a66cbffa4cbd4c4a75f7a09f831886f52335b6020dc54ff7cb2da5a9544a22c",
+        "previous_status_sha256": "23e68c286cfe23ccdb87f7fa56266e4d8966c81971825ea5858e73770fafe78b",
+        "current_status_sha256": "8101c568ba7eede41190dc3ed10d301d61cd699d060e8f7afa5ef556b8358bbd",
+        "official_status": {
+          "skills_versions": [
+            "Effective Date: April 15, 2024",
+            "Length of exam: 3 hours",
+            "Number of items: 100 - 150",
+            "Item format: Multiple choice and advanced item types",
+            "Passing grade: 700 out of 1000 points",
+            "Exam language availability: Chinese, English, German, Japanese, Spanish",
+            "Testing center: ISC2 Authorized PPC and PVTC Select Pearson Testing Centers",
+            "Candidates must have a minimum of five years cumulative, full-time experience in two or more of the eight domains of the current CISSP Exam Outline. Earning a post-secondary degree (bachelors or masters) in computer science, Information Technology (IT) or related fields may satisfy up to one year of the required experience or an additional credential from the ISC2 approved list may satisfy up to one year of the required experience. Only one year of experience can be waived. Part-time work and internships may also count towards the experience requirement."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ]
+  },
+  "post_acceptance_monitor": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "CISSP",
+        "title": "Certified Information Systems Security Professional",
+        "url": "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline",
+        "guide_path": "guides/CISSP-isc2-certified-information-systems-security-professional.md",
+        "snapshot_path": "data\\objective-snapshots\\cissp-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\cissp-official-status.json",
+        "previous_sha256": "6a66cbffa4cbd4c4a75f7a09f831886f52335b6020dc54ff7cb2da5a9544a22c",
+        "current_sha256": "6a66cbffa4cbd4c4a75f7a09f831886f52335b6020dc54ff7cb2da5a9544a22c",
+        "previous_status_sha256": "8101c568ba7eede41190dc3ed10d301d61cd699d060e8f7afa5ef556b8358bbd",
+        "current_status_sha256": "8101c568ba7eede41190dc3ed10d301d61cd699d060e8f7afa5ef556b8358bbd",
+        "official_status": {
+          "skills_versions": [
+            "Effective Date: April 15, 2024",
+            "Length of exam: 3 hours",
+            "Number of items: 100 - 150",
+            "Item format: Multiple choice and advanced item types",
+            "Passing grade: 700 out of 1000 points",
+            "Exam language availability: Chinese, English, German, Japanese, Spanish",
+            "Testing center: ISC2 Authorized PPC and PVTC Select Pearson Testing Centers",
+            "Candidates must have a minimum of five years cumulative, full-time experience in two or more of the eight domains of the current CISSP Exam Outline. Earning a post-secondary degree (bachelors or masters) in computer science, Information Technology (IT) or related fields may satisfy up to one year of the required experience or an additional credential from the ISC2 approved list may satisfy up to one year of the required experience. Only one year of experience can be waived. Part-time work and internships may also count towards the experience requirement."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "actual_pdf_receipts": [
+    {
+      "id": "isc2-ai-exam-guidance",
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+      "checked_at": "2026-09-29T12:59:46.729538+00:00",
+      "health": {
+        "id": "isc2-ai-exam-guidance",
+        "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+        "checked_at": "2026-09-29T12:59:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+      "sha256": "69cd0cfa50fac68a60370f812f0ce5f6f33b1a861eac66b4c66e2e410fbb0741",
+      "bytes": 506895,
+      "pdf_pages": 29,
+      "text_characters": 70743
+    },
+    {
+      "id": "nist-sp800-61r3-pdf",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "checked_at": "2026-09-29T12:59:49.723514+00:00",
+      "health": {
+        "id": "nist-sp800-61r3-pdf",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "checked_at": "2026-09-29T12:59:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "sha256": "e5593d6bb85daecec7e8d9549400c7b3473bcc3f06e469c82218073afa7fba2d",
+      "bytes": 1040566,
+      "pdf_pages": 48,
+      "text_characters": 107538
+    },
+    {
+      "id": "nist-800-207",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "checked_at": "2026-09-29T12:59:49.269882+00:00",
+      "health": {
+        "id": "nist-800-207",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "checked_at": "2026-09-29T12:59:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "sha256": "0290d6ece24874287316f4bf430fef770aa4ec08a2227c8f2c1e5b2ff975e03d",
+      "bytes": 966908,
+      "pdf_pages": 59,
+      "text_characters": 156827
+    },
+    {
+      "id": "nist-800-88r2",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "checked_at": "2026-09-29T12:59:51.054963+00:00",
+      "health": {
+        "id": "nist-800-88r2",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+        "checked_at": "2026-09-29T12:59:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "sha256": "39bb805c72723ed74f08e5806cd8463ca2554a62abb4f97b9d19c0398a8a7c55",
+      "bytes": 983677,
+      "pdf_pages": 48,
+      "text_characters": 112553
+    },
+    {
+      "id": "isc2-cissp-outline-2024-pdf",
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/CISSP-Exam-Outline-April-2024-English.pdf",
+      "checked_at": "2026-09-29T12:59:51.564165+00:00",
+      "health": {
+        "id": "isc2-cissp-outline-2024-pdf",
+        "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/CISSP-Exam-Outline-April-2024-English.pdf",
+        "checked_at": "2026-09-29T12:59:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/CISSP-Exam-Outline-April-2024-English.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/CISSP-Exam-Outline-April-2024-English.pdf",
+      "sha256": "16e798ee6f88506e64bca83c48d232aa321d5345640500277dbf8f96beeed6fb",
+      "bytes": 372152,
+      "pdf_pages": 15,
+      "text_characters": 22158
+    },
+    {
+      "id": "nist-ir8286r1-pdf",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8286r1.pdf",
+      "checked_at": "2026-09-29T12:59:55.363822+00:00",
+      "health": {
+        "id": "nist-ir8286r1-pdf",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8286r1.pdf",
+        "checked_at": "2026-09-29T12:59:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8286r1.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8286r1.pdf",
+      "sha256": "1b20de63eced97a8b57e8f39af611ad4fa785084e01ea62511e4e2accdd685ed",
+      "bytes": 2028837,
+      "pdf_pages": 78,
+      "text_characters": 206591
+    }
+  ],
+  "pdf_reading_boundary": "CISSP outline all 15 pages; pages 3/7/11 visually inspected. AI introduction and CISSP printed 9-11. NIST selected sections per source notes; not full standards. IR8286r1 selected executive summary, appetite/tolerance/process, analysis, prioritization, response and roll-up context.",
+  "visual_inspection": {
+    "source_id": "isc2-cissp-outline-2024-pdf",
+    "pages_one_based": [
+      3,
+      7,
+      11
+    ],
+    "result": "Confirmed CAT/weights and multi-column architecture/assessment topics. PDF retains Pearson VUE; canonical web mapping preserved."
+  },
+  "public_objective_groups": [
+    {
+      "title": "Domain 1: Security and Risk Management",
+      "objectives": [
+        "1.1 - Understand, adhere to, and promote professional ethics\nISC2 Code of Professional Ethics\nOrganizational code of ethics",
+        "1.2 - Understand and apply security concepts\nConfidentiality, integrity, and availability, authenticity, and nonrepudiation (5 Pillars of Information Security)",
+        "1.3 - Evaluate and apply security governance principles\nAlignment of the security function to business strategy, goals, mission, and objectives\nOrganizational processes (e.g., acquisitions, divestitures, governance committees)\nOrganizational roles and responsibilities\nSecurity control frameworks (e.g., International Organization for Standardization (ISO), National Institute of Standards and Technology (NIST), Control Objectives for Information and Related Technology (COBIT), Sherwood Applied Business Security Architecture (SABSA), Payment Card Industry (PCI), Federal Risk and Authorization Management Program (FedRAMP))\nDue care/due diligence",
+        "1.4 - Understand legal, regulatory, and compliance issues that pertain to information security in a holistic context\nCybercrimes and data breaches\nLicensing and Intellectual Property requirements\nImport/export controls\nTransborder data flow\nIssues related to privacy (e.g., General Data Protection Regulation (GDPR), California Consumer Privacy Act, Personal Information Protection Law, Protection of Personal Information Act)\nContractual, legal, industry standards, and regulatory requirements",
+        "1.5 - Understand requirements for investigation types (i.e., administrative, criminal, civil, regulatory, industry standards)",
+        "1.6 - Develop, document, and implement security policy, standards, procedures, and guidelines",
+        "1.7 - Identify, analyze, assess, prioritize, and implement Business Continuity (BC) requirements\nBusiness impact analysis (BIA)\nExternal dependencies",
+        "1.8 - Contribute to and enforce personnel security policies and procedures\nCandidate screening and hiring\nEmployment agreements and policy driven requirements\nOnboarding, transfers, and termination processes\nVendor, consultant, and contractor agreements and controls",
+        "1.9 - Understand and apply risk management concepts\nThreat and vulnerability identification\nRisk analysis, assessment, and scope\nRisk response and treatment (e.g., cybersecurity insurance)\nApplicable types of controls (e.g., preventive, detection, corrective)\nControl assessments (e.g., security and privacy)\nContinuous monitoring and measurement\nReporting (e.g., internal, external)\nContinuous improvement (e.g., risk maturity modeling)\nRisk frameworks (e.g., International Organization for Standardization (ISO), National Institute of Standards and Technology (NIST), Control Objectives for Information and Related Technology (COBIT), Sherwood Applied Business Security Architecture (SABSA), Payment Card Industry (PCI))",
+        "1.10 - Understand and apply threat modeling concepts and methodologies",
+        "1.11 - Apply Supply Chain Risk Management (SCRM) concepts\nRisks associated with the acquisition of products and services from suppliers and providers (e.g., product tampering, counterfeits, implants)\nRisk mitigations (e.g., third-party assessment and monitoring, minimum security requirements, service level requirements, silicon root of trust, physically unclonable function, software bill of materials)",
+        "1.12 - Establish and maintain a security awareness, education, and training program\nMethods and techniques to increase awareness and training (e.g., social engineering, phishing, security champions, gamification)\nPeriodic content reviews to include emerging technologies and trends (e.g., cryptocurrency, artificial intelligence (AI), blockchain)\nProgram effectiveness evaluation"
+      ]
+    },
+    {
+      "title": "Domain 2: Asset Security",
+      "objectives": [
+        "2.1 - Identify and classify information and assets\nData classification\nAsset Classification",
+        "2.2 - Establish information and asset handling requirements",
+        "2.3 - Provision information and assets securely\nInformation and asset ownership\nAsset inventory (e.g., tangible, intangible)\nAsset management",
+        "2.4 - Manage data lifecycle\nData roles (i.e., owners, controllers, custodians, processors, users/subjects)\nData collection\nData location\nData maintenance\nData retention\nData remanence\nData destruction",
+        "2.5 - Ensure appropriate asset retention (e.g., End of Life (EOL), End of Support)",
+        "2.6 - Determine data security controls and compliance requirements\nData states (e.g., in use, in transit, at rest)\nScoping and tailoring\nStandards selection\nData protection methods (e.g., Digital Rights Management (DRM), Data Loss Prevention (DLP), Cloud Access Security Broker (CASB))"
+      ]
+    },
+    {
+      "title": "Domain 3: Security Architecture and Engineering",
+      "objectives": [
+        "3.1 - Research, implement and manage engineering processes using secure design principles\nThreat modeling\nLeast privilege\nDefense in depth\nSecure defaults\nFail securely\nSegregation of Duties (SoD)\nKeep it simple and small\nZero trust or trust but verify\nPrivacy by design\nShared responsibility\nSecure access service edge",
+        "3.2 - Understand the fundamental concepts of security models (e.g., Biba, Star Model, Bell-LaPadula)",
+        "3.3 - Select controls based upon systems security requirements",
+        "3.4 - Understand security capabilities of Information Systems (IS) (e.g., memory protection, Trusted Platform Module (TPM), encryption/decryption)",
+        "3.5 - Assess and mitigate the vulnerabilities of security architectures, designs, and solution elements\nClient-based systems\nServer-based systems\nDatabase systems\nCryptographic systems\nIndustrial Control Systems (ICS)\nCloud-based systems (e.g., Software as a Service (SaaS), Infrastructure as a Service (IaaS), Platform as a Service (PaaS))\nDistributed systems\nInternet of Things (IoT)\nMicroservices (e.g., application programming interface (API))\nContainerization\nServerless\nEmbedded systems\nHigh-Performance Computing systems\nEdge computing systems\nVirtualized systems",
+        "3.6 - Select and determine cryptographic solutions\nCryptographic life cycle (e.g., keys, algorithm selection)\nCryptographic methods (e.g., symmetric, asymmetric, elliptic curves, quantum)\nPublic key infrastructure (PKI) (e.g., quantum key distribution)",
+        "3.7 - Understand methods of cryptanalytic attacks\nBrute force\nCiphertext only\nKnown plaintext\nFrequency analysis\nChosen ciphertext\nImplementation attacks\nSide-channel\nFault injection\nTiming\nMan-in-the-Middle (MITM)\nPass the hash\nKerberos exploitation\nRansomware",
+        "3.8 - Apply security principles to site and facility design",
+        "3.9 - Design site and facility security controls\nWiring closets/intermediate distribution facilities\nServer rooms/data centers\nMedia storage facilities\nEvidence storage\nRestricted and work area security\nUtilities and Heating, Ventilation, and Air Conditioning (HVAC)\nEnvironmental issues (e.g., natural disasters, man-made)\nFire prevention, detection, and suppression\nPower (e.g., redundant, backup)",
+        "3.10 - Manage the information system lifecycle\nStakeholders needs and requirements\nRequirements analysis\nArchitectural design\nDevelopment /implementation\nIntegration\nVerification and validation\nTransition/deployment\nOperations and maintenance/sustainment\nRetirement/disposal"
+      ]
+    },
+    {
+      "title": "Domain 4: Communication and Network Security",
+      "objectives": [
+        "4.1 - Apply secure design principles in network architectures\nOpen System Interconnection (OSI) and Transmission Control Protocol/Internet Protocol (TCP/IP) models\nInternet Protocol (IP) version 4 and 6 (IPv6) (e.g., unicast, broadcast, multicast, anycast)\nSecure protocols (e.g., Internet Protocol Security (IPSec), Secure Shell (SSH), Secure Sockets Layer (SSL)/ Transport Layer Security (TLS))\nImplications of multilayer protocols\nConverged protocols (e.g., Internet Small Computer Systems Interface (iSCSI), Voice over Internet Protocol (VoIP), InfiniBand over Ethernet, Compute Express Link)\nTransport architecture (e.g., topology, data/control/management plane, cut-through/store-and-forward)\nPerformance metrics (e.g., bandwidth, latency, jitter, throughput, signal-to-noise ratio)\nTraffic flows (e.g., north-south, east-west)\nPhysical segmentation (e.g., in-band, out-of-band, air-gapped)\nLogical segmentation (e.g., virtual local area networks (VLANs), virtual private networks (VPNs), virtual routing and forwarding, virtual domain)\nMicro-segmentation (e.g., network overlays/encapsulation; distributed firewalls, routers, intrusion detection system (IDS)/intrusion prevention system (IPS), zero trust)\nEdge networks (e.g., ingress/egress, peering)\nWireless networks (e.g., Bluetooth, Wi-Fi, Zigbee, satellite)\nCellular/mobile networks (e.g., 4G, 5G)\nContent distribution networks (CDN)\nSoftware defined networks (SDN), (e.g., application programming interface (API), Software-Defined Wide- Area Network, network functions virtualization)\nVirtual Private Cloud (VPC)\nMonitoring and management (e.g., network observability, traffic flow/shaping, capacity management, fault detection and handling)",
+        "4.2 - Secure network components\nOperation of infrastructure (e.g., redundant power, warranty, support)\nTransmission media (e.g., physical security of media, signal propagation quality)\nNetwork Access Control (NAC) systems (e.g., physical, and virtual solutions)\nEndpoint security (e.g., host-based)",
+        "4.3 - Implement secure communication channels according to design\nVoice, video, and collaboration (e.g., conferencing, Zoom rooms)\nRemote access (e.g., network administrative functions)\nData communications (e.g., backhaul networks, satellite)\nThird-party connectivity (e.g., telecom providers, hardware support)"
+      ]
+    },
+    {
+      "title": "Domain 5: Identity and Access Management (IAM)",
+      "objectives": [
+        "5.1 - Control physical and logical access to assets\nInformation\nSystems\nDevices\nFacilities\nApplications\nServices",
+        "5.2 - Design identification and authentication strategy (e.g., people, devices, and services)\nGroups and Roles\nAuthentication, Authorization and Accounting (AAA) (e.g., multi-factor authentication (MFA), password-less authentication)\nSession management\nRegistration, proofing, and establishment of identity\nFederated Identity Management (FIM)\nCredential management systems (e.g., Password vault)\nSingle sign-on (SSO)\nJust-In-Time",
+        "5.3 - Federated identity with a third-party service\nOn-premise\nCloud\nHybrid",
+        "5.4 - Implement and manage authorization mechanisms\nRole-based access control (RBAC)\nRule based access control\nMandatory access control (MAC)\nDiscretionary access control (DAC)\nAttribute-based access control (ABAC)\nRisk based access control\nAccess policy enforcement (e.g., policy decision point, policy enforcement point)",
+        "5.5 - Manage the identity and access provisioning lifecycle\nAccount access review (e.g., user, system, service)\nProvisioning and deprovisioning (e.g., on /off boarding and transfers)\nRole definition and transition (e.g., people assigned to new roles)\nPrivilege escalation (e.g., use of sudo, auditing its use)\nService accounts management",
+        "5.6 - Implement authentication systems"
+      ]
+    },
+    {
+      "title": "Domain 6: Security Assessment and Testing",
+      "objectives": [
+        "6.1 - Design and validate assessment, test, and audit strategies\nInternal (e.g., within organization control)\nExternal (e.g., outside organization control)\nThird-party (e.g., outside of enterprise control)\nLocation (e.g., on-premises, cloud, hybrid)",
+        "6.2 - Conduct security control testing\nVulnerability assessment\nPenetration testing (e.g., red, blue, and/or purple team exercises)\nLog reviews\nSynthetic transactions/benchmarks\nCode review and testing\nMisuse case testing\nCoverage analysis\nInterface testing (e.g., user interface, network interface, application programming interface (API))\nBreach attack simulations\nCompliance checks",
+        "6.3 - Collect security process data (e.g., technical and administrative)\nAccount management\nManagement review and approval\nKey performance and risk indicators\nBackup verification data\nTraining and awareness\nDisaster Recovery (DR) and Business Continuity (BC)",
+        "6.4 - Analyze test output and generate report\nRemediation\nException handling\nEthical disclosure",
+        "6.5 - Conduct or facilitate security audits\nInternal (e.g., within organization control)\nExternal (e.g., outside organization control)\nThird-party (e.g., outside of enterprise control)\nLocation (e.g., on-premises, cloud, hybrid)"
+      ]
+    },
+    {
+      "title": "Domain 7: Security Operations",
+      "objectives": [
+        "7.1 - Understand and comply with investigations\nEvidence collection and handling\nReporting and documentation\nInvestigative techniques\nDigital forensics tools, tactics, and procedures\nArtifacts (e.g., data, computer, network, mobile device)",
+        "7.2 - Conduct logging and monitoring activities\nIntrusion detection and prevention (IDPS)\nSecurity Information and Event Management (SIEM)\nContinuous monitoring and tuning\nEgress monitoring\nLog management\nThreat intelligence (e.g., threat feeds, threat hunting)\nUser and Entity Behavior Analytics (UEBA)",
+        "7.3 - Perform Configuration Management (CM) (e.g., provisioning, baselining, automation)",
+        "7.4 - Apply foundational security operations concepts\nNeed-to-know/least privilege\nSeparation of Duties (SoD) and responsibilities\nPrivileged account management\nJob rotation\nService-level agreements (SLA)",
+        "7.5 - Apply resource protection\nMedia management\nMedia protection techniques\nData at rest/data in transit",
+        "7.6 - Conduct incident management\nDetection\nResponse\nMitigation\nReporting\nRecovery\nRemediation\nLessons learned",
+        "7.7 - Operate and maintain detection and preventative measures\nFirewalls (e.g., next generation, web application, network)\nIntrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS)\nWhitelisting/blacklisting\nThird-party provided security services\nSandboxing\nHoneypots/honeynets\nAnti-malware\nMachine learning and Artificial Intelligence (AI) based tools",
+        "7.8 - Implement and support patch and vulnerability management",
+        "7.9 - Understand and participate in change management processes",
+        "7.10 - Implement recovery strategies\nBackup storage strategies (e.g., cloud storage, onsite, offsite)\nRecovery site strategies (e.g., cold vs. hot, resource capacity agreements)\nMultiple processing sites\nSystem resilience, high availability (HA), Quality of Service (QoS), and fault tolerance",
+        "7.11 - Implement Disaster Recovery (DR) processes\nResponse\nPersonnel\nCommunications (e.g., methods)\nAssessment\nRestoration\nTraining and awareness\nLessons learned",
+        "7.12 - Test Disaster Recovery Plans (DRP)\nRead-through/tabletop\nWalkthrough\nSimulation\nParallel\nFull interruption\nCommunications (e.g., stakeholders, test status, regulators)",
+        "7.13 - Participate in Business Continuity (BC) planning and exercises",
+        "7.14 - Implement and manage physical security\nPerimeter security controls\nInternal security controls",
+        "7.15 - Address personnel safety and security concerns\nTravel\nSecurity training and awareness (e.g., insider threat, social media impacts, two-factor authentication (2FA) fatigue)\nEmergency management\nDuress"
+      ]
+    },
+    {
+      "title": "Domain 8: Software Development Security",
+      "objectives": [
+        "8.1 - Understand and integrate security in the Software Development Life Cycle (SDLC)\nDevelopment methodologies (e.g., Agile, Waterfall, DevOps, DevSecOps, Scaled Agile Framework)\nMaturity models (e.g., Capability Maturity Model (CMM), Software Assurance Maturity Model (SAMM))\nOperation and maintenance\nChange management\nIntegrated Product Team",
+        "8.2 - Identify and apply security controls in software development ecosystems\nProgramming languages\nLibraries\nTool sets\nIntegrated Development Environment\nRuntime\nContinuous Integration and Continuous Delivery (CI/CD)\nSoftware configuration management (CM)\nCode repositories\nApplication security testing (e.g., static application security testing (SAST), dynamic application security testing (DAST), software composition analysis, Interactive Application Security Test (IAST))",
+        "8.3 - Assess the effectiveness of software security\nAuditing and logging of changes\nRisk analysis and mitigation",
+        "8.4 - Assess security impact of acquired software\nCommercial-off-the-shelf (COTS)\nOpen source\nThird-party\nManaged services (e.g., enterprise applications)\nCloud services (e.g., Software as a Service (SaaS), Infrastructure as a Service (IaaS), Platform as a Service (PaaS))",
+        "8.5 - Define and apply secure coding guidelines and standards\nSecurity weaknesses and vulnerabilities at the source-code level\nSecurity of application programming interfaces (API)\nSecure coding practices\nSoftware-defined security"
+      ]
+    }
+  ],
+  "source_alias_receipts": [
+    {
+      "id": "nist-csf-2",
+      "url": "https://www.nist.gov/cyberframework",
+      "checked_at": "2026-09-29T12:53:47.444862+00:00",
+      "health": {
+        "id": "nist-csf-2",
+        "url": "https://www.nist.gov/cyberframework",
+        "checked_at": "2026-09-29T12:53:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nist.gov/cyberframework",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Cybersecurity Framework",
+        "canonical_url": "https://www.nist.gov/cyberframework",
+        "duration_signals": [],
+        "signal_fingerprint": "7ece8c5ce2c87131c09b887c735e648ca2d6d75ec5c85b3dd2a99cc4a072d0bc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nist.gov/cyberframework",
+      "sha256": "fd148d7e70443a250d019ad2cf16a6913431dcdcbc1bd0a749bc9c17d8f8a644",
+      "text_characters": 5335
+    }
+  ],
+  "source_alias_boundary": "Original nist-csf-2 and selected registered nist-cybersecurity-framework-2 share one URL. Main review counts it once; both receipts retained, historical registry entries unchanged.",
+  "catalog_metadata_observations": {
+    "official_adaptive_domain_count": 8,
+    "official_adaptive_course_language": "English",
+    "official_adaptive_course_days": [
+      90,
+      180
+    ],
+    "official_adaptive_access_start": "purchase date",
+    "official_course_completion_percent": 60,
+    "prior_official_20_to_40_hour_range": "not reverified",
+    "linkedin_header": "21h27m",
+    "linkedin_clip_count": 365,
+    "linkedin_total_seconds": 77220,
+    "linkedin_listed_date": "2024-04-25",
+    "linkedin_quiz_count": 51,
+    "linkedin_boundary": "Public metadata/selected contents/all headings and parsed clip timings, no paid lessons or questions.",
+    "pluralsight_course_count": 16,
+    "pluralsight_card_minutes": [
+      189,
+      111,
+      118,
+      95,
+      127,
+      61,
+      102,
+      174,
+      84,
+      91,
+      99,
+      188,
+      119,
+      43,
+      6,
+      20
+    ],
+    "pluralsight_course_minutes": 1627,
+    "pluralsight_lab_minutes": [
+      75,
+      60,
+      60,
+      105,
+      60,
+      135,
+      60
+    ],
+    "pluralsight_combined_minutes": 2182,
+    "pluralsight_header_hours": 37,
+    "creator_video_runtime_and_revision": "not verified",
+    "required_three_year_cpe": 120,
+    "required_group_a_cpe": 90,
+    "remaining_group_a_or_b": 30,
+    "suggested_annual_cpe": 40,
+    "waiver_approved_list_effective": "2026-04-01",
+    "waiver_article_date": "2026-05-18",
+    "commercial_catalogs_blocked": 2
+  },
+  "catalog_findings": [
+    {
+      "source_id": "isc2-cissp-adaptive-training",
+      "observation": "60% completion; English 90/180-day access. Older fixed runtime unverified.",
+      "resolution": "Separate course completion, CAT result and credential requirements."
+    },
+    {
+      "source_id": "linkedin-isc2-cissp-2024-cert-prep",
+      "observation": "365 clips total 21h27m, April 2024 metadata; 51 quizzes.",
+      "resolution": "Retain public timing evidence and close current policy/technology gaps separately."
+    },
+    {
+      "source_id": "pluralsight-isc2-cissp-2024-path",
+      "observation": "Course/lab cards total 36h22m versus 37-hour header.",
+      "resolution": "Explain card totals and supplemental-course dates; no paid alignment or quality claim."
+    },
+    {
+      "source_id": "oreilly-isc2-cissp-study-guide-10e",
+      "observation": "HTTP403; prior metadata unverified.",
+      "resolution": "Disclose access boundary; no current runtime/alignment endorsement."
+    },
+    {
+      "source_id": "udemy-andrew-ramdayal-cissp",
+      "observation": "HTTP403; prior metadata unverified.",
+      "resolution": "Disclose access boundary; no current runtime/alignment endorsement."
+    }
+  ],
+  "official_schema_evidence": {
+    "risk_register_source_id": "nist-ir8286-risk-register-schema",
+    "downloaded_bytes_sha256": "ff85e9c917bce3e7646b974c7b8b62ba9fcf5d90d12906e6f46be4d3653b2e69",
+    "schema_unchanged_in_public_example": true,
+    "risk_detail_source_id": "nist-ir8286-risk-detail-schema",
+    "risk_detail_metaschema_valid": true,
+    "risk_detail_observation": "currentRiskAnalysis required without property definition; plannedRiskResponse defined but not required. Valid schema, not a syntax error.",
+    "initial_fetch_boundary": "Generic text/html Accept produced406; application/json retry succeeded; actual JSON receipt retained."
+  }
+}

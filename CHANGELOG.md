@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [CISSP deep review](docs/research/2026-09-29-cissp-deep-review.md): Mapped 62 objectives, updated waiver and risk guidance, and added 23 executed local checks with 64 answered prompts.
+
 - September 29, 2026: [CCSP deep review](docs/research/2026-09-29-ccsp-deep-review.md): Mapped38 current objectives, reconciled FIPS/CSA transitions and catalogs, and added24 executed encryption checks with48 answers.
 
 - September 29, 2026: [SSCP deep review](docs/research/2026-09-29-sscp-deep-review.md): Mapped36 current objectives, reconciled PDF/course inconsistencies, and added11 executed TLS cases with48 original answers.
