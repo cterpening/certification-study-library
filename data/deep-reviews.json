@@ -5,6 +5,29 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "CKA",
+      "reviewed_on": "2026-09-29",
+      "guide_sha256": "88eab9b2c54dc6ee8c0f6e6ca7e41afd20d7f18111b030cf5da0ccdb68c46ca5",
+      "objective_count": 27,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-29-cka-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-29-cka-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "Same-context AI review; independent human review pending.",
+        "All eight complete cluster labs remain proposed. Docker Linux-engine named pipe unavailable; earlier native Linux startup blocker deferred for tomorrow. No services started/restarted.",
+        "22 actual local generation/rendering checks, including three intended error cases and a wrong selector that still renders; exact public code matched by SHA. No API requests or runtime validation.",
+        "Owned temporary manifests and empty kubeconfig removed. No existing kubeconfig/credentials read, no image pulled, no remote cluster contacted or changed.",
+        "No kubeadm/HA/etcd restore, RBAC/admission/operator, controllers/HPA/PDB, CNI/policy/DNS/Gateway, CSI/storage or workload traffic lab executed.",
+        "Official CKA source stillv1.35 despitev1.37release. September23–October21alignment watch is approximate and not announced exam migration. Recheck before scheduling.",
+        "Some rendered HTML documentation fetches failed or timed out; authoritative upstream release-1.35 Markdown sources were fetched/read instead. Failed exploratory attempts retained separately, not described as successful reads.",
+        "Current Gateway APImain and etcd3.6 documentation are operational references with installedversion compatibility limits. No1.37features adopted as exam requirements.",
+        "Public learning metadata only; OReilly/Udemyblocked and inherited runtimes unverified. No paid interiors,providerlabs,simulatortasks or recalledexamcontent accessed."
+      ]
+    },
+    {
       "exam_code": "LFCS",
       "reviewed_on": "2026-09-29",
       "guide_sha256": "fb24da5844f2d1a028d11efc88a4353270a80cf11717ce34937b1e4fe93571b8",

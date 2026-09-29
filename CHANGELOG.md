@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [CKA deep review](docs/research/2026-09-29-cka-deep-review.md): 27competencies;22actual kubectl/Kustomize checks;EndpointSlice/PDB corrections;Gateway/storage/recovery distinctions;46answers and eight proposed cluster labs;current catalog and retainedv1.35watch.
+
 - September 29, 2026: [LFCS deep review](docs/research/2026-09-29-lfcs-deep-review.md): 34 competencies mapped; original OpenSSL/TLS exercises passed 38 checks and six loopback handshakes; service/resize/identity boundaries clarified, 46 answers and eight proposed labs strengthened; native Linux blocker deferred.
 
 - September 29, 2026: [LFCA deep review](docs/research/2026-09-29-lfca-deep-review.md): 22 competencies mapped; original Git/Bash exercises passed 35 checks; package trust, service state, permissions and project/licensing teaching strengthened; 46 answers and eight proposed labs; native Linux blocker deferred.

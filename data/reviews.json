@@ -6857,24 +6857,70 @@
       "notes": "Mapped all 34 public competencies and retained unchanged objective/lifecycle snapshots. Added exact OpenSSL and Python examples with 38 executed local checks and six loopback TLS handshakes, clarified service/timer/VM state, certificate validation, version-specific filesystem resize, route/SSH/ACL/LDAP evidence, strengthened 46 answers and eight proposed labs, and corrected current catalog metadata. Native Linux runtime validation remains deferred. See docs/research/2026-09-29-lfcs-deep-review.md"
     },
     {
-      "id":"cka-2026-09-06-source-validation",
-      "exam_code":"CKA",
-      "guide_path":"guides/CKA-certified-kubernetes-administrator.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-06",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/cka-official-objectives.txt",
-      "blueprint_snapshot_sha256":"e4b196b215d9a8a74203f309fa7b755633fe99955e638e541b3a6eac147d2857",
-      "objective_coverage":[
-        {"objective_group":"Cluster Architecture, Installation & Configuration (25%)","guide_sections":["Section 1","Integrated scenario 2","Labs 1–3 and 8"]},
-        {"objective_group":"Workloads & Scheduling (15%)","guide_sections":["Section 2","Integrated scenario 1","Labs 4, 7–8"]},
-        {"objective_group":"Services & Networking (20%)","guide_sections":["Section 3","Integrated scenario 1","Labs 5, 7–8"]},
-        {"objective_group":"Storage (10%)","guide_sections":["Section 4","Integrated scenario 3","Labs 6–8"]},
-        {"objective_group":"Troubleshooting (30%)","guide_sections":["Section 5","All integrated scenarios","All labs"]}
+      "id": "cka-2026-09-06-source-validation",
+      "exam_code": "CKA",
+      "guide_path": "guides/CKA-certified-kubernetes-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/cka-official-objectives.txt",
+      "blueprint_snapshot_sha256": "e4b196b215d9a8a74203f309fa7b755633fe99955e638e541b3a6eac147d2857",
+      "objective_coverage": [
+        {
+          "objective_group": "Cluster Architecture, Installation & Configuration (25%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenario 2",
+            "Labs 1–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Workloads & Scheduling (15%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenario 1",
+            "Labs 4, 7–8"
+          ]
+        },
+        {
+          "objective_group": "Services & Networking (20%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenario 1",
+            "Labs 5, 7–8"
+          ]
+        },
+        {
+          "objective_group": "Storage (10%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenario 3",
+            "Labs 6–8"
+          ]
+        },
+        {
+          "objective_group": "Troubleshooting (30%)",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "All labs"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":10,"reachable":8,"access_blocked":2,"missing_or_error":0},
-      "notes":"All five current Kubernetes v1.35 domains are mapped through reconciliation, packet/storage paths and an evidence-led troubleshooting ladder, with three scenarios, eight safe labs and 42 original checks. All ten guide URLs are cataloged: eight reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The August 26 v1.37 release creates a September 23–October 21 recheck window without moving the live v1.35 baseline, and the retired ingress-nginx controller is explicitly distinguished from the stable Ingress API objective. No proprietary simulator tasks, course labs or recalled exam tasks are used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 28,
+        "reachable": 26,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Mapped all27 public competencies against the live page and actual three-page v1.35 PDF; retained unchanged monitor snapshots. Added an exact original kubectl/Kustomize exercise with22 executed local checks, corrected EndpointSlice and PDB/rollout simplifications, expanded RBAC/configuration/HPA/Gateway/storage/recovery distinctions, strengthened46 answers and eight proposed cluster labs, and refreshed public catalog evidence. Live cluster validation remains deferred. See docs/research/2026-09-29-cka-deep-review.md"
     },
     {
       "id":"ckad-2026-09-06-source-validation",

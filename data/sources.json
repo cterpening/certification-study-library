@@ -3,6 +3,272 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "cka135-curriculum-pdf",
+      "title": "CNCF CKA v1.35 curriculum PDF",
+      "url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKA_Curriculum_v1.35.pdf",
+      "publisher": "CNCF",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKA deep review: Actual169029byte three-page PDF downloaded, SHA/page/text receipt retained and full outline read;27competencies match livepage after typography/order normalization. GitHub file viewer itself was not treated as PDF body. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-kustomize-source",
+      "title": "Kubernetes 1.35 Kustomize object management documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/manage-kubernetes-objects/kustomization.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKA deep review: Read generator references/content hashes, transformations and patch examples; original local exercise actually executed with bundledKustomize5.7.1. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-rbac-source",
+      "title": "Kubernetes 1.35 RBAC documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/reference/access-authn-authz/rbac.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-deployment-source",
+      "title": "Kubernetes 1.35 Deployment rollout documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/controllers/deployment.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-disruptions-source",
+      "title": "Kubernetes 1.35 disruptions and budgets documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/pods/disruptions.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-pdb-task-source",
+      "title": "Kubernetes 1.35 disruption budget rounding documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/run-application/configure-pdb.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-endpointslices-source",
+      "title": "Kubernetes 1.35 EndpointSlices documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/services-networking/endpoint-slices.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-network-policies-source",
+      "title": "Kubernetes 1.35 NetworkPolicy documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/services-networking/network-policies.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-configmap-source",
+      "title": "Kubernetes 1.35 ConfigMap consumption documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/configuration/configmap.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-persistent-volumes-source",
+      "title": "Kubernetes 1.35 persistent volume lifecycle documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/storage/persistent-volumes.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-autoscaling-source",
+      "title": "Kubernetes 1.35 HPA behavior documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKA deep review: Read ratio,requests,missing/not-ready metrics,multiple metric errors and stabilization; original numerical estimate is illustrative,not a controller test. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-version-skew-source",
+      "title": "Kubernetes 1.35 version skew policy documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/releases/version-skew-policy.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-upgrade-source",
+      "title": "Kubernetes 1.35 kubeadm upgrade documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-api-concepts-source",
+      "title": "Kubernetes 1.35 API dry-run and validation documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/reference/using-api/api-concepts.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-kubectl-windows-source",
+      "title": "Kubernetes 1.35 Windows kubectl installation documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/tools/install-kubectl-windows.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKA deep review: Targeted download,checksum and client version instructions read;v1.35.9 downloaded to owned maintenance tools, checksumverified before running. No globalPATH/configuration change. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gateway-cross-namespace-source",
+      "title": "Gateway API cross-namespace documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/main/site/content/en/guides/user-guides/multiple-ns.md",
+      "publisher": "Kubernetes SIG Network",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKA deep review: Read explicit parent/listener attachment agreement and allowedRoutes namespace-selector example. Do not adopt broad default-namespace wording from this guide; only explicit permission case is taught. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gateway-referencegrant-source",
+      "title": "Gateway API ReferenceGrant documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/main/site/content/en/reference/api-types/referencegrant.md",
+      "publisher": "Kubernetes SIG Network",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKA deep review: Read cross-namespace backend permission,grant placement and distinct Route-to-Gateway handshake. Currentmain APIversion labels are not assumed installed; no APImanifest applied. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "etcd36-recovery-source",
+      "title": "etcd 3.6 recovery documentation source",
+      "url": "https://raw.githubusercontent.com/etcd-io/website/main/content/en/docs/v3.6/op-guide/recovery.md",
+      "publisher": "etcd project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKA deep review: Targeted snapshot integrity,newlogicalidentity,revisionbump/markcompacted read; no fixed examplebump copied,norestore,noinferenceexametcd3.6. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-storageclass-source",
+      "title": "Kubernetes 1.35 StorageClass documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/storage/storage-classes.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKA"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "systemd-service",
       "title": "systemd service unit semantics",
       "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.service.html",

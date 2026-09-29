@@ -1355,6 +1355,8 @@ The review maps every current domain to one connected observe → change the cor
 
 ## CKA coverage record
 
+The September 29 [deep review](research/2026-09-29-cka-deep-review.md) maps 27 detailed objectives. Mapped all27 public competencies against the live page and actual three-page v1.35 PDF; retained unchanged monitor snapshots. Added an exact original kubectl/Kustomize exercise with22 executed local checks, corrected EndpointSlice and PDB/rollout simplifications, expanded RBAC/configuration/HPA/Gateway/storage/recovery distinctions, strengthened46 answers and eight proposed cluster labs, and refreshed public catalog evidence. Live cluster validation remains deferred. Current guide citations: 28 registered, 26 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 6, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Kubernetes v1.35 and five weighted domains—Cluster Architecture, Installation & Configuration (25%), Workloads & Scheduling (15%), Services & Networking (20%), Storage (10%), and Troubleshooting (30%)

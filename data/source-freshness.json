@@ -4,6 +4,253 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-cka-deep-review",
+      "title": "CKA complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CKA"
+      ],
+      "results": [
+        {
+          "exam_code": "CKA",
+          "vendor_id": "linux-foundation",
+          "guide_path": "guides/CKA-certified-kubernetes-administrator.md",
+          "baseline_sha256": "394bba634479e95773f3d1c31ddccb234d8c211309eaba36ae51a9f9f236230b",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Full live outline and actual CNCFv1.35PDF read:27competencies, canonical-order groups8/5/6/3/5 and weights25/15/20/10/30. Official page still v1.35, two-hour performance exam,two-year validity,12-month eligibility,one retake,two36-hour simulator activations. Both monitor hashes unchanged; no accepted baseline rewrite. No announced transition date; unsupported scheduled flag corrected while watch window retained."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Targeted release-1.35 upstream documentation source read for Kustomize,RBAC,Deployment,PDBs,EndpointSlices,NetworkPolicy,ConfigMaps,HPA,PV/StorageClass,skew,kubeadm,API dry-run and Windows client install. Targeted current Gateway API and etcd3.6 source read with version limits. Exact public local exercise passed22checks using checksum-verified kubectlv1.35.9/Kustomizev5.7.1."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "August26,2026 Kubernetes1.37 release publication reviewed for date/watch only; no new features imported into v1.35exam. Four-to-eight-week alignment policy remains approximate,not an announced transition. Full November11,2025 ingress-nginx retirement notice read: controller maintenance endsMarch2026,not retirement of Ingress API/objective."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Public LFS25835h/17chapters/hostedbrowserlabs and GatewayAPI/Helm/Kustomize/CRD scope read; optional self-managedcloud costs qualified. Pluralsight15courses/6labs/30h and mixed2023–26dates read. KodeKloud26.12videohours,17modules306lessons,April10,2026v1.35labupdate,September2025videoupdate and Gateway/Helm/Kustomize outline read. OReilly/Udemy blocked; inherited times explicitly unverified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Correct ready-only EndpointSlice and readiness-removes-address claims; separate PDB eviction from rollout strategy and percentage rounding. Add actual generated-reference and negative rendering evidence; client/server dry-run limits; namespace grants, refresh modes,HPA metric errors,Gateway attachment/reference permission,RWO/RWOP,delayed-binding/nodeName,and etcd revision/cache boundary. All46answers inline,8completeclusterlabs proposed,Places to learn final."
+            }
+          },
+          "findings": [
+            {
+              "id": "cka-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Watch window is not an announced exam-version transition",
+              "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Livepage continues to name v1.35; no concrete exam switch date observed.",
+              "recommendation": "Retain version/recheck window but change unsupported scheduled flag to none-announced.",
+              "disposition": "applied",
+              "source_id": "lf-cka-blueprint",
+              "resolution": "Retain version/recheck window but change unsupported scheduled flag to none-announced."
+            },
+            {
+              "id": "cka-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Unready addresses may remain in EndpointSlices",
+              "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/services-networking/endpoint-slices.md",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Conditions distinguish readiness,serving and termination; an address listing alone does not establish eligibility.",
+              "recommendation": "Correct readiness and endpoint answers, service diagnosis and integrated scenario; add conditional interpretation.",
+              "disposition": "applied",
+              "source_id": "k8s135-endpointslices-source",
+              "resolution": "Correct readiness and endpoint answers, service diagnosis and integrated scenario; add conditional interpretation."
+            },
+            {
+              "id": "cka-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "PDB does not constrain Deployment rolling updates",
+              "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/pods/disruptions.md",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Budgets govern cooperating eviction, while workload strategy controls rollout; rollout unavailability still counts.",
+              "recommendation": "Remove PDB as a direct rollout-blocker inference, add lifecycle distinction and stronger lab/answer.",
+              "disposition": "applied",
+              "source_id": "k8s135-disruptions-source",
+              "resolution": "Remove PDB as a direct rollout-blocker inference, add lifecycle distinction and stronger lab/answer."
+            },
+            {
+              "id": "cka-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "PDB percentage rounding differs from Deployment maxUnavailable",
+              "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/run-application/configure-pdb.md",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "PDB percentage fields round up, while Deployment maxUnavailable rounds down.",
+              "recommendation": "Explain original seven-replica30percent case and real-status/capacity limits.",
+              "disposition": "applied",
+              "source_id": "k8s135-pdb-task-source",
+              "resolution": "Explain original seven-replica30percent case and real-status/capacity limits."
+            },
+            {
+              "id": "cka-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Successful rendering cannot establish a working Service",
+              "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/manage-kubernetes-objects/kustomization.md",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Generators change names/references; rendering is local composition without API/runtime checks.",
+              "recommendation": "Publish and execute original22-check exercise, including a selector error that successfully renders.",
+              "disposition": "applied",
+              "source_id": "k8s135-kustomize-source",
+              "resolution": "Publish and execute original22-check exercise, including a selector error that successfully renders."
+            },
+            {
+              "id": "cka-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Configuration consumption determines refresh behavior",
+              "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/configuration/configmap.md",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Projected files eventually update; env needs restart and subPath does not receive ConfigMap updates.",
+              "recommendation": "Teach API bytes/mount/application distinction and proposed refresh lab.",
+              "disposition": "applied",
+              "source_id": "k8s135-configmap-source",
+              "resolution": "Teach API bytes/mount/application distinction and proposed refresh lab."
+            },
+            {
+              "id": "cka-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Backend reference permission differs from Gateway route attachment",
+              "url": "https://raw.githubusercontent.com/kubernetes-sigs/gateway-api/main/site/content/en/reference/api-types/referencegrant.md",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Cross-namespace backend references need destination-side permission distinct from listener attachment.",
+              "recommendation": "Teach both relationships and independently failed/allowed live-lab evidence, with installed API version limits.",
+              "disposition": "applied",
+              "source_id": "gateway-referencegrant-source",
+              "resolution": "Teach both relationships and independently failed/allowed live-lab evidence, with installed API version limits."
+            },
+            {
+              "id": "cka-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "RWO does not mean one Pod",
+              "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/storage/persistent-volumes.md",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "RWO allows single-node use including multiple Pods; supported RWOP constrains one Pod.",
+              "recommendation": "Add scope distinction and answer without claiming application locking or runtime validation.",
+              "disposition": "applied",
+              "source_id": "k8s135-persistent-volumes-source",
+              "resolution": "Add scope distinction and answer without claiming application locking or runtime validation."
+            },
+            {
+              "id": "cka-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Bypassing scheduler can strand delayed binding",
+              "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/storage/storage-classes.md",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "nodeName bypasses scheduler participation required by WaitForFirstConsumer.",
+              "recommendation": "Add scheduling/claim diagnosis and inherited-versus-manual reclaim-policy evidence.",
+              "disposition": "applied",
+              "source_id": "k8s135-storageclass-source",
+              "resolution": "Add scheduling/claim diagnosis and inherited-versus-manual reclaim-policy evidence."
+            },
+            {
+              "id": "cka-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Older etcd revisions can confuse Kubernetes watchers after restore",
+              "url": "https://raw.githubusercontent.com/etcd-io/website/main/content/en/docs/v3.6/op-guide/recovery.md",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The recovery guide recommends revision bump plus mark-compacted for Kubernetes caches.",
+              "recommendation": "Add version-specific recovery planning, no universal bump constant and no executed restore claim.",
+              "disposition": "applied",
+              "source_id": "etcd36-recovery-source",
+              "resolution": "Add version-specific recovery planning, no universal bump constant and no executed restore claim."
+            }
+          ],
+          "notes": "Mapped all27 public competencies against the live page and actual three-page v1.35 PDF; retained unchanged monitor snapshots. Added an exact original kubectl/Kustomize exercise with22 executed local checks, corrected EndpointSlice and PDB/rollout simplifications, expanded RBAC/configuration/HPA/Gateway/storage/recovery distinctions, strengthened46 answers and eight proposed cluster labs, and refreshed public catalog evidence. Live cluster validation remains deferred. Same-context AI review; human review pending. See docs/research/2026-09-29-cka-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 10,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-lfcs-deep-review",
       "title": "LFCS complete guide and learning-content review",
       "rubric_version": 1,

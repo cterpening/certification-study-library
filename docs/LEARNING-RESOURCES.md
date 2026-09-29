@@ -3266,15 +3266,23 @@ No current MeasureUp or Whizlabs LFCS product was independently verified. Avoid 
 
 ### Certified Kubernetes Administrator (CKA)
 
-- Official scope: [CKA certification page](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/) and [public CNCF v1.35 curriculum](https://github.com/cncf/curriculum/blob/master/CKA_Curriculum_v1.35.pdf) (**3–5 hours mapping/review**) plus the included Killer.sh simulator (**8–14 selected hours estimated**); verify the live Kubernetes version immediately before use
-- Versioned reference: [Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) (**20–35 selected reading/lab hours**), not a cover-to-cover course
-- Official course: [Kubernetes Fundamentals (LFS258)](https://training.linuxfoundation.org/training/kubernetes-fundamentals/) (**35 listed course hours plus 35–70 independent lab hours**)
-- Modular route: [Pluralsight CKA path](https://www.pluralsight.com/paths/certified-kubernetes-administrator) (**30 listed hours plus 30–60 lab hours**), 15 courses, six labs and a practice exam
-- Lab-first route: [KodeKloud CKA](https://kodekloud.com/courses/cka-certification-course-certified-kubernetes-administrator/) (**24.98 listed video hours plus browser labs/mock exams; allow 45–75 hours total**)
-- Compact current route: [O'Reilly CKA in-depth guidance and practice](https://www.oreilly.com/videos/certified-kubernetes-administrator/0642572014448/) (**8 hours 7 minutes listed plus 20–40 lab hours**), published March 2026
-- Same lab-first course through a marketplace: [Udemy/KodeKloud CKA with Practice Tests](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/) (**25 hours 57 minutes listed plus browser labs; allow 45–75 hours total**); choose this or KodeKloud, not both
+Resource details from the [CKA guide](../guides/CKA-certified-kubernetes-administrator.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Choose one current structured route, build and break disposable clusters, and map every gap to the official v1.35 page and versioned documentation. Quarterly exam alignment makes older Ingress-only, pre-Gateway API, pre-current-admission and outdated kubeadm coverage a version-check task. Reject recalled questions and simulator-task reproduction.
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official CKA page](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/) and [public CNCF v1.35 curriculum](https://github.com/cncf/curriculum/blob/master/CKA_Curriculum_v1.35.pdf) | Public; exam paid | 3–5 hours mapping/review, plus 8–14 selected simulator hours |
+| [Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) | Public | 20–35 selected reading/lab hours; use as reference, not a cover-to-cover course |
+| [Kubernetes v1.37 release](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/) | Public release watch; use only to trigger the exam-version recheck | 20–40 minutes |
+| [Ingress NGINX retirement notice](https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/) | Public operational warning; distinguishes the controller from the stable Ingress API | 15–25 minutes |
+| [Linux Foundation Kubernetes Fundamentals (LFS258)](https://training.linuxfoundation.org/training/kubernetes-fundamentals/) | Paid | 35 listed course hours, 17 chapters and hosted browser labs; add 35–70 independent lab hours |
+| [Pluralsight CKA path](https://www.pluralsight.com/paths/certified-kubernetes-administrator) | Subscription/trial | 30 listed hours, 15 courses, 6 labs and practice exam; add 30–60 lab hours |
+| [KodeKloud CKA](https://kodekloud.com/courses/cka-certification-course-certified-kubernetes-administrator/) | Subscription/free preview | 26.12 listed video hours (17 modules, 306 lessons; lab update April 10, 2026 names v1.35) plus browser labs and mock exams; allow 45–75 hours total |
+| [O'Reilly CKA in-depth guidance and practice](https://www.oreilly.com/videos/certified-kubernetes-administrator/0642572014448/) | Subscription/trial | Earlier listing: 8 hours 7 minutes; blocked during this review, not reverified; add 20–40 proposed lab hours |
+| [Udemy/KodeKloud CKA with Practice Tests](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/) | Paid; price varies | Earlier listing: 25 hours 57 minutes; blocked during this review, not reverified; allow 45–75 proposed total hours |
+
+LFS258 now advertises hosted browser labs; optional self-managed cloud infrastructure may still cost money. Its outline explicitly includes Helm/Kustomize and CRDs, and its overview includes Gateway API. Pluralsight mixes older courses with 2026 additions; path totals alone do not establish every lesson's v1.35 alignment. KodeKloud lists Gateway API, Helm and Kustomize, with a separate September 2025 video update. Public metadata was reviewed; paid lessons, mock questions and provider labs were not accessed. All added independent practice times are planning estimates.
+
+This is not a complete list and is not meant to be consumed in full. Choose one current structured route, use the official v1.35 objectives and documentation as the source of truth, build and break disposable clusters, and use the included simulator late for diagnosis. Check every course against the live CKA version, especially when it still teaches older Ingress-only, pre-Gateway API, pre-current-admission, or outdated kubeadm behavior. Avoid recalled tasks and question dumps; this is a performance exam.
 
 ### Certified Kubernetes Application Developer (CKAD)
 
