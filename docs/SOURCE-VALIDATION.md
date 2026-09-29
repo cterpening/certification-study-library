@@ -1407,6 +1407,8 @@ The review follows the launched August PDF rather than the older ~17/16/16/17/17
 
 ## GOOGLE-GENERATIVE-AI-LEADER coverage record
 
+The September 29 [deep review](research/2026-09-29-google-generative-ai-leader-deep-review.md) maps 61 detailed objectives. Mapped 61 published considerations under 15 numbered objectives, preserving three repeated data bullets. Actual five-page exam PDF and eleven-page study-workbook text read; both monitor hashes unchanged. Added a hash-matched Python worksheet with 27 local checks, strengthened account/retention, identity/context, tool-validation and model-lifecycle distinctions, 48 answered checks and eight proposed labs. Public catalogs refreshed; cloud/model enforcement and provider labs remain unexecuted. Current guide citations: 29 registered, 27 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: four domains—Fundamentals of gen AI (30%), Google Cloud's gen AI offerings (35%), Techniques to improve gen AI model output (20%), and Business strategies for a successful gen AI solution (15%)

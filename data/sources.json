@@ -3,6 +3,202 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "google-soft-prompt-tuning",
+      "title": "Guiding frozen language models with learned soft prompts",
+      "url": "https://research.google/blog/guiding-frozen-language-models-with-learned-soft-prompts/",
+      "publisher": "Google",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Full February10,2022 Brian Lester/Noah Constant article read. Adopt conceptual soft-vector training distinction only; old T5/GPT benchmark numbers and optimization settings not adopted. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "google-gemini-developer-terms",
+      "title": "Gemini API Additional Terms of Service",
+      "url": "https://ai.google.dev/gemini-api/terms",
+      "publisher": "Google",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Read effectiveMarch23,2026 service scope, unpaid/paid definitions, data-use conditions, regional exception and paid abuse-log passage. No legal conclusion about a particular account or contract. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "google-gemini-developer-zdr",
+      "title": "Zero data retention in the Gemini Developer API",
+      "url": "https://ai.google.dev/gemini-api/docs/zdr",
+      "publisher": "Google",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Full short documentation read. Training restriction is distinct from abuse logs, Search/Maps grounding, conversation state, files and caches. No API state changed. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-agent-platform-zdr",
+      "title": "Agent Platform and zero data retention",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Read training restriction and targeted retention sections for abuse logging, advanced features, Search/Maps, request-response logs, stored interactions and agent products. No universal retention duration asserted. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "google-gemini-structured-output",
+      "title": "Gemini structured outputs",
+      "url": "https://ai.google.dev/gemini-api/docs/structured-output",
+      "publisher": "Google",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Read schema support, structured-output/function-call distinction, value validation and limitations; extensive code examples were not fully reviewed or executed. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "google-gemini-function-calling",
+      "title": "Gemini function calling",
+      "url": "https://ai.google.dev/gemini-api/docs/function-calling",
+      "publisher": "Google",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Read mechanism describing application execution responsibility and best-practice validation/authentication/error handling. Large language-specific code samples not comprehensively reviewed or run. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-notebook-api",
+      "title": "Create and manage Gemini Notebook Enterprise notebooks by API",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Read preview status, prerequisites, project-scoped create/management overview and response identity. No notebook created or sharing behavior tested. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-search-acl",
+      "title": "Custom data source access controls for Gemini Enterprise",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/docs/identity",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Read overview and Cloud Storage ACL metadata/store-creation setup; BigQuery source scope observed. No import, query or permission test against Google Cloud. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-search-identity-provider",
+      "title": "Configure Gemini Enterprise identity provider",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Read identity/provider choices, ingestion/federation differences, mapping and limitations requiring creation-time ACL and store recreation for changed provider settings. No identity setting changed. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-model-registry",
+      "title": "Introduction to Model Registry",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-registry/introduction",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Complete short overview read: central version lifecycle, aliases, evaluation and deployment; distinguish discovery/Garden from owned Registry. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-model-deployment",
+      "title": "Deploy generative models",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deploy/overview",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Read managed-API versus endpoint, tuned models in Registry rather than Garden, imported-model update boundary and deployment context. No model downloaded or deployed. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-mlops-overview",
+      "title": "MLOps on Agent Platform",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/start/introduction-mlops",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Complete overview read: pipelines, managed training, metadata/experiments, Registry, features and drift/skew monitoring. No monitoring alert treated as measured task-accuracy loss. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "google-saif-introduction",
+      "title": "Introducing Google Secure AI Framework",
+      "url": "https://blog.google/innovation-and-ai/technology/safety-security/introducing-googles-secure-ai-framework/",
+      "publisher": "Google",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Full June8,2023 Royal Hansen/Phil Venables article read including six control elements. Linked PDFs were not read; historical product/standards announcements not treated as current availability. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "google-gemma-terms",
+      "title": "Gemma terms of use",
+      "url": "https://ai.google.dev/gemma/terms",
+      "publisher": "Google",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Read version-applicability notice and opening terms/distribution sections. Current page sends Gemma4 to a separate Apache license; only exact-version licensing boundary adopted, not universal family restrictions. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "gcp-storage-classes",
       "title": "Cloud Storage classes",
       "url": "https://docs.cloud.google.com/storage/docs/storage-classes",
@@ -81,10 +277,11 @@
       "source_type": "official-announcement",
       "access_model": "public",
       "supported_exams": [
-        "GOOGLE-CLOUD-DIGITAL-LEADER"
+        "GOOGLE-CLOUD-DIGITAL-LEADER",
+        "GOOGLE-GENERATIVE-AI-LEADER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Full April 22 blog read with authors/date. Adopt only app/platform separation and Vertex AI evolution; avoid treating marketing promises as measured controls. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Full April 22 blog read with authors/date. Adopt only app/platform separation and Vertex AI evolution; avoid treating marketing promises as measured controls. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Full article already read in preceding CDL review; same-session fetch healthy. Reuse app/platform naming context only, not marketing guarantees. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution."
     },
     {
       "id": "gcp-agent-platform-overview",
@@ -95,10 +292,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "GOOGLE-CLOUD-DIGITAL-LEADER"
+        "GOOGLE-CLOUD-DIGITAL-LEADER",
+        "GOOGLE-GENERATIVE-AI-LEADER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read complete overview, four lifecycle pillars and tools. No model counts or global capability claims adopted. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read complete overview, four lifecycle pillars and tools. No model counts or global capability claims adopted. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Full overview already read in preceding CDL review; current healthy fetch. Reuse developer lifecycle distinction without adopting model counts. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution."
     },
     {
       "id": "gcp-model-armor-overview",
@@ -109,10 +307,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "GOOGLE-CLOUD-DIGITAL-LEADER"
+        "GOOGLE-CLOUD-DIGITAL-LEADER",
+        "GOOGLE-GENERATIVE-AI-LEADER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read enforcement types, verdict/PEP responsibility, model refusal distinction and logging evidence; basic versus advanced inspection context. No prompt screening or runtime enforcement executed. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read enforcement types, verdict/PEP responsibility, model refusal distinction and logging evidence; basic versus advanced inspection context. No prompt screening or runtime enforcement executed. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Same-session targeted enforcement/PEP/model-refusal evidence already read; current healthy fetch. No actual filtering test or guaranteed prevention claim. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution."
     },
     {
       "id": "gcp-model-armor-integrations",
@@ -123,10 +322,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "GOOGLE-CLOUD-DIGITAL-LEADER"
+        "GOOGLE-CLOUD-DIGITAL-LEADER",
+        "GOOGLE-GENERATIVE-AI-LEADER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read modality differences and relevant app/platform/gateway integration coverage. No assumption that direct API modalities apply to all inline paths. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read modality differences and relevant app/platform/gateway integration coverage. No assumption that direct API modalities apply to all inline paths. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Same-session modality and integration coverage already read; current healthy fetch. Direct API support does not imply universal inline coverage. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution."
     },
     {
       "id": "gcp-ai-protection",
@@ -221,10 +421,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "GOOGLE-CLOUD-DIGITAL-LEADER"
+        "GOOGLE-CLOUD-DIGITAL-LEADER",
+        "GOOGLE-GENERATIVE-AI-LEADER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read overview, employee use, connected enterprise information and edition boundary. No paid edition or connector configured. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read overview, employee use, connected enterprise information and edition boundary. No paid edition or connector configured. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Overview and edition boundary already read in preceding CDL review; current healthy fetch. Reuse employee interface versus platform distinction. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution."
     },
     {
       "id": "gcp-spend-cap-budgets",
@@ -42754,10 +42955,32 @@
       "id":"google-gail-certification","title":"Generative AI Leader certification","url":"https://cloud.google.com/learn/certification/generative-ai-leader","publisher":"Google Cloud","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["GOOGLE-GENERATIVE-AI-LEADER"],"notes":"Canonical live high-level domains, delivery, renewal and preparation page; monitored by the Google Cloud certification adapter."
     },
     {
-      "id":"google-gail-exam-guide","title":"Generative AI Leader certification exam guide","url":"https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf","publisher":"Google Cloud","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["GOOGLE-GENERATIVE-AI-LEADER"],"notes":"Detailed five-page official four-domain objective baseline; the PDF exposes no visible launch/revision date."
+      "id": "google-gail-exam-guide",
+      "title": "Generative AI Leader certification exam guide",
+      "url": "https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf",
+      "publisher": "Google",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "notes": "Detailed five-page official four-domain objective baseline; the PDF exposes no visible launch/revision date. September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Actual five-page PDF fully read using layout extraction;61 enumerated considerations, including three repeated data bullets, mapped without silently changing the canonical monitor baseline. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"google-gail-study-guide","title":"Generative AI Leader certification exam study guide","url":"https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf","publisher":"Google Cloud","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["GOOGLE-GENERATIVE-AI-LEADER"],"notes":"Eleven-page official workbook using the current Agent Platform and Gemini Enterprise terminology."
+      "id": "google-gail-study-guide",
+      "title": "Generative AI Leader certification exam study guide",
+      "url": "https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf",
+      "publisher": "Google",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "notes": "Eleven-page official workbook using the current Agent Platform and Gemini Enterprise terminology. September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Actual eleven-page PDF full extracted text read. Pypdf reported malformed numeric graphics operands; no claim of independently inspecting all diagrams. Exam/workbook terminology differences preserved explicitly. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution."
     },
     {
       "id":"google-gail-skills-path","title":"Generative AI Leader Certification learning path","url":"https://www.skills.google/paths/1951","publisher":"Google Cloud","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["GOOGLE-GENERATIVE-AI-LEADER"],"notes":"Five-activity no-cost first-party path; Google estimates 7–8 hours. Account required and catalog details are volatile."

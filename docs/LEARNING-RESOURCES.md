@@ -2505,6 +2505,25 @@ The Google-authored Coursera outline explicitly includes agentic AI, AI Hypercom
 
 For focused follow-up, read the linked storage, IAM, Cloud Run, AI-security and billing documentation where each distinction is taught. Allow 2–3 additional hours for selected reading and the original worksheet; this is a planning estimate. No exact current Pluralsight path or MeasureUp product was selected during this review. Reject resources marketed as “actual questions,” dumps, or guaranteed replicas. Never copy proprietary question banks into notes. Use the official untimed sample questions and independently authored checks to understand reasoning.
 
+### GOOGLE-GENERATIVE-AI-LEADER — Generative AI Leader
+
+Resource details from the [GOOGLE-GENERATIVE-AI-LEADER guide](../guides/GOOGLE-GENERATIVE-AI-LEADER-generative-ai-leader.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list and is not meant to be consumed in full. Choose one current primary path, add the official guide/workbook and sample questions, and spend additional time on use-case, evaluation, agent-control and responsible-AI exercises. Provider estimates, catalogs, names and access terms change.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official exam guide](https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf), [study guide](https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf), and [sample questions](https://forms.gle/soztS7Q74AXBncATA) | Public, first-party | 3–5 hours with objective mapping and answer review |
+| [Google Skills Generative AI Leader path](https://www.skills.google/paths/1951) | Google account; public path confirms five activities and an update about two months earlier | Current durations/access details were not fully exposed; allow 10–14 hours as a study-planning estimate |
+| [Google Cloud Generative AI Leader Professional Certificate on Coursera](https://www.coursera.org/professional-certificates/generative-ai-for-leaders) | Coursera audit/subscription terms vary; first-party Google Cloud courses | Landing page says 8 hours, while five course cards total 20 hours (3/4/4/4/5). Treat these as different estimates; choose time based on activities completed |
+| [Pluralsight Generative AI Leader path](https://www.pluralsight.com/paths/google-cloud-generative-ai-leader-by-pluralsight) | Paid subscription; four courses, one lab and practice exam | Four course durations sum 5h44m plus a 30-minute lab (rounded path total: 6h). Public dates range December 2025–May 2026, with the lab dated August 11, 2026; add 5–10 hours of planned review |
+| [O'Reilly — GenAI on Google Cloud](https://www.oreilly.com/library/view/genai-on-google/9798341623842/) | Paid subscription/book; broader and more technical than the exam | Earlier 9h58m estimate **not reverified** because public access was blocked; allow 5–10 hours for selected practice and terminology mapping |
+| [Udemy / in28Minutes Generative AI Leader](https://www.udemy.com/course/google-cloud-certified-generative-ai-leader-certification/) | Paid marketplace course | Earlier 3h51m and August 2026 update **not reverified** because public access was blocked; allow 5–10 hours for exercises/review |
+
+No exact current MeasureUp product was found during this review. The Google-authored Coursera outline lists five courses and practical Gemini, NotebookLM and AI Studio activities; that is public metadata, not evidence of completed provider exercises. Pluralsight's four course titles follow the exam domains, but dates and a lab title alone do not establish full current-product alignment. The sample-form content was not exposed by the fetch, and no paid lessons or assessment questions were read.
+
+For focused technical gaps, use the linked documentation on data handling, access controls, model lifecycle and tool validation. Allow 2–3 additional hours for selected reading and the original worksheet; this is a planning estimate. Google's official sample resource and independently authored exercises can help locate learning gaps. Reject “actual questions,” copied exam material, or guaranteed replicas; use explanation-led assessment to locate a concept or decision gap.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

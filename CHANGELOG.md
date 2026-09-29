@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [GOOGLE-GENERATIVE-AI-LEADER deep review](docs/research/2026-09-29-google-generative-ai-leader-deep-review.md): 61 published considerations, 27 executed local checks, stronger data/identity/tool boundaries, 48 answers, eight proposed labs and current learning-resource evidence.
+
 - September 29, 2026: [GOOGLE-CLOUD-DIGITAL-LEADER deep review](docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md): 69 detailed considerations, 26 executed local checks, app/platform and billing-control corrections, 44 answers, eight proposed decision labs and refreshed public learning evidence.
 
 - September 29, 2026: [CKS deep review](docs/research/2026-09-29-cks-deep-review.md): 26 competencies; actual PDF reconciliation; 17 real signature checks and 12 audit-model checks; 46 answers and eight proposed cluster labs; refreshed public evidence.

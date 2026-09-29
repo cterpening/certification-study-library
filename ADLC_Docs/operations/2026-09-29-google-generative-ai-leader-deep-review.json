@@ -1,0 +1,2058 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "GOOGLE-GENERATIVE-AI-LEADER",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/GOOGLE-GENERATIVE-AI-LEADER-generative-ai-leader.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "15fcc517de31cace10aafa39dcf373c417cb9694192e25be7dad2e692c42fc86",
+  "guide_after_sha256": "e2e44698adb48d2fa2f7625ac1a8d7edc8a3817b8ff34b590eeb21435ae31b26",
+  "prior_records": {
+    "exam": {
+      "code": "GOOGLE-GENERATIVE-AI-LEADER",
+      "level": "beginner",
+      "vendor_id": "google-cloud",
+      "title": "Generative AI Leader",
+      "status": "active",
+      "study_guide_url": "https://cloud.google.com/learn/certification/generative-ai-leader",
+      "guide_path": "guides/GOOGLE-GENERATIVE-AI-LEADER-generative-ai-leader.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite or technical implementation experience is required. Develop conceptual AI, ML, foundation-model, data, prompting, grounding/RAG, agent/tool, evaluation, Google Cloud offering, secure/responsible AI, use-case portfolio, adoption, measurement and operating-governance fluency."
+    },
+    "review": {
+      "id": "google-generative-ai-leader-2026-09-02-source-validation",
+      "exam_code": "GOOGLE-GENERATIVE-AI-LEADER",
+      "guide_path": "guides/GOOGLE-GENERATIVE-AI-LEADER-generative-ai-leader.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/google-generative-ai-leader-official-objectives.txt",
+      "blueprint_snapshot_sha256": "d5154002a04c5a259a6d825a4ba3b84dcc9ee0e2fb075a012e510f17f641c324",
+      "objective_coverage": [
+        {
+          "objective_group": "Fundamentals of gen AI (~30%)",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Google Cloud's gen AI offerings (~35%)",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 2 and 4–6"
+          ]
+        },
+        {
+          "objective_group": "Techniques to improve gen AI model output (~20%)",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 3–5 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Business strategies for a successful gen AI solution (~15%)",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 1 and 5–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 10,
+        "reachable": 8,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All four current domains are mapped through business outcome, data/model/layer and offering selection, prompting/grounding/customization/evaluation, agent controls, secure/responsible governance, adoption and measured operations, with three scenarios, eight labs and 40 original checks. All ten URLs are cataloged: eight reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The 2026 Agent Platform terminology transition is explicit. No proprietary course material, question bank or recalled exam item is used."
+    },
+    "sources": [
+      {
+        "id": "google-gail-certification",
+        "title": "Generative AI Leader certification",
+        "url": "https://cloud.google.com/learn/certification/generative-ai-leader",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-GENERATIVE-AI-LEADER"
+        ],
+        "notes": "Canonical live high-level domains, delivery, renewal and preparation page; monitored by the Google Cloud certification adapter."
+      },
+      {
+        "id": "google-gail-exam-guide",
+        "title": "Generative AI Leader certification exam guide",
+        "url": "https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-GENERATIVE-AI-LEADER"
+        ],
+        "notes": "Detailed five-page official four-domain objective baseline; the PDF exposes no visible launch/revision date."
+      },
+      {
+        "id": "google-gail-study-guide",
+        "title": "Generative AI Leader certification exam study guide",
+        "url": "https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-GENERATIVE-AI-LEADER"
+        ],
+        "notes": "Eleven-page official workbook using the current Agent Platform and Gemini Enterprise terminology."
+      },
+      {
+        "id": "google-gail-skills-path",
+        "title": "Generative AI Leader Certification learning path",
+        "url": "https://www.skills.google/paths/1951",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-GENERATIVE-AI-LEADER"
+        ],
+        "notes": "Five-activity no-cost first-party path; Google estimates 7–8 hours. Account required and catalog details are volatile."
+      },
+      {
+        "id": "google-gail-sample-questions",
+        "title": "Generative AI Leader official sample questions",
+        "url": "https://forms.gle/soztS7Q74AXBncATA",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-GENERATIVE-AI-LEADER"
+        ],
+        "notes": "Official untimed and repeatable sample questions; not predictive of exam breadth, difficulty or result."
+      },
+      {
+        "id": "google-saif",
+        "title": "Secure AI Framework",
+        "url": "https://saif.google/",
+        "publisher": "Google",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-GENERATIVE-AI-LEADER"
+        ],
+        "notes": "First-party secure-AI lifecycle framework referenced by the current exam scope."
+      },
+      {
+        "id": "google-gail-coursera",
+        "title": "Generative AI Leader Professional Certificate",
+        "url": "https://www.coursera.org/professional-certificates/generative-ai-for-leaders",
+        "publisher": "Coursera / Google Cloud",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-GENERATIVE-AI-LEADER"
+        ],
+        "notes": "Five-course first-party path; program currently estimates eight hours although individual course cards total more. Audit/subscription terms vary."
+      },
+      {
+        "id": "google-gail-pluralsight",
+        "title": "Google Cloud Generative AI Leader by Pluralsight",
+        "url": "https://www.pluralsight.com/paths/google-cloud-generative-ai-leader-by-pluralsight",
+        "publisher": "Pluralsight / Joseph Lowery",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-GENERATIVE-AI-LEADER"
+        ],
+        "notes": "Four courses, one lab, six listed hours and a practice exam; includes an August 11, 2026 grounded Agent Platform lab."
+      },
+      {
+        "id": "google-gail-oreilly-genai",
+        "title": "GenAI on Google Cloud",
+        "url": "https://www.oreilly.com/library/view/genai-on-google/9798341623842/",
+        "publisher": "O'Reilly Media / Ayo Adedeji et al.",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-GENERATIVE-AI-LEADER"
+        ],
+        "notes": "January 2026 intermediate/advanced book, 320 pages and 9h58m provider estimate; broader and more technical than the exam and requires current product-name mapping."
+      },
+      {
+        "id": "google-gail-udemy-in28minutes",
+        "title": "Be a Generative AI Leader – Google Cloud Certification",
+        "url": "https://www.udemy.com/course/google-cloud-certified-generative-ai-leader-certification/",
+        "publisher": "Udemy / in28Minutes / Ranga Karanam",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-GENERATIVE-AI-LEADER"
+        ],
+        "notes": "3h51m, 85 lectures, updated August 2026; includes demos and quizzes and must still be mapped to the official guide."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "2fd00d1b3b4fe8ba21b248c054ea9904586716857359037703d9845d7d3fdae6",
+      "guide_sections": [
+        "1. Fundamentals of generative AI — about 30%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "585a8b87ba26f68f449e970ad53116379e6f264449528a98672a3538f1bb6536",
+      "guide_sections": [
+        "1. Fundamentals of generative AI — about 30%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "148a8730d017eb2579aef7af7d441971e1107a4a86fbf3ef80bd1cd277e12202",
+      "guide_sections": [
+        "1. Fundamentals of generative AI — about 30%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "20925f09e953194e895c8786dfcd2434385bcd139780e0593aea3b9ac89f880b",
+      "guide_sections": [
+        "1. Fundamentals of generative AI — about 30%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "7e16001808dacca1f80d3a6c15971f519e2f2481eaa95bcb2e56212c620854f3",
+      "guide_sections": [
+        "1. Fundamentals of generative AI — about 30%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "ade7fbe938635cfa88221bfcceee01df66f691bec09866d73ce9cab2a189d67d",
+      "guide_sections": [
+        "1. Fundamentals of generative AI — about 30%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "b361cb4c3d3e82273715a51c431da05e37c803edf8d9af97b6873a87da03ea0e",
+      "guide_sections": [
+        "1. Fundamentals of generative AI — about 30%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "9d976eae0fbb9a810a507ca1a31db082ce856deabc851c2967321c3a585bc4ae",
+      "guide_sections": [
+        "1. Fundamentals of generative AI — about 30%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "836e04717d7ad08d594eddfe28e755d7313c73df1c41ad0b3d821c53381c9d1b",
+      "guide_sections": [
+        "1. Fundamentals of generative AI — about 30%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "b361cb4c3d3e82273715a51c431da05e37c803edf8d9af97b6873a87da03ea0e",
+      "guide_sections": [
+        "1. Fundamentals of generative AI — about 30%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 11,
+      "objective_sha256": "9d976eae0fbb9a810a507ca1a31db082ce856deabc851c2967321c3a585bc4ae",
+      "guide_sections": [
+        "1. Fundamentals of generative AI — about 30%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 12,
+      "objective_sha256": "836e04717d7ad08d594eddfe28e755d7313c73df1c41ad0b3d821c53381c9d1b",
+      "guide_sections": [
+        "1. Fundamentals of generative AI — about 30%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 13,
+      "objective_sha256": "ce0cff719a94747617230dde819ab25812021d6b80c236bf0c6891c0d46e45be",
+      "guide_sections": [
+        "1. Fundamentals of generative AI — about 30%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 14,
+      "objective_sha256": "d17d2d78d76e6a6cd13048de225e107ac73de4aa5f8914e58a0cfaa9698c373e",
+      "guide_sections": [
+        "1. Fundamentals of generative AI — about 30%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 15,
+      "objective_sha256": "ab9bd7584a6270cdb048e09426138a817819e212d67801014df2cbea0b826faa",
+      "guide_sections": [
+        "1. Fundamentals of generative AI — about 30%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 16,
+      "objective_sha256": "279b44d2ab4b40c0fc132f8f3051293544cca91de9c8aa14f2cd29adb132b0ee",
+      "guide_sections": [
+        "1. Fundamentals of generative AI — about 30%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 17,
+      "objective_sha256": "98e33b0f3104fcf1b812ba2c679c0f15a94f583559b731d6580df2d8307d3edf",
+      "guide_sections": [
+        "1. Fundamentals of generative AI — about 30%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 18,
+      "objective_sha256": "f6ece80b88d6dfbd2f65dad5ccde8e5ec2a0d4dbfadc2fe87bdf58642f17e446",
+      "guide_sections": [
+        "1. Fundamentals of generative AI — about 30%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 19,
+      "objective_sha256": "67d5c7435efd8048b72ec16c4b6fe57405738ccb3351f828bc64885f7606fc4a",
+      "guide_sections": [
+        "1. Fundamentals of generative AI — about 30%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 20,
+      "objective_sha256": "58d6f29b0633706939d813a49923fd61c5767cbe0516c948d5d86e810a6d6097",
+      "guide_sections": [
+        "1. Fundamentals of generative AI — about 30%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 21,
+      "objective_sha256": "4fd53fa8ebc54ff7dcfc1177477661bbe24175e26e157514886bf05f40f42565",
+      "guide_sections": [
+        "1. Fundamentals of generative AI — about 30%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "c5c11ef2cd2aee1483cf8b31774f4ec5b360ad8a308fd755404b86aaf265b272",
+      "guide_sections": [
+        "2. Google Cloud's generative AI offerings — about 35%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "c400fab5abaf6ad402caf29152b122a38a24490f945e03611ecedbef562eb5f3",
+      "guide_sections": [
+        "2. Google Cloud's generative AI offerings — about 35%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "479894173609672a610f3bf71983392b482ed4dd8c37df80d2eb37bd953aae13",
+      "guide_sections": [
+        "2. Google Cloud's generative AI offerings — about 35%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "daf78160052bfb205030e70faff8eb09d1b6fe6bcf1c831c8e461a07219a04b8",
+      "guide_sections": [
+        "2. Google Cloud's generative AI offerings — about 35%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "65eaa2b136cef9875e60352019519caff9792fc50291d3e72a26a3ffcbd99344",
+      "guide_sections": [
+        "2. Google Cloud's generative AI offerings — about 35%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "a83064e3fa5de72f10192e4e19635c35fe7145302df586112e5a01891cd628f3",
+      "guide_sections": [
+        "2. Google Cloud's generative AI offerings — about 35%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "73ab915a7e90c9198234dd792d24c08a4a0733296113f237492512558527ff4b",
+      "guide_sections": [
+        "2. Google Cloud's generative AI offerings — about 35%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "a0bf7f575be91e34b7784124cc4e263cd2c8ec2b3204f389559c7f4ed319fc0a",
+      "guide_sections": [
+        "2. Google Cloud's generative AI offerings — about 35%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "197f385277bac44fa16792f1f38ff0b5f6e195171dd5b2f6b5ad9fb96d5cfdbd",
+      "guide_sections": [
+        "2. Google Cloud's generative AI offerings — about 35%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 10,
+      "objective_sha256": "0747e3c9b46d548f18ec9d9e1d4ee298bd60e627a1609d653f1a18119c8d6f00",
+      "guide_sections": [
+        "2. Google Cloud's generative AI offerings — about 35%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 11,
+      "objective_sha256": "fbcf8d06da788eecd0328bc7d716d70d9cf6a87a5bad3885c8580b0503cb56a5",
+      "guide_sections": [
+        "2. Google Cloud's generative AI offerings — about 35%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 12,
+      "objective_sha256": "f49d020eee250e17c0a57288070a0a9c07efa2c2eaff85a16ce6545cae847c85",
+      "guide_sections": [
+        "2. Google Cloud's generative AI offerings — about 35%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 13,
+      "objective_sha256": "9f16b2d6794d0d00bf0c481f693a263cd72dbc36c07f4fc380f9d7e372f236ee",
+      "guide_sections": [
+        "2. Google Cloud's generative AI offerings — about 35%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 14,
+      "objective_sha256": "93963b844cf770325f761f77778a790c71466238cfc838895aa7b8e32c37fa48",
+      "guide_sections": [
+        "2. Google Cloud's generative AI offerings — about 35%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 15,
+      "objective_sha256": "67a6e4df464e647eea613d58dbdeadf96a337636f09fe21da42979a02cafee45",
+      "guide_sections": [
+        "2. Google Cloud's generative AI offerings — about 35%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 16,
+      "objective_sha256": "dd18ae8db679c8cfa65faf05fd7db5c12e8de7fc249d38885ed8f8dfa2eb493e",
+      "guide_sections": [
+        "2. Google Cloud's generative AI offerings — about 35%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 17,
+      "objective_sha256": "89d478965ebe52c97c6ebef786a7cd687810b40f675d3c1d9d7742e6cc9bbade",
+      "guide_sections": [
+        "2. Google Cloud's generative AI offerings — about 35%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 18,
+      "objective_sha256": "0151253bd84acc0ff2bfc982ac50319372a12083352bac9c75bf821fda6948d5",
+      "guide_sections": [
+        "2. Google Cloud's generative AI offerings — about 35%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "2b54754e12ce34e9bf33aa46b0ed276cca0434ca94d86332b37b8785cb4af07d",
+      "guide_sections": [
+        "3. Techniques to improve model output — about 20%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "341f36ddd4a288d3448b57ee34a9b6b28d8649ad17736a78e3b15a8432eda8ac",
+      "guide_sections": [
+        "3. Techniques to improve model output — about 20%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "052bef33879686ad71f81178f42c701f45a74ab8f4033a35766dae0c56f99ef2",
+      "guide_sections": [
+        "3. Techniques to improve model output — about 20%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "cefae7d9b38e2ef085d8513cb168dd75840ab40fc3d26a177bbf4730872e413c",
+      "guide_sections": [
+        "3. Techniques to improve model output — about 20%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "a1443abbeead76434bbadba78948aeed95fc382cf167b7af5ea97cd1f5ecfe80",
+      "guide_sections": [
+        "3. Techniques to improve model output — about 20%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "1f1755b4d8a3c3ed55be1fa64e28d0911eb98431e143d7a4ae3274bd3b56849b",
+      "guide_sections": [
+        "3. Techniques to improve model output — about 20%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "3dca0aefe39250cbe4aad13d601aa32ffd8152795f3024f6cd125ac790f79135",
+      "guide_sections": [
+        "3. Techniques to improve model output — about 20%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "1174eba858b050c57fa76c5977f981508db1e6663afba35b484562e24546baf1",
+      "guide_sections": [
+        "3. Techniques to improve model output — about 20%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "743ff4096bfba33cd84eb60b930aa46794577f2ce33fd57c9e6afe7cffe47cfc",
+      "guide_sections": [
+        "3. Techniques to improve model output — about 20%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 10,
+      "objective_sha256": "c747a35918b2b8664e43c89449ca34ed7e3ee703b87f765fb2d35bd7f0e97442",
+      "guide_sections": [
+        "3. Techniques to improve model output — about 20%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "296d86cd6f818ba7df30c5041021bbaef1676c1ddc6ea001d1d8afc79c459880",
+      "guide_sections": [
+        "4. Business strategies for successful gen AI — about 15%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "490b90ea59482f09a9d003e59862c2f9881704dca01b7470d198b6e91df2112f",
+      "guide_sections": [
+        "4. Business strategies for successful gen AI — about 15%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "84d198ff40a7cd1637af185285b2bbbc252410320c664b89d5d720e195fc5794",
+      "guide_sections": [
+        "4. Business strategies for successful gen AI — about 15%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "7913fbd8decf59f56636d0b639b630982e72e35aa1282884c0c43ab52c6d0d39",
+      "guide_sections": [
+        "4. Business strategies for successful gen AI — about 15%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "69e0af39b80dec1a96083d1494f46c8c16faf3a91d2e6b4098ba6ed2a9574512",
+      "guide_sections": [
+        "4. Business strategies for successful gen AI — about 15%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "e7ee547db8ddc4a52b155f10c04c5946598fda7e69e19820cab1937f11ec16fb",
+      "guide_sections": [
+        "4. Business strategies for successful gen AI — about 15%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "3f27ba7e1fb1f95f42691586e703f629f6038c6c14fdcc6d1f668305e2810590",
+      "guide_sections": [
+        "4. Business strategies for successful gen AI — about 15%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "544468ed7acd07f0858709c1eb1c68d84212e65fbb548f548eb00ef082e709a7",
+      "guide_sections": [
+        "4. Business strategies for successful gen AI — about 15%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "9938f4e8b8ebdd638ae9fce7307f5c3e0b70758dc3b602c60b009e5c9aab9aa6",
+      "guide_sections": [
+        "4. Business strategies for successful gen AI — about 15%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 10,
+      "objective_sha256": "6b62433ed8b3d4d7da965332f18ff7b6b093fae18d7edbecc3d96af43c293c15",
+      "guide_sections": [
+        "4. Business strategies for successful gen AI — about 15%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 11,
+      "objective_sha256": "8edac508f228a4aedac31c58de9bf27fb7954df7f828b761a9b0472a0a123b85",
+      "guide_sections": [
+        "4. Business strategies for successful gen AI — about 15%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 12,
+      "objective_sha256": "94dc10973d893b2685f7a3ad1b75c14b08e7037cf0193410ed28c7e0207f01aa",
+      "guide_sections": [
+        "4. Business strategies for successful gen AI — about 15%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "GOOGLE-GENERATIVE-AI-LEADER",
+        "title": "Generative AI Leader",
+        "url": "https://cloud.google.com/learn/certification/generative-ai-leader",
+        "guide_path": "guides/GOOGLE-GENERATIVE-AI-LEADER-generative-ai-leader.md",
+        "snapshot_path": "data\\objective-snapshots\\google-generative-ai-leader-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\google-generative-ai-leader-official-status.json",
+        "previous_sha256": "d5154002a04c5a259a6d825a4ba3b84dcc9ee0e2fb075a012e510f17f641c324",
+        "current_sha256": "d5154002a04c5a259a6d825a4ba3b84dcc9ee0e2fb075a012e510f17f641c324",
+        "previous_status_sha256": "5f449f87aec102e1dc2daee169b81fa14a1ce6890c1a7e6bd011b1a2c52f0545",
+        "current_status_sha256": "5f449f87aec102e1dc2daee169b81fa14a1ce6890c1a7e6bd011b1a2c52f0545",
+        "official_status": {
+          "skills_versions": [
+            "Length: 90 minutes",
+            "Registration fee: $99 (plus tax where applicable)",
+            "Languages: English, Japanese, Spanish, Portuguese",
+            "Exam format: 50-60 multiple choice questions",
+            "Exam delivery method: Online-proctored or onsite-proctored",
+            "Validity period: 3 years",
+            "Prerequisites: None"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 29,
+    "reachable": 27,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "google-gail-certification",
+      "url": "https://cloud.google.com/learn/certification/generative-ai-leader",
+      "checked_at": "2026-09-29T06:57:10.575610+00:00",
+      "health": {
+        "id": "google-gail-certification",
+        "url": "https://cloud.google.com/learn/certification/generative-ai-leader",
+        "checked_at": "2026-09-29T06:57:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloud.google.com/learn/certification/generative-ai-leader",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Generative AI Leader | Learn | Google Cloud",
+        "canonical_url": "https://cloud.google.com/learn/certification/generative-ai-leader",
+        "duration_signals": [
+          "90 minutes"
+        ],
+        "signal_fingerprint": "188bc92f4efe7c1f367111e8820c128e25823b1cdccaae0374f7d201f5eed869",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cloud.google.com/learn/certification/generative-ai-leader",
+      "sha256": "e70a18e54d1f973ee3003774138b0ed9010653a14d4b891abbc9d83039cb5946",
+      "text_characters": 4056
+    },
+    {
+      "id": "google-gail-exam-guide",
+      "url": "https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf",
+      "checked_at": "2026-09-29T06:57:54.125594+00:00",
+      "health": {
+        "id": "google-gail-exam-guide",
+        "url": "https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf",
+        "checked_at": "2026-09-29T06:57:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf",
+      "sha256": "0c79729e3cd033407176fec9b8e91e39ff03f79bbe71a8ba60bd95b0f7b4806e",
+      "bytes": 197566,
+      "pdf_pages": 5,
+      "text_characters": 13002
+    },
+    {
+      "id": "google-gail-study-guide",
+      "url": "https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf",
+      "checked_at": "2026-09-29T06:57:57.317253+00:00",
+      "health": {
+        "id": "google-gail-study-guide",
+        "url": "https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf",
+        "checked_at": "2026-09-29T06:57:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf",
+      "sha256": "ebd3859220c3496e7afa08fe6e2e586cc00f99f16658e6a9cc616db59f3b6523",
+      "bytes": 2033252,
+      "pdf_pages": 11,
+      "text_characters": 24571
+    },
+    {
+      "id": "google-gail-skills-path",
+      "url": "https://www.skills.google/paths/1951",
+      "checked_at": "2026-09-29T06:57:12.915478+00:00",
+      "health": {
+        "id": "google-gail-skills-path",
+        "url": "https://www.skills.google/paths/1951",
+        "checked_at": "2026-09-29T06:57:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skills.google/paths/1951",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Generative AI Leader Certification | Google Skills",
+        "canonical_url": "https://www.skills.google/paths/1951",
+        "duration_signals": [],
+        "signal_fingerprint": "1eb472d7dc9207a62f0acf8f249c7a8487c85868a165d0c07b9b984decf1d42d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skills.google/paths/1951",
+      "sha256": "c2cd7e29e88f391c7bf871d6bca9fbcddb156d66ca2130f4ef070c4e1b6ac1c6",
+      "text_characters": 1059
+    },
+    {
+      "id": "google-gail-sample-questions",
+      "url": "https://forms.gle/soztS7Q74AXBncATA",
+      "checked_at": "2026-09-29T06:57:15.063008+00:00",
+      "health": {
+        "id": "google-gail-sample-questions",
+        "url": "https://forms.gle/soztS7Q74AXBncATA",
+        "checked_at": "2026-09-29T06:57:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.google.com/forms/d/e/1FAIpQLScNn5oUIFeMQjtsHilQsJPxDsnP-0DbhDVsIXaBeCmPj-dgYw/viewform?usp=send_form",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Generative AI Leader Sample Questions",
+        "canonical_url": "https://docs.google.com/forms/d/e/1FAIpQLScNn5oUIFeMQjtsHilQsJPxDsnP-0DbhDVsIXaBeCmPj-dgYw/viewform?usp=send_form",
+        "duration_signals": [],
+        "signal_fingerprint": "e57f1b5bd39715f1abbb84c170bfe9bba967f0a20f0ce3fe151271d417ad27ad",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.google.com/forms/d/e/1FAIpQLScNn5oUIFeMQjtsHilQsJPxDsnP-0DbhDVsIXaBeCmPj-dgYw/viewform?usp=send_form",
+      "sha256": "2498d1f2cf0bc6dc42657b040be263a418be6c153ce8bdb67957b71ca9271bab",
+      "text_characters": 656
+    },
+    {
+      "id": "google-saif",
+      "url": "https://saif.google/",
+      "checked_at": "2026-09-29T06:57:16.026358+00:00",
+      "health": {
+        "id": "google-saif",
+        "url": "https://saif.google/",
+        "checked_at": "2026-09-29T06:57:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://saif.google/",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://saif.google/",
+        "duration_signals": [],
+        "signal_fingerprint": "38531c99635265ea0387e96d84441da0762ac68b2efc4ab711d4d8e76446eae1",
+        "error": ""
+      },
+      "representation_note": "gzip response decoded before HTML extraction",
+      "http_status": 200,
+      "final_url": "https://saif.google/",
+      "sha256": "7a32abf6f4b7e757cba7133cb74b7e6a36cdc88a9c6105d257ddb2e2f34fa12c",
+      "text_characters": 675
+    },
+    {
+      "id": "google-gail-coursera",
+      "url": "https://www.coursera.org/professional-certificates/generative-ai-for-leaders",
+      "checked_at": "2026-09-29T06:57:16.402831+00:00",
+      "health": {
+        "id": "google-gail-coursera",
+        "url": "https://www.coursera.org/professional-certificates/generative-ai-for-leaders",
+        "checked_at": "2026-09-29T06:57:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.coursera.org/professional-certificates/generative-ai-for-leaders",
+        "content_type": "text/html",
+        "page_title": "Generative AI Leader",
+        "canonical_url": "https://www.coursera.org/professional-certificates/generative-ai-for-leaders",
+        "duration_signals": [
+          "3 hours",
+          "4 hours",
+          "5 hours",
+          "8 hours",
+          "approximately 8 hours",
+          "P1M"
+        ],
+        "signal_fingerprint": "73cf7f2817824812d2ca2ca1583006480edb18f1c840cd8b2742efd00104879b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.coursera.org/professional-certificates/generative-ai-for-leaders",
+      "sha256": "d9c494a9bf071e974d26239d1f1af08390bbbd23c75dd46321b31db0d17241db",
+      "text_characters": 12155
+    },
+    {
+      "id": "google-gail-pluralsight",
+      "url": "https://www.pluralsight.com/paths/google-cloud-generative-ai-leader-by-pluralsight",
+      "checked_at": "2026-09-29T06:57:16.542756+00:00",
+      "health": {
+        "id": "google-gail-pluralsight",
+        "url": "https://www.pluralsight.com/paths/google-cloud-generative-ai-leader-by-pluralsight",
+        "checked_at": "2026-09-29T06:57:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/google-cloud-generative-ai-leader-by-pluralsight",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Google Cloud Generative AI Leader by Pluralsight",
+        "canonical_url": "https://www.pluralsight.com/paths/google-cloud-generative-ai-leader-by-pluralsight",
+        "duration_signals": [
+          "6 Hours"
+        ],
+        "signal_fingerprint": "fe94745fae59efcbd7c3e75aad45ef1a7a791ee6a0b77ad9361c633005e4c7e9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/google-cloud-generative-ai-leader-by-pluralsight",
+      "sha256": "a1f2cb9ef3a97d12ef72c0d095111b66a05f9915c0a87058dad778bcd4f547da",
+      "text_characters": 3066
+    },
+    {
+      "id": "google-gail-oreilly-genai",
+      "url": "https://www.oreilly.com/library/view/genai-on-google/9798341623842/",
+      "checked_at": "2026-09-29T06:57:17.625840+00:00",
+      "health": {
+        "id": "google-gail-oreilly-genai",
+        "url": "https://www.oreilly.com/library/view/genai-on-google/9798341623842/",
+        "checked_at": "2026-09-29T06:57:17+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/genai-on-google/9798341623842/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "google-gail-udemy-in28minutes",
+      "url": "https://www.udemy.com/course/google-cloud-certified-generative-ai-leader-certification/",
+      "checked_at": "2026-09-29T06:57:17.821688+00:00",
+      "health": {
+        "id": "google-gail-udemy-in28minutes",
+        "url": "https://www.udemy.com/course/google-cloud-certified-generative-ai-leader-certification/",
+        "checked_at": "2026-09-29T06:57:17+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/google-cloud-certified-generative-ai-leader-certification/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "google-soft-prompt-tuning",
+      "url": "https://research.google/blog/guiding-frozen-language-models-with-learned-soft-prompts/",
+      "checked_at": "2026-09-29T07:00:59.946731+00:00",
+      "health": {
+        "id": "google-soft-prompt-tuning",
+        "url": "https://research.google/blog/guiding-frozen-language-models-with-learned-soft-prompts/",
+        "checked_at": "2026-09-29T07:00:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://research.google/blog/guiding-frozen-language-models-with-learned-soft-prompts/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Guiding Frozen Language Models with Learned Soft Prompts",
+        "canonical_url": "https://research.google/blog/guiding-frozen-language-models-with-learned-soft-prompts/",
+        "duration_signals": [],
+        "signal_fingerprint": "9a84f967a22fa4014837277fe023b1aafcea297be6aeee450ce4bed10f422e4d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://research.google/blog/guiding-frozen-language-models-with-learned-soft-prompts/",
+      "sha256": "349166a214770e754701229236d7b8f9a868bfa5f5cbc22a754b82c313741d9f",
+      "text_characters": 8117
+    },
+    {
+      "id": "google-gemini-developer-terms",
+      "url": "https://ai.google.dev/gemini-api/terms",
+      "checked_at": "2026-09-29T07:00:59.947607+00:00",
+      "health": {
+        "id": "google-gemini-developer-terms",
+        "url": "https://ai.google.dev/gemini-api/terms",
+        "checked_at": "2026-09-29T07:00:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://ai.google.dev/gemini-api/terms",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Gemini API Additional Terms of Service | Google AI for Developers",
+        "canonical_url": "https://ai.google.dev/gemini-api/terms",
+        "duration_signals": [],
+        "signal_fingerprint": "ee4dfaa856043c836e466c9b0a25267a4b12f41d0e85a1c62fb354a9edf2162a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://ai.google.dev/gemini-api/terms",
+      "sha256": "fbc0f676bc7ecbce2c8aeee9b7ff13d3ce475e9f4bfc98b22c3a1303760b8b90",
+      "text_characters": 20684
+    },
+    {
+      "id": "google-gemini-developer-zdr",
+      "url": "https://ai.google.dev/gemini-api/docs/zdr",
+      "checked_at": "2026-09-29T07:00:59.948151+00:00",
+      "health": {
+        "id": "google-gemini-developer-zdr",
+        "url": "https://ai.google.dev/gemini-api/docs/zdr",
+        "checked_at": "2026-09-29T07:00:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://ai.google.dev/gemini-api/docs/zdr",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Zero data retention in the Gemini Developer API | Gemini API | Google AI for Developers",
+        "canonical_url": "https://ai.google.dev/gemini-api/docs/zdr",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "d986b7ef8e35d9edc8b317105d1c0246128a29b1a08d3128a5a757cb18eeeca0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://ai.google.dev/gemini-api/docs/zdr",
+      "sha256": "488282f065988aa4add12c5296790c7a3607a8fd908cdba4b42d269bfd3ba272",
+      "text_characters": 4691
+    },
+    {
+      "id": "gcp-agent-platform-zdr",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+      "checked_at": "2026-09-29T07:01:00.760641+00:00",
+      "health": {
+        "id": "gcp-agent-platform-zdr",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+        "checked_at": "2026-09-29T07:01:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Gemini Enterprise Agent Platform and zero data retention | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "baaf0ae91ac84fe199f2ebb68401f586dc906c8974aa457b7a588966c9acdb83",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+      "sha256": "e30beca3541f7e9c1763318db2fda072c95f22fd8426e5d56b39cec81cd9a1e7",
+      "text_characters": 11687
+    },
+    {
+      "id": "google-gemini-structured-output",
+      "url": "https://ai.google.dev/gemini-api/docs/structured-output",
+      "checked_at": "2026-09-29T07:01:01.084709+00:00",
+      "health": {
+        "id": "google-gemini-structured-output",
+        "url": "https://ai.google.dev/gemini-api/docs/structured-output",
+        "checked_at": "2026-09-29T07:01:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://ai.google.dev/gemini-api/docs/structured-output",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Structured outputs | Gemini API | Google AI for Developers",
+        "canonical_url": "https://ai.google.dev/gemini-api/docs/structured-output",
+        "duration_signals": [
+          "11 minutes"
+        ],
+        "signal_fingerprint": "a5ee695730ebed90f184a0fdd56b22bf9309919845cf401195f5bbf7c0d37100",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://ai.google.dev/gemini-api/docs/structured-output",
+      "sha256": "2502798474227b7f63f211535e32ebbcb8cb25a4cfc769dc5a7b05aa9b924737",
+      "text_characters": 47511
+    },
+    {
+      "id": "google-gemini-function-calling",
+      "url": "https://ai.google.dev/gemini-api/docs/function-calling",
+      "checked_at": "2026-09-29T07:01:01.101655+00:00",
+      "health": {
+        "id": "google-gemini-function-calling",
+        "url": "https://ai.google.dev/gemini-api/docs/function-calling",
+        "checked_at": "2026-09-29T07:01:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://ai.google.dev/gemini-api/docs/function-calling",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Function calling with the Gemini API | Google AI for Developers",
+        "canonical_url": "https://ai.google.dev/gemini-api/docs/function-calling",
+        "duration_signals": [],
+        "signal_fingerprint": "bf418f46a3931b461be1a444a3ba607ee67e4fb54c6a7deb8c73cf7938d971b4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://ai.google.dev/gemini-api/docs/function-calling",
+      "sha256": "813e1d1e885840fa0cfed9f1f6a24b56c3cd432dd8cbf0a03ab56a01cbfd5743",
+      "text_characters": 104203
+    },
+    {
+      "id": "gcp-notebook-api",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+      "checked_at": "2026-09-29T07:01:02.915227+00:00",
+      "health": {
+        "id": "gcp-notebook-api",
+        "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+        "checked_at": "2026-09-29T07:01:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Create and manage notebooks (API) | Gemini Notebook Enterprise | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+        "duration_signals": [],
+        "signal_fingerprint": "ee990429de55f727d8d59ce09c4b8647b5ea4e0b6eba9b28a18aa9a99291b244",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+      "sha256": "fca0e974aad77ec55eb0425bf828b42833bab32ae8f3b656b1921ab5780feb84",
+      "text_characters": 10943
+    },
+    {
+      "id": "gcp-search-acl",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/docs/identity",
+      "checked_at": "2026-09-29T07:01:03.748740+00:00",
+      "health": {
+        "id": "gcp-search-acl",
+        "url": "https://docs.cloud.google.com/gemini/enterprise/docs/identity",
+        "checked_at": "2026-09-29T07:01:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini/enterprise/docs/identity",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Configure access controls for custom data sources | Gemini Enterprise | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini/enterprise/docs/identity",
+        "duration_signals": [],
+        "signal_fingerprint": "af27fad2fe6799fa0ac67c2539bade5a6c9039f3280225d44180827339b36fe4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini/enterprise/docs/identity",
+      "sha256": "6fc0cb1b62266e67d7f116e9f4a4621af6267bef16ef2009bccf1f3c406e13c6",
+      "text_characters": 8006
+    },
+    {
+      "id": "gcp-search-identity-provider",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+      "checked_at": "2026-09-29T07:01:04.919468+00:00",
+      "health": {
+        "id": "gcp-search-identity-provider",
+        "url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+        "checked_at": "2026-09-29T07:01:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Configure identity provider | Gemini Enterprise | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+        "duration_signals": [],
+        "signal_fingerprint": "56662f2fa59d53e106df8c7f63e3c37687e8beda38ba77a384d0c3692c9e3f5e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+      "sha256": "eb1e2730b7995916829b9c44c6a8114c5a6736b0136fa5c2c4f159d524fd4246",
+      "text_characters": 14157
+    },
+    {
+      "id": "gcp-model-registry",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-registry/introduction",
+      "checked_at": "2026-09-29T07:01:05.860354+00:00",
+      "health": {
+        "id": "gcp-model-registry",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-registry/introduction",
+        "checked_at": "2026-09-29T07:01:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-registry/introduction",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Introduction to Model Registry | Gemini Enterprise Agent Platform | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-registry/introduction",
+        "duration_signals": [],
+        "signal_fingerprint": "d9af8bcc49cd433cfa4b95c5b248d28da3dffbe50c2ff58d7140d9ed4598d7f2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-registry/introduction",
+      "sha256": "c2ca8b7a814b930bc9e00b975c94582ae740a65efef665ca2b1cbcccb1d81a17",
+      "text_characters": 3438
+    },
+    {
+      "id": "gcp-model-deployment",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deploy/overview",
+      "checked_at": "2026-09-29T07:01:06.047931+00:00",
+      "health": {
+        "id": "gcp-model-deployment",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deploy/overview",
+        "checked_at": "2026-09-29T07:01:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deploy/overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Deploy generative AI models | Gemini Enterprise Agent Platform | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deploy/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "1035b7ec39e72611c9f5bce5786b4ebd82a3576144e6b85512c10f6b38371649",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deploy/overview",
+      "sha256": "9e861d324f7e46df6eb95f7a50fe5fb745a43cb9557d99a29d390f327510fbeb",
+      "text_characters": 6885
+    },
+    {
+      "id": "gcp-mlops-overview",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/start/introduction-mlops",
+      "checked_at": "2026-09-29T07:01:07.502703+00:00",
+      "health": {
+        "id": "gcp-mlops-overview",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/start/introduction-mlops",
+        "checked_at": "2026-09-29T07:01:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/start/introduction-mlops",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "MLOps on Gemini Enterprise Agent Platform | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/start/introduction-mlops",
+        "duration_signals": [],
+        "signal_fingerprint": "dcf19150e1e95d340cb5556530449ffb9155eb5c3c69f376b9cf89570bd7b1b5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/start/introduction-mlops",
+      "sha256": "c11f13a55e8a21f2f99d49e058bdc75ec66031159e9e876fd4a6cf70fecdeb41",
+      "text_characters": 5773
+    },
+    {
+      "id": "google-saif-introduction",
+      "url": "https://blog.google/innovation-and-ai/technology/safety-security/introducing-googles-secure-ai-framework/",
+      "checked_at": "2026-09-29T07:01:07.697098+00:00",
+      "health": {
+        "id": "google-saif-introduction",
+        "url": "https://blog.google/innovation-and-ai/technology/safety-security/introducing-googles-secure-ai-framework/",
+        "checked_at": "2026-09-29T07:01:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://blog.google/innovation-and-ai/technology/safety-security/introducing-googles-secure-ai-framework/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Introducing Google’s Secure AI Framework",
+        "canonical_url": "https://blog.google/innovation-and-ai/technology/safety-security/introducing-googles-secure-ai-framework/",
+        "duration_signals": [],
+        "signal_fingerprint": "1e5a3173690a358e16e39ff34fcce04218c7d60533edc5812d67f5d86493b63d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://blog.google/innovation-and-ai/technology/safety-security/introducing-googles-secure-ai-framework/",
+      "sha256": "3d19a8f88e55ada9eb8f25b0efd1b0b31413ff42a52b2d6807a1649013419e35",
+      "text_characters": 8993
+    },
+    {
+      "id": "google-gemma-terms",
+      "url": "https://ai.google.dev/gemma/terms",
+      "checked_at": "2026-09-29T07:01:08.662222+00:00",
+      "health": {
+        "id": "google-gemma-terms",
+        "url": "https://ai.google.dev/gemma/terms",
+        "checked_at": "2026-09-29T07:01:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://ai.google.dev/gemma/terms",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Gemma Terms of Use | Google AI for Developers",
+        "canonical_url": "https://ai.google.dev/gemma/terms",
+        "duration_signals": [],
+        "signal_fingerprint": "8d17a1a8eb605556315026739c7921f82e0f0d89bda8c2ba09c6944a2426169b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://ai.google.dev/gemma/terms",
+      "sha256": "0582a39b2416dcc5849706d0a3cf505c58ff8873a52c31482a78878d2ebdaa6b",
+      "text_characters": 9755
+    },
+    {
+      "id": "gcp-gemini-enterprise-2026",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+      "checked_at": "2026-09-29T07:01:08.883825+00:00",
+      "health": {
+        "id": "gcp-gemini-enterprise-2026",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+        "checked_at": "2026-09-29T07:01:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "The new Gemini Enterprise: one platform for agent development | Google Cloud Blog",
+        "canonical_url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+        "duration_signals": [
+          "PT7M"
+        ],
+        "signal_fingerprint": "cc80068c1a73d07f059434e922cd0791ba9336f3af1086529f13625a8be13cb3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+      "sha256": "7230de8f121c3872eddc1d19237ab0b0762ef3bf0279dcae6dc4bb11f50460b2",
+      "text_characters": 10678
+    },
+    {
+      "id": "gcp-agent-platform-overview",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview",
+      "checked_at": "2026-09-29T07:01:09.785364+00:00",
+      "health": {
+        "id": "gcp-agent-platform-overview",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview",
+        "checked_at": "2026-09-29T07:01:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Agent Platform overview | Gemini Enterprise Agent Platform | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "0a5b012b906a7c0d27ac4910ade82a99943db959555203fed45900f18879ece9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview",
+      "sha256": "cf5499d563a65d4633fd75510bc761241c70b00d9d1af3fbbee51a28990eab86",
+      "text_characters": 6616
+    },
+    {
+      "id": "gcp-model-armor-overview",
+      "url": "https://docs.cloud.google.com/model-armor/overview",
+      "checked_at": "2026-09-29T07:01:09.976123+00:00",
+      "health": {
+        "id": "gcp-model-armor-overview",
+        "url": "https://docs.cloud.google.com/model-armor/overview",
+        "checked_at": "2026-09-29T07:01:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/model-armor/overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Model Armor overview | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/model-armor/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "13534481a4842604f2f012904a5ee2f4142fb440ffd8c52a32ccc1b2f14d3965",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/model-armor/overview",
+      "sha256": "c3b86a592c5db76025aae44fea95379560155605d0085a3d648ba94d4f32806d",
+      "text_characters": 26957
+    },
+    {
+      "id": "gcp-model-armor-integrations",
+      "url": "https://docs.cloud.google.com/model-armor/integrations",
+      "checked_at": "2026-09-29T07:01:10.136184+00:00",
+      "health": {
+        "id": "gcp-model-armor-integrations",
+        "url": "https://docs.cloud.google.com/model-armor/integrations",
+        "checked_at": "2026-09-29T07:01:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/model-armor/integrations",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Overview | Model Armor | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/model-armor/integrations",
+        "duration_signals": [],
+        "signal_fingerprint": "de6ac1041b92403b081f0e74ec0ca8656fc026d20e36b260804c12f123e2ce7d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/model-armor/integrations",
+      "sha256": "ccd488e471793ec3a7f844435589f5274f3280bef72803e8030103fbdaa63b17",
+      "text_characters": 13726
+    },
+    {
+      "id": "gcp-gemini-enterprise-app",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/docs",
+      "checked_at": "2026-09-29T07:01:11.744494+00:00",
+      "health": {
+        "id": "gcp-gemini-enterprise-app",
+        "url": "https://docs.cloud.google.com/gemini/enterprise/docs",
+        "checked_at": "2026-09-29T07:01:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini/enterprise/docs",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "What is Gemini Enterprise? | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini/enterprise/docs",
+        "duration_signals": [],
+        "signal_fingerprint": "01e965eeb8f71bc57cb04c80935f6f7bb9d4f19f8d99e0a3823e552ffa6d071a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini/enterprise/docs",
+      "sha256": "7e1d44f9d3e5e7329332147d36f88fc2db0e67132bd6b67dc0adf65575a17b44",
+      "text_characters": 6512
+    }
+  ],
+  "added_source_ids": [
+    "google-soft-prompt-tuning",
+    "google-gemini-developer-terms",
+    "google-gemini-developer-zdr",
+    "gcp-agent-platform-zdr",
+    "google-gemini-structured-output",
+    "google-gemini-function-calling",
+    "gcp-notebook-api",
+    "gcp-search-acl",
+    "gcp-search-identity-provider",
+    "gcp-model-registry",
+    "gcp-model-deployment",
+    "gcp-mlops-overview",
+    "google-saif-introduction",
+    "google-gemma-terms"
+  ],
+  "findings": [
+    {
+      "id": "googlegenerativeaileader-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Exam and study workbook labels differ",
+      "url": "https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The exam still names Cloud Functions and Customer Engagement Suite; study workbook uses Cloud Run functions and current customer-experience labels.",
+      "recommendation": "Preserve the exact exam scope with qualified product aliases; do not invent a revision date or treat new names as future scope.",
+      "disposition": "applied",
+      "source_id": "google-gail-exam-guide",
+      "resolution": "Preserve the exact exam scope with qualified product aliases; do not invent a revision date or treat new names as future scope."
+    },
+    {
+      "id": "googlegenerativeaileader-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Prompt tuning has a learned-vector meaning",
+      "url": "https://research.google/blog/guiding-frozen-language-models-with-learned-soft-prompts/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The Google Research article trains soft input vectors with the base model frozen, distinct from textual prompt design.",
+      "recommendation": "Explain conceptual differences from prompt engineering, few-shot inference and model/adaptor tuning, without assuming every model supports the technique.",
+      "disposition": "applied",
+      "source_id": "google-soft-prompt-tuning",
+      "resolution": "Explain conceptual differences from prompt engineering, few-shot inference and model/adaptor tuning, without assuming every model supports the technique."
+    },
+    {
+      "id": "googlegenerativeaileader-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Model choice and owned model lifecycle are separate",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-registry/introduction",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Registry manages models and versions; deployment docs distinguish managed APIs, tuned endpoints and imported models that do not automatically update with Garden.",
+      "recommendation": "Add a lifecycle/evidence table and correct the workbook-inspired Garden/storage ambiguity.",
+      "disposition": "applied",
+      "source_id": "gcp-model-registry",
+      "resolution": "Add a lifecycle/evidence table and correct the workbook-inspired Garden/storage ambiguity."
+    },
+    {
+      "id": "googlegenerativeaileader-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Data handling cannot be inferred from a free UI or upgrade label",
+      "url": "https://ai.google.dev/gemini-api/terms",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current terms distinguish unpaid/paid service treatment, AI Studio account conditions, API billed-project conditions and regional exceptions.",
+      "recommendation": "Require the actual account/service path and current terms before organizational data use; avoid universal free-versus-enterprise shortcuts.",
+      "disposition": "applied",
+      "source_id": "google-gemini-developer-terms",
+      "resolution": "Require the actual account/service path and current terms before organizational data use; avoid universal free-versus-enterprise shortcuts."
+    },
+    {
+      "id": "googlegenerativeaileader-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A training restriction does not eliminate retention",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Platform documentation lists abuse monitoring, grounding, request logging, stored interactions and product-specific retention conditions.",
+      "recommendation": "Separate training use from storage and evaluate enabled features on the selected platform.",
+      "disposition": "applied",
+      "source_id": "gcp-agent-platform-zdr",
+      "resolution": "Separate training use from storage and evaluate enabled features on the selected platform."
+    },
+    {
+      "id": "googlegenerativeaileader-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Personal notebooks do not establish enterprise API entitlement",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The enterprise API is preview and requires enterprise setup/licenses, with notebooks represented in a cloud project.",
+      "recommendation": "Separate workbook personal-browser activity from enterprise API/account/permission boundaries.",
+      "disposition": "applied",
+      "source_id": "gcp-notebook-api",
+      "resolution": "Separate workbook personal-browser activity from enterprise API/account/permission boundaries."
+    },
+    {
+      "id": "googlegenerativeaileader-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Identity and access control must be designed before data ingestion",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Access-control selection occurs at store creation, and identity-provider changes do not automatically update existing stores.",
+      "recommendation": "Add identity mapping, ACL metadata, ingestion/federation and revocation/migration decisions with proposed live tests.",
+      "disposition": "applied",
+      "source_id": "gcp-search-identity-provider",
+      "resolution": "Add identity mapping, ACL metadata, ingestion/federation and revocation/migration decisions with proposed live tests."
+    },
+    {
+      "id": "googlegenerativeaileader-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Schema-valid content can be semantically incorrect",
+      "url": "https://ai.google.dev/gemini-api/docs/structured-output",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Structured-output documentation requires application value validation and handling of semantically incorrect conforming outputs.",
+      "recommendation": "Add separate syntax, business-value, permission, approval and replay tests for proposed tool actions.",
+      "disposition": "applied",
+      "source_id": "google-gemini-structured-output",
+      "resolution": "Add separate syntax, business-value, permission, approval and replay tests for proposed tool actions."
+    },
+    {
+      "id": "googlegenerativeaileader-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "SAIF spans six control areas and the business process",
+      "url": "https://blog.google/innovation-and-ai/technology/safety-security/introducing-googles-secure-ai-framework/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The original framework covers foundational controls, detection/response, automation, consistency, feedback and business context.",
+      "recommendation": "Connect these areas to ownership and evidence; do not imply a single filter establishes secure AI.",
+      "disposition": "applied",
+      "source_id": "google-saif-introduction",
+      "resolution": "Connect these areas to ownership and evidence; do not imply a single filter establishes secure AI."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "google-soft-prompt-tuning",
+      "authors": [
+        "Brian Lester",
+        "Noah Constant"
+      ],
+      "published_on": "2022-02-10",
+      "disposition": "accepted-with-limits",
+      "value": "Clarify learned soft prompts versus manually engineered text.",
+      "limits": "Full historical research article read; do not infer current model support or benchmark performance."
+    },
+    {
+      "source_id": "google-saif-introduction",
+      "authors": [
+        "Royal Hansen",
+        "Phil Venables"
+      ],
+      "published_on": "2023-06-08",
+      "disposition": "accepted-with-limits",
+      "value": "Connect six security control areas to business ownership and evidence.",
+      "limits": "Full origin article read; linked PDFs not reviewed and historical product claims not treated as current."
+    },
+    {
+      "source_id": "gcp-gemini-enterprise-2026",
+      "authors": [
+        "Brian Delahunty",
+        "Michael Gerstenhaber"
+      ],
+      "published_on": "2026-04-22",
+      "disposition": "accepted-with-limits",
+      "value": "Preserve developer platform versus employee app distinction.",
+      "limits": "Full article read in preceding same-session CDL review; no universal feature or security guarantee."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "cloud_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "synthetic_rubric_observations": 20,
+    "actual_model_calls": 0,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 27,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "a4dd5a57d5a930a189da2df502dc7ba57c3a8452b34f2ce35f01154f985b66ce",
+      "execution_boundary": "Exact-user ACL model, twenty synthetic rubric observations and fictional value arithmetic executed in local Python. No Google model, cloud ACL, managed retrieval, provider evaluation, identity proof, real tool action or financial transaction."
+    }
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Eight complete cloud/model labs remain proposed. Only the exact public local Python worksheet executed:27 checks over an exact-user ACL model, twenty invented rubric observations and fictional value assumptions.",
+    "No LLM inference, prompt experiment, embeddings, managed retrieval, cloud authorization, connector synchronization, model deployment, notebook API, budget, real customer data or external tool/financial action executed.",
+    "ACL examples assume trusted identity/current metadata and omit groups, inheritance, provider IAM and concurrent updates. Twenty synthetic observations are not model results; two small-slice observations do not establish statistical reliability.",
+    "Capacity value is not realized cash savings. Break-even arithmetic depends on fixed review/rework and stated assumptions.",
+    "The study PDF text extractor reported malformed numeric graphics operands (0.00-10); extracted text was read across all eleven pages, but image/diagram completeness was not independently established. Actual PDF bytes/hashes retained.",
+    "Paid OReilly/Udemy metadata could not be reverified. Skills duration details and sample-form content were not fully exposed. Public provider outlines were inspected, not paid lessons, labs, practice questions or recalled exam content.",
+    "Privacy, licensing, preview APIs, editions, model methods and retention vary by platform/version/configuration; conceptual source review does not validate a specific deployment or contract."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Exact-user ACL model, twenty synthetic rubric observations and fictional value arithmetic executed in local Python. No Google model, cloud ACL, managed retrieval, provider evaluation, identity proof, real tool action or financial transaction.",
+    "passed": 27,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "a4dd5a57d5a930a189da2df502dc7ba57c3a8452b34f2ce35f01154f985b66ce",
+    "learning_catalog_consistency": "passed"
+  },
+  "actual_pdf_receipts": [
+    {
+      "id": "google-gail-exam-guide",
+      "url": "https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf",
+      "checked_at": "2026-09-29T06:57:54.125594+00:00",
+      "health": {
+        "id": "google-gail-exam-guide",
+        "url": "https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf",
+        "checked_at": "2026-09-29T06:57:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf",
+      "sha256": "0c79729e3cd033407176fec9b8e91e39ff03f79bbe71a8ba60bd95b0f7b4806e",
+      "bytes": 197566,
+      "pdf_pages": 5,
+      "text_characters": 13002
+    },
+    {
+      "id": "google-gail-study-guide",
+      "url": "https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf",
+      "checked_at": "2026-09-29T06:57:57.317253+00:00",
+      "health": {
+        "id": "google-gail-study-guide",
+        "url": "https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf",
+        "checked_at": "2026-09-29T06:57:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf",
+      "sha256": "ebd3859220c3496e7afa08fe6e2e586cc00f99f16658e6a9cc616db59f3b6523",
+      "bytes": 2033252,
+      "pdf_pages": 11,
+      "text_characters": 24571
+    }
+  ],
+  "pdf_extraction_limit": "Study-workbook extraction emitted pypdf malformed numeric graphics warnings for0.00-10; all eleven pages of extracted text read, without independent diagram completeness verification."
+}

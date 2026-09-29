@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-09-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-09-29
 ---
 
 # Google Cloud Generative AI Leader Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 2, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#google-generative-ai-leader-coverage-record). The [official certification page](https://cloud.google.com/learn/certification/generative-ai-leader) and its linked [exam guide](https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 29, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#google-generative-ai-leader-coverage-record). The [official certification page](https://cloud.google.com/learn/certification/generative-ai-leader) and its linked [exam guide](https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf) are authoritative.
 
-**Current baseline:** Four domains weighted 30%, 35%, 20%, and 15%; current PDF and study workbook checked September 2, 2026<br>
-**Upcoming blueprint change:** None announced as of September 2, 2026.<br>
+**CURRENT BLUEPRINT — current baseline:** Four domains weighted 30%, 35%, 20%, and 15%; current PDF and study workbook checked September 29, 2026<br>
+**Upcoming blueprint change:** None announced as of September 29, 2026.<br>
 **Official source:** [Generative AI Leader certification page](https://cloud.google.com/learn/certification/generative-ai-leader) · [official detailed exam guide](https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf)
 
 ## How to use this guide
@@ -36,7 +36,9 @@ The current exam is 90 minutes, USD 99 before applicable tax or regional differe
 | Techniques to improve gen AI model output | ~20% | Should prompting, grounding/RAG, customization, settings, evaluation, or human review improve the result? |
 | Business strategies for a successful gen AI solution | ~15% | How should value, adoption, security, responsibility, and measurable change be governed? |
 
-The current guide uses forward-looking 2026 product names such as Gemini Enterprise Agent Platform, Agent Platform, Agent Studio, Agent Search, and Agent Platform AutoML. Older training commonly says Vertex AI, Vertex AI Agent Builder/Search, Agentspace, or Generative AI Studio. Treat those as historical/product-transition terms and **VERIFY CURRENT** against the exam PDF and first-party documentation.
+The current exam PDF contains 61 enumerated considerations under 15 numbered objectives, distributed 21/18/10/12 across the domains. Three data considerations repeat under 1.1 and 1.2; the count preserves the published occurrences. The certification page says the exam was recently rebranded, without giving a revision date.
+
+The current guide uses 2026 product names such as Gemini Enterprise Agent Platform, Agent Platform, Agent Studio, Agent Search, and Agent Platform AutoML. Older training commonly says Vertex AI, Vertex AI Agent Builder/Search, Agentspace, or Generative AI Studio. Treat those as historical/product-transition terms and **VERIFY CURRENT** against the exam PDF and first-party documentation. The exam PDF remains the scope authority: it still names **Cloud Functions** and **Customer Engagement Suite**, while the study workbook uses Cloud Run functions and Gemini Enterprise for Customer Experience terminology. Learn the capability and map the labels; do not silently replace the exam wording with every newer product name.
 
 ---
 
@@ -46,7 +48,7 @@ The current guide uses forward-looking 2026 product names such as Gemini Enterpr
 
 Artificial intelligence is the broad field of systems performing capabilities associated with intelligence. Machine learning learns patterns from data rather than encoding every rule. Deep learning uses multilayer neural networks. Natural-language processing concerns human language. Generative AI produces new content—text, code, images, audio, video, or structured output—from learned patterns. A large language model is a foundation model specialized in language and related representations; multimodal models accept or generate more than one modality. Diffusion models iteratively transform noise toward a learned image/video/audio distribution.
 
-Foundation models are pretrained broadly and can be adapted to many tasks. They are probabilistic: a fluent response is not proof of truth, authorization, fairness, or safe action. The useful business unit is therefore not “the model”; it is the whole system of data, model, prompt/context, retrieval, tools, identity, application, evaluation, humans, and operations.
+Foundation models are pretrained broadly and can be adapted to many tasks. **Prompt engineering** changes the human-readable instructions or examples supplied at inference. **Prompt tuning**, in the learned soft-prompt sense described by [Google Research](https://research.google/blog/guiding-frozen-language-models-with-learned-soft-prompts/), trains a small set of input vectors while the base model remains frozen. It differs from manually rewriting a prompt and from changing model weights or adapters through fine-tuning. Few-shot examples in a request do not by themselves update weights. The 2022 research explains the concept; it does not establish that every current Google model offers that tuning method. They are probabilistic: a fluent response is not proof of truth, authorization, fairness, or safe action. The useful business unit is therefore not “the model”; it is the whole system of data, model, prompt/context, retrieval, tools, identity, application, evaluation, humans, and operations.
 
 | Learning approach | Signal | Typical business fit | Misconception |
 |---|---|---|---|
@@ -74,7 +76,16 @@ Structured data follows a defined model, while unstructured data includes prose,
 
 Accessibility never means broad uncontrolled access. It means the authorized system can obtain fit-for-purpose data with governed identity, purpose, lineage, residency, retention, and deletion. First-party enterprise data can create differentiation, but customer content, employee records, licensed works, regulated data, and secrets require purpose-specific legal and security review.
 
-The ML lifecycle is ingestion → preparation → training or model selection/customization → deployment → management. Generative systems add prompt/context, retrieval index, tool, policy, eval-set, and model-version lifecycles. A leader should ask who owns each artifact, what evidence permits promotion, and what triggers rollback.
+The ML lifecycle is ingestion → preparation → training or model selection/customization → deployment → management. Unlabeled data can be curated, structured and useful; lack of target labels does not mean meaningless or unprocessed data. Generative systems add prompt/context, retrieval index, tool, policy, eval-set, and model-version lifecycles. A leader should ask who owns each artifact, what evidence permits promotion, and what triggers rollback.
+
+| Lifecycle responsibility | Tool category or Google example | Evidence to request |
+|---|---|---|
+| Ingest and prepare | Governed stores, databases and repeatable data pipelines | Permission, lineage, quality, schema and train/evaluation separation |
+| Train or customize | Managed training, supported AutoML/tuning, experiment tracking | Dataset and model version, baseline, cost and independent evaluation |
+| Register and deploy | Model Registry and a supported serving endpoint/API | Artifact identity, approval, serving configuration and rollback route |
+| Manage and improve | Pipelines, Feature Store, Model Monitoring and application telemetry | Reproducibility, relevant features, drift signal and measured task quality |
+
+[Model Registry](https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-registry/introduction) manages your models and versions; **Model Garden** helps discover model choices. The workbook's broad storage wording should not make these interchangeable. [Deployment documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deploy/overview) distinguishes managed APIs from models needing a deployed endpoint: finding a model card does not mean capacity is already running. A Model Garden update does not automatically update your imported model. [MLOps guidance](https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/start/introduction-mlops) also separates drift/skew alerts from evaluation: changed inputs may warrant investigation, but do not alone prove lower task accuracy.
 
 ### Choose model and layer deliberately
 
@@ -86,7 +97,7 @@ The ML lifecycle is ingestion → preparation → training or model selection/cu
 | Agent | Goal loop plus tools, state and policy | What may act, under whose identity, with what limits and approval? |
 | Application | User workflow and experience | Does it solve the measured task safely and inclusively? |
 
-Gemini is Google’s flagship multimodal family. Gemma provides open-weight model options suited to customization and local/controlled deployments. Imagen generates images. Veo generates video. Model versions and capabilities change; select by evaluated workload evidence, not newest-name bias.
+Gemini is Google’s flagship multimodal family. Gemma provides model options suited to customization and local/controlled deployments. Check the exact version's [license and terms](https://ai.google.dev/gemma/terms): the current terms page directs Gemma 4 to a separate license. A family name or access to weights does not establish identical use, distribution or support rights across versions. Imagen generates images. Veo generates video. Model versions and capabilities change; select by evaluated workload evidence, not newest-name bias.
 
 Model choice considers modality, context window, input/output and data restrictions, security/privacy, regional availability, reliability, quality, latency, throughput, price, fine-tuning/customization support, openness, and operational skill. A larger context window may enable more input but can raise cost/latency and does not make all included information equally usable.
 
@@ -102,11 +113,15 @@ Model choice considers modality, context window, input/output and data restricti
 |---|---|---|---|
 | Individual general assistance | Gemini app / Gemini Advanced and Gems | Fast personal creation, analysis, and reusable custom instructions | Account tier, data handling, connectors, sharing and current naming |
 | Assistance inside work tools | Gemini for Google Workspace | Meets users in Gmail, Docs, Sheets, Slides, Meet and related workflows | Licensing, admin controls, source permissions and review |
-| Grounded personal research | Gemini Notebook capability | Synthesizes and explores supplied sources | Current product/API name, source limits, sharing and citation checking |
+| Grounded document research | Gemini Notebook / NotebookLM and the distinct Gemini Notebook Enterprise surface | Synthesizes and explores supplied sources | Consumer versus enterprise account, API availability, licenses, source permissions and sharing |
 | Permission-aware enterprise search/agents | Gemini Enterprise and Agent Search | Connects governed enterprise knowledge and custom agents | Connector permissions, freshness, authorization trimming and product availability |
 | Customer engagement | Customer Engagement Suite | Conversational agents, Agent Assist, conversation insights and cloud contact-center capabilities | Channel integration, identity, consent, escalation, latency and human operation |
 | Rapid prototype | Google AI Studio | Quickly explore Gemini models/prompts | Prototype controls and quotas are not production architecture |
 | Governed custom production solution | Agent Studio / Agent Platform | Model Garden, search/RAG, AutoML/customization, agents, evaluation and operations | Exact service naming, region, release stage and responsibility |
+
+The [Gemini Enterprise app](https://docs.cloud.google.com/gemini/enterprise/docs) is the employee search/assistant/agent surface; [Agent Platform](https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview) supplies developer and operational capabilities. The [April 22, 2026 announcement](https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development) explains this relationship and the evolution from Vertex AI. Neither a product name nor a low-code designer proves all governance requirements are configured.
+
+The workbook's notebook exercise points to `notebooklm.google.com`; the exam also names **Gemini Notebook API**. The [current enterprise notebook API](https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks) is documented as **preview**, requires enterprise setup/licenses, and manages notebooks within a cloud project. Do not infer that a personal notebook account grants enterprise API access or identical sharing/data controls. **VERIFY CURRENT** for the specific edition and interface.
 
 Prebuilt applications reduce time and engineering, but the organization still governs identity, data, acceptable use, output review, records, integration, adoption, and value. Custom platforms enable differentiation and control while adding design, security, evaluation, deployment and operating work.
 
@@ -114,13 +129,17 @@ Prebuilt applications reduce time and engineering, but the organization still go
 
 Google presents an AI-first ecosystem with integrated applications, an enterprise-ready platform, open and first-party model choices, AI-optimized infrastructure, low/no-code paths, APIs, data control, agents, and security/responsible-AI practices. AI Hypercomputer combines TPUs/GPUs, network/storage/system design and software rather than representing one accelerator. Evaluate workload performance, utilization, availability, capacity plan, flexibility and total cost.
 
+**PRACTICAL DEPTH — VERIFY CURRENT:** data handling follows the actual service, account and terms. Under the [Gemini Developer API terms](https://ai.google.dev/gemini-api/terms), unpaid services generally permit product-improvement use and human review, with specified regional exceptions. Paid-service treatment differs, and the definition for AI Studio depends on account/project access or an enterprise Workspace account, not simply whether the UI charges a fee. The API has its own billed-project condition. Confirm the route before supplying organizational data; a personal upgrade name is not proof of enterprise protection.
+
+“Not used for training” and “not retained” are separate claims. [Developer API retention guidance](https://ai.google.dev/gemini-api/docs/zdr) lists abuse monitoring, grounding, uploaded files, caches and conversation state. [Agent Platform guidance](https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention) has its own feature-specific controls and exceptions. A no-training commitment does not turn off logging, stored interactions or grounding retention. State the platform, enabled features, data path and retention requirement explicitly rather than applying one retention number everywhere.
+
 “Enterprise-ready” is a claim to test: identity integration, tenant/data behavior, encryption/key options, residency, availability, support, logging, policy, compliance evidence, model-change policy, portability, recovery, and contractual commitments must match the organization’s requirement.
 
 Model Garden provides model choice across Google, third-party, and open options. Managed model building/customization reduces infrastructure work. Low/no-code tools democratize access but do not remove the need for governed data, competent reviewers, change control, evaluation, or an escalation path.
 
 ### Search, grounding, RAG, and customer experience
 
-External consumer search, enterprise search, and retrieval for generation are related but distinct. Search returns or ranks information; grounding connects generated output to supplied sources or world data; retrieval-augmented generation retrieves context and gives it to a model for a response. Permission-aware enterprise retrieval must enforce the source system’s authorization at query time and during indexing, not only hide links after generation.
+External consumer search, enterprise search, and retrieval for generation are related but distinct. Search returns or ranks information; grounding connects generated output to supplied sources or world data; retrieval-augmented generation retrieves context and gives it to a model for a response. Permission-aware enterprise retrieval must enforce the source system’s authorization at query time and during indexing, not only hide links after generation. [Custom Cloud Storage/BigQuery sources](https://docs.cloud.google.com/gemini/enterprise/docs/identity) require appropriate identity, document ACL metadata and an access-controlled store. The [identity configuration guide](https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider) says access control is selected when creating the store; it cannot simply be enabled later on an existing store. Changing the identity provider does not automatically migrate existing stores. Design identity mapping, ingestion/federation behavior, group changes and revocation tests before importing data. These are configuration obligations, not guarantees that every connector has identical synchronization behavior.
 
 A RAG system includes ingestion, parsing, chunking, metadata, embeddings/index, query transformation, retrieval, filters, reranking, prompt/context construction, generation, citation rendering, evaluation, freshness, deletion and access control. A weak response can originate at any layer. Adding RAG does not guarantee correct retrieval or faithful generation.
 
@@ -138,6 +157,10 @@ Tool selection asks:
 4. What data may cross the boundary?
 5. What limit, confirmation, approval, timeout, retry, idempotency, audit and reversal exist?
 6. How does the system behave when the model, tool, dependency, or network fails?
+
+[Function calling](https://ai.google.dev/gemini-api/docs/function-calling) supplies a proposed function name and arguments; the application is responsible for execution. [Structured output](https://ai.google.dev/gemini-api/docs/structured-output) helps satisfy a supported schema, but valid JSON can still contain the wrong customer, amount or claim. Validate semantics, authenticated identity, current permission, operation limits and approval independently; SDK automation belongs inside that same boundary.
+
+For a refund proposal, distinguish four tests: the payload parses; the amount and order are valid; the caller can act on that order; and a trusted approval covers this exact action. A retry must not create a second refund, while the same retry identifier with changed amount must not silently reuse an earlier approval. These are proposed control tests, not an executed financial integration.
 
 Use the simplest deterministic control for deterministic requirements. Let a model interpret language or select among bounded options; keep pricing, eligibility, safety, financial, legal, and permission rules in testable policy/code where possible.
 
@@ -181,7 +204,7 @@ Evaluate retrieval separately with relevance/coverage and permission tests, then
 
 ### Sampling and limits
 
-Temperature changes randomness; top-p limits sampling to a cumulative probability mass. Lower values tend toward consistency, not truth. Token/output limits cap generated length and influence truncation, latency and cost. Safety settings influence filtered behavior and need domain testing. Set values from eval results; changing several at once prevents clear attribution.
+Temperature changes randomness; top-p limits sampling to a cumulative probability mass. Lower values tend toward consistency, not truth. Tokens are model-specific units, not a fixed count of words or characters. Token/output limits cap generated length and influence truncation, latency and cost; a truncated schema response still needs failure handling. Safety settings influence filtered behavior and need domain testing. Set values from eval results; changing several at once prevents clear attribution.
 
 ### Continuous evaluation and change control
 
@@ -210,15 +233,15 @@ Begin with a bounded workflow and explicit non-goals. Establish baseline, sponso
 
 ### Measure impact honestly
 
-Leading measures include adoption, completion, override, escalation, error, safety event, latency and cost. Lagging measures include cycle time, resolution, revenue, loss, satisfaction, quality, employee experience or risk reduction. Measure displaced work and newly created review/rework. Separate correlation from causation with comparison groups or staged rollout where practical. Monitor distributional effects: an average gain can hide harm to a language, disability, region or customer group.
+Leading measures include adoption, completion, override, escalation, error, safety event, latency and cost. Lagging measures include cycle time, resolution, revenue, loss, satisfaction, quality, employee experience or risk reduction. Measure displaced work and newly created review/rework. An hour of potential capacity is not automatically an hour of eliminated payroll or realized revenue; state how the capacity will be used and measured. Separate correlation from causation with comparison groups or staged rollout where practical. Monitor distributional effects: an average gain can hide harm to a language, disability, region or customer group.
 
 Total cost includes licenses/API tokens, retrieval/indexing, tools, data preparation, evaluation, integration, security, operations, support, human review, change management, incidents and exit. Unit economics should connect cost to a valuable completed outcome rather than requests alone.
 
 ### Secure AI with SAIF and defense in depth
 
-Google’s [Secure AI Framework](https://saif.google/) treats AI security as an ecosystem/lifecycle problem. Threat-model data, supply chain, infrastructure, model, prompt/context, retrieval, agent/tools, application, user and operations. Apply secure-by-design infrastructure, IAM, Security Command Center, monitoring, data controls, isolation, provenance, evaluation, detection, response and recovery.
+Google’s [Secure AI Framework](https://saif.google/) treats AI security as an ecosystem/lifecycle problem. Its [original six-part framework](https://blog.google/innovation-and-ai/technology/safety-security/introducing-googles-secure-ai-framework/) connects established security foundations, AI-aware detection/response, automated defenses, consistent platform controls, adaptive feedback and the surrounding business process. Turn each into an owner and evidence requirement: for example, control coverage, incident exercises, bounded response automation, common policies, adversarial regression cases and an end-to-end risk review. The 2023 article provides the framework's origin, not current product availability or a claim that one filter secures an entire system. Threat-model data, supply chain, infrastructure, model, prompt/context, retrieval, agent/tools, application, user and operations. Apply secure-by-design infrastructure, IAM, Security Command Center, monitoring, data controls, isolation, provenance, evaluation, detection, response and recovery.
 
-Protect against prompt injection, poisoned sources, sensitive-data disclosure, model/supply-chain compromise, insecure tool calls, excessive agency, denial of service/resource exhaustion, evasion, theft and misuse. Least privilege applies to people, pipelines, deployed models and agents. High-impact actions require independent authorization and often human approval. Log what is needed for accountability while redacting secrets and respecting privacy.
+Protect against prompt injection, poisoned sources, sensitive-data disclosure, model/supply-chain compromise, insecure tool calls, excessive agency, denial of service/resource exhaustion, evasion, theft and misuse. Least privilege applies to people, pipelines, deployed models and agents. **PRACTICAL DEPTH:** [Model Armor](https://docs.cloud.google.com/model-armor/overview) detection, model refusal and application enforcement are distinct. Inspect-only observations do not prove a tool action was blocked; a blocking verdict must be honored by the integration. [Coverage varies by integration and modality](https://docs.cloud.google.com/model-armor/integrations), so test the actual path. These controls supplement identity and business rules. High-impact actions require independent authorization and often human approval. Log what is needed for accountability while redacting secrets and respecting privacy.
 
 ### Responsible AI is operating governance
 
@@ -229,6 +252,143 @@ Document intended and prohibited use, data provenance/consent, performance and l
 > **Related item:** Governance establishes decision rights, policy, evidence and accountability. Guardrails implement some constraints. A guardrail without an owner, monitoring, exceptions process and incident response is not complete governance.
 
 ---
+
+### Local evidence worksheet: access, evaluation and value
+
+**PRACTICAL DEPTH — executed locally:** this original Python worksheet uses a tiny exact-user ACL model, twenty invented rubric observations and fictional cost assumptions. It makes no model, embedding, retrieval-service or cloud call. The ACL model assumes trusted identity and up-to-date metadata; it does not implement provider IAM, groups, inheritance, connector synchronization or concurrent updates. The required slices and pass thresholds are teaching choices, not Google certification requirements or evidence of statistical reliability.
+
+Save as `evidence_workbook.py` and run `python evidence_workbook.py`.
+
+```python
+"""Original local models: no model call, cloud ACL, or real user identity."""
+from fractions import Fraction as F
+from decimal import Decimal as D
+
+
+def authorized_context(candidates, documents, readers, principal):
+    """Candidates can be stale; current trusted records are checked again.
+
+    This tiny model has exact per-user ACLs only, not groups, inheritance,
+    service IAM, connector synchronization, identity proof, or concurrency.
+    """
+    if not principal:
+        return []
+    result = []
+    for document_id in dict.fromkeys(candidates):
+        if document_id in documents and principal in readers.get(document_id, set()):
+            result.append((document_id, documents[document_id]))
+    return result
+
+
+def evaluate_pilot(rows, overall_floor, slice_floor):
+    if not rows:
+        raise ValueError('An empty evaluation cannot pass')
+    if {name for name, _, _ in rows} != {'majority', 'small_slice'}:
+        raise ValueError('This worksheet requires evidence for both named slices')
+    # Each row is an independently recorded rubric result, not a model judge.
+    if any(type(good) is not bool or type(unsafe) is not bool
+           for _, good, unsafe in rows):
+        raise ValueError('Rubric outcomes must be explicit booleans')
+    scores = {}
+    for name in sorted({name for name, _, _ in rows}):
+        group = [good for label, good, _ in rows if label == name]
+        scores[name] = F(sum(group), len(group))
+    overall = F(sum(good for _, good, _ in rows), len(rows))
+    violations = sum(unsafe for _, _, unsafe in rows)
+    passed = (overall >= overall_floor and
+              all(score >= slice_floor for score in scores.values()) and
+              violations == 0)
+    return overall, scores, violations, passed
+
+
+def run():
+    count = 0
+
+    def check(condition):
+        nonlocal count
+        if not condition:
+            raise AssertionError('Evidence worksheet mismatch')
+        count += 1
+
+    documents = {'public': 'Approved public instructions.',
+                 'finance': 'Fictional finance figure: 731.',
+                 'other': 'Fictional other-team figure: 842.'}
+    readers = {'public': {'lee', 'sam'}, 'finance': {'lee'}, 'other': {'sam'}}
+    candidates = ['finance', 'public', 'other', 'missing', 'finance']
+    check([key for key, _ in authorized_context(candidates, documents, readers, 'lee')]
+          == ['finance', 'public'])
+    check([key for key, _ in authorized_context(candidates, documents, readers, 'sam')]
+          == ['public', 'other'])
+    check(authorized_context(candidates, documents, readers, '') == [])
+    check(authorized_context(candidates, documents, readers, 'unknown') == [])
+    # Hiding a citation after building context has already exposed its content.
+    unsafe_context = '\n'.join(documents[k] for k in candidates if k in documents)
+    check('842' in unsafe_context)
+    safe_context = '\n'.join(text for _, text in authorized_context(
+        candidates, documents, readers, 'lee'))
+    check('731' in safe_context and '842' not in safe_context)
+    readers['finance'].remove('lee')
+    check(authorized_context(candidates, documents, readers, 'lee')
+          == [('public', documents['public'])])
+    del documents['public']
+    check(authorized_context(candidates, documents, readers, 'lee') == [])
+    # Missing ACL metadata fails closed even when a candidate contains the ID.
+    documents['orphan'] = 'Fictional text without an ACL.'
+    check(authorized_context(['orphan'], documents, readers, 'lee') == [])
+    readers['orphan'] = {'lee'}
+    check(len(authorized_context(['orphan', 'orphan'], documents, readers, 'lee')) == 1)
+    check(authorized_context([], documents, readers, 'lee') == [])
+
+    # Twenty synthetic rubric observations, not twenty actual LLM executions.
+    baseline = [('majority', True, False)] * 18 + [('small_slice', False, False)] * 2
+    overall, slices, violations, passed = evaluate_pilot(baseline, F(9, 10), F(4, 5))
+    check(overall == F(9, 10))
+    check(slices == {'majority': F(1), 'small_slice': F(0)})
+    check(violations == 0 and not passed)
+    repaired = baseline[:18] + [('small_slice', True, False)] * 2
+    check(evaluate_pilot(repaired, F(9, 10), F(4, 5))[3])
+    unsafe = repaired[:-1] + [('small_slice', True, True)]
+    result = evaluate_pilot(unsafe, F(9, 10), F(4, 5))
+    check(result[0] == 1 and result[2] == 1 and not result[3])
+    check(not evaluate_pilot(baseline, F(19, 20), F(4, 5))[3])
+    for invalid in [[], [('majority', True, False)],
+                    [('majority', None, False), ('small_slice', True, False)]]:
+        try:
+            evaluate_pilot(invalid, F(9, 10), F(4, 5))
+        except ValueError:
+            check(True)
+        else:
+            raise AssertionError('Invalid evaluation was accepted')
+
+    # Potential capacity, with no assumption that time becomes cash savings.
+    tasks, adoption, saved_minutes = D('1000'), D('0.60'), D('4')
+    gross_hours = tasks * adoption * saved_minutes / 60
+    review_hours, rework_hours, hourly_value, monthly_cost = D('12'), D('8'), D('40'), D('1000')
+    net_hours = gross_hours - review_hours - rework_hours
+    capacity_value = net_hours * hourly_value
+    check(gross_hours == D('40'))
+    check(net_hours == D('20'))
+    check(capacity_value == D('800'))
+    check(capacity_value - monthly_cost == D('-200'))
+    break_even_adoption = ((monthly_cost / hourly_value + review_hours + rework_hours)
+                          * 60 / (tasks * saved_minutes))
+    check(break_even_adoption == D('0.675'))
+    check(break_even_adoption > adoption)
+    check((tasks * break_even_adoption * saved_minutes / 60
+           - review_hours - rework_hours) * hourly_value == monthly_cost)
+    print(f'{count} local checks passed; no cloud or model execution')
+    print('90% overall can fail a slice gate; 100% task success can fail a safety gate')
+    print('40 gross hours, 20 net hours, 800 capacity value, -200 versus assumed cost')
+    return count
+
+
+if __name__ == '__main__':
+    run()
+```
+
+Expected: **27 local checks pass**. Revoked or deleted content is excluded even if its ID remains in an old candidate list. Hiding a citation after constructing context would be too late. A 90% overall score fails the required small-slice gate, and perfect task success still fails a safety gate. Missing evidence does not pass. This checks arithmetic and explicit local rules, not a model's safety, factuality or cloud access enforcement.
+
+The value case yields 40 gross hours and 20 net hours after review/rework. At an assumed 40 per hour, 800 of potential capacity value falls 200 short of a 1,000 monthly cost. The 67.5% break-even adoption assumes review/rework remain fixed; changing workload mix, quality or those costs changes the result. Measure realized benefit separately. Two observations in a small slice demonstrate a blind spot but cannot establish a production failure rate.
 
 ## Integrated scenarios
 
@@ -246,7 +406,7 @@ Use Gemini for drafts, Imagen for images and Veo for video only where brand, rig
 
 ## Hands-on labs
 
-Use public or synthetic data, approved accounts, and no consequential external actions.
+These eight activities are **proposed labs**. Only the exact local worksheet above was executed. No Gemini call, managed retrieval, cloud policy, paid lesson, provider lab, notebook, model deployment or external tool action was performed. Use public or synthetic data and an authorized account when extending them into live practice; record the actual model, account/data terms, configurations and cleanup.
 
 1. **Use-case scorecard:** rank ten candidate workflows by value, feasibility, risk, adoption, evidence and reversibility; reject at least three and defend the decision.
 2. **Model-selection memo:** compare Gemini, Gemma, Imagen and Veo plus build/buy choices for one portfolio; include modality, context, quality, security, availability, latency, price and customization.
@@ -256,6 +416,19 @@ Use public or synthetic data, approved accounts, and no consequential external a
 6. **Offering map:** place 12 scenarios among Gemini app/Gems, Workspace, Notebook, Gemini Enterprise/search, Customer Engagement, AI Studio, Agent Studio/Platform and specialized APIs; explain rejected neighbors.
 7. **Responsible-AI review:** create intended/prohibited uses, affected groups, data permissions, slice metrics, human role, notice/recourse, monitoring and incident triggers for one scenario.
 8. **Executive capstone:** propose a 90-day bounded pilot with baseline, success/safety gates, RACI, architecture boundary, total cost, adoption plan, evaluation, security, rollback and scale/stop decision.
+
+| Lab | Evidence required | Negative case |
+|---|---|---|
+| 1 | Ten scored use cases, three rejected candidates, explicit owners and assumptions | High headline value with unauthorized data or no measurable baseline |
+| 2 | Version-specific capability, license, service/account and total-cost comparison | Treating every family version or endpoint as having identical rights and retention |
+| 3 | Fixed twenty-case evaluation, prompt/model/settings versions, failures and repeatability limits | A few successful demos mistaken for a measured improvement |
+| 4 | Authorized context, retrieval/answer scores, citations, deletion and revocation evidence | Restricted text enters context before its citation is hidden |
+| 5 | Identity and tool-policy diagram, exact approval scope, retries, denial and recovery evidence | Valid JSON requests the wrong order or replay performs an action twice |
+| 6 | Twelve scenarios with consumer/enterprise/API distinctions and rejected alternatives | Model Garden mistaken for your version registry or a personal notebook for enterprise API access |
+| 7 | Required slices, task/safety gates, affected groups, human review capacity and recourse | High aggregate quality hides a failing group or unsafe action |
+| 8 | Adoption, net time, realized benefit, full costs, accountable scale/stop decision | Potential capacity value recorded as guaranteed cash savings |
+
+Keep proposed evidence separate from observed results. A written policy or local model does not establish deployed enforcement.
 
 ## Original knowledge checks
 
@@ -299,6 +472,14 @@ Use public or synthetic data, approved accounts, and no consequential external a
 38. Contrast anonymization and pseudonymization.
 39. What makes responsible AI an operating practice rather than a principle list?
 40. What is the difference between a guardrail and governance?
+41. How do prompt engineering, learned prompt tuning and few-shot inference differ?
+42. Why are Model Garden and Model Registry not interchangeable?
+43. Why does a paid or no-training service claim not establish zero retention?
+44. What makes a personal notebook different from the enterprise notebook API?
+45. Why can schema-valid tool output still require rejection?
+46. What must be configured before importing a custom access-controlled search source?
+47. How can a strong overall evaluation still fail a launch gate?
+48. Why can apparent time savings fail the business case?
 
 ## Answers and reasoning
 
@@ -342,10 +523,26 @@ Use public or synthetic data, approved accounts, and no consequential external a
 38. Prevent reidentification versus replace identifiers with a reversible mapping; both retain governance and linkage risk.
 39. Named owners, enforced use/data boundaries, evidence, human control, monitoring, user recourse, incidents and reassessment.
 40. A guardrail enforces a constraint; governance supplies decision rights, policy, evidence, accountability, exceptions and lifecycle oversight.
+41. Engineering edits textual instructions/examples; learned prompt tuning optimizes soft input vectors against data while freezing the base model; few-shot inference supplies examples without itself updating weights. Supported methods vary by model.
+42. Garden supports discovering model options; Registry manages your models and versions. Deployment and serving capacity are additional concerns, and an upstream model-card update does not automatically update your imported artifact.
+43. Product-improvement/training use differs from storage for abuse monitoring, grounding, files, caches, logs or conversation state. Check the actual platform, account, features and terms.
+44. They have different account, license, project/API and sharing boundaries. The currently documented enterprise management API is preview; a personal account does not establish API entitlement.
+45. Schema conformity does not prove factual correctness, ownership, permission, approval or safe replay. Validate those before execution.
+46. The appropriate identity provider/mapping, document ACL metadata and access-control selection at store creation, plus tests for group changes and revocation. Existing stores do not automatically migrate when the identity provider changes.
+47. Required slice, safety or coverage gates can fail even when the overall average passes. Missing or tiny samples also limit the conclusion.
+48. Adoption may be limited, review/rework can consume the benefit, and capacity may not turn into cash savings. Under the worksheet's assumptions, 800 in capacity value does not cover 1,000 in monthly cost.
 
 ## Terminology and freshness checklist
 
 Map older **Vertex AI**, **Vertex AI Agent Builder/Search**, **Vertex AI Studio**, **Agentspace**, **NotebookLM**, and **Cloud Functions** content to the exact current exam wording—**Gemini Enterprise Agent Platform**, **Agent Platform**, **Agent Studio**, **Agent Search**, **Gemini Notebook/API**, and **Cloud Run functions**—without assuming a one-to-one commercial or technical replacement. Verify Gemini/Gemma/Imagen/Veo versions, Gemini application tiers, Workspace features, Gems, Customer Engagement Suite components, Model Garden, RAG APIs, AutoML, Google AI Studio, API availability, region, pricing, data terms and release stage. Preserve durable concepts even when the product label changes.
+
+## Source and freshness notes
+- Google Cloud controls the domain weights, named examples, delivery, renewal, product names and certification lifecycle.
+- The detailed PDF is current as checked, but it does not print a launch/revision date. The source-health and objective snapshots therefore watch the live certification page; any objective or delivery change returns the guide to review.
+- Generative AI products, model versions, limits, price, availability, data terms, policies and threat guidance change rapidly. **VERIFY CURRENT** before implementation.
+- This guide’s explanations, comparisons, scenarios, labs, checks and answers are original synthesis from public sources. It does not reproduce Google course content, proprietary practice questions or recalled exam items.
+
+> **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
 ## Places to learn
 
@@ -354,19 +551,12 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official exam guide](https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf), [study guide](https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf), and [sample questions](https://forms.gle/soztS7Q74AXBncATA) | Public, first-party | 3–5 hours with objective mapping and answer review |
-| [Google Skills Generative AI Leader path](https://www.skills.google/paths/1951) | No-cost path announced by Google; account required | Google estimates 7–8 hours for five activities; allow 10–14 with exercises |
-| [Google Cloud Generative AI Leader Professional Certificate on Coursera](https://www.coursera.org/professional-certificates/generative-ai-for-leaders) | Coursera audit/subscription terms vary; first-party Google Cloud courses | 8-hour program estimate; individual course cards total more, so verify the current route |
-| [Pluralsight Generative AI Leader path](https://www.pluralsight.com/paths/google-cloud-generative-ai-leader-by-pluralsight) | Paid subscription; four courses, one lab and practice exam | 6 listed hours plus 5–10 hours of applied review; current through an August 2026 Agent Platform lab |
-| [O'Reilly — GenAI on Google Cloud](https://www.oreilly.com/library/view/genai-on-google/9798341623842/) | Paid subscription/book; broader and more technical than the exam | 9h58m provider estimate plus 5–10 hours selected labs; map product names to current guide |
-| [Udemy / in28Minutes Generative AI Leader](https://www.udemy.com/course/google-cloud-certified-generative-ai-leader-certification/) | Paid marketplace course | 3h51m video plus 5–10 hours exercises/review; updated August 2026 |
+| [Google Skills Generative AI Leader path](https://www.skills.google/paths/1951) | Google account; public path confirms five activities and an update about two months earlier | Current durations/access details were not fully exposed; allow 10–14 hours as a study-planning estimate |
+| [Google Cloud Generative AI Leader Professional Certificate on Coursera](https://www.coursera.org/professional-certificates/generative-ai-for-leaders) | Coursera audit/subscription terms vary; first-party Google Cloud courses | Landing page says 8 hours, while five course cards total 20 hours (3/4/4/4/5). Treat these as different estimates; choose time based on activities completed |
+| [Pluralsight Generative AI Leader path](https://www.pluralsight.com/paths/google-cloud-generative-ai-leader-by-pluralsight) | Paid subscription; four courses, one lab and practice exam | Four course durations sum 5h44m plus a 30-minute lab (rounded path total: 6h). Public dates range December 2025–May 2026, with the lab dated August 11, 2026; add 5–10 hours of planned review |
+| [O'Reilly — GenAI on Google Cloud](https://www.oreilly.com/library/view/genai-on-google/9798341623842/) | Paid subscription/book; broader and more technical than the exam | Earlier 9h58m estimate **not reverified** because public access was blocked; allow 5–10 hours for selected practice and terminology mapping |
+| [Udemy / in28Minutes Generative AI Leader](https://www.udemy.com/course/google-cloud-certified-generative-ai-leader-certification/) | Paid marketplace course | Earlier 3h51m and August 2026 update **not reverified** because public access was blocked; allow 5–10 hours for exercises/review |
 
-No exact current MeasureUp product was found during this review. Google’s official sample questions and Pluralsight path provide transparent practice options. Reject “actual questions,” copied exam material, or guaranteed replicas; use explanation-led assessment to locate a concept or decision gap.
+No exact current MeasureUp product was found during this review. The Google-authored Coursera outline lists five courses and practical Gemini, NotebookLM and AI Studio activities; that is public metadata, not evidence of completed provider exercises. Pluralsight's four course titles follow the exam domains, but dates and a lab title alone do not establish full current-product alignment. The sample-form content was not exposed by the fetch, and no paid lessons or assessment questions were read.
 
-## Source and freshness notes
-
-- Google Cloud controls the domain weights, named examples, delivery, renewal, product names and certification lifecycle.
-- The detailed PDF is current as checked, but it does not print a launch/revision date. The source-health and objective snapshots therefore watch the live certification page; any objective or delivery change returns the guide to review.
-- Generative AI products, model versions, limits, price, availability, data terms, policies and threat guidance change rapidly. **VERIFY CURRENT** before implementation.
-- This guide’s explanations, comparisons, scenarios, labs, checks and answers are original synthesis from public sources. It does not reproduce Google course content, proprietary practice questions or recalled exam items.
-
-> **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
+For focused technical gaps, use the linked documentation on data handling, access controls, model lifecycle and tool validation. Allow 2–3 additional hours for selected reading and the original worksheet; this is a planning estimate. Google's official sample resource and independently authored exercises can help locate learning gaps. Reject “actual questions,” copied exam material, or guaranteed replicas; use explanation-led assessment to locate a concept or decision gap.

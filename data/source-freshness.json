@@ -4,6 +4,235 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-googlegenerativeaileader-deep-review",
+      "title": "GOOGLE-GENERATIVE-AI-LEADER complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "GOOGLE-GENERATIVE-AI-LEADER"
+      ],
+      "results": [
+        {
+          "exam_code": "GOOGLE-GENERATIVE-AI-LEADER",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-GENERATIVE-AI-LEADER-generative-ai-leader.md",
+          "baseline_sha256": "4b094a332e6d579b34093f60285e42cf52ac703411bd69459040848115abc2c8",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Canonical page, actual five-page exam PDF and full extracted text of eleven-page study PDF read. Four weights30/35/20/15; 61 enumerated considerations in21/18/10/12 under15 numbered objectives, including three published repetitions. No PDF revision date; page says recently rebranded without date. Standard90min/USD99beforetax/50–60MC/four languages/three-year validity/no prerequisite unchanged. Renewal eligibility stated without importing CDL renewal-route details. Both monitors unchanged; no accepted snapshot rewrite."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Targeted primary developer terms/retention, Agent Platform retention, enterprise notebook preview, search ACL/identity, Registry/deployment/MLOps, structured output/function calling, and exact Gemma license boundary read. Prior same-session app/platform/Model Armor research reused with current healthy fetches. Exact public Python passed27 model/arithmetic checks; no cloud or LLM execution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Full Google Research February10,2022 learned-soft-prompt article and June8,2023 official SAIF introduction read for durable concepts, not old benchmarks or availability. April22,2026 app/platform announcement already fully read in preceding CDL review. Current branding notice lacks a launch date; enterprise notebook management API remains marked preview. Terms are dated March23,2026; no new exam date inferred."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Google Skills confirms five activities, relative update about two months and limited public duration details. Google-authored Coursera five cards3/4/4/4/5 total20h versus8h landing estimate; public applied activities retain NotebookLM naming. Pluralsight four courses5h44 plus30min lab versus rounded6h; datesDecember2025–May2026 andlabAugust11,2026. OReilly/Udemy access blocked; inherited9h58 and3h51/Augustdate explicitly unverified. No paid lessons, provider labs, sample questions or proprietary assessments read."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Remove forward-looking characterization of active names while preserving exact exam/workbook differences. Explain learned prompt tuning versus text instructions, Garden versus Registry/serving, drift versus accuracy, consumer/enterprise notebook/API boundaries, account-dependent data treatment and retention versus training use. Add access-control creation/migration constraints, schema versus semantic permission validation, six SAIF control areas and local evidence worksheet. Strengthen eight proposed labs,48 answers; Places to learn final."
+            }
+          },
+          "findings": [
+            {
+              "id": "googlegenerativeaileader-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Exam and study workbook labels differ",
+              "url": "https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-GENERATIVE-AI-LEADER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The exam still names Cloud Functions and Customer Engagement Suite; study workbook uses Cloud Run functions and current customer-experience labels.",
+              "recommendation": "Preserve the exact exam scope with qualified product aliases; do not invent a revision date or treat new names as future scope.",
+              "disposition": "applied",
+              "source_id": "google-gail-exam-guide",
+              "resolution": "Preserve the exact exam scope with qualified product aliases; do not invent a revision date or treat new names as future scope."
+            },
+            {
+              "id": "googlegenerativeaileader-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Prompt tuning has a learned-vector meaning",
+              "url": "https://research.google/blog/guiding-frozen-language-models-with-learned-soft-prompts/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-GENERATIVE-AI-LEADER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The Google Research article trains soft input vectors with the base model frozen, distinct from textual prompt design.",
+              "recommendation": "Explain conceptual differences from prompt engineering, few-shot inference and model/adaptor tuning, without assuming every model supports the technique.",
+              "disposition": "applied",
+              "source_id": "google-soft-prompt-tuning",
+              "resolution": "Explain conceptual differences from prompt engineering, few-shot inference and model/adaptor tuning, without assuming every model supports the technique."
+            },
+            {
+              "id": "googlegenerativeaileader-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Model choice and owned model lifecycle are separate",
+              "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-registry/introduction",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-GENERATIVE-AI-LEADER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Registry manages models and versions; deployment docs distinguish managed APIs, tuned endpoints and imported models that do not automatically update with Garden.",
+              "recommendation": "Add a lifecycle/evidence table and correct the workbook-inspired Garden/storage ambiguity.",
+              "disposition": "applied",
+              "source_id": "gcp-model-registry",
+              "resolution": "Add a lifecycle/evidence table and correct the workbook-inspired Garden/storage ambiguity."
+            },
+            {
+              "id": "googlegenerativeaileader-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Data handling cannot be inferred from a free UI or upgrade label",
+              "url": "https://ai.google.dev/gemini-api/terms",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-GENERATIVE-AI-LEADER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current terms distinguish unpaid/paid service treatment, AI Studio account conditions, API billed-project conditions and regional exceptions.",
+              "recommendation": "Require the actual account/service path and current terms before organizational data use; avoid universal free-versus-enterprise shortcuts.",
+              "disposition": "applied",
+              "source_id": "google-gemini-developer-terms",
+              "resolution": "Require the actual account/service path and current terms before organizational data use; avoid universal free-versus-enterprise shortcuts."
+            },
+            {
+              "id": "googlegenerativeaileader-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A training restriction does not eliminate retention",
+              "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-GENERATIVE-AI-LEADER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Platform documentation lists abuse monitoring, grounding, request logging, stored interactions and product-specific retention conditions.",
+              "recommendation": "Separate training use from storage and evaluate enabled features on the selected platform.",
+              "disposition": "applied",
+              "source_id": "gcp-agent-platform-zdr",
+              "resolution": "Separate training use from storage and evaluate enabled features on the selected platform."
+            },
+            {
+              "id": "googlegenerativeaileader-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Personal notebooks do not establish enterprise API entitlement",
+              "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-GENERATIVE-AI-LEADER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The enterprise API is preview and requires enterprise setup/licenses, with notebooks represented in a cloud project.",
+              "recommendation": "Separate workbook personal-browser activity from enterprise API/account/permission boundaries.",
+              "disposition": "applied",
+              "source_id": "gcp-notebook-api",
+              "resolution": "Separate workbook personal-browser activity from enterprise API/account/permission boundaries."
+            },
+            {
+              "id": "googlegenerativeaileader-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Identity and access control must be designed before data ingestion",
+              "url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-GENERATIVE-AI-LEADER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Access-control selection occurs at store creation, and identity-provider changes do not automatically update existing stores.",
+              "recommendation": "Add identity mapping, ACL metadata, ingestion/federation and revocation/migration decisions with proposed live tests.",
+              "disposition": "applied",
+              "source_id": "gcp-search-identity-provider",
+              "resolution": "Add identity mapping, ACL metadata, ingestion/federation and revocation/migration decisions with proposed live tests."
+            },
+            {
+              "id": "googlegenerativeaileader-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Schema-valid content can be semantically incorrect",
+              "url": "https://ai.google.dev/gemini-api/docs/structured-output",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-GENERATIVE-AI-LEADER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Structured-output documentation requires application value validation and handling of semantically incorrect conforming outputs.",
+              "recommendation": "Add separate syntax, business-value, permission, approval and replay tests for proposed tool actions.",
+              "disposition": "applied",
+              "source_id": "google-gemini-structured-output",
+              "resolution": "Add separate syntax, business-value, permission, approval and replay tests for proposed tool actions."
+            },
+            {
+              "id": "googlegenerativeaileader-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "SAIF spans six control areas and the business process",
+              "url": "https://blog.google/innovation-and-ai/technology/safety-security/introducing-googles-secure-ai-framework/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-GENERATIVE-AI-LEADER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The original framework covers foundational controls, detection/response, automation, consistency, feedback and business context.",
+              "recommendation": "Connect these areas to ownership and evidence; do not imply a single filter establishes secure AI.",
+              "disposition": "applied",
+              "source_id": "google-saif-introduction",
+              "resolution": "Connect these areas to ownership and evidence; do not imply a single filter establishes secure AI."
+            }
+          ],
+          "notes": "Mapped 61 published considerations under 15 numbered objectives, preserving three repeated data bullets. Actual five-page exam PDF and eleven-page study-workbook text read; both monitor hashes unchanged. Added a hash-matched Python worksheet with 27 local checks, strengthened account/retention, identity/context, tool-validation and model-lifecycle distinctions, 48 answered checks and eight proposed labs. Public catalogs refreshed; cloud/model enforcement and provider labs remain unexecuted. Same-context AI review; human review pending. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 9,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-googleclouddigitalleader-deep-review",
       "title": "GOOGLE-CLOUD-DIGITAL-LEADER complete guide and learning-content review",
       "rubric_version": 1,
