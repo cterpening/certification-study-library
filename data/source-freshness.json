@@ -4,6 +4,233 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-salesforceplatformappbuilder-deep-review",
+      "title": "SALESFORCE-PLATFORM-APP-BUILDER complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "results": [
+        {
+          "exam_code": "SALESFORCE-PLATFORM-APP-BUILDER",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-PLATFORM-APP-BUILDER-salesforce-certified-platform-app-builder.md",
+          "baseline_sha256": "ef7813c7e0e244742360d9aa98af583c21bc32990dde9944ac56d5c49669bbb0",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Fullcanonicalbrowseroutline manuallycompared:26substantiveobjectives/weightsmatch,one addedarticle disclosed;baseline retained,automatedmonitor stillmanual-review. DedicatedpolicyandscheduleannualWinter,examguidethreetimes/year separatelyblocked."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Browser mainformula,rollup,approval-locking anddeployment docs plusTrailheadrelationships/rollback reviewed.28actual localchecks,notSalesforceruntime."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "API68 enforcing-useroption reviewed same session;Winter26maintenanceintrochecked. LinkedhistoricalCreateRecordsreleasebodyunreadable;no preciseAPI65typeclaimadopted."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Currenttrail2360minutes,liveevent300timedminutesexclude breaks;two403commercialpages,title-onlyForceAcademy/YouTubemetadata distinguishedfrominteriorreview."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Exam-guide maintenance3/year conflicts with dedicatedannualpolicy andWinter26schedule. Actualassignedprofile requirement not accessed; no vendor contact. Automatedsource remainsmanualreview."
+            }
+          },
+          "findings": [
+            {
+              "id": "salesforceplatformappbuilder-deep-1",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Exam maintenance sentence conflicts with dedicated policy",
+              "url": "https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SALESFORCE-PLATFORM-APP-BUILDER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Examarticle3times/year;dedicatedpolicy1annualbadge andWintercycle/December4,2026currentduedate.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "salesforceplatformappbuilder-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Credential-specific schedule supplies a dated maintenance reference",
+              "url": "https://help.salesforce.com/s/articleView?id=005298922&language=de&type=1",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SALESFORCE-PLATFORM-APP-BUILDER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "BrowserEnglishbodythroughGermanlocale listsWinter26December11,2025availability/December4,2026duePT,subjecttochange.",
+              "recommendation": "Pointlearners toassignedcredentialrequirementanddedicatedschedule,keepconflictingexamwordingvisible.",
+              "disposition": "applied",
+              "source_id": "salesforce-maintenance-schedule-de",
+              "resolution": "Pointlearners toassignedcredentialrequirementanddedicatedschedule,keepconflictingexamwordingvisible."
+            },
+            {
+              "id": "salesforceplatformappbuilder-deep-3",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "The refresh emphasizes demonstrated Flow skills",
+              "url": "https://admin.salesforce.com/blog/2026/what-does-the-salesforce-platform-app-builder-certification-prove-today-podcast",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SALESFORCE-PLATFORM-APP-BUILDER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "August27interviewdistinguishes create/configure/troubleshoot fromdescribe andfoundationalAgentforce.",
+              "recommendation": "Use originalfailure/recoveryactivities andanswer40prompts;no exactAugust21dateassertionwithoutsource.",
+              "disposition": "applied",
+              "source_id": "salesforce-admins-app-builder-refresh-2026",
+              "resolution": "Use originalfailure/recoveryactivities andanswer40prompts;no exactAugust21dateassertionwithoutsource."
+            },
+            {
+              "id": "salesforceplatformappbuilder-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A derived field can reveal a restricted related value",
+              "url": "https://help.salesforce.com/s/articleView?id=customize_cross_object.htm&language=en_US&type=5",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SALESFORCE-PLATFORM-APP-BUILDER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Visiblecross-objectformula canexposevaluewithoutparentrecordaccess.",
+              "recommendation": "Addderived-outputaudiencereview andnegative-personatest.",
+              "disposition": "applied",
+              "source_id": "salesforce-cross-object-formula",
+              "resolution": "Addderived-outputaudiencereview andnegative-personatest."
+            },
+            {
+              "id": "salesforceplatformappbuilder-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Hidden detail fields can still contribute to a visible aggregate",
+              "url": "https://help.salesforce.com/s/articleView?id=platform.fields_about_roll_up_summary_fields.htm&language=en_US&type=5",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SALESFORCE-PLATFORM-APP-BUILDER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Roll-upincludesvalueshiddenbydetailFLS;outputpermissions matter.",
+              "recommendation": "Explain output-fieldsecurity andseparateSQLgrainexamplefromSalesforcerollupengine.",
+              "disposition": "applied",
+              "source_id": "salesforce-rollup-summary",
+              "resolution": "Explain output-fieldsecurity andseparateSQLgrainexamplefromSalesforcerollupengine."
+            },
+            {
+              "id": "salesforceplatformappbuilder-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Handled faults and transaction rollback are different",
+              "url": "https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/roll-back-changes-after-an-error",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SALESFORCE-PLATFORM-APP-BUILDER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Faultpathcanpreservepartialchanges;explicitrollbackcannotundoearliercommit.",
+              "recommendation": "ExecuteoriginalSQLfault/commitcomparisons andproposeorgboundaryverification.",
+              "disposition": "applied",
+              "source_id": "salesforce-flow-rollback",
+              "resolution": "ExecuteoriginalSQLfault/commitcomparisons andproposeorgboundaryverification."
+            },
+            {
+              "id": "salesforceplatformappbuilder-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Parallel approval steps require coordinated record locking",
+              "url": "https://help.salesforce.com/s/articleView?id=platform.automate_automated_approvals_concept_record_locking.htm&language=en_US&type=5",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SALESFORCE-PLATFORM-APP-BUILDER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Oneapproval lock perrecord;concurrentstep/processattemptscanerror.",
+              "recommendation": "Teachstage/processcoordination,allowededits,completionandfailure recovery.",
+              "disposition": "applied",
+              "source_id": "salesforce-flow-approval-locking",
+              "resolution": "Teachstage/processcoordination,allowededits,completionandfailure recovery."
+            },
+            {
+              "id": "salesforceplatformappbuilder-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Validation and section-level success labels need interpretation",
+              "url": "https://help.salesforce.com/s/articleView?id=sf.deploy_monitoring.htm&language=en_US&type=5",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SALESFORCE-PLATFORM-APP-BUILDER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Validationdoesnotsavecomponents;nonproductionpartialsuccesscanappearunderSucceeded. LaterdeploymentinvalidatesQuickDeployeligibility.",
+              "recommendation": "Inspectexactstatus/componentresult andtargetevidence;localdependencygraphnotdeploymentproof.",
+              "disposition": "applied",
+              "source_id": "salesforce-deployment-monitoring",
+              "resolution": "Inspectexactstatus/componentresult andtargetevidence;localdependencygraphnotdeploymentproof."
+            },
+            {
+              "id": "salesforceplatformappbuilder-deep-9",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "An enforced user context does not establish customer identity",
+              "url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "SALESFORCE-PLATFORM-APP-BUILDER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "NewoptionAPI68+eligibleflows preventscontextinheritance,not identity substitution.",
+              "recommendation": "Checkversion,actualcallerandcustomerqueryscoping before action acceptance.",
+              "disposition": "applied",
+              "source_id": "salesforce-flow-api68-context",
+              "resolution": "Checkversion,actualcallerandcustomerqueryscoping before action acceptance."
+            }
+          ],
+          "notes": "Manually compared all26 substantive objectives and five weights, retaining baseline bytes with one disclosed editorial difference. Added40 answered prompts and28 executed local relationship,aggregation,transaction anddependency checks. Clarified derived-field visibility,Flow fault/lock behavior anddeployment status. Official maintenance wording conflicts;client-rendered monitoring,inaccessible training metadata,live org work andhuman review remain limited. Same-context AI review; human review pending. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 8,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-29-salesforceplatformadministrator-deep-review",
       "title": "SALESFORCE-PLATFORM-ADMINISTRATOR complete guide and learning-content review",
       "rubric_version": 1,

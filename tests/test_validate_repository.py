@@ -19,8 +19,8 @@ SPEC.loader.exec_module(validator)
 
 class RepositoryValidationTests(unittest.TestCase):
     def test_rubric_two_schema_requires_guide_hash_and_preserves_legacy_records(self) -> None:
-        schema = json.loads((validator.ROOT / "schemas/ai-audit-catalog.schema.json").read_text())
-        catalog = json.loads((validator.ROOT / "data/ai-audits.json").read_text())
+        schema = json.loads((validator.ROOT / "schemas/ai-audit-catalog.schema.json").read_text(encoding="utf-8"))
+        catalog = json.loads((validator.ROOT / "data/ai-audits.json").read_text(encoding="utf-8"))
         catalog["batches"] = [catalog["batches"][0]]
         errors = []
         validator.validate_json_schema(catalog, schema, "audits", errors)
@@ -39,11 +39,11 @@ class RepositoryValidationTests(unittest.TestCase):
         self.assertTrue(any("guide_content_sha256" in e for e in errors))
 
     def test_rubric_two_semantic_validation_requires_hash_but_allows_history(self) -> None:
-        catalog = json.loads((validator.ROOT / "data/ai-audits.json").read_text())
+        catalog = json.loads((validator.ROOT / "data/ai-audits.json").read_text(encoding="utf-8"))
         catalog["batches"] = [catalog["batches"][0]]
         catalog["batches"][0]["rubric_version"] = 2
-        exams = json.loads((validator.ROOT / "config/exams.json").read_text())["exams"]
-        reviews = json.loads((validator.ROOT / "data/reviews.json").read_text())["reviews"]
+        exams = json.loads((validator.ROOT / "config/exams.json").read_text(encoding="utf-8"))["exams"]
+        reviews = json.loads((validator.ROOT / "data/reviews.json").read_text(encoding="utf-8"))["reviews"]
         by_code = {exam["code"]: exam for exam in exams}
         errors = []
         validator.validate_ai_audits(catalog, by_code, reviews, errors)
@@ -134,8 +134,8 @@ class RepositoryValidationTests(unittest.TestCase):
         alias_check.assert_not_called()
 
     def test_unknown_source_type_is_still_rejected(self) -> None:
-        schema = json.loads((validator.ROOT / "schemas/source-catalog.schema.json").read_text())
-        catalog = json.loads((validator.ROOT / "data/sources.json").read_text())
+        schema = json.loads((validator.ROOT / "schemas/source-catalog.schema.json").read_text(encoding="utf-8"))
+        catalog = json.loads((validator.ROOT / "data/sources.json").read_text(encoding="utf-8"))
         catalog["sources"][0]["source_type"] = "invented-source-category"
         errors = []
         validator.validate_json_schema(catalog, schema, "sources", errors)

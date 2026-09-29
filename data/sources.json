@@ -3,6 +3,132 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "salesforce-maintenance-policy-de",
+      "title": "Salesforce certification maintenance policy, English body through German locale",
+      "url": "https://help.salesforce.com/s/articleView?id=005298841&language=de&type=1",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-policy",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: DirectHTTPshell; browser English main body through German-locale wrapper read,especially overview andadministrator table. Annualbadge/AppBuilderWinter;not acredential-profile lookup. Otherrole tablesnot audited forconsistency. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-maintenance-schedule-de",
+      "title": "Salesforce certification maintenance schedule, English body through German locale",
+      "url": "https://help.salesforce.com/s/articleView?id=005298922&language=de&type=1",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-policy",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: DirectHTTPshell; browser English overview/completion/date table throughdate-subject-to-change note read. Winter26Dec11,2025available/Dec4,2026due,PT;includesAppBuilder. Remainingrole tablesnotfullyaudited;actualassignedeligibilitynotknown. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-cross-object-formula",
+      "title": "Cross-object formulas and related-record visibility",
+      "url": "https://help.salesforce.com/s/articleView?id=customize_cross_object.htm&language=en_US&type=5",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: DirectHTTPshell; browser complete main shortarticle read,up-to10relationships,lookup/masterdetail,relatedvalueexposurewithoutparentrecordaccess andreference examples. Noactualformula/usersecuritytest. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-flow-approval-locking",
+      "title": "Record locking in Flow Approval processes",
+      "url": "https://help.salesforce.com/s/articleView?id=platform.automate_automated_approvals_concept_record_locking.htm&language=en_US&type=5",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: DirectHTTPshell; complete browser mainlocking article read. Sequential/parallelcoordination,one lock,backgroundlock/unlock,allowededits/adminexception andconcurrentprocess submissions. No flow approval runtime;not adopting detailed evaluation-flow recipe. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-object-relationships",
+      "title": "Create object relationships",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/data_modeling/object_relationships",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Complete main public lesson andshown activity steps read;lookup/masterdetail/hierarchicalUser/cascade. Noorgactivity orchallengeanswercopied. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-deployment-monitoring",
+      "title": "Monitor deployments",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.deploy_monitoring.htm&language=en_US&type=5",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: DirectHTTPshell; complete browser mainmonitor article read. Validation/actualdeploy,statusprefix,nonproductionpartialsuccess,quickdeploy10day/tests/coverage andinvalidatedbylaterdeployment. Linkedvideos andfullMetadataAPIguide notread,no deployment. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-app-builder-winter26-unit",
+      "title": "Maintain Platform App Builder certification for Winter26",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/platform-app-builder-certification-maintenance-winter-26/maintain-your-platform-app-builder-certification-for-winter-26",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Complete main5-minuteintroductorylesson read,includingfileattach,newrecordoutput,summaryandpreviewstyle. Nochallengeanswers oractivity. PreciseAPI65output-type wording notadopted withoutreadablelinkedreleasecontract. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-rollup-summary",
+      "title": "Roll-up summary field",
+      "url": "https://help.salesforce.com/s/articleView?id=platform.fields_about_roll_up_summary_fields.htm&language=en_US&type=5",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: OriginalURLwithouttype andcorrectedtype5directHTTPshell. Correctedbrowserfullmainread,includingadministration/management/bestpractices. Derived-fieldvisibility,conversionconstraints andparentvalidation used;not all documentedcurrency/timing/examplesadopted. No engine execution; apparent greater-than/over100example inconsistency notreproduced. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-flow-created-record-output",
+      "title": "Add newly created records immediately to a Flow",
+      "url": "https://help.salesforce.com/s/articleView?language=en_US&id=release-notes.rn_automate_flow_builder_access_new_records_immediately.htm&release=258&type=5",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Exactrelease link extracted frommaintenanceunit. Directandbrowserrequestsreturnedloading/CSSshell. No additionalruntime/output-type claim derived; historicalfeaturecontextonlyfromreadablemaintenanceunit. No org execution. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "salesforce-admin-exam-guide-help",
       "title": "Platform Administrator exam guide",
       "url": "https://help.salesforce.com/s/articleView?id=005298966&type=1&language=en_US",
@@ -67,10 +193,11 @@
       "source_type": "release-notes",
       "access_model": "public",
       "supported_exams": [
-        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+        "SALESFORCE-PLATFORM-ADMINISTRATOR",
+        "SALESFORCE-PLATFORM-APP-BUILDER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Direct HTTP shell; browser main versioned release section read in full. Applies only API68.0+ screen/autolaunched flows with new enforcing-user option. Ordinary user context can inherit system caller permissions. No release rollout or org runtime verified. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Direct HTTP shell; browser main versioned release section read in full. Applies only API68.0+ screen/autolaunched flows with new enforcing-user option. Ordinary user context can inherit system caller permissions. No release rollout or org runtime verified. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Fresh directHTTPshell; complete browser main versioned change read during preceding same-sessionAdministratorreview. API68+ enforcing-user option for eligibleflows,not changedidentity orproof oforgavailability. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
     },
     {
       "id": "salesforce-permission-muting",
@@ -81,10 +208,11 @@
       "source_type": "official-training",
       "access_model": "public",
       "supported_exams": [
-        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+        "SALESFORCE-PLATFORM-ADMINISTRATOR",
+        "SALESFORCE-PLATFORM-APP-BUILDER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Intro and muting considerations, initial example setup rationale, dependencies and installed-package discussion read. Some step-by-step activity middle not reviewed. Muting affects one group and dependent permissions; other grants persist. No activity run or challenge answers copied. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Intro and muting considerations, initial example setup rationale, dependencies and installed-package discussion read. Some step-by-step activity middle not reviewed. Muting affects one group and dependent permissions; other grants persist. No activity run or challenge answers copied. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Fresh9672-charactercapture; intro/considerations,setup rationale,dependencies andinstalled-package discussion read same session. Not allstep-by-stepactivity andnochallengeanswers. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
     },
     {
       "id": "salesforce-object-security",
@@ -109,10 +237,11 @@
       "source_type": "official-training",
       "access_model": "public",
       "supported_exams": [
-        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+        "SALESFORCE-PLATFORM-ADMINISTRATOR",
+        "SALESFORCE-PLATFORM-APP-BUILDER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Selected Problem with Fault Paths, Roll Back Records and screen-boundary explanation, plus Custom Error introduction and first setup steps read. Not later knowledge check/assessment or all activity steps. No package installation or Flow execution. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Selected Problem with Fault Paths, Roll Back Records and screen-boundary explanation, plus Custom Error introduction and first setup steps read. Not later knowledge check/assessment or all activity steps. No package installation or Flow execution. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Fresh9361-character capture matches same-session reading. Problem with Fault Paths,ScreenRollback andtransactionboundary,CustomErrorintro/firststeps reviewed;laterknowledgecheck/allactivitysteps notread. No Flowrun. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
     },
     {
       "id": "salesforce-agent-user-access",
@@ -123,10 +252,11 @@
       "source_type": "official-documentation",
       "access_model": "public",
       "supported_exams": [
-        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+        "SALESFORCE-PLATFORM-ADMINISTRATOR",
+        "SALESFORCE-PLATFORM-APP-BUILDER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Direct HTTP shell; browser main article read including full three-column authentication table and verified-customer scoping section. Supported credential-verified Experience Cloud/Enhanced Chat authenticated path distinguished from identified contact. No linked video or live agent/channel. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Direct HTTP shell; browser main article read including full three-column authentication table and verified-customer scoping section. Supported credential-verified Experience Cloud/Enhanced Chat authenticated path distinguished from identified contact. No linked video or live agent/channel. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: FreshHTTPshell; browser main andfullthree-columnauthenticationtable read inprecedingAdministratorreview. Verifiedcontactvscredential-authenticatedsite andcustomerqueryscoping,notalllinkedguides oragentexecution. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
     },
     {
       "id": "salesforce-upsert-external-id",
@@ -49441,31 +49571,119 @@
         "SALESFORCE-PLATFORM-DEVELOPER",
         "SALESFORCE-AGENTFORCE-SPECIALIST"
       ],
-      "notes": "Commercial study guides and explained original practice exams; verify the displayed blueprint and release before purchase. Agentforce marketing indexed on September 2 still described an older five-domain/18-objective revision, so verify a six-domain Spring '26 update before relying on it. September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Public certification catalog read, including Administrator product links and associate prerequisite wording. This conflicts with official no-prerequisite rule. No assertion about practice originality or quality. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
+      "notes": "Commercial study guides and explained original practice exams; verify the displayed blueprint and release before purchase. Agentforce marketing indexed on September 2 still described an older five-domain/18-objective revision, so verify a six-domain Spring '26 update before relying on it. September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Public certification catalog read, including Administrator product links and associate prerequisite wording. This conflicts with official no-prerequisite rule. No assertion about practice originality or quality. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Fresh catalog capture; complete public main catalog read during immediately preceding Administrator review. Only general App Builder resource presence used here; no current App Builder product interior or quality evaluated. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"salesforce-platform-app-builder-guide","title":"Salesforce Certified Platform App Builder Exam Guide","url":"https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1","publisher":"Salesforce","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-07","supported_exams":["SALESFORCE-PLATFORM-APP-BUILDER"],"notes":"Canonical corrected Summer '26 five-domain blueprint and 73% exam contract launched August 21, 2026. Article 005389157 was an incorrect route and is retained only in historical freshness evidence."
+      "id": "salesforce-platform-app-builder-guide",
+      "title": "Salesforce Certified Platform App Builder Exam Guide",
+      "url": "https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1",
+      "publisher": "Salesforce",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "notes": "Canonical corrected Summer '26 five-domain blueprint and 73% exam contract launched August 21, 2026. Article 005389157 was an incorrect route and is retained only in historical freshness evidence. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Direct HTTP61-character loading/CSS shell; automatic monitor returns documented manual-review. Full browser main exam guide read,including26 bullets,73% score,SU26 label,delivery andmaintenance. Browser objective2 inserts the before AgentExchange;substantive scope/weights match saved baseline. Exam-maintenance sentence says3times/year,conflicting with dedicated policy/schedule. No silent snapshot update. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"salesforce-platform-app-builder-certification","title":"Salesforce Certified Platform App Builder","url":"https://trailhead.salesforce.com/credentials/platformappbuilder","publisher":"Salesforce","authority_class":1,"source_type":"official-certification-page","access_model":"public","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-APP-BUILDER"],"notes":"Current credential identity, role framing and official learning entry point."
+      "id": "salesforce-platform-app-builder-certification",
+      "title": "Salesforce Certified Platform App Builder",
+      "url": "https://trailhead.salesforce.com/credentials/platformappbuilder",
+      "publisher": "Salesforce",
+      "authority_class": 1,
+      "source_type": "official-certification-page",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "notes": "Current credential identity, role framing and official learning entry point. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Complete main credential text read; current learning trail linked. No Academy booking, authentication or exam enrollment. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"salesforce-platform-app-builder-learning-path","title":"Prepare for Your Salesforce Platform App Builder Certification","url":"https://trailhead.salesforce.com/content/learn/trails/prepare-for-your-salesforce-platform-app-builder-certification","publisher":"Salesforce","authority_class":1,"source_type":"official-learning-path","access_model":"public","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-APP-BUILDER"],"notes":"Free broad hands-on Trailhead path listed at approximately 39 hours 20 minutes; select material against the refreshed blueprint."
+      "id": "salesforce-platform-app-builder-learning-path",
+      "title": "Prepare for Your Salesforce Platform App Builder Certification",
+      "url": "https://trailhead.salesforce.com/content/learn/trails/prepare-for-your-salesforce-platform-app-builder-certification",
+      "publisher": "Salesforce",
+      "authority_class": 1,
+      "source_type": "official-learning-path",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "notes": "Free broad hands-on Trailhead path listed at approximately 39 hours 20 minutes; select material against the refreshed blueprint. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Complete public main trail/card grid read:20minoverview plus565/290/645/680/160min domains =2360min39h20. Steps2overview and7/7/7/6/6. AgentExchange,Agentforce admin setup anddeployment routes included;not all badgeinteriors. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"salesforce-platform-app-builder-maintenance-winter-26","title":"Platform App Builder Certification Maintenance (Winter '26)","url":"https://trailhead.salesforce.com/content/learn/modules/platform-app-builder-certification-maintenance-winter-26","publisher":"Salesforce","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-APP-BUILDER"],"notes":"Free approximately 30-minute release-maintenance module; use for recent product context and verify the maintenance deadline in the credential account."
+      "id": "salesforce-platform-app-builder-maintenance-winter-26",
+      "title": "Platform App Builder Certification Maintenance (Winter '26)",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/platform-app-builder-certification-maintenance-winter-26",
+      "publisher": "Salesforce",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "notes": "Free approximately 30-minute release-maintenance module; use for recent product context and verify the maintenance deadline in the credential account. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Complete public module listing read:30min split5-minute introductory unit and25-minute multi-column list-view activity. No activity/assessment completion. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-salesforce-platform-app-builder-wheeler","title":"Salesforce Certified Platform App Builder + Practice Test","url":"https://www.udemy.com/course/salesforce-platform-app-builder/","publisher":"Udemy / Mike Wheeler and team","authority_class":3,"source_type":"commercial-course","access_model":"paid","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-APP-BUILDER"],"notes":"23h35m listed course updated July 2026, before the August 21 blueprint refresh; explicitly reconcile every section."
+      "id": "udemy-salesforce-platform-app-builder-wheeler",
+      "title": "Salesforce Certified Platform App Builder + Practice Test",
+      "url": "https://www.udemy.com/course/salesforce-platform-app-builder/",
+      "publisher": "Udemy / Mike Wheeler and team",
+      "authority_class": 3,
+      "source_type": "commercial-course",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "notes": "23h35m listed course updated July 2026, before the August 21 blueprint refresh; explicitly reconcile every section. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: HTTP403; prior23h35/July2026 metadata not reverified. No paid content,practice answers or purchase. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-salesforce-platform-app-builder-training","title":"Salesforce Platform App Builder Certification Training","url":"https://www.oreilly.com/videos/salesforce-platform-app/9781804611197/","publisher":"O'Reilly Media / Packt","authority_class":3,"source_type":"commercial-course","access_model":"paid","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-APP-BUILDER"],"notes":"12h3m foundational video published August 2022; supplement and correct with current Flow, Agentforce, deployment and Summer '26 objectives."
+      "id": "oreilly-salesforce-platform-app-builder-training",
+      "title": "Salesforce Platform App Builder Certification Training",
+      "url": "https://www.oreilly.com/videos/salesforce-platform-app/9781804611197/",
+      "publisher": "O'Reilly Media / Packt",
+      "authority_class": 3,
+      "source_type": "commercial-course",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "notes": "12h3m foundational video published August 2022; supplement and correct with current Flow, Agentforce, deployment and Summer '26 objectives. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: HTTP403; prior12h3/August2022 metadata not reverified. No video played orpaid interior. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-salesforce-platform-app-builder-bootcamp","title":"Salesforce Platform App Builder Certification Bootcamp","url":"https://www.oreilly.com/live-events/salesforce-platform-app-builder-certification-bootcamp/0642572176150/","publisher":"O'Reilly Media","authority_class":3,"source_type":"commercial-live-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-APP-BUILDER"],"notes":"Live scheduled training; verify the displayed start/end time, recording access and Summer '26 alignment before enrollment."
+      "id": "oreilly-salesforce-platform-app-builder-bootcamp",
+      "title": "Salesforce Platform App Builder Certification Bootcamp",
+      "url": "https://www.oreilly.com/live-events/salesforce-platform-app-builder-certification-bootcamp/0642572176150/",
+      "publisher": "O'Reilly Media",
+      "authority_class": 3,
+      "source_type": "commercial-live-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "notes": "Live scheduled training; verify the displayed start/end time, recording access and Summer '26 alignment before enrollment. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Complete public main outline read,instructor Michaela Grofčík,eight timed sections300min including10minwrap-up,excludinguntimedbreaks. No upcoming eventdateverified;instructorTrailmixURLplaceholder. No practice-question contents orliveevent. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"youtube-salesforce-ben-platform-app-builder-overview","title":"Salesforce Platform App Builder Certification Overview","url":"https://www.youtube.com/watch?v=q_xsHJDgMfY","publisher":"Salesforce Ben","authority_class":3,"source_type":"community-learning","access_model":"public","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-APP-BUILDER"],"notes":"Five-minute December 2023 orientation, not a current blueprint source; use only to understand the credential's broad purpose."
+      "id": "youtube-salesforce-ben-platform-app-builder-overview",
+      "title": "Salesforce Platform App Builder Certification Overview",
+      "url": "https://www.youtube.com/watch?v=q_xsHJDgMfY",
+      "publisher": "Salesforce Ben",
+      "authority_class": 3,
+      "source_type": "community-learning",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "notes": "Five-minute December 2023 orientation, not a current blueprint source; use only to understand the credential's broad purpose. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Only title/footer extracted224characters. Title says5Minute;actualduration,2023date andvideo content notverified;video notplayed. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
     },
     {
       "id":"salesforce-platform-developer-guide","title":"Salesforce Certified Platform Developer Exam Guide","url":"https://help.salesforce.com/s/articleView?id=005298965&language=en_US&type=1","publisher":"Salesforce","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-07","supported_exams":["SALESFORCE-PLATFORM-DEVELOPER"],"notes":"Canonical 27/28/25/20 objective list, candidate boundary and exam contract; complete indexed text revalidated September 7, while the page still labels Summer '25 and requires continued Trailhead comparison."
@@ -55510,9 +55728,11 @@
       "authority_class": 2,
       "source_type": "official-announcement",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["SALESFORCE-PLATFORM-APP-BUILDER"],
-      "notes": "Interview with the Salesforce certification team explaining the August 2026 refresh, deeper Flow verbs, Agentforce breadth, and hands-on preparation."
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "notes": "Interview with the Salesforce certification team explaining the August 2026 refresh, deeper Flow verbs, Agentforce breadth, and hands-on preparation. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Main August27,2026 article and complete relevant transcript throughclosingparagraph read in bounded chunks;some unrelatedfooter notreviewed. DeeperFlow verbs andfoundationalAgentforce,newhands-ontrail replace oldprepbadges. Audio notplayed;exactAugust21launch date absent/unverified. No Dreamforce booking orremoteproctoring action. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
     },
     {
       "id": "forceacademy-app-builder-refresh-2026",
@@ -55522,9 +55742,11 @@
       "authority_class": 4,
       "source_type": "independent-assessment",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["SALESFORCE-PLATFORM-APP-BUILDER"],
-      "notes": "Independent corroboration of the August 21 refresh, weights, and 73% score; the publisher sells practice exams, so Salesforce remains authoritative and no questions were used."
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "notes": "Independent corroboration of the August 21 refresh, weights, and 73% score; the publisher sells practice exams, so Salesforce remains authoritative and no questions were used. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: HTTP200 but only54-character generictitle. Earlier article/date/weights corroboration no longer verified. No practice-question content used. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
     },
     {
       "id": "apex-hours-lwc-security-2026",

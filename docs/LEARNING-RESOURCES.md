@@ -3029,6 +3029,28 @@ Pluralsight's introduction card is dated September 30, 2022; its seven domain ca
 
 Avoid recalled live questions, leaked content and copied assessment or superbadge answers. Use original practice to diagnose concepts, and validate claims against the official source.
 
+### SALESFORCE-PLATFORM-APP-BUILDER — Salesforce Certified Platform App Builder
+
+Resource details from the [SALESFORCE-PLATFORM-APP-BUILDER guide](../guides/SALESFORCE-PLATFORM-APP-BUILDER-salesforce-certified-platform-app-builder.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list. Select resources by the gaps you can demonstrate. Current scope is **18/20/32/17/13**; reconcile any older course map. Public metadata does not establish paid lesson quality or complete blueprint coverage. “Planning” times are our estimates.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Official exam guide](https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1) and [credential page](https://trailhead.salesforce.com/credentials/platformappbuilder) — canonical scope, identity and current contract | Public; Help required browser rendering here | 20–30 min planning |
+| [Salesforce Admins certification-team interview](https://admin.salesforce.com/blog/2026/what-does-the-salesforce-platform-app-builder-certification-prove-today-podcast) — August 27, 2026 article/transcript on the refresh and practical skills | Public; transcript reviewed, audio not played | 35–55 min reading/study planning; not a measured audio runtime |
+| [Current App Builder preparation trail](https://trailhead.salesforce.com/content/learn/trails/prepare-for-your-salesforce-platform-app-builder-certification) — five topic groups plus overview, including AgentExchange and Agentforce material | Free Trailhead; account/org for completion | Listed 39 hr 20 min; actual practice varies |
+| [Winter ’26 maintenance module](https://trailhead.salesforce.com/content/learn/modules/platform-app-builder-certification-maintenance-winter-26) and [introductory unit](https://trailhead.salesforce.com/content/learn/modules/platform-app-builder-certification-maintenance-winter-26/maintain-your-platform-app-builder-certification-for-winter-26) — release context and list-view activity; check assigned requirement | Free Trailhead; completion not performed | Listed 30 min: 5-min introduction plus 25-min activity |
+| [Relationships](https://trailhead.salesforce.com/content/learn/modules/data_modeling/object_relationships) and [Flow rollback](https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/roll-back-changes-after-an-error) — technical lessons supporting original exercises | Public lessons; account/org for activities | Listed 15 + 30 min; allow additional practice |
+| [Mike Wheeler App Builder course](https://www.udemy.com/course/salesforce-platform-app-builder/) — HTTP403; prior update/coverage details not reverified | Purchase/subscription; verify terms | Earlier 23 hr 35 min figure unverified |
+| [O’Reilly App Builder video training](https://www.oreilly.com/videos/salesforce-platform-app/9781804611197/) — HTTP403; prior edition/date claims unverified | Subscription | Earlier 12 hr 3 min figure unverified |
+| [O’Reilly App Builder bootcamp](https://www.oreilly.com/live-events/salesforce-platform-app-builder-certification-bootcamp/0642572176150/) — public outline with Michaela Grofčík; current booking date not exposed | Subscription/live event; interior not accessed | Eight timed sections total 5 hr, excluding untimed breaks |
+| [Salesforce Ben overview](https://www.youtube.com/watch?v=q_xsHJDgMfY) — title visible; video/date not verified in this review | Public YouTube; video not played | Title says “5 Minute”; actual runtime unverified |
+| [Focus on Force catalog](https://focusonforce.com/) — general resource listing, current App Builder product details not evaluated | Commercial; verify current terms | 10–25 hr selected-study planning only |
+| [Earlier ForceAcademy change-summary link](https://forceacademy.io/blog/platform-app-builder-exam-changes-august-2026) — currently exposes only a title; not evidence for current exam facts | Public commercial site; article unreadable here | No verified reading time |
+
+The preparation trail totals 20 minutes of overview plus 9 hr 25 min fundamentals, 4 hr 50 min data, 10 hr 45 min logic, 11 hr 20 min UI and 2 hr 40 min deployment. These are public planning estimates, not evidence that every badge interior was reviewed. The live bootcamp's 300 timed minutes include its 10-minute wrap-up; they exclude breaks and do not establish an upcoming event date. No paid lessons, practice answers, purchases or trial registrations were accessed. Use the official exam and maintenance sources for requirements.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

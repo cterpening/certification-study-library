@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [SALESFORCE-PLATFORM-APP-BUILDER deep review](docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md): 26 objectives manually compared,40 answered prompts and28 executed local relationship/transaction/dependency checks; derived-field access,approval locking,deployment evidence andmaintenance discrepancy documented.
+
 - September 29, 2026: [SALESFORCE-PLATFORM-ADMINISTRATOR deep review](docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md): eight unchanged domains,40 answered prompts and30 actual local CSV/SQLite/access checks; Flow context/rollback and agent scoping clarified, with source and training limitations recorded.
 
 - September 29, 2026: [NCP-AIO deep review](docs/research/2026-09-29-ncp-aio-deep-review.md): Mapped 31 canonical topics, recorded a conflicting official PDF and added 25 local rendering/accounting checks with 48 answered prompts.

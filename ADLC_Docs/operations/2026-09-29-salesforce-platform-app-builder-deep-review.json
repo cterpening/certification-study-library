@@ -1,0 +1,1668 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "SALESFORCE-PLATFORM-APP-BUILDER",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/SALESFORCE-PLATFORM-APP-BUILDER-salesforce-certified-platform-app-builder.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "84e784516dd40ff3fae35165dacef4f06cd46e3327c01b8625027ab16f7c5364",
+  "guide_after_sha256": "d681ce538213053fc0e393070bef4f9683722fa64130d7d9f355c9a2a21db36b",
+  "prior_records": {
+    "exam": {
+      "code": "SALESFORCE-PLATFORM-APP-BUILDER",
+      "level": "intermediate",
+      "vendor_id": "salesforce",
+      "title": "Salesforce Certified Platform App Builder",
+      "status": "active",
+      "study_guide_url": "https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1",
+      "guide_path": "guides/SALESFORCE-PLATFORM-APP-BUILDER-salesforce-certified-platform-app-builder.md",
+      "blueprint_last_checked": "2026-09-07",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-07",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite is published; Salesforce says candidates generally have six to twelve months building applications. Practice the complete declarative lifecycle from requirements, access and data model through bulk-safe Flow, persona-specific UI, deployment evidence, monitoring and rollback in an authorized disposable org."
+    },
+    "review": {
+      "id": "salesforce-platform-app-builder-2026-09-07-source-validation",
+      "exam_code": "SALESFORCE-PLATFORM-APP-BUILDER",
+      "guide_path": "guides/SALESFORCE-PLATFORM-APP-BUILDER-salesforce-certified-platform-app-builder.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-07",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/salesforce-platform-app-builder-official-objectives.txt",
+      "blueprint_snapshot_sha256": "5365cb37f260db38aa6b4a306dd826258e3d85f058b8111352e56a065a965f14",
+      "objective_coverage": [
+        {
+          "objective_group": "Salesforce Fundamentals (18%)",
+          "guide_sections": [
+            "Section 1",
+            "Scenarios 1 and 3",
+            "Labs 1, 3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Data Modeling and Management (20%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1–2",
+            "Labs 2 and 4"
+          ]
+        },
+        {
+          "objective_group": "Business Logic and Process Automation (32%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 5, 7 and 8"
+          ]
+        },
+        {
+          "objective_group": "User Interface (17%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1–2",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "App Deployment (13%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 10,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All five corrected Summer '26 domains are mapped through requirements, least privilege, data modeling and controlled movement, bulk-safe Flow/approval/Agentforce automation, persona and form-factor UI, and dependency-aware deployment/rollback. Three integrated scenarios, eight authorized labs and 40 original checks are included. The blocked audit was traced to incorrect Help article 005389157; canonical 005298964 exposes the complete current contract and objectives matching the snapshot. A Salesforce certification-team interview and independent ForceAcademy summary add context with explicit source hierarchy. No question-bank content, recalled/live item, dump, shared superbadge solution or copied course content is used."
+    },
+    "sources": [
+      {
+        "id": "focus-on-force-salesforce-certification",
+        "title": "Focus on Force Salesforce Certification Resources",
+        "url": "https://focusonforce.com/",
+        "publisher": "K2 University / Focus on Force",
+        "authority_class": 3,
+        "source_type": "commercial-study-and-practice",
+        "access_model": "paid",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-ADMINISTRATOR",
+          "SALESFORCE-PLATFORM-APP-BUILDER",
+          "SALESFORCE-PLATFORM-DEVELOPER",
+          "SALESFORCE-AGENTFORCE-SPECIALIST"
+        ],
+        "notes": "Commercial study guides and explained original practice exams; verify the displayed blueprint and release before purchase. Agentforce marketing indexed on September 2 still described an older five-domain/18-objective revision, so verify a six-domain Spring '26 update before relying on it. September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Public certification catalog read, including Administrator product links and associate prerequisite wording. This conflicts with official no-prerequisite rule. No assertion about practice originality or quality. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "salesforce-platform-app-builder-guide",
+        "title": "Salesforce Certified Platform App Builder Exam Guide",
+        "url": "https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1",
+        "publisher": "Salesforce",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-APP-BUILDER"
+        ],
+        "notes": "Canonical corrected Summer '26 five-domain blueprint and 73% exam contract launched August 21, 2026. Article 005389157 was an incorrect route and is retained only in historical freshness evidence."
+      },
+      {
+        "id": "salesforce-platform-app-builder-certification",
+        "title": "Salesforce Certified Platform App Builder",
+        "url": "https://trailhead.salesforce.com/credentials/platformappbuilder",
+        "publisher": "Salesforce",
+        "authority_class": 1,
+        "source_type": "official-certification-page",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-APP-BUILDER"
+        ],
+        "notes": "Current credential identity, role framing and official learning entry point."
+      },
+      {
+        "id": "salesforce-platform-app-builder-learning-path",
+        "title": "Prepare for Your Salesforce Platform App Builder Certification",
+        "url": "https://trailhead.salesforce.com/content/learn/trails/prepare-for-your-salesforce-platform-app-builder-certification",
+        "publisher": "Salesforce",
+        "authority_class": 1,
+        "source_type": "official-learning-path",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-APP-BUILDER"
+        ],
+        "notes": "Free broad hands-on Trailhead path listed at approximately 39 hours 20 minutes; select material against the refreshed blueprint."
+      },
+      {
+        "id": "salesforce-platform-app-builder-maintenance-winter-26",
+        "title": "Platform App Builder Certification Maintenance (Winter '26)",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/platform-app-builder-certification-maintenance-winter-26",
+        "publisher": "Salesforce",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-APP-BUILDER"
+        ],
+        "notes": "Free approximately 30-minute release-maintenance module; use for recent product context and verify the maintenance deadline in the credential account."
+      },
+      {
+        "id": "udemy-salesforce-platform-app-builder-wheeler",
+        "title": "Salesforce Certified Platform App Builder + Practice Test",
+        "url": "https://www.udemy.com/course/salesforce-platform-app-builder/",
+        "publisher": "Udemy / Mike Wheeler and team",
+        "authority_class": 3,
+        "source_type": "commercial-course",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-APP-BUILDER"
+        ],
+        "notes": "23h35m listed course updated July 2026, before the August 21 blueprint refresh; explicitly reconcile every section."
+      },
+      {
+        "id": "oreilly-salesforce-platform-app-builder-training",
+        "title": "Salesforce Platform App Builder Certification Training",
+        "url": "https://www.oreilly.com/videos/salesforce-platform-app/9781804611197/",
+        "publisher": "O'Reilly Media / Packt",
+        "authority_class": 3,
+        "source_type": "commercial-course",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-APP-BUILDER"
+        ],
+        "notes": "12h3m foundational video published August 2022; supplement and correct with current Flow, Agentforce, deployment and Summer '26 objectives."
+      },
+      {
+        "id": "oreilly-salesforce-platform-app-builder-bootcamp",
+        "title": "Salesforce Platform App Builder Certification Bootcamp",
+        "url": "https://www.oreilly.com/live-events/salesforce-platform-app-builder-certification-bootcamp/0642572176150/",
+        "publisher": "O'Reilly Media",
+        "authority_class": 3,
+        "source_type": "commercial-live-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-APP-BUILDER"
+        ],
+        "notes": "Live scheduled training; verify the displayed start/end time, recording access and Summer '26 alignment before enrollment."
+      },
+      {
+        "id": "youtube-salesforce-ben-platform-app-builder-overview",
+        "title": "Salesforce Platform App Builder Certification Overview",
+        "url": "https://www.youtube.com/watch?v=q_xsHJDgMfY",
+        "publisher": "Salesforce Ben",
+        "authority_class": 3,
+        "source_type": "community-learning",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-APP-BUILDER"
+        ],
+        "notes": "Five-minute December 2023 orientation, not a current blueprint source; use only to understand the credential's broad purpose."
+      },
+      {
+        "id": "salesforce-admins-app-builder-refresh-2026",
+        "title": "What Does the Salesforce Platform App Builder Certification Prove Today?",
+        "url": "https://admin.salesforce.com/blog/2026/what-does-the-salesforce-platform-app-builder-certification-prove-today-podcast",
+        "publisher": "Salesforce Admins",
+        "authority_class": 2,
+        "source_type": "official-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-APP-BUILDER"
+        ],
+        "notes": "Interview with the Salesforce certification team explaining the August 2026 refresh, deeper Flow verbs, Agentforce breadth, and hands-on preparation."
+      },
+      {
+        "id": "forceacademy-app-builder-refresh-2026",
+        "title": "Platform App Builder Exam Changes — August 2026",
+        "url": "https://forceacademy.io/blog/platform-app-builder-exam-changes-august-2026",
+        "publisher": "ForceAcademy",
+        "authority_class": 4,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-APP-BUILDER"
+        ],
+        "notes": "Independent corroboration of the August 21 refresh, weights, and 73% score; the publisher sells practice exams, so Salesforce remains authoritative and no questions were used."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "d57f63568cc19bfe4852e50becd783bb7170ef980c36b42627d264457776f29c",
+      "guide_sections": [
+        "1. Salesforce Fundamentals — 18%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "cd6bede102c55ec3727f0e54a987e24e689ef97754191858c1d12ca9c2d372c9",
+      "guide_sections": [
+        "1. Salesforce Fundamentals — 18%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "4c0cd99f24ad91c3d9a298f50d23a6bbfb9239fe037819781160e033292ffeec",
+      "guide_sections": [
+        "1. Salesforce Fundamentals — 18%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "08f1e41dcbc9f83c8d403386ffe56bb48aed1b14f70ccca46037784a3f4b391e",
+      "guide_sections": [
+        "1. Salesforce Fundamentals — 18%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "9fb359ab93e61c5d24136ecd11e38037127464166a0b3b88963924c99f08bc62",
+      "guide_sections": [
+        "1. Salesforce Fundamentals — 18%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "9c33cd008dbc6ff7f9a1d5789d4963ff1e1025d74a9a4d202166bf7a5db48bdb",
+      "guide_sections": [
+        "2. Data Modeling and Management — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "92e917e6f7e9889167fc7ba4ff6a964647ecb30a0086b1e73575c238d9b993a1",
+      "guide_sections": [
+        "2. Data Modeling and Management — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "d4fe15988a59acc3eb76331e230aa9076923d9d7a4d78b7b759a7690fb8d50f2",
+      "guide_sections": [
+        "2. Data Modeling and Management — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "8b0e31bebe6a072123a250301065b1f79e76e9bc8f181d15aa4d8ac8d25b5461",
+      "guide_sections": [
+        "2. Data Modeling and Management — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "c2c043c6a5ac6eab5be8a6dedd33c47d8d5fa2f245a055473298e8770cffc858",
+      "guide_sections": [
+        "3. Business Logic and Process Automation — 32%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "9698537f05a2d131408b1d6ecf06ca57b30a2a29b5b9c8330837c066cdfb346a",
+      "guide_sections": [
+        "3. Business Logic and Process Automation — 32%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "3fc92dae7de699f0605a4b0959ea35de2530a1bc9fd1c431dc0d97296a3e2211",
+      "guide_sections": [
+        "3. Business Logic and Process Automation — 32%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "efe0fbf7d88c51fc6309857ac42a4fd5baed3f67de7e3d8924338c80a3c0e469",
+      "guide_sections": [
+        "3. Business Logic and Process Automation — 32%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "75703f2d94b24fb7375e427711fe6bc7ae780aca3e61714f7fcd7821fb825e9d",
+      "guide_sections": [
+        "3. Business Logic and Process Automation — 32%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "d6d4dcd60461b0ab79b72bb6552398c165c01f5e59b50f0969b91724ed67c062",
+      "guide_sections": [
+        "3. Business Logic and Process Automation — 32%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "7c23bf2ed6ca6536983efd684363e523b45275ecf36da20555c75f61fab650ba",
+      "guide_sections": [
+        "3. Business Logic and Process Automation — 32%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "c460d273f9c2de0378a63e65db9bc3ad082ef298d8c17268cf4433076a121f1d",
+      "guide_sections": [
+        "3. Business Logic and Process Automation — 32%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "84b1f63a5319f3e1680e8eedbef1b6c94b5d73c788bf2da8a59ddb2ea3d4b9ae",
+      "guide_sections": [
+        "4. User Interface — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "71f86fdfe04073babdcb88b0e62a0e042eb1a6cf0d5c4b730c171beededa866a",
+      "guide_sections": [
+        "4. User Interface — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "6e4dd882cc8cc6c2fb5b778523034b80c0ac70de22faa29be33431b43f0343c2",
+      "guide_sections": [
+        "4. User Interface — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "54fd787df7d95508f5f0824e0b619268f9b7d3bad6c4448ace246c41cc98b172",
+      "guide_sections": [
+        "4. User Interface — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "f26b34790c60106fc7b32227c318f3a8b8923b993c7e735ed2fc921c9ae06fca",
+      "guide_sections": [
+        "4. User Interface — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "d36444e195384d8e9eccc0677d1d93245fda7cf18f027a4947a7789cd70a00be",
+      "guide_sections": [
+        "5. App Deployment — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "d7cc5820c196f5fa0d2c375223b51f8cd2ad6dceb2b297b94d45cf281d7aec8d",
+      "guide_sections": [
+        "5. App Deployment — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "6a1ea1be4362cc49cf79c6882f208ff8e78900b1a9e392e6f77e6ddeb8132880",
+      "guide_sections": [
+        "5. App Deployment — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "af09b503af3754be705f5fcce65ac0dd4c60b699590b062084de38709c623566",
+      "guide_sections": [
+        "5. App Deployment — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [
+      "SALESFORCE-PLATFORM-APP-BUILDER"
+    ],
+    "results": [
+      {
+        "code": "SALESFORCE-PLATFORM-APP-BUILDER",
+        "title": "Salesforce Certified Platform App Builder",
+        "url": "https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1",
+        "guide_path": "guides/SALESFORCE-PLATFORM-APP-BUILDER-salesforce-certified-platform-app-builder.md",
+        "snapshot_path": "data\\objective-snapshots\\salesforce-platform-app-builder-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\salesforce-platform-app-builder-official-status.json",
+        "status": "manual-review",
+        "changed": false,
+        "error": "ValueError: Could not find Salesforce exam objectives",
+        "manual_review_reason": "The public Salesforce Help response is reachable but its client-rendered HTML does not expose the reviewed Exam Outline to this non-browser extractor.",
+        "review_route": "docs/SOURCE-FRESHNESS.md"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 23,
+    "reachable": 21,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "focus-on-force-salesforce-certification",
+      "url": "https://focusonforce.com/",
+      "checked_at": "2026-09-29T14:25:01.444871+00:00",
+      "health": {
+        "id": "focus-on-force-salesforce-certification",
+        "url": "https://focusonforce.com/",
+        "checked_at": "2026-09-29T14:25:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://k2u.ai/salesforce/certifications/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Salesforce certifications: study guides and practice exams",
+        "canonical_url": "https://k2u.ai/salesforce/certifications/",
+        "duration_signals": [],
+        "signal_fingerprint": "1978713e6b8e73e52f88e9fcd2b917cd105ab77c9a12455318e2be4e8c1d567c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://k2u.ai/salesforce/certifications/",
+      "sha256": "d18afa266943afb20bc48549035539363c1e11317ade8fab2c3c246719d6331d",
+      "text_characters": 9070
+    },
+    {
+      "id": "salesforce-platform-app-builder-guide",
+      "url": "https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1",
+      "checked_at": "2026-09-29T14:25:01.445785+00:00",
+      "health": {
+        "id": "salesforce-platform-app-builder-guide",
+        "url": "https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1",
+        "checked_at": "2026-09-29T14:25:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1",
+        "duration_signals": [],
+        "signal_fingerprint": "72c3adb9ba1c80996348a6d74e66bccea3534aa90ec983d66b8413fc36fdb439",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-platform-app-builder-certification",
+      "url": "https://trailhead.salesforce.com/credentials/platformappbuilder",
+      "checked_at": "2026-09-29T14:25:01.446463+00:00",
+      "health": {
+        "id": "salesforce-platform-app-builder-certification",
+        "url": "https://trailhead.salesforce.com/credentials/platformappbuilder",
+        "checked_at": "2026-09-29T14:25:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/credentials/platformappbuilder",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Certification",
+        "canonical_url": "https://trailhead.salesforce.com/credentials/platformappbuilder",
+        "duration_signals": [],
+        "signal_fingerprint": "68951fdca0e05a6a722b13292592e0125f07bf244eea2410b21d73e5353034cd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/credentials/platformappbuilder",
+      "sha256": "ee0eb66b64f51098b316f5986588de73894268ba44867daac4a9f3f4650de316",
+      "text_characters": 1344
+    },
+    {
+      "id": "salesforce-platform-app-builder-learning-path",
+      "url": "https://trailhead.salesforce.com/content/learn/trails/prepare-for-your-salesforce-platform-app-builder-certification",
+      "checked_at": "2026-09-29T14:25:02.847470+00:00",
+      "health": {
+        "id": "salesforce-platform-app-builder-learning-path",
+        "url": "https://trailhead.salesforce.com/content/learn/trails/prepare-for-your-salesforce-platform-app-builder-certification",
+        "checked_at": "2026-09-29T14:25:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/content/learn/trails/prepare-for-your-salesforce-platform-app-builder-certification",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Prepare for Your Salesforce Platform App Builder Certification | Salesforce Trailhead",
+        "canonical_url": "https://trailhead.salesforce.com/content/learn/trails/prepare-for-your-salesforce-platform-app-builder-certification",
+        "duration_signals": [
+          "1 hr",
+          "1 hr 10 mins",
+          "1 hr 15 mins",
+          "1 hr 35 mins",
+          "1 hr 40 mins",
+          "1 hr 45 mins",
+          "1 hr 50 mins",
+          "10 hrs 45 mins",
+          "11 hrs 20 mins",
+          "15 mins",
+          "2 hrs 30 mins",
+          "2 hrs 40 mins",
+          "2 hrs 5 mins",
+          "2 hrs 50 mins",
+          "20 mins",
+          "25 mins",
+          "3 hrs",
+          "30 mins",
+          "35 mins",
+          "39 hrs 20 mins",
+          "4 hrs 50 mins",
+          "45 mins",
+          "5 mins",
+          "50 mins",
+          "55 mins",
+          "9 hrs 25 mins"
+        ],
+        "signal_fingerprint": "ff36f78d4068af808e03e5f60e979417df22652b636b8bfebd6e9bd5f8a875c7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/content/learn/trails/prepare-for-your-salesforce-platform-app-builder-certification",
+      "sha256": "8ee9ca7d720246395e01461a8e638b51b0ad0e6a4fc580ab3b9bc81c19f24713",
+      "text_characters": 7581
+    },
+    {
+      "id": "salesforce-platform-app-builder-maintenance-winter-26",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/platform-app-builder-certification-maintenance-winter-26",
+      "checked_at": "2026-09-29T14:25:02.861622+00:00",
+      "health": {
+        "id": "salesforce-platform-app-builder-maintenance-winter-26",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/platform-app-builder-certification-maintenance-winter-26",
+        "checked_at": "2026-09-29T14:25:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/content/learn/modules/platform-app-builder-certification-maintenance-winter-26",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Platform App Builder Certification Maintenance (Winter '26)",
+        "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/platform-app-builder-certification-maintenance-winter-26",
+        "duration_signals": [
+          "25 mins",
+          "30 mins",
+          "5 mins",
+          "PT25M",
+          "PT5M"
+        ],
+        "signal_fingerprint": "8d151353881427a61dda0ca62a696293c5dafa4881ebf67cb1694d1735932542",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/content/learn/modules/platform-app-builder-certification-maintenance-winter-26",
+      "sha256": "b3f353e111301e11cd2e23a8f00bb954e70bed2bf09ec1f3740eb3d7f1d71aa2",
+      "text_characters": 1148
+    },
+    {
+      "id": "udemy-salesforce-platform-app-builder-wheeler",
+      "url": "https://www.udemy.com/course/salesforce-platform-app-builder/",
+      "checked_at": "2026-09-29T14:25:02.899640+00:00",
+      "health": {
+        "id": "udemy-salesforce-platform-app-builder-wheeler",
+        "url": "https://www.udemy.com/course/salesforce-platform-app-builder/",
+        "checked_at": "2026-09-29T14:25:02+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/salesforce-platform-app-builder/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "oreilly-salesforce-platform-app-builder-training",
+      "url": "https://www.oreilly.com/videos/salesforce-platform-app/9781804611197/",
+      "checked_at": "2026-09-29T14:25:03.014605+00:00",
+      "health": {
+        "id": "oreilly-salesforce-platform-app-builder-training",
+        "url": "https://www.oreilly.com/videos/salesforce-platform-app/9781804611197/",
+        "checked_at": "2026-09-29T14:25:03+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/salesforce-platform-app/9781804611197/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "oreilly-salesforce-platform-app-builder-bootcamp",
+      "url": "https://www.oreilly.com/live-events/salesforce-platform-app-builder-certification-bootcamp/0642572176150/",
+      "checked_at": "2026-09-29T14:25:03.204448+00:00",
+      "health": {
+        "id": "oreilly-salesforce-platform-app-builder-bootcamp",
+        "url": "https://www.oreilly.com/live-events/salesforce-platform-app-builder-certification-bootcamp/0642572176150/",
+        "checked_at": "2026-09-29T14:25:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.oreilly.com/live-events/salesforce-platform-app-builder-certification-bootcamp/0642572176150/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Salesforce Platform App Builder Certification Bootcamp",
+        "canonical_url": "https://www.oreilly.com/live-events/salesforce-platform-app-builder-certification-bootcamp/0642572176150/",
+        "duration_signals": [
+          "10 minutes",
+          "20 minutes",
+          "30 minutes",
+          "50 minutes",
+          "60 minutes",
+          "PT5H"
+        ],
+        "signal_fingerprint": "e86bf42a4d0ea7aedcea091b562be5c144036e0143d3d44857ab952756483ab1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.oreilly.com/live-events/salesforce-platform-app-builder-certification-bootcamp/0642572176150/",
+      "sha256": "f6dd832d66b8fce2f7b793a5e0aa5b54271d8929bc34543370e064c7c3154603",
+      "text_characters": 5873
+    },
+    {
+      "id": "youtube-salesforce-ben-platform-app-builder-overview",
+      "url": "https://www.youtube.com/watch?v=q_xsHJDgMfY",
+      "checked_at": "2026-09-29T14:25:03.726961+00:00",
+      "health": {
+        "id": "youtube-salesforce-ben-platform-app-builder-overview",
+        "url": "https://www.youtube.com/watch?v=q_xsHJDgMfY",
+        "checked_at": "2026-09-29T14:25:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=q_xsHJDgMfY",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "5 Minute Overview of the Salesforce Platform App Builder Exam",
+        "canonical_url": "https://www.youtube.com/watch?v=q_xsHJDgMfY",
+        "duration_signals": [
+          "5 Minute"
+        ],
+        "signal_fingerprint": "321c4385d59141230c0c3a5c2a49f11674179082a2c31dfd31a5dc5ff44fefa7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=q_xsHJDgMfY",
+      "sha256": "ab8aac029cab877dfacd7181db7f3ba9d701a876e52f68c78075cbe08622f5ca",
+      "text_characters": 224
+    },
+    {
+      "id": "salesforce-admins-app-builder-refresh-2026",
+      "url": "https://admin.salesforce.com/blog/2026/what-does-the-salesforce-platform-app-builder-certification-prove-today-podcast",
+      "checked_at": "2026-09-29T14:25:03.858289+00:00",
+      "health": {
+        "id": "salesforce-admins-app-builder-refresh-2026",
+        "url": "https://admin.salesforce.com/blog/2026/what-does-the-salesforce-platform-app-builder-certification-prove-today-podcast",
+        "checked_at": "2026-09-29T14:25:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://admin.salesforce.com/blog/2026/what-does-the-salesforce-platform-app-builder-certification-prove-today-podcast",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "What Does the Salesforce Platform App Builder Certification Prove Today? - Salesforce Admins",
+        "canonical_url": "https://admin.salesforce.com/blog/2026/what-does-the-salesforce-platform-app-builder-certification-prove-today-podcast",
+        "duration_signals": [],
+        "signal_fingerprint": "aca1f3e1b30412f8e656e7463374d06dad5a9d151a5c07e0cdee60448fb8a1d3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://admin.salesforce.com/blog/2026/what-does-the-salesforce-platform-app-builder-certification-prove-today-podcast",
+      "sha256": "7b538e7da47acd2e717a242ccc1c1007d36157d793d904934b038eefd2b2ef93",
+      "text_characters": 32564
+    },
+    {
+      "id": "forceacademy-app-builder-refresh-2026",
+      "url": "https://forceacademy.io/blog/platform-app-builder-exam-changes-august-2026",
+      "checked_at": "2026-09-29T14:25:04.113453+00:00",
+      "health": {
+        "id": "forceacademy-app-builder-refresh-2026",
+        "url": "https://forceacademy.io/blog/platform-app-builder-exam-changes-august-2026",
+        "checked_at": "2026-09-29T14:25:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://forceacademy.io/blog/platform-app-builder-exam-changes-august-2026",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ForceAcademy – Salesforce Certification Practice Exams",
+        "canonical_url": "https://forceacademy.io/",
+        "duration_signals": [],
+        "signal_fingerprint": "8df86c36e8be12527eadfe7293c25d63e314c867ae0658937a482c0b5fd2529b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://forceacademy.io/blog/platform-app-builder-exam-changes-august-2026",
+      "sha256": "b2937e8a5bee5e719ad591c89888d69aee8411d9b8c15c29b83d31d5404e7ed3",
+      "text_characters": 54
+    },
+    {
+      "id": "salesforce-flow-api68-context",
+      "url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5",
+      "checked_at": "2026-09-29T14:30:39.861206+00:00",
+      "health": {
+        "id": "salesforce-flow-api68-context",
+        "url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5",
+        "checked_at": "2026-09-29T14:30:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5",
+        "duration_signals": [],
+        "signal_fingerprint": "0c4db59c13baab16e625075df835741e8633af7b772158470065bc8374068dbe",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-permission-muting",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/permission-set-groups/mute-permissions-in-permission-set-groups",
+      "checked_at": "2026-09-29T14:30:39.861802+00:00",
+      "health": {
+        "id": "salesforce-permission-muting",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/permission-set-groups/mute-permissions-in-permission-set-groups",
+        "checked_at": "2026-09-29T14:30:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/content/learn/modules/permission-set-groups/mute-permissions-in-permission-set-groups",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Mute Permissions in Salesforce Permission Set Groups",
+        "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/permission-set-groups/mute-permissions-in-permission-set-groups",
+        "duration_signals": [
+          "48 hours",
+          "About 15 mins",
+          "PT15M"
+        ],
+        "signal_fingerprint": "49381bcd8725e8973d77d0a151b374e66a96ef7d10c7ddc642e500aa323ea5e6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/content/learn/modules/permission-set-groups/mute-permissions-in-permission-set-groups",
+      "sha256": "7dbc13813da04c16669d6d7cd66ba8a5137c35732d140462a2ef806da9ba21f6",
+      "text_characters": 9672
+    },
+    {
+      "id": "salesforce-flow-rollback",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/roll-back-changes-after-an-error",
+      "checked_at": "2026-09-29T14:30:39.862179+00:00",
+      "health": {
+        "id": "salesforce-flow-rollback",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/roll-back-changes-after-an-error",
+        "checked_at": "2026-09-29T14:30:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/roll-back-changes-after-an-error",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Optimize Salesforce Flows with Rollback & Custom Errors",
+        "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/roll-back-changes-after-an-error",
+        "duration_signals": [
+          "48 hours",
+          "About 30 mins",
+          "PT30M"
+        ],
+        "signal_fingerprint": "2549c1ce7bb0b7cafbd12342b655c1ef7b9815756bdd84466d46c2070ee9590b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/roll-back-changes-after-an-error",
+      "sha256": "9b1d2ffc857d110541e591bdc94972dd710f170ba0be77694a3caa59678f5471",
+      "text_characters": 9361
+    },
+    {
+      "id": "salesforce-agent-user-access",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5",
+      "checked_at": "2026-09-29T14:30:41.081697+00:00",
+      "health": {
+        "id": "salesforce-agent-user-access",
+        "url": "https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5",
+        "checked_at": "2026-09-29T14:30:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5",
+        "duration_signals": [],
+        "signal_fingerprint": "db62fb68092f3f05c3960dd10660ee588a797e6ce4a586de3233eeb9652d680b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-maintenance-policy-de",
+      "url": "https://help.salesforce.com/s/articleView?id=005298841&language=de&type=1",
+      "checked_at": "2026-09-29T14:30:41.307706+00:00",
+      "health": {
+        "id": "salesforce-maintenance-policy-de",
+        "url": "https://help.salesforce.com/s/articleView?id=005298841&language=de&type=1",
+        "checked_at": "2026-09-29T14:30:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=005298841&language=de&type=1",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=005298841&language=de&type=1",
+        "duration_signals": [],
+        "signal_fingerprint": "adf580eb6d14b618248c1e627ab27330291f335cea50d745f4c83d9c95b63aa2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=005298841&language=de&type=1",
+      "sha256": "07c0036553b2cb7fefadc33c475e6e8fdec05d1d029e10592a4b4ce9670415ab",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-maintenance-schedule-de",
+      "url": "https://help.salesforce.com/s/articleView?id=005298922&language=de&type=1",
+      "checked_at": "2026-09-29T14:30:41.360436+00:00",
+      "health": {
+        "id": "salesforce-maintenance-schedule-de",
+        "url": "https://help.salesforce.com/s/articleView?id=005298922&language=de&type=1",
+        "checked_at": "2026-09-29T14:30:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=005298922&language=de&type=1",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=005298922&language=de&type=1",
+        "duration_signals": [],
+        "signal_fingerprint": "a2005a42610be1c24ab4d6760128017b32086fedf208f8fd423bbdc8a1c73343",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=005298922&language=de&type=1",
+      "sha256": "07c0036553b2cb7fefadc33c475e6e8fdec05d1d029e10592a4b4ce9670415ab",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-cross-object-formula",
+      "url": "https://help.salesforce.com/s/articleView?id=customize_cross_object.htm&language=en_US&type=5",
+      "checked_at": "2026-09-29T14:30:42.423457+00:00",
+      "health": {
+        "id": "salesforce-cross-object-formula",
+        "url": "https://help.salesforce.com/s/articleView?id=customize_cross_object.htm&language=en_US&type=5",
+        "checked_at": "2026-09-29T14:30:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=customize_cross_object.htm&language=en_US&type=5",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=customize_cross_object.htm&language=en_US&type=5",
+        "duration_signals": [],
+        "signal_fingerprint": "decec836edc40895ee6bc87967161088075ddf2b899e916dcf57d3284b6b4d88",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=customize_cross_object.htm&language=en_US&type=5",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-flow-approval-locking",
+      "url": "https://help.salesforce.com/s/articleView?id=platform.automate_automated_approvals_concept_record_locking.htm&language=en_US&type=5",
+      "checked_at": "2026-09-29T14:30:42.448412+00:00",
+      "health": {
+        "id": "salesforce-flow-approval-locking",
+        "url": "https://help.salesforce.com/s/articleView?id=platform.automate_automated_approvals_concept_record_locking.htm&language=en_US&type=5",
+        "checked_at": "2026-09-29T14:30:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=platform.automate_automated_approvals_concept_record_locking.htm&language=en_US&type=5",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=platform.automate_automated_approvals_concept_record_locking.htm&language=en_US&type=5",
+        "duration_signals": [],
+        "signal_fingerprint": "dcd3d8c857ca04c1d3076795a2f7cc42ab536beea0fb3369bf62fd087884da65",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=platform.automate_automated_approvals_concept_record_locking.htm&language=en_US&type=5",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-object-relationships",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/data_modeling/object_relationships",
+      "checked_at": "2026-09-29T14:30:42.478714+00:00",
+      "health": {
+        "id": "salesforce-object-relationships",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/data_modeling/object_relationships",
+        "checked_at": "2026-09-29T14:30:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/content/learn/modules/data_modeling/object_relationships",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Object Relationships: Create & Manage",
+        "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/data_modeling/object_relationships",
+        "duration_signals": [
+          "48 hours",
+          "About 15 mins",
+          "PT15M"
+        ],
+        "signal_fingerprint": "cae438ecbec8fbf9f0fbf60602bdcc9a3291a0083becb79f2b800ded64d64914",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/content/learn/modules/data_modeling/object_relationships",
+      "sha256": "bda0fa7030101b1cfd171cd947e126f5b7659bfecb95db73e8104cecd59f7b50",
+      "text_characters": 8146
+    },
+    {
+      "id": "salesforce-deployment-monitoring",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.deploy_monitoring.htm&language=en_US&type=5",
+      "checked_at": "2026-09-29T14:30:43.375857+00:00",
+      "health": {
+        "id": "salesforce-deployment-monitoring",
+        "url": "https://help.salesforce.com/s/articleView?id=sf.deploy_monitoring.htm&language=en_US&type=5",
+        "checked_at": "2026-09-29T14:30:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=sf.deploy_monitoring.htm&language=en_US&type=5",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=sf.deploy_monitoring.htm&language=en_US&type=5",
+        "duration_signals": [],
+        "signal_fingerprint": "333ebde2f56dfccd9ada0d4ec8ff805c7ad44590c345ed91cbe2848978d0fe19",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=sf.deploy_monitoring.htm&language=en_US&type=5",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-app-builder-winter26-unit",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/platform-app-builder-certification-maintenance-winter-26/maintain-your-platform-app-builder-certification-for-winter-26",
+      "checked_at": "2026-09-29T14:30:44.000232+00:00",
+      "health": {
+        "id": "salesforce-app-builder-winter26-unit",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/platform-app-builder-certification-maintenance-winter-26/maintain-your-platform-app-builder-certification-for-winter-26",
+        "checked_at": "2026-09-29T14:30:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/content/learn/modules/platform-app-builder-certification-maintenance-winter-26/maintain-your-platform-app-builder-certification-for-winter-26",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Maintain Your Platform App Builder Certification for Winter ’26",
+        "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/platform-app-builder-certification-maintenance-winter-26/maintain-your-platform-app-builder-certification-for-winter-26",
+        "duration_signals": [
+          "About 5 mins",
+          "PT5M"
+        ],
+        "signal_fingerprint": "03a7be4350106e05c3486e942b6add3af4b1ddab6cfa6664a77342745d40c89b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/content/learn/modules/platform-app-builder-certification-maintenance-winter-26/maintain-your-platform-app-builder-certification-for-winter-26",
+      "sha256": "230cc3307eab2a5ca339878ea6ac69cc823359bd560c40df3565f38941b46b89",
+      "text_characters": 7384
+    },
+    {
+      "id": "salesforce-rollup-summary",
+      "url": "https://help.salesforce.com/s/articleView?id=platform.fields_about_roll_up_summary_fields.htm&language=en_US&type=5",
+      "checked_at": "2026-09-29T14:32:15.884868+00:00",
+      "health": {
+        "id": "salesforce-rollup-summary",
+        "url": "https://help.salesforce.com/s/articleView?id=platform.fields_about_roll_up_summary_fields.htm&language=en_US&type=5",
+        "checked_at": "2026-09-29T14:32:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=platform.fields_about_roll_up_summary_fields.htm&language=en_US&type=5",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=platform.fields_about_roll_up_summary_fields.htm&language=en_US&type=5",
+        "duration_signals": [],
+        "signal_fingerprint": "6516aa00294222f0bd01f125e7da072b746517865ab7bae0c79356c68f9b9029",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=platform.fields_about_roll_up_summary_fields.htm&language=en_US&type=5",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-flow-created-record-output",
+      "url": "https://help.salesforce.com/s/articleView?language=en_US&id=release-notes.rn_automate_flow_builder_access_new_records_immediately.htm&release=258&type=5",
+      "checked_at": "2026-09-29T14:32:15.885478+00:00",
+      "health": {
+        "id": "salesforce-flow-created-record-output",
+        "url": "https://help.salesforce.com/s/articleView?language=en_US&id=release-notes.rn_automate_flow_builder_access_new_records_immediately.htm&release=258&type=5",
+        "checked_at": "2026-09-29T14:32:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?language=en_US&id=release-notes.rn_automate_flow_builder_access_new_records_immediately.htm&release=258&type=5",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?language=en_US&id=release-notes.rn_automate_flow_builder_access_new_records_immediately.htm&release=258&type=5",
+        "duration_signals": [],
+        "signal_fingerprint": "6f3010c67aa70f9bc57413873c5da980d971377f9cc08fdc20396c1e65a346bb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?language=en_US&id=release-notes.rn_automate_flow_builder_access_new_records_immediately.htm&release=258&type=5",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    }
+  ],
+  "added_source_ids": [
+    "salesforce-maintenance-policy-de",
+    "salesforce-maintenance-schedule-de",
+    "salesforce-cross-object-formula",
+    "salesforce-flow-approval-locking",
+    "salesforce-object-relationships",
+    "salesforce-deployment-monitoring",
+    "salesforce-app-builder-winter26-unit",
+    "salesforce-rollup-summary",
+    "salesforce-flow-created-record-output"
+  ],
+  "findings": [
+    {
+      "id": "salesforceplatformappbuilder-deep-1",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Exam maintenance sentence conflicts with dedicated policy",
+      "url": "https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Examarticle3times/year;dedicatedpolicy1annualbadge andWintercycle/December4,2026currentduedate.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "salesforceplatformappbuilder-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Credential-specific schedule supplies a dated maintenance reference",
+      "url": "https://help.salesforce.com/s/articleView?id=005298922&language=de&type=1",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "BrowserEnglishbodythroughGermanlocale listsWinter26December11,2025availability/December4,2026duePT,subjecttochange.",
+      "recommendation": "Pointlearners toassignedcredentialrequirementanddedicatedschedule,keepconflictingexamwordingvisible.",
+      "disposition": "applied",
+      "source_id": "salesforce-maintenance-schedule-de",
+      "resolution": "Pointlearners toassignedcredentialrequirementanddedicatedschedule,keepconflictingexamwordingvisible."
+    },
+    {
+      "id": "salesforceplatformappbuilder-deep-3",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "The refresh emphasizes demonstrated Flow skills",
+      "url": "https://admin.salesforce.com/blog/2026/what-does-the-salesforce-platform-app-builder-certification-prove-today-podcast",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "August27interviewdistinguishes create/configure/troubleshoot fromdescribe andfoundationalAgentforce.",
+      "recommendation": "Use originalfailure/recoveryactivities andanswer40prompts;no exactAugust21dateassertionwithoutsource.",
+      "disposition": "applied",
+      "source_id": "salesforce-admins-app-builder-refresh-2026",
+      "resolution": "Use originalfailure/recoveryactivities andanswer40prompts;no exactAugust21dateassertionwithoutsource."
+    },
+    {
+      "id": "salesforceplatformappbuilder-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A derived field can reveal a restricted related value",
+      "url": "https://help.salesforce.com/s/articleView?id=customize_cross_object.htm&language=en_US&type=5",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Visiblecross-objectformula canexposevaluewithoutparentrecordaccess.",
+      "recommendation": "Addderived-outputaudiencereview andnegative-personatest.",
+      "disposition": "applied",
+      "source_id": "salesforce-cross-object-formula",
+      "resolution": "Addderived-outputaudiencereview andnegative-personatest."
+    },
+    {
+      "id": "salesforceplatformappbuilder-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Hidden detail fields can still contribute to a visible aggregate",
+      "url": "https://help.salesforce.com/s/articleView?id=platform.fields_about_roll_up_summary_fields.htm&language=en_US&type=5",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Roll-upincludesvalueshiddenbydetailFLS;outputpermissions matter.",
+      "recommendation": "Explain output-fieldsecurity andseparateSQLgrainexamplefromSalesforcerollupengine.",
+      "disposition": "applied",
+      "source_id": "salesforce-rollup-summary",
+      "resolution": "Explain output-fieldsecurity andseparateSQLgrainexamplefromSalesforcerollupengine."
+    },
+    {
+      "id": "salesforceplatformappbuilder-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Handled faults and transaction rollback are different",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/roll-back-changes-after-an-error",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Faultpathcanpreservepartialchanges;explicitrollbackcannotundoearliercommit.",
+      "recommendation": "ExecuteoriginalSQLfault/commitcomparisons andproposeorgboundaryverification.",
+      "disposition": "applied",
+      "source_id": "salesforce-flow-rollback",
+      "resolution": "ExecuteoriginalSQLfault/commitcomparisons andproposeorgboundaryverification."
+    },
+    {
+      "id": "salesforceplatformappbuilder-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Parallel approval steps require coordinated record locking",
+      "url": "https://help.salesforce.com/s/articleView?id=platform.automate_automated_approvals_concept_record_locking.htm&language=en_US&type=5",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Oneapproval lock perrecord;concurrentstep/processattemptscanerror.",
+      "recommendation": "Teachstage/processcoordination,allowededits,completionandfailure recovery.",
+      "disposition": "applied",
+      "source_id": "salesforce-flow-approval-locking",
+      "resolution": "Teachstage/processcoordination,allowededits,completionandfailure recovery."
+    },
+    {
+      "id": "salesforceplatformappbuilder-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Validation and section-level success labels need interpretation",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.deploy_monitoring.htm&language=en_US&type=5",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Validationdoesnotsavecomponents;nonproductionpartialsuccesscanappearunderSucceeded. LaterdeploymentinvalidatesQuickDeployeligibility.",
+      "recommendation": "Inspectexactstatus/componentresult andtargetevidence;localdependencygraphnotdeploymentproof.",
+      "disposition": "applied",
+      "source_id": "salesforce-deployment-monitoring",
+      "resolution": "Inspectexactstatus/componentresult andtargetevidence;localdependencygraphnotdeploymentproof."
+    },
+    {
+      "id": "salesforceplatformappbuilder-deep-9",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "An enforced user context does not establish customer identity",
+      "url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-APP-BUILDER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "NewoptionAPI68+eligibleflows preventscontextinheritance,not identity substitution.",
+      "recommendation": "Checkversion,actualcallerandcustomerqueryscoping before action acceptance.",
+      "disposition": "applied",
+      "source_id": "salesforce-flow-api68-context",
+      "resolution": "Checkversion,actualcallerandcustomerqueryscoping before action acceptance."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "salesforce-admins-app-builder-refresh-2026",
+      "published_on": "2026-08-27",
+      "review": "Mainarticle/transcriptconfirmrefresh/deeperFlow/foundationalAgentforce. ExactearlierAugust21date not reverified;no audio/video orbooking."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 28,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "4fe26926ca3c9b291d136004b95846e651c1c88f485efc42820ca4d5cbef17a0",
+      "python_version": "3.13.14",
+      "sqlite_version": "3.50.4",
+      "results": {
+        "checks": [
+          "foreign keys enabled",
+          "three detail rows total 250 cents",
+          "joining independent children multiplies rows",
+          "naive joined sum doubles the amount",
+          "distinct amounts lose separate equal-value lines",
+          "aggregate by parent before combining other details",
+          "orphan detail rejected",
+          "required parent enforced",
+          "negative detail rejected",
+          "parent-budget failure rolls back child change",
+          "deleting one detail keeps parent",
+          "detail deletion changes computed total",
+          "chosen cascading relationship removes remaining details",
+          "chosen nullable relationship keeps notes",
+          "retained notes lose the removed parent key",
+          "unrelated parent remains",
+          "handled_commit ends transaction",
+          "explicit_rollback ends transaction",
+          "earlier_commit ends transaction",
+          "handled failure can preserve previous update",
+          "explicit rollback restores same-transaction update",
+          "later rollback does not undo an earlier commit",
+          "all three paths reject invalid detail",
+          "all planned components included once",
+          "every prerequisite precedes its dependent",
+          "known existing dependency can be outside artifact",
+          "missing dependency rejected",
+          "cycle rejected"
+        ],
+        "correct_cents": 250,
+        "deployment_order": [
+          "object",
+          "field",
+          "flow",
+          "page",
+          "permissions"
+        ],
+        "distinct_cents": 150,
+        "naive_cents": 500,
+        "passed": 28
+      },
+      "execution_stdout": "{\"checks\": [\"foreign keys enabled\", \"three detail rows total 250 cents\", \"joining independent children multiplies rows\", \"naive joined sum doubles the amount\", \"distinct amounts lose separate equal-value lines\", \"aggregate by parent before combining other details\", \"orphan detail rejected\", \"required parent enforced\", \"negative detail rejected\", \"parent-budget failure rolls back child change\", \"deleting one detail keeps parent\", \"detail deletion changes computed total\", \"chosen cascading relationship removes remaining details\", \"chosen nullable relationship keeps notes\", \"retained notes lose the removed parent key\", \"unrelated parent remains\", \"handled_commit ends transaction\", \"explicit_rollback ends transaction\", \"earlier_commit ends transaction\", \"handled failure can preserve previous update\", \"explicit rollback restores same-transaction update\", \"later rollback does not undo an earlier commit\", \"all three paths reject invalid detail\", \"all planned components included once\", \"every prerequisite precedes its dependent\", \"known existing dependency can be outside artifact\", \"missing dependency rejected\", \"cycle rejected\"], \"correct_cents\": 250, \"deployment_order\": [\"object\", \"field\", \"flow\", \"page\", \"permissions\"], \"distinct_cents\": 150, \"naive_cents\": 500, \"passed\": 28}",
+      "execution_boundary": "Actual standard-library in-memorySQLite constraints,joins,foreign keys,chosenCASCADE/SETNULLpolicies andcommit/rollback;originaldependencygraph via graphlib. No Salesforceorg,API,Flow,approval,metadata,authentication,installation ornetwork operation.",
+      "model_limits": "Controlledsingleconnectionfixtures;local parentbudget rule anddeclareddependencyassumptions. Not native rollup/security,validationorder,currency,RecycleBin,actualFlowboundaries,approvallocks,dependencydiscovery,deployability,concurrency,crashrecovery orproduction performance proof."
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Exam-guide maintenance wording3/year conflicts with dedicatedannualpolicy/schedule. Use assignedprofile requirement; no credentialaccount viewed orvendorcontact. Datedschedule subjecttochange.",
+    "Automaticcanonicalmonitor returns manual-review dueclient-renderedbody. Fullbrowsercomparisonfound26substantiveobjectives/weightsunchanged andone editorial the beforeAgentExchange. Baseline retained;no exactcurrenthash-match orautomatedlifecycleverification claimed.",
+    "Two commercial endpointsHTTP403;ForceAcademy title-only andYouTubetitle/footer. ExactearlierAugust21launchdate,currentpaidcourseinteriors,update/runtime metadata andpracticequality not verified.",
+    "MostHelpdirectcaptures61-characterloadingshells;browsermainsectionsused andrecorded. HistoricalCreateRecordsreleasebodyunreadable;preciseAPI65return-typeclaimnotadopted.",
+    "Eight Salesforceorgactivities andindependenthumanreview remainpending. NoactualFlow,approvallock,agent,metadata,DataLoader,API,booking,purchase,trial,installation orruntimechange.",
+    "28actual localSQLite/graphlibchecks usecontrolledoriginalfixtures. No Salesforcepermissions/rollup/recyclebin/currency/validationorder,concurrency,crashrecovery,performance oractualtargetdependencydiscovery tested.",
+    "Five reservedGitHubguides anddisablednotificationpilot untouched;no messages,service/reboot/authentication/permissionchanges."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 179,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Actual standard-library in-memorySQLite constraints,joins,foreign keys,chosenCASCADE/SETNULLpolicies andcommit/rollback;originaldependencygraph via graphlib. No Salesforceorg,API,Flow,approval,metadata,authentication,installation ornetwork operation.",
+    "passed": 28,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "4fe26926ca3c9b291d136004b95846e651c1c88f485efc42820ca4d5cbef17a0",
+    "python_version": "3.13.14",
+    "sqlite_version": "3.50.4",
+    "results": {
+      "checks": [
+        "foreign keys enabled",
+        "three detail rows total 250 cents",
+        "joining independent children multiplies rows",
+        "naive joined sum doubles the amount",
+        "distinct amounts lose separate equal-value lines",
+        "aggregate by parent before combining other details",
+        "orphan detail rejected",
+        "required parent enforced",
+        "negative detail rejected",
+        "parent-budget failure rolls back child change",
+        "deleting one detail keeps parent",
+        "detail deletion changes computed total",
+        "chosen cascading relationship removes remaining details",
+        "chosen nullable relationship keeps notes",
+        "retained notes lose the removed parent key",
+        "unrelated parent remains",
+        "handled_commit ends transaction",
+        "explicit_rollback ends transaction",
+        "earlier_commit ends transaction",
+        "handled failure can preserve previous update",
+        "explicit rollback restores same-transaction update",
+        "later rollback does not undo an earlier commit",
+        "all three paths reject invalid detail",
+        "all planned components included once",
+        "every prerequisite precedes its dependent",
+        "known existing dependency can be outside artifact",
+        "missing dependency rejected",
+        "cycle rejected"
+      ],
+      "correct_cents": 250,
+      "deployment_order": [
+        "object",
+        "field",
+        "flow",
+        "page",
+        "permissions"
+      ],
+      "distinct_cents": 150,
+      "naive_cents": 500,
+      "passed": 28
+    },
+    "execution_stdout": "{\"checks\": [\"foreign keys enabled\", \"three detail rows total 250 cents\", \"joining independent children multiplies rows\", \"naive joined sum doubles the amount\", \"distinct amounts lose separate equal-value lines\", \"aggregate by parent before combining other details\", \"orphan detail rejected\", \"required parent enforced\", \"negative detail rejected\", \"parent-budget failure rolls back child change\", \"deleting one detail keeps parent\", \"detail deletion changes computed total\", \"chosen cascading relationship removes remaining details\", \"chosen nullable relationship keeps notes\", \"retained notes lose the removed parent key\", \"unrelated parent remains\", \"handled_commit ends transaction\", \"explicit_rollback ends transaction\", \"earlier_commit ends transaction\", \"handled failure can preserve previous update\", \"explicit rollback restores same-transaction update\", \"later rollback does not undo an earlier commit\", \"all three paths reject invalid detail\", \"all planned components included once\", \"every prerequisite precedes its dependent\", \"known existing dependency can be outside artifact\", \"missing dependency rejected\", \"cycle rejected\"], \"correct_cents\": 250, \"deployment_order\": [\"object\", \"field\", \"flow\", \"page\", \"permissions\"], \"distinct_cents\": 150, \"naive_cents\": 500, \"passed\": 28}",
+    "model_limits": "Controlledsingleconnectionfixtures;local parentbudget rule anddeclareddependencyassumptions. Not native rollup/security,validationorder,currency,RecycleBin,actualFlowboundaries,approvallocks,dependencydiscovery,deployability,concurrency,crashrecovery orproduction performance proof.",
+    "learning_catalog_consistency": "passed",
+    "windows_encoding_fix": "Repository validator tests now explicitly decode all JSON fixtures in this test module as UTF-8. The original normal-environment Windows run failed on the instructor surname; the subsequent unmodified-environment full suite passed all 179 tests in 37.256 seconds."
+  },
+  "public_objective_groups": [
+    {
+      "title": "Salesforce Fundamentals",
+      "weight": "18%",
+      "objectives": [
+        "Given a scenario, identify the boundaries of declarative customization and the use cases for programmatic customization.",
+        "Identify common scenarios for extending an org using AgentExchange.",
+        "Apply features and capabilities available to restrict and extend object, record, and field access.",
+        "Given a set of business requirements, determine the appropriate sharing solution.",
+        "Identify the features and capabilities available when creating reports, report types, and dashboards."
+      ]
+    },
+    {
+      "title": "Data Modeling and Management",
+      "weight": "20%",
+      "objectives": [
+        "Given a scenario, determine the appropriate data model.",
+        "Given a scenario, explain the capabilities of the various relationship types and the implications of each on record access, user interface, and reporting.",
+        "Given a scenario, determine the considerations when selecting or changing a field data type.",
+        "Given a scenario, determine the options and considerations when importing and exporting data, including the capabilities of external data sources."
+      ]
+    },
+    {
+      "title": "Business Logic and Process Automation",
+      "weight": "32%",
+      "objectives": [
+        "Given a scenario, demonstrate the use of formula fields to meet stated business requirements.",
+        "Given a scenario, determine the capabilities, use cases, and implications of roll-up summary fields.",
+        "Given a scenario, demonstrate the use of validation rules to meet stated business requirements.",
+        "Create and configure flows using Flow Builder.",
+        "Describe the capabilities and use cases for Flow Approval processes.",
+        "Given a scenario, determine the appropriate flow type to meet stated business requirements.",
+        "Maintain, monitor, and troubleshoot flows.",
+        "Describe the capabilities and use cases for using Agentforce to automate business processes."
+      ]
+    },
+    {
+      "title": "User Interface",
+      "weight": "17%",
+      "objectives": [
+        "Describe the user interface customization options.",
+        "Demonstrate the capabilities and use cases for custom buttons, links, and actions.",
+        "Given a scenario, determine the declarative options available for incorporating Lightning components in an application.",
+        "Describe the programmatic customizations available for incorporating custom Lightning components in an application.",
+        "Given a set of requirements, determine the appropriate global, object-specific actions and layouts to optimize the Salesforce mobile user experience."
+      ]
+    },
+    {
+      "title": "App Deployment",
+      "weight": "13%",
+      "objectives": [
+        "Given a set of business requirements, recommend a solution for managing the application lifecycle, including sandbox types.",
+        "Given a use case, demonstrate knowledge, viability, and troubleshooting when using change sets.",
+        "Describe the use cases and considerations when using unmanaged and managed packages.",
+        "Given a scenario, determine the appropriate deployment plan."
+      ]
+    }
+  ],
+  "manual_source_comparison": {
+    "reviewed_on": "2026-09-29",
+    "canonical_url": "https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1",
+    "automated_monitor": "manual-review; client-rendered outline unavailable",
+    "retained_baseline_sha256": "5365cb37f260db38aa6b4a306dd826258e3d85f058b8111352e56a065a965f14",
+    "browser_observation_sha256": "6934653df6143ad51b7274459c45dddd345ef460f94c35f4f117d20ead599e8a",
+    "objective_counts": [
+      5,
+      4,
+      8,
+      5,
+      4
+    ],
+    "weights": [
+      18,
+      20,
+      32,
+      17,
+      13
+    ],
+    "editorial_difference": "Second objective inserts the before AgentExchange; no substantive objective or weight change.",
+    "decision": "Retain existing reviewed baseline bytes, disclose editorial difference and manual comparison. No claim that automated hashes matched current source. Lifecycle annual policy conflicts with exam-guide three-times-year wording; policy/schedule reviewed separately.",
+    "retained_lifecycle_sha256": "6071f7bbdab29492836235f2378d741b09c5ba98456669289d7b39e5f3690aa6"
+  },
+  "source_reading_boundaries": {
+    "salesforce-platform-app-builder-certification": "Complete main credential text read; current learning trail linked. No Academy booking, authentication or exam enrollment.",
+    "focus-on-force-salesforce-certification": "Fresh catalog capture; complete public main catalog read during immediately preceding Administrator review. Only general App Builder resource presence used here; no current App Builder product interior or quality evaluated.",
+    "salesforce-platform-app-builder-guide": "Direct HTTP61-character loading/CSS shell; automatic monitor returns documented manual-review. Full browser main exam guide read,including26 bullets,73% score,SU26 label,delivery andmaintenance. Browser objective2 inserts the before AgentExchange;substantive scope/weights match saved baseline. Exam-maintenance sentence says3times/year,conflicting with dedicated policy/schedule. No silent snapshot update.",
+    "udemy-salesforce-platform-app-builder-wheeler": "HTTP403; prior23h35/July2026 metadata not reverified. No paid content,practice answers or purchase.",
+    "oreilly-salesforce-platform-app-builder-training": "HTTP403; prior12h3/August2022 metadata not reverified. No video played orpaid interior.",
+    "salesforce-platform-app-builder-maintenance-winter-26": "Complete public module listing read:30min split5-minute introductory unit and25-minute multi-column list-view activity. No activity/assessment completion.",
+    "oreilly-salesforce-platform-app-builder-bootcamp": "Complete public main outline read,instructor Michaela Grofčík,eight timed sections300min including10minwrap-up,excludinguntimedbreaks. No upcoming eventdateverified;instructorTrailmixURLplaceholder. No practice-question contents orliveevent.",
+    "salesforce-platform-app-builder-learning-path": "Complete public main trail/card grid read:20minoverview plus565/290/645/680/160min domains =2360min39h20. Steps2overview and7/7/7/6/6. AgentExchange,Agentforce admin setup anddeployment routes included;not all badgeinteriors.",
+    "salesforce-admins-app-builder-refresh-2026": "Main August27,2026 article and complete relevant transcript throughclosingparagraph read in bounded chunks;some unrelatedfooter notreviewed. DeeperFlow verbs andfoundationalAgentforce,newhands-ontrail replace oldprepbadges. Audio notplayed;exactAugust21launch date absent/unverified. No Dreamforce booking orremoteproctoring action.",
+    "forceacademy-app-builder-refresh-2026": "HTTP200 but only54-character generictitle. Earlier article/date/weights corroboration no longer verified. No practice-question content used.",
+    "youtube-salesforce-ben-platform-app-builder-overview": "Only title/footer extracted224characters. Title says5Minute;actualduration,2023date andvideo content notverified;video notplayed.",
+    "salesforce-flow-api68-context": "Fresh directHTTPshell; complete browser main versioned change read during preceding same-sessionAdministratorreview. API68+ enforcing-user option for eligibleflows,not changedidentity orproof oforgavailability.",
+    "salesforce-flow-rollback": "Fresh9361-character capture matches same-session reading. Problem with Fault Paths,ScreenRollback andtransactionboundary,CustomErrorintro/firststeps reviewed;laterknowledgecheck/allactivitysteps notread. No Flowrun.",
+    "salesforce-agent-user-access": "FreshHTTPshell; browser main andfullthree-columnauthenticationtable read inprecedingAdministratorreview. Verifiedcontactvscredential-authenticatedsite andcustomerqueryscoping,notalllinkedguides oragentexecution.",
+    "salesforce-permission-muting": "Fresh9672-charactercapture; intro/considerations,setup rationale,dependencies andinstalled-package discussion read same session. Not allstep-by-stepactivity andnochallengeanswers.",
+    "salesforce-maintenance-policy-de": "DirectHTTPshell; browser English main body through German-locale wrapper read,especially overview andadministrator table. Annualbadge/AppBuilderWinter;not acredential-profile lookup. Otherrole tablesnot audited forconsistency.",
+    "salesforce-maintenance-schedule-de": "DirectHTTPshell; browser English overview/completion/date table throughdate-subject-to-change note read. Winter26Dec11,2025available/Dec4,2026due,PT;includesAppBuilder. Remainingrole tablesnotfullyaudited;actualassignedeligibilitynotknown.",
+    "salesforce-cross-object-formula": "DirectHTTPshell; browser complete main shortarticle read,up-to10relationships,lookup/masterdetail,relatedvalueexposurewithoutparentrecordaccess andreference examples. Noactualformula/usersecuritytest.",
+    "salesforce-flow-approval-locking": "DirectHTTPshell; complete browser mainlocking article read. Sequential/parallelcoordination,one lock,backgroundlock/unlock,allowededits/adminexception andconcurrentprocess submissions. No flow approval runtime;not adopting detailed evaluation-flow recipe.",
+    "salesforce-object-relationships": "Complete main public lesson andshown activity steps read;lookup/masterdetail/hierarchicalUser/cascade. Noorgactivity orchallengeanswercopied.",
+    "salesforce-deployment-monitoring": "DirectHTTPshell; complete browser mainmonitor article read. Validation/actualdeploy,statusprefix,nonproductionpartialsuccess,quickdeploy10day/tests/coverage andinvalidatedbylaterdeployment. Linkedvideos andfullMetadataAPIguide notread,no deployment.",
+    "salesforce-app-builder-winter26-unit": "Complete main5-minuteintroductorylesson read,includingfileattach,newrecordoutput,summaryandpreviewstyle. Nochallengeanswers oractivity. PreciseAPI65output-type wording notadopted withoutreadablelinkedreleasecontract.",
+    "salesforce-rollup-summary": "OriginalURLwithouttype andcorrectedtype5directHTTPshell. Correctedbrowserfullmainread,includingadministration/management/bestpractices. Derived-fieldvisibility,conversionconstraints andparentvalidation used;not all documentedcurrency/timing/examplesadopted. No engine execution; apparent greater-than/over100example inconsistency notreproduced.",
+    "salesforce-flow-created-record-output": "Exactrelease link extracted frommaintenanceunit. Directandbrowserrequestsreturnedloading/CSSshell. No additionalruntime/output-type claim derived; historicalfeaturecontextonlyfromreadablemaintenanceunit. No org execution."
+  },
+  "maintenance_discrepancy": {
+    "exam_article": "three times a year",
+    "dedicated_policy": "one annual badge; App Builder Winter cycle",
+    "schedule_available": "2025-12-11",
+    "schedule_due": "2026-12-04",
+    "timezone": "Pacific Time",
+    "date_limits": "Published cycle dates subject to change; actual assigned credential requirement not accessed",
+    "decision": "Retain annual-policy baseline anddiscloseexamarticle conflict;dedicatedpolicy/schedule andassignedprofilecontrol practicalguidance. No vendor contacted.",
+    "browser_route": "English bodies through German-locale policy/schedule; directHTTPshells"
+  },
+  "catalog_findings": [
+    {
+      "source_id": "salesforce-platform-app-builder-learning-path",
+      "overview_minutes": 20,
+      "domain_minutes": [
+        565,
+        290,
+        645,
+        680,
+        160
+      ],
+      "total_minutes": 2360,
+      "scope": "Public cards only; not all badge interiors"
+    },
+    {
+      "source_id": "oreilly-salesforce-platform-app-builder-bootcamp",
+      "timed_section_minutes": [
+        10,
+        50,
+        60,
+        60,
+        60,
+        30,
+        20,
+        10
+      ],
+      "total_minutes": 300,
+      "scope": "Includes wrap-up,excludesuntimedbreaks;no eventdate orinteriorverified"
+    },
+    {
+      "source_id": "forceacademy-app-builder-refresh-2026",
+      "observation": "54-character title-only response; prior article corroboration unavailable",
+      "resolution": "ExactAugust21launchdate no longerasserted asfreshprimaryfact"
+    },
+    {
+      "source_id": "youtube-salesforce-ben-platform-app-builder-overview",
+      "observation": "Title/footer only;title5Minute notmeasuredruntime",
+      "resolution": "Video/date/interior notverified"
+    }
+  ],
+  "superseded_fetch_receipts": [
+    {
+      "id": "salesforce-rollup-summary",
+      "url": "https://help.salesforce.com/s/articleView?id=platform.fields_about_roll_up_summary_fields.htm&language=en_US",
+      "checked_at": "2026-09-29T14:30:44.094519+00:00",
+      "health": {
+        "id": "salesforce-rollup-summary",
+        "url": "https://help.salesforce.com/s/articleView?id=platform.fields_about_roll_up_summary_fields.htm&language=en_US",
+        "checked_at": "2026-09-29T14:30:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=platform.fields_about_roll_up_summary_fields.htm&language=en_US",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=platform.fields_about_roll_up_summary_fields.htm&language=en_US",
+        "duration_signals": [],
+        "signal_fingerprint": "ec6e7c27e8ea7083d8d309cf5deea65a168c2f3a36fa38b0a88b3819ab540dce",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=platform.fields_about_roll_up_summary_fields.htm&language=en_US",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    }
+  ]
+}

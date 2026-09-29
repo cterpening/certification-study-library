@@ -1706,6 +1706,8 @@ The review maps each domain through business requirement and data owner → lice
 
 ## SALESFORCE-PLATFORM-APP-BUILDER coverage record
 
+The September 29 [deep review](research/2026-09-29-salesforce-platform-app-builder-deep-review.md) maps 26 detailed objectives. Manually compared all26 substantive objectives and five weights, retaining baseline bytes with one disclosed editorial difference. Added40 answered prompts and28 executed local relationship,aggregation,transaction anddependency checks. Clarified derived-field visibility,Flow fault/lock behavior anddeployment status. Official maintenance wording conflicts;client-rendered monitoring,inaccessible training metadata,live org work andhuman review remain limited. Current guide citations: 23 registered, 21 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 7, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: corrected Summer ’26 baseline—Salesforce Fundamentals (18%), Data Modeling and Management (20%), Business Logic and Process Automation (32%), User Interface (17%), and App Deployment (13%)

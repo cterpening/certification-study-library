@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BUILD_DIR = ROOT / ".site-build"
 
 PUBLIC_DOCUMENTS = (
+    "docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md",
     "docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md",
     "docs/research/2026-09-29-ncp-aio-deep-review.md",
     "docs/research/2026-09-29-nca-aiio-deep-review.md",
