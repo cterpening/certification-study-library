@@ -3,6 +3,174 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "salesforce-apex-lwc-security",
+      "title": "Secure Apex classes and API-version defaults",
+      "url": "https://developer.salesforce.com/docs/platform/lwc/guide/apex-security.html",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Complete direct main and browser security article read. API67 versus66 defaults, explicit modes, invocation permissions, sharing versus CRUD/FLS, and stripInaccessible/describe options. Linked legacy atlas pages yielded iframe-only responses; no Apex compilation or runtime proof. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-summer26-developer-release",
+      "title": "Salesforce developer guide to Summer26 release",
+      "url": "https://developer.salesforce.com/blogs/2026/06/the-salesforce-developers-guide-to-the-summer-26-release",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Selected browser sections read, especially Apex updates lines155–183 and LWS distortion discussion122–128. Other visible introductory context inspected but entire article/linked feature docs not audited. Trigger bullet overstates system-mode behavior compared with specific release note; use detailed rule. No preview/agent feature installation or operation. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-apex-trigger-context-67",
+      "title": "Apex triggers and database access modes in API67",
+      "url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_triggers_system_mode.htm&language=en_US&release=262&type=5",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Direct and repeated browser opens returned 61-character shell. Full indexed first-party main body including Where/Why/How/example and SeeAlso read in search extraction and retained privately. Trigger without-sharing context distinguished from API67 user-mode database operations. Runtime not tested; discrepancy with roundup retained. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-lws-html-allowlist",
+      "title": "HTML allowlist for Lightning Web Security",
+      "url": "https://developer.salesforce.com/docs/platform/lightning-components-security/guide/lws-sanitize-html.html",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Complete short direct main/allowlist read. LWS filters DOM HTML, not arbitrary input text. Example code not visible in text capture; no browser execution. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-lightning-csp",
+      "title": "Content Security Policy for Lightning components",
+      "url": "https://developer.salesforce.com/docs/platform/lightning-components-security/guide/content-security-policy-intro.html",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Complete direct main read: static-resource JavaScript requirement, Trusted URLs, HTTPS, inline-script restriction and developer-console violations. No CDN/library installation or CSP change. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-apex-dml",
+      "title": "Manipulate records with Apex DML",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/apex_database/apex_database_dml",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Selected sections read: DML exceptions, Database methods/default allOrNone/partial results, related records and transaction section. Earlier upsert/delete excerpt partly read; not the entire lesson. No activity/challenge solution or runtime. Wording about commits interpreted with enclosing transaction boundaries. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-apex-queueable",
+      "title": "Control queueable Apex jobs and tests",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/asynchronous_apex/async_apex_queueable",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Complete main through Resources read, including job ID monitoring, Queueable versus future, tests, chaining, stack-depth qualification and limits. Video/linked stack-depth details not reviewed, no challenge or execution. Guide avoids claiming arbitrary chained work is automatically completed. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-apex-trigger-tests",
+      "title": "Test Apex triggers and isolate test limits",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/apex_testing/apex_testing_triggers",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Main lesson through TellMeMore and Resources read; stopped at challenge introduction. Test limits isolation, error assertions and bulk/negative tests used. No challenge solution copied or org operation; console coverage note not adopted as a tested current tool defect. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-apex-default-user-mode-67",
+      "title": "Apex default user mode and explicit operation access",
+      "url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_default_user_mode.htm&language=en_US&release=262&type=5",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Direct/browser opens return shell. Full indexed first-party main body, version boundary, operation syntax, removed WITH SECURITY_ENFORCED and user/system sharing distinction read and retained privately. No compile/runtime check. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-agentforce-dx-environment",
+      "title": "Agentforce DX environment and current development-tool names",
+      "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-set-up-env.html",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Selected direct main: introduction, extension versus IDE rename, CLI/IDE roles, sandbox/scratch differences and displayed setup sequence through authorization. Later section not fully reviewed; instructions treated as source data, no tools installed or org authorized. Only naming/tool-role facts adopted. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-apex-bulk-triggers",
+      "title": "Bulk Apex trigger design",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/apex_triggers/apex_triggers_bulk",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Complete main lesson through Resources read across two chunks: collection inputs, grouped queries/DML and 200-record batching. No activity execution or assessment. One intermediate example spells WITH USER MODE while final code uses underscores; no vendor example copied or claimed compiled. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-developer-winter26-unit",
+      "title": "Platform Developer Winter26 maintenance introduction",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/platform-developer-certification-maintenance-winter-26/maintain-your-platform-developer-certification-for-winter-26",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Complete ten-minute introductory main through Resources read. Topic listing verified, but exact large-payload, Trusted Mode and GraphQL-deprecation wording not adopted without deeper product verification. Activity and challenge not executed; no behavior-changing settings applied. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "salesforce-maintenance-policy-de",
       "title": "Salesforce certification maintenance policy, English body through German locale",
       "url": "https://help.salesforce.com/s/articleView?id=005298841&language=de&type=1",
@@ -49571,7 +49739,7 @@
         "SALESFORCE-PLATFORM-DEVELOPER",
         "SALESFORCE-AGENTFORCE-SPECIALIST"
       ],
-      "notes": "Commercial study guides and explained original practice exams; verify the displayed blueprint and release before purchase. Agentforce marketing indexed on September 2 still described an older five-domain/18-objective revision, so verify a six-domain Spring '26 update before relying on it. September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Public certification catalog read, including Administrator product links and associate prerequisite wording. This conflicts with official no-prerequisite rule. No assertion about practice originality or quality. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Fresh catalog capture; complete public main catalog read during immediately preceding Administrator review. Only general App Builder resource presence used here; no current App Builder product interior or quality evaluated. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
+      "notes": "Commercial study guides and explained original practice exams; verify the displayed blueprint and release before purchase. Agentforce marketing indexed on September 2 still described an older five-domain/18-objective revision, so verify a six-domain Spring '26 update before relying on it. September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Public certification catalog read, including Administrator product links and associate prerequisite wording. This conflicts with official no-prerequisite rule. No assertion about practice originality or quality. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Fresh catalog capture; complete public main catalog read during immediately preceding Administrator review. Only general App Builder resource presence used here; no current App Builder product interior or quality evaluated. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution. September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Fresh 9070-character capture matches the landing catalog read in the preceding same-session Salesforce reviews. Redirect to k2u.ai recorded; PD course/practice interiors, exact alignment and question quality not verified. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
     },
     {
       "id": "salesforce-platform-app-builder-guide",
@@ -49686,31 +49854,130 @@
       "notes": "Five-minute December 2023 orientation, not a current blueprint source; use only to understand the credential's broad purpose. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Only title/footer extracted224characters. Title says5Minute;actualduration,2023date andvideo content notverified;video notplayed. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"salesforce-platform-developer-guide","title":"Salesforce Certified Platform Developer Exam Guide","url":"https://help.salesforce.com/s/articleView?id=005298965&language=en_US&type=1","publisher":"Salesforce","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-07","supported_exams":["SALESFORCE-PLATFORM-DEVELOPER"],"notes":"Canonical 27/28/25/20 objective list, candidate boundary and exam contract; complete indexed text revalidated September 7, while the page still labels Summer '25 and requires continued Trailhead comparison."
+      "id": "salesforce-platform-developer-guide",
+      "title": "Salesforce Certified Platform Developer Exam Guide",
+      "url": "https://help.salesforce.com/s/articleView?id=005298965&language=en_US&type=1",
+      "publisher": "Salesforce",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "notes": "Canonical 27/28/25/20 objective list, candidate boundary and exam contract; complete indexed text revalidated September 7, while the page still labels Summer '25 and requires continued Trailhead comparison. September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Direct 61-character loading/CSS shell. Complete browser main article read: role and exclusions, contract, all 21 objectives, training, conduct and annual maintenance. All objective lines/headings match baseline after removal of blank lines/browser markup. Monitor remains manual-review; no automatic hash match. Summer25 label retained as a watch. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"salesforce-platform-developer-certification","title":"Salesforce Certified Platform Developer","url":"https://trailhead.salesforce.com/credentials/platformdeveloperi","publisher":"Salesforce","authority_class":1,"source_type":"official-certification-page","access_model":"public","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-DEVELOPER"],"notes":"Current display title and official learning entry point; URL retains the legacy platformdeveloperi slug."
+      "id": "salesforce-platform-developer-certification",
+      "title": "Salesforce Certified Platform Developer",
+      "url": "https://trailhead.salesforce.com/credentials/platformdeveloperi",
+      "publisher": "Salesforce",
+      "authority_class": 1,
+      "source_type": "official-certification-page",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "notes": "Current display title and official learning entry point; URL retains the legacy platformdeveloperi slug. September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Complete current browser main credential body and preparation/related-credential cards read. Current title confirmed; no booking or purchase. Linked numeric-user Trailmix redirects to registered alias and exposes navigation only. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"salesforce-platform-developer-prep-trail","title":"Study for the Platform Developer Exam","url":"https://trailhead.salesforce.com/content/learn/trails/platform-developer-i-certification-study-guide","publisher":"Salesforce","authority_class":1,"source_type":"official-learning-path","access_model":"public","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-DEVELOPER"],"notes":"Current free 1h15 official four-domain prep trail with scenarios and flashcards."
+      "id": "salesforce-platform-developer-prep-trail",
+      "title": "Study for the Platform Developer Exam",
+      "url": "https://trailhead.salesforce.com/content/learn/trails/platform-developer-i-certification-study-guide",
+      "publisher": "Salesforce",
+      "authority_class": 1,
+      "source_type": "official-learning-path",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "notes": "Current free 1h15 official four-domain prep trail with scenarios and flashcards. September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Complete public trail card grid read: four modules, 10/35/10/20 minutes = 75 minutes. Module interiors and scenario/flashcard assessments not reviewed or copied. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"salesforce-platform-developer-trailmix","title":"Prepare for Your Salesforce Platform Developer Certification","url":"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-developer-i-credential","publisher":"Salesforce","authority_class":1,"source_type":"official-learning-path","access_model":"public","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-DEVELOPER"],"notes":"Official 34-step broad hands-on collection; visible timed steps totaled approximately 31h25 when checked, with one untimed preparation task."
+      "id": "salesforce-platform-developer-trailmix",
+      "title": "Prepare for Your Salesforce Platform Developer Certification",
+      "url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-developer-i-credential",
+      "publisher": "Salesforce",
+      "authority_class": 1,
+      "source_type": "official-learning-path",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "notes": "Official 34-step broad hands-on collection; visible timed steps totaled approximately 31h25 when checked, with one untimed preparation task. September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Direct capture blank; browser route from credential also has navigation only. Earlier 31h25 duration not reverified; no completed badge/interior claim. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"salesforce-platform-developer-maintenance-winter-26","title":"Platform Developer Certification Maintenance (Winter '26)","url":"https://trailhead.salesforce.com/content/learn/modules/platform-developer-certification-maintenance-winter-26","publisher":"Salesforce","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-DEVELOPER"],"notes":"Free approximately 45-minute current maintenance module with combined Apex and Flow testing context."
+      "id": "salesforce-platform-developer-maintenance-winter-26",
+      "title": "Platform Developer Certification Maintenance (Winter '26)",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/platform-developer-certification-maintenance-winter-26",
+      "publisher": "Salesforce",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "notes": "Free approximately 45-minute current maintenance module with combined Apex and Flow testing context. September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Complete main listing read: 45 minutes = 10-minute introduction plus 35-minute combined Apex/Flow activity. Activity not executed and assessment answers not used. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"salesforce-dex450-platform-development","title":"Build Applications Programmatically on the Salesforce Platform (DEX450)","url":"https://trailheadacademy.salesforce.com/classes/dex450-build-applications-programmatically-on-the-salesforce-platform","publisher":"Salesforce Trailhead Academy","authority_class":1,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-DEVELOPER"],"notes":"Official five-day instructor-led Apex, LWC, Visualforce, testing, limits and deployment course; price and schedule vary."
+      "id": "salesforce-dex450-platform-development",
+      "title": "Build Applications Programmatically on the Salesforce Platform (DEX450)",
+      "url": "https://trailheadacademy.salesforce.com/classes/dex450-build-applications-programmatically-on-the-salesforce-platform",
+      "publisher": "Salesforce Trailhead Academy",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "notes": "Official five-day instructor-led Apex, LWC, Visualforce, testing, limits and deployment course; price and schedule vary. September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Direct and linked Academy route blank. Earlier five-day duration, current availability/sessions and interiors not reverified. No booking. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pluralsight-salesforce-platform-developer-path","title":"Salesforce Certified Platform Developer I","url":"https://www.pluralsight.com/paths/salesforce-certified-platform-developer-i-update","publisher":"Pluralsight / Adam Olshansky","authority_class":3,"source_type":"commercial-learning-path","access_model":"paid","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-DEVELOPER"],"notes":"Six-course, ten-hour path with practice exam; main courses date 2022–2024, so verify Agentforce and current seasonal tooling gaps."
+      "id": "pluralsight-salesforce-platform-developer-path",
+      "title": "Salesforce Certified Platform Developer I",
+      "url": "https://www.pluralsight.com/paths/salesforce-certified-platform-developer-i-update",
+      "publisher": "Pluralsight / Adam Olshansky",
+      "authority_class": 3,
+      "source_type": "commercial-learning-path",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "notes": "Six-course, ten-hour path with practice exam; main courses date 2022–2024, so verify Agentforce and current seasonal tooling gaps. September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Complete public path main/card text read. Six Adam Olshansky cards total 598 minutes, versus rounded ten-hour header; dates Sep19,2022; four Oct27,2023; May14,2024. Practice listing not a review of questions; no lesson interiors or trial. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-salesforce-developer-i-certification","title":"Salesforce Developer I Certification","url":"https://www.oreilly.com/library/view/salesforce-developer-i/9798868803000/","publisher":"O'Reilly / Apress / Konstantin Kapitanov","authority_class":3,"source_type":"commercial-book","access_model":"paid","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-DEVELOPER"],"notes":"July 2024, 205-page/4h10m listed compact book covering Apex, LWC, Flow, security, testing and DX; supplement current deltas."
+      "id": "oreilly-salesforce-developer-i-certification",
+      "title": "Salesforce Developer I Certification",
+      "url": "https://www.oreilly.com/library/view/salesforce-developer-i/9798868803000/",
+      "publisher": "O'Reilly / Apress / Konstantin Kapitanov",
+      "authority_class": 3,
+      "source_type": "commercial-book",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "notes": "July 2024, 205-page/4h10m listed compact book covering Apex, LWC, Flow, security, testing and DX; supplement current deltas. September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: HTTP403. Earlier 4h10/205-page/2024 metadata not reverified. No book interior or practice content accessed. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-salesforce-platform-developer-wheeler","title":"Complete Salesforce Certified Platform Developer 1 Course","url":"https://www.udemy.com/course/salesforce-developer/","publisher":"Udemy / Anthony Wheeler and Mike Wheeler","authority_class":3,"source_type":"commercial-course","access_model":"paid","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-DEVELOPER"],"notes":"13h49m guided course listed as updated June 2026; reconcile its legacy title and coverage with the official current pages."
+      "id": "udemy-salesforce-platform-developer-wheeler",
+      "title": "Complete Salesforce Certified Platform Developer 1 Course",
+      "url": "https://www.udemy.com/course/salesforce-developer/",
+      "publisher": "Udemy / Anthony Wheeler and Mike Wheeler",
+      "authority_class": 3,
+      "source_type": "commercial-course",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "notes": "13h49m guided course listed as updated June 2026; reconcile its legacy title and coverage with the official current pages. September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: HTTP403. Earlier 13h49/June2026 metadata not reverified. No paid interior or question quality claim. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
     },
     {
       "id":"salesforce-agentforce-specialist-guide","title":"Salesforce Certified Agentforce Specialist Exam Guide","url":"https://help.salesforce.com/s/articleView?id=005298924&language=en_US&type=1","publisher":"Salesforce","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-07","supported_exams":["SALESFORCE-AGENTFORCE-SPECIALIST"],"notes":"Canonical Spring '26 six-domain objectives, candidate boundary and exam contract; complete indexed text was revalidated September 7 despite a Loading/CSS wrapper in simple HTML."
@@ -55756,9 +56023,11 @@
       "authority_class": 3,
       "source_type": "expert-resource",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["SALESFORCE-PLATFORM-DEVELOPER"],
-      "notes": "March 2026 community technical walkthrough of LWS, CSP, framework rendering, sanitization, and hostile-input tests; verify behavior in current official docs."
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "notes": "March 2026 community technical walkthrough of LWS, CSP, framework rendering, sanitization, and hostile-input tests; verify behavior in current official docs. September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Complete main article/code and conclusion read; March17,2026 and six-minute label. Treated as community background only. Its CDN advice conflicts with first-party CSP requirements, and with-sharing-only sample requires API/operation access review. Code not copied, installed, compiled or executed. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
     },
     {
       "id": "github-gh600-study-guide",

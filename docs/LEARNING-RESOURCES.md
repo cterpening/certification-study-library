@@ -3051,6 +3051,28 @@ This is not a complete list. Select resources by the gaps you can demonstrate. C
 
 The preparation trail totals 20 minutes of overview plus 9 hr 25 min fundamentals, 4 hr 50 min data, 10 hr 45 min logic, 11 hr 20 min UI and 2 hr 40 min deployment. These are public planning estimates, not evidence that every badge interior was reviewed. The live bootcamp's 300 timed minutes include its 10-minute wrap-up; they exclude breaks and do not establish an upcoming event date. No paid lessons, practice answers, purchases or trial registrations were accessed. Use the official exam and maintenance sources for requirements.
 
+### SALESFORCE-PLATFORM-DEVELOPER — Salesforce Certified Platform Developer
+
+Resource details from the [SALESFORCE-PLATFORM-DEVELOPER guide](../guides/SALESFORCE-PLATFORM-DEVELOPER-salesforce-certified-platform-developer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is **not a complete list** and is not meant to be consumed in full. Choose resources for identified gaps. Current public catalog metadata is distinguished from earlier observations and our planning estimates; paid interiors and practice quality were not verified.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Official exam guide](https://help.salesforce.com/s/articleView?id=005298965&language=en_US&type=1) and [credential page](https://trailhead.salesforce.com/credentials/platformdeveloperi) — scope, role boundary and contract | Public; Help requires browser/indexed reading | 25–40 min, our estimate |
+| [Study for the Platform Developer Exam](https://trailhead.salesforce.com/content/learn/trails/platform-developer-i-certification-study-guide) — four public prep cards | Free Trailhead | **1 hr 15 min listed**, 10 + 35 + 10 + 20 min; badge interiors not all reviewed |
+| [Preparation Trailmix](https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-developer-i-credential) — broader curriculum | Free Trailhead; current body unavailable | Earlier **31 hr 25 min** observation, **not reverified** |
+| [Platform Developer Winter ’26 maintenance](https://trailhead.salesforce.com/content/learn/modules/platform-developer-certification-maintenance-winter-26) and [introductory unit](https://trailhead.salesforce.com/content/learn/modules/platform-developer-certification-maintenance-winter-26/maintain-your-platform-developer-certification-for-winter-26) — release orientation and a separate combined Apex/Flow activity | Free Trailhead; intro read, activity not executed | **45 min listed**, 10-min intro + 35-min activity |
+| [DEX450](https://trailheadacademy.salesforce.com/classes/dex450-build-applications-programmatically-on-the-salesforce-platform) — instructor-led development route linked from the exam guide | Paid; current page blank | Earlier **5 days** observation, **not reverified** |
+| [Pluralsight Platform Developer I path](https://www.pluralsight.com/paths/salesforce-certified-platform-developer-i-update) — Adam Olshansky's six public course cards and practice-exam listing | Paid; outlines only | **9 hr 58 min** summed cards, rounded **10 hr** header; 2022/2023/2024 card dates; practice time additional |
+| [O’Reilly Salesforce Developer I Certification](https://www.oreilly.com/library/view/salesforce-developer-i/9798868803000/) — earlier book listing | Subscription; HTTP 403 | Earlier **4 hr 10 min / 205 pages / 2024** metadata, **not reverified** |
+| [Wheeler Platform Developer course](https://www.udemy.com/course/salesforce-developer/) — Anthony and Mike Wheeler listing | Paid; HTTP 403 | Earlier **13 hr 49 min / June 2026** metadata, **not reverified** |
+| [Focus on Force catalog](https://focusonforce.com/) — current public certification catalog | Paid; current landing page read, PD course/practice interiors unverified | 15–30 hr selected study, our estimate |
+| [Apex Hours LWC security article](https://www.apexhours.com/lwc-security-in-salesforce/) — March 17, 2026 community background; apply the CSP and Apex corrections above | Public; article read, sample not run | 6-min article label; 45–90 min with your sandbox investigation, our estimate |
+| [Apex security](https://developer.salesforce.com/docs/platform/lwc/guide/apex-security.html), [bulk triggers](https://trailhead.salesforce.com/content/learn/modules/apex_triggers/apex_triggers_bulk), [DML](https://trailhead.salesforce.com/content/learn/modules/apex_database/apex_database_dml) and [Queueable](https://trailhead.salesforce.com/content/learn/modules/asynchronous_apex/async_apex_queueable) — first-party technical reading | Public | 2–4 hr selected reading/practice, our estimate |
+
+Reject guaranteed-pass products, “actual question” files, VCE collections and unexplained answer banks. Use original practice and public documentation; no paid question bank or recalled exam content was used in this review.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

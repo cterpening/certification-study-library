@@ -1719,6 +1719,8 @@ The review maps each public objective through business requirement and data owne
 
 ## SALESFORCE-PLATFORM-DEVELOPER coverage record
 
+The September 29 [deep review](research/2026-09-29-salesforce-platform-developer-deep-review.md) maps 21 detailed objectives. Manually compared 21 unchanged objectives and the stated contract; added 40 answered prompts and 31 executed local bulk/transaction checks. Added API67 security-mode boundaries, corrected CSP/community advice and distinguished detailed trigger rules from an inconsistent release roundup. Automated source extraction, inaccessible course metadata, live Salesforce work and human review remain limited. Current guide citations: 23 registered, 21 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 7, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Developer Fundamentals (27%), Process Automation and Logic (28%), User Interface (25%), and Testing, Debugging, and Deployment (20%)

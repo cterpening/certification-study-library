@@ -9405,23 +9405,62 @@
       "notes": "Manually compared all26 substantive objectives and five weights, retaining baseline bytes with one disclosed editorial difference. Added40 answered prompts and28 executed local relationship,aggregation,transaction anddependency checks. Clarified derived-field visibility,Flow fault/lock behavior anddeployment status. Official maintenance wording conflicts;client-rendered monitoring,inaccessible training metadata,live org work andhuman review remain limited. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md"
     },
     {
-      "id":"salesforce-platform-developer-2026-09-07-source-validation",
-      "exam_code":"SALESFORCE-PLATFORM-DEVELOPER",
-      "guide_path":"guides/SALESFORCE-PLATFORM-DEVELOPER-salesforce-certified-platform-developer.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-07",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/salesforce-platform-developer-official-objectives.txt",
-      "blueprint_snapshot_sha256":"4843c3b24a93a1c4da79e50db00e79c38fa5921c6127df89e37a6754c5cddbfe",
-      "objective_coverage":[
-        {"objective_group":"Developer Fundamentals (27%)","guide_sections":["Section 1","All scenarios","Labs 1–2 and 8"]},
-        {"objective_group":"Process Automation and Logic (28%)","guide_sections":["Section 2","All scenarios","Labs 2–4 and 7–8"]},
-        {"objective_group":"User Interface (25%)","guide_sections":["Section 3","Scenarios 1–2","Labs 5–6 and 8"]},
-        {"objective_group":"Testing, Debugging, and Deployment (20%)","guide_sections":["Section 4","All scenarios","Labs 7–8"]}
+      "id": "salesforce-platform-developer-2026-09-29-source-validation",
+      "exam_code": "SALESFORCE-PLATFORM-DEVELOPER",
+      "guide_path": "guides/SALESFORCE-PLATFORM-DEVELOPER-salesforce-certified-platform-developer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/salesforce-platform-developer-official-objectives.txt",
+      "blueprint_snapshot_sha256": "4843c3b24a93a1c4da79e50db00e79c38fa5921c6127df89e37a6754c5cddbfe",
+      "objective_coverage": [
+        {
+          "objective_group": "Developer Fundamentals (27%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Process Automation and Logic (28%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Labs 2–4 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "User Interface (25%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 1–2",
+            "Labs 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Testing, Debugging, and Deployment (20%)",
+          "guide_sections": [
+            "Section 4",
+            "All scenarios",
+            "Labs 7–8"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":11,"reachable":10,"access_blocked":1,"missing_or_error":0},
-      "notes":"All four published domains are mapped through limit-aware architecture/data/access, declarative and bulk Apex interaction, SOQL/SOSL/DML, secure LWC/Flow/Visualforce, deterministic tests, evidence-led diagnosis and source-driven deployment/rollback. Three scenarios, eight authorized labs and 40 original checks are included. Complete indexed official text confirms the contract, 27/28/25/20 weights and objective snapshot; the Summer '25 label remains a visible watch. A March 2026 Apex Hours LWC-security lab is community context, not scope. No recalled/live item, dump, shared superbadge solution or copied course content is used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 23,
+        "reachable": 21,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Manually compared 21 unchanged objectives and the stated contract; added 40 answered prompts and 31 executed local bulk/transaction checks. Added API67 security-mode boundaries, corrected CSP/community advice and distinguished detailed trigger rules from an inconsistent release roundup. Automated source extraction, inaccessible course metadata, live Salesforce work and human review remain limited. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md"
     },
     {
       "id":"salesforce-agentforce-specialist-2026-09-07-source-validation",

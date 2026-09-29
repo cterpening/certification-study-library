@@ -1,0 +1,1545 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "SALESFORCE-PLATFORM-DEVELOPER",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/SALESFORCE-PLATFORM-DEVELOPER-salesforce-certified-platform-developer.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "04745676fb78f66af9650dfbb1ca55cff02245fb350ecbc3a85152443c186f7d",
+  "guide_after_sha256": "e654f0d8e8c71289135bfb3a37a5b87b953bebf3a6e5c1b79168f4b5998ba79e",
+  "prior_records": {
+    "exam": {
+      "code": "SALESFORCE-PLATFORM-DEVELOPER",
+      "level": "intermediate",
+      "vendor_id": "salesforce",
+      "title": "Salesforce Certified Platform Developer",
+      "status": "active",
+      "study_guide_url": "https://help.salesforce.com/s/articleView?id=005298965&language=en_US&type=1",
+      "guide_path": "guides/SALESFORCE-PLATFORM-DEVELOPER-salesforce-certified-platform-developer.md",
+      "blueprint_last_checked": "2026-09-07",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-07",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite is published; Salesforce describes a typical candidate as having one to two years of development and at least six months on Lightning Platform. Practice a limit-aware and secure lifecycle across data/access design, Flow and bulk Apex, SOQL/SOSL/DML, LWC and Visualforce, deterministic tests, diagnosis, source-driven deployment and rollback."
+    },
+    "review": {
+      "id": "salesforce-platform-developer-2026-09-07-source-validation",
+      "exam_code": "SALESFORCE-PLATFORM-DEVELOPER",
+      "guide_path": "guides/SALESFORCE-PLATFORM-DEVELOPER-salesforce-certified-platform-developer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-07",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/salesforce-platform-developer-official-objectives.txt",
+      "blueprint_snapshot_sha256": "4843c3b24a93a1c4da79e50db00e79c38fa5921c6127df89e37a6754c5cddbfe",
+      "objective_coverage": [
+        {
+          "objective_group": "Developer Fundamentals (27%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Process Automation and Logic (28%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Labs 2–4 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "User Interface (25%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 1–2",
+            "Labs 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Testing, Debugging, and Deployment (20%)",
+          "guide_sections": [
+            "Section 4",
+            "All scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 10,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All four published domains are mapped through limit-aware architecture/data/access, declarative and bulk Apex interaction, SOQL/SOSL/DML, secure LWC/Flow/Visualforce, deterministic tests, evidence-led diagnosis and source-driven deployment/rollback. Three scenarios, eight authorized labs and 40 original checks are included. Complete indexed official text confirms the contract, 27/28/25/20 weights and objective snapshot; the Summer '25 label remains a visible watch. A March 2026 Apex Hours LWC-security lab is community context, not scope. No recalled/live item, dump, shared superbadge solution or copied course content is used."
+    },
+    "sources": [
+      {
+        "id": "focus-on-force-salesforce-certification",
+        "title": "Focus on Force Salesforce Certification Resources",
+        "url": "https://focusonforce.com/",
+        "publisher": "K2 University / Focus on Force",
+        "authority_class": 3,
+        "source_type": "commercial-study-and-practice",
+        "access_model": "paid",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-ADMINISTRATOR",
+          "SALESFORCE-PLATFORM-APP-BUILDER",
+          "SALESFORCE-PLATFORM-DEVELOPER",
+          "SALESFORCE-AGENTFORCE-SPECIALIST"
+        ],
+        "notes": "Commercial study guides and explained original practice exams; verify the displayed blueprint and release before purchase. Agentforce marketing indexed on September 2 still described an older five-domain/18-objective revision, so verify a six-domain Spring '26 update before relying on it. September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Public certification catalog read, including Administrator product links and associate prerequisite wording. This conflicts with official no-prerequisite rule. No assertion about practice originality or quality. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Fresh catalog capture; complete public main catalog read during immediately preceding Administrator review. Only general App Builder resource presence used here; no current App Builder product interior or quality evaluated. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "salesforce-platform-developer-guide",
+        "title": "Salesforce Certified Platform Developer Exam Guide",
+        "url": "https://help.salesforce.com/s/articleView?id=005298965&language=en_US&type=1",
+        "publisher": "Salesforce",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-DEVELOPER"
+        ],
+        "notes": "Canonical 27/28/25/20 objective list, candidate boundary and exam contract; complete indexed text revalidated September 7, while the page still labels Summer '25 and requires continued Trailhead comparison."
+      },
+      {
+        "id": "salesforce-platform-developer-certification",
+        "title": "Salesforce Certified Platform Developer",
+        "url": "https://trailhead.salesforce.com/credentials/platformdeveloperi",
+        "publisher": "Salesforce",
+        "authority_class": 1,
+        "source_type": "official-certification-page",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-DEVELOPER"
+        ],
+        "notes": "Current display title and official learning entry point; URL retains the legacy platformdeveloperi slug."
+      },
+      {
+        "id": "salesforce-platform-developer-prep-trail",
+        "title": "Study for the Platform Developer Exam",
+        "url": "https://trailhead.salesforce.com/content/learn/trails/platform-developer-i-certification-study-guide",
+        "publisher": "Salesforce",
+        "authority_class": 1,
+        "source_type": "official-learning-path",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-DEVELOPER"
+        ],
+        "notes": "Current free 1h15 official four-domain prep trail with scenarios and flashcards."
+      },
+      {
+        "id": "salesforce-platform-developer-trailmix",
+        "title": "Prepare for Your Salesforce Platform Developer Certification",
+        "url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-developer-i-credential",
+        "publisher": "Salesforce",
+        "authority_class": 1,
+        "source_type": "official-learning-path",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-DEVELOPER"
+        ],
+        "notes": "Official 34-step broad hands-on collection; visible timed steps totaled approximately 31h25 when checked, with one untimed preparation task."
+      },
+      {
+        "id": "salesforce-platform-developer-maintenance-winter-26",
+        "title": "Platform Developer Certification Maintenance (Winter '26)",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/platform-developer-certification-maintenance-winter-26",
+        "publisher": "Salesforce",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-DEVELOPER"
+        ],
+        "notes": "Free approximately 45-minute current maintenance module with combined Apex and Flow testing context."
+      },
+      {
+        "id": "salesforce-dex450-platform-development",
+        "title": "Build Applications Programmatically on the Salesforce Platform (DEX450)",
+        "url": "https://trailheadacademy.salesforce.com/classes/dex450-build-applications-programmatically-on-the-salesforce-platform",
+        "publisher": "Salesforce Trailhead Academy",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-DEVELOPER"
+        ],
+        "notes": "Official five-day instructor-led Apex, LWC, Visualforce, testing, limits and deployment course; price and schedule vary."
+      },
+      {
+        "id": "pluralsight-salesforce-platform-developer-path",
+        "title": "Salesforce Certified Platform Developer I",
+        "url": "https://www.pluralsight.com/paths/salesforce-certified-platform-developer-i-update",
+        "publisher": "Pluralsight / Adam Olshansky",
+        "authority_class": 3,
+        "source_type": "commercial-learning-path",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-DEVELOPER"
+        ],
+        "notes": "Six-course, ten-hour path with practice exam; main courses date 2022–2024, so verify Agentforce and current seasonal tooling gaps."
+      },
+      {
+        "id": "oreilly-salesforce-developer-i-certification",
+        "title": "Salesforce Developer I Certification",
+        "url": "https://www.oreilly.com/library/view/salesforce-developer-i/9798868803000/",
+        "publisher": "O'Reilly / Apress / Konstantin Kapitanov",
+        "authority_class": 3,
+        "source_type": "commercial-book",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-DEVELOPER"
+        ],
+        "notes": "July 2024, 205-page/4h10m listed compact book covering Apex, LWC, Flow, security, testing and DX; supplement current deltas."
+      },
+      {
+        "id": "udemy-salesforce-platform-developer-wheeler",
+        "title": "Complete Salesforce Certified Platform Developer 1 Course",
+        "url": "https://www.udemy.com/course/salesforce-developer/",
+        "publisher": "Udemy / Anthony Wheeler and Mike Wheeler",
+        "authority_class": 3,
+        "source_type": "commercial-course",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-DEVELOPER"
+        ],
+        "notes": "13h49m guided course listed as updated June 2026; reconcile its legacy title and coverage with the official current pages."
+      },
+      {
+        "id": "apex-hours-lwc-security-2026",
+        "title": "LWC Security in Salesforce",
+        "url": "https://www.apexhours.com/lwc-security-in-salesforce/",
+        "publisher": "Apex Hours",
+        "authority_class": 3,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-DEVELOPER"
+        ],
+        "notes": "March 2026 community technical walkthrough of LWS, CSP, framework rendering, sanitization, and hostile-input tests; verify behavior in current official docs."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "54294d64dfbd5476002eb83bfd33a46ef00c2490da033baece55633596829680",
+      "guide_sections": [
+        "1. Developer Fundamentals — 27%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "b00d85877399753b481b4b93e8e8607ad05f5a455d02dc55349083a684dd3835",
+      "guide_sections": [
+        "1. Developer Fundamentals — 27%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "ea7c7e4194a89f5570e3a77142cbb0f9d5b4a05afae9a4c38a51e5ee6a06d07c",
+      "guide_sections": [
+        "1. Developer Fundamentals — 27%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "31bdea6b99c5ecacae7d7951676399fb521d66cc97209d39dacb1fde070c0c3e",
+      "guide_sections": [
+        "1. Developer Fundamentals — 27%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "098dd557f620d90b461ac40c7208660db8ba6040601f16592799f7d849f4a51f",
+      "guide_sections": [
+        "2. Process Automation and Logic — 28%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "c692d8b5dc7bffa70c55258786031252b29be11453becd1e68fe1988c2f87de9",
+      "guide_sections": [
+        "2. Process Automation and Logic — 28%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "e7fc66bcbaa29b7a1d48eeaefbcd97bc7952b64eb668c303d0729da28e194adf",
+      "guide_sections": [
+        "2. Process Automation and Logic — 28%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "9f3d0c7400683cf6cbdf3e5a74159fd2f2c06f7f99ab8dafe4bfe5ea70738de8",
+      "guide_sections": [
+        "2. Process Automation and Logic — 28%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "0c20f97e885abba0e2a4f467a7d4970061a49e1edcc9b8349e4c26e81bbefeb9",
+      "guide_sections": [
+        "2. Process Automation and Logic — 28%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "39e7b0b7ede880a8b006db2f26242a0ad58c47953a76d8ee07da76a2c640d893",
+      "guide_sections": [
+        "2. Process Automation and Logic — 28%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "aa30e5a8f791999c6e1a8fb02f618c9808fd4290350396bbd768691620702e6f",
+      "guide_sections": [
+        "2. Process Automation and Logic — 28%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "557a832e4353a8da2373fa3ac7fb6022a191157a14b23f2acf2980700ead70ca",
+      "guide_sections": [
+        "2. Process Automation and Logic — 28%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "e3883b49828aa42aafde454e3a6afe0e2c5301b494e6f26066c65eef7f80549b",
+      "guide_sections": [
+        "2. Process Automation and Logic — 28%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "f37539753ad72c3f1b2830a6aa85750e27bb9f5ef5bffbe0b52d13fee47c44e0",
+      "guide_sections": [
+        "3. User Interface — 25%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "f59d34102cbcb7277e733f173c33ab5dc5e5de9a16de95253d9fe5702d8bc834",
+      "guide_sections": [
+        "3. User Interface — 25%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "20eb40f58b1458fc276ff2ef58af50de00a184a137970c59b5ff4dfb08f604c0",
+      "guide_sections": [
+        "3. User Interface — 25%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "f16651a91f59ea88682faec54eaa975ca373eab7bbdf52ab42905866459afbc4",
+      "guide_sections": [
+        "3. User Interface — 25%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "2640e0443133a5d68f4007d989d07c154694af338330993f7b5afda09c9e16f6",
+      "guide_sections": [
+        "4. Testing, Debugging, and Deployment — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "de44bbcd523515b5f64cd392db1d1e2dc896da3104813ab301b38fdefebdab7b",
+      "guide_sections": [
+        "4. Testing, Debugging, and Deployment — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "7554a3097aaedc60712738c296ad735b0e644e36ac6f253bc2f10ad1fa0d7a94",
+      "guide_sections": [
+        "4. Testing, Debugging, and Deployment — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "03a82ddc0bed3b013849f97d7cdf0db192606f773657fe9d59a1ffad474f96ca",
+      "guide_sections": [
+        "4. Testing, Debugging, and Deployment — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [
+      "SALESFORCE-PLATFORM-DEVELOPER"
+    ],
+    "results": [
+      {
+        "code": "SALESFORCE-PLATFORM-DEVELOPER",
+        "title": "Salesforce Certified Platform Developer",
+        "url": "https://help.salesforce.com/s/articleView?id=005298965&language=en_US&type=1",
+        "guide_path": "guides/SALESFORCE-PLATFORM-DEVELOPER-salesforce-certified-platform-developer.md",
+        "snapshot_path": "data\\objective-snapshots\\salesforce-platform-developer-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\salesforce-platform-developer-official-status.json",
+        "status": "manual-review",
+        "changed": false,
+        "error": "ValueError: Could not find Salesforce exam objectives",
+        "manual_review_reason": "The public Salesforce Help response is reachable but its client-rendered HTML does not expose the reviewed Exam Outline to this non-browser extractor.",
+        "review_route": "docs/SOURCE-FRESHNESS.md"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 23,
+    "reachable": 21,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "focus-on-force-salesforce-certification",
+      "url": "https://focusonforce.com/",
+      "checked_at": "2026-09-29T14:48:03.181089+00:00",
+      "health": {
+        "id": "focus-on-force-salesforce-certification",
+        "url": "https://focusonforce.com/",
+        "checked_at": "2026-09-29T14:48:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://k2u.ai/salesforce/certifications/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Salesforce certifications: study guides and practice exams",
+        "canonical_url": "https://k2u.ai/salesforce/certifications/",
+        "duration_signals": [],
+        "signal_fingerprint": "1978713e6b8e73e52f88e9fcd2b917cd105ab77c9a12455318e2be4e8c1d567c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://k2u.ai/salesforce/certifications/",
+      "sha256": "a62bb5c1e2f04569563f70fe89b1ce5029ecc50c2a55071f393db817c081d139",
+      "text_characters": 9070
+    },
+    {
+      "id": "salesforce-platform-developer-guide",
+      "url": "https://help.salesforce.com/s/articleView?id=005298965&language=en_US&type=1",
+      "checked_at": "2026-09-29T14:48:03.181876+00:00",
+      "health": {
+        "id": "salesforce-platform-developer-guide",
+        "url": "https://help.salesforce.com/s/articleView?id=005298965&language=en_US&type=1",
+        "checked_at": "2026-09-29T14:48:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=005298965&language=en_US&type=1",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=005298965&language=en_US&type=1",
+        "duration_signals": [],
+        "signal_fingerprint": "1b509a2030b97ee23314ad8cb80f1b8fb328abab4b1aa538766ae25a54526216",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=005298965&language=en_US&type=1",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-platform-developer-certification",
+      "url": "https://trailhead.salesforce.com/credentials/platformdeveloperi",
+      "checked_at": "2026-09-29T14:48:03.182352+00:00",
+      "health": {
+        "id": "salesforce-platform-developer-certification",
+        "url": "https://trailhead.salesforce.com/credentials/platformdeveloperi",
+        "checked_at": "2026-09-29T14:48:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/credentials/platformdeveloperi",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Certification",
+        "canonical_url": "https://trailhead.salesforce.com/credentials/platformdeveloperi",
+        "duration_signals": [],
+        "signal_fingerprint": "b9c1a6c78391af48702f971ed6b9b809faad2bdeb1b7fc9b2fe482f841cf49a7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/credentials/platformdeveloperi",
+      "sha256": "fc6d165ea555e00b20cdc0f82f6b03b37096fc0edce7690283bb9257cda3a1c3",
+      "text_characters": 1797
+    },
+    {
+      "id": "salesforce-platform-developer-prep-trail",
+      "url": "https://trailhead.salesforce.com/content/learn/trails/platform-developer-i-certification-study-guide",
+      "checked_at": "2026-09-29T14:48:04.254805+00:00",
+      "health": {
+        "id": "salesforce-platform-developer-prep-trail",
+        "url": "https://trailhead.salesforce.com/content/learn/trails/platform-developer-i-certification-study-guide",
+        "checked_at": "2026-09-29T14:48:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/content/learn/trails/platform-developer-i-certification-study-guide",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Study for the Platform Developer Exam | Salesforce Trailhead",
+        "canonical_url": "https://trailhead.salesforce.com/content/learn/trails/platform-developer-i-certification-study-guide",
+        "duration_signals": [
+          "1 hr 15 mins",
+          "10 mins",
+          "20 mins",
+          "35 mins"
+        ],
+        "signal_fingerprint": "6ea1548075505f49197ba68066003d0346798e974babd0ec6468ca7fdf48726d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/content/learn/trails/platform-developer-i-certification-study-guide",
+      "sha256": "bef817e0969b9bc72ae4302030a36ec384ec6c736fc84c3f2b5e8e80ab57450a",
+      "text_characters": 1891
+    },
+    {
+      "id": "salesforce-platform-developer-trailmix",
+      "url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-developer-i-credential",
+      "checked_at": "2026-09-29T14:48:04.534268+00:00",
+      "health": {
+        "id": "salesforce-platform-developer-trailmix",
+        "url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-developer-i-credential",
+        "checked_at": "2026-09-29T14:48:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-developer-i-credential",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Prepare for your Salesforce Platform Developer Certification Trailmix | Salesforce Trailhead",
+        "canonical_url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-developer-i-credential",
+        "duration_signals": [],
+        "signal_fingerprint": "82391df7478e1eb10bd6a04937ba7638a58276cb8da20217ab95a0a47853fa8b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-developer-i-credential",
+      "sha256": "df6e196cef233963ce28394c3f763f879fdcafc612a7fde53b6184bd5f6d3d92",
+      "text_characters": 0
+    },
+    {
+      "id": "salesforce-platform-developer-maintenance-winter-26",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/platform-developer-certification-maintenance-winter-26",
+      "checked_at": "2026-09-29T14:48:05.429448+00:00",
+      "health": {
+        "id": "salesforce-platform-developer-maintenance-winter-26",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/platform-developer-certification-maintenance-winter-26",
+        "checked_at": "2026-09-29T14:48:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/content/learn/modules/platform-developer-certification-maintenance-winter-26",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Platform Developer Certification Maintenance (Winter '26)",
+        "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/platform-developer-certification-maintenance-winter-26",
+        "duration_signals": [
+          "10 mins",
+          "35 mins",
+          "45 mins",
+          "PT10M",
+          "PT35M"
+        ],
+        "signal_fingerprint": "adfcfc3ea4c8c4395d43643bdf0aeaab837f574ee2c8df77254669c3a645f4cf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/content/learn/modules/platform-developer-certification-maintenance-winter-26",
+      "sha256": "f80a10aff52550b0b01d94c771c0e9da93410cf44cf16d5703e65e4ee701137a",
+      "text_characters": 1127
+    },
+    {
+      "id": "salesforce-dex450-platform-development",
+      "url": "https://trailheadacademy.salesforce.com/classes/dex450-build-applications-programmatically-on-the-salesforce-platform",
+      "checked_at": "2026-09-29T14:48:06.472279+00:00",
+      "health": {
+        "id": "salesforce-dex450-platform-development",
+        "url": "https://trailheadacademy.salesforce.com/classes/dex450-build-applications-programmatically-on-the-salesforce-platform",
+        "checked_at": "2026-09-29T14:48:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailheadacademy.salesforce.com/classes/dex450-build-applications-programmatically-on-the-salesforce-platform",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "https://trailheadacademy.salesforce.com/classes/dex450-build-applications-programmatically-on-the-salesforce-platform",
+        "duration_signals": [],
+        "signal_fingerprint": "4beaa763afb2acb71fced8e07128556a3ee69f213c4196c74addc511ccfc2b83",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailheadacademy.salesforce.com/classes/dex450-build-applications-programmatically-on-the-salesforce-platform",
+      "sha256": "cd85fe08ca93e94daf1ffc39408f33effc71894806cb882f844c3c8ea4629815",
+      "text_characters": 0
+    },
+    {
+      "id": "pluralsight-salesforce-platform-developer-path",
+      "url": "https://www.pluralsight.com/paths/salesforce-certified-platform-developer-i-update",
+      "checked_at": "2026-09-29T14:48:06.601514+00:00",
+      "health": {
+        "id": "pluralsight-salesforce-platform-developer-path",
+        "url": "https://www.pluralsight.com/paths/salesforce-certified-platform-developer-i-update",
+        "checked_at": "2026-09-29T14:48:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/salesforce-certified-platform-developer-i-update",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Salesforce Certified Platform Developer I",
+        "canonical_url": "https://www.pluralsight.com/paths/salesforce-certified-platform-developer-i-update",
+        "duration_signals": [
+          "10 Hours"
+        ],
+        "signal_fingerprint": "a7ffc7c574ec692848739c9c00482de7ff0b2ec8a8b174efa939f870b9f1769d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/salesforce-certified-platform-developer-i-update",
+      "sha256": "1c4a8402f38ff929b4591b6cbf2b1f301476b6911730328bd01201dc3178b41a",
+      "text_characters": 3161
+    },
+    {
+      "id": "oreilly-salesforce-developer-i-certification",
+      "url": "https://www.oreilly.com/library/view/salesforce-developer-i/9798868803000/",
+      "checked_at": "2026-09-29T14:48:07.332636+00:00",
+      "health": {
+        "id": "oreilly-salesforce-developer-i-certification",
+        "url": "https://www.oreilly.com/library/view/salesforce-developer-i/9798868803000/",
+        "checked_at": "2026-09-29T14:48:07+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/salesforce-developer-i/9798868803000/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "udemy-salesforce-platform-developer-wheeler",
+      "url": "https://www.udemy.com/course/salesforce-developer/",
+      "checked_at": "2026-09-29T14:48:07.405983+00:00",
+      "health": {
+        "id": "udemy-salesforce-platform-developer-wheeler",
+        "url": "https://www.udemy.com/course/salesforce-developer/",
+        "checked_at": "2026-09-29T14:48:07+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/salesforce-developer/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "apex-hours-lwc-security-2026",
+      "url": "https://www.apexhours.com/lwc-security-in-salesforce/",
+      "checked_at": "2026-09-29T14:48:07.510684+00:00",
+      "health": {
+        "id": "apex-hours-lwc-security-2026",
+        "url": "https://www.apexhours.com/lwc-security-in-salesforce/",
+        "checked_at": "2026-09-29T14:48:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.apexhours.com/lwc-security-in-salesforce/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "LWC Security in Salesforce",
+        "canonical_url": "https://www.apexhours.com/lwc-security-in-salesforce/",
+        "duration_signals": [
+          "6 mins"
+        ],
+        "signal_fingerprint": "01afc1b57d30fe1db0655c8535c31dfe6f9d8cbbe96512cc065c0b71e555a531",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.apexhours.com/lwc-security-in-salesforce/",
+      "sha256": "457b2b379c56b163d28cfbfcfb40b9753c52fe10a39b46abc1133747f2a2e08d",
+      "text_characters": 8970
+    },
+    {
+      "id": "salesforce-apex-lwc-security",
+      "url": "https://developer.salesforce.com/docs/platform/lwc/guide/apex-security.html",
+      "checked_at": "2026-09-29T14:50:49.107408+00:00",
+      "health": {
+        "id": "salesforce-apex-lwc-security",
+        "url": "https://developer.salesforce.com/docs/platform/lwc/guide/apex-security.html",
+        "checked_at": "2026-09-29T14:50:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.salesforce.com/docs/platform/lwc/guide/apex-security.html",
+        "content_type": "text/html",
+        "page_title": "Secure Apex Classes | Work with Salesforce Data | Lightning Web Components Developer Guide | Salesforce Developers",
+        "canonical_url": "https://developer.salesforce.com/docs/platform/lwc/guide/apex-security.html",
+        "duration_signals": [],
+        "signal_fingerprint": "f3dbd251b28a625b7a6d520a628a8b24f41feb424a9c280e41b338ea65b19897",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.salesforce.com/docs/platform/lwc/guide/apex-security.html",
+      "sha256": "3f175808a95683890ae12036b6ee7bdceff139cb40d93e6d1ddff6981df54a10",
+      "text_characters": 5012
+    },
+    {
+      "id": "salesforce-summer26-developer-release",
+      "url": "https://developer.salesforce.com/blogs/2026/06/the-salesforce-developers-guide-to-the-summer-26-release",
+      "checked_at": "2026-09-29T14:50:49.108167+00:00",
+      "health": {
+        "id": "salesforce-summer26-developer-release",
+        "url": "https://developer.salesforce.com/blogs/2026/06/the-salesforce-developers-guide-to-the-summer-26-release",
+        "checked_at": "2026-09-29T14:50:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.salesforce.com/blogs/2026/06/the-salesforce-developers-guide-to-the-summer-26-release",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "The Salesforce Developer’s Guide to the Summer ’26 Release",
+        "canonical_url": "https://developer.salesforce.com/blogs/2026/06/the-salesforce-developers-guide-to-the-summer-26-release",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "9b93e3868950f817815ad05b6779d9682fefb8251f0638f6ba67da9b1b4d3706",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.salesforce.com/blogs/2026/06/the-salesforce-developers-guide-to-the-summer-26-release",
+      "sha256": "1d17e0e975ecb575454c2fbf29dfe176f72ca69ec00f4c5b1e57c5b185a3b25d",
+      "text_characters": 31674
+    },
+    {
+      "id": "salesforce-apex-trigger-context-67",
+      "url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_triggers_system_mode.htm&language=en_US&release=262&type=5",
+      "checked_at": "2026-09-29T14:50:49.108714+00:00",
+      "health": {
+        "id": "salesforce-apex-trigger-context-67",
+        "url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_triggers_system_mode.htm&language=en_US&release=262&type=5",
+        "checked_at": "2026-09-29T14:50:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_triggers_system_mode.htm&language=en_US&release=262&type=5",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_triggers_system_mode.htm&language=en_US&release=262&type=5",
+        "duration_signals": [],
+        "signal_fingerprint": "e1c5a2f3db09cf0845f2123064a0b61726956231003dd90fd70bbe27be6f7272",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_triggers_system_mode.htm&language=en_US&release=262&type=5",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-lws-html-allowlist",
+      "url": "https://developer.salesforce.com/docs/platform/lightning-components-security/guide/lws-sanitize-html.html",
+      "checked_at": "2026-09-29T14:50:49.821113+00:00",
+      "health": {
+        "id": "salesforce-lws-html-allowlist",
+        "url": "https://developer.salesforce.com/docs/platform/lightning-components-security/guide/lws-sanitize-html.html",
+        "checked_at": "2026-09-29T14:50:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.salesforce.com/docs/platform/lightning-components-security/guide/lws-sanitize-html.html",
+        "content_type": "text/html",
+        "page_title": "HTML Allowlist for LWS | Lightning Web Security (LWS) | Security for Lightning Components | Salesforce Developers",
+        "canonical_url": "https://developer.salesforce.com/docs/platform/lightning-components-security/guide/lws-sanitize-html.html",
+        "duration_signals": [],
+        "signal_fingerprint": "5d98f96c6d249b0667d07242e44a24af10ae7566c1c96d2bdc60c93e0070e9d7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.salesforce.com/docs/platform/lightning-components-security/guide/lws-sanitize-html.html",
+      "sha256": "e21a83f88bfb98b9a9ba789426bbd8b272a03fd3a5c3ddf2396beb4af0f05374",
+      "text_characters": 1087
+    },
+    {
+      "id": "salesforce-lightning-csp",
+      "url": "https://developer.salesforce.com/docs/platform/lightning-components-security/guide/content-security-policy-intro.html",
+      "checked_at": "2026-09-29T14:50:50.137251+00:00",
+      "health": {
+        "id": "salesforce-lightning-csp",
+        "url": "https://developer.salesforce.com/docs/platform/lightning-components-security/guide/content-security-policy-intro.html",
+        "checked_at": "2026-09-29T14:50:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.salesforce.com/docs/platform/lightning-components-security/guide/content-security-policy-intro.html",
+        "content_type": "text/html",
+        "page_title": "Content Security Policy (CSP) | Security for Lightning Components | Salesforce Developers",
+        "canonical_url": "https://developer.salesforce.com/docs/platform/lightning-components-security/guide/content-security-policy-intro.html",
+        "duration_signals": [],
+        "signal_fingerprint": "37e9a69fabf3debf6682f51fc2079a8a1ebf8e42b5d78677e722c6b8749b0c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.salesforce.com/docs/platform/lightning-components-security/guide/content-security-policy-intro.html",
+      "sha256": "c66d8538d4c92563af006daba23296ff3db67210c4deae7ca0e6334eaf4e8c16",
+      "text_characters": 2418
+    },
+    {
+      "id": "salesforce-apex-dml",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/apex_database/apex_database_dml",
+      "checked_at": "2026-09-29T14:50:50.145882+00:00",
+      "health": {
+        "id": "salesforce-apex-dml",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/apex_database/apex_database_dml",
+        "checked_at": "2026-09-29T14:50:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/content/learn/modules/apex_database/apex_database_dml",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Improve Data Operations with Apex DML",
+        "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/apex_database/apex_database_dml",
+        "duration_signals": [
+          "48 hours",
+          "About 45 mins",
+          "PT45M"
+        ],
+        "signal_fingerprint": "fa4b29aa5e1a8d5119583f569a9d27704542070f3cf75bc349dea001396d69b6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/content/learn/modules/apex_database/apex_database_dml",
+      "sha256": "aa3f2e9c693abc8973ace6dbb93dfda36ab16849d076bd69b89c480af8b152d3",
+      "text_characters": 20064
+    },
+    {
+      "id": "salesforce-apex-queueable",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/asynchronous_apex/async_apex_queueable",
+      "checked_at": "2026-09-29T14:50:50.269874+00:00",
+      "health": {
+        "id": "salesforce-apex-queueable",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/asynchronous_apex/async_apex_queueable",
+        "checked_at": "2026-09-29T14:50:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/content/learn/modules/asynchronous_apex/async_apex_queueable",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Optimize Queueable Apex for Asynchronous Processing",
+        "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/asynchronous_apex/async_apex_queueable",
+        "duration_signals": [
+          "38 minute",
+          "48 hours",
+          "About 45 mins",
+          "PT45M"
+        ],
+        "signal_fingerprint": "87f0dc23528fdf3a852f6a45f692e86426d8543f0b26217e32add58c322622f3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/content/learn/modules/asynchronous_apex/async_apex_queueable",
+      "sha256": "35592b1b01074222bf1eb0cfdf77bd8fd7040bc065892195ce94c7d164916bac",
+      "text_characters": 8810
+    },
+    {
+      "id": "salesforce-apex-trigger-tests",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/apex_testing/apex_testing_triggers",
+      "checked_at": "2026-09-29T14:50:50.522907+00:00",
+      "health": {
+        "id": "salesforce-apex-trigger-tests",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/apex_testing/apex_testing_triggers",
+        "checked_at": "2026-09-29T14:50:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/content/learn/modules/apex_testing/apex_testing_triggers",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Improve Apex Trigger Unit Testing Techniques",
+        "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/apex_testing/apex_testing_triggers",
+        "duration_signals": [
+          "48 hours",
+          "About 45 mins",
+          "PT45M"
+        ],
+        "signal_fingerprint": "1a86ddc7287600f2d7e7a7228683936ca4f28988d4876030a44e6eb7c45fbd83",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/content/learn/modules/apex_testing/apex_testing_triggers",
+      "sha256": "2ebc0aa92ec903abab290940ff7f6cb8d2bb765cd2046397b54fb7244c5ed2ba",
+      "text_characters": 6345
+    },
+    {
+      "id": "salesforce-apex-bulk-triggers",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/apex_triggers/apex_triggers_bulk",
+      "checked_at": "2026-09-29T14:51:26.257053+00:00",
+      "health": {
+        "id": "salesforce-apex-bulk-triggers",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/apex_triggers/apex_triggers_bulk",
+        "checked_at": "2026-09-29T14:51:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/content/learn/modules/apex_triggers/apex_triggers_bulk",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Effective Bulk Apex Trigger Design Techniques",
+        "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/apex_triggers/apex_triggers_bulk",
+        "duration_signals": [
+          "48 hours",
+          "About 45 mins",
+          "PT45M"
+        ],
+        "signal_fingerprint": "590278caeaf4701be8f3652e93892d85c91484b98ea61bcfac5184ff56d2c30b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/content/learn/modules/apex_triggers/apex_triggers_bulk",
+      "sha256": "8a09987379d6b5130d80ddc7c84846309fd3e9568e8020e5a7583806c86e9938",
+      "text_characters": 13960
+    },
+    {
+      "id": "salesforce-developer-winter26-unit",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/platform-developer-certification-maintenance-winter-26/maintain-your-platform-developer-certification-for-winter-26",
+      "checked_at": "2026-09-29T14:51:26.257701+00:00",
+      "health": {
+        "id": "salesforce-developer-winter26-unit",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/platform-developer-certification-maintenance-winter-26/maintain-your-platform-developer-certification-for-winter-26",
+        "checked_at": "2026-09-29T14:51:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/content/learn/modules/platform-developer-certification-maintenance-winter-26/maintain-your-platform-developer-certification-for-winter-26",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Update Your Platform Developer Skills for Winter '26 Certification",
+        "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/platform-developer-certification-maintenance-winter-26/maintain-your-platform-developer-certification-for-winter-26",
+        "duration_signals": [
+          "About 10 mins",
+          "PT10M"
+        ],
+        "signal_fingerprint": "42bf1d49cd2a6aacb70d6d25ca3f68e900fd01c6afbce71dfb7dde0004470b26",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/content/learn/modules/platform-developer-certification-maintenance-winter-26/maintain-your-platform-developer-certification-for-winter-26",
+      "sha256": "7e41bbc66d6d2d4be5cf70b965cd44a7a83aa11f0c36a8682586171e75c3db39",
+      "text_characters": 8928
+    },
+    {
+      "id": "salesforce-apex-default-user-mode-67",
+      "url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_default_user_mode.htm&language=en_US&release=262&type=5",
+      "checked_at": "2026-09-29T14:53:48.159898+00:00",
+      "health": {
+        "id": "salesforce-apex-default-user-mode-67",
+        "url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_default_user_mode.htm&language=en_US&release=262&type=5",
+        "checked_at": "2026-09-29T14:53:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_default_user_mode.htm&language=en_US&release=262&type=5",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_default_user_mode.htm&language=en_US&release=262&type=5",
+        "duration_signals": [],
+        "signal_fingerprint": "856e4167b0654b1adb945db5718a2f11549656a4fedcb391d94246f6167ea9ce",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_default_user_mode.htm&language=en_US&release=262&type=5",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-agentforce-dx-environment",
+      "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-set-up-env.html",
+      "checked_at": "2026-09-29T14:53:48.160474+00:00",
+      "health": {
+        "id": "salesforce-agentforce-dx-environment",
+        "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-set-up-env.html",
+        "checked_at": "2026-09-29T14:53:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-set-up-env.html",
+        "content_type": "text/html",
+        "page_title": "Set Up Your DX Environment | Agentforce DX | Agentforce Developer Guide | Salesforce Developers",
+        "canonical_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-set-up-env.html",
+        "duration_signals": [
+          "60 minutes"
+        ],
+        "signal_fingerprint": "75e28d54c2c29663088ce56385fea62bb28654b4e24261f3f1874ff204ad0aa5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-set-up-env.html",
+      "sha256": "b2715544ebd22195dec4abc36757ffd74bd7c1ee377e3df9ae581ea7873b1b20",
+      "text_characters": 14747
+    }
+  ],
+  "added_source_ids": [
+    "salesforce-apex-lwc-security",
+    "salesforce-summer26-developer-release",
+    "salesforce-apex-trigger-context-67",
+    "salesforce-lws-html-allowlist",
+    "salesforce-lightning-csp",
+    "salesforce-apex-dml",
+    "salesforce-apex-queueable",
+    "salesforce-apex-trigger-tests",
+    "salesforce-apex-default-user-mode-67",
+    "salesforce-agentforce-dx-environment",
+    "salesforce-apex-bulk-triggers",
+    "salesforce-developer-winter26-unit"
+  ],
+  "findings": [
+    {
+      "id": "salesforceplatformdeveloper-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Canonical outline matches manually while automated extraction remains limited",
+      "url": "https://help.salesforce.com/s/articleView?id=005298965&language=en_US&type=1",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "21 objectives and weighted headings exactly match normalized saved text; Summer25 label and annual maintenance remain.",
+      "recommendation": "Retain reviewed baselines and record browser comparison separately from automated monitoring.",
+      "disposition": "applied",
+      "source_id": "salesforce-platform-developer-guide",
+      "resolution": "Retain reviewed baselines and record browser comparison separately from automated monitoring."
+    },
+    {
+      "id": "salesforceplatformdeveloper-deep-2",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Database security defaults are versioned",
+      "url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_default_user_mode.htm&language=en_US&release=262&type=5",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "API67+ user-mode operations enforce CRUD/FLS/sharing; explicit system mode retains class sharing context. WITH SECURITY_ENFORCED removed.",
+      "recommendation": "Teach explicit modes, API-version upgrades and denied-persona tests.",
+      "disposition": "applied",
+      "source_id": "salesforce-apex-default-user-mode-67",
+      "resolution": "Teach explicit modes, API-version upgrades and denied-persona tests."
+    },
+    {
+      "id": "salesforceplatformdeveloper-deep-3",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Specific trigger release note conflicts with roundup shorthand",
+      "url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_triggers_system_mode.htm&language=en_US&release=262&type=5",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Specific note distinguishes trigger without-sharing context from user-mode default database operations at API67; roundup says triggers bypass sharing/FLS.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "salesforceplatformdeveloper-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Trusted URLs do not authorize arbitrary CDN script loading",
+      "url": "https://developer.salesforce.com/docs/platform/lightning-components-security/guide/content-security-policy-intro.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "First-party Lightning CSP requires external JavaScript libraries as org static resources; community article suggests CDN loading.",
+      "recommendation": "Correct learning guidance and avoid treating community sample as production-ready.",
+      "disposition": "applied",
+      "source_id": "salesforce-lightning-csp",
+      "resolution": "Correct learning guidance and avoid treating community sample as production-ready."
+    },
+    {
+      "id": "salesforceplatformdeveloper-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "DOM HTML filtering is not input validation",
+      "url": "https://developer.salesforce.com/docs/platform/lightning-components-security/guide/lws-sanitize-html.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "LWS explicitly does not sanitize arbitrary input text.",
+      "recommendation": "Separate browser sink handling, input validation and server authorization.",
+      "disposition": "applied",
+      "source_id": "salesforce-lws-html-allowlist",
+      "resolution": "Separate browser sink handling, input validation and server authorization."
+    },
+    {
+      "id": "salesforceplatformdeveloper-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A collection implementation must process every batch and bound data access",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/apex_triggers/apex_triggers_bulk",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Lesson supplies collection and grouped query/DML pattern and 200-record batches.",
+      "recommendation": "Execute original 400-record calculator with traced read counts, replay and changed configuration; propose actual Apex evidence.",
+      "disposition": "applied",
+      "source_id": "salesforce-apex-bulk-triggers",
+      "resolution": "Execute original 400-record calculator with traced read counts, replay and changed configuration; propose actual Apex evidence."
+    },
+    {
+      "id": "salesforceplatformdeveloper-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Per-operation and final transaction outcomes differ",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/apex_database/apex_database_dml",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Partial Database results and caught operation errors require enclosing-transaction interpretation.",
+      "recommendation": "Execute controlled partial commit, caught atomic operation and later-fatal rollback cases.",
+      "disposition": "applied",
+      "source_id": "salesforce-apex-dml",
+      "resolution": "Execute controlled partial commit, caught atomic operation and later-fatal rollback cases."
+    },
+    {
+      "id": "salesforceplatformdeveloper-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Accepted asynchronous work needs outcome evidence",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/asynchronous_apex/async_apex_queueable",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Queueable returns job ID; test boundaries and chain-depth support have specific contracts.",
+      "recommendation": "Require operation/job/record correlation and avoid untested claims about all downstream jobs.",
+      "disposition": "applied",
+      "source_id": "salesforce-apex-queueable",
+      "resolution": "Require operation/job/record correlation and avoid untested claims about all downstream jobs."
+    },
+    {
+      "id": "salesforceplatformdeveloper-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Developer-assistant product naming has changed",
+      "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-set-up-env.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current page distinguishes Agentforce Vibes Extension formerly Agentforce for Developers from Vibes IDE formerly Code Builder.",
+      "recommendation": "Preserve blueprint wording and provide current lookup names without expanding exam scope.",
+      "disposition": "applied",
+      "source_id": "salesforce-agentforce-dx-environment",
+      "resolution": "Preserve blueprint wording and provide current lookup names without expanding exam scope."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "salesforce-summer26-developer-release",
+      "published_on": "2026-06",
+      "review": "Selected Apex/LWS release sections checked against detailed first-party rules; trigger shorthand discrepancy retained. Other broad release features not comprehensively reviewed."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 31,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "880b8ca6ebb3f03f94704cbd79465e847820da42a9413d1e146d1e24d653cefa",
+      "python_version": "3.13.14",
+      "sqlite_version": "3.50.4",
+      "results": {
+        "passed": 31,
+        "checks": [
+          "400 synthetic requests exist",
+          "four distinct configuration keys",
+          "same desired result from two read strategies",
+          "per-record strategy performs 200 SELECTs",
+          "grouped strategy performs one configuration SELECT",
+          "empty input causes no query or update",
+          "first batch plans 200 changes",
+          "first batch writes 200 local rows",
+          "first batch total is 69800 cents",
+          "other batch still awaits processing",
+          "replay plans no writes",
+          "replay changes no rows",
+          "next batch still processes after first batch",
+          "both batches total 139850 cents",
+          "changed configuration identifies 100 legitimate recalculations",
+          "new configuration total is 141840 cents",
+          "duplicate keys rejected",
+          "negative quantity rejected",
+          "Boolean quantity rejected",
+          "unknown configuration rejected",
+          "rejected plans leave persisted result intact",
+          "bound text is not interpreted as SQL",
+          "record count remains 400",
+          "partial operation preserves per-item order",
+          "successful partial rows commit with outer transaction",
+          "partial commit retains prior header update",
+          "atomic operation rejects all its rows",
+          "caught operation failure can retain earlier work",
+          "later failure removes previously successful partial rows",
+          "later failure also restores earlier header",
+          "all fixture transactions are closed"
+        ],
+        "configuration_selects": {
+          "per_record": 200,
+          "grouped": 1
+        },
+        "final_cents": 141840
+      },
+      "execution_stdout": "{\n  \"passed\": 31,\n  \"checks\": [\n    \"400 synthetic requests exist\",\n    \"four distinct configuration keys\",\n    \"same desired result from two read strategies\",\n    \"per-record strategy performs 200 SELECTs\",\n    \"grouped strategy performs one configuration SELECT\",\n    \"empty input causes no query or update\",\n    \"first batch plans 200 changes\",\n    \"first batch writes 200 local rows\",\n    \"first batch total is 69800 cents\",\n    \"other batch still awaits processing\",\n    \"replay plans no writes\",\n    \"replay changes no rows\",\n    \"next batch still processes after first batch\",\n    \"both batches total 139850 cents\",\n    \"changed configuration identifies 100 legitimate recalculations\",\n    \"new configuration total is 141840 cents\",\n    \"duplicate keys rejected\",\n    \"negative quantity rejected\",\n    \"Boolean quantity rejected\",\n    \"unknown configuration rejected\",\n    \"rejected plans leave persisted result intact\",\n    \"bound text is not interpreted as SQL\",\n    \"record count remains 400\",\n    \"partial operation preserves per-item order\",\n    \"successful partial rows commit with outer transaction\",\n    \"partial commit retains prior header update\",\n    \"atomic operation rejects all its rows\",\n    \"caught operation failure can retain earlier work\",\n    \"later failure removes previously successful partial rows\",\n    \"later failure also restores earlier header\",\n    \"all fixture transactions are closed\"\n  ],\n  \"configuration_selects\": {\n    \"per_record\": 200,\n    \"grouped\": 1\n  },\n  \"final_cents\": 141840\n}",
+      "execution_boundary": "Actual Python standard-library SQLite queries, traced SELECT counts, row updates, constraints, explicit savepoints, commits and rollbacks on original in-memory fixtures. All connections closed. No Salesforce org, Apex compiler, SOQL, Flow, LWC, API, queue, installation or network operation.",
+      "model_limits": "Single connection and trusted synthetic input rows; not a Salesforce security/transaction emulator or authorization check. No concurrency, production performance, trigger recursion, governor limits, asynchronous delivery, side-effect idempotency or deployability proven. SQLite executemany performs individual writes; savepoints explicitly implement the chosen operation policy."
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Canonical automated monitor remains manual-review because direct Help HTML is a loading shell. Full browser comparison matched 21 normalized objective lines/headings; no automatic current-source hash match. Summer25 exam label remains unresolved with current API67 product guidance.",
+    "Specific trigger/default-mode release bodies were available through indexed first-party search extraction, while direct/browser opens returned shells. Roundup trigger shorthand conflicts with detailed note; guide follows detailed rule and retains discrepancy, with no vendor contact or runtime verification.",
+    "Two paid endpoints returned403; Trailmix and Academy bodies blank. Earlier course durations/update dates and paid interiors/question quality not verified. Pluralsight card metadata does not establish current exam or API67 coverage.",
+    "31 local SQLite checks use original trusted synthetic rows and one connection per fixture; no Salesforce security, Apex/SOQL compilation, Flow/LWC/async runtime, concurrency, governor limits, side-effect idempotency, deployment or production performance verified.",
+    "Eight org activities and independent human review remain pending. No booking, purchase, trial, installation, authentication, permission/service/reboot changes or external messages. Five reserved GitHub guides and disabled notification pilot untouched."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 179,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Actual Python standard-library SQLite queries, traced SELECT counts, row updates, constraints, explicit savepoints, commits and rollbacks on original in-memory fixtures. All connections closed. No Salesforce org, Apex compiler, SOQL, Flow, LWC, API, queue, installation or network operation.",
+    "passed": 31,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "880b8ca6ebb3f03f94704cbd79465e847820da42a9413d1e146d1e24d653cefa",
+    "python_version": "3.13.14",
+    "sqlite_version": "3.50.4",
+    "results": {
+      "passed": 31,
+      "checks": [
+        "400 synthetic requests exist",
+        "four distinct configuration keys",
+        "same desired result from two read strategies",
+        "per-record strategy performs 200 SELECTs",
+        "grouped strategy performs one configuration SELECT",
+        "empty input causes no query or update",
+        "first batch plans 200 changes",
+        "first batch writes 200 local rows",
+        "first batch total is 69800 cents",
+        "other batch still awaits processing",
+        "replay plans no writes",
+        "replay changes no rows",
+        "next batch still processes after first batch",
+        "both batches total 139850 cents",
+        "changed configuration identifies 100 legitimate recalculations",
+        "new configuration total is 141840 cents",
+        "duplicate keys rejected",
+        "negative quantity rejected",
+        "Boolean quantity rejected",
+        "unknown configuration rejected",
+        "rejected plans leave persisted result intact",
+        "bound text is not interpreted as SQL",
+        "record count remains 400",
+        "partial operation preserves per-item order",
+        "successful partial rows commit with outer transaction",
+        "partial commit retains prior header update",
+        "atomic operation rejects all its rows",
+        "caught operation failure can retain earlier work",
+        "later failure removes previously successful partial rows",
+        "later failure also restores earlier header",
+        "all fixture transactions are closed"
+      ],
+      "configuration_selects": {
+        "per_record": 200,
+        "grouped": 1
+      },
+      "final_cents": 141840
+    },
+    "execution_stdout": "{\n  \"passed\": 31,\n  \"checks\": [\n    \"400 synthetic requests exist\",\n    \"four distinct configuration keys\",\n    \"same desired result from two read strategies\",\n    \"per-record strategy performs 200 SELECTs\",\n    \"grouped strategy performs one configuration SELECT\",\n    \"empty input causes no query or update\",\n    \"first batch plans 200 changes\",\n    \"first batch writes 200 local rows\",\n    \"first batch total is 69800 cents\",\n    \"other batch still awaits processing\",\n    \"replay plans no writes\",\n    \"replay changes no rows\",\n    \"next batch still processes after first batch\",\n    \"both batches total 139850 cents\",\n    \"changed configuration identifies 100 legitimate recalculations\",\n    \"new configuration total is 141840 cents\",\n    \"duplicate keys rejected\",\n    \"negative quantity rejected\",\n    \"Boolean quantity rejected\",\n    \"unknown configuration rejected\",\n    \"rejected plans leave persisted result intact\",\n    \"bound text is not interpreted as SQL\",\n    \"record count remains 400\",\n    \"partial operation preserves per-item order\",\n    \"successful partial rows commit with outer transaction\",\n    \"partial commit retains prior header update\",\n    \"atomic operation rejects all its rows\",\n    \"caught operation failure can retain earlier work\",\n    \"later failure removes previously successful partial rows\",\n    \"later failure also restores earlier header\",\n    \"all fixture transactions are closed\"\n  ],\n  \"configuration_selects\": {\n    \"per_record\": 200,\n    \"grouped\": 1\n  },\n  \"final_cents\": 141840\n}",
+    "model_limits": "Single connection and trusted synthetic input rows; not a Salesforce security/transaction emulator or authorization check. No concurrency, production performance, trigger recursion, governor limits, asynchronous delivery, side-effect idempotency or deployability proven. SQLite executemany performs individual writes; savepoints explicitly implement the chosen operation policy.",
+    "learning_catalog_consistency": "passed"
+  },
+  "public_objective_groups": [
+    {
+      "title": "Developer Fundamentals",
+      "weight": "27%",
+      "objectives": [
+        "Understand multi-tenant concepts and design frameworks, such as MVC architecture and Lightning Component Framework.",
+        "Given a scenario, identify common use cases and best practices for declarative versus programmatic customizations, including governor limits, formula fields, and roll-up summaries.",
+        "Given a scenario, determine, create, and access the appropriate data model including objects, fields, relationships, and external IDs.",
+        "Understand use cases and limitations of using Agentforce for Developers."
+      ]
+    },
+    {
+      "title": "Process Automation and Logic",
+      "weight": "28%",
+      "objectives": [
+        "Identify the capabilities of the declarative process automation features.",
+        "Understand how to declare variables, constants, methods, modifiers, Apex interfaces, and the appropriate use cases for each.",
+        "Given a scenario, assess how Apex control flow statements will execute and when to apply different control flow statements.",
+        "Given a scenario, write SOSL, SOQL, and DML statements in Apex, and assess what they will return.",
+        "Given a scenario, follow best practices to write Apex classes and triggers.",
+        "Given a scenario, understand governor limits and their implications on Apex transactions.",
+        "Describe the relationship between Apex transactions, the save order of execution, and the potential for recursion and/or cascading.",
+        "Implement exception handling in Apex, including custom exceptions as needed.",
+        "Given a scenario, use declarative functionality and Apex together to automate business logic."
+      ]
+    },
+    {
+      "title": "User Interface",
+      "weight": "25%",
+      "objectives": [
+        "Given a scenario, prevent user interface and data access security vulnerabilities.",
+        "Given a scenario, display and use custom user interface components, including Lightning components, Flow, and Visualforce.",
+        "Describe the use cases and best practices for Lightning Web Components, including the framework, benefits, and events.",
+        "Given a scenario, implement Apex to work with various types of page components, including Lightning components, Flow, and Agentforce."
+      ]
+    },
+    {
+      "title": "Testing, Debugging, and Deployment",
+      "weight": "20%",
+      "objectives": [
+        "Write and execute tests for triggers, controllers, classes, and flows using various sources of test data.",
+        "Given a scenario, know how and when to use the Salesforce Developer tools such as Salesforce DX, Salesforce CLI, and Developer Console.",
+        "Describe how to approach debugging system issues and monitoring flows, performance, asynchronous, and batch jobs.",
+        "Describe the environments, requirements, and process for deploying code and associated configurations."
+      ]
+    }
+  ],
+  "manual_source_comparison": {
+    "reviewed_on": "2026-09-29",
+    "canonical_url": "https://help.salesforce.com/s/articleView?id=005298965&language=en_US&type=1",
+    "automated_monitor": "manual-review; direct HTML lacks outline",
+    "comparison": "All 21 objectives and four weighted headings exactly match after removal of blank lines/browser markup; existing baseline retained. No automatic current-source hash match claimed.",
+    "objective_counts": [
+      4,
+      9,
+      4,
+      4
+    ],
+    "weights": [
+      27,
+      28,
+      25,
+      20
+    ],
+    "retained_baseline_sha256": "4843c3b24a93a1c4da79e50db00e79c38fa5921c6127df89e37a6754c5cddbfe",
+    "browser_normalized_sha256": "cdc28b7999b70ee04a13078d3d0f5d52e4dd8d3bc65009d7232b264a114cec5a",
+    "lifecycle": "Browser current contract and annual maintenance match saved status; stale Summer25 version label remains a watch. No replacement announced in the sources read.",
+    "retained_lifecycle_sha256": "a279edd220b1830daae23557891304a55628774c29db7c520002411a2512074a"
+  },
+  "source_reading_boundaries": {
+    "focus-on-force-salesforce-certification": "Fresh 9070-character capture matches the landing catalog read in the preceding same-session Salesforce reviews. Redirect to k2u.ai recorded; PD course/practice interiors, exact alignment and question quality not verified.",
+    "salesforce-platform-developer-guide": "Direct 61-character loading/CSS shell. Complete browser main article read: role and exclusions, contract, all 21 objectives, training, conduct and annual maintenance. All objective lines/headings match baseline after removal of blank lines/browser markup. Monitor remains manual-review; no automatic hash match. Summer25 label retained as a watch.",
+    "salesforce-platform-developer-certification": "Complete current browser main credential body and preparation/related-credential cards read. Current title confirmed; no booking or purchase. Linked numeric-user Trailmix redirects to registered alias and exposes navigation only.",
+    "salesforce-platform-developer-prep-trail": "Complete public trail card grid read: four modules, 10/35/10/20 minutes = 75 minutes. Module interiors and scenario/flashcard assessments not reviewed or copied.",
+    "salesforce-platform-developer-trailmix": "Direct capture blank; browser route from credential also has navigation only. Earlier 31h25 duration not reverified; no completed badge/interior claim.",
+    "salesforce-platform-developer-maintenance-winter-26": "Complete main listing read: 45 minutes = 10-minute introduction plus 35-minute combined Apex/Flow activity. Activity not executed and assessment answers not used.",
+    "salesforce-dex450-platform-development": "Direct and linked Academy route blank. Earlier five-day duration, current availability/sessions and interiors not reverified. No booking.",
+    "pluralsight-salesforce-platform-developer-path": "Complete public path main/card text read. Six Adam Olshansky cards total 598 minutes, versus rounded ten-hour header; dates Sep19,2022; four Oct27,2023; May14,2024. Practice listing not a review of questions; no lesson interiors or trial.",
+    "oreilly-salesforce-developer-i-certification": "HTTP403. Earlier 4h10/205-page/2024 metadata not reverified. No book interior or practice content accessed.",
+    "udemy-salesforce-platform-developer-wheeler": "HTTP403. Earlier 13h49/June2026 metadata not reverified. No paid interior or question quality claim.",
+    "apex-hours-lwc-security-2026": "Complete main article/code and conclusion read; March17,2026 and six-minute label. Treated as community background only. Its CDN advice conflicts with first-party CSP requirements, and with-sharing-only sample requires API/operation access review. Code not copied, installed, compiled or executed.",
+    "salesforce-apex-lwc-security": "Complete direct main and browser security article read. API67 versus66 defaults, explicit modes, invocation permissions, sharing versus CRUD/FLS, and stripInaccessible/describe options. Linked legacy atlas pages yielded iframe-only responses; no Apex compilation or runtime proof.",
+    "salesforce-summer26-developer-release": "Selected browser sections read, especially Apex updates lines155–183 and LWS distortion discussion122–128. Other visible introductory context inspected but entire article/linked feature docs not audited. Trigger bullet overstates system-mode behavior compared with specific release note; use detailed rule. No preview/agent feature installation or operation.",
+    "salesforce-apex-trigger-context-67": "Direct and repeated browser opens returned 61-character shell. Full indexed first-party main body including Where/Why/How/example and SeeAlso read in search extraction and retained privately. Trigger without-sharing context distinguished from API67 user-mode database operations. Runtime not tested; discrepancy with roundup retained.",
+    "salesforce-lws-html-allowlist": "Complete short direct main/allowlist read. LWS filters DOM HTML, not arbitrary input text. Example code not visible in text capture; no browser execution.",
+    "salesforce-lightning-csp": "Complete direct main read: static-resource JavaScript requirement, Trusted URLs, HTTPS, inline-script restriction and developer-console violations. No CDN/library installation or CSP change.",
+    "salesforce-apex-dml": "Selected sections read: DML exceptions, Database methods/default allOrNone/partial results, related records and transaction section. Earlier upsert/delete excerpt partly read; not the entire lesson. No activity/challenge solution or runtime. Wording about commits interpreted with enclosing transaction boundaries.",
+    "salesforce-apex-queueable": "Complete main through Resources read, including job ID monitoring, Queueable versus future, tests, chaining, stack-depth qualification and limits. Video/linked stack-depth details not reviewed, no challenge or execution. Guide avoids claiming arbitrary chained work is automatically completed.",
+    "salesforce-apex-trigger-tests": "Main lesson through TellMeMore and Resources read; stopped at challenge introduction. Test limits isolation, error assertions and bulk/negative tests used. No challenge solution copied or org operation; console coverage note not adopted as a tested current tool defect.",
+    "salesforce-apex-bulk-triggers": "Complete main lesson through Resources read across two chunks: collection inputs, grouped queries/DML and 200-record batching. No activity execution or assessment. One intermediate example spells WITH USER MODE while final code uses underscores; no vendor example copied or claimed compiled.",
+    "salesforce-developer-winter26-unit": "Complete ten-minute introductory main through Resources read. Topic listing verified, but exact large-payload, Trusted Mode and GraphQL-deprecation wording not adopted without deeper product verification. Activity and challenge not executed; no behavior-changing settings applied.",
+    "salesforce-apex-default-user-mode-67": "Direct/browser opens return shell. Full indexed first-party main body, version boundary, operation syntax, removed WITH SECURITY_ENFORCED and user/system sharing distinction read and retained privately. No compile/runtime check.",
+    "salesforce-agentforce-dx-environment": "Selected direct main: introduction, extension versus IDE rename, CLI/IDE roles, sandbox/scratch differences and displayed setup sequence through authorization. Later section not fully reviewed; instructions treated as source data, no tools installed or org authorized. Only naming/tool-role facts adopted."
+  },
+  "catalog_findings": [
+    {
+      "source_id": "pluralsight-salesforce-platform-developer-path",
+      "timed_card_minutes": [
+        26,
+        59,
+        65,
+        163,
+        129,
+        156
+      ],
+      "total_minutes": 598,
+      "rounded_header_hours": 10,
+      "dates": [
+        "2022-09-19",
+        "2023-10-27",
+        "2023-10-27",
+        "2023-10-27",
+        "2023-10-27",
+        "2024-05-14"
+      ],
+      "scope": "Public cards and landing text; no lessons or practice questions"
+    },
+    {
+      "source_id": "salesforce-platform-developer-prep-trail",
+      "card_minutes": [
+        10,
+        35,
+        10,
+        20
+      ],
+      "total_minutes": 75,
+      "scope": "Public grid; not all module interiors"
+    },
+    {
+      "source_id": "salesforce-platform-developer-maintenance-winter-26",
+      "unit_minutes": [
+        10,
+        35
+      ],
+      "total_minutes": 45,
+      "scope": "Introductory body read, activity and assessment not executed"
+    },
+    {
+      "source_ids": [
+        "salesforce-platform-developer-trailmix",
+        "salesforce-dex450-platform-development"
+      ],
+      "observation": "HTTP success with blank/unreadable main content",
+      "resolution": "Earlier durations explicitly unverified"
+    },
+    {
+      "source_ids": [
+        "oreilly-salesforce-developer-i-certification",
+        "udemy-salesforce-platform-developer-wheeler"
+      ],
+      "observation": "HTTP403",
+      "resolution": "Earlier durations/update metadata explicitly unverified"
+    }
+  ],
+  "technical_source_discrepancies": [
+    {
+      "subject": "Trigger context versus operation mode",
+      "broad_source": "salesforce-summer26-developer-release",
+      "specific_source": "salesforce-apex-trigger-context-67",
+      "resolution": "Teach detailed versioned database-mode rule, retain conflicting roundup shorthand and indexed-only access boundary. No runtime test."
+    },
+    {
+      "subject": "Lightning CDN scripts",
+      "community_source": "apex-hours-lwc-security-2026",
+      "primary_source": "salesforce-lightning-csp",
+      "resolution": "Use org static resources for external JavaScript; Trusted URL is not sufficient. No community sample adopted as executable code."
+    }
+  ]
+}

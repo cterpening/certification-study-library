@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [SALESFORCE-PLATFORM-DEVELOPER deep review](docs/research/2026-09-29-salesforce-platform-developer-deep-review.md): Compared 21 objectives, added 40 answers and 31 executed bulk/transaction checks, clarified API67 security and CSP rules, and recorded source/catalog limitations.
+
 - September 29, 2026: [SALESFORCE-PLATFORM-APP-BUILDER deep review](docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md): 26 objectives manually compared,40 answered prompts and28 executed local relationship/transaction/dependency checks; derived-field access,approval locking,deployment evidence andmaintenance discrepancy documented.
 
 - September 29, 2026: [SALESFORCE-PLATFORM-ADMINISTRATOR deep review](docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md): eight unchanged domains,40 answered prompts and30 actual local CSV/SQLite/access checks; Flow context/rollback and agent scoping clarified, with source and training limitations recorded.
