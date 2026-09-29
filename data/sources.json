@@ -3,6 +3,202 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "redhat-quarkus38-getting-started-full",
+      "title": "Red Hat Quarkus 3.8 complete getting started guide",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_build_of_quarkus/3.8/html-single/getting_started_with_red_hat_build_of_quarkus/index",
+      "publisher": "Red Hat",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX378"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX378 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex378-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "quarkus38-config",
+      "title": "Quarkus 3.8 configuration reference",
+      "url": "https://quarkus.io/version/3.8/guides/config-reference/",
+      "publisher": "Quarkus",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX378"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX378 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex378-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "quarkus38-health",
+      "title": "Quarkus 3.8 SmallRye Health",
+      "url": "https://quarkus.io/version/3.8/guides/smallrye-health/",
+      "publisher": "Quarkus",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX378"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX378 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex378-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "quarkus38-panache",
+      "title": "Quarkus 3.8 Hibernate ORM with Panache",
+      "url": "https://quarkus.io/version/3.8/guides/hibernate-orm-panache/",
+      "publisher": "Quarkus",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX378"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX378 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex378-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "quarkus38-kafka",
+      "title": "Quarkus 3.8 Kafka reference",
+      "url": "https://quarkus.io/version/3.8/guides/kafka/",
+      "publisher": "Quarkus",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX378"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX378 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex378-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "quarkus38-rest",
+      "title": "Quarkus 3.8 RESTEasy Reactive",
+      "url": "https://quarkus.io/version/3.8/guides/resteasy-reactive/",
+      "publisher": "Quarkus",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX378"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX378 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex378-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "quarkus-rest-dispatch-blog",
+      "title": "RESTEasy Reactive - To block or not to block",
+      "url": "https://quarkus.io/blog/resteasy-reactive-smart-dispatch/",
+      "publisher": "Quarkus",
+      "authority_class": 3,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "supported_exams": [
+        "EX378"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX378 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex378-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "smallrye-health-wellness",
+      "title": "SmallRye Health wellness checks",
+      "url": "https://smallrye.io/docs/smallrye-health/3.0.1/wellness.html",
+      "publisher": "SmallRye",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX378"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX378 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex378-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "quarkus38-fault-tolerance",
+      "title": "Quarkus 3.8 SmallRye Fault Tolerance",
+      "url": "https://quarkus.io/version/3.8/guides/smallrye-fault-tolerance/",
+      "publisher": "Quarkus",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX378"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX378 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex378-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "quarkus38-jwt",
+      "title": "Quarkus 3.8 JWT RBAC",
+      "url": "https://quarkus.io/version/3.8/guides/security-jwt/",
+      "publisher": "Quarkus",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX378"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX378 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex378-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "quarkus38-micrometer",
+      "title": "Quarkus 3.8 Micrometer",
+      "url": "https://quarkus.io/version/3.8/guides/telemetry-micrometer/",
+      "publisher": "Quarkus",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX378"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX378 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex378-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "quarkus38-openapi",
+      "title": "Quarkus 3.8 OpenAPI and Swagger UI",
+      "url": "https://quarkus.io/version/3.8/guides/openapi-swaggerui/",
+      "publisher": "Quarkus",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX378"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX378 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex378-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "quarkus38-rest-client",
+      "title": "Quarkus 3.8 REST Client Reactive",
+      "url": "https://quarkus.io/version/3.8/guides/rest-client-reactive/",
+      "publisher": "Quarkus",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX378"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX378 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex378-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "quarkus38-opentelemetry",
+      "title": "Quarkus 3.8 OpenTelemetry tracing",
+      "url": "https://quarkus.io/version/3.8/guides/opentelemetry/",
+      "publisher": "Quarkus",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX378"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX378 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex378-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "ansible216-config",
       "title": "Ansible Core 2.16 configuration",
       "url": "https://docs.ansible.com/projects/ansible-core/2.16/reference_appendices/config.html",
@@ -138,10 +334,11 @@
       "access_model": "public",
       "supported_exams": [
         "EX280",
-        "EX294"
+        "EX294",
+        "EX378"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 EX280 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex280-deep-review.md No live infrastructure execution. September 28 EX294 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex294-deep-review.md No live infrastructure execution."
+      "notes": "September 28 EX280 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex280-deep-review.md No live infrastructure execution. September 28 EX294 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex294-deep-review.md No live infrastructure execution. September 28 EX378 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex378-deep-review.md No live infrastructure execution."
     },
     {
       "id": "kubernetes-kustomize",

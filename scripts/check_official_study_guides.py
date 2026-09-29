@@ -531,7 +531,14 @@ def extract_red_hat_objectives(page_html: str) -> str:
     if not starts:
         raise ValueError("Could not find Red Hat exam objectives")
     start = starts[-1]
-    end = find_first(lines, RED_HAT_OBJECTIVE_ENDS, start + 1)
+    # "Readiness" is also part of health-check objectives (for example,
+    # @Readiness in EX378). Only a complete section-heading line ends the list.
+    end_markers = {marker.casefold() for marker in RED_HAT_OBJECTIVE_ENDS}
+    end = next(
+        (index for index in range(start + 1, len(lines))
+         if lines[index].casefold() in end_markers),
+        None,
+    )
     if end is None:
         raise ValueError("Could not find the end of Red Hat exam objectives")
     versions = [

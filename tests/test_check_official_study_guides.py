@@ -669,6 +669,25 @@ class ObjectiveExtractionTests(unittest.TestCase):
             status["skills_versions"],
         )
 
+    def test_red_hat_readiness_objective_does_not_end_task_list(self) -> None:
+        rows = "".join(f"<p>Task {number}</p>" for number in range(1, 13))
+        for heading in ("What you need to know", "Readiness"):
+            with self.subTest(heading=heading):
+                body = f"""
+                <p>This exam is based on Red Hat Example 1.0.</p>
+                <h2>Study points for the exam</h2>{rows}
+                <li>Implement @Startup, @Liveness and @Readiness checks.</li>
+                <li>Verify readiness after application restart.</li>
+                <li>Follow a distributed trace.</li>
+                <h2>{heading}</h2><p>Booking information</p>
+                """
+                objectives = monitor.extract_red_hat_objectives(body)
+                self.assertIn("@Readiness checks.", objectives)
+                self.assertIn("Verify readiness after application restart.", objectives)
+                self.assertIn("Follow a distributed trace.", objectives)
+                self.assertNotIn("Booking information", objectives)
+                self.assertNotIn(f"\n{heading}\n", objectives)
+
     def test_extracts_linux_foundation_domains(self) -> None:
         tasks = "".join(f"<p>Task {number}</p>" for number in range(1, 8))
         body = f"""

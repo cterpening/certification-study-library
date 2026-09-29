@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: [EX378 deep review](docs/research/2026-09-28-ex378-deep-review.md): 64 tasks/PDF compared; monitor cutoff repaired, 40 answers and 18 actual local Quarkus tests added with full-service/restart limits explicit.
+
 - September 28, 2026: [EX294 deep review](docs/research/2026-09-28-ex294-deep-review.md): 56 tasks and the V26K PDF compared; 40 answers, typed template/candidate validation and 41 actual local checks with Ansible/RHEL execution limits explicit.
 
 - September 28, 2026: [EX280 deep review](docs/research/2026-09-28-ex280-deep-review.md): 55 tasks and the V422 PDF compared; 40 answers, 24 local rendering/selector checks, SCC/OLM/TLS boundaries and a retained exam-version blocker.

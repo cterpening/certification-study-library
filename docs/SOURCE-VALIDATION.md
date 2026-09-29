@@ -1212,6 +1212,8 @@ The review reconciles every public EX280 task with the live page and official 4.
 
 ## EX378 coverage record
 
+The September 28 [deep review](research/2026-09-28-ex378-deep-review.md) maps 64 detailed objectives. Mapped all 64 public tasks and compared EX378V38K; repaired the monitor's premature @Readiness cutoff and explicitly accepted the complete baseline. Added 40 answers, runnable pinned Java/Panache examples, configuration and failure-boundary teaching, and 18 passing local Quarkus tests. Full integrated service/restart labs remain proposed. Current guide citations: 24 registered, 22 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 1, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: 11 unweighted Red Hat Build of Quarkus 3.8 coding groups covering configuration, fault tolerance, health, metrics, MP-JWT, REST, Panache, reactive messaging, OpenAPI, REST clients, and OpenTelemetry

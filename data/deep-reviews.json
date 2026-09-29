@@ -5,6 +5,25 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "EX378",
+      "reviewed_on": "2026-09-28",
+      "guide_sha256": "0488514ba37606933a876e091e61dc3e9d6b2f4839cf5602a8254703bccfecd6",
+      "objective_count": 64,
+      "outcome": "reviewed",
+      "report_path": "docs/research/2026-09-28-ex378-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-28-ex378-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "Same-context AI review; independent human review pending.",
+        "Executed an original local Quarkus REST/Panache/H2 fixture on Windows using Temurin JDK 21 and Maven, not an assigned RHEL exam environment.",
+        "In-memory H2 test schema intentionally resets. No durable packaged restart, JWT signing/verification, Kafka broker, fault-tolerance service, remote REST client, OpenTelemetry collector or OpenShift integration lab executed. The eight integrated labs remain proposed.",
+        "OReilly and Udemy pages blocked automated access; inherited publication dates, runtime and counts were not reverified.",
+        "Public objectives/PDF/course metadata do not establish a particular candidate booking, all purchasable versions or product support for every optional practice dependency."
+      ]
+    },
+    {
       "exam_code": "EX294",
       "reviewed_on": "2026-09-28",
       "guide_sha256": "44a432ecfad33d430b2a4fc6583ee7c46eb8376c9bd31c68b5a0f5f906de7aaa",

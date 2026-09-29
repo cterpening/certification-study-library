@@ -4,6 +4,217 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-ex378-deep-review",
+      "title": "EX378 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "EX378"
+      ],
+      "results": [
+        {
+          "exam_code": "EX378",
+          "vendor_id": "red-hat",
+          "guide_path": "guides/EX378-red-hat-certified-specialist-cloud-native-development.md",
+          "baseline_sha256": "ee79ab8aa694cfc7046ebf8168c5e518295e7719e49a83a6199fe138f272a98b",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Read all eleven groups and 64 leaf tasks; normalized complete ordered text agrees with EX378V38K PDF. Lifecycle hash unchanged. Explicitly repaired/accepted the parser-truncated objective baseline; not evidence of a new vendor scope announcement. Four other Red Hat baselines unchanged under corrected parser."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Read focused archived 3.8 configuration, health, fault tolerance, Micrometer, JWT, REST, Panache, Kafka, OpenAPI, REST client and OpenTelemetry material plus full Red Hat getting-started instructions. Actual local Java tests cover the original REST/Panache fixture only."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Exam/course baseline remains Red Hat Quarkus 3.8; DO378 also names OpenShift 4.14. Full Red Hat build guide supplies the pinned 3.8.6.SP3-redhat-00002 BOM/plugin. No future scope date inferred from other PDF versions or newer upstream releases."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Registered/reused version PDF and fourteen focused primary/blog references; current Pluralsight path lists four courses, three labs and ten hours. OReilly and Udemy pages blocked; inherited publication/runtime/count metadata explicitly unverified. Places to learn remains final."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Added complete original Maven/Java boundary example and all 40 answers. Distinguish flush/commit, acknowledgment/offset commit, worker/event-loop execution, imported health Startup vs bean Startup, gauge object retention and production UI build-time behavior."
+            }
+          },
+          "findings": [
+            {
+              "id": "ex378-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Objective monitor omitted most Quarkus tasks",
+              "url": "https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX378"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "A substring Readiness end marker matched a health objective, truncating the accepted list before the remaining health and all later groups.",
+              "recommendation": "Use exact complete-heading matching, add a regression test, compare the full 64-task list to EX378V38K and explicitly replace the reviewed baseline. Lifecycle did not change.",
+              "disposition": "applied",
+              "source_id": "redhat-ex378-blueprint",
+              "resolution": "Use exact complete-heading matching, add a regression test, compare the full 64-task list to EX378V38K and explicitly replace the reviewed baseline. Lifecycle did not change."
+            },
+            {
+              "id": "ex378-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Configuration precedence needed concrete evidence",
+              "url": "https://quarkus.io/version/3.8/guides/config-reference/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX378"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Default source ordinals and profile resolution are distinct parts of effective configuration.",
+              "recommendation": "Add ordinal table, system/environment collision example, profile behavior and high-ordinal custom-source caveat.",
+              "disposition": "applied",
+              "source_id": "quarkus38-config",
+              "resolution": "Add ordinal table, system/environment collision example, profile behavior and high-ordinal custom-source caveat."
+            },
+            {
+              "id": "ex378-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Health qualifiers and endpoints were too abstract",
+              "url": "https://quarkus.io/version/3.8/guides/smallrye-health/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX378"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Health Startup and runtime Startup serve different purposes; readiness, liveness, groups and wellness have different consumers.",
+              "recommendation": "Add qualified import distinction and default paths with management/root-path caveats.",
+              "disposition": "applied",
+              "source_id": "quarkus38-health",
+              "resolution": "Add qualified import distinction and default paths with management/root-path caveats."
+            },
+            {
+              "id": "ex378-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Reactive signatures do not make blocking persistence safe",
+              "url": "https://quarkus.io/version/3.8/guides/resteasy-reactive/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX378"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Dispatch depends on return type, transaction and explicit blocking annotations.",
+              "recommendation": "Teach the worker/I/O boundary and add a synchronous transactional resource example.",
+              "disposition": "applied",
+              "source_id": "quarkus38-rest",
+              "resolution": "Teach the worker/I/O boundary and add a synchronous transactional resource example."
+            },
+            {
+              "id": "ex378-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Flush and durable completion needed separation",
+              "url": "https://quarkus.io/version/3.8/guides/hibernate-orm-panache/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX378"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Managed fields use dirty checking, while SQL flush can precede a later rollback.",
+              "recommendation": "Add real HTTP CRUD and explicit failed-after-flush rollback tests with committed row observations.",
+              "disposition": "applied",
+              "source_id": "quarkus38-panache",
+              "resolution": "Add real HTTP CRUD and explicit failed-after-flush rollback tests with committed row observations."
+            },
+            {
+              "id": "ex378-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Acknowledgment was conflated with committed connector progress",
+              "url": "https://quarkus.io/version/3.8/guides/kafka/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX378"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Kafka throttled commits advance contiguous acknowledged positions periodically; database effects and Kafka progress are not automatically atomic.",
+              "recommendation": "Add crash/replay, out-of-order, auto-commit and failure-strategy cases; require transactional deduplication for external effects.",
+              "disposition": "applied",
+              "source_id": "quarkus38-kafka",
+              "resolution": "Add crash/replay, out-of-order, auto-commit and failure-strategy cases; require transactional deduplication for external effects."
+            },
+            {
+              "id": "ex378-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Response exception mapping needs its own execution boundary",
+              "url": "https://quarkus.io/version/3.8/guides/rest-client-reactive/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX378"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Mappers run on an event loop by default; reading a blocking response stream needs the documented worker boundary.",
+              "recommendation": "Explain registration and Blocking mapper behavior instead of assuming async completion makes all processing safe.",
+              "disposition": "applied",
+              "source_id": "quarkus38-rest-client",
+              "resolution": "Explain registration and Blocking mapper behavior instead of assuming async completion makes all processing safe."
+            },
+            {
+              "id": "ex378-deep-8",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Original knowledge checks had no answers",
+              "url": "https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX378"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Forty questions and eight proposed labs lacked worked answers and a runnable teaching baseline.",
+              "recommendation": "Answer all 40 and add a pinned original Java fixture with measured local execution and explicit larger-lab limits.",
+              "disposition": "applied",
+              "source_id": "redhat-ex378-blueprint",
+              "resolution": "Answer all 40 and add a pinned original Java fixture with measured local execution and explicit larger-lab limits."
+            }
+          ],
+          "notes": "Mapped all 64 public tasks and compared EX378V38K; repaired the monitor's premature @Readiness cutoff and explicitly accepted the complete baseline. Added 40 answers, runnable pinned Java/Panache examples, configuration and failure-boundary teaching, and 18 passing local Quarkus tests. Full integrated service/restart labs remain proposed. Same-context AI review; human review pending. See docs/research/2026-09-28-ex378-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 8,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-ex294-deep-review",
       "title": "EX294 complete guide and learning-content review",
       "rubric_version": 1,

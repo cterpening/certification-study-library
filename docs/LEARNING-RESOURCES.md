@@ -3038,14 +3038,30 @@ No exact current EX294 Pluralsight, Whizlabs, MeasureUp, KodeKloud, or RHEL-10/A
 
 ### Red Hat Certified Specialist in Cloud-native Development (EX378)
 
-- Official scope: [EX378 objectives](https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam), [Red Hat Build of Quarkus 3.8 getting started](https://docs.redhat.com/en/documentation/red_hat_build_of_quarkus/3.8/html/getting_started_with_red_hat_build_of_quarkus/index), and [archived upstream 3.8 guides](https://quarkus.io/version/3.8/guides/) (**20–40 selected hours**)
-- Official route: [DO378](https://www.redhat.com/en/services/training/red-hat-cloud-native-microservices-development-quarkus-do378) (**about five instructor-led days plus 40–80 hours independent coding**); aligned to Quarkus 3.8 and OpenShift 4.14
-- Free start: [DO078 Quarkus Technical Overview](https://www.redhat.com/en/services/training/do078-quarkus-technical-overview) (**2–4 hours estimated plus 5–10 hours coding**) and [Red Hat Developer Quarkus learning hub](https://developers.redhat.com/learn/quarkus) (**3–10 selected hours**); neither is a fixed 3.8 map or covers all 11 objective groups alone
-- Current broad path: [Pluralsight Quarkus](https://www.pluralsight.com/paths/quarkus) (**10 listed hours plus 30–60 hours coding**); four courses and three guided labs with 2025–2026 content, requiring a Quarkus 3.8 API map
-- Detailed book: [O'Reilly/Manning Quarkus in Action](https://www.oreilly.com/library/view/quarkus-in-action/9781633438958/) (**416 pages / 12 hours 2 minutes plus 30–60 hours coding**); January 2025 and broader/newer than the fixed exam baseline
-- Current commercial course: [Udemy / Ansgar Schulte Cloud-native Microservices with Quarkus](https://www.udemy.com/course/quarkus-by-example/) (**9 hours 51 minutes plus 30–60 hours coding**; updated June 2026); translate newer Quarkus REST names and APIs back to 3.8
+Resource details from the [EX378 guide](../guides/EX378-red-hat-certified-specialist-cloud-native-development.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Implement every public objective in one coherent Red Hat Quarkus 3.8 service and test package-mode restart, denied/failure paths, persistent data, acknowledgment and telemetry—not just dev-mode success. No exact current EX378 MeasureUp, Whizlabs or complete certification-specific commercial path was independently verified; reject certified/recalled-question banks.
+This is not a complete list and is not meant to be consumed in full. Pick resources that match your Java background, then implement every public objective in one coherent 3.8 project. Estimated time includes selected reading or coding where stated; access and metadata can change.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| EX378 objectives + Red Hat/Quarkus 3.8 docs | Public | 20–40 selected hours |
+| Red Hat DO378 | Paid | About 5 training days plus 40–80 hours independent coding |
+| Red Hat DO078 | Free account | 2–4 hours estimated plus 5–10 hours coding |
+| Red Hat Developer Quarkus learning hub | Public / free account | 3–10 selected hours |
+| Pluralsight Quarkus path | Paid | 10 hours listed plus 30–60 hours coding |
+| O'Reilly/Manning Quarkus in Action | Paid; page blocked on recheck | 30–60 coding hours estimated; current length unverified |
+| Udemy Cloud-native Microservices with Quarkus | Paid; page blocked on recheck | 30–60 coding hours estimated; current runtime unverified |
+
+- **Focused implementation references:** Work through [configuration](https://quarkus.io/version/3.8/guides/config-reference/), [health](https://quarkus.io/version/3.8/guides/smallrye-health/), [Panache](https://quarkus.io/version/3.8/guides/hibernate-orm-panache/), [RESTEasy Reactive](https://quarkus.io/version/3.8/guides/resteasy-reactive/) and [Kafka](https://quarkus.io/version/3.8/guides/kafka/) alongside the original example and failure matrix.
+- **Official scope and build:** [Red Hat Build of Quarkus 3.8 getting started](https://docs.redhat.com/en/documentation/red_hat_build_of_quarkus/3.8/html/getting_started_with_red_hat_build_of_quarkus/index) establishes supported project/BOM tooling. The archived [upstream Quarkus 3.8 guides](https://quarkus.io/version/3.8/guides/) provide focused exercises for every major objective; prefer Red Hat-supported coordinates where they differ.
+- **Thread-dispatch explanation:** Clement Escoffier’s August 25, 2021 [RESTEasy Reactive: To block or not to block](https://quarkus.io/blog/resteasy-reactive-smart-dispatch/) explains why blocking work and I/O threads must be separated. Corroborate it with the archived 3.8 REST reference; its historical `javax.*` imports and broader transaction examples are not drop-in 3.8 code or proof of atomic database-plus-Kafka effects.
+- **Official route:** [DO378 Cloud-native Microservices Development with Quarkus](https://www.redhat.com/en/services/training/red-hat-cloud-native-microservices-development-quarkus-do378) uses Quarkus 3.8 and OpenShift 4.14 and is the closest end-to-end route. Allow about five instructor-led days plus extensive independent coding.
+- **Free orientation:** [DO078 Quarkus Technical Overview](https://www.redhat.com/en/services/training/do078-quarkus-technical-overview) covers project generation, REST, JDBC/Panache, health, OpenAPI, containers/native builds and OpenShift. The [Red Hat Developer Quarkus learning hub](https://developers.redhat.com/learn/quarkus) collects learning paths and interactive tutorials; select 3–10 relevant hours, and do not treat it as a fixed 3.8 exam map.
+- **Current broad video/labs:** [Pluralsight Quarkus path](https://www.pluralsight.com/paths/quarkus) lists four courses, three guided labs and ten hours, with 2025–2026 REST, persistence, reactive and event-driven content. Map security, configuration details, all observability types and 3.8 APIs explicitly.
+- **Detailed book:** [O'Reilly/Manning Quarkus in Action](https://www.oreilly.com/library/view/quarkus-in-action/9781633438958/) previously supplied broad configuration, REST, security, persistence, messaging and observability coverage. Its page blocked automated access on September 28; the inherited publication date, page count and runtime were not reverified. Check the edition and backport applicable examples to 3.8.
+- **Current commercial course:** [Udemy / Ansgar Schulte Cloud-native Microservices with Quarkus](https://www.udemy.com/course/quarkus-by-example/) blocked automated access on September 28. Previously recorded runtime, lecture count and update date were not reverified. Inspect the accessible syllabus and use relevant sections only after a 3.8 API check.
+
+No exact current EX378 MeasureUp, Whizlabs, official practice test, or complete certification-specific O'Reilly/Pluralsight route was independently verified September 28. Avoid “certified questions,” real/recalled tasks, and answer banks; this is a coding exam. Plan **140–240 hours** with strong modern Java/Jakarta experience, or **300–500 hours** if CDI, JPA, reactive programming, messaging, security, and observability are new.
 
 ### CompTIA Tech+ (FC0-U71)
 

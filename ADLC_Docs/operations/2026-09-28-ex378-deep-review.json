@@ -1,0 +1,2144 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "EX378",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/EX378-red-hat-certified-specialist-cloud-native-development.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "fe1b161dcdac960a2cf705f3667925b180419095a850810a121a76d882e74d77",
+  "guide_after_sha256": "0488514ba37606933a876e091e61dc3e9d6b2f4839cf5602a8254703bccfecd6",
+  "prior_records": {
+    "exam": {
+      "code": "EX378",
+      "level": "expert",
+      "vendor_id": "red-hat",
+      "title": "Red Hat Certified Specialist in Cloud-native Development",
+      "status": "active",
+      "study_guide_url": "https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam",
+      "guide_path": "guides/EX378-red-hat-certified-specialist-cloud-native-development.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Red Hat recommends DO378 or equivalent Quarkus experience, strong Java SE skills including exceptions/annotations/collections, VS Code or VSCodium familiarity on RHEL, and beneficial OpenShift/Kafka familiarity. Build one complete service with the Red Hat Quarkus 3.8 BOM and practice configuration, resilience, health, metrics, JWT, REST, Panache, messaging, OpenAPI, REST clients and OpenTelemetry through package-mode restart."
+    },
+    "review": {
+      "id": "ex378-2026-09-01-source-validation",
+      "exam_code": "EX378",
+      "guide_path": "guides/EX378-red-hat-certified-specialist-cloud-native-development.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ex378-official-objectives.txt",
+      "blueprint_snapshot_sha256": "68272e22e491f3168f3e9c1eaf2520a0be7b132212234e221135205fc9e9ec1a",
+      "objective_coverage": [
+        {
+          "objective_group": "Configuration and profiles",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "MicroProfile Fault Tolerance",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenario 2",
+            "Labs 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "MicroProfile Health Check",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Lab 8"
+          ]
+        },
+        {
+          "objective_group": "Micrometer Metrics",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Lab 8"
+          ]
+        },
+        {
+          "objective_group": "MP-JWT RBAC",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenario 1",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "RESTEasy Reactive and Jakarta REST",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenarios 1–2",
+            "Labs 3 and 8"
+          ]
+        },
+        {
+          "objective_group": "JPA mapping with Panache",
+          "guide_sections": [
+            "Section 7",
+            "Integrated scenarios 1 and 3",
+            "Labs 4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Reactive Messaging",
+          "guide_sections": [
+            "Section 8",
+            "Integrated scenario 3",
+            "Labs 7–8"
+          ]
+        },
+        {
+          "objective_group": "MicroProfile OpenAPI",
+          "guide_sections": [
+            "Section 9",
+            "Integrated scenario 1",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "REST Client Reactive",
+          "guide_sections": [
+            "Section 10",
+            "Integrated scenario 2",
+            "Labs 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "OpenTelemetry distributed tracing",
+          "guide_sections": [
+            "Section 11",
+            "All integrated scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 9,
+        "reachable": 7,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All 11 unweighted EX378 coding groups were reconciled with Red Hat Build of Quarkus 3.8 documentation and the archived upstream 3.8 guide set. The guide evolves one persistent service so configuration, resilience, health, metrics, MP-JWT, RESTEasy Reactive/Jakarta REST, Panache/JPA, Reactive Messaging, OpenAPI, REST Client Reactive and OpenTelemetry are tested together. Three scenarios, eight safe labs and 40 original checks include negative/failure paths, database and acknowledgment evidence, non-blocking boundaries, telemetry correlation and package-mode restart. All nine URLs are cataloged: seven reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. Newer resources have an explicit 3.8 API/name gap checklist and no recalled exam tasks are used."
+    },
+    "sources": [
+      {
+        "id": "redhat-ex378-blueprint",
+        "title": "Red Hat Certified Specialist in Cloud-native Development exam",
+        "url": "https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam",
+        "publisher": "Red Hat",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX378"
+        ],
+        "notes": "Canonical 11-group unweighted EX378 objective list, based on Red Hat Build of Quarkus 3.8."
+      },
+      {
+        "id": "redhat-ex378-quarkus38-docs",
+        "title": "Getting started with Red Hat Build of Quarkus 3.8",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_build_of_quarkus/3.8/html/getting_started_with_red_hat_build_of_quarkus/index",
+        "publisher": "Red Hat",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX378"
+        ],
+        "notes": "Official supported 3.8 project, BOM, tooling, CDI, test and packaging baseline."
+      },
+      {
+        "id": "redhat-ex378-upstream38-guides",
+        "title": "Quarkus 3.8 archived guides",
+        "url": "https://quarkus.io/version/3.8/guides/",
+        "publisher": "Quarkus project",
+        "authority_class": 3,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX378"
+        ],
+        "notes": "Version-pinned upstream guides covering the detailed objective technologies; prefer Red Hat-supported coordinates where they differ."
+      },
+      {
+        "id": "redhat-ex378-do378",
+        "title": "Red Hat Cloud-native Microservices Development with Quarkus DO378",
+        "url": "https://www.redhat.com/en/services/training/red-hat-cloud-native-microservices-development-quarkus-do378",
+        "publisher": "Red Hat",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX378"
+        ],
+        "notes": "Closest official route, based on Red Hat Build of Quarkus 3.8 and OpenShift 4.14; delivery and duration vary."
+      },
+      {
+        "id": "redhat-ex378-do078",
+        "title": "Quarkus Technical Overview DO078",
+        "url": "https://www.redhat.com/en/services/training/do078-quarkus-technical-overview",
+        "publisher": "Red Hat",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX378"
+        ],
+        "notes": "Free orientation covering project generation, REST, JDBC/Panache, health, OpenAPI, container/native build and OpenShift; not complete exam preparation."
+      },
+      {
+        "id": "redhat-ex378-developer-lab",
+        "title": "Red Hat Developer Quarkus learning hub",
+        "url": "https://developers.redhat.com/learn/quarkus",
+        "publisher": "Red Hat Developer",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX378"
+        ],
+        "notes": "Current Quarkus learning-path and interactive-tutorial hub. Select relevant resources and verify each runtime version; it is not a fixed 3.8 exam map."
+      },
+      {
+        "id": "redhat-ex378-pluralsight",
+        "title": "Quarkus learning path",
+        "url": "https://www.pluralsight.com/paths/quarkus",
+        "publisher": "Pluralsight",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX378"
+        ],
+        "notes": "Four courses, three guided labs and ten hours listed; 2025–2026 REST, persistence, reactive and event-driven content requiring a 3.8 gap map."
+      },
+      {
+        "id": "redhat-ex378-oreilly-book",
+        "title": "Quarkus in Action",
+        "url": "https://www.oreilly.com/library/view/quarkus-in-action/9781633438958/",
+        "publisher": "O'Reilly / Manning / Martin Stefanko / Jan Martiska",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX378"
+        ],
+        "notes": "January 2025, 416 pages and 12 hours 2 minutes listed; broad coverage of nearly all objective concepts but may use a newer Quarkus stream."
+      },
+      {
+        "id": "redhat-ex378-udemy-schulte",
+        "title": "Cloud-native Microservices with Quarkus",
+        "url": "https://www.udemy.com/course/quarkus-by-example/",
+        "publisher": "Udemy / Ansgar Schulte",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX378"
+        ],
+        "notes": "Nine hours 51 minutes, 116 lectures, updated June 2026. Strong hands-on breadth but newer Quarkus REST naming/APIs must be translated to 3.8."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "e60caa4b7ed85b955210682790ac13d0b8ecb076b82bc8289e8aeecef28ad6b2",
+      "guide_sections": [
+        "1. Configuration and profiles",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "95149497b6f9d38af015a47b10e122c1b85b8fd80da1d2b995273167cb105b84",
+      "guide_sections": [
+        "1. Configuration and profiles",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "6354fadf2367e3c7e8e1a68f81d79a634bcb7e65360734d4a005222625e1be51",
+      "guide_sections": [
+        "1. Configuration and profiles",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "0606beb65060076198e5c27620ee9d783cb64e72c72b3903ae31646c32c3cba9",
+      "guide_sections": [
+        "1. Configuration and profiles",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "9f599f910cfa5d632d2cf53ae1aa9c6c1b6dcd578c780e1503c7ef4b05d73bd7",
+      "guide_sections": [
+        "1. Configuration and profiles",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "ec76bcae475f11f0f34b4f24d05739d5be792d89167326c99dadfd79ca9d4d67",
+      "guide_sections": [
+        "2. Fault-tolerant microservices",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "ef60ab77fa8899211a63715251a4d8a0adf2bfaf4dae8350ee373103375c5485",
+      "guide_sections": [
+        "2. Fault-tolerant microservices",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "3753b9db1a257a6e80795011fb0ed6d3694437060774be522de9900b84cb9346",
+      "guide_sections": [
+        "2. Fault-tolerant microservices",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "c14f58128f578ad184afc43bc01eb8b3e63b0649dfefd09651e66e2f067b957b",
+      "guide_sections": [
+        "2. Fault-tolerant microservices",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "7424f91f4940aee0dddd36f4709506cae385bc50d72c1c2745df64df79cb9e73",
+      "guide_sections": [
+        "2. Fault-tolerant microservices",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "bd25d3c05b72175ad08868de021a84205e2835ee5f7c6493ffcc4b6153794a77",
+      "guide_sections": [
+        "2. Fault-tolerant microservices",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "6a4e6f115b524a5c954db609ee38396671304f9acd0407b54d026ab9ac20e9f1",
+      "guide_sections": [
+        "2. Fault-tolerant microservices",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "5b8148b08831fcf2029fec487cf77222b714e645ae725853b847185b33490765",
+      "guide_sections": [
+        "2. Fault-tolerant microservices",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "b1654599f52029fbfaede74c7d3e609bb75fc66f741328b64c4e870d1c9a4b92",
+      "guide_sections": [
+        "3. Health checks",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "58b6a3553ca28118532a86def26a89d3af091765aafd4401d281707bd2f58051",
+      "guide_sections": [
+        "3. Health checks",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "c11258b6d52608f24eb6f8f42bb6c2b64bfc080597aafd886dbe36e53beea898",
+      "guide_sections": [
+        "3. Health checks",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "de74ad8c1e093149341c9cb2832f8e2da65932b2c13bcd05c008611a2458b33e",
+      "guide_sections": [
+        "3. Health checks",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "75ba6116bb95757bb02f5f84d83bad569ecb651b74dd68676ee55e7240a273b6",
+      "guide_sections": [
+        "3. Health checks",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "acab53045e7cd76aca245baec23bd4a89177feeffd80c27be5500ff1889d3887",
+      "guide_sections": [
+        "3. Health checks",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "9e35433e9b53410cd88434a5c0576305d8314c740fe249f0367790818cbc4d5c",
+      "guide_sections": [
+        "3. Health checks",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "264030f44820c6a51bbfd588b861a9813a22b683883b7b117835ffd03a842eec",
+      "guide_sections": [
+        "3. Health checks",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "b852160084fb4b6bfeed567cc1248305d6f2691c12b0d90b0f0b995764b6f8d7",
+      "guide_sections": [
+        "4. Micrometer metrics",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "ab3f2e02c339c914493f1afb70497a3aee499587428d312fe6dcb2a3c7dd3de2",
+      "guide_sections": [
+        "4. Micrometer metrics",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "a1a47fb7a72b65c4b393161ee9e7e7ecdf9ceecfdcbcb127163834de46b02413",
+      "guide_sections": [
+        "4. Micrometer metrics",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "fc032a2e1e2146cd71976561938b07ba526904fbd2553f2b00992dd0fe588d4e",
+      "guide_sections": [
+        "4. Micrometer metrics",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "913f7f1f53b6777927359cfd0e024975cf1797ab5dcde05acf18fe32d5148728",
+      "guide_sections": [
+        "4. Micrometer metrics",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "e38a2811dcc103c43d287c7cc5847ebde3a419ab3026d85d39d5ed250bf5bea8",
+      "guide_sections": [
+        "4. Micrometer metrics",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "a50627496c97e6cd5bc0bd545947a78e7ed9a5bbcf614e9d525f4d5c35e15225",
+      "guide_sections": [
+        "5. JWT authentication and RBAC",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "faed00a850f932882c192e96958b13896141d42591bcc7ac130a1efcc5b5a772",
+      "guide_sections": [
+        "5. JWT authentication and RBAC",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "c6c52870f8e489c371731db7a4320b834fc481eb03e595440b77906fba975f35",
+      "guide_sections": [
+        "5. JWT authentication and RBAC",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "7212c663d484683b2c2ecb40d49c1c1871151fe0a79b14d3cd6c2cef2a30145a",
+      "guide_sections": [
+        "5. JWT authentication and RBAC",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "51bc163df2739f241f929da414fbff8d05a4cea44dc19faf1ac8c0b19257158e",
+      "guide_sections": [
+        "6. RESTEasy Reactive and Jakarta REST",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "4896ac53626cdf2d1951cae3cb37ad8b917017b2659470fb60a9cff082d902d2",
+      "guide_sections": [
+        "6. RESTEasy Reactive and Jakarta REST",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "812aba87f72d9f8879313a2dc5bb90048ce98292b178c7cab5a5440a194e184e",
+      "guide_sections": [
+        "6. RESTEasy Reactive and Jakarta REST",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "a1b2f2dc8af03efc33cd43aa1b1fc4dbd88a5e41820343e0da4d91c1c8860745",
+      "guide_sections": [
+        "6. RESTEasy Reactive and Jakarta REST",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "2f605845aa2159e7ee709833867d7b637fd819fbbeb014b7562ba170c9bbb221",
+      "guide_sections": [
+        "6. RESTEasy Reactive and Jakarta REST",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "37769278f7a34ea3805d4d86de1d5f62f20d1203a0a6de9ab3260664a8bf6414",
+      "guide_sections": [
+        "6. RESTEasy Reactive and Jakarta REST",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "df4cfa8b1266e679048a7c5432c2f06d7342a760922c975594e3db5d1e8689d7",
+      "guide_sections": [
+        "6. RESTEasy Reactive and Jakarta REST",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 8,
+      "objective_sha256": "9b9b73e28ea5cd21ef076af8d33bf2d2b48d3afdf619d0f207ded39a58f016c0",
+      "guide_sections": [
+        "6. RESTEasy Reactive and Jakarta REST",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 9,
+      "objective_sha256": "516c40323979334b7998440b23101f29052129be7a9663aa13a678a8f411de9f",
+      "guide_sections": [
+        "6. RESTEasy Reactive and Jakarta REST",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "fcfc43f31ab1e8445776f990b91921de1dc5e2b327870cb849a927f702a06599",
+      "guide_sections": [
+        "7. JPA and Panache",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "fe41befcc615f0e12efd6abdc4e7bee641dc163ed529ec86c53d2c0c53b4dd80",
+      "guide_sections": [
+        "7. JPA and Panache",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "b2129a040770452973605ea857f6bb769c0daf73324df01f8a55d6522092e93d",
+      "guide_sections": [
+        "7. JPA and Panache",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "af04b65c1292305e41ef561540b1f5145c947dc28d4a3a5ff02187dafda81a04",
+      "guide_sections": [
+        "7. JPA and Panache",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "12bf207763b45bf5c5346e78c8d18a93c97f0edda6e4f52716e6f4dfb26811df",
+      "guide_sections": [
+        "8. Reactive Messaging",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "64c241066f802255abdc4232caa3a85c21e6f3b9309402b7eb8670ef743e398c",
+      "guide_sections": [
+        "8. Reactive Messaging",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "77e17d43a83ee2fe80315222c9e892e1dc4de6aa6d6ddcb54ddaa655f2fef101",
+      "guide_sections": [
+        "8. Reactive Messaging",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "b7ad85d8042bf41331f6d98104fd440fa8dca3015ae3b5fabe0dde3d78868e66",
+      "guide_sections": [
+        "8. Reactive Messaging",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "d14c2660b29bdaf77e87d195fdc0501396e83c0a5da818f57f56dfc53204d0f8",
+      "guide_sections": [
+        "8. Reactive Messaging",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "17f2c32ddf111eda294246dbc6b0f6e613b6bba10c840b0bafa3aafe661f9149",
+      "guide_sections": [
+        "9. OpenAPI",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "ee23ad63d54821820e1cb4a737e57ea7baac1ddfe6dae0289f65ffb1ec307d16",
+      "guide_sections": [
+        "9. OpenAPI",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "836202c19a9123d7b000e5eebad3e56e511f76df409b851da03a5798ca4882ba",
+      "guide_sections": [
+        "9. OpenAPI",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "19f0203f6403c13d24f9608430638c0a324071acaffd8bc12927cf1d4d7d8d19",
+      "guide_sections": [
+        "10. REST Client Reactive",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "de3d06865c30154989e97bddeb18bb336ff4c50a5bff93fb9d51a542c72656af",
+      "guide_sections": [
+        "10. REST Client Reactive",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "658a3df774715a5567152e1ff87b2277f48a24eaaefceb03bd97dcd99a83c343",
+      "guide_sections": [
+        "10. REST Client Reactive",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "7c2c2c632f1cd387d418d390626e48006a43baa795fb8dba15b497c34a136486",
+      "guide_sections": [
+        "10. REST Client Reactive",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "9113023d45d94cb351389951b3c2e024da02d44abec2085dc1836719211c5093",
+      "guide_sections": [
+        "10. REST Client Reactive",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "2c6c53eeacbb165e0b40248e13391b23a543674878d06b418192993c2ca3f372",
+      "guide_sections": [
+        "10. REST Client Reactive",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 7,
+      "objective_sha256": "ec31cbde6dbb93e8b9a2bd7b3d8c14f9e94c54cb69b1d62a5acd866f996830fd",
+      "guide_sections": [
+        "10. REST Client Reactive",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 8,
+      "objective_sha256": "fe5c90b9b720c4705e5a4208569527571b1294460b209d9f161a9d00dda9dccb",
+      "guide_sections": [
+        "10. REST Client Reactive",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "a4f90c8c117f0c005b368392fa90a10df76a05cde6caa840ee9200699798be20",
+      "guide_sections": [
+        "11. OpenTelemetry tracing",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "ac40755350e86092add2b2c8216c1ae0f6ea09b595a9da71e975caf207ede85a",
+      "guide_sections": [
+        "11. OpenTelemetry tracing",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "ab5cdaad25b867defef2d620ab1719034753e2d8e837019befc2e18c6f4911b5",
+      "guide_sections": [
+        "11. OpenTelemetry tracing",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "d1eb107d988e588beddb7d25b543d699ef277372b5548ec0b4f5b529fd685591",
+      "guide_sections": [
+        "11. OpenTelemetry tracing",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "EX378"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "EX378",
+        "title": "Red Hat Certified Specialist in Cloud-native Development",
+        "url": "https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam",
+        "guide_path": "guides/EX378-red-hat-certified-specialist-cloud-native-development.md",
+        "snapshot_path": "data\\objective-snapshots\\ex378-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ex378-official-status.json",
+        "previous_sha256": "68272e22e491f3168f3e9c1eaf2520a0be7b132212234e221135205fc9e9ec1a",
+        "current_sha256": "32e199f02055ec50b3c82c71f5abcfa09a1f7d598c97c552656ef37623cda239",
+        "previous_status_sha256": "71fed70e434003a4bf9c2412de0047c25269ac8fa4743116a027c979e72176b8",
+        "current_status_sha256": "71fed70e434003a4bf9c2412de0047c25269ac8fa4743116a027c979e72176b8",
+        "official_status": {
+          "skills_versions": [
+            "Red Hat Certified Specialist in Cloud-native Development exam | EX378",
+            "This exam is based on Red Hat Build of Quarkus v3.8."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": false,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 24,
+    "reachable": 22,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "redhat-ex378-blueprint",
+      "url": "https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam",
+      "checked_at": "2026-09-29T02:20:42.580944+00:00",
+      "health": {
+        "id": "redhat-ex378-blueprint",
+        "url": "https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam",
+        "checked_at": "2026-09-29T02:20:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Red Hat Certified Specialist in Cloud-native Development exam | EX378",
+        "canonical_url": "https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam",
+        "duration_signals": [],
+        "signal_fingerprint": "74fb64b3ba46c95eb54de3124a1b3bea36372fa140ca9e0d04bac107672e67bd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam",
+      "sha256": "4f115f3194c867c81c31ef1bc03becc804036f364a47d33de25094acb2359f03",
+      "text_characters": 15502
+    },
+    {
+      "id": "redhat-ex378-quarkus38-docs",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_build_of_quarkus/3.8/html/getting_started_with_red_hat_build_of_quarkus/index",
+      "checked_at": "2026-09-29T02:20:42.581527+00:00",
+      "health": {
+        "id": "redhat-ex378-quarkus38-docs",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_build_of_quarkus/3.8/html/getting_started_with_red_hat_build_of_quarkus/index",
+        "checked_at": "2026-09-29T02:20:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_build_of_quarkus/3.8/html/getting_started_with_red_hat_build_of_quarkus/index",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Getting started with Red Hat build of Quarkus | Getting started with Red Hat build of Quarkus | Red Hat build of Quarkus | 3.8 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_build_of_quarkus/3.8/html/getting_started_with_red_hat_build_of_quarkus/index",
+        "duration_signals": [],
+        "signal_fingerprint": "69b016dd51ded333e54c49ac6b4e8635798ba1f1fe8efa8d8f31ce9d733ec19a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_build_of_quarkus/3.8/html/getting_started_with_red_hat_build_of_quarkus/index",
+      "sha256": "7541e7cc2e8ca17a4316b1f4c5666c449fb496965ea8e393f66f65217f67129e",
+      "text_characters": 2470
+    },
+    {
+      "id": "redhat-ex378-upstream38-guides",
+      "url": "https://quarkus.io/version/3.8/guides/",
+      "checked_at": "2026-09-29T02:20:42.581891+00:00",
+      "health": {
+        "id": "redhat-ex378-upstream38-guides",
+        "url": "https://quarkus.io/version/3.8/guides/",
+        "checked_at": "2026-09-29T02:20:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://quarkus.io/version/3.8/guides/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Guides - 3.8",
+        "canonical_url": "https://quarkus.io/guides/",
+        "duration_signals": [],
+        "signal_fingerprint": "c12f3bc1b93acbc43a3247df0015ffa170a1c54326804c4e19f24b8d5aab307b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://quarkus.io/version/3.8/guides/",
+      "sha256": "80ff7879c2b80c3620239bc224614cb56d98cf5dcb8fac5ba333b66bfafcb15c",
+      "text_characters": 32875
+    },
+    {
+      "id": "redhat-ex378-do378",
+      "url": "https://www.redhat.com/en/services/training/red-hat-cloud-native-microservices-development-quarkus-do378",
+      "checked_at": "2026-09-29T02:20:43.599565+00:00",
+      "health": {
+        "id": "redhat-ex378-do378",
+        "url": "https://www.redhat.com/en/services/training/red-hat-cloud-native-microservices-development-quarkus-do378",
+        "checked_at": "2026-09-29T02:20:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.redhat.com/en/services/training/red-hat-cloud-native-microservices-development-quarkus-do378",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Red Hat Cloud-native Microservices Development with Quarkus | DO378",
+        "canonical_url": "https://www.redhat.com/en/services/training/red-hat-cloud-native-microservices-development-quarkus-do378",
+        "duration_signals": [],
+        "signal_fingerprint": "d62ab6a4b80a6119cc2c202f85b40c5373be47483f93b2e464f41f922a5e38e8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.redhat.com/en/services/training/red-hat-cloud-native-microservices-development-quarkus-do378",
+      "sha256": "9b01a9efc42a0422e540de6d5681427dc6497fd771c42dccc9e43a5ca7057989",
+      "text_characters": 12005
+    },
+    {
+      "id": "redhat-ex378-do078",
+      "url": "https://www.redhat.com/en/services/training/do078-quarkus-technical-overview",
+      "checked_at": "2026-09-29T02:20:43.866028+00:00",
+      "health": {
+        "id": "redhat-ex378-do078",
+        "url": "https://www.redhat.com/en/services/training/do078-quarkus-technical-overview",
+        "checked_at": "2026-09-29T02:20:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.redhat.com/en/services/training/do078-quarkus-technical-overview",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Quarkus Technical Overview | DO078",
+        "canonical_url": "https://www.redhat.com/en/services/training/do078-quarkus-technical-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "15ef5de772b716eec2c8ef91c0907592debb3d398982a379645b686fafd6d1eb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.redhat.com/en/services/training/do078-quarkus-technical-overview",
+      "sha256": "601f5f538219acfcdeef00f128cb7e6fb7a4a5f27e55eb091e732b27479495bd",
+      "text_characters": 9479
+    },
+    {
+      "id": "redhat-ex378-developer-lab",
+      "url": "https://developers.redhat.com/learn/quarkus",
+      "checked_at": "2026-09-29T02:20:45.763375+00:00",
+      "health": {
+        "id": "redhat-ex378-developer-lab",
+        "url": "https://developers.redhat.com/learn/quarkus",
+        "checked_at": "2026-09-29T02:20:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developers.redhat.com/learn/quarkus",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Learn Quarkus | Red Hat Developer",
+        "canonical_url": "https://developers.redhat.com/learn/quarkus",
+        "duration_signals": [],
+        "signal_fingerprint": "a25ea81a7e8bd8ee88fbd8fe9ec076128f618e7ef80368c9d07fddb1200bfe6d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developers.redhat.com/learn/quarkus",
+      "sha256": "73a49847654840c27faeba332eb3259bf717e88cb2aff3891d4b2397b8919f93",
+      "text_characters": 2452
+    },
+    {
+      "id": "redhat-ex378-pluralsight",
+      "url": "https://www.pluralsight.com/paths/quarkus",
+      "checked_at": "2026-09-29T02:20:46.253347+00:00",
+      "health": {
+        "id": "redhat-ex378-pluralsight",
+        "url": "https://www.pluralsight.com/paths/quarkus",
+        "checked_at": "2026-09-29T02:20:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/quarkus",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Quarkus",
+        "canonical_url": "https://www.pluralsight.com/paths/quarkus",
+        "duration_signals": [
+          "10 Hours",
+          "10 minutes"
+        ],
+        "signal_fingerprint": "177c0c32a42c5a0d26fac944d94e8168a361cc3ea61f097cee15b819eed2d2ec",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/quarkus",
+      "sha256": "a22fe013f1d8c9799de543a7ef769723e2a4d2f108959c6561db796393e0b335",
+      "text_characters": 4337
+    },
+    {
+      "id": "redhat-ex378-oreilly-book",
+      "url": "https://www.oreilly.com/library/view/quarkus-in-action/9781633438958/",
+      "checked_at": "2026-09-29T02:20:46.520093+00:00",
+      "health": {
+        "id": "redhat-ex378-oreilly-book",
+        "url": "https://www.oreilly.com/library/view/quarkus-in-action/9781633438958/",
+        "checked_at": "2026-09-29T02:20:46+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/quarkus-in-action/9781633438958/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "redhat-ex378-udemy-schulte",
+      "url": "https://www.udemy.com/course/quarkus-by-example/",
+      "checked_at": "2026-09-29T02:20:46.662210+00:00",
+      "health": {
+        "id": "redhat-ex378-udemy-schulte",
+        "url": "https://www.udemy.com/course/quarkus-by-example/",
+        "checked_at": "2026-09-29T02:20:46+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/quarkus-by-example/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "redhat-exam-version-objectives",
+      "url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+      "checked_at": "2026-09-29T02:07:46.213957+00:00",
+      "health": {
+        "id": "redhat-exam-version-objectives",
+        "url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+        "checked_at": "2026-09-29T02:07:46.213957+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+        "content_type": "application/pdf",
+        "page_title": "Red Hat Certification Exam Objectives by Version",
+        "canonical_url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+        "duration_signals": [],
+        "signal_fingerprint": "9fc973d3c5345287218c795e493bd3bab411df150d103127b4df3b162e66c8e4",
+        "error": ""
+      },
+      "initial_health": {
+        "id": "redhat-exam-version-objectives",
+        "url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+        "checked_at": "2026-09-29T02:00:45+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      },
+      "http_status": 200,
+      "final_url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+      "sha256": "9fc973d3c5345287218c795e493bd3bab411df150d103127b4df3b162e66c8e4",
+      "text_characters": 2477,
+      "representation_note": "Same-day directly fetched public PDF bytes reused; EX378 section separately extracted and read."
+    },
+    {
+      "id": "redhat-quarkus38-getting-started-full",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_build_of_quarkus/3.8/html-single/getting_started_with_red_hat_build_of_quarkus/index",
+      "checked_at": "2026-09-29T02:26:29.288373+00:00",
+      "health": {
+        "id": "redhat-quarkus38-getting-started-full",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_build_of_quarkus/3.8/html-single/getting_started_with_red_hat_build_of_quarkus/index",
+        "checked_at": "2026-09-29T02:26:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_build_of_quarkus/3.8/html-single/getting_started_with_red_hat_build_of_quarkus/index",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Getting started with Red Hat build of Quarkus | Getting started with Red Hat build of Quarkus | Red Hat build of Quarkus | 3.8 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_build_of_quarkus/3.8/html-single/getting_started_with_red_hat_build_of_quarkus/index",
+        "duration_signals": [],
+        "signal_fingerprint": "f37942c0d1e0d803c3bbe597357bf09431a30c55c88975fcc00fa0911d70a6ef",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_build_of_quarkus/3.8/html-single/getting_started_with_red_hat_build_of_quarkus/index",
+      "sha256": "42ac4bcd65a57c17e649986efce5e8a43826c41abe540dbadc98b9fbe8435858",
+      "text_characters": 54034
+    },
+    {
+      "id": "quarkus38-config",
+      "url": "https://quarkus.io/version/3.8/guides/config-reference/",
+      "checked_at": "2026-09-29T02:26:29.289032+00:00",
+      "health": {
+        "id": "quarkus38-config",
+        "url": "https://quarkus.io/version/3.8/guides/config-reference/",
+        "checked_at": "2026-09-29T02:26:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://quarkus.io/version/3.8/guides/config-reference/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Configuration Reference Guide - 3.8",
+        "canonical_url": "https://quarkus.io/guides/config-reference/",
+        "duration_signals": [],
+        "signal_fingerprint": "a80a1626a54fb33b8f97be6966b47d989729db5406d0a8a40be58c0eafc9411b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://quarkus.io/version/3.8/guides/config-reference/",
+      "sha256": "96ad8cf0c57c9829c0d2e961835a2bdbe6b9d46e21ffbaf28e9708164cd94655",
+      "text_characters": 35774
+    },
+    {
+      "id": "quarkus38-health",
+      "url": "https://quarkus.io/version/3.8/guides/smallrye-health/",
+      "checked_at": "2026-09-29T02:26:29.289425+00:00",
+      "health": {
+        "id": "quarkus38-health",
+        "url": "https://quarkus.io/version/3.8/guides/smallrye-health/",
+        "checked_at": "2026-09-29T02:26:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://quarkus.io/version/3.8/guides/smallrye-health/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SmallRye Health - 3.8",
+        "canonical_url": "https://quarkus.io/guides/smallrye-health/",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "70071d20d16247c784867f5ccb8c399bbdd613865cfbace94f4a258a05c85c3e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://quarkus.io/version/3.8/guides/smallrye-health/",
+      "sha256": "3999cfbec44ef52657e7fc09ce391ddce5bdbe7a35311cb33423f68b4686b02c",
+      "text_characters": 24314
+    },
+    {
+      "id": "quarkus38-panache",
+      "url": "https://quarkus.io/version/3.8/guides/hibernate-orm-panache/",
+      "checked_at": "2026-09-29T02:26:33.627628+00:00",
+      "health": {
+        "id": "quarkus38-panache",
+        "url": "https://quarkus.io/version/3.8/guides/hibernate-orm-panache/",
+        "checked_at": "2026-09-29T02:26:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://quarkus.io/version/3.8/guides/hibernate-orm-panache/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Simplified Hibernate ORM with Panache - 3.8",
+        "canonical_url": "https://quarkus.io/guides/hibernate-orm-panache/",
+        "duration_signals": [],
+        "signal_fingerprint": "d664774506716a155c1f445c7868ae8baaba152f98966184aa7c053885f9cc60",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://quarkus.io/version/3.8/guides/hibernate-orm-panache/",
+      "sha256": "7da681b89d7d9c624493f15be5c7a051433ce3f54da6115ed41415e90347a215",
+      "text_characters": 45017
+    },
+    {
+      "id": "quarkus38-kafka",
+      "url": "https://quarkus.io/version/3.8/guides/kafka/",
+      "checked_at": "2026-09-29T02:26:33.787793+00:00",
+      "health": {
+        "id": "quarkus38-kafka",
+        "url": "https://quarkus.io/version/3.8/guides/kafka/",
+        "checked_at": "2026-09-29T02:26:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://quarkus.io/version/3.8/guides/kafka/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Apache Kafka Reference Guide - 3.8",
+        "canonical_url": "https://quarkus.io/guides/kafka/",
+        "duration_signals": [
+          "10 minute",
+          "10 minutes"
+        ],
+        "signal_fingerprint": "f37d7c646519c89b62fdd8fbd658477c2dfc044252907d7b4ba7eb58751aed5d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://quarkus.io/version/3.8/guides/kafka/",
+      "sha256": "907a5ee07b9051be7bd062d18ade70529edf5800b5444e411536da2aa30768c5",
+      "text_characters": 152156
+    },
+    {
+      "id": "quarkus38-rest",
+      "url": "https://quarkus.io/version/3.8/guides/resteasy-reactive/",
+      "checked_at": "2026-09-29T02:26:38.077001+00:00",
+      "health": {
+        "id": "quarkus38-rest",
+        "url": "https://quarkus.io/version/3.8/guides/resteasy-reactive/",
+        "checked_at": "2026-09-29T02:26:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://quarkus.io/version/3.8/guides/resteasy-reactive/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Writing REST Services with RESTEasy Reactive - 3.8",
+        "canonical_url": "https://quarkus.io/guides/resteasy-reactive/",
+        "duration_signals": [],
+        "signal_fingerprint": "4a3e0a9289e915d9007e9e1e536cf45d52cef92aaff32651866ce657181d2d0e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://quarkus.io/version/3.8/guides/resteasy-reactive/",
+      "sha256": "ec6d9feffa9f23e193b4680effc0fe2a3e8072a3b71fe21f0f04186d1545fda4",
+      "text_characters": 86104
+    },
+    {
+      "id": "quarkus-rest-dispatch-blog",
+      "url": "https://quarkus.io/blog/resteasy-reactive-smart-dispatch/",
+      "checked_at": "2026-09-29T02:26:38.840137+00:00",
+      "health": {
+        "id": "quarkus-rest-dispatch-blog",
+        "url": "https://quarkus.io/blog/resteasy-reactive-smart-dispatch/",
+        "checked_at": "2026-09-29T02:26:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://quarkus.io/blog/resteasy-reactive-smart-dispatch/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "RESTEasy Reactive - To block or not to block",
+        "canonical_url": "https://quarkus.io/blog/resteasy-reactive-smart-dispatch/",
+        "duration_signals": [],
+        "signal_fingerprint": "fefa827047f3fc6e5197aee7cbb5a924c74da8467cf73806a0f7f75177baf247",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://quarkus.io/blog/resteasy-reactive-smart-dispatch/",
+      "sha256": "4d0001c88772a870a549bf784ff30abcde5a275a7f4d34229759ca39204da56d",
+      "text_characters": 12340
+    },
+    {
+      "id": "smallrye-health-wellness",
+      "url": "https://smallrye.io/docs/smallrye-health/3.0.1/wellness.html",
+      "checked_at": "2026-09-29T02:38:13.753786+00:00",
+      "health": {
+        "id": "smallrye-health-wellness",
+        "url": "https://smallrye.io/docs/smallrye-health/3.0.1/wellness.html",
+        "checked_at": "2026-09-29T02:38:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://smallrye.io/docs/smallrye-health/3.0.1/wellness.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Wellness :: SmallRye documentation",
+        "canonical_url": "https://smallrye.io/docs/smallrye-health/3.0.1/wellness.html",
+        "duration_signals": [],
+        "signal_fingerprint": "aaa67e9697e1b3943b05317921de2fc331abb4b5fa7a8aa1d7eb1a5320a747aa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://smallrye.io/docs/smallrye-health/3.0.1/wellness.html",
+      "sha256": "0b5f2fae35f47e7af8212de593fc344f41f3154e8523ccaa8faf3abfab6d6e86",
+      "text_characters": 886
+    },
+    {
+      "id": "quarkus38-fault-tolerance",
+      "url": "https://quarkus.io/version/3.8/guides/smallrye-fault-tolerance/",
+      "checked_at": "2026-09-29T02:42:12.599741+00:00",
+      "health": {
+        "id": "quarkus38-fault-tolerance",
+        "url": "https://quarkus.io/version/3.8/guides/smallrye-fault-tolerance/",
+        "checked_at": "2026-09-29T02:42:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://quarkus.io/version/3.8/guides/smallrye-fault-tolerance/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SmallRye Fault Tolerance - 3.8",
+        "canonical_url": "https://quarkus.io/guides/smallrye-fault-tolerance/",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "482e529a151d9af2096902767fc628787bbdce6808cbf6c20c802b466f179b13",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://quarkus.io/version/3.8/guides/smallrye-fault-tolerance/",
+      "sha256": "a7070deb2b7b2b0b8f15355fc4a7a02f15c995dd8a4ea07191ed38c976541b15",
+      "text_characters": 22018
+    },
+    {
+      "id": "quarkus38-jwt",
+      "url": "https://quarkus.io/version/3.8/guides/security-jwt/",
+      "checked_at": "2026-09-29T02:42:12.600389+00:00",
+      "health": {
+        "id": "quarkus38-jwt",
+        "url": "https://quarkus.io/version/3.8/guides/security-jwt/",
+        "checked_at": "2026-09-29T02:42:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://quarkus.io/version/3.8/guides/security-jwt/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Using JWT RBAC - 3.8",
+        "canonical_url": "https://quarkus.io/guides/security-jwt/",
+        "duration_signals": [
+          "1 min",
+          "15 minutes"
+        ],
+        "signal_fingerprint": "aa42174d114f35da9dec90d0d0e3595ee90c4e2a5c0ec3ca2f4815fb0fb10191",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://quarkus.io/version/3.8/guides/security-jwt/",
+      "sha256": "006561e3c096d8991b8f25cbba466d643f13a3aa6579829c30bca9a08fc91322",
+      "text_characters": 56846
+    },
+    {
+      "id": "quarkus38-micrometer",
+      "url": "https://quarkus.io/version/3.8/guides/telemetry-micrometer/",
+      "checked_at": "2026-09-29T02:42:12.600863+00:00",
+      "health": {
+        "id": "quarkus38-micrometer",
+        "url": "https://quarkus.io/version/3.8/guides/telemetry-micrometer/",
+        "checked_at": "2026-09-29T02:42:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://quarkus.io/version/3.8/guides/telemetry-micrometer/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Micrometer Metrics - 3.8",
+        "canonical_url": "https://quarkus.io/guides/telemetry-micrometer/",
+        "duration_signals": [],
+        "signal_fingerprint": "59286337192588e806c25659559cf192e0bd47303524f2a5be713759ed69053f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://quarkus.io/version/3.8/guides/telemetry-micrometer/",
+      "sha256": "86f9172d4b2253fd0531ebd9238c52b8cbd81e4f81b0603047c2dd45af0e9c00",
+      "text_characters": 41216
+    },
+    {
+      "id": "quarkus38-openapi",
+      "url": "https://quarkus.io/version/3.8/guides/openapi-swaggerui/",
+      "checked_at": "2026-09-29T02:42:27.081449+00:00",
+      "health": {
+        "id": "quarkus38-openapi",
+        "url": "https://quarkus.io/version/3.8/guides/openapi-swaggerui/",
+        "checked_at": "2026-09-29T02:42:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://quarkus.io/version/3.8/guides/openapi-swaggerui/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Using OpenAPI and Swagger UI - 3.8",
+        "canonical_url": "https://quarkus.io/guides/openapi-swaggerui/",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "cb3421f9f14dfd7458f3228d9f86babcde48a6e7b99a9b7be4e59c1d33a5cc21",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://quarkus.io/version/3.8/guides/openapi-swaggerui/",
+      "sha256": "d46717665c94eeb0d86e6b59b839706ba8df1473702d4ed3b591b050237e3867",
+      "text_characters": 38568
+    },
+    {
+      "id": "quarkus38-rest-client",
+      "url": "https://quarkus.io/version/3.8/guides/rest-client-reactive/",
+      "checked_at": "2026-09-29T02:42:27.669461+00:00",
+      "health": {
+        "id": "quarkus38-rest-client",
+        "url": "https://quarkus.io/version/3.8/guides/rest-client-reactive/",
+        "checked_at": "2026-09-29T02:42:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://quarkus.io/version/3.8/guides/rest-client-reactive/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Using the REST Client - 3.8",
+        "canonical_url": "https://quarkus.io/guides/rest-client-reactive/",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "64c1747d9d5d483acce754e854960cf89b071f89e0d6762dd6c950d3de010c04",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://quarkus.io/version/3.8/guides/rest-client-reactive/",
+      "sha256": "abea66883ecd4731d70399f034a85406b262228a5493c7d5beaefbd029bf4c02",
+      "text_characters": 64327
+    },
+    {
+      "id": "quarkus38-opentelemetry",
+      "url": "https://quarkus.io/version/3.8/guides/opentelemetry/",
+      "checked_at": "2026-09-29T02:43:12.794112+00:00",
+      "health": {
+        "id": "quarkus38-opentelemetry",
+        "url": "https://quarkus.io/version/3.8/guides/opentelemetry/",
+        "checked_at": "2026-09-29T02:43:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://quarkus.io/version/3.8/guides/opentelemetry/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Using OpenTelemetry - 3.8",
+        "canonical_url": "https://quarkus.io/guides/opentelemetry/",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "2880e861650b5466184ac88ed303e21330b2851ee1057305ebca84f380120f91",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://quarkus.io/version/3.8/guides/opentelemetry/",
+      "sha256": "156380ec706cf7fcec661fdb85fc6461aca2d65267d1dcc71593b4048e0e5120",
+      "text_characters": 35000
+    }
+  ],
+  "added_source_ids": [
+    "redhat-quarkus38-getting-started-full",
+    "quarkus38-config",
+    "quarkus38-health",
+    "quarkus38-panache",
+    "quarkus38-kafka",
+    "quarkus38-rest",
+    "quarkus-rest-dispatch-blog",
+    "smallrye-health-wellness",
+    "quarkus38-fault-tolerance",
+    "quarkus38-jwt",
+    "quarkus38-micrometer",
+    "quarkus38-openapi",
+    "quarkus38-rest-client",
+    "quarkus38-opentelemetry"
+  ],
+  "findings": [
+    {
+      "id": "ex378-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Objective monitor omitted most Quarkus tasks",
+      "url": "https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX378"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "A substring Readiness end marker matched a health objective, truncating the accepted list before the remaining health and all later groups.",
+      "recommendation": "Use exact complete-heading matching, add a regression test, compare the full 64-task list to EX378V38K and explicitly replace the reviewed baseline. Lifecycle did not change.",
+      "disposition": "applied",
+      "source_id": "redhat-ex378-blueprint",
+      "resolution": "Use exact complete-heading matching, add a regression test, compare the full 64-task list to EX378V38K and explicitly replace the reviewed baseline. Lifecycle did not change."
+    },
+    {
+      "id": "ex378-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Configuration precedence needed concrete evidence",
+      "url": "https://quarkus.io/version/3.8/guides/config-reference/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX378"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Default source ordinals and profile resolution are distinct parts of effective configuration.",
+      "recommendation": "Add ordinal table, system/environment collision example, profile behavior and high-ordinal custom-source caveat.",
+      "disposition": "applied",
+      "source_id": "quarkus38-config",
+      "resolution": "Add ordinal table, system/environment collision example, profile behavior and high-ordinal custom-source caveat."
+    },
+    {
+      "id": "ex378-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Health qualifiers and endpoints were too abstract",
+      "url": "https://quarkus.io/version/3.8/guides/smallrye-health/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX378"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Health Startup and runtime Startup serve different purposes; readiness, liveness, groups and wellness have different consumers.",
+      "recommendation": "Add qualified import distinction and default paths with management/root-path caveats.",
+      "disposition": "applied",
+      "source_id": "quarkus38-health",
+      "resolution": "Add qualified import distinction and default paths with management/root-path caveats."
+    },
+    {
+      "id": "ex378-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Reactive signatures do not make blocking persistence safe",
+      "url": "https://quarkus.io/version/3.8/guides/resteasy-reactive/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX378"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Dispatch depends on return type, transaction and explicit blocking annotations.",
+      "recommendation": "Teach the worker/I/O boundary and add a synchronous transactional resource example.",
+      "disposition": "applied",
+      "source_id": "quarkus38-rest",
+      "resolution": "Teach the worker/I/O boundary and add a synchronous transactional resource example."
+    },
+    {
+      "id": "ex378-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Flush and durable completion needed separation",
+      "url": "https://quarkus.io/version/3.8/guides/hibernate-orm-panache/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX378"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Managed fields use dirty checking, while SQL flush can precede a later rollback.",
+      "recommendation": "Add real HTTP CRUD and explicit failed-after-flush rollback tests with committed row observations.",
+      "disposition": "applied",
+      "source_id": "quarkus38-panache",
+      "resolution": "Add real HTTP CRUD and explicit failed-after-flush rollback tests with committed row observations."
+    },
+    {
+      "id": "ex378-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Acknowledgment was conflated with committed connector progress",
+      "url": "https://quarkus.io/version/3.8/guides/kafka/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX378"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Kafka throttled commits advance contiguous acknowledged positions periodically; database effects and Kafka progress are not automatically atomic.",
+      "recommendation": "Add crash/replay, out-of-order, auto-commit and failure-strategy cases; require transactional deduplication for external effects.",
+      "disposition": "applied",
+      "source_id": "quarkus38-kafka",
+      "resolution": "Add crash/replay, out-of-order, auto-commit and failure-strategy cases; require transactional deduplication for external effects."
+    },
+    {
+      "id": "ex378-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Response exception mapping needs its own execution boundary",
+      "url": "https://quarkus.io/version/3.8/guides/rest-client-reactive/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX378"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Mappers run on an event loop by default; reading a blocking response stream needs the documented worker boundary.",
+      "recommendation": "Explain registration and Blocking mapper behavior instead of assuming async completion makes all processing safe.",
+      "disposition": "applied",
+      "source_id": "quarkus38-rest-client",
+      "resolution": "Explain registration and Blocking mapper behavior instead of assuming async completion makes all processing safe."
+    },
+    {
+      "id": "ex378-deep-8",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Original knowledge checks had no answers",
+      "url": "https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX378"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Forty questions and eight proposed labs lacked worked answers and a runnable teaching baseline.",
+      "recommendation": "Answer all 40 and add a pinned original Java fixture with measured local execution and explicit larger-lab limits.",
+      "disposition": "applied",
+      "source_id": "redhat-ex378-blueprint",
+      "resolution": "Answer all 40 and add a pinned original Java fixture with measured local execution and explicit larger-lab limits."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "quarkus-rest-dispatch-blog",
+      "authors": [
+        "Clement Escoffier"
+      ],
+      "published_on": "2021-08-25",
+      "disposition": "accepted-with-limits",
+      "value": "Explains worker versus event-loop dispatch and why async signatures cannot justify blocking I/O.",
+      "limits": "Historical article; use Jakarta imports and archived 3.8 behavior. Do not adopt old javax snippets or imply database-plus-Kafka transaction atomicity."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "service_labs_executed": 0,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "quarkus_test_cases": 18,
+      "quarkus_test_suites": [
+        {
+          "name": "study.NotesBoundaryTest",
+          "tests": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "cases": [
+            "blankInputDoesNotPersist",
+            "failureAfterFlushStillRollsBack",
+            "createThenRead"
+          ]
+        },
+        {
+          "name": "study.NotesResourceTest",
+          "tests": 15,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "cases": [
+            "invalidReplacementLeavesOriginalRow",
+            "failureAfterFlushStillRollsBack",
+            "repeatedDeleteHasSameEndState",
+            "replacementDoesNotUpsert",
+            "invalidInputDoesNotPersist(String)[1]",
+            "invalidInputDoesNotPersist(String)[2]",
+            "invalidInputDoesNotPersist(String)[3]",
+            "invalidInputDoesNotPersist(String)[4]",
+            "invalidInputDoesNotPersist(String)[5]",
+            "malformedJsonRejected",
+            "readinessIncludesOriginalCheck",
+            "missingReadIs404",
+            "replacementIsPersistedAndRepeatDoesNotCreateAnotherRow",
+            "creationHasLocationAndTestProfileThenCanBeRead",
+            "unsupportedContentTypeRejected"
+          ]
+        }
+      ],
+      "public_java_blocks_compiled": 3,
+      "public_test_cases_executed": 3,
+      "quarkus_bom": "com.redhat.quarkus.platform:quarkus-bom:3.8.6.SP3-redhat-00002",
+      "local_runtime_downloads": [
+        {
+          "name": "jdk.zip",
+          "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jdk_x64_windows_hotspot_21.0.12.1_1.zip",
+          "algorithm": "sha256",
+          "expected": "f9d6e191ab098c0d416e7d588a24420a8621cd2f4720dab2459b8b7b2d2d8b4e",
+          "version": "21.0.12+101.0.LTS",
+          "actual": "f9d6e191ab098c0d416e7d588a24420a8621cd2f4720dab2459b8b7b2d2d8b4e",
+          "bytes": 205073461
+        },
+        {
+          "name": "maven.zip",
+          "url": "https://downloads.apache.org/maven/maven-3/3.9.16/binaries/apache-maven-3.9.16-bin.zip",
+          "algorithm": "sha512",
+          "expected": "ed41650d42485cfc243fad22158caf9cbb5dc408ce7a09ddb94dd42a019de929ca43065bfa450612cf12bf78b5cafa3884b96c090de326ff590448c933454af3",
+          "version": "3.9.16",
+          "actual": "ed41650d42485cfc243fad22158caf9cbb5dc408ce7a09ddb94dd42a019de929ca43065bfa450612cf12bf78b5cafa3884b96c090de326ff590448c933454af3",
+          "bytes": 9395475
+        }
+      ],
+      "fixture_sha256": {
+        "pom.xml": "45680c3093111f6b82e0b3db33c83677dd29d92ab20cca092d605e5862f5fc61",
+        "src/main/java/study/Note.java": "611dd51d85aadc90458a12345abb4693a5e03794d959883dad32d06752b53d32",
+        "src/main/java/study/NotesResource.java": "f3209f1e09b1b2cb94c71b75c40168776d87b7b17bfcab4cec64af1b9f351b95",
+        "src/main/java/study/StudyHealth.java": "8684dfbf66216f91bc5e0d37e1cb17b3f253a37a0cb36cfd427c95ae92e2ff03",
+        "src/test/java/study/NotesBoundaryTest.java": "af90bf6e71b363103ee4a168d0fc4f840cb18a1fae6d5ce7c766acea056743ec",
+        "src/test/java/study/NotesResourceTest.java": "121f872714d8eb9ce63010d2d68298e5b815d564c35db0e5bd8bc745ddb61213",
+        "src/test/resources/application.properties": "daf2fff30d6af02a5f517fc55042ec09aa2b5855d1f9f6dfc61b8ceb0142f659"
+      },
+      "java_execution_boundary": "Actual local Quarkus HTTP/Panache/H2 tests; no remote platform or complete eight-lab execution.",
+      "first_attempt": "Maven Central artifact descriptor returned HTTP 502; retry resolved it.",
+      "fixture_repair": "Expanded private test fixture string escaping failed compilation and was fixed before successful tests.",
+      "log_sha256": "349ab150c2e0c32bddd7442c9524bd17b734a858dc58ec9cd1adfb597f99695c"
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Executed an original local Quarkus REST/Panache/H2 fixture on Windows using Temurin JDK 21 and Maven, not an assigned RHEL exam environment.",
+    "In-memory H2 test schema intentionally resets. No durable packaged restart, JWT signing/verification, Kafka broker, fault-tolerance service, remote REST client, OpenTelemetry collector or OpenShift integration lab executed. The eight integrated labs remain proposed.",
+    "OReilly and Udemy pages blocked automated access; inherited publication dates, runtime and counts were not reverified.",
+    "Public objectives/PDF/course metadata do not establish a particular candidate booking, all purchasable versions or product support for every optional practice dependency."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "learning_catalog_consistency": "passed",
+    "quarkus_test_cases": 18,
+    "quarkus_test_suites": [
+      {
+        "name": "study.NotesBoundaryTest",
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "cases": [
+          "blankInputDoesNotPersist",
+          "failureAfterFlushStillRollsBack",
+          "createThenRead"
+        ]
+      },
+      {
+        "name": "study.NotesResourceTest",
+        "tests": 15,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "cases": [
+          "invalidReplacementLeavesOriginalRow",
+          "failureAfterFlushStillRollsBack",
+          "repeatedDeleteHasSameEndState",
+          "replacementDoesNotUpsert",
+          "invalidInputDoesNotPersist(String)[1]",
+          "invalidInputDoesNotPersist(String)[2]",
+          "invalidInputDoesNotPersist(String)[3]",
+          "invalidInputDoesNotPersist(String)[4]",
+          "invalidInputDoesNotPersist(String)[5]",
+          "malformedJsonRejected",
+          "readinessIncludesOriginalCheck",
+          "missingReadIs404",
+          "replacementIsPersistedAndRepeatDoesNotCreateAnotherRow",
+          "creationHasLocationAndTestProfileThenCanBeRead",
+          "unsupportedContentTypeRejected"
+        ]
+      }
+    ],
+    "public_java_blocks_compiled": 3,
+    "public_test_cases_executed": 3,
+    "quarkus_bom": "com.redhat.quarkus.platform:quarkus-bom:3.8.6.SP3-redhat-00002",
+    "local_runtime_downloads": [
+      {
+        "name": "jdk.zip",
+        "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jdk_x64_windows_hotspot_21.0.12.1_1.zip",
+        "algorithm": "sha256",
+        "expected": "f9d6e191ab098c0d416e7d588a24420a8621cd2f4720dab2459b8b7b2d2d8b4e",
+        "version": "21.0.12+101.0.LTS",
+        "actual": "f9d6e191ab098c0d416e7d588a24420a8621cd2f4720dab2459b8b7b2d2d8b4e",
+        "bytes": 205073461
+      },
+      {
+        "name": "maven.zip",
+        "url": "https://downloads.apache.org/maven/maven-3/3.9.16/binaries/apache-maven-3.9.16-bin.zip",
+        "algorithm": "sha512",
+        "expected": "ed41650d42485cfc243fad22158caf9cbb5dc408ce7a09ddb94dd42a019de929ca43065bfa450612cf12bf78b5cafa3884b96c090de326ff590448c933454af3",
+        "version": "3.9.16",
+        "actual": "ed41650d42485cfc243fad22158caf9cbb5dc408ce7a09ddb94dd42a019de929ca43065bfa450612cf12bf78b5cafa3884b96c090de326ff590448c933454af3",
+        "bytes": 9395475
+      }
+    ],
+    "fixture_sha256": {
+      "pom.xml": "45680c3093111f6b82e0b3db33c83677dd29d92ab20cca092d605e5862f5fc61",
+      "src/main/java/study/Note.java": "611dd51d85aadc90458a12345abb4693a5e03794d959883dad32d06752b53d32",
+      "src/main/java/study/NotesResource.java": "f3209f1e09b1b2cb94c71b75c40168776d87b7b17bfcab4cec64af1b9f351b95",
+      "src/main/java/study/StudyHealth.java": "8684dfbf66216f91bc5e0d37e1cb17b3f253a37a0cb36cfd427c95ae92e2ff03",
+      "src/test/java/study/NotesBoundaryTest.java": "af90bf6e71b363103ee4a168d0fc4f840cb18a1fae6d5ce7c766acea056743ec",
+      "src/test/java/study/NotesResourceTest.java": "121f872714d8eb9ce63010d2d68298e5b815d564c35db0e5bd8bc745ddb61213",
+      "src/test/resources/application.properties": "daf2fff30d6af02a5f517fc55042ec09aa2b5855d1f9f6dfc61b8ceb0142f659"
+    },
+    "java_execution_boundary": "Actual local Quarkus HTTP/Panache/H2 tests; no remote platform or complete eight-lab execution.",
+    "first_attempt": "Maven Central artifact descriptor returned HTTP 502; retry resolved it.",
+    "fixture_repair": "Expanded private test fixture string escaping failed compilation and was fixed before successful tests.",
+    "log_sha256": "349ab150c2e0c32bddd7442c9524bd17b734a858dc58ec9cd1adfb597f99695c"
+  },
+  "archived_prior_objective_snapshot": {
+    "path": "data/objective-snapshots/ex378-2026-09-01-official-objectives.txt",
+    "sha256": "68272e22e491f3168f3e9c1eaf2520a0be7b132212234e221135205fc9e9ec1a",
+    "historical_audit_paths_updated": 1,
+    "note": "Byte-identical historical truncated snapshot. Old review and audit hashes, dates and conclusions preserved; only their source path now points to the archive."
+  },
+  "objective_observation_before_parser_fix": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "EX378",
+        "title": "Red Hat Certified Specialist in Cloud-native Development",
+        "url": "https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam",
+        "guide_path": "guides/EX378-red-hat-certified-specialist-cloud-native-development.md",
+        "snapshot_path": "data\\objective-snapshots\\ex378-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ex378-official-status.json",
+        "previous_sha256": "68272e22e491f3168f3e9c1eaf2520a0be7b132212234e221135205fc9e9ec1a",
+        "current_sha256": "68272e22e491f3168f3e9c1eaf2520a0be7b132212234e221135205fc9e9ec1a",
+        "previous_status_sha256": "71fed70e434003a4bf9c2412de0047c25269ac8fa4743116a027c979e72176b8",
+        "current_status_sha256": "71fed70e434003a4bf9c2412de0047c25269ac8fa4743116a027c979e72176b8",
+        "official_status": {
+          "skills_versions": [
+            "Red Hat Certified Specialist in Cloud-native Development exam | EX378",
+            "This exam is based on Red Hat Build of Quarkus v3.8."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "objective_baseline_acceptance": {
+    "changed": [
+      "EX378"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "EX378",
+        "title": "Red Hat Certified Specialist in Cloud-native Development",
+        "url": "https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam",
+        "guide_path": "guides/EX378-red-hat-certified-specialist-cloud-native-development.md",
+        "snapshot_path": "data\\objective-snapshots\\ex378-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ex378-official-status.json",
+        "previous_sha256": "68272e22e491f3168f3e9c1eaf2520a0be7b132212234e221135205fc9e9ec1a",
+        "current_sha256": "32e199f02055ec50b3c82c71f5abcfa09a1f7d598c97c552656ef37623cda239",
+        "previous_status_sha256": "71fed70e434003a4bf9c2412de0047c25269ac8fa4743116a027c979e72176b8",
+        "current_status_sha256": "71fed70e434003a4bf9c2412de0047c25269ac8fa4743116a027c979e72176b8",
+        "official_status": {
+          "skills_versions": [
+            "Red Hat Certified Specialist in Cloud-native Development exam | EX378",
+            "This exam is based on Red Hat Build of Quarkus v3.8."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": false,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "written": true
+      }
+    ]
+  },
+  "red_hat_adapter_regression_comparison": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "EX200",
+        "title": "Red Hat Certified System Administrator",
+        "url": "https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam",
+        "guide_path": "guides/EX200-red-hat-certified-system-administrator.md",
+        "snapshot_path": "data\\objective-snapshots\\ex200-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ex200-official-status.json",
+        "previous_sha256": "69fa2bc5a08fc6c1cf183b89d6123a1564edab0d8e0e3ca12f80bc70b45916d4",
+        "current_sha256": "69fa2bc5a08fc6c1cf183b89d6123a1564edab0d8e0e3ca12f80bc70b45916d4",
+        "previous_status_sha256": "5d5bdfbf2637c599803523e9d6121fd789356141337a5cd65253c10e1dbac65d",
+        "current_status_sha256": "5d5bdfbf2637c599803523e9d6121fd789356141337a5cd65253c10e1dbac65d",
+        "official_status": {
+          "skills_versions": [
+            "Red Hat Certified System Administrator exam | EX200",
+            "This exam is based on Red Hat® Enterprise Linux® 10."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      },
+      {
+        "code": "EX280",
+        "title": "Red Hat Certified System Administrator in OpenShift",
+        "url": "https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam",
+        "guide_path": "guides/EX280-red-hat-certified-system-administrator-openshift.md",
+        "snapshot_path": "data\\objective-snapshots\\ex280-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ex280-official-status.json",
+        "previous_sha256": "7f06f83b3e8c273d4c24065c54ad45411416e25aa528a8651e7e74016c724040",
+        "current_sha256": "7f06f83b3e8c273d4c24065c54ad45411416e25aa528a8651e7e74016c724040",
+        "previous_status_sha256": "a5dd32ec282ff1b9af041d795ead3427dd03540de148ad07fc111216d2476f9d",
+        "current_status_sha256": "a5dd32ec282ff1b9af041d795ead3427dd03540de148ad07fc111216d2476f9d",
+        "official_status": {
+          "skills_versions": [
+            "Red Hat Certified System Administrator in OpenShift exam | EX280",
+            "This exam is based on Red Hat® OpenShift® Container Platform 4.22."
+          ],
+          "upcoming_announcements": [
+            "Multiple versions of this exam are in use. Please navigate directly to the Learning Management System (LMS) to view and complete your designated exam version at Red Hat Certification Exam Objectives by Version."
+          ]
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      },
+      {
+        "code": "EX294",
+        "title": "Red Hat Certified Advanced System Administrator in Ansible",
+        "url": "https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux",
+        "guide_path": "guides/EX294-red-hat-certified-advanced-system-administrator-ansible.md",
+        "snapshot_path": "data\\objective-snapshots\\ex294-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ex294-official-status.json",
+        "previous_sha256": "e95d8682f731a4bd566b4bac9f0695ee8c46977a595f1eb99402a041cafd0376",
+        "current_sha256": "e95d8682f731a4bd566b4bac9f0695ee8c46977a595f1eb99402a041cafd0376",
+        "previous_status_sha256": "1985bea2dc426fd23196226ebf9cabddd07e3bbce9d8ce99a1e6cef8ee04823a",
+        "current_status_sha256": "1985bea2dc426fd23196226ebf9cabddd07e3bbce9d8ce99a1e6cef8ee04823a",
+        "official_status": {
+          "skills_versions": [
+            "Red Hat Certified Advanced System Administrator in Ansible Exam | EX294",
+            "Objectives listed for this exam are based on the most recent Red Hat product version available. Click “Get started” to view all versions of this exam available for purchase."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      },
+      {
+        "code": "EX267",
+        "title": "Red Hat Certified Developer in AI",
+        "url": "https://www.redhat.com/en/services/training/ex267-red-hat-certified-developer-in-ai",
+        "guide_path": "guides/EX267-red-hat-certified-developer-in-ai.md",
+        "snapshot_path": "data\\objective-snapshots\\ex267-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ex267-official-status.json",
+        "previous_sha256": "b741b76b2ba6259872d38449c397048d494185090c80d53064aa5d9ab32208fe",
+        "current_sha256": "b741b76b2ba6259872d38449c397048d494185090c80d53064aa5d9ab32208fe",
+        "previous_status_sha256": "4d9f046e726cb3e88fa046796eacaba9d4001e0ea14c9db7703ea0c40b9f5468",
+        "current_status_sha256": "4d9f046e726cb3e88fa046796eacaba9d4001e0ea14c9db7703ea0c40b9f5468",
+        "official_status": {
+          "skills_versions": [
+            "Red Hat Certified Developer in AI | EX267",
+            "This exam is based on Red Hat OpenShift AI version 3.3 and Red Hat OpenShift Container Platform version 4.20."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "version_specific_pdf_review": {
+    "url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+    "raw_sha256": "9fc973d3c5345287218c795e493bd3bab411df150d103127b4df3b162e66c8e4",
+    "versions": [
+      "EX378K",
+      "EX378V17K",
+      "EX378V213K",
+      "EX378V38K"
+    ],
+    "text_sha256": "169c9c353dfb1e4ab976fb85184ea1f07e6c22badea099c5041685465c4a2e8e",
+    "ex378_v38k_task_count": 64,
+    "group_task_counts": [
+      5,
+      8,
+      8,
+      6,
+      4,
+      9,
+      4,
+      5,
+      3,
+      8,
+      4
+    ],
+    "comparison": "Ordered complete group/task text agrees after case, whitespace, punctuation and ligature normalization."
+  },
+  "objective_baseline_change_reason": "Repair a substring end-marker extraction bug after independently reviewing the complete source; no new vendor scope announcement inferred."
+}
