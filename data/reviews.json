@@ -8179,26 +8179,86 @@
       "notes": "Preserved six archived public abilities and frozen retired baseline; fully read actual two-page transition FAQ andfour-page trainingdatasheet. Updated currentPlatformcourse4h/30dayaccess,LegacyNotebookmigration,standardCHECKconstraints,COPYreplay/null handling,roleauthorization,cost/sharing andCortexaccess/bundle boundaries. Added45 executedlocalCSV/JSON/SQLitetransaction checks,42answers andeightconcretelabplans. NoSnowflakeaccount orcloudlabexecution;independenthumanreviewpending. See docs/research/2026-09-29-sol-c01-deep-review.md"
     },
     {
-      "id":"cof-c03-2026-09-02-source-validation",
-      "exam_code":"COF-C03",
-      "guide_path":"guides/COF-C03-snowpro-core.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-02",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/COF-C03-official-objectives.txt",
-      "blueprint_snapshot_sha256":"fc6ba90a44c29eb3380a41bd9609357c29247bbe81be8003dcbe89ad71a8063c",
-      "objective_coverage":[
-        {"objective_group":"Use the Snowflake AI Data Cloud architecture","guide_sections":["Section 1","All scenarios","Labs 1 and 8"]},
-        {"objective_group":"Manage Snowflake accounts and virtual warehouses","guide_sections":["Section 2","Scenarios 1–2","Labs 1–3 and 8"]},
-        {"objective_group":"Perform data loading, unloading, and transformation","guide_sections":["Section 3","Scenario 1","Labs 4 and 8"]},
-        {"objective_group":"Use structured, semi-structured, and unstructured data","guide_sections":["Section 4","Scenario 1","Labs 4–5 and 8"]},
-        {"objective_group":"Monitor and optimize performance","guide_sections":["Section 5","Scenario 2","Labs 3, 6 and 8"]},
-        {"objective_group":"Enable data collaboration and protection","guide_sections":["Section 6","Scenario 3","Labs 2 and 7–8"]},
-        {"objective_group":"Establish Snowflake connectivity","guide_sections":["Section 7","Scenarios 1 and 3","Labs 4 and 8"]}
+      "id": "cof-c03-2026-09-02-source-validation",
+      "exam_code": "COF-C03",
+      "guide_path": "guides/COF-C03-snowpro-core.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/COF-C03-official-objectives.txt",
+      "blueprint_snapshot_sha256": "fc6ba90a44c29eb3380a41bd9609357c29247bbe81be8003dcbe89ad71a8063c",
+      "objective_coverage": [
+        {
+          "objective_group": "Use the Snowflake AI Data Cloud architecture",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Manage Snowflake accounts and virtual warehouses",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1–2",
+            "Labs 1–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Perform data loading, unloading, and transformation",
+          "guide_sections": [
+            "Section 3",
+            "Scenario 1",
+            "Labs 4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Use structured, semi-structured, and unstructured data",
+          "guide_sections": [
+            "Section 4",
+            "Scenario 1",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Monitor and optimize performance",
+          "guide_sections": [
+            "Section 5",
+            "Scenario 2",
+            "Labs 3, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Enable data collaboration and protection",
+          "guide_sections": [
+            "Section 6",
+            "Scenario 3",
+            "Labs 2 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Establish Snowflake connectivity",
+          "guide_sections": [
+            "Section 7",
+            "Scenarios 1 and 3",
+            "Labs 4 and 8"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":10,"reachable":8,"access_blocked":2,"missing_or_error":0},
-      "notes":"All seven live public abilities are mapped through current Snowflake documentation and hands-on evidence. The form-delivered detailed guide is explicitly required for candidate reconciliation; inaccessible subobjectives/weights are not reconstructed. Three scenarios, eight authorized labs and 40 checks are included. Eight URLs are reachable; O'Reilly on-demand and Udemy are automation-blocked; none are broken. No recalled item, dump or copied course content is used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 31,
+        "reachable": 29,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Mapped seven unchanged public abilities with explicit detailed-guide request boundary; fully read actual four-page prep datasheet (five areas,19 teaching bullets). Updated phased authentication,legacy notebooks,MERGE/stream/target-lag semantics,null/constraints,role/cost/share and fair performance evidence. Added24 executed SQLite/interval checks,48 original answers,eight proposed account labs and corrected public training durations/access limits. No Snowflake account execution;human review pending. See docs/research/2026-09-29-cof-c03-deep-review.md"
     },
     {
       "id":"dea-c02-2026-09-02-source-validation",

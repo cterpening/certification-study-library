@@ -3,6 +3,146 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "snowflake-persisted-results",
+      "title": "Persisted query results and reuse conditions",
+      "url": "https://docs.snowflake.com/en/user-guide/querying-persisted-results",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "COF-C03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 COF-C03 deep review: Main overview and complete retrieval-optimization conditions read, including24h/31day retention,exact query,privileges,data/config/micro-partitions and no-guarantee caveat. Post-processing examples also read but not newly taught as execution evidence. No cached query run. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-streams-intro",
+      "title": "Streams offsets and transactional consumption",
+      "url": "https://docs.snowflake.com/en/user-guide/streams-intro",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "COF-C03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 COF-C03 deep review: Offset storage and full transaction/consumption/repeatable-read sections through transaction-start explanation read. Selected staleness search evidence only;not whole stream-type/catalog page. Filtered committed consumption advances all changes;SELECT/rollback do not. No stream created. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-dynamic-target-lag",
+      "title": "Dynamic table target lag",
+      "url": "https://docs.snowflake.com/en/user-guide/dynamic-tables-target-lag",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "COF-C03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 COF-C03 deep review: Main target-lag,best-effort,min60s,root-relative timing,DOWNSTREAM/soft-dependency and two-table example sections read. Also manual-refresh/end sections. Intro controls interpretation;did not repeat table shorthand suggesting exact ten-minute scheduling. No dynamic table execution. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-query-insights",
+      "title": "Query Insights and performance symptoms",
+      "url": "https://docs.snowflake.com/en/user-guide/query-insights",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "COF-C03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 COF-C03 deep review: Selected current insight-code descriptions and primary search excerpts read:exploding/no-condition joins,unnecessary aggregation/UNION,remote spill,overload. Not full UI/permissions/coverage audit or diagnosis of a real query. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-warehouse-load",
+      "title": "Monitor warehouse load",
+      "url": "https://docs.snowflake.com/en/user-guide/warehouses-load-monitoring",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "COF-C03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 COF-C03 deep review: Main chart definition/status categories,load arithmetic,slow-query/peak/excessive-credit guidance read. Time-weighted concurrency,not CPU. Synthetic interval worksheet only;not actual account usage. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-window-frames",
+      "title": "Window functions and explicit frames",
+      "url": "https://docs.snowflake.com/en/user-guide/functions-window-using",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "COF-C03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 COF-C03 deep review: Selected ordering/implicit-versus-explicit frame and complete ROWS/RANGE definition sections read. Unique tie-breaker and separate output order explained. Not all function/frame examples or Snowflake execution;actual local SQLite example labeled. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-merge-duplicates",
+      "title": "MERGE duplicate source behavior",
+      "url": "https://docs.snowflake.com/en/sql-reference/sql/merge",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "COF-C03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 COF-C03 deep review: Syntax,usage and complete duplicate-match UPDATE/DELETE/INSERT behavior sections read. Default nondeterministic error and duplicate unmatched insertion distinguished. Not entire example catalog;no Snowflake MERGE execution. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-python-connector-examples",
+      "title": "Python connector binding and transaction examples",
+      "url": "https://docs.snowflake.com/en/developer-guide/python-connector/python-connector-example",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "COF-C03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 COF-C03 deep review: Selected parameter binding/client-server styles and connection context-manager/autocommit transaction sections read, plus selected async-close behavior paragraphs. Not complete connector reference;no connector installed or connected. Workbook uses SQLite placeholders. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-strong-auth-rollout",
+      "title": "Strong authentication phased enforcement",
+      "url": "https://docs.snowflake.com/en/user-guide/security-mfa-rollout",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "supported_exams": [
+        "COF-C03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 COF-C03 deep review: Entire main user-type/exception/three-phase notice read. Phase3August-October2026 rolling account notification;human password MFA and SERVICE/no-password,reader/trial/Postgres excluded. No account enforcement assumed or identity changes performed. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-core-prep-datasheet",
+      "title": "Core certification prep course datasheet 25L19",
+      "url": "https://www.snowflake.com/wp-content/uploads/2022/03/OD-Cert_Prep-Datasheet.pdf",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "supported_exams": [
+        "COF-C03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 COF-C03 deep review: Actual4pagePDF25L19/copyright2025 fully read with binary SHA/page receipt. Five training areas and19 teaching bullets (6,3,3,4,3),experience recommendation and preparation-dependent duration. Supporting course outline,not recovered detailed exam guide or weights;no paid clips/questions. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "snowflake-load-metadata",
       "title": "Bulk loading metadata and older files",
       "url": "https://docs.snowflake.com/en/user-guide/data-load-considerations-load",
@@ -11,10 +151,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "SOL-C01"
+        "SOL-C01",
+        "COF-C03"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SOL-C01 deep review: Loadselection/concurrency andcompleteolderfiles/loadmetadata/workarounds/examples sections read,plusnull/CSVparagraphs.64dayretention/unknownskip/FORCE/LOAD_UNCERTAIN_FILES distinguished. No indefiniteeventdeduplication guarantee; noSnowflakeCOPYrun. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SOL-C01 deep review: Loadselection/concurrency andcompleteolderfiles/loadmetadata/workarounds/examples sections read,plusnull/CSVparagraphs.64dayretention/unknownskip/FORCE/LOAD_UNCERTAIN_FILES distinguished. No indefiniteeventdeduplication guarantee; noSnowflakeCOPYrun. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Selected bulk-load selection and complete older-file/load-metadata sections read in same-session Snowflake work.64day metadata, uncertain old files/default skip, FORCE versus LOAD_UNCERTAIN_FILES. No COPY execution or permanent business-dedup guarantee. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-copy-into",
@@ -67,10 +208,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "SOL-C01"
+        "SOL-C01",
+        "COF-C03"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SOL-C01 deep review: Selectedsupportedtypes andcomplete enforcementmatrix/tableconstraintnotes read. CurrentstandardNOTNULL/CHECK versusunenforcedPK/FK/UNIQUE;hybridrequiredPK. Not allsyntax/examples orallconstraintssemantics. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SOL-C01 deep review: Selectedsupportedtypes andcomplete enforcementmatrix/tableconstraintnotes read. CurrentstandardNOTNULL/CHECK versusunenforcedPK/FK/UNIQUE;hybridrequiredPK. Not allsyntax/examples orallconstraintssemantics. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Current supported-type and enforcement matrix sections read in same-session work:standard NOTNULL/CHECK enforced, primary/unique/foreign unenforced;hybrid required primary key. Not all syntax/constraint semantics. SQLite exercise enforcement explicitly separate. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-check-ga",
@@ -95,10 +237,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "SOL-C01"
+        "SOL-C01",
+        "COF-C03"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SOL-C01 deep review: Selectedsessiontemporary/namingconflict/transient andprimarywebcomparison/retentiontable read. Fullyqualifiedsame-name shadowing,sessionpurge,noFail-safe fortransient/temporary. Not allprocedure-scopedtemporary APIs/cloneedgecases. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SOL-C01 deep review: Selectedsessiontemporary/namingconflict/transient andprimarywebcomparison/retentiontable read. Fullyqualifiedsame-name shadowing,sessionpurge,noFail-safe fortransient/temporary. Not allprocedure-scopedtemporary APIs/cloneedgecases. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Selected temporary/transient lifecycle, naming conflict and retention comparison sections read. Temporary fully-qualified name can shadow permanent in session;neither temporary nor transient has Fail-safe. Not every procedure-scoped table or clone edge case. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-resource-monitors",
@@ -109,10 +252,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "SOL-C01"
+        "SOL-C01",
+        "COF-C03"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SOL-C01 deep review: Introductorycoverage andselectedcloudservices/precisequotacaveats read. Warehousemonitor doesnotcoverAI/serverless;canovershootwhile stopping. No monitor/budgetconfiguration or notification. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SOL-C01 deep review: Introductorycoverage andselectedcloudservices/precisequotacaveats read. Warehousemonitor doesnotcoverAI/serverless;canovershootwhile stopping. No monitor/budgetconfiguration or notification. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Introductory coverage and quota/suspension caveats read in same-session work. Warehouse coverage excludes serverless/AI and stopping can overshoot;no account monitor or notification changed. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-warehouse-considerations",
@@ -123,10 +267,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "SOL-C01"
+        "SOL-C01",
+        "COF-C03"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SOL-C01 deep review: Selectedstandardwarehouseautosuspend/resume/60secondminimum,scaleup/out andresizecaveats read. No pricingcalc or universalAdaptiveWarehouseclaim. Defaultnotebookwarehousepreview notadopted asWorkspacesruntime. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SOL-C01 deep review: Selectedstandardwarehouseautosuspend/resume/60secondminimum,scaleup/out andresizecaveats read. No pricingcalc or universalAdaptiveWarehouseclaim. Defaultnotebookwarehousepreview notadopted asWorkspacesruntime. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Selected standard-warehouse suspend/resume60s minimum,scale-up/out and resize caveats read. Not universalized to newer Adaptive Warehouses;no actual credit/performance measurement. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-model-rbac-transition",
@@ -207,10 +352,11 @@
       "source_type": "release-notes",
       "access_model": "public",
       "supported_exams": [
-        "SOL-C01"
+        "SOL-C01",
+        "COF-C03"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SOL-C01 deep review: Completeprimarymainnotice read:September1newlegacycreationdisabled,existingrun/edituntilplannedNovemberdisable,view/export/migrationretained. No migrationorlegacycommandexecution. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SOL-C01 deep review: Completeprimarymainnotice read:September1newlegacycreationdisabled,existingrun/edituntilplannedNovemberdisable,view/export/migrationretained. No migrationorlegacycommandexecution. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Entire main notice read, including timeline:September1 creation disabled,November planned execution/editing disable,view/export/migration retained. No actual migration or legacy command execution. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-workspace-notebook-migration",
@@ -235,10 +381,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "SOL-C01"
+        "SOL-C01",
+        "COF-C03"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SOL-C01 deep review: Primaryfunctiondescription/returnsemantics andselectedexample read. JSONnull distinctfromSQLNULL;missingpathSQLNULL,IS_NULL_VALUEthreewayresult. No SQLexecution;Pythonexerciseonlymissing/None/valueclassification. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SOL-C01 deep review: Primaryfunctiondescription/returnsemantics andselectedexample read. JSONnull distinctfromSQLNULL;missingpathSQLNULL,IS_NULL_VALUEthreewayresult. No SQLexecution;Pythonexerciseonlymissing/None/valueclassification. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Function description, return semantics and selected examples read in same-session work. JSONnull versus SQLNULL/missing path;not executed Snowflake SQL. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-try-parse-json",
@@ -249,10 +396,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "SOL-C01"
+        "SOL-C01",
+        "COF-C03"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SOL-C01 deep review: Primaryfunctionsyntax/arguments/returnsemantics andexample read:malformedinputorSQLNULLreturnsSQLNULL,defaultduplicatekeystrictness. No SQLexecution andPythondecoder notpresentedasSnowflakeparser. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SOL-C01 deep review: Primaryfunctionsyntax/arguments/returnsemantics andexample read:malformedinputorSQLNULLreturnsSQLNULL,defaultduplicatekeystrictness. No SQLexecution andPythondecoder notpresentedasSnowflakeparser. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Function arguments/returns and selected examples read in same-session work. Malformed input or SQLNULL can return SQLNULL;preserve parse evidence. No Snowflake parser execution. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-platform-on-demand",
@@ -46530,7 +46678,7 @@
         "SOL-C01",
         "COF-C03"
       ],
-      "notes": "Current first-party architecture, object/data, compute, loading, AI, application, sharing and connection map used for the retired Platform reference and active Core guide. September 29 SOL-C01 deep review: Selected first architecture/storage/compute/cloud-services and ingestion/analytics sections read. StandardSnowflaketables versusIceberg/hybrid andindependentwarehouse compute. Not entirecurrentfeaturecatalog; no localSnowflakeinstallation or account. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution."
+      "notes": "Current first-party architecture, object/data, compute, loading, AI, application, sharing and connection map used for the retired Platform reference and active Core guide. September 29 SOL-C01 deep review: Selected first architecture/storage/compute/cloud-services and ingestion/analytics sections read. StandardSnowflaketables versusIceberg/hybrid andindependentwarehouse compute. Not entirecurrentfeaturecatalog; no localSnowflakeinstallation or account. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Selected architecture/storage/compute/cloud-services sections read in this same-session Snowflake review. Used for layer and object reasoning, not a complete feature inventory or actual Snowflake execution. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-access-control",
@@ -46542,9 +46690,10 @@
       "access_model": "public",
       "last_checked": "2026-09-29",
       "supported_exams": [
-        "SOL-C01"
+        "SOL-C01",
+        "COF-C03"
       ],
-      "notes": "Current first-party DAC/RBAC/UBAC, securable-object, privilege, ownership and role-hierarchy reference. September 29 SOL-C01 deep review: Selected DAC/RBAC/UBAC,roles/inheritance/ownership,managedaccess,existing/futuregrants andcompleteprimary/secondaryauthorization section read. Database roles notactivated directly;CREATEprimaryonly. Did not adopt unrelated erroneous-looking warehouse/schema example orreviewallnewaccessrequest UI. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution."
+      "notes": "Current first-party DAC/RBAC/UBAC, securable-object, privilege, ownership and role-hierarchy reference. September 29 SOL-C01 deep review: Selected DAC/RBAC/UBAC,roles/inheritance/ownership,managedaccess,existing/futuregrants andcompleteprimary/secondaryauthorization section read. Database roles notactivated directly;CREATEprimaryonly. Did not adopt unrelated erroneous-looking warehouse/schema example orreviewallnewaccessrequest UI. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Selected roles/inheritance/ownership,managed access/future grants and full primary/secondary authorization sections read in same-session work. CREATE uses primary role;database roles not activated directly. No account/grant inspection or all linked syntax review. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-data-loading",
@@ -46556,9 +46705,10 @@
       "access_model": "public",
       "last_checked": "2026-09-29",
       "supported_exams": [
-        "SOL-C01"
+        "SOL-C01",
+        "COF-C03"
       ],
-      "notes": "Current first-party bulk and continuous data-loading reference. September 29 SOL-C01 deep review: Mainstage/internal/external andbulk/Snowpipe/Streamingsections read (lines102–155). Not laterDMLerrorlogging/fullconnectorcatalog; no ingestionpricinggeneralizations or executedCOPY. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution."
+      "notes": "Current first-party bulk and continuous data-loading reference. September 29 SOL-C01 deep review: Mainstage/internal/external andbulk/Snowpipe/Streamingsections read (lines102–155). Not laterDMLerrorlogging/fullconnectorcatalog; no ingestionpricinggeneralizations or executedCOPY. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Selected main internal/external stage and bulk/Snowpipe/Streaming overview read in same-session work. Not later full connector catalog or DML-error feature list;no live ingestion. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-data-sharing",
@@ -46570,9 +46720,10 @@
       "access_model": "public",
       "last_checked": "2026-09-29",
       "supported_exams": [
-        "SOL-C01"
+        "SOL-C01",
+        "COF-C03"
       ],
-      "notes": "Current first-party provider/consumer secure sharing model and boundaries. September 29 SOL-C01 deep review: MainAbout/How/Whatshare/options/provider/consumer/readeraccountsections read. Directshareinregion,read-onlyimports,no consumerstoragecopy,consumercompute andprovider-ownedreader boundary. Not full linkedcross-cloudfulfillment/price documentation. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution."
+      "notes": "Current first-party provider/consumer secure sharing model and boundaries. September 29 SOL-C01 deep review: MainAbout/How/Whatshare/options/provider/consumer/readeraccountsections read. Directshareinregion,read-onlyimports,no consumerstoragecopy,consumercompute andprovider-ownedreader boundary. Not full linkedcross-cloudfulfillment/price documentation. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Main sharing mechanisms,provider/consumer and reader-account sections read in same-session work. Same-region direct-share/read-only/no consumer copy;cross-region separate. No full linked fulfillment/pricing review or actual share. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-cortex-ai-sql",
@@ -46604,31 +46755,134 @@
       "notes": "3h19m course updated April 2026 but tied to a retired exam; listed only for selectively reusable hands-on fundamentals, not as a reason to prepare for an unavailable attempt. September 29 SOL-C01 deep review: CurrentHTTP403. Earlier3h19/April2026metadata explicitlyunverified; no currentoutline,paidlessons orpracticequestions accessed. Retiredexam not marketed as schedulable. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"snowflake-cof-c03-certification","title":"SnowPro Core Certification (COF-C03)","url":"https://learn.snowflake.com/en/certifications/snowpro-core-c03/","publisher":"Snowflake","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["COF-C03"],"notes":"Canonical current exam identity, seven public abilities, six-month candidate recommendation and detailed-guide request; monitored by the Snowflake adapter."
+      "id": "snowflake-cof-c03-certification",
+      "title": "SnowPro Core Certification (COF-C03)",
+      "url": "https://learn.snowflake.com/en/certifications/snowpro-core-c03/",
+      "publisher": "Snowflake",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "COF-C03"
+      ],
+      "notes": "Canonical current exam identity, seven public abilities, six-month candidate recommendation and detailed-guide request; monitored by the Snowflake adapter. September 29 COF-C03 deep review: Entire public main content read. Seven abilities, COF-C03 identity, six-month experience recommendation and USD175. Inspected guide-request markup: embedded mktoForm_45775, no direct PDF link. No form submission; targeted public searches did not recover a detailed current guide. Objective hash unchanged; missing lifecycle baseline initialized explicitly. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"snowflake-snowpro-policies","title":"SnowPro Program Policies","url":"https://learn.snowflake.com/en/pages/snowpro-policies/","publisher":"Snowflake","authority_class":1,"source_type":"program-policy","access_model":"public","last_checked":"2026-09-02","supported_exams":["COF-C03","DEA-C02","GES-C02"],"notes":"First-party validity, continuing education, scheduling, scoring, accommodations, retake and beta policies; volatile and must be rechecked before purchase."
+      "id": "snowflake-snowpro-policies",
+      "title": "SnowPro Program Policies",
+      "url": "https://learn.snowflake.com/en/pages/snowpro-policies/",
+      "publisher": "Snowflake",
+      "authority_class": 1,
+      "source_type": "program-policy",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "COF-C03",
+        "DEA-C02",
+        "GES-C02"
+      ],
+      "notes": "First-party validity, continuing education, scheduling, scoring, accommodations, retake and beta policies; volatile and must be rechecked before purchase. September 29 COF-C03 deep review: Main policies including renewal/expiry, retakes, scheduling/accommodation and scaled-scoring sections read. Two years; qualifying renewal before expiry; full retake within six months; seven-day failure wait; four retakes in twelve months; scaled750/1000 not75 percent. No booking or eligibility determination. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"snowflake-practice-exams","title":"SnowPro Practice Exams","url":"https://learn.snowflake.com/en/certifications/snowpro-practice-exams/","publisher":"Snowflake","authority_class":1,"source_type":"official-practice","access_model":"paid","last_checked":"2026-09-02","supported_exams":["COF-C03","DEA-C02","GES-C02"],"notes":"Official Core, Data Engineer and Gen AI practice availability plus same-specification/domain-weighting statement; purchase provides a single 24-hour-access attempt under checked policy."
+      "id": "snowflake-practice-exams",
+      "title": "SnowPro Practice Exams",
+      "url": "https://learn.snowflake.com/en/certifications/snowpro-practice-exams/",
+      "publisher": "Snowflake",
+      "authority_class": 1,
+      "source_type": "official-practice",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "COF-C03",
+        "DEA-C02",
+        "GES-C02"
+      ],
+      "notes": "Official Core, Data Engineer and Gen AI practice availability plus same-specification/domain-weighting statement; purchase provides a single 24-hour-access attempt under checked policy. September 29 COF-C03 deep review: Entire public main page read.24h purchase-to-completion, one attempt, missed-window fee and48h re-registration boundary. USD175 FAQ concerns the real Core exam. No practice question/assessment content accessed; practice language list not used as real-exam availability proof. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"snowflake-core-prep-course","title":"SnowPro Core Certification Prep Course","url":"https://learn.snowflake.com/en/courses/OD-COREPREP/","publisher":"Snowflake University","authority_class":1,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["COF-C03"],"notes":"Four-hour first-party review; explicitly a supplement, not a passing guarantee. Confirm COF-C03 rather than retired COF-C02 material."
+      "id": "snowflake-core-prep-course",
+      "title": "SnowPro Core Certification Prep Course",
+      "url": "https://learn.snowflake.com/en/courses/OD-COREPREP/",
+      "publisher": "Snowflake University",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "COF-C03"
+      ],
+      "notes": "Four-hour first-party review; explicitly a supplement, not a passing guarantee. Confirm COF-C03 rather than retired COF-C02 material. September 29 COF-C03 deep review: Entire public listing read:4h estimate, six months or order expiry whichever earlier, separate exam fee and no pass guarantee. No paid lessons, enrollment or individual subscription expiry accessed. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"snowflake-level-up-first-concepts","title":"Level Up: First Concepts Series","url":"https://learn.snowflake.com/en/pages/level-up-track","publisher":"Snowflake University","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["COF-C03"],"notes":"Free nine-module fundamentals route across architecture, loading, resource monitors, ecosystem, accounts, hierarchy and recovery; 3–6 hour estimate plus labs."
+      "id": "snowflake-level-up-first-concepts",
+      "title": "Level Up: First Concepts Series",
+      "url": "https://learn.snowflake.com/en/pages/level-up-track",
+      "publisher": "Snowflake University",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "COF-C03"
+      ],
+      "notes": "Free nine-module fundamentals route across architecture, loading, resource monitors, ecosystem, accounts, hierarchy and recovery; 3–6 hour estimate plus labs. September 29 COF-C03 deep review: Entire public track listing read:9 items comprising8 instructional topics plus final assessment. No verified provider duration; guide estimates explicitly planning budgets. No lessons or assessment accessed. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pluralsight-cof-c03-path","title":"SnowPro Core Certification (COF-C03) path","url":"https://www.pluralsight.com/paths/snowpror-core-certification-cof-c03","publisher":"Pluralsight","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["COF-C03"],"notes":"Current approximately five-hour path with four published courses, a fifth collaboration course described as planned, and practice exam; catalog says path remains in production."
+      "id": "pluralsight-cof-c03-path",
+      "title": "SnowPro Core Certification (COF-C03) path",
+      "url": "https://www.pluralsight.com/paths/snowpror-core-certification-cof-c03",
+      "publisher": "Pluralsight",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "COF-C03"
+      ],
+      "notes": "Current approximately five-hour path with four published courses, a fifth collaboration course described as planned, and practice exam; catalog says path remains in production. September 29 COF-C03 deep review: First public path description, all4 cards, planned content and prerequisites read.307 listed minutes versus5h header, June-August2026 cards, collaboration still planned. Vendor exam-launch claim not adopted as official evidence. No paid lessons/practice exam or quality evaluation. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-snowpro-core-on-demand","title":"SnowPro Core Certification Course: Understand the Core Foundations for the Exam","url":"https://www.oreilly.com/videos/snowpro-core-certification/0642572104672/","publisher":"O'Reilly / Tomáš Sobotík","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["COF-C03"],"notes":"Four-hour four-minute June 2025 on-demand foundation. Strong reusable labs; close COF-C03 AI, governance, integration and current-product deltas."
+      "id": "oreilly-snowpro-core-on-demand",
+      "title": "SnowPro Core Certification Course: Understand the Core Foundations for the Exam",
+      "url": "https://www.oreilly.com/videos/snowpro-core-certification/0642572104672/",
+      "publisher": "O'Reilly / Tomáš Sobotík",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "COF-C03"
+      ],
+      "notes": "Four-hour four-minute June 2025 on-demand foundation. Strong reusable labs; close COF-C03 AI, governance, integration and current-product deltas. September 29 COF-C03 deep review: Current fetch HTTP403. Earlier4h04m/June2025 metadata remains unverified. Removed unsupported quality endorsement; no current outline, lessons or questions inspected. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-snowpro-core-bootcamp","title":"SnowPro Core Certification Bootcamp","url":"https://www.oreilly.com/live-events/snowpro-core-certification-bootcamp/0642572203986/","publisher":"O'Reilly / Tomáš Sobotík","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["COF-C03"],"notes":"Two-day live course cataloged at eight hours with hands-on exercises; verify event dates and COF-C03 revision at booking."
+      "id": "oreilly-snowpro-core-bootcamp",
+      "title": "SnowPro Core Certification Bootcamp",
+      "url": "https://www.oreilly.com/live-events/snowpro-core-certification-bootcamp/0642572203986/",
+      "publisher": "O'Reilly / Tomáš Sobotík",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "COF-C03"
+      ],
+      "notes": "Two-day live course cataloged at eight hours with hands-on exercises; verify event dates and COF-C03 revision at booking. September 29 COF-C03 deep review: Entire public main agenda, prerequisites and instructor section read. Tomas Sobotik,2days,28 timed topics:240+245=485minutes excluding un-timed breaks/Q&A. Timing estimates, no upcoming booking date verified. No trial created, live attendance, paid recording or exercise execution. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-tom-bailey-cof-c03","title":"Training for Snowflake SnowPro Core Certification (COF-C03)","url":"https://www.udemy.com/course/ultimate-snowpro-core-certification-course-exam/","publisher":"Udemy / Tom Bailey","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["COF-C03"],"notes":"Seven-plus-hour course updated August 2026 with hands-on content and mock exam; verify claims against current documentation and do not memorize bank items."
+      "id": "udemy-tom-bailey-cof-c03",
+      "title": "Training for Snowflake SnowPro Core Certification (COF-C03)",
+      "url": "https://www.udemy.com/course/ultimate-snowpro-core-certification-course-exam/",
+      "publisher": "Udemy / Tom Bailey",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "COF-C03"
+      ],
+      "notes": "Seven-plus-hour course updated August 2026 with hands-on content and mock exam; verify claims against current documentation and do not memorize bank items. September 29 COF-C03 deep review: Current fetch HTTP403. Earlier7h+/August2026 catalog details unverified; no paid content/question bank accessed. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id":"snowflake-dea-c02-certification","title":"SnowPro Advanced: Data Engineer (DEA-C02)","url":"https://learn.snowflake.com/en/certifications/snowpro-advanced-dataengineer-C02/","publisher":"Snowflake","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["DEA-C02"],"notes":"Canonical active exam identity, five public abilities, two-year production-experience recommendation and detailed-guide request; monitored by the Snowflake adapter."

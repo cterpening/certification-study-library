@@ -1563,6 +1563,8 @@ The review preserves the former public SOL-C01 capability map while telling new 
 
 ## COF-C03 coverage record
 
+The September 29 [deep review](research/2026-09-29-cof-c03-deep-review.md) maps seven public abilities; the detailed guide remains behind a request form. Mapped seven unchanged public abilities with explicit detailed-guide request boundary; fully read actual four-page prep datasheet (five areas,19 teaching bullets). Updated phased authentication,legacy notebooks,MERGE/stream/target-lag semantics,null/constraints,role/cost/share and fair performance evidence. Added24 executed SQLite/interval checks,48 original answers,eight proposed account labs and corrected public training durations/access limits. No Snowflake account execution;human review pending. Current guide citations: 31 registered, 29 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: active SnowPro Core with seven public abilities—AI Data Cloud architecture; account/warehouse management; loading/unloading/transformation; structured/semi-structured/unstructured data; performance; collaboration/protection; and connectivity—and a six-month experience recommendation

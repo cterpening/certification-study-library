@@ -4,6 +4,289 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-cofc03-deep-review",
+      "title": "COF-C03 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "COF-C03"
+      ],
+      "results": [
+        {
+          "exam_code": "COF-C03",
+          "vendor_id": "snowflake",
+          "guide_path": "guides/COF-C03-snowpro-core.md",
+          "baseline_sha256": "96bcd55d08658461690caa55b56853ba236f15b578356b1566ec233f891f0b22",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Seven public abilities unchanged;missing lifecycle snapshot initialized after review and postcheck unchanged. Entire canonical page and program policies read. Detailed guide remains request-form restricted;training PDF not substituted as official detailed objectives."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected primary roles/load/null/constraints/share/cost,MERGE,streams,dynamic lag,window/cache/load/insight and Python connector sections read.24 actual local SQLite and interval checks with explicit platform limits."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Complete strong-auth phased notice read:currentAugust-October account-specific enforcement and reader/trial/Postgres exceptions. Complete legacy-notebook September/November notice read;no account state assumed and no invented blog publication date."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Public official course4h/access and4pagePDF,practice24h terms,LevelUp8topics+assessment. Pluralsight4cards307m/inproduction;OReillybootcamp28timedtopics485m/noverifieddate. OReillyondemand/Udemy403 oldmetadata explicitlyunverified;no paidcontent/questions."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Repaired null/missing wording,share scope,role creation,standard constraints,stream consumption,MERGE duplicates,lag guarantee,cache methodology/auth rollout and catalog claims.48 explanatory answers and eight concrete failure/cleanup lab plans."
+            }
+          },
+          "findings": [
+            {
+              "id": "cofc03-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Public scope and missing lifecycle baseline are different review boundaries",
+              "url": "https://learn.snowflake.com/en/certifications/snowpro-core-c03/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "COF-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Seven abilities unchanged;no direct detailed PDF link;only lifecycle baseline missing.",
+              "recommendation": "Preserve objective bytes,initialize lifecycle explicitly and retain form-limited scope.",
+              "disposition": "applied",
+              "source_id": "snowflake-cof-c03-certification",
+              "resolution": "Preserve objective bytes,initialize lifecycle explicitly and retain form-limited scope."
+            },
+            {
+              "id": "cofc03-deep-2",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "A training outline is supporting evidence rather than detailed exam weights",
+              "url": "https://www.snowflake.com/wp-content/uploads/2022/03/OD-Cert_Prep-Datasheet.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "COF-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Actual4page25L19PDF contains five areas and nineteen teaching bullets with preparation-dependent duration.",
+              "recommendation": "Map those as supporting prompts across seven abilities without asserting weights or exam duration.",
+              "disposition": "applied",
+              "source_id": "snowflake-core-prep-datasheet",
+              "resolution": "Map those as supporting prompts across seven abilities without asserting weights or exam duration."
+            },
+            {
+              "id": "cofc03-deep-3",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Authentication enforcement is rolling and account-specific",
+              "url": "https://docs.snowflake.com/en/user-guide/security-mfa-rollout",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "COF-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Phase3August-October2026,account notification and excluded account types.",
+              "recommendation": "Date the guidance and require actual account/user/client verification rather than universal enforcement claims.",
+              "disposition": "applied",
+              "source_id": "snowflake-strong-auth-rollout",
+              "resolution": "Date the guidance and require actual account/user/client verification rather than universal enforcement claims."
+            },
+            {
+              "id": "cofc03-deep-4",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Legacy notebook creation guidance needs a current boundary",
+              "url": "https://docs.snowflake.com/en/release-notes/bcr-bundles/un-bundled/bcr-disable-legacy-notebooks",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "COF-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "September1creation disabled;Novemberplanned execution/editing disable.",
+              "recommendation": "Use current Workspaces migration route and distinguish planned changes from already effective ones.",
+              "disposition": "applied",
+              "source_id": "snowflake-legacy-notebook-retirement",
+              "resolution": "Use current Workspaces migration route and distinguish planned changes from already effective ones."
+            },
+            {
+              "id": "cofc03-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "MERGE does not automatically deduplicate unmatched inserts",
+              "url": "https://docs.snowflake.com/en/sql-reference/sql/merge",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "COF-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Default ambiguous-match errors apply to matching updates/deletes;duplicate unmatched source rows can each insert.",
+              "recommendation": "Teach grain and tie policy before MERGE;executed local join workbook demonstrates analytical corruption separately.",
+              "disposition": "applied",
+              "source_id": "snowflake-merge-duplicates",
+              "resolution": "Teach grain and tie policy before MERGE;executed local join workbook demonstrates analytical corruption separately."
+            },
+            {
+              "id": "cofc03-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Filtering consumed changes does not reserve omitted rows",
+              "url": "https://docs.snowflake.com/en/user-guide/streams-intro",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "COF-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Committed consuming DML advances stream position across all changes;SELECT and rollback do not.",
+              "recommendation": "Add explicit offset/replay explanation and proposed positive/rollback/filter lab.",
+              "disposition": "applied",
+              "source_id": "snowflake-streams-intro",
+              "resolution": "Add explicit offset/replay explanation and proposed positive/rollback/filter lab."
+            },
+            {
+              "id": "cofc03-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Freshness target is not an exact interval or guarantee",
+              "url": "https://docs.snowflake.com/en/user-guide/dynamic-tables-target-lag",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "COF-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Best-effort root-relative target,minimum60s,terminalDOWNSTREAM no automatic consumer.",
+              "recommendation": "Teach actual freshness monitoring and scheduled terminal consumer design.",
+              "disposition": "applied",
+              "source_id": "snowflake-dynamic-target-lag",
+              "resolution": "Teach actual freshness monitoring and scheduled terminal consumer design."
+            },
+            {
+              "id": "cofc03-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Implicit window expectations can produce wrong running totals",
+              "url": "https://docs.snowflake.com/en/user-guide/functions-window-using",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "COF-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "ROWS and RANGE peers differ;window ORDERBY separate from output ORDERBY.",
+              "recommendation": "Add explicit frames/tie-breaker and actual SQLite peer/row comparison.",
+              "disposition": "applied",
+              "source_id": "snowflake-window-frames",
+              "resolution": "Add explicit frames/tie-breaker and actual SQLite peer/row comparison."
+            },
+            {
+              "id": "cofc03-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A repeated fast query need not measure warehouse execution",
+              "url": "https://docs.snowflake.com/en/user-guide/querying-persisted-results",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "COF-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Result reuse has strict conditions and no guarantee;24h/31day retention;USE_CACHED_RESULT not all caches.",
+              "recommendation": "Require controlled cache/concurrency/correctness/credit comparisons.",
+              "disposition": "applied",
+              "source_id": "snowflake-persisted-results",
+              "resolution": "Require controlled cache/concurrency/correctness/credit comparisons."
+            },
+            {
+              "id": "cofc03-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Warehouse load is concurrency rather than CPU percent",
+              "url": "https://docs.snowflake.com/en/user-guide/warehouses-load-monitoring",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "COF-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Load is running/queued query time divided by observation interval;overload/provisioning/locks separate.",
+              "recommendation": "Add synthetic clipped-interval arithmetic and evidence-led scale decisions.",
+              "disposition": "applied",
+              "source_id": "snowflake-warehouse-load",
+              "resolution": "Add synthetic clipped-interval arithmetic and evidence-led scale decisions."
+            },
+            {
+              "id": "cofc03-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Missing paths and parse failures can collapse to SQL NULL",
+              "url": "https://docs.snowflake.com/en/sql-reference/functions/is_null_value",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "COF-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Missing path SQLNULL differs from JSONnull,while TRY_PARSE_JSON can return SQLNULL on malformed input.",
+              "recommendation": "Correct earlier missing-key wording and preserve parse status/raw input.",
+              "disposition": "applied",
+              "source_id": "snowflake-json-null",
+              "resolution": "Correct earlier missing-key wording and preserve parse status/raw input."
+            },
+            {
+              "id": "cofc03-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Standard primary keys do not enforce business uniqueness",
+              "url": "https://docs.snowflake.com/en/sql-reference/constraints-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "COF-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current standardNOTNULL/CHECK enforced;primary/unique/foreign not;hybrid differs.",
+              "recommendation": "Teach business-key validation and explicitly label SQLite key enforcement.",
+              "disposition": "applied",
+              "source_id": "snowflake-constraints",
+              "resolution": "Teach business-key validation and explicitly label SQLite key enforcement."
+            }
+          ],
+          "notes": "Mapped seven unchanged public abilities with explicit detailed-guide request boundary; fully read actual four-page prep datasheet (five areas,19 teaching bullets). Updated phased authentication,legacy notebooks,MERGE/stream/target-lag semantics,null/constraints,role/cost/share and fair performance evidence. Added24 executed SQLite/interval checks,48 original answers,eight proposed account labs and corrected public training durations/access limits. No Snowflake account execution;human review pending. Same-context AI review; human review pending. See docs/research/2026-09-29-cof-c03-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 12,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-solc01-deep-review",
       "title": "SOL-C01 complete guide and learning-content review",
       "rubric_version": 1,
