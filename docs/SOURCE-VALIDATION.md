@@ -1290,6 +1290,8 @@ The review maps every public V9 domain and summary task to an end-to-end packet-
 
 ## SY0-701 coverage record
 
+The September 29 [deep review](research/2026-09-29-sy0-701-deep-review.md) maps 28 detailed objectives. Mapped all 28 numbered objectives in public PDF document 7.0. Added original cryptography and certificate examples with 34 executed checks, zero-trust roles, protocol/identity boundaries, current incident-response and severity context, worked risk/evidence/detection cases, 46 answers and eight proposed full labs. Corrected a stale replacement-exam answer, qualified blocked catalog claims and explicitly accepted duration-only monitor metadata while preserving history. Current guide citations: 28 registered, 26 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 7, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: five weighted V7 domains—General security concepts (12%), Threats, vulnerabilities, and mitigations (22%), Security architecture (18%), Security operations (28%), and Security program management and oversight (20%)

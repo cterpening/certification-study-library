@@ -3167,16 +3167,21 @@ Public metadata was checked September 29, 2026. Pluralsight lists 12 courses/14 
 
 ### CompTIA Security+ (SY0-701)
 
-- Official baseline: [CompTIA Security+ V7](https://www.comptia.org/en-us/certifications/security/) (**3–6 hours mapping five domains and delivery**); verify scheduling now because the live page estimates 2026 retirement but gives no exact date or confirmed replacement
-- Official options: [CertMaster Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/), [Labs](https://www.comptia.org/en-us/resources/certmaster-training/labs/), and [Practice](https://www.comptia.org/en-us/resources/certmaster-training/practice/) (**50–100 combined hours estimated**); select and verify the exact SY0-701 product/bundle
-- Current course/lab path: [Pluralsight SY0-701](https://www.pluralsight.com/paths/comptia-security-sy0-701) (**22 listed hours plus 25–50 lab/review hours**), seven courses, 11 labs and a practice exam
-- Compact current route: [LinkedIn Learning / Infosec SY0-701](https://www.linkedin.com/learning/comptia-security-plus-sy0-701-cert-prep-by-infosec) (**9 hours 57 minutes plus 25–50 lab/review hours**)
-- Structured book: [O'Reilly/Pearson SY0-701 Cert Guide](https://www.oreilly.com/library/view/comptia-security-sy0-701/9780138293215/) (**21 hours 54 minutes listed plus 20–40 lab/review hours**), 814 pages and companion practice
-- Detailed marketplace route: [Udemy / Jason Dion SY0-701](https://www.udemy.com/course/securityplus/) (**31 hours 11 minutes plus 20–40 lab/review hours**), updated August 2026
-- Explanation-led assessment: [MeasureUp SY0-701](https://www.measureup.com/sy0-701-comptia-security-practice-test.html) (**about 10–18 hours across attempts and remediation**), 213 questions listed
-- Free current course: [Professor Messer SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/) (**15 hours 11 minutes plus 25–50 hands-on hours**), 121 videos
+Resource details from the [SY0-701 guide](../guides/SY0-701-comptia-security-plus.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Verify that SY0-701 is still schedulable, choose one coherent route, practice only in an isolated or explicitly authorized environment, and use one ethical explanation-led assessment. No exact current Whizlabs SY0-701 route was independently verified. Reject recalled-question products, leaked draft objectives and attack labs without written authorization.
+This is not a complete list and is not meant to be consumed in full. Given the scheduled language-specific retirement dates, first verify that SY0-701 is still schedulable in your language. Then choose one current path, practice in an isolated/authorized lab, and use one explanation-led assessment for remediation.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| CompTIA [CertMaster Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/), Labs, and Practice | Paid official platform; V7 page lists combined Learn + Labs, plus individual options; verify exact product | Provider estimates: combined 30–60h; Learn 25–40h; Practice 10–20h; Labs 15–25h. These overlap and are not additive |
+| [Pluralsight Security+ path](https://www.pluralsight.com/paths/comptia-security-sy0-701) | Subscription; 7 courses, 11 labs and practice exam listed; course/lab dates vary | 22 listed hours plus 25–50 suggested lab/review hours |
+| [LinkedIn Learning / Infosec SY0-701](https://www.linkedin.com/learning/comptia-security-plus-sy0-701-cert-prep-by-infosec) | Subscription; Infosec course published October 10, 2025 | 9 hours 57 minutes listed plus 25–50 suggested lab/review hours |
+| [O'Reilly/Pearson SY0-701 Cert Guide](https://www.oreilly.com/library/view/comptia-security-sy0-701/9780138293215/) | Subscription book; automated catalog access blocked during this review | Earlier 814-page / 21h54 claims not reverified; inspect current edition before purchase |
+| [Udemy / Jason Dion SY0-701](https://www.udemy.com/course/securityplus/) | Paid marketplace course; automated catalog access blocked during this review | Earlier 31h11 runtime not reverified; inspect current syllabus and revision |
+| [MeasureUp SY0-701 practice test](https://www.measureup.com/sy0-701-comptia-security-practice-test.html) | Paid explanation-led practice; product-specific listing has 213 questions, December 2023 release | About 10–18 hours across attempts and remediation |
+| [Professor Messer free SY0-701 course](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/) | Free 121-video course; optional paid notes/practice | 15 hours 11 minutes plus 25–50 hands-on hours |
+
+**VERIFY CURRENT:** Public metadata was checked September 29, 2026; paid course/book interiors, question banks and provider labs were not accessed. Pluralsight includes older course material and newer lab dates, so a recent path/lab date does not re-date every lesson. Extra study-hour ranges are planning suggestions, not provider guarantees. MeasureUp’s product-specific 213-question listing takes precedence over generic FAQ wording about 150 questions. No exact current Whizlabs SY0-701 route was independently verified. Reject “actual questions,” dumps and out-of-scope attack labs. Provider duration, price, bundle, bank, revision and access details are volatile.
 
 ### CompTIA Linux+ (XK0-006)
 

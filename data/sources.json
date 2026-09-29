@@ -3,6 +3,216 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "comptia-sy0-701-objectives-pdf",
+      "title": "Security+ SY0-701 objectives document7.0",
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/cf25ec24b8a511ef9ecbb69c0f9687be?checkExpiry=false",
+      "publisher": "CompTIA",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SY0-701"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SY0-701 deep review: Public 24-page document 7.0: all 28 numbered objectives and detailed bullets read; original paraphrase mapping, groups 4/5/4/9/6. Acronym appendix is not claimed as a separately audited catalog. PDF not redistributed. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nist-sp800-61r3-pdf",
+      "title": "NIST SP800-61r3 full publication",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "publisher": "NIST",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SY0-701"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SY0-701 deep review: Targeted section 2.1 and Table 1 read for CSF 2.0 response/preparation/improvement model; exam outline remains distinct. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nist-800-207",
+      "title": "NIST Zero Trust Architecture",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "publisher": "NIST",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SY0-701"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SY0-701 deep review: Targeted section 3 policy-engine, policy-administrator and enforcement-point roles read; no full publication audit or deployed zero-trust test. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "first-cvss4-implementation",
+      "title": "FIRST CVSS4 consumer implementation guidance",
+      "url": "https://www.first.org/cvss/v4.0/implementation-guide",
+      "publisher": "FIRST",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SY0-701"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SY0-701 deep review: Consumer guidance document 1.0: executive summary, metric groups and maturity guidance read; not a complete business risk model. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cisa-kev-catalog",
+      "title": "CISA known exploited vulnerabilities catalog",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "publisher": "CISA",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SY0-701"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SY0-701 deep review: Automated direct and web fetch blocked; no current body read claimed. Official CISA GitHub mirror provides the accessible reference used in this guide. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "owasp-sql-injection-prevention",
+      "title": "OWASP parameterized-query guidance",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+      "publisher": "OWASP",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SY0-701"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SY0-701 deep review: Targeted parameterized-query, stored-procedure and allowlist guidance read. No SQL exploit or application scanner run. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "owasp-authentication",
+      "title": "OWASP authentication guidance",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html",
+      "publisher": "OWASP",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SY0-701"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SY0-701 deep review: Targeted OAuth/OIDC distinction read. Older blanket provider-adoption claims not adopted; no complete authentication cheat-sheet audit. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "oauth-security-bcp",
+      "title": "OAuth2 security best current practice",
+      "url": "https://www.rfc-editor.org/rfc/rfc9700.html",
+      "publisher": "IETF",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SY0-701"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SY0-701 deep review: Targeted section 2/2.1 security and redirect discussion read; linked for current implementation guidance, no OAuth flow executed. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "openid-connect-core",
+      "title": "OpenID Connect Core1.0",
+      "url": "https://openid.net/specs/openid-connect-core-1_0.html",
+      "publisher": "OpenID Foundation",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SY0-701"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SY0-701 deep review: Introduction and identity-layer/protocol-role discussion read; no complete protocol conformance or provider deployment claimed. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cryptography50-x509-tutorial",
+      "title": "Cryptography50 certificate tutorial",
+      "url": "https://cryptography.io/en/50.0.1/x509/tutorial/",
+      "publisher": "Python Cryptographic Authority",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SY0-701"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SY0-701 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cryptography50-x509-verification",
+      "title": "Cryptography50 certificate verification",
+      "url": "https://cryptography.io/en/50.0.1/x509/verification/",
+      "publisher": "Python Cryptographic Authority",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SY0-701"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SY0-701 deep review: Version 50.0.1 PolicyBuilder, Store, server verifier, expected DNS identity, time and chain API reviewed; public example and negative checks executed. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cryptography50-aead",
+      "title": "Cryptography50 authenticated encryption",
+      "url": "https://cryptography.io/en/50.0.1/hazmat/primitives/aead/",
+      "publisher": "Python Cryptographic Authority",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SY0-701"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SY0-701 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cryptography50-ec",
+      "title": "Cryptography50 elliptic curve signatures",
+      "url": "https://cryptography.io/en/50.0.1/hazmat/primitives/asymmetric/ec/",
+      "publisher": "Python Cryptographic Authority",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SY0-701"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SY0-701 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cryptography50-x509-reference",
+      "title": "Cryptography50 certificate/CSR/CRL reference",
+      "url": "https://cryptography.io/en/50.0.1/x509/reference/",
+      "publisher": "Python Cryptographic Authority",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SY0-701"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SY0-701 deep review: Targeted CSR validity, certificate extensions and CRL signature/serial APIs reviewed and locally exercised with synthetic in-memory data. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cisa-kev-mirror",
+      "title": "CISA KEV official data mirror",
+      "url": "https://github.com/cisagov/kev-data",
+      "publisher": "CISA",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SY0-701"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SY0-701 deep review: Official cisagov/kev-data README read for provenance, formats/schema and update process. No individual records, federal deadline or directive number adopted. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "comptia-n10-009-objectives-pdf",
       "title": "Network+ N10-009 objectives document6.0",
       "url": "https://lecbyo.files.cmp.optimizely.com/download/35a7403ab73211ef9dcda6f347fbf652?checkExpiry=false",
@@ -431,10 +641,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "220-1202"
+        "220-1202",
+        "SY0-701"
       ],
-      "last_checked": "2026-09-28",
-      "notes": "September 28 220-1202 deep review: Read targeted sections 3.1,3.2.2–3.2.3,4.3.5–4.3.6,4.4,4.5.1–4.5.2 and 4.6. No sanitization operation or separately licensed IEEE/ISO standard reviewed. See docs/research/2026-09-28-220-1202-deep-review.md No live infrastructure execution."
+      "last_checked": "2026-09-29",
+      "notes": "September 28 220-1202 deep review: Read targeted sections 3.1,3.2.2–3.2.3,4.3.5–4.3.6,4.4,4.5.1–4.5.2 and 4.6. No sanitization operation or separately licensed IEEE/ISO standard reviewed. See docs/research/2026-09-28-220-1202-deep-review.md No live infrastructure execution. September 29 SY0-701 deep review: Current PDF byte-identical to September 28 Core 2 review; retained targeted sanitization method, verification/validation and media-limit context; no erasure performed. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution."
     },
     {
       "id": "apple-filevault-mac",
@@ -689,10 +900,11 @@
         "FC0-U71",
         "220-1201",
         "220-1202",
-        "N10-009"
+        "N10-009",
+        "SY0-701"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 28 FC0-U71 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-fc0-u71-deep-review.md No live infrastructure execution. September 28 220-1201 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1201-deep-review.md No live infrastructure execution. September 28 220-1202 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1202-deep-review.md No live infrastructure execution. September 29 N10-009 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-n10-009-deep-review.md No live infrastructure execution."
+      "notes": "September 28 FC0-U71 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-fc0-u71-deep-review.md No live infrastructure execution. September 28 220-1201 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1201-deep-review.md No live infrastructure execution. September 28 220-1202 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1202-deep-review.md No live infrastructure execution. September 29 N10-009 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-n10-009-deep-review.md No live infrastructure execution. September 29 SY0-701 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution."
     },
     {
       "id": "comptia-fc0-u71-objectives-pdf",
@@ -803,10 +1015,11 @@
       "access_model": "public",
       "supported_exams": [
         "FC0-U71",
-        "220-1202"
+        "220-1202",
+        "SY0-701"
       ],
-      "last_checked": "2026-09-28",
-      "notes": "September 28 FC0-U71 deep review: Read password section3.1.1, including centrally verified password scope; not a claim that every service uses these rules. See docs/research/2026-09-28-fc0-u71-deep-review.md No live infrastructure execution. September 28 220-1202 deep review: Targeted password section 3.1.1; current guidance separated from exam terminology and local PIN contexts. See docs/research/2026-09-28-220-1202-deep-review.md No live infrastructure execution."
+      "last_checked": "2026-09-29",
+      "notes": "September 28 FC0-U71 deep review: Read password section3.1.1, including centrally verified password scope; not a claim that every service uses these rules. See docs/research/2026-09-28-fc0-u71-deep-review.md No live infrastructure execution. September 28 220-1202 deep review: Targeted password section 3.1.1; current guidance separated from exam terminology and local PIN contexts. See docs/research/2026-09-28-220-1202-deep-review.md No live infrastructure execution. September 29 SY0-701 deep review: Current fetched text byte-identical to September 28 Core 2 review; targeted authentication/context/password passages checked again for this guide. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-wifi-security-warning",
@@ -42373,7 +42586,27 @@
       "id":"splk-5002-certification","title":"certification page","url":"https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html","publisher":"Splunk","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLK-5002"],"notes":"Canonical live certification status, logistics and preparation links."
     },
     {
-      "id":"splk-5003-source-1","title":"NIST SP 800-61","url":"https://csrc.nist.gov/pubs/sp/800/61/r3/final","publisher":"Independent standards or expert publisher","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLK-5003","NSE-I-MSSP-SECURITY","NSE-5-SECURITY-OPERATIONS","NSE-7-SECURITY-OPERATIONS","PANW-SECURITY-OPERATIONS-ARCHITECT","PANW-XDR-ENGINEER","PANW-XSIAM-ANALYST","PANW-XSIAM-ENGINEER","PANW-XSOAR-ENGINEER"],"notes":"Public product, training, standards or expert reference used for objective-aligned explanation and practice."
+      "id": "splk-5003-source-1",
+      "title": "NIST SP 800-61",
+      "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+      "publisher": "Independent standards or expert publisher",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SPLK-5003",
+        "NSE-I-MSSP-SECURITY",
+        "NSE-5-SECURITY-OPERATIONS",
+        "NSE-7-SECURITY-OPERATIONS",
+        "PANW-SECURITY-OPERATIONS-ARCHITECT",
+        "PANW-XDR-ENGINEER",
+        "PANW-XSIAM-ANALYST",
+        "PANW-XSIAM-ENGINEER",
+        "PANW-XSOAR-ENGINEER",
+        "SY0-701"
+      ],
+      "notes": "Public product, training, standards or expert reference used for objective-aligned explanation and practice. September 29 SY0-701 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution."
     },
     {
       "id":"splk-5003-source-2","title":"D3FEND","url":"https://d3fend.mitre.org/","publisher":"Independent standards or expert publisher","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLK-5003","PANW-SECURITY-OPERATIONS-ARCHITECT"],"notes":"Public product, training, standards or expert reference used for objective-aligned explanation and practice."
@@ -42785,11 +43018,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-02",
+      "last_checked": "2026-09-29",
       "supported_exams": [
-        "PANW-CLOUD-SECURITY-ENGINEER"
+        "PANW-CLOUD-SECURITY-ENGINEER",
+        "SY0-701"
       ],
-      "notes": "Public primary, standards, training or expert reference used for objective-aligned explanation and practice."
+      "notes": "Public primary, standards, training or expert reference used for objective-aligned explanation and practice. September 29 SY0-701 deep review: FIRST CVSS v4.0 specification document 1.2: targeted introduction and metric-group definitions read; no CVSS vector calculated or live CVE assessed. See docs/research/2026-09-29-sy0-701-deep-review.md No live infrastructure execution."
     },
     {
       "id": "panw-cloud-security-engineer-source-12",

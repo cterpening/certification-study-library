@@ -3,6 +3,72 @@
   "schema_version": 1,
   "reviews": [
     {
+      "id": "sy0-701-2026-09-06-source-validation",
+      "exam_code": "SY0-701",
+      "guide_path": "guides/SY0-701-comptia-security-plus.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-06",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/sy0-701-2026-09-06-official-objectives.txt",
+      "blueprint_snapshot_sha256": "9e13564c9c134ca42752f3bc90083f2da3568e7e9e93f9d068a98197fbe19528",
+      "objective_coverage": [
+        {
+          "objective_group": "General security concepts (12%)",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Threats, vulnerabilities, and mitigations (22%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1–2",
+            "Labs 1, 5–7"
+          ]
+        },
+        {
+          "objective_group": "Security architecture (18%)",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 1, 3–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security operations (28%)",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 4–7"
+          ]
+        },
+        {
+          "objective_group": "Security program management and oversight (20%)",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Labs 1, 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 9,
+        "reachable": 7,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All five weighted V7 domains are connected through an asset, risk, control, evidence, response, recovery and governance lifecycle, with three scenarios, eight isolated/authorized labs and 42 original checks. The guide records CompTIA's exact June 11, 2027 English and August 13, 2027 Japanese/Portuguese/Spanish/Thai retirement dates without inferring a successor. All eight guide URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. No proprietary objectives, PBQs, course labs, leaked drafts or recalled items are used. September 27, 2026: checked version-specific V7 and announced V8 citations and reconciled link counts; historical full-review date and objective snapshot retained."
+    },
+    {
       "id": "n10-009-2026-09-01-source-validation",
       "exam_code": "N10-009",
       "guide_path": "guides/N10-009-comptia-network-plus.md",
@@ -6379,14 +6445,14 @@
       "notes": "Mapped all 25 numbered PDF objectives against 34 main-page summary rows. Filled modern-network and protocol details, corrected routing/lease/MTU distinctions, added original planning and DNS examples with 72 checks and 24 actual loopback exchanges, strengthened 44 answers and eight proposed labs, and explicitly accepted a duration-only monitor metadata change with historical evidence retained. See docs/research/2026-09-29-n10-009-deep-review.md"
     },
     {
-      "id": "sy0-701-2026-09-06-source-validation",
+      "id": "sy0-701-2026-09-29-source-validation",
       "exam_code": "SY0-701",
       "guide_path": "guides/SY0-701-comptia-security-plus.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-06",
+      "reviewed_on": "2026-09-29",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/sy0-701-official-objectives.txt",
-      "blueprint_snapshot_sha256": "9e13564c9c134ca42752f3bc90083f2da3568e7e9e93f9d068a98197fbe19528",
+      "blueprint_snapshot_sha256": "152af64f7b23ff8a264ea9aa465c610cc797fcdd6b771d8f7dfe15cdab6b9040",
       "objective_coverage": [
         {
           "objective_group": "General security concepts (12%)",
@@ -6437,12 +6503,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 9,
-        "reachable": 7,
+        "unique_external_links": 28,
+        "reachable": 26,
         "access_blocked": 2,
         "missing_or_error": 0
       },
-      "notes": "All five weighted V7 domains are connected through an asset, risk, control, evidence, response, recovery and governance lifecycle, with three scenarios, eight isolated/authorized labs and 42 original checks. The guide records CompTIA's exact June 11, 2027 English and August 13, 2027 Japanese/Portuguese/Spanish/Thai retirement dates without inferring a successor. All eight guide URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. No proprietary objectives, PBQs, course labs, leaked drafts or recalled items are used. September 27, 2026: checked version-specific V7 and announced V8 citations and reconciled link counts; historical full-review date and objective snapshot retained."
+      "notes": "Mapped all 28 numbered objectives in public PDF document 7.0. Added original cryptography and certificate examples with 34 executed checks, zero-trust roles, protocol/identity boundaries, current incident-response and severity context, worked risk/evidence/detection cases, 46 answers and eight proposed full labs. Corrected a stale replacement-exam answer, qualified blocked catalog claims and explicitly accepted duration-only monitor metadata while preserving history. See docs/research/2026-09-29-sy0-701-deep-review.md"
     },
     {
       "id":"xk0-006-2026-09-01-source-validation",

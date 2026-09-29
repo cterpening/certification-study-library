@@ -1,0 +1,1813 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "SY0-701",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/SY0-701-comptia-security-plus.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "e9c998077c2f0681c28f66988a41bab4d41c2a881b231bb897a146f3e6e1c8d3",
+  "guide_after_sha256": "9d5e623bd1ab3e9189efdb2b64c7fe77c6f42b75eaf312e7aba8174674c76a08",
+  "prior_records": {
+    "exam": {
+      "code": "SY0-701",
+      "level": "intermediate",
+      "vendor_id": "comptia",
+      "title": "CompTIA Security+ (V7)",
+      "status": "active",
+      "study_guide_url": "https://www.comptia.org/en-us/certifications/security/v7/",
+      "guide_path": "guides/SY0-701-comptia-security-plus.md",
+      "blueprint_last_checked": "2026-09-06",
+      "upcoming_change_status": "retirement-announced",
+      "upcoming_change_checked": "2026-09-27",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "CompTIA recommends Network+ knowledge and two years in a security or systems-administrator role. Practice control/risk mapping, PKI, secure architecture and data/resilience decisions, baselines/IAM/vulnerability management, monitoring/detection, incident/forensic evidence, governance/risk/third parties/audit, and awareness in isolated or explicitly authorized environments. Verify scheduling against the June 11, 2027 English retirement or August 13, 2027 Japanese, Portuguese, Spanish, and Thai retirement; no successor is inferred."
+    },
+    "review": {
+      "id": "sy0-701-2026-09-06-source-validation",
+      "exam_code": "SY0-701",
+      "guide_path": "guides/SY0-701-comptia-security-plus.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-06",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/sy0-701-official-objectives.txt",
+      "blueprint_snapshot_sha256": "9e13564c9c134ca42752f3bc90083f2da3568e7e9e93f9d068a98197fbe19528",
+      "objective_coverage": [
+        {
+          "objective_group": "General security concepts (12%)",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Threats, vulnerabilities, and mitigations (22%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1–2",
+            "Labs 1, 5–7"
+          ]
+        },
+        {
+          "objective_group": "Security architecture (18%)",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 1, 3–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security operations (28%)",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 4–7"
+          ]
+        },
+        {
+          "objective_group": "Security program management and oversight (20%)",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Labs 1, 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 9,
+        "reachable": 7,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All five weighted V7 domains are connected through an asset, risk, control, evidence, response, recovery and governance lifecycle, with three scenarios, eight isolated/authorized labs and 42 original checks. The guide records CompTIA's exact June 11, 2027 English and August 13, 2027 Japanese/Portuguese/Spanish/Thai retirement dates without inferring a successor. All eight guide URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. No proprietary objectives, PBQs, course labs, leaked drafts or recalled items are used. September 27, 2026: checked version-specific V7 and announced V8 citations and reconciled link counts; historical full-review date and objective snapshot retained."
+    },
+    "sources": [
+      {
+        "id": "comptia-security-v7-current",
+        "title": "Security+ V7 (SY0-701) exam and objectives",
+        "url": "https://www.comptia.org/en-us/certifications/security/v7/",
+        "publisher": "CompTIA",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-27",
+        "supported_exams": [
+          "SY0-701"
+        ],
+        "notes": "Official evidence reviewed September 27, 2026; bounded lifecycle or future-scope supplement. Historical full-guide review date is preserved."
+      },
+      {
+        "id": "comptia-security-v8-announcement",
+        "title": "Security+ V8 (SY0-801) planned launch and objectives",
+        "url": "https://www.comptia.org/en-us/certifications/security/v8/",
+        "publisher": "CompTIA",
+        "authority_class": 1,
+        "source_type": "lifecycle-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-27",
+        "supported_exams": [
+          "SY0-701"
+        ],
+        "notes": "Official evidence reviewed September 27, 2026; bounded lifecycle or future-scope supplement. Historical full-guide review date is preserved."
+      },
+      {
+        "id": "comptia-certmaster-learn",
+        "title": "CompTIA CertMaster Learn",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "publisher": "CompTIA",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71",
+          "220-1201",
+          "220-1202",
+          "N10-009",
+          "SY0-701",
+          "XK0-006",
+          "CV0-004"
+        ],
+        "notes": "Official self-paced learning platform; exact certification availability, bundle, price, duration and access vary."
+      },
+      {
+        "id": "comptia-certmaster-labs",
+        "title": "CompTIA CertMaster Labs",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "publisher": "CompTIA",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71",
+          "220-1201",
+          "220-1202",
+          "N10-009",
+          "SY0-701",
+          "XK0-006",
+          "CV0-004"
+        ],
+        "notes": "Official browser-based practical environment; verify exam inclusion and current bundle details."
+      },
+      {
+        "id": "comptia-certmaster-practice",
+        "title": "CompTIA CertMaster Practice",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "publisher": "CompTIA",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71",
+          "220-1201",
+          "220-1202",
+          "N10-009",
+          "SY0-701",
+          "XK0-006",
+          "CV0-004"
+        ],
+        "notes": "Official adaptive assessment and remediation platform; not a source of actual exam items."
+      },
+      {
+        "id": "comptia-sy0-701-blueprint",
+        "title": "CompTIA Security+ version selector",
+        "url": "https://www.comptia.org/en-us/certifications/security/",
+        "publisher": "CompTIA",
+        "authority_class": 1,
+        "source_type": "credential-page",
+        "access_model": "public",
+        "last_checked": "2026-09-27",
+        "supported_exams": [
+          "SY0-701"
+        ],
+        "notes": "The former V7 landing URL is now a V7/V8 selector. Use the registered version-specific V7 page for SY0-701 objectives and the V8 page for the announced SY0-801 replacement."
+      },
+      {
+        "id": "comptia-sy0-701-pluralsight",
+        "title": "CompTIA Security+ SY0-701 path",
+        "url": "https://www.pluralsight.com/paths/comptia-security-sy0-701",
+        "publisher": "Pluralsight",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SY0-701"
+        ],
+        "notes": "Seven courses, 11 labs, 22 hours and a practice exam listed; includes refreshed 2026 hands-on labs."
+      },
+      {
+        "id": "comptia-sy0-701-linkedin",
+        "title": "CompTIA Security+ SY0-701 Cert Prep by Infosec",
+        "url": "https://www.linkedin.com/learning/comptia-security-plus-sy0-701-cert-prep-by-infosec",
+        "publisher": "LinkedIn Learning / Infosec Institute",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SY0-701"
+        ],
+        "notes": "Nine hours 57 minutes, released October 2025, covering the five V7 domains."
+      },
+      {
+        "id": "comptia-sy0-701-oreilly-cert-guide",
+        "title": "CompTIA Security+ SY0-701 Cert Guide",
+        "url": "https://www.oreilly.com/library/view/comptia-security-sy0-701/9780138293215/",
+        "publisher": "O'Reilly / Pearson / Lewis Heuermann",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SY0-701"
+        ],
+        "notes": "April 2024, 814 pages and 21 hours 54 minutes listed, with chapter review, practice software and study-planning material."
+      },
+      {
+        "id": "comptia-sy0-701-udemy-dion",
+        "title": "CompTIA Security+ SY0-701 Complete Course and Practice Exam",
+        "url": "https://www.udemy.com/course/securityplus/",
+        "publisher": "Udemy / Jason Dion",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SY0-701"
+        ],
+        "notes": "Thirty-one hours 11 minutes, 265 lectures, quizzes and practice exam listed, updated August 2026."
+      },
+      {
+        "id": "comptia-sy0-701-measureup",
+        "title": "CompTIA Security+ SY0-701 practice test",
+        "url": "https://www.measureup.com/sy0-701-comptia-security-practice-test.html",
+        "publisher": "MeasureUp",
+        "authority_class": 4,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SY0-701"
+        ],
+        "notes": "213 questions and December 2023 release listed with practice/certification modes and explanation references; use for remediation, not item memorization."
+      },
+      {
+        "id": "comptia-sy0-701-professor-messer",
+        "title": "Professor Messer Security+ SY0-701 training course",
+        "url": "https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/",
+        "publisher": "Professor Messer",
+        "authority_class": 4,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SY0-701"
+        ],
+        "notes": "Free 121-video current course with 15 hours 11 minutes listed; optional commercial notes/practice are separate."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "cedd36e62133f182eef59fffb2bf64598ff95c21783d8cf2f72bea0cc0b1ee33",
+      "guide_sections": [
+        "1. General security concepts — 12%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "23e3b39f053575c595c7b851a3b4db3db9f7351ae6e0d92867bb97c6d950a879",
+      "guide_sections": [
+        "1. General security concepts — 12%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "d90635a8fb95e1b602e367cc764c36f42db8bd9dad902c62975ceb17863ae67a",
+      "guide_sections": [
+        "1. General security concepts — 12%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "963896a30d1f930b38dca7ca0978c0673a39652bae389fb258830a0494b63083",
+      "guide_sections": [
+        "1. General security concepts — 12%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "1a13f5ad88e36a98306dca012c2571d80b16a56e9d640462c75e07827172eff5",
+      "guide_sections": [
+        "2. Threats, vulnerabilities, and mitigations — 22%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "6f10776a2a248fd4bcb77a760b7941c1c280749d36483552c9cb98a583b3ce4f",
+      "guide_sections": [
+        "2. Threats, vulnerabilities, and mitigations — 22%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "934ced01d3b75d08d906d7c904170a50bc1ffcb44f93be09c10aeaff3bb8c72e",
+      "guide_sections": [
+        "2. Threats, vulnerabilities, and mitigations — 22%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "421f242acc777ac76abbe5317d7ead134afd07f94885270367cb196ff0adf666",
+      "guide_sections": [
+        "2. Threats, vulnerabilities, and mitigations — 22%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "e7920364791c91e265bbb5fb222cf326da63ba9227b7c9aab721483416efcfe1",
+      "guide_sections": [
+        "2. Threats, vulnerabilities, and mitigations — 22%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "c4401b81dc76d9698224c23e8fb8c89ef5e4138ba8b271c7a596ecbbae204ae4",
+      "guide_sections": [
+        "3. Security architecture — 18%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "4604462fa51f0bf49cfb6fccbd2dfbca4095e34ff5ad0be5d347660ab48ec895",
+      "guide_sections": [
+        "3. Security architecture — 18%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "78f37483cc7e71251d8cf78ab2cdd03cf1d72a14493221fa6afc379ffe9979dd",
+      "guide_sections": [
+        "3. Security architecture — 18%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "53ee44035f130f3157c97210a673bc71dd5309364cb20f4634dd702c34314fab",
+      "guide_sections": [
+        "3. Security architecture — 18%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "0619b1b25e3d55e7bb8e0e99f2ca3691de21841d7cbcf5b8eb947035f7bed057",
+      "guide_sections": [
+        "4. Security operations — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "07061560261b68b13bbb86e8f60068bbb2ad6bfa91de3e3312447f25e3ccf5db",
+      "guide_sections": [
+        "4. Security operations — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "68626a073d6b421ad717e771daea4a4d69e36d36a2d386ffe163a0825be8bb94",
+      "guide_sections": [
+        "4. Security operations — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "7b2892de1d9487c3ebb476b22d344105274b59b8adf3f7816cda4635669e18f1",
+      "guide_sections": [
+        "4. Security operations — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "c758b672093cddf9ba31412c0b5d813c8b4a8692799506a5738d7feb1cb31d68",
+      "guide_sections": [
+        "4. Security operations — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "d030b370b66c659bdceb183b8dcd4134a1ee16854a0e4717e8576cb71570fbb0",
+      "guide_sections": [
+        "4. Security operations — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "ad51d690de57552ce585262f764fd9230adf34de6f1ab6e6552bf926ecd793e0",
+      "guide_sections": [
+        "4. Security operations — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "91065fde63bb372f6712e8d9ec57feb7d0a23b158ffcecf0332f99cec3c4535e",
+      "guide_sections": [
+        "4. Security operations — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "d93a61701107c8c068b73bf88d85dce67c5984cbd44e89e759df91ada40af650",
+      "guide_sections": [
+        "4. Security operations — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "3b3d339382a807d4d7c7ee0cb6dce43254cb9ed5905616a760aa860319d76f53",
+      "guide_sections": [
+        "5. Security program management and oversight — 20%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "359f1245002dbce80205778f939dc9673246a820eb6f5371eff2df36a5a3c485",
+      "guide_sections": [
+        "5. Security program management and oversight — 20%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "aaa474989c198ca16da7387280a6a1895f884ea6a86229b4f2a26a48119e63af",
+      "guide_sections": [
+        "5. Security program management and oversight — 20%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "5bd76a27fd7dca3eeb09f577a12d053e8d6912f5ae7999fbd03c2f50042c60bc",
+      "guide_sections": [
+        "5. Security program management and oversight — 20%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "8ded2dfafeec68eb890b6d994c85128de44f512bc5f6e8ed44c8c2504f2a21f7",
+      "guide_sections": [
+        "5. Security program management and oversight — 20%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "31cf669338a7ad02e1cc1f9ceb7ea1402d180bca1ff6f02acf20e6e1ac382932",
+      "guide_sections": [
+        "5. Security program management and oversight — 20%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "SY0-701"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "SY0-701",
+        "title": "CompTIA Security+ (V7)",
+        "url": "https://www.comptia.org/en-us/certifications/security/v7/",
+        "guide_path": "guides/SY0-701-comptia-security-plus.md",
+        "snapshot_path": "data\\objective-snapshots\\sy0-701-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\sy0-701-official-status.json",
+        "previous_sha256": "9e13564c9c134ca42752f3bc90083f2da3568e7e9e93f9d068a98197fbe19528",
+        "current_sha256": "152af64f7b23ff8a264ea9aa465c610cc797fcdd6b771d8f7dfe15cdab6b9040",
+        "previous_status_sha256": "21aa84eba548ba5aa27941db3976f23686520971ba0a86bd2841ded497be7226",
+        "current_status_sha256": "b9d748e877e5b8833420bc13b1e4ecfff2d403be007c707f574b473bc0495666",
+        "official_status": {
+          "skills_versions": [
+            "Exam version: V7",
+            "Exam series code: SY0-701",
+            "Launch date: November 7, 2023",
+            "Number of questions: maximum of 90, a mix of multiple-choice and performance-based questions",
+            "Retirement: English – June 11, 2027; Japanese, Portuguese, Spanish, and Thai – August 13, 2027",
+            "Duration: 90 minutes",
+            "Passing score: 750 (on a scale of 100-900)",
+            "Languages: English, Japanese, Portuguese, Spanish, and Thai"
+          ],
+          "upcoming_announcements": [
+            "Retirement: English – June 11, 2027; Japanese, Portuguese, Spanish, and Thai – August 13, 2027"
+          ]
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 28,
+    "reachable": 26,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "comptia-security-v7-current",
+      "url": "https://www.comptia.org/en-us/certifications/security/v7/",
+      "checked_at": "2026-09-29T04:16:51.684937+00:00",
+      "health": {
+        "id": "comptia-security-v7-current",
+        "url": "https://www.comptia.org/en-us/certifications/security/v7/",
+        "checked_at": "2026-09-29T04:16:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/certifications/security/v7/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Security+ (Plus) Certification | CompTIA",
+        "canonical_url": "https://www.comptia.org/en-us/certifications/security/v7/",
+        "duration_signals": [
+          "20 hours",
+          "25 hours",
+          "40 hours",
+          "60 hours",
+          "90 minutes"
+        ],
+        "signal_fingerprint": "94fbc575c6511d07db4e6bacc0e12e2064c8f9314d77aa17964a5e15e130dada",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/certifications/security/v7/",
+      "sha256": "52b5fd067bee0d0d2587da0676f8e2c7653c5b4b4fd7f7f64422a4fb7bf5e977",
+      "text_characters": 9366
+    },
+    {
+      "id": "comptia-security-v8-announcement",
+      "url": "https://www.comptia.org/en-us/certifications/security/v8/",
+      "checked_at": "2026-09-29T04:16:51.685943+00:00",
+      "health": {
+        "id": "comptia-security-v8-announcement",
+        "url": "https://www.comptia.org/en-us/certifications/security/v8/",
+        "checked_at": "2026-09-29T04:16:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/certifications/security/v8/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Security+ Certification V8 (Coming Soon, Launching November 2026) | CompTIA",
+        "canonical_url": "https://www.comptia.org/en-us/certifications/security/v8/",
+        "duration_signals": [
+          "20 hours",
+          "25 hours",
+          "40 hours",
+          "60 hours",
+          "90 minutes"
+        ],
+        "signal_fingerprint": "eb55a760930c16a7975e38ba0547afe8e8a0593405196957f29f004a3d53ec5c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/certifications/security/v8/",
+      "sha256": "bc6681c91b962acf4c40cf0363b8bc28a77c7cf1d3ccd8c4f63dad4423b583bb",
+      "text_characters": 7341
+    },
+    {
+      "id": "comptia-certmaster-learn",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+      "checked_at": "2026-09-29T04:16:51.686637+00:00",
+      "health": {
+        "id": "comptia-certmaster-learn",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "checked_at": "2026-09-29T04:16:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CompTIA CertMaster Learn",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "duration_signals": [],
+        "signal_fingerprint": "65786e0e6431fcfe2e58ba358241f9cdb456812d6ade43fbd74876ee340cfef2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+      "sha256": "9bee308577f1977bd0f56dca8d4bae5b76f9c414dd50ad6eefa6ce5961e80e06",
+      "text_characters": 1692
+    },
+    {
+      "id": "comptia-certmaster-labs",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+      "checked_at": "2026-09-29T04:16:52.535714+00:00",
+      "health": {
+        "id": "comptia-certmaster-labs",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "checked_at": "2026-09-29T04:16:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CompTIA CertMaster Labs | CompTIA UK",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "duration_signals": [],
+        "signal_fingerprint": "4b7552b7bda3589184d03b2dfcb4182095d6fc6dfc7d5cfddea7650446126f7f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+      "sha256": "37496f082d45d2dc2e76ce2d12a62de9f2e4b77bcf222b42cceb0c52f93d10e6",
+      "text_characters": 1552
+    },
+    {
+      "id": "comptia-certmaster-practice",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+      "checked_at": "2026-09-29T04:16:56.109882+00:00",
+      "health": {
+        "id": "comptia-certmaster-practice",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "checked_at": "2026-09-29T04:16:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CertMaster Practice",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "duration_signals": [],
+        "signal_fingerprint": "87ff57590e3cf2e101143725a522c14d9cbd91afd9e8d02bb27f86e7af1751c4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+      "sha256": "8d8ab7b20b45cc2623ce1437a79c68745eeb183d210d537fd32ce9839f994bf9",
+      "text_characters": 3505
+    },
+    {
+      "id": "comptia-sy0-701-blueprint",
+      "url": "https://www.comptia.org/en-us/certifications/security/",
+      "checked_at": "2026-09-29T04:17:06.883158+00:00",
+      "health": {
+        "id": "comptia-sy0-701-blueprint",
+        "url": "https://www.comptia.org/en-us/certifications/security/",
+        "checked_at": "2026-09-29T04:17:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/certifications/security/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Security+ (Plus) Certification | CompTIA",
+        "canonical_url": "https://www.comptia.org/en-us/certifications/security/",
+        "duration_signals": [],
+        "signal_fingerprint": "ca9df7bd433f89a7ad9ef717f30f49621ec6ee3038b2be211a7943028ef59cd5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/certifications/security/",
+      "sha256": "70fb4bf244cdf792256e697a02031f89f3df2c1a5477dbc3e6dde2c92dbcb517",
+      "text_characters": 770
+    },
+    {
+      "id": "comptia-sy0-701-pluralsight",
+      "url": "https://www.pluralsight.com/paths/comptia-security-sy0-701",
+      "checked_at": "2026-09-29T04:17:07.593090+00:00",
+      "health": {
+        "id": "comptia-sy0-701-pluralsight",
+        "url": "https://www.pluralsight.com/paths/comptia-security-sy0-701",
+        "checked_at": "2026-09-29T04:17:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/comptia-security-sy0-701",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "CompTIA Security+ (SY0-701)",
+        "canonical_url": "https://www.pluralsight.com/paths/comptia-security-sy0-701",
+        "duration_signals": [
+          "22 Hours"
+        ],
+        "signal_fingerprint": "b0597d62a1623dff1c6ce6f2d9e00568fc48cbf2a1769d3fdd140a6bbf0a57c2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/comptia-security-sy0-701",
+      "sha256": "83592a12fe0c99d03b5d80ad241f762d6dce864f2a6e7ffcfbf0a4998dcbf147",
+      "text_characters": 4802
+    },
+    {
+      "id": "comptia-sy0-701-linkedin",
+      "url": "https://www.linkedin.com/learning/comptia-security-plus-sy0-701-cert-prep-by-infosec",
+      "checked_at": "2026-09-29T04:17:11.140323+00:00",
+      "health": {
+        "id": "comptia-sy0-701-linkedin",
+        "url": "https://www.linkedin.com/learning/comptia-security-plus-sy0-701-cert-prep-by-infosec",
+        "checked_at": "2026-09-29T04:17:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.linkedin.com/learning/comptia-security-plus-sy0-701-cert-prep-by-infosec",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CompTIA Security+ (SY0-701) Cert Prep by Infosec Online Class | LinkedIn Learning, formerly Lynda.com",
+        "canonical_url": "https://www.linkedin.com/learning/comptia-security-plus-sy0-701-cert-prep-by-infosec",
+        "duration_signals": [
+          "PT10M27S",
+          "PT10M36S",
+          "PT10M41S",
+          "PT10M48S",
+          "PT10M50S",
+          "PT10M55S",
+          "PT11M37S",
+          "PT11M3S",
+          "PT11M6S",
+          "PT12M43S",
+          "PT12M54S",
+          "PT13M26S",
+          "PT13M39S",
+          "PT15M20S",
+          "PT15M26S",
+          "PT15M31S",
+          "PT1M14S",
+          "PT2M41S",
+          "PT2M46S",
+          "PT2M55S",
+          "PT3M4S",
+          "PT3M58S",
+          "PT3M9S",
+          "PT47S",
+          "PT4M29S",
+          "PT4M33S",
+          "PT4M39S",
+          "PT4M46S",
+          "PT4M55S",
+          "PT4M6S"
+        ],
+        "signal_fingerprint": "7f438dafe99cdb1d16839f603ed7d666cc81e79524f39651c3d1e7caa2b87efc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.linkedin.com/learning/comptia-security-plus-sy0-701-cert-prep-by-infosec",
+      "sha256": "2a7ff325269f68fa40a7778250acae7b57528895ac8e036b7d0c1a22eba8fc6f",
+      "text_characters": 5999
+    },
+    {
+      "id": "comptia-sy0-701-oreilly-cert-guide",
+      "url": "https://www.oreilly.com/library/view/comptia-security-sy0-701/9780138293215/",
+      "checked_at": "2026-09-29T04:17:11.916061+00:00",
+      "health": {
+        "id": "comptia-sy0-701-oreilly-cert-guide",
+        "url": "https://www.oreilly.com/library/view/comptia-security-sy0-701/9780138293215/",
+        "checked_at": "2026-09-29T04:17:11+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/comptia-security-sy0-701/9780138293215/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "comptia-sy0-701-udemy-dion",
+      "url": "https://www.udemy.com/course/securityplus/",
+      "checked_at": "2026-09-29T04:17:12.135263+00:00",
+      "health": {
+        "id": "comptia-sy0-701-udemy-dion",
+        "url": "https://www.udemy.com/course/securityplus/",
+        "checked_at": "2026-09-29T04:17:12+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/securityplus/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "comptia-sy0-701-measureup",
+      "url": "https://www.measureup.com/sy0-701-comptia-security-practice-test.html",
+      "checked_at": "2026-09-29T04:17:12.245438+00:00",
+      "health": {
+        "id": "comptia-sy0-701-measureup",
+        "url": "https://www.measureup.com/sy0-701-comptia-security-practice-test.html",
+        "checked_at": "2026-09-29T04:17:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/sy0-701-comptia-security-practice-test.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "CompTIA Practice Test SY0-701: CompTIA Security+",
+        "canonical_url": "https://www.measureup.com/sy0-701-comptia-security-practice-test.html",
+        "duration_signals": [],
+        "signal_fingerprint": "677308a8a55c364b26acfd6c1b19a922262db2aa452718bdd3456131ca7e8764",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/sy0-701-comptia-security-practice-test.html",
+      "sha256": "3557360bf9ea960379c654c4e559801d07cffb7ac3b726d76ccbf7ec12fd4bca",
+      "text_characters": 21447
+    },
+    {
+      "id": "comptia-sy0-701-professor-messer",
+      "url": "https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/",
+      "checked_at": "2026-09-29T04:17:12.524951+00:00",
+      "health": {
+        "id": "comptia-sy0-701-professor-messer",
+        "url": "https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/",
+        "checked_at": "2026-09-29T04:17:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Professor Messer’s CompTIA SY0-701 Security+ Course",
+        "canonical_url": "https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/",
+        "duration_signals": [
+          "11 minutes",
+          "15 hours"
+        ],
+        "signal_fingerprint": "8e20a21279fc35f97f6be78b06350b740c27b3906f1d127193a092caee2470eb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/",
+      "sha256": "669ecf474e36580c9c604f9fea316fedcbb83bb24fa6d19abccec6bb2fc33d23",
+      "text_characters": 26344
+    },
+    {
+      "id": "comptia-partner-resources",
+      "url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+      "checked_at": "2026-09-29T04:21:36.619363+00:00",
+      "health": {
+        "id": "comptia-partner-resources",
+        "url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+        "checked_at": "2026-09-29T04:21:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Partner Resources",
+        "canonical_url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+        "duration_signals": [],
+        "signal_fingerprint": "be631fe463c6d0a7c5e51dfcf4ec7e4813a2eeae48c6ca7bc993534faf97d57e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+      "sha256": "14576ecf6117f8f05f0462c05865386b5da334d76d89e1da2474161210a21a35",
+      "text_characters": 4747
+    },
+    {
+      "id": "splk-5003-source-1",
+      "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+      "checked_at": "2026-09-29T04:21:36.619868+00:00",
+      "health": {
+        "id": "splk-5003-source-1",
+        "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+        "checked_at": "2026-09-29T04:21:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SP 800-61 Rev. 3, Incident Response Recommendations and Considerations for Cybersecurity Risk Management: A CSF 2.0 Community Profile | CSRCLock",
+        "canonical_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+        "duration_signals": [],
+        "signal_fingerprint": "4eddb7b46f49434ea1d3b21883c76efcaaf421b13feb2fac1f0d2309a481cc4a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+      "sha256": "8ca19fa31f873e925e287fc22acd53cfcae8fed1bbbbc881c90d02a1daf193c7",
+      "text_characters": 4695
+    },
+    {
+      "id": "nist-800-63b-4",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "checked_at": "2026-09-29T04:21:36.620245+00:00",
+      "health": {
+        "id": "nist-800-63b-4",
+        "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+        "checked_at": "2026-09-29T04:21:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+        "content_type": "text/html",
+        "page_title": "NIST Special Publication 800-63B",
+        "canonical_url": "/800-63-4/sp800-63b.html",
+        "duration_signals": [
+          "1 hour",
+          "10 minutes",
+          "12 hours",
+          "15 minutes",
+          "24 hours",
+          "24 hours and 10 minutes"
+        ],
+        "signal_fingerprint": "5ddbbdf4604797a1f84ba2134130ae1d3b228955b507c77d2c1b48e269f67805",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "sha256": "d54cfbca8c145f5c628faa484baf8dd56ed8e78f175605d8c5f282a1666f3f3d",
+      "text_characters": 253608
+    },
+    {
+      "id": "panw-cloud-security-engineer-source-11",
+      "url": "https://www.first.org/cvss/v4.0/specification-document",
+      "checked_at": "2026-09-29T04:21:37.425556+00:00",
+      "health": {
+        "id": "panw-cloud-security-engineer-source-11",
+        "url": "https://www.first.org/cvss/v4.0/specification-document",
+        "checked_at": "2026-09-29T04:21:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.first.org/cvss/v4.0/specification-document",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "CVSS v4.0 Specification Document",
+        "canonical_url": "https://www.first.org/cvss/v4.0/specification-document",
+        "duration_signals": [],
+        "signal_fingerprint": "842169ef5ccb1a87fd3e4ffb41444b4c81296ca7b6764e9e5ae3ac9bcc6e79c9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.first.org/cvss/v4.0/specification-document",
+      "sha256": "cf866c249e3b5006c5db72769a0ab0319eb257fb87b1c71cf4a441ec5a2ee4da",
+      "text_characters": 81090
+    },
+    {
+      "id": "first-cvss4-implementation",
+      "url": "https://www.first.org/cvss/v4.0/implementation-guide",
+      "checked_at": "2026-09-29T04:21:37.537525+00:00",
+      "health": {
+        "id": "first-cvss4-implementation",
+        "url": "https://www.first.org/cvss/v4.0/implementation-guide",
+        "checked_at": "2026-09-29T04:21:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.first.org/cvss/v4.0/implementation-guide",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "CVSS v4.0 Consumer Implementation Guide",
+        "canonical_url": "https://www.first.org/cvss/v4.0/implementation-guide",
+        "duration_signals": [],
+        "signal_fingerprint": "959912e2481597fa5187fbaf42b9770ceb863b3715491c0330e888951b4be903",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.first.org/cvss/v4.0/implementation-guide",
+      "sha256": "78eac7641aa10e636b820a619c56fb9e2aa9e4325f11a472fbe67283ea9e107f",
+      "text_characters": 64797
+    },
+    {
+      "id": "cisa-kev-catalog",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "checked_at": "2026-09-29T04:21:38.714918+00:00",
+      "health": {
+        "id": "cisa-kev-catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+        "checked_at": "2026-09-29T04:21:38+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "owasp-sql-injection-prevention",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+      "checked_at": "2026-09-29T04:21:41.506992+00:00",
+      "health": {
+        "id": "owasp-sql-injection-prevention",
+        "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+        "checked_at": "2026-09-29T04:21:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SQL Injection Prevention - OWASP Cheat Sheet Series",
+        "canonical_url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+        "duration_signals": [],
+        "signal_fingerprint": "53df6b6c5c69620e7d7af0b9cc990e99ac5ecda70b5bfcdf3966f38dde4f1c42",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+      "sha256": "8dabae81682053857e75984e53874a5891b5ca636fcdcbdf76d0fbf0eccc8d77",
+      "text_characters": 22541
+    },
+    {
+      "id": "owasp-authentication",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html",
+      "checked_at": "2026-09-29T04:21:41.549910+00:00",
+      "health": {
+        "id": "owasp-authentication",
+        "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html",
+        "checked_at": "2026-09-29T04:21:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Authentication - OWASP Cheat Sheet Series",
+        "canonical_url": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html",
+        "duration_signals": [],
+        "signal_fingerprint": "8d94df0adb79c75d45e8928081c58f23bdb6c8f06cad8e03ddeba2594aa40616",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html",
+      "sha256": "90a879ce72a5ad5c5478ce866b2b7a2a19b53da456e77718b64be4c89558bab4",
+      "text_characters": 40490
+    },
+    {
+      "id": "oauth-security-bcp",
+      "url": "https://www.rfc-editor.org/rfc/rfc9700.html",
+      "checked_at": "2026-09-29T04:21:44.374787+00:00",
+      "health": {
+        "id": "oauth-security-bcp",
+        "url": "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "checked_at": "2026-09-29T04:21:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "content_type": "text/html",
+        "page_title": "RFC 9700: Best Current Practice for OAuth 2.0 Security",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc9700.html",
+        "duration_signals": [],
+        "signal_fingerprint": "83621bbc304e31048dd8a2fa8e3ca32f83ace07bc096e935c5bac65cd60fb8e7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9700.html",
+      "sha256": "c00e2234fcd79581bc29669c60d693afaa42f67d9205bddee848f757ae975419",
+      "text_characters": 113651
+    },
+    {
+      "id": "openid-connect-core",
+      "url": "https://openid.net/specs/openid-connect-core-1_0.html",
+      "checked_at": "2026-09-29T04:21:47.301846+00:00",
+      "health": {
+        "id": "openid-connect-core",
+        "url": "https://openid.net/specs/openid-connect-core-1_0.html",
+        "checked_at": "2026-09-29T04:21:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://openid.net/specs/openid-connect-core-1_0.html",
+        "content_type": "text/html",
+        "page_title": "Final: OpenID Connect Core 1.0 incorporating errata set 2",
+        "canonical_url": "https://openid.net/specs/openid-connect-core-1_0.html",
+        "duration_signals": [],
+        "signal_fingerprint": "40d924ac6efae36d7b00e4cacaa793639a0838648915a128b39370814e3e6f1a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://openid.net/specs/openid-connect-core-1_0.html",
+      "sha256": "4d016752a645e8a3c259baa4173b5a90cb6c82898ce868fc8444adde262a5aed",
+      "text_characters": 255954
+    },
+    {
+      "id": "cryptography50-x509-tutorial",
+      "url": "https://cryptography.io/en/50.0.1/x509/tutorial/",
+      "checked_at": "2026-09-29T04:21:47.737174+00:00",
+      "health": {
+        "id": "cryptography50-x509-tutorial",
+        "url": "https://cryptography.io/en/50.0.1/x509/tutorial/",
+        "checked_at": "2026-09-29T04:21:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cryptography.io/en/50.0.1/x509/tutorial/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Tutorial — Cryptography 50.0.1 documentation",
+        "canonical_url": "https://cryptography.io/en/50.0.1/x509/tutorial/",
+        "duration_signals": [],
+        "signal_fingerprint": "e335f1ed188d7948bc909c27cf5a5c7daa8825e5f51466a5af2504eab4603f52",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cryptography.io/en/50.0.1/x509/tutorial/",
+      "sha256": "032a84760430176bdaf75b55003f4b7e7f2375f5e362b7cc30f4184ceb41ff04",
+      "text_characters": 13079
+    },
+    {
+      "id": "cryptography50-x509-verification",
+      "url": "https://cryptography.io/en/50.0.1/x509/verification/",
+      "checked_at": "2026-09-29T04:21:48.276404+00:00",
+      "health": {
+        "id": "cryptography50-x509-verification",
+        "url": "https://cryptography.io/en/50.0.1/x509/verification/",
+        "checked_at": "2026-09-29T04:21:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cryptography.io/en/50.0.1/x509/verification/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "X.509 Verification — Cryptography 50.0.1 documentation",
+        "canonical_url": "https://cryptography.io/en/50.0.1/x509/verification/",
+        "duration_signals": [],
+        "signal_fingerprint": "eedd5f2806b9c0fa74e910ec1315eef0436ee0b05a74c5b7bf588901be36075b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cryptography.io/en/50.0.1/x509/verification/",
+      "sha256": "b4ac88ac79ed40671a8cfa598cef88d4bf798c9c10fe86b6125cf966edcff438",
+      "text_characters": 14385
+    },
+    {
+      "id": "cryptography50-aead",
+      "url": "https://cryptography.io/en/50.0.1/hazmat/primitives/aead/",
+      "checked_at": "2026-09-29T04:21:48.277580+00:00",
+      "health": {
+        "id": "cryptography50-aead",
+        "url": "https://cryptography.io/en/50.0.1/hazmat/primitives/aead/",
+        "checked_at": "2026-09-29T04:21:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cryptography.io/en/50.0.1/hazmat/primitives/aead/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Authenticated encryption — Cryptography 50.0.1 documentation",
+        "canonical_url": "https://cryptography.io/en/50.0.1/hazmat/primitives/aead/",
+        "duration_signals": [],
+        "signal_fingerprint": "26380df13823cbb3ad682185d81148dfe1ee6b80e1d1559a49980f812698b086",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cryptography.io/en/50.0.1/hazmat/primitives/aead/",
+      "sha256": "2cd41764081c5feb674dfcfab06d0e037c12096ddf0cde46a55bc20616bdd920",
+      "text_characters": 30808
+    },
+    {
+      "id": "cryptography50-ec",
+      "url": "https://cryptography.io/en/50.0.1/hazmat/primitives/asymmetric/ec/",
+      "checked_at": "2026-09-29T04:21:51.408078+00:00",
+      "health": {
+        "id": "cryptography50-ec",
+        "url": "https://cryptography.io/en/50.0.1/hazmat/primitives/asymmetric/ec/",
+        "checked_at": "2026-09-29T04:21:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cryptography.io/en/50.0.1/hazmat/primitives/asymmetric/ec/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Elliptic curve cryptography — Cryptography 50.0.1 documentation",
+        "canonical_url": "https://cryptography.io/en/50.0.1/hazmat/primitives/asymmetric/ec/",
+        "duration_signals": [],
+        "signal_fingerprint": "4010c2f113fead1157d2759e797c75acc475298f779bbfa0389d3e40d5f471e5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cryptography.io/en/50.0.1/hazmat/primitives/asymmetric/ec/",
+      "sha256": "f3c9a6c4879ebc30522a5aed6f63cf1d6459cd5349e979ecf0a14277e73815cf",
+      "text_characters": 20298
+    },
+    {
+      "id": "cryptography50-x509-reference",
+      "url": "https://cryptography.io/en/50.0.1/x509/reference/",
+      "checked_at": "2026-09-29T04:21:51.810850+00:00",
+      "health": {
+        "id": "cryptography50-x509-reference",
+        "url": "https://cryptography.io/en/50.0.1/x509/reference/",
+        "checked_at": "2026-09-29T04:21:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cryptography.io/en/50.0.1/x509/reference/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "X.509 Reference — Cryptography 50.0.1 documentation",
+        "canonical_url": "https://cryptography.io/en/50.0.1/x509/reference/",
+        "duration_signals": [],
+        "signal_fingerprint": "1b89181b183148fe0f818b86946fd3fe2f740b870e112798c9924e5aadf303a7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cryptography.io/en/50.0.1/x509/reference/",
+      "sha256": "6d16745d551af26a990ed4757e4a301e7608a784d2a674a2a9744fb685d9f14a",
+      "text_characters": 102381
+    },
+    {
+      "id": "comptia-sy0-701-objectives-pdf",
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/cf25ec24b8a511ef9ecbb69c0f9687be?checkExpiry=false",
+      "checked_at": "2026-09-29T04:21:59.580817+00:00",
+      "health": {
+        "id": "comptia-sy0-701-objectives-pdf",
+        "url": "https://lecbyo.files.cmp.optimizely.com/download/cf25ec24b8a511ef9ecbb69c0f9687be?checkExpiry=false",
+        "checked_at": "2026-09-29T04:21:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://lecbyo.files.cmp.optimizely.com/download/cf25ec24b8a511ef9ecbb69c0f9687be?checkExpiry=false",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://lecbyo.files.cmp.optimizely.com/download/cf25ec24b8a511ef9ecbb69c0f9687be?checkExpiry=false",
+      "sha256": "95a2c75157928a8ba21b755b9cd25bde12c36983588b9fd4ee4e2268ae756b06",
+      "bytes": 464094,
+      "pdf_pages": 24,
+      "text_characters": 38288
+    },
+    {
+      "id": "nist-sp800-61r3-pdf",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "checked_at": "2026-09-29T04:22:06.993786+00:00",
+      "health": {
+        "id": "nist-sp800-61r3-pdf",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "checked_at": "2026-09-29T04:21:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "sha256": "e5593d6bb85daecec7e8d9549400c7b3473bcc3f06e469c82218073afa7fba2d",
+      "bytes": 1040566,
+      "pdf_pages": 48,
+      "text_characters": 107535
+    },
+    {
+      "id": "nist-800-207",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "checked_at": "2026-09-29T04:22:04.748355+00:00",
+      "health": {
+        "id": "nist-800-207",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "checked_at": "2026-09-29T04:21:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "sha256": "0290d6ece24874287316f4bf430fef770aa4ec08a2227c8f2c1e5b2ff975e03d",
+      "bytes": 966908,
+      "pdf_pages": 59,
+      "text_characters": 156816
+    },
+    {
+      "id": "nist-800-88r2",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "checked_at": "2026-09-29T04:22:07.285240+00:00",
+      "health": {
+        "id": "nist-800-88r2",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+        "checked_at": "2026-09-29T04:21:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "sha256": "39bb805c72723ed74f08e5806cd8463ca2554a62abb4f97b9d19c0398a8a7c55",
+      "bytes": 983677,
+      "pdf_pages": 48,
+      "text_characters": 112546
+    },
+    {
+      "id": "cisa-kev-mirror",
+      "url": "https://github.com/cisagov/kev-data",
+      "checked_at": "2026-09-29T04:25:29.038246+00:00",
+      "health": {
+        "id": "cisa-kev-mirror",
+        "url": "https://github.com/cisagov/kev-data",
+        "checked_at": "2026-09-29T04:25:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/cisagov/kev-data",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - cisagov/kev-data: Mirror of cisa.gov/kev data files",
+        "canonical_url": "https://github.com/cisagov/kev-data",
+        "duration_signals": [],
+        "signal_fingerprint": "019d15bb3cd758b4aa8c6fa57d5007a10fa2de3874971899f2bc65e7e7c1d19b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/cisagov/kev-data",
+      "sha256": "018330479f46a5f081998928f582720018800816aa9d81417cd1019521b0cfb5",
+      "text_characters": 3763
+    }
+  ],
+  "added_source_ids": [
+    "comptia-sy0-701-objectives-pdf",
+    "nist-sp800-61r3-pdf",
+    "nist-800-207",
+    "first-cvss4-implementation",
+    "cisa-kev-catalog",
+    "owasp-sql-injection-prevention",
+    "owasp-authentication",
+    "oauth-security-bcp",
+    "openid-connect-core",
+    "cryptography50-x509-tutorial",
+    "cryptography50-x509-verification",
+    "cryptography50-aead",
+    "cryptography50-ec",
+    "cryptography50-x509-reference",
+    "cisa-kev-mirror"
+  ],
+  "findings": [
+    {
+      "id": "sy0701-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Duration metadata is an extraction baseline update",
+      "url": "https://www.comptia.org/en-us/certifications/security/v7/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SY0-701"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The normalized diff adds only Duration: 90 minutes; weights, objectives and retirement text are unchanged.",
+      "recommendation": "Archive byte-identical prior objectives and retain historical review hashes/dates; explicitly accept the reviewed metadata.",
+      "disposition": "applied",
+      "source_id": "comptia-security-v7-current",
+      "resolution": "Archive byte-identical prior objectives and retain historical review hashes/dates; explicitly accept the reviewed metadata."
+    },
+    {
+      "id": "sy0701-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "One answer was stale after the published successor announcement",
+      "url": "https://www.comptia.org/en-us/certifications/security/v8/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SY0-701"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The guide transition section already named V8/SY0-801, but answer 42 still said not to infer a successor.",
+      "recommendation": "State the explicit expected November 17, 2026 announcement and keep SY0-701 language-specific retirement and current scope separate.",
+      "disposition": "applied",
+      "source_id": "comptia-security-v8-announcement",
+      "resolution": "State the explicit expected November 17, 2026 announcement and keep SY0-701 language-specific retirement and current scope separate."
+    },
+    {
+      "id": "sy0701-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Certificate-path and revocation checks have different evidence",
+      "url": "https://cryptography.io/en/50.0.1/x509/verification/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SY0-701"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The selected verifier uses explicit roots, time and expected DNS identity; a separate CRL is not automatically consumed.",
+      "recommendation": "Add original executed path/CSR tests and separate signed-CRL checks with an explicit revocation limitation.",
+      "disposition": "applied",
+      "source_id": "cryptography50-x509-verification",
+      "resolution": "Add original executed path/CSR tests and separate signed-CRL checks with an explicit revocation limitation."
+    },
+    {
+      "id": "sy0701-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Zero-trust policy decisions and enforcement need separate roles",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SY0-701"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "NIST section 3 distinguishes policy engine, administrator and enforcement point, also named in PDF objective 1.2.",
+      "recommendation": "Teach the three roles and an original contractor-access decision/enforcement case.",
+      "disposition": "applied",
+      "source_id": "nist-800-207",
+      "resolution": "Teach the three roles and an original contractor-access decision/enforcement case."
+    },
+    {
+      "id": "sy0701-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Current incident response guidance differs in organization from exam milestones",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SY0-701"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Revision 3 section 2.1 aligns response to CSF 2.0 while broader preparation and continuous improvement support it.",
+      "recommendation": "Retain objective 4.8 milestones and explicitly label current operational context; no silent exam-scope replacement.",
+      "disposition": "applied",
+      "source_id": "nist-sp800-61r3-pdf",
+      "resolution": "Retain objective 4.8 milestones and explicitly label current operational context; no silent exam-scope replacement."
+    },
+    {
+      "id": "sy0701-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Severity, context and detection ratios needed precise boundaries",
+      "url": "https://www.first.org/cvss/v4.0/specification-document",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SY0-701"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "CVSS v4 Supplemental does not alter the numerical score; deployment and exploitation context affect priorities.",
+      "recommendation": "Add version/vector guidance and an invented prioritization case; separately calculate precision and recall without inventing a false-positive rate.",
+      "disposition": "applied",
+      "source_id": "panw-cloud-security-engineer-source-11",
+      "resolution": "Add version/vector guidance and an invented prioritization case; separately calculate precision and recall without inventing a false-positive rate."
+    },
+    {
+      "id": "sy0701-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Location context is not an independent substitute for authentication factors",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SY0-701"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current NIST authentication guidance distinguishes fraud/context signals from an authentication factor and sets scoped password requirements.",
+      "recommendation": "Explain the exam terminology alongside current context, length, compromise and recovery guidance.",
+      "disposition": "applied",
+      "source_id": "nist-800-63b-4",
+      "resolution": "Explain the exam terminology alongside current context, length, compromise and recovery guidance."
+    }
+  ],
+  "blog_intake": [],
+  "labs": {
+    "proposed": 8,
+    "service_labs_executed": 0,
+    "isolated_local_crypto_exercises": 2,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 34,
+      "failed": 0,
+      "checks": [
+        "public crypto success states",
+        "three public crypto rejection cases",
+        "public CSR and two-certificate chain",
+        "public name and expiry cases",
+        "leaf-first chain ordering",
+        "CSR round trip signature",
+        "certificate DER round trip",
+        "root CA and path constraint",
+        "leaf cannot issue certificates",
+        "untrusted root with same printed name",
+        "wrong SAN expectation",
+        "expired leaf at chosen verification time",
+        "not yet valid leaf",
+        "wrong extended key usage",
+        "leaf key signature verification",
+        "different signing key rejected",
+        "changed evidence rejected",
+        "CRL signature valid",
+        "CRL finds target serial",
+        "CRL rejects wrong verifier key",
+        "CRL absence is distinct from validity",
+        "path validation does not consume this separate CRL",
+        "independent AEAD round trip",
+        "wrong AEAD key",
+        "wrong AEAD nonce",
+        "wrong associated data",
+        "truncated authentication tag",
+        "SLE example",
+        "ALE example",
+        "residual expected loss scenario",
+        "annual cost plus residual illustration",
+        "detection precision and recall differ",
+        "crypto_practice.py standalone run",
+        "certificate_practice.py standalone run"
+      ],
+      "python": "3.13.14",
+      "cryptography": "50.0.1",
+      "sources": {
+        "crypto_practice.py": "ede36a060f5c1175d6ec127d0bde3160582028398446d4338106dd33de3e3cea",
+        "certificate_practice.py": "dad253b761f2ee220ddcc3759553667a2c7b5da3f1949815347b1235e1fdd004"
+      },
+      "public_example_outputs": {
+        "crypto_practice.py": "{'plaintext_recovered': True, 'signature_verified': True, 'rejected_cases': ['modified ciphertext/tag', 'wrong associated context', 'modified signed message']}",
+        "certificate_practice.py": "{'csr_signature_valid': True, 'chain_length': 2, 'rejected_cases': ['wrong expected name', 'expired leaf']}"
+      },
+      "execution_boundary": "All keys/certificates/CSR/CRL and synthetic data remained in process memory. No keys printed or installed; no TLS socket, network, trust-store, account, scanner, production log or remote resource used.",
+      "limits": [
+        "Path verification and separate CRL signature/serial checks are distinct. The verifier did not consume a revocation feed.",
+        "No OCSP, live CRL retrieval, TLS handshake, HSM/TPM or production CA deployment tested.",
+        "Risk and detection metrics are invented arithmetic examples, not business forecasts or measured operational performance."
+      ]
+    }
+  },
+  "answered_checks": 46,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "34 local checks and two original public Python examples executed with synthetic in-memory keys/messages/CSR/certificates/CRL; no keys printed or installed.",
+    "Certificate path validation did not consume the separately tested CRL; no TLS handshake, live CRL/OCSP, HSM/TPM or production CA deployment executed.",
+    "No account/policy/trust-store changes, network requests from examples, scanner, exploit, SIEM ingestion, live CVE assessment, production log, cloud resource or full lab executed.",
+    "Risk and detection calculations are invented models, not forecasts or measured operational effectiveness. All eight full labs remain proposed.",
+    "OReilly and Udemy catalog access blocked; earlier page/runtime claims unverified; all paid interiors and provider question banks unreviewed.",
+    "CISA government catalog fetch blocked; official GitHub mirror README reviewed for data availability and provenance, not individual vulnerability records.",
+    "V8 launch is an announced expectation and remains separate from this SY0-701 guide; no complete V8 review claimed."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "All keys/certificates/CSR/CRL and synthetic data remained in process memory. No keys printed or installed; no TLS socket, network, trust-store, account, scanner, production log or remote resource used.",
+    "learning_catalog_consistency": "passed",
+    "passed": 34,
+    "failed": 0,
+    "checks": [
+      "public crypto success states",
+      "three public crypto rejection cases",
+      "public CSR and two-certificate chain",
+      "public name and expiry cases",
+      "leaf-first chain ordering",
+      "CSR round trip signature",
+      "certificate DER round trip",
+      "root CA and path constraint",
+      "leaf cannot issue certificates",
+      "untrusted root with same printed name",
+      "wrong SAN expectation",
+      "expired leaf at chosen verification time",
+      "not yet valid leaf",
+      "wrong extended key usage",
+      "leaf key signature verification",
+      "different signing key rejected",
+      "changed evidence rejected",
+      "CRL signature valid",
+      "CRL finds target serial",
+      "CRL rejects wrong verifier key",
+      "CRL absence is distinct from validity",
+      "path validation does not consume this separate CRL",
+      "independent AEAD round trip",
+      "wrong AEAD key",
+      "wrong AEAD nonce",
+      "wrong associated data",
+      "truncated authentication tag",
+      "SLE example",
+      "ALE example",
+      "residual expected loss scenario",
+      "annual cost plus residual illustration",
+      "detection precision and recall differ",
+      "crypto_practice.py standalone run",
+      "certificate_practice.py standalone run"
+    ],
+    "python": "3.13.14",
+    "cryptography": "50.0.1",
+    "sources": {
+      "crypto_practice.py": "ede36a060f5c1175d6ec127d0bde3160582028398446d4338106dd33de3e3cea",
+      "certificate_practice.py": "dad253b761f2ee220ddcc3759553667a2c7b5da3f1949815347b1235e1fdd004"
+    },
+    "public_example_outputs": {
+      "crypto_practice.py": "{'plaintext_recovered': True, 'signature_verified': True, 'rejected_cases': ['modified ciphertext/tag', 'wrong associated context', 'modified signed message']}",
+      "certificate_practice.py": "{'csr_signature_valid': True, 'chain_length': 2, 'rejected_cases': ['wrong expected name', 'expired leaf']}"
+    },
+    "limits": [
+      "Path verification and separate CRL signature/serial checks are distinct. The verifier did not consume a revocation feed.",
+      "No OCSP, live CRL retrieval, TLS handshake, HSM/TPM or production CA deployment tested.",
+      "Risk and detection metrics are invented arithmetic examples, not business forecasts or measured operational performance."
+    ]
+  },
+  "archived_prior_objective_snapshot": {
+    "path": "data/objective-snapshots/sy0-701-2026-09-06-official-objectives.txt",
+    "sha256": "9e13564c9c134ca42752f3bc90083f2da3568e7e9e93f9d068a98197fbe19528",
+    "historical_audit_paths_updated": 2,
+    "note": "Byte-identical prior snapshot; historical dates, hashes and conclusions retained."
+  },
+  "prior_status": {
+    "skills_versions": [
+      "Exam version: V7",
+      "Exam series code: SY0-701",
+      "Launch date: November 7, 2023",
+      "Number of questions: maximum of 90, a mix of multiple-choice and performance-based questions",
+      "Retirement: English – June 11, 2027; Japanese, Portuguese, Spanish, and Thai – August 13, 2027",
+      "Passing score: 750 (on a scale of 100-900)",
+      "Languages: English, Japanese, Portuguese, Spanish, and Thai"
+    ],
+    "upcoming_announcements": [
+      "Retirement: English – June 11, 2027; Japanese, Portuguese, Spanish, and Thai – August 13, 2027"
+    ]
+  },
+  "objective_baseline_acceptance": {
+    "changed": [
+      "SY0-701"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "SY0-701",
+        "title": "CompTIA Security+ (V7)",
+        "url": "https://www.comptia.org/en-us/certifications/security/v7/",
+        "guide_path": "guides/SY0-701-comptia-security-plus.md",
+        "snapshot_path": "data\\objective-snapshots\\sy0-701-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\sy0-701-official-status.json",
+        "previous_sha256": "9e13564c9c134ca42752f3bc90083f2da3568e7e9e93f9d068a98197fbe19528",
+        "current_sha256": "152af64f7b23ff8a264ea9aa465c610cc797fcdd6b771d8f7dfe15cdab6b9040",
+        "previous_status_sha256": "21aa84eba548ba5aa27941db3976f23686520971ba0a86bd2841ded497be7226",
+        "current_status_sha256": "b9d748e877e5b8833420bc13b1e4ecfff2d403be007c707f574b473bc0495666",
+        "official_status": {
+          "skills_versions": [
+            "Exam version: V7",
+            "Exam series code: SY0-701",
+            "Launch date: November 7, 2023",
+            "Number of questions: maximum of 90, a mix of multiple-choice and performance-based questions",
+            "Retirement: English – June 11, 2027; Japanese, Portuguese, Spanish, and Thai – August 13, 2027",
+            "Duration: 90 minutes",
+            "Passing score: 750 (on a scale of 100-900)",
+            "Languages: English, Japanese, Portuguese, Spanish, and Thai"
+          ],
+          "upcoming_announcements": [
+            "Retirement: English – June 11, 2027; Japanese, Portuguese, Spanish, and Thai – August 13, 2027"
+          ]
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ]
+  },
+  "objective_diff": "--- \n\n+++ \n\n@@ -3,6 +3,7 @@\n\n Launch date: November 7, 2023\n Number of questions: maximum of 90, a mix of multiple-choice and performance-based questions\n Retirement: English – June 11, 2027; Japanese, Portuguese, Spanish, and Thai – August 13, 2027\n+Duration: 90 minutes\n Passing score: 750 (on a scale of 100-900)\n Languages: English, Japanese, Portuguese, Spanish, and Thai\n Security+ (V7) exam objectives summary",
+  "version_specific_pdf_review": {
+    "receipt": {
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/cf25ec24b8a511ef9ecbb69c0f9687be?checkExpiry=false",
+      "discovery_page": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+      "collection_url": "https://lecbyo.collections.cmp.optimizely.com/api/library-collection/b9074fb6207711f08b1d2e4ad712ca04",
+      "asset": {
+        "guid": "cf25ec24b8a511ef9ecbb69c0f9687be",
+        "title": "CompTIA Security+ SY0-701 Exam Objectives (7.0).pdf",
+        "type": "raw_file",
+        "mimeType": "application/pdf",
+        "thumbnailUrl": "https://images2.cmp.optimizely.com/Zz1mYjhjMjYyY2NhMzExMWYwYWRjY2FlYzJlY2U1MmRlZA==",
+        "previewUrl": "https://lecbyo.files.cmp.optimizely.com/download/cf25ec24b8a511ef9ecbb69c0f9687be?checkExpiry=false",
+        "mediaUrl": "https://lecbyo.files.cmp.optimizely.com/download/cf25ec24b8a511ef9ecbb69c0f9687be?checkExpiry=false",
+        "transcodedUrl": "",
+        "description": "",
+        "lastModified": "2025-11-25T19:07:28",
+        "lastModifiedRelative": "10 months ago",
+        "createdAt": "2024-12-12T16:26:16",
+        "custom_labels": {},
+        "fields": []
+      },
+      "sha256": "95a2c75157928a8ba21b755b9cd25bde12c36983588b9fd4ee4e2268ae756b06",
+      "bytes": 464094,
+      "pages": 24,
+      "status": 200
+    },
+    "numbered_objectives": 28,
+    "objective_group_counts": [
+      4,
+      5,
+      4,
+      9,
+      6
+    ],
+    "main_page_summary_rows": 28,
+    "mapping": "Original paraphrases with published IDs; all numbered objectives and detailed bullets read."
+  }
+}

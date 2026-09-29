@@ -5,6 +5,28 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "SY0-701",
+      "reviewed_on": "2026-09-29",
+      "guide_sha256": "9d5e623bd1ab3e9189efdb2b64c7fe77c6f42b75eaf312e7aba8174674c76a08",
+      "objective_count": 28,
+      "outcome": "reviewed",
+      "report_path": "docs/research/2026-09-29-sy0-701-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-29-sy0-701-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "Same-context AI review; independent human review pending.",
+        "34 local checks and two original public Python examples executed with synthetic in-memory keys/messages/CSR/certificates/CRL; no keys printed or installed.",
+        "Certificate path validation did not consume the separately tested CRL; no TLS handshake, live CRL/OCSP, HSM/TPM or production CA deployment executed.",
+        "No account/policy/trust-store changes, network requests from examples, scanner, exploit, SIEM ingestion, live CVE assessment, production log, cloud resource or full lab executed.",
+        "Risk and detection calculations are invented models, not forecasts or measured operational effectiveness. All eight full labs remain proposed.",
+        "OReilly and Udemy catalog access blocked; earlier page/runtime claims unverified; all paid interiors and provider question banks unreviewed.",
+        "CISA government catalog fetch blocked; official GitHub mirror README reviewed for data availability and provenance, not individual vulnerability records.",
+        "V8 launch is an announced expectation and remains separate from this SY0-701 guide; no complete V8 review claimed."
+      ]
+    },
+    {
       "exam_code": "N10-009",
       "reviewed_on": "2026-09-29",
       "guide_sha256": "3bc5c5670c5e470c835be425f4815c57b819ed28575ece614d9b6c34b41a14ce",
