@@ -4,6 +4,233 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-ex280-deep-review",
+      "title": "EX280 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "EX280"
+      ],
+      "results": [
+        {
+          "exam_code": "EX280",
+          "vendor_id": "red-hat",
+          "guide_path": "guides/EX280-red-hat-certified-system-administrator-openshift.md",
+          "baseline_sha256": "f66c218feef8e5ed97e28ab396aa2f862ef12b768b148650c8d9c6be8a8d0b8e",
+          "scanned_on": "2026-09-28",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "blocked",
+              "notes": "All 55 tasks mapped; public version PDF agrees with V422 list after normalization. Main headline 4.22 versus delivery 4.18 remains unresolved. Multiple versions in use supplies no future effective date; correct scheduled flag without altering accepted monitor snapshots."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Read primary Kustomize, ConfigMap and NetworkPolicy semantics and OpenShift 4.22 SCC, route and OLM documentation. Distinguish RBAC-only SCC queries from direct grants, v1 extensions from classic lifecycle resources, and rendering from server acceptance."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Versioned 4.22 extensions overview identifies OLM v1 GA and console inventory limits. DO180 and DO280 both advertise 4.22. No future rollout date inferred; per-feature Technology Preview content not generalized to all OLM."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Rechecked public course/environment links and added targeted primary references plus bounded blog intake. OReilly and Udemy blocked: qualify inherited runtime/date/language metadata. Places to learn is last."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Applied teaching and evidence repairs; separate unresolved exam-version conflict is recorded under official_blueprint_and_lifecycle with an October 5 follow-up."
+            }
+          },
+          "findings": [
+            {
+              "id": "ex280-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Conflicting exam delivery version remains",
+              "url": "https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX280"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Headline and matching PDF list identify 4.22; the main delivery paragraph still names 4.18, while multiple versions are in use.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "ex280-deep-2",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Assigned version needs an explicit public reference",
+              "url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX280"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Version PDF contains EX280V422 and older lists with different scope. The V422 list matches the main 55 tasks after normalization.",
+              "recommendation": "Link the public document, retain the exact assigned-version rule, and map only the current public V422 list.",
+              "disposition": "applied",
+              "source_id": "redhat-exam-version-objectives",
+              "resolution": "Link the public document, retain the exact assigned-version rule, and map only the current public V422 list."
+            },
+            {
+              "id": "ex280-deep-3",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Multiple active versions does not establish a scheduled future change",
+              "url": "https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX280"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "No future effective date is supplied by the multi-version statement.",
+              "recommendation": "Change upcoming metadata to none-announced and preserve the observed ambiguity separately; retain accepted source snapshots.",
+              "disposition": "applied",
+              "source_id": "redhat-ex280-blueprint",
+              "resolution": "Change upcoming metadata to none-announced and preserve the observed ambiguity separately; retain accepted source snapshots."
+            },
+            {
+              "id": "ex280-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Declarative guidance lacked a concrete replayable artifact",
+              "url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX280"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Existing guide described base/overlay behavior without manifests or expected generated references.",
+              "recommendation": "Add original base, overlay and config change fixture; execute local rendering and check desired resource relationships.",
+              "disposition": "applied",
+              "source_id": "kubernetes-kustomize",
+              "resolution": "Add original base, overlay and config change fixture; execute local rendering and check desired resource relationships."
+            },
+            {
+              "id": "ex280-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Configuration update behavior needed consumption-specific boundaries",
+              "url": "https://kubernetes.io/docs/concepts/configuration/configmap/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX280"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Environment, normal volume and subPath consumers refresh differently.",
+              "recommendation": "Explain each case and distinguish generated-name rollout from editing same-name data.",
+              "disposition": "applied",
+              "source_id": "kubernetes-configmaps",
+              "resolution": "Explain each case and distinguish generated-name rollout from editing same-name data."
+            },
+            {
+              "id": "ex280-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Additive policies and selector indentation needed negative examples",
+              "url": "https://kubernetes.io/docs/concepts/services-networking/network-policies/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX280"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Combined selectors restrict the same peer; separate peers broaden alternatives; other selecting policies may widen access.",
+              "recommendation": "Add an original YAML fixture and allow/deny matrix with limited reference checks, explicitly not CNI validation.",
+              "disposition": "applied",
+              "source_id": "kubernetes-network-policies",
+              "resolution": "Add an original YAML fixture and allow/deny matrix with limited reference checks, explicitly not CNI validation."
+            },
+            {
+              "id": "ex280-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "SCC access cannot be established from one authorization command",
+              "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/authentication_and_authorization/managing-pod-security-policies",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX280"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "RBAC checks omit direct SCC users/groups; describe omits RBAC grants, and namespace scope differs.",
+              "recommendation": "Trace both grant paths, workload context and admission result; prefer dedicated account and scoped use grant.",
+              "disposition": "applied",
+              "source_id": "redhat422-scc",
+              "resolution": "Trace both grant paths, workload context and admission result; prefer dedicated account and scoped use grant."
+            },
+            {
+              "id": "ex280-deep-8",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Classic OLM chain was stated without version qualification",
+              "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/extensions/extensions-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX280"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "OLM v1 uses ClusterExtension and ClusterCatalog; classic console inventory does not show them.",
+              "recommendation": "Qualify classic instructions and add the current alternative resource model without expanding formal objective counts.",
+              "disposition": "applied",
+              "source_id": "redhat422-olm-v1",
+              "resolution": "Qualify classic instructions and add the current alternative resource model without expanding formal objective counts."
+            },
+            {
+              "id": "ex280-deep-9",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Forty questions lacked answers",
+              "url": "https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX280"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Original knowledge-check section contained questions only.",
+              "recommendation": "Add reasoned answers to all 40 and distinguish actual local checks from eight proposed cluster labs.",
+              "disposition": "applied",
+              "source_id": "redhat-ex280-blueprint",
+              "resolution": "Add reasoned answers to all 40 and distinguish actual local checks from eight proposed cluster labs."
+            }
+          ],
+          "notes": "Mapped 55 public EX280 tasks and independently compared the EX280V422 PDF list; retain the 4.22/4.18 delivery mismatch, correct unsupported scheduled-change metadata, add 40 answers and executable local Kustomize/selector exercises, and clarify SCC grants, ConfigMap updates, route TLS and OLM v1. All 24 local checks pass; no cluster labs executed. Same-context AI review; human review pending. See docs/research/2026-09-28-ex280-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 8,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-28-ex200-deep-review",
       "title": "EX200 complete guide and learning-content review",
       "rubric_version": 1,

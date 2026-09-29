@@ -1197,6 +1197,8 @@ The review reconciles every public EX294 task with the current AU294 baseline of
 
 ## EX280 coverage record
 
+The September 28 [deep review](research/2026-09-28-ex280-deep-review.md) maps 55 detailed objectives. Mapped 55 public EX280 tasks and independently compared the EX280V422 PDF list; retain the 4.22/4.18 delivery mismatch, correct unsupported scheduled-change metadata, add 40 answers and executable local Kustomize/selector exercises, and clarify SCC grants, ConfigMap updates, route TLS and OLM v1. All 24 local checks pass; no cluster labs executed. Current guide citations: 21 registered, 19 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 1, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: nine unweighted task groups covering platform management, declarative resources, application deployment, authentication/authorization, network security, non-HTTP/SNI exposure, developer self-service, Operators, and application security

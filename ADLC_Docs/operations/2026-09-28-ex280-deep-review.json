@@ -1,0 +1,1755 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "EX280",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/EX280-red-hat-certified-system-administrator-openshift.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "f6f93486b180ecfc6e4fe55338c38f01768b91be753ca742af7493e525be4de7",
+  "guide_after_sha256": "6d9af0fedecfa35225d11c71184c081d6a648a1b849331b13a604a74ca2da253",
+  "prior_records": {
+    "exam": {
+      "code": "EX280",
+      "level": "intermediate",
+      "vendor_id": "red-hat",
+      "title": "Red Hat Certified System Administrator in OpenShift",
+      "status": "active",
+      "study_guide_url": "https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam",
+      "guide_path": "guides/EX280-red-hat-certified-system-administrator-openshift.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Red Hat recommends RHCSA-level administration, DO180 or equivalent OpenShift workload skills, DO280 or equivalent cluster-administration experience, and container familiarity. The live page currently mixes 4.22 and 4.18 and says multiple versions are in use; confirm the LMS assignment and practice every objective against that exact OpenShift version."
+    },
+    "review": {
+      "id": "ex280-2026-09-01-source-validation",
+      "exam_code": "EX280",
+      "guide_path": "guides/EX280-red-hat-certified-system-administrator-openshift.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ex280-official-objectives.txt",
+      "blueprint_snapshot_sha256": "7f06f83b3e8c273d4c24065c54ad45411416e25aa528a8651e7e74016c724040",
+      "objective_coverage": [
+        {
+          "objective_group": "Manage OpenShift Container Platform",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Declarative Resource Management",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1 and 3",
+            "Labs 2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Deploy applications",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 2–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Manage authentication and authorization",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios 1–2",
+            "Labs 4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Configure network security",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios 1 and 3",
+            "Labs 5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Expose non-HTTP/SNI applications",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenario 2",
+            "Labs 5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Enable developer self-service",
+          "guide_sections": [
+            "Section 7",
+            "Integrated scenario 1",
+            "Labs 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Manage OpenShift Operators",
+          "guide_sections": [
+            "Section 8",
+            "Integrated scenario 2",
+            "Labs 7–8"
+          ]
+        },
+        {
+          "objective_group": "Configure application security",
+          "guide_sections": [
+            "Section 9",
+            "All integrated scenarios",
+            "Labs 4, 7 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 12,
+        "reachable": 10,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "The nine unweighted EX280 task groups were reconciled with the live page and both official 4.18 and 4.22 documentation baselines. The page's internal 4.22 headline/4.18 delivery conflict and explicit multi-version LMS assignment are preserved rather than flattened. Three scenarios, eight safe labs and 40 original checks cover console/CLI evidence, images and troubleshooting, clean manifests and Kustomize, Deployments/templates/Helm/configuration, HTPasswd/RBAC, packet paths/routes/TLS/NetworkPolicy/L4 exposure, quotas/limits/project templates, Operator lifecycle, service accounts/SCCs/secrets/Jobs/CronJobs and reproducible replay. All 12 URLs are cataloged: ten reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. Older content has an explicit assigned-version gap checklist and no recalled exam tasks are used."
+    },
+    "sources": [
+      {
+        "id": "redhat-ex280-blueprint",
+        "title": "Red Hat Certified System Administrator in OpenShift exam",
+        "url": "https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam",
+        "publisher": "Red Hat",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX280"
+        ],
+        "notes": "Canonical EX280 page and unweighted task list. The page currently says 4.22 in its headline, 4.18 in its delivery paragraph, and multiple versions are in use; the LMS-assigned version is binding."
+      },
+      {
+        "id": "redhat-ex280-do180",
+        "title": "Red Hat OpenShift Administration I DO180",
+        "url": "https://www.redhat.com/en/services/training/red-hat-openshift-administration-i-operating-a-production-cluster",
+        "publisher": "Red Hat",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX280"
+        ],
+        "notes": "Official prerequisite-level workload administration route; public page is based on OpenShift Container Platform 4.22."
+      },
+      {
+        "id": "redhat-ex280-do280",
+        "title": "Red Hat OpenShift Administration II DO280",
+        "url": "https://www.redhat.com/en/services/training/red-hat-openshift-administration-ii-configuring-a-production-cluster",
+        "publisher": "Red Hat",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX280"
+        ],
+        "notes": "Closest official administration course. Public course-version metadata may lag during the 4.18-to-4.22 transition; verify the purchased revision."
+      },
+      {
+        "id": "redhat-ex280-docs-422",
+        "title": "OpenShift Container Platform 4.22 documentation",
+        "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22",
+        "publisher": "Red Hat",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX280"
+        ],
+        "notes": "Official 4.22 documentation; use when the assigned exam is 4.22."
+      },
+      {
+        "id": "redhat-ex280-docs-418",
+        "title": "OpenShift Container Platform 4.18 documentation",
+        "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/",
+        "publisher": "Red Hat",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX280"
+        ],
+        "notes": "Official 4.18 documentation; use when the assigned exam is 4.18."
+      },
+      {
+        "id": "redhat-ex280-do080",
+        "title": "Containers, Kubernetes and Red Hat OpenShift Technical Overview DO080",
+        "url": "https://www.redhat.com/en/services/training/do080-deploying-containerized-applications-technical-overview",
+        "publisher": "Red Hat",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX280"
+        ],
+        "notes": "Approximately two-hour free foundation based on OpenShift 4.12; orientation only, with a material current-version gap."
+      },
+      {
+        "id": "redhat-ex280-foundations-path",
+        "title": "Foundations of OpenShift learning path",
+        "url": "https://developers.redhat.com/learning/learn%3Aopenshift%3Afoundations-openshift/resource/resources%3Aopenshift-and-developer-sandbox",
+        "publisher": "Red Hat Developer",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX280"
+        ],
+        "notes": "Free 12-resource path listing 3 hours 40 minutes and using the Developer Sandbox; useful workload foundation, not complete cluster-admin preparation."
+      },
+      {
+        "id": "redhat-ex280-developer-sandbox",
+        "title": "Red Hat Developer Sandbox FAQ",
+        "url": "https://developers.redhat.com/developer-sandbox/FAQ",
+        "publisher": "Red Hat Developer",
+        "authority_class": 2,
+        "source_type": "hands-on-lab",
+        "access_model": "free-account",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX280"
+        ],
+        "notes": "Free 30-day shared multi-tenant OpenShift environment. Useful for project-scoped workload practice but restricted for cluster-admin objectives."
+      },
+      {
+        "id": "redhat-ex280-openshift-local",
+        "title": "Getting started with Red Hat OpenShift Local",
+        "url": "https://developers.redhat.com/products/openshift-local/getting-started",
+        "publisher": "Red Hat Developer",
+        "authority_class": 2,
+        "source_type": "hands-on-lab",
+        "access_model": "free-account",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX280"
+        ],
+        "notes": "Official local minimal OpenShift environment; verify hardware requirements and understand single-node differences from production clusters."
+      },
+      {
+        "id": "redhat-ex280-pluralsight",
+        "title": "Red Hat OpenShift Administration path",
+        "url": "https://www.pluralsight.com/paths/red-hat-openshift-administration",
+        "publisher": "Pluralsight / Marcel Rummens",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX280"
+        ],
+        "notes": "Six 2026 courses and ten video hours listed. Current broad administration path, but not an official EX280 version-specific objective map."
+      },
+      {
+        "id": "redhat-ex280-oreilly",
+        "title": "Red Hat OpenShift Administration: Red Hat EX280",
+        "url": "https://www.oreilly.com/videos/red-hat-openshift/9780137441938/",
+        "publisher": "O'Reilly / Pearson / Sander van Vugt",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX280"
+        ],
+        "notes": "Eight-hour, one-minute April 2021 video with durable fundamentals but substantial current-version and objective gaps."
+      },
+      {
+        "id": "redhat-ex280-udemy-khatab",
+        "title": "Red Hat Certified OpenShift Administrator Course EX280",
+        "url": "https://www.udemy.com/course/red-hat-certified-openshift-administrator-course-ex280/",
+        "publisher": "Udemy / Mahmoud Khatab",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX280"
+        ],
+        "notes": "Seven hours 53 minutes, 30 lectures, Arabic audio with English captions, updated August 2026. Includes extra topics; map to the assigned public objectives."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "62c4e1c70e80ef2682ce321a9cb8ab0424987e16602b8db83d7e3a3a025257a4",
+      "guide_sections": [
+        "1. Manage OpenShift Container Platform",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "d1351eb391c859c5bee7eb4bf762af00e68e2b25ab2e30300932ed270e9b0519",
+      "guide_sections": [
+        "1. Manage OpenShift Container Platform",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "fdbac376f1eb80ca18084f6c864a2c1414b912a877ce2cd20d0c5152afe3dd37",
+      "guide_sections": [
+        "1. Manage OpenShift Container Platform",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "084235f16088eef206d2ff890b9b8b52509bd04c0360764d960bdd44cbdef586",
+      "guide_sections": [
+        "1. Manage OpenShift Container Platform",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "1aa715ef271d6e8e583763c2f50e57e01f5d9137c4ac3402be9ef6d18c110853",
+      "guide_sections": [
+        "1. Manage OpenShift Container Platform",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "38e2f9cd4e19d664da384f7ccb6af046854aa6619ecc646a76bdf90e38b4359f",
+      "guide_sections": [
+        "1. Manage OpenShift Container Platform",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "6ff0393e969b44add6ca620159c8b83e968a7398184bfb9547739bb9d412da46",
+      "guide_sections": [
+        "1. Manage OpenShift Container Platform",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "0c789ccc03671d00e179f7abd6d1e84f404e43b86ddc09bf4c3ec3d000bc0321",
+      "guide_sections": [
+        "1. Manage OpenShift Container Platform",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "0e27bab3909bbf25e87db15d6830d3f36b9212b7554b406cbf0508e18724b15a",
+      "guide_sections": [
+        "1. Manage OpenShift Container Platform",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "9ec41ffd7797fa24b61fd5ce33629033da9efcf352c40e98597b7dd84b054119",
+      "guide_sections": [
+        "1. Manage OpenShift Container Platform",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 11,
+      "objective_sha256": "d331c52148897c163f5a2dfd4eb24046f076d63c62ae82c6bc940fd8b5e4f311",
+      "guide_sections": [
+        "1. Manage OpenShift Container Platform",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 12,
+      "objective_sha256": "ef69da271f6f0e7feabb427ec637f4e6dcdc175a1cf3390ee2f61fc2f8eb9232",
+      "guide_sections": [
+        "1. Manage OpenShift Container Platform",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 13,
+      "objective_sha256": "f992c74d95e341292eb609c9db29a3d9054e8638fe3336ba37753f02979fdbfa",
+      "guide_sections": [
+        "1. Manage OpenShift Container Platform",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 14,
+      "objective_sha256": "6e60a55de63ba35816f2d75250dcc344a86a781857154d887c366618ac303294",
+      "guide_sections": [
+        "1. Manage OpenShift Container Platform",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "3e73c9420f65048826ad290ac20cedba82c15edb506ee569ee3eaa09de1a97ca",
+      "guide_sections": [
+        "2. Declarative resource management",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "5642e24e861745b188f7eae7c410be6281d68a050ad5317db6ad44b673c8515e",
+      "guide_sections": [
+        "2. Declarative resource management",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "ea61a262e9d9d3eb350283b4e040a0892659e04ce7722d064b5fccdebf789ef6",
+      "guide_sections": [
+        "2. Declarative resource management",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "55383abb199d79a5fc9c60bb165bcbd43f2e6b0d2898cab9ba1404de55aa659f",
+      "guide_sections": [
+        "2. Declarative resource management",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "94ba6c91800f15137dc7ed8135fcd7c2b3a684bff31b4033fc89cc67a974ba9a",
+      "guide_sections": [
+        "2. Declarative resource management",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "72d60951442565921e1543b7a39e4913776febf6a4002092ee607ba735d69728",
+      "guide_sections": [
+        "2. Declarative resource management",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "4fb5f9e7891997d4d749a5188e36278fd22b602bfae073228bf1a1d683cce456",
+      "guide_sections": [
+        "2. Declarative resource management",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "83eeefcfb9a72eeed29fac08cb993f0039529a64b002ade006c5708370641f9d",
+      "guide_sections": [
+        "3. Deploy applications",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "f63a396fed70d8e8522297c2b2fb56d742893b21a7113fe25e57dbba2ebd2198",
+      "guide_sections": [
+        "3. Deploy applications",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "0868753cf47ee83ab7cd4865ea1c694bf5c9aba6f6772d2737b3272aa28bcdd8",
+      "guide_sections": [
+        "3. Deploy applications",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "544a9389f62dde7caab9affa93aa51c3e15d00df99b6ca2f49aa32a456187fac",
+      "guide_sections": [
+        "3. Deploy applications",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "6d07568bc18e883f1d6a990c0874ac06886fab00d0eb43371a677c9cbf6b80e8",
+      "guide_sections": [
+        "3. Deploy applications",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "f5ab3c78f497d7d2c0e9fd2e130bad8d3e70d124f9c403b3e7c17864278c0b4b",
+      "guide_sections": [
+        "3. Deploy applications",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "e64a0c80bc93afe0f4294534bb03e4355b98d2139d34c5f612109876aab74729",
+      "guide_sections": [
+        "4. Manage authentication and authorization",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "472fad13c8fd9aa52f6b9c1d42759182520af20d6c3f4cec2769ad44cd571fcc",
+      "guide_sections": [
+        "4. Manage authentication and authorization",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "9a03dbf73773195bbfda3d7dc62556b9b3a88e3536a671a4b99c959492f1f37d",
+      "guide_sections": [
+        "4. Manage authentication and authorization",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "5299ba28f25274de4afe676ba3b2e804888d7d90f3a6e01200e5bfe118556bcb",
+      "guide_sections": [
+        "4. Manage authentication and authorization",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "7795ea6c6bba2e79aade476487e6a7500ef8a8c87a5455960681d8dd4b03e41d",
+      "guide_sections": [
+        "4. Manage authentication and authorization",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "16bbbf228ae2cf51f0213057fcc5218ab4d7a6f1f2ea30be7d3a20843da0c5ce",
+      "guide_sections": [
+        "5. Configure network security",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "1a4d65d002d091e29777b9dcd35009570aa7f65621af00f6774f3278ac9f083f",
+      "guide_sections": [
+        "5. Configure network security",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "bb262fdbe876968c6421c76fce69cb8babb0323f300d3dc93863922ae8db50c8",
+      "guide_sections": [
+        "5. Configure network security",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "bd67a3cf6c51a189ef06e1d742c10d5ac0a74fd340d8f50ee6ad2740bd420bf6",
+      "guide_sections": [
+        "5. Configure network security",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "0bc11de53ef1abf472f6ab1fbe43a4e355a6f156bb3d5d1f5e22cd64bda4f7df",
+      "guide_sections": [
+        "5. Configure network security",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "f8a386ac5034120c2d7c4339d82b955b7fc0ce6c1fac7ce02c93024fcfae3d56",
+      "guide_sections": [
+        "5. Configure network security",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "21e89afd9692da0ccc28921112556acd909b64d78ce2efbcfdd282b1b8028869",
+      "guide_sections": [
+        "6. Expose non-HTTP/SNI applications",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "7d0b5222215f30a626c1321a108371400e7bb172b143ac924f66294ee62600c9",
+      "guide_sections": [
+        "6. Expose non-HTTP/SNI applications",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "81025efff8c8ecbf523517995dff95e5195540c80a951e2393b8fa00667d3cd8",
+      "guide_sections": [
+        "7. Enable developer self-service",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "1f8f62aa5f0ba357b45f312bcb173587593a28f19c8a842fb55e99bc9088c30a",
+      "guide_sections": [
+        "7. Enable developer self-service",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "3108a455c13cdb74c30cba17c2b093839113f5380c5629763fa5fb8cb72a5e7a",
+      "guide_sections": [
+        "7. Enable developer self-service",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "2867b8a40535ffca35ba26600a285098eca721748574008cce76cc236348972e",
+      "guide_sections": [
+        "7. Enable developer self-service",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "82ccaac91c02cba2821221009ba203b53387b1cbf0522bb3cdda69c928f49f24",
+      "guide_sections": [
+        "7. Enable developer self-service",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "d67619d1a371c622f12014572b9ac3076edfb9f2a09ebf327824957ee8f11f9b",
+      "guide_sections": [
+        "8. Manage OpenShift Operators",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "a3d6cef9ab3e218b002d030286f8a8ec246661bf9751f351d44d623da2c044a7",
+      "guide_sections": [
+        "8. Manage OpenShift Operators",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "a35f4dab2bff73effccafaa37cdae40caf94b99aa88d5a1f7e5b897ef6922fab",
+      "guide_sections": [
+        "8. Manage OpenShift Operators",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "119c6508c905e919ccb34371257f4d492c76a97640a851406874e263c4537559",
+      "guide_sections": [
+        "9. Configure application security",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "758b5eb6311129334412e87c659f954e54c5fed7079df3001ef62e8899ac5e0f",
+      "guide_sections": [
+        "9. Configure application security",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "b4bc525afb394a8c9a937c943642a4cff91a98f1a9fdb8c3d6e6ab90de716d75",
+      "guide_sections": [
+        "9. Configure application security",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "a92bbe72092539fa0d3f9d0a2413bf5db3775ea456670d4a41e9537ea6780fc6",
+      "guide_sections": [
+        "9. Configure application security",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "ecc4b5c2b3365d527ecd4cf9c7dc9b687c0093cb70366ac0e600ba4d614bec92",
+      "guide_sections": [
+        "9. Configure application security",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "faed0ecef4082e861971c3b83b0a4f899f647360a305fd5a3e52a14b0479515e",
+      "guide_sections": [
+        "9. Configure application security",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 7,
+      "objective_sha256": "8ad76f92571e375749e70a27b37997fdce9cb82db9ce32057e0084b87b6d19a6",
+      "guide_sections": [
+        "9. Configure application security",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "EX280",
+        "title": "Red Hat Certified System Administrator in OpenShift",
+        "url": "https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam",
+        "guide_path": "guides/EX280-red-hat-certified-system-administrator-openshift.md",
+        "snapshot_path": "data\\objective-snapshots\\ex280-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ex280-official-status.json",
+        "previous_sha256": "7f06f83b3e8c273d4c24065c54ad45411416e25aa528a8651e7e74016c724040",
+        "current_sha256": "7f06f83b3e8c273d4c24065c54ad45411416e25aa528a8651e7e74016c724040",
+        "previous_status_sha256": "a5dd32ec282ff1b9af041d795ead3427dd03540de148ad07fc111216d2476f9d",
+        "current_status_sha256": "a5dd32ec282ff1b9af041d795ead3427dd03540de148ad07fc111216d2476f9d",
+        "official_status": {
+          "skills_versions": [
+            "Red Hat Certified System Administrator in OpenShift exam | EX280",
+            "This exam is based on Red Hat® OpenShift® Container Platform 4.22."
+          ],
+          "upcoming_announcements": [
+            "Multiple versions of this exam are in use. Please navigate directly to the Learning Management System (LMS) to view and complete your designated exam version at Red Hat Certification Exam Objectives by Version."
+          ]
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 21,
+    "reachable": 19,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "redhat-ex280-blueprint",
+      "url": "https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam",
+      "checked_at": "2026-09-29T01:53:56.412538+00:00",
+      "health": {
+        "id": "redhat-ex280-blueprint",
+        "url": "https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam",
+        "checked_at": "2026-09-29T01:53:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Red Hat Certified System Administrator in OpenShift exam | EX280",
+        "canonical_url": "https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam",
+        "duration_signals": [
+          "3.0 hours"
+        ],
+        "signal_fingerprint": "73a98c541535bc45b68042dc75006c6a4dc4ce64129ce7aa6c4030bc253c1752",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam",
+      "sha256": "2581fca6f39a1cae6484ec985b013e54b13330a3d251a34c0ce240f2ff3c28dc",
+      "text_characters": 14680
+    },
+    {
+      "id": "redhat-ex280-do180",
+      "url": "https://www.redhat.com/en/services/training/red-hat-openshift-administration-i-operating-a-production-cluster",
+      "checked_at": "2026-09-29T01:53:56.413099+00:00",
+      "health": {
+        "id": "redhat-ex280-do180",
+        "url": "https://www.redhat.com/en/services/training/red-hat-openshift-administration-i-operating-a-production-cluster",
+        "checked_at": "2026-09-29T01:53:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.redhat.com/en/services/training/red-hat-openshift-administration-i-operating-a-production-cluster",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Red Hat OpenShift Administration I: Operating a Production Cluster | DO180",
+        "canonical_url": "https://www.redhat.com/en/services/training/red-hat-openshift-administration-i-operating-a-production-cluster",
+        "duration_signals": [],
+        "signal_fingerprint": "ef0a775a2c7daf54ee85ffca0732e252d7ab31a99945116c6a29cd2c8a49bcd0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.redhat.com/en/services/training/red-hat-openshift-administration-i-operating-a-production-cluster",
+      "sha256": "a632af36edc7aae7b0df6ef90f3f6f3c3435a4bb63bcb612cf274a68b59ecddc",
+      "text_characters": 11066
+    },
+    {
+      "id": "redhat-ex280-do280",
+      "url": "https://www.redhat.com/en/services/training/red-hat-openshift-administration-ii-configuring-a-production-cluster",
+      "checked_at": "2026-09-29T01:53:56.413448+00:00",
+      "health": {
+        "id": "redhat-ex280-do280",
+        "url": "https://www.redhat.com/en/services/training/red-hat-openshift-administration-ii-configuring-a-production-cluster",
+        "checked_at": "2026-09-29T01:53:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.redhat.com/en/services/training/red-hat-openshift-administration-ii-configuring-a-production-cluster",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Red Hat OpenShift Administration II: Configuring a Production Cluster | DO280",
+        "canonical_url": "https://www.redhat.com/en/services/training/red-hat-openshift-administration-ii-configuring-a-production-cluster",
+        "duration_signals": [],
+        "signal_fingerprint": "c9e887bca7a25328d3fe8e2122f109b1d969df09a7d7dc38e388acb9e9185403",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.redhat.com/en/services/training/red-hat-openshift-administration-ii-configuring-a-production-cluster",
+      "sha256": "d06c731f9cc5a1ea0476ebbef52ce4f3accbdec1a2e70616e3406f02340aacf8",
+      "text_characters": 10498
+    },
+    {
+      "id": "redhat-ex280-docs-422",
+      "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22",
+      "checked_at": "2026-09-29T01:53:58.580884+00:00",
+      "health": {
+        "id": "redhat-ex280-docs-422",
+        "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22",
+        "checked_at": "2026-09-29T01:53:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "OpenShift Container Platform | 4.22 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22",
+        "duration_signals": [],
+        "signal_fingerprint": "63080718c2f435ed7be27e534b827effd21cbb39d25196993ffbad602d26708e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22",
+      "sha256": "f10668fa0560327a1e1c1513d5dd4539905e0aeb60dd53e4e3256f2634173774",
+      "text_characters": 10747
+    },
+    {
+      "id": "redhat-ex280-docs-418",
+      "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/",
+      "checked_at": "2026-09-29T01:53:59.423150+00:00",
+      "health": {
+        "id": "redhat-ex280-docs-418",
+        "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/",
+        "checked_at": "2026-09-29T01:53:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "OpenShift Container Platform | 4.18 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/",
+        "duration_signals": [],
+        "signal_fingerprint": "4af6457db3081d5418512a33f58cf5fab513b878508b2b87645f17ddb13d7bfb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/",
+      "sha256": "68ec1acd3cd9f8609523653408c94ba2a8486da4e3296ad4c10ab3ce3fbdeae0",
+      "text_characters": 9791
+    },
+    {
+      "id": "redhat-ex280-do080",
+      "url": "https://www.redhat.com/en/services/training/do080-deploying-containerized-applications-technical-overview",
+      "checked_at": "2026-09-29T01:54:00.236278+00:00",
+      "health": {
+        "id": "redhat-ex280-do080",
+        "url": "https://www.redhat.com/en/services/training/do080-deploying-containerized-applications-technical-overview",
+        "checked_at": "2026-09-29T01:54:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.redhat.com/en/services/training/do080-deploying-containerized-applications-technical-overview",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Containers, Kubernetes and Red Hat OpenShift Technical Overview | DO080",
+        "canonical_url": "https://www.redhat.com/en/services/training/do080-deploying-containerized-applications-technical-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "8c353f99fddef82ed9bd4cbe86420721b48b620e791cae6e6571fb92ebf6ac84",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.redhat.com/en/services/training/do080-deploying-containerized-applications-technical-overview",
+      "sha256": "00e983ff879b3576e46b031c58e6ade1d36cfff324df0801a992fa7fc90bd12d",
+      "text_characters": 8900
+    },
+    {
+      "id": "redhat-ex280-foundations-path",
+      "url": "https://developers.redhat.com/learning/learn%3Aopenshift%3Afoundations-openshift/resource/resources%3Aopenshift-and-developer-sandbox",
+      "checked_at": "2026-09-29T01:54:00.457331+00:00",
+      "health": {
+        "id": "redhat-ex280-foundations-path",
+        "url": "https://developers.redhat.com/learning/learn%3Aopenshift%3Afoundations-openshift/resource/resources%3Aopenshift-and-developer-sandbox",
+        "checked_at": "2026-09-29T01:54:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developers.redhat.com/learning/learn%3Aopenshift%3Afoundations-openshift/resource/resources%3Aopenshift-and-developer-sandbox",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "OpenShift and the Developer Sandbox | Red Hat Developer",
+        "canonical_url": "https://developers.redhat.com/learning/learn:openshift:foundations-openshift/resource/resources:openshift-and-developer-sandbox",
+        "duration_signals": [
+          "20 mins",
+          "3 hrs and 40 mins"
+        ],
+        "signal_fingerprint": "32b74bb91142812d15761ed6ffb13bbedd9b0c7c1a62a50801199606cacf3e3e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developers.redhat.com/learning/learn%3Aopenshift%3Afoundations-openshift/resource/resources%3Aopenshift-and-developer-sandbox",
+      "sha256": "e06f2f44624402d9cc60d57214867922e3e0ac24140eef33834ca64c8b71f109",
+      "text_characters": 7011
+    },
+    {
+      "id": "redhat-ex280-developer-sandbox",
+      "url": "https://developers.redhat.com/developer-sandbox/FAQ",
+      "checked_at": "2026-09-29T01:54:00.903838+00:00",
+      "health": {
+        "id": "redhat-ex280-developer-sandbox",
+        "url": "https://developers.redhat.com/developer-sandbox/FAQ",
+        "checked_at": "2026-09-29T01:54:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developers.redhat.com/developer-sandbox/FAQ",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Developer Sandbox FAQ | Red Hat Developer",
+        "canonical_url": "https://developers.redhat.com/developer-sandbox/FAQ",
+        "duration_signals": [],
+        "signal_fingerprint": "0e394868e4503e79caf168183093684eb8c7e2d5b50b6c8bc66b5f550feef873",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developers.redhat.com/developer-sandbox/FAQ",
+      "sha256": "9257ce21f636826edc8e41bf76c9c3c18a8d650d6804d3c40a936273a108b0ef",
+      "text_characters": 3491
+    },
+    {
+      "id": "redhat-ex280-openshift-local",
+      "url": "https://developers.redhat.com/products/openshift-local/getting-started",
+      "checked_at": "2026-09-29T01:54:09.527098+00:00",
+      "health": {
+        "id": "redhat-ex280-openshift-local",
+        "url": "https://developers.redhat.com/products/openshift-local/getting-started",
+        "checked_at": "2026-09-29T01:54:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developers.redhat.com/products/openshift-local/getting-started",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Getting started with Red Hat OpenShift Local | Red Hat Developer",
+        "canonical_url": "https://developers.redhat.com/products/openshift-local/getting-started",
+        "duration_signals": [],
+        "signal_fingerprint": "a701d7cdd91228ab58a8f63dc183611ac002c071322756db658308aad0a03ecb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developers.redhat.com/products/openshift-local/getting-started",
+      "sha256": "6c1d55284e9a733a626fd1a650da1db7a2885ce4c561de864b040173b311b3fc",
+      "text_characters": 1998
+    },
+    {
+      "id": "redhat-ex280-pluralsight",
+      "url": "https://www.pluralsight.com/paths/red-hat-openshift-administration",
+      "checked_at": "2026-09-29T01:54:12.026082+00:00",
+      "health": {
+        "id": "redhat-ex280-pluralsight",
+        "url": "https://www.pluralsight.com/paths/red-hat-openshift-administration",
+        "checked_at": "2026-09-29T01:54:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/red-hat-openshift-administration",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Red Hat OpenShift Administration",
+        "canonical_url": "https://www.pluralsight.com/paths/red-hat-openshift-administration",
+        "duration_signals": [
+          "10 Hours",
+          "10 minutes"
+        ],
+        "signal_fingerprint": "fb0a2387328b622e145eb2e5b0e4e3cc5bae9c1c51b3b413dc8f95a209938a3b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/red-hat-openshift-administration",
+      "sha256": "7076a7cd4c7cf3e3926a5227e7d526302d3a03d67918c6716a52ef208af0c47b",
+      "text_characters": 3567
+    },
+    {
+      "id": "redhat-ex280-oreilly",
+      "url": "https://www.oreilly.com/videos/red-hat-openshift/9780137441938/",
+      "checked_at": "2026-09-29T01:54:16.237784+00:00",
+      "health": {
+        "id": "redhat-ex280-oreilly",
+        "url": "https://www.oreilly.com/videos/red-hat-openshift/9780137441938/",
+        "checked_at": "2026-09-29T01:54:16+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/red-hat-openshift/9780137441938/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "redhat-ex280-udemy-khatab",
+      "url": "https://www.udemy.com/course/red-hat-certified-openshift-administrator-course-ex280/",
+      "checked_at": "2026-09-29T01:54:17.136551+00:00",
+      "health": {
+        "id": "redhat-ex280-udemy-khatab",
+        "url": "https://www.udemy.com/course/red-hat-certified-openshift-administrator-course-ex280/",
+        "checked_at": "2026-09-29T01:54:17+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/red-hat-certified-openshift-administrator-course-ex280/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "redhat-exam-version-objectives",
+      "url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+      "checked_at": "2026-09-29T02:07:46.213957+00:00",
+      "health": {
+        "id": "redhat-exam-version-objectives",
+        "url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+        "checked_at": "2026-09-29T02:07:46.213957+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+        "content_type": "application/pdf",
+        "page_title": "Red Hat Certification Exam Objectives by Version",
+        "canonical_url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+        "duration_signals": [],
+        "signal_fingerprint": "9fc973d3c5345287218c795e493bd3bab411df150d103127b4df3b162e66c8e4",
+        "error": ""
+      },
+      "initial_health": {
+        "id": "redhat-exam-version-objectives",
+        "url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+        "checked_at": "2026-09-29T02:00:45+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      },
+      "http_status": 200,
+      "final_url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+      "sha256": "9fc973d3c5345287218c795e493bd3bab411df150d103127b4df3b162e66c8e4",
+      "text_characters": 2477,
+      "representation_note": "Direct public PDF GET and pypdf extraction succeeded; prior general-checker block retained in initial_health. PDF includes multiple exams; only EX280 sections reviewed here."
+    },
+    {
+      "id": "kubernetes-kustomize",
+      "url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/",
+      "checked_at": "2026-09-29T02:00:45.340226+00:00",
+      "health": {
+        "id": "kubernetes-kustomize",
+        "url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/",
+        "checked_at": "2026-09-29T02:00:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Declarative Management of Kubernetes Objects Using Kustomize",
+        "canonical_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/",
+        "duration_signals": [],
+        "signal_fingerprint": "29d6c78e664029f68478cf123affd3ba4d459408e2e3e09305689c82cbefb189",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/",
+      "sha256": "3ab54a01d053ae327ba77507708dafb052019b24f6894e25d1863665acd78650",
+      "text_characters": 21252
+    },
+    {
+      "id": "kubernetes-network-policies",
+      "url": "https://kubernetes.io/docs/concepts/services-networking/network-policies/",
+      "checked_at": "2026-09-29T02:00:45.340890+00:00",
+      "health": {
+        "id": "kubernetes-network-policies",
+        "url": "https://kubernetes.io/docs/concepts/services-networking/network-policies/",
+        "checked_at": "2026-09-29T02:00:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://kubernetes.io/docs/concepts/services-networking/network-policies/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Network Policies",
+        "canonical_url": "https://kubernetes.io/docs/concepts/services-networking/network-policies/",
+        "duration_signals": [],
+        "signal_fingerprint": "f129d9bd12bf493995e7610f8de3a066a0ad8709f68cf501209dfe233e73f015",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://kubernetes.io/docs/concepts/services-networking/network-policies/",
+      "sha256": "9fdb37f6c61f384bf9528ba7a25530e7c9d81a5b9f76686111f3362c887480a7",
+      "text_characters": 22338
+    },
+    {
+      "id": "kubernetes-configmaps",
+      "url": "https://kubernetes.io/docs/concepts/configuration/configmap/",
+      "checked_at": "2026-09-29T02:00:45.522492+00:00",
+      "health": {
+        "id": "kubernetes-configmaps",
+        "url": "https://kubernetes.io/docs/concepts/configuration/configmap/",
+        "checked_at": "2026-09-29T02:00:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://kubernetes.io/docs/concepts/configuration/configmap/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "ConfigMaps",
+        "canonical_url": "https://kubernetes.io/docs/concepts/configuration/configmap/",
+        "duration_signals": [],
+        "signal_fingerprint": "6dffa440c60066ff743a7b0f90c5acda457124dfe093d31622b5d5f6afc049a2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://kubernetes.io/docs/concepts/configuration/configmap/",
+      "sha256": "45f48f8853a69bb87b22f3ad0a87a536f28663819c6f397ae9c26f61376ee28c",
+      "text_characters": 12868
+    },
+    {
+      "id": "redhat422-scc",
+      "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/authentication_and_authorization/managing-pod-security-policies",
+      "checked_at": "2026-09-29T02:00:48.455334+00:00",
+      "health": {
+        "id": "redhat422-scc",
+        "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/authentication_and_authorization/managing-pod-security-policies",
+        "checked_at": "2026-09-29T02:00:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/authentication_and_authorization/managing-pod-security-policies",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Chapter 17. Managing security context constraints | Authentication and authorization | OpenShift Container Platform | 4.22 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/authentication_and_authorization/managing-pod-security-policies",
+        "duration_signals": [],
+        "signal_fingerprint": "2f61f145070e9d035e39aca9c73ceb8f13fc035496e6f0c0b32be72a268c923f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/authentication_and_authorization/managing-pod-security-policies",
+      "sha256": "0ef098a8934e31c55285a28cff0cab9bf3001b70cf0b305e68e9c866f404158d",
+      "text_characters": 75641
+    },
+    {
+      "id": "redhat422-routes",
+      "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/ingress_and_load_balancing/routes",
+      "checked_at": "2026-09-29T02:00:49.305253+00:00",
+      "health": {
+        "id": "redhat422-routes",
+        "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/ingress_and_load_balancing/routes",
+        "checked_at": "2026-09-29T02:00:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/ingress_and_load_balancing/routes",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Chapter 1. Routes | Ingress and load balancing | OpenShift Container Platform | 4.22 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/ingress_and_load_balancing/routes",
+        "duration_signals": [
+          "approximately 8.5 hours"
+        ],
+        "signal_fingerprint": "2c810f4a28e21cfd6b9640c9ad111d26d4e90ec535d64fcee595325f95189147",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/ingress_and_load_balancing/routes",
+      "sha256": "77d63826ce5e761c19a0e1c95f1ee72b3b76e451c8e2a51c87c100d175e1ca9d",
+      "text_characters": 107382
+    },
+    {
+      "id": "redhat422-olm-v1",
+      "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/extensions/extensions-overview",
+      "checked_at": "2026-09-29T02:00:49.408633+00:00",
+      "health": {
+        "id": "redhat422-olm-v1",
+        "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/extensions/extensions-overview",
+        "checked_at": "2026-09-29T02:00:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/extensions/extensions-overview",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Chapter 1. Extensions overview | Extensions | OpenShift Container Platform | 4.22 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/extensions/extensions-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "237c88e5b104bf3e0c6d1192ae33382ea3b1b2695202db983ff6438c6e40564c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/extensions/extensions-overview",
+      "sha256": "de83e44e5e71a6ecdb4469939f55f4d88071cb47a650706a680875a7f737c0b7",
+      "text_characters": 42992
+    },
+    {
+      "id": "redhat422-olm-architecture",
+      "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/extensions/architecture",
+      "checked_at": "2026-09-29T02:05:01.007546+00:00",
+      "health": {
+        "id": "redhat422-olm-architecture",
+        "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/extensions/architecture",
+        "checked_at": "2026-09-29T02:05:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/extensions/architecture",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Chapter 2. Architecture | Extensions | OpenShift Container Platform | 4.22 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/extensions/architecture",
+        "duration_signals": [],
+        "signal_fingerprint": "72135e531040c177bc9edc6c5885ea651cd8bcd5307dc009546452df2ce9048f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/extensions/architecture",
+      "sha256": "ca245ce84c70e28581db9226881339901137d1176b8ccc25bb5b30f9bc006d62",
+      "text_characters": 51711
+    },
+    {
+      "id": "redhat-network-policy-verified-blog",
+      "url": "https://www.redhat.com/en/blog/closing-loop-network-policy-intent-verified-reality",
+      "checked_at": "2026-09-29T02:01:03.370108+00:00",
+      "health": {
+        "id": "redhat-network-policy-verified-blog",
+        "url": "https://www.redhat.com/en/blog/closing-loop-network-policy-intent-verified-reality",
+        "checked_at": "2026-09-29T02:01:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.redhat.com/en/blog/closing-loop-network-policy-intent-verified-reality",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Closing the loop: From network policy intent to verified reality",
+        "canonical_url": "https://www.redhat.com/en/blog/closing-loop-network-policy-intent-verified-reality",
+        "duration_signals": [],
+        "signal_fingerprint": "f445221b7c60c3185fa767a00a4efd4e13e48fd19304cb306a5268b7e69c1d2a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.redhat.com/en/blog/closing-loop-network-policy-intent-verified-reality",
+      "sha256": "e3a56f6d5ab0a96a14026bbc40c45b33666e4a8d8408c4c452d8a666d71b0bc4",
+      "text_characters": 36281
+    }
+  ],
+  "added_source_ids": [
+    "redhat-exam-version-objectives",
+    "kubernetes-kustomize",
+    "kubernetes-network-policies",
+    "kubernetes-configmaps",
+    "redhat422-scc",
+    "redhat422-routes",
+    "redhat422-olm-v1",
+    "redhat422-olm-architecture",
+    "redhat-network-policy-verified-blog"
+  ],
+  "findings": [
+    {
+      "id": "ex280-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Conflicting exam delivery version remains",
+      "url": "https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX280"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Headline and matching PDF list identify 4.22; the main delivery paragraph still names 4.18, while multiple versions are in use.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "ex280-deep-2",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Assigned version needs an explicit public reference",
+      "url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX280"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Version PDF contains EX280V422 and older lists with different scope. The V422 list matches the main 55 tasks after normalization.",
+      "recommendation": "Link the public document, retain the exact assigned-version rule, and map only the current public V422 list.",
+      "disposition": "applied",
+      "source_id": "redhat-exam-version-objectives",
+      "resolution": "Link the public document, retain the exact assigned-version rule, and map only the current public V422 list."
+    },
+    {
+      "id": "ex280-deep-3",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Multiple active versions does not establish a scheduled future change",
+      "url": "https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX280"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "No future effective date is supplied by the multi-version statement.",
+      "recommendation": "Change upcoming metadata to none-announced and preserve the observed ambiguity separately; retain accepted source snapshots.",
+      "disposition": "applied",
+      "source_id": "redhat-ex280-blueprint",
+      "resolution": "Change upcoming metadata to none-announced and preserve the observed ambiguity separately; retain accepted source snapshots."
+    },
+    {
+      "id": "ex280-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Declarative guidance lacked a concrete replayable artifact",
+      "url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX280"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Existing guide described base/overlay behavior without manifests or expected generated references.",
+      "recommendation": "Add original base, overlay and config change fixture; execute local rendering and check desired resource relationships.",
+      "disposition": "applied",
+      "source_id": "kubernetes-kustomize",
+      "resolution": "Add original base, overlay and config change fixture; execute local rendering and check desired resource relationships."
+    },
+    {
+      "id": "ex280-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Configuration update behavior needed consumption-specific boundaries",
+      "url": "https://kubernetes.io/docs/concepts/configuration/configmap/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX280"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Environment, normal volume and subPath consumers refresh differently.",
+      "recommendation": "Explain each case and distinguish generated-name rollout from editing same-name data.",
+      "disposition": "applied",
+      "source_id": "kubernetes-configmaps",
+      "resolution": "Explain each case and distinguish generated-name rollout from editing same-name data."
+    },
+    {
+      "id": "ex280-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Additive policies and selector indentation needed negative examples",
+      "url": "https://kubernetes.io/docs/concepts/services-networking/network-policies/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX280"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Combined selectors restrict the same peer; separate peers broaden alternatives; other selecting policies may widen access.",
+      "recommendation": "Add an original YAML fixture and allow/deny matrix with limited reference checks, explicitly not CNI validation.",
+      "disposition": "applied",
+      "source_id": "kubernetes-network-policies",
+      "resolution": "Add an original YAML fixture and allow/deny matrix with limited reference checks, explicitly not CNI validation."
+    },
+    {
+      "id": "ex280-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "SCC access cannot be established from one authorization command",
+      "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/authentication_and_authorization/managing-pod-security-policies",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX280"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "RBAC checks omit direct SCC users/groups; describe omits RBAC grants, and namespace scope differs.",
+      "recommendation": "Trace both grant paths, workload context and admission result; prefer dedicated account and scoped use grant.",
+      "disposition": "applied",
+      "source_id": "redhat422-scc",
+      "resolution": "Trace both grant paths, workload context and admission result; prefer dedicated account and scoped use grant."
+    },
+    {
+      "id": "ex280-deep-8",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Classic OLM chain was stated without version qualification",
+      "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/extensions/extensions-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX280"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "OLM v1 uses ClusterExtension and ClusterCatalog; classic console inventory does not show them.",
+      "recommendation": "Qualify classic instructions and add the current alternative resource model without expanding formal objective counts.",
+      "disposition": "applied",
+      "source_id": "redhat422-olm-v1",
+      "resolution": "Qualify classic instructions and add the current alternative resource model without expanding formal objective counts."
+    },
+    {
+      "id": "ex280-deep-9",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Forty questions lacked answers",
+      "url": "https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX280"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Original knowledge-check section contained questions only.",
+      "recommendation": "Add reasoned answers to all 40 and distinguish actual local checks from eight proposed cluster labs.",
+      "disposition": "applied",
+      "source_id": "redhat-ex280-blueprint",
+      "resolution": "Add reasoned answers to all 40 and distinguish actual local checks from eight proposed cluster labs."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "redhat-network-policy-verified-blog",
+      "authors": [
+        "Przemysław Roguski"
+      ],
+      "published_on": "2026-09-10",
+      "disposition": "accepted-with-limits",
+      "value": "Use a flow matrix, positive/negative runtime evidence and review all selecting policies.",
+      "limits": "Do not adopt article-specific DNS ports, hostNetwork generalizations, Helm boolean claims or its agent workflow. Current primary docs govern semantics; no cluster verification performed."
+    },
+    {
+      "url": "https://www.redhat.com/en/blog/networkpolicies-and-microsegmentation",
+      "authors": [
+        "Raffaele Spazzoli"
+      ],
+      "published_on": "2018-04-03",
+      "disposition": "rejected-for-current-implementation",
+      "value": "Historical discussion of ownership and continuous policy reconciliation.",
+      "limits": "OpenShift 3.7 and obsolete API/plugin examples; not added as a current implementation resource."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "service_labs_executed": 0,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "assertions": 24,
+      "checks": [
+        "identical inputs render identically",
+        "base remains one replica",
+        "overlay sets two replicas",
+        "three objects and no Namespace created",
+        "namespace reaches all resources",
+        "overlay merges configuration",
+        "base configuration remains baseline",
+        "deployment selector matches pod",
+        "service selector matches pod",
+        "named backend port resolves to 8080",
+        "generated name wired into pod",
+        "token automount disabled in fixture",
+        "changed content changes generated name",
+        "changed content changes pod template",
+        "new pod reference resolves",
+        "quality reviewer",
+        "quality other role",
+        "other team reviewer",
+        "wrong port",
+        "wrong protocol",
+        "OR broadens to quality other role",
+        "OR admits reviewer in policy namespace",
+        "pod-only peer does not select another namespace",
+        "additional broad policy widens union"
+      ],
+      "yaml_blocks": 4,
+      "client_version": "v1.36.1",
+      "kustomize_version": "v5.8.1",
+      "script_sha256": "28593835f872167e0fe87d19fb34464b6010e3d2443769ce679f5c2832299e47",
+      "execution_boundary": "Actual local kubectl kustomize rendering only, client v1.36.1, Kustomize v5.8.1. NetworkPolicy cases use a limited Python reference model, not packet/CNI enforcement. No API server, image pull, OpenShift admission, OAuth, SCC, Operator or cluster replay lab executed."
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Unresolved public 4.22/4.18 exam delivery wording; assigned candidate version not available. Follow-up October 5 is a library review date, not a vendor transition.",
+    "Local kubectl v1.36.1 / Kustomize v5.8.1 rendering does not establish matching oc behavior or OpenShift admission. NetworkPolicy model covers only explicit matchLabels/port fixtures, not runtime enforcement.",
+    "No OpenShift cluster, OAuth, SCC, route TLS, Operator installation, quota or clean-replay labs executed; all eight platform labs remain proposed.",
+    "OReilly and Udemy pages access-blocked; inherited metadata not reverified. Public learning estimates are not guarantees of paid content or exam readiness."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Actual local kubectl kustomize rendering only, client v1.36.1, Kustomize v5.8.1. NetworkPolicy cases use a limited Python reference model, not packet/CNI enforcement. No API server, image pull, OpenShift admission, OAuth, SCC, Operator or cluster replay lab executed.",
+    "learning_catalog_consistency": "passed",
+    "assertions": 24,
+    "checks": [
+      "identical inputs render identically",
+      "base remains one replica",
+      "overlay sets two replicas",
+      "three objects and no Namespace created",
+      "namespace reaches all resources",
+      "overlay merges configuration",
+      "base configuration remains baseline",
+      "deployment selector matches pod",
+      "service selector matches pod",
+      "named backend port resolves to 8080",
+      "generated name wired into pod",
+      "token automount disabled in fixture",
+      "changed content changes generated name",
+      "changed content changes pod template",
+      "new pod reference resolves",
+      "quality reviewer",
+      "quality other role",
+      "other team reviewer",
+      "wrong port",
+      "wrong protocol",
+      "OR broadens to quality other role",
+      "OR admits reviewer in policy namespace",
+      "pod-only peer does not select another namespace",
+      "additional broad policy widens union"
+    ],
+    "yaml_blocks": 4,
+    "client_version": "v1.36.1",
+    "kustomize_version": "v5.8.1",
+    "script_sha256": "28593835f872167e0fe87d19fb34464b6010e3d2443769ce679f5c2832299e47"
+  },
+  "version_specific_pdf": {
+    "url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+    "raw_sha256": "9fc973d3c5345287218c795e493bd3bab411df150d103127b4df3b162e66c8e4",
+    "page_count": 133,
+    "ex280_pages": [
+      1,
+      41,
+      42,
+      45
+    ],
+    "text_sha256": "48f894f92f9c4527c859131788d6f9daacf3281d0e53868e8e2f519b771a1c39",
+    "ex280_v422_task_count": 55,
+    "group_task_counts": [
+      14,
+      7,
+      6,
+      5,
+      6,
+      2,
+      5,
+      3,
+      7
+    ],
+    "comparison": "Same ordered group and task text after whitespace/ligature normalization, with no remaining text differences.",
+    "textual_differences": []
+  }
+}

@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: [EX280 deep review](docs/research/2026-09-28-ex280-deep-review.md): 55 tasks and the V422 PDF compared; 40 answers, 24 local rendering/selector checks, SCC/OLM/TLS boundaries and a retained exam-version blocker.
+
 - September 28, 2026: [EX200 deep review](docs/research/2026-09-28-ex200-deep-review.md): map 62 RHEL 10 tasks; answer all 40 checks; add persistence and system-state evidence; execute 21 local Bash/INI/arithmetic checks with VM limits explicit.
 
 - September 28, 2026: [DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK deep review](docs/research/2026-09-28-databricks-associate-developer-apache-spark-deep-review.md): map 32 objectives; repair JDBC, cast, watermark and AQE guidance; add 12 answers; record Spark/WSL execution blocker and 10 portable SQL checks.

@@ -3,6 +3,132 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "redhat-exam-version-objectives",
+      "title": "Red Hat Certification Exam Objectives by Version",
+      "url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+      "publisher": "Red Hat",
+      "authority_class": 1,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "EX280"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX280 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex280-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "kubernetes-kustomize",
+      "title": "Declarative Management of Kubernetes Objects Using Kustomize",
+      "url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/",
+      "publisher": "Kubernetes",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX280"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX280 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex280-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "kubernetes-network-policies",
+      "title": "Kubernetes Network Policies",
+      "url": "https://kubernetes.io/docs/concepts/services-networking/network-policies/",
+      "publisher": "Kubernetes",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX280"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX280 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex280-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "kubernetes-configmaps",
+      "title": "Kubernetes ConfigMaps",
+      "url": "https://kubernetes.io/docs/concepts/configuration/configmap/",
+      "publisher": "Kubernetes",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX280"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX280 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex280-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "redhat422-scc",
+      "title": "OpenShift 4.22 Security Context Constraints",
+      "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/authentication_and_authorization/managing-pod-security-policies",
+      "publisher": "Red Hat",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX280"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX280 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex280-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "redhat422-routes",
+      "title": "OpenShift 4.22 Routes",
+      "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/ingress_and_load_balancing/routes",
+      "publisher": "Red Hat",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX280"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX280 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex280-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "redhat422-olm-v1",
+      "title": "OpenShift 4.22 OLM v1 overview",
+      "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/extensions/extensions-overview",
+      "publisher": "Red Hat",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX280"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX280 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex280-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "redhat422-olm-architecture",
+      "title": "OpenShift 4.22 OLM v1 architecture",
+      "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/extensions/architecture",
+      "publisher": "Red Hat",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "EX280"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX280 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex280-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "redhat-network-policy-verified-blog",
+      "title": "Closing the loop: From network policy intent to verified reality",
+      "url": "https://www.redhat.com/en/blog/closing-loop-network-policy-intent-verified-reality",
+      "publisher": "Red Hat",
+      "authority_class": 3,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "supported_exams": [
+        "EX280"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 EX280 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex280-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "redhat10-fs-overview",
       "title": "RHEL 10 file system comparison",
       "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/managing_file_systems/overview-of-available-file-systems",

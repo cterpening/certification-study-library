@@ -6,19 +6,21 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-01
+last_verified: 2026-09-28
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-09-28
 ---
 
 # EX280 Red Hat Certified System Administrator in OpenShift Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ex280-coverage-record). The [official EX280 objectives](https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ex280-coverage-record). The [official EX280 objectives](https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam) are authoritative.
 
 **Current public-page baseline:** The headline says Red Hat OpenShift Container Platform 4.22; the same page's delivery paragraph still says tasks are based on 4.18<br>
-**Upcoming/version change:** A multi-version transition is in progress; Red Hat says multiple versions are in use and directs assigned candidates to version-specific objectives<br>
+**Upcoming/version change:** Multiple versions remain in use; no future effective date is established by that statement<br>
 **Binding version rule:** Confirm the version shown in the purchase/LMS assignment. Use that version's objectives and product documentation—not this page's mixed metadata or a third-party course title—as the final scope.<br>
 **Official source:** [Red Hat EX280 exam page](https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam)
+
+**CURRENT BLUEPRINT / VERIFY CURRENT:** On September 28, the public [version-specific objectives PDF](https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf) includes `EX280V422`, matching this guide's 55-task, nine-group map. It also contains older version lists; these are not interchangeable. The PDF does not settle the main page's 4.18 delivery wording. Select the exact assigned version before booking or building a cluster; keep the mismatch visible pending clarification.
 
 ## How to use this guide
 
@@ -83,6 +85,86 @@ Imperative commands remain useful for discovery and generating starter YAML, but
 
 > **Related item:** GitOps extends declarative management by having a controller reconcile a repository to clusters. GitOps products are broader than the listed EX280 tasks, but Git-style diffs, reviews, immutable history, and rollback-friendly changes are excellent preparation habits.
 
+### Render a configuration change before deployment
+
+This original exercise has four files. Create the directories shown and save each YAML block at its named path. The image is an intentionally non-runnable placeholder: rendering needs no image pull, credentials or cluster. For a later cluster lab, replace it with an approved image that supports the cluster's assigned UID and listens on port 8080. Supply the requested probes, resource sizing and namespace policy before deployment.
+
+`base/workload.yaml`:
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: study-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: study-api
+  template:
+    metadata:
+      labels:
+        app: study-api
+    spec:
+      automountServiceAccountToken: false
+      containers:
+        - name: api
+          image: example.invalid/study/api:v1
+          ports:
+            - name: http
+              containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: study-settings
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: study-api
+spec:
+  selector:
+    app: study-api
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+```
+
+`base/kustomization.yaml`:
+
+```yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - workload.yaml
+configMapGenerator:
+  - name: study-settings
+    literals:
+      - MODE=baseline
+```
+
+`overlays/practice/kustomization.yaml`:
+
+```yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../base
+namespace: study-practice
+replicas:
+  - name: study-api
+    count: 2
+configMapGenerator:
+  - name: study-settings
+    behavior: merge
+    literals:
+      - MODE=practice
+```
+
+The fourth file, `overlays/practice/README.txt`, is your own evidence note: record the client version, expected namespace, replicas, ConfigMap value and selector/port relationships. Run `kubectl kustomize overlays/practice` to render locally, or use the assigned `oc` client's supported equivalent. Neither rendering command applies resources. The overlay's namespace field does not create a Namespace object.
+
+Expected output has a Deployment with two replicas, a matching Service and one generated ConfigMap. Its content-dependent name is rewritten into the Deployment reference. Change `MODE=practice` to `MODE=recovery` and render again: the ConfigMap name and pod-template reference should both change, allowing a Deployment rollout when applied. Rendering identical inputs should be stable. Check these relationships instead of memorizing a particular hash suffix. The [Kustomize reference](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/) explains generators and name references; the cluster still decides schema acceptance, quota, SCC admission and runtime behavior.
+
 ## 3. Deploy applications
 
 Understand the controller-to-network chain: a Deployment manages ReplicaSets, a ReplicaSet maintains Pods, labels connect Pods to selectors, a Service provides stable discovery/load distribution, and a Route or another external mechanism brings traffic into the cluster. When an application is unreachable, prove each link rather than recreating everything.
@@ -90,6 +172,8 @@ Understand the controller-to-network chain: a Deployment manages ReplicaSets, a 
 Labels are arbitrary metadata; selectors are behavioral contracts. A Deployment selector must agree with its pod-template labels, and a Service selector must match the intended ready Pods. Inspect EndpointSlices/endpoints to confirm the Service actually has backends. Distinguish `port`, `targetPort`, container port, and the port on which the process really listens.
 
 ConfigMaps hold non-secret configuration; Secrets hold sensitive material but are not automatically safe merely because they are base64-encoded. Know environment-variable and volume-mount consumption, update behavior, file keys/paths, and the need to restart or roll out workloads when applications do not reload values dynamically. Validate from inside the running container without printing secret values into logs or notes.
+
+For [ConfigMap update behavior](https://kubernetes.io/docs/concepts/configuration/configmap/), separate three cases: existing container environment variables stay unchanged; normal projected volume files are refreshed eventually but the application must reread them; a `subPath` mount does not receive updates. A new generated ConfigMap name in the pod template causes a different kind of change from editing data behind the same name. Validate both the mounted/environment value and what the application actually uses.
 
 Templates parameterize OpenShift objects; Helm packages and renders charts; Kustomize overlays existing YAML without a template language. Select the mechanism named in the task, inspect rendered resources, set values explicitly, and verify ownership and upgrade behavior. For Deployments, practice image/config updates, rollout status/history, pause/resume only where needed, and safe rollback based on observed failure.
 
@@ -113,6 +197,49 @@ Routes expose HTTP/S traffic through the OpenShift ingress controller. Understan
 
 NetworkPolicy is additive. Once a Pod is selected for a traffic direction, allowed traffic is the union of applicable policies. Namespace and pod selectors can combine; an empty selector has a specific broad meaning. Create source and destination test Pods, prove an allowed flow and a denied flow, and ensure DNS/required platform traffic is not accidentally blocked.
 
+### Prove selector scope and policy composition
+
+In [standard NetworkPolicy](https://kubernetes.io/docs/concepts/services-networking/network-policies/), two selectors within one peer are combined with AND; separate peers are alternatives. A peer containing only a pod selector selects Pods in the policy's own namespace. For a pod-to-pod flow, source egress and destination ingress must both permit it when those directions are isolated. This explanation concerns ordinary NetworkPolicy; cluster-level policy APIs can impose additional controls.
+
+Save this original ingress-only fixture as `allow-reviewer.yaml`. It selects `app=study-api` Pods in `study-practice` and permits TCP 8080 from Pods labeled `role=reviewer` in namespaces labeled `team=quality`:
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-reviewer
+  namespace: study-practice
+spec:
+  podSelector:
+    matchLabels:
+      app: study-api
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              team: quality
+          podSelector:
+            matchLabels:
+              role: reviewer
+      ports:
+        - protocol: TCP
+          port: 8080
+```
+
+| Source / request | This rule permits ingress? |
+|---|---|
+| Quality namespace, reviewer Pod, TCP 8080 | Yes |
+| Quality namespace, another role, TCP 8080 | No |
+| Another team, reviewer Pod, TCP 8080 | No |
+| Quality reviewer, TCP 9090 | No |
+| Quality reviewer, UDP 8080 | No |
+
+Splitting the two selectors into separate `from` entries broadens the rule: any Pod in a quality namespace **or** a reviewer Pod in the policy's own namespace could match. A second policy allowing everyone on TCP 8080 also broadens the effective allowance; adding a restrictive policy cannot subtract that allowance. This fixture does not control egress, other destination labels, route access or every platform exception. Inspect all selecting policies and use fresh connections from real source Pods for the later cluster test.
+
+For [route TLS](https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/ingress_and_load_balancing/routes), trace both legs: edge decrypts at the router and normally forwards cleartext HTTP; passthrough leaves TLS for the backend and depends on SNI; re-encrypt decrypts at the router and establishes a separate TLS connection to the backend. Check the backend certificate trust configuration, including the destination CA where required. A successful frontend handshake alone does not prove backend trust or application health.
+
 For external access, understand ClusterIP, NodePort, LoadBalancer, ingress/routes, and what the cluster/provider actually provisions. A LoadBalancer Service may remain pending without an integrated implementation. Match the exposure method to protocol, source restrictions, TLS boundary, and platform support.
 
 > **Related item:** OpenShift commonly uses OVN-Kubernetes, but plugin details and diagnostic surfaces change by product version. Learn stable packet-path reasoning, then bind exact commands and objects to the assigned documentation.
@@ -135,11 +262,13 @@ Good self-service creates safe paved roads: users can create the resources they 
 
 ## 8. Manage OpenShift Operators
 
-Operator Lifecycle Manager concepts form a chain: catalog/package/channel exposes versions; a Subscription expresses desired channel/version behavior; an InstallPlan represents installation/upgrade actions; a ClusterServiceVersion reports the installed Operator; custom resource definitions extend the API; custom resources request managed instances.
+**Classic OLM:** Operator Lifecycle Manager concepts form a chain: catalog/package/channel exposes versions; a Subscription expresses desired channel/version behavior; an InstallPlan represents installation/upgrade actions; a ClusterServiceVersion reports the installed Operator; custom resource definitions extend the API; custom resources request managed instances.
 
 Before installation, inspect scope, namespace, channel, approval mode, compatibility, dependencies, CRDs, and permissions. After installation, verify Subscription, InstallPlan, CSV conditions, Operator pods, CRDs, and a safe custom-resource path. Troubleshoot from conditions and events rather than repeatedly deleting resources.
 
 Uninstall is not one universal delete. Removing a Subscription/CSV may leave custom resources, CRDs, operands, namespaces, or cluster-wide RBAC. Follow the assigned product documentation and the task's requested end state. “Delete an Operator” and “delete all data it ever managed” are not synonyms.
+
+**VERIFY CURRENT — two OLM resource models:** The [OpenShift 4.22 OLM v1 overview](https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/extensions/extensions-overview) and [architecture](https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/extensions/architecture) describe `ClusterExtension` and `ClusterCatalog`, with Operator Controller and catalogd. A `ClusterExtension` is cluster-scoped even when its installed components use a named namespace. Discover the installed APIs and follow the assigned workflow; do not require a Subscription/CSV for an extension installed through v1. Classic console Operator pages do not represent the v1 installation inventory. Treat this distinction as version-aware operational context, not a new weighted exam objective.
 
 > **Related item:** Operators encode operational knowledge in controllers. The same reconciliation model used for Deployments explains why directly editing an operand may be reverted by its Operator.
 
@@ -148,6 +277,10 @@ Uninstall is not one universal delete. Removing a Subscription/CSV may leave cus
 Pods call the Kubernetes API as service accounts. Give each workload the narrow service account and RBAC needed, mount tokens only when necessary, and verify authorization from that identity. Avoid granting broad roles to the default service account for convenience.
 
 Security Context Constraints govern whether a workload may run with requested Linux identities, capabilities, host access, volumes, and privilege. Diagnose admission using workload events and SCC authorization. Prefer adapting the workload to an appropriate existing SCC or granting a narrowly appropriate SCC to a dedicated service account; privileged access is a last resort and must be explicitly required.
+
+The [4.22 SCC reference](https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/authentication_and_authorization/managing-pod-security-policies) distinguishes two grant paths. `oc auth can-i use scc/<name>` and `oc adm policy who-can use scc <name>` inspect RBAC; they do not include direct entries in the SCC's `users`/`groups`. `oc describe scc <name>` shows those direct entries, not all RBAC grants. Inspect both paths, the subject identity, requested pod security context, events and the admitted Pod's `openshift.io/scc` annotation. A single RBAC `no` does not prove the subject has no SCC access; an RBAC `yes` does not prove the requested pod satisfies that SCC.
+
+A Role/RoleBinding can scope permission to use a named SCC within a project. Directly adding a user/group/service account to an SCC grants access across projects where the subject can create Pods. Prefer a dedicated workload account and the narrow required grant; preserve built-in SCC definitions. Test both an allowed workload and an out-of-scope identity, rather than fixing every admission failure by granting `privileged`.
 
 Secrets should be scoped, access-controlled, and consumed without disclosure. Separate the permission to read a Secret from the permission to create a Pod that can mount it—both can expose data. For Jobs and CronJobs, define restart/concurrency/history behavior and use a dedicated service account. Verify completion, logs, schedules, missed/overlapping execution behavior, and cleanup.
 
@@ -161,7 +294,7 @@ Create two developer groups and isolated projects. Configure least-privilege bin
 
 ### Scenario 2: Packaged privileged workload
 
-Install an approved Operator or Helm-packaged workload in its designated namespace. Trace Subscription/CSV or rendered chart objects, use a dedicated service account, add only the required SCC/RBAC, expose the correct protocol, and prove a normal user cannot escalate. Remove the installation to the exact requested boundary and inventory residual cluster-scoped objects.
+Install an approved Operator or Helm-packaged workload in its designated namespace. Trace the assigned OLM lifecycle resources or rendered chart objects, use a dedicated service account, add only the required SCC/RBAC, expose the correct protocol, and prove a normal user cannot escalate. Remove the installation to the exact requested boundary and inventory residual cluster-scoped objects.
 
 ### Scenario 3: Broken production deployment
 
@@ -175,7 +308,7 @@ Start with a failing rollout containing an image/tag mistake, selector mismatch,
 4. **Identity and RBAC:** configure HTPasswd on a disposable cluster, create users/groups, bind roles, and prove allowed/denied operations with impersonation.
 5. **Network boundaries:** implement TLS route modes and NetworkPolicies; test DNS, same/different project access, denied sources, endpoint readiness, and certificate presentation.
 6. **Self-service:** configure quota, limit ranges, requests/limits, cluster quota where available, and a project template; validate as developer and diagnose admission failures.
-7. **Operator lifecycle:** install into the correct scope, inspect Subscription/InstallPlan/CSV/CRD/operand health, then uninstall to a documented boundary.
+7. **Operator lifecycle:** install into the correct scope, inspect the installed OLM resource model, CRDs and operand health, then uninstall to a documented boundary.
 8. **Security and timed recovery:** use a dedicated service account, narrow RBAC/SCC access, Secret consumption, Job, and CronJob; then solve an integrated broken environment using only assigned-version docs.
 
 For every lab retain manifests, commands, expected observations, actual output, version, rollback, and a clean-replay result. Scrub credentials, tokens, certificates' private keys, and cluster URLs before saving evidence.
@@ -223,6 +356,49 @@ For every lab retain manifests, commands, expected observations, actual output, 
 39. What Job/CronJob settings affect retries, overlap, and history?
 40. What evidence shows an entire solution is reproducible rather than manually repaired?
 
+## Answers to the original knowledge checks
+
+1. The same public page gives two baselines and says several versions are in use; neither a headline nor an older delivery paragraph identifies your assigned exam.
+2. The assigned version in the LMS and its matching objectives. The public version PDF helps compare lists; it does not assign a version to you.
+3. Controllers must recreate the requested working state from durable resources after replacement/reconciliation; manual changes inside a Pod are insufficient.
+4. Those checks prevent correct operations against the wrong account, project or cluster and identify the available API/tool version.
+5. The specification expresses intent; status reports observations; conditions summarize particular states; events are transient diagnostic records.
+6. After a container restart when the current process logs omit the failure. Previous logs may be unavailable if the earlier container has been removed.
+7. Server-assigned identity, version and status fields are observations rather than reusable desired configuration.
+8. A digest identifies image content. A tag is a mutable reference; neither alone proves the image is trusted or suitable.
+9. They reveal available resources, scope and field schemas for the actual server, reducing reliance on an old example.
+10. A controller recreates Pods from its template; update the owning declarative resource.
+11. The base holds common resources and the overlay expresses differences such as namespace, replicas and configuration.
+12. Inspect the exact generated objects, selectors, references, permissions and values before admission; rendering itself does not prove runtime success.
+13. The Deployment manages rollout through ReplicaSets; each ReplicaSet maintains its desired matching Pod count.
+14. Matching ready EndpointSlices plus a successful Service request. Matching labels alone do not establish application readiness.
+15. The Service exposes its port to clients and forwards to the backend targetPort, which can refer to a named container port; a real process must listen there.
+16. Environment consumption needs replacement to obtain new values. Normal volume projections update eventually but may require application reload; subPath mounts do not refresh. Handle Secret consumption with the same deliberate verification.
+17. Templates substitute parameters into OpenShift resources, Helm renders packaged charts, and Kustomize transforms existing manifests.
+18. A known-good revision and compatible configuration/data, clear rollout failure evidence, then healthy replacement Pods and endpoint behavior. Undoing a Deployment is not a database rollback.
+19. Authentication establishes identity; authorization evaluates permitted actions on resources.
+20. The role defines permissions; the RoleBinding confines applicable namespaced permissions to its own namespace. Cluster-scoped access needs the appropriate cluster binding.
+21. Prove one required action succeeds and one forbidden action fails as the intended subject.
+22. Credentials may remain at the identity provider and bindings/identity mappings can remain separately. Check each layer and the provider-specific revocation behavior.
+23. Resolve the external name/address, inspect load balancer/ingress, route and TLS, Service and endpoints, then destination port/process and network controls.
+24. Edge terminates at the router; passthrough terminates at the backend; re-encrypt terminates at the router and creates a new encrypted backend connection.
+25. Their allowed traffic is a union for each isolated direction. Source egress and destination ingress must both allow a connection; other cluster-level controls also matter.
+26. Its external implementation or address pool may be absent, exhausted or still provisioning; inspect controller events and provider support.
+27. When the protocol does not fit HTTP or supported TLS/SNI routing, such as arbitrary UDP or plain TCP; choose the assigned L4 mechanism.
+28. Transport protocol, both port mappings, provisioned address, ready backends, controls and a real end-to-end client exchange.
+29. Quota governs aggregate project usage/counts; LimitRange sets defaults or bounds on individual resource specifications.
+30. Requests reserve scheduling capacity and count toward the applicable quota; satisfying quota does not guarantee a node has capacity.
+31. The template supplies initial resources for new projects; existing projects do not automatically adopt edits.
+32. It permits the intended project/workload operations while constraining capacity, cross-project access and cluster administration.
+33. In classic OLM, a Subscription requests a channel, InstallPlan tracks actions, CSV describes the installed Operator, CRDs define APIs and custom resources request instances. OLM v1 uses a different resource model.
+34. Inspect the relevant lifecycle conditions, controller Pods/events and the managed instance's observed behavior; successful installation alone does not prove the operand works.
+35. Lifecycle ownership and uninstall boundaries differ; custom resources, data, CRDs or shared permissions may intentionally remain. Inventory before deletion.
+36. Usually the configured service account using its projected credential; a Pod with token automount disabled needs another explicit supported authentication path to call the API.
+37. Inspect both SCC direct grants and RBAC, the workload identity and requested fields, admission events and the selected SCC after success. Correct only the actual mismatch.
+38. Every workload using that shared identity could inherit broad host/capability permissions. Isolate identities and grant only the required SCC access.
+39. Jobs use backoffLimit, restartPolicy and deadlines; CronJobs add schedule, concurrencyPolicy, startingDeadlineSeconds and history limits. Job actions must tolerate retries or duplicate execution.
+40. A clean replay from saved manifests, healthy reconciliation, real endpoint checks and allowed/denied tests after replacement, with versions and observations recorded.
+
 ## Version-transition checklist
 
 Before using 4.18, 4.22, or older content, compare it with the assigned version:
@@ -240,6 +416,18 @@ Before using 4.18, 4.22, or older content, compare it with the assigned version:
 
 Do not add an older topic merely because a course teaches it, and do not omit an assigned-version task because a newer course moved on. The LMS assignment wins.
 
+## Related-item note
+
+> **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
+
+## Source map and freshness notes
+
+The live EX280 page is the scope authority but contains conflicting 4.22/4.18 statements and explicitly delegates assigned candidates to version-specific objectives. Matching versioned product documentation controls syntax and behavior. DO180/DO280 describe official learning routes; other resources supplement explanation and practice only.
+
+Volatile: assigned exam version, objectives, APIs, console layout, CLI/tool behavior, network/ingress implementation, Operator channels, SCC defaults, course versions, sandbox limits, delivery, price, duration, access, and schedule. Recheck the official page and LMS immediately before study-plan lock and booking.
+
+This guide uses only public objective language and original scenarios, labs, and checks. It does not reproduce or solicit recalled exam tasks.
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Pick the explanation style and lab environment that work for you, then use the assigned objectives as the checklist. Estimated time includes deliberate practice where stated; access, runtimes, course versions, and schedules can change.
@@ -253,27 +441,19 @@ This is not a complete list and is not meant to be consumed in full. Pick the ex
 | Red Hat Developer Sandbox | Free account, 30-day environment | 10–25 project-scoped hours |
 | OpenShift Local | Free account; capable local hardware | 20–50 hours |
 | Pluralsight OpenShift Administration path | Paid | 10 hours video plus 20–40 hours labs |
-| O'Reilly / Sander van Vugt EX280 video | Paid | 8 hours 1 minute plus 20–40 hours labs and large version-gap review |
-| Udemy / Mahmoud Khatab EX280 course | Paid; Arabic with English captions | 7 hours 53 minutes plus 20–40 hours labs and scope review |
+| O'Reilly / Sander van Vugt EX280 video | Paid; page blocked in this review | Previously listed 8 hours 1 minute plus 20–40 hours labs and large version-gap review |
+| Udemy / Mahmoud Khatab EX280 course | Paid; page blocked in this review | Previously listed 7 hours 53 minutes plus 20–40 hours labs and scope review |
 
-- **Official core:** [DO180 OpenShift Administration I](https://www.redhat.com/en/services/training/red-hat-openshift-administration-i-operating-a-production-cluster) currently advertises 4.22. [DO280 OpenShift Administration II](https://www.redhat.com/en/services/training/red-hat-openshift-administration-ii-configuring-a-production-cluster) is the closest official administration route, but its public metadata may lag during the version transition. Verify the purchased course revision.
+- **Official core:** [DO180 OpenShift Administration I](https://www.redhat.com/en/services/training/red-hat-openshift-administration-i-operating-a-production-cluster) advertises 4.22 as checked September 28. [DO280 OpenShift Administration II](https://www.redhat.com/en/services/training/red-hat-openshift-administration-ii-configuring-a-production-cluster) is the closest official administration route and also advertises 4.22 as checked September 28; this does not reconcile the exam page's mixed wording. Verify the purchased course revision.
 - **Versioned documentation:** use [OpenShift 4.22 documentation](https://docs.redhat.com/en/documentation/openshift_container_platform/4.22) for an assigned 4.22 exam and [OpenShift 4.18 documentation](https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/) for an assigned 4.18 exam. Become fast at finding examples inside the version you will actually receive.
 - **Free orientation:** [DO080 Containers, Kubernetes and OpenShift Technical Overview](https://www.redhat.com/en/services/training/do080-deploying-containerized-applications-technical-overview) is an older 4.12 foundation, approximately two hours, not full exam preparation. The [Foundations of OpenShift path](https://developers.redhat.com/learning/learn%3Aopenshift%3Afoundations-openshift/resource/resources%3Aopenshift-and-developer-sandbox) lists 3 hours 40 minutes of guided content.
 - **Practice environments:** the [Developer Sandbox FAQ](https://developers.redhat.com/developer-sandbox/FAQ) describes a free 30-day shared environment and its restrictions. [OpenShift Local](https://developers.redhat.com/products/openshift-local/getting-started) provides a local minimal cluster. The sandbox cannot grant every cluster-admin capability; OpenShift Local requires substantial machine resources and still differs from a production multi-node cluster.
 - **Current broad path:** [Pluralsight Red Hat OpenShift Administration](https://www.pluralsight.com/paths/red-hat-openshift-administration) lists six 2026 courses and ten video hours. It is broader than EX280 and not an official version-specific objective map, so select relevant modules and add labs.
-- **Older detailed route:** [O'Reilly/Pearson Red Hat OpenShift Administration: EX280](https://www.oreilly.com/videos/red-hat-openshift/9780137441938/) is 8 hours 1 minute from April 2021. Its controller/RBAC/resource fundamentals remain useful, but it predates the current Kustomize, declarative, networking, Operator, non-HTTP exposure, and version-specific emphasis.
-- **Alternative language route:** [Udemy / Mahmoud Khatab EX280](https://www.udemy.com/course/red-hat-certified-openshift-administrator-course-ex280/) lists 7 hours 53 minutes, 30 lectures, Arabic audio and English captions, updated August 2026. It includes useful hands-on administration but also topics not named on the current public list; map every module and do not treat course breadth as exam scope.
+- **Older detailed route:** [O'Reilly/Pearson Red Hat OpenShift Administration: EX280](https://www.oreilly.com/videos/red-hat-openshift/9780137441938/) was previously listed as 8 hours 1 minute from April 2021; the page was access-blocked on September 28, so this metadata was not reverified. Its controller/RBAC/resource fundamentals remain useful, but it predates the current Kustomize, declarative, networking, Operator, non-HTTP exposure, and version-specific emphasis.
+- **Alternative language route:** [Udemy / Mahmoud Khatab EX280](https://www.udemy.com/course/red-hat-certified-openshift-administrator-course-ex280/) was previously listed as 7 hours 53 minutes, 30 lectures, Arabic audio and English captions, updated August 2026. Its page was access-blocked in this review; verify these details before purchase. It includes useful hands-on administration but also topics not named on the current public list; map every module and do not treat course breadth as exam scope.
+
+- **Operational reading:** Przemysław Roguski's September 10, 2026 [network-policy verification article](https://www.redhat.com/en/blog/closing-loop-network-policy-intent-verified-reality) motivates testing denied as well as permitted flows and inspecting every selecting policy. Allow its listed 37-minute reading time plus 1–2 hours to design your own flow matrix. Its platform-specific ports, host-network cases and template examples need separate verification against your cluster; this guide adopts the validation method, not those settings or the article's agent workflow.
+
+**PRACTICAL DEPTH — review evidence:** Local Kustomize rendering and selector reference checks are recorded in the [September 28 review](../docs/research/2026-09-28-ex280-deep-review.md). No OpenShift cluster, OAuth, SCC admission, networking, Operator installation or clean-replay lab was executed. The eight platform labs above remain practice tasks, and a successful render is not a passing cluster lab.
 
 No exact current EX280 MeasureUp, Whizlabs, or official multiple-choice practice exam was independently verified on September 1. Because EX280 is performance-based, build original tasks from the public objectives and validate them on fresh namespaces/clusters. Avoid products claiming real, leaked, “sure shot,” or recalled exam content. A realistic plan is **120–220 hours** after Kubernetes/OpenShift workload experience, or **250–450 hours** if containers, Kubernetes, Linux, and cluster administration are all new.
-
-## Related-item note
-
-> **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
-
-## Source map and freshness notes
-
-The live EX280 page is the scope authority but contains conflicting 4.22/4.18 statements and explicitly delegates assigned candidates to version-specific objectives. Matching versioned product documentation controls syntax and behavior. DO180/DO280 describe official learning routes; other resources supplement explanation and practice only.
-
-Volatile: assigned exam version, objectives, APIs, console layout, CLI/tool behavior, network/ingress implementation, Operator channels, SCC defaults, course versions, sandbox limits, delivery, price, duration, access, and schedule. Recheck the official page and LMS immediately before study-plan lock and booking.
-
-This guide uses only public objective language and original scenarios, labs, and checks. It does not reproduce or solicit recalled exam tasks.
