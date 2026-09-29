@@ -1186,6 +1186,8 @@ The review reconciles every public EX200 task with RHEL 10 documentation and cur
 
 ## EX294 coverage record
 
+The September 28 [deep review](research/2026-09-28-ex294-deep-review.md) maps 56 detailed objectives. Mapped 56 unchanged tasks in eleven official groups and compared the EX294V26K PDF; update the AU294 baseline to RHEL 10/core 2.16/AAP 2.6, add all 40 answers, typed-input/template validation, explicit failure/handler boundaries and 41 local Jinja/Python/expression checks. No Ansible or RHEL platform lab executed. Current guide citations: 18 registered, 15 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 1, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: eight unweighted current task groups covering RHCSA foundations, Ansible components, control/managed-node configuration, navigator and development workflows, resilient playbooks, roles/collections, automated RHEL administration, templates, and Vault

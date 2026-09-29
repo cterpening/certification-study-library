@@ -1,0 +1,1633 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "EX294",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/EX294-red-hat-certified-advanced-system-administrator-ansible.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "bd6c0fcf444d109f21220b0f747744b15d48da83f8d6fee44e6e1ede3172e2d4",
+  "guide_after_sha256": "44a432ecfad33d430b2a4fc6583ee7c46eb8376c9bd31c68b5a0f5f906de7aaa",
+  "prior_records": {
+    "exam": {
+      "code": "EX294",
+      "level": "intermediate",
+      "vendor_id": "red-hat",
+      "title": "Red Hat Certified Advanced System Administrator in Ansible",
+      "status": "active",
+      "study_guide_url": "https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux",
+      "guide_path": "guides/EX294-red-hat-certified-advanced-system-administrator-ansible.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Red Hat recommends RHCSA-level RHEL administration plus AU294 or comparable Ansible experience. Confirm the exact purchasable exam version; the current AU294 public baseline is RHEL 10, Ansible Core 2.16 and development tooling aligned with AAP 2.5/2.6. Practice reproducible fresh-host playbooks, navigator/execution environments, Git/VS Code, roles/collections, Vault and persistent automation of RHCSA tasks."
+    },
+    "review": {
+      "id": "ex294-2026-09-01-source-validation",
+      "exam_code": "EX294",
+      "guide_path": "guides/EX294-red-hat-certified-advanced-system-administrator-ansible.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ex294-official-objectives.txt",
+      "blueprint_snapshot_sha256": "e95d8682f731a4bd566b4bac9f0695ee8c46977a595f1eb99402a041cafd0376",
+      "objective_coverage": [
+        {
+          "objective_group": "RHCSA capability and simple shell-script analysis",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Core Ansible components",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 1–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Control and managed-node configuration",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios 1 and 3",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Run and develop playbooks with navigator, Git and VS Code",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 2–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Resilient plays and playbooks",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Labs 3–8"
+          ]
+        },
+        {
+          "objective_group": "Roles and Content Collections",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenarios 2 and 3",
+            "Labs 3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Automate standard RHEL administration",
+          "guide_sections": [
+            "Section 7",
+            "All integrated scenarios",
+            "Labs 4–8"
+          ]
+        },
+        {
+          "objective_group": "Templates and Ansible Vault",
+          "guide_sections": [
+            "Section 8",
+            "Integrated scenarios 1 and 2",
+            "Labs 5 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 8,
+        "reachable": 5,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "The current unweighted EX294 objectives were reconciled with the AU294 RHEL 10, Ansible Core 2.16, and AAP 2.5/2.6 training baseline. The guide preserves Red Hat's warning that multiple exam versions may be sold, separates the current Advanced System Administrator in Ansible name from older RHCE branding, and treats evaluation as reproducible playbooks applied to fresh systems. Three scenarios, eight labs and 40 original checks cover inventory and controller configuration, execution environments and collections, navigator, Git/VS Code development containers, modules and resilient playbooks, roles, RHEL administration, templates, Vault, idempotence, second-run evidence and fresh-host replay. All eight URLs are cataloged: five reachable and three commercial routes automation-blocked; none missing or broken. Older material has an explicit current-page gap checklist and no recalled exam tasks are used."
+    },
+    "sources": [
+      {
+        "id": "redhat-ex294-blueprint",
+        "title": "Red Hat Certified Advanced System Administrator in Ansible exam",
+        "url": "https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux",
+        "publisher": "Red Hat",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX294"
+        ],
+        "notes": "Canonical current EX294 objectives and credential page. Red Hat describes the most recent product version but may sell multiple versions; confirm the selected version during purchase."
+      },
+      {
+        "id": "redhat-ex294-au294",
+        "title": "Red Hat Enterprise Linux Automation with Ansible AU294",
+        "url": "https://www.redhat.com/en/services/training/au294-red-hat-linux-automation-with-ansible",
+        "publisher": "Red Hat",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX294"
+        ],
+        "notes": "Official current companion course; public baseline is RHEL 10, Ansible Core 2.16, and development tooling aligned with Ansible Automation Platform 2.5/2.6."
+      },
+      {
+        "id": "redhat-ex294-au094",
+        "title": "Ansible Basics: Automation Technical Overview AU094",
+        "url": "https://www.redhat.com/en/services/training/au094-ansible-essentials-simplicity-automation-technical-overview",
+        "publisher": "Red Hat",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX294"
+        ],
+        "notes": "Free AAP 2.5 orientation for foundational vocabulary; not a complete EX294 preparation route."
+      },
+      {
+        "id": "redhat-ex294-aap26-docs",
+        "title": "Red Hat Ansible Automation Platform 2.6 documentation",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6",
+        "publisher": "Red Hat",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX294"
+        ],
+        "notes": "Current official AAP 2.6 product documentation; use the documentation matching the exam version selected during purchase."
+      },
+      {
+        "id": "redhat-ex294-ansible-docs",
+        "title": "Ansible community documentation",
+        "url": "https://docs.ansible.com/ansible/latest/",
+        "publisher": "Ansible community",
+        "authority_class": 3,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX294",
+          "NSE-7-CLOUD-SECURITY"
+        ],
+        "notes": "Upstream latest Ansible documentation for playbook, inventory, module, collection, role, Vault, navigator, and development concepts; reconcile behavior with the purchased Red Hat product version."
+      },
+      {
+        "id": "redhat-ex294-udemy-afzal",
+        "title": "Linux Red Hat Certified Engineer RHCE EX294",
+        "url": "https://www.udemy.com/course/linux-red-hat-certified-engineer-rhce-ex294/",
+        "publisher": "Udemy / Imran Afzal",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX294"
+        ],
+        "notes": "Seven hours 48 minutes and 72 lectures listed; updated June 2026. Verify current navigator, development-container, Git, execution-environment, and AAP coverage."
+      },
+      {
+        "id": "redhat-ex294-udemy-atef",
+        "title": "RHCE EX294 Practice Exams: Master Ansible Automation",
+        "url": "https://www.udemy.com/course/rhce-ex294-practice-exams-master-ansible-automation/",
+        "publisher": "Udemy / Ghada Atef",
+        "authority_class": 4,
+        "source_type": "hands-on-lab",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX294"
+        ],
+        "notes": "Six RHEL 10 scenario sets listed and updated July 2026. Use only for lawful original practice and map tasks to the current public objectives; the landing page also describes topics beyond that exact scope."
+      },
+      {
+        "id": "redhat-ex294-oreilly-book",
+        "title": "Red Hat RHCE 8 EX294 Cert Guide",
+        "url": "https://www.oreilly.com/library/view/red-hat-rhce/9780136872481/",
+        "publisher": "O'Reilly / Pearson / Sander van Vugt",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX294"
+        ],
+        "notes": "October 2020, 516-page older reference with a listed reading time of 12 hours 59 minutes; predates the current RHEL 10, navigator, execution-environment, VS Code development-container, Git, and current AAP baseline."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "138433c4bf6fe51f6a449ada7cc8ffa04c9f14c9e237105560435a6a43db5f39",
+      "guide_sections": [
+        "1. RHCSA capability is the automation substrate",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "b31c5aee6de9b8347a8c06788a77c00469f7e3c8eb2caead417d7b1e888391e7",
+      "guide_sections": [
+        "1. RHCSA capability is the automation substrate",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "0607d4dc138e6b440ebf20a3bffdf3b18b6f094a611d8bb0026dd8b718689e17",
+      "guide_sections": [
+        "1. RHCSA capability is the automation substrate",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "bf52d0dd6849608b970522ea371116beaa3f987293f3b82e88daea54cbc8bcaa",
+      "guide_sections": [
+        "1. RHCSA capability is the automation substrate",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "e84c19d360f26c3d7df51d4f3c6b95a0c2d04ef72918f6c6a4f519799526fc4f",
+      "guide_sections": [
+        "1. RHCSA capability is the automation substrate",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "9f1f4149caa37954a105d5be11def5b42a3189ae10a1e1b26573fadbce080778",
+      "guide_sections": [
+        "1. RHCSA capability is the automation substrate",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "9292d619672f20d936d1f627ce22d71b67d5be6c4708596ca56e1c1586203c35",
+      "guide_sections": [
+        "1. RHCSA capability is the automation substrate",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "35a0379af9cab97cd1ed06cd9e6d1da3a4ce73638f4684ed3bb4233bd41e5199",
+      "guide_sections": [
+        "1. RHCSA capability is the automation substrate",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "04f9be26b062b9653708ec18d677c4291b6c2627b7c9ffaf315d4c5a314677e4",
+      "guide_sections": [
+        "2. Core Ansible components",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "76c86c4c32432be30bdd4037aae3c816045cc2a34a0b41b2322bb2c37927323e",
+      "guide_sections": [
+        "2. Core Ansible components",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "02db55bac5e3f7ceb98fdea15d7dfcfd40efcc41b777d10c2a8483b571f332bd",
+      "guide_sections": [
+        "2. Core Ansible components",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "3683709dabc0ad051f0e54cfcde20cd9165d29486dac3c166dfbb19c98cf965d",
+      "guide_sections": [
+        "2. Core Ansible components",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "c08f99e3947df0bf7894ae7a7b95b235c3fb3452d02ccea196a4db1c3e0d8f2f",
+      "guide_sections": [
+        "2. Core Ansible components",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "69c7a8c316963670343cc224d8d5946669800bdd32dab786483541c50fc549f6",
+      "guide_sections": [
+        "2. Core Ansible components",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "725b66fb9f520d788513fd46aceec9ce059bdd1abac7a485c9312bd1349958a2",
+      "guide_sections": [
+        "2. Core Ansible components",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "4f1cc7342b59aa6ea4b753731997f650ec0522aba68c9fcff327792209783851",
+      "guide_sections": [
+        "2. Core Ansible components",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "1407813599438827ec73fb39e699fd14d9b7d99bbb7e1eac6bc6a8280776dfac",
+      "guide_sections": [
+        "2. Core Ansible components",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 10,
+      "objective_sha256": "1b82f5f554aed45e9e575775384111464ba7c513ecd628d1db8ac9ac36de64db",
+      "guide_sections": [
+        "2. Core Ansible components",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 11,
+      "objective_sha256": "c25337055464f8d31fb1498bc94025cba5eae3b0e1cf07741f09f8b873d00103",
+      "guide_sections": [
+        "2. Core Ansible components",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 12,
+      "objective_sha256": "3497c7274579704cf5f492f07d04dbaf7f71dda39d5f1e3038bf4735731016b4",
+      "guide_sections": [
+        "2. Core Ansible components",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "b8c88574848bf8daaa4a9a0b612433fa17b6e0ad5bb081f035e89639a9d761be",
+      "guide_sections": [
+        "3. Configure control and managed nodes",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "25004b1d5190ce5380a4f0cba787482f3d4403a94062022923fc41adf5c6e8db",
+      "guide_sections": [
+        "3. Configure control and managed nodes",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "2f15365da69e56a57298f74d7ccdf73e56424696b3392914ef07da65aba3ff95",
+      "guide_sections": [
+        "3. Configure control and managed nodes",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "2caeade141401fccf073340cd3236f1553cf276bd8b33e90170a24c5af3bb35f",
+      "guide_sections": [
+        "3. Configure control and managed nodes",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "1302b94cc824d65044debb1ae0c18353cd5f588edebdd300af7c98d9fe0476b0",
+      "guide_sections": [
+        "3. Configure control and managed nodes",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "a10d204b2a7dc2983d608b5037e3a44f6f441a9fd8a890700df07f59e58cb14c",
+      "guide_sections": [
+        "3. Configure control and managed nodes",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "92e4b42207690f7fdfe10044cb2a6eabd0ea2a3d0a03f4aa44828bc4248701fc",
+      "guide_sections": [
+        "3. Configure control and managed nodes",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "1a1c6b2f5a704a7a1d35b4fab7ec182cc6a256846557f608062b403afe5a0d82",
+      "guide_sections": [
+        "4. Run and develop playbooks",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "062b250db27daba61909a84ed3bdc383ee67cb526519722f1e73c4c01b9a6c2a",
+      "guide_sections": [
+        "4. Run and develop playbooks",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "dcbcb55fd89e4233fc428472b5c5f4aec872dea1ab854c7d5a0310ec3c756ca2",
+      "guide_sections": [
+        "4. Run and develop playbooks",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "bd729861c1ec40a28ef6d2e2ae98e79b14ce02a79f052fa293dfec8e8ed8ae73",
+      "guide_sections": [
+        "4. Run and develop playbooks",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "d829df0cd9f8d6c6b2270c294d92b705117cc4117a4fa5d47a90efd211dfbebd",
+      "guide_sections": [
+        "4. Run and develop playbooks",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "c57161b8f2ce95d7d1638f149b18dc30debc3590fd56cb80acbd0ae4423e0626",
+      "guide_sections": [
+        "4. Run and develop playbooks",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "1c29a27dbf7117ec129881dae6724828519df76ddeaa8576cee8cc160fa3dedb",
+      "guide_sections": [
+        "4. Run and develop playbooks",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "a0c4ab24cd228a65b670d572afdca4df89e53383570288547ac3e6e5030dcebb",
+      "guide_sections": [
+        "4. Run and develop playbooks",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "031e784de384c7450ef99dba4bbf3063d2e6e2a4d59e7a28b2db662ddf2c8a72",
+      "guide_sections": [
+        "5. Create resilient plays and playbooks",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "0b28432d08d27f210a024cf37d8bf49e912eee546f6b56586072e718c229b218",
+      "guide_sections": [
+        "5. Create resilient plays and playbooks",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "4f509d17ff294ece159258feee7bbe4bb3d7012b6c8e3f7019d4b1a26c0fbe29",
+      "guide_sections": [
+        "5. Create resilient plays and playbooks",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "16926c9137299e781098fee228e4a6d473f88509dbc66624f1770da878779453",
+      "guide_sections": [
+        "5. Create resilient plays and playbooks",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "f26d65b5005f6c622e30ef2d63fdedac1c209b3463c47530915eaa3396923222",
+      "guide_sections": [
+        "5. Create resilient plays and playbooks",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "06b5013408bbe19bbc656ec0ea62ae3e068ed90bdbe238feff85b309a532c73e",
+      "guide_sections": [
+        "6. Roles and Content Collections",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "02facb359a432c31c5959a3d285ebf7c4bcd41741f713186c11a88674901506d",
+      "guide_sections": [
+        "6. Roles and Content Collections",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "e1a7d14df87fc7cc8ac828e907809adb0ba686641598f34cf353218703ef0456",
+      "guide_sections": [
+        "6. Roles and Content Collections",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "d4aef4990e0bd428724a492e5e34f0c5a3ddd9b0c3308e1d18d2df443f859e07",
+      "guide_sections": [
+        "6. Roles and Content Collections",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "48dda6c35e1396d4fcbe05933dd432317b8b8954f42a3d2e3fab5d3954ce9482",
+      "guide_sections": [
+        "7. Automate standard RHEL administration",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "604dce445e326d952308addc99bd3d0e3ffb0ed9a455e4aa0190641fc5facccc",
+      "guide_sections": [
+        "7. Automate standard RHEL administration",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "2467fac10bae7f29529e03040292375dcf6ddac2b2cf6049832ddfe848877205",
+      "guide_sections": [
+        "7. Automate standard RHEL administration",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "d1fad2384e978f0b2e98fd96fb230b49d82ef90a09f61c68987e11d0a4525576",
+      "guide_sections": [
+        "7. Automate standard RHEL administration",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "12d9efca9c8d845f008faa98f336b2887fd697052135d4fe031d3365b61d0919",
+      "guide_sections": [
+        "7. Automate standard RHEL administration",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "f0ca7ef61aed3763f9bec72e14379549179c5d31cc25f23a6e62fcdc43f3374c",
+      "guide_sections": [
+        "7. Automate standard RHEL administration",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 7,
+      "objective_sha256": "a2e6afe9d8a277b6290fa5ce045c960d68de92c69d474862c5488a8363c898ad",
+      "guide_sections": [
+        "7. Automate standard RHEL administration",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 8,
+      "objective_sha256": "2ca224cc71e8e9bec3acb65c62176d799fda1504c67489c9c917bb7127d6433d",
+      "guide_sections": [
+        "7. Automate standard RHEL administration",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 9,
+      "objective_sha256": "8f6fb4eb7f42c0e245e29e63f5b82cc3ba19852681d1ed9aed291f59cf75ec0e",
+      "guide_sections": [
+        "7. Automate standard RHEL administration",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 10,
+      "objective_sha256": "f3fcc2e819e8fc9e6a5c07379180899de45680656c82680e815d6d2334d808ef",
+      "guide_sections": [
+        "7. Automate standard RHEL administration",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "785b262d10ca9bfce03584f5a398a5a204b7ce34686e53f5d5bdb76cd64dc189",
+      "guide_sections": [
+        "8. Templates and Vault",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "8fb50be67d3f98e4ecb1758465c8abf63c5a2bda566120f39e997d633f8b770d",
+      "guide_sections": [
+        "8. Templates and Vault",
+        "Answers to the original knowledge checks",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "EX294",
+        "title": "Red Hat Certified Advanced System Administrator in Ansible",
+        "url": "https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux",
+        "guide_path": "guides/EX294-red-hat-certified-advanced-system-administrator-ansible.md",
+        "snapshot_path": "data\\objective-snapshots\\ex294-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ex294-official-status.json",
+        "previous_sha256": "e95d8682f731a4bd566b4bac9f0695ee8c46977a595f1eb99402a041cafd0376",
+        "current_sha256": "e95d8682f731a4bd566b4bac9f0695ee8c46977a595f1eb99402a041cafd0376",
+        "previous_status_sha256": "1985bea2dc426fd23196226ebf9cabddd07e3bbce9d8ce99a1e6cef8ee04823a",
+        "current_status_sha256": "1985bea2dc426fd23196226ebf9cabddd07e3bbce9d8ce99a1e6cef8ee04823a",
+        "official_status": {
+          "skills_versions": [
+            "Red Hat Certified Advanced System Administrator in Ansible Exam | EX294",
+            "Objectives listed for this exam are based on the most recent Red Hat product version available. Click “Get started” to view all versions of this exam available for purchase."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 18,
+    "reachable": 15,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "redhat-ex294-blueprint",
+      "url": "https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux",
+      "checked_at": "2026-09-29T02:09:05.940341+00:00",
+      "health": {
+        "id": "redhat-ex294-blueprint",
+        "url": "https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux",
+        "checked_at": "2026-09-29T02:09:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Red Hat Certified Advanced System Administrator in Ansible Exam | EX294",
+        "canonical_url": "https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux",
+        "duration_signals": [],
+        "signal_fingerprint": "6dc4756d1e1c989730c669ac7e9899c7c4d410c7473376c91719eec646fcae8b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux",
+      "sha256": "c0660969bfe534ba5cc9b65ae8d7c614b1893c035ba19b52fdfac52336a016bd",
+      "text_characters": 14711
+    },
+    {
+      "id": "redhat-ex294-au294",
+      "url": "https://www.redhat.com/en/services/training/au294-red-hat-linux-automation-with-ansible",
+      "checked_at": "2026-09-29T02:09:05.940981+00:00",
+      "health": {
+        "id": "redhat-ex294-au294",
+        "url": "https://www.redhat.com/en/services/training/au294-red-hat-linux-automation-with-ansible",
+        "checked_at": "2026-09-29T02:09:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.redhat.com/en/services/training/au294-red-hat-linux-automation-with-ansible",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Red Hat Enterprise Linux Automation with Ansible | AU294",
+        "canonical_url": "https://www.redhat.com/en/services/training/au294-red-hat-linux-automation-with-ansible",
+        "duration_signals": [],
+        "signal_fingerprint": "888257c13800e3bf11263b8ef154e4112be4aaac1b706059f093b3879e4c3b8a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.redhat.com/en/services/training/au294-red-hat-linux-automation-with-ansible",
+      "sha256": "3c8515ae58b5482afd528dba9ba9ed5a9192e6b00e71e4d38aba3d9de90e02a6",
+      "text_characters": 9484
+    },
+    {
+      "id": "redhat-ex294-au094",
+      "url": "https://www.redhat.com/en/services/training/au094-ansible-essentials-simplicity-automation-technical-overview",
+      "checked_at": "2026-09-29T02:09:05.941437+00:00",
+      "health": {
+        "id": "redhat-ex294-au094",
+        "url": "https://www.redhat.com/en/services/training/au094-ansible-essentials-simplicity-automation-technical-overview",
+        "checked_at": "2026-09-29T02:09:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.redhat.com/en/services/training/au094-ansible-essentials-simplicity-automation-technical-overview",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Ansible Basics: Automation Technical Overview | AU094",
+        "canonical_url": "https://www.redhat.com/en/services/training/au094-ansible-essentials-simplicity-automation-technical-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "24a4205f4dfb056dee51b22f66c31c8994068fcce3f33fef21a476fb01300bdf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.redhat.com/en/services/training/au094-ansible-essentials-simplicity-automation-technical-overview",
+      "sha256": "56df8c2490f882e164b909ca48cbb0c28124d10aebc1ce8002bc7fd4789e591a",
+      "text_characters": 9079
+    },
+    {
+      "id": "redhat-ex294-aap26-docs",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6",
+      "checked_at": "2026-09-29T02:09:07.602954+00:00",
+      "health": {
+        "id": "redhat-ex294-aap26-docs",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6",
+        "checked_at": "2026-09-29T02:09:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Red Hat Ansible Automation Platform | 2.6 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6",
+        "duration_signals": [],
+        "signal_fingerprint": "90a65bb47d958379ee111684ea44c8dc43b51f37b200035125d1ac7e0ef8313e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6",
+      "sha256": "89aaad358906b1299d4c4455f305d4cd3b1be2ca68084fc3a792e5572c939b0e",
+      "text_characters": 58351
+    },
+    {
+      "id": "redhat-ex294-ansible-docs",
+      "url": "https://docs.ansible.com/ansible/latest/",
+      "checked_at": "2026-09-29T02:09:08.519777+00:00",
+      "health": {
+        "id": "redhat-ex294-ansible-docs",
+        "url": "https://docs.ansible.com/ansible/latest/",
+        "checked_at": "2026-09-29T02:09:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.ansible.com/projects/ansible/latest/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Ansible Documentation — Ansible Community Documentation",
+        "canonical_url": "https://docs.ansible.com/projects/ansible/latest/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "cfa578eff4c676fb14c90dcb3f14e4d1d06515230b67c0ca4fd59ead1216ccc9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.ansible.com/projects/ansible/latest/",
+      "sha256": "0ccc657a51a3e8c58a2d5332e7b799b2d14bb14797324506d2d950a0dc66e2fd",
+      "text_characters": 8718
+    },
+    {
+      "id": "redhat-ex294-udemy-afzal",
+      "url": "https://www.udemy.com/course/linux-red-hat-certified-engineer-rhce-ex294/",
+      "checked_at": "2026-09-29T02:09:08.779588+00:00",
+      "health": {
+        "id": "redhat-ex294-udemy-afzal",
+        "url": "https://www.udemy.com/course/linux-red-hat-certified-engineer-rhce-ex294/",
+        "checked_at": "2026-09-29T02:09:08+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/linux-red-hat-certified-engineer-rhce-ex294/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "redhat-ex294-udemy-atef",
+      "url": "https://www.udemy.com/course/rhce-ex294-practice-exams-master-ansible-automation/",
+      "checked_at": "2026-09-29T02:09:08.949800+00:00",
+      "health": {
+        "id": "redhat-ex294-udemy-atef",
+        "url": "https://www.udemy.com/course/rhce-ex294-practice-exams-master-ansible-automation/",
+        "checked_at": "2026-09-29T02:09:08+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/rhce-ex294-practice-exams-master-ansible-automation/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "redhat-ex294-oreilly-book",
+      "url": "https://www.oreilly.com/library/view/red-hat-rhce/9780136872481/",
+      "checked_at": "2026-09-29T02:09:09.026789+00:00",
+      "health": {
+        "id": "redhat-ex294-oreilly-book",
+        "url": "https://www.oreilly.com/library/view/red-hat-rhce/9780136872481/",
+        "checked_at": "2026-09-29T02:09:09+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/red-hat-rhce/9780136872481/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "redhat-exam-version-objectives",
+      "url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+      "checked_at": "2026-09-29T02:07:46.213957+00:00",
+      "health": {
+        "id": "redhat-exam-version-objectives",
+        "url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+        "checked_at": "2026-09-29T02:07:46.213957+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+        "content_type": "application/pdf",
+        "page_title": "Red Hat Certification Exam Objectives by Version",
+        "canonical_url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+        "duration_signals": [],
+        "signal_fingerprint": "9fc973d3c5345287218c795e493bd3bab411df150d103127b4df3b162e66c8e4",
+        "error": ""
+      },
+      "initial_health": {
+        "id": "redhat-exam-version-objectives",
+        "url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+        "checked_at": "2026-09-29T02:00:45+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      },
+      "http_status": 200,
+      "final_url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+      "sha256": "9fc973d3c5345287218c795e493bd3bab411df150d103127b4df3b162e66c8e4",
+      "text_characters": 2477,
+      "representation_note": "Direct public PDF GET and pypdf extraction succeeded; prior general-checker block retained in initial_health. PDF includes multiple exams; only EX280 sections reviewed here. Same-day PDF bytes reused for separately reviewed EX294 section."
+    },
+    {
+      "id": "ansible216-config",
+      "url": "https://docs.ansible.com/projects/ansible-core/2.16/reference_appendices/config.html",
+      "checked_at": "2026-09-29T02:12:47.579473+00:00",
+      "health": {
+        "id": "ansible216-config",
+        "url": "https://docs.ansible.com/projects/ansible-core/2.16/reference_appendices/config.html",
+        "checked_at": "2026-09-29T02:12:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.ansible.com/projects/ansible-core/2.16/reference_appendices/config.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Ansible Configuration Settings — Ansible Core Documentation",
+        "canonical_url": "https://docs.ansible.com/ansible/latest/reference_appendices/config.html",
+        "duration_signals": [],
+        "signal_fingerprint": "4f60ef5a2e919cea4d5579ba83e12c896655442bd0e23e833d5d12fd84c3226c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.ansible.com/projects/ansible-core/2.16/reference_appendices/config.html",
+      "sha256": "b711a7cd5463a2449ebad9a4ffebb05170f8bd96695a82cae8e17a0060d18bd7",
+      "text_characters": 124676
+    },
+    {
+      "id": "ansible216-blocks",
+      "url": "https://docs.ansible.com/projects/ansible-core/2.16/playbook_guide/playbooks_blocks.html",
+      "checked_at": "2026-09-29T02:12:47.580389+00:00",
+      "health": {
+        "id": "ansible216-blocks",
+        "url": "https://docs.ansible.com/projects/ansible-core/2.16/playbook_guide/playbooks_blocks.html",
+        "checked_at": "2026-09-29T02:12:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.ansible.com/projects/ansible-core/2.16/playbook_guide/playbooks_blocks.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Blocks — Ansible Core Documentation",
+        "canonical_url": "https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_blocks.html",
+        "duration_signals": [],
+        "signal_fingerprint": "79fe784333c0b204c1364fa1394ddd88a3af260edb6146407be71b8796d00c4c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.ansible.com/projects/ansible-core/2.16/playbook_guide/playbooks_blocks.html",
+      "sha256": "bd200b65d488c66c09e198d1291401b9a69c2f8b255a58e218395f93c24ed8c3",
+      "text_characters": 9065
+    },
+    {
+      "id": "ansible216-errors",
+      "url": "https://docs.ansible.com/projects/ansible-core/2.16/playbook_guide/playbooks_error_handling.html",
+      "checked_at": "2026-09-29T02:12:47.593720+00:00",
+      "health": {
+        "id": "ansible216-errors",
+        "url": "https://docs.ansible.com/projects/ansible-core/2.16/playbook_guide/playbooks_error_handling.html",
+        "checked_at": "2026-09-29T02:12:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.ansible.com/projects/ansible-core/2.16/playbook_guide/playbooks_error_handling.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Error handling in playbooks — Ansible Core Documentation",
+        "canonical_url": "https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_error_handling.html",
+        "duration_signals": [],
+        "signal_fingerprint": "809d8eb2b1115511adabd1d6161f5c12065e0058702de7043d3d608cef25a8b9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.ansible.com/projects/ansible-core/2.16/playbook_guide/playbooks_error_handling.html",
+      "sha256": "8493a6d1feb70d7653fa823a7d54c7bc4e0f3e5615733724065e1e656d31d828",
+      "text_characters": 13485
+    },
+    {
+      "id": "ansible216-template",
+      "url": "https://docs.ansible.com/projects/ansible-core/2.16/collections/ansible/builtin/template_module.html",
+      "checked_at": "2026-09-29T02:12:48.166075+00:00",
+      "health": {
+        "id": "ansible216-template",
+        "url": "https://docs.ansible.com/projects/ansible-core/2.16/collections/ansible/builtin/template_module.html",
+        "checked_at": "2026-09-29T02:12:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.ansible.com/projects/ansible-core/2.16/collections/ansible/builtin/template_module.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ansible.builtin.template module – Template a file out to a target host — Ansible Core Documentation",
+        "canonical_url": "https://docs.ansible.com/ansible/latest/collections/ansible/builtin/template_module.html",
+        "duration_signals": [],
+        "signal_fingerprint": "47ba8d42ac2c59893614095c1973b70ca0d64da69d4cd7661b203aa5e98566fa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.ansible.com/projects/ansible-core/2.16/collections/ansible/builtin/template_module.html",
+      "sha256": "5f37b7ad5d75798b26edeebaf045b6f580d5998ca7ec88892fce48b17b0f7c71",
+      "text_characters": 14856
+    },
+    {
+      "id": "ansible216-check",
+      "url": "https://docs.ansible.com/projects/ansible-core/2.16/playbook_guide/playbooks_checkmode.html",
+      "checked_at": "2026-09-29T02:12:48.244443+00:00",
+      "health": {
+        "id": "ansible216-check",
+        "url": "https://docs.ansible.com/projects/ansible-core/2.16/playbook_guide/playbooks_checkmode.html",
+        "checked_at": "2026-09-29T02:12:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.ansible.com/projects/ansible-core/2.16/playbook_guide/playbooks_checkmode.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Validating tasks: check mode and diff mode — Ansible Core Documentation",
+        "canonical_url": "https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_checkmode.html",
+        "duration_signals": [],
+        "signal_fingerprint": "50a856f54e561a0c307e631e331bc282cdc0ccadc093a02c44f8d935fbc595ac",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.ansible.com/projects/ansible-core/2.16/playbook_guide/playbooks_checkmode.html",
+      "sha256": "e4fd5df6713dfe220492a987e894daa0c032c3e54213739c73589eba9edea236",
+      "text_characters": 6389
+    },
+    {
+      "id": "ansible216-vault",
+      "url": "https://docs.ansible.com/projects/ansible-core/2.16/vault_guide/vault.html",
+      "checked_at": "2026-09-29T02:12:48.805963+00:00",
+      "health": {
+        "id": "ansible216-vault",
+        "url": "https://docs.ansible.com/projects/ansible-core/2.16/vault_guide/vault.html",
+        "checked_at": "2026-09-29T02:12:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.ansible.com/projects/ansible-core/2.16/vault_guide/vault.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Ansible Vault — Ansible Core Documentation",
+        "canonical_url": "https://docs.ansible.com/ansible/latest/vault_guide/vault.html",
+        "duration_signals": [],
+        "signal_fingerprint": "11487693bbd28d68d64b79f1a39bb5dd20cb69801f8c1f07a6841fbda87f08ac",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.ansible.com/projects/ansible-core/2.16/vault_guide/vault.html",
+      "sha256": "7c2ef74f2a327cd333b8f7d6fec9a49da169f9c4f95558b696e6572ca62c5d3c",
+      "text_characters": 3302
+    },
+    {
+      "id": "redhat-aap-lifecycle",
+      "url": "https://access.redhat.com/support/policy/updates/ansible-automation-platform",
+      "checked_at": "2026-09-29T02:12:48.821459+00:00",
+      "health": {
+        "id": "redhat-aap-lifecycle",
+        "url": "https://access.redhat.com/support/policy/updates/ansible-automation-platform",
+        "checked_at": "2026-09-29T02:12:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://access.redhat.com/support/policy/updates/ansible-automation-platform",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Red Hat Ansible Automation Platform Life Cycle - Red Hat Customer Portal",
+        "canonical_url": "https://access.redhat.com/support/policy/updates/ansible-automation-platform",
+        "duration_signals": [],
+        "signal_fingerprint": "d1c42a5c5ff8f159b745b38f58647206d74bdf882d5b7346646a47e3d487b8eb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://access.redhat.com/support/policy/updates/ansible-automation-platform",
+      "sha256": "bf15533dd36ef5953bd0c6a305fac83000b2efd5bdea6481423872670e33be30",
+      "text_characters": 16645
+    },
+    {
+      "id": "redhat-ansible-lessons-blog",
+      "url": "https://www.redhat.com/en/blog/adventures-ansible-lessons-learned-real-world-deployments",
+      "checked_at": "2026-09-29T02:12:49.482473+00:00",
+      "health": {
+        "id": "redhat-ansible-lessons-blog",
+        "url": "https://www.redhat.com/en/blog/adventures-ansible-lessons-learned-real-world-deployments",
+        "checked_at": "2026-09-29T02:12:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.redhat.com/en/blog/adventures-ansible-lessons-learned-real-world-deployments",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Adventures with Ansible: Lessons learned from real-world deployments",
+        "canonical_url": "https://www.redhat.com/en/blog/adventures-ansible-lessons-learned-real-world-deployments",
+        "duration_signals": [],
+        "signal_fingerprint": "5779b622edc8ba0122fb0abe048b4ad816d7ec017eef266a3579dca03e81470e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.redhat.com/en/blog/adventures-ansible-lessons-learned-real-world-deployments",
+      "sha256": "ba523844d097a1bc364f3ce81def268de28e794d7d5a2a9e4a47fe7667d492a0",
+      "text_characters": 15458
+    },
+    {
+      "id": "ansible216-handlers",
+      "url": "https://docs.ansible.com/projects/ansible-core/2.16/playbook_guide/playbooks_handlers.html",
+      "checked_at": "2026-09-29T02:19:43.368075+00:00",
+      "health": {
+        "id": "ansible216-handlers",
+        "url": "https://docs.ansible.com/projects/ansible-core/2.16/playbook_guide/playbooks_handlers.html",
+        "checked_at": "2026-09-29T02:19:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.ansible.com/projects/ansible-core/2.16/playbook_guide/playbooks_handlers.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Handlers: running operations on change — Ansible Core Documentation",
+        "canonical_url": "https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_handlers.html",
+        "duration_signals": [],
+        "signal_fingerprint": "bc3ec5887ff778e4b3e23889e6e57607918cb92759136adb22c531d88522f98f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.ansible.com/projects/ansible-core/2.16/playbook_guide/playbooks_handlers.html",
+      "sha256": "37a4ab3ab1e42fcf0cd85b85cb438a3b8bacb182a488a5e4eef442b418d70146",
+      "text_characters": 12400
+    }
+  ],
+  "added_source_ids": [
+    "ansible216-config",
+    "ansible216-blocks",
+    "ansible216-errors",
+    "ansible216-template",
+    "ansible216-check",
+    "ansible216-vault",
+    "redhat-aap-lifecycle",
+    "redhat-ansible-lessons-blog",
+    "ansible216-handlers"
+  ],
+  "findings": [
+    {
+      "id": "ex294-deep-1",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Upstream latest documentation is not the assigned EE runtime",
+      "url": "https://access.redhat.com/support/policy/updates/ansible-automation-platform",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX294"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Lifecycle table lists core 2.16 as AAP 2.6 default with separate streams and product support.",
+      "recommendation": "Pin core references for this baseline and verify the actual EE; do not infer product support from upstream banners.",
+      "disposition": "applied",
+      "source_id": "redhat-aap-lifecycle",
+      "resolution": "Pin core references for this baseline and verify the actual EE; do not infer product support from upstream banners."
+    },
+    {
+      "id": "ex294-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Effective configuration selection was too abstract",
+      "url": "https://docs.ansible.com/projects/ansible-core/2.16/reference_appendices/config.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX294"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "First applicable configuration file wins and world-writable cwd is not automatically trusted.",
+      "recommendation": "List selection order and concrete inspection commands in the actual execution context.",
+      "disposition": "applied",
+      "source_id": "ansible216-config",
+      "resolution": "List selection order and concrete inspection commands in the actual execution context."
+    },
+    {
+      "id": "ex294-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Failure reporting can hide wrong state",
+      "url": "https://docs.ansible.com/projects/ansible-core/2.16/playbook_guide/playbooks_error_handling.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX294"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Condition lists AND together; changed_when changes reporting rather than command side effects.",
+      "recommendation": "Add a four-case OR/AND matrix and accurate reporting boundaries.",
+      "disposition": "applied",
+      "source_id": "ansible216-errors",
+      "resolution": "Add a four-case OR/AND matrix and accurate reporting boundaries."
+    },
+    {
+      "id": "ex294-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Recovery needs a verified target state",
+      "url": "https://docs.ansible.com/projects/ansible-core/2.16/playbook_guide/playbooks_blocks.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX294"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Successful rescue permits continuation without automatic rollback; unreachable or malformed tasks differ from returned task failures.",
+      "recommendation": "Explain failure categories and explicit failure after diagnostic-only recovery.",
+      "disposition": "applied",
+      "source_id": "ansible216-blocks",
+      "resolution": "Explain failure categories and explicit failure after diagnostic-only recovery."
+    },
+    {
+      "id": "ex294-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Handler execution was overgeneralized in supplemental material",
+      "url": "https://docs.ansible.com/projects/ansible-core/2.16/playbook_guide/playbooks_handlers.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX294"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Later failures can suppress notified handlers; handlers can run again after a flush if notified again.",
+      "recommendation": "Use current per-flush semantics and reject the historical blog once-per-playbook generalization.",
+      "disposition": "applied",
+      "source_id": "ansible216-handlers",
+      "resolution": "Use current per-flush semantics and reject the historical blog once-per-playbook generalization."
+    },
+    {
+      "id": "ex294-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Templates needed an executable validation example",
+      "url": "https://docs.ansible.com/projects/ansible-core/2.16/collections/ansible/builtin/template_module.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX294"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The module validates a temporary candidate; valid text can still encode incorrect intent from a string boolean.",
+      "recommendation": "Add original inventory/playbook/template/Python validator and test input type plus output format independently.",
+      "disposition": "applied",
+      "source_id": "ansible216-template",
+      "resolution": "Add original inventory/playbook/template/Python validator and test input type plus output format independently."
+    },
+    {
+      "id": "ex294-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Check mode and secret-output boundaries needed precision",
+      "url": "https://docs.ansible.com/projects/ansible-core/2.16/playbook_guide/playbooks_checkmode.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX294"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Task overrides may execute real changes during --check; diff can expose candidate content.",
+      "recommendation": "Inspect module support/overrides and separate previews from actual runs, using output controls for secrets.",
+      "disposition": "applied",
+      "source_id": "ansible216-check",
+      "resolution": "Inspect module support/overrides and separate previews from actual runs, using output controls for secrets."
+    },
+    {
+      "id": "ex294-deep-8",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Knowledge checks lacked answers",
+      "url": "https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX294"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "All 40 original questions previously had no worked answers.",
+      "recommendation": "Add answers and explicit local-versus-platform validation boundaries.",
+      "disposition": "applied",
+      "source_id": "redhat-ex294-blueprint",
+      "resolution": "Add answers and explicit local-versus-platform validation boundaries."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "redhat-ansible-lessons-blog",
+      "authors": [
+        "John Wadleigh"
+      ],
+      "published_on": "2019-04-09",
+      "disposition": "accepted-with-limits",
+      "value": "Repeatable desired state, explicit names and reusable role interfaces.",
+      "limits": "Historical article, not current version guidance. Do not adopt once-per-playbook handler timing or treat role dependencies as safely unpinned; primary docs and explicit inputs govern."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "service_labs_executed": 0,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "assertions": 41,
+      "checks": [
+        "both inventory fixtures satisfy Jinja input expressions",
+        "disabled fixture retains false literal",
+        "second host has its own values",
+        "backend order is canonical",
+        "repeated rendering is stable",
+        "input ordering does not change output",
+        "port change changes only the intended line",
+        "input rejects boolean port",
+        "input rejects quoted port",
+        "input rejects low port",
+        "input rejects high port",
+        "input rejects quoted false",
+        "input rejects string backends",
+        "input rejects mapping backends",
+        "input rejects empty backends",
+        "input rejects duplicate backend",
+        "input rejects unknown backend",
+        "input rejects newline in backend",
+        "missing required input rejected",
+        "StrictUndefined prevents missing-variable render",
+        "validator accepts both rendered fixtures",
+        "validator rejects low port",
+        "validator rejects high port",
+        "validator rejects nonnumeric port",
+        "validator rejects wrong boolean",
+        "validator rejects duplicate key",
+        "validator rejects extra section",
+        "validator rejects default leakage",
+        "validator rejects unknown backend",
+        "validator rejects duplicate backend",
+        "validator rejects nonsequential backend keys",
+        "validator rejects empty backends",
+        "unquoted false and string false have different intent",
+        "syntax validator cannot infer original input type",
+        "validator rejects missing argument",
+        "validator rejects missing file",
+        "mode is an explicit quoted octal string",
+        "failure expression rc=0 stdout=ready",
+        "failure expression rc=0 stdout=degraded",
+        "failure expression rc=2 stdout=ready",
+        "failure expression rc=2 stdout=degraded"
+      ],
+      "jinja_version": "3.1.6",
+      "yaml_version": "6.0.3",
+      "yaml_blocks_parsed": 2,
+      "jinja_blocks_rendered": 1,
+      "python_blocks_executed": 1,
+      "script_sha256": "77f6fdaaad0a88d943decbb74a64ab8658140494637973cd0ae08bbf65a57645",
+      "execution_boundary": "Actual local Jinja/PyYAML parsing and rendering, raw-expression evaluation, and original Python candidate validator execution on owned temporary files. Ansible task execution, module template validation hook, inventory precedence, SSH, navigator/EE, RHEL services/storage/security, Vault encryption and fresh-host/reboot labs were not executed."
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Local Jinja 3.1.6 and PyYAML 6.0.3 do not emulate all Ansible filters, templating, inventory/variable precedence or module execution.",
+    "No ansible-playbook, navigator, EE, SSH, Vault encryption or RHEL administration/reboot/fresh-host labs executed; all eight platform labs remain proposed. Prior WSL startup blocker remains deferred.",
+    "Two Udemy pages and OReilly book page blocked automated access; inherited runtime/date/item counts were not reverified.",
+    "Public current objectives and course baseline do not establish an individual assigned exam version, exact available EE image or appointment metadata."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Actual local Jinja/PyYAML parsing and rendering, raw-expression evaluation, and original Python candidate validator execution on owned temporary files. Ansible task execution, module template validation hook, inventory precedence, SSH, navigator/EE, RHEL services/storage/security, Vault encryption and fresh-host/reboot labs were not executed.",
+    "learning_catalog_consistency": "passed",
+    "assertions": 41,
+    "checks": [
+      "both inventory fixtures satisfy Jinja input expressions",
+      "disabled fixture retains false literal",
+      "second host has its own values",
+      "backend order is canonical",
+      "repeated rendering is stable",
+      "input ordering does not change output",
+      "port change changes only the intended line",
+      "input rejects boolean port",
+      "input rejects quoted port",
+      "input rejects low port",
+      "input rejects high port",
+      "input rejects quoted false",
+      "input rejects string backends",
+      "input rejects mapping backends",
+      "input rejects empty backends",
+      "input rejects duplicate backend",
+      "input rejects unknown backend",
+      "input rejects newline in backend",
+      "missing required input rejected",
+      "StrictUndefined prevents missing-variable render",
+      "validator accepts both rendered fixtures",
+      "validator rejects low port",
+      "validator rejects high port",
+      "validator rejects nonnumeric port",
+      "validator rejects wrong boolean",
+      "validator rejects duplicate key",
+      "validator rejects extra section",
+      "validator rejects default leakage",
+      "validator rejects unknown backend",
+      "validator rejects duplicate backend",
+      "validator rejects nonsequential backend keys",
+      "validator rejects empty backends",
+      "unquoted false and string false have different intent",
+      "syntax validator cannot infer original input type",
+      "validator rejects missing argument",
+      "validator rejects missing file",
+      "mode is an explicit quoted octal string",
+      "failure expression rc=0 stdout=ready",
+      "failure expression rc=0 stdout=degraded",
+      "failure expression rc=2 stdout=ready",
+      "failure expression rc=2 stdout=degraded"
+    ],
+    "jinja_version": "3.1.6",
+    "yaml_version": "6.0.3",
+    "yaml_blocks_parsed": 2,
+    "jinja_blocks_rendered": 1,
+    "python_blocks_executed": 1,
+    "script_sha256": "77f6fdaaad0a88d943decbb74a64ab8658140494637973cd0ae08bbf65a57645"
+  },
+  "version_specific_pdf": {
+    "url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+    "raw_sha256": "9fc973d3c5345287218c795e493bd3bab411df150d103127b4df3b162e66c8e4",
+    "retrieval": "Same-day public PDF fetched during EX280 review; EX294 section independently read.",
+    "versions": [
+      "EX294K",
+      "EX294V8K",
+      "EX294V83K",
+      "EX294V84K",
+      "EX294V9K",
+      "EX294V26K"
+    ],
+    "section_text_sha256": "7dcef12d8786540bbc16fa8f522a5118611b4c2def4060a453ea2ac3aa18c4f9",
+    "ex294_v26k_task_count": 56,
+    "group_task_counts": [
+      8,
+      12,
+      4,
+      3,
+      3,
+      2,
+      3,
+      5,
+      4,
+      10,
+      2
+    ],
+    "comparison": "Same ordered group/task text as live HTML after whitespace and ligature normalization."
+  }
+}

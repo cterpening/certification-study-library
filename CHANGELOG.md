@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: [EX294 deep review](docs/research/2026-09-28-ex294-deep-review.md): 56 tasks and the V26K PDF compared; 40 answers, typed template/candidate validation and 41 actual local checks with Ansible/RHEL execution limits explicit.
+
 - September 28, 2026: [EX280 deep review](docs/research/2026-09-28-ex280-deep-review.md): 55 tasks and the V422 PDF compared; 40 answers, 24 local rendering/selector checks, SCC/OLM/TLS boundaries and a retained exam-version blocker.
 
 - September 28, 2026: [EX200 deep review](docs/research/2026-09-28-ex200-deep-review.md): map 62 RHEL 10 tasks; answer all 40 checks; add persistence and system-state evidence; execute 21 local Bash/INI/arithmetic checks with VM limits explicit.

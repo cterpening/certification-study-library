@@ -3010,15 +3010,31 @@ No exact current EX280 MeasureUp, Whizlabs, or official multiple-choice practice
 
 ### Red Hat Certified Advanced System Administrator in Ansible (EX294)
 
-- Official scope: [EX294 objectives](https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux), EX200 refresh, and current AAP/RHEL documentation (**12–25 selected hours**)
-- Official route: [Red Hat AU294](https://www.redhat.com/en/services/training/au294-red-hat-linux-automation-with-ansible) (**about 4–5 instructor-led days plus labs**); public baseline is RHEL 10, Ansible Core 2.16 and tooling aligned with AAP 2.5/2.6
-- Free orientation: [AU094 Ansible Basics](https://www.redhat.com/en/services/training/au094-ansible-essentials-simplicity-automation-technical-overview) (**3–6 hours estimated**), based on AAP 2.5; not complete EX294 preparation
-- Current references: [AAP 2.6 docs](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6) and [Ansible docs](https://docs.ansible.com/ansible/latest/) (**12–25 selected hours**) for navigator, execution environments, collections, playbooks and modules
-- Commercial video: [Udemy / Imran Afzal EX294](https://www.udemy.com/course/linux-red-hat-certified-engineer-rhce-ex294/) (**7 hours 48 minutes** plus 30–60 hours labs; updated June 2026); explicitly map current navigator/dev-container/Git objectives
-- Current practice prompts: [Udemy / Ghada Atef RHEL 10 EX294](https://www.udemy.com/course/rhce-ex294-practice-exams-master-ansible-automation/) (six listed scenario sets; updated July 2026); reproduce only public-objective tasks on fresh lab hosts
-- Older detailed reference: [O'Reilly/Pearson Red Hat RHCE 8 EX294 Cert Guide](https://www.oreilly.com/library/view/red-hat-rhce/9780136872481/) (**516 pages / 12 hours 59 minutes**); useful concepts but substantial navigator, execution-environment, Git/VS Code, collection and RHEL 10 gaps
+Resource details from the [EX294 guide](../guides/EX294-red-hat-certified-advanced-system-administrator-ansible.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Confirm the exact exam version during purchase, align the learning environment to it, and favor fresh-host, second-run and reboot evidence over passive content or multiple-choice rehearsal. No exact current EX294 Pluralsight, Whizlabs, MeasureUp, KodeKloud or current RHEL-10/AAP-2.6 O'Reilly end-to-end product was independently verified.
+This is **not a complete list**, and it is not meant to be consumed in full. Choose one current version-aligned course, use official docs for exact modules and navigator behavior, and spend most preparation time building repeatable playbooks against fresh RHEL 10 hosts.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| EX294 objectives, EX200 refresh, AAP/RHEL docs | Public | 12–25 selected hours |
+| Red Hat AU294 | Paid/RHLS | About 4–5 instructor-led days plus labs |
+| Red Hat AU094 Ansible Basics | Public/free offering varies | 3–6 hours orientation estimated |
+| Udemy / Imran Afzal EX294 | Paid; page blocked this review | Previously listed 7 hours 48 minutes video plus 30–60 hours labs |
+| O'Reilly / Sander van Vugt RHCE 8 book | Paid/book; page blocked this review | Previously listed 516 pages / 12 hours 59 minutes; concepts only, substantial current gaps |
+| Ansible upstream documentation | Public | 12–25 hours selected module/playbook practice |
+
+- **Official route:** [Red Hat AU294](https://www.redhat.com/en/services/training/au294-red-hat-linux-automation-with-ansible) is the current companion course, based on RHEL 10, Ansible Core 2.16 and tooling aligned with AAP 2.6. Allow **4–5 instructor-led days plus substantial lab repetition**; verify delivery length and selected exam version.
+- **Official orientation:** [AU094 Ansible Basics](https://www.redhat.com/en/services/training/au094-ansible-essentials-simplicity-automation-technical-overview) describes a free on-demand AAP 2.5 introduction and can establish vocabulary (**3–6 hours estimated**, not a verified video runtime), but is not EX294 preparation by itself.
+- **Current product reference:** [AAP 2.6 documentation](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6) and [Ansible community documentation](https://docs.ansible.com/ansible/latest/) provide current navigator, execution-environment, collection, playbook and module detail (**12–25 selected hours**).
+- **Commercial video:** [Udemy / Imran Afzal Linux Red Hat Certified Engineer EX294](https://www.udemy.com/course/linux-red-hat-certified-engineer-rhce-ex294/) was previously listed as **7 hours 48 minutes**, 72 lectures, updated June 2026; the page blocked access on September 28, so those details were not reverified. Map navigator/development-container/Git/current-AAP objectives explicitly before using it as the main route.
+- **Hands-on practice:** [Udemy / Ghada Atef RHEL 10 EX294 practice](https://www.udemy.com/course/rhce-ex294-practice-exams-master-ansible-automation/) was previously listed as six RHEL 10 scenarios/sets updated July 2026; the page blocked access in this review, so neither details nor item contents were reverified. Use only as a prompt to build original fresh-host labs; its page mixes claims beyond the exact public objectives, so do not treat it as scope authority.
+- **Older detailed reference:** [O'Reilly/Pearson Red Hat RHCE 8 EX294 Cert Guide](https://www.oreilly.com/library/view/red-hat-rhce/9780136872481/) was previously listed as **516 pages / 12 hours 59 minutes**, October 2020; its page blocked access in this review, so this metadata remains unverified. It remains useful for roles, variables and RHEL automation but predates navigator, execution environments, VS Code development containers, Git and current RHEL 10/AAP; close all gaps above.
+
+- **Operational reading:** John Wadleigh's April 9, 2019 [Ansible deployment lessons](https://www.redhat.com/en/blog/adventures-ansible-lessons-learned-real-world-deployments) offers useful context on repeatable desired state and clear role/task interfaces. Allow its listed five-minute reading time plus 1–2 hours to review your own role. It is historical: use current documentation for handler timing, supported tools and exact APIs.
+
+**PRACTICAL DEPTH — evidence boundary:** The [September 28 review](research/2026-09-28-ex294-deep-review.md) executed local Jinja rendering, the original Python candidate validator and expression checks. It did not run ansible-playbook, navigator, an EE, SSH, RHEL service/storage/security changes, Vault encryption or reboot/fresh-host assessment. All eight platform labs remain proposed.
+
+No exact current EX294 Pluralsight, Whizlabs, MeasureUp, KodeKloud, or RHEL-10/AAP-2.6 O'Reilly end-to-end product was independently verified September 28. Avoid multiple-choice “exam simulation” as primary preparation for a fresh-system performance assessment. Plan **100–180 hours** after solid RHCSA skills, or **220–350 hours** if Linux administration and automation are both new.
 
 ### Red Hat Certified Specialist in Cloud-native Development (EX378)
 

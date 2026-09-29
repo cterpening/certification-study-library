@@ -5437,27 +5437,94 @@
       "notes": "Mapped all 62 unchanged RHEL 10 objectives; clarify course-or-experience prerequisites, add a Bash input/redirection exercise, concrete timer/storage/firewall/SELinux/chrony evidence, and answers to all 40 knowledge checks. Twenty-one local checks pass; RHEL system/reboot labs remain proposed. See docs/research/2026-09-28-ex200-deep-review.md"
     },
     {
-      "id":"ex294-2026-09-01-source-validation",
-      "exam_code":"EX294",
-      "guide_path":"guides/EX294-red-hat-certified-advanced-system-administrator-ansible.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-01",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/ex294-official-objectives.txt",
-      "blueprint_snapshot_sha256":"e95d8682f731a4bd566b4bac9f0695ee8c46977a595f1eb99402a041cafd0376",
-      "objective_coverage":[
-        {"objective_group":"RHCSA capability and simple shell-script analysis","guide_sections":["Section 1","All integrated scenarios","Labs 1 and 8"]},
-        {"objective_group":"Core Ansible components","guide_sections":["Section 2","All integrated scenarios","Labs 1–3 and 8"]},
-        {"objective_group":"Control and managed-node configuration","guide_sections":["Section 3","Integrated scenarios 1 and 3","Labs 1–2 and 8"]},
-        {"objective_group":"Run and develop playbooks with navigator, Git and VS Code","guide_sections":["Section 4","All integrated scenarios","Labs 2–3 and 8"]},
-        {"objective_group":"Resilient plays and playbooks","guide_sections":["Section 5","All integrated scenarios","Labs 3–8"]},
-        {"objective_group":"Roles and Content Collections","guide_sections":["Section 6","Integrated scenarios 2 and 3","Labs 3 and 8"]},
-        {"objective_group":"Automate standard RHEL administration","guide_sections":["Section 7","All integrated scenarios","Labs 4–8"]},
-        {"objective_group":"Templates and Ansible Vault","guide_sections":["Section 8","Integrated scenarios 1 and 2","Labs 5 and 8"]}
+      "id": "ex294-2026-09-28-source-validation",
+      "exam_code": "EX294",
+      "guide_path": "guides/EX294-red-hat-certified-advanced-system-administrator-ansible.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ex294-official-objectives.txt",
+      "blueprint_snapshot_sha256": "e95d8682f731a4bd566b4bac9f0695ee8c46977a595f1eb99402a041cafd0376",
+      "objective_coverage": [
+        {
+          "objective_group": "RHCSA capability and simple shell-script analysis",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Core Ansible components",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 1–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Control and managed-node configuration",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios 1 and 3",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Run and develop playbooks with navigator, Git and VS Code",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 2–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Resilient plays and playbooks",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Labs 3–8"
+          ]
+        },
+        {
+          "objective_group": "Roles and Content Collections",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenarios 2 and 3",
+            "Labs 3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Automate standard RHEL administration",
+          "guide_sections": [
+            "Section 7",
+            "All integrated scenarios",
+            "Labs 4–8"
+          ]
+        },
+        {
+          "objective_group": "Templates and Ansible Vault",
+          "guide_sections": [
+            "Section 8",
+            "Integrated scenarios 1 and 2",
+            "Labs 5 and 8"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":8,"reachable":5,"access_blocked":3,"missing_or_error":0},
-      "notes":"The current unweighted EX294 objectives were reconciled with the AU294 RHEL 10, Ansible Core 2.16, and AAP 2.5/2.6 training baseline. The guide preserves Red Hat's warning that multiple exam versions may be sold, separates the current Advanced System Administrator in Ansible name from older RHCE branding, and treats evaluation as reproducible playbooks applied to fresh systems. Three scenarios, eight labs and 40 original checks cover inventory and controller configuration, execution environments and collections, navigator, Git/VS Code development containers, modules and resilient playbooks, roles, RHEL administration, templates, Vault, idempotence, second-run evidence and fresh-host replay. All eight URLs are cataloged: five reachable and three commercial routes automation-blocked; none missing or broken. Older material has an explicit current-page gap checklist and no recalled exam tasks are used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 18,
+        "reachable": 15,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Mapped 56 unchanged tasks in eleven official groups and compared the EX294V26K PDF; update the AU294 baseline to RHEL 10/core 2.16/AAP 2.6, add all 40 answers, typed-input/template validation, explicit failure/handler boundaries and 41 local Jinja/Python/expression checks. No Ansible or RHEL platform lab executed. See docs/research/2026-09-28-ex294-deep-review.md"
     },
     {
       "id": "ex280-2026-09-28-source-validation",
