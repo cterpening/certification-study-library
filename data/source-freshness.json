@@ -4,6 +4,343 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-gesc02-deep-review",
+      "title": "GES-C02 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "GES-C02"
+      ],
+      "results": [
+        {
+          "exam_code": "GES-C02",
+          "vendor_id": "snowflake",
+          "guide_path": "guides/GES-C02-snowpro-specialty-gen-ai.md",
+          "baseline_sha256": "2530b3e804d7f674a21a89116c3f7311b1adca7cc67ac3d7880a3d75e61fcc2b",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Complete canonical4abilities/candidateprofile andcurrentcatalog225USDread. Unchangedobjective;missinglifeinitialized+postunchanged. Detailedformnotsubmitted;no weights/durationinferred."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Main toolhandling/selectedAgentsaccess/Searchowner-rights,parserSQLreturns,extractionscores,Registry/SPCS semantics read as scoped innotes.43actual localchecks separate fromcloudbehavior."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "FullmainAugust28Analyst,September16agentobjects,May22scoresGA andSeptember21evaluationPREVIEWread. ReusedcurrentmodelRBAC/bundle/notebooknotices withfreshfetches/accountstateboundary."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Actual5pagePDF26F15/2026fullyread14teachingareas;16h/2dayrolecourse. TwoUdemy403oldrevision/durationunverified. Catalog225USDSpecialtyconfirmed;noquestions/enrollment/paidlessons."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "ResolvedmainAgentsoverviewcontradictionvia dedicatedhandlingdoc;Searchfiltersversusaccess,nullableparseroutputs,scoregranularity/accuracy,RegistryUIvsAPI,jobvsservice,trainingoutlinevsblueprint.43checks48answers8proposedlabs."
+            }
+          },
+          "findings": [
+            {
+              "id": "gesc02-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Public abilities remain unchanged and Python is optional profile wording",
+              "url": "https://learn.snowflake.com/en/certifications/snowpro-GenAI-C02/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GES-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Four abilities unchanged;Python may-have vsassumed SQL/DE;detailedformrestricted;lifemissing.",
+              "recommendation": "Preserveobjectives,initializelifeexplicitly,qualifycandidateprofile andscope.",
+              "disposition": "applied",
+              "source_id": "snowflake-ges-c02-certification",
+              "resolution": "Preserveobjectives,initializelifeexplicitly,qualifycandidateprofile andscope."
+            },
+            {
+              "id": "gesc02-deep-2",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "The PDF content is newer than its URL filename",
+              "url": "https://www.snowflake.com/wp-content/uploads/2024/11/standard_genai_datasheet_24J23.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GES-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Actualfivepage26F15/2026PDF has14roletrainingareas andprerequisites,not examweights.",
+              "recommendation": "Use actualbinaryreceipt andteach roleoutlinewithoutreconstructing blueprint.",
+              "disposition": "applied",
+              "source_id": "snowflake-genai-training-datasheet",
+              "resolution": "Use actualbinaryreceipt andteach roleoutlinewithoutreconstructing blueprint."
+            },
+            {
+              "id": "gesc02-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Caller source-table restrictions do not automatically restrict Search",
+              "url": "https://docs.snowflake.com/user-guide/snowflake-cortex/cortex-search/query-cortex-search-service",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GES-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Owner-rightsserviceUSAGEexposesindexeddata independentlyofcaller sourceSELECT.",
+              "recommendation": "Teach servicecorpus/grants ortrustedmediationwithoutbypass;clientfiltersaloneinsufficient.",
+              "disposition": "applied",
+              "source_id": "snowflake-search-query-access",
+              "resolution": "Teach servicecorpus/grants ortrustedmediationwithoutbypass;clientfiltersaloneinsufficient."
+            },
+            {
+              "id": "gesc02-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "API identity may differ from an active SQL session role",
+              "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-setup",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GES-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Documenteduserdefaultrole/defaultwarehouse andagent/toolpermissions apply.",
+              "recommendation": "Explain effective broad/narrowrolepaths andrequire observedidentity.",
+              "disposition": "applied",
+              "source_id": "snowflake-agents-access",
+              "resolution": "Explain effective broad/narrowrolepaths andrequire observedidentity."
+            },
+            {
+              "id": "gesc02-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Default tool behavior differs from generic overview shorthand",
+              "url": "https://docs.snowflake.com/user-guide/snowflake-cortex/cortex-agents-inaccessible-tool-handling",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GES-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "accept default;reject/legacy optional;precheck notalltools;discovery canomitwithoutwarnings;namedversionsimmutable.",
+              "recommendation": "Resolve contradictionwithdedicatedguide anddistinguishprecheck/execution/versiondeployment.",
+              "disposition": "applied",
+              "source_id": "snowflake-agents-inaccessible-tools",
+              "resolution": "Resolve contradictionwithdedicatedguide anddistinguishprecheck/execution/versiondeployment."
+            },
+            {
+              "id": "gesc02-deep-6",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Secure metadata does not grant data isolation",
+              "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-16-cortex-agents-object-enhancements-ga",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "GES-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "September16GA secureagent hidesSPECfromnonowners;tools/data stillauthorized separately.",
+              "recommendation": "Teach metadata andexecutionboundaries independently.",
+              "disposition": "applied",
+              "source_id": "snowflake-agent-objects-sep2026",
+              "resolution": "Teach metadata andexecutionboundaries independently."
+            },
+            {
+              "id": "gesc02-deep-7",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "The transition recommendation is not an API retirement",
+              "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-28-cortex-analyst-transition-cortex-agents",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "GES-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "August28notice favorsAgentswhileexistingAnalystREST remainsavailable.",
+              "recommendation": "Keep supportedAPI andmigrationrecommendation distinct.",
+              "disposition": "applied",
+              "source_id": "snowflake-analyst-transition",
+              "resolution": "Keep supportedAPI andmigrationrecommendation distinct."
+            },
+            {
+              "id": "gesc02-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Successful query execution can include failed document rows",
+              "url": "https://docs.snowflake.com/sql-reference/functions/ai_parse_document",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GES-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "DefaultOCR/JSONSTRING/NULLperfailedrow;error-detailOBJECTwrapper hasvalue,error,metadata.",
+              "recommendation": "Teach defensiveper-rowchecks andexplicitlayout/pageprovenance.",
+              "disposition": "applied",
+              "source_id": "snowflake-ai-parse-reference",
+              "resolution": "Teach defensiveper-rowchecks andexplicitlayout/pageprovenance."
+            },
+            {
+              "id": "gesc02-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "New parsing work needs the canonical API contract",
+              "url": "https://docs.snowflake.com/en/sql-reference/functions/parse_document-snowflake-cortex",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GES-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Legacycompatibilityfunctiondeprecatedbyend2026;newAI_PARSE_DOCUMENTcanonical.",
+              "recommendation": "Usecanonicalnewpath withoutpretending legacyalreadyremoved.",
+              "disposition": "applied",
+              "source_id": "snowflake-legacy-parse-document",
+              "resolution": "Usecanonicalnewpath withoutpretending legacyalreadyremoved."
+            },
+            {
+              "id": "gesc02-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Table/list scores do not certify individual cells",
+              "url": "https://docs.snowflake.com/sql-reference/functions/ai_extract",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GES-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Optinscores usefieldentitiesbutaggregate lists/tables.",
+              "recommendation": "Teachcorrectgranularity andlabeledprecision/coverage insteadofscoreascorrectness.",
+              "disposition": "applied",
+              "source_id": "snowflake-ai-extract-reference",
+              "resolution": "Teachcorrectgranularity andlabeledprecision/coverage insteadofscoreascorrectness."
+            },
+            {
+              "id": "gesc02-deep-11",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "No extra score charge does not make extraction free",
+              "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-05-22-ai-extract-scores-ga",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "GES-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "May22GA includesfine-tunedmodels andscoresnoadditionalcost.",
+              "recommendation": "Separatescoreincrementfromunderlyingconsumption andavoidprobabilityguarantee.",
+              "disposition": "applied",
+              "source_id": "snowflake-extract-scores-ga",
+              "resolution": "Separatescoreincrementfromunderlyingconsumption andavoidprobabilityguarantee."
+            },
+            {
+              "id": "gesc02-deep-12",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "New evaluation is preview and needs validated labels",
+              "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-21-ai-function-evaluation-preview",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "GES-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "September21publicpreview includesquality/token/costandrule/judge/UDFmetrics.",
+              "recommendation": "Labelpreview;recorddataset/labels/configuration andhumanrubricreview.",
+              "disposition": "applied",
+              "source_id": "snowflake-ai-evaluation-preview",
+              "resolution": "Labelpreview;recorddataset/labels/configuration andhumanrubricreview."
+            },
+            {
+              "id": "gesc02-deep-13",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "UI model visibility differs from supported API and inference privileges",
+              "url": "https://docs.snowflake.com/en/developer-guide/snowflake-ml/model-registry/overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GES-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "USAGEwarehousevsREADcontainer/metadata;Cortexfine-tunedUIentriesnotmanagedviaRegistryAPI.",
+              "recommendation": "Checkmodeltype/inferencepath andleastprivilegebeforedeployment.",
+              "disposition": "applied",
+              "source_id": "snowflake-model-registry",
+              "resolution": "Checkmodeltype/inferencepath andleastprivilegebeforedeployment."
+            },
+            {
+              "id": "gesc02-deep-14",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Finite jobs do not inherit long-running restart semantics",
+              "url": "https://docs.snowflake.com/en/developer-guide/snowpark-container-services/overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GES-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Jobcontainersdonotautomaticallyrestart;servicesrestart exitedcontainers.",
+              "recommendation": "Teachcheckpoint/retryandcompletebundle rollback asproposedlab.",
+              "disposition": "applied",
+              "source_id": "snowflake-spcs-overview",
+              "resolution": "Teachcheckpoint/retryandcompletebundle rollback asproposedlab."
+            },
+            {
+              "id": "gesc02-deep-15",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A narrow permission change can leave broad function access",
+              "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql-privileges-and-access",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GES-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "BlanketORperfunctiongrants plusroles/modelgate;featureexceptionsmatter.",
+              "recommendation": "TeachordinaryAI_COMPLETEpath andauditinheritedpermissions,notuniversalgrantrecipe.",
+              "disposition": "applied",
+              "source_id": "snowflake-ai-function-access",
+              "resolution": "TeachordinaryAI_COMPLETEpath andauditinheritedpermissions,notuniversalgrantrecipe."
+            }
+          ],
+          "notes": "Mapped four unchanged public abilities and the actual five-page 26F15 training outline without claiming a detailed blueprint. Corrected Search access, agent identity and tool failures, parser return types, extraction scores and Registry/container lifecycle. Added 43 executed local checks, 48 answered prompts, eight proposed labs and a current catalog comparison. No Snowflake or model execution occurred; human review remains pending. Same-context AI review. See docs/research/2026-09-29-ges-c02-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 15,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-deac02-deep-review",
       "title": "DEA-C02 complete guide and learning-content review",
       "rubric_version": 1,

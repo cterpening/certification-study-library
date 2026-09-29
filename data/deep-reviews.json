@@ -5,6 +5,28 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "GES-C02",
+      "reviewed_on": "2026-09-29",
+      "guide_sha256": "ec0ff67cb4bb175e38119ce7cfee310a14b2e00c1ae49fd9c2c7c0b021d2347c",
+      "objective_count": 4,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-29-ges-c02-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-29-ges-c02-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "Only four public abilities are mapped; the detailed guide remains form-restricted. The actual five-page training PDF supports learning, not exam weights or duration.",
+        "Eight cloud labs and three scenarios remain proposed; independent human review is pending. No Snowflake SQL/API, model, parser, Search, container or GPU lab was executed.",
+        "The 43 Python/SQLite checks use one connection, controlled fixtures, trusted callers and a fixed manually ranked query. They do not test authentication, approval, concurrency, crash durability, distributed caches or external effects; SQLite key enforcement differs from standard Snowflake tables.",
+        "Citation checks verify current access and provenance, not semantic entailment. Opaque hostile text does not test model resistance to injection. Four invented extraction fixtures illustrate gate errors, not production quality.",
+        "Search service access, actual agent identity and serving version need account verification. Client filters alone are insufficient; agent prechecks do not cover every tool or underlying data permission.",
+        "Per-source notes distinguish selected sections from complete main pages. The entire linked documentation catalog was not audited. Phased bundle, preview and notebook notices do not prove account availability.",
+        "Two Udemy pages returned HTTP 403; old revision and duration metadata is unverified. Public training metadata and the PDF do not establish paid lesson quality. No forms, questions, enrollment or trial accounts were accessed.",
+        "The five reserved GitHub guides and disabled notification pilot remain untouched. No external messages, service/authentication/logging/alert changes or new permissions occurred."
+      ]
+    },
+    {
       "exam_code": "DEA-C02",
       "reviewed_on": "2026-09-29",
       "guide_sha256": "fd9071b06490504899429d0a9e791afd08adc74c7f95bdb67bbd3ae635c44bba",

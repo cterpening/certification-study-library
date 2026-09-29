@@ -1589,6 +1589,8 @@ The review maps every public ability through source and consumer contracts → i
 
 ## GES-C02 coverage record
 
+The September 29 [deep review](research/2026-09-29-ges-c02-deep-review.md) maps four unchanged public abilities; the detailed guide remains behind a request form. The actual five-page 26F15 training outline supports learning rather than detailed exam scope. Corrections cover Search access, agent identity/tool failures, parser returns, extraction scores and Registry/container lifecycle. The guide adds 43 executed local checks, 48 answered prompts, eight proposed cloud labs and a current catalog comparison. No Snowflake or model execution occurred; human review remains pending. Current guide citations: 31 registered, 29 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: active SnowPro Specialty: Gen AI with four public abilities—principles/capabilities/best practices; Cortex AI features/functions and LLM use cases; open-model fine-tuning through Snowpark Container Services and Model Registry; and document-processing pipelines—plus a one-year enterprise-experience recommendation

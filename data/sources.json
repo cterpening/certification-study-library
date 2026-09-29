@@ -3,6 +3,216 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "snowflake-genai-training-datasheet",
+      "title": "GenAI training course datasheet",
+      "url": "https://www.snowflake.com/wp-content/uploads/2024/11/standard_genai_datasheet_24J23.pdf",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GES-C02 deep review: Actual five-page binary PDF fully read with digest/page receipt. Content26F15/copyright2026 despite24J23URL;two days,six acquired skills,fourteen teaching areas,Foundations-equivalent/SQL/two introductory modules prerequisites,MFA/database recommendations. Not detailed GES blueprint,weights or actual course attendance. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-cortex-search-overview",
+      "title": "Cortex Search quality and owner rights",
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-search/cortex-search-overview",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GES-C02 deep review: Selected main hybrid retrieval quality and complete required-privilege/owner-rights sections read;not full36kreference. Followed actual query-access link. No index/search service or retrieval evaluation. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-agents-access",
+      "title": "Cortex Agents access control and authentication",
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-setup",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GES-C02 deep review: Main API/access sections read including defaultrole/defaultwarehouse,agent/tool rights and broad role routes. Did not reproduce misleading table USAGE wording for tables;underlying data SELECT checked in dedicated handling guide. No grants/importedprivilege revocation or API calls. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-agents-inaccessible-tools",
+      "title": "Cortex Agents inaccessible tool handling",
+      "url": "https://docs.snowflake.com/user-guide/snowflake-cortex/cortex-agents-inaccessible-tool-handling",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GES-C02 deep review: Entire main handling guide read:top-level orchestration,accept default,reject/legacy,checked-tool set,explicit/discovered warnings,Analyst underlyingpermission caveat,execution-time failures,run override boundary and immutable namedversion/alias updates. Examples read not executed;not entire linked versioning guide. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-parse-document",
+      "title": "Parsing documents with AI_PARSE_DOCUMENT",
+      "url": "https://docs.snowflake.com/user-guide/snowflake-cortex/parse-document",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GES-C02 deep review: Selected introduction/modes/page_filter/page_split/images section read;LAYOUT recommendation distinguished from SQL-reference OCR default. Not entire49kexamples. Followed SQL return-contract reference;no function call. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-extract-document",
+      "title": "Structured document extraction with AI_EXTRACT",
+      "url": "https://docs.snowflake.com/user-guide/snowflake-cortex/document-extraction",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GES-C02 deep review: Selected complete main introduction/supported entity,list,table inputs and pipeline composition read. Benchmark table encountered but no independent quality comparison or adoption of vendor benchmark claims;not full examples/limit catalog. No extraction call. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-legacy-parse-document",
+      "title": "Legacy PARSE_DOCUMENT compatibility and deprecation",
+      "url": "https://docs.snowflake.com/en/sql-reference/functions/parse_document-snowflake-cortex",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GES-C02 deep review: Main compatibility/deprecation notice,return description and syntax/options read. New canonical AI_PARSE_DOCUMENT recommended;legacy end2026deprecation;stage/path and JSONstring. Not full example catalog;no deprecated call. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-agent-objects-sep2026",
+      "title": "September16 Cortex Agents object enhancements GA",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-16-cortex-agents-object-enhancements-ga",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GES-C02 deep review: Entire main September16GA announcement read:temporary,secure metadata,COPYGRANTS excludingownership,personalDB. Only metadata-versus-data and temporary scope adopted;no DDL executed. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-analyst-transition",
+      "title": "August28 Cortex Analyst transition recommendation",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-28-cortex-analyst-transition-cortex-agents",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GES-C02 deep review: Entire main August28notice read:recommendAgents,existingAnalystRESTremains,semantic assets retained. Vendor quality claim not treated as our evaluation. No migration or retirement claim. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-extract-scores-ga",
+      "title": "May22 AI_EXTRACT extraction scores GA",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-05-22-ai-extract-scores-ga",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GES-C02 deep review: Entire main May22GA notice read:optional0–1scores,entity/list/table granularity,fine-tunedmodels,no additional score charge. Not underlying extraction free or calibrated probability proof;no model output evaluated. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-certification-catalog",
+      "title": "SnowPro certification catalog and pricing",
+      "url": "https://learn.snowflake.com/en/certifications/",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-certification",
+      "access_model": "public",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GES-C02 deep review: Entire main catalog read;SpecialtyUSD225 confirmed independently of Core/Advanced fees. Other listed certifications/retirements not silently applied to GES. No regional booking/enrollment. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-search-query-access",
+      "title": "Query Cortex Search and access controls",
+      "url": "https://docs.snowflake.com/user-guide/snowflake-cortex/cortex-search/query-cortex-search-service",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GES-C02 deep review: Complete access-control/owner-rights subsection read;not full36kqueryexample catalog. Service/database/schemaUSAGE can queryindexed data independent of caller source-table/view access. Source masks/rowfilters do not automatically become caller result authorization;noactualservice. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-ai-parse-reference",
+      "title": "AI_PARSE_DOCUMENT reference",
+      "url": "https://docs.snowflake.com/sql-reference/functions/ai_parse_document",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GES-C02 deep review: Full main syntax/options/returns/error behavior read;examples not executed. FILE,defaultOCR,JSONstring vs return_error_detailsOBJECTwrapper(value,error,metadata),nullablefailedrows,pagefilterzero-basedexclusiveend/impliessplit and supportedformat boundary. No parsed files/SQL. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-ai-extract-reference",
+      "title": "AI_EXTRACT and extraction scores reference",
+      "url": "https://docs.snowflake.com/sql-reference/functions/ai_extract",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GES-C02 deep review: Complete extraction-scores section read plus syntax/default score argument notes. Opt-inscores,response/scoring,field entities versus aggregate lists/tables;no cell scores. Not all21kexamples/supporttables;no liveextract or calibration evidence. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-ai-evaluation-preview",
+      "title": "September21 AI Function Evaluation public preview",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-21-ai-function-evaluation-preview",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GES-C02 deep review: Entire main September21publicPREVIEWannouncement read:customAIfunction/Cortexevaluation,quality/cost/tokens,labeleddata,rule/LLMjudge/customUDFmetrics. Generated-label validation/repeatedruns are our study recommendations. No experiment/GA/accountavailability claim. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "snowflake-de-training-datasheet",
       "title": "Data Engineer training datasheet",
       "url": "https://www.snowflake.com/wp-content/uploads/2022/03/standard_de_datasheet.pdf",
@@ -339,10 +549,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "SOL-C01"
+        "SOL-C01",
+        "GES-C02"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SOL-C01 deep review: Selected account/per-functionOR grants,NativeApp/aggregate exceptions,CORTEX_USER/AI_FUNCTIONS_USER distinctions,bootstrapidentities andpitfalls read. Legacyallowlistexamples nottreatedas universallyvalidcurrentcommands. Not entiremigrationprocedure,accountinspection orgrantchange. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SOL-C01 deep review: Selected account/per-functionOR grants,NativeApp/aggregate exceptions,CORTEX_USER/AI_FUNCTIONS_USER distinctions,bootstrapidentities andpitfalls read. Legacyallowlistexamples nottreatedas universallyvalidcurrentcommands. Not entiremigrationprocedure,accountinspection orgrantchange. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 GES-C02 deep review: Same-session SOL primary reading reused; freshly fetched for GES. Selected account/per-functionOR grants,NativeApp/aggregate exceptions,CORTEX_USER/AI_FUNCTIONS_USER distinctions,bootstrapidentities andpitfalls read. Legacyallowlistexamples nottreatedas universallyvalidcurrentcommands. Not entiremigrationprocedure,accountinspection orgrantchange. GES blanket/per-function OR subsection reread; AI_COMPLETE-specific explanation, not all-function universal grant claim. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-platform-training-event",
@@ -414,10 +625,11 @@
       "supported_exams": [
         "SOL-C01",
         "COF-C03",
-        "DEA-C02"
+        "DEA-C02",
+        "GES-C02"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SOL-C01 deep review: Introductorycoverage andselectedcloudservices/precisequotacaveats read. Warehousemonitor doesnotcoverAI/serverless;canovershootwhile stopping. No monitor/budgetconfiguration or notification. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Introductory coverage and quota/suspension caveats read in same-session work. Warehouse coverage excludes serverless/AI and stopping can overshoot;no account monitor or notification changed. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution. September 29 DEA-C02 deep review: Introductory coverage and quota/suspension caveats read in same-session work. Warehouse coverage excludes serverless/AI and stopping can overshoot;no account monitor or notification changed. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SOL-C01 deep review: Introductorycoverage andselectedcloudservices/precisequotacaveats read. Warehousemonitor doesnotcoverAI/serverless;canovershootwhile stopping. No monitor/budgetconfiguration or notification. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Introductory coverage and quota/suspension caveats read in same-session work. Warehouse coverage excludes serverless/AI and stopping can overshoot;no account monitor or notification changed. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution. September 29 DEA-C02 deep review: Introductory coverage and quota/suspension caveats read in same-session work. Warehouse coverage excludes serverless/AI and stopping can overshoot;no account monitor or notification changed. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution. September 29 GES-C02 deep review: Same-session SOL primary reading reused; freshly fetched for GES. Introductorycoverage andselectedcloudservices/precisequotacaveats read. Warehousemonitor doesnotcoverAI/serverless;canovershootwhile stopping. No monitor/budgetconfiguration or notification. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-warehouse-considerations",
@@ -443,10 +655,11 @@
       "source_type": "release-notes",
       "access_model": "public",
       "supported_exams": [
-        "SOL-C01"
+        "SOL-C01",
+        "GES-C02"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SOL-C01 deep review: SelectedAugust–Novembertimeline,before/after/bootstrap andprimarywebbundleenforcementsections read. Pendingphasednotice;September8milestone reconciledwithactualdisabled-by-defaultbundlepage. No assumedglobalenforcement,accountgrantinspection or migration. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SOL-C01 deep review: SelectedAugust–Novembertimeline,before/after/bootstrap andprimarywebbundleenforcementsections read. Pendingphasednotice;September8milestone reconciledwithactualdisabled-by-defaultbundlepage. No assumedglobalenforcement,accountgrantinspection or migration. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 GES-C02 deep review: Same-session SOL primary reading reused; freshly fetched for GES. SelectedAugust–Novembertimeline,before/after/bootstrap andprimarywebbundleenforcementsections read. Pendingphasednotice;September8milestone reconciledwithactualdisabled-by-defaultbundlepage. No assumedglobalenforcement,accountgrantinspection or migration. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-2026-07-bundle",
@@ -457,10 +670,11 @@
       "source_type": "release-notes",
       "access_model": "public",
       "supported_exams": [
-        "SOL-C01"
+        "SOL-C01",
+        "GES-C02"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SOL-C01 deep review: Bundlehistory/currentstatus andselectedCortexentry read. Disabledbydefault,September5–9introduction,plannedOctoberdefaultchange. Not entirelist ofotherbehaviorchanges;noaccountbundlequeryperformed. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SOL-C01 deep review: Bundlehistory/currentstatus andselectedCortexentry read. Disabledbydefault,September5–9introduction,plannedOctoberdefaultchange. Not entirelist ofotherbehaviorchanges;noaccountbundlequeryperformed. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 GES-C02 deep review: Same-session SOL primary reading reused; freshly fetched for GES. Bundlehistory/currentstatus andselectedCortexentry read. Disabledbydefault,September5–9introduction,plannedOctoberdefaultchange. Not entirelist ofotherbehaviorchanges;noaccountbundlequeryperformed. GES current disabled-by-default status reread; no account state queried. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-university-catalog",
@@ -514,10 +728,11 @@
       "access_model": "public",
       "supported_exams": [
         "SOL-C01",
-        "COF-C03"
+        "COF-C03",
+        "GES-C02"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SOL-C01 deep review: Completeprimarymainnotice read:September1newlegacycreationdisabled,existingrun/edituntilplannedNovemberdisable,view/export/migrationretained. No migrationorlegacycommandexecution. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Entire main notice read, including timeline:September1 creation disabled,November planned execution/editing disable,view/export/migration retained. No actual migration or legacy command execution. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SOL-C01 deep review: Completeprimarymainnotice read:September1newlegacycreationdisabled,existingrun/edituntilplannedNovemberdisable,view/export/migrationretained. No migrationorlegacycommandexecution. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Entire main notice read, including timeline:September1 creation disabled,November planned execution/editing disable,view/export/migration retained. No actual migration or legacy command execution. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution. September 29 GES-C02 deep review: Same-session SOL primary reading reused; freshly fetched for GES. Completeprimarymainnotice read:September1newlegacycreationdisabled,existingrun/edituntilplannedNovemberdisable,view/export/migrationretained. No migrationorlegacycommandexecution. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-workspace-notebook-migration",
@@ -46901,7 +47116,7 @@
         "SOL-C01",
         "GES-C02"
       ],
-      "notes": "Current AI SQL function landing page; redirects from the former LLM-functions path and is volatile across models, functions, regions, privileges and consumption. September 29 SOL-C01 deep review: Full maincurrentAIfunctionsoverview read,includingfeatures/preview,functioncategories/access/performance caveats. No modelbenchmark/functioncall. Detailed access source controls specificAI_COMPLETE explanation,not blanketallfunctions assertion. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution."
+      "notes": "Current AI SQL function landing page; redirects from the former LLM-functions path and is volatile across models, functions, regions, privileges and consumption. September 29 SOL-C01 deep review: Full maincurrentAIfunctionsoverview read,includingfeatures/preview,functioncategories/access/performance caveats. No modelbenchmark/functioncall. Detailed access source controls specificAI_COMPLETE explanation,not blanketallfunctions assertion. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 GES-C02 deep review: Current main AI-functions overview/function categories read; individual previews and exceptions not treated as one uniform API. Detailed access reference resolves blanket-grant shorthand. No AI function called. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "udemy-sol-c01-platform",
@@ -46945,7 +47160,7 @@
         "DEA-C02",
         "GES-C02"
       ],
-      "notes": "First-party validity, continuing education, scheduling, scoring, accommodations, retake and beta policies; volatile and must be rechecked before purchase. September 29 COF-C03 deep review: Main policies including renewal/expiry, retakes, scheduling/accommodation and scaled-scoring sections read. Two years; qualifying renewal before expiry; full retake within six months; seven-day failure wait; four retakes in twelve months; scaled750/1000 not75 percent. No booking or eligibility determination. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution. September 29 DEA-C02 deep review: Main policies including renewal/expiry, retakes, scheduling/accommodation and scaled-scoring sections read. Two years; qualifying renewal before expiry; full retake within six months; seven-day failure wait; four retakes in twelve months; scaled750/1000 not75 percent. No booking or eligibility determination. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
+      "notes": "First-party validity, continuing education, scheduling, scoring, accommodations, retake and beta policies; volatile and must be rechecked before purchase. September 29 COF-C03 deep review: Main policies including renewal/expiry, retakes, scheduling/accommodation and scaled-scoring sections read. Two years; qualifying renewal before expiry; full retake within six months; seven-day failure wait; four retakes in twelve months; scaled750/1000 not75 percent. No booking or eligibility determination. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution. September 29 DEA-C02 deep review: Main policies including renewal/expiry, retakes, scheduling/accommodation and scaled-scoring sections read. Two years; qualifying renewal before expiry; full retake within six months; seven-day failure wait; four retakes in twelve months; scaled750/1000 not75 percent. No booking or eligibility determination. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution. September 29 GES-C02 deep review: Complete main program policy and scoring text read in same-session COF/DEA review and fetched again here. Two-year validity, qualifying renewal before expiration, failed-retake seven-day wait/four retakes in twelve months,750/1000 scaled not75percent. No booking/accommodation decision. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-practice-exams",
@@ -46961,7 +47176,7 @@
         "DEA-C02",
         "GES-C02"
       ],
-      "notes": "Official Core, Data Engineer and Gen AI practice availability plus same-specification/domain-weighting statement; purchase provides a single 24-hour-access attempt under checked policy. September 29 COF-C03 deep review: Entire public main page read.24h purchase-to-completion, one attempt, missed-window fee and48h re-registration boundary. USD175 FAQ concerns the real Core exam. No practice question/assessment content accessed; practice language list not used as real-exam availability proof. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution. September 29 DEA-C02 deep review: Entire public main page read.24h purchase-to-completion, one attempt, missed-window fee and48h re-registration boundary. USD175 FAQ concerns the real Core exam. No practice question/assessment content accessed; practice language list not used as real-exam availability proof. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
+      "notes": "Official Core, Data Engineer and Gen AI practice availability plus same-specification/domain-weighting statement; purchase provides a single 24-hour-access attempt under checked policy. September 29 COF-C03 deep review: Entire public main page read.24h purchase-to-completion, one attempt, missed-window fee and48h re-registration boundary. USD175 FAQ concerns the real Core exam. No practice question/assessment content accessed; practice language list not used as real-exam availability proof. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution. September 29 DEA-C02 deep review: Entire public main page read.24h purchase-to-completion, one attempt, missed-window fee and48h re-registration boundary. USD175 FAQ concerns the real Core exam. No practice question/assessment content accessed; practice language list not used as real-exam availability proof. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution. September 29 GES-C02 deep review: Complete main practice terms read in same-session Snowflake reviews and re-fetched here. GenAI English practice listing;24h purchase-to-completion/oneattempt,missedwindow forfeiture and48hfrompurchase reregistration boundary. No questions or paid practice accessed;not real-exam language evidence. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-core-prep-course",
@@ -47160,28 +47375,116 @@
       "notes": "October 2025, 210-page, 4h55m advanced feature supplement including Gen2/adaptive compute and Openflow; broader than DEA-C02. September 29 DEA-C02 deep review: CurrentHTTP403;old4h55m/October2025metadata and claimed Gen2/Openflow featurecoverage unverified. Removed unsupported current-quality endorsement;no book/interior review. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"snowflake-ges-c02-certification","title":"SnowPro Specialty: Gen AI (GES-C02)","url":"https://learn.snowflake.com/en/certifications/snowpro-GenAI-C02/","publisher":"Snowflake","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["GES-C02"],"notes":"Canonical active exam identity, four public abilities, one-year enterprise-experience recommendation and detailed-guide request; monitored by the Snowflake adapter."
+      "id": "snowflake-ges-c02-certification",
+      "title": "SnowPro Specialty: Gen AI (GES-C02)",
+      "url": "https://learn.snowflake.com/en/certifications/snowpro-GenAI-C02/",
+      "publisher": "Snowflake",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "notes": "Canonical active exam identity, four public abilities, one-year enterprise-experience recommendation and detailed-guide request; monitored by the Snowflake adapter. September 29 GES-C02 deep review: Entire public main page and embedded mktoForm_45775 read:four abilities,one-plus year enterpriseGenAI experience,Python may-have proficiency versus assumed SQL/DE. No form submitted;targeted primary-domain searches did not recover detailed PDF. Objective unchanged;missing lifecycle explicitly initialized and postcheck unchanged. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"snowflake-genai-training","title":"Snowflake GenAI Training","url":"https://learn.snowflake.com/en/courses/ILT-GENAI","publisher":"Snowflake University","authority_class":1,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["GES-C02"],"notes":"First-party two-day, 16-hour instructor-led course with lectures, demos, labs and discussion; confirm exact GES-C02 alignment and current schedule."
+      "id": "snowflake-genai-training",
+      "title": "Snowflake GenAI Training",
+      "url": "https://learn.snowflake.com/en/courses/ILT-GENAI",
+      "publisher": "Snowflake University",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "notes": "First-party two-day, 16-hour instructor-led course with lectures, demos, labs and discussion; confirm exact GES-C02 alignment and current schedule. September 29 GES-C02 deep review: Entire public main course listing read:two days/16h,lectures,demos,labs and actual PDF link. No enrollment, upcoming session verification or live training. Paid role course not exam blueprint. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"snowflake-cortex-agents","title":"Cortex Agents","url":"https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents","publisher":"Snowflake Documentation","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["GES-C02"],"notes":"Current first-party Agent, Analyst, Search, tool and MCP orchestration entry point; volatile across interfaces, identity behavior, models and availability."
+      "id": "snowflake-cortex-agents",
+      "title": "Cortex Agents",
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents",
+      "publisher": "Snowflake Documentation",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "notes": "Current first-party Agent, Analyst, Search, tool and MCP orchestration entry point; volatile across interfaces, identity behavior, models and availability. September 29 GES-C02 deep review: Selected introduction/keyconcepts/tool types and access sections read;not full model table/example catalog. Main text contradicts itself about inaccessible tools;followed and fully read dedicated handling guide. No agents/tools/MCP/web connections invoked. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"snowflake-spcs-overview","title":"Snowpark Container Services","url":"https://docs.snowflake.com/en/developer-guide/snowpark-container-services/overview","publisher":"Snowflake Documentation","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["GES-C02"],"notes":"Current first-party image repository, compute pool, service/job, network, observability and cost foundation for custom open models."
+      "id": "snowflake-spcs-overview",
+      "title": "Snowpark Container Services",
+      "url": "https://docs.snowflake.com/en/developer-guide/snowpark-container-services/overview",
+      "publisher": "Snowflake Documentation",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "notes": "Current first-party image repository, compute pool, service/job, network, observability and cost foundation for custom open models. September 29 GES-C02 deep review: Selected main introduction/components/service-versus-job lifecycle sections read. Image repository/pool/runtime distinction,long-running restart,finite job containers not restarted. Not complete deployment/network/instance catalog;no images,pools,CPU/GPU job or endpoint. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"snowflake-model-registry","title":"Snowflake Model Registry","url":"https://docs.snowflake.com/en/developer-guide/snowflake-ml/model-registry/overview","publisher":"Snowflake Documentation","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["GES-C02"],"notes":"Current first-party model/version, signature, metrics, lineage and inference entry point; supported frameworks and deployment behavior are volatile."
+      "id": "snowflake-model-registry",
+      "title": "Snowflake Model Registry",
+      "url": "https://docs.snowflake.com/en/developer-guide/snowflake-ml/model-registry/overview",
+      "publisher": "Snowflake Documentation",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "notes": "Current first-party model/version, signature, metrics, lineage and inference entry point; supported frameworks and deployment behavior are volatile. September 29 GES-C02 deep review: Selected main overview/model classes/required privileges read;USAGE warehouse inference without internals,READ container inference/metadata. Cortex fine-tuned UI visibility does not establish Registry API management. Not fullframework/APIreference;no logged/deployed model. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"snowflake-ai-documents","title":"Cortex AI Functions: Documents","url":"https://docs.snowflake.com/en/user-guide/snowflake-cortex/ai-documents","publisher":"Snowflake Documentation","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["GES-C02"],"notes":"Current first-party AI_PARSE_DOCUMENT, AI_EXTRACT and AI_COMPLETE document-processing map with linked limits, regions, privileges and consumption."
+      "id": "snowflake-ai-documents",
+      "title": "Cortex AI Functions: Documents",
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/ai-documents",
+      "publisher": "Snowflake Documentation",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "notes": "Current first-party AI_PARSE_DOCUMENT, AI_EXTRACT and AI_COMPLETE document-processing map with linked limits, regions, privileges and consumption. September 29 GES-C02 deep review: Entire main overview/function choices and use cases read. Parsing versus structured extraction/general completion/routing are composable optional choices. Not every linked format/limit page;no document processing. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-snowflake-cortex-masterclass","title":"Training for Snowflake Cortex Masterclass Hands-On","url":"https://www.udemy.com/course/snowflake-cortex/","publisher":"Udemy / Cristian Scutaru","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["GES-C02"],"notes":"20h34m intermediate course updated May 2026 across Cortex, Snowpark and ML. Close current Agents, canonical AI function and document-pipeline gaps from first-party docs."
+      "id": "udemy-snowflake-cortex-masterclass",
+      "title": "Training for Snowflake Cortex Masterclass Hands-On",
+      "url": "https://www.udemy.com/course/snowflake-cortex/",
+      "publisher": "Udemy / Cristian Scutaru",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "notes": "20h34m intermediate course updated May 2026 across Cortex, Snowpark and ML. Close current Agents, canonical AI function and document-pipeline gaps from first-party docs. September 29 GES-C02 deep review: Current HTTP403. Old20h34m/May2026revision metadata unverified;no outline/paidlessons/quality or exam completeness evaluation. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-snowflake-cortex-code-search-agents","title":"Snowflake Cortex AI: Cortex Code, Search & Agents","url":"https://www.udemy.com/course/snowflake-cortex-ai-cortex-code-coco-course/","publisher":"Udemy / Florian Detzel","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["GES-C02"],"notes":"5h21m August 2026 practical course across current AI Functions, RAG, semantic views, Search and Agents; verify each fast-moving interface officially."
+      "id": "udemy-snowflake-cortex-code-search-agents",
+      "title": "Snowflake Cortex AI: Cortex Code, Search & Agents",
+      "url": "https://www.udemy.com/course/snowflake-cortex-ai-cortex-code-coco-course/",
+      "publisher": "Udemy / Florian Detzel",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GES-C02"
+      ],
+      "notes": "5h21m August 2026 practical course across current AI Functions, RAG, semantic views, Search and Agents; verify each fast-moving interface officially. September 29 GES-C02 deep review: Current HTTP403. Old5h21m/August2026revision metadata unverified;no outline/paidlessons/quality or exam completeness evaluation. See docs/research/2026-09-29-ges-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id":"isc2-cc-outline","title":"Certified in Cybersecurity Certification Exam Outline","url":"https://www.isc2.org/certifications/cc/cc-certification-exam-outline","publisher":"ISC2","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["CC"],"notes":"Canonical September 1, 2026 outline with five weighted domains, detailed topics, embedded AI guidance and current CAT delivery contract; monitored by the ISC2 adapter."

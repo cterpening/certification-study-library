@@ -2807,6 +2807,29 @@ This is not a complete list, and it is not meant to be consumed in full. Public 
 
 Choose resources for identified evidence gaps. Reject products promising recalled live questions, dumps or guaranteed passing; a practice result does not establish a production recovery contract.
 
+### GES-C02 — SnowPro Specialty: Gen AI
+
+Resource details from the [GES-C02 guide](../guides/GES-C02-snowpro-specialty-gen-ai.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Start with the official scope and one practical route, then target gaps. Public pages and the actual five-page training PDF were checked September 29, 2026. Learning estimates below are ours unless explicitly identified as provider duration. Public metadata does not establish lesson quality or complete exam coverage.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [GES-C02 certification and detailed-guide request](https://learn.snowflake.com/en/certifications/snowpro-GenAI-C02/) — four public abilities; detailed guide remains form-restricted | Public page; request form not submitted | 20–40m public scope, then reconcile the received guide |
+| [SnowPro catalog](https://learn.snowflake.com/en/certifications/) and [program policies](https://learn.snowflake.com/en/pages/snowpro-policies/) — USD225 Specialty, validity and renewal/retake rules | Public; fees/policy can change | 30–60m review |
+| [Official practice exams](https://learn.snowflake.com/en/certifications/snowpro-practice-exams/) — Gen AI practice listed in English; not evidence of real-exam languages | Paid; no questions accessed. One attempt must be completed within 24h of purchase; missing that window forfeits the attempt and re-registration waits until 48h from purchase | One attempt plus 3–5h original error review; exact attempt duration not inferred |
+| [GenAI Training](https://learn.snowflake.com/en/courses/ILT-GENAI) and [actual five-page datasheet](https://www.snowflake.com/wp-content/uploads/2024/11/standard_genai_datasheet_24J23.pdf) — role training, not a detailed exam blueprint | Paid instructor-led; public outline read, no session booked | Provider: two days/16h; our extra lab estimate: 20–35h |
+| [Cortex AI Functions](https://docs.snowflake.com/en/user-guide/snowflake-cortex/llm-functions) and [function access](https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql-privileges-and-access) — exact contracts and permission gates | Public documentation | 8–15h selective reading plus 15–25h proposed labs |
+| [Cortex Search](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-search/cortex-search-overview) and [Agents](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents) — read detailed access/tool references as well as overviews | Public documentation; account work separately authorized | 10–18h selective reading plus 15–25h proposed labs |
+| [Container Services](https://docs.snowflake.com/en/developer-guide/snowpark-container-services/overview) and [Model Registry](https://docs.snowflake.com/en/developer-guide/snowflake-ml/model-registry/overview) — lifecycle, model type and inference privilege boundaries | Public documentation; no GPU/model deployment executed | 12–20h selective reading plus 20–40h proposed labs |
+| [AI document functions](https://docs.snowflake.com/en/user-guide/snowflake-cortex/ai-documents), [parser reference](https://docs.snowflake.com/sql-reference/functions/ai_parse_document) and [extraction reference](https://docs.snowflake.com/sql-reference/functions/ai_extract) — modes, result/error types, scores and provenance | Public documentation | 6–12h selective reading plus 12–25h proposed labs |
+| [Udemy Cortex Masterclass](https://www.udemy.com/course/snowflake-cortex/) — current catalog returned HTTP403; earlier May2026 revision and 20h34m duration are unverified | Paid; public access blocked; no lessons reviewed | Current provider duration unverified |
+| [Udemy Cortex Code, Search and Agents](https://www.udemy.com/course/snowflake-cortex-ai-cortex-code-coco-course/) — current catalog returned HTTP403; earlier August2026 revision and 5h21m duration are unverified | Paid; public access blocked; no lessons reviewed | Current provider duration unverified |
+
+The fetched training PDF carries content code **26F15/copyright2026 despite its older URL filename**. Its fourteen teaching areas include AI functions, multimodal work, Cortex Code, document processing, Search, Analyst, CoWork, Agents, knowledge extensions, fine-tuning, observability, governance and cost. It requires Foundations-equivalent experience, basic SQL and two specified introductory on-demand Gen AI modules; MFA/database knowledge is recommended. This outline supports a study route but supplies no exam weights or recovered detailed subobjectives. Verify scheduling and account availability separately.
+
+Avoid products promising real/current questions or guaranteed passing. Use original scenarios and current primary references to explain each design decision. Independent human review and the eight live labs remain pending.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

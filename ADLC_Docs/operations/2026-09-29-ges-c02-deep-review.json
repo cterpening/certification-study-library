@@ -1,0 +1,1574 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "GES-C02",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/GES-C02-snowpro-specialty-gen-ai.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "38150a2c21058f0b61cdb3b8d1cc4307c4f23325f1dd03dc8132969b5bc044d5",
+  "guide_after_sha256": "ec0ff67cb4bb175e38119ce7cfee310a14b2e00c1ae49fd9c2c7c0b021d2347c",
+  "prior_records": {
+    "exam": {
+      "code": "GES-C02",
+      "level": "intermediate",
+      "vendor_id": "snowflake",
+      "title": "SnowPro Specialty: Gen AI",
+      "status": "active",
+      "study_guide_url": "https://learn.snowflake.com/en/certifications/snowpro-GenAI-C02/",
+      "guide_path": "guides/GES-C02-snowpro-specialty-gen-ai.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal certification prerequisite is published. Snowflake recommends one or more years of enterprise Gen AI experience with Snowflake and assumes Python, data-engineering and SQL knowledge. Build evaluated, governed Cortex AI function, RAG/semantic/agent, open-model Model Registry/SPCS and document-processing pipelines with least privilege, versioned evidence, bounded cost and tested failure/rollback."
+    },
+    "review": {
+      "id": "ges-c02-2026-09-02-source-validation",
+      "exam_code": "GES-C02",
+      "guide_path": "guides/GES-C02-snowpro-specialty-gen-ai.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/GES-C02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "c6dcc5ab29e74f1ba7c2778039589727d42e249a5b732ff57bbbd323cf002a25",
+      "objective_coverage": [
+        {
+          "objective_group": "Define and implement Snowflake Gen AI principles, capabilities, and best practices",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Use Snowflake Cortex AI features and functions, including LLMs, to meet customer use cases",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1–2",
+            "Labs 2–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Build and fine-tune open-source models with Snowpark Container Services and Snowflake Model Registry",
+          "guide_sections": [
+            "Section 3",
+            "Scenario 3",
+            "Labs 6–8"
+          ]
+        },
+        {
+          "objective_group": "Use Snowflake document processing functions to build, manage, and optimize document parsing pipelines",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1–2",
+            "Labs 3, 5 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 11,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All four live public abilities are mapped through use-case/data/action contracts, least privilege and responsible threats, layered retrieval/generation/tool/system evaluation, canonical Cortex AI functions and governed RAG/semantic/agent/MCP behavior, reproducible open-model Model Registry/SPCS lifecycle, and idempotent evaluated document parsing/extraction pipelines. Candidates must reconcile the form-delivered detailed guide; inaccessible weights/subobjectives are not reconstructed. Three scenarios, eight labs and 40 checks are included. All 11 links are reachable. No recalled/live item, dump or copied course content is used."
+    },
+    "sources": [
+      {
+        "id": "snowflake-cortex-ai-sql",
+        "title": "Snowflake Cortex AI Functions",
+        "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/llm-functions",
+        "publisher": "Snowflake Documentation",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "SOL-C01",
+          "GES-C02"
+        ],
+        "notes": "Current AI SQL function landing page; redirects from the former LLM-functions path and is volatile across models, functions, regions, privileges and consumption. September 29 SOL-C01 deep review: Full maincurrentAIfunctionsoverview read,includingfeatures/preview,functioncategories/access/performance caveats. No modelbenchmark/functioncall. Detailed access source controls specificAI_COMPLETE explanation,not blanketallfunctions assertion. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "snowflake-snowpro-policies",
+        "title": "SnowPro Program Policies",
+        "url": "https://learn.snowflake.com/en/pages/snowpro-policies/",
+        "publisher": "Snowflake",
+        "authority_class": 1,
+        "source_type": "program-policy",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "COF-C03",
+          "DEA-C02",
+          "GES-C02"
+        ],
+        "notes": "First-party validity, continuing education, scheduling, scoring, accommodations, retake and beta policies; volatile and must be rechecked before purchase. September 29 COF-C03 deep review: Main policies including renewal/expiry, retakes, scheduling/accommodation and scaled-scoring sections read. Two years; qualifying renewal before expiry; full retake within six months; seven-day failure wait; four retakes in twelve months; scaled750/1000 not75 percent. No booking or eligibility determination. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution. September 29 DEA-C02 deep review: Main policies including renewal/expiry, retakes, scheduling/accommodation and scaled-scoring sections read. Two years; qualifying renewal before expiry; full retake within six months; seven-day failure wait; four retakes in twelve months; scaled750/1000 not75 percent. No booking or eligibility determination. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "snowflake-practice-exams",
+        "title": "SnowPro Practice Exams",
+        "url": "https://learn.snowflake.com/en/certifications/snowpro-practice-exams/",
+        "publisher": "Snowflake",
+        "authority_class": 1,
+        "source_type": "official-practice",
+        "access_model": "paid",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "COF-C03",
+          "DEA-C02",
+          "GES-C02"
+        ],
+        "notes": "Official Core, Data Engineer and Gen AI practice availability plus same-specification/domain-weighting statement; purchase provides a single 24-hour-access attempt under checked policy. September 29 COF-C03 deep review: Entire public main page read.24h purchase-to-completion, one attempt, missed-window fee and48h re-registration boundary. USD175 FAQ concerns the real Core exam. No practice question/assessment content accessed; practice language list not used as real-exam availability proof. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution. September 29 DEA-C02 deep review: Entire public main page read.24h purchase-to-completion, one attempt, missed-window fee and48h re-registration boundary. USD175 FAQ concerns the real Core exam. No practice question/assessment content accessed; practice language list not used as real-exam availability proof. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "snowflake-ges-c02-certification",
+        "title": "SnowPro Specialty: Gen AI (GES-C02)",
+        "url": "https://learn.snowflake.com/en/certifications/snowpro-GenAI-C02/",
+        "publisher": "Snowflake",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GES-C02"
+        ],
+        "notes": "Canonical active exam identity, four public abilities, one-year enterprise-experience recommendation and detailed-guide request; monitored by the Snowflake adapter."
+      },
+      {
+        "id": "snowflake-genai-training",
+        "title": "Snowflake GenAI Training",
+        "url": "https://learn.snowflake.com/en/courses/ILT-GENAI",
+        "publisher": "Snowflake University",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GES-C02"
+        ],
+        "notes": "First-party two-day, 16-hour instructor-led course with lectures, demos, labs and discussion; confirm exact GES-C02 alignment and current schedule."
+      },
+      {
+        "id": "snowflake-cortex-agents",
+        "title": "Cortex Agents",
+        "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents",
+        "publisher": "Snowflake Documentation",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GES-C02"
+        ],
+        "notes": "Current first-party Agent, Analyst, Search, tool and MCP orchestration entry point; volatile across interfaces, identity behavior, models and availability."
+      },
+      {
+        "id": "snowflake-spcs-overview",
+        "title": "Snowpark Container Services",
+        "url": "https://docs.snowflake.com/en/developer-guide/snowpark-container-services/overview",
+        "publisher": "Snowflake Documentation",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GES-C02"
+        ],
+        "notes": "Current first-party image repository, compute pool, service/job, network, observability and cost foundation for custom open models."
+      },
+      {
+        "id": "snowflake-model-registry",
+        "title": "Snowflake Model Registry",
+        "url": "https://docs.snowflake.com/en/developer-guide/snowflake-ml/model-registry/overview",
+        "publisher": "Snowflake Documentation",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GES-C02"
+        ],
+        "notes": "Current first-party model/version, signature, metrics, lineage and inference entry point; supported frameworks and deployment behavior are volatile."
+      },
+      {
+        "id": "snowflake-ai-documents",
+        "title": "Cortex AI Functions: Documents",
+        "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/ai-documents",
+        "publisher": "Snowflake Documentation",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GES-C02"
+        ],
+        "notes": "Current first-party AI_PARSE_DOCUMENT, AI_EXTRACT and AI_COMPLETE document-processing map with linked limits, regions, privileges and consumption."
+      },
+      {
+        "id": "udemy-snowflake-cortex-masterclass",
+        "title": "Training for Snowflake Cortex Masterclass Hands-On",
+        "url": "https://www.udemy.com/course/snowflake-cortex/",
+        "publisher": "Udemy / Cristian Scutaru",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GES-C02"
+        ],
+        "notes": "20h34m intermediate course updated May 2026 across Cortex, Snowpark and ML. Close current Agents, canonical AI function and document-pipeline gaps from first-party docs."
+      },
+      {
+        "id": "udemy-snowflake-cortex-code-search-agents",
+        "title": "Snowflake Cortex AI: Cortex Code, Search & Agents",
+        "url": "https://www.udemy.com/course/snowflake-cortex-ai-cortex-code-coco-course/",
+        "publisher": "Udemy / Florian Detzel",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GES-C02"
+        ],
+        "notes": "5h21m August 2026 practical course across current AI Functions, RAG, semantic views, Search and Agents; verify each fast-moving interface officially."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "4a431c9f869d1a5e08cd61af1139f6b7270e41d76750e5a712d42e9b49353956",
+      "guide_sections": [
+        "1. Define and implement Snowflake Gen AI principles and best practices",
+        "Executed local publication and access workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "30c8c13b7cbaadf41a657536a7ab49f2011af04c8dbf4889f15a6800b6ed4d09",
+      "guide_sections": [
+        "2. Use Cortex AI features and functions for customer use cases",
+        "Executed local publication and access workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "80ef5421e78ca26dab957ae961e7da84ef3502f0186d9fbf8173be19d1f5dd40",
+      "guide_sections": [
+        "3. Build and fine-tune open-source models with container services and Model Registry",
+        "Executed local publication and access workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "d6c8b8c50a340f10504fd697a62077590e89f004e4ffefc4ef088d7c2c12cfd4",
+      "guide_sections": [
+        "4. Build, manage and optimize document parsing pipelines",
+        "Executed local publication and access workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "GES-C02"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "GES-C02",
+        "title": "SnowPro Specialty: Gen AI",
+        "url": "https://learn.snowflake.com/en/certifications/snowpro-GenAI-C02/",
+        "guide_path": "guides/GES-C02-snowpro-specialty-gen-ai.md",
+        "snapshot_path": "data\\objective-snapshots\\ges-c02-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ges-c02-official-status.json",
+        "previous_sha256": "c6dcc5ab29e74f1ba7c2778039589727d42e249a5b732ff57bbbd323cf002a25",
+        "current_sha256": "c6dcc5ab29e74f1ba7c2778039589727d42e249a5b732ff57bbbd323cf002a25",
+        "previous_status_sha256": null,
+        "current_status_sha256": "b565c133e609b421cbbfc40fe150e7b6e30375fb9cea2a1aaef4f867e3c34dad",
+        "official_status": {
+          "skills_versions": [
+            "GES-C02",
+            "1 or more years of Gen AI experience with Snowflake, in an enterprise environment."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 31,
+    "reachable": 29,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "snowflake-cortex-ai-sql",
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/llm-functions",
+      "checked_at": "2026-09-29T11:30:57.226119+00:00",
+      "health": {
+        "id": "snowflake-cortex-ai-sql",
+        "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/llm-functions",
+        "checked_at": "2026-09-29T11:30:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Snowflake Cortex AI Functions (including LLM functions) | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql",
+        "duration_signals": [],
+        "signal_fingerprint": "4ae7f0780f254e3b3270b7c70f0fee48ea4b39853be44265914f856ac9429fa4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql",
+      "sha256": "9bd1e5128692784b7a429dcf973034c1651e518b7146362eaea7bda8c5e9591f",
+      "text_characters": 6697
+    },
+    {
+      "id": "snowflake-snowpro-policies",
+      "url": "https://learn.snowflake.com/en/pages/snowpro-policies/",
+      "checked_at": "2026-09-29T11:30:57.226696+00:00",
+      "health": {
+        "id": "snowflake-snowpro-policies",
+        "url": "https://learn.snowflake.com/en/pages/snowpro-policies/",
+        "checked_at": "2026-09-29T11:30:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.snowflake.com/en/pages/snowpro-policies/",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://learn.snowflake.com/en/pages/snowpro-policies/",
+        "duration_signals": [
+          "24 hours",
+          "30 minutes"
+        ],
+        "signal_fingerprint": "e902f7e85a078f29ddc6cdbf06af2bbd36c33fb0c12319e1fa97a19a51071a2a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.snowflake.com/en/pages/snowpro-policies/",
+      "sha256": "8d4daa6e3b5ec2ee28714516138ea4d0350d53e77036c7a1f7203005a9d2982c",
+      "text_characters": 7675
+    },
+    {
+      "id": "snowflake-practice-exams",
+      "url": "https://learn.snowflake.com/en/certifications/snowpro-practice-exams/",
+      "checked_at": "2026-09-29T11:30:57.227237+00:00",
+      "health": {
+        "id": "snowflake-practice-exams",
+        "url": "https://learn.snowflake.com/en/certifications/snowpro-practice-exams/",
+        "checked_at": "2026-09-29T11:30:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.snowflake.com/en/certifications/snowpro-practice-exams/",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://learn.snowflake.com/en/certifications/snowpro-practice-exams/",
+        "duration_signals": [
+          "24 hours",
+          "48 hours"
+        ],
+        "signal_fingerprint": "154f3d5f8869b6290f329d5c1334e96539eab374aa5db765da80329112dc86cd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.snowflake.com/en/certifications/snowpro-practice-exams/",
+      "sha256": "a31f4397a8eae75a4867158133a117a416b2a3cfe50f46d70b946b7d9c15fcb6",
+      "text_characters": 3102
+    },
+    {
+      "id": "snowflake-ges-c02-certification",
+      "url": "https://learn.snowflake.com/en/certifications/snowpro-GenAI-C02/",
+      "checked_at": "2026-09-29T11:30:57.880306+00:00",
+      "health": {
+        "id": "snowflake-ges-c02-certification",
+        "url": "https://learn.snowflake.com/en/certifications/snowpro-GenAI-C02/",
+        "checked_at": "2026-09-29T11:30:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.snowflake.com/en/certifications/snowpro-GenAI-C02/",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://learn.snowflake.com/en/certifications/snowpro-GenAI-C02/",
+        "duration_signals": [],
+        "signal_fingerprint": "d4939254cf496f19d97b9a82d436e41ee6c6df92999a3e6c7cc2171fff26f0ff",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.snowflake.com/en/certifications/snowpro-GenAI-C02/",
+      "sha256": "05a57739c637a1f82e35823eddf40ffdd4a187afb1722fdc21d7d5dc75179c58",
+      "text_characters": 2613
+    },
+    {
+      "id": "snowflake-genai-training",
+      "url": "https://learn.snowflake.com/en/courses/ILT-GENAI",
+      "checked_at": "2026-09-29T11:30:57.928362+00:00",
+      "health": {
+        "id": "snowflake-genai-training",
+        "url": "https://learn.snowflake.com/en/courses/ILT-GENAI",
+        "checked_at": "2026-09-29T11:30:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.snowflake.com/en/courses/ILT-GENAI/",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://learn.snowflake.com/en/courses/ILT-GENAI/",
+        "duration_signals": [],
+        "signal_fingerprint": "6b88d4b72a31e9a1d6ca23d8d529095ef6073c5d5dd436dc574bd5fcb57defce",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.snowflake.com/en/courses/ILT-GENAI/",
+      "sha256": "0db5d106bf0919f292299b9d9c576488a7fe784b286147735a914e545b4a737d",
+      "text_characters": 2269
+    },
+    {
+      "id": "snowflake-cortex-agents",
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents",
+      "checked_at": "2026-09-29T11:30:58.233877+00:00",
+      "health": {
+        "id": "snowflake-cortex-agents",
+        "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents",
+        "checked_at": "2026-09-29T11:30:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Cortex Agents | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents",
+        "duration_signals": [],
+        "signal_fingerprint": "dd8ad75733f6c3278897b8961a4566c19f2bd42930914b6b34fbccce498bb515",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents",
+      "sha256": "46f865c759f7079695f07fb08bc3df1d738fd9b571a9068926dbd20f909eadb2",
+      "text_characters": 15243
+    },
+    {
+      "id": "snowflake-spcs-overview",
+      "url": "https://docs.snowflake.com/en/developer-guide/snowpark-container-services/overview",
+      "checked_at": "2026-09-29T11:30:58.305558+00:00",
+      "health": {
+        "id": "snowflake-spcs-overview",
+        "url": "https://docs.snowflake.com/en/developer-guide/snowpark-container-services/overview",
+        "checked_at": "2026-09-29T11:30:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/developer-guide/snowpark-container-services/overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Snowpark Container Services | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/developer-guide/snowpark-container-services/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "b07f1f231b042efa5f4f479d1e128223a59b02216afcc60cf74d0861793ad546",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/developer-guide/snowpark-container-services/overview",
+      "sha256": "d0d82f71675f53de0b6850a3114d56e7a057a7d0d6130f9d825433ba8fdfcb97",
+      "text_characters": 11353
+    },
+    {
+      "id": "snowflake-model-registry",
+      "url": "https://docs.snowflake.com/en/developer-guide/snowflake-ml/model-registry/overview",
+      "checked_at": "2026-09-29T11:30:58.590167+00:00",
+      "health": {
+        "id": "snowflake-model-registry",
+        "url": "https://docs.snowflake.com/en/developer-guide/snowflake-ml/model-registry/overview",
+        "checked_at": "2026-09-29T11:30:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/developer-guide/snowflake-ml/model-registry/overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Snowflake Model Registry | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/developer-guide/snowflake-ml/model-registry/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "4cf386b6caef9a47e726975789a54e1bed50377168ceff2b0980eb50a815554b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/developer-guide/snowflake-ml/model-registry/overview",
+      "sha256": "c3721c6e534553ee8c8d3d49f22ac091efe3bfb390f9c157fee8f6c7b50a9eff",
+      "text_characters": 40007
+    },
+    {
+      "id": "snowflake-ai-documents",
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/ai-documents",
+      "checked_at": "2026-09-29T11:30:58.605569+00:00",
+      "health": {
+        "id": "snowflake-ai-documents",
+        "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/ai-documents",
+        "checked_at": "2026-09-29T11:30:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/ai-documents",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Cortex AI Functions: Documents | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/ai-documents",
+        "duration_signals": [],
+        "signal_fingerprint": "2c1522dd7e08065c7614de49060a18ae1b7d361476224130c34fb37c94d0ae62",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/ai-documents",
+      "sha256": "db52247534a6fb4b8af7a725355742d1772eaf2e1a1229250211c3d8a6541dcb",
+      "text_characters": 6336
+    },
+    {
+      "id": "udemy-snowflake-cortex-masterclass",
+      "url": "https://www.udemy.com/course/snowflake-cortex/",
+      "checked_at": "2026-09-29T11:30:58.631382+00:00",
+      "health": {
+        "id": "udemy-snowflake-cortex-masterclass",
+        "url": "https://www.udemy.com/course/snowflake-cortex/",
+        "checked_at": "2026-09-29T11:30:58+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/snowflake-cortex/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "udemy-snowflake-cortex-code-search-agents",
+      "url": "https://www.udemy.com/course/snowflake-cortex-ai-cortex-code-coco-course/",
+      "checked_at": "2026-09-29T11:30:58.733184+00:00",
+      "health": {
+        "id": "udemy-snowflake-cortex-code-search-agents",
+        "url": "https://www.udemy.com/course/snowflake-cortex-ai-cortex-code-coco-course/",
+        "checked_at": "2026-09-29T11:30:58+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/snowflake-cortex-ai-cortex-code-coco-course/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "snowflake-ai-function-access",
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql-privileges-and-access",
+      "checked_at": "2026-09-29T11:30:58.802199+00:00",
+      "health": {
+        "id": "snowflake-ai-function-access",
+        "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql-privileges-and-access",
+        "checked_at": "2026-09-29T11:30:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql-privileges-and-access",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Privileges and model access for Cortex AI Functions | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql-privileges-and-access",
+        "duration_signals": [],
+        "signal_fingerprint": "3f744cd320169366e3a27f441fffea1742ab4c1a439154e06aaeadadf4c1b4a0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql-privileges-and-access",
+      "sha256": "1002dba5722eccb511717de0cefdbbe1e1c2d356b66a006527d4451beaab0174",
+      "text_characters": 34869
+    },
+    {
+      "id": "snowflake-resource-monitors",
+      "url": "https://docs.snowflake.com/en/user-guide/resource-monitors",
+      "checked_at": "2026-09-29T11:30:58.969683+00:00",
+      "health": {
+        "id": "snowflake-resource-monitors",
+        "url": "https://docs.snowflake.com/en/user-guide/resource-monitors",
+        "checked_at": "2026-09-29T11:30:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/resource-monitors",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Working with resource monitors | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/resource-monitors",
+        "duration_signals": [],
+        "signal_fingerprint": "276631761db7756f01832823a4e574d121ec3b2501352b4f726acf127f4894ce",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/resource-monitors",
+      "sha256": "0a79676fcd10baa83dd4d2328bd3ba5462d01ea7e68b3d28901f61313f7c17be",
+      "text_characters": 35460
+    },
+    {
+      "id": "snowflake-model-rbac-transition",
+      "url": "https://docs.snowflake.com/en/release-notes/bcr-bundles/un-bundled/bcr-2378",
+      "checked_at": "2026-09-29T11:30:58.983443+00:00",
+      "health": {
+        "id": "snowflake-model-rbac-transition",
+        "url": "https://docs.snowflake.com/en/release-notes/bcr-bundles/un-bundled/bcr-2378",
+        "checked_at": "2026-09-29T11:30:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/release-notes/bcr-bundles/un-bundled/bcr-2378",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CORTEX_MODELS_ALLOWLIST deprecation and embedding model RBAC enforcement (Pending) | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/release-notes/bcr-bundles/un-bundled/bcr-2378",
+        "duration_signals": [],
+        "signal_fingerprint": "a10cee96ab74a18ade92d402792e5188a81f48acfeebcccb09c5ac49f73002c5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/release-notes/bcr-bundles/un-bundled/bcr-2378",
+      "sha256": "e48b2d23c19f8ad123daacf7fc65afe9e8ad83d6827daa43181dca1cf11db235",
+      "text_characters": 14439
+    },
+    {
+      "id": "snowflake-2026-07-bundle",
+      "url": "https://docs.snowflake.com/en/release-notes/bcr-bundles/2026_07_bundle",
+      "checked_at": "2026-09-29T11:30:59.528508+00:00",
+      "health": {
+        "id": "snowflake-2026-07-bundle",
+        "url": "https://docs.snowflake.com/en/release-notes/bcr-bundles/2026_07_bundle",
+        "checked_at": "2026-09-29T11:30:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/release-notes/bcr-bundles/2026_07_bundle",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "2026_07 Bundle (Disabled by default) | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/release-notes/bcr-bundles/2026_07_bundle",
+        "duration_signals": [],
+        "signal_fingerprint": "85832e267244e7daa729df88b6687cf322f0e8ab761cdb9a7386f6d5c46a2abb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/release-notes/bcr-bundles/2026_07_bundle",
+      "sha256": "db08144e75a9188e6645967595437e92348a961aa145e8fc21df27521075c33b",
+      "text_characters": 8594
+    },
+    {
+      "id": "snowflake-legacy-notebook-retirement",
+      "url": "https://docs.snowflake.com/en/release-notes/bcr-bundles/un-bundled/bcr-disable-legacy-notebooks",
+      "checked_at": "2026-09-29T11:30:59.769345+00:00",
+      "health": {
+        "id": "snowflake-legacy-notebook-retirement",
+        "url": "https://docs.snowflake.com/en/release-notes/bcr-bundles/un-bundled/bcr-disable-legacy-notebooks",
+        "checked_at": "2026-09-29T11:30:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/release-notes/bcr-bundles/un-bundled/bcr-disable-legacy-notebooks",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Disable Legacy Notebook creations | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/release-notes/bcr-bundles/un-bundled/bcr-disable-legacy-notebooks",
+        "duration_signals": [],
+        "signal_fingerprint": "e2af2da424f7f0c2740e3f3ef39430ccececc17d5a47d9e48cd8849e14849293",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/release-notes/bcr-bundles/un-bundled/bcr-disable-legacy-notebooks",
+      "sha256": "097c97504cbbb9e120d5fd3870ba21e4490c3dcb8936e13f5cc1d369ebea2c2b",
+      "text_characters": 8204
+    },
+    {
+      "id": "snowflake-genai-training-datasheet",
+      "url": "https://www.snowflake.com/wp-content/uploads/2024/11/standard_genai_datasheet_24J23.pdf",
+      "checked_at": "2026-09-29T11:31:42.110585+00:00",
+      "health": {
+        "id": "snowflake-genai-training-datasheet",
+        "url": "https://www.snowflake.com/wp-content/uploads/2024/11/standard_genai_datasheet_24J23.pdf",
+        "checked_at": "2026-09-29T11:31:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.snowflake.com/wp-content/uploads/2024/11/standard_genai_datasheet_24J23.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.snowflake.com/wp-content/uploads/2024/11/standard_genai_datasheet_24J23.pdf",
+      "sha256": "b6216577448aeaadd4b69c55ef29b58ec090a497ee289ce5895845f31e7f5cda",
+      "bytes": 692008,
+      "pdf_pages": 5,
+      "text_characters": 3515
+    },
+    {
+      "id": "snowflake-cortex-search-overview",
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-search/cortex-search-overview",
+      "checked_at": "2026-09-29T11:31:00.238159+00:00",
+      "health": {
+        "id": "snowflake-cortex-search-overview",
+        "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-search/cortex-search-overview",
+        "checked_at": "2026-09-29T11:31:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-search/cortex-search-overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Cortex Search | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-search/cortex-search-overview",
+        "duration_signals": [
+          "30 minutes",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "a7f6a8d5307060be37310e512c27fdb1ae47a1704f46f505147bef6be116ccd6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-search/cortex-search-overview",
+      "sha256": "e7c9ddd5b3fac526bb0015e2981be727562b90d9d9c399773c3e4cee97d6ad9e",
+      "text_characters": 36236
+    },
+    {
+      "id": "snowflake-agents-access",
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-setup",
+      "checked_at": "2026-09-29T11:31:00.321053+00:00",
+      "health": {
+        "id": "snowflake-agents-access",
+        "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-setup",
+        "checked_at": "2026-09-29T11:31:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-setup",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Access control and authentication | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-setup",
+        "duration_signals": [],
+        "signal_fingerprint": "3a8f32eff437aab577d9d14260da0414ed75af3ffaaaa3774f9a0ff12f80ff47",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-setup",
+      "sha256": "031f7bc39bc88165cfc44a150a4bcbce0a72f5ab6696cdd05fd4b088c6ef3a83",
+      "text_characters": 8080
+    },
+    {
+      "id": "snowflake-agents-inaccessible-tools",
+      "url": "https://docs.snowflake.com/user-guide/snowflake-cortex/cortex-agents-inaccessible-tool-handling",
+      "checked_at": "2026-09-29T11:31:00.366567+00:00",
+      "health": {
+        "id": "snowflake-agents-inaccessible-tools",
+        "url": "https://docs.snowflake.com/user-guide/snowflake-cortex/cortex-agents-inaccessible-tool-handling",
+        "checked_at": "2026-09-29T11:31:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-inaccessible-tool-handling",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Inaccessible tool handling | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-inaccessible-tool-handling",
+        "duration_signals": [],
+        "signal_fingerprint": "c1a8ebc6524bbe0465b299bbd624483ec93a1c10fbf87362ed93401d15f73ab6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-inaccessible-tool-handling",
+      "sha256": "a1cf421dae73720dd5f555c13676efdd60b712fcc8703408c4b165a686b0d8ad",
+      "text_characters": 12276
+    },
+    {
+      "id": "snowflake-parse-document",
+      "url": "https://docs.snowflake.com/user-guide/snowflake-cortex/parse-document",
+      "checked_at": "2026-09-29T11:31:01.072908+00:00",
+      "health": {
+        "id": "snowflake-parse-document",
+        "url": "https://docs.snowflake.com/user-guide/snowflake-cortex/parse-document",
+        "checked_at": "2026-09-29T11:31:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/parse-document",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Parsing documents with AI_PARSE_DOCUMENT | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/parse-document",
+        "duration_signals": [
+          "3 hours",
+          "5 hours"
+        ],
+        "signal_fingerprint": "9b52959877f24c5b8d856a9b865d2ec4f42306913f180666b611b3eea8bc0784",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/parse-document",
+      "sha256": "7015c52874da136f45b1be2e930dc05fb96d96126fe63e25d07bfddc89b9176e",
+      "text_characters": 49123
+    },
+    {
+      "id": "snowflake-extract-document",
+      "url": "https://docs.snowflake.com/user-guide/snowflake-cortex/document-extraction",
+      "checked_at": "2026-09-29T11:31:01.126145+00:00",
+      "health": {
+        "id": "snowflake-extract-document",
+        "url": "https://docs.snowflake.com/user-guide/snowflake-cortex/document-extraction",
+        "checked_at": "2026-09-29T11:31:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/document-extraction",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Extracting information from documents with AI_EXTRACT | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/document-extraction",
+        "duration_signals": [],
+        "signal_fingerprint": "f12a0e38e06ad64b03040e4f292716eb041e580c277794b1d7c6083aa162342c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/document-extraction",
+      "sha256": "88b3088c66add5abeac32760b1f023aba9c58730a40103e2d6526a500a667417",
+      "text_characters": 15840
+    },
+    {
+      "id": "snowflake-legacy-parse-document",
+      "url": "https://docs.snowflake.com/en/sql-reference/functions/parse_document-snowflake-cortex",
+      "checked_at": "2026-09-29T11:31:01.705188+00:00",
+      "health": {
+        "id": "snowflake-legacy-parse-document",
+        "url": "https://docs.snowflake.com/en/sql-reference/functions/parse_document-snowflake-cortex",
+        "checked_at": "2026-09-29T11:31:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/sql-reference/functions/parse_document-snowflake-cortex",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "PARSE_DOCUMENT (SNOWFLAKE.CORTEX) | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/sql-reference/functions/parse_document-snowflake-cortex",
+        "duration_signals": [],
+        "signal_fingerprint": "b7a43999081d8244a4e8ea4c89575671ba672be97f41c0a70159bf5a678cd6af",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/sql-reference/functions/parse_document-snowflake-cortex",
+      "sha256": "1b3b42d4d951fdc681e6e53b5e6079bdc669b6f2a6faa90512e4a390310b9d8a",
+      "text_characters": 4045
+    },
+    {
+      "id": "snowflake-agent-objects-sep2026",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-16-cortex-agents-object-enhancements-ga",
+      "checked_at": "2026-09-29T11:31:02.124677+00:00",
+      "health": {
+        "id": "snowflake-agent-objects-sep2026",
+        "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-16-cortex-agents-object-enhancements-ga",
+        "checked_at": "2026-09-29T11:31:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-16-cortex-agents-object-enhancements-ga",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Sep 16, 2026: Cortex Agents object enhancements (*General availability*) | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-16-cortex-agents-object-enhancements-ga",
+        "duration_signals": [],
+        "signal_fingerprint": "518acc5da1b412e3ae7a94ad7b97043f4554dfccab77f7fc58a0ec2c62706a0d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-16-cortex-agents-object-enhancements-ga",
+      "sha256": "6b491c9dfcfa361450f9aa206c644024326bb16c954e22ac3f25990b10aa6b1e",
+      "text_characters": 7288
+    },
+    {
+      "id": "snowflake-analyst-transition",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-28-cortex-analyst-transition-cortex-agents",
+      "checked_at": "2026-09-29T11:31:02.346011+00:00",
+      "health": {
+        "id": "snowflake-analyst-transition",
+        "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-28-cortex-analyst-transition-cortex-agents",
+        "checked_at": "2026-09-29T11:31:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-28-cortex-analyst-transition-cortex-agents",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Aug 28, 2026: Snowflake recommends transitioning from Cortex Analyst to Cortex Agents | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-28-cortex-analyst-transition-cortex-agents",
+        "duration_signals": [],
+        "signal_fingerprint": "bb37336923f0aca0c8285b37f5f47225b6f229709372adbf174ab61737618585",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-28-cortex-analyst-transition-cortex-agents",
+      "sha256": "38b6c63eff703c5f10cf0be08c421ddce26280f79dae8eec87e1c81b88590c47",
+      "text_characters": 31493
+    },
+    {
+      "id": "snowflake-extract-scores-ga",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-05-22-ai-extract-scores-ga",
+      "checked_at": "2026-09-29T11:31:02.808734+00:00",
+      "health": {
+        "id": "snowflake-extract-scores-ga",
+        "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-05-22-ai-extract-scores-ga",
+        "checked_at": "2026-09-29T11:31:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-05-22-ai-extract-scores-ga",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "May 22, 2026: AI_EXTRACT extraction scores (*General availability*) | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-05-22-ai-extract-scores-ga",
+        "duration_signals": [],
+        "signal_fingerprint": "5c2c198e58fe8342e4e4996b868b8f9d27d61643cf3538764f0e26f37d8c064b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-05-22-ai-extract-scores-ga",
+      "sha256": "f701d1a959c116d8ec0bef47091554529588d3daf2c297d576f76f08c9c5c6ef",
+      "text_characters": 31392
+    },
+    {
+      "id": "snowflake-certification-catalog",
+      "url": "https://learn.snowflake.com/en/certifications/",
+      "checked_at": "2026-09-29T11:32:39.393411+00:00",
+      "health": {
+        "id": "snowflake-certification-catalog",
+        "url": "https://learn.snowflake.com/en/certifications/",
+        "checked_at": "2026-09-29T11:32:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.snowflake.com/en/certifications/",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://learn.snowflake.com/en/certifications/",
+        "duration_signals": [],
+        "signal_fingerprint": "a4feee80f34bcc32c4c7947c904ffb5ecc0ec09e5aa9f6fc677188a0ec4d4ada",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.snowflake.com/en/certifications/",
+      "sha256": "6b47df8e0e4158e9bcf6aca6b79984dea5ae4717588050c4727e50231dc613b6",
+      "text_characters": 5042
+    },
+    {
+      "id": "snowflake-search-query-access",
+      "url": "https://docs.snowflake.com/user-guide/snowflake-cortex/cortex-search/query-cortex-search-service",
+      "checked_at": "2026-09-29T11:32:39.395372+00:00",
+      "health": {
+        "id": "snowflake-search-query-access",
+        "url": "https://docs.snowflake.com/user-guide/snowflake-cortex/cortex-search/query-cortex-search-service",
+        "checked_at": "2026-09-29T11:32:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-search/query-cortex-search-service",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Query a Cortex Search Service | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-search/query-cortex-search-service",
+        "duration_signals": [
+          "1 hour",
+          "1 minute",
+          "240 hours"
+        ],
+        "signal_fingerprint": "8233208afac3e416d5a291086216c0b177b0cb683a9cf3387aaf2e4e7cb50408",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-search/query-cortex-search-service",
+      "sha256": "0fb7faabd7c9ef43b88c02d580fb657d294b17a1cf30ae6561834f33444561a0",
+      "text_characters": 36763
+    },
+    {
+      "id": "snowflake-ai-parse-reference",
+      "url": "https://docs.snowflake.com/sql-reference/functions/ai_parse_document",
+      "checked_at": "2026-09-29T11:32:39.396463+00:00",
+      "health": {
+        "id": "snowflake-ai-parse-reference",
+        "url": "https://docs.snowflake.com/sql-reference/functions/ai_parse_document",
+        "checked_at": "2026-09-29T11:32:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/sql-reference/functions/ai_parse_document",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AI_PARSE_DOCUMENT | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/sql-reference/functions/ai_parse_document",
+        "duration_signals": [],
+        "signal_fingerprint": "0b0fda1fcad691cc8faee3f80df10c6b4d2f21218461763000d498228cd3f864",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/sql-reference/functions/ai_parse_document",
+      "sha256": "f2941831bf63b0f0cdcd88dc5b9b7181a9810a2671ed51340c43835220660a98",
+      "text_characters": 7362
+    },
+    {
+      "id": "snowflake-ai-extract-reference",
+      "url": "https://docs.snowflake.com/sql-reference/functions/ai_extract",
+      "checked_at": "2026-09-29T11:32:40.189414+00:00",
+      "health": {
+        "id": "snowflake-ai-extract-reference",
+        "url": "https://docs.snowflake.com/sql-reference/functions/ai_extract",
+        "checked_at": "2026-09-29T11:32:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/sql-reference/functions/ai_extract",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AI_EXTRACT | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/sql-reference/functions/ai_extract",
+        "duration_signals": [],
+        "signal_fingerprint": "bccb43fe2f4a2ec8f75c8d23e6925188efad6370711f35cf8fe8fefc582050ad",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/sql-reference/functions/ai_extract",
+      "sha256": "2ad562b46ce62a7f7b9614e857aca287d2c69538d29093db17fa01d66f4ccd0d",
+      "text_characters": 21572
+    },
+    {
+      "id": "snowflake-ai-evaluation-preview",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-21-ai-function-evaluation-preview",
+      "checked_at": "2026-09-29T11:32:40.451063+00:00",
+      "health": {
+        "id": "snowflake-ai-evaluation-preview",
+        "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-21-ai-function-evaluation-preview",
+        "checked_at": "2026-09-29T11:32:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-21-ai-function-evaluation-preview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "September 21, 2026: Cortex AI Function Evaluation for measuring quality (*Public Preview*) | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-21-ai-function-evaluation-preview",
+        "duration_signals": [],
+        "signal_fingerprint": "d86f43fecc4286285f4ba37218d915b58e3657a0e8e008db189fa079379af1d8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-21-ai-function-evaluation-preview",
+      "sha256": "518972d5f4d93f8e958684562768296f262ce86c85a9459f89f2d25862b1a7d3",
+      "text_characters": 7974
+    }
+  ],
+  "added_source_ids": [
+    "snowflake-genai-training-datasheet",
+    "snowflake-cortex-search-overview",
+    "snowflake-agents-access",
+    "snowflake-agents-inaccessible-tools",
+    "snowflake-parse-document",
+    "snowflake-extract-document",
+    "snowflake-legacy-parse-document",
+    "snowflake-agent-objects-sep2026",
+    "snowflake-analyst-transition",
+    "snowflake-extract-scores-ga",
+    "snowflake-certification-catalog",
+    "snowflake-search-query-access",
+    "snowflake-ai-parse-reference",
+    "snowflake-ai-extract-reference",
+    "snowflake-ai-evaluation-preview"
+  ],
+  "findings": [
+    {
+      "id": "gesc02-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Public abilities remain unchanged and Python is optional profile wording",
+      "url": "https://learn.snowflake.com/en/certifications/snowpro-GenAI-C02/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GES-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Four abilities unchanged;Python may-have vsassumed SQL/DE;detailedformrestricted;lifemissing.",
+      "recommendation": "Preserveobjectives,initializelifeexplicitly,qualifycandidateprofile andscope.",
+      "disposition": "applied",
+      "source_id": "snowflake-ges-c02-certification",
+      "resolution": "Preserveobjectives,initializelifeexplicitly,qualifycandidateprofile andscope."
+    },
+    {
+      "id": "gesc02-deep-2",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "The PDF content is newer than its URL filename",
+      "url": "https://www.snowflake.com/wp-content/uploads/2024/11/standard_genai_datasheet_24J23.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GES-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Actualfivepage26F15/2026PDF has14roletrainingareas andprerequisites,not examweights.",
+      "recommendation": "Use actualbinaryreceipt andteach roleoutlinewithoutreconstructing blueprint.",
+      "disposition": "applied",
+      "source_id": "snowflake-genai-training-datasheet",
+      "resolution": "Use actualbinaryreceipt andteach roleoutlinewithoutreconstructing blueprint."
+    },
+    {
+      "id": "gesc02-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Caller source-table restrictions do not automatically restrict Search",
+      "url": "https://docs.snowflake.com/user-guide/snowflake-cortex/cortex-search/query-cortex-search-service",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GES-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Owner-rightsserviceUSAGEexposesindexeddata independentlyofcaller sourceSELECT.",
+      "recommendation": "Teach servicecorpus/grants ortrustedmediationwithoutbypass;clientfiltersaloneinsufficient.",
+      "disposition": "applied",
+      "source_id": "snowflake-search-query-access",
+      "resolution": "Teach servicecorpus/grants ortrustedmediationwithoutbypass;clientfiltersaloneinsufficient."
+    },
+    {
+      "id": "gesc02-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "API identity may differ from an active SQL session role",
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-setup",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GES-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Documenteduserdefaultrole/defaultwarehouse andagent/toolpermissions apply.",
+      "recommendation": "Explain effective broad/narrowrolepaths andrequire observedidentity.",
+      "disposition": "applied",
+      "source_id": "snowflake-agents-access",
+      "resolution": "Explain effective broad/narrowrolepaths andrequire observedidentity."
+    },
+    {
+      "id": "gesc02-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Default tool behavior differs from generic overview shorthand",
+      "url": "https://docs.snowflake.com/user-guide/snowflake-cortex/cortex-agents-inaccessible-tool-handling",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GES-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "accept default;reject/legacy optional;precheck notalltools;discovery canomitwithoutwarnings;namedversionsimmutable.",
+      "recommendation": "Resolve contradictionwithdedicatedguide anddistinguishprecheck/execution/versiondeployment.",
+      "disposition": "applied",
+      "source_id": "snowflake-agents-inaccessible-tools",
+      "resolution": "Resolve contradictionwithdedicatedguide anddistinguishprecheck/execution/versiondeployment."
+    },
+    {
+      "id": "gesc02-deep-6",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Secure metadata does not grant data isolation",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-16-cortex-agents-object-enhancements-ga",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "GES-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "September16GA secureagent hidesSPECfromnonowners;tools/data stillauthorized separately.",
+      "recommendation": "Teach metadata andexecutionboundaries independently.",
+      "disposition": "applied",
+      "source_id": "snowflake-agent-objects-sep2026",
+      "resolution": "Teach metadata andexecutionboundaries independently."
+    },
+    {
+      "id": "gesc02-deep-7",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "The transition recommendation is not an API retirement",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-28-cortex-analyst-transition-cortex-agents",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "GES-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "August28notice favorsAgentswhileexistingAnalystREST remainsavailable.",
+      "recommendation": "Keep supportedAPI andmigrationrecommendation distinct.",
+      "disposition": "applied",
+      "source_id": "snowflake-analyst-transition",
+      "resolution": "Keep supportedAPI andmigrationrecommendation distinct."
+    },
+    {
+      "id": "gesc02-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Successful query execution can include failed document rows",
+      "url": "https://docs.snowflake.com/sql-reference/functions/ai_parse_document",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GES-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "DefaultOCR/JSONSTRING/NULLperfailedrow;error-detailOBJECTwrapper hasvalue,error,metadata.",
+      "recommendation": "Teach defensiveper-rowchecks andexplicitlayout/pageprovenance.",
+      "disposition": "applied",
+      "source_id": "snowflake-ai-parse-reference",
+      "resolution": "Teach defensiveper-rowchecks andexplicitlayout/pageprovenance."
+    },
+    {
+      "id": "gesc02-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "New parsing work needs the canonical API contract",
+      "url": "https://docs.snowflake.com/en/sql-reference/functions/parse_document-snowflake-cortex",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GES-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Legacycompatibilityfunctiondeprecatedbyend2026;newAI_PARSE_DOCUMENTcanonical.",
+      "recommendation": "Usecanonicalnewpath withoutpretending legacyalreadyremoved.",
+      "disposition": "applied",
+      "source_id": "snowflake-legacy-parse-document",
+      "resolution": "Usecanonicalnewpath withoutpretending legacyalreadyremoved."
+    },
+    {
+      "id": "gesc02-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Table/list scores do not certify individual cells",
+      "url": "https://docs.snowflake.com/sql-reference/functions/ai_extract",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GES-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Optinscores usefieldentitiesbutaggregate lists/tables.",
+      "recommendation": "Teachcorrectgranularity andlabeledprecision/coverage insteadofscoreascorrectness.",
+      "disposition": "applied",
+      "source_id": "snowflake-ai-extract-reference",
+      "resolution": "Teachcorrectgranularity andlabeledprecision/coverage insteadofscoreascorrectness."
+    },
+    {
+      "id": "gesc02-deep-11",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "No extra score charge does not make extraction free",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-05-22-ai-extract-scores-ga",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "GES-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "May22GA includesfine-tunedmodels andscoresnoadditionalcost.",
+      "recommendation": "Separatescoreincrementfromunderlyingconsumption andavoidprobabilityguarantee.",
+      "disposition": "applied",
+      "source_id": "snowflake-extract-scores-ga",
+      "resolution": "Separatescoreincrementfromunderlyingconsumption andavoidprobabilityguarantee."
+    },
+    {
+      "id": "gesc02-deep-12",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "New evaluation is preview and needs validated labels",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-21-ai-function-evaluation-preview",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "GES-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "September21publicpreview includesquality/token/costandrule/judge/UDFmetrics.",
+      "recommendation": "Labelpreview;recorddataset/labels/configuration andhumanrubricreview.",
+      "disposition": "applied",
+      "source_id": "snowflake-ai-evaluation-preview",
+      "resolution": "Labelpreview;recorddataset/labels/configuration andhumanrubricreview."
+    },
+    {
+      "id": "gesc02-deep-13",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "UI model visibility differs from supported API and inference privileges",
+      "url": "https://docs.snowflake.com/en/developer-guide/snowflake-ml/model-registry/overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GES-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "USAGEwarehousevsREADcontainer/metadata;Cortexfine-tunedUIentriesnotmanagedviaRegistryAPI.",
+      "recommendation": "Checkmodeltype/inferencepath andleastprivilegebeforedeployment.",
+      "disposition": "applied",
+      "source_id": "snowflake-model-registry",
+      "resolution": "Checkmodeltype/inferencepath andleastprivilegebeforedeployment."
+    },
+    {
+      "id": "gesc02-deep-14",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Finite jobs do not inherit long-running restart semantics",
+      "url": "https://docs.snowflake.com/en/developer-guide/snowpark-container-services/overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GES-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Jobcontainersdonotautomaticallyrestart;servicesrestart exitedcontainers.",
+      "recommendation": "Teachcheckpoint/retryandcompletebundle rollback asproposedlab.",
+      "disposition": "applied",
+      "source_id": "snowflake-spcs-overview",
+      "resolution": "Teachcheckpoint/retryandcompletebundle rollback asproposedlab."
+    },
+    {
+      "id": "gesc02-deep-15",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A narrow permission change can leave broad function access",
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql-privileges-and-access",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GES-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "BlanketORperfunctiongrants plusroles/modelgate;featureexceptionsmatter.",
+      "recommendation": "TeachordinaryAI_COMPLETEpath andauditinheritedpermissions,notuniversalgrantrecipe.",
+      "disposition": "applied",
+      "source_id": "snowflake-ai-function-access",
+      "resolution": "TeachordinaryAI_COMPLETEpath andauditinheritedpermissions,notuniversalgrantrecipe."
+    }
+  ],
+  "blog_intake": [],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 43,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "dba16bf37db0130fc184f0e34c648495f1bb3876cbb19b8f7cf78a389376b221",
+      "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+      "execution_stdout": "{\"accepted_coverage\": \"1/2\", \"accepted_precision\": \"1/2\", \"published_versions\": {\"policy-A\": 3, \"policy-B\": 1}, \"remaining_chunks\": 1}\n43 local checks passed",
+      "results": {
+        "accepted_coverage": "1/2",
+        "accepted_precision": "1/2",
+        "published_versions": {
+          "policy-A": 3,
+          "policy-B": 1
+        },
+        "remaining_chunks": 1
+      },
+      "execution_boundary": "Actual standard-library in-memorySQLite controlled publication/access/cache/citation and synthetic score fixtures. NoSnowflake,LLM,parser,search,embeddings,network,credentials orcloudworkload.",
+      "model_limits": "Singleconnection,controlledfixtures,trustedcaller/admin,manualranks/onequery,noapproval/authentication/concurrency/crashdurability/distributedcache/external-effects guarantee. Hashidentity notauthentication;citationprovenance notentailment;opaquehostiletext notLLMinjectiontest;fourinventedscoretuples notproductionquality."
+    }
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "Only four public abilities are mapped; the detailed guide remains form-restricted. The actual five-page training PDF supports learning, not exam weights or duration.",
+    "Eight cloud labs and three scenarios remain proposed; independent human review is pending. No Snowflake SQL/API, model, parser, Search, container or GPU lab was executed.",
+    "The 43 Python/SQLite checks use one connection, controlled fixtures, trusted callers and a fixed manually ranked query. They do not test authentication, approval, concurrency, crash durability, distributed caches or external effects; SQLite key enforcement differs from standard Snowflake tables.",
+    "Citation checks verify current access and provenance, not semantic entailment. Opaque hostile text does not test model resistance to injection. Four invented extraction fixtures illustrate gate errors, not production quality.",
+    "Search service access, actual agent identity and serving version need account verification. Client filters alone are insufficient; agent prechecks do not cover every tool or underlying data permission.",
+    "Per-source notes distinguish selected sections from complete main pages. The entire linked documentation catalog was not audited. Phased bundle, preview and notebook notices do not prove account availability.",
+    "Two Udemy pages returned HTTP 403; old revision and duration metadata is unverified. Public training metadata and the PDF do not establish paid lesson quality. No forms, questions, enrollment or trial accounts were accessed.",
+    "The five reserved GitHub guides and disabled notification pilot remain untouched. No external messages, service/authentication/logging/alert changes or new permissions occurred."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Repository/site gates plus43 actual localSQLite publication/access/cache/citation and synthetic score checks;noSnowflake/model/parser/Search/infrastructurelab executed.",
+    "passed": 43,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "dba16bf37db0130fc184f0e34c648495f1bb3876cbb19b8f7cf78a389376b221",
+    "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "execution_stdout": "{\"accepted_coverage\": \"1/2\", \"accepted_precision\": \"1/2\", \"published_versions\": {\"policy-A\": 3, \"policy-B\": 1}, \"remaining_chunks\": 1}\n43 local checks passed",
+    "results": {
+      "accepted_coverage": "1/2",
+      "accepted_precision": "1/2",
+      "published_versions": {
+        "policy-A": 3,
+        "policy-B": 1
+      },
+      "remaining_chunks": 1
+    },
+    "model_limits": "Singleconnection,controlledfixtures,trustedcaller/admin,manualranks/onequery,noapproval/authentication/concurrency/crashdurability/distributedcache/external-effects guarantee. Hashidentity notauthentication;citationprovenance notentailment;opaquehostiletext notLLMinjectiontest;fourinventedscoretuples notproductionquality.",
+    "learning_catalog_consistency": "passed"
+  },
+  "actual_pdf_receipts": [
+    {
+      "id": "snowflake-genai-training-datasheet",
+      "url": "https://www.snowflake.com/wp-content/uploads/2024/11/standard_genai_datasheet_24J23.pdf",
+      "checked_at": "2026-09-29T11:31:42.110585+00:00",
+      "health": {
+        "id": "snowflake-genai-training-datasheet",
+        "url": "https://www.snowflake.com/wp-content/uploads/2024/11/standard_genai_datasheet_24J23.pdf",
+        "checked_at": "2026-09-29T11:31:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.snowflake.com/wp-content/uploads/2024/11/standard_genai_datasheet_24J23.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.snowflake.com/wp-content/uploads/2024/11/standard_genai_datasheet_24J23.pdf",
+      "sha256": "b6216577448aeaadd4b69c55ef29b58ec090a497ee289ce5895845f31e7f5cda",
+      "bytes": 692008,
+      "pdf_pages": 5,
+      "text_characters": 3515
+    }
+  ],
+  "public_ability_groups": [
+    {
+      "title": "Define and implement Snowflake Gen AI principles, capabilities, and best practices",
+      "objectives": [
+        "Define and implement Snowflake Gen AI principles, capabilities, and best practices"
+      ]
+    },
+    {
+      "title": "Use Snowflake Cortex AI features and functions, including LLMs, to meet customer use cases",
+      "objectives": [
+        "Use Snowflake Cortex AI features and functions, including LLMs, to meet customer use cases"
+      ]
+    },
+    {
+      "title": "Build and fine-tune open-source models with Snowpark Container Services and Snowflake Model Registry",
+      "objectives": [
+        "Build and fine-tune open-source models with Snowpark Container Services and Snowflake Model Registry"
+      ]
+    },
+    {
+      "title": "Use Snowflake document processing functions to build, manage, and optimize document parsing pipelines",
+      "objectives": [
+        "Use Snowflake document processing functions to build, manage, and optimize document parsing pipelines"
+      ]
+    }
+  ],
+  "lifecycle_initialization_receipt": {
+    "changed": [
+      "GES-C02"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "GES-C02",
+        "title": "SnowPro Specialty: Gen AI",
+        "url": "https://learn.snowflake.com/en/certifications/snowpro-GenAI-C02/",
+        "guide_path": "guides/GES-C02-snowpro-specialty-gen-ai.md",
+        "snapshot_path": "data\\objective-snapshots\\ges-c02-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ges-c02-official-status.json",
+        "previous_sha256": "c6dcc5ab29e74f1ba7c2778039589727d42e249a5b732ff57bbbd323cf002a25",
+        "current_sha256": "c6dcc5ab29e74f1ba7c2778039589727d42e249a5b732ff57bbbd323cf002a25",
+        "previous_status_sha256": null,
+        "current_status_sha256": "b565c133e609b421cbbfc40fe150e7b6e30375fb9cea2a1aaef4f867e3c34dad",
+        "official_status": {
+          "skills_versions": [
+            "GES-C02",
+            "1 or more years of Gen AI experience with Snowflake, in an enterprise environment."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "status_written": true,
+        "written": true
+      }
+    ]
+  },
+  "post_initialization_monitor": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "GES-C02",
+        "title": "SnowPro Specialty: Gen AI",
+        "url": "https://learn.snowflake.com/en/certifications/snowpro-GenAI-C02/",
+        "guide_path": "guides/GES-C02-snowpro-specialty-gen-ai.md",
+        "snapshot_path": "data\\objective-snapshots\\ges-c02-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ges-c02-official-status.json",
+        "previous_sha256": "c6dcc5ab29e74f1ba7c2778039589727d42e249a5b732ff57bbbd323cf002a25",
+        "current_sha256": "c6dcc5ab29e74f1ba7c2778039589727d42e249a5b732ff57bbbd323cf002a25",
+        "previous_status_sha256": "b565c133e609b421cbbfc40fe150e7b6e30375fb9cea2a1aaef4f867e3c34dad",
+        "current_status_sha256": "b565c133e609b421cbbfc40fe150e7b6e30375fb9cea2a1aaef4f867e3c34dad",
+        "official_status": {
+          "skills_versions": [
+            "GES-C02",
+            "1 or more years of Gen AI experience with Snowflake, in an enterprise environment."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "objective_scope_boundary": "Four unchanged public abilities. Actual five-page26F15role-training outline supports learning but is not detailed exam blueprint. No form submitted,weights or duration inferred.",
+  "preserved_objective_sha256": "c6dcc5ab29e74f1ba7c2778039589727d42e249a5b732ff57bbbd323cf002a25",
+  "release_intake": [
+    {
+      "source_id": "snowflake-analyst-transition",
+      "observation": "Entire main August28recommendation read;existing Analyst REST remainsavailable."
+    },
+    {
+      "source_id": "snowflake-agent-objects-sep2026",
+      "observation": "Entire main September16GA read;secure specificationmetadata differsfromdata/toolaccess."
+    },
+    {
+      "source_id": "snowflake-extract-scores-ga",
+      "observation": "Entire main May22GA read;fine-tuned extraction support/noextrascorecharge notfreeextraction."
+    },
+    {
+      "source_id": "snowflake-ai-evaluation-preview",
+      "observation": "Entire main September21publicpreview read;notGA/accountavailability/evaluationexecutionproof."
+    }
+  ],
+  "catalog_metadata_observations": {
+    "official_training_pdf_pages": 5,
+    "official_training_pdf_code": "26F15",
+    "official_training_pdf_copyright": 2026,
+    "official_training_url_filename": "standard_genai_datasheet_24J23.pdf",
+    "official_training_days": 2,
+    "official_live_hours": 16,
+    "official_training_teaching_areas": 14,
+    "specialty_catalog_price_usd": 225,
+    "udemy_masterclass": "HTTP403;old20h34m/May2026unverified",
+    "udemy_agents": "HTTP403;old5h21m/August2026unverified"
+  },
+  "catalog_findings": [
+    {
+      "source_id": "udemy-snowflake-cortex-masterclass",
+      "observation": "Current catalog HTTP403;earlier duration/revision unverified.",
+      "resolution": "Remove current-quality/freshness endorsement;retain explicit blockedaccess andno paidlessonreview boundary."
+    },
+    {
+      "source_id": "udemy-snowflake-cortex-code-search-agents",
+      "observation": "Current catalog HTTP403;earlier duration/revision unverified.",
+      "resolution": "Remove current-quality/freshness endorsement;retain explicit blockedaccess andno paidlessonreview boundary."
+    }
+  ]
+}
