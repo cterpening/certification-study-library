@@ -897,6 +897,8 @@ The review reconciles the detailed March 1, 2025 live-version PDF with the curre
 
 ## Databricks Data Engineer Professional coverage record
 
+The September 28 [deep review](research/2026-09-28-databricks-data-engineer-professional-deep-review.md) maps 45 detailed objectives. Mapped 45 detailed objectives; filled serverless retry-control gap, clarified CDC sequencing/backfill, two-sink recovery and physical purge, and repaired silent fact loss in the aggregate example. Added five original failure cases and ten answered checks. Current guide citations: 38 registered, 35 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Developing Code for Data Processing using Python and SQL | Section 1, all integrated scenarios, and Labs 1–3 and 8 |

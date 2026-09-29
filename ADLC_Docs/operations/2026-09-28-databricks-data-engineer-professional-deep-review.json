@@ -1,0 +1,2195 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/DATABRICKS-DATA-ENGINEER-PROFESSIONAL-databricks-data-engineer-professional.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "30f1cf6cde5b527ed0cb1f599b869681258f5d199c42ac66395a315a638221e4",
+  "guide_after_sha256": "9c0b836cbfd4b21015adeb36685ef909827dd2f2a63061815c1b4a9152392bcc",
+  "prior_records": {
+    "exam": {
+      "code": "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+      "level": "expert",
+      "vendor_id": "databricks",
+      "title": "Databricks Certified Data Engineer Professional",
+      "status": "active",
+      "study_guide_url": "https://www.databricks.com/learn/certification/data-engineer-professional",
+      "guide_path": "guides/DATABRICKS-DATA-ENGINEER-PROFESSIONAL-databricks-data-engineer-professional.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; the official guide highly recommends related training and one year of hands-on production data-engineering experience across Python/SQL/Spark, batch and streaming pipelines, CDC, orchestration, testing, sharing/federation, observability, cost/performance, privacy/governance, CI/CD and dimensional modeling."
+    },
+    "review": {
+      "id": "databricks-data-engineer-professional-2026-09-01-source-validation",
+      "exam_code": "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+      "guide_path": "guides/DATABRICKS-DATA-ENGINEER-PROFESSIONAL-databricks-data-engineer-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/databricks-data-engineer-professional-official-objectives.txt",
+      "blueprint_snapshot_sha256": "5c0abb75889e84a3f4b06c9ccf1d0598cf18b5e5edfaaa10e0b41b198fdd8c08",
+      "objective_coverage": [
+        {
+          "objective_group": "Developing Code for Data Processing using Python and SQL",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Data Ingestion & Acquisition",
+          "guide_sections": [
+            "Section 2",
+            "Regulated-events scenario",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Data Transformation, Cleansing, and Quality",
+          "guide_sections": [
+            "Section 3",
+            "Regulated-events scenario",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Data Sharing and Federation",
+          "guide_sections": [
+            "Section 4",
+            "Shared-supply-data scenario",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Monitoring and Alerting",
+          "guide_sections": [
+            "Section 5",
+            "Failing-pipeline scenario",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Cost & Performance Optimisation",
+          "guide_sections": [
+            "Section 6",
+            "Failing-pipeline scenario",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Ensuring Data Security and Compliance",
+          "guide_sections": [
+            "Section 7",
+            "Regulated-events scenario",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Data Governance",
+          "guide_sections": [
+            "Section 8",
+            "All integrated scenarios",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Debugging and Deploying",
+          "guide_sections": [
+            "Section 9",
+            "Failing-pipeline scenario",
+            "Lab 8"
+          ]
+        },
+        {
+          "objective_group": "Data Modelling",
+          "guide_sections": [
+            "Section 10",
+            "Regulated-events scenario",
+            "Labs 3 and 6"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 30,
+        "reachable": 28,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "The July 3, 2026 detailed live-version PDF and current ten-domain weighted page were reconciled. Every objective maps to production code/configuration, data/state, identity, quality, observability, cost/performance, privacy, deployment, failure and recovery evidence. Three scenarios, eight labs and 37 original checks cover modular Python/bundles/dependencies/UDFs/tests; batch/stream acquisition; Lakeflow/Structured Streaming/AUTO CDC/control flow; transformations/quarantine; D2D/open sharing and federation; system tables/profiles/Spark/event/API evidence and alerts; managed-table maintenance/deletion vectors/skipping/clustering/CDF; layered access/privacy/purge; metadata/inheritance; repair/CI/CD; and Delta/dimensional modeling. All 30 guide URLs are cataloged: 28 reachable and O'Reilly/Udemy searches automation-blocked; none missing or broken. Commercial entries are discovery routes rather than claimed complete current courses, and retired vendor sample questions are linked rather than reproduced."
+    },
+    "sources": [
+      {
+        "id": "dp-750-databricks-youtube-channel",
+        "title": "Databricks YouTube channel",
+        "url": "https://www.youtube.com/@Databricks",
+        "publisher": "Databricks",
+        "authority_class": 3,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750",
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+          "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+          "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+        ]
+      },
+      {
+        "id": "databricks-dea-platform-docs",
+        "title": "Databricks documentation introduction",
+        "url": "https://docs.databricks.com/aws/en/introduction/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Current first-party platform documentation; cloud-specific details must be checked in the practiced cloud."
+      },
+      {
+        "id": "databricks-dea-liquid-clustering",
+        "title": "Use liquid clustering for tables",
+        "url": "https://docs.databricks.com/aws/en/delta/clustering",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Current liquid and automatic clustering guidance; runtime support is volatile."
+      },
+      {
+        "id": "databricks-dea-predictive-optimization",
+        "title": "Predictive optimization for Unity Catalog managed tables",
+        "url": "https://docs.databricks.com/aws/en/optimizations/predictive-optimization",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Current managed-table maintenance behavior and prerequisites."
+      },
+      {
+        "id": "databricks-dea-jobs-control-flow",
+        "title": "Control the flow of tasks within Lakeflow Jobs",
+        "url": "https://docs.databricks.com/aws/en/jobs/control-flow",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Retries, dependency outcomes, if/else and for-each control flow."
+      },
+      {
+        "id": "databricks-dea-bundles",
+        "title": "What are Declarative Automation Bundles?",
+        "url": "https://docs.databricks.com/aws/en/dev-tools/bundles/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+        ],
+        "notes": "Current name for the capability formerly known as Databricks Asset Bundles; covers project structure, resources, targets and CLI lifecycle."
+      },
+      {
+        "id": "databricks-dea-cicd",
+        "title": "CI/CD on Databricks",
+        "url": "https://docs.databricks.com/aws/en/dev-tools/ci-cd/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Current Git-folder, job-Git and Declarative Automation Bundle delivery choices."
+      },
+      {
+        "id": "databricks-dea-uc-access-control",
+        "title": "Access control in Unity Catalog",
+        "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Privileges, ownership, ABAC, table controls and workspace-binding decision map."
+      },
+      {
+        "id": "databricks-dea-uc-privileges",
+        "title": "Unity Catalog privileges and securable objects",
+        "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/manage-privileges/privileges",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Current privilege hierarchy and action reference."
+      },
+      {
+        "id": "databricks-dea-academy",
+        "title": "Databricks Academy",
+        "url": "https://customer-academy.databricks.com/",
+        "publisher": "Databricks",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+          "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+          "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE",
+          "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+        ],
+        "notes": "Hosts official self-paced learning; catalog and entitlements can differ for customer, partner and individual accounts."
+      },
+      {
+        "id": "databricks-dea-free-edition",
+        "title": "Databricks Free Edition",
+        "url": "https://www.databricks.com/learn/free-edition",
+        "publisher": "Databricks",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+          "DATABRICKS-MACHINE-LEARNING-ASSOCIATE"
+        ],
+        "notes": "No-cost hands-on environment; feature, capacity and region limitations apply."
+      },
+      {
+        "id": "databricks-daa-federation",
+        "title": "Lakehouse Federation",
+        "url": "https://docs.databricks.com/aws/en/query-federation/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Current connection, foreign-catalog, pushdown and cross-system query model."
+      },
+      {
+        "id": "databricks-dep-blueprint",
+        "title": "Databricks Certified Data Engineer Professional",
+        "url": "https://www.databricks.com/learn/certification/data-engineer-professional",
+        "publisher": "Databricks",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Canonical live ten-domain weighted coverage and assessment-details page; monitored by the Databricks certification adapter."
+      },
+      {
+        "id": "databricks-dep-exam-guide-jul-2026",
+        "title": "Databricks Certified Data Engineer Professional exam guide — July 3, 2026",
+        "url": "https://www.databricks.com/sites/default/files/2026-07/databricks-certified-data-engineer-professional-exam-guide-july-3-2026.pdf",
+        "publisher": "Databricks",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Detailed official live-version objective baseline and original retired vendor sample questions."
+      },
+      {
+        "id": "databricks-dep-libraries",
+        "title": "Libraries",
+        "url": "https://docs.databricks.com/aws/en/libraries/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Current compute, task and notebook dependency installation and compatibility guidance."
+      },
+      {
+        "id": "databricks-dep-pandas-udf",
+        "title": "Pandas user-defined functions",
+        "url": "https://docs.databricks.com/aws/en/udf/pandas",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Current Arrow/vectorized Pandas UDF behavior, type and execution boundaries."
+      },
+      {
+        "id": "databricks-dep-ldp",
+        "title": "Lakeflow Spark Declarative Pipelines",
+        "url": "https://docs.databricks.com/aws/en/ldp/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Current name and data-flow, update, quality and observability model formerly associated with Delta Live Tables."
+      },
+      {
+        "id": "databricks-dep-structured-streaming",
+        "title": "Structured Streaming concepts",
+        "url": "https://docs.databricks.com/aws/en/structured-streaming/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Current source, sink, checkpoint, trigger, watermark and production streaming guidance."
+      },
+      {
+        "id": "databricks-dep-auto-cdc",
+        "title": "AUTO CDC APIs",
+        "url": "https://docs.databricks.com/aws/en/ldp/cdc",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Current replacement for APPLY CHANGES with keys, sequencing, delete and SCD semantics."
+      },
+      {
+        "id": "databricks-dep-pyspark-testing",
+        "title": "Testing PySpark",
+        "url": "https://spark.apache.org/docs/latest/api/python/getting_started/testing_pyspark.html",
+        "publisher": "Apache Spark",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Upstream built-in DataFrame and schema equality testing guidance."
+      },
+      {
+        "id": "databricks-dep-spark-data-sources",
+        "title": "Spark SQL data sources",
+        "url": "https://spark.apache.org/docs/latest/sql-data-sources.html",
+        "publisher": "Apache Spark",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Upstream formats and data-source behavior; Databricks runtime documentation controls platform-specific support."
+      },
+      {
+        "id": "databricks-dep-delta-sharing",
+        "title": "Delta Sharing",
+        "url": "https://docs.databricks.com/aws/en/delta-sharing/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Current D2D and open-protocol provider/share/recipient architecture."
+      },
+      {
+        "id": "databricks-dep-system-tables",
+        "title": "System tables",
+        "url": "https://docs.databricks.com/aws/en/admin/system-tables/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Current account/workspace observability schemas; availability, retention and schema are volatile."
+      },
+      {
+        "id": "databricks-dep-event-log",
+        "title": "Pipeline event log",
+        "url": "https://docs.databricks.com/aws/en/ldp/monitor-event-logs",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Current update, flow, expectation, progress and error evidence for Lakeflow pipelines."
+      },
+      {
+        "id": "databricks-dep-job-notifications",
+        "title": "Add notifications to a job",
+        "url": "https://docs.databricks.com/aws/en/jobs/notifications",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Current job event and destination configuration; supported destinations are volatile."
+      },
+      {
+        "id": "databricks-dep-deletion-vectors",
+        "title": "Deletion vectors",
+        "url": "https://docs.databricks.com/aws/en/delta/deletion-vectors",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Current row-level change acceleration, compatibility and materialization behavior."
+      },
+      {
+        "id": "databricks-dep-cdf",
+        "title": "Change Data Feed",
+        "url": "https://docs.databricks.com/aws/en/delta/delta-change-data-feed",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Current enablement, row-change and retention boundaries for incremental consumers."
+      },
+      {
+        "id": "databricks-dep-job-repair",
+        "title": "Repair an unsuccessful job run",
+        "url": "https://docs.databricks.com/aws/en/jobs/repair-job-failures",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Current failed/skipped/dependent task repair and parameter-override behavior; successful side effects are not rolled back."
+      },
+      {
+        "id": "databricks-dep-whizlabs",
+        "title": "Databricks Certified Data Engineer Professional training and practice",
+        "url": "https://www.whizlabs.com/databricks-certified-data-engineer-professional/",
+        "publisher": "Whizlabs",
+        "authority_class": 4,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Training/practice product verified by title; stable public totals were not exposed, so verify July 2026 alignment after sign-in and avoid recalled-question claims."
+      },
+      {
+        "id": "databricks-dep-udemy-search",
+        "title": "Udemy search — Databricks Data Engineer Professional",
+        "url": "https://www.udemy.com/courses/search/?q=databricks%20data%20engineer%20professional",
+        "publisher": "Udemy",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Marketplace discovery only; verify instructor, update date, full July 2026 outline and lab depth, and reject dump-oriented listings."
+      },
+      {
+        "id": "databricks-dep-oreilly-search",
+        "title": "O'Reilly search — Databricks data engineering",
+        "url": "https://www.oreilly.com/search/?q=Databricks%20data%20engineering",
+        "publisher": "O'Reilly Media",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Catalog discovery rather than a verified complete certification course; select current chapters/events and map them to the official guide."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "6d0b5f28d1fd9594846d27e6cd7ae1d2315b0c0ba7ef8fb301dffc1249e11f5e",
+      "guide_sections": [
+        "1. Developing code for data processing using Python and SQL (22%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "b92d74e97ecaf6c758a2042959322a51d832c5c697e9a174724b5d2ea9279b1e",
+      "guide_sections": [
+        "1. Developing code for data processing using Python and SQL (22%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "3e093a37c86ba3cc6616a06b01faf801ab82e904b2eb43a4e934fb75b7cb0f50",
+      "guide_sections": [
+        "1. Developing code for data processing using Python and SQL (22%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "e4c0572042afdc2acffa2b7be4e4cbbea373ace35b48f78c9c203df687a40104",
+      "guide_sections": [
+        "1. Developing code for data processing using Python and SQL (22%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "39a81620e9139b5239c9ffbc9e68d146202a8d466d58c3a32c0d835f89eeb1af",
+      "guide_sections": [
+        "1. Developing code for data processing using Python and SQL (22%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "4e8e05b4bfb742a0164863989c17fc7d289a30862260fc8e7131448a99eb2bc5",
+      "guide_sections": [
+        "1. Developing code for data processing using Python and SQL (22%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "a0a8f904957f692c69d8c218c30b07e9662806de93f96c26f3a316b6255af189",
+      "guide_sections": [
+        "1. Developing code for data processing using Python and SQL (22%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "c2b70c48199d6087f2fee1ffea31cc5acfb1a6699b4ef2e13a1907f55187ce2d",
+      "guide_sections": [
+        "1. Developing code for data processing using Python and SQL (22%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "c5524f8d10d77f91b70fb92c95531233653a95672a28b0ff92b1eedfdc7c7424",
+      "guide_sections": [
+        "1. Developing code for data processing using Python and SQL (22%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "79c427dbf4484c06d6d46ee2b3c39ce0477817444a96e9ace6829d8788f354c1",
+      "guide_sections": [
+        "1. Developing code for data processing using Python and SQL (22%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 11,
+      "objective_sha256": "10a4f8f12c2dcbacfb5294b4bdd6c60f249d3e1c1b0675618c55d75eb18d323a",
+      "guide_sections": [
+        "1. Developing code for data processing using Python and SQL (22%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "9fb3d51ce955caea49dac9d8adc15e9f9695cb9c500cc292dec1dafdaa4c0b20",
+      "guide_sections": [
+        "2. Data ingestion and acquisition (7%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "5046258a50f1bc95314b46de21ea4833e8c93cbdfb3166573293008a1e3b794f",
+      "guide_sections": [
+        "2. Data ingestion and acquisition (7%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "8c797a718dafa58644b012fba0818342aec4478499c562fcd9cc6505e3926812",
+      "guide_sections": [
+        "3. Transformation, cleansing and quality (10%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "2f3db843ba92e5c7bd1a771b6d9f0efda5ab0eb3db1ac257ac10f17ddf2f8686",
+      "guide_sections": [
+        "3. Transformation, cleansing and quality (10%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "05080cc5d86ed667b8f2c4631ae27c6f9b7c397b684d9527252aed5468fcab25",
+      "guide_sections": [
+        "4. Data sharing and federation (5%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "105c7840311e42780fdd73139d2fc4a85bf730f9a33eff1ab805a1e6622f133a",
+      "guide_sections": [
+        "4. Data sharing and federation (5%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "9205cebed4a7a0884e77c729b359a09df00c7a2c9941d9e993fa89ec288e9849",
+      "guide_sections": [
+        "4. Data sharing and federation (5%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "05e72be2866fa22b23876dabc7d4ada4beeb28f969ba36bffba91f9b6a13ae35",
+      "guide_sections": [
+        "5. Monitoring and alerting (10%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "ef639dd33ed2bed91ce2b79957ff5800122cc81036234aa2a141c3a6c41426f9",
+      "guide_sections": [
+        "5. Monitoring and alerting (10%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "7677d82b9749e21a00e906494bf92370d40a65dfdcc0b8b29e14fb5fe1b7af66",
+      "guide_sections": [
+        "5. Monitoring and alerting (10%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "66c53bb0a665b98d1ce3d3f1c991b68bf14dd86161ae369da88a16ec71e561d0",
+      "guide_sections": [
+        "5. Monitoring and alerting (10%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "faf040a8f4e65a8156bb2d5ad07cf96c88ff7309234822d7c943e70808d3b3bf",
+      "guide_sections": [
+        "5. Monitoring and alerting (10%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "6505fb146ff13b4cdc1f6d57f49d09cda025fc42dd1cc454d90c6dddb286d734",
+      "guide_sections": [
+        "5. Monitoring and alerting (10%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "1ca5eda6e889b186dc5197bd4c0ef88770994a5fb0b2d20c6393e981213fc991",
+      "guide_sections": [
+        "6. Cost and performance optimisation (13%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "6484f6108b2247a70fa102df5341ad0c0fcb16bb84763eabcd5a586b6c299ca9",
+      "guide_sections": [
+        "6. Cost and performance optimisation (13%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "09eeb1c9b86d3d7a3e02a4d2dda78d85cb4edf580f83a24763d2ee0a9da58c86",
+      "guide_sections": [
+        "6. Cost and performance optimisation (13%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "477079ab6502c9a2ca7d72198dcbc2384c493a399cecd60329ca75baec65fef0",
+      "guide_sections": [
+        "6. Cost and performance optimisation (13%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "931dfe3f77ae1d4292fb996b38e2a91cba518e5fb0cf06ff3d4f3daed37ee704",
+      "guide_sections": [
+        "6. Cost and performance optimisation (13%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "fcae9695e166c0b6912d9d33ec3f5b3e11bb957d69a9e9be2e04282ee14d9c8f",
+      "guide_sections": [
+        "7. Ensuring data security and compliance (10%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "d6ce2900797c12391f8aae298bdd28e7a67780176855805796a257c8909b5350",
+      "guide_sections": [
+        "7. Ensuring data security and compliance (10%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "fb4eff1233b3654cdf88f88e35f4dfacfe5db44461c83feab38829fdbf705264",
+      "guide_sections": [
+        "7. Ensuring data security and compliance (10%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "ba3e38c7468a86061ad9ea535037c6569788bb16ca49d18d112d5c00e825dbcd",
+      "guide_sections": [
+        "7. Ensuring data security and compliance (10%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "43badab1372eb573681448748e5f544db3c5dbf8bd99b838263789a01f634599",
+      "guide_sections": [
+        "7. Ensuring data security and compliance (10%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "3df3856e54b6ee5c161572436b4b3e78c622ff26d27bd900dbfdffa35fe46c9d",
+      "guide_sections": [
+        "8. Data governance (7%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "23a1b099c2694d649383cce479a3dd92fc21e14ea9ebc4127cf41aba5e34885b",
+      "guide_sections": [
+        "8. Data governance (7%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "d3d706c2c30996bed473009b2a908ce0f246baec6a767161fc9c5212f98bb8ec",
+      "guide_sections": [
+        "9. Debugging and deploying (10%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "766160da1bfaaa8b3948f408d735809baaadbb893e0855993ad570fdb32f8abc",
+      "guide_sections": [
+        "9. Debugging and deploying (10%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "f27fb5789025adc03e4ab46f787017f7a17bbf74fd74f71191dbdd8e1345902b",
+      "guide_sections": [
+        "9. Debugging and deploying (10%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "445c5a6a2a95f5863760fc3b9396ac8f1ffa7d2f392eb2dcb368947b9b424790",
+      "guide_sections": [
+        "9. Debugging and deploying (10%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "d5549ea234d713389d103ebaf7983fceaf968ae1df2f4def584d5be765c9bd76",
+      "guide_sections": [
+        "9. Debugging and deploying (10%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "a915492bd55715e45fc7d094b3c8c10fdeaf490dfe1f4340197330b876a62215",
+      "guide_sections": [
+        "10. Data modelling (6%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "75ceacdfa3a6c6e91fc1d7ced5ae18fbfa454e6c737ae7934b200134c85f63f9",
+      "guide_sections": [
+        "10. Data modelling (6%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "170aab68f72bd7d210fd18a756affc02cc5c63244603825a2e32455e559b3a9e",
+      "guide_sections": [
+        "10. Data modelling (6%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "8e7759151a7a02f352d95b7192e12deaa8e3d13119ede27f5059cde03d64d854",
+      "guide_sections": [
+        "10. Data modelling (6%)",
+        "Worked failure cases and diagnostic answers",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+        "title": "Databricks Certified Data Engineer Professional",
+        "url": "https://www.databricks.com/learn/certification/data-engineer-professional",
+        "guide_path": "guides/DATABRICKS-DATA-ENGINEER-PROFESSIONAL-databricks-data-engineer-professional.md",
+        "snapshot_path": "data\\objective-snapshots\\databricks-data-engineer-professional-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\databricks-data-engineer-professional-official-status.json",
+        "previous_sha256": "5c0abb75889e84a3f4b06c9ccf1d0598cf18b5e5edfaaa10e0b41b198fdd8c08",
+        "current_sha256": "5c0abb75889e84a3f4b06c9ccf1d0598cf18b5e5edfaaa10e0b41b198fdd8c08",
+        "previous_status_sha256": "18aa9c15ba0fac535970f8ef165c82f3dab9634f7ff086459330d811a4579229",
+        "current_status_sha256": "18aa9c15ba0fac535970f8ef165c82f3dab9634f7ff086459330d811a4579229",
+        "official_status": {
+          "skills_versions": [
+            "Databricks Certified Data Engineer Professional — public certification page",
+            "Type: Proctored certification",
+            "Total number of scored questions: 59",
+            "Time limit: 120 minutes",
+            "Question types: Multiple choice",
+            "Languages: English, 日本語, Português BR, 한국어",
+            "Delivery Method: Online or test center",
+            "Recommended experience: hands-on experience performing the data engineering tasks outlined in the exam guide.",
+            "Validity period: 2 years"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 38,
+    "reachable": 35,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "dp-750-databricks-youtube-channel",
+      "url": "https://www.youtube.com/@Databricks",
+      "checked_at": "2026-09-29T00:45:00.390057+00:00",
+      "health": {
+        "id": "dp-750-databricks-youtube-channel",
+        "url": "https://www.youtube.com/@Databricks",
+        "checked_at": "2026-09-29T00:45:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@Databricks",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Databricks",
+        "canonical_url": "https://www.youtube.com/channel/UC3q8O3Bh2Le8Rj1-Q-_UUbA",
+        "duration_signals": [],
+        "signal_fingerprint": "17f4cde1f56732213a2396da2e6df783f4f0ee10a774ee38679645ec7ff9927b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@Databricks",
+      "sha256": "7fdb35dc719d6ba523d2f8845dd3020e82d7437b2a09f6f13085c47016a4e58b",
+      "text_characters": 173
+    },
+    {
+      "id": "databricks-dea-platform-docs",
+      "url": "https://docs.databricks.com/aws/en/introduction/",
+      "checked_at": "2026-09-29T00:45:00.390872+00:00",
+      "health": {
+        "id": "databricks-dea-platform-docs",
+        "url": "https://docs.databricks.com/aws/en/introduction/",
+        "checked_at": "2026-09-29T00:45:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/introduction/",
+        "content_type": "text/html",
+        "page_title": "What is Databricks? | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/introduction/",
+        "duration_signals": [],
+        "signal_fingerprint": "ea1883da7311bc9a4a7f21e88ef2b3c9e0aeac89eb28af1977c27c685df83ed7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/introduction/",
+      "sha256": "0d6edf714d3b7e756419567a9d49e9229672c725d3f5cf4c429776f12ab330f3",
+      "text_characters": 8272
+    },
+    {
+      "id": "databricks-dea-liquid-clustering",
+      "url": "https://docs.databricks.com/aws/en/delta/clustering",
+      "checked_at": "2026-09-29T00:45:00.391479+00:00",
+      "health": {
+        "id": "databricks-dea-liquid-clustering",
+        "url": "https://docs.databricks.com/aws/en/delta/clustering",
+        "checked_at": "2026-09-29T00:45:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/tables/clustering",
+        "content_type": "text/html",
+        "page_title": "Use liquid clustering for tables | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/tables/clustering",
+        "duration_signals": [],
+        "signal_fingerprint": "d79b1606e5b15e77e5ee807cc5acc8194e23375e0bd801480f0bc62883f054fa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/tables/clustering",
+      "sha256": "0932cede1bb14797b4e5e4266fa04e6b4e7896fc7334a488f4d57c86e96aed86",
+      "text_characters": 39122
+    },
+    {
+      "id": "databricks-dea-predictive-optimization",
+      "url": "https://docs.databricks.com/aws/en/optimizations/predictive-optimization",
+      "checked_at": "2026-09-29T00:45:02.454107+00:00",
+      "health": {
+        "id": "databricks-dea-predictive-optimization",
+        "url": "https://docs.databricks.com/aws/en/optimizations/predictive-optimization",
+        "checked_at": "2026-09-29T00:45:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/optimizations/predictive-optimization",
+        "content_type": "text/html",
+        "page_title": "Predictive optimization for Unity Catalog managed tables | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/optimizations/predictive-optimization",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "16e4ac0e2df64f72b642f50dc537692cbd8700f51ef2d2cb7241bb7948b2ea51",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/optimizations/predictive-optimization",
+      "sha256": "d27898e80765e4f8d1b64a7d2c47cbbcb51cfd03f1f12acc61883a8b2ddbebed",
+      "text_characters": 10924
+    },
+    {
+      "id": "databricks-dea-jobs-control-flow",
+      "url": "https://docs.databricks.com/aws/en/jobs/control-flow",
+      "checked_at": "2026-09-29T00:45:03.777216+00:00",
+      "health": {
+        "id": "databricks-dea-jobs-control-flow",
+        "url": "https://docs.databricks.com/aws/en/jobs/control-flow",
+        "checked_at": "2026-09-29T00:45:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/jobs/control-flow",
+        "content_type": "text/html",
+        "page_title": "Control the flow of tasks within Lakeflow Jobs | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/jobs/control-flow",
+        "duration_signals": [],
+        "signal_fingerprint": "1c3b97a067b1348b1eff0878562d100ccc5755f98ac897682156bad94814a3c8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/jobs/control-flow",
+      "sha256": "67de98d6cad060999072d3d2894022a9d076d15ea15ff6ffb11947a47049a49b",
+      "text_characters": 3212
+    },
+    {
+      "id": "databricks-dea-bundles",
+      "url": "https://docs.databricks.com/aws/en/dev-tools/bundles/",
+      "checked_at": "2026-09-29T00:45:03.938987+00:00",
+      "health": {
+        "id": "databricks-dea-bundles",
+        "url": "https://docs.databricks.com/aws/en/dev-tools/bundles/",
+        "checked_at": "2026-09-29T00:45:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/dev-tools/bundles/",
+        "content_type": "text/html",
+        "page_title": "What are Declarative Automation Bundles? | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/dev-tools/bundles/",
+        "duration_signals": [
+          "5 minutes"
+        ],
+        "signal_fingerprint": "4b1e0e497608bb4667509cbd241adac6baaa3a0f45193f39b002f678f2852b35",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/dev-tools/bundles/",
+      "sha256": "407c084f7018fae7326fd8d803d05b8fb1943db7bc9b3c67ba184f046c2dcce4",
+      "text_characters": 7391
+    },
+    {
+      "id": "databricks-dea-cicd",
+      "url": "https://docs.databricks.com/aws/en/dev-tools/ci-cd/",
+      "checked_at": "2026-09-29T00:45:05.725133+00:00",
+      "health": {
+        "id": "databricks-dea-cicd",
+        "url": "https://docs.databricks.com/aws/en/dev-tools/ci-cd/",
+        "checked_at": "2026-09-29T00:45:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/dev-tools/ci-cd/",
+        "content_type": "text/html",
+        "page_title": "CI/CD on Databricks | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/dev-tools/ci-cd/",
+        "duration_signals": [],
+        "signal_fingerprint": "a5ef052ea49d55fe2dfd375b898aeb3c206ba6268e624f72969d66c97ba53b40",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/dev-tools/ci-cd/",
+      "sha256": "4faef6364f7196e2ed099b02018a6f0b81806c9ab85cfd21b9206bc4dd0e894b",
+      "text_characters": 8081
+    },
+    {
+      "id": "databricks-dea-uc-access-control",
+      "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/",
+      "checked_at": "2026-09-29T00:45:05.893372+00:00",
+      "health": {
+        "id": "databricks-dea-uc-access-control",
+        "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/",
+        "checked_at": "2026-09-29T00:45:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/",
+        "content_type": "text/html",
+        "page_title": "Access control in Unity Catalog | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/",
+        "duration_signals": [],
+        "signal_fingerprint": "322d923f03c7f87032675c5848989745bd73f4b7f9220d5399435c2b3e292d78",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/",
+      "sha256": "a882d26c6f10d41ff29923f23b37e604bc0621a1ba1b8813cbf08ffb89ab2942",
+      "text_characters": 3441
+    },
+    {
+      "id": "databricks-dea-uc-privileges",
+      "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/manage-privileges/privileges",
+      "checked_at": "2026-09-29T00:45:08.404137+00:00",
+      "health": {
+        "id": "databricks-dea-uc-privileges",
+        "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/manage-privileges/privileges",
+        "checked_at": "2026-09-29T00:45:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/privileges-reference",
+        "content_type": "text/html",
+        "page_title": "Unity Catalog privileges reference | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/privileges-reference",
+        "duration_signals": [],
+        "signal_fingerprint": "13dd842edfa76d74ff790e89f8abca78631d5d9db4571d106ec60790990e1e6a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/privileges-reference",
+      "sha256": "61b44394778481bf4e219a83e2aaee96bd7b13f7997de40dc401f175a1ece2bd",
+      "text_characters": 55752
+    },
+    {
+      "id": "databricks-dea-academy",
+      "url": "https://customer-academy.databricks.com/",
+      "checked_at": "2026-09-29T00:45:08.415274+00:00",
+      "health": {
+        "id": "databricks-dea-academy",
+        "url": "https://customer-academy.databricks.com/",
+        "checked_at": "2026-09-29T00:45:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://customer-academy.databricks.com/learn",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Loading",
+        "canonical_url": "https://customer-academy.databricks.com/learn",
+        "duration_signals": [],
+        "signal_fingerprint": "1dce398a1aa27fcf333c855d182c5c5ced7396d33bb07d51c89b8e50683ae480",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://customer-academy.databricks.com/learn",
+      "sha256": "14f89b57c71f6fff15e67ea2b452b2e5f796e19a3dd9c6c89a368c9d99df63d5",
+      "text_characters": 7
+    },
+    {
+      "id": "databricks-dea-free-edition",
+      "url": "https://www.databricks.com/learn/free-edition",
+      "checked_at": "2026-09-29T00:45:11.640194+00:00",
+      "health": {
+        "id": "databricks-dea-free-edition",
+        "url": "https://www.databricks.com/learn/free-edition",
+        "checked_at": "2026-09-29T00:45:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.databricks.com/learn/free-edition",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Free Edition",
+        "canonical_url": "https://www.databricks.com/learn/free-edition",
+        "duration_signals": [],
+        "signal_fingerprint": "5d84d0d489f224bc5539c2062a71dfe847744f1c82b09fb9be7adb02932f7e24",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.databricks.com/learn/free-edition",
+      "sha256": "619eb3350c53a1b2bf102be1136f02475de54d3656cc092a2107833edc51b051",
+      "text_characters": 5062
+    },
+    {
+      "id": "databricks-daa-federation",
+      "url": "https://docs.databricks.com/aws/en/query-federation/",
+      "checked_at": "2026-09-29T00:45:12.408904+00:00",
+      "health": {
+        "id": "databricks-daa-federation",
+        "url": "https://docs.databricks.com/aws/en/query-federation/",
+        "checked_at": "2026-09-29T00:45:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/query-federation/",
+        "content_type": "text/html",
+        "page_title": "Connect to external databases and catalogs | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/query-federation/",
+        "duration_signals": [],
+        "signal_fingerprint": "ccac8ff0497fbf4d3045268ba76b512b9b259e6be2970cf4061de66c82fe76af",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/query-federation/",
+      "sha256": "0a2bc5b626dfd026e5bc6213e7d91e432f22690d60672b6c388167a3d77c4b13",
+      "text_characters": 8025
+    },
+    {
+      "id": "databricks-dep-blueprint",
+      "url": "https://www.databricks.com/learn/certification/data-engineer-professional",
+      "checked_at": "2026-09-29T00:45:13.211970+00:00",
+      "health": {
+        "id": "databricks-dep-blueprint",
+        "url": "https://www.databricks.com/learn/certification/data-engineer-professional",
+        "checked_at": "2026-09-29T00:45:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.databricks.com/learn/certification/data-engineer-professional",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Databricks Certified Data Engineer Professional | Databricks",
+        "canonical_url": "https://www.databricks.com/learn/certification/data-engineer-professional",
+        "duration_signals": [
+          "120 minutes"
+        ],
+        "signal_fingerprint": "1a2999742e7375dacc78a926221b8390e8ebe7c69693fbc1e4302fd3c1b2ec4d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.databricks.com/learn/certification/data-engineer-professional",
+      "sha256": "78d72c2df9bceed56b5d90c20461e6ef2a79fee4f4182a7131d6633b9167b3cd",
+      "text_characters": 3429
+    },
+    {
+      "id": "databricks-dep-exam-guide-jul-2026",
+      "url": "https://www.databricks.com/sites/default/files/2026-07/databricks-certified-data-engineer-professional-exam-guide-july-3-2026.pdf",
+      "checked_at": "2026-09-29T00:45:13.489289+00:00",
+      "health": {
+        "id": "databricks-dep-exam-guide-jul-2026",
+        "url": "https://www.databricks.com/sites/default/files/2026-07/databricks-certified-data-engineer-professional-exam-guide-july-3-2026.pdf",
+        "checked_at": "2026-09-29T00:45:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.databricks.com/sites/default/files/2026-07/databricks-certified-data-engineer-professional-exam-guide-july-3-2026.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.databricks.com/sites/default/files/2026-07/databricks-certified-data-engineer-professional-exam-guide-july-3-2026.pdf",
+      "sha256": "6705630fcd5d3a4f6efd640dbddf868f5e182ee38d01007d78749d650c881e0b",
+      "text_characters": 5887,
+      "representation_note": "Original response is a PDF. Separately decoded with pypdf; objective section reviewed before the sample-question section, vendor samples not reproduced. HTML visible-text extraction is not used as objective evidence."
+    },
+    {
+      "id": "databricks-dep-libraries",
+      "url": "https://docs.databricks.com/aws/en/libraries/",
+      "checked_at": "2026-09-29T00:45:13.685763+00:00",
+      "health": {
+        "id": "databricks-dep-libraries",
+        "url": "https://docs.databricks.com/aws/en/libraries/",
+        "checked_at": "2026-09-29T00:45:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/libraries/",
+        "content_type": "text/html",
+        "page_title": "Install libraries | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/libraries/",
+        "duration_signals": [],
+        "signal_fingerprint": "f7cfffb49cf63fad087e3b73048b4680fcb4c5f20f2dba13967ac8d8c0bf65a3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/libraries/",
+      "sha256": "27c7423f12fcee50a34e106688aa922b42a453f916ae014d26eb36003cd5345c",
+      "text_characters": 14834
+    },
+    {
+      "id": "databricks-dep-pandas-udf",
+      "url": "https://docs.databricks.com/aws/en/udf/pandas",
+      "checked_at": "2026-09-29T00:45:13.932072+00:00",
+      "health": {
+        "id": "databricks-dep-pandas-udf",
+        "url": "https://docs.databricks.com/aws/en/udf/pandas",
+        "checked_at": "2026-09-29T00:45:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/udf/pandas",
+        "content_type": "text/html",
+        "page_title": "pandas user-defined functions | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/udf/pandas",
+        "duration_signals": [],
+        "signal_fingerprint": "9de2126b0e67b71a74fc99843c57eb4b61cdef0b4d1f1bffc551a0741406fd1c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/udf/pandas",
+      "sha256": "b8e3e6f60c147171643832e3b35c01377f5394754e14023c3c50bec28974798c",
+      "text_characters": 9811
+    },
+    {
+      "id": "databricks-dep-ldp",
+      "url": "https://docs.databricks.com/aws/en/ldp/",
+      "checked_at": "2026-09-29T00:45:13.944125+00:00",
+      "health": {
+        "id": "databricks-dep-ldp",
+        "url": "https://docs.databricks.com/aws/en/ldp/",
+        "checked_at": "2026-09-29T00:45:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/ldp/",
+        "content_type": "text/html",
+        "page_title": "Spark Declarative Pipelines | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/ldp/",
+        "duration_signals": [],
+        "signal_fingerprint": "96e88aa6ec9320b229150a99b2899ccad44d0ad6dea30023e2ec3b63bfc56302",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/ldp/",
+      "sha256": "9e05d966bc8b31efa892e14c3b9f484d65bee8fd20218ee79b72d43079bb8e40",
+      "text_characters": 1880
+    },
+    {
+      "id": "databricks-dep-structured-streaming",
+      "url": "https://docs.databricks.com/aws/en/structured-streaming/",
+      "checked_at": "2026-09-29T00:45:14.011181+00:00",
+      "health": {
+        "id": "databricks-dep-structured-streaming",
+        "url": "https://docs.databricks.com/aws/en/structured-streaming/",
+        "checked_at": "2026-09-29T00:45:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/structured-streaming/concepts",
+        "content_type": "text/html",
+        "page_title": "Structured Streaming concepts | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/structured-streaming/concepts",
+        "duration_signals": [],
+        "signal_fingerprint": "9a966750cba5e25a5d9c6cc90a84813249a5ec4c27c57a4a7014fbdd49bae127",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/structured-streaming/concepts",
+      "sha256": "3012f1e10e1c3ea3a8a4f2ffa1051f6fa0fda7e20d632d4b0fc1756944389158",
+      "text_characters": 2660
+    },
+    {
+      "id": "databricks-dep-auto-cdc",
+      "url": "https://docs.databricks.com/aws/en/ldp/cdc",
+      "checked_at": "2026-09-29T00:45:14.258760+00:00",
+      "health": {
+        "id": "databricks-dep-auto-cdc",
+        "url": "https://docs.databricks.com/aws/en/ldp/cdc",
+        "checked_at": "2026-09-29T00:45:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/ldp/cdc",
+        "content_type": "text/html",
+        "page_title": "The AUTO CDC APIs: Simplify change data capture with pipelines | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/ldp/cdc",
+        "duration_signals": [],
+        "signal_fingerprint": "66d1e246504b83e6c7fa0146b3ebe067fe1d2bb80421fad663527770ad19c4be",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/ldp/cdc",
+      "sha256": "d94964198d6cbc6af384b21ca5c56c7e384f189b53c6f39fad514b98f9519dda",
+      "text_characters": 21244
+    },
+    {
+      "id": "databricks-dep-pyspark-testing",
+      "url": "https://spark.apache.org/docs/latest/api/python/getting_started/testing_pyspark.html",
+      "checked_at": "2026-09-29T00:45:14.289106+00:00",
+      "health": {
+        "id": "databricks-dep-pyspark-testing",
+        "url": "https://spark.apache.org/docs/latest/api/python/getting_started/testing_pyspark.html",
+        "checked_at": "2026-09-29T00:45:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://spark.apache.org/docs/latest/api/python/getting_started/testing_pyspark.html",
+        "content_type": "text/html",
+        "page_title": "Testing PySpark — PySpark 4.2.0 documentation",
+        "canonical_url": "https://spark.apache.org/docs/latest/api/python/getting_started/testing_pyspark.html",
+        "duration_signals": [],
+        "signal_fingerprint": "cb11de6efb68aebf68ac7dae3da54aa0c3ac1a0ebff52467783b6310a711d299",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://spark.apache.org/docs/latest/api/python/getting_started/testing_pyspark.html",
+      "sha256": "d91bd4f11a0009cf7f7489e5661b1fcac770ca82944ab2c58607f46f1f27a572",
+      "text_characters": 8300
+    },
+    {
+      "id": "databricks-dep-spark-data-sources",
+      "url": "https://spark.apache.org/docs/latest/sql-data-sources.html",
+      "checked_at": "2026-09-29T00:45:14.418476+00:00",
+      "health": {
+        "id": "databricks-dep-spark-data-sources",
+        "url": "https://spark.apache.org/docs/latest/sql-data-sources.html",
+        "checked_at": "2026-09-29T00:45:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://spark.apache.org/docs/latest/sql-data-sources.html",
+        "content_type": "text/html",
+        "page_title": "Data Sources - Spark 4.2.0 Documentation",
+        "canonical_url": "https://spark.apache.org/docs/latest/sql-data-sources.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d796acb651e1de0cfe1318d4fecd8b577335682be9377f088f47337e37df59bd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://spark.apache.org/docs/latest/sql-data-sources.html",
+      "sha256": "eb0612d50061b3f19872431a2ba5db5e84e9d0c58fde86f6251ec04b9eaeb729",
+      "text_characters": 2589
+    },
+    {
+      "id": "databricks-dep-delta-sharing",
+      "url": "https://docs.databricks.com/aws/en/delta-sharing/",
+      "checked_at": "2026-09-29T00:45:14.679335+00:00",
+      "health": {
+        "id": "databricks-dep-delta-sharing",
+        "url": "https://docs.databricks.com/aws/en/delta-sharing/",
+        "checked_at": "2026-09-29T00:45:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/opensharing",
+        "content_type": "text/html",
+        "page_title": "What is OpenSharing? | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/opensharing/",
+        "duration_signals": [],
+        "signal_fingerprint": "3107ebf026d5d84b5ee90ac927f6c573921450bc641ff6835627743d2fa14dfd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/opensharing",
+      "sha256": "cba51b43dfb3c458021a42d9759b489ce2147f6e455074515ed90260a49ea212",
+      "text_characters": 33863
+    },
+    {
+      "id": "databricks-dep-system-tables",
+      "url": "https://docs.databricks.com/aws/en/admin/system-tables/",
+      "checked_at": "2026-09-29T00:45:14.698426+00:00",
+      "health": {
+        "id": "databricks-dep-system-tables",
+        "url": "https://docs.databricks.com/aws/en/admin/system-tables/",
+        "checked_at": "2026-09-29T00:45:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/admin/system-tables/",
+        "content_type": "text/html",
+        "page_title": "System tables reference | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/admin/system-tables/",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "38958fab23d5625735b547c9917fd4b5dd31d9fcb8ad61514d043b1ab5fc85b8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/admin/system-tables/",
+      "sha256": "5e7a07148e69d0f93601475bc83509ef0f481d22dd0ace24d908a58269c0ba88",
+      "text_characters": 29142
+    },
+    {
+      "id": "databricks-dep-event-log",
+      "url": "https://docs.databricks.com/aws/en/ldp/monitor-event-logs",
+      "checked_at": "2026-09-29T00:45:14.886903+00:00",
+      "health": {
+        "id": "databricks-dep-event-log",
+        "url": "https://docs.databricks.com/aws/en/ldp/monitor-event-logs",
+        "checked_at": "2026-09-29T00:45:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/ldp/monitor-event-logs",
+        "content_type": "text/html",
+        "page_title": "Pipeline event log | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/ldp/monitor-event-logs",
+        "duration_signals": [],
+        "signal_fingerprint": "1e19605ac678d9c6fdf1397d3dd7778cfbbe3e990d1b7ebffa01dbe6cade1391",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/ldp/monitor-event-logs",
+      "sha256": "1f87b0cb276710426e249756c4581b9276e9ee224b79742e0fe368ee7b7eadc1",
+      "text_characters": 25994
+    },
+    {
+      "id": "databricks-dep-job-notifications",
+      "url": "https://docs.databricks.com/aws/en/jobs/notifications",
+      "checked_at": "2026-09-29T00:45:15.044798+00:00",
+      "health": {
+        "id": "databricks-dep-job-notifications",
+        "url": "https://docs.databricks.com/aws/en/jobs/notifications",
+        "checked_at": "2026-09-29T00:45:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/jobs/notifications",
+        "content_type": "text/html",
+        "page_title": "Add notifications on a job | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/jobs/notifications",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "398e07788a06cf360e685d69f5dd92f0bd619d2afc5c5493e12093a599e2f6c0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/jobs/notifications",
+      "sha256": "6a9115378ffb5c96e2d560fd8e48f3e9be32a1cc3084fe36f1fc8fb62c72aa32",
+      "text_characters": 7604
+    },
+    {
+      "id": "databricks-dep-deletion-vectors",
+      "url": "https://docs.databricks.com/aws/en/delta/deletion-vectors",
+      "checked_at": "2026-09-29T00:45:15.180091+00:00",
+      "health": {
+        "id": "databricks-dep-deletion-vectors",
+        "url": "https://docs.databricks.com/aws/en/delta/deletion-vectors",
+        "checked_at": "2026-09-29T00:45:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/tables/features/deletion-vectors",
+        "content_type": "text/html",
+        "page_title": "Deletion vectors in Databricks | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/tables/features/deletion-vectors",
+        "duration_signals": [],
+        "signal_fingerprint": "61375f3045c6e22f313694cab492650226ca877e8f1e0d5e3e45630d6bc876cc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/tables/features/deletion-vectors",
+      "sha256": "cab1572229f2ed23f073adce38efb640be79570084074ef7a9d77a34e574488a",
+      "text_characters": 7983
+    },
+    {
+      "id": "databricks-dep-cdf",
+      "url": "https://docs.databricks.com/aws/en/delta/delta-change-data-feed",
+      "checked_at": "2026-09-29T00:45:15.257081+00:00",
+      "health": {
+        "id": "databricks-dep-cdf",
+        "url": "https://docs.databricks.com/aws/en/delta/delta-change-data-feed",
+        "checked_at": "2026-09-29T00:45:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/tables/features/change-data-feed",
+        "content_type": "text/html",
+        "page_title": "Use change data feed on Databricks | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/tables/features/change-data-feed",
+        "duration_signals": [],
+        "signal_fingerprint": "c7513c8bc95814fffd3a109a73f104b07aa6e46b8cc5daf4d2e7609c25fa22ed",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/tables/features/change-data-feed",
+      "sha256": "a555af7bbca161f21b05023a52292698c577724289b498e287c2d139ff7aa198",
+      "text_characters": 17403
+    },
+    {
+      "id": "databricks-dep-job-repair",
+      "url": "https://docs.databricks.com/aws/en/jobs/repair-job-failures",
+      "checked_at": "2026-09-29T00:45:15.294919+00:00",
+      "health": {
+        "id": "databricks-dep-job-repair",
+        "url": "https://docs.databricks.com/aws/en/jobs/repair-job-failures",
+        "checked_at": "2026-09-29T00:45:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/jobs/repair-job-failures",
+        "content_type": "text/html",
+        "page_title": "Troubleshoot and repair job failures | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/jobs/repair-job-failures",
+        "duration_signals": [],
+        "signal_fingerprint": "5965b7dc119c071725a9429231646ef458967e0265d62468a62d9c7b2564be73",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/jobs/repair-job-failures",
+      "sha256": "2376ee18a330b794d94d1b89ecc1e52cf51e8f04210122ddaaca0cb87ccc9096",
+      "text_characters": 6997
+    },
+    {
+      "id": "databricks-dep-whizlabs",
+      "url": "https://www.whizlabs.com/databricks-certified-data-engineer-professional/",
+      "checked_at": "2026-09-29T00:45:15.584297+00:00",
+      "health": {
+        "id": "databricks-dep-whizlabs",
+        "url": "https://www.whizlabs.com/databricks-certified-data-engineer-professional/",
+        "checked_at": "2026-09-29T00:45:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/databricks-certified-data-engineer-professional/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Databricks Certified Data Engineer Professional (Databricks DE Professional) Course",
+        "canonical_url": "https://www.whizlabs.com/databricks-certified-data-engineer-professional/",
+        "duration_signals": [],
+        "signal_fingerprint": "b44674149016bd4eaacb3c389f20971e428a888afb76b491bae26b8919eac154",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/databricks-certified-data-engineer-professional/",
+      "sha256": "15c54bc86c3d958c651c2aac625a13a06667dcf00a3f9d0688ee85819d309ee0",
+      "text_characters": 83
+    },
+    {
+      "id": "databricks-dep-udemy-search",
+      "url": "https://www.udemy.com/courses/search/?q=databricks%20data%20engineer%20professional",
+      "checked_at": "2026-09-29T00:45:15.668025+00:00",
+      "health": {
+        "id": "databricks-dep-udemy-search",
+        "url": "https://www.udemy.com/courses/search/?q=databricks%20data%20engineer%20professional",
+        "checked_at": "2026-09-29T00:45:15+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/courses/search/?q=databricks%20data%20engineer%20professional",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "databricks-dep-oreilly-search",
+      "url": "https://www.oreilly.com/search/?q=Databricks%20data%20engineering",
+      "checked_at": "2026-09-29T00:45:15.777338+00:00",
+      "health": {
+        "id": "databricks-dep-oreilly-search",
+        "url": "https://www.oreilly.com/search/?q=Databricks%20data%20engineering",
+        "checked_at": "2026-09-29T00:45:15+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/search/?q=Databricks%20data%20engineering",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "databricks-dep-foreach",
+      "url": "https://docs.databricks.com/aws/en/structured-streaming/foreach",
+      "checked_at": "2026-09-29T00:46:13.034484+00:00",
+      "health": {
+        "id": "databricks-dep-foreach",
+        "url": "https://docs.databricks.com/aws/en/structured-streaming/foreach",
+        "checked_at": "2026-09-29T00:46:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/structured-streaming/foreach",
+        "content_type": "text/html",
+        "page_title": "Use foreachBatch to write to arbitrary data sinks | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/structured-streaming/foreach",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "273aaee2699e5b6ec569210f07c726cd4dfc4c7ace40b39c10e4f6ad14d3582f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/structured-streaming/foreach",
+      "sha256": "8416a5f5bf6969b46e9cafde7907184ca4e4c5eece04d6de51064d65ca4d4ece",
+      "text_characters": 18647
+    },
+    {
+      "id": "databricks-dep-idempotent-delta",
+      "url": "https://docs.databricks.com/aws/en/structured-streaming/delta-lake",
+      "checked_at": "2026-09-29T00:46:13.035781+00:00",
+      "health": {
+        "id": "databricks-dep-idempotent-delta",
+        "url": "https://docs.databricks.com/aws/en/structured-streaming/delta-lake",
+        "checked_at": "2026-09-29T00:46:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/structured-streaming/delta-lake",
+        "content_type": "text/html",
+        "page_title": "Delta Lake table streaming reads and writes | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/structured-streaming/delta-lake",
+        "duration_signals": [],
+        "signal_fingerprint": "4f830676bef66efb840c7c117b285e326fa2c638fb0f0f03ff129e2f37c23d0f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/structured-streaming/delta-lake",
+      "sha256": "a0a0e02593dd45984d2b3c19741063f04f97abf747928bbe582398faffe8d793",
+      "text_characters": 28284
+    },
+    {
+      "id": "databricks-dep-reorg",
+      "url": "https://docs.databricks.com/aws/en/sql/language-manual/delta-reorg-table",
+      "checked_at": "2026-09-29T00:46:13.036575+00:00",
+      "health": {
+        "id": "databricks-dep-reorg",
+        "url": "https://docs.databricks.com/aws/en/sql/language-manual/delta-reorg-table",
+        "checked_at": "2026-09-29T00:46:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/sql/language-manual/delta-reorg-table",
+        "content_type": "text/html",
+        "page_title": "REORG TABLE | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/sql/language-manual/delta-reorg-table",
+        "duration_signals": [],
+        "signal_fingerprint": "479883eb12e8214d35b4b14ab29a82f2c58a505d3a732459300e07936c0ad28f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/sql/language-manual/delta-reorg-table",
+      "sha256": "4f83639db5e164a729b3c5bbdd9a0b1f075a5b36a0bb0018cd07e72aa6475b90",
+      "text_characters": 2826
+    },
+    {
+      "id": "databricks-dep-cdc-order",
+      "url": "https://docs.databricks.com/aws/en/ldp/what-is-change-data-capture",
+      "checked_at": "2026-09-29T00:46:13.339243+00:00",
+      "health": {
+        "id": "databricks-dep-cdc-order",
+        "url": "https://docs.databricks.com/aws/en/ldp/what-is-change-data-capture",
+        "checked_at": "2026-09-29T00:46:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/data-engineering/what-is-cdc",
+        "content_type": "text/html",
+        "page_title": "Change data capture and snapshots | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/data-engineering/what-is-cdc",
+        "duration_signals": [],
+        "signal_fingerprint": "afe2d8f50dbab6d0c8cf21c5c15b2edc755c02e7a650fdcbe9f811813ed4d0e3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/data-engineering/what-is-cdc",
+      "sha256": "ae110522c90f95ec5310a03a963d17a419c89a3582365dfccf6a743c159f83c8",
+      "text_characters": 14970
+    },
+    {
+      "id": "databricks-dep-backfill",
+      "url": "https://docs.databricks.com/aws/en/ldp/flows-backfill",
+      "checked_at": "2026-09-29T00:46:13.544960+00:00",
+      "health": {
+        "id": "databricks-dep-backfill",
+        "url": "https://docs.databricks.com/aws/en/ldp/flows-backfill",
+        "checked_at": "2026-09-29T00:46:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/ldp/flows-backfill",
+        "content_type": "text/html",
+        "page_title": "Backfilling historical data with pipelines | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/ldp/flows-backfill",
+        "duration_signals": [],
+        "signal_fingerprint": "e1a947345cf99fc05c424d982b3f532df9347d0dcde91621ac6167c7d40d5f49",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/ldp/flows-backfill",
+      "sha256": "fc251aac705cb9cb695e66fa8b71df17c9a24930beaab930ea28bb81b4e3c011",
+      "text_characters": 12319
+    },
+    {
+      "id": "databricks-dep-cdc-blog",
+      "url": "https://community.databricks.com/t5/technical-blog/from-150-lines-of-merge-into-to-7-lines-of-sql-auto-cdc-comes-to/ba-p/155355",
+      "checked_at": "2026-09-29T00:46:13.805867+00:00",
+      "health": {
+        "id": "databricks-dep-cdc-blog",
+        "url": "https://community.databricks.com/t5/technical-blog/from-150-lines-of-merge-into-to-7-lines-of-sql-auto-cdc-comes-to/ba-p/155355",
+        "checked_at": "2026-09-29T00:46:13+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://community.databricks.com/t5/technical-blog/from-150-lines-of-merge-into-to-7-lines-of-sql-auto-cdc-comes-to/ba-p/155355",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "databricks-dep-serverless-jobs",
+      "url": "https://docs.databricks.com/aws/en/jobs/run-serverless-jobs",
+      "checked_at": "2026-09-29T00:47:02.641631+00:00",
+      "health": {
+        "id": "databricks-dep-serverless-jobs",
+        "url": "https://docs.databricks.com/aws/en/jobs/run-serverless-jobs",
+        "checked_at": "2026-09-29T00:47:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/jobs/run-serverless-jobs",
+        "content_type": "text/html",
+        "page_title": "Run your Lakeflow Jobs with serverless compute for workflows | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/jobs/run-serverless-jobs",
+        "duration_signals": [
+          "6 minutes"
+        ],
+        "signal_fingerprint": "72613be9eefb1930b948342208091c2e94634072262e92a07a84606faddec32b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/jobs/run-serverless-jobs",
+      "sha256": "48e8c0bb67d73b48862f605c020356922a32e3cb8b98f4eaf72291dfaadb9836",
+      "text_characters": 9072
+    },
+    {
+      "id": "databricks-dep-bundle-tasks",
+      "url": "https://docs.databricks.com/aws/en/dev-tools/bundles/job-task-types",
+      "checked_at": "2026-09-29T00:47:02.642293+00:00",
+      "health": {
+        "id": "databricks-dep-bundle-tasks",
+        "url": "https://docs.databricks.com/aws/en/dev-tools/bundles/job-task-types",
+        "checked_at": "2026-09-29T00:47:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/dev-tools/bundles/job-task-types",
+        "content_type": "text/html",
+        "page_title": "Add tasks to jobs in Declarative Automation Bundles | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/dev-tools/bundles/job-task-types",
+        "duration_signals": [],
+        "signal_fingerprint": "e427d07b2247fc959821cc161628c0e0a7766472b403e741bcbc7158a8d486a6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/dev-tools/bundles/job-task-types",
+      "sha256": "a796d4b93f45956185dcc0bf522555711842c6b6635712173a6948a72f61809b",
+      "text_characters": 51693
+    }
+  ],
+  "added_source_ids": [
+    "databricks-dep-foreach",
+    "databricks-dep-idempotent-delta",
+    "databricks-dep-reorg",
+    "databricks-dep-cdc-order",
+    "databricks-dep-backfill",
+    "databricks-dep-cdc-blog",
+    "databricks-dep-serverless-jobs",
+    "databricks-dep-bundle-tasks"
+  ],
+  "findings": [
+    {
+      "id": "databricksdataengineerprofessional-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Specific serverless retry objective was underexplained",
+      "url": "https://docs.databricks.com/aws/en/jobs/run-serverless-jobs",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The exam names auto-optimization to disallow retries; current docs identify a separate serverless control.",
+      "recommendation": "Explain environment/memory scope and automatic retry controls with a labeled bundle fragment.",
+      "disposition": "applied",
+      "source_id": "databricks-dep-serverless-jobs",
+      "resolution": "Explain environment/memory scope and automatic retry controls with a labeled bundle fragment."
+    },
+    {
+      "id": "databricksdataengineerprofessional-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Streaming recovery needed destination and checkpoint boundaries",
+      "url": "https://docs.databricks.com/aws/en/structured-streaming/delta-lake",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Delta idempotency is destination-specific and new checkpoints reset batch numbering.",
+      "recommendation": "Add partial-commit replay and new-identity explanation with bounded local model.",
+      "disposition": "applied",
+      "source_id": "databricks-dep-idempotent-delta",
+      "resolution": "Add partial-commit replay and new-identity explanation with bounded local model."
+    },
+    {
+      "id": "databricksdataengineerprofessional-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "CDC ordering contract was underspecified",
+      "url": "https://docs.databricks.com/aws/en/ldp/what-is-change-data-capture",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Distinct updates need unique non-null ordering per key.",
+      "recommendation": "Add conflicting-sequence and historical cutover cases.",
+      "disposition": "applied",
+      "source_id": "databricks-dep-cdc-order",
+      "resolution": "Add conflicting-sequence and historical cutover cases."
+    },
+    {
+      "id": "databricksdataengineerprofessional-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Purge explanation lacked physical file sequence",
+      "url": "https://docs.databricks.com/aws/en/sql/language-manual/delta-reorg-table",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "REORG rewrites affected files, while old files require later cleanup.",
+      "recommendation": "Separate logical visibility, rewrite, retained old files and downstream evidence.",
+      "disposition": "applied",
+      "source_id": "databricks-dep-reorg",
+      "resolution": "Separate logical visibility, rewrite, retained old files and downstream evidence."
+    },
+    {
+      "id": "databricksdataengineerprofessional-deep-5",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Sales example omitted import and silently lost unmatched facts",
+      "url": "https://spark.apache.org/docs/latest/sql-data-sources.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Inner join drops missing dimension keys; duplicate matches multiply aggregates.",
+      "recommendation": "Add import, left join, unknown category and explicit dimension/quality contracts.",
+      "disposition": "applied",
+      "source_id": "databricks-dep-spark-data-sources",
+      "resolution": "Add import, left join, unknown category and explicit dimension/quality contracts."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "databricks-dep-cdc-blog",
+      "author": "CarlosR (Databricks employee)",
+      "published_on": "2026-04-24",
+      "disposition": "accepted-with-limits",
+      "value": "Readable CDC/SCD walkthrough prompts recovery and sequencing questions.",
+      "limits": "Do not reuse illustrative SQL as a verified production recipe; timestamp ties and CDF preimages require an explicit source contract. Direct fetch blocked; web retrieval readable."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "service_labs_executed": 0,
+    "reasoning_cases": 5,
+    "local_validation": {
+      "sqlite_assertions": 5,
+      "transaction_model_assertions": 8,
+      "python_blocks_parsed": 1,
+      "yaml_fragments_parsed": 1,
+      "execution_boundary": "SQLite portable relational semantics and an in-memory failure/retry model only. No PySpark, Delta, Databricks or infrastructure execution."
+    }
+  },
+  "answered_checks": 10,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "SQLite/model checks are not Spark, Delta, AUTO CDC, serverless Jobs or physical-purge execution; all eight workspace labs remain proposed.",
+    "Signed-in Academy/paid lessons unavailable; Udemy/OReilly blocked and Whizlabs returned no useful content.",
+    "Live monitor covers ten weighted domains; all 45 detailed PDF leaf objectives separately read and mapped."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "SQLite portable relational semantics and an in-memory failure/retry model only. No PySpark, Delta, Databricks or infrastructure execution.",
+    "learning_catalog_consistency": "passed",
+    "sqlite_assertions": 5,
+    "transaction_model_assertions": 8,
+    "python_blocks_parsed": 1,
+    "yaml_fragments_parsed": 1
+  },
+  "detailed_objective_pdf": {
+    "url": "https://www.databricks.com/sites/default/files/2026-07/databricks-certified-data-engineer-professional-exam-guide-july-3-2026.pdf",
+    "sha256": "6705630fcd5d3a4f6efd640dbddf868f5e182ee38d01007d78749d650c881e0b",
+    "pages": 9,
+    "samples_reproduced": false,
+    "objective_count": 45,
+    "counting_note": "45 leaf objectives. Eight organizing bullets excluded; the operations/overhead line-wrap bullet in domain 6 joined. Unicode ligatures normalized with NFKC before objective hashing."
+  }
+}

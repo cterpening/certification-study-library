@@ -4,6 +4,122 @@
   "generated_on": "2026-09-17",
   "sources": [
     {
+      "id": "databricks-dep-foreach",
+      "url": "https://docs.databricks.com/aws/en/structured-streaming/foreach",
+      "checked_at": "2026-09-29T00:46:13+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/structured-streaming/foreach",
+      "content_type": "text/html",
+      "page_title": "Use foreachBatch to write to arbitrary data sinks | Databricks on AWS",
+      "canonical_url": "https://docs.databricks.com/aws/en/structured-streaming/foreach",
+      "duration_signals": [
+        "15 minutes"
+      ],
+      "signal_fingerprint": "273aaee2699e5b6ec569210f07c726cd4dfc4c7ace40b39c10e4f6ad14d3582f",
+      "error": ""
+    },
+    {
+      "id": "databricks-dep-idempotent-delta",
+      "url": "https://docs.databricks.com/aws/en/structured-streaming/delta-lake",
+      "checked_at": "2026-09-29T00:46:13+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/structured-streaming/delta-lake",
+      "content_type": "text/html",
+      "page_title": "Delta Lake table streaming reads and writes | Databricks on AWS",
+      "canonical_url": "https://docs.databricks.com/aws/en/structured-streaming/delta-lake",
+      "duration_signals": [],
+      "signal_fingerprint": "4f830676bef66efb840c7c117b285e326fa2c638fb0f0f03ff129e2f37c23d0f",
+      "error": ""
+    },
+    {
+      "id": "databricks-dep-reorg",
+      "url": "https://docs.databricks.com/aws/en/sql/language-manual/delta-reorg-table",
+      "checked_at": "2026-09-29T00:46:13+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/sql/language-manual/delta-reorg-table",
+      "content_type": "text/html",
+      "page_title": "REORG TABLE | Databricks on AWS",
+      "canonical_url": "https://docs.databricks.com/aws/en/sql/language-manual/delta-reorg-table",
+      "duration_signals": [],
+      "signal_fingerprint": "479883eb12e8214d35b4b14ab29a82f2c58a505d3a732459300e07936c0ad28f",
+      "error": ""
+    },
+    {
+      "id": "databricks-dep-cdc-order",
+      "url": "https://docs.databricks.com/aws/en/ldp/what-is-change-data-capture",
+      "checked_at": "2026-09-29T00:46:13+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/data-engineering/what-is-cdc",
+      "content_type": "text/html",
+      "page_title": "Change data capture and snapshots | Databricks on AWS",
+      "canonical_url": "https://docs.databricks.com/aws/en/data-engineering/what-is-cdc",
+      "duration_signals": [],
+      "signal_fingerprint": "afe2d8f50dbab6d0c8cf21c5c15b2edc755c02e7a650fdcbe9f811813ed4d0e3",
+      "error": ""
+    },
+    {
+      "id": "databricks-dep-backfill",
+      "url": "https://docs.databricks.com/aws/en/ldp/flows-backfill",
+      "checked_at": "2026-09-29T00:46:13+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/ldp/flows-backfill",
+      "content_type": "text/html",
+      "page_title": "Backfilling historical data with pipelines | Databricks on AWS",
+      "canonical_url": "https://docs.databricks.com/aws/en/ldp/flows-backfill",
+      "duration_signals": [],
+      "signal_fingerprint": "e1a947345cf99fc05c424d982b3f532df9347d0dcde91621ac6167c7d40d5f49",
+      "error": ""
+    },
+    {
+      "id": "databricks-dep-cdc-blog",
+      "url": "https://community.databricks.com/t5/technical-blog/from-150-lines-of-merge-into-to-7-lines-of-sql-auto-cdc-comes-to/ba-p/155355",
+      "checked_at": "2026-09-29T00:46:13+00:00",
+      "status": "blocked",
+      "http_status": 403,
+      "final_url": "https://community.databricks.com/t5/technical-blog/from-150-lines-of-merge-into-to-7-lines-of-sql-auto-cdc-comes-to/ba-p/155355",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": "Forbidden"
+    },
+    {
+      "id": "databricks-dep-serverless-jobs",
+      "url": "https://docs.databricks.com/aws/en/jobs/run-serverless-jobs",
+      "checked_at": "2026-09-29T00:47:02+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/jobs/run-serverless-jobs",
+      "content_type": "text/html",
+      "page_title": "Run your Lakeflow Jobs with serverless compute for workflows | Databricks on AWS",
+      "canonical_url": "https://docs.databricks.com/aws/en/jobs/run-serverless-jobs",
+      "duration_signals": [
+        "6 minutes"
+      ],
+      "signal_fingerprint": "72613be9eefb1930b948342208091c2e94634072262e92a07a84606faddec32b",
+      "error": ""
+    },
+    {
+      "id": "databricks-dep-bundle-tasks",
+      "url": "https://docs.databricks.com/aws/en/dev-tools/bundles/job-task-types",
+      "checked_at": "2026-09-29T00:47:02+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/dev-tools/bundles/job-task-types",
+      "content_type": "text/html",
+      "page_title": "Add tasks to jobs in Declarative Automation Bundles | Databricks on AWS",
+      "canonical_url": "https://docs.databricks.com/aws/en/dev-tools/bundles/job-task-types",
+      "duration_signals": [],
+      "signal_fingerprint": "e427d07b2247fc959821cc161628c0e0a7766472b403e741bcbc7158a8d486a6",
+      "error": ""
+    },
+    {
       "id": "databricks-autoloader-schema",
       "url": "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/auto-loader/schema",
       "checked_at": "2026-09-28T23:35:42+00:00",
@@ -31473,7 +31589,7 @@
     {
       "id": "databricks-daa-federation",
       "url": "https://docs.databricks.com/aws/en/query-federation/",
-      "checked_at": "2026-09-28T23:25:39+00:00",
+      "checked_at": "2026-09-29T00:45:12+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.databricks.com/aws/en/query-federation/",
@@ -31661,7 +31777,7 @@
     {
       "id": "databricks-dea-academy",
       "url": "https://customer-academy.databricks.com/",
-      "checked_at": "2026-09-28T23:32:58+00:00",
+      "checked_at": "2026-09-29T00:45:08+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://customer-academy.databricks.com/learn",
@@ -31705,7 +31821,7 @@
     {
       "id": "databricks-dea-bundles",
       "url": "https://docs.databricks.com/aws/en/dev-tools/bundles/",
-      "checked_at": "2026-09-28T23:32:57+00:00",
+      "checked_at": "2026-09-29T00:45:03+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.databricks.com/aws/en/dev-tools/bundles/",
@@ -31721,7 +31837,7 @@
     {
       "id": "databricks-dea-cicd",
       "url": "https://docs.databricks.com/aws/en/dev-tools/ci-cd/",
-      "checked_at": "2026-09-28T23:32:57+00:00",
+      "checked_at": "2026-09-29T00:45:05+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.databricks.com/aws/en/dev-tools/ci-cd/",
@@ -31777,7 +31893,7 @@
     {
       "id": "databricks-dea-free-edition",
       "url": "https://www.databricks.com/learn/free-edition",
-      "checked_at": "2026-09-28T23:32:58+00:00",
+      "checked_at": "2026-09-29T00:45:11+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.databricks.com/learn/free-edition",
@@ -31819,7 +31935,7 @@
     {
       "id": "databricks-dea-jobs-control-flow",
       "url": "https://docs.databricks.com/aws/en/jobs/control-flow",
-      "checked_at": "2026-09-28T23:32:57+00:00",
+      "checked_at": "2026-09-29T00:45:03+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.databricks.com/aws/en/jobs/control-flow",
@@ -31892,7 +32008,7 @@
     {
       "id": "databricks-dea-liquid-clustering",
       "url": "https://docs.databricks.com/aws/en/delta/clustering",
-      "checked_at": "2026-09-28T23:32:57+00:00",
+      "checked_at": "2026-09-29T00:45:00+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.databricks.com/aws/en/tables/clustering",
@@ -31941,7 +32057,7 @@
     {
       "id": "databricks-dea-platform-docs",
       "url": "https://docs.databricks.com/aws/en/introduction/",
-      "checked_at": "2026-09-28T23:32:56+00:00",
+      "checked_at": "2026-09-29T00:45:00+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.databricks.com/aws/en/introduction/",
@@ -31971,7 +32087,7 @@
     {
       "id": "databricks-dea-predictive-optimization",
       "url": "https://docs.databricks.com/aws/en/optimizations/predictive-optimization",
-      "checked_at": "2026-09-28T23:32:57+00:00",
+      "checked_at": "2026-09-29T00:45:02+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.databricks.com/aws/en/optimizations/predictive-optimization",
@@ -32015,7 +32131,7 @@
     {
       "id": "databricks-dea-uc-access-control",
       "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/",
-      "checked_at": "2026-09-28T23:32:58+00:00",
+      "checked_at": "2026-09-29T00:45:05+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/",
@@ -32029,7 +32145,7 @@
     {
       "id": "databricks-dea-uc-privileges",
       "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/manage-privileges/privileges",
-      "checked_at": "2026-09-28T23:32:58+00:00",
+      "checked_at": "2026-09-29T00:45:08+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/privileges-reference",
@@ -32085,7 +32201,7 @@
     {
       "id": "databricks-dep-auto-cdc",
       "url": "https://docs.databricks.com/aws/en/ldp/cdc",
-      "checked_at": "2026-09-01T19:11:31+00:00",
+      "checked_at": "2026-09-29T00:45:14+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.databricks.com/aws/en/ldp/cdc",
@@ -32099,7 +32215,7 @@
     {
       "id": "databricks-dep-blueprint",
       "url": "https://www.databricks.com/learn/certification/data-engineer-professional",
-      "checked_at": "2026-09-01T19:11:31+00:00",
+      "checked_at": "2026-09-29T00:45:13+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.databricks.com/learn/certification/data-engineer-professional",
@@ -32115,7 +32231,7 @@
     {
       "id": "databricks-dep-cdf",
       "url": "https://docs.databricks.com/aws/en/delta/delta-change-data-feed",
-      "checked_at": "2026-09-01T19:11:32+00:00",
+      "checked_at": "2026-09-29T00:45:15+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.databricks.com/aws/en/tables/features/change-data-feed",
@@ -32129,7 +32245,7 @@
     {
       "id": "databricks-dep-deletion-vectors",
       "url": "https://docs.databricks.com/aws/en/delta/deletion-vectors",
-      "checked_at": "2026-09-01T19:11:32+00:00",
+      "checked_at": "2026-09-29T00:45:15+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.databricks.com/aws/en/tables/features/deletion-vectors",
@@ -32143,7 +32259,7 @@
     {
       "id": "databricks-dep-delta-sharing",
       "url": "https://docs.databricks.com/aws/en/delta-sharing/",
-      "checked_at": "2026-09-01T19:11:31+00:00",
+      "checked_at": "2026-09-29T00:45:14+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.databricks.com/aws/en/opensharing",
@@ -32157,7 +32273,7 @@
     {
       "id": "databricks-dep-event-log",
       "url": "https://docs.databricks.com/aws/en/ldp/monitor-event-logs",
-      "checked_at": "2026-09-01T19:11:32+00:00",
+      "checked_at": "2026-09-29T00:45:14+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.databricks.com/aws/en/ldp/monitor-event-logs",
@@ -32171,7 +32287,7 @@
     {
       "id": "databricks-dep-exam-guide-jul-2026",
       "url": "https://www.databricks.com/sites/default/files/2026-07/databricks-certified-data-engineer-professional-exam-guide-july-3-2026.pdf",
-      "checked_at": "2026-09-01T19:11:31+00:00",
+      "checked_at": "2026-09-29T00:45:13+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.databricks.com/sites/default/files/2026-07/databricks-certified-data-engineer-professional-exam-guide-july-3-2026.pdf",
@@ -32185,7 +32301,7 @@
     {
       "id": "databricks-dep-job-notifications",
       "url": "https://docs.databricks.com/aws/en/jobs/notifications",
-      "checked_at": "2026-09-01T19:11:32+00:00",
+      "checked_at": "2026-09-29T00:45:15+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.databricks.com/aws/en/jobs/notifications",
@@ -32201,7 +32317,7 @@
     {
       "id": "databricks-dep-job-repair",
       "url": "https://docs.databricks.com/aws/en/jobs/repair-job-failures",
-      "checked_at": "2026-09-01T19:11:32+00:00",
+      "checked_at": "2026-09-29T00:45:15+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.databricks.com/aws/en/jobs/repair-job-failures",
@@ -32215,7 +32331,7 @@
     {
       "id": "databricks-dep-ldp",
       "url": "https://docs.databricks.com/aws/en/ldp/",
-      "checked_at": "2026-09-01T19:11:31+00:00",
+      "checked_at": "2026-09-29T00:45:13+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.databricks.com/aws/en/ldp/",
@@ -32229,7 +32345,7 @@
     {
       "id": "databricks-dep-libraries",
       "url": "https://docs.databricks.com/aws/en/libraries/",
-      "checked_at": "2026-09-01T19:11:31+00:00",
+      "checked_at": "2026-09-29T00:45:13+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.databricks.com/aws/en/libraries/",
@@ -32243,7 +32359,7 @@
     {
       "id": "databricks-dep-oreilly-search",
       "url": "https://www.oreilly.com/search/?q=Databricks%20data%20engineering",
-      "checked_at": "2026-09-01T19:11:32+00:00",
+      "checked_at": "2026-09-29T00:45:15+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.oreilly.com/search/?q=Databricks%20data%20engineering",
@@ -32257,7 +32373,7 @@
     {
       "id": "databricks-dep-pandas-udf",
       "url": "https://docs.databricks.com/aws/en/udf/pandas",
-      "checked_at": "2026-09-01T19:11:31+00:00",
+      "checked_at": "2026-09-29T00:45:13+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.databricks.com/aws/en/udf/pandas",
@@ -32271,7 +32387,7 @@
     {
       "id": "databricks-dep-pyspark-testing",
       "url": "https://spark.apache.org/docs/latest/api/python/getting_started/testing_pyspark.html",
-      "checked_at": "2026-09-01T19:11:31+00:00",
+      "checked_at": "2026-09-29T00:45:14+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://spark.apache.org/docs/latest/api/python/getting_started/testing_pyspark.html",
@@ -32285,7 +32401,7 @@
     {
       "id": "databricks-dep-spark-data-sources",
       "url": "https://spark.apache.org/docs/latest/sql-data-sources.html",
-      "checked_at": "2026-09-01T19:11:31+00:00",
+      "checked_at": "2026-09-29T00:45:14+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://spark.apache.org/docs/latest/sql-data-sources.html",
@@ -32299,7 +32415,7 @@
     {
       "id": "databricks-dep-structured-streaming",
       "url": "https://docs.databricks.com/aws/en/structured-streaming/",
-      "checked_at": "2026-09-01T19:11:31+00:00",
+      "checked_at": "2026-09-29T00:45:14+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.databricks.com/aws/en/structured-streaming/concepts",
@@ -32313,21 +32429,23 @@
     {
       "id": "databricks-dep-system-tables",
       "url": "https://docs.databricks.com/aws/en/admin/system-tables/",
-      "checked_at": "2026-09-01T19:11:31+00:00",
+      "checked_at": "2026-09-29T00:45:14+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.databricks.com/aws/en/admin/system-tables/",
       "content_type": "text/html",
       "page_title": "System tables reference | Databricks on AWS",
       "canonical_url": "https://docs.databricks.com/aws/en/admin/system-tables/",
-      "duration_signals": [],
-      "signal_fingerprint": "9dcc3ee99dbd82a65fe389b26e6eb87e471a1a5697482a7a9ee33674349446ff",
+      "duration_signals": [
+        "24 hours"
+      ],
+      "signal_fingerprint": "38958fab23d5625735b547c9917fd4b5dd31d9fcb8ad61514d043b1ab5fc85b8",
       "error": ""
     },
     {
       "id": "databricks-dep-udemy-search",
       "url": "https://www.udemy.com/courses/search/?q=databricks%20data%20engineer%20professional",
-      "checked_at": "2026-09-01T19:11:32+00:00",
+      "checked_at": "2026-09-29T00:45:15+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.udemy.com/courses/search/?q=databricks%20data%20engineer%20professional",
@@ -32341,15 +32459,15 @@
     {
       "id": "databricks-dep-whizlabs",
       "url": "https://www.whizlabs.com/databricks-certified-data-engineer-professional/",
-      "checked_at": "2026-09-01T19:11:32+00:00",
+      "checked_at": "2026-09-29T00:45:15+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.whizlabs.com/databricks-certified-data-engineer-professional/",
       "content_type": "text/html; charset=utf-8",
-      "page_title": "Databricks Certified Data Engineer Professional (Databricks DE Professional) Certification Training & Practice Test",
+      "page_title": "Databricks Certified Data Engineer Professional (Databricks DE Professional) Course",
       "canonical_url": "https://www.whizlabs.com/databricks-certified-data-engineer-professional/",
       "duration_signals": [],
-      "signal_fingerprint": "9b928858e5247f94a84fc4d234643fa2bb6a517df1877b08487d65884f5d80ad",
+      "signal_fingerprint": "b44674149016bd4eaacb3c389f20971e428a888afb76b491bae26b8919eac154",
       "error": ""
     },
     {
@@ -35807,7 +35925,7 @@
     {
       "id": "dp-750-databricks-youtube-channel",
       "url": "https://www.youtube.com/@Databricks",
-      "checked_at": "2026-09-28T23:32:55+00:00",
+      "checked_at": "2026-09-29T00:45:00+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.youtube.com/@Databricks",

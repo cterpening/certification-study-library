@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BUILD_DIR = ROOT / ".site-build"
 
 PUBLIC_DOCUMENTS = (
+    "docs/research/2026-09-28-databricks-data-engineer-professional-deep-review.md",
     "docs/research/2026-09-28-databricks-data-engineer-associate-deep-review.md",
     "docs/research/2026-09-28-databricks-data-analyst-associate-deep-review.md",
     "docs/research/2026-09-28-vault-operations-professional-deep-review.md",

@@ -2384,6 +2384,26 @@ This is not a complete list and is not meant to be consumed in full. Pick one pr
 
 No exact current MeasureUp product was independently verified. Avoid products claiming real, leaked, recalled, or guaranteed exam questions. Practice should test reasoning against documentation and hands-on behavior, not reproduce protected exam content.
 
+### DATABRICKS-DATA-ENGINEER-PROFESSIONAL — Databricks Certified Data Engineer Professional
+
+Resource details from the [DATABRICKS-DATA-ENGINEER-PROFESSIONAL guide](../guides/DATABRICKS-DATA-ENGINEER-PROFESSIONAL-databricks-data-engineer-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is **not a complete list**, and it is not a recommendation to consume everything. Pick the route that closes measured gaps, then spend substantial time building, breaking, observing, repairing and redeploying a system. Public resource availability was checked September 28, 2026. Durations are editorial planning estimates, not confirmed paid-course runtimes. Signed-in Academy lessons were not inspected; Udemy and O'Reilly access was blocked, and Whizlabs returned no useful page body.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official certification page and July 3, 2026 exam guide](https://www.databricks.com/learn/certification/data-engineer-professional) | Free | 2–3 hours to map every objective and inspect the vendor sample format; do not reproduce questions |
+| [Databricks Academy](https://customer-academy.databricks.com/) — *Advanced Data Engineering with Databricks* plus four named self-paced courses | Free account, customer/partner entitlement varies | 30–50 hours with labs; verify course visibility and runtime after sign-in |
+| [Databricks Free Edition](https://www.databricks.com/learn/free-edition) or an authorized workspace | Free account/organizational | 25–45 hours for the eight labs and failure experiments; some enterprise features require another environment |
+| [Databricks documentation](https://docs.databricks.com/aws/en/introduction/) | Free | 10–18 hours selected reproduction across pipelines, Jobs, governance, performance and deployment |
+| [CarlosR, Databricks employee: AUTO CDC engineering article (April 24, 2026)](https://community.databricks.com/t5/technical-blog/from-150-lines-of-merge-into-to-7-lines-of-sql-auto-cdc-comes-to/ba-p/155355) | Free technical blog | About 45–75 minutes to read and sketch replay/ordering tests; estimate includes the worksheet. Corroborate against current CDC docs; its simplified examples do not establish tie handling or replace a source contract. |
+| [Databricks YouTube](https://www.youtube.com/@Databricks) | Free | 4–8 hours selected recent Data + AI Summit, engineering, Lakeflow, Unity Catalog and performance sessions |
+| [Whizlabs: Databricks Data Engineer Professional](https://www.whizlabs.com/databricks-certified-data-engineer-professional/) | Paid; training/practice product | Public stable totals were not exposed; budget 8–18 hours and verify July 2026 alignment after sign-in |
+| [Udemy search: Data Engineer Professional](https://www.udemy.com/courses/search/?q=databricks%20data%20engineer%20professional) | Paid marketplace | 10–25 hours if a course demonstrably maps to the July 2026 guide; verify instructor, update, outline and avoid dump-focused listings |
+| [O'Reilly search: Databricks data engineering](https://www.oreilly.com/search/?q=Databricks%20data%20engineering) | Paid/trial | 8–20 hours selected current book/video/live material; map exact chapters to the blueprint and verify publication date |
+
+Use vendor sample questions only through the official guide, and use ethical practice tests to identify weak domains rather than memorize recalled content. Recheck the live weights, linked PDF, renamed products, course catalog and all **VERIFY CURRENT** controls near the appointment.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

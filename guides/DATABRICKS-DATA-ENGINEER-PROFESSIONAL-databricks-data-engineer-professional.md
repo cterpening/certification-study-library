@@ -6,18 +6,18 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-28
 ---
 
 # Databricks Certified Data Engineer Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-data-engineer-professional-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/data-engineer-professional) and its linked exam guide are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-data-engineer-professional-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/data-engineer-professional) and its linked exam guide are authoritative.
 
 **Library identifier:** `DATABRICKS-DATA-ENGINEER-PROFESSIONAL`; Databricks does not publish a short exam code on the official page checked.<br>
-**Current baseline:** Detailed official exam guide for the live version as of July 3, 2026; live weighted page checked September 1, 2026.<br>
-**Upcoming blueprint change:** None announced as of September 1, 2026. Recheck the official guide two weeks before the appointment, as Databricks requests.<br>
+**Current baseline:** Detailed official exam guide for the live version as of July 3, 2026; live weighted page checked September 28, 2026.<br>
+**Upcoming blueprint change:** None announced as of September 28, 2026. Recheck the official guide two weeks before the appointment, as Databricks requests.<br>
 **Lifecycle status:** Active; valid for two years, with the currently live exam required for recertification.<br>
 **Assessment:** 59 scored multiple-choice questions, 120 minutes, USD 200, no test aids or API documentation, online or test-center delivery; English, Japanese, Brazilian Portuguese, and Korean listed.<br>
 **Prerequisite:** None required. The official guide highly recommends related training and one year of hands-on experience performing its data-engineering tasks.<br>
@@ -94,9 +94,19 @@ Prefer built-in Spark SQL/DataFrame expressions because the optimizer can unders
 
 Auto Loader (`cloudFiles`) incrementally discovers cloud files and stores discovery/schema progress. Checkpoint and schema state are production assets. Deleting or reusing them can cause replay, duplicates or data loss depending on sink idempotency.
 
+### Make custom streaming writes recoverable
+
+The [foreachBatch contract](https://docs.databricks.com/aws/en/structured-streaming/foreach) permits a micro-batch to run again. External effects need a durable idempotency key; returning successfully after swallowing a failed write can lose data. Handle empty input, and consume the complete batch when upstream stateful operators require it.
+
+For append writes to Delta, pair a stable `txnAppId` with `txnVersion=batchId`. Each destination commits separately: a failure between two writes can leave only the first visible. Retrying with the same identity lets each destination recognize its own completed write. A new checkpoint starts batch numbering again, so use a new application identity and reconcile any replayed business records. This does not create a transaction spanning tables. See [Delta streaming writes](https://docs.databricks.com/aws/en/structured-streaming/delta-lake).
+
 ### Implement CDC and append flows deliberately
 
 `AUTO CDC` replaces the older `APPLY CHANGES` name in current Lakeflow documentation. It sequences change events into a target and supports SCD patterns. Define keys, sequence column, deletion/truncation semantics, ignored columns and out-of-order behavior; prove duplicates and late events. Review [AUTO CDC APIs](https://docs.databricks.com/aws/en/ldp/cdc).
+
+[CDC sequencing](https://docs.databricks.com/aws/en/ldp/what-is-change-data-capture) must establish a unique logical order per business key. Null sequence values and two different updates with the same key/sequence violate that contract. A source sequence or composite order can disambiguate timestamp ties. Separately, `AUTO CDC FROM SNAPSHOT` compares complete snapshots in version order; it is not an arbitrary late-event reader.
+
+For [historical backfill](https://docs.databricks.com/aws/en/ldp/flows-backfill), define a cutover for each key: its seed must precede its first live change. Verify overlap and gaps explicitly; a once flow can run again during a full refresh. Keep sufficient historical input to support the chosen recovery policy.
 
 A streaming table is incrementally updated from a stream; a materialized view maintains query results. Streaming tables strongly fit append/change streams, while materialized views fit declarative derived results with managed refresh. Confirm source compatibility, latency, update mode and full-refresh consequences.
 
@@ -105,6 +115,18 @@ A streaming table is incrementally updated from a stream; a materialized view ma
 Lakeflow Jobs supports task dependencies, run-if outcomes, `if/else`, `for each`, retries and parameters. Successful upstream tasks are not automatically rolled back if a later task fails. Make task effects idempotent or compensatable, persist commit/evidence boundaries and use [job control flow](https://docs.databricks.com/aws/en/jobs/control-flow) intentionally.
 
 Choose compute/configuration per task: high-memory needs do not justify oversizing every task; retries are unsafe for non-idempotent side effects; an optimization or automatic setting needs a measured purpose. Jobs can be created through UI, CLI or REST APIs, but the deployed definition should have one controlled source of truth.
+
+**VERIFY CURRENT — serverless retry controls:** serverless auto-optimization can add retries beyond the task retry policy. The [serverless Jobs guide](https://docs.databricks.com/aws/en/jobs/run-serverless-jobs) explains how to disable it for non-idempotent work and how notebook environment dependencies and preview high-memory settings differ from classic compute. Do not confuse this setting with Delta file optimization.
+
+The following is a **task-property fragment**, not a complete bundle. Confirm the current [bundle task schema](https://docs.databricks.com/aws/en/dev-tools/bundles/job-task-types) before deployment:
+
+```yaml
+max_retries: 0
+retry_on_timeout: false
+disable_auto_optimization: true
+```
+
+These settings limit automatic retries; they cannot prevent an operator from repairing the job or an external caller from starting another run. Preserve a business operation key even when retries are disabled.
 
 ### Test transformations and systems
 
@@ -146,15 +168,20 @@ An append-only pipeline promises it will not mutate earlier source events, not t
 
 Use projections and selective filters early, avoid unnecessary Python boundaries, and make join cardinality explicit. Broadcast only a genuinely bounded side. A window has partition and ordering semantics; an aggregate collapses grain. Validate before optimizing:
 
+The example below receives already validated line items. Route bad quantities, prices and missing keys to quarantine first. Require one product row per `product_id`; a duplicate dimension key would multiply revenue. Preserve unmatched, otherwise valid facts under an explicit unknown category.
+
 ```python
+from pyspark.sql import functions as F
+
 def build_daily_sales(lines, products):
     valid = lines.filter("quantity > 0 AND net_unit_price >= 0")
-    return (valid.join(products.select("product_id", "category"), "product_id")
+    return (valid.join(products.select("product_id", "category"), "product_id", "left")
+                 .withColumn("category", F.coalesce(F.col("category"), F.lit("UNKNOWN")))
                  .groupBy("order_date", "category")
                  .agg(F.sum(F.col("quantity") * F.col("net_unit_price")).alias("revenue")))
 ```
 
-Test unmatched product keys, duplicates, nulls and overflow/precision. Avoid `collect()` for production-scale data and arbitrary repartitioning without plan evidence.
+Test unmatched product keys, duplicates, nulls and decimal overflow/precision. Reserve the unknown label or use a dedicated dimension member to avoid confusing it with a real category. Avoid `collect()` for production-scale data and arbitrary repartitioning without plan evidence.
 
 ### Quarantine rather than silently coerce
 
@@ -230,6 +257,8 @@ Use [liquid clustering](https://docs.databricks.com/aws/en/delta/clustering), [d
 
 [Change Data Feed](https://docs.databricks.com/aws/en/delta/delta-change-data-feed) records row-level changes after enablement within table-history retention. It can drive incremental downstream work and address some full-read latency limitations. It does not contain changes from before enablement and is not an indefinite archive. Persist downstream progress and define behavior after the starting version ages out.
 
+A direct Delta stream normally expects append-only changes. `skipChangeCommits` bypasses modifying commits; it does not propagate their updates or deletes. For mutable sources, read CDF and handle the operation types deliberately. Its `update_preimage` is the old row, while `update_postimage` is the new row; do not turn both into competing current-state updates. See the [CDF reference](https://docs.databricks.com/aws/en/delta/delta-change-data-feed).
+
 > **Related item:** Checkpoint state tracks a streaming query; CDF exposes table changes; `AUTO CDC` applies ordered changes to a target. They are related but not interchangeable state mechanisms.
 
 ---
@@ -261,6 +290,8 @@ Build PII detection/classification before masking, cover batch and streaming pat
 ### Prove retention and purge
 
 Define data classes, legal/business retention, authoritative locations, replicas/shares/caches/checkpoints/backups, delete trigger, execution SLA and evidence. Delete or anonymize eligible records in tables; propagate to downstream materializations; revoke shared access; account for time travel and file cleanup. Aggressive `VACUUM` can break readers and recovery, while deleting a catalog entry alone may not delete external data.
+
+A deletion vector can make a row invisible without removing its bytes from existing files. In a disposable exercise, inspect deletion evidence, run `REORG TABLE catalog.schema.table APPLY (PURGE)` where supported, then retain evidence of eligible old-file cleanup through `VACUUM` after the applicable retention period. `REORG` rewrites affected files; old copies can still exist until cleanup. Do not shorten retention to make a test look successful. See [REORG TABLE](https://docs.databricks.com/aws/en/sql/language-manual/delta-reorg-table). This is table-level technical evidence, not a determination that every copy or legal obligation has been addressed.
 
 **VERIFY CURRENT:** retention, predictive maintenance, fine-grained controls, serverless identity and regional compliance behavior change. Validate in the actual cloud/account and involve legal/privacy owners.
 
@@ -334,6 +365,31 @@ Internal sources use Delta while a partner database is federated and an external
 
 An hourly pipeline exceeds SLA and fails after a downstream task side effect. Correlate job run, pipeline event log, query profile, Spark stages and billing/system tables. Identify skew/shuffle and a non-idempotent external write. Repair from a proven boundary, add a commit ledger/idempotency key, fix join/layout after a controlled comparison, add SLO/data-quality alerts and deploy through tested CI/CD. Prove totals and cost, not just faster completion.
 
+## Worked failure cases and diagnostic answers
+
+These are original learning exercises, separate from the vendor's sample questions.
+
+| Failure case | Expected reasoning and evidence |
+|---|---|
+| Batch 12 reaches the revenue table; the quarantine write fails | Preserve the checkpoint and application identity. On retry, the completed revenue write is recognized and quarantine can finish. Verify each table and reconcile input counts; there was a period of partial visibility. |
+| Customer 8 has two different states at sequence 40 | Reject the ambiguous source contract or obtain an authoritative secondary order. Arrival order cannot establish the correct history. |
+| Historical seed sequence 80 overlaps live sequence 79 for one key | The per-key cutover is invalid. Resolve the source boundary before loading; one global timestamp does not prove every key's ordering. |
+| A dashboard no longer shows a deleted row | That proves query visibility only. Check file rewrite/cleanup, history and downstream copies before concluding physical purge. |
+| A valid order references an absent product dimension | Preserve the fact as unknown or route it to an owned reconciliation process. An inner join would silently reduce totals. |
+
+1. **Does disabling task retries stop every repeat?** No. Serverless auto-optimization is a separate control, and manual repairs or repeated submissions still need idempotent effects.
+2. **Does one checkpoint make two destinations atomic?** No. Inspect separate commits and retry the incomplete work safely.
+3. **Can an empty micro-batch occur?** Yes; handle it without fabricating a business event.
+4. **Does a latest-timestamp sort resolve all CDC ordering?** No; different changes can tie and need an authoritative order.
+5. **Can a backfill be replayed after a full refresh?** Yes; retain its source and plan for the reset.
+6. **Does skipping source change commits synchronize deletions?** No; use an explicit change propagation strategy.
+7. **What does an update preimage represent?** The prior row, not another new state to append blindly.
+8. **Does `REORG ... PURGE` alone prove old files disappeared?** No; old-file retention and cleanup remain separate evidence.
+9. **Why test product-key uniqueness before aggregation?** A duplicate match multiplies fact rows and overstates revenue.
+10. **What belongs in a performance comparison?** Equal data and semantics, controlled compute/cache conditions, correctness totals and total cost alongside duration.
+
+**Review evidence — September 28, 2026:** a local SQLite exercise checked portable join and aggregate behavior, including missing and duplicate dimension keys. An in-memory model checked two-destination failure/retry and checkpoint-identity reasoning. The Python example and YAML fragment were parsed. These checks did not run Spark, Delta, Databricks Jobs, AUTO CDC, or physical purge. All eight workspace labs below remain proposed.
+
 ## Hands-on lab sequence
 
 1. **Project and tests:** Package two DataFrame transforms in a wheel; pin dependencies and add null/duplicate/empty/skew fixtures using DataFrame/schema equality helpers.
@@ -395,7 +451,7 @@ An hourly pipeline exceeds SLA and fails after a downstream task side effect. Co
 
 ## Places to learn
 
-This is **not a complete list**, and it is not a recommendation to consume everything. Pick the route that closes measured gaps, then spend substantial time building, breaking, observing, repairing and redeploying a system. Durations are planning estimates checked September 1, 2026 and may change.
+This is **not a complete list**, and it is not a recommendation to consume everything. Pick the route that closes measured gaps, then spend substantial time building, breaking, observing, repairing and redeploying a system. Public resource availability was checked September 28, 2026. Durations are editorial planning estimates, not confirmed paid-course runtimes. Signed-in Academy lessons were not inspected; Udemy and O'Reilly access was blocked, and Whizlabs returned no useful page body.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -403,6 +459,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | [Databricks Academy](https://customer-academy.databricks.com/) — *Advanced Data Engineering with Databricks* plus four named self-paced courses | Free account, customer/partner entitlement varies | 30–50 hours with labs; verify course visibility and runtime after sign-in |
 | [Databricks Free Edition](https://www.databricks.com/learn/free-edition) or an authorized workspace | Free account/organizational | 25–45 hours for the eight labs and failure experiments; some enterprise features require another environment |
 | [Databricks documentation](https://docs.databricks.com/aws/en/introduction/) | Free | 10–18 hours selected reproduction across pipelines, Jobs, governance, performance and deployment |
+| [CarlosR, Databricks employee: AUTO CDC engineering article (April 24, 2026)](https://community.databricks.com/t5/technical-blog/from-150-lines-of-merge-into-to-7-lines-of-sql-auto-cdc-comes-to/ba-p/155355) | Free technical blog | About 45–75 minutes to read and sketch replay/ordering tests; estimate includes the worksheet. Corroborate against current CDC docs; its simplified examples do not establish tie handling or replace a source contract. |
 | [Databricks YouTube](https://www.youtube.com/@Databricks) | Free | 4–8 hours selected recent Data + AI Summit, engineering, Lakeflow, Unity Catalog and performance sessions |
 | [Whizlabs: Databricks Data Engineer Professional](https://www.whizlabs.com/databricks-certified-data-engineer-professional/) | Paid; training/practice product | Public stable totals were not exposed; budget 8–18 hours and verify July 2026 alignment after sign-in |
 | [Udemy search: Data Engineer Professional](https://www.udemy.com/courses/search/?q=databricks%20data%20engineer%20professional) | Paid marketplace | 10–25 hours if a course demonstrably maps to the July 2026 guide; verify instructor, update, outline and avoid dump-focused listings |
