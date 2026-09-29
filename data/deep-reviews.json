@@ -5,6 +5,25 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK",
+      "reviewed_on": "2026-09-28",
+      "guide_sha256": "fa242611b5924475b91f63c6aceecf8b9094359ac68386d93288c8fa51fa3bdc",
+      "objective_count": 32,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-28-databricks-associate-developer-apache-spark-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-28-databricks-associate-developer-apache-spark-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "Same-context AI review; independent human review pending.",
+        "Actual Spark labs unexecuted: package download timed out and later WSL command startup stalled. Verified runtime archive is retained for follow-up; owned pending launcher processes were stopped.",
+        "SQLite reference assertions do not validate PySpark, Arrow/Pandas, Parquet, streaming, watermark state, checkpoint recovery, JDBC or remote Connect. Both guide Python blocks only parsed.",
+        "Official weighted objectives unchanged; monitor marks initial status capture because accepted lifecycle snapshot is absent. No accepted snapshots overwritten.",
+        "Academy sign-in lessons unavailable; OReilly/Udemy and community pages automation-blocked. Employee dedup blog was read through the web tool; retirement-thread claim remains attributed to earlier review."
+      ]
+    },
+    {
       "exam_code": "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE",
       "reviewed_on": "2026-09-28",
       "guide_sha256": "03291e8316a363864bd66a72b12a64f91a4571682869cf616f6965f1c73bad89",

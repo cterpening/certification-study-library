@@ -969,6 +969,8 @@ The review reconciles the detailed March 18, 2026 live-version PDF with the curr
 
 ## Databricks Associate Developer for Apache Spark coverage record
 
+The September 28 [deep review](research/2026-09-28-databricks-associate-developer-apache-spark-deep-review.md) maps 32 detailed objectives. Mapped 32 October 30 PDF objectives; repair JDBC partition/filter and ANSI assumptions, distinguish watermark dedup keys and stateless streaming AQE, add original code and twelve answers. Ten SQLite reference assertions pass; actual Spark execution remains blocked by local WSL setup/startup failures. Current guide citations: 18 registered, 13 reachable, 5 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Apache Spark Architecture and Components | Section 1, all integrated scenarios, and Lab 1 |

@@ -4,6 +4,163 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-databricksassociatedeveloperapachespark-deep-review",
+      "title": "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+      ],
+      "results": [
+        {
+          "exam_code": "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK-databricks-associate-developer-apache-spark.md",
+          "baseline_sha256": "be8712d6a32572ed7083e783da47aa3d4f42a180a58d424bb3a3b768e3989e1e",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Still-linked October 30, 2025 PDF has 32 leaf objectives; seven domain objective hash unchanged. Prior lifecycle snapshot absent, so initial capture is not a new lifecycle announcement."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Read official JDBC/null/streaming/dedup references and SQL/streaming migrations. Added scoped examples and execution boundary; no Spark lab success asserted."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Checked Spark SQL ANSI defaults and 4.1 stateless-streaming AQE migration boundary in current upstream documentation. Corrected overly broad stateful-streaming scenario."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Academy four-course route retained; Pluralsight 11 courses/5 labs/9 hours verified. Blocked paid metadata and prior retirement-thread access qualified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Repaired runtime-scope and deduplication gaps from primary references; added operator/key cases and source-qualified blog context. Local execution blocker tracked separately from source freshness."
+            }
+          },
+          "findings": [
+            {
+              "id": "databricksassociatedeveloperapachespark-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "JDBC partition bounds were not distinguished from filtering",
+              "url": "https://spark.apache.org/docs/latest/sql-data-sources-jdbc.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Official bounds define stride and query cannot combine with partitionColumn.",
+              "recommendation": "Add source-predicate and concurrency examples.",
+              "disposition": "applied",
+              "source_id": "spark-jdbc-reference",
+              "resolution": "Add source-predicate and concurrency examples."
+            },
+            {
+              "id": "databricksassociatedeveloperapachespark-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Watermark guidance implied too broad a state bound",
+              "url": "https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.dropDuplicatesWithinWatermark.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Classic dedup state depends on keys; within-watermark ID dedup is time-bounded.",
+              "recommendation": "Distinguish three operator/key contracts, timestamp-varying copies and permanent business uniqueness.",
+              "disposition": "applied",
+              "source_id": "spark-streaming-dedup-api",
+              "resolution": "Distinguish three operator/key contracts, timestamp-varying copies and permanent business uniqueness."
+            },
+            {
+              "id": "databricksassociatedeveloperapachespark-deep-3",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Stateful streaming scenario prescribed AQE too broadly",
+              "url": "https://spark.apache.org/docs/latest/streaming/ss-migration-guide.html",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Upstream 4.1 migration support is specifically stateless streaming.",
+              "recommendation": "Correct stateful scenario and explain engine/version boundary.",
+              "disposition": "applied",
+              "source_id": "spark-streaming-migration",
+              "resolution": "Correct stateful scenario and explain engine/version boundary."
+            },
+            {
+              "id": "databricksassociatedeveloperapachespark-deep-4",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Older cast expectations need an explicit runtime boundary",
+              "url": "https://spark.apache.org/docs/latest/sql-migration-guide.html",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "ANSI mode is enabled by default since Spark 4.0.",
+              "recommendation": "Add tolerant parsing/quarantine guidance with version and configuration evidence.",
+              "disposition": "applied",
+              "source_id": "spark-sql-migration",
+              "resolution": "Add tolerant parsing/quarantine guidance with version and configuration evidence."
+            },
+            {
+              "id": "databricksassociatedeveloperapachespark-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "DataFrame objectives lacked concrete adversarial fixtures",
+              "url": "https://spark.apache.org/docs/latest/sql-ref-null-semantics.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Null filtering, nondeterministic dedup, joins and position-based union need observable expectations.",
+              "recommendation": "Add original fixture, four decision cases and twelve answers; report actual execution limits.",
+              "disposition": "applied",
+              "source_id": "spark-null-semantics",
+              "resolution": "Add original fixture, four decision cases and twelve answers; report actual execution limits."
+            }
+          ],
+          "notes": "Mapped 32 October 30 PDF objectives; repair JDBC partition/filter and ANSI assumptions, distinguish watermark dedup keys and stateless streaming AQE, add original code and twelve answers. Ten SQLite reference assertions pass; actual Spark execution remains blocked by local WSL setup/startup failures. Same-context AI review; human review pending. See docs/research/2026-09-28-databricks-associate-developer-apache-spark-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 5,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-databricksgenerativeaiengineerassociate-deep-review",
       "title": "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE complete guide and learning-content review",
       "rubric_version": 1,

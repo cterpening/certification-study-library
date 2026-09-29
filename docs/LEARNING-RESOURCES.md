@@ -2465,6 +2465,26 @@ This is **not a complete list**, and it is not meant to be consumed in full. Pic
 
 Because this blueprint contains recently revised agent, Agent Bricks, MCP, Apps, AI Search/Vector Search, MLflow evaluation, AI Gateway and prompt-management topics, check the official page two weeks before the exam and revalidate documentation release stages. No exact current Pluralsight, Whizlabs or MeasureUp exam-aligned product was independently verified.
 
+### DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK — Databricks Certified Associate Developer for Apache Spark
+
+Resource details from the [DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK guide](../guides/DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK-databricks-associate-developer-apache-spark.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is **not a complete list**, and it is not meant to be consumed in full. Pick the resources that fit your gaps; spend most time writing, predicting, testing, and diagnosing Spark code. Public metadata was checked September 28, 2026: Pluralsight still lists 11 courses, 5 labs and 9 hours. Academy lessons require sign-in. Both O'Reilly book pages and Udemy blocked automated access, so previously observed editions, dates and durations below were not reverified. Other times are planning estimates.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official certification page and October 30, 2025 guide](https://www.databricks.com/learn/certification/apache-spark-developer-associate) | Free | 2–3 hours to map objectives and inspect vendor sample format; do not redistribute questions |
+| [Databricks Academy](https://customer-academy.databricks.com/) — *Introduction to Apache Spark*, *Developing Applications*, *Stream Processing and Analysis*, and *Monitoring and Optimizing Spark Workloads* | Free account/customer or partner entitlement varies | 20–35 hours with labs; catalog totals and availability require sign-in |
+| [Apache Spark documentation](https://spark.apache.org/docs/latest/) and [PySpark API](https://spark.apache.org/docs/latest/api/python/) | Free | 12–20 hours selected architecture, SQL/DataFrame, streaming, Connect and pandas/API work |
+| Databricks Free Edition/local Spark plus this guide's eight labs | Free/organizational | 25–45 hours including skew, recovery, logs/UI and remote/Connect experiments |
+| [Streaming-deduplication walkthrough](https://community.databricks.com/t5/technical-blog/deep-dive-streaming-deduplication/ba-p/105062) — Murali Talluri, January 10, 2025 | Free | 30–45 minutes reading plus 1–2 hours comparing duplicate keys, event times and state; verify current APIs |
+| [Pluralsight: Apache Spark for Data Scientists](https://www.pluralsight.com/paths/apache-spark-for-data-scientists) | Paid/trial; 11 courses and 5 labs | 9 hours listed plus 6–12 hours applied practice; map out-of-scope ML/Graph work and close Connect/deployment gaps |
+| [O'Reilly: Learning Spark, 2nd Edition](https://www.oreilly.com/library/view/learning-spark-2nd/9781492050032/) | Paid/trial; 397-page 2020 book | 9 hours 49 minutes listed plus labs; strong Chapters 2–8, but Spark 3-era and requires current Connect/Pandas/API checks |
+| [O'Reilly: High Performance Spark, 2nd Edition](https://www.oreilly.com/library/view/high-performance-spark/9781098145842/) | Paid/trial; June 2026 Spark 4.x book | 10 hours 46 minutes listed; select architecture/skew/tuning/Connect sections—advanced and intentionally broader than the exam |
+| [Udemy: Apache Spark 4 hands-on guide — Ansh Lamba](https://www.udemy.com/course/databricks-certified-associate-developer-for-apache-spark-4/) | Paid; July 2026 update previously observed; not reverified September 28 | 20–35 hours planning estimate with exercises; verify exact runtime and October 2025 blueprint mapping |
+
+The current exam has no API documentation aid. The linked official guide supplies sample-format questions; the previously cited community statement about practice-exam availability could not be reverified on this date. No exact current MeasureUp, Whizlabs, or exam-aligned O'Reilly/LinkedIn Learning product was independently verified. Reject resources that advertise recalled/real questions or still teach the retired Spark 3.0 exam format as current.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

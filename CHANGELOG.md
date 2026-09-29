@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: [DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK deep review](docs/research/2026-09-28-databricks-associate-developer-apache-spark-deep-review.md): map 32 objectives; repair JDBC, cast, watermark and AQE guidance; add 12 answers; record Spark/WSL execution blocker and 10 portable SQL checks.
+
 - September 28, 2026: [DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE deep review](docs/research/2026-09-28-databricks-generative-ai-engineer-associate-deep-review.md): map 56 objectives; repair retrieval authorization and scorer coverage guidance; execute 27 local retrieval/PyFunc/MLflow checks.
 
 - September 28, 2026: [DATABRICKS-MACHINE-LEARNING-PROFESSIONAL deep review](docs/research/2026-09-28-databricks-machine-learning-professional-deep-review.md): map 47 objectives; track profiling-window ambiguity; repair monitoring and online-store references; execute 20 local PyFunc/Optuna/MLflow checks.

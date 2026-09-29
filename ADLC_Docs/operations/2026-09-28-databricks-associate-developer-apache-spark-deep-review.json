@@ -1,0 +1,1290 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK-databricks-associate-developer-apache-spark.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "19e64eece4febd930d601d6d0b591e0837c07e68cda963b01fda3a32ce0c1551",
+  "guide_after_sha256": "fa242611b5924475b91f63c6aceecf8b9094359ac68386d93288c8fa51fa3bdc",
+  "prior_records": {
+    "exam": {
+      "code": "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK",
+      "level": "intermediate",
+      "vendor_id": "databricks",
+      "title": "Databricks Certified Associate Developer for Apache Spark",
+      "status": "active",
+      "study_guide_url": "https://www.databricks.com/learn/certification/apache-spark-developer-associate",
+      "guide_path": "guides/DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK-databricks-associate-developer-apache-spark.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; the official guide recommends related training and six months of hands-on Apache Spark experience. Practice Python/SQL, driver/executor and job/stage/task execution, schemas and I/O, DataFrame operations, joins/aggregates/UDFs, partitions/shuffles/AQE/UI/log diagnosis, Structured Streaming recovery/state, Spark Connect and Pandas API on Spark."
+    },
+    "review": {
+      "id": "databricks-associate-developer-apache-spark-2026-09-01-source-validation",
+      "exam_code": "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK",
+      "guide_path": "guides/DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK-databricks-associate-developer-apache-spark.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/databricks-associate-developer-apache-spark-official-objectives.txt",
+      "blueprint_snapshot_sha256": "b99b2c70f389d4626fa92d378fddd8caf10253dd24357b6bb5040e7f8a61430f",
+      "objective_coverage": [
+        {
+          "objective_group": "Apache Spark Architecture and Components",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Using Spark SQL",
+          "guide_sections": [
+            "Section 2",
+            "Daily-customer-file scenario",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Developing Apache Spark™ DataFrame/DataSet API Applications",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Troubleshooting and Tuning Apache Spark DataFrame API Applications",
+          "guide_sections": [
+            "Section 4",
+            "Skewed-clickstream scenario",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Structured Streaming",
+          "guide_sections": [
+            "Section 5",
+            "Skewed-clickstream scenario",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Using Spark Connect to deploy applications",
+          "guide_sections": [
+            "Section 6",
+            "Remote-application scenario",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Using Pandas API on Apache Spark",
+          "guide_sections": [
+            "Section 7",
+            "All integrated scenarios",
+            "Labs 4 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 7,
+        "access_blocked": 4,
+        "missing_or_error": 0
+      },
+      "notes": "The October 30, 2025 detailed live-version PDF and current seven-domain weighted page were reconciled. The guide explicitly distinguishes the active 45-question, 90-minute, Python-focused, no-test-aid exam from the retired Spark 3.0 Python/Scala credential and stale commercial metadata. Three scenarios, eight labs and 39 original checks cover driver/executor/resources, session/structured APIs, application-job-stage-task execution, partitions/shuffles/cache/GC/fault tolerance; schema-aware file/JDBC SQL I/O, modes/tables/views; column/null/dedup/aggregate/date/join/union/I/O/UDF/shared-variable operations; repartition/coalesce/skew/AQE/UI/log diagnosis; streaming output/state/watermark/checkpoint/recovery; Connect versus deployment modes; and Pandas API/Pandas UDF boundaries. All 11 guide URLs are cataloged: 7 reachable and Databricks Community, two O'Reilly books and Udemy automation-blocked; none missing or broken. Vendor sample questions are linked rather than reproduced, and the broken Spark 4.2 pandas documentation route discovered during review was replaced with its current canonical path."
+    },
+    "sources": [
+      {
+        "id": "databricks-dea-academy",
+        "title": "Databricks Academy",
+        "url": "https://customer-academy.databricks.com/",
+        "publisher": "Databricks",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+          "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+          "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE",
+          "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+        ],
+        "notes": "Hosts official self-paced learning; catalog and entitlements can differ for customer, partner and individual accounts."
+      },
+      {
+        "id": "databricks-spark-blueprint",
+        "title": "Databricks Certified Associate Developer for Apache Spark",
+        "url": "https://www.databricks.com/learn/certification/apache-spark-developer-associate",
+        "publisher": "Databricks",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+        ],
+        "notes": "Canonical live seven-domain weighted coverage and assessment-details page; monitored by the Databricks certification adapter."
+      },
+      {
+        "id": "databricks-spark-exam-guide-oct-2025",
+        "title": "Databricks Certified Associate Developer for Apache Spark exam guide — October 30, 2025",
+        "url": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-associate-developer-apache-spark-exam-guide-oct-2025.pdf",
+        "publisher": "Databricks",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+        ],
+        "notes": "Detailed official live-version objective baseline and current 45-question/no-test-aid format; includes vendor sample questions linked rather than reproduced."
+      },
+      {
+        "id": "databricks-spark-retired-3-community",
+        "title": "Databricks staff retirement confirmation for Apache Spark 3.0 credential",
+        "url": "https://community.databricks.com/t5/certifications/databricks-certified-associate-developer-for-apache-spark-3-0/m-p/118717/highlight/true",
+        "publisher": "Databricks Community",
+        "authority_class": 2,
+        "source_type": "lifecycle-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+        ],
+        "notes": "Databricks employee response confirms the prior Spark 3.0 exam retired and points to the updated certification; retained to prevent stale-course confusion."
+      },
+      {
+        "id": "databricks-spark-docs",
+        "title": "Apache Spark documentation",
+        "url": "https://spark.apache.org/docs/latest/",
+        "publisher": "Apache Spark",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+        ],
+        "notes": "Current upstream architecture, SQL/DataFrame, Structured Streaming, deployment and operations documentation hub."
+      },
+      {
+        "id": "databricks-spark-pyspark-api",
+        "title": "PySpark API reference",
+        "url": "https://spark.apache.org/docs/latest/api/python/",
+        "publisher": "Apache Spark",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+        ],
+        "notes": "Current upstream Python API reference; the exam provides no API documentation aid, so use it during learning rather than as a memorization substitute."
+      },
+      {
+        "id": "databricks-spark-connect",
+        "title": "Spark Connect overview",
+        "url": "https://spark.apache.org/docs/latest/spark-connect-overview.html",
+        "publisher": "Apache Spark",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+        ],
+        "notes": "Current upstream client/server logical-plan architecture and compatibility/limitation reference."
+      },
+      {
+        "id": "databricks-spark-pandas-api",
+        "title": "Pandas API on Spark user guide",
+        "url": "https://spark.apache.org/docs/latest/api/python/tutorial/pandas_on_spark/index.html",
+        "publisher": "Apache Spark",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+        ],
+        "notes": "Current upstream pandas-like distributed API guidance and execution caveats."
+      },
+      {
+        "id": "databricks-spark-pluralsight",
+        "title": "Apache Spark for Data Scientists learning path",
+        "url": "https://www.pluralsight.com/paths/apache-spark-for-data-scientists",
+        "publisher": "Pluralsight",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+        ],
+        "notes": "Nine-hour path with 11 courses and five labs when checked; maps well to most domains but includes out-of-scope ML/Graph material and requires a Connect/deployment gap check."
+      },
+      {
+        "id": "databricks-spark-oreilly-learning",
+        "title": "Learning Spark, 2nd Edition",
+        "url": "https://www.oreilly.com/library/view/learning-spark-2nd/9781492050032/",
+        "publisher": "O'Reilly Media",
+        "authority_class": 4,
+        "source_type": "book",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+        ],
+        "notes": "397-page, nine-hour-49-minute Spark 3-era book; strong architecture/structured API/SQL/tuning/streaming foundation but requires current Connect/Pandas/API gap checks."
+      },
+      {
+        "id": "databricks-spark-oreilly-performance",
+        "title": "High Performance Spark, 2nd Edition",
+        "url": "https://www.oreilly.com/library/view/high-performance-spark/9781098145842/",
+        "publisher": "O'Reilly Media",
+        "authority_class": 4,
+        "source_type": "book",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+        ],
+        "notes": "June 2026 Spark 4.x, 412-page, ten-hour-46-minute advanced book; select architecture, skew, tuning and Connect topics rather than consuming it as an exam checklist."
+      },
+      {
+        "id": "databricks-spark-udemy-lamba",
+        "title": "Databricks Certified Associate Developer for Apache Spark 4 — Ansh Lamba",
+        "url": "https://www.udemy.com/course/databricks-certified-associate-developer-for-apache-spark-4/",
+        "publisher": "Udemy",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+        ],
+        "notes": "Hands-on Spark 4 course updated July 2026 when checked; verify exact runtime and map every unit to the October 2025 official blueprint."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "ccf41eb508b07f28d7057d4bfd1ff26b8aa8a9dacce1985ad22d702a0a618716",
+      "guide_sections": [
+        "1. Apache Spark Architecture and Components (20%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "5abf5856515acb0b4d03603719505cd01174ca743df3f69b52c65dc60591eb0b",
+      "guide_sections": [
+        "1. Apache Spark Architecture and Components (20%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "81474a72502929d1df9589dc66cfd0b37cac5c1d258e092086db384e05f928ab",
+      "guide_sections": [
+        "1. Apache Spark Architecture and Components (20%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "ab1c74bff9af7f9f20a3fa1b9e4e89644a0cac7fa9a2b34da7c010386b82ad81",
+      "guide_sections": [
+        "1. Apache Spark Architecture and Components (20%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "3fc5d36977f148b7aa48d19fe633db70ed486bb1530fd91a6be1767ec4bc5471",
+      "guide_sections": [
+        "1. Apache Spark Architecture and Components (20%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "e8e8e2d1bf79d253b6cd8a62629646e2a8e22936ea42cb3e0d80009b8af8fd5f",
+      "guide_sections": [
+        "1. Apache Spark Architecture and Components (20%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "19276ae1ba8312c4908887d7f930cc41adf8012ecc4ef63490f8642bb102d087",
+      "guide_sections": [
+        "1. Apache Spark Architecture and Components (20%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "d735881d553d4a3d86920f9de20ad4b6f9db5d3c662b7d19581eca0c21bdcfd2",
+      "guide_sections": [
+        "2. Using Spark SQL (20%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "c58516c8d4ce3b49265ed97a8d47d49ece850b9bbd54e2cdc2b19ecd262455d6",
+      "guide_sections": [
+        "2. Using Spark SQL (20%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "9942db31267566e32f03c142e14f4325b4ff8ca9f5c7e2e7d672002a2ce48842",
+      "guide_sections": [
+        "2. Using Spark SQL (20%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "139962e02789ce7116acd597098a508edc0b7d7ec3076aa5a07063fbcd3965f8",
+      "guide_sections": [
+        "2. Using Spark SQL (20%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "61649b5bbf6374b5f9c2b894cac6dbe7467cdb9f6011899f58e0cf8ecc79140d",
+      "guide_sections": [
+        "3. Developing DataFrame/Dataset API Applications (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "7e5338624d1698a41ddd2f1ef1be00321bf26035cc1fecc05045b2375538e5e2",
+      "guide_sections": [
+        "3. Developing DataFrame/Dataset API Applications (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "788a751834790ad4cb71f6ce8687acfee133cafe4b786e51ac0f14dd03b78565",
+      "guide_sections": [
+        "3. Developing DataFrame/Dataset API Applications (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "42390362b43ba396c1f3d706683a1cb027535e2f0f54455432d7b5ac47ab2f36",
+      "guide_sections": [
+        "3. Developing DataFrame/Dataset API Applications (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "02389fb72805111cc5d65845e0912ebe93ea1430f3ea8903746536c94490abcc",
+      "guide_sections": [
+        "3. Developing DataFrame/Dataset API Applications (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "d07d165332420ddec76cdc6c3e99fda6a3a8c7884e15de804c063dc3f9ca2474",
+      "guide_sections": [
+        "3. Developing DataFrame/Dataset API Applications (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "1501013a6013f51f021f3dda8b33d24b6feded364ceb60dd0804fc54d708c898",
+      "guide_sections": [
+        "3. Developing DataFrame/Dataset API Applications (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "584d881d904d3d68a87bc652eff4697cb9de71383ab956265b401f6b7b147ff0",
+      "guide_sections": [
+        "3. Developing DataFrame/Dataset API Applications (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "8170540ff9c28f8a3ac63c060fa454337f8b25c0376e116d85e52060033b7d23",
+      "guide_sections": [
+        "3. Developing DataFrame/Dataset API Applications (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 10,
+      "objective_sha256": "dc9a1825a4abe9e81bc36f457d9263be2ac5f7110862599cd87cc2994a9ed527",
+      "guide_sections": [
+        "3. Developing DataFrame/Dataset API Applications (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "0194988157c1d8706f9f1068224fbeec65c9cede917212285e104b8190ee9827",
+      "guide_sections": [
+        "4. Troubleshooting and Tuning DataFrame Applications (10%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "cf248fad2d241f17ffdeffd8d6dbd7b24e722aba03abe907f49da53d4ebc7ec6",
+      "guide_sections": [
+        "4. Troubleshooting and Tuning DataFrame Applications (10%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "e5442eb4a9f5850d6acc00791a7786432dccf7de0f4ad3da51995f4d71cadec7",
+      "guide_sections": [
+        "4. Troubleshooting and Tuning DataFrame Applications (10%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "58fb08d2dc660f01ddeb9e8a29527491606f7837c194509263a3a09738108300",
+      "guide_sections": [
+        "5. Structured Streaming (10%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "d064162f33efd87eacb7d24196412ee155344dacb838d261bcd1d03e4a62b1a0",
+      "guide_sections": [
+        "5. Structured Streaming (10%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "8a47dd71a4e848f8bb0b5fe367e9f110387a8ffce5d8af87ea94b05f9cda1dc6",
+      "guide_sections": [
+        "5. Structured Streaming (10%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "4e0d99bbc143dad54c43b9983982afbb11e9f824df982083ee279c615c1f361a",
+      "guide_sections": [
+        "5. Structured Streaming (10%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "96b7b433120a6a1e43419da93cfc2665b699e47b538b4138f63111f4e65c535b",
+      "guide_sections": [
+        "6. Spark Connect and Deployment Modes (5%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "6a2dc677709091ed80cc08603f1c72fedb440e176b09608857c343e3d76ce857",
+      "guide_sections": [
+        "6. Spark Connect and Deployment Modes (5%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "69e44f5247ec3205375c6211cd3fc5ac34baad758d2dbcf42104b57f604176fb",
+      "guide_sections": [
+        "7. Pandas API on Spark (5%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "581d8038bd33a166468493557755ec789bf8747d5a88c7daba102a8b378ad0c6",
+      "guide_sections": [
+        "7. Pandas API on Spark (5%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK",
+        "title": "Databricks Certified Associate Developer for Apache Spark",
+        "url": "https://www.databricks.com/learn/certification/apache-spark-developer-associate",
+        "guide_path": "guides/DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK-databricks-associate-developer-apache-spark.md",
+        "snapshot_path": "data\\objective-snapshots\\databricks-associate-developer-apache-spark-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\databricks-associate-developer-apache-spark-official-status.json",
+        "previous_sha256": "b99b2c70f389d4626fa92d378fddd8caf10253dd24357b6bb5040e7f8a61430f",
+        "current_sha256": "b99b2c70f389d4626fa92d378fddd8caf10253dd24357b6bb5040e7f8a61430f",
+        "previous_status_sha256": null,
+        "current_status_sha256": "6aee0137b6c4de96c87386f052a6b27a7fd2752cf4387ee386f312a35e5c431b",
+        "official_status": {
+          "skills_versions": [
+            "Databricks Certified Associate Developer for Apache Spark — public certification page",
+            "Type: Proctored certification",
+            "Total number of scored questions: 45",
+            "Time limit: 90 minutes",
+            "Question types: Multiple choice",
+            "Languages: English",
+            "Delivery Method: Online or test center",
+            "Recommended experience: 6+ months of hands-on experience performing the tasks outlined in the exam guide",
+            "Validity period: 2 years"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 18,
+    "reachable": 13,
+    "access_blocked": 5,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "databricks-dea-academy",
+      "url": "https://customer-academy.databricks.com/",
+      "checked_at": "2026-09-29T01:21:10.603855+00:00",
+      "health": {
+        "id": "databricks-dea-academy",
+        "url": "https://customer-academy.databricks.com/",
+        "checked_at": "2026-09-29T01:21:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://customer-academy.databricks.com/learn",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Loading",
+        "canonical_url": "https://customer-academy.databricks.com/learn",
+        "duration_signals": [],
+        "signal_fingerprint": "1dce398a1aa27fcf333c855d182c5c5ced7396d33bb07d51c89b8e50683ae480",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://customer-academy.databricks.com/learn",
+      "sha256": "14f89b57c71f6fff15e67ea2b452b2e5f796e19a3dd9c6c89a368c9d99df63d5",
+      "text_characters": 7
+    },
+    {
+      "id": "databricks-spark-blueprint",
+      "url": "https://www.databricks.com/learn/certification/apache-spark-developer-associate",
+      "checked_at": "2026-09-29T01:21:10.604531+00:00",
+      "health": {
+        "id": "databricks-spark-blueprint",
+        "url": "https://www.databricks.com/learn/certification/apache-spark-developer-associate",
+        "checked_at": "2026-09-29T01:21:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.databricks.com/learn/certification/apache-spark-developer-associate",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Databricks Certified Associate Developer for Apache Spark",
+        "canonical_url": "https://www.databricks.com/learn/certification/apache-spark-developer-associate",
+        "duration_signals": [
+          "90 minutes"
+        ],
+        "signal_fingerprint": "82e30e1188848991c701bbbaaed34fd1035dd9b0041f578832ed4899abe47f59",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.databricks.com/learn/certification/apache-spark-developer-associate",
+      "sha256": "6155f0df637e2d6a0b6f181f5526ba8cdc8af7b10f2942de21bb71c11ab910ca",
+      "text_characters": 3195
+    },
+    {
+      "id": "databricks-spark-exam-guide-oct-2025",
+      "url": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-associate-developer-apache-spark-exam-guide-oct-2025.pdf",
+      "checked_at": "2026-09-29T01:21:10.604931+00:00",
+      "health": {
+        "id": "databricks-spark-exam-guide-oct-2025",
+        "url": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-associate-developer-apache-spark-exam-guide-oct-2025.pdf",
+        "checked_at": "2026-09-29T01:21:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-associate-developer-apache-spark-exam-guide-oct-2025.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-associate-developer-apache-spark-exam-guide-oct-2025.pdf",
+      "sha256": "9ee0f336160ed9c013ef69888be0c6de2970060175b31bc91bc02b84ba9da26d",
+      "text_characters": 3962,
+      "representation_note": "Original response is a PDF. Separately decoded with pypdf; objective section reviewed before the sample-question section, vendor samples not reproduced. HTML visible-text extraction is not used as objective evidence."
+    },
+    {
+      "id": "databricks-spark-retired-3-community",
+      "url": "https://community.databricks.com/t5/certifications/databricks-certified-associate-developer-for-apache-spark-3-0/m-p/118717/highlight/true",
+      "checked_at": "2026-09-29T01:21:11.127554+00:00",
+      "health": {
+        "id": "databricks-spark-retired-3-community",
+        "url": "https://community.databricks.com/t5/certifications/databricks-certified-associate-developer-for-apache-spark-3-0/m-p/118717/highlight/true",
+        "checked_at": "2026-09-29T01:21:11+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://community.databricks.com/t5/certifications/databricks-certified-associate-developer-for-apache-spark-3-0/m-p/118717/highlight/true",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "databricks-spark-docs",
+      "url": "https://spark.apache.org/docs/latest/",
+      "checked_at": "2026-09-29T01:21:11.298191+00:00",
+      "health": {
+        "id": "databricks-spark-docs",
+        "url": "https://spark.apache.org/docs/latest/",
+        "checked_at": "2026-09-29T01:21:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://spark.apache.org/docs/latest/",
+        "content_type": "text/html",
+        "page_title": "Overview - Spark 4.2.0 Documentation",
+        "canonical_url": "https://spark.apache.org/docs/latest/",
+        "duration_signals": [
+          "about 5 minutes"
+        ],
+        "signal_fingerprint": "04582e9d1e10b14d60ee769eac7009aef5d6fb4c07d9a76059697d9add9acf66",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://spark.apache.org/docs/latest/",
+      "sha256": "3d8b7fcf4e328800f29c47de47d8f91f15eade1f1a0859361d025ee68938506c",
+      "text_characters": 7384
+    },
+    {
+      "id": "databricks-spark-pyspark-api",
+      "url": "https://spark.apache.org/docs/latest/api/python/",
+      "checked_at": "2026-09-29T01:21:11.309038+00:00",
+      "health": {
+        "id": "databricks-spark-pyspark-api",
+        "url": "https://spark.apache.org/docs/latest/api/python/",
+        "checked_at": "2026-09-29T01:21:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://spark.apache.org/docs/latest/api/python/",
+        "content_type": "text/html",
+        "page_title": "PySpark Overview — PySpark 4.2.0 documentation",
+        "canonical_url": "https://spark.apache.org/docs/latest/api/python/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "30a84b20d1c138cffcd20de9c326af84c19a04013c11e142727a87da7f7a4407",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://spark.apache.org/docs/latest/api/python/",
+      "sha256": "eb0b475fe6bdc1e8db15ec083ff5b56d86ed6256b048b0c3c7ee651cb75b87b3",
+      "text_characters": 4759
+    },
+    {
+      "id": "databricks-spark-connect",
+      "url": "https://spark.apache.org/docs/latest/spark-connect-overview.html",
+      "checked_at": "2026-09-29T01:21:11.526463+00:00",
+      "health": {
+        "id": "databricks-spark-connect",
+        "url": "https://spark.apache.org/docs/latest/spark-connect-overview.html",
+        "checked_at": "2026-09-29T01:21:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://spark.apache.org/docs/latest/spark-connect-overview.html",
+        "content_type": "text/html",
+        "page_title": "Spark Connect Overview - Spark 4.2.0 Documentation",
+        "canonical_url": "https://spark.apache.org/docs/latest/spark-connect-overview.html",
+        "duration_signals": [],
+        "signal_fingerprint": "edf0c29df739dd6ea6e1f15e535e5599ea2115b72878df7d82dcc8b79eade966",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://spark.apache.org/docs/latest/spark-connect-overview.html",
+      "sha256": "11ae652071777195cd084799b996d3f6808e7c02dbff5076399c5549bd279815",
+      "text_characters": 13833
+    },
+    {
+      "id": "databricks-spark-pandas-api",
+      "url": "https://spark.apache.org/docs/latest/api/python/tutorial/pandas_on_spark/index.html",
+      "checked_at": "2026-09-29T01:21:11.636921+00:00",
+      "health": {
+        "id": "databricks-spark-pandas-api",
+        "url": "https://spark.apache.org/docs/latest/api/python/tutorial/pandas_on_spark/index.html",
+        "checked_at": "2026-09-29T01:21:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://spark.apache.org/docs/latest/api/python/tutorial/pandas_on_spark/index.html",
+        "content_type": "text/html",
+        "page_title": "Pandas API on Spark — PySpark 4.2.0 documentation",
+        "canonical_url": "https://spark.apache.org/docs/latest/api/python/tutorial/pandas_on_spark/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e141ba82db4a9f235d44f0ab091e445a183b98c72e4bd919152da9d8a6930806",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://spark.apache.org/docs/latest/api/python/tutorial/pandas_on_spark/index.html",
+      "sha256": "e939ee59e1d1ca63a5ece8ee4dcd89f59747265954e0e7e3b54f87caee547542",
+      "text_characters": 1700
+    },
+    {
+      "id": "databricks-spark-pluralsight",
+      "url": "https://www.pluralsight.com/paths/apache-spark-for-data-scientists",
+      "checked_at": "2026-09-29T01:21:11.637350+00:00",
+      "health": {
+        "id": "databricks-spark-pluralsight",
+        "url": "https://www.pluralsight.com/paths/apache-spark-for-data-scientists",
+        "checked_at": "2026-09-29T01:21:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/apache-spark-for-data-scientists",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Apache Spark for Data Scientists",
+        "canonical_url": "https://www.pluralsight.com/paths/apache-spark-for-data-scientists",
+        "duration_signals": [
+          "10 minutes",
+          "9 Hours"
+        ],
+        "signal_fingerprint": "e90daabe52bdf387851b715438d980be0b30f19c06eaa5cac77d71d0e13c62b6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/apache-spark-for-data-scientists",
+      "sha256": "fc33295a416f0de052bc29723efc3047a6dccb91bf65adb697638869c1b77a16",
+      "text_characters": 8134
+    },
+    {
+      "id": "databricks-spark-oreilly-learning",
+      "url": "https://www.oreilly.com/library/view/learning-spark-2nd/9781492050032/",
+      "checked_at": "2026-09-29T01:21:11.815614+00:00",
+      "health": {
+        "id": "databricks-spark-oreilly-learning",
+        "url": "https://www.oreilly.com/library/view/learning-spark-2nd/9781492050032/",
+        "checked_at": "2026-09-29T01:21:11+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/learning-spark-2nd/9781492050032/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "databricks-spark-oreilly-performance",
+      "url": "https://www.oreilly.com/library/view/high-performance-spark/9781098145842/",
+      "checked_at": "2026-09-29T01:21:11.973720+00:00",
+      "health": {
+        "id": "databricks-spark-oreilly-performance",
+        "url": "https://www.oreilly.com/library/view/high-performance-spark/9781098145842/",
+        "checked_at": "2026-09-29T01:21:11+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/high-performance-spark/9781098145842/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "databricks-spark-udemy-lamba",
+      "url": "https://www.udemy.com/course/databricks-certified-associate-developer-for-apache-spark-4/",
+      "checked_at": "2026-09-29T01:21:11.981565+00:00",
+      "health": {
+        "id": "databricks-spark-udemy-lamba",
+        "url": "https://www.udemy.com/course/databricks-certified-associate-developer-for-apache-spark-4/",
+        "checked_at": "2026-09-29T01:21:11+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/databricks-certified-associate-developer-for-apache-spark-4/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "spark-jdbc-reference",
+      "url": "https://spark.apache.org/docs/latest/sql-data-sources-jdbc.html",
+      "checked_at": "2026-09-29T01:24:00.589234+00:00",
+      "health": {
+        "id": "spark-jdbc-reference",
+        "url": "https://spark.apache.org/docs/latest/sql-data-sources-jdbc.html",
+        "checked_at": "2026-09-29T01:24:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://spark.apache.org/docs/latest/sql-data-sources-jdbc.html",
+        "content_type": "text/html",
+        "page_title": "JDBC To Other Databases - Spark 4.2.0 Documentation",
+        "canonical_url": "https://spark.apache.org/docs/latest/sql-data-sources-jdbc.html",
+        "duration_signals": [],
+        "signal_fingerprint": "faa087ca3db6002283945dd36eae94b250ae0b23fbc5cbb34a1e4dba3036661f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://spark.apache.org/docs/latest/sql-data-sources-jdbc.html",
+      "sha256": "428940edda9c96accf3c35ee1b79c3cbe8e3a528edeb88e77f0ccd9d4e319db9",
+      "text_characters": 38950
+    },
+    {
+      "id": "spark-streaming-reference",
+      "url": "https://spark.apache.org/docs/latest/streaming/apis-on-dataframes-and-datasets.html",
+      "checked_at": "2026-09-29T01:24:00.589754+00:00",
+      "health": {
+        "id": "spark-streaming-reference",
+        "url": "https://spark.apache.org/docs/latest/streaming/apis-on-dataframes-and-datasets.html",
+        "checked_at": "2026-09-29T01:24:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://spark.apache.org/docs/latest/streaming/apis-on-dataframes-and-datasets.html",
+        "content_type": "text/html",
+        "page_title": "Structured Streaming Programming Guide - Spark 4.2.0 Documentation",
+        "canonical_url": "https://spark.apache.org/docs/latest/streaming/apis-on-dataframes-and-datasets.html",
+        "duration_signals": [
+          "1 HOUR",
+          "1 hour",
+          "1 min",
+          "10 hours",
+          "10 mins",
+          "10 minute",
+          "10 minutes",
+          "2 hours",
+          "3 hours",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "9a81742bb13880edec48b3c1b390dfc6406c28ef9aec8703971660f3dd571ed6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://spark.apache.org/docs/latest/streaming/apis-on-dataframes-and-datasets.html",
+      "sha256": "2e789864f2404d3a44aa687fd42d1f18f31150cb91e4b6dda8e7198f0d1c0b54",
+      "text_characters": 115645
+    },
+    {
+      "id": "spark-streaming-migration",
+      "url": "https://spark.apache.org/docs/latest/streaming/ss-migration-guide.html",
+      "checked_at": "2026-09-29T01:26:58.367250+00:00",
+      "health": {
+        "id": "spark-streaming-migration",
+        "url": "https://spark.apache.org/docs/latest/streaming/ss-migration-guide.html",
+        "checked_at": "2026-09-29T01:26:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://spark.apache.org/docs/latest/streaming/ss-migration-guide.html",
+        "content_type": "text/html",
+        "page_title": "Migration Guide: Structured Streaming - Spark 4.2.0 Documentation",
+        "canonical_url": "https://spark.apache.org/docs/latest/streaming/ss-migration-guide.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3b8f779961b6705f5d299ab1181d09963250d05f8693f0cef8dc9c57faaae03a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://spark.apache.org/docs/latest/streaming/ss-migration-guide.html",
+      "sha256": "7c70b80c353de52e53e007dbac0c5aec56fa6aa1e96c4fe1c02e4717bfe24c2f",
+      "text_characters": 6335
+    },
+    {
+      "id": "spark-sql-migration",
+      "url": "https://spark.apache.org/docs/latest/sql-migration-guide.html",
+      "checked_at": "2026-09-29T01:24:00.897335+00:00",
+      "health": {
+        "id": "spark-sql-migration",
+        "url": "https://spark.apache.org/docs/latest/sql-migration-guide.html",
+        "checked_at": "2026-09-29T01:24:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://spark.apache.org/docs/latest/sql-migration-guide.html",
+        "content_type": "text/html",
+        "page_title": "Migration Guide: SQL, Datasets and DataFrame - Spark 4.2.0 Documentation",
+        "canonical_url": "https://spark.apache.org/docs/latest/sql-migration-guide.html",
+        "duration_signals": [
+          "1 hour",
+          "10 hours 20 minutes",
+          "12 hours",
+          "2 hours"
+        ],
+        "signal_fingerprint": "20a67cebc8ec566e1467542d620b96465502661217ddc7c778cb48a3466de39e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://spark.apache.org/docs/latest/sql-migration-guide.html",
+      "sha256": "51e632c10d1342c653993f4ebed547809949c87279899e0bbaf21b9df26a00c9",
+      "text_characters": 113611
+    },
+    {
+      "id": "spark-null-semantics",
+      "url": "https://spark.apache.org/docs/latest/sql-ref-null-semantics.html",
+      "checked_at": "2026-09-29T01:24:00.971382+00:00",
+      "health": {
+        "id": "spark-null-semantics",
+        "url": "https://spark.apache.org/docs/latest/sql-ref-null-semantics.html",
+        "checked_at": "2026-09-29T01:24:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://spark.apache.org/docs/latest/sql-ref-null-semantics.html",
+        "content_type": "text/html",
+        "page_title": "NULL Semantics - Spark 4.2.0 Documentation",
+        "canonical_url": "https://spark.apache.org/docs/latest/sql-ref-null-semantics.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d2f9455b209e2b546351158357c0b4ca098c106c57d7695dbfd4fc9403e435da",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://spark.apache.org/docs/latest/sql-ref-null-semantics.html",
+      "sha256": "c899288bd584b80472d60edca656f66c9cfd9f383aab9aab7d1d3cea125271e0",
+      "text_characters": 16966
+    },
+    {
+      "id": "spark-streaming-dedup-api",
+      "url": "https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.dropDuplicatesWithinWatermark.html",
+      "checked_at": "2026-09-29T01:24:01.133291+00:00",
+      "health": {
+        "id": "spark-streaming-dedup-api",
+        "url": "https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.dropDuplicatesWithinWatermark.html",
+        "checked_at": "2026-09-29T01:24:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.dropDuplicatesWithinWatermark.html",
+        "content_type": "text/html",
+        "page_title": "pyspark.sql.DataFrame.dropDuplicatesWithinWatermark — PySpark 4.2.0 documentation",
+        "canonical_url": "https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.dropDuplicatesWithinWatermark.html",
+        "duration_signals": [
+          "10 minutes"
+        ],
+        "signal_fingerprint": "97dd2c18f1b0b5a4a015df9615bc83fe0ba34a5341085663ce93ebcadd863882",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.dropDuplicatesWithinWatermark.html",
+      "sha256": "7a51fffd3baed72a3ab7dab04be87caa76d45405f03f6ef3f0a3d18f26230cbe",
+      "text_characters": 1698
+    },
+    {
+      "id": "databricks-spark-dedup-blog",
+      "url": "https://community.databricks.com/t5/technical-blog/deep-dive-streaming-deduplication/ba-p/105062",
+      "checked_at": "2026-09-29T01:26:58.367903+00:00",
+      "health": {
+        "id": "databricks-spark-dedup-blog",
+        "url": "https://community.databricks.com/t5/technical-blog/deep-dive-streaming-deduplication/ba-p/105062",
+        "checked_at": "2026-09-29T01:26:58+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://community.databricks.com/t5/technical-blog/deep-dive-streaming-deduplication/ba-p/105062",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    }
+  ],
+  "added_source_ids": [
+    "spark-jdbc-reference",
+    "spark-streaming-reference",
+    "spark-streaming-migration",
+    "spark-sql-migration",
+    "spark-null-semantics",
+    "spark-streaming-dedup-api",
+    "databricks-spark-dedup-blog"
+  ],
+  "findings": [
+    {
+      "id": "databricksassociatedeveloperapachespark-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "JDBC partition bounds were not distinguished from filtering",
+      "url": "https://spark.apache.org/docs/latest/sql-data-sources-jdbc.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Official bounds define stride and query cannot combine with partitionColumn.",
+      "recommendation": "Add source-predicate and concurrency examples.",
+      "disposition": "applied",
+      "source_id": "spark-jdbc-reference",
+      "resolution": "Add source-predicate and concurrency examples."
+    },
+    {
+      "id": "databricksassociatedeveloperapachespark-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Watermark guidance implied too broad a state bound",
+      "url": "https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.dropDuplicatesWithinWatermark.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Classic dedup state depends on keys; within-watermark ID dedup is time-bounded.",
+      "recommendation": "Distinguish three operator/key contracts, timestamp-varying copies and permanent business uniqueness.",
+      "disposition": "applied",
+      "source_id": "spark-streaming-dedup-api",
+      "resolution": "Distinguish three operator/key contracts, timestamp-varying copies and permanent business uniqueness."
+    },
+    {
+      "id": "databricksassociatedeveloperapachespark-deep-3",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Stateful streaming scenario prescribed AQE too broadly",
+      "url": "https://spark.apache.org/docs/latest/streaming/ss-migration-guide.html",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Upstream 4.1 migration support is specifically stateless streaming.",
+      "recommendation": "Correct stateful scenario and explain engine/version boundary.",
+      "disposition": "applied",
+      "source_id": "spark-streaming-migration",
+      "resolution": "Correct stateful scenario and explain engine/version boundary."
+    },
+    {
+      "id": "databricksassociatedeveloperapachespark-deep-4",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Older cast expectations need an explicit runtime boundary",
+      "url": "https://spark.apache.org/docs/latest/sql-migration-guide.html",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "ANSI mode is enabled by default since Spark 4.0.",
+      "recommendation": "Add tolerant parsing/quarantine guidance with version and configuration evidence.",
+      "disposition": "applied",
+      "source_id": "spark-sql-migration",
+      "resolution": "Add tolerant parsing/quarantine guidance with version and configuration evidence."
+    },
+    {
+      "id": "databricksassociatedeveloperapachespark-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "DataFrame objectives lacked concrete adversarial fixtures",
+      "url": "https://spark.apache.org/docs/latest/sql-ref-null-semantics.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Null filtering, nondeterministic dedup, joins and position-based union need observable expectations.",
+      "recommendation": "Add original fixture, four decision cases and twelve answers; report actual execution limits.",
+      "disposition": "applied",
+      "source_id": "spark-null-semantics",
+      "resolution": "Add original fixture, four decision cases and twelve answers; report actual execution limits."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "databricks-spark-dedup-blog",
+      "authors": [
+        "Murali Talluri"
+      ],
+      "published_on": "2025-01-10",
+      "disposition": "accepted-with-limits",
+      "value": "Compare ID-only, ID-plus-event-time and within-watermark dedup state.",
+      "limits": "Employee technical walkthrough read through web tool while automated fetch blocked. Cross-check current upstream semantics; illustrated batch timestamps are not universal scheduling promises."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "service_labs_executed": 0,
+    "reasoning_cases": 4,
+    "local_validation": {
+      "sqlite_reference_assertions": 10,
+      "sqlite_version": "3.50.4",
+      "python_blocks_parsed": 2,
+      "python_blocks_executed": 0,
+      "spark_labs_executed": 0,
+      "execution_boundary": "Ten SQLite assertions check portable relational expectations only; both PySpark blocks parse but were not executed. WSL startup stalled after setup/download failures. Spark streaming, Pandas, Parquet and runtime checks remain unexecuted; do not infer Spark validation from SQLite.",
+      "runtime_blocker": "WSL Ubuntu-26.04 exec stalled. Initial /tmp environment disappeared on WSL shutdown; second install hit a Python package host timeout; verified archive downloaded through Windows, but follow-up WSL exec did not start. Owned pending wsl.exe commands were stopped; no reboot requested."
+    }
+  },
+  "answered_checks": 12,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Actual Spark labs unexecuted: package download timed out and later WSL command startup stalled. Verified runtime archive is retained for follow-up; owned pending launcher processes were stopped.",
+    "SQLite reference assertions do not validate PySpark, Arrow/Pandas, Parquet, streaming, watermark state, checkpoint recovery, JDBC or remote Connect. Both guide Python blocks only parsed.",
+    "Official weighted objectives unchanged; monitor marks initial status capture because accepted lifecycle snapshot is absent. No accepted snapshots overwritten.",
+    "Academy sign-in lessons unavailable; OReilly/Udemy and community pages automation-blocked. Employee dedup blog was read through the web tool; retirement-thread claim remains attributed to earlier review."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Ten SQLite assertions check portable relational expectations only; both PySpark blocks parse but were not executed. WSL startup stalled after setup/download failures. Spark streaming, Pandas, Parquet and runtime checks remain unexecuted; do not infer Spark validation from SQLite.",
+    "learning_catalog_consistency": "passed",
+    "sqlite_reference_assertions": 10,
+    "sqlite_version": "3.50.4",
+    "python_blocks_parsed": 2,
+    "python_blocks_executed": 0,
+    "spark_labs_executed": 0,
+    "runtime_blocker": "WSL Ubuntu-26.04 exec stalled. Initial /tmp environment disappeared on WSL shutdown; second install hit a Python package host timeout; verified archive downloaded through Windows, but follow-up WSL exec did not start. Owned pending wsl.exe commands were stopped; no reboot requested."
+  },
+  "detailed_objective_pdf": {
+    "url": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-associate-developer-apache-spark-exam-guide-oct-2025.pdf",
+    "sha256": "9ee0f336160ed9c013ef69888be0c6de2970060175b31bc91bc02b84ba9da26d",
+    "pages": 8,
+    "samples_reproduced": false
+  }
+}
