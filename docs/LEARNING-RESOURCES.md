@@ -2717,6 +2717,30 @@ This is not a complete list, and it is not meant to be consumed in full. Pick on
 
 This comparison uses public metadata, not paid lessons, book interiors, proprietary questions or subscriber labs. Dates/durations describe listings, not verified teaching quality or full v2.0 coverage. Use a legitimate explanation-rich assessment to locate gaps, then demonstrate behavior in your lab; avoid recalled/live items and answer-only banks.
 
+### 200-901 — Cisco Certified Network Associate Automation
+
+Resource details from the [200-901 guide](../guides/200-901-cisco-certified-network-associate-automation.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+Start with the official objectives; add a course to address a measured gap. This is not a complete list. Public metadata was rechecked September 29, 2026; course availability and access can change. Study budgets below are estimates, not provider runtime claims.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| Cisco exam page and detailed v1.1 PDF, linked above | Public; all 61 numbered objectives/supporting bullets mapped | 2–4h initial map; 30–60m periodic review, study estimates |
+| [Cisco CCNAAUTO training](https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccnaauto.html) | Public overview; paid/subscription delivery; [four-page training PDF](https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccnaauto.pdf) reviewed | 32h30m in the [April 13, 2026 roundup](https://blogs.cisco.com/learning/evolve-and-optimize-your-skills-for-the-ai-networking-era); verify selected current delivery |
+| [Cisco DevNet Sandbox](https://developer.cisco.com/docs/sandbox/) | Free account; shared Always-On or private reservation with environment-specific permissions | 12–25h practice budget; setup/availability not verified |
+| [Learn with Cisco prep series](https://www.youtube.com/watch?v=wunfbjsGSh4) | Public listing returned a title/footer shell; no video, transcript or complete playlist reviewed | Current runtime and completeness unverified; former 12–24h was a study estimate |
+| [Pearson second-edition listing](https://www.pearson.com/en-us/subject-catalog/p/devnet-associate-devasc-200-901-official-cert-guide/P200000012978/9780135368114) | Paid listing link redirected to an empty search response; edition, publication and current availability unverified | 25–40h reading/practice budget only; earlier forthcoming September 15 claim withdrawn |
+| [LinkedIn Learning DEVASC 1.1 cert prep](https://www.linkedin.com/learning/cisco-certified-devnet-associate-devasc-1-1-200-901-cert-prep) | Paid/trial; public metadata and selected outline reviewed; Kevin Wallace/Charles Judd, released March 22, 2024 | 13h02m displayed; add 10–20h practice estimate |
+| [O’Reilly DevNet Associate video](https://www.oreilly.com/videos/cisco-certified-devnet/9781835883341/) | Paid; current request blocked with HTTP403; no interior reviewed | Earlier 15h44m/January 2024 metadata unverified; 12–20h extra practice estimate |
+| [Udemy CCNA Network Automation](https://www.udemy.com/course/cisco-certified-devnet-associate-course-netdevops/) | Paid; current request blocked with HTTP403; no lessons reviewed | Earlier 10h06m/April 2026 update unverified; 12–20h extra practice estimate |
+| Cisco U. practice material linked from the exam page | Subscription/access depends on selected product; question content not reviewed | 2h practice plus 3–6h review, study estimates |
+
+The Cisco training overview advertises 48 CE credits and recommended Python/basic computer/OS/Internet knowledge, while its training prerequisites are not formal exam prerequisites. Its Singleton lab does not replace MVC and Observer in the exam PDF. The dated 32h30m article is not a fresh sum of an authenticated learning path. LinkedIn’s old brand and release date require an objective/platform gap check; public metadata or ratings cannot establish lesson quality. No paid chapters, videos, transcripts, exercise files or practice questions were accessed in this review.
+
+For Webex, use the current [webhook guide](https://developer.webex.com/meeting/docs/api/guides/webhooks) for the selected resource and signature format. That page returned a minimal shell to the direct fetch and the browser extraction failed on its size, so this review does not claim full current delivery/security documentation coverage. The general signature/freshness guidance above is a design checklist, not a verified runnable Webex receiver.
+
+Verify edition, revision, access, lab availability and detailed objective coverage before purchase. Avoid providers advertising live questions, guaranteed passes or unexplained answer banks.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

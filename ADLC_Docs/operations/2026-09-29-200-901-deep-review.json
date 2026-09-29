@@ -1,0 +1,2236 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "200-901",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/200-901-cisco-certified-network-associate-automation.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "a5e791f6f8ca48cc79306ffae99199a6694422284fa631baf0c42ce966a50df6",
+  "guide_after_sha256": "308058f38e556e6cac407a0ad3868cb227fb43acfebd3de383490ed568249c12",
+  "prior_records": {
+    "exam": {
+      "code": "200-901",
+      "level": "intermediate",
+      "vendor_id": "cisco",
+      "title": "Cisco Certified Network Associate Automation",
+      "status": "active",
+      "study_guide_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccnaauto.html",
+      "guide_path": "guides/200-901-cisco-certified-network-associate-automation.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal exam prerequisite. Build basic networking and hands-on Python first, then parse XML/JSON/YAML, use Git and tests, construct and diagnose authenticated REST/Python calls, select Cisco platform APIs/SDKs, interpret YANG/NETCONF/RESTCONF, operate local Docker/Bash workflows, secure data and secrets, and review/test/idempotently execute Python/Ansible/IaC automation in authorized sandboxes."
+    },
+    "review": {
+      "id": "200-901-2026-09-02-source-validation",
+      "exam_code": "200-901",
+      "guide_path": "guides/200-901-cisco-certified-network-associate-automation.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/200-901-official-objectives.txt",
+      "blueprint_snapshot_sha256": "b741522983500658e43c1a9a0200c142e4a626ff8d0ad8a01859f92d0670c60f",
+      "objective_coverage": [
+        {
+          "objective_group": "Software Development and Design (15%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Understanding and Using APIs (20%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 2–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Cisco Platforms and Development (15%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 3–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Application Deployment and Security (15%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 2–3",
+            "Labs 2, 5 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Infrastructure and Automation (20%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenario 2",
+            "Labs 4–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network Fundamentals (15%)",
+          "guide_sections": [
+            "Section 6",
+            "Scenarios 1–2",
+            "Labs 3, 7 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 9,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All six detailed v1.1 domains and every objective are mapped through intent, data/API/auth contract, code/configuration, tests, review, bounded execution, evidence and rollback. The guide explicitly reconciles the landing-page v1.0 label, detailed/current-training v1.1 label, DevNet-to-CCNA Automation rename and first-party language discrepancy. Three scenarios, eight authorized labs and 46 checks are included. Nine URLs are reachable; O'Reilly and Udemy are automation-blocked; none are broken."
+    },
+    "sources": [
+      {
+        "id": "cisco-200-901-exam",
+        "title": "200-901 CCNAAUTO exam",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccnaauto.html",
+        "publisher": "Cisco",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "200-901"
+        ],
+        "notes": "Canonical exam identity, 120-minute duration, USD 300 listed price, languages and official preparation links. Page renders v1.0 while Cisco's detailed current PDF and 2026 course overview say v1.1; monitored by the Cisco adapter."
+      },
+      {
+        "id": "cisco-200-901-v1-1-blueprint",
+        "title": "Automating Networks Using Cisco Platforms v1.1 exam topics",
+        "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-901-CCNAAUTO_v.1.1.pdf",
+        "publisher": "Cisco",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "200-901"
+        ],
+        "notes": "Detailed current six-domain 15/20/15/15/20/15 Cisco Public blueprint; primary scope authority where the landing-page version label lags."
+      },
+      {
+        "id": "cisco-200-901-training",
+        "title": "Automating Networks Using Cisco Platforms training",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccnaauto.html",
+        "publisher": "Cisco",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "200-901"
+        ],
+        "notes": "First-party v1.1-aligned objectives, recommended Python background, outline, 18-lab outline, Cisco U and instructor-led routes."
+      },
+      {
+        "id": "cisco-200-901-training-pdf",
+        "title": "CCNAAUTO training overview",
+        "url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccnaauto.pdf",
+        "publisher": "Cisco",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "200-901"
+        ],
+        "notes": "Four-page Cisco Public course overview explicitly aligned to CCNAAUTO v1.1, with objectives and 18-lab outline."
+      },
+      {
+        "id": "cisco-200-901-path-duration",
+        "title": "Evolve and Optimize Your Skills for the AI Networking Era",
+        "url": "https://blogs.cisco.com/learning/evolve-and-optimize-your-skills-for-the-ai-networking-era",
+        "publisher": "Learn with Cisco",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "200-901"
+        ],
+        "notes": "Dated first-party roundup identifying the current CCNAAUTO Cisco U. path as beginner level and 32h30m, plus related automation learning options."
+      },
+      {
+        "id": "cisco-devnet-sandbox",
+        "title": "Cisco DevNet Sandbox documentation",
+        "url": "https://developer.cisco.com/docs/sandbox/",
+        "publisher": "Cisco DevNet",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "200-901"
+        ],
+        "notes": "First-party authorized hands-on environments; documents shared Always-On versus private reservation behavior, VPN/setup needs, reset behavior and up-to-seven-day reservations."
+      },
+      {
+        "id": "youtube-cisco-ccnaauto-series",
+        "title": "Learn with Cisco CCNA Automation prep live series",
+        "url": "https://www.youtube.com/watch?v=wunfbjsGSh4",
+        "publisher": "YouTube / Learn with Cisco",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "200-901"
+        ],
+        "notes": "First-party free bi-weekly live coding and Q&A series announced May 2026 across APIs, formats, Git, device APIs and Python; playlist completeness should be rechecked."
+      },
+      {
+        "id": "pearson-200-901-official-guide-2e",
+        "title": "CCNA Automation 200-901 Official Cert Guide, 2nd edition",
+        "url": "https://www.pearson.com/en-us/subject-catalog/p/devnet-associate-devasc-200-901-official-cert-guide/P200000012978/9780135368114",
+        "publisher": "Pearson / Cisco Press / Chris Jackson, Adrian Iliesiu, Ashutosh Malegaonkar and Barry Yuan",
+        "authority_class": 2,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "200-901"
+        ],
+        "notes": "Forthcoming September 15, 2026 Cisco Press update; page mixes former DevNet and current CCNA Automation naming. Verify publication/edition before purchase; estimated 25–40 hours plus practice."
+      },
+      {
+        "id": "linkedin-200-901-cert-prep",
+        "title": "Cisco Certified DevNet Associate DEVASC 1.1 (200-901) Cert Prep",
+        "url": "https://www.linkedin.com/learning/cisco-certified-devnet-associate-devasc-1-1-200-901-cert-prep",
+        "publisher": "LinkedIn Learning / Kevin Wallace and Charles Judd",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "200-901"
+        ],
+        "notes": "13h02m March 2024 six-domain course with transcripts and exercise files under the former credential name; close current platform-name deltas from the official v1.1 PDF."
+      },
+      {
+        "id": "oreilly-200-901-devnet-video",
+        "title": "Cisco Certified DevNet Associate (200-901) video course",
+        "url": "https://www.oreilly.com/videos/cisco-certified-devnet/9781835883341/",
+        "publisher": "O'Reilly / ACI Learning / Justin Dennison and Ronnie Wong",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "200-901"
+        ],
+        "notes": "15h44m January 2024 six-domain course under the former credential name; use as a supplement and close 2025/2026 platform-name deltas officially."
+      },
+      {
+        "id": "udemy-kagai-200-901",
+        "title": "CCNA Network Automation (Cisco Certified Network Associate)",
+        "url": "https://www.udemy.com/course/cisco-certified-devnet-associate-course-netdevops/",
+        "publisher": "Udemy / Francis Kagai",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "200-901"
+        ],
+        "notes": "10h06m course updated April 2026 with Python/Linux/API/Git/Docker/NETCONF/RESTCONF/Ansible labs; verify exact v1.1 coverage, reviews and maintenance."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "52e86e1bdcbcb3ec8987fea4a31fbbc9c32cbd01be1a56621d8f627954b1f0ba",
+      "guide_sections": [
+        "1. Software Development and Design — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "a7a8518fd0bedf83f3af2c832d4302d0755d4e0f09fa4c37c3bb248c1a88af8c",
+      "guide_sections": [
+        "1. Software Development and Design — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "82860e20fd8b96e2b27a685b580e03cf46d757d6fb05039cfa87811b1917e09a",
+      "guide_sections": [
+        "1. Software Development and Design — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "e2dab78835449dc06d7abdf4e664faa390b30da81212120578090ea1627521ca",
+      "guide_sections": [
+        "1. Software Development and Design — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "344eb729dd963f4d4b56c09899eb30180bdcbafd5746d32aa68614409d3f7cfc",
+      "guide_sections": [
+        "1. Software Development and Design — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "8326b42f04147833b32c5ca29d38a37b979c1206bcfe5148958a4cf01133a336",
+      "guide_sections": [
+        "1. Software Development and Design — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "829a6648c32b1017468efe4831b0af852bcaff34dbffec65ade207b159f185f0",
+      "guide_sections": [
+        "1. Software Development and Design — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "8dc14ce78115e02b88a3e1dbfe67530885d7cd314a7d91e41fc4dcb9b372b079",
+      "guide_sections": [
+        "1. Software Development and Design — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "579f3286f5b45551a7531f80c9bca1210ebdac2645fc48a93bcdce0d53c71368",
+      "guide_sections": [
+        "2. Understanding and Using APIs — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "271d5ddccd6204f69520eeaafa21fe8531798f1016df10a23136a6c73bc6f632",
+      "guide_sections": [
+        "2. Understanding and Using APIs — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "2ce6fdeb9dc5c78a28f99bca60f10681035ebe1c5d295808b65ba0ffe5b7216d",
+      "guide_sections": [
+        "2. Understanding and Using APIs — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "1232ae44016cfba532f780abf187df105dfaebc87277c2f29c03c4ba256bf395",
+      "guide_sections": [
+        "2. Understanding and Using APIs — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "d89694bf8fa10ac3ae37ce95b4cc20637e961e437f099fc31e3e84652e5a6e5d",
+      "guide_sections": [
+        "2. Understanding and Using APIs — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "bd830101d96321966beebcf1035f8c087e273bc44186cc348e9e0a53bb58cd38",
+      "guide_sections": [
+        "2. Understanding and Using APIs — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "22dd40430d5a67709561a6a45c5e08a15484e1d9593d5ec940f61743237ca9fb",
+      "guide_sections": [
+        "2. Understanding and Using APIs — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "271c0010700c1e9b8eff072cea721730177fce895a5c8aa592b23405a11ef6fb",
+      "guide_sections": [
+        "2. Understanding and Using APIs — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "823cda5e96369ab6b140abe888a2aadc64c8dd35db8414cc1525d83ea6c7a032",
+      "guide_sections": [
+        "2. Understanding and Using APIs — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "6b75f24de1851583657c19862e2230227f6c729018b34cda3af17ae02253dd95",
+      "guide_sections": [
+        "3. Cisco Platforms and Development — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "341ba78a0175528337bcfb7290f0034a72f4b1139335e6cc8a1858067043ca70",
+      "guide_sections": [
+        "3. Cisco Platforms and Development — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "5c1fc1327ad020f9d8bbf7cac2ab42d0b730b6912be6e97bf03f9d95415429cf",
+      "guide_sections": [
+        "3. Cisco Platforms and Development — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "7df348199674e3b184388a8e28312044e94e2613d6deb2ae8777cb6997d197bb",
+      "guide_sections": [
+        "3. Cisco Platforms and Development — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "908b59a4199b46ce1daa9bac8e77b3bd709c851d3ad045c3659ffb1ee73fb862",
+      "guide_sections": [
+        "3. Cisco Platforms and Development — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "ef319ad0be07ec821bf0301ee5b2ae9dcb1a776e5b598550d12e368d6199ef9a",
+      "guide_sections": [
+        "3. Cisco Platforms and Development — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "5e4fde854b9c73d62295c387ebb20d5ec4d683c73bf57f63628b55dfe7548757",
+      "guide_sections": [
+        "3. Cisco Platforms and Development — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "a0768f96d681af976778b5a5a0eb554672004e4d0b3fa3e3b270dcf56a604e1e",
+      "guide_sections": [
+        "3. Cisco Platforms and Development — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "bd2a3c68b4d1e0c5bfbf55a3e41cf04a21d0fe779b7c27e5d4f565e5367c66b4",
+      "guide_sections": [
+        "3. Cisco Platforms and Development — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "b7bf1f010338b5ca860d742edd6b6f4bf12669bf32a0dd459fb6e9a5691e71a9",
+      "guide_sections": [
+        "4. Application Deployment and Security — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "c0715ae00c1c34898a8bcc37c2e242a5bf4bbb49cac9a2aa274fd8bf89abdce1",
+      "guide_sections": [
+        "4. Application Deployment and Security — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "6a75357d9c4ec8f32eebd13daf84278bf720d85ba166d8ea3aa9a1799269ebb2",
+      "guide_sections": [
+        "4. Application Deployment and Security — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "e3ed969fb9f9b9035cbd9f185679856bae41209dd02d54e623bba75ff5e21f2a",
+      "guide_sections": [
+        "4. Application Deployment and Security — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "ffdc2c5dd8972020188a8f1caaf5bc5b6b6ef5e097b6da113b273856ede25577",
+      "guide_sections": [
+        "4. Application Deployment and Security — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "1f0b0a306da38ed285f4501edfa87cc923408a903e27bc63cb1131ff9cbdbd5a",
+      "guide_sections": [
+        "4. Application Deployment and Security — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "3cc4a894a869525462af4f713f41f47c752b630f6791bc01f4b3e607769f40ae",
+      "guide_sections": [
+        "4. Application Deployment and Security — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "e34cc000cd68afcf2053f8e0593b064ac90a3aca60f21cd830e9928617d6d268",
+      "guide_sections": [
+        "4. Application Deployment and Security — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "dc9dff00b5cd859a4389d934635bb5a81b3d7013362e6c165491b5cdaec92a29",
+      "guide_sections": [
+        "4. Application Deployment and Security — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 10,
+      "objective_sha256": "ed6a2f895663d50add4afd0691587a009a313e8dd0e24a37f50b00b5f83d356d",
+      "guide_sections": [
+        "4. Application Deployment and Security — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 11,
+      "objective_sha256": "43d599e95b80d6e150ca7f253a04c53f2021ee841e6120200288fb319a5aeb78",
+      "guide_sections": [
+        "4. Application Deployment and Security — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 12,
+      "objective_sha256": "4475b6b7170df11a625e15f6deb268db1c355e20373467c6e8b8b125e89e998c",
+      "guide_sections": [
+        "4. Application Deployment and Security — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local API workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "bdfed645979db47fdcd156e3bdff6d1eef6b5867ce6ec1c5aa7f11cacca4d3fc",
+      "guide_sections": [
+        "5. Infrastructure and Automation — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "8d60e456304101e877dd4f52f72d380012fd8b6ae0c41f6408a82d9750cea838",
+      "guide_sections": [
+        "5. Infrastructure and Automation — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "7fc206b2f5d425750461f5b21d69a682abe3e3fbe4e4545c33bbca6a8d958413",
+      "guide_sections": [
+        "5. Infrastructure and Automation — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "c8f2ad88dd1943cd8ae644a6fecb1c80e5fb8fda3e34e7f6cd3a59221fcd3ab4",
+      "guide_sections": [
+        "5. Infrastructure and Automation — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "1f9e35bf51376522a6fceb1b247161949686f6284d2db3526248f2a78aaa5368",
+      "guide_sections": [
+        "5. Infrastructure and Automation — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "9ddb6695b00170ea8f116c0100a40f3d8fdef3bafa4f3d30ed3b24d491bb341e",
+      "guide_sections": [
+        "5. Infrastructure and Automation — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "8632b88154bd7e8b1462d0c9e7336c6f75fa610dab6861fffb124956bd07e8ff",
+      "guide_sections": [
+        "5. Infrastructure and Automation — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 8,
+      "objective_sha256": "55cf1851d4fb61fb3dc4efb00a7c16034a678651892b07d0f017b081af4dec9f",
+      "guide_sections": [
+        "5. Infrastructure and Automation — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 9,
+      "objective_sha256": "efa25d45e59fc1e5f45ff2524f01aebd05c9ca0b0ff0b06c9ce6971473e0f27d",
+      "guide_sections": [
+        "5. Infrastructure and Automation — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 10,
+      "objective_sha256": "2c1fb7f93ba8a08e2d3900dac90a4091a917c1e1b0b9e8b30aade91c4614bd0e",
+      "guide_sections": [
+        "5. Infrastructure and Automation — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 11,
+      "objective_sha256": "29a10ea650748c8b087472c9a1e2d16dc8edb5d5584d7a9cc321c215a9adb00d",
+      "guide_sections": [
+        "5. Infrastructure and Automation — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 12,
+      "objective_sha256": "77af51b3ab5d36790f5b18f1549896a8bfe722fca6fe5beef373029c396e3d4a",
+      "guide_sections": [
+        "5. Infrastructure and Automation — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 13,
+      "objective_sha256": "a707e069eb49c26cd1e61854e3c3968acae4f842b2e1a5f043daded53491aac6",
+      "guide_sections": [
+        "5. Infrastructure and Automation — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 14,
+      "objective_sha256": "c4ccda05b14a46824359a63f350497d97b48da4ea843eebce11578fab3e74d17",
+      "guide_sections": [
+        "5. Infrastructure and Automation — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "80b6f0c6f91a1a6cfeec47037821169b3d90b1f4d05eab0b37992440ee753c7b",
+      "guide_sections": [
+        "6. Network Fundamentals — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "0b6f967b588b2ff66ae486420c410450b2ca16ed7bb96541af3218ef46f88aa7",
+      "guide_sections": [
+        "6. Network Fundamentals — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "b86f5821598bc698efe56354d756281f7f2f57cd3cddcaacd0667ed2b3b8f8e2",
+      "guide_sections": [
+        "6. Network Fundamentals — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "a2eaead857290f02d0f56813929082a63523dc9eac686db8d70c60ad23e4a396",
+      "guide_sections": [
+        "6. Network Fundamentals — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "7718b0e5aa7462197c5f7d440cdb3b2f76b6827f59bac0c8e8b4b12bc9b8c97f",
+      "guide_sections": [
+        "6. Network Fundamentals — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "db627c9b14ca6b7fdd3101c742f88a5d30f7c7d6aff89fa08776466b6fe414b6",
+      "guide_sections": [
+        "6. Network Fundamentals — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "706b5fdb429c59da2b1548ca1e81d50d1f8363b6cc1eb8b54cc1b414b8f4477a",
+      "guide_sections": [
+        "6. Network Fundamentals — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 8,
+      "objective_sha256": "e339affc4ae7b0c606b9b98e949783acd0699ace08ba3516acdf3a81393ca535",
+      "guide_sections": [
+        "6. Network Fundamentals — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 9,
+      "objective_sha256": "8be441f2c4fd50feadc0d248e03eebdc000f7c13fed48f03e94a1ec7f4c5a4b2",
+      "guide_sections": [
+        "6. Network Fundamentals — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "200-901"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "200-901",
+        "title": "Cisco Certified Network Associate Automation",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccnaauto.html",
+        "guide_path": "guides/200-901-cisco-certified-network-associate-automation.md",
+        "snapshot_path": "data\\objective-snapshots\\200-901-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\200-901-official-status.json",
+        "previous_sha256": "b741522983500658e43c1a9a0200c142e4a626ff8d0ad8a01859f92d0670c60f",
+        "current_sha256": "389efdb0eae2c7136ded47c44e8dd55bf4076e03a130ff75ce3d49b49224545d",
+        "previous_status_sha256": null,
+        "current_status_sha256": "c9a9888033258e9e81e3c9c7127203f73394de2322f1b230047288f0215528a9",
+        "official_status": {
+          "skills_versions": [
+            "Automating Networks Using Cisco Platforms (200-901 CCNAAUTO) v1.0 is a 120-minute exam that tests a candidate's knowledge of software development and design including understanding and using APIs, application deployment and security, and infrastructure and automation on Cisco platforms.",
+            "Languages: English, Japanese",
+            "Duration: 120 minutes",
+            "Price: $US300, or use Cisco Learning Credits"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 27,
+    "reachable": 25,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "cisco-200-901-exam",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccnaauto.html",
+      "checked_at": "2026-09-29T09:58:36.597901+00:00",
+      "health": {
+        "id": "cisco-200-901-exam",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccnaauto.html",
+        "checked_at": "2026-09-29T09:58:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccnaauto.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "200-901 CCNAAUTO",
+        "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccnaauto.html",
+        "duration_signals": [
+          "120 minutes"
+        ],
+        "signal_fingerprint": "4d9b41e6a9f29934d729f2e03f7faea6df147164f91a0bd54855d6882084a5dd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccnaauto.html",
+      "sha256": "cdd87e678d5141ff80e10fff30c144a762d33d0e453df6570ea376ec924c3d6c",
+      "text_characters": 2450
+    },
+    {
+      "id": "cisco-200-901-v1-1-blueprint",
+      "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-901-CCNAAUTO_v.1.1.pdf",
+      "checked_at": "2026-09-29T10:01:50.551624+00:00",
+      "health": {
+        "id": "cisco-200-901-v1-1-blueprint",
+        "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-901-CCNAAUTO_v.1.1.pdf",
+        "checked_at": "2026-09-29T10:01:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-901-CCNAAUTO_v.1.1.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-901-CCNAAUTO_v.1.1.pdf",
+      "sha256": "31a15fbaa9480380e4a87bf9627be4b70ed38950107c2da319abfed0a8414193",
+      "bytes": 302997,
+      "pdf_pages": 3,
+      "text_characters": 7033
+    },
+    {
+      "id": "cisco-200-901-training",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccnaauto.html",
+      "checked_at": "2026-09-29T09:58:36.598810+00:00",
+      "health": {
+        "id": "cisco-200-901-training",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccnaauto.html",
+        "checked_at": "2026-09-29T09:58:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccnaauto.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Automating Networks Using Cisco Platforms (CCNAAUTO)",
+        "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccnaauto.html",
+        "duration_signals": [],
+        "signal_fingerprint": "74701059fa80a007b45d312e964e73b3324d3586819d6f87f40854318003f704",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccnaauto.html",
+      "sha256": "e095d95bd84fe203bc06ac9bb64806c4690b50fb50b1162bdce5f07421e5e189",
+      "text_characters": 4947
+    },
+    {
+      "id": "cisco-200-901-training-pdf",
+      "url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccnaauto.pdf",
+      "checked_at": "2026-09-29T10:01:50.525067+00:00",
+      "health": {
+        "id": "cisco-200-901-training-pdf",
+        "url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccnaauto.pdf",
+        "checked_at": "2026-09-29T10:01:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccnaauto.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccnaauto.pdf",
+      "sha256": "d44698df46f4c1f9e7eb4c1461a3c5ae7f8238ad97431884f8e3512c68f6bd88",
+      "bytes": 270284,
+      "pdf_pages": 4,
+      "text_characters": 5214
+    },
+    {
+      "id": "cisco-200-901-path-duration",
+      "url": "https://blogs.cisco.com/learning/evolve-and-optimize-your-skills-for-the-ai-networking-era",
+      "checked_at": "2026-09-29T09:58:37.136990+00:00",
+      "health": {
+        "id": "cisco-200-901-path-duration",
+        "url": "https://blogs.cisco.com/learning/evolve-and-optimize-your-skills-for-the-ai-networking-era",
+        "checked_at": "2026-09-29T09:58:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://blogs.cisco.com/learning/evolve-and-optimize-your-skills-for-the-ai-networking-era",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Evolve and Optimize Your Skills for the AI Networking Era",
+        "canonical_url": "https://blogs.cisco.com/learning/evolve-and-optimize-your-skills-for-the-ai-networking-era",
+        "duration_signals": [
+          "3 min"
+        ],
+        "signal_fingerprint": "0632ef1b45103b289cacbeabad4d052e568f6475aae3dd7e97ad61ee1637809c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://blogs.cisco.com/learning/evolve-and-optimize-your-skills-for-the-ai-networking-era",
+      "sha256": "9b7fd111f81490107aad77c594bc26efba001ac16969f37c2cc1708bddeb27a2",
+      "text_characters": 6639
+    },
+    {
+      "id": "cisco-devnet-sandbox",
+      "url": "https://developer.cisco.com/docs/sandbox/",
+      "checked_at": "2026-09-29T09:58:37.364205+00:00",
+      "health": {
+        "id": "cisco-devnet-sandbox",
+        "url": "https://developer.cisco.com/docs/sandbox/",
+        "checked_at": "2026-09-29T09:58:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.cisco.com/docs/sandbox/",
+        "content_type": "text/html",
+        "page_title": "Cisco DevNet Sandbox Technical documentation - DevNet Sandbox - Cisco DevNet",
+        "canonical_url": "https://developer.cisco.com/docs/sandbox/",
+        "duration_signals": [
+          "24 hours",
+          "40 minute"
+        ],
+        "signal_fingerprint": "50885d3d9ef0a2c322ddaba00c0e6798c784db32329ae1703a010cd072487ed7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.cisco.com/docs/sandbox/",
+      "sha256": "18877c2c9316e5c7b92c8b80806980262f1af7296f1901f23588ca4daf6446f6",
+      "text_characters": 3774
+    },
+    {
+      "id": "youtube-cisco-ccnaauto-series",
+      "url": "https://www.youtube.com/watch?v=wunfbjsGSh4",
+      "checked_at": "2026-09-29T09:58:37.470574+00:00",
+      "health": {
+        "id": "youtube-cisco-ccnaauto-series",
+        "url": "https://www.youtube.com/watch?v=wunfbjsGSh4",
+        "checked_at": "2026-09-29T09:58:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=wunfbjsGSh4",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "We Are Launching a FREE CCNA Automation Prep Live Series — Here Is Everything You Need to Know",
+        "canonical_url": "https://www.youtube.com/watch?v=wunfbjsGSh4",
+        "duration_signals": [],
+        "signal_fingerprint": "8b9ec3ea036558dbb985f265905de5fbad1b02c92402bfdc5c3a4bb17053eee2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=wunfbjsGSh4",
+      "sha256": "d8919a4cd4eeb523cb51d24e32dd88b0315e98c3f7da0e31757e2e7835963fcc",
+      "text_characters": 257
+    },
+    {
+      "id": "pearson-200-901-official-guide-2e",
+      "url": "https://www.pearson.com/en-us/subject-catalog/p/devnet-associate-devasc-200-901-official-cert-guide/P200000012978/9780135368114",
+      "checked_at": "2026-09-29T09:58:37.833047+00:00",
+      "health": {
+        "id": "pearson-200-901-official-guide-2e",
+        "url": "https://www.pearson.com/en-us/subject-catalog/p/devnet-associate-devasc-200-901-official-cert-guide/P200000012978/9780135368114",
+        "checked_at": "2026-09-29T09:58:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pearson.com/en-us/search/All-results?aq=devnet%20associate%20devasc%20200%20901%20official%20cert%20guide",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Search results: devnet associate devasc 200 901 official cert guide | Pearson US",
+        "canonical_url": "https://www.pearson.com/en-us/search/All-results",
+        "duration_signals": [],
+        "signal_fingerprint": "207ebecea7b4ab2e1d8c7478eb7e7d0b7aa6f27985310f00fdd8c4033e8f8e05",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pearson.com/en-us/search/All-results?aq=devnet%20associate%20devasc%20200%20901%20official%20cert%20guide",
+      "sha256": "156a26f79ee5f191573a400ea3531cfe05419a0846d32444a40a9a6ee4ddb19c",
+      "text_characters": 0
+    },
+    {
+      "id": "linkedin-200-901-cert-prep",
+      "url": "https://www.linkedin.com/learning/cisco-certified-devnet-associate-devasc-1-1-200-901-cert-prep",
+      "checked_at": "2026-09-29T09:58:38.976508+00:00",
+      "health": {
+        "id": "linkedin-200-901-cert-prep",
+        "url": "https://www.linkedin.com/learning/cisco-certified-devnet-associate-devasc-1-1-200-901-cert-prep",
+        "checked_at": "2026-09-29T09:58:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.linkedin.com/learning/cisco-certified-devnet-associate-devasc-1-1-200-901-cert-prep",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Cisco Certified DevNet Associate DEVASC 1.1 (200-901) Cert Prep Online Class | LinkedIn Learning, formerly Lynda.com",
+        "canonical_url": "https://www.linkedin.com/learning/cisco-certified-devnet-associate-devasc-1-1-200-901-cert-prep",
+        "duration_signals": [
+          "PT10M1S",
+          "PT10M51S",
+          "PT10M54S",
+          "PT10M56S",
+          "PT10S",
+          "PT11M16S",
+          "PT11M28S",
+          "PT11M37S",
+          "PT11M48S",
+          "PT11M58S",
+          "PT11S",
+          "PT12M10S",
+          "PT12M21S",
+          "PT12M31S",
+          "PT12M34S",
+          "PT13H2M14S",
+          "PT13M51S",
+          "PT13S",
+          "PT14S",
+          "PT15M45S",
+          "PT15S",
+          "PT16S",
+          "PT17M16S",
+          "PT17M42S",
+          "PT17S",
+          "PT18S",
+          "PT19S",
+          "PT1M23S",
+          "PT1M49S",
+          "PT1M59S"
+        ],
+        "signal_fingerprint": "cb0dcf1ccf505bd938ce263dc1f3229abc6711c9e48c522f34509d7407cd4b46",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.linkedin.com/learning/cisco-certified-devnet-associate-devasc-1-1-200-901-cert-prep",
+      "sha256": "fd35314554b55f2573dd0944f473ae51de262dec180a82ca67480a4aebf2744a",
+      "text_characters": 9417
+    },
+    {
+      "id": "oreilly-200-901-devnet-video",
+      "url": "https://www.oreilly.com/videos/cisco-certified-devnet/9781835883341/",
+      "checked_at": "2026-09-29T09:58:39.240241+00:00",
+      "health": {
+        "id": "oreilly-200-901-devnet-video",
+        "url": "https://www.oreilly.com/videos/cisco-certified-devnet/9781835883341/",
+        "checked_at": "2026-09-29T09:58:39+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/cisco-certified-devnet/9781835883341/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "udemy-kagai-200-901",
+      "url": "https://www.udemy.com/course/cisco-certified-devnet-associate-course-netdevops/",
+      "checked_at": "2026-09-29T09:58:39.436077+00:00",
+      "health": {
+        "id": "udemy-kagai-200-901",
+        "url": "https://www.udemy.com/course/cisco-certified-devnet-associate-course-netdevops/",
+        "checked_at": "2026-09-29T09:58:39+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/cisco-certified-devnet-associate-course-netdevops/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "cisco-ccna-automation-credential",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/automation/ccna-automation/index.html",
+      "checked_at": "2026-09-29T10:01:50.802208+00:00",
+      "health": {
+        "id": "cisco-ccna-automation-credential",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/automation/ccna-automation/index.html",
+        "checked_at": "2026-09-29T10:01:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/automation/ccna-automation/index.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "CCNA Automation Certification",
+        "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/automation/ccna-automation/index.html",
+        "duration_signals": [
+          "120 minutes",
+          "48 hours"
+        ],
+        "signal_fingerprint": "83b688f61375f97ef6b48de3466d4ab76c5a63fad256d8d4a4900b8a2552717f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/automation/ccna-automation/index.html",
+      "sha256": "945c6bb0ea9e7a4693628a74899ee647a5d82152416d30bec6060fee6e91759c",
+      "text_characters": 5067
+    },
+    {
+      "id": "cisco-learn-rebrand-announcement",
+      "url": "https://blogs.cisco.com/learning/par-merat-announces-learn-with-cisco",
+      "checked_at": "2026-09-29T10:01:50.802935+00:00",
+      "health": {
+        "id": "cisco-learn-rebrand-announcement",
+        "url": "https://blogs.cisco.com/learning/par-merat-announces-learn-with-cisco",
+        "checked_at": "2026-09-29T10:01:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://blogs.cisco.com/learning/par-merat-announces-learn-with-cisco",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Learn with Cisco: Evolving for the Age of AI, Automation, and Cloud",
+        "canonical_url": "https://blogs.cisco.com/learning/par-merat-announces-learn-with-cisco",
+        "duration_signals": [
+          "4 min"
+        ],
+        "signal_fingerprint": "39d148dc8088afb0d517ff22a1b20265ffa98fa372b43b7ce6bde2829ee5da16",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://blogs.cisco.com/learning/par-merat-announces-learn-with-cisco",
+      "sha256": "8e6574e3bfc6060c97be6b1cf319f63f6aa1ae8ffeecb15731fbf4b1f17e92e3",
+      "text_characters": 7787
+    },
+    {
+      "id": "cisco-automation-transition-details",
+      "url": "https://blogs.cisco.com/learning/views-from-an-insider-on-the-ccnp-automation-track-autocor-edition",
+      "checked_at": "2026-09-29T10:01:50.803320+00:00",
+      "health": {
+        "id": "cisco-automation-transition-details",
+        "url": "https://blogs.cisco.com/learning/views-from-an-insider-on-the-ccnp-automation-track-autocor-edition",
+        "checked_at": "2026-09-29T10:01:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://blogs.cisco.com/learning/views-from-an-insider-on-the-ccnp-automation-track-autocor-edition",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "CCNP Automation: A Renamed Certification, Reimagined",
+        "canonical_url": "https://blogs.cisco.com/learning/views-from-an-insider-on-the-ccnp-automation-track-autocor-edition",
+        "duration_signals": [
+          "7 min"
+        ],
+        "signal_fingerprint": "beae6cd0536a70e571411be0ad2072567db137a18a9665ff286b181b4db51674",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://blogs.cisco.com/learning/views-from-an-insider-on-the-ccnp-automation-track-autocor-edition",
+      "sha256": "5847638877629dc335bd973159f3fd12efe9d69ba411a2d24f3c56c2c98cce87",
+      "text_characters": 11156
+    },
+    {
+      "id": "meraki-api-pagination",
+      "url": "https://developer.cisco.com/meraki/api-v1/pagination/",
+      "checked_at": "2026-09-29T10:01:51.657768+00:00",
+      "health": {
+        "id": "meraki-api-pagination",
+        "url": "https://developer.cisco.com/meraki/api-v1/pagination/",
+        "checked_at": "2026-09-29T10:01:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.cisco.com/meraki/api-v1/pagination/",
+        "content_type": "text/html",
+        "page_title": "Pagination - Meraki Dashboard API v1 - Cisco Meraki Developer Hub",
+        "canonical_url": "https://developer.cisco.com/meraki/api-v1/pagination/",
+        "duration_signals": [],
+        "signal_fingerprint": "d5d9677596da21e0fb2abaf1ec04c50cce240469e0a5af972eaea510503cc9e5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.cisco.com/meraki/api-v1/pagination/",
+      "sha256": "3624374e533199b9c6bd9b6d5e43b931a73d052d88c2b8ef8c2c8fd4566f8b4e",
+      "text_characters": 7009
+    },
+    {
+      "id": "meraki-api-rate-limit",
+      "url": "https://developer.cisco.com/meraki/api-v1/rate-limit/",
+      "checked_at": "2026-09-29T10:01:52.834447+00:00",
+      "health": {
+        "id": "meraki-api-rate-limit",
+        "url": "https://developer.cisco.com/meraki/api-v1/rate-limit/",
+        "checked_at": "2026-09-29T10:01:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.cisco.com/meraki/api-v1/rate-limit/",
+        "content_type": "text/html",
+        "page_title": "Rate Limit - Meraki Dashboard API v1 - Cisco Meraki Developer Hub",
+        "canonical_url": "https://developer.cisco.com/meraki/api-v1/rate-limit/",
+        "duration_signals": [],
+        "signal_fingerprint": "e20ebff53b4470e1438d9737f45a5a86fd9e8c90c580e39d38991003bbaa6b6e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.cisco.com/meraki/api-v1/rate-limit/",
+      "sha256": "b76f9a5718b46501d9c1814fd8379379804d73a13179beb116c6f43879e5844d",
+      "text_characters": 8603
+    },
+    {
+      "id": "meraki-api-errors",
+      "url": "https://developer.cisco.com/meraki/api-v1/errors/",
+      "checked_at": "2026-09-29T10:01:52.891331+00:00",
+      "health": {
+        "id": "meraki-api-errors",
+        "url": "https://developer.cisco.com/meraki/api-v1/errors/",
+        "checked_at": "2026-09-29T10:01:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.cisco.com/meraki/api-v1/errors/",
+        "content_type": "text/html",
+        "page_title": "Errors - Meraki Dashboard API v1 - Cisco Meraki Developer Hub",
+        "canonical_url": "https://developer.cisco.com/meraki/api-v1/errors/",
+        "duration_signals": [],
+        "signal_fingerprint": "92c58946a83bb49782ad99405781a543de8da388f502c2b59d94eb8e1e5f1322",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.cisco.com/meraki/api-v1/errors/",
+      "sha256": "b42f13d901d72a9c3fad4590ff6c8e76d4709b49af1a9a134575ee87e3f5a86f",
+      "text_characters": 2018
+    },
+    {
+      "id": "meraki-python-library",
+      "url": "https://developer.cisco.com/meraki/api-v1/python/",
+      "checked_at": "2026-09-29T10:01:52.981576+00:00",
+      "health": {
+        "id": "meraki-python-library",
+        "url": "https://developer.cisco.com/meraki/api-v1/python/",
+        "checked_at": "2026-09-29T10:01:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.cisco.com/meraki/api-v1/python/",
+        "content_type": "text/html",
+        "page_title": "Meraki Python Library for Dashboard API - Meraki Dashboard API v1 - Cisco Meraki Developer Hub",
+        "canonical_url": "https://developer.cisco.com/meraki/api-v1/python/",
+        "duration_signals": [],
+        "signal_fingerprint": "5e42f9091f76e18879a15f231167709b22bd8cff2cd3c49eff35d9fd776a936c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.cisco.com/meraki/api-v1/python/",
+      "sha256": "c3388793cb26318b84d303bab5421902fc39d25d8c22408e7d88ffc44059ce22",
+      "text_characters": 4821
+    },
+    {
+      "id": "python-json",
+      "url": "https://docs.python.org/3/library/json.html",
+      "checked_at": "2026-09-29T10:01:54.352004+00:00",
+      "health": {
+        "id": "python-json",
+        "url": "https://docs.python.org/3/library/json.html",
+        "checked_at": "2026-09-29T10:01:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3/library/json.html",
+        "content_type": "text/html",
+        "page_title": "json — JSON encoder and decoder",
+        "canonical_url": "https://docs.python.org/3/library/json.html",
+        "duration_signals": [],
+        "signal_fingerprint": "003894cea941cd12f7c74ca070bd67c17798d619b1b2f3265673efdcf49d1633",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3/library/json.html",
+      "sha256": "ad6c95e8a8c1736602498dffd8a787cf0b81818978a6bc27b5e7a9e6138228d0",
+      "text_characters": 25659
+    },
+    {
+      "id": "requests-quickstart",
+      "url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+      "checked_at": "2026-09-29T10:01:55.002487+00:00",
+      "health": {
+        "id": "requests-quickstart",
+        "url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+        "checked_at": "2026-09-29T10:01:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Quickstart — Requests 2.34.2 documentation",
+        "canonical_url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+        "duration_signals": [],
+        "signal_fingerprint": "516b88bc996a32fcbfd8b05d864702be9c8fc93e8fb2e0c510bd48dec9eec124",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+      "sha256": "c2b869b188097265f8decaeb14972116b2c861b0358e89977cbf43283f34d3b5",
+      "text_characters": 17434
+    },
+    {
+      "id": "requests-advanced",
+      "url": "https://requests.readthedocs.io/en/latest/user/advanced/",
+      "checked_at": "2026-09-29T10:01:55.167686+00:00",
+      "health": {
+        "id": "requests-advanced",
+        "url": "https://requests.readthedocs.io/en/latest/user/advanced/",
+        "checked_at": "2026-09-29T10:01:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://requests.readthedocs.io/en/latest/user/advanced/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Advanced Usage — Requests 2.34.2 documentation",
+        "canonical_url": "https://requests.readthedocs.io/en/latest/user/advanced/",
+        "duration_signals": [],
+        "signal_fingerprint": "f9886124a7462334b011c40c4011768d1280f7ff6f2b7571b55e96e00d54fee7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://requests.readthedocs.io/en/latest/user/advanced/",
+      "sha256": "c9d568cbdf1700ffcb91e2c20bfab7583a964d51e64cbd27c5e50cf93eed1056",
+      "text_characters": 36495
+    },
+    {
+      "id": "cisco-recertification",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+      "checked_at": "2026-09-29T10:01:55.398364+00:00",
+      "health": {
+        "id": "cisco-recertification",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+        "checked_at": "2026-09-29T10:01:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Recertification Policy",
+        "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+        "duration_signals": [
+          "101",
+          "48 hours"
+        ],
+        "signal_fingerprint": "9fb89f31fd657cdbb10c6e5e66c233c2d4ba480a35bca373edae6ad05c7f8808",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+      "sha256": "f12612a267b6c203c37076ce19526f977916302c375fedc6855c5770722e5414",
+      "text_characters": 7250
+    },
+    {
+      "id": "rfc-6241",
+      "url": "https://www.rfc-editor.org/rfc/rfc6241.html",
+      "checked_at": "2026-09-29T10:06:17.977258+00:00",
+      "health": {
+        "id": "rfc-6241",
+        "url": "https://www.rfc-editor.org/rfc/rfc6241.html",
+        "checked_at": "2026-09-29T10:06:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc6241.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc6241.html",
+        "duration_signals": [
+          "10 minutes"
+        ],
+        "signal_fingerprint": "3a17bce1c4f323181ee2765d3d03ff5a4169022b72d7a03b8bb1237f6ffc2b36",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc6241.html",
+      "sha256": "8e73b1251b65fe6da239d437adfe9e729f3ab34ab157e3bec5fd3f5353bae045",
+      "text_characters": 167187
+    },
+    {
+      "id": "rfc-8040",
+      "url": "https://www.rfc-editor.org/rfc/rfc8040.html",
+      "checked_at": "2026-09-29T10:06:17.977880+00:00",
+      "health": {
+        "id": "rfc-8040",
+        "url": "https://www.rfc-editor.org/rfc/rfc8040.html",
+        "checked_at": "2026-09-29T10:06:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc8040.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc8040.html",
+        "duration_signals": [],
+        "signal_fingerprint": "44505713e843c90c3167c2a9b082ffd7fd955e08663e5418845422b378f4272a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc8040.html",
+      "sha256": "f77c00984f9d483f1ae69dcb3975d35836b432236a8b7b33ff04156a2e3496f9",
+      "text_characters": 190043
+    },
+    {
+      "id": "ansible-check-mode",
+      "url": "https://docs.ansible.com/projects/ansible-core/stable-2.21/playbook_guide/playbooks_checkmode.html",
+      "checked_at": "2026-09-29T10:06:17.978241+00:00",
+      "health": {
+        "id": "ansible-check-mode",
+        "url": "https://docs.ansible.com/projects/ansible-core/stable-2.21/playbook_guide/playbooks_checkmode.html",
+        "checked_at": "2026-09-29T10:06:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.ansible.com/projects/ansible-core/stable-2.21/playbook_guide/playbooks_checkmode.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Validating tasks: check mode and diff mode — Ansible Core Documentation",
+        "canonical_url": "https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_checkmode.html",
+        "duration_signals": [],
+        "signal_fingerprint": "21ab9d4f6aa6ff797959c39aaec9735e16fe473d990f62f7cef9b01717173ff6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.ansible.com/projects/ansible-core/stable-2.21/playbook_guide/playbooks_checkmode.html",
+      "sha256": "e707e1df449faca3876b013aec1e31feab7e6fcddf40ebca74a91d053277fda9",
+      "text_characters": 6050
+    },
+    {
+      "id": "docker-build-secrets",
+      "url": "https://docs.docker.com/reference/build-checks/secrets-used-in-arg-or-env/",
+      "checked_at": "2026-09-29T10:06:18.419763+00:00",
+      "health": {
+        "id": "docker-build-secrets",
+        "url": "https://docs.docker.com/reference/build-checks/secrets-used-in-arg-or-env/",
+        "checked_at": "2026-09-29T10:06:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.docker.com/reference/build-checks/secrets-used-in-arg-or-env/",
+        "content_type": "text/html",
+        "page_title": "SecretsUsedInArgOrEnv",
+        "canonical_url": "https://docs.docker.com/reference/build-checks/secrets-used-in-arg-or-env/",
+        "duration_signals": [],
+        "signal_fingerprint": "d57d9bbd7a2ebd4c9259cc876cf429b13439544fb30cb45cba0dc941ec69b46d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.docker.com/reference/build-checks/secrets-used-in-arg-or-env/",
+      "sha256": "30d2085d52496c97cd393100f705dc2d9320dcc128db54032d3e0fc5156951a5",
+      "text_characters": 15003
+    },
+    {
+      "id": "webex-webhooks",
+      "url": "https://developer.webex.com/meeting/docs/api/guides/webhooks",
+      "checked_at": "2026-09-29T10:06:18.490942+00:00",
+      "health": {
+        "id": "webex-webhooks",
+        "url": "https://developer.webex.com/meeting/docs/api/guides/webhooks",
+        "checked_at": "2026-09-29T10:06:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.webex.com/meeting/docs/api/guides/webhooks",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Webex Meetings",
+        "canonical_url": "https://developer.webex.com/meeting/docs/api/guides/webhooks",
+        "duration_signals": [],
+        "signal_fingerprint": "dfaf2aaf7834c13ca7de20413e088d1cd4f28813db87b50ff0a9c2cb53649655",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.webex.com/meeting/docs/api/guides/webhooks",
+      "sha256": "8d09db6170a071bfb5a866182e44fb4baafaa2cce9aae99a5ae433be137737cd",
+      "text_characters": 37
+    }
+  ],
+  "added_source_ids": [
+    "cisco-ccna-automation-credential",
+    "cisco-learn-rebrand-announcement",
+    "cisco-automation-transition-details",
+    "meraki-api-pagination",
+    "meraki-api-rate-limit",
+    "meraki-api-errors",
+    "meraki-python-library",
+    "python-json",
+    "requests-quickstart",
+    "requests-advanced",
+    "rfc-6241",
+    "rfc-8040",
+    "ansible-check-mode",
+    "docker-build-secrets",
+    "webex-webhooks"
+  ],
+  "findings": [
+    {
+      "id": "200901-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "The detailed PDF supplies scope beyond the landing page",
+      "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-901-CCNAAUTO_v.1.1.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "61numbered objectives with supporting bullets in actualthree-pagePDF; landingv1.0label differs.",
+      "recommendation": "Map everyobjective andretainv1.1scope with first-partylabelconflict.",
+      "disposition": "applied",
+      "source_id": "cisco-200-901-v1-1-blueprint",
+      "resolution": "Map everyobjective andretainv1.1scope with first-partylabelconflict."
+    },
+    {
+      "id": "200901-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "A changed extraction does not establish new exam content",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccnaauto.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Currentoutputadds35title/navigationlines; priorcontentblock is identical. Missinglifecyclebaseline detected.",
+      "recommendation": "Explicitlyreview/accept baseline;archivebyteidenticalearliersnapshotandpreservehistoricalrecords.",
+      "disposition": "applied",
+      "source_id": "cisco-200-901-exam",
+      "resolution": "Explicitlyreview/accept baseline;archivebyteidenticalearliersnapshotandpreservehistoricalrecords."
+    },
+    {
+      "id": "200901-deep-3",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Professional redesign must not be applied to Associate",
+      "url": "https://blogs.cisco.com/learning/views-from-an-insider-on-the-ccnp-automation-track-autocor-edition",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "August2025transition text explicitly separates Associate/Expert rename from Professional overhaul.",
+      "recommendation": "CiteAssociate-specificscope andkeepbroadportfoliomarketing separate.",
+      "disposition": "applied",
+      "source_id": "cisco-automation-transition-details",
+      "resolution": "CiteAssociate-specificscope andkeepbroadportfoliomarketing separate."
+    },
+    {
+      "id": "200901-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Boolean coercion can report a false device as reachable",
+      "url": "https://docs.python.org/3/library/json.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "OldsnippetreturnsTrue forreachable stringfalse andraisesAttributeError onlistroot; defaultJSONacceptsduplicatekeys/nonfiniteconstants.",
+      "recommendation": "Use strictshape/Boolean checks andJSONhooks;executeoriginalcounterexamples and67newworkbookchecks.",
+      "disposition": "applied",
+      "source_id": "python-json",
+      "resolution": "Use strictshape/Boolean checks andJSONhooks;executeoriginalcounterexamples and67newworkbookchecks."
+    },
+    {
+      "id": "200901-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "One page does not establish inventory completeness",
+      "url": "https://developer.cisco.com/meraki/api-v1/pagination/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Providerdocumentsnextlinks/cursors; oldexampleonlyreturnsonepage.",
+      "recommendation": "Addboundedpaginatedcollector withdedupconflict/cycle/offcontractdestinations andlaterpagefailuretests.",
+      "disposition": "applied",
+      "source_id": "meraki-api-pagination",
+      "resolution": "Addboundedpaginatedcollector withdedupconflict/cycle/offcontractdestinations andlaterpagefailuretests."
+    },
+    {
+      "id": "200901-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Timeout and retry limits need distinct meanings",
+      "url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Request timeout is not overalloperationdeadline; JSONdecode is not statusvalidation; ambiguouswritetimeoutspossible.",
+      "recommendation": "Document GET-only retries,serverdelayabort,waitbudgetlimits andseparatestatus/schema/TLS failures.",
+      "disposition": "applied",
+      "source_id": "requests-quickstart",
+      "resolution": "Document GET-only retries,serverdelayabort,waitbudgetlimits andseparatestatus/schema/TLS failures."
+    },
+    {
+      "id": "200901-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "NETCONF transaction features are capability dependent",
+      "url": "https://www.rfc-editor.org/rfc/rfc6241.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Candidate,confirmedcommit androllback-on-error areoptionalcapabilities; candidatemaybe shared.",
+      "recommendation": "Requirecapability/ownership/locking checks andseparaterunning/startup/applicationhealth.",
+      "disposition": "applied",
+      "source_id": "rfc-6241",
+      "resolution": "Requirecapability/ownership/locking checks andseparaterunning/startup/applicationhealth."
+    },
+    {
+      "id": "200901-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Conditional edits need the actual entity-tag scope",
+      "url": "https://www.rfc-editor.org/rfc/rfc8040.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "RFCallowsresource-specific tags or datastoretagfallback;If-Match rejects stale state.",
+      "recommendation": "Explain412refetch/reconcile andavoidblindoverwriteorassumedperleafisolation.",
+      "disposition": "applied",
+      "source_id": "rfc-8040",
+      "resolution": "Explain412refetch/reconcile andavoidblindoverwriteorassumedperleafisolation."
+    },
+    {
+      "id": "200901-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Check mode is not an unconditional read-only guarantee",
+      "url": "https://docs.ansible.com/projects/ansible-core/stable-2.21/playbook_guide/playbooks_checkmode.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Unsupportedmodules/registeredresults limit predictions;check_mode:false executes normally;diffmayexposesecrets.",
+      "recommendation": "Teachtask-levelinspection andproposeexception/evidence labwithoutclaimingexecution.",
+      "disposition": "applied",
+      "source_id": "ansible-check-mode",
+      "resolution": "Teachtask-levelinspection andproposeexception/evidence labwithoutclaimingexecution."
+    },
+    {
+      "id": "200901-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Build variables are not secret storage",
+      "url": "https://docs.docker.com/reference/build-checks/secrets-used-in-arg-or-env/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "DockerwarnsaboutsecretARG/ENV exposureinimage/history/metadata.",
+      "recommendation": "Teachsecretmount/runtimeinjection distinction withoutunexecutedbuildclaims.",
+      "disposition": "applied",
+      "source_id": "docker-build-secrets",
+      "resolution": "Teachsecretmount/runtimeinjection distinction withoutunexecutedbuildclaims."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "cisco-learn-rebrand-announcement",
+      "publisher": "Cisco",
+      "author": "Par Merat",
+      "published_on": "2025-05-27",
+      "disposition": "accepted-with-limits",
+      "value": "February3,2026Automationrename.",
+      "limits": "SelectedAssociateparagraphs; broadportfolioupdatesnotexamobjectives."
+    },
+    {
+      "source_id": "cisco-automation-transition-details",
+      "publisher": "Cisco",
+      "author": "Quinn Snyder",
+      "published_on": "2025-08-06",
+      "disposition": "accepted-with-limits",
+      "value": "Associate/Expert rename versusProfessionalredesign.",
+      "limits": "Selectedtransitiontext; remainingCCNPcontentnotadopted."
+    },
+    {
+      "source_id": "cisco-200-901-path-duration",
+      "publisher": "Cisco",
+      "author": "Margaret Dilloway",
+      "published_on": "2026-04-13",
+      "disposition": "accepted-with-limits",
+      "value": "32h30CCNAAUTO learningpath publicduration.",
+      "limits": "Datedarticle;notcurrentloggedinpathsum orotherAIcontentasexamrequirements."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 67,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "58f4cb132f948f8966c9978c6a723211eb1eeeccc0eb7199c70e199efafa88d9",
+      "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+      "execution_stdout": "{\"devices\": [\"a\"], \"first_reachable\": false, \"retry_requests\": 2, \"virtual_waits\": [2], \"requests_version\": \"2.34.2\", \"live_requests\": 0}\n67 local checks passed",
+      "results": {
+        "devices": [
+          "a"
+        ],
+        "first_reachable": false,
+        "retry_requests": 2,
+        "virtual_waits": [
+          2
+        ],
+        "requests_version": "2.34.2",
+        "live_requests": 0
+      },
+      "execution_boundary": "Actual Requests2.34.2 preparation,Session,Response andlinks parser with offline BaseAdapter mounted for both schemes. No sockets,DNS,liveAPI,realcredentials or sleep. Allsyntheticdata; environmentsettingsdisabled; fixedtime/virtualdelays.",
+      "model_limits": "GET-only fictionalarraycontract; bodylimitafterbuffering,waitbudgetnotwallclockdeadline,selectedLinkgrammarnotcompleteRFCvalidation,nocrosspagesnapshotconsistency,writeidempotency,webhookreceiver,CiscoSDK orproductionSSRFproof."
+    }
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "Eight infrastructure/network/container/sandbox/SDK/webhook/deployment/restore labs remain proposed; independent human review pending. No live Cisco API,SDK,NETCONF/RESTCONF,Ansible,Docker or webhook execution.",
+    "67 local checks exercise exact public synthetic Requests code including input/status/limit rejection cases; they do not establish production readiness or Cisco API compatibility. No sockets,real credentials or actual sleeping.",
+    "FictionalGETarraycontract; bufferedbodycap not streamingmemorylimit; retrywaitbudget not wallclockdeadline; selectedLinkparser cases not completeRFCgrammar/ambiguityvalidation; no cross-page snapshot guarantee or generalSSRFdefense.",
+    "Officialversion/language conflict remains; no currentcheckout,usercreditbalance or eligibility confirmation. DetailedPDF/training scopecheckedseparatelyfromHTMLmonitor.",
+    "Originalobjectivebytes archived; navigation-only extractiondifference accepted explicitly and lifecyclebaseline initialized. Hashdifferenceisnotproofnewexamscope orwhenCiscosourcechanged.",
+    "Technicaldocs selectivelyread asrecorded; actualblueprint/trainingPDFs fullyread. Webexdirectshell/browserfailure meansfullcurrentdelivery/securityguideunverified; no universal signedtimestamp/header/algorithm claim.",
+    "Pearsonredirect,OReilly/Udemy403,YouTubeshell leave selectedmetadataunverified. LinkedInpublicmetadata/selectedoutlineonly; no paidlessons/transcripts/questions orqualityevaluation. Cisco32h30 isdatedAprilarticle,notauthenticatedcurrentpathsum.",
+    "No runtimeinstallation,accountauthentication,servicechange,notification orreservedfiveGitHubguide edits."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Actual Requests2.34.2 preparation,Session,Response andlinks parser with offline BaseAdapter mounted for both schemes. No sockets,DNS,liveAPI,realcredentials or sleep. Allsyntheticdata; environmentsettingsdisabled; fixedtime/virtualdelays.",
+    "passed": 67,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "58f4cb132f948f8966c9978c6a723211eb1eeeccc0eb7199c70e199efafa88d9",
+    "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "execution_stdout": "{\"devices\": [\"a\"], \"first_reachable\": false, \"retry_requests\": 2, \"virtual_waits\": [2], \"requests_version\": \"2.34.2\", \"live_requests\": 0}\n67 local checks passed",
+    "results": {
+      "devices": [
+        "a"
+      ],
+      "first_reachable": false,
+      "retry_requests": 2,
+      "virtual_waits": [
+        2
+      ],
+      "requests_version": "2.34.2",
+      "live_requests": 0
+    },
+    "model_limits": "GET-only fictionalarraycontract; bodylimitafterbuffering,waitbudgetnotwallclockdeadline,selectedLinkgrammarnotcompleteRFCvalidation,nocrosspagesnapshotconsistency,writeidempotency,webhookreceiver,CiscoSDK orproductionSSRFproof.",
+    "learning_catalog_consistency": "passed",
+    "corrected_gate_findings": [
+      "Commercial catalog correction kept in a separate evidence field because first-party freshness schema excludes paid training sources.",
+      "Temporary research report moved outside Markdown scan; published report uses a repository file reference because operationalJSON is not in public site documents."
+    ]
+  },
+  "archived_prior_objective_snapshot": {
+    "path": "data/objective-snapshots/200-901-2026-09-02-official-objectives.txt",
+    "sha256": "b741522983500658e43c1a9a0200c142e4a626ff8d0ad8a01859f92d0670c60f",
+    "historical_audit_paths_updated": [
+      "risk-ranked-cisco-cpp-fortinet-isaca-isc2-2026-09-06-08"
+    ],
+    "restored_review_dates": [
+      "2026-09-02"
+    ],
+    "note": "Byte-identical prior snapshot; original review recovered from saved real prior record. Hashes,dates,checks,findings and conclusions preserved. Historical snapshot paths alone changed; current review has a new dated ID."
+  },
+  "catalog_findings": [
+    {
+      "id": "200901-deep-11",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "A past forthcoming date is not verified availability",
+      "url": "https://www.pearson.com/en-us/subject-catalog/p/devnet-associate-devasc-200-901-official-cert-guide/P200000012978/9780135368114",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "200-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "CurrentproductURLredirectstoemptysearch; no validcurrent productdetails.",
+      "recommendation": "WithdrawSeptember15forthcomingclaim andmarkedition/publication/accessunverified.",
+      "disposition": "applied",
+      "source_id": "pearson-200-901-official-guide-2e",
+      "resolution": "WithdrawSeptember15forthcomingclaim andmarkedition/publication/accessunverified."
+    }
+  ],
+  "catalog_finding_boundary": "Applied catalog correction retained separately: third-party paid training listings are not eligible for the first-party source-freshness finding schema.",
+  "actual_pdf_receipts": [
+    {
+      "id": "cisco-200-901-v1-1-blueprint",
+      "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-901-CCNAAUTO_v.1.1.pdf",
+      "checked_at": "2026-09-29T10:01:50.551624+00:00",
+      "health": {
+        "id": "cisco-200-901-v1-1-blueprint",
+        "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-901-CCNAAUTO_v.1.1.pdf",
+        "checked_at": "2026-09-29T10:01:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-901-CCNAAUTO_v.1.1.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-901-CCNAAUTO_v.1.1.pdf",
+      "sha256": "31a15fbaa9480380e4a87bf9627be4b70ed38950107c2da319abfed0a8414193",
+      "bytes": 302997,
+      "pdf_pages": 3,
+      "text_characters": 7033
+    },
+    {
+      "id": "cisco-200-901-training-pdf",
+      "url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccnaauto.pdf",
+      "checked_at": "2026-09-29T10:01:50.525067+00:00",
+      "health": {
+        "id": "cisco-200-901-training-pdf",
+        "url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccnaauto.pdf",
+        "checked_at": "2026-09-29T10:01:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccnaauto.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccnaauto.pdf",
+      "sha256": "d44698df46f4c1f9e7eb4c1461a3c5ae7f8238ad97431884f8e3512c68f6bd88",
+      "bytes": 270284,
+      "pdf_pages": 4,
+      "text_characters": 5214
+    }
+  ],
+  "accepted_objective_and_lifecycle_observation": {
+    "changed": [
+      "200-901"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "200-901",
+        "title": "Cisco Certified Network Associate Automation",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccnaauto.html",
+        "guide_path": "guides/200-901-cisco-certified-network-associate-automation.md",
+        "snapshot_path": "data\\objective-snapshots\\200-901-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\200-901-official-status.json",
+        "previous_sha256": "b741522983500658e43c1a9a0200c142e4a626ff8d0ad8a01859f92d0670c60f",
+        "current_sha256": "389efdb0eae2c7136ded47c44e8dd55bf4076e03a130ff75ce3d49b49224545d",
+        "previous_status_sha256": null,
+        "current_status_sha256": "c9a9888033258e9e81e3c9c7127203f73394de2322f1b230047288f0215528a9",
+        "official_status": {
+          "skills_versions": [
+            "Automating Networks Using Cisco Platforms (200-901 CCNAAUTO) v1.0 is a 120-minute exam that tests a candidate's knowledge of software development and design including understanding and using APIs, application deployment and security, and infrastructure and automation on Cisco platforms.",
+            "Languages: English, Japanese",
+            "Duration: 120 minutes",
+            "Price: $US300, or use Cisco Learning Credits"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ]
+  },
+  "post_review_objective_and_lifecycle_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "200-901",
+        "title": "Cisco Certified Network Associate Automation",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccnaauto.html",
+        "guide_path": "guides/200-901-cisco-certified-network-associate-automation.md",
+        "snapshot_path": "data\\objective-snapshots\\200-901-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\200-901-official-status.json",
+        "previous_sha256": "389efdb0eae2c7136ded47c44e8dd55bf4076e03a130ff75ce3d49b49224545d",
+        "current_sha256": "389efdb0eae2c7136ded47c44e8dd55bf4076e03a130ff75ce3d49b49224545d",
+        "previous_status_sha256": "c9a9888033258e9e81e3c9c7127203f73394de2322f1b230047288f0215528a9",
+        "current_status_sha256": "c9a9888033258e9e81e3c9c7127203f73394de2322f1b230047288f0215528a9",
+        "official_status": {
+          "skills_versions": [
+            "Automating Networks Using Cisco Platforms (200-901 CCNAAUTO) v1.0 is a 120-minute exam that tests a candidate's knowledge of software development and design including understanding and using APIs, application deployment and security, and infrastructure and automation on Cisco platforms.",
+            "Languages: English, Japanese",
+            "Duration: 120 minutes",
+            "Price: $US300, or use Cisco Learning Credits"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "numbered_current_objective_counts_by_domain": [
+    8,
+    9,
+    9,
+    12,
+    14,
+    9
+  ],
+  "current_objective_groups": [
+    {
+      "title": "Software Development and Design — 15%",
+      "objectives": [
+        "1.1 Compare data formats (XML, JSON, and YAML)",
+        "1.2 Describe parsing of common data format (XML, JSON, and YAML) to Python data structures",
+        "1.3 Describe the concepts of test-driven development",
+        "1.4 Compare software development methods (agile, lean, and waterfall)",
+        "1.5 Explain the benefits of organizing code into methods / functions, classes, and modules",
+        "1.6 Explain the advantages of common design patterns (MVC and Observer)",
+        "1.7 Explain the advantages of version control",
+        "1.8 Utilize common version control operations with Git 1.8.a Clone 1.8.b Add/remove 1.8.c Commit 1.8.d Push / pull 1.8.e Branch 1.8.f Merge and handling conflicts 1.8.g diff"
+      ]
+    },
+    {
+      "title": "Understanding and Using APIs — 20%",
+      "objectives": [
+        "2.1 Construct a REST API request to accomplish a task given API documentation",
+        "2.2 Describe common usage patterns related to webhooks",
+        "2.3 Describe the constraints when consuming APIs",
+        "2.4 Explain common HTTP response codes associated with REST APIs",
+        "2.5 Troubleshoot a problem given the HTTP response code, request and API documentation",
+        "2.6 Interpret the parts of an HTTP response (response code, headers, body)",
+        "2.7 Utilize common API authentication mechanisms: basic, custom token, and API keys",
+        "2.8 Compare common API styles (REST, RPC, synchronous, and asynchronous)",
+        "2.9 Construct a Python script that calls a REST API using the requests library"
+      ]
+    },
+    {
+      "title": "Cisco Platforms and Development — 15%",
+      "objectives": [
+        "3.1 Construct a Python script that uses a Cisco SDK given SDK documentation",
+        "3.2 Describe the capabilities of Cisco network management platforms and APIs (Meraki, Cisco Catalyst Center, ACI, Cisco Catalyst SD-WAN, and NSO)",
+        "3.3 Describe the capabilities of Cisco compute management platforms and APIs (UCS Manager and Intersight)",
+        "3.4 Describe the capabilities of Cisco collaboration platforms and APIs (Webex, Webex devices, Cisco Unified Communications Manager including AXL and UDS interfaces)",
+        "3.5 Describe the capabilities of Cisco security platforms and APIs (XDR, Firepower, Secure Connect, Secure Endpoint, ISE, and Secure Malware Analytics)",
+        "3.6 Describe the device level APIs and dynamic interfaces for IOS XE and NX-OS",
+        "3.7 Describe the appropriate DevNet resource for a given scenario (Sandbox, Code Exchange, support, forums, Learning Labs, and API documentation)",
+        "3.8 Apply concepts of model driven programmability (YANG, RESTCONF, and NETCONF) in a Cisco environment",
+        "3.9 Construct code to perform a specific operation based on a set of requirements and given API reference documentation such as these: 3.9.a Obtain a list of network devices by using Meraki, Cisco Catalyst Center, ACI, Cisco Catalyst SD-WAN, or NSO 3.9.b Manage spaces, participants, and messages in Webex 3.9.c Obtain a list of clients / hosts seen on a network using Meraki or Cisco Catalyst Center"
+      ]
+    },
+    {
+      "title": "Application Deployment and Security — 15%",
+      "objectives": [
+        "4.1 Describe the benefits of edge computing",
+        "4.2 Describe the attributes of different application deployment models (private cloud, public cloud, hybrid cloud, and edge)",
+        "4.3 Describe the attributes of these application deployment types 4.3.a Virtual machines 4.3.b Bare metal 4.3.c Containers",
+        "4.4 Describe components for a CI/CD pipeline in application deployments",
+        "4.5 Construct a Python unit test",
+        "4.6 Interpret contents of a Dockerfile",
+        "4.7 Utilize Docker images in local developer environment",
+        "4.8 Describe application security issues related to secret protection, encryption (storage and transport), and data handling",
+        "4.9 Explain how firewall, DNS, load balancers, and reverse proxy in application deployment",
+        "4.10 Describe top OWASP threats (such as XSS, SQL injections, and CSRF)",
+        "4.11 Utilize Bash commands (file management, directory navigation, and environmental variables)",
+        "4.12 Describe the principles of DevOps practices"
+      ]
+    },
+    {
+      "title": "Infrastructure and Automation — 20%",
+      "objectives": [
+        "5.1 Describe the value of model driven programmability for infrastructure automation",
+        "5.2 Compare controller-level to device-level management",
+        "5.3 Describe the use and roles of network simulation and test tools (such as Cisco Modeling Labs and pyATS)",
+        "5.4 Describe the components and benefits of CI/CD pipeline in infrastructure automation",
+        "5.5 Describe the principles of infrastructure as code",
+        "5.6 Describe the capabilities of automation tools such as Ansible, Terraform, and Cisco NSO",
+        "5.7 Identify the workflow being automated by a Python script that uses Cisco APIs including ACI, Meraki, Cisco Catalyst Center, and RESTCONF",
+        "5.8 Interpret the workflow being automated by an Ansible playbook (management packages, user management related to services, basic service configuration, and start/stop)",
+        "5.9 Interpret the workflow being automated by a bash script (such as file management, app install, user management, directory navigation)",
+        "5.10 Interpret the results of a RESTCONF or NETCONF query",
+        "5.11 Interpret basic YANG models",
+        "5.12 Interpret a unified diff",
+        "5.13 Describe the principles and benefits of a code review process",
+        "5.14 Interpret a sequence diagram that includes API calls"
+      ]
+    },
+    {
+      "title": "Network Fundamentals — 15%",
+      "objectives": [
+        "6.1 Describe the purpose and usage of MAC addresses and VLANs",
+        "6.2 Describe the purpose and usage of IP addresses, routes, subnet mask / prefix, and gateways",
+        "6.3 Describe the function of common networking components (such as switches, routers, firewalls, and load balancers)",
+        "6.4 Interpret a basic network topology diagram with elements such as switches, routers, firewalls, load balancers, and port values",
+        "6.5 Describe the function of management, data, and control planes in a network device",
+        "6.6 Describe the functionality of these IP Services: DHCP, DNS, NAT, SNMP, NTP",
+        "6.7 Recognize common protocol port values (such as, SSH, Telnet, HTTP, HTTPS, and NETCONF)",
+        "6.8 Diagnose application connectivity issues (NAT problem, Transport Port blocked, proxy, and VPN)",
+        "6.9 Explain the impacts of network constraints on applications"
+      ]
+    }
+  ],
+  "original_parser_bug_reproduction": {
+    "string_false_became_true": true,
+    "non_object_error": "AttributeError",
+    "execution_boundary": "Exact original first Python block executed with synthetic strings only; no network or credentials."
+  },
+  "objective_diff_review": {
+    "added_leading_lines": 35,
+    "previous_content_block_identical": true,
+    "previous_sha256": "b741522983500658e43c1a9a0200c142e4a626ff8d0ad8a01859f92d0670c60f",
+    "current_sha256": "389efdb0eae2c7136ded47c44e8dd55bf4076e03a130ff75ce3d49b49224545d",
+    "interpretation": "Current extraction includes title/navigation preceding the identical prior exam block. Does not establish an exam-scope change or source-change chronology. Generic extractor unchanged."
+  }
+}

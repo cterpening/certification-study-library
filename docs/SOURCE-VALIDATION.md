@@ -1537,6 +1537,8 @@ The review maps every current v1.1 objective through requirement → packet/cont
 
 ## 200-901 coverage record
 
+The September 29 [deep review](research/2026-09-29-200-901-deep-review.md) maps 61 detailed objectives. Mapped all61 numbered objectives/supporting bullets from the actual three-page v1.1 PDF; retained official version/language conflicts and separated Associate rename from Professional redesign. Fixed false-string Boolean parsing, added67 executed Requests fixture checks and48 answers, clarified pagination/retry/NETCONF/RESTCONF/check-mode/build-secret boundaries and refreshed catalog evidence. Reviewed navigation-only monitor difference and preserved prior evidence. Eight infrastructure labs and independent human review remain pending. Current guide citations: 27 registered, 25 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: six-domain CCNAAUTO v1.1—Software Development and Design (15%), Understanding and Using APIs (20%), Cisco Platforms and Development (15%), Application Deployment and Security (15%), Infrastructure and Automation (20%), and Network Fundamentals (15%)

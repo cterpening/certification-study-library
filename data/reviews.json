@@ -3,6 +3,80 @@
   "schema_version": 1,
   "reviews": [
     {
+      "id": "200-901-2026-09-02-source-validation",
+      "exam_code": "200-901",
+      "guide_path": "guides/200-901-cisco-certified-network-associate-automation.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/200-901-2026-09-02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "b741522983500658e43c1a9a0200c142e4a626ff8d0ad8a01859f92d0670c60f",
+      "objective_coverage": [
+        {
+          "objective_group": "Software Development and Design (15%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Understanding and Using APIs (20%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 2–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Cisco Platforms and Development (15%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 3–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Application Deployment and Security (15%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 2–3",
+            "Labs 2, 5 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Infrastructure and Automation (20%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenario 2",
+            "Labs 4–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network Fundamentals (15%)",
+          "guide_sections": [
+            "Section 6",
+            "Scenarios 1–2",
+            "Labs 3, 7 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 9,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All six detailed v1.1 domains and every objective are mapped through intent, data/API/auth contract, code/configuration, tests, review, bounded execution, evidence and rollback. The guide explicitly reconciles the landing-page v1.0 label, detailed/current-training v1.1 label, DevNet-to-CCNA Automation rename and first-party language discrepancy. Three scenarios, eight authorized labs and 46 checks are included. Nine URLs are reachable; O'Reilly and Udemy are automation-blocked; none are broken."
+    },
+    {
       "id": "google-professional-agentic-architect-2026-09-02-source-validation",
       "exam_code": "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
       "guide_path": "guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md",
@@ -7957,25 +8031,78 @@
       "notes": "Mapped all53 current numbered objectives and supporting bullets from the actual four-page PDF; kept29 scheduledv2 objectives separate. Corrected DHCP/SNMP transition placement, clarified route installation/forwarding and LACP failover, added48 executed local checks and48 answers, and reconciled catalog evidence. Canonical objective/lifecycle digests unchanged; official price/language conflict retained. Eight device labs and independent human review remain pending. See docs/research/2026-09-29-200-301-deep-review.md"
     },
     {
-      "id":"200-901-2026-09-02-source-validation",
-      "exam_code":"200-901",
-      "guide_path":"guides/200-901-cisco-certified-network-associate-automation.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-02",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/200-901-official-objectives.txt",
-      "blueprint_snapshot_sha256":"b741522983500658e43c1a9a0200c142e4a626ff8d0ad8a01859f92d0670c60f",
-      "objective_coverage":[
-        {"objective_group":"Software Development and Design (15%)","guide_sections":["Section 1","All scenarios","Labs 1 and 8"]},
-        {"objective_group":"Understanding and Using APIs (20%)","guide_sections":["Section 2","Scenarios 1 and 3","Labs 2–3 and 8"]},
-        {"objective_group":"Cisco Platforms and Development (15%)","guide_sections":["Section 3","All scenarios","Labs 3–4 and 8"]},
-        {"objective_group":"Application Deployment and Security (15%)","guide_sections":["Section 4","Scenarios 2–3","Labs 2, 5 and 7–8"]},
-        {"objective_group":"Infrastructure and Automation (20%)","guide_sections":["Section 5","Scenario 2","Labs 4–6 and 8"]},
-        {"objective_group":"Network Fundamentals (15%)","guide_sections":["Section 6","Scenarios 1–2","Labs 3, 7 and 8"]}
+      "id": "200-901-2026-09-29-source-validation",
+      "exam_code": "200-901",
+      "guide_path": "guides/200-901-cisco-certified-network-associate-automation.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/200-901-official-objectives.txt",
+      "blueprint_snapshot_sha256": "389efdb0eae2c7136ded47c44e8dd55bf4076e03a130ff75ce3d49b49224545d",
+      "objective_coverage": [
+        {
+          "objective_group": "Software Development and Design (15%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Understanding and Using APIs (20%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 2–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Cisco Platforms and Development (15%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 3–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Application Deployment and Security (15%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 2–3",
+            "Labs 2, 5 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Infrastructure and Automation (20%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenario 2",
+            "Labs 4–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network Fundamentals (15%)",
+          "guide_sections": [
+            "Section 6",
+            "Scenarios 1–2",
+            "Labs 3, 7 and 8"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":11,"reachable":9,"access_blocked":2,"missing_or_error":0},
-      "notes":"All six detailed v1.1 domains and every objective are mapped through intent, data/API/auth contract, code/configuration, tests, review, bounded execution, evidence and rollback. The guide explicitly reconciles the landing-page v1.0 label, detailed/current-training v1.1 label, DevNet-to-CCNA Automation rename and first-party language discrepancy. Three scenarios, eight authorized labs and 46 checks are included. Nine URLs are reachable; O'Reilly and Udemy are automation-blocked; none are broken."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 27,
+        "reachable": 25,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Mapped all61 numbered objectives/supporting bullets from the actual three-page v1.1 PDF; retained official version/language conflicts and separated Associate rename from Professional redesign. Fixed false-string Boolean parsing, added67 executed Requests fixture checks and48 answers, clarified pagination/retry/NETCONF/RESTCONF/check-mode/build-secret boundaries and refreshed catalog evidence. Reviewed navigation-only monitor difference and preserved prior evidence. Eight infrastructure labs and independent human review remain pending. See docs/research/2026-09-29-200-901-deep-review.md"
     },
     {
       "id":"sol-c01-2026-09-02-source-validation",

@@ -4,6 +4,253 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-200901-deep-review",
+      "title": "200-901 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "200-901"
+      ],
+      "results": [
+        {
+          "exam_code": "200-901",
+          "vendor_id": "cisco",
+          "guide_path": "guides/200-901-cisco-certified-network-associate-automation.md",
+          "baseline_sha256": "af295a43aaf0f63e2a912630c4b569b2542732efae825945afba0d553e5fd02a",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Actual3pageblueprint and4pagetrainingPDF fullyread.61numberedobjectives8/9/9/12/14/9 mappedwithbullets. Canonicalv1.0versusPDF/trainingv1.1 andlanguageconflict retained.120minutes300USD,noprerq,3years,Associate30CE.35leadingmonitorlinesaddedwithoutpreviouscontentchange;acceptednewdigest andinitializedmissinglifebaseline explicitly afterpreserving oldbytes."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected official Python/Requests,Meraki,RFC6241/8040,Ansible andDocker guidance supports corrections. ExactpublicRequestsworkbook67checks. Webexcurrentpageonlyshell/browserfailure; nofullguideclaim orinventeduniversalheaders/timestamp. No live infrastructure."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "May27,2025ParMerat andAugust6,2025QuinnSnyder selectedAssociate transition text;April13,2026MargaretDilloway fulllearningroundup. Datedrename/scope distinctions andpathduration; Professionalredesignnottransplanted."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "LinkedIn public13h2March2024metadata/selectedoutline;Cisco48CEtrainingoverview anddated32h30roundup. Pearsonredirectinvalidatesprioravailabilityclaim. OReilly/Udemy403,YouTube/Webexshells; no paidinteriors orprovedlessonquality."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Reproduced bool(false-string)True andlist.getAttributeError,thenstrictparser/public67checks. Replacedsinglepageexample;addednocompleteness/totaldeadline/transactionguarantees,48answers8proposedlabs. Version/languageconflictsretained;catalogunverifiedfieldsexplicit."
+            }
+          },
+          "findings": [
+            {
+              "id": "200901-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "The detailed PDF supplies scope beyond the landing page",
+              "url": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-901-CCNAAUTO_v.1.1.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-901"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "61numbered objectives with supporting bullets in actualthree-pagePDF; landingv1.0label differs.",
+              "recommendation": "Map everyobjective andretainv1.1scope with first-partylabelconflict.",
+              "disposition": "applied",
+              "source_id": "cisco-200-901-v1-1-blueprint",
+              "resolution": "Map everyobjective andretainv1.1scope with first-partylabelconflict."
+            },
+            {
+              "id": "200901-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "A changed extraction does not establish new exam content",
+              "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccnaauto.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-901"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Currentoutputadds35title/navigationlines; priorcontentblock is identical. Missinglifecyclebaseline detected.",
+              "recommendation": "Explicitlyreview/accept baseline;archivebyteidenticalearliersnapshotandpreservehistoricalrecords.",
+              "disposition": "applied",
+              "source_id": "cisco-200-901-exam",
+              "resolution": "Explicitlyreview/accept baseline;archivebyteidenticalearliersnapshotandpreservehistoricalrecords."
+            },
+            {
+              "id": "200901-deep-3",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Professional redesign must not be applied to Associate",
+              "url": "https://blogs.cisco.com/learning/views-from-an-insider-on-the-ccnp-automation-track-autocor-edition",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-901"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "August2025transition text explicitly separates Associate/Expert rename from Professional overhaul.",
+              "recommendation": "CiteAssociate-specificscope andkeepbroadportfoliomarketing separate.",
+              "disposition": "applied",
+              "source_id": "cisco-automation-transition-details",
+              "resolution": "CiteAssociate-specificscope andkeepbroadportfoliomarketing separate."
+            },
+            {
+              "id": "200901-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Boolean coercion can report a false device as reachable",
+              "url": "https://docs.python.org/3/library/json.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-901"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "OldsnippetreturnsTrue forreachable stringfalse andraisesAttributeError onlistroot; defaultJSONacceptsduplicatekeys/nonfiniteconstants.",
+              "recommendation": "Use strictshape/Boolean checks andJSONhooks;executeoriginalcounterexamples and67newworkbookchecks.",
+              "disposition": "applied",
+              "source_id": "python-json",
+              "resolution": "Use strictshape/Boolean checks andJSONhooks;executeoriginalcounterexamples and67newworkbookchecks."
+            },
+            {
+              "id": "200901-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "One page does not establish inventory completeness",
+              "url": "https://developer.cisco.com/meraki/api-v1/pagination/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-901"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Providerdocumentsnextlinks/cursors; oldexampleonlyreturnsonepage.",
+              "recommendation": "Addboundedpaginatedcollector withdedupconflict/cycle/offcontractdestinations andlaterpagefailuretests.",
+              "disposition": "applied",
+              "source_id": "meraki-api-pagination",
+              "resolution": "Addboundedpaginatedcollector withdedupconflict/cycle/offcontractdestinations andlaterpagefailuretests."
+            },
+            {
+              "id": "200901-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Timeout and retry limits need distinct meanings",
+              "url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-901"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Request timeout is not overalloperationdeadline; JSONdecode is not statusvalidation; ambiguouswritetimeoutspossible.",
+              "recommendation": "Document GET-only retries,serverdelayabort,waitbudgetlimits andseparatestatus/schema/TLS failures.",
+              "disposition": "applied",
+              "source_id": "requests-quickstart",
+              "resolution": "Document GET-only retries,serverdelayabort,waitbudgetlimits andseparatestatus/schema/TLS failures."
+            },
+            {
+              "id": "200901-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "NETCONF transaction features are capability dependent",
+              "url": "https://www.rfc-editor.org/rfc/rfc6241.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-901"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Candidate,confirmedcommit androllback-on-error areoptionalcapabilities; candidatemaybe shared.",
+              "recommendation": "Requirecapability/ownership/locking checks andseparaterunning/startup/applicationhealth.",
+              "disposition": "applied",
+              "source_id": "rfc-6241",
+              "resolution": "Requirecapability/ownership/locking checks andseparaterunning/startup/applicationhealth."
+            },
+            {
+              "id": "200901-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Conditional edits need the actual entity-tag scope",
+              "url": "https://www.rfc-editor.org/rfc/rfc8040.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-901"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "RFCallowsresource-specific tags or datastoretagfallback;If-Match rejects stale state.",
+              "recommendation": "Explain412refetch/reconcile andavoidblindoverwriteorassumedperleafisolation.",
+              "disposition": "applied",
+              "source_id": "rfc-8040",
+              "resolution": "Explain412refetch/reconcile andavoidblindoverwriteorassumedperleafisolation."
+            },
+            {
+              "id": "200901-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Check mode is not an unconditional read-only guarantee",
+              "url": "https://docs.ansible.com/projects/ansible-core/stable-2.21/playbook_guide/playbooks_checkmode.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-901"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Unsupportedmodules/registeredresults limit predictions;check_mode:false executes normally;diffmayexposesecrets.",
+              "recommendation": "Teachtask-levelinspection andproposeexception/evidence labwithoutclaimingexecution.",
+              "disposition": "applied",
+              "source_id": "ansible-check-mode",
+              "resolution": "Teachtask-levelinspection andproposeexception/evidence labwithoutclaimingexecution."
+            },
+            {
+              "id": "200901-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Build variables are not secret storage",
+              "url": "https://docs.docker.com/reference/build-checks/secrets-used-in-arg-or-env/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "200-901"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "DockerwarnsaboutsecretARG/ENV exposureinimage/history/metadata.",
+              "recommendation": "Teachsecretmount/runtimeinjection distinction withoutunexecutedbuildclaims.",
+              "disposition": "applied",
+              "source_id": "docker-build-secrets",
+              "resolution": "Teachsecretmount/runtimeinjection distinction withoutunexecutedbuildclaims."
+            }
+          ],
+          "notes": "Mapped all61 numbered objectives/supporting bullets from the actual three-page v1.1 PDF; retained official version/language conflicts and separated Associate rename from Professional redesign. Fixed false-string Boolean parsing, added67 executed Requests fixture checks and48 answers, clarified pagination/retry/NETCONF/RESTCONF/check-mode/build-secret boundaries and refreshed catalog evidence. Reviewed navigation-only monitor difference and preserved prior evidence. Eight infrastructure labs and independent human review remain pending. Same-context AI review; human review pending. See docs/research/2026-09-29-200-901-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 10,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-200301-deep-review",
       "title": "200-301 complete guide and learning-content review",
       "rubric_version": 1,
