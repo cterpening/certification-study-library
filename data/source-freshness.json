@@ -4,6 +4,181 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-2201201-deep-review",
+      "title": "220-1201 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "220-1201"
+      ],
+      "results": [
+        {
+          "exam_code": "220-1201",
+          "vendor_id": "comptia",
+          "guide_path": "guides/220-1201-comptia-a-plus-core-1.md",
+          "baseline_sha256": "28ecfe8642a214df278dedb42ca89031a431e79d3d3f5c620aa68bb7da56b040",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Canonical V15 page and monitor hashes unchanged. Same-version rule, weights, 90-minute/maximum 90-question format and estimated 2028 retirement retained without inventing an exact date. Full public version 4.0 PDF has 27 objectives and explicitly excludes the formal troubleshooting methodology sequence from tested scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Read all detailed PDF objective bullets, USB-IF connector/capability guidance, Dell RAID and battery documents, targeted Microsoft DNS/DHCP/email-authentication/Hyper-V sections, IANA port assignments, Python ipaddress/socket sections and RFC3927 link-local context. Product examples do not enlarge exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "V15 exam and PDF document 4.0 identifiers kept separate. Main lifecycle metadata unchanged. Current published USB, Dell RAID (September 2, 2026) and Microsoft references checked; no universal device support, future retirement date or lab execution inferred."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Public Pluralsight 6 courses/12h and older outline, LinkedIn 20h14/September 26, 2025 with 220-1101 description under 220-1201 title, MeasureUp 242 questions and Messer 63 videos/10h11 checked. Both course discrepancies disclosed. Paid OReilly/Udemy access blocked. CertMaster provider time estimates labeled. Places to learn final."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "V15 PDF methodology exclusion overrides older course/blog wording. Added omitted NetBIOS ports, DNS/mail authentication, DHCP planning, display attributes, RAID failure placement and printer paths. Separate assignment registry from actual transport use, NAT from DHCP, successful transport from accepted application response and calculations from live infrastructure."
+            }
+          },
+          "findings": [
+            {
+              "id": "2201201-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Formal method was not clearly separated from tested troubleshooting",
+              "url": "https://lecbyo.files.cmp.optimizely.com/download/34be017cb73211ef8985a6f347fbf652?checkExpiry=false",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "220-1201"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Public version 4.0 document explicitly excludes the formal methodology sequence while retaining six practical troubleshooting objective areas.",
+              "recommendation": "Keep the method as labeled supporting practice and map all 27 numbered objectives; do not use older course/blog wording as scope authority.",
+              "disposition": "applied",
+              "source_id": "comptia-220-1201-objectives-pdf",
+              "resolution": "Keep the method as labeled supporting practice and map all 27 numbered objectives; do not use older course/blog wording as scope authority."
+            },
+            {
+              "id": "2201201-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Summary-based coverage needed finer networking and hardware detail",
+              "url": "https://lecbyo.files.cmp.optimizely.com/download/34be017cb73211ef8985a6f347fbf652?checkExpiry=false",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "220-1201"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The public full outline includes NetBIOS 137–139, DNS record/mail-authentication concepts, DHCP scopes, display attributes and specific print/maintenance tasks.",
+              "recommendation": "Add port/service and DNS tables, scope/reservation/exclusion planning, host-service/network types, display and printer explanations, and strengthen 42 answers.",
+              "disposition": "applied",
+              "source_id": "comptia-220-1201-objectives-pdf",
+              "resolution": "Add port/service and DNS tables, scope/reservation/exclusion planning, host-service/network types, display and printer explanations, and strengthen 42 answers."
+            },
+            {
+              "id": "2201201-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Connector shape needed a capability-chain worked example",
+              "url": "https://www.usb.org/sites/default/files/usb_type-c_language_product_and_packaging_guidelines_20230320.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "220-1201"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "USB-IF separates Type-C connectors, data capability, Alt Mode and Power Delivery; USB 2.0 Type-C does not implement the higher-speed/Alt-Mode signal paths.",
+              "recommendation": "Add dock/cable/power diagnostic comparisons without inferring features from connector shape.",
+              "disposition": "applied",
+              "source_id": "usb-typec-language-guidance",
+              "resolution": "Add dock/cable/power diagnostic comparisons without inferring features from connector shape."
+            },
+            {
+              "id": "2201201-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "RAID redundancy needed explicit capacity and failure-placement cases",
+              "url": "https://www.dell.com/support/kbdoc/en-us/000128635/dell-servers-what-are-the-raid-levels-and-their-specifications",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "220-1201"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Traditional RAID 0/1/5/6/10 have different capacity and fault tolerance; RAID 10 survival depends on mirrored-pair membership.",
+              "recommendation": "Add qualified equal-size-drive calculations and counterexamples for same-pair versus different-pair failures; keep physical controller/rebuild labs proposed.",
+              "disposition": "applied",
+              "source_id": "dell-raid-levels",
+              "resolution": "Add qualified equal-size-drive calculations and counterexamples for same-pair versus different-pair failures; keep physical controller/rebuild labs proposed."
+            },
+            {
+              "id": "2201201-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A NAT network label does not prove guest configuration",
+              "url": "https://learn.microsoft.com/virtualization/hyper-v-on-windows/user-guide/setup-nat-network",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "220-1201"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The manual WinNAT guide explicitly says the NAT itself does not assign endpoint IP addresses.",
+              "recommendation": "Explain internal/external/private switch choices separately from guest address, gateway, DNS and access policy; no host network changes executed.",
+              "disposition": "applied",
+              "source_id": "hyperv-nat-network",
+              "resolution": "Explain internal/external/private switch choices separately from guest address, gateway, DNS and access policy; no host network changes executed."
+            },
+            {
+              "id": "2201201-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Reachability and application acceptance needed concrete evidence",
+              "url": "https://docs.python.org/3.13/library/socket.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "220-1201"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Socket documentation distinguishes stream/datagram operations; receiving an application rejection is different from failure to reach the endpoint.",
+              "recommendation": "Run an original bounded loopback protocol over both TCP and UDP, with valid and rejected requests, and state that no remote infrastructure was tested.",
+              "disposition": "applied",
+              "source_id": "python313-socket",
+              "resolution": "Run an original bounded loopback protocol over both TCP and UDP, with valid and rejected requests, and state that no remote infrastructure was tested."
+            }
+          ],
+          "notes": "Mapped all 27 numbered objectives in the public version 4.0 PDF against 15 main-page summary rows. Clarified the methodology exclusion, expanded networking/hardware/printing and product boundaries, added two original examples with 34 local checks and eight real loopback exchanges, and retained course-catalog discrepancies. All eight complete hardware/platform labs remain proposed. Same-context AI review; human review pending. See docs/research/2026-09-28-220-1201-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 6,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-fc0u71-deep-review",
       "title": "FC0-U71 complete guide and learning-content review",
       "rubric_version": 1,

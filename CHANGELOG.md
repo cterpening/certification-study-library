@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: [220-1201 deep review](docs/research/2026-09-28-220-1201-deep-review.md): 27 numbered objectives mapped; methodology scope clarified, networking/hardware examples expanded, 34 local checks passed and course-catalog discrepancies disclosed.
+
 - September 28, 2026: [FC0-U71 deep review](docs/research/2026-09-28-fc0-u71-deep-review.md): 31 numbered objectives mapped; internet/wireless gaps repaired, three original examples and 30 local checks, current password guidance and 42 answers added.
 
 - September 28, 2026: [EX267 deep review](docs/research/2026-09-28-ex267-deep-review.md): 43 main-page tasks mapped; PDF/serving terminology differences retained, 39 local KFP checks and versioned implementation/support boundaries added.

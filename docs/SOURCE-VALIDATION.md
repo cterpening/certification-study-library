@@ -1251,6 +1251,8 @@ The review maps every public V6 domain and listed subtopic to a connected beginn
 
 ## 220-1201 coverage record
 
+The September 28 [deep review](research/2026-09-28-220-1201-deep-review.md) maps 27 detailed objectives. Mapped all 27 numbered objectives in the public version 4.0 PDF against 15 main-page summary rows. Clarified the methodology exclusion, expanded networking/hardware/printing and product boundaries, added two original examples with 34 local checks and eight real loopback exchanges, and retained course-catalog discrepancies. All eight complete hardware/platform labs remain proposed. Current guide citations: 24 registered, 22 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 1, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: five weighted V15 domains—Mobile devices (13%), Networking (23%), Hardware (25%), Virtualization and cloud computing (11%), and Hardware and network troubleshooting (28%)

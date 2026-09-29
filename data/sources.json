@@ -3,6 +3,202 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "comptia-220-1201-objectives-pdf",
+      "title": "CompTIA A+ Core1 objectives version4.0",
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/34be017cb73211ef8985a6f347fbf652?checkExpiry=false",
+      "publisher": "CompTIA",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "220-1201"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 220-1201 deep review: Public PDF 4.0 read in full for all 27 numbered objectives/bullets; methodology exclusion explicit. Layout extraction verified hardware 3.1 displays/3.2 cables/3.3 RAM ordering. No full PDF redistributed. See docs/research/2026-09-28-220-1201-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "usb-typec-language-guidance",
+      "title": "USB-IF Type-C language and packaging guidance",
+      "url": "https://www.usb.org/sites/default/files/usb_type-c_language_product_and_packaging_guidelines_20230320.pdf",
+      "publisher": "USB-IF",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "220-1201"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 220-1201 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1201-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dell-raid-levels",
+      "title": "Dell RAID levels and specifications",
+      "url": "https://www.dell.com/support/kbdoc/en-us/000128635/dell-servers-what-are-the-raid-levels-and-their-specifications",
+      "publisher": "Dell",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "220-1201"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 220-1201 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1201-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dell-swollen-battery",
+      "title": "Dell swollen lithium-ion battery handling",
+      "url": "https://dl.dell.com/topicspdf/swollenbattery-3_en-us.pdf",
+      "publisher": "Dell",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "220-1201"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 220-1201 deep review: Two-page June 2020 manufacturer guidance used for stop-use/no-prying/escalation boundaries, not a universal discharge/removal procedure for damaged batteries. See docs/research/2026-09-28-220-1201-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "hyperv-virtual-switch",
+      "title": "Microsoft Hyper-V virtual switch",
+      "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/virtual-switch",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "220-1201"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 220-1201 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1201-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "hyperv-nat-network",
+      "title": "Microsoft Hyper-V NAT network setup",
+      "url": "https://learn.microsoft.com/virtualization/hyper-v-on-windows/user-guide/setup-nat-network",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "220-1201"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 220-1201 deep review: Read manual NAT creation/guest addressing limits. No removal, network reconfiguration or old Docker migration steps executed. See docs/research/2026-09-28-220-1201-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "azure-dns-records-reference",
+      "title": "Microsoft DNS zones and records",
+      "url": "https://learn.microsoft.com/en-us/azure/dns/dns-zones-records",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "220-1201"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 220-1201 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1201-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "iana-service-ports-csv",
+      "title": "IANA service names and transport port registry",
+      "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.csv",
+      "publisher": "IANA",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "220-1201"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 220-1201 deep review: Fetched CSV and reviewed 44 relevant assignment rows. Registration does not prove actual traffic identity or typical deployed transport. See docs/research/2026-09-28-220-1201-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-ipaddress",
+      "title": "Python3.13 ipaddress reference",
+      "url": "https://docs.python.org/3.13/library/ipaddress.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "220-1201"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 220-1201 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1201-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-socket",
+      "title": "Python3.13 socket reference",
+      "url": "https://docs.python.org/3.13/library/socket.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "220-1201"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 220-1201 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1201-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "rfc3927-ipv4-linklocal",
+      "title": "RFC3927 IPv4 link-local configuration",
+      "url": "https://www.rfc-editor.org/rfc/rfc3927.html",
+      "publisher": "IETF",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "220-1201"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 220-1201 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1201-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "hyperv-create-switch",
+      "title": "Microsoft create and configure Hyper-V switches",
+      "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/create-a-virtual-switch-for-hyper-v-virtual-machines",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "220-1201"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 220-1201 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1201-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "microsoft-dhcp-scopes",
+      "title": "Windows Server DHCP scopes",
+      "url": "https://learn.microsoft.com/en-us/windows-server/networking/technologies/dhcp/dhcp-scopes",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "220-1201"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 220-1201 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1201-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "microsoft-email-authentication",
+      "title": "Microsoft email authentication overview",
+      "url": "https://learn.microsoft.com/en-us/defender-office-365/email-authentication-about",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "220-1201"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 220-1201 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1201-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "comptia-partner-resources",
       "title": "CompTIA public partner resources",
       "url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
@@ -11,10 +207,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "FC0-U71"
+        "FC0-U71",
+        "220-1201"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 FC0-U71 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-fc0-u71-deep-review.md No live infrastructure execution."
+      "notes": "September 28 FC0-U71 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-fc0-u71-deep-review.md No live infrastructure execution. September 28 220-1201 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1201-deep-review.md No live infrastructure execution."
     },
     {
       "id": "comptia-fc0-u71-objectives-pdf",
@@ -109,10 +306,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "FC0-U71"
+        "FC0-U71",
+        "220-1201"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 FC0-U71 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-fc0-u71-deep-review.md No live infrastructure execution."
+      "notes": "September 28 FC0-U71 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-fc0-u71-deep-review.md No live infrastructure execution. September 28 220-1201 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-220-1201-deep-review.md No live infrastructure execution."
     },
     {
       "id": "nist-800-63b-4",

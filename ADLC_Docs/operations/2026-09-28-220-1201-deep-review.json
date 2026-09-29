@@ -1,0 +1,2184 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "220-1201",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/220-1201-comptia-a-plus-core-1.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "5ff6ebcdc0ac5146ec13dd959520efcb6a066e7edaba79fb301f7c9ec0994f34",
+  "guide_after_sha256": "4c92ea84ec785234ffc047142d03003dea2ec571ddb2c0bed5e98f024cc9f6ca",
+  "prior_records": {
+    "exam": {
+      "code": "220-1201",
+      "level": "beginner",
+      "vendor_id": "comptia",
+      "title": "CompTIA A+ Core 1 (V15)",
+      "status": "active",
+      "study_guide_url": "https://www.comptia.org/en-us/certifications/a/core-1-v15/",
+      "guide_path": "guides/220-1201-comptia-a-plus-core-1.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; CompTIA recommends about 12 months of hands-on IT support experience. Practice safe laptop/mobile service, protocols/ports and packet paths, SOHO/Wi-Fi, cables/tools, component compatibility and PC builds, printers, virtualization/cloud responsibility, and controlled hardware/network troubleshooting. Pass 220-1201 and 220-1202 from the same V15 series."
+    },
+    "review": {
+      "id": "220-1201-2026-09-01-source-validation",
+      "exam_code": "220-1201",
+      "guide_path": "guides/220-1201-comptia-a-plus-core-1.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/220-1201-official-objectives.txt",
+      "blueprint_snapshot_sha256": "81a5721116c570f081c1abbd75b494a05e2cfdf4185d4e1051a03981d1565448",
+      "objective_coverage": [
+        {
+          "objective_group": "Mobile devices (13%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenario 1",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Networking (23%)",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 2–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Hardware (25%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios 2–3",
+            "Labs 4–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Virtualization and cloud computing (11%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenario 3",
+            "Labs 7–8"
+          ]
+        },
+        {
+          "objective_group": "Hardware and network troubleshooting (28%)",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "All labs"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 8,
+        "reachable": 6,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All five weighted V15 domains are mapped to compatibility-first implementation, three scenarios, eight safe labs and 40 original checks. Same-version and non-dated estimated-2028 lifecycle boundaries are explicit. All eight URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. No proprietary objective PDF, PBQs, course labs, or recalled questions are used."
+    },
+    "sources": [
+      {
+        "id": "comptia-certmaster-learn",
+        "title": "CompTIA CertMaster Learn",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "publisher": "CompTIA",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71",
+          "220-1201",
+          "220-1202",
+          "N10-009",
+          "SY0-701",
+          "XK0-006",
+          "CV0-004"
+        ],
+        "notes": "Official self-paced learning platform; exact certification availability, bundle, price, duration and access vary."
+      },
+      {
+        "id": "comptia-certmaster-labs",
+        "title": "CompTIA CertMaster Labs",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "publisher": "CompTIA",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71",
+          "220-1201",
+          "220-1202",
+          "N10-009",
+          "SY0-701",
+          "XK0-006",
+          "CV0-004"
+        ],
+        "notes": "Official browser-based practical environment; verify exam inclusion and current bundle details."
+      },
+      {
+        "id": "comptia-certmaster-practice",
+        "title": "CompTIA CertMaster Practice",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "publisher": "CompTIA",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71",
+          "220-1201",
+          "220-1202",
+          "N10-009",
+          "SY0-701",
+          "XK0-006",
+          "CV0-004"
+        ],
+        "notes": "Official adaptive assessment and remediation platform; not a source of actual exam items."
+      },
+      {
+        "id": "comptia-220-1201-blueprint",
+        "title": "CompTIA A+ Core 1 V15",
+        "url": "https://www.comptia.org/en-us/certifications/a/core-1-v15/",
+        "publisher": "CompTIA",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "220-1201"
+        ],
+        "notes": "Canonical five-domain weighted outline, same-version rule, delivery details, and non-dated estimated-2028 lifecycle statement."
+      },
+      {
+        "id": "comptia-220-1201-pluralsight",
+        "title": "CompTIA A+ Core 1 220-1201 path",
+        "url": "https://www.pluralsight.com/paths/comptia-a-core-1-220-1201",
+        "publisher": "Pluralsight",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "220-1201"
+        ],
+        "notes": "Six courses, 12 hours and practice exam listed; current V15 domain route."
+      },
+      {
+        "id": "comptia-220-1201-linkedin",
+        "title": "CompTIA A+ Core 1 220-1201 Cert Prep",
+        "url": "https://www.linkedin.com/learning/comptia-a-plus-core-1-220-1201-cert-prep",
+        "publisher": "LinkedIn Learning / Total Seminars",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "220-1201"
+        ],
+        "notes": "Twenty hours 14 minutes, 21 quizzes, released September 2025. One landing-page note incorrectly says 220-1101 despite the 220-1201 title/content, so retain a current-objective gap check."
+      },
+      {
+        "id": "comptia-a-plus-v15-oreilly-book",
+        "title": "Complete A+ Guide to IT Hardware and Software V15",
+        "url": "https://www.oreilly.com/library/view/complete-a-guide/9780135439883/",
+        "publisher": "O'Reilly / Pearson / Cheryl Schmidt / Christopher Lee",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "220-1201",
+          "220-1202"
+        ],
+        "notes": "Current 10th-edition 2026 text covering both 220-1201 and 220-1202 with exercises; select the relevant core content."
+      },
+      {
+        "id": "comptia-220-1201-udemy-dion",
+        "title": "CompTIA A+ Core 1 220-1201 Full Course and Practice Exam",
+        "url": "https://www.udemy.com/course/comptia-a-core-1/",
+        "publisher": "Udemy / Jason Dion",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "220-1201"
+        ],
+        "notes": "Twenty-six hours five minutes and 220 lectures listed, updated August 2026, with a practice exam."
+      },
+      {
+        "id": "comptia-220-1201-measureup",
+        "title": "CompTIA A+ Core 1 220-1201 practice test",
+        "url": "https://www.measureup.com/comptia-a-core-1-practice-test.html",
+        "publisher": "MeasureUp",
+        "authority_class": 4,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "220-1201"
+        ],
+        "notes": "242 questions and June 2025 release listed; use certification/practice modes for explanation-led remediation, not item memorization."
+      },
+      {
+        "id": "comptia-220-1201-professor-messer",
+        "title": "Professor Messer A+ 220-1201 Core 1 training course",
+        "url": "https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/220-1201-training-course/",
+        "publisher": "Professor Messer",
+        "authority_class": 4,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "220-1201"
+        ],
+        "notes": "Free 63-video V15 course with ten hours 11 minutes listed; optional commercial notes/practice are separate."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "8836e801f2a72bbdcbabd75bdb213e8f0c2f5278f26d5f4438bcf7fb9bab2d4c",
+      "guide_sections": [
+        "1. Mobile devices — 13%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "f4e822b49eb5aa214fe512b50942e0eb29dc709e38389fac0910b1cd044ac2da",
+      "guide_sections": [
+        "1. Mobile devices — 13%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "d75f0fcaa94fb363a4dc20ae31fbbbc0f48ebf29e72cfa65f3205cb687a064c7",
+      "guide_sections": [
+        "1. Mobile devices — 13%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "ace6ad19508d9a4bec8bea3750806bd5e3fbe8b50db64609a8a371985acb55e1",
+      "guide_sections": [
+        "2. Networking — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "ed8697ef4913249509bae9ae67fdbeff08973ac08fee1446003b7a47c67ac445",
+      "guide_sections": [
+        "2. Networking — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "dd38098bdbb254749ead407434b22ff1cc624fca78fb0fc3004fd81b492080ea",
+      "guide_sections": [
+        "2. Networking — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "063b4037c2ac8e2050b4aca1a1c1ea7b994f54fea68c37cc2f939ed34559f266",
+      "guide_sections": [
+        "2. Networking — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "7f3c744aeb0648fed0f889991d23662709d1aceca88103b2b62818b641a8e598",
+      "guide_sections": [
+        "2. Networking — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "a41a3d398176b353545c57662187516bd99750b2c15b2fbb5f0f8c1344735853",
+      "guide_sections": [
+        "2. Networking — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "59f75c9ec40f12959f1cc0feb04659cc78fb65759b6f8406906a410b758cba79",
+      "guide_sections": [
+        "2. Networking — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "1e84fd44edad11b5d2870ba8e0971cd7ab2294941ef704e231930d2620945aa8",
+      "guide_sections": [
+        "2. Networking — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "ad42ba16c46abc350421498375fd1bdfb645c3ed5237ca480d19d46e8ad5d71f",
+      "guide_sections": [
+        "3. Hardware — 25%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "be6f1fcd95c4d6922c5684eeda3c3c09fa2453619be1a072a9992ed35a811bf0",
+      "guide_sections": [
+        "3. Hardware — 25%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "a5204e66554b8a6d74547e3f092b1e58fab09c5e1afc5c5df79223aaae385623",
+      "guide_sections": [
+        "3. Hardware — 25%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "7f056e54b99584dc8c9f478ca0c9678651fda49378ce019fc2468bc07c2d5879",
+      "guide_sections": [
+        "3. Hardware — 25%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "73bd735a4bbe2daf5f6b5eb44823aca04b579c1e640ac14c633297761ffef5f5",
+      "guide_sections": [
+        "3. Hardware — 25%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "b837f8c5f9c0960f8282ed2534d2f64d394b72cccbaa19830317c378083e28e6",
+      "guide_sections": [
+        "3. Hardware — 25%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "dfe46a83f29c85ef7db186b977bdf2d170fd5891836affa43723364b2274cea1",
+      "guide_sections": [
+        "3. Hardware — 25%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "fa8c6edffe36e854727953ea03e859449772815d68bbe4f7bccd64d966d84531",
+      "guide_sections": [
+        "3. Hardware — 25%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "88fed3acb57383f666a5aae28a902075927143dcb5014ecb6d1e6ae08a5320d3",
+      "guide_sections": [
+        "4. Virtualization and cloud computing — 11%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "403606fe8751440abcb0ad3046d9b39d952a46213c860be77e9bc8f1d71a0a9b",
+      "guide_sections": [
+        "4. Virtualization and cloud computing — 11%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "c5d64e0587076c2409adbee095a8eab0aeed97e6bd8c3e3fd40a65b4f8b6d2c0",
+      "guide_sections": [
+        "5. Hardware and network troubleshooting — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "5c284245c61751c913bd64db6b69477f12d957313202e7f514a3dca4415d4cdc",
+      "guide_sections": [
+        "5. Hardware and network troubleshooting — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "3f255aea90adb5e341a718d80299dce562611e5cdaba9eb358aa56c21d44f71b",
+      "guide_sections": [
+        "5. Hardware and network troubleshooting — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "3f0f9ef3df5d58a5f53ad78257c49205b94fa5895abf51a791f20c8c87c64b77",
+      "guide_sections": [
+        "5. Hardware and network troubleshooting — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "a1e0d4b62e8e52956828893c3e72860641c5dd88141a4e17c238a6b03183d856",
+      "guide_sections": [
+        "5. Hardware and network troubleshooting — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "f38365e8f16f86f5cfc0e11dbd7b19c8ca0622bc3fbf3253dc6dc604f18962d9",
+      "guide_sections": [
+        "5. Hardware and network troubleshooting — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "220-1201",
+        "title": "CompTIA A+ Core 1 (V15)",
+        "url": "https://www.comptia.org/en-us/certifications/a/core-1-v15/",
+        "guide_path": "guides/220-1201-comptia-a-plus-core-1.md",
+        "snapshot_path": "data\\objective-snapshots\\220-1201-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\220-1201-official-status.json",
+        "previous_sha256": "81a5721116c570f081c1abbd75b494a05e2cfdf4185d4e1051a03981d1565448",
+        "current_sha256": "81a5721116c570f081c1abbd75b494a05e2cfdf4185d4e1051a03981d1565448",
+        "previous_status_sha256": "6422b3e2be1431cbe9d6ecc34f49e655940bac896e585af1946628c88cda2624",
+        "current_status_sha256": "6422b3e2be1431cbe9d6ecc34f49e655940bac896e585af1946628c88cda2624",
+        "official_status": {
+          "skills_versions": [
+            "Exam version: V15; Core 1 and Core 2 exams must be taken from the same version, no mixing allowed",
+            "Exam series code: 220-1201 (Core 1)",
+            "Launch date: March 25, 2025",
+            "Number of questions: Maximum of 90 per exam, including multiple-choice (single and multiple response), drag-and-drop, and performance-based questions",
+            "Length of test: 90 minutes",
+            "Passing score: A+ Core 1: 675 (on a scale of 900)",
+            "Languages: English, German, and Japanese",
+            "Retirement: Usually three years after launch (estimated 2028)"
+          ],
+          "upcoming_announcements": [
+            "Retirement: Usually three years after launch (estimated 2028)"
+          ]
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 24,
+    "reachable": 22,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "comptia-certmaster-learn",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+      "checked_at": "2026-09-29T03:26:10.794640+00:00",
+      "health": {
+        "id": "comptia-certmaster-learn",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "checked_at": "2026-09-29T03:26:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CompTIA CertMaster Learn",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "duration_signals": [],
+        "signal_fingerprint": "65786e0e6431fcfe2e58ba358241f9cdb456812d6ade43fbd74876ee340cfef2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+      "sha256": "9bee308577f1977bd0f56dca8d4bae5b76f9c414dd50ad6eefa6ce5961e80e06",
+      "text_characters": 1692
+    },
+    {
+      "id": "comptia-certmaster-labs",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+      "checked_at": "2026-09-29T03:26:10.795197+00:00",
+      "health": {
+        "id": "comptia-certmaster-labs",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "checked_at": "2026-09-29T03:26:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CompTIA CertMaster Labs | CompTIA UK",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "duration_signals": [],
+        "signal_fingerprint": "4b7552b7bda3589184d03b2dfcb4182095d6fc6dfc7d5cfddea7650446126f7f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+      "sha256": "37496f082d45d2dc2e76ce2d12a62de9f2e4b77bcf222b42cceb0c52f93d10e6",
+      "text_characters": 1552
+    },
+    {
+      "id": "comptia-certmaster-practice",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+      "checked_at": "2026-09-29T03:26:10.795534+00:00",
+      "health": {
+        "id": "comptia-certmaster-practice",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "checked_at": "2026-09-29T03:26:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CertMaster Practice",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "duration_signals": [],
+        "signal_fingerprint": "87ff57590e3cf2e101143725a522c14d9cbd91afd9e8d02bb27f86e7af1751c4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+      "sha256": "8d8ab7b20b45cc2623ce1437a79c68745eeb183d210d537fd32ce9839f994bf9",
+      "text_characters": 3505
+    },
+    {
+      "id": "comptia-220-1201-blueprint",
+      "url": "https://www.comptia.org/en-us/certifications/a/core-1-v15/",
+      "checked_at": "2026-09-29T03:26:12.911974+00:00",
+      "health": {
+        "id": "comptia-220-1201-blueprint",
+        "url": "https://www.comptia.org/en-us/certifications/a/core-1-v15/",
+        "checked_at": "2026-09-29T03:26:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/certifications/a/core-1-v15/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "A+ Core 1 Certification V15 (New Version) | CompTIA",
+        "canonical_url": "https://www.comptia.org/en-us/certifications/a/core-1-v15/",
+        "duration_signals": [
+          "20 hours",
+          "25 hours",
+          "40 hours",
+          "90 minutes"
+        ],
+        "signal_fingerprint": "0de95659ec0a8dcaf67661ee67dfc9cd1cd852c3498bd6a73bbff34b0589e3ec",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/certifications/a/core-1-v15/",
+      "sha256": "03219cdbd5ac06adf82070b14f81135b58c9ae6ddfdb755ecbb205fdda622625",
+      "text_characters": 5461
+    },
+    {
+      "id": "comptia-220-1201-pluralsight",
+      "url": "https://www.pluralsight.com/paths/comptia-a-core-1-220-1201",
+      "checked_at": "2026-09-29T03:26:12.946162+00:00",
+      "health": {
+        "id": "comptia-220-1201-pluralsight",
+        "url": "https://www.pluralsight.com/paths/comptia-a-core-1-220-1201",
+        "checked_at": "2026-09-29T03:26:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/comptia-a-core-1-220-1201",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "CompTIA A+ Core 1 (220-1201)",
+        "canonical_url": "https://www.pluralsight.com/paths/comptia-a-core-1-220-1201",
+        "duration_signals": [
+          "12 Hours"
+        ],
+        "signal_fingerprint": "1476ad90f049166abe7373a414d5dc904d99df819c295dc009dd886d33574b32",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/comptia-a-core-1-220-1201",
+      "sha256": "78c74ea146e98151f5d7268be821c354ac55d18275735d847a61e0fe0f9d07a1",
+      "text_characters": 4968
+    },
+    {
+      "id": "comptia-220-1201-linkedin",
+      "url": "https://www.linkedin.com/learning/comptia-a-plus-core-1-220-1201-cert-prep",
+      "checked_at": "2026-09-29T03:26:13.124685+00:00",
+      "health": {
+        "id": "comptia-220-1201-linkedin",
+        "url": "https://www.linkedin.com/learning/comptia-a-plus-core-1-220-1201-cert-prep",
+        "checked_at": "2026-09-29T03:26:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.linkedin.com/learning/comptia-a-plus-core-1-220-1201-cert-prep",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CompTIA A+ Core 1 (220-1201) Cert Prep Online Class | LinkedIn Learning, formerly Lynda.com",
+        "canonical_url": "https://www.linkedin.com/learning/comptia-a-plus-core-1-220-1201-cert-prep",
+        "duration_signals": [
+          "PT10M21S",
+          "PT10M22S",
+          "PT10M2S",
+          "PT10M31S",
+          "PT10M33S",
+          "PT10M39S",
+          "PT10M42S",
+          "PT10M50S",
+          "PT10M55S",
+          "PT10M6S",
+          "PT11M33S",
+          "PT11M34S",
+          "PT11M41S",
+          "PT11M42S",
+          "PT11M4S",
+          "PT11M53S",
+          "PT11M56S",
+          "PT11M59S",
+          "PT11M6S",
+          "PT12M13S",
+          "PT12M19S",
+          "PT12M43S",
+          "PT13M17S",
+          "PT13M45S",
+          "PT13M57S",
+          "PT14M3S",
+          "PT14M42S",
+          "PT14M9S",
+          "PT15M22S",
+          "PT16M20S"
+        ],
+        "signal_fingerprint": "feff196c5441f202cece989ba40c7922042f74055c053d3c87c8e365fe650eda",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.linkedin.com/learning/comptia-a-plus-core-1-220-1201-cert-prep",
+      "sha256": "53abe9b6a1b46d4c69a2f7f12e8b1178c3606eab5b1c8e5e15c625c739a11ffc",
+      "text_characters": 9656
+    },
+    {
+      "id": "comptia-a-plus-v15-oreilly-book",
+      "url": "https://www.oreilly.com/library/view/complete-a-guide/9780135439883/",
+      "checked_at": "2026-09-29T03:26:14.401722+00:00",
+      "health": {
+        "id": "comptia-a-plus-v15-oreilly-book",
+        "url": "https://www.oreilly.com/library/view/complete-a-guide/9780135439883/",
+        "checked_at": "2026-09-29T03:26:14+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/complete-a-guide/9780135439883/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "comptia-220-1201-udemy-dion",
+      "url": "https://www.udemy.com/course/comptia-a-core-1/",
+      "checked_at": "2026-09-29T03:26:14.811555+00:00",
+      "health": {
+        "id": "comptia-220-1201-udemy-dion",
+        "url": "https://www.udemy.com/course/comptia-a-core-1/",
+        "checked_at": "2026-09-29T03:26:14+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/comptia-a-core-1/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "comptia-220-1201-measureup",
+      "url": "https://www.measureup.com/comptia-a-core-1-practice-test.html",
+      "checked_at": "2026-09-29T03:26:14.813607+00:00",
+      "health": {
+        "id": "comptia-220-1201-measureup",
+        "url": "https://www.measureup.com/comptia-a-core-1-practice-test.html",
+        "checked_at": "2026-09-29T03:26:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/comptia-a-core-1-practice-test.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "CompTIA A+ Core 1 Practice Test (220-1201)",
+        "canonical_url": "https://www.measureup.com/comptia-a-core-1-practice-test.html",
+        "duration_signals": [],
+        "signal_fingerprint": "378c251fb5c801a27ea0470e7e5295b632fbf6931177686f9ddb0e4dbf2734cb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/comptia-a-core-1-practice-test.html",
+      "sha256": "8a432c79a14320b09fa45ba9ba7caf40605034625bd6ac702a889a7b31791138",
+      "text_characters": 13699
+    },
+    {
+      "id": "comptia-220-1201-professor-messer",
+      "url": "https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/220-1201-training-course/",
+      "checked_at": "2026-09-29T03:26:14.897530+00:00",
+      "health": {
+        "id": "comptia-220-1201-professor-messer",
+        "url": "https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/220-1201-training-course/",
+        "checked_at": "2026-09-29T03:26:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/220-1201-training-course/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Professor Messer’s CompTIA A+ 220-1201 Core 1 Training Course",
+        "canonical_url": "https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/220-1201-training-course/",
+        "duration_signals": [
+          "10 hours and 11 minutes"
+        ],
+        "signal_fingerprint": "2ed3b11e57a7922bf154dcd7b0d804522e2b43308036f03cd435bcd0770675cc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/220-1201-training-course/",
+      "sha256": "62c465a1958e53342d3ce23d76372844cc41b3dd44d0b684828fcfa4edbbcf97",
+      "text_characters": 17325
+    },
+    {
+      "id": "comptia-partner-resources",
+      "url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+      "checked_at": "2026-09-29T03:30:17.055266+00:00",
+      "health": {
+        "id": "comptia-partner-resources",
+        "url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+        "checked_at": "2026-09-29T03:30:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Partner Resources",
+        "canonical_url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+        "duration_signals": [],
+        "signal_fingerprint": "be631fe463c6d0a7c5e51dfcf4ec7e4813a2eeae48c6ca7bc993534faf97d57e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+      "sha256": "14576ecf6117f8f05f0462c05865386b5da334d76d89e1da2474161210a21a35",
+      "text_characters": 4747
+    },
+    {
+      "id": "comptia-troubleshooting-blog",
+      "url": "https://www.comptia.org/blog/troubleshooting-methodology",
+      "checked_at": "2026-09-29T03:30:17.055800+00:00",
+      "health": {
+        "id": "comptia-troubleshooting-blog",
+        "url": "https://www.comptia.org/blog/troubleshooting-methodology",
+        "checked_at": "2026-09-29T03:30:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/blog/use-a-troubleshooting-methodology-for-more-efficient-it-support/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Use a Troubleshooting Methodology for More Efficient IT Support | CompTIA Blog",
+        "canonical_url": "https://www.comptia.org/en-us/blog/use-a-troubleshooting-methodology-for-more-efficient-it-support/",
+        "duration_signals": [
+          "4 min"
+        ],
+        "signal_fingerprint": "8e453bd3f205750bb629df5fd8f7f5973ca04404210300a2dd000fbba6f7a802",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/blog/use-a-troubleshooting-methodology-for-more-efficient-it-support/",
+      "sha256": "ab92c0371d71de16c79d4061d62f3ea3d71bbecfddc5253d9b254c911dd7e17c",
+      "text_characters": 11583
+    },
+    {
+      "id": "dell-raid-levels",
+      "url": "https://www.dell.com/support/kbdoc/en-us/000128635/dell-servers-what-are-the-raid-levels-and-their-specifications",
+      "checked_at": "2026-09-29T03:30:17.056219+00:00",
+      "health": {
+        "id": "dell-raid-levels",
+        "url": "https://www.dell.com/support/kbdoc/en-us/000128635/dell-servers-what-are-the-raid-levels-and-their-specifications",
+        "checked_at": "2026-09-29T03:30:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.dell.com/support/kbdoc/en-us/000128635/dell-servers-what-are-the-raid-levels-and-their-specifications",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "PowerEdge: What are the different RAID levels and their specifications | Dell US",
+        "canonical_url": "https://www.dell.com/support/kbdoc/en-us/000128635/dell-servers-what-are-the-raid-levels-and-their-specifications",
+        "duration_signals": [],
+        "signal_fingerprint": "baa1e559ed94e26188b7b81f2c2993f30ceef0d35dcdddf066c9a86b72707a82",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.dell.com/support/kbdoc/en-us/000128635/dell-servers-what-are-the-raid-levels-and-their-specifications",
+      "sha256": "41968ae0e094d4eba8cc891ca63b8beb0200f2c4876e814e2fe608de072ccf09",
+      "text_characters": 8686
+    },
+    {
+      "id": "hyperv-virtual-switch",
+      "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/virtual-switch",
+      "checked_at": "2026-09-29T03:30:19.016371+00:00",
+      "health": {
+        "id": "hyperv-virtual-switch",
+        "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/virtual-switch",
+        "checked_at": "2026-09-29T03:30:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/virtual-switch",
+        "content_type": "text/html",
+        "page_title": "Hyper-V Virtual Switch",
+        "canonical_url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/virtual-switch",
+        "duration_signals": [],
+        "signal_fingerprint": "00a46b61825d0a5293a24837ed414b1c82f5b65acdde9e42ce0df5502649f717",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/virtual-switch",
+      "sha256": "232e4fef59cf9efacdd4f38ae0eba9b6cd96f6a06d6d6006f897db1483d68f72",
+      "text_characters": 7273
+    },
+    {
+      "id": "hyperv-nat-network",
+      "url": "https://learn.microsoft.com/virtualization/hyper-v-on-windows/user-guide/setup-nat-network",
+      "checked_at": "2026-09-29T03:30:19.607320+00:00",
+      "health": {
+        "id": "hyperv-nat-network",
+        "url": "https://learn.microsoft.com/virtualization/hyper-v-on-windows/user-guide/setup-nat-network",
+        "checked_at": "2026-09-29T03:30:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/setup-nat-network",
+        "content_type": "text/html",
+        "page_title": "Set up a NAT network",
+        "canonical_url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/setup-nat-network",
+        "duration_signals": [],
+        "signal_fingerprint": "88fc1e993e16614a408f20a6172e838a0008a4b85fd8d4a631cd9c6fcbfc1a10",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/setup-nat-network",
+      "sha256": "d5d90c3c27c802011e34782f57466a701c2d843908d22a4a66ec85bda7bd90b1",
+      "text_characters": 12386
+    },
+    {
+      "id": "azure-dns-records-reference",
+      "url": "https://learn.microsoft.com/en-us/azure/dns/dns-zones-records",
+      "checked_at": "2026-09-29T03:30:19.765487+00:00",
+      "health": {
+        "id": "azure-dns-records-reference",
+        "url": "https://learn.microsoft.com/en-us/azure/dns/dns-zones-records",
+        "checked_at": "2026-09-29T03:30:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/dns/dns-zones-records",
+        "content_type": "text/html",
+        "page_title": "DNS Zones and Records Overview",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/dns/dns-zones-records",
+        "duration_signals": [
+          "1 hour"
+        ],
+        "signal_fingerprint": "ac7054355ebfde0dcbd0ae884559710c77b661ee5736c694e4116edb283a19ba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/dns/dns-zones-records",
+      "sha256": "b5c735e293afa8744c025cb992fce42edfb3c355b38e3e60fab57da1d75506cf",
+      "text_characters": 16863
+    },
+    {
+      "id": "python313-ipaddress",
+      "url": "https://docs.python.org/3.13/library/ipaddress.html",
+      "checked_at": "2026-09-29T03:30:20.373899+00:00",
+      "health": {
+        "id": "python313-ipaddress",
+        "url": "https://docs.python.org/3.13/library/ipaddress.html",
+        "checked_at": "2026-09-29T03:30:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/ipaddress.html",
+        "content_type": "text/html",
+        "page_title": "ipaddress — IPv4/IPv6 manipulation library",
+        "canonical_url": "https://docs.python.org/3/library/ipaddress.html",
+        "duration_signals": [],
+        "signal_fingerprint": "1f37f82f5bc4d3807449e1f9c26a4c3312a0999f7a0f777fe868a04901719751",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/ipaddress.html",
+      "sha256": "354e5e379466ae2ac5234211358d51469fdde9d9f00beb0c872b5652ac451369",
+      "text_characters": 33353
+    },
+    {
+      "id": "python313-socket",
+      "url": "https://docs.python.org/3.13/library/socket.html",
+      "checked_at": "2026-09-29T03:30:20.487405+00:00",
+      "health": {
+        "id": "python313-socket",
+        "url": "https://docs.python.org/3.13/library/socket.html",
+        "checked_at": "2026-09-29T03:30:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/socket.html",
+        "content_type": "text/html",
+        "page_title": "socket — Low-level networking interface",
+        "canonical_url": "https://docs.python.org/3/library/socket.html",
+        "duration_signals": [],
+        "signal_fingerprint": "312cebcbcb29e3e0c69bdd38b234bd40eddc1350c0b30973295df8549651acb8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/socket.html",
+      "sha256": "3ac6050365f3531594c683e7da173b03539dbef97d84c8de2342bb255781d4f6",
+      "text_characters": 75332
+    },
+    {
+      "id": "rfc3927-ipv4-linklocal",
+      "url": "https://www.rfc-editor.org/rfc/rfc3927.html",
+      "checked_at": "2026-09-29T03:30:22.066551+00:00",
+      "health": {
+        "id": "rfc3927-ipv4-linklocal",
+        "url": "https://www.rfc-editor.org/rfc/rfc3927.html",
+        "checked_at": "2026-09-29T03:30:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc3927.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc3927.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e0895eb43e530cca5da97b10bdbc828ca153aef136b6abc049bf3d3091db7f7e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc3927.html",
+      "sha256": "a0b66bb320b6f40478d59017c798125df2cb23fe7e45d18a8abf92ce8b8124e0",
+      "text_characters": 75050
+    },
+    {
+      "id": "comptia-220-1201-objectives-pdf",
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/34be017cb73211ef8985a6f347fbf652?checkExpiry=false",
+      "checked_at": "2026-09-29T03:30:20.237406+00:00",
+      "health": {
+        "id": "comptia-220-1201-objectives-pdf",
+        "url": "https://lecbyo.files.cmp.optimizely.com/download/34be017cb73211ef8985a6f347fbf652?checkExpiry=false",
+        "checked_at": "2026-09-29T03:30:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://lecbyo.files.cmp.optimizely.com/download/34be017cb73211ef8985a6f347fbf652?checkExpiry=false",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://lecbyo.files.cmp.optimizely.com/download/34be017cb73211ef8985a6f347fbf652?checkExpiry=false",
+      "sha256": "9fb3471b397a863b1baa33912dffb6fa232b4631e2219f39188c5c109814648c",
+      "bytes": 272109,
+      "pdf_pages": 18,
+      "text_characters": 28985
+    },
+    {
+      "id": "usb-typec-language-guidance",
+      "url": "https://www.usb.org/sites/default/files/usb_type-c_language_product_and_packaging_guidelines_20230320.pdf",
+      "checked_at": "2026-09-29T03:30:20.149394+00:00",
+      "health": {
+        "id": "usb-typec-language-guidance",
+        "url": "https://www.usb.org/sites/default/files/usb_type-c_language_product_and_packaging_guidelines_20230320.pdf",
+        "checked_at": "2026-09-29T03:30:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.usb.org/sites/default/files/usb_type-c_language_product_and_packaging_guidelines_20230320.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.usb.org/sites/default/files/usb_type-c_language_product_and_packaging_guidelines_20230320.pdf",
+      "sha256": "2d630b245b76bc9f13f3396f919148ad903cbb9af0be7d44b14c0a154434645c",
+      "bytes": 278258,
+      "pdf_pages": 5,
+      "text_characters": 10451
+    },
+    {
+      "id": "dell-swollen-battery",
+      "url": "https://dl.dell.com/topicspdf/swollenbattery-3_en-us.pdf",
+      "checked_at": "2026-09-29T03:30:20.263391+00:00",
+      "health": {
+        "id": "dell-swollen-battery",
+        "url": "https://dl.dell.com/topicspdf/swollenbattery-3_en-us.pdf",
+        "checked_at": "2026-09-29T03:30:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://dl.dell.com/topicspdf/swollenbattery-3_en-us.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://dl.dell.com/topicspdf/swollenbattery-3_en-us.pdf",
+      "sha256": "a7d77dca2bb5cf3439205fda74678e0b79daec6720a25d8f5c73d2d88e674e79",
+      "bytes": 35130,
+      "pdf_pages": 2,
+      "text_characters": 3511
+    },
+    {
+      "id": "iana-service-ports-csv",
+      "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.csv",
+      "checked_at": "2026-09-29T03:30:23.462924+00:00",
+      "health": {
+        "id": "iana-service-ports-csv",
+        "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.csv",
+        "checked_at": "2026-09-29T03:30:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.csv",
+        "content_type": "text/csv; charset=UTF-8; header=present",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.csv",
+      "sha256": "5bae669f482517e57e3a7de40cf458b46029a669da8c76a2fd5b861f673281e6",
+      "bytes": 1157561,
+      "selected_records": 44
+    },
+    {
+      "id": "hyperv-create-switch",
+      "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/create-a-virtual-switch-for-hyper-v-virtual-machines",
+      "checked_at": "2026-09-29T03:31:17.060009+00:00",
+      "health": {
+        "id": "hyperv-create-switch",
+        "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/create-a-virtual-switch-for-hyper-v-virtual-machines",
+        "checked_at": "2026-09-29T03:31:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/create-a-virtual-switch-for-hyper-v-virtual-machines",
+        "content_type": "text/html",
+        "page_title": "Create and configure a virtual switch with Hyper-V",
+        "canonical_url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/create-a-virtual-switch-for-hyper-v-virtual-machines",
+        "duration_signals": [],
+        "signal_fingerprint": "7266e5ab5b7b8f0745fb1f2fce6936ab67422bf63c6c27879675069ba3088b09",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/create-a-virtual-switch-for-hyper-v-virtual-machines",
+      "sha256": "895dff36a83e3bd3e9580f1f64744857890d4d2e5d2e78ecd8732e8f09291378",
+      "text_characters": 8136
+    },
+    {
+      "id": "microsoft-dhcp-scopes",
+      "url": "https://learn.microsoft.com/en-us/windows-server/networking/technologies/dhcp/dhcp-scopes",
+      "checked_at": "2026-09-29T03:31:17.060554+00:00",
+      "health": {
+        "id": "microsoft-dhcp-scopes",
+        "url": "https://learn.microsoft.com/en-us/windows-server/networking/technologies/dhcp/dhcp-scopes",
+        "checked_at": "2026-09-29T03:31:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/windows-server/networking/technologies/dhcp/dhcp-scopes",
+        "content_type": "text/html",
+        "page_title": "DHCP scopes in Windows Server",
+        "canonical_url": "https://learn.microsoft.com/en-us/windows-server/networking/technologies/dhcp/dhcp-scopes",
+        "duration_signals": [],
+        "signal_fingerprint": "8a020684e038b3831cf36992a881c566eb67f7d8522d7471d5f6c42be417314d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows-server/networking/technologies/dhcp/dhcp-scopes",
+      "sha256": "647e097be358943ab655dd1ee6dec99f67d585511698937a9821e6a0d220ae7b",
+      "text_characters": 8796
+    },
+    {
+      "id": "microsoft-email-authentication",
+      "url": "https://learn.microsoft.com/en-us/defender-office-365/email-authentication-about",
+      "checked_at": "2026-09-29T03:31:17.060961+00:00",
+      "health": {
+        "id": "microsoft-email-authentication",
+        "url": "https://learn.microsoft.com/en-us/defender-office-365/email-authentication-about",
+        "checked_at": "2026-09-29T03:31:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-office-365/email-authentication-about",
+        "content_type": "text/html",
+        "page_title": "How email authentication works in Microsoft 365 - Microsoft Defender for Office 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-office-365/email-authentication-about",
+        "duration_signals": [],
+        "signal_fingerprint": "ce5790cfb3afabd12523d4d2863f579ebaea2a1c960bc68241a5d05ef69a789a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-office-365/email-authentication-about",
+      "sha256": "af9bb2e6eebfa9ef943df2f36581040a6522973154eaa3029b924caa389a8c32",
+      "text_characters": 19644
+    }
+  ],
+  "added_source_ids": [
+    "comptia-220-1201-objectives-pdf",
+    "usb-typec-language-guidance",
+    "dell-raid-levels",
+    "dell-swollen-battery",
+    "hyperv-virtual-switch",
+    "hyperv-nat-network",
+    "azure-dns-records-reference",
+    "iana-service-ports-csv",
+    "python313-ipaddress",
+    "python313-socket",
+    "rfc3927-ipv4-linklocal",
+    "hyperv-create-switch",
+    "microsoft-dhcp-scopes",
+    "microsoft-email-authentication"
+  ],
+  "findings": [
+    {
+      "id": "2201201-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Formal method was not clearly separated from tested troubleshooting",
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/34be017cb73211ef8985a6f347fbf652?checkExpiry=false",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "220-1201"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Public version 4.0 document explicitly excludes the formal methodology sequence while retaining six practical troubleshooting objective areas.",
+      "recommendation": "Keep the method as labeled supporting practice and map all 27 numbered objectives; do not use older course/blog wording as scope authority.",
+      "disposition": "applied",
+      "source_id": "comptia-220-1201-objectives-pdf",
+      "resolution": "Keep the method as labeled supporting practice and map all 27 numbered objectives; do not use older course/blog wording as scope authority."
+    },
+    {
+      "id": "2201201-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Summary-based coverage needed finer networking and hardware detail",
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/34be017cb73211ef8985a6f347fbf652?checkExpiry=false",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "220-1201"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The public full outline includes NetBIOS 137–139, DNS record/mail-authentication concepts, DHCP scopes, display attributes and specific print/maintenance tasks.",
+      "recommendation": "Add port/service and DNS tables, scope/reservation/exclusion planning, host-service/network types, display and printer explanations, and strengthen 42 answers.",
+      "disposition": "applied",
+      "source_id": "comptia-220-1201-objectives-pdf",
+      "resolution": "Add port/service and DNS tables, scope/reservation/exclusion planning, host-service/network types, display and printer explanations, and strengthen 42 answers."
+    },
+    {
+      "id": "2201201-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Connector shape needed a capability-chain worked example",
+      "url": "https://www.usb.org/sites/default/files/usb_type-c_language_product_and_packaging_guidelines_20230320.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "220-1201"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "USB-IF separates Type-C connectors, data capability, Alt Mode and Power Delivery; USB 2.0 Type-C does not implement the higher-speed/Alt-Mode signal paths.",
+      "recommendation": "Add dock/cable/power diagnostic comparisons without inferring features from connector shape.",
+      "disposition": "applied",
+      "source_id": "usb-typec-language-guidance",
+      "resolution": "Add dock/cable/power diagnostic comparisons without inferring features from connector shape."
+    },
+    {
+      "id": "2201201-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "RAID redundancy needed explicit capacity and failure-placement cases",
+      "url": "https://www.dell.com/support/kbdoc/en-us/000128635/dell-servers-what-are-the-raid-levels-and-their-specifications",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "220-1201"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Traditional RAID 0/1/5/6/10 have different capacity and fault tolerance; RAID 10 survival depends on mirrored-pair membership.",
+      "recommendation": "Add qualified equal-size-drive calculations and counterexamples for same-pair versus different-pair failures; keep physical controller/rebuild labs proposed.",
+      "disposition": "applied",
+      "source_id": "dell-raid-levels",
+      "resolution": "Add qualified equal-size-drive calculations and counterexamples for same-pair versus different-pair failures; keep physical controller/rebuild labs proposed."
+    },
+    {
+      "id": "2201201-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A NAT network label does not prove guest configuration",
+      "url": "https://learn.microsoft.com/virtualization/hyper-v-on-windows/user-guide/setup-nat-network",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "220-1201"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The manual WinNAT guide explicitly says the NAT itself does not assign endpoint IP addresses.",
+      "recommendation": "Explain internal/external/private switch choices separately from guest address, gateway, DNS and access policy; no host network changes executed.",
+      "disposition": "applied",
+      "source_id": "hyperv-nat-network",
+      "resolution": "Explain internal/external/private switch choices separately from guest address, gateway, DNS and access policy; no host network changes executed."
+    },
+    {
+      "id": "2201201-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Reachability and application acceptance needed concrete evidence",
+      "url": "https://docs.python.org/3.13/library/socket.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "220-1201"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Socket documentation distinguishes stream/datagram operations; receiving an application rejection is different from failure to reach the endpoint.",
+      "recommendation": "Run an original bounded loopback protocol over both TCP and UDP, with valid and rejected requests, and state that no remote infrastructure was tested.",
+      "disposition": "applied",
+      "source_id": "python313-socket",
+      "resolution": "Run an original bounded loopback protocol over both TCP and UDP, with valid and rejected requests, and state that no remote infrastructure was tested."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "comptia-troubleshooting-blog",
+      "author": "Damon M. Garn",
+      "published_on": "2024-12-18",
+      "disposition": "accepted-with-limits",
+      "value": "Evidence gathering, a rollback plan, complete verification and documentation.",
+      "limits": "Broad certification-methodology comments and step numbering do not override the explicit V15 exclusion. No scanning workflow adopted."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "service_labs_executed": 0,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 34,
+      "failed": 0,
+      "checks": [
+        "mask /26",
+        "network boundary",
+        "broadcast boundary",
+        "62 usable hosts",
+        "pool inclusive endpoints",
+        "exclusions remove10",
+        "reservation consumesone candidate",
+        "printer retained as reserved",
+        "printer withheld from others",
+        "gateway not leased",
+        "last host local",
+        "next subnet not local",
+        "broadcast not usable host",
+        "static .40 would conflict with ordinarypool",
+        "excluding static .40 removes conflict",
+        "overlapping /27 flagged",
+        "adjacent /26 nonoverlap",
+        "RFC1918 example",
+        "172.32 not RFC1918",
+        "linklocal distinct from RFC1918",
+        "four2TB RAID0 eightTB",
+        "two2TB RAID1 twoTB",
+        "four2TB RAID5 sixTB",
+        "four2TB RAID6 fourTB",
+        "four2TB RAID 10 fourTB",
+        "RAID 10 one failure survives",
+        "RAID 10 different mirrors survives",
+        "RAID 10 same mirror fails",
+        "RAID 10 three failures cannot survive",
+        "tcp valid response",
+        "tcp application rejection after reachable transport",
+        "udp valid response",
+        "udp application rejection after reachable transport",
+        "invalid transport rejected beforebind"
+      ],
+      "python": "3.13.14",
+      "public_python_blocks_executed": 2,
+      "local_loopback_exchanges": 8,
+      "stdout": "255.255.255.192 192.168.50.63\n62\n41 30\nTrue\nFalse\ntcp b'PONG\\n'\ntcp b'ERROR\\n'\nudp b'PONG\\n'\nudp b'ERROR\\n'\n",
+      "sources": {
+        "address_plan.py": "dda5d10e596f64051c888777ad920fd1084148f0d42359bc3e3be245c2a98a91",
+        "transport_demo.py": "d1c0b1f5813cc16a2673ea7c35bfe590a6b0f4e816765faaca5570b657e524c5"
+      },
+      "limits": [
+        "Real TCP/UDP only on127.0.0.1 with OS-selected ports, no external network probes or configuration changes.",
+        "IPv4/DHCP and RAID checks are planning models, not DHCP leases, packet routing, physical RAID or failure/rebuild execution.",
+        "No TLS, DNS service, firewall, NAT, Hyper-V, physical hardware, printer, wireless or battery procedures executed.",
+        "All eight complete hardware/platform labs remain proposed."
+      ]
+    }
+  },
+  "answered_checks": 42,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Two original Python examples and 34 checks ran locally, including eight TCP/UDP exchanges bound to 127.0.0.1 only.",
+    "Subnet/DHCP-capacity and RAID checks are calculations/models; no DHCP leases, routing or physical RAID failure/rebuild occurred.",
+    "No DNS service, TLS, firewall/NAT changes, Hyper-V, mobile hardware, battery handling, Wi-Fi, printer, disk/PSU or cloud lab executed; all eight complete labs remain proposed.",
+    "LinkedIn title/description exam codes conflict and Pluralsight public outline contains older scope wording. Current paid lesson coverage was not verified.",
+    "OReilly/Udemy blocked automated access; inherited marketplace runtime not reverified.",
+    "Exam retirement is only estimated 2028; no exact retirement date inferred."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "learning_catalog_consistency": "passed",
+    "passed": 34,
+    "failed": 0,
+    "checks": [
+      "mask /26",
+      "network boundary",
+      "broadcast boundary",
+      "62 usable hosts",
+      "pool inclusive endpoints",
+      "exclusions remove10",
+      "reservation consumesone candidate",
+      "printer retained as reserved",
+      "printer withheld from others",
+      "gateway not leased",
+      "last host local",
+      "next subnet not local",
+      "broadcast not usable host",
+      "static .40 would conflict with ordinarypool",
+      "excluding static .40 removes conflict",
+      "overlapping /27 flagged",
+      "adjacent /26 nonoverlap",
+      "RFC1918 example",
+      "172.32 not RFC1918",
+      "linklocal distinct from RFC1918",
+      "four2TB RAID0 eightTB",
+      "two2TB RAID1 twoTB",
+      "four2TB RAID5 sixTB",
+      "four2TB RAID6 fourTB",
+      "four2TB RAID10 fourTB",
+      "RAID10 one failure survives",
+      "RAID10 different mirrors survives",
+      "RAID10 same mirror fails",
+      "RAID10 three failures cannot survive",
+      "tcp valid response",
+      "tcp application rejection after reachable transport",
+      "udp valid response",
+      "udp application rejection after reachable transport",
+      "invalid transport rejected beforebind"
+    ],
+    "python": "3.13.14",
+    "public_python_blocks_executed": 2,
+    "local_loopback_exchanges": 8,
+    "stdout": "255.255.255.192 192.168.50.63\n62\n41 30\nTrue\nFalse\ntcp b'PONG\\n'\ntcp b'ERROR\\n'\nudp b'PONG\\n'\nudp b'ERROR\\n'\n",
+    "sources": {
+      "address_plan.py": "dda5d10e596f64051c888777ad920fd1084148f0d42359bc3e3be245c2a98a91",
+      "transport_demo.py": "d1c0b1f5813cc16a2673ea7c35bfe590a6b0f4e816765faaca5570b657e524c5"
+    },
+    "limits": [
+      "Real TCP/UDP only on127.0.0.1 with OS-selected ports, no external network probes or configuration changes.",
+      "IPv4/DHCP and RAID checks are planning models, not DHCP leases, packet routing, physical RAID or failure/rebuild execution.",
+      "No TLS, DNS service, firewall, NAT, Hyper-V, physical hardware, printer, wireless or battery procedures executed.",
+      "All eight complete hardware/platform labs remain proposed."
+    ]
+  },
+  "version_specific_pdf_review": {
+    "receipt": {
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/34be017cb73211ef8985a6f347fbf652?checkExpiry=false",
+      "discovery_page": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+      "collection_url": "https://lecbyo.collections.cmp.optimizely.com/api/library-collection/b9074fb6207711f08b1d2e4ad712ca04",
+      "asset": {
+        "guid": "34be017cb73211ef8985a6f347fbf652",
+        "title": "CompTIA A+ 220-1201 Exam Objectives (4.0).pdf",
+        "type": "raw_file",
+        "mimeType": "application/pdf",
+        "thumbnailUrl": "https://images2.cmp.optimizely.com/Zz02YjU0Nzc4NGNhMzIxMWYwYjNhMWFlYzJlY2U1MmRlZA==",
+        "previewUrl": "https://lecbyo.files.cmp.optimizely.com/download/34be017cb73211ef8985a6f347fbf652?checkExpiry=false",
+        "mediaUrl": "https://lecbyo.files.cmp.optimizely.com/download/34be017cb73211ef8985a6f347fbf652?checkExpiry=false",
+        "transcodedUrl": "",
+        "description": "",
+        "lastModified": "2025-11-25T19:10:35",
+        "lastModifiedRelative": "10 months ago",
+        "createdAt": "2024-12-10T20:06:13",
+        "custom_labels": {},
+        "fields": []
+      },
+      "sha256": "9fb3471b397a863b1baa33912dffb6fa232b4631e2219f39188c5c109814648c",
+      "bytes": 272109,
+      "pages": 18,
+      "status": 200
+    },
+    "objective_group_counts": [
+      3,
+      8,
+      8,
+      2,
+      6
+    ],
+    "numbered_objectives": 27,
+    "main_page_summary_rows": 15,
+    "methodology": "Explicitly excluded from tested objectives in the public V15 PDF; retained as supporting practice.",
+    "mapping_basis": "Original objective paraphrases prefixed with published IDs; PDF layout checked for hardware ordering.",
+    "font_extraction_comparison": "Text before and after fontTools4.66.0 installation was identical. Header-font warnings resolved; no objective text changed."
+  },
+  "port_registry_review": {
+    "source_id": "iana-service-ports-csv",
+    "selected_rows": [
+      {
+        "Service Name": "ftp-data",
+        "Port Number": "20",
+        "Transport Protocol": "tcp",
+        "Description": "File Transfer [Default Data]",
+        "Assignee": "[Jon_Postel]",
+        "Contact": "[Jon_Postel]",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "ftp-data",
+        "Port Number": "20",
+        "Transport Protocol": "udp",
+        "Description": "File Transfer [Default Data]",
+        "Assignee": "[Jon_Postel]",
+        "Contact": "[Jon_Postel]",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "ftp-data",
+        "Port Number": "20",
+        "Transport Protocol": "sctp",
+        "Description": "FTP",
+        "Assignee": "[Randall_Stewart]",
+        "Contact": "[Randall_Stewart]",
+        "Registration Date": "",
+        "Modification Date": "2022-02-07",
+        "Reference": "[RFC 9260]",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "ftp",
+        "Port Number": "21",
+        "Transport Protocol": "tcp",
+        "Description": "File Transfer Protocol [Control]",
+        "Assignee": "[Jon_Postel]",
+        "Contact": "[Jon_Postel]",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "[RFC 959]",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": "Defined TXT keys: u=<username> p=<password> path=<path>"
+      },
+      {
+        "Service Name": "ftp",
+        "Port Number": "21",
+        "Transport Protocol": "udp",
+        "Description": "File Transfer Protocol [Control]",
+        "Assignee": "[Jon_Postel]",
+        "Contact": "[Jon_Postel]",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "[RFC 959]",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": "Defined TXT keys: u=<username> p=<password> path=<path>"
+      },
+      {
+        "Service Name": "ftp",
+        "Port Number": "21",
+        "Transport Protocol": "sctp",
+        "Description": "FTP",
+        "Assignee": "[Randall_Stewart]",
+        "Contact": "[Randall_Stewart]",
+        "Registration Date": "",
+        "Modification Date": "2022-02-07",
+        "Reference": "[RFC 9260]",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": "Defined TXT keys: u=<username> p=<password> path=<path>"
+      },
+      {
+        "Service Name": "ssh",
+        "Port Number": "22",
+        "Transport Protocol": "tcp",
+        "Description": "The Secure Shell (SSH) Protocol",
+        "Assignee": "",
+        "Contact": "",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "[RFC 4251]",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": "Defined TXT keys: u=<username> p=<password>"
+      },
+      {
+        "Service Name": "ssh",
+        "Port Number": "22",
+        "Transport Protocol": "udp",
+        "Description": "The Secure Shell (SSH) Protocol",
+        "Assignee": "",
+        "Contact": "",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "[RFC 4251]",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": "Defined TXT keys: u=<username> p=<password>"
+      },
+      {
+        "Service Name": "ssh",
+        "Port Number": "22",
+        "Transport Protocol": "sctp",
+        "Description": "SSH",
+        "Assignee": "[Randall_Stewart]",
+        "Contact": "[Randall_Stewart]",
+        "Registration Date": "",
+        "Modification Date": "2022-02-07",
+        "Reference": "[RFC 9260]",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": "Defined TXT keys: u=<username> p=<password>"
+      },
+      {
+        "Service Name": "telnet",
+        "Port Number": "23",
+        "Transport Protocol": "tcp",
+        "Description": "Telnet",
+        "Assignee": "[Jon_Postel]",
+        "Contact": "[Jon_Postel]",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "[RFC 854]",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": "Defined TXT keys: u=<username> p=<password>"
+      },
+      {
+        "Service Name": "telnet",
+        "Port Number": "23",
+        "Transport Protocol": "udp",
+        "Description": "Telnet",
+        "Assignee": "[Jon_Postel]",
+        "Contact": "[Jon_Postel]",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "[RFC 854]",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": "Defined TXT keys: u=<username> p=<password>"
+      },
+      {
+        "Service Name": "smtp",
+        "Port Number": "25",
+        "Transport Protocol": "tcp",
+        "Description": "Simple Mail Transfer",
+        "Assignee": "[IESG]",
+        "Contact": "[IETF_Chair]",
+        "Registration Date": "",
+        "Modification Date": "2017-06-05",
+        "Reference": "[RFC-ietf-emailcore-rfc5321bis-43]",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "smtp",
+        "Port Number": "25",
+        "Transport Protocol": "udp",
+        "Description": "Simple Mail Transfer",
+        "Assignee": "[IESG]",
+        "Contact": "[IETF_Chair]",
+        "Registration Date": "",
+        "Modification Date": "2017-06-05",
+        "Reference": "[RFC-ietf-emailcore-rfc5321bis-43]",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "domain",
+        "Port Number": "53",
+        "Transport Protocol": "tcp",
+        "Description": "Domain Name Server",
+        "Assignee": "[Paul_Mockapetris]",
+        "Contact": "[Paul_Mockapetris]",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "domain",
+        "Port Number": "53",
+        "Transport Protocol": "udp",
+        "Description": "Domain Name Server",
+        "Assignee": "[Paul_Mockapetris]",
+        "Contact": "[Paul_Mockapetris]",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "bootps",
+        "Port Number": "67",
+        "Transport Protocol": "tcp",
+        "Description": "Bootstrap Protocol Server",
+        "Assignee": "[Bill_Croft]",
+        "Contact": "[Bill_Croft]",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "[RFC 951]",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": "Defined TXT keys: None"
+      },
+      {
+        "Service Name": "bootps",
+        "Port Number": "67",
+        "Transport Protocol": "udp",
+        "Description": "Bootstrap Protocol Server",
+        "Assignee": "",
+        "Contact": "",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "bootpc",
+        "Port Number": "68",
+        "Transport Protocol": "tcp",
+        "Description": "Bootstrap Protocol Client",
+        "Assignee": "[Bill_Croft]",
+        "Contact": "[Bill_Croft]",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "bootpc",
+        "Port Number": "68",
+        "Transport Protocol": "udp",
+        "Description": "Bootstrap Protocol Client",
+        "Assignee": "[Bill_Croft]",
+        "Contact": "[Bill_Croft]",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "http",
+        "Port Number": "80",
+        "Transport Protocol": "tcp",
+        "Description": "World Wide Web HTTP",
+        "Assignee": "[IESG]",
+        "Contact": "[IETF_Chair]",
+        "Registration Date": "",
+        "Modification Date": "2021-10-01",
+        "Reference": "[RFC 9110]",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": "Defined TXT keys: u=<username> p=<password> path=<path to document>"
+      },
+      {
+        "Service Name": "http",
+        "Port Number": "80",
+        "Transport Protocol": "udp",
+        "Description": "World Wide Web HTTP",
+        "Assignee": "[IESG]",
+        "Contact": "[IETF_Chair]",
+        "Registration Date": "",
+        "Modification Date": "2021-10-01",
+        "Reference": "[RFC 9110]",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": "Defined TXT keys: u=<username> p=<password> path=<path to document>"
+      },
+      {
+        "Service Name": "www",
+        "Port Number": "80",
+        "Transport Protocol": "tcp",
+        "Description": "World Wide Web HTTP",
+        "Assignee": "[IESG]",
+        "Contact": "[IETF_Chair]",
+        "Registration Date": "",
+        "Modification Date": "2021-10-01",
+        "Reference": "[RFC 9110]",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": "This is a duplicate of the \"http\" service and should not be used for discovery purposes."
+      },
+      {
+        "Service Name": "www",
+        "Port Number": "80",
+        "Transport Protocol": "udp",
+        "Description": "World Wide Web HTTP",
+        "Assignee": "[IESG]",
+        "Contact": "[IETF_Chair]",
+        "Registration Date": "",
+        "Modification Date": "2021-10-01",
+        "Reference": "[RFC 9110]",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": "This is a duplicate of the \"http\" service and should not be used for discovery purposes."
+      },
+      {
+        "Service Name": "www-http",
+        "Port Number": "80",
+        "Transport Protocol": "tcp",
+        "Description": "World Wide Web HTTP",
+        "Assignee": "[Tim_Berners_Lee]",
+        "Contact": "[Tim_Berners_Lee]",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": "This is a duplicate of the \"http\" service and should not be used for discovery purposes.\n      u=<username> p=<password> path=<path to document>\n        (see txtrecords.html#http)\n        Known Subtypes: _printer\n        NOTE: The meaning of this service type, though called just \"http\", actually\n        denotes something more precise than just \"any data transported using HTTP\".\n        The DNS-SD service type \"http\" should only be used to advertise content that:\n        * is served over HTTP,\n        * can be displayed by \"typical\" web browser client software, and\n        * is intented primarily to be viewed by a human user.\n        Of course, the definition of \"typical web browser\" is subjective, and may\n        change over time, but for practical purposes the DNS-SD service type \"http\"\n        can be understood as meaning \"human-readable HTML content served over HTTP\".\n        In some cases other widely-supported content types may also be appropriate,\n        such as plain text over HTTP, or JPEG image over HTTP.\n        Content types not intented primarily for viewing by a human user, or not\n        widely-supported in web browsing clients, should not be advertised as\n        DNS-SD service type \"http\", even if they do happen to be transported over HTTP.\n        Such types should be advertised as their own logical service type with their\n        own DNS-SD service type, for example, XUL (XML User Interface Language)\n        transported over HTTP is advertised explicitly as DNS-SD service type \"xul-http\"."
+      },
+      {
+        "Service Name": "www-http",
+        "Port Number": "80",
+        "Transport Protocol": "udp",
+        "Description": "World Wide Web HTTP",
+        "Assignee": "[Tim_Berners_Lee]",
+        "Contact": "[Tim_Berners_Lee]",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": "This is a duplicate of the \"http\" service and should not be used for discovery purposes.\n      u=<username> p=<password> path=<path to document>\n      (see txtrecords.html#http)\n      Known Subtypes: _printer\n      NOTE: The meaning of this service type, though called just \"http\", actually\n      denotes something more precise than just \"any data transported using HTTP\".\n      The DNS-SD service type \"http\" should only be used to advertise content that:\n      * is served over HTTP,\n      * can be displayed by \"typical\" web browser client software, and\n      * is intented primarily to be viewed by a human user.\n      Of course, the definition of \"typical web browser\" is subjective, and may\n      change over time, but for practical purposes the DNS-SD service type \"http\"\n      can be understood as meaning \"human-readable HTML content served over HTTP\".\n      In some cases other widely-supported content types may also be appropriate,\n      such as plain text over HTTP, or JPEG image over HTTP.\n      Content types not intented primarily for viewing by a human user, or not\n      widely-supported in web browsing clients, should not be advertised as\n      DNS-SD service type \"http\", even if they do happen to be transported over HTTP.\n      Such types should be advertised as their own logical service type with their\n      own DNS-SD service type, for example, XUL (XML User Interface Language)\n      transported over HTTP is advertised explicitly as DNS-SD service type \"xul-http\"."
+      },
+      {
+        "Service Name": "http",
+        "Port Number": "80",
+        "Transport Protocol": "sctp",
+        "Description": "HTTP",
+        "Assignee": "[Randall_Stewart]",
+        "Contact": "[Randall_Stewart]",
+        "Registration Date": "",
+        "Modification Date": "2022-02-07",
+        "Reference": "[RFC 9260]",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": "Defined TXT keys: u=<username> p=<password> path=<path to document>"
+      },
+      {
+        "Service Name": "pop3",
+        "Port Number": "110",
+        "Transport Protocol": "tcp",
+        "Description": "Post Office Protocol - Version 3",
+        "Assignee": "[Marshall_Rose]",
+        "Contact": "[Marshall_Rose]",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "pop3",
+        "Port Number": "110",
+        "Transport Protocol": "udp",
+        "Description": "Post Office Protocol - Version 3",
+        "Assignee": "[Marshall_Rose]",
+        "Contact": "[Marshall_Rose]",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "netbios-ns",
+        "Port Number": "137",
+        "Transport Protocol": "tcp",
+        "Description": "NETBIOS Name Service",
+        "Assignee": "",
+        "Contact": "",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "netbios-ns",
+        "Port Number": "137",
+        "Transport Protocol": "udp",
+        "Description": "NETBIOS Name Service",
+        "Assignee": "",
+        "Contact": "",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "netbios-dgm",
+        "Port Number": "138",
+        "Transport Protocol": "tcp",
+        "Description": "NETBIOS Datagram Service",
+        "Assignee": "",
+        "Contact": "",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "netbios-dgm",
+        "Port Number": "138",
+        "Transport Protocol": "udp",
+        "Description": "NETBIOS Datagram Service",
+        "Assignee": "",
+        "Contact": "",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "netbios-ssn",
+        "Port Number": "139",
+        "Transport Protocol": "tcp",
+        "Description": "NETBIOS Session Service",
+        "Assignee": "[Jon_Postel]",
+        "Contact": "[Jon_Postel]",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "netbios-ssn",
+        "Port Number": "139",
+        "Transport Protocol": "udp",
+        "Description": "NETBIOS Session Service",
+        "Assignee": "[Jon_Postel]",
+        "Contact": "[Jon_Postel]",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "imap",
+        "Port Number": "143",
+        "Transport Protocol": "tcp",
+        "Description": "Internet Message Access Protocol",
+        "Assignee": "[IESG]",
+        "Contact": "[IETF_Chair]",
+        "Registration Date": "",
+        "Modification Date": "2021-02-22",
+        "Reference": "[RFC 3501][RFC 9051]",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "ldap",
+        "Port Number": "389",
+        "Transport Protocol": "tcp",
+        "Description": "Lightweight Directory Access Protocol",
+        "Assignee": "[Tim_Howes]",
+        "Contact": "[Tim_Howes]",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "ldap",
+        "Port Number": "389",
+        "Transport Protocol": "udp",
+        "Description": "Lightweight Directory Access Protocol",
+        "Assignee": "[Tim_Howes]",
+        "Contact": "[Tim_Howes]",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "https",
+        "Port Number": "443",
+        "Transport Protocol": "tcp",
+        "Description": "http protocol over TLS/SSL",
+        "Assignee": "[IESG]",
+        "Contact": "[IETF_Chair]",
+        "Registration Date": "",
+        "Modification Date": "2021-10-01",
+        "Reference": "[RFC 9110]",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "https",
+        "Port Number": "443",
+        "Transport Protocol": "udp",
+        "Description": "http protocol over TLS/SSL",
+        "Assignee": "[IESG]",
+        "Contact": "[IETF_Chair]",
+        "Registration Date": "",
+        "Modification Date": "2021-10-01",
+        "Reference": "[RFC 9110]",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "https",
+        "Port Number": "443",
+        "Transport Protocol": "sctp",
+        "Description": "HTTPS",
+        "Assignee": "[Randall_Stewart]",
+        "Contact": "[Randall_Stewart]",
+        "Registration Date": "",
+        "Modification Date": "2022-02-07",
+        "Reference": "[RFC 9260]",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "microsoft-ds",
+        "Port Number": "445",
+        "Transport Protocol": "tcp",
+        "Description": "Microsoft-DS",
+        "Assignee": "[Pradeep_Bahl]",
+        "Contact": "[Pradeep_Bahl]",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "microsoft-ds",
+        "Port Number": "445",
+        "Transport Protocol": "udp",
+        "Description": "Microsoft-DS",
+        "Assignee": "[Pradeep_Bahl]",
+        "Contact": "[Pradeep_Bahl]",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "ms-wbt-server",
+        "Port Number": "3389",
+        "Transport Protocol": "tcp",
+        "Description": "MS WBT Server",
+        "Assignee": "[Jordan_Marchese]",
+        "Contact": "[Jordan_Marchese]",
+        "Registration Date": "",
+        "Modification Date": "2022-11-03",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      },
+      {
+        "Service Name": "ms-wbt-server",
+        "Port Number": "3389",
+        "Transport Protocol": "udp",
+        "Description": "MS WBT Server",
+        "Assignee": "[Jordan_Marchese]",
+        "Contact": "[Jordan_Marchese]",
+        "Registration Date": "",
+        "Modification Date": "",
+        "Reference": "",
+        "Service Code": "",
+        "Unauthorized Use Reported": "",
+        "Assignment Notes": ""
+      }
+    ],
+    "note": "Assignment rows are evidence of registry entries, not proof that all listed transports are typical implementations or observed traffic."
+  },
+  "catalog_discrepancies": [
+    {
+      "source_id": "comptia-220-1201-linkedin",
+      "observation": "220-1201 title but public description explicitly says220-1101.",
+      "disposition": "Disclose in guide; no paid lesson coverage or correction inferred."
+    },
+    {
+      "source_id": "comptia-220-1201-pluralsight",
+      "observation": "Public learning outline retains older objective wording and a methodology objective excluded by currentV15PDF.",
+      "disposition": "Require full-objective/preview comparison before relying on coverage; current numeric metadata retained."
+    }
+  ]
+}

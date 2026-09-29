@@ -3103,16 +3103,26 @@ No exact current Whizlabs Tech+ product was independently verified. Practice que
 
 ### CompTIA A+ Core 1 (220-1201)
 
-- Official baseline: [A+ Core 1 V15](https://www.comptia.org/en-us/certifications/a/core-1-v15/) (**3–6 hours mapping scope and delivery**); pass Core 1 and Core 2 from the same version, and treat the page's 2028 retirement as an estimate rather than a dated announcement
-- Official options: [CertMaster Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/), [Labs](https://www.comptia.org/en-us/resources/certmaster-training/labs/), and [Practice](https://www.comptia.org/en-us/resources/certmaster-training/practice/) (**35–70 combined hours estimated**); select the exact 220-1201 product/bundle
-- Current modular path: [Pluralsight 220-1201](https://www.pluralsight.com/paths/comptia-a-core-1-220-1201) (**12 listed hours plus 20–40 lab/review hours**), six courses and a practice exam
-- Detailed video route: [LinkedIn Learning / Total Seminars 220-1201](https://www.linkedin.com/learning/comptia-a-plus-core-1-220-1201-cert-prep) (**20 hours 14 minutes plus 20–40 lab/review hours**); one page note incorrectly names 220-1101, so retain a V15 gap check
-- Current two-core book: [O'Reilly/Pearson Complete A+ Guide V15](https://www.oreilly.com/library/view/complete-a-guide/9780135439883/) (**25–45 selected Core 1 reading/lab hours**)
-- Detailed marketplace course: [Udemy / Jason Dion 220-1201](https://www.udemy.com/course/comptia-a-core-1/) (**26 hours 5 minutes plus 20–40 lab/review hours**, updated August 2026)
-- Explanation-led assessment: [MeasureUp Core 1](https://www.measureup.com/comptia-a-core-1-practice-test.html) (**242 questions listed; allow 6–12 hours across attempts and remediation**)
-- Free current course: [Professor Messer 220-1201](https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/220-1201-training-course/) (**10 hours 11 minutes plus 20–40 hands-on hours**)
+Resource details from the [220-1201 guide](../guides/220-1201-comptia-a-plus-core-1.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Use one current V15 core route, a safe component/network/printer/VM bench, and one ethical assessment source. No exact Whizlabs 220-1201 route was independently verified; reject dumps and do not combine an older 220-1101 pass with 220-1202.
+This is not a complete list and is not meant to be consumed in full. Choose one current V15 path, spend comparable time on a safe hardware/network bench, and use explanation-led practice only to target weak domains.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| CompTIA [CertMaster Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/), Labs, and Practice | Paid official platform; select 220-1201 product/bundle | Provider estimates: Learn 25–40h, Labs 15–25h, Practice 10–20h; select what you need |
+| [Pluralsight A+ Core 1 path](https://www.pluralsight.com/paths/comptia-a-core-1-220-1201) | Subscription; 6 courses and practice exam; public outline needs V15 comparison | 12 listed hours plus 20–40 lab/review hours |
+| [LinkedIn Learning / Total Seminars Core 1](https://www.linkedin.com/learning/comptia-a-plus-core-1-220-1201-cert-prep) | Subscription; 21 quizzes; title/description exam-code discrepancy | 20 hours 14 minutes plus 20–40 lab/review hours |
+| [Complete A+ Guide V15](https://www.oreilly.com/library/view/complete-a-guide/9780135439883/) | O'Reilly/Pearson subscription book covering both cores | About 25–45 selected reading/lab hours for Core 1 |
+| [Udemy / Jason Dion Core 1](https://www.udemy.com/course/comptia-a-core-1/) | Paid marketplace course and practice exam | Current runtime unverified (page blocked); 20–40 lab/review hours estimated separately |
+| [MeasureUp Core 1](https://www.measureup.com/comptia-a-core-1-practice-test.html) | Paid; 242 questions listed | About 6–12 hours across timed attempts and explanation review |
+| [Professor Messer free 220-1201 course](https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/220-1201-training-course/) | Free 63-video course; optional paid notes/practice | 10 hours 11 minutes plus 20–40 hands-on hours |
+
+Pluralsight’s metadata lists 6 courses/12 hours, but its public “What You’ll Learn” includes older objective wording and the methodology item excluded by V15. LinkedIn lists a September 26, 2025 release and 20h14 runtime under a 220-1201 title, while its description explicitly says 220-1101. Treat these as catalog inconsistencies requiring a preview/full-objective comparison; paid lesson coverage was not verified. MeasureUp’s 242-question count and Professor Messer’s 63 videos/10h11 were confirmed from public listings. O'Reilly and Udemy blocked automated rechecking.
+
+- **Practice method:** Damon M. Garn’s December 18, 2024 [CompTIA troubleshooting article](https://www.comptia.org/blog/troubleshooting-methodology) is useful for evidence, rollback and verification. Its broad discussion of methodology across certifications does not override the 1200-series exclusion.
+- **Implementation references:** use the linked USB-IF, Dell, Microsoft, IANA and Python sources for a specific compatibility or lab question. The [Hyper-V overview](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/virtual-switch) is supporting context, not a requirement to build a Windows virtualization lab.
+
+Whizlabs was not independently verified as an exact current 220-1201 source. Reject “actual questions” and dump sites. Vendor runtimes, prices, bundles, banks, revisions, and access change; verify before purchase.
 
 ### CompTIA A+ Core 2 (220-1202)
 
