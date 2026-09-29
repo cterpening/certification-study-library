@@ -7809,24 +7809,70 @@
       "notes": "Actual three-page primary objective PDF fully read:25numberedobjectives plus supportingbullets mapped across6domains. Corrected dated CCSTfiveyear/lifetime renewal distinction, added40executedbinarypacket/subnetchecks,48answeredchecks and8proposedhands-onlabs. Objective unchanged;missinglifecyclebaseline explicitlyinitialized andpostcheckunchanged. Live/simulator/device labs and independenthumanreview remainpending. See docs/research/2026-09-29-100-150-deep-review.md"
     },
     {
-      "id":"100-160-2026-09-02-source-validation",
-      "exam_code":"100-160",
-      "guide_path":"guides/100-160-cisco-certified-support-technician-cybersecurity.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-02",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/100-160-official-objectives.txt",
-      "blueprint_snapshot_sha256":"8c759c20e7564e89bf453d83dd80b60b78716c3c06790073e531065e5d891418",
-      "objective_coverage":[
-        {"objective_group":"Security principles","guide_sections":["Section 1","All scenarios","Labs 1–3 and 8"]},
-        {"objective_group":"Network security","guide_sections":["Section 2","Scenarios 1 and 3","Labs 4 and 7–8"]},
-        {"objective_group":"Endpoint security","guide_sections":["Section 3","Scenario 2","Labs 5, 7 and 8"]},
-        {"objective_group":"Vulnerability assessment and risk management","guide_sections":["Section 4","Scenario 3","Labs 1, 6 and 8"]},
-        {"objective_group":"Incident handling","guide_sections":["Section 5","All scenarios","Labs 7–8"]}
+      "id": "100-160-2026-09-02-source-validation",
+      "exam_code": "100-160",
+      "guide_path": "guides/100-160-cisco-certified-support-technician-cybersecurity.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/100-160-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8c759c20e7564e89bf453d83dd80b60b78716c3c06790073e531065e5d891418",
+      "objective_coverage": [
+        {
+          "objective_group": "Security principles",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network security",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 4 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Endpoint security",
+          "guide_sections": [
+            "Section 3",
+            "Scenario 2",
+            "Labs 5, 7 and 8"
+          ]
+        },
+        {
+          "objective_group": "Vulnerability assessment and risk management",
+          "guide_sections": [
+            "Section 4",
+            "Scenario 3",
+            "Labs 1, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Incident handling",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 7–8"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":9,"reachable":8,"access_blocked":1,"missing_or_error":0},
-      "notes":"All five public work areas and all 23 first-party exam-aligned training objectives are mapped through assets/threats/risk/controls, identity/crypto, network defense, endpoint baseline/update/malware procedure, vulnerability lifecycle/continuity and evidence-preserving incident handling. Three scenarios, eight authorized labs and 36 checks are included. No stable public domain weights are invented. Eight links are reachable and O'Reilly is automation-blocked; none are broken."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 26,
+        "reachable": 24,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Mapped 23 numbered objectives and supporting bullets from the actual three-page PDF. Corrected dated CCST renewal policy, reconciled the older exam-referenced incident structure with NIST revision3, added40executed evidence/timeline checks and48answered prompts, and updated catalog evidence. Objective digest unchanged; missing lifecycle baseline explicitly initialized and rechecked unchanged. Eight live/system labs and independent human review remain pending. See docs/research/2026-09-29-100-160-deep-review.md"
     },
     {
       "id":"200-301-2026-09-06-source-validation",

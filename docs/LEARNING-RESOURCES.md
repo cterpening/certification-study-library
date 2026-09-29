@@ -2674,6 +2674,28 @@ The MeasureUp listing's150-item bank allocates30/18/24/30/30/18 questions across
 
 Use legitimate practice to explain errors and produce lab evidence. Avoid recalled/live exam items, answer-only banks and guaranteed-pass claims. Reconcile disputed explanations with the official objectives and current first-party documentation.
 
+### 100-160 — Cisco Certified Support Technician Cybersecurity
+
+Resource details from the [100-160 guide](../guides/100-160-cisco-certified-support-technician-cybersecurity.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is **not a complete list**. Choose resources for demonstrated gaps and use Cisco's actual objectives for scope. Public catalog evidence was reviewed September 29, 2026; provider estimates and editorial planning budgets are distinguished below. No paid lessons, book interiors, provider lab instructions or proprietary questions were accessed.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Cisco exam page](https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-cybersecurity.html) and [actual objective PDF](https://learningcontent.cisco.com/documents/CCST+Cybersecurity+Objecitve+Domain_Cisco_Final_wCiscoLogo.pdf) | Public; primary scope and logistics | 30–60 min editorial mapping; no published domain weights |
+| [Junior Cybersecurity Analyst path](https://skillsforall.com/career-path/cybersecurity?courseLang=en-US&userLang=en-US) | Free self-paced account; current public fetch exposed a shell | About 120 h per Cisco FAQ, not independently confirmed course-by-course in the shell |
+| [Cisco training page](https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccst-cybersecurity.html) and [training PDF](https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-cybersecurity.pdf) | Public; 23 outcomes and six course-outline components | 20–40 min editorial cross-check; training is distinct from the detailed blueprint |
+| [NetAcad public catalog](https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html) | Public catalog; learning may require account | Introduction to Cybersecurity 6 h, Networking Basics 22 h and Packet Tracer introduction 2 h listed; choose gaps |
+| [Cisco Press Official Cert Guide](https://www.ciscopress.com/store/cisco-certified-support-technician-ccst-cybersecurity-9780138203924) | Paid; Shane Sexton/Raymond Lacoste, February 13, 2024, first edition, 384 pages; original-blueprint update program | No total study duration verified; allow additional practice and current-policy reading |
+| [Official Cert Guide on O'Reilly](https://www.oreilly.com/library/view/cisco-certified-support/9780138204006/) | Paid; automated fetch returned 403 | Earlier 11 h 43 min reading estimate could not be reverified |
+| [Pluralsight Information and Cyber Security Foundations](https://www.pluralsight.com/paths/information-and-cyber-security-foundations) | Paid/trial subject to Security library access; broad foundations, not a verified exam-specific path | 17 course and 17 lab cards total 38 h 22 min; header rounds to 38 h. Includes September 2026 additions; old 37 h figure replaced |
+| [MeasureUp CCST Cybersecurity practice test](https://www.measureup.com/practice-test-ccst-cisco-certified-support-technician-cybersecurity.html) | Paid; public listing 150 questions, April 2023 release, practice/certification modes | 3–6 h editorial diagnostic/review budget; question counts are not official exam weights |
+| This guide's workbook, eight proposed labs and 48 answered prompts | Public; workbook executed 40 checks; live/system labs pending | 14–22 h editorial practice budget, adjusted to evidence gaps |
+
+The MeasureUp listing divides its 150 practice questions 31/30/30/30/29 across domains; that is the provider's allocation. Its pass guarantees and equivalence to the real examination were not independently validated. Pluralsight's public cards include Linux AI-assisted analysis (September 4 course, September 24 lab) and a REST APIs/OAuth lab dated September 28, 2026; current titles and durations do not establish coverage of Cisco's whole blueprint or the quality of paid instruction.
+
+Use legitimate practice to explain mistakes and repeat evidence tasks. Reject recalled/live exam questions, answer-only banks and guaranteed-pass claims. Reconcile disputed material with primary documentation and the stated exam scope.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

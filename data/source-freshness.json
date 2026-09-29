@@ -4,6 +4,289 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-100160-deep-review",
+      "title": "100-160 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "100-160"
+      ],
+      "results": [
+        {
+          "exam_code": "100-160",
+          "vendor_id": "cisco",
+          "guide_path": "guides/100-160-cisco-certified-support-technician-cybersecurity.md",
+          "baseline_sha256": "23ab75bd8607dc0ee530541902aa3d4dbdc363da6614c715003bedf2216b4819",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Actual3pagePDF fullyread:23numbered4/5/6/4/4 plusallbullets,no weights/dateinvented;separate3pagetrainingPDFcopyright2025/footer7-24.50min125USD7languages. Objective8c759c20e7564e89bf453d83dd80b60b78716c3c06790073e531065e5d891418unchanged. Missinglife84e1a2f0130c85d7ef86641d9ecb774c70b90c1391fbfddbed3ec2b2b628693bexplicitlyinitializedpostunchanged. Renewal5years on/afterJuly15,2025,earliernonexpiring/noCE."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "TargetedNIST63B4password/phishingresistance,61r3lifecycle/recovery/authority,8387baselineintegrity;FIRSTCVSS/EPSS;MITRE/Lockheed/Diamondprimarymodeldefinitions;PythonHMACAPI.40actualoriginalchecks. SelectivePDF/docreading fullybounded innotes."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "FullApr3,2025NISTannouncement andr2withdrawalread;r3supersession separatedfromunchangedCiscoobjective5.4 oldersectionnumbers. DedicatedCisco currentrenewalpolicyverified;no futureexamchangeclaimed. NISTr2historicalTOCverified fromactual80pagePDF."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "FAQ120hpathvsPDF150htarget;pathshell;NetAcad6/22/2h. Pluralsight17courses17labs2302min38h22/header38h,Sept2026additions. CiscoPressFeb13,2024firstedition384pages;OReilly403old11h43unverified. MeasureUp150April2023practiceallocationnotweights;paidcontentnotread."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Resolvedlifetime/datedpolicy,olderNISTvsr3,complete23PDFscope,OTPvsphishingresistance,saltvscost,clock/event/receipt/duplicateevidence,hashvsprotectedbaseline,alertvsincident,modelswithoutattribution,contextualseverity/forecast andverifiedrecovery.48answers8concretelabs;Placeslearnlast."
+            }
+          },
+          "findings": [
+            {
+              "id": "100160-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "CCST lifetime validity depends on award date",
+              "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/policies.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-160"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Awards on/afterJuly15,2025lastfiveyears;olderawardsnonexpiring.",
+              "recommendation": "Replace unqualified lifetime wording and cite dedicated policy.",
+              "disposition": "applied",
+              "source_id": "cisco-exam-policies",
+              "resolution": "Replace unqualified lifetime wording and cite dedicated policy."
+            },
+            {
+              "id": "100160-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "CCST is excluded from Continuing Education renewal",
+              "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-160"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Entry-specific section lists qualifying exams and noCE.",
+              "recommendation": "Keep qualifying-exam renewal and active-period boundary explicit.",
+              "disposition": "applied",
+              "source_id": "cisco-recertification",
+              "resolution": "Keep qualifying-exam renewal and active-period boundary explicit."
+            },
+            {
+              "id": "100160-deep-3",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Detailed exam scope contains omissions absent from the brief map",
+              "url": "https://learningcontent.cisco.com/documents/CCST+Cybersecurity+Objecitve+Domain_Cisco_Final_wCiscoLogo.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-160"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "23numbered objectives include RADIUS,DMZ/honeypot,macOS/BYOD,forensicmodels andspecificNISTreference.",
+              "recommendation": "Fill supporting bullets, retain23mapping and separate training/targetcandidate guidance.",
+              "disposition": "applied",
+              "source_id": "cisco-ccst-cybersecurity-objectives-pdf",
+              "resolution": "Fill supporting bullets, retain23mapping and separate training/targetcandidate guidance."
+            },
+            {
+              "id": "100160-deep-4",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Current NIST incident guidance supersedes the exam-referenced structure",
+              "url": "https://www.nist.gov/news-events/news/2025/04/nist-revises-sp-800-61-incident-response-recommendations-and-considerations",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-160"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "April3,2025announcement makesr3final andsupersedesr2.",
+              "recommendation": "Explain currentCSF2relationship alongsidehistoricalexamreference without changingCisco scope.",
+              "disposition": "applied",
+              "source_id": "nist-ir-2025-announcement",
+              "resolution": "Explain currentCSF2relationship alongsidehistoricalexamreference without changingCisco scope."
+            },
+            {
+              "id": "100160-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Lessons learned and response authority are continuous concerns",
+              "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-160"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Lifecycle/Table1connectimprovementacrossfunctions;policysetsactionauthority.",
+              "recommendation": "Distinguishpolicy/plan/playbook,continuousimprovement andSIEM/SOARauthorizationlimits.",
+              "disposition": "applied",
+              "source_id": "nist-sp800-61r3-pdf",
+              "resolution": "Distinguishpolicy/plan/playbook,continuousimprovement andSIEM/SOARauthorizationlimits."
+            },
+            {
+              "id": "100160-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "MFA and phishing resistance are different properties",
+              "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-160"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "ManuallyenteredOTP can be relayed;verifier-binding provides resistance.",
+              "recommendation": "Addphishingresistance/enrollment/recovery/sessionlimits withoutclaiming allMFAequivalent.",
+              "disposition": "applied",
+              "source_id": "nist-800-63b-4",
+              "resolution": "Addphishingresistance/enrollment/recovery/sessionlimits withoutclaiming allMFAequivalent."
+            },
+            {
+              "id": "100160-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Salt alone is not a suitable password storage design",
+              "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-160"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Passwordverifierguidance requiresappropriatehashingscheme/cost anddefines scopedlength/composition/change rules.",
+              "recommendation": "Teach recordedworkfactor,blocklists/rate-limits andguidancescope;do not prescribe universalorganizationalpolicy.",
+              "disposition": "applied",
+              "source_id": "nist-800-63b-4",
+              "resolution": "Teach recordedworkfactor,blocklists/rate-limits andguidancescope;do not prescribe universalorganizationalpolicy."
+            },
+            {
+              "id": "100160-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A hash stored with editable evidence is not an independent baseline",
+              "url": "https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8387.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-160"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Preservationsections describe alterationbeforehashing andrewritingbothcontentanddigest.",
+              "recommendation": "Execute tamper/rewrite/truncation/keyholdercounterexamples andbound HMAC/trustedhead assumptions.",
+              "disposition": "applied",
+              "source_id": "nist-ir8387-pdf",
+              "resolution": "Execute tamper/rewrite/truncation/keyholdercounterexamples andbound HMAC/trustedhead assumptions."
+            },
+            {
+              "id": "100160-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Base severity omits deployment context",
+              "url": "https://www.first.org/cvss/v4.0/implementation-guide",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-160"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Threat/Environmentalrefinement andvectorversion preserve interpretation.",
+              "recommendation": "Requireapplicability/exposure/impact/controls andtraceableprioritization ratherthanscore-only sorting.",
+              "disposition": "applied",
+              "source_id": "first-cvss4-implementation",
+              "resolution": "Requireapplicability/exposure/impact/controls andtraceableprioritization ratherthanscore-only sorting."
+            },
+            {
+              "id": "100160-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Forecast probability is not percentile or a complete local risk score",
+              "url": "https://www.first.org/epss/faq",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-160"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "EPSS predicts observedexploitationover30days;KEV recordsobservedexploitation.",
+              "recommendation": "Separateprobability/rank/history/context;no liveCVEfeed usedorCISAcatalogentriesclaimed.",
+              "disposition": "applied",
+              "source_id": "first-epss-faq",
+              "resolution": "Separateprobability/rank/history/context;no liveCVEfeed usedorCISAcatalogentriesclaimed."
+            },
+            {
+              "id": "100160-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Framework mapping is not proof of attribution or detection",
+              "url": "https://attack.mitre.org/resources/faq/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-160"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Tactics,techniques,subtechniques andprocedures have distinctroles.",
+              "recommendation": "Addallthreeexammodels withsource/evidence/version/unknowns ratherthanunsupportedactorclaims.",
+              "disposition": "applied",
+              "source_id": "mitre-attack-faq",
+              "resolution": "Addallthreeexammodels withsource/evidence/version/unknowns ratherthanunsupportedactorclaims."
+            },
+            {
+              "id": "100160-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Recovery requires validating restoration assets and restored behavior",
+              "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-160"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "RC.RP03–05 requireintegrity/compromisechecks andserviceowner/operatingvalidation.",
+              "recommendation": "Separatebackupjobstatus,hashmatch,cleanstate andsuccessfulrecovery;makehands-onrestorelabexplicitlyproposed.",
+              "disposition": "applied",
+              "source_id": "nist-sp800-61r3-pdf",
+              "resolution": "Separatebackupjobstatus,hashmatch,cleanstate andsuccessfulrecovery;makehands-onrestorelabexplicitlyproposed."
+            }
+          ],
+          "notes": "Mapped 23 numbered objectives and supporting bullets from the actual three-page PDF. Corrected dated CCST renewal policy, reconciled the older exam-referenced incident structure with NIST revision3, added40executed evidence/timeline checks and48answered prompts, and updated catalog evidence. Objective digest unchanged; missing lifecycle baseline explicitly initialized and rechecked unchanged. Eight live/system labs and independent human review remain pending. Same-context AI review; human review pending. See docs/research/2026-09-29-100-160-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 12,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-100150-deep-review",
       "title": "100-150 complete guide and learning-content review",
       "rubric_version": 1,

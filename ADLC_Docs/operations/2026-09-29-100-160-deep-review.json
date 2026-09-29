@@ -1,0 +1,2000 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "100-160",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/100-160-cisco-certified-support-technician-cybersecurity.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "17e223026fae4ed8417e53f6104f6141046fd84251d3c6ddc514dd0c3c13ea33",
+  "guide_after_sha256": "ed1d773e7adfcad67b633f4fa8091dd4ff5325c3947ca20e7b8df83060352f68",
+  "prior_records": {
+    "exam": {
+      "code": "100-160",
+      "level": "beginner",
+      "vendor_id": "cisco",
+      "title": "Cisco Certified Support Technician Cybersecurity",
+      "status": "active",
+      "study_guide_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-cybersecurity.html",
+      "guide_path": "guides/100-160-cisco-certified-support-technician-cybersecurity.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite. Build defensive asset-threat-vulnerability-risk-control reasoning; identity/access and cryptography; TCP/IP, infrastructure, segmentation, firewall, wireless and monitoring fundamentals; endpoint baseline/log/update/malware procedure; authorized vulnerability lifecycle and contextual prioritization; continuity/recovery; evidence-preserving incident triage, escalation, response and documentation."
+    },
+    "review": {
+      "id": "100-160-2026-09-02-source-validation",
+      "exam_code": "100-160",
+      "guide_path": "guides/100-160-cisco-certified-support-technician-cybersecurity.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/100-160-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8c759c20e7564e89bf453d83dd80b60b78716c3c06790073e531065e5d891418",
+      "objective_coverage": [
+        {
+          "objective_group": "Security principles",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network security",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 4 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Endpoint security",
+          "guide_sections": [
+            "Section 3",
+            "Scenario 2",
+            "Labs 5, 7 and 8"
+          ]
+        },
+        {
+          "objective_group": "Vulnerability assessment and risk management",
+          "guide_sections": [
+            "Section 4",
+            "Scenario 3",
+            "Labs 1, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Incident handling",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 9,
+        "reachable": 8,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All five public work areas and all 23 first-party exam-aligned training objectives are mapped through assets/threats/risk/controls, identity/crypto, network defense, endpoint baseline/update/malware procedure, vulnerability lifecycle/continuity and evidence-preserving incident handling. Three scenarios, eight authorized labs and 36 checks are included. No stable public domain weights are invented. Eight links are reachable and O'Reilly is automation-blocked; none are broken."
+    },
+    "sources": [
+      {
+        "id": "cisco-ccst-faq",
+        "title": "Cisco Certified Support Technician FAQ",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician/faq.html",
+        "publisher": "Cisco",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "100-150",
+          "100-160"
+        ],
+        "notes": "First-party audience, free training, approximately 70-hour networking and 120-hour cybersecurity paths, and lifetime certification/badge policy source. September 29 100-150 deep review: Targeted training/duration/badge/recertification sections read including conflicting undated lifetime answers.70hfreepath;datedJuly15,2025fiveyear policy corroborated by dedicated policies. No legislative claim adopted or legal interpretation attempted. See docs/research/2026-09-29-100-150-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "cisco-netacad-catalog",
+        "title": "Cisco Networking Academy",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+        "publisher": "Cisco",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "100-150",
+          "100-160",
+          "200-301"
+        ],
+        "notes": "First-party course and career-path catalog, including networking, cybersecurity and Packet Tracer routes from entry-level through CCNA preparation. September 29 100-150 deep review: Completepubliccatalogread:NetworkingBasics22h/PacketTracerintro2h;selfpacedfree. No authenticated lessons/download. See docs/research/2026-09-29-100-150-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "cisco-100-160-exam",
+        "title": "100-160 CCST Cybersecurity exam",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-cybersecurity.html",
+        "publisher": "Cisco",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "100-160"
+        ],
+        "notes": "Canonical current exam identity, security/risk/incident scope, languages, 50-minute duration, USD 125 price and official preparation route; monitored by the Cisco adapter."
+      },
+      {
+        "id": "cisco-100-160-topics",
+        "title": "CCST Cybersecurity detailed exam topics",
+        "url": "https://learningnetwork.cisco.com/s/ccst-cybersecurity-exam-topics",
+        "publisher": "Cisco Learning Network",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "100-160"
+        ],
+        "notes": "Canonical detailed topic interface across principles, network/endpoint security, vulnerability/risk and incident handling. JavaScript rendering may limit automated text extraction."
+      },
+      {
+        "id": "cisco-100-160-training-page",
+        "title": "Cisco Certified Support Technician Cybersecurity training",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccst-cybersecurity.html",
+        "publisher": "Cisco",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "100-160"
+        ],
+        "notes": "First-party exam-aligned page with 23 detailed objectives and a six-part training outline."
+      },
+      {
+        "id": "cisco-100-160-training-pdf",
+        "title": "CCST Cybersecurity training overview",
+        "url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-cybersecurity.pdf",
+        "publisher": "Cisco",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "100-160"
+        ],
+        "notes": "Three-page Cisco Public overview carrying the objectives, outline and exam description."
+      },
+      {
+        "id": "cisco-junior-cybersecurity-path",
+        "title": "Junior Cybersecurity Analyst Career Path",
+        "url": "https://skillsforall.com/career-path/cybersecurity?courseLang=en-US&userLang=en-US",
+        "publisher": "Cisco Networking Academy / Skills for All",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "100-160"
+        ],
+        "notes": "Primary free self-paced path; Cisco's FAQ states approximately 120 hours. Page access can be account/automation restricted."
+      },
+      {
+        "id": "cisco-100-160-oreilly-official",
+        "title": "Cisco Certified Support Technician Cybersecurity 100-160 Official Cert Guide",
+        "url": "https://www.oreilly.com/library/view/cisco-certified-support/9780138204006/",
+        "publisher": "O'Reilly / Cisco Press / Shane Sexton and Raymond Lacoste",
+        "authority_class": 2,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "100-160"
+        ],
+        "notes": "March 2024 Cisco-approved 400-page guide; O'Reilly estimates 11h43m reading and describes Pearson practice and an update program. Verify against live topics."
+      },
+      {
+        "id": "pluralsight-cybersecurity-foundations",
+        "title": "Information and Cyber Security Foundations",
+        "url": "https://www.pluralsight.com/paths/information-and-cyber-security-foundations",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "100-160"
+        ],
+        "notes": "Broad 37-hour, 16-course/15-lab foundation across Windows, Linux, networking and applications; useful hands-on supplement, not an exam-specific path."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "467c7d3ed17bf02a0385638b9ec68887e2f901be81959d649570791fb91cf89c",
+      "guide_sections": [
+        "Section 1",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "8f5034b3ef1309365fd6653c92b65cd54cfe84387cae5553e44dec7bc59cb324",
+      "guide_sections": [
+        "Section 1",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "10645ed691f4f1156eea8455ed076f5f9b25505147a8b37aa4387cd66097298d",
+      "guide_sections": [
+        "Section 1",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "b206763145488e786391fd32ac8b469288a327f43d029dec317e11230c29b12f",
+      "guide_sections": [
+        "Section 1",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "cfe8df528973609572c9ec7a6cf7b622cac46f97e7cf04f50d913ed1811b24af",
+      "guide_sections": [
+        "Section 2",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "61854f511df654a13c64774e76fb516d2e4dc701ceebd251b6da85de04a8a7df",
+      "guide_sections": [
+        "Section 2",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "e68c700bcb9281663559733a2e1bec3213e4f2c3db147b9548ad508de54ef93f",
+      "guide_sections": [
+        "Section 2",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "f886a885618398a75732165ea293f44ae4139562164c4d953ddcd2162140aed8",
+      "guide_sections": [
+        "Section 2",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "a1306b223f0c2c23f280fd77d723f18cfdef8847e83aa4dbe512ea0c572f0265",
+      "guide_sections": [
+        "Section 2",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "fb4acecc8a67ad3481919d421fef419a62930c106af9f092fb2f323b1f54d79c",
+      "guide_sections": [
+        "Section 3",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "1ff595d56562365f290f950402450a5430935272b0068c8d5a051101be820497",
+      "guide_sections": [
+        "Section 3",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "62e572a4dbe730d75d3ceaed8548c3bbebc6660e7713639e40b2da8e209d13bf",
+      "guide_sections": [
+        "Section 3",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "9c14605e85f4e4d237cabb25c3776633a1422baa12723f27f89d50d00b14e033",
+      "guide_sections": [
+        "Section 3",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "a5586cab367b8e1314ecd7406e24c720e922d4ecb7af3e9981b74009cdc3b837",
+      "guide_sections": [
+        "Section 3",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "c787d58e1c63f7ab8ea11307f29dc940580eea88aea6a9dd109876c0b735d80d",
+      "guide_sections": [
+        "Section 3",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "e65be78d1f560b7d254e30dfa088f9200008cdbcaa65f89c3db4834bc89a667d",
+      "guide_sections": [
+        "Section 4",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "6dea7311f3e381e89dd2cc891a9f0465e69d13af2dc307acbe10897f1d2eeb0e",
+      "guide_sections": [
+        "Section 4",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "0a54527da8b41911807bbd2dd4d42e4b3df4121d24024415dc300eb54359e965",
+      "guide_sections": [
+        "Section 4",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "bbcc0e22116401e11709e24cd37662bf339f45effe6fdb2b190bc275ed89b812",
+      "guide_sections": [
+        "Section 4",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "ebe27349a4e868c6faf19532eac94c3f13b021f4f52b1397fbc37da4a8f53d8d",
+      "guide_sections": [
+        "Section 5",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "ae69e055764720a55d7f4541cfb4ef43257d968e3b9f6e832f32c02f0efc261f",
+      "guide_sections": [
+        "Section 5",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "d49930c573b8cc97b81eb5d1f40d41d3e0257dff6024008ade0709817cb9746b",
+      "guide_sections": [
+        "Section 5",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "29acff40d7ea35acb1eac74a41302dbd683a6edb1ed39ba93173b3d879213a8f",
+      "guide_sections": [
+        "Section 5",
+        "Hands-on evidence labs",
+        "Executed local evidence workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "100-160"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "100-160",
+        "title": "Cisco Certified Support Technician Cybersecurity",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-cybersecurity.html",
+        "guide_path": "guides/100-160-cisco-certified-support-technician-cybersecurity.md",
+        "snapshot_path": "data\\objective-snapshots\\100-160-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\100-160-official-status.json",
+        "previous_sha256": "8c759c20e7564e89bf453d83dd80b60b78716c3c06790073e531065e5d891418",
+        "current_sha256": "8c759c20e7564e89bf453d83dd80b60b78716c3c06790073e531065e5d891418",
+        "previous_status_sha256": null,
+        "current_status_sha256": "84e1a2f0130c85d7ef86641d9ecb774c70b90c1391fbfddbed3ec2b2b628693b",
+        "official_status": {
+          "skills_versions": [
+            "Languages: English, Arabic, Chinese, Spanish, French, Japanese, Portuguese",
+            "Duration: 50 minutes",
+            "Price: $US125"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 26,
+    "reachable": 24,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "cisco-ccst-faq",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician/faq.html",
+      "checked_at": "2026-09-29T09:13:54.770940+00:00",
+      "health": {
+        "id": "cisco-ccst-faq",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician/faq.html",
+        "checked_at": "2026-09-29T09:13:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician/faq.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "CCST FAQ",
+        "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician/faq.html",
+        "duration_signals": [
+          "50 minutes",
+          "approximately 120 hours",
+          "approximately 70 hours"
+        ],
+        "signal_fingerprint": "914931b5170fae78e9b06400320036f07f1cb6e21c09026fc8903ccf432fc442",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician/faq.html",
+      "sha256": "27c29221aab8df4a6bccdbe5b96b2ba489dc749833fced07d0cacf0e2d536816",
+      "text_characters": 13948
+    },
+    {
+      "id": "cisco-netacad-catalog",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+      "checked_at": "2026-09-29T09:13:54.771557+00:00",
+      "health": {
+        "id": "cisco-netacad-catalog",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+        "checked_at": "2026-09-29T09:13:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Cisco Networking Academy",
+        "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "c6be3bf4fdb3ae942b7c1ad62efb24023fb474639af6cbd90c332fe6af0e08ae",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+      "sha256": "8e760a2213f6ae325c73ddb89702bfb05959491e26a27451cc473480e5840e5a",
+      "text_characters": 4150
+    },
+    {
+      "id": "cisco-100-160-exam",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-cybersecurity.html",
+      "checked_at": "2026-09-29T09:13:54.771970+00:00",
+      "health": {
+        "id": "cisco-100-160-exam",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-cybersecurity.html",
+        "checked_at": "2026-09-29T09:13:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-cybersecurity.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Cisco Certified Support Technician Cybersecurity",
+        "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-cybersecurity.html",
+        "duration_signals": [
+          "50 minutes"
+        ],
+        "signal_fingerprint": "6146c64048a7454ee427de992ea4a3adba1cad94baa76bd6b7e0964bd692f1a3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-cybersecurity.html",
+      "sha256": "9414e5fb27d0165ff2fcaa96af686bff9ddd2d150e576035ae2eb0cd8a9b79e6",
+      "text_characters": 2458
+    },
+    {
+      "id": "cisco-100-160-topics",
+      "url": "https://learningnetwork.cisco.com/s/ccst-cybersecurity-exam-topics",
+      "checked_at": "2026-09-29T09:13:55.276567+00:00",
+      "health": {
+        "id": "cisco-100-160-topics",
+        "url": "https://learningnetwork.cisco.com/s/ccst-cybersecurity-exam-topics",
+        "checked_at": "2026-09-29T09:13:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learningnetwork.cisco.com/s/ccst-cybersecurity-exam-topics",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Cisco Learning Network",
+        "canonical_url": "https://learningnetwork.cisco.com/s/ccst-cybersecurity-exam-topics",
+        "duration_signals": [],
+        "signal_fingerprint": "8a4e212f831f7aed4780435cba4f02ceb6bfb76806b0f26209a1deec283e0c46",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learningnetwork.cisco.com/s/ccst-cybersecurity-exam-topics",
+      "sha256": "92adbc93c9783f3173fb70850540d39e9550c69d6ba6090b71ddab7383c4f32d",
+      "text_characters": 68
+    },
+    {
+      "id": "cisco-100-160-training-page",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccst-cybersecurity.html",
+      "checked_at": "2026-09-29T09:13:55.307575+00:00",
+      "health": {
+        "id": "cisco-100-160-training-page",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccst-cybersecurity.html",
+        "checked_at": "2026-09-29T09:13:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccst-cybersecurity.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Cisco Certified Support Technician (CCST) Cybersecurity",
+        "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccst-cybersecurity.html",
+        "duration_signals": [],
+        "signal_fingerprint": "db019a19b4d87d06711aa65d7e0e8258bc5a755105978159831ceaba5d574f1b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccst-cybersecurity.html",
+      "sha256": "813a28cfd46d75235b535dfc5047a9de2d401f08cde7d71d9c7b9000956c16de",
+      "text_characters": 3433
+    },
+    {
+      "id": "cisco-100-160-training-pdf",
+      "url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-cybersecurity.pdf",
+      "checked_at": "2026-09-29T09:17:08.345216+00:00",
+      "health": {
+        "id": "cisco-100-160-training-pdf",
+        "url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-cybersecurity.pdf",
+        "checked_at": "2026-09-29T09:17:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-cybersecurity.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-cybersecurity.pdf",
+      "sha256": "ff26a06e11c57589162cb06689678a58f640d04f91d4bc9a58153e3e5144aab6",
+      "bytes": 152111,
+      "pdf_pages": 3,
+      "text_characters": 3665
+    },
+    {
+      "id": "cisco-junior-cybersecurity-path",
+      "url": "https://skillsforall.com/career-path/cybersecurity?courseLang=en-US&userLang=en-US",
+      "checked_at": "2026-09-29T09:13:55.658732+00:00",
+      "health": {
+        "id": "cisco-junior-cybersecurity-path",
+        "url": "https://skillsforall.com/career-path/cybersecurity?courseLang=en-US&userLang=en-US",
+        "checked_at": "2026-09-29T09:13:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.netacad.com/career-paths/cybersecurity?courseLang=en-US&userLang=en-US",
+        "content_type": "text/html",
+        "page_title": "Junior Cybersecurity Analyst",
+        "canonical_url": "https://www.netacad.com/career-paths/cybersecurity?courseLang=en-US",
+        "duration_signals": [],
+        "signal_fingerprint": "8511b0aed3c26b2402c14ead9de6b8f097455908c002ad8583b55a2fb5090ac6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.netacad.com/career-paths/cybersecurity?courseLang=en-US&userLang=en-US",
+      "sha256": "64138055e198220c25a2aa663fa0d1e6c8e610d248016cb504eeb64e3aa30f27",
+      "text_characters": 59
+    },
+    {
+      "id": "cisco-100-160-oreilly-official",
+      "url": "https://www.oreilly.com/library/view/cisco-certified-support/9780138204006/",
+      "checked_at": "2026-09-29T09:13:55.894056+00:00",
+      "health": {
+        "id": "cisco-100-160-oreilly-official",
+        "url": "https://www.oreilly.com/library/view/cisco-certified-support/9780138204006/",
+        "checked_at": "2026-09-29T09:13:55+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/cisco-certified-support/9780138204006/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "pluralsight-cybersecurity-foundations",
+      "url": "https://www.pluralsight.com/paths/information-and-cyber-security-foundations",
+      "checked_at": "2026-09-29T09:13:56.091857+00:00",
+      "health": {
+        "id": "pluralsight-cybersecurity-foundations",
+        "url": "https://www.pluralsight.com/paths/information-and-cyber-security-foundations",
+        "checked_at": "2026-09-29T09:13:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/information-and-cyber-security-foundations",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Information and Cyber Security Foundations",
+        "canonical_url": "https://www.pluralsight.com/paths/information-and-cyber-security-foundations",
+        "duration_signals": [
+          "10 minutes",
+          "38 Hours"
+        ],
+        "signal_fingerprint": "dab54cbb7f206661296176a0d897c262c6b3fb03c7ff70172c1d59d440275e25",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/information-and-cyber-security-foundations",
+      "sha256": "5b5a092c8d0d9aa3e75fe60980943c9f55c7f865bbe4a59645f8acb2394602ed",
+      "text_characters": 8609
+    },
+    {
+      "id": "cisco-ccst-cybersecurity-objectives-pdf",
+      "url": "https://learningcontent.cisco.com/documents/CCST+Cybersecurity+Objecitve+Domain_Cisco_Final_wCiscoLogo.pdf",
+      "checked_at": "2026-09-29T09:17:08.806838+00:00",
+      "health": {
+        "id": "cisco-ccst-cybersecurity-objectives-pdf",
+        "url": "https://learningcontent.cisco.com/documents/CCST+Cybersecurity+Objecitve+Domain_Cisco_Final_wCiscoLogo.pdf",
+        "checked_at": "2026-09-29T09:17:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learningcontent.cisco.com/documents/CCST+Cybersecurity+Objecitve+Domain_Cisco_Final_wCiscoLogo.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learningcontent.cisco.com/documents/CCST+Cybersecurity+Objecitve+Domain_Cisco_Final_wCiscoLogo.pdf",
+      "sha256": "c7ade1d9f64d4f9cbf7a15d68fe33fe889b01980d47f6a41f2847c66ebde8eca",
+      "bytes": 109188,
+      "pdf_pages": 3,
+      "text_characters": 5755
+    },
+    {
+      "id": "nist-sp800-61r3-pdf",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "checked_at": "2026-09-29T09:17:11.744916+00:00",
+      "health": {
+        "id": "nist-sp800-61r3-pdf",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "checked_at": "2026-09-29T09:17:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "sha256": "e5593d6bb85daecec7e8d9549400c7b3473bcc3f06e469c82218073afa7fba2d",
+      "bytes": 1040566,
+      "pdf_pages": 48,
+      "text_characters": 107538
+    },
+    {
+      "id": "cisco-exam-policies",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/policies.html",
+      "checked_at": "2026-09-29T09:17:24.219434+00:00",
+      "health": {
+        "id": "cisco-exam-policies",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/policies.html",
+        "checked_at": "2026-09-29T09:17:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/policies.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Exam, Testing, and Certification Policies",
+        "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/policies.html",
+        "duration_signals": [
+          "10 minutes",
+          "48 hours"
+        ],
+        "signal_fingerprint": "0f36e6ecb04f5a6e96597cc47d50e98f4cdf067090ff4dc51896defdf69f5323",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/policies.html",
+      "sha256": "7292db1a31e788d89e08e69914922e99ffcf51ab41c135f39bef7d9b1dbcbc3b",
+      "text_characters": 38086
+    },
+    {
+      "id": "cisco-recertification",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+      "checked_at": "2026-09-29T09:17:24.220029+00:00",
+      "health": {
+        "id": "cisco-recertification",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+        "checked_at": "2026-09-29T09:17:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Recertification Policy",
+        "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+        "duration_signals": [
+          "101",
+          "48 hours"
+        ],
+        "signal_fingerprint": "9fb89f31fd657cdbb10c6e5e66c233c2d4ba480a35bca373edae6ad05c7f8808",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+      "sha256": "d0da0cfd25e03f6553428363fab7207670292c1b2fec6fe212c5c6dd3e142db6",
+      "text_characters": 7250
+    },
+    {
+      "id": "cisco-ccst-cybersecurity-book",
+      "url": "https://www.ciscopress.com/store/cisco-certified-support-technician-ccst-cybersecurity-9780138203924",
+      "checked_at": "2026-09-29T09:17:24.220339+00:00",
+      "health": {
+        "id": "cisco-ccst-cybersecurity-book",
+        "url": "https://www.ciscopress.com/store/cisco-certified-support-technician-ccst-cybersecurity-9780138203924",
+        "checked_at": "2026-09-29T09:17:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.ciscopress.com/store/cisco-certified-support-technician-ccst-cybersecurity-9780138203924",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Cisco Certified Support Technician (CCST) Cybersecurity 100-160 Official Cert Guide | Cisco Press",
+        "canonical_url": "https://www.ciscopress.com/store/cisco-certified-support-technician-ccst-cybersecurity-9780138203924",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "c2b51e8c4daca6009a2d142ff55d8e6b2053ea613469a4e00dd5509c511ce970",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.ciscopress.com/store/cisco-certified-support-technician-ccst-cybersecurity-9780138203924",
+      "sha256": "5de21f83ce7e35b6fb6d0fc31136f42d208093b657668ec5c16ba3352de45e97",
+      "text_characters": 22784
+    },
+    {
+      "id": "measureup-ccst-cybersecurity",
+      "url": "https://www.measureup.com/practice-test-ccst-cisco-certified-support-technician-cybersecurity.html",
+      "checked_at": "2026-09-29T09:17:24.730524+00:00",
+      "health": {
+        "id": "measureup-ccst-cybersecurity",
+        "url": "https://www.measureup.com/practice-test-ccst-cisco-certified-support-technician-cybersecurity.html",
+        "checked_at": "2026-09-29T09:17:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/practice-test-ccst-cisco-certified-support-technician-cybersecurity.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Cisco Practice Test CCST: Cisco Certified Support Technician Cybersecurity",
+        "canonical_url": "https://www.measureup.com/practice-test-ccst-cisco-certified-support-technician-cybersecurity.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e489b3098920d030f367ef9bb768ec0a1c38ccd8c6b5e78bd6283a1084559e52",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/practice-test-ccst-cisco-certified-support-technician-cybersecurity.html",
+      "sha256": "60526a2af097c339f95823b86d54083de5f43bbd708009a3c8c5f790659c8654",
+      "text_characters": 15769
+    },
+    {
+      "id": "nist-ir-2025-announcement",
+      "url": "https://www.nist.gov/news-events/news/2025/04/nist-revises-sp-800-61-incident-response-recommendations-and-considerations",
+      "checked_at": "2026-09-29T09:17:24.800269+00:00",
+      "health": {
+        "id": "nist-ir-2025-announcement",
+        "url": "https://www.nist.gov/news-events/news/2025/04/nist-revises-sp-800-61-incident-response-recommendations-and-considerations",
+        "checked_at": "2026-09-29T09:17:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nist.gov/news-events/news/2025/04/nist-revises-sp-800-61-incident-response-recommendations-and-considerations",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "NIST Revises SP 800-61: Incident Response Recommendations and Considerations for Cybersecurity Risk Management",
+        "canonical_url": "https://www.nist.gov/news-events/news/2025/04/nist-revises-sp-800-61-incident-response-recommendations-and-considerations",
+        "duration_signals": [],
+        "signal_fingerprint": "2242f5d7d41b39b3d3f59f1bdb73bceac719c8a1ef55bf1ec09e9260d5e178d6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nist.gov/news-events/news/2025/04/nist-revises-sp-800-61-incident-response-recommendations-and-considerations",
+      "sha256": "de6c069a42a9c3f659742f4dd4e9c5e920a8eaa79ce936a6c9e98809a8ec4fd3",
+      "text_characters": 4510
+    },
+    {
+      "id": "nist-800-63b-4",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "checked_at": "2026-09-29T09:17:25.381830+00:00",
+      "health": {
+        "id": "nist-800-63b-4",
+        "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+        "checked_at": "2026-09-29T09:17:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+        "content_type": "text/html",
+        "page_title": "NIST Special Publication 800-63B",
+        "canonical_url": "/800-63-4/sp800-63b.html",
+        "duration_signals": [
+          "1 hour",
+          "10 minutes",
+          "12 hours",
+          "15 minutes",
+          "24 hours",
+          "24 hours and 10 minutes"
+        ],
+        "signal_fingerprint": "5ddbbdf4604797a1f84ba2134130ae1d3b228955b507c77d2c1b48e269f67805",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "sha256": "63fdeb472b31c943346ac349644b4b3162d71b517b3be89db3966f8b85e43ee5",
+      "text_characters": 253608
+    },
+    {
+      "id": "cisa-kev-catalog",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "checked_at": "2026-09-29T09:20:35.064360+00:00",
+      "health": {
+        "id": "cisa-kev-catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+        "checked_at": "2026-09-29T09:20:35+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "first-cvss4-implementation",
+      "url": "https://www.first.org/cvss/v4.0/implementation-guide",
+      "checked_at": "2026-09-29T09:17:26.649133+00:00",
+      "health": {
+        "id": "first-cvss4-implementation",
+        "url": "https://www.first.org/cvss/v4.0/implementation-guide",
+        "checked_at": "2026-09-29T09:17:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.first.org/cvss/v4.0/implementation-guide",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "CVSS v4.0 Consumer Implementation Guide",
+        "canonical_url": "https://www.first.org/cvss/v4.0/implementation-guide",
+        "duration_signals": [],
+        "signal_fingerprint": "959912e2481597fa5187fbaf42b9770ceb863b3715491c0330e888951b4be903",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.first.org/cvss/v4.0/implementation-guide",
+      "sha256": "8cec4139e07a1400cbecb9a5486f4265cd83257c1c1984f35613f8427613a2af",
+      "text_characters": 64797
+    },
+    {
+      "id": "first-epss-model",
+      "url": "https://www.first.org/epss/model",
+      "checked_at": "2026-09-29T09:17:27.164781+00:00",
+      "health": {
+        "id": "first-epss-model",
+        "url": "https://www.first.org/epss/model",
+        "checked_at": "2026-09-29T09:17:27+00:00",
+        "status": "missing",
+        "http_status": 404,
+        "final_url": "https://www.first.org/epss/model",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Not Found"
+      }
+    },
+    {
+      "id": "nist-evidence-preservation",
+      "url": "https://www.nist.gov/publications/digital-evidence-preservation-considerations-evidence-handlers",
+      "checked_at": "2026-09-29T09:19:33.373639+00:00",
+      "health": {
+        "id": "nist-evidence-preservation",
+        "url": "https://www.nist.gov/publications/digital-evidence-preservation-considerations-evidence-handlers",
+        "checked_at": "2026-09-29T09:19:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nist.gov/publications/digital-evidence-preservation-considerations-evidence-handlers",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Digital Evidence Preservation: Considerations for Evidence Handlers",
+        "canonical_url": "https://www.nist.gov/publications/digital-evidence-preservation-considerations-evidence-handlers",
+        "duration_signals": [],
+        "signal_fingerprint": "05b18d544b3973327cf6c9ec2d20e163ee7c47e0662f16e7be30154f7fc0926b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nist.gov/publications/digital-evidence-preservation-considerations-evidence-handlers",
+      "sha256": "d6df6ecab32eacff42aced44217aef9052b61ed8248101be192f42e8ab59ba0f",
+      "text_characters": 4741
+    },
+    {
+      "id": "python-hmac",
+      "url": "https://docs.python.org/3/library/hmac.html",
+      "checked_at": "2026-09-29T09:17:27.442441+00:00",
+      "health": {
+        "id": "python-hmac",
+        "url": "https://docs.python.org/3/library/hmac.html",
+        "checked_at": "2026-09-29T09:17:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3/library/hmac.html",
+        "content_type": "text/html",
+        "page_title": "hmac — Keyed-Hashing for Message Authentication",
+        "canonical_url": "https://docs.python.org/3/library/hmac.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6d0e4422fed0962a35178f2b70cac87f4275ed23dc25cc136c3866112a146fc6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3/library/hmac.html",
+      "sha256": "810d75f09540a1d7799bfc7c7d33f7c49f26730ab43b01162fb8ebc2d4ebb6ff",
+      "text_characters": 5443
+    },
+    {
+      "id": "first-epss-faq",
+      "url": "https://www.first.org/epss/faq",
+      "checked_at": "2026-09-29T09:19:33.373058+00:00",
+      "health": {
+        "id": "first-epss-faq",
+        "url": "https://www.first.org/epss/faq",
+        "checked_at": "2026-09-29T09:19:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.first.org/epss/faq",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "EPSS Frequently Asked Questions",
+        "canonical_url": "https://www.first.org/epss/faq",
+        "duration_signals": [],
+        "signal_fingerprint": "c44aa59f78e8814cff7edead8ada12554b03a97b6e8ea2a8037d2c14e8ae662e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.first.org/epss/faq",
+      "sha256": "20b6a0331909c6f62787c9e6a9f913bc80f4a4bc5f0917b05d1e6d830decc18e",
+      "text_characters": 27188
+    },
+    {
+      "id": "nist-sp800-61r2-retired",
+      "url": "https://csrc.nist.gov/pubs/sp/800/61/r2/final",
+      "checked_at": "2026-09-29T09:19:33.374084+00:00",
+      "health": {
+        "id": "nist-sp800-61r2-retired",
+        "url": "https://csrc.nist.gov/pubs/sp/800/61/r2/final",
+        "checked_at": "2026-09-29T09:19:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://csrc.nist.gov/pubs/sp/800/61/r2/final",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SP 800-61 Rev. 2, Computer Security Incident Handling Guide | CSRCLock",
+        "canonical_url": "https://csrc.nist.gov/pubs/sp/800/61/r2/final",
+        "duration_signals": [],
+        "signal_fingerprint": "d813d2de354ba3ad385065ca0ae2f9f097a4ab4a26a724ab1b5dce73f1ac4d6e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://csrc.nist.gov/pubs/sp/800/61/r2/final",
+      "sha256": "5bb91dd94e0a2eab8f9123be3b1ffb36568809e0c62103201509809418b3ed85",
+      "text_characters": 4747
+    },
+    {
+      "id": "mitre-attack-faq",
+      "url": "https://attack.mitre.org/resources/faq/",
+      "checked_at": "2026-09-29T09:19:33.885182+00:00",
+      "health": {
+        "id": "mitre-attack-faq",
+        "url": "https://attack.mitre.org/resources/faq/",
+        "checked_at": "2026-09-29T09:19:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://attack.mitre.org/resources/faq/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "FAQ | MITRE ATT&CK®",
+        "canonical_url": "https://attack.mitre.org/resources/faq/",
+        "duration_signals": [],
+        "signal_fingerprint": "92234a1fcff012da9ff2afb7bce83f410146bf56e4cf47cc6e72e55e8b15972f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://attack.mitre.org/resources/faq/",
+      "sha256": "a43a9fa8530fa48e5a3952c8df443cf5423292aa0c41e35cd1860931f50a2b67",
+      "text_characters": 9707
+    },
+    {
+      "id": "lockheed-kill-chain",
+      "url": "https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html",
+      "checked_at": "2026-09-29T09:19:33.908105+00:00",
+      "health": {
+        "id": "lockheed-kill-chain",
+        "url": "https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html",
+        "checked_at": "2026-09-29T09:19:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Cyber Kill Chain®",
+        "canonical_url": "https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html",
+        "duration_signals": [],
+        "signal_fingerprint": "79a93093572bc3dba7006b4e4b3b6087c380bd57fa25e7bf7ffc96678ed12684",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html",
+      "sha256": "88840be526b3fb065980a1fe1be0aaf74ea5ada9ea9a81f4fd2f0c44cc3ea4d6",
+      "text_characters": 4440
+    },
+    {
+      "id": "diamond-model-authors",
+      "url": "https://www.threatintel.academy/diamond/",
+      "checked_at": "2026-09-29T09:19:34.126222+00:00",
+      "health": {
+        "id": "diamond-model-authors",
+        "url": "https://www.threatintel.academy/diamond/",
+        "checked_at": "2026-09-29T09:19:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.threatintel.academy/diamond/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Diamond Model of Intrusion Analysis",
+        "canonical_url": "https://www.threatintel.academy/diamond/",
+        "duration_signals": [],
+        "signal_fingerprint": "a7d7fe3ceb0ced57f705837156ce4f5c57e445d0d47439a57fd0fce4713ad86b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.threatintel.academy/diamond/",
+      "sha256": "ec162c296d2a4f7a31f67888b8f8a64c3bb30f7c6ae1f51dcf7d8a52f9d9b48a",
+      "text_characters": 3788
+    },
+    {
+      "id": "nist-ir8387-pdf",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8387.pdf",
+      "checked_at": "2026-09-29T09:19:39.160422+00:00",
+      "health": {
+        "id": "nist-ir8387-pdf",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8387.pdf",
+        "checked_at": "2026-09-29T09:19:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8387.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8387.pdf",
+      "sha256": "1d5c5127214173cde8054bd999102dbbd5f1a1a8c21120d637b2c15c6b081e44",
+      "bytes": 621335,
+      "pdf_pages": 22,
+      "text_characters": 52888
+    },
+    {
+      "id": "lockheed-kill-chain-guide",
+      "url": "https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/Gaining_the_Advantage_Cyber_Kill_Chain.pdf",
+      "checked_at": "2026-09-29T09:23:03.437860+00:00",
+      "health": {
+        "id": "lockheed-kill-chain-guide",
+        "url": "https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/Gaining_the_Advantage_Cyber_Kill_Chain.pdf",
+        "checked_at": "2026-09-29T09:23:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/Gaining_the_Advantage_Cyber_Kill_Chain.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/Gaining_the_Advantage_Cyber_Kill_Chain.pdf",
+      "sha256": "839914098aac5100cd95661993d8e36c4bbd2e895b789a2624fbf344c7802d66",
+      "bytes": 306409,
+      "pdf_pages": 13,
+      "text_characters": 11951
+    },
+    {
+      "id": "nist-sp800-61r2-pdf",
+      "url": "https://doi.org/10.6028/NIST.SP.800-61r2",
+      "checked_at": "2026-09-29T09:28:11.466941+00:00",
+      "health": {
+        "id": "nist-sp800-61r2-pdf",
+        "url": "https://doi.org/10.6028/NIST.SP.800-61r2",
+        "checked_at": "2026-09-29T09:28:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf",
+      "sha256": "b1c5ead0632dcfb979c59d8c462b094ad2465ddaf62d5c246289d6d9b4419df1",
+      "bytes": 1744473,
+      "pdf_pages": 80,
+      "text_characters": 231571
+    },
+    {
+      "id": "rfc-9114",
+      "url": "https://www.rfc-editor.org/rfc/rfc9114.html",
+      "checked_at": "2026-09-29T09:28:11.822373+00:00",
+      "health": {
+        "id": "rfc-9114",
+        "url": "https://www.rfc-editor.org/rfc/rfc9114.html",
+        "checked_at": "2026-09-29T09:28:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc9114.html",
+        "content_type": "text/html",
+        "page_title": "RFC 9114: HTTP/3",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc9114.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e2c076a6f49c1cd0a08f4fb9e09a2359780c34fff7322058f3b93442a8cf1d3c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9114.html",
+      "sha256": "9295268c32dacf5298a199016f95d75a7c649f83450eb38905c12de6cd12cd66",
+      "text_characters": 133796
+    }
+  ],
+  "added_source_ids": [
+    "cisco-ccst-cybersecurity-objectives-pdf",
+    "cisco-ccst-cybersecurity-book",
+    "measureup-ccst-cybersecurity",
+    "nist-ir-2025-announcement",
+    "python-hmac",
+    "first-epss-faq",
+    "nist-evidence-preservation",
+    "nist-ir8387-pdf",
+    "nist-sp800-61r2-retired",
+    "mitre-attack-faq",
+    "lockheed-kill-chain",
+    "diamond-model-authors",
+    "lockheed-kill-chain-guide",
+    "nist-sp800-61r2-pdf"
+  ],
+  "findings": [
+    {
+      "id": "100160-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "CCST lifetime validity depends on award date",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/policies.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-160"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Awards on/afterJuly15,2025lastfiveyears;olderawardsnonexpiring.",
+      "recommendation": "Replace unqualified lifetime wording and cite dedicated policy.",
+      "disposition": "applied",
+      "source_id": "cisco-exam-policies",
+      "resolution": "Replace unqualified lifetime wording and cite dedicated policy."
+    },
+    {
+      "id": "100160-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "CCST is excluded from Continuing Education renewal",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-160"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Entry-specific section lists qualifying exams and noCE.",
+      "recommendation": "Keep qualifying-exam renewal and active-period boundary explicit.",
+      "disposition": "applied",
+      "source_id": "cisco-recertification",
+      "resolution": "Keep qualifying-exam renewal and active-period boundary explicit."
+    },
+    {
+      "id": "100160-deep-3",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Detailed exam scope contains omissions absent from the brief map",
+      "url": "https://learningcontent.cisco.com/documents/CCST+Cybersecurity+Objecitve+Domain_Cisco_Final_wCiscoLogo.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-160"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "23numbered objectives include RADIUS,DMZ/honeypot,macOS/BYOD,forensicmodels andspecificNISTreference.",
+      "recommendation": "Fill supporting bullets, retain23mapping and separate training/targetcandidate guidance.",
+      "disposition": "applied",
+      "source_id": "cisco-ccst-cybersecurity-objectives-pdf",
+      "resolution": "Fill supporting bullets, retain23mapping and separate training/targetcandidate guidance."
+    },
+    {
+      "id": "100160-deep-4",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Current NIST incident guidance supersedes the exam-referenced structure",
+      "url": "https://www.nist.gov/news-events/news/2025/04/nist-revises-sp-800-61-incident-response-recommendations-and-considerations",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-160"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "April3,2025announcement makesr3final andsupersedesr2.",
+      "recommendation": "Explain currentCSF2relationship alongsidehistoricalexamreference without changingCisco scope.",
+      "disposition": "applied",
+      "source_id": "nist-ir-2025-announcement",
+      "resolution": "Explain currentCSF2relationship alongsidehistoricalexamreference without changingCisco scope."
+    },
+    {
+      "id": "100160-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Lessons learned and response authority are continuous concerns",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-160"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Lifecycle/Table1connectimprovementacrossfunctions;policysetsactionauthority.",
+      "recommendation": "Distinguishpolicy/plan/playbook,continuousimprovement andSIEM/SOARauthorizationlimits.",
+      "disposition": "applied",
+      "source_id": "nist-sp800-61r3-pdf",
+      "resolution": "Distinguishpolicy/plan/playbook,continuousimprovement andSIEM/SOARauthorizationlimits."
+    },
+    {
+      "id": "100160-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "MFA and phishing resistance are different properties",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-160"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "ManuallyenteredOTP can be relayed;verifier-binding provides resistance.",
+      "recommendation": "Addphishingresistance/enrollment/recovery/sessionlimits withoutclaiming allMFAequivalent.",
+      "disposition": "applied",
+      "source_id": "nist-800-63b-4",
+      "resolution": "Addphishingresistance/enrollment/recovery/sessionlimits withoutclaiming allMFAequivalent."
+    },
+    {
+      "id": "100160-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Salt alone is not a suitable password storage design",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-160"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Passwordverifierguidance requiresappropriatehashingscheme/cost anddefines scopedlength/composition/change rules.",
+      "recommendation": "Teach recordedworkfactor,blocklists/rate-limits andguidancescope;do not prescribe universalorganizationalpolicy.",
+      "disposition": "applied",
+      "source_id": "nist-800-63b-4",
+      "resolution": "Teach recordedworkfactor,blocklists/rate-limits andguidancescope;do not prescribe universalorganizationalpolicy."
+    },
+    {
+      "id": "100160-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A hash stored with editable evidence is not an independent baseline",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8387.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-160"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Preservationsections describe alterationbeforehashing andrewritingbothcontentanddigest.",
+      "recommendation": "Execute tamper/rewrite/truncation/keyholdercounterexamples andbound HMAC/trustedhead assumptions.",
+      "disposition": "applied",
+      "source_id": "nist-ir8387-pdf",
+      "resolution": "Execute tamper/rewrite/truncation/keyholdercounterexamples andbound HMAC/trustedhead assumptions."
+    },
+    {
+      "id": "100160-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Base severity omits deployment context",
+      "url": "https://www.first.org/cvss/v4.0/implementation-guide",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-160"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Threat/Environmentalrefinement andvectorversion preserve interpretation.",
+      "recommendation": "Requireapplicability/exposure/impact/controls andtraceableprioritization ratherthanscore-only sorting.",
+      "disposition": "applied",
+      "source_id": "first-cvss4-implementation",
+      "resolution": "Requireapplicability/exposure/impact/controls andtraceableprioritization ratherthanscore-only sorting."
+    },
+    {
+      "id": "100160-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Forecast probability is not percentile or a complete local risk score",
+      "url": "https://www.first.org/epss/faq",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-160"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "EPSS predicts observedexploitationover30days;KEV recordsobservedexploitation.",
+      "recommendation": "Separateprobability/rank/history/context;no liveCVEfeed usedorCISAcatalogentriesclaimed.",
+      "disposition": "applied",
+      "source_id": "first-epss-faq",
+      "resolution": "Separateprobability/rank/history/context;no liveCVEfeed usedorCISAcatalogentriesclaimed."
+    },
+    {
+      "id": "100160-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Framework mapping is not proof of attribution or detection",
+      "url": "https://attack.mitre.org/resources/faq/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-160"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Tactics,techniques,subtechniques andprocedures have distinctroles.",
+      "recommendation": "Addallthreeexammodels withsource/evidence/version/unknowns ratherthanunsupportedactorclaims.",
+      "disposition": "applied",
+      "source_id": "mitre-attack-faq",
+      "resolution": "Addallthreeexammodels withsource/evidence/version/unknowns ratherthanunsupportedactorclaims."
+    },
+    {
+      "id": "100160-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Recovery requires validating restoration assets and restored behavior",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-160"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "RC.RP03–05 requireintegrity/compromisechecks andserviceowner/operatingvalidation.",
+      "recommendation": "Separatebackupjobstatus,hashmatch,cleanstate andsuccessfulrecovery;makehands-onrestorelabexplicitlyproposed.",
+      "disposition": "applied",
+      "source_id": "nist-sp800-61r3-pdf",
+      "resolution": "Separatebackupjobstatus,hashmatch,cleanstate andsuccessfulrecovery;makehands-onrestorelabexplicitlyproposed."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "nist-ir-2025-announcement",
+      "publisher": "NIST",
+      "published_on": "2025-04-03",
+      "disposition": "accepted-with-limits",
+      "value": "Current incident-response revision3 and supersession of revision2.",
+      "limits": "Full short institutional announcement read; no namedauthor inferred andnoCiscoexamchange asserted."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 40,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "e478353cec6e29a600c133d2db00c3a72b29d67e2fc0bf2e2650638c5a566343",
+      "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+      "execution_stdout": "{\"accepted_records\": 6, \"deduplicated_replay\": true, \"timeline_ids\": [\"one\", \"two\", \"three\", \"four\"], \"triage_candidates\": 1, \"future_clock_flag\": true, \"original_chain_verified\": true}\n40 local checks passed",
+      "results": {
+        "accepted_records": 6,
+        "deduplicated_replay": true,
+        "timeline_ids": [
+          "one",
+          "two",
+          "three",
+          "four"
+        ],
+        "triage_candidates": 1,
+        "future_clock_flag": true,
+        "original_chain_verified": true
+      },
+      "execution_boundary": "Actual standard-library synthetic raw JSON/schema/duplicate-key/source-ID replay/conflict ingestion, timezone-aware timeline, toy triage and HMAC-SHA256 chain tampering/truncation/reorder/wrongkey/metadata/head/fabricated-keyholder cases. Six records, one candidate, one clock-ahead flag. Structural assertions included. No real logs/accounts/scans/network/files/endpoint/SIEM/SOAR/forensiccapture.",
+      "key_and_anchor_boundary": "Random32byte process-local key and head, neither persisted nor printed; no externally trusted anchor, immutable store, collector authentication, durable custody or digital signature."
+    }
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "Eight tenant/endpoint/network/scanner/forensic/SIEM/SOAR/restore labs remain proposed; no live system or provider lab execution. Independent human review pending.",
+    "Forty checks include structural assertions and synthetic JSON/HMAC fixtures. No real evidence, malware, credentials, network, files, accounts, scan, capture, collector authentication, digital signatures or notifications.",
+    "Random key and trusted head are only process-local. No external anchor, immutable store, durable chain of custody or legal-admissibility proof. A key holder with baseline control can authenticate fabricated content; exercise demonstrates this.",
+    "Toy triage assumes ordered events and source semantics; it flags candidates, not confirmed incidents, and does not correct clock skew. Exact-byte duplicates are ignored; changed bytes under one source/event identity conflict even when differences are harmless formatting.",
+    "Actual3pageexamand3pagetrainingPDFfullyread. NISTr3(48pages),r2(80),IR8387(22),Lockheedguide(13) selectivelyread as recorded, not comprehensively reviewed. NISTr2historicalTOC only. Technicaldocs selectivereadingpernotes.",
+    "CISA403 andOReilly403;no currentKEVentries/counts/deadlines orpaidcontentverified. Pathshell not course-level validation;providerpracticecountsnotblueprintweights;catalogdurationsnotqualityorreadinessproof.",
+    "No runtime installation, account authentication, service changes, real notification or reservedGitHubguide edits. Compliance framework names retained as exam scope without jurisdiction-specific legal advice."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Actual standard-library synthetic raw JSON/schema/duplicate-key/source-ID replay/conflict ingestion, timezone-aware timeline, toy triage and HMAC-SHA256 chain tampering/truncation/reorder/wrongkey/metadata/head/fabricated-keyholder cases. Six records, one candidate, one clock-ahead flag. Structural assertions included. No real logs/accounts/scans/network/files/endpoint/SIEM/SOAR/forensiccapture.",
+    "passed": 40,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "e478353cec6e29a600c133d2db00c3a72b29d67e2fc0bf2e2650638c5a566343",
+    "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "execution_stdout": "{\"accepted_records\": 6, \"deduplicated_replay\": true, \"timeline_ids\": [\"one\", \"two\", \"three\", \"four\"], \"triage_candidates\": 1, \"future_clock_flag\": true, \"original_chain_verified\": true}\n40 local checks passed",
+    "results": {
+      "accepted_records": 6,
+      "deduplicated_replay": true,
+      "timeline_ids": [
+        "one",
+        "two",
+        "three",
+        "four"
+      ],
+      "triage_candidates": 1,
+      "future_clock_flag": true,
+      "original_chain_verified": true
+    },
+    "key_and_anchor_boundary": "Random32byte process-local key and head, neither persisted nor printed; no externally trusted anchor, immutable store, collector authentication, durable custody or digital signature.",
+    "learning_catalog_consistency": "passed"
+  },
+  "actual_pdf_receipts": [
+    {
+      "id": "cisco-100-160-training-pdf",
+      "url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-cybersecurity.pdf",
+      "checked_at": "2026-09-29T09:17:08.345216+00:00",
+      "health": {
+        "id": "cisco-100-160-training-pdf",
+        "url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-cybersecurity.pdf",
+        "checked_at": "2026-09-29T09:17:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-cybersecurity.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-cybersecurity.pdf",
+      "sha256": "ff26a06e11c57589162cb06689678a58f640d04f91d4bc9a58153e3e5144aab6",
+      "bytes": 152111,
+      "pdf_pages": 3,
+      "text_characters": 3665
+    },
+    {
+      "id": "cisco-ccst-cybersecurity-objectives-pdf",
+      "url": "https://learningcontent.cisco.com/documents/CCST+Cybersecurity+Objecitve+Domain_Cisco_Final_wCiscoLogo.pdf",
+      "checked_at": "2026-09-29T09:17:08.806838+00:00",
+      "health": {
+        "id": "cisco-ccst-cybersecurity-objectives-pdf",
+        "url": "https://learningcontent.cisco.com/documents/CCST+Cybersecurity+Objecitve+Domain_Cisco_Final_wCiscoLogo.pdf",
+        "checked_at": "2026-09-29T09:17:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learningcontent.cisco.com/documents/CCST+Cybersecurity+Objecitve+Domain_Cisco_Final_wCiscoLogo.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learningcontent.cisco.com/documents/CCST+Cybersecurity+Objecitve+Domain_Cisco_Final_wCiscoLogo.pdf",
+      "sha256": "c7ade1d9f64d4f9cbf7a15d68fe33fe889b01980d47f6a41f2847c66ebde8eca",
+      "bytes": 109188,
+      "pdf_pages": 3,
+      "text_characters": 5755
+    },
+    {
+      "id": "nist-sp800-61r3-pdf",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "checked_at": "2026-09-29T09:17:11.744916+00:00",
+      "health": {
+        "id": "nist-sp800-61r3-pdf",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "checked_at": "2026-09-29T09:17:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "sha256": "e5593d6bb85daecec7e8d9549400c7b3473bcc3f06e469c82218073afa7fba2d",
+      "bytes": 1040566,
+      "pdf_pages": 48,
+      "text_characters": 107538
+    },
+    {
+      "id": "nist-ir8387-pdf",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8387.pdf",
+      "checked_at": "2026-09-29T09:19:39.160422+00:00",
+      "health": {
+        "id": "nist-ir8387-pdf",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8387.pdf",
+        "checked_at": "2026-09-29T09:19:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8387.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8387.pdf",
+      "sha256": "1d5c5127214173cde8054bd999102dbbd5f1a1a8c21120d637b2c15c6b081e44",
+      "bytes": 621335,
+      "pdf_pages": 22,
+      "text_characters": 52888
+    },
+    {
+      "id": "lockheed-kill-chain-guide",
+      "url": "https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/Gaining_the_Advantage_Cyber_Kill_Chain.pdf",
+      "checked_at": "2026-09-29T09:23:03.437860+00:00",
+      "health": {
+        "id": "lockheed-kill-chain-guide",
+        "url": "https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/Gaining_the_Advantage_Cyber_Kill_Chain.pdf",
+        "checked_at": "2026-09-29T09:23:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/Gaining_the_Advantage_Cyber_Kill_Chain.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/Gaining_the_Advantage_Cyber_Kill_Chain.pdf",
+      "sha256": "839914098aac5100cd95661993d8e36c4bbd2e895b789a2624fbf344c7802d66",
+      "bytes": 306409,
+      "pdf_pages": 13,
+      "text_characters": 11951
+    },
+    {
+      "id": "nist-sp800-61r2-pdf",
+      "url": "https://doi.org/10.6028/NIST.SP.800-61r2",
+      "checked_at": "2026-09-29T09:28:11.466941+00:00",
+      "health": {
+        "id": "nist-sp800-61r2-pdf",
+        "url": "https://doi.org/10.6028/NIST.SP.800-61r2",
+        "checked_at": "2026-09-29T09:28:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf",
+      "sha256": "b1c5ead0632dcfb979c59d8c462b094ad2465ddaf62d5c246289d6d9b4419df1",
+      "bytes": 1744473,
+      "pdf_pages": 80,
+      "text_characters": 231571
+    }
+  ],
+  "accepted_objective_and_lifecycle_observation": {
+    "changed": [
+      "100-160"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "100-160",
+        "title": "Cisco Certified Support Technician Cybersecurity",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-cybersecurity.html",
+        "guide_path": "guides/100-160-cisco-certified-support-technician-cybersecurity.md",
+        "snapshot_path": "data\\objective-snapshots\\100-160-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\100-160-official-status.json",
+        "previous_sha256": "8c759c20e7564e89bf453d83dd80b60b78716c3c06790073e531065e5d891418",
+        "current_sha256": "8c759c20e7564e89bf453d83dd80b60b78716c3c06790073e531065e5d891418",
+        "previous_status_sha256": null,
+        "current_status_sha256": "84e1a2f0130c85d7ef86641d9ecb774c70b90c1391fbfddbed3ec2b2b628693b",
+        "official_status": {
+          "skills_versions": [
+            "Languages: English, Arabic, Chinese, Spanish, French, Japanese, Portuguese",
+            "Duration: 50 minutes",
+            "Price: $US125"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "status_written": true,
+        "written": true
+      }
+    ]
+  },
+  "post_acceptance_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "100-160",
+        "title": "Cisco Certified Support Technician Cybersecurity",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-cybersecurity.html",
+        "guide_path": "guides/100-160-cisco-certified-support-technician-cybersecurity.md",
+        "snapshot_path": "data\\objective-snapshots\\100-160-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\100-160-official-status.json",
+        "previous_sha256": "8c759c20e7564e89bf453d83dd80b60b78716c3c06790073e531065e5d891418",
+        "current_sha256": "8c759c20e7564e89bf453d83dd80b60b78716c3c06790073e531065e5d891418",
+        "previous_status_sha256": "84e1a2f0130c85d7ef86641d9ecb774c70b90c1391fbfddbed3ec2b2b628693b",
+        "current_status_sha256": "84e1a2f0130c85d7ef86641d9ecb774c70b90c1391fbfddbed3ec2b2b628693b",
+        "official_status": {
+          "skills_versions": [
+            "Languages: English, Arabic, Chinese, Spanish, French, Japanese, Portuguese",
+            "Duration: 50 minutes",
+            "Price: $US125"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "numbered_objective_counts_by_domain": [
+    4,
+    5,
+    6,
+    4,
+    4
+  ],
+  "objective_mapping_basis": "Actual three-page Cisco exam objective PDF: 23 numbered objectives including all supporting bullets. Separate three-page training overview is corroboration; no weights or revision date invented.",
+  "catalog_card_counts": {
+    "cards": [
+      {
+        "kind": "Course",
+        "title": "Building a Strong Cyber Security Foundation",
+        "minutes": 8
+      },
+      {
+        "kind": "Course",
+        "title": "Linux Endpoint Security: AI-assisted Analysis",
+        "minutes": 16
+      },
+      {
+        "kind": "Lab",
+        "title": "Linux Endpoint Security: AI-Assisted Analysis Lab",
+        "minutes": 45
+      },
+      {
+        "kind": "Course",
+        "title": "Linux Endpoint Security: Processes",
+        "minutes": 25
+      },
+      {
+        "kind": "Lab",
+        "title": "Linux Endpoint Security: Processes",
+        "minutes": 120
+      },
+      {
+        "kind": "Course",
+        "title": "Linux Endpoint Security: Networking",
+        "minutes": 21
+      },
+      {
+        "kind": "Lab",
+        "title": "Linux Endpoint Security: Networking",
+        "minutes": 135
+      },
+      {
+        "kind": "Course",
+        "title": "Linux Endpoint Security: Logs",
+        "minutes": 15
+      },
+      {
+        "kind": "Lab",
+        "title": "Linux Endpoint Security: Logs",
+        "minutes": 150
+      },
+      {
+        "kind": "Course",
+        "title": "Windows Endpoint Security: Processes",
+        "minutes": 21
+      },
+      {
+        "kind": "Lab",
+        "title": "Windows Endpoint Security: Processes",
+        "minutes": 120
+      },
+      {
+        "kind": "Course",
+        "title": "Windows Endpoint Security: Logs",
+        "minutes": 28
+      },
+      {
+        "kind": "Lab",
+        "title": "Windows Endpoint Security: Logs",
+        "minutes": 165
+      },
+      {
+        "kind": "Course",
+        "title": "Windows Endpoint Security: Networking",
+        "minutes": 21
+      },
+      {
+        "kind": "Lab",
+        "title": "Windows Endpoint Security: Networking",
+        "minutes": 120
+      },
+      {
+        "kind": "Course",
+        "title": "Windows Endpoint Security: Scheduled Tasks",
+        "minutes": 21
+      },
+      {
+        "kind": "Lab",
+        "title": "Windows Endpoint Security: Scheduled Tasks",
+        "minutes": 60
+      },
+      {
+        "kind": "Course",
+        "title": "Network Protocols for Security: REST APIs and OAuth",
+        "minutes": 17
+      },
+      {
+        "kind": "Lab",
+        "title": "Network Protocols for Security: REST APIs and OAuth Lab",
+        "minutes": 45
+      },
+      {
+        "kind": "Course",
+        "title": "Network Protocols for Security: TCP and UDP",
+        "minutes": 20
+      },
+      {
+        "kind": "Lab",
+        "title": "Network Protocols for Security: TCP and UDP",
+        "minutes": 135
+      },
+      {
+        "kind": "Course",
+        "title": "Network Protocols for Security: IPv4 and ARP",
+        "minutes": 18
+      },
+      {
+        "kind": "Lab",
+        "title": "Network Protocols for Security: IPv4 and ARP",
+        "minutes": 135
+      },
+      {
+        "kind": "Course",
+        "title": "Network Protocols for Security: HTTP",
+        "minutes": 19
+      },
+      {
+        "kind": "Lab",
+        "title": "Network Protocols for Security: HTTP",
+        "minutes": 120
+      },
+      {
+        "kind": "Course",
+        "title": "Network Protocols for Security: ICMP",
+        "minutes": 18
+      },
+      {
+        "kind": "Lab",
+        "title": "Network Protocols for Security: ICMP",
+        "minutes": 135
+      },
+      {
+        "kind": "Course",
+        "title": "Network Protocols for Security: DNS",
+        "minutes": 17
+      },
+      {
+        "kind": "Lab",
+        "title": "Network Protocols for Security: DNS",
+        "minutes": 135
+      },
+      {
+        "kind": "Course",
+        "title": "Network Protocols for Security: SMB",
+        "minutes": 12
+      },
+      {
+        "kind": "Lab",
+        "title": "Network Protocols for Security: SMB",
+        "minutes": 60
+      },
+      {
+        "kind": "Lab",
+        "title": "Network Protocols for Security Capstone",
+        "minutes": 210
+      },
+      {
+        "kind": "Course",
+        "title": "Scripting for Security: Windows",
+        "minutes": 40
+      },
+      {
+        "kind": "Lab",
+        "title": "Scripting for Security: Windows",
+        "minutes": 75
+      }
+    ],
+    "visible_courses": 17,
+    "visible_labs": 17,
+    "minutes": 2302,
+    "header": "17courses17labs38hours"
+  },
+  "receipt_recovery": "A transient Windows OSError 22 interrupted source-health receipt writing. Existing JSON remained valid; the helper resumed only the remaining steps, avoiding duplicate source notes. All validation subsequently passed."
+}

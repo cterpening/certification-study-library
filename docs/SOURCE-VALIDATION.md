@@ -1511,6 +1511,8 @@ The review maps all six topic groups and every objective on Cisco's current exam
 
 ## 100-160 coverage record
 
+The September 29 [deep review](research/2026-09-29-100-160-deep-review.md) maps 23 detailed objectives. Mapped 23 numbered objectives and supporting bullets from the actual three-page PDF. Corrected dated CCST renewal policy, reconciled the older exam-referenced incident structure with NIST revision3, added40executed evidence/timeline checks and48answered prompts, and updated catalog evidence. Objective digest unchanged; missing lifecycle baseline explicitly initialized and rechecked unchanged. Eight live/system labs and independent human review remain pending. Current guide citations: 26 registered, 24 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: active CCST Cybersecurity exam, five public work areas and all 23 first-party exam-aligned course objectives; no stable domain weights are exposed by the checked public interface, so none are invented

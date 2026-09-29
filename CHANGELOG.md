@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [100-160 deep review](docs/research/2026-09-29-100-160-deep-review.md): Mapped 23 detailed objectives, reconciled NIST incident guidance and CCST renewal, added 40 executed evidence checks and 48 answers, and refreshed learning catalogs.
+
 - September 29, 2026: [100-150 deep review](docs/research/2026-09-29-100-150-deep-review.md): Mapped the actual25-objective PDF, corrected dated renewal policy, added40executed packet/subnet checks and48answers, and qualified current catalog evidence.
 
 - September 29, 2026: [GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT deep review](docs/research/2026-09-29-google-professional-agentic-architect-deep-review.md): 31 mapped considerations plus28 tool entries,31 executed local action-control checks,52 answers,eight proposed labs and updated beta/catalog evidence.
