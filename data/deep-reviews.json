@@ -5,6 +5,28 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER",
+      "reviewed_on": "2026-09-29",
+      "guide_sha256": "85a51687b271a348c0a571244a79c45463da12cfda1570cdc9ff89579f9db0dc",
+      "objective_count": 70,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-29-google-professional-cloud-security-engineer-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-29-google-professional-cloud-security-engineer-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "Same-context AI review; independent human review pending.",
+        "Eight cloud labs remain proposed. Only35checks in the exact public Node.js program executed; no KMS,HSM,IAM,network,perimeter,cloudlog,secretrotationservice,model,provideraccessorBinaryAuthorizationdeployment tested.",
+        "AES-GCM uses native Node.js crypto with process-local synthetic keys. Key map absence is a local availability model,not KMS state,secure deletion or propagation. Old key bytes remain available for a recovery demonstration; no memory erasure claimed.",
+        "This teaching program is not a production cryptographic design. No persistent rotation/nonceinventory/concurrency/multiprocesscrash/large-input handling,hardware custody,provider IAM or independent cryptographic audit.",
+        "Authenticated context is visible; expected tenant/record/version must come from trusted application authorization. Rewrapping authenticates a key wrapper without validating payload/businessmeaning; valid ciphertext can replay without externalversionpolicy.",
+        "Prior same-session ACE gcloud-not-found-on-PATH observation reused. No installation,authentication,newruntime,credentials,serviceconfiguration or external notification attempted.",
+        "Actual4pageexamPDFfullyread;no visiblepublicationdate invented. Productpagesreadselectivelyasper-sourcenotes. Publiccertificationhelptwo-yearstatementisseparatefromcanonicalmonitoredfields;noexamrenewaloptionsborrowedfromPCA/PDE.",
+        "GoogleSkillsdurationsunexposed,Whizlabstitleshell,OReilly403. Paidcourses/books/providerlabs/proprietaryassessments/recalledexamitemsnotaccessed. DirectPluralsightpageusedoverstalesearchsnippet;metadata doesnot prove paidlessondepth."
+      ]
+    },
+    {
       "exam_code": "GOOGLE-PROFESSIONAL-DATA-ENGINEER",
       "reviewed_on": "2026-09-29",
       "guide_sha256": "ad65bb8018f8dd97106c10559c68a2e6e3deaa79682822f68fd6fe6e11938dc1",

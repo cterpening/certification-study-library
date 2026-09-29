@@ -1,0 +1,2235 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER-professional-cloud-security-engineer.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "2d09bd5511e94f8a78bf3a3f01cbee9045308981dadb3aef15af4d3943dab455",
+  "guide_after_sha256": "85a51687b271a348c0a571244a79c45463da12cfda1570cdc9ff89579f9db0dc",
+  "prior_records": {
+    "exam": {
+      "code": "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER",
+      "level": "expert",
+      "vendor_id": "google-cloud",
+      "title": "Professional Cloud Security Engineer",
+      "status": "active",
+      "study_guide_url": "https://cloud.google.com/learn/certification/cloud-security-engineer",
+      "guide_path": "guides/GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER-professional-cloud-security-engineer.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; Google recommends three or more years of industry experience including at least one year on Google Cloud. Practice workforce/workload identity and privilege, NGFW/private/perimeter controls, sensitive-data/key/secret/AI protection, secure supply chain/posture, centralized logging/detection/response, and compliance scope/control/evidence using authorized disposable environments."
+    },
+    "review": {
+      "id": "google-professional-cloud-security-engineer-2026-09-02-source-validation",
+      "exam_code": "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER",
+      "guide_path": "guides/GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER-professional-cloud-security-engineer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/google-professional-cloud-security-engineer-official-objectives.txt",
+      "blueprint_snapshot_sha256": "356877767ac663f5102c9f398ba61909d074668c92d54e0e09584341f5a48166",
+      "objective_coverage": [
+        {
+          "objective_group": "Configuring access (~25%)",
+          "guide_sections": [
+            "Section 1",
+            "Scenarios 1–3",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Securing communications and establishing boundary protection (~22%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Ensuring data protection (~23%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 2–3",
+            "Labs 5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Managing operations (~19%)",
+          "guide_sections": [
+            "Section 4",
+            "All scenarios",
+            "Labs 6–8"
+          ]
+        },
+        {
+          "objective_group": "Supporting compliance requirements (~11%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenario 2",
+            "Labs 4–5 and 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 7,
+        "reachable": 6,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All five current defensive domains are mapped through threat/obligation, preventive control, negative/positive validation, telemetry, response/recovery and evidence. Three scenarios, eight authorized labs and 36 checks cover identity, boundaries, data/AI protection, supply chain/posture/SecOps and compliance. All seven URLs are cataloged: six reachable and O'Reilly automation-blocked; none missing or broken. No exploit target, proprietary bank, recalled item or copied course content is used."
+    },
+    "sources": [
+      {
+        "id": "google-pcse-certification",
+        "title": "Professional Cloud Security Engineer certification",
+        "url": "https://cloud.google.com/learn/certification/cloud-security-engineer",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+        ],
+        "notes": "Canonical live capability, delivery and preparation page; monitored by the Google Cloud certification adapter."
+      },
+      {
+        "id": "google-pcse-exam-guide",
+        "title": "Professional Cloud Security Engineer certification exam guide",
+        "url": "https://services.google.com/fh/files/misc/professional_cloud_security_engineer_exam_guide_english.pdf",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+        ],
+        "notes": "Detailed four-page five-domain 25/22/23/19/11 baseline with current federation, Cloud NGFW, AI security, supply chain, SCC and compliance controls; no visible publication date."
+      },
+      {
+        "id": "google-pcse-skills-path",
+        "title": "Professional Cloud Security Engineer learning path",
+        "url": "https://www.skills.google/paths/15",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+        ],
+        "notes": "Twenty-one first-party activities total about 82h30m across networking, IAM, security, observability, DevSecOps, SCC and AI security; labs may require credits."
+      },
+      {
+        "id": "google-pcse-sample-questions",
+        "title": "Professional Cloud Security Engineer official sample questions",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSfSuKEE8cUQWj9sfak7QG9hpaljBC89Y22KoWMQFgoECZjzUg/viewform",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+        ],
+        "notes": "Official untimed repeatable sample questions; not predictive of exam result."
+      },
+      {
+        "id": "google-pcse-security-docs",
+        "title": "Google Cloud security",
+        "url": "https://cloud.google.com/security",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+        ],
+        "notes": "First-party current security products, architecture, best practices and compliance entry point."
+      },
+      {
+        "id": "google-pcse-oreilly-official",
+        "title": "Official Google Cloud Certified Professional Cloud Security Engineer Study Guide",
+        "url": "https://www.oreilly.com/library/view/official-google-cloud/9781119564062/",
+        "publisher": "O'Reilly / Sybex / Dan Sullivan",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+        ],
+        "notes": "2019, 368-page foundational reference; substantially predates the current identity, network, AI, supply-chain and compliance-control scope."
+      },
+      {
+        "id": "google-pcse-whizlabs",
+        "title": "Google Cloud Professional Cloud Security Engineer course and practice",
+        "url": "https://www.whizlabs.com/google-cloud-certified-professional-cloud-security-engineer/",
+        "publisher": "Whizlabs",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+        ],
+        "notes": "Commercial course, practice and lab page; verify all explanations and current five-domain alignment against first-party sources."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "ec6c771595f943fe6a9e187f2a04bfeb452713027aabfc099bb8a01bf1c2ed35",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "0402fda098dae39f41fe3f1a30ce508c2b0273d03a05b2c3cec04755baba2014",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "52552b550fd9db12a1ce8fb2fe3819b646b2e83f743a37a5fa37b8f485ca8aff",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "bf85f7360c7eabdea3909e526588f7f58d8cab49ff6224140f460889e6dc527c",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "27a5d877222dda7326e9e2777325a3b1a2eb317ea820ad2bdf7252b836092452",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "651c7566db7489ca959ef046e1473e4ad07cf0054d190b881d931c32f8e345ce",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "6e6d814a9a75a45bd00ab5256cd9fbe43bc66400665c6cf2a248e16f5c647df6",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "02e095083e47891768aee810692ef9c43ad7665cdf41bcf844cb5550248ba323",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "caa40b87f3f396c5dab6f526257300eb8e761b54e1e679804bbea993e6263960",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "0b27b83c26fcce98802629517141e55ce117b09c0f3f5af573a4c12ff0dc89a2",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 11,
+      "objective_sha256": "41fe6671a298c40b9b79780ca0123b976394b5004d0c0f324d40211896e6e618",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 12,
+      "objective_sha256": "b1eb3373f5a6efcd1bf0dafba317889dfd493fdc6c5cbb39a440fdecd52ecad5",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 13,
+      "objective_sha256": "d258b85285d99cb45afb5352d385ef354fd66891474e99c7f7322099187357f7",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 14,
+      "objective_sha256": "61eb8dcb209b8fac5e9a4cfd6e8333dfdb882be897e9c980f2b77a792a07d9f3",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 15,
+      "objective_sha256": "0de9dc8cd0d470a30e23b4985097663debe9150f9a5cba7daab55630b41df31d",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 16,
+      "objective_sha256": "056341cdb2fa96c83e3a5780176f32be9479acee8d733a98e1fe550e89607cda",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 17,
+      "objective_sha256": "7dc503564802462835461eae5a7c54a9be8894d79c591cc25a600860e82069f6",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 18,
+      "objective_sha256": "8c9ca2fca7e1da515c0520088c0ba8ccc45ccd19e5e51704ceb873d8da876b0d",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 19,
+      "objective_sha256": "b154d082a73dbf550469e1ba4d47eb397e4cb8ce86e17c57feed861caed8a2e3",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 20,
+      "objective_sha256": "c5de5ab41846bf3ed0869387c56682c1064d3a049d630af3a7bbff6dd1e0d94d",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 21,
+      "objective_sha256": "6f9f1c0e44fde64b1db5d184cb17130a8551476598c5f66e322dbfa1991f6733",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 22,
+      "objective_sha256": "db1e13cc4bab35f7b50b85e472e693079a407be6ccc9f1de378adc53c325a44b",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 23,
+      "objective_sha256": "0e831dba96dcf8b213f205dd99ee448ee32291d49b607debe64bc34eea5e5819",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 24,
+      "objective_sha256": "090c2f07784ef874363593e92e8d9419a5d8c1f60ac6744e6e87dd90404c07a3",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 25,
+      "objective_sha256": "ef627b10b8da3b00564e11212696e4d085044000fd6d34380b3864195b68aa72",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 26,
+      "objective_sha256": "97d1595e4eb38a19362151be0f7dc927bd89b483685ba92926c780439994d80e",
+      "guide_sections": [
+        "1. Configuring access — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "a792d4f9850342266577d4d1b3eb649e5acea2c2ac2a6d4dd2e9f23a7576a293",
+      "guide_sections": [
+        "2. Communications and boundary protection — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "f40e9c9041953bf6aa8d2c142ac9faee12fa5b1995cc770b7913498b665cac49",
+      "guide_sections": [
+        "2. Communications and boundary protection — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "731179011fee3d19149da9da2bf86182a4aa715c45393e9b71659e51839683b2",
+      "guide_sections": [
+        "2. Communications and boundary protection — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "09461e0d0db663cec55e7e8adfd7c21983a59a89584fd27fb06610d6b069c42b",
+      "guide_sections": [
+        "2. Communications and boundary protection — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "3ee5a08f067a8703bc67c509fb646666b9cafd08c5c63d96625c95c2779bd42c",
+      "guide_sections": [
+        "2. Communications and boundary protection — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "495ba8a8bd49e1c88a54794ecb147459180f281f668a504eb84bb9837599e5d1",
+      "guide_sections": [
+        "2. Communications and boundary protection — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "a173a53b1843f0979ff97f0e950c32a80e1af8c103f5fd658c8e378e48305615",
+      "guide_sections": [
+        "2. Communications and boundary protection — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "e1abff5ebcbf7fb5c453c886e38dce237fbe29c996b6cb779bd831d4837bd730",
+      "guide_sections": [
+        "2. Communications and boundary protection — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "0354df8e6262213ef13f16996305d6d5c3318346bb280f0c6f6b4ca3e51f2c41",
+      "guide_sections": [
+        "2. Communications and boundary protection — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 10,
+      "objective_sha256": "97ebfe3d0043de615cd26156d2ee0caca8964ab1a2a38e5b26144335f57e9959",
+      "guide_sections": [
+        "2. Communications and boundary protection — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 11,
+      "objective_sha256": "5b909131f0db63832f54c9168670b3e4ac1b13641d0559685303210d88cb4604",
+      "guide_sections": [
+        "2. Communications and boundary protection — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 12,
+      "objective_sha256": "f6eea504eb9cb6b23c2477c6c926703b90c5b9a04f91ce7a5b4b50261cebdfc3",
+      "guide_sections": [
+        "2. Communications and boundary protection — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 13,
+      "objective_sha256": "b6fedb5722451e947ae6a9fc16fbcce64b8b30c49a9ef0f53e8e9dd33d18fe1a",
+      "guide_sections": [
+        "2. Communications and boundary protection — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 14,
+      "objective_sha256": "8d46ec6b9cbb07cb234426a64cbe46b5b44ff5a4ebb0bed941b9bb60da5eb654",
+      "guide_sections": [
+        "2. Communications and boundary protection — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "761e269c69e79842198b6d5424cdc4fa3c103fa502adcf875120fc9dfbf60fec",
+      "guide_sections": [
+        "3. Data protection — about 23%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "78863704f6e149458954ebfca836faa159a445bc86dcc0bd83e20fddfaf64003",
+      "guide_sections": [
+        "3. Data protection — about 23%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "a600aaec84080d823df69bf7a51a9bf266d95770f2da47917bf8002cc1c68ef4",
+      "guide_sections": [
+        "3. Data protection — about 23%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "a84b984cdb6967fa6795885ad60260d41e8d4c328bd05f168c658b5fd3783bd6",
+      "guide_sections": [
+        "3. Data protection — about 23%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "2ca2c09302d5f7873acf188f411814ddfe931d3e10a7145970a12296b8c62683",
+      "guide_sections": [
+        "3. Data protection — about 23%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "76c79cbc4c559bbd217dff387997f48ea3e692c860bf57b2fcc85955f94c7120",
+      "guide_sections": [
+        "3. Data protection — about 23%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "0cebd088176b1e1e1a8cb7781d2840ffea03922b0947962d3ee39c1405814d49",
+      "guide_sections": [
+        "3. Data protection — about 23%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "a27fad98f53bfd912f6ad9f45407d304275446f646356ef63761b7972239a203",
+      "guide_sections": [
+        "3. Data protection — about 23%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "756de41f9a9f2c7793560542c5e13c9e2ada4fdeedd2053d712c20fdb85bd849",
+      "guide_sections": [
+        "3. Data protection — about 23%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 10,
+      "objective_sha256": "76238431e6879d7562ed8873ce41ad95a4849f93d80ee886ae2e73dc06f1d9bb",
+      "guide_sections": [
+        "3. Data protection — about 23%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 11,
+      "objective_sha256": "6a54893c736b139654019645b9ec9c1d99f3c2400deaa4e89412dedf80115e39",
+      "guide_sections": [
+        "3. Data protection — about 23%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 12,
+      "objective_sha256": "7ab22cfe15c4d49c424f23e32d8d2939c2305024218adae442a8c3f72a54b8ea",
+      "guide_sections": [
+        "3. Data protection — about 23%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 13,
+      "objective_sha256": "2df45cf5a9d9dcea86e9e15647f4b7cb6fa2d58fa19bb51d00da5a9d28ab7de7",
+      "guide_sections": [
+        "3. Data protection — about 23%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "e8f154b30d2fd522a55ee1bec2acabca765351095c74f6cd40a1c45f8c0891fd",
+      "guide_sections": [
+        "4. Managing operations — about 19%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "240e0d0404e566a49af6aa259e0d2f3eee47390783c5a1aa6e2b6b5c689e0e98",
+      "guide_sections": [
+        "4. Managing operations — about 19%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "d4af05a780addd3cca2cded1dd33bd521596437ee3c6b83a1c10f04e9e461ce2",
+      "guide_sections": [
+        "4. Managing operations — about 19%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "295a0d3391c11c1e377e78b059d6f3d7e8c94e3c08fa9d41ef095cfd73a24980",
+      "guide_sections": [
+        "4. Managing operations — about 19%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "06606d335f2e54e86a92d453b791c0bb0bc1b5e7d86d2d11d8c77a4600f39ced",
+      "guide_sections": [
+        "4. Managing operations — about 19%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "972d41c513a9b0fa571b1a8256cef3a3c7b5ef34a2f8cc29a65c730807446bb2",
+      "guide_sections": [
+        "4. Managing operations — about 19%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "3dcd581d2abdb349f1679e80c75f5cfdab230e81d4ccaccb53f014922bb8f1e7",
+      "guide_sections": [
+        "4. Managing operations — about 19%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "5bb7353707bd252a036f34243f8d84b04cbdfa729ba1786a18af5dfafc721b8a",
+      "guide_sections": [
+        "4. Managing operations — about 19%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "519e659e44dfab864a11cf69808fb3fe350e5108ad59be3c808e24d3f31d8a20",
+      "guide_sections": [
+        "4. Managing operations — about 19%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 10,
+      "objective_sha256": "91c7ab1e0db688461c1f3076af6f74bedbd6b227e9125cec5829bbe945082bac",
+      "guide_sections": [
+        "4. Managing operations — about 19%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 11,
+      "objective_sha256": "e93d9e357154ec61048bb75e7d92af510e0d1ba99cc7ba2167b8f743b3eee6a1",
+      "guide_sections": [
+        "4. Managing operations — about 19%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 12,
+      "objective_sha256": "e89bab79a47e7adc50749cf937d42dbbdd427ee2ccc7e48352fc9204fd7b50da",
+      "guide_sections": [
+        "4. Managing operations — about 19%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "ee5f926c9bdd8e0baac9a3f0cbcb94519b7c3159f1f918f4bb3021b7444e1664",
+      "guide_sections": [
+        "5. Supporting compliance — about 11%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "495f4aac152f2811fa95df74037e3af9c92faecae9f0bfd871010455e02efee7",
+      "guide_sections": [
+        "5. Supporting compliance — about 11%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "aac1413fe46dcea028b48ddd3e0948b72df074c3018d73b75625ba05113cf9ab",
+      "guide_sections": [
+        "5. Supporting compliance — about 11%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "5b24c693801a7c06e7ff9b4aefb2f2744961e02691a280d6bf74dd9c401a0c5f",
+      "guide_sections": [
+        "5. Supporting compliance — about 11%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "87f23ed6e75163dcec867fe7daee5b62c628c76716a623442c25c46ed1888408",
+      "guide_sections": [
+        "5. Supporting compliance — about 11%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER",
+        "title": "Professional Cloud Security Engineer",
+        "url": "https://cloud.google.com/learn/certification/cloud-security-engineer",
+        "guide_path": "guides/GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER-professional-cloud-security-engineer.md",
+        "snapshot_path": "data\\objective-snapshots\\google-professional-cloud-security-engineer-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\google-professional-cloud-security-engineer-official-status.json",
+        "previous_sha256": "356877767ac663f5102c9f398ba61909d074668c92d54e0e09584341f5a48166",
+        "current_sha256": "356877767ac663f5102c9f398ba61909d074668c92d54e0e09584341f5a48166",
+        "previous_status_sha256": null,
+        "current_status_sha256": "144d4a0e903ac71ec0ae4dccba849ebf68ade9b1f515b397ecf0bfc86ba19945",
+        "official_status": {
+          "skills_versions": [
+            "Length: 2 hours",
+            "Registration fee: $200 (plus tax where applicable)",
+            "Languages: English, Japanese",
+            "Exam format: 50-60 multiple choice and multiple select",
+            "Exam delivery method:",
+            "Prerequisites: None",
+            "Recommended experience: 3+ years of industry"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 35,
+    "reachable": 34,
+    "access_blocked": 1,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "google-pcse-certification",
+      "url": "https://cloud.google.com/learn/certification/cloud-security-engineer",
+      "checked_at": "2026-09-29T08:01:02.261323+00:00",
+      "health": {
+        "id": "google-pcse-certification",
+        "url": "https://cloud.google.com/learn/certification/cloud-security-engineer",
+        "checked_at": "2026-09-29T08:01:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloud.google.com/learn/certification/cloud-security-engineer",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Professional Cloud Security Engineer Certification | Learn | Google Cloud",
+        "canonical_url": "https://cloud.google.com/learn/certification/cloud-security-engineer",
+        "duration_signals": [
+          "2 hours"
+        ],
+        "signal_fingerprint": "dc2f326d8cfd40e1a36597e30f7591256865e3024a06b7c07dd774edd030c1c2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cloud.google.com/learn/certification/cloud-security-engineer",
+      "sha256": "5034f6a8601c415bf904c4a4b97ad62d8e22dda06ae76774a308a7ec96ea620d",
+      "text_characters": 4094
+    },
+    {
+      "id": "google-pcse-exam-guide",
+      "url": "https://services.google.com/fh/files/misc/professional_cloud_security_engineer_exam_guide_english.pdf",
+      "checked_at": "2026-09-29T08:01:59.888824+00:00",
+      "health": {
+        "id": "google-pcse-exam-guide",
+        "url": "https://services.google.com/fh/files/misc/professional_cloud_security_engineer_exam_guide_english.pdf",
+        "checked_at": "2026-09-29T08:01:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/professional_cloud_security_engineer_exam_guide_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/professional_cloud_security_engineer_exam_guide_english.pdf",
+      "sha256": "301cd98c788ee573a57d115790a990839b0ce7eb2c1110c25edbd6d38ce16f89",
+      "bytes": 180544,
+      "pdf_pages": 4,
+      "text_characters": 9923
+    },
+    {
+      "id": "google-pcse-skills-path",
+      "url": "https://www.skills.google/paths/15",
+      "checked_at": "2026-09-29T08:01:02.262295+00:00",
+      "health": {
+        "id": "google-pcse-skills-path",
+        "url": "https://www.skills.google/paths/15",
+        "checked_at": "2026-09-29T08:01:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skills.google/paths/15",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Professional Security Engineer Certification | Google Skills",
+        "canonical_url": "https://www.skills.google/paths/15",
+        "duration_signals": [],
+        "signal_fingerprint": "9b5ec4d96153c39cf572cefb896633bd39b76689617ac899cd9e66ea57a2d386",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skills.google/paths/15",
+      "sha256": "829c5e2c6b0da8a46d450d1de4073e6e13d9111224a5fa2284ae5e0a02989f39",
+      "text_characters": 1115
+    },
+    {
+      "id": "google-pcse-sample-questions",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSfSuKEE8cUQWj9sfak7QG9hpaljBC89Y22KoWMQFgoECZjzUg/viewform",
+      "checked_at": "2026-09-29T08:01:02.949967+00:00",
+      "health": {
+        "id": "google-pcse-sample-questions",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSfSuKEE8cUQWj9sfak7QG9hpaljBC89Y22KoWMQFgoECZjzUg/viewform",
+        "checked_at": "2026-09-29T08:01:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSfSuKEE8cUQWj9sfak7QG9hpaljBC89Y22KoWMQFgoECZjzUg/viewform",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Professional Cloud Security Engineer Sample Questions",
+        "canonical_url": "https://docs.google.com/forms/d/e/1FAIpQLSfSuKEE8cUQWj9sfak7QG9hpaljBC89Y22KoWMQFgoECZjzUg/viewform",
+        "duration_signals": [],
+        "signal_fingerprint": "fafafc1debed1115c06f8bf70e9395a5415d2c3a69553053c68db52084350bcd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSfSuKEE8cUQWj9sfak7QG9hpaljBC89Y22KoWMQFgoECZjzUg/viewform",
+      "sha256": "952c2901503b469ed8a0aba8fcbef668dccab1f4fe49afd8f2c8938df571a65b",
+      "text_characters": 686
+    },
+    {
+      "id": "google-pcse-security-docs",
+      "url": "https://cloud.google.com/security",
+      "checked_at": "2026-09-29T08:01:06.604708+00:00",
+      "health": {
+        "id": "google-pcse-security-docs",
+        "url": "https://cloud.google.com/security",
+        "checked_at": "2026-09-29T08:01:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloud.google.com/security",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Cybersecurity solutions: SecOps, intelligence, AI, and cloud security",
+        "canonical_url": "https://cloud.google.com/security",
+        "duration_signals": [
+          "000 hours"
+        ],
+        "signal_fingerprint": "c44d7a9732c934744d54a7d0fd9a2c0aa29cb2298c249d950bc51cba8c63a3b3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cloud.google.com/security",
+      "sha256": "d982e401ee68c3058b093df3b315cfdd70819c89393a1a4e6c34074b6c9f1939",
+      "text_characters": 47586
+    },
+    {
+      "id": "google-pcse-oreilly-official",
+      "url": "https://www.oreilly.com/library/view/official-google-cloud/9781119564062/",
+      "checked_at": "2026-09-29T08:01:06.762627+00:00",
+      "health": {
+        "id": "google-pcse-oreilly-official",
+        "url": "https://www.oreilly.com/library/view/official-google-cloud/9781119564062/",
+        "checked_at": "2026-09-29T08:01:06+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/official-google-cloud/9781119564062/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "google-pcse-whizlabs",
+      "url": "https://www.whizlabs.com/google-cloud-certified-professional-cloud-security-engineer/",
+      "checked_at": "2026-09-29T08:01:06.981245+00:00",
+      "health": {
+        "id": "google-pcse-whizlabs",
+        "url": "https://www.whizlabs.com/google-cloud-certified-professional-cloud-security-engineer/",
+        "checked_at": "2026-09-29T08:01:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/google-cloud-certified-professional-cloud-security-engineer/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GCP Cloud Security Engineer Course",
+        "canonical_url": "https://www.whizlabs.com/google-cloud-certified-professional-cloud-security-engineer/",
+        "duration_signals": [],
+        "signal_fingerprint": "39b20939bcb88601d3e7856d3787bc6c8275321a53064b629a07f621ee048f96",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/google-cloud-certified-professional-cloud-security-engineer/",
+      "sha256": "049e1045aa410560a9bddc99a09482c3dd2a1e58432c1783758caa44a04e896d",
+      "text_characters": 34
+    },
+    {
+      "id": "google-certification-about",
+      "url": "https://support.google.com/cloud-certification/answer/9750149?hl=en",
+      "checked_at": "2026-09-29T08:04:23.008945+00:00",
+      "health": {
+        "id": "google-certification-about",
+        "url": "https://support.google.com/cloud-certification/answer/9750149?hl=en",
+        "checked_at": "2026-09-29T08:04:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.google.com/cloud-certification/answer/9750149?hl=en",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "About Google Cloud Certifications - Cloud Certification Help",
+        "canonical_url": "https://support.google.com/cloud-certification/answer/9750149?hl=en",
+        "duration_signals": [],
+        "signal_fingerprint": "aee4e996bf3460b8966185137075e7de830b13332c225ccbadef6e427c29a435",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.google.com/cloud-certification/answer/9750149?hl=en",
+      "sha256": "f463fc752dc31649ac71d0faa14a038aecbfdb92b2a78b8abcc1d49ec3c3783b",
+      "text_characters": 2935
+    },
+    {
+      "id": "gcp-iam-conditions",
+      "url": "https://docs.cloud.google.com/iam/docs/conditions-overview",
+      "checked_at": "2026-09-29T08:04:23.010156+00:00",
+      "health": {
+        "id": "gcp-iam-conditions",
+        "url": "https://docs.cloud.google.com/iam/docs/conditions-overview",
+        "checked_at": "2026-09-29T08:04:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/iam/docs/conditions-overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Overview of IAM Conditions | Identity and Access Management (IAM) | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/iam/docs/conditions-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "bd9f2981b9243aab4408f9bcc08e36d827cea1a3b264ee656735407dfb80dd3e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/iam/docs/conditions-overview",
+      "sha256": "62724b3571e11102f9449ee3ccaf34dd91aa1127057817a79687a22a4bdf9096",
+      "text_characters": 16929
+    },
+    {
+      "id": "gcp-iam-deny",
+      "url": "https://docs.cloud.google.com/iam/docs/deny-overview",
+      "checked_at": "2026-09-29T08:04:23.010953+00:00",
+      "health": {
+        "id": "gcp-iam-deny",
+        "url": "https://docs.cloud.google.com/iam/docs/deny-overview",
+        "checked_at": "2026-09-29T08:04:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/iam/docs/deny-overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Deny policies | Identity and Access Management (IAM) | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/iam/docs/deny-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "76f9c4a30169f0bc9b3b1a41143935d82bfbbf26f8e03d70acfe2c4a81e54137",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/iam/docs/deny-overview",
+      "sha256": "86380cbeae6efd8e15a5544d942cbb0e4f791c2d52bf93029d5473bd85714c20",
+      "text_characters": 18185
+    },
+    {
+      "id": "gcp-iam-propagation",
+      "url": "https://docs.cloud.google.com/iam/docs/access-change-propagation",
+      "checked_at": "2026-09-29T08:04:24.832980+00:00",
+      "health": {
+        "id": "gcp-iam-propagation",
+        "url": "https://docs.cloud.google.com/iam/docs/access-change-propagation",
+        "checked_at": "2026-09-29T08:04:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/iam/docs/access-change-propagation",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Access change propagation | Identity and Access Management (IAM) | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/iam/docs/access-change-propagation",
+        "duration_signals": [
+          "2 minutes",
+          "7 minutes"
+        ],
+        "signal_fingerprint": "1ec8abb1ff16f6d1e0b40e3095b42e8a31e2f6ef42bb30ade9c74613cdb25398",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/iam/docs/access-change-propagation",
+      "sha256": "c18a6503262665df40aa0421a1af1e218aa3530d06cfc100e0f1f96f8aded663",
+      "text_characters": 4266
+    },
+    {
+      "id": "gcp-sa-key-practices",
+      "url": "https://docs.cloud.google.com/iam/docs/best-practices-for-managing-service-account-keys",
+      "checked_at": "2026-09-29T08:04:25.031552+00:00",
+      "health": {
+        "id": "gcp-sa-key-practices",
+        "url": "https://docs.cloud.google.com/iam/docs/best-practices-for-managing-service-account-keys",
+        "checked_at": "2026-09-29T08:04:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/iam/docs/best-practices-for-managing-service-account-keys",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Best practices for managing service account keys | Identity and Access Management (IAM) | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/iam/docs/best-practices-for-managing-service-account-keys",
+        "duration_signals": [],
+        "signal_fingerprint": "8cd00eb954e74164d805fe285ee5eefa7e2e840017bb171228f495a2856b9004",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/iam/docs/best-practices-for-managing-service-account-keys",
+      "sha256": "c679434e07245bed4adcbda8c872aea56e23e9fbeb448e11a1f90e11d7f883eb",
+      "text_characters": 30173
+    },
+    {
+      "id": "gcp-wif-deployment-pipelines",
+      "url": "https://docs.cloud.google.com/iam/docs/workload-identity-federation-with-deployment-pipelines",
+      "checked_at": "2026-09-29T08:04:25.611535+00:00",
+      "health": {
+        "id": "gcp-wif-deployment-pipelines",
+        "url": "https://docs.cloud.google.com/iam/docs/workload-identity-federation-with-deployment-pipelines",
+        "checked_at": "2026-09-29T08:04:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/iam/docs/workload-identity-federation-with-deployment-pipelines",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Configure Workload Identity Federation with deployment pipelines | Identity and Access Management (IAM) | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/iam/docs/workload-identity-federation-with-deployment-pipelines",
+        "duration_signals": [],
+        "signal_fingerprint": "8cceb6beb3339623122be6e84d4e37edc0057d08179a016fae0c14c3ffbb1df1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/iam/docs/workload-identity-federation-with-deployment-pipelines",
+      "sha256": "f1dfef5223be75db96f20be84751282847c8d0e6a1ac19dcc7795d2f534d4c55",
+      "text_characters": 40667
+    },
+    {
+      "id": "gcp-pam-overview",
+      "url": "https://docs.cloud.google.com/iam/docs/pam-overview",
+      "checked_at": "2026-09-29T08:04:25.962140+00:00",
+      "health": {
+        "id": "gcp-pam-overview",
+        "url": "https://docs.cloud.google.com/iam/docs/pam-overview",
+        "checked_at": "2026-09-29T08:04:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/iam/docs/pam-overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Privileged Access Manager overview | Identity and Access Management (IAM) | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/iam/docs/pam-overview",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "3a7b83e639220472dc636680ad88cabda30ee6a4f4b4ce2edef9b59c07ebb694",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/iam/docs/pam-overview",
+      "sha256": "5c572f0f244d9029fa6a1bdb628ec53b4181f8bfc48155e410dcaf5d9848f425",
+      "text_characters": 16331
+    },
+    {
+      "id": "gcp-secret-rotation",
+      "url": "https://docs.cloud.google.com/secret-manager/docs/secret-rotation",
+      "checked_at": "2026-09-29T08:04:27.063114+00:00",
+      "health": {
+        "id": "gcp-secret-rotation",
+        "url": "https://docs.cloud.google.com/secret-manager/docs/secret-rotation",
+        "checked_at": "2026-09-29T08:04:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/secret-manager/docs/secret-rotation",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Create rotation schedules in Secret Manager | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/secret-manager/docs/secret-rotation",
+        "duration_signals": [],
+        "signal_fingerprint": "025d307a66035ebe1f2ac562f8308e3e660e16ce5df9ee6c442720be7f76d83d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/secret-manager/docs/secret-rotation",
+      "sha256": "ce26e1709f88d9dc969c5db1bf789165314b2b7ef603c92758eda8f03713d7ba",
+      "text_characters": 18780
+    },
+    {
+      "id": "gcp-kms-envelope",
+      "url": "https://docs.cloud.google.com/kms/docs/envelope-encryption",
+      "checked_at": "2026-09-29T08:04:27.203934+00:00",
+      "health": {
+        "id": "gcp-kms-envelope",
+        "url": "https://docs.cloud.google.com/kms/docs/envelope-encryption",
+        "checked_at": "2026-09-29T08:04:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/kms/docs/envelope-encryption",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Envelope encryption | Cloud Key Management Service | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/kms/docs/envelope-encryption",
+        "duration_signals": [],
+        "signal_fingerprint": "3dc1495918bba69227493817b014f00a086ec8a31571de7076b685d96a28153d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/kms/docs/envelope-encryption",
+      "sha256": "75f64cd9598b411fac94ff3dbcff8c4e9de48456d5010eef7caeed4f40627831",
+      "text_characters": 7159
+    },
+    {
+      "id": "node24-crypto",
+      "url": "https://nodejs.org/docs/latest-v24.x/api/crypto.html",
+      "checked_at": "2026-09-29T08:04:27.481448+00:00",
+      "health": {
+        "id": "node24-crypto",
+        "url": "https://nodejs.org/docs/latest-v24.x/api/crypto.html",
+        "checked_at": "2026-09-29T08:04:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nodejs.org/docs/latest-v24.x/api/crypto.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Crypto | Node.js v24.21.0 Documentation",
+        "canonical_url": "https://nodejs.org/api/crypto.html",
+        "duration_signals": [
+          "19.0 min"
+        ],
+        "signal_fingerprint": "2c41da6fad1535bd3b41d0797bbde97dd682fc1e4bc4bf064fbb3811831d3e72",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nodejs.org/docs/latest-v24.x/api/crypto.html",
+      "sha256": "c62d122bc8f4f1b00cbc3b4f943716667422fe97162c23be1d3c444973dc2647",
+      "text_characters": 211609
+    },
+    {
+      "id": "gcp-audit-overview",
+      "url": "https://docs.cloud.google.com/logging/docs/audit",
+      "checked_at": "2026-09-29T08:04:28.794954+00:00",
+      "health": {
+        "id": "gcp-audit-overview",
+        "url": "https://docs.cloud.google.com/logging/docs/audit",
+        "checked_at": "2026-09-29T08:04:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/logging/docs/audit",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Cloud Audit Logs overview | Cloud Logging | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/logging/docs/audit",
+        "duration_signals": [],
+        "signal_fingerprint": "90aa1ae9e0f3ea2bc99f6ae50f88146328e2ef45cfc4c22c53c3361b9fb78de7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/logging/docs/audit",
+      "sha256": "2266fc36692af4eb27508687031d6b0cf6ff9f27b69e6c67664035adb3a9732c",
+      "text_characters": 19453
+    },
+    {
+      "id": "gcp-access-approval-overview",
+      "url": "https://docs.cloud.google.com/assured-workloads/access-approval/docs/overview",
+      "checked_at": "2026-09-29T08:04:28.910490+00:00",
+      "health": {
+        "id": "gcp-access-approval-overview",
+        "url": "https://docs.cloud.google.com/assured-workloads/access-approval/docs/overview",
+        "checked_at": "2026-09-29T08:04:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/assured-workloads/access-approval/docs/overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Overview of Access Approval | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/assured-workloads/access-approval/docs/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "f178c4e8efa2b5ed635422b6e5dae4bdbafad7d198c7e1d57072dcf7966540bd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/assured-workloads/access-approval/docs/overview",
+      "sha256": "553257ff39b03070758d8f8c8c34d06ed6c3f038033ef818deaa99e93c6d1c58",
+      "text_characters": 8370
+    },
+    {
+      "id": "gcp-cloudarmor-policy",
+      "url": "https://docs.cloud.google.com/armor/docs/security-policy-overview",
+      "checked_at": "2026-09-29T08:04:29.050773+00:00",
+      "health": {
+        "id": "gcp-cloudarmor-policy",
+        "url": "https://docs.cloud.google.com/armor/docs/security-policy-overview",
+        "checked_at": "2026-09-29T08:04:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/armor/docs/security-policy-overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Security policy overview | Google Cloud Armor | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/armor/docs/security-policy-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "e832cad339f2d8a73943de303ba967162d87bfc03fe8ea4ab30d4765e8215080",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/armor/docs/security-policy-overview",
+      "sha256": "e90b1817b7482834135d4eb3164cea53d4a829f1bf6f1c167fd624d4034c25ab",
+      "text_characters": 31225
+    },
+    {
+      "id": "google-pcse-pluralsight",
+      "url": "https://www.pluralsight.com/paths/google-cloud-professional-security-engineer",
+      "checked_at": "2026-09-29T08:04:30.190499+00:00",
+      "health": {
+        "id": "google-pcse-pluralsight",
+        "url": "https://www.pluralsight.com/paths/google-cloud-professional-security-engineer",
+        "checked_at": "2026-09-29T08:04:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/google-cloud-professional-security-engineer",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Google Cloud Professional Security Engineer",
+        "canonical_url": "https://www.pluralsight.com/paths/google-cloud-professional-security-engineer",
+        "duration_signals": [
+          "8 Hours"
+        ],
+        "signal_fingerprint": "f942938712fceb6d507e05c904f3d1f0a31c71180afd340210a5e97f6178ffc5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/google-cloud-professional-security-engineer",
+      "sha256": "152eb7a8f1851adc7665d26263f4c327184a4d187652578570caeb9455fcc476",
+      "text_characters": 6176
+    },
+    {
+      "id": "gcp-vpcsc-dry-run",
+      "url": "https://docs.cloud.google.com/vpc-service-controls/docs/dry-run-mode",
+      "checked_at": "2026-09-29T08:04:31.275601+00:00",
+      "health": {
+        "id": "gcp-vpcsc-dry-run",
+        "url": "https://docs.cloud.google.com/vpc-service-controls/docs/dry-run-mode",
+        "checked_at": "2026-09-29T08:04:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/vpc-service-controls/docs/dry-run-mode",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Dry run mode for service perimeters | VPC Service Controls | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/vpc-service-controls/docs/dry-run-mode",
+        "duration_signals": [],
+        "signal_fingerprint": "fa51d75879eb4f7dc15bdfd6e4c8e44880428524cbfe1d3b641952433ba70504",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/vpc-service-controls/docs/dry-run-mode",
+      "sha256": "9f593373f0de27f3e019b7fe828ea378574d8d0e96376bf9e8eab7f67f1879ae",
+      "text_characters": 11028
+    },
+    {
+      "id": "gcp-private-service-connect",
+      "url": "https://docs.cloud.google.com/vpc/docs/private-service-connect",
+      "checked_at": "2026-09-29T08:04:32.165385+00:00",
+      "health": {
+        "id": "gcp-private-service-connect",
+        "url": "https://docs.cloud.google.com/vpc/docs/private-service-connect",
+        "checked_at": "2026-09-29T08:04:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/vpc/docs/private-service-connect",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Private Service Connect | Virtual Private Cloud | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/vpc/docs/private-service-connect",
+        "duration_signals": [],
+        "signal_fingerprint": "0c8ba8394cba02cc76186fcb83b796c55eeafb3928325884d89106699c085da3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/vpc/docs/private-service-connect",
+      "sha256": "fa606d7397df25af9add0860a8266ceb49e9ea1e6e984998d8e98e7a2bbce44e",
+      "text_characters": 12954
+    },
+    {
+      "id": "gcp-kms-key-rotation",
+      "url": "https://docs.cloud.google.com/kms/docs/key-rotation",
+      "checked_at": "2026-09-29T08:04:32.308563+00:00",
+      "health": {
+        "id": "gcp-kms-key-rotation",
+        "url": "https://docs.cloud.google.com/kms/docs/key-rotation",
+        "checked_at": "2026-09-29T08:04:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/kms/docs/key-rotation",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Key rotation | Cloud Key Management Service | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/kms/docs/key-rotation",
+        "duration_signals": [],
+        "signal_fingerprint": "228174010a26969a942113b40c31f272723232323067574686605461e98b7da2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/kms/docs/key-rotation",
+      "sha256": "405a8068eabbbf5c793d61b0809d7b2bcc5faf71ec0b6f233f8d1432a0f39ec8",
+      "text_characters": 5723
+    },
+    {
+      "id": "gcp-cmek-rotation",
+      "url": "https://docs.cloud.google.com/kms/docs/cmek-rotation",
+      "checked_at": "2026-09-29T08:04:33.334231+00:00",
+      "health": {
+        "id": "gcp-cmek-rotation",
+        "url": "https://docs.cloud.google.com/kms/docs/cmek-rotation",
+        "checked_at": "2026-09-29T08:04:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/kms/docs/cmek-rotation",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CMEK key rotation | Cloud Key Management Service | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/kms/docs/cmek-rotation",
+        "duration_signals": [],
+        "signal_fingerprint": "71eec1a3102fa18d5348324e2cd6dfccc778fff96bb1ad6f1c337387d7e44b55",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/kms/docs/cmek-rotation",
+      "sha256": "27764f2e63752eea95ec053b371013b425facb9fcd6ce9ed21c5b4480595e51d",
+      "text_characters": 6997
+    },
+    {
+      "id": "gcp-gke-federation",
+      "url": "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/workload-identity",
+      "checked_at": "2026-09-29T08:04:33.482311+00:00",
+      "health": {
+        "id": "gcp-gke-federation",
+        "url": "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/workload-identity",
+        "checked_at": "2026-09-29T08:04:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/workload-identity",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "About Workload Identity Federation for GKE | GKE security | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/workload-identity",
+        "duration_signals": [
+          "1 hour",
+          "3 minutes"
+        ],
+        "signal_fingerprint": "6637b39b15ea6a8a53dc8d9b271d91a7dfe57caaaae54b806d3e633b0bde6244",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/workload-identity",
+      "sha256": "fd226993aa06c895e93241aeed59e2c700ea3b61d5e935ecde561a1bd336b98e",
+      "text_characters": 21558
+    },
+    {
+      "id": "gcp-log-routing",
+      "url": "https://docs.cloud.google.com/logging/docs/routing/overview",
+      "checked_at": "2026-09-29T08:04:34.087139+00:00",
+      "health": {
+        "id": "gcp-log-routing",
+        "url": "https://docs.cloud.google.com/logging/docs/routing/overview",
+        "checked_at": "2026-09-29T08:04:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/logging/docs/routing/overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Route log entries | Cloud Logging | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/logging/docs/routing/overview",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "9e2f7a4894379cc3aebe8e98373f5497333c7568cc8102255b781a1df6be3475",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/logging/docs/routing/overview",
+      "sha256": "2cfdcc71dac30227b2b4d9f434bd9190c6cd17c419f68a55a55ca01281637c10",
+      "text_characters": 25059
+    },
+    {
+      "id": "gcp-agent-platform-zdr",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+      "checked_at": "2026-09-29T08:04:34.969063+00:00",
+      "health": {
+        "id": "gcp-agent-platform-zdr",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+        "checked_at": "2026-09-29T08:04:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Gemini Enterprise Agent Platform and zero data retention | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "baaf0ae91ac84fe199f2ebb68401f586dc906c8974aa457b7a588966c9acdb83",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+      "sha256": "a87373f8d615980a0fef173467f1df9f62c28a62c7874f0f835aea17c1974207",
+      "text_characters": 11687
+    },
+    {
+      "id": "gcp-search-identity-provider",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+      "checked_at": "2026-09-29T08:04:35.361309+00:00",
+      "health": {
+        "id": "gcp-search-identity-provider",
+        "url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+        "checked_at": "2026-09-29T08:04:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Configure identity provider | Gemini Enterprise | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+        "duration_signals": [],
+        "signal_fingerprint": "56662f2fa59d53e106df8c7f63e3c37687e8beda38ba77a384d0c3692c9e3f5e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+      "sha256": "a6a4ae3b642c39b48d8070abdd56d361ce1b88ad22e406b567589e8924c5a017",
+      "text_characters": 14157
+    },
+    {
+      "id": "gcp-gemini-enterprise-2026",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+      "checked_at": "2026-09-29T08:04:35.508546+00:00",
+      "health": {
+        "id": "gcp-gemini-enterprise-2026",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+        "checked_at": "2026-09-29T08:04:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "The new Gemini Enterprise: one platform for agent development | Google Cloud Blog",
+        "canonical_url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+        "duration_signals": [
+          "PT7M"
+        ],
+        "signal_fingerprint": "cc80068c1a73d07f059434e922cd0791ba9336f3af1086529f13625a8be13cb3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+      "sha256": "efb715f36db14322394ec42f0e47485bcf2bf9d14066120d3d772f6916137d9e",
+      "text_characters": 10678
+    },
+    {
+      "id": "gcp-model-armor-overview",
+      "url": "https://docs.cloud.google.com/model-armor/overview",
+      "checked_at": "2026-09-29T08:04:37.298860+00:00",
+      "health": {
+        "id": "gcp-model-armor-overview",
+        "url": "https://docs.cloud.google.com/model-armor/overview",
+        "checked_at": "2026-09-29T08:04:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/model-armor/overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Model Armor overview | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/model-armor/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "13534481a4842604f2f012904a5ee2f4142fb440ffd8c52a32ccc1b2f14d3965",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/model-armor/overview",
+      "sha256": "b194aafbe43ada4c38f4167250880bd65350ed6ff9399dcc7bb3a2220f0d15d9",
+      "text_characters": 26957
+    },
+    {
+      "id": "gcp-model-armor-integrations",
+      "url": "https://docs.cloud.google.com/model-armor/integrations",
+      "checked_at": "2026-09-29T08:04:37.550500+00:00",
+      "health": {
+        "id": "gcp-model-armor-integrations",
+        "url": "https://docs.cloud.google.com/model-armor/integrations",
+        "checked_at": "2026-09-29T08:04:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/model-armor/integrations",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Overview | Model Armor | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/model-armor/integrations",
+        "duration_signals": [],
+        "signal_fingerprint": "de6ac1041b92403b081f0e74ec0ca8656fc026d20e36b260804c12f123e2ce7d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/model-armor/integrations",
+      "sha256": "ef8be50dacc0b28caa1dd83ae15f95c9e106234199ad2596cd1aa1993dce6541",
+      "text_characters": 13726
+    },
+    {
+      "id": "gcp-sa-keys-delete",
+      "url": "https://docs.cloud.google.com/iam/docs/keys-create-delete",
+      "checked_at": "2026-09-29T08:05:06.613435+00:00",
+      "health": {
+        "id": "gcp-sa-keys-delete",
+        "url": "https://docs.cloud.google.com/iam/docs/keys-create-delete",
+        "checked_at": "2026-09-29T08:05:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/iam/docs/keys-create-delete",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Create and delete service account keys | Identity and Access Management (IAM) | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/iam/docs/keys-create-delete",
+        "duration_signals": [],
+        "signal_fingerprint": "fe601d65f855aeb0ddb66e96fc11d69edade8f46eda129c0fdfa772ab1fbf050",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/iam/docs/keys-create-delete",
+      "sha256": "31a2eeb33be6595c8449c303a5e018c8fe08f1ecd49798201831d7cfb1ed1512",
+      "text_characters": 37698
+    },
+    {
+      "id": "gcp-run-binauth-enable",
+      "url": "https://docs.cloud.google.com/binary-authorization/docs/run/enabling-binauthz-cloud-run",
+      "checked_at": "2026-09-29T08:05:06.614089+00:00",
+      "health": {
+        "id": "gcp-run-binauth-enable",
+        "url": "https://docs.cloud.google.com/binary-authorization/docs/run/enabling-binauthz-cloud-run",
+        "checked_at": "2026-09-29T08:05:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/binary-authorization/docs/run/enabling-binauthz-cloud-run",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Enable Binary Authorization for Cloud Run | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/binary-authorization/docs/run/enabling-binauthz-cloud-run",
+        "duration_signals": [
+          "10 minutes",
+          "168 hours"
+        ],
+        "signal_fingerprint": "df9acfee719163552c0760342ed967a2ddb969d942f9a6ec3270f48a4b73ad2d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/binary-authorization/docs/run/enabling-binauthz-cloud-run",
+      "sha256": "fe1889867daeebc21184a08560595537f8402da624122e486e9beebf7fcc8eb4",
+      "text_characters": 13098
+    },
+    {
+      "id": "gcp-run-binauth-breakglass",
+      "url": "https://docs.cloud.google.com/binary-authorization/docs/run/using-breakglass-cloud-run",
+      "checked_at": "2026-09-29T08:05:06.614510+00:00",
+      "health": {
+        "id": "gcp-run-binauth-breakglass",
+        "url": "https://docs.cloud.google.com/binary-authorization/docs/run/using-breakglass-cloud-run",
+        "checked_at": "2026-09-29T08:05:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/binary-authorization/docs/run/using-breakglass-cloud-run",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Use breakglass (Cloud Run) | Binary Authorization | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/binary-authorization/docs/run/using-breakglass-cloud-run",
+        "duration_signals": [],
+        "signal_fingerprint": "11e4be93e5d7614fb70f37ce69c9ce990e0a6f0fe5ccb77b1348c10c58617e60",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/binary-authorization/docs/run/using-breakglass-cloud-run",
+      "sha256": "e865592ff0e661e7aab323e8a3a5de786f7aff70edc4abdce0a3e79ec9435127",
+      "text_characters": 3074
+    }
+  ],
+  "added_source_ids": [
+    "google-certification-about",
+    "gcp-iam-conditions",
+    "gcp-iam-deny",
+    "gcp-iam-propagation",
+    "gcp-sa-key-practices",
+    "gcp-wif-deployment-pipelines",
+    "gcp-pam-overview",
+    "gcp-secret-rotation",
+    "gcp-kms-envelope",
+    "node24-crypto",
+    "gcp-audit-overview",
+    "gcp-access-approval-overview",
+    "gcp-cloudarmor-policy",
+    "google-pcse-pluralsight",
+    "gcp-sa-keys-delete",
+    "gcp-run-binauth-enable",
+    "gcp-run-binauth-breakglass"
+  ],
+  "findings": [
+    {
+      "id": "googleprofessionalcloudsecurityengineer-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Missing lifecycle field does not imply absent validity terms",
+      "url": "https://support.google.com/cloud-certification/answer/9750149?hl=en",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Canonical monitoredpageomitsvalidity;separateofficialhelpgivesprofessional2yearvalidity.",
+      "recommendation": "Citevalidityseparatelyandretainexam-specificrenewalverification;initializemissingmonitorbaselinewithoutclaimingobjectivechange.",
+      "disposition": "applied",
+      "source_id": "google-certification-about",
+      "resolution": "Citevalidityseparatelyandretainexam-specificrenewalverification;initializemissingmonitorbaselinewithoutclaimingobjectivechange."
+    },
+    {
+      "id": "googleprofessionalcloudsecurityengineer-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A conditional allow cannot narrow an unconditional grant",
+      "url": "https://docs.cloud.google.com/iam/docs/conditions-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Bindingsaddaccess;anunconditionalbindingremainsapplicable.",
+      "recommendation": "Teacheffectiveinheritedaccessanddenialvalidationratherthantreatingoneconditionalbindingasaguardrail.",
+      "disposition": "applied",
+      "source_id": "gcp-iam-conditions",
+      "resolution": "Teacheffectiveinheritedaccessanddenialvalidationratherthantreatingoneconditionalbindingasaguardrail."
+    },
+    {
+      "id": "googleprofessionalcloudsecurityengineer-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Deny evaluation has separate condition and inheritance semantics",
+      "url": "https://docs.cloud.google.com/iam/docs/deny-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Unknownconditionappliesdeny;tagfunctionscopeandindependentinheritedpoliciesmatter.",
+      "recommendation": "Explainexceptionsarenotgrantsanddonotoverrideotherdenies;requireactualpositive/negativeaccesschecks.",
+      "disposition": "applied",
+      "source_id": "gcp-iam-deny",
+      "resolution": "Explainexceptionsarenotgrantsanddonotoverrideotherdenies;requireactualpositive/negativeaccesschecks."
+    },
+    {
+      "id": "googleprofessionalcloudsecurityengineer-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Key deletion does not revoke previously issued credentials",
+      "url": "https://docs.cloud.google.com/iam/docs/keys-create-delete",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Officialdeletionsectionexplicitlyseparateskeyfromissuedshort-livedtokensanddescribesSA-levelcontainmentimpact.",
+      "recommendation": "Addincidentrevocation/blast-radiusplanningandseparatepurpose-specificidentities.",
+      "disposition": "applied",
+      "source_id": "gcp-sa-keys-delete",
+      "resolution": "Addincidentrevocation/blast-radiusplanningandseparatepurpose-specificidentities."
+    },
+    {
+      "id": "googleprofessionalcloudsecurityengineer-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Shared issuers and reusable names need scoped immutable trust",
+      "url": "https://docs.cloud.google.com/iam/docs/workload-identity-federation-with-deployment-pipelines",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Providerdocrecommendsnumericowner/repositoryIDsandrestrictiveattributes;subjectdependsoneventcontext.",
+      "recommendation": "Requiremappedimmutableclaimsandactualevent-specificnegativecasesbeforegrantingcloudaccess.",
+      "disposition": "applied",
+      "source_id": "gcp-wif-deployment-pipelines",
+      "resolution": "Requiremappedimmutableclaimsandactualevent-specificnegativecasesbeforegrantingcloudaccess."
+    },
+    {
+      "id": "googleprofessionalcloudsecurityengineer-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "PAM entitlement does not universally require approval or offer every approval feature",
+      "url": "https://docs.cloud.google.com/iam/docs/pam-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Approvalisoptional;multi-party/levelandscopecustomizationhavepreview/tierconditions.",
+      "recommendation": "Separateentitlementfromgrant,configureapprovaldeliberatelyandtestexpiryplusremainingpermanentaccess.",
+      "disposition": "applied",
+      "source_id": "gcp-pam-overview",
+      "resolution": "Separateentitlementfromgrant,configureapprovaldeliberatelyandtestexpiryplusremainingpermanentaccess."
+    },
+    {
+      "id": "googleprofessionalcloudsecurityengineer-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Rotation schedule delivers a notification instead of completing credential rollout",
+      "url": "https://docs.cloud.google.com/secret-manager/docs/secret-rotation",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "SECRET_ROTATErequiresasubscriber;in-flightstateisnotificationdelivery.",
+      "recommendation": "Specifyidempotentrotation/sourcecredential/newversion/consumeradoption/retirementandobserveeachstage.",
+      "disposition": "applied",
+      "source_id": "gcp-secret-rotation",
+      "resolution": "Specifyidempotentrotation/sourcecredential/newversion/consumeradoption/retirementandobserveeachstage."
+    },
+    {
+      "id": "googleprofessionalcloudsecurityengineer-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Wrapped-key changes and payload encryption have different guarantees",
+      "url": "https://docs.cloud.google.com/kms/docs/envelope-encryption",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "EnvelopeencryptionseparatesDEKandKEK;directrotationandserviceintegrationshavedifferentold-dataeffects.",
+      "recommendation": "Teachnewversionversusrewrap/re-encryptionandexecute35localchecksforauthenticity/context/replaylimitswithoutclaimingcloudKMSvalidation.",
+      "disposition": "applied",
+      "source_id": "gcp-kms-envelope",
+      "resolution": "Teachnewversionversusrewrap/re-encryptionandexecute35localchecksforauthenticity/context/replaylimitswithoutclaimingcloudKMSvalidation."
+    },
+    {
+      "id": "googleprofessionalcloudsecurityengineer-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Preview and body inspection have distinct enforcement boundaries",
+      "url": "https://docs.cloud.google.com/armor/docs/security-policy-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Previewcontinuesevaluation;header/bodyphasesandconfiguredinspection/parserlimitsaffectcoverage.",
+      "recommendation": "Addactual-path/size/encoding/negativechecksandrequestlogenablement;avoidblanketWAFcoverageclaims.",
+      "disposition": "applied",
+      "source_id": "gcp-cloudarmor-policy",
+      "resolution": "Addactual-path/size/encoding/negativechecksandrequestlogenablement;avoidblanketWAFcoverageclaims."
+    },
+    {
+      "id": "googleprofessionalcloudsecurityengineer-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Data Access evidence needs explicit source and reader coverage",
+      "url": "https://docs.cloud.google.com/logging/docs/audit",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "MostservicesdefaultDataAccessoffexceptBigQuery;publicaccesscanlacklogs;LogsViewerdoesnotreadDefaultDataAccess.",
+      "recommendation": "Addservicemethod/config/destination/readermatrixandknownsafeeventverificationwithroutingfailurediagnosis.",
+      "disposition": "applied",
+      "source_id": "gcp-audit-overview",
+      "resolution": "Addservicemethod/config/destination/readermatrixandknownsafeeventverificationwithroutingfailurediagnosis."
+    },
+    {
+      "id": "googleprofessionalcloudsecurityengineer-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A retained breakglass annotation can affect later deployments",
+      "url": "https://docs.cloud.google.com/binary-authorization/docs/run/using-breakglass-cloud-run",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "OfficialwarningstatesdirectYAMLannotationcanbypassallsubsequentdeployments;breakglasslogsregardlessofpolicycompliance.",
+      "recommendation": "Requireexceptionremovalandfollowingnegativegatevalidation;protectenforcementrequirementwithorganizationpolicy.",
+      "disposition": "applied",
+      "source_id": "gcp-run-binauth-breakglass",
+      "resolution": "Requireexceptionremovalandfollowingnegativegatevalidation;protectenforcementrequirementwithorganizationpolicy."
+    },
+    {
+      "id": "googleprofessionalcloudsecurityengineer-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Provider access approval has enrollment and documented exceptions",
+      "url": "https://docs.cloud.google.com/assured-workloads/access-approval/docs/overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Supportedserviceselection,AccessTransparencyexclusions,outageautoapprovalandcontrol-packageexceptionsdefinescope.",
+      "recommendation": "Separatelogging/approvalfromworkloadIAMandcaptureactualsupport/assurances/signingresponsecontract.",
+      "disposition": "applied",
+      "source_id": "gcp-access-approval-overview",
+      "resolution": "Separatelogging/approvalfromworkloadIAMandcaptureactualsupport/assurances/signingresponsecontract."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "gcp-gemini-enterprise-2026",
+      "authors": [
+        "Brian Delahunty",
+        "Michael Gerstenhaber"
+      ],
+      "published_on": "2026-04-22",
+      "disposition": "accepted-with-limits",
+      "value": "Employeeappversusdeveloperplatformnamingcontext.",
+      "limits": "Fullarticlepreviouslyreadinsamesession;currenthealthyfetch;nouniversalAIsecurityguaranteeorexameffectivedateinferred."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "cloud_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 35,
+      "javascript_blocks_executed": 1,
+      "public_example_sha256": "4041bf8aa9715d7cf8c00333ef027afa04fc0eaa81ec6bd8092cd1b0035275e6",
+      "node_version": "v24.18.1",
+      "execution_stdout": "35 local checks passed",
+      "execution_boundary": "Exact public Node.js program executes real AES-256-GCM encryption/decryption,authenticateddata/keyIDbinding,wrongkey/tamperrejection,DEKrewrapping and replay/version checks plus structural assertions. All synthetic material is process-local. No KMS,HSM,IAM,providerkeyrotation,network,filesystemdata,cloudAPI,notification or deployment. Key-map absence models availability,not secure erasure or KMS state.",
+      "cloud_cli_probe": "Reuse preceding ACE same-session gcloud-not-found-on-PATH observation; no new probe,installation or authentication."
+    }
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Eight cloud labs remain proposed. Only35checks in the exact public Node.js program executed; no KMS,HSM,IAM,network,perimeter,cloudlog,secretrotationservice,model,provideraccessorBinaryAuthorizationdeployment tested.",
+    "AES-GCM uses native Node.js crypto with process-local synthetic keys. Key map absence is a local availability model,not KMS state,secure deletion or propagation. Old key bytes remain available for a recovery demonstration; no memory erasure claimed.",
+    "This teaching program is not a production cryptographic design. No persistent rotation/nonceinventory/concurrency/multiprocesscrash/large-input handling,hardware custody,provider IAM or independent cryptographic audit.",
+    "Authenticated context is visible; expected tenant/record/version must come from trusted application authorization. Rewrapping authenticates a key wrapper without validating payload/businessmeaning; valid ciphertext can replay without externalversionpolicy.",
+    "Prior same-session ACE gcloud-not-found-on-PATH observation reused. No installation,authentication,newruntime,credentials,serviceconfiguration or external notification attempted.",
+    "Actual4pageexamPDFfullyread;no visiblepublicationdate invented. Productpagesreadselectivelyasper-sourcenotes. Publiccertificationhelptwo-yearstatementisseparatefromcanonicalmonitoredfields;noexamrenewaloptionsborrowedfromPCA/PDE.",
+    "GoogleSkillsdurationsunexposed,Whizlabstitleshell,OReilly403. Paidcourses/books/providerlabs/proprietaryassessments/recalledexamitemsnotaccessed. DirectPluralsightpageusedoverstalesearchsnippet;metadata doesnot prove paidlessondepth."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Exact public Node.js program executes real AES-256-GCM encryption/decryption,authenticateddata/keyIDbinding,wrongkey/tamperrejection,DEKrewrapping and replay/version checks plus structural assertions. All synthetic material is process-local. No KMS,HSM,IAM,providerkeyrotation,network,filesystemdata,cloudAPI,notification or deployment. Key-map absence models availability,not secure erasure or KMS state.",
+    "passed": 35,
+    "javascript_blocks_executed": 1,
+    "public_example_sha256": "4041bf8aa9715d7cf8c00333ef027afa04fc0eaa81ec6bd8092cd1b0035275e6",
+    "node_version": "v24.18.1",
+    "execution_stdout": "35 local checks passed",
+    "cloud_cli_probe": "Reuse preceding ACE same-session gcloud-not-found-on-PATH observation; no new probe,installation or authentication.",
+    "learning_catalog_consistency": "passed"
+  },
+  "actual_pdf_receipts": [
+    {
+      "id": "google-pcse-exam-guide",
+      "url": "https://services.google.com/fh/files/misc/professional_cloud_security_engineer_exam_guide_english.pdf",
+      "checked_at": "2026-09-29T08:01:59.888824+00:00",
+      "health": {
+        "id": "google-pcse-exam-guide",
+        "url": "https://services.google.com/fh/files/misc/professional_cloud_security_engineer_exam_guide_english.pdf",
+        "checked_at": "2026-09-29T08:01:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/professional_cloud_security_engineer_exam_guide_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/professional_cloud_security_engineer_exam_guide_english.pdf",
+      "sha256": "301cd98c788ee573a57d115790a990839b0ce7eb2c1110c25edbd6d38ce16f89",
+      "bytes": 180544,
+      "pdf_pages": 4,
+      "text_characters": 9923
+    }
+  ],
+  "accepted_lifecycle_initialization": {
+    "changed": [
+      "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER",
+        "title": "Professional Cloud Security Engineer",
+        "url": "https://cloud.google.com/learn/certification/cloud-security-engineer",
+        "guide_path": "guides/GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER-professional-cloud-security-engineer.md",
+        "snapshot_path": "data\\objective-snapshots\\google-professional-cloud-security-engineer-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\google-professional-cloud-security-engineer-official-status.json",
+        "previous_sha256": "356877767ac663f5102c9f398ba61909d074668c92d54e0e09584341f5a48166",
+        "current_sha256": "356877767ac663f5102c9f398ba61909d074668c92d54e0e09584341f5a48166",
+        "previous_status_sha256": null,
+        "current_status_sha256": "144d4a0e903ac71ec0ae4dccba849ebf68ade9b1f515b397ecf0bfc86ba19945",
+        "official_status": {
+          "skills_versions": [
+            "Length: 2 hours",
+            "Registration fee: $200 (plus tax where applicable)",
+            "Languages: English, Japanese",
+            "Exam format: 50-60 multiple choice and multiple select",
+            "Exam delivery method:",
+            "Prerequisites: None",
+            "Recommended experience: 3+ years of industry"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "status_written": true,
+        "written": true
+      }
+    ]
+  },
+  "post_initialization_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER",
+        "title": "Professional Cloud Security Engineer",
+        "url": "https://cloud.google.com/learn/certification/cloud-security-engineer",
+        "guide_path": "guides/GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER-professional-cloud-security-engineer.md",
+        "snapshot_path": "data\\objective-snapshots\\google-professional-cloud-security-engineer-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\google-professional-cloud-security-engineer-official-status.json",
+        "previous_sha256": "356877767ac663f5102c9f398ba61909d074668c92d54e0e09584341f5a48166",
+        "current_sha256": "356877767ac663f5102c9f398ba61909d074668c92d54e0e09584341f5a48166",
+        "previous_status_sha256": "144d4a0e903ac71ec0ae4dccba849ebf68ade9b1f515b397ecf0bfc86ba19945",
+        "current_status_sha256": "144d4a0e903ac71ec0ae4dccba849ebf68ade9b1f515b397ecf0bfc86ba19945",
+        "official_status": {
+          "skills_versions": [
+            "Length: 2 hours",
+            "Registration fee: $200 (plus tax where applicable)",
+            "Languages: English, Japanese",
+            "Exam format: 50-60 multiple choice and multiple select",
+            "Exam delivery method:",
+            "Prerequisites: None",
+            "Recommended experience: 3+ years of industry"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  }
+}

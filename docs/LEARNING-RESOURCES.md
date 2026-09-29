@@ -2597,6 +2597,24 @@ This is **not a complete list**, and it is not meant to be consumed in full. Sel
 
 No PDE-specific MeasureUp listing was verified in this review. Older routes need an explicit gap check for BigLake/AlloyDB, Knowledge Catalog versus exam-era Dataplex names, Dataform assertion dependencies, CDC ordering/staleness, BigQuery Editions, point-in-time feature preparation, permission-aware RAG and regional recovery. Provider metadata does not certify that any course covers every current behavior.
 
+### GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER — Professional Cloud Security Engineer
+
+Resource details from the [GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER guide](../guides/GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER-professional-cloud-security-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is **not a complete list**, and it is not meant to be consumed in full. Pick one route, map it to the five current domains, and use primary docs/labs to close gaps. Public metadata was checked September 29, 2026. Suggested budgets include neither a guarantee of mastery nor measured completion time.
+
+| Resource | Access | Estimated time | Best use / currency note |
+|---|---|---|---|
+| [Official exam guide](https://services.google.com/fh/files/misc/professional_cloud_security_engineer_exam_guide_english.pdf) | Public | Suggested 1–2h then weekly | Current scope/checklist authority; actual four-page PDF reviewed |
+| [Google Skills PCSE path](https://www.skills.google/paths/15) | Account; labs may require credits | 21 activities; current activity durations not exposed | Earlier 82h30m total not reverified. The relative four-month update age is not study time |
+| [Official sample questions](https://docs.google.com/forms/d/e/1FAIpQLSfSuKEE8cUQWj9sfak7QG9hpaljBC89Y22KoWMQFgoECZjzUg/viewform) | Public | Suggested 30–60m plus review | Official format context; landing page only, question contents not used here |
+| [Google Cloud security documentation](https://cloud.google.com/security) | Public | Suggested 15–35h targeted | Discovery index; use behavior-specific primary pages cited above |
+| [Pluralsight PCSE path](https://www.pluralsight.com/paths/google-cloud-professional-security-engineer) | Paid/subscription | Six courses 6h56m plus two 30m labs = 7h56m; live header rounds to 8h | Intro November 2025; five domain courses January–July 2026. Direct page lists API-controls lab September 21 and DLP/CMEK lab September 11, 2026. Older search results still showed one lab/seven hours; direct dated catalog governs |
+| [Official Google Cloud Certified Professional Cloud Security Engineer Study Guide](https://www.oreilly.com/library/view/official-google-cloud/9781119564062/) | Paid O'Reilly | Suggested 12–18h reading plus labs; historical record: 2019, 368 pages | Current fetch returned 403; edition/pages not independently reverified. Older foundations need a current-scope gap check |
+| [Whizlabs Professional Cloud Security Engineer](https://www.whizlabs.com/google-cloud-certified-professional-cloud-security-engineer/) | Paid; free items may vary | Suggested 25–45h selected study; no verified current catalog total | Direct fetch exposed a title-only shell; current course/lab depth and counts not verified |
+
+A current Pluralsight path is now verified, correcting the earlier catalog gap. No PCSE-specific MeasureUp product or matching Coursera Professional Certificate was verified in this review. Public titles/dates are not proof of paid-lesson depth. Check older material for federation trust/revocation, conditional allow/deny, PAM release-stage limits, WAF/perimeter enforcement, secret/CMEK rotation, AI retrieval/tool/retention controls, deployment bypasses, audit coverage and provider-access scope.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.
