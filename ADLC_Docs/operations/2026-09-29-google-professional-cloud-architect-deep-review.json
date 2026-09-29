@@ -1,0 +1,2712 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT-professional-cloud-architect.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "106f032d9e6489d8e9d620756f661cd9c6293a1ab9b11b951b98a1dbdaaa8e1e",
+  "guide_after_sha256": "e4fd6bbb20d62ff91b5e78d364f176ef102399a20f6d4c276d97b9ad460bf195",
+  "prior_records": {
+    "exam": {
+      "code": "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT",
+      "level": "expert",
+      "vendor_id": "google-cloud",
+      "title": "Professional Cloud Architect",
+      "status": "active",
+      "study_guide_url": "https://cloud.google.com/learn/certification/cloud-architect",
+      "guide_path": "guides/GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT-professional-cloud-architect.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; Google recommends three or more years of industry experience including at least one year designing and managing Google Cloud solutions. Practice requirements-to-decision traceability, the six Well-Architected pillars, hybrid/multicloud migration, service/data/network/AI selection, security/compliance evidence, repeatable delivery, cost/change/skills governance, observability, release, recovery and production resilience using the four official case studies."
+    },
+    "review": {
+      "id": "google-professional-cloud-architect-2026-09-02-source-validation",
+      "exam_code": "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT",
+      "guide_path": "guides/GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT-professional-cloud-architect.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/google-professional-cloud-architect-official-objectives.txt",
+      "blueprint_snapshot_sha256": "fceaa0587ed0fa26fcf66a037a2abb7e4103231cccb6ad9052153ca3cb328ec2",
+      "objective_coverage": [
+        {
+          "objective_group": "Designing and planning a cloud solution architecture (~25%)",
+          "guide_sections": [
+            "Section 1",
+            "Official case-study method",
+            "All scenarios and labs"
+          ]
+        },
+        {
+          "objective_group": "Managing and provisioning a cloud solution infrastructure (~17.5%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1–3",
+            "Labs 2–7"
+          ]
+        },
+        {
+          "objective_group": "Designing for security and compliance (~17.5%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenario 2",
+            "Labs 2, 5–8"
+          ]
+        },
+        {
+          "objective_group": "Analyzing and optimizing technical and business processes (~15%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1 and 3",
+            "Labs 1, 7–8"
+          ]
+        },
+        {
+          "objective_group": "Managing implementation (~12.5%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 3–8"
+          ]
+        },
+        {
+          "objective_group": "Ensuring solution and operations excellence (~12.5%)",
+          "guide_sections": [
+            "Section 6",
+            "All scenarios",
+            "Labs 3–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 13,
+        "reachable": 12,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All six current domains and the cross-cutting six-pillar Well-Architected baseline are mapped through requirements, tradeoffs, provisioning, security/compliance evidence, technical/business processes, implementation and production operation. The four official V6.1 cases get a reusable fact-to-decision method; three additional scenarios, eight labs and 36 checks reinforce it. All 13 URLs are cataloged: 12 reachable and O'Reilly automation-blocked; none missing or broken. No proprietary question bank, recalled item or copied course content is used."
+    },
+    "sources": [
+      {
+        "id": "google-pca-certification",
+        "title": "Professional Cloud Architect certification",
+        "url": "https://cloud.google.com/learn/certification/cloud-architect",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+        ],
+        "notes": "Canonical live capability, delivery, renewal, preparation and branding-update page; monitored by the Google Cloud certification adapter."
+      },
+      {
+        "id": "google-pca-exam-guide",
+        "title": "Professional Cloud Architect certification exam guide",
+        "url": "https://services.google.com/fh/files/misc/professional_cloud_architect_exam_guide_english.pdf",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+        ],
+        "notes": "Detailed seven-page six-domain 25/17.5/17.5/15/12.5/12.5 baseline with four linked V6.1 cases and current AI/agent branding; no visible publication date."
+      },
+      {
+        "id": "google-pca-well-architected",
+        "title": "Google Cloud Well-Architected Framework",
+        "url": "https://cloud.google.com/architecture/framework",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+        ],
+        "notes": "First-party cross-cutting operational excellence, security, reliability, cost, performance and sustainability guidance explicitly required by the current exam guide."
+      },
+      {
+        "id": "google-pca-architecture-center",
+        "title": "Google Cloud Architecture Center",
+        "url": "https://cloud.google.com/architecture",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+        ],
+        "notes": "First-party reference architectures, decision guides and production guidance."
+      },
+      {
+        "id": "google-pca-altostrat-case",
+        "title": "Altostrat Media case study V6.1",
+        "url": "https://services.google.com/fh/files/misc/v6.1_pca_altostrat_media_case_study_english.pdf",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+        ],
+        "notes": "One of four fictitious cases linked by the current official exam guide."
+      },
+      {
+        "id": "google-pca-cymbal-case",
+        "title": "Cymbal Retail case study V6.1",
+        "url": "https://services.google.com/fh/files/misc/v6.1_pca_cymbal_retail_case_study_english.pdf",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+        ],
+        "notes": "One of four fictitious cases linked by the current official exam guide."
+      },
+      {
+        "id": "google-pca-ehr-case",
+        "title": "EHR Healthcare case study V6.1",
+        "url": "https://services.google.com/fh/files/misc/v6.1_pca_ehr_healthcare_case_study_english.pdf",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+        ],
+        "notes": "One of four fictitious cases linked by the current official exam guide."
+      },
+      {
+        "id": "google-pca-knightmotives-case",
+        "title": "KnightMotives Automotive case study V6.1",
+        "url": "https://services.google.com/fh/files/misc/v6.1_pca_knightmotives_automotive_case_study_english.pdf",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+        ],
+        "notes": "One of four fictitious cases linked by the current official exam guide."
+      },
+      {
+        "id": "google-pca-skills-path",
+        "title": "Professional Cloud Architect Exam learning path",
+        "url": "https://www.skills.google/paths/12",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+        ],
+        "notes": "Twenty-four first-party activities list about 172h15m including a 72-hour GKE badge; select modules according to gaps. Labs may require credits or entitlement."
+      },
+      {
+        "id": "google-pca-sample-questions",
+        "title": "Professional Cloud Architect official sample questions",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSf54f7FbtSJcXUY6-DUHfBG31jZ3pujgb8-a5io_9biJsNpqg/viewform?usp=sf_link",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+        ],
+        "notes": "Official untimed repeatable sample questions; not predictive of exam result."
+      },
+      {
+        "id": "google-pca-coursera",
+        "title": "Preparing for Google Cloud Certification: Cloud Architect",
+        "url": "https://www.coursera.org/professional-certificates/gcp-cloud-architect",
+        "publisher": "Coursera / Google Cloud",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+        ],
+        "notes": "Six-course first-party program; page estimates about two months at ten hours weekly. Subscription and audit terms vary."
+      },
+      {
+        "id": "google-pca-oreilly-sullivan",
+        "title": "Google Cloud Certified Professional Cloud Architect Study Guide, Second Edition",
+        "url": "https://www.oreilly.com/library/view/google-cloud-certified/9781119821002/",
+        "publisher": "O'Reilly / Sybex / Dan Sullivan",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+        ],
+        "notes": "2022, 352-page structured guide that substantially predates the current agentic-AI, AI-security, product-brand and V6.1 case-study scope."
+      },
+      {
+        "id": "google-pca-whizlabs",
+        "title": "Google Cloud Professional Cloud Architect course and practice",
+        "url": "https://www.whizlabs.com/google-cloud-certified-professional-cloud-architect/",
+        "publisher": "Whizlabs",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+        ],
+        "notes": "Commercial course, practice and lab bundle; verify current domain, product-name and case-study alignment against first-party sources."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "18b6c775559ff6a12e42f60d74a240c174f6938ecc9f16c56a567731bea60461",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "afb14435fae088f822470204b50f16fbd001cce616d3b4f8bf3010e466c5dff7",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "23d4e0914b5ba33ba8fdd0046aeba90974cd6848feaaa9ed635dd62cca25d641",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "cbdd89652d0118a67b41c29fd29fa896504d5244d491676a4403e32d935e2394",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "cb2256c2834a138510367cb289fa3c28e371da2ad1b7b5426e608b66bcce2785",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "f13ee7871a3b574244b9a63c7162e88110fbb9cfaee3da0d80b360233f5c3271",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "fbb29cdf6696baa0bc693978797f027e044dcc75c5086fc9d69f64138613f372",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "9a219e65dfec3a5ad8d5547d34ab1f3e9e1c353cc1b9fe988ce77f758c74308c",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "8daf90602320943c75465b13c579b50ce092927263d4928663781b8472d8eb36",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "f1fdbc6fb74e3d707c0c78653c2f93cc4942528876df04330714a44df6c36fa8",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 11,
+      "objective_sha256": "89b053166317417a75fe6db632c16c10ce6d9f6d78d0fedf9d6840a3f76d777d",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 12,
+      "objective_sha256": "a37c93100e7c535c881a2a05767331145e0bcd4830543f6c1d84a0e10219b6bb",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 13,
+      "objective_sha256": "d7edaf3b2ce13dc8922ff27c13dd54e356b5e0868102bf9a7e14e9de832e65f2",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 14,
+      "objective_sha256": "88f0ee28cab7f5fad88b50a373f9c68ea02e5f388341c12097a2b463c16abaad",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 15,
+      "objective_sha256": "878ecebcdd2cf5d75812d8619e0dd710c7bacbad743638efa40c3009e1d131e5",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 16,
+      "objective_sha256": "ae3ece903f7f9219a28ef1dcfe9901a8c9602e8eecc5e78ca8ee78192e498d08",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 17,
+      "objective_sha256": "afceb8b477e89cbdad129328b546ee086b931fc44aa82ea228c8f0cf94181b15",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 18,
+      "objective_sha256": "9f57f4633f908f5a9f20eae1eba963d2f7f430246be489d1466328aa26defceb",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 19,
+      "objective_sha256": "32c46f7c19e763f762622fef5bc30e739ca71d330b1e4ac48fa424ccdde35dd1",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 20,
+      "objective_sha256": "b5405f82e9cc912d95ae55b8fb5c984308c81113530a7ba0d07990bea95b5000",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 21,
+      "objective_sha256": "82daa6f9e3af1409846792c8b1bbb8cbda6e6308fad86028b0093b7684e6e25d",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 22,
+      "objective_sha256": "69217bd76b148e8a4fa8c989a8886c6c2ac41df881433ac66586d8c6d76eee64",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 23,
+      "objective_sha256": "7bad518255b1cd664e44ce39741199e13362fbfe9231eabb17e169d263672f40",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 24,
+      "objective_sha256": "9e97b8a728f1dc0010e467f5d2bfe1295b7700d608ce9367a86b2f5880a41038",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 25,
+      "objective_sha256": "cf8e346fb8d0f18dd93bfc3381d2629480000cdbec15bd95022cdbebc51f16f9",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 26,
+      "objective_sha256": "3674672e143e9ed05a5d67436d933b91106b1cf4a1a3afe8de2e925f7a0c9b74",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 27,
+      "objective_sha256": "39422691afe067bd326e2f7fda6c74f8def720ef72e1db5ccf0a4e221dddf001",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 28,
+      "objective_sha256": "0b464a7c9f1d2df55421ca1919a60484f02b21f3695d9e87d04bbaaaff4373fb",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 29,
+      "objective_sha256": "fc2f52591ba048ca7c69a4c54deb770c70619b32a5e12ab763cd6d677c5e3cd8",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 30,
+      "objective_sha256": "c0f4aec949d47bbf1643c5a447c23aead17f14875e9c64c593d53ece56a13320",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 31,
+      "objective_sha256": "7269230e7bd645a935da09aa7eaa13de22853fc8f1cb44783db974e2e5ccc7aa",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 32,
+      "objective_sha256": "d08b5520facd97fbbeee266f9fe4a6ed394ffc5e03352ee49444ae199d413997",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 33,
+      "objective_sha256": "65896d0ffa7e2333e355cd8f0fcc81135559b1cd5f43c46b3280ff4a7a84fe61",
+      "guide_sections": [
+        "1. Designing and planning — about 25%",
+        "Working with the official case studies",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "b034f06fdfca0fa6cf5aef47df61e1140b60eb17f67101dddc94d199a8f91c80",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "53e37c70f0a8adab47d8fc3107992943f442156b370a47dbf6d9b8d5dd0a5ffb",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "6d4d5a90daa1f7a8a76e98b8ee6bbfd04b1398794c64ec2b3135a24c30835486",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "f0f31ca2d60e825c0c56b4203faa054e9b42b13298ff53da298d0e7b7168aa40",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "522c8ffda479632eec4d4e8c6115e3b5d78e198f03fa9d9fc62b3babf2060c2d",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "472b0dd1f054fe09b3cd81850ee9ef71110a85352d8fdc21156c928c3133eb25",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "091583bf0e4f8cfc923c0b58e9342d53c8edc454922162c61ff87427158f6f00",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "b166b5a326ea27ebc1942f62938233001a595abe2174e9c992c222b3efbfa1c4",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "8789365ace75c1fddbdda88475eb172b889979da769c4b4b0b3d972370feebd8",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 10,
+      "objective_sha256": "bea278d66c0bb18e2d776d7852cb4dc77cfbf5ac6ffd5d36f7000eddc0d0d294",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 11,
+      "objective_sha256": "2b0fb222b8e4be55d5c97c270c53388fff2564dfb8c0979b5cd4bb85ca472eb2",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 12,
+      "objective_sha256": "cf86c060b2b37a39c79605bba25490b6abb67686b4a8dd9ff09f711736c89e80",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 13,
+      "objective_sha256": "f82f05e56644abc6691538ac9fc5778bf8bc21f34920283714f94c752becec9e",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 14,
+      "objective_sha256": "20b3deadb625b4d82359eeeffd5016b63e1e25c5055694a60e6e7cca5e562073",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 15,
+      "objective_sha256": "40aad656572ffee31d89e831d1d43d274261485e8f68e9d99a7c566fd804f301",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 16,
+      "objective_sha256": "adf2291cd693fcfa5434289500f94be669ceec637880984aa12d2931c9e3aba5",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 17,
+      "objective_sha256": "575fc5ac9e4e8a1f3d4dd026426d1babdb78db98cf321b762988b2b17d749ec0",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 18,
+      "objective_sha256": "3db92a6da7cb316204dd36b413451ad36d49e430745b6b40c177d1eb6511a93a",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 19,
+      "objective_sha256": "0c2596fbe3e31528477be847f278b2e2a9b7339ad27a181b638d5beb4c8b9295",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 20,
+      "objective_sha256": "1c0e94f692f2962a2d001857e8a5a294ff3a028b1c61fd0248672191bfe81fd4",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 21,
+      "objective_sha256": "35404613b571aa0650cd45f27f726cfd142705da6a30f16462a588565c38a420",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 22,
+      "objective_sha256": "dc35507e62ce42dcd5eea1d482b03704e0c54ac8b4f0405fb75e35854c2ac8ba",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 23,
+      "objective_sha256": "287953b94bed80ac60c21d22f45168435022e02eb4e7ecfdcdcbb47dc5c5175a",
+      "guide_sections": [
+        "2. Managing and provisioning infrastructure — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "0ddaf3d0a90ca97b43c49ed4d80cf7eb6a440455d627d58eb3fa1258585a1141",
+      "guide_sections": [
+        "3. Security and compliance — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "fbec0c1fee0bb5a6a1d3602293d8d54af22fc06c1fd0a7789af3a152894d67b3",
+      "guide_sections": [
+        "3. Security and compliance — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "4c9efbc92e513fc7a078a92b3f1bcefe2b60825ced2e96990f9a38c2e1bbb417",
+      "guide_sections": [
+        "3. Security and compliance — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "d4172bcea088ec782fc7ae24caf143b360c2843eeb9f4dec181ea693ab10ef14",
+      "guide_sections": [
+        "3. Security and compliance — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "783662443f5042b53eabcfa19ae09bd58b52a537d78c60c06a2d05208af1dc2e",
+      "guide_sections": [
+        "3. Security and compliance — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "6dab1bb7194ce8af56eea6fddb85e86c580255543d64d7f72331c23e808ca152",
+      "guide_sections": [
+        "3. Security and compliance — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "563303bef6583a4afcc2ac021bab3b0a57d12562951feb89f4e59ebe15de2108",
+      "guide_sections": [
+        "3. Security and compliance — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "ad81c9b1f3528458d2c7bcc39c049e0b84dcf691b6cd5d766316e73050e19ad2",
+      "guide_sections": [
+        "3. Security and compliance — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "0c9f3a2f43312483a843bcf0675f1a1f8972eb7953828be8273ac2e72b9c1070",
+      "guide_sections": [
+        "3. Security and compliance — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 10,
+      "objective_sha256": "c99a8d8eadcbbeb3910dfbb4cef8269ea1b8ca39fc7ef05b0c18d2d767d1baec",
+      "guide_sections": [
+        "3. Security and compliance — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 11,
+      "objective_sha256": "7a6d437111baddb79ff3db358495ca79e28d1225fd6de56d46421b7effbe2e17",
+      "guide_sections": [
+        "3. Security and compliance — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 12,
+      "objective_sha256": "f178e30b73f22059cbcd8c82deb04f28a4186b7a079afeeba32e44d708dd98bf",
+      "guide_sections": [
+        "3. Security and compliance — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 13,
+      "objective_sha256": "47f67f608ce1e793ae6ae60d21fd28a1208ef9098851aabc7c460887763477e7",
+      "guide_sections": [
+        "3. Security and compliance — about 17.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "804e965e68c53bf0bf13c2a9d6dc9a476de3ac1e093f8bd703f6c94020d03ad4",
+      "guide_sections": [
+        "4. Optimize technical and business processes — about 15%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "afe6531b2f3fd6bd16d1d0b8adde4a9e795f389faa64c7c91ada5dcf4d2b9991",
+      "guide_sections": [
+        "4. Optimize technical and business processes — about 15%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "e0244466a95bff126440f7dc400503b937a5d9c71e280de4fce612ea71c60c22",
+      "guide_sections": [
+        "4. Optimize technical and business processes — about 15%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "f93321ba27ad2066cb046ad36ef7588f81f6724139aa8b910268a0310aca4a31",
+      "guide_sections": [
+        "4. Optimize technical and business processes — about 15%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "2a4cc2cba104d5329c0c0f5b69309e545cf3fd80e10a84cfe6bd71ea87f422f5",
+      "guide_sections": [
+        "4. Optimize technical and business processes — about 15%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "9617e302aaf1e683e2ca601a3ff5bbca8838399cedbbe2a49592adfa8eaf25fe",
+      "guide_sections": [
+        "4. Optimize technical and business processes — about 15%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "565733e05a3c2bda5d6b954316aab2debd47e5e78ad884e7675e47dd5cef32d8",
+      "guide_sections": [
+        "4. Optimize technical and business processes — about 15%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "6a4aaf5aaad0eef7174d37a8e7fe3fb0f31e34cec45f210cc8dfecced612610d",
+      "guide_sections": [
+        "4. Optimize technical and business processes — about 15%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "8394363f419fb10c487e693955b907e020e3c55002059d7304ad912a707f1862",
+      "guide_sections": [
+        "4. Optimize technical and business processes — about 15%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 10,
+      "objective_sha256": "0e367f8424e548333e343ca80f3d9004b971c239498508a708abf03511fceb20",
+      "guide_sections": [
+        "4. Optimize technical and business processes — about 15%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 11,
+      "objective_sha256": "50bfaa6c73146aec1347db3e1eee911f8c52851bbc253478d0597bd45929eeeb",
+      "guide_sections": [
+        "4. Optimize technical and business processes — about 15%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 12,
+      "objective_sha256": "c9622f1a30e1c86ab3fd09e9242a7be57d85be69fbb57421be8e9a2561971bd5",
+      "guide_sections": [
+        "4. Optimize technical and business processes — about 15%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 13,
+      "objective_sha256": "0f10f003505059658c124751f5edfbff9a6b8c6bdaa4e94fc1ed6f7c1749fa96",
+      "guide_sections": [
+        "4. Optimize technical and business processes — about 15%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "fd839ae196c4e23a3f85b55b3fdf63806c68de0b5be8b5f5e927d4b60826cd27",
+      "guide_sections": [
+        "5. Managing implementation — about 12.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "9bca5780ffa5dfafe2315749b9f70c925ab8f316aef2d2064ff943c5256889c9",
+      "guide_sections": [
+        "5. Managing implementation — about 12.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "e64f97662c520db469a1dfebbb8631e5ba0b4c5f32c82e15cf5d23d331c859b7",
+      "guide_sections": [
+        "5. Managing implementation — about 12.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "9b7853c9ed6e9a7eed7c998bad58824e8733e6906e136c99d6d7652816fec4a7",
+      "guide_sections": [
+        "5. Managing implementation — about 12.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "9f57f4633f908f5a9f20eae1eba963d2f7f430246be489d1466328aa26defceb",
+      "guide_sections": [
+        "5. Managing implementation — about 12.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "eafa33cc722a5e0f554c5690e0fe6f1654139ce8ce5159c7e6a305666eee97f8",
+      "guide_sections": [
+        "5. Managing implementation — about 12.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "3015c74f83dcd824ff2639c68b089814dc7a7e89ee6b3b0290832775be8e19da",
+      "guide_sections": [
+        "5. Managing implementation — about 12.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 8,
+      "objective_sha256": "3aaace68b7b7c0e05000ad1f715ecbf25084f1eeba2274a471aeeddca773f10f",
+      "guide_sections": [
+        "5. Managing implementation — about 12.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 9,
+      "objective_sha256": "ed791bf09ae317f84abc804f2695eff0fb8e37512ef53b5ead382a9ce542820b",
+      "guide_sections": [
+        "5. Managing implementation — about 12.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 10,
+      "objective_sha256": "332af4c040bd9f5ed6da4e58f7264804090721f997a94cd2864db7fa652fc0fc",
+      "guide_sections": [
+        "5. Managing implementation — about 12.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 11,
+      "objective_sha256": "55eafa03929bd7f7233b9204a3ea5c0df0dab39e6f47b78e335ed070d8bd0d06",
+      "guide_sections": [
+        "5. Managing implementation — about 12.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "a451f43ad3dfbcdcf8c01a2fb2ddec60f28ad2a89cbb9be99b8feddcf1bd6bbd",
+      "guide_sections": [
+        "6. Solution and operations excellence — about 12.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "632ff8a5746cc31a2b6ae9789ccc3a464df0cd379b2b1beadb76c05945f9af10",
+      "guide_sections": [
+        "6. Solution and operations excellence — about 12.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "424a92378d7ab58f05bb645ae7a2bc11476a6ed1a0a32309e2c3e48125ff7f11",
+      "guide_sections": [
+        "6. Solution and operations excellence — about 12.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "c366257945ed57e3deec892d2b9ea089a3394eb25283e8fe90e5ff17f6e81877",
+      "guide_sections": [
+        "6. Solution and operations excellence — about 12.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "a6aa2459f9b360ce63f69b703b6f6d43a682c9c927ba05ef084a5fec5bedecd6",
+      "guide_sections": [
+        "6. Solution and operations excellence — about 12.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "0e66437fd9f78b1f035adcf83edcbed2152151147a47bebb99314f6f5ea07c85",
+      "guide_sections": [
+        "6. Solution and operations excellence — about 12.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "c5ac33d585d32d0541458a70a1715b2677eb0c3bd6542e1658702626cf054d7c",
+      "guide_sections": [
+        "6. Solution and operations excellence — about 12.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 8,
+      "objective_sha256": "85716e25ff193beeb7716729d82419232fb2d33ac2d91fe9860445565174d1be",
+      "guide_sections": [
+        "6. Solution and operations excellence — about 12.5%",
+        "Integrated practice scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT",
+        "title": "Professional Cloud Architect",
+        "url": "https://cloud.google.com/learn/certification/cloud-architect",
+        "guide_path": "guides/GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT-professional-cloud-architect.md",
+        "snapshot_path": "data\\objective-snapshots\\google-professional-cloud-architect-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\google-professional-cloud-architect-official-status.json",
+        "previous_sha256": "fceaa0587ed0fa26fcf66a037a2abb7e4103231cccb6ad9052153ca3cb328ec2",
+        "current_sha256": "fceaa0587ed0fa26fcf66a037a2abb7e4103231cccb6ad9052153ca3cb328ec2",
+        "previous_status_sha256": null,
+        "current_status_sha256": "e914ad2789c7bdf089beb9e0650c2e050f74e7d75e60820cf55a146896fa5d03",
+        "official_status": {
+          "skills_versions": [
+            "Length: 2 hours",
+            "Registration fee: $200 (plus tax where applicable)",
+            "Languages: English, Japanese",
+            "Exam format: 50-60 multiple choice and multiple",
+            "Exam delivery method:",
+            "Validity period: 2 years",
+            "Prerequisites: None",
+            "Recommended experience: 3+ years of industry",
+            "Validity period: 1 year",
+            "Length: 1 hour",
+            "Registration fee: $100 (plus tax where applicable)",
+            "Exam format: 25 multiple choice and multiple select questions"
+          ],
+          "upcoming_announcements": [
+            "This exam was updated to reflect recent branding changes. Refer to the exam guide to review product names used on the exam."
+          ]
+        },
+        "objectives_changed": false,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 31,
+    "reachable": 30,
+    "access_blocked": 1,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "google-pca-certification",
+      "url": "https://cloud.google.com/learn/certification/cloud-architect",
+      "checked_at": "2026-09-29T07:29:48.435252+00:00",
+      "health": {
+        "id": "google-pca-certification",
+        "url": "https://cloud.google.com/learn/certification/cloud-architect",
+        "checked_at": "2026-09-29T07:29:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloud.google.com/learn/certification/cloud-architect",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Professional Cloud Architect Certification | Learn | Google Cloud",
+        "canonical_url": "https://cloud.google.com/learn/certification/cloud-architect",
+        "duration_signals": [
+          "1 hour",
+          "2 hours"
+        ],
+        "signal_fingerprint": "b5646d7f3b5169779ff234c86ec186ce12245c5dcf02b79392303fc449515e43",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cloud.google.com/learn/certification/cloud-architect",
+      "sha256": "388e092f51c605d3c8a612bb448474918ee4767a36219c70c82c2a5dd08a040b",
+      "text_characters": 6928
+    },
+    {
+      "id": "google-pca-exam-guide",
+      "url": "https://services.google.com/fh/files/misc/professional_cloud_architect_exam_guide_english.pdf",
+      "checked_at": "2026-09-29T07:30:32.147211+00:00",
+      "health": {
+        "id": "google-pca-exam-guide",
+        "url": "https://services.google.com/fh/files/misc/professional_cloud_architect_exam_guide_english.pdf",
+        "checked_at": "2026-09-29T07:30:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/professional_cloud_architect_exam_guide_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/professional_cloud_architect_exam_guide_english.pdf",
+      "sha256": "3803bc093831cbfe270f56446c270d072c67bbe8ad8f34579027add56549211d",
+      "bytes": 218368,
+      "pdf_pages": 7,
+      "text_characters": 12869
+    },
+    {
+      "id": "google-pca-well-architected",
+      "url": "https://cloud.google.com/architecture/framework",
+      "checked_at": "2026-09-29T07:29:48.436295+00:00",
+      "health": {
+        "id": "google-pca-well-architected",
+        "url": "https://cloud.google.com/architecture/framework",
+        "checked_at": "2026-09-29T07:29:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/architecture/framework",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Google Cloud Well-Architected Framework | Cloud Architecture Center | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/architecture/framework",
+        "duration_signals": [],
+        "signal_fingerprint": "ee2b671555c8dfad921dd0499f4e9651dce0bf912735d550e4b4672be25aea96",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/architecture/framework",
+      "sha256": "c7074369e5ab66e4cde47694ddfb6945d94eab819e42329144b749ebe3716474",
+      "text_characters": 8342
+    },
+    {
+      "id": "google-pca-architecture-center",
+      "url": "https://cloud.google.com/architecture",
+      "checked_at": "2026-09-29T07:29:49.195374+00:00",
+      "health": {
+        "id": "google-pca-architecture-center",
+        "url": "https://cloud.google.com/architecture",
+        "checked_at": "2026-09-29T07:29:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/architecture",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Cloud Architecture Guidance and Topologies | Cloud Architecture Center | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/architecture",
+        "duration_signals": [],
+        "signal_fingerprint": "3951dcc34ec3735c9f23fdea9e4aaec125bd71cdb8226873e488bb0686912b29",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/architecture",
+      "sha256": "ef26c9ded4e680ff8de64cce9b2a175f79e4283d252995608ebaf34625c64407",
+      "text_characters": 2311
+    },
+    {
+      "id": "google-pca-altostrat-case",
+      "url": "https://services.google.com/fh/files/misc/v6.1_pca_altostrat_media_case_study_english.pdf",
+      "checked_at": "2026-09-29T07:30:31.828928+00:00",
+      "health": {
+        "id": "google-pca-altostrat-case",
+        "url": "https://services.google.com/fh/files/misc/v6.1_pca_altostrat_media_case_study_english.pdf",
+        "checked_at": "2026-09-29T07:30:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/v6.1_pca_altostrat_media_case_study_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/v6.1_pca_altostrat_media_case_study_english.pdf",
+      "sha256": "b8acb7656aa43901e7a2764c775ecbd75b81e591a1affaf25444f3ed5ae9d88b",
+      "bytes": 173167,
+      "pdf_pages": 3,
+      "text_characters": 5968
+    },
+    {
+      "id": "google-pca-cymbal-case",
+      "url": "https://services.google.com/fh/files/misc/v6.1_pca_cymbal_retail_case_study_english.pdf",
+      "checked_at": "2026-09-29T07:30:31.880953+00:00",
+      "health": {
+        "id": "google-pca-cymbal-case",
+        "url": "https://services.google.com/fh/files/misc/v6.1_pca_cymbal_retail_case_study_english.pdf",
+        "checked_at": "2026-09-29T07:30:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/v6.1_pca_cymbal_retail_case_study_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/v6.1_pca_cymbal_retail_case_study_english.pdf",
+      "sha256": "0d208752a76e86ebdbd6243ec8c8f7e9993bf493cc9c1ddaa49c3d107cd006c0",
+      "bytes": 185111,
+      "pdf_pages": 4,
+      "text_characters": 7734
+    },
+    {
+      "id": "google-pca-ehr-case",
+      "url": "https://services.google.com/fh/files/misc/v6.1_pca_ehr_healthcare_case_study_english.pdf",
+      "checked_at": "2026-09-29T07:30:32.681850+00:00",
+      "health": {
+        "id": "google-pca-ehr-case",
+        "url": "https://services.google.com/fh/files/misc/v6.1_pca_ehr_healthcare_case_study_english.pdf",
+        "checked_at": "2026-09-29T07:30:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/v6.1_pca_ehr_healthcare_case_study_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/v6.1_pca_ehr_healthcare_case_study_english.pdf",
+      "sha256": "b9171e78b0c757f4df85dae7411cc1ada6b93211b4b16979f0a2c3f1f7e72aa8",
+      "bytes": 162697,
+      "pdf_pages": 2,
+      "text_characters": 4278
+    },
+    {
+      "id": "google-pca-knightmotives-case",
+      "url": "https://services.google.com/fh/files/misc/v6.1_pca_knightmotives_automotive_case_study_english.pdf",
+      "checked_at": "2026-09-29T07:30:32.909723+00:00",
+      "health": {
+        "id": "google-pca-knightmotives-case",
+        "url": "https://services.google.com/fh/files/misc/v6.1_pca_knightmotives_automotive_case_study_english.pdf",
+        "checked_at": "2026-09-29T07:30:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/v6.1_pca_knightmotives_automotive_case_study_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/v6.1_pca_knightmotives_automotive_case_study_english.pdf",
+      "sha256": "6712d08d5561ef3eb15dcfbd8319eb3fa2dc22243ad5a8fc04560bec4df4a044",
+      "bytes": 175755,
+      "pdf_pages": 3,
+      "text_characters": 7413
+    },
+    {
+      "id": "google-pca-skills-path",
+      "url": "https://www.skills.google/paths/12",
+      "checked_at": "2026-09-29T07:29:51.675355+00:00",
+      "health": {
+        "id": "google-pca-skills-path",
+        "url": "https://www.skills.google/paths/12",
+        "checked_at": "2026-09-29T07:29:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skills.google/paths/12",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Professional Cloud Architect Certification | Google Skills",
+        "canonical_url": "https://www.skills.google/paths/12",
+        "duration_signals": [],
+        "signal_fingerprint": "e4a26ddfbd7085f83216e34d799ab5e01201a192f70f30e6dc8aad28569ede0c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skills.google/paths/12",
+      "sha256": "9385517d27eb71516f61ea580bcb166b79cfdbd87b9a81d68f6fb17f2b68990e",
+      "text_characters": 1208
+    },
+    {
+      "id": "google-pca-sample-questions",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSf54f7FbtSJcXUY6-DUHfBG31jZ3pujgb8-a5io_9biJsNpqg/viewform?usp=sf_link",
+      "checked_at": "2026-09-29T07:29:52.129461+00:00",
+      "health": {
+        "id": "google-pca-sample-questions",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSf54f7FbtSJcXUY6-DUHfBG31jZ3pujgb8-a5io_9biJsNpqg/viewform?usp=sf_link",
+        "checked_at": "2026-09-29T07:29:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSf54f7FbtSJcXUY6-DUHfBG31jZ3pujgb8-a5io_9biJsNpqg/viewform?usp=sf_link",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Professional Cloud Architect Sample Questions",
+        "canonical_url": "https://docs.google.com/forms/d/e/1FAIpQLSf54f7FbtSJcXUY6-DUHfBG31jZ3pujgb8-a5io_9biJsNpqg/viewform?usp=sf_link",
+        "duration_signals": [],
+        "signal_fingerprint": "2c0c9e6d78e93afbc63d63213a54a081a68cf518d2ee8fbe7086e9e49a073258",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSf54f7FbtSJcXUY6-DUHfBG31jZ3pujgb8-a5io_9biJsNpqg/viewform?usp=sf_link",
+      "sha256": "5a7050f7155f72a805bf6da2976c9b337eed63a362e8c84c3ea20c7abe71138a",
+      "text_characters": 662
+    },
+    {
+      "id": "google-pca-coursera",
+      "url": "https://www.coursera.org/professional-certificates/gcp-cloud-architect",
+      "checked_at": "2026-09-29T07:29:52.275604+00:00",
+      "health": {
+        "id": "google-pca-coursera",
+        "url": "https://www.coursera.org/professional-certificates/gcp-cloud-architect",
+        "checked_at": "2026-09-29T07:29:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.coursera.org/professional-certificates/gcp-cloud-architect",
+        "content_type": "text/html",
+        "page_title": "Preparing for Google Cloud Certification: Cloud Architect",
+        "canonical_url": "https://www.coursera.org/professional-certificates/gcp-cloud-architect",
+        "duration_signals": [
+          "0 minutes",
+          "10 hours",
+          "2 hours",
+          "5 hours",
+          "6 hours",
+          "7 hours",
+          "8 hours",
+          "P1M"
+        ],
+        "signal_fingerprint": "0e883c9226e32f89f45cb00f663751dc4f1d3c61b897be4ef4ab589e62ac4c9b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.coursera.org/professional-certificates/gcp-cloud-architect",
+      "sha256": "131f5d0b78bba8295457584cb4d497a0db0d7609c2cbb579907c857f5fda8748",
+      "text_characters": 15910
+    },
+    {
+      "id": "google-pca-oreilly-sullivan",
+      "url": "https://www.oreilly.com/library/view/google-cloud-certified/9781119821002/",
+      "checked_at": "2026-09-29T07:29:52.853658+00:00",
+      "health": {
+        "id": "google-pca-oreilly-sullivan",
+        "url": "https://www.oreilly.com/library/view/google-cloud-certified/9781119821002/",
+        "checked_at": "2026-09-29T07:29:52+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/google-cloud-certified/9781119821002/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "google-pca-whizlabs",
+      "url": "https://www.whizlabs.com/google-cloud-certified-professional-cloud-architect/",
+      "checked_at": "2026-09-29T07:29:53.075125+00:00",
+      "health": {
+        "id": "google-pca-whizlabs",
+        "url": "https://www.whizlabs.com/google-cloud-certified-professional-cloud-architect/",
+        "checked_at": "2026-09-29T07:29:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/google-cloud-certified-professional-cloud-architect/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Google Cloud Certified Professional Cloud Architect Course",
+        "canonical_url": "https://www.whizlabs.com/google-cloud-certified-professional-cloud-architect/",
+        "duration_signals": [],
+        "signal_fingerprint": "9e736ee66d13199cfd94c3b810de17c7b4394d9aa8e8ef9f59ad3c50d3f60f22",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/google-cloud-certified-professional-cloud-architect/",
+      "sha256": "9b687ffd75d97da820a77ec62fd8a951cf6ca1e2d8dcb0ecd637b814ff187e86",
+      "text_characters": 58
+    },
+    {
+      "id": "gcp-dr-planning",
+      "url": "https://docs.cloud.google.com/architecture/dr-scenarios-planning-guide",
+      "checked_at": "2026-09-29T07:33:15.362840+00:00",
+      "health": {
+        "id": "gcp-dr-planning",
+        "url": "https://docs.cloud.google.com/architecture/dr-scenarios-planning-guide",
+        "checked_at": "2026-09-29T07:33:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/architecture/dr-scenarios-planning-guide",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Disaster recovery planning guide | Cloud Architecture Center | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/architecture/dr-scenarios-planning-guide",
+        "duration_signals": [],
+        "signal_fingerprint": "d75c56866d161dc0b4c38e26b2160d28751b3b8d60b675e550f50bff479fb852",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/architecture/dr-scenarios-planning-guide",
+      "sha256": "bf30cb46a9ffab88edf31a81856545d98d46f00a0d0b9d82e9a4c25d1e3d09af",
+      "text_characters": 18885
+    },
+    {
+      "id": "gcp-sql-postgres-dr",
+      "url": "https://docs.cloud.google.com/sql/docs/postgres/intro-to-cloud-sql-disaster-recovery",
+      "checked_at": "2026-09-29T07:33:15.364392+00:00",
+      "health": {
+        "id": "gcp-sql-postgres-dr",
+        "url": "https://docs.cloud.google.com/sql/docs/postgres/intro-to-cloud-sql-disaster-recovery",
+        "checked_at": "2026-09-29T07:33:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/sql/docs/postgres/intro-to-cloud-sql-disaster-recovery",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "About disaster recovery (DR) in Cloud SQL | Cloud SQL for PostgreSQL | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/sql/docs/postgres/intro-to-cloud-sql-disaster-recovery",
+        "duration_signals": [],
+        "signal_fingerprint": "f0a6045c62b018723fb599372a9743f3466dbb7eb823fb6f555549fbc7ee72e3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/sql/docs/postgres/intro-to-cloud-sql-disaster-recovery",
+      "sha256": "26e54010026bd3eb22ebb50800bc6b7c32a2f963da1f719d1741d63295559e76",
+      "text_characters": 19995
+    },
+    {
+      "id": "gcp-sql-replica-promotion",
+      "url": "https://docs.cloud.google.com/sql/docs/postgres/replication/cross-region-replicas",
+      "checked_at": "2026-09-29T07:33:15.365388+00:00",
+      "health": {
+        "id": "gcp-sql-replica-promotion",
+        "url": "https://docs.cloud.google.com/sql/docs/postgres/replication/cross-region-replicas",
+        "checked_at": "2026-09-29T07:33:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/sql/docs/postgres/replication/cross-region-replicas",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Promote replicas for regional migration or disaster recovery | Cloud SQL for PostgreSQL | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/sql/docs/postgres/replication/cross-region-replicas",
+        "duration_signals": [],
+        "signal_fingerprint": "8e41e4a3cc899ee06f87c0b06f864cf4d3387dded5a38bd5143d02e30b07fea3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/sql/docs/postgres/replication/cross-region-replicas",
+      "sha256": "ad02258b41a13779ea9ed391713b423cd4a2dbfa6a53a1eba745695497148b9b",
+      "text_characters": 7826
+    },
+    {
+      "id": "gcp-vpcsc-dry-run",
+      "url": "https://docs.cloud.google.com/vpc-service-controls/docs/dry-run-mode",
+      "checked_at": "2026-09-29T07:33:16.741991+00:00",
+      "health": {
+        "id": "gcp-vpcsc-dry-run",
+        "url": "https://docs.cloud.google.com/vpc-service-controls/docs/dry-run-mode",
+        "checked_at": "2026-09-29T07:33:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/vpc-service-controls/docs/dry-run-mode",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Dry run mode for service perimeters | VPC Service Controls | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/vpc-service-controls/docs/dry-run-mode",
+        "duration_signals": [],
+        "signal_fingerprint": "fa51d75879eb4f7dc15bdfd6e4c8e44880428524cbfe1d3b641952433ba70504",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/vpc-service-controls/docs/dry-run-mode",
+      "sha256": "9561be7aec885de4fb2c9151ac8d3a5c9f85e332fd9b36bc98a161cade7f53d4",
+      "text_characters": 11028
+    },
+    {
+      "id": "gcp-private-service-connect",
+      "url": "https://docs.cloud.google.com/vpc/docs/private-service-connect",
+      "checked_at": "2026-09-29T07:33:16.931881+00:00",
+      "health": {
+        "id": "gcp-private-service-connect",
+        "url": "https://docs.cloud.google.com/vpc/docs/private-service-connect",
+        "checked_at": "2026-09-29T07:33:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/vpc/docs/private-service-connect",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Private Service Connect | Virtual Private Cloud | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/vpc/docs/private-service-connect",
+        "duration_signals": [],
+        "signal_fingerprint": "0c8ba8394cba02cc76186fcb83b796c55eeafb3928325884d89106699c085da3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/vpc/docs/private-service-connect",
+      "sha256": "28a235988d9090cca5c152bb798279a0eae09a20c5a65e2385028364b07e163f",
+      "text_characters": 12954
+    },
+    {
+      "id": "google-sre-slo-alerts",
+      "url": "https://sre.google/workbook/alerting-on-slos/",
+      "checked_at": "2026-09-29T07:33:17.122086+00:00",
+      "health": {
+        "id": "google-sre-slo-alerts",
+        "url": "https://sre.google/workbook/alerting-on-slos/",
+        "checked_at": "2026-09-29T07:33:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://sre.google/workbook/alerting-on-slos/",
+        "content_type": "text/html",
+        "page_title": "Google SRE - Prometheus Alerting: Turn SLOs into Alerts",
+        "canonical_url": "https://sre.google/workbook/alerting-on-slos/",
+        "duration_signals": [
+          "1 hour",
+          "1 hour 5 minutes",
+          "10 minutes",
+          "2 minutes",
+          "20.5 hours",
+          "36 hours",
+          "43 minutes",
+          "5 minutes",
+          "58 minutes",
+          "6 hours",
+          "6 hours 30 minutes",
+          "60 minutes"
+        ],
+        "signal_fingerprint": "f7f4c95a1fd9b829113d320363e520386aa4a4fe828ae48553941fe6e14e9223",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://sre.google/workbook/alerting-on-slos/",
+      "sha256": "5a2195ae9280d92489ec6c5be9781ef191d73137514da7c716ebabf5479cfcf5",
+      "text_characters": 29337
+    },
+    {
+      "id": "gcp-kms-key-rotation",
+      "url": "https://docs.cloud.google.com/kms/docs/key-rotation",
+      "checked_at": "2026-09-29T07:33:17.641418+00:00",
+      "health": {
+        "id": "gcp-kms-key-rotation",
+        "url": "https://docs.cloud.google.com/kms/docs/key-rotation",
+        "checked_at": "2026-09-29T07:33:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/kms/docs/key-rotation",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Key rotation | Cloud Key Management Service | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/kms/docs/key-rotation",
+        "duration_signals": [],
+        "signal_fingerprint": "228174010a26969a942113b40c31f272723232323067574686605461e98b7da2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/kms/docs/key-rotation",
+      "sha256": "e53c82f5a636e07d92a32358b2a8f98c777aaf09aeae4ea4d76c22d3d74339d9",
+      "text_characters": 5723
+    },
+    {
+      "id": "gcp-cmek-rotation",
+      "url": "https://docs.cloud.google.com/kms/docs/cmek-rotation",
+      "checked_at": "2026-09-29T07:33:18.041505+00:00",
+      "health": {
+        "id": "gcp-cmek-rotation",
+        "url": "https://docs.cloud.google.com/kms/docs/cmek-rotation",
+        "checked_at": "2026-09-29T07:33:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/kms/docs/cmek-rotation",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CMEK key rotation | Cloud Key Management Service | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/kms/docs/cmek-rotation",
+        "duration_signals": [],
+        "signal_fingerprint": "71eec1a3102fa18d5348324e2cd6dfccc778fff96bb1ad6f1c337387d7e44b55",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/kms/docs/cmek-rotation",
+      "sha256": "514670291d8f52dbacedda7ee50ab4ec0ce90cbc54b890cb79dbfdae4b0d0159",
+      "text_characters": 6997
+    },
+    {
+      "id": "gcp-supply-chain-overview",
+      "url": "https://docs.cloud.google.com/software-supply-chain-security/docs/overview",
+      "checked_at": "2026-09-29T07:33:18.445498+00:00",
+      "health": {
+        "id": "gcp-supply-chain-overview",
+        "url": "https://docs.cloud.google.com/software-supply-chain-security/docs/overview",
+        "checked_at": "2026-09-29T07:33:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/software-supply-chain-security/docs/overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Software supply chain security | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/software-supply-chain-security/docs/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "0caa6fcacf6723fcb11ed050009e3569ae3814e9982b489af178bd94ebb9aeb5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/software-supply-chain-security/docs/overview",
+      "sha256": "26728458bfabd44ee450bd1ec6eb398224869cf9b1fab35c8d8e8d9f0f2ad9e7",
+      "text_characters": 10541
+    },
+    {
+      "id": "google-pca-pluralsight",
+      "url": "https://www.pluralsight.com/paths/google-certified-professional-cloud-architect-by-pluralsight",
+      "checked_at": "2026-09-29T07:33:19.166138+00:00",
+      "health": {
+        "id": "google-pca-pluralsight",
+        "url": "https://www.pluralsight.com/paths/google-certified-professional-cloud-architect-by-pluralsight",
+        "checked_at": "2026-09-29T07:33:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/google-certified-professional-cloud-architect-by-pluralsight",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Google Certified Professional Cloud Architect by Pluralsight",
+        "canonical_url": "https://www.pluralsight.com/paths/google-certified-professional-cloud-architect-by-pluralsight",
+        "duration_signals": [
+          "8 Hours"
+        ],
+        "signal_fingerprint": "846e4dbabc8ced51fa6d3c7df5a73be85faf909ec43cf2106c33ef79eb3dfb75",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/google-certified-professional-cloud-architect-by-pluralsight",
+      "sha256": "1948380e667a9ed821c931503564caa4b31a376f4985216aa0e4c78d04fe8692",
+      "text_characters": 3640
+    },
+    {
+      "id": "gcp-adc-order",
+      "url": "https://docs.cloud.google.com/docs/authentication/application-default-credentials",
+      "checked_at": "2026-09-29T07:33:19.436794+00:00",
+      "health": {
+        "id": "gcp-adc-order",
+        "url": "https://docs.cloud.google.com/docs/authentication/application-default-credentials",
+        "checked_at": "2026-09-29T07:33:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/docs/authentication/application-default-credentials",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "How Application Default Credentials works | Authentication | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/docs/authentication/application-default-credentials",
+        "duration_signals": [],
+        "signal_fingerprint": "6773dfca84735c31d07078af656ced2ece593e20a4f1d388bdae34592c7bdef9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/docs/authentication/application-default-credentials",
+      "sha256": "9a128e398bb3ee8d803a8b3a440704cc31e014172c2d2ecf563ef16d9010cbf4",
+      "text_characters": 6538
+    },
+    {
+      "id": "gcp-run-max-instances",
+      "url": "https://docs.cloud.google.com/run/docs/configuring/max-instances",
+      "checked_at": "2026-09-29T07:33:20.748677+00:00",
+      "health": {
+        "id": "gcp-run-max-instances",
+        "url": "https://docs.cloud.google.com/run/docs/configuring/max-instances",
+        "checked_at": "2026-09-29T07:33:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/run/docs/configuring/max-instances",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Set maximum instances for services | Cloud Run | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/run/docs/configuring/max-instances",
+        "duration_signals": [],
+        "signal_fingerprint": "27d5c2a41d038af6cbeed62836871745545b194daba8652dd447fd6bb1a4fdac",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/run/docs/configuring/max-instances",
+      "sha256": "a4952204074eac9b72e3c2ef0ba89df1efa0ca225ca29bffdcf529992d3b69aa",
+      "text_characters": 13537
+    },
+    {
+      "id": "gcp-gke-federation",
+      "url": "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/workload-identity",
+      "checked_at": "2026-09-29T07:33:20.925022+00:00",
+      "health": {
+        "id": "gcp-gke-federation",
+        "url": "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/workload-identity",
+        "checked_at": "2026-09-29T07:33:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/workload-identity",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "About Workload Identity Federation for GKE | GKE security | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/workload-identity",
+        "duration_signals": [
+          "1 hour",
+          "3 minutes"
+        ],
+        "signal_fingerprint": "6637b39b15ea6a8a53dc8d9b271d91a7dfe57caaaae54b806d3e633b0bde6244",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/workload-identity",
+      "sha256": "e5cd8f1abd8b789c9773e9d3d91e9925ca7209468c840b212c994fb92bc9b6d4",
+      "text_characters": 21558
+    },
+    {
+      "id": "gcp-agent-platform-zdr",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+      "checked_at": "2026-09-29T07:33:21.008634+00:00",
+      "health": {
+        "id": "gcp-agent-platform-zdr",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+        "checked_at": "2026-09-29T07:33:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Gemini Enterprise Agent Platform and zero data retention | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "baaf0ae91ac84fe199f2ebb68401f586dc906c8974aa457b7a588966c9acdb83",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+      "sha256": "fcd70ec0ded2b0f62e522d7a3dd61f7efc6e430ad553c32639c1086f61313e90",
+      "text_characters": 11687
+    },
+    {
+      "id": "gcp-search-identity-provider",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+      "checked_at": "2026-09-29T07:33:22.760329+00:00",
+      "health": {
+        "id": "gcp-search-identity-provider",
+        "url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+        "checked_at": "2026-09-29T07:33:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Configure identity provider | Gemini Enterprise | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+        "duration_signals": [],
+        "signal_fingerprint": "56662f2fa59d53e106df8c7f63e3c37687e8beda38ba77a384d0c3692c9e3f5e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+      "sha256": "7f8727e3ad79981b716189259015f9eb7c7c1d8102a3b5f018057a16b42383d6",
+      "text_characters": 14157
+    },
+    {
+      "id": "gcp-model-registry",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-registry/introduction",
+      "checked_at": "2026-09-29T07:33:23.428870+00:00",
+      "health": {
+        "id": "gcp-model-registry",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-registry/introduction",
+        "checked_at": "2026-09-29T07:33:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-registry/introduction",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Introduction to Model Registry | Gemini Enterprise Agent Platform | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-registry/introduction",
+        "duration_signals": [],
+        "signal_fingerprint": "d9af8bcc49cd433cfa4b95c5b248d28da3dffbe50c2ff58d7140d9ed4598d7f2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-registry/introduction",
+      "sha256": "991579a05f1897bb872f4c7dd9808c44a08009b8d8ff23cad053595fd7f15c33",
+      "text_characters": 3438
+    },
+    {
+      "id": "gcp-gemini-enterprise-2026",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+      "checked_at": "2026-09-29T07:33:23.599653+00:00",
+      "health": {
+        "id": "gcp-gemini-enterprise-2026",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+        "checked_at": "2026-09-29T07:33:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "The new Gemini Enterprise: one platform for agent development | Google Cloud Blog",
+        "canonical_url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+        "duration_signals": [
+          "PT7M"
+        ],
+        "signal_fingerprint": "cc80068c1a73d07f059434e922cd0791ba9336f3af1086529f13625a8be13cb3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+      "sha256": "058f16545109f4147a39b74b32a26271067e054bc05ce2da96b9787e159de06b",
+      "text_characters": 10678
+    },
+    {
+      "id": "gcp-model-armor-overview",
+      "url": "https://docs.cloud.google.com/model-armor/overview",
+      "checked_at": "2026-09-29T07:33:24.293996+00:00",
+      "health": {
+        "id": "gcp-model-armor-overview",
+        "url": "https://docs.cloud.google.com/model-armor/overview",
+        "checked_at": "2026-09-29T07:33:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/model-armor/overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Model Armor overview | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/model-armor/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "13534481a4842604f2f012904a5ee2f4142fb440ffd8c52a32ccc1b2f14d3965",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/model-armor/overview",
+      "sha256": "1c1be048f90643525b7aecd5e59a23af58476bb5f865e623f41f2caa1b5ac5e1",
+      "text_characters": 26957
+    },
+    {
+      "id": "gcp-model-armor-integrations",
+      "url": "https://docs.cloud.google.com/model-armor/integrations",
+      "checked_at": "2026-09-29T07:34:03.918408+00:00",
+      "health": {
+        "id": "gcp-model-armor-integrations",
+        "url": "https://docs.cloud.google.com/model-armor/integrations",
+        "checked_at": "2026-09-29T07:34:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/model-armor/integrations",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Overview | Model Armor | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/model-armor/integrations",
+        "duration_signals": [],
+        "signal_fingerprint": "de6ac1041b92403b081f0e74ec0ca8656fc026d20e36b260804c12f123e2ce7d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/model-armor/integrations",
+      "sha256": "26582624000aa9b10fd6d53d9dc5232a4416a96af5ac77d9a9c94e0fdbf4cf5d",
+      "text_characters": 13726
+    }
+  ],
+  "added_source_ids": [
+    "gcp-dr-planning",
+    "gcp-sql-postgres-dr",
+    "gcp-sql-replica-promotion",
+    "gcp-vpcsc-dry-run",
+    "gcp-private-service-connect",
+    "google-sre-slo-alerts",
+    "gcp-kms-key-rotation",
+    "gcp-cmek-rotation",
+    "gcp-supply-chain-overview",
+    "google-pca-pluralsight"
+  ],
+  "findings": [
+    {
+      "id": "googleprofessionalcloudarchitect-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Missing lifecycle snapshot is initialization rather than exam change",
+      "url": "https://cloud.google.com/learn/certification/cloud-architect",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Canonical objective digest unchanged and previous status digest absent; page provides standard and distinct renewal routes.",
+      "recommendation": "Initialize reviewed lifecycle baseline, preserve before/accepted/post observations and distinguish standard versus renewal case scope.",
+      "disposition": "applied",
+      "source_id": "google-pca-certification",
+      "resolution": "Initialize reviewed lifecycle baseline, preserve before/accepted/post observations and distinguish standard versus renewal case scope."
+    },
+    {
+      "id": "googleprofessionalcloudarchitect-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "A retained integration and availability target constrain EHR design",
+      "url": "https://services.google.com/fh/files/misc/v6.1_pca_ehr_healthcare_case_study_english.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "EHR explicitly does not plan to move legacy insurance interfaces now and requires minimum99.9% customer-facing availability without a stated RTO.",
+      "recommendation": "Add retain/hybrid decision and require separate SLI/window/recovery targets rather than inventing an RTO.",
+      "disposition": "applied",
+      "source_id": "google-pca-ehr-case",
+      "resolution": "Add retain/hybrid decision and require separate SLI/window/recovery targets rather than inventing an RTO."
+    },
+    {
+      "id": "googleprofessionalcloudarchitect-deep-3",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Human review is part of the publication contract",
+      "url": "https://services.google.com/fh/files/misc/v6.1_pca_cymbal_retail_case_study_english.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Cymbal requires associates to approve,reject or modify generated content before catalog update.",
+      "recommendation": "Separate proposal and publication; bind approval to exact content/source version and demonstrate stale/changed approval rejection in a limited local model.",
+      "disposition": "applied",
+      "source_id": "google-pca-cymbal-case",
+      "resolution": "Separate proposal and publication; bind approval to exact content/source version and demonstrate stale/changed approval rejection in a limited local model."
+    },
+    {
+      "id": "googleprofessionalcloudarchitect-deep-4",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Case constraints and executive assertions need different evidentiary treatment",
+      "url": "https://services.google.com/fh/files/misc/v6.1_pca_knightmotives_automotive_case_study_english.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Dealer equipment has no new budget while vehicle hardware changes and degraded connectivity are separate requirements; safety claim is part of a fictional executive statement.",
+      "recommendation": "Distinguish dealer versus vehicle modernization and require independent simulation/validation/approval evidence for real safety claims.",
+      "disposition": "applied",
+      "source_id": "google-pca-knightmotives-case",
+      "resolution": "Distinguish dealer versus vehicle modernization and require independent simulation/validation/approval evidence for real safety claims."
+    },
+    {
+      "id": "googleprofessionalcloudarchitect-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Restore duration alone does not establish business RTO",
+      "url": "https://docs.cloud.google.com/architecture/dr-scenarios-planning-guide",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "End-to-end planning includes deployment artifacts,capacity,identity,security,access and recovery tests.",
+      "recommendation": "Add explicit dependency graph and original68minute versus53minute planning examples; neither is a measured recovery result.",
+      "disposition": "applied",
+      "source_id": "gcp-dr-planning",
+      "resolution": "Add explicit dependency graph and original68minute versus53minute planning examples; neither is a measured recovery result."
+    },
+    {
+      "id": "googleprofessionalcloudarchitect-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Regional HA and asynchronous regional DR have different failure contracts",
+      "url": "https://docs.cloud.google.com/sql/docs/postgres/intro-to-cloud-sql-disaster-recovery",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Regional loss, cross-region lag,clientredirection,oldprimarysplitbrain and restoringHA/replicas all affect recovery.",
+      "recommendation": "Teach engine/edition/topology-specific failover and distinguish controlled catch-up switchover from outage failover.",
+      "disposition": "applied",
+      "source_id": "gcp-sql-postgres-dr",
+      "resolution": "Teach engine/edition/topology-specific failover and distinguish controlled catch-up switchover from outage failover."
+    },
+    {
+      "id": "googleprofessionalcloudarchitect-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "PSC feature choice changes initiation direction and reachable paths",
+      "url": "https://docs.cloud.google.com/vpc/docs/private-service-connect",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Endpoints/backends serve consumerinitiated access; interfaces support producerinitiated connections and can reach connected consumer networks.",
+      "recommendation": "Record feature/direction,service support,DNS and actual authorization instead of treating all private networking as interchangeable.",
+      "disposition": "applied",
+      "source_id": "gcp-private-service-connect",
+      "resolution": "Record feature/direction,service support,DNS and actual authorization instead of treating all private networking as interchangeable."
+    },
+    {
+      "id": "googleprofessionalcloudarchitect-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Dry-run violations are observations rather than enforced protection",
+      "url": "https://docs.cloud.google.com/vpc-service-controls/docs/dry-run-mode",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Proposed violations log without those denials; existing enforced configuration still applies separately.",
+      "recommendation": "Separate rehearsal from enforcement and require exercised positive/negative path evidence.",
+      "disposition": "applied",
+      "source_id": "gcp-vpcsc-dry-run",
+      "resolution": "Separate rehearsal from enforcement and require exercised positive/negative path evidence."
+    },
+    {
+      "id": "googleprofessionalcloudarchitect-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Key rotation does not have one universal managed-service effect",
+      "url": "https://docs.cloud.google.com/kms/docs/cmek-rotation",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "CMEK integrations use three patterns for new/existing data;directKMSrotation alone does not rewrite ciphertext.",
+      "recommendation": "Check exact resource and backup dependencies before retiring old versions; add separate rotation versus rewrapping teaching.",
+      "disposition": "applied",
+      "source_id": "gcp-cmek-rotation",
+      "resolution": "Check exact resource and backup dependencies before retiring old versions; add separate rotation versus rewrapping teaching."
+    },
+    {
+      "id": "googleprofessionalcloudarchitect-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Attestation and vulnerability evidence are separate controls",
+      "url": "https://docs.cloud.google.com/software-supply-chain-security/docs/overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Attestations certify successful required processes under policy; scanning and admission contribute distinct evidence.",
+      "recommendation": "Teach signer/digest/process,scanage,severityexceptions,enforcement and later runtime reassessment instead of treating signature as universal safety proof.",
+      "disposition": "applied",
+      "source_id": "gcp-supply-chain-overview",
+      "resolution": "Teach signer/digest/process,scanage,severityexceptions,enforcement and later runtime reassessment instead of treating signature as universal safety proof."
+    },
+    {
+      "id": "googleprofessionalcloudarchitect-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A low-traffic source example has inconsistent burn-rate arithmetic",
+      "url": "https://sre.google/workbook/alerting-on-slos/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Source text says one failed request among10 at99.9% SLO is1000x; the stated formula gives0.1/0.001=100x,also consistent with13.9%monthlybudget perhour. Direct cached and web page passages verified.",
+      "recommendation": "Display100x explicitly and execute it locally; retain multiwindow/lowtraffic concepts without blindly repeating a numeric misprint.",
+      "disposition": "applied",
+      "source_id": "google-sre-slo-alerts",
+      "resolution": "Display100x explicitly and execute it locally; retain multiwindow/lowtraffic concepts without blindly repeating a numeric misprint."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "gcp-gemini-enterprise-2026",
+      "authors": [
+        "Brian Delahunty",
+        "Michael Gerstenhaber"
+      ],
+      "published_on": "2026-04-22",
+      "disposition": "accepted-with-limits",
+      "value": "Separate developer platform and employee app naming.",
+      "limits": "Full article previously read in same session; current healthy fetch; no marketing guarantee or new exam effective date inferred."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "cloud_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "official_case_analyses": 4,
+    "local_validation": {
+      "passed": 32,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "9174847ee84fe97187a70d98d34de9717e3f15e139be21d3b53e19c4da00c0c1",
+      "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+      "execution_boundary": "Exact public Python:9 fictional recovery-graph checks,7 steady-rate migration checks,6 SLO/arithmetic checks and10 static content-approval binding checks. No cloud deployment, network, migration, database restore, model, provider IAM, signer or content publication; no vehicle or clinical system.",
+      "cloud_cli_probe": "Reuse preceding ACE same-session gcloud-not-found-on-PATH observation; no new probe, installation or authentication."
+    }
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Eight cloud labs remain proposed. Only32checks in the exact public Python worksheet executed; no deployment,migration,database recovery,perimeter,identity/model,artifact signer,vehicle or clinical system tested.",
+    "Recovery timings and steady transfer/write rates are fictional; unlimited parallel workers,available dependencies and constant effective throughput are assumptions,not measured RTO or transfer performance.",
+    "Content-approval model assumes trusted identities/records; hashes are not authentication,signatures,humanreview,semanticcorrectness or an atomic publication transaction. Concurrent update and time-of-check/use behavior remain untested.",
+    "Prior same-session ACEgcloud-not-found-on-PATH observation reused. No installation,sign-in,credentials,newruntime or externalnotification attempted.",
+    "Actual19PDFpages read across standardguide/cases; no visible revisiondate invented. Renewal-specificPDFsandcasecontent not separately reviewed; lifecycle detail comes from canonicalpage.",
+    "SREsectionsread selectively,burnarithmeticindependentlychecked; no productionalert/pagingrule deployed. DRplanningarticle historical compliance-version list not adopted ascurrent compliance advice.",
+    "GoogleSkillsdurationsnotfullyexposed,Whizlabstitleonly,OReilly403. Paid lessons,providerlabs,proprietaryassessments and recalledexamitems notaccessed. Catalogdates/titles cannotprove currentfeaturecoverage.",
+    "Case designs are original hypotheses,not official answers; missingbusiness thresholds remain explicit assumptions. Fictional safety assertions establish no real-world safety performance."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Exact public Python:9 fictional recovery-graph checks,7 steady-rate migration checks,6 SLO/arithmetic checks and10 static content-approval binding checks. No cloud deployment, network, migration, database restore, model, provider IAM, signer or content publication; no vehicle or clinical system.",
+    "passed": 32,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "9174847ee84fe97187a70d98d34de9717e3f15e139be21d3b53e19c4da00c0c1",
+    "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "cloud_cli_probe": "Reuse preceding ACE same-session gcloud-not-found-on-PATH observation; no new probe, installation or authentication.",
+    "learning_catalog_consistency": "passed"
+  },
+  "actual_pdf_receipts": [
+    {
+      "id": "google-pca-exam-guide",
+      "url": "https://services.google.com/fh/files/misc/professional_cloud_architect_exam_guide_english.pdf",
+      "checked_at": "2026-09-29T07:30:32.147211+00:00",
+      "health": {
+        "id": "google-pca-exam-guide",
+        "url": "https://services.google.com/fh/files/misc/professional_cloud_architect_exam_guide_english.pdf",
+        "checked_at": "2026-09-29T07:30:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/professional_cloud_architect_exam_guide_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/professional_cloud_architect_exam_guide_english.pdf",
+      "sha256": "3803bc093831cbfe270f56446c270d072c67bbe8ad8f34579027add56549211d",
+      "bytes": 218368,
+      "pdf_pages": 7,
+      "text_characters": 12869
+    },
+    {
+      "id": "google-pca-altostrat-case",
+      "url": "https://services.google.com/fh/files/misc/v6.1_pca_altostrat_media_case_study_english.pdf",
+      "checked_at": "2026-09-29T07:30:31.828928+00:00",
+      "health": {
+        "id": "google-pca-altostrat-case",
+        "url": "https://services.google.com/fh/files/misc/v6.1_pca_altostrat_media_case_study_english.pdf",
+        "checked_at": "2026-09-29T07:30:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/v6.1_pca_altostrat_media_case_study_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/v6.1_pca_altostrat_media_case_study_english.pdf",
+      "sha256": "b8acb7656aa43901e7a2764c775ecbd75b81e591a1affaf25444f3ed5ae9d88b",
+      "bytes": 173167,
+      "pdf_pages": 3,
+      "text_characters": 5968
+    },
+    {
+      "id": "google-pca-cymbal-case",
+      "url": "https://services.google.com/fh/files/misc/v6.1_pca_cymbal_retail_case_study_english.pdf",
+      "checked_at": "2026-09-29T07:30:31.880953+00:00",
+      "health": {
+        "id": "google-pca-cymbal-case",
+        "url": "https://services.google.com/fh/files/misc/v6.1_pca_cymbal_retail_case_study_english.pdf",
+        "checked_at": "2026-09-29T07:30:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/v6.1_pca_cymbal_retail_case_study_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/v6.1_pca_cymbal_retail_case_study_english.pdf",
+      "sha256": "0d208752a76e86ebdbd6243ec8c8f7e9993bf493cc9c1ddaa49c3d107cd006c0",
+      "bytes": 185111,
+      "pdf_pages": 4,
+      "text_characters": 7734
+    },
+    {
+      "id": "google-pca-ehr-case",
+      "url": "https://services.google.com/fh/files/misc/v6.1_pca_ehr_healthcare_case_study_english.pdf",
+      "checked_at": "2026-09-29T07:30:32.681850+00:00",
+      "health": {
+        "id": "google-pca-ehr-case",
+        "url": "https://services.google.com/fh/files/misc/v6.1_pca_ehr_healthcare_case_study_english.pdf",
+        "checked_at": "2026-09-29T07:30:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/v6.1_pca_ehr_healthcare_case_study_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/v6.1_pca_ehr_healthcare_case_study_english.pdf",
+      "sha256": "b9171e78b0c757f4df85dae7411cc1ada6b93211b4b16979f0a2c3f1f7e72aa8",
+      "bytes": 162697,
+      "pdf_pages": 2,
+      "text_characters": 4278
+    },
+    {
+      "id": "google-pca-knightmotives-case",
+      "url": "https://services.google.com/fh/files/misc/v6.1_pca_knightmotives_automotive_case_study_english.pdf",
+      "checked_at": "2026-09-29T07:30:32.909723+00:00",
+      "health": {
+        "id": "google-pca-knightmotives-case",
+        "url": "https://services.google.com/fh/files/misc/v6.1_pca_knightmotives_automotive_case_study_english.pdf",
+        "checked_at": "2026-09-29T07:30:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/v6.1_pca_knightmotives_automotive_case_study_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/v6.1_pca_knightmotives_automotive_case_study_english.pdf",
+      "sha256": "6712d08d5561ef3eb15dcfbd8319eb3fa2dc22243ad5a8fc04560bec4df4a044",
+      "bytes": 175755,
+      "pdf_pages": 3,
+      "text_characters": 7413
+    }
+  ],
+  "accepted_lifecycle_initialization": {
+    "changed": [
+      "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT",
+        "title": "Professional Cloud Architect",
+        "url": "https://cloud.google.com/learn/certification/cloud-architect",
+        "guide_path": "guides/GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT-professional-cloud-architect.md",
+        "snapshot_path": "data\\objective-snapshots\\google-professional-cloud-architect-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\google-professional-cloud-architect-official-status.json",
+        "previous_sha256": "fceaa0587ed0fa26fcf66a037a2abb7e4103231cccb6ad9052153ca3cb328ec2",
+        "current_sha256": "fceaa0587ed0fa26fcf66a037a2abb7e4103231cccb6ad9052153ca3cb328ec2",
+        "previous_status_sha256": null,
+        "current_status_sha256": "e914ad2789c7bdf089beb9e0650c2e050f74e7d75e60820cf55a146896fa5d03",
+        "official_status": {
+          "skills_versions": [
+            "Length: 2 hours",
+            "Registration fee: $200 (plus tax where applicable)",
+            "Languages: English, Japanese",
+            "Exam format: 50-60 multiple choice and multiple",
+            "Exam delivery method:",
+            "Validity period: 2 years",
+            "Prerequisites: None",
+            "Recommended experience: 3+ years of industry",
+            "Validity period: 1 year",
+            "Length: 1 hour",
+            "Registration fee: $100 (plus tax where applicable)",
+            "Exam format: 25 multiple choice and multiple select questions"
+          ],
+          "upcoming_announcements": [
+            "This exam was updated to reflect recent branding changes. Refer to the exam guide to review product names used on the exam."
+          ]
+        },
+        "objectives_changed": false,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "status_written": true,
+        "written": true
+      }
+    ]
+  },
+  "post_initialization_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT",
+        "title": "Professional Cloud Architect",
+        "url": "https://cloud.google.com/learn/certification/cloud-architect",
+        "guide_path": "guides/GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT-professional-cloud-architect.md",
+        "snapshot_path": "data\\objective-snapshots\\google-professional-cloud-architect-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\google-professional-cloud-architect-official-status.json",
+        "previous_sha256": "fceaa0587ed0fa26fcf66a037a2abb7e4103231cccb6ad9052153ca3cb328ec2",
+        "current_sha256": "fceaa0587ed0fa26fcf66a037a2abb7e4103231cccb6ad9052153ca3cb328ec2",
+        "previous_status_sha256": "e914ad2789c7bdf089beb9e0650c2e050f74e7d75e60820cf55a146896fa5d03",
+        "current_status_sha256": "e914ad2789c7bdf089beb9e0650c2e050f74e7d75e60820cf55a146896fa5d03",
+        "official_status": {
+          "skills_versions": [
+            "Length: 2 hours",
+            "Registration fee: $200 (plus tax where applicable)",
+            "Languages: English, Japanese",
+            "Exam format: 50-60 multiple choice and multiple",
+            "Exam delivery method:",
+            "Validity period: 2 years",
+            "Prerequisites: None",
+            "Recommended experience: 3+ years of industry",
+            "Validity period: 1 year",
+            "Length: 1 hour",
+            "Registration fee: $100 (plus tax where applicable)",
+            "Exam format: 25 multiple choice and multiple select questions"
+          ],
+          "upcoming_announcements": [
+            "This exam was updated to reflect recent branding changes. Refer to the exam guide to review product names used on the exam."
+          ]
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  }
+}

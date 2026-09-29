@@ -2555,6 +2555,29 @@ Before relying on any course or book, confirm that you can map older coverage to
 - AlloyDB, Database Center, Managed Service for Apache Kafka, NetApp Volumes, Managed Lustre, Hyperdisk, GPU/TPU operations, and current GKE Autopilot behavior;
 - Workforce and Workload Identity Federation, short-lived credentials, service-account impersonation, and Workload Identity Federation for GKE.
 
+### GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT — Professional Cloud Architect
+
+Resource details from the [GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT guide](../guides/GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT-professional-cloud-architect.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is **not a complete list**, and it is not meant to be consumed in full. Pick a coherent route, use the blueprint/case studies as the checklist, and select labs/readings for weak decisions. Public metadata was checked September 29, 2026; paid lessons/labs were not accessed. Separate visible content totals from schedule estimates, then add practice, design, troubleshooting and review time.
+
+| Resource | Access | Estimated time | Best use / currency note |
+|---|---|---:|---|
+| [Official exam guide](https://services.google.com/fh/files/misc/professional_cloud_architect_exam_guide_english.pdf) | Public | 1–2h initially, then weekly | Scope and current product-name authority |
+| [Four official case studies](https://cloud.google.com/learn/certification/cloud-architect) | Public | 4–8h initial analysis; revisit | Requirement-driven judgment; follow the case links on the page/PDF |
+| [Google Skills PCA path](https://www.skills.google/paths/12) | Account; labs may need credits/entitlement | 24 activities; current activity durations not exposed | Public page gives relative update age of four months; earlier 172h15m and 72h badge claims were not reverified. Select by objective gaps |
+| [Official sample questions](https://docs.google.com/forms/d/e/1FAIpQLSf54f7FbtSJcXUY6-DUHfBG31jZ3pujgb8-a5io_9biJsNpqg/viewform?usp=sf_link) | Public | 30–60m plus review | Calibrate official question style; not a score predictor |
+| [Preparing for Google Cloud Certification: Cloud Architect](https://www.coursera.org/professional-certificates/gcp-cloud-architect) | Paid/subscription; audit terms vary | Seven course cards total 48h; landing 4 weeks at 10h/week; FAQ 1.5 months at 5h/week | Google-authored infrastructure/design/GKE route plus Gemini Notebook study preparation. Conflicting schedule estimates and old/new branding need review; paid teaching was not inspected |
+| [Google Cloud Certified Professional Cloud Architect Study Guide, 2nd ed.](https://www.oreilly.com/library/view/google-cloud-certified/9781119821002/) | Paid O’Reilly | Planning allowance 12–18h reading plus exercises; current metadata blocked | Prior record says 2022/352 pages, not reverified. Use current AI/agent/case gaps; no paid book content read |
+| [Whizlabs Professional Cloud Architect](https://www.whizlabs.com/google-cloud-certified-professional-cloud-architect/) | Paid; limited free material may vary | Full current catalog not exposed; verify before purchase | Direct fetch returned a title-only shell, so course/lab quantities and current objective alignment were not verified |
+| [Well-Architected Framework](https://cloud.google.com/architecture/framework) and [Architecture Center](https://cloud.google.com/architecture) | Public | 12–30h targeted reading | Production tradeoffs and all six cross-cutting pillars |
+
+A current [Pluralsight PCA path](https://www.pluralsight.com/paths/google-certified-professional-cloud-architect-by-pluralsight) is verified: seven Victor Dantas courses total **7h17m**, with one 30-minute regional-MIG lab, **7h47m** altogether versus the rounded eight-hour header. Core course dates span July–December 2025; the lab is August 6, 2026. Compare current AI/agent/case objectives explicitly; public titles and dates do not establish complete paid-lesson coverage. No verified MeasureUp PCA item is added.
+
+#### Current-version gap checklist
+
+When a resource predates the current guide, independently close: Gemini Enterprise Agent Platform, Agent Platform Pipelines/data integration, Agent Builder and Model Garden; Gemini Enterprise agents and NotebookLM; Gemini Cloud Assist; AI Hypercomputer and GPU/TPU consumption; Model Armor/Sensitive Data Protection and secure AI; current Cloud Run functions branding; current Well-Architected sustainability pillar; Migration Center; Chrome Enterprise Premium/context-aware access; software supply chain; and all four V6.1 official case studies.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

@@ -4,6 +4,271 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-googleprofessionalcloudarchitect-deep-review",
+      "title": "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+      ],
+      "results": [
+        {
+          "exam_code": "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT-professional-cloud-architect.md",
+          "baseline_sha256": "4f2489e5d3b102b8e9d17262dfe3aab7e0cabf86368973a10b9bbc156f5cb355",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Actual exam7pages and casesAltostrat3/Cymbal4/EHR2/KnightMotives3 fully read with layout extraction and hashes.101mapped statements33/23/13/13/11/8;96bullets plus5standalone objectives under22headings. Weights25/17.5/17.5/15/12.5/12.5. Objective hashfceaa0587ed0fa26fcf66a037a2abb7e4103231cccb6ad9052153ca3cb328ec2unchanged. Missing status baseline initialized at e914ad2789c7bdf089beb9e0650c2e050f74e7d75e60820cf55a146896fa5d03; before/accepted/post receipts retained. Standard2h200USD50–60questionsEnglishJapanese2years,two cases20–30%; renewal1h100USD25questions2years,onegenAIcase90–100%; designatedSkills1year separate. Renewal PDFs not reviewed."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Read complete DR planning text for durable recovery process, targeted PostgreSQL DR/promotion/splitbrain/advancedDR, PSC feature direction, VPCSCdryrun, KMSdirectrotation and service-specificCMEK patterns, supply-chain overview and SREburn/multiwindow/lowtraffic. Reused same-session ModelArmor, retention, retrieval identity, Registry, ADC/GKE and Run evidence with healthy current fetches.32local checks; no cloud services executed."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Full April22,2026 Brian Delahunty/Michael Gerstenhaber app/platform blog already read in preceding reviews; current fetch retained and naming context reused only. Livebrandingnotice has no future date. CurrentSQL advancedDR edition/scenario boundaries and CMEKresourcebehavior read; oldDR article compliance-version claims deliberately not adopted as current standards."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "GoogleSkills24activities/relative4monthupdate,currentdurationnotexposed. Coursera7publiccards6/8/11/7/8/6/2=48h versus40h landingestimate and differingFAQ; allsevenlearningoutcomes and appliedlabdescription read. Pluralsight7VictorDantascourses437minutes plus30minAugust6,2026MIGlab=467minutes7h47 vsrounded8h;2025course dates. OReilly403;Whizlabstitle-only;oldbookdurationmetadataqualified. No paid lessons/labs/questions."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Detailedcasefactsreplacegeneric-onlycaseinstructions: EHRretaininterfaces/99.9noinventedRTO,CymbalmandatoryHITLbinding,Altostratmedia-specificmoderation,Knightdealerbudgetversusvehiclehardwareandunverifiedfictitioussafetyclaim. Add recoverydependency/catchuparithmetic, HAversusDR/lag/splitbrain, dryrunversusenforcement, PSCdirection, CMEKrotationpatterns, attestationversusvulnerabilityevidence, exactSLOformula and verified1000xmisprintcorrectionto100x.48answers8proposedlabs;Placeslearnlast."
+            }
+          },
+          "findings": [
+            {
+              "id": "googleprofessionalcloudarchitect-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Missing lifecycle snapshot is initialization rather than exam change",
+              "url": "https://cloud.google.com/learn/certification/cloud-architect",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Canonical objective digest unchanged and previous status digest absent; page provides standard and distinct renewal routes.",
+              "recommendation": "Initialize reviewed lifecycle baseline, preserve before/accepted/post observations and distinguish standard versus renewal case scope.",
+              "disposition": "applied",
+              "source_id": "google-pca-certification",
+              "resolution": "Initialize reviewed lifecycle baseline, preserve before/accepted/post observations and distinguish standard versus renewal case scope."
+            },
+            {
+              "id": "googleprofessionalcloudarchitect-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "A retained integration and availability target constrain EHR design",
+              "url": "https://services.google.com/fh/files/misc/v6.1_pca_ehr_healthcare_case_study_english.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "EHR explicitly does not plan to move legacy insurance interfaces now and requires minimum99.9% customer-facing availability without a stated RTO.",
+              "recommendation": "Add retain/hybrid decision and require separate SLI/window/recovery targets rather than inventing an RTO.",
+              "disposition": "applied",
+              "source_id": "google-pca-ehr-case",
+              "resolution": "Add retain/hybrid decision and require separate SLI/window/recovery targets rather than inventing an RTO."
+            },
+            {
+              "id": "googleprofessionalcloudarchitect-deep-3",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Human review is part of the publication contract",
+              "url": "https://services.google.com/fh/files/misc/v6.1_pca_cymbal_retail_case_study_english.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Cymbal requires associates to approve,reject or modify generated content before catalog update.",
+              "recommendation": "Separate proposal and publication; bind approval to exact content/source version and demonstrate stale/changed approval rejection in a limited local model.",
+              "disposition": "applied",
+              "source_id": "google-pca-cymbal-case",
+              "resolution": "Separate proposal and publication; bind approval to exact content/source version and demonstrate stale/changed approval rejection in a limited local model."
+            },
+            {
+              "id": "googleprofessionalcloudarchitect-deep-4",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Case constraints and executive assertions need different evidentiary treatment",
+              "url": "https://services.google.com/fh/files/misc/v6.1_pca_knightmotives_automotive_case_study_english.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Dealer equipment has no new budget while vehicle hardware changes and degraded connectivity are separate requirements; safety claim is part of a fictional executive statement.",
+              "recommendation": "Distinguish dealer versus vehicle modernization and require independent simulation/validation/approval evidence for real safety claims.",
+              "disposition": "applied",
+              "source_id": "google-pca-knightmotives-case",
+              "resolution": "Distinguish dealer versus vehicle modernization and require independent simulation/validation/approval evidence for real safety claims."
+            },
+            {
+              "id": "googleprofessionalcloudarchitect-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Restore duration alone does not establish business RTO",
+              "url": "https://docs.cloud.google.com/architecture/dr-scenarios-planning-guide",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "End-to-end planning includes deployment artifacts,capacity,identity,security,access and recovery tests.",
+              "recommendation": "Add explicit dependency graph and original68minute versus53minute planning examples; neither is a measured recovery result.",
+              "disposition": "applied",
+              "source_id": "gcp-dr-planning",
+              "resolution": "Add explicit dependency graph and original68minute versus53minute planning examples; neither is a measured recovery result."
+            },
+            {
+              "id": "googleprofessionalcloudarchitect-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Regional HA and asynchronous regional DR have different failure contracts",
+              "url": "https://docs.cloud.google.com/sql/docs/postgres/intro-to-cloud-sql-disaster-recovery",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Regional loss, cross-region lag,clientredirection,oldprimarysplitbrain and restoringHA/replicas all affect recovery.",
+              "recommendation": "Teach engine/edition/topology-specific failover and distinguish controlled catch-up switchover from outage failover.",
+              "disposition": "applied",
+              "source_id": "gcp-sql-postgres-dr",
+              "resolution": "Teach engine/edition/topology-specific failover and distinguish controlled catch-up switchover from outage failover."
+            },
+            {
+              "id": "googleprofessionalcloudarchitect-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "PSC feature choice changes initiation direction and reachable paths",
+              "url": "https://docs.cloud.google.com/vpc/docs/private-service-connect",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Endpoints/backends serve consumerinitiated access; interfaces support producerinitiated connections and can reach connected consumer networks.",
+              "recommendation": "Record feature/direction,service support,DNS and actual authorization instead of treating all private networking as interchangeable.",
+              "disposition": "applied",
+              "source_id": "gcp-private-service-connect",
+              "resolution": "Record feature/direction,service support,DNS and actual authorization instead of treating all private networking as interchangeable."
+            },
+            {
+              "id": "googleprofessionalcloudarchitect-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Dry-run violations are observations rather than enforced protection",
+              "url": "https://docs.cloud.google.com/vpc-service-controls/docs/dry-run-mode",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Proposed violations log without those denials; existing enforced configuration still applies separately.",
+              "recommendation": "Separate rehearsal from enforcement and require exercised positive/negative path evidence.",
+              "disposition": "applied",
+              "source_id": "gcp-vpcsc-dry-run",
+              "resolution": "Separate rehearsal from enforcement and require exercised positive/negative path evidence."
+            },
+            {
+              "id": "googleprofessionalcloudarchitect-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Key rotation does not have one universal managed-service effect",
+              "url": "https://docs.cloud.google.com/kms/docs/cmek-rotation",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "CMEK integrations use three patterns for new/existing data;directKMSrotation alone does not rewrite ciphertext.",
+              "recommendation": "Check exact resource and backup dependencies before retiring old versions; add separate rotation versus rewrapping teaching.",
+              "disposition": "applied",
+              "source_id": "gcp-cmek-rotation",
+              "resolution": "Check exact resource and backup dependencies before retiring old versions; add separate rotation versus rewrapping teaching."
+            },
+            {
+              "id": "googleprofessionalcloudarchitect-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Attestation and vulnerability evidence are separate controls",
+              "url": "https://docs.cloud.google.com/software-supply-chain-security/docs/overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Attestations certify successful required processes under policy; scanning and admission contribute distinct evidence.",
+              "recommendation": "Teach signer/digest/process,scanage,severityexceptions,enforcement and later runtime reassessment instead of treating signature as universal safety proof.",
+              "disposition": "applied",
+              "source_id": "gcp-supply-chain-overview",
+              "resolution": "Teach signer/digest/process,scanage,severityexceptions,enforcement and later runtime reassessment instead of treating signature as universal safety proof."
+            },
+            {
+              "id": "googleprofessionalcloudarchitect-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A low-traffic source example has inconsistent burn-rate arithmetic",
+              "url": "https://sre.google/workbook/alerting-on-slos/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Source text says one failed request among10 at99.9% SLO is1000x; the stated formula gives0.1/0.001=100x,also consistent with13.9%monthlybudget perhour. Direct cached and web page passages verified.",
+              "recommendation": "Display100x explicitly and execute it locally; retain multiwindow/lowtraffic concepts without blindly repeating a numeric misprint.",
+              "disposition": "applied",
+              "source_id": "google-sre-slo-alerts",
+              "resolution": "Display100x explicitly and execute it locally; retain multiwindow/lowtraffic concepts without blindly repeating a numeric misprint."
+            }
+          ],
+          "notes": "Read actual seven-page exam PDF and all twelve pages across four case PDFs. Mapped101statements:96bullets plus5standalone objectives under22numbered objectives. Initialized missing lifecycle baseline after explicit review; objective hash unchanged and post-check unchanged. Added four fact/hypothesis/evidence case analyses,32executed local checks,48answered checks and eight proposed cloud labs. Cloud execution and independent human review remain pending. Same-context AI review; human review pending. See docs/research/2026-09-29-google-professional-cloud-architect-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 11,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-googleassociatecloudengineer-deep-review",
       "title": "GOOGLE-ASSOCIATE-CLOUD-ENGINEER complete guide and learning-content review",
       "rubric_version": 1,

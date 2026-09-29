@@ -1433,6 +1433,8 @@ The review maps every detailed current consideration through hierarchy/policy/bi
 
 ## GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT coverage record
 
+The September 29 [deep review](research/2026-09-29-google-professional-cloud-architect-deep-review.md) maps 101 detailed objectives. Read actual seven-page exam PDF and all twelve pages across four case PDFs. Mapped101statements:96bullets plus5standalone objectives under22numbered objectives. Initialized missing lifecycle baseline after explicit review; objective hash unchanged and post-check unchanged. Added four fact/hypothesis/evidence case analyses,32executed local checks,48answered checks and eight proposed cloud labs. Cloud execution and independent human review remain pending. Current guide citations: 31 registered, 30 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: six weighted domains—Design and plan (25%), Manage and provision (17.5%), Security and compliance (17.5%), Optimize technical/business processes (15%), Manage implementation (12.5%), and Solution/operations excellence (12.5%)—plus all six Well-Architected pillars and four V6.1 cases
