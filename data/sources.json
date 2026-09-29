@@ -3,6 +3,174 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "salesforce-agentforce-testing-center",
+      "title": "Agentforce Testing Center and mutation boundaries",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.agent_testing_center.htm&language=en_US&type=5",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Earlier URL and corrected language=en_US&type5 direct shells retained. Corrected browser fullmain2542–2573 read: tests consume requests/credits, can modify CRM, sandbox-only guidance, StudioBeta versus legacySetup and evaluations. No tests or paid credits used. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-agentforce-data-library-troubleshooting",
+      "title": "Data Library readiness and access troubleshooting",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.data_library_troubleshooting.htm&language=en_US&type=5",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Direct shell; full browser main2541–2578 read. Permissions/defaultdataspace and Knowledge publication/category/object/field conditions; Failed/NotStarted/InProgress/Success readiness distinctions. No assumption that the broad library permission list proves per-customer ACL behavior. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-agentforce-data-library-setup",
+      "title": "Set up Agentforce Data Libraries",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.data_library_setup.htm&language=en_US&type=5",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Direct shell; complete short browser main read. Data360 prerequisite/credits, Knowledge/files/customretrievers and no web search for new libraries. No setup or ingestion. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-agent-api-examples",
+      "title": "Agent API examples and execution identity",
+      "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-examples.html",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Complete5589-character main text read. bypassUser,token/agent identity,session/sequence IDs, synchronous/streaming messages,ValidationFailureChunk clearing,Inform/citations and feedback. Rendered code blocks not available in text extraction; no literal API client/example copied or executed. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-agent-api-start",
+      "title": "Agent API prerequisites and supported agents",
+      "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-get-started.html",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Complete4998-character main text read. UnsupportedAgentforceDefault,activeagent/ECA/JWT token contract and identity selection. Setup instructions treated as documentation only; no app creation, secret access, token minting, authentication or weakening of settings. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-prompt-builder-enable",
+      "title": "Prompt template management and execution permissions",
+      "url": "https://help.salesforce.com/s/articleView?id=prompt_builder_enable.htm&language=en_US&type=5",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Direct shell; complete browser main2495–2536 read: Manager/User permissions,Setup access and displayed CustomizeApplication alternative. No org/license validation or permission assignment. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-agent-masking-limits",
+      "title": "Data masking limitations in agents",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.agent_trust_data_masking.htm&language=en_US&type=5",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Earlier URL and correctedtype5 direct shells retained. Corrected browser fullmain2542–2557 read: agent and agent-called-template masking disabled; direct template configuration distinct; scoped provider zero-retention statement. No model call or independent provider-retention validation. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-agent-variables-filters",
+      "title": "Agent variables and deterministic filters",
+      "url": "https://developer.salesforce.com/blogs/2025/04/control-agent-access-and-decision-making-with-variables-and-filters",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Complete7585-character April2025 article main read: historical variables/filter concepts and verified-customer example. Current access documentation supplies more specific security rule. No code copied, video played or sample installed; not asserting historical UI/types as current. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-agentforce-summer26-unit",
+      "title": "Maintain Agentforce Specialist for Summer26",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/agentforce-specialist-certification-maintenance-summer-26/maintain-your-agentforce-specialist-certification-for-summer-26",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Complete7133-character five-minute main through Resources read: Builder/AgentScript,Grid/runconditions/billingestimator and observability metrics/traces. No earned-byAug24 date in current text. No activity or assessment answers used. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-agent-subagents",
+      "title": "Subagent terminology and boundaries",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.agent_topics_parent.htm&language=en_US&type=5",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Direct61-character shell. Full short indexed first-party main read: April2026topics renamedsubagents without functionality change; old/new terminology mixed. No runtime/installation. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-agent-script-flow",
+      "title": "Agent Script flow of control",
+      "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-flow.html",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Complete3440-character direct main read: router, top-down prompt resolution before reasoning, one-way transitions discarding earlier resolved prompt and next-utterance router return. Code examples not copied/compiled/executed. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-mcp-solutions",
+      "title": "Salesforce MCP solutions for developers",
+      "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/mcp.html",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Complete3875-character direct main/table read: basic service interaction and listed developer solutions. No linked implementation/skill/plugin/server installed or invoked. A2A implementation details not reviewed; general purpose appears in canonical scope. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "salesforce-apex-lwc-security",
       "title": "Secure Apex classes and API-version defaults",
       "url": "https://developer.salesforce.com/docs/platform/lwc/guide/apex-security.html",
@@ -193,10 +361,11 @@
       "source_type": "official-policy",
       "access_model": "public",
       "supported_exams": [
-        "SALESFORCE-PLATFORM-APP-BUILDER"
+        "SALESFORCE-PLATFORM-APP-BUILDER",
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: DirectHTTPshell; browser English overview/completion/date table throughdate-subject-to-change note read. Winter26Dec11,2025available/Dec4,2026due,PT;includesAppBuilder. Remainingrole tablesnotfullyaudited;actualassignedeligibilitynotknown. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: DirectHTTPshell; browser English overview/completion/date table throughdate-subject-to-change note read. Winter26Dec11,2025available/Dec4,2026due,PT;includesAppBuilder. Remainingrole tablesnotfullyaudited;actualassignedeligibilitynotknown. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution. September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Direct shell; English browser body through German locale read for annual overview, full date table and Agentforce Specialist row. Summer26availableAug27,2026/dueAug20,2027PT subjectchange. Earlier earned-byAug24 cutoff absent in current read sources; assigned credential account not accessed. Other role tables not comprehensively audited. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
     },
     {
       "id": "salesforce-cross-object-formula",
@@ -362,10 +531,11 @@
       "access_model": "public",
       "supported_exams": [
         "SALESFORCE-PLATFORM-ADMINISTRATOR",
-        "SALESFORCE-PLATFORM-APP-BUILDER"
+        "SALESFORCE-PLATFORM-APP-BUILDER",
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Direct HTTP shell; browser main versioned release section read in full. Applies only API68.0+ screen/autolaunched flows with new enforcing-user option. Ordinary user context can inherit system caller permissions. No release rollout or org runtime verified. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Fresh directHTTPshell; complete browser main versioned change read during preceding same-sessionAdministratorreview. API68+ enforcing-user option for eligibleflows,not changedidentity orproof oforgavailability. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Direct HTTP shell; browser main versioned release section read in full. Applies only API68.0+ screen/autolaunched flows with new enforcing-user option. Ordinary user context can inherit system caller permissions. No release rollout or org runtime verified. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Fresh directHTTPshell; complete browser main versioned change read during preceding same-sessionAdministratorreview. API68+ enforcing-user option for eligibleflows,not changedidentity orproof oforgavailability. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution. September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Fresh direct shell; complete browser main read in preceding same-session Administrator/AppBuilder reviews. API68 enforcing-user option for eligible flows prevents system-context inheritance, not identity substitution. No Flow run or target-org availability assertion. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
     },
     {
       "id": "salesforce-permission-muting",
@@ -421,10 +591,11 @@
       "access_model": "public",
       "supported_exams": [
         "SALESFORCE-PLATFORM-ADMINISTRATOR",
-        "SALESFORCE-PLATFORM-APP-BUILDER"
+        "SALESFORCE-PLATFORM-APP-BUILDER",
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Direct HTTP shell; browser main article read including full three-column authentication table and verified-customer scoping section. Supported credential-verified Experience Cloud/Enhanced Chat authenticated path distinguished from identified contact. No linked video or live agent/channel. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: FreshHTTPshell; browser main andfullthree-columnauthenticationtable read inprecedingAdministratorreview. Verifiedcontactvscredential-authenticatedsite andcustomerqueryscoping,notalllinkedguides oragentexecution. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Direct HTTP shell; browser main article read including full three-column authentication table and verified-customer scoping section. Supported credential-verified Experience Cloud/Enhanced Chat authenticated path distinguished from identified contact. No linked video or live agent/channel. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: FreshHTTPshell; browser main andfullthree-columnauthenticationtable read inprecedingAdministratorreview. Verifiedcontactvscredential-authenticatedsite andcustomerqueryscoping,notalllinkedguides oragentexecution. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution. September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Direct61-character shell; full browser main2542–2618 and three-persona table read. Unidentified and verified contacts use Agent User/internalOWD; supported authenticated site route uses site user. Verified ID/context alone does not control access; server query scoping and action filters both required. No org/authentication execution. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
     },
     {
       "id": "salesforce-upsert-external-id",
@@ -49739,7 +49910,7 @@
         "SALESFORCE-PLATFORM-DEVELOPER",
         "SALESFORCE-AGENTFORCE-SPECIALIST"
       ],
-      "notes": "Commercial study guides and explained original practice exams; verify the displayed blueprint and release before purchase. Agentforce marketing indexed on September 2 still described an older five-domain/18-objective revision, so verify a six-domain Spring '26 update before relying on it. September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Public certification catalog read, including Administrator product links and associate prerequisite wording. This conflicts with official no-prerequisite rule. No assertion about practice originality or quality. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Fresh catalog capture; complete public main catalog read during immediately preceding Administrator review. Only general App Builder resource presence used here; no current App Builder product interior or quality evaluated. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution. September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Fresh 9070-character capture matches the landing catalog read in the preceding same-session Salesforce reviews. Redirect to k2u.ai recorded; PD course/practice interiors, exact alignment and question quality not verified. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
+      "notes": "Commercial study guides and explained original practice exams; verify the displayed blueprint and release before purchase. Agentforce marketing indexed on September 2 still described an older five-domain/18-objective revision, so verify a six-domain Spring '26 update before relying on it. September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Public certification catalog read, including Administrator product links and associate prerequisite wording. This conflicts with official no-prerequisite rule. No assertion about practice originality or quality. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Fresh catalog capture; complete public main catalog read during immediately preceding Administrator review. Only general App Builder resource presence used here; no current App Builder product interior or quality evaluated. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution. September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Fresh 9070-character capture matches the landing catalog read in the preceding same-session Salesforce reviews. Redirect to k2u.ai recorded; PD course/practice interiors, exact alignment and question quality not verified. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution. September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Fresh 9070-character public catalog capture matches reading from preceding same-session Salesforce reviews. Agentforce product/paid lesson and practice-question interiors, current alignment and quality not verified. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
     },
     {
       "id": "salesforce-platform-app-builder-guide",
@@ -49980,34 +50151,144 @@
       "notes": "13h49m guided course listed as updated June 2026; reconcile its legacy title and coverage with the official current pages. September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: HTTP403. Earlier 13h49/June2026 metadata not reverified. No paid interior or question quality claim. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"salesforce-agentforce-specialist-guide","title":"Salesforce Certified Agentforce Specialist Exam Guide","url":"https://help.salesforce.com/s/articleView?id=005298924&language=en_US&type=1","publisher":"Salesforce","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-07","supported_exams":["SALESFORCE-AGENTFORCE-SPECIALIST"],"notes":"Canonical Spring '26 six-domain objectives, candidate boundary and exam contract; complete indexed text was revalidated September 7 despite a Loading/CSS wrapper in simple HTML."
+      "id": "salesforce-agentforce-specialist-guide",
+      "title": "Salesforce Certified Agentforce Specialist Exam Guide",
+      "url": "https://help.salesforce.com/s/articleView?id=005298924&language=en_US&type=1",
+      "publisher": "Salesforce",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "notes": "Canonical Spring '26 six-domain objectives, candidate boundary and exam contract; complete indexed text was revalidated September 7 despite a Loading/CSS wrapper in simple HTML. September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Direct61-character loading/CSS shell. Complete current browser main read: candidate boundary/exclusions, contract,26objectives/sixweights, training and annual maintenance. Earlier paraphrased snapshot corrected to exact current wording; historical baselines/audit references preserved. No announced new blueprint date or automated hash match claimed. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"salesforce-agentforce-specialist-certification","title":"Salesforce Certified Agentforce Specialist","url":"https://trailhead.salesforce.com/credentials/agentforcespecialist","publisher":"Salesforce","authority_class":1,"source_type":"official-certification-page","access_model":"public","last_checked":"2026-09-02","supported_exams":["SALESFORCE-AGENTFORCE-SPECIALIST"],"notes":"Current credential identity, role description, related credentials and official Agentblazer learning entry point."
+      "id": "salesforce-agentforce-specialist-certification",
+      "title": "Salesforce Certified Agentforce Specialist",
+      "url": "https://trailhead.salesforce.com/credentials/agentforcespecialist",
+      "publisher": "Salesforce",
+      "authority_class": 1,
+      "source_type": "official-certification-page",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "notes": "Current credential identity, role description, related credentials and official Agentblazer learning entry point. September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Complete1040-character main read: current title, Agentblazer preparation entry and related Admin/AppBuilder credentials. No booking/Academy account action. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"salesforce-agentblazer-legend-2026","title":"Become an Agentblazer Legend 2026","url":"https://trailhead.salesforce.com/content/learn/trails/become-an-agentblazer-legend-2026","publisher":"Salesforce","authority_class":1,"source_type":"official-learning-path","access_model":"public","last_checked":"2026-09-02","supported_exams":["SALESFORCE-AGENTFORCE-SPECIALIST"],"notes":"Free 15h28 advanced trail after its prerequisite trail, covering customization, Data 360, retrieval, testing/monitoring, Slack and development tools."
+      "id": "salesforce-agentblazer-legend-2026",
+      "title": "Become an Agentblazer Legend 2026",
+      "url": "https://trailhead.salesforce.com/content/learn/trails/become-an-agentblazer-legend-2026",
+      "publisher": "Salesforce",
+      "authority_class": 1,
+      "source_type": "official-learning-path",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "notes": "Free 15h28 advanced trail after its prerequisite trail, covering customization, Data 360, retrieval, testing/monitoring, Slack and development tools. September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Complete2782-character public group grid read.17h28=1048minutes from465/55/155/148/105/105/15; eighth group is untimed certification step. Previous15h28 no longer current. Prior trails required and current path locked; not all interiors. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"salesforce-agentforce-specialist-maintenance-summer-26","title":"Agentforce Specialist Certification Maintenance (Summer '26)","url":"https://trailhead.salesforce.com/content/learn/modules/agentforce-specialist-certification-maintenance-summer-26","publisher":"Salesforce","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["SALESFORCE-AGENTFORCE-SPECIALIST"],"notes":"Free five-minute current maintenance badge on Agent Script/new Builder, Agentforce Grid and Observability. Salesforce Help states an August 20, 2027 deadline for credentials earned on or before August 24, 2026."
+      "id": "salesforce-agentforce-specialist-maintenance-summer-26",
+      "title": "Agentforce Specialist Certification Maintenance (Summer '26)",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/agentforce-specialist-certification-maintenance-summer-26",
+      "publisher": "Salesforce",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "notes": "Free five-minute current maintenance badge on Agent Script/new Builder, Agentforce Grid and Observability. Salesforce Help states an August 20, 2027 deadline for credentials earned on or before August 24, 2026. September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Complete828-character listing read: five-minute single introductory unit. Assessment not accessed/completed. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"salesforce-afs401-agentforce-service-specialist","title":"Agentforce for Service Specialist (AFS401)","url":"https://trailheadacademy.salesforce.com/classes/afs401-agentforce-for-service-specialist---afs401","publisher":"Salesforce Trailhead Academy","authority_class":1,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["SALESFORCE-AGENTFORCE-SPECIALIST"],"notes":"Official three-day instructor-led build, test and deploy course focused on service agents; supplement Data 360 and multi-agent breadth."
+      "id": "salesforce-afs401-agentforce-service-specialist",
+      "title": "Agentforce for Service Specialist (AFS401)",
+      "url": "https://trailheadacademy.salesforce.com/classes/afs401-agentforce-for-service-specialist---afs401",
+      "publisher": "Salesforce Trailhead Academy",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "notes": "Official three-day instructor-led build, test and deploy course focused on service agents; supplement Data 360 and multi-agent breadth. September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Direct HTTP success with blank main. Earlier three-day duration, sessions and course contents not reverified; no booking. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"salesforce-agentforce-partner-pocket-guide","title":"Agentforce Partner Pocket Guide","url":"https://cloud.mail.salesforce.com/agentforcepartnerpocketguide","publisher":"Salesforce","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["SALESFORCE-AGENTFORCE-SPECIALIST"],"notes":"Public monthly partner release-readiness index with videos and selected public assets; some linked technical PDFs require Salesforce Partner Community login. Not an exam blueprint."
+      "id": "salesforce-agentforce-partner-pocket-guide",
+      "title": "Agentforce Partner Pocket Guide",
+      "url": "https://cloud.mail.salesforce.com/agentforcepartnerpocketguide",
+      "publisher": "Salesforce",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "notes": "Public monthly partner release-readiness index with videos and selected public assets; some linked technical PDFs require Salesforce Partner Community login. Not an exam blueprint. September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: HTTP success but only three-character extracted body. Prior content, monthly cadence and linked Partner access conditions not reverified; no login. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-practical-salesforce-agentforce-playbook","title":"Practical Salesforce Agentforce Playbook","url":"https://www.oreilly.com/library/view/practical-salesforce-agentforce/9781806389230/","publisher":"O'Reilly / Packt / Lars Malmqvist","authority_class":3,"source_type":"commercial-book","access_model":"paid","last_checked":"2026-09-02","supported_exams":["SALESFORCE-AGENTFORCE-SPECIALIST"],"notes":"April 2026, 298-page/7h11m listed implementation book spanning architecture, Builder, retrieval, security, testing, deployment, analytics and operations; not certification-specific."
+      "id": "oreilly-practical-salesforce-agentforce-playbook",
+      "title": "Practical Salesforce Agentforce Playbook",
+      "url": "https://www.oreilly.com/library/view/practical-salesforce-agentforce/9781806389230/",
+      "publisher": "O'Reilly / Packt / Lars Malmqvist",
+      "authority_class": 3,
+      "source_type": "commercial-book",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "notes": "April 2026, 298-page/7h11m listed implementation book spanning architecture, Builder, retrieval, security, testing, deployment, analytics and operations; not certification-specific. September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: HTTP403. Earlier7h11/298pages/April2026 metadata not reverified; no paid book interior. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-salesforce-agentforce-specialist-wheeler","title":"Salesforce Certified Agentforce Specialist and Practice Test","url":"https://www.udemy.com/course/agentforce/","publisher":"Udemy / Mike Wheeler and team","authority_class":3,"source_type":"commercial-course","access_model":"paid","last_checked":"2026-09-02","supported_exams":["SALESFORCE-AGENTFORCE-SPECIALIST"],"notes":"6h11m course updated July 2026 with a timed original practice test plus MCP and multi-agent additions; catalog still retains older AI Specialist lessons, so select against the current six-domain outline."
+      "id": "udemy-salesforce-agentforce-specialist-wheeler",
+      "title": "Salesforce Certified Agentforce Specialist and Practice Test",
+      "url": "https://www.udemy.com/course/agentforce/",
+      "publisher": "Udemy / Mike Wheeler and team",
+      "authority_class": 3,
+      "source_type": "commercial-course",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "notes": "6h11m course updated July 2026 with a timed original practice test plus MCP and multi-agent additions; catalog still retains older AI Specialist lessons, so select against the current six-domain outline. September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: HTTP403. Earlier6h11/July2026 and claimed MCP/multi-agent course coverage not reverified; no paid practice content. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"youtube-salesforce-ben-agentforce-specialist-2026","title":"Your COMPLETE Guide to the Salesforce Agentforce Specialist Certification Exam","url":"https://www.youtube.com/watch?v=jbqQPedm_lk","publisher":"Salesforce Ben","authority_class":3,"source_type":"community-learning","access_model":"public","last_checked":"2026-09-02","supported_exams":["SALESFORCE-AGENTFORCE-SPECIALIST"],"notes":"Six-minute 44-second March 4, 2026 credential orientation; use official Salesforce sources for exact objectives and later product changes."
+      "id": "youtube-salesforce-ben-agentforce-specialist-2026",
+      "title": "Your COMPLETE Guide to the Salesforce Agentforce Specialist Certification Exam",
+      "url": "https://www.youtube.com/watch?v=jbqQPedm_lk",
+      "publisher": "Salesforce Ben",
+      "authority_class": 3,
+      "source_type": "community-learning",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "notes": "Six-minute 44-second March 4, 2026 credential orientation; use official Salesforce sources for exact objectives and later product changes. September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: HTTP success241-character title/footer only. Earlier seven-minute/March2026 metadata not reverified; video not played. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"salesforce-agentforce-release-notes-summer-26","title":"Agentforce Release Notes — Summer '26","url":"https://help.salesforce.com/s/articleView?id=release-notes.rn_einstein_platform.htm&language=en_US&release=262&type=5","publisher":"Salesforce","authority_class":1,"source_type":"release-notes","access_model":"public","last_checked":"2026-09-02","supported_exams":["SALESFORCE-AGENTFORCE-SPECIALIST"],"notes":"Current product-change context. Salesforce states Agentforce changes as often as weekly; use to maintain implementation awareness, not to replace the Spring '26 exam guide."
+      "id": "salesforce-agentforce-release-notes-summer-26",
+      "title": "Agentforce Release Notes — Summer '26",
+      "url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_einstein_platform.htm&language=en_US&release=262&type=5",
+      "publisher": "Salesforce",
+      "authority_class": 1,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "notes": "Current product-change context. Salesforce states Agentforce changes as often as weekly; use to maintain implementation awareness, not to replace the Spring '26 exam guide. September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Direct61-character shell. Full current release article not audited; retained discovery entry with explicit limitation. Exact weekly cadence not reasserted. Release awareness instead supported by read maintenance introduction and versioned Flow documentation. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
     },
     {
       "id":"mongodb-associate-developer-exam","title":"MongoDB Associate Developer Exam","url":"https://learn.mongodb.com/pages/mongodb-associate-developer-exam","publisher":"MongoDB University","authority_class":1,"source_type":"official-certification-page","access_model":"public","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-DEVELOPER"],"notes":"Current public 53-question, 75-minute, USD150, English, online-proctored contract and C#/Java/Node.js/PHP/Python selection."
@@ -55983,9 +56264,11 @@
       "authority_class": 2,
       "source_type": "architecture-guidance",
       "access_model": "public",
-      "last_checked": "2026-09-17",
-      "supported_exams": ["SALESFORCE-AGENTFORCE-SPECIALIST"],
-      "notes": "Current architecture guidance for agent identities, least privilege, action execution context, data classification, sharing, and integration security; not added exam scope."
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "notes": "Current architecture guidance for agent identities, least privilege, action execution context, data classification, sharing, and integration security; not added exam scope. September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Fresh90504-character Trust article; selected identity section222–244 and connection-scenario table read, with some adjacent integration/access discussion. Not whole article. Broader auth/Apex claims not adopted without more specific documentation. Specific Service-access table governs exceptions. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
     },
     {
       "id": "salesforce-admins-app-builder-refresh-2026",

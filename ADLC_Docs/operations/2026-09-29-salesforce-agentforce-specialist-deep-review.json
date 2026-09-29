@@ -1,0 +1,1776 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "SALESFORCE-AGENTFORCE-SPECIALIST",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/SALESFORCE-AGENTFORCE-SPECIALIST-salesforce-certified-agentforce-specialist.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "ebc7c8a6f14a959739ab0e83f327254fc24a86c1271172e02f785722728a5243",
+  "guide_after_sha256": "6fc86a65e727e754bc282432e4f44ff798f84eb35fd8cc02bcb8b41f424a5d20",
+  "prior_records": {
+    "exam": {
+      "code": "SALESFORCE-AGENTFORCE-SPECIALIST",
+      "level": "intermediate",
+      "vendor_id": "salesforce",
+      "title": "Salesforce Certified Agentforce Specialist",
+      "status": "active",
+      "study_guide_url": "https://help.salesforce.com/s/articleView?id=005298924&language=en_US&type=1",
+      "guide_path": "guides/SALESFORCE-AGENTFORCE-SPECIALIST-salesforce-certified-agentforce-specialist.md",
+      "blueprint_last_checked": "2026-09-07",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-07",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite is published. Salesforce describes a candidate with about one year configuring the platform and standard objects, including Data 360, plus hands-on Agent Builder, Prompt Builder, Testing Center and sandbox-to-production experience. Practice the complete governed lifecycle with synthetic data: prompts, retrieval, agents and actions, evaluation, promotion, observability and secured multi-agent interoperability."
+    },
+    "review": {
+      "id": "salesforce-agentforce-specialist-2026-09-07-source-validation",
+      "exam_code": "SALESFORCE-AGENTFORCE-SPECIALIST",
+      "guide_path": "guides/SALESFORCE-AGENTFORCE-SPECIALIST-salesforce-certified-agentforce-specialist.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-07",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/salesforce-agentforce-specialist-official-objectives.txt",
+      "blueprint_snapshot_sha256": "e18e94e62ef0339b9c06f955ffd0b9d23f3ab7348e16bab214ba15f61b3e4e5b",
+      "objective_coverage": [
+        {
+          "objective_group": "Prompt Engineering (20%)",
+          "guide_sections": [
+            "Section 1",
+            "Scenarios 1–2",
+            "Labs 1 and 4"
+          ]
+        },
+        {
+          "objective_group": "Data 360 Fundamentals (20%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "AI Agents (35%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 3–5"
+          ]
+        },
+        {
+          "objective_group": "Testing, Deployment, and Maintenance (10%)",
+          "guide_sections": [
+            "Section 4",
+            "All scenarios",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Governance and Observability (10%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Multi-Agent Orchestration (5%)",
+          "guide_sections": [
+            "Section 6",
+            "Scenario 3",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 12,
+        "reachable": 11,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All six Spring '26 domains are mapped through governed prompt/template and Data 360 retrieval lifecycles, agent/subagent and deterministic action design, representative Testing Center evaluation, dependency-aware deployment, correlated governance/observability, and secured SOMA/MCP/A2A boundaries. Three scenarios, eight authorized labs and 40 original checks are included. Complete indexed official text confirms the candidate boundary, contract, six weights and objective snapshot despite the simple-HTML wrapper. Salesforce Well-Architected security guidance adds agent-identity and action-context practice without becoming exam scope. No recalled/live item, dump, shared superbadge solution or copied course content is used."
+    },
+    "sources": [
+      {
+        "id": "focus-on-force-salesforce-certification",
+        "title": "Focus on Force Salesforce Certification Resources",
+        "url": "https://focusonforce.com/",
+        "publisher": "K2 University / Focus on Force",
+        "authority_class": 3,
+        "source_type": "commercial-study-and-practice",
+        "access_model": "paid",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-ADMINISTRATOR",
+          "SALESFORCE-PLATFORM-APP-BUILDER",
+          "SALESFORCE-PLATFORM-DEVELOPER",
+          "SALESFORCE-AGENTFORCE-SPECIALIST"
+        ],
+        "notes": "Commercial study guides and explained original practice exams; verify the displayed blueprint and release before purchase. Agentforce marketing indexed on September 2 still described an older five-domain/18-objective revision, so verify a six-domain Spring '26 update before relying on it. September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Public certification catalog read, including Administrator product links and associate prerequisite wording. This conflicts with official no-prerequisite rule. No assertion about practice originality or quality. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution. September 29 SALESFORCE-PLATFORM-APP-BUILDER deep review: Fresh catalog capture; complete public main catalog read during immediately preceding Administrator review. Only general App Builder resource presence used here; no current App Builder product interior or quality evaluated. See docs/research/2026-09-29-salesforce-platform-app-builder-deep-review.md No live infrastructure execution. September 29 SALESFORCE-PLATFORM-DEVELOPER deep review: Fresh 9070-character capture matches the landing catalog read in the preceding same-session Salesforce reviews. Redirect to k2u.ai recorded; PD course/practice interiors, exact alignment and question quality not verified. See docs/research/2026-09-29-salesforce-platform-developer-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "salesforce-agentforce-specialist-guide",
+        "title": "Salesforce Certified Agentforce Specialist Exam Guide",
+        "url": "https://help.salesforce.com/s/articleView?id=005298924&language=en_US&type=1",
+        "publisher": "Salesforce",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "SALESFORCE-AGENTFORCE-SPECIALIST"
+        ],
+        "notes": "Canonical Spring '26 six-domain objectives, candidate boundary and exam contract; complete indexed text was revalidated September 7 despite a Loading/CSS wrapper in simple HTML."
+      },
+      {
+        "id": "salesforce-agentforce-specialist-certification",
+        "title": "Salesforce Certified Agentforce Specialist",
+        "url": "https://trailhead.salesforce.com/credentials/agentforcespecialist",
+        "publisher": "Salesforce",
+        "authority_class": 1,
+        "source_type": "official-certification-page",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-AGENTFORCE-SPECIALIST"
+        ],
+        "notes": "Current credential identity, role description, related credentials and official Agentblazer learning entry point."
+      },
+      {
+        "id": "salesforce-agentblazer-legend-2026",
+        "title": "Become an Agentblazer Legend 2026",
+        "url": "https://trailhead.salesforce.com/content/learn/trails/become-an-agentblazer-legend-2026",
+        "publisher": "Salesforce",
+        "authority_class": 1,
+        "source_type": "official-learning-path",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-AGENTFORCE-SPECIALIST"
+        ],
+        "notes": "Free 15h28 advanced trail after its prerequisite trail, covering customization, Data 360, retrieval, testing/monitoring, Slack and development tools."
+      },
+      {
+        "id": "salesforce-agentforce-specialist-maintenance-summer-26",
+        "title": "Agentforce Specialist Certification Maintenance (Summer '26)",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/agentforce-specialist-certification-maintenance-summer-26",
+        "publisher": "Salesforce",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-AGENTFORCE-SPECIALIST"
+        ],
+        "notes": "Free five-minute current maintenance badge on Agent Script/new Builder, Agentforce Grid and Observability. Salesforce Help states an August 20, 2027 deadline for credentials earned on or before August 24, 2026."
+      },
+      {
+        "id": "salesforce-afs401-agentforce-service-specialist",
+        "title": "Agentforce for Service Specialist (AFS401)",
+        "url": "https://trailheadacademy.salesforce.com/classes/afs401-agentforce-for-service-specialist---afs401",
+        "publisher": "Salesforce Trailhead Academy",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-AGENTFORCE-SPECIALIST"
+        ],
+        "notes": "Official three-day instructor-led build, test and deploy course focused on service agents; supplement Data 360 and multi-agent breadth."
+      },
+      {
+        "id": "salesforce-agentforce-partner-pocket-guide",
+        "title": "Agentforce Partner Pocket Guide",
+        "url": "https://cloud.mail.salesforce.com/agentforcepartnerpocketguide",
+        "publisher": "Salesforce",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-AGENTFORCE-SPECIALIST"
+        ],
+        "notes": "Public monthly partner release-readiness index with videos and selected public assets; some linked technical PDFs require Salesforce Partner Community login. Not an exam blueprint."
+      },
+      {
+        "id": "oreilly-practical-salesforce-agentforce-playbook",
+        "title": "Practical Salesforce Agentforce Playbook",
+        "url": "https://www.oreilly.com/library/view/practical-salesforce-agentforce/9781806389230/",
+        "publisher": "O'Reilly / Packt / Lars Malmqvist",
+        "authority_class": 3,
+        "source_type": "commercial-book",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-AGENTFORCE-SPECIALIST"
+        ],
+        "notes": "April 2026, 298-page/7h11m listed implementation book spanning architecture, Builder, retrieval, security, testing, deployment, analytics and operations; not certification-specific."
+      },
+      {
+        "id": "udemy-salesforce-agentforce-specialist-wheeler",
+        "title": "Salesforce Certified Agentforce Specialist and Practice Test",
+        "url": "https://www.udemy.com/course/agentforce/",
+        "publisher": "Udemy / Mike Wheeler and team",
+        "authority_class": 3,
+        "source_type": "commercial-course",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-AGENTFORCE-SPECIALIST"
+        ],
+        "notes": "6h11m course updated July 2026 with a timed original practice test plus MCP and multi-agent additions; catalog still retains older AI Specialist lessons, so select against the current six-domain outline."
+      },
+      {
+        "id": "youtube-salesforce-ben-agentforce-specialist-2026",
+        "title": "Your COMPLETE Guide to the Salesforce Agentforce Specialist Certification Exam",
+        "url": "https://www.youtube.com/watch?v=jbqQPedm_lk",
+        "publisher": "Salesforce Ben",
+        "authority_class": 3,
+        "source_type": "community-learning",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-AGENTFORCE-SPECIALIST"
+        ],
+        "notes": "Six-minute 44-second March 4, 2026 credential orientation; use official Salesforce sources for exact objectives and later product changes."
+      },
+      {
+        "id": "salesforce-agentforce-release-notes-summer-26",
+        "title": "Agentforce Release Notes — Summer '26",
+        "url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_einstein_platform.htm&language=en_US&release=262&type=5",
+        "publisher": "Salesforce",
+        "authority_class": 1,
+        "source_type": "release-notes",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-AGENTFORCE-SPECIALIST"
+        ],
+        "notes": "Current product-change context. Salesforce states Agentforce changes as often as weekly; use to maintain implementation awareness, not to replace the Spring '26 exam guide."
+      },
+      {
+        "id": "salesforce-well-architected-secure",
+        "title": "Salesforce Well-Architected - Trust",
+        "url": "https://architect.salesforce.com/docs/architect/well-architected/guide/trust.html",
+        "publisher": "Salesforce Architects",
+        "authority_class": 2,
+        "source_type": "architecture-guidance",
+        "access_model": "public",
+        "last_checked": "2026-09-17",
+        "supported_exams": [
+          "SALESFORCE-AGENTFORCE-SPECIALIST"
+        ],
+        "notes": "Current architecture guidance for agent identities, least privilege, action execution context, data classification, sharing, and integration security; not added exam scope."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "c5688c4bdaed3216a1108bc9e3c06d8404a65550088005e1b7b1ebe925d809bd",
+      "guide_sections": [
+        "1. Prompt Engineering — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "1077577afd179713044c6f2fa4ccfb46922b7490867039a12cc3d2748b27c307",
+      "guide_sections": [
+        "1. Prompt Engineering — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "b30ff35d2d1c87cae923253f0b4bde448af610b7f8e3185d5014ce3b0495046e",
+      "guide_sections": [
+        "1. Prompt Engineering — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "29812655c6dd3fcfe1b16f40497184ae2b013c6d7bb0b7d8774b2ece4c2c7dcc",
+      "guide_sections": [
+        "1. Prompt Engineering — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "6c0b03a5b85b864988ae2803ce3e6e2237bdf310ad01db694a219ee47fccaa82",
+      "guide_sections": [
+        "1. Prompt Engineering — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "40f3ebbe760e53d7d8a6c57f5be7a85df5b4d1bc77feb69140303788b055a5e5",
+      "guide_sections": [
+        "1. Prompt Engineering — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "7fa65fa8aa347c9cf9a214ea496ffc635a71f1b8ab835542df7c24c1e0f09dea",
+      "guide_sections": [
+        "1. Prompt Engineering — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "7ef8dfa4ee898a7833fc9b293110c8b2f07e869393458e5074177a30f9da724a",
+      "guide_sections": [
+        "1. Prompt Engineering — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "b8fe7668dfd1ea7e99ebb7be7fa277d7e61a09cc8c2d40f99d84cac8bef4cdb8",
+      "guide_sections": [
+        "2. Data 360 Fundamentals — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "f3daa7aae0b74daf0433400065e9e4d1ed94e5d7d71c808747b1a76ffdaf41a7",
+      "guide_sections": [
+        "2. Data 360 Fundamentals — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "fb68541a18c6762f0301e1f76b2d557f60431b2e52c922ba7c07a70163f63fcf",
+      "guide_sections": [
+        "3. AI Agents — 35%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "ba63171106d576d53a556abf1bc942ba49179e2513f6d70c8455f08162332e01",
+      "guide_sections": [
+        "3. AI Agents — 35%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "cfa14169faaa0ca8a3fe1a8c427c9af96b7103d8675ffebd5776aeea95d99cc8",
+      "guide_sections": [
+        "3. AI Agents — 35%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "5a120c0b4eb9edf49bc4ff9bcac77ea1785c6fc69e936cf6384b185620c54ec3",
+      "guide_sections": [
+        "3. AI Agents — 35%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "ed0569c8a6fcdacecceef7df5d56e18e3c98537b3fd4c61d25ceecd2d2d4002a",
+      "guide_sections": [
+        "3. AI Agents — 35%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "970e32f8fbfa16a978c286ac38206331cc509f668f796e342150d4365583fcd6",
+      "guide_sections": [
+        "3. AI Agents — 35%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "bc4378a1e802312aede15523db979dbe1d5d5860e75898366b7e7e13555a8902",
+      "guide_sections": [
+        "3. AI Agents — 35%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "c2ace414f5f934639059db3605b8a6822bddef8b21261d4b2af2f32a4df07719",
+      "guide_sections": [
+        "3. AI Agents — 35%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "e1b857b2f2dac6ac5cf6d97012aeb4b02950b6ff306fb38d56a21611316f708a",
+      "guide_sections": [
+        "4. Testing, Deployment, and Maintenance — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "42a6a8ae37be329db59153803c7b2a9932354829dfb7b9c46cc0ce6c0ad0ec5e",
+      "guide_sections": [
+        "4. Testing, Deployment, and Maintenance — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "c7bb46af6737f8bc975ba0d15bbf3a6292cdee99929c511f3939bfac1cea3bc9",
+      "guide_sections": [
+        "4. Testing, Deployment, and Maintenance — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "b05c2839f0f1f91147ef8b2b73c179cdb7ab3bf6a25cb3e61a5dd683cc9a3538",
+      "guide_sections": [
+        "4. Testing, Deployment, and Maintenance — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "693127892ee9fbd118f5bb935317803fc0c09357457ef9cbdb01e02613e448aa",
+      "guide_sections": [
+        "5. Governance and Observability — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "3fb3f88b334e57433b676039d5132a9e8989bc72be962e65cb3ed1ae6a55d138",
+      "guide_sections": [
+        "5. Governance and Observability — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "bb1596d07e2c21fc1054e3685cd66283a32ee49e0ec62c681ffd24e5ba43e163",
+      "guide_sections": [
+        "6. Multi-Agent Orchestration — 5%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "6ba1d2a3762870cecf3fd2c22e4c2cb7c559c9f9f4074b18184c02379f3db626",
+      "guide_sections": [
+        "6. Multi-Agent Orchestration — 5%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [
+      "SALESFORCE-AGENTFORCE-SPECIALIST"
+    ],
+    "results": [
+      {
+        "code": "SALESFORCE-AGENTFORCE-SPECIALIST",
+        "title": "Salesforce Certified Agentforce Specialist",
+        "url": "https://help.salesforce.com/s/articleView?id=005298924&language=en_US&type=1",
+        "guide_path": "guides/SALESFORCE-AGENTFORCE-SPECIALIST-salesforce-certified-agentforce-specialist.md",
+        "snapshot_path": "data\\objective-snapshots\\salesforce-agentforce-specialist-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\salesforce-agentforce-specialist-official-status.json",
+        "status": "manual-review",
+        "changed": false,
+        "error": "ValueError: Could not find Salesforce exam objectives",
+        "manual_review_reason": "The public Salesforce Help response is reachable but its client-rendered HTML does not expose the reviewed Exam Outline to this non-browser extractor.",
+        "review_route": "docs/SOURCE-FRESHNESS.md"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 27,
+    "reachable": 25,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "focus-on-force-salesforce-certification",
+      "url": "https://focusonforce.com/",
+      "checked_at": "2026-09-29T15:03:32.676858+00:00",
+      "health": {
+        "id": "focus-on-force-salesforce-certification",
+        "url": "https://focusonforce.com/",
+        "checked_at": "2026-09-29T15:03:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://k2u.ai/salesforce/certifications/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Salesforce certifications: study guides and practice exams",
+        "canonical_url": "https://k2u.ai/salesforce/certifications/",
+        "duration_signals": [],
+        "signal_fingerprint": "1978713e6b8e73e52f88e9fcd2b917cd105ab77c9a12455318e2be4e8c1d567c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://k2u.ai/salesforce/certifications/",
+      "sha256": "9386ed738a5396c7cc4ac0d132976be9b1ece42c3271b114db2a6603352aa185",
+      "text_characters": 9070
+    },
+    {
+      "id": "salesforce-agentforce-specialist-guide",
+      "url": "https://help.salesforce.com/s/articleView?id=005298924&language=en_US&type=1",
+      "checked_at": "2026-09-29T15:03:32.677636+00:00",
+      "health": {
+        "id": "salesforce-agentforce-specialist-guide",
+        "url": "https://help.salesforce.com/s/articleView?id=005298924&language=en_US&type=1",
+        "checked_at": "2026-09-29T15:03:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=005298924&language=en_US&type=1",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=005298924&language=en_US&type=1",
+        "duration_signals": [],
+        "signal_fingerprint": "174ed785bf9cd95b2564ee5538104da4a8f82b198efeee918df5a682c4b4b11c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=005298924&language=en_US&type=1",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-agentforce-specialist-certification",
+      "url": "https://trailhead.salesforce.com/credentials/agentforcespecialist",
+      "checked_at": "2026-09-29T15:03:32.678166+00:00",
+      "health": {
+        "id": "salesforce-agentforce-specialist-certification",
+        "url": "https://trailhead.salesforce.com/credentials/agentforcespecialist",
+        "checked_at": "2026-09-29T15:03:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/credentials/agentforcespecialist",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Certification",
+        "canonical_url": "https://trailhead.salesforce.com/credentials/agentforcespecialist",
+        "duration_signals": [],
+        "signal_fingerprint": "c175e570b72028ce6d9d27d25959d0e14ddc17cb7e2a3b5d807fdce8e08c9e22",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/credentials/agentforcespecialist",
+      "sha256": "d565f34a08a96974f4da97f50fa35c18da6c461dcb27ae0bc232ea5a4c3dd656",
+      "text_characters": 1040
+    },
+    {
+      "id": "salesforce-agentblazer-legend-2026",
+      "url": "https://trailhead.salesforce.com/content/learn/trails/become-an-agentblazer-legend-2026",
+      "checked_at": "2026-09-29T15:03:33.698880+00:00",
+      "health": {
+        "id": "salesforce-agentblazer-legend-2026",
+        "url": "https://trailhead.salesforce.com/content/learn/trails/become-an-agentblazer-legend-2026",
+        "checked_at": "2026-09-29T15:03:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/content/learn/trails/become-an-agentblazer-legend-2026",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Become an Agentblazer Legend 2026 | Salesforce Trailhead",
+        "canonical_url": "https://trailhead.salesforce.com/content/learn/trails/become-an-agentblazer-legend-2026",
+        "duration_signals": [
+          "1 hr 45 mins",
+          "15 mins",
+          "17 hrs 28 mins",
+          "2 hrs 28 mins",
+          "2 hrs 35 mins",
+          "55 mins",
+          "7 hrs 45 mins"
+        ],
+        "signal_fingerprint": "c416dafeb5548703c2554be1532e58883b199f6cf3afff05abbce48f8af1b3da",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/content/learn/trails/become-an-agentblazer-legend-2026",
+      "sha256": "2edf9e08e08aae5263cbe678b3c9d9c54e96eb13797036153b5ce7751fa67e18",
+      "text_characters": 2782
+    },
+    {
+      "id": "salesforce-agentforce-specialist-maintenance-summer-26",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/agentforce-specialist-certification-maintenance-summer-26",
+      "checked_at": "2026-09-29T15:03:34.130402+00:00",
+      "health": {
+        "id": "salesforce-agentforce-specialist-maintenance-summer-26",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/agentforce-specialist-certification-maintenance-summer-26",
+        "checked_at": "2026-09-29T15:03:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/content/learn/modules/agentforce-specialist-certification-maintenance-summer-26",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Agentforce Specialist Certification Maintenance (Summer ’26)",
+        "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/agentforce-specialist-certification-maintenance-summer-26",
+        "duration_signals": [
+          "5 mins",
+          "PT5M"
+        ],
+        "signal_fingerprint": "7cf76c91b776188a6aac595a6d00c6c916f5f014f2716ebf3e2346563375f424",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/content/learn/modules/agentforce-specialist-certification-maintenance-summer-26",
+      "sha256": "72154146fe25393f8969a41cacb4225bc8bc6ac4ee0a2f7eb0d0d25ae9dc0cf4",
+      "text_characters": 828
+    },
+    {
+      "id": "salesforce-afs401-agentforce-service-specialist",
+      "url": "https://trailheadacademy.salesforce.com/classes/afs401-agentforce-for-service-specialist---afs401",
+      "checked_at": "2026-09-29T15:03:34.162461+00:00",
+      "health": {
+        "id": "salesforce-afs401-agentforce-service-specialist",
+        "url": "https://trailheadacademy.salesforce.com/classes/afs401-agentforce-for-service-specialist---afs401",
+        "checked_at": "2026-09-29T15:03:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailheadacademy.salesforce.com/classes/afs401-agentforce-for-service-specialist---afs401",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "https://trailheadacademy.salesforce.com/classes/afs401-agentforce-for-service-specialist---afs401",
+        "duration_signals": [],
+        "signal_fingerprint": "c6e9a9dad07876689f535eb63b578edc0f2b9c7b6d60d5eb4b35c4303a99bc36",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailheadacademy.salesforce.com/classes/afs401-agentforce-for-service-specialist---afs401",
+      "sha256": "b4001be490fa95d3117e1f2ffc569d15c59a84e2b15a181f81bcf966ebb02af9",
+      "text_characters": 0
+    },
+    {
+      "id": "salesforce-agentforce-partner-pocket-guide",
+      "url": "https://cloud.mail.salesforce.com/agentforcepartnerpocketguide",
+      "checked_at": "2026-09-29T15:03:35.035397+00:00",
+      "health": {
+        "id": "salesforce-agentforce-partner-pocket-guide",
+        "url": "https://cloud.mail.salesforce.com/agentforcepartnerpocketguide",
+        "checked_at": "2026-09-29T15:03:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloud.mail.salesforce.com/agentforcepartnerpocketguide",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Agentforce Partner Pocket Guide",
+        "canonical_url": "https://cloud.mail.salesforce.com/agentforcepartnerpocketguide",
+        "duration_signals": [],
+        "signal_fingerprint": "b60fab4d1c4b02de165a486ef03a83d29ca2902518eba3786e523600ca084448",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cloud.mail.salesforce.com/agentforcepartnerpocketguide",
+      "sha256": "b0af7658284e6604aaa4f6cf4ceb769c10049394a029a56b5d591404ee3cf17c",
+      "text_characters": 3
+    },
+    {
+      "id": "oreilly-practical-salesforce-agentforce-playbook",
+      "url": "https://www.oreilly.com/library/view/practical-salesforce-agentforce/9781806389230/",
+      "checked_at": "2026-09-29T15:03:35.090496+00:00",
+      "health": {
+        "id": "oreilly-practical-salesforce-agentforce-playbook",
+        "url": "https://www.oreilly.com/library/view/practical-salesforce-agentforce/9781806389230/",
+        "checked_at": "2026-09-29T15:03:35+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/practical-salesforce-agentforce/9781806389230/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "udemy-salesforce-agentforce-specialist-wheeler",
+      "url": "https://www.udemy.com/course/agentforce/",
+      "checked_at": "2026-09-29T15:03:35.264147+00:00",
+      "health": {
+        "id": "udemy-salesforce-agentforce-specialist-wheeler",
+        "url": "https://www.udemy.com/course/agentforce/",
+        "checked_at": "2026-09-29T15:03:35+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/agentforce/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "youtube-salesforce-ben-agentforce-specialist-2026",
+      "url": "https://www.youtube.com/watch?v=jbqQPedm_lk",
+      "checked_at": "2026-09-29T15:03:35.357640+00:00",
+      "health": {
+        "id": "youtube-salesforce-ben-agentforce-specialist-2026",
+        "url": "https://www.youtube.com/watch?v=jbqQPedm_lk",
+        "checked_at": "2026-09-29T15:03:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=jbqQPedm_lk",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Your COMPLETE guide to the Salesforce Agentforce Specialist Certification Exam",
+        "canonical_url": "https://www.youtube.com/watch?v=jbqQPedm_lk",
+        "duration_signals": [],
+        "signal_fingerprint": "bd65c12310e08c8d2ea10ff00fedf1f8f1358139fe51f0d7ec9df092e351fe07",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=jbqQPedm_lk",
+      "sha256": "7f2eae5cf4a289111fcc3c881b93dd088e50b6052267952b020d5696ddac184b",
+      "text_characters": 241
+    },
+    {
+      "id": "salesforce-agentforce-release-notes-summer-26",
+      "url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_einstein_platform.htm&language=en_US&release=262&type=5",
+      "checked_at": "2026-09-29T15:03:36.880645+00:00",
+      "health": {
+        "id": "salesforce-agentforce-release-notes-summer-26",
+        "url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_einstein_platform.htm&language=en_US&release=262&type=5",
+        "checked_at": "2026-09-29T15:03:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_einstein_platform.htm&language=en_US&release=262&type=5",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_einstein_platform.htm&language=en_US&release=262&type=5",
+        "duration_signals": [],
+        "signal_fingerprint": "a8846d632487db39ec913e84ef32269511de4bb34d9120cb7334268e7c6ef46a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_einstein_platform.htm&language=en_US&release=262&type=5",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-well-architected-secure",
+      "url": "https://architect.salesforce.com/docs/architect/well-architected/guide/trust.html",
+      "checked_at": "2026-09-29T15:03:37.177214+00:00",
+      "health": {
+        "id": "salesforce-well-architected-secure",
+        "url": "https://architect.salesforce.com/docs/architect/well-architected/guide/trust.html",
+        "checked_at": "2026-09-29T15:03:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://architect.salesforce.com/docs/architect/well-architected/guide/trust.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "| Trust | Well-Architected Framework",
+        "canonical_url": "/docs/architect/well-architected/guide/trust.html",
+        "duration_signals": [],
+        "signal_fingerprint": "041e5fc88ae2c1c59f6b9c14ab4f522e9f6bed3304d956007523a22cb6b9fc6b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://architect.salesforce.com/docs/architect/well-architected/guide/trust.html",
+      "sha256": "02a3f49a95e814af287b3ffe5f9ae2e406e3da439963c0a26ec912b61e564a67",
+      "text_characters": 90504
+    },
+    {
+      "id": "salesforce-maintenance-schedule-de",
+      "url": "https://help.salesforce.com/s/articleView?id=005298922&language=de&type=1",
+      "checked_at": "2026-09-29T15:06:14.893159+00:00",
+      "health": {
+        "id": "salesforce-maintenance-schedule-de",
+        "url": "https://help.salesforce.com/s/articleView?id=005298922&language=de&type=1",
+        "checked_at": "2026-09-29T15:06:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=005298922&language=de&type=1",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=005298922&language=de&type=1",
+        "duration_signals": [],
+        "signal_fingerprint": "a2005a42610be1c24ab4d6760128017b32086fedf208f8fd423bbdc8a1c73343",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=005298922&language=de&type=1",
+      "sha256": "07c0036553b2cb7fefadc33c475e6e8fdec05d1d029e10592a4b4ce9670415ab",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-flow-api68-context",
+      "url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5",
+      "checked_at": "2026-09-29T15:06:14.893716+00:00",
+      "health": {
+        "id": "salesforce-flow-api68-context",
+        "url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5",
+        "checked_at": "2026-09-29T15:06:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5",
+        "duration_signals": [],
+        "signal_fingerprint": "0c4db59c13baab16e625075df835741e8633af7b772158470065bc8374068dbe",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-agent-user-access",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5",
+      "checked_at": "2026-09-29T15:06:14.894228+00:00",
+      "health": {
+        "id": "salesforce-agent-user-access",
+        "url": "https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5",
+        "checked_at": "2026-09-29T15:06:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5",
+        "duration_signals": [],
+        "signal_fingerprint": "db62fb68092f3f05c3960dd10660ee588a797e6ce4a586de3233eeb9652d680b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-agentforce-testing-center",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.agent_testing_center.htm&language=en_US&type=5",
+      "checked_at": "2026-09-29T15:10:35.359770+00:00",
+      "health": {
+        "id": "salesforce-agentforce-testing-center",
+        "url": "https://help.salesforce.com/s/articleView?id=ai.agent_testing_center.htm&language=en_US&type=5",
+        "checked_at": "2026-09-29T15:10:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=ai.agent_testing_center.htm&language=en_US&type=5",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=ai.agent_testing_center.htm&language=en_US&type=5",
+        "duration_signals": [],
+        "signal_fingerprint": "4e5abd5fb844301f9f8c308bee5eba5e5ec3a85dc9c5f7b67c7b7716af7d3ef4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=ai.agent_testing_center.htm&language=en_US&type=5",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-agentforce-data-library-troubleshooting",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.data_library_troubleshooting.htm&language=en_US&type=5",
+      "checked_at": "2026-09-29T15:06:16.195845+00:00",
+      "health": {
+        "id": "salesforce-agentforce-data-library-troubleshooting",
+        "url": "https://help.salesforce.com/s/articleView?id=ai.data_library_troubleshooting.htm&language=en_US&type=5",
+        "checked_at": "2026-09-29T15:06:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=ai.data_library_troubleshooting.htm&language=en_US&type=5",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=ai.data_library_troubleshooting.htm&language=en_US&type=5",
+        "duration_signals": [],
+        "signal_fingerprint": "1b1eabf9e0ed465687f4759b157c07d923d099edbc9881e7610edf6bd9150f60",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=ai.data_library_troubleshooting.htm&language=en_US&type=5",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-agentforce-data-library-setup",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.data_library_setup.htm&language=en_US&type=5",
+      "checked_at": "2026-09-29T15:06:16.283006+00:00",
+      "health": {
+        "id": "salesforce-agentforce-data-library-setup",
+        "url": "https://help.salesforce.com/s/articleView?id=ai.data_library_setup.htm&language=en_US&type=5",
+        "checked_at": "2026-09-29T15:06:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=ai.data_library_setup.htm&language=en_US&type=5",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=ai.data_library_setup.htm&language=en_US&type=5",
+        "duration_signals": [],
+        "signal_fingerprint": "4cc1e2ac9ff9e003be90325ec5379870f3a28a1c0d736a780d3ee61affc8489e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=ai.data_library_setup.htm&language=en_US&type=5",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-agent-api-examples",
+      "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-examples.html",
+      "checked_at": "2026-09-29T15:06:17.243867+00:00",
+      "health": {
+        "id": "salesforce-agent-api-examples",
+        "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-examples.html",
+        "checked_at": "2026-09-29T15:06:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-examples.html",
+        "content_type": "text/html",
+        "page_title": "Examples | Agentforce APIs and SDKs | Agentforce Developer Guide | Salesforce Developers",
+        "canonical_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-examples.html",
+        "duration_signals": [],
+        "signal_fingerprint": "5123b098f83e38244aa0c9bda94e68537762d1eb5c98eef952521b1244876883",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-examples.html",
+      "sha256": "a4aadab75a263852a40a919754c5e1d0d397abc8c65028c7d10e728f5c067305",
+      "text_characters": 5589
+    },
+    {
+      "id": "salesforce-agent-api-start",
+      "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-get-started.html",
+      "checked_at": "2026-09-29T15:06:17.305990+00:00",
+      "health": {
+        "id": "salesforce-agent-api-start",
+        "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-get-started.html",
+        "checked_at": "2026-09-29T15:06:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-get-started.html",
+        "content_type": "text/html",
+        "page_title": "Get Started | Agentforce APIs and SDKs | Agentforce Developer Guide | Salesforce Developers",
+        "canonical_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-get-started.html",
+        "duration_signals": [],
+        "signal_fingerprint": "94ede9dfafc8d8b0073f329f41cd372f792d12b98d12530b257fabfbfe39d5e1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-get-started.html",
+      "sha256": "dadd362216b7413f10d38810f95fbab0c6c70571916aaa3f5aa8f48c79cdb7ff",
+      "text_characters": 4998
+    },
+    {
+      "id": "salesforce-prompt-builder-enable",
+      "url": "https://help.salesforce.com/s/articleView?id=prompt_builder_enable.htm&language=en_US&type=5",
+      "checked_at": "2026-09-29T15:06:17.865759+00:00",
+      "health": {
+        "id": "salesforce-prompt-builder-enable",
+        "url": "https://help.salesforce.com/s/articleView?id=prompt_builder_enable.htm&language=en_US&type=5",
+        "checked_at": "2026-09-29T15:06:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=prompt_builder_enable.htm&language=en_US&type=5",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=prompt_builder_enable.htm&language=en_US&type=5",
+        "duration_signals": [],
+        "signal_fingerprint": "93312e57d8e68024d4da7a8627dfbe87139acc70b5872e3e6f25fd20b25d4f13",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=prompt_builder_enable.htm&language=en_US&type=5",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-agent-masking-limits",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.agent_trust_data_masking.htm&language=en_US&type=5",
+      "checked_at": "2026-09-29T15:10:35.360490+00:00",
+      "health": {
+        "id": "salesforce-agent-masking-limits",
+        "url": "https://help.salesforce.com/s/articleView?id=ai.agent_trust_data_masking.htm&language=en_US&type=5",
+        "checked_at": "2026-09-29T15:10:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=ai.agent_trust_data_masking.htm&language=en_US&type=5",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=ai.agent_trust_data_masking.htm&language=en_US&type=5",
+        "duration_signals": [],
+        "signal_fingerprint": "0bc61f77572ace730f9936254cd0a8b7b1cc4ad208d0351a13caf7097a3cfd37",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=ai.agent_trust_data_masking.htm&language=en_US&type=5",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-agent-variables-filters",
+      "url": "https://developer.salesforce.com/blogs/2025/04/control-agent-access-and-decision-making-with-variables-and-filters",
+      "checked_at": "2026-09-29T15:06:18.159586+00:00",
+      "health": {
+        "id": "salesforce-agent-variables-filters",
+        "url": "https://developer.salesforce.com/blogs/2025/04/control-agent-access-and-decision-making-with-variables-and-filters",
+        "checked_at": "2026-09-29T15:06:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.salesforce.com/blogs/2025/04/control-agent-access-and-decision-making-with-variables-and-filters",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Control Agent Access and Decision-Making with Variables and Filters",
+        "canonical_url": "https://developer.salesforce.com/blogs/2025/04/control-agent-access-and-decision-making-with-variables-and-filters",
+        "duration_signals": [],
+        "signal_fingerprint": "238462ec3a94b544850842f9e1ee278bbe27eed9d041a0ecf88cca17dd417a21",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.salesforce.com/blogs/2025/04/control-agent-access-and-decision-making-with-variables-and-filters",
+      "sha256": "f0439d57b1614fd1c57d605aebe2623106e23d664366a90640c721d3847938ad",
+      "text_characters": 7585
+    },
+    {
+      "id": "salesforce-agentforce-summer26-unit",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/agentforce-specialist-certification-maintenance-summer-26/maintain-your-agentforce-specialist-certification-for-summer-26",
+      "checked_at": "2026-09-29T15:06:51.092935+00:00",
+      "health": {
+        "id": "salesforce-agentforce-summer26-unit",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/agentforce-specialist-certification-maintenance-summer-26/maintain-your-agentforce-specialist-certification-for-summer-26",
+        "checked_at": "2026-09-29T15:06:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/content/learn/modules/agentforce-specialist-certification-maintenance-summer-26/maintain-your-agentforce-specialist-certification-for-summer-26",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Stay Updated with Your AI Specialist Certification",
+        "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/agentforce-specialist-certification-maintenance-summer-26/maintain-your-agentforce-specialist-certification-for-summer-26",
+        "duration_signals": [
+          "About 5 mins",
+          "PT5M"
+        ],
+        "signal_fingerprint": "72a0ecb91581d2b7e39b779fa963a0052cb8603167a9df05fa56b6de41f390bf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/content/learn/modules/agentforce-specialist-certification-maintenance-summer-26/maintain-your-agentforce-specialist-certification-for-summer-26",
+      "sha256": "051eaca38135499f2501870c1f17acabf03eb87b51ae14fbff87eea25aa1901d",
+      "text_characters": 7133
+    },
+    {
+      "id": "salesforce-agent-subagents",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.agent_topics_parent.htm&language=en_US&type=5",
+      "checked_at": "2026-09-29T15:09:19.513269+00:00",
+      "health": {
+        "id": "salesforce-agent-subagents",
+        "url": "https://help.salesforce.com/s/articleView?id=ai.agent_topics_parent.htm&language=en_US&type=5",
+        "checked_at": "2026-09-29T15:09:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=ai.agent_topics_parent.htm&language=en_US&type=5",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=ai.agent_topics_parent.htm&language=en_US&type=5",
+        "duration_signals": [],
+        "signal_fingerprint": "c243c263164f8c37bcd294438f01814b994e492c92e1da27c7b06ea55cb71995",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=ai.agent_topics_parent.htm&language=en_US&type=5",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-agent-script-flow",
+      "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-flow.html",
+      "checked_at": "2026-09-29T15:09:19.513998+00:00",
+      "health": {
+        "id": "salesforce-agent-script-flow",
+        "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-flow.html",
+        "checked_at": "2026-09-29T15:09:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-flow.html",
+        "content_type": "text/html",
+        "page_title": "Flow of Control | Agent Script | Agentforce Developer Guide | Salesforce Developers",
+        "canonical_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-flow.html",
+        "duration_signals": [],
+        "signal_fingerprint": "c303bcd79bf6295b6ee50b69fe3e58d810c780ec5fe28af242bc42b2e08a0be5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-flow.html",
+      "sha256": "9c5d87868bf0af998cb154feb3ad12af60fc88867bd7be53be31fa9d45b8c98f",
+      "text_characters": 3440
+    },
+    {
+      "id": "salesforce-mcp-solutions",
+      "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/mcp.html",
+      "checked_at": "2026-09-29T15:09:19.514441+00:00",
+      "health": {
+        "id": "salesforce-mcp-solutions",
+        "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/mcp.html",
+        "checked_at": "2026-09-29T15:09:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/mcp.html",
+        "content_type": "text/html",
+        "page_title": "MCP Solutions | Headless Agentforce Development | Agentforce Developer Guide | Salesforce Developers",
+        "canonical_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/mcp.html",
+        "duration_signals": [],
+        "signal_fingerprint": "69e7fbab986220bde46864722faa0ccb8febd3257c4939933c0822571291a1fc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/mcp.html",
+      "sha256": "7450f202f9b7224f0b84c5c0ab4a5dec846a10acbefb2001ab18f8c3a4d63ba4",
+      "text_characters": 3875
+    }
+  ],
+  "added_source_ids": [
+    "salesforce-agentforce-testing-center",
+    "salesforce-agentforce-data-library-troubleshooting",
+    "salesforce-agentforce-data-library-setup",
+    "salesforce-agent-api-examples",
+    "salesforce-agent-api-start",
+    "salesforce-prompt-builder-enable",
+    "salesforce-agent-masking-limits",
+    "salesforce-agent-variables-filters",
+    "salesforce-agentforce-summer26-unit",
+    "salesforce-agent-subagents",
+    "salesforce-agent-script-flow",
+    "salesforce-mcp-solutions"
+  ],
+  "findings": [
+    {
+      "id": "salesforceagentforcespecialist-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Saved objective wording was paraphrased and added a named architecture",
+      "url": "https://help.salesforce.com/s/articleView?id=005298924&language=en_US&type=1",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current browser has26objectives atsameweights but genericMultiAgent scope; priorSOMA name is not present.",
+      "recommendation": "Archive priorbytes andhistoricalauditreferences,accept exactcurrentwording andremoveaddedscope.",
+      "disposition": "applied",
+      "source_id": "salesforce-agentforce-specialist-guide",
+      "resolution": "Archive priorbytes andhistoricalauditreferences,accept exactcurrentwording andremoveaddedscope."
+    },
+    {
+      "id": "salesforceagentforcespecialist-deep-2",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Prior earned-by cutoff was not reverified",
+      "url": "https://help.salesforce.com/s/articleView?id=005298922&language=de&type=1",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current readcanonical/intro/schedule confirmsannualmaintenance andAug20,2027duePT,notpriorAug24earnedbycutoff.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "salesforceagentforcespecialist-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Masking depends on invocation path",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.agent_trust_data_masking.htm&language=en_US&type=5",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Agent andagent-calledtemplates have pattern/fieldmaskingdisabled;directtemplateusesTrustLayerconfiguration.",
+      "recommendation": "Teachinvocation-specificsynthetic testing andscopeproviderretentionstatement.",
+      "disposition": "applied",
+      "source_id": "salesforce-agent-masking-limits",
+      "resolution": "Teachinvocation-specificsynthetic testing andscopeproviderretentionstatement."
+    },
+    {
+      "id": "salesforceagentforcespecialist-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Verified contact identity does not itself restrict record access",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "AgentUserand supportedauthenticatedsiteuser routes differ;contextvariablesidentifybutdonotgovernqueries.",
+      "recommendation": "Trace actualrunningprincipal andverifiedcustomerfilter withdeniedrecordtests.",
+      "disposition": "applied",
+      "source_id": "salesforce-agent-user-access",
+      "resolution": "Trace actualrunningprincipal andverifiedcustomerfilter withdeniedrecordtests."
+    },
+    {
+      "id": "salesforceagentforcespecialist-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Evaluation can modify data and consume credits",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.agent_testing_center.htm&language=en_US&type=5",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Primaryguide directsTestingCenter to sandbox andwarnsofCRMmutations/usage.",
+      "recommendation": "Labelproposedorglabs sandbox-only withsyntheticdata andside-effectreconciliation.",
+      "disposition": "applied",
+      "source_id": "salesforce-agentforce-testing-center",
+      "resolution": "Labelproposedorglabs sandbox-only withsyntheticdata andside-effectreconciliation."
+    },
+    {
+      "id": "salesforceagentforcespecialist-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "API identity and provisional streaming output need explicit handling",
+      "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-examples.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "bypassUserselectsagentuser ortokenuser;ValidationFailureChunk requiresclearing earlierchunks.",
+      "recommendation": "Addidentity/sessioncontract andexecutesimplifiedlocaldisplayreplacementchecks,notprotocolimplementation.",
+      "disposition": "applied",
+      "source_id": "salesforce-agent-api-examples",
+      "resolution": "Addidentity/sessioncontract andexecutesimplifiedlocaldisplayreplacementchecks,notprotocolimplementation."
+    },
+    {
+      "id": "salesforceagentforcespecialist-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Saved library configuration is not readiness evidence",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.data_library_troubleshooting.htm&language=en_US&type=5",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Failedcanlackretriever;NotStarted/InProgressdonotmeanready;permissionsandsourcepublicationmatter.",
+      "recommendation": "Addstageddiagnosis andoriginaleligibility-before-topkdemonstration.",
+      "disposition": "applied",
+      "source_id": "salesforce-agentforce-data-library-troubleshooting",
+      "resolution": "Addstageddiagnosis andoriginaleligibility-before-topkdemonstration."
+    },
+    {
+      "id": "salesforceagentforcespecialist-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Subagent transition is not an ordinary returning call",
+      "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-flow.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "ProgrammaticinstructionsresolvebeforeLLM;transitiondiscardsoldprompt anddoesnotreturn.",
+      "recommendation": "Teachtrace-basedpathreview andboundeddelegationwithdistinctidentityscope.",
+      "disposition": "applied",
+      "source_id": "salesforce-agent-script-flow",
+      "resolution": "Teachtrace-basedpathreview andboundeddelegationwithdistinctidentityscope."
+    },
+    {
+      "id": "salesforceagentforcespecialist-deep-9",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Legend public duration changed from previous observation",
+      "url": "https://trailhead.salesforce.com/content/learn/trails/become-an-agentblazer-legend-2026",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Currentseven timedgroups465/55/155/148/105/105/15sum1048minutes;pathlocked/prerequisitesadditional.",
+      "recommendation": "Updatelearningcatalog17h28andrecordpublicgrid/interiorboundary.",
+      "disposition": "applied",
+      "source_id": "salesforce-agentblazer-legend-2026",
+      "resolution": "Updatelearningcatalog17h28andrecordpublicgrid/interiorboundary."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "salesforce-agent-variables-filters",
+      "published_on": "2025-04",
+      "review": "Historical completearticle read forvariable/filterconcepts;currentServiceaccessdocumentationgovernsidentityandrecordscoping. Nocode/video/installation."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 35,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "991617f45347f189eac046b890bf77f465060bebeb71ef88aa08f07b0473c622",
+      "python_version": "3.13.14",
+      "sqlite_version": "3.50.4",
+      "results": {
+        "passed": 35,
+        "checks": [
+          "eligible Alice results precede top-k selection",
+          "anonymous scope returns public current material",
+          "Bob receives his own entitlement and public policy",
+          "quoted scope remains data",
+          "unfiltered top-k contains the wrong records",
+          "filtering only after top-k loses eligible recall",
+          "stale and unapproved content absent",
+          "returned projection contains only two declared fields",
+          "current authorized citation resolves",
+          "deleted source no longer resolves in local store",
+          "anonymous request now has no evidence",
+          "aggregate rate is nine of ten",
+          "authorization failure blocks release despite high aggregate",
+          "authorization segment exposes the defect",
+          "equal-group rate is two thirds",
+          "missing test stays in pass-rate denominator",
+          "missing test reduces coverage and blocks release",
+          "duplicate test result rejected",
+          "unknown test result rejected",
+          "text true is not a Boolean result",
+          "complete all-pass fixture satisfies chosen gate",
+          "same aggregate can pass when both critical cases pass",
+          "streaming draft is provisional",
+          "validation failure removes all earlier display text",
+          "replacement excludes discarded text",
+          "complete message replaces rather than duplicates chunks",
+          "turn ends only after this fixture has a complete message",
+          "late chunk rejected by closed display",
+          "premature turn end rejected",
+          "unknown event rejected",
+          "delegation cannot add a write capability",
+          "delegation advances path and consumes a hop",
+          "cycle rejected",
+          "exhausted hop budget rejected",
+          "empty capability intersection rejected"
+        ],
+        "aggregate_pass_rate": "9/10",
+        "equal_group_pass_rate": "2/3",
+        "release_accepted": false
+      },
+      "execution_stdout": "{\n  \"passed\": 35,\n  \"checks\": [\n    \"eligible Alice results precede top-k selection\",\n    \"anonymous scope returns public current material\",\n    \"Bob receives his own entitlement and public policy\",\n    \"quoted scope remains data\",\n    \"unfiltered top-k contains the wrong records\",\n    \"filtering only after top-k loses eligible recall\",\n    \"stale and unapproved content absent\",\n    \"returned projection contains only two declared fields\",\n    \"current authorized citation resolves\",\n    \"deleted source no longer resolves in local store\",\n    \"anonymous request now has no evidence\",\n    \"aggregate rate is nine of ten\",\n    \"authorization failure blocks release despite high aggregate\",\n    \"authorization segment exposes the defect\",\n    \"equal-group rate is two thirds\",\n    \"missing test stays in pass-rate denominator\",\n    \"missing test reduces coverage and blocks release\",\n    \"duplicate test result rejected\",\n    \"unknown test result rejected\",\n    \"text true is not a Boolean result\",\n    \"complete all-pass fixture satisfies chosen gate\",\n    \"same aggregate can pass when both critical cases pass\",\n    \"streaming draft is provisional\",\n    \"validation failure removes all earlier display text\",\n    \"replacement excludes discarded text\",\n    \"complete message replaces rather than duplicates chunks\",\n    \"turn ends only after this fixture has a complete message\",\n    \"late chunk rejected by closed display\",\n    \"premature turn end rejected\",\n    \"unknown event rejected\",\n    \"delegation cannot add a write capability\",\n    \"delegation advances path and consumes a hop\",\n    \"cycle rejected\",\n    \"exhausted hop budget rejected\",\n    \"empty capability intersection rejected\"\n  ],\n  \"aggregate_pass_rate\": \"9/10\",\n  \"equal_group_pass_rate\": \"2/3\",\n  \"release_accepted\": false\n}",
+      "execution_boundary": "Actual standard-library Python/SQLite on original in-memory synthetic evidence: parameterized filtering, ordering, projection and deletion; exact-fraction evaluation arithmetic and missing/duplicate/type checks; simplified display transitions; capability-set and hop/cycle checks. Database closed. No Salesforce, model, live API, network, paid credit, org or installation used.",
+      "model_limits": "Trusted fixture identity/approval/status labels and supplied scores are not authentication, authorization/FLS, injection detection or semantic search. Local deletion is not index/cache propagation proof. Display is not an SSE parser or full Agent API implementation; delegation is not MCP/A2A enforcement. Chosen evaluation gate is illustrative, not vendor policy or production-quality evidence. No concurrency, side-effect replay safety or runtime/deployment proof. Coding is optional practical depth outside the candidate programming requirement."
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Canonical automatic monitor remains manual-review because direct Help HTML is a shell. Exact current26-objective browser wording accepted manually after preserving prior paraphrases and two historical audit references; no announced effective date or automatic source-hash match claimed.",
+    "Prior August24,2026 earned-by maintenance cutoff not reverified in current canonical article,maintenance introduction or dedicated schedule. Annual rule and Summer26Aug27,2026availability/Aug20,2027duePT verified,subjecttochange;assignedcredential account not accessed.",
+    "Most Help direct captures are shells; main browser or indexed first-party bodies and limits recorded separately. Generic release hub not fully audited. Two paid403s,blankAcademy/Pocket andtitle-onlyvideo preventcurrentinterior/duration/update/qualityverification.",
+    "35localchecks use trusted synthetic labels and suppliedscores,exactarithmetic andsimplifieddisplay/capabilitymodels. No Salesforce permissions/retrieval,LLM behavior,SSE/protocol compatibility,MCP/A2A authentication,concurrency,indexdeletionpropagation,sideeffectidempotency orproduction readiness established.",
+    "Eight sandbox/org activities and independent human review remainpending. No Salesforce API/model calls,credits,purchases,trials,installs,authentication,permission/runtime/service/rebootchanges or externalmessages. Five reservedGitHubguides anddisablednotificationpilot untouched."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 179,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Actual standard-library Python/SQLite on original in-memory synthetic evidence: parameterized filtering, ordering, projection and deletion; exact-fraction evaluation arithmetic and missing/duplicate/type checks; simplified display transitions; capability-set and hop/cycle checks. Database closed. No Salesforce, model, live API, network, paid credit, org or installation used.",
+    "passed": 35,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "991617f45347f189eac046b890bf77f465060bebeb71ef88aa08f07b0473c622",
+    "python_version": "3.13.14",
+    "sqlite_version": "3.50.4",
+    "results": {
+      "passed": 35,
+      "checks": [
+        "eligible Alice results precede top-k selection",
+        "anonymous scope returns public current material",
+        "Bob receives his own entitlement and public policy",
+        "quoted scope remains data",
+        "unfiltered top-k contains the wrong records",
+        "filtering only after top-k loses eligible recall",
+        "stale and unapproved content absent",
+        "returned projection contains only two declared fields",
+        "current authorized citation resolves",
+        "deleted source no longer resolves in local store",
+        "anonymous request now has no evidence",
+        "aggregate rate is nine of ten",
+        "authorization failure blocks release despite high aggregate",
+        "authorization segment exposes the defect",
+        "equal-group rate is two thirds",
+        "missing test stays in pass-rate denominator",
+        "missing test reduces coverage and blocks release",
+        "duplicate test result rejected",
+        "unknown test result rejected",
+        "text true is not a Boolean result",
+        "complete all-pass fixture satisfies chosen gate",
+        "same aggregate can pass when both critical cases pass",
+        "streaming draft is provisional",
+        "validation failure removes all earlier display text",
+        "replacement excludes discarded text",
+        "complete message replaces rather than duplicates chunks",
+        "turn ends only after this fixture has a complete message",
+        "late chunk rejected by closed display",
+        "premature turn end rejected",
+        "unknown event rejected",
+        "delegation cannot add a write capability",
+        "delegation advances path and consumes a hop",
+        "cycle rejected",
+        "exhausted hop budget rejected",
+        "empty capability intersection rejected"
+      ],
+      "aggregate_pass_rate": "9/10",
+      "equal_group_pass_rate": "2/3",
+      "release_accepted": false
+    },
+    "execution_stdout": "{\n  \"passed\": 35,\n  \"checks\": [\n    \"eligible Alice results precede top-k selection\",\n    \"anonymous scope returns public current material\",\n    \"Bob receives his own entitlement and public policy\",\n    \"quoted scope remains data\",\n    \"unfiltered top-k contains the wrong records\",\n    \"filtering only after top-k loses eligible recall\",\n    \"stale and unapproved content absent\",\n    \"returned projection contains only two declared fields\",\n    \"current authorized citation resolves\",\n    \"deleted source no longer resolves in local store\",\n    \"anonymous request now has no evidence\",\n    \"aggregate rate is nine of ten\",\n    \"authorization failure blocks release despite high aggregate\",\n    \"authorization segment exposes the defect\",\n    \"equal-group rate is two thirds\",\n    \"missing test stays in pass-rate denominator\",\n    \"missing test reduces coverage and blocks release\",\n    \"duplicate test result rejected\",\n    \"unknown test result rejected\",\n    \"text true is not a Boolean result\",\n    \"complete all-pass fixture satisfies chosen gate\",\n    \"same aggregate can pass when both critical cases pass\",\n    \"streaming draft is provisional\",\n    \"validation failure removes all earlier display text\",\n    \"replacement excludes discarded text\",\n    \"complete message replaces rather than duplicates chunks\",\n    \"turn ends only after this fixture has a complete message\",\n    \"late chunk rejected by closed display\",\n    \"premature turn end rejected\",\n    \"unknown event rejected\",\n    \"delegation cannot add a write capability\",\n    \"delegation advances path and consumes a hop\",\n    \"cycle rejected\",\n    \"exhausted hop budget rejected\",\n    \"empty capability intersection rejected\"\n  ],\n  \"aggregate_pass_rate\": \"9/10\",\n  \"equal_group_pass_rate\": \"2/3\",\n  \"release_accepted\": false\n}",
+    "model_limits": "Trusted fixture identity/approval/status labels and supplied scores are not authentication, authorization/FLS, injection detection or semantic search. Local deletion is not index/cache propagation proof. Display is not an SSE parser or full Agent API implementation; delegation is not MCP/A2A enforcement. Chosen evaluation gate is illustrative, not vendor policy or production-quality evidence. No concurrency, side-effect replay safety or runtime/deployment proof. Coding is optional practical depth outside the candidate programming requirement.",
+    "learning_catalog_consistency": "passed",
+    "validation_logs": {
+      "unit_tests": "179 tests passed; Python unittest discovery.",
+      "site": "Strict MkDocs build and generated-site validation passed."
+    }
+  },
+  "archived_prior_baselines": {
+    "objectives": {
+      "path": "data/objective-snapshots/salesforce-agentforce-specialist-2026-09-07-official-objectives.txt",
+      "sha256": "e18e94e62ef0339b9c06f955ffd0b9d23f3ab7348e16bab214ba15f61b3e4e5b"
+    },
+    "status": {
+      "path": "data/objective-snapshots/salesforce-agentforce-specialist-2026-09-07-official-status.json",
+      "sha256": "7c5e56f3df161963dfbc6d83f266e2491baa64b4c77159437a2fbd22f5a27925"
+    },
+    "historical_audit_paths_updated": 2,
+    "reason": "Restore exact currently observed objective wording in place of saved paraphrases; no new vendor-effective date asserted. Same26 objectives andweights, but current scope says generic Multi Agent rather than namingSOMA. Update maintenance observation to verified annual rule anddatedschedule while marking previousearned-by cutoff unverified."
+  },
+  "manual_baseline_acceptance": {
+    "reviewed_on": "2026-09-29",
+    "method": "Manual acceptance after full canonical browser main and dedicated schedule comparison; automated direct extractor remains manual-review.",
+    "before": {
+      "objectives": {
+        "path": "data/objective-snapshots/salesforce-agentforce-specialist-2026-09-07-official-objectives.txt",
+        "sha256": "e18e94e62ef0339b9c06f955ffd0b9d23f3ab7348e16bab214ba15f61b3e4e5b"
+      },
+      "status": {
+        "path": "data/objective-snapshots/salesforce-agentforce-specialist-2026-09-07-official-status.json",
+        "sha256": "7c5e56f3df161963dfbc6d83f266e2491baa64b4c77159437a2fbd22f5a27925"
+      },
+      "historical_audit_paths_updated": 2,
+      "reason": "Restore exact currently observed objective wording in place of saved paraphrases; no new vendor-effective date asserted. Same26 objectives andweights, but current scope says generic Multi Agent rather than namingSOMA. Update maintenance observation to verified annual rule anddatedschedule while marking previousearned-by cutoff unverified."
+    },
+    "after": {
+      "objectives_sha256": "a633fd73b5f733d78426c5c66eebf566a7867d80a36ddadd505dbd8ef29b5664",
+      "status_sha256": "48706738384bf7c928d7da53489404ad7476ac71685ce277441ddb0a4e874a01"
+    },
+    "objective_counts": [
+      8,
+      2,
+      8,
+      4,
+      2,
+      2
+    ],
+    "weights": [
+      20,
+      20,
+      35,
+      10,
+      10,
+      5
+    ],
+    "meaning": "Scope wording correction and maintenance evidence refresh, not proof of an announced new exam version.",
+    "maintenance_scope": "Annual rule in canonical guide; Summer26schedule English body through Germanlocale listsAug27,2026availability/Aug20,2027duePT,subjecttochange. Previousearned-byAug24 cutoff absent in readcurrentcanonical/maintenanceunit/schedule; assignedaccount notaccessed.",
+    "accepted_snapshot_encoding": "UTF-8 with LF line endings; hashes cover exact stored bytes. Windows text-write CRLF conversion was corrected before validation."
+  },
+  "public_objective_groups": [
+    {
+      "title": "Prompt Engineering",
+      "weight": "20%",
+      "objectives": [
+        "Given business requirements, identify when it's appropriate to use Prompt Builder.",
+        "Identify access controls governing prompt templates.",
+        "Identify the considerations for using a prompt template type such as field generation and flex types.",
+        "Given a scenario, identify the appropriate grounding technique.",
+        "Explain the process for creating, activating, and executing prompt templates.",
+        "Explain how to implement best practices for writing effective prompts.",
+        "Identify the security and privacy features of the Trust Layer.",
+        "Explain how to manage and prevent specific models from being accessed."
+      ]
+    },
+    {
+      "title": "Data 360 Fundamentals",
+      "weight": "20%",
+      "objectives": [
+        "Explain the considerations of Agentforce Data Library and its concepts.",
+        "Explain foundational concepts of Data 360 such as chunking, indexing, and retrievers."
+      ]
+    },
+    {
+      "title": "AI Agents",
+      "weight": "35%",
+      "objectives": [
+        "Explain how an agent works and its basic building blocks of agent script.",
+        "Explain the components and benefits of hybrid reasoning, including how Agent Script functions in Canvas and Script View.",
+        "Given a use case, manage deterministic behavior for the agent using mechanisms like filters, variables, and template expressions.",
+        "Given a scenario, select and configure standard topics, custom topics, standard Agent actions, and custom Agent actions.",
+        "Explain the process for connecting agents to various channels such as digital experience, email, voice, and Slack.",
+        "Explain the security context in which the agent is actually running, and how it impacts agent action execution.",
+        "Given a scenario, identify when to use an Employee or Service agent.",
+        "Given a scenario, identify when it's appropriate to use Agent API."
+      ]
+    },
+    {
+      "title": "Testing, Deployment, and Maintenance",
+      "weight": "10%",
+      "objectives": [
+        "Given a scenario, test an agent using Testing Center.",
+        "Explain how Testing Center evaluations work.",
+        "Identify the considerations for deploying an agent from sandbox to production.",
+        "Identify the considerations for deploying a template from sandbox to production."
+      ]
+    },
+    {
+      "title": "Governance and Observability",
+      "weight": "10%",
+      "objectives": [
+        "Explain the process for managing and monitoring agents.",
+        "Explain agent analytics and agent optimization."
+      ]
+    },
+    {
+      "title": "Multi-Agent Orchestration",
+      "weight": "5%",
+      "objectives": [
+        "Given a scenario, determine whether a Multi Agent architecture is appropriate for scalability and control.",
+        "Explain the purpose of existing open standard multi-agent protocols such as MCP and A2A."
+      ]
+    }
+  ],
+  "source_reading_boundaries": {
+    "focus-on-force-salesforce-certification": "Fresh 9070-character public catalog capture matches reading from preceding same-session Salesforce reviews. Agentforce product/paid lesson and practice-question interiors, current alignment and quality not verified.",
+    "salesforce-agentforce-specialist-guide": "Direct61-character loading/CSS shell. Complete current browser main read: candidate boundary/exclusions, contract,26objectives/sixweights, training and annual maintenance. Earlier paraphrased snapshot corrected to exact current wording; historical baselines/audit references preserved. No announced new blueprint date or automated hash match claimed.",
+    "salesforce-agentforce-specialist-certification": "Complete1040-character main read: current title, Agentblazer preparation entry and related Admin/AppBuilder credentials. No booking/Academy account action.",
+    "salesforce-agentblazer-legend-2026": "Complete2782-character public group grid read.17h28=1048minutes from465/55/155/148/105/105/15; eighth group is untimed certification step. Previous15h28 no longer current. Prior trails required and current path locked; not all interiors.",
+    "salesforce-afs401-agentforce-service-specialist": "Direct HTTP success with blank main. Earlier three-day duration, sessions and course contents not reverified; no booking.",
+    "oreilly-practical-salesforce-agentforce-playbook": "HTTP403. Earlier7h11/298pages/April2026 metadata not reverified; no paid book interior.",
+    "udemy-salesforce-agentforce-specialist-wheeler": "HTTP403. Earlier6h11/July2026 and claimed MCP/multi-agent course coverage not reverified; no paid practice content.",
+    "salesforce-agentforce-specialist-maintenance-summer-26": "Complete828-character listing read: five-minute single introductory unit. Assessment not accessed/completed.",
+    "youtube-salesforce-ben-agentforce-specialist-2026": "HTTP success241-character title/footer only. Earlier seven-minute/March2026 metadata not reverified; video not played.",
+    "salesforce-agentforce-release-notes-summer-26": "Direct61-character shell. Full current release article not audited; retained discovery entry with explicit limitation. Exact weekly cadence not reasserted. Release awareness instead supported by read maintenance introduction and versioned Flow documentation.",
+    "salesforce-well-architected-secure": "Fresh90504-character Trust article; selected identity section222–244 and connection-scenario table read, with some adjacent integration/access discussion. Not whole article. Broader auth/Apex claims not adopted without more specific documentation. Specific Service-access table governs exceptions.",
+    "salesforce-agentforce-partner-pocket-guide": "HTTP success but only three-character extracted body. Prior content, monthly cadence and linked Partner access conditions not reverified; no login.",
+    "salesforce-agent-user-access": "Direct61-character shell; full browser main2542–2618 and three-persona table read. Unidentified and verified contacts use Agent User/internalOWD; supported authenticated site route uses site user. Verified ID/context alone does not control access; server query scoping and action filters both required. No org/authentication execution.",
+    "salesforce-flow-api68-context": "Fresh direct shell; complete browser main read in preceding same-session Administrator/AppBuilder reviews. API68 enforcing-user option for eligible flows prevents system-context inheritance, not identity substitution. No Flow run or target-org availability assertion.",
+    "salesforce-maintenance-schedule-de": "Direct shell; English browser body through German locale read for annual overview, full date table and Agentforce Specialist row. Summer26availableAug27,2026/dueAug20,2027PT subjectchange. Earlier earned-byAug24 cutoff absent in current read sources; assigned credential account not accessed. Other role tables not comprehensively audited.",
+    "salesforce-agentforce-testing-center": "Earlier URL and corrected language=en_US&type5 direct shells retained. Corrected browser fullmain2542–2573 read: tests consume requests/credits, can modify CRM, sandbox-only guidance, StudioBeta versus legacySetup and evaluations. No tests or paid credits used.",
+    "salesforce-agentforce-data-library-troubleshooting": "Direct shell; full browser main2541–2578 read. Permissions/defaultdataspace and Knowledge publication/category/object/field conditions; Failed/NotStarted/InProgress/Success readiness distinctions. No assumption that the broad library permission list proves per-customer ACL behavior.",
+    "salesforce-agentforce-data-library-setup": "Direct shell; complete short browser main read. Data360 prerequisite/credits, Knowledge/files/customretrievers and no web search for new libraries. No setup or ingestion.",
+    "salesforce-agent-api-examples": "Complete5589-character main text read. bypassUser,token/agent identity,session/sequence IDs, synchronous/streaming messages,ValidationFailureChunk clearing,Inform/citations and feedback. Rendered code blocks not available in text extraction; no literal API client/example copied or executed.",
+    "salesforce-agent-api-start": "Complete4998-character main text read. UnsupportedAgentforceDefault,activeagent/ECA/JWT token contract and identity selection. Setup instructions treated as documentation only; no app creation, secret access, token minting, authentication or weakening of settings.",
+    "salesforce-prompt-builder-enable": "Direct shell; complete browser main2495–2536 read: Manager/User permissions,Setup access and displayed CustomizeApplication alternative. No org/license validation or permission assignment.",
+    "salesforce-agent-masking-limits": "Earlier URL and correctedtype5 direct shells retained. Corrected browser fullmain2542–2557 read: agent and agent-called-template masking disabled; direct template configuration distinct; scoped provider zero-retention statement. No model call or independent provider-retention validation.",
+    "salesforce-agent-variables-filters": "Complete7585-character April2025 article main read: historical variables/filter concepts and verified-customer example. Current access documentation supplies more specific security rule. No code copied, video played or sample installed; not asserting historical UI/types as current.",
+    "salesforce-agentforce-summer26-unit": "Complete7133-character five-minute main through Resources read: Builder/AgentScript,Grid/runconditions/billingestimator and observability metrics/traces. No earned-byAug24 date in current text. No activity or assessment answers used.",
+    "salesforce-agent-subagents": "Direct61-character shell. Full short indexed first-party main read: April2026topics renamedsubagents without functionality change; old/new terminology mixed. No runtime/installation.",
+    "salesforce-agent-script-flow": "Complete3440-character direct main read: router, top-down prompt resolution before reasoning, one-way transitions discarding earlier resolved prompt and next-utterance router return. Code examples not copied/compiled/executed.",
+    "salesforce-mcp-solutions": "Complete3875-character direct main/table read: basic service interaction and listed developer solutions. No linked implementation/skill/plugin/server installed or invoked. A2A implementation details not reviewed; general purpose appears in canonical scope."
+  },
+  "earlier_help_url_fetches": [
+    {
+      "id": "salesforce-agentforce-testing-center",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.agent_testing_center.htm",
+      "checked_at": "2026-09-29T15:06:16.089848+00:00",
+      "health": {
+        "id": "salesforce-agentforce-testing-center",
+        "url": "https://help.salesforce.com/s/articleView?id=ai.agent_testing_center.htm",
+        "checked_at": "2026-09-29T15:06:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?language=en_US&id=ai.agent_testing_center.htm",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?language=en_US&id=ai.agent_testing_center.htm",
+        "duration_signals": [],
+        "signal_fingerprint": "e3a046ce3914d87a23fccfbae9050ac56a7ce982588350760a95b0f216fced22",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?language=en_US&id=ai.agent_testing_center.htm",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-agent-masking-limits",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.agent_trust_data_masking.htm&language=en_US",
+      "checked_at": "2026-09-29T15:06:17.879083+00:00",
+      "health": {
+        "id": "salesforce-agent-masking-limits",
+        "url": "https://help.salesforce.com/s/articleView?id=ai.agent_trust_data_masking.htm&language=en_US",
+        "checked_at": "2026-09-29T15:06:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=ai.agent_trust_data_masking.htm&language=en_US",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=ai.agent_trust_data_masking.htm&language=en_US",
+        "duration_signals": [],
+        "signal_fingerprint": "072aa252b9a8abbcd1b604e112b7306ff6f9899fd7f14b8a7faecf97fd32fc2a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=ai.agent_trust_data_masking.htm&language=en_US",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    }
+  ],
+  "catalog_findings": [
+    {
+      "source_id": "salesforce-agentblazer-legend-2026",
+      "timed_group_minutes": [
+        465,
+        55,
+        155,
+        148,
+        105,
+        105,
+        15
+      ],
+      "total_minutes": 1048,
+      "displayed_duration": "17h 28m",
+      "untimed_groups": 1,
+      "prior_displayed_duration": "15h 28m",
+      "scope": "Complete public group grid; prerequisites additional and path locked. Not all lesson interiors."
+    },
+    {
+      "source_id": "salesforce-agentforce-specialist-maintenance-summer-26",
+      "total_minutes": 5,
+      "units": 1,
+      "scope": "Public listing and introduction read; no assessment attempted."
+    },
+    {
+      "source_ids": [
+        "salesforce-afs401-agentforce-service-specialist",
+        "salesforce-agentforce-partner-pocket-guide",
+        "youtube-salesforce-ben-agentforce-specialist-2026"
+      ],
+      "observation": "HTTP success with blank, tiny or title/footer bodies.",
+      "resolution": "Earlier duration/update and coverage metadata explicitly unverified."
+    },
+    {
+      "source_ids": [
+        "oreilly-practical-salesforce-agentforce-playbook",
+        "udemy-salesforce-agentforce-specialist-wheeler"
+      ],
+      "observation": "HTTP 403; paid interiors not accessed.",
+      "resolution": "Earlier duration/update and content claims explicitly unverified."
+    }
+  ],
+  "maintenance_evidence_gap": {
+    "prior_claim": "Earned on or before August 24, 2026 cutoff",
+    "observed": "Annual requirement and published Summer 2026 schedule: August 27, 2026 availability; August 20, 2027 due, Pacific Time, subject to change.",
+    "resolution": "Prior cutoff absent in current read canonical guide, maintenance introduction and schedule; verify assigned credential requirement. No account accessed."
+  }
+}

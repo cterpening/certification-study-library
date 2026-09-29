@@ -3073,6 +3073,29 @@ This is **not a complete list** and is not meant to be consumed in full. Choose 
 
 Reject guaranteed-pass products, “actual question” files, VCE collections and unexplained answer banks. Use original practice and public documentation; no paid question bank or recalled exam content was used in this review.
 
+### SALESFORCE-AGENTFORCE-SPECIALIST — Salesforce Certified Agentforce Specialist
+
+Resource details from the [SALESFORCE-AGENTFORCE-SPECIALIST guide](../guides/SALESFORCE-AGENTFORCE-SPECIALIST-salesforce-certified-agentforce-specialist.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is **not a complete list** and is not meant to be consumed in full. Select material for identified gaps and reconcile it with the six-domain Spring ’26 outline. Public catalog metadata, earlier observations and our study estimates are distinguished below; paid interiors and question quality were not verified.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Official exam guide](https://help.salesforce.com/s/articleView?id=005298924&language=en_US&type=1) and [credential page](https://trailhead.salesforce.com/credentials/agentforcespecialist) — scope, exclusions and contract | Public; Help needs browser/indexed reading | 25–40 min, our estimate |
+| [Become an Agentblazer Legend 2026](https://trailhead.salesforce.com/content/learn/trails/become-an-agentblazer-legend-2026) — public group listing across customization, data, testing, Slack and tools | Free Trailhead; earlier trails required, current path locked | **17 hr 28 min listed**, excluding prerequisite trails; seven timed groups total 1,048 min plus an untimed certification step |
+| [Summer ’26 maintenance](https://trailhead.salesforce.com/content/learn/modules/agentforce-specialist-certification-maintenance-summer-26) — Builder, Grid and observability orientation | Free Trailhead; main lesson read, assessment not used | **5 min listed**; check your assigned requirement |
+| [AFS401](https://trailheadacademy.salesforce.com/classes/afs401-agentforce-for-service-specialist---afs401) — service-focused instructor-led listing | Paid; current main body blank | Earlier **3 days** observation, **not reverified** |
+| [Agentforce Partner Pocket Guide](https://cloud.mail.salesforce.com/agentforcepartnerpocketguide) — earlier partner discovery resource | Landing response currently unreadable; linked access not reverified | 2–4 hr selected reading, our earlier estimate; current content/cadence unverified |
+| [Practical Salesforce Agentforce Playbook](https://www.oreilly.com/library/view/practical-salesforce-agentforce/9781806389230/) — earlier book listing | Subscription; HTTP 403 | Earlier **7 hr 11 min / 298 pages / April 2026** metadata, **not reverified** |
+| [Wheeler Agentforce course](https://www.udemy.com/course/agentforce/) — earlier course listing | Paid; HTTP 403 | Earlier **6 hr 11 min / July 2026** metadata and claimed topic coverage, **not reverified** |
+| [Focus on Force catalog](https://focusonforce.com/) — general certification catalog | Paid; landing catalog read, Agentforce product/practice interiors unverified | 12–20 hr selected study, our estimate |
+| [Salesforce Ben credential overview](https://www.youtube.com/watch?v=jbqQPedm_lk) — title-level orientation | Public; title/footer only, video not played | Earlier **~7 min / March 2026** observation, **not reverified** |
+| [Agentforce release notes](https://help.salesforce.com/s/articleView?id=release-notes.rn_einstein_platform.htm&language=en_US&release=262&type=5) — release discovery entry | Public; direct capture is a loading shell; full current contents not audited | 30–90 min selected reading, our estimate |
+| [Well-Architected — Trust](https://architect.salesforce.com/docs/architect/well-architected/guide/trust.html) — selected agent identity and integration-context discussion | Public; selected sections, not entire article, reviewed | 2–4 hr selected reading plus threat model, our estimate |
+| [Service agent access](https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5), [masking limits](https://help.salesforce.com/s/articleView?id=ai.agent_trust_data_masking.htm&language=en_US&type=5), [Testing Center](https://help.salesforce.com/s/articleView?id=ai.agent_testing_center.htm&language=en_US&type=5) and [API examples](https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-examples.html) — implementation boundaries | Public; main sections reviewed, no runtime execution | 1–3 hr selected reading and test design, our estimate |
+
+Reject guaranteed-pass products, “actual question” files, VCE collections and unexplained answer banks. Use original practice and public documentation; no recalled exam item, paid question bank or shared superbadge solution was used in this review.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

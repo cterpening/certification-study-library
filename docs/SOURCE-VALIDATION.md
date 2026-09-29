@@ -1732,6 +1732,8 @@ The review maps every public objective through requirement and data/access model
 
 ## SALESFORCE-AGENTFORCE-SPECIALIST coverage record
 
+The September 29 [deep review](research/2026-09-29-salesforce-agentforce-specialist-deep-review.md) maps 26 detailed objectives. Compared26 current objectives and archived the earlier paraphrased outline, preserving historical audits. Added40 answered prompts and35 optional local retrieval/evaluation/display/delegation checks. Clarified masking,Service/API identity,script transitions and Testing Center side effects; updated Legend duration to17h28 and maintenance evidence. Automated extraction,unverified earned-by cutoff,inaccessible metadata,live org work and human review remain limited. Current guide citations: 27 registered, 25 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 7, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Spring ’26 six-domain outline—Prompt Engineering (20%), Data 360 Fundamentals (20%), AI Agents (35%), Testing, Deployment, and Maintenance (10%), Governance and Observability (10%), and Multi-Agent Orchestration (5%)
