@@ -1398,11 +1398,19 @@ def extract_fortinet_status(page_html: str) -> dict[str, list[str]]:
             len(lines),
         )
         details = lines[details_start:details_end]
-        status_lines = [
-            lines[index + 1]
-            for index, line in enumerate(lines[:-1])
-            if line == "Status:"
-        ]
+        status_lines = []
+        upcoming_statuses = []
+        for index, line in enumerate(lines):
+            if not line.startswith("Status:"):
+                continue
+            status = line.removeprefix("Status:").strip()
+            if not status and index + 1 < len(lines):
+                status = lines[index + 1]
+            if status:
+                status_lines.append(status)
+            if "coming soon" in status.casefold():
+                title = lines[index - 1] if index else "Fortinet exam"
+                upcoming_statuses.append(f"{title}: {status}")
         announcements = [
             line
             for line in lines
@@ -1415,7 +1423,7 @@ def extract_fortinet_status(page_html: str) -> dict[str, list[str]]:
             raise ValueError("Fortinet exam details were unexpectedly short")
         return {
             "skills_versions": list(dict.fromkeys(status_lines + details)),
-            "upcoming_announcements": list(dict.fromkeys(announcements)),
+            "upcoming_announcements": list(dict.fromkeys(announcements + upcoming_statuses)),
         }
     start = next(
         (index for index, line in enumerate(lines) if line == "Program Requirements"),

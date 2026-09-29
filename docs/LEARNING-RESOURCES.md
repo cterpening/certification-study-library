@@ -3290,6 +3290,33 @@ Pluralsight currently lists Security Event Triage as 10 courses/24 hours and Sec
 
 The CSA landing lists 12 domains and identifies an August 2025 update to guidance released in July 2024; the downloadable interior was not accessed. NIST's homepage mentions a draft AI-assisted CSF analysis guide open for comment through October 15, 2026. That is not a new CSF version or proof of any AI tool's accuracy. CISA's blocked sources remain visible as reading gaps.
 
+### NSE-4-FORTIOS — Fortinet NSE 4 FortiOS
+
+Resource details from the [NSE-4-FORTIOS guide](../guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not a prescription to consume everything. Start with the official exam page and course, then choose documentation, labs or alternate instruction that closes measured gaps. Durations are publisher-listed or clearly labeled estimates and can change.
+
+| Best use | Resource | Access | Estimated time |
+| --- | --- | --- | ---: |
+| Canonical contract, exact weighted tasks, experience, official resources and sample-question boundary | [FortiOS 7.6 Administrator exam page](https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam) | Public | 30–45 min |
+| Current post-July 2026 credential, two-year validity, renewal and retake overview | [NSE 4 FortiOS certification page](https://training.fortinet.com/local/staticpage/view.php?page=nse_4) | Public | 15–25 min |
+| Official course/sample route linked by the exam page; HTTP 403 in this review. Lessons, lab entitlement and duration remain unverified | [FortiOS 7.6 Administrator course](https://training.fortinet.com/course/view.php?id=72343) | Free account; labs/ILT may cost | 12–20 hr estimate plus labs |
+| Explicitly a FortiOS 7.4.1 description: 12h lecture + 10h lab = 22h. Useful historical agenda; does not verify the 7.6 course or current enrollment | [FortiGate Administrator course description](https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-administrator) | Public | 15–25 min |
+| Canonical configuration and behavior for the exam’s exact product baseline | [FortiOS 7.6.0 Administration Guide](https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide) | Public | 15–30 hr selected chapters |
+| Verify command trees and feature/model availability while building evidence; not a cover-to-cover course | [FortiOS 7.6.0 CLI Reference](https://docs.fortinet.com/document/fortigate/7.6.0/cli-reference/84566/fortios-cli-reference) | Public | 3–8 hr targeted lookup/practice |
+| Separate 7.6 baseline behavior from older training and search results | [FortiOS 7.6.0 New Features](https://docs.fortinet.com/document/fortigate/7.6.0/new-features) | Public | 1–3 hr selected items |
+| Policy topic directory; individual policy articles were not all read. Use the track and assessment references above for reviewed specific claims | [Fortinet Training Institute policies](https://helpdesk.training.fortinet.com/support/solutions/73000238852) | Public | 30–60 min |
+| Channel landing only; no video playback or playlist review. Select version-matched demonstrations | [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 2–6 hr selected videos |
+| Product-family context only; January 2023 content predates the current exam and July 2026 program | [Fortinet: The Big Picture](https://www.pluralsight.com/courses/fortinet-big-picture) | Paid | 1 hr 24 min |
+| Five listed courses, about 10h (listed components total 10h4m); older 2019–2023 concepts. No paid interiors reviewed | [Network Security and Firewalls path](https://www.pluralsight.com/paths/network-security-and-firewalls) | Paid | 10 hr listed; select modules |
+| Public 7.6 listing: Keith Barker, 233 videos, 0 practice exams; older NSE 4 listing has 212. No paid lessons or total duration verified | [Fortinet NSE 4 - FortiOS 7.6 Administrator](https://www.cbtnuggets.com/certification-playlist/fortinet) | Paid | 15–25 hr estimate; verify playlist |
+| HTTP 403; interior and current duration unreviewed. Legacy FCP title cannot establish today’s credential contract | [FCP-FortiGate 7.6 Administrator Training Part 1/2](https://www.udemy.com/course/fcp-fortigate-76-administrator-training-part-12/) | Paid | Earlier 10 hr 30 min claim; unverified now |
+| HTTP 403; historical book entry, interior unreviewed. Any older concepts need reconciliation with current documentation | [Getting Started with FortiGate](https://www.oreilly.com/library/view/getting-started-with/9781782178200/) | Paid/O'Reilly | 6–10 hr estimate |
+
+#### Release-reading boundary
+
+The [April 6 FortiOS 8.0 article](https://www.fortinet.com/blog/security-architecture/fortios-8-redefining-secure-networking-in-the-ai-and-quantum-era) by Baksheesh Singh Ghuman discusses new platform capabilities. It is vendor product context, not the 7.6 exam contract. Marketing comparisons and its cryptography terminology were not adopted as verified technical requirements. The 7.6 new-features directory also contains later maintenance additions; check each feature’s version suffix before assuming it exists in 7.6.0.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

@@ -4,6 +4,161 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-nse4fortios-deep-review",
+      "title": "NSE-4-FORTIOS complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "NSE-4-FORTIOS"
+      ],
+      "results": [
+        {
+          "exam_code": "NSE-4-FORTIOS",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md",
+          "baseline_sha256": "17c941d4abf2f4023074585ed56a806c5794fc3f87532007aef299c6e69017fc",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Complete visible exam and track read; 18 tasks, 89 details and unchanged ranges. Heading formatting and 100-minute status accepted with archived history. Coming Soon is recorded without hidden comment details; fresh monitor recheck unchanged."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected primary pages and IETF sections support the additions with recorded reading boundaries and 41 local checks. No complete implementation audit claimed."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Undated 8.0 exam announcement and April 6 product article kept distinct. No 7.6 retirement date found on the reviewed visible page."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Historical 7.4.1 course identified; public Pluralsight/CBT metadata separated from paid lessons. Three blocked resources and video limits recorded."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Live device, cluster, cloud, identity and PKI work; compatibility, booking eligibility, course interiors, full onboarding and human review remain pending. Questionable cryptographic prose was not adopted."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse4fortios-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Mixed-version monitoring missed the announced successor",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NSE-4-FORTIOS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Available 7.6 coexists with visible 8.0 Coming Soon. Old logic missed inline status and the undated successor.",
+              "recommendation": "Capture inline/separate statuses and the versioned announcement. Regression check excludes HTML comments; 7.6 remains the active baseline.",
+              "disposition": "applied",
+              "source_id": "fortinet-nse4-fortios-76-exam",
+              "resolution": "Capture inline/separate statuses and the versioned announcement. Regression check excludes HTML comments; 7.6 remains the active baseline."
+            },
+            {
+              "id": "nse4fortios-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Checklist and status retained the old exam time",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NSE-4-FORTIOS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The guide header used 100 minutes, but check 38 and saved status retained 80–90. Only five objective headings changed formatting.",
+              "recommendation": "Align the checklist and accepted extraction; archive exact old bytes and historical review/audit references.",
+              "disposition": "applied",
+              "source_id": "fortinet-nse4-fortios-76-exam",
+              "resolution": "Align the checklist and accepted extraction; archive exact old bytes and historical review/audit references."
+            },
+            {
+              "id": "nse4fortios-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "First-match teaching omitted VIP policy priority",
+              "url": "https://docs.fortinet.com/document/fortigate/7.6.0/best-practices/862226/policies",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NSE-4-FORTIOS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The official 7.6 best-practices page describes VIP priority and deny-policy match-vip behavior.",
+              "recommendation": "Teach candidate priority before order and add an original negative case; inspect actual existing deny settings.",
+              "disposition": "applied",
+              "source_id": "fortios-policy-priority",
+              "resolution": "Teach candidate priority before order and add an original negative case; inspect actual existing deny settings."
+            },
+            {
+              "id": "nse4fortios-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Out-of-order ESP is not synonymous with replay",
+              "url": "https://www.rfc-editor.org/rfc/rfc4303.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NSE-4-FORTIOS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Vendor phase 2 prose says out-of-order packets are discarded. RFC 4303 section 3.4.3 describes a receive window and integrity gating.",
+              "recommendation": "Distinguish reordered traffic, duplicate/old sequences and verified window advancement. Installed settings remain unverified.",
+              "disposition": "applied",
+              "source_id": "ietf-esp-rfc4303",
+              "resolution": "Distinguish reordered traffic, duplicate/old sequences and verified window advancement. Installed settings remain unverified."
+            },
+            {
+              "id": "nse4fortios-deep-5",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Successor timing and booking details remain unknown",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NSE-4-FORTIOS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The visible 8.0 entry has no launch date or published detailed contract; no authenticated booking was checked.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped all 18 current tasks and 89 supporting details; preserved historical snapshots while recording 100 minutes and the undated 8.0 successor. Added 40 answered prompts, three worked scenarios, eight proposed device activities and 41 executed Python checks. Clarified VIP priority, NAT, HA, inspection, routing, identity and IPsec. Device, course and account access plus human review remain pending. Same-context AI review; human review pending. See docs/research/2026-09-29-nse-4-fortios-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 4,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-29-panwcybersecurityapprentice-deep-review",
       "title": "PANW-CYBERSECURITY-APPRENTICE complete guide and learning-content review",
       "rubric_version": 1,

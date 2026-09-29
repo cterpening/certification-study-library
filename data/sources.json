@@ -3,6 +3,328 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "ietf-ikev2-rfc7296",
+      "title": "RFC 7296 — Internet Key Exchange Protocol Version 2",
+      "url": "https://www.rfc-editor.org/rfc/rfc7296.html",
+      "publisher": "IETF RFC Editor",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Selected section 2.9 from the 304,936-character public capture read through initial narrowing rules, additional subsets and the start of the separate-SA case. Not the whole RFC or later subsections. Address/port/protocol selectors and narrowing used; selectors do not replace peer authentication. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ietf-esp-rfc4303",
+      "title": "RFC 4303 — IP Encapsulating Security Payload",
+      "url": "https://www.rfc-editor.org/rfc/rfc4303.html",
+      "publisher": "IETF RFC Editor",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Selected section 3.4.3 receive-window and integrity-before-state-update passage read in the official web text. Direct 97,506-character capture also available; not the whole RFC. Reordering is distinguished from duplicate/old-sequence rejection; installed FortiOS window unverified. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "fortios-dhcp",
+      "title": "DHCP servers and relays",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/783526/dhcp-servers-and-relays",
+      "publisher": "Fortinet",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Complete 1,791-character body read: server/relay roles, matching pool/options, response routing and model-specific entry-level defaults. No lease/service execution; local address arithmetic only. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "fortios-phase-two",
+      "title": "Phase 2 configuration",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/604285/phase-2-configuration",
+      "publisher": "Fortinet",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Complete 10,377-character body read. Parameter, selector, wizard and negotiation context used. Broad peer-selector/replay prose qualified with selected IETF sections. Questionable ChaCha algorithm/key-size wording and legacy algorithms not adopted as security guidance. No IPsec execution. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "fortios-routing",
+      "title": "Routing concepts",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/139692/routing-concepts",
+      "publisher": "Fortinet",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Selected sections read: default route, static setup, FQDN, routing-table explanation and initial columns, blackhole routes, RPF and asymmetry. Not the entire 28,394-character article or later database/kernel/change sections. Static model omits RPF, policy routing and dynamic metrics. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "fortios-debug-flow",
+      "title": "Using the debug flow tool",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/38044/using-the-debug-flow-tool",
+      "publisher": "Fortinet",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Complete body read: GUI filters, start/stop, CSV and function column. Linked CLI chapter not read. No diagnostic execution or actual packet visibility claimed. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "fortios-sla",
+      "title": "Performance SLA overview",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/867342/performance-sla-overview",
+      "publisher": "Fortinet",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Health-check, probe-mode and protocol sections plus Server, SLA targets and Link status read. Middle extended CLI examples not fully read. Two-server failure logic, application targets and counters used; workbook thresholds are chosen values, not defaults. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "fortios-central-snat",
+      "title": "Central SNAT",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/421028/central-snat",
+      "publisher": "Fortinet",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Introduction and Central SNAT notes read before Sample configuration: ordered map after security policy, policy NAT skipped when enabled and policy-based NGFW behavior. Remaining examples not audited or executed. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "fortios-static-vip",
+      "title": "Static virtual IPs",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/510402/static-virtual-ips",
+      "publisher": "Fortinet",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Complete 3,036-character main read, including examples and local-address ARP side effects. Broad ALL/any example not adopted as least privilege; unused objects not removed. Linked version history not read. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "fortios-inspection-modes",
+      "title": "Inspection modes",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/721410/inspection-modes",
+      "publisher": "Fortinet",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Complete 1,231-character main read: flow matching versus reconstructed proxy content. Linked feature comparison not fully reviewed. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "fortios-ipsec",
+      "title": "General IPsec VPN configuration",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/762500/general-ipsec-vpn-configuration",
+      "publisher": "Fortinet",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Complete short general configuration index read. Linked topology, phase 1 and full policy chapters not read; phase 2 reviewed separately. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "fortios-session-pickup",
+      "title": "Session pickup",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/955521/session-pickup",
+      "publisher": "Fortinet",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Complete 4,200-character main read. TCP pickup, additional UDP/ICMP/QUIC setting, multicast discussion, disabled behavior and cluster-terminated exclusion. Seamless failover is not guaranteed; the model covers eligibility only. No actual failover. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "fortios-conserve",
+      "title": "Conserve mode",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/194558/conserve-mode",
+      "publisher": "Fortinet",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Complete 5,078-character main read: proxy/flow fail-open settings, new-session behavior, thresholds and diagnostics. Explicit bypass descriptions qualify the introductory reassurance. Sample counters are not current measurements. No resource pressure or fail-open change. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "fortios-certificate-inspection",
+      "title": "Certificate inspection",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/505842/certificate-inspection",
+      "publisher": "Fortinet",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Complete 3,043-character main read: TLS metadata, replacement-page CA, read-only port-443 profile and custom ports. No certificate installation or browser trust change. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "fortios-deep-inspection",
+      "title": "Deep inspection",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/122078/deep-inspection",
+      "publisher": "Fortinet",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Complete 5,690-character main read: decryption/re-encryption, proxy port-mapping distinction, untrusted-CA warning, exceptions and version/QUIC settings. Legacy SSL choices are not recommendations. No TLS or certificate operation. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "fortios-fsso",
+      "title": "FSSO",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/450337/fsso",
+      "publisher": "Fortinet",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Complete 6,002-character main read: DC, collector and terminal-server roles, polling alternatives and connectors. Listed OS/product versions do not verify current compatibility; linked release notes not read. No agents installed or identity environment used. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "fortios-policy-priority",
+      "title": "Policies — best practices",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/best-practices/862226/policies",
+      "publisher": "Fortinet",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Complete 4,319-character main read: ordinary ordering, local-in/DoS distinctions, VIP priority, deny-only match-vip and the default for new deny policies since 7.2.4. Direct HTTP 200 despite a separate web-reader 403. No policy changes. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "fortinet-nse-transition-2026",
+      "title": "Existing certifications in the July 2026 transition",
+      "url": "https://helpdesk.training.fortinet.com/support/solutions/articles/73000665774-what-will-happen-to-my-existing-certifications-and-which-new-certification-will-i-receive-on-july-15",
+      "publisher": "Fortinet",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Complete 3,805-character public main read. Active FCP transition uses historical exams and preserves original issue/expiry dates. No fresh validity term assumed for all holders; personal dashboard not checked. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "fortinet-recert-assessment",
+      "title": "Recertification assessments",
+      "url": "https://helpdesk.training.fortinet.com/support/solutions/articles/73000671901",
+      "publisher": "Fortinet",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Complete 3,984-character public main read. Active credential, qualifying proctored exam within two years, available higher-version assessment, dashboard eligibility and separate voucher channels. Purchase steps read only; no account or transaction. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "fortios-eight-announcement",
+      "title": "FortiOS 8.0: Redefining Secure Networking in the AI and Quantum Era",
+      "url": "https://www.fortinet.com/blog/security-architecture/fortios-8-redefining-secure-networking-in-the-ai-and-quantum-era",
+      "publisher": "Fortinet",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Complete April 6, 2026 article by Baksheesh Singh Ghuman read. AI/quantum product context is separate from exam availability. Superiority claims and FIPS 204/205 hybrid-key-exchange wording were not adopted as verified requirements. No implementation audit. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "fortisase-admin",
+      "title": "FortiSASE administration guide",
+      "url": "https://docs.fortinet.com/document/fortisase/latest/mature-administration-guide",
+      "publisher": "Fortinet",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Complete 2,167-character Introduction main read from the mature guide, labeled 7.2.0. Agent, agentless and IPsec steering plus identity overview. Linked network/onboarding chapters not read; plans, regions and latest capabilities unverified. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "fortigate-cnf-admin",
+      "title": "FortiGate CNF administration guide",
+      "url": "https://docs.fortinet.com/document/fortigate-cnf/latest/administration-guide",
+      "publisher": "Fortinet",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Complete 2,266-character Introduction main read: SaaS infrastructure, policy responsibility and advertised features. Linked onboarding/scenarios not read. No deployment or entitlement check. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "fortigate-aws-vm",
+      "title": "About FortiGate-VM for AWS",
+      "url": "https://docs.fortinet.com/document/fortigate-public-cloud/7.6.0/aws-administration-guide/685891/about-fortigate-vm-for-aws",
+      "publisher": "Fortinet",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NSE-4-FORTIOS deep review: Complete 2,963-character overview main read, including cloud API involvement in HA and resource costs. Deployment and instance-compatibility chapters not reviewed. No AWS account/resources used. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "ietf-dns-tcp-rfc7766",
       "title": "RFC 7766 — DNS Transport over TCP",
       "url": "https://www.rfc-editor.org/rfc/rfc7766.html",
@@ -52369,46 +52691,217 @@
       "notes": "May 2026 beginner book listed at 9h31m with broad threats, identity, network, endpoint, cloud, cryptography, SOC, IR and governance coverage. Select chapters by blueprint gap. September 29 PANW-CYBERSECURITY-APPRENTICE deep review: HTTP 403. Earlier May 2026 beginner-book and 9h31 metadata not reverified; no chapters, interior or quality audit. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"fortinet-nse4-fortios-76-exam","title":"Fortinet NSE 4 - FortiOS 7.6 Administrator Exam","url":"https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam","publisher":"Fortinet Training Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS"],"notes":"Canonical current five-domain ranged-weight blueprint, 50–55-question/80–90-minute contract, FortiOS 7.6.0 baseline, experience recommendation and official resource/sample-question boundary."
+      "id": "fortinet-nse4-fortios-76-exam",
+      "title": "Fortinet NSE 4 - FortiOS 7.6 Administrator Exam",
+      "url": "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam",
+      "publisher": "Fortinet Training Institute",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "notes": "Canonical available 7.6.0 exam: 18 tasks, 89 supporting details, published weight ranges, 50–55 questions and 100 minutes. An undated 8.0 Coming Soon entry is separately visible. September 29 NSE-4-FORTIOS deep review: Complete visible canonical main read. Available 7.6.0: 100 minutes, 50–55 questions, English/Japanese, 18 tasks and 89 details, unchanged domain ranges. The visible 8.0 Coming Soon entry has no date or detailed contract. A web parser exposed details inside an HTML comment; direct DOM inspection established their exclusion. Five objective headings changed formatting only. Exact prior snapshot bytes and historical references archived. Mixed-version status monitor repaired; fresh live recheck unchanged. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"fortinet-nse4-certification","title":"NSE 4 FortiOS Certification","url":"https://training.fortinet.com/local/staticpage/view.php?page=nse_4","publisher":"Fortinet Training Institute","authority_class":1,"source_type":"official-policy","access_model":"public","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS"],"notes":"Current post-July 15, 2026 credential requirements, two-year validity, renewal routes, 15-day failed-attempt wait and passed-exam restrictions."
+      "id": "fortinet-nse4-certification",
+      "title": "NSE 4 FortiOS Certification",
+      "url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_4",
+      "publisher": "Fortinet Training Institute",
+      "authority_class": 1,
+      "source_type": "official-policy",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "notes": "Current post-July 15, 2026 credential requirements, two-year validity, renewal routes, 15-day failed-attempt wait and passed-exam restrictions. September 29 NSE-4-FORTIOS deep review: Complete 3,251-character main read. Proctored pass and two-year validity; next-version exam, conditional assessment, NSE 7 or NSE 8 practical renewal routes. Active lower-level renewal, centers/OnVUE, 15-day failed-attempt wait, passed-exam restrictions and no reuse reviewed. Item-credit rules do not publish a passing percentage. No account or booking checked. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"fortinet-fortios-76-administrator-course","title":"FortiOS 7.6 Administrator Course","url":"https://training.fortinet.com/course/view.php?id=72343","publisher":"Fortinet Training Institute","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS"],"notes":"Official objective-aligned self-paced course and vendor sample-question route; theoretical learning is free, while labs and instructor-led options may cost. Verify the displayed duration after sign-in."
+      "id": "fortinet-fortios-76-administrator-course",
+      "title": "FortiOS 7.6 Administrator Course",
+      "url": "https://training.fortinet.com/course/view.php?id=72343",
+      "publisher": "Fortinet Training Institute",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "notes": "Official objective-aligned self-paced course and vendor sample-question route; theoretical learning is free, while labs and instructor-led options may cost. Verify the displayed duration after sign-in. September 29 NSE-4-FORTIOS deep review: HTTP 403. No signed-in lessons, sample questions, labs or duration reviewed. The public blueprint establishes the official course link only. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"fortinet-fortigate-administrator-course-description","title":"FortiGate Administrator Course Description","url":"https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-administrator","publisher":"Fortinet Training Institute","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS"],"notes":"Public formats, prerequisites, lab topics and enrollment route. Some course wording retains the older FortiGate/FCP identity and must not override the current NSE 4 contract."
+      "id": "fortinet-fortigate-administrator-course-description",
+      "title": "FortiGate Administrator Course Description",
+      "url": "https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-administrator",
+      "publisher": "Fortinet Training Institute",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "notes": "Historical FortiOS 7.4.1 public course description, 12h lecture plus10h lab. Not a current7.6 course contract. September 29 NSE-4-FORTIOS deep review: Complete 4,392-character public description read. Explicit FortiOS 7.4.1, 12 hours lecture plus 10 hours lab, with older SSL VPN/Security Fabric agenda. Not 7.6 scope or current enrollment proof. Legacy browser/Java/network instructions were not acted on; inconsistent full-day/half-day wording not normalized. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"fortinet-fortios-760-admin-guide","title":"FortiOS 7.6.0 Administration Guide","url":"https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide","publisher":"Fortinet","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS"],"notes":"Canonical product documentation matched to the exam baseline for deployment, logging, HA, policies, identity, inspection, routing, SD-WAN and IPsec."
+      "id": "fortinet-fortios-760-admin-guide",
+      "title": "FortiOS 7.6.0 Administration Guide",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide",
+      "publisher": "Fortinet",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "notes": "Canonical product documentation matched to the exam baseline for deployment, logging, HA, policies, identity, inspection, routing, SD-WAN and IPsec. September 29 NSE-4-FORTIOS deep review: Getting Started main and navigation/resource entry read; not the whole manual. Separate selected articles carry detailed reading receipts. Directory versions do not announce exam cutover. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"fortinet-fortios-760-cli-reference","title":"FortiOS 7.6.0 CLI Reference","url":"https://docs.fortinet.com/document/fortigate/7.6.0/cli-reference/84566/fortios-cli-reference","publisher":"Fortinet","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS"],"notes":"Exact-baseline CLI command reference; command availability varies by model, hardware and licensed feature."
+      "id": "fortinet-fortios-760-cli-reference",
+      "title": "FortiOS 7.6.0 CLI Reference",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/cli-reference/84566/fortios-cli-reference",
+      "publisher": "Fortinet",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "notes": "Exact-baseline CLI command reference; command availability varies by model, hardware and licensed feature. September 29 NSE-4-FORTIOS deep review: Complete introductory main read: command availability depends on version/model/hardware/extensions and contextual help. No full command-tree audit or CLI execution. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"fortinet-fortios-760-new-features","title":"FortiOS 7.6.0 New Features","url":"https://docs.fortinet.com/document/fortigate/7.6.0/new-features","publisher":"Fortinet","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS"],"notes":"Official release reference for separating 7.6 baseline behavior from older third-party instruction."
+      "id": "fortinet-fortios-760-new-features",
+      "title": "FortiOS 7.6.0 New Features",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/new-features",
+      "publisher": "Fortinet",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "notes": "Official release reference for separating 7.6 baseline behavior from older third-party instruction. September 29 NSE-4-FORTIOS deep review: Complete Overview main read, not every linked feature. Version suffixes identify later 7.6 maintenance additions. Directory version metadata does not establish exam availability. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"fortinet-training-policies","title":"Fortinet Training Institute Policies","url":"https://helpdesk.training.fortinet.com/support/solutions/73000238852","publisher":"Fortinet Training Institute","authority_class":1,"source_type":"official-policy","access_model":"public","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS","NSE-8","NSE-3-CYBERSECURITY","NSE-7-CLOUD-SECURITY","NSE-7-SASE","NSE-7-SECURE-NETWORKING","NSE-7-SECURITY-OPERATIONS"],"notes":"Official portal for current exam security, delivery, result, retake and voucher policies."
+      "id": "fortinet-training-policies",
+      "title": "Fortinet Training Institute Policies",
+      "url": "https://helpdesk.training.fortinet.com/support/solutions/73000238852",
+      "publisher": "Fortinet Training Institute",
+      "authority_class": 1,
+      "source_type": "official-policy",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NSE-4-FORTIOS",
+        "NSE-8",
+        "NSE-3-CYBERSECURITY",
+        "NSE-7-CLOUD-SECURITY",
+        "NSE-7-SASE",
+        "NSE-7-SECURE-NETWORKING",
+        "NSE-7-SECURITY-OPERATIONS"
+      ],
+      "notes": "Official portal for current exam security, delivery, result, retake and voucher policies. September 29 NSE-4-FORTIOS deep review: Complete 1,116-character topic directory read. Individual policy bodies were not all reviewed; specific track and assessment rules were read separately. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"youtube-fortinet","title":"Fortinet YouTube Channel","url":"https://www.youtube.com/@Fortinet","publisher":"Fortinet","authority_class":2,"source_type":"official-video","access_model":"public","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS","NSE-I-MSSP-SECURITY","NSE-2-CYBERSECURITY","NSE-3-CYBERSECURITY","NSE-5-SECURITY-OPERATIONS","NSE-6-SASE","NSE-7-SASE","NSE-7-SECURE-NETWORKING","NSE-7-SECURITY-OPERATIONS"],"notes":"Official visual architecture and feature demonstrations; verify each video's FortiOS version against 7.6.0."
+      "id": "youtube-fortinet",
+      "title": "Fortinet YouTube Channel",
+      "url": "https://www.youtube.com/@Fortinet",
+      "publisher": "Fortinet",
+      "authority_class": 2,
+      "source_type": "official-video",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NSE-4-FORTIOS",
+        "NSE-I-MSSP-SECURITY",
+        "NSE-2-CYBERSECURITY",
+        "NSE-3-CYBERSECURITY",
+        "NSE-5-SECURITY-OPERATIONS",
+        "NSE-6-SASE",
+        "NSE-7-SASE",
+        "NSE-7-SECURE-NETWORKING",
+        "NSE-7-SECURITY-OPERATIONS"
+      ],
+      "notes": "Official visual architecture and feature demonstrations; verify each video's FortiOS version against 7.6.0. September 29 NSE-4-FORTIOS deep review: 171-character title/footer only; no video playback or full playlist review. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pluralsight-fortinet-big-picture","title":"Fortinet: The Big Picture","url":"https://www.pluralsight.com/courses/fortinet-big-picture","publisher":"Pluralsight / Leigh Bogardis","authority_class":3,"source_type":"commercial-course","access_model":"paid","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS","NSE-3-CYBERSECURITY"],"notes":"1h24m beginner portfolio context from January 2023. It predates FortiOS 7.6 and the July 2026 NSE transition, so it is not exam-contract or configuration authority."
+      "id": "pluralsight-fortinet-big-picture",
+      "title": "Fortinet: The Big Picture",
+      "url": "https://www.pluralsight.com/courses/fortinet-big-picture",
+      "publisher": "Pluralsight / Leigh Bogardis",
+      "authority_class": 3,
+      "source_type": "commercial-course",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NSE-4-FORTIOS",
+        "NSE-3-CYBERSECURITY"
+      ],
+      "notes": "1h24m beginner portfolio context from January 2023. It predates FortiOS 7.6 and the July 2026 NSE transition, so it is not exam-contract or configuration authority. September 29 NSE-4-FORTIOS deep review: Complete 5,097-character public main/TOC read. Leigh Bogardis, January 17, 2023, beginner, 1 hour 24 minutes. Legacy portfolio context only; no paid lessons, trial or complete current-exam coverage claim. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pluralsight-network-security-firewalls-path","title":"Network Security and Firewalls Path","url":"https://www.pluralsight.com/paths/network-security-and-firewalls","publisher":"Pluralsight","authority_class":3,"source_type":"commercial-learning-path","access_model":"paid","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS","NSE-2-CYBERSECURITY","NSE-3-CYBERSECURITY"],"notes":"Five-course, 10-hour vendor-neutral firewall survey including the Fortinet overview; use for concepts/comparison, not current FortiOS commands."
+      "id": "pluralsight-network-security-firewalls-path",
+      "title": "Network Security and Firewalls Path",
+      "url": "https://www.pluralsight.com/paths/network-security-and-firewalls",
+      "publisher": "Pluralsight",
+      "authority_class": 3,
+      "source_type": "commercial-learning-path",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NSE-4-FORTIOS",
+        "NSE-2-CYBERSECURITY",
+        "NSE-3-CYBERSECURITY"
+      ],
+      "notes": "Five-course, 10-hour vendor-neutral firewall survey including the Fortinet overview; use for concepts/comparison, not current FortiOS commands. September 29 NSE-4-FORTIOS deep review: Complete 3,567-character public main read. Five courses, 10-hour headline; listed durations total 10 hours 4 minutes and courses date from 2019–2023. Conceptual supplement, no paid interiors or current-command authority. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cbtnuggets-fortinet-playlist","title":"Fortinet Certification Courses","url":"https://www.cbtnuggets.com/certification-playlist/fortinet","publisher":"CBT Nuggets","authority_class":3,"source_type":"commercial-learning-catalog","access_model":"paid","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS"],"notes":"Current catalog lists a Fortinet NSE 4 FortiOS 7.6 Administrator route by Keith Barker. Verify playlist duration and reconcile every contract/command claim with Fortinet."
+      "id": "cbtnuggets-fortinet-playlist",
+      "title": "Fortinet Certification Courses",
+      "url": "https://www.cbtnuggets.com/certification-playlist/fortinet",
+      "publisher": "CBT Nuggets",
+      "authority_class": 3,
+      "source_type": "commercial-learning-catalog",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "notes": "Current catalog lists a Fortinet NSE 4 FortiOS 7.6 Administrator route by Keith Barker. Verify playlist duration and reconcile every contract/command claim with Fortinet. September 29 NSE-4-FORTIOS deep review: Complete 1,694-character public main read. Keith Barker’s 7.6 listing has 233 videos and zero practice exams; the older NSE 4 listing has 212 videos. Total duration, paid lessons, quality and entitlement were not verified. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-fortigate-76-admin-part-one","title":"FCP-FortiGate 7.6 Administrator Training Part 1/2","url":"https://www.udemy.com/course/fcp-fortigate-76-administrator-training-part-12/","publisher":"Udemy / Ahmad Ali","authority_class":3,"source_type":"commercial-course","access_model":"paid","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS"],"notes":"10h30m 7.6 administration demonstrations and workbook listed November 2025. The title retains the replaced FCP identity; use official NSE sources for credential facts."
+      "id": "udemy-fortigate-76-admin-part-one",
+      "title": "FCP-FortiGate 7.6 Administrator Training Part 1/2",
+      "url": "https://www.udemy.com/course/fcp-fortigate-76-administrator-training-part-12/",
+      "publisher": "Udemy / Ahmad Ali",
+      "authority_class": 3,
+      "source_type": "commercial-course",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "notes": "10h30m 7.6 administration demonstrations and workbook listed November 2025. The title retains the replaced FCP identity; use official NSE sources for credential facts. September 29 NSE-4-FORTIOS deep review: HTTP 403. Earlier 10-hour-30-minute metadata for part 1 not reverified. Legacy FCP title does not establish current credential identity; no interior access. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-getting-started-fortigate","title":"Getting Started with FortiGate","url":"https://www.oreilly.com/library/view/getting-started-with/9781782178200/","publisher":"O'Reilly / Packt","authority_class":3,"source_type":"commercial-book","access_model":"paid","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS"],"notes":"Older introductory FortiGate book useful only for conceptual and troubleshooting comparison; all UI, feature and command behavior must be translated through current 7.6 documentation."
+      "id": "oreilly-getting-started-fortigate",
+      "title": "Getting Started with FortiGate",
+      "url": "https://www.oreilly.com/library/view/getting-started-with/9781782178200/",
+      "publisher": "O'Reilly / Packt",
+      "authority_class": 3,
+      "source_type": "commercial-book",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "notes": "Older introductory FortiGate book useful only for conceptual and troubleshooting comparison; all UI, feature and command behavior must be translated through current 7.6 documentation. September 29 NSE-4-FORTIOS deep review: HTTP 403. Historical book metadata and interior not reverified. Six to ten hours is a study estimate, not a verified publisher duration. See docs/research/2026-09-29-nse-4-fortios-deep-review.md No live infrastructure execution."
     },
     {
       "id":"splk-5001-certification","title":"Splunk Certified Cybersecurity Defense Analyst","url":"https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-analyst.html","publisher":"Splunk","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLK-5001"],"notes":"Canonical monitored certification page for level, prerequisite, 66-question/75-minute format, price, Pearson delivery, role scope, blueprint and BOTS links."

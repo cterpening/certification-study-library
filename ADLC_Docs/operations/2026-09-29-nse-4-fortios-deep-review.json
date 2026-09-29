@@ -1,0 +1,2137 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "NSE-4-FORTIOS",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "22b4c473b0a161d201d23d4e4afbfd4100781e57bc8011d6eef1617c813f1b47",
+  "guide_after_sha256": "89b3c55bdaee8aae237e26df76d74e37ec29daa7194c45e39cea300e12c80c99",
+  "prior_records": {
+    "exam": {
+      "code": "NSE-4-FORTIOS",
+      "level": "intermediate",
+      "vendor_id": "fortinet",
+      "title": "Fortinet NSE 4 FortiOS",
+      "status": "active",
+      "study_guide_url": "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam",
+      "guide_path": "guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No credential prerequisite is published for NSE 4. Fortinet recommends 1–2 years of networking, 0–1 year of network security, and at least six months of FortiGate hands-on experience. Practice recoverable deployment, logging/HA/troubleshooting, policy/NAT/identity, flow/proxy and encrypted content inspection, static routing/SD-WAN, and redundant IPsec on an authorized FortiOS 7.6 lab."
+    },
+    "review": {
+      "id": "nse-4-fortios-2026-09-02-source-validation",
+      "exam_code": "NSE-4-FORTIOS",
+      "guide_path": "guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nse-4-fortios-official-objectives.txt",
+      "blueprint_snapshot_sha256": "1b33e766a66667a35836c8bdc2632bd72c3489d5d265e3cf4fe52452c72cfc6f",
+      "objective_coverage": [
+        {
+          "objective_group": "Deployment and system configuration (20–25%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1, 7 and 8"
+          ]
+        },
+        {
+          "objective_group": "Firewall policies and authentication (20–25%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 2–3"
+          ]
+        },
+        {
+          "objective_group": "Content inspection (25–30%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 1 and 3",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Routing (10–15%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1–2",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "VPNs (10–15%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenario 2",
+            "Lab 6"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 14,
+        "reachable": 12,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All five current FortiOS 7.6.0 ranged-weight domains are mapped through recoverable deployment, logging/HA/troubleshooting, cloud/SASE placement, policy/session/NAT/identity reasoning, flow/proxy and encrypted content inspection, static route/SD-WAN decisions, and redundant IPsec. Three integrated scenarios, eight authorized labs and 40 original checks are included. The July 15, 2026 move from FCP to NSE 4 and stale course naming are explicit; the published weight ranges are not falsely normalized. Official course sample questions are the only named exam-style source, and marketplace products claiming real or guaranteed-match questions are excluded. September 17, 2026 contract maintenance: checked current official exam and credential pages and corrected the published exam-time or prerequisite facts in the guide. The historical objective snapshot, objective mapping and full review date remain unchanged. See docs/research/2026-09-17-exam-validation.md for the exact corrections and access limits."
+    },
+    "sources": [
+      {
+        "id": "fortinet-nse4-fortios-76-exam",
+        "title": "Fortinet NSE 4 - FortiOS 7.6 Administrator Exam",
+        "url": "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam",
+        "publisher": "Fortinet Training Institute",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NSE-4-FORTIOS"
+        ],
+        "notes": "Canonical current five-domain ranged-weight blueprint, 50–55-question/80–90-minute contract, FortiOS 7.6.0 baseline, experience recommendation and official resource/sample-question boundary."
+      },
+      {
+        "id": "fortinet-nse4-certification",
+        "title": "NSE 4 FortiOS Certification",
+        "url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_4",
+        "publisher": "Fortinet Training Institute",
+        "authority_class": 1,
+        "source_type": "official-policy",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NSE-4-FORTIOS"
+        ],
+        "notes": "Current post-July 15, 2026 credential requirements, two-year validity, renewal routes, 15-day failed-attempt wait and passed-exam restrictions."
+      },
+      {
+        "id": "fortinet-fortios-76-administrator-course",
+        "title": "FortiOS 7.6 Administrator Course",
+        "url": "https://training.fortinet.com/course/view.php?id=72343",
+        "publisher": "Fortinet Training Institute",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NSE-4-FORTIOS"
+        ],
+        "notes": "Official objective-aligned self-paced course and vendor sample-question route; theoretical learning is free, while labs and instructor-led options may cost. Verify the displayed duration after sign-in."
+      },
+      {
+        "id": "fortinet-fortigate-administrator-course-description",
+        "title": "FortiGate Administrator Course Description",
+        "url": "https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-administrator",
+        "publisher": "Fortinet Training Institute",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NSE-4-FORTIOS"
+        ],
+        "notes": "Public formats, prerequisites, lab topics and enrollment route. Some course wording retains the older FortiGate/FCP identity and must not override the current NSE 4 contract."
+      },
+      {
+        "id": "fortinet-fortios-760-admin-guide",
+        "title": "FortiOS 7.6.0 Administration Guide",
+        "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide",
+        "publisher": "Fortinet",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NSE-4-FORTIOS"
+        ],
+        "notes": "Canonical product documentation matched to the exam baseline for deployment, logging, HA, policies, identity, inspection, routing, SD-WAN and IPsec."
+      },
+      {
+        "id": "fortinet-fortios-760-cli-reference",
+        "title": "FortiOS 7.6.0 CLI Reference",
+        "url": "https://docs.fortinet.com/document/fortigate/7.6.0/cli-reference/84566/fortios-cli-reference",
+        "publisher": "Fortinet",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NSE-4-FORTIOS"
+        ],
+        "notes": "Exact-baseline CLI command reference; command availability varies by model, hardware and licensed feature."
+      },
+      {
+        "id": "fortinet-fortios-760-new-features",
+        "title": "FortiOS 7.6.0 New Features",
+        "url": "https://docs.fortinet.com/document/fortigate/7.6.0/new-features",
+        "publisher": "Fortinet",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NSE-4-FORTIOS"
+        ],
+        "notes": "Official release reference for separating 7.6 baseline behavior from older third-party instruction."
+      },
+      {
+        "id": "fortinet-training-policies",
+        "title": "Fortinet Training Institute Policies",
+        "url": "https://helpdesk.training.fortinet.com/support/solutions/73000238852",
+        "publisher": "Fortinet Training Institute",
+        "authority_class": 1,
+        "source_type": "official-policy",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NSE-4-FORTIOS",
+          "NSE-8",
+          "NSE-3-CYBERSECURITY",
+          "NSE-7-CLOUD-SECURITY",
+          "NSE-7-SASE",
+          "NSE-7-SECURE-NETWORKING",
+          "NSE-7-SECURITY-OPERATIONS"
+        ],
+        "notes": "Official portal for current exam security, delivery, result, retake and voucher policies."
+      },
+      {
+        "id": "youtube-fortinet",
+        "title": "Fortinet YouTube Channel",
+        "url": "https://www.youtube.com/@Fortinet",
+        "publisher": "Fortinet",
+        "authority_class": 2,
+        "source_type": "official-video",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NSE-4-FORTIOS",
+          "NSE-I-MSSP-SECURITY",
+          "NSE-2-CYBERSECURITY",
+          "NSE-3-CYBERSECURITY",
+          "NSE-5-SECURITY-OPERATIONS",
+          "NSE-6-SASE",
+          "NSE-7-SASE",
+          "NSE-7-SECURE-NETWORKING",
+          "NSE-7-SECURITY-OPERATIONS"
+        ],
+        "notes": "Official visual architecture and feature demonstrations; verify each video's FortiOS version against 7.6.0."
+      },
+      {
+        "id": "pluralsight-fortinet-big-picture",
+        "title": "Fortinet: The Big Picture",
+        "url": "https://www.pluralsight.com/courses/fortinet-big-picture",
+        "publisher": "Pluralsight / Leigh Bogardis",
+        "authority_class": 3,
+        "source_type": "commercial-course",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NSE-4-FORTIOS",
+          "NSE-3-CYBERSECURITY"
+        ],
+        "notes": "1h24m beginner portfolio context from January 2023. It predates FortiOS 7.6 and the July 2026 NSE transition, so it is not exam-contract or configuration authority."
+      },
+      {
+        "id": "pluralsight-network-security-firewalls-path",
+        "title": "Network Security and Firewalls Path",
+        "url": "https://www.pluralsight.com/paths/network-security-and-firewalls",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "commercial-learning-path",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NSE-4-FORTIOS",
+          "NSE-2-CYBERSECURITY",
+          "NSE-3-CYBERSECURITY"
+        ],
+        "notes": "Five-course, 10-hour vendor-neutral firewall survey including the Fortinet overview; use for concepts/comparison, not current FortiOS commands."
+      },
+      {
+        "id": "cbtnuggets-fortinet-playlist",
+        "title": "Fortinet Certification Courses",
+        "url": "https://www.cbtnuggets.com/certification-playlist/fortinet",
+        "publisher": "CBT Nuggets",
+        "authority_class": 3,
+        "source_type": "commercial-learning-catalog",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NSE-4-FORTIOS"
+        ],
+        "notes": "Current catalog lists a Fortinet NSE 4 FortiOS 7.6 Administrator route by Keith Barker. Verify playlist duration and reconcile every contract/command claim with Fortinet."
+      },
+      {
+        "id": "udemy-fortigate-76-admin-part-one",
+        "title": "FCP-FortiGate 7.6 Administrator Training Part 1/2",
+        "url": "https://www.udemy.com/course/fcp-fortigate-76-administrator-training-part-12/",
+        "publisher": "Udemy / Ahmad Ali",
+        "authority_class": 3,
+        "source_type": "commercial-course",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NSE-4-FORTIOS"
+        ],
+        "notes": "10h30m 7.6 administration demonstrations and workbook listed November 2025. The title retains the replaced FCP identity; use official NSE sources for credential facts."
+      },
+      {
+        "id": "oreilly-getting-started-fortigate",
+        "title": "Getting Started with FortiGate",
+        "url": "https://www.oreilly.com/library/view/getting-started-with/9781782178200/",
+        "publisher": "O'Reilly / Packt",
+        "authority_class": 3,
+        "source_type": "commercial-book",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NSE-4-FORTIOS"
+        ],
+        "notes": "Older introductory FortiGate book useful only for conceptual and troubleshooting comparison; all UI, feature and command behavior must be translated through current 7.6 documentation."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "7b5c2aa15f59277b27e00774391815af92e2b1e63cf0be6653a6362f49c08e1c",
+      "guide_sections": [
+        "1. Deployment and system configuration (20–25%)",
+        "Worked results for the three scenarios",
+        "Hands-on labs",
+        "Executed offline workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "a5feb4fba69177d32d657de0e71b3c4e32beb1364f3ccb25bdf09180331754c5",
+      "guide_sections": [
+        "1. Deployment and system configuration (20–25%)",
+        "Worked results for the three scenarios",
+        "Hands-on labs",
+        "Executed offline workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "fca01a3d507dd5d42260bf77bac9c58a779f3f89ab72ee13806d8010d550233a",
+      "guide_sections": [
+        "1. Deployment and system configuration (20–25%)",
+        "Worked results for the three scenarios",
+        "Hands-on labs",
+        "Executed offline workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "f3e55c4c9395a031ef18630c342af50aca7d81f4d18617b0a36fa5b459d613a8",
+      "guide_sections": [
+        "1. Deployment and system configuration (20–25%)",
+        "Worked results for the three scenarios",
+        "Hands-on labs",
+        "Executed offline workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "0a92edf0b2550fa88e60fe888fb85daf5a53d5411087c27adc6e0c297cea6be8",
+      "guide_sections": [
+        "1. Deployment and system configuration (20–25%)",
+        "Worked results for the three scenarios",
+        "Hands-on labs",
+        "Executed offline workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "dba312b7c8604adb932e793802e3a7cdba4a7c3736ac375514505c064588f38f",
+      "guide_sections": [
+        "1. Deployment and system configuration (20–25%)",
+        "Worked results for the three scenarios",
+        "Hands-on labs",
+        "Executed offline workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "8adcdf55a54cc2b6d24892032405f5a74fc6d456115055a36086417e0cf487ac",
+      "guide_sections": [
+        "2. Firewall policies and authentication (20–25%)",
+        "Worked results for the three scenarios",
+        "Hands-on labs",
+        "Executed offline workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "6aa9cd6e2b472a765109e22b5ddeb9446156165404685bbe9abc7d7aa9783af8",
+      "guide_sections": [
+        "2. Firewall policies and authentication (20–25%)",
+        "Worked results for the three scenarios",
+        "Hands-on labs",
+        "Executed offline workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "0cdb43bac5cba1ec73ac45aecbeeb39c9af1d0bba1c325c38dd7a14cf9672324",
+      "guide_sections": [
+        "2. Firewall policies and authentication (20–25%)",
+        "Worked results for the three scenarios",
+        "Hands-on labs",
+        "Executed offline workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "c21a33331994168e73f151b1c9b7906048835d08b675bb6676e93b4858aa4e3b",
+      "guide_sections": [
+        "2. Firewall policies and authentication (20–25%)",
+        "Worked results for the three scenarios",
+        "Hands-on labs",
+        "Executed offline workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "f8a54bf95eaf3fcaf6b623b9ff1ea24c45e5ae4816b0ecda1ac4e0b3c16697c0",
+      "guide_sections": [
+        "3. Content inspection (25–30%)",
+        "Worked results for the three scenarios",
+        "Hands-on labs",
+        "Executed offline workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "cb74bc4c695c7ccb890d5d8b089b0eb845a4f8d5249d59c65be2d620ea6c2675",
+      "guide_sections": [
+        "3. Content inspection (25–30%)",
+        "Worked results for the three scenarios",
+        "Hands-on labs",
+        "Executed offline workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "b745298e937e916360664e2f83ef5b9739c75bb3019acae277012fd50c06435d",
+      "guide_sections": [
+        "3. Content inspection (25–30%)",
+        "Worked results for the three scenarios",
+        "Hands-on labs",
+        "Executed offline workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "ca05b437bae95a409313a266a5954b882ddc9d6ee916f6d0126d89d41f11a2f6",
+      "guide_sections": [
+        "3. Content inspection (25–30%)",
+        "Worked results for the three scenarios",
+        "Hands-on labs",
+        "Executed offline workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "87737061beb42421a36e9f478b51e8ce33a3c86b23174a23a303f319c95d0319",
+      "guide_sections": [
+        "3. Content inspection (25–30%)",
+        "Worked results for the three scenarios",
+        "Hands-on labs",
+        "Executed offline workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "ca2b5f89032af62a115d1ae165af2c6ecefead88e425705b5724ecd13cab5b8b",
+      "guide_sections": [
+        "4. Routing (10–15%)",
+        "Worked results for the three scenarios",
+        "Hands-on labs",
+        "Executed offline workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "d3e07931943f44292186e40ed918ec4f72cf216cbe162b41ca25097800755d72",
+      "guide_sections": [
+        "4. Routing (10–15%)",
+        "Worked results for the three scenarios",
+        "Hands-on labs",
+        "Executed offline workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "62ace134cb2d73fb919840957e41d0e26ddf59ea775f0b408f859dc888c8a665",
+      "guide_sections": [
+        "5. VPNs (10–15%)",
+        "Worked results for the three scenarios",
+        "Hands-on labs",
+        "Executed offline workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "NSE-4-FORTIOS"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "NSE-4-FORTIOS",
+        "title": "Fortinet NSE 4 FortiOS",
+        "url": "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam",
+        "guide_path": "guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md",
+        "snapshot_path": "data\\objective-snapshots\\nse-4-fortios-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\nse-4-fortios-official-status.json",
+        "previous_sha256": "1b33e766a66667a35836c8bdc2632bd72c3489d5d265e3cf4fe52452c72cfc6f",
+        "current_sha256": "ee1dd533cdd57817a80a76efc3ac2e9719aa3e28b9b6603c32d1e7f14f20b29b",
+        "previous_status_sha256": "70a8636a390266b7756d05f7835c7b363c59443dca4e1e8cc6b721a357b2a27e",
+        "current_status_sha256": "ad780578879ae5612130aa8b7db8f127d5a38452b5580f8b412653524018247b",
+        "official_status": {
+          "skills_versions": [
+            "Exam Details",
+            "Exam name",
+            "Fortinet NSE 4 - FortiOS 7.6 Administrator",
+            "Exam time",
+            "100 minutes",
+            "Exam questions",
+            "50–55 questions",
+            "Scoring",
+            "Pass or fail. A score report is available from your Pearson VUE account.",
+            "Language",
+            "English and Japanese",
+            "Product version",
+            "FortiOS 7.6.0"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 37,
+    "reachable": 34,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "fortinet-nse4-fortios-76-exam",
+      "url": "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam",
+      "checked_at": "2026-09-29T17:21:09.911648+00:00",
+      "health": {
+        "id": "fortinet-nse4-fortios-76-exam",
+        "url": "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam",
+        "checked_at": "2026-09-29T17:21:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "FortiOS Administrator Exam | Training Institute",
+        "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam",
+        "duration_signals": [
+          "100 minutes"
+        ],
+        "signal_fingerprint": "1ae138d12fa5b56867a5a2c737d1f57a5479fb058abeac474a19b829bb2d674d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam",
+      "sha256": "de12998894c03631848f1b04dcc760c15d2ec634cfa4cc8b5601374c4a58e284",
+      "text_characters": 8182
+    },
+    {
+      "id": "fortinet-nse4-certification",
+      "url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_4",
+      "checked_at": "2026-09-29T17:21:09.913621+00:00",
+      "health": {
+        "id": "fortinet-nse4-certification",
+        "url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_4",
+        "checked_at": "2026-09-29T17:21:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_4",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "NSE 4 FortiOS | Training Institute",
+        "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_4",
+        "duration_signals": [],
+        "signal_fingerprint": "3429571df095496511a66dd034d5068876dc2e902d41572934672341303c8a05",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_4",
+      "sha256": "407005d31bae8dab44cf4b876816c2f239fa9ce425eb21e5911a4998067d9561",
+      "text_characters": 3251
+    },
+    {
+      "id": "fortinet-fortios-76-administrator-course",
+      "url": "https://training.fortinet.com/course/view.php?id=72343",
+      "checked_at": "2026-09-29T17:21:09.914906+00:00",
+      "health": {
+        "id": "fortinet-fortios-76-administrator-course",
+        "url": "https://training.fortinet.com/course/view.php?id=72343",
+        "checked_at": "2026-09-29T17:21:09+00:00",
+        "status": "blocked",
+        "http_status": 200,
+        "final_url": "https://customersso1.fortinet.com/saml-idp/xnmqmc46a5retyvb/login/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Redirected to SAML sign-in; verify the source with an authorized account"
+      }
+    },
+    {
+      "id": "fortinet-fortigate-administrator-course-description",
+      "url": "https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-administrator",
+      "checked_at": "2026-09-29T17:21:10.947649+00:00",
+      "health": {
+        "id": "fortinet-fortigate-administrator-course-description",
+        "url": "https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-administrator",
+        "checked_at": "2026-09-29T17:21:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-administrator",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "FortiGate Administrator | Training Institute",
+        "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-administrator",
+        "duration_signals": [
+          "10 hours",
+          "12 hours",
+          "22 hours"
+        ],
+        "signal_fingerprint": "3f9fe48feba2d495955b25387134efaa7f8cbd2c11e5ac093ca7d1c539ad1a73",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-administrator",
+      "sha256": "8eaa8c30ff634ccd8db0a60352cdebbf46ef0261da9823de600b94be532d8d08",
+      "text_characters": 4392
+    },
+    {
+      "id": "fortinet-fortios-760-admin-guide",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide",
+      "checked_at": "2026-09-29T17:21:11.137123+00:00",
+      "health": {
+        "id": "fortinet-fortios-760-admin-guide",
+        "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide",
+        "checked_at": "2026-09-29T17:21:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/954635/getting-started",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Getting started | FortiGate / FortiOS 7.6.0 | Fortinet Document Library",
+        "canonical_url": "https://docs.fortinet.com/document/fortigate/8.0.1/administration-guide/954635/getting-started",
+        "duration_signals": [],
+        "signal_fingerprint": "ded851dacadc4a1367b919195c42c48b4d98ba326aa03450a94f4217c569094a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/954635/getting-started",
+      "sha256": "4a77f862ba535f6ee7bf47f1827713d8a6a987393f958f08c075cc407179eedf",
+      "text_characters": 46843
+    },
+    {
+      "id": "fortinet-fortios-760-cli-reference",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/cli-reference/84566/fortios-cli-reference",
+      "checked_at": "2026-09-29T17:21:11.615044+00:00",
+      "health": {
+        "id": "fortinet-fortios-760-cli-reference",
+        "url": "https://docs.fortinet.com/document/fortigate/7.6.0/cli-reference/84566/fortios-cli-reference",
+        "checked_at": "2026-09-29T17:21:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/cli-reference/84566/fortios-cli-reference",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "FortiOS CLI reference | FortiGate / FortiOS 7.6.0 | Fortinet Document Library",
+        "canonical_url": "https://docs.fortinet.com/document/fortigate/8.0.0/cli-reference/84566/fortios-cli-reference",
+        "duration_signals": [],
+        "signal_fingerprint": "4f7b0c6d0663526d57870544cc0461f90d8616f86559aebefd4237a65bf43eef",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/cli-reference/84566/fortios-cli-reference",
+      "sha256": "a716a4559004cc30373dcd38837c30568ff43098c6d47012e81d18324b584971",
+      "text_characters": 21342
+    },
+    {
+      "id": "fortinet-fortios-760-new-features",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/new-features",
+      "checked_at": "2026-09-29T17:21:12.453553+00:00",
+      "health": {
+        "id": "fortinet-fortios-760-new-features",
+        "url": "https://docs.fortinet.com/document/fortigate/7.6.0/new-features",
+        "checked_at": "2026-09-29T17:21:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/new-features/770045/overview",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Overview | FortiGate / FortiOS 7.6.0 | Fortinet Document Library",
+        "canonical_url": "https://docs.fortinet.com/document/fortigate/8.0.0/new-features/770045/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "5f0d2007531fbd4753f928989d0966098a08ccc781afdc9f04f027deb38cd53d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/new-features/770045/overview",
+      "sha256": "dbca316936cb3499729b0e36995e4d1f9757180b9167a799ab09558d85207e36",
+      "text_characters": 17749
+    },
+    {
+      "id": "fortinet-training-policies",
+      "url": "https://helpdesk.training.fortinet.com/support/solutions/73000238852",
+      "checked_at": "2026-09-29T17:21:12.915113+00:00",
+      "health": {
+        "id": "fortinet-training-policies",
+        "url": "https://helpdesk.training.fortinet.com/support/solutions/73000238852",
+        "checked_at": "2026-09-29T17:21:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://helpdesk.training.fortinet.com/support/solutions/73000238852",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Fortinet Training Institute Policies",
+        "canonical_url": "https://helpdesk.training.fortinet.com/support/solutions/73000238852",
+        "duration_signals": [],
+        "signal_fingerprint": "96e92f69f88fc225dae924d99c9e62bce772a13edef392a35cffeb4d4177bdcc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://helpdesk.training.fortinet.com/support/solutions/73000238852",
+      "sha256": "5b37cbfd5788b7501dbaa0eace6abedf2a1363679eca6461d18199f879f80887",
+      "text_characters": 1116
+    },
+    {
+      "id": "youtube-fortinet",
+      "url": "https://www.youtube.com/@Fortinet",
+      "checked_at": "2026-09-29T17:21:13.406031+00:00",
+      "health": {
+        "id": "youtube-fortinet",
+        "url": "https://www.youtube.com/@Fortinet",
+        "checked_at": "2026-09-29T17:21:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@Fortinet",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Fortinet",
+        "canonical_url": "https://www.youtube.com/channel/UCJHo4AuVomwMRzgkA5DQEOA",
+        "duration_signals": [],
+        "signal_fingerprint": "1ca6de7ed6f10e2ade857dd32efd2f10c0873bb35d7df3628f0ee35807e77dea",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@Fortinet",
+      "sha256": "4d7d28365f6a8882c9605d707ecc317973fbfb6bcc38250c6cfae080edb70c39",
+      "text_characters": 171
+    },
+    {
+      "id": "pluralsight-fortinet-big-picture",
+      "url": "https://www.pluralsight.com/courses/fortinet-big-picture",
+      "checked_at": "2026-09-29T17:21:13.588318+00:00",
+      "health": {
+        "id": "pluralsight-fortinet-big-picture",
+        "url": "https://www.pluralsight.com/courses/fortinet-big-picture",
+        "checked_at": "2026-09-29T17:21:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/courses/fortinet-big-picture",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Fortinet: The Big Picture",
+        "canonical_url": "https://www.pluralsight.com/courses/fortinet-big-picture",
+        "duration_signals": [],
+        "signal_fingerprint": "93aafab9c3d2654831eaeaa187afb2d2ac312f3bb5598cfd35588688a9aed401",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/courses/fortinet-big-picture",
+      "sha256": "8800bf0a8355a1876d4d300d9643a7765d9eddf756e503b31c8d4807ec6361b3",
+      "text_characters": 5097
+    },
+    {
+      "id": "pluralsight-network-security-firewalls-path",
+      "url": "https://www.pluralsight.com/paths/network-security-and-firewalls",
+      "checked_at": "2026-09-29T17:21:14.297975+00:00",
+      "health": {
+        "id": "pluralsight-network-security-firewalls-path",
+        "url": "https://www.pluralsight.com/paths/network-security-and-firewalls",
+        "checked_at": "2026-09-29T17:21:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/network-security-and-firewalls",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Network Security and Firewalls",
+        "canonical_url": "https://www.pluralsight.com/paths/network-security-and-firewalls",
+        "duration_signals": [
+          "10 Hours",
+          "10 minutes"
+        ],
+        "signal_fingerprint": "26516f52beacbe8e0c65d71a4b8ae74c82de559ef2e053f8fdae4e364404c70a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/network-security-and-firewalls",
+      "sha256": "4170ab876895ee2e1f863298537eb71d9ad4211d32347b7df0bddc577ec6e2bf",
+      "text_characters": 3567
+    },
+    {
+      "id": "cbtnuggets-fortinet-playlist",
+      "url": "https://www.cbtnuggets.com/certification-playlist/fortinet",
+      "checked_at": "2026-09-29T17:21:14.705271+00:00",
+      "health": {
+        "id": "cbtnuggets-fortinet-playlist",
+        "url": "https://www.cbtnuggets.com/certification-playlist/fortinet",
+        "checked_at": "2026-09-29T17:21:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cbtnuggets.com/certification-playlist/fortinet",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Fortinet Certification Courses | CBT Nuggetssearch-icon",
+        "canonical_url": "https://www.cbtnuggets.com/certification-playlist/fortinet",
+        "duration_signals": [],
+        "signal_fingerprint": "d05c7bb4d489bc40a54ae60b401df92aa034d48dc9d016be38970b3cefc2cd69",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cbtnuggets.com/certification-playlist/fortinet",
+      "sha256": "2fa11ecb3674cb835374da307032f165d6b0e5deb9f4883fc617aa6b862f63c0",
+      "text_characters": 1694
+    },
+    {
+      "id": "udemy-fortigate-76-admin-part-one",
+      "url": "https://www.udemy.com/course/fcp-fortigate-76-administrator-training-part-12/",
+      "checked_at": "2026-09-29T17:21:15.097043+00:00",
+      "health": {
+        "id": "udemy-fortigate-76-admin-part-one",
+        "url": "https://www.udemy.com/course/fcp-fortigate-76-administrator-training-part-12/",
+        "checked_at": "2026-09-29T17:21:15+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/fcp-fortigate-76-administrator-training-part-12/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "oreilly-getting-started-fortigate",
+      "url": "https://www.oreilly.com/library/view/getting-started-with/9781782178200/",
+      "checked_at": "2026-09-29T17:21:15.118962+00:00",
+      "health": {
+        "id": "oreilly-getting-started-fortigate",
+        "url": "https://www.oreilly.com/library/view/getting-started-with/9781782178200/",
+        "checked_at": "2026-09-29T17:21:15+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/getting-started-with/9781782178200/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "fortios-routing",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/139692/routing-concepts",
+      "checked_at": "2026-09-29T17:30:21.667784+00:00",
+      "health": {
+        "id": "fortios-routing",
+        "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/139692/routing-concepts",
+        "checked_at": "2026-09-29T17:30:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/139692/routing-concepts",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Routing concepts | FortiGate / FortiOS 7.6.0 | Fortinet Document Library",
+        "canonical_url": "https://docs.fortinet.com/document/fortigate/8.0.1/administration-guide/139692/routing-concepts",
+        "duration_signals": [],
+        "signal_fingerprint": "3e0ea948876b980b2fb9d071221d2a66bd7cd9d222b0ef02a24d2cb82fb6846c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/139692/routing-concepts",
+      "sha256": "94435d68ec3e2ed0e9fa75caaba468bb2d56d7122a78e81e2a5e7104a6510512",
+      "text_characters": 72599
+    },
+    {
+      "id": "fortios-debug-flow",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/38044/using-the-debug-flow-tool",
+      "checked_at": "2026-09-29T17:30:21.668970+00:00",
+      "health": {
+        "id": "fortios-debug-flow",
+        "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/38044/using-the-debug-flow-tool",
+        "checked_at": "2026-09-29T17:30:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/38044/using-the-debug-flow-tool",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Using the debug flow tool | FortiGate / FortiOS 7.6.0 | Fortinet Document Library",
+        "canonical_url": "https://docs.fortinet.com/document/fortigate/8.0.1/administration-guide/38044/using-the-debug-flow-tool",
+        "duration_signals": [],
+        "signal_fingerprint": "cb1128fbf80887bf5a7efc8e7f45573f4957c2fbf8f52b79fdf54f57a31308ab",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/38044/using-the-debug-flow-tool",
+      "sha256": "800936c65de81971fb70dc4196035926b7839eab781e6cb920ce8c58c11e1642",
+      "text_characters": 46502
+    },
+    {
+      "id": "fortios-sla",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/867342/performance-sla-overview",
+      "checked_at": "2026-09-29T17:30:21.669335+00:00",
+      "health": {
+        "id": "fortios-sla",
+        "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/867342/performance-sla-overview",
+        "checked_at": "2026-09-29T17:30:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/867342/performance-sla-overview",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Performance SLA overview | FortiGate / FortiOS 7.6.0 | Fortinet Document Library",
+        "canonical_url": "https://docs.fortinet.com/document/fortigate/8.0.1/administration-guide/867342/performance-sla-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "3c7c59d50c534d8ab05a04ec022a5ec4832a5883a2d3bbb44278a8acdb37d084",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/867342/performance-sla-overview",
+      "sha256": "9ed63930a7d6d25ddfd7986c81804a4f74c61a46bf759653ad118825289bbb18",
+      "text_characters": 55332
+    },
+    {
+      "id": "fortios-central-snat",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/421028/central-snat",
+      "checked_at": "2026-09-29T17:30:23.732985+00:00",
+      "health": {
+        "id": "fortios-central-snat",
+        "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/421028/central-snat",
+        "checked_at": "2026-09-29T17:30:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/421028/central-snat",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Central SNAT | FortiGate / FortiOS 7.6.0 | Fortinet Document Library",
+        "canonical_url": "https://docs.fortinet.com/document/fortigate/8.0.1/administration-guide/421028/central-snat",
+        "duration_signals": [],
+        "signal_fingerprint": "815c52cf29b2bbe2e6f8ef2f7b4b7b3d8b67c1f9f397cfd615a5b96bb4aab098",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/421028/central-snat",
+      "sha256": "63e602d83a3792196e06f23a1b978665a0681c980eb4f279dc23566480e615c9",
+      "text_characters": 67438
+    },
+    {
+      "id": "fortios-static-vip",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/510402/static-virtual-ips",
+      "checked_at": "2026-09-29T17:30:25.811313+00:00",
+      "health": {
+        "id": "fortios-static-vip",
+        "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/510402/static-virtual-ips",
+        "checked_at": "2026-09-29T17:30:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/510402/static-virtual-ips",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Static virtual IPs | FortiGate / FortiOS 7.6.0 | Fortinet Document Library",
+        "canonical_url": "https://docs.fortinet.com/document/fortigate/8.0.1/administration-guide/510402/static-virtual-ips",
+        "duration_signals": [],
+        "signal_fingerprint": "c735c7e94720d70386ef077d7eb388431e5493a3009e2e0ca4b3693158f2b730",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/510402/static-virtual-ips",
+      "sha256": "f62c32985fa763b63a81e278b16904d379e7fd06553d5f23ccfe531c0cd9dc7b",
+      "text_characters": 47585
+    },
+    {
+      "id": "fortios-inspection-modes",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/721410/inspection-modes",
+      "checked_at": "2026-09-29T17:30:27.522954+00:00",
+      "health": {
+        "id": "fortios-inspection-modes",
+        "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/721410/inspection-modes",
+        "checked_at": "2026-09-29T17:30:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/721410/inspection-modes",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Inspection modes | FortiGate / FortiOS 7.6.0 | Fortinet Document Library",
+        "canonical_url": "https://docs.fortinet.com/document/fortigate/8.0.1/administration-guide/721410/inspection-modes",
+        "duration_signals": [],
+        "signal_fingerprint": "96f57f56c58e4fb36e71993204b47f9b09f4b5e197e5538e8d262821f5e53d71",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/721410/inspection-modes",
+      "sha256": "ed41d77d3309377aa5d084a8aba16856942ece624cf7613182dd941ec62eec7a",
+      "text_characters": 45696
+    },
+    {
+      "id": "fortios-ipsec",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/762500/general-ipsec-vpn-configuration",
+      "checked_at": "2026-09-29T17:30:27.847230+00:00",
+      "health": {
+        "id": "fortios-ipsec",
+        "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/762500/general-ipsec-vpn-configuration",
+        "checked_at": "2026-09-29T17:30:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/762500/general-ipsec-vpn-configuration",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "General IPsec VPN configuration | FortiGate / FortiOS 7.6.0 | Fortinet Document Library",
+        "canonical_url": "https://docs.fortinet.com/document/fortigate/8.0.1/administration-guide/762500/general-ipsec-vpn-configuration",
+        "duration_signals": [],
+        "signal_fingerprint": "3f2425097ab6cd3d34247a69ebe2c73abe62e0e059f209592e5a04d6baf33ac3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/762500/general-ipsec-vpn-configuration",
+      "sha256": "a05261be3e9efb0606893b59a6b2178d7f4c36b490dc0785cef096779e80b0e4",
+      "text_characters": 45324
+    },
+    {
+      "id": "fortios-session-pickup",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/955521/session-pickup",
+      "checked_at": "2026-09-29T17:30:28.815645+00:00",
+      "health": {
+        "id": "fortios-session-pickup",
+        "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/955521/session-pickup",
+        "checked_at": "2026-09-29T17:30:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/955521/session-pickup",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Session pickup | FortiGate / FortiOS 7.6.0 | Fortinet Document Library",
+        "canonical_url": "https://docs.fortinet.com/document/fortigate/8.0.1/administration-guide/955521/session-pickup",
+        "duration_signals": [
+          "10 minutes",
+          "2 minutes"
+        ],
+        "signal_fingerprint": "c9118b7778660e9e48a28705e9736bcbd3f81cf07cd314ea5b425ff51a849f0c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/955521/session-pickup",
+      "sha256": "e39372da095073dbd19bf9f5c5dec97b2fd14c6ac70acb22f86516a04516e175",
+      "text_characters": 48863
+    },
+    {
+      "id": "fortios-conserve",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/194558/conserve-mode",
+      "checked_at": "2026-09-29T17:30:28.997418+00:00",
+      "health": {
+        "id": "fortios-conserve",
+        "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/194558/conserve-mode",
+        "checked_at": "2026-09-29T17:30:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/194558/conserve-mode",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Conserve mode | FortiGate / FortiOS 7.6.0 | Fortinet Document Library",
+        "canonical_url": "https://docs.fortinet.com/document/fortigate/8.0.1/administration-guide/194558/conserve-mode",
+        "duration_signals": [],
+        "signal_fingerprint": "c96c294fc2d665b20ff009768000a5a044e863f947966ac47be732d5e7b8075c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/194558/conserve-mode",
+      "sha256": "5453315a754d6904a54eb05e7d00f51bd6d12da607e444c7450703b8d26ca2f4",
+      "text_characters": 49519
+    },
+    {
+      "id": "fortios-certificate-inspection",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/505842/certificate-inspection",
+      "checked_at": "2026-09-29T17:30:29.953012+00:00",
+      "health": {
+        "id": "fortios-certificate-inspection",
+        "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/505842/certificate-inspection",
+        "checked_at": "2026-09-29T17:30:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/505842/certificate-inspection",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Certificate inspection | FortiGate / FortiOS 7.6.0 | Fortinet Document Library",
+        "canonical_url": "https://docs.fortinet.com/document/fortigate/8.0.1/administration-guide/505842/certificate-inspection",
+        "duration_signals": [],
+        "signal_fingerprint": "e437482eb1bd21eacaead7864cf4b0c4de058a0836e9b7601af142f8e79e32a7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/505842/certificate-inspection",
+      "sha256": "0265220f9f760350fd63c3075f75e852edccd06e62050f2c0a9e3d26ffcc5bfc",
+      "text_characters": 47699
+    },
+    {
+      "id": "fortios-deep-inspection",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/122078/deep-inspection",
+      "checked_at": "2026-09-29T17:30:30.059323+00:00",
+      "health": {
+        "id": "fortios-deep-inspection",
+        "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/122078/deep-inspection",
+        "checked_at": "2026-09-29T17:30:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/122078/deep-inspection",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Deep inspection | FortiGate / FortiOS 7.6.0 | Fortinet Document Library",
+        "canonical_url": "https://docs.fortinet.com/document/fortigate/8.0.1/administration-guide/122078/deep-inspection",
+        "duration_signals": [],
+        "signal_fingerprint": "3fc3fd8124d0f59ea7df7b44950ca13394cf2e8ed89d76420681d77cbc013d66",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/122078/deep-inspection",
+      "sha256": "4368db23149295bb3ad78acfab961af8bc45a68e446bbcc77f8b7f3fea73eb1d",
+      "text_characters": 50389
+    },
+    {
+      "id": "fortios-fsso",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/450337/fsso",
+      "checked_at": "2026-09-29T17:30:30.891830+00:00",
+      "health": {
+        "id": "fortios-fsso",
+        "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/450337/fsso",
+        "checked_at": "2026-09-29T17:30:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/450337/fsso",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "FSSO | FortiGate / FortiOS 7.6.0 | Fortinet Document Library",
+        "canonical_url": "https://docs.fortinet.com/document/fortigate/8.0.1/administration-guide/450337/fsso",
+        "duration_signals": [],
+        "signal_fingerprint": "bc386120fa72a38a9720b37b6e0fead235606dc2ca01017e7a37f3d70be5f1d6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/450337/fsso",
+      "sha256": "757e4ddee3bdf3a0d1822620d328ba9f0132db01df268586b377d9037c2408c7",
+      "text_characters": 50644
+    },
+    {
+      "id": "fortios-policy-priority",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/best-practices/862226/policies",
+      "checked_at": "2026-09-29T17:30:31.051625+00:00",
+      "health": {
+        "id": "fortios-policy-priority",
+        "url": "https://docs.fortinet.com/document/fortigate/7.6.0/best-practices/862226/policies",
+        "checked_at": "2026-09-29T17:30:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/best-practices/862226/policies",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Policies | FortiGate / FortiOS 7.6.0 | Fortinet Document Library",
+        "canonical_url": "https://docs.fortinet.com/document/fortigate/8.0.0/best-practices/862226/policies",
+        "duration_signals": [],
+        "signal_fingerprint": "8bcffcc52b57d40796e5e298230fdab728a331e75e9014c19ffea9afab71636f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/best-practices/862226/policies",
+      "sha256": "1784434b2d9f4b667ee6557a2bff8d4da5d11b7d85a2c232b4a75e0bf666c5be",
+      "text_characters": 5520
+    },
+    {
+      "id": "fortinet-nse-transition-2026",
+      "url": "https://helpdesk.training.fortinet.com/support/solutions/articles/73000665774-what-will-happen-to-my-existing-certifications-and-which-new-certification-will-i-receive-on-july-15",
+      "checked_at": "2026-09-29T17:30:32.009213+00:00",
+      "health": {
+        "id": "fortinet-nse-transition-2026",
+        "url": "https://helpdesk.training.fortinet.com/support/solutions/articles/73000665774-what-will-happen-to-my-existing-certifications-and-which-new-certification-will-i-receive-on-july-15",
+        "checked_at": "2026-09-29T17:30:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://helpdesk.training.fortinet.com/support/solutions/articles/73000665774-what-will-happen-to-my-existing-certifications-and-which-new-certification-will-i-receive-on-july-15",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "What will happen to my existing certifications, and which new certification will I receive on July 15, 2026?",
+        "canonical_url": "https://helpdesk.training.fortinet.com/support/solutions/articles/73000665774-what-will-happen-to-my-existing-certifications-and-which-new-certification-will-i-receive-on-july-15",
+        "duration_signals": [],
+        "signal_fingerprint": "1a1d55f6f96364bb8303576c6daca2ff9ff9c551d49ca910b994161854c38b56",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://helpdesk.training.fortinet.com/support/solutions/articles/73000665774-what-will-happen-to-my-existing-certifications-and-which-new-certification-will-i-receive-on-july-15",
+      "sha256": "4c95f372b3dc22073a75432ee88b667b3d5cc25a13f58e296738eb740d2a04b6",
+      "text_characters": 3805
+    },
+    {
+      "id": "fortinet-recert-assessment",
+      "url": "https://helpdesk.training.fortinet.com/support/solutions/articles/73000671901",
+      "checked_at": "2026-09-29T17:30:32.117858+00:00",
+      "health": {
+        "id": "fortinet-recert-assessment",
+        "url": "https://helpdesk.training.fortinet.com/support/solutions/articles/73000671901",
+        "checked_at": "2026-09-29T17:30:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://helpdesk.training.fortinet.com/support/solutions/articles/73000671901",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "How do I know if I am eligible for the online recertification assessment and how can I access it?",
+        "canonical_url": "https://helpdesk.training.fortinet.com/support/solutions/articles/73000671901-how-do-i-know-if-i-am-eligible-for-the-online-recertification-assessment-and-how-can-i-access-it-",
+        "duration_signals": [],
+        "signal_fingerprint": "dd10d0a36cb874badf76325b2a88a6673dbcff1f03dbfd3b254277dcd5779695",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://helpdesk.training.fortinet.com/support/solutions/articles/73000671901",
+      "sha256": "4ec64223190733eac84631cb47fed24ea56a0c07a12bb325a8c97036a45d7f09",
+      "text_characters": 3984
+    },
+    {
+      "id": "fortios-eight-announcement",
+      "url": "https://www.fortinet.com/blog/security-architecture/fortios-8-redefining-secure-networking-in-the-ai-and-quantum-era",
+      "checked_at": "2026-09-29T17:30:32.628141+00:00",
+      "health": {
+        "id": "fortios-eight-announcement",
+        "url": "https://www.fortinet.com/blog/security-architecture/fortios-8-redefining-secure-networking-in-the-ai-and-quantum-era",
+        "checked_at": "2026-09-29T17:30:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.fortinet.com/blog/security-architecture/fortios-8-redefining-secure-networking-in-the-ai-and-quantum-era",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "FortiOS 8.0: Redefining Secure Networking in the AI and Quantum Era | Fortinet Blog",
+        "canonical_url": "https://www.fortinet.com/blog/security-architecture/fortios-8-redefining-secure-networking-in-the-ai-and-quantum-era",
+        "duration_signals": [],
+        "signal_fingerprint": "644f0427947e1f0a6ad328a9b8c574f58f19c808a6bf8b9c9bf5c2aeade5de5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.fortinet.com/blog/security-architecture/fortios-8-redefining-secure-networking-in-the-ai-and-quantum-era",
+      "sha256": "800a1c10f0112a573603bc10ca8c2d4c55d846a33aeb2206ff8b55955bc1014d",
+      "text_characters": 6682
+    },
+    {
+      "id": "fortisase-admin",
+      "url": "https://docs.fortinet.com/document/fortisase/latest/mature-administration-guide",
+      "checked_at": "2026-09-29T17:30:32.635235+00:00",
+      "health": {
+        "id": "fortisase-admin",
+        "url": "https://docs.fortinet.com/document/fortisase/latest/mature-administration-guide",
+        "checked_at": "2026-09-29T17:30:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.fortinet.com/document/fortisase/7.2.0/administration-guide/756835/introduction",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Introduction | FortiSASE 7.2.0 | Fortinet Document Library",
+        "canonical_url": "https://docs.fortinet.com/document/fortisase/7.4.0/administration-guide/756835/introduction",
+        "duration_signals": [],
+        "signal_fingerprint": "6dc34b399ec259ecea6c4ea6afb80c659d5bc8dc25e1217a8824a5382b965c2d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.fortinet.com/document/fortisase/7.2.0/administration-guide/756835/introduction",
+      "sha256": "ff892a656586c830cd898e96464a7393a966015ae86aae435a27124d1b6a7ed6",
+      "text_characters": 14951
+    },
+    {
+      "id": "fortigate-cnf-admin",
+      "url": "https://docs.fortinet.com/document/fortigate-cnf/latest/administration-guide",
+      "checked_at": "2026-09-29T17:30:32.887605+00:00",
+      "health": {
+        "id": "fortigate-cnf-admin",
+        "url": "https://docs.fortinet.com/document/fortigate-cnf/latest/administration-guide",
+        "checked_at": "2026-09-29T17:30:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.fortinet.com/document/fortigate-cnf/latest/administration-guide/239022/introduction",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Introduction | FortiGate CNF 25.3.a | Fortinet Document Library",
+        "canonical_url": "https://docs.fortinet.com/document/fortigate-cnf/latest/administration-guide/239022/introduction",
+        "duration_signals": [],
+        "signal_fingerprint": "1d10cb6744ebf558f03833bd73e2b6aa550380900b8c2e010743f572ffde9cfc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.fortinet.com/document/fortigate-cnf/latest/administration-guide/239022/introduction",
+      "sha256": "bdc1a5a6263812c8f60896257d16515a8adb9e55cfdfd660e172d7791899bccb",
+      "text_characters": 5083
+    },
+    {
+      "id": "fortigate-aws-vm",
+      "url": "https://docs.fortinet.com/document/fortigate-public-cloud/7.6.0/aws-administration-guide/685891/about-fortigate-vm-for-aws",
+      "checked_at": "2026-09-29T17:30:33.324955+00:00",
+      "health": {
+        "id": "fortigate-aws-vm",
+        "url": "https://docs.fortinet.com/document/fortigate-public-cloud/7.6.0/aws-administration-guide/685891/about-fortigate-vm-for-aws",
+        "checked_at": "2026-09-29T17:30:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.fortinet.com/document/fortigate-public-cloud/7.6.0/aws-administration-guide/685891/about-fortigate-vm-for-aws",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "About FortiGate-VM for AWS | FortiGate Public Cloud 7.6.0 | Fortinet Document Library",
+        "canonical_url": "https://docs.fortinet.com/document/fortigate-public-cloud/8.0.0/aws-administration-guide/685891/about-fortigate-vm-for-aws",
+        "duration_signals": [],
+        "signal_fingerprint": "fc9029d2033dda4950f856cbefc2b32cd3073591b73e6eda6634a2252b7d57b7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.fortinet.com/document/fortigate-public-cloud/7.6.0/aws-administration-guide/685891/about-fortigate-vm-for-aws",
+      "sha256": "6c4d91bd9b6cbad306a3feddf082b863cbd66a06d54b498a041e85ef58796dd0",
+      "text_characters": 8080
+    },
+    {
+      "id": "fortios-dhcp",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/783526/dhcp-servers-and-relays",
+      "checked_at": "2026-09-29T17:34:29.138007+00:00",
+      "health": {
+        "id": "fortios-dhcp",
+        "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/783526/dhcp-servers-and-relays",
+        "checked_at": "2026-09-29T17:34:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/783526/dhcp-servers-and-relays",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "DHCP servers and relays | FortiGate / FortiOS 7.6.0 | Fortinet Document Library",
+        "canonical_url": "https://docs.fortinet.com/document/fortigate/8.0.1/administration-guide/783526/dhcp-servers-and-relays",
+        "duration_signals": [],
+        "signal_fingerprint": "5453333e7d0e96afe6921470960d539b31376c07dae2b2ed92bb42d3b5debe2c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/783526/dhcp-servers-and-relays",
+      "sha256": "0d8fa505013ed5ea4a144e9357d7ecaf911da5e86ab13d34752d1745e97ac007",
+      "text_characters": 46841
+    },
+    {
+      "id": "fortios-phase-two",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/604285/phase-2-configuration",
+      "checked_at": "2026-09-29T17:34:29.138782+00:00",
+      "health": {
+        "id": "fortios-phase-two",
+        "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/604285/phase-2-configuration",
+        "checked_at": "2026-09-29T17:34:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/604285/phase-2-configuration",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Phase 2 configuration | FortiGate / FortiOS 7.6.0 | Fortinet Document Library",
+        "canonical_url": "https://docs.fortinet.com/document/fortigate/8.0.1/administration-guide/604285/phase-2-configuration",
+        "duration_signals": [],
+        "signal_fingerprint": "9c6552a20dcbc176837669d3375a93119e643c272156b11e07cf9357f79f4950",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/604285/phase-2-configuration",
+      "sha256": "90fac4bd8fc45127c0f4006641a02583976c11c237b4b2d3cb647c60a21f7842",
+      "text_characters": 55499
+    },
+    {
+      "id": "ietf-ikev2-rfc7296",
+      "url": "https://www.rfc-editor.org/rfc/rfc7296.html",
+      "checked_at": "2026-09-29T17:36:23.604505+00:00",
+      "health": {
+        "id": "ietf-ikev2-rfc7296",
+        "url": "https://www.rfc-editor.org/rfc/rfc7296.html",
+        "checked_at": "2026-09-29T17:36:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc7296.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc7296.html",
+        "duration_signals": [],
+        "signal_fingerprint": "ab4508406e8290efde8cf6ff9e65226b424b18c8fe303de0fa26828cb4bb0753",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc7296.html",
+      "sha256": "8daf97c65129ad8ce8ea6d53ca0b41d45ac039b630dd59ef89a5de45418c837b",
+      "text_characters": 304936
+    },
+    {
+      "id": "ietf-esp-rfc4303",
+      "url": "https://www.rfc-editor.org/rfc/rfc4303.html",
+      "checked_at": "2026-09-29T17:36:23.605254+00:00",
+      "health": {
+        "id": "ietf-esp-rfc4303",
+        "url": "https://www.rfc-editor.org/rfc/rfc4303.html",
+        "checked_at": "2026-09-29T17:36:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc4303.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc4303.html",
+        "duration_signals": [],
+        "signal_fingerprint": "075834d2c5a52bb8871cd6b81b50de213865c480dfa5fc946faf3c7d252e4adc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc4303.html",
+      "sha256": "257f9b4dbc1ceb17391adef7901cb1a2183ca16d926dc93c3d3765cdae5b14f1",
+      "text_characters": 97506
+    }
+  ],
+  "added_source_ids": [
+    "ietf-ikev2-rfc7296",
+    "ietf-esp-rfc4303",
+    "fortios-dhcp",
+    "fortios-phase-two",
+    "fortios-routing",
+    "fortios-debug-flow",
+    "fortios-sla",
+    "fortios-central-snat",
+    "fortios-static-vip",
+    "fortios-inspection-modes",
+    "fortios-ipsec",
+    "fortios-session-pickup",
+    "fortios-conserve",
+    "fortios-certificate-inspection",
+    "fortios-deep-inspection",
+    "fortios-fsso",
+    "fortios-policy-priority",
+    "fortinet-nse-transition-2026",
+    "fortinet-recert-assessment",
+    "fortios-eight-announcement",
+    "fortisase-admin",
+    "fortigate-cnf-admin",
+    "fortigate-aws-vm"
+  ],
+  "findings": [
+    {
+      "id": "nse4fortios-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Mixed-version monitoring missed the announced successor",
+      "url": "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Available 7.6 coexists with visible 8.0 Coming Soon. Old logic missed inline status and the undated successor.",
+      "recommendation": "Capture inline/separate statuses and the versioned announcement. Regression check excludes HTML comments; 7.6 remains the active baseline.",
+      "disposition": "applied",
+      "source_id": "fortinet-nse4-fortios-76-exam",
+      "resolution": "Capture inline/separate statuses and the versioned announcement. Regression check excludes HTML comments; 7.6 remains the active baseline."
+    },
+    {
+      "id": "nse4fortios-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Checklist and status retained the old exam time",
+      "url": "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The guide header used 100 minutes, but check 38 and saved status retained 80–90. Only five objective headings changed formatting.",
+      "recommendation": "Align the checklist and accepted extraction; archive exact old bytes and historical review/audit references.",
+      "disposition": "applied",
+      "source_id": "fortinet-nse4-fortios-76-exam",
+      "resolution": "Align the checklist and accepted extraction; archive exact old bytes and historical review/audit references."
+    },
+    {
+      "id": "nse4fortios-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "First-match teaching omitted VIP policy priority",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/best-practices/862226/policies",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The official 7.6 best-practices page describes VIP priority and deny-policy match-vip behavior.",
+      "recommendation": "Teach candidate priority before order and add an original negative case; inspect actual existing deny settings.",
+      "disposition": "applied",
+      "source_id": "fortios-policy-priority",
+      "resolution": "Teach candidate priority before order and add an original negative case; inspect actual existing deny settings."
+    },
+    {
+      "id": "nse4fortios-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Out-of-order ESP is not synonymous with replay",
+      "url": "https://www.rfc-editor.org/rfc/rfc4303.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Vendor phase 2 prose says out-of-order packets are discarded. RFC 4303 section 3.4.3 describes a receive window and integrity gating.",
+      "recommendation": "Distinguish reordered traffic, duplicate/old sequences and verified window advancement. Installed settings remain unverified.",
+      "disposition": "applied",
+      "source_id": "ietf-esp-rfc4303",
+      "resolution": "Distinguish reordered traffic, duplicate/old sequences and verified window advancement. Installed settings remain unverified."
+    },
+    {
+      "id": "nse4fortios-deep-5",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Successor timing and booking details remain unknown",
+      "url": "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NSE-4-FORTIOS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The visible 8.0 entry has no launch date or published detailed contract; no authenticated booking was checked.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "fortios-eight-announcement",
+      "review": "Complete April 6, 2026 article by Baksheesh Singh Ghuman read. AI/quantum product context is separate from exam availability. Superiority claims and FIPS 204/205 hybrid-key-exchange wording were not adopted as verified requirements. No implementation audit."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 41,
+      "python_blocks_executed": 1,
+      "python_version": "3.13.14",
+      "public_example_sha256": "5c7f6fa88a3a064345957cca4e1f22c751d13594084ef0e51f47c677d70ea475",
+      "results": {
+        "passed": 41,
+        "checks": [
+          "specific prefix beats default",
+          "other destination uses default",
+          "backup wins",
+          "discard prevents WAN fallback",
+          "missing discard leaks to default in model",
+          "equal paths are candidates, not measured traffic shares",
+          "lower numeric priority wins",
+          "no installed route",
+          "legacy deny without VIP matching loses",
+          "VIP-aware deny wins",
+          "ordinary traffic still reaches earlier deny",
+          "DNAT changes destination and port",
+          "wrong port is not this mapping",
+          "optional SNAT changes source",
+          "DNAT alone retains client address",
+          "all synthetic thresholds met",
+          "latency failure",
+          "jitter failure",
+          "loss failure",
+          "chosen inclusive boundary",
+          "one live probe target can hide other outage",
+          "both probe targets unavailable",
+          "interrupted failure run resets",
+          "three chosen failures cause transition",
+          "two chosen successes restore",
+          "normal path is not proof of clean content",
+          "proxy availability can mean bypass",
+          "proxy off blocks chosen new session",
+          "flow fail-closed model",
+          "flow fail-open model",
+          "TCP without pickup",
+          "TCP synchronization candidate",
+          "UDP needs additional setting",
+          "QUIC transport can be synchronized",
+          "connectionless alone insufficient",
+          "ICMP candidate",
+          "all chosen leases are hosts",
+          "gateway excluded by range",
+          "11 addresses remain",
+          "broadcast absent",
+          "explicit exclusion applied"
+        ],
+        "link_trace": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          true
+        ],
+        "remaining_dhcp_addresses": [
+          "192.0.2.2",
+          "192.0.2.3",
+          "192.0.2.4",
+          "192.0.2.7",
+          "192.0.2.8",
+          "192.0.2.9",
+          "192.0.2.10",
+          "192.0.2.11",
+          "192.0.2.12",
+          "192.0.2.13",
+          "192.0.2.14"
+        ]
+      },
+      "execution_stdout": "{\n  \"passed\": 41,\n  \"checks\": [\n    \"specific prefix beats default\",\n    \"other destination uses default\",\n    \"backup wins\",\n    \"discard prevents WAN fallback\",\n    \"missing discard leaks to default in model\",\n    \"equal paths are candidates, not measured traffic shares\",\n    \"lower numeric priority wins\",\n    \"no installed route\",\n    \"legacy deny without VIP matching loses\",\n    \"VIP-aware deny wins\",\n    \"ordinary traffic still reaches earlier deny\",\n    \"DNAT changes destination and port\",\n    \"wrong port is not this mapping\",\n    \"optional SNAT changes source\",\n    \"DNAT alone retains client address\",\n    \"all synthetic thresholds met\",\n    \"latency failure\",\n    \"jitter failure\",\n    \"loss failure\",\n    \"chosen inclusive boundary\",\n    \"one live probe target can hide other outage\",\n    \"both probe targets unavailable\",\n    \"interrupted failure run resets\",\n    \"three chosen failures cause transition\",\n    \"two chosen successes restore\",\n    \"normal path is not proof of clean content\",\n    \"proxy availability can mean bypass\",\n    \"proxy off blocks chosen new session\",\n    \"flow fail-closed model\",\n    \"flow fail-open model\",\n    \"TCP without pickup\",\n    \"TCP synchronization candidate\",\n    \"UDP needs additional setting\",\n    \"QUIC transport can be synchronized\",\n    \"connectionless alone insufficient\",\n    \"ICMP candidate\",\n    \"all chosen leases are hosts\",\n    \"gateway excluded by range\",\n    \"11 addresses remain\",\n    \"broadcast absent\",\n    \"explicit exclusion applied\"\n  ],\n  \"link_trace\": [\n    true,\n    true,\n    true,\n    true,\n    true,\n    false,\n    false,\n    true\n  ],\n  \"remaining_dhcp_addresses\": [\n    \"192.0.2.2\",\n    \"192.0.2.3\",\n    \"192.0.2.4\",\n    \"192.0.2.7\",\n    \"192.0.2.8\",\n    \"192.0.2.9\",\n    \"192.0.2.10\",\n    \"192.0.2.11\",\n    \"192.0.2.12\",\n    \"192.0.2.13\",\n    \"192.0.2.14\"\n  ]\n}",
+      "execution_boundary": "Actual offline standard-library Python route/NAT/VIP, synthetic SLA counters, selected conserve/HA cases and DHCP address arithmetic. No packets, firewall, cluster, PKI, IdP, cloud, credentials, services, runtime settings or notifications changed.",
+      "model_limits": "Partial models omit dynamic routing, policy routing, RPF, actual ECMP distribution, NAT allocation/session reversal, most policy criteria, cryptography, engine/old-session behavior and real HA continuity. Chosen SLA thresholds/counters are not device defaults or measured timing. DHCP proves arithmetic, not a server."
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "FortiOS 8.0 is Coming Soon without a visible launch date or 7.6 retirement date. Hidden HTML comments are not a published contract. Actual booking, fees, personal renewal eligibility and newer assessment availability remain unverified.",
+    "The official 7.6 course, Udemy and O’Reilly returned HTTP 403. Paid interiors and sample questions were not read; YouTube was not played. Historical 7.4.1 training and older conceptual courses are not current command references.",
+    "The 41 offline Python checks cover partial models and arithmetic, not FortiGate, HA, TLS, IPsec, DHCP, cloud or identity execution. Eight proposed device activities and human review remain pending.",
+    "Reading boundaries are explicit: selected routing, SLA, SNAT and RFC sections; cloud/SASE introductions rather than full onboarding. Questionable cryptography and legacy algorithm wording were not adopted. Installed replay and feature compatibility remain unverified.",
+    "No installs, runtime, service, reboot, authentication or permission changes, paid actions or external messages. Five GitHub guides remain reserved and the notification pilot remains disabled."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 180,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Actual offline standard-library Python route/NAT/VIP, synthetic SLA counters, selected conserve/HA cases and DHCP address arithmetic. No packets, firewall, cluster, PKI, IdP, cloud, credentials, services, runtime settings or notifications changed.",
+    "passed": 41,
+    "python_blocks_executed": 1,
+    "python_version": "3.13.14",
+    "public_example_sha256": "5c7f6fa88a3a064345957cca4e1f22c751d13594084ef0e51f47c677d70ea475",
+    "results": {
+      "passed": 41,
+      "checks": [
+        "specific prefix beats default",
+        "other destination uses default",
+        "backup wins",
+        "discard prevents WAN fallback",
+        "missing discard leaks to default in model",
+        "equal paths are candidates, not measured traffic shares",
+        "lower numeric priority wins",
+        "no installed route",
+        "legacy deny without VIP matching loses",
+        "VIP-aware deny wins",
+        "ordinary traffic still reaches earlier deny",
+        "DNAT changes destination and port",
+        "wrong port is not this mapping",
+        "optional SNAT changes source",
+        "DNAT alone retains client address",
+        "all synthetic thresholds met",
+        "latency failure",
+        "jitter failure",
+        "loss failure",
+        "chosen inclusive boundary",
+        "one live probe target can hide other outage",
+        "both probe targets unavailable",
+        "interrupted failure run resets",
+        "three chosen failures cause transition",
+        "two chosen successes restore",
+        "normal path is not proof of clean content",
+        "proxy availability can mean bypass",
+        "proxy off blocks chosen new session",
+        "flow fail-closed model",
+        "flow fail-open model",
+        "TCP without pickup",
+        "TCP synchronization candidate",
+        "UDP needs additional setting",
+        "QUIC transport can be synchronized",
+        "connectionless alone insufficient",
+        "ICMP candidate",
+        "all chosen leases are hosts",
+        "gateway excluded by range",
+        "11 addresses remain",
+        "broadcast absent",
+        "explicit exclusion applied"
+      ],
+      "link_trace": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "remaining_dhcp_addresses": [
+        "192.0.2.2",
+        "192.0.2.3",
+        "192.0.2.4",
+        "192.0.2.7",
+        "192.0.2.8",
+        "192.0.2.9",
+        "192.0.2.10",
+        "192.0.2.11",
+        "192.0.2.12",
+        "192.0.2.13",
+        "192.0.2.14"
+      ]
+    },
+    "execution_stdout": "{\n  \"passed\": 41,\n  \"checks\": [\n    \"specific prefix beats default\",\n    \"other destination uses default\",\n    \"backup wins\",\n    \"discard prevents WAN fallback\",\n    \"missing discard leaks to default in model\",\n    \"equal paths are candidates, not measured traffic shares\",\n    \"lower numeric priority wins\",\n    \"no installed route\",\n    \"legacy deny without VIP matching loses\",\n    \"VIP-aware deny wins\",\n    \"ordinary traffic still reaches earlier deny\",\n    \"DNAT changes destination and port\",\n    \"wrong port is not this mapping\",\n    \"optional SNAT changes source\",\n    \"DNAT alone retains client address\",\n    \"all synthetic thresholds met\",\n    \"latency failure\",\n    \"jitter failure\",\n    \"loss failure\",\n    \"chosen inclusive boundary\",\n    \"one live probe target can hide other outage\",\n    \"both probe targets unavailable\",\n    \"interrupted failure run resets\",\n    \"three chosen failures cause transition\",\n    \"two chosen successes restore\",\n    \"normal path is not proof of clean content\",\n    \"proxy availability can mean bypass\",\n    \"proxy off blocks chosen new session\",\n    \"flow fail-closed model\",\n    \"flow fail-open model\",\n    \"TCP without pickup\",\n    \"TCP synchronization candidate\",\n    \"UDP needs additional setting\",\n    \"QUIC transport can be synchronized\",\n    \"connectionless alone insufficient\",\n    \"ICMP candidate\",\n    \"all chosen leases are hosts\",\n    \"gateway excluded by range\",\n    \"11 addresses remain\",\n    \"broadcast absent\",\n    \"explicit exclusion applied\"\n  ],\n  \"link_trace\": [\n    true,\n    true,\n    true,\n    true,\n    true,\n    false,\n    false,\n    true\n  ],\n  \"remaining_dhcp_addresses\": [\n    \"192.0.2.2\",\n    \"192.0.2.3\",\n    \"192.0.2.4\",\n    \"192.0.2.7\",\n    \"192.0.2.8\",\n    \"192.0.2.9\",\n    \"192.0.2.10\",\n    \"192.0.2.11\",\n    \"192.0.2.12\",\n    \"192.0.2.13\",\n    \"192.0.2.14\"\n  ]\n}",
+    "model_limits": "Partial models omit dynamic routing, policy routing, RPF, actual ECMP distribution, NAT allocation/session reversal, most policy criteria, cryptography, engine/old-session behavior and real HA continuity. Chosen SLA thresholds/counters are not device defaults or measured timing. DHCP proves arithmetic, not a server.",
+    "learning_catalog_consistency": "passed",
+    "unit_test_seconds": 33.115,
+    "strict_site_build_seconds": 27.38,
+    "monitor_regression": "One new test method with inline and separate status subcases; current objectives preserved and unpublished HTML comments excluded.",
+    "source_health_write": "Private finalizer used atomic in-memory upserts with semantic-equality checks to avoid repeated partial file writes."
+  },
+  "archived_prior_baselines": {
+    "objectives": {
+      "path": "data/objective-snapshots/nse-4-fortios-2026-09-02-official-objectives.txt",
+      "sha256": "1b33e766a66667a35836c8bdc2632bd72c3489d5d265e3cf4fe52452c72cfc6f"
+    },
+    "status": {
+      "path": "data/objective-snapshots/nse-4-fortios-2026-09-02-official-status.json",
+      "sha256": "70a8636a390266b7756d05f7835c7b363c59443dca4e1e8cc6b721a357b2a27e"
+    }
+  },
+  "manual_baseline_acceptance": {
+    "reviewed_on": "2026-09-29",
+    "before": {
+      "objectives": {
+        "path": "data/objective-snapshots/nse-4-fortios-2026-09-02-official-objectives.txt",
+        "sha256": "1b33e766a66667a35836c8bdc2632bd72c3489d5d265e3cf4fe52452c72cfc6f"
+      },
+      "status": {
+        "path": "data/objective-snapshots/nse-4-fortios-2026-09-02-official-status.json",
+        "sha256": "70a8636a390266b7756d05f7835c7b363c59443dca4e1e8cc6b721a357b2a27e"
+      }
+    },
+    "after": {
+      "objectives_sha256": "ee1dd533cdd57817a80a76efc3ac2e9719aa3e28b9b6603c32d1e7f14f20b29b",
+      "status_sha256": "b1338aa91dda066954ef47eb2b3c905d46d3865b19a2954b313e018ef08402ae"
+    },
+    "reason": "Only five objective headings changed formatting; task/detail text and ranges are unchanged. Status now records 100 minutes, available 7.6 and the undated 8.0 announcement. Future details inside HTML comments were excluded. The mixed-version status extractor was repaired and a fresh live check agrees with the accepted baseline.",
+    "visible_scope": {
+      "visible_8_main": "Status:\nComing Soon\nThe Fortinet NSE 4 -\nFortiOS 8.0 Administrator\nexam evaluates your knowledge and expertise with FortiGate devices.\nThis exam tests your applied knowledge of FortiGate configuration, operation, and day-to-day administration, and includes operational scenarios, configuration extracts, and troubleshooting captures.\nOnce you pass the exam, you will receive the following exam badge:\nAudience\nThe Fortinet NSE 4 -\nFortiOS 8.0 Administrator\nexam is intended for network and security professionals who are responsible for the configuration and administration of firewall solutions in an enterprise network security infrastructure.",
+      "html_comment_contains_future_details": true,
+      "adoption": "Coming Soon only; hidden future contract not adopted"
+    }
+  },
+  "source_reading_boundaries": {
+    "fortinet-nse4-fortios-76-exam": "Complete visible canonical main read. Available 7.6.0: 100 minutes, 50–55 questions, English/Japanese, 18 tasks and 89 details, unchanged domain ranges. The visible 8.0 Coming Soon entry has no date or detailed contract. A web parser exposed details inside an HTML comment; direct DOM inspection established their exclusion. Five objective headings changed formatting only. Exact prior snapshot bytes and historical references archived. Mixed-version status monitor repaired; fresh live recheck unchanged.",
+    "fortinet-nse4-certification": "Complete 3,251-character main read. Proctored pass and two-year validity; next-version exam, conditional assessment, NSE 7 or NSE 8 practical renewal routes. Active lower-level renewal, centers/OnVUE, 15-day failed-attempt wait, passed-exam restrictions and no reuse reviewed. Item-credit rules do not publish a passing percentage. No account or booking checked.",
+    "fortinet-fortios-76-administrator-course": "HTTP 403. No signed-in lessons, sample questions, labs or duration reviewed. The public blueprint establishes the official course link only.",
+    "fortinet-fortigate-administrator-course-description": "Complete 4,392-character public description read. Explicit FortiOS 7.4.1, 12 hours lecture plus 10 hours lab, with older SSL VPN/Security Fabric agenda. Not 7.6 scope or current enrollment proof. Legacy browser/Java/network instructions were not acted on; inconsistent full-day/half-day wording not normalized.",
+    "fortinet-fortios-760-admin-guide": "Getting Started main and navigation/resource entry read; not the whole manual. Separate selected articles carry detailed reading receipts. Directory versions do not announce exam cutover.",
+    "fortinet-fortios-760-cli-reference": "Complete introductory main read: command availability depends on version/model/hardware/extensions and contextual help. No full command-tree audit or CLI execution.",
+    "fortinet-fortios-760-new-features": "Complete Overview main read, not every linked feature. Version suffixes identify later 7.6 maintenance additions. Directory version metadata does not establish exam availability.",
+    "fortinet-training-policies": "Complete 1,116-character topic directory read. Individual policy bodies were not all reviewed; specific track and assessment rules were read separately.",
+    "youtube-fortinet": "171-character title/footer only; no video playback or full playlist review.",
+    "pluralsight-fortinet-big-picture": "Complete 5,097-character public main/TOC read. Leigh Bogardis, January 17, 2023, beginner, 1 hour 24 minutes. Legacy portfolio context only; no paid lessons, trial or complete current-exam coverage claim.",
+    "pluralsight-network-security-firewalls-path": "Complete 3,567-character public main read. Five courses, 10-hour headline; listed durations total 10 hours 4 minutes and courses date from 2019–2023. Conceptual supplement, no paid interiors or current-command authority.",
+    "cbtnuggets-fortinet-playlist": "Complete 1,694-character public main read. Keith Barker’s 7.6 listing has 233 videos and zero practice exams; the older NSE 4 listing has 212 videos. Total duration, paid lessons, quality and entitlement were not verified.",
+    "udemy-fortigate-76-admin-part-one": "HTTP 403. Earlier 10-hour-30-minute metadata for part 1 not reverified. Legacy FCP title does not establish current credential identity; no interior access.",
+    "oreilly-getting-started-fortigate": "HTTP 403. Historical book metadata and interior not reverified. Six to ten hours is a study estimate, not a verified publisher duration.",
+    "fortios-dhcp": "Complete 1,791-character body read: server/relay roles, matching pool/options, response routing and model-specific entry-level defaults. No lease/service execution; local address arithmetic only.",
+    "fortios-phase-two": "Complete 10,377-character body read. Parameter, selector, wizard and negotiation context used. Broad peer-selector/replay prose qualified with selected IETF sections. Questionable ChaCha algorithm/key-size wording and legacy algorithms not adopted as security guidance. No IPsec execution.",
+    "fortios-routing": "Selected sections read: default route, static setup, FQDN, routing-table explanation and initial columns, blackhole routes, RPF and asymmetry. Not the entire 28,394-character article or later database/kernel/change sections. Static model omits RPF, policy routing and dynamic metrics.",
+    "fortios-debug-flow": "Complete body read: GUI filters, start/stop, CSV and function column. Linked CLI chapter not read. No diagnostic execution or actual packet visibility claimed.",
+    "fortios-sla": "Health-check, probe-mode and protocol sections plus Server, SLA targets and Link status read. Middle extended CLI examples not fully read. Two-server failure logic, application targets and counters used; workbook thresholds are chosen values, not defaults.",
+    "fortios-central-snat": "Introduction and Central SNAT notes read before Sample configuration: ordered map after security policy, policy NAT skipped when enabled and policy-based NGFW behavior. Remaining examples not audited or executed.",
+    "fortios-static-vip": "Complete 3,036-character main read, including examples and local-address ARP side effects. Broad ALL/any example not adopted as least privilege; unused objects not removed. Linked version history not read.",
+    "fortios-inspection-modes": "Complete 1,231-character main read: flow matching versus reconstructed proxy content. Linked feature comparison not fully reviewed.",
+    "fortios-ipsec": "Complete short general configuration index read. Linked topology, phase 1 and full policy chapters not read; phase 2 reviewed separately.",
+    "fortios-session-pickup": "Complete 4,200-character main read. TCP pickup, additional UDP/ICMP/QUIC setting, multicast discussion, disabled behavior and cluster-terminated exclusion. Seamless failover is not guaranteed; the model covers eligibility only. No actual failover.",
+    "fortios-conserve": "Complete 5,078-character main read: proxy/flow fail-open settings, new-session behavior, thresholds and diagnostics. Explicit bypass descriptions qualify the introductory reassurance. Sample counters are not current measurements. No resource pressure or fail-open change.",
+    "fortios-certificate-inspection": "Complete 3,043-character main read: TLS metadata, replacement-page CA, read-only port-443 profile and custom ports. No certificate installation or browser trust change.",
+    "fortios-deep-inspection": "Complete 5,690-character main read: decryption/re-encryption, proxy port-mapping distinction, untrusted-CA warning, exceptions and version/QUIC settings. Legacy SSL choices are not recommendations. No TLS or certificate operation.",
+    "fortios-fsso": "Complete 6,002-character main read: DC, collector and terminal-server roles, polling alternatives and connectors. Listed OS/product versions do not verify current compatibility; linked release notes not read. No agents installed or identity environment used.",
+    "fortios-policy-priority": "Complete 4,319-character main read: ordinary ordering, local-in/DoS distinctions, VIP priority, deny-only match-vip and the default for new deny policies since 7.2.4. Direct HTTP 200 despite a separate web-reader 403. No policy changes.",
+    "fortinet-nse-transition-2026": "Complete 3,805-character public main read. Active FCP transition uses historical exams and preserves original issue/expiry dates. No fresh validity term assumed for all holders; personal dashboard not checked.",
+    "fortinet-recert-assessment": "Complete 3,984-character public main read. Active credential, qualifying proctored exam within two years, available higher-version assessment, dashboard eligibility and separate voucher channels. Purchase steps read only; no account or transaction.",
+    "fortios-eight-announcement": "Complete April 6, 2026 article by Baksheesh Singh Ghuman read. AI/quantum product context is separate from exam availability. Superiority claims and FIPS 204/205 hybrid-key-exchange wording were not adopted as verified requirements. No implementation audit.",
+    "fortisase-admin": "Complete 2,167-character Introduction main read from the mature guide, labeled 7.2.0. Agent, agentless and IPsec steering plus identity overview. Linked network/onboarding chapters not read; plans, regions and latest capabilities unverified.",
+    "fortigate-cnf-admin": "Complete 2,266-character Introduction main read: SaaS infrastructure, policy responsibility and advertised features. Linked onboarding/scenarios not read. No deployment or entitlement check.",
+    "fortigate-aws-vm": "Complete 2,963-character overview main read, including cloud API involvement in HA and resource costs. Deployment and instance-compatibility chapters not reviewed. No AWS account/resources used.",
+    "ietf-ikev2-rfc7296": "Selected section 2.9 from the 304,936-character public capture read through initial narrowing rules, additional subsets and the start of the separate-SA case. Not the whole RFC or later subsections. Address/port/protocol selectors and narrowing used; selectors do not replace peer authentication.",
+    "ietf-esp-rfc4303": "Selected section 3.4.3 receive-window and integrity-before-state-update passage read in the official web text. Direct 97,506-character capture also available; not the whole RFC. Reordering is distinguished from duplicate/old-sequence rejection; installed FortiOS window unverified."
+  },
+  "public_examples": [
+    {
+      "language": "python",
+      "code": "from ipaddress import ip_address, ip_network\nimport json\n\npassed = []\ndef check(name, actual, expected):\n    assert actual == expected, (name, actual, expected)\n    passed.append(name)\n\ndef route(destination, entries):\n    eligible = [r for r in entries\n                if r['up'] and ip_address(destination) in ip_network(r['prefix'])]\n    if not eligible:\n        return []\n    key = lambda r: (-ip_network(r['prefix']).prefixlen, r['distance'], r['priority'])\n    best = min(key(r) for r in eligible)\n    return sorted(r['path'] for r in eligible if key(r) == best)\n\nroutes = [\n    dict(prefix='0.0.0.0/0', distance=10, priority=1, path='wan', up=True),\n    dict(prefix='192.0.2.0/24', distance=10, priority=1, path='vpn-a', up=True),\n    dict(prefix='192.0.2.0/24', distance=20, priority=1, path='vpn-b', up=True),\n    dict(prefix='192.0.2.0/24', distance=200, priority=1, path='discard', up=True),\n]\ncheck('specific prefix beats default', route('192.0.2.17', routes), ['vpn-a'])\ncheck('other destination uses default', route('203.0.113.7', routes), ['wan'])\nroutes[1]['up'] = False\ncheck('backup wins', route('192.0.2.17', routes), ['vpn-b'])\nroutes[2]['up'] = False\ncheck('discard prevents WAN fallback', route('192.0.2.17', routes), ['discard'])\ncheck('missing discard leaks to default in model', route('192.0.2.17', routes[:3]), ['wan'])\nroutes[1]['up'] = routes[2]['up'] = True\nroutes[2]['distance'] = 10\ncheck('equal paths are candidates, not measured traffic shares', route('192.0.2.17', routes), ['vpn-a', 'vpn-b'])\nroutes[2]['priority'] = 2\ncheck('lower numeric priority wins', route('192.0.2.17', routes), ['vpn-a'])\ncheck('no installed route', route('198.51.100.5', routes[1:]), [])\n\ndef choose_rule(vip_flow, match_vip):\n    rules = [('earlier-deny', match_vip, 'deny'), ('vip-allow', True, 'allow')]\n    candidates = [r for r in rules if not vip_flow or r[1]]\n    return candidates[0][0:3:2]\n\ncheck('legacy deny without VIP matching loses', choose_rule(True, False), ('vip-allow', 'allow'))\ncheck('VIP-aware deny wins', choose_rule(True, True), ('earlier-deny', 'deny'))\ncheck('ordinary traffic still reaches earlier deny', choose_rule(False, False), ('earlier-deny', 'deny'))\n\ndef translate(flow, vip, source_ip=None):\n    src, sport, dst, dport = flow\n    mapped = vip.get((dst, dport), (dst, dport))\n    return (source_ip or src, sport, *mapped)\n\ninbound = ('198.51.100.20', 51000, '203.0.113.10', 443)\nvip = {('203.0.113.10', 443): ('192.0.2.10', 8443)}\ncheck('DNAT changes destination and port', translate(inbound, vip), ('198.51.100.20', 51000, '192.0.2.10', 8443))\ncheck('wrong port is not this mapping', translate((*inbound[:3], 80), vip), (*inbound[:3], 80))\ncheck('optional SNAT changes source', translate(inbound, vip, '192.0.2.1'), ('192.0.2.1', 51000, '192.0.2.10', 8443))\ncheck('DNAT alone retains client address', translate(inbound, vip)[0], inbound[0])\n\ndef within_sla(latency, jitter, loss):\n    return latency <= 90 and jitter <= 20 and loss <= 1\n\ncheck('all synthetic thresholds met', within_sla(50, 8, 0), True)\ncheck('latency failure', within_sla(91, 8, 0), False)\ncheck('jitter failure', within_sla(50, 21, 0), False)\ncheck('loss failure', within_sla(50, 8, 2), False)\ncheck('chosen inclusive boundary', within_sla(90, 20, 1), True)\ncheck('one live probe target can hide other outage', any([False, True]), True)\ncheck('both probe targets unavailable', any([False, False]), False)\n\ndef link_trace(samples):\n    up, failures, successes, states = True, 0, 0, []\n    for okay in samples:\n        failures = 0 if okay else failures + 1\n        successes = successes + 1 if okay else 0\n        if up and failures >= 3:\n            up = False\n        elif not up and successes >= 2:\n            up = True\n        states.append(up)\n    return states\n\ntrace = link_trace([False, False, True, False, False, False, True, True])\ncheck('interrupted failure run resets', trace[:3], [True, True, True])\ncheck('three chosen failures cause transition', trace[3:6], [True, True, False])\ncheck('two chosen successes restore', trace[6:], [False, True])\n\ndef inspection_result(conserve, mode, fail_open):\n    if not conserve:\n        return 'normal-path'\n    if mode == 'proxy':\n        return {'pass': 'bypass-proxy', 'off': 'block-new-proxy-session'}[fail_open]\n    return 'bypass-flow-scan' if fail_open else 'drop-new-flow-session'\n\ncheck('normal path is not proof of clean content', inspection_result(False, 'flow', False), 'normal-path')\ncheck('proxy availability can mean bypass', inspection_result(True, 'proxy', 'pass'), 'bypass-proxy')\ncheck('proxy off blocks chosen new session', inspection_result(True, 'proxy', 'off'), 'block-new-proxy-session')\ncheck('flow fail-closed model', inspection_result(True, 'flow', False), 'drop-new-flow-session')\ncheck('flow fail-open model', inspection_result(True, 'flow', True), 'bypass-flow-scan')\n\ndef sync_candidate(protocol, pickup, connectionless):\n    return pickup and (protocol == 'TCP' or (connectionless and protocol in {'UDP', 'ICMP'}))\n\ncheck('TCP without pickup', sync_candidate('TCP', False, False), False)\ncheck('TCP synchronization candidate', sync_candidate('TCP', True, False), True)\ncheck('UDP needs additional setting', sync_candidate('UDP', True, False), False)\ncheck('QUIC transport can be synchronized', sync_candidate('UDP', True, True), True)\ncheck('connectionless alone insufficient', sync_candidate('UDP', False, True), False)\ncheck('ICMP candidate', sync_candidate('ICMP', True, True), True)\n\nnetwork = ip_network('192.0.2.0/28')\npool = {str(ip_address(i)) for i in range(int(ip_address('192.0.2.2')), int(ip_address('192.0.2.14')) + 1)}\nexcluded = {'192.0.2.5', '192.0.2.6'}\navailable = pool - excluded\ncheck('all chosen leases are hosts', all(ip_address(a) in set(network.hosts()) for a in available), True)\ncheck('gateway excluded by range', '192.0.2.1' in available, False)\ncheck('11 addresses remain', len(available), 11)\ncheck('broadcast absent', '192.0.2.15' in available, False)\ncheck('explicit exclusion applied', '192.0.2.5' in available, False)\n\nprint(json.dumps(dict(passed=len(passed), checks=passed, link_trace=trace,\n                     remaining_dhcp_addresses=sorted(available, key=ip_address)), indent=2))\n",
+      "boundary": "Actual offline standard-library Python route/NAT/VIP, synthetic SLA counters, selected conserve/HA cases and DHCP address arithmetic. No packets, firewall, cluster, PKI, IdP, cloud, credentials, services, runtime settings or notifications changed."
+    }
+  ],
+  "task_detail_coverage": {
+    "tasks_per_domain": [
+      6,
+      4,
+      5,
+      2,
+      1
+    ],
+    "details_per_domain": [
+      34,
+      17,
+      22,
+      10,
+      6
+    ],
+    "mapping_basis": "Each of the 18 mapped entries contains its task and complete supporting detail list; 89 details are represented within those task entries.",
+    "groups": [
+      {
+        "title": "Deployment and system configuration (20–25%)",
+        "objectives": [
+          "Perform initial configuration — FortiGate factory default settings; FortiGuard licenses; FortiGate administrative access; FortiGate as a DHCP server; System configuration file backup and restore; FortiGate firmware upgrades; Use cases",
+          "Configure log settings and diagnose problems using the logs — Log workflow; Log storage options; Device registration on FortiAnalyzer; Log message viewing and searching",
+          "Configure FortiGate Clustering Protocol (FGCP) high-availability (HA) cluster — FortiGate HA; HA setting modifications; Session synchronization for seamless failover; HA management interface; Typical operation of an HA cluster; HA cluster firmware upgrade; Use cases",
+          "Diagnose resource and connectivity problems — Abnormal behavior monitoring; Physical and network layer problems; Connectivity problems—sniffer and debug flow; Resource problems—high CPU and memory usage; Memory conserve mode; Use cases—troubleshoot resource and connectivity problems",
+          "Describe FortiGate Cloud-Native Firewall (CNF) and FortiGate VMs in the public cloud — Threats and challenges in the public cloud; Fortinet public cloud solutions; FortiGate VMs in the cloud; FortiGate CNF; Use cases—FortiGate CNF and FortiGate VMs in the cloud",
+          "Explain FortiSASE administration and user onboarding methods — Challenges with remote work; Secure access service edge (SASE) architecture; FortiSASE components; Security features; Use cases—FortiSASE"
+        ],
+        "task_details": [
+          {
+            "task": "Perform initial configuration",
+            "details": [
+              "FortiGate factory default settings",
+              "FortiGuard licenses",
+              "FortiGate administrative access",
+              "FortiGate as a DHCP server",
+              "System configuration file backup and restore",
+              "FortiGate firmware upgrades",
+              "Use cases"
+            ]
+          },
+          {
+            "task": "Configure log settings and diagnose problems using the logs",
+            "details": [
+              "Log workflow",
+              "Log storage options",
+              "Device registration on FortiAnalyzer",
+              "Log message viewing and searching"
+            ]
+          },
+          {
+            "task": "Configure FortiGate Clustering Protocol (FGCP) high-availability (HA) cluster",
+            "details": [
+              "FortiGate HA",
+              "HA setting modifications",
+              "Session synchronization for seamless failover",
+              "HA management interface",
+              "Typical operation of an HA cluster",
+              "HA cluster firmware upgrade",
+              "Use cases"
+            ]
+          },
+          {
+            "task": "Diagnose resource and connectivity problems",
+            "details": [
+              "Abnormal behavior monitoring",
+              "Physical and network layer problems",
+              "Connectivity problems—sniffer and debug flow",
+              "Resource problems—high CPU and memory usage",
+              "Memory conserve mode",
+              "Use cases—troubleshoot resource and connectivity problems"
+            ]
+          },
+          {
+            "task": "Describe FortiGate Cloud-Native Firewall (CNF) and FortiGate VMs in the public cloud",
+            "details": [
+              "Threats and challenges in the public cloud",
+              "Fortinet public cloud solutions",
+              "FortiGate VMs in the cloud",
+              "FortiGate CNF",
+              "Use cases—FortiGate CNF and FortiGate VMs in the cloud"
+            ]
+          },
+          {
+            "task": "Explain FortiSASE administration and user onboarding methods",
+            "details": [
+              "Challenges with remote work",
+              "Secure access service edge (SASE) architecture",
+              "FortiSASE components",
+              "Security features",
+              "Use cases—FortiSASE"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Firewall policies and authentication (20–25%)",
+        "objectives": [
+          "Configure firewall policies — Firewall policies; Inspection modes for firewall policies; Firewall policy traffic logs; Use cases",
+          "Configure source network address translation (SNAT) and destination network address translation (DNAT) options in firewall policies — SNAT configuration; Firewall policy to perform DNAT using virtual IP (VIP) addresses; Use cases; DNAT settings using a VIP",
+          "Configure different methods of firewall authentication — Remote LDAP authentication server on FortiGate; Remote RADIUS authentication server on FortiGate; Active and/or passive authentication; Firewall user monitoring on the FortiGate GUI; Use cases",
+          "Explain how to deploy and configure Fortinet Single Sign-On (FSSO) — FSSO in domain controller (DC) agent mode; Collector agent; FSSO login issues; Use cases—FortiGate FSSO authentication"
+        ],
+        "task_details": [
+          {
+            "task": "Configure firewall policies",
+            "details": [
+              "Firewall policies",
+              "Inspection modes for firewall policies",
+              "Firewall policy traffic logs",
+              "Use cases"
+            ]
+          },
+          {
+            "task": "Configure source network address translation (SNAT) and destination network address translation (DNAT) options in firewall policies",
+            "details": [
+              "SNAT configuration",
+              "Firewall policy to perform DNAT using virtual IP (VIP) addresses",
+              "Use cases",
+              "DNAT settings using a VIP"
+            ]
+          },
+          {
+            "task": "Configure different methods of firewall authentication",
+            "details": [
+              "Remote LDAP authentication server on FortiGate",
+              "Remote RADIUS authentication server on FortiGate",
+              "Active and/or passive authentication",
+              "Firewall user monitoring on the FortiGate GUI",
+              "Use cases"
+            ]
+          },
+          {
+            "task": "Explain how to deploy and configure Fortinet Single Sign-On (FSSO)",
+            "details": [
+              "FSSO in domain controller (DC) agent mode",
+              "Collector agent",
+              "FSSO login issues",
+              "Use cases—FortiGate FSSO authentication"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Content inspection (25–30%)",
+        "objectives": [
+          "Explain and inspect encrypted traffic using certificates — Full SSL/SSH inspection for outbound traffic; Private certificate authority (CA) certificates on endpoints; Certification issues; Use cases",
+          "Identify FortiGate inspection modes and configure web filtering — Inspection mode (flow or proxy) based on security needs; Certificate inspection for web filtering; Web filter profiles in flow-based and proxy-based inspection modes; FortiGuard categories; URL filters; Web filtering issues; Use cases",
+          "Configure application control to monitor and control network applications — Application control in profile mode; Application control event monitoring; Traffic matching with application control profile issues; Use cases—application traffic controlling",
+          "Configure antivirus scanning modes to neutralize malware threats — Antivirus profiles in flow-based and proxy-based inspection modes; Protocol options; Antivirus events—log and monitor; Common antivirus issues",
+          "Configure an intrusion prevention system (IPS) to protect a network from threats and vulnerabilities — IPS sensors; IPS high-CPU usage issues; Use cases—Blocking known exploits"
+        ],
+        "task_details": [
+          {
+            "task": "Explain and inspect encrypted traffic using certificates",
+            "details": [
+              "Full SSL/SSH inspection for outbound traffic",
+              "Private certificate authority (CA) certificates on endpoints",
+              "Certification issues",
+              "Use cases"
+            ]
+          },
+          {
+            "task": "Identify FortiGate inspection modes and configure web filtering",
+            "details": [
+              "Inspection mode (flow or proxy) based on security needs",
+              "Certificate inspection for web filtering",
+              "Web filter profiles in flow-based and proxy-based inspection modes",
+              "FortiGuard categories",
+              "URL filters",
+              "Web filtering issues",
+              "Use cases"
+            ]
+          },
+          {
+            "task": "Configure application control to monitor and control network applications",
+            "details": [
+              "Application control in profile mode",
+              "Application control event monitoring",
+              "Traffic matching with application control profile issues",
+              "Use cases—application traffic controlling"
+            ]
+          },
+          {
+            "task": "Configure antivirus scanning modes to neutralize malware threats",
+            "details": [
+              "Antivirus profiles in flow-based and proxy-based inspection modes",
+              "Protocol options",
+              "Antivirus events—log and monitor",
+              "Common antivirus issues"
+            ]
+          },
+          {
+            "task": "Configure an intrusion prevention system (IPS) to protect a network from threats and vulnerabilities",
+            "details": [
+              "IPS sensors",
+              "IPS high-CPU usage issues",
+              "Use cases—Blocking known exploits"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Routing (10–15%)",
+        "objectives": [
+          "Configure and route packets using static routes — Static routing; Routing table on FortiGate; Route redundancy and load balancing; Use cases",
+          "Configure SD-WAN to load balance traffic between multiple WAN links effectively — SD-WAN concepts; Main use cases for SD-WAN; SD-WAN on FortiGate; Routing behavior in an SD-WAN context; SD-WAN behavior, link usage, and quality status; Use cases"
+        ],
+        "task_details": [
+          {
+            "task": "Configure and route packets using static routes",
+            "details": [
+              "Static routing",
+              "Routing table on FortiGate",
+              "Route redundancy and load balancing",
+              "Use cases"
+            ]
+          },
+          {
+            "task": "Configure SD-WAN to load balance traffic between multiple WAN links effectively",
+            "details": [
+              "SD-WAN concepts",
+              "Main use cases for SD-WAN",
+              "SD-WAN on FortiGate",
+              "Routing behavior in an SD-WAN context",
+              "SD-WAN behavior, link usage, and quality status",
+              "Use cases"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "VPNs (10–15%)",
+        "objectives": [
+          "Implement a meshed or partially redundant IPsec VPN — IPsec VPN concepts; IPsec VPN using the IPsec wizard; Redundant VPN between two FortiGate devices; IPsec VPNs and review logs; IPsec VPN issues; Use cases"
+        ],
+        "task_details": [
+          {
+            "task": "Implement a meshed or partially redundant IPsec VPN",
+            "details": [
+              "IPsec VPN concepts",
+              "IPsec VPN using the IPsec wizard",
+              "Redundant VPN between two FortiGate devices",
+              "IPsec VPNs and review logs",
+              "IPsec VPN issues",
+              "Use cases"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "objective_observation_after_acceptance": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "NSE-4-FORTIOS",
+        "title": "Fortinet NSE 4 FortiOS",
+        "url": "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam",
+        "guide_path": "guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md",
+        "snapshot_path": "data\\objective-snapshots\\nse-4-fortios-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\nse-4-fortios-official-status.json",
+        "previous_sha256": "ee1dd533cdd57817a80a76efc3ac2e9719aa3e28b9b6603c32d1e7f14f20b29b",
+        "current_sha256": "ee1dd533cdd57817a80a76efc3ac2e9719aa3e28b9b6603c32d1e7f14f20b29b",
+        "previous_status_sha256": "b1338aa91dda066954ef47eb2b3c905d46d3865b19a2954b313e018ef08402ae",
+        "current_status_sha256": "b1338aa91dda066954ef47eb2b3c905d46d3865b19a2954b313e018ef08402ae",
+        "official_status": {
+          "skills_versions": [
+            "Available",
+            "Coming Soon",
+            "Exam Details",
+            "Exam name",
+            "Fortinet NSE 4 - FortiOS 7.6 Administrator",
+            "Exam time",
+            "100 minutes",
+            "Exam questions",
+            "50–55 questions",
+            "Scoring",
+            "Pass or fail. A score report is available from your Pearson VUE account.",
+            "Language",
+            "English and Japanese",
+            "Product version",
+            "FortiOS 7.6.0"
+          ],
+          "upcoming_announcements": [
+            "Fortinet NSE 4 - FortiOS 8.0 Administrator: Coming Soon"
+          ]
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "catalog_observations": [
+    {
+      "source_id": "fortinet-fortigate-administrator-course-description",
+      "finding": "The public description is explicitly 7.4.1, with 12 hours lecture and 10 hours lab. It does not verify the 7.6 course."
+    },
+    {
+      "source_id": "cbtnuggets-fortinet-playlist",
+      "finding": "The public 7.6 listing has 233 videos and zero practice exams; total duration and paid interiors remain unverified."
+    }
+  ]
+}

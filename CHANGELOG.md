@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [NSE-4-FORTIOS deep review](docs/research/2026-09-29-nse-4-fortios-deep-review.md): Recorded the undated 8.0 successor while preserving the available 7.6 scope and history; added 40 answers, 41 executed checks and corrections for policy, NAT, inspection, HA, routing and IPsec.
+
 - September 29, 2026: [PANW-CYBERSECURITY-APPRENTICE deep review](docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md): Checked the full current blueprint and September handbook/FAQ, added 40 answered prompts and 43 executed Python checks, and clarified network, telemetry, identity and learning-resource boundaries.
 
 - September 29, 2026: [SERVICENOW-CAD deep review](docs/research/2026-09-29-servicenow-cad-deep-review.md): Aligned all 22 canonical subtopics and weights with archived history; added 40 answered prompts, 38 executed JavaScript checks and API, security, integration and release evidence.

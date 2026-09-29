@@ -3,6 +3,72 @@
   "schema_version": 1,
   "reviews": [
     {
+      "id": "nse-4-fortios-2026-09-02-source-validation",
+      "exam_code": "NSE-4-FORTIOS",
+      "guide_path": "guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nse-4-fortios-2026-09-02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "1b33e766a66667a35836c8bdc2632bd72c3489d5d265e3cf4fe52452c72cfc6f",
+      "objective_coverage": [
+        {
+          "objective_group": "Deployment and system configuration (20–25%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1, 7 and 8"
+          ]
+        },
+        {
+          "objective_group": "Firewall policies and authentication (20–25%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 2–3"
+          ]
+        },
+        {
+          "objective_group": "Content inspection (25–30%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 1 and 3",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Routing (10–15%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1–2",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "VPNs (10–15%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenario 2",
+            "Lab 6"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 14,
+        "reachable": 12,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All five current FortiOS 7.6.0 ranged-weight domains are mapped through recoverable deployment, logging/HA/troubleshooting, cloud/SASE placement, policy/session/NAT/identity reasoning, flow/proxy and encrypted content inspection, static route/SD-WAN decisions, and redundant IPsec. Three integrated scenarios, eight authorized labs and 40 original checks are included. The July 15, 2026 move from FCP to NSE 4 and stale course naming are explicit; the published weight ranges are not falsely normalized. Official course sample questions are the only named exam-style source, and marketplace products claiming real or guaranteed-match questions are excluded. September 17, 2026 contract maintenance: checked current official exam and credential pages and corrected the published exam-time or prerequisite facts in the guide. The historical objective snapshot, objective mapping and full review date remain unchanged. See docs/research/2026-09-17-exam-validation.md for the exact corrections and access limits."
+    },
+    {
       "id": "servicenow-cad-2026-09-02-source-validation",
       "exam_code": "SERVICENOW-CAD",
       "guide_path": "guides/SERVICENOW-CAD-servicenow-certified-application-developer.md",
@@ -10383,24 +10449,80 @@
       "notes": "Mapped all 39 saved objective entries and the nested identity topics against the full current PDF; answered 40 original prompts and executed 43 local Python checks. Added three worked scenarios and eight proposed activities, refreshed the September handbook/FAQ and clarified fee, delivery, policy, telemetry and identity boundaries. Booking details, blocked resources, live infrastructure and human review remain pending. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md"
     },
     {
-      "id":"nse-4-fortios-2026-09-02-source-validation",
-      "exam_code":"NSE-4-FORTIOS",
-      "guide_path":"guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-02",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/nse-4-fortios-official-objectives.txt",
-      "blueprint_snapshot_sha256":"1b33e766a66667a35836c8bdc2632bd72c3489d5d265e3cf4fe52452c72cfc6f",
-      "objective_coverage":[
-        {"objective_group":"Deployment and system configuration (20–25%)","guide_sections":["Section 1","All scenarios","Labs 1, 7 and 8"]},
-        {"objective_group":"Firewall policies and authentication (20–25%)","guide_sections":["Section 2","Scenarios 1 and 3","Labs 2–3"]},
-        {"objective_group":"Content inspection (25–30%)","guide_sections":["Section 3","Scenarios 1 and 3","Lab 4"]},
-        {"objective_group":"Routing (10–15%)","guide_sections":["Section 4","Scenarios 1–2","Lab 5"]},
-        {"objective_group":"VPNs (10–15%)","guide_sections":["Section 5","Scenario 2","Lab 6"]}
+      "id": "nse-4-fortios-2026-09-29-source-validation",
+      "exam_code": "NSE-4-FORTIOS",
+      "guide_path": "guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nse-4-fortios-official-objectives.txt",
+      "blueprint_snapshot_sha256": "ee1dd533cdd57817a80a76efc3ac2e9719aa3e28b9b6603c32d1e7f14f20b29b",
+      "objective_coverage": [
+        {
+          "objective_group": "Deployment and system configuration (20–25%)",
+          "guide_sections": [
+            "1. Deployment and system configuration (20–25%)",
+            "Worked results for the three scenarios",
+            "Hands-on labs",
+            "Executed offline workbook",
+            "Answer notes"
+          ]
+        },
+        {
+          "objective_group": "Firewall policies and authentication (20–25%)",
+          "guide_sections": [
+            "2. Firewall policies and authentication (20–25%)",
+            "Worked results for the three scenarios",
+            "Hands-on labs",
+            "Executed offline workbook",
+            "Answer notes"
+          ]
+        },
+        {
+          "objective_group": "Content inspection (25–30%)",
+          "guide_sections": [
+            "3. Content inspection (25–30%)",
+            "Worked results for the three scenarios",
+            "Hands-on labs",
+            "Executed offline workbook",
+            "Answer notes"
+          ]
+        },
+        {
+          "objective_group": "Routing (10–15%)",
+          "guide_sections": [
+            "4. Routing (10–15%)",
+            "Worked results for the three scenarios",
+            "Hands-on labs",
+            "Executed offline workbook",
+            "Answer notes"
+          ]
+        },
+        {
+          "objective_group": "VPNs (10–15%)",
+          "guide_sections": [
+            "5. VPNs (10–15%)",
+            "Worked results for the three scenarios",
+            "Hands-on labs",
+            "Executed offline workbook",
+            "Answer notes"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":14,"reachable":12,"access_blocked":2,"missing_or_error":0},
-      "notes":"All five current FortiOS 7.6.0 ranged-weight domains are mapped through recoverable deployment, logging/HA/troubleshooting, cloud/SASE placement, policy/session/NAT/identity reasoning, flow/proxy and encrypted content inspection, static route/SD-WAN decisions, and redundant IPsec. Three integrated scenarios, eight authorized labs and 40 original checks are included. The July 15, 2026 move from FCP to NSE 4 and stale course naming are explicit; the published weight ranges are not falsely normalized. Official course sample questions are the only named exam-style source, and marketplace products claiming real or guaranteed-match questions are excluded. September 17, 2026 contract maintenance: checked current official exam and credential pages and corrected the published exam-time or prerequisite facts in the guide. The historical objective snapshot, objective mapping and full review date remain unchanged. See docs/research/2026-09-17-exam-validation.md for the exact corrections and access limits."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 37,
+        "reachable": 34,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Mapped all 18 current tasks and 89 supporting details; preserved historical snapshots while recording 100 minutes and the undated 8.0 successor. Added 40 answered prompts, three worked scenarios, eight proposed device activities and 41 executed Python checks. Clarified VIP priority, NAT, HA, inspection, routing, identity and IPsec. Device, course and account access plus human review remain pending. See docs/research/2026-09-29-nse-4-fortios-deep-review.md"
     },
     {
       "id":"splk-5001-2026-09-02-source-validation",

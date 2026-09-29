@@ -1825,6 +1825,8 @@ The review maps all seven May 2026 domains through threat, vulnerability, contro
 
 ## NSE-4-FORTIOS coverage record
 
+The September 29 [deep review](research/2026-09-29-nse-4-fortios-deep-review.md) maps 18 detailed objectives. Mapped all 18 current tasks and 89 supporting details; preserved historical snapshots while recording 100 minutes and the undated 8.0 successor. Added 40 answered prompts, three worked scenarios, eight proposed device activities and 41 executed Python checks. Clarified VIP priority, NAT, HA, inspection, routing, identity and IPsec. Device, course and account access plus human review remain pending. Current guide citations: 37 registered, 34 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Deployment and system configuration (20–25%), Firewall policies and authentication (20–25%), Content inspection (25–30%), Routing (10–15%), and VPNs (10–15%)

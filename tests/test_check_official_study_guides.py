@@ -544,6 +544,37 @@ class ObjectiveExtractionTests(unittest.TestCase):
         self.assertEqual(["Coming soon!"], status["skills_versions"])
         self.assertIn("not published", status["upcoming_announcements"][0])
 
+    def test_fortinet_keeps_current_exam_and_announced_successor_separate(self) -> None:
+        for status_markup in (
+            "<p>Status: <span>Coming Soon</span></p>",
+            "<p>Status:</p><p>Coming Soon</p>",
+        ):
+            with self.subTest(status_markup=status_markup):
+                tasks = "".join(f"<p>Current task {i}</p>" for i in range(10))
+                body = f"""
+                <h2>Fortinet NSE 4 - FortiOS 7.6 Administrator</h2>
+                <p>Status: Available</p><h3>Exam Details</h3>
+                <p>Exam name</p><p>FortiOS 7.6 Administrator</p>
+                <p>Exam time</p><p>100 minutes</p>
+                <h3>Exam Topics</h3>{tasks}<h3>Training Resources</h3>
+                <h2>Fortinet NSE 4 - FortiOS 8.0 Administrator</h2>
+                {status_markup}
+                <!-- <h3>Exam Details</h3><p>Unpublished duration</p>
+                     <h3>Exam Topics</h3><p>Unpublished task</p> -->
+                """
+                objectives = monitor.extract_fortinet_objectives(body)
+                status = monitor.extract_fortinet_status(body)
+                self.assertIn("Current task 9", objectives)
+                self.assertNotIn("8.0", objectives)
+                self.assertNotIn("Unpublished", objectives)
+                self.assertIn("Available", status["skills_versions"])
+                self.assertIn("100 minutes", status["skills_versions"])
+                self.assertNotIn("Unpublished duration", status["skills_versions"])
+                self.assertEqual(
+                    ["Fortinet NSE 4 - FortiOS 8.0 Administrator: Coming Soon"],
+                    status["upcoming_announcements"],
+                )
+
     def test_extracts_databricks_coverage_and_assessment_status(self) -> None:
         body = """
         <html><body><main>
