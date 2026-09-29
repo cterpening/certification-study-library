@@ -3,6 +3,174 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "mongodb-data-modeling-certification-path",
+      "title": "Data Modeling certification path linked by current exam page",
+      "url": "https://learn.mongodb.com/learning-paths/mongodb-data-modeling-certification-learning-path",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-learning-path",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Direct50-character shell; complete browser main/grid read. Current URL directly linked from main exam, same eight cards as earlier path:90/75/60/60/60/50/60/60=515minutes. Separate105minuteexam;8hourheadline. Public completiondiscount not eligibility verification. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-data-modeler-course-exam",
+      "title": "Data Modeler course-route exam contract",
+      "url": "https://learn.mongodb.com/courses/mongodb-associate-data-modeler-exam",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-certification-page",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Direct50-character shell; complete public browser main read.70questions(60scored10unscored),105minutes,USD150,English,no prerequisite. Current path links this route; unresolved conflict with main75/110. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-validation-level",
+      "title": "Schema validation levels and existing documents",
+      "url": "https://www.mongodb.com/docs/manual/core/schema-validation/specify-validation-level/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Complete6912-character main/browser read. Strict applies inserts/updates, not retrospective proof; moderate excludes updates of already invalid documents.9.0constraint/preparation/fullscan/version-specific requirements read but not executed or assumedavailable/examrequired. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-json-schema-validation",
+      "title": "MongoDB JSON Schema validation",
+      "url": "https://www.mongodb.com/docs/manual/core/schema-validation/specify-json-schema/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Complete4202-character main read. Draft4withMongoDBdifferences,bsonType andcombiningqueryrules. No vendor code copied or server/generic library equivalence claimed. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-schema-versioning",
+      "title": "Maintain different schema versions",
+      "url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/data-versioning/schema-versioning/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Complete3864-character main read. MixedschemaVersion requires compatible readers/writers/index paths. Broad vendor example updateMany filter not copied; original guarded fixture used. No actual backfill. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-ttl-indexes",
+      "title": "MongoDB TTL indexes",
+      "url": "https://www.mongodb.com/docs/manual/core/index-ttl/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Complete10740-character main read. Singlefielddate/arrayearliest,missing/nondate,async cadence/load,primarydeletion,collMod andbacklog. Internal time-series inconsistency: topdescribes timeFieldTTLindex+metaFieldfilter,restrictionsectionmentionsmetaFieldindex. No time-series index recipe adopted; no delete or deadline proof. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-identify-workload",
+      "title": "Identify application workload",
+      "url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/identify-workload/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Complete2038-character main/browser read. Operation/type/data/frequency/priority analysis; frequent is not necessarily most critical. Original shop numbers are assumptions, not source measurements. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-map-relationships",
+      "title": "Map schema relationships",
+      "url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/map-relationships/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Complete4502-character main/browser read. Relationship map and locality/write-amplification/cardinality tradeoffs. No universal avoidance oflookup or normalization. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-apply-patterns",
+      "title": "Apply schema design patterns",
+      "url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/apply-patterns/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Complete2239-character main/browser read. Pattern tradeoffs and subset/computed example read; guide uses original shop/events fixtures, no vendor code copied. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-schema-patterns",
+      "title": "MongoDB schema design patterns",
+      "url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Complete929-character overview read. Pattern categories and links; not all linked implementations reviewed. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-computed-values",
+      "title": "Computed and approximate values",
+      "url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/handle-computed-values/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Complete1448-character main/browser overview read. Computed/approximate values, timing and cost/freshness concepts. Linked implementation interiors not read; original sequential replay fixture no durableexactlyonceclaim. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-group-data",
+      "title": "Grouping with bucket and outlier patterns",
+      "url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/group-data/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Complete1610-character main/browser overview read. Bucket/grouping/pagination/outlier and generalnativeTSbucketing note. Linked bucketimplementation not read; original fixed-count arithmetic only. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "mongodb-developer-learning-paths",
       "title": "MongoDB developer learning paths",
       "url": "https://learn.mongodb.com/pages/mongodb-developer-learning-paths",
@@ -39,10 +207,11 @@
       "source_type": "official-documentation",
       "access_model": "public",
       "supported_exams": [
-        "MONGODB-ASSOCIATE-DEVELOPER"
+        "MONGODB-ASSOCIATE-DEVELOPER",
+        "MONGODB-ASSOCIATE-DATA-MODELER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete3806-character main/browser read. Single-document filter recheck,expected-current-value/overwrite risk,$inc andmulti-documentnon-atomicity. No actual server/concurrent workload or sample commands run. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete3806-character main/browser read. Single-document filter recheck,expected-current-value/overwrite risk,$inc andmulti-documentnon-atomicity. No actual server/concurrent workload or sample commands run. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Fresh3806-character capture; complete main reading reused from immediately preceding same-session Developer review. Single-document filter recheck/expected-value and multi-document non-atomicity. No actual concurrency/server. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mongodb-elemmatch-query",
@@ -67,10 +236,11 @@
       "source_type": "official-documentation",
       "access_model": "public",
       "supported_exams": [
-        "MONGODB-ASSOCIATE-DEVELOPER"
+        "MONGODB-ASSOCIATE-DEVELOPER",
+        "MONGODB-ASSOCIATE-DATA-MODELER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Full8356-character direct main read except no linked interiors. Single/compound/multikey uniqueness,existingviolations,null/missing,partialfilter andsharded_id boundaries. No index creation or topology test. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Full8356-character direct main read except no linked interiors. Single/compound/multikey uniqueness,existingviolations,null/missing,partialfilter andsharded_id boundaries. No index creation or topology test. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Fresh8356-character capture; complete main reading reused from preceding Developer review. Existing violations,null/missing,partialfilter,multikey andsharded_id scope. No index creation. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mongodb-index-esr",
@@ -81,10 +251,11 @@
       "source_type": "official-documentation",
       "access_model": "public",
       "supported_exams": [
-        "MONGODB-ASSOCIATE-DEVELOPER"
+        "MONGODB-ASSOCIATE-DEVELOPER",
+        "MONGODB-ASSOCIATE-DATA-MODELER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete8172-character main read in browser plusdirecttail. Equalityfirst,ESR/ERS tradeoff,sortprefix andversion-sensitive201-element$in threshold. No measuredplan/performance claim. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete8172-character main read in browser plusdirecttail. Equalityfirst,ESR/ERS tradeoff,sortprefix andversion-sensitive201-element$in threshold. No measuredplan/performance claim. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Fresh8172-character capture; complete main reading reused from preceding Developer review. ESR/ERSselectivity/sortprefix,version-sensitive$in threshold. No measured optimality. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mongodb-index-multikey",
@@ -95,10 +266,11 @@
       "source_type": "official-documentation",
       "access_model": "public",
       "supported_exams": [
-        "MONGODB-ASSOCIATE-DEVELOPER"
+        "MONGODB-ASSOCIATE-DEVELOPER",
+        "MONGODB-ASSOCIATE-DATA-MODELER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete6858-character main read. One indexedarrayfieldperdocument,uniquewithindocument/otherdocument distinction,coveringrestrictions and9.0-specificquerykill note. Whole-array section shows scalarquery inconsistentwithitsprose; not copied as exact-array code. No9.0availability claim orruntime. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete6858-character main read. One indexedarrayfieldperdocument,uniquewithindocument/otherdocument distinction,coveringrestrictions and9.0-specificquerykill note. Whole-array section shows scalarquery inconsistentwithitsprose; not copied as exact-array code. No9.0availability claim orruntime. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Fresh6858-character capture; complete main reading reused from preceding Developer review. Oneindexedarrayfield/document,uniquenessacrossdocs,coveringlimits. Inconsistent whole-array sample operand not copied; no runtime or9.0availability claim. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mongodb-bson-types",
@@ -179,10 +351,11 @@
       "source_type": "release-notes",
       "access_model": "public",
       "supported_exams": [
-        "MONGODB-ASSOCIATE-DEVELOPER"
+        "MONGODB-ASSOCIATE-DEVELOPER",
+        "MONGODB-ASSOCIATE-DATA-MODELER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Selected openingpatchheadings andGeneralChanges through earlymetrics read,notfull19617-characterreleasebody.9.0.0/9.0.1/9.0.2 labeledUpcoming althoughmanualselectorcurrent; treatavailabilityasunresolveddeployment-specificwatch. No serverfeature installation or examversionchange inferred. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Selected openingpatchheadings andGeneralChanges through earlymetrics read,notfull19617-characterreleasebody.9.0.0/9.0.1/9.0.2 labeledUpcoming althoughmanualselectorcurrent; treatavailabilityasunresolveddeployment-specificwatch. No serverfeature installation or examversionchange inferred. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Fresh19617-character capture; selected openingpatchheadings/GeneralChanges through earlymetrics reading reused from preceding Developer review.9.0.0/9.0.1/9.0.2Upcoming versus manual current/preview context. Not complete history, GA/examversion inference or installation. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mongodb-null-missing",
@@ -249,10 +422,11 @@
       "source_type": "official-documentation",
       "access_model": "public",
       "supported_exams": [
-        "MONGODB-ASSOCIATE-DEVELOPER"
+        "MONGODB-ASSOCIATE-DEVELOPER",
+        "MONGODB-ASSOCIATE-DATA-MODELER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete9199-character main read:documentstructure,fieldrestrictions,positions,16MiB,fieldordering,_id/time-series/drivergenerationnotes. No databasevalidation/sizeencodingrun. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete9199-character main read:documentstructure,fieldrestrictions,positions,16MiB,fieldordering,_id/time-series/drivergenerationnotes. No databasevalidation/sizeencodingrun. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Fresh9199-character capture; complete main reading reused from preceding Developer review.16MiB,BSONstructure/fieldorder/_id/standard-versus-timeseries limits. Workbook budget does not encode BSON. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mongodb-array-updates",
@@ -50696,40 +50870,162 @@
         "MONGODB-ASSOCIATE-DEVELOPER",
         "MONGODB-ASSOCIATE-DATA-MODELER"
       ],
-      "notes": "Approximately 17.5-hour broad course listed as updated January 2026; select relevant modeling/index sections, distinguish official drivers from frameworks, and reconcile behavior with current official documentation. September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: HTTP403. Earlier17.5hours/January2026 metadata and coverage not reverified. Repaired replacement character in catalog title without inventing a new title. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+      "notes": "Approximately 17.5-hour broad course listed as updated January 2026; select relevant modeling/index sections, distinguish official drivers from frameworks, and reconcile behavior with current official documentation. September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: HTTP403. Earlier17.5hours/January2026 metadata and coverage not reverified. Repaired replacement character in catalog title without inventing a new title. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: HTTP403. Earlier17.5hour metadata not reverified; no paid lesson or current alignment/quality review. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-associate-data-modeler-exam","title":"MongoDB Associate Data Modeler Exam","url":"https://learn.mongodb.com/pages/mongodb-associate-data-modeler-exam","publisher":"MongoDB University","authority_class":1,"source_type":"official-certification-page","access_model":"public","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-DATA-MODELER"],"notes":"Current public 75-question, 110-minute, USD150, English, online-proctored contract. An older course route still exposes 70 questions/105 minutes and is not treated as current."
+      "id": "mongodb-associate-data-modeler-exam",
+      "title": "MongoDB Associate Data Modeler Exam",
+      "url": "https://learn.mongodb.com/pages/mongodb-associate-data-modeler-exam",
+      "publisher": "MongoDB University",
+      "authority_class": 1,
+      "source_type": "official-certification-page",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "notes": "Current public 75-question, 110-minute, USD150, English, online-proctored contract. An older course route still exposes 70 questions/105 minutes and is not treated as current. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Direct50-character shell; complete browser main read.75questions,110minutes,onlineproctored,English,no prerequisite,USD150. Links current certification learning-path URL. Actual booking contract unverified. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-associate-data-modeler-study-guide","title":"Associate Data Modeler Exam Study Guide","url":"https://learn.mongodb.com/courses/associate-data-modeler-exam-study-guide","publisher":"MongoDB University","authority_class":1,"source_type":"exam-blueprint","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-DATA-MODELER"],"notes":"Canonical 30-minute eight-domain objective guide; free enrollment/email capture is required."
+      "id": "mongodb-associate-data-modeler-study-guide",
+      "title": "Associate Data Modeler Exam Study Guide",
+      "url": "https://learn.mongodb.com/courses/associate-data-modeler-exam-study-guide",
+      "publisher": "MongoDB University",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "notes": "Canonical 30-minute eight-domain objective guide; free enrollment/email capture is required. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Direct50-character shell; full public browser landing:30minutes/free/enrollment. GettheGuide public viewer500; published embedded asset403, separate receipt. No document contents/account/enrollment action.15historicalstatements retained, not freshly revalidated. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-data-modeling-path","title":"MongoDB Data Modeling Path","url":"https://learn.mongodb.com/learning-paths/data-modeling-for-mongodb","publisher":"MongoDB University","authority_class":1,"source_type":"official-learning-path","access_model":"public","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-DATA-MODELER"],"notes":"Free eight-hour official path covering CRUD, relational-to-document conversion, patterns/anti-patterns, optimization, aggregation, indexing and performance. Its embedded exam-duration card lags the current exam landing page."
+      "id": "mongodb-data-modeling-path",
+      "title": "MongoDB Data Modeling Path",
+      "url": "https://learn.mongodb.com/learning-paths/data-modeling-for-mongodb",
+      "publisher": "MongoDB University",
+      "authority_class": 1,
+      "source_type": "official-learning-path",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "notes": "Free eight-hour official path covering CRUD, relational-to-document conversion, patterns/anti-patterns, optimization, aggregation, indexing and performance. Its embedded exam-duration card lags the current exam landing page. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Direct50-character shell; complete public browser main/grid read. Eight required cards515minutes,8hourheadline; separate elective exam105minutes.50%completiondiscount advertised, eligibility unverified. No lessons/interiors. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-associate-data-modeler-practice","title":"Associate Data Modeler Practice Questions","url":"https://learn.mongodb.com/courses/associate-data-modeler-practice-questions","publisher":"MongoDB University","authority_class":1,"source_type":"official-practice","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-DATA-MODELER"],"notes":"Official one-hour practice resource. Use explanations and objective gaps rather than memorizing items."
+      "id": "mongodb-associate-data-modeler-practice",
+      "title": "Associate Data Modeler Practice Questions",
+      "url": "https://learn.mongodb.com/courses/associate-data-modeler-practice-questions",
+      "publisher": "MongoDB University",
+      "authority_class": 1,
+      "source_type": "official-practice",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "notes": "Official one-hour practice resource. Use explanations and objective gaps rather than memorizing items. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Direct50-character shell; complete browser public landing read.1hour/free/register. No question or explanation interiors accessed/copied. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-certification-path-update-2026","title":"Introducing a More Connected, Flexible Path to MongoDB Certifications","url":"https://www.mongodb.com/company/blog/news/introducing-a-more-connected-flexible-path-to-certifications","publisher":"MongoDB","authority_class":1,"source_type":"official-announcement","access_model":"public","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-DATA-MODELER","MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"],"notes":"August 18, 2026 announcement aligning Data Modeler, Database Administrator and Atlas Administrator learning paths with skill badges and a completion discount; it does not announce replacement exams."
+      "id": "mongodb-certification-path-update-2026",
+      "title": "Introducing a More Connected, Flexible Path to MongoDB Certifications",
+      "url": "https://www.mongodb.com/company/blog/news/introducing-a-more-connected-flexible-path-to-certifications",
+      "publisher": "MongoDB",
+      "authority_class": 1,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER",
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "notes": "August 18, 2026 announcement aligning Data Modeler, Database Administrator and Atlas Administrator learning paths with skill badges and a completion discount; it does not announce replacement exams. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Complete7049-character main read including date/authors. August18,2026 HeatherDavis/JoelLord announcement lists4minute reading, skillbadge/path alignment and50% full-path completion discount. Marketing claims are not course-quality or exam-replacement evidence. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-designing-schema","title":"Designing Your Schema","url":"https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/","publisher":"MongoDB","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-DATA-MODELER"],"notes":"Canonical current workload, relationship, design-pattern and index workflow."
+      "id": "mongodb-designing-schema",
+      "title": "Designing Your Schema",
+      "url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/",
+      "publisher": "MongoDB",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "notes": "Canonical current workload, relationship, design-pattern and index workflow. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Complete1335-character main read. Workload,relationships,patterns,indexes process and production evolution complexity. No sample implementation executed. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-data-modeling-docs","title":"MongoDB Data Modeling Documentation","url":"https://www.mongodb.com/docs/manual/data-modeling/","publisher":"MongoDB","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-DATA-MODELER"],"notes":"Canonical relationship, embedding/reference, schema pattern/anti-pattern, validation, operational-factor and evolution documentation; verify current server version."
+      "id": "mongodb-data-modeling-docs",
+      "title": "MongoDB Data Modeling Documentation",
+      "url": "https://www.mongodb.com/docs/manual/data-modeling/",
+      "publisher": "MongoDB",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "notes": "Canonical relationship, embedding/reference, schema pattern/anti-pattern, validation, operational-factor and evolution documentation; verify current server version. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Complete4345-character main read. Flexible/polymorphic models and read-together/embed/reference examples. Marketing optimality/ease generalizations not adopted as guarantees. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-explain-results","title":"Explain Results","url":"https://www.mongodb.com/docs/manual/reference/explain-results/","publisher":"MongoDB","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-DATA-MODELER"],"notes":"Current execution-plan field and stage reference for validating index and model decisions; output varies by version and query engine."
+      "id": "mongodb-explain-results",
+      "title": "Explain Results",
+      "url": "https://www.mongodb.com/docs/manual/reference/explain-results/",
+      "publisher": "MongoDB",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "notes": "Current execution-plan field and stage reference for validating index and model decisions; output varies by version and query engine. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Selected first110 direct lines and lines441–468,639–663 read from33197-character body. Plan-cache isolation, classic/SBE/stage overview and nReturned/executionTimeMillis/keys/docs counters plus covering conditions. Not full reference or actual plan/benchmark. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-high-performance-mongodb","title":"High Performance with MongoDB","url":"https://www.oreilly.com/library/view/high-performance-with/9781837022632/","publisher":"O'Reilly / Packt / MongoDB","authority_class":3,"source_type":"commercial-book","access_model":"paid","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-DATA-MODELER"],"notes":"September 2025, 410-page/10h16m listed intermediate-to-advanced book by MongoDB experts; use selected schema, index, workload and measurement chapters."
+      "id": "oreilly-high-performance-mongodb",
+      "title": "High Performance with MongoDB",
+      "url": "https://www.oreilly.com/library/view/high-performance-with/9781837022632/",
+      "publisher": "O'Reilly / Packt / MongoDB",
+      "authority_class": 3,
+      "source_type": "commercial-book",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "notes": "September 2025, 410-page/10h16m listed intermediate-to-advanced book by MongoDB experts; use selected schema, index, workload and measurement chapters. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: HTTP403. Earlier10h16/2025 metadata not reverified; no paid interior or quality claim. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-mongodb-essentials-2025","title":"MongoDB Essentials","url":"https://www.oreilly.com/library/view/mongodb-essentials/9781806706099/","publisher":"O'Reilly / Packt / MongoDB Team","authority_class":3,"source_type":"commercial-book","access_model":"paid","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-DATA-MODELER"],"notes":"September 2025, 84-page/1h36m listed concise overview by the MongoDB Team, including data modeling and performance."
+      "id": "oreilly-mongodb-essentials-2025",
+      "title": "MongoDB Essentials",
+      "url": "https://www.oreilly.com/library/view/mongodb-essentials/9781806706099/",
+      "publisher": "O'Reilly / Packt / MongoDB Team",
+      "authority_class": 3,
+      "source_type": "commercial-book",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "notes": "September 2025, 84-page/1h36m listed concise overview by the MongoDB Team, including data modeling and performance. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: HTTP403. Earlier1h36/2025 metadata not reverified; no paid interior or quality claim. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"youtube-mongodb-schema-design-best-practices","title":"MongoDB Schema Design Best Practices","url":"https://www.youtube.com/watch?v=QAqK-R9HUhc","publisher":"MongoDB","authority_class":1,"source_type":"official-video","access_model":"public","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-DATA-MODELER"],"notes":"Approximately ten-minute official visual overview of access patterns, relationships and schema choices; concise orientation rather than complete exam coverage."
+      "id": "youtube-mongodb-schema-design-best-practices",
+      "title": "MongoDB Schema Design Best Practices",
+      "url": "https://www.youtube.com/watch?v=QAqK-R9HUhc",
+      "publisher": "MongoDB",
+      "authority_class": 1,
+      "source_type": "official-video",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "notes": "Approximately ten-minute official visual overview of access patterns, relationships and schema choices; concise orientation rather than complete exam coverage. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: 199-character title/footer only. Earlierabout10minute duration not reverified; video not played or transcript audited. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
     },
     {
       "id":"mongodb-associate-atlas-administrator-exam","title":"MongoDB Atlas Administrator Exam","url":"https://learn.mongodb.com/pages/mongodb-associate-atlas-administrator-exam","publisher":"MongoDB University","authority_class":1,"source_type":"official-certification-page","access_model":"public","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"],"notes":"Current public 70-question, 95-minute, USD150, English, online-proctored contract."
@@ -56623,9 +56919,11 @@
       "authority_class": 2,
       "source_type": "official-guidance",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["MONGODB-ASSOCIATE-DATA-MODELER"],
-      "notes": "Older first-party technical article on query-pattern-led modeling, embedding/referencing, working set, growth, and index tradeoffs; not current exam scope."
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "notes": "Older first-party technical article on query-pattern-led modeling, embedding/referencing, working set, growth, and index tradeoffs; not current exam scope. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Complete relevant main plus publication/update/date/authors read from12758-character capture. HenrikIngo/MatKeep January28,2020 updatedJuly22,2020. Workload/locality/working-set context only; historical Atlasautoscalingbeta and availability claims not current guarantees. No memory benchmark. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-mongodb-atlas-landing-zone",

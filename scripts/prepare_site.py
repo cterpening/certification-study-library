@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BUILD_DIR = ROOT / ".site-build"
 
 PUBLIC_DOCUMENTS = (
+    "docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md",
     "docs/research/2026-09-29-mongodb-associate-developer-deep-review.md",
     "docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md",
     "docs/research/2026-09-29-salesforce-platform-developer-deep-review.md",

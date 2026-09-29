@@ -3121,6 +3121,30 @@ Pluralsight currently lists seven courses and four labs: course cards total 8h24
 
 Reject guaranteed-pass offers, copied or recalled exam questions, and unexplained answer banks. Prefer original explanations, documented alternatives and reproducible application evidence.
 
+### MONGODB-ASSOCIATE-DATA-MODELER — MongoDB Associate Data Modeler
+
+Resource details from the [MONGODB-ASSOCIATE-DATA-MODELER guide](../guides/MONGODB-ASSOCIATE-DATA-MODELER-mongodb-associate-data-modeler.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list or a prescription to consume everything. Public outlines and metadata do not prove lesson quality or exam completeness. Publisher times are identified; other ranges are study estimates. No paid lesson, practice-question interior, account enrollment or video playback was used in this review.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Main exam page](https://learn.mongodb.com/pages/mongodb-associate-data-modeler-exam) and [course route](https://learn.mongodb.com/courses/mongodb-associate-data-modeler-exam): compare the conflicting contracts before booking | Public browser pages; automated routes return shells | 10–15 min review estimate; main 110-minute exam versus course 105 minutes |
+| [Official study guide](https://learn.mongodb.com/courses/associate-data-modeler-exam-study-guide): canonical objective resource; current document unavailable here | Free enrollment listed; public viewer failed and document asset returned 403 | Publisher lists 30 min; historical 15 statements require reconciliation |
+| [Current certification learning path](https://learn.mongodb.com/learning-paths/mongodb-data-modeling-certification-learning-path) and [earlier path URL](https://learn.mongodb.com/learning-paths/data-modeling-for-mongodb): same visible eight required cards | Public outline; free/account learning; advertised 50% full-path completion discount, eligibility unverified | Publisher headline 8 hr; required cards 515 min (8h35); separate 105-min exam makes 10h20 including exam |
+| [Official practice questions](https://learn.mongodb.com/courses/associate-data-modeler-practice-questions): format practice with later explanation review | Free account/enrollment; public landing only read | Publisher lists 1 hr, plus personal review |
+| [August 18, 2026 path announcement](https://www.mongodb.com/company/blog/news/introducing-a-more-connected-flexible-path-to-certifications): badge/path context, not replacement scope | Public first-party announcement by Heather Davis and Joel Lord | Publisher lists 4 min |
+| [Schema-design process](https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/) and [data-modeling overview](https://www.mongodb.com/docs/manual/data-modeling/): use the linked workflow against one application | Public; main overviews and selected child references read | 2–4 hr selected reading/exercise estimate |
+| [Validation levels](https://www.mongodb.com/docs/manual/core/schema-validation/specify-validation-level/) and [schema versioning](https://www.mongodb.com/docs/manual/data-modeling/design-patterns/data-versioning/schema-versioning/): plan the legacy-data audit and mixed-reader rollout | Public; version-specific behavior requires deployed verification | 1–2 hr reading/lab estimate |
+| [Explain results](https://www.mongodb.com/docs/manual/reference/explain-results/): distinguish plan counters from workload latency | Public; selected plan-cache, engine and counter sections read, no actual plan run | 1–2 hr selected reading/lab estimate |
+| [Data modeling and memory sizing](https://www.mongodb.com/company/blog/technical/performance-best-practices-mongodb-data-modeling-and-memory-sizing): historical working-set/locality context by Henrik Ingo and Mat Keep, published January 28 and updated July 22, 2020 | Public article; historical Atlas feature claims not adopted as current guarantees | 45–90 min reading/model-review estimate |
+| [High Performance with MongoDB](https://www.oreilly.com/library/view/high-performance-with/9781837022632/): optional book/video depth; current contents unverified | Paid/O’Reilly; public request returned 403, no interior reviewed | Earlier 10h16 and 2025 metadata not reverified |
+| [MongoDB Essentials](https://www.oreilly.com/library/view/mongodb-essentials/9781806706099/): optional overview; current contents unverified | Paid/O’Reilly; public request returned 403 | Earlier 1h36 and 2025 metadata not reverified |
+| [Schema Design Best Practices video](https://www.youtube.com/watch?v=QAqK-R9HUhc): optional visual format | Public title/footer only retrieved; video not played | Earlier about 10 min not reverified |
+| [MongoDB — The Complete Developer’s Guide](https://www.udemy.com/course/mongodb-the-complete-developers-guide/): broad optional application course | Paid/Udemy; public request returned 403, no interior reviewed | Earlier about 17.5 hr not reverified |
+
+The required path cards list CRUD 90, relational-to-document 75, patterns 60, advanced patterns 60, optimization 60, transformation 50, indexing 60 and performance 60 minutes: 515 total. The separate exam card lists 105 minutes, reproducing the course-route discrepancy with the main exam page's 110. These are visible catalog measures, not observed completion times.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

@@ -1758,6 +1758,8 @@ The review maps every domain through typed document contract → exact filter/op
 
 ## MONGODB-ASSOCIATE-DATA-MODELER coverage record
 
+The September 29 [deep review](research/2026-09-29-mongodb-associate-data-modeler-deep-review.md) maps 15 detailed objectives. Mapped15 retained historical statements without claiming current objective confirmation. Added40 answered prompts,34 executed local predictions,three worked scenarios andeight proposed labs. Clarified skew,bounds,replay,validation,migration reconciliation,rollback,index evidence and conflicting exam/catalog measures. Live server,current objective body,paid interiors andhuman review remain pending. Current guide citations: 31 registered, 28 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 7, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Requirements Gathering (10%), Entities (13%), Relationships (8.5%), Workload/Usage (10%), Data Model Design (28%), Modeling for Technical Requirements (10%), Indexing (13%), and Monitoring and Evolving Data Models (7.5%)

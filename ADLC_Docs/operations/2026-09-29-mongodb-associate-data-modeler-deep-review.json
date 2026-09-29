@@ -1,0 +1,1706 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "MONGODB-ASSOCIATE-DATA-MODELER",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/MONGODB-ASSOCIATE-DATA-MODELER-mongodb-associate-data-modeler.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "f76901779cad9b458ac0db39fc1c4079c27b7505beaef2a688cac8581bdc895a",
+  "guide_after_sha256": "4adb33e5181ec2b19877e4bf955c91a3e0685862efdb7350c3fb4a7f02c77415",
+  "prior_records": {
+    "exam": {
+      "code": "MONGODB-ASSOCIATE-DATA-MODELER",
+      "level": "intermediate",
+      "vendor_id": "mongodb",
+      "title": "MongoDB Associate Data Modeler",
+      "status": "active",
+      "study_guide_url": "https://learn.mongodb.com/courses/associate-data-modeler-exam-study-guide",
+      "guide_path": "guides/MONGODB-ASSOCIATE-DATA-MODELER-mongodb-associate-data-modeler.md",
+      "blueprint_last_checked": "2026-09-07",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-07",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite is published, but MongoDB positions the exam for experienced users familiar with JSON, MongoDB Query API operations and aggregations, data modeling, and simplicity-versus-performance tradeoffs. Practice a complete evidence-led requirements, entity, relationship, workload, model, index, monitoring, and compatible-evolution cycle."
+    },
+    "review": {
+      "id": "mongodb-associate-data-modeler-2026-09-07-source-validation",
+      "exam_code": "MONGODB-ASSOCIATE-DATA-MODELER",
+      "guide_path": "guides/MONGODB-ASSOCIATE-DATA-MODELER-mongodb-associate-data-modeler.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-07",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mongodb-associate-data-modeler-official-objectives.txt",
+      "blueprint_snapshot_sha256": "e3b9632a8ab5b80cdb74a5ccd557cdc482917c1aca71f116b804b9fd6f92fd10",
+      "objective_coverage": [
+        {
+          "objective_group": "Requirements Gathering (10%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Entities (13%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Relationships (8.5%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Workload/Usage (10%)",
+          "guide_sections": [
+            "Section 4",
+            "All scenarios",
+            "Labs 1 and 6"
+          ]
+        },
+        {
+          "objective_group": "Data Model Design (28%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Modeling for Technical Requirements (10%)",
+          "guide_sections": [
+            "Section 6",
+            "All scenarios",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Indexing (13%)",
+          "guide_sections": [
+            "Section 7",
+            "All scenarios",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Monitoring and Evolving Data Models (7.5%)",
+          "guide_sections": [
+            "Section 8",
+            "All scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 13,
+        "reachable": 10,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "All eight September 2 weighted domains are mapped through an evidence-led requirements, entity, relationship, workload, candidate-model, technical-constraint, index, monitoring and compatible-evolution cycle. Three scenarios, eight authorized labs and 40 original checks are included. The current 75-question/110-minute contract renders, while the enrolled detailed guide could not be deterministically re-audited on September 7; that blocker, the dated weights, stale 70/105 route, and August path alignment are explicit. An older MongoDB technical article adds workload-led model and memory/index practice without being treated as current scope. No recalled/live item, dump or copied course content is used."
+    },
+    "sources": [
+      {
+        "id": "udemy-mongodb-complete-developer-guide-academind",
+        "title": "MongoDB - The Complete Developer's Guide",
+        "url": "https://www.udemy.com/course/mongodb-the-complete-developers-guide/",
+        "publisher": "Udemy / Academind",
+        "authority_class": 3,
+        "source_type": "commercial-course",
+        "access_model": "paid",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DEVELOPER",
+          "MONGODB-ASSOCIATE-DATA-MODELER"
+        ],
+        "notes": "Approximately 17.5-hour broad course listed as updated January 2026; select relevant modeling/index sections, distinguish official drivers from frameworks, and reconcile behavior with current official documentation. September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: HTTP403. Earlier17.5hours/January2026 metadata and coverage not reverified. Repaired replacement character in catalog title without inventing a new title. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "mongodb-associate-data-modeler-exam",
+        "title": "MongoDB Associate Data Modeler Exam",
+        "url": "https://learn.mongodb.com/pages/mongodb-associate-data-modeler-exam",
+        "publisher": "MongoDB University",
+        "authority_class": 1,
+        "source_type": "official-certification-page",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DATA-MODELER"
+        ],
+        "notes": "Current public 75-question, 110-minute, USD150, English, online-proctored contract. An older course route still exposes 70 questions/105 minutes and is not treated as current."
+      },
+      {
+        "id": "mongodb-associate-data-modeler-study-guide",
+        "title": "Associate Data Modeler Exam Study Guide",
+        "url": "https://learn.mongodb.com/courses/associate-data-modeler-exam-study-guide",
+        "publisher": "MongoDB University",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DATA-MODELER"
+        ],
+        "notes": "Canonical 30-minute eight-domain objective guide; free enrollment/email capture is required."
+      },
+      {
+        "id": "mongodb-data-modeling-path",
+        "title": "MongoDB Data Modeling Path",
+        "url": "https://learn.mongodb.com/learning-paths/data-modeling-for-mongodb",
+        "publisher": "MongoDB University",
+        "authority_class": 1,
+        "source_type": "official-learning-path",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DATA-MODELER"
+        ],
+        "notes": "Free eight-hour official path covering CRUD, relational-to-document conversion, patterns/anti-patterns, optimization, aggregation, indexing and performance. Its embedded exam-duration card lags the current exam landing page."
+      },
+      {
+        "id": "mongodb-associate-data-modeler-practice",
+        "title": "Associate Data Modeler Practice Questions",
+        "url": "https://learn.mongodb.com/courses/associate-data-modeler-practice-questions",
+        "publisher": "MongoDB University",
+        "authority_class": 1,
+        "source_type": "official-practice",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DATA-MODELER"
+        ],
+        "notes": "Official one-hour practice resource. Use explanations and objective gaps rather than memorizing items."
+      },
+      {
+        "id": "mongodb-certification-path-update-2026",
+        "title": "Introducing a More Connected, Flexible Path to MongoDB Certifications",
+        "url": "https://www.mongodb.com/company/blog/news/introducing-a-more-connected-flexible-path-to-certifications",
+        "publisher": "MongoDB",
+        "authority_class": 1,
+        "source_type": "official-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DATA-MODELER",
+          "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+        ],
+        "notes": "August 18, 2026 announcement aligning Data Modeler, Database Administrator and Atlas Administrator learning paths with skill badges and a completion discount; it does not announce replacement exams."
+      },
+      {
+        "id": "mongodb-designing-schema",
+        "title": "Designing Your Schema",
+        "url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/",
+        "publisher": "MongoDB",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DATA-MODELER"
+        ],
+        "notes": "Canonical current workload, relationship, design-pattern and index workflow."
+      },
+      {
+        "id": "mongodb-data-modeling-docs",
+        "title": "MongoDB Data Modeling Documentation",
+        "url": "https://www.mongodb.com/docs/manual/data-modeling/",
+        "publisher": "MongoDB",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DATA-MODELER"
+        ],
+        "notes": "Canonical relationship, embedding/reference, schema pattern/anti-pattern, validation, operational-factor and evolution documentation; verify current server version."
+      },
+      {
+        "id": "mongodb-explain-results",
+        "title": "Explain Results",
+        "url": "https://www.mongodb.com/docs/manual/reference/explain-results/",
+        "publisher": "MongoDB",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DATA-MODELER"
+        ],
+        "notes": "Current execution-plan field and stage reference for validating index and model decisions; output varies by version and query engine."
+      },
+      {
+        "id": "oreilly-high-performance-mongodb",
+        "title": "High Performance with MongoDB",
+        "url": "https://www.oreilly.com/library/view/high-performance-with/9781837022632/",
+        "publisher": "O'Reilly / Packt / MongoDB",
+        "authority_class": 3,
+        "source_type": "commercial-book",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DATA-MODELER"
+        ],
+        "notes": "September 2025, 410-page/10h16m listed intermediate-to-advanced book by MongoDB experts; use selected schema, index, workload and measurement chapters."
+      },
+      {
+        "id": "oreilly-mongodb-essentials-2025",
+        "title": "MongoDB Essentials",
+        "url": "https://www.oreilly.com/library/view/mongodb-essentials/9781806706099/",
+        "publisher": "O'Reilly / Packt / MongoDB Team",
+        "authority_class": 3,
+        "source_type": "commercial-book",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DATA-MODELER"
+        ],
+        "notes": "September 2025, 84-page/1h36m listed concise overview by the MongoDB Team, including data modeling and performance."
+      },
+      {
+        "id": "youtube-mongodb-schema-design-best-practices",
+        "title": "MongoDB Schema Design Best Practices",
+        "url": "https://www.youtube.com/watch?v=QAqK-R9HUhc",
+        "publisher": "MongoDB",
+        "authority_class": 1,
+        "source_type": "official-video",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DATA-MODELER"
+        ],
+        "notes": "Approximately ten-minute official visual overview of access patterns, relationships and schema choices; concise orientation rather than complete exam coverage."
+      },
+      {
+        "id": "mongodb-performance-data-modeling-memory-sizing",
+        "title": "Performance Best Practices: MongoDB Data Modeling and Memory Sizing",
+        "url": "https://www.mongodb.com/company/blog/technical/performance-best-practices-mongodb-data-modeling-and-memory-sizing",
+        "publisher": "MongoDB",
+        "authority_class": 2,
+        "source_type": "official-guidance",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DATA-MODELER"
+        ],
+        "notes": "Older first-party technical article on query-pattern-led modeling, embedding/referencing, working set, growth, and index tradeoffs; not current exam scope."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "edf91cc79ee94a4d17b25d14b80b5dd951f30dc32c099bc2f40447445ca79be8",
+      "guide_sections": [
+        "1. Requirements Gathering — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "3f8bccd294be6416e2dcddf1407c5bd796a65adaebdbfc750f72b8df1ac5778b",
+      "guide_sections": [
+        "1. Requirements Gathering — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "c3f1e6a01eef32536cff9f1efdd01d681777e7f26ef2c76585b145920f3f0ac7",
+      "guide_sections": [
+        "2. Entities — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "fb04eae1ca88a983d3ed6b4512c5cdb3cbad6cdf031a424a48e0744929f02d03",
+      "guide_sections": [
+        "2. Entities — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "ddbc6d5f182264fad3ab5296014594024944d63aef7ec482c84254582038a369",
+      "guide_sections": [
+        "3. Relationships — 8.5%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "5d74e17a4c63849980ec2c57a9503106a04610589145555abe4e6c68162944fc",
+      "guide_sections": [
+        "4. Workload/Usage — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "8226e5b31da6e39d1a43c7b9976364578d67c5ea7cead1274b700316657769e0",
+      "guide_sections": [
+        "4. Workload/Usage — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "7cbf25fc03bda1ca0529c0bd5d3507abc924410050ca98b7e530fa0d4c11cd08",
+      "guide_sections": [
+        "5. Data Model Design — 28%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "466c9dfb40450fbc52ae30c6f277501eab37cc354d1fbde865892c9d497fe75a",
+      "guide_sections": [
+        "5. Data Model Design — 28%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "215a5a265f8332a28a3f86b8610e3dd3dd811f9209ba2edc6fb6ed500de05a69",
+      "guide_sections": [
+        "5. Data Model Design — 28%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "a130771ba434fc13e6c35ce2114713a4d97ad23c02f84b6657678460d8ef66cf",
+      "guide_sections": [
+        "6. Modeling for Technical Requirements — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "39dc88a9c59c7f27706a2f19df60b7967243d30b7f1973f782e8d34670e79a41",
+      "guide_sections": [
+        "7. Indexing — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "92256c74724fad63241fed6bd4841efd8de2ecdb5640f32fab1b20230f541350",
+      "guide_sections": [
+        "7. Indexing — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "1f1cd8f7695720c4a001077cba26c57d2410731bfd3b6eb9f8f982ecd7626280",
+      "guide_sections": [
+        "8. Monitoring and Evolving Data Models — 7.5%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "00a6c169a73fde8adaa3f2641a61e6d999a1ac097cff44b379c4cf1aaa365172",
+      "guide_sections": [
+        "8. Monitoring and Evolving Data Models — 7.5%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [
+      "MONGODB-ASSOCIATE-DATA-MODELER"
+    ],
+    "results": [
+      {
+        "code": "MONGODB-ASSOCIATE-DATA-MODELER",
+        "title": "MongoDB Associate Data Modeler",
+        "url": "https://learn.mongodb.com/courses/associate-data-modeler-exam-study-guide",
+        "guide_path": "guides/MONGODB-ASSOCIATE-DATA-MODELER-mongodb-associate-data-modeler.md",
+        "snapshot_path": "data\\objective-snapshots\\mongodb-associate-data-modeler-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\mongodb-associate-data-modeler-official-status.json",
+        "status": "manual-review",
+        "changed": false,
+        "error": "ValueError: Could not find MongoDB study-guide identity or objectives",
+        "manual_review_reason": "The reachable public MongoDB response is an enrollment shell and does not expose the reviewed study-guide identity or objectives without its browser application.",
+        "review_route": "docs/SOURCE-FRESHNESS.md"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 31,
+    "reachable": 28,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "udemy-mongodb-complete-developer-guide-academind",
+      "url": "https://www.udemy.com/course/mongodb-the-complete-developers-guide/",
+      "checked_at": "2026-09-29T15:46:49.526620+00:00",
+      "health": {
+        "id": "udemy-mongodb-complete-developer-guide-academind",
+        "url": "https://www.udemy.com/course/mongodb-the-complete-developers-guide/",
+        "checked_at": "2026-09-29T15:46:49+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/mongodb-the-complete-developers-guide/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "mongodb-associate-data-modeler-exam",
+      "url": "https://learn.mongodb.com/pages/mongodb-associate-data-modeler-exam",
+      "checked_at": "2026-09-29T15:46:49.527630+00:00",
+      "health": {
+        "id": "mongodb-associate-data-modeler-exam",
+        "url": "https://learn.mongodb.com/pages/mongodb-associate-data-modeler-exam",
+        "checked_at": "2026-09-29T15:46:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.mongodb.com/pages/mongodb-associate-data-modeler-exam",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "MongoDB Associate Data Modeler Exam | MongoDB University",
+        "canonical_url": "https://learn.mongodb.com/pages/mongodb-associate-data-modeler-exam",
+        "duration_signals": [
+          "110 Minutes"
+        ],
+        "signal_fingerprint": "da8c79451270d4c6eb2051d5a5d98d091bbd460015aacf5b80f612377fb4b3fb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.mongodb.com/pages/mongodb-associate-data-modeler-exam",
+      "sha256": "8ab4440f0afab15158ef6f878c0f9c51ba4b1b6a63e15cb1e9cb565d0e81681f",
+      "text_characters": 50
+    },
+    {
+      "id": "mongodb-associate-data-modeler-study-guide",
+      "url": "https://learn.mongodb.com/courses/associate-data-modeler-exam-study-guide",
+      "checked_at": "2026-09-29T15:46:49.528217+00:00",
+      "health": {
+        "id": "mongodb-associate-data-modeler-study-guide",
+        "url": "https://learn.mongodb.com/courses/associate-data-modeler-exam-study-guide",
+        "checked_at": "2026-09-29T15:46:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.mongodb.com/courses/associate-data-modeler-exam-study-guide",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Associate Data Modeler Exam Study Guide | MongoDB University",
+        "canonical_url": "https://learn.mongodb.com/courses/associate-data-modeler-exam-study-guide",
+        "duration_signals": [
+          "30 Minutes"
+        ],
+        "signal_fingerprint": "c8a29b8d1493050368bf0281920336b2413b89dce9d266dec2d5e7057c6a8f16",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.mongodb.com/courses/associate-data-modeler-exam-study-guide",
+      "sha256": "fca236c5fde178d0b64002e0f0d05cb101f836b3c4c693c23688042fb3dea27b",
+      "text_characters": 50
+    },
+    {
+      "id": "mongodb-data-modeling-path",
+      "url": "https://learn.mongodb.com/learning-paths/data-modeling-for-mongodb",
+      "checked_at": "2026-09-29T15:46:49.740653+00:00",
+      "health": {
+        "id": "mongodb-data-modeling-path",
+        "url": "https://learn.mongodb.com/learning-paths/data-modeling-for-mongodb",
+        "checked_at": "2026-09-29T15:46:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.mongodb.com/learning-paths/data-modeling-for-mongodb",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "MongoDB Data Modeling Path | MongoDB University",
+        "canonical_url": "https://learn.mongodb.com/learning-paths/mongodb-data-modeling-certification-learning-path",
+        "duration_signals": [
+          "1 Hour",
+          "1.25 Hours",
+          "1.5 Hours",
+          "105 Minutes",
+          "50 Minutes",
+          "8 Hours"
+        ],
+        "signal_fingerprint": "876ce9621ac002f6b61a97654abc8b93599615cd7b17c78facef9e512553681f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.mongodb.com/learning-paths/data-modeling-for-mongodb",
+      "sha256": "c36c61490b0fc6e575a22cfba3c393e034b5c6d2c9652c8f08a04c0399086082",
+      "text_characters": 50
+    },
+    {
+      "id": "mongodb-associate-data-modeler-practice",
+      "url": "https://learn.mongodb.com/courses/associate-data-modeler-practice-questions",
+      "checked_at": "2026-09-29T15:46:50.361796+00:00",
+      "health": {
+        "id": "mongodb-associate-data-modeler-practice",
+        "url": "https://learn.mongodb.com/courses/associate-data-modeler-practice-questions",
+        "checked_at": "2026-09-29T15:46:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.mongodb.com/courses/associate-data-modeler-practice-questions",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Associate Data Modeler Exam Practices | MongoDB University",
+        "canonical_url": "https://learn.mongodb.com/courses/associate-data-modeler-practice-questions",
+        "duration_signals": [
+          "1 Hour"
+        ],
+        "signal_fingerprint": "ebeea29dd61cd105fda84ab40d25f7a93f66c3c78f8ff594e24b5d67e32a7d72",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.mongodb.com/courses/associate-data-modeler-practice-questions",
+      "sha256": "a19210f1c9e63411e37a031bef1ab784c62da0243fdae9e9b2208f55cc43d590",
+      "text_characters": 50
+    },
+    {
+      "id": "mongodb-certification-path-update-2026",
+      "url": "https://www.mongodb.com/company/blog/news/introducing-a-more-connected-flexible-path-to-certifications",
+      "checked_at": "2026-09-29T15:46:50.362158+00:00",
+      "health": {
+        "id": "mongodb-certification-path-update-2026",
+        "url": "https://www.mongodb.com/company/blog/news/introducing-a-more-connected-flexible-path-to-certifications",
+        "checked_at": "2026-09-29T15:46:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/company/blog/news/introducing-a-more-connected-flexible-path-to-certifications",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Introducing a More Connected, Flexible Path to MongoDB Certifications",
+        "canonical_url": "https://www.mongodb.com/company/blog/news/introducing-a-more-connected-flexible-path-to-certifications",
+        "duration_signals": [
+          "4 min"
+        ],
+        "signal_fingerprint": "b4782a9daa42deea348088d8b8be4c121bf570c3286231a02bcc495dded51705",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/company/blog/news/introducing-a-more-connected-flexible-path-to-certifications",
+      "sha256": "e13feb00e0306e50a931d1942060057bf7c2887e0cd3805cd8c9ca95a3fe7961",
+      "text_characters": 7049
+    },
+    {
+      "id": "mongodb-designing-schema",
+      "url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/",
+      "checked_at": "2026-09-29T15:46:50.412624+00:00",
+      "health": {
+        "id": "mongodb-designing-schema",
+        "url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/",
+        "checked_at": "2026-09-29T15:46:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Designing Your Schema - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/",
+        "duration_signals": [],
+        "signal_fingerprint": "8a439a59f290adce5f238808509a44cd6984916b1cc8ff216fb844feb8542298",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/",
+      "sha256": "67ca909e8dc3c4c63aa8221549a28841cabca08ad2cb7ccbd22c668aacfeb15f",
+      "text_characters": 1335
+    },
+    {
+      "id": "mongodb-data-modeling-docs",
+      "url": "https://www.mongodb.com/docs/manual/data-modeling/",
+      "checked_at": "2026-09-29T15:46:50.802014+00:00",
+      "health": {
+        "id": "mongodb-data-modeling-docs",
+        "url": "https://www.mongodb.com/docs/manual/data-modeling/",
+        "checked_at": "2026-09-29T15:46:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/data-modeling/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Data Modeling in MongoDB - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/data-modeling/",
+        "duration_signals": [],
+        "signal_fingerprint": "f3c010a12867920f65602e08c81937c6d50a2656ca105103530723ec6b91e8e1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/data-modeling/",
+      "sha256": "2772abc256d50e2985230dac8716626c094fdddfb5961fad61ef1138db129b3f",
+      "text_characters": 4345
+    },
+    {
+      "id": "mongodb-explain-results",
+      "url": "https://www.mongodb.com/docs/manual/reference/explain-results/",
+      "checked_at": "2026-09-29T15:46:51.280041+00:00",
+      "health": {
+        "id": "mongodb-explain-results",
+        "url": "https://www.mongodb.com/docs/manual/reference/explain-results/",
+        "checked_at": "2026-09-29T15:46:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/reference/explain-results/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Explain Results - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/reference/explain-results/",
+        "duration_signals": [],
+        "signal_fingerprint": "f7701373461bd031a072786a0c0294e024d60801c83867f421832ae8e9533b7a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/reference/explain-results/",
+      "sha256": "94705e7480a3cc692a85c454085361965fbaa6a4633075804708767c16450d25",
+      "text_characters": 33197
+    },
+    {
+      "id": "oreilly-high-performance-mongodb",
+      "url": "https://www.oreilly.com/library/view/high-performance-with/9781837022632/",
+      "checked_at": "2026-09-29T15:46:51.438184+00:00",
+      "health": {
+        "id": "oreilly-high-performance-mongodb",
+        "url": "https://www.oreilly.com/library/view/high-performance-with/9781837022632/",
+        "checked_at": "2026-09-29T15:46:51+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/high-performance-with/9781837022632/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "oreilly-mongodb-essentials-2025",
+      "url": "https://www.oreilly.com/library/view/mongodb-essentials/9781806706099/",
+      "checked_at": "2026-09-29T15:46:51.569354+00:00",
+      "health": {
+        "id": "oreilly-mongodb-essentials-2025",
+        "url": "https://www.oreilly.com/library/view/mongodb-essentials/9781806706099/",
+        "checked_at": "2026-09-29T15:46:51+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/mongodb-essentials/9781806706099/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "youtube-mongodb-schema-design-best-practices",
+      "url": "https://www.youtube.com/watch?v=QAqK-R9HUhc",
+      "checked_at": "2026-09-29T15:46:51.600436+00:00",
+      "health": {
+        "id": "youtube-mongodb-schema-design-best-practices",
+        "url": "https://www.youtube.com/watch?v=QAqK-R9HUhc",
+        "checked_at": "2026-09-29T15:46:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=QAqK-R9HUhc",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "MongoDB Schema Design Best Practices",
+        "canonical_url": "https://www.youtube.com/watch?v=QAqK-R9HUhc",
+        "duration_signals": [],
+        "signal_fingerprint": "0015121534dc8f4ecd03e0f2c4f37ee4c5fbd77ff6b2d8b0564b4e1b9ba7a9fb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=QAqK-R9HUhc",
+      "sha256": "cde3d147d82dcfb9a55cdf29ed99e91e661d5b7a4882510cb4569f73e27c0b07",
+      "text_characters": 199
+    },
+    {
+      "id": "mongodb-performance-data-modeling-memory-sizing",
+      "url": "https://www.mongodb.com/company/blog/technical/performance-best-practices-mongodb-data-modeling-and-memory-sizing",
+      "checked_at": "2026-09-29T15:46:51.629458+00:00",
+      "health": {
+        "id": "mongodb-performance-data-modeling-memory-sizing",
+        "url": "https://www.mongodb.com/company/blog/technical/performance-best-practices-mongodb-data-modeling-and-memory-sizing",
+        "checked_at": "2026-09-29T15:46:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/company/blog/technical/performance-best-practices-mongodb-data-modeling-and-memory-sizing",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Performance Best Practices: MongoDB Data Modeling and Memory Sizing",
+        "canonical_url": "https://www.mongodb.com/company/blog/technical/performance-best-practices-mongodb-data-modeling-and-memory-sizing",
+        "duration_signals": [],
+        "signal_fingerprint": "cf4a904ae7b56fe6250d670c41620e2f75fc62d3f27aea8904b2804e511ae317",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/company/blog/technical/performance-best-practices-mongodb-data-modeling-and-memory-sizing",
+      "sha256": "46816a1a31da115333f02a18d6726275602a4af6aac505df5632b9cafa5199b2",
+      "text_characters": 12758
+    },
+    {
+      "id": "mongodb-data-modeling-certification-path",
+      "url": "https://learn.mongodb.com/learning-paths/mongodb-data-modeling-certification-learning-path",
+      "checked_at": "2026-09-29T15:48:34.235605+00:00",
+      "health": {
+        "id": "mongodb-data-modeling-certification-path",
+        "url": "https://learn.mongodb.com/learning-paths/mongodb-data-modeling-certification-learning-path",
+        "checked_at": "2026-09-29T15:48:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.mongodb.com/learning-paths/mongodb-data-modeling-certification-learning-path",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "MongoDB Courses and Trainings | MongoDB University",
+        "canonical_url": "https://learn.mongodb.com/learning-paths/mongodb-data-modeling-certification-learning-path",
+        "duration_signals": [
+          "1 Hour",
+          "1.25 Hours",
+          "1.5 Hours",
+          "105 Minutes",
+          "50 Minutes",
+          "8 Hours"
+        ],
+        "signal_fingerprint": "c4690edf897090ab7c96c3d3b4beb56a27087e6df9bd4391f67eeb3ed4aabc0d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.mongodb.com/learning-paths/mongodb-data-modeling-certification-learning-path",
+      "sha256": "51952db55e97849e743aa79239977f0a3dd40399bdf3bc0079de623ad7aaf500",
+      "text_characters": 50
+    },
+    {
+      "id": "mongodb-data-modeler-course-exam",
+      "url": "https://learn.mongodb.com/courses/mongodb-associate-data-modeler-exam",
+      "checked_at": "2026-09-29T15:48:34.236422+00:00",
+      "health": {
+        "id": "mongodb-data-modeler-course-exam",
+        "url": "https://learn.mongodb.com/courses/mongodb-associate-data-modeler-exam",
+        "checked_at": "2026-09-29T15:48:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.mongodb.com/courses/mongodb-associate-data-modeler-exam",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Associate Associate Data Modeler Exam",
+        "canonical_url": "https://learn.mongodb.com/courses/mongodb-associate-data-modeler-exam",
+        "duration_signals": [
+          "105 Minutes"
+        ],
+        "signal_fingerprint": "73014c54096667f36637e8cc8cf49d2076817b8484cdf32fa512a12e7f4f337b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.mongodb.com/courses/mongodb-associate-data-modeler-exam",
+      "sha256": "d3d006e3cd970d2822c7bb64e46ea2b82e423b220632e0853ec08647986c604a",
+      "text_characters": 50
+    },
+    {
+      "id": "mongodb-validation-level",
+      "url": "https://www.mongodb.com/docs/manual/core/schema-validation/specify-validation-level/",
+      "checked_at": "2026-09-29T15:48:34.236755+00:00",
+      "health": {
+        "id": "mongodb-validation-level",
+        "url": "https://www.mongodb.com/docs/manual/core/schema-validation/specify-validation-level/",
+        "checked_at": "2026-09-29T15:48:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/core/schema-validation/specify-validation-level/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Specify Validation Level for Existing Documents - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/core/schema-validation/specify-validation-level/",
+        "duration_signals": [],
+        "signal_fingerprint": "972fce22281cf51116eb65bef78b95588a8e9102d45ee72f3b427c6b556dd434",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/core/schema-validation/specify-validation-level/",
+      "sha256": "aadbfb0302eb5b1f54f6d7b82670ea7a1a79d591d94156cbdc0bbeb90b89bcbf",
+      "text_characters": 6912
+    },
+    {
+      "id": "mongodb-json-schema-validation",
+      "url": "https://www.mongodb.com/docs/manual/core/schema-validation/specify-json-schema/",
+      "checked_at": "2026-09-29T15:48:35.066564+00:00",
+      "health": {
+        "id": "mongodb-json-schema-validation",
+        "url": "https://www.mongodb.com/docs/manual/core/schema-validation/specify-json-schema/",
+        "checked_at": "2026-09-29T15:48:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/core/schema-validation/specify-json-schema/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Specify JSON Schema Validation - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/core/schema-validation/specify-json-schema/",
+        "duration_signals": [],
+        "signal_fingerprint": "738415c2b6bde83b65aacec3cad106b4b09d7973dabf9d6f42346d37ba713826",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/core/schema-validation/specify-json-schema/",
+      "sha256": "648aa95e76cc178f27e8eea1c4e974978f8147f781e5192b770792dc222ac0f6",
+      "text_characters": 4202
+    },
+    {
+      "id": "mongodb-schema-versioning",
+      "url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/data-versioning/schema-versioning/",
+      "checked_at": "2026-09-29T15:48:35.165026+00:00",
+      "health": {
+        "id": "mongodb-schema-versioning",
+        "url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/data-versioning/schema-versioning/",
+        "checked_at": "2026-09-29T15:48:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/data-versioning/schema-versioning/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Maintain Different Schema Versions - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/data-versioning/schema-versioning/",
+        "duration_signals": [],
+        "signal_fingerprint": "80bce32efc9fb0883c8d1ffe2385796afaeba0dac90e27e94cc82186268a566c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/data-versioning/schema-versioning/",
+      "sha256": "3988e4ff9770bd8c51901e662fdbfcf454c441fbb3e99d806106a3be1b7266f2",
+      "text_characters": 3864
+    },
+    {
+      "id": "mongodb-ttl-indexes",
+      "url": "https://www.mongodb.com/docs/manual/core/index-ttl/",
+      "checked_at": "2026-09-29T15:48:35.432266+00:00",
+      "health": {
+        "id": "mongodb-ttl-indexes",
+        "url": "https://www.mongodb.com/docs/manual/core/index-ttl/",
+        "checked_at": "2026-09-29T15:48:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/core/index-ttl/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "TTL Indexes - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/core/index-ttl/",
+        "duration_signals": [
+          "1 hour",
+          "24 hours"
+        ],
+        "signal_fingerprint": "08a590f0fc8cb2d46c9f391080402b68fa2c7e9c294eb8ddbb78acb5e665cb1d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/core/index-ttl/",
+      "sha256": "0d21f637efd863c8436fe6595a51fe6ad6800640a337867044adcebb47069202",
+      "text_characters": 10740
+    },
+    {
+      "id": "mongodb-identify-workload",
+      "url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/identify-workload/",
+      "checked_at": "2026-09-29T15:48:35.868963+00:00",
+      "health": {
+        "id": "mongodb-identify-workload",
+        "url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/identify-workload/",
+        "checked_at": "2026-09-29T15:48:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/identify-workload/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Identify Application Workload - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/identify-workload/",
+        "duration_signals": [],
+        "signal_fingerprint": "c92303029680ce1f9d87d21dacd8e7a12623137f1bf9d28b9f5c9fde2ba9a36b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/identify-workload/",
+      "sha256": "c8c73d697899d5abfa902c46ebc9b9356b6c9240d06e8bcb4e8d37c41bdbd7fa",
+      "text_characters": 2038
+    },
+    {
+      "id": "mongodb-map-relationships",
+      "url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/map-relationships/",
+      "checked_at": "2026-09-29T15:48:36.245766+00:00",
+      "health": {
+        "id": "mongodb-map-relationships",
+        "url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/map-relationships/",
+        "checked_at": "2026-09-29T15:48:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/map-relationships/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Map Schema Relationships - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/map-relationships/",
+        "duration_signals": [],
+        "signal_fingerprint": "d0eba31cc465478f260debacc3ec18df182a9f116d0c82a2e682171dbff5d2f8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/map-relationships/",
+      "sha256": "c7a31a78b81e9fe8465b305a0f15517bd9a5d9523d5706fbb515740b58edd9ae",
+      "text_characters": 4502
+    },
+    {
+      "id": "mongodb-apply-patterns",
+      "url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/apply-patterns/",
+      "checked_at": "2026-09-29T15:48:36.432093+00:00",
+      "health": {
+        "id": "mongodb-apply-patterns",
+        "url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/apply-patterns/",
+        "checked_at": "2026-09-29T15:48:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/apply-patterns/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Apply Design Patterns - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/apply-patterns/",
+        "duration_signals": [],
+        "signal_fingerprint": "f3ce6064a6c4ab096cf8985c4df2130c551db9cf571d5e8d35da3639a34a8133",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/apply-patterns/",
+      "sha256": "a70f55b4ce06cae3ac251591cb719ae3e67179f38c92b328ff8b4e56439eec14",
+      "text_characters": 2239
+    },
+    {
+      "id": "mongodb-schema-patterns",
+      "url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/",
+      "checked_at": "2026-09-29T15:48:36.876164+00:00",
+      "health": {
+        "id": "mongodb-schema-patterns",
+        "url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/",
+        "checked_at": "2026-09-29T15:48:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Schema Design Patterns - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/",
+        "duration_signals": [],
+        "signal_fingerprint": "709dcad987c35fdfdee601b96d0b29b2d48edbb47620c75e0d74410c4216883a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/",
+      "sha256": "92cc7a9323b8c6b404ae4dc1971f9e57b4abc60194a4b204b7201315a4850b7a",
+      "text_characters": 929
+    },
+    {
+      "id": "mongodb-atomicity-transactions",
+      "url": "https://www.mongodb.com/docs/manual/core/write-operations-atomicity/",
+      "checked_at": "2026-09-29T15:48:37.028725+00:00",
+      "health": {
+        "id": "mongodb-atomicity-transactions",
+        "url": "https://www.mongodb.com/docs/manual/core/write-operations-atomicity/",
+        "checked_at": "2026-09-29T15:48:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/core/write-operations-atomicity/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Atomicity and Transactions - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/core/write-operations-atomicity/",
+        "duration_signals": [],
+        "signal_fingerprint": "9767f5e42a5c1fa64422b82abe1fb25f328ede159341d0ac3119ac86a177ebe2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/core/write-operations-atomicity/",
+      "sha256": "3944619a290419f846ae52bc8b2c1b115751a895e91a7bb7507209158b173e57",
+      "text_characters": 3806
+    },
+    {
+      "id": "mongodb-index-unique",
+      "url": "https://www.mongodb.com/docs/manual/core/index-unique/",
+      "checked_at": "2026-09-29T15:48:37.389246+00:00",
+      "health": {
+        "id": "mongodb-index-unique",
+        "url": "https://www.mongodb.com/docs/manual/core/index-unique/",
+        "checked_at": "2026-09-29T15:48:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/core/index-unique/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Unique Indexes - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/core/index-unique/",
+        "duration_signals": [],
+        "signal_fingerprint": "7b58485527962803db33d77b47c843a04c42582edafc06f1024b894711e559d6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/core/index-unique/",
+      "sha256": "8774ad476344ffad27be7b6eea68c4829f49feec864ba0e49faec960d4fb2b6c",
+      "text_characters": 8356
+    },
+    {
+      "id": "mongodb-index-esr",
+      "url": "https://www.mongodb.com/docs/manual/tutorial/equality-sort-range-guideline/",
+      "checked_at": "2026-09-29T15:48:37.873879+00:00",
+      "health": {
+        "id": "mongodb-index-esr",
+        "url": "https://www.mongodb.com/docs/manual/tutorial/equality-sort-range-guideline/",
+        "checked_at": "2026-09-29T15:48:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/tutorial/equality-sort-range-guideline/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "The ESR (Equality, Sort, Range) Guideline - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/tutorial/equality-sort-range-guideline/",
+        "duration_signals": [
+          "130 minutes"
+        ],
+        "signal_fingerprint": "42414de43e0b31260d7fd4df46f8ce82eae425bf2db22326a56135597bdb886c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/tutorial/equality-sort-range-guideline/",
+      "sha256": "d3e07014a2045824254bc0954044a91e326166431909b7be88f33dadc6e42c1a",
+      "text_characters": 8172
+    },
+    {
+      "id": "mongodb-index-multikey",
+      "url": "https://www.mongodb.com/docs/manual/core/indexes/index-types/index-multikey/",
+      "checked_at": "2026-09-29T15:48:38.141679+00:00",
+      "health": {
+        "id": "mongodb-index-multikey",
+        "url": "https://www.mongodb.com/docs/manual/core/indexes/index-types/index-multikey/",
+        "checked_at": "2026-09-29T15:48:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/core/indexes/index-types/index-multikey/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Multikey Indexes - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/core/indexes/index-types/index-multikey/",
+        "duration_signals": [],
+        "signal_fingerprint": "75dc7d0692da96ed7e1e04dc64f58fffa2ccc0c93eb8c23fefc403aa8a3323cd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/core/indexes/index-types/index-multikey/",
+      "sha256": "122bcb11266d702ab383bfcb99557cf59ac113a3cf3d4671ffaa3fa3f8cd8d16",
+      "text_characters": 6858
+    },
+    {
+      "id": "mongodb-server-90-release-notes",
+      "url": "https://www.mongodb.com/docs/manual/release-notes/9.0/",
+      "checked_at": "2026-09-29T15:48:38.541581+00:00",
+      "health": {
+        "id": "mongodb-server-90-release-notes",
+        "url": "https://www.mongodb.com/docs/manual/release-notes/9.0/",
+        "checked_at": "2026-09-29T15:48:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/release-notes/9.0/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/release-notes/9/",
+        "duration_signals": [],
+        "signal_fingerprint": "3370cf8d96dad70d884039f309c86029690b25821636a212c33d7c2d45eb185d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/release-notes/9.0/",
+      "sha256": "84b438cc094379d882bad004bc85704afdb812598c2e7326cbd4413aea38c790",
+      "text_characters": 19617
+    },
+    {
+      "id": "mongodb-documents",
+      "url": "https://www.mongodb.com/docs/manual/core/document/",
+      "checked_at": "2026-09-29T15:48:38.899772+00:00",
+      "health": {
+        "id": "mongodb-documents",
+        "url": "https://www.mongodb.com/docs/manual/core/document/",
+        "checked_at": "2026-09-29T15:48:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/core/document/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Documents - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/core/document/",
+        "duration_signals": [],
+        "signal_fingerprint": "374770bc13c7743f83691580d0a416445556e931bb6527bc68ccec885484439f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/core/document/",
+      "sha256": "c09e5cc8dc659ae9b11bbce3225e97bf84599f947dbc5a5583a8c446598b82e1",
+      "text_characters": 9199
+    },
+    {
+      "id": "mongodb-computed-values",
+      "url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/handle-computed-values/",
+      "checked_at": "2026-09-29T15:50:15.701934+00:00",
+      "health": {
+        "id": "mongodb-computed-values",
+        "url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/handle-computed-values/",
+        "checked_at": "2026-09-29T15:50:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/handle-computed-values/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Handle Computed Values - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/handle-computed-values/",
+        "duration_signals": [],
+        "signal_fingerprint": "af54336537bd18d4c9077839c1a1669bd38a6e53e7bb5f874357f12ef5c7e056",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/handle-computed-values/",
+      "sha256": "4d74e895df3806feceb9ff95bf38607c567a8a07a011eef44b486468819c2061",
+      "text_characters": 1448
+    },
+    {
+      "id": "mongodb-group-data",
+      "url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/group-data/",
+      "checked_at": "2026-09-29T15:50:15.702460+00:00",
+      "health": {
+        "id": "mongodb-group-data",
+        "url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/group-data/",
+        "checked_at": "2026-09-29T15:50:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/group-data/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Group Data - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/group-data/",
+        "duration_signals": [],
+        "signal_fingerprint": "21af30a64d5fed10688927575188d79fbd258c9611b1b73b4b9c3fda7cc7ca9f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/group-data/",
+      "sha256": "0063f8edd3afc78a51557eb58f4537e49d4e1523cd0f2e78e2a858ad91555e49",
+      "text_characters": 1610
+    }
+  ],
+  "added_source_ids": [
+    "mongodb-data-modeling-certification-path",
+    "mongodb-data-modeler-course-exam",
+    "mongodb-validation-level",
+    "mongodb-json-schema-validation",
+    "mongodb-schema-versioning",
+    "mongodb-ttl-indexes",
+    "mongodb-identify-workload",
+    "mongodb-map-relationships",
+    "mongodb-apply-patterns",
+    "mongodb-schema-patterns",
+    "mongodb-computed-values",
+    "mongodb-group-data"
+  ],
+  "findings": [
+    {
+      "id": "mongodbassociatedatamodeler-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Current objective body unavailable",
+      "url": "https://learn.mongodb.com/courses/associate-data-modeler-exam-study-guide",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Publicviewer500 andasset403;15savedstatements cannot be freshly confirmed.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "mongodbassociatedatamodeler-deep-2",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Two official exam contracts remain visible",
+      "url": "https://learn.mongodb.com/courses/mongodb-associate-data-modeler-exam",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Main75questions110minutes;linkedcourseroute70questions105minutes.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "mongodbassociatedatamodeler-deep-3",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Headline differs from card totals",
+      "url": "https://learn.mongodb.com/learning-paths/mongodb-data-modeling-certification-learning-path",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "8hourheadline;515minutesrequiredlearning;105minuteexam separate.",
+      "recommendation": "Show all measures with public-reading boundary.",
+      "disposition": "applied",
+      "source_id": "mongodb-data-modeling-certification-path",
+      "resolution": "Show all measures with public-reading boundary."
+    },
+    {
+      "id": "mongodbassociatedatamodeler-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Strict validation is not historical reconciliation",
+      "url": "https://www.mongodb.com/docs/manual/core/schema-validation/specify-validation-level/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Strict checks future inserts/updates;moderate exempts updates of already invalid records.",
+      "recommendation": "Add decision matrix, legacy audit and version-specific9.0constraint caution.",
+      "disposition": "applied",
+      "source_id": "mongodb-validation-level",
+      "resolution": "Add decision matrix, legacy audit and version-specific9.0constraint caution."
+    },
+    {
+      "id": "mongodbassociatedatamodeler-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Checkpoint and rollback need business invariants",
+      "url": "https://www.mongodb.com/docs/manual/data-modeling/design-patterns/data-versioning/schema-versioning/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Checkpoint4 can hide missing3;two shipments cannot fit v1single slot losslessly.",
+      "recommendation": "Add guarded migration,identity reconciliation and refusedlossyrollback.",
+      "disposition": "applied",
+      "source_id": "mongodb-schema-versioning",
+      "resolution": "Add guarded migration,identity reconciliation and refusedlossyrollback."
+    },
+    {
+      "id": "mongodbassociatedatamodeler-deep-6",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Time-series TTL field guidance conflicts within reference",
+      "url": "https://www.mongodb.com/docs/manual/core/index-ttl/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Topdescribes timeFieldTTLindex+metaFieldfilter;restrictions mentionmetaFieldindex.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "mongodbassociatedatamodeler-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Explain is not steady-state network latency",
+      "url": "https://www.mongodb.com/docs/manual/reference/explain-results/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Plan cache ignored;executionTimeMillis excludesnetwork;documentexaminations canrepeat.",
+      "recommendation": "Separate plan evidence fromactualworkloadtiming andresultidentity checks.",
+      "disposition": "applied",
+      "source_id": "mongodb-explain-results",
+      "resolution": "Separate plan evidence fromactualworkloadtiming andresultidentity checks."
+    },
+    {
+      "id": "mongodbassociatedatamodeler-deep-8",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Navigation does not prove deployment availability",
+      "url": "https://www.mongodb.com/docs/manual/release-notes/9.0/",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "OpeningpatchheadingsUpcoming coexistwithcurrent/previewmanualcontext.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "mongodb-certification-path-update-2026",
+      "review": "August18,2026path/badgeannouncement; no replacementexam claim."
+    },
+    {
+      "source_id": "mongodb-performance-data-modeling-memory-sizing",
+      "review": "January28,2020updatedJuly22,2020historicaltechnicalcontext; feature/availabilityclaimsnotcurrentguarantees."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 34,
+      "python_blocks_executed": 1,
+      "python_version": "3.13.14",
+      "public_example_sha256": "deea9aa9bf73a680ce5c272e51962313be8b43232417486e958f57f7d72beffd",
+      "results": {
+        "passed": 34,
+        "checks": [
+          "average hides outlier",
+          "maximum differs from average",
+          "subset cap",
+          "subset conservation",
+          "archive still needs lifecycle",
+          "arithmetic capacity",
+          "next item crosses assumed budget",
+          "variable size changes bound",
+          "bucket count is ceiling",
+          "blind replay overcounts",
+          "deduplicated computed value",
+          "receipt count",
+          "changed replay rejected",
+          "boolean is not a monetary amount",
+          "rejections preserve total",
+          "reconciliation finds drift",
+          "migration preserves reader meaning",
+          "source fixture unchanged",
+          "revision advances",
+          "replay with fresh revision is no-op",
+          "stale retry rejected",
+          "unknown version rejected",
+          "reversible single shipment",
+          "split conserves units",
+          "lossy rollback refused",
+          "failed rollback preserves split",
+          "high checkpoint can hide hole",
+          "counts alone can hide substitution",
+          "identity reconciliation catches substitution",
+          "strict checks invalid legacy update",
+          "moderate exempts invalid legacy update",
+          "moderate checks valid legacy update",
+          "both check inserts",
+          "enabling strict is not historical repair"
+        ],
+        "results": {
+          "mean_items": 110,
+          "maximum_items": 10010,
+          "hot_items": 1010,
+          "archived_items": 9990,
+          "assumed_capacity": 24574,
+          "computed_cents": 1800,
+          "migration_revision": 8,
+          "checkpoint_hole": [
+            3
+          ]
+        }
+      },
+      "execution_stdout": "{\n  \"passed\": 34,\n  \"checks\": [\n    \"average hides outlier\",\n    \"maximum differs from average\",\n    \"subset cap\",\n    \"subset conservation\",\n    \"archive still needs lifecycle\",\n    \"arithmetic capacity\",\n    \"next item crosses assumed budget\",\n    \"variable size changes bound\",\n    \"bucket count is ceiling\",\n    \"blind replay overcounts\",\n    \"deduplicated computed value\",\n    \"receipt count\",\n    \"changed replay rejected\",\n    \"boolean is not a monetary amount\",\n    \"rejections preserve total\",\n    \"reconciliation finds drift\",\n    \"migration preserves reader meaning\",\n    \"source fixture unchanged\",\n    \"revision advances\",\n    \"replay with fresh revision is no-op\",\n    \"stale retry rejected\",\n    \"unknown version rejected\",\n    \"reversible single shipment\",\n    \"split conserves units\",\n    \"lossy rollback refused\",\n    \"failed rollback preserves split\",\n    \"high checkpoint can hide hole\",\n    \"counts alone can hide substitution\",\n    \"identity reconciliation catches substitution\",\n    \"strict checks invalid legacy update\",\n    \"moderate exempts invalid legacy update\",\n    \"moderate checks valid legacy update\",\n    \"both check inserts\",\n    \"enabling strict is not historical repair\"\n  ],\n  \"results\": {\n    \"mean_items\": 110,\n    \"maximum_items\": 10010,\n    \"hot_items\": 1010,\n    \"archived_items\": 9990,\n    \"assumed_capacity\": 24574,\n    \"computed_cents\": 1800,\n    \"migration_revision\": 8,\n    \"checkpoint_hole\": [\n      3\n    ]\n  }\n}",
+      "execution_boundary": "Actual standard-library Python arithmetic, fixtures and pure transformations only. No MongoDB server, shell, driver, BSON codec, Atlas account, index, network, paid credit or deployment execution.",
+      "model_limits": "Fixed byte assumptions are not BSON measurements. Subset arithmetic does not select newest records or bound archive growth. Receipts are sequential, process-local and non-durable; revision guard indivisibility is assumed. Validation decision matrix is not a JSON Schema/MongoDB validator. No authentication, performance, actual concurrency or deletion proof."
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Current enrolled objective body unavailable;15September2statements retained,not freshly confirmed. Viewer500/asset403 with no login or enrollment.",
+    "Main75question/110minute versuscourse70question/105minute contract unresolved; actual booking and detailed policies not verified.",
+    "Time-series TTL field discrepancy and9.0current/preview/Upcoming context require version-specific verification. No time-series TTLrecipe or GA/examversion claim.",
+    "34standard-library Python predictions only: noMongoDB/BSON/JSONSchemavalidator/Atlas,indexplan,performance,actualconcurrency,durable receipts,authentication orphysicaldeletion proof.",
+    "Three paid requests blocked; video not played; public catalogs do not prove lesson quality. Eight deploymentactivities andindependenthumanreview pending.",
+    "No installs,auth/permission/runtime/service/rebootchanges,paidcredits orexternalmessages. Five reservedGitHubguides anddisablednotificationpilot untouched."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 179,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Actual standard-library Python arithmetic, fixtures and pure transformations only. No MongoDB server, shell, driver, BSON codec, Atlas account, index, network, paid credit or deployment execution.",
+    "passed": 34,
+    "python_blocks_executed": 1,
+    "python_version": "3.13.14",
+    "public_example_sha256": "deea9aa9bf73a680ce5c272e51962313be8b43232417486e958f57f7d72beffd",
+    "results": {
+      "passed": 34,
+      "checks": [
+        "average hides outlier",
+        "maximum differs from average",
+        "subset cap",
+        "subset conservation",
+        "archive still needs lifecycle",
+        "arithmetic capacity",
+        "next item crosses assumed budget",
+        "variable size changes bound",
+        "bucket count is ceiling",
+        "blind replay overcounts",
+        "deduplicated computed value",
+        "receipt count",
+        "changed replay rejected",
+        "boolean is not a monetary amount",
+        "rejections preserve total",
+        "reconciliation finds drift",
+        "migration preserves reader meaning",
+        "source fixture unchanged",
+        "revision advances",
+        "replay with fresh revision is no-op",
+        "stale retry rejected",
+        "unknown version rejected",
+        "reversible single shipment",
+        "split conserves units",
+        "lossy rollback refused",
+        "failed rollback preserves split",
+        "high checkpoint can hide hole",
+        "counts alone can hide substitution",
+        "identity reconciliation catches substitution",
+        "strict checks invalid legacy update",
+        "moderate exempts invalid legacy update",
+        "moderate checks valid legacy update",
+        "both check inserts",
+        "enabling strict is not historical repair"
+      ],
+      "results": {
+        "mean_items": 110,
+        "maximum_items": 10010,
+        "hot_items": 1010,
+        "archived_items": 9990,
+        "assumed_capacity": 24574,
+        "computed_cents": 1800,
+        "migration_revision": 8,
+        "checkpoint_hole": [
+          3
+        ]
+      }
+    },
+    "execution_stdout": "{\n  \"passed\": 34,\n  \"checks\": [\n    \"average hides outlier\",\n    \"maximum differs from average\",\n    \"subset cap\",\n    \"subset conservation\",\n    \"archive still needs lifecycle\",\n    \"arithmetic capacity\",\n    \"next item crosses assumed budget\",\n    \"variable size changes bound\",\n    \"bucket count is ceiling\",\n    \"blind replay overcounts\",\n    \"deduplicated computed value\",\n    \"receipt count\",\n    \"changed replay rejected\",\n    \"boolean is not a monetary amount\",\n    \"rejections preserve total\",\n    \"reconciliation finds drift\",\n    \"migration preserves reader meaning\",\n    \"source fixture unchanged\",\n    \"revision advances\",\n    \"replay with fresh revision is no-op\",\n    \"stale retry rejected\",\n    \"unknown version rejected\",\n    \"reversible single shipment\",\n    \"split conserves units\",\n    \"lossy rollback refused\",\n    \"failed rollback preserves split\",\n    \"high checkpoint can hide hole\",\n    \"counts alone can hide substitution\",\n    \"identity reconciliation catches substitution\",\n    \"strict checks invalid legacy update\",\n    \"moderate exempts invalid legacy update\",\n    \"moderate checks valid legacy update\",\n    \"both check inserts\",\n    \"enabling strict is not historical repair\"\n  ],\n  \"results\": {\n    \"mean_items\": 110,\n    \"maximum_items\": 10010,\n    \"hot_items\": 1010,\n    \"archived_items\": 9990,\n    \"assumed_capacity\": 24574,\n    \"computed_cents\": 1800,\n    \"migration_revision\": 8,\n    \"checkpoint_hole\": [\n      3\n    ]\n  }\n}",
+    "model_limits": "Fixed byte assumptions are not BSON measurements. Subset arithmetic does not select newest records or bound archive growth. Receipts are sequential, process-local and non-durable; revision guard indivisibility is assumed. Validation decision matrix is not a JSON Schema/MongoDB validator. No authentication, performance, actual concurrency or deletion proof.",
+    "learning_catalog_consistency": "passed"
+  },
+  "public_objective_groups": [
+    {
+      "title": "Requirements Gathering",
+      "weight": "10%",
+      "objectives": [
+        "Identify application operations and performance priorities that drive the model.",
+        "Identify the business, data-source, governance, and technical information required before modeling."
+      ]
+    },
+    {
+      "title": "Entities",
+      "weight": "13%",
+      "objectives": [
+        "Identify persisted entities, attributes, types, and domain groupings.",
+        "Identify domain ownership and where duplication and synchronization may be required."
+      ]
+    },
+    {
+      "title": "Relationships",
+      "weight": "8.5%",
+      "objectives": [
+        "Identify relationships, cardinality, skew, strong entities, weak entities, and identifying keys."
+      ]
+    },
+    {
+      "title": "Workload/Usage",
+      "weight": "10%",
+      "objectives": [
+        "Describe reads, writes, updates, deletes, aggregations, frequency, priority, latency, volume, and growth.",
+        "Use workload evidence to identify operations that require model optimization."
+      ]
+    },
+    {
+      "title": "Data Model Design",
+      "weight": "28%",
+      "objectives": [
+        "Select embedding or referencing for entity relationships and access patterns.",
+        "Apply appropriate schema design patterns and identify anti-patterns.",
+        "Evaluate duplication, consistency, atomicity, document growth, and application complexity tradeoffs."
+      ]
+    },
+    {
+      "title": "Modeling for Technical Requirements",
+      "weight": "10%",
+      "objectives": [
+        "Adapt the model for validation, data types, lifecycle, transactions, analytics, sharding, and other stated technical constraints."
+      ]
+    },
+    {
+      "title": "Indexing",
+      "weight": "13%",
+      "objectives": [
+        "Select indexes from query predicates, sort, range, projection, selectivity, and workload needs.",
+        "Interpret explain evidence and balance read benefit against storage and write cost."
+      ]
+    },
+    {
+      "title": "Monitoring and Evolving Data Models",
+      "weight": "7.5%",
+      "objectives": [
+        "Use workload and performance evidence to detect model problems.",
+        "Plan compatible schema evolution, migrations, versioning, validation changes, and rollback."
+      ]
+    }
+  ],
+  "historical_baseline_boundary": {
+    "reviewed_on": "2026-09-29",
+    "result": "Current objective document unavailable. Retained 15 September 2 baseline statements and eight weights; no freshly unchanged claim.",
+    "automated_monitor": "manual-review: direct canonical route returned client shell",
+    "browser_route": "Public canonical landing:30 minutes/free/enrollment. Linked viewer500 and published document asset403. No login/enrollment/access-control alteration.",
+    "objective_counts": [
+      2,
+      2,
+      1,
+      2,
+      3,
+      1,
+      2,
+      2
+    ],
+    "weights": [
+      10,
+      13,
+      8.5,
+      10,
+      28,
+      10,
+      13,
+      7.5
+    ],
+    "retained_blueprint_sha256": "e3b9632a8ab5b80cdb74a5ccd557cdc482917c1aca71f116b804b9fd6f92fd10",
+    "retained_status_sha256": "1e3ba1ba83e0218f8f4a9d3fb4249b7fad82e361b22d31a98022cdba0d4a3179",
+    "current_contract": "Main public page75questions/110minutes; course route70questions(60scored+10unscored)/105minutes. BothEnglish/no prerequisite/USD150. Mainonlineproctored. Booking conflict unresolved; no passing score/policy body claim."
+  },
+  "source_reading_boundaries": {
+    "udemy-mongodb-complete-developer-guide-academind": "HTTP403. Earlier17.5hour metadata not reverified; no paid lesson or current alignment/quality review.",
+    "mongodb-associate-data-modeler-exam": "Direct50-character shell; complete browser main read.75questions,110minutes,onlineproctored,English,no prerequisite,USD150. Links current certification learning-path URL. Actual booking contract unverified.",
+    "mongodb-associate-data-modeler-study-guide": "Direct50-character shell; full public browser landing:30minutes/free/enrollment. GettheGuide public viewer500; published embedded asset403, separate receipt. No document contents/account/enrollment action.15historicalstatements retained, not freshly revalidated.",
+    "mongodb-data-modeling-path": "Direct50-character shell; complete public browser main/grid read. Eight required cards515minutes,8hourheadline; separate elective exam105minutes.50%completiondiscount advertised, eligibility unverified. No lessons/interiors.",
+    "mongodb-associate-data-modeler-practice": "Direct50-character shell; complete browser public landing read.1hour/free/register. No question or explanation interiors accessed/copied.",
+    "mongodb-certification-path-update-2026": "Complete7049-character main read including date/authors. August18,2026 HeatherDavis/JoelLord announcement lists4minute reading, skillbadge/path alignment and50% full-path completion discount. Marketing claims are not course-quality or exam-replacement evidence.",
+    "mongodb-designing-schema": "Complete1335-character main read. Workload,relationships,patterns,indexes process and production evolution complexity. No sample implementation executed.",
+    "mongodb-data-modeling-docs": "Complete4345-character main read. Flexible/polymorphic models and read-together/embed/reference examples. Marketing optimality/ease generalizations not adopted as guarantees.",
+    "mongodb-explain-results": "Selected first110 direct lines and lines441–468,639–663 read from33197-character body. Plan-cache isolation, classic/SBE/stage overview and nReturned/executionTimeMillis/keys/docs counters plus covering conditions. Not full reference or actual plan/benchmark.",
+    "oreilly-high-performance-mongodb": "HTTP403. Earlier10h16/2025 metadata not reverified; no paid interior or quality claim.",
+    "oreilly-mongodb-essentials-2025": "HTTP403. Earlier1h36/2025 metadata not reverified; no paid interior or quality claim.",
+    "youtube-mongodb-schema-design-best-practices": "199-character title/footer only. Earlierabout10minute duration not reverified; video not played or transcript audited.",
+    "mongodb-performance-data-modeling-memory-sizing": "Complete relevant main plus publication/update/date/authors read from12758-character capture. HenrikIngo/MatKeep January28,2020 updatedJuly22,2020. Workload/locality/working-set context only; historical Atlasautoscalingbeta and availability claims not current guarantees. No memory benchmark.",
+    "mongodb-data-modeling-certification-path": "Direct50-character shell; complete browser main/grid read. Current URL directly linked from main exam, same eight cards as earlier path:90/75/60/60/60/50/60/60=515minutes. Separate105minuteexam;8hourheadline. Public completiondiscount not eligibility verification.",
+    "mongodb-data-modeler-course-exam": "Direct50-character shell; complete public browser main read.70questions(60scored10unscored),105minutes,USD150,English,no prerequisite. Current path links this route; unresolved conflict with main75/110.",
+    "mongodb-validation-level": "Complete6912-character main/browser read. Strict applies inserts/updates, not retrospective proof; moderate excludes updates of already invalid documents.9.0constraint/preparation/fullscan/version-specific requirements read but not executed or assumedavailable/examrequired.",
+    "mongodb-json-schema-validation": "Complete4202-character main read. Draft4withMongoDBdifferences,bsonType andcombiningqueryrules. No vendor code copied or server/generic library equivalence claimed.",
+    "mongodb-schema-versioning": "Complete3864-character main read. MixedschemaVersion requires compatible readers/writers/index paths. Broad vendor example updateMany filter not copied; original guarded fixture used. No actual backfill.",
+    "mongodb-ttl-indexes": "Complete10740-character main read. Singlefielddate/arrayearliest,missing/nondate,async cadence/load,primarydeletion,collMod andbacklog. Internal time-series inconsistency: topdescribes timeFieldTTLindex+metaFieldfilter,restrictionsectionmentionsmetaFieldindex. No time-series index recipe adopted; no delete or deadline proof.",
+    "mongodb-identify-workload": "Complete2038-character main/browser read. Operation/type/data/frequency/priority analysis; frequent is not necessarily most critical. Original shop numbers are assumptions, not source measurements.",
+    "mongodb-map-relationships": "Complete4502-character main/browser read. Relationship map and locality/write-amplification/cardinality tradeoffs. No universal avoidance oflookup or normalization.",
+    "mongodb-apply-patterns": "Complete2239-character main/browser read. Pattern tradeoffs and subset/computed example read; guide uses original shop/events fixtures, no vendor code copied.",
+    "mongodb-schema-patterns": "Complete929-character overview read. Pattern categories and links; not all linked implementations reviewed.",
+    "mongodb-atomicity-transactions": "Fresh3806-character capture; complete main reading reused from immediately preceding same-session Developer review. Single-document filter recheck/expected-value and multi-document non-atomicity. No actual concurrency/server.",
+    "mongodb-index-unique": "Fresh8356-character capture; complete main reading reused from preceding Developer review. Existing violations,null/missing,partialfilter,multikey andsharded_id scope. No index creation.",
+    "mongodb-index-esr": "Fresh8172-character capture; complete main reading reused from preceding Developer review. ESR/ERSselectivity/sortprefix,version-sensitive$in threshold. No measured optimality.",
+    "mongodb-index-multikey": "Fresh6858-character capture; complete main reading reused from preceding Developer review. Oneindexedarrayfield/document,uniquenessacrossdocs,coveringlimits. Inconsistent whole-array sample operand not copied; no runtime or9.0availability claim.",
+    "mongodb-server-90-release-notes": "Fresh19617-character capture; selected openingpatchheadings/GeneralChanges through earlymetrics reading reused from preceding Developer review.9.0.0/9.0.1/9.0.2Upcoming versus manual current/preview context. Not complete history, GA/examversion inference or installation.",
+    "mongodb-documents": "Fresh9199-character capture; complete main reading reused from preceding Developer review.16MiB,BSONstructure/fieldorder/_id/standard-versus-timeseries limits. Workbook budget does not encode BSON.",
+    "mongodb-computed-values": "Complete1448-character main/browser overview read. Computed/approximate values, timing and cost/freshness concepts. Linked implementation interiors not read; original sequential replay fixture no durableexactlyonceclaim.",
+    "mongodb-group-data": "Complete1610-character main/browser overview read. Bucket/grouping/pagination/outlier and generalnativeTSbucketing note. Linked bucketimplementation not read; original fixed-count arithmetic only."
+  },
+  "public_document_access_attempt": {
+    "url": "https://ti-pdf-uploads.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/vnbbiuw5mdfw-2026_AssociateDataModelerExamGuide.pdf",
+    "source_route": "Canonical public landing -> Get the Guide -> public embedded viewer; viewer500. Asset published by viewer with download allowed. No account/enrollment/token modification.",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "catalog_findings": {
+    "required_minutes": [
+      90,
+      75,
+      60,
+      60,
+      60,
+      50,
+      60,
+      60
+    ],
+    "required_total_minutes": 515,
+    "headline_minutes": 480,
+    "separate_course_exam_minutes": 105,
+    "learning_plus_course_exam_minutes": 620,
+    "main_exam_minutes": 110,
+    "announcement_publisher_read_minutes": 4,
+    "access_boundary": "Public main/card metadata only. No paid lessons, practice interiors, enrollment, account eligibility or video playback."
+  },
+  "technical_source_discrepancies": [
+    {
+      "source_id": "mongodb-ttl-indexes",
+      "observation": "Time-series indexed-field guidance conflicts between top and restrictions sections.",
+      "response": "No time-series TTL recipe adopted; require deployed-version-specific verification."
+    },
+    {
+      "source_id": "mongodb-server-90-release-notes",
+      "observation": "Upcoming patch labels coexist with manual current/preview wording.",
+      "response": "No GA, deployed compatibility or new exam version inferred."
+    },
+    {
+      "source_id": "mongodb-data-modeler-course-exam",
+      "observation": "Main75/110 conflicts with linkedcourse70/105.",
+      "response": "Show both contracts; actual appointment unresolved."
+    }
+  ]
+}

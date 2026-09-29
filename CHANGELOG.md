@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [MONGODB-ASSOCIATE-DATA-MODELER deep review](docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md): Added 40 answered prompts and 34 executed model/migration predictions; clarified validation, reconciliation and rollback, recorded conflicting exam/catalog measures, and retained the blocked current objective boundary.
+
 - September 29, 2026: [MONGODB-ASSOCIATE-DEVELOPER deep review](docs/research/2026-09-29-mongodb-associate-developer-deep-review.md): Added 40 answered prompts and 38 executed prediction checks, clarified query/atomicity/index/driver contracts and catalog durations, and preserved the blocked current objective-body boundary.
 
 - September 29, 2026: [SALESFORCE-AGENTFORCE-SPECIALIST deep review](docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md): Corrected26objectivewording with historical archives,added40answers and35optional executedchecks,clarified masking/identity/testing boundaries andupdated learning metadata.
