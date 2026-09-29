@@ -6,18 +6,18 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-28
 ---
 
 # Databricks Certified Machine Learning Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-machine-learning-associate-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/machine-learning-associate) and its linked exam guide are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-machine-learning-associate-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/machine-learning-associate) and its linked exam guide are authoritative.
 
 **Library identifier:** `DATABRICKS-MACHINE-LEARNING-ASSOCIATE`; Databricks does not publish a short exam code on the official page checked.<br>
-**Current baseline:** Detailed official guide for the live version as of March 1, 2025; live four-domain page checked September 1, 2026.<br>
-**Upcoming blueprint change:** None announced as of September 1, 2026. The detailed PDF is 18 months old and uses earlier names such as Delta Live Tables and workspace model registry comparisons. Translate those terms through current documentation, but do not silently replace the published objective.<br>
+**Current baseline:** Detailed official guide for the live version as of March 1, 2025; live four-domain page checked September 28, 2026.<br>
+**Upcoming blueprint change:** None announced as of September 28, 2026. The detailed PDF is 18 months old and uses earlier names such as Delta Live Tables and workspace model registry comparisons. Translate those terms through current documentation, but do not silently replace the published objective.<br>
 **Lifecycle status:** Active; valid for two years, with the currently live exam required for recertification.<br>
 **Assessment:** Live page: 48 scored multiple-choice questions, 90 minutes, USD 200, no test aids, online or test-center delivery; English, Japanese, Brazilian Portuguese and Korean listed. The older PDF says multiple-choice or multiple-selection and online proctoring only; use the live page for current delivery metadata.<br>
 **Prerequisite:** None required. The official guide highly recommends course attendance and six months of hands-on experience; working Python, scikit-learn, Spark ML, Unity Catalog and basic statistics are practical prerequisites.
@@ -68,6 +68,8 @@ Best practices include version-controlled code, immutable or traceable data snap
 
 Use AutoML when its supported problem types and automation fit. Use custom development when the objective, data structure, constraints, algorithm, evaluation or deployment requires control it does not supply.
 
+**VERIFY CURRENT — choose a compatible exercise environment:** the current [AutoML reference](https://docs.databricks.com/aws/en/machine-learning/automl/) says the built-in AutoML library is absent from Runtime 18.0 ML and later. This is a packaging boundary, not a claim that the AutoML service has disappeared. Record the exact runtime and supported entry point before following an older notebook. Classic ML compute uses dedicated access mode for Unity Catalog; check the [runtime reference](https://docs.databricks.com/aws/en/machine-learning/databricks-runtime-ml) for the workload's dependencies and access support.
+
 ### Create governed feature tables
 
 Unity Catalog feature engineering uses governed Delta tables with primary keys (and timestamp keys for time series) plus feature metadata. Create/write features through supported DataFrame/SQL/Feature Engineering APIs, then use feature lookups during training so lineage and definitions travel with the model. The current [feature engineering documentation](https://docs.databricks.com/aws/en/machine-learning/feature-store/uc/feature-tables-uc) controls APIs and prerequisites.
@@ -80,6 +82,10 @@ Unity Catalog feature engineering uses governed Delta tables with primary keys (
 
 Feature keys must represent an entity at a defined time. Split training/validation by time or entity before fitting imputers/encoders when leakage is possible. For online serving, require training-serving feature parity, key availability, default/missing behavior and freshness SLO.
 
+Use `FeatureEngineeringClient.create_table` to declare a qualified table name and primary keys, and `write_table` to write feature rows; verify the mode and schema before a merge. An existing qualifying Unity Catalog Delta table can also be used. A primary-key declaration is **informational**: it does not reject duplicate keys. Enforce and measure uniqueness in the feature pipeline. See [table constraints](https://docs.databricks.com/aws/en/tables/constraints).
+
+[Point-in-time joins](https://docs.databricks.com/aws/en/machine-learning/feature-store/time-series) match an entity to the latest eligible historical feature row at its observation time; configure the timestamp key and `timestamp_lookup_key`. They differ from querying a Delta table version. For example, with feature observations at 09:00 and 11:00, a 10:00 prediction must not use the 11:00 value. Check missing-history and staleness behavior. **Related item:** a late-arriving record can have an old event timestamp; retain availability evidence if the experiment must reconstruct what the serving system actually knew.
+
 ### Track experiments with MLflow
 
 An [MLflow tracking](https://docs.databricks.com/aws/en/mlflow/tracking) run records parameters, metrics, tags, artifacts, source/environment and a model. Manual logging is appropriate when autologging misses a business metric or custom artifact. Use the MLflow client/search API to compare runs by a declared primary metric and constraints; “best” is contextual, not simply the largest number.
@@ -91,6 +97,8 @@ The UI exposes runs, parameters, metrics over steps, artifacts, models, tags and
 The [Unity Catalog model registry](https://docs.databricks.com/aws/en/machine-learning/manage-model-lifecycle/) uses three-level model names, governed privileges, lineage, tags, versions and aliases. Register a model through a supported MLflow API; then test and assign an alias such as `Champion` to a validated version. An alias is a mutable pointer, not a copy or immutable approval record.
 
 Promote **code** across environments when retraining should occur from environment-owned data/configuration. Promote a **model artifact/version** when the exact validated artifact must move or be referenced consistently. In many current Unity Catalog designs, share governed data/model access and deploy the same tested code rather than copying opaque artifacts between isolated registries.
+
+Keep model lookup and deployment separate. A batch job that loads `models:/catalog.schema.model@Champion` resolves the alias when it loads; an already loaded object does not continuously refresh. For a serving endpoint, resolve the approved alias to a version and update the endpoint configuration, then verify readiness and traffic before calling the rollout complete. Moving an alias alone does not enact that endpoint change. New Unity Catalog model versions require signatures; capture input/output schema and the resolved version in release evidence. See the [registry lifecycle reference](https://docs.databricks.com/aws/en/machine-learning/manage-model-lifecycle/).
 
 The older PDF contrasts Unity Catalog with the legacy workspace model registry. Current new designs should use Unity Catalog unless a documented compatibility constraint applies. Tags carry metadata; aliases support deployment references; neither grants data access.
 
@@ -148,7 +156,7 @@ Linear/logistic models offer interpretable baselines; trees and ensembles captur
 
 ### Understand estimators, transformers and pipelines
 
-An estimator learns from data and produces a model/transformer. A transformer applies `transform()` to produce new columns/predictions. A pipeline orders stages so preprocessing and training are fitted consistently. In Spark ML, `StringIndexer`, `OneHotEncoder` and assembled features are transformers or estimators according to whether they learn state; the classifier/regressor is an estimator.
+An estimator learns from data and produces a model/transformer. A transformer applies `transform()` to produce new columns/predictions. A pipeline orders stages so preprocessing and training are fitted consistently. In Spark ML, `StringIndexer` and `OneHotEncoder` learn state as estimators; their fitted model objects transform data. `VectorAssembler` transforms columns without fitting. The classifier/regressor is an estimator. The [upstream encoder model reference](https://spark.apache.org/docs/latest/api/scala/org/apache/spark/ml/feature/OneHotEncoderModel.html) shows the fitted model's Transformer inheritance.
 
 ### Mitigate class imbalance
 
@@ -158,9 +166,49 @@ Accuracy can hide minority failure. Use stratified splits, class/sample weights,
 
 Grid search evaluates every parameter combination; random search samples combinations and often explores more values efficiently; Bayesian approaches such as Hyperopt use prior trial results to choose promising configurations. The 2025 objective explicitly names Hyperopt `fmin`; use the [Hyperopt documentation](https://docs.databricks.com/aws/en/machine-learning/automl-hyperparam-tuning/) for current support/deprecation context before practice.
 
+**CURRENT BLUEPRINT / VERIFY CURRENT:** retain Hyperopt `fmin` because it remains in the published objective. Databricks documents that Hyperopt is no longer maintained upstream and is not included after Runtime 16.4 LTS ML; it recommends Optuna or Ray Tune for current work. Do not silently rewrite the exam objective to those replacements.
+
+For reading legacy code, [Hyperopt's objective contract](https://hyperopt.github.io/hyperopt/getting-started/minimizing_functions/) minimizes a scalar loss (or a result dictionary with loss/status). Identify the objective, search space, search algorithm, trial budget and trial history. To maximize validation F1, minimize its negative; a positive F1 loss would select in the wrong direction. Fit preprocessing inside each training fold. `hp.choice` can return an encoded choice index in the best assignment; decode with `space_eval` before treating it as an estimator parameter. No Hyperopt workload was executed in this review.
+
 If a grid has `a` choices, `b` choices and `k` cross-validation folds, it fits `a × b × k` fold models, commonly plus a final refit depending on framework settings. Parallelizing single-node models can reduce wall time but multiplies CPU/memory and experiment runs. Avoid nested Spark oversubscription: distribute trials or each model deliberately.
 
 Cross-validation estimates performance across multiple folds and uses data efficiently, but costs more and can still leak if folds ignore time/group structure. A train/validation/test split is cheaper and clearer for large data. For time series, use chronological validation; for repeated entities, group them to prevent identity leakage.
+
+### Run a small local training and tuning check
+
+This synthetic exercise tests preprocessing and search mechanics. It is too small to estimate business performance. It uses NumPy and scikit-learn; it does not connect to Databricks. Keep the test-like query rows outside fitting, following the [upstream leakage guidance](https://scikit-learn.org/stable/common_pitfalls.html).
+
+```python
+import numpy as np
+from sklearn.impute import SimpleImputer
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import GridSearchCV, StratifiedKFold
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
+
+train_x = np.array([[1.0], [2.0], [3.0], [4.0], [6.0], [7.0], [8.0], [np.nan]])
+train_y = np.array([0, 0, 0, 0, 1, 1, 1, 1])
+query_x = np.array([[1000.0], [np.nan]])
+pipeline = Pipeline([
+    ("imputer", SimpleImputer(strategy="median")),
+    ("scale", StandardScaler()),
+    ("classifier", LogisticRegression(max_iter=300, random_state=7)),
+])
+pipeline.fit(train_x, train_y)
+assert pipeline.named_steps["imputer"].statistics_[0] == 4.0
+probabilities = pipeline.predict_proba(query_x)
+assert pipeline.named_steps["imputer"].statistics_[0] == 4.0
+search = GridSearchCV(
+    pipeline,
+    {"classifier__C": [0.2, 2.0], "imputer__strategy": ["mean", "median"]},
+    scoring="f1", cv=StratifiedKFold(n_splits=2, shuffle=True, random_state=7),
+    refit=True, n_jobs=1, error_score="raise",
+)
+search.fit(train_x, train_y)
+assert len(search.cv_results_["params"]) == 4
+```
+
+There are four candidate configurations and two folds: eight validation fits, followed by one best-estimator refit. The earlier demonstration `pipeline.fit` is a separate fit, outside that search count. A fresh pipeline is fitted within each fold, so validation rows do not determine its imputer or scaler. The [GridSearchCV reference](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html) defines refit and scoring behavior. Change the extreme query value and confirm the original median stays fixed; then test an incorrect full-data fit to expose leakage.
 
 ### Choose metrics from the decision
 
@@ -215,11 +263,35 @@ Define churn horizon, prediction time and cost of misses/false outreach. Create 
 
 ### Scenario B — real-time fraud canary
 
-Use online features only where latency/freshness justify them and prove training-serving parity. Train a probability model with log loss, precision/recall at an operating threshold and segment slices. Deploy a signed/versioned model endpoint, split limited traffic to a challenger, authenticate clients, monitor latency/error/drift/outcomes and rollback the alias/traffic based on a predetermined threshold.
+Use online features only where latency/freshness justify them and prove training-serving parity. Train a probability model with log loss, precision/recall at an operating threshold and segment slices. Deploy a signed/versioned model endpoint, split limited traffic to a challenger, authenticate clients, monitor latency/error/drift/outcomes and roll back the endpoint version/traffic based on a predetermined threshold. Keep registry aliases aligned with the approved release, but verify the endpoint update separately.
 
 ### Scenario C — streaming engagement anomaly detection
 
 Use a Lakeflow/Structured Streaming pipeline with a ten-minute event-time window, watermark/checkpoint and a locally distributed model artifact. Test late/duplicate events and throughput/backpressure. Avoid per-row endpoint calls. Track the model/run/version used for each prediction, quarantine invalid features and make replay idempotent.
+
+## Worked decisions and answered checks
+
+The following original cases are learning exercises, not exam items.
+
+| Evidence | Decision |
+|---|---|
+| Feature values 12 at 09:00 and 90 at 11:00; prediction time 10:00 | Use 12 in the point-in-time example. Verify availability and permitted lookback; the current latest value leaks future information. |
+| Training median 4; held-out value 1000 | Transform the held-out record with the fitted training pipeline. Recomputing preprocessing on combined data contaminates the experiment. |
+| TP=18, FP=6, FN=12, TN=64 | Precision is 0.75, recall 0.60 and F1 about 0.667. Accuracy is 0.82 but misses 40% of actual positives. Choose the operating threshold from error costs and validation evidence. |
+| Registry Champion changes from version 4 to 5 while endpoint serves version 4 | Verify or perform an endpoint configuration update; the registry change alone does not prove served traffic moved. |
+
+1. **Is a declared primary key a duplicate-row rejection rule?** No; build a uniqueness check in the feature pipeline.
+2. **Does a Delta historical version implement every row's observation-time lookup?** No; feature-time selection and table-version selection solve different problems.
+3. **Does selecting an ML runtime guarantee classic AutoML is preinstalled?** No; check the runtime packaging boundary and supported entry point.
+4. **Should Hyperopt vanish from exam preparation?** No; preserve the published scope and explain its runtime/support limits.
+5. **Why negate F1 in a Hyperopt loss?** The optimizer minimizes; higher F1 must correspond to lower loss.
+6. **Which data fits preprocessing during cross-validation?** Only the training fold, with the fitted transform applied to its validation fold.
+7. **Does an encoded `hp.choice` result always equal the chosen value?** No; decode the search-space assignment.
+8. **Are model tags authorization grants?** No; use the registry's governed privileges.
+9. **Does changing an alias mutate a model already loaded in memory?** No; record the version resolved at load and deliberately reload or deploy.
+10. **Which scale should business error metrics use after log-target training?** The original target scale, after the appropriate inverse transform; for `log1p`, use `expm1`. Re-transforming an average is not generally averaging re-transformed predictions. See [upstream metric definitions](https://scikit-learn.org/stable/modules/model_evaluation.html).
+
+**Local execution boundary — September 28, 2026:** the scikit-learn example and additional leakage, metric, refit-count and categorical checks were executed in an isolated local environment. No Spark, Hyperopt, MLflow service, Unity Catalog, AutoML, online feature store or serving endpoint was run. The eight workspace labs remain proposed.
 
 ## Hands-on lab sequence
 
@@ -274,7 +346,7 @@ Use a Lakeflow/Structured Streaming pipeline with a ten-minute event-time window
 
 ## Places to learn
 
-This is **not a complete list**, and it is not meant to be consumed in full. Choose a primary path, then spend at least equal time producing and testing feature, experiment, registry and deployment evidence. Durations are planning estimates checked September 1, 2026 and may change.
+This is **not a complete list**, and it is not meant to be consumed in full. Choose a primary path, then spend at least equal time producing and testing feature, experiment, registry and deployment evidence. Public resource availability was checked September 28, 2026; runtimes are editorial planning estimates. Signed-in Academy and paid lessons were not inspected. Udemy access was blocked and Whizlabs returned no usable body.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -283,6 +355,7 @@ This is **not a complete list**, and it is not meant to be consumed in full. Cho
 | [Databricks Free Edition](https://www.databricks.com/learn/free-edition) or authorized workspace | Free/organizational | 18–30 hours for eight labs; serving/online-feature capabilities may require another environment |
 | [Databricks machine learning documentation](https://docs.databricks.com/aws/en/machine-learning/) | Free | 8–14 hours selected reading and reproduction |
 | [MLflow documentation](https://mlflow.org/docs/latest/ml/) | Free | 4–8 hours selected tracking, model and deployment practice; reconcile OSS and managed Databricks behavior |
+| [Ben Mackenzie, Databricks: MLOps Gym feature-store explanation (April 29, 2024)](https://community.databricks.com/t5/technical-blog/mlops-gym-databricks-feature-store-part-one/ba-p/67430) | Free employee technical blog | About 45–75 minutes for reading and an entity/time/label worksheet; estimate includes the worksheet. Useful concepts, but older code needs current API/name checks; the article even mixes client variable names. |
 | [Databricks YouTube](https://www.youtube.com/@Databricks) | Free | 3–6 hours selected current MLflow, feature engineering, MLOps and serving sessions |
 | [Whizlabs: Databricks Machine Learning Associate](https://www.whizlabs.com/databricks-certified-machine-learning-associate/) | Paid; training/practice product | Stable public totals were not exposed; budget 6–14 hours and verify March 2025 coverage after sign-in |
 | [Udemy search: Databricks Machine Learning Associate](https://www.udemy.com/courses/search/?q=databricks%20machine%20learning%20associate) | Paid marketplace | 8–20 hours only after selecting a current, lab-based course; reject dump-focused listings |

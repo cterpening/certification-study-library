@@ -886,6 +886,8 @@ The review reconciles the detailed September 30, 2025 live-version PDF with the 
 
 ## Databricks Machine Learning Associate coverage record
 
+The September 28 [deep review](research/2026-09-28-databricks-machine-learning-associate-deep-review.md) maps 48 detailed objectives. Mapped 48 PDF objectives; explain AutoML 18.0+ packaging and Hyperopt post-16.4 limits while retaining exam scope, feature-time/uniqueness contracts, alias versus endpoint deployment, and leakage-safe local training. Added four worked decisions and ten answers. Current guide citations: 24 registered, 22 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Databricks Machine Learning | Section 1, all integrated scenarios, and Labs 3–4 and 6 |

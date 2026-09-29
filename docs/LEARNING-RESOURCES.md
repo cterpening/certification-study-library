@@ -2404,6 +2404,26 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 Use vendor sample questions only through the official guide, and use ethical practice tests to identify weak domains rather than memorize recalled content. Recheck the live weights, linked PDF, renamed products, course catalog and all **VERIFY CURRENT** controls near the appointment.
 
+### DATABRICKS-MACHINE-LEARNING-ASSOCIATE — Databricks Certified Machine Learning Associate
+
+Resource details from the [DATABRICKS-MACHINE-LEARNING-ASSOCIATE guide](../guides/DATABRICKS-MACHINE-LEARNING-ASSOCIATE-databricks-machine-learning-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is **not a complete list**, and it is not meant to be consumed in full. Choose a primary path, then spend at least equal time producing and testing feature, experiment, registry and deployment evidence. Public resource availability was checked September 28, 2026; runtimes are editorial planning estimates. Signed-in Academy and paid lessons were not inspected. Udemy access was blocked and Whizlabs returned no usable body.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official certification page and March 1, 2025 exam guide](https://www.databricks.com/learn/certification/machine-learning-associate) | Free | 1–2 hours; map every objective and inspect vendor sample format without redistributing questions |
+| [Databricks Academy](https://customer-academy.databricks.com/) — *Machine Learning with Databricks* and four named self-paced courses | Free account/customer or partner entitlement varies | 20–35 hours with labs; verify catalog and current terminology after sign-in |
+| [Databricks Free Edition](https://www.databricks.com/learn/free-edition) or authorized workspace | Free/organizational | 18–30 hours for eight labs; serving/online-feature capabilities may require another environment |
+| [Databricks machine learning documentation](https://docs.databricks.com/aws/en/machine-learning/) | Free | 8–14 hours selected reading and reproduction |
+| [MLflow documentation](https://mlflow.org/docs/latest/ml/) | Free | 4–8 hours selected tracking, model and deployment practice; reconcile OSS and managed Databricks behavior |
+| [Ben Mackenzie, Databricks: MLOps Gym feature-store explanation (April 29, 2024)](https://community.databricks.com/t5/technical-blog/mlops-gym-databricks-feature-store-part-one/ba-p/67430) | Free employee technical blog | About 45–75 minutes for reading and an entity/time/label worksheet; estimate includes the worksheet. Useful concepts, but older code needs current API/name checks; the article even mixes client variable names. |
+| [Databricks YouTube](https://www.youtube.com/@Databricks) | Free | 3–6 hours selected current MLflow, feature engineering, MLOps and serving sessions |
+| [Whizlabs: Databricks Machine Learning Associate](https://www.whizlabs.com/databricks-certified-machine-learning-associate/) | Paid; training/practice product | Stable public totals were not exposed; budget 6–14 hours and verify March 2025 coverage after sign-in |
+| [Udemy search: Databricks Machine Learning Associate](https://www.udemy.com/courses/search/?q=databricks%20machine%20learning%20associate) | Paid marketplace | 8–20 hours only after selecting a current, lab-based course; reject dump-focused listings |
+
+The 2025 blueprint is still live but aged: explicitly gap-check current Unity Catalog model/feature APIs, Lakeflow naming, Hyperopt support and serving behavior. No exact current Pluralsight, O'Reilly, LinkedIn Learning or MeasureUp product was independently verified.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

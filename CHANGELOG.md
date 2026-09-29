@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: [DATABRICKS-MACHINE-LEARNING-ASSOCIATE deep review](docs/research/2026-09-28-databricks-machine-learning-associate-deep-review.md): map 48 objectives; clarify AutoML/Hyperopt support, feature contracts and serving releases; execute local ML exercise with 22 checks.
+
 - September 28, 2026: [DATABRICKS-DATA-ENGINEER-PROFESSIONAL deep review](docs/research/2026-09-28-databricks-data-engineer-professional-deep-review.md): map 45 detailed objectives; add serverless retry controls, CDC/recovery/purge boundaries, corrected aggregates and 13 bounded local assertions.
 
 - September 28, 2026: [DATABRICKS-DATA-ENGINEER-ASSOCIATE deep review](docs/research/2026-09-28-databricks-data-engineer-associate-deep-review.md): map 33 objectives; track DENY scope mismatch; repair schema recovery, deterministic survivorship, union and job-branch guidance; add conversion coverage and bounded model checks.

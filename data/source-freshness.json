@@ -4,6 +4,163 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-databricksmachinelearningassociate-deep-review",
+      "title": "DATABRICKS-MACHINE-LEARNING-ASSOCIATE complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "DATABRICKS-MACHINE-LEARNING-ASSOCIATE"
+      ],
+      "results": [
+        {
+          "exam_code": "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-MACHINE-LEARNING-ASSOCIATE-databricks-machine-learning-associate.md",
+          "baseline_sha256": "adcbeeea1b0ac6af831747fee805a22bb7836e12d73921d1794c6168a5475eb7",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Live page still links March 1, 2025 PDF; all 48 objectives mapped; four-domain/status monitor unchanged. Retain older metadata distinctions."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current AutoML/runtime, Hyperopt support, registry/alias, feature table/time and upstream sklearn/Hyperopt/Spark references reviewed."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "September product-documentation updates establish current runtime boundaries; historical employee blog used for concepts only."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Official preparation still names instructor-led ML course and four self-paced courses. Public Academy shell only; paid course content/durations not validated."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Separate published legacy scope from supported lab environment; fix endpoint rollback assumption and vague pipeline stage types; exercise leakage and metric reasoning."
+            }
+          },
+          "findings": [
+            {
+              "id": "databricksmachinelearningassociate-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "AutoML packaging boundary absent from preparation advice",
+              "url": "https://docs.databricks.com/aws/en/machine-learning/automl/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DATABRICKS-MACHINE-LEARNING-ASSOCIATE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Runtime 18.0 ML and later omit the built-in AutoML library.",
+              "recommendation": "Add specific environment preflight without claiming the service disappeared.",
+              "disposition": "applied",
+              "source_id": "databricks-mla-automl",
+              "resolution": "Add specific environment preflight without claiming the service disappeared."
+            },
+            {
+              "id": "databricksmachinelearningassociate-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Hyperopt legacy objective lacked actionable support context",
+              "url": "https://docs.databricks.com/aws/en/machine-learning/automl-hyperparam-tuning/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DATABRICKS-MACHINE-LEARNING-ASSOCIATE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Runtime ML stops bundling Hyperopt after 16.4 LTS ML; objective still names fmin.",
+              "recommendation": "Preserve scope, explain minimization/choice decoding and separate newer practice alternatives.",
+              "disposition": "applied",
+              "source_id": "databricks-mla-hyperopt",
+              "resolution": "Preserve scope, explain minimization/choice decoding and separate newer practice alternatives."
+            },
+            {
+              "id": "databricksmachinelearningassociate-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Alias movement could be mistaken for endpoint rollback",
+              "url": "https://docs.databricks.com/aws/en/machine-learning/manage-model-lifecycle/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DATABRICKS-MACHINE-LEARNING-ASSOCIATE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Registry alias resolution and an endpoint configuration update are separate operations.",
+              "recommendation": "Explain loaded-object and endpoint boundaries and fix the fraud scenario.",
+              "disposition": "applied",
+              "source_id": "databricks-mla-registry",
+              "resolution": "Explain loaded-object and endpoint boundaries and fix the fraud scenario."
+            },
+            {
+              "id": "databricksmachinelearningassociate-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Feature primary-key declaration could imply enforcement",
+              "url": "https://docs.databricks.com/aws/en/tables/constraints",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DATABRICKS-MACHINE-LEARNING-ASSOCIATE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Primary key constraints are informational; point-in-time joins also require a timestamp contract.",
+              "recommendation": "Add uniqueness checks and worked temporal example with availability caveat.",
+              "disposition": "applied",
+              "source_id": "databricks-table-constraints",
+              "resolution": "Add uniqueness checks and worked temporal example with availability caveat."
+            },
+            {
+              "id": "databricksmachinelearningassociate-deep-5",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Preprocessing and search guidance lacked executable evidence",
+              "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DATABRICKS-MACHINE-LEARNING-ASSOCIATE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Fitted preprocessing must exclude held-out rows and be fitted separately within each CV fold.",
+              "recommendation": "Add executed synthetic pipeline and negative leakage control with observed fit counts.",
+              "disposition": "applied",
+              "source_id": "sklearn-common-pitfalls",
+              "resolution": "Add executed synthetic pipeline and negative leakage control with observed fit counts."
+            }
+          ],
+          "notes": "Mapped 48 PDF objectives; explain AutoML 18.0+ packaging and Hyperopt post-16.4 limits while retaining exam scope, feature-time/uniqueness contracts, alias versus endpoint deployment, and leakage-safe local training. Added four worked decisions and ten answers. Same-context AI review; human review pending. See docs/research/2026-09-28-databricks-machine-learning-associate-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 5,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-databricksdataengineerprofessional-deep-review",
       "title": "DATABRICKS-DATA-ENGINEER-PROFESSIONAL complete guide and learning-content review",
       "rubric_version": 1,
