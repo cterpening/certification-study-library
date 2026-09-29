@@ -9141,22 +9141,54 @@
       "notes": "Mapped 33 detailed current topic bullets and repaired the monitor for the redesigned preparation page while preserving earlier snapshots and review history. Added 23 executed NumPy checks, 40 answered prompts and eight proposed activities. Updated serving-version and learning-resource boundaries; one commercial catalog and five course metadata pages remain inaccessible. Human review and GPU/LLM execution are pending. See docs/research/2026-09-29-nca-genl-deep-review.md"
     },
     {
-      "id":"nca-aiio-2026-09-02-source-validation",
-      "exam_code":"NCA-AIIO",
-      "guide_path":"guides/NCA-AIIO-nvidia-ai-infrastructure-operations-associate.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-02",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/nca-aiio-official-objectives.txt",
-      "blueprint_snapshot_sha256":"11cca6a173f82698164dde31c281949bfe89a574be3b6979f77b9968f1746824",
-      "objective_coverage":[
-        {"objective_group":"Essential AI Knowledge (38%)","guide_sections":["Section 1","All scenarios","Labs 1–2 and 8"]},
-        {"objective_group":"AI Infrastructure (40%)","guide_sections":["Section 2","All scenarios","Labs 1–4 and 7–8"]},
-        {"objective_group":"AI Operations (22%)","guide_sections":["Section 3","All scenarios","Labs 5–8"]}
+      "id": "nca-aiio-2026-09-29-source-validation",
+      "exam_code": "NCA-AIIO",
+      "guide_path": "guides/NCA-AIIO-nvidia-ai-infrastructure-operations-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nca-aiio-official-objectives.txt",
+      "blueprint_snapshot_sha256": "11cca6a173f82698164dde31c281949bfe89a574be3b6979f77b9968f1746824",
+      "objective_coverage": [
+        {
+          "objective_group": "Essential AI Knowledge (38%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "AI Infrastructure (40%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Labs 1–4 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "AI Operations (22%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 5–8"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":8,"reachable":7,"access_blocked":1,"missing_or_error":0},
-      "notes":"Every public objective is mapped through workload requirements, compute/memory/topology, network/storage/facility sizing, supported software, scheduling/orchestration, telemetry, safe diagnosis and sharing/virtualization evidence. Three scenarios, eight authorized labs and 40 checks are included. Seven URLs are reachable and Udemy is automation-blocked; none are broken. The USD 125 certification page versus USD 135 learning-path card discrepancy is explicit. No recalled/live item, dump, unsafe production instruction or copied course content is used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 18,
+        "reachable": 17,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Mapped all 22 unchanged objectives and the six-page study guide. Added 34 executed local telemetry and capacity checks, 40 answered prompts and eight proposed activities. Updated GPU sharing, field units and release-specific operations guidance. One commercial catalog is blocked and two course endpoints do not expose course details; checkout and hardware work remain pending. See docs/research/2026-09-29-nca-aiio-deep-review.md"
     },
     {
       "id":"ncp-aio-2026-09-02-source-validation",

@@ -2943,6 +2943,35 @@ This is not a complete list. Start with the current topic list and one teaching 
 
 Use original practice that explains decisions and failure cases. Avoid recalled questions, dumps and guaranteed-pass banks; completing a course or a tiny local example does not establish examination or production readiness.
 
+### NCA-AIIO — NVIDIA-Certified Associate: AI Infrastructure and Operations
+
+Resource details from the [NCA-AIIO guide](../guides/NCA-AIIO-nvidia-ai-infrastructure-operations-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list. Start with the official scope and choose resources for demonstrated gaps. Public metadata was checked September 29, 2026; course interiors and checkout were not accessed. Unless explicitly described as a listed runtime, times below are author estimates for selective study.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Certification and blueprint](https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/) | Public; canonical 22-topic scope and USD125 exam listing | 1–2h mapping |
+| [Official study guide PDF](https://dam-cdn.nvd.orangelogic.com/AssetLink/x874j05hy3m3r2sor84kpvp70750m468.pdf) | Public; six pages, optional unit mapping and reading suggestions | 1–2h mapping |
+| [Certification policies](https://www.nvidia.com/en-us/learn/certification/) | Public; booking, integrity, retake and renewal | 30–45m |
+| [AI Infrastructure and Operations Fundamentals](https://www.nvidia.com/en-us/training/academy/course-detail/?id=course:15139841) | Paid/account route; public course shell lacks populated details. Canonical and learning-path pages still list the course | Listed 7h; add 12–20h proposed practice |
+| [Academy route linked by the PDF](https://academy.nvidia.com/en/course/ai-infrastructure-operations-fundamentals/?cm=64727) | Redirects to a general training page; no course outline or lesson access confirmed there | Specific runtime unverified at this endpoint |
+| [DGX Platform and Data Center learning path](https://www.nvidia.com/en-us/learn/learning-path/dgx-data-center/) | Public index; mixed paid routes. Fundamentals card lists USD50/7h; exam card still lists USD135 versus canonical USD125 | 1–2h selection; chosen course varies |
+| [DGX documentation](https://docs.nvidia.com/dgx/) | Public portal; Mission Control, Base Command Manager, systems and platform references | 6–12h selected platform reading |
+| [Storage scaling article](https://developer.nvidia.com/blog/tips-on-scaling-storage-for-ai-training-and-inferencing/) | Public, January 25, 2023; capacity/performance/availability planning, not a current sizing specification | 30–60m plus requirement sheet |
+| [DCGM documentation](https://docs.nvidia.com/datacenter/dcgm/latest/contents.html) | Public entry point to monitoring and diagnostics | 2–4h orientation |
+| [DCGM field identifiers](https://docs.nvidia.com/datacenter/dcgm/latest/reference/field-identifiers.html) | Public; inspect exact IDs, types, units and entity support | 2–3h selective reading and workbook |
+| [DCGM Exporter metrics](https://docs.nvidia.com/datacenter/dcgm/latest/reference/dcgm-exporter-metrics.html) | Public; metric configuration, field/count distinctions and label boundaries | 2–3h |
+| [GPU Operator overview](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/) | Public; lifecycle components and platform links | 2–4h |
+| [GPU Operator release notes](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/release-notes.html) | Public; exact component and upgrade caveats are version-specific | 1–2h for assigned versions |
+| [Time-slicing GPUs](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/gpu-sharing.html) | Public; replica, isolation, telemetry and configuration limitations | 2–3h; cluster work optional |
+| [MIG user guide](https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/) | Public documentation entry point | 30m orientation |
+| [MIG concepts](https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/concepts.html) | Public; GI/CI boundaries and profile placement | 1–2h |
+| [MIG deployment considerations](https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/deployment-considerations.html) | Public; consult current GPU/platform prerequisites and full change procedure | 1–2h selective review |
+| [Third-party NCA-AIIO prep course](https://www.udemy.com/course/nca-aiio-bootcamp/) | Paid; public fetch blocked with HTTP403. Earlier June2026/about7h claims and lesson quality were not reverified | Current runtime unverified |
+
+Avoid recalled exam items, dumps and guaranteed-pass banks. These readiness prompts and scenarios are original teaching material. No paid questions, private lessons, accounts or infrastructure services were accessed for this review.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

@@ -4,6 +4,235 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-ncaaiio-deep-review",
+      "title": "NCA-AIIO complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "NCA-AIIO"
+      ],
+      "results": [
+        {
+          "exam_code": "NCA-AIIO",
+          "vendor_id": "nvidia",
+          "guide_path": "guides/NCA-AIIO-nvidia-ai-infrastructure-operations-associate.md",
+          "baseline_sha256": "b63ff6ef4eb3b1ecdd91eb94f810a70c0cef029e27b38fd0ca776592348f024d",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current canonical22topics and complete6pagePDF compared;38/40/22 and monitored objective/lifecycle unchanged. Recommended qualifications and optional training not mandatory admission."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected DCGM field/Exporter and GPUOperator/time-slicing/MIG references;34 actual local checks. Entity/unit/unknown/capacity boundaries distinguished from hardware execution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "26.7.1 Operator changes/known issue and selected26.7.0 route prerequisites read. January2023 official storage article treated as historical planning context."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Canonical/DGX path verify7h; course shell blank,PDF-linked Academy URL redirects generic,Udemy403. USD125 versus135 exam discrepancy retained. No paid interiors/quality claims."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Percent versus ratio,MiB versus bytes,Xid gauge versus record counts,GI versus CI/replica capacity and HTTP200 versus content verification addressed."
+            }
+          },
+          "findings": [
+            {
+              "id": "ncaaiio-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Recommended qualifications are not stated admission requirements",
+              "url": "https://dam-cdn.nvd.orangelogic.com/AssetLink/x874j05hy3m3r2sor84kpvp70750m468.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCA-AIIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "PDF labels degree and experience recommended, training optional; canonical page asks basic data-center knowledge.",
+              "recommendation": "Clarify qualification wording without inventing a degree barrier.",
+              "disposition": "applied",
+              "source_id": "nvidia-nca-aiio-study-guide",
+              "resolution": "Clarify qualification wording without inventing a degree barrier."
+            },
+            {
+              "id": "ncaaiio-deep-2",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Exam price listings still disagree",
+              "url": "https://www.nvidia.com/en-us/learn/learning-path/dgx-data-center/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCA-AIIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Canonical USD125 versus learning-path exam card USD135.",
+              "recommendation": "Retain dated discrepancy and defer final total to individual checkout.",
+              "disposition": "applied",
+              "source_id": "nvidia-dgx-learning-path",
+              "resolution": "Retain dated discrepancy and defer final total to individual checkout."
+            },
+            {
+              "id": "ncaaiio-deep-3",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "A successful redirect does not verify course content",
+              "url": "https://academy.nvidia.com/en/course/ai-infrastructure-operations-fundamentals/?cm=64727",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCA-AIIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "PDF-linked Academy course URL returns generic training landing page.",
+              "recommendation": "Mark specific course details unverified; retain7h only from canonical/path listings.",
+              "disposition": "applied",
+              "source_id": "nvidia-aiio-academy-route",
+              "resolution": "Mark specific course details unverified; retain7h only from canonical/path listings."
+            },
+            {
+              "id": "ncaaiio-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Related fields can use different types and scales",
+              "url": "https://docs.nvidia.com/datacenter/dcgm/latest/reference/field-identifiers.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCA-AIIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "203 integer percent versus1613 double ratio;252 MiB versus1627 bytes.",
+              "recommendation": "Add exact-ID normalization and reject mismatched units in original workbook.",
+              "disposition": "applied",
+              "source_id": "nvidia-dcgm-fields",
+              "resolution": "Add exact-ID normalization and reject mismatched units in original workbook."
+            },
+            {
+              "id": "ncaaiio-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "An Xid code is not an incident counter",
+              "url": "https://docs.nvidia.com/datacenter/dcgm/latest/reference/dcgm-exporter-metrics.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCA-AIIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Field gauge and exporter window/cumulative sampled-record families differ.",
+              "recommendation": "Explain semantics,reset and cadence before deriving rates or counts.",
+              "disposition": "applied",
+              "source_id": "nvidia-dcgm-exporter-metrics",
+              "resolution": "Explain semantics,reset and cadence before deriving rates or counts."
+            },
+            {
+              "id": "ncaaiio-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Replica allocation does not imply isolation or proportional compute",
+              "url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/gpu-sharing.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCA-AIIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Time-slicing limitations include shared memory/fault domains and no container metric association in the documented path.",
+              "recommendation": "Separate replica count from physical capacity and require workload/isolation evidence.",
+              "disposition": "applied",
+              "source_id": "nvidia-gpu-time-slicing",
+              "resolution": "Separate replica count from physical capacity and require workload/isolation evidence."
+            },
+            {
+              "id": "ncaaiio-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Compute instances share parent GPU-instance memory",
+              "url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/concepts.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCA-AIIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Multiple CIs in one GI share its memory and engines.",
+              "recommendation": "Deduplicate memory by GI identity and keep parent physical totals separate.",
+              "disposition": "applied",
+              "source_id": "nvidia-mig-concepts",
+              "resolution": "Deduplicate memory by GI identity and keep parent physical totals separate."
+            },
+            {
+              "id": "ncaaiio-deep-8",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Successful upgrade steps need workload-specific validation",
+              "url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/release-notes.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCA-AIIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "26.7.1 notes operand readiness fix and H100 driver-transition MIG issue;26.7.0 DRA route has separate prerequisites.",
+              "recommendation": "Teach exact-route/version acceptance and authorized recovery instead of universal upgrade recipes.",
+              "disposition": "applied",
+              "source_id": "nvidia-gpu-operator-release-notes",
+              "resolution": "Teach exact-route/version acceptance and authorized recovery instead of universal upgrade recipes."
+            },
+            {
+              "id": "ncaaiio-deep-9",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Storage growth is more than adding capacity",
+              "url": "https://developer.nvidia.com/blog/tips-on-scaling-storage-for-ai-training-and-inferencing/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCA-AIIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Historical article distinguishes throughput,capacity and maintenance availability.",
+              "recommendation": "Add original concurrent checkpoint payload budget and require measured restore evidence.",
+              "disposition": "applied",
+              "source_id": "nvidia-aiio-storage-scaling",
+              "resolution": "Add original concurrent checkpoint payload budget and require measured restore evidence."
+            }
+          ],
+          "notes": "Mapped all 22 unchanged objectives and the six-page study guide. Added 34 executed local telemetry and capacity checks, 40 answered prompts and eight proposed activities. Updated GPU sharing, field units and release-specific operations guidance. One commercial catalog is blocked and two course endpoints do not expose course details; checkout and hardware work remain pending. Same-context AI review; human review pending. See docs/research/2026-09-29-nca-aiio-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 9,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-ncagenl-deep-review",
       "title": "NCA-GENL complete guide and learning-content review",
       "rubric_version": 1,

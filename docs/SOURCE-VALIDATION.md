@@ -1667,6 +1667,8 @@ The review maps every public domain through authorized use case and success crit
 
 ## NCA-AIIO coverage record
 
+The September 29 [deep review](research/2026-09-29-nca-aiio-deep-review.md) maps 22 detailed objectives. Mapped all 22 unchanged objectives and the six-page study guide. Added 34 executed local telemetry and capacity checks, 40 answered prompts and eight proposed activities. Updated GPU sharing, field units and release-specific operations guidance. One commercial catalog is blocked and two course endpoints do not expose course details; checkout and hardware work remain pending. Current guide citations: 18 registered, 17 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Essential AI Knowledge (38%), AI Infrastructure (40%), and AI Operations (22%)

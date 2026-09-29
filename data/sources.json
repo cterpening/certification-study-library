@@ -3,6 +3,132 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "nvidia-aiio-storage-scaling",
+      "title": "NVIDIA tips on scaling storage for AI training and inferencing",
+      "url": "https://developer.nvidia.com/blog/tips-on-scaling-storage-for-ai-training-and-inferencing/",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "supported_exams": [
+        "NCA-AIIO"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCA-AIIO deep review: Complete main January25 2023 article through conclusion read. AI-generated summary not used as authority. Capacity/performance/maintenance distinctions retained; unconditional sizing, linear scaling and latency claims not adopted as guarantees. No benchmark. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nvidia-aiio-academy-route",
+      "title": "NVIDIA Academy AI infrastructure and operations course route",
+      "url": "https://academy.nvidia.com/en/course/ai-infrastructure-operations-fundamentals/?cm=64727",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "supported_exams": [
+        "NCA-AIIO"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCA-AIIO deep review: Actual PDF-linked public URL redirects to generic NVIDIA Academy training landing page. Entire main landing content read; no specific course details or interiors verified. HTTP200 is not course availability evidence. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nvidia-nca-aiio-study-guide",
+      "title": "NVIDIA NCA-AIIO certification study guide",
+      "url": "https://dam-cdn.nvd.orangelogic.com/AssetLink/x874j05hy3m3r2sor84kpvp70750m468.pdf",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "NCA-AIIO"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCA-AIIO deep review: Actual six-page PDF downloaded and all text read; PDF page4 (printed2) rendered locally and visually inspected. All22 numbered objectives agree with canonical scope; optional units and recommended degree/experience distinguished from mandatory admission. January2026 production mark not treated as effective revision date. Linked readings selectively followed, not all. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nvidia-gpu-time-slicing",
+      "title": "NVIDIA GPU Operator time-slicing GPUs",
+      "url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/gpu-sharing.html",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NCA-AIIO"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCA-AIIO deep review: Understanding/comparison/platform/limitations, labels, configuration field descriptions and initial cluster-wide setup example read. No memory/fault isolation, replicas not proportional compute, container metric association limitation and ConfigMap not automatically monitored. Remaining deployment/update examples not fully read; none executed. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nvidia-mig-concepts",
+      "title": "NVIDIA MIG concepts",
+      "url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/concepts.html",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NCA-AIIO"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCA-AIIO deep review: Complete main terminology, partition/profile-placement and CUDA concurrency prose/tables read. GI memory shared by child CIs; example profiles GPU-specific. Page diagrams not fully visually inspected; no actual supported-profile matrix audit or MIG operation. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nvidia-mig-deployment",
+      "title": "NVIDIA MIG deployment considerations",
+      "url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/deployment-considerations.html",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NCA-AIIO"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCA-AIIO deep review: Complete main system/application considerations and displayed driver table read. Generation-specific reset/persistence, privileges and application limitations noted. Specific minimum-driver entries not used as deployment recommendations; hardware matrix and linked procedures not independently audited. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nvidia-dcgm-fields",
+      "title": "NVIDIA DCGM field identifiers",
+      "url": "https://docs.nvidia.com/datacenter/dcgm/latest/reference/field-identifiers.html",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NCA-AIIO"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCA-AIIO deep review: Selected introduction/selecting fields, base-unit memory, clock/energy/utilization and initial throttle sections read. Specific203/1613 and252/1627 contracts used. Not full105k field catalog. Typed blank macros are upstream responsibility; workbook explicit statuses are synthetic, not DCGM protocol. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nvidia-dcgm-exporter-metrics",
+      "title": "NVIDIA DCGM Exporter metric contract",
+      "url": "https://docs.nvidia.com/datacenter/dcgm/latest/reference/dcgm-exporter-metrics.html",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NCA-AIIO"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCA-AIIO deep review: Main selection/default/optional inventory, custom fields, exporter-owned counts, labels and runtime considerations read; not all linked references. Xid code gauge differs from sampled/window/cumulative record counts. Configured types do not establish semantic correctness or runtime support. No exporter, Prometheus or container workload. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nvidia-gpu-operator-release-notes",
+      "title": "NVIDIA GPU Operator release notes",
+      "url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/release-notes.html",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "supported_exams": [
+        "NCA-AIIO"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCA-AIIO deep review: Complete26.7.1 main changes and known H100 upgrade issue/procedure read; selected26.7.0 initial features through kubelet-root configuration read. Older releases and remaining26.7.0 sections not fully read. Public changes explain validation/route/version boundaries; no commands, resets, upgrades or services executed. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "nvidia-certification-policies",
       "title": "NVIDIA certification program and exam policies",
       "url": "https://www.nvidia.com/en-us/learn/certification/",
@@ -11,10 +137,11 @@
       "source_type": "program-policy",
       "access_model": "public",
       "supported_exams": [
-        "NCA-GENL"
+        "NCA-GENL",
+        "NCA-AIIO"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 NCA-GENL deep review: Complete FAQ process,booking/cancellation/security/results/retake/renewal/accommodation/integrity blocks read; portfolio context also inspected. Pass/fail no score;14days/max5in12months;2yrretake;remote no breaks. No booking/contact/browser installation or individual eligibility assessment. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
+      "notes": "September 29 NCA-GENL deep review: Complete FAQ process,booking/cancellation/security/results/retake/renewal/accommodation/integrity blocks read; portfolio context also inspected. Pass/fail no score;14days/max5in12months;2yrretake;remote no breaks. No booking/contact/browser installation or individual eligibility assessment. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution. September 29 NCA-AIIO deep review: Complete FAQ from process through integrity/appeal boundaries read from fresh capture, including booking/cancel/remote/results/retake/renewal/accommodations. Pass/fail without score;14daywait/max5in12months;2yrretake. No exam booking, secure-browser installation or individual eligibility decision. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
     },
     {
       "id": "nvidia-open-deep-learning",
@@ -48623,28 +48750,118 @@
       "notes": "One-hour-48-minute course updated March 2026. It is too short to establish applied readiness alone; verify claims against first-party material and build the guide labs. September 29 NCA-GENL deep review: HTTP403. Earlier March2026/1h48m and alignment/quality claims unverified. No lesson/question interiors. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"nvidia-nca-aiio-certification","title":"NVIDIA-Certified Associate: AI Infrastructure and Operations","url":"https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/","publisher":"NVIDIA","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCA-AIIO"],"notes":"Canonical 38/40/22 weighted blueprint, prerequisite, delivery, USD 125 price and two-year validity baseline; a separate first-party learning-path card showed USD 135, so checkout must be verified."
+      "id": "nvidia-nca-aiio-certification",
+      "title": "NVIDIA-Certified Associate: AI Infrastructure and Operations",
+      "url": "https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/",
+      "publisher": "NVIDIA",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCA-AIIO"
+      ],
+      "notes": "Canonical 38/40/22 weighted blueprint, prerequisite, delivery, USD 125 price and two-year validity baseline; a separate first-party learning-path card showed USD 135, so checkout must be verified. September 29 NCA-AIIO deep review: Complete current main exam identity, delivery details, optional training and all 22 objective bullets read. Three weights 38/40/22; canonical USD125,50questions,1hour,English,2yearretake. No announced transition. Objective and lifecycle monitor unchanged; no snapshot write. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"nvidia-aiio-fundamentals","title":"AI Infrastructure and Operations Fundamentals","url":"https://www.nvidia.com/en-us/training/academy/course-detail/?id=course:15139841","publisher":"NVIDIA Academy","authority_class":1,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["NCA-AIIO","NCP-AIO"],"notes":"Official seven-hour mapped self-paced course; enrollment access and price can vary. It is a prerequisite refresher, not sufficient alone for NCP-AIO hands-on readiness."
+      "id": "nvidia-aiio-fundamentals",
+      "title": "AI Infrastructure and Operations Fundamentals",
+      "url": "https://www.nvidia.com/en-us/training/academy/course-detail/?id=course:15139841",
+      "publisher": "NVIDIA Academy",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCA-AIIO",
+        "NCP-AIO"
+      ],
+      "notes": "Official seven-hour mapped self-paced course; enrollment access and price can vary. It is a prerequisite refresher, not sufficient alone for NCP-AIO hands-on readiness. September 29 NCA-AIIO deep review: Public course endpoint HTTP200 with unpopulated course template and Academy navigation. The seven-hour claim is verified on canonical exam and DGX path, not this course body. No paid lessons, checkout, account or enrollment. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"nvidia-dgx-learning-path","title":"NVIDIA DGX Platform and Data Center Learning Path","url":"https://www.nvidia.com/en-us/learn/learning-path/dgx-data-center/","publisher":"NVIDIA","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCA-AIIO"],"notes":"First-party mixed-access catalog across seven-hour fundamentals, DGX administration, Base Command Manager and professional progression; NVIDIA says paths, courses and links can change."
+      "id": "nvidia-dgx-learning-path",
+      "title": "NVIDIA DGX Platform and Data Center Learning Path",
+      "url": "https://www.nvidia.com/en-us/learn/learning-path/dgx-data-center/",
+      "publisher": "NVIDIA",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCA-AIIO"
+      ],
+      "notes": "First-party mixed-access catalog across seven-hour fundamentals, DGX administration, Base Command Manager and professional progression; NVIDIA says paths, courses and links can change. September 29 NCA-AIIO deep review: Complete main course-card grid and path-change note read. Fundamentals listed USD50/7h; AIIO exam card USD135 conflicts with canonical USD125. Selected other routes considered for progression only; no purchase or lesson access. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"nvidia-dgx-documentation","title":"NVIDIA DGX Platform Documentation","url":"https://docs.nvidia.com/dgx/","publisher":"NVIDIA","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCA-AIIO"],"notes":"Current first-party hub for DGX systems, BaseOS, Base Command Manager, BasePOD/SuperPOD, NGC, Magnum IO and administration references."
+      "id": "nvidia-dgx-documentation",
+      "title": "NVIDIA DGX Platform Documentation",
+      "url": "https://docs.nvidia.com/dgx/",
+      "publisher": "NVIDIA",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCA-AIIO"
+      ],
+      "notes": "Current first-party hub for DGX systems, BaseOS, Base Command Manager, BasePOD/SuperPOD, NGC, Magnum IO and administration references. September 29 NCA-AIIO deep review: Complete portal main descriptions and training links read, including Mission Control, Base Command Manager, BaseOS, DGX systems/platforms and technology paths. Not a full audit of linked system manuals or current support matrices; marketing performance language not adopted as guarantee. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"nvidia-dcgm-documentation","title":"NVIDIA DCGM Documentation","url":"https://docs.nvidia.com/datacenter/dcgm/latest/contents.html","publisher":"NVIDIA","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCA-AIIO","NCP-AIO"],"notes":"Current GPU observation, management, validation, diagnostics, field and exporter documentation; exact syntax, privilege and support are version-sensitive."
+      "id": "nvidia-dcgm-documentation",
+      "title": "NVIDIA DCGM Documentation",
+      "url": "https://docs.nvidia.com/datacenter/dcgm/latest/contents.html",
+      "publisher": "NVIDIA",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCA-AIIO",
+        "NCP-AIO"
+      ],
+      "notes": "Current GPU observation, management, validation, diagnostics, field and exporter documentation; exact syntax, privilege and support are version-sensitive. September 29 NCA-AIIO deep review: Complete short documentation landing page read. Learn/reference/exporter/diagnostics routes inspected; no GPU tools or services executed. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"nvidia-gpu-operator-documentation","title":"NVIDIA GPU Operator Documentation","url":"https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/","publisher":"NVIDIA","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCA-AIIO"],"notes":"Current Kubernetes GPU lifecycle and component/support-matrix documentation covering drivers, toolkit, device plugin, discovery, MIG and DCGM integration."
+      "id": "nvidia-gpu-operator-documentation",
+      "title": "NVIDIA GPU Operator Documentation",
+      "url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/",
+      "publisher": "NVIDIA",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCA-AIIO"
+      ],
+      "notes": "Current Kubernetes GPU lifecycle and component/support-matrix documentation covering drivers, toolkit, device plugin, discovery, MIG and DCGM integration. September 29 NCA-AIIO deep review: Complete main overview, components and license table read. Operator automates supported Kubernetes GPU components; no installation, controller execution or full support-matrix audit. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"nvidia-mig-user-guide","title":"NVIDIA Multi-Instance GPU User Guide","url":"https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/","publisher":"NVIDIA","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCA-AIIO"],"notes":"Current MIG concepts, supported GPU/profile, isolation and deployment reference; separate MIG from vGPU and time slicing."
+      "id": "nvidia-mig-user-guide",
+      "title": "NVIDIA Multi-Instance GPU User Guide",
+      "url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/",
+      "publisher": "NVIDIA",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCA-AIIO"
+      ],
+      "notes": "Current MIG concepts, supported GPU/profile, isolation and deployment reference; separate MIG from vGPU and time slicing. September 29 NCA-AIIO deep review: Complete brief landing-page introduction read; detailed concepts and deployment pages separately registered. No hardware profile execution. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-nca-aiio-bootcamp","title":"NCA-AIIO Prep Course — AI Infrastructure and Operations Associate","url":"https://www.udemy.com/course/nca-aiio-bootcamp/","publisher":"Udemy / Ashish Prajapati","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["NCA-AIIO"],"notes":"Popular June 2026 approximately seven-hour course with broad blueprint/tool coverage; verify version-specific claims against NVIDIA and add hands-on evidence."
+      "id": "udemy-nca-aiio-bootcamp",
+      "title": "NCA-AIIO Prep Course — AI Infrastructure and Operations Associate",
+      "url": "https://www.udemy.com/course/nca-aiio-bootcamp/",
+      "publisher": "Udemy / Ashish Prajapati",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCA-AIIO"
+      ],
+      "notes": "Popular June 2026 approximately seven-hour course with broad blueprint/tool coverage; verify version-specific claims against NVIDIA and add hands-on evidence. September 29 NCA-AIIO deep review: HTTP403. Earlier June2026/about7h and popularity/quality claims unverified and removed from current recommendation prose. No paid questions or lessons. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
     },
     {
       "id":"nvidia-ncp-aio-certification","title":"NVIDIA-Certified Professional: AI Operations","url":"https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/","publisher":"NVIDIA","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCP-AIO"],"notes":"Canonical 31/23/23/23 blueprint and 30-question plus three-integrated-lab, 120-minute, USD 500, two-year professional credential contract."

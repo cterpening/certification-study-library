@@ -1,0 +1,1246 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "NCA-AIIO",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/NCA-AIIO-nvidia-ai-infrastructure-operations-associate.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "aeffdd56837b7f26d0f882ab16c659d4d6b00371962fb8467fab9979bc33c923",
+  "guide_after_sha256": "f174e15341017b25aa0aaf1e210a5081e2a6345136feab6f9ea0edbd0b50dcef",
+  "prior_records": {
+    "exam": {
+      "code": "NCA-AIIO",
+      "level": "beginner",
+      "vendor_id": "nvidia",
+      "title": "NVIDIA-Certified Associate: AI Infrastructure and Operations",
+      "status": "active",
+      "study_guide_url": "https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/",
+      "guide_path": "guides/NCA-AIIO-nvidia-ai-infrastructure-operations-associate.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "NVIDIA lists basic data-center infrastructure knowledge. Build workload-to-stack reasoning across AI/ML/DL, CPU/GPU and training/inference; size compute, memory, topology, network, storage, power and cooling; then practice supported lifecycle, scheduling/orchestration, GPU telemetry, safe diagnosis and sharing/virtualization decisions."
+    },
+    "review": {
+      "id": "nca-aiio-2026-09-02-source-validation",
+      "exam_code": "NCA-AIIO",
+      "guide_path": "guides/NCA-AIIO-nvidia-ai-infrastructure-operations-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nca-aiio-official-objectives.txt",
+      "blueprint_snapshot_sha256": "11cca6a173f82698164dde31c281949bfe89a574be3b6979f77b9968f1746824",
+      "objective_coverage": [
+        {
+          "objective_group": "Essential AI Knowledge (38%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "AI Infrastructure (40%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Labs 1–4 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "AI Operations (22%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 5–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 8,
+        "reachable": 7,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Every public objective is mapped through workload requirements, compute/memory/topology, network/storage/facility sizing, supported software, scheduling/orchestration, telemetry, safe diagnosis and sharing/virtualization evidence. Three scenarios, eight authorized labs and 40 checks are included. Seven URLs are reachable and Udemy is automation-blocked; none are broken. The USD 125 certification page versus USD 135 learning-path card discrepancy is explicit. No recalled/live item, dump, unsafe production instruction or copied course content is used."
+    },
+    "sources": [
+      {
+        "id": "nvidia-nca-aiio-certification",
+        "title": "NVIDIA-Certified Associate: AI Infrastructure and Operations",
+        "url": "https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/",
+        "publisher": "NVIDIA",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCA-AIIO"
+        ],
+        "notes": "Canonical 38/40/22 weighted blueprint, prerequisite, delivery, USD 125 price and two-year validity baseline; a separate first-party learning-path card showed USD 135, so checkout must be verified."
+      },
+      {
+        "id": "nvidia-aiio-fundamentals",
+        "title": "AI Infrastructure and Operations Fundamentals",
+        "url": "https://www.nvidia.com/en-us/training/academy/course-detail/?id=course:15139841",
+        "publisher": "NVIDIA Academy",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCA-AIIO",
+          "NCP-AIO"
+        ],
+        "notes": "Official seven-hour mapped self-paced course; enrollment access and price can vary. It is a prerequisite refresher, not sufficient alone for NCP-AIO hands-on readiness."
+      },
+      {
+        "id": "nvidia-dgx-learning-path",
+        "title": "NVIDIA DGX Platform and Data Center Learning Path",
+        "url": "https://www.nvidia.com/en-us/learn/learning-path/dgx-data-center/",
+        "publisher": "NVIDIA",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCA-AIIO"
+        ],
+        "notes": "First-party mixed-access catalog across seven-hour fundamentals, DGX administration, Base Command Manager and professional progression; NVIDIA says paths, courses and links can change."
+      },
+      {
+        "id": "nvidia-dgx-documentation",
+        "title": "NVIDIA DGX Platform Documentation",
+        "url": "https://docs.nvidia.com/dgx/",
+        "publisher": "NVIDIA",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCA-AIIO"
+        ],
+        "notes": "Current first-party hub for DGX systems, BaseOS, Base Command Manager, BasePOD/SuperPOD, NGC, Magnum IO and administration references."
+      },
+      {
+        "id": "nvidia-dcgm-documentation",
+        "title": "NVIDIA DCGM Documentation",
+        "url": "https://docs.nvidia.com/datacenter/dcgm/latest/contents.html",
+        "publisher": "NVIDIA",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCA-AIIO",
+          "NCP-AIO"
+        ],
+        "notes": "Current GPU observation, management, validation, diagnostics, field and exporter documentation; exact syntax, privilege and support are version-sensitive."
+      },
+      {
+        "id": "nvidia-gpu-operator-documentation",
+        "title": "NVIDIA GPU Operator Documentation",
+        "url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/",
+        "publisher": "NVIDIA",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCA-AIIO"
+        ],
+        "notes": "Current Kubernetes GPU lifecycle and component/support-matrix documentation covering drivers, toolkit, device plugin, discovery, MIG and DCGM integration."
+      },
+      {
+        "id": "nvidia-mig-user-guide",
+        "title": "NVIDIA Multi-Instance GPU User Guide",
+        "url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/",
+        "publisher": "NVIDIA",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCA-AIIO"
+        ],
+        "notes": "Current MIG concepts, supported GPU/profile, isolation and deployment reference; separate MIG from vGPU and time slicing."
+      },
+      {
+        "id": "udemy-nca-aiio-bootcamp",
+        "title": "NCA-AIIO Prep Course — AI Infrastructure and Operations Associate",
+        "url": "https://www.udemy.com/course/nca-aiio-bootcamp/",
+        "publisher": "Udemy / Ashish Prajapati",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCA-AIIO"
+        ],
+        "notes": "Popular June 2026 approximately seven-hour course with broad blueprint/tool coverage; verify version-specific claims against NVIDIA and add hands-on evidence."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "2d97fcceff287cd682ee487428224869b22e94a5430f3ac86df678abb4a680d4",
+      "guide_sections": [
+        "1. Essential AI Knowledge — 38%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "bde9470b20cb8a7cf3b7a22ba4139d6f7aea45af68ef5b7624c8e66400cf9cb1",
+      "guide_sections": [
+        "1. Essential AI Knowledge — 38%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "c4805772e4cbade946bcc939a84208687b508de5ddd147d96fe8323035ca27f7",
+      "guide_sections": [
+        "1. Essential AI Knowledge — 38%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "c90855c2080e03c9d23544bc41188f35b30f3cdbdb85c37baa33e67c4ed96398",
+      "guide_sections": [
+        "1. Essential AI Knowledge — 38%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "8be332286d2e7070178be73caf2387e57b4505ff47d99f13f0b917c4860aeca1",
+      "guide_sections": [
+        "1. Essential AI Knowledge — 38%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "816273e378d59e9f38ca81214e05d8d09d17d249b7779e24b83e0194dda06dc5",
+      "guide_sections": [
+        "1. Essential AI Knowledge — 38%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "581728b1a992e58f125c24f3f5b5f0a11f0fdcbe594fb6903d168144b6e2607a",
+      "guide_sections": [
+        "1. Essential AI Knowledge — 38%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "389deeebe7c28dc7901304d0fd253a25c6942e347b9b3be04c4d5b1e73c78f16",
+      "guide_sections": [
+        "1. Essential AI Knowledge — 38%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "2a0334910f2d3c003deb90fc2d30ef6526b65de2b69237b39dff8b0102159e54",
+      "guide_sections": [
+        "2. AI Infrastructure — 40%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "c044555874f39b4bc1b6d6a7867f63b136a1a45bc7f0b06266f02fe2e5b4dd34",
+      "guide_sections": [
+        "2. AI Infrastructure — 40%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "5d2b7dcea200874062a1db8c2daa75b955451db1dbe61350b681afaa3a4c2381",
+      "guide_sections": [
+        "2. AI Infrastructure — 40%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "1f10b0a88dbb7dffe7edbb1abc849b458c3557f64e7ab0f823cb00d2282cefcf",
+      "guide_sections": [
+        "2. AI Infrastructure — 40%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "899ebad3f68dd2dc52acc4e2cf7accf807346369fb27a50478c07520c5f75652",
+      "guide_sections": [
+        "2. AI Infrastructure — 40%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "872cda94e7e15e27b3488173bb515c660a3371a456dd99ad00d664ec908f23da",
+      "guide_sections": [
+        "2. AI Infrastructure — 40%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "43dc68697a980257bcec0bcb569a464d3caffff3cfbacb797f81f141f9ead70e",
+      "guide_sections": [
+        "2. AI Infrastructure — 40%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "31c8b6a4016d21f1a938f09e73d1e6578a6020f3a9a3b28b8dcb53fef8bd72e1",
+      "guide_sections": [
+        "2. AI Infrastructure — 40%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "59f74ccead4eb034d30e16d67f03ed0218e3d6cfde35cdd6cdff33a7fa5194c9",
+      "guide_sections": [
+        "2. AI Infrastructure — 40%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 10,
+      "objective_sha256": "bcc89c67ba27db6f53d7b314187ecb068293546623bf2a84ae80ad49b49c310b",
+      "guide_sections": [
+        "2. AI Infrastructure — 40%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "7c02ae42ebc2a32041035f4063c1574fc20a50c346de533bbdd2aa72dd95ac86",
+      "guide_sections": [
+        "3. AI Operations — 22%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "0dc1e695232e448a2bd20d8c2b108febd3d00c5735c54a6f7724b5a04761a3c4",
+      "guide_sections": [
+        "3. AI Operations — 22%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "478c370fb3effa880bb3cd91aadb48480bd2e0d20e8f1382d955f2e788cfbe1d",
+      "guide_sections": [
+        "3. AI Operations — 22%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "a3440942a8459ec3c03fbdad3288ec9d3f62bad8ed3e274c9b9a1c458de3a0a7",
+      "guide_sections": [
+        "3. AI Operations — 22%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "NCA-AIIO",
+        "title": "NVIDIA-Certified Associate: AI Infrastructure and Operations",
+        "url": "https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/",
+        "guide_path": "guides/NCA-AIIO-nvidia-ai-infrastructure-operations-associate.md",
+        "snapshot_path": "data\\objective-snapshots\\nca-aiio-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\nca-aiio-official-status.json",
+        "previous_sha256": "11cca6a173f82698164dde31c281949bfe89a574be3b6979f77b9968f1746824",
+        "current_sha256": "11cca6a173f82698164dde31c281949bfe89a574be3b6979f77b9968f1746824",
+        "previous_status_sha256": "2035c027364a586c49725df14d32bd95b896d142acab103b31aa2160b0dcf5b1",
+        "current_status_sha256": "2035c027364a586c49725df14d32bd95b896d142acab103b31aa2160b0dcf5b1",
+        "official_status": {
+          "skills_versions": [
+            "NCA-AIIO",
+            "Duration: One hour",
+            "Price: $125",
+            "Certification level: Associate",
+            "Subject: AI Infrastructure and operations",
+            "Number of questions: 50",
+            "Prerequisites: A basic understanding of data center infrastructure.",
+            "Language: English",
+            "Validity: This certification is valid for two years from issuance. Recertification may be achieved by retaking the exam."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 18,
+    "reachable": 17,
+    "access_blocked": 1,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "nvidia-nca-aiio-certification",
+      "url": "https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/",
+      "checked_at": "2026-09-29T13:35:21.260613+00:00",
+      "health": {
+        "id": "nvidia-nca-aiio-certification",
+        "url": "https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/",
+        "checked_at": "2026-09-29T13:35:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "NVIDIA AI Infrastructure and Operations Certification",
+        "canonical_url": "https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/",
+        "duration_signals": [],
+        "signal_fingerprint": "80d918f9a383e96cb014ea6e76c1df457c4d05b070b64d24a926360283eca868",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/",
+      "sha256": "c74bfd57778663be756dda6df9e02ea435a0d6c42d7460dd5629436c616dbd2f",
+      "text_characters": 25454
+    },
+    {
+      "id": "nvidia-aiio-fundamentals",
+      "url": "https://www.nvidia.com/en-us/training/academy/course-detail/?id=course:15139841",
+      "checked_at": "2026-09-29T13:35:21.261523+00:00",
+      "health": {
+        "id": "nvidia-aiio-fundamentals",
+        "url": "https://www.nvidia.com/en-us/training/academy/course-detail/?id=course:15139841",
+        "checked_at": "2026-09-29T13:35:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nvidia.com/en-us/training/academy/course-detail/?id=course:15139841",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Course DetailNVIDIA HomeMenuMenuCloseCloseCloseCaret down iconCaret down iconCaret up iconCaret right iconCaret right iconCaret right iconCaret left iconCaret left iconCaret left iconShopping CartSearch iconArtificial Intelligence Computing Leadership from NVIDIAArtificial Intelligence Computing Leadership from NVIDIANVIDIANVIDIA",
+        "canonical_url": "https://www.nvidia.com/en-us/training/academy/course-detail/",
+        "duration_signals": [],
+        "signal_fingerprint": "4e4fc25da87328f1fc2992fbf577fa85db82ea7a801b93f4a314218608611a93",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nvidia.com/en-us/training/academy/course-detail/?id=course:15139841",
+      "sha256": "61c48f063649ad2d3791c95952d40cfe0524cc449c1bfb4e1b925f7da211141d",
+      "text_characters": 20723
+    },
+    {
+      "id": "nvidia-dgx-learning-path",
+      "url": "https://www.nvidia.com/en-us/learn/learning-path/dgx-data-center/",
+      "checked_at": "2026-09-29T13:35:21.262091+00:00",
+      "health": {
+        "id": "nvidia-dgx-learning-path",
+        "url": "https://www.nvidia.com/en-us/learn/learning-path/dgx-data-center/",
+        "checked_at": "2026-09-29T13:35:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nvidia.com/en-us/learn/learning-path/dgx-data-center/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "NVIDIA DGX Platform and Data Center Learning Path",
+        "canonical_url": "https://www.nvidia.com/en-us/learn/learning-path/dgx-data-center/",
+        "duration_signals": [
+          "1 hour",
+          "1.5 hour",
+          "12 hours",
+          "24 hours",
+          "28 hours",
+          "3 hours",
+          "7 hours",
+          "8 hours",
+          "9.5 hours"
+        ],
+        "signal_fingerprint": "dccad63fcb3387ba858e6004df8af2243a8b598f7921689f4cf5c0ac5a5b9937",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nvidia.com/en-us/learn/learning-path/dgx-data-center/",
+      "sha256": "1419555d396143561980bfcf08e629f3f591ee1279e85168783a8f6e9164c992",
+      "text_characters": 23967
+    },
+    {
+      "id": "nvidia-dgx-documentation",
+      "url": "https://docs.nvidia.com/dgx/",
+      "checked_at": "2026-09-29T13:35:21.929573+00:00",
+      "health": {
+        "id": "nvidia-dgx-documentation",
+        "url": "https://docs.nvidia.com/dgx/",
+        "checked_at": "2026-09-29T13:35:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/dgx/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "NVIDIA DGX Platform",
+        "canonical_url": "https://docs.nvidia.com/dgx/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "79f92c90b7e760df7fc64f7275dce5aa3bef638e06ffca1ac229edb6f0cfcf66",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/dgx/",
+      "sha256": "10eebee019c9931609cb4fafb30dda2254ffdd7c0e99b516b4b98498c57486e3",
+      "text_characters": 5431
+    },
+    {
+      "id": "nvidia-dcgm-documentation",
+      "url": "https://docs.nvidia.com/datacenter/dcgm/latest/contents.html",
+      "checked_at": "2026-09-29T13:35:22.395752+00:00",
+      "health": {
+        "id": "nvidia-dcgm-documentation",
+        "url": "https://docs.nvidia.com/datacenter/dcgm/latest/contents.html",
+        "checked_at": "2026-09-29T13:35:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/datacenter/dcgm/latest/contents.html",
+        "content_type": "text/html",
+        "page_title": "NVIDIA DCGM Documentation — NVIDIA DCGM Documentation",
+        "canonical_url": "https://docs.nvidia.com/datacenter/dcgm/contents.html",
+        "duration_signals": [],
+        "signal_fingerprint": "10e65d25ffff52a442a25feb5ffe88e3cf3e461668cea99dffd72c5a38641db1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/datacenter/dcgm/latest/contents.html",
+      "sha256": "c7096ee6d956ba4ef1eab9e757e08e24dc766bbd933ea15f2379c2e9f250f6f1",
+      "text_characters": 1566
+    },
+    {
+      "id": "nvidia-gpu-operator-documentation",
+      "url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/",
+      "checked_at": "2026-09-29T13:35:22.494638+00:00",
+      "health": {
+        "id": "nvidia-gpu-operator-documentation",
+        "url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/",
+        "checked_at": "2026-09-29T13:35:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/",
+        "content_type": "text/html",
+        "page_title": "About the NVIDIA GPU Operator — NVIDIA GPU Operator",
+        "canonical_url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/",
+        "duration_signals": [],
+        "signal_fingerprint": "7610fb95e6c27a2224ea4259e3d40b6dfd28cf9616ef3673b3977f5ee20f0d7b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/",
+      "sha256": "b7972419a6506fc988896a896ff4cfc75332a5e1602f54728adce158100f34a1",
+      "text_characters": 3849
+    },
+    {
+      "id": "nvidia-mig-user-guide",
+      "url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/",
+      "checked_at": "2026-09-29T13:35:22.863442+00:00",
+      "health": {
+        "id": "nvidia-mig-user-guide",
+        "url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/",
+        "checked_at": "2026-09-29T13:35:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/",
+        "content_type": "text/html",
+        "page_title": "MIG User Guide — NVIDIA Multi-Instance GPU User Guide",
+        "canonical_url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/",
+        "duration_signals": [],
+        "signal_fingerprint": "eb81926752866da425c2f537b0a23a24a8f78f61e58ce73ed2be7fd73281b7c5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/",
+      "sha256": "7147f8ba10be6e6ff6a672663f413e6324307710032ec2be4e3f2bac843d3e3d",
+      "text_characters": 449
+    },
+    {
+      "id": "udemy-nca-aiio-bootcamp",
+      "url": "https://www.udemy.com/course/nca-aiio-bootcamp/",
+      "checked_at": "2026-09-29T13:35:22.898178+00:00",
+      "health": {
+        "id": "udemy-nca-aiio-bootcamp",
+        "url": "https://www.udemy.com/course/nca-aiio-bootcamp/",
+        "checked_at": "2026-09-29T13:35:22+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/nca-aiio-bootcamp/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "nvidia-certification-policies",
+      "url": "https://www.nvidia.com/en-us/learn/certification/",
+      "checked_at": "2026-09-29T13:41:58.836512+00:00",
+      "health": {
+        "id": "nvidia-certification-policies",
+        "url": "https://www.nvidia.com/en-us/learn/certification/",
+        "checked_at": "2026-09-29T13:41:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nvidia.com/en-us/learn/certification/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "NVIDIA Certification Programs",
+        "canonical_url": "https://www.nvidia.com/en-us/learn/certification/",
+        "duration_signals": [
+          "1 hour",
+          "2 hours",
+          "24 hours"
+        ],
+        "signal_fingerprint": "859325e6934ef37b85afa376b123a54da08180e8d43d452988a11699993433ae",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nvidia.com/en-us/learn/certification/",
+      "sha256": "6fd19c1cae8a994b8ab203d839b522c964306d72b7413bfa4962ddb412fd3ccc",
+      "text_characters": 38167
+    },
+    {
+      "id": "nvidia-gpu-time-slicing",
+      "url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/gpu-sharing.html",
+      "checked_at": "2026-09-29T13:41:58.837179+00:00",
+      "health": {
+        "id": "nvidia-gpu-time-slicing",
+        "url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/gpu-sharing.html",
+        "checked_at": "2026-09-29T13:41:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/gpu-sharing.html",
+        "content_type": "text/html",
+        "page_title": "Time-Slicing GPUs in Kubernetes — NVIDIA GPU Operator",
+        "canonical_url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/gpu-sharing.html",
+        "duration_signals": [],
+        "signal_fingerprint": "fe6c6337f34401cf336a4799cea4f2129f4e5e0c1b7e8c41172cc37dcdc4706c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/gpu-sharing.html",
+      "sha256": "8c7c6319c72118e9b5dda7b73ddbc542443fae86175f613add46a37cfc0eb9c2",
+      "text_characters": 22543
+    },
+    {
+      "id": "nvidia-mig-concepts",
+      "url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/concepts.html",
+      "checked_at": "2026-09-29T13:41:58.837610+00:00",
+      "health": {
+        "id": "nvidia-mig-concepts",
+        "url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/concepts.html",
+        "checked_at": "2026-09-29T13:41:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/concepts.html",
+        "content_type": "text/html",
+        "page_title": "Concepts — NVIDIA Multi-Instance GPU User Guide",
+        "canonical_url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/concepts.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e025eb53fcbb8c3f94346206f0f4861989826154ebe4ccfd6cf26c236d4e825c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/concepts.html",
+      "sha256": "bac2485867c03bf0c60a00e452ed3ca51f27f09dcc375de4909c72ef5c5b8295",
+      "text_characters": 8694
+    },
+    {
+      "id": "nvidia-mig-deployment",
+      "url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/deployment-considerations.html",
+      "checked_at": "2026-09-29T13:41:59.324045+00:00",
+      "health": {
+        "id": "nvidia-mig-deployment",
+        "url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/deployment-considerations.html",
+        "checked_at": "2026-09-29T13:41:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/deployment-considerations.html",
+        "content_type": "text/html",
+        "page_title": "Deployment Considerations — NVIDIA Multi-Instance GPU User Guide",
+        "canonical_url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/deployment-considerations.html",
+        "duration_signals": [],
+        "signal_fingerprint": "13dd14b00bb5c34aae2e91933ba5037d65b2327e0eb69076c40f4afe690337c3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/deployment-considerations.html",
+      "sha256": "da13eb67d5e7b9f618d49edb7434a32e3480d5519cbdc1b8e1d152b37bcb7f93",
+      "text_characters": 3517
+    },
+    {
+      "id": "nvidia-dcgm-fields",
+      "url": "https://docs.nvidia.com/datacenter/dcgm/latest/reference/field-identifiers.html",
+      "checked_at": "2026-09-29T13:41:59.400195+00:00",
+      "health": {
+        "id": "nvidia-dcgm-fields",
+        "url": "https://docs.nvidia.com/datacenter/dcgm/latest/reference/field-identifiers.html",
+        "checked_at": "2026-09-29T13:41:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/datacenter/dcgm/latest/reference/field-identifiers.html",
+        "content_type": "text/html",
+        "page_title": "Field Identifiers — NVIDIA DCGM Documentation",
+        "canonical_url": "https://docs.nvidia.com/datacenter/dcgm/reference/field-identifiers.html",
+        "duration_signals": [],
+        "signal_fingerprint": "b54626aed3ee0b79cbbce87579d20be20c146c03a11725bfd1cf54aed206015f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/datacenter/dcgm/latest/reference/field-identifiers.html",
+      "sha256": "fdab07671474074a549540a5dc07fa2e6611adcc81196c85443469ce18749311",
+      "text_characters": 105480
+    },
+    {
+      "id": "nvidia-dcgm-exporter-metrics",
+      "url": "https://docs.nvidia.com/datacenter/dcgm/latest/reference/dcgm-exporter-metrics.html",
+      "checked_at": "2026-09-29T13:41:59.498598+00:00",
+      "health": {
+        "id": "nvidia-dcgm-exporter-metrics",
+        "url": "https://docs.nvidia.com/datacenter/dcgm/latest/reference/dcgm-exporter-metrics.html",
+        "checked_at": "2026-09-29T13:41:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/datacenter/dcgm/latest/reference/dcgm-exporter-metrics.html",
+        "content_type": "text/html",
+        "page_title": "DCGM Exporter Metrics — NVIDIA DCGM Documentation",
+        "canonical_url": "https://docs.nvidia.com/datacenter/dcgm/reference/dcgm-exporter-metrics.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e72e6d8d044ac21912fbe5c2d0fac7d04431cf4a5eda014098408ad535ad9b10",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/datacenter/dcgm/latest/reference/dcgm-exporter-metrics.html",
+      "sha256": "ad9db478968c2a5531f55d8eab3246aabac2e9f1eda5e4bc1c17b073341d7d09",
+      "text_characters": 15861
+    },
+    {
+      "id": "nvidia-gpu-operator-release-notes",
+      "url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/release-notes.html",
+      "checked_at": "2026-09-29T13:41:59.636385+00:00",
+      "health": {
+        "id": "nvidia-gpu-operator-release-notes",
+        "url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/release-notes.html",
+        "checked_at": "2026-09-29T13:41:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/release-notes.html",
+        "content_type": "text/html",
+        "page_title": "Release Notes — NVIDIA GPU Operator",
+        "canonical_url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/release-notes.html",
+        "duration_signals": [
+          "20 minutes"
+        ],
+        "signal_fingerprint": "556f00b4537dfe543cc320f1a7816eeebb88d38bd10fb53e0ac663f897964ac0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/release-notes.html",
+      "sha256": "c803110c1d919af2df8e3c6ad7162e5766d3a17800355376ed14fe606df76e42",
+      "text_characters": 151057
+    },
+    {
+      "id": "nvidia-nca-aiio-study-guide",
+      "url": "https://dam-cdn.nvd.orangelogic.com/AssetLink/x874j05hy3m3r2sor84kpvp70750m468.pdf",
+      "checked_at": "2026-09-29T13:42:14.010203+00:00",
+      "health": {
+        "id": "nvidia-nca-aiio-study-guide",
+        "url": "https://dam-cdn.nvd.orangelogic.com/AssetLink/x874j05hy3m3r2sor84kpvp70750m468.pdf",
+        "checked_at": "2026-09-29T13:42:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://dam-cdn.nvd.orangelogic.com/AssetLink/x874j05hy3m3r2sor84kpvp70750m468.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://dam-cdn.nvd.orangelogic.com/AssetLink/x874j05hy3m3r2sor84kpvp70750m468.pdf",
+      "sha256": "e16c9fb77f5ecfd9d5340910d8006467c4e3bbda628d9a4fad6cfe48b9ba3d37",
+      "bytes": 503477,
+      "pdf_pages": 6,
+      "text_characters": 8395
+    },
+    {
+      "id": "nvidia-aiio-storage-scaling",
+      "url": "https://developer.nvidia.com/blog/tips-on-scaling-storage-for-ai-training-and-inferencing/",
+      "checked_at": "2026-09-29T13:45:17.884341+00:00",
+      "health": {
+        "id": "nvidia-aiio-storage-scaling",
+        "url": "https://developer.nvidia.com/blog/tips-on-scaling-storage-for-ai-training-and-inferencing/",
+        "checked_at": "2026-09-29T13:45:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.nvidia.com/blog/tips-on-scaling-storage-for-ai-training-and-inferencing/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Tips on Scaling Storage for AI Training and Inferencing | NVIDIA Technical Blog",
+        "canonical_url": "https://developer.nvidia.com/blog/tips-on-scaling-storage-for-ai-training-and-inferencing/",
+        "duration_signals": [],
+        "signal_fingerprint": "906388ef78aff909ea3a500e98e4c8c8ee93e0de1680e8a09e2090b9b58c6e55",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.nvidia.com/blog/tips-on-scaling-storage-for-ai-training-and-inferencing/",
+      "sha256": "a3f6a117d7dca86389a38330b4f56b319e058d0450d00d310d859b71af5eaa4d",
+      "text_characters": 11149
+    },
+    {
+      "id": "nvidia-aiio-academy-route",
+      "url": "https://academy.nvidia.com/en/course/ai-infrastructure-operations-fundamentals/?cm=64727",
+      "checked_at": "2026-09-29T13:45:17.885101+00:00",
+      "health": {
+        "id": "nvidia-aiio-academy-route",
+        "url": "https://academy.nvidia.com/en/course/ai-infrastructure-operations-fundamentals/?cm=64727",
+        "checked_at": "2026-09-29T13:45:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nvidia.com/en-us/training/academy/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "NVIDIA AI Infrastructure Training for professionals",
+        "canonical_url": "https://www.nvidia.com/en-us/training/academy/",
+        "duration_signals": [],
+        "signal_fingerprint": "abe95bd03a99122c048235fcc4d03fd13eebde3da36c896edc6526bde67f90bc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nvidia.com/en-us/training/academy/",
+      "sha256": "50ce5c7338f5a8d994bdbad436409641f7fd011f5e17224cfa29ddd0e52f97a7",
+      "text_characters": 24413
+    }
+  ],
+  "added_source_ids": [
+    "nvidia-aiio-storage-scaling",
+    "nvidia-aiio-academy-route",
+    "nvidia-nca-aiio-study-guide",
+    "nvidia-gpu-time-slicing",
+    "nvidia-mig-concepts",
+    "nvidia-mig-deployment",
+    "nvidia-dcgm-fields",
+    "nvidia-dcgm-exporter-metrics",
+    "nvidia-gpu-operator-release-notes"
+  ],
+  "findings": [
+    {
+      "id": "ncaaiio-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Recommended qualifications are not stated admission requirements",
+      "url": "https://dam-cdn.nvd.orangelogic.com/AssetLink/x874j05hy3m3r2sor84kpvp70750m468.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCA-AIIO"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "PDF labels degree and experience recommended, training optional; canonical page asks basic data-center knowledge.",
+      "recommendation": "Clarify qualification wording without inventing a degree barrier.",
+      "disposition": "applied",
+      "source_id": "nvidia-nca-aiio-study-guide",
+      "resolution": "Clarify qualification wording without inventing a degree barrier."
+    },
+    {
+      "id": "ncaaiio-deep-2",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Exam price listings still disagree",
+      "url": "https://www.nvidia.com/en-us/learn/learning-path/dgx-data-center/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCA-AIIO"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Canonical USD125 versus learning-path exam card USD135.",
+      "recommendation": "Retain dated discrepancy and defer final total to individual checkout.",
+      "disposition": "applied",
+      "source_id": "nvidia-dgx-learning-path",
+      "resolution": "Retain dated discrepancy and defer final total to individual checkout."
+    },
+    {
+      "id": "ncaaiio-deep-3",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "A successful redirect does not verify course content",
+      "url": "https://academy.nvidia.com/en/course/ai-infrastructure-operations-fundamentals/?cm=64727",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCA-AIIO"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "PDF-linked Academy course URL returns generic training landing page.",
+      "recommendation": "Mark specific course details unverified; retain7h only from canonical/path listings.",
+      "disposition": "applied",
+      "source_id": "nvidia-aiio-academy-route",
+      "resolution": "Mark specific course details unverified; retain7h only from canonical/path listings."
+    },
+    {
+      "id": "ncaaiio-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Related fields can use different types and scales",
+      "url": "https://docs.nvidia.com/datacenter/dcgm/latest/reference/field-identifiers.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCA-AIIO"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "203 integer percent versus1613 double ratio;252 MiB versus1627 bytes.",
+      "recommendation": "Add exact-ID normalization and reject mismatched units in original workbook.",
+      "disposition": "applied",
+      "source_id": "nvidia-dcgm-fields",
+      "resolution": "Add exact-ID normalization and reject mismatched units in original workbook."
+    },
+    {
+      "id": "ncaaiio-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "An Xid code is not an incident counter",
+      "url": "https://docs.nvidia.com/datacenter/dcgm/latest/reference/dcgm-exporter-metrics.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCA-AIIO"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Field gauge and exporter window/cumulative sampled-record families differ.",
+      "recommendation": "Explain semantics,reset and cadence before deriving rates or counts.",
+      "disposition": "applied",
+      "source_id": "nvidia-dcgm-exporter-metrics",
+      "resolution": "Explain semantics,reset and cadence before deriving rates or counts."
+    },
+    {
+      "id": "ncaaiio-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Replica allocation does not imply isolation or proportional compute",
+      "url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/gpu-sharing.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCA-AIIO"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Time-slicing limitations include shared memory/fault domains and no container metric association in the documented path.",
+      "recommendation": "Separate replica count from physical capacity and require workload/isolation evidence.",
+      "disposition": "applied",
+      "source_id": "nvidia-gpu-time-slicing",
+      "resolution": "Separate replica count from physical capacity and require workload/isolation evidence."
+    },
+    {
+      "id": "ncaaiio-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Compute instances share parent GPU-instance memory",
+      "url": "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/concepts.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCA-AIIO"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Multiple CIs in one GI share its memory and engines.",
+      "recommendation": "Deduplicate memory by GI identity and keep parent physical totals separate.",
+      "disposition": "applied",
+      "source_id": "nvidia-mig-concepts",
+      "resolution": "Deduplicate memory by GI identity and keep parent physical totals separate."
+    },
+    {
+      "id": "ncaaiio-deep-8",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Successful upgrade steps need workload-specific validation",
+      "url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/release-notes.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCA-AIIO"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "26.7.1 notes operand readiness fix and H100 driver-transition MIG issue;26.7.0 DRA route has separate prerequisites.",
+      "recommendation": "Teach exact-route/version acceptance and authorized recovery instead of universal upgrade recipes.",
+      "disposition": "applied",
+      "source_id": "nvidia-gpu-operator-release-notes",
+      "resolution": "Teach exact-route/version acceptance and authorized recovery instead of universal upgrade recipes."
+    },
+    {
+      "id": "ncaaiio-deep-9",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Storage growth is more than adding capacity",
+      "url": "https://developer.nvidia.com/blog/tips-on-scaling-storage-for-ai-training-and-inferencing/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCA-AIIO"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Historical article distinguishes throughput,capacity and maintenance availability.",
+      "recommendation": "Add original concurrent checkpoint payload budget and require measured restore evidence.",
+      "disposition": "applied",
+      "source_id": "nvidia-aiio-storage-scaling",
+      "resolution": "Add original concurrent checkpoint payload budget and require measured restore evidence."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "nvidia-aiio-storage-scaling",
+      "published_on": "2023-01-25",
+      "review": "Complete main historical article; architecture planning only,not current benchmark or sizing guarantee."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 34,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "cefe16dc6e94ba9338306b0f63c57bc57d6e1ae82f0ea3bb71ec962db5097e63",
+      "python_version": "3.13.14",
+      "execution_stdout": "{\"checks\": 34, \"eight_replicas_physical_mib\": 65536, \"normalized_memory_bytes\": 10485760, \"normalized_utilization\": 0.8, \"three_compute_instances_gi_mib\": 30720}\n34 local telemetry and capacity checks passed",
+      "results": {
+        "checks": 34,
+        "eight_replicas_physical_mib": 65536,
+        "normalized_memory_bytes": 10485760,
+        "normalized_utilization": 0.8,
+        "three_compute_instances_gi_mib": 30720
+      },
+      "additional_arithmetic": {
+        "checkpoint_gib": 320,
+        "window_seconds": 80,
+        "payload_gib_per_second": 4
+      },
+      "execution_boundary": "Actual standard-library JSON parsing, typed-unit normalization and capacity deduplication of original synthetic fixtures. No network,filewrites,hardware probes,installs,accounts,services,containers orGPUoperations.",
+      "model_limits": "Trusted identity/status and complete fixture shape. Not DCGM binding,Prometheus parser,production input validator,hardware discovery,real MIG profile validation,tenant isolation or performance proof. Typed DCGM blank handling is an unimplemented upstream boundary."
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Udemy public catalog HTTP403; one official course page has blank details and the PDF-linked Academy route redirects to a general page. Course interiors,quality,old runtime/revision and checkout unverified.",
+    "Canonical USD125 versus DGX learning-path USD135 exam discrepancy remains. Individual booking,accommodation,eligibility and price not assessed; no exam questions or browser installation.",
+    "Independent human review pending. Eight infrastructure activities and three original scenarios remain proposed; no GPU,cluster,cloud,container,driver or facility operation.",
+    "34 local standard-library checks use synthetic JSON with trusted identity/status and complete record shape. No DCGM binding,Prometheus parser,full input validation,hardware discovery,actual profile compatibility,tenant isolation or performance proof.",
+    "Full canonical22topics and six-page PDF read; specific primary documentation boundaries recorded by source. No complete hardware/platform matrix audit or all linked manuals. Historical storage advice not a performance or sizing guarantee.",
+    "Five reserved GitHub guides and disabled notification pilot remain untouched; no external messages,installation,service,reboot,authentication orpermission changes."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 179,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Repository/site validation and34actual standard-library synthetic JSON,typed-unit normalization andcapacity deduplication checks. No DCGM/Prometheus/hardware/cluster/container/cloud/service operation. Explicit status and identity trusted;not complete input validation or production telemetry system.",
+    "passed": 34,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "cefe16dc6e94ba9338306b0f63c57bc57d6e1ae82f0ea3bb71ec962db5097e63",
+    "python_version": "3.13.14",
+    "execution_stdout": "{\"checks\": 34, \"eight_replicas_physical_mib\": 65536, \"normalized_memory_bytes\": 10485760, \"normalized_utilization\": 0.8, \"three_compute_instances_gi_mib\": 30720}\n34 local telemetry and capacity checks passed",
+    "results": {
+      "checks": 34,
+      "eight_replicas_physical_mib": 65536,
+      "normalized_memory_bytes": 10485760,
+      "normalized_utilization": 0.8,
+      "three_compute_instances_gi_mib": 30720
+    },
+    "additional_arithmetic": {
+      "checkpoint_gib": 320,
+      "window_seconds": 80,
+      "payload_gib_per_second": 4
+    },
+    "model_limits": "Trusted identity/status and complete fixture shape. Not DCGM binding,Prometheus parser,production input validator,hardware discovery,real MIG profile validation,tenant isolation or performance proof. Typed DCGM blank handling is an unimplemented upstream boundary.",
+    "learning_catalog_consistency": "passed"
+  },
+  "public_objective_groups": [
+    {
+      "title": "Essential AI Knowledge",
+      "weight": "38%",
+      "objectives": [
+        "Describe the NVIDIA software stack used in an AI environment.",
+        "Compare and contrast training and inference architecture requirements and considerations.",
+        "Differentiate the concepts of AI, machine learning, and deep learning.",
+        "Explain the factors contributing to recent rapid improvements and adoption of AI.",
+        "Explain the key AI use cases and industries.",
+        "Explain the purpose and use case of various NVIDIA solutions.",
+        "Describe the software components related to the life cycle of AI development and deployment.",
+        "Compare and contrast GPU and CPU architectures."
+      ]
+    },
+    {
+      "title": "AI Infrastructure",
+      "weight": "40%",
+      "objectives": [
+        "Identify hardware requirements for specific AI training task use cases",
+        "Scale a GPU infrastructure for different use cases",
+        "Identify key concepts, and high-level specifications related to power and cooling requirements within a datacenter",
+        "Articulate the key advantages, challenges, and considerations related to on-prem vs cloud infrastructures",
+        "Identify key components and considerations of a cluster of an accelerated infrastructure",
+        "Identify facility requirements",
+        "Determine networking requirements for AI workloads",
+        "Identify and describe DC networking protocols and key concepts",
+        "Identify high speed DC network options and their use cases",
+        "Explain the purpose and benefits of a DPU in a datacenter"
+      ]
+    },
+    {
+      "title": "AI Operations",
+      "weight": "22%",
+      "objectives": [
+        "Describe AI data center management and monitoring essentials.",
+        "Describe AI cluster orchestration and job scheduling essentials.",
+        "Articulate the key measures and criteria related to monitoring GPUs.",
+        "Identify the key considerations for virtualizing accelerated infrastructure."
+      ]
+    }
+  ],
+  "source_reading_boundaries": {
+    "nvidia-nca-aiio-certification": "Complete current main exam identity, delivery details, optional training and all 22 objective bullets read. Three weights 38/40/22; canonical USD125,50questions,1hour,English,2yearretake. No announced transition. Objective and lifecycle monitor unchanged; no snapshot write.",
+    "nvidia-aiio-fundamentals": "Public course endpoint HTTP200 with unpopulated course template and Academy navigation. The seven-hour claim is verified on canonical exam and DGX path, not this course body. No paid lessons, checkout, account or enrollment.",
+    "nvidia-dgx-learning-path": "Complete main course-card grid and path-change note read. Fundamentals listed USD50/7h; AIIO exam card USD135 conflicts with canonical USD125. Selected other routes considered for progression only; no purchase or lesson access.",
+    "nvidia-dgx-documentation": "Complete portal main descriptions and training links read, including Mission Control, Base Command Manager, BaseOS, DGX systems/platforms and technology paths. Not a full audit of linked system manuals or current support matrices; marketing performance language not adopted as guarantee.",
+    "nvidia-dcgm-documentation": "Complete short documentation landing page read. Learn/reference/exporter/diagnostics routes inspected; no GPU tools or services executed.",
+    "nvidia-gpu-operator-documentation": "Complete main overview, components and license table read. Operator automates supported Kubernetes GPU components; no installation, controller execution or full support-matrix audit.",
+    "nvidia-mig-user-guide": "Complete brief landing-page introduction read; detailed concepts and deployment pages separately registered. No hardware profile execution.",
+    "udemy-nca-aiio-bootcamp": "HTTP403. Earlier June2026/about7h and popularity/quality claims unverified and removed from current recommendation prose. No paid questions or lessons.",
+    "nvidia-aiio-storage-scaling": "Complete main January25 2023 article through conclusion read. AI-generated summary not used as authority. Capacity/performance/maintenance distinctions retained; unconditional sizing, linear scaling and latency claims not adopted as guarantees. No benchmark.",
+    "nvidia-aiio-academy-route": "Actual PDF-linked public URL redirects to generic NVIDIA Academy training landing page. Entire main landing content read; no specific course details or interiors verified. HTTP200 is not course availability evidence.",
+    "nvidia-nca-aiio-study-guide": "Actual six-page PDF downloaded and all text read; PDF page4 (printed2) rendered locally and visually inspected. All22 numbered objectives agree with canonical scope; optional units and recommended degree/experience distinguished from mandatory admission. January2026 production mark not treated as effective revision date. Linked readings selectively followed, not all.",
+    "nvidia-certification-policies": "Complete FAQ from process through integrity/appeal boundaries read from fresh capture, including booking/cancel/remote/results/retake/renewal/accommodations. Pass/fail without score;14daywait/max5in12months;2yrretake. No exam booking, secure-browser installation or individual eligibility decision.",
+    "nvidia-gpu-time-slicing": "Understanding/comparison/platform/limitations, labels, configuration field descriptions and initial cluster-wide setup example read. No memory/fault isolation, replicas not proportional compute, container metric association limitation and ConfigMap not automatically monitored. Remaining deployment/update examples not fully read; none executed.",
+    "nvidia-mig-concepts": "Complete main terminology, partition/profile-placement and CUDA concurrency prose/tables read. GI memory shared by child CIs; example profiles GPU-specific. Page diagrams not fully visually inspected; no actual supported-profile matrix audit or MIG operation.",
+    "nvidia-mig-deployment": "Complete main system/application considerations and displayed driver table read. Generation-specific reset/persistence, privileges and application limitations noted. Specific minimum-driver entries not used as deployment recommendations; hardware matrix and linked procedures not independently audited.",
+    "nvidia-dcgm-fields": "Selected introduction/selecting fields, base-unit memory, clock/energy/utilization and initial throttle sections read. Specific203/1613 and252/1627 contracts used. Not full105k field catalog. Typed blank macros are upstream responsibility; workbook explicit statuses are synthetic, not DCGM protocol.",
+    "nvidia-dcgm-exporter-metrics": "Main selection/default/optional inventory, custom fields, exporter-owned counts, labels and runtime considerations read; not all linked references. Xid code gauge differs from sampled/window/cumulative record counts. Configured types do not establish semantic correctness or runtime support. No exporter, Prometheus or container workload.",
+    "nvidia-gpu-operator-release-notes": "Complete26.7.1 main changes and known H100 upgrade issue/procedure read; selected26.7.0 initial features through kubelet-root configuration read. Older releases and remaining26.7.0 sections not fully read. Public changes explain validation/route/version boundaries; no commands, resets, upgrades or services executed."
+  },
+  "pdf_reading_boundary": "All six pages text read; locally rendered PDF page4 (printed2) visually inspected. Numbered22objectives agree with website; optional training and recommended qualifications distinguished from mandatory admission. No claim that January2026production mark is a transition date.",
+  "snapshot_preservation": "Both current objective and lifecycle hashes equal the existing baseline. No snapshot write or archive replacement needed.",
+  "catalog_findings": [
+    {
+      "source_id": "nvidia-aiio-fundamentals",
+      "observation": "HTTP200 course shell has unpopulated metadata.",
+      "resolution": "Retain7h only as separately confirmed canonical/learning-path listing; no interior claim."
+    },
+    {
+      "source_id": "nvidia-aiio-academy-route",
+      "observation": "PDF-linked Academy course URL redirects to generic training landing page.",
+      "resolution": "Disclose redirect and unverified specific course availability."
+    },
+    {
+      "source_id": "nvidia-dgx-learning-path",
+      "observation": "Course50USD/7h listed; exam135USD conflicts with canonical125USD.",
+      "resolution": "Dated public metadata only; final checkout unresolved."
+    },
+    {
+      "source_id": "udemy-nca-aiio-bootcamp",
+      "observation": "HTTP403.",
+      "resolution": "EarlierJune2026/about7h and popularity/quality claims unverified."
+    }
+  ]
+}
