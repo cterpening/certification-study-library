@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [SERVICENOW-CSA deep review](docs/research/2026-09-29-servicenow-csa-deep-review.md): Restored 30 separate canonical subtopics with archived history, added 40 answered prompts and 34 executed Python/SQLite checks, corrected course/catalog links and qualified ACL, import, logic and transport evidence.
+
 - September 29, 2026: [MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review](docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md): Added 40 answered prompts and 36 executed Python/SQLite checks, corrected restore-command guidance, clarified access/recovery/edition boundaries and catalog timing, and preserved the blocked detailed objective boundary.
 
 - September 29, 2026: [MONGODB-ASSOCIATE-DATA-MODELER deep review](docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md): Added 40 answered prompts and 34 executed model/migration predictions; clarified validation, reconciliation and rollback, recorded conflicting exam/catalog measures, and retained the blocked current objective boundary.

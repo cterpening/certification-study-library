@@ -3,6 +3,154 @@
   "schema_version": 1,
   "reviews": [
     {
+      "id": "servicenow-csa-2026-09-02-source-validation",
+      "exam_code": "SERVICENOW-CSA",
+      "guide_path": "guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/servicenow-csa-2026-09-07-official-objectives.txt",
+      "blueprint_snapshot_sha256": "9a7543abda6dcc1af08f0fba350c382652ed41eac6a2de9599f7c80d223b99e9",
+      "objective_coverage": [
+        {
+          "objective_group": "Platform Overview and Navigation (7%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Instance Configuration (10%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Configuring Applications for Collaboration (20%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 2 and 7"
+          ]
+        },
+        {
+          "objective_group": "Self Service and Automation (20%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1 and 3",
+            "Labs 3 and 7"
+          ]
+        },
+        {
+          "objective_group": "Database Management and Platform Security (30%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 4–6"
+          ]
+        },
+        {
+          "objective_group": "Data Migration and Integration (13%)",
+          "guide_sections": [
+            "Section 6",
+            "Scenarios 1–2",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 9,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All six January 2026 weighted domains are mapped through role-aware navigation, supported instance configuration, collaborative data experiences, governed self service and automation, schema/import/CMDB/access controls, and safe UI/server logic plus update-set transport. Three integrated scenarios, eight authorized nonproduction labs and 40 original checks are included. Mainline preparation is kept separate from the closed 2026 delta cycle, and conditional scoring, the undisclosed cut score, 90-day registration window, annual deltas and CMP fee are explicit. Only ServiceNow's official MeasureUp practice is named for exam-style questions; no recalled/live item, dump or copied course content is used."
+    },
+    {
+      "id": "servicenow-csa-2026-09-07-source-validation",
+      "exam_code": "SERVICENOW-CSA",
+      "guide_path": "guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-07",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/servicenow-csa-2026-09-07-official-objectives.txt",
+      "blueprint_snapshot_sha256": "9a7543abda6dcc1af08f0fba350c382652ed41eac6a2de9599f7c80d223b99e9",
+      "objective_coverage": [
+        {
+          "objective_group": "Platform Overview and Navigation (7%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Instance Configuration (10%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Configuring Applications for Collaboration (20%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 2 and 7"
+          ]
+        },
+        {
+          "objective_group": "Self Service and Automation (20%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1 and 3",
+            "Labs 3 and 7"
+          ]
+        },
+        {
+          "objective_group": "Database Management and Platform Security (30%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 4–6"
+          ]
+        },
+        {
+          "objective_group": "Data Migration and Integration (13%)",
+          "guide_sections": [
+            "Section 6",
+            "Scenarios 1–2",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 12,
+        "reachable": 10,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Complete indexed KB0011554 text revalidates all six January 2026 weighted domains and their subtopics, the recommended preparation, 60-question/90-minute Pearson contract, 90-day registration window, conditional scoring, undisclosed cut score, annual deltas and CMP fee. The guide maps that scope through role-aware navigation, supported instance configuration, collaborative data experiences, governed self service and automation, schema/import/CMDB/access controls, and safe UI/server logic plus update-set transport. Three integrated scenarios, eight authorized nonproduction labs and 40 original checks are included. A user-authored community checklist is labeled as broad practice context only; its comments and arbitrary mock/flashcard sources are excluded. Only ServiceNow's official MeasureUp practice is named for exam-style questions; no recalled/live item, dump or copied course content is used."
+    },
+    {
       "id": "salesforce-agentforce-specialist-2026-09-07-source-validation",
       "exam_code": "SALESFORCE-AGENTFORCE-SPECIALIST",
       "guide_path": "guides/SALESFORCE-AGENTFORCE-SPECIALIST-salesforce-certified-agentforce-specialist.md",
@@ -9857,25 +10005,78 @@
       "notes": "Reconfirmed13public path skills while detailed current objectives remain unavailable. Added40 answered prompts,36 actual Python/SQLitechecks,threeworkedscenarios andeightproposedlabs. Clarifiedcontrol/dataaccess,pagination,poolbudgets,alerts,edition/KMS/backupboundaries andrecoveryidentity/timing; correctedrestorecommandguidance andcatalogdurations. LiveAtlas,detailedscope,paidinteriors andhumanreview remainpending. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md"
     },
     {
-      "id":"servicenow-csa-2026-09-07-source-validation",
-      "exam_code":"SERVICENOW-CSA",
-      "guide_path":"guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-07",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/servicenow-csa-official-objectives.txt",
-      "blueprint_snapshot_sha256":"9a7543abda6dcc1af08f0fba350c382652ed41eac6a2de9599f7c80d223b99e9",
-      "objective_coverage":[
-        {"objective_group":"Platform Overview and Navigation (7%)","guide_sections":["Section 1","All scenarios","Lab 1"]},
-        {"objective_group":"Instance Configuration (10%)","guide_sections":["Section 2","Scenarios 1 and 3","Labs 1 and 8"]},
-        {"objective_group":"Configuring Applications for Collaboration (20%)","guide_sections":["Section 3","All scenarios","Labs 2 and 7"]},
-        {"objective_group":"Self Service and Automation (20%)","guide_sections":["Section 4","Scenarios 1 and 3","Labs 3 and 7"]},
-        {"objective_group":"Database Management and Platform Security (30%)","guide_sections":["Section 5","All scenarios","Labs 4–6"]},
-        {"objective_group":"Data Migration and Integration (13%)","guide_sections":["Section 6","Scenarios 1–2","Labs 7–8"]}
+      "id": "servicenow-csa-2026-09-29-source-validation",
+      "exam_code": "SERVICENOW-CSA",
+      "guide_path": "guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/servicenow-csa-official-objectives.txt",
+      "blueprint_snapshot_sha256": "7b94b0c2b2f331a2e878694c8b9aaa6db8e998bfc0424d75dca80e6cdbe1d553",
+      "objective_coverage": [
+        {
+          "objective_group": "Platform Overview and Navigation (7%)",
+          "guide_sections": [
+            "1. Platform Overview and Navigation — 7%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        },
+        {
+          "objective_group": "Instance Configuration (10%)",
+          "guide_sections": [
+            "2. Instance Configuration — 10%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        },
+        {
+          "objective_group": "Configuring Applications for Collaboration (20%)",
+          "guide_sections": [
+            "3. Configuring Applications for Collaboration — 20%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        },
+        {
+          "objective_group": "Self Service & Automation (20%)",
+          "guide_sections": [
+            "4. Self Service and Automation — 20%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        },
+        {
+          "objective_group": "Database Management and Platform Security (30%)",
+          "guide_sections": [
+            "5. Database Management and Platform Security — 30%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        },
+        {
+          "objective_group": "Data Migration and Integration (13%)",
+          "guide_sections": [
+            "6. Data Migration and Integration — 13%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":12,"reachable":10,"access_blocked":2,"missing_or_error":0},
-      "notes":"Complete indexed KB0011554 text revalidates all six January 2026 weighted domains and their subtopics, the recommended preparation, 60-question/90-minute Pearson contract, 90-day registration window, conditional scoring, undisclosed cut score, annual deltas and CMP fee. The guide maps that scope through role-aware navigation, supported instance configuration, collaborative data experiences, governed self service and automation, schema/import/CMDB/access controls, and safe UI/server logic plus update-set transport. Three integrated scenarios, eight authorized nonproduction labs and 40 original checks are included. A user-authored community checklist is labeled as broad practice context only; its comments and arbitrary mock/flashcard sources are excluded. Only ServiceNow's official MeasureUp practice is named for exam-style questions; no recalled/live item, dump or copied course content is used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 30,
+        "reachable": 27,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Mapped all30 current canonical subtopics with historical snapshot preservation, answered40 original prompts andexecuted34 localPython/SQLite checks. Addedthreeworkedscenarios/eightproposedlabs, correctedWelcomelink andcatalogboundaries, qualifiedACL/import/BusinessRule/update-setbehavior. Canonicalmainmanuallyverified; ACLwording/releasehistory,assignedmaintenance,liveinstanceandhumanreviewremainpending. See docs/research/2026-09-29-servicenow-csa-deep-review.md"
     },
     {
       "id":"servicenow-cad-2026-09-07-source-validation",

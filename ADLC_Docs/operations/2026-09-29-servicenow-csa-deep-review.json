@@ -1,0 +1,1874 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "SERVICENOW-CSA",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "19a1763f4ac0b6a9cf0d9456fa4bf500c56dbcea30ddc9855d0f1ee37e9da67c",
+  "guide_after_sha256": "fdc95815338f38ec86ac75b745cff774305779107daffc3c7a95a2756f8c02ad",
+  "prior_records": {
+    "exam": {
+      "code": "SERVICENOW-CSA",
+      "level": "beginner",
+      "vendor_id": "servicenow",
+      "title": "ServiceNow Certified System Administrator",
+      "status": "active",
+      "study_guide_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554",
+      "guide_path": "guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md",
+      "blueprint_last_checked": "2026-09-07",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-07",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite is published. ServiceNow recommends three to six months working with or maintaining an instance, database and system-management knowledge, administrative access or role experience, and helpful IT help-desk/process knowledge. Practice navigation, supported configuration, lists/forms/collaboration, catalog and automation, schema/import/CMDB/security, scripts and controlled update-set transport in an authorized nonproduction instance."
+    },
+    "review": {
+      "id": "servicenow-csa-2026-09-07-source-validation",
+      "exam_code": "SERVICENOW-CSA",
+      "guide_path": "guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-07",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/servicenow-csa-official-objectives.txt",
+      "blueprint_snapshot_sha256": "9a7543abda6dcc1af08f0fba350c382652ed41eac6a2de9599f7c80d223b99e9",
+      "objective_coverage": [
+        {
+          "objective_group": "Platform Overview and Navigation (7%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Instance Configuration (10%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Configuring Applications for Collaboration (20%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 2 and 7"
+          ]
+        },
+        {
+          "objective_group": "Self Service and Automation (20%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1 and 3",
+            "Labs 3 and 7"
+          ]
+        },
+        {
+          "objective_group": "Database Management and Platform Security (30%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 4–6"
+          ]
+        },
+        {
+          "objective_group": "Data Migration and Integration (13%)",
+          "guide_sections": [
+            "Section 6",
+            "Scenarios 1–2",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 12,
+        "reachable": 10,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Complete indexed KB0011554 text revalidates all six January 2026 weighted domains and their subtopics, the recommended preparation, 60-question/90-minute Pearson contract, 90-day registration window, conditional scoring, undisclosed cut score, annual deltas and CMP fee. The guide maps that scope through role-aware navigation, supported instance configuration, collaborative data experiences, governed self service and automation, schema/import/CMDB/access controls, and safe UI/server logic plus update-set transport. Three integrated scenarios, eight authorized nonproduction labs and 40 original checks are included. A user-authored community checklist is labeled as broad practice context only; its comments and arbitrary mock/flashcard sources are excluded. Only ServiceNow's official MeasureUp practice is named for exam-style questions; no recalled/live item, dump or copied course content is used."
+    },
+    "sources": [
+      {
+        "id": "servicenow-csa-mainline-blueprint",
+        "title": "Certified System Administrator Mainline Exam Blueprint",
+        "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554",
+        "publisher": "ServiceNow",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "SERVICENOW-CSA"
+        ],
+        "notes": "Canonical January 2026 six-domain weighted scope, detailed subtopics, 60-question/90-minute contract, Pearson delivery, candidate experience, registration, conditional scoring, undisclosed cut score and maintenance statements. Complete indexed text was recoverable September 7 even though simple clients may still see a loading shell."
+      },
+      {
+        "id": "servicenow-welcome-course",
+        "title": "Welcome to ServiceNow",
+        "url": "https://learning.servicenow.com/lxp/en/now-platform/certified-system-administrator?course_id=931d939697d229587f7070871153af8c&id=learning_content_prev",
+        "publisher": "ServiceNow University",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SERVICENOW-CSA"
+        ],
+        "notes": "Vendor-recommended orientation course. Approximately three hours has been listed historically; verify the current assignment and displayed duration after sign-in."
+      },
+      {
+        "id": "servicenow-credential-catalog",
+        "title": "ServiceNow University Credential Catalog",
+        "url": "https://learning.servicenow.com/lxp/en/credentials",
+        "publisher": "ServiceNow University",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SERVICENOW-CSA",
+          "SERVICENOW-CAD"
+        ],
+        "notes": "Official catalog and search route for ServiceNow Administration Fundamentals and Application Development Fundamentals. Each is commonly delivered as three instructor-led days; verify current format, entitlement and attempt inclusion."
+      },
+      {
+        "id": "servicenow-product-documentation",
+        "title": "ServiceNow Product Documentation",
+        "url": "https://www.servicenow.com/docs/",
+        "publisher": "ServiceNow",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "SERVICENOW-CSA",
+          "SERVICENOW-CAD"
+        ],
+        "notes": "Release-selectable canonical product reference for platform administration and application design, interface, security, automation, integration, scripting, source and lifecycle behavior."
+      },
+      {
+        "id": "servicenow-developer-program",
+        "title": "ServiceNow Developer Program",
+        "url": "https://developer.servicenow.com/",
+        "publisher": "ServiceNow",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SERVICENOW-CSA",
+          "SERVICENOW-CAD"
+        ],
+        "notes": "Official learning plans, API references and Personal Developer Instance entry point for authorized administration and application-development practice; PDI availability and release choice can change."
+      },
+      {
+        "id": "measureup-servicenow-csa",
+        "title": "ServiceNow CSA Practice Test",
+        "url": "https://www.measureup.com/servicenow-csa-practice-test.html",
+        "publisher": "MeasureUp / ServiceNow",
+        "authority_class": 2,
+        "source_type": "official-practice",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SERVICENOW-CSA"
+        ],
+        "notes": "The official February 2026 CSA practice product lists a 120-question bank. Allow approximately two to four hours including explanation-led review; a small demo may be available."
+      },
+      {
+        "id": "servicenow-csa-delta-2026",
+        "title": "Certified System Administrator Maintenance Exam (Delta) 2026 Study Guide",
+        "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0012121",
+        "publisher": "ServiceNow",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SERVICENOW-CSA"
+        ],
+        "notes": "Release-specific maintenance guide for existing credential holders; use for maintenance context only, not as a replacement for the current mainline blueprint."
+      },
+      {
+        "id": "servicenow-learning-paths",
+        "title": "ServiceNow Learning Paths",
+        "url": "https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/infographic/learning-paths.pdf",
+        "publisher": "ServiceNow",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SERVICENOW-CSA"
+        ],
+        "notes": "Official public infographic showing learning sequence, role progression, and no-charge versus paid delivery models; confirm current catalog details before enrollment."
+      },
+      {
+        "id": "udemy-servicenow-csa-holmes",
+        "title": "ServiceNow System Administrator Total Exam Prep",
+        "url": "https://www.udemy.com/course/ndn-csa-exam-prep/",
+        "publisher": "Udemy / Mark Miller and Mark Holmes",
+        "authority_class": 3,
+        "source_type": "commercial-course",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SERVICENOW-CSA"
+        ],
+        "notes": "Hands-on 8h17m course listed as updated May 2026. Reconcile every exam and product claim with the official blueprint and selected-release documentation."
+      },
+      {
+        "id": "oreilly-navigating-servicenow-career",
+        "title": "Navigating Your Career in ServiceNow",
+        "url": "https://www.oreilly.com/library/view/navigating-your-career/9798868818714/",
+        "publisher": "O'Reilly Media / Packt",
+        "authority_class": 3,
+        "source_type": "commercial-video",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SERVICENOW-CSA"
+        ],
+        "notes": "October 2025, 2h30m beginner video providing role, credential and learning-plan context; it is not a technical blueprint-complete CSA course."
+      },
+      {
+        "id": "youtube-servicenow-developers",
+        "title": "ServiceNow Developers YouTube Channel",
+        "url": "https://www.youtube.com/@servicenowdevprogram",
+        "publisher": "ServiceNow Developer Program",
+        "authority_class": 2,
+        "source_type": "official-video",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SERVICENOW-CSA",
+          "SERVICENOW-CAD"
+        ],
+        "notes": "Official visual demos and release-aware platform and developer context. Select current objective-specific videos instead of treating the full channel as a prescribed course."
+      },
+      {
+        "id": "servicenow-community-csa-study-guide",
+        "title": "CSA Certification Study Guide: How to Prepare",
+        "url": "https://www.servicenow.com/community/training-and-certifications/csa-certification-study-guide-how-to-prepare/ta-p/3319050",
+        "publisher": "ServiceNow Community / Tosin D",
+        "authority_class": 3,
+        "source_type": "community-learning",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "SERVICENOW-CSA"
+        ],
+        "notes": "User-authored July 2025 broad topic checklist and PDI/lab reminder. It predates the January 2026 blueprint, has no authoritative weights or contract, and comments linking arbitrary flashcards or mock sites are outside this library's evidence policy."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "d730bd7b66610b6325f1b59cdf57ad2c02d3b729061b59a5de78e778f819c798",
+      "guide_sections": [
+        "1. Platform Overview and Navigation — 7%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "6b3dbfb674b803e0a6dc9c331564d09493f038f4d6e11d797b388676f70ea0bb",
+      "guide_sections": [
+        "1. Platform Overview and Navigation — 7%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "802027f75e6b9a1187102a37044f1ee449a5348b873c30d70645287213d2dcef",
+      "guide_sections": [
+        "1. Platform Overview and Navigation — 7%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "b33f788ce83b1a23d4984cccb3e133726e5e25e873a5869c25a61b3087908682",
+      "guide_sections": [
+        "1. Platform Overview and Navigation — 7%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "a3fc3f6d34707537c6c566a5c9c20453bf4277d01cfc6f9b74fdfa64d4eac9f4",
+      "guide_sections": [
+        "2. Instance Configuration — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "7ca6f93c0d23519ab517a6b24d265d15b1cb4871c76e5e20e402167037dc3d28",
+      "guide_sections": [
+        "2. Instance Configuration — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "04920d136d8875bbe07ab75cfcf7cb93d08536d707a62c81bfe848e61ed2ef9a",
+      "guide_sections": [
+        "2. Instance Configuration — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "2c58b0c2168077fda85927822959106b07b1cf9329c4ab5eaa976405184049d7",
+      "guide_sections": [
+        "3. Configuring Applications for Collaboration — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "17697c70d44a48a32dd452c47c20641efafa3792946e4d85631d02ec767b0891",
+      "guide_sections": [
+        "3. Configuring Applications for Collaboration — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "a970982b548737c99b4d0d630dcd954c4240b1ea60661c465d4cec20bbfd7ba4",
+      "guide_sections": [
+        "3. Configuring Applications for Collaboration — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "d749c2e55629e68e867350e0b8edd4275a56127b7ab5a927a0acdf045248c93b",
+      "guide_sections": [
+        "3. Configuring Applications for Collaboration — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "9a48be0c5e8c54e27c70db9c8343c95d1984522f4a269bf191e1248b93d7e3dc",
+      "guide_sections": [
+        "3. Configuring Applications for Collaboration — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "cc79b9ae1101ad5666b0b050420dee53874cdde21be0f1317f566833e3ffb301",
+      "guide_sections": [
+        "3. Configuring Applications for Collaboration — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "54ecd92a6b8c6783e248891f34f3d53e3e4796f842382aa2ffb32185962808f7",
+      "guide_sections": [
+        "3. Configuring Applications for Collaboration — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "2461cbd133a8fe772e2bab0e15267d1f2c6a97f12e2d768e46c8c214cea42c24",
+      "guide_sections": [
+        "3. Configuring Applications for Collaboration — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "788011833a5a0f22db90c91e8eb7bd8e9f5cd423354ff5ef8c338e7895f44ba9",
+      "guide_sections": [
+        "3. Configuring Applications for Collaboration — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "d4600717bc40b8403c645f995f71094b5d7186d482be0bb804bddff108f11200",
+      "guide_sections": [
+        "4. Self Service and Automation — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "bae55a50f9710b93a17ac0033845ddcf54e20f7b913ad89c7b166e66ffa23e98",
+      "guide_sections": [
+        "4. Self Service and Automation — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "448818ce5b16d96c276ea9a268870b3ca20700fe22a7a49bd4c108a4899ea5b2",
+      "guide_sections": [
+        "4. Self Service and Automation — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "c900bed1f33e1f2b4d1b5abd73e4987eb5d7f9fab81fe2ad62497b6b96de382d",
+      "guide_sections": [
+        "4. Self Service and Automation — 20%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "e1338481990b8a7f27899ce61ca573b2ca66342e9ee4d6a936d1d33005811a4b",
+      "guide_sections": [
+        "5. Database Management and Platform Security — 30%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "c712919906e0f0c99244dc051cccced0dc8908d77e830cbd7a14a75ca7ddfc80",
+      "guide_sections": [
+        "5. Database Management and Platform Security — 30%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "1eb27b13efd1d208a4c64ba98238c153aca82182077854b6508f180671147c46",
+      "guide_sections": [
+        "5. Database Management and Platform Security — 30%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "91ca9d80569cc08ce05d9e883040073e6f0c0d35a4ab2fe97abf49629836d17b",
+      "guide_sections": [
+        "5. Database Management and Platform Security — 30%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "10d6e2392b1c447325ca9a408613958d6738aaf1d32df089ad3f0952d6c3a837",
+      "guide_sections": [
+        "5. Database Management and Platform Security — 30%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "71f9ad48eae285af4970f017d3be23cb5878e08aa29d8389e4e68787e1308693",
+      "guide_sections": [
+        "5. Database Management and Platform Security — 30%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "290e96a783b304982aab646c379d1cd6f2b9f785b9eadfec7ab17fd5d5c14399",
+      "guide_sections": [
+        "6. Data Migration and Integration — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "c72afb50663a47eae6b791d0a08a7448ac8d5c4672b092f95bc7cfda54e4a732",
+      "guide_sections": [
+        "6. Data Migration and Integration — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "d3adbf7a0624ac2cd714be04d4eedfaf8d393d249b595be5e39251d2d0ea2a81",
+      "guide_sections": [
+        "6. Data Migration and Integration — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "3f916b9609536a754157a842427a646c5ac97c7fbab5143fc076164e3e17edbd",
+      "guide_sections": [
+        "6. Data Migration and Integration — 13%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [
+      "SERVICENOW-CSA"
+    ],
+    "results": [
+      {
+        "code": "SERVICENOW-CSA",
+        "title": "ServiceNow Certified System Administrator",
+        "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554",
+        "guide_path": "guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md",
+        "snapshot_path": "data\\objective-snapshots\\servicenow-csa-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\servicenow-csa-official-status.json",
+        "status": "manual-review",
+        "changed": false,
+        "error": "ValueError: Could not find ServiceNow Exam Scope",
+        "manual_review_reason": "The reachable ServiceNow learning response does not expose the reviewed Exam Scope in server-rendered HTML to this non-browser extractor.",
+        "review_route": "docs/SOURCE-FRESHNESS.md"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 30,
+    "reachable": 27,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "servicenow-csa-mainline-blueprint",
+      "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554",
+      "checked_at": "2026-09-29T16:17:53.210352+00:00",
+      "health": {
+        "id": "servicenow-csa-mainline-blueprint",
+        "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554",
+        "checked_at": "2026-09-29T16:17:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Credentials - Certified System Administrator (CSA) Mainline Exam Blueprint - Knowledge Portal",
+        "canonical_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554",
+        "duration_signals": [],
+        "signal_fingerprint": "1a562a05e115e1f171e7b351f7715744f1ff825b48ba9857cec20e0c740975d6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554",
+      "sha256": "45fac702ae5615ff0ed339a061dbf80ad48a400ea9fdd79a1d977a5469119056",
+      "text_characters": 0
+    },
+    {
+      "id": "servicenow-welcome-course",
+      "url": "https://learning.servicenow.com/lxp/en/now-platform/certified-system-administrator?course_id=931d939697d229587f7070871153af8c&id=learning_content_prev",
+      "checked_at": "2026-09-29T16:17:53.210926+00:00",
+      "health": {
+        "id": "servicenow-welcome-course",
+        "url": "https://learning.servicenow.com/lxp/en/now-platform/certified-system-administrator?course_id=931d939697d229587f7070871153af8c&id=learning_content_prev",
+        "checked_at": "2026-09-29T16:17:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learning.servicenow.com/lxp/en/now-platform/certified-system-administrator?course_id=931d939697d229587f7070871153af8c&id=learning_content_prev",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Certified System Administrator - ServiceNow University",
+        "canonical_url": "https://learning.servicenow.com/lxp/en/now-platform/certified-system-administrator?course_id=931d939697d229587f7070871153af8c&id=learning_content_prev",
+        "duration_signals": [],
+        "signal_fingerprint": "0f788ced03decb56f12daed0ae9140e83cfe2727bb5592ba715029e9a8113595",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learning.servicenow.com/lxp/en/now-platform/certified-system-administrator?course_id=931d939697d229587f7070871153af8c&id=learning_content_prev",
+      "sha256": "32d6ac8d43f820cc1fda28bbb29378da2fabb542ff066a50c6caca56fee1373d",
+      "text_characters": 0
+    },
+    {
+      "id": "servicenow-credential-catalog",
+      "url": "https://learning.servicenow.com/lxp/en/credentials",
+      "checked_at": "2026-09-29T16:17:53.211296+00:00",
+      "health": {
+        "id": "servicenow-credential-catalog",
+        "url": "https://learning.servicenow.com/lxp/en/credentials",
+        "checked_at": "2026-09-29T16:17:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learning.servicenow.com/now/lxp/home",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "ServiceNow University | ServiceNow",
+        "canonical_url": "https://learning.servicenow.com/now/lxp/home",
+        "duration_signals": [],
+        "signal_fingerprint": "42a7d40893862a3d199b9b7605dd7fceb05749a86a22d91beca15588f7694d03",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learning.servicenow.com/now/lxp/home",
+      "sha256": "aa46660cd8476f2512ccc1308a1029a18c089a3d4d24e9e10f89f8f3fccfa5d9",
+      "text_characters": 34
+    },
+    {
+      "id": "servicenow-product-documentation",
+      "url": "https://www.servicenow.com/docs/",
+      "checked_at": "2026-09-29T16:17:54.061540+00:00",
+      "health": {
+        "id": "servicenow-product-documentation",
+        "url": "https://www.servicenow.com/docs/",
+        "checked_at": "2026-09-29T16:17:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/",
+        "duration_signals": [],
+        "signal_fingerprint": "133ebe6962188524971e9befd4149e6184154aecd4efeb32045330453274817c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/",
+      "sha256": "e05ce7827fcefbdb8c06c4aa9ee6bbff3170b01ff33c1bcc12cd2f7c6c30c0d5",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-developer-program",
+      "url": "https://developer.servicenow.com/",
+      "checked_at": "2026-09-29T16:17:54.804239+00:00",
+      "health": {
+        "id": "servicenow-developer-program",
+        "url": "https://developer.servicenow.com/",
+        "checked_at": "2026-09-29T16:17:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.servicenow.com/dev.do",
+        "content_type": "text/html",
+        "page_title": "ServiceNow Developers",
+        "canonical_url": "https://developer.servicenow.com/dev.do",
+        "duration_signals": [],
+        "signal_fingerprint": "d91e4bfd6c1da35ed7296ba97f03d42b4a88cb7e3d70cb47a15c609912a92cfb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.servicenow.com/dev.do",
+      "sha256": "c2157a37f7c6befd3902151d710deb481c1bf6089e23e93ab918254e17c9a27d",
+      "text_characters": 125
+    },
+    {
+      "id": "measureup-servicenow-csa",
+      "url": "https://www.measureup.com/servicenow-csa-practice-test.html",
+      "checked_at": "2026-09-29T16:17:54.918147+00:00",
+      "health": {
+        "id": "measureup-servicenow-csa",
+        "url": "https://www.measureup.com/servicenow-csa-practice-test.html",
+        "checked_at": "2026-09-29T16:17:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/servicenow-csa-practice-test.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "ServiceNow Official Practice Test CSA: Certified System Administrator",
+        "canonical_url": "https://www.measureup.com/servicenow-csa-practice-test.html",
+        "duration_signals": [],
+        "signal_fingerprint": "bd58cf0a0ec323c81618eccb053e2ed3c3b44cf6081dfe184a8e084e3512f7b0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/servicenow-csa-practice-test.html",
+      "sha256": "21bc40958cebf6738a5230557cbeec8563e65e2487ea7c3558dbebc1ff4bfb67",
+      "text_characters": 10887
+    },
+    {
+      "id": "servicenow-csa-delta-2026",
+      "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0012121",
+      "checked_at": "2026-09-29T16:17:55.293533+00:00",
+      "health": {
+        "id": "servicenow-csa-delta-2026",
+        "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0012121",
+        "checked_at": "2026-09-29T16:17:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0012121",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Credentials - Certified System Administrator (CSA) Delta Exam Study Guide - Knowledge Portal",
+        "canonical_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0012121",
+        "duration_signals": [],
+        "signal_fingerprint": "f23553ddf0b3140c8841bc8469f28216c2ab5cc4ee686a309e4f2487f5b83c75",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0012121",
+      "sha256": "41623560f86c31271ecf6f87f8f4ea5c28b60b68e2c1ab08031c50f6f059df15",
+      "text_characters": 0
+    },
+    {
+      "id": "servicenow-learning-paths",
+      "url": "https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/infographic/learning-paths.pdf",
+      "checked_at": "2026-09-29T16:17:55.987789+00:00",
+      "health": {
+        "id": "servicenow-learning-paths",
+        "url": "https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/infographic/learning-paths.pdf",
+        "checked_at": "2026-09-29T16:17:55+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/infographic/learning-paths.pdf",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "udemy-servicenow-csa-holmes",
+      "url": "https://www.udemy.com/course/ndn-csa-exam-prep/",
+      "checked_at": "2026-09-29T16:17:56.131442+00:00",
+      "health": {
+        "id": "udemy-servicenow-csa-holmes",
+        "url": "https://www.udemy.com/course/ndn-csa-exam-prep/",
+        "checked_at": "2026-09-29T16:17:56+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/ndn-csa-exam-prep/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "oreilly-navigating-servicenow-career",
+      "url": "https://www.oreilly.com/library/view/navigating-your-career/9798868818714/",
+      "checked_at": "2026-09-29T16:17:56.210528+00:00",
+      "health": {
+        "id": "oreilly-navigating-servicenow-career",
+        "url": "https://www.oreilly.com/library/view/navigating-your-career/9798868818714/",
+        "checked_at": "2026-09-29T16:17:56+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/navigating-your-career/9798868818714/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "youtube-servicenow-developers",
+      "url": "https://www.youtube.com/@servicenowdevprogram",
+      "checked_at": "2026-09-29T16:17:56.379026+00:00",
+      "health": {
+        "id": "youtube-servicenow-developers",
+        "url": "https://www.youtube.com/@servicenowdevprogram",
+        "checked_at": "2026-09-29T16:17:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@servicenowdevprogram",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ServiceNow Dev Program",
+        "canonical_url": "https://www.youtube.com/channel/UCdXorgCT87YlFRN9n8oJ7_A",
+        "duration_signals": [],
+        "signal_fingerprint": "66cf1feabc300990ba46594d2f2f0923bf4e26ee5da0ab1a7bd6a3174c6d99c5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@servicenowdevprogram",
+      "sha256": "05fa742a76b4e576617e816d02a7644df91237254089203c80ccce3a3e2acd87",
+      "text_characters": 185
+    },
+    {
+      "id": "servicenow-community-csa-study-guide",
+      "url": "https://www.servicenow.com/community/training-and-certifications/csa-certification-study-guide-how-to-prepare/ta-p/3319050",
+      "checked_at": "2026-09-29T16:17:56.647959+00:00",
+      "health": {
+        "id": "servicenow-community-csa-study-guide",
+        "url": "https://www.servicenow.com/community/training-and-certifications/csa-certification-study-guide-how-to-prepare/ta-p/3319050",
+        "checked_at": "2026-09-29T16:17:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/community/training-and-certifications/csa-certification-study-guide-how-to-prepare/ta-p/3319050",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "CSA Certification Study Guide: How to Prepare.",
+        "canonical_url": "https://www.servicenow.com/community/training-and-certifications/csa-certification-study-guide-how-to-prepare/ta-p/3319050",
+        "duration_signals": [],
+        "signal_fingerprint": "d46410cc2730273fcfce37e68277a9a308541afc8bab88ecdae41469843090ef",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/community/training-and-certifications/csa-certification-study-guide-how-to-prepare/ta-p/3319050",
+      "sha256": "0d06af846732f23d97fa97f0150fbb15860e1a6cf2b3ced25c64ed6d3b3e974f",
+      "text_characters": 6409
+    },
+    {
+      "id": "servicenow-welcome-current",
+      "url": "https://learning.servicenow.com/lxp/en/now-platform/welcome-to-servicenow?course_id=386f3cf847b36a90c00af235126d430c&id=learning_course_prev",
+      "checked_at": "2026-09-29T16:27:00.633437+00:00",
+      "health": {
+        "id": "servicenow-welcome-current",
+        "url": "https://learning.servicenow.com/lxp/en/now-platform/welcome-to-servicenow?course_id=386f3cf847b36a90c00af235126d430c&id=learning_course_prev",
+        "checked_at": "2026-09-29T16:27:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learning.servicenow.com/lxp/en/now-platform/welcome-to-servicenow?course_id=386f3cf847b36a90c00af235126d430c&id=learning_course_prev",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "ServiceNow Welcome to ServiceNow - ServiceNow University",
+        "canonical_url": "https://learning.servicenow.com/lxp/en/now-platform/welcome-to-servicenow?id=learning_course_prev&course_id=386f3cf847b36a90c00af235126d430c",
+        "duration_signals": [],
+        "signal_fingerprint": "48446329a781413dbb86737f1ee857ff5691ccfa85f1914fc21c3f0df39679c6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learning.servicenow.com/lxp/en/now-platform/welcome-to-servicenow?course_id=386f3cf847b36a90c00af235126d430c&id=learning_course_prev",
+      "sha256": "8a22d35199b575ca11befb33958d6afcb78ba645fa8126cf6b8a488a5cfeb7be",
+      "text_characters": 0
+    },
+    {
+      "id": "servicenow-administration-fundamentals",
+      "url": "https://learning.servicenow.com/lxp?course_id=fbb6cc4847f5dd505cbdaf44846d436a&id=learning_course_prev",
+      "checked_at": "2026-09-29T16:27:00.634091+00:00",
+      "health": {
+        "id": "servicenow-administration-fundamentals",
+        "url": "https://learning.servicenow.com/lxp?course_id=fbb6cc4847f5dd505cbdaf44846d436a&id=learning_course_prev",
+        "checked_at": "2026-09-29T16:27:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learning.servicenow.com/lxp?course_id=fbb6cc4847f5dd505cbdaf44846d436a&id=learning_course_prev",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "ServiceNow ServiceNow Administration Fundamentals - ServiceNow University",
+        "canonical_url": "https://learning.servicenow.com/lxp?id=learning_course_prev&course_id=fbb6cc4847f5dd505cbdaf44846d436a",
+        "duration_signals": [],
+        "signal_fingerprint": "a44b7f297c6eac9767af4d188be46bfafa8d686b62ec0edfb2a68fe514c6e28e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learning.servicenow.com/lxp?course_id=fbb6cc4847f5dd505cbdaf44846d436a&id=learning_course_prev",
+      "sha256": "0c8c9198aed8416938acf7ef9559fca53f3c8b624127ab9a8ef609d252bbfa50",
+      "text_characters": 0
+    },
+    {
+      "id": "servicenow-pearson-faq",
+      "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0013209",
+      "checked_at": "2026-09-29T16:27:00.634515+00:00",
+      "health": {
+        "id": "servicenow-pearson-faq",
+        "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0013209",
+        "checked_at": "2026-09-29T16:27:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0013209",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Credentials - Exams with Pearson VUE FAQs - Knowledge Portal",
+        "canonical_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0013209",
+        "duration_signals": [],
+        "signal_fingerprint": "36e392003898ee4ac54553d1fce57f6c2c72ae95a26a46d1e15e5ce15b245c00",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0013209",
+      "sha256": "b5a05a39328e7597d23cb32de95f6a128c95a1c5e3ececdf777f5bc4628dd613",
+      "text_characters": 0
+    },
+    {
+      "id": "servicenow-cmp-payment",
+      "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011114",
+      "checked_at": "2026-09-29T16:27:01.449845+00:00",
+      "health": {
+        "id": "servicenow-cmp-payment",
+        "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011114",
+        "checked_at": "2026-09-29T16:27:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011114",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Credentials - Paying the certification maintenance fee (CMP) with Learning Credits - Knowledge Portal",
+        "canonical_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011114",
+        "duration_signals": [],
+        "signal_fingerprint": "403a96e2035cbb0314d0f7795784c02dba2a2b25864a835d7d102a73f8daaa90",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011114",
+      "sha256": "2004f44e4ff49cd0efa019cafa423da2295a8daa8cff1893b93e16fbeaa07588",
+      "text_characters": 0
+    },
+    {
+      "id": "servicenow-completing-delta",
+      "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011292",
+      "checked_at": "2026-09-29T16:27:02.174337+00:00",
+      "health": {
+        "id": "servicenow-completing-delta",
+        "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011292",
+        "checked_at": "2026-09-29T16:27:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011292",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Credentials - Completing your Delta exam - Knowledge Portal",
+        "canonical_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011292",
+        "duration_signals": [],
+        "signal_fingerprint": "a085deacf796c58ce48438234ac18b9824e4465a5efbfe8dd80e377dda760d72",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011292",
+      "sha256": "674d7396c80cd614e56e97c72abfa32a0bb4d51049b902cce762e6f48296d7b0",
+      "text_characters": 0
+    },
+    {
+      "id": "servicenow-acl-overview",
+      "url": "https://www.servicenow.com/docs/r/platform-security/access-control/exploring-access-control-list.html",
+      "checked_at": "2026-09-29T16:27:02.235194+00:00",
+      "health": {
+        "id": "servicenow-acl-overview",
+        "url": "https://www.servicenow.com/docs/r/platform-security/access-control/exploring-access-control-list.html",
+        "checked_at": "2026-09-29T16:27:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/platform-security/access-control/exploring-access-control-list.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/platform-security/access-control/exploring-access-control-list.html",
+        "duration_signals": [],
+        "signal_fingerprint": "ddcad4bdb5332b8ad39b2f13dd2823096c284b3baa146f2a15d438e919b722c8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/platform-security/access-control/exploring-access-control-list.html",
+      "sha256": "d1674361dfc064be97be1aea124a53de7e93ce30715841b0010c182a4d0028c0",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-acl-types",
+      "url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-rule-types.html",
+      "checked_at": "2026-09-29T16:27:02.248759+00:00",
+      "health": {
+        "id": "servicenow-acl-types",
+        "url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-rule-types.html",
+        "checked_at": "2026-09-29T16:27:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-rule-types.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-rule-types.html",
+        "duration_signals": [],
+        "signal_fingerprint": "8771db45d211657e84b6546734405565b8ce3269230fdadbd2df3ff599ca40d8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-rule-types.html",
+      "sha256": "eb6d211a98489d118cfcf47467136da974e044bc261abdc1b86567d4d4e9a90a",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-acl-deny-unless",
+      "url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-denial-behavior.html",
+      "checked_at": "2026-09-29T16:27:02.921025+00:00",
+      "health": {
+        "id": "servicenow-acl-deny-unless",
+        "url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-denial-behavior.html",
+        "checked_at": "2026-09-29T16:27:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-denial-behavior.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-denial-behavior.html",
+        "duration_signals": [],
+        "signal_fingerprint": "003bd1b563d1b02b2869cfd9a7362b49d716bb8cdd7a9855bcaf036ce6e3beb9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-denial-behavior.html",
+      "sha256": "6ba2634644272a1d6bc17cbe6473ebc395819a4e2795146c2293b390b2bdbc2b",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-acl-function-fields",
+      "url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-function-fields.html",
+      "checked_at": "2026-09-29T16:27:02.968649+00:00",
+      "health": {
+        "id": "servicenow-acl-function-fields",
+        "url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-function-fields.html",
+        "checked_at": "2026-09-29T16:27:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-function-fields.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-function-fields.html",
+        "duration_signals": [],
+        "signal_fingerprint": "f50318cb480292419a237ec0f4415f67ebbc9ce557d3f2a39e1e0239fc9f3dc8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-function-fields.html",
+      "sha256": "50d1717bb8ce846d3bd8347b1a5ae00ca8a2fed4533441e866451fa5bc495f2b",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-business-rules",
+      "url": "https://www.servicenow.com/docs/r/api-reference/business-rules-classic/c_BusinessRules.html",
+      "checked_at": "2026-09-29T16:27:03.166293+00:00",
+      "health": {
+        "id": "servicenow-business-rules",
+        "url": "https://www.servicenow.com/docs/r/api-reference/business-rules-classic/c_BusinessRules.html",
+        "checked_at": "2026-09-29T16:27:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/api-reference/business-rules-classic/c_BusinessRules.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/api-reference/business-rules-classic/c_BusinessRules.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6893898b445f457f60eb13c5bfb21cb8d4442bb125ef56d4ef8f37d7cc59d6be",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/api-reference/business-rules-classic/c_BusinessRules.html",
+      "sha256": "3062f71a30358de87c57aaa45b5e2a02d1186f64051e1e1607067356d2d17f21",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-import-coalesce",
+      "url": "https://www.servicenow.com/docs/r/integrate-applications/system-import-sets/c_ImportSetCoalesce.html",
+      "checked_at": "2026-09-29T16:27:03.434940+00:00",
+      "health": {
+        "id": "servicenow-import-coalesce",
+        "url": "https://www.servicenow.com/docs/r/integrate-applications/system-import-sets/c_ImportSetCoalesce.html",
+        "checked_at": "2026-09-29T16:27:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/integrate-applications/system-import-sets/c_ImportSetCoalesce.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/integrate-applications/system-import-sets/c_ImportSetCoalesce.html",
+        "duration_signals": [],
+        "signal_fingerprint": "0c687d4dfa63511c9b8ea3a96136aeb886fe57f13c3befc98eaa6f49dd5be4c1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/integrate-applications/system-import-sets/c_ImportSetCoalesce.html",
+      "sha256": "2dd72051ef3b9ecd9c832fbb27ab3074c9d19f357e43b70ca4b36524326b49d7",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-update-sets-start",
+      "url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/get-started-update-sets.html",
+      "checked_at": "2026-09-29T16:27:03.455950+00:00",
+      "health": {
+        "id": "servicenow-update-sets-start",
+        "url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/get-started-update-sets.html",
+        "checked_at": "2026-09-29T16:27:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/get-started-update-sets.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/get-started-update-sets.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6e2d6b05b657616377758aff3af359456166716a4b372fb9688d66119ff3a883",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/get-started-update-sets.html",
+      "sha256": "ae1da20b25ebc85a0e0abfe1556d37157d8822b87d701a831c63d446bdf2ef0b",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-update-sets-batch",
+      "url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/us-hier-overview.html",
+      "checked_at": "2026-09-29T16:27:03.794527+00:00",
+      "health": {
+        "id": "servicenow-update-sets-batch",
+        "url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/us-hier-overview.html",
+        "checked_at": "2026-09-29T16:27:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/us-hier-overview.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/us-hier-overview.html",
+        "duration_signals": [],
+        "signal_fingerprint": "0c7ff6e8dd01366c6bc9b5358dba3138691b81afce3d7b56daf8dbf960ba39b1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/us-hier-overview.html",
+      "sha256": "ab0dd57e75d98719fbfe7f8618e66f2f046a02b5a30dcdc94afbb4b6435b809a",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-update-sets-collisions",
+      "url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/update-set-collisions.html",
+      "checked_at": "2026-09-29T16:27:04.129881+00:00",
+      "health": {
+        "id": "servicenow-update-sets-collisions",
+        "url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/update-set-collisions.html",
+        "checked_at": "2026-09-29T16:27:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/update-set-collisions.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/update-set-collisions.html",
+        "duration_signals": [],
+        "signal_fingerprint": "df587191d9a502742819152c7820dda1dcf5961eafb863f9298de0fdb16c072f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/update-set-collisions.html",
+      "sha256": "fe495bb6cc1781d2831a334f67c7651f738729846873153849e2b1afb548d32c",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-update-sets-xml",
+      "url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/t_SaveAnUpdateSetAsAnXMLFile.html",
+      "checked_at": "2026-09-29T16:27:04.149518+00:00",
+      "health": {
+        "id": "servicenow-update-sets-xml",
+        "url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/t_SaveAnUpdateSetAsAnXMLFile.html",
+        "checked_at": "2026-09-29T16:27:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/t_SaveAnUpdateSetAsAnXMLFile.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/t_SaveAnUpdateSetAsAnXMLFile.html",
+        "duration_signals": [],
+        "signal_fingerprint": "1ea1732e2485c0d173e9198c7fd1ebe95c8a369a7f6e437fc5497a97d0882673",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/t_SaveAnUpdateSetAsAnXMLFile.html",
+      "sha256": "209eb3a6526fe3e36f5d10f5c4d166c34a4accf81f350ec0c2680a890f3cd1eb",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-update-sets-tracked",
+      "url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/customizations-tracked-update-sets.html?contentId=Wesk3KW7yiI5hKC5y~QwUA",
+      "checked_at": "2026-09-29T16:30:12.383323+00:00",
+      "health": {
+        "id": "servicenow-update-sets-tracked",
+        "url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/customizations-tracked-update-sets.html?contentId=Wesk3KW7yiI5hKC5y~QwUA",
+        "checked_at": "2026-09-29T16:30:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/customizations-tracked-update-sets.html?contentId=Wesk3KW7yiI5hKC5y~QwUA",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/customizations-tracked-update-sets.html?contentId=Wesk3KW7yiI5hKC5y~QwUA",
+        "duration_signals": [],
+        "signal_fingerprint": "c1d3cbc0e86ebc2af51e32ce2a272d128e5e4fefa99035c59417e7deca8a0237",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/customizations-tracked-update-sets.html?contentId=Wesk3KW7yiI5hKC5y~QwUA",
+      "sha256": "afd68358cfa623a28aa0dc62652821a4f8fbc706009cae448ac1ef8470c5ca9b",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-update-sets-working",
+      "url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/using-system-update-sets.html?contentId=Eqec25Xl1X9Pc0s3ZCiPDw",
+      "checked_at": "2026-09-29T16:30:12.383876+00:00",
+      "health": {
+        "id": "servicenow-update-sets-working",
+        "url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/using-system-update-sets.html?contentId=Eqec25Xl1X9Pc0s3ZCiPDw",
+        "checked_at": "2026-09-29T16:30:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/using-system-update-sets.html?contentId=Eqec25Xl1X9Pc0s3ZCiPDw",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Docs | ServiceNow",
+        "canonical_url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/using-system-update-sets.html?contentId=Eqec25Xl1X9Pc0s3ZCiPDw",
+        "duration_signals": [],
+        "signal_fingerprint": "5dee12076fc8c4bf3bfdee5be6d79656270a3f2ae3cd709003593025488c3806",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/using-system-update-sets.html?contentId=Eqec25Xl1X9Pc0s3ZCiPDw",
+      "sha256": "40a7c23a2a19d3e1fc21a26508dab03c56e3c818f2b70e13c7bf646c96a505c8",
+      "text_characters": 40
+    },
+    {
+      "id": "servicenow-brazil-developer-passport",
+      "url": "https://www.servicenow.com/community/developer-passport-blog/introducing-the-developer-passport-brazil-release-preview/ba-p/3586556",
+      "checked_at": "2026-09-29T16:30:12.384365+00:00",
+      "health": {
+        "id": "servicenow-brazil-developer-passport",
+        "url": "https://www.servicenow.com/community/developer-passport-blog/introducing-the-developer-passport-brazil-release-preview/ba-p/3586556",
+        "checked_at": "2026-09-29T16:30:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.servicenow.com/community/developer-passport-blog/introducing-the-developer-passport-brazil-release-preview/ba-p/3586556",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Introducing The Developer Passport: Brazil Release Preview",
+        "canonical_url": "https://www.servicenow.com/community/developer-passport-blog/introducing-the-developer-passport-brazil-release-preview/ba-p/3586556",
+        "duration_signals": [],
+        "signal_fingerprint": "3bc10fc217935780c955e242e9293bcd8b69ceb1137fb54e79b301f9d9828b81",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.servicenow.com/community/developer-passport-blog/introducing-the-developer-passport-brazil-release-preview/ba-p/3586556",
+      "sha256": "f25a76ea93e21d14b154acc70f65404f43483aa7a2c7fcafa338907f91885bba",
+      "text_characters": 3926
+    }
+  ],
+  "added_source_ids": [
+    "servicenow-welcome-current",
+    "servicenow-administration-fundamentals",
+    "servicenow-pearson-faq",
+    "servicenow-cmp-payment",
+    "servicenow-completing-delta",
+    "servicenow-acl-overview",
+    "servicenow-acl-types",
+    "servicenow-acl-deny-unless",
+    "servicenow-acl-function-fields",
+    "servicenow-business-rules",
+    "servicenow-import-coalesce",
+    "servicenow-update-sets-start",
+    "servicenow-update-sets-batch",
+    "servicenow-update-sets-collisions",
+    "servicenow-update-sets-xml",
+    "servicenow-update-sets-tracked",
+    "servicenow-update-sets-working",
+    "servicenow-brazil-developer-passport"
+  ],
+  "findings": [
+    {
+      "id": "servicenowcsa-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Saved outline merged separate official subtopics",
+      "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SERVICENOW-CSA"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Prior26entriesmerged/paraphrasedcurrentcanonical30subtopics;weightsunchanged.",
+      "recommendation": "ArchiveoldHEADbyteexactsnapshots andhistoricalaudit/reviewpaths;manuallyaccept30currententrieswithhashes.",
+      "disposition": "applied",
+      "source_id": "servicenow-csa-mainline-blueprint",
+      "resolution": "ArchiveoldHEADbyteexactsnapshots andhistoricalaudit/reviewpaths;manuallyaccept30currententrieswithhashes."
+    },
+    {
+      "id": "servicenowcsa-deep-2",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Welcome resource pointed to the certification path",
+      "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SERVICENOW-CSA"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Oldcourse_id931d routeisCSApath;canonicalWelcomelink386f.",
+      "recommendation": "UsecorrectrecommendedWelcomeURL,retainoldpathwithcorrectlabelandunverifiedduration.",
+      "disposition": "applied",
+      "source_id": "servicenow-csa-mainline-blueprint",
+      "resolution": "UsecorrectrecommendedWelcomeURL,retainoldpathwithcorrectlabelandunverifiedduration."
+    },
+    {
+      "id": "servicenowcsa-deep-3",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Default-access prose contradicts itself",
+      "url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-denial-behavior.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SERVICENOW-CSA"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "PassrowrequiresAllowIfandalsoallowsno-AllowIfdefaultgrant.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "servicenowcsa-deep-4",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Exact historical function-field change is unclear",
+      "url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-function-fields.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SERVICENOW-CSA"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "IndexedAustraliamainandliveBrazilmainbothuseownfamilyintransitionwording,leavinggapafterRome.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "servicenowcsa-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Coalesce matching is not a uniqueness or validation guarantee",
+      "url": "https://www.servicenow.com/docs/r/integrate-applications/system-import-sets/c_ImportSetCoalesce.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SERVICENOW-CSA"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Firstofmultipletargetmatchesupdates;empty/caseoptionsaffectidentity.",
+      "recommendation": "Teachpreflightidentity andchosenquarantine/revisionpolicy withactualSQLitecounterexamples,notplatformdefaultclaim.",
+      "disposition": "applied",
+      "source_id": "servicenow-import-coalesce",
+      "resolution": "Teachpreflightidentity andchosenquarantine/revisionpolicy withactualSQLitecounterexamples,notplatformdefaultclaim."
+    },
+    {
+      "id": "servicenowcsa-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Broad metadata exclusion and transport phrasing need qualifications",
+      "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0012121",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SERVICENOW-CSA"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Deltausers/groups/rolesnonmetadata shorthand differsfromtechnicalcollisionclasses;batchstateandXMLpathsneedcontext.",
+      "recommendation": "Inspectactualpayload/classes,distinguishmemberships;useparent-onlyIgnoreandseparateXMLimportfromremote retrieval.",
+      "disposition": "applied",
+      "source_id": "servicenow-csa-delta-2026",
+      "resolution": "Inspectactualpayload/classes,distinguishmemberships;useparent-onlyIgnoreandseparateXMLimportfromremote retrieval."
+    },
+    {
+      "id": "servicenowcsa-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Preview success does not establish data recovery",
+      "url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/customizations-tracked-update-sets.html?contentId=Wesk3KW7yiI5hKC5y~QwUA",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SERVICENOW-CSA"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Schema/type/columnchanges andspecialhandlers canlose data;previewmaymissmismatch.",
+      "recommendation": "Requirepayload/dataimpactreview andspecificrecoveryevidence;originalrevisionguardshowsoverwriteoflaterfix.",
+      "disposition": "applied",
+      "source_id": "servicenow-update-sets-tracked",
+      "resolution": "Requirepayload/dataimpactreview andspecificrecoveryevidence;originalrevisionguardshowsoverwriteoflaterfix."
+    },
+    {
+      "id": "servicenowcsa-deep-9",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Assigned maintenance and completion policy unverified",
+      "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011292",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SERVICENOW-CSA"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Publiccompletionrouteempty/error andEnglishpaymentdatesdifferbydayfromotherpublicreferences.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "servicenow-brazil-developer-passport",
+      "review": "VendorprogramAugust13announcementmainread;elevenSeptember14–18previewsessions,novideoplayback/GA/examtransitionclaim."
+    },
+    {
+      "source_id": "servicenow-community-csa-study-guide",
+      "review": "July2025userchecklistmain/firstcommentsreadonly;nonauthoritative;noattachment/mockendorsement."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 34,
+      "python_blocks_executed": 1,
+      "python_version": "3.13.14",
+      "sqlite_version": "3.50.4",
+      "public_example_sha256": "d1942f504a4b7d4106a57e626e5d41af1a3fa3c46adf737d965c341929e1dd3d",
+      "results": {
+        "passed": 34,
+        "checks": [
+          "all input rows accounted for",
+          "first-run outcomes",
+          "source-qualified identity",
+          "exact final records",
+          "replay has no mutations",
+          "replay retains exact state",
+          "unknown source quarantined",
+          "blank location quarantined",
+          "same revision changed payload conflicts",
+          "rejections leave state intact",
+          "SQLite integrity",
+          "ID alone would collapse sources",
+          "fulfiller allowed",
+          "alternative role allowed",
+          "role alone insufficient",
+          "authentication required",
+          "record scope required",
+          "field restriction survives row access",
+          "missing explicit role denied by chosen policy",
+          "derived output requires all contributing permissions",
+          "complete dependency order",
+          "missing dependency rejected",
+          "incomplete packet rejected",
+          "duplicate step rejected",
+          "cyclic dependency rejected",
+          "expected revision applies",
+          "stale packet rejected",
+          "post-deployment edit applies",
+          "blind backout would lose later fix",
+          "guarded backout rejects later state",
+          "later fix preserved",
+          "practice-bank total",
+          "blueprint weights total",
+          "bank distribution differs from blueprint"
+        ],
+        "first_run": {
+          "inserted": 2,
+          "noop": 1,
+          "quarantine": 2,
+          "conflict": 1,
+          "stale": 1,
+          "updated": 1
+        },
+        "replay": {
+          "stale": 4,
+          "noop": 2,
+          "quarantine": 2
+        },
+        "final_records": [
+          [
+            "vendora",
+            "42",
+            2,
+            "North"
+          ],
+          [
+            "vendorb",
+            "42",
+            1,
+            "East"
+          ]
+        ],
+        "deployment": {
+          "revision": 6,
+          "value": "later-fix"
+        },
+        "practice_bank_total": 120
+      },
+      "execution_stdout": "{\n  \"passed\": 34,\n  \"checks\": [\n    \"all input rows accounted for\",\n    \"first-run outcomes\",\n    \"source-qualified identity\",\n    \"exact final records\",\n    \"replay has no mutations\",\n    \"replay retains exact state\",\n    \"unknown source quarantined\",\n    \"blank location quarantined\",\n    \"same revision changed payload conflicts\",\n    \"rejections leave state intact\",\n    \"SQLite integrity\",\n    \"ID alone would collapse sources\",\n    \"fulfiller allowed\",\n    \"alternative role allowed\",\n    \"role alone insufficient\",\n    \"authentication required\",\n    \"record scope required\",\n    \"field restriction survives row access\",\n    \"missing explicit role denied by chosen policy\",\n    \"derived output requires all contributing permissions\",\n    \"complete dependency order\",\n    \"missing dependency rejected\",\n    \"incomplete packet rejected\",\n    \"duplicate step rejected\",\n    \"cyclic dependency rejected\",\n    \"expected revision applies\",\n    \"stale packet rejected\",\n    \"post-deployment edit applies\",\n    \"blind backout would lose later fix\",\n    \"guarded backout rejects later state\",\n    \"later fix preserved\",\n    \"practice-bank total\",\n    \"blueprint weights total\",\n    \"bank distribution differs from blueprint\"\n  ],\n  \"first_run\": {\n    \"inserted\": 2,\n    \"noop\": 1,\n    \"quarantine\": 2,\n    \"conflict\": 1,\n    \"stale\": 1,\n    \"updated\": 1\n  },\n  \"replay\": {\n    \"stale\": 4,\n    \"noop\": 2,\n    \"quarantine\": 2\n  },\n  \"final_records\": [\n    [\n      \"vendora\",\n      \"42\",\n      2,\n      \"North\"\n    ],\n    [\n      \"vendorb\",\n      \"42\",\n      1,\n      \"East\"\n    ]\n  ],\n  \"deployment\": {\n    \"revision\": 6,\n    \"value\": \"later-fix\"\n  },\n  \"practice_bank_total\": 120\n}",
+      "execution_boundary": "Actual standard-library Python and in-memory SQLite sequential import, replay and integrity checks. Trusted-label access and dependency/revision models are original chosen policies, not ServiceNow ACL, transform, CMDB, Business Rule or update-set execution. No account, instance, plugin, privilege, credential, notification or paid resource used.",
+      "model_limits": "Source names normalize but external IDs retain case; ServiceNow default coalesce is case insensitive. Revision validation/quarantine is chosen behavior, not platform default. Sequential model does not prove concurrent/distributed idempotency. No full ACL engine or update-set collision emulation; no exam score calculation."
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Deny-Unlessdefaultaccess wording internallycontradictory;function-fieldhistoricalintroductionunclear. ActualinstalledACLengineandreporttestsnotexecuted.",
+    "Currentcanonicalmanuallyverified andsnapshotrepaired;automatedclientempty/manual-review. Brazilproductdocs/previewnotexamcutoverorGAevidence.",
+    "Assigneddelta/CMPdeadlineandfuturewindowunverified;completionpolicyempty/error. Threeblockedresourcesandcourseshells;no paidlessons/practiceinteriors/playback.",
+    "34localPythonSQLitechecks only,sequentialchosenmodels. NoServiceNowinstance/ACL/CMDB/BusinessRule/update-set/runtime,concurrency,securityorproductionrecoveryproof. Eightinstanceactivitiesandindependenthumanreviewpending.",
+    "No installs,auth/permissions/runtime/service/rebootchanges,paidcredits orexternalmessages. Five reservedGitHubguides anddisablednotificationpilot untouched."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 179,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Actual standard-library Python and in-memory SQLite sequential import, replay and integrity checks. Trusted-label access and dependency/revision models are original chosen policies, not ServiceNow ACL, transform, CMDB, Business Rule or update-set execution. No account, instance, plugin, privilege, credential, notification or paid resource used.",
+    "passed": 34,
+    "python_blocks_executed": 1,
+    "python_version": "3.13.14",
+    "sqlite_version": "3.50.4",
+    "public_example_sha256": "d1942f504a4b7d4106a57e626e5d41af1a3fa3c46adf737d965c341929e1dd3d",
+    "results": {
+      "passed": 34,
+      "checks": [
+        "all input rows accounted for",
+        "first-run outcomes",
+        "source-qualified identity",
+        "exact final records",
+        "replay has no mutations",
+        "replay retains exact state",
+        "unknown source quarantined",
+        "blank location quarantined",
+        "same revision changed payload conflicts",
+        "rejections leave state intact",
+        "SQLite integrity",
+        "ID alone would collapse sources",
+        "fulfiller allowed",
+        "alternative role allowed",
+        "role alone insufficient",
+        "authentication required",
+        "record scope required",
+        "field restriction survives row access",
+        "missing explicit role denied by chosen policy",
+        "derived output requires all contributing permissions",
+        "complete dependency order",
+        "missing dependency rejected",
+        "incomplete packet rejected",
+        "duplicate step rejected",
+        "cyclic dependency rejected",
+        "expected revision applies",
+        "stale packet rejected",
+        "post-deployment edit applies",
+        "blind backout would lose later fix",
+        "guarded backout rejects later state",
+        "later fix preserved",
+        "practice-bank total",
+        "blueprint weights total",
+        "bank distribution differs from blueprint"
+      ],
+      "first_run": {
+        "inserted": 2,
+        "noop": 1,
+        "quarantine": 2,
+        "conflict": 1,
+        "stale": 1,
+        "updated": 1
+      },
+      "replay": {
+        "stale": 4,
+        "noop": 2,
+        "quarantine": 2
+      },
+      "final_records": [
+        [
+          "vendora",
+          "42",
+          2,
+          "North"
+        ],
+        [
+          "vendorb",
+          "42",
+          1,
+          "East"
+        ]
+      ],
+      "deployment": {
+        "revision": 6,
+        "value": "later-fix"
+      },
+      "practice_bank_total": 120
+    },
+    "execution_stdout": "{\n  \"passed\": 34,\n  \"checks\": [\n    \"all input rows accounted for\",\n    \"first-run outcomes\",\n    \"source-qualified identity\",\n    \"exact final records\",\n    \"replay has no mutations\",\n    \"replay retains exact state\",\n    \"unknown source quarantined\",\n    \"blank location quarantined\",\n    \"same revision changed payload conflicts\",\n    \"rejections leave state intact\",\n    \"SQLite integrity\",\n    \"ID alone would collapse sources\",\n    \"fulfiller allowed\",\n    \"alternative role allowed\",\n    \"role alone insufficient\",\n    \"authentication required\",\n    \"record scope required\",\n    \"field restriction survives row access\",\n    \"missing explicit role denied by chosen policy\",\n    \"derived output requires all contributing permissions\",\n    \"complete dependency order\",\n    \"missing dependency rejected\",\n    \"incomplete packet rejected\",\n    \"duplicate step rejected\",\n    \"cyclic dependency rejected\",\n    \"expected revision applies\",\n    \"stale packet rejected\",\n    \"post-deployment edit applies\",\n    \"blind backout would lose later fix\",\n    \"guarded backout rejects later state\",\n    \"later fix preserved\",\n    \"practice-bank total\",\n    \"blueprint weights total\",\n    \"bank distribution differs from blueprint\"\n  ],\n  \"first_run\": {\n    \"inserted\": 2,\n    \"noop\": 1,\n    \"quarantine\": 2,\n    \"conflict\": 1,\n    \"stale\": 1,\n    \"updated\": 1\n  },\n  \"replay\": {\n    \"stale\": 4,\n    \"noop\": 2,\n    \"quarantine\": 2\n  },\n  \"final_records\": [\n    [\n      \"vendora\",\n      \"42\",\n      2,\n      \"North\"\n    ],\n    [\n      \"vendorb\",\n      \"42\",\n      1,\n      \"East\"\n    ]\n  ],\n  \"deployment\": {\n    \"revision\": 6,\n    \"value\": \"later-fix\"\n  },\n  \"practice_bank_total\": 120\n}",
+    "model_limits": "Source names normalize but external IDs retain case; ServiceNow default coalesce is case insensitive. Revision validation/quarantine is chosen behavior, not platform default. Sequential model does not prove concurrent/distributed idempotency. No full ACL engine or update-set collision emulation; no exam score calculation.",
+    "learning_catalog_consistency": "passed",
+    "unit_test_seconds": 24.296,
+    "strict_site_build_seconds": 22.39
+  },
+  "archived_prior_baselines": {
+    "objectives": {
+      "path": "data/objective-snapshots/servicenow-csa-2026-09-07-official-objectives.txt",
+      "sha256": "9a7543abda6dcc1af08f0fba350c382652ed41eac6a2de9599f7c80d223b99e9"
+    },
+    "status": {
+      "path": "data/objective-snapshots/servicenow-csa-2026-09-07-official-status.json",
+      "sha256": "e3b4772cbfdcf2428eab25fa1a8fb15f7d58ff4d5473ec9bcfd66a0a7229a410"
+    },
+    "historical_audit_paths_updated": 2,
+    "reason": "Restore30separatecurrentcanonicalsubtopics instead of26savedmerged/paraphrasedstatements. Sixweightsunchanged7/10/20/20/30/13;canonicalstillUpdatedJanuary2026. Sourcewording/granularityrepair,notannouncednewexamversion."
+  },
+  "manual_baseline_acceptance": {
+    "reviewed_on": "2026-09-29",
+    "method": "Manualacceptanceafterfullcanonicalbrowsermainthroughpolicysection;publicsampleitemstailincidentallyreturnedbutexcludedfromcaptureandnotused.",
+    "before": {
+      "objectives": {
+        "path": "data/objective-snapshots/servicenow-csa-2026-09-07-official-objectives.txt",
+        "sha256": "9a7543abda6dcc1af08f0fba350c382652ed41eac6a2de9599f7c80d223b99e9"
+      },
+      "status": {
+        "path": "data/objective-snapshots/servicenow-csa-2026-09-07-official-status.json",
+        "sha256": "e3b4772cbfdcf2428eab25fa1a8fb15f7d58ff4d5473ec9bcfd66a0a7229a410"
+      },
+      "historical_audit_paths_updated": 2,
+      "reason": "Restore30separatecurrentcanonicalsubtopics instead of26savedmerged/paraphrasedstatements. Sixweightsunchanged7/10/20/20/30/13;canonicalstillUpdatedJanuary2026. Sourcewording/granularityrepair,notannouncednewexamversion."
+    },
+    "after": {
+      "objectives_sha256": "7b94b0c2b2f331a2e878694c8b9aaa6db8e998bfc0424d75dca80e6cdbe1d553",
+      "status_sha256": "e3b4772cbfdcf2428eab25fa1a8fb15f7d58ff4d5473ec9bcfd66a0a7229a410"
+    },
+    "objective_counts": [
+      4,
+      3,
+      9,
+      4,
+      6,
+      4
+    ],
+    "weights": [
+      7,
+      10,
+      20,
+      20,
+      30,
+      13
+    ],
+    "meaning": "Restore30separatecurrentcanonicalsubtopics instead of26savedmerged/paraphrasedstatements. Sixweightsunchanged7/10/20/20/30/13;canonicalstillUpdatedJanuary2026. Sourcewording/granularityrepair,notannouncednewexamversion.",
+    "monitor_boundary": "Directautomatedclientremainsmanual-reviewemptybody. Currentbrowsermainvalidates30subtopicsandunchangedcontract/statusstatements;manualrepairdoesnotclaimgeneratedextractorsuccess."
+  },
+  "catalog_observations": [
+    [
+      "measureup-servicenow-csa",
+      "Specific bank count and domain distribution differ from generic marketing",
+      "120specificversusaround150generic;6/12/26/23/33/20countsnotexamweights.",
+      "Displayobservedproductcount anduncertainty;donotconvertpracticepercentages/languagesintofficialcontract.",
+      "catalog_comparison"
+    ]
+  ],
+  "catalog_observation_boundary": "Paid product public landing metadata retained as a catalog comparison, not a newly approved public first-party source finding. Canonical blueprint supports the corrected recommended course link.",
+  "historical_september2_review_recovered": {
+    "source_commit": "433983b74272fadcbfaa74b639bab3ade96f4237",
+    "review": {
+      "id": "servicenow-csa-2026-09-02-source-validation",
+      "exam_code": "SERVICENOW-CSA",
+      "guide_path": "guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/servicenow-csa-2026-09-07-official-objectives.txt",
+      "blueprint_snapshot_sha256": "9a7543abda6dcc1af08f0fba350c382652ed41eac6a2de9599f7c80d223b99e9",
+      "objective_coverage": [
+        {
+          "objective_group": "Platform Overview and Navigation (7%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Instance Configuration (10%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Configuring Applications for Collaboration (20%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 2 and 7"
+          ]
+        },
+        {
+          "objective_group": "Self Service and Automation (20%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1 and 3",
+            "Labs 3 and 7"
+          ]
+        },
+        {
+          "objective_group": "Database Management and Platform Security (30%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 4–6"
+          ]
+        },
+        {
+          "objective_group": "Data Migration and Integration (13%)",
+          "guide_sections": [
+            "Section 6",
+            "Scenarios 1–2",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 9,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All six January 2026 weighted domains are mapped through role-aware navigation, supported instance configuration, collaborative data experiences, governed self service and automation, schema/import/CMDB/access controls, and safe UI/server logic plus update-set transport. Three integrated scenarios, eight authorized nonproduction labs and 40 original checks are included. Mainline preparation is kept separate from the closed 2026 delta cycle, and conditional scoring, the undisclosed cut score, 90-day registration window, annual deltas and CMP fee are explicit. Only ServiceNow's official MeasureUp practice is named for exam-style questions; no recalled/live item, dump or copied course content is used."
+    },
+    "objective_archive": "data/objective-snapshots/servicenow-csa-2026-09-07-official-objectives.txt",
+    "archive_bytes_equal_original": true
+  },
+  "source_reading_boundaries": {
+    "servicenow-csa-mainline-blueprint": "Direct empty body; full canonical browser main through line142 manually read and saved. January2026 label,30 subtopics,six weights,60questions90minutes,Pearson/OnVUE,90day registration,conditional results,unpublished cut score andannual maintenance. Official sample tail incidentally returned/read but excluded from capture and not used/copied. Old26 merged entries repaired; priorHEAD bytes archived with2historical audit references redirected. Automated monitor still manual-review, not extractor success.",
+    "servicenow-welcome-course": "Direct empty body. Earlier Welcome label incorrectly targets CSA certification-path route withcourse_id931d939697d229587f7070871153af8c. Retained with corrected guide label; current Welcome link taken from canonical blueprint. No lesson/duration verification.",
+    "servicenow-credential-catalog": "Direct34-character shell; credential entry only. No authenticated catalog, course interior or entitlement.",
+    "servicenow-product-documentation": "Direct40-character shell. Specific primary browser main sections reviewed separately; documentation homepage is not a full platform audit.",
+    "servicenow-developer-program": "Direct125-character entry shell. No account, PDI allocation, runtime, installation or environment changes.",
+    "measureup-servicenow-csa": "Complete10887-character public product capture read. February2026/120questions,counts6/12/26/23/33/20,Practice/Certification modes; generic around150 differs. Eleven advertised languages include automatic translations, not official exam languages. Marketing readiness/guarantee/salary claims not adopted. Demo not opened; oldfive-item claim not reverified. No question/explanation interiors.",
+    "servicenow-csa-delta-2026": "Direct empty body; full156linebrowser maintenance main read. Update-set focus, not mainline replacement. Broad users/groups/roles nonmetadata statement qualified by technicalcollision classes andpayload inspection. Ignore advice qualified for batches; XML import distinct from remote retrieval. No assessment or instance execution.",
+    "servicenow-learning-paths": "HTTP403; earlier infographic sequencing/format metadata not reverified. No current PDF body read.",
+    "udemy-servicenow-csa-holmes": "HTTP403; earlier8h17 andMay2026 metadata not reverified. No paid lessons, syllabus quality or alignment claim.",
+    "oreilly-navigating-servicenow-career": "HTTP403; earlier2h30 and2025 metadata not reverified. No paid interior, technical coverage or quality claim.",
+    "youtube-servicenow-developers": "Direct185-character title/footer; landing only. No playback or playlist audit.",
+    "servicenow-community-csa-study-guide": "Direct6409-character capture; main through author/date/topic list and first comments read, not remaining comments orattachment. TosinDJuly12,2025 user-authored broad checklist, no current authoritative scope/weights. Third-party flashcards/mock recommendations not endorsed.",
+    "servicenow-welcome-current": "Correct URL from canonical blueprint course_id386f3cf847b36a90c00af235126d430c. Directempty/browser9lineLoading shell; no duration/interior. Earlier3hoursnotreverified.",
+    "servicenow-administration-fundamentals": "Correct canonical recommended course_idfbb6cc4847f5dd505cbdaf44846d436a. Directempty/browser9lineLoading shell; no current duration,entitlement orcourseinterior. Earlier3ILTdaysnotreverified; recommendation not formal prerequisite.",
+    "servicenow-pearson-faq": "Directempty; full129linebrowser FAQ read. SSO viaSNU,trainingnotmandatory exceptExpertArchitect,ILTincludesattempt,90daywindow andretakewait distinctions. Centerreschedule48hours versusOnVUEuntilscheduledstartincludingcheckin. CSAretakeUSD150 and3days/30days/6months delays observed but no booking/fee action. No account/auth changes.",
+    "servicenow-cmp-payment": "Directempty; full71linebrowser payment FAQ read. One annualfee for qualifyingmultiplecerts,organizationcredits needapproval/linking. EnglishJanuary15-April15,2026 differs byday fromsupplementalJapaneseKB0011232indexedJanuary16-April16. No assigneddeadline/futurewindowverified; no payment/request submitted.",
+    "servicenow-completing-delta": "Directempty. Publiclxp9lineLoading andpublickb browserInternalError; linked completion policy main not readable. No account/access-control workaround; assigned maintenance remains unverified.",
+    "servicenow-acl-overview": "Direct40-character shell. Selected main read from currentBrazilSeptember10browser L1804-1957 (lastwildcardscope tailnotclaimed), excludingAI-generatedsummary. Conditions,required-roleOR,applicability,table+field,pre/postquery,empty/invalid versusno-match/default property distinctions. PriorindexedAustraliaselectedreading differs inrelease label. No wholeACLengine/runtimeproof.",
+    "servicenow-acl-types": "Direct40-character shell. Selected currentBrazilSeptember10recordACL main L1769-1812 read, not remaining fulloperationtypes. Table+fieldbothpass. Earlier indexedAustralia traversal description read; no exact traversal implementation/upgradeclaim.",
+    "servicenow-acl-deny-unless": "Direct40-character shell. Complete short main read inindexedAustralia andliveBrazilSeptember10L1769-1785. Deny-Unless priority,roleOR plusotherclauses. Passrow internallycontradictory explicitAllowIfrequired versusdefaultgrantwhennone. Preservedunresolved; chosenlocalpolicy not platformengine.",
+    "servicenow-acl-function-fields": "Direct40-character shell. Complete liveBrazilSeptember10mainL1800-1846 including3examples read; earlierindexedAustralia first2examples. ExcludesAI-generatedsummary. Function/contributorread andreport_view roleonlyconditions; samepage substitutesselectedfamily intransitiontext, exacthistoricalintroductionnotestablished. No report/runtime.",
+    "servicenow-business-rules": "Direct40-character shell. Complete liveBrazilSeptember10mainL1311-1364 read excludinggeneratedsummary. WorkflowStudiorecommendation,classicBRtiming,asyncscriptprevious/orderlimits versusconditionbuilder,GlideRecord/setWorkflow bypass andACLcontext caveats,current.update recursion,beforeautosave. No vendorcode copied/run orworkflowdisabled.",
+    "servicenow-import-coalesce": "Direct40-character shell. Complete indexedAustraliaMarch12main read excludinggeneratedsummary, including example scripts andcase/emptyoptions. Allcoalescefieldsmatch,firstofmultipletargetmatchesupdates,no-matchinserts,defaultcaseinsensitive. No vendorcode copied/run; localquarantine/revisionrules explicitlychosen.",
+    "servicenow-update-sets-start": "Direct40-character shell. EarlierindexedYokohamalongerGetStartedbody selected; fresh stableURLnowBrazilSeptember10shortGeneralGuidelines mainL1457-1466 read. Smallsets,consistentpath/version,dependencies. EarlierblanketIgnore qualifiedbycurrentbatchdoc. No fullhistory orperformanceguarantee.",
+    "servicenow-update-sets-batch": "Direct40-character shell. Complete shortBrazilSeptember10mainL1457-1473 andindexedAustralia read. Hierarchy/basepreview/commit,ancestry,parent-onlyIgnoreothersCompleteforcloning. No merge/batch/runtime test.",
+    "servicenow-update-sets-collisions": "Direct40-character shell. CompleteBrazilSeptember10mainL1457-1529 read. Name/date comparisons,selectedcoalescingclassesinclsys_user_role/sys_user_group,identityrewrite/duplicates. Presenceinlistnotproofallgroup/membershipdataautomaticallycaptured. No collisionruntime.",
+    "servicenow-update-sets-xml": "Direct40-character shell. CompleteBrazilSeptember10mainL1457-1499 read. Export/localXMLimportappearsretrievedLoaded;separatecommit;documentadmin/security_adminrequirementsreadnotacted. No fileuploaded/elevation.",
+    "servicenow-update-sets-tracked": "Direct40-character shell. CompleteBrazilSeptember10mainL1481-1537 read excludinggeneratedsummary. Catalogdefinitionnotorders,update_synchnotcustomerworkaround,specialhandlers,destructiveschema/previewlimits,homepage/dashboardcaveats. No schema/attributechanges.",
+    "servicenow-update-sets-working": "Direct40-character shell. Complete shortBrazilSeptember10mainL1457-1471 read. Re-capturemisassignedobjectwithdocumentedprocess;do notmanuallychangeCustomerUpdateUpdateSetreference. No platformmutation.",
+    "servicenow-brazil-developer-passport": "Direct3926-character capture; completearticlemain/date/authorread, notcomments/linkedvideos. laurenmcmanAdministratorAugust13,2026,vendorDeveloperPassportprogram;elevenSept14-18previewsessions. No playback/calendar/subscription/notificationaction andnoGA/examcutoverinference."
+  },
+  "public_examples": [
+    {
+      "language": "python",
+      "code": "import collections\nimport copy\nimport json\nimport sqlite3\n\nchecks = []\n\n\ndef check(name, actual, expected):\n    if actual != expected:\n        raise AssertionError((name, actual, expected))\n    checks.append(name)\n\n\n# Original import policy: source names normalize; external IDs retain case.\n# This is SQLite execution, not ServiceNow coalesce or a CMDB transform.\ndb = sqlite3.connect(':memory:')\ndb.execute('CREATE TABLE asset (source TEXT, external_id TEXT, revision INTEGER, '\n           'location TEXT, PRIMARY KEY (source, external_id))')\n\n\ndef accept(row):\n    source, external_id, revision, location = row\n    source, external_id = source.strip().casefold(), external_id.strip()\n    if (source not in {'vendora', 'vendorb'} or not external_id\n            or type(revision) is not int or revision < 0 or not location.strip()):\n        return 'quarantine'\n    location = location.strip()\n    with db:\n        old = db.execute('SELECT revision, location FROM asset WHERE source=? '\n                         'AND external_id=?', (source, external_id)).fetchone()\n        if old:\n            if revision < old[0]:\n                return 'stale'\n            if revision == old[0]:\n                return 'noop' if location == old[1] else 'conflict'\n            db.execute('UPDATE asset SET revision=?, location=? '\n                       'WHERE source=? AND external_id=?',\n                       (revision, location, source, external_id))\n            return 'updated'\n        db.execute('INSERT INTO asset VALUES (?,?,?,?)',\n                   (source, external_id, revision, location))\n        return 'inserted'\n\n\ndef state():\n    return db.execute('SELECT * FROM asset ORDER BY source, external_id').fetchall()\n\n\nrows = [(' VendorA ', '42', 1, 'West'), ('vendorB', '42', 1, 'East'),\n        ('vendora', '42', 1, 'West'), ('vendora', '', 1, 'West'),\n        ('vendora', '42', 1, 'North'), ('vendora', '42', 0, 'Old'),\n        ('vendora', '42', 2, 'North'), ('vendora', '99', True, 'South')]\noutcomes = collections.Counter(accept(row) for row in rows)\ncheck('all input rows accounted for', sum(outcomes.values()), 8)\ncheck('first-run outcomes', dict(outcomes),\n      dict(inserted=2, noop=1, quarantine=2, conflict=1, stale=1, updated=1))\ncheck('source-qualified identity', len(state()), 2)\ncheck('exact final records', state(),\n      [('vendora', '42', 2, 'North'), ('vendorb', '42', 1, 'East')])\nbefore = state()\nreplay = collections.Counter(accept(row) for row in rows)\ncheck('replay has no mutations', replay['inserted'] + replay['updated'], 0)\ncheck('replay retains exact state', state(), before)\ncheck('unknown source quarantined', accept(('other', '42', 4, 'West')), 'quarantine')\ncheck('blank location quarantined', accept(('vendora', '42', 3, ' ')), 'quarantine')\ncheck('same revision changed payload conflicts',\n      accept(('vendora', '42', 2, 'East')), 'conflict')\ncheck('rejections leave state intact', state(), before)\ncheck('SQLite integrity', db.execute('PRAGMA integrity_check').fetchone(), ('ok',))\ncheck('ID alone would collapse sources', len({r[1] for r in state()}), 1)\n\n\n# Trusted fixture labels and a chosen policy, not the ServiceNow ACL engine.\ndef may_read(roles, active, authenticated, same_region, field_allowed):\n    required = bool(set(roles) & {'fulfiller', 'auditor'})\n    return required and active and authenticated and same_region and field_allowed\n\n\ncheck('fulfiller allowed', may_read({'fulfiller'}, True, True, True, True), True)\ncheck('alternative role allowed', may_read({'auditor'}, True, True, True, True), True)\ncheck('role alone insufficient', may_read({'fulfiller'}, False, True, True, True), False)\ncheck('authentication required', may_read({'fulfiller'}, True, False, True, True), False)\ncheck('record scope required', may_read({'fulfiller'}, True, True, False, True), False)\ncheck('field restriction survives row access',\n      may_read({'fulfiller'}, True, True, True, False), False)\ncheck('missing explicit role denied by chosen policy',\n      may_read(set(), True, True, True, True), False)\ncheck('derived output requires all contributing permissions', all([True, False]), False)\n\n\n# A deployment packet has explicit dependencies and an expected base revision.\n# This is not an update-set XML parser or a ServiceNow collision simulator.\ndef ordered(names, dependencies):\n    done = set()\n    for name in names:\n        if name in done or not dependencies[name] <= done:\n            return False\n        done.add(name)\n    return done == set(dependencies)\n\n\ndeps = {'schema': set(), 'role': set(), 'acl': {'schema', 'role'},\n        'form': {'schema'}, 'flow': {'schema', 'acl'}}\ncheck('complete dependency order', ordered(['schema', 'role', 'acl', 'form', 'flow'], deps), True)\ncheck('missing dependency rejected', ordered(['schema', 'acl', 'form', 'flow'], deps), False)\ncheck('incomplete packet rejected', ordered(['schema', 'role', 'acl', 'form'], deps), False)\ncheck('duplicate step rejected', ordered(['schema', 'role', 'acl', 'form', 'flow', 'flow'], deps), False)\ncyclic = {'schema': {'acl'}, 'acl': {'schema'}}\ncheck('cyclic dependency rejected', ordered(['schema', 'acl'], cyclic), False)\ntarget = {'revision': 4, 'value': 'old'}\npacket = {'expected': 4, 'value': 'new'}\nbackup = copy.deepcopy(target)\n\n\ndef deploy(current, change):\n    if current['revision'] != change['expected']:\n        return False\n    current.update(revision=current['revision'] + 1, value=change['value'])\n    return True\n\n\ncheck('expected revision applies', deploy(target, packet), True)\ncheck('stale packet rejected', deploy(target, packet), False)\ncheck('post-deployment edit applies', deploy(target, {'expected': 5, 'value': 'later-fix'}), True)\ncheck('blind backout would lose later fix', backup['value'] != target['value'], True)\ncheck('guarded backout rejects later state',\n      deploy(target, {'expected': 5, 'value': backup['value']}), False)\ncheck('later fix preserved', target, {'revision': 6, 'value': 'later-fix'})\n\nbank_counts = [6, 12, 26, 23, 33, 20]\nblueprint_weights = [7, 10, 20, 20, 30, 13]\ncheck('practice-bank total', sum(bank_counts), 120)\ncheck('blueprint weights total', sum(blueprint_weights), 100)\ncheck('bank distribution differs from blueprint',\n      [n * 100 for n in bank_counts] == [w * 120 for w in blueprint_weights], False)\ndb.close()\nprint(json.dumps({'passed': len(checks), 'checks': checks, 'first_run': dict(outcomes),\n                  'replay': dict(replay), 'final_records': before,\n                  'deployment': target, 'practice_bank_total': sum(bank_counts)}, indent=2))\n",
+      "boundary": "Actual standard-library Python and in-memory SQLite sequential import, replay and integrity checks. Trusted-label access and dependency/revision models are original chosen policies, not ServiceNow ACL, transform, CMDB, Business Rule or update-set execution. No account, instance, plugin, privilege, credential, notification or paid resource used."
+    }
+  ],
+  "catalog_comparison": {
+    "resources": 30,
+    "bank_counts": [
+      6,
+      12,
+      26,
+      23,
+      33,
+      20
+    ],
+    "bank_total": 120,
+    "blueprint_weights": [
+      7,
+      10,
+      20,
+      20,
+      30,
+      13
+    ],
+    "question_interiors_read": false,
+    "paid_interiors_read": false
+  }
+}

@@ -1784,6 +1784,8 @@ The review maps the complete current public 13-skill learning path as the availa
 
 ## SERVICENOW-CSA coverage record
 
+The September 29 [deep review](research/2026-09-29-servicenow-csa-deep-review.md) maps 30 detailed objectives. Mapped all30 current canonical subtopics with historical snapshot preservation, answered40 original prompts andexecuted34 localPython/SQLite checks. Addedthreeworkedscenarios/eightproposedlabs, correctedWelcomelink andcatalogboundaries, qualifiedACL/import/BusinessRule/update-setbehavior. Canonicalmainmanuallyverified; ACLwording/releasehistory,assignedmaintenance,liveinstanceandhumanreviewremainpending. Current guide citations: 30 registered, 27 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 7, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Platform Overview and Navigation (7%), Instance Configuration (10%), Configuring Applications for Collaboration (20%), Self Service and Automation (20%), Database Management and Platform Security (30%), and Data Migration and Integration (13%)

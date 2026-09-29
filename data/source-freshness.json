@@ -4,6 +4,211 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-servicenowcsa-deep-review",
+      "title": "SERVICENOW-CSA complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SERVICENOW-CSA"
+      ],
+      "results": [
+        {
+          "exam_code": "SERVICENOW-CSA",
+          "vendor_id": "servicenow",
+          "guide_path": "guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md",
+          "baseline_sha256": "b5b08f833c0c820046eff3875158ded0fbf6559eb6cc952eb063cd89b76b6f35",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Fullcanonicalbrowsermain January2026:30subtopics,sixunchangedweights60questions90minutesPearson/OnVUE90dayregistration;manualsnapshotrepair witholdexactbytesarchived. Automatedemptybodyremainsmanual-review. No newannouncedexamversion."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "PrimaryACL/import/BusinessRule/update-set main sections read withspecificboundaries;34actualPythonSQLitechecks. No ServiceNowruntimeclaim."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "August13DeveloperPassportBrazilpreviewannouncement andcurrentBrazilSep10docs contrastedwithcachedAustralia. No GA/examcutoverclaim. 2026deltaupdate-setmaterialseparate."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "WelcomeURLfixed,course/paidhistoricaldurationsqualified,MeasureUp120specificvsrough150generic andbankdistributionnotblueprint. Nointeriors/playback."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "DenyUnlessPassrowcontradiction andfunctionfieldexactreleaseintroduction unresolved; completionpolicybodyunreadable/assignedmaintenanceunknown. Liveinstance,paidinteriorsandhumanreviewpending."
+            }
+          },
+          "findings": [
+            {
+              "id": "servicenowcsa-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Saved outline merged separate official subtopics",
+              "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SERVICENOW-CSA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Prior26entriesmerged/paraphrasedcurrentcanonical30subtopics;weightsunchanged.",
+              "recommendation": "ArchiveoldHEADbyteexactsnapshots andhistoricalaudit/reviewpaths;manuallyaccept30currententrieswithhashes.",
+              "disposition": "applied",
+              "source_id": "servicenow-csa-mainline-blueprint",
+              "resolution": "ArchiveoldHEADbyteexactsnapshots andhistoricalaudit/reviewpaths;manuallyaccept30currententrieswithhashes."
+            },
+            {
+              "id": "servicenowcsa-deep-2",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Welcome resource pointed to the certification path",
+              "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SERVICENOW-CSA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Oldcourse_id931d routeisCSApath;canonicalWelcomelink386f.",
+              "recommendation": "UsecorrectrecommendedWelcomeURL,retainoldpathwithcorrectlabelandunverifiedduration.",
+              "disposition": "applied",
+              "source_id": "servicenow-csa-mainline-blueprint",
+              "resolution": "UsecorrectrecommendedWelcomeURL,retainoldpathwithcorrectlabelandunverifiedduration."
+            },
+            {
+              "id": "servicenowcsa-deep-3",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Default-access prose contradicts itself",
+              "url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-denial-behavior.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SERVICENOW-CSA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "PassrowrequiresAllowIfandalsoallowsno-AllowIfdefaultgrant.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "servicenowcsa-deep-4",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Exact historical function-field change is unclear",
+              "url": "https://www.servicenow.com/docs/r/platform-security/access-control/acl-function-fields.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SERVICENOW-CSA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "IndexedAustraliamainandliveBrazilmainbothuseownfamilyintransitionwording,leavinggapafterRome.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "servicenowcsa-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Coalesce matching is not a uniqueness or validation guarantee",
+              "url": "https://www.servicenow.com/docs/r/integrate-applications/system-import-sets/c_ImportSetCoalesce.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SERVICENOW-CSA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Firstofmultipletargetmatchesupdates;empty/caseoptionsaffectidentity.",
+              "recommendation": "Teachpreflightidentity andchosenquarantine/revisionpolicy withactualSQLitecounterexamples,notplatformdefaultclaim.",
+              "disposition": "applied",
+              "source_id": "servicenow-import-coalesce",
+              "resolution": "Teachpreflightidentity andchosenquarantine/revisionpolicy withactualSQLitecounterexamples,notplatformdefaultclaim."
+            },
+            {
+              "id": "servicenowcsa-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Broad metadata exclusion and transport phrasing need qualifications",
+              "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0012121",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SERVICENOW-CSA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Deltausers/groups/rolesnonmetadata shorthand differsfromtechnicalcollisionclasses;batchstateandXMLpathsneedcontext.",
+              "recommendation": "Inspectactualpayload/classes,distinguishmemberships;useparent-onlyIgnoreandseparateXMLimportfromremote retrieval.",
+              "disposition": "applied",
+              "source_id": "servicenow-csa-delta-2026",
+              "resolution": "Inspectactualpayload/classes,distinguishmemberships;useparent-onlyIgnoreandseparateXMLimportfromremote retrieval."
+            },
+            {
+              "id": "servicenowcsa-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Preview success does not establish data recovery",
+              "url": "https://www.servicenow.com/docs/r/application-development/system-update-sets/customizations-tracked-update-sets.html?contentId=Wesk3KW7yiI5hKC5y~QwUA",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SERVICENOW-CSA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Schema/type/columnchanges andspecialhandlers canlose data;previewmaymissmismatch.",
+              "recommendation": "Requirepayload/dataimpactreview andspecificrecoveryevidence;originalrevisionguardshowsoverwriteoflaterfix.",
+              "disposition": "applied",
+              "source_id": "servicenow-update-sets-tracked",
+              "resolution": "Requirepayload/dataimpactreview andspecificrecoveryevidence;originalrevisionguardshowsoverwriteoflaterfix."
+            },
+            {
+              "id": "servicenowcsa-deep-9",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Assigned maintenance and completion policy unverified",
+              "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011292",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SERVICENOW-CSA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Publiccompletionrouteempty/error andEnglishpaymentdatesdifferbydayfromotherpublicreferences.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped all30 current canonical subtopics with historical snapshot preservation, answered40 original prompts andexecuted34 localPython/SQLite checks. Addedthreeworkedscenarios/eightproposedlabs, correctedWelcomelink andcatalogboundaries, qualifiedACL/import/BusinessRule/update-setbehavior. Canonicalmainmanuallyverified; ACLwording/releasehistory,assignedmaintenance,liveinstanceandhumanreviewremainpending. Same-context AI review; human review pending. See docs/research/2026-09-29-servicenow-csa-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 5,
+        "no_action_findings": 0,
+        "blocked_findings": 3
+      }
+    },
+    {
       "id": "freshness-2026-09-29-mongodbassociateatlasadministrator-deep-review",
       "title": "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR complete guide and learning-content review",
       "rubric_version": 1,
