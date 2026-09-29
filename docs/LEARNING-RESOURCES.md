@@ -2444,6 +2444,27 @@ This is **not a complete list**, and it is not meant to be consumed in full. Sel
 
 The blueprint is current but fast-moving interfaces require explicit checks for bundle names, monitoring terminology, Ray/Optuna integrations, online/on-demand features and serving traffic. No exact current Pluralsight, Udemy, LinkedIn Learning or MeasureUp product was independently verified.
 
+### DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE — Databricks Certified Generative AI Engineer Associate
+
+Resource details from the [DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE guide](../guides/DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE-databricks-generative-ai-engineer-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is **not a complete list**, and it is not meant to be consumed in full. Pick the resources that match your gaps and learning style; prioritize building and evaluating a working agent over passively watching every course. Public metadata was checked September 28, 2026. LinkedIn exposes a 1-hour-11-minute total; Academy lessons require sign-in. Udemy and O'Reilly pages blocked automated access, so older course dates/totals below were not reverified. Other durations are planning estimates, not vendor guarantees.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official certification page and March 18, 2026 guide](https://www.databricks.com/learn/certification/genai-engineer-associate) | Free | 2–3 hours to map all objectives and inspect vendor sample format; do not redistribute questions |
+| [Databricks Academy](https://customer-academy.databricks.com/) — *Building Retrieval Agents*, *Building Single-Agent Applications*, *Generative AI Application Evaluation and Governance*, and *Deployment and Monitoring* | Free account/customer or partner entitlement varies | 18–35 hours with labs; catalog estimates and availability require sign-in |
+| [Databricks agents and GenAI documentation](https://docs.databricks.com/aws/en/agents/) | Free | 12–20 hours selected hands-on across Agent Bricks/custom agents, AI Search, tools/MCP, Apps, evaluation and serving |
+| Databricks workspace plus this guide's eight labs | Organizational; portions may work in Free Edition | 30–50 hours including failure, authorization, evaluation, monitoring and rollback experiments |
+| [Databricks YouTube](https://www.youtube.com/@Databricks) | Free | 4–8 hours selected recent agent, MLflow, AI Search, Apps and governance sessions |
+| [LinkedIn Learning: Learn Databricks GenAI](https://www.linkedin.com/learning/learn-databricks-genai) | Paid/trial | 1 hour 11 minutes video plus 1–3 hours practice; use for concepts and verify March 2026 product/objective alignment |
+| [Udemy: Databricks Generative AI Engineer Associate — Olivier Auffret](https://www.udemy.com/course/databricks-certified-generative-ai-engineer-associate-lessons/) | Paid; hands-on course, August 2026 update previously observed, not reverified September 28 | About 12–20 hours including labs; public page exposed section times but not a stable full total |
+| [Udemy: Derar Alhussein certification preparation](https://www.udemy.com/course/databricks-certified-genai-engineer-associate/) | Paid; course and hands-on preparation, August 2026 update previously observed, not reverified September 28 | 3 hours 45 minutes video plus 6–12 hours hands-on and review |
+| [Code-corpus chunking experiment](https://www.databricks.com/blog/building-knowledge-assistant-over-code) — Daniel Liden, March 23, 2026 | Free | 30–45 minutes reading plus 2–4 hours designing a controlled comparison; published results are workload-specific |
+| [O'Reilly search: Databricks generative AI](https://www.oreilly.com/search/?q=Databricks%20generative%20AI) | Paid/trial | 6–16 hours selected recent chapters/events; map them to the March blueprint rather than assuming completeness |
+
+Because this blueprint contains recently revised agent, Agent Bricks, MCP, Apps, AI Search/Vector Search, MLflow evaluation, AI Gateway and prompt-management topics, check the official page two weeks before the exam and revalidate documentation release stages. No exact current Pluralsight, Whizlabs or MeasureUp exam-aligned product was independently verified.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

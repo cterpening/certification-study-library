@@ -954,6 +954,8 @@ The review reconciles the detailed official PDF effective May 4, 2026 with the l
 
 ## Databricks Generative AI Engineer Associate coverage record
 
+The September 28 [deep review](research/2026-09-28-databricks-generative-ai-engineer-associate-deep-review.md) maps 56 detailed objectives. Mapped 56 March 18 PDF objectives; distinguish AI Search access from source policies and App service identity from user delegation, separate retrieval metrics, execute PyFunc and scorer-error checks, and qualify blocked paid-course metadata. Monitor differences are dash typography and a missing prior status snapshot; accepted snapshots remain unchanged. Current guide citations: 16 registered, 13 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Design Applications | Section 1, all integrated scenarios, and Labs 1 and 4 |

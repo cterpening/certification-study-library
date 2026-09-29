@@ -1,0 +1,1539 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE-databricks-generative-ai-engineer-associate.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "c2b02ef414b89b313dfb29a033678aebcdcceb89033f9a45e6745f31a4188edc",
+  "guide_after_sha256": "03291e8316a363864bd66a72b12a64f91a4571682869cf616f6965f1c73bad89",
+  "prior_records": {
+    "exam": {
+      "code": "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE",
+      "level": "intermediate",
+      "vendor_id": "databricks",
+      "title": "Databricks Certified Generative AI Engineer Associate",
+      "status": "active",
+      "study_guide_url": "https://www.databricks.com/learn/certification/genai-engineer-associate",
+      "guide_path": "guides/DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE-databricks-generative-ai-engineer-associate.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; the official guide recommends related training and six months of hands-on experience. Practice Python/SQL, prompt and model selection, governed document preparation, RAG and AI Search, traced agent/tool/MCP design, MLflow evaluation, secure Apps/serving, Unity Catalog controls, CI/CD, monitoring, cost control and calibrated feedback."
+    },
+    "review": {
+      "id": "databricks-generative-ai-engineer-associate-2026-09-01-source-validation",
+      "exam_code": "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE",
+      "guide_path": "guides/DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE-databricks-generative-ai-engineer-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/databricks-generative-ai-engineer-associate-official-objectives.txt",
+      "blueprint_snapshot_sha256": "27994e2dbc5874f47708356b3ff39a38a9e98d835e9ddcb6cc7d6c9f322fc2ca",
+      "objective_coverage": [
+        {
+          "objective_group": "Design Applications",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1 and 4"
+          ]
+        },
+        {
+          "objective_group": "Data Preparation",
+          "guide_sections": [
+            "Section 2",
+            "Governed-policy scenario",
+            "Labs 2–3"
+          ]
+        },
+        {
+          "objective_group": "Application Development",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 4–5"
+          ]
+        },
+        {
+          "objective_group": "Assembling and Deploying Apps",
+          "guide_sections": [
+            "Section 4",
+            "Support-action and analytics-supervisor scenarios",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Governance",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Labs 2, 4 and 7"
+          ]
+        },
+        {
+          "objective_group": "Evaluation and Monitoring",
+          "guide_sections": [
+            "Section 6",
+            "All integrated scenarios",
+            "Labs 5 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 12,
+        "reachable": 9,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "The March 18, 2026 detailed live-version PDF and current six-domain weighted page were reconciled, with live assessment metadata controlling PDF delivery discrepancies. Three scenarios, eight labs and 37 original checks cover requirement/prompt/task/chain/tool and Agent Bricks choices; governed extraction, chunking, embeddings, AI Search/Vector Search, retrieval metrics and reranking; model/framework selection, layered guardrails, Agent Framework and Genie/multi-agent behavior; packaging/registration, Foundation Model/batch inference, memory, CI/CD, prompt lifecycle, MCP and secure Apps; Unity Catalog/masking/licensing controls; and traced evaluation, judges/scorers, inference/usage/cost monitoring and calibrated SME feedback. All 12 guide URLs are cataloged: 9 reachable, with the two Udemy pages and O'Reilly search automation-blocked; none missing or broken. Fast-moving Agent Bricks, MCP, Apps, AI Search, MLflow and AI Gateway names/release stages are explicitly volatile, and vendor sample questions are linked rather than reproduced."
+    },
+    "sources": [
+      {
+        "id": "dp-750-databricks-youtube-channel",
+        "title": "Databricks YouTube channel",
+        "url": "https://www.youtube.com/@Databricks",
+        "publisher": "Databricks",
+        "authority_class": 3,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750",
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+          "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+          "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+        ]
+      },
+      {
+        "id": "databricks-dea-academy",
+        "title": "Databricks Academy",
+        "url": "https://customer-academy.databricks.com/",
+        "publisher": "Databricks",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+          "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+          "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE",
+          "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+        ],
+        "notes": "Hosts official self-paced learning; catalog and entitlements can differ for customer, partner and individual accounts."
+      },
+      {
+        "id": "databricks-genai-blueprint",
+        "title": "Databricks Certified Generative AI Engineer Associate",
+        "url": "https://www.databricks.com/learn/certification/genai-engineer-associate",
+        "publisher": "Databricks",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+        ],
+        "notes": "Canonical live six-domain weighted coverage and assessment-details page; monitored by the Databricks certification adapter."
+      },
+      {
+        "id": "databricks-genai-exam-guide-mar-2026",
+        "title": "Databricks Certified Generative AI Engineer Associate exam guide — March 18, 2026",
+        "url": "https://www.databricks.com/sites/default/files/2026-03/Databricks-Certified-Generative-AI-Engineer-Associate-Exam-Guide-Mar26.pdf",
+        "publisher": "Databricks",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+        ],
+        "notes": "Detailed official live-version objective baseline; includes original vendor sample questions that are linked rather than reproduced."
+      },
+      {
+        "id": "databricks-genai-agents",
+        "title": "Build agents on Databricks",
+        "url": "https://docs.databricks.com/aws/en/agents/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+        ],
+        "notes": "Current Agent Bricks, custom-agent, AI Search, tools/MCP, Apps, evaluation, serving and AI Gateway hub; terminology and release stages are volatile."
+      },
+      {
+        "id": "databricks-genai-capabilities",
+        "title": "Databricks generative AI capabilities",
+        "url": "https://docs.databricks.com/aws/en/generative-ai/guide/gen-ai-capabilities",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+        ],
+        "notes": "Current first-party lifecycle and product map across query, build, retrieve, deploy, evaluate, monitor, govern and LLMOps."
+      },
+      {
+        "id": "databricks-genai-ai-functions",
+        "title": "AI Functions on Databricks",
+        "url": "https://docs.databricks.com/aws/en/large-language-models/ai-functions",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+        ],
+        "notes": "Current SQL AI-function and ai_query batch-inference reference; supported models, regions and schemas are volatile."
+      },
+      {
+        "id": "databricks-genai-mcp-services",
+        "title": "Connect agents to third-party tools with MCP Services",
+        "url": "https://docs.databricks.com/aws/en/generative-ai/agent-framework/external-connection-tools",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+        ],
+        "notes": "Current managed/external MCP integration, Unity Catalog permission, credential, policy and audit guidance; preview status must be rechecked."
+      },
+      {
+        "id": "databricks-genai-evaluation",
+        "title": "Evaluate and monitor agents",
+        "url": "https://docs.databricks.com/aws/en/mlflow3/genai/eval-monitor",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+        ],
+        "notes": "Current MLflow tracing, evaluation, judges/scorers and production-monitoring lifecycle reference."
+      },
+      {
+        "id": "databricks-genai-linkedin",
+        "title": "Learn Databricks GenAI",
+        "url": "https://www.linkedin.com/learning/learn-databricks-genai",
+        "publisher": "LinkedIn Learning",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+        ],
+        "notes": "Independent concept course by Lynn Langit; useful supporting learning but not represented as complete March 2026 exam coverage."
+      },
+      {
+        "id": "databricks-genai-udemy-auffret",
+        "title": "Databricks Certified Generative AI Engineer Associate — Olivier Auffret",
+        "url": "https://www.udemy.com/course/databricks-certified-generative-ai-engineer-associate-lessons/",
+        "publisher": "Udemy",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+        ],
+        "notes": "Hands-on preparation course updated August 2026 when checked; public page did not expose a stable complete runtime."
+      },
+      {
+        "id": "databricks-genai-udemy-derar",
+        "title": "Databricks Certified Generative AI Engineer Associate preparation — Derar Alhussein",
+        "url": "https://www.udemy.com/course/databricks-certified-genai-engineer-associate/",
+        "publisher": "Udemy",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+        ],
+        "notes": "Three-hour-45-minute hands-on preparation course updated August 2026 when checked; verify alignment again before purchase."
+      },
+      {
+        "id": "databricks-genai-oreilly-search",
+        "title": "O'Reilly search — Databricks generative AI",
+        "url": "https://www.oreilly.com/search/?q=Databricks%20generative%20AI",
+        "publisher": "O'Reilly Media",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+        ],
+        "notes": "Catalog discovery rather than a verified complete certification course; select recent chapters/events and map them to the March blueprint."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "b0bfce43858b46663b6cece6a4c40c79b66b0f1b60d4cc07595d251fb6bee32a",
+      "guide_sections": [
+        "1. Design Applications (14%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "dbc7762475d655d017239d80becc404b217e58fe8d66eba4ae8952e954102c4e",
+      "guide_sections": [
+        "1. Design Applications (14%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "7595de52a44e45272041844e5b60de885a997b693636707bad2dc9a2be6b7393",
+      "guide_sections": [
+        "1. Design Applications (14%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "975f9ed2bb4057c3fdd507c9e111eb6321735e5919df56104e9a08397565ac3a",
+      "guide_sections": [
+        "1. Design Applications (14%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "393119e3a79ba916acebee71e3c9a681710426223ab6b76817762a0319bab6fb",
+      "guide_sections": [
+        "1. Design Applications (14%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "d404a69f19f16135e417b7628017d08f9c62991eadeab3490df2fe25ef685e28",
+      "guide_sections": [
+        "1. Design Applications (14%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "82cfd2bbd281a3387d49acb83bf57eb659cfe4bb12219de7fc4eb08a9b02fa44",
+      "guide_sections": [
+        "2. Data Preparation (14%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "f1cd2de953aeefc5e8b01449690ba51371ba0ecf0e076694959140df7f14d11f",
+      "guide_sections": [
+        "2. Data Preparation (14%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "1b088de79a9424de0630d2a1df68a1e1e0e1b676c7b7b1bbd4279dd21e8378f2",
+      "guide_sections": [
+        "2. Data Preparation (14%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "c10cc84e8a0d3c99c8b9ace4eb69c5e5968d47b16c9015fa8ca6096641187728",
+      "guide_sections": [
+        "2. Data Preparation (14%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "898a94979a137d31c9ac45154a25f426eaa6063af3db2613156e318c3367b02a",
+      "guide_sections": [
+        "2. Data Preparation (14%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "a9d878e49ca9a5ce0d209d33f3ed95401e76730012bc502c5c2888c5ee57d6b8",
+      "guide_sections": [
+        "2. Data Preparation (14%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "ccbe3fe7b86372a5f76c500f5f6f8ae9455bcbcdb2d7e0e8603db384c5a04d9f",
+      "guide_sections": [
+        "2. Data Preparation (14%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "d6aba18987573a65c698c5686b0b0abf087ff2e7fd840ca4b2fd4d12ee5879d4",
+      "guide_sections": [
+        "2. Data Preparation (14%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "8b205a9bb71b1a8146b36699f819170246170666c27985814928a218a386e5a9",
+      "guide_sections": [
+        "3. Application Development (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "132bdb76783644b006d6dabdb4349c24ff702d83b2cecf3b574f4245c5c5bf19",
+      "guide_sections": [
+        "3. Application Development (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "eb7aa77e9737f08b9d5b2e1a0f8d9418c6d4a677d6103de01cda9a9be4fc6f15",
+      "guide_sections": [
+        "3. Application Development (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "788855e3657372d5c1b4b981623199415b433d551d984637058d4262a5477550",
+      "guide_sections": [
+        "3. Application Development (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "f9226cd1761e93bf4c91ab196f6ef8693d1ece7a99625555b9f09002d1171f96",
+      "guide_sections": [
+        "3. Application Development (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "6b9c81d6430f78687c615ef5b03fb8b8385fdf6e146eb9554c8aa6b6c7567a2a",
+      "guide_sections": [
+        "3. Application Development (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "a4e903193b71f461f48f24d9ebb26e6d0a04ebfd51929699a02c151013942b5c",
+      "guide_sections": [
+        "3. Application Development (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "577037fa01f1df9e5f554d9967f24a60b1e80227e711650e37e102fd8d544cfd",
+      "guide_sections": [
+        "3. Application Development (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "d4affebf4ad8b232970d0c3b137bee64a41ff8bb8963fe6be5cd093edb95e1ff",
+      "guide_sections": [
+        "3. Application Development (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 10,
+      "objective_sha256": "ca9072ce483f1cb40b090b3700d9f91ee3aeee3563d9efe90a83c92c57c2a070",
+      "guide_sections": [
+        "3. Application Development (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 11,
+      "objective_sha256": "913cd4a1fd58deb8200bdbba0d0d4411b7b4e74efdaceb8b9a0d7c6e75c448a8",
+      "guide_sections": [
+        "3. Application Development (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 12,
+      "objective_sha256": "ef6fcc541e04f4c901c3ace0aedf6ae646f8b203f085d4ec760c2f869c496efa",
+      "guide_sections": [
+        "3. Application Development (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 13,
+      "objective_sha256": "bf50a01a97a96796a55302e7b6e1d8f9514aebd25e9a10d4d67a7496af29702f",
+      "guide_sections": [
+        "3. Application Development (30%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "88cc9f954c4e67ff0f23fa5d35b1e923ac981bb587273a45e785fbef001e60c6",
+      "guide_sections": [
+        "4. Assembling and Deploying Applications (22%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "6be2f5d552a7f7fed43a1dafd1aa41e3e139179c5baba97db434e904db10413c",
+      "guide_sections": [
+        "4. Assembling and Deploying Applications (22%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "8523680b8c995140816b5779cef3f74b539ed4a34873b6010c18671d2c3d90e1",
+      "guide_sections": [
+        "4. Assembling and Deploying Applications (22%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "db3d5ae881c66b7e6d4b5415f209c81e480d6fb34aed0a08b2e09453e0cec50b",
+      "guide_sections": [
+        "4. Assembling and Deploying Applications (22%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "f27264cd8c50bb005051c57127869355bb67b75e3f78371328202f27bcc27be0",
+      "guide_sections": [
+        "4. Assembling and Deploying Applications (22%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "d144dac0c733ab72dac17115bd2c2a03e0b0efb3beda131cfd090d8812526bd2",
+      "guide_sections": [
+        "4. Assembling and Deploying Applications (22%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "7c56bc918ff6af8ccc8ddb3dd85dece220123d537bff7c26a8dde2948b6c409e",
+      "guide_sections": [
+        "4. Assembling and Deploying Applications (22%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "eba0feea5d1569dac21482b1cabdd38561d3108429330909ab741d13d61d412b",
+      "guide_sections": [
+        "4. Assembling and Deploying Applications (22%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "2eeab5f0bbc929bb3e00c16567a4471fa79f0d724530cd2eea5ee7d718d6b12a",
+      "guide_sections": [
+        "4. Assembling and Deploying Applications (22%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 10,
+      "objective_sha256": "877e27fd311c7ac10761fb915b9b836004dbee0dd3e9547d2abf0b58237104d8",
+      "guide_sections": [
+        "4. Assembling and Deploying Applications (22%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 11,
+      "objective_sha256": "ddb6baafa782759d3c52defc5c4bf04a5ec4c97fbabe5f99cb1ae5d752b3b110",
+      "guide_sections": [
+        "4. Assembling and Deploying Applications (22%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 12,
+      "objective_sha256": "a1b0cf8eddcafd94bfba8b8441adab75c617dfd73fbb155059b2aea161a61eb2",
+      "guide_sections": [
+        "4. Assembling and Deploying Applications (22%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 13,
+      "objective_sha256": "ebf4b8fccc0f6d81a94f8204c6fb7809eb51e19eb96911f35eb7e8f1060aa200",
+      "guide_sections": [
+        "4. Assembling and Deploying Applications (22%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 14,
+      "objective_sha256": "0d0de487bffd60ee5cc2ee3c874b675b71da3a8aaa88505aa824dc26ce55097b",
+      "guide_sections": [
+        "4. Assembling and Deploying Applications (22%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 15,
+      "objective_sha256": "0d8ec39fb1e0d16d359cd6fddbe0c9f028fd9d982540d81bb7ff0202d1534520",
+      "guide_sections": [
+        "4. Assembling and Deploying Applications (22%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "62c305c2e3c96b6460ce0d504b0422ae02f6b8aaef54b3469059306a86a17824",
+      "guide_sections": [
+        "5. Governance (8%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "725260873abf10bd347b88eff135dbceb73eb3515181afb4f8484582198866af",
+      "guide_sections": [
+        "5. Governance (8%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "0a1c39bef66569c6497ec6680190dbe6e448ed54aad0c353ebf64adc0c329faf",
+      "guide_sections": [
+        "5. Governance (8%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "501ca4231d0cf3867f76be64966d906f59108f8e91a1a63103401dd7136aed2e",
+      "guide_sections": [
+        "5. Governance (8%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "0de824bce422c731963bd91fe7ce2f4777e382d1c69f75e4416990318012904a",
+      "guide_sections": [
+        "6. Evaluation and Monitoring (12%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "1d895fbdc6cceed53070c7dc6cc8daca7b2147de160a2075433a92b878275355",
+      "guide_sections": [
+        "6. Evaluation and Monitoring (12%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "5aa34022a6b82fdf72dca79a45061e754f9f3fcee62b69c25d94a0d5059ab65f",
+      "guide_sections": [
+        "6. Evaluation and Monitoring (12%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "7db14592d2daf377018cbb86172121f41f3a075ab82635e13542b6fa394de796",
+      "guide_sections": [
+        "6. Evaluation and Monitoring (12%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "08c5a2e370e32c611946b24d82f14c657ba024a1e23d1bcc7e70770b784cdc88",
+      "guide_sections": [
+        "6. Evaluation and Monitoring (12%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "ebe1306d973fa55ef80a14a22dbca7df23adc76c1aa5b2b171ab90d2a67bc82c",
+      "guide_sections": [
+        "6. Evaluation and Monitoring (12%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "1f7d9123f40eef6f932d862b875fb5ab08b3a9c4f0a13323deb8299c1c8cf53c",
+      "guide_sections": [
+        "6. Evaluation and Monitoring (12%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 8,
+      "objective_sha256": "5b40281e51290b1d97ece91784acb44a6167b78fef3f50726090cb86aa2d05e3",
+      "guide_sections": [
+        "6. Evaluation and Monitoring (12%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 9,
+      "objective_sha256": "f4e457ea897f36a1452a588697caaf76ad2f8eb9eb9102c42c75499bfa804ef5",
+      "guide_sections": [
+        "6. Evaluation and Monitoring (12%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 10,
+      "objective_sha256": "0f021bba2003fb4344053844b6c85865dcfcd48284484445ff889698a228b59b",
+      "guide_sections": [
+        "6. Evaluation and Monitoring (12%)",
+        "Worked decisions and answered checks",
+        "Hands-on lab sequence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE",
+        "title": "Databricks Certified Generative AI Engineer Associate",
+        "url": "https://www.databricks.com/learn/certification/genai-engineer-associate",
+        "guide_path": "guides/DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE-databricks-generative-ai-engineer-associate.md",
+        "snapshot_path": "data\\objective-snapshots\\databricks-generative-ai-engineer-associate-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\databricks-generative-ai-engineer-associate-official-status.json",
+        "previous_sha256": "27994e2dbc5874f47708356b3ff39a38a9e98d835e9ddcb6cc7d6c9f322fc2ca",
+        "current_sha256": "a47e863fa23c1ae501d227ee36016714d90205d29a737e257cc8b63ca7d893dc",
+        "previous_status_sha256": null,
+        "current_status_sha256": "0ea5db55cd1c7463d6c1b1c273f66474f8bcaa0d1c1c72072050f833460ed748",
+        "official_status": {
+          "skills_versions": [
+            "Databricks Certified Generative AI Engineer Associate — public certification page",
+            "Type: Proctored certification",
+            "Total number of scored questions: 45",
+            "Time limit: 90 minutes",
+            "Question types: Multiple choice",
+            "Languages: English, 日本語, Português BR, 한국어",
+            "Delivery Method: Online or test center",
+            "Recommended experience: 6+ months of hands-on experience performing the generative AI solutions tasks outlined in the exam guide",
+            "Validity period: 2 years"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 16,
+    "reachable": 13,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "dp-750-databricks-youtube-channel",
+      "url": "https://www.youtube.com/@Databricks",
+      "checked_at": "2026-09-29T01:10:15.715694+00:00",
+      "health": {
+        "id": "dp-750-databricks-youtube-channel",
+        "url": "https://www.youtube.com/@Databricks",
+        "checked_at": "2026-09-29T01:10:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@Databricks",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Databricks",
+        "canonical_url": "https://www.youtube.com/channel/UC3q8O3Bh2Le8Rj1-Q-_UUbA",
+        "duration_signals": [],
+        "signal_fingerprint": "17f4cde1f56732213a2396da2e6df783f4f0ee10a774ee38679645ec7ff9927b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@Databricks",
+      "sha256": "6ba8f714732076d947139fcb97d925934df2a159e406109cdddde591a4bbf09b",
+      "text_characters": 173
+    },
+    {
+      "id": "databricks-dea-academy",
+      "url": "https://customer-academy.databricks.com/",
+      "checked_at": "2026-09-29T01:10:15.716203+00:00",
+      "health": {
+        "id": "databricks-dea-academy",
+        "url": "https://customer-academy.databricks.com/",
+        "checked_at": "2026-09-29T01:10:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://customer-academy.databricks.com/learn",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Loading",
+        "canonical_url": "https://customer-academy.databricks.com/learn",
+        "duration_signals": [],
+        "signal_fingerprint": "1dce398a1aa27fcf333c855d182c5c5ced7396d33bb07d51c89b8e50683ae480",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://customer-academy.databricks.com/learn",
+      "sha256": "14f89b57c71f6fff15e67ea2b452b2e5f796e19a3dd9c6c89a368c9d99df63d5",
+      "text_characters": 7
+    },
+    {
+      "id": "databricks-genai-blueprint",
+      "url": "https://www.databricks.com/learn/certification/genai-engineer-associate",
+      "checked_at": "2026-09-29T01:10:15.716693+00:00",
+      "health": {
+        "id": "databricks-genai-blueprint",
+        "url": "https://www.databricks.com/learn/certification/genai-engineer-associate",
+        "checked_at": "2026-09-29T01:10:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.databricks.com/learn/certification/genai-engineer-associate",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Databricks Certified Generative AI Engineer Associate | Databricks",
+        "canonical_url": "https://www.databricks.com/learn/certification/genai-engineer-associate",
+        "duration_signals": [
+          "90 minutes"
+        ],
+        "signal_fingerprint": "0beee7bc2190bae662ba1d73bf45fb9c8861319b1adf723b353b8e8d6e691043",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.databricks.com/learn/certification/genai-engineer-associate",
+      "sha256": "9cea43943a7b31479693bd6e9f5e063e7a934f4d6ee0eb21a7d0f3eddeaf3268",
+      "text_characters": 3126
+    },
+    {
+      "id": "databricks-genai-exam-guide-mar-2026",
+      "url": "https://www.databricks.com/sites/default/files/2026-03/Databricks-Certified-Generative-AI-Engineer-Associate-Exam-Guide-Mar26.pdf",
+      "checked_at": "2026-09-29T01:10:16.563574+00:00",
+      "health": {
+        "id": "databricks-genai-exam-guide-mar-2026",
+        "url": "https://www.databricks.com/sites/default/files/2026-03/Databricks-Certified-Generative-AI-Engineer-Associate-Exam-Guide-Mar26.pdf",
+        "checked_at": "2026-09-29T01:10:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.databricks.com/sites/default/files/2026-03/Databricks-Certified-Generative-AI-Engineer-Associate-Exam-Guide-Mar26.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.databricks.com/sites/default/files/2026-03/Databricks-Certified-Generative-AI-Engineer-Associate-Exam-Guide-Mar26.pdf",
+      "sha256": "fe69747ba5c7ed260984b7e43f25e0f282c7341167e74f46177ec1e8ab3556c5",
+      "text_characters": 4856,
+      "representation_note": "Original response is a PDF. Separately decoded with pypdf; objective section reviewed before the sample-question section, vendor samples not reproduced. HTML visible-text extraction is not used as objective evidence."
+    },
+    {
+      "id": "databricks-genai-agents",
+      "url": "https://docs.databricks.com/aws/en/agents/",
+      "checked_at": "2026-09-29T01:10:16.703995+00:00",
+      "health": {
+        "id": "databricks-genai-agents",
+        "url": "https://docs.databricks.com/aws/en/agents/",
+        "checked_at": "2026-09-29T01:10:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/agents/",
+        "content_type": "text/html",
+        "page_title": "Build agents on Databricks | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/agents/",
+        "duration_signals": [],
+        "signal_fingerprint": "d926375bb76bd0468e6c87039d0f995224b2a6b8f2bb8228d16b9cad9e2aeaec",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/agents/",
+      "sha256": "022c46bc315cdccd94c5e04636cc4bc0ecfaf317ade2e30cdd297210163343ec",
+      "text_characters": 2268
+    },
+    {
+      "id": "databricks-genai-capabilities",
+      "url": "https://docs.databricks.com/aws/en/generative-ai/guide/gen-ai-capabilities",
+      "checked_at": "2026-09-29T01:10:16.930559+00:00",
+      "health": {
+        "id": "databricks-genai-capabilities",
+        "url": "https://docs.databricks.com/aws/en/generative-ai/guide/gen-ai-capabilities",
+        "checked_at": "2026-09-29T01:10:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/agents/gen-ai-capabilities",
+        "content_type": "text/html",
+        "page_title": "Databricks AI capabilities | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/agents/gen-ai-capabilities",
+        "duration_signals": [],
+        "signal_fingerprint": "cc58cda7c29f28eef4369e6a896bb8be53d5872f9e5571c7b6f1100b26122ce0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/agents/gen-ai-capabilities",
+      "sha256": "781839f5a79566986b39608032b3a624e1292ff74078806bac6dfc1a60758dff",
+      "text_characters": 10751
+    },
+    {
+      "id": "databricks-genai-ai-functions",
+      "url": "https://docs.databricks.com/aws/en/large-language-models/ai-functions",
+      "checked_at": "2026-09-29T01:10:17.003985+00:00",
+      "health": {
+        "id": "databricks-genai-ai-functions",
+        "url": "https://docs.databricks.com/aws/en/large-language-models/ai-functions",
+        "checked_at": "2026-09-29T01:10:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/large-language-models/ai-functions",
+        "content_type": "text/html",
+        "page_title": "Transform unstructured data using AI Functions | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/large-language-models/ai-functions",
+        "duration_signals": [],
+        "signal_fingerprint": "dd856fe890c1b1983a1b4a7e63403cb744390d881a3674699b37efebde3b90b6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/large-language-models/ai-functions",
+      "sha256": "df3c5285f99c66e48ad97065033b5881bd515c31b94a1580957b227acf3d513c",
+      "text_characters": 13364
+    },
+    {
+      "id": "databricks-genai-mcp-services",
+      "url": "https://docs.databricks.com/aws/en/generative-ai/agent-framework/external-connection-tools",
+      "checked_at": "2026-09-29T01:10:17.094609+00:00",
+      "health": {
+        "id": "databricks-genai-mcp-services",
+        "url": "https://docs.databricks.com/aws/en/generative-ai/agent-framework/external-connection-tools",
+        "checked_at": "2026-09-29T01:10:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/agents/mcp-tools",
+        "content_type": "text/html",
+        "page_title": "MCPs and agent tools | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/agents/mcp-tools/",
+        "duration_signals": [],
+        "signal_fingerprint": "bc7dd5c645bceac78ebd04e12ff83eb10153868215be4a179665a41752f439ee",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/agents/mcp-tools",
+      "sha256": "ff2b35a049dc1b988381846f8342cc63d3412510b335bde640252644a9d74fc8",
+      "text_characters": 2739
+    },
+    {
+      "id": "databricks-genai-evaluation",
+      "url": "https://docs.databricks.com/aws/en/mlflow3/genai/eval-monitor",
+      "checked_at": "2026-09-29T01:10:17.384378+00:00",
+      "health": {
+        "id": "databricks-genai-evaluation",
+        "url": "https://docs.databricks.com/aws/en/mlflow3/genai/eval-monitor",
+        "checked_at": "2026-09-29T01:10:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/mlflow3/genai/eval-monitor",
+        "content_type": "text/html",
+        "page_title": "Evaluate and improve | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/mlflow3/genai/eval-monitor/",
+        "duration_signals": [],
+        "signal_fingerprint": "4fa00cfa81d814b5c06b68968be066d3d893d04e4ecfc7ac7fc918f6b5e20f46",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/mlflow3/genai/eval-monitor",
+      "sha256": "0b2e93296d3138a34d16963de229b1bc689e120d0eaafd8396695e851843152b",
+      "text_characters": 1987
+    },
+    {
+      "id": "databricks-genai-linkedin",
+      "url": "https://www.linkedin.com/learning/learn-databricks-genai",
+      "checked_at": "2026-09-29T01:10:17.414062+00:00",
+      "health": {
+        "id": "databricks-genai-linkedin",
+        "url": "https://www.linkedin.com/learning/learn-databricks-genai",
+        "checked_at": "2026-09-29T01:10:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.linkedin.com/learning/learn-databricks-genai",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Learn Databricks GenAI Online Class | LinkedIn Learning, formerly Lynda.com",
+        "canonical_url": "https://www.linkedin.com/learning/learn-databricks-genai",
+        "duration_signals": [
+          "PT1H11M10S",
+          "PT1M14S",
+          "PT23S",
+          "PT2M26S",
+          "PT2M28S",
+          "PT2M34S",
+          "PT2M36S",
+          "PT2M43S",
+          "PT2M49S",
+          "PT2M4S",
+          "PT3M22S",
+          "PT3M44S",
+          "PT3M49S",
+          "PT3M50S",
+          "PT3M7S",
+          "PT4M4S",
+          "PT4M9S",
+          "PT5M47S",
+          "PT5M51S",
+          "PT6M37S",
+          "PT6M3S"
+        ],
+        "signal_fingerprint": "cbc74bae15a582af54e43c1f883a481027268736f8ecdad8e6bcd335023f47d4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.linkedin.com/learning/learn-databricks-genai",
+      "sha256": "511e0590b6cda0a75f92e2e11ce22ee5ce3df8d018af2d338c7496e329237096",
+      "text_characters": 3340
+    },
+    {
+      "id": "databricks-genai-udemy-auffret",
+      "url": "https://www.udemy.com/course/databricks-certified-generative-ai-engineer-associate-lessons/",
+      "checked_at": "2026-09-29T01:10:17.608590+00:00",
+      "health": {
+        "id": "databricks-genai-udemy-auffret",
+        "url": "https://www.udemy.com/course/databricks-certified-generative-ai-engineer-associate-lessons/",
+        "checked_at": "2026-09-29T01:10:17+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/databricks-certified-generative-ai-engineer-associate-lessons/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "databricks-genai-udemy-derar",
+      "url": "https://www.udemy.com/course/databricks-certified-genai-engineer-associate/",
+      "checked_at": "2026-09-29T01:10:17.654008+00:00",
+      "health": {
+        "id": "databricks-genai-udemy-derar",
+        "url": "https://www.udemy.com/course/databricks-certified-genai-engineer-associate/",
+        "checked_at": "2026-09-29T01:10:17+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/databricks-certified-genai-engineer-associate/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "databricks-genai-oreilly-search",
+      "url": "https://www.oreilly.com/search/?q=Databricks%20generative%20AI",
+      "checked_at": "2026-09-29T01:10:17.709015+00:00",
+      "health": {
+        "id": "databricks-genai-oreilly-search",
+        "url": "https://www.oreilly.com/search/?q=Databricks%20generative%20AI",
+        "checked_at": "2026-09-29T01:10:17+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/search/?q=Databricks%20generative%20AI",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "databricks-genai-ai-search-limits",
+      "url": "https://docs.databricks.com/aws/en/ai-search/ai-search",
+      "checked_at": "2026-09-29T01:15:18.449213+00:00",
+      "health": {
+        "id": "databricks-genai-ai-search-limits",
+        "url": "https://docs.databricks.com/aws/en/ai-search/ai-search",
+        "checked_at": "2026-09-29T01:15:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/ai-search/ai-search",
+        "content_type": "text/html",
+        "page_title": "Databricks AI Search | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/ai-search/ai-search",
+        "duration_signals": [
+          "8 hours"
+        ],
+        "signal_fingerprint": "c637bb9189bc9ddd715ce8a04225f96f77022746681aea92a33aa3628f85bf1c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/ai-search/ai-search",
+      "sha256": "0eac960a9a5de02315e4db568632e6b68d2455d2a32b2b9d0ccfac2e9d501112",
+      "text_characters": 17293
+    },
+    {
+      "id": "databricks-genai-app-auth",
+      "url": "https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth",
+      "checked_at": "2026-09-29T01:15:18.449739+00:00",
+      "health": {
+        "id": "databricks-genai-app-auth",
+        "url": "https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth",
+        "checked_at": "2026-09-29T01:15:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth",
+        "content_type": "text/html",
+        "page_title": "Configure authorization in a Databricks app | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth",
+        "duration_signals": [],
+        "signal_fingerprint": "746715a20fb39c1161125f9ddc1318ee952579d8b6ef88dc377ea3eeb1e87486",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth",
+      "sha256": "0fc19fa8cb5be9db93172891d3e0ddf59a0e2dea2acc19ad67983dae07cf896e",
+      "text_characters": 19536
+    },
+    {
+      "id": "databricks-genai-code-scorers",
+      "url": "https://docs.databricks.com/aws/en/mlflow3/genai/eval-monitor/custom-scorer-reference",
+      "checked_at": "2026-09-29T01:15:18.450042+00:00",
+      "health": {
+        "id": "databricks-genai-code-scorers",
+        "url": "https://docs.databricks.com/aws/en/mlflow3/genai/eval-monitor/custom-scorer-reference",
+        "checked_at": "2026-09-29T01:15:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/mlflow3/genai/eval-monitor/custom-scorer-reference",
+        "content_type": "text/html",
+        "page_title": "Code-based scorer reference | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/mlflow3/genai/eval-monitor/custom-scorer-reference",
+        "duration_signals": [],
+        "signal_fingerprint": "812e81ec6b4494d43c23dc7326692e0caabe9b41315615e717d04c4439e29d11",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/mlflow3/genai/eval-monitor/custom-scorer-reference",
+      "sha256": "d6f65a9ebeb2940638e64ac04a2c2bdeecd80b64b5fbdcacbc31f44111b2b253",
+      "text_characters": 11325
+    },
+    {
+      "id": "databricks-genai-code-chunking-blog",
+      "url": "https://www.databricks.com/blog/building-knowledge-assistant-over-code",
+      "checked_at": "2026-09-29T01:15:18.833939+00:00",
+      "health": {
+        "id": "databricks-genai-code-chunking-blog",
+        "url": "https://www.databricks.com/blog/building-knowledge-assistant-over-code",
+        "checked_at": "2026-09-29T01:15:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.databricks.com/blog/building-knowledge-assistant-over-code",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Building a knowledge assistant over code",
+        "canonical_url": "https://www.databricks.com/blog/building-knowledge-assistant-over-code",
+        "duration_signals": [],
+        "signal_fingerprint": "0c4d3da7ddd49e92533528b5955c2176f49c248e30cd3b1dd38ac88651980630",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.databricks.com/blog/building-knowledge-assistant-over-code",
+      "sha256": "fad6876133cbda1259463c4bf97f9cdef060f58560b42f78ac715db6fcf17511",
+      "text_characters": 22111
+    }
+  ],
+  "added_source_ids": [
+    "databricks-genai-ai-search-limits",
+    "databricks-genai-app-auth",
+    "databricks-genai-code-scorers",
+    "databricks-genai-code-chunking-blog"
+  ],
+  "findings": [
+    {
+      "id": "databricksgenerativeaiengineerassociate-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "AI Search permissions were too broadly described",
+      "url": "https://docs.databricks.com/aws/en/ai-search/ai-search",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "AI Search explicitly lacks row/column permissions despite source-table governance.",
+      "recommendation": "Explain trusted application filtering or scoped indexes, bypass prevention, and per-hop checks.",
+      "disposition": "applied",
+      "source_id": "databricks-genai-ai-search-limits",
+      "resolution": "Explain trusted application filtering or scoped indexes, bypass prevention, and per-hop checks."
+    },
+    {
+      "id": "databricksgenerativeaiengineerassociate-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "UI authentication did not prove user-delegated resource access",
+      "url": "https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "An App service principal has shared grants; user authorization requires supported scopes and use of delegated identity.",
+      "recommendation": "Add explicit identity example and distinguish delegated SQL policies from AI Search limits.",
+      "disposition": "applied",
+      "source_id": "databricks-genai-app-auth",
+      "resolution": "Add explicit identity example and distinguish delegated SQL policies from AI Search limits."
+    },
+    {
+      "id": "databricksgenerativeaiengineerassociate-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Completed evaluation did not imply complete scoring",
+      "url": "https://docs.databricks.com/aws/en/mlflow3/genai/eval-monitor/custom-scorer-reference",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current scorer reference permits continuing after exceptions. Local MLflow confirmed mean 1.0 with one error among three rows.",
+      "recommendation": "Require attempted/scored/error coverage and an incomplete release gate; explain offline expectations and subclass limits.",
+      "disposition": "applied",
+      "source_id": "databricks-genai-code-scorers",
+      "resolution": "Require attempted/scored/error coverage and an incomplete release gate; explain offline expectations and subclass limits."
+    },
+    {
+      "id": "databricksgenerativeaiengineerassociate-deep-4",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Retrieval and PyFunc objectives lacked executable worked examples",
+      "url": "https://www.databricks.com/sites/default/files/2026-03/Databricks-Certified-Generative-AI-Engineer-Associate-Exam-Guide-Mar26.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Recall and hit rate were paired without a denominator example; PyFunc chain coding was only described.",
+      "recommendation": "Add two original executable examples, four decision cases and twelve answered checks.",
+      "disposition": "applied",
+      "source_id": "databricks-genai-exam-guide-mar-2026",
+      "resolution": "Add two original executable examples, four decision cases and twelve answered checks."
+    },
+    {
+      "id": "databricksgenerativeaiengineerassociate-deep-5",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Raw monitor change needed semantic interpretation",
+      "url": "https://www.databricks.com/learn/certification/genai-engineer-associate",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Domain snapshot changed hyphens to en-dashes and previous status snapshot is absent. Normalized six-domain text is equal.",
+      "recommendation": "Record observed status and formatting difference without claiming a new blueprint or silently changing accepted snapshots.",
+      "disposition": "applied",
+      "source_id": "databricks-genai-blueprint",
+      "resolution": "Record observed status and formatting difference without claiming a new blueprint or silently changing accepted snapshots."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "databricks-genai-code-chunking-blog",
+      "authors": [
+        "Daniel Liden"
+      ],
+      "published_on": "2026-03-23",
+      "disposition": "accepted-with-limits",
+      "value": "Controlled code-corpus chunking comparisons and trace-level answer completeness; disambiguation metadata matters.",
+      "limits": "Workload-specific findings; varying actual chunk sizes and judge model are confounders, not universal splitter performance."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "service_labs_executed": 0,
+    "reasoning_cases": 4,
+    "local_validation": {
+      "assertions": 27,
+      "python_blocks_executed": 2,
+      "mlflow_version": "3.16.1",
+      "pandas_version": "3.0.6",
+      "local_path": ".maintenance\\deep-databricks-generative-ai-engineer-associate-2026-09-28\\local-mlflow-5d713998",
+      "evaluation_run_id": "b9c6b871adad4128a945da03cb4bf24a",
+      "metrics": {
+        "mandatory_check/mean": 1.0
+      },
+      "scored_rows": 2,
+      "scorer_error_rows": 1,
+      "coverage": 0.6666666666666666,
+      "gate": "incomplete",
+      "execution_boundary": "Local Python/PyFunc and real MLflow code-based evaluation with fixed precomputed outputs. No LLM, embeddings, AI Search, Databricks App, cloud endpoint or workspace lab executed; no remote tracking server or network listener started."
+    }
+  },
+  "answered_checks": 12,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Twenty-seven local assertions and real MLflow evaluation used fixed outputs; no LLM calls, embeddings, AI Search, Databricks Apps, cloud deployment or signed-in Academy labs.",
+    "Same-environment PyFunc reload is not a clean dependency-environment deployment test.",
+    "Udemy and OReilly blocked automated access; prior paid-course dates/totals not reverified.",
+    "Monitor reports a raw hash change from dash typography plus initial status capture; accepted objective/status snapshots were not overwritten. Detailed PDF objectives were read separately."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local Python/PyFunc and real MLflow code-based evaluation with fixed precomputed outputs. No LLM, embeddings, AI Search, Databricks App, cloud endpoint or workspace lab executed; no remote tracking server or network listener started.",
+    "learning_catalog_consistency": "passed",
+    "assertions": 27,
+    "python_blocks_executed": 2,
+    "mlflow_version": "3.16.1",
+    "pandas_version": "3.0.6",
+    "local_path": ".maintenance\\deep-databricks-generative-ai-engineer-associate-2026-09-28\\local-mlflow-5d713998",
+    "evaluation_run_id": "b9c6b871adad4128a945da03cb4bf24a",
+    "metrics": {
+      "mandatory_check/mean": 1.0
+    },
+    "scored_rows": 2,
+    "scorer_error_rows": 1,
+    "coverage": 0.6666666666666666,
+    "gate": "incomplete"
+  },
+  "detailed_objective_pdf": {
+    "url": "https://www.databricks.com/sites/default/files/2026-03/Databricks-Certified-Generative-AI-Engineer-Associate-Exam-Guide-Mar26.pdf",
+    "sha256": "fe69747ba5c7ed260984b7e43f25e0f282c7341167e74f46177ec1e8ab3556c5",
+    "pages": 9,
+    "samples_reproduced": false
+  }
+}

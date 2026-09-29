@@ -6,18 +6,18 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-28
 ---
 
 # Databricks Certified Generative AI Engineer Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-generative-ai-engineer-associate-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/genai-engineer-associate) and its linked exam guide are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-generative-ai-engineer-associate-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/genai-engineer-associate) and its linked exam guide are authoritative.
 
 **Library identifier:** `DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE`; Databricks does not publish a short exam code on the official page checked.<br>
-**Current baseline:** Detailed official guide for the live version as of March 18, 2026; live six-domain weighted page checked September 1, 2026.<br>
-**Upcoming blueprint change:** None announced as of September 1, 2026. This blueprint already reflects the March 18, 2026 revision, but agent, MCP, evaluation, serving, AI Gateway, Agent Bricks, AI Search/Vector Search, and Apps interfaces are changing quickly. Verify current names and release stages before implementation.<br>
+**Current baseline:** Detailed official guide for the live version as of March 18, 2026; live six-domain weighted page checked September 28, 2026.<br>
+**Upcoming blueprint change:** None announced as of September 28, 2026. This blueprint already reflects the March 18, 2026 revision, but agent, MCP, evaluation, serving, AI Gateway, Agent Bricks, AI Search/Vector Search, and Apps interfaces are changing quickly. Verify current names and release stages before implementation.<br>
 **Lifecycle status:** Active; valid for two years, with the currently live exam required for recertification.<br>
 **Assessment:** 45 scored multiple-choice questions, 90 minutes, USD 200, English/Japanese/Brazilian Portuguese/Korean, online or test-center delivery. The March PDF describes multiple-choice or multiple-selection and online proctoring; the live page controls current public delivery metadata.<br>
 **Prerequisite:** None required. The official guide recommends related training and six months of hands-on experience. Working Python, SQL, LLM/prompt basics, retrieval, APIs, testing, identity, Unity Catalog, MLflow, serving, and application operations are practical prerequisites.
@@ -101,9 +101,35 @@ Choose an embedding model based on language/domain fit, context length, dimensio
 
 Create an AI Search index—called Mosaic AI Vector Search in the published exam guide—from a governed source, with correct primary key, embedding source, update mode, endpoint/index capacity, and permissions. Test filters and synchronization/freshness. Direct-vector indexes give the application more control over embeddings; Delta Sync patterns reduce pipeline ownership. Verify the current [generative AI platform capabilities](https://docs.databricks.com/aws/en/generative-ai/guide/gen-ai-capabilities) because naming and index options are volatile.
 
-Build a labeled query set including direct facts, paraphrases, ambiguous queries, filters, rare entities, multi-hop needs, no-answer cases, and adversarial/noisy content. Measure recall@k/hit rate, precision, ranking quality such as MRR or NDCG where appropriate, latency, freshness, and downstream answer groundedness. Inspect failures by source, chunk type, language, query class, and permission boundary.
+Build a labeled query set including direct facts, paraphrases, ambiguous queries, filters, rare entities, multi-hop needs, no-answer cases, and adversarial/noisy content. Measure recall@k and hit rate separately, precision, ranking quality such as MRR or NDCG where appropriate, latency, freshness, and downstream answer groundedness. Inspect failures by source, chunk type, language, query class, and permission boundary.
 
 Hybrid lexical/vector retrieval helps exact identifiers and semantic paraphrases. Reranking spends additional latency/cost to reorder candidates with a stronger relevance signal. Use it when first-stage recall is acceptable but ordering is weak; it cannot retrieve a missing candidate. Tune chunking, metadata filters, query rewriting, k, hybrid settings, and reranking with the same evaluation set.
+
+### Measure retrieval without hiding missing evidence
+
+For a query with four relevant chunks, finding one within the first three ranks gives recall@3 = 1/4, precision@3 = 1/3 and hit@3 = 1. Hit rate averages that binary hit indicator over queries; it does not measure how much required evidence each answer has. Fix the evaluation unit (chunk or document), relevance labels, cutoff and averaging rule before comparing systems. For multi-hop questions, a single hit can leave essential evidence missing.
+
+This original local calculation uses unique chunk IDs and divides precision by the requested k, treating unused result slots as misses. Recall is undefined when the gold relevant set is empty; evaluate those no-answer cases with a separate abstention measure.
+
+```python
+def retrieval_at_k(ranked_ids, relevant_ids, k):
+    if type(k) is not int or k < 1:
+        raise ValueError("k must be a positive integer")
+    if len(ranked_ids) != len(set(ranked_ids)):
+        raise ValueError("ranked chunk IDs must be unique")
+    relevant = set(relevant_ids)
+    hits = len(set(ranked_ids[:k]) & relevant)
+    return {
+        "recall": hits / len(relevant) if relevant else None,
+        "precision": hits / k,
+        "hit": int(hits > 0),
+    }
+
+observed = retrieval_at_k(["a", "x", "y"], {"a", "b", "c", "d"}, 3)
+assert observed == {"recall": 0.25, "precision": 1 / 3, "hit": 1}
+```
+
+For a code corpus, preserve file/class/function context and compare structural chunks with a fixed-size baseline. The March 23 [knowledge-assistant experiment](https://www.databricks.com/blog/building-knowledge-assistant-over-code) offers a useful method: trace retrieved evidence and compare answer completeness as well as retrieval. Its authors identify chunk-size and judge-model confounders; their result does not establish a universal best splitter. Use separate candidate indexes with the same corpus version and query set, and respect embedding limits even when a whole function is long.
 
 > **Related item:** Retrieval evaluation separates “the right evidence was not retrieved” from “the model ignored or misused good evidence.” Treating both as prompt failures wastes effort.
 
@@ -161,6 +187,40 @@ A simple chain still needs deterministic input parsing, prompt construction, mod
 
 Register the governed artifact/version in Unity Catalog and use a controlled alias or deployment reference. Test loading in a clean environment, missing/extra inputs, timeouts, partial tool/retrieval failures, hostile content, concurrency, and permissions. Registration proves lineage and discoverability; it does not prove the application is safe or high quality.
 
+### Exercise a PyFunc chain contract locally
+
+The blueprint explicitly includes coding a chain through PyFunc. This small deterministic fixture demonstrates input normalization, a fixed lookup, structured output and no-evidence handling. It does **not** call an LLM, implement semantic retrieval, authorization or production tracing. Replace the lookup with a governed retriever and generation call only after separately testing those dependencies. The rule is invented practice content.
+
+```python
+import json
+import pandas as pd
+import mlflow.pyfunc
+
+class PolicyFixture(mlflow.pyfunc.PythonModel):
+    def predict(self, context, model_input, params=None):
+        if list(model_input.columns) != ["question"]:
+            raise ValueError("expected only the question column")
+        answers = []
+        for question in model_input["question"]:
+            if not isinstance(question, str) or not question.strip():
+                raise ValueError("question must be nonempty text")
+            known = question.strip().casefold() == "refund window"
+            answer = {
+                "answer": "Example policy: 14 days." if known else None,
+                "citations": ["fixture-policy-v1"] if known else [],
+                "abstained": not known,
+            }
+            answers.append(json.dumps(answer))
+        return pd.DataFrame({"response": answers})
+
+example = pd.DataFrame({"question": [" REFUND WINDOW ", "uncovered topic"]})
+result = PolicyFixture().predict(None, example)
+assert json.loads(result.iloc[0]["response"])["citations"] == ["fixture-policy-v1"]
+assert json.loads(result.iloc[1]["response"])["abstained"] is True
+```
+
+In a disposable local directory, save with `mlflow.pyfunc.save_model`, including `input_example` and `signature=mlflow.models.infer_signature(example, result)`, then reload with `mlflow.pyfunc.load_model` and compare results. Exercise missing columns, null/blank input and unknown requests. A signature captures schema; it does not establish groundedness or protect data. Repeat loading with a clean dependency environment before deployment. Unity Catalog registration and serving remain separate workspace labs.
+
 ### Assemble RAG, AI Search, and inference paths
 
 A RAG application needs source/chunk tables, embedding model, index and endpoint, retriever configuration, generation model/API, prompt, dependency environment, schemas, evaluation set, and identity. Create/query the index with an authenticated principal that has only required source/index privileges; test update lag, deleted records, filters, empty results, dimension/schema compatibility, and capacity.
@@ -168,6 +228,10 @@ A RAG application needs source/chunk tables, embedding model, index and endpoint
 Use Foundation Model APIs or supported serving for interactive calls. Use SQL `ai_query()` or a batch inference pattern when rows can be processed asynchronously and SQL/data-pipeline integration is useful. Do not turn a batch workload into millions of sequential REST calls. Verify current availability, supported models and return schema before relying on [AI Functions](https://docs.databricks.com/aws/en/large-language-models/ai-functions).
 
 Select standard versus storage-optimized/current AI Search options from corpus scale, write/update frequency, latency/throughput, cost, hybrid/rerank needs, and feature availability. Benchmark with production-like volume and queries; vendor limits and names can change.
+
+**VERIFY CURRENT — access and synchronization:** the [AI Search reference](https://docs.databricks.com/aws/en/ai-search/ai-search) explicitly excludes row and column permissions. A source-table row filter or mask must not be assumed to protect the index. Use appropriately scoped indexes or enforce trusted application access filters before evidence reaches generation; prevent callers from bypassing that boundary with direct index access. Test denied users, forged tenant filters, policy changes and stale indexed documents. Filtering selected by the user's prompt is not authorization.
+
+Storage-optimized endpoints currently lack continuous synchronization and require embedding dimensions divisible by 16. Reconcile the actual refresh mode with the freshness target; a source update alone is not proof that a query sees it. Record completion and visibility of the index update before switching a release.
 
 ### Treat memory and persistent state as governed data
 
@@ -188,6 +252,8 @@ Evaluate server trust, authentication, credential storage/rotation, exposed tool
 ### Choose a secure user-facing interface
 
 Databricks Apps can host an authenticated chat or workflow UI and a backend that calls agents/models/tools without exposing long-lived tokens in the browser. Separate user identity from app/service identity and deliberately propagate/enforce user permissions where per-user results require them. For Slack, Teams, or another channel, validate identity mapping, tenant/install scope, message/data retention, secret management, interaction timeouts, links/citations, approvals, and safe error messages.
+
+In [Apps authorization](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth), the app's service principal grants a shared resource identity. Signing in to the UI does not automatically turn its backend calls into the user's calls. Configure scoped user authorization for supported operations that must respect each user's permissions, then test two users with different access. A user-delegated SQL query can enforce table policies; it does not add row-level permissions to an AI Search index that lacks that feature. Document each hop's actual principal.
 
 > **Related item:** Authentication answers “who is calling”; authorization answers “what may they access/do”; delegation answers “on whose behalf.” GenAI applications frequently need all three.
 
@@ -220,6 +286,12 @@ Create representative evaluation records with request, context/identity class, e
 Some judges require ground truth/reference answers; others assess criteria such as relevance or guideline adherence without one. Validate automated judges against calibrated human ratings, track judge/model/prompt version, and use custom scorers for business rules. LLM judges are measurement instruments with bias and variance, not unquestionable ground truth.
 
 Use MLflow tracing to inspect the trajectory and [agent evaluation and monitoring](https://docs.databricks.com/aws/en/mlflow3/genai/eval-monitor) to reuse scorers from development in production where appropriate. Compare candidates on confidence intervals or sufficient sample sizes, regression sets, risk thresholds, latency, and cost—not a single average score.
+
+### Treat scoring failures as missing measurements
+
+The current [code-based scorer reference](https://docs.databricks.com/aws/en/mlflow3/genai/eval-monitor/custom-scorer-reference) permits an evaluation to continue when an individual scorer throws: the affected feedback carries an error and no value. A completed run and a high average therefore do not prove that all required records were scored. Record attempted, scored, failed and skipped counts per scorer and scenario. Keep an incomplete gate distinct from a measured fail or pass; investigate failing rows before promotion.
+
+For example, 18 passing judgments plus two errors yields 100% among scored rows but only 90% scoring coverage. A release rule requiring all 20 mandatory cases has not passed. Do not replace errors with successful values or silently remove hard cases from the denominator. Production scorers obtain inputs/outputs from traces and do not receive offline `expectations`; a reference-dependent scorer cannot be reused unchanged without the needed evidence. Current `Scorer` subclasses are limited to offline evaluation; check the supported decorated-scorer path for monitoring.
 
 ### Monitor production quality, operations, safety, and cost
 
@@ -260,13 +332,37 @@ The agent retrieves product facts, queries account/order data, and can create a 
 
 A supervisor routes policy questions to retrieval, governed metrics to a Genie specialist, and incident summaries to a generation specialist. Define each specialist's scope and permissions, pass only necessary context, reject unsupported cross-tenant requests, and provide sources. Evaluate route selection, structured/unstructured evidence synthesis, partial failure, latency/cost, and final groundedness; use calibrated analysts' feedback to refine routing and rubrics.
 
+## Worked decisions and answered checks
+
+These original exercises explain operational choices; they are not vendor exam questions.
+
+| Evidence | Decision |
+|---|---|
+| Every query retrieves one of four required chunks | Hit rate can be 100% while recall is 25%; measure completeness and add missing candidates before tuning generation. |
+| A signed-in App uses a broadly privileged service principal to query an index | Review backend identity, trusted filtering and direct-index access; UI login and source row policies do not establish per-user retrieval permission. |
+| A model answer scores well on 18 rows while two scorer calls fail | Report 90% coverage and an incomplete release gate; investigate errors and rerun the affected checks. |
+| A new prompt uses a new embedding model but still queries the old index | Re-embed into a compatible candidate index, validate it, and promote the compatible component set with rollback. |
+
+1. **Why distinguish recall from a hit?** A hit proves at least one labeled item was found; recall measures the fraction of all labeled relevant items found.
+2. **Can reranking recover a missing document?** Not from a candidate set that lacks it. Repair first-stage retrieval or source/index coverage.
+3. **What does an empty relevance set mean for recall?** The denominator is zero. Use an explicit undefined value and separately measure correct abstention.
+4. **Why reject repeated chunk IDs in the fixture?** Duplicates can distort rankings and counts; define and enforce the retrieval unit before measuring.
+5. **Does a source-table mask automatically protect AI Search?** No. Verify the index's supported controls and enforce access before retrieval results reach the model.
+6. **Does App login imply user-delegated backend access?** No. Inspect the authorization mode, scopes and principal used for each call.
+7. **Does a PyFunc signature prove an answer is grounded?** No. It describes schema; evidence and behavior need separate evaluation.
+8. **Why abstain in the fixture's unknown branch?** It has no supporting evidence. A production abstention policy needs task-specific evaluation, not fabricated certainty.
+9. **Can an evaluation complete with scorer errors?** Yes. Inspect row errors and required scoring coverage before interpreting an average.
+10. **Can a label-dependent offline scorer always run on live traces?** No. Production expectations are unavailable by default; use an appropriate supported scorer or obtain feedback separately.
+11. **Is storage-optimized continuous synchronization available in the checked reference?** No. Match supported synchronization and observed index lag to the application's freshness requirement.
+12. **What should a chunking experiment hold stable?** Corpus, queries, labels/rubric, models and index settings where possible; record size and judge differences that remain.
+
 ## Hands-on lab sequence
 
 1. **Requirement and prompt contract:** Turn one business request into input/output schemas, task/model constraints, tool plan, prompt versions, refusal rules, and a 20-case baseline.
 2. **Document pipeline:** Extract digital and scanned documents, clean boilerplate, preserve lineage, compare fixed/semantic/parent-child chunks, and prove delete/reprocess behavior.
-3. **Retrieval experiment:** Create an AI Search/Vector Search index; evaluate filters, hybrid/vector retrieval, k, chunking and reranking with hit/precision/ranking/latency evidence.
+3. **Retrieval experiment:** Create an AI Search/Vector Search index; evaluate filters, hybrid/vector retrieval, k, chunking and reranking with separate hit/recall/precision/ranking/latency evidence and denied-access cases.
 4. **Agent and guardrails:** Build a traced RAG/tool agent with bounded steps, least-privilege read/action tools, schema validation, injection tests, approval, fallback, and cost limits.
-5. **MLflow evaluation:** Create a versioned dataset, built-in/custom scorers and SME rubric; compare two prompt/model/retriever candidates and inspect failing traces.
+5. **MLflow evaluation:** Create a versioned dataset, built-in/custom scorers and SME rubric; compare two prompt/model/retriever candidates and inspect failing traces; inject a scorer failure and require explicit coverage in the release gate.
 6. **Lifecycle and MCP:** Version/promote a prompt, connect one managed or external MCP server under restricted tools/credentials, and test timeout, denial, audit, and rollback.
 7. **Secure application:** Deploy an authenticated Databricks App or supported agent endpoint; test user/app identity, access, invalid input, concurrency, persistence, and token exposure.
 8. **Production loop:** Configure trace/inference/usage monitoring and alerts across quality, safety, latency, errors and cost; collect feedback, create a regression case, stage a fix, and roll it back.
@@ -321,7 +417,7 @@ A supervisor routes policy questions to retrieval, governed metrics to a Genie s
 
 ## Places to learn
 
-This is **not a complete list**, and it is not meant to be consumed in full. Pick the resources that match your gaps and learning style; prioritize building and evaluating a working agent over passively watching every course. Durations are vendor totals where publicly visible or planning estimates checked September 1, 2026 and may change.
+This is **not a complete list**, and it is not meant to be consumed in full. Pick the resources that match your gaps and learning style; prioritize building and evaluating a working agent over passively watching every course. Public metadata was checked September 28, 2026. LinkedIn exposes a 1-hour-11-minute total; Academy lessons require sign-in. Udemy and O'Reilly pages blocked automated access, so older course dates/totals below were not reverified. Other durations are planning estimates, not vendor guarantees.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -331,8 +427,9 @@ This is **not a complete list**, and it is not meant to be consumed in full. Pic
 | Databricks workspace plus this guide's eight labs | Organizational; portions may work in Free Edition | 30–50 hours including failure, authorization, evaluation, monitoring and rollback experiments |
 | [Databricks YouTube](https://www.youtube.com/@Databricks) | Free | 4–8 hours selected recent agent, MLflow, AI Search, Apps and governance sessions |
 | [LinkedIn Learning: Learn Databricks GenAI](https://www.linkedin.com/learning/learn-databricks-genai) | Paid/trial | 1 hour 11 minutes video plus 1–3 hours practice; use for concepts and verify March 2026 product/objective alignment |
-| [Udemy: Databricks Generative AI Engineer Associate — Olivier Auffret](https://www.udemy.com/course/databricks-certified-generative-ai-engineer-associate-lessons/) | Paid; hands-on course, updated August 2026 when checked | About 12–20 hours including labs; public page exposed section times but not a stable full total |
-| [Udemy: Derar Alhussein certification preparation](https://www.udemy.com/course/databricks-certified-genai-engineer-associate/) | Paid; course and hands-on preparation, updated August 2026 when checked | 3 hours 45 minutes video plus 6–12 hours hands-on and review |
+| [Udemy: Databricks Generative AI Engineer Associate — Olivier Auffret](https://www.udemy.com/course/databricks-certified-generative-ai-engineer-associate-lessons/) | Paid; hands-on course, August 2026 update previously observed, not reverified September 28 | About 12–20 hours including labs; public page exposed section times but not a stable full total |
+| [Udemy: Derar Alhussein certification preparation](https://www.udemy.com/course/databricks-certified-genai-engineer-associate/) | Paid; course and hands-on preparation, August 2026 update previously observed, not reverified September 28 | 3 hours 45 minutes video plus 6–12 hours hands-on and review |
+| [Code-corpus chunking experiment](https://www.databricks.com/blog/building-knowledge-assistant-over-code) — Daniel Liden, March 23, 2026 | Free | 30–45 minutes reading plus 2–4 hours designing a controlled comparison; published results are workload-specific |
 | [O'Reilly search: Databricks generative AI](https://www.oreilly.com/search/?q=Databricks%20generative%20AI) | Paid/trial | 6–16 hours selected recent chapters/events; map them to the March blueprint rather than assuming completeness |
 
 Because this blueprint contains recently revised agent, Agent Bricks, MCP, Apps, AI Search/Vector Search, MLflow evaluation, AI Gateway and prompt-management topics, check the official page two weeks before the exam and revalidate documentation release stages. No exact current Pluralsight, Whizlabs or MeasureUp exam-aligned product was independently verified.

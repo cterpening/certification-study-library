@@ -4,6 +4,163 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-databricksgenerativeaiengineerassociate-deep-review",
+      "title": "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+      ],
+      "results": [
+        {
+          "exam_code": "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE-databricks-generative-ai-engineer-associate.md",
+          "baseline_sha256": "2a906e769003b384ea6128486ac43bf97c80c3dfa83107b996076bd539fdb106",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Live page still links March 18, 2026 PDF; 56 objectives mapped. Six-domain text differs only by en-dashes, verified by normalized equality. Previous status snapshot absent; live metadata matches guide. No substantive revision inferred."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Reviewed source/index boundaries, Apps service/user authorization, current scorer errors/expectations/support, agents/MCP and AI functions."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Reviewed March 23 first-party code-chunking experiment for method and limits; checked its claims against current product docs without treating benchmark results as guarantees."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Four official preparation courses retained; Academy requires sign-in, LinkedIn public 71-minute duration verified; both Udemy pages and OReilly blocked, older metadata explicitly qualified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Source-policy inheritance, App identity and scoring coverage gaps repaired; raw monitor change classified with evidence, no silent baseline rewrite."
+            }
+          },
+          "findings": [
+            {
+              "id": "databricksgenerativeaiengineerassociate-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "AI Search permissions were too broadly described",
+              "url": "https://docs.databricks.com/aws/en/ai-search/ai-search",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "AI Search explicitly lacks row/column permissions despite source-table governance.",
+              "recommendation": "Explain trusted application filtering or scoped indexes, bypass prevention, and per-hop checks.",
+              "disposition": "applied",
+              "source_id": "databricks-genai-ai-search-limits",
+              "resolution": "Explain trusted application filtering or scoped indexes, bypass prevention, and per-hop checks."
+            },
+            {
+              "id": "databricksgenerativeaiengineerassociate-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "UI authentication did not prove user-delegated resource access",
+              "url": "https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "An App service principal has shared grants; user authorization requires supported scopes and use of delegated identity.",
+              "recommendation": "Add explicit identity example and distinguish delegated SQL policies from AI Search limits.",
+              "disposition": "applied",
+              "source_id": "databricks-genai-app-auth",
+              "resolution": "Add explicit identity example and distinguish delegated SQL policies from AI Search limits."
+            },
+            {
+              "id": "databricksgenerativeaiengineerassociate-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Completed evaluation did not imply complete scoring",
+              "url": "https://docs.databricks.com/aws/en/mlflow3/genai/eval-monitor/custom-scorer-reference",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current scorer reference permits continuing after exceptions. Local MLflow confirmed mean 1.0 with one error among three rows.",
+              "recommendation": "Require attempted/scored/error coverage and an incomplete release gate; explain offline expectations and subclass limits.",
+              "disposition": "applied",
+              "source_id": "databricks-genai-code-scorers",
+              "resolution": "Require attempted/scored/error coverage and an incomplete release gate; explain offline expectations and subclass limits."
+            },
+            {
+              "id": "databricksgenerativeaiengineerassociate-deep-4",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Retrieval and PyFunc objectives lacked executable worked examples",
+              "url": "https://www.databricks.com/sites/default/files/2026-03/Databricks-Certified-Generative-AI-Engineer-Associate-Exam-Guide-Mar26.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Recall and hit rate were paired without a denominator example; PyFunc chain coding was only described.",
+              "recommendation": "Add two original executable examples, four decision cases and twelve answered checks.",
+              "disposition": "applied",
+              "source_id": "databricks-genai-exam-guide-mar-2026",
+              "resolution": "Add two original executable examples, four decision cases and twelve answered checks."
+            },
+            {
+              "id": "databricksgenerativeaiengineerassociate-deep-5",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Raw monitor change needed semantic interpretation",
+              "url": "https://www.databricks.com/learn/certification/genai-engineer-associate",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Domain snapshot changed hyphens to en-dashes and previous status snapshot is absent. Normalized six-domain text is equal.",
+              "recommendation": "Record observed status and formatting difference without claiming a new blueprint or silently changing accepted snapshots.",
+              "disposition": "applied",
+              "source_id": "databricks-genai-blueprint",
+              "resolution": "Record observed status and formatting difference without claiming a new blueprint or silently changing accepted snapshots."
+            }
+          ],
+          "notes": "Mapped 56 March 18 PDF objectives; distinguish AI Search access from source policies and App service identity from user delegation, separate retrieval metrics, execute PyFunc and scorer-error checks, and qualify blocked paid-course metadata. Monitor differences are dash typography and a missing prior status snapshot; accepted snapshots remain unchanged. Same-context AI review; human review pending. See docs/research/2026-09-28-databricks-generative-ai-engineer-associate-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 5,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-databricksmachinelearningprofessional-deep-review",
       "title": "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL complete guide and learning-content review",
       "rubric_version": 1,

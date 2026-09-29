@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: [DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE deep review](docs/research/2026-09-28-databricks-generative-ai-engineer-associate-deep-review.md): map 56 objectives; repair retrieval authorization and scorer coverage guidance; execute 27 local retrieval/PyFunc/MLflow checks.
+
 - September 28, 2026: [DATABRICKS-MACHINE-LEARNING-PROFESSIONAL deep review](docs/research/2026-09-28-databricks-machine-learning-professional-deep-review.md): map 47 objectives; track profiling-window ambiguity; repair monitoring and online-store references; execute 20 local PyFunc/Optuna/MLflow checks.
 
 - September 28, 2026: [DATABRICKS-MACHINE-LEARNING-ASSOCIATE deep review](docs/research/2026-09-28-databricks-machine-learning-associate-deep-review.md): map 48 objectives; clarify AutoML/Hyperopt support, feature contracts and serving releases; execute local ML exercise with 22 checks.
