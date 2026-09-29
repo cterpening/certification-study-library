@@ -1838,6 +1838,8 @@ The review maps every current 7.6.0 task through management and recoverability, 
 
 ## SPLK-5001 coverage record
 
+The September 29 [deep review](research/2026-09-29-splk-5001-deep-review.md) maps 24 detailed objectives. Mapped all 24 public PDF objectives and clarified renewal eligibility, summary completeness, CIM semantics, entity boundaries and version-specific detection outputs. Added 40 answer notes, three worked scenarios, eight proposed activities, 49 executed Python checks and two unexecuted SPL examples. Course-stage names, account/lab access and human review remain pending. Current guide citations: 29 registered, 15 reachable, 14 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: The Cyber Landscape, Frameworks, and Standards (10%); Threat and Attack Types, Motivations, and Tactics (20%); Defenses, Data Sources, and SIEM Best Practices (20%); Investigation, Event Handling, Correlation, and Risk (20%); SPL and Efficient Searching (20%); Threat Hunting and Remediation (10%)

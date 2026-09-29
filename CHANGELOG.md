@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [SPLK-5001 deep review](docs/research/2026-09-29-splk-5001-deep-review.md): Mapped 24 objectives; added 40 answers and 49 executed checks, with corrections for renewal, summary completeness, entity identity and version-specific detection behavior.
+
 - September 29, 2026: [NSE-4-FORTIOS deep review](docs/research/2026-09-29-nse-4-fortios-deep-review.md): Recorded the undated 8.0 successor while preserving the available 7.6 scope and history; added 40 answers, 41 executed checks and corrections for policy, NAT, inspection, HA, routing and IPsec.
 
 - September 29, 2026: [PANW-CYBERSECURITY-APPRENTICE deep review](docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md): Checked the full current blueprint and September handbook/FAQ, added 40 answered prompts and 43 executed Python checks, and clarified network, telemetry, identity and learning-resource boundaries.

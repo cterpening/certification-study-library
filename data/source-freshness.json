@@ -4,6 +4,161 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-splk5001-deep-review",
+      "title": "SPLK-5001 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SPLK-5001"
+      ],
+      "results": [
+        {
+          "exam_code": "SPLK-5001",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLK-5001-splunk-certified-cybersecurity-defense-analyst.md",
+          "baseline_sha256": "f4bc4ab6594a712acc8340283d412964e2573305548eb9579bf96bf67a2ea74e",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "All four blueprint pages and one-page track read; 24 tasks and six weights confirmed. Landing snapshot unchanged and preserved separately from detailed PDF mapping. Selected current handbook pages clarify renewal and retakes; account-specific eligibility pending."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected indexed primary documentation read despite direct HTTP blocks. tstats completeness, Authentication semantics, ordering, qualified entity identity and version-specific detection behavior incorporated with 49 local checks and no engine claim."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement announced on current public certification page. September vendor AI/SOC context and 8.7 documentation separated from unversioned exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Official training cards, course PDF, public Pluralsight listing and historical BOTS README reviewed. Dynamic catalog empty, paid pages blocked and interiors unreviewed; durations qualified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Exact five-stage course labels, signed-in learning, real Splunk/ES/SOAR search and response behavior, personal renewal/booking and human review remain pending. Conflicting general/version-specific documentation statements explicitly bounded."
+            }
+          },
+          "findings": [
+            {
+              "id": "splk5001-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Career progression does not establish renewal eligibility",
+              "url": "https://www.splunk.com/en_us/pdfs/training/splunk-certification-candidate-handbook.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SPLK-5001"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Track recommends Engineer/Architect, but handbook CDA next-level and downstream tables contain no qualifying entries.",
+              "recommendation": "Separate career recommendations from renewal; retain final-year same-exam route and personal-eligibility boundary.",
+              "disposition": "applied",
+              "source_id": "splunk-certification-candidate-handbook",
+              "resolution": "Separate career recommendations from renewal; retain final-year same-exam route and personal-eligibility boundary."
+            },
+            {
+              "id": "splk5001-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Acceleration is not always summary-only",
+              "url": "https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.2/search-commands/tstats",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SPLK-5001"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Default summariesonly=false can include unsummarized data; missing grouping fields can independently remove rows.",
+              "recommendation": "Qualify completeness teaching and demonstrate distinct collected, deduplicated and summarized evidence.",
+              "disposition": "applied",
+              "source_id": "splunk-tstats-reference",
+              "resolution": "Qualify completeness teaching and demonstrate distinct collected, deduplicated and summarized evidence."
+            },
+            {
+              "id": "splk5001-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Detection output documentation contradicts itself",
+              "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/detections/use-detections-to-search-for-threats-in-splunk-enterprise-security",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SPLK-5001"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "General introduction prohibits both outputs, but 8.1+ section and table allow both via risk modifiers.",
+              "recommendation": "Teach version-specific output configuration and require installed verification.",
+              "disposition": "applied",
+              "source_id": "splunk-es-detections",
+              "resolution": "Teach version-specific output configuration and require installed verification."
+            },
+            {
+              "id": "splk5001-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "General agent wording overstates read-only behavior",
+              "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.7/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-ai-soc-analyst-agentic-workflow-in-splunk-enterprise-security",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SPLK-5001"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Specific settings allow investigations, finding closure and response despite broad no-field-change wording.",
+              "recommendation": "Distinguish suggested from analyst disposition and examine configured actions and inherited permissions. Keep AI workflow as practical depth.",
+              "disposition": "applied",
+              "source_id": "splunk-ai-soc-agent-87",
+              "resolution": "Distinguish suggested from analyst disposition and examine configured actions and inherited permissions. Keep AI workflow as practical depth."
+            },
+            {
+              "id": "splk5001-deep-5",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Exact five investigation-stage names remain unavailable",
+              "url": "https://www.splunk.com/en_us/pdfs/training/the-art-of-investigation-course-description.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SPLK-5001"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Both public course-description pages confirm five stages without listing names; signed-in course was not accessed.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped all 24 public PDF objectives and clarified renewal eligibility, summary completeness, CIM semantics, entity boundaries and version-specific detection outputs. Added 40 answer notes, three worked scenarios, eight proposed activities, 49 executed Python checks and two unexecuted SPL examples. Course-stage names, account/lab access and human review remain pending. Same-context AI review; human review pending. See docs/research/2026-09-29-splk-5001-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 4,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-29-nse4fortios-deep-review",
       "title": "NSE-4-FORTIOS complete guide and learning-content review",
       "rubric_version": 1,

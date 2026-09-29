@@ -3317,6 +3317,33 @@ This is not a complete list, and it is not a prescription to consume everything.
 
 The [April 6 FortiOS 8.0 article](https://www.fortinet.com/blog/security-architecture/fortios-8-redefining-secure-networking-in-the-ai-and-quantum-era) by Baksheesh Singh Ghuman discusses new platform capabilities. It is vendor product context, not the 7.6 exam contract. Marketing comparisons and its cryptography terminology were not adopted as verified technical requirements. The 7.6 new-features directory also contains later maintenance additions; check each feature’s version suffix before assuming it exists in 7.6.0.
 
+### SPLK-5001 — Splunk Certified Cybersecurity Defense Analyst
+
+Resource details from the [SPLK-5001 guide](../guides/SPLK-5001-splunk-certified-cybersecurity-defense-analyst.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not a prescription to consume everything. Start with the official blueprint, then choose courses, documentation, videos, books or labs that close your measured gaps. Durations are publisher-listed or clearly labeled estimates and can change.
+
+| Best use | Resource | Access | Estimated time |
+|---|---|---|---:|
+| Live level, count, duration, price, delivery, preparation and BOTS links | [SPLK-5001 certification page](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-analyst.html) | Public | 15–25 min |
+| Canonical six-domain weights, every objective and official resource names | [SPLK-5001 test blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-analyst.pdf) | Public PDF | 30–60 min initially; repeat |
+| Official ordered route across cyber foundations, SPL, ES investigation and hunting; select by gaps | [Cybersecurity Defense Analyst track](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-certified-cybersecurity-defense-analyst-track.pdf) | Public PDF; course registration varies | 30–60 hr estimate if completing most courses/labs |
+| Blue Team Academy, Intro to Splunk, ES foundations, data/tools, investigation and threat hunting | [Free Splunk training](https://www.splunk.com/en_us/training/free-courses/overview.html) | Free account | 10–25 hr study estimate; account lessons not reviewed |
+| Planning directory; current result list did not load, so course availability remains unverified | [Splunk course catalog](https://www.splunk.com/en_us/training/course-catalog.html) | Mixed free/paid | 15–30 min planning; course-specific |
+| Program-wide format and approach; dedicated mock availability not established | [Splunk Certification Exam Study Guide](https://www.splunk.com/en_us/pdfs/training/splunk-certification-exams-study-guide.pdf) | Public PDF | 1–2 hr study estimate; introduction/contents read |
+| Registration, security, retake, scoring, renewal and candidate policy | [Splunk Certification Candidate Handbook](https://www.splunk.com/en_us/pdfs/training/splunk-certification-candidate-handbook.pdf) | Public PDF | 45–90 min |
+| Current product terminology and authoritative analyst, CIM, detection, risk and response behavior | [Splunk Enterprise Security documentation](https://help.splunk.com/en/splunk-enterprise-security-8) | Public | 12–25 hr selected topics |
+| Older 7.2 tutorial; direct access blocked in this review; verify content and translate version-specific terms | [Risk-based alerting tutorial](https://help.splunk.com/en/splunk-enterprise-security-7/tutorials-and-use-cases/7.2/risk-based-alerting-tutorial/about-the-risk-based-alerting-tutorial) | Public; ES lab required | 3–6 hr |
+| Time/index filtering, command placement and explainable performance practice | [Splunk Search optimization](https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/optimize-searches/quick-tips-for-optimization) | Public | 2–4 hr reading plus 4–8 hr practice |
+| Realistic defensive investigation and evidence correlation; avoid solution memorization | [Splunk Boss of the SOC](https://bots.splunk.com/) | Public datasets/site; lab platform varies | 8–20 hr selected investigation |
+| Maintained expert walkthroughs for detection, investigation, threat intelligence, hunting and response | [Splunk Lantern security use cases](https://lantern.splunk.com/Security_Use_Cases) | Public | 4–12 hr selected cases |
+| Inspect analytic stories, data dependencies, tests, mappings and playbooks as content—not hidden exam questions | [Splunk Security Content](https://research.splunk.com/) | Public | 3–8 hr selected stories/detections |
+| Official demonstrations; begin with the two Security Domain videos named by the blueprint | [Splunk How-To YouTube](https://www.youtube.com/@SplunkHowTo) | Free/YouTube | 4–10 hr selected playlists |
+| Public January 2026 listing; lesson interiors unreviewed; short visual orientation to Splunk security, ES, SOAR and investigations; not full blueprint coverage | [Splunk 9: Introduction to Splunk for Security Detection and Monitoring](https://www.pluralsight.com/courses/splunk-9-splunk-security-introduction) | Paid | 1 hr 36 min |
+| Public page blocked; prior metadata unverified; broad SPL/core foundation for learners below Power User level; supplement security and ES domains | [The Complete Splunk Beginner Course](https://www.udemy.com/course/splunker/) | Paid | Previously listed 3 hr 45 min; not reverified |
+| Durable hypothesis, data, workflow and program concepts; not Splunk product or exam-contract authority | [Threat Hunting](https://www.oreilly.com/library/view/threat-hunting/9781492028260/) | Paid/O'Reilly | 4–7 hr estimate |
+| Public scope and five-stage access boundary | [The Art of Investigation description](https://www.splunk.com/en_us/pdfs/training/the-art-of-investigation-course-description.pdf) | Public PDF; actual course access varies | Three ride-alongs total 3 hr 20 min–4 hr 45 min; excludes introduction and quiz |
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.
