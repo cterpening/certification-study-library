@@ -1,0 +1,1789 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "CKAD",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/CKAD-certified-kubernetes-application-developer.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "7bb538a7f7f50b27e6123873adf2c9b55d2f834f17902d1d345b2872dd594fc1",
+  "guide_after_sha256": "37c79539ba518fe5d6ab9fe0c41ff0bcdb25ad49d7e283ad05f45216a31297a5",
+  "prior_records": {
+    "exam": {
+      "code": "CKAD",
+      "level": "intermediate",
+      "vendor_id": "linux-foundation",
+      "title": "Certified Kubernetes Application Developer",
+      "status": "active",
+      "study_guide_url": "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/",
+      "guide_path": "guides/CKAD-certified-kubernetes-application-developer.md",
+      "blueprint_last_checked": "2026-09-06",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-06",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal certification prerequisite. Practice OCI image contracts, controller and multi-container design, ephemeral/persistent volumes, rolling/blue-green/canary delivery, Helm/Kustomize, probes/logs/debugging/API migrations, resource policy/configuration/Secrets/ServiceAccounts/security contexts, and Service/NetworkPolicy/Ingress paths on disposable clusters. Verify the official Kubernetes version immediately before study and scheduling."
+    },
+    "review": {
+      "id": "ckad-2026-09-06-source-validation",
+      "exam_code": "CKAD",
+      "guide_path": "guides/CKAD-certified-kubernetes-application-developer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-06",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ckad-official-objectives.txt",
+      "blueprint_snapshot_sha256": "58b0290b61ba14ad68c02e06bcd2fbec14d23c4e555e69eb67a5615047e02ca1",
+      "objective_coverage": [
+        {
+          "objective_group": "Application Design and Build (20%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios 1 and 3",
+            "Labs 1–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Application Deployment (20%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1–2",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Application Observability and Maintenance (15%)",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 4, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Application Environment, Configuration and Security (25%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios 1 and 3",
+            "Labs 7–8"
+          ]
+        },
+        {
+          "objective_group": "Services and Networking (20%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios 1 and 3",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 10,
+        "reachable": 8,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All five Kubernetes v1.35 application domains are mapped through one image-to-release-to-runtime-to-traffic lifecycle, with three scenarios, eight safe labs and 42 original checks. All ten guide URLs are cataloged: eight reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The August 26 v1.37 release creates a September 23–October 21 recheck window without moving the live v1.35 baseline, and the retired ingress-nginx controller is explicitly distinguished from the stable Ingress API objective. No proprietary simulator tasks, course labs or recalled exam tasks are used."
+    },
+    "sources": [
+      {
+        "id": "kubernetes-v1-35-docs",
+        "title": "Kubernetes v1.35 documentation",
+        "url": "https://v1-35.docs.kubernetes.io/docs/home/",
+        "publisher": "Kubernetes project",
+        "authority_class": 2,
+        "source_type": "official-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "CKA",
+          "CKAD",
+          "CKS"
+        ],
+        "notes": "Version-matched technical reference. The docs site labels v1.35 a static older snapshot because newer Kubernetes releases exist; the live Linux Foundation CKA, CKAD and CKS pages nevertheless still name v1.35."
+      },
+      {
+        "id": "kubernetes-v1-37-release",
+        "title": "Kubernetes v1.37: Garhwal",
+        "url": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
+        "publisher": "Kubernetes project",
+        "authority_class": 1,
+        "source_type": "release-notes",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "CKA",
+          "CKAD",
+          "CKS"
+        ],
+        "notes": "Official August 26, 2026 minor-release announcement. It triggers the Linux Foundation 4–8-week exam-version recheck but does not override the live v1.35 CKA, CKAD, or CKS pages and curricula."
+      },
+      {
+        "id": "kubernetes-ingress-nginx-retirement",
+        "title": "Ingress NGINX Retirement: What You Need to Know",
+        "url": "https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/",
+        "publisher": "Kubernetes project",
+        "authority_class": 1,
+        "source_type": "lifecycle-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "CKA",
+          "CKAD",
+          "CKS"
+        ],
+        "notes": "Official notice that the community ingress-nginx controller retired in March 2026. The Kubernetes Ingress API and the current CKA, CKAD, and CKS objectives were not retired."
+      },
+      {
+        "id": "lf-ckad-blueprint",
+        "title": "Certified Kubernetes Application Developer",
+        "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/",
+        "publisher": "Linux Foundation / CNCF",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "CKAD"
+        ],
+        "notes": "Canonical current five-domain page; Kubernetes v1.35, two-hour online performance exam, two-year validity, no prerequisite, 12-month eligibility, one retake and two simulator activations listed. The August 26 v1.37 release triggers the stated 4–8-week recheck window but does not itself change the exam baseline."
+      },
+      {
+        "id": "cncf-ckad-curriculum",
+        "title": "CNCF CKAD v1.35 curriculum",
+        "url": "https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum_v1.35.pdf",
+        "publisher": "CNCF",
+        "authority_class": 1,
+        "source_type": "official-reference",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "CKAD"
+        ],
+        "notes": "Public CKAD v1.35 curriculum under CC BY 4.0; use with the live exam page and do not infer proprietary tasks."
+      },
+      {
+        "id": "lf-ckad-lfd259",
+        "title": "Kubernetes for Developers (LFD259)",
+        "url": "https://training.linuxfoundation.org/training/kubernetes-for-developers/",
+        "publisher": "Linux Foundation",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "CKAD"
+        ],
+        "notes": "Official aligned self-paced course with 35 hours, hands-on labs and assignments listed."
+      },
+      {
+        "id": "lf-ckad-pluralsight",
+        "title": "Certified Kubernetes Application Developer path",
+        "url": "https://www.pluralsight.com/paths/certified-kubernetes-application-developer-ckad-2023",
+        "publisher": "Pluralsight",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "CKAD"
+        ],
+        "notes": "Six courses, four labs, 13 hours and practice exam listed. Several domain courses/labs were refreshed in 2025–2026 while two modules are older; gap-check v1.35."
+      },
+      {
+        "id": "lf-ckad-kodekloud",
+        "title": "Certified Kubernetes Application Developer course",
+        "url": "https://kodekloud.com/courses/certified-kubernetes-application-developer-ckad/",
+        "publisher": "KodeKloud / Mumshad Mannambeth",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "CKAD"
+        ],
+        "notes": "14.75 video hours, browser practice, lightning labs and mock exams listed; independently gap-check public course detail against v1.35."
+      },
+      {
+        "id": "lf-ckad-oreilly-muschko",
+        "title": "Certified Kubernetes Application Developer CKAD Prep Course",
+        "url": "https://www.oreilly.com/videos/certified-kubernetes-application/0642572045296/",
+        "publisher": "O'Reilly / Benjamin Muschko",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "CKAD"
+        ],
+        "notes": "May 2024 intermediate course, 8 hours 3 minutes with exercises, quizzes and sandbox listed; explicitly gap-check Kubernetes v1.35 API and policy behavior."
+      },
+      {
+        "id": "lf-ckad-udemy-kodekloud",
+        "title": "Kubernetes Certified Application Developer with Tests",
+        "url": "https://www.udemy.com/course/certified-kubernetes-application-developer/",
+        "publisher": "Udemy / KodeKloud / Mumshad Mannambeth / Vijin Palazhi",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "CKAD"
+        ],
+        "notes": "16 hours 34 minutes with browser labs, updated August 2026; update history lists a Kubernetes 1.35 lab upgrade in April 2026. Same course family as KodeKloud, so choose one access route."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "7587e7e5b26625a7a7bcfe1145471eb036f68a382a2e2723d552839df05a3d32",
+      "guide_sections": [
+        "1. Application design and build",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "d4125714164b13628ee7d656c15b03ebb9a8fad948bc1bfb5ef77ecca40f50b6",
+      "guide_sections": [
+        "1. Application design and build",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "17ed89746aa471ca06a0ae3c5229fcdda5638b9cd8f01334a117efdda4684314",
+      "guide_sections": [
+        "1. Application design and build",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "fa29bd8e6936f30af419cdddd421be8c3e87f7c50ea08ded11e098ab93b04914",
+      "guide_sections": [
+        "1. Application design and build",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "8db64ac156c02fcc1af511c50cc63f9295fff0a4f33cf9b35b51c15535bf0754",
+      "guide_sections": [
+        "2. Application deployment",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "12af3d820210187f4a8a670d0ec1b6b652d2394e373623fc2047be2be9eebbab",
+      "guide_sections": [
+        "2. Application deployment",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "3091bdb059c5a9a1ab711e3016ecee3d53823db14c512baac862dbb059a86a11",
+      "guide_sections": [
+        "2. Application deployment",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "0db5d20f27450f17517fca61239da441a394fa1ef7baaf70b69c63c2aab34c3b",
+      "guide_sections": [
+        "2. Application deployment",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "74aa37f031c016fab381c6c11779f137a12d9897a5b6c11ef83321ac12c78923",
+      "guide_sections": [
+        "3. Application observability and maintenance",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "0d312507853c4217504d73458d1149c4d3ec094916670297334dbbc1036f8b49",
+      "guide_sections": [
+        "3. Application observability and maintenance",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "e2c7d724c646fc175a65e2d4082369ef6ee63e6866a82036bd55795856297d77",
+      "guide_sections": [
+        "3. Application observability and maintenance",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "541652fb64a7bdf4267015940003f99d127696975e3933924f8a05b176459ce8",
+      "guide_sections": [
+        "3. Application observability and maintenance",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "118c595a9b2970f4fe8d4a3de082a0406d21c6e239f1ec980021ff6d635d6bdf",
+      "guide_sections": [
+        "3. Application observability and maintenance",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "3532c2cfcbeb9661d07168bb7601327331377b1f9c058a76c4e924d753e92a07",
+      "guide_sections": [
+        "4. Application environment, configuration and security",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "d74d52da698d38cdb9cb600b16e002d1c5d727cb9e701f78459b984fc2399259",
+      "guide_sections": [
+        "4. Application environment, configuration and security",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "8c789aa30812122fac01d5c2ed31b4d73c04fcdd0527e076a6220d5c67c9e4b6",
+      "guide_sections": [
+        "4. Application environment, configuration and security",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "09b9ae493799f4c035a71edc0c939a90600d2f3be25d0b44bf521ea6b67daea3",
+      "guide_sections": [
+        "4. Application environment, configuration and security",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "37cbe6821b9d8d0f749a3ab942c6128a6c39d10a5eb3841601127fc31a41da54",
+      "guide_sections": [
+        "4. Application environment, configuration and security",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "f2c9a442377ef5a0ee709ee3feac5ef4a8b12ccb0af7fe58e007bbdb864190fd",
+      "guide_sections": [
+        "4. Application environment, configuration and security",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "c0227caf10e6295a78457b9c826216cf24a69b9f057a5970300eb33b8c09a6c9",
+      "guide_sections": [
+        "4. Application environment, configuration and security",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "f88289740f6e1b840fc10e77470a604133b4bb78b5bce020254f9459eb1dc2ed",
+      "guide_sections": [
+        "4. Application environment, configuration and security",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "2ee7369242538ed6274a0e3b3c1a6ba1462544b4d971e787d330773a708780d8",
+      "guide_sections": [
+        "5. Services and networking",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "575a74e81752779e711e000337dd7d41186f21f6f1dad864fd18d41a710348e8",
+      "guide_sections": [
+        "5. Services and networking",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "c8cf4ce26acbac591dd4be154fa11db515eeaedd23888585f1e7c180884ea8e6",
+      "guide_sections": [
+        "5. Services and networking",
+        "Hands-on labs",
+        "Original knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "CKAD",
+        "title": "Certified Kubernetes Application Developer",
+        "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/",
+        "guide_path": "guides/CKAD-certified-kubernetes-application-developer.md",
+        "snapshot_path": "data\\objective-snapshots\\ckad-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ckad-official-status.json",
+        "previous_sha256": "58b0290b61ba14ad68c02e06bcd2fbec14d23c4e555e69eb67a5615047e02ca1",
+        "current_sha256": "58b0290b61ba14ad68c02e06bcd2fbec14d23c4e555e69eb67a5615047e02ca1",
+        "previous_status_sha256": "1a902a01ef09eda0b6e325d63eab3fe5a166f4eb8d2a727c9bf4efe0b36d9772",
+        "current_status_sha256": "1a902a01ef09eda0b6e325d63eab3fe5a166f4eb8d2a727c9bf4efe0b36d9772",
+        "official_status": {
+          "skills_versions": [
+            "This exam is an online, proctored, performance-based test that consists of a set of performance-based tasks (problems) to be solved in a command line. Candidates have 2 hours to complete the tasks.",
+            "The exam is based on Kubernetes v1.35.",
+            "Duration of Exam 2 hours",
+            "Software Version: Kubernetes v1.35"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 32,
+    "reachable": 30,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "kubernetes-v1-35-docs",
+      "url": "https://v1-35.docs.kubernetes.io/docs/home/",
+      "checked_at": "2026-09-29T06:06:13.152829+00:00",
+      "health": {
+        "id": "kubernetes-v1-35-docs",
+        "url": "https://v1-35.docs.kubernetes.io/docs/home/",
+        "checked_at": "2026-09-29T06:06:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://v1-35.docs.kubernetes.io/docs/home/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Kubernetes Documentation",
+        "canonical_url": "https://v1-35.docs.kubernetes.io/docs/home/",
+        "duration_signals": [],
+        "signal_fingerprint": "beee925ba93f3af4bbaa19f71f4f188658da5b308587378eca6dc7388f40fa27",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://v1-35.docs.kubernetes.io/docs/home/",
+      "sha256": "1f4b9577e755911bc289a7f763e2fb0b285aaf37d944d89019ab8de75d10b062",
+      "text_characters": 2331
+    },
+    {
+      "id": "kubernetes-v1-37-release",
+      "url": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
+      "checked_at": "2026-09-29T06:06:13.153392+00:00",
+      "health": {
+        "id": "kubernetes-v1-37-release",
+        "url": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
+        "checked_at": "2026-09-29T06:06:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Kubernetes v1.37: Garhwal",
+        "canonical_url": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
+        "duration_signals": [],
+        "signal_fingerprint": "537a7fdd296cb8f2c0a0e30e2269ab1ff8a168a7dede070ab22fb04b854ada17",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
+      "sha256": "744fe3c027f3af2a26df32943076e3a591fe3c943137efad8c9cfadc84e295bf",
+      "text_characters": 57279
+    },
+    {
+      "id": "kubernetes-ingress-nginx-retirement",
+      "url": "https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/",
+      "checked_at": "2026-09-29T06:06:13.153783+00:00",
+      "health": {
+        "id": "kubernetes-ingress-nginx-retirement",
+        "url": "https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/",
+        "checked_at": "2026-09-29T06:06:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Ingress NGINX Retirement: What You Need to Know",
+        "canonical_url": "https://www.kubernetes.dev/blog/2025/11/12/ingress-nginx-retirement",
+        "duration_signals": [],
+        "signal_fingerprint": "cf6b5c875f4470003a0ff500f44d079a5349d7c84649926c3ff6c1d97fed4bc5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/",
+      "sha256": "dfef12da6a0b9fd45cdee565cde290023482e7f7f07478b33353fa2489a8334d",
+      "text_characters": 4951
+    },
+    {
+      "id": "lf-ckad-blueprint",
+      "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/",
+      "checked_at": "2026-09-29T06:06:14.120442+00:00",
+      "health": {
+        "id": "lf-ckad-blueprint",
+        "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/",
+        "checked_at": "2026-09-29T06:06:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Certified Kubernetes Application Developer (CKAD) | Linux Foundation Education",
+        "canonical_url": "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/",
+        "duration_signals": [
+          "2 hours",
+          "36 hours"
+        ],
+        "signal_fingerprint": "2b0467505e7652360167cacc1f29600a556858bfc11c31bec5ab29703c1ec59e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/",
+      "sha256": "fc75ede5b80dec0ee8f351ef022149dcf36a201643fa5bfe6f9b3a10e36f206f",
+      "text_characters": 21348
+    },
+    {
+      "id": "cncf-ckad-curriculum",
+      "url": "https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum_v1.35.pdf",
+      "checked_at": "2026-09-29T06:06:14.871733+00:00",
+      "health": {
+        "id": "cncf-ckad-curriculum",
+        "url": "https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum_v1.35.pdf",
+        "checked_at": "2026-09-29T06:06:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum_v1.35.pdf",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "curriculum/CKAD_Curriculum_v1.35.pdf at master · cncf/curriculum",
+        "canonical_url": "https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum_v1.35.pdf",
+        "duration_signals": [],
+        "signal_fingerprint": "626dbd480a4bbee0da07b64bdedbbd79b2d25955347f3919af400039a95c8e8f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum_v1.35.pdf",
+      "sha256": "c4c8ef67d3ec215fc40eddf99c2dea1565cf50ebb90b158d164e71c7ae007128",
+      "text_characters": 608
+    },
+    {
+      "id": "lf-ckad-lfd259",
+      "url": "https://training.linuxfoundation.org/training/kubernetes-for-developers/",
+      "checked_at": "2026-09-29T06:06:18.043267+00:00",
+      "health": {
+        "id": "lf-ckad-lfd259",
+        "url": "https://training.linuxfoundation.org/training/kubernetes-for-developers/",
+        "checked_at": "2026-09-29T06:06:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://training.linuxfoundation.org/training/kubernetes-for-developers/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Kubernetes for Developers (LFD259) | Linux Foundation Education",
+        "canonical_url": "https://training.linuxfoundation.org/training/kubernetes-for-developers/",
+        "duration_signals": [
+          "35 Hours"
+        ],
+        "signal_fingerprint": "60d7745c6aa08d9d3c2a7adfc8e0ad0b793a79ec8678fbee45b5dc8e80502ab3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://training.linuxfoundation.org/training/kubernetes-for-developers/",
+      "sha256": "f189e8b989a012793a4901dc89ad65db269a9602a1bee460b9f8799b817b6eb1",
+      "text_characters": 11145
+    },
+    {
+      "id": "lf-ckad-pluralsight",
+      "url": "https://www.pluralsight.com/paths/certified-kubernetes-application-developer-ckad-2023",
+      "checked_at": "2026-09-29T06:06:18.332389+00:00",
+      "health": {
+        "id": "lf-ckad-pluralsight",
+        "url": "https://www.pluralsight.com/paths/certified-kubernetes-application-developer-ckad-2023",
+        "checked_at": "2026-09-29T06:06:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/certified-kubernetes-application-developer-ckad-2023",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Certified Kubernetes Application Developer (CKAD)",
+        "canonical_url": "https://www.pluralsight.com/paths/certified-kubernetes-application-developer-ckad-2023",
+        "duration_signals": [
+          "10 Hours"
+        ],
+        "signal_fingerprint": "4d40fd639695ad030f13d30be3859454690e9fc347bb2698f0c98226be8d6825",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/certified-kubernetes-application-developer-ckad-2023",
+      "sha256": "2d3b5043b266cbad75369db1dbebfa9e5786cc2d3dd5897a6525ad106395b830",
+      "text_characters": 4877
+    },
+    {
+      "id": "lf-ckad-kodekloud",
+      "url": "https://kodekloud.com/courses/certified-kubernetes-application-developer-ckad/",
+      "checked_at": "2026-09-29T06:06:19.532706+00:00",
+      "health": {
+        "id": "lf-ckad-kodekloud",
+        "url": "https://kodekloud.com/courses/certified-kubernetes-application-developer-ckad/",
+        "checked_at": "2026-09-29T06:06:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://kodekloud.com/courses/certified-kubernetes-application-developer-ckad/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Certified Kubernetes Application Developer (CKAD) Course | KodeKloud",
+        "canonical_url": "https://kodekloud.com/courses/certified-kubernetes-application-developer-ckad",
+        "duration_signals": [
+          "14.75 Hours",
+          "15 Hours",
+          "20 Hours",
+          "48 Hours",
+          "6 Hours",
+          "9 Hours"
+        ],
+        "signal_fingerprint": "ac2f6bc529d5911b8181ef7f0ed237fd628b5d5fc381a6eb942e247de43949da",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://kodekloud.com/courses/certified-kubernetes-application-developer-ckad/",
+      "sha256": "6390acebf52ad998097d5ac5567af425a5a149aecc632a09272f17168dce564c",
+      "text_characters": 19441
+    },
+    {
+      "id": "lf-ckad-oreilly-muschko",
+      "url": "https://www.oreilly.com/videos/certified-kubernetes-application/0642572045296/",
+      "checked_at": "2026-09-29T06:06:22.130327+00:00",
+      "health": {
+        "id": "lf-ckad-oreilly-muschko",
+        "url": "https://www.oreilly.com/videos/certified-kubernetes-application/0642572045296/",
+        "checked_at": "2026-09-29T06:06:22+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/certified-kubernetes-application/0642572045296/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "lf-ckad-udemy-kodekloud",
+      "url": "https://www.udemy.com/course/certified-kubernetes-application-developer/",
+      "checked_at": "2026-09-29T06:06:23.630244+00:00",
+      "health": {
+        "id": "lf-ckad-udemy-kodekloud",
+        "url": "https://www.udemy.com/course/certified-kubernetes-application-developer/",
+        "checked_at": "2026-09-29T06:06:23+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/certified-kubernetes-application-developer/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "ckad135-curriculum-pdf",
+      "url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKAD_Curriculum_v1.35.pdf",
+      "checked_at": "2026-09-29T06:10:02.916098+00:00",
+      "health": {
+        "id": "ckad135-curriculum-pdf",
+        "url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKAD_Curriculum_v1.35.pdf",
+        "checked_at": "2026-09-29T06:10:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKAD_Curriculum_v1.35.pdf",
+        "content_type": "application/octet-stream",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKAD_Curriculum_v1.35.pdf",
+      "sha256": "7736d2f0291239d62e9fc618304413ee9b6e53fc4580aac70bf4328203c1c210",
+      "bytes": 149864,
+      "pdf_pages": 3,
+      "text_characters": 2435
+    },
+    {
+      "id": "k8s135-sidecars-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/pods/sidecar-containers.md",
+      "checked_at": "2026-09-29T06:08:57.576457+00:00",
+      "health": {
+        "id": "k8s135-sidecars-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/pods/sidecar-containers.md",
+        "checked_at": "2026-09-29T06:08:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/pods/sidecar-containers.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/pods/sidecar-containers.md",
+      "sha256": "e0b5b81427e6ed5bb2a2261b92be80ed8881abb69f2f65b0c08d19bf4e2f70a7",
+      "text_characters": 8894
+    },
+    {
+      "id": "k8s135-init-containers-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/pods/init-containers.md",
+      "checked_at": "2026-09-29T06:08:57.576824+00:00",
+      "health": {
+        "id": "k8s135-init-containers-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/pods/init-containers.md",
+        "checked_at": "2026-09-29T06:08:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/pods/init-containers.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/pods/init-containers.md",
+      "sha256": "770728807f4f2d66ef63a5cbd2e8f94df60dd1286136190c5317c2c00dfda417",
+      "text_characters": 14858
+    },
+    {
+      "id": "k8s135-probes-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes.md",
+      "checked_at": "2026-09-29T06:08:57.883739+00:00",
+      "health": {
+        "id": "k8s135-probes-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes.md",
+        "checked_at": "2026-09-29T06:08:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes.md",
+      "sha256": "38a2eff15897ccfe991c122f94d42c064b54d2ac0090d7f624eb6b3fd10aaf8a",
+      "text_characters": 12313
+    },
+    {
+      "id": "k8s135-jobs-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/controllers/job.md",
+      "checked_at": "2026-09-29T06:08:57.895857+00:00",
+      "health": {
+        "id": "k8s135-jobs-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/controllers/job.md",
+        "checked_at": "2026-09-29T06:08:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/controllers/job.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/controllers/job.md",
+      "sha256": "38341aa66e9e82ffff19b9a08a217852e76cb8ffab4363d9b18845f23b39015f",
+      "text_characters": 56142
+    },
+    {
+      "id": "k8s135-cronjobs-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/controllers/cron-jobs.md",
+      "checked_at": "2026-09-29T06:08:57.971631+00:00",
+      "health": {
+        "id": "k8s135-cronjobs-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/controllers/cron-jobs.md",
+        "checked_at": "2026-09-29T06:08:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/controllers/cron-jobs.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/controllers/cron-jobs.md",
+      "sha256": "1c6d72a8c4808ecc4e2df45dbfaee906c381f537d0e447d06d91bab3e5498d00",
+      "text_characters": 13619
+    },
+    {
+      "id": "k8s135-security-context-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/security-context.md",
+      "checked_at": "2026-09-29T06:08:58.089777+00:00",
+      "health": {
+        "id": "k8s135-security-context-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/security-context.md",
+        "checked_at": "2026-09-29T06:08:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/security-context.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/security-context.md",
+      "sha256": "63e083b03909a614ae5c2a9ce7231db3b905119eb58ccb52a114e9ec5ac16bae",
+      "text_characters": 31967
+    },
+    {
+      "id": "k8s135-serviceaccounts-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/configure-service-account.md",
+      "checked_at": "2026-09-29T06:08:58.121936+00:00",
+      "health": {
+        "id": "k8s135-serviceaccounts-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/configure-service-account.md",
+        "checked_at": "2026-09-29T06:08:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/configure-service-account.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/configure-service-account.md",
+      "sha256": "bed151229b4f94e8d393e95528a391284dc5d172c0f65e41d1338243f3b1e2f5",
+      "text_characters": 18191
+    },
+    {
+      "id": "k8s135-resources-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/configuration/manage-resources-containers.md",
+      "checked_at": "2026-09-29T06:08:58.186285+00:00",
+      "health": {
+        "id": "k8s135-resources-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/configuration/manage-resources-containers.md",
+        "checked_at": "2026-09-29T06:08:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/configuration/manage-resources-containers.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/configuration/manage-resources-containers.md",
+      "sha256": "559868821507b85bcb9963a49b7738b2702abee6961354b1e32db58f3962d573",
+      "text_characters": 32083
+    },
+    {
+      "id": "k8s135-quota-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/policy/resource-quotas.md",
+      "checked_at": "2026-09-29T06:08:58.309281+00:00",
+      "health": {
+        "id": "k8s135-quota-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/policy/resource-quotas.md",
+        "checked_at": "2026-09-29T06:08:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/policy/resource-quotas.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/policy/resource-quotas.md",
+      "sha256": "ff097eaebc0b5155cc48c627563f297ca624348115d0612a32942e5502203069",
+      "text_characters": 29635
+    },
+    {
+      "id": "k8s135-deprecation-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/reference/using-api/deprecation-guide.md",
+      "checked_at": "2026-09-29T06:08:58.425576+00:00",
+      "health": {
+        "id": "k8s135-deprecation-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/reference/using-api/deprecation-guide.md",
+        "checked_at": "2026-09-29T06:08:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/reference/using-api/deprecation-guide.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/reference/using-api/deprecation-guide.md",
+      "sha256": "96f34a49cbdd7bd53008cc7b7cc8aff58c373ad323e64eef0155cbbc44494f61",
+      "text_characters": 21019
+    },
+    {
+      "id": "k8s135-deployment-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/controllers/deployment.md",
+      "checked_at": "2026-09-29T06:08:58.490529+00:00",
+      "health": {
+        "id": "k8s135-deployment-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/controllers/deployment.md",
+        "checked_at": "2026-09-29T06:08:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/controllers/deployment.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/controllers/deployment.md",
+      "sha256": "f014af52f9a8a2455ffc98fb7b07532da86e71c278598013e376fdaa520952fb",
+      "text_characters": 54181
+    },
+    {
+      "id": "k8s135-endpointslices-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/services-networking/endpoint-slices.md",
+      "checked_at": "2026-09-29T06:08:58.545295+00:00",
+      "health": {
+        "id": "k8s135-endpointslices-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/services-networking/endpoint-slices.md",
+        "checked_at": "2026-09-29T06:08:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/services-networking/endpoint-slices.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/services-networking/endpoint-slices.md",
+      "sha256": "3728dde021155cb37ae1da6a9a9e0c8d02bbe8568fceb24fe0b40bc6e16c9caf",
+      "text_characters": 9589
+    },
+    {
+      "id": "k8s135-configmap-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/configuration/configmap.md",
+      "checked_at": "2026-09-29T06:08:58.622943+00:00",
+      "health": {
+        "id": "k8s135-configmap-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/configuration/configmap.md",
+        "checked_at": "2026-09-29T06:08:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/configuration/configmap.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/configuration/configmap.md",
+      "sha256": "2e3860f6aeb7d86e6d2dd8f32493dbc1d52ce1c54606cb08455107b297a63a2a",
+      "text_characters": 12649
+    },
+    {
+      "id": "k8s135-network-policies-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/services-networking/network-policies.md",
+      "checked_at": "2026-09-29T06:08:58.767490+00:00",
+      "health": {
+        "id": "k8s135-network-policies-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/services-networking/network-policies.md",
+        "checked_at": "2026-09-29T06:08:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/services-networking/network-policies.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/services-networking/network-policies.md",
+      "sha256": "c5ab165e6c6d91f6abff48b06d57a57a600d7e8c5e91c3ced2cf0cf777e409a9",
+      "text_characters": 22521
+    },
+    {
+      "id": "k8s135-persistent-volumes-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/storage/persistent-volumes.md",
+      "checked_at": "2026-09-29T06:08:58.776273+00:00",
+      "health": {
+        "id": "k8s135-persistent-volumes-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/storage/persistent-volumes.md",
+        "checked_at": "2026-09-29T06:08:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/storage/persistent-volumes.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/storage/persistent-volumes.md",
+      "sha256": "9fe43833e202466627f08e901a805130dadc2bf8b90bb1d239621db3701b82f5",
+      "text_characters": 52117
+    },
+    {
+      "id": "helm3-template",
+      "url": "https://docs.helm.sh/docs/v3/helm/helm_template/",
+      "checked_at": "2026-09-29T06:08:58.925065+00:00",
+      "health": {
+        "id": "helm3-template",
+        "url": "https://docs.helm.sh/docs/v3/helm/helm_template/",
+        "checked_at": "2026-09-29T06:08:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.helm.sh/docs/v3/helm/helm_template/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "helm template | Helm",
+        "canonical_url": "https://helm.sh/docs/v3/helm/helm_template",
+        "duration_signals": [],
+        "signal_fingerprint": "d1d2870c03ff5b1b8f548c5fba64f0f0311208057c5ec6e7e2bf67bc6c6472d1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.helm.sh/docs/v3/helm/helm_template/",
+      "sha256": "406deef00425efd6dcaa1c0dbcd919a79ffbb321b5f3bbe23020db5be3d578f5",
+      "text_characters": 7410
+    },
+    {
+      "id": "helm3-charts",
+      "url": "https://docs.helm.sh/docs/v3/topics/charts/",
+      "checked_at": "2026-09-29T06:08:58.987548+00:00",
+      "health": {
+        "id": "helm3-charts",
+        "url": "https://docs.helm.sh/docs/v3/topics/charts/",
+        "checked_at": "2026-09-29T06:08:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.helm.sh/docs/v3/topics/charts/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Charts | Helm",
+        "canonical_url": "https://helm.sh/docs/v3/topics/charts",
+        "duration_signals": [],
+        "signal_fingerprint": "decf9301d0008621a7e9cbfdc1e5715aceab508b6cc701a702f2175acb5b8840",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.helm.sh/docs/v3/topics/charts/",
+      "sha256": "b3a4a8f651a5bfbe0d3c60c4cc50c4a18ded8d1b431524b7b8468f00a9ee5c06",
+      "text_characters": 36591
+    },
+    {
+      "id": "helm3-values",
+      "url": "https://docs.helm.sh/docs/v3/chart_template_guide/values_files/",
+      "checked_at": "2026-09-29T06:08:59.003554+00:00",
+      "health": {
+        "id": "helm3-values",
+        "url": "https://docs.helm.sh/docs/v3/chart_template_guide/values_files/",
+        "checked_at": "2026-09-29T06:08:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.helm.sh/docs/v3/chart_template_guide/values_files/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Values Files | Helm",
+        "canonical_url": "https://helm.sh/docs/v3/chart_template_guide/values_files",
+        "duration_signals": [],
+        "signal_fingerprint": "1f9a42abe39ea122f4b03db8e2e2d056be618b5e249165faf756415b8630a381",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.helm.sh/docs/v3/chart_template_guide/values_files/",
+      "sha256": "8a6f468d17c5fa22f8c86d8e2c14b56f4fdc0146ab433307721b81fb482cd2a5",
+      "text_characters": 5055
+    },
+    {
+      "id": "helm3-tips",
+      "url": "https://docs.helm.sh/docs/v3/howto/charts_tips_and_tricks/",
+      "checked_at": "2026-09-29T06:08:59.772908+00:00",
+      "health": {
+        "id": "helm3-tips",
+        "url": "https://docs.helm.sh/docs/v3/howto/charts_tips_and_tricks/",
+        "checked_at": "2026-09-29T06:08:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.helm.sh/docs/v3/howto/charts_tips_and_tricks/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Chart Development Tips and Tricks | Helm",
+        "canonical_url": "https://helm.sh/docs/v3/howto/charts_tips_and_tricks",
+        "duration_signals": [],
+        "signal_fingerprint": "3b78d73e5cb3a0903aeec1165421821a6bd2845ba8d624b02c665c4ecf2c98a9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.helm.sh/docs/v3/howto/charts_tips_and_tricks/",
+      "sha256": "d60de957176b516a36aea9710b7f44701545d14f2f6c7804ccc42d6d447c59a0",
+      "text_characters": 10769
+    },
+    {
+      "id": "helm322-release",
+      "url": "https://github.com/helm/helm/releases/tag/v3.22.0",
+      "checked_at": "2026-09-29T06:08:59.842431+00:00",
+      "health": {
+        "id": "helm322-release",
+        "url": "https://github.com/helm/helm/releases/tag/v3.22.0",
+        "checked_at": "2026-09-29T06:08:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/helm/helm/releases/tag/v3.22.0",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Release Helm v3.22.0 · helm/helm",
+        "canonical_url": "https://github.com/helm/helm/releases/tag/v3.22.0",
+        "duration_signals": [],
+        "signal_fingerprint": "ab1b5b8012db72da4d0a18198b94a1f5b3cd62358ce34fe0b083488c58472cef",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/helm/helm/releases/tag/v3.22.0",
+      "sha256": "02ba6f3380a4b2875db437d90e03b6738d7208cb51c2a458611ff73e515e776e",
+      "text_characters": 9921
+    },
+    {
+      "id": "docker-dockerfile-reference",
+      "url": "https://docs.docker.com/reference/dockerfile/",
+      "checked_at": "2026-09-29T06:08:59.972552+00:00",
+      "health": {
+        "id": "docker-dockerfile-reference",
+        "url": "https://docs.docker.com/reference/dockerfile/",
+        "checked_at": "2026-09-29T06:08:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.docker.com/reference/dockerfile/",
+        "content_type": "text/html",
+        "page_title": "Dockerfile reference",
+        "canonical_url": "https://docs.docker.com/reference/dockerfile/",
+        "duration_signals": [
+          "17 min"
+        ],
+        "signal_fingerprint": "3725550647dbe12928afb158a252cd7021d2097b1fb83ae837b60d89d8833169",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.docker.com/reference/dockerfile/",
+      "sha256": "63293c82b052f2f0d9a9accbe4abbe2cc7985cc2cc1ad084f4e48bedbb08c644",
+      "text_characters": 115435
+    },
+    {
+      "id": "helm3-eol",
+      "url": "https://helm.sh/blog/helm-v3-end-of-life/",
+      "checked_at": "2026-09-29T06:13:41.996283+00:00",
+      "health": {
+        "id": "helm3-eol",
+        "url": "https://helm.sh/blog/helm-v3-end-of-life/",
+        "checked_at": "2026-09-29T06:13:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://helm.sh/blog/helm-v3-end-of-life/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Helm 3 End of Life | Helm",
+        "canonical_url": "https://helm.sh/blog/helm-v3-end-of-life",
+        "duration_signals": [
+          "5 min"
+        ],
+        "signal_fingerprint": "a25b21945bc814cccbdff49cd50fed0522045de7634eaf76f321c3de408a525c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://helm.sh/blog/helm-v3-end-of-life/",
+      "sha256": "dd60390d0b9f1138194e307a743373b14390d3c11d41ed6b6406d85da1a3d670",
+      "text_characters": 6255
+    },
+    {
+      "id": "k8s135-secrets-source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/configuration/secret.md",
+      "checked_at": "2026-09-29T06:16:36.676250+00:00",
+      "health": {
+        "id": "k8s135-secrets-source",
+        "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/configuration/secret.md",
+        "checked_at": "2026-09-29T06:16:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/configuration/secret.md",
+        "content_type": "text/plain; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/configuration/secret.md",
+      "sha256": "7b39556e8ee3853333baa278f8b770048a334c38fe076181ee29deffc813dbac",
+      "text_characters": 32285
+    }
+  ],
+  "added_source_ids": [
+    "ckad135-curriculum-pdf",
+    "k8s135-sidecars-source",
+    "k8s135-init-containers-source",
+    "k8s135-probes-source",
+    "k8s135-jobs-source",
+    "k8s135-cronjobs-source",
+    "k8s135-security-context-source",
+    "k8s135-serviceaccounts-source",
+    "k8s135-resources-source",
+    "k8s135-quota-source",
+    "k8s135-deprecation-source",
+    "helm3-template",
+    "helm3-charts",
+    "helm3-values",
+    "helm3-tips",
+    "helm322-release",
+    "docker-dockerfile-reference",
+    "helm3-eol",
+    "k8s135-secrets-source"
+  ],
+  "findings": [
+    {
+      "id": "ckad-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Approximate version alignment is not a scheduled transition",
+      "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CKAD"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The live page still names v1.35 with no announced switch date.",
+      "recommendation": "Change unsupported scheduled metadata to none-announced while retaining explicit version watch.",
+      "disposition": "applied",
+      "source_id": "lf-ckad-blueprint",
+      "resolution": "Change unsupported scheduled metadata to none-announced while retaining explicit version watch."
+    },
+    {
+      "id": "ckad-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Native sidecars differ from regular init and app containers",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/pods/sidecar-containers.md",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CKAD"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Restartable init sidecars run beyond initialization and do not block Job completion after the main container finishes.",
+      "recommendation": "Correct shared-Pod lifecycle simplification; add startup/termination/readiness distinctions and stronger lab.",
+      "disposition": "applied",
+      "source_id": "k8s135-sidecars-source",
+      "resolution": "Correct shared-Pod lifecycle simplification; add startup/termination/readiness distinctions and stronger lab."
+    },
+    {
+      "id": "ckad-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Ready is not always immediately available and timeout does not auto-rollback",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/controllers/deployment.md",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CKAD"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "minReadySeconds defines availability delay; ProgressDeadlineExceeded reports stalled progress without automatic rollback.",
+      "recommendation": "Correct rollout explanation and add explicit observation/repair decision.",
+      "disposition": "applied",
+      "source_id": "k8s135-deployment-source",
+      "resolution": "Correct rollout explanation and add explicit observation/repair decision."
+    },
+    {
+      "id": "ckad-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Single-completion Job can start the same program twice",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/controllers/job.md",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CKAD"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Even parallelism1/completions1/restartNever does not promise one execution.",
+      "recommendation": "Require business-level idempotence and distinguish CronJob concurrency from shared locking.",
+      "disposition": "applied",
+      "source_id": "k8s135-jobs-source",
+      "resolution": "Require business-level idempotence and distinguish CronJob concurrency from shared locking."
+    },
+    {
+      "id": "ckad-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Merged values and rendered resources need different checks",
+      "url": "https://docs.helm.sh/docs/v3/topics/charts/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CKAD"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Schema validates final merged values; informational appVersion is separate from actual image reference.",
+      "recommendation": "Publish exact chart and execute defaults/overrides/zero/string/schema/reference tests; show faulty selector passes lint.",
+      "disposition": "applied",
+      "source_id": "helm3-charts",
+      "resolution": "Publish exact chart and execute defaults/overrides/zero/string/schema/reference tests; show faulty selector passes lint."
+    },
+    {
+      "id": "ckad-deep-6",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Helm 3 support timing and major-version semantics need qualification",
+      "url": "https://helm.sh/blog/helm-v3-end-of-life/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CKAD"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "June2announcement extends security fixes toFebruary10,2027 and identifies final limitedSeptember2026minor.",
+      "recommendation": "Date the exercised tool and version-sensitive workflow; do not infer assignedexamversion or test Helm4 migration.",
+      "disposition": "applied",
+      "source_id": "helm3-eol",
+      "resolution": "Date the exercised tool and version-sensitive workflow; do not infer assignedexamversion or test Helm4 migration."
+    },
+    {
+      "id": "ckad-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "403 can report quota failure rather than RBAC denial",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/policy/resource-quotas.md",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CKAD"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Quota admission rejects violating requests with403 and explanatory body.",
+      "recommendation": "Add original quota arithmetic and effective request/default distinction.",
+      "disposition": "applied",
+      "source_id": "k8s135-quota-source",
+      "resolution": "Add original quota arithmetic and effective request/default distinction."
+    },
+    {
+      "id": "ckad-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Pod token automount setting overrides ServiceAccount setting",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/configure-service-account.md",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CKAD"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Explicit Pod value takes precedence; automatic mounting and permission grants are separate concerns.",
+      "recommendation": "Teach actual Pod/audience evidence and avoid treating automount false as RBAC removal.",
+      "disposition": "applied",
+      "source_id": "k8s135-serviceaccounts-source",
+      "resolution": "Teach actual Pod/audience evidence and avoid treating automount false as RBAC removal."
+    },
+    {
+      "id": "ckad-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "EndpointSlice membership does not imply readiness",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/services-networking/endpoint-slices.md",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CKAD"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Unready or terminating endpoint addresses can be listed with conditions.",
+      "recommendation": "Correct Service and knowledge-check explanations; separate empty slices from unusable listed endpoints.",
+      "disposition": "applied",
+      "source_id": "k8s135-endpointslices-source",
+      "resolution": "Correct Service and knowledge-check explanations; separate empty slices from unusable listed endpoints."
+    },
+    {
+      "id": "ckad-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Changing apiVersion alone can miss schema migration",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/reference/using-api/deprecation-guide.md",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CKAD"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Removed Ingress/HPA APIs require field changes in their stable versions.",
+      "recommendation": "Add concise historical migration table and retain live server/behavior validation boundary.",
+      "disposition": "applied",
+      "source_id": "k8s135-deprecation-source",
+      "resolution": "Add concise historical migration table and retain live server/behavior validation boundary."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "helm3-eol",
+      "authors": [
+        "George Jenkins"
+      ],
+      "published_on": "2026-06-02",
+      "disposition": "accepted-with-limits",
+      "value": "Updated Helm3 support timeline and installedmajor-version workflow boundary.",
+      "limits": "Fullpostread; no Helm4 migration tested or CKAD version inferred."
+    },
+    {
+      "source_id": "kubernetes-ingress-nginx-retirement",
+      "authors": [
+        "Tabitha Sable, Kubernetes Security Response Committee"
+      ],
+      "published_on": "2025-11-11",
+      "disposition": "accepted-with-limits",
+      "value": "Retain controllerretirement versus Ingress API/objective distinction.",
+      "limits": "Fullannouncementread duringprecedingCKAreview; no controllermigration executed."
+    },
+    {
+      "source_id": "kubernetes-v1-37-release",
+      "published_on": "2026-08-26",
+      "disposition": "accepted-for-release-watch-only",
+      "value": "Date prompts exam-version recheck.",
+      "limits": "Introduction/releasedate reviewed previously,not entirefeaturebody; no1.37features adopted."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "cluster_labs_executed": 0,
+    "local_helm_chart_exercises": 1,
+    "public_chart_files": 7,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 27,
+      "checks": [
+        "strict lint succeeds for declared Kubernetes version",
+        "three rendered resource kinds",
+        "default replica count",
+        "values file overrides replica count",
+        "nested override preserves image repository",
+        "namespace is rendered consistently",
+        "service selector matches template",
+        "configmap reference matches rendered name",
+        "named service port matches container port",
+        "config content changes pod checksum",
+        "checksum agrees with message bytes",
+        "set takes precedence and zero is retained",
+        "later values file wins",
+        "set-string preserves leading zeros",
+        "release names isolate service selection",
+        "render repeats deterministically",
+        "appVersion is informational unless template uses it",
+        "schema rejects string replica count",
+        "schema rejects negative replicas",
+        "schema rejects out-of-range port",
+        "schema rejects misspelled key",
+        "required rejects empty repository",
+        "chart rejects incompatible declared Kubernetes version",
+        "wrong selector still renders",
+        "chart lint alone does not find wrong selector",
+        "selector repair returns expected rendering",
+        "owned temporary files removed"
+      ],
+      "negative_cases": [
+        {
+          "label": "schema rejects string replica count",
+          "exit_code": 1
+        },
+        {
+          "label": "schema rejects negative replicas",
+          "exit_code": 1
+        },
+        {
+          "label": "schema rejects out-of-range port",
+          "exit_code": 1
+        },
+        {
+          "label": "schema rejects misspelled key",
+          "exit_code": 1
+        },
+        {
+          "label": "required rejects empty repository",
+          "exit_code": 1
+        },
+        {
+          "label": "chart rejects incompatible declared Kubernetes version",
+          "exit_code": 1
+        }
+      ],
+      "tool": "Helm v3.22.0+g144ca65",
+      "public_files_sha256": {
+        "Chart.yaml": "165626ff25af0f687a5dbfd67e047dd6edd8bdd95aaa3ed81f75c6c459e81abf",
+        "values.yaml": "c02f805fb0780a82c1d3d5446df7a7f57f7be2feebe188a7c1a7bb663f4a7ed0",
+        "values.schema.json": "ec03c64eb43a0ab29af16370a7aee7457d73a7531df5f3e892fbc660a4991479",
+        "templates/configmap.yaml": "8cf515d5a5759469a6bdb548b670954331658ab5b3b022faecb371612ebfd6c8",
+        "templates/deployment.yaml": "1aceb3491137ea8911ea1ad2bcc21346308a98d14a553445c55e6443a8ebbac9",
+        "templates/service.yaml": "82baa1a0ba815a4ccd70fd32773c517fe5837aa96620191d45e8790904339d23",
+        "practice-values.yaml": "30f656ee26e6e7c4bd56a048287cf3914bcc28f90c15a2b9bf7cf8065651ffac"
+      },
+      "cleanup_verified": true,
+      "execution_boundary": "Helm template and lint only, with explicit local chart and isolated empty kubeconfig/config/cache/data/plugin directories. No install,upgrade,rollback,registry,plugin,networklookup,API,container or traffic executed.",
+      "public_files_hash_matched": true
+    }
+  },
+  "answered_checks": 46,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "All eight complete cluster labs remain proposed. Earlier Docker Linux-engine named-pipe probe failed and native Linux runtime blocker remains deferred for tomorrow. No services started/restarted.",
+    "27 actual Helm3.22.0 render/lint checks, six intended failure cases and a wrong selector that still renders/lints; seven public files exactly matched by SHA. No running application or Helm release lifecycle tested.",
+    "Tool archive checksum verified before execution; owned temporary chart/config/cache/data/plugin directories and empty kubeconfig removed. No existing credentials,registry,plugin,API,remotechart,image or infrastructure accessed by the exercise.",
+    "Explicit --kube-version1.35.9 supplies local rendering capabilities and chart range checks; it does not establish server API support or an assigned CKAD Helm version.",
+    "No Docker build,signal handling,Pod/Job/CronJob/native sidecar,probe,admission/RBAC/quota,security/filesystem/token,CNI/policy/Ingress/DNS or CSI/persistence behavior executed.",
+    "Current canonical CKAD page remainsv1.35 despitev1.37release. September23–October21watch is approximate,not an announced exam transition. Helm3 security timeline does not change exam objectives.",
+    "Public catalog only; blocked OReilly/Udemy claims unverified. KodeKloud old public update history and missing Kustomize title are metadata gaps,not proof of actual paid course/runtime absence.",
+    "No paid lesson,providerlab,mockquestion,simulator task or recalled exam content accessed. New numerical examples are explanations rather than controller simulations."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "27 local Helm render/lint checks; seven public chart files hash-matched. No cluster,container,Helm release lifecycle or traffic validation.",
+    "passed": 27,
+    "checks": [
+      "strict lint succeeds for declared Kubernetes version",
+      "three rendered resource kinds",
+      "default replica count",
+      "values file overrides replica count",
+      "nested override preserves image repository",
+      "namespace is rendered consistently",
+      "service selector matches template",
+      "configmap reference matches rendered name",
+      "named service port matches container port",
+      "config content changes pod checksum",
+      "checksum agrees with message bytes",
+      "set takes precedence and zero is retained",
+      "later values file wins",
+      "set-string preserves leading zeros",
+      "release names isolate service selection",
+      "render repeats deterministically",
+      "appVersion is informational unless template uses it",
+      "schema rejects string replica count",
+      "schema rejects negative replicas",
+      "schema rejects out-of-range port",
+      "schema rejects misspelled key",
+      "required rejects empty repository",
+      "chart rejects incompatible declared Kubernetes version",
+      "wrong selector still renders",
+      "chart lint alone does not find wrong selector",
+      "selector repair returns expected rendering",
+      "owned temporary files removed"
+    ],
+    "negative_cases": [
+      {
+        "label": "schema rejects string replica count",
+        "exit_code": 1
+      },
+      {
+        "label": "schema rejects negative replicas",
+        "exit_code": 1
+      },
+      {
+        "label": "schema rejects out-of-range port",
+        "exit_code": 1
+      },
+      {
+        "label": "schema rejects misspelled key",
+        "exit_code": 1
+      },
+      {
+        "label": "required rejects empty repository",
+        "exit_code": 1
+      },
+      {
+        "label": "chart rejects incompatible declared Kubernetes version",
+        "exit_code": 1
+      }
+    ],
+    "tool": "Helm v3.22.0+g144ca65",
+    "public_files_sha256": {
+      "Chart.yaml": "165626ff25af0f687a5dbfd67e047dd6edd8bdd95aaa3ed81f75c6c459e81abf",
+      "values.yaml": "c02f805fb0780a82c1d3d5446df7a7f57f7be2feebe188a7c1a7bb663f4a7ed0",
+      "values.schema.json": "ec03c64eb43a0ab29af16370a7aee7457d73a7531df5f3e892fbc660a4991479",
+      "templates/configmap.yaml": "8cf515d5a5759469a6bdb548b670954331658ab5b3b022faecb371612ebfd6c8",
+      "templates/deployment.yaml": "1aceb3491137ea8911ea1ad2bcc21346308a98d14a553445c55e6443a8ebbac9",
+      "templates/service.yaml": "82baa1a0ba815a4ccd70fd32773c517fe5837aa96620191d45e8790904339d23",
+      "practice-values.yaml": "30f656ee26e6e7c4bd56a048287cf3914bcc28f90c15a2b9bf7cf8065651ffac"
+    },
+    "cleanup_verified": true,
+    "public_files_hash_matched": true,
+    "learning_catalog_consistency": "passed"
+  },
+  "tool_installation_receipt": {
+    "version": "v3.22.0+g144ca65",
+    "url": "https://get.helm.sh/helm-v3.22.0-windows-amd64.zip",
+    "checksum_url": "https://get.helm.sh/helm-v3.22.0-windows-amd64.zip.sha256sum",
+    "sha256": "899615865726d39f9b245e71e848c5bf4adc7ed33a8c43ede660facb48151b43",
+    "bytes": 19083589,
+    "executable_sha256": "370c9bbf0fd4c31fa141b22403455a7f7ab461fd7b7e67bbe5914686d9ad9bdb",
+    "scope": "Checksum-verified local executable only; no installer,PATH,plugins,repository,registry,kubeconfig or cluster modifications."
+  },
+  "runtime_blocker": {
+    "checked_on": "2026-09-29",
+    "operation": "Read-only Docker Linux engine version probe",
+    "endpoint": "npipe:////./pipe/dockerDesktopLinuxEngine",
+    "exit_code": 1,
+    "result": "Named pipe was not found; local Docker Linux engine unavailable at this endpoint.",
+    "action": "No service started or restarted; prior WSL/Linux startup blocker remains deferred for tomorrow.",
+    "installed_client": "Docker bundled kubectl v1.36.1, kustomize v5.8.1; no cluster contacted.",
+    "scope": "Reused earlier same-session read-only Docker endpoint result; no additional runtime/startup attempts in CKAD."
+  },
+  "curriculum_pdf_receipt": {
+    "id": "ckad135-curriculum-pdf",
+    "url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKAD_Curriculum_v1.35.pdf",
+    "checked_at": "2026-09-29T06:10:02.916098+00:00",
+    "health": {
+      "id": "ckad135-curriculum-pdf",
+      "url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKAD_Curriculum_v1.35.pdf",
+      "checked_at": "2026-09-29T06:10:02+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKAD_Curriculum_v1.35.pdf",
+      "content_type": "application/octet-stream",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": ""
+    },
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKAD_Curriculum_v1.35.pdf",
+    "sha256": "7736d2f0291239d62e9fc618304413ee9b6e53fc4580aac70bf4328203c1c210",
+    "bytes": 149864,
+    "pdf_pages": 3,
+    "text_characters": 2435
+  }
+}

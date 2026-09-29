@@ -4,6 +4,253 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-ckad-deep-review",
+      "title": "CKAD complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CKAD"
+      ],
+      "results": [
+        {
+          "exam_code": "CKAD",
+          "vendor_id": "linux-foundation",
+          "guide_path": "guides/CKAD-certified-kubernetes-application-developer.md",
+          "baseline_sha256": "4d856dab219b48aa0a72e1d93c36a29ebe36c0389d00a629a4cdbf49b95525c9",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Full live outline and actual three-page CNCF v1.35 PDF read: 24 competencies in groups 4/4/5/8/3, weights 20/20/15/25/20. PDF layout extraction confirms Kustomize belongs to deployment; typography and within-domain order differ from live page. Two-hour performance exam, two-year validity,12-month eligibility,one retake,two36-hour simulator activations. Canonical version remains1.35; unchanged hashes, no baseline rewrite. Unsupported scheduled flag corrected without removing approximate release watch."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Targeted release-1.35 init/sidecar,Jobs/CronJobs,Deployment/probes,resource/quota,ConfigMap/Secret,ServiceAccount/security,EndpointSlice/policy/PV and deprecation sources read. Helm3 chart/schema/value/template docs and Docker entrypoint/buildsecret reference read. Exact seven chart files executed in27 local Helm3.22.0 checks; no API/container/cluster execution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Kubernetes1.37 announcement remains only a release-date watch; no feature adoption or exam switch inferred. Full ingress-nginx retirement notice already read in preceding CKA review and reused with scope limits. Full June2,2026 GeorgeJenkins Helm3 support announcement read: final limited minorSeptember2026 and security fixes throughFebruary10,2027; Helm3.22.0release and official artifactchecksumverified. No CKAD Helm majorversion inferred."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "LFD25935h/eightchapters requires Linux plus cloud/VirtualBox; no hostedlab claim borrowed from LFS258. Pluralsight now5courses/4labs/10h with September9,2026deploymentcourse,2026labs and older material; no separately titled networking course visible. KodeKloud14.75h/13modules/188lessons,publichistory1.33inprogressMay2025,no Kustomize title visible; no conclusion about paid interiors/current runtime. OReilly/Udemyblocked and old claims qualified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Correct allcontainers-start/stop-as-unit and unqualified initcompletion; teach native sidecar and Jobs. Add minReadySeconds and noautomaticrollback; fix ready-only EndpointSlice claim. Add exact values/schema/checksum exercise with unfindable-by-lint selector fault, quota403 versusRBAC,tokenmount precedence,volume/security effective behavior,obsoleteAPI migration table,and Job/CronJob idempotence.46inlineanswers,8proposedclusterlabs,Places to learn final."
+            }
+          },
+          "findings": [
+            {
+              "id": "ckad-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Approximate version alignment is not a scheduled transition",
+              "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKAD"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The live page still names v1.35 with no announced switch date.",
+              "recommendation": "Change unsupported scheduled metadata to none-announced while retaining explicit version watch.",
+              "disposition": "applied",
+              "source_id": "lf-ckad-blueprint",
+              "resolution": "Change unsupported scheduled metadata to none-announced while retaining explicit version watch."
+            },
+            {
+              "id": "ckad-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Native sidecars differ from regular init and app containers",
+              "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/pods/sidecar-containers.md",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKAD"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Restartable init sidecars run beyond initialization and do not block Job completion after the main container finishes.",
+              "recommendation": "Correct shared-Pod lifecycle simplification; add startup/termination/readiness distinctions and stronger lab.",
+              "disposition": "applied",
+              "source_id": "k8s135-sidecars-source",
+              "resolution": "Correct shared-Pod lifecycle simplification; add startup/termination/readiness distinctions and stronger lab."
+            },
+            {
+              "id": "ckad-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Ready is not always immediately available and timeout does not auto-rollback",
+              "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/controllers/deployment.md",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKAD"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "minReadySeconds defines availability delay; ProgressDeadlineExceeded reports stalled progress without automatic rollback.",
+              "recommendation": "Correct rollout explanation and add explicit observation/repair decision.",
+              "disposition": "applied",
+              "source_id": "k8s135-deployment-source",
+              "resolution": "Correct rollout explanation and add explicit observation/repair decision."
+            },
+            {
+              "id": "ckad-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Single-completion Job can start the same program twice",
+              "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/controllers/job.md",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKAD"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Even parallelism1/completions1/restartNever does not promise one execution.",
+              "recommendation": "Require business-level idempotence and distinguish CronJob concurrency from shared locking.",
+              "disposition": "applied",
+              "source_id": "k8s135-jobs-source",
+              "resolution": "Require business-level idempotence and distinguish CronJob concurrency from shared locking."
+            },
+            {
+              "id": "ckad-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Merged values and rendered resources need different checks",
+              "url": "https://docs.helm.sh/docs/v3/topics/charts/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKAD"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Schema validates final merged values; informational appVersion is separate from actual image reference.",
+              "recommendation": "Publish exact chart and execute defaults/overrides/zero/string/schema/reference tests; show faulty selector passes lint.",
+              "disposition": "applied",
+              "source_id": "helm3-charts",
+              "resolution": "Publish exact chart and execute defaults/overrides/zero/string/schema/reference tests; show faulty selector passes lint."
+            },
+            {
+              "id": "ckad-deep-6",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Helm 3 support timing and major-version semantics need qualification",
+              "url": "https://helm.sh/blog/helm-v3-end-of-life/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKAD"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "June2announcement extends security fixes toFebruary10,2027 and identifies final limitedSeptember2026minor.",
+              "recommendation": "Date the exercised tool and version-sensitive workflow; do not infer assignedexamversion or test Helm4 migration.",
+              "disposition": "applied",
+              "source_id": "helm3-eol",
+              "resolution": "Date the exercised tool and version-sensitive workflow; do not infer assignedexamversion or test Helm4 migration."
+            },
+            {
+              "id": "ckad-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "403 can report quota failure rather than RBAC denial",
+              "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/policy/resource-quotas.md",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKAD"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Quota admission rejects violating requests with403 and explanatory body.",
+              "recommendation": "Add original quota arithmetic and effective request/default distinction.",
+              "disposition": "applied",
+              "source_id": "k8s135-quota-source",
+              "resolution": "Add original quota arithmetic and effective request/default distinction."
+            },
+            {
+              "id": "ckad-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Pod token automount setting overrides ServiceAccount setting",
+              "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/configure-service-account.md",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKAD"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Explicit Pod value takes precedence; automatic mounting and permission grants are separate concerns.",
+              "recommendation": "Teach actual Pod/audience evidence and avoid treating automount false as RBAC removal.",
+              "disposition": "applied",
+              "source_id": "k8s135-serviceaccounts-source",
+              "resolution": "Teach actual Pod/audience evidence and avoid treating automount false as RBAC removal."
+            },
+            {
+              "id": "ckad-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "EndpointSlice membership does not imply readiness",
+              "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/services-networking/endpoint-slices.md",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKAD"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Unready or terminating endpoint addresses can be listed with conditions.",
+              "recommendation": "Correct Service and knowledge-check explanations; separate empty slices from unusable listed endpoints.",
+              "disposition": "applied",
+              "source_id": "k8s135-endpointslices-source",
+              "resolution": "Correct Service and knowledge-check explanations; separate empty slices from unusable listed endpoints."
+            },
+            {
+              "id": "ckad-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Changing apiVersion alone can miss schema migration",
+              "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/reference/using-api/deprecation-guide.md",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CKAD"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Removed Ingress/HPA APIs require field changes in their stable versions.",
+              "recommendation": "Add concise historical migration table and retain live server/behavior validation boundary.",
+              "disposition": "applied",
+              "source_id": "k8s135-deprecation-source",
+              "resolution": "Add concise historical migration table and retain live server/behavior validation boundary."
+            }
+          ],
+          "notes": "Mapped all 24 public competencies and the actual three-page v1.35 curriculum PDF; both monitor snapshots remain unchanged. Added seven exact original chart files with 27 executed Helm render/lint checks, corrected native sidecar, Deployment availability and EndpointSlice explanations, expanded retry/security/API migration distinctions, answered 46 checks and strengthened eight proposed cluster labs. Refreshed public learning metadata and Helm lifecycle evidence; live cluster validation remains deferred. Same-context AI review; human review pending. See docs/research/2026-09-29-ckad-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 10,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-cka-deep-review",
       "title": "CKA complete guide and learning-content review",
       "rubric_version": 1,

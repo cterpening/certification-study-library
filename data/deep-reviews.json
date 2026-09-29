@@ -5,6 +5,29 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "CKAD",
+      "reviewed_on": "2026-09-29",
+      "guide_sha256": "37c79539ba518fe5d6ab9fe0c41ff0bcdb25ad49d7e283ad05f45216a31297a5",
+      "objective_count": 24,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-29-ckad-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-29-ckad-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "Same-context AI review; independent human review pending.",
+        "All eight complete cluster labs remain proposed. Earlier Docker Linux-engine named-pipe probe failed and native Linux runtime blocker remains deferred for tomorrow. No services started/restarted.",
+        "27 actual Helm3.22.0 render/lint checks, six intended failure cases and a wrong selector that still renders/lints; seven public files exactly matched by SHA. No running application or Helm release lifecycle tested.",
+        "Tool archive checksum verified before execution; owned temporary chart/config/cache/data/plugin directories and empty kubeconfig removed. No existing credentials,registry,plugin,API,remotechart,image or infrastructure accessed by the exercise.",
+        "Explicit --kube-version1.35.9 supplies local rendering capabilities and chart range checks; it does not establish server API support or an assigned CKAD Helm version.",
+        "No Docker build,signal handling,Pod/Job/CronJob/native sidecar,probe,admission/RBAC/quota,security/filesystem/token,CNI/policy/Ingress/DNS or CSI/persistence behavior executed.",
+        "Current canonical CKAD page remainsv1.35 despitev1.37release. September23–October21watch is approximate,not an announced exam transition. Helm3 security timeline does not change exam objectives.",
+        "Public catalog only; blocked OReilly/Udemy claims unverified. KodeKloud old public update history and missing Kustomize title are metadata gaps,not proof of actual paid course/runtime absence.",
+        "No paid lesson,providerlab,mockquestion,simulator task or recalled exam content accessed. New numerical examples are explanations rather than controller simulations."
+      ]
+    },
+    {
       "exam_code": "CKA",
       "reviewed_on": "2026-09-29",
       "guide_sha256": "88eab9b2c54dc6ee8c0f6e6ca7e41afd20d7f18111b030cf5da0ccdb68c46ca5",

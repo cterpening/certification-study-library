@@ -1368,6 +1368,8 @@ The review maps every v1.35 domain to a confirm context/namespace/owner → insp
 
 ## CKAD coverage record
 
+The September 29 [deep review](research/2026-09-29-ckad-deep-review.md) maps 24 detailed objectives. Mapped all 24 public competencies and the actual three-page v1.35 curriculum PDF; both monitor snapshots remain unchanged. Added seven exact original chart files with 27 executed Helm render/lint checks, corrected native sidecar, Deployment availability and EndpointSlice explanations, expanded retry/security/API migration distinctions, answered 46 checks and strengthened eight proposed cluster labs. Refreshed public learning metadata and Helm lifecycle evidence; live cluster validation remains deferred. Current guide citations: 32 registered, 30 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 6, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Kubernetes v1.35 and five weighted domains—Application Design and Build (20%), Application Deployment (20%), Application Observability and Maintenance (15%), Application Environment, Configuration and Security (25%), and Services and Networking (20%)

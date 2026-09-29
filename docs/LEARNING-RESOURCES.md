@@ -3286,15 +3286,23 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 ### Certified Kubernetes Application Developer (CKAD)
 
-- Official scope: [CKAD certification page](https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/) and [public CNCF v1.35 curriculum](https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum_v1.35.pdf) (**3–5 hours mapping/review**) plus the included Killer.sh simulator (**8–14 selected hours estimated**)
-- Versioned reference: [Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) (**18–30 selected reading/lab hours**), not a cover-to-cover course
-- Official course: [Kubernetes for Developers (LFD259)](https://training.linuxfoundation.org/training/kubernetes-for-developers/) (**35 listed course hours plus 30–60 independent lab hours**)
-- Modular route: [Pluralsight CKAD path](https://www.pluralsight.com/paths/certified-kubernetes-application-developer-ckad-2023) (**13 listed hours plus 25–50 lab hours**), six courses, four refreshed 2026 labs and a practice exam
-- Lab-first route: [KodeKloud CKAD](https://kodekloud.com/courses/certified-kubernetes-application-developer-ckad/) (**14.75 listed video hours plus browser labs/mock exams; allow 35–60 hours total**)
-- Compact route: [O'Reilly CKAD Prep Course](https://www.oreilly.com/videos/certified-kubernetes-application/0642572045296/) (**8 hours 3 minutes listed plus 20–40 lab hours**); published May 2024, so close v1.35 gaps explicitly
-- Same lab-first course through a marketplace: [Udemy/KodeKloud CKAD with Tests](https://www.udemy.com/course/certified-kubernetes-application-developer/) (**16 hours 34 minutes listed plus browser labs; allow 35–60 hours total**); choose this or KodeKloud, not both
+Resource details from the [CKAD guide](../guides/CKAD-certified-kubernetes-application-developer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Choose one current route, evolve one application through all five domains, and use the v1.35 objectives/documentation as the gap checklist. Verify older material for current API versions, security contexts, admission, multi-container behavior and release tooling. Reject recalled questions and simulator-task reproduction.
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official CKAD page](https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/) and [public CNCF v1.35 curriculum](https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum_v1.35.pdf) | Public; exam paid | 3–5 hours mapping/review, plus 8–14 selected simulator hours |
+| [Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) | Public | 18–30 selected reading/lab hours; use as a reference |
+| [Kubernetes v1.37 release](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/) | Public release watch; use only to trigger the exam-version recheck | 20–40 minutes |
+| [Ingress NGINX retirement notice](https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/) | Public operational warning; distinguishes the controller from the Ingress API | 15–25 minutes |
+| [Linux Foundation Kubernetes for Developers (LFD259)](https://training.linuxfoundation.org/training/kubernetes-for-developers/) | Paid | 35 listed course hours, eight chapters; Linux plus cloud/VirtualBox lab access required; add 30–60 independent lab hours |
+| [Pluralsight CKAD path](https://www.pluralsight.com/paths/certified-kubernetes-application-developer-ckad-2023) | Subscription/trial | 10 listed hours, five courses, four labs and practice exam; add 25–50 lab hours |
+| [KodeKloud CKAD](https://kodekloud.com/courses/certified-kubernetes-application-developer-ckad/) | Subscription/free preview | 14.75 listed video hours, 13 modules/188 lessons plus browser labs; public update history still names v1.33 in progress in May 2025; allow 35–60 hours total |
+| [O'Reilly CKAD Prep Course](https://www.oreilly.com/videos/certified-kubernetes-application/0642572045296/) | Subscription/trial | Earlier listing: 8 hours 3 minutes, May 2024; blocked now and not reverified; add 20–40 proposed lab hours |
+| [Udemy/KodeKloud CKAD with Tests](https://www.udemy.com/course/certified-kubernetes-application-developer/) | Paid; price varies | Earlier listing: 16 hours 34 minutes; blocked now and not reverified; allow 35–60 proposed total hours |
+
+LFD259 still describes self-managed Linux/cloud or VirtualBox labs; do not infer hosted browser labs from other Linux Foundation courses, and budget for possible cloud charges. Pluralsight includes a September 9, 2026 deployment course and four 2026 labs alongside older courses; its course list has no separately titled networking course, so verify coverage across the actual path. KodeKloud's public outline includes Helm and Ingress but does not visibly list Kustomize, and its stale lab-update history does not establish today's runtime version. Use the official objective map to check those gaps. Paid lessons, labs and mock questions were not accessed. Added practice times are planning estimates.
+
+This is not a complete list and is not meant to be consumed in full. Choose one current route, build one application through every domain, and use official v1.35 objectives/documentation as the gap checklist. The Udemy and KodeKloud entries are the same course family, so choose one access route. Verify older material for current API versions, security contexts, admission, multi-container behavior and release tooling. Avoid recalled tasks and question dumps; this is a performance exam.
 
 ### Certified Kubernetes Security Specialist (CKS)
 

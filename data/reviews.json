@@ -6923,24 +6923,70 @@
       "notes": "Mapped all27 public competencies against the live page and actual three-page v1.35 PDF; retained unchanged monitor snapshots. Added an exact original kubectl/Kustomize exercise with22 executed local checks, corrected EndpointSlice and PDB/rollout simplifications, expanded RBAC/configuration/HPA/Gateway/storage/recovery distinctions, strengthened46 answers and eight proposed cluster labs, and refreshed public catalog evidence. Live cluster validation remains deferred. See docs/research/2026-09-29-cka-deep-review.md"
     },
     {
-      "id":"ckad-2026-09-06-source-validation",
-      "exam_code":"CKAD",
-      "guide_path":"guides/CKAD-certified-kubernetes-application-developer.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-06",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/ckad-official-objectives.txt",
-      "blueprint_snapshot_sha256":"58b0290b61ba14ad68c02e06bcd2fbec14d23c4e555e69eb67a5615047e02ca1",
-      "objective_coverage":[
-        {"objective_group":"Application Design and Build (20%)","guide_sections":["Section 1","Integrated scenarios 1 and 3","Labs 1–3 and 8"]},
-        {"objective_group":"Application Deployment (20%)","guide_sections":["Section 2","Integrated scenarios 1–2","Labs 4–5 and 8"]},
-        {"objective_group":"Application Observability and Maintenance (15%)","guide_sections":["Section 3","All integrated scenarios","Labs 4, 6 and 8"]},
-        {"objective_group":"Application Environment, Configuration and Security (25%)","guide_sections":["Section 4","Integrated scenarios 1 and 3","Labs 7–8"]},
-        {"objective_group":"Services and Networking (20%)","guide_sections":["Section 5","Integrated scenarios 1 and 3","Labs 7–8"]}
+      "id": "ckad-2026-09-06-source-validation",
+      "exam_code": "CKAD",
+      "guide_path": "guides/CKAD-certified-kubernetes-application-developer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ckad-official-objectives.txt",
+      "blueprint_snapshot_sha256": "58b0290b61ba14ad68c02e06bcd2fbec14d23c4e555e69eb67a5615047e02ca1",
+      "objective_coverage": [
+        {
+          "objective_group": "Application Design and Build (20%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios 1 and 3",
+            "Labs 1–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Application Deployment (20%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1–2",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Application Observability and Maintenance (15%)",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 4, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Application Environment, Configuration and Security (25%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios 1 and 3",
+            "Labs 7–8"
+          ]
+        },
+        {
+          "objective_group": "Services and Networking (20%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios 1 and 3",
+            "Labs 7–8"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":10,"reachable":8,"access_blocked":2,"missing_or_error":0},
-      "notes":"All five Kubernetes v1.35 application domains are mapped through one image-to-release-to-runtime-to-traffic lifecycle, with three scenarios, eight safe labs and 42 original checks. All ten guide URLs are cataloged: eight reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The August 26 v1.37 release creates a September 23–October 21 recheck window without moving the live v1.35 baseline, and the retired ingress-nginx controller is explicitly distinguished from the stable Ingress API objective. No proprietary simulator tasks, course labs or recalled exam tasks are used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 32,
+        "reachable": 30,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Mapped all 24 public competencies and the actual three-page v1.35 curriculum PDF; both monitor snapshots remain unchanged. Added seven exact original chart files with 27 executed Helm render/lint checks, corrected native sidecar, Deployment availability and EndpointSlice explanations, expanded retry/security/API migration distinctions, answered 46 checks and strengthened eight proposed cluster labs. Refreshed public learning metadata and Helm lifecycle evidence; live cluster validation remains deferred. See docs/research/2026-09-29-ckad-deep-review.md"
     },
     {
       "id":"cks-2026-09-01-source-validation",

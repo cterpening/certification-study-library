@@ -3,6 +3,272 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "ckad135-curriculum-pdf",
+      "title": "CNCF CKAD v1.35 curriculum PDF",
+      "url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKAD_Curriculum_v1.35.pdf",
+      "publisher": "CNCF",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKAD deep review: Actual PDF fetched: 149864 bytes,three pages,SHA receipt retained. All24competencies read; layout-mode extraction confirms Kustomize in deployment. Public page ordering and deprecations spelling govern mapping. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-sidecars-source",
+      "title": "Kubernetes 1.35 sidecars documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/pods/sidecar-containers.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKAD deep review: Entire short sidecar page read; adopted start/readiness/Job/termination distinctions,not blanket independent-scaling language or an oversimplified overlapping-init resource formula. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-init-containers-source",
+      "title": "Kubernetes 1.35 init-containers documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/pods/init-containers.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKAD deep review: Targeted regular init sequencing,failure and unsupportedprobe fields read; native sidecar exception explicit. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-probes-source",
+      "title": "Kubernetes 1.35 probes documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKAD deep review: Targeted relevant primary documentation sections read; version boundary retained and full runtime labs remain proposed. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-jobs-source",
+      "title": "Kubernetes 1.35 jobs documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/controllers/job.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKAD deep review: Targeted duplicateexecution,concurrency,backoff and Podfailure policy sections read; no full-jobcontroller simulation. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-cronjobs-source",
+      "title": "Kubernetes 1.35 cronjobs documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/workloads/controllers/cron-jobs.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKAD deep review: Targeted concurrency,deadline,suspension,missedschedules and duplicate/nojob limits read; noexactlyonceclaim. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-security-context-source",
+      "title": "Kubernetes 1.35 security-context documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/security-context.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKAD deep review: Targeted relevant primary documentation sections read; version boundary retained and full runtime labs remain proposed. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-serviceaccounts-source",
+      "title": "Kubernetes 1.35 serviceaccounts documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/tasks/configure-pod-container/configure-service-account.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKAD deep review: Targeted relevant primary documentation sections read; version boundary retained and full runtime labs remain proposed. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-resources-source",
+      "title": "Kubernetes 1.35 resources documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/configuration/manage-resources-containers.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKAD deep review: Targeted relevant primary documentation sections read; version boundary retained and full runtime labs remain proposed. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-quota-source",
+      "title": "Kubernetes 1.35 quota documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/policy/resource-quotas.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKAD deep review: Targeted relevant primary documentation sections read; version boundary retained and full runtime labs remain proposed. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-deprecation-source",
+      "title": "Kubernetes 1.35 deprecation documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/reference/using-api/deprecation-guide.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKAD deep review: Targeted historicalCronJob/Ingress/HPA removals and migrationfields read; not described as new1.35removals. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "helm3-template",
+      "title": "Helm 3 local template rendering",
+      "url": "https://docs.helm.sh/docs/v3/helm/helm_template/",
+      "publisher": "Helm project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKAD deep review: Helm3.22.0 localrendering/clientdryrun limitations and flags read. Only template/lint used,without validate/serverdryrun/DNS/dependencyupdate/plugin/lookup. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "helm3-charts",
+      "title": "Helm 3 chart files and schema",
+      "url": "https://docs.helm.sh/docs/v3/topics/charts/",
+      "publisher": "Helm project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKAD deep review: Targeted chartfiles,chart/app/kubeVersion,final-values JSONschema read and exercised. No real installation or subchart dependency execution. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "helm3-values",
+      "title": "Helm 3 values files and overrides",
+      "url": "https://docs.helm.sh/docs/v3/chart_template_guide/values_files/",
+      "publisher": "Helm project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKAD deep review: Valuesprecedence/nestedoverride/deletion sections read; actual localdefault/file/set/string behaviors checked. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "helm3-tips",
+      "title": "Helm 3 chart tips and required values",
+      "url": "https://docs.helm.sh/docs/v3/howto/charts_tips_and_tricks/",
+      "publisher": "Helm project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKAD deep review: Targeted quote,required and checksumrolloutannotation sections read; originalmessagechecksum example executed only as rendering. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "helm322-release",
+      "title": "Helm v3.22.0 release",
+      "url": "https://github.com/helm/helm/releases/tag/v3.22.0",
+      "publisher": "Helm project",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "supported_exams": [
+        "CKAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKAD deep review: Release metadata,Windowsamd64download and officialchecksum read; archiveverified before extracting one knownmember and executing clientversion. No GPG signatureverification claimed. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "docker-dockerfile-reference",
+      "title": "Dockerfile reference",
+      "url": "https://docs.docker.com/reference/dockerfile/",
+      "publisher": "Docker",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKAD deep review: Targeted exec/shell ENTRYPOINT,CMD,signalforwarding and buildsecretmount passages read. No fullDockerfile manual read and no imagebuilt. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "helm3-eol",
+      "title": "Helm 3 end-of-life announcement",
+      "url": "https://helm.sh/blog/helm-v3-end-of-life/",
+      "publisher": "Helm project",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "supported_exams": [
+        "CKAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKAD deep review: Full June2,2026 GeorgeJenkins announcement read; accepted datedsupport/majorversion boundary withlimits. No Helm4 featureormigration execution and noexamversioninference. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "k8s135-secrets-source",
+      "title": "Kubernetes 1.35 Secrets documentation source",
+      "url": "https://raw.githubusercontent.com/kubernetes/website/release-1.35/content/en/docs/concepts/configuration/secret.md",
+      "publisher": "Kubernetes project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CKAD"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CKAD deep review: Targeted eventual volumeprojection and subPath exception read; no secretvalues or realtokens accessed. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "cka135-curriculum-pdf",
       "title": "CNCF CKA v1.35 curriculum PDF",
       "url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKA_Curriculum_v1.35.pdf",
@@ -53,10 +319,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "CKA"
+        "CKA",
+        "CKAD"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution. September 29 CKAD deep review: Targeted relevant primary documentation sections read; version boundary retained and full runtime labs remain proposed. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
     },
     {
       "id": "k8s135-disruptions-source",
@@ -95,10 +362,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "CKA"
+        "CKA",
+        "CKAD"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution. September 29 CKAD deep review: Targeted relevant primary documentation sections read; version boundary retained and full runtime labs remain proposed. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
     },
     {
       "id": "k8s135-network-policies-source",
@@ -109,10 +377,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "CKA"
+        "CKA",
+        "CKAD"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution. September 29 CKAD deep review: Targeted relevant primary documentation sections read; version boundary retained and full runtime labs remain proposed. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
     },
     {
       "id": "k8s135-configmap-source",
@@ -123,10 +392,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "CKA"
+        "CKA",
+        "CKAD"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution. September 29 CKAD deep review: Targeted relevant primary documentation sections read; version boundary retained and full runtime labs remain proposed. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
     },
     {
       "id": "k8s135-persistent-volumes-source",
@@ -137,10 +407,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "CKA"
+        "CKA",
+        "CKAD"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution."
+      "notes": "September 29 CKA deep review: Targeted relevant sections of official upstream documentation source read; branch/version recorded. No live cluster execution and no claim that latest Gateway/etcd releases match the exam runtime. See docs/research/2026-09-29-cka-deep-review.md No live infrastructure execution. September 29 CKAD deep review: Targeted relevant primary documentation sections read; version boundary retained and full runtime labs remain proposed. See docs/research/2026-09-29-ckad-deep-review.md No live infrastructure execution."
     },
     {
       "id": "k8s135-autoscaling-source",
