@@ -1472,6 +1472,8 @@ The review maps every detailed current objective through asset/data and identity
 
 ## GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER coverage record
 
+The September 29 [deep review](research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md) maps 52 detailed objectives. Five-page June 1, 2026 blueprint fully read and 52 considerations mapped under 14 numbered objectives. Objective digest unchanged; missing lifecycle baseline explicitly initialized and post-check unchanged. Added 36 executed local training/evaluation checks, 48 answered checks, eight proposed cloud labs and current catalog evidence. Live cloud execution and independent human review remain pending. Current guide citations: 23 registered, 22 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: June 1, 2026 six-domain guide—Low-code AI (13%), Collaboration/data/models (16%), Scale prototypes/training (21%), Serve/scale (20%), Pipelines (18%), and Monitoring (13%); published approximations total 101%

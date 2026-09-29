@@ -5,6 +5,26 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER",
+      "reviewed_on": "2026-09-29",
+      "guide_sha256": "410af95c57d6a41b6121321d19f9ce315a676d42eab3a0374fdecc8649b90e00",
+      "objective_count": 52,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-29-google-professional-machine-learning-engineer-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "No live Google Cloud training,BigQueryML,AutoML,FeatureStore,ModelRegistry,monitoring,customcontainer,endpoint,accelerator,distributedcheckpoint,LLM or pipeline was executed. Eight cloud labs remain proposed and independent human review is pending.",
+        "Executed actual standard-library logistictraining uses a tiny artificial interleaved120/30/30split andsyntheticdata;notrealentity/temporalsplitting,a calibratedpredictor,statisticallypoweredbenchmarkorproductionmodel. SliceBtesthas6rows/1positiveandrequiresmoreevidence.",
+        "Separate100-rowpredictionfixture and4-rowlabelinversionfixture demonstrateaggregateandsignalblindspots;notactualcloudmonitoring. Five-positive/0.8recalltoy gate isnotstatisticalassurance.36checksinclude structural assertions.",
+        "Exactcode/runtime/outputhashrecorded;JSONartifactroundtripisprocess-local,nopersistedregistry/serving. No sklearn/PyTorch/numpy/pandas installed orused;no dependencyinstallation,authentication,servicechangeor externalnotification attempted.",
+        "Primaryproductpagesreadselectivelyasper-sourcenotes;actual5pageexamPDFfullyread. No newAutoMLtextdeprecationclaimadoptedfromunreadreleasepage. ReusedAIblog/securitysourcespreviouslyreadinsamesession,currenthealthyfetches.",
+        "Publiccatalogonly:Skillsdurationsunexposed,Courseracontradictoryschedule/2cards,Pluralsightinproduction,Whizemptybody,OReilly403. No paidcourse/book/providerlab/questioninteriors accessed. Sampleformwasashell."
+      ]
+    },
+    {
       "exam_code": "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER",
       "reviewed_on": "2026-09-29",
       "guide_sha256": "85a51687b271a348c0a571244a79c45463da12cfda1570cdc9ff89579f9db0dc",

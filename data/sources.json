@@ -3,6 +3,188 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "gcp-ml-monitoring",
+      "title": "Model Monitoring overview",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/overview",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: First115linesread:versions/releasestage,migrationoptional,objectivesandregistryreferenceoverview. Laterquotas/pricingdetailsnotfullyread. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-ml-monitor-setup",
+      "title": "Set up Model Monitoring",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/set-up-model-monitoring",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: First42linesread:Preview,tabularsupport,registryreference/externalservingandnoattributionsforreference;notfullSDKconfiguration. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-ml-monitor-jobs",
+      "title": "Run Model Monitoring jobs",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/run-monitoring-job",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: First30linesread:eachon-demand/scheduledjobbatch,overrideofdefaults;notfullcommands/scheduleAPI. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-pipeline-cache",
+      "title": "Configure pipeline caching",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/pipelines/configure-caching",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: Completepublictextread:interface/inputartifactIDs/outputspec/component,sharedpipelinename,disableoptions,determinismandnoTTL. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-featurestore-current",
+      "title": "Feature Store overview",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/overview",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: Initial38linesandprimarysearchoverviewread:BigQueryoffline/latestruntimefeatureviewflow;laterresource/type/pricingdetailsnotfullyreviewed. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-featurestore-source",
+      "title": "Prepare Feature Store data source",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/prepare-data-source",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: Entirepublicexplanatorytextread:registeredtimeseriesvsdirectunique-latestrows,schema/entity/timestamp/sync/regionnotes;onlyhistory/syncconceptsadopted. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-featurestore-group",
+      "title": "Create Feature Store feature group",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/create-featuregroup",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: Targeted210–239parametersectionreadforstatic/time-seriesexclusionanddense/nullscheduledvscontinuoussemantics;notallAPIsteps. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-prediction-autoscale",
+      "title": "Scale inference nodes with autoscaling",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/predictions/autoscaling",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: First95linesand297–354ScaleToZerosectionread:quota/requiredreplicas,onlineCPU/GPU/default60,batchstartingcount,Previewzero429/endpoint/retryrestrictions. NoallSDKexamplesormetricalgorithmreview. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-prediction-container",
+      "title": "Custom container requirements",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/predictions/custom-container-requirements",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: Targeted45–153server/startupliveness/defaulthealth/readinesssectionread. Notentireimage/credential/invoke/predictionpayloadsection;onlyreadinesscontractadopted. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-bqml-predict",
+      "title": "BigQuery ML.PREDICT",
+      "url": "https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-predict",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: Targeted70–90input/TRANSFORMand393–410example/pass-throughread. Notallmodelfamilyoutputs/options. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "google-ml-classification",
+      "title": "Classification accuracy recall and precision",
+      "url": "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall",
+      "publisher": "Google for Developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: First~158linesread:accuracy,recall,FPR,precision,denominators,thresholdcosttradeoffs,F1. Laterexercisesnotadopted;originalworkbookindependentlyauthored. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "google-ml-split",
+      "title": "Training validation and test datasets",
+      "url": "https://developers.google.com/machine-learning/crash-course/overfitting/dividing-datasets",
+      "publisher": "Google for Developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: First155linesread:train/validation/test,wear/duplicate/representativenessandfixedtransformguidance. Noquestiontextcopied. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "google-pmle-pluralsight",
+      "title": "Professional Machine Learning Engineer Pluralsight path",
+      "url": "https://www.pluralsight.com/paths/google-cloud-professional-machine-learning-engineer-by-pluralsight",
+      "publisher": "Pluralsight",
+      "authority_class": 3,
+      "source_type": "commercial-learning-path",
+      "access_model": "paid",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: Fullpublicpathread:6courses446minutes,7hheader,Feb20/Mar20/Apr13/Feb23/May15/June22,2026;inproductionnotice. No paidlessons/practicequestions. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "google-certification-about",
       "title": "About Google Cloud Certifications",
       "url": "https://support.google.com/cloud-certification/answer/9750149?hl=en",
@@ -11,10 +193,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER",
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER deep review: Full public explanatorytextread;genericprofessional2yearvalidityusedforPCSE,notasoverridetootherexam-specificexceptions. See docs/research/2026-09-29-google-professional-cloud-security-engineer-deep-review.md No live infrastructure execution."
+      "notes": "September 29 GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER deep review: Full public explanatorytextread;genericprofessional2yearvalidityusedforPCSE,notasoverridetootherexam-specificexceptions. See docs/research/2026-09-29-google-professional-cloud-security-engineer-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: FulltextpreviouslyreadforPCSEinsamesession;currenthealthyfetchreusedforgenericprofessional2yearvalidity,notPMLE-specificrenewaloffer. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
     },
     {
       "id": "gcp-iam-conditions",
@@ -918,10 +1101,11 @@
       "supported_exams": [
         "GOOGLE-GENERATIVE-AI-LEADER",
         "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT",
-        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER",
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Read training restriction and targeted retention sections for abuse logging, advanced features, Search/Maps, request-response logs, stored interactions and agent products. No universal retention duration asserted. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT deep review: Same-sessiontargetedtrainingversusretention/logs/grounding/statepassagesfromGAILreused,currenthealthyfetch;noaccountcontractdecision. See docs/research/2026-09-29-google-professional-cloud-architect-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER deep review: GAILtargetedretention/logs/grounding/statesectionsread;currenthealthyfetchreused. Notuniversalzeroretention/no-trainingequivalence. See docs/research/2026-09-29-google-professional-cloud-security-engineer-deep-review.md No live infrastructure execution."
+      "notes": "September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Read training restriction and targeted retention sections for abuse logging, advanced features, Search/Maps, request-response logs, stored interactions and agent products. No universal retention duration asserted. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT deep review: Same-sessiontargetedtrainingversusretention/logs/grounding/statepassagesfromGAILreused,currenthealthyfetch;noaccountcontractdecision. See docs/research/2026-09-29-google-professional-cloud-architect-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER deep review: GAILtargetedretention/logs/grounding/statesectionsread;currenthealthyfetchreused. Notuniversalzeroretention/no-trainingequivalence. See docs/research/2026-09-29-google-professional-cloud-security-engineer-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: GAILtargetedretention/logging/grounding/stateread;currenthealthyfetchreusedforno-trainingvsretentiondistinction. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
     },
     {
       "id": "google-gemini-structured-output",
@@ -990,10 +1174,11 @@
       "supported_exams": [
         "GOOGLE-GENERATIVE-AI-LEADER",
         "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT",
-        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER",
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Read identity/provider choices, ingestion/federation differences, mapping and limitations requiring creation-time ACL and store recreation for changed provider settings. No identity setting changed. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT deep review: Same-sessionGAILidentitymapping,ingestion/federation,creation/migrationboundaryreadreused;currenthealthyfetch,noconnector. See docs/research/2026-09-29-google-professional-cloud-architect-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER deep review: GAILmapping/ingestionversusfederation/creationmigrationlimitationsread;currenthealthyfetchreusedwithoutclaimingactualretrievalidentitysetup. See docs/research/2026-09-29-google-professional-cloud-security-engineer-deep-review.md No live infrastructure execution."
+      "notes": "September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Read identity/provider choices, ingestion/federation differences, mapping and limitations requiring creation-time ACL and store recreation for changed provider settings. No identity setting changed. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT deep review: Same-sessionGAILidentitymapping,ingestion/federation,creation/migrationboundaryreadreused;currenthealthyfetch,noconnector. See docs/research/2026-09-29-google-professional-cloud-architect-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER deep review: GAILmapping/ingestionversusfederation/creationmigrationlimitationsread;currenthealthyfetchreusedwithoutclaimingactualretrievalidentitysetup. See docs/research/2026-09-29-google-professional-cloud-security-engineer-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: GAILmapping/ingestion/federation/creationmigrationlimitationsread;currenthealthyfetchreusedforpermission-awareretrievalcontext,noactualidentitysetup. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
     },
     {
       "id": "gcp-model-registry",
@@ -1149,10 +1334,11 @@
         "GOOGLE-GENERATIVE-AI-LEADER",
         "GOOGLE-ASSOCIATE-CLOUD-ENGINEER",
         "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT",
-        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER",
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Full April 22 blog read with authors/date. Adopt only app/platform separation and Vertex AI evolution; avoid treating marketing promises as measured controls. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Full article already read in preceding CDL review; same-session fetch healthy. Reuse app/platform naming context only, not marketing guarantees. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Full April22,2026 Brian Delahunty/Michael Gerstenhaber article read in same session and reread here; reuse naming context only, not marketing security guarantees. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT deep review: FullApril22articlepreviouslyreadinsamesession;currenthealthyfetch. App/platformnamingcontextonly;noautonomoussecurityguarantee. See docs/research/2026-09-29-google-professional-cloud-architect-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER deep review: FullApril22BrianDelahunty/MichaelGerstenhaberarticlepreviouslyreadinsamesession;currenthealthyfetchreusedfornamingcontextonly. See docs/research/2026-09-29-google-professional-cloud-security-engineer-deep-review.md No live infrastructure execution."
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Full April 22 blog read with authors/date. Adopt only app/platform separation and Vertex AI evolution; avoid treating marketing promises as measured controls. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Full article already read in preceding CDL review; same-session fetch healthy. Reuse app/platform naming context only, not marketing guarantees. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Full April22,2026 Brian Delahunty/Michael Gerstenhaber article read in same session and reread here; reuse naming context only, not marketing security guarantees. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT deep review: FullApril22articlepreviouslyreadinsamesession;currenthealthyfetch. App/platformnamingcontextonly;noautonomoussecurityguarantee. See docs/research/2026-09-29-google-professional-cloud-architect-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER deep review: FullApril22BrianDelahunty/MichaelGerstenhaberarticlepreviouslyreadinsamesession;currenthealthyfetchreusedfornamingcontextonly. See docs/research/2026-09-29-google-professional-cloud-security-engineer-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: FullApril22BrianDelahunty/MichaelGerstenhaberarticlepreviouslyreadinsamesession;currenthealthyfetchreusedfornamingcontextonly. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
     },
     {
       "id": "gcp-agent-platform-overview",
@@ -1181,10 +1367,11 @@
         "GOOGLE-CLOUD-DIGITAL-LEADER",
         "GOOGLE-GENERATIVE-AI-LEADER",
         "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT",
-        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER",
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read enforcement types, verdict/PEP responsibility, model refusal distinction and logging evidence; basic versus advanced inspection context. No prompt screening or runtime enforcement executed. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Same-session targeted enforcement/PEP/model-refusal evidence already read; current healthy fetch. No actual filtering test or guaranteed prevention claim. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT deep review: Same-sessiontargetedmodelrefusal/detection/PEPreadingfromCDL/GAILreused;currenthealthyfetch. Noactualfilterenforcementverified. See docs/research/2026-09-29-google-professional-cloud-architect-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER deep review: CDL/GAILoverviewreadforinspectversusenforcementandmodalitylimits;currenthealthyfetchreused. See docs/research/2026-09-29-google-professional-cloud-security-engineer-deep-review.md No live infrastructure execution."
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read enforcement types, verdict/PEP responsibility, model refusal distinction and logging evidence; basic versus advanced inspection context. No prompt screening or runtime enforcement executed. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Same-session targeted enforcement/PEP/model-refusal evidence already read; current healthy fetch. No actual filtering test or guaranteed prevention claim. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT deep review: Same-sessiontargetedmodelrefusal/detection/PEPreadingfromCDL/GAILreused;currenthealthyfetch. Noactualfilterenforcementverified. See docs/research/2026-09-29-google-professional-cloud-architect-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER deep review: CDL/GAILoverviewreadforinspectversusenforcementandmodalitylimits;currenthealthyfetchreused. See docs/research/2026-09-29-google-professional-cloud-security-engineer-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: CDL/GAILoverviewreadforinspection/enforcement/modalitylimits;currenthealthyfetchreused. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
     },
     {
       "id": "gcp-model-armor-integrations",
@@ -1198,10 +1385,11 @@
         "GOOGLE-CLOUD-DIGITAL-LEADER",
         "GOOGLE-GENERATIVE-AI-LEADER",
         "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT",
-        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER",
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read modality differences and relevant app/platform/gateway integration coverage. No assumption that direct API modalities apply to all inline paths. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Same-session modality and integration coverage already read; current healthy fetch. Direct API support does not imply universal inline coverage. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT deep review: Same-sessionmodality/integrationpathcoveragefromCDL/GAILreused;currenthealthyfetch. Do not inferuniversalmediafiltering. See docs/research/2026-09-29-google-professional-cloud-architect-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER deep review: CDL/GAILtargetedintegrationcoverage/PEPbehaviorread;currenthealthyfetchreused,norequestactuallyinspected. See docs/research/2026-09-29-google-professional-cloud-security-engineer-deep-review.md No live infrastructure execution."
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read modality differences and relevant app/platform/gateway integration coverage. No assumption that direct API modalities apply to all inline paths. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Same-session modality and integration coverage already read; current healthy fetch. Direct API support does not imply universal inline coverage. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT deep review: Same-sessionmodality/integrationpathcoveragefromCDL/GAILreused;currenthealthyfetch. Do not inferuniversalmediafiltering. See docs/research/2026-09-29-google-professional-cloud-architect-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER deep review: CDL/GAILtargetedintegrationcoverage/PEPbehaviorread;currenthealthyfetchreused,norequestactuallyinspected. See docs/research/2026-09-29-google-professional-cloud-security-engineer-deep-review.md No live infrastructure execution. September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: CDL/GAILtargetedintegrationcoverage/PEPbehaviorread;currenthealthyfetchreused,noactualinspection. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
     },
     {
       "id": "gcp-ai-protection",
@@ -44247,22 +44435,77 @@
       "id":"google-pmle-certification","title":"Professional Machine Learning Engineer certification","url":"https://cloud.google.com/learn/certification/machine-learning-engineer","publisher":"Google Cloud","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"],"notes":"Canonical live capability, delivery, preparation and two transition notices; monitored by the Google Cloud certification adapter."
     },
     {
-      "id":"google-pmle-exam-guide-2026-06-01","title":"Professional Machine Learning Engineer certification exam guide as of June 1, 2026","url":"https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_new.pdf","publisher":"Google Cloud","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"],"notes":"Current linked five-page six-domain 13/16/21/20/18/13 baseline. A different older PDF still resolves without the _new suffix and is not used as the current guide."
+      "id": "google-pmle-exam-guide-2026-06-01",
+      "title": "Professional Machine Learning Engineer certification exam guide as of June 1, 2026",
+      "url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_new.pdf",
+      "publisher": "Google Cloud",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "notes": "Current linked five-page six-domain 13/16/21/20/18/13 baseline. A different older PDF still resolves without the _new suffix and is not used as the current guide. September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: Actualfive-pagePDFfullyreadwithlayout/hashreceipt;printedJune1,2026;52considerationsunder14objectives. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"google-pmle-skills-path","title":"Professional Machine Learning Engineer learning path","url":"https://www.skills.google/paths/17","publisher":"Google Cloud","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"],"notes":"Seventeen first-party activities total about 57h45m across predictive ML, MLOps, gen AI and responsible AI; labs may require credits."
+      "id": "google-pmle-skills-path",
+      "title": "Professional Machine Learning Engineer learning path",
+      "url": "https://www.skills.google/paths/17",
+      "publisher": "Google Cloud",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "notes": "Current public path:17activities,relative2monthupdate;individual durations not exposed. Earlier57h45 unverified. September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: Current public path:17activities,relative2monthupdate;individual durations not exposed. Earlier57h45 unverified. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
     },
     {
       "id":"google-pmle-sample-questions","title":"Professional Machine Learning Engineer official sample questions","url":"https://docs.google.com/forms/d/e/1FAIpQLSeYmkCANE81qSBqLW0g2X7RoskBX9yGYQu-m1TtsjMvHabGqg/viewform","publisher":"Google Cloud","authority_class":1,"source_type":"independent-assessment","access_model":"public","last_checked":"2026-09-02","supported_exams":["GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"],"notes":"Official untimed repeatable sample questions; not predictive of exam result."
     },
     {
-      "id":"google-pmle-coursera","title":"Preparing for Google Cloud Professional Machine Learning Engineer","url":"https://www.coursera.org/professional-certificates/preparing-for-google-cloud-machine-learning-engineer-professional-certificate","publisher":"Coursera / Google Cloud","authority_class":2,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"],"notes":"Six-course first-party program; subscription/audit and duration estimates vary. Verify June 2026 name and gen-AI alignment."
+      "id": "google-pmle-coursera",
+      "title": "Preparing for Google Cloud Professional Machine Learning Engineer",
+      "url": "https://www.coursera.org/professional-certificates/preparing-for-google-cloud-machine-learning-engineer-professional-certificate",
+      "publisher": "Coursera / Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "notes": "Current2cards15h+4h=19h;landing2months10h/week conflicts with FAQ6months5h/week and absent first-course recommendation. Public outline only. September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: Current2cards15h+4h=19h;landing2months10h/week conflicts with FAQ6months5h/week and absent first-course recommendation. Public outline only. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"google-pmle-oreilly-official","title":"Official Google Cloud Certified Professional Machine Learning Engineer Study Guide","url":"https://www.oreilly.com/library/view/official-google-cloud/9781119944683/","publisher":"O'Reilly / Sybex / Mona Mona","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"],"notes":"2023, 480-page structured reference; predates current Agent Platform branding and expanded generative-AI, evaluation, monitoring and security scope."
+      "id": "google-pmle-oreilly-official",
+      "title": "Official Google Cloud Certified Professional Machine Learning Engineer Study Guide",
+      "url": "https://www.oreilly.com/library/view/official-google-cloud/9781119944683/",
+      "publisher": "O'Reilly / Sybex / Mona Mona",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "notes": "Currentfetch403;historicalmetadataandblueprintfitunverified;no paidbookinteriorread. September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: Currentfetch403;historicalmetadataandblueprintfitunverified;no paidbookinteriorread. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"google-pmle-whizlabs","title":"Google Cloud Professional Machine Learning Engineer course and practice","url":"https://www.whizlabs.com/google-cloud-certified-professional-machine-learning-engineer/","publisher":"Whizlabs","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"],"notes":"Commercial course/practice page; verify current June 2026 six-domain and product-name alignment against first-party sources."
+      "id": "google-pmle-whizlabs",
+      "title": "Google Cloud Professional Machine Learning Engineer course and practice",
+      "url": "https://www.whizlabs.com/google-cloud-certified-professional-machine-learning-engineer/",
+      "publisher": "Whizlabs",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "notes": "CurrentHTTPsuccessful but readablebodyempty;duration/depth/counts/paidcontentunverified. September 29 GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review: CurrentHTTPsuccessful but readablebodyempty;duration/depth/counts/paidcontentunverified. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md No live infrastructure execution."
     },
     {
       "id":"google-pmle-ai-docs","title":"Google Cloud AI and ML documentation","url":"https://cloud.google.com/docs/ai-ml","publisher":"Google Cloud","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"],"notes":"First-party current entry point for AI/ML products, MLOps, gen AI and responsible-AI documentation."

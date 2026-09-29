@@ -4,6 +4,289 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-googleprofessionalmachinelearningengineer-deep-review",
+      "title": "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "results": [
+        {
+          "exam_code": "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER-professional-machine-learning-engineer.md",
+          "baseline_sha256": "35a33a67d6ba7013ba9a799140be01e92dede4ce62f1f9b71d939d42beed731f",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Actual5pagePDFread,printedJune1,2026;52considerations9/10/12/10/5/6under14headings;13/16/21/20/18/13publishedapproximateweightstotal101. Objective14f8953554d4c9762d0ac1fc7b0b4449d624895b2e1c3c9d4670009726c5bd5cunchanged. Missinglifecycleexplicitlyinitialized66f6fa2d9c9f832dc152d4ebd58783d3daf515d8f67cfa1ddb90f55950d2495f;postunchanged. Canonicalalreadyupdatedbranding,nofuturedate;2h200USD50–60EnglishJapanese,noneprereq,3+industry1+GCP;separateofficialhelp2yrvalidity."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "TargetedModelMonitoringversion/support/batchjobs,FeatureStoreBigQuery/history/null/sync,Pipelinescacheinterface/noTTL,customcontainerliveness/readiness,CPU/GPUandbatchautoscaling/scalezeroPreview,ML.PREDICTTRANSFORM,primaryMLsplit/metricsguidance.36actualpubliclocalchecks. CurrenthealthyrefetchesforpreviouslysamesessionreadAIretention/enforcement/identitysources."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "April22,2026BrianDelahunty/MichaelGerstenhaberblogfullyreadinsamesession,reusedcurrenthealthyfetchfornamingcontext. CurrentproductdocsPreviewandlifecycleboundariesexplicit. Nofutureexamdateinferredfrombranding."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Skills17activitydurationunexposed;Coursera2cards19hversus2months10h/weeklandingand6months5h/weekFAQ,absentstartingcourse. Pluralsight6courses446min7h26versus7header,Feb–June2026,inproductionnotice. Whizemptyreadablebody/OReilly403 qualified;no paidcontentorproprietaryquestions."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Addedlatestvshistoricalfeatures,defaultnon-nullvsnullmarker,train-onlypreprocessing,threshold/supportvsaggregateaccuracy,cachefreshnesslimits,readinessvsconnectivity/routingvsrestart,onlinevsbatchscaling,monitoringv2Preview/tabular/batch,driftvsquality/approval.48answers8proposedlabsPlaceslearnlast."
+            }
+          },
+          "findings": [
+            {
+              "id": "googleprofessionalmachinelearningengineer-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Missing monitored validity does not mean indefinite certification",
+              "url": "https://support.google.com/cloud-certification/answer/9750149?hl=en",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Official generic certification help states professional2yearvalidity;PMLEcanonicalmonitorextractomitsit.",
+              "recommendation": "Cite separatevaliditysource andverifyPMLE-specificrenewal;initializemissingbaselinewithoutobjectivechangeclaim.",
+              "disposition": "applied",
+              "source_id": "google-certification-about",
+              "resolution": "Cite separatevaliditysource andverifyPMLE-specificrenewal;initializemissingbaselinewithoutobjectivechangeclaim."
+            },
+            {
+              "id": "googleprofessionalmachinelearningengineer-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Prediction inputs follow the stored transformation contract",
+              "url": "https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-predict",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "TRANSFORMmodelsacceptoriginalfeaturecolumns;unusedcolumnspassthroughwithoutaffectingprediction.",
+              "recommendation": "Preservequery/schema/modelversion andavoidindependentmismatchedfeaturetransforms.",
+              "disposition": "applied",
+              "source_id": "gcp-bqml-predict",
+              "resolution": "Preservequery/schema/modelversion andavoidindependentmismatchedfeaturetransforms."
+            },
+            {
+              "id": "googleprofessionalmachinelearningengineer-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Latest online features do not reconstruct historical training",
+              "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/prepare-data-source",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Directfeatureviewsourceexpectsonelatestrowperentity;registeredgroupssupporttimeseries.",
+              "recommendation": "Separateonlinefreshnessfromhistoricaleventandavailabilitycutoffs;testsyncandduplicates.",
+              "disposition": "applied",
+              "source_id": "gcp-featurestore-source",
+              "resolution": "Separateonlinefreshnessfromhistoricaleventandavailabilitycutoffs;testsyncandduplicates."
+            },
+            {
+              "id": "googleprofessionalmachinelearningengineer-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Latest null can retain older non-null values",
+              "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/create-featuregroup",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Defaultnon-nullservinganddense/syncsemanticsdiffer.",
+              "recommendation": "Explainnullisnotautomaticallyrevocation/deletionandrequireactualmode-specifictests.",
+              "disposition": "applied",
+              "source_id": "gcp-featurestore-group",
+              "resolution": "Explainnullisnotautomaticallyrevocation/deletionandrequireactualmode-specifictests."
+            },
+            {
+              "id": "googleprofessionalmachinelearningengineer-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Repeated evaluation can contaminate held-out evidence",
+              "url": "https://developers.google.com/machine-learning/crash-course/overfitting/dividing-datasets",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Primaryguidanceseparatestrainingvalidationtestandwarnsoftestwearandduplicates.",
+              "recommendation": "Fittraining-onlynormalization,selectthresholdonvalidation,freezeartifactbeforeheld-outreport;executeoriginalexperiment.",
+              "disposition": "applied",
+              "source_id": "google-ml-split",
+              "resolution": "Fittraining-onlynormalization,selectthresholdonvalidation,freezeartifactbeforeheld-outreport;executeoriginalexperiment."
+            },
+            {
+              "id": "googleprofessionalmachinelearningengineer-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Aggregate metrics and unsupported ratios conceal failures",
+              "url": "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Precision/recalldependonthresholdanddenominators;emptypositivepredictionsproduceundefinedprecision.",
+              "recommendation": "Reportcounts/undefinedvaluesandslicesupport;executeaggregateimprovementwithminorityrecallcollapsecounterexample.",
+              "disposition": "applied",
+              "source_id": "google-ml-classification",
+              "resolution": "Reportcounts/undefinedvaluesandslicesupport;executeaggregateimprovementwithminorityrecallcollapsecounterexample."
+            },
+            {
+              "id": "googleprofessionalmachinelearningengineer-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Connectivity and readiness have different failure actions",
+              "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/predictions/custom-container-requirements",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "DefaultHTTPhealthignoresbodyandstopsroutingafterconsecutivefailureswithoutrestart;startuplivenessisseparate.",
+              "recommendation": "Requiremodelloadreadinessandpositive/negativetrafficevidenceinproposedcontainerlab.",
+              "disposition": "applied",
+              "source_id": "gcp-prediction-container",
+              "resolution": "Requiremodelloadreadinessandpositive/negativetrafficevidenceinproposedcontainerlab."
+            },
+            {
+              "id": "googleprofessionalmachinelearningengineer-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Online and batch scaling contracts differ",
+              "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/predictions/autoscaling",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "DedicatedGPUdefaultconsidersCPUorGPU;batchusesstartingreplicas;ScaleToZeroPreviewdropswakingrequest429.",
+              "recommendation": "Addmetric/quota/endpoint/latencyboundariesandboundedretrydesign,notuniversalautomaticcapacityclaim.",
+              "disposition": "applied",
+              "source_id": "gcp-prediction-autoscale",
+              "resolution": "Addmetric/quota/endpoint/latencyboundariesandboundedretrydesign,notuniversalautomaticcapacityclaim."
+            },
+            {
+              "id": "googleprofessionalmachinelearningengineer-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A reused pipeline result has no automatic expiry",
+              "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/pipelines/configure-caching",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Interfaceincludesdeclaredparameters/artifactIDs/componentspec;metadataresultnoTTL.",
+              "recommendation": "Useimmutableinputs/fingerprints;disablecacheforfresh/side-effectstepsandpreserveartifact-boundevaluation.",
+              "disposition": "applied",
+              "source_id": "gcp-pipeline-cache",
+              "resolution": "Useimmutableinputs/fingerprints;disablecacheforfresh/side-effectstepsandpreserveartifact-boundevaluation."
+            },
+            {
+              "id": "googleprofessionalmachinelearningengineer-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Model Monitoring v2 is not a universal real-time AI monitor",
+              "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "V2Previewmodel-versionassociated,v1GAendpointconfigured;v1migrationnotrequired.",
+              "recommendation": "Separateversionchoice,support,targetbaseline,andground-truthevaluationfromgeneralmonitoringclaims.",
+              "disposition": "applied",
+              "source_id": "gcp-ml-monitoring",
+              "resolution": "Separateversionchoice,support,targetbaseline,andground-truthevaluationfromgeneralmonitoringclaims."
+            },
+            {
+              "id": "googleprofessionalmachinelearningengineer-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "External reference monitoring has model and attribution limits",
+              "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/set-up-model-monitoring",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "V2tabularonly;referencecanrepresentexternallyservedmodelsbutdoesnotsupportfeatureattributions.",
+              "recommendation": "TeachreferencesandexplicitcapabilitylimitsratherthanautomaticLLMcoverage.",
+              "disposition": "applied",
+              "source_id": "gcp-ml-monitor-setup",
+              "resolution": "TeachreferencesandexplicitcapabilitylimitsratherthanautomaticLLMcoverage."
+            },
+            {
+              "id": "googleprofessionalmachinelearningengineer-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Scheduled monitoring still executes batch jobs",
+              "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/run-monitoring-job",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Eachon-demandorscheduledjobisasinglebatchexecution.",
+              "recommendation": "Specifycadence/window/jobhealthandseparategenerativeevaluation;driftsignaldoesnotauthorizepromotion.",
+              "disposition": "applied",
+              "source_id": "gcp-ml-monitor-jobs",
+              "resolution": "Specifycadence/window/jobhealthandseparategenerativeevaluation;driftsignaldoesnotauthorizepromotion."
+            }
+          ],
+          "notes": "Five-page June 1, 2026 blueprint fully read and 52 considerations mapped under 14 numbered objectives. Objective digest unchanged; missing lifecycle baseline explicitly initialized and post-check unchanged. Added 36 executed local training/evaluation checks, 48 answered checks, eight proposed cloud labs and current catalog evidence. Live cloud execution and independent human review remain pending. Same-context AI review; human review pending. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 12,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-googleprofessionalcloudsecurityengineer-deep-review",
       "title": "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER complete guide and learning-content review",
       "rubric_version": 1,

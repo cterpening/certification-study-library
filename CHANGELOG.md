@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review](docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md): 52 mapped considerations,36 executed local training/evaluation checks,48 answers,eight proposed cloud labs and updated source/catalog evidence.
+
 - September 29, 2026: [GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER deep review](docs/research/2026-09-29-google-professional-cloud-security-engineer-deep-review.md): 70 mapped considerations, 35 executed local envelope-encryption checks, 48 answers, eight proposed cloud labs and updated source/catalog evidence.
 
 - September 29, 2026: [GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review](docs/research/2026-09-29-google-professional-data-engineer-deep-review.md): 67 mapped considerations, 40 executed local SQL/window checks, 48 answers, eight proposed cloud labs and refreshed course/catalog evidence.

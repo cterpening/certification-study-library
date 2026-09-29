@@ -2615,6 +2615,24 @@ This is **not a complete list**, and it is not meant to be consumed in full. Pic
 
 A current Pluralsight path is now verified, correcting the earlier catalog gap. No PCSE-specific MeasureUp product or matching Coursera Professional Certificate was verified in this review. Public titles/dates are not proof of paid-lesson depth. Check older material for federation trust/revocation, conditional allow/deny, PAM release-stage limits, WAF/perimeter enforcement, secret/CMEK rotation, AI retrieval/tool/retention controls, deployment bypasses, audit coverage and provider-access scope.
 
+### GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER — Professional Machine Learning Engineer
+
+Resource details from the [GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER guide](../guides/GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER-professional-machine-learning-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is **not a complete list**. Catalog observations below are from September 29, 2026. Durations are provider metadata unless explicitly described as a suggested practice budget. A certificate/path title does not prove complete June 2026 blueprint coverage.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Google Skills Machine Learning Engineer path](https://www.skills.google/paths/17) | Public outline; individual activities can require access/credits. Current page exposes 17 activities and a relative two-month update, without activity durations. | Current duration unverified; the earlier 57h45 estimate is not reconfirmed. Add time for repeat labs and evidence. |
+| [Google Cloud Training on Coursera](https://www.coursera.org/professional-certificates/preparing-for-google-cloud-machine-learning-engineer-professional-certificate) | Public outline; enrollment/subscription terms vary. Current two cards are Production Machine Learning Systems (15h) and MLOps: Getting Started (4h). | Cards total **19h**. Landing page says two months at 10h/week; FAQ says six months at 5h/week and refers to a starting course absent from the cards. These are inconsistent estimates, not additive requirements. |
+| [Pluralsight PMLE path](https://www.pluralsight.com/paths/google-cloud-professional-machine-learning-engineer-by-pluralsight) | Public metadata, paid learning. Six courses by Victor Dantas and Abhishek Kumar, dated February–June 2026; path still marked in production. | Listed durations 60/80/58/120/73/55 minutes total **7h26**, versus rounded 7h header. No paid lesson or practice-exam quality claim. |
+| [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course/overfitting/dividing-datasets) | Free primary teaching on splits and [classification metrics](https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall). Use for foundations alongside the cloud blueprint. | Suggested practice budget: 2–4h on these concepts and the original workbook; not a provider course duration. |
+| [Whizlabs PMLE](https://www.whizlabs.com/google-cloud-certified-professional-machine-learning-engineer/) | The current fetch returned an empty readable body. Course, lab and practice-question contents were not reviewed. | Current duration, depth and update status unverified. |
+| [O’Reilly reference](https://www.oreilly.com/library/view/official-google-cloud/9781119944683/) | Current access returned HTTP 403; any older title/date/page count needs direct verification. No book interior read. | Current reading time and blueprint fit unverified. |
+| This guide, official product documentation and proposed labs | Public explanation and executable synthetic workbook; cloud labs require an authorized budgeted environment. | Suggested 16–24h for lab execution, fault diagnosis and written evidence after prerequisites; not a claim of exam readiness. |
+
+Use an outline-based gap map: learning resource → current objective → explanation → executed evidence. No PMLE-specific MeasureUp catalog was verified in this review; that is a research limit, not proof of absence. Supplement any resource where the public outline does not establish coverage.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

@@ -1,0 +1,2067 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER-professional-machine-learning-engineer.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "05f8c885002a709bdbfc83024649ad377427bb6366ce61d0833f522cd815c767",
+  "guide_after_sha256": "410af95c57d6a41b6121321d19f9ce315a676d42eab3a0374fdecc8649b90e00",
+  "prior_records": {
+    "exam": {
+      "code": "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER",
+      "level": "expert",
+      "vendor_id": "google-cloud",
+      "title": "Professional Machine Learning Engineer",
+      "status": "active",
+      "study_guide_url": "https://cloud.google.com/learn/certification/machine-learning-engineer",
+      "guide_path": "guides/GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER-professional-machine-learning-engineer.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; Google recommends three or more years of industry experience including one year on Google Cloud. Practice Python/SQL interpretation, governed features/data, predictive and generative model selection/evaluation, reproducible experiments/training, accelerator choices, registry/batch/online serving, canary/A-B rollout, pipeline CI/CD/CT, drift/skew/safety/security monitoring and rollback."
+    },
+    "review": {
+      "id": "google-professional-machine-learning-engineer-2026-09-02-source-validation",
+      "exam_code": "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER",
+      "guide_path": "guides/GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER-professional-machine-learning-engineer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/google-professional-machine-learning-engineer-official-objectives.txt",
+      "blueprint_snapshot_sha256": "14f8953554d4c9762d0ac1fc7b0b4449d624895b2e1c3c9d4670009726c5bd5c",
+      "objective_coverage": [
+        {
+          "objective_group": "Architecting low-code AI solutions (~13%)",
+          "guide_sections": [
+            "Section 1",
+            "Scenarios 1–2",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Collaborating within and across teams to manage data and models (~16%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Labs 2–3 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Scaling prototypes into ML models (~21%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 1 and 3",
+            "Labs 3–5 and 7"
+          ]
+        },
+        {
+          "objective_group": "Serving and scaling models (~20%)",
+          "guide_sections": [
+            "Section 4",
+            "All scenarios",
+            "Labs 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Automating and orchestrating ML pipelines (~18%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenarios 1 and 3",
+            "Labs 3–4 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Monitoring AI solutions (~13%)",
+          "guide_sections": [
+            "Section 6",
+            "All scenarios",
+            "Labs 6–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 8,
+        "reachable": 7,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All six June 1, 2026 domains are mapped across predictive and generative AI through task/data/model choice, collaboration/lineage, reproducible training/accelerators, serving/rollout, pipelines/CI-CD-CT and continuous quality/safety/security/cost operation. Three scenarios, eight labs and 36 checks are included. All eight URLs are cataloged: seven reachable and O'Reilly automation-blocked. The different older PDF is explicitly rejected as the current baseline."
+    },
+    "sources": [
+      {
+        "id": "google-pmle-certification",
+        "title": "Professional Machine Learning Engineer certification",
+        "url": "https://cloud.google.com/learn/certification/machine-learning-engineer",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+        ],
+        "notes": "Canonical live capability, delivery, preparation and two transition notices; monitored by the Google Cloud certification adapter."
+      },
+      {
+        "id": "google-pmle-exam-guide-2026-06-01",
+        "title": "Professional Machine Learning Engineer certification exam guide as of June 1, 2026",
+        "url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_new.pdf",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+        ],
+        "notes": "Current linked five-page six-domain 13/16/21/20/18/13 baseline. A different older PDF still resolves without the _new suffix and is not used as the current guide."
+      },
+      {
+        "id": "google-pmle-skills-path",
+        "title": "Professional Machine Learning Engineer learning path",
+        "url": "https://www.skills.google/paths/17",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+        ],
+        "notes": "Seventeen first-party activities total about 57h45m across predictive ML, MLOps, gen AI and responsible AI; labs may require credits."
+      },
+      {
+        "id": "google-pmle-sample-questions",
+        "title": "Professional Machine Learning Engineer official sample questions",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSeYmkCANE81qSBqLW0g2X7RoskBX9yGYQu-m1TtsjMvHabGqg/viewform",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+        ],
+        "notes": "Official untimed repeatable sample questions; not predictive of exam result."
+      },
+      {
+        "id": "google-pmle-coursera",
+        "title": "Preparing for Google Cloud Professional Machine Learning Engineer",
+        "url": "https://www.coursera.org/professional-certificates/preparing-for-google-cloud-machine-learning-engineer-professional-certificate",
+        "publisher": "Coursera / Google Cloud",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+        ],
+        "notes": "Six-course first-party program; subscription/audit and duration estimates vary. Verify June 2026 name and gen-AI alignment."
+      },
+      {
+        "id": "google-pmle-oreilly-official",
+        "title": "Official Google Cloud Certified Professional Machine Learning Engineer Study Guide",
+        "url": "https://www.oreilly.com/library/view/official-google-cloud/9781119944683/",
+        "publisher": "O'Reilly / Sybex / Mona Mona",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+        ],
+        "notes": "2023, 480-page structured reference; predates current Agent Platform branding and expanded generative-AI, evaluation, monitoring and security scope."
+      },
+      {
+        "id": "google-pmle-whizlabs",
+        "title": "Google Cloud Professional Machine Learning Engineer course and practice",
+        "url": "https://www.whizlabs.com/google-cloud-certified-professional-machine-learning-engineer/",
+        "publisher": "Whizlabs",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+        ],
+        "notes": "Commercial course/practice page; verify current June 2026 six-domain and product-name alignment against first-party sources."
+      },
+      {
+        "id": "google-pmle-ai-docs",
+        "title": "Google Cloud AI and ML documentation",
+        "url": "https://cloud.google.com/docs/ai-ml",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+        ],
+        "notes": "First-party current entry point for AI/ML products, MLOps, gen AI and responsible-AI documentation."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "f4ca70195c5112bce2042f4a7a7de40bcb9d87c21f0f9d97028853def0d6f98f",
+      "guide_sections": [
+        "1. Architecting low-code AI solutions — about 13%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "78c78921bac5b749508b70ba5099513700742d21e9bfb7a0b0ce9bfae54cc816",
+      "guide_sections": [
+        "1. Architecting low-code AI solutions — about 13%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "c7ca3e9eb226ed4ef007efe841cb665decd31feadc639c68fb243000e30568c8",
+      "guide_sections": [
+        "1. Architecting low-code AI solutions — about 13%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "bb200be6e249da5f54dbb04a2c90766bd02631dfda572138e372531874cf1992",
+      "guide_sections": [
+        "1. Architecting low-code AI solutions — about 13%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "16dcc25f76d1f3276eef098e3f7f54432a057653c6c16c1ba728dbdede629af9",
+      "guide_sections": [
+        "1. Architecting low-code AI solutions — about 13%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "b4962e7f9e2d19b460ba53321470a78814fb54b53d43fe7b941058a1e790db77",
+      "guide_sections": [
+        "1. Architecting low-code AI solutions — about 13%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "7e38adaaea8886dcbe9b647ed6a4a3187a0fee885bbd8841278233faa3a9c190",
+      "guide_sections": [
+        "1. Architecting low-code AI solutions — about 13%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "e73de4671b333543e069f3c628cbe245881e62481c0286d7b892c42e738e96a2",
+      "guide_sections": [
+        "1. Architecting low-code AI solutions — about 13%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "693e6c14a7365c2c0b1c81741173c277a3d817b02f95313876a4fbead47df7be",
+      "guide_sections": [
+        "1. Architecting low-code AI solutions — about 13%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "0f0d87f0f8975dca8a9c4ab6395dd62caaa97f03ab0e65988b0f180bfb5b742c",
+      "guide_sections": [
+        "2. Collaborating to manage data and models — about 16%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "6e164d7036411394aec175c7843c8661ff5dd1b5d4980494e6806af8b57613e6",
+      "guide_sections": [
+        "2. Collaborating to manage data and models — about 16%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "1fdfbf48307d98399c4eb83589f193d95b5c79501d667812568d36ae12b8c95a",
+      "guide_sections": [
+        "2. Collaborating to manage data and models — about 16%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "c803f799eeb42b75090e30d50960c2ba89841167618d54d1a6af2eccd9dccdc5",
+      "guide_sections": [
+        "2. Collaborating to manage data and models — about 16%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "e76edaa0bcf8b94aedff8b1fc074493d13d0352e33b20893b85996eff8726d6e",
+      "guide_sections": [
+        "2. Collaborating to manage data and models — about 16%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "ac81e761c9b2b3d2bd46719cafadbc91bfc2b886e633ae9ebba61c7718a22fcd",
+      "guide_sections": [
+        "2. Collaborating to manage data and models — about 16%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "e3c7b38e3efb2db527cde12d2f6672159430e881a5fd2736125caab56458bd9c",
+      "guide_sections": [
+        "2. Collaborating to manage data and models — about 16%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "74f31cfffeea4dfb89252cf558f826ed3e5e3d5627bfaafcc0da8b2ccc9c5739",
+      "guide_sections": [
+        "2. Collaborating to manage data and models — about 16%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "532ac96283d29054cf309d269999b01281688f0b509e66cc1d55c7490e3d883f",
+      "guide_sections": [
+        "2. Collaborating to manage data and models — about 16%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 10,
+      "objective_sha256": "eba6e5b5a67b515c161af585e8f4c2c4dfa6fcbc88e0fa34bf472931447a2441",
+      "guide_sections": [
+        "2. Collaborating to manage data and models — about 16%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "9af6e28f08d72411af28e0b1e86acedf1ebb081a29f40b04b2a243647b539f19",
+      "guide_sections": [
+        "3. Scaling prototypes into ML models — about 21%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "bdba799d00e3a3c910837c2a99c9483a417997049ca9a022a619ca7fb02a4c59",
+      "guide_sections": [
+        "3. Scaling prototypes into ML models — about 21%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "7aae7c8d73ae39f6fd3e411a7d1cde732f0df92149517c75a02fffaac175dee5",
+      "guide_sections": [
+        "3. Scaling prototypes into ML models — about 21%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "d81624ba368d1f85c3707eeafd76b51a64da35b92b6bf9be7a3ce1c626f06f8d",
+      "guide_sections": [
+        "3. Scaling prototypes into ML models — about 21%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "8ef1f78767654fb3630e4e4a2cfba86161fbcefabf0939bc64d566766bf35122",
+      "guide_sections": [
+        "3. Scaling prototypes into ML models — about 21%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "9aa557d848faad17d4c2438e40384d44f933bfd0029573d9a6527b07767cc060",
+      "guide_sections": [
+        "3. Scaling prototypes into ML models — about 21%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "310f373bb0dec806bab2fb551b06372d4a62c469dd28a037ba6b93e117e93512",
+      "guide_sections": [
+        "3. Scaling prototypes into ML models — about 21%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "22918177b76c42c23b4028bafe1cc677e4c122759aeb3ffb4c032c6260813c85",
+      "guide_sections": [
+        "3. Scaling prototypes into ML models — about 21%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "193201b7d415851f4e15e6f05638c9b9d9b7b63747bf224a335beb480d2dc52d",
+      "guide_sections": [
+        "3. Scaling prototypes into ML models — about 21%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 10,
+      "objective_sha256": "02b2224aca6cec5dd1ea93be23b87809665288d905f877334e0ec84de981937f",
+      "guide_sections": [
+        "3. Scaling prototypes into ML models — about 21%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 11,
+      "objective_sha256": "f4ede696abd92f2b6ec1e5a1cf610afb61690730cf076fbab253844f446c2e20",
+      "guide_sections": [
+        "3. Scaling prototypes into ML models — about 21%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 12,
+      "objective_sha256": "ed9cf074fd1527a91cd8539cef5daeb95e416d68559e6201bd9dad7def63549e",
+      "guide_sections": [
+        "3. Scaling prototypes into ML models — about 21%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "fc98a6839f0cd9c635cf89d053194dc07f2fb5abd12ffa1e30b72eeb08e3c7be",
+      "guide_sections": [
+        "4. Serving and scaling — about 20%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "1f6a47ac76666a22fdc701eb59f5174b9c843de4972ceb0c4045496724949402",
+      "guide_sections": [
+        "4. Serving and scaling — about 20%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "81251f7c3894ba8a3bfefca8a87b33dbc8fcda1812434c9d049278ab2873e643",
+      "guide_sections": [
+        "4. Serving and scaling — about 20%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "211f921682547c90e660bf9f704b2227f7fb64cbda98951501c49e61a5665f15",
+      "guide_sections": [
+        "4. Serving and scaling — about 20%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "b3eec4ebd1cb4540cafd0c50050d1af88ae6a9bb506341c878338edef2d795a7",
+      "guide_sections": [
+        "4. Serving and scaling — about 20%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "0ab0da11f67c44a7540437c5764d27546e6c2514dadcc711538233227d4f4148",
+      "guide_sections": [
+        "4. Serving and scaling — about 20%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "b323674afda615ca2c8deb6a37d0327a1244c479a906c2856c9e50a585a69c45",
+      "guide_sections": [
+        "4. Serving and scaling — about 20%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "47324e65290a406833ce1a0756b9cc4da9f4cab5f720ffb576c1f598b120cb6b",
+      "guide_sections": [
+        "4. Serving and scaling — about 20%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "2b98a04819ea83aa0aa95f00f3e2bab55cca17867bd65b77b79eb852a3995f6e",
+      "guide_sections": [
+        "4. Serving and scaling — about 20%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 10,
+      "objective_sha256": "6a708af71d67707db7d683c311e202a65323de0e713a0a0a80d1b7b05b39a0e9",
+      "guide_sections": [
+        "4. Serving and scaling — about 20%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "17a5a1ed35370ca5d587905af4a621293049d4d6792e31b1cf215b33d5414d0c",
+      "guide_sections": [
+        "5. Automating and orchestrating pipelines — about 18%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "754c0c722544fb5b9ab661365eb041a2462966f805f63455818d66699e707667",
+      "guide_sections": [
+        "5. Automating and orchestrating pipelines — about 18%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "dfce83b2da2871fcd2e3a02c92b021553d18eab8e34b7450ef79789c7059b034",
+      "guide_sections": [
+        "5. Automating and orchestrating pipelines — about 18%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "4e7c9985754b27032a1ae747e153818a17d188b9fb496029dbc0463174a30ac2",
+      "guide_sections": [
+        "5. Automating and orchestrating pipelines — about 18%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "b38c96e084b1415779f4e00ac466b3d8332e84a13ae21a34a669cc4a6013372c",
+      "guide_sections": [
+        "5. Automating and orchestrating pipelines — about 18%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "8719c2d36c3797f1f14cfc91911a362890caecc1e01051d08e4b57176d48c358",
+      "guide_sections": [
+        "6. Monitoring AI solutions — about 13%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "ddc8c7c9ea1eb7c33a54df3825b106ef6667f72b4d724320c1303edf8f30c09a",
+      "guide_sections": [
+        "6. Monitoring AI solutions — about 13%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "458d8c2a2e0285885b7043c098c87dc7c4033e004adc3ae7dc7ccddfcff9cb80",
+      "guide_sections": [
+        "6. Monitoring AI solutions — about 13%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "2c5b002ee10a8c781f4b26456191a5ba0925b18e0449106845dbdc94450620a9",
+      "guide_sections": [
+        "6. Monitoring AI solutions — about 13%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "8de7e14c54087c8bdf00bbe79940c4549a59cfd25525956b19383130887870f9",
+      "guide_sections": [
+        "6. Monitoring AI solutions — about 13%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "30ee58e47ceee24cf20917db31badd2726a62ff08882603f32be6f11b1ae12d3",
+      "guide_sections": [
+        "6. Monitoring AI solutions — about 13%",
+        "Integrated scenarios",
+        "Executed local training and evaluation workbook",
+        "Proposed cloud labs and evidence"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER",
+        "title": "Professional Machine Learning Engineer",
+        "url": "https://cloud.google.com/learn/certification/machine-learning-engineer",
+        "guide_path": "guides/GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER-professional-machine-learning-engineer.md",
+        "snapshot_path": "data\\objective-snapshots\\google-professional-machine-learning-engineer-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\google-professional-machine-learning-engineer-official-status.json",
+        "previous_sha256": "14f8953554d4c9762d0ac1fc7b0b4449d624895b2e1c3c9d4670009726c5bd5c",
+        "current_sha256": "14f8953554d4c9762d0ac1fc7b0b4449d624895b2e1c3c9d4670009726c5bd5c",
+        "previous_status_sha256": null,
+        "current_status_sha256": "66f6fa2d9c9f832dc152d4ebd58783d3daf515d8f67cfa1ddb90f55950d2495f",
+        "official_status": {
+          "skills_versions": [
+            "Length: Two hours",
+            "Registration fee: $200 (plus tax where",
+            "Languages: English, Japanese",
+            "Exam format: 50-60 multiple choice and multiple select",
+            "Exam delivery method:",
+            "Prerequisites: None",
+            "Recommended experience: 3+ years of industry"
+          ],
+          "upcoming_announcements": [
+            "This exam was updated to reflect recent branding changes. Refer to the exam guide to",
+            "This exam was updated to reflect the transition from Vertex AI to"
+          ]
+        },
+        "objectives_changed": false,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 23,
+    "reachable": 22,
+    "access_blocked": 1,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "google-pmle-certification",
+      "url": "https://cloud.google.com/learn/certification/machine-learning-engineer",
+      "checked_at": "2026-09-29T08:16:29.867979+00:00",
+      "health": {
+        "id": "google-pmle-certification",
+        "url": "https://cloud.google.com/learn/certification/machine-learning-engineer",
+        "checked_at": "2026-09-29T08:16:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloud.google.com/learn/certification/machine-learning-engineer",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Professional ML Engineer Certification | Learn | Google Cloud",
+        "canonical_url": "https://cloud.google.com/learn/certification/machine-learning-engineer",
+        "duration_signals": [],
+        "signal_fingerprint": "0ff3ad0a9ecdb6536ae5e588b802c43af6ed4d8cf8cca46ac3866bf3cd4d9604",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cloud.google.com/learn/certification/machine-learning-engineer",
+      "sha256": "5c64b83fa2a6a975ce27bcc8d3f1a1d8a2210b280d7429a6aba4fba8c6f9d1eb",
+      "text_characters": 5924
+    },
+    {
+      "id": "google-pmle-exam-guide-2026-06-01",
+      "url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_new.pdf",
+      "checked_at": "2026-09-29T08:18:37.054245+00:00",
+      "health": {
+        "id": "google-pmle-exam-guide-2026-06-01",
+        "url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_new.pdf",
+        "checked_at": "2026-09-29T08:18:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_new.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_new.pdf",
+      "sha256": "8353ed16bc4fcaebd6dab301f61bf2f86a3eaf341a199a1d6f38196745e4a598",
+      "bytes": 156614,
+      "pdf_pages": 5,
+      "text_characters": 9584
+    },
+    {
+      "id": "google-pmle-skills-path",
+      "url": "https://www.skills.google/paths/17",
+      "checked_at": "2026-09-29T08:16:29.869222+00:00",
+      "health": {
+        "id": "google-pmle-skills-path",
+        "url": "https://www.skills.google/paths/17",
+        "checked_at": "2026-09-29T08:16:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skills.google/paths/17",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Professional Machine Learning Engineer Certification | Google Skills",
+        "canonical_url": "https://www.skills.google/paths/17",
+        "duration_signals": [],
+        "signal_fingerprint": "6dfa4d5d53e0f51885e952b688b040f48242f66b791d27ad5ac751422f1bef4c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skills.google/paths/17",
+      "sha256": "311ec92e8c444809b31a66e082aac1c3616cc154948e9d831cc8b169a211b59b",
+      "text_characters": 1041
+    },
+    {
+      "id": "google-pmle-sample-questions",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSeYmkCANE81qSBqLW0g2X7RoskBX9yGYQu-m1TtsjMvHabGqg/viewform",
+      "checked_at": "2026-09-29T08:16:30.507456+00:00",
+      "health": {
+        "id": "google-pmle-sample-questions",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSeYmkCANE81qSBqLW0g2X7RoskBX9yGYQu-m1TtsjMvHabGqg/viewform",
+        "checked_at": "2026-09-29T08:16:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSeYmkCANE81qSBqLW0g2X7RoskBX9yGYQu-m1TtsjMvHabGqg/viewform",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Professional Machine Learning Engineer Sample Questions",
+        "canonical_url": "https://docs.google.com/forms/d/e/1FAIpQLSeYmkCANE81qSBqLW0g2X7RoskBX9yGYQu-m1TtsjMvHabGqg/viewform",
+        "duration_signals": [],
+        "signal_fingerprint": "43711e5559b0f24a861438fb788543f230eaae35655814664a7736e5fb73e1d2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSeYmkCANE81qSBqLW0g2X7RoskBX9yGYQu-m1TtsjMvHabGqg/viewform",
+      "sha256": "b0657b0b1397c7183120515f959f12e6578117c92f21b1817dae8539104da0f7",
+      "text_characters": 692
+    },
+    {
+      "id": "google-pmle-coursera",
+      "url": "https://www.coursera.org/professional-certificates/preparing-for-google-cloud-machine-learning-engineer-professional-certificate",
+      "checked_at": "2026-09-29T08:16:31.526213+00:00",
+      "health": {
+        "id": "google-pmle-coursera",
+        "url": "https://www.coursera.org/professional-certificates/preparing-for-google-cloud-machine-learning-engineer-professional-certificate",
+        "checked_at": "2026-09-29T08:16:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.coursera.org/professional-certificates/preparing-for-google-cloud-machine-learning-engineer-professional-certificate",
+        "content_type": "text/html",
+        "page_title": "Preparing for Google Cloud Certification: Machine Learning Engineer",
+        "canonical_url": "https://www.coursera.org/professional-certificates/preparing-for-google-cloud-machine-learning-engineer-professional-certificate",
+        "duration_signals": [
+          "10 hours",
+          "15 hours",
+          "4 hours",
+          "approximately 5 hours",
+          "P2M"
+        ],
+        "signal_fingerprint": "83246d109f4fef6563d5d2a5925730f574a68621be029f72ca5f1620673b9bac",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.coursera.org/professional-certificates/preparing-for-google-cloud-machine-learning-engineer-professional-certificate",
+      "sha256": "6944f423c65d35f4c7c6f5f49388dab6530dbe708bc2042693b31a3757485d32",
+      "text_characters": 9393
+    },
+    {
+      "id": "google-pmle-oreilly-official",
+      "url": "https://www.oreilly.com/library/view/official-google-cloud/9781119944683/",
+      "checked_at": "2026-09-29T08:16:41.460673+00:00",
+      "health": {
+        "id": "google-pmle-oreilly-official",
+        "url": "https://www.oreilly.com/library/view/official-google-cloud/9781119944683/",
+        "checked_at": "2026-09-29T08:16:41+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/official-google-cloud/9781119944683/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "google-pmle-whizlabs",
+      "url": "https://www.whizlabs.com/google-cloud-certified-professional-machine-learning-engineer/",
+      "checked_at": "2026-09-29T08:16:43.314344+00:00",
+      "health": {
+        "id": "google-pmle-whizlabs",
+        "url": "https://www.whizlabs.com/google-cloud-certified-professional-machine-learning-engineer/",
+        "checked_at": "2026-09-29T08:16:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/google-cloud-certified-professional-machine-learning-engineer/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "https://www.whizlabs.com/google-cloud-certified-professional-machine-learning-engineer/",
+        "duration_signals": [],
+        "signal_fingerprint": "f5e3623876c02ac209afe2fa839c531c69f4def8f9077dadc9514b2f5c402463",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/google-cloud-certified-professional-machine-learning-engineer/",
+      "sha256": "bed4ac37df11691b2e4a6d5df33d3af2094147c66fa26b0a46e78647ef66f602",
+      "text_characters": 0
+    },
+    {
+      "id": "google-pmle-ai-docs",
+      "url": "https://cloud.google.com/docs/ai-ml",
+      "checked_at": "2026-09-29T08:16:43.409394+00:00",
+      "health": {
+        "id": "google-pmle-ai-docs",
+        "url": "https://cloud.google.com/docs/ai-ml",
+        "checked_at": "2026-09-29T08:16:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/docs/ai-ml",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AI and ML | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/docs/ai-ml",
+        "duration_signals": [],
+        "signal_fingerprint": "fe247ed8b3424c9f5b1d34cbd5eac94a09ef8128ff6eaa00a0c58dc073aa800a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/docs/ai-ml",
+      "sha256": "af150f88e6742a8e2804195e70d3b46d96fec5a768e5376c4bab2a94be2e793c",
+      "text_characters": 8315
+    },
+    {
+      "id": "gcp-ml-monitoring",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/overview",
+      "checked_at": "2026-09-29T08:23:08.891559+00:00",
+      "health": {
+        "id": "gcp-ml-monitoring",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/overview",
+        "checked_at": "2026-09-29T08:23:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Introduction to Model Monitoring | Gemini Enterprise Agent Platform | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "41c58d048c0385e9d9d0b2146d3e4493546a6a074f9533d3d6bdb251dc2e5343",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/overview",
+      "sha256": "3f2b023b249ca0244388265d36e13891528f083cc76483fa01c9beab2474a031",
+      "text_characters": 12784
+    },
+    {
+      "id": "gcp-ml-monitor-setup",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/set-up-model-monitoring",
+      "checked_at": "2026-09-29T08:23:08.892072+00:00",
+      "health": {
+        "id": "gcp-ml-monitor-setup",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/set-up-model-monitoring",
+        "checked_at": "2026-09-29T08:23:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/set-up-model-monitoring",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Set up model monitoring | Gemini Enterprise Agent Platform | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/set-up-model-monitoring",
+        "duration_signals": [
+          "24 hour",
+          "24 hours"
+        ],
+        "signal_fingerprint": "107f35b271617555e77bb9d3d83f693e93f7103ea64acb3a26c6e8a5182adcd2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/set-up-model-monitoring",
+      "sha256": "67c3c356124a79f525867bf7ce0b07fc9fa716ca07284d0484a2da1091772ca5",
+      "text_characters": 13855
+    },
+    {
+      "id": "gcp-ml-monitor-jobs",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/run-monitoring-job",
+      "checked_at": "2026-09-29T08:23:08.892470+00:00",
+      "health": {
+        "id": "gcp-ml-monitor-jobs",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/run-monitoring-job",
+        "checked_at": "2026-09-29T08:23:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/run-monitoring-job",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Run monitoring jobs | Gemini Enterprise Agent Platform | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/run-monitoring-job",
+        "duration_signals": [],
+        "signal_fingerprint": "5c0500d0a215d0397f0b7ab8dc8b78eadf4f135c3919d436d26135fdea759d3d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/run-monitoring-job",
+      "sha256": "083980818c548a3570e180176de614c91e65d61c6f98b6149e02642a19fafa2b",
+      "text_characters": 9021
+    },
+    {
+      "id": "gcp-pipeline-cache",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/pipelines/configure-caching",
+      "checked_at": "2026-09-29T08:23:10.502270+00:00",
+      "health": {
+        "id": "gcp-pipeline-cache",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/pipelines/configure-caching",
+        "checked_at": "2026-09-29T08:23:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/pipelines/configure-caching",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Configure execution caching | Gemini Enterprise Agent Platform | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/pipelines/configure-caching",
+        "duration_signals": [],
+        "signal_fingerprint": "0a8e9635531a06e821526323a0d269f7366e3a14b74082558aa9397eb3cc33c7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/pipelines/configure-caching",
+      "sha256": "5ddcb526e428b8bc1bc70b9a86771ff608d95ee3ca282097c94da3d3dbb0939d",
+      "text_characters": 3644
+    },
+    {
+      "id": "gcp-featurestore-current",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/overview",
+      "checked_at": "2026-09-29T08:23:10.692739+00:00",
+      "health": {
+        "id": "gcp-featurestore-current",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/overview",
+        "checked_at": "2026-09-29T08:23:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "About Feature Store on Gemini Enterprise Agent Platform | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "bb33dd9d40c297a03c51826d2a9cdb84b37a72af07db6bec4ad8f912336e2584",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/overview",
+      "sha256": "12f8ce2fd728cf2ef86c91f012e980745b12415d089f4d9c3a9eb0b0ba435510",
+      "text_characters": 20121
+    },
+    {
+      "id": "gcp-featurestore-source",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/prepare-data-source",
+      "checked_at": "2026-09-29T08:23:10.881226+00:00",
+      "health": {
+        "id": "gcp-featurestore-source",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/prepare-data-source",
+        "checked_at": "2026-09-29T08:23:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/prepare-data-source",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Prepare data source | Gemini Enterprise Agent Platform | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/prepare-data-source",
+        "duration_signals": [],
+        "signal_fingerprint": "afd7e0b6300a327272c20776a837cfa5cd48dbb5396eaaf5577d6b69eea8e1d8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/prepare-data-source",
+      "sha256": "92a37dca182cbf9f64f8441bfa5c8c7cd9905d314711704c217c7d64c70bb77e",
+      "text_characters": 6952
+    },
+    {
+      "id": "gcp-featurestore-group",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/create-featuregroup",
+      "checked_at": "2026-09-29T08:23:12.497370+00:00",
+      "health": {
+        "id": "gcp-featurestore-group",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/create-featuregroup",
+        "checked_at": "2026-09-29T08:23:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/create-featuregroup",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Create a feature group | Gemini Enterprise Agent Platform | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/create-featuregroup",
+        "duration_signals": [],
+        "signal_fingerprint": "d6d0e826fc4b2cbd85886951f56a8f75daa949098508ad83d41b1dc019358cd7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/create-featuregroup",
+      "sha256": "ce9b421dd68081324f53c2052341badf93f96bbec7580e2e743e7b73144c096a",
+      "text_characters": 15955
+    },
+    {
+      "id": "gcp-prediction-autoscale",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/predictions/autoscaling",
+      "checked_at": "2026-09-29T08:23:13.152826+00:00",
+      "health": {
+        "id": "gcp-prediction-autoscale",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/predictions/autoscaling",
+        "checked_at": "2026-09-29T08:23:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/predictions/autoscaling",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Scale inference nodes by using autoscaling | Gemini Enterprise Agent Platform | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/predictions/autoscaling",
+        "duration_signals": [
+          "1 hour",
+          "5 minute",
+          "5 minutes",
+          "8 hours"
+        ],
+        "signal_fingerprint": "42a88b2b82b9c86764b68bc7b63d9f4c2aecfa858bb9eb52c6b169a6367baf26",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/predictions/autoscaling",
+      "sha256": "7cd61a6fcfd4277b650120b61f0fe7bc898ded7874758704f9325e181199ec0c",
+      "text_characters": 30772
+    },
+    {
+      "id": "gcp-prediction-container",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/predictions/custom-container-requirements",
+      "checked_at": "2026-09-29T08:23:13.428111+00:00",
+      "health": {
+        "id": "gcp-prediction-container",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/predictions/custom-container-requirements",
+        "checked_at": "2026-09-29T08:23:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/predictions/custom-container-requirements",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Custom container requirements for inference | Gemini Enterprise Agent Platform | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/predictions/custom-container-requirements",
+        "duration_signals": [],
+        "signal_fingerprint": "b159568028a3a9ceb94e05d20981e668f505b1372b51bb394f7a686ff2a7817c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/predictions/custom-container-requirements",
+      "sha256": "51748b9440c9de6d93a95451d5ab2575b8119441bed0aa8570d6fbe0b98b4c7f",
+      "text_characters": 21583
+    },
+    {
+      "id": "gcp-bqml-predict",
+      "url": "https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-predict",
+      "checked_at": "2026-09-29T08:23:14.587287+00:00",
+      "health": {
+        "id": "gcp-bqml-predict",
+        "url": "https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-predict",
+        "checked_at": "2026-09-29T08:23:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-predict",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "The ML.PREDICT function | BigQuery | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-predict",
+        "duration_signals": [],
+        "signal_fingerprint": "b0c90ffe5f122f494b2e630bff483acb70e3c58409de0c6d0682fba3679ac77d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-predict",
+      "sha256": "8f0ef5a95ddc8d12333b6f23bb45cd996245ee1560f265297a41eac584646d1b",
+      "text_characters": 17100
+    },
+    {
+      "id": "google-ml-classification",
+      "url": "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall",
+      "checked_at": "2026-09-29T08:23:17.224919+00:00",
+      "health": {
+        "id": "google-ml-classification",
+        "url": "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall",
+        "checked_at": "2026-09-29T08:23:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Classification: Accuracy, recall, precision, and related metrics | Machine Learning | Google for Developers",
+        "canonical_url": "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall",
+        "duration_signals": [
+          "10 min",
+          "105 min",
+          "110 min",
+          "12 min",
+          "15 min",
+          "2 min",
+          "20 min",
+          "25 min",
+          "3 min",
+          "3 mins",
+          "30 min",
+          "35 min",
+          "40 min",
+          "45 min",
+          "5 min",
+          "50 min",
+          "70 min",
+          "75 min",
+          "80 min",
+          "85 min"
+        ],
+        "signal_fingerprint": "80be864a116177452dc771f5266ef9375e7f0da5d47abdd8627889fe3b887c1b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall",
+      "sha256": "06270398943a496e3fa8b03eb948b48ad4c8ab83e70c62ddc2c0b8ac5ceb631c",
+      "text_characters": 10816
+    },
+    {
+      "id": "google-ml-split",
+      "url": "https://developers.google.com/machine-learning/crash-course/overfitting/dividing-datasets",
+      "checked_at": "2026-09-29T08:23:18.344239+00:00",
+      "health": {
+        "id": "google-ml-split",
+        "url": "https://developers.google.com/machine-learning/crash-course/overfitting/dividing-datasets",
+        "checked_at": "2026-09-29T08:23:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developers.google.com/machine-learning/crash-course/overfitting/dividing-datasets",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Datasets: Dividing the original dataset | Machine Learning | Google for Developers",
+        "canonical_url": "https://developers.google.com/machine-learning/crash-course/overfitting/dividing-datasets",
+        "duration_signals": [
+          "10 min",
+          "105 min",
+          "110 min",
+          "12 min",
+          "15 min",
+          "2 min",
+          "20 min",
+          "25 min",
+          "3 min",
+          "3 mins",
+          "30 min",
+          "35 min",
+          "40 min",
+          "45 min",
+          "5 min",
+          "50 min",
+          "70 min",
+          "75 min",
+          "80 min",
+          "85 min"
+        ],
+        "signal_fingerprint": "b7d2550f35a4a582298e51eca9f42717a6bcbdbe02738c9471ec50d57c19a7ea",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developers.google.com/machine-learning/crash-course/overfitting/dividing-datasets",
+      "sha256": "e7efb689d5af3eecf4680bb7021a8790d8a112d7072749103fcc9c8d1003426b",
+      "text_characters": 9806
+    },
+    {
+      "id": "google-pmle-pluralsight",
+      "url": "https://www.pluralsight.com/paths/google-cloud-professional-machine-learning-engineer-by-pluralsight",
+      "checked_at": "2026-09-29T08:23:19.584968+00:00",
+      "health": {
+        "id": "google-pmle-pluralsight",
+        "url": "https://www.pluralsight.com/paths/google-cloud-professional-machine-learning-engineer-by-pluralsight",
+        "checked_at": "2026-09-29T08:23:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/google-cloud-professional-machine-learning-engineer-by-pluralsight",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Google Cloud Professional Machine Learning Engineer by Pluralsight",
+        "canonical_url": "https://www.pluralsight.com/paths/google-cloud-professional-machine-learning-engineer-by-pluralsight",
+        "duration_signals": [
+          "7 Hours"
+        ],
+        "signal_fingerprint": "6a832f5419f8f36fec52fc1d41d112be739bd57142f8499afa5d89f2caeb2380",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/google-cloud-professional-machine-learning-engineer-by-pluralsight",
+      "sha256": "5f6cd3aacb56b6a069e996e76e8218af3cdb4add8706ddf0ac2b5362b252db9f",
+      "text_characters": 4614
+    },
+    {
+      "id": "google-certification-about",
+      "url": "https://support.google.com/cloud-certification/answer/9750149?hl=en",
+      "checked_at": "2026-09-29T08:23:20.479359+00:00",
+      "health": {
+        "id": "google-certification-about",
+        "url": "https://support.google.com/cloud-certification/answer/9750149?hl=en",
+        "checked_at": "2026-09-29T08:23:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.google.com/cloud-certification/answer/9750149?hl=en",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "About Google Cloud Certifications - Cloud Certification Help",
+        "canonical_url": "https://support.google.com/cloud-certification/answer/9750149?hl=en",
+        "duration_signals": [],
+        "signal_fingerprint": "aee4e996bf3460b8966185137075e7de830b13332c225ccbadef6e427c29a435",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.google.com/cloud-certification/answer/9750149?hl=en",
+      "sha256": "4a457b4c52132e6bfd15ebf81f812c0cf4e5bd645a9e4ca6ca417769e74fd0f3",
+      "text_characters": 2935
+    },
+    {
+      "id": "gcp-agent-platform-zdr",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+      "checked_at": "2026-09-29T08:23:21.727907+00:00",
+      "health": {
+        "id": "gcp-agent-platform-zdr",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+        "checked_at": "2026-09-29T08:23:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Gemini Enterprise Agent Platform and zero data retention | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "baaf0ae91ac84fe199f2ebb68401f586dc906c8974aa457b7a588966c9acdb83",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+      "sha256": "bcd9e49e66142c7fc6cf7f0d2f92b05d80edbafd5a3bc24b0fd95dda2d8fc26d",
+      "text_characters": 11687
+    },
+    {
+      "id": "gcp-search-identity-provider",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+      "checked_at": "2026-09-29T08:23:25.143727+00:00",
+      "health": {
+        "id": "gcp-search-identity-provider",
+        "url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+        "checked_at": "2026-09-29T08:23:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Configure identity provider | Gemini Enterprise | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+        "duration_signals": [],
+        "signal_fingerprint": "56662f2fa59d53e106df8c7f63e3c37687e8beda38ba77a384d0c3692c9e3f5e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+      "sha256": "230d3207b8b82dea8e7cd885a3684b5e956e416e8a33669220b0c2f383de9255",
+      "text_characters": 14157
+    },
+    {
+      "id": "gcp-gemini-enterprise-2026",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+      "checked_at": "2026-09-29T08:23:28.201359+00:00",
+      "health": {
+        "id": "gcp-gemini-enterprise-2026",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+        "checked_at": "2026-09-29T08:23:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "The new Gemini Enterprise: one platform for agent development | Google Cloud Blog",
+        "canonical_url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+        "duration_signals": [
+          "PT7M"
+        ],
+        "signal_fingerprint": "cc80068c1a73d07f059434e922cd0791ba9336f3af1086529f13625a8be13cb3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+      "sha256": "570761bfca6c58d97b7aa14865222f981f8dad34c205a0d78609bf1d92641165",
+      "text_characters": 10678
+    },
+    {
+      "id": "gcp-model-armor-overview",
+      "url": "https://docs.cloud.google.com/model-armor/overview",
+      "checked_at": "2026-09-29T08:23:28.831612+00:00",
+      "health": {
+        "id": "gcp-model-armor-overview",
+        "url": "https://docs.cloud.google.com/model-armor/overview",
+        "checked_at": "2026-09-29T08:23:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/model-armor/overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Model Armor overview | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/model-armor/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "13534481a4842604f2f012904a5ee2f4142fb440ffd8c52a32ccc1b2f14d3965",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/model-armor/overview",
+      "sha256": "b70a44e28326d01e7415896ec9cf4b365091bc0b367f8c13bae3e9e9c37b86e0",
+      "text_characters": 26957
+    },
+    {
+      "id": "gcp-model-armor-integrations",
+      "url": "https://docs.cloud.google.com/model-armor/integrations",
+      "checked_at": "2026-09-29T08:23:29.590040+00:00",
+      "health": {
+        "id": "gcp-model-armor-integrations",
+        "url": "https://docs.cloud.google.com/model-armor/integrations",
+        "checked_at": "2026-09-29T08:23:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/model-armor/integrations",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Overview | Model Armor | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/model-armor/integrations",
+        "duration_signals": [],
+        "signal_fingerprint": "de6ac1041b92403b081f0e74ec0ca8656fc026d20e36b260804c12f123e2ce7d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/model-armor/integrations",
+      "sha256": "7feea8476a1f2a4e5cfd4c772f5d0bc53816ccc40a16ce85f9ef54849d1665b0",
+      "text_characters": 13726
+    }
+  ],
+  "added_source_ids": [
+    "gcp-ml-monitoring",
+    "gcp-ml-monitor-setup",
+    "gcp-ml-monitor-jobs",
+    "gcp-pipeline-cache",
+    "gcp-featurestore-current",
+    "gcp-featurestore-source",
+    "gcp-featurestore-group",
+    "gcp-prediction-autoscale",
+    "gcp-prediction-container",
+    "gcp-bqml-predict",
+    "google-ml-classification",
+    "google-ml-split",
+    "google-pmle-pluralsight"
+  ],
+  "findings": [
+    {
+      "id": "googleprofessionalmachinelearningengineer-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Missing monitored validity does not mean indefinite certification",
+      "url": "https://support.google.com/cloud-certification/answer/9750149?hl=en",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Official generic certification help states professional2yearvalidity;PMLEcanonicalmonitorextractomitsit.",
+      "recommendation": "Cite separatevaliditysource andverifyPMLE-specificrenewal;initializemissingbaselinewithoutobjectivechangeclaim.",
+      "disposition": "applied",
+      "source_id": "google-certification-about",
+      "resolution": "Cite separatevaliditysource andverifyPMLE-specificrenewal;initializemissingbaselinewithoutobjectivechangeclaim."
+    },
+    {
+      "id": "googleprofessionalmachinelearningengineer-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Prediction inputs follow the stored transformation contract",
+      "url": "https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-predict",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "TRANSFORMmodelsacceptoriginalfeaturecolumns;unusedcolumnspassthroughwithoutaffectingprediction.",
+      "recommendation": "Preservequery/schema/modelversion andavoidindependentmismatchedfeaturetransforms.",
+      "disposition": "applied",
+      "source_id": "gcp-bqml-predict",
+      "resolution": "Preservequery/schema/modelversion andavoidindependentmismatchedfeaturetransforms."
+    },
+    {
+      "id": "googleprofessionalmachinelearningengineer-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Latest online features do not reconstruct historical training",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/prepare-data-source",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Directfeatureviewsourceexpectsonelatestrowperentity;registeredgroupssupporttimeseries.",
+      "recommendation": "Separateonlinefreshnessfromhistoricaleventandavailabilitycutoffs;testsyncandduplicates.",
+      "disposition": "applied",
+      "source_id": "gcp-featurestore-source",
+      "resolution": "Separateonlinefreshnessfromhistoricaleventandavailabilitycutoffs;testsyncandduplicates."
+    },
+    {
+      "id": "googleprofessionalmachinelearningengineer-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Latest null can retain older non-null values",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/featurestore/latest/create-featuregroup",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Defaultnon-nullservinganddense/syncsemanticsdiffer.",
+      "recommendation": "Explainnullisnotautomaticallyrevocation/deletionandrequireactualmode-specifictests.",
+      "disposition": "applied",
+      "source_id": "gcp-featurestore-group",
+      "resolution": "Explainnullisnotautomaticallyrevocation/deletionandrequireactualmode-specifictests."
+    },
+    {
+      "id": "googleprofessionalmachinelearningengineer-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Repeated evaluation can contaminate held-out evidence",
+      "url": "https://developers.google.com/machine-learning/crash-course/overfitting/dividing-datasets",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Primaryguidanceseparatestrainingvalidationtestandwarnsoftestwearandduplicates.",
+      "recommendation": "Fittraining-onlynormalization,selectthresholdonvalidation,freezeartifactbeforeheld-outreport;executeoriginalexperiment.",
+      "disposition": "applied",
+      "source_id": "google-ml-split",
+      "resolution": "Fittraining-onlynormalization,selectthresholdonvalidation,freezeartifactbeforeheld-outreport;executeoriginalexperiment."
+    },
+    {
+      "id": "googleprofessionalmachinelearningengineer-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Aggregate metrics and unsupported ratios conceal failures",
+      "url": "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Precision/recalldependonthresholdanddenominators;emptypositivepredictionsproduceundefinedprecision.",
+      "recommendation": "Reportcounts/undefinedvaluesandslicesupport;executeaggregateimprovementwithminorityrecallcollapsecounterexample.",
+      "disposition": "applied",
+      "source_id": "google-ml-classification",
+      "resolution": "Reportcounts/undefinedvaluesandslicesupport;executeaggregateimprovementwithminorityrecallcollapsecounterexample."
+    },
+    {
+      "id": "googleprofessionalmachinelearningengineer-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Connectivity and readiness have different failure actions",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/predictions/custom-container-requirements",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "DefaultHTTPhealthignoresbodyandstopsroutingafterconsecutivefailureswithoutrestart;startuplivenessisseparate.",
+      "recommendation": "Requiremodelloadreadinessandpositive/negativetrafficevidenceinproposedcontainerlab.",
+      "disposition": "applied",
+      "source_id": "gcp-prediction-container",
+      "resolution": "Requiremodelloadreadinessandpositive/negativetrafficevidenceinproposedcontainerlab."
+    },
+    {
+      "id": "googleprofessionalmachinelearningengineer-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Online and batch scaling contracts differ",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/predictions/autoscaling",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "DedicatedGPUdefaultconsidersCPUorGPU;batchusesstartingreplicas;ScaleToZeroPreviewdropswakingrequest429.",
+      "recommendation": "Addmetric/quota/endpoint/latencyboundariesandboundedretrydesign,notuniversalautomaticcapacityclaim.",
+      "disposition": "applied",
+      "source_id": "gcp-prediction-autoscale",
+      "resolution": "Addmetric/quota/endpoint/latencyboundariesandboundedretrydesign,notuniversalautomaticcapacityclaim."
+    },
+    {
+      "id": "googleprofessionalmachinelearningengineer-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A reused pipeline result has no automatic expiry",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/pipelines/configure-caching",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Interfaceincludesdeclaredparameters/artifactIDs/componentspec;metadataresultnoTTL.",
+      "recommendation": "Useimmutableinputs/fingerprints;disablecacheforfresh/side-effectstepsandpreserveartifact-boundevaluation.",
+      "disposition": "applied",
+      "source_id": "gcp-pipeline-cache",
+      "resolution": "Useimmutableinputs/fingerprints;disablecacheforfresh/side-effectstepsandpreserveartifact-boundevaluation."
+    },
+    {
+      "id": "googleprofessionalmachinelearningengineer-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Model Monitoring v2 is not a universal real-time AI monitor",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "V2Previewmodel-versionassociated,v1GAendpointconfigured;v1migrationnotrequired.",
+      "recommendation": "Separateversionchoice,support,targetbaseline,andground-truthevaluationfromgeneralmonitoringclaims.",
+      "disposition": "applied",
+      "source_id": "gcp-ml-monitoring",
+      "resolution": "Separateversionchoice,support,targetbaseline,andground-truthevaluationfromgeneralmonitoringclaims."
+    },
+    {
+      "id": "googleprofessionalmachinelearningengineer-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "External reference monitoring has model and attribution limits",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/set-up-model-monitoring",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "V2tabularonly;referencecanrepresentexternallyservedmodelsbutdoesnotsupportfeatureattributions.",
+      "recommendation": "TeachreferencesandexplicitcapabilitylimitsratherthanautomaticLLMcoverage.",
+      "disposition": "applied",
+      "source_id": "gcp-ml-monitor-setup",
+      "resolution": "TeachreferencesandexplicitcapabilitylimitsratherthanautomaticLLMcoverage."
+    },
+    {
+      "id": "googleprofessionalmachinelearningengineer-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Scheduled monitoring still executes batch jobs",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/model-monitoring/run-monitoring-job",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Eachon-demandorscheduledjobisasinglebatchexecution.",
+      "recommendation": "Specifycadence/window/jobhealthandseparategenerativeevaluation;driftsignaldoesnotauthorizepromotion.",
+      "disposition": "applied",
+      "source_id": "gcp-ml-monitor-jobs",
+      "resolution": "Specifycadence/window/jobhealthandseparategenerativeevaluation;driftsignaldoesnotauthorizepromotion."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "gcp-gemini-enterprise-2026",
+      "authors": [
+        "Brian Delahunty",
+        "Michael Gerstenhaber"
+      ],
+      "published_on": "2026-04-22",
+      "disposition": "accepted-with-limits",
+      "value": "App/platformnamingcontext.",
+      "limits": "Fullarticlepreviouslyreadinsamesession;currenthealthyfetch,noexamdateoruniversalproductguarantee."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "cloud_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 36,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "68e2c7376809e7117b78d8cc21851e81ee70a6c6a860e767d19d83dc6b358bdd",
+      "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+      "execution_stdout": "{\"test\": {\"accuracy\": 0.9333333333333333, \"cost\": 2, \"fn\": 0, \"fp\": 2, \"n\": 30, \"precision\": 0.8666666666666667, \"recall\": 1.0, \"tn\": 15, \"tp\": 13}, \"test_slices\": {\"A\": {\"accuracy\": 0.9166666666666666, \"cost\": 2, \"fn\": 0, \"fp\": 2, \"n\": 24, \"precision\": 0.8571428571428571, \"recall\": 1.0, \"tn\": 10, \"tp\": 12}, \"B\": {\"accuracy\": 1.0, \"cost\": 0, \"fn\": 0, \"fp\": 0, \"n\": 6, \"precision\": 1.0, \"recall\": 1.0, \"tn\": 5, \"tp\": 1}}, \"threshold\": 0.35, \"train_loss\": 0.19340745733891745, \"validation\": {\"accuracy\": 0.8666666666666667, \"cost\": 4, \"fn\": 0, \"fp\": 4, \"n\": 30, \"precision\": 0.7333333333333333, \"recall\": 1.0, \"tn\": 15, \"tp\": 11}}\n36 local checks passed",
+      "results": {
+        "test": {
+          "accuracy": 0.9333333333333333,
+          "cost": 2,
+          "fn": 0,
+          "fp": 2,
+          "n": 30,
+          "precision": 0.8666666666666667,
+          "recall": 1.0,
+          "tn": 15,
+          "tp": 13
+        },
+        "test_slices": {
+          "A": {
+            "accuracy": 0.9166666666666666,
+            "cost": 2,
+            "fn": 0,
+            "fp": 2,
+            "n": 24,
+            "precision": 0.8571428571428571,
+            "recall": 1.0,
+            "tn": 10,
+            "tp": 12
+          },
+          "B": {
+            "accuracy": 1.0,
+            "cost": 0,
+            "fn": 0,
+            "fp": 0,
+            "n": 6,
+            "precision": 1.0,
+            "recall": 1.0,
+            "tn": 5,
+            "tp": 1
+          }
+        },
+        "threshold": 0.35,
+        "train_loss": 0.19340745733891745,
+        "validation": {
+          "accuracy": 0.8666666666666667,
+          "cost": 4,
+          "fn": 0,
+          "fp": 4,
+          "n": 30,
+          "precision": 0.7333333333333333,
+          "recall": 1.0,
+          "tn": 15,
+          "tp": 11
+        }
+      },
+      "execution_boundary": "Actual standard-library logistic gradient-descent training on120syntheticrows,train-onlynormalization,30validationthresholdselection,JSONartifactroundtrip/fingerprints,30held-outrows,metrics/slices and separate aggregate-regression/concept-driftfixtures. Structural assertions included. No sklearn/PyTorch/cloud/distributedtraining/LLM/featurestore/endpoint/API or files/network.",
+      "cloud_cli_probe": "Reuse prior same-session ACE gcloud-not-found-on-PATH observation. No installation,authentication or infrastructure."
+    }
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "No live Google Cloud training,BigQueryML,AutoML,FeatureStore,ModelRegistry,monitoring,customcontainer,endpoint,accelerator,distributedcheckpoint,LLM or pipeline was executed. Eight cloud labs remain proposed and independent human review is pending.",
+    "Executed actual standard-library logistictraining uses a tiny artificial interleaved120/30/30split andsyntheticdata;notrealentity/temporalsplitting,a calibratedpredictor,statisticallypoweredbenchmarkorproductionmodel. SliceBtesthas6rows/1positiveandrequiresmoreevidence.",
+    "Separate100-rowpredictionfixture and4-rowlabelinversionfixture demonstrateaggregateandsignalblindspots;notactualcloudmonitoring. Five-positive/0.8recalltoy gate isnotstatisticalassurance.36checksinclude structural assertions.",
+    "Exactcode/runtime/outputhashrecorded;JSONartifactroundtripisprocess-local,nopersistedregistry/serving. No sklearn/PyTorch/numpy/pandas installed orused;no dependencyinstallation,authentication,servicechangeor externalnotification attempted.",
+    "Primaryproductpagesreadselectivelyasper-sourcenotes;actual5pageexamPDFfullyread. No newAutoMLtextdeprecationclaimadoptedfromunreadreleasepage. ReusedAIblog/securitysourcespreviouslyreadinsamesession,currenthealthyfetches.",
+    "Publiccatalogonly:Skillsdurationsunexposed,Courseracontradictoryschedule/2cards,Pluralsightinproduction,Whizemptybody,OReilly403. No paidcourse/book/providerlab/questioninteriors accessed. Sampleformwasashell."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Actual standard-library logistic gradient-descent training on120syntheticrows,train-onlynormalization,30validationthresholdselection,JSONartifactroundtrip/fingerprints,30held-outrows,metrics/slices and separate aggregate-regression/concept-driftfixtures. Structural assertions included. No sklearn/PyTorch/cloud/distributedtraining/LLM/featurestore/endpoint/API or files/network.",
+    "passed": 36,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "68e2c7376809e7117b78d8cc21851e81ee70a6c6a860e767d19d83dc6b358bdd",
+    "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "execution_stdout": "{\"test\": {\"accuracy\": 0.9333333333333333, \"cost\": 2, \"fn\": 0, \"fp\": 2, \"n\": 30, \"precision\": 0.8666666666666667, \"recall\": 1.0, \"tn\": 15, \"tp\": 13}, \"test_slices\": {\"A\": {\"accuracy\": 0.9166666666666666, \"cost\": 2, \"fn\": 0, \"fp\": 2, \"n\": 24, \"precision\": 0.8571428571428571, \"recall\": 1.0, \"tn\": 10, \"tp\": 12}, \"B\": {\"accuracy\": 1.0, \"cost\": 0, \"fn\": 0, \"fp\": 0, \"n\": 6, \"precision\": 1.0, \"recall\": 1.0, \"tn\": 5, \"tp\": 1}}, \"threshold\": 0.35, \"train_loss\": 0.19340745733891745, \"validation\": {\"accuracy\": 0.8666666666666667, \"cost\": 4, \"fn\": 0, \"fp\": 4, \"n\": 30, \"precision\": 0.7333333333333333, \"recall\": 1.0, \"tn\": 15, \"tp\": 11}}\n36 local checks passed",
+    "results": {
+      "test": {
+        "accuracy": 0.9333333333333333,
+        "cost": 2,
+        "fn": 0,
+        "fp": 2,
+        "n": 30,
+        "precision": 0.8666666666666667,
+        "recall": 1.0,
+        "tn": 15,
+        "tp": 13
+      },
+      "test_slices": {
+        "A": {
+          "accuracy": 0.9166666666666666,
+          "cost": 2,
+          "fn": 0,
+          "fp": 2,
+          "n": 24,
+          "precision": 0.8571428571428571,
+          "recall": 1.0,
+          "tn": 10,
+          "tp": 12
+        },
+        "B": {
+          "accuracy": 1.0,
+          "cost": 0,
+          "fn": 0,
+          "fp": 0,
+          "n": 6,
+          "precision": 1.0,
+          "recall": 1.0,
+          "tn": 5,
+          "tp": 1
+        }
+      },
+      "threshold": 0.35,
+      "train_loss": 0.19340745733891745,
+      "validation": {
+        "accuracy": 0.8666666666666667,
+        "cost": 4,
+        "fn": 0,
+        "fp": 4,
+        "n": 30,
+        "precision": 0.7333333333333333,
+        "recall": 1.0,
+        "tn": 15,
+        "tp": 11
+      }
+    },
+    "cloud_cli_probe": "Reuse prior same-session ACE gcloud-not-found-on-PATH observation. No installation,authentication or infrastructure.",
+    "learning_catalog_consistency": "passed"
+  },
+  "actual_pdf_receipts": [
+    {
+      "id": "google-pmle-exam-guide-2026-06-01",
+      "url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_new.pdf",
+      "checked_at": "2026-09-29T08:18:37.054245+00:00",
+      "health": {
+        "id": "google-pmle-exam-guide-2026-06-01",
+        "url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_new.pdf",
+        "checked_at": "2026-09-29T08:18:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_new.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_new.pdf",
+      "sha256": "8353ed16bc4fcaebd6dab301f61bf2f86a3eaf341a199a1d6f38196745e4a598",
+      "bytes": 156614,
+      "pdf_pages": 5,
+      "text_characters": 9584
+    }
+  ],
+  "accepted_lifecycle_initialization": {
+    "changed": [
+      "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER",
+        "title": "Professional Machine Learning Engineer",
+        "url": "https://cloud.google.com/learn/certification/machine-learning-engineer",
+        "guide_path": "guides/GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER-professional-machine-learning-engineer.md",
+        "snapshot_path": "data\\objective-snapshots\\google-professional-machine-learning-engineer-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\google-professional-machine-learning-engineer-official-status.json",
+        "previous_sha256": "14f8953554d4c9762d0ac1fc7b0b4449d624895b2e1c3c9d4670009726c5bd5c",
+        "current_sha256": "14f8953554d4c9762d0ac1fc7b0b4449d624895b2e1c3c9d4670009726c5bd5c",
+        "previous_status_sha256": null,
+        "current_status_sha256": "66f6fa2d9c9f832dc152d4ebd58783d3daf515d8f67cfa1ddb90f55950d2495f",
+        "official_status": {
+          "skills_versions": [
+            "Length: Two hours",
+            "Registration fee: $200 (plus tax where",
+            "Languages: English, Japanese",
+            "Exam format: 50-60 multiple choice and multiple select",
+            "Exam delivery method:",
+            "Prerequisites: None",
+            "Recommended experience: 3+ years of industry"
+          ],
+          "upcoming_announcements": [
+            "This exam was updated to reflect recent branding changes. Refer to the exam guide to",
+            "This exam was updated to reflect the transition from Vertex AI to"
+          ]
+        },
+        "objectives_changed": false,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "status_written": true,
+        "written": true
+      }
+    ]
+  },
+  "post_initialization_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER",
+        "title": "Professional Machine Learning Engineer",
+        "url": "https://cloud.google.com/learn/certification/machine-learning-engineer",
+        "guide_path": "guides/GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER-professional-machine-learning-engineer.md",
+        "snapshot_path": "data\\objective-snapshots\\google-professional-machine-learning-engineer-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\google-professional-machine-learning-engineer-official-status.json",
+        "previous_sha256": "14f8953554d4c9762d0ac1fc7b0b4449d624895b2e1c3c9d4670009726c5bd5c",
+        "current_sha256": "14f8953554d4c9762d0ac1fc7b0b4449d624895b2e1c3c9d4670009726c5bd5c",
+        "previous_status_sha256": "66f6fa2d9c9f832dc152d4ebd58783d3daf515d8f67cfa1ddb90f55950d2495f",
+        "current_status_sha256": "66f6fa2d9c9f832dc152d4ebd58783d3daf515d8f67cfa1ddb90f55950d2495f",
+        "official_status": {
+          "skills_versions": [
+            "Length: Two hours",
+            "Registration fee: $200 (plus tax where",
+            "Languages: English, Japanese",
+            "Exam format: 50-60 multiple choice and multiple select",
+            "Exam delivery method:",
+            "Prerequisites: None",
+            "Recommended experience: 3+ years of industry"
+          ],
+          "upcoming_announcements": [
+            "This exam was updated to reflect recent branding changes. Refer to the exam guide to",
+            "This exam was updated to reflect the transition from Vertex AI to"
+          ]
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  }
+}
