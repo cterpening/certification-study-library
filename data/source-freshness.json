@@ -4,6 +4,161 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-cisa-deep-review",
+      "title": "CISA complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CISA"
+      ],
+      "results": [
+        {
+          "exam_code": "CISA",
+          "vendor_id": "isaca",
+          "guide_path": "guides/CISA-isaca-certified-information-systems-auditor.md",
+          "baseline_sha256": "b4768cad54e9a66f4113cce2426278ded19d77e9bf4787c9a10d7f3f8157f742",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Complete live outline plus selected candidate PDF and all nine CPE policy pages read. 60 subtopics/43 tasks, unchanged weights; exam and credential requirements separated from 2027 maintenance change. Original snapshots unchanged."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Ethics and selected NIST assessment/recovery methodology read; fifth-edition ITAF announcement and public listing verified. Original 47-check workbook includes actual SQLite backup/restore; no full standards-conformity or production claim."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "February ITAF launch and June/September audit articles reviewed. Commentary, legal claims and broad sampling language bounded. No CISA replacement outline announced in examined sources."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current QAE and ITAF public listings rendered in a fresh unsigned browser after HTTP shells. Dead old QAE link replaced; Pluralsight and LinkedIn metadata read, blocked interiors qualified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "ITAF fifth-edition package and sampling companion require checkout/account access and remain unread. Paid courses/QAE, personal application/CPE cycle/waiver decisions, complete organizational recovery and human review pending; current/new recordkeeping text differs."
+            }
+          },
+          "findings": [
+            {
+              "id": "cisa-deep-1",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Current audit framework has a fifth edition",
+              "url": "https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-launches-future-ready-it-audit-framework-update-to-strengthen-digital-trust",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CISA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "ISACA announced the fifth edition and updated 2208 sampling companion in February 2026.",
+              "recommendation": "Add current edition and distinguish verified public description from unreviewed package contents.",
+              "disposition": "applied",
+              "source_id": "isaca-itaf-five-launch",
+              "resolution": "Add current edition and distinguish verified public description from unreviewed package contents."
+            },
+            {
+              "id": "cisa-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Maintenance transition needs specific boundaries",
+              "url": "https://www.isaca.org/credentialing/cpe-2027",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CISA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "2027 policy preserves 120 total and introduces 90 aligned minimum with up to 30 other professional-development hours.",
+              "recommendation": "Explain maintenance versus exam scope; all 120 can align and individual activity caps still apply.",
+              "disposition": "applied",
+              "source_id": "isaca-cpe-2027",
+              "resolution": "Explain maintenance versus exam scope; all 120 can align and individual activity caps still apply."
+            },
+            {
+              "id": "cisa-deep-3",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "QAE resource link moved",
+              "url": "https://www.isaca.org/store2/product/CISA-QAE-C?category=shop-all",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CISA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Old store/items route returned 404; current store2 public listing renders 1070 questions, three practices and six-month access.",
+              "recommendation": "Replace guide link and keep historical missing receipt; disclose no paid items or checkout review.",
+              "disposition": "applied",
+              "source_id": "cisa-qae-database-current",
+              "resolution": "Replace guide link and keep historical missing receipt; disclose no paid items or checkout review."
+            },
+            {
+              "id": "cisa-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Control catalogs and assessment procedures need separate evidence",
+              "url": "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CISA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "800-53A defines assessment objects/methods and cautions potential methods are not a mandatory checklist.",
+              "recommendation": "Teach criterion-to-procedure reasoning and original negative cases for misleading totals, identity joins and sampled exceptions.",
+              "disposition": "applied",
+              "source_id": "nist-sp80053a-r5",
+              "resolution": "Teach criterion-to-procedure reasoning and original negative cases for misleading totals, identity joins and sampled exceptions."
+            },
+            {
+              "id": "cisa-deep-5",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Complete current standards text remains unavailable within reviewed public material",
+              "url": "https://www.isaca.org/store2/product/WITAF-C?category=shop-all",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CISA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Free fifth-edition package is delivered after checkout through MyISACA; public description is not the package.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped 60 subtopics and 43 supporting tasks. Added 40 answer notes, three worked scenarios, eight proposed activities and 47 executed Python/SQLite checks including a disposable database backup/restore. Updated QAE location, ITAF edition and 2027 CPE distinctions; clarified evidence completeness, sampling and recovery. Gated standards/course contents, personal eligibility and human review remain pending. Same-context AI review; human review pending. See docs/research/2026-09-29-cisa-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 4,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-29-splk5001-deep-review",
       "title": "SPLK-5001 complete guide and learning-content review",
       "rubric_version": 1,

@@ -1864,6 +1864,8 @@ Blueprint SHA-256: `a2bd1aa1350f373525e5d2f66cfc38f7023f6b84cf9275f594421412fbd7
 
 ## CISA coverage record
 
+The September 29 [deep review](research/2026-09-29-cisa-deep-review.md) maps 103 detailed objectives. Mapped 60 subtopics and 43 supporting tasks. Added 40 answer notes, three worked scenarios, eight proposed activities and 47 executed Python/SQLite checks including a disposable database backup/restore. Updated QAE location, ITAF edition and 2027 CPE distinctions; clarified evidence completeness, sampling and recovery. Gated standards/course contents, personal eligibility and human review remain pending. Current guide citations: 22 registered, 20 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Information Systems Auditing Process (18%), Governance and Management of IT (18%), Information Systems Acquisition, Development, and Implementation (12%), Information Systems Operations and Business Resilience (26%), and Protection of Information Assets (26%)

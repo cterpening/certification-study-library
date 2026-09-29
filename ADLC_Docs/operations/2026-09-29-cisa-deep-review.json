@@ -1,0 +1,2735 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "CISA",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/CISA-isaca-certified-information-systems-auditor.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "b64ee93d6a63008a2b5654753e15cf15c3c4e5b628a398c6becea47ff1e48e81",
+  "guide_after_sha256": "78c1de1a5997df364904b3367bc8e50cba8452c945b6c01546eec8434aebf746",
+  "prior_records": {
+    "exam": {
+      "code": "CISA",
+      "level": "expert",
+      "vendor_id": "isaca",
+      "title": "Certified Information Systems Auditor",
+      "status": "active",
+      "study_guide_url": "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline",
+      "guide_path": "guides/CISA-isaca-certified-information-systems-auditor.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Anyone may sit the exam, but the CISA designation requires a timely application and five years of qualifying information-systems audit, control or security experience, subject to the current application rules. Study the audit decision sequence, governance, controlled delivery, operations/resilience, and layered information-asset protection; produce reproducible evidence in safe labs."
+    },
+    "review": {
+      "id": "cisa-2026-09-02-source-validation",
+      "exam_code": "CISA",
+      "guide_path": "guides/CISA-isaca-certified-information-systems-auditor.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/cisa-official-objectives.txt",
+      "blueprint_snapshot_sha256": "1b6d14e1c7adfd585869f75f8ea1fb822dcb73a696cabca5c6dc7e7c9ea9d25e",
+      "objective_coverage": [
+        {
+          "objective_group": "Information Systems Auditing Process (18%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Governance and Management of IT (18%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 1 and 4"
+          ]
+        },
+        {
+          "objective_group": "Information Systems Acquisition, Development, and Implementation (12%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenario 1",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Information Systems Operations and Business Resilience (26%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1–2",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Protection of Information Assets (26%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 3, 7 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 14,
+        "reachable": 13,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All five August 2024 job-practice domains are mapped through audit authority/risk/procedure/evidence/finding/follow-up, enterprise governance and supplier accountability, controlled acquisition and delivery, operations and dependency-aware resilience, and layered information-asset protection and incident handling. Three integrated scenarios, eight safe evidence labs and 40 original checks are included. Passing the exam is explicitly separated from the verified experience, application, ethics, auditing standards and maintenance requirements for using the CISA designation. The January 2027 CPE-policy change is labeled. Only official ISACA sources are named for exam-item style; no recalled/live item, dump or copied course content is used."
+    },
+    "sources": [
+      {
+        "id": "cisa-exam-content-outline",
+        "title": "CISA Exam Content Outline",
+        "url": "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline",
+        "publisher": "ISACA",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISA"
+        ],
+        "notes": "Canonical live five-domain 18/18/12/26/26 job-practice outline and 150-question statement; the 2026 candidate guide identifies the detailed baseline as effective August 2024."
+      },
+      {
+        "id": "isaca-certification-candidate-guide",
+        "title": "ISACA Certification Exams Candidate Guide",
+        "url": "https://www.isaca.org/credentialing/-/media/fa494652c5f149289af38cef18328650.ashx",
+        "publisher": "ISACA",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISA",
+          "CISM",
+          "CRISC"
+        ],
+        "notes": "2026 authoritative registration, scheduling, four-hour delivery, fee, rules, scoring, and detailed CISA/CISM/CRISC job-practice outlines."
+      },
+      {
+        "id": "cisa-certification-requirements",
+        "title": "CISA Certification Requirements",
+        "url": "https://www.isaca.org/credentialing/cisa/get-cisa-certified",
+        "publisher": "ISACA",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISA"
+        ],
+        "notes": "Authoritative exam-versus-designation boundary, five-year application window, five years of qualifying experience within the preceding ten years, verification, application fee, CPE, ethics and audit-standards requirements."
+      },
+      {
+        "id": "cisa-maintenance-requirements",
+        "title": "Maintain CISA Certification",
+        "url": "https://www.isaca.org/credentialing/cisa/maintain-cisa-certification",
+        "publisher": "ISACA",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISA"
+        ],
+        "notes": "Current 20 annual/120 three-year CPE, annual fee, audit, ethics, auditing standards, recordkeeping, status and revocation requirements."
+      },
+      {
+        "id": "isaca-cpe-2027",
+        "title": "ISACA CPE Policy Changes Effective 2027",
+        "url": "https://www.isaca.org/credentialing/cpe-2027",
+        "publisher": "ISACA",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISA",
+          "CISM",
+          "CRISC"
+        ],
+        "notes": "Scheduled January 1, 2027 framework: 120 CPEs remain, with 90–120 certification-aligned hours and up to 30 professional-development hours outside the credential domains."
+      },
+      {
+        "id": "isaca-online-review-courses",
+        "title": "ISACA Online Exam Prep Review Courses",
+        "url": "https://www.isaca.org/training-and-events/online-training/online-review-courses",
+        "publisher": "ISACA",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISA",
+          "CISM"
+        ],
+        "notes": "Official self-paced certification review catalog. Verify that the purchased CISM product matches the November 2026 outline transition; fixed seat times are not exposed."
+      },
+      {
+        "id": "cisa-qae-database",
+        "title": "CISA Questions, Answers & Explanations Database",
+        "url": "https://www.isaca.org/store/items/xmxca1712m",
+        "publisher": "ISACA",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISA"
+        ],
+        "notes": "Official 1,070-question pool, explanations, domain planning and three full timed practices with six-month access; estimate 25–45 hours for explanation-led use."
+      },
+      {
+        "id": "cisa-free-practice-quiz",
+        "title": "Free CISA Practice Quiz",
+        "url": "https://www.isaca.org/credentialing/cisa/cisa-practice-quiz",
+        "publisher": "ISACA",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISA"
+        ],
+        "notes": "Small official item-style preview; approximately 15–25 minutes plus review. It is not a readiness score or full practice exam."
+      },
+      {
+        "id": "pluralsight-cisa-2024-path",
+        "title": "CISA Certified Information Systems Auditor 2024 Path",
+        "url": "https://www.pluralsight.com/paths/cisar-certified-information-systems-auditorr-2024",
+        "publisher": "Pluralsight / Kevin Henry",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISA"
+        ],
+        "notes": "Eleven-course, 20-hour path explicitly aligned to the 2024 job-practice areas, with practice exam."
+      },
+      {
+        "id": "oreilly-cisa-aci-learning",
+        "title": "CISA: Certified Information Systems Auditor",
+        "url": "https://www.oreilly.com/videos/cisa-certified-information/9781836209119/",
+        "publisher": "O'Reilly / Packt / ACI Learning",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISA"
+        ],
+        "notes": "April 2024 intermediate video course, 26h39m. Select chapters and reconcile policy and technology statements with current authoritative sources."
+      },
+      {
+        "id": "linkedin-cisa-cert-prep-2026",
+        "title": "ISACA CISA Cert Prep",
+        "url": "https://www.linkedin.com/learning/isaca-certified-information-systems-auditor-cisa-cert-prep-44731094",
+        "publisher": "LinkedIn Learning / Cybrary",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISA"
+        ],
+        "notes": "7h10m intermediate course released June 4, 2026, covering all five current domains with examples and case studies."
+      },
+      {
+        "id": "udemy-cisa-masterclass-doshi",
+        "title": "Masterclass - CISA Exam (Updated 2026)",
+        "url": "https://www.udemy.com/course/masterclass-cisa-exam/",
+        "publisher": "Udemy / Hemang Doshi",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISA"
+        ],
+        "notes": "22h50m, 243-lecture course listed as updated July 2026. Its own description says it supplements, rather than replaces, official ISACA resources."
+      },
+      {
+        "id": "nist-cybersecurity-framework-2",
+        "title": "NIST Cybersecurity Framework 2.0",
+        "url": "https://www.nist.gov/cyberframework",
+        "publisher": "NIST",
+        "authority_class": 1,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "CISA",
+          "CISM",
+          "CRISC",
+          "PANW-SECURITY-OPERATIONS-ARCHITECT",
+          "CC",
+          "CISSP"
+        ],
+        "notes": "Authoritative outcome-oriented cybersecurity governance and risk reference; use selected material for related context, not as an ISACA blueprint. September 29 CC deep review: Current main portal/resource descriptions and latestupdates read. SixFunction explanation supported by SP800-61r3summary. AIanalysisdraft banner not adopted as finalized guidance;not all CSF resources/profiles read. See docs/research/2026-09-29-cc-deep-review.md No live infrastructure execution. September 29 CISSP deep review: Fresh main portal announcement/resource context selected. CSF2governance/outcomes andSeptemberAIinitialpublicdraft consultation distinguished fromfinalbaseline. NotfullCSFpublication oralllinkedresources. See docs/research/2026-09-29-cissp-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "nist-sp-800-53-rev5",
+        "title": "NIST SP 800-53 Rev. 5",
+        "url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "publisher": "NIST",
+        "authority_class": 1,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISA"
+        ],
+        "notes": "Authoritative control catalog and assessment context; target relevant families rather than memorizing the publication."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "621132b833845d92e68f87eff41fbf8122a7dec0ef1bb59db0b99bc70fdbe3fe",
+      "guide_sections": [
+        "1. Information Systems Auditing Process (18%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "72c38236079ff0ad5473c616bf9a8653b6cfe9465e8cf37ac29bc0fc0b0d6187",
+      "guide_sections": [
+        "1. Information Systems Auditing Process (18%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "fdc351d7dbc40d503a3b5660d994c598cc21b805d818fd7a258b72419e9f29d4",
+      "guide_sections": [
+        "1. Information Systems Auditing Process (18%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "b94daa1c281bfeb42bbb6701a1c0669ccceb7d571b5d850e35877ab007c9f340",
+      "guide_sections": [
+        "1. Information Systems Auditing Process (18%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "68465afd4ed18c78ede08fbdd7be527f7fd90ad8dc98aef8b331d294d84e1a07",
+      "guide_sections": [
+        "1. Information Systems Auditing Process (18%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "596abf66bee7e976abcbb0b31c8726088d3db7076e84e81243512d23acd2d6f1",
+      "guide_sections": [
+        "1. Information Systems Auditing Process (18%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "2893cfe4fe9cb1287589b977fcda05519fff25c11855da33641923d860054895",
+      "guide_sections": [
+        "1. Information Systems Auditing Process (18%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "173d4db5245622ba830879a56383b4aea7caadd58c3f2cc6fa3fe70a53876476",
+      "guide_sections": [
+        "1. Information Systems Auditing Process (18%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "249685be81554aa0413de6296ce919297380e83a1e52a37b602efcd92223e003",
+      "guide_sections": [
+        "1. Information Systems Auditing Process (18%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "c9e62186521893416182059f51b696f03188147b2202858a5adbb39e9a6b2e67",
+      "guide_sections": [
+        "1. Information Systems Auditing Process (18%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "c3924d4ee7bd5dbf050a3b916406af0dbc41aa9cc185e562576774dc8080f85d",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "a15db635d19922dbbc0051fae6321c6fee90ed34242e94babb782e0fd4b7dede",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "43ea7ba8b0e756150bd3d670e9256182dda75b9f3f816780374a753f98a51093",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "148941d71448731edfa6b3648f02694275c1e13d968b9205410703b2dfdc470a",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "bc61035e8716f2abb6e060d545ce323cd9c7d1813433efeb78425082a72be30d",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "9862f796fa70b2a531cf651e41219efc005b7990fc111f84a9cd512d804aae5f",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "ed4ee457a0fd5621a027cc0d0fe3e3e0bf90bad1d11211c013b29021c1139e05",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "f189c950215af3aacbc14d11a9a67d8e2de4d81f3c7a2e8019b0bef46dd9236f",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "102f73df9aef935066d43be93d0e5b5663a07bcf85c6ca01f690cf3b5cbef9ae",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 10,
+      "objective_sha256": "298ee1fbb516321ee989096829f27b61f96512142ea5c1453ffbed400a888288",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 11,
+      "objective_sha256": "ee92da0870c05c41a0cbf828daeee89d9560dae21c9ecbd766887cb9ccf527c3",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "4760d9b4610eb191fb2ad956f6eaddca628ba10a4ea9ca5cdf5e5c664860b4cc",
+      "guide_sections": [
+        "3. Information Systems Acquisition, Development, and Implementation (12%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "c12cf239e66f0f31c161e67cf126bf33e5f3995cb5772c90d778ba2026af6021",
+      "guide_sections": [
+        "3. Information Systems Acquisition, Development, and Implementation (12%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "0f8cf3ef86b61cfa0ad491ccc347f5c3d8a7b0d0d08e46a2bd4dfd57aa27c721",
+      "guide_sections": [
+        "3. Information Systems Acquisition, Development, and Implementation (12%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "09d0b50cc1ef0345f3e25ee70bf24ca9cbdd5318e8114cd7fcf94b1d62df25f1",
+      "guide_sections": [
+        "3. Information Systems Acquisition, Development, and Implementation (12%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "26967db5261acde1d351121362e82f1aea5dff09174294f2d47a3e4c5c5849e9",
+      "guide_sections": [
+        "3. Information Systems Acquisition, Development, and Implementation (12%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "b7942b4899d6bdc181e83fa4d2317b52d8a92af42ebc974d70c80e194c951acb",
+      "guide_sections": [
+        "3. Information Systems Acquisition, Development, and Implementation (12%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "0216a656b2fdfda532a0e677ada2fe1b1ffd5260eedd0290c5f05c08ecb4101b",
+      "guide_sections": [
+        "3. Information Systems Acquisition, Development, and Implementation (12%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "91bf832c17997b77b6469381a16291248efb9ad8d7dae90150d09a0148f57ef0",
+      "guide_sections": [
+        "3. Information Systems Acquisition, Development, and Implementation (12%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "494cf961c799d251a144ed601f8c62a21968ecc7b20c209cf0a8dae4176025db",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "e1bb1569b67750e251a1c88df3e34f81a93dd5f5985dce540f40dbcbe12cb338",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "cdf6d2c83e4038da0ca636384c6583971d09912205db22a18660ebdf77f2466c",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "6d4b54e5fac1582d17e51a7754580a4531b18761742ee16a2661f9e93d9ab3ef",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "20034619616d019ac20c6473105134ac781ceb844ca08e42651c29b9e4be3442",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "f311a8691eff652df752d77008dabec0ceb5ce3e4f0ea23efe5802b113027b61",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "d257b0d679214dc77c77be9c398f60e166854f46455f23a5e9488d002098cd2a",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "047b6d568e1b446cecf70a6eb1e233fac7815709d94f31b2731f396023bc2512",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "62641dbbb1c82d081602824c2c27e878d15a518dcab307c6b0e5011e70a7dffc",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 10,
+      "objective_sha256": "d531dd6c352d600dab35a815fc18ed9963b4322a40329b11ed38e44fe9cc83a8",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 11,
+      "objective_sha256": "709864ec66b8246c40854a8e4613c310b1189d91681317fc5fdf82540ea78ba1",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 12,
+      "objective_sha256": "f70a06a8943197c6c9e0e4a79e501e1ad793997a26180f99c63bd9acf1308668",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 13,
+      "objective_sha256": "6160c4edf3c41deeea473e6f3d6237cf3d7f3e3d254e2b6b0a02abdbc51ae062",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 14,
+      "objective_sha256": "85f21b5becf4ce5bb1deb7d6f8b8e6104f9d372e82786b81e5c882a0031e26a7",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 15,
+      "objective_sha256": "e7dcc2e25adf037993c146806b6659d9dbf4f15a4f452ccbe1d250d13e75fb80",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 16,
+      "objective_sha256": "959414e3895b6804613e84fbce235b5e3231677da5b89c45c55eeae8453444d9",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "cb472baa1f2f3a9ccc8ac5e15353ac64950d3ba098d166e5cd9ab2857c0f09d2",
+      "guide_sections": [
+        "5. Protection of Information Assets (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "66504be2662065799c354e0936c1e2d2bd51ec6c4184b3abc8fb8285e9437a31",
+      "guide_sections": [
+        "5. Protection of Information Assets (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "bb133561f40b2cbc6282dd2e93289d786c5f367d9d3f49ca3dc5252d398f3ab4",
+      "guide_sections": [
+        "5. Protection of Information Assets (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "f6a5a31dabca46d3d79c0a92169991703e5b6674a006bc8caebc04a63310c2dd",
+      "guide_sections": [
+        "5. Protection of Information Assets (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "e1d96b58ef3acf2821e75266353f5ed147e281ff033e053325e76e89ee7223c3",
+      "guide_sections": [
+        "5. Protection of Information Assets (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "a8f6ed977bc42430050482a1ccffc0eeafba6f3555ccdbeed72d5d304df9322c",
+      "guide_sections": [
+        "5. Protection of Information Assets (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "03f9ea16696ee31bca3678c9e4cc212d333682a714a124eb19ef65420ebb7522",
+      "guide_sections": [
+        "5. Protection of Information Assets (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 8,
+      "objective_sha256": "4a3cd9d6746d44bd3caf31c11df467323dc8aadfcc4d7cbddd3ce11116bde4b0",
+      "guide_sections": [
+        "5. Protection of Information Assets (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 9,
+      "objective_sha256": "cc671ccc4b46cffe1a2e152a96c8cae0e7f53ba315bcdf59417a22a7036b7527",
+      "guide_sections": [
+        "5. Protection of Information Assets (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 10,
+      "objective_sha256": "e39fd2bdff0f14878258c9eddc7f11295b25fa92a2ba0e06a62d22df81a88624",
+      "guide_sections": [
+        "5. Protection of Information Assets (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 11,
+      "objective_sha256": "c4e022497879d63338275ae971b1d33e638386db55186d1dfe028c77607da603",
+      "guide_sections": [
+        "5. Protection of Information Assets (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 12,
+      "objective_sha256": "8eb007c19b2f36fd18fbb1cb096162e2b173eedc6deb819977e53ef1245a8e70",
+      "guide_sections": [
+        "5. Protection of Information Assets (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 13,
+      "objective_sha256": "56921e39eef150cf27d5bb6bd9eea5863b8d473be90c0a2ccac4e895a690be36",
+      "guide_sections": [
+        "5. Protection of Information Assets (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 14,
+      "objective_sha256": "4961cc624ce38ad37803b7889273dd5d786712e9e7f8026118a2e690220811c0",
+      "guide_sections": [
+        "5. Protection of Information Assets (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 15,
+      "objective_sha256": "c531e460cb68db733e91ce25037f20dd2193177543c6dc3c4b239087d3016cf7",
+      "guide_sections": [
+        "5. Protection of Information Assets (26%)",
+        "Worked results for the three scenarios",
+        "Eight practical labs",
+        "Executed offline audit workbook",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "1b023fccbb600ad1c258f3c03909c8f1907122a24e8293af97333ea2085e81d1",
+      "guide_sections": [
+        "1. Information Systems Auditing Process (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "f38705c3823ad2b703cd74ad0b1bac23b4373366729f6f4d58c4e537d4ca7ef2",
+      "guide_sections": [
+        "1. Information Systems Auditing Process (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "8a0476235f369e1ad8cba9b20ae4d8d067c04b547ff5e214af196d741585cb44",
+      "guide_sections": [
+        "1. Information Systems Auditing Process (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "641761288e9a86781c1232bd22ac257d3d179de8351b17ae9bbf4feb10fdff71",
+      "guide_sections": [
+        "1. Information Systems Auditing Process (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "d60431ae4bb0caa4b03e7e526bc7f87b3750cc86feaa6baa7e3e9db7ff30fce9",
+      "guide_sections": [
+        "1. Information Systems Auditing Process (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "0b2a03ebcb30d2ca9209e1fed061b3ac379aa6c4318eaee4966e6e41b3e5faed",
+      "guide_sections": [
+        "1. Information Systems Auditing Process (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "19331c9471034d9e995f6067b63dedebecf246cd2e52770607ade193b2b836ca",
+      "guide_sections": [
+        "1. Information Systems Auditing Process (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 8,
+      "objective_sha256": "1ccaeaec6ce5db4a923f459a518001c9db03a197b7d2e454e7e7c514abd5a0da",
+      "guide_sections": [
+        "1. Information Systems Auditing Process (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 9,
+      "objective_sha256": "66cc9fe9a88e245aa691cc9d4276e80e0918089a693b7286e8f85dec8d00737b",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 10,
+      "objective_sha256": "da3e30655fee809be1d5be05e851f404253da7f77fd5ac4a87e7306292d8d4ad",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 11,
+      "objective_sha256": "145794a5636356774e3e2a6149dca334d8df2b81c509e55d1ffb0d278faf39a7",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 12,
+      "objective_sha256": "8545f804dd7e272c0067dd67f7057d9020f85211c68a262fed98bf10221aaa84",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 13,
+      "objective_sha256": "3fe1ffb992f60107e7e7151879068edbae0f8bbe7c00568ce297713ed6b8f416",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 14,
+      "objective_sha256": "9a37618d901eaa3a4683e8b414cf143faf16712d22388f81d8740d342b02f817",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 15,
+      "objective_sha256": "e630ca607bf30e272cceeef9f5e9e81f599604b485ce39ca3e142a979799f91c",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 16,
+      "objective_sha256": "8c20e0181dd1e261a55cc2bf30ea7fc4f820eaa1e8436a2cc0ee6b23a800e466",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 17,
+      "objective_sha256": "f3ce646a1a49e1750cfd87d5aa812e645dc84d1479d46790ab15fcfe08364c73",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 18,
+      "objective_sha256": "37ef94bb5311db9a1cdf8e8f8c26e2b75861f89b9ecdbe07ee43ef18575eb8d3",
+      "guide_sections": [
+        "3. Information Systems Acquisition, Development, and Implementation (12%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 19,
+      "objective_sha256": "94fa9adc87ac97fcd757d32f0257cb53207fe7a2925aed5954c889014ede23b3",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 20,
+      "objective_sha256": "603ff9c2661eef6c935db3924936dea180c480679a5637b955ece94f69d21ba1",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 21,
+      "objective_sha256": "31af6facaedc0a818e827d3538477ef2b46edd69d9aa9693a50303cb42a1b25d",
+      "guide_sections": [
+        "3. Information Systems Acquisition, Development, and Implementation (12%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 22,
+      "objective_sha256": "9b7c6d84d349f38ff09c7caba064402ec2cd01ce3860404ce7618cb7f966b24c",
+      "guide_sections": [
+        "3. Information Systems Acquisition, Development, and Implementation (12%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 23,
+      "objective_sha256": "e45f76dc678e7ba66743656044312ec180e9fbd77ce13829bbf5ecdf7721db6c",
+      "guide_sections": [
+        "3. Information Systems Acquisition, Development, and Implementation (12%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 24,
+      "objective_sha256": "ca1c780a109a6203e2d5b4e327b1231966d1a1f6d4c05019aeab60fdc1711db6",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 25,
+      "objective_sha256": "a766ef0aee35056ca4f2a9d0a66eb47715330b72d90263ba19c6053b6e7081d0",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 26,
+      "objective_sha256": "6dfacb8017db6b748379ace9dbb6b86b6a61879c558c7456cbffc9c15210e2a5",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 27,
+      "objective_sha256": "1df588827f92fff2bfc760289bda94bcebf77ca49b6eeaf178b66e5b9358c754",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 28,
+      "objective_sha256": "82f051db954052741a1d8ef5d628bf47fc4a96f7358dc6be07e4d6840eae8a85",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 29,
+      "objective_sha256": "ca4ab8983f2d77949a2db7bc3e21b1f3134749ee4a4dc47740424d97359b13db",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 30,
+      "objective_sha256": "a322c24c8e776b36e05f3c12718a930f0ed32eced18022930d6b5d1488d6b55b",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 31,
+      "objective_sha256": "18159c196b0bdb0a7be98560bd3d3a2d71285fbe06abbc18579b16a5dcb5cd89",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 32,
+      "objective_sha256": "187e886385c2f5c8a37227b6d96be505db4b641acfa545f69f60687bcc4fc7da",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 33,
+      "objective_sha256": "4e8e36d50b9aa2b79971180bd347873ea0299e71533bab285e478a00d214ae8a",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 34,
+      "objective_sha256": "879208c2cc32f4b6544d619a5d525a7af3a6e9249db8ce08703c7e7e51bb2a07",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 35,
+      "objective_sha256": "393bfabeab8c8962bd97d6b6832d911be728345b2da65496e59aae1c8f10bf57",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 36,
+      "objective_sha256": "f97e0be79e023bc34f426628669e2c21fddb9de4ee72cc1f2c6848a164e826aa",
+      "guide_sections": [
+        "4. Information Systems Operations and Business Resilience (26%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 37,
+      "objective_sha256": "ab5bda19a5a5c2046c70ad2a0c51d593da8fd1c96b840eb619010745d7a38832",
+      "guide_sections": [
+        "5. Protection of Information Assets (26%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 38,
+      "objective_sha256": "a1edfcaaf739c3966a5a86900d2f9e6c09e11fc4ff5ca746c358608e53111221",
+      "guide_sections": [
+        "5. Protection of Information Assets (26%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 39,
+      "objective_sha256": "dfd9754f681790a487e5ba74bfa4912618afad3ce60111e2c805387d34da54e3",
+      "guide_sections": [
+        "5. Protection of Information Assets (26%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 40,
+      "objective_sha256": "6ae7318401c7ef9b12209d8c28e4285b6727d7ff3d5af6a2a03b00d34039d236",
+      "guide_sections": [
+        "5. Protection of Information Assets (26%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 41,
+      "objective_sha256": "979047854310d9de0c21fec0a48387a19dbae9de741c7850e65fcef42c6f4cac",
+      "guide_sections": [
+        "5. Protection of Information Assets (26%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 42,
+      "objective_sha256": "cbf8cd1569626073db68292588f267efac77a2904148c78131ec0958f56bc0df",
+      "guide_sections": [
+        "1. Information Systems Auditing Process (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 43,
+      "objective_sha256": "9c547ec5fc9ac21a74833ca801a01f19f9f56f45f5c1c251e0ee3e422466fe29",
+      "guide_sections": [
+        "2. Governance and Management of IT (18%)",
+        "Worked results for the three scenarios",
+        "Answer notes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "CISA",
+        "title": "Certified Information Systems Auditor",
+        "url": "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline",
+        "guide_path": "guides/CISA-isaca-certified-information-systems-auditor.md",
+        "snapshot_path": "data\\objective-snapshots\\cisa-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\cisa-official-status.json",
+        "previous_sha256": "1b6d14e1c7adfd585869f75f8ea1fb822dcb73a696cabca5c6dc7e7c9ea9d25e",
+        "current_sha256": "1b6d14e1c7adfd585869f75f8ea1fb822dcb73a696cabca5c6dc7e7c9ea9d25e",
+        "previous_status_sha256": "7238bf3a267f70653900587236500ebcd87cce5208f5eb425b5ae4e1a09b53b4",
+        "current_status_sha256": "7238bf3a267f70653900587236500ebcd87cce5208f5eb425b5ae4e1a09b53b4",
+        "official_status": {
+          "skills_versions": [
+            "The Certified Information Systems Auditor® (CISA®) exam consists of 150 questions covering 5 job practice domains, all testing your knowledge and ability on real-life job practices leveraged by expert professionals."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 22,
+    "reachable": 20,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "cisa-exam-content-outline",
+      "url": "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline",
+      "checked_at": "2026-09-29T18:11:35.808156+00:00",
+      "health": {
+        "id": "cisa-exam-content-outline",
+        "url": "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline",
+        "checked_at": "2026-09-29T18:11:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CISA® Exam Content Outline",
+        "canonical_url": "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline",
+        "duration_signals": [],
+        "signal_fingerprint": "07c69c4e42f3d2d9379a7e6ef6b04200ac424ca9dfc9bdbc9622a08d6d19236f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline",
+      "sha256": "c8c1d2804da667fe8b8761e80ae9e448b96dff1ca76181c4a7e6a8b3b47e712a",
+      "text_characters": 9394
+    },
+    {
+      "id": "isaca-certification-candidate-guide",
+      "url": "https://www.isaca.org/credentialing/-/media/fa494652c5f149289af38cef18328650.ashx",
+      "checked_at": "2026-09-29T18:11:35.809001+00:00",
+      "health": {
+        "id": "isaca-certification-candidate-guide",
+        "url": "https://www.isaca.org/credentialing/-/media/fa494652c5f149289af38cef18328650.ashx",
+        "checked_at": "2026-09-29T18:11:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/credentialing/-/media/fa494652c5f149289af38cef18328650.ashx",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/credentialing/-/media/fa494652c5f149289af38cef18328650.ashx",
+      "sha256": "bfcbddc2a8391f08601ab45d9269ec24233e60258fe95074f34e21bdbf28866a",
+      "text_characters": 1043108
+    },
+    {
+      "id": "cisa-certification-requirements",
+      "url": "https://www.isaca.org/credentialing/cisa/get-cisa-certified",
+      "checked_at": "2026-09-29T18:11:35.809695+00:00",
+      "health": {
+        "id": "cisa-certification-requirements",
+        "url": "https://www.isaca.org/credentialing/cisa/get-cisa-certified",
+        "checked_at": "2026-09-29T18:11:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/credentialing/cisa/get-cisa-certified",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Earn a CISA® Certification",
+        "canonical_url": "https://www.isaca.org/credentialing/cisa/get-cisa-certified",
+        "duration_signals": [],
+        "signal_fingerprint": "b8b05c3c7e444bdfd7a514dfb4f16bd23f09f4fe291b0986984e74b22c8262ff",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/credentialing/cisa/get-cisa-certified",
+      "sha256": "beef7b84ead7568d576d4180108d7ceaad1c7e3e6da7a174eb541384099a3d4b",
+      "text_characters": 3321
+    },
+    {
+      "id": "cisa-maintenance-requirements",
+      "url": "https://www.isaca.org/credentialing/cisa/maintain-cisa-certification",
+      "checked_at": "2026-09-29T18:11:36.452579+00:00",
+      "health": {
+        "id": "cisa-maintenance-requirements",
+        "url": "https://www.isaca.org/credentialing/cisa/maintain-cisa-certification",
+        "checked_at": "2026-09-29T18:11:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/credentialing/cisa/maintain-cisa-certification",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Maintain CISA® Certification",
+        "canonical_url": "https://www.isaca.org/credentialing/cisa/maintain-cisa-certification",
+        "duration_signals": [],
+        "signal_fingerprint": "823a65aa279631f81a4a6f67aa4cacd3927675d17e1116caaed8ab2f405086e7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/credentialing/cisa/maintain-cisa-certification",
+      "sha256": "2edacd8926763e4da0bbb3035a535b0b3b34b9af446bc276533ec7f1c78f1963",
+      "text_characters": 8037
+    },
+    {
+      "id": "isaca-cpe-2027",
+      "url": "https://www.isaca.org/credentialing/cpe-2027",
+      "checked_at": "2026-09-29T18:11:36.488489+00:00",
+      "health": {
+        "id": "isaca-cpe-2027",
+        "url": "https://www.isaca.org/credentialing/cpe-2027",
+        "checked_at": "2026-09-29T18:11:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/credentialing/cpe-2027",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ISACA CPE 2027",
+        "canonical_url": "https://www.isaca.org/credentialing/cpe-2027",
+        "duration_signals": [],
+        "signal_fingerprint": "a1b4f8b25d4c62569005528f54cfec2369f803c8e090e5f049ec8de6e58f873f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/credentialing/cpe-2027",
+      "sha256": "e988e35396428e696854adc1d9afd5ecee09c5aa57264e46ac7f4bcb6552f496",
+      "text_characters": 6647
+    },
+    {
+      "id": "isaca-online-review-courses",
+      "url": "https://www.isaca.org/training-and-events/online-training/online-review-courses",
+      "checked_at": "2026-09-29T18:11:36.715710+00:00",
+      "health": {
+        "id": "isaca-online-review-courses",
+        "url": "https://www.isaca.org/training-and-events/online-training/online-review-courses",
+        "checked_at": "2026-09-29T18:11:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/training-and-events/online-training/online-review-courses",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ISACA® Online Exam Prep Review Courses",
+        "canonical_url": "https://www.isaca.org/training-and-events/online-training/online-review-courses",
+        "duration_signals": [],
+        "signal_fingerprint": "f9467285d8362c3c34bb831543452c9dcce55422545765f4bd6d42d37f245094",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/training-and-events/online-training/online-review-courses",
+      "sha256": "858de0bba631a61129e84f5899feb2216f400053fbe0f446525183b4d54d7ee1",
+      "text_characters": 5991
+    },
+    {
+      "id": "cisa-qae-database",
+      "url": "https://www.isaca.org/store/items/xmxca1712m",
+      "checked_at": "2026-09-29T18:11:36.976066+00:00",
+      "health": {
+        "id": "cisa-qae-database",
+        "url": "https://www.isaca.org/store/items/xmxca1712m",
+        "checked_at": "2026-09-29T18:11:36+00:00",
+        "status": "missing",
+        "http_status": 404,
+        "final_url": "https://www.isaca.org/store/items/xmxca1712m",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Not Found"
+      }
+    },
+    {
+      "id": "cisa-free-practice-quiz",
+      "url": "https://www.isaca.org/credentialing/cisa/cisa-practice-quiz",
+      "checked_at": "2026-09-29T18:11:37.096904+00:00",
+      "health": {
+        "id": "cisa-free-practice-quiz",
+        "url": "https://www.isaca.org/credentialing/cisa/cisa-practice-quiz",
+        "checked_at": "2026-09-29T18:11:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/credentialing/cisa/cisa-practice-quiz",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CISA® Practice Quiz",
+        "canonical_url": "https://www.isaca.org/credentialing/cisa/cisa-practice-quiz",
+        "duration_signals": [],
+        "signal_fingerprint": "51c16d591e4088b14c62d74f9af7a1488e4b04a2c5c22ae652201d6856b7fe84",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/credentialing/cisa/cisa-practice-quiz",
+      "sha256": "439fc6634e3c9702f306dfa4e9c779f2323743b1536927f4349d147618f6ca91",
+      "text_characters": 16389
+    },
+    {
+      "id": "pluralsight-cisa-2024-path",
+      "url": "https://www.pluralsight.com/paths/cisar-certified-information-systems-auditorr-2024",
+      "checked_at": "2026-09-29T18:11:37.115290+00:00",
+      "health": {
+        "id": "pluralsight-cisa-2024-path",
+        "url": "https://www.pluralsight.com/paths/cisar-certified-information-systems-auditorr-2024",
+        "checked_at": "2026-09-29T18:11:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/cisar-certified-information-systems-auditorr-2024",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "CISA® (Certified Information Systems Auditor®) 2024",
+        "canonical_url": "https://www.pluralsight.com/paths/cisar-certified-information-systems-auditorr-2024",
+        "duration_signals": [
+          "20 Hours"
+        ],
+        "signal_fingerprint": "206ed78651bf3b99a009378df3f98c9732ce6c4cf94a939da7b050a125dde9be",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/cisar-certified-information-systems-auditorr-2024",
+      "sha256": "10cf97717e3b9c18431d9e8e688b69a0c93e34ff11d8010d5ce16da3ddb9aed4",
+      "text_characters": 3947
+    },
+    {
+      "id": "oreilly-cisa-aci-learning",
+      "url": "https://www.oreilly.com/videos/cisa-certified-information/9781836209119/",
+      "checked_at": "2026-09-29T18:11:37.192245+00:00",
+      "health": {
+        "id": "oreilly-cisa-aci-learning",
+        "url": "https://www.oreilly.com/videos/cisa-certified-information/9781836209119/",
+        "checked_at": "2026-09-29T18:11:37+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/cisa-certified-information/9781836209119/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "linkedin-cisa-cert-prep-2026",
+      "url": "https://www.linkedin.com/learning/isaca-certified-information-systems-auditor-cisa-cert-prep-44731094",
+      "checked_at": "2026-09-29T18:11:37.369529+00:00",
+      "health": {
+        "id": "linkedin-cisa-cert-prep-2026",
+        "url": "https://www.linkedin.com/learning/isaca-certified-information-systems-auditor-cisa-cert-prep-44731094",
+        "checked_at": "2026-09-29T18:11:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.linkedin.com/learning/isaca-certified-information-systems-auditor-cisa-cert-prep-44731094",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ISACA Certified Information Systems Auditor (CISA) Cert Prep Online Class | LinkedIn Learning, formerly Lynda.com",
+        "canonical_url": "https://www.linkedin.com/learning/isaca-certified-information-systems-auditor-cisa-cert-prep-44731094",
+        "duration_signals": [
+          "PT10M26S",
+          "PT10M3S",
+          "PT10M42S",
+          "PT10M57S",
+          "PT11M16S",
+          "PT11M18S",
+          "PT13M34S",
+          "PT14M25S",
+          "PT14M7S",
+          "PT17M29S",
+          "PT17M2S",
+          "PT18M32S",
+          "PT1M",
+          "PT2M10S",
+          "PT2M30S",
+          "PT2M42S",
+          "PT3M20S",
+          "PT3M29S",
+          "PT3M38S",
+          "PT3M47S",
+          "PT3M50S",
+          "PT3M52S",
+          "PT3M56S",
+          "PT3M59S",
+          "PT3M9S",
+          "PT4M12S",
+          "PT4M27S",
+          "PT4M30S",
+          "PT4M38S",
+          "PT4M42S"
+        ],
+        "signal_fingerprint": "d25f3c07d6a7cd75209f72c4d5edae6ee048cd8cddca9c1d8e58ecc9587bde0b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.linkedin.com/learning/isaca-certified-information-systems-auditor-cisa-cert-prep-44731094",
+      "sha256": "366f75e801ba02d42a3ac84e90d5496e335da6cd4efbca952a4fadeb04710820",
+      "text_characters": 6334
+    },
+    {
+      "id": "udemy-cisa-masterclass-doshi",
+      "url": "https://www.udemy.com/course/masterclass-cisa-exam/",
+      "checked_at": "2026-09-29T18:11:37.972114+00:00",
+      "health": {
+        "id": "udemy-cisa-masterclass-doshi",
+        "url": "https://www.udemy.com/course/masterclass-cisa-exam/",
+        "checked_at": "2026-09-29T18:11:37+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/masterclass-cisa-exam/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "nist-cybersecurity-framework-2",
+      "url": "https://www.nist.gov/cyberframework",
+      "checked_at": "2026-09-29T18:11:38.053917+00:00",
+      "health": {
+        "id": "nist-cybersecurity-framework-2",
+        "url": "https://www.nist.gov/cyberframework",
+        "checked_at": "2026-09-29T18:11:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nist.gov/cyberframework",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Cybersecurity Framework",
+        "canonical_url": "https://www.nist.gov/cyberframework",
+        "duration_signals": [],
+        "signal_fingerprint": "7ece8c5ce2c87131c09b887c735e648ca2d6d75ec5c85b3dd2a99cc4a072d0bc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nist.gov/cyberframework",
+      "sha256": "78cdc927adb831368bb352596a496ef43247a834613e87b03e2477a4116044c5",
+      "text_characters": 5335
+    },
+    {
+      "id": "nist-sp-800-53-rev5",
+      "url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+      "checked_at": "2026-09-29T18:11:38.356715+00:00",
+      "health": {
+        "id": "nist-sp-800-53-rev5",
+        "url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "checked_at": "2026-09-29T18:11:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SP 800-53 Rev. 5, Security and Privacy Controls for Information Systems and Organizations | CSRCLock",
+        "canonical_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "duration_signals": [],
+        "signal_fingerprint": "4dbac78e5dcebd364443b59b0773afeebb05dc3500ff4e2cf14ced0857067963",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+      "sha256": "1c18bba378b8faaddd7183c2ad5e43fe337d48bdead2fcf10f2748de585b87ed",
+      "text_characters": 9340
+    },
+    {
+      "id": "cisa-qae-database-current",
+      "url": "https://www.isaca.org/store2/product/CISA-QAE-C?category=shop-all",
+      "checked_at": "2026-09-29T18:19:10.473740+00:00",
+      "health": {
+        "id": "cisa-qae-database-current",
+        "url": "https://www.isaca.org/store2/product/CISA-QAE-C?category=shop-all",
+        "checked_at": "2026-09-29T18:19:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/store2/product/CISA-QAE-C?category=shop-all",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CISA Questions, Answers & Explanations",
+        "canonical_url": "https://www.isaca.org/store2/product/CISA-QAE-C",
+        "duration_signals": [],
+        "signal_fingerprint": "8593b05a034b5dbb8d74c98d220518ea48d41af1bf1caff409e4d8978382f3b9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/store2/product/CISA-QAE-C?category=shop-all",
+      "sha256": "3714db11d1b2e2d8c74541401327f8dfcdc95dc2de322960748b2f4e90b273b8",
+      "text_characters": 619
+    },
+    {
+      "id": "isaca-itaf-five",
+      "url": "https://www.isaca.org/store2/product/WITAF-C?category=shop-all",
+      "checked_at": "2026-09-29T18:19:10.474587+00:00",
+      "health": {
+        "id": "isaca-itaf-five",
+        "url": "https://www.isaca.org/store2/product/WITAF-C?category=shop-all",
+        "checked_at": "2026-09-29T18:19:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/store2/product/WITAF-C?category=shop-all",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "IT Audit Framework (ITAF), 5th Edition",
+        "canonical_url": "https://www.isaca.org/store2/product/WITAF-C",
+        "duration_signals": [],
+        "signal_fingerprint": "a2c1e1bfe60bf85844fa0f86b569c7d2bacbfba515344d5f7bc94460963a81d2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/store2/product/WITAF-C?category=shop-all",
+      "sha256": "5e72fba9b7e2e638b14b6f119001ab48bde17e533f669effe575c9e567e43f65",
+      "text_characters": 619
+    },
+    {
+      "id": "isaca-itaf-five-launch",
+      "url": "https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-launches-future-ready-it-audit-framework-update-to-strengthen-digital-trust",
+      "checked_at": "2026-09-29T18:14:27.546101+00:00",
+      "health": {
+        "id": "isaca-itaf-five-launch",
+        "url": "https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-launches-future-ready-it-audit-framework-update-to-strengthen-digital-trust",
+        "checked_at": "2026-09-29T18:14:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-launches-future-ready-it-audit-framework-update-to-strengthen-digital-trust",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Press Releases 2026 ISACA Launches Future Ready IT Audit Framework Update to Strengthen Digital Trust",
+        "canonical_url": "https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-launches-future-ready-it-audit-framework-update-to-strengthen-digital-trust",
+        "duration_signals": [
+          "5 minutes"
+        ],
+        "signal_fingerprint": "695beeabc8a37b28716b60c203c684f7e3a499a8e3d8dbd14d35a69fe026d88b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-launches-future-ready-it-audit-framework-update-to-strengthen-digital-trust",
+      "sha256": "494bd9e3d0de5b31b4a9d34f12d16406c60cb8da27cec8ec5c5322088bd5db2e",
+      "text_characters": 5296
+    },
+    {
+      "id": "isaca-audit-evidence-deepfakes",
+      "url": "https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2026/the-audit-evidence-crisis-how-ai-deepfakes-are-rewriting-assurance-standards",
+      "checked_at": "2026-09-29T18:14:28.259668+00:00",
+      "health": {
+        "id": "isaca-audit-evidence-deepfakes",
+        "url": "https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2026/the-audit-evidence-crisis-how-ai-deepfakes-are-rewriting-assurance-standards",
+        "checked_at": "2026-09-29T18:14:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2026/the-audit-evidence-crisis-how-ai-deepfakes-are-rewriting-assurance-standards",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ISACA Now Blog 2026 The Audit Evidence Crisis How AI Deepfakes Are Rewriting Assurance Standards",
+        "canonical_url": "https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2026/the-audit-evidence-crisis-how-ai-deepfakes-are-rewriting-assurance-standards",
+        "duration_signals": [
+          "6 minutes"
+        ],
+        "signal_fingerprint": "19250e84bc3dcabd96070d1c1d2274e65c64fb58ba06ef5ce882cf85416df0cd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2026/the-audit-evidence-crisis-how-ai-deepfakes-are-rewriting-assurance-standards",
+      "sha256": "2146ea3b0a5cc1e4974c74dd8cf2d9ea612986a695b74d004e693915be2f1117",
+      "text_characters": 5398
+    },
+    {
+      "id": "isaca-agentic-audit-2026",
+      "url": "https://www.isaca.org/resources/news-and-trends/industry-news/2026/auditing-agentic-ai-workflows-how-to-control-test-when-the-system-decides-for-itself",
+      "checked_at": "2026-09-29T18:14:28.467716+00:00",
+      "health": {
+        "id": "isaca-agentic-audit-2026",
+        "url": "https://www.isaca.org/resources/news-and-trends/industry-news/2026/auditing-agentic-ai-workflows-how-to-control-test-when-the-system-decides-for-itself",
+        "checked_at": "2026-09-29T18:14:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/resources/news-and-trends/industry-news/2026/auditing-agentic-ai-workflows-how-to-control-test-when-the-system-decides-for-itself",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Industry News 2026 Auditing Agentic AI Workflows How to Control Test When the System Decides for Itself",
+        "canonical_url": "https://www.isaca.org/resources/news-and-trends/industry-news/2026/auditing-agentic-ai-workflows-how-to-control-test-when-the-system-decides-for-itself",
+        "duration_signals": [
+          "6 minutes"
+        ],
+        "signal_fingerprint": "aa0078cf6b3d736ff8dcd9533bd2425bb1f8b7d1c19fcd34e55d82b4062cafc2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/resources/news-and-trends/industry-news/2026/auditing-agentic-ai-workflows-how-to-control-test-when-the-system-decides-for-itself",
+      "sha256": "b5fbf24d6065ccbc484d7c412cec3352cca12bb453ce0d4cf0e290392c94c639",
+      "text_characters": 11760
+    },
+    {
+      "id": "isaca-cpe-policy",
+      "url": "https://www.isaca.org/-/media/files/isacadp/project/isaca/certification/general/cpe_policy.pdf",
+      "checked_at": "2026-09-29T18:14:28.591613+00:00",
+      "health": {
+        "id": "isaca-cpe-policy",
+        "url": "https://www.isaca.org/-/media/files/isacadp/project/isaca/certification/general/cpe_policy.pdf",
+        "checked_at": "2026-09-29T18:14:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/-/media/files/isacadp/project/isaca/certification/general/cpe_policy.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/-/media/files/isacadp/project/isaca/certification/general/cpe_policy.pdf",
+      "sha256": "601d30ccff38aa900564dbc37926d3f9d4895b6477e88f2534a311103184186c",
+      "text_characters": 243446
+    },
+    {
+      "id": "isaca-code-ethics",
+      "url": "https://www.isaca.org/code-of-professional-ethics",
+      "checked_at": "2026-09-29T18:14:29.026307+00:00",
+      "health": {
+        "id": "isaca-code-ethics",
+        "url": "https://www.isaca.org/code-of-professional-ethics",
+        "checked_at": "2026-09-29T18:14:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isaca.org/code-of-professional-ethics",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Code of Professional Ethics",
+        "canonical_url": "https://www.isaca.org/code-of-professional-ethics",
+        "duration_signals": [],
+        "signal_fingerprint": "79b9b33860bca8e5ab33de1226fcf7803732ac32251b6b67a23659371bb16887",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/code-of-professional-ethics",
+      "sha256": "0b5d0ffabba783db4fe0306b4da064d372b6703eee3b57dd54d40a4433feefb0",
+      "text_characters": 2735
+    },
+    {
+      "id": "nist-sp80053a-r5",
+      "url": "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final",
+      "checked_at": "2026-09-29T18:14:29.297561+00:00",
+      "health": {
+        "id": "nist-sp80053a-r5",
+        "url": "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final",
+        "checked_at": "2026-09-29T18:14:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SP 800-53A Rev. 5, Assessing Security and Privacy Controls in Information Systems and Organizations | CSRCLock",
+        "canonical_url": "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final",
+        "duration_signals": [],
+        "signal_fingerprint": "6d0649d711ad350b1c926c632bf62052dc092b29bdfd705054bb7e49e97b11ff",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final",
+      "sha256": "aaed83b9b83cb506d7bfcb488faa9bf79101a7444ee243239e03569fabf4adb5",
+      "text_characters": 5805
+    },
+    {
+      "id": "nist-sp80034-r1",
+      "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+      "checked_at": "2026-09-29T18:14:29.490803+00:00",
+      "health": {
+        "id": "nist-sp80034-r1",
+        "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+        "checked_at": "2026-09-29T18:14:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SP 800-34 Rev. 1, Contingency Planning Guide for Federal Information Systems | CSRCLock",
+        "canonical_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+        "duration_signals": [],
+        "signal_fingerprint": "6d634199d75e827380072ed2f47ca90d02464fb671c66f1640437f0b324fa65e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+      "sha256": "9ebb77c45d54a74b87c06b7bd1aa890b23005f7da3cbc80352fcc215dc761d43",
+      "text_characters": 4862
+    }
+  ],
+  "added_source_ids": [
+    "cisa-qae-database-current",
+    "isaca-itaf-five",
+    "isaca-itaf-five-launch",
+    "isaca-audit-evidence-deepfakes",
+    "isaca-agentic-audit-2026",
+    "isaca-cpe-policy",
+    "isaca-code-ethics",
+    "nist-sp80053a-r5",
+    "nist-sp80034-r1"
+  ],
+  "findings": [
+    {
+      "id": "cisa-deep-1",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Current audit framework has a fifth edition",
+      "url": "https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-launches-future-ready-it-audit-framework-update-to-strengthen-digital-trust",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CISA"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "ISACA announced the fifth edition and updated 2208 sampling companion in February 2026.",
+      "recommendation": "Add current edition and distinguish verified public description from unreviewed package contents.",
+      "disposition": "applied",
+      "source_id": "isaca-itaf-five-launch",
+      "resolution": "Add current edition and distinguish verified public description from unreviewed package contents."
+    },
+    {
+      "id": "cisa-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Maintenance transition needs specific boundaries",
+      "url": "https://www.isaca.org/credentialing/cpe-2027",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CISA"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "2027 policy preserves 120 total and introduces 90 aligned minimum with up to 30 other professional-development hours.",
+      "recommendation": "Explain maintenance versus exam scope; all 120 can align and individual activity caps still apply.",
+      "disposition": "applied",
+      "source_id": "isaca-cpe-2027",
+      "resolution": "Explain maintenance versus exam scope; all 120 can align and individual activity caps still apply."
+    },
+    {
+      "id": "cisa-deep-3",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "QAE resource link moved",
+      "url": "https://www.isaca.org/store2/product/CISA-QAE-C?category=shop-all",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CISA"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Old store/items route returned 404; current store2 public listing renders 1070 questions, three practices and six-month access.",
+      "recommendation": "Replace guide link and keep historical missing receipt; disclose no paid items or checkout review.",
+      "disposition": "applied",
+      "source_id": "cisa-qae-database-current",
+      "resolution": "Replace guide link and keep historical missing receipt; disclose no paid items or checkout review."
+    },
+    {
+      "id": "cisa-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Control catalogs and assessment procedures need separate evidence",
+      "url": "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CISA"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "800-53A defines assessment objects/methods and cautions potential methods are not a mandatory checklist.",
+      "recommendation": "Teach criterion-to-procedure reasoning and original negative cases for misleading totals, identity joins and sampled exceptions.",
+      "disposition": "applied",
+      "source_id": "nist-sp80053a-r5",
+      "resolution": "Teach criterion-to-procedure reasoning and original negative cases for misleading totals, identity joins and sampled exceptions."
+    },
+    {
+      "id": "cisa-deep-5",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Complete current standards text remains unavailable within reviewed public material",
+      "url": "https://www.isaca.org/store2/product/WITAF-C?category=shop-all",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CISA"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Free fifth-edition package is delivered after checkout through MyISACA; public description is not the package.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "isaca-itaf-five-launch",
+      "review": "Complete February 26, 2026 public press release read. Fifth edition replaces 2020 edition and updates terminology, AI/automation/governance context and sampling companion. Announcement is not full standard text or an exam-outline cutover."
+    },
+    {
+      "source_id": "isaca-audit-evidence-deepfakes",
+      "review": "Complete June 8, 2026 blog by Gabriel Oludare Fabiyi read. Independent provenance and corroboration inform practical teaching. Personal anecdote and zero-trust language are commentary, not independently verified incident evidence or new mandatory standards."
+    },
+    {
+      "source_id": "isaca-agentic-audit-2026",
+      "review": "Complete September 11, 2026 article by Eshaan Jain read. Prompt/configuration, authority, outputs, provider changes and escalation tests inform practical depth. Overbroad claim that distribution analysis replaces sampling is qualified. Legal/ISO retention claims and linked papers were not independently verified or adopted. No model/tenant test performed."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 47,
+      "python_blocks_executed": 1,
+      "python_version": "3.13.14",
+      "sqlite_version": "3.50.4",
+      "public_example_sha256": "733f9a2e2d947b37b6017db9d40d03c7aee52053eb22627b3b7789c359cbd588",
+      "results": {
+        "passed": 47,
+        "checks": [
+          "row counts alone miss substitution",
+          "amount totals alone miss substitution",
+          "source identifiers missing from extract",
+          "unexpected extract identifiers",
+          "duplicate identifier is visible",
+          "replay inflates total",
+          "order-independent fixture fingerprint",
+          "changed identity changes fingerprint",
+          "bad input can still have a stable hash",
+          "finite sample can miss known defects",
+          "one random selection misses 90 of 100",
+          "census cannot miss known defects",
+          "without replacement differs from independent draws",
+          "more sampling reduces miss chance in this fixture",
+          "zero exceptions does not prove zero population defects",
+          "oversampled raw exception rate",
+          "stratum-weighted illustrative point estimate",
+          "weighting changes the conclusion input",
+          "actual SQLite payroll control total",
+          "unqualified user join duplicates results",
+          "qualified left join preserves every access",
+          "missing identity remains an evidence gap",
+          "chosen termination rule includes exact cutoff",
+          "other tenant is not falsely terminated",
+          "pre-termination activity is not a violation of chosen rule",
+          "only complete chosen release evidence qualifies",
+          "self-approval isolated",
+          "approval for another artifact isolated",
+          "late approval isolated",
+          "simulated loss affects live disposable database",
+          "actual backup restore returns all three payments",
+          "restored control total",
+          "restored SQLite integrity",
+          "business operation after restore",
+          "backup remains unchanged by restored write",
+          "restored primary key still enforced",
+          "failed transaction preserves prior committed total",
+          "parallel prerequisite is not added twice",
+          "technology available before business validation",
+          "chosen end-to-end ready time",
+          "serial sum differs from critical path",
+          "meets chosen technology RTO of 55",
+          "misses chosen business MTD of 58",
+          "synthetic recovery point gap",
+          "gap fails chosen 15-minute RPO",
+          "known runtime log gap prevents complete coverage claim",
+          "policy version mismatch requires investigation"
+        ],
+        "sqlite_version": "3.50.4",
+        "probability_miss_known_defects": 0.09511627243078842,
+        "weighted_point_estimate": 0.04,
+        "recovery_finish_minutes": {
+          "identity": 10,
+          "dns": 5,
+          "keys": 15,
+          "database": 35,
+          "application": 50,
+          "business_validation": 60
+        }
+      },
+      "execution_stdout": "{\n  \"passed\": 47,\n  \"checks\": [\n    \"row counts alone miss substitution\",\n    \"amount totals alone miss substitution\",\n    \"source identifiers missing from extract\",\n    \"unexpected extract identifiers\",\n    \"duplicate identifier is visible\",\n    \"replay inflates total\",\n    \"order-independent fixture fingerprint\",\n    \"changed identity changes fingerprint\",\n    \"bad input can still have a stable hash\",\n    \"finite sample can miss known defects\",\n    \"one random selection misses 90 of 100\",\n    \"census cannot miss known defects\",\n    \"without replacement differs from independent draws\",\n    \"more sampling reduces miss chance in this fixture\",\n    \"zero exceptions does not prove zero population defects\",\n    \"oversampled raw exception rate\",\n    \"stratum-weighted illustrative point estimate\",\n    \"weighting changes the conclusion input\",\n    \"actual SQLite payroll control total\",\n    \"unqualified user join duplicates results\",\n    \"qualified left join preserves every access\",\n    \"missing identity remains an evidence gap\",\n    \"chosen termination rule includes exact cutoff\",\n    \"other tenant is not falsely terminated\",\n    \"pre-termination activity is not a violation of chosen rule\",\n    \"only complete chosen release evidence qualifies\",\n    \"self-approval isolated\",\n    \"approval for another artifact isolated\",\n    \"late approval isolated\",\n    \"simulated loss affects live disposable database\",\n    \"actual backup restore returns all three payments\",\n    \"restored control total\",\n    \"restored SQLite integrity\",\n    \"business operation after restore\",\n    \"backup remains unchanged by restored write\",\n    \"restored primary key still enforced\",\n    \"failed transaction preserves prior committed total\",\n    \"parallel prerequisite is not added twice\",\n    \"technology available before business validation\",\n    \"chosen end-to-end ready time\",\n    \"serial sum differs from critical path\",\n    \"meets chosen technology RTO of 55\",\n    \"misses chosen business MTD of 58\",\n    \"synthetic recovery point gap\",\n    \"gap fails chosen 15-minute RPO\",\n    \"known runtime log gap prevents complete coverage claim\",\n    \"policy version mismatch requires investigation\"\n  ],\n  \"sqlite_version\": \"3.50.4\",\n  \"probability_miss_known_defects\": 0.09511627243078842,\n  \"weighted_point_estimate\": 0.04,\n  \"recovery_finish_minutes\": {\n    \"identity\": 10,\n    \"dns\": 5,\n    \"keys\": 15,\n    \"database\": 35,\n    \"application\": 50,\n    \"business_validation\": 60\n  }\n}",
+      "execution_boundary": "Actual offline Python and SQL in three disposable in-memory SQLite databases. Synthetic payroll backup/restore, integrity, post-restore update and constraints executed; no files, external service, organizational records, production recovery or account action.",
+      "model_limits": "Reconciliation, identity, approval and sampling examples use chosen fictional inputs and rules. Known-defect probability is not an inferred population rate or sample-size recommendation; weighted rate is not a confidence bound. Recovery durations are a separate arithmetic model, not measured restore timing. Hashing does not authenticate evidence; no full audit or compliance conclusion."
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Current ITAF fifth-edition standards and 2208 sampling-companion interiors require authorized checkout/account access and remain unread. No claim of complete ITAF conformity or formal audit assurance; human review pending.",
+    "Forty-seven checks execute synthetic Python/SQLite including local in-memory backup/restore. Eight broader activities remain proposed; no organizational evidence, cloud/provider recovery, ransomware resistance, production performance or AI model tested.",
+    "Known-population sampling arithmetic is not a sample-size plan or inferred confidence bound. Recovery times are modeled separately from the actual SQLite restore. Hashes do not authenticate the truth or origin of evidence.",
+    "Two paid sources returned HTTP 403 and the historical QAE URL returned 404. Current stores required public browser rendering; no purchase, paid lessons, QAE items, video playback or quiz submission. Limited official free quiz preview is recorded explicitly.",
+    "Personal experience/waiver, booking, accommodations, CPE-cycle transition and recordkeeping applicability remain unverified. Current maintenance page and 2027 policy differ; no automatic deletion or personal compliance decision.",
+    "Only selected candidate and NIST PDF pages were read. Blog legal/ISO claims, full controls/assessment catalogs and latest supplemental artifacts not audited. Canonical objectives/status snapshots remain unchanged.",
+    "No installs, runtime/service/reboot/auth/permission changes, external messages or production actions. Five GitHub guides remain reserved and the notification pilot is disabled."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 180,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Actual offline Python and SQL in three disposable in-memory SQLite databases. Synthetic payroll backup/restore, integrity, post-restore update and constraints executed; no files, external service, organizational records, production recovery or account action.",
+    "passed": 47,
+    "python_blocks_executed": 1,
+    "python_version": "3.13.14",
+    "sqlite_version": "3.50.4",
+    "public_example_sha256": "733f9a2e2d947b37b6017db9d40d03c7aee52053eb22627b3b7789c359cbd588",
+    "results": {
+      "passed": 47,
+      "checks": [
+        "row counts alone miss substitution",
+        "amount totals alone miss substitution",
+        "source identifiers missing from extract",
+        "unexpected extract identifiers",
+        "duplicate identifier is visible",
+        "replay inflates total",
+        "order-independent fixture fingerprint",
+        "changed identity changes fingerprint",
+        "bad input can still have a stable hash",
+        "finite sample can miss known defects",
+        "one random selection misses 90 of 100",
+        "census cannot miss known defects",
+        "without replacement differs from independent draws",
+        "more sampling reduces miss chance in this fixture",
+        "zero exceptions does not prove zero population defects",
+        "oversampled raw exception rate",
+        "stratum-weighted illustrative point estimate",
+        "weighting changes the conclusion input",
+        "actual SQLite payroll control total",
+        "unqualified user join duplicates results",
+        "qualified left join preserves every access",
+        "missing identity remains an evidence gap",
+        "chosen termination rule includes exact cutoff",
+        "other tenant is not falsely terminated",
+        "pre-termination activity is not a violation of chosen rule",
+        "only complete chosen release evidence qualifies",
+        "self-approval isolated",
+        "approval for another artifact isolated",
+        "late approval isolated",
+        "simulated loss affects live disposable database",
+        "actual backup restore returns all three payments",
+        "restored control total",
+        "restored SQLite integrity",
+        "business operation after restore",
+        "backup remains unchanged by restored write",
+        "restored primary key still enforced",
+        "failed transaction preserves prior committed total",
+        "parallel prerequisite is not added twice",
+        "technology available before business validation",
+        "chosen end-to-end ready time",
+        "serial sum differs from critical path",
+        "meets chosen technology RTO of 55",
+        "misses chosen business MTD of 58",
+        "synthetic recovery point gap",
+        "gap fails chosen 15-minute RPO",
+        "known runtime log gap prevents complete coverage claim",
+        "policy version mismatch requires investigation"
+      ],
+      "sqlite_version": "3.50.4",
+      "probability_miss_known_defects": 0.09511627243078842,
+      "weighted_point_estimate": 0.04,
+      "recovery_finish_minutes": {
+        "identity": 10,
+        "dns": 5,
+        "keys": 15,
+        "database": 35,
+        "application": 50,
+        "business_validation": 60
+      }
+    },
+    "execution_stdout": "{\n  \"passed\": 47,\n  \"checks\": [\n    \"row counts alone miss substitution\",\n    \"amount totals alone miss substitution\",\n    \"source identifiers missing from extract\",\n    \"unexpected extract identifiers\",\n    \"duplicate identifier is visible\",\n    \"replay inflates total\",\n    \"order-independent fixture fingerprint\",\n    \"changed identity changes fingerprint\",\n    \"bad input can still have a stable hash\",\n    \"finite sample can miss known defects\",\n    \"one random selection misses 90 of 100\",\n    \"census cannot miss known defects\",\n    \"without replacement differs from independent draws\",\n    \"more sampling reduces miss chance in this fixture\",\n    \"zero exceptions does not prove zero population defects\",\n    \"oversampled raw exception rate\",\n    \"stratum-weighted illustrative point estimate\",\n    \"weighting changes the conclusion input\",\n    \"actual SQLite payroll control total\",\n    \"unqualified user join duplicates results\",\n    \"qualified left join preserves every access\",\n    \"missing identity remains an evidence gap\",\n    \"chosen termination rule includes exact cutoff\",\n    \"other tenant is not falsely terminated\",\n    \"pre-termination activity is not a violation of chosen rule\",\n    \"only complete chosen release evidence qualifies\",\n    \"self-approval isolated\",\n    \"approval for another artifact isolated\",\n    \"late approval isolated\",\n    \"simulated loss affects live disposable database\",\n    \"actual backup restore returns all three payments\",\n    \"restored control total\",\n    \"restored SQLite integrity\",\n    \"business operation after restore\",\n    \"backup remains unchanged by restored write\",\n    \"restored primary key still enforced\",\n    \"failed transaction preserves prior committed total\",\n    \"parallel prerequisite is not added twice\",\n    \"technology available before business validation\",\n    \"chosen end-to-end ready time\",\n    \"serial sum differs from critical path\",\n    \"meets chosen technology RTO of 55\",\n    \"misses chosen business MTD of 58\",\n    \"synthetic recovery point gap\",\n    \"gap fails chosen 15-minute RPO\",\n    \"known runtime log gap prevents complete coverage claim\",\n    \"policy version mismatch requires investigation\"\n  ],\n  \"sqlite_version\": \"3.50.4\",\n  \"probability_miss_known_defects\": 0.09511627243078842,\n  \"weighted_point_estimate\": 0.04,\n  \"recovery_finish_minutes\": {\n    \"identity\": 10,\n    \"dns\": 5,\n    \"keys\": 15,\n    \"database\": 35,\n    \"application\": 50,\n    \"business_validation\": 60\n  }\n}",
+    "model_limits": "Reconciliation, identity, approval and sampling examples use chosen fictional inputs and rules. Known-defect probability is not an inferred population rate or sample-size recommendation; weighted rate is not a confidence bound. Recovery durations are a separate arithmetic model, not measured restore timing. Hashing does not authenticate evidence; no full audit or compliance conclusion.",
+    "learning_catalog_consistency": "passed",
+    "unit_test_seconds": 43.401,
+    "strict_site_build_seconds": 34.21
+  },
+  "source_reading_boundaries": {
+    "cisa-exam-content-outline": "Complete public main including 60 subtopics and 43 secondary tasks read. Five weights remain 18/18/12/26/26 and 150 questions. Monitored objective/status hashes unchanged; baseline preserved. Candidate PDF adds small clarifiers such as functions, audit algorithms, asset policies and monitoring logs, covered in teaching without rewriting the canonical HTML snapshot.",
+    "isaca-certification-candidate-guide": "Genuine 43-page PDF, version 1.26. Pages 1–2, 6–12, 14–15, 21–25 and CISA appendix 27–30 read. CISA column on page 6 visually inspected. No full guide, other exam appendix, full legal agreement or remote-proctoring audit. 150 questions/four hours, scaled 200–800 with 450 passing, fees 575/760, 30/90/90 retake waits, rolling four-attempt limit, five-year application period, up to three-year CISA waiver ceiling. Account, specific waiver categories and booking unverified.",
+    "cisa-certification-requirements": "Complete public 3321-character main read. Anyone can sit; designation requires pass within five years, experience within preceding ten years, verification, application/fee, ethics, standards and maintenance. No personal experience/waiver decision or application submitted.",
+    "cisa-maintenance-requirements": "Complete public 8037-character main read. Annual 20 and three-year 120 CPE, fees 45/85, audit/ethics/standards and evidence retention 12 months after a cycle. Current webpage wording differs from linked 2027 policy on recordkeeping and reinstatement specifics; personal-cycle applicability not inferred. No account or CPE mutation.",
+    "isaca-cpe-2027": "Complete public 6647-character main and FAQs read. January 1, 2027 transition: 90 aligned minimum, up to 30 other qualifying professional development, unchanged 120 total. Volunteering caps and vendor demo exclusion distinguished from case studies. Multi-credential credit still requires relevance. No 2026 system enforcement change; no video playback.",
+    "cisa-qae-database": "Old store/items URL returned missing/404 directly despite indexed historical listing. Retained as historical catalog evidence; public guide now uses verified current store2 route. No paid items consumed.",
+    "isaca-online-review-courses": "Complete public directory read. Featured 2024 CISA course advertises more than 40 modules, five domains and one year of access. No stated single seat-time verification or paid interior; 20–30 hours remains a study estimate.",
+    "pluralsight-cisa-2024-path": "Complete public main and 11-course listing read. Kevin Henry, August–September 2024; headline 20 hours, individual durations sum 1172 minutes/19 hours 32 minutes. Practice exam advertised, not consumed or validated. Five-year credential experience does not prohibit sitting the exam earlier.",
+    "oreilly-cisa-aci-learning": "Direct HTTP 403. Prior 26 hours 39 minutes metadata and lesson interiors not reverified.",
+    "udemy-cisa-masterclass-doshi": "Direct HTTP 403. Prior 22 hours 50 minutes metadata and lesson interiors not reverified.",
+    "linkedin-cisa-cert-prep-2026": "Complete public main and locked lesson table of contents read. Cybrary, June 4, 2026, intermediate, 7 hours 10 minutes. No trial, paid lessons, playback, certificate or quality guarantee.",
+    "nist-cybersecurity-framework-2": "Complete public landing main/resource directory read, not full CSF PDF or every linked quick-start guide. Current AI analysis/reporting quick-start is a draft with October 15 comment deadline; not a new CISA outline. No draft guidance adopted as mandatory criteria.",
+    "nist-sp-800-53-rev5": "Complete publication landing main read including 5.2.0 August 27, 2025 update note and mapping caveat. Control catalog differs from 800-53A assessment methods. No full control catalog audit, automatic equivalence of crosswalks or universal legal-applicability claim.",
+    "cisa-free-practice-quiz": "Bounded first-20-line preview read: introduction, first official item/explanations and beginning of second item were visible. No full quiz, form submission, score or remaining question review. No wording copied into original guide answers; paid QAE items unreviewed.",
+    "cisa-qae-database-current": "Direct HTTP 200 returned a 619-character shell; indexed listing and fresh unsigned Chrome rendered complete public main. 1070 items, three timed practices, six-month subscription and 2024/28th-edition context confirmed. Public prices 399 nonmember/299 member were observed, not checkout or personal entitlement. No cart, purchase, account or paid-question access.",
+    "isaca-itaf-five": "Direct HTTP 200 returned a 619-character shell; indexed listing and fresh unsigned Chrome rendered complete public main. Fifth edition free for members/nonmembers, package includes 2208 sampling companion and framework mappings; checkout/MyISACA download required. No checkout or package interior consumed, so mandatory standard details/conformity remain unverified.",
+    "isaca-itaf-five-launch": "Complete February 26, 2026 public press release read. Fifth edition replaces 2020 edition and updates terminology, AI/automation/governance context and sampling companion. Announcement is not full standard text or an exam-outline cutover.",
+    "isaca-audit-evidence-deepfakes": "Complete June 8, 2026 blog by Gabriel Oludare Fabiyi read. Independent provenance and corroboration inform practical teaching. Personal anecdote and zero-trust language are commentary, not independently verified incident evidence or new mandatory standards.",
+    "isaca-agentic-audit-2026": "Complete September 11, 2026 article by Eshaan Jain read. Prompt/configuration, authority, outputs, provider changes and escalation tests inform practical depth. Overbroad claim that distribution analysis replaces sampling is qualified. Legal/ISO retention claims and linked papers were not independently verified or adopted. No model/tenant test performed.",
+    "isaca-cpe-policy": "All nine genuine PDF pages read; page 5 table visually inspected. Landing announcement supplies January 2027 effective date. At least 90 aligned plus up to 30 other qualifying hours; all 120 can align, despite confusing table header. Activity caps, 50-minute/quarter-hour calculation, three-year recordkeeping and status/appeal text read. Personal applicability and transition from maintenance-page wording remain unverified; no legal interpretation or claim submission.",
+    "isaca-code-ethics": "Complete public main read, including objectivity, due care, competence, confidentiality, significant facts and complaint-process overview. Linked full policy/forms not read or submitted. No legal advice or complaint action.",
+    "nist-sp80053a-r5": "Public landing main and update note read. Genuine 733-page PDF captured; only pages 22–24 section 2.4 methods/objects/objectives and page 49 cautionary note read. Potential methods are neither mandatory nor exclusive. Full catalog, Appendix C and 5.2.0 supplemental artifacts not audited; selected base PDF remains valid for the methodological distinctions used.",
+    "nist-sp80034-r1": "Public landing main read; genuine 149-page updated 2010 PDF captured. Selected pages 31–32 BIA time/data distinctions and 34–35 recovery/backup strategy read. Historical media, federal/COOP specifics and old control-applicability statements not adopted as current universal requirements. No complete document, cloud design or measured recovery claim."
+  },
+  "public_examples": [
+    {
+      "language": "python",
+      "code": "from collections import Counter\nfrom fractions import Fraction\nfrom hashlib import sha256\nfrom math import comb\nimport json\nimport sqlite3\n\nchecks = []\ndef check(name, actual, expected):\n    assert actual == expected, (name, actual, expected)\n    checks.append(name)\n\nsource = [('p1', 100), ('p2', 200), ('p3', 300)]\nsubstituted = [('p1', 100), ('p2', 200), ('p9', 300)]\ncheck('row counts alone miss substitution', len(source), len(substituted))\ncheck('amount totals alone miss substitution', sum(v for _, v in source), sum(v for _, v in substituted))\ncheck('source identifiers missing from extract', sorted(set(dict(source)) - set(dict(substituted))), ['p3'])\ncheck('unexpected extract identifiers', sorted(set(dict(substituted)) - set(dict(source))), ['p9'])\nreplayed = source + [source[1]]\ncheck('duplicate identifier is visible', Counter(k for k, _ in replayed)['p2'], 2)\ncheck('replay inflates total', sum(v for _, v in replayed), 800)\n\ndef fingerprint(rows):\n    return sha256(json.dumps(sorted(rows), separators=(',', ':')).encode()).hexdigest()\n\ncheck('order-independent fixture fingerprint', fingerprint(source[::-1]), fingerprint(source))\ncheck('changed identity changes fingerprint', fingerprint(source) == fingerprint(substituted), False)\ncheck('bad input can still have a stable hash', fingerprint(substituted), fingerprint(substituted))\n\npopulation, defects, sample = 100, 10, 20\nmiss = Fraction(comb(population - defects, sample), comb(population, sample))\ncheck('finite sample can miss known defects', 0 < miss < 1, True)\ncheck('one random selection misses 90 of 100', Fraction(comb(90, 1), comb(100, 1)), Fraction(9, 10))\ncheck('census cannot miss known defects', Fraction(comb(90, 100), comb(100, 100)), 0)\ncheck('without replacement differs from independent draws', miss == Fraction(9, 10) ** sample, False)\ncheck('more sampling reduces miss chance in this fixture', Fraction(comb(90, 30), comb(100, 30)) < miss, True)\ncheck('zero exceptions does not prove zero population defects', miss > 0, True)\nstrata = [(20, 10, 2), (80, 10, 0)]\npooled = Fraction(sum(exceptions for _, _, exceptions in strata), sum(n for _, n, _ in strata))\nweighted = sum(Fraction(size, 100) * Fraction(exceptions, n) for size, n, exceptions in strata)\ncheck('oversampled raw exception rate', pooled, Fraction(1, 10))\ncheck('stratum-weighted illustrative point estimate', weighted, Fraction(1, 25))\ncheck('weighting changes the conclusion input', pooled != weighted, True)\n\ndb = sqlite3.connect(':memory:')\ndb.execute('PRAGMA foreign_keys=ON')\ndb.executescript('''\nCREATE TABLE person(tenant TEXT, user_id TEXT, ended INTEGER, PRIMARY KEY(tenant,user_id));\nCREATE TABLE access(event_id TEXT PRIMARY KEY, tenant TEXT, user_id TEXT, happened INTEGER);\nCREATE TABLE payroll(payment_id TEXT PRIMARY KEY, cents INTEGER NOT NULL CHECK(cents >= 0));\nCREATE TABLE release(change_id TEXT PRIMARY KEY, requestor TEXT, approver TEXT,\n                     artifact TEXT, approved_artifact TEXT, approved_at INTEGER, deployed_at INTEGER);\n''')\ndb.executemany('INSERT INTO person VALUES(?,?,?)', [('A','alex',120), ('B','alex',None), ('A','bea',None)])\ndb.executemany('INSERT INTO access VALUES(?,?,?,?)', [('e1','A','alex',119), ('e2','A','alex',120), ('e3','B','alex',130), ('e4','A','unknown',140)])\ndb.executemany('INSERT INTO payroll VALUES(?,?)', source)\ndb.executemany('INSERT INTO release VALUES(?,?,?,?,?,?,?)', [\n    ('c1','maker','reviewer','v1','v1',100,110),\n    ('c2','maker','maker','v1','v1',100,110),\n    ('c3','maker','reviewer','v2','v1',100,110),\n    ('c4','maker','reviewer','v1','v1',120,110)])\ndb.commit()\ncheck('actual SQLite payroll control total', db.execute('SELECT count(*),sum(cents) FROM payroll').fetchone(), (3,600))\nbad_join = db.execute('SELECT count(*) FROM access a JOIN person p ON a.user_id=p.user_id').fetchone()[0]\ncheck('unqualified user join duplicates results', bad_join, 6)\ngood_join = db.execute('SELECT count(*) FROM access a LEFT JOIN person p ON a.tenant=p.tenant AND a.user_id=p.user_id').fetchone()[0]\ncheck('qualified left join preserves every access', good_join, 4)\norphans = db.execute('SELECT a.event_id FROM access a LEFT JOIN person p ON a.tenant=p.tenant AND a.user_id=p.user_id WHERE p.user_id IS NULL').fetchall()\ncheck('missing identity remains an evidence gap', orphans, [('e4',)])\nexceptions = db.execute('SELECT a.event_id FROM access a JOIN person p ON a.tenant=p.tenant AND a.user_id=p.user_id WHERE p.ended IS NOT NULL AND a.happened >= p.ended').fetchall()\ncheck('chosen termination rule includes exact cutoff', exceptions, [('e2',)])\ncheck('other tenant is not falsely terminated', ('e3',) in exceptions, False)\ncheck('pre-termination activity is not a violation of chosen rule', ('e1',) in exceptions, False)\nqualified = db.execute('SELECT change_id FROM release WHERE requestor<>approver AND artifact=approved_artifact AND approved_at<=deployed_at').fetchall()\ncheck('only complete chosen release evidence qualifies', qualified, [('c1',)])\ncheck('self-approval isolated', db.execute('SELECT change_id FROM release WHERE requestor=approver').fetchall(), [('c2',)])\ncheck('approval for another artifact isolated', db.execute('SELECT change_id FROM release WHERE artifact<>approved_artifact').fetchall(), [('c3',)])\ncheck('late approval isolated', db.execute('SELECT change_id FROM release WHERE approved_at>deployed_at').fetchall(), [('c4',)])\n\nsnapshot = sqlite3.connect(':memory:')\ndb.backup(snapshot)\ndb.execute(\"DELETE FROM payroll WHERE payment_id='p3'\")\ndb.commit()\ncheck('simulated loss affects live disposable database', db.execute('SELECT sum(cents) FROM payroll').fetchone()[0], 300)\nrestored = sqlite3.connect(':memory:')\nsnapshot.backup(restored)\ncheck('actual backup restore returns all three payments', restored.execute('SELECT * FROM payroll ORDER BY payment_id').fetchall(), source)\ncheck('restored control total', restored.execute('SELECT sum(cents) FROM payroll').fetchone()[0], 600)\ncheck('restored SQLite integrity', restored.execute('PRAGMA integrity_check').fetchone()[0], 'ok')\nrestored.execute(\"UPDATE payroll SET cents=cents+25 WHERE payment_id='p1'\")\nrestored.commit()\ncheck('business operation after restore', restored.execute(\"SELECT cents FROM payroll WHERE payment_id='p1'\").fetchone()[0], 125)\ncheck('backup remains unchanged by restored write', snapshot.execute(\"SELECT cents FROM payroll WHERE payment_id='p1'\").fetchone()[0], 100)\ntry:\n    restored.execute(\"INSERT INTO payroll VALUES('p1',999)\")\nexcept sqlite3.IntegrityError:\n    restored.rollback()\n    check('restored primary key still enforced', True, True)\nelse:\n    raise AssertionError('duplicate payment accepted')\ncheck('failed transaction preserves prior committed total', restored.execute('SELECT sum(cents) FROM payroll').fetchone()[0], 625)\nfor connection in (db, snapshot, restored):\n    connection.close()\n\ntasks = [('identity',10,()), ('dns',5,()), ('keys',5,('identity',)),\n         ('database',20,('keys','dns')), ('application',15,('database','identity')),\n         ('business_validation',10,('application',))]\nfinish = {}\nfor name, duration, predecessors in tasks:\n    finish[name] = max((finish[p] for p in predecessors), default=0) + duration\ncheck('parallel prerequisite is not added twice', finish['database'], 35)\ncheck('technology available before business validation', finish['application'], 50)\ncheck('chosen end-to-end ready time', finish['business_validation'], 60)\ncheck('serial sum differs from critical path', sum(duration for _, duration, _ in tasks), 65)\ncheck('meets chosen technology RTO of 55', finish['application'] <= 55, True)\ncheck('misses chosen business MTD of 58', finish['business_validation'] <= 58, False)\ncheck('synthetic recovery point gap', 100-82, 18)\ncheck('gap fails chosen 15-minute RPO', 100-82 <= 15, False)\ncheck('known runtime log gap prevents complete coverage claim', {'r1','r2','r3'} <= {'r1','r2'}, False)\ncheck('policy version mismatch requires investigation', 'policy-v2' == 'policy-v1', False)\n\nprint(json.dumps(dict(passed=len(checks),checks=checks,sqlite_version=sqlite3.sqlite_version,\n                     probability_miss_known_defects=float(miss),weighted_point_estimate=float(weighted),\n                     recovery_finish_minutes=finish),indent=2))\n",
+      "boundary": "Actual offline Python and SQL in three disposable in-memory SQLite databases. Synthetic payroll backup/restore, integrity, post-restore update and constraints executed; no files, external service, organizational records, production recovery or account action."
+    }
+  ],
+  "pdf_receipts": [
+    {
+      "id": "isaca-certification-candidate-guide",
+      "source_url": "https://www.isaca.org/credentialing/-/media/fa494652c5f149289af38cef18328650.ashx",
+      "download_url": "https://www.isaca.org/credentialing/-/media/fa494652c5f149289af38cef18328650.ashx",
+      "sha256": "bfcbddc2a8391f08601ab45d9269ec24233e60258fe95074f34e21bdbf28866a",
+      "pages": 43,
+      "method": "Genuine public PDF bytes and local pypdf extraction. Capturing is not a claim that every page was read."
+    },
+    {
+      "id": "isaca-cpe-policy",
+      "source_url": "https://www.isaca.org/-/media/files/isacadp/project/isaca/certification/general/cpe_policy.pdf",
+      "download_url": "https://www.isaca.org/-/media/files/isacadp/project/isaca/certification/general/cpe_policy.pdf",
+      "sha256": "601d30ccff38aa900564dbc37926d3f9d4895b6477e88f2534a311103184186c",
+      "pages": 9,
+      "method": "Genuine public PDF bytes and local pypdf extraction. Capturing is not a claim that every page was read."
+    },
+    {
+      "id": "nist-sp80053a-r5",
+      "source_url": "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final",
+      "download_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53Ar5.pdf",
+      "sha256": "75665570048b969ad465a4f4f1db425ce505c374951c2c64e462949c6b21be47",
+      "pages": 733,
+      "method": "Genuine public PDF bytes and local pypdf extraction. Capturing is not a claim that every page was read."
+    },
+    {
+      "id": "nist-sp80034-r1",
+      "source_url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+      "download_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-34r1.pdf",
+      "sha256": "476f04d4c60b0770c1ac8b2720551972074ce78e936a3e7a535048416111d0df",
+      "pages": 149,
+      "method": "Genuine public PDF bytes and local pypdf extraction. Capturing is not a claim that every page was read."
+    }
+  ],
+  "browser_receipts": [
+    {
+      "id": "cisa-qae-database-current",
+      "url": "https://www.isaca.org/store2/product/CISA-QAE-C?category=shop-all",
+      "boundary": "Public read in a fresh unsigned headless browser. No account, cart, checkout, terms acceptance or entitlement change.",
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/store2/product/CISA-QAE-C?category=shop-all",
+      "characters": 6316,
+      "sha256": "7b1ec7292f5f359322da4fef1210069e44fbebd61095018f2737c4228391ab51"
+    },
+    {
+      "id": "isaca-itaf-five",
+      "url": "https://www.isaca.org/store2/product/WITAF-C?category=shop-all",
+      "boundary": "Public read in a fresh unsigned headless browser. No account, cart, checkout, terms acceptance or entitlement change.",
+      "http_status": 200,
+      "final_url": "https://www.isaca.org/store2/product/WITAF-C?category=shop-all",
+      "characters": 4253,
+      "sha256": "c483b402eed7cbe51fd8ff113c61b515e020f5665a64ca51f7b7b46dd06aca20"
+    }
+  ],
+  "detailed_objective_coverage": {
+    "subtopics_per_domain": [
+      10,
+      11,
+      8,
+      16,
+      15
+    ],
+    "supporting_tasks": 43,
+    "groups": [
+      {
+        "title": "Information Systems Auditing Process (18%)",
+        "objectives": [
+          "IS Audit Standards, Guidelines, and Codes of Ethics",
+          "Types of Audits, Assessments, and Reviews",
+          "Risk-Based Audit Planning",
+          "Types of Controls and Considerations",
+          "Audit Project Management",
+          "Audit Testing and Sampling Methodology",
+          "Audit Evidence Collection Techniques",
+          "Audit Data Analytics",
+          "Reporting and Communication Techniques",
+          "Quality Assurance and Improvement of Audit Process"
+        ]
+      },
+      {
+        "title": "Governance & Management Of It (18%)",
+        "objectives": [
+          "Laws, Regulations, and Industry Standards",
+          "Organizational Structure, IT Governance, and IT Strategy",
+          "IT Policies, Standards, Procedures and Practices",
+          "Enterprise Architecture and Considerations",
+          "Enterprise Risk Management",
+          "Privacy Program and Principles",
+          "Data Governance and Classification",
+          "IT Resource Management",
+          "IT Vendor Management",
+          "IT Performance Monitoring and Reporting",
+          "Quality Assurance and Quality Management of IT"
+        ]
+      },
+      {
+        "title": "Information Systems Acquisition, Development & Implementation (12%)",
+        "objectives": [
+          "Project Governance and Management",
+          "Business Case and Feasibility Analysis",
+          "System Development Methodologies",
+          "Control Identification and Design",
+          "System Readiness and Implementation Testing",
+          "Implementation Configuration and Release Management",
+          "System Migration, Infrastructure Deployment, and Data Conversion",
+          "Post-implementation Review"
+        ]
+      },
+      {
+        "title": "Information Systems Operations & Business Resilience (26%)",
+        "objectives": [
+          "IT Components",
+          "IT Asset Management",
+          "Job Scheduling and Production Process Automation",
+          "System Interfaces",
+          "Shadow IT and End-User Computing",
+          "Systems Availability and Capacity Management",
+          "Problem and Incident Management",
+          "IT Change, Configuration, and Patch Management",
+          "Operational Log Management",
+          "IT Service Level Management",
+          "Database Management",
+          "Business Impact Analysis",
+          "System and Operational Resilience",
+          "Data Backup, Storage, and Restoration",
+          "Business Continuity Plan",
+          "Disaster Recovery Plans"
+        ]
+      },
+      {
+        "title": "Protection Of Information Assets (26%)",
+        "objectives": [
+          "Information Asset Security Frameworks, Standards, and Guidelines",
+          "Physical and Environmental Controls",
+          "Identity and Access Management",
+          "Network and End-Point Security",
+          "Data Loss Prevention",
+          "Data Encryption",
+          "Public Key Infrastructure",
+          "Cloud and Virtualized Environments",
+          "Mobile, Wireless, and Internet-of-Things Devices",
+          "Security Awareness Training and Programs",
+          "Information System Attack Methods and Techniques",
+          "Security Testing Tools and Techniques",
+          "Security Monitoring Tools and Techniques",
+          "Security Incident Response Management",
+          "Evidence Collection and Forensics"
+        ]
+      },
+      {
+        "title": "Supporting tasks across the five domains",
+        "objectives": [
+          "1. Plan an audit to determine whether information systems are protected, controlled, and provide value to the organization.",
+          "2. Conduct audits in accordance with IS audit standards and a risk based IS audit strategy.",
+          "3. Apply project management methodologies to the audit process.",
+          "4. Communicate and collect feedback on audit progress, findings, results, and recommendations with stakeholders.",
+          "5. Conduct post-audit follow up to evaluate whether identified risk has been sufficiently addressed.",
+          "6. Utilize data analytics tools to enhance audit processes.",
+          "7. Evaluate the role and/or impact of automatization and/or decision-making systems for an organization.",
+          "8. Evaluate audit processes as part of quality assurance and improvement programs.",
+          "9. Evaluate the IT strategy for alignment with the organization's strategies and objectives.",
+          "10. Evaluate the effectiveness of IT governance structure and IT organizational structure.",
+          "11. Evaluate the organization's management of IT policies and practices, including compliance with legal and regulatory requirements.",
+          "12. Evaluate IT resource and project management for alignment with the organization's strategies and objectives.",
+          "13. Evaluate the organization's enterprise risk management (ERM) program.",
+          "14. Determine whether the organization has defined ownership of IT risk, controls, and standards.",
+          "15. Evaluate the monitoring and reporting of IT key performance indicators (KPIs) and IT key risk indicators (KRIs).",
+          "16. Evaluate the organization's ability to continue business operations.",
+          "17. Evaluate the organization's storage, backup, and restoration policies and processes.",
+          "18. Evaluate whether the business cases related to information systems meet business objectives.",
+          "19. Evaluate whether IT vendor selection and contract management processes meet business, legal, and regulatory requirements.",
+          "20. Evaluate supply chains for IT risk factors and integrity issues.",
+          "21. Evaluate controls at all stages of the information systems development life cycle.",
+          "22. Evaluate the readiness of information systems for implementation and migration into production.",
+          "23. Conduct post-implementation reviews of systems to determine whether project deliverables, controls, and requirements are met.",
+          "24. Evaluate whether effective processes are in place to support end users.",
+          "25. Evaluate whether IT service management practices align with organizational requirements.",
+          "26. Conduct periodic review of information systems and enterprise architecture (EA) to determine alignment with organizational objectives.",
+          "27. Evaluate whether IT operations and maintenance practices support the organization's objectives.",
+          "28. Evaluate the organization's database management practices.",
+          "29. Evaluate the organization's data governance program.",
+          "30. Evaluate the organization's privacy program.",
+          "31. Evaluate data classification practices for alignment with the organization's data governance program, privacy program, and applicable external requirements.",
+          "32. Evaluate the organization's problem and incident management program.",
+          "33. Evaluate the organization's change, configuration, release, and patch management programs.",
+          "34. Evaluate the organization's log management program.",
+          "35. Evaluate the organization's policies and practices related to asset life cycle management.",
+          "36. Evaluate risk associated with shadow IT and end-user computing (EUC) to determine effectiveness of compensating controls.",
+          "37. Evaluate the organization's information security program.",
+          "38. Evaluate the organization's threat and vulnerability management program.",
+          "39. Utilize technical security testing to identify potential vulnerabilities.",
+          "40. Evaluate logical, physical, and environmental controls to verify the confidentiality, integrity, and availability of information assets.",
+          "41. Evaluate the organization's security awareness training program.",
+          "42. Provide guidance to the organization in order to improve the quality and control of information systems.",
+          "43. Evaluate potential opportunities and risks associated with emerging technologies, regulations, and industry practices."
+        ]
+      }
+    ],
+    "basis": "Unchanged canonical live HTML snapshot; candidate PDF pages 27–30 separately read. Minor PDF clarifiers include functions, audit algorithms, asset security policies and monitoring logs; covered without rewriting the canonical baseline."
+  },
+  "pdf_reading": {
+    "candidate_guide": {
+      "pages_read": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        21,
+        22,
+        23,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30
+      ],
+      "visual_pages": [
+        6
+      ]
+    },
+    "cpe_policy": {
+      "pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "visual_pages": [
+        5
+      ]
+    },
+    "nist_80053a": {
+      "pages_read": [
+        22,
+        23,
+        24,
+        49
+      ],
+      "full_document": false
+    },
+    "nist_80034": {
+      "pages_read": [
+        31,
+        32,
+        34,
+        35
+      ],
+      "full_document": false
+    }
+  },
+  "source_health_boundary": "23 direct receipts: 20 successful, 2 blocked and 1 missing historical QAE URL. Two successful store routes returned only shells; separate fresh unsigned-browser receipts establish actual public product descriptions. No account/cart/checkout or entitlement action."
+}

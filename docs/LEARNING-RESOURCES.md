@@ -3344,6 +3344,37 @@ This is not a complete list, and it is not a prescription to consume everything.
 | Durable hypothesis, data, workflow and program concepts; not Splunk product or exam-contract authority | [Threat Hunting](https://www.oreilly.com/library/view/threat-hunting/9781492028260/) | Paid/O'Reilly | 4–7 hr estimate |
 | Public scope and five-stage access boundary | [The Art of Investigation description](https://www.splunk.com/en_us/pdfs/training/the-art-of-investigation-course-description.pdf) | Public PDF; actual course access varies | Three ride-alongs total 3 hr 20 min–4 hr 45 min; excludes introduction and quiz |
 
+### CISA — Certified Information Systems Auditor
+
+Resource details from the [CISA guide](../guides/CISA-isaca-certified-information-systems-auditor.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed end to end. Pick the format and chapters that close your measured gaps, practice the decision process, then return to the official outline. Durations are publisher-listed or practical estimates checked September 29, 2026; catalogs, prices and access change.
+
+| Best use | Resource | Access | Estimated time |
+|---|---|---|---:|
+| Canonical five-domain map and final scope check | [ISACA CISA exam content outline](https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline) | Public | 30–60 min |
+| Delivery, policies, and detailed August 2024 outline | [ISACA certification exam candidate guide](https://www.isaca.org/credentialing/-/media/fa494652c5f149289af38cef18328650.ashx) | Public PDF | 60–90 min |
+| Official self-paced instruction across 40+ modules with one year of access; public listing only, no lesson review | [ISACA CISA Online Review Course](https://www.isaca.org/training-and-events/online-training/online-review-courses) | Paid | 20–30 hr estimated |
+| Explanation-led use of the 1,070-question pool and three timed practices | [ISACA CISA QAE Database](https://www.isaca.org/store2/product/CISA-QAE-C?category=shop-all) | Paid, six months | 25–45 hr estimated |
+| Small official item-style sample, not a readiness score | [Free official CISA practice quiz](https://www.isaca.org/credentialing/cisa/cisa-practice-quiz) | Public/form | 15–25 min |
+| Eleven-course path and practice exam aligned to the 2024 job practice | [Pluralsight CISA 2024 path](https://www.pluralsight.com/paths/cisar-certified-information-systems-auditorr-2024) | Paid/trial | 20 hr headline; listed courses total 19 hr 32 min |
+| Selected explanations and demonstrations; recheck current policy and technology | [O'Reilly CISA video course](https://www.oreilly.com/videos/cisa-certified-information/9781836209119/) | Paid | Previously listed 26 hr 39 min; blocked and not reverified |
+| Public Cybrary listing released June 4, 2026; five-domain table of contents read, lessons unreviewed | [LinkedIn Learning CISA Cert Prep](https://www.linkedin.com/learning/isaca-certified-information-systems-auditor-cisa-cert-prep-44731094) | Paid/trial | 7 hr 10 min |
+| Public page blocked; prior description unverified; keep official outline/QAE authoritative | [Udemy Masterclass — CISA Exam (Updated 2026)](https://www.udemy.com/course/masterclass-cisa-exam/) | Paid | Previously listed 22 hr 50 min; blocked and not reverified |
+| Outcome and governance criteria context | [NIST Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework) | Public | 1–2 hr selected |
+| Control and assessment context, not blueprint memorization | [NIST SP 800-53 Rev. 5](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) | Public | 2–4 hr selected |
+| Exam-versus-designation and application rules | [CISA certification requirements](https://www.isaca.org/credentialing/cisa/get-cisa-certified) | Public | 10–15 min |
+| Current CPE, fee, audit and status duties | [CISA maintenance requirements](https://www.isaca.org/credentialing/cisa/maintain-cisa-certification) | Public | 15–20 min |
+| Plan the January 2027 maintenance transition | [2027 CPE change](https://www.isaca.org/credentialing/cpe-2027) | Public | 10 min |
+| Current standards package and sampling companion; package interior not reviewed | [ITAF fifth edition](https://www.isaca.org/store2/product/WITAF-C?category=shop-all) | Free listing; checkout/MyISACA for download | 3–6 hr selected study estimate |
+| Select appropriate evidence objects, methods, depth and breadth | [NIST SP 800-53A revision 5](https://csrc.nist.gov/pubs/sp/800/53/a/r5/final) | Public | 1–2 hr selected sections estimate |
+| BIA and recovery-method context; historical technical examples | [NIST SP 800-34 revision 1](https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final) | Public | 1–2 hr selected sections estimate |
+
+
+Use only authorized practice material. Reject products advertised as dumps, recalled questions, “actual exam” files, exact-match simulations, or guaranteed passes.
+
+**Resource review boundary:** Public listings are not course-quality or question-bank validation. The free quiz introduction, first item/explanation and start of the second were visible during a bounded page preview; the quiz was not completed or submitted and its wording is not reproduced. Paid QAE items, ITAF package contents, O’Reilly/Udemy interiors and video playback remain unreviewed.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.
