@@ -3,6 +3,140 @@
   "schema_version": 1,
   "reviews": [
     {
+      "id": "google-professional-agentic-architect-2026-09-02-source-validation",
+      "exam_code": "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
+      "guide_path": "guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/google-professional-agentic-architect-2026-09-02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "eac2f3a291d2910ff1c9cd4968e04b84c9d3cf3d98b685e7b14135aca4804347",
+      "objective_coverage": [
+        {
+          "objective_group": "Building agents using low-code tools (~13%)",
+          "guide_sections": [
+            "Section 1",
+            "Scenario 1",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Using coding agents for application development (~17%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenario 2",
+            "Labs 2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Developing custom agents (~33%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 3–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Evaluating and deploying agentic workflows (~22%)",
+          "guide_sections": [
+            "Section 4",
+            "All scenarios",
+            "Labs 5–8"
+          ]
+        },
+        {
+          "objective_group": "Securing and governing agentic workflows (~15%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 1–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 7,
+        "reachable": 7,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All five published beta domains, the explicit in-scope tool list and two-part assessment contract are mapped through bounded agent purpose, data/memory/retrieval, tool identity/actions, protocols/orchestration, layered evaluation/deployment/trace and security/governance/rollback. Three scenarios, eight labs and 36 checks are included. All seven URLs are reachable; a soft-404 A2A page was found and replaced before approval. No leaked/recalled beta item, dump or proprietary lab is used."
+    },
+    {
+      "id": "google-professional-agentic-architect-2026-09-06-source-validation",
+      "exam_code": "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
+      "guide_path": "guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-06",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/google-professional-agentic-architect-2026-09-02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "eac2f3a291d2910ff1c9cd4968e04b84c9d3cf3d98b685e7b14135aca4804347",
+      "objective_coverage": [
+        {
+          "objective_group": "Building agents using low-code tools (~13%)",
+          "guide_sections": [
+            "Section 1",
+            "Scenario 1",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Using coding agents for application development (~17%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenario 2",
+            "Labs 2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Developing custom agents (~33%)",
+          "guide_sections": [
+            "Section 3 including the blueprint-named data/model service map",
+            "All scenarios",
+            "Labs 3–5 and 8",
+            "Checks 37–39"
+          ]
+        },
+        {
+          "objective_group": "Evaluating and deploying agentic workflows (~22%)",
+          "guide_sections": [
+            "Section 4 and Google Cloud Observability mapping",
+            "All scenarios",
+            "Labs 5–8",
+            "Checks 39–40"
+          ]
+        },
+        {
+          "objective_group": "Securing and governing agentic workflows (~15%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 1–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 16,
+        "reachable": 16,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All five beta domains, the complete blueprint-named product groups and two-part assessment contract are mapped through bounded agent purpose; data, memory and retrieval; Cloud Storage, BigQuery, Cloud SQL, Firestore and Memorystore selection; Model Garden; tool identity/actions; protocols/orchestration; layered evaluation/deployment; Google Cloud Observability; and security/governance/rollback. Three scenarios, eight labs and 42 checks are included. All 16 URLs are registered and reachable. The September 3–30 registration, September 8–30 testing, late-October results, late-October-to-December qualifying labs, projected mid-November GA and Workflow Builder rename are dated and explicitly volatile. No leaked/recalled beta item, dump or proprietary lab is used."
+    },
+    {
       "id": "xk0-006-2026-09-01-source-validation",
       "exam_code": "XK0-006",
       "guide_path": "guides/XK0-006-comptia-linux-plus.md",
@@ -7533,24 +7667,72 @@
       "notes": "Five-page June 1, 2026 blueprint fully read and 52 considerations mapped under 14 numbered objectives. Objective digest unchanged; missing lifecycle baseline explicitly initialized and post-check unchanged. Added 36 executed local training/evaluation checks, 48 answered checks, eight proposed cloud labs and current catalog evidence. Live cloud execution and independent human review remain pending. See docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md"
     },
     {
-      "id":"google-professional-agentic-architect-2026-09-06-source-validation",
-      "exam_code":"GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
-      "guide_path":"guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-06",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/google-professional-agentic-architect-official-objectives.txt",
-      "blueprint_snapshot_sha256":"eac2f3a291d2910ff1c9cd4968e04b84c9d3cf3d98b685e7b14135aca4804347",
-      "objective_coverage":[
-        {"objective_group":"Building agents using low-code tools (~13%)","guide_sections":["Section 1","Scenario 1","Labs 1 and 8"]},
-        {"objective_group":"Using coding agents for application development (~17%)","guide_sections":["Section 2","Scenario 2","Labs 2 and 8"]},
-        {"objective_group":"Developing custom agents (~33%)","guide_sections":["Section 3 including the blueprint-named data/model service map","All scenarios","Labs 3–5 and 8","Checks 37–39"]},
-        {"objective_group":"Evaluating and deploying agentic workflows (~22%)","guide_sections":["Section 4 and Google Cloud Observability mapping","All scenarios","Labs 5–8","Checks 39–40"]},
-        {"objective_group":"Securing and governing agentic workflows (~15%)","guide_sections":["Section 5","All scenarios","Labs 1–8"]}
+      "id": "google-professional-agentic-architect-2026-09-29-source-validation",
+      "exam_code": "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
+      "guide_path": "guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/google-professional-agentic-architect-official-objectives.txt",
+      "blueprint_snapshot_sha256": "aa5ecd4d30563ca83afd658687695bce86b296d9d5712a63ae5669eb67a955e0",
+      "objective_coverage": [
+        {
+          "objective_group": "Building agents using low-code tools (~13%)",
+          "guide_sections": [
+            "Section 1",
+            "Scenario 1",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Using coding agents for application development (~17%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenario 2",
+            "Labs 2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Developing custom agents (~33%)",
+          "guide_sections": [
+            "Section 3 including the blueprint-named data/model service map",
+            "All scenarios",
+            "Labs 3–5 and 8",
+            "Checks 37–39"
+          ]
+        },
+        {
+          "objective_group": "Evaluating and deploying agentic workflows (~22%)",
+          "guide_sections": [
+            "Section 4 and Google Cloud Observability mapping",
+            "All scenarios",
+            "Labs 5–8",
+            "Checks 39–40"
+          ]
+        },
+        {
+          "objective_group": "Securing and governing agentic workflows (~15%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 1–8"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":16,"reachable":16,"access_blocked":0,"missing_or_error":0},
-      "notes":"All five beta domains, the complete blueprint-named product groups and two-part assessment contract are mapped through bounded agent purpose; data, memory and retrieval; Cloud Storage, BigQuery, Cloud SQL, Firestore and Memorystore selection; Model Garden; tool identity/actions; protocols/orchestration; layered evaluation/deployment; Google Cloud Observability; and security/governance/rollback. Three scenarios, eight labs and 42 checks are included. All 16 URLs are registered and reachable. The September 3–30 registration, September 8–30 testing, late-October results, late-October-to-December qualifying labs, projected mid-November GA and Workflow Builder rename are dated and explicitly volatile. No leaked/recalled beta item, dump or proprietary lab is used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 26,
+        "reachable": 26,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Four-page blueprint fully read: 31 considerations under 11 numbered objectives, with 28 tool-list entries mapped separately. Explicitly reviewed and accepted the capability snapshot’s FAQ-pointer addition and initialized missing lifecycle monitoring; post-check unchanged. Added 31 executed local action-control checks, 52 answers, eight proposed labs and current beta/catalog evidence. Live cloud/framework execution and independent human review remain pending. See docs/research/2026-09-29-google-professional-agentic-architect-deep-review.md"
     },
     {
       "id":"100-150-2026-09-02-source-validation",

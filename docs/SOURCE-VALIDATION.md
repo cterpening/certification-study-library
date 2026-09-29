@@ -1485,6 +1485,8 @@ The review follows the actual linked `_new.pdf` dated June 1, 2026; a different 
 
 ## GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT coverage record
 
+The September 29 [deep review](research/2026-09-29-google-professional-agentic-architect-deep-review.md) maps 31 detailed objectives. Four-page blueprint fully read: 31 considerations under 11 numbered objectives, with 28 tool-list entries mapped separately. Explicitly reviewed and accepted the capability snapshot’s FAQ-pointer addition and initialized missing lifecycle monitoring; post-check unchanged. Added 31 executed local action-control checks, 52 answers, eight proposed labs and current beta/catalog evidence. Live cloud/framework execution and independent human review remain pending. Current guide citations: 26 registered, 26 reachable, 0 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 6, 2026, during the open beta registration window and before multiple-choice testing begins
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: five beta domains—Low-code agents (13%), Coding agents (17%), Custom agents (33%), Evaluate/deploy (22%), and Secure/govern (15%)—plus a Pearson conceptual/design exam and Google Skills hands-on labs

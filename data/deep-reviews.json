@@ -5,6 +5,27 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
+      "reviewed_on": "2026-09-29",
+      "guide_sha256": "6b3c78ff136fe1b2f0adac3705d501c16c1c770f3bb00a9886578632bc95ad3a",
+      "objective_count": 31,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-29-google-professional-agentic-architect-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-29-google-professional-agentic-architect-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "No live cloud, ADK runtime, model, MCP/A2A server/client, OAuth exchange, PAB/IAM policy, retrieval/memory, gateway, confirmation backend or deployment was executed. Eight framework/cloud labs remain proposed; independent human review remains pending.",
+        "Local31checks include26 SQLite transaction/validation assertions and5 trace comparisons. Single process/connection,in-memory synthetic capacity,closed after run; no concurrency,process-crash durability,persistent session or distributed/external exactly-once claim.",
+        "Actor/tenant tuple and administrative approval method are trusted harness inputs; the program doesnot authenticate users or protect an exposed approval API. No real approval/payment/action outside process memory was performed.",
+        "Replays return prior committed results after current access validation; the toy design doesnot implement external effect reconciliation or compensation. Required-subsequence matching is a separate original fixture,not ADK evaluation execution.",
+        "Actual4pagePDF fully read and tool list separately mapped. Objective digest change was an inspected FAQ-pointer addition; missing lifecycle baseline initialized. FAQ dates/projections require separate watch despite empty adapter announcements.",
+        "Product references read selectively with per-source notes. Skills durations unavailable,stale preparation copy,Whiz48-character shell; no paid interiors,assessment labs,proprietary questions or recalled beta items accessed. Editorial study budgets are not provider duration claims.",
+        "No installation,authentication,reboot,runtime/service configuration,external notification or credential change attempted; prior same-session gcloud absence evidence reused."
+      ]
+    },
+    {
       "exam_code": "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER",
       "reviewed_on": "2026-09-29",
       "guide_sha256": "410af95c57d6a41b6121321d19f9ce315a676d42eab3a0374fdecc8649b90e00",

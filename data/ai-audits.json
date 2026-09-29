@@ -312,7 +312,7 @@
           "exam_code": "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
           "vendor_id": "google-cloud",
           "guide_path": "guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md",
-          "blueprint_snapshot_path": "data/objective-snapshots/google-professional-agentic-architect-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/google-professional-agentic-architect-2026-09-02-official-objectives.txt",
           "blueprint_snapshot_sha256": "eac2f3a291d2910ff1c9cd4968e04b84c9d3cf3d98b685e7b14135aca4804347",
           "audited_on": "2026-09-04",
           "verdict": "fix-required",
@@ -3132,16 +3132,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The public title is now Terraform Authoring and Operations Advanced, the six current domains match HashiCorp's Advanced list, and the Professional string is retained only as a labeled stable internal identifier."},
-            "objective_coverage": {"status": "passed", "notes": "Six domain sections, a professional decision playbook, seven labs, and 20 original checks substantively cover lifecycle, dynamic configuration, collaboration, modules, providers, and HCP Terraform."},
-            "material_claim_support": {"status": "passed", "notes": "Twenty-one reachable first-party HashiCorp sources support the rename, CLI, language, module, provider, HCP Terraform, and exam-version claims."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The guide does not invent weights or a public exam code and accurately separates the current AWS-provider exam from the announced late-2026 Azure-provider version."},
-            "technical_coherence": {"status": "passed", "notes": "The repaired state section correctly separates plan -refresh-only preview from apply -refresh-only persistence and remains consistent with import, drift, refactoring, and automation guidance."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "The rename, shared credential, Azure-version schedule, provider/environment details, HCP entitlements, interfaces, versions, and costs are dated or explicitly bounded."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Seven labs require disposable authorized environments, budgets, state protection, review, rollback, recovery, teardown, and modeled substitutes where necessary."},
-            "readiness_check_quality": {"status": "passed", "notes": "Twenty original prompts plus the readiness checklist test operational distinctions and align with the explanations and official content list."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The current guide and objective hashes, six mappings, September 6 review, and 21/21 reachable source evidence reconcile with the audit handoff."},
-            "duplication_and_contamination": {"status": "passed", "notes": "AWS and Azure references are legitimate exam-version context; no unrelated vendor leakage or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The public title is now Terraform Authoring and Operations Advanced, the six current domains match HashiCorp's Advanced list, and the Professional string is retained only as a labeled stable internal identifier."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Six domain sections, a professional decision playbook, seven labs, and 20 original checks substantively cover lifecycle, dynamic configuration, collaboration, modules, providers, and HCP Terraform."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Twenty-one reachable first-party HashiCorp sources support the rename, CLI, language, module, provider, HCP Terraform, and exam-version claims."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide does not invent weights or a public exam code and accurately separates the current AWS-provider exam from the announced late-2026 Azure-provider version."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The repaired state section correctly separates plan -refresh-only preview from apply -refresh-only persistence and remains consistent with import, drift, refactoring, and automation guidance."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The rename, shared credential, Azure-version schedule, provider/environment details, HCP entitlements, interfaces, versions, and costs are dated or explicitly bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Seven labs require disposable authorized environments, budgets, state protection, review, rollback, recovery, teardown, and modeled substitutes where necessary."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty original prompts plus the readiness checklist test operational distinctions and align with the explanations and official content list."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The current guide and objective hashes, six mappings, September 6 review, and 21/21 reachable source evidence reconcile with the audit handoff."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "AWS and Azure references are legitimate exam-version context; no unrelated vendor leakage or suspicious substantive duplication was found."
+            }
           },
           "findings": [
             {
@@ -3179,16 +3209,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The prerequisites, Core-plus-one-Elective rule, one-year completion window, 16 weighted scope groups, products, and elective launch sequence match the current consolidated Fortinet evidence."},
-            "objective_coverage": {"status": "passed", "notes": "All 16 groups now have substantive decision, configuration, validation, troubleshooting, and failure-path guidance, supported by four scenarios, ten labs, and 52 checks."},
-            "material_claim_support": {"status": "passed", "notes": "Sixteen reachable Fortinet program, practical, policy, training, and versioned product sources support the credential contract and applied technical boundaries."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The guide accurately separates available Core, three coming-soon electives, the transitional recertification route, and unpublished task details without inventing facts."},
-            "technical_coherence": {"status": "passed", "notes": "Packet, identity, management, email, application, sandbox, evidence, automation, analytics, response, HA, and recovery models remain internally consistent."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "December 2026, January 2027, and March 2027 launches are dated; volatile product placement, licensing, protocols, topology, commands, and delivery details are bounded."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Ten labs require authorization, isolation, synthetic data, backups, out-of-band access, budgets, rollback, cleanup, and paper substitutes when products are unavailable."},
-            "readiness_check_quality": {"status": "passed", "notes": "Fifty-two original questions now include elective-specific architecture, validation, failure, automation, and recovery decisions aligned with the expanded guide."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The current guide and objective hashes, 16 mappings, September 6 review, five repaired associations, and 16/16 reachable audit sources reconcile."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Shared Fortinet product material belongs to the cross-product expert scope; no unrelated vendor leakage or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The prerequisites, Core-plus-one-Elective rule, one-year completion window, 16 weighted scope groups, products, and elective launch sequence match the current consolidated Fortinet evidence."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "All 16 groups now have substantive decision, configuration, validation, troubleshooting, and failure-path guidance, supported by four scenarios, ten labs, and 52 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Sixteen reachable Fortinet program, practical, policy, training, and versioned product sources support the credential contract and applied technical boundaries."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide accurately separates available Core, three coming-soon electives, the transitional recertification route, and unpublished task details without inventing facts."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Packet, identity, management, email, application, sandbox, evidence, automation, analytics, response, HA, and recovery models remain internally consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "December 2026, January 2027, and March 2027 launches are dated; volatile product placement, licensing, protocols, topology, commands, and delivery details are bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Ten labs require authorization, isolation, synthetic data, backups, out-of-band access, budgets, rollback, cleanup, and paper substitutes when products are unavailable."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Fifty-two original questions now include elective-specific architecture, validation, failure, automation, and recovery decisions aligned with the expanded guide."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The current guide and objective hashes, 16 mappings, September 6 review, five repaired associations, and 16/16 reachable audit sources reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Shared Fortinet product material belongs to the cross-product expert scope; no unrelated vendor leakage or suspicious substantive duplication was found."
+            }
           },
           "findings": [
             {
@@ -3221,21 +3281,51 @@
           "vendor_id": "google-cloud",
           "guide_path": "guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md",
           "guide_content_sha256": "9ec7bf7975c3aad06a2d7902ed90468473912c8b2c35f864d0df89f61f4f73ce",
-          "blueprint_snapshot_path": "data/objective-snapshots/google-professional-agentic-architect-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/google-professional-agentic-architect-2026-09-02-official-objectives.txt",
           "blueprint_snapshot_sha256": "eac2f3a291d2910ff1c9cd4968e04b84c9d3cf3d98b685e7b14135aca4804347",
           "audited_on": "2026-09-06",
           "verdict": "fix-required",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The Professional Agentic Architect beta identity, five 13/17/33/22/15 domains, and multiple-choice plus hands-on-lab design match the current official contract."},
-            "objective_coverage": {"status": "failed", "notes": "Architecture depth is strong, but BigQuery, Cloud SQL, Cloud Storage, Firestore, Memorystore for Redis, Model Garden, and Google Cloud Observability remain absent or keyword-only despite being explicitly in scope."},
-            "material_claim_support": {"status": "passed", "notes": "Seven healthy primary sources support the existing architecture, ADK, protocol, model, retrieval, evaluation, deployment, and governance claims; current FAQ and release-note candidates support the detected lifecycle changes."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The recorded duration, approximate count, fee, language, two-part assessment, validity, prerequisites, and experience were accurate for the dated beta contract and are not presented as GA guarantees."},
-            "technical_coherence": {"status": "passed", "notes": "Identity, data, memory, retrieval, tools, orchestration, evaluation, runtime, security, governance, and rollback form a defensible end-to-end agent model."},
-            "volatility_and_lifecycle": {"status": "failed", "notes": "The opening still says registration has not opened and treats September 3 as future; the official page now says the beta is open through September 30 and the FAQ publishes testing, results, lab, and projected-GA windows."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs require authorized synthetic data, sandboxes, negative tests, budgets, review, canaries, rollback, and credential revocation."},
-            "readiness_check_quality": {"status": "passed", "notes": "Thirty-six original checks align with the existing guide and answer key, though repaired tool coverage should add corresponding selection checks."},
-            "review_evidence_accuracy": {"status": "failed", "notes": "The review says the explicit in-scope tool list is mapped even though several named data and observability products lack substantive coverage."},
-            "duplication_and_contamination": {"status": "passed", "notes": "No unrelated vendor content or suspicious substantive duplication was found; MCP and A2A are relevant protocol context."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The Professional Agentic Architect beta identity, five 13/17/33/22/15 domains, and multiple-choice plus hands-on-lab design match the current official contract."
+            },
+            "objective_coverage": {
+              "status": "failed",
+              "notes": "Architecture depth is strong, but BigQuery, Cloud SQL, Cloud Storage, Firestore, Memorystore for Redis, Model Garden, and Google Cloud Observability remain absent or keyword-only despite being explicitly in scope."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Seven healthy primary sources support the existing architecture, ADK, protocol, model, retrieval, evaluation, deployment, and governance claims; current FAQ and release-note candidates support the detected lifecycle changes."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The recorded duration, approximate count, fee, language, two-part assessment, validity, prerequisites, and experience were accurate for the dated beta contract and are not presented as GA guarantees."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Identity, data, memory, retrieval, tools, orchestration, evaluation, runtime, security, governance, and rollback form a defensible end-to-end agent model."
+            },
+            "volatility_and_lifecycle": {
+              "status": "failed",
+              "notes": "The opening still says registration has not opened and treats September 3 as future; the official page now says the beta is open through September 30 and the FAQ publishes testing, results, lab, and projected-GA windows."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs require authorized synthetic data, sandboxes, negative tests, budgets, review, canaries, rollback, and credential revocation."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks align with the existing guide and answer key, though repaired tool coverage should add corresponding selection checks."
+            },
+            "review_evidence_accuracy": {
+              "status": "failed",
+              "notes": "The review says the explicit in-scope tool list is mapped even though several named data and observability products lack substantive coverage."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No unrelated vendor content or suspicious substantive duplication was found; MCP and A2A are relevant protocol context."
+            }
           },
           "findings": [
             {
@@ -3281,16 +3371,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "PCEA-30-01, all six 13/19.5/15/17.5/17.5/17.5 syllabus blocks, and the credential page's limited-availability small-market-trial beta status reconcile."},
-            "objective_coverage": {"status": "passed", "notes": "Six sections and one ten-step integrated lab cover all published automation, CLI, logging, file/data, web/API, scheduling, notification, and reporting objectives."},
-            "material_claim_support": {"status": "passed", "notes": "The credential, complete syllabus, Python standard library, Requests, Beautiful Soup, schedule, author-hosted book, and labeled commercial source support the bounded claims."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The guide accurately records 46 questions, 60 minutes plus NDA, 75 percent, formats, English, delivery, prerequisites, seven-year validity, and from-USD-69 pricing without resolving the provider's active-versus-beta inconsistency by assumption."},
-            "technical_coherence": {"status": "passed", "notes": "CLI arguments, virtual environments, subprocess boundaries, logging, monitoring, filesystem safety, CSV/JSON, requests/scraping, scheduling, notification, reporting, idempotence, and failure handling are defensible at entry level."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "Limited availability, beta stabilization, provider status inconsistency, price, availability, objectives, and policies are prominently dated and require rechecking."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "The integrated lab uses permitted public/test data, validated roots, temporary/atomic output, bounded requests, safe notification, retry tests, idempotence, and overlap prevention."},
-            "readiness_check_quality": {"status": "passed", "notes": "Eighteen original questions and answers are unambiguous, aligned to the six blocks, and technically consistent."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The guide and objective hashes, six mappings, September 2 review, and 8/7/1/0 link evidence reconcile; O'Reilly is correctly access-blocked."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Supplementary operational depth is labeled and appropriate; no unrelated vendor leakage, copied course question, or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "PCEA-30-01, all six 13/19.5/15/17.5/17.5/17.5 syllabus blocks, and the credential page's limited-availability small-market-trial beta status reconcile."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Six sections and one ten-step integrated lab cover all published automation, CLI, logging, file/data, web/API, scheduling, notification, and reporting objectives."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "The credential, complete syllabus, Python standard library, Requests, Beautiful Soup, schedule, author-hosted book, and labeled commercial source support the bounded claims."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide accurately records 46 questions, 60 minutes plus NDA, 75 percent, formats, English, delivery, prerequisites, seven-year validity, and from-USD-69 pricing without resolving the provider's active-versus-beta inconsistency by assumption."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "CLI arguments, virtual environments, subprocess boundaries, logging, monitoring, filesystem safety, CSV/JSON, requests/scraping, scheduling, notification, reporting, idempotence, and failure handling are defensible at entry level."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Limited availability, beta stabilization, provider status inconsistency, price, availability, objectives, and policies are prominently dated and require rechecking."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "The integrated lab uses permitted public/test data, validated roots, temporary/atomic output, bounded requests, safe notification, retry tests, idempotence, and overlap prevention."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Eighteen original questions and answers are unambiguous, aligned to the six blocks, and technically consistent."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The guide and objective hashes, six mappings, September 2 review, and 8/7/1/0 link evidence reconcile; O'Reilly is correctly access-blocked."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Supplementary operational depth is labeled and appropriate; no unrelated vendor leakage, copied course question, or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The current beta guide passes all ten checks and preserves the provider's status discrepancy honestly."
@@ -3305,16 +3425,46 @@
           "audited_on": "2026-09-06",
           "verdict": "fix-required",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "Current 200-301 CCNA v1.1 identity and six 20/20/25/10/15/10 domains are correct; v2.0 remains separately labeled for February 3, 2027."},
-            "objective_coverage": {"status": "failed", "notes": "Most coverage is substantive, but v1.1 Layer 3 LACP EtherChannel, security awareness/training/physical controls, and representative REST authentication types remain underdeveloped."},
-            "material_claim_support": {"status": "passed", "notes": "Cisco's current page, v1.1/v2.0 PDFs, transition article, training and lab sources plus clearly labeled expert courses support the material claims."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The guide accurately records the current 120-minute English/Japanese USD-300 contract and discloses a future-facing Cisco marketing conflict instead of silently selecting it."},
-            "technical_coherence": {"status": "passed", "notes": "Packet, switching, spanning-tree, routing, services, security, wireless, API, JSON, automation, AI, troubleshooting, and transition explanations are internally defensible."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "Cisco's September 6-accessible transition article still identifies February 2 as the last v1.1 testing day and February 3, 2027 as the v2.0 launch; future scope remains clearly separated."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs use simulators or authorized devices, baselines, one-fault injection, credential protection, canaries, rollback, and saved evidence."},
-            "readiness_check_quality": {"status": "passed", "notes": "Thirty-six original checks align with the guide and distinguish current v1.1 from scheduled v2.0 study."},
-            "review_evidence_accuracy": {"status": "failed", "notes": "The source review still assigns Network Access, IP Connectivity, IP Services, Security, and Automation to several unrelated lab numbers rather than the guide's explicit lab purposes."},
-            "duplication_and_contamination": {"status": "passed", "notes": "The v2.0 delta is legitimate scheduled context; no unrelated vendor material or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "Current 200-301 CCNA v1.1 identity and six 20/20/25/10/15/10 domains are correct; v2.0 remains separately labeled for February 3, 2027."
+            },
+            "objective_coverage": {
+              "status": "failed",
+              "notes": "Most coverage is substantive, but v1.1 Layer 3 LACP EtherChannel, security awareness/training/physical controls, and representative REST authentication types remain underdeveloped."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Cisco's current page, v1.1/v2.0 PDFs, transition article, training and lab sources plus clearly labeled expert courses support the material claims."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide accurately records the current 120-minute English/Japanese USD-300 contract and discloses a future-facing Cisco marketing conflict instead of silently selecting it."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Packet, switching, spanning-tree, routing, services, security, wireless, API, JSON, automation, AI, troubleshooting, and transition explanations are internally defensible."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Cisco's September 6-accessible transition article still identifies February 2 as the last v1.1 testing day and February 3, 2027 as the v2.0 launch; future scope remains clearly separated."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use simulators or authorized devices, baselines, one-fault injection, credential protection, canaries, rollback, and saved evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks align with the guide and distinguish current v1.1 from scheduled v2.0 study."
+            },
+            "review_evidence_accuracy": {
+              "status": "failed",
+              "notes": "The source review still assigns Network Access, IP Connectivity, IP Services, Security, and Automation to several unrelated lab numbers rather than the guide's explicit lab purposes."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "The v2.0 delta is legitimate scheduled context; no unrelated vendor material or suspicious substantive duplication was found."
+            }
           },
           "findings": [
             {
@@ -3350,16 +3500,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "A+ V15 Core 1 220-1201, its same-version rule, and all five 13/23/25/11/28 domains match CompTIA's current page."},
-            "objective_coverage": {"status": "passed", "notes": "Five domain sections, three integrated scenarios, eight labs, 40 checks, answers, and a prior-version gap checklist provide substantive mobile, network, hardware, virtualization/cloud, and troubleshooting coverage."},
-            "material_claim_support": {"status": "passed", "notes": "CompTIA's current contract plus current V15 training and clearly identified third-party learning sources support the guide; product compatibility and volatile standards are directed to current manuals."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The guide accurately records the March 25, 2025 launch, maximum 90 questions, formats, 90 minutes, 675/900 score, languages, same-version rule, and only an estimated 2028 retirement."},
-            "technical_coherence": {"status": "passed", "notes": "Hardware compatibility, ESD and power safety, mobile repair, network paths, ports/services, SOHO/Wi-Fi, storage, printing, virtualization/cloud, and evidence-led troubleshooting are defensible."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "The guide does not turn CompTIA's usual three-year estimate into a retirement date and visibly bounds hardware, standards, security, compatibility, product, price, and training volatility."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs require an old authorized bench or virtual substitute, manuals, ESD and electrical safety, protected data, controlled faults, verification, and documentation."},
-            "readiness_check_quality": {"status": "passed", "notes": "Forty original questions and answers align with the guide, cover safety and diagnostic decisions, and include the exact lifecycle uncertainty."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The current guide and objective hashes, five mappings, September 1 review, and 8/6/2/0 guide-link evidence reconcile; the larger exam source set does not overstate cited links."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Core 2 and older 1100-series material are explicitly bounded rather than mixed into the current contract; no suspicious copied exam or course material was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "A+ V15 Core 1 220-1201, its same-version rule, and all five 13/23/25/11/28 domains match CompTIA's current page."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Five domain sections, three integrated scenarios, eight labs, 40 checks, answers, and a prior-version gap checklist provide substantive mobile, network, hardware, virtualization/cloud, and troubleshooting coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "CompTIA's current contract plus current V15 training and clearly identified third-party learning sources support the guide; product compatibility and volatile standards are directed to current manuals."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide accurately records the March 25, 2025 launch, maximum 90 questions, formats, 90 minutes, 675/900 score, languages, same-version rule, and only an estimated 2028 retirement."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Hardware compatibility, ESD and power safety, mobile repair, network paths, ports/services, SOHO/Wi-Fi, storage, printing, virtualization/cloud, and evidence-led troubleshooting are defensible."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The guide does not turn CompTIA's usual three-year estimate into a retirement date and visibly bounds hardware, standards, security, compatibility, product, price, and training volatility."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs require an old authorized bench or virtual substitute, manuals, ESD and electrical safety, protected data, controlled faults, verification, and documentation."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original questions and answers align with the guide, cover safety and diagnostic decisions, and include the exact lifecycle uncertainty."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The current guide and objective hashes, five mappings, September 1 review, and 8/6/2/0 guide-link evidence reconcile; the larger exam source set does not overstate cited links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Core 2 and older 1100-series material are explicitly bounded rather than mixed into the current contract; no suspicious copied exam or course material was found."
+            }
           },
           "findings": [],
           "notes": "A practical, safety-conscious current V15 Core 1 guide that passes all ten rubric checks."
@@ -3401,21 +3581,51 @@
           "vendor_id": "google-cloud",
           "guide_path": "guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md",
           "guide_content_sha256": "6d30211c5b32325fd6cf713e6158ea5db4ac400a46632a4f6f9d91459bffb38d",
-          "blueprint_snapshot_path": "data/objective-snapshots/google-professional-agentic-architect-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/google-professional-agentic-architect-2026-09-02-official-objectives.txt",
           "blueprint_snapshot_sha256": "eac2f3a291d2910ff1c9cd4968e04b84c9d3cf3d98b685e7b14135aca4804347",
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The Professional Agentic Architect beta identity, five 13/17/33/22/15 domains, named product groups, and multiple-choice plus qualifying-lab design match the current official evidence."},
-            "objective_coverage": {"status": "passed", "notes": "The guide now teaches agent-specific selection, control, failure, and evidence boundaries for Cloud Storage, BigQuery, Cloud SQL, Firestore, Memorystore for Redis, Model Garden, Logging, Monitoring, and Trace."},
-            "material_claim_support": {"status": "passed", "notes": "Sixteen reachable registered sources support the current beta contract, product terminology, protocols, data and model choices, observability, evaluation, deployment, and governance claims."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The guide accurately separates registration, multiple-choice testing, results, conditional labs, and projected GA while retaining the dated duration, count, fee, language, validity, and experience guidance."},
-            "technical_coherence": {"status": "passed", "notes": "The expanded storage, database, cache, model, and telemetry choices fit the existing identity, memory, retrieval, tool, orchestration, evaluation, runtime, security, and rollback model."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "September registration/testing windows, late-October results, qualifying-lab timing, projected mid-November GA, and the Agent Designer-to-Workflow Builder rename are dated and explicitly require live verification."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs remain bounded by authorization, synthetic data, negative tests, budgets, review, canaries, rollback, and credential revocation while adding evidence-based data and model selection."},
-            "readiness_check_quality": {"status": "passed", "notes": "Forty-two original questions and answers now test the repaired service-selection, observability, lifecycle, and terminology distinctions alongside the end-to-end agent architecture."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 6 source review maps the expanded product groups and checks, records 16/16 reachable cited URLs, and matches the current guide and objective hashes."},
-            "duplication_and_contamination": {"status": "passed", "notes": "The added Google product references are explicitly named by the blueprint and no unrelated vendor material, copied course content, or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The Professional Agentic Architect beta identity, five 13/17/33/22/15 domains, named product groups, and multiple-choice plus qualifying-lab design match the current official evidence."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The guide now teaches agent-specific selection, control, failure, and evidence boundaries for Cloud Storage, BigQuery, Cloud SQL, Firestore, Memorystore for Redis, Model Garden, Logging, Monitoring, and Trace."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Sixteen reachable registered sources support the current beta contract, product terminology, protocols, data and model choices, observability, evaluation, deployment, and governance claims."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide accurately separates registration, multiple-choice testing, results, conditional labs, and projected GA while retaining the dated duration, count, fee, language, validity, and experience guidance."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The expanded storage, database, cache, model, and telemetry choices fit the existing identity, memory, retrieval, tool, orchestration, evaluation, runtime, security, and rollback model."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "September registration/testing windows, late-October results, qualifying-lab timing, projected mid-November GA, and the Agent Designer-to-Workflow Builder rename are dated and explicitly require live verification."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs remain bounded by authorization, synthetic data, negative tests, budgets, review, canaries, rollback, and credential revocation while adding evidence-based data and model selection."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty-two original questions and answers now test the repaired service-selection, observability, lifecycle, and terminology distinctions alongside the end-to-end agent architecture."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 6 source review maps the expanded product groups and checks, records 16/16 reachable cited URLs, and matches the current guide and objective hashes."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "The added Google product references are explicitly named by the blueprint and no unrelated vendor material, copied course content, or suspicious substantive duplication was found."
+            }
           },
           "findings": [
             {
@@ -3464,16 +3674,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "Current CCNA v1.1 identity, six 20/20/25/10/15/10 domains, detailed subobjectives, and separately labeled February 2027 v2.0 transition match the official evidence."},
-            "objective_coverage": {"status": "passed", "notes": "The repaired guide substantively covers both Layer 2 and routed Layer 3 LACP EtherChannel, security awareness/training/exercises/physical controls, and representative REST authentication types."},
-            "material_claim_support": {"status": "passed", "notes": "Eleven reachable registered sources include current Cisco implementation evidence for the repaired topics; two commercial training pages remain honestly automation-blocked and are not needed to support the repairs."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The current 120-minute English/Japanese USD-300 contract and future v2.0 boundary remain distinct, and the conflicting undated credential-page logistics candidate remains visible rather than silently selected."},
-            "technical_coherence": {"status": "passed", "notes": "Routed port-channel addressing, LACP state and member failure, security-program evidence, and Basic/Bearer/API-key/OAuth boundaries integrate coherently with the existing network and automation model."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "The guide dates the v1.1 last-test and v2.0 launch boundary and labels platform syntax, API authentication contracts, logistics, simulator support, and commercial materials as volatile."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs retain authorization, simulator or disposable-device boundaries, controlled faults, protected credentials, validation, rollback, and a tabletop substitute for unsupported routed port channels."},
-            "readiness_check_quality": {"status": "passed", "notes": "Thirty-six original checks remain aligned to the complete v1.1 guide and clearly separate scheduled v2.0 study."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 6 review maps labs 1-7 to their actual domains, uses capstone lab 8 appropriately, and reconciles the 13/11/2/0 guide-link evidence and current hashes."},
-            "duplication_and_contamination": {"status": "passed", "notes": "The scheduled v2.0 material and bounded REST implementation example are relevant; no unrelated vendor material, copied course content, or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "Current CCNA v1.1 identity, six 20/20/25/10/15/10 domains, detailed subobjectives, and separately labeled February 2027 v2.0 transition match the official evidence."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The repaired guide substantively covers both Layer 2 and routed Layer 3 LACP EtherChannel, security awareness/training/exercises/physical controls, and representative REST authentication types."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Eleven reachable registered sources include current Cisco implementation evidence for the repaired topics; two commercial training pages remain honestly automation-blocked and are not needed to support the repairs."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The current 120-minute English/Japanese USD-300 contract and future v2.0 boundary remain distinct, and the conflicting undated credential-page logistics candidate remains visible rather than silently selected."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Routed port-channel addressing, LACP state and member failure, security-program evidence, and Basic/Bearer/API-key/OAuth boundaries integrate coherently with the existing network and automation model."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The guide dates the v1.1 last-test and v2.0 launch boundary and labels platform syntax, API authentication contracts, logistics, simulator support, and commercial materials as volatile."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs retain authorization, simulator or disposable-device boundaries, controlled faults, protected credentials, validation, rollback, and a tabletop substitute for unsupported routed port channels."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks remain aligned to the complete v1.1 guide and clearly separate scheduled v2.0 study."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 6 review maps labs 1-7 to their actual domains, uses capstone lab 8 appropriately, and reconciles the 13/11/2/0 guide-link evidence and current hashes."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "The scheduled v2.0 material and bounded REST implementation example are relevant; no unrelated vendor material, copied course content, or suspicious substantive duplication was found."
+            }
           },
           "findings": [
             {

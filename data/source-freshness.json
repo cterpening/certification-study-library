@@ -4,6 +4,289 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-googleprofessionalagenticarchitect-deep-review",
+      "title": "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "results": [
+        {
+          "exam_code": "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md",
+          "baseline_sha256": "a6ccf538cddb9b47a4e9ca70e32d99a28d17e0e92e5594576f6258c74ade6dcc",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Actual4pagePDF fully read;31 considerations [4,5,9,7,6] under11 headings,28 separately mapped tools. Only monitored objective addition is FAQ pointer; explicit before/observed/diff receipts retained and snapshot accepted. Missing lifecycle initialized,post unchanged. Canonical and FAQ current dates/two-part/one-year boundaries read; empty monitor announcement list is not absence of upcoming FAQ milestones."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Targeted ADK state/update/confirmation backend limits,parallel version/concurrency,tool authority and eval matching; MCP2026authorization and A2Atask lifecycle; AgentIdentity replacement/retirement and PAB additive eligibility/enforcement support. Initial product-role overview sections read.31exactpublic localchecks,not framework/cloud execution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "September3GeminiEnterprise WorkflowBuilder GA/rename entry fully read; doesnot makeall blueprintservicesGA. Prior fullApril22app/platform announcement reused with healthyfetch; current ADKExperimental/2.0 and MCP2026version boundaries explicit."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Skills13activitiesrelative27days,no duration44hverification,explicit incompletecoverage/staleearlySepcopy. NewWhizexamlisting exists but directtitleshellonly,detailsunverified. ADK/A2A/MCPprimary reading budgets editorial. No paidinteriors or proprietaryassessmentlabs accessed."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Corrected oldtestingnotstarted/currentdates,preparationvsassessment,componentvsfinalresults,editorialmonitorchange. Added approvalbinding/currentauthority/atomiclocal boundary,state backend/prefix updates,parallel synchronization,trajectoryextras,PABunion/support and newagentprincipal.52answers8proposedlabsPlaceslearnlast."
+            }
+          },
+          "findings": [
+            {
+              "id": "googleprofessionalagenticarchitect-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Preparation labs are not the certification assessment",
+              "url": "https://support.google.com/cloud-certification/answer/18080541?hl=en",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The FAQ says preparation is optional and qualifying assessment labs are separate; both components must pass.",
+              "recommendation": "Teach current windows, component-specific results, one-year validity and projected GA without treating training completion as certification.",
+              "disposition": "applied",
+              "source_id": "google-paa-beta-faq",
+              "resolution": "Teach current windows, component-specific results, one-year validity and projected GA without treating training completion as certification."
+            },
+            {
+              "id": "googleprofessionalagenticarchitect-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Capability digest changed only because of a FAQ pointer",
+              "url": "https://cloud.google.com/learn/certification/agentic-architect/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The saved unified diff adds one navigation sentence after the existing capability/two-part text.",
+              "recommendation": "Accept the inspected snapshot explicitly and retain before/after/diff receipts without claiming new exam objectives.",
+              "disposition": "applied",
+              "source_id": "google-paa-certification",
+              "resolution": "Accept the inspected snapshot explicitly and retain before/after/diff receipts without claiming new exam objectives."
+            },
+            {
+              "id": "googleprofessionalagenticarchitect-deep-3",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Blueprint and current low-code naming differ",
+              "url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "September3entry confirms WorkflowBuilder GA,formerlyAgentDesigner.",
+              "recommendation": "Retain blueprint wording while naming the current product and mapping lifecycle concepts to actual tool capabilities.",
+              "disposition": "applied",
+              "source_id": "google-paa-gemini-enterprise-release-notes",
+              "resolution": "Retain blueprint wording while naming the current product and mapping lifecycle concepts to actual tool capabilities."
+            },
+            {
+              "id": "googleprofessionalagenticarchitect-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Experimental confirmation has session-service limitations",
+              "url": "https://adk.dev/tools-custom/confirmation/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Known limitations exclude DatabaseSessionService and VertexAiSessionService.",
+              "recommendation": "Require compatible version/backend and actual resume testing; a dialog is not evidence of durable production approval.",
+              "disposition": "applied",
+              "source_id": "adk-action-confirmation",
+              "resolution": "Require compatible version/backend and actual resume testing; a dialog is not evidence of durable production approval."
+            },
+            {
+              "id": "googleprofessionalagenticarchitect-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "State scope and persistence do not establish authority",
+              "url": "https://adk.dev/sessions/state/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "App state spans users; in-memory state is lost; retrieved-Session mutation bypasses tracked update flow.",
+              "recommendation": "Teach scoped data,tracked context/event updates and host-controlled authority outside model-writable state.",
+              "disposition": "applied",
+              "source_id": "adk-session-state",
+              "resolution": "Teach scoped data,tracked context/event updates and host-controlled authority outside model-writable state."
+            },
+            {
+              "id": "googleprofessionalagenticarchitect-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Parallel branches need explicit state and merge contracts",
+              "url": "https://adk.dev/agents/workflow-agents/parallel-agents/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Documentation warns about independent branches/shared-context races and newer2.0workflow alternatives.",
+              "recommendation": "Pin SDK/runtime and test synchronization,result ordering,merge and failure behavior.",
+              "disposition": "applied",
+              "source_id": "adk-parallel-workflow",
+              "resolution": "Pin SDK/runtime and test synchronization,result ordering,merge and failure behavior."
+            },
+            {
+              "id": "googleprofessionalagenticarchitect-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A required trajectory can coexist with an unsafe extra action",
+              "url": "https://adk.dev/evaluate/criteria/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "IN_ORDER and ANY_ORDER permit extras; word-overlap and semantic judges measure other properties.",
+              "recommendation": "Add forbidden-action/authorization gates and execute a separate trace counterexample.",
+              "disposition": "applied",
+              "source_id": "adk-eval-criteria",
+              "resolution": "Add forbidden-action/authorization gates and execute a separate trace counterexample."
+            },
+            {
+              "id": "googleprofessionalagenticarchitect-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Model tool arguments are not trusted authorization context",
+              "url": "https://adk.dev/safety/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "In-tool guidance separates model-proposed arguments from developer-controlled policy and per-tool authority.",
+              "recommendation": "Execute a synthetic bound-approval/current-access/resource-version/idempotency transaction with rollback tests; state its trusted-host limits.",
+              "disposition": "applied",
+              "source_id": "adk-security",
+              "resolution": "Execute a synthetic bound-approval/current-access/resource-version/idempotency transaction with rollback tests; state its trusted-host limits."
+            },
+            {
+              "id": "googleprofessionalagenticarchitect-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Protocol compatibility and delegated token audience are separate contracts",
+              "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current2026HTTPauthorization requires intended audience validation and prohibits token passthrough; stdio differs.",
+              "recommendation": "Pin protocol/SDK/transport, use correct receiving-resource tokens and bounded error handling; do not claim old examples prove current compliance.",
+              "disposition": "applied",
+              "source_id": "mcp-2026-authorization",
+              "resolution": "Pin protocol/SDK/transport, use correct receiving-resource tokens and bounded error handling; do not claim old examples prove current compliance."
+            },
+            {
+              "id": "googleprofessionalagenticarchitect-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A terminal task cannot simply restart for refinement",
+              "url": "https://a2a-protocol.org/latest/topics/life-of-a-task/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Task lifecycle defines terminal states and separate follow-up tasks linked by context/references.",
+              "recommendation": "Separate task identity,context continuity and accepted artifact version management.",
+              "disposition": "applied",
+              "source_id": "a2a-task-lifecycle",
+              "resolution": "Separate task identity,context continuity and accepted artifact version management."
+            },
+            {
+              "id": "googleprofessionalagenticarchitect-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Multiple PAB policies add eligible resources rather than intersecting them",
+              "url": "https://docs.cloud.google.com/iam/docs/principal-access-boundary-policies",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Eligible resource union and enforcement-version supported permissions govern blocking; eligibility doesnot grant access.",
+              "recommendation": "Review all applicable bindings,permission support and removal gaps before claiming resource exclusion.",
+              "disposition": "applied",
+              "source_id": "gcp-principal-boundary",
+              "resolution": "Review all applicable bindings,permission support and removal gaps before claiming resource exclusion."
+            },
+            {
+              "id": "googleprofessionalagenticarchitect-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Recreating an agent changes its principal and does not remove old bindings",
+              "url": "https://docs.cloud.google.com/iam/docs/agent-identity-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Identity follows resourceID; deletion leaves inactive IAM bindings and replacement requires new grants.",
+              "recommendation": "Add old-binding cleanup and new-principal least-privilege validation to deployment and retirement labs.",
+              "disposition": "applied",
+              "source_id": "gcp-agent-identity",
+              "resolution": "Add old-binding cleanup and new-principal least-privilege validation to deployment and retirement labs."
+            }
+          ],
+          "notes": "Four-page blueprint fully read: 31 considerations under 11 numbered objectives, with 28 tool-list entries mapped separately. Explicitly reviewed and accepted the capability snapshot’s FAQ-pointer addition and initialized missing lifecycle monitoring; post-check unchanged. Added 31 executed local action-control checks, 52 answers, eight proposed labs and current beta/catalog evidence. Live cloud/framework execution and independent human review remain pending. Same-context AI review; human review pending. See docs/research/2026-09-29-google-professional-agentic-architect-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 12,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-googleprofessionalmachinelearningengineer-deep-review",
       "title": "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER complete guide and learning-content review",
       "rubric_version": 1,

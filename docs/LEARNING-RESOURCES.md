@@ -2633,6 +2633,24 @@ This is **not a complete list**. Catalog observations below are from September 2
 
 Use an outline-based gap map: learning resource → current objective → explanation → executed evidence. No PMLE-specific MeasureUp catalog was verified in this review; that is a research limit, not proof of absence. Supplement any resource where the public outline does not establish coverage.
 
+### GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT — Professional Agentic Architect
+
+Resource details from the [GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT guide](../guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is **not a complete list**. Map selected resources to the current PDF and fill gaps through primary documentation and executed original labs. September 29 catalog observations below do not establish paid-content quality or certification readiness.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Official exam guide](https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf) and [FAQ](https://support.google.com/cloud-certification/answer/18080541?hl=en) | Public authoritative scope and assessment lifecycle. | Suggested 1–2h initial mapping, then recheck dates before each milestone; this is an editorial budget. |
+| [Google Skills Agentic Architect path](https://www.skills.google/paths/4525) | Public outline; activities may require account/credits. Current page lists 13 activities, a relative 27-day update and expressly incomplete blueprint coverage; it retains stale early-September availability language. | Current activity durations are not exposed; the earlier 44h total is unverified. Preparation activities are distinct from qualifying assessment labs. |
+| [ADK documentation](https://google.github.io/adk-docs/) | Public first-party documentation, currently redirected to adk.dev. Focus on versioned tools, state, confirmation support, evaluation and deployment. | Suggested 8–16h targeted reading and local builds, plus cloud verification; not a provider duration. |
+| [A2A protocol](https://a2a-protocol.org/latest/) and [MCP specification](https://modelcontextprotocol.io/specification/latest) | Public primary protocols. Pin versions/transport and test compatible implementations. | Suggested 3–6h targeted concepts followed by original protocol labs; not measured completion time. |
+| [Google Cloud generative AI documentation](https://cloud.google.com/vertex-ai/generative-ai/docs) | Public primary product reference; paths may retain older Vertex names. | Suggested 8–16h targeted to runtime, retrieval, identity and monitoring gaps; verify exact current capabilities. |
+| [Whizlabs Professional Agentic Architect listing](https://www.whizlabs.com/google-cloud-professional-agentic-architect/) | A public exam-specific listing now exists. Direct retrieval exposed only its title; paid content, labs, questions and update depth were not reviewed. | Duration and detailed current-blueprint coverage unverified. Its existence supersedes the earlier blanket “no verified listing” statement. |
+| This guide and proposed labs | Public original explanation and 31-check local workbook; live labs require a suitable authorized environment. | Suggested 16–24h for framework/cloud experiments, fault diagnosis and evidence after prerequisites; not an exam-pass promise. |
+
+No exam-specific Pluralsight, O’Reilly, Coursera or MeasureUp listing was verified in this review’s targeted discovery. This is a research limit, not proof of absence. Use current public outlines to judge relevance, and keep provider estimates separate from your own lab budget.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

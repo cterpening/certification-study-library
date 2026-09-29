@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT deep review](docs/research/2026-09-29-google-professional-agentic-architect-deep-review.md): 31 mapped considerations plus28 tool entries,31 executed local action-control checks,52 answers,eight proposed labs and updated beta/catalog evidence.
+
 - September 29, 2026: [GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER deep review](docs/research/2026-09-29-google-professional-machine-learning-engineer-deep-review.md): 52 mapped considerations,36 executed local training/evaluation checks,48 answers,eight proposed cloud labs and updated source/catalog evidence.
 
 - September 29, 2026: [GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER deep review](docs/research/2026-09-29-google-professional-cloud-security-engineer-deep-review.md): 70 mapped considerations, 35 executed local envelope-encryption checks, 48 answers, eight proposed cloud labs and updated source/catalog evidence.

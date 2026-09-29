@@ -1,0 +1,2096 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "6d30211c5b32325fd6cf713e6158ea5db4ac400a46632a4f6f9d91459bffb38d",
+  "guide_after_sha256": "6b3c78ff136fe1b2f0adac3705d501c16c1c770f3bb00a9886578632bc95ad3a",
+  "prior_records": {
+    "exam": {
+      "code": "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
+      "level": "expert",
+      "vendor_id": "google-cloud",
+      "title": "Professional Agentic Architect",
+      "status": "beta",
+      "study_guide_url": "https://cloud.google.com/learn/certification/agentic-architect/",
+      "guide_path": "guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md",
+      "blueprint_last_checked": "2026-09-06",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-06",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; Google recommends three or more years building cloud solutions including one or more years building agents on Google Cloud. Practice low-code state workflows, sandboxed coding agents, ADK/custom agents, RAG/memory/tools/MCP/A2A/multi-agent coordination, layered eval and tracing, Agent Runtime/Cloud Run/GKE deployment, OAuth/IAM/PAB/gateway/registry/policy/HITL controls and incident rollback."
+    },
+    "review": {
+      "id": "google-professional-agentic-architect-2026-09-06-source-validation",
+      "exam_code": "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
+      "guide_path": "guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-06",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/google-professional-agentic-architect-official-objectives.txt",
+      "blueprint_snapshot_sha256": "eac2f3a291d2910ff1c9cd4968e04b84c9d3cf3d98b685e7b14135aca4804347",
+      "objective_coverage": [
+        {
+          "objective_group": "Building agents using low-code tools (~13%)",
+          "guide_sections": [
+            "Section 1",
+            "Scenario 1",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Using coding agents for application development (~17%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenario 2",
+            "Labs 2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Developing custom agents (~33%)",
+          "guide_sections": [
+            "Section 3 including the blueprint-named data/model service map",
+            "All scenarios",
+            "Labs 3–5 and 8",
+            "Checks 37–39"
+          ]
+        },
+        {
+          "objective_group": "Evaluating and deploying agentic workflows (~22%)",
+          "guide_sections": [
+            "Section 4 and Google Cloud Observability mapping",
+            "All scenarios",
+            "Labs 5–8",
+            "Checks 39–40"
+          ]
+        },
+        {
+          "objective_group": "Securing and governing agentic workflows (~15%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 1–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 16,
+        "reachable": 16,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All five beta domains, the complete blueprint-named product groups and two-part assessment contract are mapped through bounded agent purpose; data, memory and retrieval; Cloud Storage, BigQuery, Cloud SQL, Firestore and Memorystore selection; Model Garden; tool identity/actions; protocols/orchestration; layered evaluation/deployment; Google Cloud Observability; and security/governance/rollback. Three scenarios, eight labs and 42 checks are included. All 16 URLs are registered and reachable. The September 3–30 registration, September 8–30 testing, late-October results, late-October-to-December qualifying labs, projected mid-November GA and Workflow Builder rename are dated and explicitly volatile. No leaked/recalled beta item, dump or proprietary lab is used."
+    },
+    "sources": [
+      {
+        "id": "google-paa-certification",
+        "title": "Professional Agentic Architect beta certification",
+        "url": "https://cloud.google.com/learn/certification/agentic-architect/",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+        ],
+        "notes": "Canonical live two-part beta, delivery, timing and high-level capabilities page; registration announced for September 3, 2026 and monitored by the Google Cloud adapter."
+      },
+      {
+        "id": "google-paa-exam-guide",
+        "title": "Professional Agentic Architect certification exam guide",
+        "url": "https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+        ],
+        "notes": "Detailed four-page beta guide with five domains, complete consideration list and explicit in-scope tool catalog; no visible publication date."
+      },
+      {
+        "id": "google-paa-skills-path",
+        "title": "Professional Agentic Architect learning path",
+        "url": "https://www.skills.google/paths/4525",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+        ],
+        "notes": "Thirteen first-party activities totaling about 44 hours across agent foundations, Antigravity, strategy, ADK, memory, tools, skills, AgentOps, data and multi-agent systems; labs may require credits."
+      },
+      {
+        "id": "google-paa-adk-docs",
+        "title": "Agent Development Kit documentation",
+        "url": "https://google.github.io/adk-docs/",
+        "publisher": "Google",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+        ],
+        "notes": "First-party open documentation for code-first agents, models, tools, sessions, callbacks, evaluation and deployment."
+      },
+      {
+        "id": "google-paa-a2a-overview",
+        "title": "Agent2Agent protocol documentation",
+        "url": "https://a2a-protocol.org/latest/",
+        "publisher": "Agent2Agent Protocol project",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+        ],
+        "notes": "Primary public A2A protocol documentation for the interoperability concepts named in the official blueprint; verify the current version during study."
+      },
+      {
+        "id": "google-paa-mcp-spec",
+        "title": "Model Context Protocol specification",
+        "url": "https://modelcontextprotocol.io/specification/latest",
+        "publisher": "Model Context Protocol project",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+        ],
+        "notes": "Primary public protocol specification for the MCP concepts named in the official blueprint."
+      },
+      {
+        "id": "google-paa-genai-docs",
+        "title": "Generative AI on Google Cloud documentation",
+        "url": "https://cloud.google.com/vertex-ai/generative-ai/docs",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+        ],
+        "notes": "Current first-party model, RAG, evaluation, agent and deployment documentation; URLs may retain Vertex AI branding during the Agent Platform transition."
+      },
+      {
+        "id": "google-paa-beta-faq",
+        "title": "Professional Agentic Architect Certification FAQs",
+        "url": "https://support.google.com/cloud-certification/answer/18080541?hl=en",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "credential-page",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+        ],
+        "notes": "Current beta registration, testing, result, hands-on-lab and provider-projected general-availability windows; projections remain volatile."
+      },
+      {
+        "id": "google-paa-gemini-enterprise-release-notes",
+        "title": "Gemini Enterprise release notes",
+        "url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "release-notes",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+        ],
+        "notes": "Recurring first-party terminology and lifecycle source, including the September 3, 2026 Workflow Builder rename from Agent Designer."
+      },
+      {
+        "id": "google-paa-bigquery-overview",
+        "title": "Introduction to BigQuery",
+        "url": "https://cloud.google.com/bigquery/docs/introduction",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+        ],
+        "notes": "First-party reference for the blueprint-named governed analytical data platform and evidence boundary."
+      },
+      {
+        "id": "google-paa-cloud-sql-overview",
+        "title": "Cloud SQL overview",
+        "url": "https://cloud.google.com/sql/docs/introduction",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+        ],
+        "notes": "First-party reference for blueprint-named managed relational storage and transaction boundaries."
+      },
+      {
+        "id": "google-paa-cloud-storage-overview",
+        "title": "Cloud Storage overview",
+        "url": "https://cloud.google.com/storage/docs/introduction",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+        ],
+        "notes": "First-party reference for blueprint-named object, artifact and batch-source storage."
+      },
+      {
+        "id": "google-paa-firestore-overview",
+        "title": "Firestore overview",
+        "url": "https://cloud.google.com/firestore/docs/overview",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+        ],
+        "notes": "First-party reference for blueprint-named document and application-state storage."
+      },
+      {
+        "id": "google-paa-memorystore-redis-overview",
+        "title": "Memorystore for Redis overview",
+        "url": "https://cloud.google.com/memorystore/docs/redis/memorystore-for-redis-overview",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+        ],
+        "notes": "First-party reference for blueprint-named low-latency cache and transient-state decisions."
+      },
+      {
+        "id": "google-paa-model-garden",
+        "title": "Overview of Model Garden",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/explore-models",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+        ],
+        "notes": "First-party reference for blueprint-named model discovery, comparison and deployment options."
+      },
+      {
+        "id": "google-paa-observability",
+        "title": "Google Cloud Observability overview",
+        "url": "https://cloud.google.com/stackdriver/docs",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+        ],
+        "notes": "First-party umbrella reference for blueprint-named Cloud Logging, Monitoring and Trace evidence."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "928c4669eb586f9ab5d71693091452f54953da5214573afa5546d11eab840083",
+      "guide_sections": [
+        "1. Low-code agents — about 13%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "f8c2066450d6e82f933b08cfde673c617e05c07beb7ebf6c62d7b928f4f945b7",
+      "guide_sections": [
+        "1. Low-code agents — about 13%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "e8e7394cd3f518d9b618f1939229f4b8753fffbbf448992e64cc1e8bb69ce9e7",
+      "guide_sections": [
+        "1. Low-code agents — about 13%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "4c5b3eca8615ca704e7855814f48c5170034d254be6bd8234b1edbf47c9101d2",
+      "guide_sections": [
+        "1. Low-code agents — about 13%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "32c569f4bec872c886c60963d33f2ec6e3c5d3f2a80598df0eba28dda997b933",
+      "guide_sections": [
+        "2. Coding agents — about 17%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "928fa6ea8b428255c8099dce8df888e9362e7de53b0f24a6b06e7f7c69a7d1bb",
+      "guide_sections": [
+        "2. Coding agents — about 17%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "9235df62f29cecbf2bdf54742d62b288704d1cb65a79f0d8bcbc8af375a94a81",
+      "guide_sections": [
+        "2. Coding agents — about 17%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "8cf00ec2bc8c8e86635e66e5393149ec310bb1032d677b8c17d600f8ea095d7a",
+      "guide_sections": [
+        "2. Coding agents — about 17%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "37d0a74174e0a7874b7ed3af36b51c8937be3b4ea8133a6d813b2b0cc906b280",
+      "guide_sections": [
+        "2. Coding agents — about 17%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "8fa30020c17cb777fbb71687c5619d6c4dbf535f601a4d9e413ced59f733eb2f",
+      "guide_sections": [
+        "3. Custom agents — about 33%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "7c69cf436930b0de34e04379a358d1ec0543a7d6548293261bcaef1fa84bbf2a",
+      "guide_sections": [
+        "3. Custom agents — about 33%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "82c1a24563340ac69462dc498bc3838f3f15dad24f829f8f6eea7a65fcc9e7fe",
+      "guide_sections": [
+        "3. Custom agents — about 33%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "b68056e4667a6b5d7833461839cdb9d16c1d1e61d6496443fec54f918503fe62",
+      "guide_sections": [
+        "3. Custom agents — about 33%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "0fc686855820ca14e09372b5889724f91d56011d542d6ca2a26780f163d96188",
+      "guide_sections": [
+        "3. Custom agents — about 33%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "48c21bfbca56f456b5d6e792ecdf4910ad71e8e102913dc85a57b25450827c54",
+      "guide_sections": [
+        "3. Custom agents — about 33%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "8f524a96cd4787f51fa079d905b2b5155ab48aef4ebd42338924fac0588d6b0b",
+      "guide_sections": [
+        "3. Custom agents — about 33%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "36f5e4790607ebbc751cb70e1cd5403fabed73ca1be891620a92843c61050472",
+      "guide_sections": [
+        "3. Custom agents — about 33%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "f5bf2903a11364af53dcb9bc6603e54588a94ad10f2ac8f276450176b75421ef",
+      "guide_sections": [
+        "3. Custom agents — about 33%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "92f3bc9e4b78194825fa71a269e695d6c1861e6ae2f8dcc0a723c73115e1ca34",
+      "guide_sections": [
+        "4. Evaluate and deploy — about 22%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "1ef81c5ac740ead55f69de081e491a3187cb97f2a564e2b358bc2f26c006a030",
+      "guide_sections": [
+        "4. Evaluate and deploy — about 22%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "88293a8b5b2f3361cf42e4862fbd838c2c01f38b3c34a87772b47168e7bdf937",
+      "guide_sections": [
+        "4. Evaluate and deploy — about 22%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "c2339f14af327707fe596da70c3619b0b0de9f13f87ec1f4279af122fdcfd9e2",
+      "guide_sections": [
+        "4. Evaluate and deploy — about 22%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "5bc0fda6c6f658ec2ce8a32d4d02a147312a40b09def384a14e3d5f6ac829c4d",
+      "guide_sections": [
+        "4. Evaluate and deploy — about 22%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "17451df690630c55f493d63d3e8b4286ba750c4265381c3ad5b31ca08c0f8217",
+      "guide_sections": [
+        "4. Evaluate and deploy — about 22%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "c84c15cee9c39d70ebe801541d05806ed05e4f28fc52da36106dce7ef1bbd90f",
+      "guide_sections": [
+        "4. Evaluate and deploy — about 22%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "a709db0307820d0ac8e16ece267104a3014782972e08e33103bbc1d8e844e396",
+      "guide_sections": [
+        "5. Secure and govern — about 15%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "50af1462172bf8d8567cc5a7f5f9adb2ce9dcec8d123c10e9a589f85b015b646",
+      "guide_sections": [
+        "5. Secure and govern — about 15%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "418cdd737a412f21ed217d610fc09df9635ed62d5b4f27af12788ddbd70f53d0",
+      "guide_sections": [
+        "5. Secure and govern — about 15%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "9b7026696b96ff671512044c1097bac15dbcc94dfd8eb0a10fb06208f71c8cfc",
+      "guide_sections": [
+        "5. Secure and govern — about 15%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "f5927bba47e7544afaf027d3839903148827918318c7c298721cb235d823a650",
+      "guide_sections": [
+        "5. Secure and govern — about 15%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "30e374e541501de47429ab6084ce9716f206765a67f791da0e386505e8d838ab",
+      "guide_sections": [
+        "5. Secure and govern — about 15%",
+        "Integrated scenarios",
+        "Executed local action-control workbook",
+        "Proposed cloud and framework labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
+        "title": "Professional Agentic Architect",
+        "url": "https://cloud.google.com/learn/certification/agentic-architect/",
+        "guide_path": "guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md",
+        "snapshot_path": "data\\objective-snapshots\\google-professional-agentic-architect-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\google-professional-agentic-architect-official-status.json",
+        "previous_sha256": "eac2f3a291d2910ff1c9cd4968e04b84c9d3cf3d98b685e7b14135aca4804347",
+        "current_sha256": "aa5ecd4d30563ca83afd658687695bce86b296d9d5712a63ae5669eb67a955e0",
+        "previous_status_sha256": null,
+        "current_status_sha256": "b878755ce38aab9904c2018c54a447081b905dcfbdf5cbf87e685e85a643ce2a",
+        "official_status": {
+          "skills_versions": [
+            "Length: 3 hours",
+            "Registration fee: $120 (40% discount on retail price of $200",
+            "Language: English",
+            "Exam format: ~80 multiple choice questions",
+            "Exam delivery method: Online-proctored or onsite-proctored",
+            "Validity period: 1 year",
+            "Prerequisites: None",
+            "Recommended experience: 3+ years of hands-on experience"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 26,
+    "reachable": 26,
+    "access_blocked": 0,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "google-paa-certification",
+      "url": "https://cloud.google.com/learn/certification/agentic-architect/",
+      "checked_at": "2026-09-29T08:34:28.581882+00:00",
+      "health": {
+        "id": "google-paa-certification",
+        "url": "https://cloud.google.com/learn/certification/agentic-architect/",
+        "checked_at": "2026-09-29T08:34:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloud.google.com/learn/certification/agentic-architect/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Professional Agentic Architect Certification | Learn | Google Cloud",
+        "canonical_url": "https://cloud.google.com/learn/certification/agentic-architect",
+        "duration_signals": [
+          "3 hours"
+        ],
+        "signal_fingerprint": "f587b910ff1ea8fbcd882d10d1a022cfc07051f1200a932cf43fd3128a012090",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cloud.google.com/learn/certification/agentic-architect/",
+      "sha256": "2232d3a3e3245a7f901979480306ca8e032957abc5eb78920cce8bee940fd2c9",
+      "text_characters": 4874
+    },
+    {
+      "id": "google-paa-exam-guide",
+      "url": "https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf",
+      "checked_at": "2026-09-29T08:36:56.963267+00:00",
+      "health": {
+        "id": "google-paa-exam-guide",
+        "url": "https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf",
+        "checked_at": "2026-09-29T08:36:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf",
+      "sha256": "70214d7d67303884823f8129b6cdfa06b296d88a8d86906453180dceabd1cc01",
+      "bytes": 149776,
+      "pdf_pages": 4,
+      "text_characters": 7629
+    },
+    {
+      "id": "google-paa-skills-path",
+      "url": "https://www.skills.google/paths/4525",
+      "checked_at": "2026-09-29T08:34:28.582797+00:00",
+      "health": {
+        "id": "google-paa-skills-path",
+        "url": "https://www.skills.google/paths/4525",
+        "checked_at": "2026-09-29T08:34:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skills.google/paths/4525",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Professional Agentic Architect Certification | Google Skills",
+        "canonical_url": "https://www.skills.google/paths/4525",
+        "duration_signals": [],
+        "signal_fingerprint": "f9a34914808c913821113188a7597faa3f5791d112196746e69e6051a4cbdc54",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skills.google/paths/4525",
+      "sha256": "8a2fa6d7196da6ca21abd124ea91dc01d96fed17ff314c020eb07e941ac770c9",
+      "text_characters": 1238
+    },
+    {
+      "id": "google-paa-adk-docs",
+      "url": "https://google.github.io/adk-docs/",
+      "checked_at": "2026-09-29T08:34:29.256238+00:00",
+      "health": {
+        "id": "google-paa-adk-docs",
+        "url": "https://google.github.io/adk-docs/",
+        "checked_at": "2026-09-29T08:34:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://adk.dev/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Agent Development Kit (ADK)",
+        "canonical_url": "https://adk.dev/",
+        "duration_signals": [],
+        "signal_fingerprint": "6da0f4946c64d29d7b736f4c58e127aa86271263d4b3f11a13022371dc198313",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://adk.dev/",
+      "sha256": "c6a5f48ee1fb037badb7978cbc1abe395e2c5004d31fee998d5b6d7d73932d6c",
+      "text_characters": 9060
+    },
+    {
+      "id": "google-paa-a2a-overview",
+      "url": "https://a2a-protocol.org/latest/",
+      "checked_at": "2026-09-29T08:34:30.153485+00:00",
+      "health": {
+        "id": "google-paa-a2a-overview",
+        "url": "https://a2a-protocol.org/latest/",
+        "checked_at": "2026-09-29T08:34:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://a2a-protocol.org/latest/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "A2A Protocol",
+        "canonical_url": "https://a2a-protocol.org/latest/",
+        "duration_signals": [
+          "8 min"
+        ],
+        "signal_fingerprint": "f7c96ed19637a116ebbfc634391a8cd09f564e260f7fb6320f949967695304c3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://a2a-protocol.org/latest/",
+      "sha256": "cd8978404ffbc88ad48edff895a8931b751131df0ca06aae38adfa81da88a217",
+      "text_characters": 5767
+    },
+    {
+      "id": "google-paa-mcp-spec",
+      "url": "https://modelcontextprotocol.io/specification/latest",
+      "checked_at": "2026-09-29T08:34:30.558324+00:00",
+      "health": {
+        "id": "google-paa-mcp-spec",
+        "url": "https://modelcontextprotocol.io/specification/latest",
+        "checked_at": "2026-09-29T08:34:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://modelcontextprotocol.io/specification/2026-07-28",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Specification - Model Context Protocol",
+        "canonical_url": "https://modelcontextprotocol.io/specification/2026-07-28",
+        "duration_signals": [],
+        "signal_fingerprint": "75c5dbe27ebb19cd6b8b42631c1906c6d728fff34ae19727fd4930cc68006fb8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://modelcontextprotocol.io/specification/2026-07-28",
+      "sha256": "9732aad5668798c9be229ff6b0b79b219a22651f81a38505a1a8ff1ff7ce9bf9",
+      "text_characters": 4644
+    },
+    {
+      "id": "google-paa-genai-docs",
+      "url": "https://cloud.google.com/vertex-ai/generative-ai/docs",
+      "checked_at": "2026-09-29T08:34:31.778084+00:00",
+      "health": {
+        "id": "google-paa-genai-docs",
+        "url": "https://cloud.google.com/vertex-ai/generative-ai/docs",
+        "checked_at": "2026-09-29T08:34:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Overview of models on Agent Platform | Gemini Enterprise Agent Platform | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models",
+        "duration_signals": [],
+        "signal_fingerprint": "d416f82b23b309a6a2ce1f3911bf88297f5b1b29489758e42dfe21f7527ee960",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models",
+      "sha256": "0e9c733a830f7fa6f4ad972390a42678fdc37640cb49941ea33329e231a565c1",
+      "text_characters": 4346
+    },
+    {
+      "id": "google-paa-beta-faq",
+      "url": "https://support.google.com/cloud-certification/answer/18080541?hl=en",
+      "checked_at": "2026-09-29T08:34:32.026301+00:00",
+      "health": {
+        "id": "google-paa-beta-faq",
+        "url": "https://support.google.com/cloud-certification/answer/18080541?hl=en",
+        "checked_at": "2026-09-29T08:34:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.google.com/cloud-certification/answer/18080541?hl=en",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Professional Agentic Architect Certification FAQs - Cloud Certification Help",
+        "canonical_url": "https://support.google.com/cloud-certification/answer/18080541?hl=en",
+        "duration_signals": [
+          "5 hours"
+        ],
+        "signal_fingerprint": "896ff3353428d3640a601b22a0d5e329c000e526381799b19188ac2dc3f01f90",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.google.com/cloud-certification/answer/18080541?hl=en",
+      "sha256": "8e6d2e132cf7994684a127176e3ab0b8b56e3dfe4e0168177db9ba27a34e14bb",
+      "text_characters": 9458
+    },
+    {
+      "id": "google-paa-gemini-enterprise-release-notes",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes",
+      "checked_at": "2026-09-29T08:34:32.121814+00:00",
+      "health": {
+        "id": "google-paa-gemini-enterprise-release-notes",
+        "url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes",
+        "checked_at": "2026-09-29T08:34:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Gemini Enterprise release notes | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes",
+        "duration_signals": [],
+        "signal_fingerprint": "731d9a64a1403da8d38492f4f000a0f48a8790010bd517f32eacfad8230cf5fe",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes",
+      "sha256": "69e11655064a1709da175828ada3b11c728465f01a05739ee84cbb50348e8977",
+      "text_characters": 125655
+    },
+    {
+      "id": "google-paa-bigquery-overview",
+      "url": "https://cloud.google.com/bigquery/docs/introduction",
+      "checked_at": "2026-09-29T08:34:34.049227+00:00",
+      "health": {
+        "id": "google-paa-bigquery-overview",
+        "url": "https://cloud.google.com/bigquery/docs/introduction",
+        "checked_at": "2026-09-29T08:34:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/bigquery/docs/introduction",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "BigQuery overview | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/bigquery/docs/introduction",
+        "duration_signals": [],
+        "signal_fingerprint": "ae29579c8d1faf104806494c9a35ff6618245ea40f6f5e46a28062752ef83576",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/bigquery/docs/introduction",
+      "sha256": "df6ec3593a44915528c8f15d2f46cebee435d26faa1297f2597b76689331a66b",
+      "text_characters": 15391
+    },
+    {
+      "id": "google-paa-cloud-sql-overview",
+      "url": "https://cloud.google.com/sql/docs/introduction",
+      "checked_at": "2026-09-29T08:34:34.945039+00:00",
+      "health": {
+        "id": "google-paa-cloud-sql-overview",
+        "url": "https://cloud.google.com/sql/docs/introduction",
+        "checked_at": "2026-09-29T08:34:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/sql/docs/introduction",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Cloud SQL overview | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/sql/docs/introduction",
+        "duration_signals": [],
+        "signal_fingerprint": "e2616c487428dd59084deaeec2d9f0157106839ac7e3a90027e0743497198f18",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/sql/docs/introduction",
+      "sha256": "a51165ef513109f50892e6f65e233071cf49f785436f8a74cef1f85e11ec5f44",
+      "text_characters": 7529
+    },
+    {
+      "id": "google-paa-cloud-storage-overview",
+      "url": "https://cloud.google.com/storage/docs/introduction",
+      "checked_at": "2026-09-29T08:35:16.788638+00:00",
+      "health": {
+        "id": "google-paa-cloud-storage-overview",
+        "url": "https://cloud.google.com/storage/docs/introduction",
+        "checked_at": "2026-09-29T08:35:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/storage/docs/introduction",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Cloud Storage overview | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/storage/docs/introduction",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "0da1a41e1662d62b59e709bac69d119976cc5fbc2f5d0c70479ea58220d72dc0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/storage/docs/introduction",
+      "sha256": "67b27da96e4f08b3858bf8b69e2a3acd0a73f6abdcda0516f7d890bcc9e82e8c",
+      "text_characters": 13092
+    },
+    {
+      "id": "google-paa-firestore-overview",
+      "url": "https://cloud.google.com/firestore/docs/overview",
+      "checked_at": "2026-09-29T08:35:22.754244+00:00",
+      "health": {
+        "id": "google-paa-firestore-overview",
+        "url": "https://cloud.google.com/firestore/docs/overview",
+        "checked_at": "2026-09-29T08:35:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloud.google.com/products/firestore",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Firestore",
+        "canonical_url": "https://cloud.google.com/products/firestore",
+        "duration_signals": [],
+        "signal_fingerprint": "df0a522a3864fcae88c3750040733d6cce42a73463130ab61c3d4f9bae3474af",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cloud.google.com/products/firestore",
+      "sha256": "c531b8b284bbda1862eb87d4d17c977305ff0a1910c0f37bfb3acc03e235fe21",
+      "text_characters": 50566
+    },
+    {
+      "id": "google-paa-memorystore-redis-overview",
+      "url": "https://cloud.google.com/memorystore/docs/redis/memorystore-for-redis-overview",
+      "checked_at": "2026-09-29T08:35:24.890068+00:00",
+      "health": {
+        "id": "google-paa-memorystore-redis-overview",
+        "url": "https://cloud.google.com/memorystore/docs/redis/memorystore-for-redis-overview",
+        "checked_at": "2026-09-29T08:35:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/memorystore/docs/redis/memorystore-for-redis-overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Memorystore for Redis overview | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/memorystore/docs/redis/memorystore-for-redis-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "faeb5e61508eeb939a06a8e6a267e142c2f11fc547f28be201d0383de01006b6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/memorystore/docs/redis/memorystore-for-redis-overview",
+      "sha256": "512c5f93ead90c96af9a413c79062e7415d19ec6a39a64f5dc86c01d1f1e6a66",
+      "text_characters": 11021
+    },
+    {
+      "id": "google-paa-model-garden",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/explore-models",
+      "checked_at": "2026-09-29T08:35:25.055020+00:00",
+      "health": {
+        "id": "google-paa-model-garden",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/explore-models",
+        "checked_at": "2026-09-29T08:35:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/explore-models",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Overview of Model Garden | Gemini Enterprise Agent Platform | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/explore-models",
+        "duration_signals": [],
+        "signal_fingerprint": "9a00280ad88c5f38c8b6fce9cdc886a1904a519d111b04c6ea33c927d957bd92",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/explore-models",
+      "sha256": "e1c32f4594594c75affdd8f9836969edfe92e4db0660a7d9cb8052dbc5dff87d",
+      "text_characters": 6214
+    },
+    {
+      "id": "google-paa-observability",
+      "url": "https://cloud.google.com/stackdriver/docs",
+      "checked_at": "2026-09-29T08:35:34.668206+00:00",
+      "health": {
+        "id": "google-paa-observability",
+        "url": "https://cloud.google.com/stackdriver/docs",
+        "checked_at": "2026-09-29T08:35:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/stackdriver/docs",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Observability in Google Cloud | Google Cloud Observability | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/stackdriver/docs",
+        "duration_signals": [],
+        "signal_fingerprint": "963d9c21d618b50bbc2429d45afc1fc605c1c922bc8c7d121f2bf1c214ff40e3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/stackdriver/docs",
+      "sha256": "08671f5e616fad87cbffa34dc00488eefe8d4b94bbdb6f93d2fd948bed1406e4",
+      "text_characters": 13834
+    },
+    {
+      "id": "adk-action-confirmation",
+      "url": "https://adk.dev/tools-custom/confirmation/",
+      "checked_at": "2026-09-29T08:39:40.830330+00:00",
+      "health": {
+        "id": "adk-action-confirmation",
+        "url": "https://adk.dev/tools-custom/confirmation/",
+        "checked_at": "2026-09-29T08:39:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://adk.dev/tools-custom/confirmation/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Agent Development Kit (ADK)",
+        "canonical_url": "https://adk.dev/tools-custom/confirmation/",
+        "duration_signals": [],
+        "signal_fingerprint": "fd4aec6ff93e2b403e489a254fdc16c04a25331a4532ceb0a621dcb00a90770e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://adk.dev/tools-custom/confirmation/",
+      "sha256": "577bfeffd97640476253d0e2b3ba61b8554c301ed8dd6fb01c1ac3881e347315",
+      "text_characters": 21992
+    },
+    {
+      "id": "adk-session-state",
+      "url": "https://adk.dev/sessions/state/",
+      "checked_at": "2026-09-29T08:39:40.830815+00:00",
+      "health": {
+        "id": "adk-session-state",
+        "url": "https://adk.dev/sessions/state/",
+        "checked_at": "2026-09-29T08:39:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://adk.dev/sessions/state/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Agent Development Kit (ADK)",
+        "canonical_url": "https://adk.dev/sessions/state/",
+        "duration_signals": [],
+        "signal_fingerprint": "e9342b699fc670dd04b798dfb03d9dca30dca0b9af82eeb320715cd3bfeafab1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://adk.dev/sessions/state/",
+      "sha256": "e00df25a79a5b884224922c0a2010d9cd20efdcf23ef58830308718a0e2af88b",
+      "text_characters": 46222
+    },
+    {
+      "id": "adk-parallel-workflow",
+      "url": "https://adk.dev/agents/workflow-agents/parallel-agents/",
+      "checked_at": "2026-09-29T08:39:40.831237+00:00",
+      "health": {
+        "id": "adk-parallel-workflow",
+        "url": "https://adk.dev/agents/workflow-agents/parallel-agents/",
+        "checked_at": "2026-09-29T08:39:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://adk.dev/agents/workflow-agents/parallel-agents/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Agent Development Kit (ADK)",
+        "canonical_url": "https://adk.dev/agents/workflow-agents/parallel-agents/",
+        "duration_signals": [],
+        "signal_fingerprint": "d89b30a19c6dfcf8b5edf8d87d6354df2756ed779af35dabc19d1646643047ca",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://adk.dev/agents/workflow-agents/parallel-agents/",
+      "sha256": "551885887c7e2bbbd10e935df1114c7432fc91ace0dd64d5697dd157654bd165",
+      "text_characters": 27351
+    },
+    {
+      "id": "adk-security",
+      "url": "https://adk.dev/safety/",
+      "checked_at": "2026-09-29T08:39:42.170488+00:00",
+      "health": {
+        "id": "adk-security",
+        "url": "https://adk.dev/safety/",
+        "checked_at": "2026-09-29T08:39:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://adk.dev/safety/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Agent Development Kit (ADK)",
+        "canonical_url": "https://adk.dev/safety/",
+        "duration_signals": [],
+        "signal_fingerprint": "784045626bc67a02994803448e82118f6e754d36af1ab0c8d3123eb1b67ca735",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://adk.dev/safety/",
+      "sha256": "53b1eda4ab36c67906e4628103f662784717dfb7a5659a82e43af661146bac1a",
+      "text_characters": 29016
+    },
+    {
+      "id": "adk-eval-criteria",
+      "url": "https://adk.dev/evaluate/criteria/",
+      "checked_at": "2026-09-29T08:39:42.310145+00:00",
+      "health": {
+        "id": "adk-eval-criteria",
+        "url": "https://adk.dev/evaluate/criteria/",
+        "checked_at": "2026-09-29T08:39:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://adk.dev/evaluate/criteria/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Agent Development Kit (ADK)",
+        "canonical_url": "https://adk.dev/evaluate/criteria/",
+        "duration_signals": [],
+        "signal_fingerprint": "7f578541efbb71ac05126f040d8a4cde0a93642c98786da23efaee39aa02156c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://adk.dev/evaluate/criteria/",
+      "sha256": "f9d372d229e067d0025b10417a26f3e158754ee18fd545c1c860e2a8d721d9e4",
+      "text_characters": 35472
+    },
+    {
+      "id": "mcp-2026-authorization",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization",
+      "checked_at": "2026-09-29T08:39:42.452735+00:00",
+      "health": {
+        "id": "mcp-2026-authorization",
+        "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization",
+        "checked_at": "2026-09-29T08:39:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Authorization - Model Context Protocol",
+        "canonical_url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization",
+        "duration_signals": [],
+        "signal_fingerprint": "ba96dd7b403c7af8226748ad9290b405492b901890567e564fcdb5b57ef3f6ae",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization",
+      "sha256": "f7e40d3ecf97a5b6f08d146d84625ffcdcf36ac188f002b0a776a03a505c34a8",
+      "text_characters": 18832
+    },
+    {
+      "id": "google-paa-whizlabs",
+      "url": "https://www.whizlabs.com/google-cloud-professional-agentic-architect/",
+      "checked_at": "2026-09-29T08:39:43.014824+00:00",
+      "health": {
+        "id": "google-paa-whizlabs",
+        "url": "https://www.whizlabs.com/google-cloud-professional-agentic-architect/",
+        "checked_at": "2026-09-29T08:39:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/google-cloud-professional-agentic-architect/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Google Cloud Agentic Architect Course | Whizlabs",
+        "canonical_url": "https://www.whizlabs.com/google-cloud-professional-agentic-architect/",
+        "duration_signals": [],
+        "signal_fingerprint": "9d74748a5c882933d8f1484a17a2e3660687fc6c845b3486089e59ea8f0efa80",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/google-cloud-professional-agentic-architect/",
+      "sha256": "d9615eecf9a0c62828e05e73853410c213cfd204c8f6f8c708b3db20e6b06f4e",
+      "text_characters": 48
+    },
+    {
+      "id": "gcp-agent-identity",
+      "url": "https://docs.cloud.google.com/iam/docs/agent-identity-overview",
+      "checked_at": "2026-09-29T08:41:40.501237+00:00",
+      "health": {
+        "id": "gcp-agent-identity",
+        "url": "https://docs.cloud.google.com/iam/docs/agent-identity-overview",
+        "checked_at": "2026-09-29T08:41:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/iam/docs/agent-identity-overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Agent Identity overview | Identity and Access Management (IAM) | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/iam/docs/agent-identity-overview",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "24b48b7708e1791d040152d247ca2073fcaf555f76bee80a5b6ba5e635268170",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/iam/docs/agent-identity-overview",
+      "sha256": "acad47940f57fae8e4be236bedecaf710d30f4423a6d34ee06f00d1fba4d800f",
+      "text_characters": 13057
+    },
+    {
+      "id": "gcp-principal-boundary",
+      "url": "https://docs.cloud.google.com/iam/docs/principal-access-boundary-policies",
+      "checked_at": "2026-09-29T08:41:40.501850+00:00",
+      "health": {
+        "id": "gcp-principal-boundary",
+        "url": "https://docs.cloud.google.com/iam/docs/principal-access-boundary-policies",
+        "checked_at": "2026-09-29T08:41:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/iam/docs/principal-access-boundary-policies",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Principal access boundary policies | Identity and Access Management (IAM) | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/iam/docs/principal-access-boundary-policies",
+        "duration_signals": [],
+        "signal_fingerprint": "0754e28f96dfea9d0dc464d525998e9f0ef26d34cdb5af3c70f1faa63596ae4c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/iam/docs/principal-access-boundary-policies",
+      "sha256": "b98c4de6625a9722e300b7db81aa24ab56d0372447bc2bf7502363461b6f7ffd",
+      "text_characters": 28320
+    },
+    {
+      "id": "a2a-task-lifecycle",
+      "url": "https://a2a-protocol.org/latest/topics/life-of-a-task/",
+      "checked_at": "2026-09-29T08:41:40.502233+00:00",
+      "health": {
+        "id": "a2a-task-lifecycle",
+        "url": "https://a2a-protocol.org/latest/topics/life-of-a-task/",
+        "checked_at": "2026-09-29T08:41:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://a2a-protocol.org/latest/topics/life-of-a-task/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Life of a Task - A2A Protocol",
+        "canonical_url": "https://a2a-protocol.org/latest/topics/life-of-a-task/",
+        "duration_signals": [],
+        "signal_fingerprint": "ef56f98edfbcf015724872583b3be6a422175ea4157bade8f04f173eacabbe34",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://a2a-protocol.org/latest/topics/life-of-a-task/",
+      "sha256": "f58ad886646a52125b7ea47c1cb4ec818abd182c75934c9baa397a7f5e001d76",
+      "text_characters": 9808
+    },
+    {
+      "id": "gcp-agent-platform-zdr",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+      "checked_at": "2026-09-29T08:41:40.821629+00:00",
+      "health": {
+        "id": "gcp-agent-platform-zdr",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+        "checked_at": "2026-09-29T08:41:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Gemini Enterprise Agent Platform and zero data retention | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "baaf0ae91ac84fe199f2ebb68401f586dc906c8974aa457b7a588966c9acdb83",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+      "sha256": "d7a77396ece7086a73f589ea2c356d57953e605cf4d1b903d0628e7332d875e5",
+      "text_characters": 11687
+    },
+    {
+      "id": "gcp-search-identity-provider",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+      "checked_at": "2026-09-29T08:41:42.224598+00:00",
+      "health": {
+        "id": "gcp-search-identity-provider",
+        "url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+        "checked_at": "2026-09-29T08:41:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Configure identity provider | Gemini Enterprise | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+        "duration_signals": [],
+        "signal_fingerprint": "56662f2fa59d53e106df8c7f63e3c37687e8beda38ba77a384d0c3692c9e3f5e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+      "sha256": "ffd6a1521e65a334475f2ec2186912e2c62612fc233165860e2d96eee450aa6a",
+      "text_characters": 14157
+    },
+    {
+      "id": "gcp-gemini-enterprise-2026",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+      "checked_at": "2026-09-29T08:41:42.247081+00:00",
+      "health": {
+        "id": "gcp-gemini-enterprise-2026",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+        "checked_at": "2026-09-29T08:41:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "The new Gemini Enterprise: one platform for agent development | Google Cloud Blog",
+        "canonical_url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+        "duration_signals": [
+          "PT7M"
+        ],
+        "signal_fingerprint": "cc80068c1a73d07f059434e922cd0791ba9336f3af1086529f13625a8be13cb3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+      "sha256": "1ee7901b8ae4d539b06a245a7fb20ceeb1c1fad24e89c6d95d67a01e35c1b2bc",
+      "text_characters": 10678
+    },
+    {
+      "id": "gcp-model-armor-overview",
+      "url": "https://docs.cloud.google.com/model-armor/overview",
+      "checked_at": "2026-09-29T08:41:43.377841+00:00",
+      "health": {
+        "id": "gcp-model-armor-overview",
+        "url": "https://docs.cloud.google.com/model-armor/overview",
+        "checked_at": "2026-09-29T08:41:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/model-armor/overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Model Armor overview | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/model-armor/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "13534481a4842604f2f012904a5ee2f4142fb440ffd8c52a32ccc1b2f14d3965",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/model-armor/overview",
+      "sha256": "2a9e6b8fd4e403e99b055f3423f79ca64f08851274e13a87d51038cf3d82c2e8",
+      "text_characters": 26957
+    },
+    {
+      "id": "gcp-model-armor-integrations",
+      "url": "https://docs.cloud.google.com/model-armor/integrations",
+      "checked_at": "2026-09-29T08:41:43.457446+00:00",
+      "health": {
+        "id": "gcp-model-armor-integrations",
+        "url": "https://docs.cloud.google.com/model-armor/integrations",
+        "checked_at": "2026-09-29T08:41:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/model-armor/integrations",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Overview | Model Armor | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/model-armor/integrations",
+        "duration_signals": [],
+        "signal_fingerprint": "de6ac1041b92403b081f0e74ec0ca8656fc026d20e36b260804c12f123e2ce7d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/model-armor/integrations",
+      "sha256": "f43963b447ce6282b94f15a467eb43a169718857b123da506a36cb514b6151a6",
+      "text_characters": 13726
+    }
+  ],
+  "added_source_ids": [
+    "adk-action-confirmation",
+    "adk-session-state",
+    "adk-parallel-workflow",
+    "adk-security",
+    "adk-eval-criteria",
+    "mcp-2026-authorization",
+    "google-paa-whizlabs",
+    "gcp-agent-identity",
+    "gcp-principal-boundary",
+    "a2a-task-lifecycle"
+  ],
+  "findings": [
+    {
+      "id": "googleprofessionalagenticarchitect-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Preparation labs are not the certification assessment",
+      "url": "https://support.google.com/cloud-certification/answer/18080541?hl=en",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The FAQ says preparation is optional and qualifying assessment labs are separate; both components must pass.",
+      "recommendation": "Teach current windows, component-specific results, one-year validity and projected GA without treating training completion as certification.",
+      "disposition": "applied",
+      "source_id": "google-paa-beta-faq",
+      "resolution": "Teach current windows, component-specific results, one-year validity and projected GA without treating training completion as certification."
+    },
+    {
+      "id": "googleprofessionalagenticarchitect-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Capability digest changed only because of a FAQ pointer",
+      "url": "https://cloud.google.com/learn/certification/agentic-architect/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The saved unified diff adds one navigation sentence after the existing capability/two-part text.",
+      "recommendation": "Accept the inspected snapshot explicitly and retain before/after/diff receipts without claiming new exam objectives.",
+      "disposition": "applied",
+      "source_id": "google-paa-certification",
+      "resolution": "Accept the inspected snapshot explicitly and retain before/after/diff receipts without claiming new exam objectives."
+    },
+    {
+      "id": "googleprofessionalagenticarchitect-deep-3",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Blueprint and current low-code naming differ",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "September3entry confirms WorkflowBuilder GA,formerlyAgentDesigner.",
+      "recommendation": "Retain blueprint wording while naming the current product and mapping lifecycle concepts to actual tool capabilities.",
+      "disposition": "applied",
+      "source_id": "google-paa-gemini-enterprise-release-notes",
+      "resolution": "Retain blueprint wording while naming the current product and mapping lifecycle concepts to actual tool capabilities."
+    },
+    {
+      "id": "googleprofessionalagenticarchitect-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Experimental confirmation has session-service limitations",
+      "url": "https://adk.dev/tools-custom/confirmation/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Known limitations exclude DatabaseSessionService and VertexAiSessionService.",
+      "recommendation": "Require compatible version/backend and actual resume testing; a dialog is not evidence of durable production approval.",
+      "disposition": "applied",
+      "source_id": "adk-action-confirmation",
+      "resolution": "Require compatible version/backend and actual resume testing; a dialog is not evidence of durable production approval."
+    },
+    {
+      "id": "googleprofessionalagenticarchitect-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "State scope and persistence do not establish authority",
+      "url": "https://adk.dev/sessions/state/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "App state spans users; in-memory state is lost; retrieved-Session mutation bypasses tracked update flow.",
+      "recommendation": "Teach scoped data,tracked context/event updates and host-controlled authority outside model-writable state.",
+      "disposition": "applied",
+      "source_id": "adk-session-state",
+      "resolution": "Teach scoped data,tracked context/event updates and host-controlled authority outside model-writable state."
+    },
+    {
+      "id": "googleprofessionalagenticarchitect-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Parallel branches need explicit state and merge contracts",
+      "url": "https://adk.dev/agents/workflow-agents/parallel-agents/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Documentation warns about independent branches/shared-context races and newer2.0workflow alternatives.",
+      "recommendation": "Pin SDK/runtime and test synchronization,result ordering,merge and failure behavior.",
+      "disposition": "applied",
+      "source_id": "adk-parallel-workflow",
+      "resolution": "Pin SDK/runtime and test synchronization,result ordering,merge and failure behavior."
+    },
+    {
+      "id": "googleprofessionalagenticarchitect-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A required trajectory can coexist with an unsafe extra action",
+      "url": "https://adk.dev/evaluate/criteria/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "IN_ORDER and ANY_ORDER permit extras; word-overlap and semantic judges measure other properties.",
+      "recommendation": "Add forbidden-action/authorization gates and execute a separate trace counterexample.",
+      "disposition": "applied",
+      "source_id": "adk-eval-criteria",
+      "resolution": "Add forbidden-action/authorization gates and execute a separate trace counterexample."
+    },
+    {
+      "id": "googleprofessionalagenticarchitect-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Model tool arguments are not trusted authorization context",
+      "url": "https://adk.dev/safety/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "In-tool guidance separates model-proposed arguments from developer-controlled policy and per-tool authority.",
+      "recommendation": "Execute a synthetic bound-approval/current-access/resource-version/idempotency transaction with rollback tests; state its trusted-host limits.",
+      "disposition": "applied",
+      "source_id": "adk-security",
+      "resolution": "Execute a synthetic bound-approval/current-access/resource-version/idempotency transaction with rollback tests; state its trusted-host limits."
+    },
+    {
+      "id": "googleprofessionalagenticarchitect-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Protocol compatibility and delegated token audience are separate contracts",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current2026HTTPauthorization requires intended audience validation and prohibits token passthrough; stdio differs.",
+      "recommendation": "Pin protocol/SDK/transport, use correct receiving-resource tokens and bounded error handling; do not claim old examples prove current compliance.",
+      "disposition": "applied",
+      "source_id": "mcp-2026-authorization",
+      "resolution": "Pin protocol/SDK/transport, use correct receiving-resource tokens and bounded error handling; do not claim old examples prove current compliance."
+    },
+    {
+      "id": "googleprofessionalagenticarchitect-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A terminal task cannot simply restart for refinement",
+      "url": "https://a2a-protocol.org/latest/topics/life-of-a-task/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Task lifecycle defines terminal states and separate follow-up tasks linked by context/references.",
+      "recommendation": "Separate task identity,context continuity and accepted artifact version management.",
+      "disposition": "applied",
+      "source_id": "a2a-task-lifecycle",
+      "resolution": "Separate task identity,context continuity and accepted artifact version management."
+    },
+    {
+      "id": "googleprofessionalagenticarchitect-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Multiple PAB policies add eligible resources rather than intersecting them",
+      "url": "https://docs.cloud.google.com/iam/docs/principal-access-boundary-policies",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Eligible resource union and enforcement-version supported permissions govern blocking; eligibility doesnot grant access.",
+      "recommendation": "Review all applicable bindings,permission support and removal gaps before claiming resource exclusion.",
+      "disposition": "applied",
+      "source_id": "gcp-principal-boundary",
+      "resolution": "Review all applicable bindings,permission support and removal gaps before claiming resource exclusion."
+    },
+    {
+      "id": "googleprofessionalagenticarchitect-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Recreating an agent changes its principal and does not remove old bindings",
+      "url": "https://docs.cloud.google.com/iam/docs/agent-identity-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Identity follows resourceID; deletion leaves inactive IAM bindings and replacement requires new grants.",
+      "recommendation": "Add old-binding cleanup and new-principal least-privilege validation to deployment and retirement labs.",
+      "disposition": "applied",
+      "source_id": "gcp-agent-identity",
+      "resolution": "Add old-binding cleanup and new-principal least-privilege validation to deployment and retirement labs."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "gcp-gemini-enterprise-2026",
+      "authors": [
+        "Brian Delahunty",
+        "Michael Gerstenhaber"
+      ],
+      "published_on": "2026-04-22",
+      "disposition": "accepted-with-limits",
+      "value": "App/platform naming context.",
+      "limits": "Full article previously read in this session; current healthy refetch. Not exam scope or universal product guarantees."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "cloud_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 31,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "00d2a447dc087694b20509476319cfa072450c004f41654123ab1b729daba80c",
+      "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+      "execution_stdout": "31 local checks passed",
+      "transaction_and_validation_checks": 26,
+      "trace_comparisons": 5,
+      "execution_boundary": "Actual SQLite in-memory explicit transactions bind synthetic approval to trusted actor/tenant/request/version/expiry, current access, resource capacity and idempotent ledger; injected interruption rolls back updates. Separate required-subsequence/forbidden-extra trace fixture. No ADK/MCP/A2A/OAuth/LLM/cloud/network/payment/concurrency or crash durability.",
+      "cloud_cli_probe": "Prior same-session ACE gcloud-not-found-on-PATH observation reused; no runtime installation or authentication attempted."
+    }
+  },
+  "answered_checks": 52,
+  "limitations": [
+    "No live cloud, ADK runtime, model, MCP/A2A server/client, OAuth exchange, PAB/IAM policy, retrieval/memory, gateway, confirmation backend or deployment was executed. Eight framework/cloud labs remain proposed; independent human review remains pending.",
+    "Local31checks include26 SQLite transaction/validation assertions and5 trace comparisons. Single process/connection,in-memory synthetic capacity,closed after run; no concurrency,process-crash durability,persistent session or distributed/external exactly-once claim.",
+    "Actor/tenant tuple and administrative approval method are trusted harness inputs; the program doesnot authenticate users or protect an exposed approval API. No real approval/payment/action outside process memory was performed.",
+    "Replays return prior committed results after current access validation; the toy design doesnot implement external effect reconciliation or compensation. Required-subsequence matching is a separate original fixture,not ADK evaluation execution.",
+    "Actual4pagePDF fully read and tool list separately mapped. Objective digest change was an inspected FAQ-pointer addition; missing lifecycle baseline initialized. FAQ dates/projections require separate watch despite empty adapter announcements.",
+    "Product references read selectively with per-source notes. Skills durations unavailable,stale preparation copy,Whiz48-character shell; no paid interiors,assessment labs,proprietary questions or recalled beta items accessed. Editorial study budgets are not provider duration claims.",
+    "No installation,authentication,reboot,runtime/service configuration,external notification or credential change attempted; prior same-session gcloud absence evidence reused."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Actual SQLite in-memory explicit transactions bind synthetic approval to trusted actor/tenant/request/version/expiry, current access, resource capacity and idempotent ledger; injected interruption rolls back updates. Separate required-subsequence/forbidden-extra trace fixture. No ADK/MCP/A2A/OAuth/LLM/cloud/network/payment/concurrency or crash durability.",
+    "passed": 31,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "00d2a447dc087694b20509476319cfa072450c004f41654123ab1b729daba80c",
+    "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "execution_stdout": "31 local checks passed",
+    "transaction_and_validation_checks": 26,
+    "trace_comparisons": 5,
+    "cloud_cli_probe": "Prior same-session ACE gcloud-not-found-on-PATH observation reused; no runtime installation or authentication attempted.",
+    "learning_catalog_consistency": "passed"
+  },
+  "archived_prior_objective_snapshot": {
+    "path": "data/objective-snapshots/google-professional-agentic-architect-2026-09-02-official-objectives.txt",
+    "sha256": "eac2f3a291d2910ff1c9cd4968e04b84c9d3cf3d98b685e7b14135aca4804347",
+    "historical_audit_paths_updated": [
+      "pilot-2026-09-04",
+      "cross-vendor-diverse-2026-09-06",
+      "google-ccna-repair-verification-2026-09-06"
+    ],
+    "restored_review_dates": [
+      "2026-09-02",
+      "2026-09-06"
+    ],
+    "original_review_recovery_commit": "8d15846",
+    "note": "Byte-identical prior snapshot. Historical reviews recovered from real prior records/git; hashes, dates, checks, findings and conclusions preserved. Only their snapshot paths point to the archive. Current review has a new dated ID."
+  },
+  "actual_pdf_receipts": [
+    {
+      "id": "google-paa-exam-guide",
+      "url": "https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf",
+      "checked_at": "2026-09-29T08:36:56.963267+00:00",
+      "health": {
+        "id": "google-paa-exam-guide",
+        "url": "https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf",
+        "checked_at": "2026-09-29T08:36:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf",
+      "sha256": "70214d7d67303884823f8129b6cdfa06b296d88a8d86906453180dceabd1cc01",
+      "bytes": 149776,
+      "pdf_pages": 4,
+      "text_characters": 7629
+    }
+  ],
+  "accepted_objective_and_lifecycle_observation": {
+    "changed": [
+      "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
+        "title": "Professional Agentic Architect",
+        "url": "https://cloud.google.com/learn/certification/agentic-architect/",
+        "guide_path": "guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md",
+        "snapshot_path": "data\\objective-snapshots\\google-professional-agentic-architect-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\google-professional-agentic-architect-official-status.json",
+        "previous_sha256": "eac2f3a291d2910ff1c9cd4968e04b84c9d3cf3d98b685e7b14135aca4804347",
+        "current_sha256": "aa5ecd4d30563ca83afd658687695bce86b296d9d5712a63ae5669eb67a955e0",
+        "previous_status_sha256": null,
+        "current_status_sha256": "b878755ce38aab9904c2018c54a447081b905dcfbdf5cbf87e685e85a643ce2a",
+        "official_status": {
+          "skills_versions": [
+            "Length: 3 hours",
+            "Registration fee: $120 (40% discount on retail price of $200",
+            "Language: English",
+            "Exam format: ~80 multiple choice questions",
+            "Exam delivery method: Online-proctored or onsite-proctored",
+            "Validity period: 1 year",
+            "Prerequisites: None",
+            "Recommended experience: 3+ years of hands-on experience"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ]
+  },
+  "post_acceptance_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
+        "title": "Professional Agentic Architect",
+        "url": "https://cloud.google.com/learn/certification/agentic-architect/",
+        "guide_path": "guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md",
+        "snapshot_path": "data\\objective-snapshots\\google-professional-agentic-architect-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\google-professional-agentic-architect-official-status.json",
+        "previous_sha256": "aa5ecd4d30563ca83afd658687695bce86b296d9d5712a63ae5669eb67a955e0",
+        "current_sha256": "aa5ecd4d30563ca83afd658687695bce86b296d9d5712a63ae5669eb67a955e0",
+        "previous_status_sha256": "b878755ce38aab9904c2018c54a447081b905dcfbdf5cbf87e685e85a643ce2a",
+        "current_status_sha256": "b878755ce38aab9904c2018c54a447081b905dcfbdf5cbf87e685e85a643ce2a",
+        "official_status": {
+          "skills_versions": [
+            "Length: 3 hours",
+            "Registration fee: $120 (40% discount on retail price of $200",
+            "Language: English",
+            "Exam format: ~80 multiple choice questions",
+            "Exam delivery method: Online-proctored or onsite-proctored",
+            "Validity period: 1 year",
+            "Prerequisites: None",
+            "Recommended experience: 3+ years of hands-on experience"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "objective_diff": "--- before\n+++ observed\n@@ -11,3 +11,4 @@\n design choices, and architectural standards delivered by Pearson\n Hands-on labs to validate hands-on execution and coding ability taken in\n Google Skills\n+Click \"View FAQs\" below for more information about this beta exam.\n",
+  "separate_blueprint_tool_scope_mapping": [
+    {
+      "tool": "Agent Development Kit (ADK)",
+      "guide_sections": [
+        "2. Coding agents — about 17%",
+        "3. Custom agents — about 33%",
+        "4. Evaluate and deploy — about 22%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Agent evaluation",
+      "guide_sections": [
+        "2. Coding agents — about 17%",
+        "3. Custom agents — about 33%",
+        "4. Evaluate and deploy — about 22%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Agent Gateway",
+      "guide_sections": [
+        "5. Secure and govern — about 15%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Agent Identity",
+      "guide_sections": [
+        "5. Secure and govern — about 15%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Agent Registry",
+      "guide_sections": [
+        "5. Secure and govern — about 15%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Agent Retrieval and Vector Search 1.0",
+      "guide_sections": [
+        "3. Custom agents — about 33%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Agent Runtime (formerly Agent Engine)",
+      "guide_sections": [
+        "4. Evaluate and deploy — about 22%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Agent Search (formerly Vertex AI Search)",
+      "guide_sections": [
+        "3. Custom agents — about 33%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Agentic protocols (e.g., Agent2Agent [A2A], MCP)",
+      "guide_sections": [
+        "3. Custom agents — about 33%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Agents CLI in Agent Platform",
+      "guide_sections": [
+        "2. Coding agents — about 17%",
+        "3. Custom agents — about 33%",
+        "4. Evaluate and deploy — about 22%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Antigravity (CLI, SDK, App)",
+      "guide_sections": [
+        "2. Coding agents — about 17%",
+        "3. Custom agents — about 33%",
+        "4. Evaluate and deploy — about 22%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Auth Manager (OAuth 2.0)",
+      "guide_sections": [
+        "5. Secure and govern — about 15%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "BigQuery",
+      "guide_sections": [
+        "Blueprint-named data, model, and observability services"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Cloud Run",
+      "guide_sections": [
+        "4. Evaluate and deploy — about 22%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Cloud SQL",
+      "guide_sections": [
+        "Blueprint-named data, model, and observability services"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Cloud Storage",
+      "guide_sections": [
+        "Blueprint-named data, model, and observability services"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Firestore",
+      "guide_sections": [
+        "Blueprint-named data, model, and observability services"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Gemini Enterprise",
+      "guide_sections": [
+        "1. Low-code agents — about 13%",
+        "3. Custom agents — about 33%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Gemini LLMs",
+      "guide_sections": [
+        "1. Low-code agents — about 13%",
+        "3. Custom agents — about 33%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Google Cloud Observability (Cloud Logging and Cloud Trace)",
+      "guide_sections": [
+        "4. Evaluate and deploy — about 22%",
+        "5. Secure and govern — about 15%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Google Kubernetes Engine (GKE)",
+      "guide_sections": [
+        "4. Evaluate and deploy — about 22%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Memorystore for Redis",
+      "guide_sections": [
+        "Blueprint-named data, model, and observability services"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Model Armor",
+      "guide_sections": [
+        "4. Evaluate and deploy — about 22%",
+        "5. Secure and govern — about 15%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Model Context Protocol (MCP) servers",
+      "guide_sections": [
+        "3. Custom agents — about 33%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Model Garden",
+      "guide_sections": [
+        "1. Low-code agents — about 13%",
+        "3. Custom agents — about 33%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "RAG Engine",
+      "guide_sections": [
+        "3. Custom agents — about 33%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Sensitive Data Protection",
+      "guide_sections": [
+        "4. Evaluate and deploy — about 22%",
+        "5. Secure and govern — about 15%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    },
+    {
+      "tool": "Skill Registry",
+      "guide_sections": [
+        "2. Coding agents — about 17%",
+        "3. Custom agents — about 33%",
+        "4. Evaluate and deploy — about 22%"
+      ],
+      "evidence": "Public explanation and proposed lab coverage; no product execution claimed."
+    }
+  ]
+}
