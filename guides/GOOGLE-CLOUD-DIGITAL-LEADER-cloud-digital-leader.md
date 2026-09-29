@@ -6,24 +6,24 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-09-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-09-29
 ---
 
 # Google Cloud Digital Leader Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 2, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#google-cloud-digital-leader-coverage-record). The [official exam guide](https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 29, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#google-cloud-digital-leader-coverage-record). The [official exam guide](https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf) is authoritative.
 
-**Current baseline:** Exam guide launched August 12, 2026; six domains weighted 18%, 18%, 18%, 18%, 18%, and 10%<br>
-**Upcoming blueprint change:** None announced after the August 12 version launch as of September 2, 2026.<br>
+**CURRENT BLUEPRINT — current baseline:** Exam guide launched August 12, 2026; six domains weighted 18%, 18%, 18%, 18%, 18%, and 10%<br>
+**Upcoming blueprint change:** None announced after the August 12 version launch as of September 29, 2026.<br>
 **Official source:** [Cloud Digital Leader certification and delivery page](https://cloud.google.com/learn/certification/cloud-digital-leader) · [August 12, 2026 exam guide](https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf)
 
 ## How to use this guide
 
 Cloud Digital Leader is a business-and-technology literacy certification, not a console-administration test. Learn to turn a requirement into a service category or operating decision: identify the outcome, data shape, control boundary, availability need, skill level, and cost behavior; choose the best fit; explain why a neighboring choice is weaker; and name what the customer still owns.
 
-The standard exam is currently 90 minutes, USD 99 before applicable tax or regional differences, and 50–60 multiple-choice or multiple-select questions. It has no prerequisite, is available in five languages, can be delivered online or at a test center, and is valid for three years. Google also publishes a shorter renewal exam and a designated-learning renewal option for eligible active holders. Verify the [live certification page](https://cloud.google.com/learn/certification/cloud-digital-leader) before scheduling.
+The standard exam is currently 90 minutes, USD 99 before applicable tax or regional differences, and 50–60 multiple-choice or multiple-select questions. It has no prerequisite, is available in five languages, can be delivered online or at a test center, and is valid for three years. Google also publishes a 45-minute, 20-question renewal exam in English/Japanese, currently USD 60 before tax, with three-year validity. Eligible active holders can instead complete designated Google Skills courses or badges in the final year of their active certification for a **one-year** renewal; link the required certification and learning accounts. These routes have different eligibility and validity periods. **VERIFY CURRENT** before choosing a route. Verify the [live certification page](https://cloud.google.com/learn/certification/cloud-digital-leader) before scheduling.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
@@ -38,6 +38,8 @@ The standard exam is currently 90 minutes, USD 99 before applicable tax or regio
 | Trust and Security with Google Cloud | ~18% | How do shared responsibility, identity, layered controls, SecOps, and trust evidence reduce risk? |
 | Scaling with Google Cloud Operations | ~10% | How are cost, reliability, observability, and service commitments governed at scale? |
 
+The full seven-page PDF contains 69 detailed considerations across 14 numbered objectives, distributed 8/14/12/10/15/10 across the six domains. The objective and lifecycle monitor hashes are unchanged on September 29; no accepted snapshot was replaced.
+
 The August 12 version adds or strengthens agentic AI, Gemini Enterprise Agent Platform, AI Hypercomputer, AlloyDB, Managed Service for Apache Spark, current hybrid/multicloud services, AI-stack security, Google Threat Intelligence, Security Command Center, Google Security Operations, AI Protection, Model Armor, and concrete observability and cost-control examples. Material written for the older six-domain guide needs a line-by-line gap check.
 
 ---
@@ -48,7 +50,7 @@ The August 12 version adds or strengthens agentic AI, Gemini Enterprise Agent Pl
 
 Digital transformation changes a product, process, culture, or customer experience with digital capabilities. Merely moving the same server does not guarantee transformation. Start with a measurable constraint—release lead time, regional latency, abandoned transactions, fraud losses, recovery time, analyst wait time, or infrastructure overhead—and trace technology to an outcome and an owner.
 
-Cloud replaces long hardware acquisition cycles with on-demand, API-addressable resources. It can improve speed, flexibility, scalability, global reach, availability, and access to managed data and AI services. It can also accelerate waste and misconfiguration. A persuasive business case includes adoption and operating skills, connectivity, migration, security, data governance, change management, exit considerations, and ongoing cost—not just the provider rate card.
+Cloud replaces long hardware acquisition cycles with on-demand, API-addressable resources. It can improve speed, flexibility, scalability, global reach, availability, and access to managed data and AI services. It can also accelerate waste and misconfiguration. The cost of doing nothing also belongs in the comparison: slow releases, fragmented customer data, integration work, and unsupported systems can erode outcomes. A private cloud is dedicated to one organization and can be hosted by a third party; it is not synonymous with an on-premises building. A persuasive business case includes adoption and operating skills, connectivity, migration, security, data governance, change management, exit considerations, and ongoing cost—not just the provider rate card.
 
 | Concept | Meaning | Good evidence | Common mistake |
 |---|---|---|---|
@@ -110,7 +112,11 @@ First-party data comes directly from the organization’s relationships and syst
 | Firestore | Serverless document database | Mobile/web/server document state and flexible scaling | Document modeling still determines query behavior and cost |
 | BigQuery | Serverless analytical warehouse | Large-scale SQL analysis without managing clusters | It is not a general OLTP replacement |
 
-Standard Cloud Storage is for frequently accessed objects. Nearline, Coldline, and Archive exchange lower storage price for access/retrieval constraints suited to progressively colder data. Autoclass manages class movement based on observed access. Choose from measured access, minimum-storage and retrieval behavior, recovery objectives, and legal retention—not the class name alone.
+**PRACTICAL DEPTH:** SQL is a language; relational and document describe data models. “NoSQL” does not imply that every read is eventually consistent or that transactions are impossible. For example, [Firestore documents strongly consistent default reads and ACID writes](https://docs.cloud.google.com/firestore/native/docs/understand-reads-writes-scale). Verify the selected product's operation and consistency mode instead of inferring them from the category.
+
+Standard Cloud Storage is for frequently accessed objects. Nearline, Coldline, and Archive exchange lower storage price for access/retrieval constraints suited to progressively colder data. [Archive is online storage](https://docs.cloud.google.com/storage/docs/storage-classes), with low-latency access rather than a mandatory hours-long restore queue. Nearline/Coldline/Archive have 30/90/365-day minimum storage durations for billing, respectively; these are not retention locks. Changing a bucket's default class does not rewrite existing objects. Choose from access, retrieval and operation cost, availability, retention and recovery requirements.
+
+[Autoclass](https://docs.cloud.google.com/storage/docs/autoclass) is an automatic management feature, not a fifth class. It defaults to Nearline as its terminal class unless configured for Archive. Objects smaller than 128 KiB remain Standard; reading object data moves eligible objects back to Standard, while reading metadata does not. Its pricing has management/enablement charges and different retrieval/early-deletion treatment. **VERIFY CURRENT** instead of applying ordinary cold-class fees unchanged. These details support a decision; they do not establish an exam question or a universal cheapest option.
 
 ### Turn data into decisions
 
@@ -141,7 +147,9 @@ Data quality includes completeness, uniqueness, timeliness, validity, accuracy, 
 | AutoML / managed customization | Curated data and ML evaluation needed | Domain-specific behavior without full model engineering | A supported task benefits from organization data |
 | Custom model | Most data, talent, compute, MLOps, and risk | Highest potential control/differentiation | Requirements cannot be met responsibly by a simpler option |
 
-The current blueprint names Gemini Enterprise Agent Platform for discovering, creating, sharing, and governing enterprise agents, with Agent Studio/AutoML examples; product naming and availability are volatile. Verify the [current certification resources](https://cloud.google.com/learn/certification/cloud-digital-leader) and product documentation when studying. BigQuery ML lets SQL users build and run supported models near BigQuery data. Pretrained Vision, Translation, Speech-to-Text, Text-to-Speech, Gemini, and agent-platform interfaces shorten implementation for common capabilities.
+The current blueprint names Gemini Enterprise Agent Platform with Agent Studio/AutoML examples. Distinguish the [developer platform](https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview), which supports building, deploying, governing and improving agents and model solutions, from the [Gemini Enterprise app](https://docs.cloud.google.com/gemini/enterprise/docs), which gives employees search, assistance and access to agents through connected enterprise information. Agent Studio workflow construction and grounding do not necessarily train new model weights. Identify the actual method: prebuilt use, prompt/context engineering, tuning or training.
+
+Google's [April 22 announcement](https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development) describes Agent Platform as an evolution of Vertex AI and the app as the employee interface. It provides naming context, not proof that every advertised capability is enabled, generally available or in scope for every customer. Product names, editions, regions and availability remain **VERIFY CURRENT**. BigQuery ML lets SQL users build and run supported models near BigQuery data. Pretrained Vision, Translation, Speech-to-Text, Text-to-Speech, Gemini, and agent-platform interfaces shorten implementation for common capabilities.
 
 AI Hypercomputer combines accelerators such as GPUs and TPUs, systems, storage/networking, orchestration, and software optimized for AI workloads. It is a platform architecture, not just a chip. Match workload, framework, scale, availability, time-to-result, utilization, and consumption model; expensive capacity that sits idle or cannot feed data efficiently is not optimized.
 
@@ -172,11 +180,11 @@ Discovery and assessment establish business owner, users, dependencies, data, pe
 
 ### Compute choice is an ownership choice
 
-Compute Engine offers virtual machines and OS-level flexibility; the customer owns more guest lifecycle and configuration. GKE orchestrates containers with Kubernetes and provides portability and scheduling/control primitives; teams still need container, cluster, workload, network, policy, and observability skills. Cloud Run runs stateless request- or event-driven containers with less infrastructure management. Cloud Run functions—the current name for Cloud Functions (2nd gen)—provides function-oriented source deployment on Cloud Run. Managed does not mean ungoverned or maintenance-free.
+Compute Engine offers virtual machines and OS-level flexibility; the customer owns more guest lifecycle and configuration. GKE orchestrates containers with Kubernetes and provides portability and scheduling/control primitives; teams still need container, cluster, workload, network, policy, and observability skills. Cloud Run is a managed application platform with several execution forms. Its services handle requests/events; jobs run work to completion. **PRACTICAL DEPTH — VERIFY CURRENT:** the [current overview](https://docs.cloud.google.com/run/docs/overview/what-is-cloud-run) also describes worker pools for continuous background processing and instances for long-lived singleton workloads. These extra forms are product context, not new exam objectives. Do not apply service autoscaling assumptions to worker pools: they require manual sizing or separately configured external-metric autoscaling. Disposable local container files are not durable business storage. Cloud Run functions—the current name for Cloud Functions (2nd gen)—provides function-oriented source deployment on Cloud Run. Managed does not mean ungoverned or maintenance-free.
 
-Containers package applications and dependencies while sharing a host kernel; VMs virtualize a fuller machine including guest OS. Microservices can enable independent delivery and scaling, but create distributed identity, network, data-consistency, observability, and ownership problems. A well-operated modular monolith can be better than poorly owned microservices.
+Load balancing distributes requests among backends; autoscaling changes capacity. Neither by itself fixes an unhealthy backend, unsafe retry, data bottleneck or missing recovery plan. Containers package applications and dependencies while sharing a host kernel; VMs virtualize a fuller machine including guest OS. Microservices can enable independent delivery and scaling, but create distributed identity, network, data-consistency, observability, and ownership problems. A well-operated modular monolith can be better than poorly owned microservices.
 
-The current exam guide uses GKE Enterprise and specific portable/hybrid services such as AlloyDB Omni, BigQuery Omni, Cloud SQL, and Looker. Older preparation may say Anthos. Google introduced GKE Enterprise as an integrated evolution of GKE and Anthos, and later consolidated GKE commercial packaging. Learn the objective’s current service examples; treat older Anthos material as historical context and **VERIFY CURRENT** rather than as the present product map.
+The current exam guide uses GKE Enterprise and specific portable/hybrid services such as AlloyDB Omni, BigQuery Omni, Cloud SQL, and Looker. Older preparation may say Anthos. Google introduced GKE Enterprise as an integrated evolution of GKE and Anthos, and later consolidated GKE commercial packaging. Learn the objective’s current service examples; treat older Anthos material as historical context and **VERIFY CURRENT** rather than as the present product map. “Supports a hybrid use case” does not mean “install the managed service anywhere.” For example, an external application can [connect to a Cloud SQL instance](https://docs.cloud.google.com/sql/docs/postgres/connect-overview) through an appropriate network and authentication path; this does not move the managed database control plane onto that application's premises. Separate client location, data location and service deployment.
 
 ### APIs create a governed product boundary
 
@@ -201,11 +209,15 @@ Zero trust means no request is trusted merely because of network location. Evalu
 | Misconfiguration | Organization policy, secure defaults/templates, review, Security Command Center findings, and remediation ownership |
 | Ransomware/data destruction | Least privilege, segmentation, protected immutable/independent backups, detection, tested recovery |
 | Data leakage | Classification, IAM, Sensitive Data Protection, encryption, egress controls, logs and response |
+| Unauthorized cryptomining or compromised dependency | Workload identity limits, trusted dependency handling, resource/cost anomaly detection, containment and recovery |
+| Physical damage or upstream supplier failure | Failure-domain design, supplier/dependency review, independent recovery and tested continuity |
 | LLM/prompt attack | Trusted inputs, isolation, Model Armor/application controls, narrow tools/identity, evaluation, monitoring and approval |
 
 Google’s secure-by-design infrastructure and defense in depth cover facilities, purpose-built servers/networking, hardware/software, service platforms, and operations. Customer design must add workload, identity, data, application, and process controls. The current blueprint highlights security across the AI stack— infrastructure, data, models, platform, and agents.
 
-Google Threat Intelligence combines Google visibility, Mandiant frontline expertise, and VirusTotal community signals. Security Command Center identifies and prioritizes cloud risk and misconfiguration. Google Security Operations ingests and analyzes security telemetry for detection and response. Gemini assistance can accelerate investigation, but analysts must validate evidence and authorized actions. AI Protection and Model Armor address AI-focused risk at different layers; their capabilities and availability are volatile, so verify current documentation rather than memorizing marketing labels.
+Google Threat Intelligence combines Google visibility, Mandiant frontline expertise, and VirusTotal community signals. Security Command Center identifies and prioritizes cloud risk and misconfiguration. Google Security Operations ingests and analyzes security telemetry for detection and response. Gemini assistance can accelerate investigation, but analysts must validate evidence and authorized actions. [AI Protection](https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview) adds AI asset, posture and threat visibility within Security Command Center. Its coverage depends on activation scope and service tier; a project activation does not establish organization-wide coverage.
+
+[Model Armor](https://docs.cloud.google.com/model-armor/overview) evaluates prompts and responses. **Inspect only** records detections without stopping processing; **inspect and block** requires the calling integration or policy enforcement point to honor the block verdict. An LLM's own refusal is not evidence that Model Armor blocked anything. Test an allowed control, a detected case and actual downstream behavior; inspect the relevant logs. [Integration coverage](https://docs.cloud.google.com/model-armor/integrations) also varies by modality and path: direct API support does not prove that a particular inline integration screens images or documents. None of these controls grants an agent permission to perform a transaction.
 
 Cloud VPC, VPN, Interconnect, firewalls, Armor, Logging, IAM, Sensitive Data Protection, Confidential Computing, Certificate Manager, and Identity-Aware Proxy solve different network, identity, data, cryptographic, and access problems. Ask which asset, path, threat, trust boundary, and evidence requirement is present.
 
@@ -223,9 +235,13 @@ Transparency reports, independent audits, certifications, contracts, and complia
 
 Cloud shifts some capital expenditure toward variable operating expenditure, but TCO includes people, migration, network, support, licensing, downtime risk, security, and exit—not only resource price. Assign ownership, establish budgets and allocation, label/tag where appropriate, expose unit cost, review anomalies, forecast demand, and optimize without damaging reliability or delivery.
 
-The Google Cloud resource hierarchy is organization → folders → projects → resources. Policy and access can inherit downward, enabling consistent governance, but a broad grant high in the hierarchy can create broad impact. Projects are important policy, billing, and quota boundaries; design them for ownership and lifecycle rather than treating one project as the whole enterprise.
+The Google Cloud resource hierarchy is organization → folders → projects → resources. [IAM allow policies accumulate down the hierarchy](https://docs.cloud.google.com/iam/docs/resource-hierarchy-access-control): a narrower child allow grant does not subtract an inherited grant. Review the parent grant and any applicable deny policies rather than treating a child Viewer assignment as removal of inherited Editor access. Organization policy and IAM answer different questions; constraint configuration is not itself an allow grant. Projects are important policy, billing, and quota boundaries; design them for ownership and lifecycle rather than treating one project as the whole enterprise.
 
-Quotas constrain resource consumption and protect service/platform capacity; they are not spending guarantees. Budgets and thresholds notify or trigger configured workflows; a budget by itself does not normally stop usage. Billing reports expose cost trends. Spot VMs trade interruption for lower price. Dynamic Workload Scheduler coordinates certain accelerator capacity/workloads. Select cost controls based on workload interruptibility, forecast, commitment, and service objective.
+[Quotas](https://docs.cloud.google.com/docs/quotas/overview) constrain a particular allocation, rate or concurrent operation; their scope may be project, folder, organization, user or location dependent. They are not currency limits or guaranteed capacity. [Alerts-only budgets](https://docs.cloud.google.com/billing/docs/how-to/budgets) notify or invoke configured workflows and do not stop usage. Reporting and notification delays mean a late alert is not a safe spending boundary; distinguish actual recorded cost from a forecast.
+
+**PRACTICAL DEPTH — VERIFY CURRENT:** [spend cap budgets](https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps) are a separate **preview** feature. They use estimated gross cost and currently cover one project, one eligible service and a monthly period. The eligible list includes Gemini API, Agent Platform, Cloud Run and Cloud Run functions. Exceeding the cap pauses new usage for that service; in-flight requests and ongoing fixed-resource costs can continue, enforcement is not instant, and overages remain billable. Restoring access requires manually lifting the cap. This is not an account-wide exact maximum or an instruction to disable production. No cap or alert is configured by this guide.
+
+Spot VMs trade interruption for lower price. [DWS Flex-start](https://docs.cloud.google.com/compute/docs/instances/about-flex-start-vms) instead accepts a capacity wait and bounded run duration; a request can fail if capacity does not arrive in its window. [Calendar-mode billing](https://cloud.google.com/products/dws/pricing) charges the reserved duration, while Flex-start billing is usage based. The pricing page announces November 2026 changes; memorize the tradeoff, not a rate. Choose controls based on start-time tolerance, interruption tolerance, commitment, ownership and service objectives.
 
 ### Reliability is an observed system property
 
@@ -238,6 +254,107 @@ An SLI measures service behavior, an SLO is the team’s target, and an SLA is a
 > **Related item:** Observability provides evidence from which internal state can be inferred; monitoring checks known conditions. More telemetry is not automatically more observable if it lacks context, correlation, retention, access, or an owner who can act.
 
 ---
+
+### Decision worksheet: a lower bill can conceal a worse outcome
+
+**PRACTICAL DEPTH — executed locally:** this original standard-library Python worksheet makes no cloud calls. It checks weighted request evidence, an explicit successful-and-fast user population, unit cost, a simple assumed forecast and delayed/scoped cost signals. It is not Google's SLO evaluator, forecast engine or spend-cap implementation. The [SLO concepts](https://docs.cloud.google.com/stackdriver/docs/solutions/slo-monitoring) explain why the event definition, denominator, target and compliance period must be explicit.
+
+Save as `decision_workbook.py` and run `python decision_workbook.py`.
+
+```python
+"""Original offline arithmetic; not a Google Cloud API or billing simulator."""
+from decimal import Decimal as D
+from fractions import Fraction as F
+
+
+def request_slo(good, total, goal):
+    if not isinstance(good, int) or not isinstance(total, int):
+        raise ValueError("Event counts must be integers")
+    if total <= 0 or good < 0 or good > total or not 0 < goal <= 1:
+        raise ValueError("Need valid counts, nonempty evidence and a valid goal")
+    allowed_bad = (1 - goal) * total
+    return F(good, total), allowed_bad, allowed_bad - (total - good)
+
+
+def run():
+    checks = 0
+
+    def check(condition):
+        nonlocal checks
+        if not condition:
+            raise AssertionError("Decision worksheet mismatch")
+        checks += 1
+
+    # Two cohorts have very different traffic volumes.
+    cohorts = [(990, 1000), (10, 10)]
+    good = sum(g for g, _ in cohorts)
+    total = sum(t for _, t in cohorts)
+    sli, allowance, remaining = request_slo(good, total, F(995, 1000))
+    naive_average = sum(F(g, t) for g, t in cohorts) / len(cohorts)
+    check((good, total) == (1000, 1010))
+    check(sli == F(100, 101))
+    check(naive_average == F(995, 1000))
+    check(sli < F(995, 1000) <= naive_average)
+    check(allowance == F(101, 20))
+    check(remaining == F(-99, 20))
+    check(request_slo(good, total, F(99, 100))[2] == F(1, 10))
+    check(request_slo(total, total, F(1))[2] == 0)
+    for arguments in [(0, 0, F(99, 100)), (3, 2, F(99, 100)),
+                      (-1, 2, F(99, 100)), (1, 2, F(0))]:
+        try:
+            request_slo(*arguments)
+        except ValueError:
+            check(True)
+        else:
+            raise AssertionError("Invalid evidence was accepted")
+
+    # Define the population and goodness rule before looking at the result.
+    # Columns: purpose, application success, elapsed milliseconds.
+    events = [('user', True, 100), ('user', True, 400),
+              ('user', False, 50), ('user', True, 180),
+              ('probe', True, 100)]
+    eligible = [e for e in events if e[0] == 'user']
+    good_latency = sum(success and ms < 200 for _, success, ms in eligible)
+    check(len(eligible) == 4)
+    check(good_latency == 2)
+    check(F(good_latency, len(eligible)) == F(1, 2))
+    check(F(good_latency, sum(success for _, success, _ in eligible)) == F(2, 3))
+
+    # Synthetic costs only; no price estimate, invoice or provider forecast.
+    old_cost, new_cost = D('2500'), D('2200')
+    old_orders, new_orders = 10000, 8000
+    check((old_cost - new_cost) / old_cost == D('0.12'))
+    check(old_cost / old_orders == D('0.25'))
+    check(new_cost / new_orders == D('0.275'))
+    check((new_cost / new_orders) / (old_cost / old_orders) - 1 == D('0.10'))
+    # Simple straight-line extrapolation is our assumption, not Google's model.
+    recorded, elapsed_days, month_days, budget = D('600'), 15, 30, D('1000')
+    forecast = recorded / elapsed_days * month_days
+    check(recorded < budget < forecast)
+    check(forecast == D('1200'))
+    # Delayed records can hide a threshold crossing.
+    posted, unposted = D('780'), D('300')
+    check(posted < budget * D('0.80'))
+    check(posted + unposted > budget)
+    # A scoped pause does not erase in-flight or unrelated fixed charges.
+    trigger_cost, in_flight, fixed = D('1010'), D('65'), D('30')
+    check(trigger_cost + in_flight + fixed == D('1105'))
+    check(trigger_cost + in_flight + fixed > budget)
+
+    print(f'{checks} local checks passed')
+    print('SLI = 100/101; 99.5% target missed; remaining budget = -4.95 requests')
+    print('Successful-and-fast user events = 2/4; lower total cost, higher unit cost')
+    print('Synthetic forecast = 1200; posted plus unposted = 1080; cap case = 1105')
+    return checks
+
+
+if __name__ == '__main__':
+    run()
+```
+
+Expected: **26 local checks pass**. Averaging the two cohort percentages suggests 99.5%, while combining their request counts gives about 99.01% and fails that target. The fractional error allowance is an arithmetic budget, not permission to serve a fractional request. Excluding failed user requests from the latency denominator inflates the result. A 12% lower bill accompanies a 10% higher cost per completed order; that may reflect lower demand or degraded throughput and needs investigation. The synthetic cost examples show why an alert, forecast and scoped pause answer different questions.
+
+Change one count, goal or business denominator, predict the result, and explain the effect before rerunning. Empty evidence is rejected rather than reported as 100% success. Request-based evidence must not be converted directly into allowed downtime minutes.
 
 ## Integrated scenarios
 
@@ -255,7 +372,7 @@ Create an organization/folder/project model aligned to ownership and environment
 
 ## Hands-on labs
 
-Use a disposable account or authorized sandbox, budgets, least privilege, and cleanup evidence. Labs build understanding; the exam does not require administrative performance.
+These eight activities are **proposed decision labs**. The 26-check worksheet above was executed locally; no Google Cloud resource, IAM policy, model, budget, notification or billing control was changed. Start with fictional data and written evidence. If extending into an authorized cloud sandbox, define cost limits, permissions and cleanup before creating resources. The exam does not require administrative performance.
 
 1. **Outcome map:** choose a real process and write outcome, baseline, users, data, risks, cloud capability, owner, measure, and stop condition; challenge whether it is transformation or hosting.
 2. **Global infrastructure:** map two regions, their zones, edge path, expected latency/residency constraints, zonal design and regional recovery; identify what the provider does not solve.
@@ -265,6 +382,19 @@ Use a disposable account or authorized sandbox, budgets, least privilege, and cl
 6. **Compute modernization:** place six workloads on Compute Engine, GKE, Cloud Run or Cloud Run functions; include migration path, state, scaling, identity, network, observability, recovery, cost and portability.
 7. **Security walkthrough:** threat-model one application across identity, data, model/agent, application, network, infrastructure and operations; map preventive, detective and recovery controls, then test one denied path.
 8. **Operations capstone:** create a mock hierarchy, IAM matrix, budget/quota plan, four-golden-signal dashboard design, SLI/SLO/SLA distinctions, RPO/RTO exercise and executive outcome report.
+
+| Lab | Evidence required to call the decision complete | Negative case to explain |
+|---|---|---|
+| 1 | Before/after outcome, denominator, accountable owner, adoption cost and stop criterion | A lower monthly bill with higher cost per completed order |
+| 2 | Dependency map, zonal loss path, regional recovery source, identity and residency assumptions | Two replicas sharing the same failure domain or an untested restore |
+| 3 | Ten workload rows with access pattern, consistency, transactions, retention and rejected alternative | NoSQL assumed to mean eventual reads; Archive assumed to require offline rehydration |
+| 4 | Event identity, validation/quarantine, replay and late-arrival rules, freshness target and action owner | Duplicate business action even when each delivery was successfully processed |
+| 5 | Business baseline, representative evaluation set, permitted tools, human escalation and rollback decision | Good model answers paired with unauthorized tool actions or wrong retrieval |
+| 6 | Six workload decisions with execution form, state, scaling, migration and recovery assumptions | A completion job forced into a web request; worker-pool scaling assumed automatic |
+| 7 | Assets, identities, entry paths, preventive/detective/recovery controls and evidence plan | Detection logged but request allowed; an uninspected modality or excessive parent grant |
+| 8 | Weighted SLI, budget/forecast scope, quota dimension, recovery timeline and cleanup inventory | Averaged percentages hide failure; a scoped cap is mistaken for an exact whole-account ceiling |
+
+Accept a decision only when its assumptions, evidence and failure case agree. A written control design is not evidence of deployed enforcement.
 
 ## Original knowledge checks
 
@@ -304,6 +434,14 @@ Use a disposable account or authorized sandbox, budgets, least privilege, and cl
 34. Why are redundancy, replication, scaling, and backup not synonyms?
 35. Distinguish SLI, SLO, SLA, and error budget.
 36. How do latency, traffic, errors, and saturation support operations?
+37. What is the difference between the Gemini Enterprise app and Agent Platform?
+38. Why does a child Viewer assignment not cancel inherited Editor access?
+39. Does Archive imply an offline restore delay, and is Autoclass a storage class?
+40. How does a preview spend cap differ from an alerts-only budget and an exact spending maximum?
+41. What evidence separates a Model Armor detection, a model refusal and an enforced block?
+42. Which Cloud Run execution form fits a finite batch, and what scaling assumption should be checked for workers?
+43. Why can average cohort percentages misrepresent a request-based SLI?
+44. Can lower total cost accompany worse unit economics?
 
 ## Answers and reasoning
 
@@ -338,15 +476,31 @@ Use a disposable account or authorized sandbox, budgets, least privilege, and cl
 29. It covers defined controls, scope and period; customer configuration, evidence, legal interpretation and continuing operation remain.
 30. Storage geography is only one part of legal/operational control, administration, key access and survivability.
 31. They provide ownership and policy/IAM inheritance boundaries; broad higher-level grants propagate and therefore require care.
-32. It reports or triggers a configured workflow; it does not inherently and safely stop every resource.
+32. An alerts-only budget notifies or triggers a configured workflow. Separate preview spend caps can pause new eligible service usage, with scope, reporting/enforcement delay and continuing-charge limits; neither provides an exact whole-account ceiling.
 33. Capacity guardrail, financial notification/governance, interruptible discounted compute, and coordinated accelerator scheduling/capacity.
 34. Alternate components, copied state, changed capacity and recoverable historical copies solve different failures.
 35. Measured behavior, internal target, contractual commitment and allowed unreliability implied by the target.
 36. They reveal responsiveness, demand, failed behavior and capacity pressure; correlate them with changes, dependencies, business correctness and security evidence.
+37. The app provides employee search, assistance and agent use; the platform provides development, runtime, governance and improvement tools. Building a workflow is not necessarily model training.
+38. Allow grants form a union through ancestry. A narrower child allow grant does not remove broader inherited permissions; review the ancestor grant and applicable deny controls.
+39. Archive remains online with low-latency access. Autoclass manages transitions among classes and has its own rules and pricing; minimum billing duration is not a retention lock.
+40. Alerts-only budgets notify. Preview spend caps pause new usage within a configured project/service boundary using estimated gross cost, but delay, in-flight and fixed costs can produce additional charges; lifting the cap is manual.
+41. Correlate detector logs, enforcement configuration and downstream execution. A model can refuse independently, and inspect-only detections do not prove a block. Check modality and integration coverage.
+42. A Cloud Run job fits finite work that exits. Worker pools have different scaling behavior and require sizing or separately configured external-metric autoscaling; local files are disposable.
+43. Cohorts with different traffic volumes require summed good events divided by summed eligible events. Equal weighting of their percentages changes the meaning of the denominator.
+44. Yes: 2,500/10,000 = 0.25 per order, while 2,200/8,000 = 0.275. Total cost falls 12%, but unit cost rises 10%; investigate demand, completion and quality.
 
 ## August 12, 2026 gap checklist
 
 If a resource predates the launch, verify it covers the new equalized first-five-domain weights and 10% operations domain; agentic AI; AI-ready data and AI Hypercomputer; AlloyDB and Autoclass; Managed Service for Apache Spark; Gemini Enterprise Agent Platform, Gemini and agent/customization examples; current Cloud Run functions and GKE Enterprise terminology; hybrid/multicloud product examples; LLM attacks and security across the AI stack; Google Threat Intelligence, Security Command Center, Google Security Operations, AI Protection and Model Armor; expanded security-service examples; resource hierarchy, Dynamic Workload Scheduler and Spot VMs; and specific Observability services plus the four golden signals. Older material can still teach durable concepts, but it is not complete by default.
+
+## Source and freshness notes
+- Google Cloud controls the objectives, weights, exam delivery, renewal routes, service names, release states, regional availability, pricing and certification lifecycle.
+- This guide follows the **August 12, 2026 PDF**, not the older HTML guide still reachable at `/learn/certification/guides/cloud-digital-leader`, whose older ~17/16/16/17/17/17 weights and Anthos/Cloud Functions language are no longer the active baseline.
+- Product capabilities—especially Gemini Enterprise Agent Platform, agents, AI Protection, Model Armor, AI Hypercomputer, GKE packaging, and hybrid/multicloud availability—are volatile. **VERIFY CURRENT** in first-party documentation before applying them.
+- The guide’s explanations, tables, scenarios, labs, questions, and answers are original synthesis from public scope. It does not reproduce vendor course content, proprietary practice banks, or recalled exam items.
+
+> **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
 ## Places to learn
 
@@ -355,20 +509,13 @@ This is not a complete list and is not meant to be consumed in full. Pick one pr
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official exam guide](https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf), [official study guide](https://services.google.com/fh/files/misc/cloud_digital_leader_study_guide_english.pdf), and [sample questions](https://docs.google.com/forms/d/e/1FAIpQLSedAmf77MGS7FGEaylFzY51KtBd7kkIZJIMDsV5zSRSmpKIOA/viewform) | Public, first-party | 3–5 hours including answer review and gap mapping |
-| [Google Skills Cloud Digital Leader path](https://www.skills.google/paths/9?locale=en) | Google account; path listed as six activities, access terms can vary | About 7.5 listed course hours; allow 10–15 hours with notes and exercises |
-| [Google Cloud Digital Leader Training on Coursera](https://www.coursera.org/professional-certificates/google-cloud-digital-leader-training) | Audit/subscription terms vary; first-party Google Cloud instruction | Provider FAQ says about 2 weeks at 4–5 hours/week; page also displays a broader 4-week estimate |
-| [Official Cloud Digital Leader YouTube playlist](https://www.youtube.com/playlist?list=PLBgogxgQVM9s9ByaiNCqjnPuiKvb8fgRu) | Public, first-party video | About 3–6 hours selected viewing plus gap review; playlist duration is volatile |
-| [O'Reilly / Sybex Cloud Digital Leader Study Guide](https://www.oreilly.com/library/view/google-cloud-certified/9781394219803/) | Paid subscription/book; includes online assessment material | 5h18m provider reading estimate; add 4–8 hours for August 2026 gap work and practice |
-| [Udemy / in28Minutes Cloud Digital Leader](https://www.udemy.com/course/google-cloud-digital-leader-certification/) | Paid marketplace course | 16h57m video plus 4–8 hours for labs/review; updated June 2026, so apply the August gap checklist |
-| [Whizlabs exam prep on Coursera](https://www.coursera.org/learn/exam-prep-google-cloud-certified-cloud-digital-leader) | Coursera access; third-party instruction and assessments | About 8 hours video or 2 weeks at 10 hours/week including readings and assignments; verify August alignment |
+| [Google Skills Cloud Digital Leader path](https://www.skills.google/paths/9?locale=en) | Google account; six activities confirmed; public page says updated eight days before this check | Current per-course durations not exposed in this fetch; 10–15 hours is a study-planning estimate, not a verified provider total |
+| [Google Cloud Digital Leader Training on Coursera](https://www.coursera.org/professional-certificates/google-cloud-digital-leader-training) | Audit/subscription terms vary; first-party Google Cloud instruction | Six course rows total 10 hours (2/2/2/1/2/1); FAQ says 2 weeks at 4–5 hours/week, while the landing page says 4 weeks at 10 hours/week. These are different estimates |
+| [Official Cloud Digital Leader YouTube playlist](https://www.youtube.com/playlist?list=PLBgogxgQVM9s9ByaiNCqjnPuiKvb8fgRu) | Public, first-party video | Allow 3–6 hours as a selected-viewing plan; current playlist length/content was not exposed in this fetch |
+| [O'Reilly / Sybex Cloud Digital Leader Study Guide](https://www.oreilly.com/library/view/google-cloud-certified/9781394219803/) | Paid subscription/book; includes online assessment material | Earlier record: 5h18m reading estimate, **not reverified** because public access was blocked; allow 4–8 additional hours for gap work |
+| [Udemy / in28Minutes Cloud Digital Leader](https://www.udemy.com/course/google-cloud-digital-leader-certification/) | Paid marketplace course | Earlier record: 16h57m and June 2026 update, **not reverified** because public access was blocked; apply the August gap checklist |
+| [Whizlabs exam prep on Coursera](https://www.coursera.org/learn/exam-prep-google-cloud-certified-cloud-digital-leader) | Coursera access; third-party instruction and assessments | Seven modules; 7.5–8 hours of video versus about 20 hours including readings/assignments; public titles still use Cloud Functions and do not establish full August agent/security alignment |
 
-No exact current Pluralsight path or MeasureUp product was selected during this review. That absence is preferable to inventing a match. Reject resources marketed as “actual questions,” dumps, or guaranteed replicas. Never copy proprietary question banks into notes. Use the official untimed sample questions and independently authored checks to understand reasoning.
+The Google-authored Coursera outline explicitly includes agentic AI, AI Hypercomputer, Model Armor and current six-domain topics. This supports improved alignment, not a claim that paid lessons or assessments were completed. The Whizlabs public lesson titles do not establish coverage of every August addition; inspect gaps before relying on that route. No paid lessons, mock questions or proprietary assessment items were read. The sample-question link was checked as a resource, without treating a successful page fetch as proof of complete question content.
 
-## Source and freshness notes
-
-- Google Cloud controls the objectives, weights, exam delivery, renewal routes, service names, release states, regional availability, pricing and certification lifecycle.
-- This guide follows the **August 12, 2026 PDF**, not the older HTML guide still reachable at `/learn/certification/guides/cloud-digital-leader`, whose older ~17/16/16/17/17/17 weights and Anthos/Cloud Functions language are no longer the active baseline.
-- Product capabilities—especially Gemini Enterprise Agent Platform, agents, AI Protection, Model Armor, AI Hypercomputer, GKE packaging, and hybrid/multicloud availability—are volatile. **VERIFY CURRENT** in first-party documentation before applying them.
-- The guide’s explanations, tables, scenarios, labs, questions, and answers are original synthesis from public scope. It does not reproduce vendor course content, proprietary practice banks, or recalled exam items.
-
-> **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
+For focused follow-up, read the linked storage, IAM, Cloud Run, AI-security and billing documentation where each distinction is taught. Allow 2–3 additional hours for selected reading and the original worksheet; this is a planning estimate. No exact current Pluralsight path or MeasureUp product was selected during this review. Reject resources marketed as “actual questions,” dumps, or guaranteed replicas. Never copy proprietary question banks into notes. Use the official untimed sample questions and independently authored checks to understand reasoning.

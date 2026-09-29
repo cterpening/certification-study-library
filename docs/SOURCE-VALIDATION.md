@@ -1394,6 +1394,8 @@ The review maps every live v1.35 domain to an asset/trust-boundary/threat → na
 
 ## GOOGLE-CLOUD-DIGITAL-LEADER coverage record
 
+The September 29 [deep review](research/2026-09-29-google-cloud-digital-leader-deep-review.md) maps 69 detailed considerations under 14 numbered objectives. Read the full seven-page August 12 exam PDF and fifteen-page study PDF; mapped 69 detailed considerations across 14 numbered objectives. Both monitor hashes remain unchanged. Added an exact Python worksheet with 26 local checks, clarified app/platform, Cloud Run execution forms, storage/consistency, IAM inheritance, Model Armor enforcement, preview spend caps and DWS billing. Refreshed catalog evidence, 44 answers and eight proposed decision labs. No live cloud validation or paid assessment access. Current guide citations: 28 registered, 26 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: August 12, 2026 six-domain guide—Digital Transformation (18%), Data Transformation (18%), Artificial Intelligence (18%), Infrastructure and Application Modernization (18%), Trust and Security (18%), and Operations (10%)

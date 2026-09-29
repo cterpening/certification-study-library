@@ -4,6 +4,235 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-googleclouddigitalleader-deep-review",
+      "title": "GOOGLE-CLOUD-DIGITAL-LEADER complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "results": [
+        {
+          "exam_code": "GOOGLE-CLOUD-DIGITAL-LEADER",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-CLOUD-DIGITAL-LEADER-cloud-digital-leader.md",
+          "baseline_sha256": "98f47b3c3466540414a1bd55f6b49fd267e950ba81321fa265046cd2da9a8de8",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Canonical page and actual seven-page PDF retain August 12, 2026 scope: first five domains 18% each, operations 10%; 69 considerations in groups 8/14/12/10/15/10 under 14 numbered objectives. Standard exam 90 minutes, 50–60 items, USD 99 before tax, five languages and three-year validity. Renewal exam 45 minutes/20 items/USD 60/English-Japanese/three years; designated learning route has one-year validity and final-active-year eligibility. Both monitor hashes unchanged; no baseline rewrite."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Targeted current storage/Autoclass, Firestore consistency, IAM inheritance, Cloud SQL connectivity, Cloud Run execution forms, Agent Platform/app, Model Armor enforcement/integration, AI Protection tier/scope, quota/budget/spend-cap preview, DWS and SLO documentation read. Exact public Python worksheet passed 26 arithmetic checks; no provider API or enforcement claim."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Full April 22, 2026 Google Cloud blog by Brian Delahunty and Michael Gerstenhaber read for app/platform naming and Vertex AI evolution, with feature availability and marketing claims qualified. Canonical exam still August 12. Current spend-cap feature explicitly preview; DWS pricing page announces November 2026 rates change, not an exam transition."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Google Skills public path confirms six activities and relative update eight days earlier; course durations not exposed. Google-authored Coursera six course rows total 10h, FAQ 2weeks at4–5h/week versus landing4weeks at10h/week; current outline explicitly names agentic AI, AI Hypercomputer and Model Armor. Whizlabs seven public modules show 7.5–8h video versus20h course estimate, older Cloud Functions titles and no explicit titles for several August agent/security additions. OReilly and Udemy public access blocked; inherited claims qualified. YouTube/sample-form shell content not treated as full content verification."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Correct platform/app conflation and request-only Cloud Run description. Distinguish online Archive, billing minimums and Autoclass from classes/retention. Clarify default strong Firestore reads, cumulative allow grants, external Cloud SQL clients, Model Armor detection/enforcement, alerts-only versus preview scoped spend caps, and DWS modes. Add explicit weighted SLI and unit-economics counterexamples, lab acceptance/negative cases and eight additional answers. Places to learn is final."
+            }
+          },
+          "findings": [
+            {
+              "id": "googleclouddigitalleader-deep-1",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Agent Platform and employee app have distinct roles",
+              "url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-CLOUD-DIGITAL-LEADER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The April announcement identifies Agent Platform as the developer platform evolving Vertex AI and the app as the employee interface.",
+              "recommendation": "Separate developer lifecycle from employee discovery/use; explain that workflow building and grounding need not train model weights.",
+              "disposition": "applied",
+              "source_id": "gcp-gemini-enterprise-2026",
+              "resolution": "Separate developer lifecycle from employee discovery/use; explain that workflow building and grounding need not train model weights."
+            },
+            {
+              "id": "googleclouddigitalleader-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Cloud Run has multiple execution forms",
+              "url": "https://docs.cloud.google.com/run/docs/overview/what-is-cloud-run",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-CLOUD-DIGITAL-LEADER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current overview describes services, completion jobs, worker pools and singleton instances; worker scaling differs from service scaling.",
+              "recommendation": "Correct request-only description and qualify additional forms as current product context, not newly added exam objectives.",
+              "disposition": "applied",
+              "source_id": "gcp-run-overview",
+              "resolution": "Correct request-only description and qualify additional forms as current product context, not newly added exam objectives."
+            },
+            {
+              "id": "googleclouddigitalleader-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Archive access and minimum storage duration are different decisions",
+              "url": "https://docs.cloud.google.com/storage/docs/storage-classes",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-CLOUD-DIGITAL-LEADER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Archive is online with low-latency access; cold-class minimum durations concern billing and a new default class does not change existing objects.",
+              "recommendation": "Add access, minimum-duration/retention and existing-object distinctions.",
+              "disposition": "applied",
+              "source_id": "gcp-storage-classes",
+              "resolution": "Add access, minimum-duration/retention and existing-object distinctions."
+            },
+            {
+              "id": "googleclouddigitalleader-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Autoclass is management with separate rules and pricing",
+              "url": "https://docs.cloud.google.com/storage/docs/autoclass",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-CLOUD-DIGITAL-LEADER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Autoclass manages class transitions, defaults to Nearline terminal class, leaves small objects Standard and has distinct fees.",
+              "recommendation": "Separate the feature from individual storage classes; qualify pricing and transition details.",
+              "disposition": "applied",
+              "source_id": "gcp-autoclass",
+              "resolution": "Separate the feature from individual storage classes; qualify pricing and transition details."
+            },
+            {
+              "id": "googleclouddigitalleader-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "NoSQL does not imply eventual default reads",
+              "url": "https://docs.cloud.google.com/firestore/native/docs/understand-reads-writes-scale",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-CLOUD-DIGITAL-LEADER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Firestore documents strong default reads and ACID writes.",
+              "recommendation": "Teach data model versus operation/consistency choice without assuming every NoSQL service behaves alike.",
+              "disposition": "applied",
+              "source_id": "gcp-firestore-consistency",
+              "resolution": "Teach data model versus operation/consistency choice without assuming every NoSQL service behaves alike."
+            },
+            {
+              "id": "googleclouddigitalleader-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A narrower child allow grant does not subtract inherited access",
+              "url": "https://docs.cloud.google.com/iam/docs/resource-hierarchy-access-control",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-CLOUD-DIGITAL-LEADER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Effective allow policies are the union of parent and resource grants, with deny policies a separate consideration.",
+              "recommendation": "Add an inherited Editor/child Viewer counterexample and separate constraints from grants.",
+              "disposition": "applied",
+              "source_id": "gcp-iam-hierarchy",
+              "resolution": "Add an inherited Editor/child Viewer counterexample and separate constraints from grants."
+            },
+            {
+              "id": "googleclouddigitalleader-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Detection and model refusal do not prove integration enforcement",
+              "url": "https://docs.cloud.google.com/model-armor/overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-CLOUD-DIGITAL-LEADER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Inspect-only allows processing; inspect-and-block supplies a verdict honored by the integration; model refusal may occur independently.",
+              "recommendation": "Require correlated logs and downstream behavior plus allowed and blocked controls, without claiming a live test.",
+              "disposition": "applied",
+              "source_id": "gcp-model-armor-overview",
+              "resolution": "Require correlated logs and downstream behavior plus allowed and blocked controls, without claiming a live test."
+            },
+            {
+              "id": "googleclouddigitalleader-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Preview spend caps change an overly broad budget rule",
+              "url": "https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-CLOUD-DIGITAL-LEADER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current preview can pause new eligible-service use within one project; estimated costs, delays, in-flight and fixed costs prevent an exact account-wide ceiling.",
+              "recommendation": "Distinguish alerts-only budgets from preview caps, describe limits and manual lifting, and execute only fictional arithmetic.",
+              "disposition": "applied",
+              "source_id": "gcp-spend-cap-budgets",
+              "resolution": "Distinguish alerts-only budgets from preview caps, describe limits and manual lifting, and execute only fictional arithmetic."
+            },
+            {
+              "id": "googleclouddigitalleader-deep-9",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "DWS billing depends on mode and date",
+              "url": "https://cloud.google.com/products/dws/pricing",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-CLOUD-DIGITAL-LEADER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Flex-start is usage based; Calendar mode charges the reserved duration; rates are scheduled to change in November 2026.",
+              "recommendation": "Teach start-time/commitment tradeoffs without embedding volatile rates or treating DWS as Spot.",
+              "disposition": "applied",
+              "source_id": "gcp-dws-pricing",
+              "resolution": "Teach start-time/commitment tradeoffs without embedding volatile rates or treating DWS as Spot."
+            }
+          ],
+          "notes": "Read the full seven-page August 12 exam PDF and fifteen-page study PDF; mapped 69 detailed considerations across 14 numbered objectives. Both monitor hashes remain unchanged. Added an exact Python worksheet with 26 local checks, clarified app/platform, Cloud Run execution forms, storage/consistency, IAM inheritance, Model Armor enforcement, preview spend caps and DWS billing. Refreshed catalog evidence, 44 answers and eight proposed decision labs. No live cloud validation or paid assessment access. Same-context AI review; human review pending. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 9,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-cks-deep-review",
       "title": "CKS complete guide and learning-content review",
       "rubric_version": 1,

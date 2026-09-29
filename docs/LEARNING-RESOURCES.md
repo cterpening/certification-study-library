@@ -2485,6 +2485,26 @@ This is **not a complete list**, and it is not meant to be consumed in full. Pic
 
 The current exam has no API documentation aid. The linked official guide supplies sample-format questions; the previously cited community statement about practice-exam availability could not be reverified on this date. No exact current MeasureUp, Whizlabs, or exam-aligned O'Reilly/LinkedIn Learning product was independently verified. Reject resources that advertise recalled/real questions or still teach the retired Spark 3.0 exam format as current.
 
+### GOOGLE-CLOUD-DIGITAL-LEADER — Cloud Digital Leader
+
+Resource details from the [GOOGLE-CLOUD-DIGITAL-LEADER guide](../guides/GOOGLE-CLOUD-DIGITAL-LEADER-cloud-digital-leader.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list and is not meant to be consumed in full. Pick one primary explanation path, use the official guide as the scope boundary, add hands-on decision practice, and use explanation-led questions only to find weak areas. Durations are provider estimates or transparent reading/practice estimates and will change.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official exam guide](https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf), [official study guide](https://services.google.com/fh/files/misc/cloud_digital_leader_study_guide_english.pdf), and [sample questions](https://docs.google.com/forms/d/e/1FAIpQLSedAmf77MGS7FGEaylFzY51KtBd7kkIZJIMDsV5zSRSmpKIOA/viewform) | Public, first-party | 3–5 hours including answer review and gap mapping |
+| [Google Skills Cloud Digital Leader path](https://www.skills.google/paths/9?locale=en) | Google account; six activities confirmed; public page says updated eight days before this check | Current per-course durations not exposed in this fetch; 10–15 hours is a study-planning estimate, not a verified provider total |
+| [Google Cloud Digital Leader Training on Coursera](https://www.coursera.org/professional-certificates/google-cloud-digital-leader-training) | Audit/subscription terms vary; first-party Google Cloud instruction | Six course rows total 10 hours (2/2/2/1/2/1); FAQ says 2 weeks at 4–5 hours/week, while the landing page says 4 weeks at 10 hours/week. These are different estimates |
+| [Official Cloud Digital Leader YouTube playlist](https://www.youtube.com/playlist?list=PLBgogxgQVM9s9ByaiNCqjnPuiKvb8fgRu) | Public, first-party video | Allow 3–6 hours as a selected-viewing plan; current playlist length/content was not exposed in this fetch |
+| [O'Reilly / Sybex Cloud Digital Leader Study Guide](https://www.oreilly.com/library/view/google-cloud-certified/9781394219803/) | Paid subscription/book; includes online assessment material | Earlier record: 5h18m reading estimate, **not reverified** because public access was blocked; allow 4–8 additional hours for gap work |
+| [Udemy / in28Minutes Cloud Digital Leader](https://www.udemy.com/course/google-cloud-digital-leader-certification/) | Paid marketplace course | Earlier record: 16h57m and June 2026 update, **not reverified** because public access was blocked; apply the August gap checklist |
+| [Whizlabs exam prep on Coursera](https://www.coursera.org/learn/exam-prep-google-cloud-certified-cloud-digital-leader) | Coursera access; third-party instruction and assessments | Seven modules; 7.5–8 hours of video versus about 20 hours including readings/assignments; public titles still use Cloud Functions and do not establish full August agent/security alignment |
+
+The Google-authored Coursera outline explicitly includes agentic AI, AI Hypercomputer, Model Armor and current six-domain topics. This supports improved alignment, not a claim that paid lessons or assessments were completed. The Whizlabs public lesson titles do not establish coverage of every August addition; inspect gaps before relying on that route. No paid lessons, mock questions or proprietary assessment items were read. The sample-question link was checked as a resource, without treating a successful page fetch as proof of complete question content.
+
+For focused follow-up, read the linked storage, IAM, Cloud Run, AI-security and billing documentation where each distinction is taught. Allow 2–3 additional hours for selected reading and the original worksheet; this is a planning estimate. No exact current Pluralsight path or MeasureUp product was selected during this review. Reject resources marketed as “actual questions,” dumps, or guaranteed replicas. Never copy proprietary question banks into notes. Use the official untimed sample questions and independently authored checks to understand reasoning.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

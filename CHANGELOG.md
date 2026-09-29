@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [GOOGLE-CLOUD-DIGITAL-LEADER deep review](docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md): 69 detailed considerations, 26 executed local checks, app/platform and billing-control corrections, 44 answers, eight proposed decision labs and refreshed public learning evidence.
+
 - September 29, 2026: [CKS deep review](docs/research/2026-09-29-cks-deep-review.md): 26 competencies; actual PDF reconciliation; 17 real signature checks and 12 audit-model checks; 46 answers and eight proposed cluster labs; refreshed public evidence.
 
 - September 29, 2026: [CKAD deep review](docs/research/2026-09-29-ckad-deep-review.md): 24 competencies, 27 executed Helm checks, native sidecar and rollout corrections, 46 answers, eight proposed cluster labs, current catalog and dated tooling support.

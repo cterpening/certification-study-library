@@ -3,6 +3,258 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "gcp-storage-classes",
+      "title": "Cloud Storage classes",
+      "url": "https://docs.cloud.google.com/storage/docs/storage-classes",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read key concepts, class table, Standard/Nearline/Coldline/Archive descriptions, online access and default-class behavior. Rapid/legacy classes were observed but not added as exam scope. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-autoclass",
+      "title": "Cloud Storage Autoclass",
+      "url": "https://docs.cloud.google.com/storage/docs/autoclass",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read overview, pricing exceptions, existing-bucket behavior, recommended use cases, transitions and restrictions. Guide adopts a targeted subset and does not claim live transitions or cheapest pricing. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-budget-alerts",
+      "title": "Cloud Billing budgets and alerts",
+      "url": "https://docs.cloud.google.com/billing/docs/how-to/budgets",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read overview, alerts-only warning, spend-cap link, actual/forecast thresholds, reporting and notification delay passages. No budget creation or notification delivery. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-iam-hierarchy",
+      "title": "IAM resource hierarchy access control",
+      "url": "https://docs.cloud.google.com/iam/docs/resource-hierarchy-access-control",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read inheritance, union, child-role redundancy examples and explicit deny caveat. No IAM runtime or permission changes. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-run-overview",
+      "title": "Cloud Run resource types and execution",
+      "url": "https://docs.cloud.google.com/run/docs/overview/what-is-cloud-run",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read execution resource types, service behavior/local filesystem and worker-pool scaling. Supplemental forms explicitly separated from exam objectives. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-gemini-enterprise-2026",
+      "title": "The new Gemini Enterprise: development, orchestration and governance",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Full April 22 blog read with authors/date. Adopt only app/platform separation and Vertex AI evolution; avoid treating marketing promises as measured controls. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-agent-platform-overview",
+      "title": "Gemini Enterprise Agent Platform overview",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read complete overview, four lifecycle pillars and tools. No model counts or global capability claims adopted. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-model-armor-overview",
+      "title": "Model Armor overview and enforcement",
+      "url": "https://docs.cloud.google.com/model-armor/overview",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read enforcement types, verdict/PEP responsibility, model refusal distinction and logging evidence; basic versus advanced inspection context. No prompt screening or runtime enforcement executed. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-model-armor-integrations",
+      "title": "Model Armor integration coverage",
+      "url": "https://docs.cloud.google.com/model-armor/integrations",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read modality differences and relevant app/platform/gateway integration coverage. No assumption that direct API modalities apply to all inline paths. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-ai-protection",
+      "title": "AI Protection overview",
+      "url": "https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read overview, activation scope and tier-dependent capability list. Current tier deprecation notice observed but not adopted as exam change. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-dynamic-workload-scheduler",
+      "title": "Compute Engine Flex-start VMs and Dynamic Workload Scheduler",
+      "url": "https://docs.cloud.google.com/compute/docs/instances/about-flex-start-vms",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read Flex-start overview, waiting/capacity failure, bounded run, standalone/MIG distinctions and residual-resource charges. No VM request or runtime test. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-cloudsql-connectivity",
+      "title": "Cloud SQL PostgreSQL connection options",
+      "url": "https://docs.cloud.google.com/sql/docs/postgres/connect-overview",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read overview, client location, IP/network and authentication boundaries. An external client does not imply self-hosting the managed database. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-firestore-consistency",
+      "title": "Firestore reads and writes at scale",
+      "url": "https://docs.cloud.google.com/firestore/native/docs/understand-reads-writes-scale",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read document model, replicated writes/ACID and default strong versus optional stale-read passages. No live Firestore operation. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-slo-concepts",
+      "title": "Cloud Monitoring SLO concepts",
+      "url": "https://docs.cloud.google.com/stackdriver/docs/solutions/slo-monitoring",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read SLI/SLO/error-budget definitions, event population and request/window compliance distinctions. Original calculations are independent local teaching examples. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-dws-pricing",
+      "title": "Dynamic Workload Scheduler pricing and billing model",
+      "url": "https://cloud.google.com/products/dws/pricing",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read pricing introduction, mode-dependent billing and November 2026 change notice. Rates table not comprehensively reviewed and no numerical rate adopted. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-gemini-enterprise-app",
+      "title": "Gemini Enterprise app overview",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/docs",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read overview, employee use, connected enterprise information and edition boundary. No paid edition or connector configured. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-spend-cap-budgets",
+      "title": "Cloud Billing spend cap budgets preview",
+      "url": "https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read preview status, operation, eligible services, scope, estimated gross costs, limitations and manual restore; permissions/setup context inspected, no control configured. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-quota-overview",
+      "title": "Google Cloud quotas overview",
+      "url": "https://docs.cloud.google.com/docs/quotas/overview",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read quota purpose, allocation/rate/concurrency types, hierarchy and location dimensions. No capacity or financial ceiling inferred. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "cks134-curriculum-pdf",
       "title": "CNCF CKS v1.34 curriculum PDF",
       "url": "https://raw.githubusercontent.com/cncf/curriculum/master/CKS_Curriculum%20v1.34.pdf",
@@ -42450,10 +42702,32 @@
       "id":"google-cdl-certification","title":"Cloud Digital Leader certification","url":"https://cloud.google.com/learn/certification/cloud-digital-leader","publisher":"Google Cloud","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["GOOGLE-CLOUD-DIGITAL-LEADER"],"notes":"Canonical live status, delivery, renewal, preparation and high-level domain page; monitored by the Google Cloud certification adapter."
     },
     {
-      "id":"google-cdl-exam-guide-2026-08-12","title":"Cloud Digital Leader certification exam guide","url":"https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf","publisher":"Google Cloud","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["GOOGLE-CLOUD-DIGITAL-LEADER"],"notes":"Detailed seven-page official objective baseline launched August 12, 2026; authoritative for current weights, subdomains and named examples."
+      "id": "google-cdl-exam-guide-2026-08-12",
+      "title": "Cloud Digital Leader certification exam guide",
+      "url": "https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf",
+      "publisher": "Google Cloud",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "notes": "Detailed seven-page official objective baseline launched August 12, 2026; authoritative for current weights, subdomains and named examples. September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Actual seven-page PDF downloaded, hashed and fully read including all 69 detailed considerations; layout extraction used to retain wrapped bullets. Canonical August 12 scope unchanged. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"google-cdl-study-guide","title":"Cloud Digital Leader official study guide","url":"https://services.google.com/fh/files/misc/cloud_digital_leader_study_guide_english.pdf","publisher":"Google Cloud","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["GOOGLE-CLOUD-DIGITAL-LEADER"],"notes":"Fifteen-page first-party six-course study summary aligned to the August 2026 service examples."
+      "id": "google-cdl-study-guide",
+      "title": "Cloud Digital Leader official study guide",
+      "url": "https://services.google.com/fh/files/misc/cloud_digital_leader_study_guide_english.pdf",
+      "publisher": "Google Cloud",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "notes": "Fifteen-page first-party six-course study summary aligned to the August 2026 service examples. September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Actual fifteen-page study PDF downloaded, hashed and fully read. It is explanatory support; product references refine broad simplifications and the exam PDF governs scope. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
     },
     {
       "id":"google-cdl-skills-path","title":"Cloud Digital Leader learning path","url":"https://www.skills.google/paths/9?locale=en","publisher":"Google Cloud","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["GOOGLE-CLOUD-DIGITAL-LEADER"],"notes":"Six-activity first-party path; older public catalog listed 7.5 hours. Account, entitlement, content and duration details are volatile."

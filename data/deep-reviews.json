@@ -5,6 +5,27 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "GOOGLE-CLOUD-DIGITAL-LEADER",
+      "reviewed_on": "2026-09-29",
+      "guide_sha256": "a2b9ee8fe914977a56aef0ce9876f5048f26a718f350a53cbc00388a2a6f71e8",
+      "objective_count": 69,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-29-google-cloud-digital-leader-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "Same-context AI review; independent human review pending.",
+        "All eight complete decision labs remain proposed. Only the exact public Python arithmetic worksheet was executed, with 26 checks.",
+        "No cloud account, project, API, model, IAM policy, workload, budget, spend cap, notification, billing control or real invoice was accessed or changed. No Google Cloud enforcement, capacity, storage, reliability or restore behavior was validated live.",
+        "The SLI, unit-cost and forecast examples use fictional inputs and explicit assumptions; they are not implementations of Google provider services.",
+        "Spend caps are preview and scoped; DWS prices change over time. Extra Cloud Run forms are current product context, not additions to the accepted August exam scope.",
+        "Google Skills course durations and YouTube/sample-form content were not fully exposed; blocked OReilly/Udemy metadata remains explicitly unverified. Public Coursera outlines were read, but no paid lessons, labs, sample questions or proprietary assessment items were accessed.",
+        "Two initially guessed documentation paths returned missing; corrected official paths were fetched successfully. Failed attempts remain in the operational receipt."
+      ]
+    },
+    {
       "exam_code": "CKS",
       "reviewed_on": "2026-09-29",
       "guide_sha256": "302301c7ac22f14d4b0bb7568ae125a2f99c2a5c5c0a8fd82f8de41c4f04b601",

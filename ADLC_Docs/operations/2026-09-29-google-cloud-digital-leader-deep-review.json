@@ -1,0 +1,2212 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "GOOGLE-CLOUD-DIGITAL-LEADER",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/GOOGLE-CLOUD-DIGITAL-LEADER-cloud-digital-leader.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "462d1229de913cd029afbd9ac4b226ca3e22526dac36d170e110dc455e3b8348",
+  "guide_after_sha256": "a2b9ee8fe914977a56aef0ce9876f5048f26a718f350a53cbc00388a2a6f71e8",
+  "prior_records": {
+    "exam": {
+      "code": "GOOGLE-CLOUD-DIGITAL-LEADER",
+      "level": "beginner",
+      "vendor_id": "google-cloud",
+      "title": "Cloud Digital Leader",
+      "status": "active",
+      "study_guide_url": "https://cloud.google.com/learn/certification/cloud-digital-leader",
+      "guide_path": "guides/GOOGLE-CLOUD-DIGITAL-LEADER-cloud-digital-leader.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite. Build cloud and business literacy across transformation, networking/service models, governed data, AI and agents, workload modernization, identity/security, cost governance, observability, reliability, and SRE concepts. Use hands-on exercises to make service-selection boundaries concrete."
+    },
+    "review": {
+      "id": "google-cloud-digital-leader-2026-09-02-source-validation",
+      "exam_code": "GOOGLE-CLOUD-DIGITAL-LEADER",
+      "guide_path": "guides/GOOGLE-CLOUD-DIGITAL-LEADER-cloud-digital-leader.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/google-cloud-digital-leader-official-objectives.txt",
+      "blueprint_snapshot_sha256": "998892823a5a1a3cf2b508e3145f723c4c9e17181d62f59ec78d2e633f4eca8d",
+      "objective_coverage": [
+        {
+          "objective_group": "Digital Transformation with Google Cloud (~18%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios 2–3",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Exploring Data Transformation with Google Cloud (~18%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenario 1",
+            "Labs 3–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Innovating with Google Cloud Artificial Intelligence (~18%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenario 1",
+            "Labs 5 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Modernize Infrastructure and Applications with Google Cloud (~18%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenario 2",
+            "Labs 2 and 6–8"
+          ]
+        },
+        {
+          "objective_group": "Trust and Security with Google Cloud (~18%)",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Labs 7–8"
+          ]
+        },
+        {
+          "objective_group": "Scaling with Google Cloud Operations (~10%)",
+          "guide_sections": [
+            "Section 6",
+            "All integrated scenarios",
+            "Labs 1 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 10,
+        "reachable": 8,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All six August 12, 2026 domains are mapped through outcome, requirement, service/control selection, ownership, validation and operations, with three integrated scenarios, eight labs and 36 original checks. All ten guide URLs are cataloged: eight reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The older HTML guide and pre-August learning gap are explicit. No proprietary course material, question bank or recalled exam item is used."
+    },
+    "sources": [
+      {
+        "id": "google-cdl-certification",
+        "title": "Cloud Digital Leader certification",
+        "url": "https://cloud.google.com/learn/certification/cloud-digital-leader",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-CLOUD-DIGITAL-LEADER"
+        ],
+        "notes": "Canonical live status, delivery, renewal, preparation and high-level domain page; monitored by the Google Cloud certification adapter."
+      },
+      {
+        "id": "google-cdl-exam-guide-2026-08-12",
+        "title": "Cloud Digital Leader certification exam guide",
+        "url": "https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-CLOUD-DIGITAL-LEADER"
+        ],
+        "notes": "Detailed seven-page official objective baseline launched August 12, 2026; authoritative for current weights, subdomains and named examples."
+      },
+      {
+        "id": "google-cdl-study-guide",
+        "title": "Cloud Digital Leader official study guide",
+        "url": "https://services.google.com/fh/files/misc/cloud_digital_leader_study_guide_english.pdf",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-CLOUD-DIGITAL-LEADER"
+        ],
+        "notes": "Fifteen-page first-party six-course study summary aligned to the August 2026 service examples."
+      },
+      {
+        "id": "google-cdl-skills-path",
+        "title": "Cloud Digital Leader learning path",
+        "url": "https://www.skills.google/paths/9?locale=en",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-CLOUD-DIGITAL-LEADER"
+        ],
+        "notes": "Six-activity first-party path; older public catalog listed 7.5 hours. Account, entitlement, content and duration details are volatile."
+      },
+      {
+        "id": "google-cdl-sample-questions",
+        "title": "Cloud Digital Leader official sample questions",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSedAmf77MGS7FGEaylFzY51KtBd7kkIZJIMDsV5zSRSmpKIOA/viewform",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-CLOUD-DIGITAL-LEADER"
+        ],
+        "notes": "Official untimed and repeatable samples; Google explicitly says they do not predict breadth, difficulty or exam result."
+      },
+      {
+        "id": "google-cdl-youtube",
+        "title": "Cloud Digital Leader YouTube playlist",
+        "url": "https://www.youtube.com/playlist?list=PLBgogxgQVM9s9ByaiNCqjnPuiKvb8fgRu",
+        "publisher": "Google Cloud",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-CLOUD-DIGITAL-LEADER"
+        ],
+        "notes": "First-party playlist linked from the certification page; playlist membership and total duration are volatile."
+      },
+      {
+        "id": "google-cdl-coursera",
+        "title": "Google Cloud Digital Leader Training Professional Certificate",
+        "url": "https://www.coursera.org/professional-certificates/google-cloud-digital-leader-training",
+        "publisher": "Coursera / Google Cloud",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-CLOUD-DIGITAL-LEADER"
+        ],
+        "notes": "First-party Google Cloud instruction. Page FAQ estimates two weeks at 4–5 hours weekly while the hero presents a broader four-week estimate; audit/subscription terms vary."
+      },
+      {
+        "id": "google-cdl-oreilly-flynn",
+        "title": "Google Cloud Certified Cloud Digital Leader Study Guide",
+        "url": "https://www.oreilly.com/library/view/google-cloud-certified/9781394219803/",
+        "publisher": "O'Reilly / Sybex / Jon Flynn",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-CLOUD-DIGITAL-LEADER"
+        ],
+        "notes": "March 2026, 208 pages, 5h18m provider estimate with online assessment material; predates the August 12 guide and requires the documented gap check."
+      },
+      {
+        "id": "google-cdl-udemy-in28minutes",
+        "title": "GCP for Beginners - Become a Google Cloud Digital Leader",
+        "url": "https://www.udemy.com/course/google-cloud-digital-leader-certification/",
+        "publisher": "Udemy / in28Minutes / Ranga Karanam",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-CLOUD-DIGITAL-LEADER"
+        ],
+        "notes": "16h57m and 263 lectures, updated June 2026; requires the August 12 objective and terminology gap check."
+      },
+      {
+        "id": "google-cdl-whizlabs-coursera",
+        "title": "Exam Prep: Google Cloud Certified Cloud Digital Leader",
+        "url": "https://www.coursera.org/learn/exam-prep-google-cloud-certified-cloud-digital-leader",
+        "publisher": "Coursera / Whizlabs",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-CLOUD-DIGITAL-LEADER"
+        ],
+        "notes": "Seven-module third-party course listing about eight video hours or two weeks at ten hours per week including readings and assignments; verify August 2026 alignment."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "88bda0060c78f8511c82b81a25834705b76a4f6c3cf6dc52d40b46130eb36fdf",
+      "guide_sections": [
+        "1. Digital Transformation with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "41542153d078955981d90954afb4ee7b3dcd15af7fd2f4359013c72ce29cb7f6",
+      "guide_sections": [
+        "1. Digital Transformation with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "c36e888a5fd9ced21eca089fe656798e76db9f17ea55ab561ee549750b04d471",
+      "guide_sections": [
+        "1. Digital Transformation with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "488d413412c85e33d7404798d463aa6f7e07797b629d23f5247fe38ef98d6733",
+      "guide_sections": [
+        "1. Digital Transformation with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "7ea85262056cd148273747cf60c01a49da08df06a27bff7d6f5be1bf50fb3501",
+      "guide_sections": [
+        "1. Digital Transformation with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "6cc1630e8332bdd6b25ae662fd31018e176d1d30b8e119e4953b14d119edfb29",
+      "guide_sections": [
+        "1. Digital Transformation with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "01490bb9f33d1d3be77b9bf7a7bac00c8ef5881161efaa1c7df2f530c4d912a2",
+      "guide_sections": [
+        "1. Digital Transformation with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "0c9546b4aba803bc217fd5a61ebcd2e82af653d1516a522f5087c60313f6b1ac",
+      "guide_sections": [
+        "1. Digital Transformation with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "7b160c31263bf6b07227356e8c718f95f8b08e7185a6b83aa4f304608302de5f",
+      "guide_sections": [
+        "2. Exploring Data Transformation with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "a185f038ba8e71fef5a40da6d0fd32e0e15246542b28680648554f231fa84651",
+      "guide_sections": [
+        "2. Exploring Data Transformation with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "5679157fda8ac10fdc70fb26be82e15508362df4f03c5c9a6f83d391eaa63b8c",
+      "guide_sections": [
+        "2. Exploring Data Transformation with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "982aef5f21240df58e374435fc2053a49a8c3dd35070d1d9d419de1be95d4fc8",
+      "guide_sections": [
+        "2. Exploring Data Transformation with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "a90397b0fe2577722272063ff43fc9c1b364158498c943ab6172581de79b3b84",
+      "guide_sections": [
+        "2. Exploring Data Transformation with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "077d2be11c25b05bc50074e3f517ff33ee1f5182f9e561a2b7d30d3953fc181e",
+      "guide_sections": [
+        "2. Exploring Data Transformation with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "47275711b923f6b713f8e19d17e479986228e1616e602b854b03435a90ab92eb",
+      "guide_sections": [
+        "2. Exploring Data Transformation with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "6cb74c92218c8a0379a9498df37a87d875fe8b0e3e88a6b78876bd97f746335f",
+      "guide_sections": [
+        "2. Exploring Data Transformation with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "5d03f773db9ec53785f3e5b86349b9cb24d2ba0fc3040a408e18c5d105157098",
+      "guide_sections": [
+        "2. Exploring Data Transformation with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 10,
+      "objective_sha256": "aaf704b5b7853c4a1e6b290a14d68efcf5920659e16e2fd25ef14b4896994d4c",
+      "guide_sections": [
+        "2. Exploring Data Transformation with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 11,
+      "objective_sha256": "1a6d119006f9ac1c1d977d3c4d08dc7a3cc224d4772d3ea61e0a85183b90daea",
+      "guide_sections": [
+        "2. Exploring Data Transformation with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 12,
+      "objective_sha256": "51d165bfa38f7dc004423ce48d31403b054d20395a06c9b791a89948f8df772c",
+      "guide_sections": [
+        "2. Exploring Data Transformation with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 13,
+      "objective_sha256": "b74b319953b9e072c114384febca24045ba4c30a6bf7c29165b0b2e1ad0aabc2",
+      "guide_sections": [
+        "2. Exploring Data Transformation with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 14,
+      "objective_sha256": "8e2940751f89c8019c109da6ab0117217b19abbc50eb48c232b17e622e61596f",
+      "guide_sections": [
+        "2. Exploring Data Transformation with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "9aed05f9be4745bf6df31918bf189c3cc03696e106fd9c71880ce69c4994d0c8",
+      "guide_sections": [
+        "3. Innovating with Google Cloud Artificial Intelligence — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "3abcb906621948de1d4e00901e6bebe7ee1f3f0705682a7d7fd0ecd6ca2044cc",
+      "guide_sections": [
+        "3. Innovating with Google Cloud Artificial Intelligence — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "d61a047fb8de19dec0b4276624602ecfe77dd5a21e4ac5934c5e5b7793433dc1",
+      "guide_sections": [
+        "3. Innovating with Google Cloud Artificial Intelligence — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "0d198610c9ae7196db28ed3acf44bd9591b3c160f5a6ed1e0f8f6412be7757df",
+      "guide_sections": [
+        "3. Innovating with Google Cloud Artificial Intelligence — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "1a973e4a10a0e117aabaab4094aed4e193a7e90c5f729c846b014739b1316abb",
+      "guide_sections": [
+        "3. Innovating with Google Cloud Artificial Intelligence — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "c61ccdd8844d8ea9b2929a800a7e14c8c073b313f41e8a38d767f5525201ea84",
+      "guide_sections": [
+        "3. Innovating with Google Cloud Artificial Intelligence — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "dee3746262bb97ed28a82233e1aeb0821180febd36c2c89ffe4c7955a4f488cb",
+      "guide_sections": [
+        "3. Innovating with Google Cloud Artificial Intelligence — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "46b85f4c48e9c48512c64446786a8a8361f7c4b38551a317605c1eaaf2774175",
+      "guide_sections": [
+        "3. Innovating with Google Cloud Artificial Intelligence — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "49a824600d358314e258a323bd961da01a27e7a04ac34a9ce2f7f78639a30ddd",
+      "guide_sections": [
+        "3. Innovating with Google Cloud Artificial Intelligence — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 10,
+      "objective_sha256": "80ed8bf2184f6b0eb665f47caf8458c8fc2044987ea22d209b5cc8a5700dc28e",
+      "guide_sections": [
+        "3. Innovating with Google Cloud Artificial Intelligence — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 11,
+      "objective_sha256": "a0a557bc72be58836cccf02ee4b4cb8ddbd11c4a7422786a2a5f8829ee0ab67c",
+      "guide_sections": [
+        "3. Innovating with Google Cloud Artificial Intelligence — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 12,
+      "objective_sha256": "c691147c2e8ec20fd528c5c1914dbc1e14d7402a39e093a0dd8b14e6ed26b288",
+      "guide_sections": [
+        "3. Innovating with Google Cloud Artificial Intelligence — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "3089e1bf482950990299d80702450c849ba04d9527583a60d0b44bf2839688e1",
+      "guide_sections": [
+        "4. Modernize Infrastructure and Applications — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "734d2972eaadfb00ee9cd2c99dbcf910405d0e75e6e2284105fc414a06ec309e",
+      "guide_sections": [
+        "4. Modernize Infrastructure and Applications — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "7f8562a3ad90a5e497aa2b8bbcced7b130b415ada966791baeb2f7a2aaf8c3ce",
+      "guide_sections": [
+        "4. Modernize Infrastructure and Applications — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "0ae24ad7ea6a895b8b85301e085f8aafb7b3c0b859a9506a3275b79fa404f0ad",
+      "guide_sections": [
+        "4. Modernize Infrastructure and Applications — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "745ea9e869b96176dd26a29d91a2654dd88e1a183e105de4cd61c8afaa875497",
+      "guide_sections": [
+        "4. Modernize Infrastructure and Applications — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "94ef7ee8c2936916688306bb3adb93130ca95edd49118aadd59623b3e185f961",
+      "guide_sections": [
+        "4. Modernize Infrastructure and Applications — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "7d6b84030912c2d65d62d7f68cc1ff46c96b524b3d01f42207f5d8fa3f5ecb0a",
+      "guide_sections": [
+        "4. Modernize Infrastructure and Applications — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "0ca5d6ff5b6a831fcb09735f87d10b63e7f25f6d16ac0a6ca7a6f021e9a40926",
+      "guide_sections": [
+        "4. Modernize Infrastructure and Applications — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "0df09275c9e2a5550fcd0a5b802082986c2a79dce13308a8d79456714bb346c0",
+      "guide_sections": [
+        "4. Modernize Infrastructure and Applications — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 10,
+      "objective_sha256": "c35098ccd449f7ba4a9e2060951b290d3913b9237a1b98c2c6176e6e8a2ba4c9",
+      "guide_sections": [
+        "4. Modernize Infrastructure and Applications — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "494f6a61bac425736e6a811b4ab34e6bb220ca9db9e6b2cb2610f59f388e0db6",
+      "guide_sections": [
+        "5. Trust and Security with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "fe7678d3b378f99e5183f9e616df6457bdf2fc969e33c4c031f05d1f0a082abd",
+      "guide_sections": [
+        "5. Trust and Security with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "f8381068d47e8def1506ed7abb8db8f248da1431f76436f14563969c41fca2cd",
+      "guide_sections": [
+        "5. Trust and Security with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "d3e4d20fe81bb4aacfe9400bd011a4a3b5d72a10ada37d31865cbfb9716bb139",
+      "guide_sections": [
+        "5. Trust and Security with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "50f441bc15aa9683b8c8f5d749061d43a8cd8dadabba44ddb84c1580a4bd2139",
+      "guide_sections": [
+        "5. Trust and Security with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "1f420cf7b576398689249e57f4479ca3880091767423e89e6ed20a429cd1af09",
+      "guide_sections": [
+        "5. Trust and Security with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "f8acae60ebf6df9f4e2761c05926aa780680159251089148efc8c7bd97e19177",
+      "guide_sections": [
+        "5. Trust and Security with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 8,
+      "objective_sha256": "653177fde6446fe27218503397bec1f143cf034dc108b512897a7dbb31435583",
+      "guide_sections": [
+        "5. Trust and Security with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 9,
+      "objective_sha256": "53aeb2da3f801b4d47460ee0ba32bb301d1b7cfa91940fb799eab9cf7efa4c72",
+      "guide_sections": [
+        "5. Trust and Security with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 10,
+      "objective_sha256": "be3effc948707ef1cea4801e9c30587df0241dd06141ed15e7e02fa464a8a19e",
+      "guide_sections": [
+        "5. Trust and Security with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 11,
+      "objective_sha256": "aa05cd429b06fb3daadb89691af6d2d1937f2b9a731ed513e78a90a3774a9669",
+      "guide_sections": [
+        "5. Trust and Security with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 12,
+      "objective_sha256": "7e3c85b967b57cb239c6aade10b73a3dbeec894b8a3d40cdd23494959bb6eaed",
+      "guide_sections": [
+        "5. Trust and Security with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 13,
+      "objective_sha256": "8aa11a1321726a70b840f5e756f0dc62ee4385f0a6724ec066e8446e18db4fea",
+      "guide_sections": [
+        "5. Trust and Security with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 14,
+      "objective_sha256": "988b53fab491a278f6ab599ab364951bbb967b6cef26a5e8842ff40f13276683",
+      "guide_sections": [
+        "5. Trust and Security with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 15,
+      "objective_sha256": "e63d1dba6fcb2e411aa02f42a4058c0fb794ed6c675d2a169c459cc926390ebf",
+      "guide_sections": [
+        "5. Trust and Security with Google Cloud — about 18%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "822f486582d7e5a8a196b2e0322477a639e22884d3cce887318476cdf2e7df98",
+      "guide_sections": [
+        "6. Scaling with Google Cloud Operations — about 10%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "2b4db920a69e2c853615b930b7177bf26279937dd701164dcb5c0b90274c9b1b",
+      "guide_sections": [
+        "6. Scaling with Google Cloud Operations — about 10%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "ee9a315fbae09d18a5b33b70cc197bb5075141bd667f4b7e7c5f86a3471769d5",
+      "guide_sections": [
+        "6. Scaling with Google Cloud Operations — about 10%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "4fd82b4c225e780a17d7a1f924d17a39ed2bc6dabd2e2c551f60e8f5693ee65a",
+      "guide_sections": [
+        "6. Scaling with Google Cloud Operations — about 10%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "21fe16f5175b9810eb5094bbef6fc20c331bc0ba2c63ea3b5fbe5a31d323186b",
+      "guide_sections": [
+        "6. Scaling with Google Cloud Operations — about 10%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "6f761420cf039d692dea71bf556e7180dee0be954a185da9280eca877b6f4a10",
+      "guide_sections": [
+        "6. Scaling with Google Cloud Operations — about 10%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "e574b3501acc6e7470dfe5083c904a72a0590440370296b84395aeffc3ca70f4",
+      "guide_sections": [
+        "6. Scaling with Google Cloud Operations — about 10%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 8,
+      "objective_sha256": "5ea4b91e53d6e95ca1781f28a59657669e822ef7add8c81d555d6e816e43d094",
+      "guide_sections": [
+        "6. Scaling with Google Cloud Operations — about 10%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 9,
+      "objective_sha256": "5922b752a4c19565f15be4314c1ef68a712f0edef89d02e1766375a72fd9e5bf",
+      "guide_sections": [
+        "6. Scaling with Google Cloud Operations — about 10%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 10,
+      "objective_sha256": "b95a76fd7bb54b10815734190e89be4126a4f1afedc25a8f24ca933cc81215d5",
+      "guide_sections": [
+        "6. Scaling with Google Cloud Operations — about 10%",
+        "Integrated scenarios",
+        "Hands-on labs",
+        "Original knowledge checks",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "GOOGLE-CLOUD-DIGITAL-LEADER",
+        "title": "Cloud Digital Leader",
+        "url": "https://cloud.google.com/learn/certification/cloud-digital-leader",
+        "guide_path": "guides/GOOGLE-CLOUD-DIGITAL-LEADER-cloud-digital-leader.md",
+        "snapshot_path": "data\\objective-snapshots\\google-cloud-digital-leader-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\google-cloud-digital-leader-official-status.json",
+        "previous_sha256": "998892823a5a1a3cf2b508e3145f723c4c9e17181d62f59ec78d2e633f4eca8d",
+        "current_sha256": "998892823a5a1a3cf2b508e3145f723c4c9e17181d62f59ec78d2e633f4eca8d",
+        "previous_status_sha256": "c0fdb613222bacfa0b623c744483f6505466d583a9284e62928ad2634cc390c9",
+        "current_status_sha256": "c0fdb613222bacfa0b623c744483f6505466d583a9284e62928ad2634cc390c9",
+        "official_status": {
+          "skills_versions": [
+            "Length: 90 minutes",
+            "Registration fee: $99 (plus tax where applicable)",
+            "Languages: English, Japanese, Spanish, Portuguese, French",
+            "Exam format: 50-60 multiple choice and multiple select",
+            "Validity period: 3 years",
+            "Prerequisites: None",
+            "Recommended experience: Experience collaborating with",
+            "Validity period: 1 year",
+            "Length: 45 minutes",
+            "Registration fee: $60 (plus tax where applicable)",
+            "Languages: English, Japanese",
+            "Exam format: 20 multiple choice and multiple select questions"
+          ],
+          "upcoming_announcements": [
+            "As of August 12, the new version of"
+          ]
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 28,
+    "reachable": 26,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "google-cdl-certification",
+      "url": "https://cloud.google.com/learn/certification/cloud-digital-leader",
+      "checked_at": "2026-09-29T06:36:31.633636+00:00",
+      "health": {
+        "id": "google-cdl-certification",
+        "url": "https://cloud.google.com/learn/certification/cloud-digital-leader",
+        "checked_at": "2026-09-29T06:36:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloud.google.com/learn/certification/cloud-digital-leader",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Cloud Digital Leader | Learn | Google Cloud",
+        "canonical_url": "https://cloud.google.com/learn/certification/cloud-digital-leader",
+        "duration_signals": [
+          "45 minutes",
+          "90 minutes"
+        ],
+        "signal_fingerprint": "08e2d908b4a27b55fe28fb9081906b4fbc0160a7c568b56c1282cfb757add4e0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cloud.google.com/learn/certification/cloud-digital-leader",
+      "sha256": "ba827b7f76acebd91448a6ce6aef1ed2ef6be2902016733ffe4bb53272634beb",
+      "text_characters": 5661
+    },
+    {
+      "id": "google-cdl-exam-guide-2026-08-12",
+      "url": "https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf",
+      "checked_at": "2026-09-29T06:42:46.317275+00:00",
+      "health": {
+        "id": "google-cdl-exam-guide-2026-08-12",
+        "url": "https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf",
+        "checked_at": "2026-09-29T06:42:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf",
+      "sha256": "ac8e54acc53a8ed2c3ce67a1d0439c71bff2bb0f00c881871fae435f8cc8d253",
+      "bytes": 221890,
+      "pdf_pages": 7,
+      "text_characters": 18103
+    },
+    {
+      "id": "google-cdl-study-guide",
+      "url": "https://services.google.com/fh/files/misc/cloud_digital_leader_study_guide_english.pdf",
+      "checked_at": "2026-09-29T06:42:53.494752+00:00",
+      "health": {
+        "id": "google-cdl-study-guide",
+        "url": "https://services.google.com/fh/files/misc/cloud_digital_leader_study_guide_english.pdf",
+        "checked_at": "2026-09-29T06:42:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/cloud_digital_leader_study_guide_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/cloud_digital_leader_study_guide_english.pdf",
+      "sha256": "ae63bee17c91c047679d4f601943c7c3b7b606b01b581d2369ad4c7561e156f8",
+      "bytes": 8847797,
+      "pdf_pages": 15,
+      "text_characters": 34023
+    },
+    {
+      "id": "google-cdl-skills-path",
+      "url": "https://www.skills.google/paths/9?locale=en",
+      "checked_at": "2026-09-29T06:36:32.977315+00:00",
+      "health": {
+        "id": "google-cdl-skills-path",
+        "url": "https://www.skills.google/paths/9?locale=en",
+        "checked_at": "2026-09-29T06:36:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skills.google/paths/9?locale=en",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Cloud Digital Leader Certification | Google Skills",
+        "canonical_url": "https://www.skills.google/paths/9",
+        "duration_signals": [],
+        "signal_fingerprint": "4efd4573423b05665fc9cb7d9a655828f8b7b41b62e75c9739256fe0d0844f0a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skills.google/paths/9?locale=en",
+      "sha256": "7008d2ca1815e5fb7e6e456717fe7f561cbd1860d39e298b17c05042baf885fd",
+      "text_characters": 976
+    },
+    {
+      "id": "google-cdl-sample-questions",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSedAmf77MGS7FGEaylFzY51KtBd7kkIZJIMDsV5zSRSmpKIOA/viewform",
+      "checked_at": "2026-09-29T06:36:36.879582+00:00",
+      "health": {
+        "id": "google-cdl-sample-questions",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSedAmf77MGS7FGEaylFzY51KtBd7kkIZJIMDsV5zSRSmpKIOA/viewform",
+        "checked_at": "2026-09-29T06:36:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSedAmf77MGS7FGEaylFzY51KtBd7kkIZJIMDsV5zSRSmpKIOA/viewform",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Cloud Digital Leader Sample Questions",
+        "canonical_url": "https://docs.google.com/forms/d/e/1FAIpQLSedAmf77MGS7FGEaylFzY51KtBd7kkIZJIMDsV5zSRSmpKIOA/viewform",
+        "duration_signals": [],
+        "signal_fingerprint": "1d967b9d9c26dfc2e139a2b9f719560b4e99ce65dc18a0759e4960ca7eebdc02",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSedAmf77MGS7FGEaylFzY51KtBd7kkIZJIMDsV5zSRSmpKIOA/viewform",
+      "sha256": "08bea6bf84332304dfda8e5e560cae7d4afd4f11fe5c60c0c99e68d6cca8936c",
+      "text_characters": 658
+    },
+    {
+      "id": "google-cdl-youtube",
+      "url": "https://www.youtube.com/playlist?list=PLBgogxgQVM9s9ByaiNCqjnPuiKvb8fgRu",
+      "checked_at": "2026-09-29T06:36:38.175802+00:00",
+      "health": {
+        "id": "google-cdl-youtube",
+        "url": "https://www.youtube.com/playlist?list=PLBgogxgQVM9s9ByaiNCqjnPuiKvb8fgRu",
+        "checked_at": "2026-09-29T06:36:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/playlist?list=PLBgogxgQVM9s9ByaiNCqjnPuiKvb8fgRu",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Cloud Digital Leader",
+        "canonical_url": "http://www.youtube.com/playlist?list=PLBgogxgQVM9s9ByaiNCqjnPuiKvb8fgRu",
+        "duration_signals": [],
+        "signal_fingerprint": "3649fb60ba1a2da5ade8c9ea52bbf3e6f22200f26c52b368e58600236572b5c6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/playlist?list=PLBgogxgQVM9s9ByaiNCqjnPuiKvb8fgRu",
+      "sha256": "d9d2f83b63df82d0f4e466dd63c7cc61681b1bf7288182cfbae016d6ecdb6465",
+      "text_characters": 183
+    },
+    {
+      "id": "google-cdl-coursera",
+      "url": "https://www.coursera.org/professional-certificates/google-cloud-digital-leader-training",
+      "checked_at": "2026-09-29T06:36:38.706729+00:00",
+      "health": {
+        "id": "google-cdl-coursera",
+        "url": "https://www.coursera.org/professional-certificates/google-cloud-digital-leader-training",
+        "checked_at": "2026-09-29T06:36:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.coursera.org/professional-certificates/google-cloud-digital-leader-training",
+        "content_type": "text/html",
+        "page_title": "Google Cloud Digital Leader Training",
+        "canonical_url": "https://www.coursera.org/professional-certificates/google-cloud-digital-leader-training",
+        "duration_signals": [
+          "1 hour",
+          "10 hours",
+          "2 hours",
+          "5 hours",
+          "P1M"
+        ],
+        "signal_fingerprint": "cee829ec17f63b53114cc83b7178d6226f32bb8a6d7e669c3c0247da10ee2fc9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.coursera.org/professional-certificates/google-cloud-digital-leader-training",
+      "sha256": "0d9ec640ba3bb5bca99bf52a747b0e7f2336e462fac7a93f91d16a86357cc040",
+      "text_characters": 15934
+    },
+    {
+      "id": "google-cdl-oreilly-flynn",
+      "url": "https://www.oreilly.com/library/view/google-cloud-certified/9781394219803/",
+      "checked_at": "2026-09-29T06:36:39.315500+00:00",
+      "health": {
+        "id": "google-cdl-oreilly-flynn",
+        "url": "https://www.oreilly.com/library/view/google-cloud-certified/9781394219803/",
+        "checked_at": "2026-09-29T06:36:39+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/google-cloud-certified/9781394219803/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "google-cdl-udemy-in28minutes",
+      "url": "https://www.udemy.com/course/google-cloud-digital-leader-certification/",
+      "checked_at": "2026-09-29T06:36:39.654040+00:00",
+      "health": {
+        "id": "google-cdl-udemy-in28minutes",
+        "url": "https://www.udemy.com/course/google-cloud-digital-leader-certification/",
+        "checked_at": "2026-09-29T06:36:39+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/google-cloud-digital-leader-certification/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "google-cdl-whizlabs-coursera",
+      "url": "https://www.coursera.org/learn/exam-prep-google-cloud-certified-cloud-digital-leader",
+      "checked_at": "2026-09-29T06:36:39.874831+00:00",
+      "health": {
+        "id": "google-cdl-whizlabs-coursera",
+        "url": "https://www.coursera.org/learn/exam-prep-google-cloud-certified-cloud-digital-leader",
+        "checked_at": "2026-09-29T06:36:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.coursera.org/learn/exam-prep-google-cloud-certified-cloud-digital-leader",
+        "content_type": "text/html",
+        "page_title": "Exam Prep: Google Cloud Certified Cloud Digital Leader",
+        "canonical_url": "https://www.coursera.org/learn/exam-prep-google-cloud-certified-cloud-digital-leader",
+        "duration_signals": [
+          "00 hours",
+          "10 hours",
+          "10 minutes",
+          "115 minutes",
+          "2 hours",
+          "2 minutes",
+          "20 minutes",
+          "3 hours",
+          "3 minutes",
+          "30 minutes",
+          "35 minutes",
+          "4 hours",
+          "4 minutes",
+          "45 minutes",
+          "48 minutes",
+          "49 minutes",
+          "5 minutes",
+          "50 minutes",
+          "51 minutes",
+          "57 minutes",
+          "58 minutes",
+          "6 minutes",
+          "60 minutes",
+          "65 minutes",
+          "7 minutes",
+          "70 minutes",
+          "75 minutes",
+          "77 minutes",
+          "8 minutes",
+          "82 minutes"
+        ],
+        "signal_fingerprint": "1246fb2fdc9bf03fbc27d9b5ea4a07c3b1fac5cb7b8ac9bf0ac5e71b0d3a3948",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.coursera.org/learn/exam-prep-google-cloud-certified-cloud-digital-leader",
+      "sha256": "eadd7b9018251b0dc2eaa6c8e9c421f6c2b288c3c2ed9c7853be4b1877638330",
+      "text_characters": 16837
+    },
+    {
+      "id": "gcp-storage-classes",
+      "url": "https://docs.cloud.google.com/storage/docs/storage-classes",
+      "checked_at": "2026-09-29T06:45:25.893288+00:00",
+      "health": {
+        "id": "gcp-storage-classes",
+        "url": "https://docs.cloud.google.com/storage/docs/storage-classes",
+        "checked_at": "2026-09-29T06:45:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/storage/docs/storage-classes",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Storage classes | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/storage/docs/storage-classes",
+        "duration_signals": [],
+        "signal_fingerprint": "a864decdb758506fb9ba386cf8184c2ed1532791bbbaad86301a73901d002ae8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/storage/docs/storage-classes",
+      "sha256": "04f4eaba1942efed66cb8da27be8411a201b7a427e312bb5b79f67e3e8c05163",
+      "text_characters": 11246
+    },
+    {
+      "id": "gcp-autoclass",
+      "url": "https://docs.cloud.google.com/storage/docs/autoclass",
+      "checked_at": "2026-09-29T06:45:25.894186+00:00",
+      "health": {
+        "id": "gcp-autoclass",
+        "url": "https://docs.cloud.google.com/storage/docs/autoclass",
+        "checked_at": "2026-09-29T06:45:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/storage/docs/autoclass",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Autoclass | Cloud Storage | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/storage/docs/autoclass",
+        "duration_signals": [],
+        "signal_fingerprint": "1fcfc16ba763ba11561faa6c24d29632b6ceae18468747c788021b36c21b412d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/storage/docs/autoclass",
+      "sha256": "61fee39cdb67376756dc3c61e200c2ad4eef1cc1b81f614ba71bc3470958c0b6",
+      "text_characters": 12414
+    },
+    {
+      "id": "gcp-budget-alerts",
+      "url": "https://docs.cloud.google.com/billing/docs/how-to/budgets",
+      "checked_at": "2026-09-29T06:45:25.894734+00:00",
+      "health": {
+        "id": "gcp-budget-alerts",
+        "url": "https://docs.cloud.google.com/billing/docs/how-to/budgets",
+        "checked_at": "2026-09-29T06:45:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/billing/docs/how-to/budgets",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Create, edit, or delete budgets and budget alerts | Cloud Billing | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/billing/docs/how-to/budgets",
+        "duration_signals": [
+          "10 minutes"
+        ],
+        "signal_fingerprint": "7806342d2105891448af166a56ad019cb509e38960225da4c3c73e15b7cf4320",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/billing/docs/how-to/budgets",
+      "sha256": "c15dc8fb7fc8f8398ecb1d49fcef40285deb503b304475e505b3060744332fe2",
+      "text_characters": 60641
+    },
+    {
+      "id": "gcp-iam-hierarchy",
+      "url": "https://docs.cloud.google.com/iam/docs/resource-hierarchy-access-control",
+      "checked_at": "2026-09-29T06:45:27.242231+00:00",
+      "health": {
+        "id": "gcp-iam-hierarchy",
+        "url": "https://docs.cloud.google.com/iam/docs/resource-hierarchy-access-control",
+        "checked_at": "2026-09-29T06:45:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/iam/docs/resource-hierarchy-access-control",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Using resource hierarchy for access control | Identity and Access Management (IAM) | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/iam/docs/resource-hierarchy-access-control",
+        "duration_signals": [],
+        "signal_fingerprint": "4e028916d50ba552ce7189b3b332ff91b5532136d4eef7a51c4a03c7a07e8629",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/iam/docs/resource-hierarchy-access-control",
+      "sha256": "272f514e0c8ca95239b6f10e5c55fd79ffaf7e8657c663858db1d5e1cdfaa311",
+      "text_characters": 11704
+    },
+    {
+      "id": "gcp-run-overview",
+      "url": "https://docs.cloud.google.com/run/docs/overview/what-is-cloud-run",
+      "checked_at": "2026-09-29T06:45:27.471218+00:00",
+      "health": {
+        "id": "gcp-run-overview",
+        "url": "https://docs.cloud.google.com/run/docs/overview/what-is-cloud-run",
+        "checked_at": "2026-09-29T06:45:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/run/docs/overview/what-is-cloud-run",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "What is Cloud Run | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/run/docs/overview/what-is-cloud-run",
+        "duration_signals": [],
+        "signal_fingerprint": "716e148d0e9cd688b45cf9e0df0a4934c8eb89a6a0863b03b15920aaeef11cbd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/run/docs/overview/what-is-cloud-run",
+      "sha256": "d71e4b983220c1bb926c67926bc2ff9f62d8fd35ef30af00dc8d3a52783d0ad5",
+      "text_characters": 17654
+    },
+    {
+      "id": "gcp-gemini-enterprise-2026",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+      "checked_at": "2026-09-29T06:45:27.643188+00:00",
+      "health": {
+        "id": "gcp-gemini-enterprise-2026",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+        "checked_at": "2026-09-29T06:45:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "The new Gemini Enterprise: one platform for agent development | Google Cloud Blog",
+        "canonical_url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+        "duration_signals": [
+          "PT7M"
+        ],
+        "signal_fingerprint": "cc80068c1a73d07f059434e922cd0791ba9336f3af1086529f13625a8be13cb3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+      "sha256": "a827e2a9c43cf06aa9a40f4131da7c13c43e5c1bfea716247206a77bb52221dc",
+      "text_characters": 10678
+    },
+    {
+      "id": "gcp-model-armor-overview",
+      "url": "https://docs.cloud.google.com/model-armor/overview",
+      "checked_at": "2026-09-29T06:45:28.804187+00:00",
+      "health": {
+        "id": "gcp-model-armor-overview",
+        "url": "https://docs.cloud.google.com/model-armor/overview",
+        "checked_at": "2026-09-29T06:45:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/model-armor/overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Model Armor overview | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/model-armor/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "13534481a4842604f2f012904a5ee2f4142fb440ffd8c52a32ccc1b2f14d3965",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/model-armor/overview",
+      "sha256": "1d85193653d6176c1b439cca9f19bd23144beb624e6c6e8287d4410618a27e83",
+      "text_characters": 26957
+    },
+    {
+      "id": "gcp-model-armor-integrations",
+      "url": "https://docs.cloud.google.com/model-armor/integrations",
+      "checked_at": "2026-09-29T06:45:28.813241+00:00",
+      "health": {
+        "id": "gcp-model-armor-integrations",
+        "url": "https://docs.cloud.google.com/model-armor/integrations",
+        "checked_at": "2026-09-29T06:45:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/model-armor/integrations",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Overview | Model Armor | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/model-armor/integrations",
+        "duration_signals": [],
+        "signal_fingerprint": "de6ac1041b92403b081f0e74ec0ca8656fc026d20e36b260804c12f123e2ce7d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/model-armor/integrations",
+      "sha256": "255b5bcfdb9c0530ad3a060f1b2fc73ea8fd19a15a295f2efdebd0ae192555b2",
+      "text_characters": 13726
+    },
+    {
+      "id": "gcp-ai-protection",
+      "url": "https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview",
+      "checked_at": "2026-09-29T06:45:29.069135+00:00",
+      "health": {
+        "id": "gcp-ai-protection",
+        "url": "https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview",
+        "checked_at": "2026-09-29T06:45:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AI Protection overview | Security Command Center | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "b0da68c2993f1a0c655e36c5b911ad11fba4b1d3da1fe50bacd57f848bc22a0a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview",
+      "sha256": "ae18169eb523003064396ec1fad6ce2208cea9148784748d4a69d1544eb964b7",
+      "text_characters": 16516
+    },
+    {
+      "id": "gcp-cloudsql-connectivity",
+      "url": "https://docs.cloud.google.com/sql/docs/postgres/connect-overview",
+      "checked_at": "2026-09-29T06:45:30.172925+00:00",
+      "health": {
+        "id": "gcp-cloudsql-connectivity",
+        "url": "https://docs.cloud.google.com/sql/docs/postgres/connect-overview",
+        "checked_at": "2026-09-29T06:45:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/sql/docs/postgres/connection-options",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Choose how to connect to Cloud SQL | Cloud SQL for PostgreSQL | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/sql/docs/postgres/connection-options",
+        "duration_signals": [],
+        "signal_fingerprint": "569a1b477f134728e7a1d00fb1f81e5a92fdea0a4f5bcf0ca2adeb53eb07b051",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/sql/docs/postgres/connection-options",
+      "sha256": "e559ca04691c09428039f6c1dde23a9705ddc168ad986e7a0f768c8b79736287",
+      "text_characters": 12754
+    },
+    {
+      "id": "gcp-firestore-consistency",
+      "url": "https://docs.cloud.google.com/firestore/native/docs/understand-reads-writes-scale",
+      "checked_at": "2026-09-29T06:45:30.226645+00:00",
+      "health": {
+        "id": "gcp-firestore-consistency",
+        "url": "https://docs.cloud.google.com/firestore/native/docs/understand-reads-writes-scale",
+        "checked_at": "2026-09-29T06:45:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/firestore/native/docs/understand-reads-writes-scale",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Understand reads and writes at scale | Firestore in Native mode | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/firestore/native/docs/understand-reads-writes-scale",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "d6de4b736b5a7a54b9ca7a7a7487694a86db15bb63e2bddac5eaa06f1fd83cf2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/firestore/native/docs/understand-reads-writes-scale",
+      "sha256": "88a7c53dd2a10419545a4282327892f52a7ce231b8e0cddf5383dda18cd13b6b",
+      "text_characters": 21896
+    },
+    {
+      "id": "gcp-slo-concepts",
+      "url": "https://docs.cloud.google.com/stackdriver/docs/solutions/slo-monitoring",
+      "checked_at": "2026-09-29T06:45:30.345277+00:00",
+      "health": {
+        "id": "gcp-slo-concepts",
+        "url": "https://docs.cloud.google.com/stackdriver/docs/solutions/slo-monitoring",
+        "checked_at": "2026-09-29T06:45:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/stackdriver/docs/solutions/slo-monitoring",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Concepts in service monitoring | Google Cloud Observability | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/stackdriver/docs/solutions/slo-monitoring",
+        "duration_signals": [
+          "200 minutes"
+        ],
+        "signal_fingerprint": "6b7388806fc4299e358a60f175af073014323b02f7c180b9f2f413bed4f1c8aa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/stackdriver/docs/solutions/slo-monitoring",
+      "sha256": "c69ec15a75c0aff18c7cce4b9be385b9075dcc4c41fcff3a591d3c4273b72888",
+      "text_characters": 14258
+    },
+    {
+      "id": "gcp-agent-platform-overview",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview",
+      "checked_at": "2026-09-29T06:47:07.026370+00:00",
+      "health": {
+        "id": "gcp-agent-platform-overview",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview",
+        "checked_at": "2026-09-29T06:47:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Agent Platform overview | Gemini Enterprise Agent Platform | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "0a5b012b906a7c0d27ac4910ade82a99943db959555203fed45900f18879ece9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview",
+      "sha256": "68544a59bf2efe77aaab90085e29e30390c63d058bcedf2431131f3926ef02f4",
+      "text_characters": 6616
+    },
+    {
+      "id": "gcp-dynamic-workload-scheduler",
+      "url": "https://docs.cloud.google.com/compute/docs/instances/about-flex-start-vms",
+      "checked_at": "2026-09-29T06:47:07.026920+00:00",
+      "health": {
+        "id": "gcp-dynamic-workload-scheduler",
+        "url": "https://docs.cloud.google.com/compute/docs/instances/about-flex-start-vms",
+        "checked_at": "2026-09-29T06:47:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/compute/docs/instances/about-flex-start-vms",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "About Flex-start VMs | Compute Engine | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/compute/docs/instances/about-flex-start-vms",
+        "duration_signals": [],
+        "signal_fingerprint": "ceb2f158754af8ecf4c81725f5aae7998ff440d7fbb02384b9a702e9b13cc729",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/compute/docs/instances/about-flex-start-vms",
+      "sha256": "5c9cb77c2d648bd2acd1dbb261d148280b77c3509a4fe0b702a4f107bd54474b",
+      "text_characters": 10752
+    },
+    {
+      "id": "gcp-dws-pricing",
+      "url": "https://cloud.google.com/products/dws/pricing",
+      "checked_at": "2026-09-29T06:47:07.027290+00:00",
+      "health": {
+        "id": "gcp-dws-pricing",
+        "url": "https://cloud.google.com/products/dws/pricing",
+        "checked_at": "2026-09-29T06:47:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloud.google.com/products/dws/pricing",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Dynamic Workload Scheduler pricing",
+        "canonical_url": "https://cloud.google.com/products/dws/pricing",
+        "duration_signals": [
+          "1 hour"
+        ],
+        "signal_fingerprint": "c139dfdd4d870df8f57c2a743d09e64f55d19729b3da803da8ba841cba522574",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cloud.google.com/products/dws/pricing",
+      "sha256": "772aed27a0b90c033cb56b7fc284a8d406146549863a457c1b8be466401569b0",
+      "text_characters": 39523
+    },
+    {
+      "id": "gcp-gemini-enterprise-app",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/docs",
+      "checked_at": "2026-09-29T06:47:10.157546+00:00",
+      "health": {
+        "id": "gcp-gemini-enterprise-app",
+        "url": "https://docs.cloud.google.com/gemini/enterprise/docs",
+        "checked_at": "2026-09-29T06:47:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/gemini/enterprise/docs",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "What is Gemini Enterprise? | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/gemini/enterprise/docs",
+        "duration_signals": [],
+        "signal_fingerprint": "01e965eeb8f71bc57cb04c80935f6f7bb9d4f19f8d99e0a3823e552ffa6d071a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/gemini/enterprise/docs",
+      "sha256": "9586f19d1af7fed9b98d6f04d98d631e5d694b2211bbcf242af2aafea9e2225e",
+      "text_characters": 6512
+    },
+    {
+      "id": "gcp-spend-cap-budgets",
+      "url": "https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps",
+      "checked_at": "2026-09-29T06:48:03.860948+00:00",
+      "health": {
+        "id": "gcp-spend-cap-budgets",
+        "url": "https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps",
+        "checked_at": "2026-09-29T06:48:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Manage spend cap budgets | Cloud Billing | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "d0225b2908b0f62618280544fabe365748511c17fd21570ad51a711be9787b04",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps",
+      "sha256": "3847cdfcd6e499de7bde9df880a9794a87d41482220fa83fe1250156ea70deff",
+      "text_characters": 19781
+    },
+    {
+      "id": "gcp-quota-overview",
+      "url": "https://docs.cloud.google.com/docs/quotas/overview",
+      "checked_at": "2026-09-29T06:48:03.862445+00:00",
+      "health": {
+        "id": "gcp-quota-overview",
+        "url": "https://docs.cloud.google.com/docs/quotas/overview",
+        "checked_at": "2026-09-29T06:48:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/docs/quotas/overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Cloud Quotas overview | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/docs/quotas/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "344c2f6c555ddce7dd69a62c3c41169861d52fbf5bf35e730dd7edc13e64369f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/docs/quotas/overview",
+      "sha256": "35cef0876f3d90687c0fb9bc309764ce567bfe622d9839ae2d2d0930ab4f96f9",
+      "text_characters": 10233
+    }
+  ],
+  "added_source_ids": [
+    "gcp-storage-classes",
+    "gcp-autoclass",
+    "gcp-budget-alerts",
+    "gcp-iam-hierarchy",
+    "gcp-run-overview",
+    "gcp-gemini-enterprise-2026",
+    "gcp-agent-platform-overview",
+    "gcp-model-armor-overview",
+    "gcp-model-armor-integrations",
+    "gcp-ai-protection",
+    "gcp-dynamic-workload-scheduler",
+    "gcp-cloudsql-connectivity",
+    "gcp-firestore-consistency",
+    "gcp-slo-concepts",
+    "gcp-dws-pricing",
+    "gcp-gemini-enterprise-app",
+    "gcp-spend-cap-budgets",
+    "gcp-quota-overview"
+  ],
+  "findings": [
+    {
+      "id": "googleclouddigitalleader-deep-1",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Agent Platform and employee app have distinct roles",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The April announcement identifies Agent Platform as the developer platform evolving Vertex AI and the app as the employee interface.",
+      "recommendation": "Separate developer lifecycle from employee discovery/use; explain that workflow building and grounding need not train model weights.",
+      "disposition": "applied",
+      "source_id": "gcp-gemini-enterprise-2026",
+      "resolution": "Separate developer lifecycle from employee discovery/use; explain that workflow building and grounding need not train model weights."
+    },
+    {
+      "id": "googleclouddigitalleader-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Cloud Run has multiple execution forms",
+      "url": "https://docs.cloud.google.com/run/docs/overview/what-is-cloud-run",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current overview describes services, completion jobs, worker pools and singleton instances; worker scaling differs from service scaling.",
+      "recommendation": "Correct request-only description and qualify additional forms as current product context, not newly added exam objectives.",
+      "disposition": "applied",
+      "source_id": "gcp-run-overview",
+      "resolution": "Correct request-only description and qualify additional forms as current product context, not newly added exam objectives."
+    },
+    {
+      "id": "googleclouddigitalleader-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Archive access and minimum storage duration are different decisions",
+      "url": "https://docs.cloud.google.com/storage/docs/storage-classes",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Archive is online with low-latency access; cold-class minimum durations concern billing and a new default class does not change existing objects.",
+      "recommendation": "Add access, minimum-duration/retention and existing-object distinctions.",
+      "disposition": "applied",
+      "source_id": "gcp-storage-classes",
+      "resolution": "Add access, minimum-duration/retention and existing-object distinctions."
+    },
+    {
+      "id": "googleclouddigitalleader-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Autoclass is management with separate rules and pricing",
+      "url": "https://docs.cloud.google.com/storage/docs/autoclass",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Autoclass manages class transitions, defaults to Nearline terminal class, leaves small objects Standard and has distinct fees.",
+      "recommendation": "Separate the feature from individual storage classes; qualify pricing and transition details.",
+      "disposition": "applied",
+      "source_id": "gcp-autoclass",
+      "resolution": "Separate the feature from individual storage classes; qualify pricing and transition details."
+    },
+    {
+      "id": "googleclouddigitalleader-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "NoSQL does not imply eventual default reads",
+      "url": "https://docs.cloud.google.com/firestore/native/docs/understand-reads-writes-scale",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Firestore documents strong default reads and ACID writes.",
+      "recommendation": "Teach data model versus operation/consistency choice without assuming every NoSQL service behaves alike.",
+      "disposition": "applied",
+      "source_id": "gcp-firestore-consistency",
+      "resolution": "Teach data model versus operation/consistency choice without assuming every NoSQL service behaves alike."
+    },
+    {
+      "id": "googleclouddigitalleader-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A narrower child allow grant does not subtract inherited access",
+      "url": "https://docs.cloud.google.com/iam/docs/resource-hierarchy-access-control",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Effective allow policies are the union of parent and resource grants, with deny policies a separate consideration.",
+      "recommendation": "Add an inherited Editor/child Viewer counterexample and separate constraints from grants.",
+      "disposition": "applied",
+      "source_id": "gcp-iam-hierarchy",
+      "resolution": "Add an inherited Editor/child Viewer counterexample and separate constraints from grants."
+    },
+    {
+      "id": "googleclouddigitalleader-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Detection and model refusal do not prove integration enforcement",
+      "url": "https://docs.cloud.google.com/model-armor/overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Inspect-only allows processing; inspect-and-block supplies a verdict honored by the integration; model refusal may occur independently.",
+      "recommendation": "Require correlated logs and downstream behavior plus allowed and blocked controls, without claiming a live test.",
+      "disposition": "applied",
+      "source_id": "gcp-model-armor-overview",
+      "resolution": "Require correlated logs and downstream behavior plus allowed and blocked controls, without claiming a live test."
+    },
+    {
+      "id": "googleclouddigitalleader-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Preview spend caps change an overly broad budget rule",
+      "url": "https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current preview can pause new eligible-service use within one project; estimated costs, delays, in-flight and fixed costs prevent an exact account-wide ceiling.",
+      "recommendation": "Distinguish alerts-only budgets from preview caps, describe limits and manual lifting, and execute only fictional arithmetic.",
+      "disposition": "applied",
+      "source_id": "gcp-spend-cap-budgets",
+      "resolution": "Distinguish alerts-only budgets from preview caps, describe limits and manual lifting, and execute only fictional arithmetic."
+    },
+    {
+      "id": "googleclouddigitalleader-deep-9",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "DWS billing depends on mode and date",
+      "url": "https://cloud.google.com/products/dws/pricing",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Flex-start is usage based; Calendar mode charges the reserved duration; rates are scheduled to change in November 2026.",
+      "recommendation": "Teach start-time/commitment tradeoffs without embedding volatile rates or treating DWS as Spot.",
+      "disposition": "applied",
+      "source_id": "gcp-dws-pricing",
+      "resolution": "Teach start-time/commitment tradeoffs without embedding volatile rates or treating DWS as Spot."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "gcp-gemini-enterprise-2026",
+      "authors": [
+        "Brian Delahunty",
+        "Michael Gerstenhaber"
+      ],
+      "published_on": "2026-04-22",
+      "disposition": "accepted-with-limits",
+      "value": "Clarify developer Agent Platform versus employee app and relationship to older Vertex AI naming.",
+      "limits": "Full public article read; adopted naming context only, not all feature availability, security or performance claims."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "cloud_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 26,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "65c2f367d6c6488f773e946ce25992b28c439716d4fb20550ce86098f8c3c0c9",
+      "execution_boundary": "Standard-library arithmetic with fictional request and cost inputs. No Google Cloud API, provider SLO evaluator, billing forecast, spend cap, notification or real invoice was accessed."
+    }
+  },
+  "answered_checks": 44,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "All eight complete decision labs remain proposed. Only the exact public Python arithmetic worksheet was executed, with 26 checks.",
+    "No cloud account, project, API, model, IAM policy, workload, budget, spend cap, notification, billing control or real invoice was accessed or changed. No Google Cloud enforcement, capacity, storage, reliability or restore behavior was validated live.",
+    "The SLI, unit-cost and forecast examples use fictional inputs and explicit assumptions; they are not implementations of Google provider services.",
+    "Spend caps are preview and scoped; DWS prices change over time. Extra Cloud Run forms are current product context, not additions to the accepted August exam scope.",
+    "Google Skills course durations and YouTube/sample-form content were not fully exposed; blocked OReilly/Udemy metadata remains explicitly unverified. Public Coursera outlines were read, but no paid lessons, labs, sample questions or proprietary assessment items were accessed.",
+    "Two initially guessed documentation paths returned missing; corrected official paths were fetched successfully. Failed attempts remain in the operational receipt."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Standard-library arithmetic with fictional request and cost inputs. No Google Cloud API, provider SLO evaluator, billing forecast, spend cap, notification or real invoice was accessed.",
+    "passed": 26,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "65c2f367d6c6488f773e946ce25992b28c439716d4fb20550ce86098f8c3c0c9",
+    "learning_catalog_consistency": "passed"
+  },
+  "actual_pdf_receipts": [
+    {
+      "id": "google-cdl-exam-guide-2026-08-12",
+      "url": "https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf",
+      "checked_at": "2026-09-29T06:42:46.317275+00:00",
+      "health": {
+        "id": "google-cdl-exam-guide-2026-08-12",
+        "url": "https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf",
+        "checked_at": "2026-09-29T06:42:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf",
+      "sha256": "ac8e54acc53a8ed2c3ce67a1d0439c71bff2bb0f00c881871fae435f8cc8d253",
+      "bytes": 221890,
+      "pdf_pages": 7,
+      "text_characters": 18103
+    },
+    {
+      "id": "google-cdl-study-guide",
+      "url": "https://services.google.com/fh/files/misc/cloud_digital_leader_study_guide_english.pdf",
+      "checked_at": "2026-09-29T06:42:53.494752+00:00",
+      "health": {
+        "id": "google-cdl-study-guide",
+        "url": "https://services.google.com/fh/files/misc/cloud_digital_leader_study_guide_english.pdf",
+        "checked_at": "2026-09-29T06:42:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/cloud_digital_leader_study_guide_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/cloud_digital_leader_study_guide_english.pdf",
+      "sha256": "ae63bee17c91c047679d4f601943c7c3b7b606b01b581d2369ad4c7561e156f8",
+      "bytes": 8847797,
+      "pdf_pages": 15,
+      "text_characters": 34023
+    }
+  ],
+  "initial_missing_documentation_paths": [
+    {
+      "id": "gcp-agent-platform-overview",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/docs/start/introduction-unified-platform",
+      "checked_at": "2026-09-29T06:45:28.515049+00:00",
+      "health": {
+        "id": "gcp-agent-platform-overview",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/docs/start/introduction-unified-platform",
+        "checked_at": "2026-09-29T06:45:28+00:00",
+        "status": "missing",
+        "http_status": 404,
+        "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/docs/start/introduction-unified-platform",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Not Found"
+      }
+    },
+    {
+      "id": "gcp-dynamic-workload-scheduler",
+      "url": "https://docs.cloud.google.com/compute/docs/dws-overview",
+      "checked_at": "2026-09-29T06:45:30.052679+00:00",
+      "health": {
+        "id": "gcp-dynamic-workload-scheduler",
+        "url": "https://docs.cloud.google.com/compute/docs/dws-overview",
+        "checked_at": "2026-09-29T06:45:30+00:00",
+        "status": "missing",
+        "http_status": 404,
+        "final_url": "https://docs.cloud.google.com/compute/docs/dws-overview",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Not Found"
+      }
+    }
+  ]
+}
