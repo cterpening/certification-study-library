@@ -1,0 +1,1800 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "EX267",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/EX267-red-hat-certified-developer-in-ai.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "99e303e940a7627f78467e340723ecffaa73f7d07d62b27e770642beab1ec10b",
+  "guide_after_sha256": "048853f5cb17b7d8af3b5cd46953ddd88a00500474131a0095e7f9d95ffff369",
+  "prior_records": {
+    "exam": {
+      "code": "EX267",
+      "level": "expert",
+      "vendor_id": "red-hat",
+      "title": "Red Hat Certified Developer in AI",
+      "status": "active",
+      "study_guide_url": "https://www.redhat.com/en/services/training/ex267-red-hat-certified-developer-in-ai",
+      "guide_path": "guides/EX267-red-hat-certified-developer-in-ai.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Red Hat recommends DO288 or comparable OpenShift application experience plus AI267 or comparable OpenShift AI experience. Practice one reproducible OpenShift AI 3.3 lifecycle on OpenShift 4.20 across projects, workbenches, connections, placement, KServe/OpenVINO/vLLM serving, registry, TrustyAI and hardware monitoring, pipelines, model selection/compression/LMEval, Git/model development, and bounded streaming, RAG, agentic and guardrailed applications."
+    },
+    "review": {
+      "id": "ex267-2026-09-01-source-validation",
+      "exam_code": "EX267",
+      "guide_path": "guides/EX267-red-hat-certified-developer-in-ai.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ex267-official-objectives.txt",
+      "blueprint_snapshot_sha256": "b741b76b2ba6259872d38449c397048d494185090c80d53064aa5d9ab32208fe",
+      "objective_coverage": [
+        {
+          "objective_group": "Architecture and fundamentals",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Lab 8"
+          ]
+        },
+        {
+          "objective_group": "Projects and workbenches",
+          "guide_sections": [
+            "Sections 1–2",
+            "Integrated scenarios 1 and 3",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Data connections",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios 1 and 3",
+            "Labs 3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Resource allocation",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenario 2",
+            "Labs 4, 7 and 8"
+          ]
+        },
+        {
+          "objective_group": "Deploy and serve models",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Labs 5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Model Registry",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenarios 1–2",
+            "Labs 5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Model and performance monitoring",
+          "guide_sections": [
+            "Section 7",
+            "All integrated scenarios",
+            "Labs 7–8"
+          ]
+        },
+        {
+          "objective_group": "Data science pipelines",
+          "guide_sections": [
+            "Section 8",
+            "Integrated scenario 1",
+            "Labs 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Model optimization and evaluation",
+          "guide_sections": [
+            "Section 9",
+            "Integrated scenario 2",
+            "Labs 7–8"
+          ]
+        },
+        {
+          "objective_group": "Generative AI applications",
+          "guide_sections": [
+            "Section 10",
+            "Integrated scenario 3",
+            "Lab 8"
+          ]
+        },
+        {
+          "objective_group": "Git and model development",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenario 1",
+            "Labs 1–2, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Deploy and store models refinement",
+          "guide_sections": [
+            "Sections 3, 5–6",
+            "All integrated scenarios",
+            "Labs 3, 5 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 10,
+        "reachable": 8,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All 12 unweighted EX267 groups were reconciled with OpenShift AI 3.3 on OpenShift 4.20. The repeated deploy/store group is mapped as a model-serving refinement, not an invented weight. Three scenarios, eight labs and 40 original checks cover the complete governed lifecycle, failure evidence, persistence and rollback. All ten URLs are cataloged: eight reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. Older and rolling material has a 3.3/4.20 gap checklist; no gated course labs or recalled exam tasks are used."
+    },
+    "sources": [
+      {
+        "id": "redhat-ex267-blueprint",
+        "title": "Red Hat Certified Developer in AI exam",
+        "url": "https://www.redhat.com/en/services/training/ex267-red-hat-certified-developer-in-ai",
+        "publisher": "Red Hat",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX267"
+        ],
+        "notes": "Canonical performance-based EX267 page with 12 unweighted task groups. Baseline is Red Hat OpenShift AI 3.3 on OpenShift Container Platform 4.20; the final deploy/store group refines model-serving tasks already listed earlier."
+      },
+      {
+        "id": "redhat-ex267-ai267",
+        "title": "Developing and Deploying AI/ML Applications on Red Hat OpenShift AI AI267",
+        "url": "https://www.redhat.com/en/services/training/ai267-developing-and-deploying-ai/ml-applications-on-red-hat-openshift-ai",
+        "publisher": "Red Hat",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX267"
+        ],
+        "notes": "Closest official course, updated to OpenShift AI 3.3 and OpenShift 4.20; delivery, duration, promotion and entitlement are volatile."
+      },
+      {
+        "id": "redhat-ex267-ai067",
+        "title": "Red Hat AI Technical Overview AI067",
+        "url": "https://www.redhat.com/en/services/training/ai067-red-hat-ai-technical-overview",
+        "publisher": "Red Hat",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX267"
+        ],
+        "notes": "Broad free AI-platform orientation; useful context but not a complete EX267 or fixed 3.3 objective route."
+      },
+      {
+        "id": "redhat-ex267-rhoai33-docs",
+        "title": "Red Hat OpenShift AI Self-Managed 3.3 documentation",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3",
+        "publisher": "Red Hat",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX267"
+        ],
+        "notes": "Version-pinned product documentation for workbenches, connections, pipelines, serving, registry, TrustyAI, evaluation and related 3.3 workflows."
+      },
+      {
+        "id": "redhat-ex267-ocp420-docs",
+        "title": "OpenShift Container Platform 4.20 documentation",
+        "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.20",
+        "publisher": "Red Hat",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX267"
+        ],
+        "notes": "Official platform reference for the EX267 OpenShift 4.20 baseline, including projects, RBAC, scheduling, storage, networking, security and monitoring."
+      },
+      {
+        "id": "redhat-ex267-developer-hub",
+        "title": "OpenShift AI learning",
+        "url": "https://developers.redhat.com/learn/openshift-ai",
+        "publisher": "Red Hat Developer",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX267"
+        ],
+        "notes": "Free task-focused hub for workbenches, pipelines, vLLM, RAG and other OpenShift AI workflows; resource versions vary and require a 3.3 gap check."
+      },
+      {
+        "id": "redhat-ex267-introduction",
+        "title": "Introduction to OpenShift AI",
+        "url": "https://developers.redhat.com/learn/openshift-ai/introduction-openshift-ai",
+        "publisher": "Red Hat Developer",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX267"
+        ],
+        "notes": "One-hour listed beginner path using a Developer Sandbox to create a project, workbench and notebook; orientation only."
+      },
+      {
+        "id": "redhat-ex267-oreilly-infrastructure",
+        "title": "Scalable Kubernetes Infrastructure for AI Platforms",
+        "url": "https://www.oreilly.com/library/view/scalable-kubernetes-infrastructure/9798341608191/",
+        "publisher": "O'Reilly / Red Hat authors",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX267"
+        ],
+        "notes": "February 2025, 50 pages and one hour six minutes listed; concise OpenShift AI engineering context for pipelines, serving/vLLM, registry, monitoring and guardrails, not an exact 3.3 exam map."
+      },
+      {
+        "id": "redhat-ex267-udemy-vimal",
+        "title": "LLM on OpenShift AI Deployment Masterclass",
+        "url": "https://www.udemy.com/course/llm-on-openshift-ai-deployment-masterclass/",
+        "publisher": "Udemy / Vimal Daga",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX267"
+        ],
+        "notes": "Two hours 49 minutes and eight lectures listed, updated August 2026; focused vLLM/KServe deployment supplement requiring an explicit 3.3 workflow check."
+      },
+      {
+        "id": "redhat-ex267-training-update",
+        "title": "Accelerate and upskill with Red Hat AI training and certification",
+        "url": "https://www.redhat.com/en/blog/accelerate-and-upskill-red-hat-ai-training-and-certification",
+        "publisher": "Red Hat",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "EX267"
+        ],
+        "notes": "July 2026 lifecycle context confirming that AI267 was updated to OpenShift AI 3.3."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "936b9af2d650884a02643680ab6cedf9c382a97b4922002a1ddeb5f897e0cc66",
+      "guide_sections": [
+        "1. Architecture, projects, and lifecycle",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "8f17ac097324125c102b4b24c21dfddbef4002cb4ca320325a37b2f1b56162bb",
+      "guide_sections": [
+        "1. Architecture, projects, and lifecycle",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "bf7f884c83ba918a8077773a1e7dca765d9630c731cf318dce66c641743c5569",
+      "guide_sections": [
+        "1. Architecture, projects, and lifecycle",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "bdc5bbd3f87b067582de87fc4e495892d4d34540c25c28112bee73e760c5d730",
+      "guide_sections": [
+        "2. Workbenches, images, and collaborative development",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "d20cb4e6628461c06737bd0ea1ef942d47a7bb5be82e19acc572546e954399c0",
+      "guide_sections": [
+        "2. Workbenches, images, and collaborative development",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "b183245683b587c7226d84ae54a73d29ed9d245f177af9b876765146fb39c942",
+      "guide_sections": [
+        "2. Workbenches, images, and collaborative development",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "073128591854559175bcb445c4cc3360cf19e63c1de55f4eb6d6eb2292151982",
+      "guide_sections": [
+        "2. Workbenches, images, and collaborative development",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "8bff1dd3639a5e2d684986ebeb5c8cbe2fff9e2e32eaaa2f52225a9114729850",
+      "guide_sections": [
+        "3. Data connections and artifact boundaries",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "1eecd1adbbbdf7b5a139a1629658a30c3439ad406a8fc8edaa9e6667d9cf1b88",
+      "guide_sections": [
+        "3. Data connections and artifact boundaries",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "a53890cd47bc2247584bc7124f1389600ba56bd96d481cc79640d058963fd6d6",
+      "guide_sections": [
+        "4. Resources, scheduling, and accelerator evidence",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "c05e65a7be90ca0fc86f4ceccef24711856e58e809f143b4a4b5fde7aed11d90",
+      "guide_sections": [
+        "4. Resources, scheduling, and accelerator evidence",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "268e17993108afef1fa3260d9918ce46ffbd836a5093629729e670f3205a463c",
+      "guide_sections": [
+        "5. Model serving with KServe",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "5c08bfb134108e0a1faed7c310880901ac88e90b81267b7a98842e20bee62844",
+      "guide_sections": [
+        "5. Model serving with KServe",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "dd30a3efd2d1533d1dc836d9832c2a3051e92817ce1c3fe2682212c0c5b57618",
+      "guide_sections": [
+        "5. Model serving with KServe",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "b668cfe89111840911ef2d31f9d8d9cbb91b70eb18e607e718d671bcc39ad061",
+      "guide_sections": [
+        "5. Model serving with KServe",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "f1d5b130d1a57f02f43103f73a488c92d793993570de16acc4aac22000bf20f7",
+      "guide_sections": [
+        "5. Model serving with KServe",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "2cd05758b68f9a3245da6d909fdc1803a08016ea8aeea9b80c61a38e9f8f87da",
+      "guide_sections": [
+        "5. Model serving with KServe",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "1b0de819aacfbc9644959548df36053d16c4c3d64da0a1e386902b20257ec8a8",
+      "guide_sections": [
+        "6. Model Registry and lineage",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "8c2377955565c9550b92a941e71fa1c337fe1e3fa979e4b39d163f6fca7ad57c",
+      "guide_sections": [
+        "6. Model Registry and lineage",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "a5ddfd59f35bfaec20621fb370a5eaf476dbaec4125fd2a98624235c419b7a80",
+      "guide_sections": [
+        "6. Model Registry and lineage",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "bb7fdb59c664df825dab74f6c3115cd152cb9d14b1a6dfe267d806a37add91ba",
+      "guide_sections": [
+        "6. Model Registry and lineage",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "9ff97de1f4c710a7ca981e6df8abb744f64b92c31c9a471f33ce8333f6dbc614",
+      "guide_sections": [
+        "7. Monitoring models and platform performance",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "1ff94987d21bcf465003168b0e6946136333d50c72540c49e9cf23b30f7d241b",
+      "guide_sections": [
+        "7. Monitoring models and platform performance",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "95bfedb12e8fadddbb1ce2e393c9e458e321d22a1fac8754b10a868266978eef",
+      "guide_sections": [
+        "7. Monitoring models and platform performance",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "c370820a03233c8e44663d89518d611eb7f5c4e8bece8a98bc440aff01f623d6",
+      "guide_sections": [
+        "8. Data science pipelines and experiments",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "08fd0ae5212a13db87a27bfeceb0163c192a328b5411226bc7a6ea948c270368",
+      "guide_sections": [
+        "8. Data science pipelines and experiments",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "043dd59978761940040e20b5d86a98349114c2c18eb332c166d50d0245f6045a",
+      "guide_sections": [
+        "8. Data science pipelines and experiments",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "a51099519f2934b8098cc568d1b0c9c077640c4f8aa40f40d1c1171d97a527ee",
+      "guide_sections": [
+        "8. Data science pipelines and experiments",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "b8a9ab34e6a82e9e069bf6273f863882b2bb5e734ff8aff2085983c154c0e3af",
+      "guide_sections": [
+        "9. Model selection, optimization, and evaluation",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "72d236b0758a8914127d7d8f883a39e72dd8e1a48a6e622c8b2724af075cb768",
+      "guide_sections": [
+        "9. Model selection, optimization, and evaluation",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "6debd8dc13d9461e334056da9156a46a996faef1dca04cbfe1383368f082851e",
+      "guide_sections": [
+        "9. Model selection, optimization, and evaluation",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "f70a26cd39b4d5797d77d5755b8114b1fb520fefeb9043a4b245125da2f0bfb4",
+      "guide_sections": [
+        "10. Generative, retrieval, agentic, and guardrailed applications",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "9dc6662e26eea813cf13ad02b8871660e665236ae26c9f7bce40f0dc5b2c8af4",
+      "guide_sections": [
+        "10. Generative, retrieval, agentic, and guardrailed applications",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "88e6a9dff48b381121da34e05f47c31ff4fb36c6486fe2f56e7d9223a23d28c3",
+      "guide_sections": [
+        "10. Generative, retrieval, agentic, and guardrailed applications",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "ad56714213919fade776e63a25eb5121137f62d429b4e6a3ad0f775d33cbb761",
+      "guide_sections": [
+        "10. Generative, retrieval, agentic, and guardrailed applications",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "322723caddbe0a34edeac06b9a5c038745ac9063d4f0c2ce868e9f4fa8314c45",
+      "guide_sections": [
+        "10. Generative, retrieval, agentic, and guardrailed applications",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "bf4916d8c81b9c082095abd817080cfb74445ab2ef5007966ae004703268db52",
+      "guide_sections": [
+        "2. Workbenches, images, and collaborative development",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "c2cc48e62cd97885dce5d9f06e806d336a152c7bce435303b7298cad848488e0",
+      "guide_sections": [
+        "2. Workbenches, images, and collaborative development",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "6dc7fb7b10cb3f8ca0e65b953aea74c8b239024b738ce9ef2138ac9437337ce4",
+      "guide_sections": [
+        "2. Workbenches, images, and collaborative development",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "bf2e7f80a7ce5fc14eb7db1cc1c59be3ca0f29de8cfd66dc917379e24445579f",
+      "guide_sections": [
+        "5. Model serving with KServe",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "242e09525e409c6227d29c722371f7be0ee26aa0269e5a528a99bd3cbb754011",
+      "guide_sections": [
+        "5. Model serving with KServe",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "bb35df7dd19f15ea8bd104a0a00a584188745c3c8bfb8db30c56982d9fd09c81",
+      "guide_sections": [
+        "5. Model serving with KServe",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "67d43d9fe4b9e4df4260598d4ab540664779966d4d680af5c838ca96a7a71f38",
+      "guide_sections": [
+        "5. Model serving with KServe",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "EX267",
+        "title": "Red Hat Certified Developer in AI",
+        "url": "https://www.redhat.com/en/services/training/ex267-red-hat-certified-developer-in-ai",
+        "guide_path": "guides/EX267-red-hat-certified-developer-in-ai.md",
+        "snapshot_path": "data\\objective-snapshots\\ex267-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ex267-official-status.json",
+        "previous_sha256": "b741b76b2ba6259872d38449c397048d494185090c80d53064aa5d9ab32208fe",
+        "current_sha256": "b741b76b2ba6259872d38449c397048d494185090c80d53064aa5d9ab32208fe",
+        "previous_status_sha256": "4d9f046e726cb3e88fa046796eacaba9d4001e0ea14c9db7703ea0c40b9f5468",
+        "current_status_sha256": "4d9f046e726cb3e88fa046796eacaba9d4001e0ea14c9db7703ea0c40b9f5468",
+        "official_status": {
+          "skills_versions": [
+            "Red Hat Certified Developer in AI | EX267",
+            "This exam is based on Red Hat OpenShift AI version 3.3 and Red Hat OpenShift Container Platform version 4.20."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 25,
+    "reachable": 23,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "redhat-ex267-blueprint",
+      "url": "https://www.redhat.com/en/services/training/ex267-red-hat-certified-developer-in-ai",
+      "checked_at": "2026-09-29T02:47:04.023076+00:00",
+      "health": {
+        "id": "redhat-ex267-blueprint",
+        "url": "https://www.redhat.com/en/services/training/ex267-red-hat-certified-developer-in-ai",
+        "checked_at": "2026-09-29T02:47:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.redhat.com/en/services/training/ex267-red-hat-certified-developer-in-ai",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Red Hat Certified Developer in AI | EX267",
+        "canonical_url": "https://www.redhat.com/en/services/training/ex267-red-hat-certified-developer-in-ai",
+        "duration_signals": [],
+        "signal_fingerprint": "8af3e320d17eb76f15564ac646d7a818838c342bd79d7e8f9be506aa8ae5a2a4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.redhat.com/en/services/training/ex267-red-hat-certified-developer-in-ai",
+      "sha256": "cd149855cd139a24852565da7ee93c76b74c60d4490c62d5bf43102e27853932",
+      "text_characters": 13298
+    },
+    {
+      "id": "redhat-ex267-ai267",
+      "url": "https://www.redhat.com/en/services/training/ai267-developing-and-deploying-ai/ml-applications-on-red-hat-openshift-ai",
+      "checked_at": "2026-09-29T02:47:04.023767+00:00",
+      "health": {
+        "id": "redhat-ex267-ai267",
+        "url": "https://www.redhat.com/en/services/training/ai267-developing-and-deploying-ai/ml-applications-on-red-hat-openshift-ai",
+        "checked_at": "2026-09-29T02:47:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.redhat.com/en/services/training/ai267-developing-and-deploying-ai/ml-applications-on-red-hat-openshift-ai",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Developing and Deploying AI/ML Applications on Red Hat OpenShift AI (AI267) | AI267",
+        "canonical_url": "https://www.redhat.com/en/services/training/ai267-developing-and-deploying-ai/ml-applications-on-red-hat-openshift-ai",
+        "duration_signals": [],
+        "signal_fingerprint": "2c60a780516e9d81f0c9fb41adffe0f9906858e202ae799b583980bf7b8ab953",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.redhat.com/en/services/training/ai267-developing-and-deploying-ai/ml-applications-on-red-hat-openshift-ai",
+      "sha256": "410073da5dbf459033430419383226c86179689a954fd9b853c4d772247aeb70",
+      "text_characters": 12165
+    },
+    {
+      "id": "redhat-ex267-ai067",
+      "url": "https://www.redhat.com/en/services/training/ai067-red-hat-ai-technical-overview",
+      "checked_at": "2026-09-29T02:47:04.024137+00:00",
+      "health": {
+        "id": "redhat-ex267-ai067",
+        "url": "https://www.redhat.com/en/services/training/ai067-red-hat-ai-technical-overview",
+        "checked_at": "2026-09-29T02:47:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.redhat.com/en/services/training/ai067-red-hat-ai-technical-overview",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Red Hat AI Technical Overview | AI067",
+        "canonical_url": "https://www.redhat.com/en/services/training/ai067-red-hat-ai-technical-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "a912524b88f313fd1f9b7db3d9a589e9c3658479499afe30d8cac2e4fa420cc8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.redhat.com/en/services/training/ai067-red-hat-ai-technical-overview",
+      "sha256": "3fb27183e646605a86cd7bdb7805532e5f46ba8fdf017fcba9347bb1a9b29b20",
+      "text_characters": 9118
+    },
+    {
+      "id": "redhat-ex267-rhoai33-docs",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3",
+      "checked_at": "2026-09-29T02:47:05.559745+00:00",
+      "health": {
+        "id": "redhat-ex267-rhoai33-docs",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3",
+        "checked_at": "2026-09-29T02:47:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Red Hat OpenShift AI Self-Managed | 3.3 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3",
+        "duration_signals": [],
+        "signal_fingerprint": "3a10355c09efdc032e5dac84831de33b6074cea9366f343cf60e1be2cadc3eb3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3",
+      "sha256": "04686c2bf8e57983fedab2355c0efc87d22dc47aed294ac212a279b5902dd61f",
+      "text_characters": 6509
+    },
+    {
+      "id": "redhat-ex267-ocp420-docs",
+      "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.20",
+      "checked_at": "2026-09-29T02:47:05.791525+00:00",
+      "health": {
+        "id": "redhat-ex267-ocp420-docs",
+        "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.20",
+        "checked_at": "2026-09-29T02:47:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.20",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "OpenShift Container Platform | 4.20 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.20",
+        "duration_signals": [],
+        "signal_fingerprint": "e89dabf1c136788b2b905f8ee7975e5c7400a990a3432fc789e7832b1dc36ab4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.20",
+      "sha256": "73b3ee80a09d29017d6a1f604176dfd621d4f665b2cdc5b69fb18ec4644513bb",
+      "text_characters": 9929
+    },
+    {
+      "id": "redhat-ex267-developer-hub",
+      "url": "https://developers.redhat.com/learn/openshift-ai",
+      "checked_at": "2026-09-29T02:47:07.028701+00:00",
+      "health": {
+        "id": "redhat-ex267-developer-hub",
+        "url": "https://developers.redhat.com/learn/openshift-ai",
+        "checked_at": "2026-09-29T02:47:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developers.redhat.com/learn/openshift-ai",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "OpenShift AI learning | Red Hat Developer",
+        "canonical_url": "https://developers.redhat.com/learn/openshift-ai",
+        "duration_signals": [],
+        "signal_fingerprint": "ad0eb270ed088babdc63546926e90f9efd60c27efd734b9ff1e7d931ca416828",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developers.redhat.com/learn/openshift-ai",
+      "sha256": "1dccfc1cc4c9b00c903bc9720907cb9b91b023945e61bbe9ad0665f32d9b31cd",
+      "text_characters": 3416
+    },
+    {
+      "id": "redhat-ex267-introduction",
+      "url": "https://developers.redhat.com/learn/openshift-ai/introduction-openshift-ai",
+      "checked_at": "2026-09-29T02:47:07.346219+00:00",
+      "health": {
+        "id": "redhat-ex267-introduction",
+        "url": "https://developers.redhat.com/learn/openshift-ai/introduction-openshift-ai",
+        "checked_at": "2026-09-29T02:47:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developers.redhat.com/learn/openshift-ai/introduction-openshift-ai",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Introduction to OpenShift AI | Red Hat Developer",
+        "canonical_url": "https://developers.redhat.com/learn/openshift-ai/introduction-openshift-ai",
+        "duration_signals": [
+          "1 hr"
+        ],
+        "signal_fingerprint": "e8b65b03a9cdb4b811f267538f6a04a4cbf0df1e1acad6069dae38a53354deb2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developers.redhat.com/learn/openshift-ai/introduction-openshift-ai",
+      "sha256": "d952523cc338c6b2312e0c4427326bab06cbb76db58e150fa7031b5f27c1276e",
+      "text_characters": 1750
+    },
+    {
+      "id": "redhat-ex267-oreilly-infrastructure",
+      "url": "https://www.oreilly.com/library/view/scalable-kubernetes-infrastructure/9798341608191/",
+      "checked_at": "2026-09-29T02:47:07.715880+00:00",
+      "health": {
+        "id": "redhat-ex267-oreilly-infrastructure",
+        "url": "https://www.oreilly.com/library/view/scalable-kubernetes-infrastructure/9798341608191/",
+        "checked_at": "2026-09-29T02:47:07+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/scalable-kubernetes-infrastructure/9798341608191/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "redhat-ex267-udemy-vimal",
+      "url": "https://www.udemy.com/course/llm-on-openshift-ai-deployment-masterclass/",
+      "checked_at": "2026-09-29T02:47:07.856934+00:00",
+      "health": {
+        "id": "redhat-ex267-udemy-vimal",
+        "url": "https://www.udemy.com/course/llm-on-openshift-ai-deployment-masterclass/",
+        "checked_at": "2026-09-29T02:47:07+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/llm-on-openshift-ai-deployment-masterclass/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "redhat-ex267-training-update",
+      "url": "https://www.redhat.com/en/blog/accelerate-and-upskill-red-hat-ai-training-and-certification",
+      "checked_at": "2026-09-29T02:47:07.935206+00:00",
+      "health": {
+        "id": "redhat-ex267-training-update",
+        "url": "https://www.redhat.com/en/blog/accelerate-and-upskill-red-hat-ai-training-and-certification",
+        "checked_at": "2026-09-29T02:47:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.redhat.com/en/blog/accelerate-and-upskill-red-hat-ai-training-and-certification",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Accelerate and upskill with Red Hat AI training and certification",
+        "canonical_url": "https://www.redhat.com/en/blog/accelerate-and-upskill-red-hat-ai-training-and-certification",
+        "duration_signals": [
+          "100 hours"
+        ],
+        "signal_fingerprint": "6d5bc2a65078a58598a89bae4086704e191cfab095af205df3a19fb086ef09c4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.redhat.com/en/blog/accelerate-and-upskill-red-hat-ai-training-and-certification",
+      "sha256": "12ee2898025c10eb66a2fa6829772c7d92e29c96c3282a20ad2f03c9a2d01cb0",
+      "text_characters": 12062
+    },
+    {
+      "id": "redhat-exam-version-objectives",
+      "url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+      "checked_at": "2026-09-29T02:07:46.213957+00:00",
+      "health": {
+        "id": "redhat-exam-version-objectives",
+        "url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+        "checked_at": "2026-09-29T02:07:46.213957+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+        "content_type": "application/pdf",
+        "page_title": "Red Hat Certification Exam Objectives by Version",
+        "canonical_url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+        "duration_signals": [],
+        "signal_fingerprint": "9fc973d3c5345287218c795e493bd3bab411df150d103127b4df3b162e66c8e4",
+        "error": ""
+      },
+      "initial_health": {
+        "id": "redhat-exam-version-objectives",
+        "url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+        "checked_at": "2026-09-29T02:00:45+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      },
+      "http_status": 200,
+      "final_url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+      "sha256": "9fc973d3c5345287218c795e493bd3bab411df150d103127b4df3b162e66c8e4",
+      "text_characters": 2477,
+      "representation_note": "Same-day directly fetched public PDF reused; EX267 sections separately read."
+    },
+    {
+      "id": "rhoai33-release",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/release_notes/index",
+      "checked_at": "2026-09-29T02:52:43.260496+00:00",
+      "health": {
+        "id": "rhoai33-release",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/release_notes/index",
+        "checked_at": "2026-09-29T02:52:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/release_notes/index",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Release notes | Red Hat OpenShift AI Self-Managed | 3.3 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/release_notes/index",
+        "duration_signals": [],
+        "signal_fingerprint": "1a8c5920ed660f983b76107e7bc27dce40997ead781aa8cecc3097c313378f63",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/release_notes/index",
+      "sha256": "5d7481d4ba58695ee903f9efa19ba8df063ca43723a2e36a0066c58cb20f44ce",
+      "text_characters": 83779
+    },
+    {
+      "id": "rhoai33-deploy",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/deploying_models/index",
+      "checked_at": "2026-09-29T02:52:43.261130+00:00",
+      "health": {
+        "id": "rhoai33-deploy",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/deploying_models/index",
+        "checked_at": "2026-09-29T02:52:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/deploying_models/index",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Deploy large models using the single-model serving platform (KServe RawDeployment) | Deploy large models using the single-model serving platform (KServe RawDeployment) | Red Hat OpenShift AI Self-Managed | 3.3 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/deploying_models/index",
+        "duration_signals": [
+          "1 hour",
+          "1 minute",
+          "15 minutes",
+          "2 hours",
+          "24 hours",
+          "30 minutes",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "f0f63bb33234cf70c11123a06df5f9c0b9ab0eca1c0ac80131b1122cde4befce",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/deploying_models/index",
+      "sha256": "ace9cb8bc56fde4e661ccaa7d75c3e6ad296d055d9a8898498315a250e9b82d0",
+      "text_characters": 66417
+    },
+    {
+      "id": "rhoai33-serving",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/configuring_your_model-serving_platform/index",
+      "checked_at": "2026-09-29T02:52:43.261542+00:00",
+      "health": {
+        "id": "rhoai33-serving",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/configuring_your_model-serving_platform/index",
+        "checked_at": "2026-09-29T02:52:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/configuring_your_model-serving_platform/index",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Configuring your model-serving platform | Red Hat OpenShift AI Self-Managed | 3.3 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/configuring_your_model-serving_platform/index",
+        "duration_signals": [],
+        "signal_fingerprint": "b6d4d99caef421e6901a954e10d733af3567570b9e0f3cd44051fc57b672bbb2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/configuring_your_model-serving_platform/index",
+      "sha256": "8895a134621e98eeee46e954591993d348f154d756f5058631c4b83817caef50",
+      "text_characters": 41526
+    },
+    {
+      "id": "rhoai33-pipelines",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_ai_pipelines/index",
+      "checked_at": "2026-09-29T02:52:45.697645+00:00",
+      "health": {
+        "id": "rhoai33-pipelines",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_ai_pipelines/index",
+        "checked_at": "2026-09-29T02:52:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_ai_pipelines/index",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Build, schedule, and track machine learning pipelines | Build, schedule, and track machine learning pipelines | Red Hat OpenShift AI Self-Managed | 3.3 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_ai_pipelines/index",
+        "duration_signals": [
+          "10 minutes"
+        ],
+        "signal_fingerprint": "c6f902da5137eaf5881ec0d35cc55a15107fee53f3914c3d2caf5045f8427311",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_ai_pipelines/index",
+      "sha256": "ad3430f81c85ea5f2c1b2c201438f95a863615ae3e17423b451011f5e5c4cf51",
+      "text_characters": 145392
+    },
+    {
+      "id": "rhoai33-workbench",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/creating_a_workbench/index",
+      "checked_at": "2026-09-29T02:52:47.026741+00:00",
+      "health": {
+        "id": "rhoai33-workbench",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/creating_a_workbench/index",
+        "checked_at": "2026-09-29T02:52:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/creating_a_workbench/index",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Provision secure workbenches and custom images for teams | Provision secure workbenches and custom images for teams | Red Hat OpenShift AI Self-Managed | 3.3 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/creating_a_workbench/index",
+        "duration_signals": [
+          "6 minutes"
+        ],
+        "signal_fingerprint": "fbe1e3690804e50cd0842adaab479f8219518d23cb9b6ff9ee554e62a87552a3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/creating_a_workbench/index",
+      "sha256": "4779649811ff71aa3937fb62193c8bb9cc554723b3314a2cc8132b9d86c0ef3a",
+      "text_characters": 23263
+    },
+    {
+      "id": "rhoai33-resources",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_accelerators/index",
+      "checked_at": "2026-09-29T02:52:50.224362+00:00",
+      "health": {
+        "id": "rhoai33-resources",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_accelerators/index",
+        "checked_at": "2026-09-29T02:52:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_accelerators/index",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Provision hardware configurations and resources for projects | Provision hardware configurations and resources for projects | Red Hat OpenShift AI Self-Managed | 3.3 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_accelerators/index",
+        "duration_signals": [],
+        "signal_fingerprint": "2ca4a3a87bfbf5e9e505533a7057ee3680e6f5da72c95d7002def9d0e09951df",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_accelerators/index",
+      "sha256": "460f0cdd77fa440eb8d7b379195c73a103b86ada9c36cac17f92e72c632fc348",
+      "text_characters": 39696
+    },
+    {
+      "id": "rhoai33-registry",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_model_registries/index",
+      "checked_at": "2026-09-29T02:52:51.688312+00:00",
+      "health": {
+        "id": "rhoai33-registry",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_model_registries/index",
+        "checked_at": "2026-09-29T02:52:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_model_registries/index",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Register, version, and promote models with the model registry | Register, version, and promote models with the model registry | Red Hat OpenShift AI Self-Managed | 3.3 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_model_registries/index",
+        "duration_signals": [],
+        "signal_fingerprint": "6cc86e586eaca5f30f4cf4087fcffa90a1a85f320ed669e7f95f176a6c78ee18",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_model_registries/index",
+      "sha256": "1bb7c038d5a0fd1242fbefa5bc6ef075e62d61270253b2eaf6ef212501e2ff5a",
+      "text_characters": 31694
+    },
+    {
+      "id": "rhoai33-s3",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_data_in_an_s3-compatible_object_store/index",
+      "checked_at": "2026-09-29T02:52:51.851377+00:00",
+      "health": {
+        "id": "rhoai33-s3",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_data_in_an_s3-compatible_object_store/index",
+        "checked_at": "2026-09-29T02:52:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_data_in_an_s3-compatible_object_store/index",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Connect your workbench to S3-compatible object storage | Connect your workbench to S3-compatible object storage | Red Hat OpenShift AI Self-Managed | 3.3 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_data_in_an_s3-compatible_object_store/index",
+        "duration_signals": [],
+        "signal_fingerprint": "d4cc903c2f38b88da6440a087e2a06c40bb77e12322bf8bd83719f3a2d90b1b5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_data_in_an_s3-compatible_object_store/index",
+      "sha256": "b87c1d88aefdb877d26acbb0e3ea8c3683846e72a86e5de968a7949f91dac764",
+      "text_characters": 24631
+    },
+    {
+      "id": "rhoai33-eval",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/evaluating_ai_systems/index",
+      "checked_at": "2026-09-29T02:52:53.397251+00:00",
+      "health": {
+        "id": "rhoai33-eval",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/evaluating_ai_systems/index",
+        "checked_at": "2026-09-29T02:52:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/evaluating_ai_systems/index",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Evaluating AI systems with LM-Eval | Evaluating AI systems with LM-Eval | Red Hat OpenShift AI Self-Managed | 3.3 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/evaluating_ai_systems/index",
+        "duration_signals": [
+          "10 minutes"
+        ],
+        "signal_fingerprint": "67f54a91230cf6827c561e43f1f5a9e9de72e7d5e311259093a71c4889136181",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/evaluating_ai_systems/index",
+      "sha256": "f4e7b042e8ae6ce57ae300ae4d0bc2762e33d90d73910b8a6144cda05d43007d",
+      "text_characters": 88389
+    },
+    {
+      "id": "rhoai33-guardrails",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/enabling_ai_safety_with_guardrails/index",
+      "checked_at": "2026-09-29T02:52:58.954694+00:00",
+      "health": {
+        "id": "rhoai33-guardrails",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/enabling_ai_safety_with_guardrails/index",
+        "checked_at": "2026-09-29T02:52:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/enabling_ai_safety_with_guardrails/index",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Ensuring AI safety with guardrails | Ensuring AI safety with guardrails | Red Hat OpenShift AI Self-Managed | 3.3 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/enabling_ai_safety_with_guardrails/index",
+        "duration_signals": [],
+        "signal_fingerprint": "c8d02639b5485140f99c2e481564604c7010435c326e08150a7534be31cdd150",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/enabling_ai_safety_with_guardrails/index",
+      "sha256": "77d34dce9b981885c95b6f7aa22ce0f251d5465bf34827715188ba7b9fd6ea02",
+      "text_characters": 80106
+    },
+    {
+      "id": "rhoai33-monitor",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/monitoring_your_ai_systems/index",
+      "checked_at": "2026-09-29T02:53:01.284417+00:00",
+      "health": {
+        "id": "rhoai33-monitor",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/monitoring_your_ai_systems/index",
+        "checked_at": "2026-09-29T02:53:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/monitoring_your_ai_systems/index",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Monitoring your AI Systems | Monitoring your AI Systems | Red Hat OpenShift AI Self-Managed | 3.3 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/monitoring_your_ai_systems/index",
+        "duration_signals": [
+          "5 hours",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "0412007b3b5ffcc97954725d70170a8d240d6aab791fbce47a498403e6fb84ca",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/monitoring_your_ai_systems/index",
+      "sha256": "7605f6d9101314b48730160e0e6093176b34b402a9d5ccd910fb3b336be02d35",
+      "text_characters": 59214
+    },
+    {
+      "id": "rhoai33-customize",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/customize_models_to_build_gen_ai_applications/index",
+      "checked_at": "2026-09-29T02:53:01.440502+00:00",
+      "health": {
+        "id": "rhoai33-customize",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/customize_models_to_build_gen_ai_applications/index",
+        "checked_at": "2026-09-29T02:53:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/customize_models_to_build_gen_ai_applications/index",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Customize models to build generative AI applications | Customize models to build generative AI applications | Red Hat OpenShift AI Self-Managed | 3.3 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/customize_models_to_build_gen_ai_applications/index",
+        "duration_signals": [
+          "0.44 hours",
+          "12.99 hours",
+          "approximately 15.12 hours"
+        ],
+        "signal_fingerprint": "5609cc2f2296c1a7acdda82aee2b60f91515a95176f8fa4d9ab6482e32b59269",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/customize_models_to_build_gen_ai_applications/index",
+      "sha256": "d237c40636350812164564d85431d24ae4a7163e66f939bcf142cb9fd3945dcf",
+      "text_characters": 37315
+    },
+    {
+      "id": "redhat-modular-pipelines-blog",
+      "url": "https://developers.redhat.com/articles/2026/06/03/build-modular-ai-pipelines-openshift-ai-and-reusable-components",
+      "checked_at": "2026-09-29T02:54:53.385431+00:00",
+      "health": {
+        "id": "redhat-modular-pipelines-blog",
+        "url": "https://developers.redhat.com/articles/2026/06/03/build-modular-ai-pipelines-openshift-ai-and-reusable-components",
+        "checked_at": "2026-09-29T02:54:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developers.redhat.com/articles/2026/06/03/build-modular-ai-pipelines-openshift-ai-and-reusable-components",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Build modular AI pipelines with OpenShift AI and reusable components | Red Hat Developer",
+        "canonical_url": "https://developers.redhat.com/articles/2026/06/03/build-modular-ai-pipelines-openshift-ai-and-reusable-components",
+        "duration_signals": [],
+        "signal_fingerprint": "77d933479edf071d298044a683f0a7647942cc5a56db71463e6404e5debaf519",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developers.redhat.com/articles/2026/06/03/build-modular-ai-pipelines-openshift-ai-and-reusable-components",
+      "sha256": "58309fe661737cf34401c6189e1ccb1d07ac1569786b9df24c066c8c74a308a8",
+      "text_characters": 19479
+    },
+    {
+      "id": "kubeflow-compile-pipeline",
+      "url": "https://www.kubeflow.org/docs/components/pipelines/user-guides/core-functions/compile-a-pipeline/",
+      "checked_at": "2026-09-29T02:54:53.386264+00:00",
+      "health": {
+        "id": "kubeflow-compile-pipeline",
+        "url": "https://www.kubeflow.org/docs/components/pipelines/user-guides/core-functions/compile-a-pipeline/",
+        "checked_at": "2026-09-29T02:54:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.kubeflow.org/docs/components/pipelines/user-guides/core-functions/compile-a-pipeline/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Compile a Pipeline",
+        "canonical_url": "https://www.kubeflow.org/docs/components/pipelines/user-guides/core-functions/compile-a-pipeline/",
+        "duration_signals": [],
+        "signal_fingerprint": "c9ede5f7d1be92fe516c475ce4972f8eb149a2c7d3aeb24b8f8e5d62b0b1a1d1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.kubeflow.org/docs/components/pipelines/user-guides/core-functions/compile-a-pipeline/",
+      "sha256": "62a34f3b4616d7a6e5f5031af49703d73da606f757fdbfa57ca7bd2780b1a02f",
+      "text_characters": 7130
+    }
+  ],
+  "added_source_ids": [
+    "rhoai33-release",
+    "rhoai33-deploy",
+    "rhoai33-serving",
+    "rhoai33-pipelines",
+    "rhoai33-workbench",
+    "rhoai33-resources",
+    "rhoai33-registry",
+    "rhoai33-s3",
+    "rhoai33-eval",
+    "rhoai33-guardrails",
+    "rhoai33-monitor",
+    "rhoai33-customize",
+    "redhat-modular-pipelines-blog",
+    "kubeflow-compile-pipeline"
+  ],
+  "findings": [
+    {
+      "id": "ex267-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Main page and version PDF task coverage differ",
+      "url": "https://www.redhat.com/en/services/training/ex267-red-hat-certified-developer-in-ai",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX267"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Main page has 43 tasks including selectors/tolerations and specific-node placement; EX267V33K in the public PDF has 41 otherwise matching tasks.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "ex267-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Standard/Advanced exam terminology lacks a verified product mapping",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/deploying_models/index",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX267"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current 3.3 deployment book describes RawDeployment and Advanced settings; these words do not prove correspondence to older Standard/Advanced modes.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "ex267-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Hardware allocation needed version-specific explanation",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_accelerators/index",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX267"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Hardware Profiles supersede Accelerator Profiles/legacy sizes and configure workload resource/placement fields.",
+      "recommendation": "Explain profiles versus actual allocatable resources and add a scheduling diagnosis matrix.",
+      "disposition": "applied",
+      "source_id": "rhoai33-resources",
+      "resolution": "Explain profiles versus actual allocatable resources and add a scheduling diagnosis matrix."
+    },
+    {
+      "id": "ex267-deep-4",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Exam-listed optimization feature was not labeled with its support state",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/release_notes/index",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "EX267"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "3.3 release notes list LLM Compressor integration as Developer Preview and distinguish current APIs/annotations from deprecated forms.",
+      "recommendation": "Retain optimization scope but explicitly label the preview and update connection/registry/profile guidance.",
+      "disposition": "applied",
+      "source_id": "rhoai33-release",
+      "resolution": "Retain optimization scope but explicitly label the preview and update connection/registry/profile guidance."
+    },
+    {
+      "id": "ex267-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Registry metadata does not imply artifact storage or arbitrary URI deployment",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_model_registries/index",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX267"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Model registry records metadata; the documented URI-registered deployment path supports public OCI repositories only.",
+      "recommendation": "Separate metadata access, artifact access and direct-serving workflows; bind accepted versions to immutable payloads.",
+      "disposition": "applied",
+      "source_id": "rhoai33-registry",
+      "resolution": "Separate metadata access, artifact access and direct-serving workflows; bind accepted versions to immutable payloads."
+    },
+    {
+      "id": "ex267-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Pipeline compilation and cache behavior needed executable evidence",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_ai_pipelines/index",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX267"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "3.3 docs support plain IR and Kubernetes-native output; hidden mutable input can invalidate the meaning of a reused result.",
+      "recommendation": "Compile an original typed-artifact graph in both formats with pinned SDK, explicit cache choices and resources; test input/digest/cohort failure cases locally.",
+      "disposition": "applied",
+      "source_id": "rhoai33-pipelines",
+      "resolution": "Compile an original typed-artifact graph in both formats with pinned SDK, explicit cache choices and resources; test input/digest/cohort failure cases locally."
+    },
+    {
+      "id": "ex267-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Evaluation access controls and dataset completeness were too abstract",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/evaluating_ai_systems/index",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX267"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Platform permit settings and per-job allow settings independently control online resources and code execution; missing/undersized cohorts can undermine aggregate quality evidence.",
+      "recommendation": "Explain the two-level access boundary and include explicit expected-cohort/size criteria in the original synthetic exercise.",
+      "disposition": "applied",
+      "source_id": "rhoai33-eval",
+      "resolution": "Explain the two-level access boundary and include explicit expected-cohort/size criteria in the original synthetic exercise."
+    },
+    {
+      "id": "ex267-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Guardrail endpoint availability is not proof the guarded path ran",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/enabling_ai_safety_with_guardrails/index",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "EX267"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Detectors, Orchestrator and gateway presets have separate configuration and observation boundaries.",
+      "recommendation": "Require intended-path, safe-label/threshold, dependency-failure and streaming tests with destination-scoped credential handling.",
+      "disposition": "applied",
+      "source_id": "rhoai33-guardrails",
+      "resolution": "Require intended-path, safe-label/threshold, dependency-failure and streaming tests with destination-scoped credential handling."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "redhat-modular-pipelines-blog",
+      "authors": [
+        "Ana Biazetti",
+        "Nelesh Singla",
+        "Matt Prahl"
+      ],
+      "published_on": "2026-06-03",
+      "disposition": "accepted-with-limits",
+      "value": "Focused reusable component contracts, early input checks, dependencies inside component bodies and small-data validation.",
+      "limits": "No upstream component library or agent workflow invoked. Stability labels do not prove production/FIPS/security fitness. Original code independently authored and tested."
+    },
+    {
+      "source_id": "redhat-ex267-training-update",
+      "authors": [
+        "Heather Sherwood"
+      ],
+      "published_on": "2026-07-08",
+      "disposition": "context-only",
+      "value": "Corroborates the 3.3 training update.",
+      "limits": "Marketing article; limited-time discount, training outcomes and package entitlements not adopted as current guarantees."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "service_labs_executed": 0,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "kfp_local_checks": 39,
+      "checks": [
+        "perfect declared cohorts pass",
+        "manifest binds evaluated artifact and still requires separate approval",
+        "KFP metrics contain actual local score and decision",
+        "prepared metadata identifies row count and digest",
+        "row reorder retains canonical bytes",
+        "90 percent aggregate does not hide zero percent cohort",
+        "absent required cohort fails even at perfect accuracy",
+        "undeclared cohort fails population contract",
+        "undersized cohort fails",
+        "exact threshold boundary passes",
+        "reject empty list",
+        "reject not a list",
+        "reject duplicate ID",
+        "reject empty ID",
+        "reject missing field",
+        "reject unexpected field",
+        "reject boolean label",
+        "reject string label",
+        "reject non-binary prediction",
+        "reject empty cohort",
+        "reject non-string cohort",
+        "reject NaN threshold",
+        "reject infinite threshold",
+        "reject negative threshold",
+        "reject threshold above one",
+        "reject boolean threshold",
+        "reject zero cohort count",
+        "reject fractional cohort count",
+        "reject empty cohort declaration",
+        "reject duplicate cohort declaration",
+        "reject non-string cohort declaration",
+        "changed artifact cannot be scored under old digest",
+        "IR is a PipelineSpec, not a Kubernetes resource",
+        "Kubernetes output has two namespaced CRs",
+        "Kubernetes PipelineVersion embeds the same IR",
+        "artifact and digest are wired to the same producer",
+        "evaluation reexecutes while preparation may cache",
+        "compiler retains explicit resource limits and requests",
+        "compiler rejects Dataset-to-Model artifact mismatch"
+      ],
+      "kfp_version": "2.14.3",
+      "python_version": "3.13.14",
+      "compiled_formats": [
+        "PipelineSpec IR",
+        "Pipeline and PipelineVersion Kubernetes resources"
+      ],
+      "source_sha256": "fbc22f95f64f0679e0cfd9de13d2590b2ed2fc02f8468b34f8b9ca8d2bc0dd95",
+      "artifacts_sha256": {
+        "validation-ir.yaml": "82a513651a37a38e7f61b44dbece7742c3977e3338a939fc24b13ef5da2dbc2e",
+        "validation-kubernetes.yaml": "fc317fb7946585e8eb969a44cdc16bdba549f8cf9d617ac031c0149447126eb7"
+      },
+      "execution_boundary": "Executed original component Python bodies with real KFP Dataset/Metrics/Artifact objects and compiled graph with KFP 2.14.3. No container, KFP backend, cluster, model inference, LM-Eval, GPU, S3, registry, or deployment execution.",
+      "python_blocks_executed": 1,
+      "public_component_bodies_executed": 2,
+      "complete_pipeline_backend_runs": 0
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Unresolved main-page 43/PDF 41 task difference and Standard/Advanced terminology mapping; canonical main-page scope retained and October 5follow-up recorded.",
+    "Actual local Python component-body and KFP 2.14.3 compiler execution only; no container/KFP backend/Kubernetes/OpenShift admission or scheduling execution.",
+    "Synthetic precomputed predictions do not train or invoke a model, execute LM-Eval or prove dataset representativeness, generalization or production fairness.",
+    "No S3/database/GPU/registry/serving/TrustyAI/guardrail/remoteLLM/restart lab executed; all eight complete platform labs remain proposed.",
+    "python:3.11 is a compile-exercise image string, not a pulled/pinned/approved image or a FIPS-capable deployment.",
+    "OReilly and Udemy blocked automated access; no paid lesson interiors or current runtime metadata verified."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Executed original component Python bodies with real KFP Dataset/Metrics/Artifact objects and compiled graph with KFP2.14.3. No container, KFP backend, cluster, model inference, LM-Eval, GPU, S3, registry, or deployment execution.",
+    "learning_catalog_consistency": "passed",
+    "kfp_local_checks": 39,
+    "checks": [
+      "perfect declared cohorts pass",
+      "manifest binds evaluated artifact and still requires separate approval",
+      "KFP metrics contain actual local score and decision",
+      "prepared metadata identifies row count and digest",
+      "row reorder retains canonical bytes",
+      "90 percent aggregate does not hide zero percent cohort",
+      "absent required cohort fails even at perfect accuracy",
+      "undeclared cohort fails population contract",
+      "undersized cohort fails",
+      "exact threshold boundary passes",
+      "reject empty list",
+      "reject not a list",
+      "reject duplicate ID",
+      "reject empty ID",
+      "reject missing field",
+      "reject unexpected field",
+      "reject boolean label",
+      "reject string label",
+      "reject non-binary prediction",
+      "reject empty cohort",
+      "reject non-string cohort",
+      "reject NaN threshold",
+      "reject infinite threshold",
+      "reject negative threshold",
+      "reject threshold above one",
+      "reject boolean threshold",
+      "reject zero cohort count",
+      "reject fractional cohort count",
+      "reject empty cohort declaration",
+      "reject duplicate cohort declaration",
+      "reject non-string cohort declaration",
+      "changed artifact cannot be scored under old digest",
+      "IR is a PipelineSpec, not a Kubernetes resource",
+      "Kubernetes output has two namespaced CRs",
+      "Kubernetes PipelineVersion embeds the same IR",
+      "artifact and digest are wired to the same producer",
+      "evaluation reexecutes while preparation may cache",
+      "compiler retains explicit resource limits and requests",
+      "compiler rejects Dataset-to-Model artifact mismatch"
+    ],
+    "kfp_version": "2.14.3",
+    "python_version": "3.13.14",
+    "compiled_formats": [
+      "PipelineSpec IR",
+      "Pipeline and PipelineVersion Kubernetes resources"
+    ],
+    "source_sha256": "fbc22f95f64f0679e0cfd9de13d2590b2ed2fc02f8468b34f8b9ca8d2bc0dd95",
+    "artifacts_sha256": {
+      "validation-ir.yaml": "82a513651a37a38e7f61b44dbece7742c3977e3338a939fc24b13ef5da2dbc2e",
+      "validation-kubernetes.yaml": "fc317fb7946585e8eb969a44cdc16bdba549f8cf9d617ac031c0149447126eb7"
+    },
+    "python_blocks_executed": 1,
+    "public_component_bodies_executed": 2,
+    "complete_pipeline_backend_runs": 0
+  },
+  "version_specific_pdf_review": {
+    "url": "https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf",
+    "raw_sha256": "9fc973d3c5345287218c795e493bd3bab411df150d103127b4df3b162e66c8e4",
+    "versions": [
+      "EX267K",
+      "EX267V28K",
+      "EX267V213K",
+      "EX267V213K",
+      "EX267V33K"
+    ],
+    "text_sha256": "ba15ed61de2bbb9e0d854d0bb6b742234cdbdcd9573fd24d8d4002841c9eb49c",
+    "main_task_count": 43,
+    "pdf_v33k_task_count": 41,
+    "matching_tasks": 41,
+    "main_only_groups": [
+      {
+        "title": "Identify and allocate resources",
+        "objectives": [
+          "Use nodeSelectors and tolerations",
+          "Allocate workbenches and model servers to specific nodes"
+        ]
+      }
+    ],
+    "comparison": "All 41 PDF tasks agree with corresponding main-page groups after normalization; main page additionally requires two resource-placement tasks. Keep all43 canonical main-page tasks and retain discrepancy pending source reconciliation."
+  },
+  "local_kfp_environment": [
+    "certifi==2026.7.22",
+    "cffi==2.1.1",
+    "charset-normalizer==3.5.1",
+    "click==8.1.8",
+    "click-option-group==0.5.7",
+    "colorama==0.4.6",
+    "cryptography==50.0.1",
+    "docstring_parser==0.18.0",
+    "google-api-core==2.33.0",
+    "google-auth==2.59.0",
+    "google-cloud-core==2.7.0",
+    "google-cloud-storage==3.15.0",
+    "google-crc32c==1.9.0",
+    "google-resumable-media==2.10.2",
+    "googleapis-common-protos==1.75.0",
+    "idna==3.20",
+    "kfp==2.14.3",
+    "kfp-pipeline-spec==2.14.0",
+    "kfp-server-api==2.17.0",
+    "kubernetes==30.1.0",
+    "oauthlib==4.0.0",
+    "proto-plus==1.28.2",
+    "protobuf==6.31.1",
+    "pyasn1==0.6.4",
+    "pyasn1_modules==0.4.2",
+    "pycparser==3.0",
+    "python-dateutil==2.9.0.post0",
+    "PyYAML==6.0.3",
+    "requests==2.34.2",
+    "requests-oauthlib==2.0.0",
+    "requests-toolbelt==1.0.0",
+    "six==1.17.0",
+    "tabulate==0.10.0",
+    "urllib3==2.8.0",
+    "websocket-client==1.9.2"
+  ],
+  "compiled_artifact_interpretation": "Plain IR is the PipelineSpec itself; Kubernetes PipelineVersion embeds the identical spec. Compilation did not contact any backend or start containers."
+}

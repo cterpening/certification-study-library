@@ -2966,15 +2966,28 @@ No exact current EX200 Pluralsight, Whizlabs, or MeasureUp product was independe
 
 ### Red Hat Certified Developer in AI (EX267)
 
-- Official scope and references: [EX267 objectives](https://www.redhat.com/en/services/training/ex267-red-hat-certified-developer-in-ai), [OpenShift AI 3.3 docs](https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3), and [OpenShift 4.20 docs](https://docs.redhat.com/en/documentation/openshift_container_platform/4.20) (**35–75 selected hours while labbing**)
-- Closest official route: [AI267](https://www.redhat.com/en/services/training/ai267-developing-and-deploying-ai/ml-applications-on-red-hat-openshift-ai) (**about 4–5 instructor-led days plus 30–60 hours replay**), explicitly aligned to OpenShift AI 3.3 and OpenShift 4.20
-- Free orientation: [AI067](https://www.redhat.com/en/services/training/ai067-red-hat-ai-technical-overview) (**3–6 hours estimated**) and [Introduction to OpenShift AI](https://developers.redhat.com/learn/openshift-ai/introduction-openshift-ai) (**one listed hour plus 1–2 hours repetition**)
-- Free task-focused catalog: [Red Hat Developer OpenShift AI learning](https://developers.redhat.com/learn/openshift-ai) (**5–15 selected hours plus labs**); paths cover workbenches, vLLM, pipelines, RAG and related workflows but are not a fixed 3.3 exam map
-- Compact architecture supplement: [O'Reilly Scalable Kubernetes Infrastructure for AI Platforms](https://www.oreilly.com/library/view/scalable-kubernetes-infrastructure/9798341608191/) (**1 hour 6 minutes listed plus 3–6 hours applied review**), written by Red Hat OpenShift AI engineers
-- Focused LLM serving supplement: [Udemy LLM on OpenShift AI Deployment Masterclass](https://www.udemy.com/course/llm-on-openshift-ai-deployment-masterclass/) (**2 hours 49 minutes plus 5–10 lab hours**, updated August 2026); map every runtime, UI and configuration step to 3.3
-- Current lifecycle context: [Red Hat's OpenShift AI 3.3 training update](https://www.redhat.com/en/blog/accelerate-and-upskill-red-hat-ai-training-and-certification) (**10–20 minutes**)
+Resource details from the [EX267 guide](../guides/EX267-red-hat-certified-developer-in-ai.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Pick one version-matched core route, close precise gaps from first-party documentation, and repeatedly rebuild one project-to-pipeline-to-registry-to-serving-to-monitoring lifecycle. No exact current EX267 MeasureUp, Whizlabs, Pluralsight path, or independent practice exam was verified September 1; reject recalled-task banks and use original objective-mapped performance labs.
+This is not a complete list and is not meant to be consumed in full. Select the explanation, lab, reference, or assessment format that closes your own gaps; spend most preparation time performing and revalidating the public tasks.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Red Hat AI267 official course](https://www.redhat.com/en/services/training/ai267-developing-and-deploying-ai/ml-applications-on-red-hat-openshift-ai) | Paid; closest version-matched route | About 4–5 instructor-led days plus 30–60 hours of replay |
+| [Red Hat AI067 technical overview](https://www.redhat.com/en/services/training/ai067-red-hat-ai-technical-overview) | Free account; broad orientation | About 3–6 hours |
+| [OpenShift AI 3.3 documentation](https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3) | Free official reference | 25–50 selected hours while labbing |
+| [OpenShift Container Platform 4.20 documentation](https://docs.redhat.com/en/documentation/openshift_container_platform/4.20) | Free official prerequisite/reference | 10–25 selected hours for project, storage, scheduling, security, and monitoring gaps |
+| [Red Hat Developer OpenShift AI learning hub](https://developers.redhat.com/learn/openshift-ai) | Free; mixed-version paths | 5–15 selected hours plus labs |
+| [Introduction to OpenShift AI](https://developers.redhat.com/learn/openshift-ai/introduction-openshift-ai) | Free one-hour path; account/sandbox requirements | About 1–3 hours with repetition |
+| [Scalable Kubernetes Infrastructure for AI Platforms](https://www.oreilly.com/library/view/scalable-kubernetes-infrastructure/9798341608191/) | O'Reilly subscription; Red Hat authors | 3–6 application hours estimated; current runtime unverified (page blocked) |
+| [LLM on OpenShift AI Deployment Masterclass](https://www.udemy.com/course/llm-on-openshift-ai-deployment-masterclass/) | Paid marketplace course | 5–10 lab hours estimated; current runtime unverified (page blocked); check 3.3 workflow gaps |
+| [Red Hat 3.3 training/certification update](https://www.redhat.com/en/blog/accelerate-and-upskill-red-hat-ai-training-and-certification) | Free lifecycle context | 10–20 minutes |
+
+The paid O'Reilly and Udemy pages blocked automated rechecking on September 28; no lesson interiors or current runtime/date claims were verified.
+
+- **Reusable components:** Ana Biazetti, Nelesh Singla and Matt Prahl’s June 3, 2026 [modular AI pipelines article](https://developers.redhat.com/articles/2026/06/03/build-modular-ai-pipelines-openshift-ai-and-reusable-components) supports focused component contracts, early input validation and small-data tests. Use it as an engineering method; a stability label does not by itself prove your security, FIPS, version or production requirements.
+- **Focused 3.3 references:** pair [pipeline compilation/cache behavior](https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_ai_pipelines/index), [model registry workflows](https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_model_registries/index), [LM-Eval](https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/evaluating_ai_systems/index) and [guardrails](https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/enabling_ai_safety_with_guardrails/index) with the corresponding labs.
+
+No exact current EX267 MeasureUp, Whizlabs, Pluralsight certification path, or independent practice exam was verified. Avoid recalled-task banks and “actual exam” claims. A performance exam is best served by original objective-mapped tasks, clean rebuilds, failure injection, and evidence review.
 
 ### Red Hat Certified System Administrator in OpenShift (EX280)
 

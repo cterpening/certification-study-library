@@ -4,6 +4,213 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-ex267-deep-review",
+      "title": "EX267 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "EX267"
+      ],
+      "results": [
+        {
+          "exam_code": "EX267",
+          "vendor_id": "red-hat",
+          "guide_path": "guides/EX267-red-hat-certified-developer-in-ai.md",
+          "baseline_sha256": "935fb7b3796e0e81fe1bd18039344cae6bc1338c66d57f55ffb0ee0263da3e06",
+          "scanned_on": "2026-09-28",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "blocked",
+              "notes": "Main page remains OpenShift AI 3.3/OCP 4.20 and its monitor hashes are unchanged. EX267V33K has 41 matching tasks but omits two resource-placement tasks present on main page. Standard/Advanced objective terms lack a confirmed mapping to current RawDeployment/wizard terminology; retain scope and October 5 source reconciliation."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Reviewed targeted sections in twelve versioned 3.3 books plus compiler reference: project images, connections, profiles, serving, registry, pipelines, monitoring, evaluation, guardrails, customization and release/support state. Parsed indexes are distinguished from implementation chapters."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "3.3 release notes now cover 3.3.6; exam/course baseline remains3.3/4.20. Hardware Profiles replace legacy accelerator/size selection; connection protocol annotation and registry v1beta1 guidance updated. LLM Compressor integration is Developer Preview; exam coverage does not imply production support."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Registered or reused 15 targeted references including the version PDF and modular-component blog. AI267 baseline confirmed 3.3/4.20; paid pages blocked and inherited runtimes not reverified. Places to learn is final."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Keep canonical placement tasks, qualify serving-label mapping and avoid copying old Serverless/ModelMesh recipes. Distinguish immutable artifact provenance from metadata, compiler output from backend execution, aggregate accuracy from complete cohort evidence, and policy pass from approval."
+            }
+          },
+          "findings": [
+            {
+              "id": "ex267-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Main page and version PDF task coverage differ",
+              "url": "https://www.redhat.com/en/services/training/ex267-red-hat-certified-developer-in-ai",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX267"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Main page has 43 tasks including selectors/tolerations and specific-node placement; EX267V33K in the public PDF has 41 otherwise matching tasks.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "ex267-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Standard/Advanced exam terminology lacks a verified product mapping",
+              "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/deploying_models/index",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX267"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current 3.3 deployment book describes RawDeployment and Advanced settings; these words do not prove correspondence to older Standard/Advanced modes.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "ex267-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Hardware allocation needed version-specific explanation",
+              "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_accelerators/index",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX267"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Hardware Profiles supersede Accelerator Profiles/legacy sizes and configure workload resource/placement fields.",
+              "recommendation": "Explain profiles versus actual allocatable resources and add a scheduling diagnosis matrix.",
+              "disposition": "applied",
+              "source_id": "rhoai33-resources",
+              "resolution": "Explain profiles versus actual allocatable resources and add a scheduling diagnosis matrix."
+            },
+            {
+              "id": "ex267-deep-4",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Exam-listed optimization feature was not labeled with its support state",
+              "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/release_notes/index",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "EX267"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "3.3 release notes list LLM Compressor integration as Developer Preview and distinguish current APIs/annotations from deprecated forms.",
+              "recommendation": "Retain optimization scope but explicitly label the preview and update connection/registry/profile guidance.",
+              "disposition": "applied",
+              "source_id": "rhoai33-release",
+              "resolution": "Retain optimization scope but explicitly label the preview and update connection/registry/profile guidance."
+            },
+            {
+              "id": "ex267-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Registry metadata does not imply artifact storage or arbitrary URI deployment",
+              "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_model_registries/index",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX267"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Model registry records metadata; the documented URI-registered deployment path supports public OCI repositories only.",
+              "recommendation": "Separate metadata access, artifact access and direct-serving workflows; bind accepted versions to immutable payloads.",
+              "disposition": "applied",
+              "source_id": "rhoai33-registry",
+              "resolution": "Separate metadata access, artifact access and direct-serving workflows; bind accepted versions to immutable payloads."
+            },
+            {
+              "id": "ex267-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Pipeline compilation and cache behavior needed executable evidence",
+              "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/working_with_ai_pipelines/index",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX267"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "3.3 docs support plain IR and Kubernetes-native output; hidden mutable input can invalidate the meaning of a reused result.",
+              "recommendation": "Compile an original typed-artifact graph in both formats with pinned SDK, explicit cache choices and resources; test input/digest/cohort failure cases locally.",
+              "disposition": "applied",
+              "source_id": "rhoai33-pipelines",
+              "resolution": "Compile an original typed-artifact graph in both formats with pinned SDK, explicit cache choices and resources; test input/digest/cohort failure cases locally."
+            },
+            {
+              "id": "ex267-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Evaluation access controls and dataset completeness were too abstract",
+              "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/evaluating_ai_systems/index",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX267"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Platform permit settings and per-job allow settings independently control online resources and code execution; missing/undersized cohorts can undermine aggregate quality evidence.",
+              "recommendation": "Explain the two-level access boundary and include explicit expected-cohort/size criteria in the original synthetic exercise.",
+              "disposition": "applied",
+              "source_id": "rhoai33-eval",
+              "resolution": "Explain the two-level access boundary and include explicit expected-cohort/size criteria in the original synthetic exercise."
+            },
+            {
+              "id": "ex267-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Guardrail endpoint availability is not proof the guarded path ran",
+              "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/enabling_ai_safety_with_guardrails/index",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "EX267"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Detectors, Orchestrator and gateway presets have separate configuration and observation boundaries.",
+              "recommendation": "Require intended-path, safe-label/threshold, dependency-failure and streaming tests with destination-scoped credential handling.",
+              "disposition": "applied",
+              "source_id": "rhoai33-guardrails",
+              "resolution": "Require intended-path, safe-label/threshold, dependency-failure and streaming tests with destination-scoped credential handling."
+            }
+          ],
+          "notes": "Mapped all 43 main-page tasks; the version PDF agrees on 41 but omits the two resource-placement tasks. Preserve those tasks and unresolved Standard/Advanced serving terminology. Added an original typed-artifact KFP pipeline, 39 actual local component/compiler checks, 3.3 support/API/cache/evaluation boundaries, and strengthened the existing 40 answers. No cluster or model-inference lab executed. Same-context AI review; human review pending. See docs/research/2026-09-28-ex267-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 6,
+        "no_action_findings": 0,
+        "blocked_findings": 2
+      }
+    },
+    {
       "id": "freshness-2026-09-28-ex378-deep-review",
       "title": "EX378 complete guide and learning-content review",
       "rubric_version": 1,

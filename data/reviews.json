@@ -5853,31 +5853,126 @@
       "notes": "Mapped all 64 public tasks and compared EX378V38K; repaired the monitor's premature @Readiness cutoff and explicitly accepted the complete baseline. Added 40 answers, runnable pinned Java/Panache examples, configuration and failure-boundary teaching, and 18 passing local Quarkus tests. Full integrated service/restart labs remain proposed. See docs/research/2026-09-28-ex378-deep-review.md"
     },
     {
-      "id":"ex267-2026-09-01-source-validation",
-      "exam_code":"EX267",
-      "guide_path":"guides/EX267-red-hat-certified-developer-in-ai.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-01",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/ex267-official-objectives.txt",
-      "blueprint_snapshot_sha256":"b741b76b2ba6259872d38449c397048d494185090c80d53064aa5d9ab32208fe",
-      "objective_coverage":[
-        {"objective_group":"Architecture and fundamentals","guide_sections":["Section 1","All integrated scenarios","Lab 8"]},
-        {"objective_group":"Projects and workbenches","guide_sections":["Sections 1–2","Integrated scenarios 1 and 3","Labs 1–2 and 8"]},
-        {"objective_group":"Data connections","guide_sections":["Section 3","Integrated scenarios 1 and 3","Labs 3 and 8"]},
-        {"objective_group":"Resource allocation","guide_sections":["Section 4","Integrated scenario 2","Labs 4, 7 and 8"]},
-        {"objective_group":"Deploy and serve models","guide_sections":["Section 5","All integrated scenarios","Labs 5 and 8"]},
-        {"objective_group":"Model Registry","guide_sections":["Section 6","Integrated scenarios 1–2","Labs 5 and 8"]},
-        {"objective_group":"Model and performance monitoring","guide_sections":["Section 7","All integrated scenarios","Labs 7–8"]},
-        {"objective_group":"Data science pipelines","guide_sections":["Section 8","Integrated scenario 1","Labs 6 and 8"]},
-        {"objective_group":"Model optimization and evaluation","guide_sections":["Section 9","Integrated scenario 2","Labs 7–8"]},
-        {"objective_group":"Generative AI applications","guide_sections":["Section 10","Integrated scenario 3","Lab 8"]},
-        {"objective_group":"Git and model development","guide_sections":["Section 2","Integrated scenario 1","Labs 1–2, 6 and 8"]},
-        {"objective_group":"Deploy and store models refinement","guide_sections":["Sections 3, 5–6","All integrated scenarios","Labs 3, 5 and 8"]}
+      "id": "ex267-2026-09-28-source-validation",
+      "exam_code": "EX267",
+      "guide_path": "guides/EX267-red-hat-certified-developer-in-ai.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ex267-official-objectives.txt",
+      "blueprint_snapshot_sha256": "b741b76b2ba6259872d38449c397048d494185090c80d53064aa5d9ab32208fe",
+      "objective_coverage": [
+        {
+          "objective_group": "Architecture and fundamentals",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Lab 8"
+          ]
+        },
+        {
+          "objective_group": "Projects and workbenches",
+          "guide_sections": [
+            "Sections 1–2",
+            "Integrated scenarios 1 and 3",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Data connections",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios 1 and 3",
+            "Labs 3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Resource allocation",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenario 2",
+            "Labs 4, 7 and 8"
+          ]
+        },
+        {
+          "objective_group": "Deploy and serve models",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Labs 5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Model Registry",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenarios 1–2",
+            "Labs 5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Model and performance monitoring",
+          "guide_sections": [
+            "Section 7",
+            "All integrated scenarios",
+            "Labs 7–8"
+          ]
+        },
+        {
+          "objective_group": "Data science pipelines",
+          "guide_sections": [
+            "Section 8",
+            "Integrated scenario 1",
+            "Labs 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Model optimization and evaluation",
+          "guide_sections": [
+            "Section 9",
+            "Integrated scenario 2",
+            "Labs 7–8"
+          ]
+        },
+        {
+          "objective_group": "Generative AI applications",
+          "guide_sections": [
+            "Section 10",
+            "Integrated scenario 3",
+            "Lab 8"
+          ]
+        },
+        {
+          "objective_group": "Git and model development",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenario 1",
+            "Labs 1–2, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Deploy and store models refinement",
+          "guide_sections": [
+            "Sections 3, 5–6",
+            "All integrated scenarios",
+            "Labs 3, 5 and 8"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":10,"reachable":8,"access_blocked":2,"missing_or_error":0},
-      "notes":"All 12 unweighted EX267 groups were reconciled with OpenShift AI 3.3 on OpenShift 4.20. The repeated deploy/store group is mapped as a model-serving refinement, not an invented weight. Three scenarios, eight labs and 40 original checks cover the complete governed lifecycle, failure evidence, persistence and rollback. All ten URLs are cataloged: eight reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. Older and rolling material has a 3.3/4.20 gap checklist; no gated course labs or recalled exam tasks are used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 25,
+        "reachable": 23,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Mapped all 43 main-page tasks; the version PDF agrees on 41 but omits the two resource-placement tasks. Preserve those tasks and unresolved Standard/Advanced serving terminology. Added an original typed-artifact KFP pipeline, 39 actual local component/compiler checks, 3.3 support/API/cache/evaluation boundaries, and strengthened the existing 40 answers. No cluster or model-inference lab executed. See docs/research/2026-09-28-ex267-deep-review.md"
     },
     {
       "id":"fc0-u71-2026-09-01-source-validation",

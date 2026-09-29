@@ -1225,6 +1225,8 @@ The review reconciles all 11 EX378 task groups with Red Hat Build of Quarkus 3.8
 
 ## EX267 coverage record
 
+The September 28 [deep review](research/2026-09-28-ex267-deep-review.md) maps 43 detailed objectives. Mapped all 43 main-page tasks; the version PDF agrees on 41 but omits the two resource-placement tasks. Preserve those tasks and unresolved Standard/Advanced serving terminology. Added an original typed-artifact KFP pipeline, 39 actual local component/compiler checks, 3.3 support/API/cache/evaluation boundaries, and strengthened the existing 40 answers. No cluster or model-inference lab executed. Current guide citations: 25 registered, 23 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 1, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: 12 unweighted OpenShift AI 3.3 task groups on OpenShift 4.20, including a final deploy/store refinement of the earlier model-serving group

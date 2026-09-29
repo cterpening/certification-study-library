@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: [EX267 deep review](docs/research/2026-09-28-ex267-deep-review.md): 43 main-page tasks mapped; PDF/serving terminology differences retained, 39 local KFP checks and versioned implementation/support boundaries added.
+
 - September 28, 2026: [EX378 deep review](docs/research/2026-09-28-ex378-deep-review.md): 64 tasks/PDF compared; monitor cutoff repaired, 40 answers and 18 actual local Quarkus tests added with full-service/restart limits explicit.
 
 - September 28, 2026: [EX294 deep review](docs/research/2026-09-28-ex294-deep-review.md): 56 tasks and the V26K PDF compared; 40 answers, typed template/candidate validation and 41 actual local checks with Ansible/RHEL execution limits explicit.
