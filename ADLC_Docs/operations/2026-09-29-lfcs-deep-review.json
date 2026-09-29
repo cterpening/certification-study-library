@@ -1,0 +1,1563 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "LFCS",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/LFCS-linux-foundation-certified-system-administrator.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "78fa8511fbc85c34f2041268f7ef54264f9d593656acdeb83d8108de2487e58c",
+  "guide_after_sha256": "fb24da5844f2d1a028d11efc88a4353270a80cf11717ce34937b1e4fe93571b8",
+  "prior_records": {
+    "exam": {
+      "code": "LFCS",
+      "level": "intermediate",
+      "vendor_id": "linux-foundation",
+      "title": "Linux Foundation Certified System Administrator",
+      "status": "active",
+      "study_guide_url": "https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/",
+      "guide_path": "guides/LFCS-linux-foundation-certified-system-administrator.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; practical readiness requires repeated command-line administration on fresh systems. Practice persistent kernel/services/jobs/packages and recovery; libvirt, containers and SELinux; dual-stack networking, SSH, filtering/NAT/routes/bridges/bonds/proxies; LVM/filesystems/swap/automount/NFS/NBD; Git, certificates, services/performance/disk troubleshooting; and local/LDAP identities, profiles, limits and ACLs."
+    },
+    "review": {
+      "id": "lfcs-2026-09-01-source-validation",
+      "exam_code": "LFCS",
+      "guide_path": "guides/LFCS-linux-foundation-certified-system-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/lfcs-official-objectives.txt",
+      "blueprint_snapshot_sha256": "7e81f913990e564ad0238c7842735843375ec30d94f036f88e194dcbfe77cb63",
+      "objective_coverage": [
+        {
+          "objective_group": "Operations Deployment (25%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios 2–3",
+            "Labs 1–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Networking (25%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1 and 3",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Storage (20%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenario 2",
+            "Labs 2, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Essential Commands (20%)",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 1–2, 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Users and Groups (10%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenario 3",
+            "Labs 3, 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 6,
+        "reachable": 5,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All five current distribution-independent domains are mapped to runtime state, persistent configuration, restart/reboot/recreate and revalidation, with three operational scenarios, eight safe labs and 40 original checks. All six guide URLs are cataloged: five reachable and O'Reilly automation-blocked; none missing or broken. No proprietary simulator tasks, course labs or recalled exam tasks are used."
+    },
+    "sources": [
+      {
+        "id": "lf-lfcs-blueprint",
+        "title": "Linux Foundation Certified System Administrator",
+        "url": "https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/",
+        "publisher": "Linux Foundation",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "LFCS"
+        ],
+        "notes": "Canonical five-domain weighted page and current distribution-independent, two-hour performance assessment; no prerequisite, two-year validity, 12-month eligibility, one retake and two simulator attempts listed."
+      },
+      {
+        "id": "lf-lfcs-curriculum-path",
+        "title": "LFCS sample curriculum path",
+        "url": "https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCS.pdf",
+        "publisher": "Linux Foundation",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "LFCS"
+        ],
+        "notes": "Optional official path from free Introduction to Linux through LFS207; three-to-six-month estimate depends on experience."
+      },
+      {
+        "id": "lf-lfcs-lfs207",
+        "title": "Linux System Administration Essentials (LFS207)",
+        "url": "https://training.linuxfoundation.org/training/linux-system-administration-essentials-lfs207/",
+        "publisher": "Linux Foundation",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "LFCS"
+        ],
+        "notes": "Official aligned course with 50–60 hours, labs and assignments listed; spans Debian/Ubuntu and Red Hat/CentOS/Fedora families."
+      },
+      {
+        "id": "lf-lfcs-pluralsight",
+        "title": "Linux Foundation Certified System Administrator path",
+        "url": "https://www.pluralsight.com/paths/linux-foundation-certified-system-administrator-lfcs",
+        "publisher": "Pluralsight / Andrew Mallett",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "LFCS"
+        ],
+        "notes": "Twelve courses, three refreshed 2026 labs, 42 hours and practice exam listed; uses Ubuntu as exemplar and needs cross-distribution translation."
+      },
+      {
+        "id": "lf-lfcs-kodekloud",
+        "title": "Linux Foundation Certified System Administrator course",
+        "url": "https://kodekloud.com/courses/linux-foundation-certified-system-administrator-lfcs/",
+        "publisher": "KodeKloud",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "LFCS"
+        ],
+        "notes": "Current five-domain course with browser labs; public page does not expose a stable full hands-on completion time."
+      },
+      {
+        "id": "lf-lfcs-oreilly-kodekloud",
+        "title": "Linux Foundation Certified System Administrator LFCS",
+        "url": "https://www.oreilly.com/videos/linux-foundation-certified/9781806112579/",
+        "publisher": "O'Reilly / Packt / KodeKloud",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "LFCS"
+        ],
+        "notes": "June 2025 current five-domain course, 11 hours 57 minutes listed; same underlying KodeKloud family, so do not double-count it as a separate learning route."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "9a600d98d90832e19947c9fa3a4f4a622cb8c206d3edb7bb34036436e22a079e",
+      "guide_sections": [
+        "1. Operations deployment — 25%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "40a4b9ed39cf6a6329310a86905d061e0da638e4f79dc87c30996b5ecbadb260",
+      "guide_sections": [
+        "1. Operations deployment — 25%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "88761e0dcbc052074332422c6d5681ebefb5128a5a83d2652e211f1ec0c0efe2",
+      "guide_sections": [
+        "1. Operations deployment — 25%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "14ed7534ecfa692685d2e0ec0435982e05eed0dd140939dc92bb95305b5177b0",
+      "guide_sections": [
+        "1. Operations deployment — 25%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "a9ab9ba43a0d076a304e7a6c2b918fdc5c4d224f9a8e2e756c9a4edeb554aa54",
+      "guide_sections": [
+        "1. Operations deployment — 25%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "82a5ba8e70a97bd28817cc7e889bc6003044881a9622353aa8f083d33a93c16e",
+      "guide_sections": [
+        "1. Operations deployment — 25%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "c58c2097f48ad16ca415c592e33b4e4e32ff8ccd5bee7e428c34db3918347f8d",
+      "guide_sections": [
+        "1. Operations deployment — 25%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "ce064746696355d46c8a296eeca75dcb8bbeb4eb7b171ab5e85e46195780719f",
+      "guide_sections": [
+        "1. Operations deployment — 25%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "bddbfc34a7976b2ab27a983b2115f7a99761d413b930f4ebe125a6f068a61c5f",
+      "guide_sections": [
+        "2. Networking — 25%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "fa5472c711e1636409113f34bfbbd4134a2d6d1b53b85bec74342510c3bd4600",
+      "guide_sections": [
+        "2. Networking — 25%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "40b1a753247846c5599ff8644d825338bc0a5f13f63ebd392de320d0ce01e6ef",
+      "guide_sections": [
+        "2. Networking — 25%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "400f02a80c53de5f7faff5472203a96c4c6056a8c7edd44043152dd9efe1fc0e",
+      "guide_sections": [
+        "2. Networking — 25%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "b7d139685d69692c2be210ffee3d000182dd5742af7aca71c69659b30bb6402c",
+      "guide_sections": [
+        "2. Networking — 25%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "af4622926a0a6074ea74b02c013d9b1eba7473f6bb3e717fd0d1aae44d17362a",
+      "guide_sections": [
+        "2. Networking — 25%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "1deb43b08c7524ccdcd41be803ffe296fb8dae6d3af8f2ff963c1e863cff0d43",
+      "guide_sections": [
+        "2. Networking — 25%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "57cb2f8abdead1d8091f478b2c7ffaeae926ec7421f14ca1ac56fe66d37345e8",
+      "guide_sections": [
+        "2. Networking — 25%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "bebfa755e2a485b5fd727cd2352a0e07a306efdf0f512d6a3656498155573659",
+      "guide_sections": [
+        "3. Storage — 20%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "d446538f8e88ede43c78dd1a3dadc2546549570322ff4d70029736dbf33bae9d",
+      "guide_sections": [
+        "3. Storage — 20%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "9e8b1d7f5cb614021d82212172f13f93de7a780f1cb0e4fa8d396a55a35eef72",
+      "guide_sections": [
+        "3. Storage — 20%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "1000d040a794beb33910838fe9442971d41525f57c2cd6f83625c0eb711a6949",
+      "guide_sections": [
+        "3. Storage — 20%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "6ec282d40a8a71fedd600a3e89828653228d1b3b02a7561a7fca118503847ebc",
+      "guide_sections": [
+        "3. Storage — 20%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "f02dac948b604bf2abe0b63ccd5a228a628db066814eff7517463b36d6dd93ad",
+      "guide_sections": [
+        "3. Storage — 20%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "0d4fbc3a60f568185153b1d77d297ee2431390dc3a83e078d315248319b2e115",
+      "guide_sections": [
+        "3. Storage — 20%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "eb92303600ddae7b446818eb1212c282ff4f620872253021395b94d4306b10cb",
+      "guide_sections": [
+        "4. Essential commands — 20%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "203206da52a35f5fb94be73a977498c4b620a34fda135061c9b22745d575b266",
+      "guide_sections": [
+        "4. Essential commands — 20%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "876c6dde794f571e30df3e1325371dde84a9d5e15d94bbd4858aa9cfb14385b1",
+      "guide_sections": [
+        "4. Essential commands — 20%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "de3f4d412f56047144d145f98e66f135204653ff3b7d8da4b41194e241175b8f",
+      "guide_sections": [
+        "4. Essential commands — 20%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "b8b3bc6b805d42a1aca91bd9e5fef3df54d67f3a77f7abfe0e3860f3443af11e",
+      "guide_sections": [
+        "4. Essential commands — 20%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "6b713e6349b355f58eef05dfea7f8a75dd5c6a2069928e5f5ffe35fde4053828",
+      "guide_sections": [
+        "4. Essential commands — 20%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "aaba5a60231c06d00a329c034580c9515ff5c1a9ea4cf50d5b966032e52ac216",
+      "guide_sections": [
+        "5. Users and groups — 10%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "8a86c869464f6642856250e2837d4914812d40561fdee9aac9e14e0aec69bb90",
+      "guide_sections": [
+        "5. Users and groups — 10%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "3ce8be35b36aae4765381a83993eaf00da165528f4690329f075ea207389a19d",
+      "guide_sections": [
+        "5. Users and groups — 10%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "225c0ad5d7b4741c52e70766c1ab18acd4ebdc211aba427e52412dfafd11df69",
+      "guide_sections": [
+        "5. Users and groups — 10%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "0472dc3f081fb949ad3b444698ed38d705e6615edb5b44d83ccf8809eb38dd56",
+      "guide_sections": [
+        "5. Users and groups — 10%",
+        "Hands-on labs",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "LFCS",
+        "title": "Linux Foundation Certified System Administrator",
+        "url": "https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/",
+        "guide_path": "guides/LFCS-linux-foundation-certified-system-administrator.md",
+        "snapshot_path": "data\\objective-snapshots\\lfcs-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\lfcs-official-status.json",
+        "previous_sha256": "7e81f913990e564ad0238c7842735843375ec30d94f036f88e194dcbfe77cb63",
+        "current_sha256": "7e81f913990e564ad0238c7842735843375ec30d94f036f88e194dcbfe77cb63",
+        "previous_status_sha256": "d5372868db4ea3d79785f48441a2175c0dd2bfe6b51fd6bd7d509f7534dc09ec",
+        "current_status_sha256": "d5372868db4ea3d79785f48441a2175c0dd2bfe6b51fd6bd7d509f7534dc09ec",
+        "official_status": {
+          "skills_versions": [
+            "This exam is an online, proctored, performance-based test that requires solving multiple issues from a command line running Linux. Candidates have 2 hours to complete the tasks. Please review The Linux Foundation certification Policies and FAQ below.",
+            "There are no prerequisites for this exam.",
+            "Duration of Exam 2 hours",
+            "Certification Valid for 2 Years"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 25,
+    "reachable": 24,
+    "access_blocked": 1,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "lf-lfcs-blueprint",
+      "url": "https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/",
+      "checked_at": "2026-09-29T05:27:48.174226+00:00",
+      "health": {
+        "id": "lf-lfcs-blueprint",
+        "url": "https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/",
+        "checked_at": "2026-09-29T05:27:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Linux Foundation Certified System Administrator (LFCS) | Linux Foundation Education",
+        "canonical_url": "https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/",
+        "duration_signals": [
+          "2 hours",
+          "36 hours"
+        ],
+        "signal_fingerprint": "9a5e5420734c4a5073c78e56a18739a03032031b8ce828af098124f81fded5ee",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/",
+      "sha256": "a6895d6403b383d7b5e15d4be32b517a6cf6cae0dfa15b7498e6e2b52388326c",
+      "text_characters": 12988
+    },
+    {
+      "id": "lf-lfcs-curriculum-path",
+      "url": "https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCS.pdf",
+      "checked_at": "2026-09-29T05:30:45.960816+00:00",
+      "health": {
+        "id": "lf-lfcs-curriculum-path",
+        "url": "https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCS.pdf",
+        "checked_at": "2026-09-29T05:30:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCS.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCS.pdf",
+      "sha256": "938b98f1b43a6173ac69c98bc32980da675720bcd5d15e8dceb5473299f5d60f",
+      "bytes": 297769,
+      "pdf_pages": 1,
+      "text_characters": 1625
+    },
+    {
+      "id": "lf-lfcs-lfs207",
+      "url": "https://training.linuxfoundation.org/training/linux-system-administration-essentials-lfs207/",
+      "checked_at": "2026-09-29T05:27:48.175110+00:00",
+      "health": {
+        "id": "lf-lfcs-lfs207",
+        "url": "https://training.linuxfoundation.org/training/linux-system-administration-essentials-lfs207/",
+        "checked_at": "2026-09-29T05:27:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://training.linuxfoundation.org/training/linux-system-administration-essentials-lfs207/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Linux System Administration Essentials (LFS207) | Linux Foundation Education",
+        "canonical_url": "https://training.linuxfoundation.org/training/linux-system-administration-essentials-lfs207/",
+        "duration_signals": [
+          "60 Hours"
+        ],
+        "signal_fingerprint": "f56e37e3f78bb08f70236cd24380435e19184c35a64294749eee02b1ab1e63fd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://training.linuxfoundation.org/training/linux-system-administration-essentials-lfs207/",
+      "sha256": "2ddaeb3f2849c725a0bd0da019f43c94e1fbad14aee672765431b84a94d6d6a2",
+      "text_characters": 11339
+    },
+    {
+      "id": "lf-lfcs-pluralsight",
+      "url": "https://www.pluralsight.com/paths/linux-foundation-certified-system-administrator-lfcs",
+      "checked_at": "2026-09-29T05:27:48.812744+00:00",
+      "health": {
+        "id": "lf-lfcs-pluralsight",
+        "url": "https://www.pluralsight.com/paths/linux-foundation-certified-system-administrator-lfcs",
+        "checked_at": "2026-09-29T05:27:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/linux-foundation-certified-system-administrator-lfcs",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Linux Foundation Certified System Administrator (LFCS)",
+        "canonical_url": "https://www.pluralsight.com/paths/linux-foundation-certified-system-administrator-lfcs",
+        "duration_signals": [
+          "40 Hours"
+        ],
+        "signal_fingerprint": "23ea9a452fc597a9deafd849f42f3230bf5a195a2521c04541ac5b4bc433f7c7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/linux-foundation-certified-system-administrator-lfcs",
+      "sha256": "a0eb4b2dbab4545ffbfc06560dafd9b1c5d7b2162cce0b8f9e59d63af9336c3a",
+      "text_characters": 3653
+    },
+    {
+      "id": "lf-lfcs-kodekloud",
+      "url": "https://kodekloud.com/courses/linux-foundation-certified-system-administrator-lfcs/",
+      "checked_at": "2026-09-29T05:27:49.013031+00:00",
+      "health": {
+        "id": "lf-lfcs-kodekloud",
+        "url": "https://kodekloud.com/courses/linux-foundation-certified-system-administrator-lfcs/",
+        "checked_at": "2026-09-29T05:27:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://kodekloud.com/courses/linux-foundation-certified-system-administrator-lfcs/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Prep Course - Linux Foundation Certified System Administrator (LFCS) Course | KodeKloud",
+        "canonical_url": "https://kodekloud.com/courses/linux-foundation-certified-system-administrator-lfcs",
+        "duration_signals": [
+          "11.25 Hours",
+          "15 Hours",
+          "20 Hours",
+          "48 Hours",
+          "6 Hours",
+          "9 Hours"
+        ],
+        "signal_fingerprint": "1e5ce7a09bd5cb742b4186ec33851b109aed47867d33deb6294808f1d77834c9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://kodekloud.com/courses/linux-foundation-certified-system-administrator-lfcs/",
+      "sha256": "dc4ff5606c66602dcf536b01b193f838c9e0feb1efc61f15a172dbc799144d6d",
+      "text_characters": 15740
+    },
+    {
+      "id": "lf-lfcs-oreilly-kodekloud",
+      "url": "https://www.oreilly.com/videos/linux-foundation-certified/9781806112579/",
+      "checked_at": "2026-09-29T05:27:49.752350+00:00",
+      "health": {
+        "id": "lf-lfcs-oreilly-kodekloud",
+        "url": "https://www.oreilly.com/videos/linux-foundation-certified/9781806112579/",
+        "checked_at": "2026-09-29T05:27:49+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/linux-foundation-certified/9781806112579/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "systemd-service",
+      "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.service.html",
+      "checked_at": "2026-09-29T05:29:58.358734+00:00",
+      "health": {
+        "id": "systemd-service",
+        "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.service.html",
+        "checked_at": "2026-09-29T05:29:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.service.html",
+        "content_type": "text/html",
+        "page_title": "systemd.service",
+        "canonical_url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.service.html",
+        "duration_signals": [
+          "5min"
+        ],
+        "signal_fingerprint": "adab85d2581b343308c6947edf1c5f39be769fa42ed1671110f86dbbb26066a0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.service.html",
+      "sha256": "8b9e04d13a18329c395d9088ee32898fa3c27cc296d7bd84baa549f7344f5aea",
+      "text_characters": 74137
+    },
+    {
+      "id": "systemd-timer",
+      "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.timer.html",
+      "checked_at": "2026-09-29T05:29:58.359600+00:00",
+      "health": {
+        "id": "systemd-timer",
+        "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.timer.html",
+        "checked_at": "2026-09-29T05:29:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.timer.html",
+        "content_type": "text/html",
+        "page_title": "systemd.timer",
+        "canonical_url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.timer.html",
+        "duration_signals": [
+          "1 minute",
+          "1min",
+          "30min",
+          "5 hours and 30 minutes"
+        ],
+        "signal_fingerprint": "96e03eb71f4764fd9460db85c66dde8159f9ce2014e7d08886746375c1efe39e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.timer.html",
+      "sha256": "393ec35e3e58013ac7b9356ef850dbbfbe8be8eaeb4b0e1fe76d7e54908b5caa",
+      "text_characters": 17533
+    },
+    {
+      "id": "systemd-exec",
+      "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html",
+      "checked_at": "2026-09-29T05:29:58.360053+00:00",
+      "health": {
+        "id": "systemd-exec",
+        "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html",
+        "checked_at": "2026-09-29T05:29:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html",
+        "content_type": "text/html",
+        "page_title": "systemd.exec",
+        "canonical_url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html",
+        "duration_signals": [],
+        "signal_fingerprint": "c7f60121db59ed597078bed872d66826a9fdb76f138639260ac9e98e882e5960",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html",
+      "sha256": "a1710bc7b196f3fbdb072661791503a4117f6d980036d9b6063ac11e1f952fe1",
+      "text_characters": 214817
+    },
+    {
+      "id": "systemd-systemctl",
+      "url": "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html",
+      "checked_at": "2026-09-29T05:29:59.053766+00:00",
+      "health": {
+        "id": "systemd-systemctl",
+        "url": "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html",
+        "checked_at": "2026-09-29T05:29:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html",
+        "content_type": "text/html",
+        "page_title": "systemctl",
+        "canonical_url": "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html",
+        "duration_signals": [
+          "1min",
+          "3min",
+          "42min"
+        ],
+        "signal_fingerprint": "95b584ab3ddcaadd09270a34b024b728837c03503915140eab57c3e5e0146344",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html",
+      "sha256": "f95e4bc82edf115aa4736ec9c9871cb1fd7f8c4cbe1b9be4f7790ab02c000d6f",
+      "text_characters": 98866
+    },
+    {
+      "id": "openssl35-verify",
+      "url": "https://docs.openssl.org/3.5/man1/openssl-verify/",
+      "checked_at": "2026-09-29T05:29:59.326814+00:00",
+      "health": {
+        "id": "openssl35-verify",
+        "url": "https://docs.openssl.org/3.5/man1/openssl-verify/",
+        "checked_at": "2026-09-29T05:29:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.openssl.org/3.5/man1/openssl-verify/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "openssl-verify - OpenSSL Documentation",
+        "canonical_url": "https://docs.openssl.org/3.5/man1/openssl-verify/",
+        "duration_signals": [],
+        "signal_fingerprint": "098f02816a559a03881b00ba30ad6d01b14e959a1630c3201dfc6073a74ab291",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.openssl.org/3.5/man1/openssl-verify/",
+      "sha256": "c7b13b84b55ed0a0f85b94f4a3eec40af32830018b17875e400e62a315840a42",
+      "text_characters": 7032
+    },
+    {
+      "id": "openssl35-x509",
+      "url": "https://docs.openssl.org/3.5/man1/openssl-x509/",
+      "checked_at": "2026-09-29T05:29:59.546049+00:00",
+      "health": {
+        "id": "openssl35-x509",
+        "url": "https://docs.openssl.org/3.5/man1/openssl-x509/",
+        "checked_at": "2026-09-29T05:29:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.openssl.org/3.5/man1/openssl-x509/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "openssl-x509 - OpenSSL Documentation",
+        "canonical_url": "https://docs.openssl.org/3.5/man1/openssl-x509/",
+        "duration_signals": [],
+        "signal_fingerprint": "5791fac17c63e9bb5ceb04b3e5d679ddb1bb51b05c2fb83d4605e8e464d1fd1b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.openssl.org/3.5/man1/openssl-x509/",
+      "sha256": "0744a4338e9bc332376888551a6268cc203c8af57efe46a5bd1da3c39d2734c3",
+      "text_characters": 24939
+    },
+    {
+      "id": "openssl35-req",
+      "url": "https://docs.openssl.org/3.5/man1/openssl-req/",
+      "checked_at": "2026-09-29T05:29:59.871979+00:00",
+      "health": {
+        "id": "openssl35-req",
+        "url": "https://docs.openssl.org/3.5/man1/openssl-req/",
+        "checked_at": "2026-09-29T05:29:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.openssl.org/3.5/man1/openssl-req/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "openssl-req - OpenSSL Documentation",
+        "canonical_url": "https://docs.openssl.org/3.5/man1/openssl-req/",
+        "duration_signals": [],
+        "signal_fingerprint": "60a0f12ef568685ecd6e96676061e2e0b611b8e043dfc71345652f6857af4b62",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.openssl.org/3.5/man1/openssl-req/",
+      "sha256": "84ca42795e6a784b2b757517b457f63b0cd9ac3c5491e4c5e06d60f46618b196",
+      "text_characters": 27957
+    },
+    {
+      "id": "openssl35-verification-options",
+      "url": "https://docs.openssl.org/3.5/man1/openssl-verification-options/",
+      "checked_at": "2026-09-29T05:29:59.872745+00:00",
+      "health": {
+        "id": "openssl35-verification-options",
+        "url": "https://docs.openssl.org/3.5/man1/openssl-verification-options/",
+        "checked_at": "2026-09-29T05:29:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.openssl.org/3.5/man1/openssl-verification-options/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "openssl-verification-options - OpenSSL Documentation",
+        "canonical_url": "https://docs.openssl.org/3.5/man1/openssl-verification-options/",
+        "duration_signals": [],
+        "signal_fingerprint": "b179e275dba53fc44a27d983e9522546b1737102b7ef7b031ea51a55b46bcf6c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.openssl.org/3.5/man1/openssl-verification-options/",
+      "sha256": "884bb5334be6fce352b6f9c5b458ed50156460b9230654329acba699b8378adb",
+      "text_characters": 28319
+    },
+    {
+      "id": "python313-ssl",
+      "url": "https://docs.python.org/3.13/library/ssl.html",
+      "checked_at": "2026-09-29T05:30:00.257386+00:00",
+      "health": {
+        "id": "python313-ssl",
+        "url": "https://docs.python.org/3.13/library/ssl.html",
+        "checked_at": "2026-09-29T05:30:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/ssl.html",
+        "content_type": "text/html",
+        "page_title": "ssl — TLS/SSL wrapper for socket objects",
+        "canonical_url": "https://docs.python.org/3/library/ssl.html",
+        "duration_signals": [],
+        "signal_fingerprint": "0691c02a204f1ca59af286e4766d6b0995e54120e15d931afc37d3e3fc00a1f5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/ssl.html",
+      "sha256": "af3481bb6959ea23d7d5d57cd44c4bae2efe2ed1466c2a89a9d7d6849c0e57ba",
+      "text_characters": 92932
+    },
+    {
+      "id": "linux-resize2fs",
+      "url": "https://man7.org/linux/man-pages/man8/resize2fs.8.html",
+      "checked_at": "2026-09-29T05:30:00.348482+00:00",
+      "health": {
+        "id": "linux-resize2fs",
+        "url": "https://man7.org/linux/man-pages/man8/resize2fs.8.html",
+        "checked_at": "2026-09-29T05:30:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://man7.org/linux/man-pages/man8/resize2fs.8.html",
+        "content_type": "text/html",
+        "page_title": "resize2fs(8) - Linux manual page",
+        "canonical_url": "https://man7.org/linux/man-pages/man8/resize2fs.8.html",
+        "duration_signals": [],
+        "signal_fingerprint": "53c09ba55267d84a8b912e098ede46c6d92a8bfe5d09ee647bd0d08048ef6ff7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man8/resize2fs.8.html",
+      "sha256": "fa17630ecaca4818b0523775e01e188b1efb6445dd83393e32e5ae74243eeee2",
+      "text_characters": 6492
+    },
+    {
+      "id": "linux-xfs-growfs",
+      "url": "https://man7.org/linux/man-pages/man8/xfs_growfs.8.html",
+      "checked_at": "2026-09-29T05:30:00.370464+00:00",
+      "health": {
+        "id": "linux-xfs-growfs",
+        "url": "https://man7.org/linux/man-pages/man8/xfs_growfs.8.html",
+        "checked_at": "2026-09-29T05:30:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://man7.org/linux/man-pages/man8/xfs_growfs.8.html",
+        "content_type": "text/html",
+        "page_title": "xfs_growfs(8) - Linux manual page",
+        "canonical_url": "https://man7.org/linux/man-pages/man8/xfs_growfs.8.html",
+        "duration_signals": [],
+        "signal_fingerprint": "f178923468a5e509e0ca50e6a28c9dff70f1b3c7c31da85b4f42272bbb3cd7cf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man8/xfs_growfs.8.html",
+      "sha256": "788d0818923248ffe4278ff823f9f3c65916f5dca165995585efecfd12df8872",
+      "text_characters": 4882
+    },
+    {
+      "id": "linux-ip-route",
+      "url": "https://man7.org/linux/man-pages/man8/ip-route.8.html",
+      "checked_at": "2026-09-29T05:30:00.980900+00:00",
+      "health": {
+        "id": "linux-ip-route",
+        "url": "https://man7.org/linux/man-pages/man8/ip-route.8.html",
+        "checked_at": "2026-09-29T05:30:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://man7.org/linux/man-pages/man8/ip-route.8.html",
+        "content_type": "text/html",
+        "page_title": "ip-route(8) - Linux manual page",
+        "canonical_url": "https://man7.org/linux/man-pages/man8/ip-route.8.html",
+        "duration_signals": [],
+        "signal_fingerprint": "cfa74145d57a141c2f86e7ea89050d2efbdfd3bb39c39c7c4554f32fab5a7be5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man8/ip-route.8.html",
+      "sha256": "d7d68af6dc3c2c0435b759572057f7696122aecd002a62cb4ae45e313631299a",
+      "text_characters": 30328
+    },
+    {
+      "id": "openssh-sshd",
+      "url": "https://man.openbsd.org/sshd",
+      "checked_at": "2026-09-29T05:30:01.368230+00:00",
+      "health": {
+        "id": "openssh-sshd",
+        "url": "https://man.openbsd.org/sshd",
+        "checked_at": "2026-09-29T05:30:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://man.openbsd.org/sshd",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "sshd(8) - OpenBSD manual pages",
+        "canonical_url": "https://man.openbsd.org/sshd",
+        "duration_signals": [],
+        "signal_fingerprint": "24fb58756d3668bef0dda5da3c47aace1fea5ad2f02306d3f62deb41e24d003a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://man.openbsd.org/sshd",
+      "sha256": "3c4c65d0221c28f1a9cc54c4c91ddb40b23c67f4beff96c5584847ecd7a88d6b",
+      "text_characters": 28353
+    },
+    {
+      "id": "rhel10-selinux",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html-single/using_selinux/index",
+      "checked_at": "2026-09-29T05:30:01.503639+00:00",
+      "health": {
+        "id": "rhel10-selinux",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html-single/using_selinux/index",
+        "checked_at": "2026-09-29T05:30:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html-single/using_selinux/index",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Using SELinux | Red Hat Enterprise Linux | 10 | Red Hat Documentation",
+        "canonical_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html-single/using_selinux/index",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "d4af9e220cddbf45eed5f62635d851563d27f2271eb83ddc76b89f6cf513dec8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html-single/using_selinux/index",
+      "sha256": "03452ce530d3bd8a81eb2c80d578f2ce2d34dc6d256f283f60322104c87d15f8",
+      "text_characters": 152499
+    },
+    {
+      "id": "lf-certification-language",
+      "url": "https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/language",
+      "checked_at": "2026-09-29T05:30:02.040520+00:00",
+      "health": {
+        "id": "lf-certification-language",
+        "url": "https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/language",
+        "checked_at": "2026-09-29T05:30:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/language",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Language | T&C DOCS (Candidate Facing Resources)",
+        "canonical_url": "https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/language",
+        "duration_signals": [],
+        "signal_fingerprint": "699fc7e18df73085642039d5a371cf0c817bb1641feec00a1677169561349cf9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/language",
+      "sha256": "5906e96c9515cfc808ae60730d854b57c5fa718f97da7317514e701ff14f5164",
+      "text_characters": 4689
+    },
+    {
+      "id": "linux-man-acl",
+      "url": "https://man7.org/linux/man-pages/man5/acl.5.html",
+      "checked_at": "2026-09-29T05:30:43.712389+00:00",
+      "health": {
+        "id": "linux-man-acl",
+        "url": "https://man7.org/linux/man-pages/man5/acl.5.html",
+        "checked_at": "2026-09-29T05:30:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://man7.org/linux/man-pages/man5/acl.5.html",
+        "content_type": "text/html",
+        "page_title": "acl(5) - Linux manual page",
+        "canonical_url": "https://man7.org/linux/man-pages/man5/acl.5.html",
+        "duration_signals": [],
+        "signal_fingerprint": "004aff45dbd5b0bf26d5cf8ab62f0b9e4dfb589c3ded2dae1b231e8d0942084a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man5/acl.5.html",
+      "sha256": "6c004a658fbd601b2820bab886bc86e777a832f36855bc2312a17888e4c62228",
+      "text_characters": 15739
+    },
+    {
+      "id": "libvirt-virsh",
+      "url": "https://www.libvirt.org/manpages/virsh.html",
+      "checked_at": "2026-09-29T05:37:38.170370+00:00",
+      "health": {
+        "id": "libvirt-virsh",
+        "url": "https://www.libvirt.org/manpages/virsh.html",
+        "checked_at": "2026-09-29T05:37:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.libvirt.org/manpages/virsh.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "libvirt: virsh",
+        "canonical_url": "https://www.libvirt.org/manpages/virsh.html",
+        "duration_signals": [
+          "1 minute",
+          "15 minutes",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "e597991508f31991cb6878c7f3083946f71e4d9c0c565fed7a9a8f4b11be6188",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.libvirt.org/manpages/virsh.html",
+      "sha256": "eb97d3b5a9d1f978d67a856704f1b2e09c0ac8a5c70f79d3cc8bcaa0b9168260",
+      "text_characters": 299070
+    },
+    {
+      "id": "sssd-ldap-troubleshooting",
+      "url": "https://sssd.io/troubleshooting/ldap_provider.html",
+      "checked_at": "2026-09-29T05:37:38.171045+00:00",
+      "health": {
+        "id": "sssd-ldap-troubleshooting",
+        "url": "https://sssd.io/troubleshooting/ldap_provider.html",
+        "checked_at": "2026-09-29T05:37:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://sssd.io/troubleshooting/ldap_provider.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Common LDAP Provider issues - sssd.io",
+        "canonical_url": "https://sssd.io/troubleshooting/ldap_provider.html",
+        "duration_signals": [],
+        "signal_fingerprint": "546ebb90228071667bff43338708d9f99288090309fd48a2f69c08acc60f6c9c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://sssd.io/troubleshooting/ldap_provider.html",
+      "sha256": "51de1d9ede36745e0c3fd28e611f79398286c5b533d78935c87b6d7e43962618",
+      "text_characters": 2152
+    },
+    {
+      "id": "kernel-nbd",
+      "url": "https://kernel.org/doc/html/latest/admin-guide/blockdev/nbd.html",
+      "checked_at": "2026-09-29T05:37:38.171520+00:00",
+      "health": {
+        "id": "kernel-nbd",
+        "url": "https://kernel.org/doc/html/latest/admin-guide/blockdev/nbd.html",
+        "checked_at": "2026-09-29T05:37:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://kernel.org/doc/html/latest/admin-guide/blockdev/nbd.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Network Block Device (TCP version) — The Linux Kernel documentation",
+        "canonical_url": "https://kernel.org/doc/html/latest/admin-guide/blockdev/nbd.html",
+        "duration_signals": [],
+        "signal_fingerprint": "eb16fa463c95524b65c70988619e12beadae922d075471a97d6138e090ca0a5e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://kernel.org/doc/html/latest/admin-guide/blockdev/nbd.html",
+      "sha256": "21e6a179ca3b298d65a313a17b30e830964873793d58457e193875894a6cb7ca",
+      "text_characters": 2337
+    }
+  ],
+  "added_source_ids": [
+    "systemd-service",
+    "systemd-exec",
+    "openssl35-verify",
+    "openssl35-x509",
+    "openssl35-req",
+    "openssl35-verification-options",
+    "python313-ssl",
+    "linux-resize2fs",
+    "linux-xfs-growfs",
+    "linux-ip-route",
+    "openssh-sshd",
+    "rhel10-selinux",
+    "libvirt-virsh",
+    "sssd-ldap-troubleshooting",
+    "kernel-nbd"
+  ],
+  "findings": [
+    {
+      "id": "lfcs-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Active unit state does not always mean a running process",
+      "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.service.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "LFCS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "A successful oneshot with RemainAfterExit can remain active after its process exits; without it a completed oneshot can become inactive.",
+      "recommendation": "Correct the guide answer, add an explicitly unexecuted Linux state exercise and require application-specific readiness evidence.",
+      "disposition": "applied",
+      "source_id": "systemd-service",
+      "resolution": "Correct the guide answer, add an explicitly unexecuted Linux state exercise and require application-specific readiness evidence."
+    },
+    {
+      "id": "lfcs-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Persistent timer catch-up is not a queue of all missed invocations",
+      "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.timer.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "LFCS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Persistent affects OnCalendar timers and an already-active service is not restarted for a timer event.",
+      "recommendation": "Clarify catch-up and overlap behavior, including why an indefinitely active oneshot can prevent repeated runs.",
+      "disposition": "applied",
+      "source_id": "systemd-timer",
+      "resolution": "Clarify catch-up and overlap behavior, including why an indefinitely active oneshot can prevent repeated runs."
+    },
+    {
+      "id": "lfcs-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Persistent domain configuration does not require automatic startup",
+      "url": "https://www.libvirt.org/manpages/virsh.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "LFCS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The reference separates definition, transient or one-time running configuration and autostart requirements.",
+      "recommendation": "Correct the readiness answer and require the requested live/saved/autostart behavior instead of always enabling autostart.",
+      "disposition": "applied",
+      "source_id": "libvirt-virsh",
+      "resolution": "Correct the readiness answer and require the requested live/saved/autostart behavior instead of always enabling autostart."
+    },
+    {
+      "id": "lfcs-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Certificate checks cover different conditions",
+      "url": "https://docs.openssl.org/3.5/man1/openssl-verification-options/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "LFCS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Name, trust, application purpose and reference time are explicit verification parameters; an expiry-window check is not complete validation.",
+      "recommendation": "Execute independent positive/negative certificate checks and real verified/rejected TLS handshakes without changing system trust or clock.",
+      "disposition": "applied",
+      "source_id": "openssl35-verification-options",
+      "resolution": "Execute independent positive/negative certificate checks and real verified/rejected TLS handshakes without changing system trust or clock."
+    },
+    {
+      "id": "lfcs-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Upstream resize capabilities differ from blanket historical rules",
+      "url": "https://man7.org/linux/man-pages/man8/xfs_growfs.8.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "LFCS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The current upstream manual describes mounted growth and restricted last-allocation-group shrinking; geometry and installed stack support still matter.",
+      "recommendation": "Avoid a universal never-shrink claim and require target kernel/xfsprogs/distribution support review; no resize executed.",
+      "disposition": "applied",
+      "source_id": "linux-xfs-growfs",
+      "resolution": "Avoid a universal never-shrink claim and require target kernel/xfsprogs/distribution support review; no resize executed."
+    },
+    {
+      "id": "lfcs-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Matching named-user denial does not fall back to other",
+      "url": "https://man7.org/linux/man-pages/man5/acl.5.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "LFCS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The access algorithm evaluates a matching named-user entry and mask before group/other classes; owner is not mask-capped.",
+      "recommendation": "Add an original effective-bit example and operation-specific access evidence without claiming Windows reproduces native ACL behavior.",
+      "disposition": "applied",
+      "source_id": "linux-man-acl",
+      "resolution": "Add an original effective-bit example and operation-specific access evidence without claiming Windows reproduces native ACL behavior."
+    },
+    {
+      "id": "lfcs-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Identity lookup success does not establish secure login",
+      "url": "https://sssd.io/troubleshooting/ldap_provider.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "LFCS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "SSSD documents different TLS behavior for LDAP identity and authentication paths, plus schema-dependent group mapping.",
+      "recommendation": "Distinguish lookup, authentication, authorization and session setup; require certificate trust for the configured paths and retain local recovery.",
+      "disposition": "applied",
+      "source_id": "sssd-ldap-troubleshooting",
+      "resolution": "Distinguish lookup, authentication, authorization and session setup; require certificate trust for the configured paths and retain local recovery."
+    },
+    {
+      "id": "lfcs-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "SSH syntax validation does not prove the intended account can log in",
+      "url": "https://man.openbsd.org/sshd",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "LFCS"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Test mode checks configuration/key sanity, while extended test mode with connection parameters displays applicable effective settings.",
+      "recommendation": "Add test-mode versus actual login distinctions and preserve recovery access during changes.",
+      "disposition": "applied",
+      "source_id": "openssh-sshd",
+      "resolution": "Add test-mode versus actual login distinctions and preserve recovery access during changes."
+    }
+  ],
+  "blog_intake": [],
+  "labs": {
+    "proposed": 8,
+    "native_linux_labs_executed": 0,
+    "local_certificate_and_tls_exercises": 2,
+    "loopback_handshakes": 6,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 38,
+      "failed": 0,
+      "checks": [
+        "exact public OpenSSL script runs",
+        "CSR self-signature verified",
+        "explicit trust purpose and hostname pass",
+        "wrong hostname rejected with specific error",
+        "certificate and private key public components match",
+        "nonempty fixture refuses script rerun",
+        "server-only EKU rejects client purpose",
+        "simulated future time rejects expired leaf",
+        "simulated past time rejects not-yet-valid certificate",
+        "short expiry window check passes",
+        "long expiry window check rejects",
+        "PEM DER roundtrip preserves certificate",
+        "re-encoded certificate still validates",
+        "corrupted certificate signature rejected",
+        "nonmatching SAN not rescued by matching CN",
+        "TLS server rejects mismatched private key",
+        "real loopback TLS exchanges synthetic payload",
+        "successful TLS has no verification error",
+        "negotiated TLS version recorded",
+        "real TLS wrong-host verification rejected",
+        "wrong-host handshake delivers no application data",
+        "real TLS empty-trust verification rejected",
+        "untrusted handshake delivers no application data",
+        "all probe workers terminate",
+        "all probe listeners close",
+        "exact standalone public Python example completes",
+        "standalone confirms one success and two rejected cleanly closed probes",
+        "LV extent rounding requires129 not128",
+        "requested growth exceeds120 free extents by9",
+        "480 MiB fits120 extents",
+        "named-user mask yields read only",
+        "owner entry is independent of ACL mask",
+        "simple route model chooses more specific prefix",
+        "simple route model chooses covering prefix",
+        "simple route model falls back to default",
+        "hypothetical four KiB throughput",
+        "hypothetical available block capacity",
+        "all owned keys certificates sockets and files cleaned"
+      ],
+      "openssl_version": "OpenSSL 3.5.7 9 Jun 2026 (Library: OpenSSL 3.5.7 9 Jun 2026)",
+      "python_version": "3.13.14",
+      "python_ssl": "OpenSSL 3.0.21 9 Jun 2026",
+      "loopback_handshakes": 6,
+      "successful_handshakes": 2,
+      "rejected_handshakes": 4,
+      "execution_boundary": "Git for Windows OpenSSL CLI, Windows Python SSL and MSYS Bash; synthetic disposable CA/CSR/certificates/keys, loopback-only port chosen by OS, context-specific trust only, temporary files cleaned. No system/browser trust, DNS, host clock, global OpenSSL configuration, external service, credential, Linux service/storage/network/ACL/SELinux/VM/container changes. No revocation, intermediate-chain, mTLS, HTTP, remote deployment or native Linux lab executed.",
+      "example_sha256": {
+        "openssl_practice.sh": "c3a8f0a381267b69a1e9727460a7518b9ace8f229be8c23aacde1aa8c0c8a4d6",
+        "tls_probe.py": "9f5e9dda2bade32a0253bce4de6efad136f936bf72cbbf19e1c1960abd4c2669"
+      }
+    }
+  },
+  "answered_checks": 46,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "38 local checks passed with Git for Windows OpenSSL3.5.7, Python3.13.14 linkedOpenSSL3.0.21 and MSYS Bash; exact public examples are hash-matched.",
+    "Six real loopback TLS attempts: two validated payload exchanges and four intended hostname/trust rejections; workers and listeners stopped, owned keys/certificates/files cleaned.",
+    "No system/browser trust, DNS, host clock, global OpenSSL configuration, real credentials, external endpoints, Linux services/storage/network/ACL/SELinux, VMs or containers changed. All eight complete Linux labs remain proposed.",
+    "Native Linux runtime remains blocked from the earlier WSL startup attempt and is deferred for tomorrow; Windows/MSYS is not proof of Linux administration, filesystem, networking or mandatory-access behavior.",
+    "No revocation, intermediate CA chain, mutual TLS, HTTP/proxy, production PKI or remote deployment tested. Expiry and other reference-time checks did not change the operating-system clock.",
+    "Extent/throughput/capacity, route-selection and ACL calculations are deliberately restricted original models, not actual kernel/storage/permission tests.",
+    "Upstream documentation may be newer than an exam/distribution runtime; limited XFS shrinking and systemd syntax need installed-version and support verification.",
+    "Public catalog metadata only; OReilly blocked, old runtime/date claims unverified, mixed course dates/outline labels qualified. No paid lessons, simulator questions or provider labs accessed."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Git for Windows OpenSSL CLI, Windows Python SSL and MSYS Bash; synthetic disposable CA/CSR/certificates/keys, loopback-only port chosen by OS, context-specific trust only, temporary files cleaned. No system/browser trust, DNS, host clock, global OpenSSL configuration, external service, credential, Linux service/storage/network/ACL/SELinux/VM/container changes. No revocation, intermediate-chain, mTLS, HTTP, remote deployment or native Linux lab executed.",
+    "passed": 38,
+    "failed": 0,
+    "checks": [
+      "exact public OpenSSL script runs",
+      "CSR self-signature verified",
+      "explicit trust purpose and hostname pass",
+      "wrong hostname rejected with specific error",
+      "certificate and private key public components match",
+      "nonempty fixture refuses script rerun",
+      "server-only EKU rejects client purpose",
+      "simulated future time rejects expired leaf",
+      "simulated past time rejects not-yet-valid certificate",
+      "short expiry window check passes",
+      "long expiry window check rejects",
+      "PEM DER roundtrip preserves certificate",
+      "re-encoded certificate still validates",
+      "corrupted certificate signature rejected",
+      "nonmatching SAN not rescued by matching CN",
+      "TLS server rejects mismatched private key",
+      "real loopback TLS exchanges synthetic payload",
+      "successful TLS has no verification error",
+      "negotiated TLS version recorded",
+      "real TLS wrong-host verification rejected",
+      "wrong-host handshake delivers no application data",
+      "real TLS empty-trust verification rejected",
+      "untrusted handshake delivers no application data",
+      "all probe workers terminate",
+      "all probe listeners close",
+      "exact standalone public Python example completes",
+      "standalone confirms one success and two rejected cleanly closed probes",
+      "LV extent rounding requires129 not128",
+      "requested growth exceeds120 free extents by9",
+      "480 MiB fits120 extents",
+      "named-user mask yields read only",
+      "owner entry is independent of ACL mask",
+      "simple route model chooses more specific prefix",
+      "simple route model chooses covering prefix",
+      "simple route model falls back to default",
+      "hypothetical four KiB throughput",
+      "hypothetical available block capacity",
+      "all owned keys certificates sockets and files cleaned"
+    ],
+    "openssl_version": "OpenSSL 3.5.7 9 Jun 2026 (Library: OpenSSL 3.5.7 9 Jun 2026)",
+    "python_version": "3.13.14",
+    "python_ssl": "OpenSSL 3.0.21 9 Jun 2026",
+    "loopback_handshakes": 6,
+    "successful_handshakes": 2,
+    "rejected_handshakes": 4,
+    "example_sha256": {
+      "openssl_practice.sh": "c3a8f0a381267b69a1e9727460a7518b9ace8f229be8c23aacde1aa8c0c8a4d6",
+      "tls_probe.py": "9f5e9dda2bade32a0253bce4de6efad136f936bf72cbbf19e1c1960abd4c2669"
+    },
+    "learning_catalog_consistency": "passed"
+  },
+  "curriculum_pdf_receipt": {
+    "id": "lf-lfcs-curriculum-path",
+    "url": "https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCS.pdf",
+    "checked_at": "2026-09-29T05:30:45.960816+00:00",
+    "health": {
+      "id": "lf-lfcs-curriculum-path",
+      "url": "https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCS.pdf",
+      "checked_at": "2026-09-29T05:30:45+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCS.pdf",
+      "content_type": "application/pdf",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": ""
+    },
+    "http_status": 200,
+    "final_url": "https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCS.pdf",
+    "sha256": "938b98f1b43a6173ac69c98bc32980da675720bcd5d15e8dceb5473299f5d60f",
+    "bytes": 297769,
+    "pdf_pages": 1,
+    "text_characters": 1625
+  },
+  "loopback_probe_results": [
+    {
+      "client_data": "pong",
+      "client_error": null,
+      "server_data": "ping",
+      "server_error": null,
+      "protocol": "TLSv1.3",
+      "listener_closed": true,
+      "worker_stopped": true
+    },
+    {
+      "client_data": null,
+      "client_error": {
+        "code": 62,
+        "message": "Hostname mismatch, certificate is not valid for 'wrong.invalid'."
+      },
+      "server_data": null,
+      "server_error": "ConnectionResetError",
+      "protocol": null,
+      "listener_closed": true,
+      "worker_stopped": true
+    },
+    {
+      "client_data": null,
+      "client_error": {
+        "code": 20,
+        "message": "unable to get local issuer certificate"
+      },
+      "server_data": null,
+      "server_error": "ConnectionResetError",
+      "protocol": null,
+      "listener_closed": true,
+      "worker_stopped": true
+    }
+  ]
+}

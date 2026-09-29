@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [LFCS deep review](docs/research/2026-09-29-lfcs-deep-review.md): 34 competencies mapped; original OpenSSL/TLS exercises passed 38 checks and six loopback handshakes; service/resize/identity boundaries clarified, 46 answers and eight proposed labs strengthened; native Linux blocker deferred.
+
 - September 29, 2026: [LFCA deep review](docs/research/2026-09-29-lfca-deep-review.md): 22 competencies mapped; original Git/Bash exercises passed 35 checks; package trust, service state, permissions and project/licensing teaching strengthened; 46 answers and eight proposed labs; native Linux blocker deferred.
 
 - September 29, 2026: [CV0-004 deep review](docs/research/2026-09-29-cv0-004-deep-review.md): 33 numbered objectives mapped; experience, community/AI/IoT and state/retry boundaries strengthened; original Terraform/SQLite examples passed 61 local checks; 46 answers and eight proposed labs expanded.

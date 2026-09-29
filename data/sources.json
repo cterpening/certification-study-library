@@ -3,6 +3,216 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "systemd-service",
+      "title": "systemd service unit semantics",
+      "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.service.html",
+      "publisher": "systemd project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCS deep review: Targeted simple/exec/oneshot/RemainAfterExit and command-line syntax read. Native unit is proposed only; no assumption that all latest manual prefixes exist in an installed distribution. See docs/research/2026-09-29-lfcs-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "systemd-exec",
+      "title": "systemd execution environment",
+      "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html",
+      "publisher": "systemd project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCS deep review: Targeted process limits, NoNewPrivileges and ProtectSystem with exclusions/allow-lists/IPC limitations read; no service sandbox configured. See docs/research/2026-09-29-lfcs-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "openssl35-verify",
+      "title": "OpenSSL 3.5 verify",
+      "url": "https://docs.openssl.org/3.5/man1/openssl-verify/",
+      "publisher": "OpenSSL",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCS deep review: OpenSSL3.5 chain verification command/options read and used in actual isolated CLI positive/negative cases; no CRL/OCSP downloaded. See docs/research/2026-09-29-lfcs-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "openssl35-x509",
+      "title": "OpenSSL 3.5 certificate inspection and signing",
+      "url": "https://docs.openssl.org/3.5/man1/openssl-x509/",
+      "publisher": "OpenSSL",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCS deep review: Targeted pubkey, inspection, checkend, conversion, extfile/extensions, micro-CA and badsig options read and executed with synthetic certificates. See docs/research/2026-09-29-lfcs-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "openssl35-req",
+      "title": "OpenSSL 3.5 CSR and certificate requests",
+      "url": "https://docs.openssl.org/3.5/man1/openssl-req/",
+      "publisher": "OpenSSL",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCS deep review: Targeted CSR signature verification, explicit config, EC generation, noenc and requested/issued-extension boundary read; throwaway keys only. See docs/research/2026-09-29-lfcs-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "openssl35-verification-options",
+      "title": "OpenSSL 3.5 certificate verification options",
+      "url": "https://docs.openssl.org/3.5/man1/openssl-verification-options/",
+      "publisher": "OpenSSL",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCS deep review: Targeted trust, server/client purpose, SAN/name, reference-time and signature conditions read; no production trust or revocation policy claim. See docs/research/2026-09-29-lfcs-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-ssl",
+      "title": "Python 3.13 TLS contexts and sockets",
+      "url": "https://docs.python.org/3.13/library/ssl.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCS deep review: Targeted client/server SSLContext, load_cert_chain, context-specific CA loading and hostname verification read; real loopback successful and rejected handshakes executed. See docs/research/2026-09-29-lfcs-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "linux-resize2fs",
+      "title": "ext filesystem resize rules",
+      "url": "https://man7.org/linux/man-pages/man8/resize2fs.8.html",
+      "publisher": "Linux man-pages project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCS deep review: Targeted supported mounted growth, unmounted shrink and separate partition sizing read; no filesystem/device modified. See docs/research/2026-09-29-lfcs-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "linux-xfs-growfs",
+      "title": "XFS grow filesystem rules",
+      "url": "https://man7.org/linux/man-pages/man8/xfs_growfs.8.html",
+      "publisher": "Linux man-pages project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCS deep review: Entire current upstream manual read, including limited last-AG shrink without removal and geometry constraints; collected from upstream August4,2026 with lastcommitJuly17. No installedkernel/xfsprogs/support inference and no resize executed. See docs/research/2026-09-29-lfcs-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "linux-ip-route",
+      "title": "Linux routing and lookup",
+      "url": "https://man7.org/linux/man-pages/man8/ip-route.8.html",
+      "publisher": "Linux man-pages project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCS deep review: Targeted route-get lookup context/source/VRF/mark parameters read; simple prefix arithmetic is explicitly not the full policy-routing algorithm. See docs/research/2026-09-29-lfcs-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "openssh-sshd",
+      "title": "OpenSSH server configuration validation",
+      "url": "https://man.openbsd.org/sshd",
+      "publisher": "OpenBSD/OpenSSH",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCS deep review: Targeted -t configuration/key sanity and -T/-C effective conditional configuration read from upstream; no daemon/config/login changes. See docs/research/2026-09-29-lfcs-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "rhel10-selinux",
+      "title": "RHEL 10 SELinux labeling and troubleshooting",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html-single/using_selinux/index",
+      "publisher": "Red Hat",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCS deep review: Targeted expected labels, fcontext mapping/restorecon and port-policy troubleshooting examples read; no policy change, broad recursive relabel or enforcement disablement. See docs/research/2026-09-29-lfcs-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "libvirt-virsh",
+      "title": "libvirt virsh reference",
+      "url": "https://www.libvirt.org/manpages/virsh.html",
+      "publisher": "libvirt project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCS deep review: Targeted define/create and live/persistent/autostart distinctions read; no guest/network/storage object created or destroyed. See docs/research/2026-09-29-lfcs-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sssd-ldap-troubleshooting",
+      "title": "SSSD LDAP provider issues",
+      "url": "https://sssd.io/troubleshooting/ldap_provider.html",
+      "publisher": "SSSD project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCS deep review: 2023updated primary page fully read; targeted TLSidentity/authentication distinction and RFC2307/group-schema issue used. No credentials, bind or directory operation. See docs/research/2026-09-29-lfcs-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "kernel-nbd",
+      "title": "Linux Network Block Device",
+      "url": "https://kernel.org/doc/html/latest/admin-guide/blockdev/nbd.html",
+      "publisher": "Linux kernel project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "LFCS"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 LFCS deep review: Short upstream overview read; only remote block versus file boundary adopted, no development-kernel parameter/default requirement imported. See docs/research/2026-09-29-lfcs-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "git-add",
       "title": "Git add and index snapshots",
       "url": "https://git-scm.com/docs/git-add",
@@ -151,10 +361,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "LFCA"
+        "LFCA",
+        "LFCS"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 LFCA deep review: LFCA row confirms English and no Japanese exam listing; other-exam language policy not generalized. See docs/research/2026-09-29-lfca-deep-review.md No live infrastructure execution."
+      "notes": "September 29 LFCA deep review: LFCA row confirms English and no Japanese exam listing; other-exam language policy not generalized. See docs/research/2026-09-29-lfca-deep-review.md No live infrastructure execution. September 29 LFCS deep review: LFCS language row inspected; browser interface/task language and regional selection rules not collapsed or silently inferred. See docs/research/2026-09-29-lfcs-deep-review.md No live infrastructure execution."
     },
     {
       "id": "lf-multiple-choice-faq",
@@ -473,10 +684,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "XK0-006"
+        "XK0-006",
+        "LFCS"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 XK0-006 deep review: Entry/mask, mode correspondence, default ACL and access algorithm sections read; native ACL installation/enforcement not executed. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+      "notes": "September 29 XK0-006 deep review: Entry/mask, mode correspondence, default ACL and access algorithm sections read; native ACL installation/enforcement not executed. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution. September 29 LFCS deep review: Access-check algorithm and mask/owner/named-user/group distinction read; only original bit arithmetic was executed, not Linux ACL operations. See docs/research/2026-09-29-lfcs-deep-review.md No live infrastructure execution."
     },
     {
       "id": "systemd-systemctl",
@@ -488,10 +700,11 @@
       "access_model": "public",
       "supported_exams": [
         "XK0-006",
-        "LFCA"
+        "LFCA",
+        "LFCS"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 XK0-006 deep review: Targeted unit state, enable/disable/mask, reload/restart/daemon-reload discussion; online latest is systemd 262, not a local Linux version claim. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution. September 29 LFCA deep review: Targeted enable/disable versus start/stop, --now and activation distinctions read; commands remain proposed for a native Linux sandbox. See docs/research/2026-09-29-lfca-deep-review.md No live infrastructure execution."
+      "notes": "September 29 XK0-006 deep review: Targeted unit state, enable/disable/mask, reload/restart/daemon-reload discussion; online latest is systemd 262, not a local Linux version claim. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution. September 29 LFCA deep review: Targeted enable/disable versus start/stop, --now and activation distinctions read; commands remain proposed for a native Linux sandbox. See docs/research/2026-09-29-lfca-deep-review.md No live infrastructure execution. September 29 LFCS deep review: Targeted activation links versus runtime, enable/disable versus start/stop and effective-state inspection read; no systemd invocation executed. See docs/research/2026-09-29-lfcs-deep-review.md No live infrastructure execution."
     },
     {
       "id": "systemd-timer",
@@ -502,10 +715,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "XK0-006"
+        "XK0-006",
+        "LFCS"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 XK0-006 deep review: Targeted monotonic/calendar, persistent catch-up, accuracy/randomization and already-active unit behavior; no timer installed or run. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+      "notes": "September 29 XK0-006 deep review: Targeted monotonic/calendar, persistent catch-up, accuracy/randomization and already-active unit behavior; no timer installed or run. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution. September 29 LFCS deep review: Persistent only for OnCalendar, missed-event catch-up and already-active service behavior read; no timer configured. See docs/research/2026-09-29-lfcs-deep-review.md No live infrastructure execution."
     },
     {
       "id": "systemd-analyze",
@@ -41366,7 +41580,18 @@
       "id":"lf-lfcs-blueprint","title":"Linux Foundation Certified System Administrator","url":"https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/","publisher":"Linux Foundation","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-01","supported_exams":["LFCS"],"notes":"Canonical five-domain weighted page and current distribution-independent, two-hour performance assessment; no prerequisite, two-year validity, 12-month eligibility, one retake and two simulator attempts listed."
     },
     {
-      "id":"lf-lfcs-curriculum-path","title":"LFCS sample curriculum path","url":"https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCS.pdf","publisher":"Linux Foundation","authority_class":2,"source_type":"official-training","access_model":"public","last_checked":"2026-09-01","supported_exams":["LFCS"],"notes":"Optional official path from free Introduction to Linux through LFS207; three-to-six-month estimate depends on experience."
+      "id": "lf-lfcs-curriculum-path",
+      "title": "LFCS sample curriculum path",
+      "url": "https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCS.pdf",
+      "publisher": "Linux Foundation",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "LFCS"
+      ],
+      "notes": "Optional official path from free Introduction to Linux through LFS207; three-to-six-month estimate depends on experience. September 29 LFCS deep review: Actual one-page PDF fetched with SHA/page receipt and all text read; optional3–6month course route, not current detailed exam blueprint or mandatory prerequisite. See docs/research/2026-09-29-lfcs-deep-review.md No live infrastructure execution."
     },
     {
       "id":"lf-lfcs-lfs207","title":"Linux System Administration Essentials (LFS207)","url":"https://training.linuxfoundation.org/training/linux-system-administration-essentials-lfs207/","publisher":"Linux Foundation","authority_class":2,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["LFCS"],"notes":"Official aligned course with 50–60 hours, labs and assignments listed; spans Debian/Ubuntu and Red Hat/CentOS/Fedora families."

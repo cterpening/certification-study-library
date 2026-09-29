@@ -1342,6 +1342,8 @@ The review maps every current domain to one connected host → administration/ne
 
 ## LFCS coverage record
 
+The September 29 [deep review](research/2026-09-29-lfcs-deep-review.md) maps 34 detailed objectives. Mapped all 34 public competencies and retained unchanged objective/lifecycle snapshots. Added exact OpenSSL and Python examples with 38 executed local checks and six loopback TLS handshakes, clarified service/timer/VM state, certificate validation, version-specific filesystem resize, route/SSH/ACL/LDAP evidence, strengthened 46 answers and eight proposed labs, and corrected current catalog metadata. Native Linux runtime validation remains deferred. Current guide citations: 25 registered, 24 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 1, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: five distribution-independent domains—Operations Deployment (25%), Networking (25%), Storage (20%), Essential Commands (20%), and Users and Groups (10%)

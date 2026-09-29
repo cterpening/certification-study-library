@@ -6791,24 +6791,70 @@
       "notes": "Mapped all 22 public competencies and retained the unchanged September 2025 objective/lifecycle snapshots. Added exact Git and Bash examples with 35 executed local checks, strengthened permissions/repository authentication/service state, cloud/recovery/project cases, data-control evidence, 46 answers and eight proposed labs. Qualified older course outlines and conflicting duration estimates. Native Linux VM validation remains deferred. See docs/research/2026-09-29-lfca-deep-review.md"
     },
     {
-      "id":"lfcs-2026-09-01-source-validation",
-      "exam_code":"LFCS",
-      "guide_path":"guides/LFCS-linux-foundation-certified-system-administrator.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-01",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/lfcs-official-objectives.txt",
-      "blueprint_snapshot_sha256":"7e81f913990e564ad0238c7842735843375ec30d94f036f88e194dcbfe77cb63",
-      "objective_coverage":[
-        {"objective_group":"Operations Deployment (25%)","guide_sections":["Section 1","Integrated scenarios 2–3","Labs 1–3 and 8"]},
-        {"objective_group":"Networking (25%)","guide_sections":["Section 2","Integrated scenarios 1 and 3","Labs 4–5 and 8"]},
-        {"objective_group":"Storage (20%)","guide_sections":["Section 3","Integrated scenario 2","Labs 2, 6 and 8"]},
-        {"objective_group":"Essential Commands (20%)","guide_sections":["Section 4","All integrated scenarios","Labs 1–2, 5–6 and 8"]},
-        {"objective_group":"Users and Groups (10%)","guide_sections":["Section 5","Integrated scenario 3","Labs 3, 7–8"]}
+      "id": "lfcs-2026-09-01-source-validation",
+      "exam_code": "LFCS",
+      "guide_path": "guides/LFCS-linux-foundation-certified-system-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/lfcs-official-objectives.txt",
+      "blueprint_snapshot_sha256": "7e81f913990e564ad0238c7842735843375ec30d94f036f88e194dcbfe77cb63",
+      "objective_coverage": [
+        {
+          "objective_group": "Operations Deployment (25%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios 2–3",
+            "Labs 1–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Networking (25%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1 and 3",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Storage (20%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenario 2",
+            "Labs 2, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Essential Commands (20%)",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 1–2, 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Users and Groups (10%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenario 3",
+            "Labs 3, 7–8"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":6,"reachable":5,"access_blocked":1,"missing_or_error":0},
-      "notes":"All five current distribution-independent domains are mapped to runtime state, persistent configuration, restart/reboot/recreate and revalidation, with three operational scenarios, eight safe labs and 40 original checks. All six guide URLs are cataloged: five reachable and O'Reilly automation-blocked; none missing or broken. No proprietary simulator tasks, course labs or recalled exam tasks are used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 25,
+        "reachable": 24,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Mapped all 34 public competencies and retained unchanged objective/lifecycle snapshots. Added exact OpenSSL and Python examples with 38 executed local checks and six loopback TLS handshakes, clarified service/timer/VM state, certificate validation, version-specific filesystem resize, route/SSH/ACL/LDAP evidence, strengthened 46 answers and eight proposed labs, and corrected current catalog metadata. Native Linux runtime validation remains deferred. See docs/research/2026-09-29-lfcs-deep-review.md"
     },
     {
       "id":"cka-2026-09-06-source-validation",

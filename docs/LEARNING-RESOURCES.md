@@ -3246,14 +3246,23 @@ No exact current O’Reilly, MeasureUp or Whizlabs LFCA product was independentl
 
 ### Linux Foundation Certified System Administrator (LFCS)
 
-- Official scope: [LFCS certification page](https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/) (**3–5 hours mapping/review**) and included Killer.sh simulator (**8–14 selected hours estimated**)
-- Official course: [Linux System Administration Essentials (LFS207)](https://training.linuxfoundation.org/training/linux-system-administration-essentials-lfs207/) (**50–60 listed hours**) with hands-on labs and cross-distribution coverage
-- Official route planner: [LFCS sample curriculum path](https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCS.pdf) (**30–60 minutes**); its three-to-six-month estimate depends on starting experience
-- Broad current path: [Pluralsight LFCS](https://www.pluralsight.com/paths/linux-foundation-certified-system-administrator-lfcs) (**42 listed hours plus 35–70 independent lab hours**), 12 courses, three refreshed 2026 labs and a practice exam
-- Lab-first route: [KodeKloud LFCS](https://kodekloud.com/courses/linux-foundation-certified-system-administrator-lfcs/) (**11–12 video hours plus 35–70 lab hours estimated**)
-- Same course through another library: [O'Reilly/KodeKloud LFCS](https://www.oreilly.com/videos/linux-foundation-certified/9781806112579/) (**11 hours 57 minutes listed plus labs**); choose this or KodeKloud, not both
+Resource details from the [LFCS guide](../guides/LFCS-linux-foundation-certified-system-administrator.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Choose one current route, repeat tasks on fresh Debian/Ubuntu- and RPM-family systems, and use the simulator to diagnose rather than memorize. No current MeasureUp or Whizlabs LFCS route was independently verified. Reject recalled tasks and multiple-choice-only preparation for this performance exam.
+This is not a complete list and is not meant to be consumed in full. Choose one current structured path, spend more time completing and verifying tasks than watching, use the included simulator for environment practice, and close every gap against the live five-domain map.
+
+| Resource | Access | Estimated time | Best use and boundary |
+|---|---|---:|---|
+| [Official LFCS page](https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/) | Public/exam | 3–5 hours | Map current weights, delivery and simulator; recheck before scheduling |
+| [Official LFCS curriculum path](https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCS.pdf) | Public | 30–60 minutes | Select training; its 3–6 month estimate depends on experience |
+| [Linux System Administration Essentials (LFS207)](https://training.linuxfoundation.org/training/linux-system-administration-essentials-lfs207/) | Paid | 50–60 hours listed | Official cross-distribution course with labs and assignments |
+| Included Killer.sh simulator | Included with exam | 8–14 hours estimated | Two 36-hour activations; rehearse environment, diagnose gaps, then rebuild tasks independently |
+| [Pluralsight LFCS path](https://www.pluralsight.com/paths/linux-foundation-certified-system-administrator-lfcs) | Paid | 40 hours listed | 12 courses, three July 2026 labs and practice exam; two courses updated September 2026, but the summary retains an older six-domain taxonomy |
+| [KodeKloud LFCS](https://kodekloud.com/courses/linux-foundation-certified-system-administrator-lfcs/) | Paid | 11.25 video hours listed plus 35–70 lab hours estimated | Public course metadata lists eight modules/103 lessons and two mock-exam titles; one networking section is mislabeled Users and Groups, so map topics individually |
+| [O’Reilly/KodeKloud LFCS course](https://www.oreilly.com/videos/linux-foundation-certified/9781806112579/) | Paid; automated catalog access blocked | Earlier 11h57 runtime not reverified | Earlier June 2025 edition/coverage details remain unverified; compare the current product before purchase |
+
+**VERIFY CURRENT:** Public catalogs checked September 29, 2026; paid interiors, provider labs and assessment contents were not accessed. KodeKloud’s public labels are inconsistent in places; its decimal 11.25 video hours is a provider figure, and the lab-hour range here is only a study-planning suggestion. Pluralsight mixes older course dates with refreshed courses/labs, so duration and headline alignment do not prove every current competency. The actual one-page LF curriculum PDF estimates 3–6 months and explicitly states its suggested courses are not prerequisites.
+
+No current MeasureUp or Whizlabs LFCS product was independently verified. Avoid multiple-choice-only preparation for a performance exam and reject recalled tasks.
 
 ### Certified Kubernetes Administrator (CKA)
 

@@ -5,6 +5,29 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "LFCS",
+      "reviewed_on": "2026-09-29",
+      "guide_sha256": "fb24da5844f2d1a028d11efc88a4353270a80cf11717ce34937b1e4fe93571b8",
+      "objective_count": 34,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-29-lfcs-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-29-lfcs-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "Same-context AI review; independent human review pending.",
+        "38 local checks passed with Git for Windows OpenSSL3.5.7, Python3.13.14 linkedOpenSSL3.0.21 and MSYS Bash; exact public examples are hash-matched.",
+        "Six real loopback TLS attempts: two validated payload exchanges and four intended hostname/trust rejections; workers and listeners stopped, owned keys/certificates/files cleaned.",
+        "No system/browser trust, DNS, host clock, global OpenSSL configuration, real credentials, external endpoints, Linux services/storage/network/ACL/SELinux, VMs or containers changed. All eight complete Linux labs remain proposed.",
+        "Native Linux runtime remains blocked from the earlier WSL startup attempt and is deferred for tomorrow; Windows/MSYS is not proof of Linux administration, filesystem, networking or mandatory-access behavior.",
+        "No revocation, intermediate CA chain, mutual TLS, HTTP/proxy, production PKI or remote deployment tested. Expiry and other reference-time checks did not change the operating-system clock.",
+        "Extent/throughput/capacity, route-selection and ACL calculations are deliberately restricted original models, not actual kernel/storage/permission tests.",
+        "Upstream documentation may be newer than an exam/distribution runtime; limited XFS shrinking and systemd syntax need installed-version and support verification.",
+        "Public catalog metadata only; OReilly blocked, old runtime/date claims unverified, mixed course dates/outline labels qualified. No paid lessons, simulator questions or provider labs accessed."
+      ]
+    },
+    {
       "exam_code": "LFCA",
       "reviewed_on": "2026-09-29",
       "guide_sha256": "152a822e1f63ba5d67cb75d7c9a45962512ea04285152abf8d125dc4b5faaa2f",
