@@ -1602,6 +1602,8 @@ The review maps every public ability through business decision/action and data a
 
 ## CC coverage record
 
+The September 29 [deep review](research/2026-09-29-cc-deep-review.md) maps 19 detailed objectives. Mapped all 19 current numbered objectives; preserved the prior snapshots and historical evidence before accepting a testing-center wording change. Updated free-program closure, CAT/course policy, authentication, sanitization and current incident-response guidance. Added 34 executed local checks, 48 answered prompts and eight proposed labs. Four commercial catalogs remain blocked; human review and live security exercises are pending. Current guide citations: 22 registered, 18 reachable, 4 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026, one day after the new outline took effect
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: September 1, 2026 five-domain outline—Security Principles (24%), Security Governance (17.3%), IAM Concepts (20%), Networking and Cloud Security Concepts (21.3%), and Security Operations and Incident Response (17.3%)

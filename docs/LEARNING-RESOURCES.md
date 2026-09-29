@@ -2830,6 +2830,30 @@ The fetched training PDF carries content code **26F15/copyright2026 despite its 
 
 Avoid products promising real/current questions or guaranteed passing. Use original scenarios and current primary references to explain each design decision. Independent human review and the eight live labs remain pending.
 
+### CC — Certified in Cybersecurity
+
+Resource details from the [CC guide](../guides/CC-isc2-certified-in-cybersecurity.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Choose a route after mapping the September 2026 objectives, then close gaps with current primary guidance and authorized exercises. Public sources were checked September 29, 2026. Study times below are our estimates unless stated otherwise; public metadata does not establish paid lesson quality or complete exam coverage.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Current CC outline](https://www.isc2.org/certifications/cc/cc-certification-exam-outline) and [actual eight-page PDF](https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/2026/EXAMS-CC_Exam_Outline-English-Revised-01-2026-Final.pdf) — map all 19 numbered objectives, not the stale web introduction | Public | 2–4h mapping/review |
+| [ISC2 self-study resources](https://www.isc2.org/certifications/cc/cc-self-study-resources) — official outline, flash cards, Study Hub and course links | Public listing; linked account/paid access varies | 1–2h selection; learning time varies |
+| [Official adaptive course](https://www.isc2.org/training/online-self-paced/cc-online-self-paced) — current five-domain public outline; English course language is distinct from exam languages | Paid account; 90/180-day access starts at purchase; no lessons/assessments accessed | Adaptive duration varies; the earlier approximately 14h estimate was not reverified. Our proposed extra review/lab time: 15–25h |
+| [Program closure and existing codes](https://www.isc2.org/landing/1mcc), [April 22 announcement](https://www.isc2.org/insights/2026/04/one-million-certified-cyber-conclusion) and [CAT policy](https://www.isc2.org/certifications/computerized-adaptive-testing) — verify eligibility, deadlines and delivery separately | Public; new free-program enrollments closed | 30–60m policy review |
+| [Member policies](https://www.isc2.org/policies-procedures/member-policies) and [Code of Ethics](https://www.isc2.org/ethics) — CC requires 45 Group A CPEs over three years; 15 annually is suggested, not a separate annual minimum in that table | Public; CC-only AMF USD 50 annually, subject to policy | 45–90m plus ethical scenarios |
+| [2026 refresh article](https://www.isc2.org/Insights/2026/08/inside-the-updated-isc2-cc-exam) and [AI guidance PDF](https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf) — read the CC section on printed pages 3–5 | Public; 29-page PDF, only introduction/CC section reviewed for this guide | 1–2h gap mapping |
+| [NIST authentication](https://pages.nist.gov/800-63-4/sp800-63b.html), [Zero Trust](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf), [sanitization](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf) and [incident response](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf) — selected current primary sections, practical depth beyond simple definitions | Public; not complete exam-prep courses or universal law | 6–10h selective reading plus proposed exercises |
+| [O'Reilly/Sybex CC Study Guide, 2nd Edition](https://www.oreilly.com/library/view/cc-certified-in/9781394454907/) — returned HTTP 403; earlier August 2026 / 6h17m metadata and current alignment are unverified | Paid; no book/paid chapters reviewed | Current provider duration unverified |
+| [O'Reilly CC 2026 video](https://www.oreilly.com/videos/cert-prep-isc2/00001ISC2CC2026/) — returned HTTP 403; earlier 4h56m duration/current scope unverified | Paid; no video or questions reviewed | Current provider duration unverified |
+| [Mike Chapple Udemy course](https://www.udemy.com/course/isc2-certified-in-cybersecurity-cc-complete-course/) — returned HTTP 403; earlier August 2026 / 4h55m metadata unverified | Paid; no lessons reviewed | Current provider duration unverified |
+| [Thor Pedersen Udemy course](https://www.udemy.com/course/certifiedincybersecurity/) — returned HTTP 403; earlier June 2026 revision/alignment unverified | Paid; no lessons reviewed | Current provider duration unverified |
+
+The official adaptive course distinguishes its **Validation of Completion** from the CC credential. Its public completion rules use 75% on course assessments plus the other listed requirements; that is not an exam pass rule. Generic experience-requirement wording on the course page does not override the exam outline's explicit no-experience prerequisite. No purchase, enrollment, free voucher, examination item or paid assessment was accessed during this review.
+
+Avoid recalled questions and guaranteed-pass promises. Use original explanations and evidence, reconcile exact current resource coverage and obtain independent review before relying on this unofficial guide.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

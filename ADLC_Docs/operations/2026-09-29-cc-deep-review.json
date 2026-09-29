@@ -1,0 +1,1659 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "CC",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/CC-isc2-certified-in-cybersecurity.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "00b87dead2d2e3d6bc5b927d8214d03720f83528c7ea9213ad9321d9fec5ad92",
+  "guide_after_sha256": "cb36934e1b13710d735b5ef66a8dcb28e470e79423075139fa5ddc21fd54b4ef",
+  "prior_records": {
+    "exam": {
+      "code": "CC",
+      "level": "beginner",
+      "vendor_id": "isc2",
+      "title": "Certified in Cybersecurity",
+      "status": "active",
+      "study_guide_url": "https://www.isc2.org/certifications/cc/cc-certification-exam-outline",
+      "guide_path": "guides/CC-isc2-certified-in-cybersecurity.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No work experience is required. Build connected risk/control reasoning across CIA, AAA, privacy, governance, BC/DR, identity lifecycle and access models, packet and cloud responsibility paths, data/asset protection, monitoring/triage, incident response and authorized testing against the September 1, 2026 outline."
+    },
+    "review": {
+      "id": "cc-2026-09-02-source-validation",
+      "exam_code": "CC",
+      "guide_path": "guides/CC-isc2-certified-in-cybersecurity.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/cc-official-objectives.txt",
+      "blueprint_snapshot_sha256": "e78550c6ab0a65fb1dbff89436b7e7d72dfc575393ffd439c42929acf180aea4",
+      "objective_coverage": [
+        {
+          "objective_group": "Security Principles (24%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security Governance (17.3%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenario 2",
+            "Labs 2–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Identity and Access Management Concepts (20%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenario 1",
+            "Labs 4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Networking and Cloud Security Concepts (21.3%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1 and 3",
+            "Labs 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security Operations and Incident Response (17.3%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenarios 2–3",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 9,
+        "reachable": 5,
+        "access_blocked": 4,
+        "missing_or_error": 0
+      },
+      "notes": "Every September 1, 2026 objective and weight is mapped through asset/business process, threat/vulnerability/risk, selected control, owner, evidence and response/recovery. New governance, IAM, network/cloud, testing/metrics and embedded AI-security boundaries are explicit. Three scenarios, eight authorized labs and 40 checks are included. Five URLs are reachable; two O'Reilly and two Udemy pages are automation-blocked; none are broken. No recalled/live item, dump or unauthorized test is used."
+    },
+    "sources": [
+      {
+        "id": "isc2-cc-outline",
+        "title": "Certified in Cybersecurity Certification Exam Outline",
+        "url": "https://www.isc2.org/certifications/cc/cc-certification-exam-outline",
+        "publisher": "ISC2",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CC"
+        ],
+        "notes": "Canonical September 1, 2026 outline with five weighted domains, detailed topics, embedded AI guidance and current CAT delivery contract; monitored by the ISC2 adapter."
+      },
+      {
+        "id": "isc2-cc-self-study",
+        "title": "Certified in Cybersecurity Study Tools and Resources",
+        "url": "https://www.isc2.org/certifications/cc/cc-self-study-resources",
+        "publisher": "ISC2",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CC"
+        ],
+        "notes": "First-party route to the current outline, adaptive course, flash cards and Study Hub; access and program eligibility vary."
+      },
+      {
+        "id": "isc2-cc-adaptive-training",
+        "title": "CC Online Self-Paced Training",
+        "url": "https://www.isc2.org/training/online-self-paced/cc-online-self-paced",
+        "publisher": "ISC2",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CC"
+        ],
+        "notes": "Current five-domain adaptive course with assessments, quizzes, study sheets, flash cards and 90/180-day options. Public program material describes about 14 hours; verify current bundle/free eligibility."
+      },
+      {
+        "id": "isc2-member-policies",
+        "title": "ISC2 Member Policies",
+        "url": "https://www.isc2.org/policies-procedures/member-policies",
+        "publisher": "ISC2",
+        "authority_class": 1,
+        "source_type": "program-policy",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CC",
+          "SSCP",
+          "CCSP",
+          "CISSP"
+        ],
+        "notes": "Canonical current three-year maintenance, CPE, AMF, suspension and reinstatement rules; extend to other ISC2 guides as published."
+      },
+      {
+        "id": "isc2-code-of-ethics",
+        "title": "ISC2 Code of Ethics",
+        "url": "https://www.isc2.org/ethics",
+        "publisher": "ISC2",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CC",
+          "SSCP",
+          "CCSP",
+          "CISSP"
+        ],
+        "notes": "First-party ethical obligations used for scenario reasoning; extend to other ISC2 guides as published."
+      },
+      {
+        "id": "oreilly-isc2-cc-study-guide-2e",
+        "title": "CC Certified in Cybersecurity Study Guide, 2nd Edition",
+        "url": "https://www.oreilly.com/library/view/cc-certified-in/9781394454907/",
+        "publisher": "O'Reilly / Sybex / Mike Chapple",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CC"
+        ],
+        "notes": "August 2026, 272-page, 6h17m book explicitly aligned to the 2026–2029 objectives with practice resources."
+      },
+      {
+        "id": "oreilly-isc2-cc-2026-video",
+        "title": "Cert Prep: ISC2 Certified in Cybersecurity (CC), 2026 Edition",
+        "url": "https://www.oreilly.com/videos/cert-prep-isc2/00001ISC2CC2026/",
+        "publisher": "O'Reilly / CertMike / Mike Chapple",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CC"
+        ],
+        "notes": "August 2026, 4h56m video route mapped to the new outline; close policy changes and practice with authorized labs."
+      },
+      {
+        "id": "udemy-mike-chapple-isc2-cc",
+        "title": "ISC2 Certified in Cybersecurity (CC) Complete Course",
+        "url": "https://www.udemy.com/course/isc2-certified-in-cybersecurity-cc-complete-course/",
+        "publisher": "Udemy / Mike Chapple",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CC"
+        ],
+        "notes": "4h55m course published/updated August 2026 and explicitly mapped to the five-domain 2026 exam."
+      },
+      {
+        "id": "udemy-thor-isc2-cc-2026",
+        "title": "The Complete Certified in Cybersecurity Course 2026",
+        "url": "https://www.udemy.com/course/certifiedincybersecurity/",
+        "publisher": "Udemy / Thor Pedersen",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CC"
+        ],
+        "notes": "Popular course updated June 2026 and claiming the new topic map; verify the September 1 domains and weights within the course before relying on it."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "23367f234ef9f480d66f7399ce75a5157b2c6b1ff80652433a9d90ad62162e84",
+      "guide_sections": [
+        "1. Security Principles — 24%",
+        "Executed local controls and recovery workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "15124dfceec3970d78f24c6b5541a148592656ef1a8db31df06c12ef104c9b50",
+      "guide_sections": [
+        "1. Security Principles — 24%",
+        "Executed local controls and recovery workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "aec8fb3383e994886e88186fca00344a8af30ad5b8463be57c139dd7f9aeba8f",
+      "guide_sections": [
+        "1. Security Principles — 24%",
+        "Executed local controls and recovery workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "5696e7d12099cbb8efcca549f8ac81610a31bfa2a367dae182e5529c3d03a7d9",
+      "guide_sections": [
+        "1. Security Principles — 24%",
+        "Executed local controls and recovery workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "1a6dc7ed3dc6ece4aec297b8aaead79fa5606484e8aa71f3d52b4bcfd76d8a9c",
+      "guide_sections": [
+        "1. Security Principles — 24%",
+        "Executed local controls and recovery workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "9323fda930b46f0f3962f295a0aab6d2358ad925695b428f5ffcd3f8856aedc1",
+      "guide_sections": [
+        "2. Security Governance — 17.3%",
+        "Executed local controls and recovery workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "70f77869e1a25d14c14995850e41ba9b03837ad7329ec8dee5271e7097daee63",
+      "guide_sections": [
+        "2. Security Governance — 17.3%",
+        "Executed local controls and recovery workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "9dff7bc87d1e1e3ba524ec3f513d53ea29ff07865428159983940c8dd983a50d",
+      "guide_sections": [
+        "2. Security Governance — 17.3%",
+        "Executed local controls and recovery workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "c96ecfde1dc23ddb12b97472d30616e65e14e8a3adb5baefceeb0f42ab08711e",
+      "guide_sections": [
+        "2. Security Governance — 17.3%",
+        "Executed local controls and recovery workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "2e39c7ad016d18ccecf45ece51ec548d26eff26d4ec6db94c05204ee0359957c",
+      "guide_sections": [
+        "3. Identity and Access Management Concepts — 20%",
+        "Executed local controls and recovery workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "63254444eb758b735bd6b76cc26fb185bda7115cf867d115631c02480e6df2df",
+      "guide_sections": [
+        "3. Identity and Access Management Concepts — 20%",
+        "Executed local controls and recovery workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "809d63cae809dcd6b2ca9bb811b2e58dd2fc6646b2943c4a9e8722a6427d7ddc",
+      "guide_sections": [
+        "4. Networking and Cloud Security Concepts — 21.3%",
+        "Executed local controls and recovery workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "3e7fe9d884c712d1b41a672a1bb66b546a093b9cc475be603a37c9069d8e7e8e",
+      "guide_sections": [
+        "4. Networking and Cloud Security Concepts — 21.3%",
+        "Executed local controls and recovery workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "de735489181d43f46dcbd57a03373a1bc7b86590a1fa18f4aaeebed590598abf",
+      "guide_sections": [
+        "4. Networking and Cloud Security Concepts — 21.3%",
+        "Executed local controls and recovery workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "2578ca2d8a4fc6806074a4a836648c3f8fb38ed2cf12e4033ef6858e1a122973",
+      "guide_sections": [
+        "5. Security Operations and Incident Response — 17.3%",
+        "Executed local controls and recovery workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "4f153dc467af04cd0c03b333cf5879725d46408deb0e7beb7a204ab631c7f152",
+      "guide_sections": [
+        "5. Security Operations and Incident Response — 17.3%",
+        "Executed local controls and recovery workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "e4dd0307a743aba17d262f96e8f2f4cda33047123b43c79b83bfd46180904c05",
+      "guide_sections": [
+        "5. Security Operations and Incident Response — 17.3%",
+        "Executed local controls and recovery workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "629e73fd8f2f1590b14464d116a367d4968aa2a1c7ecfec4d3d0d66eed21cc6f",
+      "guide_sections": [
+        "5. Security Operations and Incident Response — 17.3%",
+        "Executed local controls and recovery workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "99ab78189d07bacbeff6d4976973ad7a32d77675cf95d4bfc2bef6fdaf8e85d2",
+      "guide_sections": [
+        "5. Security Operations and Incident Response — 17.3%",
+        "Executed local controls and recovery workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "CC"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "CC",
+        "title": "Certified in Cybersecurity",
+        "url": "https://www.isc2.org/certifications/cc/cc-certification-exam-outline",
+        "guide_path": "guides/CC-isc2-certified-in-cybersecurity.md",
+        "snapshot_path": "data\\objective-snapshots\\cc-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\cc-official-status.json",
+        "previous_sha256": "e78550c6ab0a65fb1dbff89436b7e7d72dfc575393ffd439c42929acf180aea4",
+        "current_sha256": "22b7660fa9b289c32f902cae087070762cc492978e2ce949b092fe363e279adb",
+        "previous_status_sha256": "8192abb837b643c15d0f80d01b3d6a288ca980d8214561439989f20ff643b596",
+        "current_status_sha256": "b0185cf7d68ac6b24dd4fb93c4d6a2355d239155476a89840c509e2837bf7c3e",
+        "official_status": {
+          "skills_versions": [
+            "EFFECTIVE DATE: SEPTEMBER 1, 2026",
+            "Length of exam: 2 hours",
+            "Number of items: 100-125",
+            "Item format: Multiple choice and advanced item types",
+            "Passing grade: 700 out of 1000 points",
+            "Exam language availability: English, Chinese, Japanese, German, Spanish",
+            "Testing center: Pearson Testing Center"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 22,
+    "reachable": 18,
+    "access_blocked": 4,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "isc2-cc-outline",
+      "url": "https://www.isc2.org/certifications/cc/cc-certification-exam-outline",
+      "checked_at": "2026-09-29T11:51:20.923518+00:00",
+      "health": {
+        "id": "isc2-cc-outline",
+        "url": "https://www.isc2.org/certifications/cc/cc-certification-exam-outline",
+        "checked_at": "2026-09-29T11:51:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/certifications/cc/cc-certification-exam-outline",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Certified in Cybersecurity Exam Outline",
+        "canonical_url": "https://www.isc2.org/certifications/cc/cc-certification-exam-outline",
+        "duration_signals": [
+          "2 hours"
+        ],
+        "signal_fingerprint": "cb4a6f60aa976ff88357eaacaa0330e092d3c060e0b7d98c00e9dfb14ae7783f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/certifications/cc/cc-certification-exam-outline",
+      "sha256": "148d86d94f13974cb0502ecf32f8d1b4d7774d610222c1b320794ddb9d790f7d",
+      "text_characters": 711,
+      "full_page_extraction": {
+        "characters": 15552,
+        "sha256": "0d0e119c133b40f5ea49b0fd8080df9935dc98773594ee7eb718424542c54149",
+        "reason": "Visible content outside the main element contains additional public policy/course/outline sections; initial main-only extraction was incomplete."
+      }
+    },
+    {
+      "id": "isc2-cc-self-study",
+      "url": "https://www.isc2.org/certifications/cc/cc-self-study-resources",
+      "checked_at": "2026-09-29T11:51:20.924207+00:00",
+      "health": {
+        "id": "isc2-cc-self-study",
+        "url": "https://www.isc2.org/certifications/cc/cc-self-study-resources",
+        "checked_at": "2026-09-29T11:51:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/certifications/cc/cc-self-study-resources",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Self-Study Tools and Resources for the ISC2 CC Exam",
+        "canonical_url": "https://www.isc2.org/certifications/cc/cc-self-study-resources",
+        "duration_signals": [],
+        "signal_fingerprint": "7eb90f836aed814060bf9cfde7818e89904ccf7c8bd6795be012b8bab89bcb3b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/certifications/cc/cc-self-study-resources",
+      "sha256": "f02f2b7ef0179b67f335fd95437303e38a0a7dea1431984db612a3248e015d51",
+      "text_characters": 2377,
+      "full_page_extraction": {
+        "characters": 3560,
+        "sha256": "3f4d7d55d393d456c4c3ee19327d1a3f1bd1abed8319d0014d7afa5b0d92aabb",
+        "reason": "Visible content outside the main element contains additional public policy/course/outline sections; initial main-only extraction was incomplete."
+      }
+    },
+    {
+      "id": "isc2-cc-adaptive-training",
+      "url": "https://www.isc2.org/training/online-self-paced/cc-online-self-paced",
+      "checked_at": "2026-09-29T11:51:20.924645+00:00",
+      "health": {
+        "id": "isc2-cc-adaptive-training",
+        "url": "https://www.isc2.org/training/online-self-paced/cc-online-self-paced",
+        "checked_at": "2026-09-29T11:51:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/training/online-self-paced/cc-online-self-paced",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Certified in Cybersecurity (Online Self-Paced)",
+        "canonical_url": "https://www.isc2.org/training/online-self-paced/cc-online-self-paced",
+        "duration_signals": [],
+        "signal_fingerprint": "5d046868a423ebaa29025e16941d42f6034c9844e03916e010d1985130fb8240",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/training/online-self-paced/cc-online-self-paced",
+      "sha256": "dcaa3346f541eb919a341823c0c01ae7dd577446e707b492e8bc96f6f7f7ba33",
+      "text_characters": 1877,
+      "full_page_extraction": {
+        "characters": 11143,
+        "sha256": "62fae0018c7b5b8412ef476ff33d1eac15800c0dcbaaf18ca30c7572d75d894e",
+        "reason": "Visible content outside the main element contains additional public policy/course/outline sections; initial main-only extraction was incomplete."
+      }
+    },
+    {
+      "id": "isc2-member-policies",
+      "url": "https://www.isc2.org/policies-procedures/member-policies",
+      "checked_at": "2026-09-29T11:51:22.683472+00:00",
+      "health": {
+        "id": "isc2-member-policies",
+        "url": "https://www.isc2.org/policies-procedures/member-policies",
+        "checked_at": "2026-09-29T11:51:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/policies-procedures/member-policies",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Member Policies",
+        "canonical_url": "https://www.isc2.org/policies-procedures/member-policies",
+        "duration_signals": [],
+        "signal_fingerprint": "91d58a7a0189afa3c90b0e203247190ea46b5a1d9effcf794a97dc675216775a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/policies-procedures/member-policies",
+      "sha256": "0018b6c861a8f32739506eb6ff5939887565c281597585983a205bc6f248a49d",
+      "text_characters": 442,
+      "full_page_extraction": {
+        "characters": 41110,
+        "sha256": "e8924397368a2b3c9905de59aed15491c3f56d235b38629da5331bfe14d7007f",
+        "reason": "Visible content outside the main element contains additional public policy/course/outline sections; initial main-only extraction was incomplete."
+      }
+    },
+    {
+      "id": "isc2-code-of-ethics",
+      "url": "https://www.isc2.org/ethics",
+      "checked_at": "2026-09-29T11:51:22.861066+00:00",
+      "health": {
+        "id": "isc2-code-of-ethics",
+        "url": "https://www.isc2.org/ethics",
+        "checked_at": "2026-09-29T11:51:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/ethics",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ISC2 Code of Ethics—Guidance for Cybersecurity Professionals",
+        "canonical_url": "https://www.isc2.org/ethics",
+        "duration_signals": [],
+        "signal_fingerprint": "7a9373b56e9e31d711af75585a8c507b34f6bda42c2694067ca96f0d1499903d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/ethics",
+      "sha256": "c667d09445f97dbf47ae36f876fad55e40330b98122d3c421b64d74608fd65b8",
+      "text_characters": 1484,
+      "full_page_extraction": {
+        "characters": 9260,
+        "sha256": "54f59a5c3d6121b84766efb79f01777aeaf95b5603e6209655d258697f6290bb",
+        "reason": "Visible content outside the main element contains additional public policy/course/outline sections; initial main-only extraction was incomplete."
+      }
+    },
+    {
+      "id": "oreilly-isc2-cc-study-guide-2e",
+      "url": "https://www.oreilly.com/library/view/cc-certified-in/9781394454907/",
+      "checked_at": "2026-09-29T11:51:23.029408+00:00",
+      "health": {
+        "id": "oreilly-isc2-cc-study-guide-2e",
+        "url": "https://www.oreilly.com/library/view/cc-certified-in/9781394454907/",
+        "checked_at": "2026-09-29T11:51:23+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/cc-certified-in/9781394454907/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "oreilly-isc2-cc-2026-video",
+      "url": "https://www.oreilly.com/videos/cert-prep-isc2/00001ISC2CC2026/",
+      "checked_at": "2026-09-29T11:51:23.263158+00:00",
+      "health": {
+        "id": "oreilly-isc2-cc-2026-video",
+        "url": "https://www.oreilly.com/videos/cert-prep-isc2/00001ISC2CC2026/",
+        "checked_at": "2026-09-29T11:51:23+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/cert-prep-isc2/00001ISC2CC2026/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "udemy-mike-chapple-isc2-cc",
+      "url": "https://www.udemy.com/course/isc2-certified-in-cybersecurity-cc-complete-course/",
+      "checked_at": "2026-09-29T11:51:23.337027+00:00",
+      "health": {
+        "id": "udemy-mike-chapple-isc2-cc",
+        "url": "https://www.udemy.com/course/isc2-certified-in-cybersecurity-cc-complete-course/",
+        "checked_at": "2026-09-29T11:51:23+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/isc2-certified-in-cybersecurity-cc-complete-course/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "udemy-thor-isc2-cc-2026",
+      "url": "https://www.udemy.com/course/certifiedincybersecurity/",
+      "checked_at": "2026-09-29T11:51:23.441918+00:00",
+      "health": {
+        "id": "udemy-thor-isc2-cc-2026",
+        "url": "https://www.udemy.com/course/certifiedincybersecurity/",
+        "checked_at": "2026-09-29T11:51:23+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/certifiedincybersecurity/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "nist-ir-2025-announcement",
+      "url": "https://www.nist.gov/news-events/news/2025/04/nist-revises-sp-800-61-incident-response-recommendations-and-considerations",
+      "checked_at": "2026-09-29T11:54:27.916040+00:00",
+      "health": {
+        "id": "nist-ir-2025-announcement",
+        "url": "https://www.nist.gov/news-events/news/2025/04/nist-revises-sp-800-61-incident-response-recommendations-and-considerations",
+        "checked_at": "2026-09-29T11:54:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nist.gov/news-events/news/2025/04/nist-revises-sp-800-61-incident-response-recommendations-and-considerations",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "NIST Revises SP 800-61: Incident Response Recommendations and Considerations for Cybersecurity Risk Management",
+        "canonical_url": "https://www.nist.gov/news-events/news/2025/04/nist-revises-sp-800-61-incident-response-recommendations-and-considerations",
+        "duration_signals": [],
+        "signal_fingerprint": "2242f5d7d41b39b3d3f59f1bdb73bceac719c8a1ef55bf1ec09e9260d5e178d6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nist.gov/news-events/news/2025/04/nist-revises-sp-800-61-incident-response-recommendations-and-considerations",
+      "sha256": "d7d9b8ab108e2f03e0922207fc88e92bf0d16902f9f5169a81a32d2ca30c8aed",
+      "text_characters": 4510
+    },
+    {
+      "id": "nist-800-63b-4",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "checked_at": "2026-09-29T11:54:27.916868+00:00",
+      "health": {
+        "id": "nist-800-63b-4",
+        "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+        "checked_at": "2026-09-29T11:54:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+        "content_type": "text/html",
+        "page_title": "NIST Special Publication 800-63B",
+        "canonical_url": "/800-63-4/sp800-63b.html",
+        "duration_signals": [
+          "1 hour",
+          "10 minutes",
+          "12 hours",
+          "15 minutes",
+          "24 hours",
+          "24 hours and 10 minutes"
+        ],
+        "signal_fingerprint": "5ddbbdf4604797a1f84ba2134130ae1d3b228955b507c77d2c1b48e269f67805",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "sha256": "ad38653ca3bc9b864a7d0c7e2b4506f6906e9158dda2e1f0adb841815fbbd2e7",
+      "text_characters": 253608
+    },
+    {
+      "id": "nist-cybersecurity-framework-2",
+      "url": "https://www.nist.gov/cyberframework",
+      "checked_at": "2026-09-29T11:54:27.917348+00:00",
+      "health": {
+        "id": "nist-cybersecurity-framework-2",
+        "url": "https://www.nist.gov/cyberframework",
+        "checked_at": "2026-09-29T11:54:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nist.gov/cyberframework",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Cybersecurity Framework",
+        "canonical_url": "https://www.nist.gov/cyberframework",
+        "duration_signals": [],
+        "signal_fingerprint": "7ece8c5ce2c87131c09b887c735e648ca2d6d75ec5c85b3dd2a99cc4a072d0bc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nist.gov/cyberframework",
+      "sha256": "f2e9c2ece63eb62e67046a385d473783ae463714c052463f1af32c179bc72ba2",
+      "text_characters": 5335
+    },
+    {
+      "id": "isc2-cc-2026-refresh-blog",
+      "url": "https://www.isc2.org/Insights/2026/08/inside-the-updated-isc2-cc-exam",
+      "checked_at": "2026-09-29T11:54:28.386305+00:00",
+      "health": {
+        "id": "isc2-cc-2026-refresh-blog",
+        "url": "https://www.isc2.org/Insights/2026/08/inside-the-updated-isc2-cc-exam",
+        "checked_at": "2026-09-29T11:54:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/Insights/2026/08/inside-the-updated-isc2-cc-exam",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "What’s New for Entry-Level Cybersecurity",
+        "canonical_url": "https://www.isc2.org/Insights/2026/08/inside-the-updated-isc2-cc-exam",
+        "duration_signals": [],
+        "signal_fingerprint": "5c3cdf9551558dd380ce40d33a280428660c1ed18a074d0cc9f67125365aff75",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/Insights/2026/08/inside-the-updated-isc2-cc-exam",
+      "sha256": "dc6f9f6e460966de68455b0a829e952f3d891c72acbc3a24c9290fbe5d289c7d",
+      "text_characters": 20,
+      "full_page_extraction": {
+        "characters": 7633,
+        "sha256": "feb9c198b2bd191f8af2816aa63b698593d0f98fdba9b787aedf72d0eb5dc2fd",
+        "reason": "Visible content outside the main element contains additional public policy/course/outline sections; initial main-only extraction was incomplete."
+      }
+    },
+    {
+      "id": "isc2-cc-free-program-closure",
+      "url": "https://www.isc2.org/landing/1mcc",
+      "checked_at": "2026-09-29T11:54:28.428381+00:00",
+      "health": {
+        "id": "isc2-cc-free-program-closure",
+        "url": "https://www.isc2.org/landing/1mcc",
+        "checked_at": "2026-09-29T11:54:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/landing/1mcc",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "One Million Certified in Cybersecurity",
+        "canonical_url": "https://www.isc2.org/landing/1mcc",
+        "duration_signals": [],
+        "signal_fingerprint": "f7d69cd39a523337d1af71a807a9be9b2893a7389f234e8c7c71856be3dbbc9c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/landing/1mcc",
+      "sha256": "c4734b3332fc8b9f035f21e6d3a30eb507873be0503a7ad995dd87db9a9fdfb2",
+      "text_characters": 1690,
+      "full_page_extraction": {
+        "characters": 8981,
+        "sha256": "f3924c03f6584767d76be1a032765d021afe1c856e6de4eaaaa0d097c1ab1f99",
+        "reason": "Visible content outside the main element contains additional public policy/course/outline sections; initial main-only extraction was incomplete."
+      }
+    },
+    {
+      "id": "isc2-cc-program-announcement",
+      "url": "https://www.isc2.org/insights/2026/04/one-million-certified-cyber-conclusion",
+      "checked_at": "2026-09-29T11:54:28.822494+00:00",
+      "health": {
+        "id": "isc2-cc-program-announcement",
+        "url": "https://www.isc2.org/insights/2026/04/one-million-certified-cyber-conclusion",
+        "checked_at": "2026-09-29T11:54:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/insights/2026/04/one-million-certified-cyber-conclusion",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ISC2 Provided 1 Million People Globally with Free Access to the Certified in Cybersecurity Certification Course and Exam",
+        "canonical_url": "https://www.isc2.org/Insights/2026/04/one-million-certified-cyber-conclusion",
+        "duration_signals": [],
+        "signal_fingerprint": "1b9533a8cd23281a7e3a6031af30cbce4e65601628a16a53c855efe9beca18d8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/insights/2026/04/one-million-certified-cyber-conclusion",
+      "sha256": "e45e57b5d125aa9b13432530b83e2cf2ca630c18e0f973a471519738b69e85e2",
+      "text_characters": 20,
+      "full_page_extraction": {
+        "characters": 5954,
+        "sha256": "dac604ef7a133151c2bf3e1a151cce2cb2c8126ea008bc397d5b11747823a962",
+        "reason": "Visible content outside the main element contains additional public policy/course/outline sections; initial main-only extraction was incomplete."
+      }
+    },
+    {
+      "id": "isc2-cat-policy",
+      "url": "https://www.isc2.org/certifications/computerized-adaptive-testing",
+      "checked_at": "2026-09-29T11:54:30.039774+00:00",
+      "health": {
+        "id": "isc2-cat-policy",
+        "url": "https://www.isc2.org/certifications/computerized-adaptive-testing",
+        "checked_at": "2026-09-29T11:54:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/certifications/computerized-adaptive-testing",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Computerized Adaptive Testing",
+        "canonical_url": "https://www.isc2.org/certifications/computerized-adaptive-testing",
+        "duration_signals": [],
+        "signal_fingerprint": "22554610ea2cc26f338669a2bdd622cfd5b7ed8113eff37535bcb0f52e88b928",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/certifications/computerized-adaptive-testing",
+      "sha256": "f686be2728e35c814311efa24de3d10ad8a2a443193865fe8713b9e659cd496f",
+      "text_characters": 847,
+      "full_page_extraction": {
+        "characters": 15171,
+        "sha256": "e75bad8527c9d80e93affdcaa4102d21a4ae3dcdfd1cfb91a7ec5363f17646a1",
+        "reason": "Visible content outside the main element contains additional public policy/course/outline sections; initial main-only extraction was incomplete."
+      }
+    },
+    {
+      "id": "nist-sp800-61r3-pdf",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "checked_at": "2026-09-29T11:54:38.857880+00:00",
+      "health": {
+        "id": "nist-sp800-61r3-pdf",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "checked_at": "2026-09-29T11:54:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "sha256": "e5593d6bb85daecec7e8d9549400c7b3473bcc3f06e469c82218073afa7fba2d",
+      "bytes": 1040566,
+      "pdf_pages": 48,
+      "text_characters": 107538
+    },
+    {
+      "id": "nist-800-207",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "checked_at": "2026-09-29T11:54:36.514598+00:00",
+      "health": {
+        "id": "nist-800-207",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "checked_at": "2026-09-29T11:54:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "sha256": "0290d6ece24874287316f4bf430fef770aa4ec08a2227c8f2c1e5b2ff975e03d",
+      "bytes": 966908,
+      "pdf_pages": 59,
+      "text_characters": 156827
+    },
+    {
+      "id": "nist-800-88r2",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "checked_at": "2026-09-29T11:54:38.237732+00:00",
+      "health": {
+        "id": "nist-800-88r2",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+        "checked_at": "2026-09-29T11:54:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "sha256": "39bb805c72723ed74f08e5806cd8463ca2554a62abb4f97b9d19c0398a8a7c55",
+      "bytes": 983677,
+      "pdf_pages": 48,
+      "text_characters": 112553
+    },
+    {
+      "id": "isc2-cc-outline-2026-pdf",
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/2026/EXAMS-CC_Exam_Outline-English-Revised-01-2026-Final.pdf",
+      "checked_at": "2026-09-29T11:54:39.250428+00:00",
+      "health": {
+        "id": "isc2-cc-outline-2026-pdf",
+        "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/2026/EXAMS-CC_Exam_Outline-English-Revised-01-2026-Final.pdf",
+        "checked_at": "2026-09-29T11:54:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/2026/EXAMS-CC_Exam_Outline-English-Revised-01-2026-Final.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/2026/EXAMS-CC_Exam_Outline-English-Revised-01-2026-Final.pdf",
+      "sha256": "6ec5f79237f0784e9e339b521e20002adb3a0756a5c2fa33ae6c5b466451b477",
+      "bytes": 256171,
+      "pdf_pages": 8,
+      "text_characters": 7423
+    },
+    {
+      "id": "nist-pqc-first-standards",
+      "url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+      "checked_at": "2026-09-29T11:56:05.024043+00:00",
+      "health": {
+        "id": "nist-pqc-first-standards",
+        "url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+        "checked_at": "2026-09-29T11:56:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "NIST Releases First 3 Finalized Post-Quantum Encryption Standards",
+        "canonical_url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+        "duration_signals": [],
+        "signal_fingerprint": "e7277cd44446eb1a1faf6735d1374fe4e0dcceec987c99155f82b4afb209c448",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+      "sha256": "479b823e7c89161c66e68a7e4363e8f738ae1ddf30da887755efdbba29a0a726",
+      "text_characters": 12282
+    },
+    {
+      "id": "isc2-ai-exam-guidance",
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+      "checked_at": "2026-09-29T11:56:07.618044+00:00",
+      "health": {
+        "id": "isc2-ai-exam-guidance",
+        "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+        "checked_at": "2026-09-29T11:56:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+      "sha256": "69cd0cfa50fac68a60370f812f0ce5f6f33b1a861eac66b4c66e2e410fbb0741",
+      "bytes": 506895,
+      "pdf_pages": 29,
+      "text_characters": 70743
+    }
+  ],
+  "added_source_ids": [
+    "isc2-cc-outline-2026-pdf",
+    "isc2-cc-2026-refresh-blog",
+    "isc2-cc-free-program-closure",
+    "isc2-cc-program-announcement",
+    "isc2-cat-policy",
+    "isc2-ai-exam-guidance",
+    "nist-pqc-first-standards"
+  ],
+  "findings": [
+    {
+      "id": "cc-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "The monitored change is editorial rather than a new blueprint",
+      "url": "https://www.isc2.org/certifications/cc/cc-certification-exam-outline",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CC"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Only testing-centerlabelchanged;19objectives/weightsunchanged,oldintroandinvalidcalendarstillpresent.",
+      "recommendation": "Archive oldbytes/history;acceptlabel explicitly;usecurrentdetaileddomains andactualbooking.",
+      "disposition": "applied",
+      "source_id": "isc2-cc-outline",
+      "resolution": "Archive oldbytes/history;acceptlabel explicitly;usecurrentdetaileddomains andactualbooking."
+    },
+    {
+      "id": "cc-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "The actual outline confirms detailed scope and rounding",
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/2026/EXAMS-CC_Exam_Outline-English-Revised-01-2026-Final.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CC"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Eight-pagePDF confirms5/4/2/3/5objectives andpublishedweights totaling99.9.",
+      "recommendation": "Preserveofficialweights andnoexperienceprerequisite;donotnormalizeorpromoteoldintro.",
+      "disposition": "applied",
+      "source_id": "isc2-cc-outline-2026-pdf",
+      "resolution": "Preserveofficialweights andnoexperienceprerequisite;donotnormalizeorpromoteoldintro."
+    },
+    {
+      "id": "cc-deep-3",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "New free-program enrollments have closed",
+      "url": "https://www.isc2.org/landing/1mcc",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CC"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "May20closure;existingunexpiredcodes mustscheduleandsitbyDec31;199USDpaidexam.",
+      "recommendation": "Remove open-endedfree-routeassumption andseparatecode/course/AMFdeadlines.",
+      "disposition": "applied",
+      "source_id": "isc2-cc-free-program-closure",
+      "resolution": "Remove open-endedfree-routeassumption andseparatecode/course/AMFdeadlines."
+    },
+    {
+      "id": "cc-deep-4",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "CAT length and course scores cannot predict the exam outcome",
+      "url": "https://www.isc2.org/certifications/computerized-adaptive-testing",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CC"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Noanswerreview;breaksconsumeclock;pretestitemsindistinguishable;minimumlengthcanpassorfail.",
+      "recommendation": "Teachdeliverycontract andavoidrawpercent/stoppingpointclaims.",
+      "disposition": "applied",
+      "source_id": "isc2-cat-policy",
+      "resolution": "Teachdeliverycontract andavoidrawpercent/stoppingpointclaims."
+    },
+    {
+      "id": "cc-deep-5",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Suggested annual CPEs are not the required three-year total",
+      "url": "https://www.isc2.org/policies-procedures/member-policies",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CC"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "CC45GroupAover3years,15suggestedannually,50USDCC-onlyAMF.",
+      "recommendation": "Separate suggestion,cycle obligation andfee categories.",
+      "disposition": "applied",
+      "source_id": "isc2-member-policies",
+      "resolution": "Separate suggestion,cycle obligation andfee categories."
+    },
+    {
+      "id": "cc-deep-6",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "AI context extends existing domains rather than adding a sixth",
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CC"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Actual29-pageguidanceCCpages3–5coversbotidentities,drift,recoverydependenciesandtriage.",
+      "recommendation": "MapAIcontextwithinallfiveexistingdomains withoutnewweight.",
+      "disposition": "applied",
+      "source_id": "isc2-ai-exam-guidance",
+      "resolution": "MapAIcontextwithinallfiveexistingdomains withoutnewweight."
+    },
+    {
+      "id": "cc-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Password rules need scope and phishing-resistance distinctions",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CC"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "15singlefactor/8MFAminimum,composition/calendarrotationrejected,compromise/blocklist/ratecontrols;manualOTPnotphishingresistant.",
+      "recommendation": "Teach verifier guidance,localPINboundary andlifecycle ratherthantwo-passwordMFAoruniversallaw.",
+      "disposition": "applied",
+      "source_id": "nist-800-63b-4",
+      "resolution": "Teach verifier guidance,localPINboundary andlifecycle ratherthantwo-passwordMFAoruniversallaw."
+    },
+    {
+      "id": "cc-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Network location and device ownership do not supply authorization",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CC"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Selectedabstract/tenetsdenyimplicittrust andrequireperresourcepolicy.",
+      "recommendation": "Tie IAM/networkexercisestoexplicitresource/actionevidence.",
+      "disposition": "applied",
+      "source_id": "nist-800-207",
+      "resolution": "Tie IAM/networkexercisestoexplicitresource/actionevidence."
+    },
+    {
+      "id": "cc-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Successful sanitization operation still requires an adequacy decision",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CC"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Verificationvsvalidation,mediumappropriateclear/purge/destroy,CEplaintext/keycopiespreconditions.",
+      "recommendation": "Teachscope/results/acceptancerecord;donotclaimfiledeletionorsinglerevokedkeysanitizesallcopies.",
+      "disposition": "applied",
+      "source_id": "nist-800-88r2",
+      "resolution": "Teachscope/results/acceptancerecord;donotclaimfiledeletionorsinglerevokedkeysanitizesallcopies."
+    },
+    {
+      "id": "cc-deep-10",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "The latest NIST incident-response reference supersedes Revision 2",
+      "url": "https://www.nist.gov/news-events/news/2025/04/nist-revises-sp-800-61-incident-response-recommendations-and-considerations",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CC"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "April2025SP800-61r3usesCSF2Functionsacrossriskmanagement/response.",
+      "recommendation": "Keepfamiliaractivities butlabelcurrentframeworkandcontinuousimprovement.",
+      "disposition": "applied",
+      "source_id": "nist-ir-2025-announcement",
+      "resolution": "Keepfamiliaractivities butlabelcurrentframeworkandcontinuousimprovement."
+    },
+    {
+      "id": "cc-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Post-quantum algorithm names describe different purposes",
+      "url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CC"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "FIPS203ML-KEMkeyencapsulation versus204/205signatures.",
+      "recommendation": "Teachpurposeandapprovedmigrationinventory;notoldroadmapascurrentavailability.",
+      "disposition": "applied",
+      "source_id": "nist-pqc-first-standards",
+      "resolution": "Teachpurposeandapprovedmigrationinventory;notoldroadmapascurrentavailability."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "isc2-cc-2026-refresh-blog",
+      "published_on": "2026-08-06",
+      "review": "Entire main article read;domain refresh and linked AI context applied."
+    },
+    {
+      "source_id": "isc2-cc-program-announcement",
+      "published_on": "2026-04-22",
+      "review": "Entire main announcement read;program closure distinguished from credential retirement."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 34,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "aadde80c6cf51a59f1586e7fc21c01cf3792a08c6a88b7381ee082260c633ddb",
+      "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+      "execution_stdout": "{\"alert_precision\": \"2/5\", \"alert_recall\": \"1/2\", \"loss_window_minutes\": 25, \"recovery_minutes\": 29, \"restored_cents\": 300, \"restored_rows\": 2, \"rpo_met\": false, \"rto_met\": true}\n34 local checks passed",
+      "results": {
+        "alert_precision": "2/5",
+        "alert_recall": "1/2",
+        "loss_window_minutes": 25,
+        "recovery_minutes": 29,
+        "restored_cents": 300,
+        "restored_rows": 2,
+        "rpo_met": false,
+        "rto_met": true
+      },
+      "execution_boundary": "Actual SQLite backup/restore across four in-memory connections plus controlled IAM/alert/fictional timeline arithmetic. No files,credentials,network,OSaccounts,scans,media wiping orcloud.",
+      "model_limits": "Trusted identity/token and manifest fixtures,notJWT/authentication. No crashdurability/concurrency/encryption/malware-free/immutablebackup/forensiccustody/externaleffects guarantee. Exercise RTO/RPO times notactual runtime;five synthetic alerts notproductionquality."
+    }
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "Four commercial catalogs returned HTTP403; earlier durations,revision dates and complete alignment remain unverified. No book,video,paid lesson,practice question,checkout or enrollment was accessed.",
+    "Eight infrastructure labs and three scenarios remain proposed. Independent human review is pending; no real identity,network,cloud,incident-response or forensic exercise was executed.",
+    "34 checks run actual in-memory SQLite backup/restore and synthetic IAM/metric fixtures. No crash durability,concurrency,encrypted/immutable backup,malware-free recovery,complete chain of custody or external dependency proof.",
+    "Token/identity inputs and expected manifest are trusted fixtures. The workbook is not an authenticator or signature verifier; fictional RTO/RPO times are not actual measured copy time. Synthetic alert fractions are not detector accuracy.",
+    "Canonical web/PDF detailed objectives agree but introductory old domain names,testing-center wording and an impossible appointment date remain vendor presentation inconsistencies. Use actual booking availability.",
+    "Actual8-page outline fully read;AI29-pagePDF only introduction/CCsection. NIST references read selectively as recorded;not complete technical standards/compliance/legal audits.",
+    "No personal code/account entitlement,AMF/CPE eligibility,regionalprice,accommodation,coursequality or productionvendorbehavior was verified. Public policy is dated evidence,not an enrollment action.",
+    "Reserved five GitHub guides and disabled notification pilot remain untouched;no external messages,service/auth/logging changes or new permissions."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Repository/site gates plus34 actual localchecks:in-memorySQLite backup/restore,syntheticIAM/alerts andfictionalrecoverytimelines;no realidentity/network/cloud/securitylab.",
+    "passed": 34,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "aadde80c6cf51a59f1586e7fc21c01cf3792a08c6a88b7381ee082260c633ddb",
+    "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "execution_stdout": "{\"alert_precision\": \"2/5\", \"alert_recall\": \"1/2\", \"loss_window_minutes\": 25, \"recovery_minutes\": 29, \"restored_cents\": 300, \"restored_rows\": 2, \"rpo_met\": false, \"rto_met\": true}\n34 local checks passed",
+    "results": {
+      "alert_precision": "2/5",
+      "alert_recall": "1/2",
+      "loss_window_minutes": 25,
+      "recovery_minutes": 29,
+      "restored_cents": 300,
+      "restored_rows": 2,
+      "rpo_met": false,
+      "rto_met": true
+    },
+    "model_limits": "Trusted identity/token and manifest fixtures,notJWT/authentication. No crashdurability/concurrency/encryption/malware-free/immutablebackup/forensiccustody/externaleffects guarantee. Exercise RTO/RPO times notactual runtime;five synthetic alerts notproductionquality.",
+    "learning_catalog_consistency": "passed"
+  },
+  "archived_prior_baselines": {
+    "objectives": {
+      "path": "data/objective-snapshots/cc-2026-09-02-official-objectives.txt",
+      "sha256": "e78550c6ab0a65fb1dbff89436b7e7d72dfc575393ffd439c42929acf180aea4"
+    },
+    "status": {
+      "path": "data/objective-snapshots/cc-2026-09-02-official-status.json",
+      "sha256": "8192abb837b643c15d0f80d01b3d6a288ca980d8214561439989f20ff643b596"
+    },
+    "historical_audit_paths_updated": 1,
+    "reason": "One editorial testing-center label changed;all19numberedobjectives andweights unchanged. ActivePDFstill saysPearsonVUE. No vendor scope change inferred."
+  },
+  "objective_baseline_acceptance": {
+    "changed": [
+      "CC"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "CC",
+        "title": "Certified in Cybersecurity",
+        "url": "https://www.isc2.org/certifications/cc/cc-certification-exam-outline",
+        "guide_path": "guides/CC-isc2-certified-in-cybersecurity.md",
+        "snapshot_path": "data\\objective-snapshots\\cc-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\cc-official-status.json",
+        "previous_sha256": "e78550c6ab0a65fb1dbff89436b7e7d72dfc575393ffd439c42929acf180aea4",
+        "current_sha256": "22b7660fa9b289c32f902cae087070762cc492978e2ce949b092fe363e279adb",
+        "previous_status_sha256": "8192abb837b643c15d0f80d01b3d6a288ca980d8214561439989f20ff643b596",
+        "current_status_sha256": "b0185cf7d68ac6b24dd4fb93c4d6a2355d239155476a89840c509e2837bf7c3e",
+        "official_status": {
+          "skills_versions": [
+            "EFFECTIVE DATE: SEPTEMBER 1, 2026",
+            "Length of exam: 2 hours",
+            "Number of items: 100-125",
+            "Item format: Multiple choice and advanced item types",
+            "Passing grade: 700 out of 1000 points",
+            "Exam language availability: English, Chinese, Japanese, German, Spanish",
+            "Testing center: Pearson Testing Center"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ]
+  },
+  "post_acceptance_monitor": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "CC",
+        "title": "Certified in Cybersecurity",
+        "url": "https://www.isc2.org/certifications/cc/cc-certification-exam-outline",
+        "guide_path": "guides/CC-isc2-certified-in-cybersecurity.md",
+        "snapshot_path": "data\\objective-snapshots\\cc-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\cc-official-status.json",
+        "previous_sha256": "22b7660fa9b289c32f902cae087070762cc492978e2ce949b092fe363e279adb",
+        "current_sha256": "22b7660fa9b289c32f902cae087070762cc492978e2ce949b092fe363e279adb",
+        "previous_status_sha256": "b0185cf7d68ac6b24dd4fb93c4d6a2355d239155476a89840c509e2837bf7c3e",
+        "current_status_sha256": "b0185cf7d68ac6b24dd4fb93c4d6a2355d239155476a89840c509e2837bf7c3e",
+        "official_status": {
+          "skills_versions": [
+            "EFFECTIVE DATE: SEPTEMBER 1, 2026",
+            "Length of exam: 2 hours",
+            "Number of items: 100-125",
+            "Item format: Multiple choice and advanced item types",
+            "Passing grade: 700 out of 1000 points",
+            "Exam language availability: English, Chinese, Japanese, German, Spanish",
+            "Testing center: Pearson Testing Center"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "actual_pdf_receipts": [
+    {
+      "id": "nist-sp800-61r3-pdf",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "checked_at": "2026-09-29T11:54:38.857880+00:00",
+      "health": {
+        "id": "nist-sp800-61r3-pdf",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "checked_at": "2026-09-29T11:54:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "sha256": "e5593d6bb85daecec7e8d9549400c7b3473bcc3f06e469c82218073afa7fba2d",
+      "bytes": 1040566,
+      "pdf_pages": 48,
+      "text_characters": 107538
+    },
+    {
+      "id": "nist-800-207",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "checked_at": "2026-09-29T11:54:36.514598+00:00",
+      "health": {
+        "id": "nist-800-207",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "checked_at": "2026-09-29T11:54:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "sha256": "0290d6ece24874287316f4bf430fef770aa4ec08a2227c8f2c1e5b2ff975e03d",
+      "bytes": 966908,
+      "pdf_pages": 59,
+      "text_characters": 156827
+    },
+    {
+      "id": "nist-800-88r2",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "checked_at": "2026-09-29T11:54:38.237732+00:00",
+      "health": {
+        "id": "nist-800-88r2",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+        "checked_at": "2026-09-29T11:54:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "sha256": "39bb805c72723ed74f08e5806cd8463ca2554a62abb4f97b9d19c0398a8a7c55",
+      "bytes": 983677,
+      "pdf_pages": 48,
+      "text_characters": 112553
+    },
+    {
+      "id": "isc2-cc-outline-2026-pdf",
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/2026/EXAMS-CC_Exam_Outline-English-Revised-01-2026-Final.pdf",
+      "checked_at": "2026-09-29T11:54:39.250428+00:00",
+      "health": {
+        "id": "isc2-cc-outline-2026-pdf",
+        "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/2026/EXAMS-CC_Exam_Outline-English-Revised-01-2026-Final.pdf",
+        "checked_at": "2026-09-29T11:54:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/2026/EXAMS-CC_Exam_Outline-English-Revised-01-2026-Final.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/2026/EXAMS-CC_Exam_Outline-English-Revised-01-2026-Final.pdf",
+      "sha256": "6ec5f79237f0784e9e339b521e20002adb3a0756a5c2fa33ae6c5b466451b477",
+      "bytes": 256171,
+      "pdf_pages": 8,
+      "text_characters": 7423
+    },
+    {
+      "id": "isc2-ai-exam-guidance",
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+      "checked_at": "2026-09-29T11:56:07.618044+00:00",
+      "health": {
+        "id": "isc2-ai-exam-guidance",
+        "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+        "checked_at": "2026-09-29T11:56:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+      "sha256": "69cd0cfa50fac68a60370f812f0ce5f6f33b1a861eac66b4c66e2e410fbb0741",
+      "bytes": 506895,
+      "pdf_pages": 29,
+      "text_characters": 70743
+    }
+  ],
+  "pdf_reading_boundary": "CC outline all8pages;renderedpages3/5 visually inspected. AIguidance introduction andCCprintedpages3–5 only. NISTPDFs selectedsections per source_notes;notfullread.",
+  "visual_inspection": {
+    "source_id": "isc2-cc-outline-2026-pdf",
+    "pages_one_based": [
+      3,
+      5
+    ],
+    "result": "Weight table/CAT details and two-column Domains2/3 visually confirmed;PearsonVUE wording retained inPDF."
+  },
+  "public_objective_groups": [
+    {
+      "title": "Domain 1: Security Principles",
+      "objectives": [
+        "1.1 - Understand cybersecurity concepts\nConfidentiality\nIntegrity\nAvailability\nAuthentication, Authorization, Accounting (AAA)\nNon-repudiation\nPrivacy",
+        "1.2 - Understand risk management concepts\nRisk management lifecycle\nRisk management processes",
+        "1.3 - Understand governance concepts\nRegulations and laws\nFrameworks and guidelines\nPolicies, standards (e.g., International Organization for Standardization (ISO), Center for Internet Security), procedures",
+        "1.4 - Understand cybersecurity controls\nTechnical controls\nAdministrative controls\nPhysical controls",
+        "1.5 - Maintain professional and ethical conduct\nProfessional code of conduct\nDue care and due diligence\nISC2 Code of Ethics"
+      ]
+    },
+    {
+      "title": "Domain 2: Security Governance",
+      "objectives": [
+        "2.1 - Plan Governance, Risk, and Compliance (GRC)\nPurpose\nImportance\nFrameworks and tools",
+        "2.2 - Understand redundancy\nBusiness Continuity (BC)\nDisaster Recovery (DR)",
+        "2.3 - Understand security awareness\nOrganizational culture (e.g., importance of security, security leadership)\nConcepts (e.g., social engineering, password protection, phishing)",
+        "2.4 - Measure cybersecurity effectiveness\nKey metrics, Key Risk Indicators (KRI)\nDashboards, score cards, reports"
+      ]
+    },
+    {
+      "title": "Domain 3: Identity And Access Management (IAM) Concepts",
+      "objectives": [
+        "3.1 - Understand identity life cycle management\nRoles definition\nProvision\nReview\nDeprovision\nFrameworks and tools",
+        "3.2 - Understand logical access controls\nPrinciple of Least Privilege (PoLP)\nSeparation of Duties (SoD)\nAccess control models"
+      ]
+    },
+    {
+      "title": "Domain 4: Networking and Cloud Security Concepts",
+      "objectives": [
+        "4.1 - Understand network security\nConcepts (e.g., Open Systems Interconnection (OSI) model, Transmission Control Protocol/Internet Protocol (TCP/IP) model, Internet Protocol version 4 (IPv4), Internet Protocol version 6 (IPv6), Virtual Private Network (VPN))\nFirewalls (e.g., ports, applications)\nWireless (e.g., Wi-Fi, Bluetooth)\nEmbedded systems (e.g., Industrial Control System (ICS)), Internet Of Things (IoT)",
+        "4.2 - Understand network security architecture\nComprehending network segmentation (e.g., Firewall zones, Virtual Local Area Network (VLAN), micro-segmentation)\nDefense in Depth\nZero Trust (ZT)",
+        "4.3 - Understand cloud security\nCharacteristics (e.g., Broad network access, rapid elasticity, measured service, on-demand self-service, resource pooling)\nService models\nDeployment models\nShared security model (e.g., roles and responsibilities)"
+      ]
+    },
+    {
+      "title": "Domain 5: Security Operations and Incident Response",
+      "objectives": [
+        "5.1 - Understand data security\nData handling (e.g., classification, labeling, masking, and sanitization)\nEncryption (e.g., symmetric, asymmetric, hashing, quantum resistant cryptography)",
+        "5.2 - Understand security operations\nLogging and monitoring security events\nSecurity event triage (e.g., incident use cases, prioritization, correlation)\nThreat actors (e.g., types, motivations)\nCyber threat intelligence\nThreat frameworks",
+        "5.3 - Understand Incident Response (IR)\nData handling policy implementing Incident Response Plan (IRP)\nIncident Response (IR) exercises (e.g., testing, tabletop)",
+        "5.4 - Understand asset protection\nAsset lifecycle management (e.g., End Of Life (EOL) software and devices)\nConfiguration and change management",
+        "5.5 - Understand security testing\nSecurity readiness testing (e.g., blue teaming, purple teaming, red teaming)\nApplication testing (e.g., vulnerability scanning, static analysis, dynamic analysis, threat modeling)\nPhysical penetration testing (e.g., phishing, tailgating, impersonation)"
+      ]
+    }
+  ],
+  "catalog_metadata_observations": {
+    "official_adaptive_domain_count": 5,
+    "official_adaptive_course_language": "English",
+    "official_adaptive_course_days": [
+      90,
+      180
+    ],
+    "official_adaptive_access_start": "purchase date",
+    "official_course_completion_percent": 75,
+    "official_course_completion_boundary": "Course validation certificate is notCCcredential orCATrawscore.",
+    "prior_14h_duration": "unverified",
+    "program_new_enrollment_end": "2026-05-20",
+    "existing_unexpired_code_schedule_and_sit_deadline": "2026-12-31",
+    "standard_exam_usd": 199,
+    "cc_only_amf_usd": 50,
+    "required_three_year_group_a_cpe": 45,
+    "suggested_annual_cpe": 15,
+    "commercial_catalogs_blocked": 4
+  },
+  "catalog_findings": [
+    {
+      "source_id": "isc2-cc-adaptive-training",
+      "observation": "Fivecurrentdomains andcoursecompletion75percent/90or180dayaccess;genericexperienceboilerplate vs explicitexamnone.",
+      "resolution": "Separatecoursevalidationfromcredential,retaincanonicalexamprerequisite andmarkold14hdurationunverified."
+    },
+    {
+      "source_id": "oreilly-isc2-cc-study-guide-2e",
+      "observation": "CurrentHTTP403;earlierrevision/duration/alignmentunverified.",
+      "resolution": "Remove current-quality endorsement anddisclosepublicaccessblock/no paidinteriorreview."
+    },
+    {
+      "source_id": "oreilly-isc2-cc-2026-video",
+      "observation": "CurrentHTTP403;earlierrevision/duration/alignmentunverified.",
+      "resolution": "Remove current-quality endorsement anddisclosepublicaccessblock/no paidinteriorreview."
+    },
+    {
+      "source_id": "udemy-mike-chapple-isc2-cc",
+      "observation": "CurrentHTTP403;earlierrevision/duration/alignmentunverified.",
+      "resolution": "Remove current-quality endorsement anddisclosepublicaccessblock/no paidinteriorreview."
+    },
+    {
+      "source_id": "udemy-thor-isc2-cc-2026",
+      "observation": "CurrentHTTP403;earlierrevision/duration/alignmentunverified.",
+      "resolution": "Remove current-quality endorsement anddisclosepublicaccessblock/no paidinteriorreview."
+    }
+  ],
+  "review_repair_note": "Initial finalizer URL assertion caught a formatting-inserted space in a courseURL;corrected and resumed after source/health/configupserts without repeating them. First sitevalidation then caught a jump link generated from a top-level Pythoncomment containing exercise;commentwording corrected and example/guide/freshnessdigests refreshed. Final gates rerun after repair."
+}

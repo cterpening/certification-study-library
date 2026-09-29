@@ -4,6 +4,271 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-cc-deep-review",
+      "title": "CC complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CC"
+      ],
+      "results": [
+        {
+          "exam_code": "CC",
+          "vendor_id": "isc2",
+          "guide_path": "guides/CC-isc2-certified-in-cybersecurity.md",
+          "baseline_sha256": "361453ca056ff7a699a27f58d373548b29eb62d29917535fe1d87ba7141a0982",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Full canonicaloutline and8-pagePDF,19objectives;PDFpages3/5visualinspection. OnlyPearsonlabelchange accepted after archive;postmonitorunchanged. Oldwebdomainintro/April31calendar notadopted. Noexamcontent."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected NIST63B4password/phishing,207tenets,88r2sanitization,61r3executivesummary andPQCroleannouncement. Scoped citations and34localchecks;notfullstandards/cloudexecution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Full mainAugust6ISC2refresh,April22programclosure andApril2025NISTIRr3notices read. Actual29-pageAIguide fetched;intro/CCsectionread. CurrentclosureFAQconfirmsexistingentitlements. No newunsupportedrelease inferred."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Officialadaptivecourse5domains,English,completion/accessrules versusexam;14hnotreverified. FourOReilly/Udemy403oldmetadataunverified. Nopaidinteriors,practicequestions,enrollment orUATpublisheradoption."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Stalewebdomainintro/PDFagreement,99.9roundedweights,Pearsonlabel,April31,dateclosedprogram,course75percentvsCATscaled700,courseexperienceboilerplatevsnoprerereq. Backupstructurevsbusinessvalidation,tokenvsaccountdisable andRTOvsRPO distinguished."
+            }
+          },
+          "findings": [
+            {
+              "id": "cc-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "The monitored change is editorial rather than a new blueprint",
+              "url": "https://www.isc2.org/certifications/cc/cc-certification-exam-outline",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CC"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Only testing-centerlabelchanged;19objectives/weightsunchanged,oldintroandinvalidcalendarstillpresent.",
+              "recommendation": "Archive oldbytes/history;acceptlabel explicitly;usecurrentdetaileddomains andactualbooking.",
+              "disposition": "applied",
+              "source_id": "isc2-cc-outline",
+              "resolution": "Archive oldbytes/history;acceptlabel explicitly;usecurrentdetaileddomains andactualbooking."
+            },
+            {
+              "id": "cc-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "The actual outline confirms detailed scope and rounding",
+              "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/2026/EXAMS-CC_Exam_Outline-English-Revised-01-2026-Final.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CC"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Eight-pagePDF confirms5/4/2/3/5objectives andpublishedweights totaling99.9.",
+              "recommendation": "Preserveofficialweights andnoexperienceprerequisite;donotnormalizeorpromoteoldintro.",
+              "disposition": "applied",
+              "source_id": "isc2-cc-outline-2026-pdf",
+              "resolution": "Preserveofficialweights andnoexperienceprerequisite;donotnormalizeorpromoteoldintro."
+            },
+            {
+              "id": "cc-deep-3",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "New free-program enrollments have closed",
+              "url": "https://www.isc2.org/landing/1mcc",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CC"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "May20closure;existingunexpiredcodes mustscheduleandsitbyDec31;199USDpaidexam.",
+              "recommendation": "Remove open-endedfree-routeassumption andseparatecode/course/AMFdeadlines.",
+              "disposition": "applied",
+              "source_id": "isc2-cc-free-program-closure",
+              "resolution": "Remove open-endedfree-routeassumption andseparatecode/course/AMFdeadlines."
+            },
+            {
+              "id": "cc-deep-4",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "CAT length and course scores cannot predict the exam outcome",
+              "url": "https://www.isc2.org/certifications/computerized-adaptive-testing",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CC"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Noanswerreview;breaksconsumeclock;pretestitemsindistinguishable;minimumlengthcanpassorfail.",
+              "recommendation": "Teachdeliverycontract andavoidrawpercent/stoppingpointclaims.",
+              "disposition": "applied",
+              "source_id": "isc2-cat-policy",
+              "resolution": "Teachdeliverycontract andavoidrawpercent/stoppingpointclaims."
+            },
+            {
+              "id": "cc-deep-5",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Suggested annual CPEs are not the required three-year total",
+              "url": "https://www.isc2.org/policies-procedures/member-policies",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CC"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "CC45GroupAover3years,15suggestedannually,50USDCC-onlyAMF.",
+              "recommendation": "Separate suggestion,cycle obligation andfee categories.",
+              "disposition": "applied",
+              "source_id": "isc2-member-policies",
+              "resolution": "Separate suggestion,cycle obligation andfee categories."
+            },
+            {
+              "id": "cc-deep-6",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "AI context extends existing domains rather than adding a sixth",
+              "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CC"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Actual29-pageguidanceCCpages3–5coversbotidentities,drift,recoverydependenciesandtriage.",
+              "recommendation": "MapAIcontextwithinallfiveexistingdomains withoutnewweight.",
+              "disposition": "applied",
+              "source_id": "isc2-ai-exam-guidance",
+              "resolution": "MapAIcontextwithinallfiveexistingdomains withoutnewweight."
+            },
+            {
+              "id": "cc-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Password rules need scope and phishing-resistance distinctions",
+              "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CC"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "15singlefactor/8MFAminimum,composition/calendarrotationrejected,compromise/blocklist/ratecontrols;manualOTPnotphishingresistant.",
+              "recommendation": "Teach verifier guidance,localPINboundary andlifecycle ratherthantwo-passwordMFAoruniversallaw.",
+              "disposition": "applied",
+              "source_id": "nist-800-63b-4",
+              "resolution": "Teach verifier guidance,localPINboundary andlifecycle ratherthantwo-passwordMFAoruniversallaw."
+            },
+            {
+              "id": "cc-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Network location and device ownership do not supply authorization",
+              "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CC"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Selectedabstract/tenetsdenyimplicittrust andrequireperresourcepolicy.",
+              "recommendation": "Tie IAM/networkexercisestoexplicitresource/actionevidence.",
+              "disposition": "applied",
+              "source_id": "nist-800-207",
+              "resolution": "Tie IAM/networkexercisestoexplicitresource/actionevidence."
+            },
+            {
+              "id": "cc-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Successful sanitization operation still requires an adequacy decision",
+              "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CC"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Verificationvsvalidation,mediumappropriateclear/purge/destroy,CEplaintext/keycopiespreconditions.",
+              "recommendation": "Teachscope/results/acceptancerecord;donotclaimfiledeletionorsinglerevokedkeysanitizesallcopies.",
+              "disposition": "applied",
+              "source_id": "nist-800-88r2",
+              "resolution": "Teachscope/results/acceptancerecord;donotclaimfiledeletionorsinglerevokedkeysanitizesallcopies."
+            },
+            {
+              "id": "cc-deep-10",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "The latest NIST incident-response reference supersedes Revision 2",
+              "url": "https://www.nist.gov/news-events/news/2025/04/nist-revises-sp-800-61-incident-response-recommendations-and-considerations",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CC"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "April2025SP800-61r3usesCSF2Functionsacrossriskmanagement/response.",
+              "recommendation": "Keepfamiliaractivities butlabelcurrentframeworkandcontinuousimprovement.",
+              "disposition": "applied",
+              "source_id": "nist-ir-2025-announcement",
+              "resolution": "Keepfamiliaractivities butlabelcurrentframeworkandcontinuousimprovement."
+            },
+            {
+              "id": "cc-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Post-quantum algorithm names describe different purposes",
+              "url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CC"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "FIPS203ML-KEMkeyencapsulation versus204/205signatures.",
+              "recommendation": "Teachpurposeandapprovedmigrationinventory;notoldroadmapascurrentavailability.",
+              "disposition": "applied",
+              "source_id": "nist-pqc-first-standards",
+              "resolution": "Teachpurposeandapprovedmigrationinventory;notoldroadmapascurrentavailability."
+            }
+          ],
+          "notes": "Mapped all 19 current numbered objectives; preserved the prior snapshots and historical evidence before accepting a testing-center wording change. Updated free-program closure, CAT/course policy, authentication, sanitization and current incident-response guidance. Added 34 executed local checks, 48 answered prompts and eight proposed labs. Four commercial catalogs remain blocked; human review and live security exercises are pending. Same-context AI review; human review pending. See docs/research/2026-09-29-cc-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 11,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-gesc02-deep-review",
       "title": "GES-C02 complete guide and learning-content review",
       "rubric_version": 1,
