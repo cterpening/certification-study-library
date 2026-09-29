@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [PANW-CYBERSECURITY-APPRENTICE deep review](docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md): Checked the full current blueprint and September handbook/FAQ, added 40 answered prompts and 43 executed Python checks, and clarified network, telemetry, identity and learning-resource boundaries.
+
 - September 29, 2026: [SERVICENOW-CAD deep review](docs/research/2026-09-29-servicenow-cad-deep-review.md): Aligned all 22 canonical subtopics and weights with archived history; added 40 answered prompts, 38 executed JavaScript checks and API, security, integration and release evidence.
 
 - September 29, 2026: [SERVICENOW-CSA deep review](docs/research/2026-09-29-servicenow-csa-deep-review.md): Restored 30 separate canonical subtopics with archived history, added 40 answered prompts and 34 executed Python/SQLite checks, corrected course/catalog links and qualified ACL, import, logic and transport evidence.

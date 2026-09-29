@@ -1812,6 +1812,8 @@ The review maps all six January 2026 evidence-baseline domains through requireme
 
 ## PANW-CYBERSECURITY-APPRENTICE coverage record
 
+The September 29 [deep review](research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md) maps 39 detailed objectives. Mapped all 39 saved objective entries and the nested identity topics against the full current PDF; answered 40 original prompts and executed 43 local Python checks. Added three worked scenarios and eight proposed activities, refreshed the September handbook/FAQ and clarified fee, delivery, policy, telemetry and identity boundaries. Booking details, blocked resources, live infrastructure and human review remain pending. Current guide citations: 23 registered, 20 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Cybersecurity (16%), Network Fundamentals (16%), Network Security (14%), Endpoint Security (10%), Cloud Security (13%), Security Operations (13%), and Identity Security (18%)

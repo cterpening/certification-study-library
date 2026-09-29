@@ -3,6 +3,146 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "ietf-dns-tcp-rfc7766",
+      "title": "RFC 7766 — DNS Transport over TCP",
+      "url": "https://www.rfc-editor.org/rfc/rfc7766.html",
+      "publisher": "IETF RFC Editor",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PANW-CYBERSECURITY-APPRENTICE deep review: Public 35,367-character capture; introduction and section 5 transport selection read, not whole RFC. General-purpose DNS supports UDP and TCP; TCP may be selected before UDP. Vendor policy page’s TCP-only DNS example not generalized into a DNS transport rule; actual installed App-ID definition unverified. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "panw-pearson-onvue",
+      "title": "Pearson Palo Alto Networks OnVUE information",
+      "url": "https://www.pearsonvue.com/us/en/paloaltonetworks/onvue.html",
+      "publisher": "Pearson",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PANW-CYBERSECURITY-APPRENTICE deep review: Complete 5,857-character public requirements main read. Program-specific OnVUE page exists and is linked by Pearson main; technology/space/ID/check-in/allowance details remain appointment-sensitive. No system test, install, device/network changes, account or booking. Page existence does not prove every exam/location’s eligibility. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "panw-certification-faq",
+      "title": "Palo Alto Networks Certification Program FAQ — September 2026",
+      "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/certification-faq.pdf",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PANW-CYBERSECURITY-APPRENTICE deep review: Complete four-page September 2026 FAQ read via web and PDF extraction; page 2 fee table visually inspected. Apprentice foundational fee $150 before additional taxes/fees, plus retake/validity/renewal and badge procedure. No purchase, Credly/account creation or reporting. Genuine PDF receipt/hash recorded. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "panw-pearson-program",
+      "title": "Pearson Palo Alto Networks certification program",
+      "url": "https://www.pearsonvue.com/us/en/paloaltonetworks.html",
+      "publisher": "Pearson",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PANW-CYBERSECURITY-APPRENTICE deep review: Complete 4,688-character public main read; page updated September 14, 2026. Appointment includes agreement, exam and survey; public OnVUE link and test-center routes. No authenticated View Exams detail, duration/item count or actual booking eligibility. Repeated XSOAR listing not adopted as an authoritative portfolio correction. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "panw-security-rules",
+      "title": "Security Policy Rules",
+      "url": "https://docs.paloaltonetworks.com/network-security/security-policy/administration/security-rules",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PANW-CYBERSECURITY-APPRENTICE deep review: Complete 10,206-character August 7, 2026 main including components/actions tables read. Session bidirectionality, ordered matching, intra/interzone defaults, pre-NAT addresses/post-NAT zone, optional logging and profile/action context. TCP-only DNS example qualified with RFC7766; contradictory generic maximum-rule wording and model-specific quotas not adopted. No device test; illustrative policy omits wildcard-address exceptions, App-ID, NAT and sessions. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "panw-machine-agentic-pam-2026",
+      "title": "Securing Machine and Agentic Identities: The Next Frontier of Modern PAM",
+      "url": "https://www.paloaltonetworks.com/blog/identity-security/securing-machine-agentic-identities-modern-pam/",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "supported_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PANW-CYBERSECURITY-APPRENTICE deep review: Complete 14,594-character public article main through FAQs read. Avihay Nathan, September 17, 2026, advertised 8 minutes. Direct body contains sections absent from indexed excerpt; direct main used. Machine/agent identity, constrained access and separate attribution are vendor context. 109:1, 99%, near-90% and under-ten-hour claims not independently verified/adopted. Linked Gartner research not read; product/availability claims not converted into exam requirements. No demo, signup or subscription action. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-shared-responsibility",
+      "title": "AWS Shared Responsibility Model",
+      "url": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+      "publisher": "Amazon Web Services",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PANW-CYBERSECURITY-APPRENTICE deep review: Complete 7,035-character official main read including practice prompts. EC2 guest OS/application responsibility versus more abstracted S3/DynamoDB, customer data/permissions and service-specific boundary. Provider example only; no cloud account/resource, controls assessment or universal other-provider contract claim. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nist-authenticator-requirements",
+      "title": "NIST SP 800-63B-4 — Authenticator and Verifier Requirements",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b/authenticators/",
+      "publisher": "NIST",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PANW-CYBERSECURITY-APPRENTICE deep review: 76,494-character public capture. Selected current requirements read: password main L24-69, out-of-band/OTP context, phishing/channel/verifier-name binding and replay/intent L303-330; not whole standard/assurance table. Supplementary official CSRC final landing confirms July 2025 final, not the earlier draft. Human-password guidance distinguished from machine-secret rotation; no production policy or authenticator change. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ietf-syslog-rfc5424",
+      "title": "RFC 5424 — The Syslog Protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc5424.html",
+      "publisher": "IETF RFC Editor",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PANW-CYBERSECURITY-APPRENTICE deep review: 73,222-character public capture. Read abstract/introduction, sections 5–6.2.3 plus start of hostname, 7.1 through first time-quality example, and 8.4–8.8 including congestion discussion. Not full 39-page RFC or separate TLS transport RFC. Message/transport separation, PRI, offset/time-quality and loss/replay/integrity/confidentiality limits support partial original exercises; no collector/network execution. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cisa-zero-trust-v2-pdf",
+      "title": "CISA Zero Trust Maturity Model version 2",
+      "url": "https://www.cisa.gov/sites/default/files/2023-04/CISA_Zero_Trust_Maturity_Model_Version_2_508c.pdf",
+      "publisher": "CISA",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PANW-CYBERSECURITY-APPRENTICE deep review: Direct genuine-PDF fetch and web open both HTTP 403. Indexed primary excerpt of section 5.6 cross-cutting capabilities read only; no full PDF or maturity-table review. Receipt preserves access failure; no bypass. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "servicenow-glide-server-apis",
       "title": "Glide Server APIs — GlideRecordSecure and query ACLs",
       "url": "https://www.servicenow.com/docs/r/api-reference/scripts/p_GlideServerAPIs.html",
@@ -50426,7 +50566,21 @@
       "notes": "Public visual exam-cram and 2024 addendum route with optional book; use for selective review after mapping the current outline. September 29 CISSP deep review: Entire555-character public creator hub read. Cramseries,study/practice/book/flashcard links only. No video runtime/revision orcontents verified,noquizquestions accessed. See docs/research/2026-09-29-cissp-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"nist-csf-2","title":"NIST Cybersecurity Framework 2.0","url":"https://www.nist.gov/cyberframework","publisher":"NIST","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["CISSP","PANW-CYBERSECURITY-APPRENTICE","SPLK-5003","PANW-SECURITY-OPERATIONS-ARCHITECT"],"notes":"Authoritative governance and outcome vocabulary across Govern, Identify, Protect, Detect, Respond and Recover; use selectively rather than as an exam outline."
+      "id": "nist-csf-2",
+      "title": "NIST Cybersecurity Framework 2.0",
+      "url": "https://www.nist.gov/cyberframework",
+      "publisher": "NIST",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CISSP",
+        "PANW-CYBERSECURITY-APPRENTICE",
+        "SPLK-5003",
+        "PANW-SECURITY-OPERATIONS-ARCHITECT"
+      ],
+      "notes": "Authoritative governance and outcome vocabulary across Govern, Identify, Protect, Detect, Respond and Recover; use selectively rather than as an exam outline. September 29 PANW-CYBERSECURITY-APPRENTICE deep review: Complete current homepage main/resources read from 5,335-character capture. CSF 2.0 remains the named framework; AI analysis/reporting SP1353 initial-public-draft comment window through October 15, 2026 is separate. Linked framework PDFs/quick-start interiors and videos not read in this review. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
     },
     {
       "id": "nvidia-nca-genl-certification",
@@ -52025,37 +52179,194 @@
       "notes": "6h37m project course listed as updated February 2026, including application, UI, security, Flow, import, REST, ATF and GitLab demonstrations. Use its build portion; use only official MeasureUp for exam-style practice. September 29 SERVICENOW-CAD deep review: HTTP 403; earlier February 2026 and 6h37 metadata not reverified. No syllabus, lesson or quality audit. See docs/research/2026-09-29-servicenow-cad-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"panw-cybersecurity-apprentice-certification","title":"Palo Alto Networks Certified Cybersecurity Apprentice","url":"https://www.paloaltonetworks.com/services/education/panw-cybersecurity-apprentice","publisher":"Palo Alto Networks","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["PANW-CYBERSECURITY-APPRENTICE"],"notes":"Canonical credential identity and stable objective statement, with links to the May 2026 detailed datasheet and official learning path."
+      "id": "panw-cybersecurity-apprentice-certification",
+      "title": "Palo Alto Networks Certified Cybersecurity Apprentice",
+      "url": "https://www.paloaltonetworks.com/services/education/panw-cybersecurity-apprentice",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "notes": "Canonical credential identity and stable objective statement, with links to the May 2026 detailed datasheet and official learning path. September 29 PANW-CYBERSECURITY-APPRENTICE deep review: Complete 3,893-character public main read. Foundational audience, no work-experience recommendation, datasheet and official learning route. The public objective statement is short; automated monitor remains manual-review. Detailed scope independently verified in the linked PDF. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"panw-cybersecurity-apprentice-datasheet","title":"Cybersecurity Apprentice Datasheet","url":"https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/apprentice-datasheet.pdf","publisher":"Palo Alto Networks","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PANW-CYBERSECURITY-APPRENTICE"],"notes":"May 2026 full seven-domain 16/16/14/10/13/13/18 blueprint, entry-level audience, English/ESL statement, learning route and explicit full-blueprint claim. It does not state base duration, item count or price."
+      "id": "panw-cybersecurity-apprentice-datasheet",
+      "title": "Cybersecurity Apprentice Datasheet",
+      "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/apprentice-datasheet.pdf",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "notes": "May 2026 full seven-domain 16/16/14/10/13/13/18 blueprint, entry-level audience, English/ESL statement, learning route and explicit full-blueprint claim. It does not state base duration, item count or price. September 29 PANW-CYBERSECURITY-APPRENTICE deep review: Complete five-page May 2026 PDF read using web extraction and genuine PDF bytes/pypdf; pages 3–4 visually inspected via local rendering. Seven weights and 39 parent entries unchanged, with 13 nested identity items already represented inside four saved entries. English/ESL, entry-level audience and learning recommendations read; base duration/item count/price absent from this PDF. Generic HTTP helper decoded binary as text and is not the reading evidence. PDF hash receipt recorded. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"panw-learning-center","title":"Palo Alto Networks Learning Center","url":"https://learn.paloaltonetworks.com/learn","publisher":"Palo Alto Networks","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["PANW-CYBERSECURITY-APPRENTICE","PANW-CYBERSECURITY-PRACTITIONER","PANW-CLOUD-SECURITY-PROFESSIONAL","PANW-NETWORK-SECURITY-PROFESSIONAL","PANW-NETWORK-SECURITY-ANALYST","PANW-NGFW-ENGINEER","PANW-SD-WAN-ENGINEER","PANW-SSE-ENGINEER","PANW-XDR-ENGINEER","PANW-XSIAM-ANALYST","PANW-XSIAM-ENGINEER","PANW-XSOAR-ENGINEER"],"notes":"Official recommended digital learning path destination. Dynamic sign-in is required; select modules by blueprint gaps and verify displayed duration."
+      "id": "panw-learning-center",
+      "title": "Palo Alto Networks Learning Center",
+      "url": "https://learn.paloaltonetworks.com/learn",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE",
+        "PANW-CYBERSECURITY-PRACTITIONER",
+        "PANW-CLOUD-SECURITY-PROFESSIONAL",
+        "PANW-NETWORK-SECURITY-PROFESSIONAL",
+        "PANW-NETWORK-SECURITY-ANALYST",
+        "PANW-NGFW-ENGINEER",
+        "PANW-SD-WAN-ENGINEER",
+        "PANW-SSE-ENGINEER",
+        "PANW-XDR-ENGINEER",
+        "PANW-XSIAM-ANALYST",
+        "PANW-XSIAM-ENGINEER",
+        "PANW-XSOAR-ENGINEER"
+      ],
+      "notes": "Official recommended digital learning path destination. Dynamic sign-in is required; select modules by blueprint gaps and verify displayed duration. September 29 PANW-CYBERSECURITY-APPRENTICE deep review: Seven-character loading shell only. No sign-in, course/path interior, entitlement, module count or duration verified. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"panw-cybersecurity-academy","title":"Palo Alto Networks Cybersecurity Academy","url":"https://www.paloaltonetworks.com/services/education/academy","publisher":"Palo Alto Networks","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["PANW-CYBERSECURITY-APPRENTICE"],"notes":"Official free introductory cybersecurity learning route with networking, cloud and operations coverage; course access and duration vary."
+      "id": "panw-cybersecurity-academy",
+      "title": "Palo Alto Networks Cybersecurity Academy",
+      "url": "https://www.paloaltonetworks.com/services/education/academy",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "notes": "Official free introductory cybersecurity learning route with networking, cloud and operations coverage; course access and duration vary. September 29 PANW-CYBERSECURITY-APPRENTICE deep review: Complete 4,192-character public main read. Free online-course entry and educator/learner routes advertised; no actual course interiors, completion, enrollment or duration audit. Population/testimonial marketing not adopted as learning evidence. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"panw-certification-handbook","title":"Palo Alto Networks Certification Handbook","url":"https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf","publisher":"Palo Alto Networks","authority_class":1,"source_type":"official-policy","access_model":"public","last_checked":"2026-09-02","supported_exams":["PANW-CYBERSECURITY-APPRENTICE","PANW-CYBERSECURITY-PRACTITIONER","PANW-CLOUD-SECURITY-PROFESSIONAL","PANW-NETWORK-SECURITY-PROFESSIONAL","PANW-NETWORK-SECURITY-ANALYST","PANW-NGFW-ENGINEER","PANW-SD-WAN-ENGINEER","PANW-SECURITY-OPERATIONS-ARCHITECT","PANW-SSE-ENGINEER","PANW-XDR-ENGINEER","PANW-XSIAM-ANALYST","PANW-XSIAM-ENGINEER","PANW-XSOAR-ENGINEER"],"notes":"July 2025 authoritative Pearson, ESL, scaled-score, provisional-result, retake, two-year validity, recertification and unauthorized-material policy."
+      "id": "panw-certification-handbook",
+      "title": "Palo Alto Networks Certification Handbook",
+      "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "official-policy",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE",
+        "PANW-CYBERSECURITY-PRACTITIONER",
+        "PANW-CLOUD-SECURITY-PROFESSIONAL",
+        "PANW-NETWORK-SECURITY-PROFESSIONAL",
+        "PANW-NETWORK-SECURITY-ANALYST",
+        "PANW-NGFW-ENGINEER",
+        "PANW-SD-WAN-ENGINEER",
+        "PANW-SECURITY-OPERATIONS-ARCHITECT",
+        "PANW-SSE-ENGINEER",
+        "PANW-XDR-ENGINEER",
+        "PANW-XSIAM-ANALYST",
+        "PANW-XSIAM-ENGINEER",
+        "PANW-XSOAR-ENGINEER"
+      ],
+      "notes": "July 2025 authoritative Pearson, ESL, scaled-score, provisional-result, retake, two-year validity, recertification and unauthorized-material policy. September 29 PANW-CYBERSECURITY-APPRENTICE deep review: Complete eight-page public PDF read, including final discipline/appeal tail. Current cover says September 2026, not the guide’s earlier July 2025. Scaled score, provisional results, English/ESL, test-center scheduling, 48-hour cancellation/rescheduling, minor/ID/accommodation references, retakes, validity and active same-track renewal conditions reviewed. No account, appointment, reporting or legal action. Real PDF hash captured; generic helper binary decode is not article text. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cisa-zero-trust-maturity-model","title":"Zero Trust Maturity Model","url":"https://www.cisa.gov/resources-tools/resources/zero-trust-maturity-model","publisher":"CISA","authority_class":1,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["PANW-CYBERSECURITY-APPRENTICE"],"notes":"Authoritative vendor-neutral Zero Trust progression across identity, devices, networks, applications/workloads and data."
+      "id": "cisa-zero-trust-maturity-model",
+      "title": "Zero Trust Maturity Model",
+      "url": "https://www.cisa.gov/resources-tools/resources/zero-trust-maturity-model",
+      "publisher": "CISA",
+      "authority_class": 1,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "notes": "Authoritative vendor-neutral Zero Trust progression across identity, devices, networks, applications/workloads and data. September 29 PANW-CYBERSECURITY-APPRENTICE deep review: HTTP 403 from direct and web reads. Current main unavailable; no bypass. Separate official version-2 PDF also blocked. Earlier general resource value remains a planned reading route. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cloud-security-alliance-guidance-v5","title":"Security Guidance for Critical Areas of Focus in Cloud Computing v5","url":"https://cloudsecurityalliance.org/artifacts/security-guidance-v5","publisher":"Cloud Security Alliance","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["PANW-CYBERSECURITY-APPRENTICE"],"notes":"Current broad cloud security guidance for shared responsibility, IAM, workloads, data and operations; use selected domains rather than consuming all content."
+      "id": "cloud-security-alliance-guidance-v5",
+      "title": "Security Guidance for Critical Areas of Focus in Cloud Computing v5",
+      "url": "https://cloudsecurityalliance.org/artifacts/security-guidance-v5",
+      "publisher": "Cloud Security Alliance",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "notes": "Current broad cloud security guidance for shared responsibility, IAM, workloads, data and operations; use selected domains rather than consuming all content. September 29 PANW-CYBERSECURITY-APPRENTICE deep review: Complete 2,766-character public landing read. Released July 15, 2024, updated August 26, 2025, 12 domains; full download asks login. Guidance explicitly is not the primary CCSK study material. No downloadable interior or complete cloud-control audit. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"panw-technical-documentation","title":"Palo Alto Networks Technical Documentation","url":"https://docs.paloaltonetworks.com/","publisher":"Palo Alto Networks","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PANW-CYBERSECURITY-APPRENTICE","PANW-CYBERSECURITY-PRACTITIONER"],"notes":"Canonical current product reference for mapping foundational controls to NGFW, Cortex, cloud, SASE and identity capabilities; not the exam blueprint."
+      "id": "panw-technical-documentation",
+      "title": "Palo Alto Networks Technical Documentation",
+      "url": "https://docs.paloaltonetworks.com/",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE",
+        "PANW-CYBERSECURITY-PRACTITIONER"
+      ],
+      "notes": "Canonical current product reference for mapping foundational controls to NGFW, Cortex, cloud, SASE and identity capabilities; not the exam blueprint. September 29 PANW-CYBERSECURITY-APPRENTICE deep review: Complete 2,627-character directory/featured main read. PAN-OS 12.2 Ceres and current product names are landing metadata, not Apprentice exam cutover or verified installed capabilities. Specific policy article read separately. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"youtube-palo-alto-networks","title":"Palo Alto Networks YouTube Channel","url":"https://www.youtube.com/@PaloAltoNetworks","publisher":"Palo Alto Networks","authority_class":2,"source_type":"official-video","access_model":"public","last_checked":"2026-09-02","supported_exams":["PANW-CYBERSECURITY-APPRENTICE","PANW-CYBERSECURITY-PRACTITIONER","PANW-CLOUD-SECURITY-PROFESSIONAL","PANW-NETWORK-SECURITY-PROFESSIONAL","PANW-NETWORK-SECURITY-ANALYST","PANW-NGFW-ENGINEER","PANW-SD-WAN-ENGINEER","PANW-SECURITY-OPERATIONS-ARCHITECT","PANW-SSE-ENGINEER","PANW-XDR-ENGINEER","PANW-XSIAM-ANALYST","PANW-XSIAM-ENGINEER","PANW-XSOAR-ENGINEER"],"notes":"Official visual threat, Zero Trust, network, cloud and security-operations content; select current conceptual videos by blueprint gap."
+      "id": "youtube-palo-alto-networks",
+      "title": "Palo Alto Networks YouTube Channel",
+      "url": "https://www.youtube.com/@PaloAltoNetworks",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 2,
+      "source_type": "official-video",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE",
+        "PANW-CYBERSECURITY-PRACTITIONER",
+        "PANW-CLOUD-SECURITY-PROFESSIONAL",
+        "PANW-NETWORK-SECURITY-PROFESSIONAL",
+        "PANW-NETWORK-SECURITY-ANALYST",
+        "PANW-NGFW-ENGINEER",
+        "PANW-SD-WAN-ENGINEER",
+        "PANW-SECURITY-OPERATIONS-ARCHITECT",
+        "PANW-SSE-ENGINEER",
+        "PANW-XDR-ENGINEER",
+        "PANW-XSIAM-ANALYST",
+        "PANW-XSIAM-ENGINEER",
+        "PANW-XSOAR-ENGINEER"
+      ],
+      "notes": "Official visual threat, Zero Trust, network, cloud and security-operations content; select current conceptual videos by blueprint gap. September 29 PANW-CYBERSECURITY-APPRENTICE deep review: 181-character title/footer only. No video playback or playlist audit. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pluralsight-cybersecurity-catalog","title":"Pluralsight Cybersecurity Learning Paths","url":"https://www.pluralsight.com/browse/information-cyber-security","publisher":"Pluralsight","authority_class":3,"source_type":"commercial-learning-catalog","access_model":"paid","last_checked":"2026-09-02","supported_exams":["PANW-CYBERSECURITY-APPRENTICE"],"notes":"Broad alternative video catalog for network, endpoint, cloud, SOC, IAM and PKI gaps. Build a targeted playlist and reconcile technical claims with authoritative sources."
+      "id": "pluralsight-cybersecurity-catalog",
+      "title": "Pluralsight Cybersecurity Learning Paths",
+      "url": "https://www.pluralsight.com/browse/information-cyber-security",
+      "publisher": "Pluralsight",
+      "authority_class": 3,
+      "source_type": "commercial-learning-catalog",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "notes": "Broad alternative video catalog for network, endpoint, cloud, SOC, IAM and PKI gaps. Build a targeted playlist and reconcile technical claims with authoritative sources. September 29 PANW-CYBERSECURITY-APPRENTICE deep review: Complete 13,456-character public catalog main read, not linked lessons. Current cards include Security Event Triage 10 courses/24h and Security Analysis 4 courses/7h; older exam labels and expired October 2025 offer still present. No Apprentice-specific complete alignment, quality, current price, entitlement or paid-interior claim. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-foundations-cybersecurity-second","title":"Foundations of Cybersecurity, 2nd Edition","url":"https://www.oreilly.com/library/view/foundations-of-cybersecurity/0642572230302/","publisher":"O'Reilly / No Starch Press / Jason Andress","authority_class":3,"source_type":"commercial-book","access_model":"paid","last_checked":"2026-09-02","supported_exams":["PANW-CYBERSECURITY-APPRENTICE"],"notes":"May 2026 beginner book listed at 9h31m with broad threats, identity, network, endpoint, cloud, cryptography, SOC, IR and governance coverage. Select chapters by blueprint gap."
+      "id": "oreilly-foundations-cybersecurity-second",
+      "title": "Foundations of Cybersecurity, 2nd Edition",
+      "url": "https://www.oreilly.com/library/view/foundations-of-cybersecurity/0642572230302/",
+      "publisher": "O'Reilly / No Starch Press / Jason Andress",
+      "authority_class": 3,
+      "source_type": "commercial-book",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "notes": "May 2026 beginner book listed at 9h31m with broad threats, identity, network, endpoint, cloud, cryptography, SOC, IR and governance coverage. Select chapters by blueprint gap. September 29 PANW-CYBERSECURITY-APPRENTICE deep review: HTTP 403. Earlier May 2026 beginner-book and 9h31 metadata not reverified; no chapters, interior or quality audit. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
     },
     {
       "id":"fortinet-nse4-fortios-76-exam","title":"Fortinet NSE 4 - FortiOS 7.6 Administrator Exam","url":"https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam","publisher":"Fortinet Training Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS"],"notes":"Canonical current five-domain ranged-weight blueprint, 50–55-question/80–90-minute contract, FortiOS 7.6.0 baseline, experience recommendation and official resource/sample-question boundary."
@@ -53018,7 +53329,21 @@
       "id":"panw-cybersecurity-practitioner-source-1","title":"MITRE ATT&CK Enterprise","url":"https://attack.mitre.org/matrices/enterprise/","publisher":"Independent standards, cloud or expert publisher","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["PANW-CYBERSECURITY-PRACTITIONER"],"notes":"Public product, training, standards, cloud-provider or expert reference used for objective-aligned explanation and practice."
     },
     {
-      "id":"panw-cybersecurity-practitioner-source-2","title":"NIST SP 800-207 Zero Trust Architecture","url":"https://csrc.nist.gov/pubs/sp/800/207/final","publisher":"Independent standards, cloud or expert publisher","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["PANW-CYBERSECURITY-PRACTITIONER","NSE-2-CYBERSECURITY","PANW-SECURITY-OPERATIONS-ARCHITECT"],"notes":"Public product, training, standards, cloud-provider or expert reference used for objective-aligned explanation and practice."
+      "id": "panw-cybersecurity-practitioner-source-2",
+      "title": "NIST SP 800-207 Zero Trust Architecture",
+      "url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+      "publisher": "NIST",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PANW-CYBERSECURITY-PRACTITIONER",
+        "NSE-2-CYBERSECURITY",
+        "PANW-SECURITY-OPERATIONS-ARCHITECT",
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "notes": "Public product, training, standards, cloud-provider or expert reference used for objective-aligned explanation and practice. September 29 PANW-CYBERSECURITY-APPRENTICE deep review: Complete NIST SP800-207 publication landing/abstract/date read, not full linked PDF. August 2020 final; location/ownership not automatic trust, subject/device authentication and authorization distinguished. Existing source ID reused by exact URL; no fabricated new source identity. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md No live infrastructure execution."
     },
     {
       "id":"panw-cybersecurity-practitioner-source-3","title":"Palo Alto Networks All Products A–Z","url":"https://docs.paloaltonetworks.com/resources/all-products-a-z","publisher":"Palo Alto Networks","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PANW-CYBERSECURITY-PRACTITIONER","PANW-CLOUD-SECURITY-PROFESSIONAL"],"notes":"Current official product index exposing Cortex Cloud and related documentation after the former direct Cortex Cloud path returned 404."

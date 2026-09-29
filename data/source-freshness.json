@@ -4,6 +4,143 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-panwcybersecurityapprentice-deep-review",
+      "title": "PANW-CYBERSECURITY-APPRENTICE complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "results": [
+        {
+          "exam_code": "PANW-CYBERSECURITY-APPRENTICE",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-CYBERSECURITY-APPRENTICE-palo-alto-networks-cybersecurity-apprentice.md",
+          "baseline_sha256": "47b5e73775f5f8b750a637a820771e1276fe3c3473deb5420ec5a52e43c94141",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Full May 2026 five-page datasheet and September handbook/FAQ read; tables visually checked. Seven weights and39-entry snapshot unchanged;13 nested identity items covered. Public fee now documented separately. Automatic landing extractor remains manual-review."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Primary policy and selected DNS/syslog/identity/Zero Trust/cloud sources support the technical additions. Forty-three actual offline Python checks; no device or identity-system execution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "September handbook/FAQ update and September17 vendor identity article reviewed. PAN-OS12.2 directory metadata and NIST draft reference kept separate from exam scope; no announced exam cutover identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Public course/path metadata separated from paid interiors. Pluralsight current cards, older labels/expired offer and blocked O’Reilly metadata qualified; CSA download requires account. No video playback."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Question count, base exam duration and actual delivery eligibility not exposed in reviewed public contract; three blocked resources, course interiors, installed App-ID behavior, infrastructure labs and human review pending."
+            }
+          },
+          "findings": [
+            {
+              "id": "panwcybersecurityapprentice-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Handbook citation was outdated",
+              "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PANW-CYBERSECURITY-APPRENTICE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current public cover is September2026 while guide cited July2025.",
+              "recommendation": "Refresh policy source date and relevant contract details, preserving personal booking and renewal limits.",
+              "disposition": "applied",
+              "source_id": "panw-certification-handbook",
+              "resolution": "Refresh policy source date and relevant contract details, preserving personal booking and renewal limits."
+            },
+            {
+              "id": "panwcybersecurityapprentice-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Public price exists outside the datasheet",
+              "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/certification-faq.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PANW-CYBERSECURITY-APPRENTICE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "May datasheet omits price, but September FAQ explicitly lists Apprentice foundational fee $150 before applicable extras.",
+              "recommendation": "Distinguish datasheet omissions from separately published current fee and actual booking total.",
+              "disposition": "applied",
+              "source_id": "panw-certification-faq",
+              "resolution": "Distinguish datasheet omissions from separately published current fee and actual booking total."
+            },
+            {
+              "id": "panwcybersecurityapprentice-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Subnet labels and rule presence do not establish effective isolation",
+              "url": "https://docs.paloaltonetworks.com/network-security/security-policy/administration/security-rules",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PANW-CYBERSECURITY-APPRENTICE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Predefined intrazone allow and first-match ordering can defeat assumed segmentation; logging is configurable.",
+              "recommendation": "Add original same-zone and shadowed-deny counterexamples with explicit model boundaries and proposed installed-state tests.",
+              "disposition": "applied",
+              "source_id": "panw-security-rules",
+              "resolution": "Add original same-zone and shadowed-deny counterexamples with explicit model boundaries and proposed installed-state tests."
+            },
+            {
+              "id": "panwcybersecurityapprentice-deep-4",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Base duration and question count remain unverified",
+              "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/apprentice-datasheet.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PANW-CYBERSECURITY-APPRENTICE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Complete datasheet gives detailed scope but does not publish either figure; no authenticated booking inspected.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped all 39 saved objective entries and the nested identity topics against the full current PDF; answered 40 original prompts and executed 43 local Python checks. Added three worked scenarios and eight proposed activities, refreshed the September handbook/FAQ and clarified fee, delivery, policy, telemetry and identity boundaries. Booking details, blocked resources, live infrastructure and human review remain pending. Same-context AI review; human review pending. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 3,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-29-servicenowcad-deep-review",
       "title": "SERVICENOW-CAD complete guide and learning-content review",
       "rubric_version": 1,

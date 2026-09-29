@@ -3254,6 +3254,42 @@ The current bank's four 24-question domains and two 12-question domains total 12
 
 The [Pearson FAQ](https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0013209) distinguishes the test-center rescheduling threshold from OnVUE's timing. Recheck the current appointment before relying on either. The [CMP payment FAQ](https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011114) is general policy; it does not verify your assigned annual task or deadline.
 
+### PANW-CYBERSECURITY-APPRENTICE — Palo Alto Networks Certified Cybersecurity Apprentice
+
+Resource details from the [PANW-CYBERSECURITY-APPRENTICE guide](../guides/PANW-CYBERSECURITY-APPRENTICE-palo-alto-networks-cybersecurity-apprentice.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list. Choose resources for demonstrated gaps; listing a resource does not establish lesson quality, complete alignment or a passing guarantee. Distinguish public metadata, selected reference reading and actual practice. Times below are estimates except where publisher metadata is explicitly identified.
+
+| Use and reading boundary | Resource | Access | Estimated time |
+|---|---|---|---|
+| Complete public main; identity/audience and learning routes | [Palo Alto Networks Certified Cybersecurity Apprentice](https://www.paloaltonetworks.com/services/education/panw-cybersecurity-apprentice) | Public | 10–15 min estimate |
+| Full five-page May 2026 PDF read; detailed current scope | [Cybersecurity Apprentice Datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/apprentice-datasheet.pdf) | Public PDF | 30–45 min estimate |
+| Seven-character loading shell; no modules, entitlement or duration verified | [Palo Alto Networks Learning Center](https://learn.paloaltonetworks.com/learn) | Account/dynamic shell | 20–30 min planning; path unverified |
+| Public main advertises free online courses; no course interiors audited | [Palo Alto Networks Cybersecurity Academy](https://www.paloaltonetworks.com/services/education/academy) | Public/free routes | 8–20 hr selected-study estimate |
+| Full eight-page September 2026 edition read; supersedes older date | [Palo Alto Networks Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) | Public PDF | 30–45 min estimate |
+| Full four-page September 2026 FAQ; listed fee and program rules | [Palo Alto Networks Certification Program FAQ — September 2026](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/certification-faq.pdf) | Public PDF | 15–25 min estimate |
+| Public main and appointment-time distinction; no booking accessed | [Pearson Palo Alto Networks certification program](https://www.pearsonvue.com/us/en/paloaltonetworks.html) | Public/provider | 10–20 min estimate |
+| Full public requirements main; no system test, installation or booking | [Pearson Palo Alto Networks OnVUE information](https://www.pearsonvue.com/us/en/paloaltonetworks/onvue.html) | Public/provider | 15–25 min estimate |
+| Current homepage/resources read; AI analysis quick-start is a draft, not a new framework | [NIST Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework) | Public | 2–4 hr selected-study estimate |
+| HTTP 403; current main unavailable | [Zero Trust Maturity Model](https://www.cisa.gov/resources-tools/resources/zero-trust-maturity-model) | Public source/access blocked | 1–2 hr earlier planning estimate |
+| HTTP 403; only indexed primary excerpt on cross-cutting capabilities read | [CISA Zero Trust Maturity Model version 2](https://www.cisa.gov/sites/default/files/2023-04/CISA_Zero_Trust_Maturity_Model_Version_2_508c.pdf) | Public PDF/access blocked | 1–2 hr planned reading |
+| Publication abstract/date read; not the full architecture PDF | [NIST SP 800-207 Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/800/207/final) | Public/standard | 30–60 min selected-study estimate |
+| Selected current password, OTP, phishing/replay sections; not entire standard | [NIST SP 800-63B-4 — Authenticator and Verifier Requirements](https://pages.nist.gov/800-63-4/sp800-63b/authenticators/) | Public/standard | 45–90 min selected-study estimate |
+| Public 12-domain landing read; download asks for login; no full document | [Security Guidance for Critical Areas of Focus in Cloud Computing v5](https://cloudsecurityalliance.org/artifacts/security-guidance-v5) | Public metadata/account download | 8–15 hr selected-reading estimate |
+| Complete provider main read; EC2 versus abstracted-service example | [AWS Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/) | Public/provider | 20–40 min estimate |
+| Current product directory/main only; PAN-OS 12.2 metadata is not exam scope | [Palo Alto Networks Technical Documentation](https://docs.paloaltonetworks.com/) | Public | 3–8 hr selected-study estimate |
+| Complete August 7 main read; ordered rules, defaults and logging; DNS example qualified | [Security Policy Rules](https://docs.paloaltonetworks.com/network-security/security-policy/administration/security-rules) | Public/product documentation | 30–60 min estimate |
+| Introduction and transport-selection section read; DNS uses UDP and TCP | [RFC 7766 — DNS Transport over TCP](https://www.rfc-editor.org/rfc/rfc7766.html) | Public/standard | 20–40 min selected reading |
+| Selected transport/header, time-quality and delivery/security sections read | [RFC 5424 — The Syslog Protocol](https://www.rfc-editor.org/rfc/rfc5424.html) | Public/standard | 45–90 min selected reading |
+| Complete September 17 article main/FAQ read; vendor claims and linked research not independently verified | [Securing Machine and Agentic Identities: The Next Frontier of Modern PAM](https://www.paloaltonetworks.com/blog/identity-security/securing-machine-agentic-identities-modern-pam/) | Public/vendor blog | 15–25 min review estimate; publisher says 8 min |
+| Title/footer only; no playback or playlist review | [Palo Alto Networks YouTube Channel](https://www.youtube.com/@PaloAltoNetworks) | Public/video | 2–6 hr selected-study estimate |
+| Complete public catalog main read; listed paths, no paid lessons or alignment audit | [Pluralsight Cybersecurity Learning Paths](https://www.pluralsight.com/browse/information-cyber-security) | Paid/public metadata | 10–30 hr selected-study estimate |
+| HTTP 403; earlier May 2026/9h31 listing not reverified | [Foundations of Cybersecurity, 2nd Edition](https://www.oreilly.com/library/view/foundations-of-cybersecurity/0642572230302/) | Paid/access blocked | Earlier 9 hr 31 min unverified |
+
+Pluralsight currently lists Security Event Triage as 10 courses/24 hours and Security Analysis as four courses/seven hours. Its broad catalog also contains older exam labels and an expired October 2025 offer. Those are catalog observations, not a current price, Apprentice-specific path or interior-quality review. The blocked O'Reilly listing's earlier duration and publication date remain unverified.
+
+The CSA landing lists 12 domains and identifies an August 2025 update to guidance released in July 2024; the downloadable interior was not accessed. NIST's homepage mentions a draft AI-assisted CSF analysis guide open for comment through October 15, 2026. That is not a new CSF version or proof of any AI tool's accuracy. CISA's blocked sources remain visible as reading gaps.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

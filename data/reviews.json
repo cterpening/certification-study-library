@@ -10301,26 +10301,86 @@
       "notes": "Mapped all 22 canonical subtopics, aligned stale snapshot/checklist weights while preserving history, answered 40 original prompts and executed 38 local JavaScript checks. Added three worked scenarios and eight proposed instance labs; clarified API/query authorization, pagination, replay, source control and test boundaries. Canonical main manually verified; contradictory ACL prose, live instance work, inaccessible interiors and human review remain pending. See docs/research/2026-09-29-servicenow-cad-deep-review.md"
     },
     {
-      "id":"panw-cybersecurity-apprentice-2026-09-02-source-validation",
-      "exam_code":"PANW-CYBERSECURITY-APPRENTICE",
-      "guide_path":"guides/PANW-CYBERSECURITY-APPRENTICE-palo-alto-networks-cybersecurity-apprentice.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-02",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/panw-cybersecurity-apprentice-official-objectives.txt",
-      "blueprint_snapshot_sha256":"fbd3b8491d4f5a04b8592653652089dcb6e1fe7f7e1948a974dd37469f1673b7",
-      "objective_coverage":[
-        {"objective_group":"Cybersecurity (16%)","guide_sections":["Section 1","All scenarios","Labs 4, 6 and 8"]},
-        {"objective_group":"Network Fundamentals (16%)","guide_sections":["Section 2","All scenarios","Lab 1"]},
-        {"objective_group":"Network Security (14%)","guide_sections":["Section 3","All scenarios","Labs 2–3"]},
-        {"objective_group":"Endpoint Security (10%)","guide_sections":["Section 4","Scenarios 1 and 3","Lab 4"]},
-        {"objective_group":"Cloud Security (13%)","guide_sections":["Section 5","Scenarios 1–2","Labs 5 and 8"]},
-        {"objective_group":"Security Operations (13%)","guide_sections":["Section 6","All scenarios","Lab 6"]},
-        {"objective_group":"Identity Security (18%)","guide_sections":["Section 7","All scenarios","Labs 3 and 7"]}
+      "id": "panw-cybersecurity-apprentice-2026-09-02-source-validation",
+      "exam_code": "PANW-CYBERSECURITY-APPRENTICE",
+      "guide_path": "guides/PANW-CYBERSECURITY-APPRENTICE-palo-alto-networks-cybersecurity-apprentice.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/panw-cybersecurity-apprentice-official-objectives.txt",
+      "blueprint_snapshot_sha256": "fbd3b8491d4f5a04b8592653652089dcb6e1fe7f7e1948a974dd37469f1673b7",
+      "objective_coverage": [
+        {
+          "objective_group": "Cybersecurity (16%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 4, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network Fundamentals (16%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Network Security (14%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 2–3"
+          ]
+        },
+        {
+          "objective_group": "Endpoint Security (10%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1 and 3",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Cloud Security (13%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenarios 1–2",
+            "Labs 5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security Operations (13%)",
+          "guide_sections": [
+            "Section 6",
+            "All scenarios",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Identity Security (18%)",
+          "guide_sections": [
+            "Section 7",
+            "All scenarios",
+            "Labs 3 and 7"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":12,"reachable":10,"access_blocked":2,"missing_or_error":0},
-      "notes":"All seven May 2026 weighted domains are mapped through threat/control reasoning, packet and protocol flow, segmentation and inspection, endpoint/IoT defense, cloud/shared-responsibility and CI/CD controls, SOC investigation and recovery, and identity/PKI/secrets lifecycle. Three integrated scenarios, eight safe labs and 40 original checks are included. The official public datasheet's omission of base duration, item count and price is explicit rather than filled from third-party listings. The July 2025 handbook's scaled score, provisional-result, ESL, retake, validity, recertification and unauthorized-material boundaries are preserved. No recalled/live item, dump or copied course content is used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 23,
+        "reachable": 20,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Mapped all 39 saved objective entries and the nested identity topics against the full current PDF; answered 40 original prompts and executed 43 local Python checks. Added three worked scenarios and eight proposed activities, refreshed the September handbook/FAQ and clarified fee, delivery, policy, telemetry and identity boundaries. Booking details, blocked resources, live infrastructure and human review remain pending. See docs/research/2026-09-29-panw-cybersecurity-apprentice-deep-review.md"
     },
     {
       "id":"nse-4-fortios-2026-09-02-source-validation",

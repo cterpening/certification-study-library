@@ -1,0 +1,1807 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "PANW-CYBERSECURITY-APPRENTICE",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/PANW-CYBERSECURITY-APPRENTICE-palo-alto-networks-cybersecurity-apprentice.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "098e633d8c578c6d0f96842c15a3fb7e04549459fcb26339d63d8d8d83ba75fa",
+  "guide_after_sha256": "c988cd61dbf4981caa723328939cc3cf65256c3597e458e6fed1bbb31dc57b98",
+  "prior_records": {
+    "exam": {
+      "code": "PANW-CYBERSECURITY-APPRENTICE",
+      "level": "beginner",
+      "vendor_id": "palo-alto-networks",
+      "title": "Palo Alto Networks Certified Cybersecurity Apprentice",
+      "status": "active",
+      "study_guide_url": "https://www.paloaltonetworks.com/services/education/panw-cybersecurity-apprentice",
+      "guide_path": "guides/PANW-CYBERSECURITY-APPRENTICE-palo-alto-networks-cybersecurity-apprentice.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite or work experience is recommended; this is an entry-level credential. Practice packet and trust-boundary reasoning across cybersecurity, networks, network controls, endpoints and IoT, cloud/shared responsibility, SOC evidence, and human/privileged/workload identity. The public May 2026 datasheet does not state base duration, item count, or price, so verify those in Pearson registration."
+    },
+    "review": {
+      "id": "panw-cybersecurity-apprentice-2026-09-02-source-validation",
+      "exam_code": "PANW-CYBERSECURITY-APPRENTICE",
+      "guide_path": "guides/PANW-CYBERSECURITY-APPRENTICE-palo-alto-networks-cybersecurity-apprentice.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/panw-cybersecurity-apprentice-official-objectives.txt",
+      "blueprint_snapshot_sha256": "fbd3b8491d4f5a04b8592653652089dcb6e1fe7f7e1948a974dd37469f1673b7",
+      "objective_coverage": [
+        {
+          "objective_group": "Cybersecurity (16%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 4, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network Fundamentals (16%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Network Security (14%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 2–3"
+          ]
+        },
+        {
+          "objective_group": "Endpoint Security (10%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1 and 3",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Cloud Security (13%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenarios 1–2",
+            "Labs 5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security Operations (13%)",
+          "guide_sections": [
+            "Section 6",
+            "All scenarios",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Identity Security (18%)",
+          "guide_sections": [
+            "Section 7",
+            "All scenarios",
+            "Labs 3 and 7"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 12,
+        "reachable": 10,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All seven May 2026 weighted domains are mapped through threat/control reasoning, packet and protocol flow, segmentation and inspection, endpoint/IoT defense, cloud/shared-responsibility and CI/CD controls, SOC investigation and recovery, and identity/PKI/secrets lifecycle. Three integrated scenarios, eight safe labs and 40 original checks are included. The official public datasheet's omission of base duration, item count and price is explicit rather than filled from third-party listings. The July 2025 handbook's scaled score, provisional-result, ESL, retake, validity, recertification and unauthorized-material boundaries are preserved. No recalled/live item, dump or copied course content is used."
+    },
+    "sources": [
+      {
+        "id": "nist-csf-2",
+        "title": "NIST Cybersecurity Framework 2.0",
+        "url": "https://www.nist.gov/cyberframework",
+        "publisher": "NIST",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CISSP",
+          "PANW-CYBERSECURITY-APPRENTICE",
+          "SPLK-5003",
+          "PANW-SECURITY-OPERATIONS-ARCHITECT"
+        ],
+        "notes": "Authoritative governance and outcome vocabulary across Govern, Identify, Protect, Detect, Respond and Recover; use selectively rather than as an exam outline."
+      },
+      {
+        "id": "panw-cybersecurity-apprentice-certification",
+        "title": "Palo Alto Networks Certified Cybersecurity Apprentice",
+        "url": "https://www.paloaltonetworks.com/services/education/panw-cybersecurity-apprentice",
+        "publisher": "Palo Alto Networks",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PANW-CYBERSECURITY-APPRENTICE"
+        ],
+        "notes": "Canonical credential identity and stable objective statement, with links to the May 2026 detailed datasheet and official learning path."
+      },
+      {
+        "id": "panw-cybersecurity-apprentice-datasheet",
+        "title": "Cybersecurity Apprentice Datasheet",
+        "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/apprentice-datasheet.pdf",
+        "publisher": "Palo Alto Networks",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PANW-CYBERSECURITY-APPRENTICE"
+        ],
+        "notes": "May 2026 full seven-domain 16/16/14/10/13/13/18 blueprint, entry-level audience, English/ESL statement, learning route and explicit full-blueprint claim. It does not state base duration, item count or price."
+      },
+      {
+        "id": "panw-learning-center",
+        "title": "Palo Alto Networks Learning Center",
+        "url": "https://learn.paloaltonetworks.com/learn",
+        "publisher": "Palo Alto Networks",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PANW-CYBERSECURITY-APPRENTICE",
+          "PANW-CYBERSECURITY-PRACTITIONER",
+          "PANW-CLOUD-SECURITY-PROFESSIONAL",
+          "PANW-NETWORK-SECURITY-PROFESSIONAL",
+          "PANW-NETWORK-SECURITY-ANALYST",
+          "PANW-NGFW-ENGINEER",
+          "PANW-SD-WAN-ENGINEER",
+          "PANW-SSE-ENGINEER",
+          "PANW-XDR-ENGINEER",
+          "PANW-XSIAM-ANALYST",
+          "PANW-XSIAM-ENGINEER",
+          "PANW-XSOAR-ENGINEER"
+        ],
+        "notes": "Official recommended digital learning path destination. Dynamic sign-in is required; select modules by blueprint gaps and verify displayed duration."
+      },
+      {
+        "id": "panw-cybersecurity-academy",
+        "title": "Palo Alto Networks Cybersecurity Academy",
+        "url": "https://www.paloaltonetworks.com/services/education/academy",
+        "publisher": "Palo Alto Networks",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PANW-CYBERSECURITY-APPRENTICE"
+        ],
+        "notes": "Official free introductory cybersecurity learning route with networking, cloud and operations coverage; course access and duration vary."
+      },
+      {
+        "id": "panw-certification-handbook",
+        "title": "Palo Alto Networks Certification Handbook",
+        "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
+        "publisher": "Palo Alto Networks",
+        "authority_class": 1,
+        "source_type": "official-policy",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PANW-CYBERSECURITY-APPRENTICE",
+          "PANW-CYBERSECURITY-PRACTITIONER",
+          "PANW-CLOUD-SECURITY-PROFESSIONAL",
+          "PANW-NETWORK-SECURITY-PROFESSIONAL",
+          "PANW-NETWORK-SECURITY-ANALYST",
+          "PANW-NGFW-ENGINEER",
+          "PANW-SD-WAN-ENGINEER",
+          "PANW-SECURITY-OPERATIONS-ARCHITECT",
+          "PANW-SSE-ENGINEER",
+          "PANW-XDR-ENGINEER",
+          "PANW-XSIAM-ANALYST",
+          "PANW-XSIAM-ENGINEER",
+          "PANW-XSOAR-ENGINEER"
+        ],
+        "notes": "July 2025 authoritative Pearson, ESL, scaled-score, provisional-result, retake, two-year validity, recertification and unauthorized-material policy."
+      },
+      {
+        "id": "cisa-zero-trust-maturity-model",
+        "title": "Zero Trust Maturity Model",
+        "url": "https://www.cisa.gov/resources-tools/resources/zero-trust-maturity-model",
+        "publisher": "CISA",
+        "authority_class": 1,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PANW-CYBERSECURITY-APPRENTICE"
+        ],
+        "notes": "Authoritative vendor-neutral Zero Trust progression across identity, devices, networks, applications/workloads and data."
+      },
+      {
+        "id": "cloud-security-alliance-guidance-v5",
+        "title": "Security Guidance for Critical Areas of Focus in Cloud Computing v5",
+        "url": "https://cloudsecurityalliance.org/artifacts/security-guidance-v5",
+        "publisher": "Cloud Security Alliance",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PANW-CYBERSECURITY-APPRENTICE"
+        ],
+        "notes": "Current broad cloud security guidance for shared responsibility, IAM, workloads, data and operations; use selected domains rather than consuming all content."
+      },
+      {
+        "id": "panw-technical-documentation",
+        "title": "Palo Alto Networks Technical Documentation",
+        "url": "https://docs.paloaltonetworks.com/",
+        "publisher": "Palo Alto Networks",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PANW-CYBERSECURITY-APPRENTICE",
+          "PANW-CYBERSECURITY-PRACTITIONER"
+        ],
+        "notes": "Canonical current product reference for mapping foundational controls to NGFW, Cortex, cloud, SASE and identity capabilities; not the exam blueprint."
+      },
+      {
+        "id": "youtube-palo-alto-networks",
+        "title": "Palo Alto Networks YouTube Channel",
+        "url": "https://www.youtube.com/@PaloAltoNetworks",
+        "publisher": "Palo Alto Networks",
+        "authority_class": 2,
+        "source_type": "official-video",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PANW-CYBERSECURITY-APPRENTICE",
+          "PANW-CYBERSECURITY-PRACTITIONER",
+          "PANW-CLOUD-SECURITY-PROFESSIONAL",
+          "PANW-NETWORK-SECURITY-PROFESSIONAL",
+          "PANW-NETWORK-SECURITY-ANALYST",
+          "PANW-NGFW-ENGINEER",
+          "PANW-SD-WAN-ENGINEER",
+          "PANW-SECURITY-OPERATIONS-ARCHITECT",
+          "PANW-SSE-ENGINEER",
+          "PANW-XDR-ENGINEER",
+          "PANW-XSIAM-ANALYST",
+          "PANW-XSIAM-ENGINEER",
+          "PANW-XSOAR-ENGINEER"
+        ],
+        "notes": "Official visual threat, Zero Trust, network, cloud and security-operations content; select current conceptual videos by blueprint gap."
+      },
+      {
+        "id": "pluralsight-cybersecurity-catalog",
+        "title": "Pluralsight Cybersecurity Learning Paths",
+        "url": "https://www.pluralsight.com/browse/information-cyber-security",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "commercial-learning-catalog",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PANW-CYBERSECURITY-APPRENTICE"
+        ],
+        "notes": "Broad alternative video catalog for network, endpoint, cloud, SOC, IAM and PKI gaps. Build a targeted playlist and reconcile technical claims with authoritative sources."
+      },
+      {
+        "id": "oreilly-foundations-cybersecurity-second",
+        "title": "Foundations of Cybersecurity, 2nd Edition",
+        "url": "https://www.oreilly.com/library/view/foundations-of-cybersecurity/0642572230302/",
+        "publisher": "O'Reilly / No Starch Press / Jason Andress",
+        "authority_class": 3,
+        "source_type": "commercial-book",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PANW-CYBERSECURITY-APPRENTICE"
+        ],
+        "notes": "May 2026 beginner book listed at 9h31m with broad threats, identity, network, endpoint, cloud, cryptography, SOC, IR and governance coverage. Select chapters by blueprint gap."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "9e154f24ca6d2f356a8317586d129216025740ee0bdfe16abb14b85f2fb46cc4",
+      "guide_sections": [
+        "1. Cybersecurity — 16%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "1ce1c9d10e0d82fcb0d7bc763336066d3ba94612615438e2f0cc567aa3a548a1",
+      "guide_sections": [
+        "1. Cybersecurity — 16%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "ebeb4004da6ec73ec6d2a521b36cb18af1939cb3e2455c7018c03d6c39feba89",
+      "guide_sections": [
+        "1. Cybersecurity — 16%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "bb19fb3a761bca4b987eced57b91651997f3ddd7809f44509ceef776dbd191c9",
+      "guide_sections": [
+        "1. Cybersecurity — 16%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "6455cce9b56ac9531b25dbebcd8cbed5f2e8aa27a38b9ad8e349337b95962543",
+      "guide_sections": [
+        "1. Cybersecurity — 16%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "3e2d6892c8e0a1a2f7ffa3b9efd9a38e59e2a7c0fcb4d69548f6a0cba43b633c",
+      "guide_sections": [
+        "1. Cybersecurity — 16%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "92bd56545873f1a8ed2c71797155ace5022eed46012921373824506d21125f59",
+      "guide_sections": [
+        "2. Network Fundamentals — 16%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "65d30a3221a04fb6f012d6ffec674913acf8c5d9e42902ddf9f6b90aeefdb135",
+      "guide_sections": [
+        "2. Network Fundamentals — 16%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "6d6d30ee466f7360c38b03365955f527cfd0c5f44397fa0ad5d5d6e09e74a99d",
+      "guide_sections": [
+        "2. Network Fundamentals — 16%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "8dcca4a97592d33f35024c9e5d184e1199e05cb23c9a3b05c3b45a8e9d68eae8",
+      "guide_sections": [
+        "2. Network Fundamentals — 16%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "0d6b5aa3b77ef7cad99cd247368b6ef458b2e7212596aaed7230b7c6995a0581",
+      "guide_sections": [
+        "2. Network Fundamentals — 16%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "4829a691e0bffb46ceae33ed680609595b24a21da816c62ff5ba0f0021d6ee79",
+      "guide_sections": [
+        "2. Network Fundamentals — 16%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "cf85686d78792d66095a847dff6b349f0c235cab3c7fe02b5d0630b95db951b3",
+      "guide_sections": [
+        "2. Network Fundamentals — 16%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "6b777c2ca6f4ce6124281bd321af92f444b3c183b26f952ce4b4db7cdfea4654",
+      "guide_sections": [
+        "3. Network Security — 14%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "7cda1f606ed1c84b096a67eaae10a189a33ee96af5a94a23cf503982c6e42cb2",
+      "guide_sections": [
+        "3. Network Security — 14%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "2dd6d5e78acb82e4f2bffc7f0c15f7fbd47e4a145438b74928d151ef3ec3953b",
+      "guide_sections": [
+        "3. Network Security — 14%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "467ed2b361929bb7d960672e2a745f1c3c6575588bec3213f7508abc30838b83",
+      "guide_sections": [
+        "3. Network Security — 14%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "58ca25b42550359cd727656bdcb2a450af9fd0243ce08ee7abbe21db288e4404",
+      "guide_sections": [
+        "3. Network Security — 14%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "261e5a3c50717e4a415b164ff0d28484bbe67361a1457507c19d36db48d2434b",
+      "guide_sections": [
+        "3. Network Security — 14%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "03e0ac5b7e7739ced67669edd4f9e977401e07afb2ddc22423a73d705eff7fd2",
+      "guide_sections": [
+        "4. Endpoint Security — 10%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "28fd30571bee6d9c788a66ec761e2ad68b0d3ae525d45457c0a789498d3b1c13",
+      "guide_sections": [
+        "4. Endpoint Security — 10%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "33d4b0797c3fa0bf01500e7b1113fb09d5f552a44cde7cbcaada248735b31e33",
+      "guide_sections": [
+        "4. Endpoint Security — 10%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "a4c96c5ac1dc65f30cc16cc9e9cc6e5945dea4f191989b65e1b142ec1d758815",
+      "guide_sections": [
+        "5. Cloud Security — 13%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "fa217863a2e3db008c3b968d8a87eb39a7bc2703f0e535c5bac560dfaf0e8cb5",
+      "guide_sections": [
+        "5. Cloud Security — 13%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "bfd85b78bec93a0b0fff9fa1d5f5cd2ef51fbe9bddf054deb947ec012d92a855",
+      "guide_sections": [
+        "5. Cloud Security — 13%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "f1462a87fa7a0d1ab28a820836fdb3129930431ad9c478ef7e512741953e0e24",
+      "guide_sections": [
+        "5. Cloud Security — 13%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "526a035a9c87e7e364e2e32353df7a8c308418ec608f98954c556a3dfe9f9497",
+      "guide_sections": [
+        "5. Cloud Security — 13%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "c2d290a1da4b6bd84a3bfc212667cb4931af7aea537abfb53b3115e7b4336b9e",
+      "guide_sections": [
+        "5. Cloud Security — 13%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "f4d27f5d36b39a2f2c20ca5db712f619646cde8cd6137237e00e0ba520f281c5",
+      "guide_sections": [
+        "6. Security Operations — 13%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "65bbbb564da1e59b9271d6243fc6609b1180bd8624c2769efbaf00a7995ba7ef",
+      "guide_sections": [
+        "6. Security Operations — 13%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "52c3260870e888353a64d61c60cc5986baf23376c30c8970de181d278eca5d4f",
+      "guide_sections": [
+        "6. Security Operations — 13%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "520f14969670880225fdc25a791a07311b51235406fa3ee8d8bb339159d4d040",
+      "guide_sections": [
+        "6. Security Operations — 13%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "849f6a3390bd894c7afca607617ec9e44d0baac143399ff253cc80d7ed90a211",
+      "guide_sections": [
+        "6. Security Operations — 13%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "7de7644c440efd87a9d1d5516c582fdd974d9edd59bebb9826e5a1aba17b8da4",
+      "guide_sections": [
+        "6. Security Operations — 13%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "2b28d3892cb803b335626f7622a93aaf31d5a821d26ed10a292aa4bedb0b255b",
+      "guide_sections": [
+        "6. Security Operations — 13%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "c568a2b7eef55f929738c9f4d3f77bb9b57754d202e4ca6658a8ce698f668734",
+      "guide_sections": [
+        "7. Identity Security — 18%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "4916dcc2c89d8adec382d2d5dbe3df0d87510dad6254f4b811d8769831c61298",
+      "guide_sections": [
+        "7. Identity Security — 18%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "3fc93ba03bae5c1c7bfa32dc4c90be7f1186df3d8146edd7c54747be5472959d",
+      "guide_sections": [
+        "7. Identity Security — 18%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "88f5da798a14723188d84d6723f106e9115b2969547336dea3210c4bda1cccd0",
+      "guide_sections": [
+        "7. Identity Security — 18%",
+        "Hands-on lab plan",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [
+      "PANW-CYBERSECURITY-APPRENTICE"
+    ],
+    "results": [
+      {
+        "code": "PANW-CYBERSECURITY-APPRENTICE",
+        "title": "Palo Alto Networks Certified Cybersecurity Apprentice",
+        "url": "https://www.paloaltonetworks.com/services/education/panw-cybersecurity-apprentice",
+        "guide_path": "guides/PANW-CYBERSECURITY-APPRENTICE-palo-alto-networks-cybersecurity-apprentice.md",
+        "snapshot_path": "data\\objective-snapshots\\panw-cybersecurity-apprentice-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\panw-cybersecurity-apprentice-official-status.json",
+        "status": "manual-review",
+        "changed": false,
+        "error": "ValueError: Palo Alto Networks objective statement was unexpectedly short",
+        "manual_review_reason": "The reachable credential page currently exposes an incomplete objective statement; the reviewed snapshot and registered sources retain the fuller evidence boundary.",
+        "review_route": "docs/SOURCE-FRESHNESS.md"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 23,
+    "reachable": 20,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "nist-csf-2",
+      "url": "https://www.nist.gov/cyberframework",
+      "checked_at": "2026-09-29T17:04:17.138569+00:00",
+      "health": {
+        "id": "nist-csf-2",
+        "url": "https://www.nist.gov/cyberframework",
+        "checked_at": "2026-09-29T17:04:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nist.gov/cyberframework",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Cybersecurity Framework",
+        "canonical_url": "https://www.nist.gov/cyberframework",
+        "duration_signals": [],
+        "signal_fingerprint": "7ece8c5ce2c87131c09b887c735e648ca2d6d75ec5c85b3dd2a99cc4a072d0bc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nist.gov/cyberframework",
+      "sha256": "22c43211e631e52e29c26f74ac01834595f65fdfd07e3e4bc8f68af10c0f3fa1",
+      "text_characters": 5335
+    },
+    {
+      "id": "panw-cybersecurity-apprentice-certification",
+      "url": "https://www.paloaltonetworks.com/services/education/panw-cybersecurity-apprentice",
+      "checked_at": "2026-09-29T17:04:17.139442+00:00",
+      "health": {
+        "id": "panw-cybersecurity-apprentice-certification",
+        "url": "https://www.paloaltonetworks.com/services/education/panw-cybersecurity-apprentice",
+        "checked_at": "2026-09-29T17:04:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.paloaltonetworks.com/services/education/panw-cybersecurity-apprentice",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Palo Alto Networks Certified Cybersecurity Apprentice",
+        "canonical_url": "https://www.paloaltonetworks.com/services/education/panw-cybersecurity-apprentice",
+        "duration_signals": [],
+        "signal_fingerprint": "2450f4a8fab41e1d8ab154e9d45abee454576e614f4257317109c48f9cc6e06c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.paloaltonetworks.com/services/education/panw-cybersecurity-apprentice",
+      "sha256": "8b8c392a4d92bc18881a9a44733d4631f6b0568d470e5a1d763126869bbaa8b4",
+      "text_characters": 3893
+    },
+    {
+      "id": "panw-cybersecurity-apprentice-datasheet",
+      "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/apprentice-datasheet.pdf",
+      "checked_at": "2026-09-29T17:04:17.140053+00:00",
+      "health": {
+        "id": "panw-cybersecurity-apprentice-datasheet",
+        "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/apprentice-datasheet.pdf",
+        "checked_at": "2026-09-29T17:04:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/apprentice-datasheet.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/apprentice-datasheet.pdf",
+      "sha256": "879de4e565b70afe34680413a0efd89bb1cc1d63f12be3e55441b0241a1f1b2b",
+      "text_characters": 314514
+    },
+    {
+      "id": "panw-learning-center",
+      "url": "https://learn.paloaltonetworks.com/learn",
+      "checked_at": "2026-09-29T17:04:17.774871+00:00",
+      "health": {
+        "id": "panw-learning-center",
+        "url": "https://learn.paloaltonetworks.com/learn",
+        "checked_at": "2026-09-29T17:04:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.paloaltonetworks.com/learn",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Loading",
+        "canonical_url": "https://learn.paloaltonetworks.com/learn",
+        "duration_signals": [],
+        "signal_fingerprint": "a2061170b03660e7c290315287d10091d066a918bc2ef4ce9c7b88f83bbf4227",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.paloaltonetworks.com/learn",
+      "sha256": "14f89b57c71f6fff15e67ea2b452b2e5f796e19a3dd9c6c89a368c9d99df63d5",
+      "text_characters": 7
+    },
+    {
+      "id": "panw-cybersecurity-academy",
+      "url": "https://www.paloaltonetworks.com/services/education/academy",
+      "checked_at": "2026-09-29T17:04:17.791189+00:00",
+      "health": {
+        "id": "panw-cybersecurity-academy",
+        "url": "https://www.paloaltonetworks.com/services/education/academy",
+        "checked_at": "2026-09-29T17:04:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.paloaltonetworks.com/services/education/academy",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Cybersecurity Academy",
+        "canonical_url": "https://www.paloaltonetworks.com/services/education/academy",
+        "duration_signals": [],
+        "signal_fingerprint": "82bd6186536a3f4b5bedb9d7639a9cccd27ccb0234f42abf5c29b564c08ecc4e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.paloaltonetworks.com/services/education/academy",
+      "sha256": "a92d69cd6549ad8604b10c3a30f7a53f8f44b157848cb90e65ed453163a1821b",
+      "text_characters": 4192
+    },
+    {
+      "id": "panw-certification-handbook",
+      "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
+      "checked_at": "2026-09-29T17:04:18.169086+00:00",
+      "health": {
+        "id": "panw-certification-handbook",
+        "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
+        "checked_at": "2026-09-29T17:04:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
+      "sha256": "6b8e400f32b84eaa0eb612a1f0f3703444ed2ee9446d69dc2802094e1ee3be86",
+      "text_characters": 160502
+    },
+    {
+      "id": "cisa-zero-trust-maturity-model",
+      "url": "https://www.cisa.gov/resources-tools/resources/zero-trust-maturity-model",
+      "checked_at": "2026-09-29T17:04:18.238004+00:00",
+      "health": {
+        "id": "cisa-zero-trust-maturity-model",
+        "url": "https://www.cisa.gov/resources-tools/resources/zero-trust-maturity-model",
+        "checked_at": "2026-09-29T17:04:18+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.cisa.gov/resources-tools/resources/zero-trust-maturity-model",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "cloud-security-alliance-guidance-v5",
+      "url": "https://cloudsecurityalliance.org/artifacts/security-guidance-v5",
+      "checked_at": "2026-09-29T17:04:18.250745+00:00",
+      "health": {
+        "id": "cloud-security-alliance-guidance-v5",
+        "url": "https://cloudsecurityalliance.org/artifacts/security-guidance-v5",
+        "checked_at": "2026-09-29T17:04:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloudsecurityalliance.org/artifacts/security-guidance-v5",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Security Guidance for Cloud Computing v5 | CSA",
+        "canonical_url": "https://cloudsecurityalliance.org/artifacts/security-guidance-v5",
+        "duration_signals": [],
+        "signal_fingerprint": "1cc47b63423ed0ab0f99a37e363ec584450de3ad506b3403471417474310837c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cloudsecurityalliance.org/artifacts/security-guidance-v5",
+      "sha256": "0114bab2b5df2d4f6d53eb3b905e1cb545a033ae35f559f856bb1ac7029e65b9",
+      "text_characters": 2766
+    },
+    {
+      "id": "panw-technical-documentation",
+      "url": "https://docs.paloaltonetworks.com/",
+      "checked_at": "2026-09-29T17:04:18.466270+00:00",
+      "health": {
+        "id": "panw-technical-documentation",
+        "url": "https://docs.paloaltonetworks.com/",
+        "checked_at": "2026-09-29T17:04:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.paloaltonetworks.com/",
+        "content_type": "text/html",
+        "page_title": "Palo Alto Networks | TechDocs HomeClear",
+        "canonical_url": "https://docs.paloaltonetworks.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "af12f834b1675124db7765ffec47c5c44d0488d140b4b5aace82b08c27e0240f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.paloaltonetworks.com/",
+      "sha256": "3cd41760789a343b72ad3a84bc20278ca98e545de37db91c76f8dff6b05c8842",
+      "text_characters": 2627
+    },
+    {
+      "id": "youtube-palo-alto-networks",
+      "url": "https://www.youtube.com/@PaloAltoNetworks",
+      "checked_at": "2026-09-29T17:04:18.578940+00:00",
+      "health": {
+        "id": "youtube-palo-alto-networks",
+        "url": "https://www.youtube.com/@PaloAltoNetworks",
+        "checked_at": "2026-09-29T17:04:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@PaloAltoNetworks",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Palo Alto Networks",
+        "canonical_url": "https://www.youtube.com/channel/UC2UPStk47kvhBn8P7Q5BaAg",
+        "duration_signals": [],
+        "signal_fingerprint": "c9c670b9b1c05ec634c6df520da2d9cb003763722e3e3aeb71811c20ad89e2b5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@PaloAltoNetworks",
+      "sha256": "219dd52e05c0d515e3ffc85987a9ae30d159a18d3401e7342b2788efdf81f9ae",
+      "text_characters": 181
+    },
+    {
+      "id": "pluralsight-cybersecurity-catalog",
+      "url": "https://www.pluralsight.com/browse/information-cyber-security",
+      "checked_at": "2026-09-29T17:04:19.456533+00:00",
+      "health": {
+        "id": "pluralsight-cybersecurity-catalog",
+        "url": "https://www.pluralsight.com/browse/information-cyber-security",
+        "checked_at": "2026-09-29T17:04:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/browse/information-cyber-security",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Build cybersecurity awareness | Pluralsight",
+        "canonical_url": "https://www.pluralsight.com/browse/information-cyber-security",
+        "duration_signals": [
+          "11 min",
+          "2 min",
+          "4 min",
+          "5 min",
+          "6 min",
+          "7 min"
+        ],
+        "signal_fingerprint": "5959ef249b4f54395a5188c5008ebe2878e5d9b93d5c372971b0d4bbdb8fe442",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/browse/information-cyber-security",
+      "sha256": "5b5eb6115a6a052cbf0bf57cb67a6427adb4ac6cdd69156351f9127a2709e4fe",
+      "text_characters": 13456
+    },
+    {
+      "id": "oreilly-foundations-cybersecurity-second",
+      "url": "https://www.oreilly.com/library/view/foundations-of-cybersecurity/0642572230302/",
+      "checked_at": "2026-09-29T17:04:19.601309+00:00",
+      "health": {
+        "id": "oreilly-foundations-cybersecurity-second",
+        "url": "https://www.oreilly.com/library/view/foundations-of-cybersecurity/0642572230302/",
+        "checked_at": "2026-09-29T17:04:19+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/foundations-of-cybersecurity/0642572230302/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "panw-certification-faq",
+      "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/certification-faq.pdf",
+      "checked_at": "2026-09-29T17:08:50.902342+00:00",
+      "health": {
+        "id": "panw-certification-faq",
+        "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/certification-faq.pdf",
+        "checked_at": "2026-09-29T17:08:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/certification-faq.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/certification-faq.pdf",
+      "sha256": "48586156fbd49373f8abf6876e70beb7d83da6d606a651530ef9f4653654ca91",
+      "text_characters": 266287
+    },
+    {
+      "id": "panw-pearson-program",
+      "url": "https://www.pearsonvue.com/us/en/paloaltonetworks.html",
+      "checked_at": "2026-09-29T17:08:50.903208+00:00",
+      "health": {
+        "id": "panw-pearson-program",
+        "url": "https://www.pearsonvue.com/us/en/paloaltonetworks.html",
+        "checked_at": "2026-09-29T17:08:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pearsonvue.com/us/en/paloaltonetworks.html",
+        "content_type": "text/html",
+        "page_title": "Palo Alto Networks, Inc. Certification Exams | Cybersecurity & Network Security",
+        "canonical_url": "https://www.pearsonvue.com/us/en/paloaltonetworks.html",
+        "duration_signals": [],
+        "signal_fingerprint": "71d3458992fc5c4988c252303aed2c07a652b51db10c6815b8bcfc77f60b1573",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pearsonvue.com/us/en/paloaltonetworks.html",
+      "sha256": "5fb271c11c74b6cb83a2505a8e8eeb9f7359095db0bac5e762e15bc4d0989265",
+      "text_characters": 4688
+    },
+    {
+      "id": "panw-security-rules",
+      "url": "https://docs.paloaltonetworks.com/network-security/security-policy/administration/security-rules",
+      "checked_at": "2026-09-29T17:08:50.903660+00:00",
+      "health": {
+        "id": "panw-security-rules",
+        "url": "https://docs.paloaltonetworks.com/network-security/security-policy/administration/security-rules",
+        "checked_at": "2026-09-29T17:08:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.paloaltonetworks.com/network-security/security-policy/administration/security-rules",
+        "content_type": "text/html",
+        "page_title": "Security Policy RulesClear",
+        "canonical_url": "https://docs.paloaltonetworks.com/network-security/security-policy/administration/security-rules",
+        "duration_signals": [],
+        "signal_fingerprint": "b5b9bf88797aaa88e8b6819914b780df3a614b36149b1a332b567287f62beafe",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.paloaltonetworks.com/network-security/security-policy/administration/security-rules",
+      "sha256": "9ea4e5aa2f98f1383f2343bb8c80838f8e2738bbc156fa3908883383cfc88994",
+      "text_characters": 10206
+    },
+    {
+      "id": "panw-machine-agentic-pam-2026",
+      "url": "https://www.paloaltonetworks.com/blog/identity-security/securing-machine-agentic-identities-modern-pam/",
+      "checked_at": "2026-09-29T17:08:51.418566+00:00",
+      "health": {
+        "id": "panw-machine-agentic-pam-2026",
+        "url": "https://www.paloaltonetworks.com/blog/identity-security/securing-machine-agentic-identities-modern-pam/",
+        "checked_at": "2026-09-29T17:08:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.paloaltonetworks.com/blog/identity-security/securing-machine-agentic-identities-modern-pam/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Machine and Agentic Identity Security | Idira",
+        "canonical_url": "https://www.paloaltonetworks.com/blog/identity-security/securing-machine-agentic-identities-modern-pam/",
+        "duration_signals": [
+          "10 hours",
+          "8 minutes"
+        ],
+        "signal_fingerprint": "491d0b17a77e843f0cd76973c68550f08b54ce6c159aab791a4e4b3c24534218",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.paloaltonetworks.com/blog/identity-security/securing-machine-agentic-identities-modern-pam/",
+      "sha256": "b83033dcb6351b6082c89320a3a517e7182096f8c4ca419376ebe4608794bc14",
+      "text_characters": 14594
+    },
+    {
+      "id": "aws-shared-responsibility",
+      "url": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+      "checked_at": "2026-09-29T17:08:51.453173+00:00",
+      "health": {
+        "id": "aws-shared-responsibility",
+        "url": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+        "checked_at": "2026-09-29T17:08:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Shared Responsibility Model - Amazon Web Services (AWS)",
+        "canonical_url": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+        "duration_signals": [],
+        "signal_fingerprint": "5ff6e50c47d6b0968564bf0776780fe0b1d20332abe82539817204222e132866",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+      "sha256": "a20258e54443d5d57f6bff5b0924149113cecc8fcbb396d96263346037709b21",
+      "text_characters": 7035
+    },
+    {
+      "id": "nist-authenticator-requirements",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b/authenticators/",
+      "checked_at": "2026-09-29T17:08:51.696201+00:00",
+      "health": {
+        "id": "nist-authenticator-requirements",
+        "url": "https://pages.nist.gov/800-63-4/sp800-63b/authenticators/",
+        "checked_at": "2026-09-29T17:08:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://pages.nist.gov/800-63-4/sp800-63b/authenticators/",
+        "content_type": "text/html",
+        "page_title": "Authenticators",
+        "canonical_url": "/800-63-4/sp800-63b/authenticators/",
+        "duration_signals": [
+          "10 minutes"
+        ],
+        "signal_fingerprint": "b453272ed5d4090596833e1f058503cc0b1bd51450f974d914d63cf748f504e6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://pages.nist.gov/800-63-4/sp800-63b/authenticators/",
+      "sha256": "89e0a1e6245ea6fdbc667a2969d90c9d2bbc038523a6f11433df8e2f8b04d46b",
+      "text_characters": 76494
+    },
+    {
+      "id": "ietf-syslog-rfc5424",
+      "url": "https://www.rfc-editor.org/rfc/rfc5424.html",
+      "checked_at": "2026-09-29T17:08:51.847361+00:00",
+      "health": {
+        "id": "ietf-syslog-rfc5424",
+        "url": "https://www.rfc-editor.org/rfc/rfc5424.html",
+        "checked_at": "2026-09-29T17:08:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc5424.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc5424.html",
+        "duration_signals": [
+          "20 minutes",
+          "7 hour",
+          "7 hours"
+        ],
+        "signal_fingerprint": "57888d107aeae639030d5cfdb4d9f8491ee74594c5096c96f6cba99956307e87",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc5424.html",
+      "sha256": "e814ea00b6893b7f3c5a3842bdea21f0b3b56f14cbd8fec9fa0f26b66fc8b544",
+      "text_characters": 73222
+    },
+    {
+      "id": "cisa-zero-trust-v2-pdf",
+      "url": "https://www.cisa.gov/sites/default/files/2023-04/CISA_Zero_Trust_Maturity_Model_Version_2_508c.pdf",
+      "checked_at": "2026-09-29T17:08:52.139980+00:00",
+      "health": {
+        "id": "cisa-zero-trust-v2-pdf",
+        "url": "https://www.cisa.gov/sites/default/files/2023-04/CISA_Zero_Trust_Maturity_Model_Version_2_508c.pdf",
+        "checked_at": "2026-09-29T17:08:52+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.cisa.gov/sites/default/files/2023-04/CISA_Zero_Trust_Maturity_Model_Version_2_508c.pdf",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "panw-cybersecurity-practitioner-source-2",
+      "url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+      "checked_at": "2026-09-29T17:09:31.073625+00:00",
+      "health": {
+        "id": "panw-cybersecurity-practitioner-source-2",
+        "url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+        "checked_at": "2026-09-29T17:09:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SP 800-207, Zero Trust Architecture | CSRCLock",
+        "canonical_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+        "duration_signals": [],
+        "signal_fingerprint": "56cfa61c1f1e00db41e0e46abb29d0b1ae1aa192fea05135412ced7e0242267e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+      "sha256": "9a360670e65c7f3338b17aede6da397ad81d7d106e3b895b976e0c1fa421e5f3",
+      "text_characters": 6492
+    },
+    {
+      "id": "ietf-dns-tcp-rfc7766",
+      "url": "https://www.rfc-editor.org/rfc/rfc7766.html",
+      "checked_at": "2026-09-29T17:10:16.815289+00:00",
+      "health": {
+        "id": "ietf-dns-tcp-rfc7766",
+        "url": "https://www.rfc-editor.org/rfc/rfc7766.html",
+        "checked_at": "2026-09-29T17:10:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc7766.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc7766.html",
+        "duration_signals": [],
+        "signal_fingerprint": "bc30fa52bab5a364634dbe2e9a2846e6f4dde690848947fdcfaf1c7ed45d3000",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc7766.html",
+      "sha256": "e3489f7b0fe65823250d02fb82f6dcaa6ecc2d77c1edd48a166b51ef2e1c958e",
+      "text_characters": 35367
+    },
+    {
+      "id": "panw-pearson-onvue",
+      "url": "https://www.pearsonvue.com/us/en/paloaltonetworks/onvue.html",
+      "checked_at": "2026-09-29T17:10:16.816158+00:00",
+      "health": {
+        "id": "panw-pearson-onvue",
+        "url": "https://www.pearsonvue.com/us/en/paloaltonetworks/onvue.html",
+        "checked_at": "2026-09-29T17:10:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pearsonvue.com/us/en/paloaltonetworks/onvue.html",
+        "content_type": "text/html",
+        "page_title": "Palo Alto Networks, Inc. Online Exams with OnVUE | Requirements, Rules, and Setup",
+        "canonical_url": "https://www.pearsonvue.com/us/en/paloaltonetworks/onvue.html",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "083e73a6184f04940bf80ec1df3a560c3fd22612481c1b4b74722594dd6663d7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pearsonvue.com/us/en/paloaltonetworks/onvue.html",
+      "sha256": "8b7a0e38735b35edbe13a1910b173d8d63a729d195b76fda2ae93f9ba1fe74de",
+      "text_characters": 5857
+    }
+  ],
+  "added_source_ids": [
+    "ietf-dns-tcp-rfc7766",
+    "panw-pearson-onvue",
+    "panw-certification-faq",
+    "panw-pearson-program",
+    "panw-security-rules",
+    "panw-machine-agentic-pam-2026",
+    "aws-shared-responsibility",
+    "nist-authenticator-requirements",
+    "ietf-syslog-rfc5424",
+    "cisa-zero-trust-v2-pdf"
+  ],
+  "findings": [
+    {
+      "id": "panwcybersecurityapprentice-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Handbook citation was outdated",
+      "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current public cover is September2026 while guide cited July2025.",
+      "recommendation": "Refresh policy source date and relevant contract details, preserving personal booking and renewal limits.",
+      "disposition": "applied",
+      "source_id": "panw-certification-handbook",
+      "resolution": "Refresh policy source date and relevant contract details, preserving personal booking and renewal limits."
+    },
+    {
+      "id": "panwcybersecurityapprentice-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Public price exists outside the datasheet",
+      "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/certification-faq.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "May datasheet omits price, but September FAQ explicitly lists Apprentice foundational fee $150 before applicable extras.",
+      "recommendation": "Distinguish datasheet omissions from separately published current fee and actual booking total.",
+      "disposition": "applied",
+      "source_id": "panw-certification-faq",
+      "resolution": "Distinguish datasheet omissions from separately published current fee and actual booking total."
+    },
+    {
+      "id": "panwcybersecurityapprentice-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Subnet labels and rule presence do not establish effective isolation",
+      "url": "https://docs.paloaltonetworks.com/network-security/security-policy/administration/security-rules",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Predefined intrazone allow and first-match ordering can defeat assumed segmentation; logging is configurable.",
+      "recommendation": "Add original same-zone and shadowed-deny counterexamples with explicit model boundaries and proposed installed-state tests.",
+      "disposition": "applied",
+      "source_id": "panw-security-rules",
+      "resolution": "Add original same-zone and shadowed-deny counterexamples with explicit model boundaries and proposed installed-state tests."
+    },
+    {
+      "id": "panwcybersecurityapprentice-deep-4",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Base duration and question count remain unverified",
+      "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/apprentice-datasheet.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Complete datasheet gives detailed scope but does not publish either figure; no authenticated booking inspected.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "panw-machine-agentic-pam-2026",
+      "review": "Complete 14,594-character public article main through FAQs read. Avihay Nathan, September 17, 2026, advertised 8 minutes. Direct body contains sections absent from indexed excerpt; direct main used. Machine/agent identity, constrained access and separate attribution are vendor context. 109:1, 99%, near-90% and under-ten-hour claims not independently verified/adopted. Linked Gartner research not read; product/availability claims not converted into exam requirements. No demo, signup or subscription action."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 43,
+      "python_blocks_executed": 1,
+      "python_version": "3.13.14",
+      "public_example_sha256": "60ec4baf72c3b46723009e55e9f2f1edf871f8baf4b84a1ba65ecb2396422ef3",
+      "results": {
+        "passed": 43,
+        "checks": [
+          "four equal segments",
+          "addresses per segment",
+          "ordinary IPv4 host count, not cloud allocation",
+          "second segment boundary",
+          "host belongs to second segment",
+          "host outside first segment",
+          "segments do not overlap",
+          "most specific route wins",
+          "less specific internal route",
+          "default route for other destination",
+          "explicit web access",
+          "other interzone service denied",
+          "IoT explicitly denied",
+          "same zone default illustrates isolation gap",
+          "broad earlier allow shadows later deny",
+          "specific deny before broad allow",
+          "higher threshold outcomes",
+          "lower threshold outcomes",
+          "all observed events accounted for",
+          "high threshold observed precision",
+          "high threshold observed recall",
+          "low threshold observed precision",
+          "low threshold observed recall",
+          "two missing malicious events change population recall",
+          "telemetry coverage differs from detection recall",
+          "high threshold review minutes",
+          "lower threshold exceeds forty-minute budget",
+          "PRI separates facility and severity",
+          "highest PRI value",
+          "leading zero rejected",
+          "out-of-range PRI rejected",
+          "non-integer PRI rejected",
+          "offsets normalize to same instant",
+          "observed receive-minus-event seconds",
+          "negative delay signals clock/order question",
+          "naive timestamp rejected by chosen policy",
+          "intended scoped access",
+          "wrong audience denied",
+          "write outside grant denied",
+          "expiration boundary denied",
+          "revocation before expiry matters",
+          "unverified issuer denied",
+          "disabled owner denied"
+        ],
+        "high_threshold": {
+          "tp": 2,
+          "fp": 1,
+          "fn": 1,
+          "tn": 6
+        },
+        "low_threshold": {
+          "tp": 3,
+          "fp": 3,
+          "fn": 0,
+          "tn": 4
+        },
+        "population_recall": "2/5",
+        "observed_coverage": "10/12"
+      },
+      "execution_stdout": "{\n  \"passed\": 43,\n  \"checks\": [\n    \"four equal segments\",\n    \"addresses per segment\",\n    \"ordinary IPv4 host count, not cloud allocation\",\n    \"second segment boundary\",\n    \"host belongs to second segment\",\n    \"host outside first segment\",\n    \"segments do not overlap\",\n    \"most specific route wins\",\n    \"less specific internal route\",\n    \"default route for other destination\",\n    \"explicit web access\",\n    \"other interzone service denied\",\n    \"IoT explicitly denied\",\n    \"same zone default illustrates isolation gap\",\n    \"broad earlier allow shadows later deny\",\n    \"specific deny before broad allow\",\n    \"higher threshold outcomes\",\n    \"lower threshold outcomes\",\n    \"all observed events accounted for\",\n    \"high threshold observed precision\",\n    \"high threshold observed recall\",\n    \"low threshold observed precision\",\n    \"low threshold observed recall\",\n    \"two missing malicious events change population recall\",\n    \"telemetry coverage differs from detection recall\",\n    \"high threshold review minutes\",\n    \"lower threshold exceeds forty-minute budget\",\n    \"PRI separates facility and severity\",\n    \"highest PRI value\",\n    \"leading zero rejected\",\n    \"out-of-range PRI rejected\",\n    \"non-integer PRI rejected\",\n    \"offsets normalize to same instant\",\n    \"observed receive-minus-event seconds\",\n    \"negative delay signals clock/order question\",\n    \"naive timestamp rejected by chosen policy\",\n    \"intended scoped access\",\n    \"wrong audience denied\",\n    \"write outside grant denied\",\n    \"expiration boundary denied\",\n    \"revocation before expiry matters\",\n    \"unverified issuer denied\",\n    \"disabled owner denied\"\n  ],\n  \"high_threshold\": {\n    \"tp\": 2,\n    \"fp\": 1,\n    \"fn\": 1,\n    \"tn\": 6\n  },\n  \"low_threshold\": {\n    \"tp\": 3,\n    \"fp\": 3,\n    \"fn\": 0,\n    \"tn\": 4\n  },\n  \"population_recall\": \"2/5\",\n  \"observed_coverage\": \"10/12\"\n}",
+      "execution_boundary": "Actual standard-library Python CIDR, ordered-policy, fixed-ground-truth SOC, PRI/timestamp and trusted-label access exercises. No sockets, installed firewall, cloud, IdP, endpoint, TLS, authentication, credential, infrastructure or notification action.",
+      "model_limits": "Routing/policy models omit App-ID, NAT, wildcard rules, state and real forwarding. PRI/timestamp functions are partial teaching parsers. Detection labels and review durations are synthetic; known missing events cannot establish real unknown ground truth. Access booleans are trusted fixtures, not signature verification or revocation propagation."
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Base exam duration, item count, exact delivery eligibility and personal booking/renewal record remain unverified. Public fee and policy do not establish account-specific terms.",
+    "CISA landing/PDF and O’Reilly blocked; digital path shell and paid/course interiors unreviewed. Selected standards sections and publication abstracts are not whole-document or implementation audits.",
+    "Forty-three standard-library Python checks prove local arithmetic and chosen models only. No firewall, packet capture, TLS/PKI, IdP, SIEM, endpoint or cloud deployment; eight infrastructure activities and human review pending.",
+    "Vendor DNS example is not generalized into a transport rule; actual installed App-ID behavior remains unverified. Product directory/blog/marketing and NIST draft metadata are not an exam cutover or availability guarantee.",
+    "No installs, runtime/service/reboot/auth/permission changes, paid actions or external messages. Five reserved GitHub guides and disabled notification pilot untouched."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 179,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Actual standard-library Python CIDR, ordered-policy, fixed-ground-truth SOC, PRI/timestamp and trusted-label access exercises. No sockets, installed firewall, cloud, IdP, endpoint, TLS, authentication, credential, infrastructure or notification action.",
+    "passed": 43,
+    "python_blocks_executed": 1,
+    "python_version": "3.13.14",
+    "public_example_sha256": "60ec4baf72c3b46723009e55e9f2f1edf871f8baf4b84a1ba65ecb2396422ef3",
+    "results": {
+      "passed": 43,
+      "checks": [
+        "four equal segments",
+        "addresses per segment",
+        "ordinary IPv4 host count, not cloud allocation",
+        "second segment boundary",
+        "host belongs to second segment",
+        "host outside first segment",
+        "segments do not overlap",
+        "most specific route wins",
+        "less specific internal route",
+        "default route for other destination",
+        "explicit web access",
+        "other interzone service denied",
+        "IoT explicitly denied",
+        "same zone default illustrates isolation gap",
+        "broad earlier allow shadows later deny",
+        "specific deny before broad allow",
+        "higher threshold outcomes",
+        "lower threshold outcomes",
+        "all observed events accounted for",
+        "high threshold observed precision",
+        "high threshold observed recall",
+        "low threshold observed precision",
+        "low threshold observed recall",
+        "two missing malicious events change population recall",
+        "telemetry coverage differs from detection recall",
+        "high threshold review minutes",
+        "lower threshold exceeds forty-minute budget",
+        "PRI separates facility and severity",
+        "highest PRI value",
+        "leading zero rejected",
+        "out-of-range PRI rejected",
+        "non-integer PRI rejected",
+        "offsets normalize to same instant",
+        "observed receive-minus-event seconds",
+        "negative delay signals clock/order question",
+        "naive timestamp rejected by chosen policy",
+        "intended scoped access",
+        "wrong audience denied",
+        "write outside grant denied",
+        "expiration boundary denied",
+        "revocation before expiry matters",
+        "unverified issuer denied",
+        "disabled owner denied"
+      ],
+      "high_threshold": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 1,
+        "tn": 6
+      },
+      "low_threshold": {
+        "tp": 3,
+        "fp": 3,
+        "fn": 0,
+        "tn": 4
+      },
+      "population_recall": "2/5",
+      "observed_coverage": "10/12"
+    },
+    "execution_stdout": "{\n  \"passed\": 43,\n  \"checks\": [\n    \"four equal segments\",\n    \"addresses per segment\",\n    \"ordinary IPv4 host count, not cloud allocation\",\n    \"second segment boundary\",\n    \"host belongs to second segment\",\n    \"host outside first segment\",\n    \"segments do not overlap\",\n    \"most specific route wins\",\n    \"less specific internal route\",\n    \"default route for other destination\",\n    \"explicit web access\",\n    \"other interzone service denied\",\n    \"IoT explicitly denied\",\n    \"same zone default illustrates isolation gap\",\n    \"broad earlier allow shadows later deny\",\n    \"specific deny before broad allow\",\n    \"higher threshold outcomes\",\n    \"lower threshold outcomes\",\n    \"all observed events accounted for\",\n    \"high threshold observed precision\",\n    \"high threshold observed recall\",\n    \"low threshold observed precision\",\n    \"low threshold observed recall\",\n    \"two missing malicious events change population recall\",\n    \"telemetry coverage differs from detection recall\",\n    \"high threshold review minutes\",\n    \"lower threshold exceeds forty-minute budget\",\n    \"PRI separates facility and severity\",\n    \"highest PRI value\",\n    \"leading zero rejected\",\n    \"out-of-range PRI rejected\",\n    \"non-integer PRI rejected\",\n    \"offsets normalize to same instant\",\n    \"observed receive-minus-event seconds\",\n    \"negative delay signals clock/order question\",\n    \"naive timestamp rejected by chosen policy\",\n    \"intended scoped access\",\n    \"wrong audience denied\",\n    \"write outside grant denied\",\n    \"expiration boundary denied\",\n    \"revocation before expiry matters\",\n    \"unverified issuer denied\",\n    \"disabled owner denied\"\n  ],\n  \"high_threshold\": {\n    \"tp\": 2,\n    \"fp\": 1,\n    \"fn\": 1,\n    \"tn\": 6\n  },\n  \"low_threshold\": {\n    \"tp\": 3,\n    \"fp\": 3,\n    \"fn\": 0,\n    \"tn\": 4\n  },\n  \"population_recall\": \"2/5\",\n  \"observed_coverage\": \"10/12\"\n}",
+    "model_limits": "Routing/policy models omit App-ID, NAT, wildcard rules, state and real forwarding. PRI/timestamp functions are partial teaching parsers. Detection labels and review durations are synthetic; known missing events cannot establish real unknown ground truth. Access booleans are trusted fixtures, not signature verification or revocation propagation.",
+    "learning_catalog_consistency": "passed",
+    "unit_test_seconds": 34.203,
+    "strict_site_build_seconds": 27.57
+  },
+  "source_reading_boundaries": {
+    "nist-csf-2": "Complete current homepage main/resources read from 5,335-character capture. CSF 2.0 remains the named framework; AI analysis/reporting SP1353 initial-public-draft comment window through October 15, 2026 is separate. Linked framework PDFs/quick-start interiors and videos not read in this review.",
+    "panw-cybersecurity-apprentice-certification": "Complete 3,893-character public main read. Foundational audience, no work-experience recommendation, datasheet and official learning route. The public objective statement is short; automated monitor remains manual-review. Detailed scope independently verified in the linked PDF.",
+    "panw-cybersecurity-apprentice-datasheet": "Complete five-page May 2026 PDF read using web extraction and genuine PDF bytes/pypdf; pages 3–4 visually inspected via local rendering. Seven weights and 39 parent entries unchanged, with 13 nested identity items already represented inside four saved entries. English/ESL, entry-level audience and learning recommendations read; base duration/item count/price absent from this PDF. Generic HTTP helper decoded binary as text and is not the reading evidence. PDF hash receipt recorded.",
+    "panw-learning-center": "Seven-character loading shell only. No sign-in, course/path interior, entitlement, module count or duration verified.",
+    "panw-cybersecurity-academy": "Complete 4,192-character public main read. Free online-course entry and educator/learner routes advertised; no actual course interiors, completion, enrollment or duration audit. Population/testimonial marketing not adopted as learning evidence.",
+    "panw-certification-handbook": "Complete eight-page public PDF read, including final discipline/appeal tail. Current cover says September 2026, not the guide’s earlier July 2025. Scaled score, provisional results, English/ESL, test-center scheduling, 48-hour cancellation/rescheduling, minor/ID/accommodation references, retakes, validity and active same-track renewal conditions reviewed. No account, appointment, reporting or legal action. Real PDF hash captured; generic helper binary decode is not article text.",
+    "cisa-zero-trust-maturity-model": "HTTP 403 from direct and web reads. Current main unavailable; no bypass. Separate official version-2 PDF also blocked. Earlier general resource value remains a planned reading route.",
+    "cloud-security-alliance-guidance-v5": "Complete 2,766-character public landing read. Released July 15, 2024, updated August 26, 2025, 12 domains; full download asks login. Guidance explicitly is not the primary CCSK study material. No downloadable interior or complete cloud-control audit.",
+    "panw-technical-documentation": "Complete 2,627-character directory/featured main read. PAN-OS 12.2 Ceres and current product names are landing metadata, not Apprentice exam cutover or verified installed capabilities. Specific policy article read separately.",
+    "youtube-palo-alto-networks": "181-character title/footer only. No video playback or playlist audit.",
+    "pluralsight-cybersecurity-catalog": "Complete 13,456-character public catalog main read, not linked lessons. Current cards include Security Event Triage 10 courses/24h and Security Analysis 4 courses/7h; older exam labels and expired October 2025 offer still present. No Apprentice-specific complete alignment, quality, current price, entitlement or paid-interior claim.",
+    "oreilly-foundations-cybersecurity-second": "HTTP 403. Earlier May 2026 beginner-book and 9h31 metadata not reverified; no chapters, interior or quality audit.",
+    "ietf-dns-tcp-rfc7766": "Public 35,367-character capture; introduction and section 5 transport selection read, not whole RFC. General-purpose DNS supports UDP and TCP; TCP may be selected before UDP. Vendor policy page’s TCP-only DNS example not generalized into a DNS transport rule; actual installed App-ID definition unverified.",
+    "panw-pearson-onvue": "Complete 5,857-character public requirements main read. Program-specific OnVUE page exists and is linked by Pearson main; technology/space/ID/check-in/allowance details remain appointment-sensitive. No system test, install, device/network changes, account or booking. Page existence does not prove every exam/location’s eligibility.",
+    "panw-certification-faq": "Complete four-page September 2026 FAQ read via web and PDF extraction; page 2 fee table visually inspected. Apprentice foundational fee $150 before additional taxes/fees, plus retake/validity/renewal and badge procedure. No purchase, Credly/account creation or reporting. Genuine PDF receipt/hash recorded.",
+    "panw-pearson-program": "Complete 4,688-character public main read; page updated September 14, 2026. Appointment includes agreement, exam and survey; public OnVUE link and test-center routes. No authenticated View Exams detail, duration/item count or actual booking eligibility. Repeated XSOAR listing not adopted as an authoritative portfolio correction.",
+    "panw-security-rules": "Complete 10,206-character August 7, 2026 main including components/actions tables read. Session bidirectionality, ordered matching, intra/interzone defaults, pre-NAT addresses/post-NAT zone, optional logging and profile/action context. TCP-only DNS example qualified with RFC7766; contradictory generic maximum-rule wording and model-specific quotas not adopted. No device test; illustrative policy omits wildcard-address exceptions, App-ID, NAT and sessions.",
+    "panw-machine-agentic-pam-2026": "Complete 14,594-character public article main through FAQs read. Avihay Nathan, September 17, 2026, advertised 8 minutes. Direct body contains sections absent from indexed excerpt; direct main used. Machine/agent identity, constrained access and separate attribution are vendor context. 109:1, 99%, near-90% and under-ten-hour claims not independently verified/adopted. Linked Gartner research not read; product/availability claims not converted into exam requirements. No demo, signup or subscription action.",
+    "aws-shared-responsibility": "Complete 7,035-character official main read including practice prompts. EC2 guest OS/application responsibility versus more abstracted S3/DynamoDB, customer data/permissions and service-specific boundary. Provider example only; no cloud account/resource, controls assessment or universal other-provider contract claim.",
+    "panw-cybersecurity-practitioner-source-2": "Complete NIST SP800-207 publication landing/abstract/date read, not full linked PDF. August 2020 final; location/ownership not automatic trust, subject/device authentication and authorization distinguished. Existing source ID reused by exact URL; no fabricated new source identity.",
+    "nist-authenticator-requirements": "76,494-character public capture. Selected current requirements read: password main L24-69, out-of-band/OTP context, phishing/channel/verifier-name binding and replay/intent L303-330; not whole standard/assurance table. Supplementary official CSRC final landing confirms July 2025 final, not the earlier draft. Human-password guidance distinguished from machine-secret rotation; no production policy or authenticator change.",
+    "ietf-syslog-rfc5424": "73,222-character public capture. Read abstract/introduction, sections 5–6.2.3 plus start of hostname, 7.1 through first time-quality example, and 8.4–8.8 including congestion discussion. Not full 39-page RFC or separate TLS transport RFC. Message/transport separation, PRI, offset/time-quality and loss/replay/integrity/confidentiality limits support partial original exercises; no collector/network execution.",
+    "cisa-zero-trust-v2-pdf": "Direct genuine-PDF fetch and web open both HTTP 403. Indexed primary excerpt of section 5.6 cross-cutting capabilities read only; no full PDF or maturity-table review. Receipt preserves access failure; no bypass."
+  },
+  "public_examples": [
+    {
+      "language": "python",
+      "code": "import ipaddress\nimport json\nimport re\nfrom datetime import datetime, timezone\nfrom fractions import Fraction\n\nchecks = []\ndef check(name, actual, expected):\n    assert actual == expected, (name, actual, expected)\n    checks.append(name)\n\ndef rejects(action):\n    try:\n        action()\n    except ValueError:\n        return True\n    return False\n\nnetwork = ipaddress.ip_network('192.0.2.0/24')\nsegments = list(network.subnets(new_prefix=26))\ncheck('four equal segments', len(segments), 4)\ncheck('addresses per segment', [s.num_addresses for s in segments], [64] * 4)\ncheck('ordinary IPv4 host count, not cloud allocation', len(list(segments[0].hosts())), 62)\ncheck('second segment boundary', str(segments[1]), '192.0.2.64/26')\ncheck('host belongs to second segment', ipaddress.ip_address('192.0.2.70') in segments[1], True)\ncheck('host outside first segment', ipaddress.ip_address('192.0.2.70') in segments[0], False)\ncheck('segments do not overlap', segments[0].overlaps(segments[1]), False)\nroutes = [('0.0.0.0/0', 'gateway'), ('192.0.2.0/24', 'internal'),\n          ('192.0.2.70/32', 'discard')]\ndef route(address):\n    matches = [(ipaddress.ip_network(prefix).prefixlen, target)\n               for prefix, target in routes if ipaddress.ip_address(address) in ipaddress.ip_network(prefix)]\n    return max(matches)[1]\ncheck('most specific route wins', route('192.0.2.70'), 'discard')\ncheck('less specific internal route', route('192.0.2.71'), 'internal')\ncheck('default route for other destination', route('198.51.100.7'), 'gateway')\n\ndef policy(source_zone, target_zone, port, rules):\n    for source, target, ports, action in rules:\n        if source_zone == source and target_zone == target and (ports is None or port in ports):\n            return action\n    return 'allow' if source_zone == target_zone else 'deny'\n\nrules = [('users', 'apps', {443}, 'allow'), ('iot', 'apps', None, 'deny')]\ncheck('explicit web access', policy('users', 'apps', 443, rules), 'allow')\ncheck('other interzone service denied', policy('users', 'apps', 22, rules), 'deny')\ncheck('IoT explicitly denied', policy('iot', 'apps', 443, rules), 'deny')\ncheck('same zone default illustrates isolation gap', policy('users', 'users', 22, rules), 'allow')\nbroad = [('iot', 'apps', None, 'allow')]\ncheck('broad earlier allow shadows later deny', policy('iot', 'apps', 443, broad + rules), 'allow')\ncheck('specific deny before broad allow', policy('iot', 'apps', 443, rules + broad), 'deny')\n\nevents = [(90, True), (80, True), (45, True), (85, False), (50, False),\n          (40, False), (30, False), (20, False), (10, False), (0, False)]\ndef outcomes(threshold):\n    result = dict(tp=0, fp=0, fn=0, tn=0)\n    for score, malicious in events:\n        key = ('tp' if malicious else 'fp') if score >= threshold else ('fn' if malicious else 'tn')\n        result[key] += 1\n    return result\nhigh, low = outcomes(60), outcomes(40)\ncheck('higher threshold outcomes', high, dict(tp=2, fp=1, fn=1, tn=6))\ncheck('lower threshold outcomes', low, dict(tp=3, fp=3, fn=0, tn=4))\ncheck('all observed events accounted for', sum(high.values()), 10)\ncheck('high threshold observed precision', Fraction(high['tp'], high['tp'] + high['fp']), Fraction(2, 3))\ncheck('high threshold observed recall', Fraction(high['tp'], high['tp'] + high['fn']), Fraction(2, 3))\ncheck('low threshold observed precision', Fraction(low['tp'], low['tp'] + low['fp']), Fraction(1, 2))\ncheck('low threshold observed recall', Fraction(low['tp'], low['tp'] + low['fn']), Fraction(1, 1))\ncheck('two missing malicious events change population recall', Fraction(high['tp'], 5), Fraction(2, 5))\ncheck('telemetry coverage differs from detection recall', Fraction(len(events), 12), Fraction(5, 6))\ncheck('high threshold review minutes', (high['tp'] + high['fp']) * 8, 24)\ncheck('lower threshold exceeds forty-minute budget', (low['tp'] + low['fp']) * 8 > 40, True)\n\ndef priority(text):\n    if not re.fullmatch(r'<(?:0|[1-9][0-9]{0,2})>', text):\n        raise ValueError('PRI shape')\n    number = int(text[1:-1])\n    if number > 191:\n        raise ValueError('PRI range')\n    return divmod(number, 8)\ncheck('PRI separates facility and severity', priority('<134>'), (16, 6))\ncheck('highest PRI value', priority('<191>'), (23, 7))\ncheck('leading zero rejected', rejects(lambda: priority('<0134>')), True)\ncheck('out-of-range PRI rejected', rejects(lambda: priority('<192>')), True)\ncheck('non-integer PRI rejected', rejects(lambda: priority('<x>')), True)\n\ndef instant(text):\n    value = datetime.fromisoformat(text)\n    if value.utcoffset() is None:\n        raise ValueError('explicit offset required by this fixture')\n    return value.astimezone(timezone.utc)\nsent = instant('2026-09-29T08:00:00-04:00')\nreceived = instant('2026-09-29T12:00:07+00:00')\ncheck('offsets normalize to same instant', sent, instant('2026-09-29T12:00:00Z'))\ncheck('observed receive-minus-event seconds', (received - sent).total_seconds(), 7.0)\ncheck('negative delay signals clock/order question', (instant('2026-09-29T11:59:58Z') - sent).total_seconds() < 0, True)\ncheck('naive timestamp rejected by chosen policy', rejects(lambda: instant('2026-09-29T12:00:00')), True)\n\ngrant = dict(active=True, issuer_checked=True, audience='inventory', actions={'read'},\n             start=instant('2026-09-29T12:00:00Z'), end=instant('2026-09-29T12:15:00Z'), revoked=False)\ndef permitted(claims, audience, action, now):\n    return (claims['active'] and claims['issuer_checked'] and not claims['revoked']\n            and claims['audience'] == audience and action in claims['actions']\n            and claims['start'] <= now < claims['end'])\ncheck('intended scoped access', permitted(grant, 'inventory', 'read', sent), True)\ncheck('wrong audience denied', permitted(grant, 'billing', 'read', sent), False)\ncheck('write outside grant denied', permitted(grant, 'inventory', 'write', sent), False)\ncheck('expiration boundary denied', permitted(grant, 'inventory', 'read', grant['end']), False)\ncheck('revocation before expiry matters', permitted({**grant, 'revoked': True}, 'inventory', 'read', received), False)\ncheck('unverified issuer denied', permitted({**grant, 'issuer_checked': False}, 'inventory', 'read', sent), False)\ncheck('disabled owner denied', permitted({**grant, 'active': False}, 'inventory', 'read', sent), False)\n\nprint(json.dumps(dict(passed=len(checks), checks=checks, high_threshold=high,\n                     low_threshold=low, population_recall='2/5', observed_coverage='10/12'), indent=2))\n",
+      "boundary": "Actual standard-library Python CIDR, ordered-policy, fixed-ground-truth SOC, PRI/timestamp and trusted-label access exercises. No sockets, installed firewall, cloud, IdP, endpoint, TLS, authentication, credential, infrastructure or notification action."
+    }
+  ],
+  "manual_pdf_comparison": {
+    "reviewed_on": "2026-09-29",
+    "snapshot_unchanged": true,
+    "objective_counts": [
+      6,
+      7,
+      6,
+      3,
+      6,
+      7,
+      4
+    ],
+    "weights": [
+      16,
+      16,
+      14,
+      10,
+      13,
+      13,
+      18
+    ],
+    "nested_identity_counts": [
+      5,
+      4,
+      2,
+      2
+    ],
+    "pdf_receipts": [
+      {
+        "id": "panw-cybersecurity-apprentice-datasheet",
+        "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/apprentice-datasheet.pdf",
+        "sha256": "879de4e565b70afe34680413a0efd89bb1cc1d63f12be3e55441b0241a1f1b2b",
+        "pages": 5,
+        "method": "Public PDF bytes and local pypdf extraction; earlier generic HTTP helper binary-to-text output is not readable PDF evidence."
+      },
+      {
+        "id": "panw-certification-handbook",
+        "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
+        "sha256": "6b8e400f32b84eaa0eb612a1f0f3703444ed2ee9446d69dc2802094e1ee3be86",
+        "pages": 8,
+        "method": "Public PDF bytes and local pypdf extraction; earlier generic HTTP helper binary-to-text output is not readable PDF evidence."
+      },
+      {
+        "id": "panw-certification-faq",
+        "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/certification-faq.pdf",
+        "sha256": "48586156fbd49373f8abf6876e70beb7d83da6d606a651530ef9f4653654ca91",
+        "pages": 4,
+        "method": "Public PDF bytes and local pypdf extraction; earlier generic HTTP helper binary-to-text output is not readable PDF evidence."
+      },
+      {
+        "id": "cisa-zero-trust-v2-pdf",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "visual_pages": [
+      "datasheet pages3–4",
+      "FAQ page2"
+    ],
+    "automated_monitor": "manual-review; incomplete landing objective text",
+    "coverage_note": "Saved four identity entries incorporate the thirteen child topics; current guide teaches every component. No blueprint snapshot rewrite."
+  },
+  "catalog_comparison": [
+    {
+      "source_id": "panw-cybersecurity-apprentice-certification",
+      "boundary": "Complete public main; identity/audience and learning routes",
+      "access": "Public",
+      "time": "10–15 min estimate"
+    },
+    {
+      "source_id": "panw-cybersecurity-apprentice-datasheet",
+      "boundary": "Full five-page May 2026 PDF read; detailed current scope",
+      "access": "Public PDF",
+      "time": "30–45 min estimate"
+    },
+    {
+      "source_id": "panw-learning-center",
+      "boundary": "Seven-character loading shell; no modules, entitlement or duration verified",
+      "access": "Account/dynamic shell",
+      "time": "20–30 min planning; path unverified"
+    },
+    {
+      "source_id": "panw-cybersecurity-academy",
+      "boundary": "Public main advertises free online courses; no course interiors audited",
+      "access": "Public/free routes",
+      "time": "8–20 hr selected-study estimate"
+    },
+    {
+      "source_id": "panw-certification-handbook",
+      "boundary": "Full eight-page September 2026 edition read; supersedes older date",
+      "access": "Public PDF",
+      "time": "30–45 min estimate"
+    },
+    {
+      "source_id": "panw-certification-faq",
+      "boundary": "Full four-page September 2026 FAQ; listed fee and program rules",
+      "access": "Public PDF",
+      "time": "15–25 min estimate"
+    },
+    {
+      "source_id": "panw-pearson-program",
+      "boundary": "Public main and appointment-time distinction; no booking accessed",
+      "access": "Public/provider",
+      "time": "10–20 min estimate"
+    },
+    {
+      "source_id": "panw-pearson-onvue",
+      "boundary": "Full public requirements main; no system test, installation or booking",
+      "access": "Public/provider",
+      "time": "15–25 min estimate"
+    },
+    {
+      "source_id": "nist-csf-2",
+      "boundary": "Current homepage/resources read; AI analysis quick-start is a draft, not a new framework",
+      "access": "Public",
+      "time": "2–4 hr selected-study estimate"
+    },
+    {
+      "source_id": "cisa-zero-trust-maturity-model",
+      "boundary": "HTTP 403; current main unavailable",
+      "access": "Public source/access blocked",
+      "time": "1–2 hr earlier planning estimate"
+    },
+    {
+      "source_id": "cisa-zero-trust-v2-pdf",
+      "boundary": "HTTP 403; only indexed primary excerpt on cross-cutting capabilities read",
+      "access": "Public PDF/access blocked",
+      "time": "1–2 hr planned reading"
+    },
+    {
+      "source_id": "panw-cybersecurity-practitioner-source-2",
+      "boundary": "Publication abstract/date read; not the full architecture PDF",
+      "access": "Public/standard",
+      "time": "30–60 min selected-study estimate"
+    },
+    {
+      "source_id": "nist-authenticator-requirements",
+      "boundary": "Selected current password, OTP, phishing/replay sections; not entire standard",
+      "access": "Public/standard",
+      "time": "45–90 min selected-study estimate"
+    },
+    {
+      "source_id": "cloud-security-alliance-guidance-v5",
+      "boundary": "Public 12-domain landing read; download asks for login; no full document",
+      "access": "Public metadata/account download",
+      "time": "8–15 hr selected-reading estimate"
+    },
+    {
+      "source_id": "aws-shared-responsibility",
+      "boundary": "Complete provider main read; EC2 versus abstracted-service example",
+      "access": "Public/provider",
+      "time": "20–40 min estimate"
+    },
+    {
+      "source_id": "panw-technical-documentation",
+      "boundary": "Current product directory/main only; PAN-OS 12.2 metadata is not exam scope",
+      "access": "Public",
+      "time": "3–8 hr selected-study estimate"
+    },
+    {
+      "source_id": "panw-security-rules",
+      "boundary": "Complete August 7 main read; ordered rules, defaults and logging; DNS example qualified",
+      "access": "Public/product documentation",
+      "time": "30–60 min estimate"
+    },
+    {
+      "source_id": "ietf-dns-tcp-rfc7766",
+      "boundary": "Introduction and transport-selection section read; DNS uses UDP and TCP",
+      "access": "Public/standard",
+      "time": "20–40 min selected reading"
+    },
+    {
+      "source_id": "ietf-syslog-rfc5424",
+      "boundary": "Selected transport/header, time-quality and delivery/security sections read",
+      "access": "Public/standard",
+      "time": "45–90 min selected reading"
+    },
+    {
+      "source_id": "panw-machine-agentic-pam-2026",
+      "boundary": "Complete September 17 article main/FAQ read; vendor claims and linked research not independently verified",
+      "access": "Public/vendor blog",
+      "time": "15–25 min review estimate; publisher says 8 min"
+    },
+    {
+      "source_id": "youtube-palo-alto-networks",
+      "boundary": "Title/footer only; no playback or playlist review",
+      "access": "Public/video",
+      "time": "2–6 hr selected-study estimate"
+    },
+    {
+      "source_id": "pluralsight-cybersecurity-catalog",
+      "boundary": "Complete public catalog main read; listed paths, no paid lessons or alignment audit",
+      "access": "Paid/public metadata",
+      "time": "10–30 hr selected-study estimate"
+    },
+    {
+      "source_id": "oreilly-foundations-cybersecurity-second",
+      "boundary": "HTTP 403; earlier May 2026/9h31 listing not reverified",
+      "access": "Paid/access blocked",
+      "time": "Earlier 9 hr 31 min unverified"
+    }
+  ],
+  "recording_recovery": "Initial finalizer stopped on a Windows source-health append OSError before exam/review/evidence mutations. Existing JSON remained valid. Source health was reconstructed from HEAD plus the 23 actual receipts and atomically replaced; resumed only the remaining finalizer steps. Source catalog was not appended twice. Subsequent repository, catalog, unit and site checks passed."
+}
