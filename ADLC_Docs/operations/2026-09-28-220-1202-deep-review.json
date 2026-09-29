@@ -1,0 +1,1778 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "220-1202",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/220-1202-comptia-a-plus-core-2.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "1a7f65698c8da74195b64b94ddd998009f7423f5041ef23276094e9ec01b8f69",
+  "guide_after_sha256": "7d392d316f7caa90392de746fc5fa86cd21f6e81c6cdf08fe6e66884fd24a9b7",
+  "prior_records": {
+    "exam": {
+      "code": "220-1202",
+      "level": "beginner",
+      "vendor_id": "comptia",
+      "title": "CompTIA A+ Core 2 (V15)",
+      "status": "active",
+      "study_guide_url": "https://www.comptia.org/en-us/certifications/a/core-2-v15/",
+      "guide_path": "guides/220-1202-comptia-a-plus-core-2.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; CompTIA recommends about 12 months of hands-on IT support experience. Practice supported multi-OS selection/install/configuration, native Windows/Linux/macOS/mobile tools, identity and endpoint/SOHO/browser security, evidence-preserving malware response, controlled software troubleshooting, tickets/change/backup/recovery, safety/privacy/licensing, scripting review, and consent-based remote support. Pass 220-1201 and 220-1202 from the same V15 series."
+    },
+    "review": {
+      "id": "220-1202-2026-09-01-source-validation",
+      "exam_code": "220-1202",
+      "guide_path": "guides/220-1202-comptia-a-plus-core-2.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/220-1202-official-objectives.txt",
+      "blueprint_snapshot_sha256": "802af49e1791f2aca4dd6fa98b272100badecd2be659ab001325bfb8cb5503c9",
+      "objective_coverage": [
+        {
+          "objective_group": "Operating systems (28%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios 1 and 3",
+            "Labs 1–3, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security (28%)",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Software troubleshooting (23%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios 1–2",
+            "Labs 2, 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Operational procedures (21%)",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 3, 5, 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 8,
+        "reachable": 6,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All four weighted V15 domains are mapped to controlled support, three scenarios, eight safe labs and 40 original checks. Same-version and non-dated estimated-2028 lifecycle boundaries are explicit. All eight URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. No proprietary objective PDF, PBQs, course labs, or recalled questions are used."
+    },
+    "sources": [
+      {
+        "id": "comptia-certmaster-learn",
+        "title": "CompTIA CertMaster Learn",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "publisher": "CompTIA",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71",
+          "220-1201",
+          "220-1202",
+          "N10-009",
+          "SY0-701",
+          "XK0-006",
+          "CV0-004"
+        ],
+        "notes": "Official self-paced learning platform; exact certification availability, bundle, price, duration and access vary."
+      },
+      {
+        "id": "comptia-certmaster-labs",
+        "title": "CompTIA CertMaster Labs",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "publisher": "CompTIA",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71",
+          "220-1201",
+          "220-1202",
+          "N10-009",
+          "SY0-701",
+          "XK0-006",
+          "CV0-004"
+        ],
+        "notes": "Official browser-based practical environment; verify exam inclusion and current bundle details."
+      },
+      {
+        "id": "comptia-certmaster-practice",
+        "title": "CompTIA CertMaster Practice",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "publisher": "CompTIA",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71",
+          "220-1201",
+          "220-1202",
+          "N10-009",
+          "SY0-701",
+          "XK0-006",
+          "CV0-004"
+        ],
+        "notes": "Official adaptive assessment and remediation platform; not a source of actual exam items."
+      },
+      {
+        "id": "comptia-a-plus-v15-oreilly-book",
+        "title": "Complete A+ Guide to IT Hardware and Software V15",
+        "url": "https://www.oreilly.com/library/view/complete-a-guide/9780135439883/",
+        "publisher": "O'Reilly / Pearson / Cheryl Schmidt / Christopher Lee",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "220-1201",
+          "220-1202"
+        ],
+        "notes": "Current 10th-edition 2026 text covering both 220-1201 and 220-1202 with exercises; select the relevant core content."
+      },
+      {
+        "id": "comptia-220-1202-blueprint",
+        "title": "CompTIA A+ Core 2 V15",
+        "url": "https://www.comptia.org/en-us/certifications/a/core-2-v15/",
+        "publisher": "CompTIA",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "220-1202"
+        ],
+        "notes": "Canonical four-domain weighted outline, same-version rule, delivery details, and non-dated estimated-2028 lifecycle statement."
+      },
+      {
+        "id": "comptia-220-1202-pluralsight",
+        "title": "CompTIA A+ Core 2 220-1202 path",
+        "url": "https://www.pluralsight.com/paths/comptia-a-core-2-220-1202",
+        "publisher": "Pluralsight",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "220-1202"
+        ],
+        "notes": "Five courses, 12 hours and practice exam listed; current V15 domain route."
+      },
+      {
+        "id": "comptia-220-1202-linkedin",
+        "title": "CompTIA A+ Core 2 220-1202 Cert Prep",
+        "url": "https://www.linkedin.com/learning/comptia-a-plus-core-2-220-1202-cert-prep",
+        "publisher": "LinkedIn Learning / Total Seminars",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "220-1202"
+        ],
+        "notes": "Twenty-one hours 45 minutes and 22 quizzes listed, released September 2025."
+      },
+      {
+        "id": "comptia-220-1202-udemy-dion",
+        "title": "CompTIA A+ Core 2 220-1202 Full Course and Practice Exam",
+        "url": "https://www.udemy.com/course/comptia-a-core-2/",
+        "publisher": "Udemy / Jason Dion",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "220-1202"
+        ],
+        "notes": "Current V15 course and practice exam, updated August 2026; public search result did not expose a stable runtime during review."
+      },
+      {
+        "id": "comptia-220-1202-measureup",
+        "title": "CompTIA A+ Core 2 220-1202 practice test",
+        "url": "https://www.measureup.com/comptia-a-core-2-practice-test.html",
+        "publisher": "MeasureUp",
+        "authority_class": 4,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "220-1202"
+        ],
+        "notes": "Current 220-1202 practice product; use explanation-led attempts for remediation and verify current bank size/access."
+      },
+      {
+        "id": "comptia-220-1202-professor-messer",
+        "title": "Professor Messer A+ 220-1202 Core 2 training course",
+        "url": "https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/",
+        "publisher": "Professor Messer",
+        "authority_class": 4,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "220-1202"
+        ],
+        "notes": "Free 74-video V15 course with 13 hours 41 minutes listed; optional commercial notes/practice are separate."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "59c222c921e66508029e78f0f70e5d1d620091943f74963a9bd64e2df6e50be8",
+      "guide_sections": [
+        "1. Operating systems — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "75e458f9b7030c31e92dc7982b97b94df8d13a70352ed03d98f5edc9836d52b0",
+      "guide_sections": [
+        "1. Operating systems — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "efe5888194a02ad39e4237b5d28a6d0f6f86e061bfe95cfa0e21d2ef8c48a154",
+      "guide_sections": [
+        "1. Operating systems — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "e42bf9d22dd18e7134b1f795aaca9c67985df1ea6006a14d0699bd0468e3ba1f",
+      "guide_sections": [
+        "1. Operating systems — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "8e9954cd95badb74d39d5af040408f2b84f181528073f2d41c6c00caff861de9",
+      "guide_sections": [
+        "1. Operating systems — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "3898320620427c2e7c99cdeb6befe8478cd054b770a24886bc7411ab1f73c815",
+      "guide_sections": [
+        "1. Operating systems — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "221c4bb79f69855c4fc165202dce5e152a705673a78d4bc4824f0fc25f2d26bb",
+      "guide_sections": [
+        "1. Operating systems — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "9a7272613114589f37c81e73e845c0a80c6ef5f1ffa54f9820a39d41970a4b80",
+      "guide_sections": [
+        "1. Operating systems — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "690a543a07578f9611bd150d5c68ec7e5c57d2cb6512417b322dec511cf991e9",
+      "guide_sections": [
+        "1. Operating systems — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "280304b9c7a9447aefc9aa25c661df13b0cecb6cbea77f87540702e31d6e7fdb",
+      "guide_sections": [
+        "1. Operating systems — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 11,
+      "objective_sha256": "56ab527c9df3e45459ddc20d324373ba3c958e381c004552c8eadc09159a15b1",
+      "guide_sections": [
+        "1. Operating systems — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "03fa0d4db5e848381ea1b36c3471db2b9fdd8b0c5e25167234568b307def3d6f",
+      "guide_sections": [
+        "2. Security — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "8ac687d05f61ea6a57a1549392aaa5244f92551d173f6239302548b1f141c62e",
+      "guide_sections": [
+        "2. Security — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "d8f5fb9d271e87b4b019a796b8f1501f4139a427f23e743da5116967f716c87b",
+      "guide_sections": [
+        "2. Security — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "85500e24d54d8f52e2eb15c4e1c8f2e9161257cf2e689a3f3f1af62d721f7c55",
+      "guide_sections": [
+        "2. Security — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "a5aa381c7c775a219753048e545ddd698d34aa494940fabcb19701161ebf4910",
+      "guide_sections": [
+        "2. Security — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "4bbc5ade68b75961ccda3c002ba8371a42bc2a807160ceb3d155d7bc5d6cce8a",
+      "guide_sections": [
+        "2. Security — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "0ddcbbce5942c53e072f92df349a5fa8f00cec470913ec55d96b9a8d2822e941",
+      "guide_sections": [
+        "2. Security — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "d532e80bc60917e0073d4315af9fd8488311fdecfb6b69cce132e6fd7791476c",
+      "guide_sections": [
+        "2. Security — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "5ea859b18e3bfa372a7cf29d0bd186f308f52fab83f2e29cba4c2d15e0ce93af",
+      "guide_sections": [
+        "2. Security — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 10,
+      "objective_sha256": "7223a8ffc38678708077f54d201160db896691affa559aefa9febd8b433a8cda",
+      "guide_sections": [
+        "2. Security — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 11,
+      "objective_sha256": "deb64ddd46c6a6972efb1581881a35847eb9dcfa5dc947d47d1caf9067550626",
+      "guide_sections": [
+        "2. Security — 28%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "635bf687bd5c995f36333227a2f9030b29e585eefd0e1ce9990d4f99610f85c3",
+      "guide_sections": [
+        "3. Software troubleshooting — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "860f575f56352d4da62d0c2bc820954a265feb2d463b673ff688c394f8d8550e",
+      "guide_sections": [
+        "3. Software troubleshooting — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "03c715cd1c845b17f75e1c42d7e8046315a594b3f62e42659973aad0b7fa901b",
+      "guide_sections": [
+        "3. Software troubleshooting — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "2af97d49745f9a3c651c08f303af14546b9e62995e099e3e51d2f6ff401431aa",
+      "guide_sections": [
+        "3. Software troubleshooting — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "12882ca951577511c2518405ece1b38407cbfe6dff67387d96e5ae2207f111ff",
+      "guide_sections": [
+        "4. Operational procedures — 21%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "57df0ae17e8278f760237f5d8e426b83302ed77430761abdbebcf45c298113d7",
+      "guide_sections": [
+        "4. Operational procedures — 21%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "79ebf98d752272f02b7e15f45ab55ecece945c977840c39b322ee8969432f143",
+      "guide_sections": [
+        "4. Operational procedures — 21%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "f1c40976e74b80a4aa8c5a7dfc4c239a29baa20424a55695d591f826e671b8f0",
+      "guide_sections": [
+        "4. Operational procedures — 21%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "b4436d233cd4166d527b2337f9b206c4c27005fbcf28cf3d9b44bb098b41c6f9",
+      "guide_sections": [
+        "4. Operational procedures — 21%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "66253c66653e8aecacf469af005ca9bc13909032f4cebd354edeb251560e9251",
+      "guide_sections": [
+        "4. Operational procedures — 21%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "fbe5e0ed8addbb49de2c91f76fd4941dba39432b052dff5fcf3bd764fa79c32a",
+      "guide_sections": [
+        "4. Operational procedures — 21%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "f8250aaf3d19aff02f135af701c86d59a2f47b34a4ab7c1f6397f1cb781547f6",
+      "guide_sections": [
+        "4. Operational procedures — 21%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "00f6f9087be03ff8c14547ea373e85468dd8465f967c8d73a41784454329b703",
+      "guide_sections": [
+        "4. Operational procedures — 21%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 10,
+      "objective_sha256": "c3a931d2a3346283d0469ced177e841b9030bc5ae87594b71b83ebd352a7e139",
+      "guide_sections": [
+        "4. Operational procedures — 21%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "220-1202",
+        "title": "CompTIA A+ Core 2 (V15)",
+        "url": "https://www.comptia.org/en-us/certifications/a/core-2-v15/",
+        "guide_path": "guides/220-1202-comptia-a-plus-core-2.md",
+        "snapshot_path": "data\\objective-snapshots\\220-1202-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\220-1202-official-status.json",
+        "previous_sha256": "802af49e1791f2aca4dd6fa98b272100badecd2be659ab001325bfb8cb5503c9",
+        "current_sha256": "802af49e1791f2aca4dd6fa98b272100badecd2be659ab001325bfb8cb5503c9",
+        "previous_status_sha256": "bbb776765015681323811ccf55137d45bc5b22e7d091bda84e698cc068b19eed",
+        "current_status_sha256": "bbb776765015681323811ccf55137d45bc5b22e7d091bda84e698cc068b19eed",
+        "official_status": {
+          "skills_versions": [
+            "Exam version: V15; Core 1 and Core 2 exams must be taken from the same version, no mixing allowed",
+            "Exam series code: 220-1202 (Core 2)",
+            "Launch date: March 25, 2025",
+            "Number of questions: Maximum of 90 per exam, including multiple-choice (single and multiple response), drag-and-drop, and performance-based questions",
+            "Length of test: 90 minutes",
+            "Passing score: A+ Core 2: 700 (on a scale of 900)",
+            "Languages: English, German, and Japanese",
+            "Retirement: Usually three years after launch (estimated 2028)"
+          ],
+          "upcoming_announcements": [
+            "Retirement: Usually three years after launch (estimated 2028)"
+          ]
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 29,
+    "reachable": 27,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "comptia-certmaster-learn",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+      "checked_at": "2026-09-29T03:40:50.337431+00:00",
+      "health": {
+        "id": "comptia-certmaster-learn",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "checked_at": "2026-09-29T03:40:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CompTIA CertMaster Learn",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "duration_signals": [],
+        "signal_fingerprint": "65786e0e6431fcfe2e58ba358241f9cdb456812d6ade43fbd74876ee340cfef2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+      "sha256": "9bee308577f1977bd0f56dca8d4bae5b76f9c414dd50ad6eefa6ce5961e80e06",
+      "text_characters": 1692
+    },
+    {
+      "id": "comptia-certmaster-labs",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+      "checked_at": "2026-09-29T03:40:50.338010+00:00",
+      "health": {
+        "id": "comptia-certmaster-labs",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "checked_at": "2026-09-29T03:40:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CompTIA CertMaster Labs | CompTIA UK",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "duration_signals": [],
+        "signal_fingerprint": "4b7552b7bda3589184d03b2dfcb4182095d6fc6dfc7d5cfddea7650446126f7f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+      "sha256": "37496f082d45d2dc2e76ce2d12a62de9f2e4b77bcf222b42cceb0c52f93d10e6",
+      "text_characters": 1552
+    },
+    {
+      "id": "comptia-certmaster-practice",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+      "checked_at": "2026-09-29T03:40:50.338388+00:00",
+      "health": {
+        "id": "comptia-certmaster-practice",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "checked_at": "2026-09-29T03:40:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CertMaster Practice",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "duration_signals": [],
+        "signal_fingerprint": "87ff57590e3cf2e101143725a522c14d9cbd91afd9e8d02bb27f86e7af1751c4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+      "sha256": "8d8ab7b20b45cc2623ce1437a79c68745eeb183d210d537fd32ce9839f994bf9",
+      "text_characters": 3505
+    },
+    {
+      "id": "comptia-a-plus-v15-oreilly-book",
+      "url": "https://www.oreilly.com/library/view/complete-a-guide/9780135439883/",
+      "checked_at": "2026-09-29T03:40:52.567531+00:00",
+      "health": {
+        "id": "comptia-a-plus-v15-oreilly-book",
+        "url": "https://www.oreilly.com/library/view/complete-a-guide/9780135439883/",
+        "checked_at": "2026-09-29T03:40:52+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/complete-a-guide/9780135439883/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "comptia-220-1202-blueprint",
+      "url": "https://www.comptia.org/en-us/certifications/a/core-2-v15/",
+      "checked_at": "2026-09-29T03:40:52.980733+00:00",
+      "health": {
+        "id": "comptia-220-1202-blueprint",
+        "url": "https://www.comptia.org/en-us/certifications/a/core-2-v15/",
+        "checked_at": "2026-09-29T03:40:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/certifications/a/core-2-v15/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "A+ Core 2 Certification V15 (New Version) | CompTIA",
+        "canonical_url": "https://www.comptia.org/en-us/certifications/a/core-2-v15/",
+        "duration_signals": [
+          "20 hours",
+          "25 hours",
+          "40 hours",
+          "60 hours",
+          "90 minutes"
+        ],
+        "signal_fingerprint": "4bc6a6d923ddb1d31590d003d83bfaefe307226957f536786917134980154531",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/certifications/a/core-2-v15/",
+      "sha256": "cd49b39a1492435746d062353788c11dc6373c2e38a76b5f80720a894368f65f",
+      "text_characters": 5566
+    },
+    {
+      "id": "comptia-220-1202-pluralsight",
+      "url": "https://www.pluralsight.com/paths/comptia-a-core-2-220-1202",
+      "checked_at": "2026-09-29T03:40:53.094684+00:00",
+      "health": {
+        "id": "comptia-220-1202-pluralsight",
+        "url": "https://www.pluralsight.com/paths/comptia-a-core-2-220-1202",
+        "checked_at": "2026-09-29T03:40:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/comptia-a-core-2-220-1202",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "CompTIA A+ Core 2 (220-1202)",
+        "canonical_url": "https://www.pluralsight.com/paths/comptia-a-core-2-220-1202",
+        "duration_signals": [
+          "12 Hours"
+        ],
+        "signal_fingerprint": "4a4db0e214387158ea15dde34f47e1678c3cfcffba6da33636e09d69389f4de8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/comptia-a-core-2-220-1202",
+      "sha256": "cd0fbc526ed5aa7b971a1c405e074b9d219201fd06e86780667e946c9fcfa9e9",
+      "text_characters": 5430
+    },
+    {
+      "id": "comptia-220-1202-linkedin",
+      "url": "https://www.linkedin.com/learning/comptia-a-plus-core-2-220-1202-cert-prep",
+      "checked_at": "2026-09-29T03:40:53.095249+00:00",
+      "health": {
+        "id": "comptia-220-1202-linkedin",
+        "url": "https://www.linkedin.com/learning/comptia-a-plus-core-2-220-1202-cert-prep",
+        "checked_at": "2026-09-29T03:40:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.linkedin.com/learning/comptia-a-plus-core-2-220-1202-cert-prep",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CompTIA A+ Core 2 (220-1202) Cert Prep Online Class | LinkedIn Learning, formerly Lynda.com",
+        "canonical_url": "https://www.linkedin.com/learning/comptia-a-plus-core-2-220-1202-cert-prep",
+        "duration_signals": [
+          "PT10M1S",
+          "PT10M20S",
+          "PT10M21S",
+          "PT10M31S",
+          "PT10M39S",
+          "PT10M42S",
+          "PT10M47S",
+          "PT10M48S",
+          "PT10M50S",
+          "PT10M5S",
+          "PT11M14S",
+          "PT11M19S",
+          "PT11M27S",
+          "PT11M2S",
+          "PT11M41S",
+          "PT11M42S",
+          "PT11M56S",
+          "PT11M59S",
+          "PT11M6S",
+          "PT12M",
+          "PT12M13S",
+          "PT12M25S",
+          "PT12M32S",
+          "PT12M43S",
+          "PT12M44S",
+          "PT12M45S",
+          "PT12M48S",
+          "PT12M5S",
+          "PT13M20S",
+          "PT13M23S"
+        ],
+        "signal_fingerprint": "3b41bde0be1c9a531f7fab6afad42f15475a82d6b214f275e7abe42758bd77a2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.linkedin.com/learning/comptia-a-plus-core-2-220-1202-cert-prep",
+      "sha256": "76588ba113dcb2249a9219a7e87c5c897942a745f01d2acbb54c966d523f0922",
+      "text_characters": 9610
+    },
+    {
+      "id": "comptia-220-1202-udemy-dion",
+      "url": "https://www.udemy.com/course/comptia-a-core-2/",
+      "checked_at": "2026-09-29T03:40:55.404034+00:00",
+      "health": {
+        "id": "comptia-220-1202-udemy-dion",
+        "url": "https://www.udemy.com/course/comptia-a-core-2/",
+        "checked_at": "2026-09-29T03:40:55+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/comptia-a-core-2/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "comptia-220-1202-measureup",
+      "url": "https://www.measureup.com/comptia-a-core-2-practice-test.html",
+      "checked_at": "2026-09-29T03:40:55.550913+00:00",
+      "health": {
+        "id": "comptia-220-1202-measureup",
+        "url": "https://www.measureup.com/comptia-a-core-2-practice-test.html",
+        "checked_at": "2026-09-29T03:40:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/comptia-a-core-2-practice-test.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Practice Test 220-1202: CompTIA A+ Core 2",
+        "canonical_url": "https://www.measureup.com/comptia-a-core-2-practice-test.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3e4ad4a08e0ce781f2c39831ca85d415dd3dc5fd0b54ce3cdefa4b134c528365",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/comptia-a-core-2-practice-test.html",
+      "sha256": "935244488c9d93d869da3b13120720130ba5080cce26965764fb3a65f4b25921",
+      "text_characters": 16759
+    },
+    {
+      "id": "comptia-220-1202-professor-messer",
+      "url": "https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/",
+      "checked_at": "2026-09-29T03:40:55.762186+00:00",
+      "health": {
+        "id": "comptia-220-1202-professor-messer",
+        "url": "https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/",
+        "checked_at": "2026-09-29T03:40:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Professor Messer’s CompTIA A+ 220-1202 Core 2 Training Course",
+        "canonical_url": "https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/",
+        "duration_signals": [
+          "13 hours and 41 minutes"
+        ],
+        "signal_fingerprint": "08a2dac67d4943af49783907e04fe0a842e9caa86311cd7779d12df00229817f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/",
+      "sha256": "b7fa0b3441c639c8ba29c556e903a82006f2a00c5a20dbc453392fbf2e811c84",
+      "text_characters": 19189
+    },
+    {
+      "id": "comptia-partner-resources",
+      "url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+      "checked_at": "2026-09-29T03:45:09.607721+00:00",
+      "health": {
+        "id": "comptia-partner-resources",
+        "url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+        "checked_at": "2026-09-29T03:45:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Partner Resources",
+        "canonical_url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+        "duration_signals": [],
+        "signal_fingerprint": "be631fe463c6d0a7c5e51dfcf4ec7e4813a2eeae48c6ca7bc993534faf97d57e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+      "sha256": "14576ecf6117f8f05f0462c05865386b5da334d76d89e1da2474161210a21a35",
+      "text_characters": 4747
+    },
+    {
+      "id": "windows10-release-info",
+      "url": "https://learn.microsoft.com/en-us/windows/release-health/release-information",
+      "checked_at": "2026-09-29T03:45:09.608485+00:00",
+      "health": {
+        "id": "windows10-release-info",
+        "url": "https://learn.microsoft.com/en-us/windows/release-health/release-information",
+        "checked_at": "2026-09-29T03:45:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/windows/release-health/release-information",
+        "content_type": "text/html",
+        "page_title": "Windows 10 - release information",
+        "canonical_url": "https://learn.microsoft.com/en-us/windows/release-health/release-information",
+        "duration_signals": [],
+        "signal_fingerprint": "0fb8f0407d5ab4cbe9d19b262f577126fc6765451caa02944915a3a40abdcdbe",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/release-health/release-information",
+      "sha256": "dd01b727e4ca0449c0e72eb23cccd32e2012e7cfef5a5f2b47b218c25cc6572a",
+      "text_characters": 83234
+    },
+    {
+      "id": "windows10-ended-support",
+      "url": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/windows-10-support-has-ended-on-october-14-2025",
+      "checked_at": "2026-09-29T03:45:09.608917+00:00",
+      "health": {
+        "id": "windows10-ended-support",
+        "url": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/windows-10-support-has-ended-on-october-14-2025",
+        "checked_at": "2026-09-29T03:45:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/windows-10-support-has-ended-on-october-14-2025",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Windows 10 support has ended on October 14, 2025 | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/windows-10-support-has-ended-on-october-14-2025",
+        "duration_signals": [],
+        "signal_fingerprint": "373a6e2c6ece23609136706f9ba1591e797ca0611ef21644e7a9da49ecf30319",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/windows-10-support-has-ended-on-october-14-2025",
+      "sha256": "e1c5cfda20b5c641773580482cbf76c0a8cc521d1e994830bf785bfb942a9ecd",
+      "text_characters": 6270
+    },
+    {
+      "id": "windows-device-encryption",
+      "url": "https://support.microsoft.com/en-us/windows/security/encryption/device-encryption-in-windows",
+      "checked_at": "2026-09-29T03:45:11.383362+00:00",
+      "health": {
+        "id": "windows-device-encryption",
+        "url": "https://support.microsoft.com/en-us/windows/security/encryption/device-encryption-in-windows",
+        "checked_at": "2026-09-29T03:45:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/windows/security/encryption/device-encryption-in-windows",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Device Encryption in Windows | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/windows/security/encryption/device-encryption-in-windows",
+        "duration_signals": [],
+        "signal_fingerprint": "e2ab15243d638dc30d8eb801157d32db895babfe675e9d1ff0fd7fa73b711a9e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/windows/security/encryption/device-encryption-in-windows",
+      "sha256": "7b2c1df60bbaab2b90a68609d2849374a4be1ab659f8710930241ffad688206c",
+      "text_characters": 2372
+    },
+    {
+      "id": "windows-bitlocker-recovery",
+      "url": "https://learn.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan",
+      "checked_at": "2026-09-29T03:45:11.511356+00:00",
+      "health": {
+        "id": "windows-bitlocker-recovery",
+        "url": "https://learn.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan",
+        "checked_at": "2026-09-29T03:45:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/recovery-overview",
+        "content_type": "text/html",
+        "page_title": "BitLocker recovery overview",
+        "canonical_url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/recovery-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "e7654abaa3f7ffeeee2e741d27b11a9a1f3631f312f6953a18f58386a74ee39c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/recovery-overview",
+      "sha256": "934829acf7fb468930aa3d6408b6bcf7944b62f7b7cdf533cc0a530fed440351",
+      "text_characters": 18639
+    },
+    {
+      "id": "windows-rdp-support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/how-to-use-remote-desktop",
+      "checked_at": "2026-09-29T03:45:12.061750+00:00",
+      "health": {
+        "id": "windows-rdp-support",
+        "url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/how-to-use-remote-desktop",
+        "checked_at": "2026-09-29T03:45:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/how-to-use-remote-desktop",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "How to use Remote Desktop | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/how-to-use-remote-desktop",
+        "duration_signals": [],
+        "signal_fingerprint": "b54e44e39d41a48c5453c696c62aa8ea63328e75446741b5ed3ec8bdadaf97f4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/how-to-use-remote-desktop",
+      "sha256": "6bea99fa3cedbfeff84f7ef748f139ead1999efd54e5a34d672f12292718bc8b",
+      "text_characters": 3725
+    },
+    {
+      "id": "windows-system-restore",
+      "url": "https://support.microsoft.com/en-us/windows/experience/backup-recovery/system-restore",
+      "checked_at": "2026-09-29T03:45:12.279973+00:00",
+      "health": {
+        "id": "windows-system-restore",
+        "url": "https://support.microsoft.com/en-us/windows/experience/backup-recovery/system-restore",
+        "checked_at": "2026-09-29T03:45:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/windows/experience/backup-recovery/system-restore",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "System Restore | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/windows/experience/backup-recovery/system-restore",
+        "duration_signals": [],
+        "signal_fingerprint": "212e40ad2c421412376e5e97c797953563713471c738c6b671e8b84c7081fad9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/windows/experience/backup-recovery/system-restore",
+      "sha256": "afa7a158a42bb9a60243608cd1c46eca2c868cef8e923c4ca4344077e0143093",
+      "text_characters": 2871
+    },
+    {
+      "id": "windows-system-protection",
+      "url": "https://support.microsoft.com/en-us/windows/experience/backup-recovery/system-protection",
+      "checked_at": "2026-09-29T03:45:12.806516+00:00",
+      "health": {
+        "id": "windows-system-protection",
+        "url": "https://support.microsoft.com/en-us/windows/experience/backup-recovery/system-protection",
+        "checked_at": "2026-09-29T03:45:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/windows/experience/backup-recovery/system-protection",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "System Protection | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/windows/experience/backup-recovery/system-protection",
+        "duration_signals": [],
+        "signal_fingerprint": "e5765541109d62906a7f0a83365c501411c87a6dbd05ba9504c18b7d51ea2550",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/windows/experience/backup-recovery/system-protection",
+      "sha256": "28eb7900849b48c4dad7c258c27d81b9132484f1ab7f90edb3d0673758e04189",
+      "text_characters": 2420
+    },
+    {
+      "id": "windows-robocopy-reference",
+      "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy",
+      "checked_at": "2026-09-29T03:45:12.853272+00:00",
+      "health": {
+        "id": "windows-robocopy-reference",
+        "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy",
+        "checked_at": "2026-09-29T03:45:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy",
+        "content_type": "text/html",
+        "page_title": "Robocopy",
+        "canonical_url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy",
+        "duration_signals": [],
+        "signal_fingerprint": "cfb1bd586373108f90da75418251aab1fa56594dd7c8ea709153f529dc5b18f3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy",
+      "sha256": "d22b63a3b5d3b1888c69a48b4997d673aa8cf1c2179c287f659d20bb404fc60b",
+      "text_characters": 17276
+    },
+    {
+      "id": "windows-icacls-reference",
+      "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/icacls",
+      "checked_at": "2026-09-29T03:45:13.038287+00:00",
+      "health": {
+        "id": "windows-icacls-reference",
+        "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/icacls",
+        "checked_at": "2026-09-29T03:45:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/icacls",
+        "content_type": "text/html",
+        "page_title": "icacls",
+        "canonical_url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/icacls",
+        "duration_signals": [],
+        "signal_fingerprint": "694c9a0e22ebc08dd83660ec77c23f46ce9bf0e7f1a0fe2a58e8888e979985f8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/icacls",
+      "sha256": "b367361799a19ad520509b092956bb335565b5854cb7f99b322f06ccd99eee71",
+      "text_characters": 6272
+    },
+    {
+      "id": "windows-sfc-reference",
+      "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/sfc",
+      "checked_at": "2026-09-29T03:45:13.393007+00:00",
+      "health": {
+        "id": "windows-sfc-reference",
+        "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/sfc",
+        "checked_at": "2026-09-29T03:45:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/sfc",
+        "content_type": "text/html",
+        "page_title": "sfc",
+        "canonical_url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/sfc",
+        "duration_signals": [],
+        "signal_fingerprint": "0be564f605ea0504b8206493b10c85d3047ee8918a56825c6860040af38ae334",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/sfc",
+      "sha256": "ea715030d1a56d211f1acab3d82ce1f7e24a823cf7d8d5beefba0fbdd5ecdb95",
+      "text_characters": 2539
+    },
+    {
+      "id": "powershell-execution-policy",
+      "url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies",
+      "checked_at": "2026-09-29T03:45:13.551812+00:00",
+      "health": {
+        "id": "powershell-execution-policy",
+        "url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies",
+        "checked_at": "2026-09-29T03:45:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.6",
+        "content_type": "text/html",
+        "page_title": "about_Execution_Policies - PowerShell",
+        "canonical_url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.6",
+        "duration_signals": [],
+        "signal_fingerprint": "5183e09fbf38f2f5fe62a18d4bffb5dea73565067c374aadb8b033bc8b7d7e14",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.6",
+      "sha256": "cb13a4ccb5eac319008d761f83867a58b255e6adb3557cf5dd8fcebeb80a8579",
+      "text_characters": 13708
+    },
+    {
+      "id": "nist-800-63b-4",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "checked_at": "2026-09-29T03:45:13.717508+00:00",
+      "health": {
+        "id": "nist-800-63b-4",
+        "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+        "checked_at": "2026-09-29T03:45:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+        "content_type": "text/html",
+        "page_title": "NIST Special Publication 800-63B",
+        "canonical_url": "/800-63-4/sp800-63b.html",
+        "duration_signals": [
+          "1 hour",
+          "10 minutes",
+          "12 hours",
+          "15 minutes",
+          "24 hours",
+          "24 hours and 10 minutes"
+        ],
+        "signal_fingerprint": "5ddbbdf4604797a1f84ba2134130ae1d3b228955b507c77d2c1b48e269f67805",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "sha256": "d8bf232f25dc2d2275fdbda764cb73c9abff9a6b44e6b8e2dc7ad32ba6d06932",
+      "text_characters": 253608
+    },
+    {
+      "id": "apple-filevault-mac",
+      "url": "https://support.apple.com/en-gb/guide/mac-help/mh11785/26/mac",
+      "checked_at": "2026-09-29T03:45:13.893654+00:00",
+      "health": {
+        "id": "apple-filevault-mac",
+        "url": "https://support.apple.com/en-gb/guide/mac-help/mh11785/26/mac",
+        "checked_at": "2026-09-29T03:45:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.apple.com/en-gb/guide/mac-help/mh11785/26/mac",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Protect data on your Mac with FileVault",
+        "canonical_url": "https://support.apple.com/en-gb/guide/mac-help/mh11785/mac",
+        "duration_signals": [],
+        "signal_fingerprint": "54666c218cb0343560acd7e23d8160fa4bf63163698936edeacaa1dc59cc3b53",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.apple.com/en-gb/guide/mac-help/mh11785/26/mac",
+      "sha256": "5552e3a55bf1a9e9627711974ea80c00e8b29bc734e282154b67cafe999e0000",
+      "text_characters": 9714
+    },
+    {
+      "id": "gnu-numeric-permissions",
+      "url": "https://www.gnu.org/software/coreutils/manual/html_node/Numeric-Modes.html",
+      "checked_at": "2026-09-29T03:45:14.807063+00:00",
+      "health": {
+        "id": "gnu-numeric-permissions",
+        "url": "https://www.gnu.org/software/coreutils/manual/html_node/Numeric-Modes.html",
+        "checked_at": "2026-09-29T03:45:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.gnu.org/software/coreutils/manual/html_node/Numeric-Modes.html",
+        "content_type": "text/html",
+        "page_title": "Numeric Modes (GNU Coreutils 9.12)",
+        "canonical_url": "https://www.gnu.org/software/coreutils/manual/html_node/Numeric-Modes.html",
+        "duration_signals": [],
+        "signal_fingerprint": "700d2c37449578e774c31998ca5e1b7ec48b742bfba4aed0d47fbd81a2331a94",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.gnu.org/software/coreutils/manual/html_node/Numeric-Modes.html",
+      "sha256": "7d3b8b0a08cefcd2234c88091905cf1a7b780dc76441196cc405c8dfa893c2a3",
+      "text_characters": 2181
+    },
+    {
+      "id": "az-802-doc-bitlocker",
+      "url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/",
+      "checked_at": "2026-09-29T03:46:20.227870+00:00",
+      "health": {
+        "id": "az-802-doc-bitlocker",
+        "url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/",
+        "checked_at": "2026-09-29T03:46:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/",
+        "content_type": "text/html",
+        "page_title": "BitLocker Overview",
+        "canonical_url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/",
+        "duration_signals": [],
+        "signal_fingerprint": "76dce731b1706a1ffc67ad065d6a0ae3e86be4c2069f436a0c4d4d58cedcd3db",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/",
+      "sha256": "326a2a5fb503c4fdc8b895385345a7a2ab2afa2f635272ee0c28c2394bd1920a",
+      "text_characters": 11676
+    },
+    {
+      "id": "md102-backup-blog",
+      "url": "https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-settings-backup-becoming-a-new-resilience-baseline/4530757",
+      "checked_at": "2026-09-29T03:46:20.228423+00:00",
+      "health": {
+        "id": "md102-backup-blog",
+        "url": "https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-settings-backup-becoming-a-new-resilience-baseline/4530757",
+        "checked_at": "2026-09-29T03:46:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-settings-backup-becoming-a-new-resilience-baseline/4530757",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Windows settings backup becoming a new resilience baseline - Windows IT Pro Blog",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-settings-backup-becoming-a-new-resilience-baseline/4530757",
+        "duration_signals": [],
+        "signal_fingerprint": "c576d61c9c2de47d7347841706be83194d4669305d4caa2bc37c15bb93ee5e8e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-settings-backup-becoming-a-new-resilience-baseline/4530757",
+      "sha256": "24dbe85046ab2cbfd7d44fb1089e4f218e0ea449fb00ffef1c0ee66ee7adaaf5",
+      "text_characters": 80
+    },
+    {
+      "id": "comptia-220-1202-objectives-pdf",
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/cefedfb2b8a511ef809306d06d323538?checkExpiry=false",
+      "checked_at": "2026-09-29T03:46:27.568011+00:00",
+      "health": {
+        "id": "comptia-220-1202-objectives-pdf",
+        "url": "https://lecbyo.files.cmp.optimizely.com/download/cefedfb2b8a511ef809306d06d323538?checkExpiry=false",
+        "checked_at": "2026-09-29T03:46:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://lecbyo.files.cmp.optimizely.com/download/cefedfb2b8a511ef809306d06d323538?checkExpiry=false",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://lecbyo.files.cmp.optimizely.com/download/cefedfb2b8a511ef809306d06d323538?checkExpiry=false",
+      "sha256": "1bc5195327296edd92948b5f3a950fee35ac6807cec9b244b0b2e54e72d11bd2",
+      "bytes": 274482,
+      "pdf_pages": 20,
+      "text_characters": 38139
+    },
+    {
+      "id": "nist-800-88r2",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "checked_at": "2026-09-29T03:46:29.516088+00:00",
+      "health": {
+        "id": "nist-800-88r2",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+        "checked_at": "2026-09-29T03:46:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "sha256": "39bb805c72723ed74f08e5806cd8463ca2554a62abb4f97b9d19c0398a8a7c55",
+      "bytes": 983677,
+      "pdf_pages": 48,
+      "text_characters": 112546
+    },
+    {
+      "id": "comptia-certmaster-perform",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/perform/",
+      "checked_at": "2026-09-29T03:53:47.055846+00:00",
+      "health": {
+        "id": "comptia-certmaster-perform",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/perform/",
+        "checked_at": "2026-09-29T03:53:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/perform/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CertMaster Perform",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/perform/",
+        "duration_signals": [],
+        "signal_fingerprint": "9f733cd9323fb2d342292e1f99473168f956344ae0963b65ab179e22ee2a16a8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/perform/",
+      "sha256": "2f735ec2c8262941eaf049c2c35d34023cc1a6f0aacd7c301c41547a7fc72e7d",
+      "text_characters": 2011
+    }
+  ],
+  "added_source_ids": [
+    "comptia-220-1202-objectives-pdf",
+    "windows10-release-info",
+    "windows10-ended-support",
+    "windows-device-encryption",
+    "windows-bitlocker-recovery",
+    "windows-rdp-support",
+    "windows-system-restore",
+    "windows-system-protection",
+    "windows-robocopy-reference",
+    "windows-icacls-reference",
+    "windows-sfc-reference",
+    "powershell-execution-policy",
+    "nist-800-88r2",
+    "apple-filevault-mac",
+    "gnu-numeric-permissions",
+    "comptia-certmaster-perform"
+  ],
+  "findings": [
+    {
+      "id": "2201202-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Summary coverage omitted cloud productivity and AI depth",
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/cefedfb2b8a511ef809306d06d323538?checkExpiry=false",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "220-1202"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The full outline includes numbered cloud-productivity and AI objectives beyond the main-page summary.",
+      "recommendation": "Map all 36 numbered objectives and add original identity/license/sharing and AI-review cases, command/feature distinctions and 42 answers.",
+      "disposition": "applied",
+      "source_id": "comptia-220-1202-objectives-pdf",
+      "resolution": "Map all 36 numbered objectives and add original identity/license/sharing and AI-review cases, command/feature distinctions and 42 answers."
+    },
+    {
+      "id": "2201202-deep-2",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Exam scope and OS lifecycle needed separation",
+      "url": "https://learn.microsoft.com/en-us/windows/release-health/release-information",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "220-1202"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Windows 10 ordinary end of support coexists with specific ESU and LTSC conditions; Enterprise and IoT LTSC 2021 have different dates.",
+      "recommendation": "Explain the distinction and require exact edition/version/enrollment checks; do not infer deployment support from exam wording.",
+      "disposition": "applied",
+      "source_id": "windows10-release-info",
+      "resolution": "Explain the distinction and require exact edition/version/enrollment checks; do not infer deployment support from exam wording."
+    },
+    {
+      "id": "2201202-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Edition labels alone cannot establish encryption protection",
+      "url": "https://support.microsoft.com/en-us/windows/security/encryption/device-encryption-in-windows",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "220-1202"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Device Encryption can be available on eligible Home devices; recovery depends on configuration and the authorized recovery route.",
+      "recommendation": "Separate Home Device Encryption, full BitLocker, active protection and recovery; no keys read or configuration changes executed.",
+      "disposition": "applied",
+      "source_id": "windows-device-encryption",
+      "resolution": "Separate Home Device Encryption, full BitLocker, active protection and recovery; no keys read or configuration changes executed."
+    },
+    {
+      "id": "2201202-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Malware sequence and recovery boundaries needed precision",
+      "url": "https://support.microsoft.com/en-us/windows/experience/backup-recovery/system-restore",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "220-1202"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "PDF 2.6 explicitly includes Windows Home System Restore milestones; Microsoft describes system-state restoration separately from personal-file backup.",
+      "recommendation": "Teach the objective sequence alongside approved incident/evidence handling and retain independent backup/recovery checks.",
+      "disposition": "applied",
+      "source_id": "windows-system-restore",
+      "resolution": "Teach the objective sequence alongside approved incident/evidence handling and retain independent backup/recovery checks."
+    },
+    {
+      "id": "2201202-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Recognizing disposal methods does not prove successful sanitization",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "220-1202"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Revision 2 distinguishes clear/purge/destroy, media-specific limitations and verification versus validation; degaussing flash or partial physical damage does not prove erasure.",
+      "recommendation": "Explain SSD overwrite/CE key-copy limitations and require media-appropriate validation and records; no disposal performed.",
+      "disposition": "applied",
+      "source_id": "nist-800-88r2",
+      "resolution": "Explain SSD overwrite/CE key-copy limitations and require media-appropriate validation and records; no disposal performed."
+    },
+    {
+      "id": "2201202-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Copy/restore behavior needed an executed example",
+      "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "220-1202"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Robocopy uses nonzero successful/difference return codes and flags with different deletion effects.",
+      "recommendation": "Add a synthetic native example and 18 actual checks for copy/repeat/restore, hashes, extras, list-only, failure and guarded cleanup; no mirror/purge used.",
+      "disposition": "applied",
+      "source_id": "windows-robocopy-reference",
+      "resolution": "Add a synthetic native example and 18 actual checks for copy/repeat/restore, hashes, extras, list-only, failure and guarded cleanup; no mirror/purge used."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "md102-backup-blog",
+      "disposition": "not-adopted-content-unavailable",
+      "value": "Considered as a possible Windows settings-backup resilience article.",
+      "limits": "Current direct fetch exposed only the title shell; web retrieval also failed. No article body, linked video, publication metadata or deployment guidance reverified for Core 2. Prior MD-102 record is historical evidence, not a fresh content read."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "service_labs_executed": 0,
+    "reasoning_cases": 3,
+    "additional_worked_cases": [
+      "cloud identity/license/sharing",
+      "AI suggestion review",
+      "restore-chain/deletion semantics"
+    ],
+    "local_validation": {
+      "powershell_copy_restore_checks": 18,
+      "powershell_blocks_executed": 1,
+      "runtime": "7.6.6",
+      "robocopy_version": "10.0.26100.1 (WinBuild.160101.0800)",
+      "native_execution": {
+        "passed": 18,
+        "failed": 0,
+        "checks": [
+          "PowerShell syntax valid",
+          "initial Robocopy success code1",
+          "repeat copy code0",
+          "restore copy code1",
+          "BackupHashMatches",
+          "RestoredHashMatches",
+          "LaterEditDiffers",
+          "EmptyDirectoryRestored",
+          "new public example directory cleaned",
+          "native nonzero-success preference handled locally",
+          "second independent copy succeeds",
+          "destination extra yields code2 without failure",
+          "ordinary copy preserves destination extra",
+          "list-only code has no copy failure",
+          "list-only preserves destination content",
+          "missing source yields failure code",
+          "failed copy preserves destination content",
+          "private exercise directory cleaned"
+        ],
+        "powershell": "7.6.6",
+        "robocopy_version": "10.0.26100.1 (WinBuild.160101.0800)",
+        "public_example_result": {
+          "FirstCopyCode": 1,
+          "RepeatCopyCode": 0,
+          "RestoreCopyCode": 1,
+          "BackupHashMatches": true,
+          "RestoredHashMatches": true,
+          "LaterEditDiffers": true,
+          "EmptyDirectoryRestored": true
+        },
+        "additional_exit_codes": {
+          "missing_source": 16,
+          "list_only": 3
+        },
+        "source_sha256": "c581c6098624823c8da703c3590f00c14b5ed5bfb8369188fe7b0f0b40ac955f",
+        "limits": [
+          "Only newly created synthetic files inside an isolated practice directory were copied/restored.",
+          "No ACL changes, System Restore, registry, encryption keys, user accounts, disks, network or OS repair commands were executed.",
+          "File-content hashes do not verify ACLs, application consistency, offsite backup or full-system recovery."
+        ]
+      },
+      "execution_boundary": "Only newly created synthetic files; no service, ACL, policy, encryption, OS repair, malware or remote-support changes."
+    }
+  },
+  "answered_checks": 42,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "18 native local checks exercised only synthetic files in newly created directories; all owned practice directories cleaned.",
+    "No OS install/repair, ACL/account/policy change, encryption or recovery key access, System Restore, malware, sanitization, Linux/macOS/mobile runtime, remote access or cloud tenant lab executed.",
+    "Hashes establish synthetic file-content equality, not offsite resilience, ACL recovery, application consistency or full-system recovery.",
+    "All eight complete platform labs remain proposed.",
+    "OReilly/Udemy blocked automated access; paid lesson interiors and complete Pluralsight V15 coverage were not verified.",
+    "Windows settings-backup blog body unavailable in current fetch; not adopted.",
+    "Exact exam retirement date is not announced; estimated 2028 retained."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Only newly created synthetic files; no service, ACL, policy, encryption, OS repair, malware or remote-support changes.",
+    "learning_catalog_consistency": "passed",
+    "powershell_copy_restore_checks": 18,
+    "powershell_blocks_executed": 1,
+    "runtime": "7.6.6",
+    "robocopy_version": "10.0.26100.1 (WinBuild.160101.0800)",
+    "native_execution": {
+      "passed": 18,
+      "failed": 0,
+      "checks": [
+        "PowerShell syntax valid",
+        "initial Robocopy success code1",
+        "repeat copy code0",
+        "restore copy code1",
+        "BackupHashMatches",
+        "RestoredHashMatches",
+        "LaterEditDiffers",
+        "EmptyDirectoryRestored",
+        "new public example directory cleaned",
+        "native nonzero-success preference handled locally",
+        "second independent copy succeeds",
+        "destination extra yields code2 without failure",
+        "ordinary copy preserves destination extra",
+        "list-only code has no copy failure",
+        "list-only preserves destination content",
+        "missing source yields failure code",
+        "failed copy preserves destination content",
+        "private exercise directory cleaned"
+      ],
+      "powershell": "7.6.6",
+      "robocopy_version": "10.0.26100.1 (WinBuild.160101.0800)",
+      "public_example_result": {
+        "FirstCopyCode": 1,
+        "RepeatCopyCode": 0,
+        "RestoreCopyCode": 1,
+        "BackupHashMatches": true,
+        "RestoredHashMatches": true,
+        "LaterEditDiffers": true,
+        "EmptyDirectoryRestored": true
+      },
+      "additional_exit_codes": {
+        "missing_source": 16,
+        "list_only": 3
+      },
+      "source_sha256": "c581c6098624823c8da703c3590f00c14b5ed5bfb8369188fe7b0f0b40ac955f",
+      "limits": [
+        "Only newly created synthetic files inside an isolated practice directory were copied/restored.",
+        "No ACL changes, System Restore, registry, encryption keys, user accounts, disks, network or OS repair commands were executed.",
+        "File-content hashes do not verify ACLs, application consistency, offsite backup or full-system recovery."
+      ]
+    }
+  },
+  "version_specific_pdf_review": {
+    "receipt": {
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/cefedfb2b8a511ef809306d06d323538?checkExpiry=false",
+      "discovery_page": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+      "collection_url": "https://lecbyo.collections.cmp.optimizely.com/api/library-collection/b9074fb6207711f08b1d2e4ad712ca04",
+      "asset": {
+        "guid": "cefedfb2b8a511ef809306d06d323538",
+        "title": "CompTIA A+ 220-1202 Exam Objectives (4.0).pdf",
+        "type": "raw_file",
+        "mimeType": "application/pdf",
+        "thumbnailUrl": "https://images4.cmp.optimizely.com/Zz0yMzY5YjNiMmNhMzIxMWYwYmE0MTIyYzdkYzE2MzUwMw==",
+        "previewUrl": "https://lecbyo.files.cmp.optimizely.com/download/cefedfb2b8a511ef809306d06d323538?checkExpiry=false",
+        "mediaUrl": "https://lecbyo.files.cmp.optimizely.com/download/cefedfb2b8a511ef809306d06d323538?checkExpiry=false",
+        "transcodedUrl": "",
+        "description": "",
+        "lastModified": "2025-11-25T19:08:34",
+        "lastModifiedRelative": "10 months ago",
+        "createdAt": "2024-12-12T16:26:15",
+        "custom_labels": {},
+        "fields": []
+      },
+      "sha256": "1bc5195327296edd92948b5f3a950fee35ac6807cec9b244b0b2e54e72d11bd2",
+      "bytes": 274482,
+      "pages": 20,
+      "status": 200
+    },
+    "numbered_objectives": 36,
+    "objective_group_counts": [
+      11,
+      11,
+      4,
+      10
+    ],
+    "summary_rows": 11,
+    "layout_check": "Page 12 confirms 3.2 mobile OS/application issues and 3.3 mobile security; plain extraction order is not authoritative.",
+    "mapping": "Original paraphrases with published IDs; all numbered objectives and detailed bullets read."
+  },
+  "native_powershell_checks": {
+    "passed": 18,
+    "failed": 0,
+    "checks": [
+      "PowerShell syntax valid",
+      "initial Robocopy success code1",
+      "repeat copy code0",
+      "restore copy code1",
+      "BackupHashMatches",
+      "RestoredHashMatches",
+      "LaterEditDiffers",
+      "EmptyDirectoryRestored",
+      "new public example directory cleaned",
+      "native nonzero-success preference handled locally",
+      "second independent copy succeeds",
+      "destination extra yields code2 without failure",
+      "ordinary copy preserves destination extra",
+      "list-only code has no copy failure",
+      "list-only preserves destination content",
+      "missing source yields failure code",
+      "failed copy preserves destination content",
+      "private exercise directory cleaned"
+    ],
+    "powershell": "7.6.6",
+    "robocopy_version": "10.0.26100.1 (WinBuild.160101.0800)",
+    "public_example_result": {
+      "FirstCopyCode": 1,
+      "RepeatCopyCode": 0,
+      "RestoreCopyCode": 1,
+      "BackupHashMatches": true,
+      "RestoredHashMatches": true,
+      "LaterEditDiffers": true,
+      "EmptyDirectoryRestored": true
+    },
+    "additional_exit_codes": {
+      "missing_source": 16,
+      "list_only": 3
+    },
+    "source_sha256": "c581c6098624823c8da703c3590f00c14b5ed5bfb8369188fe7b0f0b40ac955f",
+    "limits": [
+      "Only newly created synthetic files inside an isolated practice directory were copied/restored.",
+      "No ACL changes, System Restore, registry, encryption keys, user accounts, disks, network or OS repair commands were executed.",
+      "File-content hashes do not verify ACLs, application consistency, offsite backup or full-system recovery."
+    ]
+  }
+}

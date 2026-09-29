@@ -1264,6 +1264,8 @@ The review maps all five public V15 domains and summary tasks to compatibility-f
 
 ## 220-1202 coverage record
 
+The September 28 [deep review](research/2026-09-28-220-1202-deep-review.md) maps 36 detailed objectives. Mapped all 36 numbered objectives in the public version 4.0 PDF, expanded Windows/security/recovery teaching, added cloud productivity and AI support cases, strengthened 42 answered checks and eight proposed labs, and passed 18 native PowerShell/Robocopy checks on synthetic files. Current guide citations: 29 registered, 27 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 1, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: four weighted V15 domains—Operating systems (28%), Security (28%), Software troubleshooting (23%), and Operational procedures (21%)

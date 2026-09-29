@@ -4,6 +4,181 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-2201202-deep-review",
+      "title": "220-1202 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "220-1202"
+      ],
+      "results": [
+        {
+          "exam_code": "220-1202",
+          "vendor_id": "comptia",
+          "guide_path": "guides/220-1202-comptia-a-plus-core-2.md",
+          "baseline_sha256": "3ab74f0a74a9b41117921fde410083eb884412956eb0c04b3d543ee9603b63a1",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "V15 main page retains weights 28/28/23/21, March 25, 2025 launch, same-version rule and estimated 2028 retirement. Both monitor hashes unchanged. Read all numbered objectives/bullets in the public 20-page PDF 4.0; 36 objectives versus 11 summary rows. PDF layout checked for 3.2 mobile apps versus 3.3 mobile security."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Reviewed targeted Microsoft Windows lifecycle, encryption/recovery, System Restore/Protection, RDP, icacls, SFC, Robocopy and PowerShell policy documentation; Apple FileVault, GNU modes and NIST sanitization/authentication sections. All native execution confined to synthetic copy/restore."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Exam version and PDF document version separated. Windows 10 ordinary support end distinguished from ESU and LTSC options; current source table checked. NIST 800-88r2 September 2025 used for current sanitization limits. A Microsoft blog returned only a title shell; no article content or rollout adopted."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "CompTIA Perform/ Learn/ Practice/ Labs options and provider estimates checked. Public metadata: Pluralsight 5 courses/12h, LinkedIn 21h45/22 quizzes/September 26, 2025, MeasureUp 287 questions/July 2025, Messer 74 videos/13h41. Pluralsight older wording qualified; no paid interiors reviewed. OReilly/Udemy blocked. Places to learn final."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Filled cloud-productivity 1.11 and AI 4.10 gaps; separated System Restore from file backup, Home Device Encryption from full BitLocker, active protection from encrypted bytes, share/NTFS layers, scan from repair, native return codes from generic success conventions, and disposal-method recognition from validated sanitization."
+            }
+          },
+          "findings": [
+            {
+              "id": "2201202-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Summary coverage omitted cloud productivity and AI depth",
+              "url": "https://lecbyo.files.cmp.optimizely.com/download/cefedfb2b8a511ef809306d06d323538?checkExpiry=false",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "220-1202"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The full outline includes numbered cloud-productivity and AI objectives beyond the main-page summary.",
+              "recommendation": "Map all 36 numbered objectives and add original identity/license/sharing and AI-review cases, command/feature distinctions and 42 answers.",
+              "disposition": "applied",
+              "source_id": "comptia-220-1202-objectives-pdf",
+              "resolution": "Map all 36 numbered objectives and add original identity/license/sharing and AI-review cases, command/feature distinctions and 42 answers."
+            },
+            {
+              "id": "2201202-deep-2",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Exam scope and OS lifecycle needed separation",
+              "url": "https://learn.microsoft.com/en-us/windows/release-health/release-information",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "220-1202"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Windows 10 ordinary end of support coexists with specific ESU and LTSC conditions; Enterprise and IoT LTSC 2021 have different dates.",
+              "recommendation": "Explain the distinction and require exact edition/version/enrollment checks; do not infer deployment support from exam wording.",
+              "disposition": "applied",
+              "source_id": "windows10-release-info",
+              "resolution": "Explain the distinction and require exact edition/version/enrollment checks; do not infer deployment support from exam wording."
+            },
+            {
+              "id": "2201202-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Edition labels alone cannot establish encryption protection",
+              "url": "https://support.microsoft.com/en-us/windows/security/encryption/device-encryption-in-windows",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "220-1202"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Device Encryption can be available on eligible Home devices; recovery depends on configuration and the authorized recovery route.",
+              "recommendation": "Separate Home Device Encryption, full BitLocker, active protection and recovery; no keys read or configuration changes executed.",
+              "disposition": "applied",
+              "source_id": "windows-device-encryption",
+              "resolution": "Separate Home Device Encryption, full BitLocker, active protection and recovery; no keys read or configuration changes executed."
+            },
+            {
+              "id": "2201202-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Malware sequence and recovery boundaries needed precision",
+              "url": "https://support.microsoft.com/en-us/windows/experience/backup-recovery/system-restore",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "220-1202"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "PDF 2.6 explicitly includes Windows Home System Restore milestones; Microsoft describes system-state restoration separately from personal-file backup.",
+              "recommendation": "Teach the objective sequence alongside approved incident/evidence handling and retain independent backup/recovery checks.",
+              "disposition": "applied",
+              "source_id": "windows-system-restore",
+              "resolution": "Teach the objective sequence alongside approved incident/evidence handling and retain independent backup/recovery checks."
+            },
+            {
+              "id": "2201202-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Recognizing disposal methods does not prove successful sanitization",
+              "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "220-1202"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Revision 2 distinguishes clear/purge/destroy, media-specific limitations and verification versus validation; degaussing flash or partial physical damage does not prove erasure.",
+              "recommendation": "Explain SSD overwrite/CE key-copy limitations and require media-appropriate validation and records; no disposal performed.",
+              "disposition": "applied",
+              "source_id": "nist-800-88r2",
+              "resolution": "Explain SSD overwrite/CE key-copy limitations and require media-appropriate validation and records; no disposal performed."
+            },
+            {
+              "id": "2201202-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Copy/restore behavior needed an executed example",
+              "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "220-1202"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Robocopy uses nonzero successful/difference return codes and flags with different deletion effects.",
+              "recommendation": "Add a synthetic native example and 18 actual checks for copy/repeat/restore, hashes, extras, list-only, failure and guarded cleanup; no mirror/purge used.",
+              "disposition": "applied",
+              "source_id": "windows-robocopy-reference",
+              "resolution": "Add a synthetic native example and 18 actual checks for copy/repeat/restore, hashes, extras, list-only, failure and guarded cleanup; no mirror/purge used."
+            }
+          ],
+          "notes": "Mapped all 36 numbered objectives in the public version 4.0 PDF, expanded Windows/security/recovery teaching, added cloud productivity and AI support cases, strengthened 42 answered checks and eight proposed labs, and passed 18 native PowerShell/Robocopy checks on synthetic files. Same-context AI review; human review pending. See docs/research/2026-09-28-220-1202-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 6,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-2201201-deep-review",
       "title": "220-1201 complete guide and learning-content review",
       "rubric_version": 1,

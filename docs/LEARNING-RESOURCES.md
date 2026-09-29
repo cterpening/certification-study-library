@@ -3126,16 +3126,23 @@ Whizlabs was not independently verified as an exact current 220-1201 source. Rej
 
 ### CompTIA A+ Core 2 (220-1202)
 
-- Official baseline: [A+ Core 2 V15](https://www.comptia.org/en-us/certifications/a/core-2-v15/) (**3–6 hours mapping scope and delivery**); pass both components from V15 and treat 2028 as an estimate, not a dated retirement
-- Official options: [CertMaster Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/), [Labs](https://www.comptia.org/en-us/resources/certmaster-training/labs/), and [Practice](https://www.comptia.org/en-us/resources/certmaster-training/practice/) (**35–70 combined hours estimated**); select the exact 220-1202 product/bundle
-- Current modular path: [Pluralsight 220-1202](https://www.pluralsight.com/paths/comptia-a-core-2-220-1202) (**12 listed hours plus 20–40 lab/review hours**), five courses and a practice exam
-- Detailed video route: [LinkedIn Learning / Total Seminars 220-1202](https://www.linkedin.com/learning/comptia-a-plus-core-2-220-1202-cert-prep) (**21 hours 45 minutes plus 20–40 lab/review hours**)
-- Current two-core book: [O'Reilly/Pearson Complete A+ Guide V15](https://www.oreilly.com/library/view/complete-a-guide/9780135439883/) (**25–45 selected Core 2 reading/lab hours**)
-- Marketplace course: [Udemy / Jason Dion 220-1202](https://www.udemy.com/course/comptia-a-core-2/) (**allow 25–50 hours plus labs/review; verify current listed runtime**, updated August 2026)
-- Explanation-led assessment: [MeasureUp Core 2](https://www.measureup.com/comptia-a-core-2-practice-test.html) (**about 6–12 hours across attempts and remediation; verify current bank size**)
-- Free current course: [Professor Messer 220-1202](https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/) (**13 hours 41 minutes plus 20–40 hands-on hours**)
+Resource details from the [220-1202 guide](../guides/220-1202-comptia-a-plus-core-2.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Use one current V15 course, disposable Windows/Linux/macOS/mobile practice where available, and one ethical assessment source. No exact Whizlabs 220-1202 route was independently verified; reject dumps and do not mix 1100- and 1200-series component exams.
+This is not a complete list and is not meant to be consumed in full. Select one V15 path, practice on disposable multi-OS systems, and use one explanation-led assessment to guide remediation.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| CompTIA [CertMaster Perform](https://www.comptia.org/en-us/resources/certmaster-training/perform/), [Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/), [Labs](https://www.comptia.org/en-us/resources/certmaster-training/labs/) and [Practice](https://www.comptia.org/en-us/resources/certmaster-training/practice/) | Paid official options; select exact 220-1202 product and avoid double-counting overlapping bundles | Provider estimates: Perform 30–60h; Learn 25–40h; Labs 15–25h; Practice 10–20h |
+| [Pluralsight A+ Core 2 path](https://www.pluralsight.com/paths/comptia-a-core-2-220-1202) | Subscription; 5 courses and practice exam; public outline includes older Windows wording, so compare lesson scope with V15 | 12 listed hours plus 20–40 lab/review hours |
+| [LinkedIn Learning / Total Seminars Core 2](https://www.linkedin.com/learning/comptia-a-plus-core-2-220-1202-cert-prep) | Subscription; 22 quizzes; public page released September 26, 2025 | 21 hours 45 minutes plus 20–40 lab/review hours |
+| [Complete A+ Guide V15](https://www.oreilly.com/library/view/complete-a-guide/9780135439883/) | O'Reilly/Pearson subscription book covering both cores | About 25–45 selected reading/lab hours for Core 2 |
+| [Udemy / Jason Dion Core 2](https://www.udemy.com/course/comptia-a-core-2/) | Paid marketplace course and practice exam | Verify current runtime; allow 25–50 hours plus labs/review |
+| [MeasureUp Core 2](https://www.measureup.com/comptia-a-core-2-practice-test.html) | Paid explanation-led practice; public page lists 287 questions, July 2025 update | About 6–12 hours across attempts and review; bank is volatile |
+| [Professor Messer free 220-1202 course](https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/) | Free 74-video course; optional paid notes/practice | 13 hours 41 minutes plus 20–40 hands-on hours |
+
+No exact Whizlabs 220-1202 route was independently verified. Reject “actual questions” and dumps. Provider durations, prices, bundles, banks, updates, and access are volatile.
+
+Public metadata was checked September 28, 2026. Pluralsight lists 12 hours; LinkedIn lists 21h45 and correctly names 220-1202 in its description; Messer lists 74 videos/13h41. Paid lesson interiors were not reviewed, and public outlines do not prove complete current coverage. O’Reilly and Udemy blocked automated rechecking. Times beyond provider-listed durations are planning estimates.
 
 ### CompTIA Network+ (N10-009)
 
