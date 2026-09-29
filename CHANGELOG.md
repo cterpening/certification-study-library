@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [JSE-40-01 deep review](docs/research/2026-09-29-jse-40-01-deep-review.md): Mapped all 30 unweighted scope bullets, improved 40 answers and completed three worked programs. Eight public blocks executed; 114 core and 109 scenario checks plus actual dialogs/timers/debugger evidence passed. Resource metadata and access/policy limits documented; human review pending.
+
 - September 29, 2026: [CPE-20-01 deep review](docs/research/2026-09-29-cpe-20-01-deep-review.md): Mapped all 26 C++ objectives, repaired input/pointer/string explanations and completed three worked programs. Ten public blocks executed remotely; 67 workbook and 60 scenario checks passed on two compilers. Resource access and vendor wording limits documented; human review pending.
 
 - September 29, 2026: [PCEP-30-02 deep review](docs/research/2026-09-29-pcep-30-02-deep-review.md): Mapped 84 syllabus bullets and corrected Python tracing explanations; four public code blocks passed 136 offline checks with three worked programs. Refreshed catalogs and documented current-version, source-access and vendor-page discrepancies; human review pending.

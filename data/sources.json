@@ -3,6 +3,286 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "mdn-js-grammar-types",
+      "title": "MDN JavaScript grammar and types",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSE-40-01 deep review: Read declaration_and_initialization, variable_scope, variable_hoisting, global_variables and constants sections; full page not audited. Broad global-object wording qualified with the let reference and separate classic-script/module probes. Sloppy-global shorthand not adopted as universal behavior. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-js-number",
+      "title": "MDN JavaScript Number",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSE-40-01 deep review: Read number_encoding, number_coercion including subsections, and integer_range_for_number. Conversion of null/blank/undefined, full-string numeric conversion and explicit Number(BigInt) informed traces. Safe-integer guarantee concerns adjacent distinct values; some larger integers remain exactly representable, qualifying imprecise shorthand. Full page not audited. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-js-bigint",
+      "title": "MDN JavaScript BigInt",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSE-40-01 deep review: Read type_information, operators, comparisons and bigint_coercion. Mixed numeric operations, unary-plus restriction and explicit conversions checked. Cryptography/JSON/primes sections not reviewed or adopted. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-js-string",
+      "title": "MDN JavaScript String",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSE-40-01 deep review: Read character_access, comparing_strings and UTF16/code-point/grapheme sections. Strict indexed assignment, immutable strings and code-unit length versus code-point iteration checked. Full locale/text-processing reference not audited or added to scope. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-js-array",
+      "title": "MDN JavaScript Array",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSE-40-01 deep review: Read description, length/numerical-properties relation, copying/mutating methods, copy/append/pop/unshift/indexOf/merge examples. Return values, shallow references, delete holes and length shrinking tested. Full 38564-character reference not audited; broad JSON-deep-copy advice not adopted. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-js-operator-precedence",
+      "title": "MDN JavaScript operator precedence",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSE-40-01 deep review: Read precedence_and_associativity, short-circuiting, complete table and its notes. Grouping differs from left-to-right operand evaluation; skipped operands remain skipped. Exponentiation right associativity and restriction on unary left operand tested. Broader generator/await/optional-chain material supplies context, not added objectives. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-js-for-in",
+      "title": "MDN JavaScript for...in",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSE-40-01 deep review: Read description and own-properties-only section. Enumerable string keys include inherited keys; symbols excluded. Original prototype fixture and own-key filter tested. Full mutation-during-iteration discussion not audited. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-js-try-catch",
+      "title": "MDN JavaScript try...catch",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSE-40-01 deep review: Read description, finally block and returning-from-finally sections. Cleanup, pending completion and overriding return semantics inform examples. Full chapter not audited. Scheduling try versus later callback failure separately observed in browser. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-window-prompt",
+      "title": "MDN Window prompt",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSE-40-01 deep review: Complete 3531-character page read, including suppression, cancel=null and accepted-empty-string behavior. Actual modal dialogs automated on original local fixtures; no universal promise every browser context displays them. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-window-confirm",
+      "title": "MDN Window confirm",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSE-40-01 deep review: Complete 2298-character page read. Actual accepted/dismissed confirm tested; suppression returning false remains a platform caveat, not a simulated suppression test. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-window-alert",
+      "title": "MDN Window alert",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/alert",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSE-40-01 deep review: Complete 1671-character page read. Actual alert handled and undefined return verified; suppression/waiting caveats retained. No production UI recommendation. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-window-set-timeout",
+      "title": "MDN Window setTimeout",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSE-40-01 deep review: Read parameters, return value, asynchronous-functions discussion, maximum delay, longer-delay reasons with subsections, and setting/clearing examples. Small-delay scheduling versus exact timing, signed 32-bit conversion/overflow, nesting/background delays qualified. No exact cross-browser throttle policy or parallel-execution promise adopted; full page not audited. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-window-set-interval",
+      "title": "MDN Window setInterval",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSE-40-01 deep review: Read parameters, return value, delay restrictions, shared timer-ID pool and execution-duration warning. Original repeated callback and cancellation tested; ticks are callback counts, not seconds. No remote polling or full page audit. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-js-functions",
+      "title": "MDN JavaScript functions guide",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSE-40-01 deep review: Read declarations, expressions, hoisting, recursion, arrows and no-separate-this sections. Object-reference values, declaration/expression timing and lexical-this explanation used. Full closure/default/rest chapter not audited. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-js-typeof",
+      "title": "MDN JavaScript typeof",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSE-40-01 deep review: Read description/type table and undeclared-versus-uninitialized-variable section. Same-scope TDZ typeof throws while unresolved-name typeof can return undefined; tested. document.all section not reviewed or adopted. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-js-let",
+      "title": "MDN JavaScript let",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSE-40-01 deep review: Read description only. Top-level lexical bindings are not global-object properties; module scope differs. Actual classic and module probes verify selected claims. Full page not audited. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-js-bigint-function",
+      "title": "MDN JavaScript BigInt function",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/BigInt",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSE-40-01 deep review: Complete 2203-character page read, dated September 3, 2026. Fractional Number→RangeError, fractional text→SyntaxError and null→TypeError tested. Constructor restriction and other input rules read; link to living 2027 specification does not set an exam language version. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "chrome-devtools-js-debug",
+      "title": "Chrome DevTools JavaScript debugging",
+      "url": "https://developer.chrome.com/docs/devtools/javascript",
+      "publisher": "Google Chrome Developers",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSE-40-01 deep review: Complete 11666-character tutorial read in two extracts. String-concatenation input bug, breakpoints/step/scope/watch/evaluation/variable editing and source repair reviewed. Google external demo not executed, no visual DevTools clicks. Original local fixture used actual CDP pause/step/inspect/change/resume, then a source correction. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "chrome-devtools-debugger-protocol",
+      "title": "Chrome DevTools Protocol Debugger domain",
+      "url": "https://chromedevtools.github.io/devtools-protocol/tot/Debugger/",
+      "publisher": "Google Chrome Developers",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSE-40-01 deep review: Static HTTP200 was a 72-character redirect shell. HTML revealed current JavaScript viewer https://chromedevtools.github.io/devtools-protocol/#/Debugger; fresh unsigned headless Chrome rendered 26150 characters. Read selected enable/evaluateOnCallFrame/setVariableValue/stepInto/stepOut/stepOver and paused/resumed contracts plus adjacent source/breakpoint context. Not a complete protocol audit. Actual local probe used enable, pause events, stepOver, evaluation, setVariableValue and resume, not every method read. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "microsoft-beginners-javascript-repo",
+      "title": "Microsoft beginner JavaScript video-series repository",
+      "url": "https://github.com/microsoft/beginners-intro-javascript-node",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSE-40-01 deep review: Direct health fetch failed; full public GitHub README and directory listing read via web reader. Repository archived June 15, 2026; README assumes experience with another programming language and uses Node console samples. Individual source files not opened and repository not installed/executed. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "msvc-main",
       "title": "MSVC main function and command-line arguments",
       "url": "https://learn.microsoft.com/en-us/cpp/cpp/main-function-command-line-args?view=msvc-170",
@@ -54849,37 +55129,159 @@
       "notes": "Popular free approximately 4h02m beginner video published in 2018. Useful for fundamentals but older and incomplete for the exact current CPE scope. September 29 CPE-20-01 deep review: HTTP200 with only 203-character title/shell extraction. No transcript or playback read. Prior approximately 4h02m duration not reverified; title-level availability is not content review. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"jse-40-01-scope","title":"JSE Certified Entry-Level JavaScript Programmer","url":"https://jsinstitute.org/jse-certification","publisher":"OpenEDG JS Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["JSE-40-01"],"notes":"Canonical active exam page with six-block public scope, format, languages, price, delivery, practice and aligned course links. The scope itself is unweighted."
+      "id": "jse-40-01-scope",
+      "title": "JSE Certified Entry-Level JavaScript Programmer",
+      "url": "https://jsinstitute.org/jse-certification",
+      "publisher": "OpenEDG JS Institute",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "notes": "Canonical active exam page with six-block public scope, format, languages, price, delivery, practice and aligned course links. The scope itself is unweighted. September 29 JSE-40-01 deep review: Direct request and objective monitor timed out; complete current public page read via web reader. Active JSE-40-01, 30 single/multiple-select questions, 40 minutes plus five for tutorial, 70%, English/Spanish, TestNow, no prerequisite; public USD69/86/95 options and USD29 practice. Canonical scope has 30 unweighted bullets in 3/5/5/5/7/5 groups; manually compared retained snapshot, excluding later holder profile. Associated JSA title incorrectly refers to a Python data analyst; not adopted. No successful automatic hash comparison, snapshot rewrite or booking verification. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"js-institute-testnow-policies","title":"JS Institute TestNow Testing Policies","url":"https://jsinstitute.org/test-now-testing-policies","publisher":"OpenEDG JS Institute","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["JSE-40-01"],"notes":"Current entry-level default delivery mode, NDA/security, accommodation, age and seven-day failed-attempt wait policies."
+      "id": "js-institute-testnow-policies",
+      "title": "JS Institute TestNow Testing Policies",
+      "url": "https://jsinstitute.org/test-now-testing-policies",
+      "publisher": "OpenEDG JS Institute",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "notes": "Current entry-level default delivery mode, NDA/security, accommodation, age and seven-day failed-attempt wait policies. September 29 JSE-40-01 deep review: Direct timeout; complete public policy read via web reader. Opening section calls entry-level delivery non-proctored by default, but later generic delivery text calls proctoring the global default. Conflict disclosed; no determination of current booking. Failed-retake wait seven days with another voucher potentially required. Admission/NDA/security/accommodation context read; no account or exam action. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"openedg-jse-40-01-practice","title":"JSE-40-01 Practice Test Kit","url":"https://ums.edube.org/products/0-jsi-jse-4001-pt","publisher":"OpenEDG JS Institute","authority_class":1,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["JSE-40-01"],"notes":"Official USD 29 practice-only voucher, 12-month redemption validity and explicit JSE-40-01 alignment. Publishes a six-block 8/20/18/21/21/12 practice-content distribution absent from the main scope page."
+      "id": "openedg-jse-40-01-practice",
+      "title": "JSE-40-01 Practice Test Kit",
+      "url": "https://ums.edube.org/products/0-jsi-jse-4001-pt",
+      "publisher": "OpenEDG JS Institute",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "notes": "Official USD 29 practice-only voucher, 12-month redemption validity and explicit JSE-40-01 alignment. Publishes a six-block 8/20/18/21/21/12 practice-content distribution absent from the main scope page. September 29 JSE-40-01 deep review: Complete 3213-character public product body read. USD29 practice-only product excludes exam attempt; multiple launches described without current exact count; 12-month redemption validity. Percentages 8/20/18/21/21/12 describe practice-content distribution, not canonical exam weights or item counts. Public Practice-tab instructions read, account UI and paid questions not accessed. Static cart-confirmation template is not a transaction. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"openedg-javascript-essentials-1","title":"JavaScript Essentials 1","url":"https://jsinstitute.org/javascript-essentials-1","publisher":"OpenEDG JS Institute / Edube","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["JSE-40-01"],"notes":"Free officially aligned six-module beginner course with a 40-hour listed study time and detailed syllabus."
+      "id": "openedg-javascript-essentials-1",
+      "title": "JavaScript Essentials 1",
+      "url": "https://jsinstitute.org/javascript-essentials-1",
+      "publisher": "OpenEDG JS Institute / Edube",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "notes": "Free officially aligned six-module beginner course with a 40-hour listed study time and detailed syllabus. September 29 JSE-40-01 deep review: Direct timeout; complete six-module public landing read via web reader. Forty hours, free, English, beginner, no prerequisite. Module two mentions Symbol beyond the named exam primitive bullet; course breadth does not amend scope. Duplicated introductory copy noted. No enrollment, lessons or assessments entered. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cisco-javascript-essentials-1","title":"JavaScript Essentials 1","url":"https://www.netacad.com/courses/javascript-essentials-1","publisher":"Cisco Networking Academy / OpenEDG JS Institute","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["JSE-40-01"],"notes":"Official partner delivery linked from the live JSE page. The guide uses the official course's 40 hours as a planning estimate and asks learners to verify the live listing."
+      "id": "cisco-javascript-essentials-1",
+      "title": "JavaScript Essentials 1",
+      "url": "https://www.netacad.com/courses/javascript-essentials-1",
+      "publisher": "Cisco Networking Academy / OpenEDG JS Institute",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "notes": "Official partner delivery linked from the live JSE page. The guide uses the official course's 40 hours as a planning estimate and asks learners to verify the live listing. September 29 JSE-40-01 deep review: HTTP200 with only a 49-character application shell. Curriculum and partner duration not verified; approximately 40-hour planning reference derives from aligned OpenEDG course. No account or lessons. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mdn-dynamic-javascript","title":"Dynamic Scripting with JavaScript","url":"https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting","publisher":"Mozilla Developer Network","authority_class":2,"source_type":"third-party-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["JSE-40-01"],"notes":"Current free core learning module with tutorials and skill checks for variables, types, operators, strings, arrays, flow, functions, objects and debugging; some DOM/network material exceeds JSE."
+      "id": "mdn-dynamic-javascript",
+      "title": "Dynamic Scripting with JavaScript",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting",
+      "publisher": "Mozilla Developer Network",
+      "authority_class": 2,
+      "source_type": "third-party-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "notes": "Current free core learning module with tutorials and skill checks for variables, types, operators, strings, arrays, flow, functions, objects and debugging; some DOM/network material exceeds JSE. September 29 JSE-40-01 deep review: Complete 9648-character module index read across two extracts. HTML/CSS prerequisites and DOM, network, JSON and events show broader scope than JSE. Linked lessons/challenges not completed; selected separate reference pages documented individually. Fifteen to 25 hours is an author estimate, not provider runtime. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"microsoft-beginners-javascript-series","title":"Beginner's Series to JavaScript","url":"https://learn.microsoft.com/en-us/shows/beginners-series-to-javascript/","publisher":"Microsoft Learn","authority_class":2,"source_type":"third-party-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["JSE-40-01"],"notes":"Free 51-part core-concepts video series using Node.js. The supporting GitHub repository was archived June 2026, so use it as a stable legacy supplement and keep browser-dialog practice separate."
+      "id": "microsoft-beginners-javascript-series",
+      "title": "Beginner's Series to JavaScript",
+      "url": "https://learn.microsoft.com/en-us/shows/beginners-series-to-javascript/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 2,
+      "source_type": "third-party-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "notes": "Free 51-part core-concepts video series using Node.js. The supporting GitHub repository was archived June 2026, so use it as a stable legacy supplement and keep browser-dialog practice separate. September 29 JSE-40-01 deep review: Complete 1375-character public series page read. Node-based core foundations, but current extract lacks episode count/runtime. Prior 51-part count not reverified; four to six hours is an author estimate. No video playback. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pluralsight-professional-javascript-path","title":"Professional JavaScript: From Foundations to Enterprise","url":"https://www.pluralsight.com/paths/javascript-2022","publisher":"Pluralsight","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["JSE-40-01"],"notes":"79-hour, 26-course and 38-lab broad path. Select the 6h08m July 2026 fundamentals course and matching entry-level labs rather than consuming the entire path."
+      "id": "pluralsight-professional-javascript-path",
+      "title": "Professional JavaScript: From Foundations to Enterprise",
+      "url": "https://www.pluralsight.com/paths/javascript-2022",
+      "publisher": "Pluralsight",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "notes": "79-hour, 26-course and 38-lab broad path. Select the 6h08m July 2026 fundamentals course and matching entry-level labs rather than consuming the entire path. September 29 JSE-40-01 deep review: Captured 23920-character listing; read headline and selected novice/entry-level/start-of-practitioner portion (first 190 lines), not full path. Current 28 courses, 38 labs, 85 hours. David Tucker Fundamentals 6h08m (July 7, 2026) plus Maaike Debugging 1h35m (October 20, 2023) total 463 minutes/7h43m. Selected variables/data 100, scope 40, control-flow/collections 64-minute labs total 204/3h24m. Advanced/AI/Map topics exceed JSE. No subscription lessons or labs entered. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-javascript-definitive-guide-7","title":"JavaScript: The Definitive Guide, 7th Edition","url":"https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/","publisher":"O'Reilly / David Flanagan","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["JSE-40-01","JSA-41-01"],"notes":"May 2020, 706-page, 21h15m intermediate-to-advanced reference. Select language, object, class, collection, function, and asynchronous chapters against the active exam scope; verify modern API behavior in MDN."
+      "id": "oreilly-javascript-definitive-guide-7",
+      "title": "JavaScript: The Definitive Guide, 7th Edition",
+      "url": "https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/",
+      "publisher": "O'Reilly / David Flanagan",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSE-40-01",
+        "JSA-41-01"
+      ],
+      "notes": "May 2020, 706-page, 21h15m intermediate-to-advanced reference. Select language, object, class, collection, function, and asynchronous chapters against the active exam scope; verify modern API behavior in MDN. September 29 JSE-40-01 deep review: HTTP403. Prior 21h15m runtime and paid contents not reverified. Eight to 12 selective hours is an author planning estimate. Shared source health does not imply a new JSA guide review. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-complete-javascript-schmedtmann","title":"The Complete JavaScript Course 2025: From Zero to Expert","url":"https://www.udemy.com/course/the-complete-javascript-course/","publisher":"Udemy / Jonas Schmedtmann","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["JSE-40-01"],"notes":"71h10m broad bestseller last updated October 2025. Fundamentals 1–2 total 8h50m; add targeted debugging/timer material and keep the official JSE scope authoritative."
+      "id": "udemy-complete-javascript-schmedtmann",
+      "title": "The Complete JavaScript Course 2025: From Zero to Expert",
+      "url": "https://www.udemy.com/course/the-complete-javascript-course/",
+      "publisher": "Udemy / Jonas Schmedtmann",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "notes": "71h10m broad bestseller last updated October 2025. Fundamentals 1–2 total 8h50m; add targeted debugging/timer material and keep the official JSE scope authoritative. September 29 JSE-40-01 deep review: HTTP403. Prior 71h10m runtime and paid contents not reverified; 12–18 selective hours is an author estimate. No lessons or purchased questions. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"youtube-freecodecamp-javascript-beginner","title":"Learn JavaScript - Full Course for Beginners","url":"https://www.youtube.com/watch?v=PkZNo7MFNFg","publisher":"freeCodeCamp.org / Beau Carnes","authority_class":3,"source_type":"third-party-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["JSE-40-01"],"notes":"Popular free approximately 3h27m 2018 beginner video. Useful for syntax practice but older and not exact current JSE coverage."
+      "id": "youtube-freecodecamp-javascript-beginner",
+      "title": "Learn JavaScript - Full Course for Beginners",
+      "url": "https://www.youtube.com/watch?v=PkZNo7MFNFg",
+      "publisher": "freeCodeCamp.org / Beau Carnes",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSE-40-01"
+      ],
+      "notes": "Popular free approximately 3h27m 2018 beginner video. Useful for syntax practice but older and not exact current JSE coverage. September 29 JSE-40-01 deep review: HTTP200 with 207-character title/shell body. No transcript or playback; prior approximately 3h27m duration not verified. Title-level availability is not content review. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
     },
     {
       "id":"cle-10-01-syllabus","title":"CLE C Certified Entry-Level Programmer","url":"https://cppinstitute.org/cle","publisher":"OpenEDG C++ Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["CLE-10-01"],"notes":"Canonical active exam page with the July 24, 2025 eight-block 13.25/13.25/13.25/13.25/16.5/16.5/7/7 syllabus, delivery details, aligned training and minimally qualified candidate profile."

@@ -1983,6 +1983,8 @@ dump or copied course content is used. Blueprint SHA-256:
 
 ## JSE-40-01 coverage record
 
+The September 29 [deep review](research/2026-09-29-jse-40-01-deep-review.md) maps 30 detailed objectives. Mapped all 30 canonical scope bullets across six unweighted blocks, separating practice-kit percentages. Reviewed and improved all 40 original answers; eight public JavaScript blocks executed in Chrome, with 114 core checks also passing in Node, 109 scenario checks, 19 scenario and 16 introductory dialog cases, scope/timing probes and actual debugger state/source-repair evidence. Resource metadata, vendor copy errors, access limits and pending human review remain explicit. Current guide citations: 31 registered, 25 reachable, 2 access-blocked, 4 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Introduction to JavaScript and Computer Programming; Variables, Data Types, and Type Casting; Operators and User Interaction; Control Flow — Conditional Execution and Loops; Functions; Errors, Exceptions, Debugging, and Troubleshooting

@@ -4,6 +4,197 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-jse4001-deep-review",
+      "title": "JSE-40-01 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "JSE-40-01"
+      ],
+      "results": [
+        {
+          "exam_code": "JSE-40-01",
+          "vendor_id": "js-institute",
+          "guide_path": "guides/JSE-40-01-certified-entry-level-javascript-programmer.md",
+          "baseline_sha256": "5c995289558b10804b866d24780dbd555de2c9d9ecc8430ad19a13879781162b",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Complete canonical page and policy read via web fallback after direct timeouts. Active JSE-40-01 has 30 unweighted scope bullets in 3/5/5/5/7/5 groups. Manual snapshot comparison only; practice-kit percentages are not canonical exam weights."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected Mozilla primary references and complete Chrome debugging tutorial read with section boundaries. Eight public code blocks executed; core 114 checks pass in Chrome/Node, scenario 109 checks in Chrome. Actual dialogs, timers and local CDP debugging; no visual debugger UI or vendor demo run."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current institute exam/course/policy pages and dated provider references examined. Active code remains JSE-40-01 on inspected page. Microsoft supporting repository is archived. No unseen release feed, future exam or booking availability inferred."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "OpenEDG 40-hour landing, practice product, MDN index and Microsoft series/README read. Selected Pluralsight public listing now 28 courses/38 labs/85 hours; two selected courses 7h43m and three guided labs 3h24m. No paid lesson quality/completion claim."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Direct institute/README fetch failures, paid OReilly/Udemy HTTP403, Cisco/YouTube shells and protocol redirect require qualified evidence. TestNow proctoring text conflicts; JSA title copy error is not scope. Current authenticated UI and human review pending."
+            }
+          },
+          "findings": [
+            {
+              "id": "jse4001-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Canonical exam scope and practice distribution differ",
+              "url": "https://jsinstitute.org/jse-certification",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "JSE-40-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The full canonical page has 30 bullets in six blocks without percentage weights; the separate practice kit lists a content distribution.",
+              "recommendation": "Remove percentages from domain headings, preserve explicitly labeled practice distribution and map all 30 scope bullets, excluding the holder profile.",
+              "disposition": "applied",
+              "source_id": "jse-40-01-scope",
+              "resolution": "Remove percentages from domain headings, preserve explicitly labeled practice distribution and map all 30 scope bullets, excluding the holder profile."
+            },
+            {
+              "id": "jse4001-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Cancellation and blank text must precede numeric conversion",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "JSE-40-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Prompt returns null for cancellation and an empty string for accepted empty input. Number conversion alone can turn either into zero.",
+              "recommendation": "Add an explicit bounded decimal-text contract and execute cancellation, blank, malformed, boundary and valid-zero dialog paths.",
+              "disposition": "applied",
+              "source_id": "mdn-window-prompt",
+              "resolution": "Add an explicit bounded decimal-text contract and execute cancellation, blank, malformed, boundary and valid-zero dialog paths."
+            },
+            {
+              "id": "jse4001-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Global lexical bindings are not global-object properties",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "JSE-40-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Top-level let differs from classic-script var; modules introduce another scope boundary. typeof also does not bypass temporal dead zones.",
+              "recommendation": "Add precise scope prose, classic/module probes and executed typeof/hoisting checks.",
+              "disposition": "applied",
+              "source_id": "mdn-js-let",
+              "resolution": "Add precise scope prose, classic/module probes and executed typeof/hoisting checks."
+            },
+            {
+              "id": "jse4001-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Safe integers and BigInt conversion need operation-specific rules",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "JSE-40-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Larger Number values may lose adjacent integer distinctions; explicit BigInt inputs have different error classes.",
+              "recommendation": "Add exact text conversion, unsafe integer collision and RangeError/SyntaxError/TypeError comparisons in the original workbook.",
+              "disposition": "applied",
+              "source_id": "mdn-js-number",
+              "resolution": "Add exact text conversion, unsafe integer collision and RangeError/SyntaxError/TypeError comparisons in the original workbook."
+            },
+            {
+              "id": "jse4001-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Timer scheduling is not a guaranteed clock",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "JSE-40-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Callback scheduling can be delayed; a scheduling try does not enclose later callback execution.",
+              "recommendation": "Complete a bounded timer state machine with cleanup, restart and late-answer tests, and capture an actual later callback page error.",
+              "disposition": "applied",
+              "source_id": "mdn-window-set-timeout",
+              "resolution": "Complete a bounded timer state machine with cleanup, restart and late-answer tests, and capture an actual later callback page error."
+            },
+            {
+              "id": "jse4001-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Paused state changes do not repair source code",
+              "url": "https://developer.chrome.com/docs/devtools/javascript",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "JSE-40-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Debugging tutorial distinguishes variable inspection/change from correcting the original source.",
+              "recommendation": "Execute an original paused/stepped local probe, alter a local before arithmetic, rerun unchanged code and verify the source correction separately.",
+              "disposition": "applied",
+              "source_id": "chrome-devtools-js-debug",
+              "resolution": "Execute an original paused/stepped local probe, alter a local before arithmetic, rerun unchanged code and verify the source correction separately."
+            },
+            {
+              "id": "jse4001-deep-7",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Delivery policy and resource access remain qualified",
+              "url": "https://jsinstitute.org/test-now-testing-policies",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "JSE-40-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Entry-level-specific and generic proctoring text conflict; current booking and paid course interiors were not accessed.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped all 30 canonical scope bullets across six unweighted blocks, separating practice-kit percentages. Reviewed and improved all 40 original answers; eight public JavaScript blocks executed in Chrome, with 114 core checks also passing in Node, 109 scenario checks, 19 scenario and 16 introductory dialog cases, scope/timing probes and actual debugger state/source-repair evidence. Resource metadata, vendor copy errors, access limits and pending human review remain explicit. Same-context AI review; human review pending. See docs/research/2026-09-29-jse-40-01-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 6,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-29-cpe2001-deep-review",
       "title": "CPE-20-01 complete guide and learning-content review",
       "rubric_version": 1,

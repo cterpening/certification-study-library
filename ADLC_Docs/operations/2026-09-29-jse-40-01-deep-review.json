@@ -1,0 +1,3670 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "JSE-40-01",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/JSE-40-01-certified-entry-level-javascript-programmer.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "e5c98394464837d26456c8c6c6ddcea8be3e1c317390595c5ce17f6078c6e413",
+  "guide_after_sha256": "10ce046a2ec8eec01823729aed2aef96720ddaa9e0f76be0a497b97ded0cf99d",
+  "prior_records": {
+    "exam": {
+      "code": "JSE-40-01",
+      "level": "beginner",
+      "vendor_id": "js-institute",
+      "title": "JSE Certified Entry-Level JavaScript Programmer",
+      "status": "active",
+      "study_guide_url": "https://jsinstitute.org/jse-certification",
+      "guide_path": "guides/JSE-40-01-certified-entry-level-javascript-programmer.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite is published. Practice predicting, running, testing, and debugging small browser-based JavaScript programs across runtime boundaries, declarations/scope/hoisting, primitive and reference values, conversions/operators/dialogs, conditionals/loops, first-class functions/recursion/timer callbacks, and errors/exceptions. Keep host APIs separate from the core language and verify the active version before purchase."
+    },
+    "review": {
+      "id": "jse-40-01-2026-09-02-source-validation",
+      "exam_code": "JSE-40-01",
+      "guide_path": "guides/JSE-40-01-certified-entry-level-javascript-programmer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/jse-40-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8e693613dc23a1fcc95ab41c1675897253aa341764d5d9127ff7fc48aeb29e46",
+      "objective_coverage": [
+        {
+          "objective_group": "Introduction to JavaScript and Computer Programming (practice-kit distribution 8%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Variables, Data Types, and Type Casting (20%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 2–4"
+          ]
+        },
+        {
+          "objective_group": "Operators and User Interaction (18%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenario 1",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Control Flow — Conditional Execution and Loops (21%)",
+          "guide_sections": [
+            "Section 4",
+            "All scenarios",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Functions (21%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Errors, Exceptions, Debugging, and Troubleshooting (12%)",
+          "guide_sections": [
+            "Section 6",
+            "Scenarios 2–3",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 9,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All six JSE-40-01 scope blocks are mapped through language/host separation; bindings, scope, hoisting, types, references and conversion; operators/dialogs; every named decision and loop; declaration/expression/arrow functions, recursion and timer callbacks; and named errors, exception handling and reproducible debugging. Three browser scenarios, eight labs and 40 original checks are included. The scope page remains the objective authority; 8/20/18/21/21/12 is labeled as the official practice kit's content distribution rather than silently presented as main-syllabus weighting. Nine links are reachable and O'Reilly/Udemy are automation-blocked; none are broken. No recalled/live item, answer dump or copied course question is used."
+    },
+    "sources": [
+      {
+        "id": "jse-40-01-scope",
+        "title": "JSE Certified Entry-Level JavaScript Programmer",
+        "url": "https://jsinstitute.org/jse-certification",
+        "publisher": "OpenEDG JS Institute",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "JSE-40-01"
+        ],
+        "notes": "Canonical active exam page with six-block public scope, format, languages, price, delivery, practice and aligned course links. The scope itself is unweighted."
+      },
+      {
+        "id": "js-institute-testnow-policies",
+        "title": "JS Institute TestNow Testing Policies",
+        "url": "https://jsinstitute.org/test-now-testing-policies",
+        "publisher": "OpenEDG JS Institute",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "JSE-40-01"
+        ],
+        "notes": "Current entry-level default delivery mode, NDA/security, accommodation, age and seven-day failed-attempt wait policies."
+      },
+      {
+        "id": "openedg-jse-40-01-practice",
+        "title": "JSE-40-01 Practice Test Kit",
+        "url": "https://ums.edube.org/products/0-jsi-jse-4001-pt",
+        "publisher": "OpenEDG JS Institute",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "JSE-40-01"
+        ],
+        "notes": "Official USD 29 practice-only voucher, 12-month redemption validity and explicit JSE-40-01 alignment. Publishes a six-block 8/20/18/21/21/12 practice-content distribution absent from the main scope page."
+      },
+      {
+        "id": "openedg-javascript-essentials-1",
+        "title": "JavaScript Essentials 1",
+        "url": "https://jsinstitute.org/javascript-essentials-1",
+        "publisher": "OpenEDG JS Institute / Edube",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "JSE-40-01"
+        ],
+        "notes": "Free officially aligned six-module beginner course with a 40-hour listed study time and detailed syllabus."
+      },
+      {
+        "id": "cisco-javascript-essentials-1",
+        "title": "JavaScript Essentials 1",
+        "url": "https://www.netacad.com/courses/javascript-essentials-1",
+        "publisher": "Cisco Networking Academy / OpenEDG JS Institute",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "JSE-40-01"
+        ],
+        "notes": "Official partner delivery linked from the live JSE page. The guide uses the official course's 40 hours as a planning estimate and asks learners to verify the live listing."
+      },
+      {
+        "id": "mdn-dynamic-javascript",
+        "title": "Dynamic Scripting with JavaScript",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting",
+        "publisher": "Mozilla Developer Network",
+        "authority_class": 2,
+        "source_type": "third-party-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "JSE-40-01"
+        ],
+        "notes": "Current free core learning module with tutorials and skill checks for variables, types, operators, strings, arrays, flow, functions, objects and debugging; some DOM/network material exceeds JSE."
+      },
+      {
+        "id": "microsoft-beginners-javascript-series",
+        "title": "Beginner's Series to JavaScript",
+        "url": "https://learn.microsoft.com/en-us/shows/beginners-series-to-javascript/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "third-party-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "JSE-40-01"
+        ],
+        "notes": "Free 51-part core-concepts video series using Node.js. The supporting GitHub repository was archived June 2026, so use it as a stable legacy supplement and keep browser-dialog practice separate."
+      },
+      {
+        "id": "pluralsight-professional-javascript-path",
+        "title": "Professional JavaScript: From Foundations to Enterprise",
+        "url": "https://www.pluralsight.com/paths/javascript-2022",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "JSE-40-01"
+        ],
+        "notes": "79-hour, 26-course and 38-lab broad path. Select the 6h08m July 2026 fundamentals course and matching entry-level labs rather than consuming the entire path."
+      },
+      {
+        "id": "oreilly-javascript-definitive-guide-7",
+        "title": "JavaScript: The Definitive Guide, 7th Edition",
+        "url": "https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/",
+        "publisher": "O'Reilly / David Flanagan",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "JSE-40-01",
+          "JSA-41-01"
+        ],
+        "notes": "May 2020, 706-page, 21h15m intermediate-to-advanced reference. Select language, object, class, collection, function, and asynchronous chapters against the active exam scope; verify modern API behavior in MDN."
+      },
+      {
+        "id": "udemy-complete-javascript-schmedtmann",
+        "title": "The Complete JavaScript Course 2025: From Zero to Expert",
+        "url": "https://www.udemy.com/course/the-complete-javascript-course/",
+        "publisher": "Udemy / Jonas Schmedtmann",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "JSE-40-01"
+        ],
+        "notes": "71h10m broad bestseller last updated October 2025. Fundamentals 1–2 total 8h50m; add targeted debugging/timer material and keep the official JSE scope authoritative."
+      },
+      {
+        "id": "youtube-freecodecamp-javascript-beginner",
+        "title": "Learn JavaScript - Full Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=PkZNo7MFNFg",
+        "publisher": "freeCodeCamp.org / Beau Carnes",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "JSE-40-01"
+        ],
+        "notes": "Popular free approximately 3h27m 2018 beginner video. Useful for syntax practice but older and not exact current JSE coverage."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "3200273487583bd48f3bcad1c60e8fceb1466fa9b2cbc3336f3da3377d652436",
+      "guide_sections": [
+        "1. Introduction to JavaScript and computer programming",
+        "Hands-on labs",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "ff0382d32fda5ad1e7c71bb5a852a1c63ff8aaaf3cab52b74a100365d58caa0e",
+      "guide_sections": [
+        "1. Introduction to JavaScript and computer programming",
+        "Hands-on labs",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "3292c0194d9322cdcb347c06ca6fd42c69e7d5c441f1ebec6b1db4993af5bbac",
+      "guide_sections": [
+        "1. Introduction to JavaScript and computer programming",
+        "Hands-on labs",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "0459075464a423073c92507510f555cd46f423dd42e8836f6b7fba9dc0335257",
+      "guide_sections": [
+        "2. Variables, data types, and type casting",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "48ec04630dbc49364e4c146ddbb664580907c399c8d0194978157bb01116da87",
+      "guide_sections": [
+        "2. Variables, data types, and type casting",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "26dd024637cd887327c8b0facc4b7b7cd8dc311c27ea288046fedf34f98ebc3a",
+      "guide_sections": [
+        "2. Variables, data types, and type casting",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "d69314fc575c6a79fa7a7be15d7fa9daa9ad987c2ab95d60d9980f051b862188",
+      "guide_sections": [
+        "2. Variables, data types, and type casting",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "ca81cc0c3efc08bf474736fe88540be3bedd6d90bf71574c590d2a8f69dda015",
+      "guide_sections": [
+        "2. Variables, data types, and type casting",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "0679a89a064eae54f531bcceab42209cdbcaa30db658117ff1f2ac400b6dae67",
+      "guide_sections": [
+        "3. Operators and user interaction",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "774dfe653ec638ef9ce631a6ca6f9399bfb6de1dd76034a874955d35ca6f640c",
+      "guide_sections": [
+        "3. Operators and user interaction",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "6ad43fad0a0aa881b274c47fd2a7d4cf6efd30967c05e741ac835ef666466769",
+      "guide_sections": [
+        "3. Operators and user interaction",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "e8782394546d68c7e5457527101bf7ad07d44ed6bea169d0b51ad9e842568c3c",
+      "guide_sections": [
+        "3. Operators and user interaction",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "55fc35220005f7ea71525af1cb4c47fc5446042c232643b2e9dcb612d91452d0",
+      "guide_sections": [
+        "3. Operators and user interaction",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "bca04ad0055c3fb7349da51e36cd040b5f39c861ae31a9820c2cb0f874cff4cd",
+      "guide_sections": [
+        "4. Control flow — conditional execution and loops",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "aad86509acd2f494a0bf86f176d516fd29ef55d829aaba5f1a98ed66f0b43f11",
+      "guide_sections": [
+        "4. Control flow — conditional execution and loops",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "220455c74a6580e2599e950886eb3eaf0a25cf5e7ddb7ef4ce54dd1df9c2a361",
+      "guide_sections": [
+        "4. Control flow — conditional execution and loops",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "c712a5fdb26449f0b4cd6a22bb6f2db0d5551df77c87d2dc22aa5b3fd7204006",
+      "guide_sections": [
+        "4. Control flow — conditional execution and loops",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "4ab7a39d153e9b762c0444ccf802134e2ad11d5dbfe4fcdb9b46e65a0a37ab0d",
+      "guide_sections": [
+        "4. Control flow — conditional execution and loops",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "4b52608d2f954d75226899e867e3b9d00b0daed54368180ba702d3c1a71dde03",
+      "guide_sections": [
+        "5. Functions",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "220f511086af5be73ad34b327fb7a426565d2669007088073112a0d12af05330",
+      "guide_sections": [
+        "5. Functions",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "1215af62be1497f0cd945bf203e370635e84a5e78530019c3191533059f0bac5",
+      "guide_sections": [
+        "5. Functions",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "86a6c507a8a48e00b2a56c47f9ff302078962d22cca9bc757d7a9dbc88b9facd",
+      "guide_sections": [
+        "5. Functions",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "9c11cd28350f138f28882014a5aea07ad43f8083ab62d9ec428141276577b9ac",
+      "guide_sections": [
+        "5. Functions",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "54821cef87d024fa1fae96bfe67e6c3f2e356bc4bc6b03b0f68bbe9c7011d0bd",
+      "guide_sections": [
+        "5. Functions",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "e5257f14ea141c0b6750bd148fcdcd678b5c9f69e5412b50687aae12248b201e",
+      "guide_sections": [
+        "5. Functions",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "c38aa384c2952d2940867d5aa89101b3ca76afb58414276314822b296ecb01fb",
+      "guide_sections": [
+        "6. Errors, exceptions, debugging, and troubleshooting",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "4fc6aa2318261ac0f23c33f29cbb53d5b57b267131f40c63263e632dddb53046",
+      "guide_sections": [
+        "6. Errors, exceptions, debugging, and troubleshooting",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "f67fe48b3c8a310e32f1f3b05c46bb74bbdc84cfce6a5b735220a11d17cef677",
+      "guide_sections": [
+        "6. Errors, exceptions, debugging, and troubleshooting",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "a7ef9d5067e310f2de3085a48580ed4bda133cc51f27fc081320701a2d38ffaf",
+      "guide_sections": [
+        "6. Errors, exceptions, debugging, and troubleshooting",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "239cf06f41cd7ea9064ade37d095495ecf8e682057b1c708ee0a5458a3cc49e6",
+      "guide_sections": [
+        "6. Errors, exceptions, debugging, and troubleshooting",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [
+      "JSE-40-01"
+    ],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "JSE-40-01",
+        "title": "JSE Certified Entry-Level JavaScript Programmer",
+        "url": "https://jsinstitute.org/jse-certification",
+        "guide_path": "guides/JSE-40-01-certified-entry-level-javascript-programmer.md",
+        "snapshot_path": "data\\objective-snapshots\\jse-40-01-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\jse-40-01-official-status.json",
+        "status": "error",
+        "changed": false,
+        "error": "URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 31,
+    "reachable": 25,
+    "access_blocked": 2,
+    "missing_or_error": 4
+  },
+  "source_fetches": [
+    {
+      "id": "jse-40-01-scope",
+      "url": "https://jsinstitute.org/jse-certification",
+      "checked_at": "2026-09-29T20:16:11.726054+00:00",
+      "health": {
+        "id": "jse-40-01-scope",
+        "url": "https://jsinstitute.org/jse-certification",
+        "checked_at": "2026-09-29T20:16:11+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://jsinstitute.org/jse-certification",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "js-institute-testnow-policies",
+      "url": "https://jsinstitute.org/test-now-testing-policies",
+      "checked_at": "2026-09-29T20:16:11.727275+00:00",
+      "health": {
+        "id": "js-institute-testnow-policies",
+        "url": "https://jsinstitute.org/test-now-testing-policies",
+        "checked_at": "2026-09-29T20:16:11+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://jsinstitute.org/test-now-testing-policies",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "openedg-jse-40-01-practice",
+      "url": "https://ums.edube.org/products/0-jsi-jse-4001-pt",
+      "checked_at": "2026-09-29T20:16:11.727842+00:00",
+      "health": {
+        "id": "openedg-jse-40-01-practice",
+        "url": "https://ums.edube.org/products/0-jsi-jse-4001-pt",
+        "checked_at": "2026-09-29T20:16:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://ums.edube.org/products/0-jsi-jse-4001-pt",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "OpenEDG - Store",
+        "canonical_url": "https://ums.edube.org/products/0-jsi-jse-4001-pt",
+        "duration_signals": [],
+        "signal_fingerprint": "8ac6796ffeaf85b82d831822b74d8dfa559e4616254899fcfd17957d804b2131",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://ums.edube.org/products/0-jsi-jse-4001-pt",
+      "sha256": "be2f75f50ac7aec977aca8ec7b169d7d0fa8f58c232560eb3cc5de1f548da2d5",
+      "text_characters": 3213
+    },
+    {
+      "id": "openedg-javascript-essentials-1",
+      "url": "https://jsinstitute.org/javascript-essentials-1",
+      "checked_at": "2026-09-29T20:16:12.517658+00:00",
+      "health": {
+        "id": "openedg-javascript-essentials-1",
+        "url": "https://jsinstitute.org/javascript-essentials-1",
+        "checked_at": "2026-09-29T20:16:12+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://jsinstitute.org/javascript-essentials-1",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "cisco-javascript-essentials-1",
+      "url": "https://www.netacad.com/courses/javascript-essentials-1",
+      "checked_at": "2026-09-29T20:16:30.454484+00:00",
+      "health": {
+        "id": "cisco-javascript-essentials-1",
+        "url": "https://www.netacad.com/courses/javascript-essentials-1",
+        "checked_at": "2026-09-29T20:16:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.netacad.com/courses/javascript-essentials-1",
+        "content_type": "text/html",
+        "page_title": "JavaScript Essentials 1: A Free Course from Cisco",
+        "canonical_url": "https://www.netacad.com/courses/javascript-essentials-1",
+        "duration_signals": [],
+        "signal_fingerprint": "f1603d471ec922c6c5fc237d1c7d2f9edd1003f34064af6b7ab087815970814c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.netacad.com/courses/javascript-essentials-1",
+      "sha256": "e34cf7e241c318788e1194eb4d52c8cc4fa77a74106385245dce2322770d243a",
+      "text_characters": 49
+    },
+    {
+      "id": "mdn-dynamic-javascript",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting",
+      "checked_at": "2026-09-29T20:16:30.454733+00:00",
+      "health": {
+        "id": "mdn-dynamic-javascript",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting",
+        "checked_at": "2026-09-29T20:16:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting",
+        "content_type": "text/html",
+        "page_title": "Dynamic scripting with JavaScript - Learn web development | MDNMDNMDNMozilla",
+        "canonical_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting",
+        "duration_signals": [],
+        "signal_fingerprint": "aa534aa95c02e4f071974e86558ad9b2b65f553bddecde377e2fedbe7225751a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting",
+      "sha256": "2b1fb18808622100f3b172e42d2b39281397a17a6db892186cdbcf57816276e5",
+      "text_characters": 9648
+    },
+    {
+      "id": "microsoft-beginners-javascript-series",
+      "url": "https://learn.microsoft.com/en-us/shows/beginners-series-to-javascript/",
+      "checked_at": "2026-09-29T20:16:30.532648+00:00",
+      "health": {
+        "id": "microsoft-beginners-javascript-series",
+        "url": "https://learn.microsoft.com/en-us/shows/beginners-series-to-javascript/",
+        "checked_at": "2026-09-29T20:16:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/shows/beginners-series-to-javascript/",
+        "content_type": "text/html",
+        "page_title": "Beginner's Series to: JavaScript",
+        "canonical_url": "https://learn.microsoft.com/en-us/shows/beginners-series-to-javascript/",
+        "duration_signals": [],
+        "signal_fingerprint": "baf78c630eef703de701a12a437922986313e61b81de060d4c875357d6f9f569",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/shows/beginners-series-to-javascript/",
+      "sha256": "28cfc4a4777fe5fc945db6850d4621bd3b83182457abd73a594c676b6c0f3404",
+      "text_characters": 1375
+    },
+    {
+      "id": "pluralsight-professional-javascript-path",
+      "url": "https://www.pluralsight.com/paths/javascript-2022",
+      "checked_at": "2026-09-29T20:16:30.870566+00:00",
+      "health": {
+        "id": "pluralsight-professional-javascript-path",
+        "url": "https://www.pluralsight.com/paths/javascript-2022",
+        "checked_at": "2026-09-29T20:16:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/javascript-2022",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Professional JavaScript: From Foundations to Enterprise",
+        "canonical_url": "https://www.pluralsight.com/paths/javascript-2022",
+        "duration_signals": [
+          "10 minutes",
+          "85 Hours"
+        ],
+        "signal_fingerprint": "53699dbc8c28c9399bf2aad4ed6f37b2a17ab4d079e2efa6eb9cc9fba31ada9a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/javascript-2022",
+      "sha256": "68447bcb6b6d1b17dd5e3c08a27876731e2a8f016bd1dc34dfbc5ca178c0d41b",
+      "text_characters": 23920
+    },
+    {
+      "id": "oreilly-javascript-definitive-guide-7",
+      "url": "https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/",
+      "checked_at": "2026-09-29T20:16:30.921158+00:00",
+      "health": {
+        "id": "oreilly-javascript-definitive-guide-7",
+        "url": "https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/",
+        "checked_at": "2026-09-29T20:16:30+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "udemy-complete-javascript-schmedtmann",
+      "url": "https://www.udemy.com/course/the-complete-javascript-course/",
+      "checked_at": "2026-09-29T20:16:31.067882+00:00",
+      "health": {
+        "id": "udemy-complete-javascript-schmedtmann",
+        "url": "https://www.udemy.com/course/the-complete-javascript-course/",
+        "checked_at": "2026-09-29T20:16:31+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/the-complete-javascript-course/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "youtube-freecodecamp-javascript-beginner",
+      "url": "https://www.youtube.com/watch?v=PkZNo7MFNFg",
+      "checked_at": "2026-09-29T20:16:31.155475+00:00",
+      "health": {
+        "id": "youtube-freecodecamp-javascript-beginner",
+        "url": "https://www.youtube.com/watch?v=PkZNo7MFNFg",
+        "checked_at": "2026-09-29T20:16:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=PkZNo7MFNFg",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Learn JavaScript - Full Course for Beginners",
+        "canonical_url": "https://www.youtube.com/watch?v=PkZNo7MFNFg",
+        "duration_signals": [],
+        "signal_fingerprint": "ac74f8d64fc82eecd49ef4489e088b225b99f9d1b73b31bb12e102a673fc3944",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=PkZNo7MFNFg",
+      "sha256": "4527f8cd1e70307860cf52e024e5a797e1d8bf19f734f51e18af71a492a6ab3d",
+      "text_characters": 207
+    },
+    {
+      "id": "mdn-js-grammar-types",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types",
+      "checked_at": "2026-09-29T20:23:15.732197+00:00",
+      "health": {
+        "id": "mdn-js-grammar-types",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types",
+        "checked_at": "2026-09-29T20:23:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types",
+        "content_type": "text/html",
+        "page_title": "Grammar and types - JavaScript | MDNMDNMDNMozilla",
+        "canonical_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types",
+        "duration_signals": [],
+        "signal_fingerprint": "98f87ca8ca42b4e7b144267afae78ff8f707f40b040c8ef1ad205e55ae157850",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types",
+      "sha256": "72dc2069b83940791179cb1af49686c8160f4a8bc04c34068b4a5f3340b0a55d",
+      "text_characters": 27249
+    },
+    {
+      "id": "mdn-js-number",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+      "checked_at": "2026-09-29T20:23:15.732952+00:00",
+      "health": {
+        "id": "mdn-js-number",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+        "checked_at": "2026-09-29T20:23:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+        "content_type": "text/html",
+        "page_title": "Number - JavaScript | MDNMDNMDNMozilla",
+        "canonical_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+        "duration_signals": [],
+        "signal_fingerprint": "7cf6b1d984f47143092af11820197b3d69013f598902a67b6e83775f32d22291",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+      "sha256": "6891bbcd844080179b9e7870293ae8d8a15bead215b9c5d7b264ecdbb31536c3",
+      "text_characters": 10972
+    },
+    {
+      "id": "mdn-js-bigint",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt",
+      "checked_at": "2026-09-29T20:23:15.733424+00:00",
+      "health": {
+        "id": "mdn-js-bigint",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt",
+        "checked_at": "2026-09-29T20:23:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt",
+        "content_type": "text/html",
+        "page_title": "BigInt - JavaScript | MDNMDNMDNMozilla",
+        "canonical_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt",
+        "duration_signals": [],
+        "signal_fingerprint": "e1185735ff2a6a0658920dd079da96ea13ba2d5175a97ac2f7dd9591d252ce42",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt",
+      "sha256": "3d115fdd512cd4deab87f24e246b1015d38356e861d673db12b1621b90b56bda",
+      "text_characters": 11947
+    },
+    {
+      "id": "mdn-js-string",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+      "checked_at": "2026-09-29T20:23:16.326371+00:00",
+      "health": {
+        "id": "mdn-js-string",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+        "checked_at": "2026-09-29T20:23:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+        "content_type": "text/html",
+        "page_title": "String - JavaScript | MDNMDNMDNMozilla",
+        "canonical_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+        "duration_signals": [],
+        "signal_fingerprint": "54c4bca028876a8c4ed43c390173625e8f2f7497a72089515d9502aa62c8f3ca",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+      "sha256": "73731254456da9161516fb99b83a5f563ccf83058d90b017b37836c4997ef2a6",
+      "text_characters": 18686
+    },
+    {
+      "id": "mdn-js-array",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+      "checked_at": "2026-09-29T20:23:16.327076+00:00",
+      "health": {
+        "id": "mdn-js-array",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+        "checked_at": "2026-09-29T20:23:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+        "content_type": "text/html",
+        "page_title": "Array - JavaScript | MDNMDNMDNMozilla",
+        "canonical_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+        "duration_signals": [],
+        "signal_fingerprint": "093726194c002f61f8b02d9fe20f31b7e2288fc9e1aca9f48bf1bf73a8fda3d3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+      "sha256": "881f7b275b7aca32a5ca41005026ddc98e27074767305a37657941f85ed1e016",
+      "text_characters": 38564
+    },
+    {
+      "id": "mdn-js-operator-precedence",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence",
+      "checked_at": "2026-09-29T20:23:16.761665+00:00",
+      "health": {
+        "id": "mdn-js-operator-precedence",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence",
+        "checked_at": "2026-09-29T20:23:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence",
+        "content_type": "text/html",
+        "page_title": "Operator precedence - JavaScript | MDNMDNMDNMozilla",
+        "canonical_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence",
+        "duration_signals": [],
+        "signal_fingerprint": "2e1a34d8c2f7dac97683203f2c961948a38436e6247e2d1e2648153916f0cc42",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence",
+      "sha256": "c0e28dfd4d2fc28a39b9b59aba67a234c0348d0426041a599932d457722b2fc6",
+      "text_characters": 16107
+    },
+    {
+      "id": "mdn-js-for-in",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in",
+      "checked_at": "2026-09-29T20:23:16.819159+00:00",
+      "health": {
+        "id": "mdn-js-for-in",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in",
+        "checked_at": "2026-09-29T20:23:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in",
+        "content_type": "text/html",
+        "page_title": "for...in - JavaScript | MDNMDNMDNMozilla",
+        "canonical_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in",
+        "duration_signals": [],
+        "signal_fingerprint": "f6b4f12fc29522396002331150354f00ccafe3177aa20410983b6e7634b5681b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in",
+      "sha256": "e91a621feba2ec2b6c07525dcc3b694f55b6a81e52387a4db76d565052be0365",
+      "text_characters": 9745
+    },
+    {
+      "id": "mdn-js-try-catch",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch",
+      "checked_at": "2026-09-29T20:23:17.249435+00:00",
+      "health": {
+        "id": "mdn-js-try-catch",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch",
+        "checked_at": "2026-09-29T20:23:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch",
+        "content_type": "text/html",
+        "page_title": "try...catch - JavaScript | MDNMDNMDNMozilla",
+        "canonical_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch",
+        "duration_signals": [],
+        "signal_fingerprint": "fdb826f7cc0c485e2efbde1105a3818c1ca2d51f50d35e63851a4be3aa30c1f6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch",
+      "sha256": "0c42651a7c0365d22f1020c5c50c7be9d35684d57627f585ded04716e1db6a56",
+      "text_characters": 11258
+    },
+    {
+      "id": "mdn-window-prompt",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt",
+      "checked_at": "2026-09-29T20:23:17.249741+00:00",
+      "health": {
+        "id": "mdn-window-prompt",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt",
+        "checked_at": "2026-09-29T20:23:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt",
+        "content_type": "text/html",
+        "page_title": "Window: prompt() method - Web APIs | MDNMDNMDNMozilla",
+        "canonical_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt",
+        "duration_signals": [],
+        "signal_fingerprint": "363becddc74237a6a4105b1fe7d4851006499c7e700b47ec0acb6776ce51c0df",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt",
+      "sha256": "00276fc75a24f85b80fbc43f09c3d555f62b19bceefc98d9ee0deb0b8f3a399a",
+      "text_characters": 3531
+    },
+    {
+      "id": "mdn-window-confirm",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm",
+      "checked_at": "2026-09-29T20:23:17.747727+00:00",
+      "health": {
+        "id": "mdn-window-confirm",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm",
+        "checked_at": "2026-09-29T20:23:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm",
+        "content_type": "text/html",
+        "page_title": "Window: confirm() method - Web APIs | MDNMDNMDNMozilla",
+        "canonical_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm",
+        "duration_signals": [],
+        "signal_fingerprint": "856353117edc63c0878211bf7394ad90a1cfd478fd309c402b3d9bcb214d0fa5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm",
+      "sha256": "eeac8a54ca50b43c942ed0cab7c9e6e15e24b667d7b718b2446da900198cda06",
+      "text_characters": 2298
+    },
+    {
+      "id": "mdn-window-alert",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/alert",
+      "checked_at": "2026-09-29T20:23:17.795325+00:00",
+      "health": {
+        "id": "mdn-window-alert",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/alert",
+        "checked_at": "2026-09-29T20:23:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/alert",
+        "content_type": "text/html",
+        "page_title": "Window: alert() method - Web APIs | MDNMDNMDNMozilla",
+        "canonical_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/alert",
+        "duration_signals": [],
+        "signal_fingerprint": "792b7374c3700e2d1a0fedb6dd7e7e4dd7d93ca0375f4a33ad5234056221832e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/alert",
+      "sha256": "ca68228efb98f1f0c8d23036650424c293fc9c98df392f4819935451d3855e66",
+      "text_characters": 1671
+    },
+    {
+      "id": "mdn-window-set-timeout",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout",
+      "checked_at": "2026-09-29T20:23:17.795684+00:00",
+      "health": {
+        "id": "mdn-window-set-timeout",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout",
+        "checked_at": "2026-09-29T20:23:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout",
+        "content_type": "text/html",
+        "page_title": "Window: setTimeout() method - Web APIs | MDNMDNMDNMozilla",
+        "canonical_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout",
+        "duration_signals": [
+          "15 minutes",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "72a5b906e0f49aa3c5a23bb7b5c358963bc8f8f8f70e1a2bf64c2fe788ba8f1c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout",
+      "sha256": "c00ddba498b797b2a44ccd68128b3aa302bf72fedce73a56bdaf7a7c400d15d3",
+      "text_characters": 17288
+    },
+    {
+      "id": "mdn-window-set-interval",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval",
+      "checked_at": "2026-09-29T20:23:18.234493+00:00",
+      "health": {
+        "id": "mdn-window-set-interval",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval",
+        "checked_at": "2026-09-29T20:23:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval",
+        "content_type": "text/html",
+        "page_title": "Window: setInterval() method - Web APIs | MDNMDNMDNMozilla",
+        "canonical_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval",
+        "duration_signals": [],
+        "signal_fingerprint": "4c83b1424bd64b257de8d67230eba45b6b964d6603c312822c579ca24c45e571",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval",
+      "sha256": "fddb30ce1903c4573b3da4520d59953ae49c53094db7807465f94d3f45082194",
+      "text_characters": 11581
+    },
+    {
+      "id": "mdn-js-functions",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions",
+      "checked_at": "2026-09-29T20:23:18.256075+00:00",
+      "health": {
+        "id": "mdn-js-functions",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions",
+        "checked_at": "2026-09-29T20:23:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions",
+        "content_type": "text/html",
+        "page_title": "Functions - JavaScript | MDNMDNMDNMozilla",
+        "canonical_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions",
+        "duration_signals": [],
+        "signal_fingerprint": "0775ef920bc80b5e125619f35876eae9272668bf2579b06237e08c9f0d0408fb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions",
+      "sha256": "225d460fc121782999df20b75a2d16eeb164cefe396b9a58585f05192df4b581",
+      "text_characters": 22568
+    },
+    {
+      "id": "mdn-js-typeof",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof",
+      "checked_at": "2026-09-29T20:23:18.316063+00:00",
+      "health": {
+        "id": "mdn-js-typeof",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof",
+        "checked_at": "2026-09-29T20:23:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof",
+        "content_type": "text/html",
+        "page_title": "typeof - JavaScript | MDNMDNMDNMozilla",
+        "canonical_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof",
+        "duration_signals": [],
+        "signal_fingerprint": "907251db5eb1a7aca8a95c4ea4c8b7834b0bec64682f88caeaac5eb3f6abf480",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof",
+      "sha256": "07e92fe9f5e35c2a4bc1e40abdf12d1d5ab44bb15eace73f06cf28e5b65bbacf",
+      "text_characters": 7577
+    },
+    {
+      "id": "chrome-devtools-js-debug",
+      "url": "https://developer.chrome.com/docs/devtools/javascript",
+      "checked_at": "2026-09-29T20:23:18.738251+00:00",
+      "health": {
+        "id": "chrome-devtools-js-debug",
+        "url": "https://developer.chrome.com/docs/devtools/javascript",
+        "checked_at": "2026-09-29T20:23:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.chrome.com/docs/devtools/javascript",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Debug JavaScript | Chrome DevTools | Chrome for Developers",
+        "canonical_url": "https://developer.chrome.com/docs/devtools/javascript",
+        "duration_signals": [],
+        "signal_fingerprint": "6e45017fc488c96e9d00fbf234f677abf0cdf3d9e0066529f59cac809eab2a7c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.chrome.com/docs/devtools/javascript",
+      "sha256": "2e27e81b7441765a4972b7423a4a1f260507331732c2c59b69ba7ea2d37b0c75",
+      "text_characters": 11666
+    },
+    {
+      "id": "chrome-devtools-debugger-protocol",
+      "url": "https://chromedevtools.github.io/devtools-protocol/tot/Debugger/",
+      "checked_at": "2026-09-29T20:23:18.749203+00:00",
+      "health": {
+        "id": "chrome-devtools-debugger-protocol",
+        "url": "https://chromedevtools.github.io/devtools-protocol/tot/Debugger/",
+        "checked_at": "2026-09-29T20:23:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://chromedevtools.github.io/devtools-protocol/tot/Debugger/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Redirecting to DevTools Protocol: Debugger...",
+        "canonical_url": "https://chromedevtools.github.io/devtools-protocol/tot/Debugger/",
+        "duration_signals": [],
+        "signal_fingerprint": "3e48c9da23375e436e0af865e4e2aa8f9a605eb0c733bbd405fa73e8bccbe00a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://chromedevtools.github.io/devtools-protocol/tot/Debugger/",
+      "sha256": "79b680e2b63dfa1aab2bc3de4a46845e37e77ffeb59a9ef6434c27d421a583a8",
+      "text_characters": 72
+    },
+    {
+      "id": "microsoft-beginners-javascript-repo",
+      "url": "https://github.com/microsoft/beginners-intro-javascript-node",
+      "checked_at": "2026-09-29T20:23:18.982271+00:00",
+      "health": {
+        "id": "microsoft-beginners-javascript-repo",
+        "url": "https://github.com/microsoft/beginners-intro-javascript-node",
+        "checked_at": "2026-09-29T20:23:18+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://github.com/microsoft/beginners-intro-javascript-node",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "mdn-js-let",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let",
+      "checked_at": "2026-09-29T20:26:21.220128+00:00",
+      "health": {
+        "id": "mdn-js-let",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let",
+        "checked_at": "2026-09-29T20:26:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let",
+        "content_type": "text/html",
+        "page_title": "let - JavaScript | MDNMDNMDNMozilla",
+        "canonical_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let",
+        "duration_signals": [],
+        "signal_fingerprint": "c90787c72fd6c5f50243ee33a5403f42589007a5b604e4732b7a03b9b7c5f000",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let",
+      "sha256": "93cf9d269261c85fa833101505b9d7e47aeee380711ef4a8e7a37f2b07f9f8ef",
+      "text_characters": 10140
+    },
+    {
+      "id": "mdn-js-bigint-function",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/BigInt",
+      "checked_at": "2026-09-29T20:26:21.220934+00:00",
+      "health": {
+        "id": "mdn-js-bigint-function",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/BigInt",
+        "checked_at": "2026-09-29T20:26:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/BigInt",
+        "content_type": "text/html",
+        "page_title": "BigInt() constructor - JavaScript | MDNMDNMDNMozilla",
+        "canonical_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/BigInt",
+        "duration_signals": [],
+        "signal_fingerprint": "1d19773e9919d1349ab766de07237519587b3f716e622c8966ade98f21e5d4dc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/BigInt",
+      "sha256": "09cb51cc369035eb0a390d3b333dee2bad0b613718af6f0b4206826f5bdb9111",
+      "text_characters": 2203
+    }
+  ],
+  "added_source_ids": [
+    "mdn-js-grammar-types",
+    "mdn-js-number",
+    "mdn-js-bigint",
+    "mdn-js-string",
+    "mdn-js-array",
+    "mdn-js-operator-precedence",
+    "mdn-js-for-in",
+    "mdn-js-try-catch",
+    "mdn-window-prompt",
+    "mdn-window-confirm",
+    "mdn-window-alert",
+    "mdn-window-set-timeout",
+    "mdn-window-set-interval",
+    "mdn-js-functions",
+    "mdn-js-typeof",
+    "mdn-js-let",
+    "mdn-js-bigint-function",
+    "chrome-devtools-js-debug",
+    "chrome-devtools-debugger-protocol",
+    "microsoft-beginners-javascript-repo"
+  ],
+  "findings": [
+    {
+      "id": "jse4001-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Canonical exam scope and practice distribution differ",
+      "url": "https://jsinstitute.org/jse-certification",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "JSE-40-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The full canonical page has 30 bullets in six blocks without percentage weights; the separate practice kit lists a content distribution.",
+      "recommendation": "Remove percentages from domain headings, preserve explicitly labeled practice distribution and map all 30 scope bullets, excluding the holder profile.",
+      "disposition": "applied",
+      "source_id": "jse-40-01-scope",
+      "resolution": "Remove percentages from domain headings, preserve explicitly labeled practice distribution and map all 30 scope bullets, excluding the holder profile."
+    },
+    {
+      "id": "jse4001-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Cancellation and blank text must precede numeric conversion",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "JSE-40-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Prompt returns null for cancellation and an empty string for accepted empty input. Number conversion alone can turn either into zero.",
+      "recommendation": "Add an explicit bounded decimal-text contract and execute cancellation, blank, malformed, boundary and valid-zero dialog paths.",
+      "disposition": "applied",
+      "source_id": "mdn-window-prompt",
+      "resolution": "Add an explicit bounded decimal-text contract and execute cancellation, blank, malformed, boundary and valid-zero dialog paths."
+    },
+    {
+      "id": "jse4001-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Global lexical bindings are not global-object properties",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "JSE-40-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Top-level let differs from classic-script var; modules introduce another scope boundary. typeof also does not bypass temporal dead zones.",
+      "recommendation": "Add precise scope prose, classic/module probes and executed typeof/hoisting checks.",
+      "disposition": "applied",
+      "source_id": "mdn-js-let",
+      "resolution": "Add precise scope prose, classic/module probes and executed typeof/hoisting checks."
+    },
+    {
+      "id": "jse4001-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Safe integers and BigInt conversion need operation-specific rules",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "JSE-40-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Larger Number values may lose adjacent integer distinctions; explicit BigInt inputs have different error classes.",
+      "recommendation": "Add exact text conversion, unsafe integer collision and RangeError/SyntaxError/TypeError comparisons in the original workbook.",
+      "disposition": "applied",
+      "source_id": "mdn-js-number",
+      "resolution": "Add exact text conversion, unsafe integer collision and RangeError/SyntaxError/TypeError comparisons in the original workbook."
+    },
+    {
+      "id": "jse4001-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Timer scheduling is not a guaranteed clock",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "JSE-40-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Callback scheduling can be delayed; a scheduling try does not enclose later callback execution.",
+      "recommendation": "Complete a bounded timer state machine with cleanup, restart and late-answer tests, and capture an actual later callback page error.",
+      "disposition": "applied",
+      "source_id": "mdn-window-set-timeout",
+      "resolution": "Complete a bounded timer state machine with cleanup, restart and late-answer tests, and capture an actual later callback page error."
+    },
+    {
+      "id": "jse4001-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Paused state changes do not repair source code",
+      "url": "https://developer.chrome.com/docs/devtools/javascript",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "JSE-40-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Debugging tutorial distinguishes variable inspection/change from correcting the original source.",
+      "recommendation": "Execute an original paused/stepped local probe, alter a local before arithmetic, rerun unchanged code and verify the source correction separately.",
+      "disposition": "applied",
+      "source_id": "chrome-devtools-js-debug",
+      "resolution": "Execute an original paused/stepped local probe, alter a local before arithmetic, rerun unchanged code and verify the source correction separately."
+    },
+    {
+      "id": "jse4001-deep-7",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Delivery policy and resource access remain qualified",
+      "url": "https://jsinstitute.org/test-now-testing-policies",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "JSE-40-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Entry-level-specific and generic proctoring text conflict; current booking and paid course interiors were not accessed.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "jse-40-01-scope",
+      "review": "Current exam, course and policy pages examined; no distinct unseen release feed adopted. Current active code retained with public-copy and delivery limits."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "public_code_blocks": 8,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "checked_at": "2026-09-29T20:43:42.208860+00:00",
+      "passed": true,
+      "public_code_blocks": 8,
+      "public_example_sha256": [
+        "1f35a143859b02cef88a58a8d28ca847fed550009af6838af6d08e26b7808e28",
+        "b5fc07819d6f392cf4ea35058d26cf94f2ad0d2aa18e28acfe06777086f27ef0",
+        "f667f3b043cf7717815ce043fa303da9c1dad7c43265ab5383a8b8e96820776b",
+        "d8fc5238694f54f2cb000f74def29b92b7fd291eb6050c518b08a1e509285216",
+        "12cac1996ba4abb70580174d2ac87d7a9be97a053c7d0b23b46407a6e6750f03",
+        "d97b744e34fc084ded348ffe08aee27b1a05ee1ce699ffdab317c8373998578f",
+        "91d206e3e8aa91955644b1a76826689f1d7c7667ebf6a912660875bc26fb350d",
+        "f03f114a6faed9914a3dc2ead33afa00e843678faee1758ed0970ae438b47ca9"
+      ],
+      "core_checks": 114,
+      "scenario_checks": 109,
+      "scenario_dialog_cases": 19,
+      "introductory_dialog_cases": [
+        {
+          "input": null,
+          "console": [
+            {
+              "type": "log",
+              "text": "Cancelled"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": null
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "",
+          "console": [
+            {
+              "type": "error",
+              "text": "Quantity is blank"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": ""
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "  ",
+          "console": [
+            {
+              "type": "error",
+              "text": "Quantity is blank"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "  "
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "0",
+          "console": [
+            {
+              "type": "log",
+              "text": "Quantity: 0"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "0"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": " 10 ",
+          "console": [
+            {
+              "type": "log",
+              "text": "Quantity: 10"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": " 10 "
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "0001",
+          "console": [
+            {
+              "type": "log",
+              "text": "Quantity: 1"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "0001"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "1000",
+          "console": [
+            {
+              "type": "log",
+              "text": "Quantity: 1000"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "1000"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "1001",
+          "console": [
+            {
+              "type": "error",
+              "text": "Quantity must be 0..1000"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "1001"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "9007199254740993",
+          "console": [
+            {
+              "type": "error",
+              "text": "Quantity must be 0..1000"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "9007199254740993"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "1x",
+          "console": [
+            {
+              "type": "error",
+              "text": "Use decimal digits only"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "1x"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "1.5",
+          "console": [
+            {
+              "type": "error",
+              "text": "Use decimal digits only"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "1.5"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "-1",
+          "console": [
+            {
+              "type": "error",
+              "text": "Use decimal digits only"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "-1"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "+1",
+          "console": [
+            {
+              "type": "error",
+              "text": "Use decimal digits only"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "+1"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "Infinity",
+          "console": [
+            {
+              "type": "error",
+              "text": "Use decimal digits only"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "Infinity"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "1e2",
+          "console": [
+            {
+              "type": "error",
+              "text": "Use decimal digits only"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "1e2"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "0x10",
+          "console": [
+            {
+              "type": "error",
+              "text": "Use decimal digits only"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "0x10"
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "other_public_blocks": [
+        {
+          "block_index": 1,
+          "context": "[first.count, second.count, first === second]",
+          "result": [
+            2,
+            2,
+            true
+          ],
+          "console": [],
+          "errors": [],
+          "passed": true
+        },
+        {
+          "block_index": 2,
+          "context": null,
+          "result": null,
+          "console": [
+            {
+              "type": "log",
+              "text": "name Ari"
+            },
+            {
+              "type": "log",
+              "text": "score 88"
+            },
+            {
+              "type": "log",
+              "text": "88"
+            },
+            {
+              "type": "log",
+              "text": "91"
+            }
+          ],
+          "errors": [],
+          "passed": true
+        },
+        {
+          "block_index": 3,
+          "context": "[double(3), triple(3), quadruple(3), apply(5, quadruple)]",
+          "result": [
+            6,
+            9,
+            12,
+            20
+          ],
+          "console": [],
+          "errors": [],
+          "passed": true
+        }
+      ],
+      "browser_version": "154.0.8037.58",
+      "node_version": "v24.18.1",
+      "timing_probe": {
+        "source": "console.time(\"original bounded sum\"); let sum = 0; for (let i = 1; i <= 100; i++) sum += i; console.timeEnd(\"original bounded sum\"); globalThis.jseMeasuredSum = sum;",
+        "console": [
+          {
+            "type": "timeEnd",
+            "text": "original bounded sum: 0.033203125 ms"
+          }
+        ],
+        "result": 5050,
+        "boundary": "One actual bounded console measurement; duration is an observation, not a benchmark or performance guarantee."
+      },
+      "debugger_probe_passed": true,
+      "boundary": "All eight exact public JavaScript blocks executed in fresh local Chrome pages; function declarations supplied four documented calls. Core workbook also ran in Node. Actual modal dialogs, timers and CDP debugging used original local fixtures; no visual DevTools UI, external demo, paid lesson, account or infrastructure lab. Eight broader learner activities remain proposed."
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Direct canonical/policy/course requests and objective monitor failed; full public web-reader pages support manual scope comparison. Existing snapshots retained; no successful automatic hash comparison claimed.",
+    "Source reading is section-specific. Cisco/YouTube returned shells, OReilly/Udemy HTTP403 and the protocol URL a redirect requiring a rendered public viewer. Paid lessons/questions, transcripts, account pages and current booking UI remain unreviewed.",
+    "Eight public JavaScript blocks executed locally in fresh headless Chrome; function-definition example supplied four calls. Core workbook also ran in Node. Actual modal dialogs, timers, scope/timing probes and CDP debugger fixture do not constitute completed vendor labs or visual DevTools UI practice.",
+    "Eight broader learner activities remain proposed. Execution covers selected inputs in the recorded Chrome/Node versions; callback count/duration is not a cross-browser timing guarantee. Demo business rules are fictional and exposed state is for learning.",
+    "TestNow proctoring wording conflicts and associated JSA title copy error remain visible. No purchase, exam attempt, account, enrollment, software installation, runtime/service/permission change, external message or human review."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 180,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "checked_at": "2026-09-29T20:43:42.208860+00:00",
+    "passed": true,
+    "public_code_blocks": 8,
+    "public_example_sha256": [
+      "1f35a143859b02cef88a58a8d28ca847fed550009af6838af6d08e26b7808e28",
+      "b5fc07819d6f392cf4ea35058d26cf94f2ad0d2aa18e28acfe06777086f27ef0",
+      "f667f3b043cf7717815ce043fa303da9c1dad7c43265ab5383a8b8e96820776b",
+      "d8fc5238694f54f2cb000f74def29b92b7fd291eb6050c518b08a1e509285216",
+      "12cac1996ba4abb70580174d2ac87d7a9be97a053c7d0b23b46407a6e6750f03",
+      "d97b744e34fc084ded348ffe08aee27b1a05ee1ce699ffdab317c8373998578f",
+      "91d206e3e8aa91955644b1a76826689f1d7c7667ebf6a912660875bc26fb350d",
+      "f03f114a6faed9914a3dc2ead33afa00e843678faee1758ed0970ae438b47ca9"
+    ],
+    "core_checks": 114,
+    "scenario_checks": 109,
+    "scenario_dialog_cases": 19,
+    "introductory_dialog_cases": [
+      {
+        "input": null,
+        "console": [
+          {
+            "type": "log",
+            "text": "Cancelled"
+          }
+        ],
+        "dialogs": [
+          {
+            "type": "prompt",
+            "message": "Quantity: decimal digits, 0..1000",
+            "input": null
+          }
+        ],
+        "passed": true
+      },
+      {
+        "input": "",
+        "console": [
+          {
+            "type": "error",
+            "text": "Quantity is blank"
+          }
+        ],
+        "dialogs": [
+          {
+            "type": "prompt",
+            "message": "Quantity: decimal digits, 0..1000",
+            "input": ""
+          }
+        ],
+        "passed": true
+      },
+      {
+        "input": "  ",
+        "console": [
+          {
+            "type": "error",
+            "text": "Quantity is blank"
+          }
+        ],
+        "dialogs": [
+          {
+            "type": "prompt",
+            "message": "Quantity: decimal digits, 0..1000",
+            "input": "  "
+          }
+        ],
+        "passed": true
+      },
+      {
+        "input": "0",
+        "console": [
+          {
+            "type": "log",
+            "text": "Quantity: 0"
+          }
+        ],
+        "dialogs": [
+          {
+            "type": "prompt",
+            "message": "Quantity: decimal digits, 0..1000",
+            "input": "0"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "input": " 10 ",
+        "console": [
+          {
+            "type": "log",
+            "text": "Quantity: 10"
+          }
+        ],
+        "dialogs": [
+          {
+            "type": "prompt",
+            "message": "Quantity: decimal digits, 0..1000",
+            "input": " 10 "
+          }
+        ],
+        "passed": true
+      },
+      {
+        "input": "0001",
+        "console": [
+          {
+            "type": "log",
+            "text": "Quantity: 1"
+          }
+        ],
+        "dialogs": [
+          {
+            "type": "prompt",
+            "message": "Quantity: decimal digits, 0..1000",
+            "input": "0001"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "input": "1000",
+        "console": [
+          {
+            "type": "log",
+            "text": "Quantity: 1000"
+          }
+        ],
+        "dialogs": [
+          {
+            "type": "prompt",
+            "message": "Quantity: decimal digits, 0..1000",
+            "input": "1000"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "input": "1001",
+        "console": [
+          {
+            "type": "error",
+            "text": "Quantity must be 0..1000"
+          }
+        ],
+        "dialogs": [
+          {
+            "type": "prompt",
+            "message": "Quantity: decimal digits, 0..1000",
+            "input": "1001"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "input": "9007199254740993",
+        "console": [
+          {
+            "type": "error",
+            "text": "Quantity must be 0..1000"
+          }
+        ],
+        "dialogs": [
+          {
+            "type": "prompt",
+            "message": "Quantity: decimal digits, 0..1000",
+            "input": "9007199254740993"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "input": "1x",
+        "console": [
+          {
+            "type": "error",
+            "text": "Use decimal digits only"
+          }
+        ],
+        "dialogs": [
+          {
+            "type": "prompt",
+            "message": "Quantity: decimal digits, 0..1000",
+            "input": "1x"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "input": "1.5",
+        "console": [
+          {
+            "type": "error",
+            "text": "Use decimal digits only"
+          }
+        ],
+        "dialogs": [
+          {
+            "type": "prompt",
+            "message": "Quantity: decimal digits, 0..1000",
+            "input": "1.5"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "input": "-1",
+        "console": [
+          {
+            "type": "error",
+            "text": "Use decimal digits only"
+          }
+        ],
+        "dialogs": [
+          {
+            "type": "prompt",
+            "message": "Quantity: decimal digits, 0..1000",
+            "input": "-1"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "input": "+1",
+        "console": [
+          {
+            "type": "error",
+            "text": "Use decimal digits only"
+          }
+        ],
+        "dialogs": [
+          {
+            "type": "prompt",
+            "message": "Quantity: decimal digits, 0..1000",
+            "input": "+1"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "input": "Infinity",
+        "console": [
+          {
+            "type": "error",
+            "text": "Use decimal digits only"
+          }
+        ],
+        "dialogs": [
+          {
+            "type": "prompt",
+            "message": "Quantity: decimal digits, 0..1000",
+            "input": "Infinity"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "input": "1e2",
+        "console": [
+          {
+            "type": "error",
+            "text": "Use decimal digits only"
+          }
+        ],
+        "dialogs": [
+          {
+            "type": "prompt",
+            "message": "Quantity: decimal digits, 0..1000",
+            "input": "1e2"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "input": "0x10",
+        "console": [
+          {
+            "type": "error",
+            "text": "Use decimal digits only"
+          }
+        ],
+        "dialogs": [
+          {
+            "type": "prompt",
+            "message": "Quantity: decimal digits, 0..1000",
+            "input": "0x10"
+          }
+        ],
+        "passed": true
+      }
+    ],
+    "other_public_blocks": [
+      {
+        "block_index": 1,
+        "context": "[first.count, second.count, first === second]",
+        "result": [
+          2,
+          2,
+          true
+        ],
+        "console": [],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "block_index": 2,
+        "context": null,
+        "result": null,
+        "console": [
+          {
+            "type": "log",
+            "text": "name Ari"
+          },
+          {
+            "type": "log",
+            "text": "score 88"
+          },
+          {
+            "type": "log",
+            "text": "88"
+          },
+          {
+            "type": "log",
+            "text": "91"
+          }
+        ],
+        "errors": [],
+        "passed": true
+      },
+      {
+        "block_index": 3,
+        "context": "[double(3), triple(3), quadruple(3), apply(5, quadruple)]",
+        "result": [
+          6,
+          9,
+          12,
+          20
+        ],
+        "console": [],
+        "errors": [],
+        "passed": true
+      }
+    ],
+    "browser_version": "154.0.8037.58",
+    "node_version": "v24.18.1",
+    "timing_probe": {
+      "source": "console.time(\"original bounded sum\"); let sum = 0; for (let i = 1; i <= 100; i++) sum += i; console.timeEnd(\"original bounded sum\"); globalThis.jseMeasuredSum = sum;",
+      "console": [
+        {
+          "type": "timeEnd",
+          "text": "original bounded sum: 0.033203125 ms"
+        }
+      ],
+      "result": 5050,
+      "boundary": "One actual bounded console measurement; duration is an observation, not a benchmark or performance guarantee."
+    },
+    "debugger_probe_passed": true,
+    "boundary": "All eight exact public JavaScript blocks executed in fresh local Chrome pages; function declarations supplied four documented calls. Core workbook also ran in Node. Actual modal dialogs, timers and CDP debugging used original local fixtures; no visual DevTools UI, external demo, paid lesson, account or infrastructure lab. Eight broader learner activities remain proposed.",
+    "learning_catalog_consistency": "passed"
+  },
+  "source_reading_boundaries": {
+    "jse-40-01-scope": "Direct request and objective monitor timed out; complete current public page read via web reader. Active JSE-40-01, 30 single/multiple-select questions, 40 minutes plus five for tutorial, 70%, English/Spanish, TestNow, no prerequisite; public USD69/86/95 options and USD29 practice. Canonical scope has 30 unweighted bullets in 3/5/5/5/7/5 groups; manually compared retained snapshot, excluding later holder profile. Associated JSA title incorrectly refers to a Python data analyst; not adopted. No successful automatic hash comparison, snapshot rewrite or booking verification.",
+    "js-institute-testnow-policies": "Direct timeout; complete public policy read via web reader. Opening section calls entry-level delivery non-proctored by default, but later generic delivery text calls proctoring the global default. Conflict disclosed; no determination of current booking. Failed-retake wait seven days with another voucher potentially required. Admission/NDA/security/accommodation context read; no account or exam action.",
+    "openedg-jse-40-01-practice": "Complete 3213-character public product body read. USD29 practice-only product excludes exam attempt; multiple launches described without current exact count; 12-month redemption validity. Percentages 8/20/18/21/21/12 describe practice-content distribution, not canonical exam weights or item counts. Public Practice-tab instructions read, account UI and paid questions not accessed. Static cart-confirmation template is not a transaction.",
+    "openedg-javascript-essentials-1": "Direct timeout; complete six-module public landing read via web reader. Forty hours, free, English, beginner, no prerequisite. Module two mentions Symbol beyond the named exam primitive bullet; course breadth does not amend scope. Duplicated introductory copy noted. No enrollment, lessons or assessments entered.",
+    "cisco-javascript-essentials-1": "HTTP200 with only a 49-character application shell. Curriculum and partner duration not verified; approximately 40-hour planning reference derives from aligned OpenEDG course. No account or lessons.",
+    "mdn-dynamic-javascript": "Complete 9648-character module index read across two extracts. HTML/CSS prerequisites and DOM, network, JSON and events show broader scope than JSE. Linked lessons/challenges not completed; selected separate reference pages documented individually. Fifteen to 25 hours is an author estimate, not provider runtime.",
+    "microsoft-beginners-javascript-series": "Complete 1375-character public series page read. Node-based core foundations, but current extract lacks episode count/runtime. Prior 51-part count not reverified; four to six hours is an author estimate. No video playback.",
+    "pluralsight-professional-javascript-path": "Captured 23920-character listing; read headline and selected novice/entry-level/start-of-practitioner portion (first 190 lines), not full path. Current 28 courses, 38 labs, 85 hours. David Tucker Fundamentals 6h08m (July 7, 2026) plus Maaike Debugging 1h35m (October 20, 2023) total 463 minutes/7h43m. Selected variables/data 100, scope 40, control-flow/collections 64-minute labs total 204/3h24m. Advanced/AI/Map topics exceed JSE. No subscription lessons or labs entered.",
+    "oreilly-javascript-definitive-guide-7": "HTTP403. Prior 21h15m runtime and paid contents not reverified. Eight to 12 selective hours is an author planning estimate. Shared source health does not imply a new JSA guide review.",
+    "udemy-complete-javascript-schmedtmann": "HTTP403. Prior 71h10m runtime and paid contents not reverified; 12–18 selective hours is an author estimate. No lessons or purchased questions.",
+    "youtube-freecodecamp-javascript-beginner": "HTTP200 with 207-character title/shell body. No transcript or playback; prior approximately 3h27m duration not verified. Title-level availability is not content review.",
+    "mdn-js-grammar-types": "Read declaration_and_initialization, variable_scope, variable_hoisting, global_variables and constants sections; full page not audited. Broad global-object wording qualified with the let reference and separate classic-script/module probes. Sloppy-global shorthand not adopted as universal behavior.",
+    "mdn-js-number": "Read number_encoding, number_coercion including subsections, and integer_range_for_number. Conversion of null/blank/undefined, full-string numeric conversion and explicit Number(BigInt) informed traces. Safe-integer guarantee concerns adjacent distinct values; some larger integers remain exactly representable, qualifying imprecise shorthand. Full page not audited.",
+    "mdn-js-bigint": "Read type_information, operators, comparisons and bigint_coercion. Mixed numeric operations, unary-plus restriction and explicit conversions checked. Cryptography/JSON/primes sections not reviewed or adopted.",
+    "mdn-js-string": "Read character_access, comparing_strings and UTF16/code-point/grapheme sections. Strict indexed assignment, immutable strings and code-unit length versus code-point iteration checked. Full locale/text-processing reference not audited or added to scope.",
+    "mdn-js-array": "Read description, length/numerical-properties relation, copying/mutating methods, copy/append/pop/unshift/indexOf/merge examples. Return values, shallow references, delete holes and length shrinking tested. Full 38564-character reference not audited; broad JSON-deep-copy advice not adopted.",
+    "mdn-js-operator-precedence": "Read precedence_and_associativity, short-circuiting, complete table and its notes. Grouping differs from left-to-right operand evaluation; skipped operands remain skipped. Exponentiation right associativity and restriction on unary left operand tested. Broader generator/await/optional-chain material supplies context, not added objectives.",
+    "mdn-js-for-in": "Read description and own-properties-only section. Enumerable string keys include inherited keys; symbols excluded. Original prototype fixture and own-key filter tested. Full mutation-during-iteration discussion not audited.",
+    "mdn-js-try-catch": "Read description, finally block and returning-from-finally sections. Cleanup, pending completion and overriding return semantics inform examples. Full chapter not audited. Scheduling try versus later callback failure separately observed in browser.",
+    "mdn-window-prompt": "Complete 3531-character page read, including suppression, cancel=null and accepted-empty-string behavior. Actual modal dialogs automated on original local fixtures; no universal promise every browser context displays them.",
+    "mdn-window-confirm": "Complete 2298-character page read. Actual accepted/dismissed confirm tested; suppression returning false remains a platform caveat, not a simulated suppression test.",
+    "mdn-window-alert": "Complete 1671-character page read. Actual alert handled and undefined return verified; suppression/waiting caveats retained. No production UI recommendation.",
+    "mdn-window-set-timeout": "Read parameters, return value, asynchronous-functions discussion, maximum delay, longer-delay reasons with subsections, and setting/clearing examples. Small-delay scheduling versus exact timing, signed 32-bit conversion/overflow, nesting/background delays qualified. No exact cross-browser throttle policy or parallel-execution promise adopted; full page not audited.",
+    "mdn-window-set-interval": "Read parameters, return value, delay restrictions, shared timer-ID pool and execution-duration warning. Original repeated callback and cancellation tested; ticks are callback counts, not seconds. No remote polling or full page audit.",
+    "mdn-js-functions": "Read declarations, expressions, hoisting, recursion, arrows and no-separate-this sections. Object-reference values, declaration/expression timing and lexical-this explanation used. Full closure/default/rest chapter not audited.",
+    "mdn-js-typeof": "Read description/type table and undeclared-versus-uninitialized-variable section. Same-scope TDZ typeof throws while unresolved-name typeof can return undefined; tested. document.all section not reviewed or adopted.",
+    "mdn-js-let": "Read description only. Top-level lexical bindings are not global-object properties; module scope differs. Actual classic and module probes verify selected claims. Full page not audited.",
+    "mdn-js-bigint-function": "Complete 2203-character page read, dated September 3, 2026. Fractional Number→RangeError, fractional text→SyntaxError and null→TypeError tested. Constructor restriction and other input rules read; link to living 2027 specification does not set an exam language version.",
+    "chrome-devtools-js-debug": "Complete 11666-character tutorial read in two extracts. String-concatenation input bug, breakpoints/step/scope/watch/evaluation/variable editing and source repair reviewed. Google external demo not executed, no visual DevTools clicks. Original local fixture used actual CDP pause/step/inspect/change/resume, then a source correction.",
+    "chrome-devtools-debugger-protocol": "Static HTTP200 was a 72-character redirect shell. HTML revealed current JavaScript viewer https://chromedevtools.github.io/devtools-protocol/#/Debugger; fresh unsigned headless Chrome rendered 26150 characters. Read selected enable/evaluateOnCallFrame/setVariableValue/stepInto/stepOut/stepOver and paused/resumed contracts plus adjacent source/breakpoint context. Not a complete protocol audit. Actual local probe used enable, pause events, stepOver, evaluation, setVariableValue and resume, not every method read.",
+    "microsoft-beginners-javascript-repo": "Direct health fetch failed; full public GitHub README and directory listing read via web reader. Repository archived June 15, 2026; README assumes experience with another programming language and uses Node console samples. Individual source files not opened and repository not installed/executed."
+  },
+  "public_examples": [
+    {
+      "language": "javascript",
+      "code": "(() => {\n  const entered = prompt(\"Quantity: decimal digits, 0..1000\");\n  if (entered === null) {\n    console.log(\"Cancelled\");\n  } else if (entered.trim() === \"\") {\n    console.error(\"Quantity is blank\");\n  } else if (!/^[0-9]+$/.test(entered.trim())) {\n    console.error(\"Use decimal digits only\");\n  } else {\n    const quantity = Number(entered);\n    if (!Number.isSafeInteger(quantity) || quantity > 1000) {\n      console.error(\"Quantity must be 0..1000\");\n    } else {\n      console.log(\"Quantity:\", quantity);\n    }\n  }\n})();\n",
+      "sha256": "1f35a143859b02cef88a58a8d28ca847fed550009af6838af6d08e26b7808e28"
+    },
+    {
+      "language": "javascript",
+      "code": "const first = { count: 1 };\nconst second = first;\nsecond.count += 1;\n// first.count is now 2\n",
+      "sha256": "b5fc07819d6f392cf4ea35058d26cf94f2ad0d2aa18e28acfe06777086f27ef0"
+    },
+    {
+      "language": "javascript",
+      "code": "const record = { name: \"Ari\", score: 88 };\nfor (const key in record) {\n  console.log(key, record[key]);\n}\n\nconst scores = [88, 91];\nfor (const score of scores) {\n  console.log(score);\n}\n",
+      "sha256": "f667f3b043cf7717815ce043fa303da9c1dad7c43265ab5383a8b8e96820776b"
+    },
+    {
+      "language": "javascript",
+      "code": "function double(value) { return value * 2; }\nconst triple = function (value) { return value * 3; };\nconst quadruple = value => value * 4;\n\nfunction apply(value, operation) {\n  return operation(value);\n}\n",
+      "sha256": "d8fc5238694f54f2cb000f74def29b92b7fd291eb6050c518b08a1e509285216"
+    },
+    {
+      "language": "javascript",
+      "code": "(() => {\n  \"use strict\";\n  const passed = [];\n  function same(actual, expected, label) {\n    if (!Object.is(actual, expected)) throw new Error(label);\n    passed.push(label);\n  }\n  function raises(action, Type, label) {\n    let caught = false;\n    try { action(); } catch (error) { caught = error instanceof Type; }\n    same(caught, true, label);\n  }\n  same(beforeDeclaration(3), 6, \"function declaration before source position\");\n  function beforeDeclaration(value) { return value * 2; }\n  same(legacy, undefined, \"var begins as undefined\");\n  var legacy = 7;\n  same(legacy, 7, \"var assignment occurs in sequence\");\n  raises(() => { return lexical; let lexical = 2; }, ReferenceError, \"temporal dead zone\");\n  raises(() => { return typeof lexical; let lexical = 2; }, ReferenceError, \"typeof in temporal dead zone\");\n  same(typeof jseDefinitelyUndeclaredName, \"undefined\", \"typeof unresolved name\");\n  let outer = 4;\n  { let outer = 9; same(outer, 9, \"inner binding\"); }\n  same(outer, 4, \"outer binding unchanged\");\n  const record = { count: 1 };\n  record.count += 1;\n  same(record.count, 2, \"const object can mutate\");\n  raises(() => { record = {}; }, TypeError, \"const binding cannot reassign\");\n  const values = [true, 2, 2n, undefined, null, \"text\"];\n  const types = [\"boolean\", \"number\", \"bigint\", \"undefined\", \"object\", \"string\"];\n  for (let i = 0; i < values.length; i++) same(typeof values[i], types[i], `type ${i}`);\n  same(Number(null), 0, \"null conversion is zero\");\n  same(Number(\"  \"), 0, \"blank conversion is zero\");\n  same(Number(undefined), NaN, \"undefined conversion is NaN\");\n  same(Number(\"12x\"), NaN, \"Number rejects suffix\");\n  same(parseInt(\"12x\", 10), 12, \"parseInt accepts numeric prefix\");\n  same(Number(\"2e2\"), 200, \"Number accepts exponent text\");\n  same(Number.isFinite(Infinity), false, \"infinity is not finite\");\n  same(Number.isNaN(\"word\"), false, \"isNaN does not coerce text\");\n  same(Number.isNaN(Number(\"word\")), true, \"isNaN after conversion\");\n  same(NaN === NaN, false, \"NaN strict self equality\");\n  same(0.1 + 0.2 === 0.3, false, \"binary fraction rounding\");\n  same(Number.MAX_SAFE_INTEGER + 1 === Number.MAX_SAFE_INTEGER + 2, true, \"unsafe integer collision\");\n  same(Number.isSafeInteger(Number(\"9007199254740993\")), false, \"unsafe converted integer\");\n  same(BigInt(\"9007199254740993\"), 9007199254740993n, \"BigInt preserves integer text\");\n  same(7n / 2n, 3n, \"BigInt integer division\");\n  same(Number(7n), 7, \"explicit Number conversion\");\n  raises(() => 1n + 1, TypeError, \"mixed numeric addition\");\n  raises(() => +1n, TypeError, \"unary plus on BigInt\");\n  raises(() => BigInt(1.5), RangeError, \"fractional number to BigInt\");\n  raises(() => BigInt(\"1.5\"), SyntaxError, \"fractional text to BigInt\");\n  raises(() => BigInt(null), TypeError, \"null to BigInt\");\n  same(1n + \"2\", \"12\", \"BigInt and string concatenate\");\n  same(2n === 2, false, \"strict different numeric types\");\n  same(2n == 2, true, \"loose numeric equality\");\n  for (const value of [false, 0, -0, 0n, \"\", null, undefined, NaN])\n    same(Boolean(value), false, \"falsy input\");\n  same(Boolean([]), true, \"empty array truthy\");\n  same(Boolean({}), true, \"empty object truthy\");\n  same(Boolean(\"false\"), true, \"nonempty false text truthy\");\n  same(0 || 10, 10, \"or replaces meaningful zero\");\n  same(\"ready\" && 5, 5, \"and returns selected operand\");\n  let calls = 0;\n  const skipped = false && (++calls > 0);\n  same(skipped, false, \"short circuit result\");\n  same(calls, 0, \"short circuit skipped right side\");\n  same(\"2\" + 3, \"23\", \"plus concatenation\");\n  same(\"2\" * 3, 6, \"multiplication numeric coercion\");\n  same(-7 % 3, -1, \"signed remainder\");\n  same(2 + 3 * 4, 14, \"precedence grouping\");\n  same(2 ** 3 ** 2, 512, \"right associative exponentiation\");\n  raises(() => new Function(\"return -2 ** 2;\"), SyntaxError, \"unparenthesized unary exponent syntax\");\n  same((-2) ** 2, 4, \"parenthesized negative base\");\n  same(-(2 ** 2), -4, \"negated exponent result\");\n  let counter = 4;\n  const old = counter++;\n  const fresh = ++counter;\n  same(`${old},${fresh},${counter}`, \"4,6,6\", \"separate increments\");\n  same(typeof [], \"object\", \"array typeof\");\n  same([] instanceof Array, true, \"same-realm array prototype\");\n  same(2 instanceof Number, false, \"primitive not boxed Number\");\n  const name = \"Ari\";\n  same(name.toUpperCase(), \"ARI\", \"string method result\");\n  same(name, \"Ari\", \"string unchanged\");\n  raises(() => { name[0] = \"E\"; }, TypeError, \"strict string indexed assignment\");\n  same(\"😄\".length, 2, \"UTF16 length\");\n  let points = 0;\n  for (const point of \"😄\") { points += 1; same(point, \"😄\", \"string iterator code point\"); }\n  same(points, 1, \"one code point in two code units\");\n  const items = [4, 5];\n  same(items.push(6), 3, \"push returns length\");\n  same(items.unshift(3), 4, \"unshift returns length\");\n  same(items.pop(), 6, \"pop returns removed value\");\n  same(items.indexOf(4), 1, \"indexOf found\");\n  same(items.indexOf(99), -1, \"indexOf absent\");\n  same(items.reverse() === items, true, \"reverse returns same mutated array\");\n  same(items.join(\",\"), \"5,4,3\", \"reverse order\");\n  const slice = items.slice(0, 2);\n  same(slice.join(\",\"), \"5,4\", \"slice end excluded\");\n  same(slice === items, false, \"slice creates outer array\");\n  same(items.concat([8]).join(\",\"), \"5,4,3,8\", \"concat result\");\n  same(items.length, 3, \"concat leaves source length\");\n  same([].pop(), undefined, \"empty pop\");\n  same(items[99], undefined, \"ordinary missing index\");\n  const nested = [{ count: 1 }];\n  const copy = nested.slice();\n  copy[0].count = 2;\n  same(nested[0].count, 2, \"shallow copied element still shared\");\n  const alias = nested;\n  same(alias === nested, true, \"assignment preserves identity\");\n  const slots = [1, 2, 3];\n  delete slots[1];\n  same(slots.length, 3, \"delete keeps array length\");\n  same(1 in slots, false, \"delete creates empty slot\");\n  slots.length = 1;\n  same(2 in slots, false, \"shorter length removes elements\");\n  const inherited = Object.create({ inherited: 7 });\n  inherited.own = 8;\n  const keys = [];\n  for (const key in inherited) keys.push(key);\n  same(keys.includes(\"inherited\") && keys.includes(\"own\"), true, \"for-in includes inherited enumerable keys\");\n  same(Object.keys(inherited).join(\",\"), \"own\", \"own-key filter\");\n  let sum = 0;\n  for (let i = 0; i < 6; i++) {\n    if (i === 2) continue;\n    if (i === 5) break;\n    sum += i;\n  }\n  same(sum, 8, \"for update after continue\");\n  let visits = 0;\n  while (visits < 0) visits++;\n  same(visits, 0, \"while zero visits\");\n  do { visits++; } while (visits < 0);\n  same(visits, 1, \"do one visit\");\n  let branch = \"\";\n  switch (\"2\") {\n    case 2: branch = \"number\"; break;\n    case \"2\": branch += \"text\";\n    default: branch += \":end\";\n  }\n  same(branch, \"text:end\", \"strict switch matching and fallthrough\");\n  function mutate(value) { value.count++; value = { count: 99 }; }\n  const shared = { count: 3 };\n  mutate(shared);\n  same(shared.count, 4, \"parameter reference copied by value\");\n  function noResult() { const local = 1; void local; }\n  same(noResult(), undefined, \"no explicit result\");\n  const triple = function (value) { return value * 3; };\n  const quadruple = value => value * 4;\n  function apply(value, operation) { return operation(value); }\n  same(apply(3, triple), 9, \"function expression callback\");\n  same(apply(3, quadruple), 12, \"arrow callback\");\n  function factorial(n) {\n    if (!Number.isInteger(n) || n < 0 || n > 12) throw new RangeError(\"0..12 required\");\n    return n <= 1 ? 1 : n * factorial(n - 1);\n  }\n  same(factorial(0), 1, \"factorial zero\");\n  same(factorial(5), 120, \"factorial progress\");\n  same(factorial(12), 479001600, \"factorial bounded endpoint\");\n  for (const invalid of [-1, 13, 1.5, NaN]) raises(() => factorial(invalid), RangeError, \"factorial rejects invalid\");\n  raises(() => new Function(\"let = ;\"), SyntaxError, \"fixed malformed source compiled inside try\");\n  raises(() => jseDefinitelyUndeclaredName, ReferenceError, \"unresolved identifier\");\n  raises(() => null.value, TypeError, \"null property access\");\n  raises(() => new Array(-1), RangeError, \"invalid array length\");\n  const order = [];\n  try { order.push(\"try\"); throw new Error(\"original fixture\"); }\n  catch (error) { order.push(error.message); }\n  finally { order.push(\"finally\"); }\n  same(order.join(\",\"), \"try,original fixture,finally\", \"catch then cleanup\");\n  function overridingReturn() { try { return 1; } finally { return 2; } }\n  same(overridingReturn(), 2, \"finally return masks pending result\");\n  globalThis.jseTrace = { passed: passed.length, labels: passed };\n  console.log(`${passed.length} core checks passed`);\n})();\n",
+      "sha256": "12cac1996ba4abb70580174d2ac87d7a9be97a053c7d0b23b46407a6e6750f03"
+    },
+    {
+      "language": "javascript",
+      "code": "(() => {\n  \"use strict\";\n  const orders = [];\n  function parseQuantity(text) {\n    if (text === null) return { kind: \"cancelled\" };\n    if (typeof text !== \"string\") return { kind: \"invalid\" };\n    const cleaned = text.trim();\n    if (cleaned === \"\") return { kind: \"empty\" };\n    if (!/^[0-9]+$/.test(cleaned)) return { kind: \"invalid\" };\n    const quantity = Number(cleaned);\n    if (!Number.isSafeInteger(quantity) || quantity > 1000) return { kind: \"invalid\" };\n    return { kind: \"ok\", quantity };\n  }\n  function makeQuote(quantity, tier) {\n    if (!Number.isSafeInteger(quantity) || quantity < 0 || quantity > 1000)\n      throw new RangeError(\"Quantity must be 0..1000\");\n    if (tier !== \"basic\" && tier !== \"premium\") throw new TypeError(\"Unknown tier\");\n    const baseCents = tier === \"basic\" ? 250 : 400;\n    const unitCents = quantity >= 10 ? baseCents * 9 / 10 : baseCents;\n    return { quantity, tier, unitCents, totalCents: quantity * unitCents };\n  }\n  function runOrder() {\n    const parsed = parseQuantity(prompt(\"Quantity: decimal digits, 0..1000\"));\n    if (parsed.kind !== \"ok\") {\n      console.log(`Quantity ${parsed.kind}`);\n      return { status: parsed.kind };\n    }\n    const enteredTier = prompt(\"Tier: basic or premium\", \"basic\");\n    if (enteredTier === null) return { status: \"cancelled\" };\n    const tier = enteredTier.trim().toLowerCase();\n    if (tier !== \"basic\" && tier !== \"premium\") return { status: \"invalid-tier\" };\n    const order = makeQuote(parsed.quantity, tier);\n    if (!confirm(`Record ${order.quantity} ${tier} units for ${order.totalCents} cents?`))\n      return { status: \"declined\" };\n    orders.push(order);\n    const alertResult = alert(`Recorded ${order.totalCents} cents`);\n    return { status: \"recorded\", order, alertReturnedUndefined: alertResult === undefined };\n  }\n  // Original in-memory demo: there is no account, payment or remote order submission.\n  globalThis.jseOrder = { parseQuantity, makeQuote, runOrder, orders };\n  globalThis.jseOrderResult = runOrder();\n})();\n",
+      "sha256": "d97b744e34fc084ded348ffe08aee27b1a05ee1ce699ffdab317c8373998578f"
+    },
+    {
+      "language": "javascript",
+      "code": "(() => {\n  \"use strict\";\n  // Original code-reading prompts, not certification exam items.\n  const questions = [\n    { text: 'typeof \"5\"', answer: \"string\" },\n    { text: \"2 + 3 * 4\", answer: \"14\" }\n  ];\n  const state = { status: \"idle\", position: 0, correct: 0, ticks: 0, events: [] };\n  let warningId, intervalId, deadlineId;\n  function clearTimers() {\n    clearTimeout(warningId);\n    clearInterval(intervalId);\n    clearTimeout(deadlineId);\n  }\n  function finish(status) {\n    if (state.status !== \"running\") return false;\n    state.status = status;\n    state.events.push(status);\n    clearTimers();\n    return true;\n  }\n  function start(warningMs = 1000, deadlineMs = 2000, tickMs = 250) {\n    if (state.status === \"running\") throw new Error(\"Already running\");\n    for (const delay of [warningMs, deadlineMs, tickMs])\n      if (!Number.isInteger(delay) || delay < 1 || delay > 10000)\n        throw new RangeError(\"Use integer delays in 1..10000 ms\");\n    if (warningMs >= deadlineMs) throw new RangeError(\"Warning must precede deadline\");\n    clearTimers();\n    Object.assign(state, { status: \"running\", position: 0, correct: 0, ticks: 0, events: [\"start\"] });\n    warningId = setTimeout(() => {\n      if (state.status === \"running\") state.events.push(\"warning\");\n    }, warningMs);\n    intervalId = setInterval(() => {\n      if (state.status === \"running\") state.ticks++;\n    }, tickMs);\n    deadlineId = setTimeout(() => finish(\"timed-out\"), deadlineMs);\n    state.events.push(\"setup-complete\");\n  }\n  function answer(text) {\n    if (state.status !== \"running\") return false;\n    if (typeof text !== \"string\") throw new TypeError(\"Answer must be text\");\n    const question = questions[state.position];\n    if (text.trim() === question.answer) state.correct++;\n    state.position++;\n    if (state.position === questions.length) finish(\"completed\");\n    return true;\n  }\n  function currentQuestion() {\n    return state.status === \"running\" ? questions[state.position].text : null;\n  }\n  globalThis.jseTimed = { state, start, answer, currentQuestion, cancel: () => finish(\"cancelled\") };\n  // In a fresh browser console, use jseTimed.start(), jseTimed.currentQuestion(), jseTimed.answer(text).\n  // Tick counts are callback counts, not a measurement of wall-clock seconds.\n})();\n",
+      "sha256": "91d206e3e8aa91955644b1a76826689f1d7c7667ebf6a912660875bc26fb350d"
+    },
+    {
+      "language": "javascript",
+      "code": "(() => {\n  \"use strict\";\n  function validateInventory(items) {\n    if (!Array.isArray(items)) throw new TypeError(\"Inventory must be an array\");\n    const codes = [];\n    for (const item of items) {\n      if (item === null || typeof item !== \"object\" || typeof item.code !== \"string\" ||\n          item.code === \"\" || !Number.isSafeInteger(item.stock) || item.stock < 0 || item.stock > 1000)\n        throw new TypeError(\"Invalid inventory record\");\n      if (codes.includes(item.code)) throw new Error(\"Duplicate item code\");\n      codes.push(item.code);\n    }\n  }\n  function take(items, code, quantity) {\n    validateInventory(items);\n    if (typeof code !== \"string\") throw new TypeError(\"Code must be text\");\n    if (!Number.isSafeInteger(quantity) || quantity < 0 || quantity > 1000)\n      throw new RangeError(\"Quantity must be 0..1000\");\n    for (const item of items) {\n      if (item.code === code) {\n        if (quantity > item.stock) return { status: \"insufficient\", stock: item.stock };\n        item.stock -= quantity;\n        return { status: \"ok\", stock: item.stock };\n      }\n    }\n    return { status: \"missing\" };\n  }\n  const items = [{ code: \"CABLE\", stock: 4 }, { code: \"ADAPTER\", stock: 0 }];\n  const ownFields = [];\n  for (const key in items[0]) {\n    if (Object.hasOwn(items[0], key)) ownFields.push(`${key}=${items[0][key]}`);\n  }\n  const first = take(items, \"CABLE\", 1);\n  const zero = take(items, \"ADAPTER\", 0);\n  const missing = take(items, \"OTHER\", 0);\n  console.log(ownFields.join(\", \"));\n  console.log(first.status, first.stock, zero.status, zero.stock, missing.status);\n  globalThis.jseInventory = { items, take, validateInventory };\n})();\n",
+      "sha256": "f03f114a6faed9914a3dc2ead33afa00e843678faee1758ed0970ae438b47ca9"
+    }
+  ],
+  "execution_receipts": {
+    "core-checks": {
+      "checked_at": "2026-09-29T20:31:04.050710+00:00",
+      "source_sha256": "12cac1996ba4abb70580174d2ac87d7a9be97a053c7d0b23b46407a6e6750f03",
+      "source": "(() => {\n  \"use strict\";\n  const passed = [];\n  function same(actual, expected, label) {\n    if (!Object.is(actual, expected)) throw new Error(label);\n    passed.push(label);\n  }\n  function raises(action, Type, label) {\n    let caught = false;\n    try { action(); } catch (error) { caught = error instanceof Type; }\n    same(caught, true, label);\n  }\n  same(beforeDeclaration(3), 6, \"function declaration before source position\");\n  function beforeDeclaration(value) { return value * 2; }\n  same(legacy, undefined, \"var begins as undefined\");\n  var legacy = 7;\n  same(legacy, 7, \"var assignment occurs in sequence\");\n  raises(() => { return lexical; let lexical = 2; }, ReferenceError, \"temporal dead zone\");\n  raises(() => { return typeof lexical; let lexical = 2; }, ReferenceError, \"typeof in temporal dead zone\");\n  same(typeof jseDefinitelyUndeclaredName, \"undefined\", \"typeof unresolved name\");\n  let outer = 4;\n  { let outer = 9; same(outer, 9, \"inner binding\"); }\n  same(outer, 4, \"outer binding unchanged\");\n  const record = { count: 1 };\n  record.count += 1;\n  same(record.count, 2, \"const object can mutate\");\n  raises(() => { record = {}; }, TypeError, \"const binding cannot reassign\");\n  const values = [true, 2, 2n, undefined, null, \"text\"];\n  const types = [\"boolean\", \"number\", \"bigint\", \"undefined\", \"object\", \"string\"];\n  for (let i = 0; i < values.length; i++) same(typeof values[i], types[i], `type ${i}`);\n  same(Number(null), 0, \"null conversion is zero\");\n  same(Number(\"  \"), 0, \"blank conversion is zero\");\n  same(Number(undefined), NaN, \"undefined conversion is NaN\");\n  same(Number(\"12x\"), NaN, \"Number rejects suffix\");\n  same(parseInt(\"12x\", 10), 12, \"parseInt accepts numeric prefix\");\n  same(Number(\"2e2\"), 200, \"Number accepts exponent text\");\n  same(Number.isFinite(Infinity), false, \"infinity is not finite\");\n  same(Number.isNaN(\"word\"), false, \"isNaN does not coerce text\");\n  same(Number.isNaN(Number(\"word\")), true, \"isNaN after conversion\");\n  same(NaN === NaN, false, \"NaN strict self equality\");\n  same(0.1 + 0.2 === 0.3, false, \"binary fraction rounding\");\n  same(Number.MAX_SAFE_INTEGER + 1 === Number.MAX_SAFE_INTEGER + 2, true, \"unsafe integer collision\");\n  same(Number.isSafeInteger(Number(\"9007199254740993\")), false, \"unsafe converted integer\");\n  same(BigInt(\"9007199254740993\"), 9007199254740993n, \"BigInt preserves integer text\");\n  same(7n / 2n, 3n, \"BigInt integer division\");\n  same(Number(7n), 7, \"explicit Number conversion\");\n  raises(() => 1n + 1, TypeError, \"mixed numeric addition\");\n  raises(() => +1n, TypeError, \"unary plus on BigInt\");\n  raises(() => BigInt(1.5), RangeError, \"fractional number to BigInt\");\n  raises(() => BigInt(\"1.5\"), SyntaxError, \"fractional text to BigInt\");\n  raises(() => BigInt(null), TypeError, \"null to BigInt\");\n  same(1n + \"2\", \"12\", \"BigInt and string concatenate\");\n  same(2n === 2, false, \"strict different numeric types\");\n  same(2n == 2, true, \"loose numeric equality\");\n  for (const value of [false, 0, -0, 0n, \"\", null, undefined, NaN])\n    same(Boolean(value), false, \"falsy input\");\n  same(Boolean([]), true, \"empty array truthy\");\n  same(Boolean({}), true, \"empty object truthy\");\n  same(Boolean(\"false\"), true, \"nonempty false text truthy\");\n  same(0 || 10, 10, \"or replaces meaningful zero\");\n  same(\"ready\" && 5, 5, \"and returns selected operand\");\n  let calls = 0;\n  const skipped = false && (++calls > 0);\n  same(skipped, false, \"short circuit result\");\n  same(calls, 0, \"short circuit skipped right side\");\n  same(\"2\" + 3, \"23\", \"plus concatenation\");\n  same(\"2\" * 3, 6, \"multiplication numeric coercion\");\n  same(-7 % 3, -1, \"signed remainder\");\n  same(2 + 3 * 4, 14, \"precedence grouping\");\n  same(2 ** 3 ** 2, 512, \"right associative exponentiation\");\n  raises(() => new Function(\"return -2 ** 2;\"), SyntaxError, \"unparenthesized unary exponent syntax\");\n  same((-2) ** 2, 4, \"parenthesized negative base\");\n  same(-(2 ** 2), -4, \"negated exponent result\");\n  let counter = 4;\n  const old = counter++;\n  const fresh = ++counter;\n  same(`${old},${fresh},${counter}`, \"4,6,6\", \"separate increments\");\n  same(typeof [], \"object\", \"array typeof\");\n  same([] instanceof Array, true, \"same-realm array prototype\");\n  same(2 instanceof Number, false, \"primitive not boxed Number\");\n  const name = \"Ari\";\n  same(name.toUpperCase(), \"ARI\", \"string method result\");\n  same(name, \"Ari\", \"string unchanged\");\n  raises(() => { name[0] = \"E\"; }, TypeError, \"strict string indexed assignment\");\n  same(\"😄\".length, 2, \"UTF16 length\");\n  let points = 0;\n  for (const point of \"😄\") { points += 1; same(point, \"😄\", \"string iterator code point\"); }\n  same(points, 1, \"one code point in two code units\");\n  const items = [4, 5];\n  same(items.push(6), 3, \"push returns length\");\n  same(items.unshift(3), 4, \"unshift returns length\");\n  same(items.pop(), 6, \"pop returns removed value\");\n  same(items.indexOf(4), 1, \"indexOf found\");\n  same(items.indexOf(99), -1, \"indexOf absent\");\n  same(items.reverse() === items, true, \"reverse returns same mutated array\");\n  same(items.join(\",\"), \"5,4,3\", \"reverse order\");\n  const slice = items.slice(0, 2);\n  same(slice.join(\",\"), \"5,4\", \"slice end excluded\");\n  same(slice === items, false, \"slice creates outer array\");\n  same(items.concat([8]).join(\",\"), \"5,4,3,8\", \"concat result\");\n  same(items.length, 3, \"concat leaves source length\");\n  same([].pop(), undefined, \"empty pop\");\n  same(items[99], undefined, \"ordinary missing index\");\n  const nested = [{ count: 1 }];\n  const copy = nested.slice();\n  copy[0].count = 2;\n  same(nested[0].count, 2, \"shallow copied element still shared\");\n  const alias = nested;\n  same(alias === nested, true, \"assignment preserves identity\");\n  const slots = [1, 2, 3];\n  delete slots[1];\n  same(slots.length, 3, \"delete keeps array length\");\n  same(1 in slots, false, \"delete creates empty slot\");\n  slots.length = 1;\n  same(2 in slots, false, \"shorter length removes elements\");\n  const inherited = Object.create({ inherited: 7 });\n  inherited.own = 8;\n  const keys = [];\n  for (const key in inherited) keys.push(key);\n  same(keys.includes(\"inherited\") && keys.includes(\"own\"), true, \"for-in includes inherited enumerable keys\");\n  same(Object.keys(inherited).join(\",\"), \"own\", \"own-key filter\");\n  let sum = 0;\n  for (let i = 0; i < 6; i++) {\n    if (i === 2) continue;\n    if (i === 5) break;\n    sum += i;\n  }\n  same(sum, 8, \"for update after continue\");\n  let visits = 0;\n  while (visits < 0) visits++;\n  same(visits, 0, \"while zero visits\");\n  do { visits++; } while (visits < 0);\n  same(visits, 1, \"do one visit\");\n  let branch = \"\";\n  switch (\"2\") {\n    case 2: branch = \"number\"; break;\n    case \"2\": branch += \"text\";\n    default: branch += \":end\";\n  }\n  same(branch, \"text:end\", \"strict switch matching and fallthrough\");\n  function mutate(value) { value.count++; value = { count: 99 }; }\n  const shared = { count: 3 };\n  mutate(shared);\n  same(shared.count, 4, \"parameter reference copied by value\");\n  function noResult() { const local = 1; void local; }\n  same(noResult(), undefined, \"no explicit result\");\n  const triple = function (value) { return value * 3; };\n  const quadruple = value => value * 4;\n  function apply(value, operation) { return operation(value); }\n  same(apply(3, triple), 9, \"function expression callback\");\n  same(apply(3, quadruple), 12, \"arrow callback\");\n  function factorial(n) {\n    if (!Number.isInteger(n) || n < 0 || n > 12) throw new RangeError(\"0..12 required\");\n    return n <= 1 ? 1 : n * factorial(n - 1);\n  }\n  same(factorial(0), 1, \"factorial zero\");\n  same(factorial(5), 120, \"factorial progress\");\n  same(factorial(12), 479001600, \"factorial bounded endpoint\");\n  for (const invalid of [-1, 13, 1.5, NaN]) raises(() => factorial(invalid), RangeError, \"factorial rejects invalid\");\n  raises(() => new Function(\"let = ;\"), SyntaxError, \"fixed malformed source compiled inside try\");\n  raises(() => jseDefinitelyUndeclaredName, ReferenceError, \"unresolved identifier\");\n  raises(() => null.value, TypeError, \"null property access\");\n  raises(() => new Array(-1), RangeError, \"invalid array length\");\n  const order = [];\n  try { order.push(\"try\"); throw new Error(\"original fixture\"); }\n  catch (error) { order.push(error.message); }\n  finally { order.push(\"finally\"); }\n  same(order.join(\",\"), \"try,original fixture,finally\", \"catch then cleanup\");\n  function overridingReturn() { try { return 1; } finally { return 2; } }\n  same(overridingReturn(), 2, \"finally return masks pending result\");\n  globalThis.jseTrace = { passed: passed.length, labels: passed };\n  console.log(`${passed.length} core checks passed`);\n})();\n",
+      "browser_version": "154.0.8037.58",
+      "node_version": "v24.18.1",
+      "node_stdout": "114 core checks passed\n",
+      "node_stderr": "",
+      "browser_result": {
+        "passed": 114,
+        "labels": [
+          "function declaration before source position",
+          "var begins as undefined",
+          "var assignment occurs in sequence",
+          "temporal dead zone",
+          "typeof in temporal dead zone",
+          "typeof unresolved name",
+          "inner binding",
+          "outer binding unchanged",
+          "const object can mutate",
+          "const binding cannot reassign",
+          "type 0",
+          "type 1",
+          "type 2",
+          "type 3",
+          "type 4",
+          "type 5",
+          "null conversion is zero",
+          "blank conversion is zero",
+          "undefined conversion is NaN",
+          "Number rejects suffix",
+          "parseInt accepts numeric prefix",
+          "Number accepts exponent text",
+          "infinity is not finite",
+          "isNaN does not coerce text",
+          "isNaN after conversion",
+          "NaN strict self equality",
+          "binary fraction rounding",
+          "unsafe integer collision",
+          "unsafe converted integer",
+          "BigInt preserves integer text",
+          "BigInt integer division",
+          "explicit Number conversion",
+          "mixed numeric addition",
+          "unary plus on BigInt",
+          "fractional number to BigInt",
+          "fractional text to BigInt",
+          "null to BigInt",
+          "BigInt and string concatenate",
+          "strict different numeric types",
+          "loose numeric equality",
+          "falsy input",
+          "falsy input",
+          "falsy input",
+          "falsy input",
+          "falsy input",
+          "falsy input",
+          "falsy input",
+          "falsy input",
+          "empty array truthy",
+          "empty object truthy",
+          "nonempty false text truthy",
+          "or replaces meaningful zero",
+          "and returns selected operand",
+          "short circuit result",
+          "short circuit skipped right side",
+          "plus concatenation",
+          "multiplication numeric coercion",
+          "signed remainder",
+          "precedence grouping",
+          "right associative exponentiation",
+          "unparenthesized unary exponent syntax",
+          "parenthesized negative base",
+          "negated exponent result",
+          "separate increments",
+          "array typeof",
+          "same-realm array prototype",
+          "primitive not boxed Number",
+          "string method result",
+          "string unchanged",
+          "strict string indexed assignment",
+          "UTF16 length",
+          "string iterator code point",
+          "one code point in two code units",
+          "push returns length",
+          "unshift returns length",
+          "pop returns removed value",
+          "indexOf found",
+          "indexOf absent",
+          "reverse returns same mutated array",
+          "reverse order",
+          "slice end excluded",
+          "slice creates outer array",
+          "concat result",
+          "concat leaves source length",
+          "empty pop",
+          "ordinary missing index",
+          "shallow copied element still shared",
+          "assignment preserves identity",
+          "delete keeps array length",
+          "delete creates empty slot",
+          "shorter length removes elements",
+          "for-in includes inherited enumerable keys",
+          "own-key filter",
+          "for update after continue",
+          "while zero visits",
+          "do one visit",
+          "strict switch matching and fallthrough",
+          "parameter reference copied by value",
+          "no explicit result",
+          "function expression callback",
+          "arrow callback",
+          "factorial zero",
+          "factorial progress",
+          "factorial bounded endpoint",
+          "factorial rejects invalid",
+          "factorial rejects invalid",
+          "factorial rejects invalid",
+          "factorial rejects invalid",
+          "fixed malformed source compiled inside try",
+          "unresolved identifier",
+          "null property access",
+          "invalid array length",
+          "catch then cleanup",
+          "finally return masks pending result"
+        ]
+      },
+      "browser_console": [
+        {
+          "type": "log",
+          "text": "114 core checks passed"
+        }
+      ],
+      "browser_errors": [],
+      "global_script_source": "var jseScriptVar = 3; let jseScriptLet = 4; globalThis.jseGlobalResult = {varProperty: Object.hasOwn(globalThis, \"jseScriptVar\"), letProperty: Object.hasOwn(globalThis, \"jseScriptLet\"), lexicalValue: jseScriptLet};",
+      "global_script_result": {
+        "varProperty": true,
+        "letProperty": false,
+        "lexicalValue": 4
+      },
+      "module_source": "var jseModuleVar = 5; globalThis.jseModuleResult = {property: Object.hasOwn(globalThis, \"jseModuleVar\"), value: jseModuleVar};",
+      "module_result": {
+        "property": false,
+        "value": 5
+      },
+      "passed": true,
+      "boundary": "Original code in fresh headless Chrome classic script and Node; two additional original browser scope probes. Local fixtures only, no accounts, installs or external navigation; module probe is supporting context."
+    },
+    "scenario-checks": {
+      "checked_at": "2026-09-29T20:43:09.834696+00:00",
+      "browser_version": "154.0.8037.58",
+      "sources": {
+        "order": "(() => {\n  \"use strict\";\n  const orders = [];\n  function parseQuantity(text) {\n    if (text === null) return { kind: \"cancelled\" };\n    if (typeof text !== \"string\") return { kind: \"invalid\" };\n    const cleaned = text.trim();\n    if (cleaned === \"\") return { kind: \"empty\" };\n    if (!/^[0-9]+$/.test(cleaned)) return { kind: \"invalid\" };\n    const quantity = Number(cleaned);\n    if (!Number.isSafeInteger(quantity) || quantity > 1000) return { kind: \"invalid\" };\n    return { kind: \"ok\", quantity };\n  }\n  function makeQuote(quantity, tier) {\n    if (!Number.isSafeInteger(quantity) || quantity < 0 || quantity > 1000)\n      throw new RangeError(\"Quantity must be 0..1000\");\n    if (tier !== \"basic\" && tier !== \"premium\") throw new TypeError(\"Unknown tier\");\n    const baseCents = tier === \"basic\" ? 250 : 400;\n    const unitCents = quantity >= 10 ? baseCents * 9 / 10 : baseCents;\n    return { quantity, tier, unitCents, totalCents: quantity * unitCents };\n  }\n  function runOrder() {\n    const parsed = parseQuantity(prompt(\"Quantity: decimal digits, 0..1000\"));\n    if (parsed.kind !== \"ok\") {\n      console.log(`Quantity ${parsed.kind}`);\n      return { status: parsed.kind };\n    }\n    const enteredTier = prompt(\"Tier: basic or premium\", \"basic\");\n    if (enteredTier === null) return { status: \"cancelled\" };\n    const tier = enteredTier.trim().toLowerCase();\n    if (tier !== \"basic\" && tier !== \"premium\") return { status: \"invalid-tier\" };\n    const order = makeQuote(parsed.quantity, tier);\n    if (!confirm(`Record ${order.quantity} ${tier} units for ${order.totalCents} cents?`))\n      return { status: \"declined\" };\n    orders.push(order);\n    const alertResult = alert(`Recorded ${order.totalCents} cents`);\n    return { status: \"recorded\", order, alertReturnedUndefined: alertResult === undefined };\n  }\n  // Original in-memory demo: there is no account, payment or remote order submission.\n  globalThis.jseOrder = { parseQuantity, makeQuote, runOrder, orders };\n  globalThis.jseOrderResult = runOrder();\n})();\n",
+        "timed-practice": "(() => {\n  \"use strict\";\n  // Original code-reading prompts, not certification exam items.\n  const questions = [\n    { text: 'typeof \"5\"', answer: \"string\" },\n    { text: \"2 + 3 * 4\", answer: \"14\" }\n  ];\n  const state = { status: \"idle\", position: 0, correct: 0, ticks: 0, events: [] };\n  let warningId, intervalId, deadlineId;\n  function clearTimers() {\n    clearTimeout(warningId);\n    clearInterval(intervalId);\n    clearTimeout(deadlineId);\n  }\n  function finish(status) {\n    if (state.status !== \"running\") return false;\n    state.status = status;\n    state.events.push(status);\n    clearTimers();\n    return true;\n  }\n  function start(warningMs = 1000, deadlineMs = 2000, tickMs = 250) {\n    if (state.status === \"running\") throw new Error(\"Already running\");\n    for (const delay of [warningMs, deadlineMs, tickMs])\n      if (!Number.isInteger(delay) || delay < 1 || delay > 10000)\n        throw new RangeError(\"Use integer delays in 1..10000 ms\");\n    if (warningMs >= deadlineMs) throw new RangeError(\"Warning must precede deadline\");\n    clearTimers();\n    Object.assign(state, { status: \"running\", position: 0, correct: 0, ticks: 0, events: [\"start\"] });\n    warningId = setTimeout(() => {\n      if (state.status === \"running\") state.events.push(\"warning\");\n    }, warningMs);\n    intervalId = setInterval(() => {\n      if (state.status === \"running\") state.ticks++;\n    }, tickMs);\n    deadlineId = setTimeout(() => finish(\"timed-out\"), deadlineMs);\n    state.events.push(\"setup-complete\");\n  }\n  function answer(text) {\n    if (state.status !== \"running\") return false;\n    if (typeof text !== \"string\") throw new TypeError(\"Answer must be text\");\n    const question = questions[state.position];\n    if (text.trim() === question.answer) state.correct++;\n    state.position++;\n    if (state.position === questions.length) finish(\"completed\");\n    return true;\n  }\n  function currentQuestion() {\n    return state.status === \"running\" ? questions[state.position].text : null;\n  }\n  globalThis.jseTimed = { state, start, answer, currentQuestion, cancel: () => finish(\"cancelled\") };\n  // In a fresh browser console, use jseTimed.start(), jseTimed.currentQuestion(), jseTimed.answer(text).\n  // Tick counts are callback counts, not a measurement of wall-clock seconds.\n})();\n",
+        "inventory": "(() => {\n  \"use strict\";\n  function validateInventory(items) {\n    if (!Array.isArray(items)) throw new TypeError(\"Inventory must be an array\");\n    const codes = [];\n    for (const item of items) {\n      if (item === null || typeof item !== \"object\" || typeof item.code !== \"string\" ||\n          item.code === \"\" || !Number.isSafeInteger(item.stock) || item.stock < 0 || item.stock > 1000)\n        throw new TypeError(\"Invalid inventory record\");\n      if (codes.includes(item.code)) throw new Error(\"Duplicate item code\");\n      codes.push(item.code);\n    }\n  }\n  function take(items, code, quantity) {\n    validateInventory(items);\n    if (typeof code !== \"string\") throw new TypeError(\"Code must be text\");\n    if (!Number.isSafeInteger(quantity) || quantity < 0 || quantity > 1000)\n      throw new RangeError(\"Quantity must be 0..1000\");\n    for (const item of items) {\n      if (item.code === code) {\n        if (quantity > item.stock) return { status: \"insufficient\", stock: item.stock };\n        item.stock -= quantity;\n        return { status: \"ok\", stock: item.stock };\n      }\n    }\n    return { status: \"missing\" };\n  }\n  const items = [{ code: \"CABLE\", stock: 4 }, { code: \"ADAPTER\", stock: 0 }];\n  const ownFields = [];\n  for (const key in items[0]) {\n    if (Object.hasOwn(items[0], key)) ownFields.push(`${key}=${items[0][key]}`);\n  }\n  const first = take(items, \"CABLE\", 1);\n  const zero = take(items, \"ADAPTER\", 0);\n  const missing = take(items, \"OTHER\", 0);\n  console.log(ownFields.join(\", \"));\n  console.log(first.status, first.stock, zero.status, zero.stock, missing.status);\n  globalThis.jseInventory = { items, take, validateInventory };\n})();\n"
+      },
+      "source_sha256": {
+        "order": "d97b744e34fc084ded348ffe08aee27b1a05ee1ce699ffdab317c8373998578f",
+        "timed-practice": "91d206e3e8aa91955644b1a76826689f1d7c7667ebf6a912660875bc26fb350d",
+        "inventory": "f03f114a6faed9914a3dc2ead33afa00e843678faee1758ed0970ae438b47ca9"
+      },
+      "passed": 109,
+      "labels": [
+        "quantity cancel",
+        "quantity cancel mutation boundary",
+        "quantity blank",
+        "quantity blank mutation boundary",
+        "quantity whitespace",
+        "quantity whitespace mutation boundary",
+        "quantity suffix",
+        "quantity suffix mutation boundary",
+        "quantity fraction",
+        "quantity fraction mutation boundary",
+        "quantity negative",
+        "quantity negative mutation boundary",
+        "quantity infinity",
+        "quantity infinity mutation boundary",
+        "quantity exponent",
+        "quantity exponent mutation boundary",
+        "quantity hexadecimal",
+        "quantity hexadecimal mutation boundary",
+        "quantity unsafe integer",
+        "quantity unsafe integer mutation boundary",
+        "quantity over limit",
+        "quantity over limit mutation boundary",
+        "zero remains valid",
+        "zero remains valid mutation boundary",
+        "zero remains valid cents and alert return",
+        "below discount boundary",
+        "below discount boundary mutation boundary",
+        "below discount boundary cents and alert return",
+        "discount boundary",
+        "discount boundary mutation boundary",
+        "discount boundary cents and alert return",
+        "maximum premium",
+        "maximum premium mutation boundary",
+        "maximum premium cents and alert return",
+        "tier cancel",
+        "tier cancel mutation boundary",
+        "unknown tier",
+        "unknown tier mutation boundary",
+        "confirm decline",
+        "confirm decline mutation boundary",
+        "recorded helper fixture",
+        "recorded helper fixture mutation boundary",
+        "recorded helper fixture cents and alert return",
+        "order helper: basic 0",
+        "order helper: basic 1",
+        "order helper: basic 9",
+        "order helper: basic 10",
+        "order helper: basic 11",
+        "order helper: basic 1000",
+        "order helper: premium 0",
+        "order helper: premium 1",
+        "order helper: premium 9",
+        "order helper: premium 10",
+        "order helper: premium 11",
+        "order helper: premium 1000",
+        "order helper: reject invalid helper input",
+        "order helper: reject invalid helper input",
+        "order helper: reject invalid helper input",
+        "order helper: reject invalid helper input",
+        "order helper: reject invalid helper input",
+        "order helper: reject invalid helper input",
+        "order helper: reject invalid helper input",
+        "order helper: reject invalid helper input",
+        "order helper: reject invalid helper input",
+        "order helper: reject invalid helper input",
+        "order helper: leading zero decimal",
+        "order helper: quote rejects invalid quantity types and bounds",
+        "order helper: quote rejects unknown tier",
+        "order helper: returned order and array share record",
+        "inventory: published results",
+        "inventory: quantity 0",
+        "inventory: quantity 1",
+        "inventory: quantity 1000",
+        "inventory: last item zero",
+        "inventory: missing differs from zero",
+        "inventory: empty inventory",
+        "inventory: insufficient preserves stock",
+        "inventory: quantity rejected",
+        "inventory: quantity rejected",
+        "inventory: quantity rejected",
+        "inventory: quantity rejected",
+        "inventory: quantity rejected",
+        "inventory: code type",
+        "inventory: duplicate catalog",
+        "inventory: invalid inventory",
+        "inventory: invalid inventory",
+        "inventory: invalid inventory",
+        "inventory: invalid inventory",
+        "inventory: invalid inventory",
+        "inventory: invalid inventory",
+        "inventory: invalid inventory",
+        "inventory: shared record mutation",
+        "timer setup synchronous first",
+        "completion and late answer",
+        "completed session clears all timers",
+        "cancel clears all timers",
+        "warning then timeout",
+        "interval callback actually ran",
+        "timeout clears interval",
+        "timer contract 0",
+        "timer contract 1",
+        "timer contract 2",
+        "timer contract 3",
+        "timer contract 4",
+        "timer contract 5",
+        "timer contract 6",
+        "timer contract 7",
+        "timer contract 8",
+        "scheduling try does not catch later callback exception"
+      ],
+      "dialog_cases": [
+        {
+          "label": "quantity cancel",
+          "events": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "answer": null
+            }
+          ],
+          "result": {
+            "result": {
+              "status": "cancelled"
+            },
+            "count": 0
+          }
+        },
+        {
+          "label": "quantity blank",
+          "events": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "answer": ""
+            }
+          ],
+          "result": {
+            "result": {
+              "status": "empty"
+            },
+            "count": 0
+          }
+        },
+        {
+          "label": "quantity whitespace",
+          "events": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "answer": "  "
+            }
+          ],
+          "result": {
+            "result": {
+              "status": "empty"
+            },
+            "count": 0
+          }
+        },
+        {
+          "label": "quantity suffix",
+          "events": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "answer": "2x"
+            }
+          ],
+          "result": {
+            "result": {
+              "status": "invalid"
+            },
+            "count": 0
+          }
+        },
+        {
+          "label": "quantity fraction",
+          "events": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "answer": "1.5"
+            }
+          ],
+          "result": {
+            "result": {
+              "status": "invalid"
+            },
+            "count": 0
+          }
+        },
+        {
+          "label": "quantity negative",
+          "events": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "answer": "-1"
+            }
+          ],
+          "result": {
+            "result": {
+              "status": "invalid"
+            },
+            "count": 0
+          }
+        },
+        {
+          "label": "quantity infinity",
+          "events": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "answer": "Infinity"
+            }
+          ],
+          "result": {
+            "result": {
+              "status": "invalid"
+            },
+            "count": 0
+          }
+        },
+        {
+          "label": "quantity exponent",
+          "events": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "answer": "1e2"
+            }
+          ],
+          "result": {
+            "result": {
+              "status": "invalid"
+            },
+            "count": 0
+          }
+        },
+        {
+          "label": "quantity hexadecimal",
+          "events": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "answer": "0x10"
+            }
+          ],
+          "result": {
+            "result": {
+              "status": "invalid"
+            },
+            "count": 0
+          }
+        },
+        {
+          "label": "quantity unsafe integer",
+          "events": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "answer": "9007199254740993"
+            }
+          ],
+          "result": {
+            "result": {
+              "status": "invalid"
+            },
+            "count": 0
+          }
+        },
+        {
+          "label": "quantity over limit",
+          "events": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "answer": "1001"
+            }
+          ],
+          "result": {
+            "result": {
+              "status": "invalid"
+            },
+            "count": 0
+          }
+        },
+        {
+          "label": "zero remains valid",
+          "events": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "answer": "0"
+            },
+            {
+              "type": "prompt",
+              "message": "Tier: basic or premium",
+              "answer": "basic"
+            },
+            {
+              "type": "confirm",
+              "message": "Record 0 basic units for 0 cents?",
+              "answer": true
+            },
+            {
+              "type": "alert",
+              "message": "Recorded 0 cents",
+              "answer": true
+            }
+          ],
+          "result": {
+            "result": {
+              "status": "recorded",
+              "order": {
+                "quantity": 0,
+                "tier": "basic",
+                "unitCents": 250,
+                "totalCents": 0
+              },
+              "alertReturnedUndefined": true
+            },
+            "count": 1
+          }
+        },
+        {
+          "label": "below discount boundary",
+          "events": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "answer": " 9 "
+            },
+            {
+              "type": "prompt",
+              "message": "Tier: basic or premium",
+              "answer": "basic"
+            },
+            {
+              "type": "confirm",
+              "message": "Record 9 basic units for 2250 cents?",
+              "answer": true
+            },
+            {
+              "type": "alert",
+              "message": "Recorded 2250 cents",
+              "answer": true
+            }
+          ],
+          "result": {
+            "result": {
+              "status": "recorded",
+              "order": {
+                "quantity": 9,
+                "tier": "basic",
+                "unitCents": 250,
+                "totalCents": 2250
+              },
+              "alertReturnedUndefined": true
+            },
+            "count": 1
+          }
+        },
+        {
+          "label": "discount boundary",
+          "events": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "answer": "10"
+            },
+            {
+              "type": "prompt",
+              "message": "Tier: basic or premium",
+              "answer": "basic"
+            },
+            {
+              "type": "confirm",
+              "message": "Record 10 basic units for 2250 cents?",
+              "answer": true
+            },
+            {
+              "type": "alert",
+              "message": "Recorded 2250 cents",
+              "answer": true
+            }
+          ],
+          "result": {
+            "result": {
+              "status": "recorded",
+              "order": {
+                "quantity": 10,
+                "tier": "basic",
+                "unitCents": 225,
+                "totalCents": 2250
+              },
+              "alertReturnedUndefined": true
+            },
+            "count": 1
+          }
+        },
+        {
+          "label": "maximum premium",
+          "events": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "answer": "1000"
+            },
+            {
+              "type": "prompt",
+              "message": "Tier: basic or premium",
+              "answer": "PREMIUM"
+            },
+            {
+              "type": "confirm",
+              "message": "Record 1000 premium units for 360000 cents?",
+              "answer": true
+            },
+            {
+              "type": "alert",
+              "message": "Recorded 360000 cents",
+              "answer": true
+            }
+          ],
+          "result": {
+            "result": {
+              "status": "recorded",
+              "order": {
+                "quantity": 1000,
+                "tier": "premium",
+                "unitCents": 360,
+                "totalCents": 360000
+              },
+              "alertReturnedUndefined": true
+            },
+            "count": 1
+          }
+        },
+        {
+          "label": "tier cancel",
+          "events": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "answer": "1"
+            },
+            {
+              "type": "prompt",
+              "message": "Tier: basic or premium",
+              "answer": null
+            }
+          ],
+          "result": {
+            "result": {
+              "status": "cancelled"
+            },
+            "count": 0
+          }
+        },
+        {
+          "label": "unknown tier",
+          "events": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "answer": "1"
+            },
+            {
+              "type": "prompt",
+              "message": "Tier: basic or premium",
+              "answer": "unknown"
+            }
+          ],
+          "result": {
+            "result": {
+              "status": "invalid-tier"
+            },
+            "count": 0
+          }
+        },
+        {
+          "label": "confirm decline",
+          "events": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "answer": "1"
+            },
+            {
+              "type": "prompt",
+              "message": "Tier: basic or premium",
+              "answer": "basic"
+            },
+            {
+              "type": "confirm",
+              "message": "Record 1 basic units for 250 cents?",
+              "answer": false
+            }
+          ],
+          "result": {
+            "result": {
+              "status": "declined"
+            },
+            "count": 0
+          }
+        },
+        {
+          "label": "recorded helper fixture",
+          "events": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "answer": "1"
+            },
+            {
+              "type": "prompt",
+              "message": "Tier: basic or premium",
+              "answer": "basic"
+            },
+            {
+              "type": "confirm",
+              "message": "Record 1 basic units for 250 cents?",
+              "answer": true
+            },
+            {
+              "type": "alert",
+              "message": "Recorded 250 cents",
+              "answer": true
+            }
+          ],
+          "result": {
+            "result": {
+              "status": "recorded",
+              "order": {
+                "quantity": 1,
+                "tier": "basic",
+                "unitCents": 250,
+                "totalCents": 250
+              },
+              "alertReturnedUndefined": true
+            },
+            "count": 1
+          }
+        }
+      ],
+      "timer_completion": {
+        "initial": [
+          "start",
+          "setup-complete"
+        ],
+        "q": "typeof \"5\"",
+        "state": {
+          "status": "completed",
+          "position": 2,
+          "correct": 2,
+          "ticks": 0,
+          "events": [
+            "start",
+            "setup-complete",
+            "completed"
+          ]
+        },
+        "late": false
+      },
+      "timer_cancellation": {
+        "result": true,
+        "state": {
+          "status": "cancelled",
+          "position": 0,
+          "correct": 0,
+          "ticks": 0,
+          "events": [
+            "start",
+            "setup-complete",
+            "cancelled"
+          ]
+        }
+      },
+      "timer_timeout": {
+        "status": "timed-out",
+        "position": 0,
+        "correct": 0,
+        "ticks": 7,
+        "events": [
+          "start",
+          "setup-complete",
+          "warning",
+          "timed-out"
+        ]
+      },
+      "asynchronous_error_source": "globalThis.outerCaught = false; globalThis.callbackRan = false;\ntry { setTimeout(() => { globalThis.callbackRan = true; throw new Error(\"original asynchronous error fixture\"); }, 0); }\ncatch (error) { globalThis.outerCaught = true; }",
+      "asynchronous_errors": [
+        "original asynchronous error fixture"
+      ],
+      "boundary": "Fresh headless Chrome pages with original local code; actual modal dialogs handled by automation, actual timeout/interval callbacks and captured page error. No user account, network request, transaction, paid question, installation or visual DevTools UI. Callback counts/order tested, no exact wall-clock guarantee."
+    },
+    "debugger-probe": {
+      "browser_version": "154.0.8037.58",
+      "source": "function removeOne(stock) {\n  let remaining = stock;\n  debugger;\n  remaining += 1;\n  return remaining;\n}\nwindow.debugResult = removeOne(4);\n//# sourceURL=original-jse-debugger-probe.js\n",
+      "source_sha256": "bd4181951fd93aeab7f017a3d14dd93716611d260aa6d3b5ff5c5a1b4e63ed64",
+      "trace": [
+        {
+          "label": "pause at debugger statement",
+          "reason": "other",
+          "function": "removeOne",
+          "location": {
+            "scriptId": "18",
+            "lineNumber": 2,
+            "columnNumber": 2
+          },
+          "scope_types": [
+            "local",
+            "global"
+          ],
+          "values": {
+            "stock": 4,
+            "remaining": 4,
+            "type": "number"
+          }
+        },
+        {
+          "label": "before mutation",
+          "reason": "step",
+          "function": "removeOne",
+          "location": {
+            "scriptId": "18",
+            "lineNumber": 3,
+            "columnNumber": 2
+          },
+          "scope_types": [
+            "local",
+            "global"
+          ],
+          "values": {
+            "stock": 4,
+            "remaining": 4,
+            "type": "number"
+          }
+        },
+        {
+          "label": "after incorrect increment",
+          "reason": "step",
+          "function": "removeOne",
+          "location": {
+            "scriptId": "18",
+            "lineNumber": 4,
+            "columnNumber": 19
+          },
+          "scope_types": [
+            "local",
+            "global"
+          ],
+          "values": {
+            "stock": 4,
+            "remaining": 5,
+            "type": "number"
+          }
+        },
+        {
+          "label": "second call before experiment",
+          "reason": "other",
+          "function": "removeOne",
+          "location": {
+            "scriptId": "18",
+            "lineNumber": 2,
+            "columnNumber": 2
+          },
+          "scope_types": [
+            "local",
+            "global"
+          ],
+          "values": {
+            "stock": 4,
+            "remaining": 4,
+            "type": "number"
+          }
+        },
+        {
+          "label": "before increment experiment",
+          "reason": "step",
+          "function": "removeOne",
+          "location": {
+            "scriptId": "18",
+            "lineNumber": 3,
+            "columnNumber": 2
+          },
+          "scope_types": [
+            "local",
+            "global"
+          ],
+          "values": {
+            "stock": 4,
+            "remaining": 4,
+            "type": "number"
+          }
+        },
+        {
+          "label": "temporary input changed to two",
+          "reason": "step",
+          "function": "removeOne",
+          "location": {
+            "scriptId": "18",
+            "lineNumber": 3,
+            "columnNumber": 2
+          },
+          "scope_types": [
+            "local",
+            "global"
+          ],
+          "values": {
+            "stock": 4,
+            "remaining": 2,
+            "type": "number"
+          }
+        },
+        {
+          "label": "increment after experiment gives three",
+          "reason": "step",
+          "function": "removeOne",
+          "location": {
+            "scriptId": "18",
+            "lineNumber": 4,
+            "columnNumber": 19
+          },
+          "scope_types": [
+            "local",
+            "global"
+          ],
+          "values": {
+            "stock": 4,
+            "remaining": 3,
+            "type": "number"
+          }
+        }
+      ],
+      "observed_bug": 5,
+      "temporary_result": 3,
+      "unchanged_source_result": 5,
+      "repaired_source": "function removeOne(stock) {\n  let remaining = stock;\n  remaining -= 1;\n  return remaining;\n}\nwindow.debugResult = removeOne(4);\n//# sourceURL=original-jse-debugger-probe.js\n",
+      "repaired_result": 3,
+      "passed": true,
+      "boundary": "Fresh local original page; actual Chrome Debugger protocol pause/stepOver/evaluateOnCallFrame/setVariableValue/resume; no visual DevTools clicking or external demo. Artificial logic error; mutation before arithmetic changes one invocation but does not fix source."
+    },
+    "local-checks": {
+      "checked_at": "2026-09-29T20:43:42.208860+00:00",
+      "passed": true,
+      "public_code_blocks": 8,
+      "public_example_sha256": [
+        "1f35a143859b02cef88a58a8d28ca847fed550009af6838af6d08e26b7808e28",
+        "b5fc07819d6f392cf4ea35058d26cf94f2ad0d2aa18e28acfe06777086f27ef0",
+        "f667f3b043cf7717815ce043fa303da9c1dad7c43265ab5383a8b8e96820776b",
+        "d8fc5238694f54f2cb000f74def29b92b7fd291eb6050c518b08a1e509285216",
+        "12cac1996ba4abb70580174d2ac87d7a9be97a053c7d0b23b46407a6e6750f03",
+        "d97b744e34fc084ded348ffe08aee27b1a05ee1ce699ffdab317c8373998578f",
+        "91d206e3e8aa91955644b1a76826689f1d7c7667ebf6a912660875bc26fb350d",
+        "f03f114a6faed9914a3dc2ead33afa00e843678faee1758ed0970ae438b47ca9"
+      ],
+      "core_checks": 114,
+      "scenario_checks": 109,
+      "scenario_dialog_cases": 19,
+      "introductory_dialog_cases": [
+        {
+          "input": null,
+          "console": [
+            {
+              "type": "log",
+              "text": "Cancelled"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": null
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "",
+          "console": [
+            {
+              "type": "error",
+              "text": "Quantity is blank"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": ""
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "  ",
+          "console": [
+            {
+              "type": "error",
+              "text": "Quantity is blank"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "  "
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "0",
+          "console": [
+            {
+              "type": "log",
+              "text": "Quantity: 0"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "0"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": " 10 ",
+          "console": [
+            {
+              "type": "log",
+              "text": "Quantity: 10"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": " 10 "
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "0001",
+          "console": [
+            {
+              "type": "log",
+              "text": "Quantity: 1"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "0001"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "1000",
+          "console": [
+            {
+              "type": "log",
+              "text": "Quantity: 1000"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "1000"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "1001",
+          "console": [
+            {
+              "type": "error",
+              "text": "Quantity must be 0..1000"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "1001"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "9007199254740993",
+          "console": [
+            {
+              "type": "error",
+              "text": "Quantity must be 0..1000"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "9007199254740993"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "1x",
+          "console": [
+            {
+              "type": "error",
+              "text": "Use decimal digits only"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "1x"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "1.5",
+          "console": [
+            {
+              "type": "error",
+              "text": "Use decimal digits only"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "1.5"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "-1",
+          "console": [
+            {
+              "type": "error",
+              "text": "Use decimal digits only"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "-1"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "+1",
+          "console": [
+            {
+              "type": "error",
+              "text": "Use decimal digits only"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "+1"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "Infinity",
+          "console": [
+            {
+              "type": "error",
+              "text": "Use decimal digits only"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "Infinity"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "1e2",
+          "console": [
+            {
+              "type": "error",
+              "text": "Use decimal digits only"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "1e2"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "input": "0x10",
+          "console": [
+            {
+              "type": "error",
+              "text": "Use decimal digits only"
+            }
+          ],
+          "dialogs": [
+            {
+              "type": "prompt",
+              "message": "Quantity: decimal digits, 0..1000",
+              "input": "0x10"
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "other_public_blocks": [
+        {
+          "block_index": 1,
+          "context": "[first.count, second.count, first === second]",
+          "result": [
+            2,
+            2,
+            true
+          ],
+          "console": [],
+          "errors": [],
+          "passed": true
+        },
+        {
+          "block_index": 2,
+          "context": null,
+          "result": null,
+          "console": [
+            {
+              "type": "log",
+              "text": "name Ari"
+            },
+            {
+              "type": "log",
+              "text": "score 88"
+            },
+            {
+              "type": "log",
+              "text": "88"
+            },
+            {
+              "type": "log",
+              "text": "91"
+            }
+          ],
+          "errors": [],
+          "passed": true
+        },
+        {
+          "block_index": 3,
+          "context": "[double(3), triple(3), quadruple(3), apply(5, quadruple)]",
+          "result": [
+            6,
+            9,
+            12,
+            20
+          ],
+          "console": [],
+          "errors": [],
+          "passed": true
+        }
+      ],
+      "browser_version": "154.0.8037.58",
+      "node_version": "v24.18.1",
+      "timing_probe": {
+        "source": "console.time(\"original bounded sum\"); let sum = 0; for (let i = 1; i <= 100; i++) sum += i; console.timeEnd(\"original bounded sum\"); globalThis.jseMeasuredSum = sum;",
+        "console": [
+          {
+            "type": "timeEnd",
+            "text": "original bounded sum: 0.033203125 ms"
+          }
+        ],
+        "result": 5050,
+        "boundary": "One actual bounded console measurement; duration is an observation, not a benchmark or performance guarantee."
+      },
+      "debugger_probe_passed": true,
+      "boundary": "All eight exact public JavaScript blocks executed in fresh local Chrome pages; function declarations supplied four documented calls. Core workbook also ran in Node. Actual modal dialogs, timers and CDP debugging used original local fixtures; no visual DevTools UI, external demo, paid lesson, account or infrastructure lab. Eight broader learner activities remain proposed."
+    }
+  },
+  "manual_objective_confirmation": {
+    "checked_on": "2026-09-29",
+    "method": "Full public web-reader canonical page after direct timeout; manual retained-snapshot comparison",
+    "objectives": 30,
+    "per_block": [
+      3,
+      5,
+      5,
+      5,
+      7,
+      5
+    ],
+    "canonical_weights": "Not published in the examined canonical scope",
+    "practice_distribution_percent": [
+      8,
+      20,
+      18,
+      21,
+      21,
+      12
+    ],
+    "active_code": "JSE-40-01",
+    "snapshot_action": "Retained; no successful automated hash comparison",
+    "groups": [
+      {
+        "title": "Exam block #1: Introduction to JavaScript and Computer Programming",
+        "objectives": [
+          "understand the fundamental programming concepts, such as: interpreting and the interpreter, compilation and the compiler, client-side vs. server-side programming;",
+          "have a basic knowledge of how to set up and use a basic programming environment (online or local)",
+          "gain skills allowing them to run their first JavaScript program on the client side (both as an element embedded in the HTML page and directly in the browser console)."
+        ]
+      },
+      {
+        "title": "Exam block #2: Variable, Data Types, and Type Casting",
+        "objectives": [
+          "have the knowledge and skills to work with variables, i.e. naming, declaring, initializing and modifying their values;",
+          "understand concepts such as scope, code blocks, shadowing, hoisting;",
+          "know the basic properties of primitive data types such as boolean, number, bigint, undefined, null, and be able to use them;",
+          "be familiar with the basic properties of the primitive data type string, including string literals – single or double quotes, escape character, string interpolation, basic properties and methods;",
+          "know the basic properties of complex data types such as Array and Object (treated as a record) and be able to use them in practice."
+        ]
+      },
+      {
+        "title": "Exam block #3: Operators and User Interaction",
+        "objectives": [
+          "know what operators are and how we classify them (by type of operands, by number of operands, etc.)",
+          "be able to use assignment, arithmetic, logical, and comparison operators in practice;",
+          "have an understanding of the operation of the conditional operator and the typeof, instanceof, and delete operators;",
+          "understand what the precedence and associativity of basic operators are and be able to influence it by means of bracket grouping;",
+          "be able to perform basic two-way communication with the program user using the alert, confirm, and prompt dialog boxes."
+        ]
+      },
+      {
+        "title": "Exam block #4: Control Flow – Conditional Execution and Loops",
+        "objectives": [
+          "be able to force conditional execution of a group of statements (make decisions and branch the flow) using if-else and switch commands;",
+          "be able to force a group of statements to repeat in a loop using the for, while, and do-while commands, using both dependent and independent conditions on the number of iterations;",
+          "understand and be able to use loop-specific break and continue instructions;",
+          "be able to use the for-in statement to iterate over properties of an object;",
+          "be able to use the for-of statement to walk through the elements of an array."
+        ]
+      },
+      {
+        "title": "Exam block #5: Functions",
+        "objectives": [
+          "be able to declare and call functions;",
+          "know how to pass call arguments to a function and return the result of its operation from it;",
+          "understand the concept of a local variable and the effect of shadowing variables with the same names within a function;",
+          "know that a function in JS is a first-class member and be able to take advantage of this by declaring functions using function expression and passing functions as arguments to calls of other functions;",
+          "understand the concept of recursion in the context of functions and be able to solve simple programming problems by using it;",
+          "have a basic understanding of the callback function and be able to use it asynchronously in conjunction with the setTimeout and setInterval methods;",
+          "have a clear understanding of arrow function notation and be able to write functions alternatively as a regular declaration, a function expression, and an arrow function."
+        ]
+      },
+      {
+        "title": "Exam block #6: Errors, exceptions, debugging, and troubleshooting",
+        "objectives": [
+          "understand the differences between syntactic, semantic, and logical errors;",
+          "understand the concept of an exception and distinguish between the basic exceptions generated by JS when an error occurs: SyntaxError, ReferenceError, TypeError, RangeError;",
+          "have the ability to handle exceptions using the try-catch-finally statement;",
+          "be able to generate their own exceptions using the throw statement;",
+          "have the skills to use the debugger for basic analysis of their own code, including: step-by-step execution, viewing and modifying variables, and measuring code execution time."
+        ]
+      }
+    ],
+    "boundary": "Later certification-holder profile excluded from scope-bullet counts; practice distribution is not exam weighting."
+  },
+  "source_health_boundary": "31 direct receipts: 25 HTTP200, 2 HTTP403 and 4 errors. Institute pages and Microsoft README read via web fallback; Cisco/YouTube successes were shells. Protocol static URL required a rendered public viewer. Reading is bounded individually, with no paid interiors or authenticated pages.",
+  "review_provenance": "Existing 40 original answers reviewed and improved. Eight exact public blocks executed in local Chrome; definitions-only function block supplied four calls. Core 114 checks passed in Chrome/Node; 109 browser scenario checks plus 19 scenario and 16 introductory dialog flows, scope/timing probes and actual CDP debugger state/source correction. No visual debugger UI or external demo run. Eight broader activities remain proposed; human review pending."
+}

@@ -3482,6 +3482,32 @@ The Edube listing confirms 42 hours and C++ Essentials 1, but contains inconsist
 
 No exact current MeasureUp or Whizlabs CPE-20-01 practice product was verified during this review. Prefer the provider-aligned course assessments and your own objective-based code checks over products that do not state the active exam version.
 
+### JSE-40-01 — JSE Certified Entry-Level JavaScript Programmer
+
+Resource details from the [JSE-40-01 guide](../guides/JSE-40-01-certified-entry-level-javascript-programmer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, add a second explanation only where useful, and spend at least as much time predicting, coding, testing, and debugging as watching. Commercial and community resources are supplementary; reconcile them with the current official scope.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official JSE exam page and scope](https://jsinstitute.org/jse-certification) | Free official blueprint | 1–2 hours to map and recheck |
+| [JS Institute TestNow policies](https://jsinstitute.org/test-now-testing-policies) | Free official policy | 20–40 minutes before scheduling |
+| [Official JSE-40-01 Practice Test Kit](https://ums.edube.org/products/0-jsi-jse-4001-pt) | Paid official practice; USD 29 when checked | 3–6 hours across attempts and review |
+| [OpenEDG JavaScript Essentials 1](https://jsinstitute.org/javascript-essentials-1) | Free account; public six-module listing read, lessons not entered | 40 hours listed |
+| [Cisco Networking Academy JavaScript Essentials 1](https://www.netacad.com/courses/javascript-essentials-1) | Free account; only application shell retrieved | About 40 hours is a planning reference from the aligned course; partner duration unverified |
+| [MDN Dynamic Scripting with JavaScript](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting) | Free; module index and selected separate reference pages read | 15–25 hours is an author estimate; DOM/network topics exceed this scope |
+| [Microsoft Beginner's Series to JavaScript](https://learn.microsoft.com/en-us/shows/beginners-series-to-javascript/) | Free Node.js series; current page does not expose episode count/runtime | Prior 51-part claim not reverified; 4–6 hours is an author estimate |
+| [Pluralsight Professional JavaScript path](https://www.pluralsight.com/paths/javascript-2022) | Subscription; current public listing: 28 courses/38 labs/85 hours | Fundamentals 6h08m + Debugging 1h35m = 7h43m; selected guided labs add 3h24m |
+| [O'Reilly JavaScript: The Definitive Guide, 7th Edition](https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/) | Subscription; HTTP 403; prior 21h15m not reverified | Select early language/debugging chapters; 8–12 hours is an author estimate |
+| [Udemy Complete JavaScript Course by Jonas Schmedtmann](https://www.udemy.com/course/the-complete-javascript-course/) | Paid marketplace; HTTP 403; prior 71h10m not reverified | Select fundamentals/debugging; 12–18 hours is an author estimate |
+| [freeCodeCamp Learn JavaScript — Full Course for Beginners](https://www.youtube.com/watch?v=PkZNo7MFNFg) | Free; title/shell only, no playback/transcript review | Prior approximately 3h27m not reverified; add coding time |
+
+**VERIFY CURRENT — source limits:** Canonical exam, course and policy pages were read via the public web reader after direct requests timed out. The objective monitor failed its direct comparison; snapshots were retained after manual review. The exam page has an apparent copy error labeling the associated JSA credential as a Python data-analyst certification; it does not change JSE scope. The policy opening says entry-level exams default to non-proctored delivery, while its later generic delivery paragraph calls online proctoring the global default. Verify the applicable mode before booking. Failed attempts currently have a seven-day retake wait; account and booking screens were not inspected.
+
+The official practice product describes multiple launches but the current captured page gives no exact count. Its 12-month voucher redemption validity is separate from an exam attempt, which the practice-only product does not include. Paid practice questions were not accessed. The [Microsoft supporting repository](https://github.com/microsoft/beginners-intro-javascript-node) was archived June 15, 2026; its README assumes experience with another language and uses Node. That context matters when choosing it as a beginner supplement. Pluralsight metadata came from its headline and selected novice/entry-level listings, not paid lessons; the guided variables/data, scope, and control-flow/collections labs list 100 + 40 + 64 = 204 minutes (3h24m). No lab was entered or video watched. A source landing page is not proof of complete lesson quality or exact exam coverage.
+
+No exact current MeasureUp or Whizlabs JSE-40-01 product was verified. The OpenEDG practice kit explicitly identifies the active version; avoid third-party practice that does not state its blueprint and provenance.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.
