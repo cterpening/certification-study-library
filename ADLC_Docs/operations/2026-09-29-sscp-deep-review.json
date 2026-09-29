@@ -1,0 +1,2044 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "SSCP",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/SSCP-isc2-systems-security-certified-practitioner.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "ea0690b80c93bb3da219fa642450f01532261e06de0f156a5dca1a2d8a057d33",
+  "guide_after_sha256": "d729d0dc0091e7323aa21e5659236b0adf44130a5b7631c9b4a3a18736a208ef",
+  "prior_records": {
+    "exam": {
+      "code": "SSCP",
+      "level": "intermediate",
+      "vendor_id": "isc2",
+      "title": "Systems Security Certified Practitioner",
+      "status": "active",
+      "study_guide_url": "https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline",
+      "guide_path": "guides/SSCP-isc2-systems-security-certified-practitioner.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "ISC2 requires one year of qualifying experience for certification, with current degree/part-time/internship and Associate alternatives. Practice the complete operator loop across controls/assets/change, IAM/trust, risk/vulnerability/monitoring, incident/forensic/recovery support, crypto/PKI, network appliances/wireless and endpoint/mobile/cloud/virtual/application security."
+    },
+    "review": {
+      "id": "sscp-2026-09-02-source-validation",
+      "exam_code": "SSCP",
+      "guide_path": "guides/SSCP-isc2-systems-security-certified-practitioner.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/sscp-official-objectives.txt",
+      "blueprint_snapshot_sha256": "0d643f2af74b12b015f5607516ba3da57ea3192481c800c76963d2fc27f9875e",
+      "objective_coverage": [
+        {
+          "objective_group": "Security Concepts and Practices (16%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Access Controls (15%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Risk Identification, Monitoring and Analysis (15%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 2 and 3",
+            "Labs 3–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Incident Response and Recovery (14%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenario 2",
+            "Labs 5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Cryptography (9%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenario 3",
+            "Labs 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network and Communication Security (16%)",
+          "guide_sections": [
+            "Section 6",
+            "Scenarios 1 and 3",
+            "Labs 7–8"
+          ]
+        },
+        {
+          "objective_group": "Systems and Application Security (15%)",
+          "guide_sections": [
+            "Section 7",
+            "Scenarios 2 and 3",
+            "Labs 1, 7 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 9,
+        "reachable": 7,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All seven current domains are mapped through the operator loop of asset and requirement, failure or threat, control, implementation owner, observable evidence, authorized response and recovery. Three scenarios, eight authorized labs and 40 checks are included. Seven URLs are reachable; O'Reilly and Udemy are automation-blocked; none are broken. Exam readiness is explicitly separated from experience, Associate status, endorsement, membership, ethics, the 60-CPE three-year cycle and current AMF. No recalled/live item, dump, exploit target or copied course content is used."
+    },
+    "sources": [
+      {
+        "id": "isc2-member-policies",
+        "title": "ISC2 Member Policies",
+        "url": "https://www.isc2.org/policies-procedures/member-policies",
+        "publisher": "ISC2",
+        "authority_class": 1,
+        "source_type": "program-policy",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "CC",
+          "SSCP",
+          "CCSP",
+          "CISSP"
+        ],
+        "notes": "Canonical current three-year maintenance, CPE, AMF, suspension and reinstatement rules; extend to other ISC2 guides as published. September 29 CC deep review: Full-page CC maintenance table, CPE/grace/AMF sections and selected appeal/associate context read; not every policy independently audited. CC45GroupA/3years and15suggested annually;CC-only50USD AMF vsothercategories. No personal eligibility/appeal/renewal advice or transaction. See docs/research/2026-09-29-cc-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "isc2-code-of-ethics",
+        "title": "ISC2 Code of Ethics",
+        "url": "https://www.isc2.org/ethics",
+        "publisher": "ISC2",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "CC",
+          "SSCP",
+          "CCSP",
+          "CISSP"
+        ],
+        "notes": "First-party ethical obligations used for scenario reasoning; extend to other ISC2 guides as published. September 29 CC deep review: Complete public main preamble/four-canons/member-obligation text read. Paraphrased professional judgment and reporting context; no complaint filed, contact made or legal case analyzed. See docs/research/2026-09-29-cc-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "isc2-sscp-outline",
+        "title": "SSCP Certification Exam Outline",
+        "url": "https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline",
+        "publisher": "ISC2",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SSCP"
+        ],
+        "notes": "Canonical October 1, 2025 seven-domain weighted outline, CAT delivery and one-year experience/Associate contract; monitored by the ISC2 adapter."
+      },
+      {
+        "id": "isc2-sscp-self-study",
+        "title": "SSCP Study Tools and Resources",
+        "url": "https://www.isc2.org/certifications/sscp/sscp-self-study-resources",
+        "publisher": "ISC2",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SSCP"
+        ],
+        "notes": "First-party route to the outline, adaptive training, flash cards and Study Hub; access varies."
+      },
+      {
+        "id": "isc2-sscp-adaptive-training",
+        "title": "SSCP Online Self-Paced Training",
+        "url": "https://www.isc2.org/training/online-self-paced/sscp-online-self-paced",
+        "publisher": "ISC2",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SSCP"
+        ],
+        "notes": "Adaptive official course with textbook/questions, assessments, flash cards and 90/180-day access choices; no fixed public completion duration, so 35–50 hours is a planning estimate."
+      },
+      {
+        "id": "pluralsight-isc2-sscp-path",
+        "title": "SSCP Systems Security Certified Practitioner Certification",
+        "url": "https://www.pluralsight.com/paths/sscpr-systems-security-certified-practitioner-certification",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SSCP"
+        ],
+        "notes": "Eight-course, 14-hour path with practice; page references September 2024/older scope, so close October 2025 and AI-security deltas."
+      },
+      {
+        "id": "linkedin-isc2-sscp-cert-prep",
+        "title": "ISC2 Systems Security Certified Practitioner Cert Prep",
+        "url": "https://www.linkedin.com/learning/isc2-systems-security-certified-practitioner-sscp-cert-prep",
+        "publisher": "LinkedIn Learning / Cybrary",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SSCP"
+        ],
+        "notes": "Six-hour August 2025 course with transcripts and separate practice exams; verify October 2025 objective deltas."
+      },
+      {
+        "id": "oreilly-isc2-sscp-study-guide-3e",
+        "title": "ISC2 SSCP Systems Security Certified Practitioner Official Study Guide, 3rd Edition",
+        "url": "https://www.oreilly.com/library/view/isc-2-sscp-systems/9781119854982/",
+        "publisher": "O'Reilly / Sybex / Mike Wills",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SSCP"
+        ],
+        "notes": "February 2022, 816-page, 29h16m deep reference; pre-dates the current outline and must be used with an explicit delta map."
+      },
+      {
+        "id": "udemy-isc2-sscp-masterclass",
+        "title": "Ultimate ISC2 SSCP Masterclass - Cybersecurity Operations",
+        "url": "https://www.udemy.com/course/sscp-training-english-isc2/",
+        "publisher": "Udemy / CYVITRIX Learning",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SSCP"
+        ],
+        "notes": "27h15m operational course updated August 2026; confirm the exact October 2025 objective map and verify technical claims officially."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "b5f713870e002874299b10159f816b4ec97a3a61e7cd69181b70e7773080fbfa",
+      "guide_sections": [
+        "1. Security Concepts and Practices — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "f28800ba4b865df51d5aa8d9bcf3384e3d82fcce5f657ee7e18a5382ab8b0664",
+      "guide_sections": [
+        "1. Security Concepts and Practices — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "f5b2cafdac2d0c54fb5a884d14cf1e0a52872bda6d740a2b2679f7e377b27f58",
+      "guide_sections": [
+        "1. Security Concepts and Practices — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "310c426f4f26562eac5485fefb7f69176a06553565fad6f05be8d0e6d8d10635",
+      "guide_sections": [
+        "1. Security Concepts and Practices — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "49c11d3d728618bff34966a1fbbc1efa58ea572b18fdf358b719738d40e6b10d",
+      "guide_sections": [
+        "1. Security Concepts and Practices — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "35efe4f6a213ebfac2051d52a361d5553e23f29409470760dcdc13b622c6918b",
+      "guide_sections": [
+        "1. Security Concepts and Practices — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "59d671d7a53538acd6a0dcf62490d2173b3afb132bd92d67d5c0e1f5471329c8",
+      "guide_sections": [
+        "1. Security Concepts and Practices — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "af62fd54cea3581c7d79aa960ec3d87ae72cb8c417a2ac8a2db2b36b595f5e18",
+      "guide_sections": [
+        "1. Security Concepts and Practices — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "c2d474de12ddb62ab8fb52fb3ce10adb0a4a0fd51832fee94cb7e121a2bca1e2",
+      "guide_sections": [
+        "2. Access Controls — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "b52bf6eb2dbffede9f2f6548aa21293c8236cdfde3693d2577063b5e257fec68",
+      "guide_sections": [
+        "2. Access Controls — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "9a6f37db48bf40fa8d22a315b90cd0aae2b95a2f3202d62b9a4db1d6e4cc4ee9",
+      "guide_sections": [
+        "2. Access Controls — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "f60f2e5366fa6687277f7a9e70e7afc4a6b51189fe794240db6182634b7cf2d1",
+      "guide_sections": [
+        "2. Access Controls — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "735841cc553e94bcf8c961d61dff648aa6f358b42319b8af60830817adcd1040",
+      "guide_sections": [
+        "3. Risk Identification, Monitoring and Analysis — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "529a67611b441e2b1de2036daf5b681751ce80beca9b27fda18aa63f5b9c569b",
+      "guide_sections": [
+        "3. Risk Identification, Monitoring and Analysis — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "2f59fb0cc9b66d0703102c0e2e001341b0db53ae486dbd77f31b3f6d40342937",
+      "guide_sections": [
+        "3. Risk Identification, Monitoring and Analysis — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "7958022e6d48d120b0d3789a55acb491317d458eb9c362baf88a56d65bd0a4ef",
+      "guide_sections": [
+        "3. Risk Identification, Monitoring and Analysis — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "c2dda1fecacee263d5686ee0822f87c18d6ad7b682212f1ed6d654bbe7a54fe9",
+      "guide_sections": [
+        "3. Risk Identification, Monitoring and Analysis — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "5db6521740464f396e35ed87dc29ee476dff652728962132fddb2b462bb3a76f",
+      "guide_sections": [
+        "4. Incident Response and Recovery — 14%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "186705cda51d217a87f2a672d27b5a5650280a3717dc0eb04d1aee143848652f",
+      "guide_sections": [
+        "4. Incident Response and Recovery — 14%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "d743cabd81549b5f80758ca6b88ff3e72ca43a21d4c9522cde7f57ee1034d5db",
+      "guide_sections": [
+        "4. Incident Response and Recovery — 14%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "e273c7aedcff220daa924573b4b911a08338e5c44c52cdd25f959594b27f24c5",
+      "guide_sections": [
+        "5. Cryptography — 9%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "f10aac655e5e1ff8b83e71ebb1bb7adf9828951e6b32abb06dde84452f587e4c",
+      "guide_sections": [
+        "5. Cryptography — 9%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "06da7ecc48c81b713f1da90f9eaea5a2cbf56441eeb240f3a98b1a41e4311d17",
+      "guide_sections": [
+        "5. Cryptography — 9%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "22fedaf9ea8ffd9cb69ea0639d50902ead871acb1c4fa073d83defc325a0699a",
+      "guide_sections": [
+        "5. Cryptography — 9%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "9831f4f2ca20f315e3f02efcc7326cd88abf54d3bb7ba15ba5ffe796c94cb7f8",
+      "guide_sections": [
+        "6. Network and Communications Security — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "057eadeed02e46d1e2c3c79735190920e9516e7365a6bc421f7055be9ba47c0c",
+      "guide_sections": [
+        "6. Network and Communications Security — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "242a1f45585bb3b2bc550f096c7c3cb31234dd7889bb1e201542729761d8b6ba",
+      "guide_sections": [
+        "6. Network and Communications Security — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "4e106cbf25fb727d4a2207db1c6e31e6d5db4b4059d8e9159d9bba5186e5b718",
+      "guide_sections": [
+        "6. Network and Communications Security — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "aa37d902c05341ff482402aa14b0ca735404ef8c33e82513f789ebf3fec0d07c",
+      "guide_sections": [
+        "6. Network and Communications Security — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "5906fdab1ad7cc9b96d83ee3f45803047743216afa3b958250441811da2f1403",
+      "guide_sections": [
+        "6. Network and Communications Security — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "90b7281b27aabbd5c1af14d70a0699dbb5c0c5fd49816287ab377f1d17354627",
+      "guide_sections": [
+        "6. Network and Communications Security — 16%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "90e91963905494bed9b0affb4faf9a7f176c11fdd1ce32b8cf0258d8896319ff",
+      "guide_sections": [
+        "7. Systems and Application Security — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "9c7c36b3e455b8f0b7ba9f24064042ca3d68f0f3d9db88bbe903bf91cd2f077f",
+      "guide_sections": [
+        "7. Systems and Application Security — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "73bd8ca1cc28060ae5114b40ea30be26c1c7edb62e0aedd9e2a84d4a7aba1671",
+      "guide_sections": [
+        "7. Systems and Application Security — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "f9d9b28890125c95974689256a44a8332bc107ae90565f4f72605e6e9ac58295",
+      "guide_sections": [
+        "7. Systems and Application Security — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "850206b18aba5a6d985441fb98001cc58c0b8d04726fd48be909765993ba2778",
+      "guide_sections": [
+        "7. Systems and Application Security — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks",
+        "Executed local TLS workbook"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "SSCP"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "SSCP",
+        "title": "Systems Security Certified Practitioner",
+        "url": "https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline",
+        "guide_path": "guides/SSCP-isc2-systems-security-certified-practitioner.md",
+        "snapshot_path": "data\\objective-snapshots\\sscp-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\sscp-official-status.json",
+        "previous_sha256": "0d643f2af74b12b015f5607516ba3da57ea3192481c800c76963d2fc27f9875e",
+        "current_sha256": "5b6e5e57f166741802957b515a7ec737606e5d43ca796a3691127de083d0a6d4",
+        "previous_status_sha256": "754be84cc95ec0b647af242f7af5ef3eb984cc81f5b1c3f22dbec29ca05b81fa",
+        "current_status_sha256": "99a084d611d7f23a0978479024854b64c6e65dd95ab0588f808875cf4099c837",
+        "official_status": {
+          "skills_versions": [
+            "Effective Date: October 1, 2025",
+            "Length of exam: 2 hours",
+            "Number of items: 100-125",
+            "Item format: Multiple choice and advanced item types",
+            "Passing grade: 700 out of 1000 points",
+            "Language availability: English, Japanese and Spanish",
+            "Testing center: Pearson Testing Center",
+            "Candidates must have a minimum of one-year full-time experience in one or more of the seven domains of the current SSCP Exam Outline. Earning a post-secondary degree (bachelors or masters) in computer science, information technology (IT) or related fields may satisfy up to one year of the required experience. Part-time work and internships may also count towards the experience requirement."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 23,
+    "reachable": 21,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "isc2-member-policies",
+      "url": "https://www.isc2.org/policies-procedures/member-policies",
+      "checked_at": "2026-09-29T12:11:06.771830+00:00",
+      "health": {
+        "id": "isc2-member-policies",
+        "url": "https://www.isc2.org/policies-procedures/member-policies",
+        "checked_at": "2026-09-29T12:11:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/policies-procedures/member-policies",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Member Policies",
+        "canonical_url": "https://www.isc2.org/policies-procedures/member-policies",
+        "duration_signals": [],
+        "signal_fingerprint": "91d58a7a0189afa3c90b0e203247190ea46b5a1d9effcf794a97dc675216775a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/policies-procedures/member-policies",
+      "sha256": "b47dac671e108143332c22ae55b8a519b94eab954e5e9507fa34e2a132b4d1d9",
+      "text_characters": 442,
+      "full_page_extraction": {
+        "characters": 41110,
+        "sha256": "e8924397368a2b3c9905de59aed15491c3f56d235b38629da5331bfe14d7007f",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "isc2-code-of-ethics",
+      "url": "https://www.isc2.org/ethics",
+      "checked_at": "2026-09-29T12:11:06.772838+00:00",
+      "health": {
+        "id": "isc2-code-of-ethics",
+        "url": "https://www.isc2.org/ethics",
+        "checked_at": "2026-09-29T12:11:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/ethics",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ISC2 Code of Ethics—Guidance for Cybersecurity Professionals",
+        "canonical_url": "https://www.isc2.org/ethics",
+        "duration_signals": [],
+        "signal_fingerprint": "7a9373b56e9e31d711af75585a8c507b34f6bda42c2694067ca96f0d1499903d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/ethics",
+      "sha256": "ad3c77bcdb73cf0303b22b49ce119f963efe64f7fc05d8bd9f9818be5701fe72",
+      "text_characters": 1484,
+      "full_page_extraction": {
+        "characters": 9260,
+        "sha256": "54f59a5c3d6121b84766efb79f01777aeaf95b5603e6209655d258697f6290bb",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "isc2-sscp-outline",
+      "url": "https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline",
+      "checked_at": "2026-09-29T12:11:06.773367+00:00",
+      "health": {
+        "id": "isc2-sscp-outline",
+        "url": "https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline",
+        "checked_at": "2026-09-29T12:11:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Review the ISC2 SSCP Certification Exam Outline",
+        "canonical_url": "https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline",
+        "duration_signals": [
+          "2 hours"
+        ],
+        "signal_fingerprint": "d234dcc4206c96b708a24b84cfeae3bf470307cf3ba2a20f5c99db01c6e193d7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline",
+      "sha256": "8bc15eaa87a31a6f136ea142dd4ea9966c7fdff1f938897b5c17245db4e18b56",
+      "text_characters": 691,
+      "full_page_extraction": {
+        "characters": 23982,
+        "sha256": "4b2705bb3d55a855a801f84b2b7d69005661b0e80bd5220f23a583bcb4c1806a",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "isc2-sscp-self-study",
+      "url": "https://www.isc2.org/certifications/sscp/sscp-self-study-resources",
+      "checked_at": "2026-09-29T12:11:08.460077+00:00",
+      "health": {
+        "id": "isc2-sscp-self-study",
+        "url": "https://www.isc2.org/certifications/sscp/sscp-self-study-resources",
+        "checked_at": "2026-09-29T12:11:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/certifications/sscp/sscp-self-study-resources",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SSCP Study Tools and Resources",
+        "canonical_url": "https://www.isc2.org/certifications/sscp/sscp-self-study-resources",
+        "duration_signals": [],
+        "signal_fingerprint": "14201cf85aaa62323822da352647a9f734138fb0867c4bd72f88c56538cebc16",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/certifications/sscp/sscp-self-study-resources",
+      "sha256": "42d5da1e601d58db31a267380dfc8837fa3d77ddcfc03e4d6b8c67ca6edcb7d3",
+      "text_characters": 2160,
+      "full_page_extraction": {
+        "characters": 3299,
+        "sha256": "d1af5bca73e40af0aafccc997ff6b4f1cae15cfde59b39179dcabb25ac6ffba0",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "isc2-sscp-adaptive-training",
+      "url": "https://www.isc2.org/training/online-self-paced/sscp-online-self-paced",
+      "checked_at": "2026-09-29T12:11:08.568009+00:00",
+      "health": {
+        "id": "isc2-sscp-adaptive-training",
+        "url": "https://www.isc2.org/training/online-self-paced/sscp-online-self-paced",
+        "checked_at": "2026-09-29T12:11:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/training/online-self-paced/sscp-online-self-paced",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Systems Security Certified Practitioner (Online Self-Paced)",
+        "canonical_url": "https://www.isc2.org/training/online-self-paced/sscp-online-self-paced",
+        "duration_signals": [],
+        "signal_fingerprint": "735dbc9d029dd077e4e3ec410f00454a7fb4665afd42a24a393be27916642014",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/training/online-self-paced/sscp-online-self-paced",
+      "sha256": "b3cf4368b9ba8c7645187ac57984f658626e6256215c548c9337b1602fa83078",
+      "text_characters": 2013,
+      "full_page_extraction": {
+        "characters": 11938,
+        "sha256": "ece76c31ae77a7cb0134dbb865daa68402b311de0afacdb9294505b9e192b991",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "pluralsight-isc2-sscp-path",
+      "url": "https://www.pluralsight.com/paths/sscpr-systems-security-certified-practitioner-certification",
+      "checked_at": "2026-09-29T12:11:08.889160+00:00",
+      "health": {
+        "id": "pluralsight-isc2-sscp-path",
+        "url": "https://www.pluralsight.com/paths/sscpr-systems-security-certified-practitioner-certification",
+        "checked_at": "2026-09-29T12:11:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/sscpr-systems-security-certified-practitioner-certification",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "SSCP® (Systems Security Certified Practitioner) Certification",
+        "canonical_url": "https://www.pluralsight.com/paths/sscpr-systems-security-certified-practitioner-certification",
+        "duration_signals": [
+          "14 Hours"
+        ],
+        "signal_fingerprint": "035771de2252de5732ba9b3606d6dd7ea71206be82658befb482cac3c939a372",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/sscpr-systems-security-certified-practitioner-certification",
+      "sha256": "c2f616b3b4de5e2d79638f066e601c67045f8edd6f029be6697f84bc93d33b84",
+      "text_characters": 4261
+    },
+    {
+      "id": "linkedin-isc2-sscp-cert-prep",
+      "url": "https://www.linkedin.com/learning/isc2-systems-security-certified-practitioner-sscp-cert-prep",
+      "checked_at": "2026-09-29T12:11:09.876147+00:00",
+      "health": {
+        "id": "linkedin-isc2-sscp-cert-prep",
+        "url": "https://www.linkedin.com/learning/isc2-systems-security-certified-practitioner-sscp-cert-prep",
+        "checked_at": "2026-09-29T12:11:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.linkedin.com/learning/isc2-systems-security-certified-practitioner-sscp-cert-prep",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ISC2 Systems Security Certified Practitioner (SSCP) Cert Prep Online Class | LinkedIn Learning, formerly Lynda.com",
+        "canonical_url": "https://www.linkedin.com/learning/isc2-systems-security-certified-practitioner-sscp-cert-prep",
+        "duration_signals": [
+          "PT10M41S",
+          "PT10M48S",
+          "PT10M4S",
+          "PT11M15S",
+          "PT11M27S",
+          "PT11M38S",
+          "PT11M48S",
+          "PT11M53S",
+          "PT12M16S",
+          "PT12M20S",
+          "PT12M21S",
+          "PT12M25S",
+          "PT12M55S",
+          "PT13M15S",
+          "PT13M17S",
+          "PT13M26S",
+          "PT13M37S",
+          "PT13M57S",
+          "PT13M6S",
+          "PT14M24S",
+          "PT14M54S",
+          "PT14M7S",
+          "PT15M5S",
+          "PT17M59S",
+          "PT5M59S",
+          "PT6H59S",
+          "PT7M47S",
+          "PT8M18S",
+          "PT9M30S",
+          "PT9M39S"
+        ],
+        "signal_fingerprint": "16e1c761d59fd227bce421121cd7e08642522af3b93a24296b0d1924d54ce356",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.linkedin.com/learning/isc2-systems-security-certified-practitioner-sscp-cert-prep",
+      "sha256": "5f6b923f55524b39916eb2db778664ec64fc57cbf78aae5ad3db8ffaed5c6695",
+      "text_characters": 4676
+    },
+    {
+      "id": "oreilly-isc2-sscp-study-guide-3e",
+      "url": "https://www.oreilly.com/library/view/isc-2-sscp-systems/9781119854982/",
+      "checked_at": "2026-09-29T12:11:10.223373+00:00",
+      "health": {
+        "id": "oreilly-isc2-sscp-study-guide-3e",
+        "url": "https://www.oreilly.com/library/view/isc-2-sscp-systems/9781119854982/",
+        "checked_at": "2026-09-29T12:11:10+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/isc-2-sscp-systems/9781119854982/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "udemy-isc2-sscp-masterclass",
+      "url": "https://www.udemy.com/course/sscp-training-english-isc2/",
+      "checked_at": "2026-09-29T12:11:10.411944+00:00",
+      "health": {
+        "id": "udemy-isc2-sscp-masterclass",
+        "url": "https://www.udemy.com/course/sscp-training-english-isc2/",
+        "checked_at": "2026-09-29T12:11:10+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/sscp-training-english-isc2/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "isc2-cat-policy",
+      "url": "https://www.isc2.org/certifications/computerized-adaptive-testing",
+      "checked_at": "2026-09-29T12:18:25.464248+00:00",
+      "health": {
+        "id": "isc2-cat-policy",
+        "url": "https://www.isc2.org/certifications/computerized-adaptive-testing",
+        "checked_at": "2026-09-29T12:18:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/certifications/computerized-adaptive-testing",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Computerized Adaptive Testing",
+        "canonical_url": "https://www.isc2.org/certifications/computerized-adaptive-testing",
+        "duration_signals": [],
+        "signal_fingerprint": "22554610ea2cc26f338669a2bdd622cfd5b7ed8113eff37535bcb0f52e88b928",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/certifications/computerized-adaptive-testing",
+      "sha256": "f087b382340162e9c0134f15ff2af7bdbb5f437781a522e03be8f3950647dede",
+      "text_characters": 847,
+      "full_page_extraction": {
+        "characters": 15171,
+        "sha256": "e75bad8527c9d80e93affdcaa4102d21a4ae3dcdfd1cfb91a7ec5363f17646a1",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "nist-pqc-first-standards",
+      "url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+      "checked_at": "2026-09-29T12:18:25.464883+00:00",
+      "health": {
+        "id": "nist-pqc-first-standards",
+        "url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+        "checked_at": "2026-09-29T12:18:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "NIST Releases First 3 Finalized Post-Quantum Encryption Standards",
+        "canonical_url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+        "duration_signals": [],
+        "signal_fingerprint": "e7277cd44446eb1a1faf6735d1374fe4e0dcceec987c99155f82b4afb209c448",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+      "sha256": "5d1fdc57d5a0c1ffd8ed775d4b5e695ab2f71b44b532c6de4147527939221dfd",
+      "text_characters": 12282
+    },
+    {
+      "id": "nist-ir-2025-announcement",
+      "url": "https://www.nist.gov/news-events/news/2025/04/nist-revises-sp-800-61-incident-response-recommendations-and-considerations",
+      "checked_at": "2026-09-29T12:18:25.465292+00:00",
+      "health": {
+        "id": "nist-ir-2025-announcement",
+        "url": "https://www.nist.gov/news-events/news/2025/04/nist-revises-sp-800-61-incident-response-recommendations-and-considerations",
+        "checked_at": "2026-09-29T12:18:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nist.gov/news-events/news/2025/04/nist-revises-sp-800-61-incident-response-recommendations-and-considerations",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "NIST Revises SP 800-61: Incident Response Recommendations and Considerations for Cybersecurity Risk Management",
+        "canonical_url": "https://www.nist.gov/news-events/news/2025/04/nist-revises-sp-800-61-incident-response-recommendations-and-considerations",
+        "duration_signals": [],
+        "signal_fingerprint": "2242f5d7d41b39b3d3f59f1bdb73bceac719c8a1ef55bf1ec09e9260d5e178d6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nist.gov/news-events/news/2025/04/nist-revises-sp-800-61-incident-response-recommendations-and-considerations",
+      "sha256": "e5c142cf56a029377f69b79cd9cffdcdaa191c458e3e493041a3157ec45b68e2",
+      "text_characters": 4510
+    },
+    {
+      "id": "python313-ssl",
+      "url": "https://docs.python.org/3.13/library/ssl.html",
+      "checked_at": "2026-09-29T12:18:25.902800+00:00",
+      "health": {
+        "id": "python313-ssl",
+        "url": "https://docs.python.org/3.13/library/ssl.html",
+        "checked_at": "2026-09-29T12:18:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/ssl.html",
+        "content_type": "text/html",
+        "page_title": "ssl — TLS/SSL wrapper for socket objects",
+        "canonical_url": "https://docs.python.org/3/library/ssl.html",
+        "duration_signals": [],
+        "signal_fingerprint": "0691c02a204f1ca59af286e4766d6b0995e54120e15d931afc37d3e3fc00a1f5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/ssl.html",
+      "sha256": "af3481bb6959ea23d7d5d57cd44c4bae2efe2ed1466c2a89a9d7d6849c0e57ba",
+      "text_characters": 92932
+    },
+    {
+      "id": "cryptography50-x509-tutorial",
+      "url": "https://cryptography.io/en/50.0.1/x509/tutorial/",
+      "checked_at": "2026-09-29T12:18:25.920641+00:00",
+      "health": {
+        "id": "cryptography50-x509-tutorial",
+        "url": "https://cryptography.io/en/50.0.1/x509/tutorial/",
+        "checked_at": "2026-09-29T12:18:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cryptography.io/en/50.0.1/x509/tutorial/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Tutorial — Cryptography 50.0.1 documentation",
+        "canonical_url": "https://cryptography.io/en/50.0.1/x509/tutorial/",
+        "duration_signals": [],
+        "signal_fingerprint": "e335f1ed188d7948bc909c27cf5a5c7daa8825e5f51466a5af2504eab4603f52",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cryptography.io/en/50.0.1/x509/tutorial/",
+      "sha256": "032a84760430176bdaf75b55003f4b7e7f2375f5e362b7cc30f4184ceb41ff04",
+      "text_characters": 13079
+    },
+    {
+      "id": "cryptography50-ec",
+      "url": "https://cryptography.io/en/50.0.1/hazmat/primitives/asymmetric/ec/",
+      "checked_at": "2026-09-29T12:18:26.428596+00:00",
+      "health": {
+        "id": "cryptography50-ec",
+        "url": "https://cryptography.io/en/50.0.1/hazmat/primitives/asymmetric/ec/",
+        "checked_at": "2026-09-29T12:18:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cryptography.io/en/50.0.1/hazmat/primitives/asymmetric/ec/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Elliptic curve cryptography — Cryptography 50.0.1 documentation",
+        "canonical_url": "https://cryptography.io/en/50.0.1/hazmat/primitives/asymmetric/ec/",
+        "duration_signals": [],
+        "signal_fingerprint": "4010c2f113fead1157d2759e797c75acc475298f779bbfa0389d3e40d5f471e5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cryptography.io/en/50.0.1/hazmat/primitives/asymmetric/ec/",
+      "sha256": "f3c9a6c4879ebc30522a5aed6f63cf1d6459cd5349e979ecf0a14277e73815cf",
+      "text_characters": 20298
+    },
+    {
+      "id": "cryptography50-x509-reference",
+      "url": "https://cryptography.io/en/50.0.1/x509/reference/",
+      "checked_at": "2026-09-29T12:18:26.441069+00:00",
+      "health": {
+        "id": "cryptography50-x509-reference",
+        "url": "https://cryptography.io/en/50.0.1/x509/reference/",
+        "checked_at": "2026-09-29T12:18:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cryptography.io/en/50.0.1/x509/reference/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "X.509 Reference — Cryptography 50.0.1 documentation",
+        "canonical_url": "https://cryptography.io/en/50.0.1/x509/reference/",
+        "duration_signals": [],
+        "signal_fingerprint": "1b89181b183148fe0f818b86946fd3fe2f740b870e112798c9924e5aadf303a7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cryptography.io/en/50.0.1/x509/reference/",
+      "sha256": "6d16745d551af26a990ed4757e4a301e7608a784d2a674a2a9744fb685d9f14a",
+      "text_characters": 102381
+    },
+    {
+      "id": "nist-800-63b-4",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "checked_at": "2026-09-29T12:18:26.852409+00:00",
+      "health": {
+        "id": "nist-800-63b-4",
+        "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+        "checked_at": "2026-09-29T12:18:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+        "content_type": "text/html",
+        "page_title": "NIST Special Publication 800-63B",
+        "canonical_url": "/800-63-4/sp800-63b.html",
+        "duration_signals": [
+          "1 hour",
+          "10 minutes",
+          "12 hours",
+          "15 minutes",
+          "24 hours",
+          "24 hours and 10 minutes"
+        ],
+        "signal_fingerprint": "5ddbbdf4604797a1f84ba2134130ae1d3b228955b507c77d2c1b48e269f67805",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "sha256": "47cd4178b49a9b3a68a6de1f0c3ea39f1ff89dcbd6ba780ac0b2ae2a259a77c8",
+      "text_characters": 253608
+    },
+    {
+      "id": "isc2-sscp-experience",
+      "url": "https://www.isc2.org/certifications/sscp/sscp-experience-requirements",
+      "checked_at": "2026-09-29T12:18:27.082735+00:00",
+      "health": {
+        "id": "isc2-sscp-experience",
+        "url": "https://www.isc2.org/certifications/sscp/sscp-experience-requirements",
+        "checked_at": "2026-09-29T12:18:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.isc2.org/certifications/sscp/sscp-experience-requirements",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SSCP Experience Requirements",
+        "canonical_url": "https://www.isc2.org/certifications/sscp/sscp-experience-requirements",
+        "duration_signals": [
+          "1040 hours",
+          "20 hours",
+          "2080 hours",
+          "34 hours",
+          "35 hours"
+        ],
+        "signal_fingerprint": "01bade2795f6f5dfcab0208af9dc6215519dd0890368d6d09576fbe86d34d615",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.isc2.org/certifications/sscp/sscp-experience-requirements",
+      "sha256": "aaa803a15656ff2f077bed23ec81ce87d1c3284570cd697d1c541573a7ca257c",
+      "text_characters": 2697,
+      "full_page_extraction": {
+        "characters": 3672,
+        "sha256": "cd9b55519b014ecacebe09025d1c732d9655d1334a582a55f461dc528eaea8e1",
+        "reason": "Additional public content occurs outside main element."
+      }
+    },
+    {
+      "id": "isc2-ai-exam-guidance",
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+      "checked_at": "2026-09-29T12:18:31.261858+00:00",
+      "health": {
+        "id": "isc2-ai-exam-guidance",
+        "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+        "checked_at": "2026-09-29T12:18:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+      "sha256": "69cd0cfa50fac68a60370f812f0ce5f6f33b1a861eac66b4c66e2e410fbb0741",
+      "bytes": 506895,
+      "pdf_pages": 29,
+      "text_characters": 70743
+    },
+    {
+      "id": "nist-sp800-61r3-pdf",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "checked_at": "2026-09-29T12:18:41.012931+00:00",
+      "health": {
+        "id": "nist-sp800-61r3-pdf",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "checked_at": "2026-09-29T12:18:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "sha256": "e5593d6bb85daecec7e8d9549400c7b3473bcc3f06e469c82218073afa7fba2d",
+      "bytes": 1040566,
+      "pdf_pages": 48,
+      "text_characters": 107538
+    },
+    {
+      "id": "nist-800-207",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "checked_at": "2026-09-29T12:18:32.968820+00:00",
+      "health": {
+        "id": "nist-800-207",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "checked_at": "2026-09-29T12:18:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "sha256": "0290d6ece24874287316f4bf430fef770aa4ec08a2227c8f2c1e5b2ff975e03d",
+      "bytes": 966908,
+      "pdf_pages": 59,
+      "text_characters": 156827
+    },
+    {
+      "id": "nist-800-88r2",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "checked_at": "2026-09-29T12:23:15.923198+00:00",
+      "health": {
+        "id": "nist-800-88r2",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+        "checked_at": "2026-09-29T12:23:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "sha256": "39bb805c72723ed74f08e5806cd8463ca2554a62abb4f97b9d19c0398a8a7c55",
+      "bytes": 983677,
+      "pdf_pages": 48,
+      "text_characters": 112553
+    },
+    {
+      "id": "isc2-sscp-outline-2025-pdf",
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/MAR-EXAMS-SSCP-Exam_Outline-English---10012025---FINAL.pdf",
+      "checked_at": "2026-09-29T12:18:41.701869+00:00",
+      "health": {
+        "id": "isc2-sscp-outline-2025-pdf",
+        "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/MAR-EXAMS-SSCP-Exam_Outline-English---10012025---FINAL.pdf",
+        "checked_at": "2026-09-29T12:18:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/MAR-EXAMS-SSCP-Exam_Outline-English---10012025---FINAL.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/MAR-EXAMS-SSCP-Exam_Outline-English---10012025---FINAL.pdf",
+      "sha256": "3f5bdef614bbe7d339f321fcd5c5d50ea4586606756ef840ac1b6f169160d9b9",
+      "bytes": 314623,
+      "pdf_pages": 12,
+      "text_characters": 19006
+    }
+  ],
+  "added_source_ids": [
+    "isc2-sscp-outline-2025-pdf",
+    "isc2-sscp-experience"
+  ],
+  "findings": [
+    {
+      "id": "sscp-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "An editorial testing-center change preserves the existing scope",
+      "url": "https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SSCP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Only Pearson label changed;36 numbered objectives and seven weights unchanged.",
+      "recommendation": "Archive prior bytes and history; explicitly accept the label and include nonhyphenated6.7.",
+      "disposition": "applied",
+      "source_id": "isc2-sscp-outline",
+      "resolution": "Archive prior bytes and history; explicitly accept the label and include nonhyphenated6.7."
+    },
+    {
+      "id": "sscp-deep-2",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "PDF presentation does not replace canonical mobile-device scope",
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/MAR-EXAMS-SSCP-Exam_Outline-English---10012025---FINAL.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SSCP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Visible7.3 says EDR over mobile bullets; extractedpage11 also repeats hidden Domain6 text.",
+      "recommendation": "Use canonicalweb heading, retain endpoint andmobile teaching, and document visual inspection.",
+      "disposition": "applied",
+      "source_id": "isc2-sscp-outline-2025-pdf",
+      "resolution": "Use canonicalweb heading, retain endpoint andmobile teaching, and document visual inspection."
+    },
+    {
+      "id": "sscp-deep-3",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Experience pathways are distinct from a course certificate",
+      "url": "https://www.isc2.org/certifications/sscp/sscp-experience-requirements",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SSCP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "One-year domain experience anddegree/parttime/internship alternatives;Associate route two years.",
+      "recommendation": "Preserve conditional eligibility and separate official application from learning completion.",
+      "disposition": "applied",
+      "source_id": "isc2-sscp-experience",
+      "resolution": "Preserve conditional eligibility and separate official application from learning completion."
+    },
+    {
+      "id": "sscp-deep-4",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Annual suggestions differ from cycle obligations",
+      "url": "https://www.isc2.org/policies-procedures/member-policies",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SSCP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "SSCP60CPE/3years with45A plus15AorB;20annualsuggested;Associate15A annual.",
+      "recommendation": "State correct category and current135USDmember/50USDAssociate fees with dated verification.",
+      "disposition": "applied",
+      "source_id": "isc2-member-policies",
+      "resolution": "State correct category and current135USDmember/50USDAssociate fees with dated verification."
+    },
+    {
+      "id": "sscp-deep-5",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "AI context remains inside seven SSCP domains",
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SSCP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Complete SSCP6-8 maps identities,monitoring,recovery,crypto,network andapplication operations.",
+      "recommendation": "Apply context without newweights or treating drift/signature asproof of attack/truth.",
+      "disposition": "applied",
+      "source_id": "isc2-ai-exam-guidance",
+      "resolution": "Apply context without newweights or treating drift/signature asproof of attack/truth."
+    },
+    {
+      "id": "sscp-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Certificate trust and revocation enforcement are independent settings",
+      "url": "https://docs.python.org/3.13/library/ssl.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SSCP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "CRLloading alone doesnot enforce;leaf flag requires current properCRL. Actual11TLS outcomes checked.",
+      "recommendation": "Teach trust,name,time,usage,status androtation separately with observed negative cases.",
+      "disposition": "applied",
+      "source_id": "python313-ssl",
+      "resolution": "Teach trust,name,time,usage,status androtation separately with observed negative cases."
+    },
+    {
+      "id": "sscp-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Password requirements and phishing resistance need scope",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SSCP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Centrallyverified15singlefactor/8MFAminimum;manualOTP relay notphishingresistant.",
+      "recommendation": "Distinguish verifier guidance from localactivationPINs and avoid universal calendar/composition requirements.",
+      "disposition": "applied",
+      "source_id": "nist-800-63b-4",
+      "resolution": "Distinguish verifier guidance from localactivationPINs and avoid universal calendar/composition requirements."
+    },
+    {
+      "id": "sscp-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Sanitization completion and acceptance answer different questions",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SSCP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Selectedverification/validation andCE preconditions include keycopies andplaintext.",
+      "recommendation": "Require medium-appropriate evidence andrisk acceptance;temporary cleanup isnot sanitization proof.",
+      "disposition": "applied",
+      "source_id": "nist-800-88r2",
+      "resolution": "Require medium-appropriate evidence andrisk acceptance;temporary cleanup isnot sanitization proof."
+    },
+    {
+      "id": "sscp-deep-9",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Current incident-response guidance supersedes Revision2",
+      "url": "https://www.nist.gov/news-events/news/2025/04/nist-revises-sp-800-61-incident-response-recommendations-and-considerations",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SSCP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "April2025finalRevision3 usesCSF2 Functions across preparation,response andimprovement.",
+      "recommendation": "Keep useful outlineactivities while identifying current guidance and separate RTO/RPO acceptance.",
+      "disposition": "applied",
+      "source_id": "nist-ir-2025-announcement",
+      "resolution": "Keep useful outlineactivities while identifying current guidance and separate RTO/RPO acceptance."
+    },
+    {
+      "id": "sscp-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Post-quantum standards have different roles",
+      "url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SSCP"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "FIPS203keyencapsulation versus204/205signatures.",
+      "recommendation": "Teach algorithm purpose and approved migration inventory without speculative availability or implementation claims.",
+      "disposition": "applied",
+      "source_id": "nist-pqc-first-standards",
+      "resolution": "Teach algorithm purpose and approved migration inventory without speculative availability or implementation claims."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "nist-ir-2025-announcement",
+      "published_on": "2025-04-03",
+      "review": "Complete main first-party announcement read;Revision3replacement applied."
+    },
+    {
+      "source_id": "isc2-ai-exam-guidance",
+      "published_on": "2026-09-01",
+      "review": "ActualPDF introduction andcompleteSSCP6-8 read;embeddedseven-domaincontext applied."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 11,
+      "tls_cases_executed": 11,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "a5b56b6f36582bb16c94df0906dfc54abcc64f43a65717c958f8ba97cc8c4703",
+      "python_version": "Python 3.13.14",
+      "execution_stdout": "{\"tls_cases\": [{\"case\": \"trusted name, time and server usage\", \"verify_code\": 0, \"protocol\": \"TLSv1.3\"}, {\"case\": \"wrong hostname\", \"verify_code\": 62}, {\"case\": \"untrusted issuer\", \"verify_code\": 20}, {\"case\": \"expired leaf\", \"verify_code\": 10}, {\"case\": \"not-yet-valid leaf\", \"verify_code\": 9}, {\"case\": \"client-only usage\", \"verify_code\": 26}, {\"case\": \"loaded CRL without enforcement\", \"verify_code\": 0, \"protocol\": \"TLSv1.3\"}, {\"case\": \"revoked leaf with enforcement\", \"verify_code\": 23}, {\"case\": \"enforcement without CRL\", \"verify_code\": 3}, {\"case\": \"rotated leaf with current CRL\", \"verify_code\": 0, \"protocol\": \"TLSv1.3\"}, {\"case\": \"rotated leaf with stale CRL\", \"verify_code\": 12}], \"temporary_files_removed\": true, \"openssl\": \"OpenSSL 3.0.21 9 Jun 2026\", \"cryptography\": \"50.0.1\"}\n11 TLS cases passed; temporary files removed",
+      "results": {
+        "tls_cases": [
+          {
+            "case": "trusted name, time and server usage",
+            "verify_code": 0,
+            "protocol": "TLSv1.3"
+          },
+          {
+            "case": "wrong hostname",
+            "verify_code": 62
+          },
+          {
+            "case": "untrusted issuer",
+            "verify_code": 20
+          },
+          {
+            "case": "expired leaf",
+            "verify_code": 10
+          },
+          {
+            "case": "not-yet-valid leaf",
+            "verify_code": 9
+          },
+          {
+            "case": "client-only usage",
+            "verify_code": 26
+          },
+          {
+            "case": "loaded CRL without enforcement",
+            "verify_code": 0,
+            "protocol": "TLSv1.3"
+          },
+          {
+            "case": "revoked leaf with enforcement",
+            "verify_code": 23
+          },
+          {
+            "case": "enforcement without CRL",
+            "verify_code": 3
+          },
+          {
+            "case": "rotated leaf with current CRL",
+            "verify_code": 0,
+            "protocol": "TLSv1.3"
+          },
+          {
+            "case": "rotated leaf with stale CRL",
+            "verify_code": 12
+          }
+        ],
+        "temporary_files_removed": true,
+        "openssl": "OpenSSL 3.0.21 9 Jun 2026",
+        "cryptography": "50.0.1"
+      },
+      "execution_boundary": "Actual TLS handshakes and encrypted payload exchange through memory BIOs with synthetic CA/leaf/CRLs. Three accepted/eight rejected cases. Encrypted disposable server key and certificates in verified temporary workspace child removed. No sockets, system trust, credentials, installation or infrastructure.",
+      "model_limits": "No browser/network/OCSP/automatic CRL retrieval/intermediate-chain revocation/mTLS/application authorization/session invalidation/production PKI/sanitization guarantee."
+    }
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "Two commercial catalogs returnedHTTP403;prior OReilly/Udemy durations/revisions/alignment unverified. Public course metadata is not proof of paid teaching quality or complete current alignment.",
+    "Eight infrastructure activities andthree scenarios remain proposed. Human review pending; no real identity,network,cloud,incident,forensic ormedia exercise executed.",
+    "Eleven actual TLS cases use memory BIOs and synthetic direct-issuer certificates/CRLs. No sockets,system trust modifications,online status retrieval,OCSP,intermediate chain,mTLS,browser behavior orproduction CA.",
+    "Accepted TLS authenticates the controlled server certificate and transports synthetic payloads;it doesnot establish application authorization,session invalidation,key custody governance orfactual truth.",
+    "Temporary encrypted key/certificate files were created only in a verified workspace child and removed. Cleanup is not sanitization certification. Existing Python environment used;no installation.",
+    "Full12page outline read with3pages visually inspected;29pageAIguide onlyintro/SSCP6-8. NIST andAPIreferences read selectively asrecorded,not comprehensive standards/compliance audits.",
+    "Canonicalweb andPDF differ in presentation andsomewording;currentpublic courseversions are inconsistent/older. No personal eligibility,entitlement,regional price,booking orpurchase verified.",
+    "ReservedfiveGitHubguides anddisablednotificationpilot untouched;noexternalmessages,service/auth/logging changes ornewpermissions."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Repository/site gates and11 actual memory-BIO TLS cases with synthetic certificates/CRLs. Three accepted cases exchange payloads; eight reject. Verified temporary child cleaned; no sockets,system trust,installation,credentials or infrastructure changes.",
+    "passed": 11,
+    "tls_cases_executed": 11,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "a5b56b6f36582bb16c94df0906dfc54abcc64f43a65717c958f8ba97cc8c4703",
+    "python_version": "Python 3.13.14",
+    "execution_stdout": "{\"tls_cases\": [{\"case\": \"trusted name, time and server usage\", \"verify_code\": 0, \"protocol\": \"TLSv1.3\"}, {\"case\": \"wrong hostname\", \"verify_code\": 62}, {\"case\": \"untrusted issuer\", \"verify_code\": 20}, {\"case\": \"expired leaf\", \"verify_code\": 10}, {\"case\": \"not-yet-valid leaf\", \"verify_code\": 9}, {\"case\": \"client-only usage\", \"verify_code\": 26}, {\"case\": \"loaded CRL without enforcement\", \"verify_code\": 0, \"protocol\": \"TLSv1.3\"}, {\"case\": \"revoked leaf with enforcement\", \"verify_code\": 23}, {\"case\": \"enforcement without CRL\", \"verify_code\": 3}, {\"case\": \"rotated leaf with current CRL\", \"verify_code\": 0, \"protocol\": \"TLSv1.3\"}, {\"case\": \"rotated leaf with stale CRL\", \"verify_code\": 12}], \"temporary_files_removed\": true, \"openssl\": \"OpenSSL 3.0.21 9 Jun 2026\", \"cryptography\": \"50.0.1\"}\n11 TLS cases passed; temporary files removed",
+    "results": {
+      "tls_cases": [
+        {
+          "case": "trusted name, time and server usage",
+          "verify_code": 0,
+          "protocol": "TLSv1.3"
+        },
+        {
+          "case": "wrong hostname",
+          "verify_code": 62
+        },
+        {
+          "case": "untrusted issuer",
+          "verify_code": 20
+        },
+        {
+          "case": "expired leaf",
+          "verify_code": 10
+        },
+        {
+          "case": "not-yet-valid leaf",
+          "verify_code": 9
+        },
+        {
+          "case": "client-only usage",
+          "verify_code": 26
+        },
+        {
+          "case": "loaded CRL without enforcement",
+          "verify_code": 0,
+          "protocol": "TLSv1.3"
+        },
+        {
+          "case": "revoked leaf with enforcement",
+          "verify_code": 23
+        },
+        {
+          "case": "enforcement without CRL",
+          "verify_code": 3
+        },
+        {
+          "case": "rotated leaf with current CRL",
+          "verify_code": 0,
+          "protocol": "TLSv1.3"
+        },
+        {
+          "case": "rotated leaf with stale CRL",
+          "verify_code": 12
+        }
+      ],
+      "temporary_files_removed": true,
+      "openssl": "OpenSSL 3.0.21 9 Jun 2026",
+      "cryptography": "50.0.1"
+    },
+    "model_limits": "No browser/network/OCSP/automatic CRL retrieval/intermediate-chain revocation/mTLS/application authorization/session invalidation/production PKI/sanitization guarantee.",
+    "learning_catalog_consistency": "passed"
+  },
+  "archived_prior_baselines": {
+    "objectives": {
+      "path": "data/objective-snapshots/sscp-2026-09-02-official-objectives.txt",
+      "sha256": "0d643f2af74b12b015f5607516ba3da57ea3192481c800c76963d2fc27f9875e"
+    },
+    "status": {
+      "path": "data/objective-snapshots/sscp-2026-09-02-official-status.json",
+      "sha256": "754be84cc95ec0b647af242f7af5ef3eb984cc81f5b1c3f22dbec29ca05b81fa"
+    },
+    "historical_audit_paths_updated": 1,
+    "reason": "Only testing-center label changed; all 36 numbered web objectives and seven weights unchanged. PDF presentation differences reviewed separately, including 7.3 mobile-device bullets under EDR heading."
+  },
+  "objective_baseline_acceptance": {
+    "changed": [
+      "SSCP"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "SSCP",
+        "title": "Systems Security Certified Practitioner",
+        "url": "https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline",
+        "guide_path": "guides/SSCP-isc2-systems-security-certified-practitioner.md",
+        "snapshot_path": "data\\objective-snapshots\\sscp-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\sscp-official-status.json",
+        "previous_sha256": "0d643f2af74b12b015f5607516ba3da57ea3192481c800c76963d2fc27f9875e",
+        "current_sha256": "5b6e5e57f166741802957b515a7ec737606e5d43ca796a3691127de083d0a6d4",
+        "previous_status_sha256": "754be84cc95ec0b647af242f7af5ef3eb984cc81f5b1c3f22dbec29ca05b81fa",
+        "current_status_sha256": "99a084d611d7f23a0978479024854b64c6e65dd95ab0588f808875cf4099c837",
+        "official_status": {
+          "skills_versions": [
+            "Effective Date: October 1, 2025",
+            "Length of exam: 2 hours",
+            "Number of items: 100-125",
+            "Item format: Multiple choice and advanced item types",
+            "Passing grade: 700 out of 1000 points",
+            "Language availability: English, Japanese and Spanish",
+            "Testing center: Pearson Testing Center",
+            "Candidates must have a minimum of one-year full-time experience in one or more of the seven domains of the current SSCP Exam Outline. Earning a post-secondary degree (bachelors or masters) in computer science, information technology (IT) or related fields may satisfy up to one year of the required experience. Part-time work and internships may also count towards the experience requirement."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ]
+  },
+  "post_acceptance_monitor": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "SSCP",
+        "title": "Systems Security Certified Practitioner",
+        "url": "https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline",
+        "guide_path": "guides/SSCP-isc2-systems-security-certified-practitioner.md",
+        "snapshot_path": "data\\objective-snapshots\\sscp-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\sscp-official-status.json",
+        "previous_sha256": "5b6e5e57f166741802957b515a7ec737606e5d43ca796a3691127de083d0a6d4",
+        "current_sha256": "5b6e5e57f166741802957b515a7ec737606e5d43ca796a3691127de083d0a6d4",
+        "previous_status_sha256": "99a084d611d7f23a0978479024854b64c6e65dd95ab0588f808875cf4099c837",
+        "current_status_sha256": "99a084d611d7f23a0978479024854b64c6e65dd95ab0588f808875cf4099c837",
+        "official_status": {
+          "skills_versions": [
+            "Effective Date: October 1, 2025",
+            "Length of exam: 2 hours",
+            "Number of items: 100-125",
+            "Item format: Multiple choice and advanced item types",
+            "Passing grade: 700 out of 1000 points",
+            "Language availability: English, Japanese and Spanish",
+            "Testing center: Pearson Testing Center",
+            "Candidates must have a minimum of one-year full-time experience in one or more of the seven domains of the current SSCP Exam Outline. Earning a post-secondary degree (bachelors or masters) in computer science, information technology (IT) or related fields may satisfy up to one year of the required experience. Part-time work and internships may also count towards the experience requirement."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "actual_pdf_receipts": [
+    {
+      "id": "isc2-ai-exam-guidance",
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+      "checked_at": "2026-09-29T12:18:31.261858+00:00",
+      "health": {
+        "id": "isc2-ai-exam-guidance",
+        "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+        "checked_at": "2026-09-29T12:18:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+      "sha256": "69cd0cfa50fac68a60370f812f0ce5f6f33b1a861eac66b4c66e2e410fbb0741",
+      "bytes": 506895,
+      "pdf_pages": 29,
+      "text_characters": 70743
+    },
+    {
+      "id": "nist-sp800-61r3-pdf",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "checked_at": "2026-09-29T12:18:41.012931+00:00",
+      "health": {
+        "id": "nist-sp800-61r3-pdf",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "checked_at": "2026-09-29T12:18:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "sha256": "e5593d6bb85daecec7e8d9549400c7b3473bcc3f06e469c82218073afa7fba2d",
+      "bytes": 1040566,
+      "pdf_pages": 48,
+      "text_characters": 107538
+    },
+    {
+      "id": "nist-800-207",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "checked_at": "2026-09-29T12:18:32.968820+00:00",
+      "health": {
+        "id": "nist-800-207",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "checked_at": "2026-09-29T12:18:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+      "sha256": "0290d6ece24874287316f4bf430fef770aa4ec08a2227c8f2c1e5b2ff975e03d",
+      "bytes": 966908,
+      "pdf_pages": 59,
+      "text_characters": 156827
+    },
+    {
+      "id": "nist-800-88r2",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "checked_at": "2026-09-29T12:23:15.923198+00:00",
+      "health": {
+        "id": "nist-800-88r2",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+        "checked_at": "2026-09-29T12:23:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+      "sha256": "39bb805c72723ed74f08e5806cd8463ca2554a62abb4f97b9d19c0398a8a7c55",
+      "bytes": 983677,
+      "pdf_pages": 48,
+      "text_characters": 112553
+    },
+    {
+      "id": "isc2-sscp-outline-2025-pdf",
+      "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/MAR-EXAMS-SSCP-Exam_Outline-English---10012025---FINAL.pdf",
+      "checked_at": "2026-09-29T12:18:41.701869+00:00",
+      "health": {
+        "id": "isc2-sscp-outline-2025-pdf",
+        "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/MAR-EXAMS-SSCP-Exam_Outline-English---10012025---FINAL.pdf",
+        "checked_at": "2026-09-29T12:18:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/MAR-EXAMS-SSCP-Exam_Outline-English---10012025---FINAL.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/MAR-EXAMS-SSCP-Exam_Outline-English---10012025---FINAL.pdf",
+      "sha256": "3f5bdef614bbe7d339f321fcd5c5d50ea4586606756ef840ac1b6f169160d9b9",
+      "bytes": 314623,
+      "pdf_pages": 12,
+      "text_characters": 19006
+    }
+  ],
+  "pdf_reading_boundary": "SSCP outline all12pages, pages3/9/11 visually inspected; AIguidance introduction andSSCP printed6-8. NISTPDF selectedsections per source notes; notfullstandards.",
+  "visual_inspection": {
+    "source_id": "isc2-sscp-outline-2025-pdf",
+    "pages_one_based": [
+      3,
+      9,
+      11
+    ],
+    "result": "Weights/CAT and cryptography layout confirmed. Page11 hidden repeatedDomain6 text is not visibly present; visible7.3 EDR heading above mobile-device bullets differs from canonical web mobile-management heading."
+  },
+  "public_objective_groups": [
+    {
+      "title": "Domain 1: Security Concepts and Practices",
+      "objectives": [
+        "1.1 - Comply with codes of ethics\nISC2 Code of Ethics\nOrganizational code of ethics",
+        "1.2 - Understand security concepts\nConfidentiality\nIntegrity\nAvailability\nAccountability\nNon-repudiation\nLeast privilege\nSegregation of duties (SoD)",
+        "1.3 - Identify and implement security controls\nTechnical controls (e.g., firewalls, intrusion detection systems (IDS), access control list (ACL)\nPhysical controls (e.g., mantraps, cameras, locks)\nAdministrative controls (e.g., security policies, standards, procedures, baselines)\nAssessing compliance requirements\nPeriodic audit and review",
+        "1.4 - Document and maintain functional security controls\nDeterrent controls\nPreventative controls\nDetective controls\nCorrective controls\nCompensating controls",
+        "1.5 - Support and implement asset management lifecycle (i.e., hardware, software, and data)\nProcess, planning, design and initiation\nDevelopment /Acquisition (e.g., DevSecOps, testing)\nInventory and licensing (e.g., open source, closed-source)\nImplementation/Assessment\nOperation/Maintenance/End of Life (EOL)\nArchival and retention requirements\nDisposal and destruction",
+        "1.6 - Support and/or implement change management lifecycle\nChange management (e.g., roles, responsibilities, processes, communications, audit)\nSecurity impact analysis\nConfiguration management (CM)",
+        "1.7 - Support and/or implement security awareness and training (e.g., social engineering/phishing/tabletop exercises/awareness communications)",
+        "1.8 - Collaborate with physical security operations (e.g., data center/facility assessment, badging and visitor management, personal device restrictions)"
+      ]
+    },
+    {
+      "title": "Domain 2: Access Controls",
+      "objectives": [
+        "2.1 - Implement and maintain authentication methods\nSingle/Multi-factor authentication (MFA)\nSingle sign-on (SSO) (e.g., Active Directory Federation Services (ADFS), OpenID Connect)\nDevice authentication (e.g., certificate, Media Access Control (MAC) address, Trusted Platform Module (TPM))\nFederated access (e.g., Open Authorization 2 (OAuth2), Security Assertion Markup Language (SAML))",
+        "2.2 - Understand and support internetwork trust architectures\nTrust relationships (e.g., 1-way, 2-way, transitive, zero)\nInternet, intranet, extranet, and demilitarized zone (DMZ)\nThird-party connections (e.g., application programming interface (API), app extensions, middleware)",
+        "2.3 - Support and/or implement the identity management lifecycle\nAuthorization\nProofing\nProvisioning/De-provisioning\nMonitoring, Reporting, and Maintenance (e.g., role changes, new security standards)\nEntitlement (e.g., inherited rights, resources)\nIdentity and access management (IAM) systems",
+        "2.4 - Understand and administer access controls\nMandatory\nDiscretionary\nRole-based (e.g., subject-based, object-based, Privileged Access Management (PAM))\nRule-based\nAttribute-based"
+      ]
+    },
+    {
+      "title": "Domain 3: Risk Identification, Monitoring and Analysis",
+      "objectives": [
+        "3.1 - Understand risk management\nRisk visibility and reporting (e.g., risk register, sharing threat intelligence, indicators of Compromise (IOC), Common Vulnerability Scoring System (CVSS), socialization, MITRE/ATT&CK model)\nRisk management concepts (e.g., impact assessments, threat modeling, scope)\nRisk management frameworks\nRisk tolerance (e.g., appetite, risk quantification)\nRisk treatment (e.g., accept, transfer, mitigate, avoid)",
+        "3.2 - Understand legal and regulatory concerns (e.g., jurisdiction, limitations, privacy)",
+        "3.3 - Perform security assessments and vulnerability management activities\nRisk management frameworks implementation\nSecurity testing\nRisk review (e.g., internal, supplier, architecture)\nVulnerability management lifecycle (e.g., scanning, reporting, analysis, remediation)",
+        "3.4 - Operate and monitor security platforms (e.g., continuous monitoring)\nSource systems (e.g., applications, security appliances, network devices, hosts)\nEvents of interest (e.g., errors, omissions, anomalies, unauthorized changes, compliance violations, policy failures)\nLog management (e.g., policy, integrity, preservation, architectures, configuration, aggregation, tuning)\nSecurity information and event management (SIEM) (e.g., real-time monitoring, analysis, tracking, audit)",
+        "3.5 - Analyze monitoring results\nSecurity baselines and anomalies (e.g., correlation, noise reduction)\nVisualizations, metrics, and trends (e.g., notifications, dashboards, timelines)\nEvent data analysis\nDocument and communicate findings (e.g., escalation)"
+      ]
+    },
+    {
+      "title": "Domain 4: Incident Response and Recovery",
+      "objectives": [
+        "4.1 - Understand and support incident response lifecycle (e.g., National Institute of Standards and Technology (NIST), International Organization for Standardization (ISO))\nPreparation (e.g., defining roles, training programs)\nDetection, analysis, and escalation (e.g., incident communication, public relations)\nContainment\nEradication\nRecovery (e.g., incident documentation)\nPost incident activities (e.g., lessons learned, new countermeasures, continuous improvement)",
+        "4.2 - Understand and support forensic investigations\nLegal (e.g., civil, criminal, administrative) and ethical principles\nEvidence handling (e.g., first responder, triage, chain of custody, preservation of scene)\nReporting of analysis\nOrganization Security Policy Compliance",
+        "4.3 - Understand and support business continuity plan (BCP) and disaster recovery plan (DRP)\nEmergency response plans and procedures (e.g., information system contingency, pandemic, natural disaster, crisis management)\nInterim or alternate processing strategies\nRestoration planning (e.g., Restore Time Objective (RTO), Restore Point Objectives (RPO), Maximum Tolerable Downtime (MTD))\nBackup and redundancy implementation\nTesting and drills (e.g., playbook, tabletop, disaster recovery exercises, scheduling)"
+      ]
+    },
+    {
+      "title": "Domain 5: Cryptography",
+      "objectives": [
+        "5.1 - Understand reasons and requirements for cryptography\nConfidentiality\nIntegrity and authenticity\nData sensitivity (e.g., personally identifiable information (PII), intellectual property (IP), protected health information (PHI))\nRegulatory and industry best practice (e.g., Payment Card Industry Data Security Standards (PCI-DSS), International Organization for Standardization (ISO))\nCryptography entropy (e.g., quantum cryptography, quantum key distribution)",
+        "5.2 - Apply cryptography concepts\nHashing\nSalting\nSymmetric/Asymmetric encryption/Elliptic curve cryptography (ECC)\nNon-repudiation (e.g., digital signatures/certificates, Hash-based Message Authentication Code (HMAC), audit trails)\nStrength of encryption algorithms and keys (e.g., Advanced Encryption Standards (AES), Rivest-Shamir-Adleman (RSA)\nCryptographic attacks and cryptanalysis",
+        "5.3 - Understand and implement secure protocols\nServices and protocols\nCommon use cases (e.g., credit card processing, file transfer, web client, virtual private network (VPN), transmission of PII data)\nLimitations and vulnerabilities",
+        "5.4 - Understand public key infrastructure (PKI)\nFundamental key management concepts (e.g., storage, rotation, composition, generation, destruction, exchange, revocation, escrow)\nWeb of Trust (WOT) (e.g., Pretty Good Privacy (PGP), GNU Privacy Guard (GPG), blockchain)"
+      ]
+    },
+    {
+      "title": "Domain 6: Network and Communication Security",
+      "objectives": [
+        "6.1 - Understand and apply fundamental concepts of networking\nOpen Systems Interconnection (OSI) and Transmission Control Protocol/Internet Protocol (TCP/IP) models\nNetwork topologies\nNetwork relationships (e.g., peer-to-peer (P2P), client server)\nTransmission media types (e.g., wired, wireless)\nSoftware-defined networking (SDN) (e.g., Software-Defined Wide Area Network (SD-WAN), network virtualization, automation)\nCommonly used ports and protocols",
+        "6.2 - Understand network attacks (e.g., distributed denial of service (DDoS), man-in-the-middle (MITM), Domain Name System (DNS) cache poisoning)\nCountermeasures (e.g., content delivery networks (CDN), firewalls, network access controls, intrusion detection and prevention systems (IDPS))",
+        "6.3 - Manage network access controls\nNetwork access controls, standards and protocols (e.g., Institute of Electrical and Electronics Engineers (IEEE) 802.1X, Remote Authentication Dial-In User Service (RADIUS), Terminal Access Controller Access-Control System Plus (TACACS+))\nRemote access operation and configuration (e.g., thin client, virtual private network (VPN), virtual desktop infrastructure)",
+        "6.4 - Manage network security\nLogical and physical placement of network devices (e.g., inline, passive, virtual)\nSegmentation (e.g., physical/logical, data/control plane, virtual local area network (VLAN), access control list (ACL), firewall zones, micro-segmentation)\nSecure device management",
+        "6.5 - Operate and configure network-based security appliances and services\nFirewalls and proxies (e.g., filtering methods, web application firewall (WAF), cloud access security broker (CASB))\nNetwork intrusion detection/prevention systems\nRouters and switches\nTraffic-shaping devices (e.g., wide area network (WAN) optimization, load balancing)\nNetwork Access Control (NAC)\nData Loss Prevention (DLP)\nUnified Threat Management (UTM)",
+        "6.6 - Secure wireless communications\nTechnologies (e.g., cellular network, Wi-Fi, Bluetooth, Near-Field Communication (NFC))\nAuthentication and encryption protocols (e.g., Wi-Fi Protected Access (WPA), Extensible Authentication Protocol (EAP), Wi-Fi Protected Access 2 (WPA2), Wi-Fi Protected Access 3 (WPA3))",
+        "6.7 Secure and monitor Internet of Things (IoT) (e.g., configuration, network isolation, firmware updates, End of Life (EOL) management)"
+      ]
+    },
+    {
+      "title": "Domain 7: Systems and Application Security",
+      "objectives": [
+        "7.1 - Identify and analyze malicious code and activity\nMalware (e.g., rootkits, spyware, scareware, ransomware, trojans, virus, worms, trapdoors, backdoors, fileless, app/code/operatin3 system (OS)/mobile code vulnerabilities)\nMalware countermeasures (e.g., scanners, anti-malware, containment and remediation, software security)\nTypes of malicious activity (e.g., insider threat, data theft, distributed denial of service (DDoS), botnet, zero-day exploits, web-based attacks, advanced persistent threat (APT))\nMalicious activity countermeasures (e.g., user awareness/training, system hardening, patching, isolation, data loss prevention (DLP))\nSocial engineering methods (e.g., SPAM email, phishing/smishing/vishing, impersonation, scarcity, whaling)\nBehavior analytics (e.g., machine learning, Artificial Intelligence (AI), data analytics)",
+        "7.2 - Implement and operate endpoint device security\nHost-based intrusion prevention system (HIPS)\nHost-based intrusion detection system (HIDS)\nHost-based firewalls\nApplication white listing\nEndpoint encryption (e.g., full disk encryption)\nTrusted Platform Module (TPM) (e.g., hardware security module management)\nSecure browsing (e.g., digital certificates)\nEndpoint detection and response (EDR)",
+        "7.3 - Administer and manage mobile devices\nProvisioning techniques (e.g., corporate owned, personally enabled (COPE), Bring Your Own Device (BYOD), Mobile Device Management (MDM))\nContainerization\nEncryption\nMobile application management",
+        "7.4 - Understand and configure cloud security\nDeployment models (e.g., public, private, hybrid, community)\nService models (e.g., Infrastructure as a Service (IaaS), Platform as a Service (PaaS) and Software as a Service (SaaS))\nVirtualization (e.g., hypervisor, Virtual Private Cloud (VPC))\nLegal and regulatory concerns (e.g., privacy, surveillance, data ownership, jurisdiction, eDiscovery, shadow information technology (IT))\nData storage, processing, and transmission (e.g., archiving, backup, recovery, resilience)\nThird-party/Outsourcing requirements (e.g., service-level agreement (SLA), data portability/ privacy/destruction/auditing)\nShared responsibility model",
+        "7.5 - Operate and maintain secure virtual environments\nHypervisor (i.e., Type 1 (e.g., bare metal), Type 2 (e.g., software))\nVirtual appliances\nContainers\nContinuity and resilience\nStorage management (e.g., data domain)\nThreats, attacks, and countermeasures (e.g., brute-force attack, virtual machine escape, threat hunting)"
+      ]
+    }
+  ],
+  "catalog_metadata_observations": {
+    "official_adaptive_domain_count": 7,
+    "official_adaptive_course_language": "English",
+    "official_adaptive_course_days": [
+      90,
+      180
+    ],
+    "official_adaptive_access_start": "purchase date",
+    "official_course_completion_percent": 70,
+    "official_fixed_runtime": "not verified",
+    "pluralsight_course_count": 8,
+    "pluralsight_card_minutes": [
+      188,
+      105,
+      71,
+      80,
+      114,
+      99,
+      119,
+      40
+    ],
+    "pluralsight_minutes_sum": 816,
+    "pluralsight_header_hours": 14,
+    "pluralsight_conflicting_outline_labels": [
+      "September2024",
+      "November2021"
+    ],
+    "linkedin_header_hours": 6,
+    "linkedin_clip_count": 30,
+    "linkedin_total_seconds": 21659,
+    "linkedin_listed_date": "2025-08-26",
+    "linkedin_quiz_count": 9,
+    "required_three_year_cpe": 60,
+    "required_group_a_cpe": 45,
+    "remaining_group_a_or_b": 15,
+    "suggested_annual_cpe": 20,
+    "commercial_catalogs_blocked": 2
+  },
+  "catalog_findings": [
+    {
+      "source_id": "isc2-sscp-adaptive-training",
+      "observation": "70percent course completion and90/180day purchase-based access; English course language separate from exam.",
+      "resolution": "Separate course validation from scaledCAT score, experience and credential; no fixed runtime claim."
+    },
+    {
+      "source_id": "pluralsight-isc2-sscp-path",
+      "observation": "8cards816minutes versus14h; public page names two older outlines.",
+      "resolution": "Disclose both older labels and require current objective mapping; no paid coverage or quality endorsement."
+    },
+    {
+      "source_id": "linkedin-isc2-sscp-cert-prep",
+      "observation": "30clips21659seconds versus6h, Aug2025 public date.",
+      "resolution": "Explain rounding and date boundary; no paid lesson or detailed alignment claim."
+    },
+    {
+      "source_id": "oreilly-isc2-sscp-study-guide-3e",
+      "observation": "HTTP403; prior metadata unverified.",
+      "resolution": "Retain access block and remove current duration/revision endorsement."
+    },
+    {
+      "source_id": "udemy-isc2-sscp-masterclass",
+      "observation": "HTTP403; prior metadata unverified.",
+      "resolution": "Retain access block and remove current duration/revision endorsement."
+    }
+  ],
+  "source_health_retry_note": "Initial NIST800-88r2 health request failed despite successful binary48page PDF fetch. Targeted refetch succeeded with healthy receipt; final source counts21ok/2blocked/0error."
+}

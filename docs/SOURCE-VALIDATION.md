@@ -1615,6 +1615,8 @@ The review maps all current domains and detailed topics through asset/business p
 
 ## SSCP coverage record
 
+The September 29 [deep review](research/2026-09-29-sscp-deep-review.md) maps 36 detailed objectives. Mapped36 current numbered objectives, preserved prior snapshots/history before accepting an editorial testing-center label change, and reconciled PDF/web and course-version differences. Added11 executed TLS cases,48 answered prompts and8 proposed infrastructure labs. Two commercial catalogs remain blocked; human review and infrastructure execution are pending. Current guide citations: 23 registered, 21 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: October 1, 2025 seven-domain outline—Security Concepts and Practices (16%), Access Controls (15%), Risk Identification, Monitoring and Analysis (15%), Incident Response and Recovery (14%), Cryptography (9%), Network and Communication Security (16%), and Systems and Application Security (15%)

@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [SSCP deep review](docs/research/2026-09-29-sscp-deep-review.md): Mapped36 current objectives, reconciled PDF/course inconsistencies, and added11 executed TLS cases with48 original answers.
+
 - September 29, 2026: [CC deep review](docs/research/2026-09-29-cc-deep-review.md): Mapped 19 current objectives, reconciled program and policy changes, and added 34 executed control/recovery checks with 48 answers.
 
 - September 29, 2026: [GES-C02 deep review](docs/research/2026-09-29-ges-c02-deep-review.md): Corrected search/agent access and document API contracts; refreshed training evidence with 43 executed local checks and 48 answers.

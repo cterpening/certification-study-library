@@ -4,6 +4,253 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-sscp-deep-review",
+      "title": "SSCP complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SSCP"
+      ],
+      "results": [
+        {
+          "exam_code": "SSCP",
+          "vendor_id": "isc2",
+          "guide_path": "guides/SSCP-isc2-systems-security-certified-practitioner.md",
+          "baseline_sha256": "ed0be9033697895aa432b66153862d3797b6156554ec7a53ade0bf8b1e4c3b04",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Full canonicaloutline and12pagePDF,36objectives including nonhyphenated6.7. Three pages visually inspected. Pearson label archived/accepted;postmonitorunchanged.7.3PDFheading/mobilebullet mismatch resolved tocanonicalweb."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected current NIST password,ZeroTrust,sanitization,response andPQC passages plus PythonSSL/cryptography APIs. Eleven actual TLS cases and explicit execution boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "September1 2026AIguidance actual29pagePDF introduction andSSCP6-8 read;April2025NISTIRrelease andPQCfinalstandardsnotice applied. No standaloneAIdomain or speculative rollout."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Officialadaptive70percent/courseaccess/language separate fromCAT;Pluralsight8cards816min/olderconflictinglabels;LinkedIn30clips21659sec/Aug2025;two403catalogs unverified. No paid interiors."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "PDFhidden repeatedtext/7.3mobileheading,36vs35count,oldercourseversions,course70percentvs700scaledscore. Trust/name/usage/time/status checks,CRLloadvsenforcement,rotationvsrevocation,driftvscompromise andsignaturesvstruth distinguished."
+            }
+          },
+          "findings": [
+            {
+              "id": "sscp-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "An editorial testing-center change preserves the existing scope",
+              "url": "https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SSCP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Only Pearson label changed;36 numbered objectives and seven weights unchanged.",
+              "recommendation": "Archive prior bytes and history; explicitly accept the label and include nonhyphenated6.7.",
+              "disposition": "applied",
+              "source_id": "isc2-sscp-outline",
+              "resolution": "Archive prior bytes and history; explicitly accept the label and include nonhyphenated6.7."
+            },
+            {
+              "id": "sscp-deep-2",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "PDF presentation does not replace canonical mobile-device scope",
+              "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/MAR-EXAMS-SSCP-Exam_Outline-English---10012025---FINAL.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SSCP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Visible7.3 says EDR over mobile bullets; extractedpage11 also repeats hidden Domain6 text.",
+              "recommendation": "Use canonicalweb heading, retain endpoint andmobile teaching, and document visual inspection.",
+              "disposition": "applied",
+              "source_id": "isc2-sscp-outline-2025-pdf",
+              "resolution": "Use canonicalweb heading, retain endpoint andmobile teaching, and document visual inspection."
+            },
+            {
+              "id": "sscp-deep-3",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Experience pathways are distinct from a course certificate",
+              "url": "https://www.isc2.org/certifications/sscp/sscp-experience-requirements",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SSCP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "One-year domain experience anddegree/parttime/internship alternatives;Associate route two years.",
+              "recommendation": "Preserve conditional eligibility and separate official application from learning completion.",
+              "disposition": "applied",
+              "source_id": "isc2-sscp-experience",
+              "resolution": "Preserve conditional eligibility and separate official application from learning completion."
+            },
+            {
+              "id": "sscp-deep-4",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Annual suggestions differ from cycle obligations",
+              "url": "https://www.isc2.org/policies-procedures/member-policies",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SSCP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "SSCP60CPE/3years with45A plus15AorB;20annualsuggested;Associate15A annual.",
+              "recommendation": "State correct category and current135USDmember/50USDAssociate fees with dated verification.",
+              "disposition": "applied",
+              "source_id": "isc2-member-policies",
+              "resolution": "State correct category and current135USDmember/50USDAssociate fees with dated verification."
+            },
+            {
+              "id": "sscp-deep-5",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "AI context remains inside seven SSCP domains",
+              "url": "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/exam-guidance/ISC2-Exam-Guidance.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SSCP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Complete SSCP6-8 maps identities,monitoring,recovery,crypto,network andapplication operations.",
+              "recommendation": "Apply context without newweights or treating drift/signature asproof of attack/truth.",
+              "disposition": "applied",
+              "source_id": "isc2-ai-exam-guidance",
+              "resolution": "Apply context without newweights or treating drift/signature asproof of attack/truth."
+            },
+            {
+              "id": "sscp-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Certificate trust and revocation enforcement are independent settings",
+              "url": "https://docs.python.org/3.13/library/ssl.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SSCP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "CRLloading alone doesnot enforce;leaf flag requires current properCRL. Actual11TLS outcomes checked.",
+              "recommendation": "Teach trust,name,time,usage,status androtation separately with observed negative cases.",
+              "disposition": "applied",
+              "source_id": "python313-ssl",
+              "resolution": "Teach trust,name,time,usage,status androtation separately with observed negative cases."
+            },
+            {
+              "id": "sscp-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Password requirements and phishing resistance need scope",
+              "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SSCP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Centrallyverified15singlefactor/8MFAminimum;manualOTP relay notphishingresistant.",
+              "recommendation": "Distinguish verifier guidance from localactivationPINs and avoid universal calendar/composition requirements.",
+              "disposition": "applied",
+              "source_id": "nist-800-63b-4",
+              "resolution": "Distinguish verifier guidance from localactivationPINs and avoid universal calendar/composition requirements."
+            },
+            {
+              "id": "sscp-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Sanitization completion and acceptance answer different questions",
+              "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SSCP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Selectedverification/validation andCE preconditions include keycopies andplaintext.",
+              "recommendation": "Require medium-appropriate evidence andrisk acceptance;temporary cleanup isnot sanitization proof.",
+              "disposition": "applied",
+              "source_id": "nist-800-88r2",
+              "resolution": "Require medium-appropriate evidence andrisk acceptance;temporary cleanup isnot sanitization proof."
+            },
+            {
+              "id": "sscp-deep-9",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Current incident-response guidance supersedes Revision2",
+              "url": "https://www.nist.gov/news-events/news/2025/04/nist-revises-sp-800-61-incident-response-recommendations-and-considerations",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SSCP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "April2025finalRevision3 usesCSF2 Functions across preparation,response andimprovement.",
+              "recommendation": "Keep useful outlineactivities while identifying current guidance and separate RTO/RPO acceptance.",
+              "disposition": "applied",
+              "source_id": "nist-ir-2025-announcement",
+              "resolution": "Keep useful outlineactivities while identifying current guidance and separate RTO/RPO acceptance."
+            },
+            {
+              "id": "sscp-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Post-quantum standards have different roles",
+              "url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SSCP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "FIPS203keyencapsulation versus204/205signatures.",
+              "recommendation": "Teach algorithm purpose and approved migration inventory without speculative availability or implementation claims.",
+              "disposition": "applied",
+              "source_id": "nist-pqc-first-standards",
+              "resolution": "Teach algorithm purpose and approved migration inventory without speculative availability or implementation claims."
+            }
+          ],
+          "notes": "Mapped36 current numbered objectives, preserved prior snapshots/history before accepting an editorial testing-center label change, and reconciled PDF/web and course-version differences. Added11 executed TLS cases,48 answered prompts and8 proposed infrastructure labs. Two commercial catalogs remain blocked; human review and infrastructure execution are pending. Same-context AI review; human review pending. See docs/research/2026-09-29-sscp-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 10,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-cc-deep-review",
       "title": "CC complete guide and learning-content review",
       "rubric_version": 1,

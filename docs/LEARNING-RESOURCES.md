@@ -2854,6 +2854,28 @@ The official adaptive course distinguishes its **Validation of Completion** from
 
 Avoid recalled questions and guaranteed-pass promises. Use original explanations and evidence, reconcile exact current resource coverage and obtain independent review before relying on this unofficial guide.
 
+### SSCP — Systems Security Certified Practitioner
+
+Resource details from the [SSCP guide](../guides/SSCP-isc2-systems-security-certified-practitioner.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list. Choose a route, map it against the current outline, and use targeted references and practical work for gaps. Catalog observations below were checked September 29, 2026; paid lessons, books and question banks were not accessed. Estimates labeled planning are this guide's suggestions, not provider runtimes or guarantees.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Current SSCP outline](https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline) — canonical 36-objective map and seven weights | Public | Planning: 3–6h mapping and review |
+| [ISC2 self-study resources](https://www.isc2.org/certifications/sscp/sscp-self-study-resources) — official links to outline, adaptive training and study aids | Public hub; some destinations require account/payment | Planning: 1–2h selecting resources; study varies |
+| [Official adaptive training](https://www.isc2.org/training/online-self-paced/sscp-online-self-paced) — public seven-domain description; English course; included textbook/questions are catalog claims only | Paid/account; 90/180-day access begins at purchase | No fixed public runtime verified; earlier 35–50h was a planning estimate |
+| [Pluralsight SSCP path](https://www.pluralsight.com/paths/sscpr-systems-security-certified-practitioner-certification) — eight public course cards dated September–October 2024; conflicting September 2024/November 2021 outline labels require current gap mapping | Paid/trial; public catalog only reviewed | Header 14h; eight listed cards total 13h36m; planning: add 25–40h practical work |
+| [LinkedIn Learning/Cybrary SSCP Cert Prep](https://www.linkedin.com/learning/isc2-systems-security-certified-practitioner-sscp-cert-prep) — August 26, 2025 public listing, seven domains and nine quizzes; current detailed alignment not established | Paid/trial; public contents only reviewed | Header 6h; 30 listed clips total 6h00m59s; planning: add 20–35h practical work |
+| [O'Reilly/Sybex SSCP study guide, 3rd edition](https://www.oreilly.com/library/view/isc-2-sscp-systems/9781119854982/) — current access blocked; earlier 2022/alignment metadata unverified in this review | Paid/trial or book; public request returned HTTP 403 | Earlier 29h16m estimate not reverified; inspect a legitimate preview before planning |
+| [Udemy SSCP Masterclass](https://www.udemy.com/course/sscp-training-english-isc2/) — current access blocked; earlier August 2026 revision/alignment unverified | Paid; public request returned HTTP 403 | Earlier 27h15m not reverified |
+| [ISC2 member policies](https://www.isc2.org/policies-procedures/member-policies) — distinguish member versus Associate obligations | Public | Planning: 45–90m on applicable requirements |
+| [ISC2 Code of Ethics](https://www.isc2.org/ethics) — apply the canons to authority, competence, disclosure and public trust | Public | Planning: 30–60m plus original scenarios |
+
+**VERIFY CURRENT:** Adaptive training requires at least 70% on domain and final assessments plus its acknowledgement/evaluation requirements for a Validation of Completion. That document is not the SSCP credential. Course access, exam entitlements and personal experience are separate; verify the selected offer before purchase. Public catalog metadata cannot establish teaching quality, question legitimacy or complete October 2025 alignment.
+
+Avoid recalled questions, “actual exam” banks and guaranteed passing. Use original practice with explained answers and current primary sources. The [dated deep-review report](research/2026-09-29-sscp-deep-review.md) records the executed work, source limitations and pending human review.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.
