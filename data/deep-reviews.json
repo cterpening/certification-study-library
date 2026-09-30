@@ -5,6 +5,25 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "CPA-21-02",
+      "reviewed_on": "2026-09-29",
+      "guide_sha256": "d3559f42d7deee6a5c8a8a70360f2d7c2047441d44c0f717a5b546c9014a880b",
+      "objective_count": 35,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-29-cpa-21-02-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-29-cpa-21-02-deep-review.json"
+      ],
+      "lab_execution": "live-partial",
+      "remaining_limits": [
+        "Thirty-nine registered sources: 32 HTTP 200, five errors and two HTTP 403. HTTP 200 includes a 48-character Cisco shell. Canonical exam used complete web-reader fallback; catalog/policy/scheduling/API reading reused from preceding same-context work. No full standard/manual, enrolled course, paid interior or successful automated objective comparison.",
+        "Edube associated-certification field errors and anytime-before versus 24-hour rescheduling wording remain unresolved. No individual eligibility, account, appointment, purchase or system test.",
+        "Six exact public files were built through hosted CMake with GCC 15.2 and Clang 20.1; Clang used GCC 14.2 external toolchain libraries. Thirteen final workbook executions, sixteen expected strict diagnostic failures and ten mode probes are bounded evidence, not MSVC/libc++ portability or full conformance.",
+        "Both compilers accepted removed empty throw() in C++20 mode; that acceptance is recorded separately from the standard. No exception escaped a noexcept boundary and no historical unexpected handler was executed.",
+        "Allocation and constructor failure are deterministic seams; no real memory exhaustion, allocator replacement, debugger session, I/O failure or deliberately undefined runtime was induced. Three address/undefined sanitizer variants passed only tested paths. Eight broader labs and human review remain pending."
+      ]
+    },
+    {
       "exam_code": "CLP-12-01",
       "reviewed_on": "2026-09-29",
       "guide_sha256": "c5b3c14d4cfc246d94da244746d83dc1f2c5b0c00815ba8828fc2d4eef9f0a4c",

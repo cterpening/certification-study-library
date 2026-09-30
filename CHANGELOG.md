@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [CPA-21-02 deep review](docs/research/2026-09-29-cpa-21-02-deep-review.md): Mapped 35 objectives and expanded 30 answers; six original C++17 files passed 13 hosted workbook runs, 16 diagnostic probes and ten mode probes. Source/booking conflicts, broader labs and human review remain explicit.
+
 - September 29, 2026: [CLP-12-01 deep review](docs/research/2026-09-29-clp-12-01-deep-review.md): Mapped 29 objectives and expanded 30 answers; five complete original C11 programs passed 17 hosted workbook runs plus seven dialect/header checks. ThreadSanitizer crashes, booking/source conflicts and human review remain explicit.
 
 - September 29, 2026: [CLA-11-03 deep review](docs/research/2026-09-29-cla-11-03-deep-review.md): Mapped 23 objectives and expanded 30 answers; fixed allocation, overflow, lifetime and input contracts. Five C files executed remotely with 181 loader and 53 language checks on both compilers, selected sanitizer/optimization runs and six negative diagnostic checks. Resource/policy limits and human review pending.

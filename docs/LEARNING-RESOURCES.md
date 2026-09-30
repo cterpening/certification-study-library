@@ -3666,6 +3666,30 @@ Only the public Edube landing was read; it advertises a completion-based discoun
 
 No exact current MeasureUp or Whizlabs CLP-12-01 practice product was verified. Because this blueprint mixes portable C and platform APIs, prefer runnable objective-based labs to decontextualized question banks.
 
+### CPA-21-02 — CPA C++ Certified Associate Programmer
+
+Resource details from the [CPA-21-02 guide](../guides/CPA-21-02-cpp-certified-associate-programmer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Pick one aligned primary path, then use current references for difficult language rules and write substantial class/exception projects. Reconcile third-party examples with the active CPA-21-02 outline and their declared C++ version.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official CPA page and syllabus](https://cppinstitute.org/cpa) | Free canonical blueprint | 2–3 hours to map and recheck |
+| [C++ Institute exam policies](https://cppinstitute.org/exam-policies) | Free official policy | 20–40 minutes before scheduling |
+| [OpenEDG C++ Essentials Part 1](https://edube.org/study/cppe1) | Free account; prerequisite coverage; associated CLE/CLE-20-01 field conflicts with C++ course context | 42 hours listed; landing only |
+| [OpenEDG C++ Essentials Part 2](https://edube.org/study/cppe2) | Free account; officially aligned; its associated-certification field says `CLA-21-02`, an apparent typo, while the course text and canonical exam page say CPA-21-02 | 42 hours listed |
+| [Cisco Networking Academy C++ Essentials 2](https://www.netacad.com/courses/c-plus-plus-essentials-2) | Free account; official partner delivery | Duration unverified; application shell only |
+| [Microsoft C++ language reference](https://learn.microsoft.com/en-us/cpp/cpp/cpp-language-reference?view=msvc-170) | Free official implementation documentation | 8–15 hours targeted reading |
+| [cppreference C++ language](https://en.cppreference.com/w/cpp/language.html) | Free community reference | Ongoing; 8–15 hours targeted lookup |
+| [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines) | Free community/ISO C++ project guidance; modern context | 8–15 hours selected sections |
+| [Pluralsight C++ path](https://www.pluralsight.com/paths/c-plus-plus) | Subscription; broader than CPA; public path lists 13 courses and a 44-hour banner | 15–25 hours suggested selection; paid videos not read |
+| [O'Reilly C++ Crash Course, 2nd Edition](https://www.oreilly.com/library/view/c-crash-course/9781098136217/) | Subscription; modern and broader | 15–25 hours selected chapters/labs |
+| [Udemy Beginning C++ Programming — From Beginner to Beyond](https://www.udemy.com/course/beginning-c-plus-plus-programming/) | Paid marketplace course; broad | Select OOP, inheritance, exceptions, 15–25 hours |
+
+No exact current MeasureUp or Whizlabs CPA-21-02 practice product was verified. Prefer official aligned assessments plus original compile-and-trace labs; reject practice material that does not identify the active exam version.
+
+Primary technical reading for this review uses selected publicly rendered WG21 draft sections, not a complete standard audit. Microsoft implementation documentation may include extensions and legacy examples: its allocation page contains examples and generalizations that should not be copied as portable ownership contracts. The original workbook follows the explicit C++17 draft rules above. The [research report](research/2026-09-29-cpa-21-02-deep-review.md) records source-reading, execution and remaining human-review boundaries.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

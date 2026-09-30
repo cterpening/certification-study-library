@@ -11660,24 +11660,70 @@
       "notes": "Mapped all 29 objectives and expanded 30 answers. Replaced incomplete variadic and descriptor fragments with five exact original C11 programs. Seventeen GCC/Clang workbook runs passed, including 31 language, 11 descriptor and 69 framing checks, ten 1,000-item batches per queue run, exact GMP arithmetic, three optimized variants and four address/undefined sanitizer runs. Seven dialect/header probes had the expected outcomes. ThreadSanitizer crashes, source and booking conflicts, broader labs and human review remain explicit. See docs/research/2026-09-29-clp-12-01-deep-review.md"
     },
     {
-      "id":"cpa-21-02-2026-09-02-source-validation",
-      "exam_code":"CPA-21-02",
-      "guide_path":"guides/CPA-21-02-cpp-certified-associate-programmer.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-02",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/cpa-21-02-official-objectives.txt",
-      "blueprint_snapshot_sha256":"3d25434609c18c0dc30b6225e052b44235407d3d6968a3125b30d2cd77a776e0",
-      "objective_coverage":[
-        {"objective_group":"Types and Operators (24.5%)","guide_sections":["Section 1","Scenarios 1 and 3","Labs 1–2"]},
-        {"objective_group":"Control and Exceptions (18%)","guide_sections":["Section 2","All scenarios","Labs 3–4"]},
-        {"objective_group":"Functions and Preprocessor (17.5%)","guide_sections":["Section 3","Scenarios 1 and 3","Labs 5–6"]},
-        {"objective_group":"Pointers (11%)","guide_sections":["Section 4","Scenarios 1 and 2","Lab 7"]},
-        {"objective_group":"Classes and Namespaces (29%)","guide_sections":["Section 5","All scenarios","Lab 8"]}
+      "id": "cpa2102-2026-09-29-source-validation",
+      "exam_code": "CPA-21-02",
+      "guide_path": "guides/CPA-21-02-cpp-certified-associate-programmer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/cpa-21-02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "3d25434609c18c0dc30b6225e052b44235407d3d6968a3125b30d2cd77a776e0",
+      "objective_coverage": [
+        {
+          "objective_group": "Block 1 - Types and Operators (9 items; 24.5%)",
+          "guide_sections": [
+            "1. Types and operators — 24.5%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 2 - Control and Exceptions (8 items; 18%)",
+          "guide_sections": [
+            "2. Control and exceptions — 18%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 3 - Functions and Preprocessor Directives (9 items; 17.5%)",
+          "guide_sections": [
+            "3. Functions and preprocessor — 17.5%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 4 - Pointers (4 items; 11%)",
+          "guide_sections": [
+            "4. Pointers — 11%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 5 - Classes and Namespaces (10 items; 29%)",
+          "guide_sections": [
+            "5. Classes and namespaces — 29%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":11,"reachable":8,"access_blocked":2,"missing_or_error":1},
-      "notes":"All 35 CPA-21-02 objectives are mapped through types/literals/conversions/operators, strings/aggregates, flow and exception unwinding, overload/default/parameter/macro behavior, pointer ranges and ownership, class invariants and special members, inheritance/access/dispatch/casts, operator overloading, friends and namespaces. Three scenarios, eight labs and 30 original checks are included. Legacy throw() recognition is kept separate from modern RAII/noexcept practice, and the official aligned course's CLA-21-02 field typo is flagged. O'Reilly and Udemy are automation-blocked; no link is missing. No recalled/live item, answer dump or copied course question is used. September 29 CPE source-health refresh updated shared-link counts only; this guide content and review date were not re-reviewed."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 36,
+        "reachable": 31,
+        "access_blocked": 2,
+        "missing_or_error": 3
+      },
+      "notes": "Mapped all 35 objectives and expanded all 30 answers. Added six exact public workbook files, including a multi-file owner, language exercises and hierarchy tracing. Thirteen GCC/Clang workbook runs passed, including three optimized and three address/undefined sanitizer variants, plus a macro branch. Sixteen invalid-code probes were rejected and ten language-mode probes recorded. Source/booking conflicts, broader labs and human review remain explicit. See docs/research/2026-09-29-cpa-21-02-deep-review.md"
     },
     {
       "id":"cpp-22-02-2026-09-02-source-validation",

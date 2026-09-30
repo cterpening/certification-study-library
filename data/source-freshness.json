@@ -4,6 +4,197 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-cpa2102-deep-review",
+      "title": "CPA-21-02 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CPA-21-02"
+      ],
+      "results": [
+        {
+          "exam_code": "CPA-21-02",
+          "vendor_id": "cpp-institute",
+          "guide_path": "guides/CPA-21-02-cpp-certified-associate-programmer.md",
+          "baseline_sha256": "95f6e9b13ef92121939f7e300fcd6e41dc8a76a275ebd4b5893ffde0586d6b01",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Complete active canonical CPA-21-02 body manually compared with all 35 snapshot objectives after automated timeout; groups 9/5/8/4/9, 40 questions and maximum normalized 200 points. No successful automated hash comparison."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected primary WG21 draft sections and Microsoft reference reading, with explicit historical modes and implementation boundaries. Six original workbook files passed thirteen hosted CMake executions; sixteen expected diagnostic failures and ten mode probes recorded. No full standard audit."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current canonical exam plus complete catalog/policy/scheduling bodies read in the preceding same-context CLA review and reused for explicit CPA scope. No unseen release feed or authenticated booking verification."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Complete Edube Part 1/2 and Pluralsight landings read; 42 hours each for Edube, thirteen Pluralsight durations total 44 hours 10 minutes versus rounded 44-hour banner. Cisco shell, paid 403 responses and course-field typos retained as limits."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Edube associated-certification fields and public booking change windows conflict. Compiler acceptance of removed empty throw() is distinguished from C++20 grammar. Failed direct access, paid/shell interiors, unexecuted broader labs and human review remain explicit."
+            }
+          },
+          "findings": [
+            {
+              "id": "cpa2102-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Numbered objectives and normalized score need explicit scope",
+              "url": "https://cppinstitute.org/cpa",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CPA-21-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The active syllabus has 35 numbered objectives, 40 questions and a 200-point normalized maximum.",
+              "recommendation": "Map every objective, retain weights and explain weighted scoring without inventing a raw correct-answer count.",
+              "disposition": "applied",
+              "source_id": "cpa-21-02-syllabus",
+              "resolution": "Map every objective, retain weights and explain weighted scoring without inventing a raw correct-answer count."
+            },
+            {
+              "id": "cpa2102-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Exception-specification removal requires two dates",
+              "url": "https://timsong-cpp.github.io/cppwp/n4861/diff.cpp17.except",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CPA-21-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Typed throw(T) is removed in C++17; empty throw() remains a deprecated alias until removal in C++20.",
+              "recommendation": "Provide the historical matrix and retain both compilers accepting the removed form as an observation, not a conformance claim.",
+              "disposition": "applied",
+              "source_id": "cpp20-remove-throw-spec",
+              "resolution": "Provide the historical matrix and retain both compilers accepting the removed form as an observation, not a conformance claim."
+            },
+            {
+              "id": "cpa2102-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Vague sizeof exceptions obscure the ISO rule",
+              "url": "https://timsong-cpp.github.io/cppwp/n4659/expr.sizeof",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CPA-21-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The expression operand is unevaluated in ISO C++; type/access constraints still apply.",
+              "recommendation": "Replace the vague answer and execute a function-call operand without incrementing its counter.",
+              "disposition": "applied",
+              "source_id": "cpp17-sizeof",
+              "resolution": "Replace the vague answer and execute a function-call operand without incrementing its counter."
+            },
+            {
+              "id": "cpa2102-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Ownership explanation lacks a complete failure-safe implementation",
+              "url": "https://timsong-cpp.github.io/cppwp/n4659/class.copy.assign",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CPA-21-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Memberwise raw-pointer copying does not implement unique ownership or preserve a destination on failed deep copy.",
+              "recommendation": "Supply a bounded multi-file rule-of-five owner with independent copies, copy-and-swap, self-assignment, moves, injected failure and rule-of-zero comparison.",
+              "disposition": "applied",
+              "source_id": "cpp17-copy-assignment",
+              "resolution": "Supply a bounded multi-file rule-of-five owner with independent copies, copy-and-swap, self-assignment, moves, injected failure and rule-of-zero comparison."
+            },
+            {
+              "id": "cpa2102-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Virtual dispatch and default selection need separate reasoning",
+              "url": "https://timsong-cpp.github.io/cppwp/n4659/dcl.fct.default",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CPA-21-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Defaults follow static call-site declarations, while virtual calls can select a derived implementation.",
+              "recommendation": "Execute base/derived defaults, qualified calls, slicing and constructor dispatch; add strict override diagnostics.",
+              "disposition": "applied",
+              "source_id": "cpp17-default-arguments",
+              "resolution": "Execute base/derived defaults, qualified calls, slicing and constructor dispatch; add strict override diagnostics."
+            },
+            {
+              "id": "cpa2102-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "String and vector boundaries need concrete distinctions",
+              "url": "https://timsong-cpp.github.io/cppwp/n4659/string.access",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CPA-21-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "String size-position access differs between at and operator[], while reserve changes capacity and may invalidate observers.",
+              "recommendation": "Add substring/access/insertion and vector checks without stale access or assumptions that compare returns exactly one.",
+              "disposition": "applied",
+              "source_id": "cpp17-string-access",
+              "resolution": "Add substring/access/insertion and vector checks without stale access or assumptions that compare returns exactly one."
+            },
+            {
+              "id": "cpa2102-deep-7",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Course fields and booking copy remain inconsistent",
+              "url": "https://edube.org/study/cppe2",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CPA-21-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Edube C++ landings name CLE/CLA codes in associated fields; public appointment change windows also differ.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped all 35 objectives and expanded all 30 answers. Added six exact public workbook files, including a multi-file owner, language exercises and hierarchy tracing. Thirteen GCC/Clang workbook runs passed, including three optimized and three address/undefined sanitizer variants, plus a macro branch. Sixteen invalid-code probes were rejected and ten language-mode probes recorded. Source/booking conflicts, broader labs and human review remain explicit. Same-context AI review; human review pending. See docs/research/2026-09-29-cpa-21-02-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 6,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-29-clp1201-deep-review",
       "title": "CLP-12-01 complete guide and learning-content review",
       "rubric_version": 1,

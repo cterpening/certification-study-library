@@ -1,0 +1,23 @@
+# CPA-21-02 deep review — September 29, 2026
+
+The [study guide](../../guides/CPA-21-02-cpp-certified-associate-programmer.md) maps **35 numbered objectives**, grouped 9/5/8/4/9, and expands all 30 original answers. The active [July 22, 2025 syllabus](https://cppinstitute.org/cpa) retains five blocks, 40 questions, a normalized maximum of 200 points and a 70% threshold. The automated request timed out; manual comparison of the complete canonical body retained the snapshot. This is same-context AI review with human review pending.
+
+## Source reading and resource comparison
+
+**39 sources** have explicit reading boundaries. Direct outcomes: {'error': 5, 'ok': 32, 'blocked': 2}. Both Edube public course landings list 42 hours, but their associated-certification fields name CLE/CLA codes in a C++/CPA context. The guide treats these as apparent editorial errors and retains the canonical exam as scope authority. The complete Pluralsight public landing lists thirteen courses whose durations total 44 hours 10 minutes, consistent with its rounded 44-hour banner; paid videos were not read. Cisco returned a 48-character application shell and the paid O'Reilly/Udemy requests returned 403.
+
+Selected publicly rendered WG21 draft sections establish the historical C++11/17/20 rules. Complete section bodies and selected aggregate passages are distinguished in the operation record; no whole-standard or whole-Core-Guidelines audit is claimed. Microsoft indexes are navigation, and its legacy allocation examples are not copied as portable contracts. The complete policy/catalog/scheduling bodies read in the preceding same-context CLA review are reused for their explicit CPA scope, rather than counted as successful fresh requests. Public rescheduling windows still conflict; no account or booking was inspected.
+
+## Teaching repairs and execution
+
+The guide separates typed `throw(T)` removal in C++17 from empty `throw()` removal in C++20. It corrects the vague sizeof answer, explains string boundary operations and vector invalidation, and separates static default-argument selection from virtual dispatch. Both compilers accepted empty `throw()` in C++20 mode despite the [C++20 grammar removal](https://timsong-cpp.github.io/cppwp/n4861/diff.cpp17.except); this observed acceptance is not presented as standard conformance.
+
+Six exact original files provide a guarded multi-file Buffer with deep copying, nonthrowing moves/swaps, self-assignment, checked access, failure preservation and rule-of-zero comparison; a bounded language workbook; and a hierarchy/exception tracer. The old raw-owner cleanup fragment was incomplete teaching context, not inherently a broken cleanup algorithm. The complete replacement makes its contract executable.
+
+**Thirteen final hosted CMake build/runs passed**: three programs on GCC 15.2 and Clang 20.1, three GCC optimized variants, one alternate macro branch and three Clang AddressSanitizer/UndefinedBehaviorSanitizer variants. Each build compiled all three targets before the selected execution. Outputs verify **50 buffer checks, 49 language checks and 20 hierarchy checks**. Clang's hosted CMake receipt reports the GCC 14.2 external toolchain, so this is not independent libc++ or MSVC validation.
+
+**Sixteen strict diagnostic probes** rejected eight invalid forms on both compilers: return-only overloads, ambiguous conversions, implicit explicit-constructor use, const-mismatched overrides, private access, abstract instantiation, loosened noexcept overrides and mixed-type conditional assignment. **Ten language-mode probes** cover smoke builds and typed/empty exception specifications. No diagnostic example was executed after a rejected build.
+
+Allocation failure and ordinary constructor failure are explicit seams, not actual memory exhaustion. The normal and failed lifetime traces differ by the missing destructor of the incomplete derived object. Sanitizers cover executed paths only; no undefined deletion/downcast/access, debugger session, allocator replacement, noexcept termination or I/O failure was exercised. Eight broader learner labs remain proposed.
+
+The [operation record](https://github.com/cterpening/certification-study-library/blob/main/ADLC_Docs/operations/2026-09-29-cpa-21-02-deep-review.json) preserves exact public source hashes, bounded hosted receipts, reading boundaries and objective mapping. Full unit/repository/catalog/strict-site gates are attached after completion. The result is **reviewed-with-blockers**, retaining source/booking, broader-lab and human-review limits. No install, persistent service, runtime/authentication/permission change, account, purchase, exam attempt or external message occurred.

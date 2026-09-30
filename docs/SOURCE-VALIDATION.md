@@ -2168,6 +2168,8 @@ used. Blueprint SHA-256:
 
 ## CPA-21-02 coverage record
 
+The September 29 [deep review](research/2026-09-29-cpa-21-02-deep-review.md) maps 35 detailed objectives. Mapped all 35 objectives and expanded all 30 answers. Added six exact public workbook files, including a multi-file owner, language exercises and hierarchy tracing. Thirteen GCC/Clang workbook runs passed, including three optimized and three address/undefined sanitizer variants, plus a macro branch. Sixteen invalid-code probes were rejected and ten language-mode probes recorded. Source/booking conflicts, broader labs and human review remain explicit. Current guide citations: 36 registered, 31 reachable, 2 access-blocked, 3 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Types and Operators (24.5%); Control and Exceptions (18%); Functions and Preprocessor (17.5%); Pointers (11%); Classes and Namespaces (29%)
