@@ -2211,6 +2211,8 @@ SHA-256:
 
 ## PCPP-32-101 coverage record
 
+The September 29 [deep review](research/2026-09-29-pcpp-32-101-deep-review.md) maps 24 detailed objectives. Mapped all 24 objectives and expanded all 23 answers. Five exact original Python files passed eight normal/optimized runs with 173 checks per mode plus selected Ruff rules. Added a withdrawn Tk desk integrating original HTTP/XML sources, a worker queue, SQLite, CSV, configuration and logging; corrected geometry, transactions, persistence and response boundaries. Five public course outlines total115 provider hours. Format/scoring/policy questions, access limits, broader labs and human review remain explicit. Current guide citations: 41 registered, 35 reachable, 1 access-blocked, 5 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 6, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Advanced Object-Oriented Programming (35%); Coding Conventions, Best Practices, and Standardization (12%); GUI Programming (20%); Network Programming (18%); File Processing and Communicating with the Environment (15%)

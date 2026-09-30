@@ -1,0 +1,29 @@
+# PCPP-32-101 deep review — September 29, 2026
+
+The [study guide](../../guides/PCPP-32-101-python-certified-professional-programmer-level-1.md) maps **24 numbered objectives**, grouped 12/3/3/4/2, and expands all 23 original answers. This same-context AI review leaves human review pending. The complete indexed [canonical syllabus](https://pythoninstitute.org/pcpp1-exam-syllabus) was manually compared after direct retrieval and the automated monitor timed out; the existing snapshot was retained, not silently refreshed.
+
+## Exam and learning-source findings
+
+The complete [exam page](https://pythoninstitute.org/pcpp1) still identifies101 as active with lifetime validity and102 as developing with five-year validity and no announced release date. Its single/multiple-select format differs from broader coding/scenario/interactive wording in the syllabus introduction. Variable item points and a normalized 70% score do not establish a fixed count of correct answers out of 45. Only a search-visible PDF table was readable, with section raw maxima totaling 120; the full PDF and current scoring algorithm were not verified.
+
+The complete [Pearson policy](https://pythoninstitute.org/pvue-testing-policies) retains differing anytime-before/24-hour rescheduling passages. Actual appointment terms, eligibility, voucher redemption and OnVUE system tests were not accessed. No account, purchase or external message occurred.
+
+All five public Edube course outlines were read completely: [Advanced1](https://edube.org/study/pcpp1-1), [2](https://edube.org/study/pcpp1-2), [3](https://edube.org/study/pcpp1-3), [4](https://edube.org/study/pcpp1-4), [5](https://edube.org/study/pcpp1-5). Their provider estimates total **115 hours**, correcting the prior combined 80–120-hour planning range. All associate with 32-101 and recommend Essentials 2; the first retains stale coming-soon copy. No enrolled lessons or assessments were read. The complete Pluralsight response is a broad software-development catalog, not a verified PCPP1 path. O'Reilly 403 and unavailable TkDocs prevent interior/duration verification.
+
+There are **44 registered source receipts:36 successful HTTP responses,7 errors and1 blocked response**. Per-source reading boundaries distinguish complete pages, selected primary sections, excerpt fallback and unread downloaded aggregates. The generic Python index is 3.14.7 and selected3.13 pages identify 3.13.15; actual execution used the existing 3.13.14 runtime. No full-library, full-W3C-specification or current-typing-specification audit is claimed.
+
+## Original execution and teaching repairs
+
+Five exact public files produce four programs: **71 OOP, 34 networking, 37 storage and 31 GUI checks**, totaling **173 per mode**. All four pass normally and with `-O`, with ResourceWarning promoted and no stderr. The selected Ruff 0.16.4 rules `E4,E7,E9,F,W,E501` pass at 79 characters. File hashes, exact commands, timestamps and outputs are preserved; these are original fixtures, not copied course labs or certification questions.
+
+OOP examples cover cooperative diamond MRO and composition, built-in subclass copy/mutation behavior, decorator evaluation/application/call order, method types, ABC virtual registration, properties, exception cause/context, metaclass creation, shared/cyclic copying and trusted pickle/shelve persistence. The observed shelf backend is `dbm.sqlite3`. A failed property update preserves prior state, and optimized runs retain all checks.
+
+The networking program uses a disposable IPv4 loopback HTTP service for GET/POST/PUT/DELETE, 204 handling, status/media/schema/size failures, malformed JSON, redirects and read timeout. A separate real TCP fixture checks bounded length framing, multiple frames, short reads, early EOF, oversize and idle timeout. No packet-boundary assumption, total-timeout guarantee, TLS or production authentication test is made.
+
+Storage uses explicit Python 3.12+ `autocommit=False`, parameter binding and separate connection ownership. Tests verify rollback after a delete and partial failed batch, committed update/delete, uncommitted-close rollback, quoted multiline CSV, XML schema/namespace behavior, logging thresholds and ConfigParser conversion/interpolation/fallback errors. A tiny original DTD violation parses with ElementTree, distinguishing tree parsing from validity checking. All XML/pickle/shelf input is trusted and created in the run.
+
+The withdrawn Tk desk integrates abstract HTTP/file sources, decorated tracing, a worker queue, event-loop polling, SQLite snapshots, configuration, CSV/XML and logging. It tests button/bound-event/variable/radio callbacks, Canvas items, input validation, captured dialogs, retained state after source errors, responsiveness during a gated read, callback cancellation, observer removal and root destruction. The old blanket geometry-manager ban is corrected: pack/grid conflict in one container, while grid/place can coexist for different children. No visible dialog, manual appearance/accessibility assessment or full proposed history/retry application was completed.
+
+Temporary directories were checked under the dedicated workbook folder and removed; sockets, workers, handlers, database connections and the Tk root were closed. Twelve broader learner activities remain proposed. The **reviewed-with-blockers** outcome retains access, format/scoring/policy, full-lab and human-review limits. No installation, persistent service, reboot or runtime/authentication/permission change occurred.
+
+The [operation record](https://github.com/cterpening/certification-study-library/blob/main/ADLC_Docs/operations/2026-09-29-pcpp-32-101-deep-review.json) contains exact source, execution receipts, 24 objective mappings and all reading boundaries. Full unit/repository/catalog/strict-site gates are attached after they complete.

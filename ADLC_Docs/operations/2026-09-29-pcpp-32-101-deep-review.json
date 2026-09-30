@@ -1,0 +1,2434 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "PCPP-32-101",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/PCPP-32-101-python-certified-professional-programmer-level-1.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "63f1edc65cad755c8e05f301e790731748e4c2d7688d94d28df3ceb53e3032a3",
+  "guide_after_sha256": "caefb655268c0e18ffb5de6fb723ba259f1022fb434a9d19c5de33b6b008663d",
+  "prior_records": {
+    "exam": {
+      "code": "PCPP-32-101",
+      "level": "expert",
+      "vendor_id": "python-institute",
+      "title": "PCPP Certified Professional Python Programmer Level 1",
+      "status": "active",
+      "study_guide_url": "https://pythoninstitute.org/pcpp1-exam-syllabus",
+      "guide_path": "guides/PCPP-32-101-python-certified-professional-programmer-level-1.md",
+      "blueprint_last_checked": "2026-09-06",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-06",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite is published, but PCAP is recommended. Build substantial programs across advanced OOP, special methods and built-in subclassing, decorators and metaclasses, PEP 8/257 conventions, Tkinter event-driven GUIs, sockets/HTTP/REST/data formats, and sqlite3/XML/CSV/logging/configuration/environment APIs. PCPP-32-102 is in development with no announced release date, so confirm the purchased version."
+    },
+    "review": {
+      "id": "pcpp-32-101-2026-09-02-source-validation",
+      "exam_code": "PCPP-32-101",
+      "guide_path": "guides/PCPP-32-101-python-certified-professional-programmer-level-1.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-06",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/pcpp-32-101-official-objectives.txt",
+      "blueprint_snapshot_sha256": "b36342ae9b7e21da6ba93845b94bfe42e1b72b2813c8f853e91e08c679637631",
+      "objective_coverage": [
+        {
+          "objective_group": "Advanced Object-Oriented Programming (35%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated build",
+            "Labs 1–6"
+          ]
+        },
+        {
+          "objective_group": "Coding Conventions, Best Practices, and Standardization (12%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated build",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "GUI Programming (20%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated build",
+            "Lab 8"
+          ]
+        },
+        {
+          "objective_group": "Network Programming (18%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated build",
+            "Labs 9–10"
+          ]
+        },
+        {
+          "objective_group": "File Processing and Environment (15%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated build",
+            "Labs 11–12"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 10,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All five PCPP-32-101 sections and their named subtopics are mapped through advanced OOP, special methods, built-in subclassing, decorators/metaclasses/serialization, PEP 8/257 conventions, Tkinter events/widgets/geometry, sockets/HTTP/REST/XML/JSON and sqlite3/CSV/XML/logging/configuration/environment modules. An integrated application, 12 correctly mapped labs and 23 original checks are included. PCPP-32-102 remains in development without a release date, and no official PCPP1 practice test is listed. O'Reilly is automation-blocked; no link is missing. No recalled/live item, answer dump or copied course question is used."
+    },
+    "sources": [
+      {
+        "id": "python-3-documentation",
+        "title": "Python 3 Documentation",
+        "url": "https://docs.python.org/3/",
+        "publisher": "Python Software Foundation",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "PCAP-31-03",
+          "PCPP-32-101",
+          "PCED-30-02",
+          "PCAD-31-02",
+          "PCES-30-01",
+          "PANW-XSOAR-ENGINEER"
+        ],
+        "notes": "Canonical documentation hub for current stable Python 3; newer features are not automatically part of a dated exam syllabus. September 29 PCAP-31-03 deep review: Complete 3232-character documentation index read: unversioned landing is 3.14.7 and exposes other versions. This is release/documentation context, not evidence of an exam-required version or an audit of all linked change logs. Existing local CPython 3.13.14 was used without installation. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "python-3-library-reference",
+        "title": "Python Standard Library",
+        "url": "https://docs.python.org/3/library/",
+        "publisher": "Python Software Foundation",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "PCAP-31-03",
+          "PCPP-32-101",
+          "PCEA-30-01"
+        ],
+        "notes": "Canonical library reference for targeted operations, I/O, GUI, networking, persistence, data formats, logging, configuration and environment behavior. September 29 PCAP-31-03 deep review: Fresh 13544-character index captured. Introduction and opening navigation through functional-programming modules read; remaining library table not audited. Index supports navigation only; separately registered exact topic pages carry technical claims. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "oreilly-python-3-object-oriented-fourth",
+        "title": "Python 3 Object-Oriented Programming, 4th Edition",
+        "url": "https://www.oreilly.com/library/view/python-3-object-oriented/9781804611864/",
+        "publisher": "OpenEDG Python Institute",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "PCAP-31-03",
+          "PCPP-32-101"
+        ],
+        "notes": "Broad object-oriented Python book. Select 15–25 hours for PCAP or advanced OOP/design material for PCPP1; much of the book exceeds either single blueprint. September 29 PCAP-31-03 deep review: HTTP403. Retained historical resource title is not a fresh edition/contents verification. No subscriber interior accessed; 15–25 selected hours is an author estimate. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "pcpp-32-101-syllabus",
+        "title": "PCPP-32-101 Exam Syllabus",
+        "url": "https://pythoninstitute.org/pcpp1-exam-syllabus",
+        "publisher": "OpenEDG Python Institute",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCPP-32-101"
+        ],
+        "notes": "Canonical active five-section 35/12/20/18/15 syllabus with 45 objectives/items and March 11, 2022 baseline."
+      },
+      {
+        "id": "pcpp1-certification-page",
+        "title": "PCPP1 Certified Professional Python Programmer Level 1",
+        "url": "https://pythoninstitute.org/pcpp1",
+        "publisher": "OpenEDG Python Institute",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCPP-32-101"
+        ],
+        "notes": "Current exam/version, announced PCPP-32-102 development, prerequisites, lifetime validity, format, price, delivery, retake and official practice-test status."
+      },
+      {
+        "id": "pep-8-style-guide",
+        "title": "PEP 8 — Style Guide for Python Code",
+        "url": "https://peps.python.org/pep-0008/",
+        "publisher": "Python Software Foundation",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "PCPP-32-101",
+          "PCEP-30-02"
+        ],
+        "notes": "Primary coding-style convention named by the blueprint; use its current text while respecting the dated exam scope. September 29 PCEP-30-02 deep review: Selected indentation, tabs/spaces, maximum line length, function/variable naming and constants sections read. Four spaces and naming are style guidance; two-space example actually compiles. Full PEP and linked style materials not audited. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "pep-257-docstrings",
+        "title": "PEP 257 — Docstring Conventions",
+        "url": "https://peps.python.org/pep-0257/",
+        "publisher": "Python Software Foundation",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCPP-32-101"
+        ],
+        "notes": "Primary docstring convention named by the blueprint."
+      },
+      {
+        "id": "pep-484-type-hints",
+        "title": "PEP 484 — Type Hints",
+        "url": "https://peps.python.org/pep-0484/",
+        "publisher": "Python Software Foundation",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCPP-32-101"
+        ],
+        "notes": "Primary type-hinting specification used as related modern context, not an invented weighted objective."
+      },
+      {
+        "id": "requests-documentation",
+        "title": "Requests Documentation",
+        "url": "https://requests.readthedocs.io/en/latest/",
+        "publisher": "Python Software Foundation community project",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCPP-32-101",
+          "PCEA-30-01"
+        ],
+        "notes": "Current upstream documentation for the third-party HTTP client; use only with permitted endpoints and bounded retry/timeout behavior."
+      },
+      {
+        "id": "tkdocs-tutorial",
+        "title": "TkDocs Tutorial",
+        "url": "https://tkdocs.com/tutorial/",
+        "publisher": "Mark Roseman / TkDocs",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCPP-32-101"
+        ],
+        "notes": "Free current Tk/Tkinter tutorial for event-driven GUI practice."
+      },
+      {
+        "id": "pluralsight-python-catalog",
+        "title": "Python Courses and Learning Paths",
+        "url": "https://www.pluralsight.com/browse/software-development/python",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCPP-32-101"
+        ],
+        "notes": "Broad Python catalog, not an exact PCPP path. Select 20–35 hours by objective gaps and verify course recency."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "2b6ec719d56f16f6b5fac03eb43cadd9091ee525bafadabc8bad66c0b1fb1fd0",
+      "guide_sections": [
+        "1. Advanced object-oriented programming — 35%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "02bf43d7d4a3700e024bed4e2430f0f85219a55a5b885fba0700cc0246720bea",
+      "guide_sections": [
+        "1. Advanced object-oriented programming — 35%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "dc57bd57a990a47d3d57c24322a38bb8ee818f3c3b8e0dd53b5e53045b5887b1",
+      "guide_sections": [
+        "1. Advanced object-oriented programming — 35%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "da9092eb2c0bd6746084d71ae9a97d71acc14305fed54f6a3d31a87619cf2109",
+      "guide_sections": [
+        "1. Advanced object-oriented programming — 35%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "33a1a6f9eab98b583b66dc9bcaf8b851e62d3c5db1aad46136f132094fd565b7",
+      "guide_sections": [
+        "1. Advanced object-oriented programming — 35%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "895e8c2dda572302d9301f8acbf390a3fda0d6fc593dd19666fa1c8c132e58de",
+      "guide_sections": [
+        "1. Advanced object-oriented programming — 35%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "1ee04c353cdc23b96a7f56164a10265688cf8f0bd1aa108932c019df9fce38de",
+      "guide_sections": [
+        "1. Advanced object-oriented programming — 35%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "82e4921837934d7518e4e82a442edef8bd47e8d93732b48039765f3ed831ca55",
+      "guide_sections": [
+        "1. Advanced object-oriented programming — 35%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "0e3dffe4a25d31e3abfef546fcd80e96225accc8a2a350b38b8b72e43d3a949f",
+      "guide_sections": [
+        "1. Advanced object-oriented programming — 35%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "083dbd49d115d5427462dc3bcf30268a933f978a3b8224139160de4b1af50476",
+      "guide_sections": [
+        "1. Advanced object-oriented programming — 35%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 11,
+      "objective_sha256": "b86a70fa57c7aeac2ba7057180968adb738301fcbbecd69c3e08d1052ab8eca8",
+      "guide_sections": [
+        "1. Advanced object-oriented programming — 35%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 12,
+      "objective_sha256": "43fde333f2e90a5aa3c4692afa9dcf71dd7ae955c1e5c15b429166448049f620",
+      "guide_sections": [
+        "1. Advanced object-oriented programming — 35%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "6d7c36f1a41bb1ac7952025a7976c7fd0c1fce9db918ea230c6a2297355261db",
+      "guide_sections": [
+        "2. Conventions, best practices, and standardization — 12%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "9443fdb7282a50d52fbb2063d354a8a472d971840fd5c2c34d57bfbc101e8a7e",
+      "guide_sections": [
+        "2. Conventions, best practices, and standardization — 12%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "3932a502d6d582289aa0651c4d6824a00829995eca100191a490e9be64e64443",
+      "guide_sections": [
+        "2. Conventions, best practices, and standardization — 12%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "2d78ba7d195a092786428f693e3fc101e507bb96c4e870f41e22ae639a34734f",
+      "guide_sections": [
+        "3. GUI programming — 20%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "ef340752ce7035ec3bd40c8f294a5b719bd85a06f25c1fd252c31ca4810acd1c",
+      "guide_sections": [
+        "3. GUI programming — 20%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "f2f141572a3dc59138fcc9ade4b45ecb49f9e5476afab01689068846e0b681a8",
+      "guide_sections": [
+        "3. GUI programming — 20%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "0390a4bfe1693792ddab664052aa97269c20165a507b36c5e1367f0df2c2a7a0",
+      "guide_sections": [
+        "4. Network programming — 18%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "4ba23bf435d7ea748fedbdefec77f5457f88caed859608934004298a7a761c98",
+      "guide_sections": [
+        "4. Network programming — 18%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "e2664e2f92529975da8acf020eddcf1517b13bd3c92f8f9cc2403c591ed67954",
+      "guide_sections": [
+        "4. Network programming — 18%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "babffdec384f1c1248b66690b9ad6610ec1e4862f12e76415e13b33c8a896cf4",
+      "guide_sections": [
+        "4. Network programming — 18%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "e2c39f49305609a18580efc5697cbf28c83efeaeb397d7e71b142de1e5056ea9",
+      "guide_sections": [
+        "5. File processing and environment — 15%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "2ec75db36623687a3265f7ad10f328fda8e76050fbf37a388fe7b8bb2a6d4548",
+      "guide_sections": [
+        "5. File processing and environment — 15%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [
+      "PCPP-32-101"
+    ],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "PCPP-32-101",
+        "title": "PCPP Certified Professional Python Programmer Level 1",
+        "url": "https://pythoninstitute.org/pcpp1-exam-syllabus",
+        "guide_path": "guides/PCPP-32-101-python-certified-professional-programmer-level-1.md",
+        "snapshot_path": "data\\objective-snapshots\\pcpp-32-101-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\pcpp-32-101-official-status.json",
+        "status": "error",
+        "changed": false,
+        "error": "URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 41,
+    "reachable": 35,
+    "access_blocked": 1,
+    "missing_or_error": 5
+  },
+  "source_fetches": [
+    {
+      "id": "python-3-documentation",
+      "url": "https://docs.python.org/3/",
+      "checked_at": "2026-09-30T01:53:31.781363+00:00",
+      "health": {
+        "id": "python-3-documentation",
+        "url": "https://docs.python.org/3/",
+        "checked_at": "2026-09-30T01:53:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3/",
+        "content_type": "text/html",
+        "page_title": "Python 3.14 documentation",
+        "canonical_url": "https://docs.python.org/3/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "50b9d442c370445bef6759fa6081fdbb19b350ce94cf3dd9c82305f5c39b16d5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3/",
+      "sha256": "c427e98b7231761ea07352cb11b21beac1efb24f4dd46488edb483127bafe708",
+      "text_characters": 3232
+    },
+    {
+      "id": "python-3-library-reference",
+      "url": "https://docs.python.org/3/library/",
+      "checked_at": "2026-09-30T01:53:31.782087+00:00",
+      "health": {
+        "id": "python-3-library-reference",
+        "url": "https://docs.python.org/3/library/",
+        "checked_at": "2026-09-30T01:53:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3/library/",
+        "content_type": "text/html",
+        "page_title": "The Python standard library",
+        "canonical_url": "https://docs.python.org/3/library/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "fb5698791e269424f8395b8c00bf002faf2e0c21325f7fbab09036f8f86e585c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3/library/",
+      "sha256": "2ebff576833bbf7c86bc1f8ed9e835a39d00d6c18b35896ff965e54eb8655ed1",
+      "text_characters": 13544
+    },
+    {
+      "id": "oreilly-python-3-object-oriented-fourth",
+      "url": "https://www.oreilly.com/library/view/python-3-object-oriented/9781804611864/",
+      "checked_at": "2026-09-30T01:53:31.782610+00:00",
+      "health": {
+        "id": "oreilly-python-3-object-oriented-fourth",
+        "url": "https://www.oreilly.com/library/view/python-3-object-oriented/9781804611864/",
+        "checked_at": "2026-09-30T01:53:31+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/python-3-object-oriented/9781804611864/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "pcpp-32-101-syllabus",
+      "url": "https://pythoninstitute.org/pcpp1-exam-syllabus",
+      "checked_at": "2026-09-30T01:53:33.564171+00:00",
+      "health": {
+        "id": "pcpp-32-101-syllabus",
+        "url": "https://pythoninstitute.org/pcpp1-exam-syllabus",
+        "checked_at": "2026-09-30T01:53:33+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pcpp1-exam-syllabus",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "pcpp1-certification-page",
+      "url": "https://pythoninstitute.org/pcpp1",
+      "checked_at": "2026-09-30T01:53:37.082863+00:00",
+      "health": {
+        "id": "pcpp1-certification-page",
+        "url": "https://pythoninstitute.org/pcpp1",
+        "checked_at": "2026-09-30T01:53:37+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pcpp1",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "pep-8-style-guide",
+      "url": "https://peps.python.org/pep-0008/",
+      "checked_at": "2026-09-30T01:53:39.102357+00:00",
+      "health": {
+        "id": "pep-8-style-guide",
+        "url": "https://peps.python.org/pep-0008/",
+        "checked_at": "2026-09-30T01:53:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://peps.python.org/pep-0008/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "PEP 8 – Style Guide for Python Code | peps.python.org",
+        "canonical_url": "https://peps.python.org/pep-0008/",
+        "duration_signals": [],
+        "signal_fingerprint": "2aa97037b316b7fa38aedd940936d7d4635eeb65363312f92e41470ffbb8af08",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://peps.python.org/pep-0008/",
+      "sha256": "9f4e669bee0fab4b1b0e60321b9ca8822b2f1e61a6ebe0243760294eaba0248e",
+      "text_characters": 44302
+    },
+    {
+      "id": "pep-257-docstrings",
+      "url": "https://peps.python.org/pep-0257/",
+      "checked_at": "2026-09-30T01:53:43.687863+00:00",
+      "health": {
+        "id": "pep-257-docstrings",
+        "url": "https://peps.python.org/pep-0257/",
+        "checked_at": "2026-09-30T01:53:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://peps.python.org/pep-0257/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "PEP 257 – Docstring Conventions | peps.python.org",
+        "canonical_url": "https://peps.python.org/pep-0257/",
+        "duration_signals": [],
+        "signal_fingerprint": "4bc9e1315140d7f4491877d30e63fd5d14f440418ec0f12904032fba17879028",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://peps.python.org/pep-0257/",
+      "sha256": "b02b8fc15267b732b27311feba6951f7435195451aabcbd479684b94e5f6f855",
+      "text_characters": 9679
+    },
+    {
+      "id": "pep-484-type-hints",
+      "url": "https://peps.python.org/pep-0484/",
+      "checked_at": "2026-09-30T01:53:44.065159+00:00",
+      "health": {
+        "id": "pep-484-type-hints",
+        "url": "https://peps.python.org/pep-0484/",
+        "checked_at": "2026-09-30T01:53:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://peps.python.org/pep-0484/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "PEP 484 – Type Hints | peps.python.org",
+        "canonical_url": "https://peps.python.org/pep-0484/",
+        "duration_signals": [],
+        "signal_fingerprint": "66a350c37b6bfe409904c3dca8fad3ce5ef49076c7fbb2b547c724255a23cafb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://peps.python.org/pep-0484/",
+      "sha256": "6620e9c8e71522a9b197f45856a9cfbbdff109b0b517105e89a5c559f6cafac3",
+      "text_characters": 81415
+    },
+    {
+      "id": "requests-documentation",
+      "url": "https://requests.readthedocs.io/en/latest/",
+      "checked_at": "2026-09-30T01:53:46.777898+00:00",
+      "health": {
+        "id": "requests-documentation",
+        "url": "https://requests.readthedocs.io/en/latest/",
+        "checked_at": "2026-09-30T01:53:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://requests.readthedocs.io/en/latest/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Requests: HTTP for Humans™ — Requests 2.34.2 documentation",
+        "canonical_url": "https://requests.readthedocs.io/en/latest/",
+        "duration_signals": [],
+        "signal_fingerprint": "1a712e2203105a4a5820de6173cf06268ecc9ee118624f762d6f10856223e405",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://requests.readthedocs.io/en/latest/",
+      "sha256": "15665f93d8e12d0933b4f6b26b84d119cd04242371d0612f6b660026fd58f343",
+      "text_characters": 4219
+    },
+    {
+      "id": "tkdocs-tutorial",
+      "url": "https://tkdocs.com/tutorial/",
+      "checked_at": "2026-09-30T01:53:47.007371+00:00",
+      "health": {
+        "id": "tkdocs-tutorial",
+        "url": "https://tkdocs.com/tutorial/",
+        "checked_at": "2026-09-30T01:53:47+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://tkdocs.com/tutorial/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "pluralsight-python-catalog",
+      "url": "https://www.pluralsight.com/browse/software-development/python",
+      "checked_at": "2026-09-30T01:53:51.876287+00:00",
+      "health": {
+        "id": "pluralsight-python-catalog",
+        "url": "https://www.pluralsight.com/browse/software-development/python",
+        "checked_at": "2026-09-30T01:53:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/browse/software-development",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Software Development Courses. Beginner to Advanced Tutorials | Pluralsight",
+        "canonical_url": "https://www.pluralsight.com/browse/software-development",
+        "duration_signals": [
+          "5 minutes"
+        ],
+        "signal_fingerprint": "0af1acb6462a4df62cc6eee82555655a8c2b54722a00067701c99796e1067244",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/browse/software-development",
+      "sha256": "4b17a15d4a2e35d571a71ecbdd05a5213f43cd919b8ded60b694d8b2adb59304",
+      "text_characters": 8549
+    },
+    {
+      "id": "python-institute-pearson-scheduling",
+      "url": "https://pythoninstitute.org/schedule-exam-pvue",
+      "checked_at": "2026-09-30T01:57:11.779872+00:00",
+      "health": {
+        "id": "python-institute-pearson-scheduling",
+        "url": "https://pythoninstitute.org/schedule-exam-pvue",
+        "checked_at": "2026-09-30T01:57:11+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/schedule-exam-pvue",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "python-professional-course",
+      "url": "https://pythoninstitute.org/python-professional-1",
+      "checked_at": "2026-09-30T01:57:11.780431+00:00",
+      "health": {
+        "id": "python-professional-course",
+        "url": "https://pythoninstitute.org/python-professional-1",
+        "checked_at": "2026-09-30T01:57:11+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/python-professional-1",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "pcpp1-syllabus-pdf",
+      "url": "https://pythoninstitute.org/assets/628def5091da2303121759.pdf",
+      "checked_at": "2026-09-30T01:57:11.780974+00:00",
+      "health": {
+        "id": "pcpp1-syllabus-pdf",
+        "url": "https://pythoninstitute.org/assets/628def5091da2303121759.pdf",
+        "checked_at": "2026-09-30T01:57:11+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/assets/628def5091da2303121759.pdf",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "pep-1-process",
+      "url": "https://peps.python.org/pep-0001/",
+      "checked_at": "2026-09-30T01:57:29.874862+00:00",
+      "health": {
+        "id": "pep-1-process",
+        "url": "https://peps.python.org/pep-0001/",
+        "checked_at": "2026-09-30T01:57:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://peps.python.org/pep-0001/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "PEP 1 – PEP Purpose and Guidelines | peps.python.org",
+        "canonical_url": "https://peps.python.org/pep-0001/",
+        "duration_signals": [],
+        "signal_fingerprint": "feb2584eabbfcb65ea8891567099689cd2b076ae7556640563bea27207cb872f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://peps.python.org/pep-0001/",
+      "sha256": "68b2774f9881d01fc3dbbd5bb5189bd6b6d11c4d531d03d48ee50fce4bdb7858",
+      "text_characters": 38427
+    },
+    {
+      "id": "pep-20-zen",
+      "url": "https://peps.python.org/pep-0020/",
+      "checked_at": "2026-09-30T01:57:29.875048+00:00",
+      "health": {
+        "id": "pep-20-zen",
+        "url": "https://peps.python.org/pep-0020/",
+        "checked_at": "2026-09-30T01:57:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://peps.python.org/pep-0020/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "PEP 20 – The Zen of Python | peps.python.org",
+        "canonical_url": "https://peps.python.org/pep-0020/",
+        "duration_signals": [],
+        "signal_fingerprint": "667682cf698ceaad795d2c64352a0236b52040778c96a168a9b7897318b9c4e1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://peps.python.org/pep-0020/",
+      "sha256": "335ce9a69a870a520282a098c1f012de5209be21feb8ba04753551c593341ad1",
+      "text_characters": 1444
+    },
+    {
+      "id": "requests-quickstart",
+      "url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+      "checked_at": "2026-09-30T01:57:29.875302+00:00",
+      "health": {
+        "id": "requests-quickstart",
+        "url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+        "checked_at": "2026-09-30T01:57:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Quickstart — Requests 2.34.2 documentation",
+        "canonical_url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+        "duration_signals": [],
+        "signal_fingerprint": "516b88bc996a32fcbfd8b05d864702be9c8fc93e8fb2e0c510bd48dec9eec124",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+      "sha256": "c2b869b188097265f8decaeb14972116b2c861b0358e89977cbf43283f34d3b5",
+      "text_characters": 17434
+    },
+    {
+      "id": "requests-advanced",
+      "url": "https://requests.readthedocs.io/en/latest/user/advanced/",
+      "checked_at": "2026-09-30T01:57:30.147549+00:00",
+      "health": {
+        "id": "requests-advanced",
+        "url": "https://requests.readthedocs.io/en/latest/user/advanced/",
+        "checked_at": "2026-09-30T01:57:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://requests.readthedocs.io/en/latest/user/advanced/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Advanced Usage — Requests 2.34.2 documentation",
+        "canonical_url": "https://requests.readthedocs.io/en/latest/user/advanced/",
+        "duration_signals": [],
+        "signal_fingerprint": "f9886124a7462334b011c40c4011768d1280f7ff6f2b7571b55e96e00d54fee7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://requests.readthedocs.io/en/latest/user/advanced/",
+      "sha256": "c9d568cbdf1700ffcb91e2c20bfab7583a964d51e64cbd27c5e50cf93eed1056",
+      "text_characters": 36495
+    },
+    {
+      "id": "openedg-python-advanced-1",
+      "url": "https://edube.org/study/pcpp1-1",
+      "checked_at": "2026-09-30T01:57:30.264201+00:00",
+      "health": {
+        "id": "openedg-python-advanced-1",
+        "url": "https://edube.org/study/pcpp1-1",
+        "checked_at": "2026-09-30T01:57:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edube.org/study/pcpp1-1",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Edube Interactive :: Advanced Perspective of Classes and Object-Oriented Programming in Python (PCPP1 - Python Professional Course Series - 1 of 5)",
+        "canonical_url": "https://edube.org/study/pcpp1-1",
+        "duration_signals": [
+          "2 hours",
+          "42 hours"
+        ],
+        "signal_fingerprint": "4d4739e42c26ddc68c1763d6e2a3de4d245b0dfed5b5c4a6bc292028e50e1fb4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edube.org/study/pcpp1-1",
+      "sha256": "cb6d5ed24ab1e0051c7768b12331a25dcb19a364bad6d8c50494daa03e374167",
+      "text_characters": 4633
+    },
+    {
+      "id": "openedg-python-advanced-2",
+      "url": "https://edube.org/study/pcpp1-2",
+      "checked_at": "2026-09-30T01:57:30.422617+00:00",
+      "health": {
+        "id": "openedg-python-advanced-2",
+        "url": "https://edube.org/study/pcpp1-2",
+        "checked_at": "2026-09-30T01:57:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edube.org/study/pcpp1-2",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Edube Interactive :: Best Practices and Standardization (PCPP1 ‒ Python Professional Course Series ‒ 2 of 5)",
+        "canonical_url": "https://edube.org/study/pcpp1-2",
+        "duration_signals": [
+          "10 hours",
+          "2 hours"
+        ],
+        "signal_fingerprint": "d336dd7fedc49d5a8b48243a297a85eb0b3073b44951ada48632578b6a365eda",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edube.org/study/pcpp1-2",
+      "sha256": "b08dceed23981a58fc0c003734b327c18953e318f2e4023e2051990ee9eac897",
+      "text_characters": 3656
+    },
+    {
+      "id": "openedg-python-advanced-3",
+      "url": "https://edube.org/study/pcpp1-3",
+      "checked_at": "2026-09-30T01:57:30.501825+00:00",
+      "health": {
+        "id": "openedg-python-advanced-3",
+        "url": "https://edube.org/study/pcpp1-3",
+        "checked_at": "2026-09-30T01:57:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edube.org/study/pcpp1-3",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Edube Interactive :: Introduction to GUI Programming in Python (TkInter) (PCPP1 ‒ Python Professional Course Series ‒ 3 of 5)",
+        "canonical_url": "https://edube.org/study/pcpp1-3",
+        "duration_signals": [
+          "2 hours",
+          "21 hours"
+        ],
+        "signal_fingerprint": "bf0eb588b2605cfec9a9e798da40f3ff17eefcc92e0ba8d76e9889e7f0c9d407",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edube.org/study/pcpp1-3",
+      "sha256": "78750b0760a9c45fb8d6ee6527dd5f77ab787959fd769f082a3d4ace61357189",
+      "text_characters": 3871
+    },
+    {
+      "id": "openedg-python-advanced-4",
+      "url": "https://edube.org/study/pcpp1-4",
+      "checked_at": "2026-09-30T01:57:31.027669+00:00",
+      "health": {
+        "id": "openedg-python-advanced-4",
+        "url": "https://edube.org/study/pcpp1-4",
+        "checked_at": "2026-09-30T01:57:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edube.org/study/pcpp1-4",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Edube Interactive :: Working with RESTful APIs (PCPP1 ‒ Python Professional Course Series ‒ 4 of 5)",
+        "canonical_url": "https://edube.org/study/pcpp1-4",
+        "duration_signals": [
+          "2 hours",
+          "21 hours"
+        ],
+        "signal_fingerprint": "9b1da536ae683826261764a7bac4ea95fdb86739660480d7dfd53166f1feb191",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edube.org/study/pcpp1-4",
+      "sha256": "2888893503598a866736db606fbd116c52d5c186eb7c56c0a757b81bc32f7416",
+      "text_characters": 4143
+    },
+    {
+      "id": "openedg-python-advanced-5",
+      "url": "https://edube.org/study/pcpp1-5",
+      "checked_at": "2026-09-30T01:57:31.108376+00:00",
+      "health": {
+        "id": "openedg-python-advanced-5",
+        "url": "https://edube.org/study/pcpp1-5",
+        "checked_at": "2026-09-30T01:57:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edube.org/study/pcpp1-5",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Edube Interactive :: Processing different kinds of text files (PCPP1 ‒ Python Professional Course Series ‒ 5 of 5)",
+        "canonical_url": "https://edube.org/study/pcpp1-5",
+        "duration_signals": [
+          "2 hours",
+          "21 hours"
+        ],
+        "signal_fingerprint": "ed420d563a93c29c2b075c660744d5689b909f16e869f4fbdbf27f2ab7b55c28",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edube.org/study/pcpp1-5",
+      "sha256": "c6142c62a32e27346e9d810e4ac4127e3697c733b10ae1242847c293b72daade",
+      "text_characters": 3841
+    },
+    {
+      "id": "python313-data-model",
+      "url": "https://docs.python.org/3.13/reference/datamodel.html",
+      "checked_at": "2026-09-30T01:57:31.130317+00:00",
+      "health": {
+        "id": "python313-data-model",
+        "url": "https://docs.python.org/3.13/reference/datamodel.html",
+        "checked_at": "2026-09-30T01:57:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/reference/datamodel.html",
+        "content_type": "text/html",
+        "page_title": "3. Data model",
+        "canonical_url": "https://docs.python.org/3/reference/datamodel.html",
+        "duration_signals": [],
+        "signal_fingerprint": "36d859f22ba65d04e4a31675c0bb7799135ee187ce1810b21f2a9e636799d4b4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/reference/datamodel.html",
+      "sha256": "e9c1e104b37d5ebcfbebdd1f7c901b8da5f5dc84c13e5cc7de0cee761835b114",
+      "text_characters": 123496
+    },
+    {
+      "id": "python313-classes",
+      "url": "https://docs.python.org/3.13/tutorial/classes.html",
+      "checked_at": "2026-09-30T01:57:31.667935+00:00",
+      "health": {
+        "id": "python313-classes",
+        "url": "https://docs.python.org/3.13/tutorial/classes.html",
+        "checked_at": "2026-09-30T01:57:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/tutorial/classes.html",
+        "content_type": "text/html",
+        "page_title": "9. Classes",
+        "canonical_url": "https://docs.python.org/3/tutorial/classes.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d29475fe35cb575c3c06dac14271a90a6be0320e6d2f9da774021df8ae5d8e9a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/tutorial/classes.html",
+      "sha256": "108b619103ed1f240bc5ee12eb87f1452e88c5758ae7fa27dd8bf95d2e3e56a5",
+      "text_characters": 34814
+    },
+    {
+      "id": "python313-abc",
+      "url": "https://docs.python.org/3.13/library/abc.html",
+      "checked_at": "2026-09-30T01:57:31.669344+00:00",
+      "health": {
+        "id": "python313-abc",
+        "url": "https://docs.python.org/3.13/library/abc.html",
+        "checked_at": "2026-09-30T01:57:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/abc.html",
+        "content_type": "text/html",
+        "page_title": "abc — Abstract Base Classes",
+        "canonical_url": "https://docs.python.org/3/library/abc.html",
+        "duration_signals": [],
+        "signal_fingerprint": "a2953ed539d1d1ba190cc13d943ce69e0078e917e643bc27ee9907d058631ac6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/abc.html",
+      "sha256": "8ced1105d1b02bec7fe7129153430e79288b85954bf85d58add2f3bc8ca96dfc",
+      "text_characters": 11054
+    },
+    {
+      "id": "python313-functools",
+      "url": "https://docs.python.org/3.13/library/functools.html",
+      "checked_at": "2026-09-30T01:57:32.277229+00:00",
+      "health": {
+        "id": "python313-functools",
+        "url": "https://docs.python.org/3.13/library/functools.html",
+        "checked_at": "2026-09-30T01:57:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/functools.html",
+        "content_type": "text/html",
+        "page_title": "functools — Higher-order functions and operations on callable objects",
+        "canonical_url": "https://docs.python.org/3/library/functools.html",
+        "duration_signals": [],
+        "signal_fingerprint": "83e1a303f0a6d1cf784935d468b466a69d598925eeb0dad450f2682dbff06e48",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/functools.html",
+      "sha256": "118a805ba9b5c30aabb158710b2d8d96261523caa766d12e8ef43517b6771804",
+      "text_characters": 26086
+    },
+    {
+      "id": "python313-copy",
+      "url": "https://docs.python.org/3.13/library/copy.html",
+      "checked_at": "2026-09-30T01:57:32.333294+00:00",
+      "health": {
+        "id": "python313-copy",
+        "url": "https://docs.python.org/3.13/library/copy.html",
+        "checked_at": "2026-09-30T01:57:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/copy.html",
+        "content_type": "text/html",
+        "page_title": "copy — Shallow and deep copy operations",
+        "canonical_url": "https://docs.python.org/3/library/copy.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d652d21b0483205de38130a160e9b315c966ce6a41cef9d949edc02a97b549c0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/copy.html",
+      "sha256": "6a4f213d314430403766a0a90bda861c3954047dea4ee9f609670b77fea49e21",
+      "text_characters": 4981
+    },
+    {
+      "id": "python313-pickle",
+      "url": "https://docs.python.org/3.13/library/pickle.html",
+      "checked_at": "2026-09-30T01:57:32.412509+00:00",
+      "health": {
+        "id": "python313-pickle",
+        "url": "https://docs.python.org/3.13/library/pickle.html",
+        "checked_at": "2026-09-30T01:57:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/pickle.html",
+        "content_type": "text/html",
+        "page_title": "pickle — Python object serialization",
+        "canonical_url": "https://docs.python.org/3/library/pickle.html",
+        "duration_signals": [],
+        "signal_fingerprint": "f002960b4d281ded7238d107618ed1a43a82c2672e71162c77344cffa41de1b1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/pickle.html",
+      "sha256": "0f34758c5564ecc40e2d85d0104c59e8d7d6ebbc7be25853f04d78a20b4aca89",
+      "text_characters": 45144
+    },
+    {
+      "id": "python313-shelve",
+      "url": "https://docs.python.org/3.13/library/shelve.html",
+      "checked_at": "2026-09-30T01:57:32.667885+00:00",
+      "health": {
+        "id": "python313-shelve",
+        "url": "https://docs.python.org/3.13/library/shelve.html",
+        "checked_at": "2026-09-30T01:57:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/shelve.html",
+        "content_type": "text/html",
+        "page_title": "shelve — Python object persistence",
+        "canonical_url": "https://docs.python.org/3/library/shelve.html",
+        "duration_signals": [],
+        "signal_fingerprint": "bba24a8a5fa386bd154c5c930c45debcb06b8c2e0a6e60446e9955397e6acbf0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/shelve.html",
+      "sha256": "0232dac17ed86cd93289f592667a506b99dabc3e8ce290a69d233ccc6f0650ba",
+      "text_characters": 8832
+    },
+    {
+      "id": "python313-tkinter",
+      "url": "https://docs.python.org/3.13/library/tkinter.html",
+      "checked_at": "2026-09-30T01:57:32.877188+00:00",
+      "health": {
+        "id": "python313-tkinter",
+        "url": "https://docs.python.org/3.13/library/tkinter.html",
+        "checked_at": "2026-09-30T01:57:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/tkinter.html",
+        "content_type": "text/html",
+        "page_title": "tkinter — Python interface to Tcl/Tk",
+        "canonical_url": "https://docs.python.org/3/library/tkinter.html",
+        "duration_signals": [],
+        "signal_fingerprint": "33845727e0a76c0e2723329a6cd2a46cb7459e2bb03133a8496aa806e15bbe15",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/tkinter.html",
+      "sha256": "17ab4b610cfbcedc3d0ca1d0a5dc121d0adeeb134450a9c86eef90222938af80",
+      "text_characters": 201796
+    },
+    {
+      "id": "python313-socket",
+      "url": "https://docs.python.org/3.13/library/socket.html",
+      "checked_at": "2026-09-30T01:57:32.981805+00:00",
+      "health": {
+        "id": "python313-socket",
+        "url": "https://docs.python.org/3.13/library/socket.html",
+        "checked_at": "2026-09-30T01:57:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/socket.html",
+        "content_type": "text/html",
+        "page_title": "socket — Low-level networking interface",
+        "canonical_url": "https://docs.python.org/3/library/socket.html",
+        "duration_signals": [],
+        "signal_fingerprint": "312cebcbcb29e3e0c69bdd38b234bd40eddc1350c0b30973295df8549651acb8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/socket.html",
+      "sha256": "8bf6f6aac2239c5f19350eb281e6b15a958e42b1b7b6ada3a12b05540c7ac6cf",
+      "text_characters": 75332
+    },
+    {
+      "id": "python313-json",
+      "url": "https://docs.python.org/3.13/library/json.html",
+      "checked_at": "2026-09-30T01:57:33.159603+00:00",
+      "health": {
+        "id": "python313-json",
+        "url": "https://docs.python.org/3.13/library/json.html",
+        "checked_at": "2026-09-30T01:57:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/json.html",
+        "content_type": "text/html",
+        "page_title": "json — JSON encoder and decoder",
+        "canonical_url": "https://docs.python.org/3/library/json.html",
+        "duration_signals": [],
+        "signal_fingerprint": "003894cea941cd12f7c74ca070bd67c17798d619b1b2f3265673efdcf49d1633",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/json.html",
+      "sha256": "c4fbf4f931cfe9230bce40c3f3387158ab71feb7e08a623fed3dba0b76e1ee77",
+      "text_characters": 25434
+    },
+    {
+      "id": "python313-sqlite3",
+      "url": "https://docs.python.org/3.13/library/sqlite3.html",
+      "checked_at": "2026-09-30T01:57:34.537645+00:00",
+      "health": {
+        "id": "python313-sqlite3",
+        "url": "https://docs.python.org/3.13/library/sqlite3.html",
+        "checked_at": "2026-09-30T01:57:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/sqlite3.html",
+        "content_type": "text/html",
+        "page_title": "sqlite3 — DB-API 2.0 interface for SQLite databases",
+        "canonical_url": "https://docs.python.org/3/library/sqlite3.html",
+        "duration_signals": [],
+        "signal_fingerprint": "731da9a47040f7dd9c7b7508d358e75f75c3c6f2c963f66c2f41fe9b0b62ff76",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/sqlite3.html",
+      "sha256": "e03924099a8f2d896fb123f3f569ca1c3e2cc315d3dbe380e3dfa1e21fa94e4e",
+      "text_characters": 72366
+    },
+    {
+      "id": "python313-elementtree",
+      "url": "https://docs.python.org/3.13/library/xml.etree.elementtree.html",
+      "checked_at": "2026-09-30T01:57:34.574951+00:00",
+      "health": {
+        "id": "python313-elementtree",
+        "url": "https://docs.python.org/3.13/library/xml.etree.elementtree.html",
+        "checked_at": "2026-09-30T01:57:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/xml.etree.elementtree.html",
+        "content_type": "text/html",
+        "page_title": "xml.etree.ElementTree — The ElementTree XML API",
+        "canonical_url": "https://docs.python.org/3/library/xml.etree.elementtree.html",
+        "duration_signals": [],
+        "signal_fingerprint": "66d82d4bf77c88398bb2de3b9a36650a97724c30e84e8877f091b40a96ed355f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/xml.etree.elementtree.html",
+      "sha256": "d1c0dc0b86e4108ab7ff28ceaaaeddfb54b5d308c37af7ddb5e75927e1041593",
+      "text_characters": 51135
+    },
+    {
+      "id": "python313-csv",
+      "url": "https://docs.python.org/3.13/library/csv.html",
+      "checked_at": "2026-09-30T01:57:35.732565+00:00",
+      "health": {
+        "id": "python313-csv",
+        "url": "https://docs.python.org/3.13/library/csv.html",
+        "checked_at": "2026-09-30T01:57:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/csv.html",
+        "content_type": "text/html",
+        "page_title": "csv — CSV File Reading and Writing",
+        "canonical_url": "https://docs.python.org/3/library/csv.html",
+        "duration_signals": [],
+        "signal_fingerprint": "86499c6a09d3131a422c0c6b0c4784d620964719ebb01792199ac575e9391283",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/csv.html",
+      "sha256": "8f86c02ee90f13983fb2a117bfb8c5425381e56c9144ec4c8840f9bece97ab4b",
+      "text_characters": 22245
+    },
+    {
+      "id": "python313-logging",
+      "url": "https://docs.python.org/3.13/library/logging.html",
+      "checked_at": "2026-09-30T01:57:36.138891+00:00",
+      "health": {
+        "id": "python313-logging",
+        "url": "https://docs.python.org/3.13/library/logging.html",
+        "checked_at": "2026-09-30T01:57:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/logging.html",
+        "content_type": "text/html",
+        "page_title": "logging — Logging facility for Python",
+        "canonical_url": "https://docs.python.org/3/library/logging.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3f4d376d117935596fa9b729cbbfb1fa1d9a8938d2048fb9871383140bf922f3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/logging.html",
+      "sha256": "822d92de154878dc840e1234ef795d872675dcb9de8596826378f0d69333be30",
+      "text_characters": 56915
+    },
+    {
+      "id": "python313-configparser",
+      "url": "https://docs.python.org/3.13/library/configparser.html",
+      "checked_at": "2026-09-30T01:57:36.216338+00:00",
+      "health": {
+        "id": "python313-configparser",
+        "url": "https://docs.python.org/3.13/library/configparser.html",
+        "checked_at": "2026-09-30T01:57:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/configparser.html",
+        "content_type": "text/html",
+        "page_title": "configparser — Configuration file parser",
+        "canonical_url": "https://docs.python.org/3/library/configparser.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e20b4da54dcafc653862967e3847cc3d805a52f2d8ab88fc4c091b93c29b0258",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/configparser.html",
+      "sha256": "8d5cce97c0ae543a84df505cdbb270532f01799c5793a9f5b507943ecf7c6708",
+      "text_characters": 47176
+    },
+    {
+      "id": "python313-exceptions",
+      "url": "https://docs.python.org/3.13/library/exceptions.html",
+      "checked_at": "2026-09-30T01:57:36.339730+00:00",
+      "health": {
+        "id": "python313-exceptions",
+        "url": "https://docs.python.org/3.13/library/exceptions.html",
+        "checked_at": "2026-09-30T01:57:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/builtins/exceptions.html",
+        "content_type": "text/html",
+        "page_title": "Built-in Exceptions",
+        "canonical_url": "https://docs.python.org/3/builtins/exceptions.html",
+        "duration_signals": [],
+        "signal_fingerprint": "b1efdacd7e92b950e7bc523181b88484eabadf64241120554a2ad5a33d85b1cf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/builtins/exceptions.html",
+      "sha256": "a81d5c257a72927b480b65bcebd0cd654f51728a4e3defaa875f1eb51f44e783",
+      "text_characters": 34922
+    },
+    {
+      "id": "python313-contextlib",
+      "url": "https://docs.python.org/3.13/library/contextlib.html",
+      "checked_at": "2026-09-30T01:57:36.816721+00:00",
+      "health": {
+        "id": "python313-contextlib",
+        "url": "https://docs.python.org/3.13/library/contextlib.html",
+        "checked_at": "2026-09-30T01:57:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/contextlib.html",
+        "content_type": "text/html",
+        "page_title": "contextlib — Utilities for with-statement contexts",
+        "canonical_url": "https://docs.python.org/3/library/contextlib.html",
+        "duration_signals": [],
+        "signal_fingerprint": "0bc0eb405e03c83da2ac77eedc324791feefe5aa86e0690d4528aa03c6907c13",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/contextlib.html",
+      "sha256": "3dc6ae83b4c0c6e892ba40c80061b7ff5d02fc6f8cd49745d14cf31169856d26",
+      "text_characters": 32568
+    },
+    {
+      "id": "python-pvue-policies",
+      "url": "https://pythoninstitute.org/pvue-testing-policies",
+      "checked_at": "2026-09-30T02:00:52.874152+00:00",
+      "health": {
+        "id": "python-pvue-policies",
+        "url": "https://pythoninstitute.org/pvue-testing-policies",
+        "checked_at": "2026-09-30T02:00:52+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pvue-testing-policies",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "python313-builtins",
+      "url": "https://docs.python.org/3.13/library/functions.html",
+      "checked_at": "2026-09-30T02:00:52.874757+00:00",
+      "health": {
+        "id": "python313-builtins",
+        "url": "https://docs.python.org/3.13/library/functions.html",
+        "checked_at": "2026-09-30T02:00:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/builtins/functions.html",
+        "content_type": "text/html",
+        "page_title": "Built-in Functions",
+        "canonical_url": "https://docs.python.org/3/builtins/functions.html",
+        "duration_signals": [],
+        "signal_fingerprint": "39038bbc67029ad5b5517e724a69dd482b9d1f95c81f69163b6f29707153c8f8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/builtins/functions.html",
+      "sha256": "5b5fc37e54f2d7cc714bd3f16829e2b5aa04e9648842f6e1afecb6189d6d8567",
+      "text_characters": 77893
+    },
+    {
+      "id": "python313-xml-security",
+      "url": "https://docs.python.org/3.13/library/xml.html",
+      "checked_at": "2026-09-30T02:16:07.735912+00:00",
+      "health": {
+        "id": "python313-xml-security",
+        "url": "https://docs.python.org/3.13/library/xml.html",
+        "checked_at": "2026-09-30T02:16:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/xml.html",
+        "content_type": "text/html",
+        "page_title": "XML Processing Modules",
+        "canonical_url": "https://docs.python.org/3/library/xml.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e0311dffc6e9be79a7718bcb1f6f062d4cd54dcdb5a7f7862ceabae35655028f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/xml.html",
+      "sha256": "030479fab2166d7ff2e55895c76d62e05db00f419b0359d9b1632ead19b05f8f",
+      "text_characters": 4454
+    },
+    {
+      "id": "panw-xdr-engineer-source-2",
+      "url": "https://www.w3.org/TR/xml/",
+      "checked_at": "2026-09-30T02:18:03.751502+00:00",
+      "health": {
+        "id": "panw-xdr-engineer-source-2",
+        "url": "https://www.w3.org/TR/xml/",
+        "checked_at": "2026-09-30T02:18:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.w3.org/TR/xml/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Extensible Markup Language (XML) 1.0 (Fifth Edition)",
+        "canonical_url": "https://www.w3.org/TR/xml/",
+        "duration_signals": [],
+        "signal_fingerprint": "0528b4207414c84059a9bf929875de249c79655cdb5300ab8cdf0e93d8377bf6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/xml/",
+      "sha256": "f58a4b9e1e5b8bac13fb55c4e5c7c8c5e2c176aa45ee68e2f1ab2498511927ec",
+      "text_characters": 122985
+    }
+  ],
+  "added_source_ids": [
+    "python-institute-pearson-scheduling",
+    "python-professional-course",
+    "pcpp1-syllabus-pdf",
+    "pep-1-process",
+    "pep-20-zen",
+    "openedg-python-advanced-1",
+    "openedg-python-advanced-2",
+    "openedg-python-advanced-3",
+    "openedg-python-advanced-4",
+    "openedg-python-advanced-5",
+    "python313-data-model",
+    "python313-abc",
+    "python313-functools",
+    "python313-copy",
+    "python313-pickle",
+    "python313-shelve",
+    "python313-tkinter",
+    "python313-json",
+    "python313-elementtree",
+    "python313-logging",
+    "python313-configparser",
+    "python313-contextlib",
+    "python313-xml-security"
+  ],
+  "findings": [
+    {
+      "id": "pcpp32101-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Geometry-manager prohibition was too broad",
+      "url": "https://docs.python.org/3.13/library/tkinter.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCPP-32-101"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The old guide banned every mixed manager within a parent, while the primary contract specifically prohibits pack/grid and the original probe permits grid/place on distinct children.",
+      "recommendation": "Correct the contract and execute both permitted and rejected combinations with a withdrawn root.",
+      "disposition": "applied",
+      "source_id": "python313-tkinter",
+      "resolution": "Correct the contract and execute both permitted and rejected combinations with a withdrawn root."
+    },
+    {
+      "id": "pcpp32101-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Transaction ownership and version policy were underspecified",
+      "url": "https://docs.python.org/3.13/library/sqlite3.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCPP-32-101"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Connection context exit does not close the connection, and Python3.12+ autocommit modes differ from legacy behavior.",
+      "recommendation": "Explain explicit modes and execute batch rollback, parameter binding, close rollback and connection reuse.",
+      "disposition": "applied",
+      "source_id": "python313-sqlite3",
+      "resolution": "Explain explicit modes and execute batch rollback, parameter binding, close rollback and connection reuse."
+    },
+    {
+      "id": "pcpp32101-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Persistence and copying needed concrete boundary cases",
+      "url": "https://docs.python.org/3.13/library/shelve.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCPP-32-101"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "In-place mutations are not written back with default shelf behavior; deep-copy memo preserves cycles/shared aliases and pickle reconstruction bypasses init.",
+      "recommendation": "Execute original graph and trusted persistence examples and document backend, trust and class-name constraints.",
+      "disposition": "applied",
+      "source_id": "python313-shelve",
+      "resolution": "Execute original graph and trusted persistence examples and document backend, trust and class-name constraints."
+    },
+    {
+      "id": "pcpp32101-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Parsing a response was conflated with accepting its contract",
+      "url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCPP-32-101"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "HTTP errors, redirects,204 bodies, JSON parsing/schema and decoded size are separate checks; timeout is not a total deadline.",
+      "recommendation": "Add bounded loopback CRUD and failure cases with explicit cleanup and cause chaining.",
+      "disposition": "applied",
+      "source_id": "requests-quickstart",
+      "resolution": "Add bounded loopback CRUD and failure cases with explicit cleanup and cause chaining."
+    },
+    {
+      "id": "pcpp32101-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A local-fast callback does not establish GUI responsiveness",
+      "url": "https://docs.python.org/3.13/library/tkinter.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCPP-32-101"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Blocking source I/O in a Tk callback prevents event handling even when scheduled with after.",
+      "recommendation": "Use a worker queue, Tk-thread polling, captured dialog errors, retained state and callback/observer cleanup; retain manual visual review as pending.",
+      "disposition": "applied",
+      "source_id": "python313-tkinter",
+      "resolution": "Use a worker queue, Tk-thread polling, captured dialog errors, retained state and callback/observer cleanup; retain manual visual review as pending."
+    },
+    {
+      "id": "pcpp32101-deep-6",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Provider duration was an imprecise combined estimate",
+      "url": "https://edube.org/study/pcpp1-1",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCPP-32-101"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Five public course outlines list42/10/21/21/21hours totaling115.",
+      "recommendation": "Replace the combined estimate with individual provider hours and distinguish author practice budgets from enrolled completion.",
+      "disposition": "applied",
+      "source_id": "openedg-python-advanced-1",
+      "resolution": "Replace the combined estimate with individual provider hours and distinguish author practice budgets from enrolled completion."
+    },
+    {
+      "id": "pcpp32101-deep-7",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Delivery and scoring wording needs confirmation",
+      "url": "https://pythoninstitute.org/pcpp1-exam-syllabus",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCPP-32-101"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Exam page lists single/multi-select; syllabus introduction lists broader formats and variable points; the PDF is available only as an indexed table excerpt.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "pcpp32101-deep-8",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Appointment change wording differs within the policy page",
+      "url": "https://pythoninstitute.org/pvue-testing-policies",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCPP-32-101"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Anytime-before and24-hour rescheduling passages coexist.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "pcpp1-certification-page",
+      "review": "Complete current canonical public exam and syllabus bodies read; no separate unseen release feed or authenticated account claimed."
+    }
+  ],
+  "labs": {
+    "proposed": 12,
+    "fully_completed_proposed_labs": 0,
+    "original_programs_executed": 4,
+    "execution_runs": 8,
+    "public_files": 5,
+    "checks_per_mode": 173,
+    "local_validation": {
+      "passed": true,
+      "python": "3.13.14",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "public_files": [
+        {
+          "filename": "checks.py",
+          "sha256": "41aba7a25c3b2fb41ab14bb1c4e029a3a0528f444736a711bc3c867d880111b3",
+          "bytes": 925
+        },
+        {
+          "filename": "objects.py",
+          "sha256": "0ba5bceb962b16c9f47a16aba398cd6910b93dff56cb17e53ff7d8f7c3212215",
+          "bytes": 11499
+        },
+        {
+          "filename": "network.py",
+          "sha256": "9bde523e56d493ac46717f786767622eaf6ed5a7ae177f8f5740926f8044fd99",
+          "bytes": 9833
+        },
+        {
+          "filename": "storage.py",
+          "sha256": "8824cafc40fa0a45065e3909196e083b8dfbe52345a2f0692e15fd91a3b4a9c4",
+          "bytes": 10922
+        },
+        {
+          "filename": "desk.py",
+          "sha256": "c23c3a6b6e0a719c13c89ca780a897d21d26ce3dcf3ccec7a7359892a3221a32",
+          "bytes": 13290
+        }
+      ],
+      "programs": 4,
+      "checks_per_mode": 173,
+      "execution_runs": 8,
+      "results": [
+        {
+          "command": [
+            "python",
+            "-B",
+            "-Werror::ResourceWarning",
+            "objects.py"
+          ],
+          "started_at": "2026-09-30T02:26:50.543422+00:00",
+          "elapsed_seconds": 0.142,
+          "exit_code": 0,
+          "stdout": "objects: 71 checks; shelf backend=dbm.sqlite3\n",
+          "stderr": "",
+          "checks": 71,
+          "optimized": false
+        },
+        {
+          "command": [
+            "python",
+            "-B",
+            "-Werror::ResourceWarning",
+            "network.py"
+          ],
+          "started_at": "2026-09-30T02:26:50.686443+00:00",
+          "elapsed_seconds": 0.469,
+          "exit_code": 0,
+          "stdout": "network: 34 checks; requests=2.34.2\n",
+          "stderr": "",
+          "checks": 34,
+          "optimized": false
+        },
+        {
+          "command": [
+            "python",
+            "-B",
+            "-Werror::ResourceWarning",
+            "storage.py"
+          ],
+          "started_at": "2026-09-30T02:26:51.155558+00:00",
+          "elapsed_seconds": 0.274,
+          "exit_code": 0,
+          "stdout": "storage: 37 checks; sqlite=3.50.4\n",
+          "stderr": "",
+          "checks": 37,
+          "optimized": false
+        },
+        {
+          "command": [
+            "python",
+            "-B",
+            "-Werror::ResourceWarning",
+            "desk.py"
+          ],
+          "started_at": "2026-09-30T02:26:51.430151+00:00",
+          "elapsed_seconds": 0.44,
+          "exit_code": 0,
+          "stdout": "desk: 31 checks; Tcl/Tk=8.6.15; root destroyed\n",
+          "stderr": "",
+          "checks": 31,
+          "optimized": false
+        },
+        {
+          "command": [
+            "python",
+            "-B",
+            "-Werror::ResourceWarning",
+            "-O",
+            "objects.py"
+          ],
+          "started_at": "2026-09-30T02:26:51.870881+00:00",
+          "elapsed_seconds": 0.136,
+          "exit_code": 0,
+          "stdout": "objects: 71 checks; shelf backend=dbm.sqlite3\n",
+          "stderr": "",
+          "checks": 71,
+          "optimized": true
+        },
+        {
+          "command": [
+            "python",
+            "-B",
+            "-Werror::ResourceWarning",
+            "-O",
+            "network.py"
+          ],
+          "started_at": "2026-09-30T02:26:52.007652+00:00",
+          "elapsed_seconds": 1.518,
+          "exit_code": 0,
+          "stdout": "network: 34 checks; requests=2.34.2\n",
+          "stderr": "",
+          "checks": 34,
+          "optimized": true
+        },
+        {
+          "command": [
+            "python",
+            "-B",
+            "-Werror::ResourceWarning",
+            "-O",
+            "storage.py"
+          ],
+          "started_at": "2026-09-30T02:26:53.526267+00:00",
+          "elapsed_seconds": 0.344,
+          "exit_code": 0,
+          "stdout": "storage: 37 checks; sqlite=3.50.4\n",
+          "stderr": "",
+          "checks": 37,
+          "optimized": true
+        },
+        {
+          "command": [
+            "python",
+            "-B",
+            "-Werror::ResourceWarning",
+            "-O",
+            "desk.py"
+          ],
+          "started_at": "2026-09-30T02:26:53.870258+00:00",
+          "elapsed_seconds": 0.525,
+          "exit_code": 0,
+          "stdout": "desk: 31 checks; Tcl/Tk=8.6.15; root destroyed\n",
+          "stderr": "",
+          "checks": 31,
+          "optimized": true
+        }
+      ],
+      "selected_lint": {
+        "command": [
+          "python",
+          "-m",
+          "ruff",
+          "check",
+          "checks.py",
+          "objects.py",
+          "network.py",
+          "storage.py",
+          "desk.py",
+          "--select",
+          "E4,E7,E9,F,W,E501",
+          "--line-length",
+          "79",
+          "--output-format",
+          "concise"
+        ],
+        "exit_code": 0,
+        "stdout": "All checks passed!\n",
+        "stderr": "",
+        "version": "ruff 0.16.4"
+      },
+      "temporary_directory_cleanup": "passed",
+      "execution_boundary": "Original local fixtures only; ephemeral loopback services, withdrawn Tk root and captured dialogs. No manual visual review, external API, production TLS/authentication, full proposed history/retry application or complete static-type proof."
+    }
+  },
+  "answered_checks": 23,
+  "limitations": [
+    "44 direct source receipts:36 HTTP successes,7 errors and1 HTTP403. Exam/syllabus/policy use complete indexed primary fallback; scheduling and PDF only excerpts. No successful automated objective hash comparison, whole-manual audit, paid interior or enrolled lesson/assessment.",
+    "Delivery format wording, exact live scoring and appointment change-window interpretation remain unverified. Active101/lifetime and developing102/five-year descriptions are separate; no release date, account, booking, voucher redemption or official practice-test availability beyond the public page was inferred.",
+    "Five exact original files passed four programs in normal and optimized modes:71 OOP,34 network,37 storage and31 GUI checks per mode. Existing CPython3.13.14,Requests2.34.2,SQLite3.50.4,Tcl/Tk8.6.15 and Ruff0.16.4 used without installation. Pinned3.13 documentation identifies3.13.15; no multi-runtime/OS guarantee.",
+    "Hidden Tk functional execution and captured dialogs do not establish manual visual, keyboard or accessibility quality. HTTP is a disposable loopback fixture without TLS/authentication; XML/pickle/shelf inputs are original trusted data. Finite caps and timeouts are not a general hostile-input or overall-deadline proof.",
+    "Twelve broader learner activities and the fuller history/retry application remain proposed. The executed desk uses a current SQLite snapshot and traced reads, not persistent history or automatic retries. No production deployment, arbitrary unbounded-worker cancellation, complete static typing proof or human review."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 180,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Original local fixtures only; ephemeral loopback services, withdrawn Tk root and captured dialogs. No manual visual review, external API, production TLS/authentication, full proposed history/retry application or complete static-type proof.",
+    "passed": true,
+    "python": "3.13.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "public_files": [
+      {
+        "filename": "checks.py",
+        "sha256": "41aba7a25c3b2fb41ab14bb1c4e029a3a0528f444736a711bc3c867d880111b3",
+        "bytes": 925
+      },
+      {
+        "filename": "objects.py",
+        "sha256": "0ba5bceb962b16c9f47a16aba398cd6910b93dff56cb17e53ff7d8f7c3212215",
+        "bytes": 11499
+      },
+      {
+        "filename": "network.py",
+        "sha256": "9bde523e56d493ac46717f786767622eaf6ed5a7ae177f8f5740926f8044fd99",
+        "bytes": 9833
+      },
+      {
+        "filename": "storage.py",
+        "sha256": "8824cafc40fa0a45065e3909196e083b8dfbe52345a2f0692e15fd91a3b4a9c4",
+        "bytes": 10922
+      },
+      {
+        "filename": "desk.py",
+        "sha256": "c23c3a6b6e0a719c13c89ca780a897d21d26ce3dcf3ccec7a7359892a3221a32",
+        "bytes": 13290
+      }
+    ],
+    "programs": 4,
+    "checks_per_mode": 173,
+    "execution_runs": 8,
+    "results": [
+      {
+        "command": [
+          "python",
+          "-B",
+          "-Werror::ResourceWarning",
+          "objects.py"
+        ],
+        "started_at": "2026-09-30T02:26:50.543422+00:00",
+        "elapsed_seconds": 0.142,
+        "exit_code": 0,
+        "stdout": "objects: 71 checks; shelf backend=dbm.sqlite3\n",
+        "stderr": "",
+        "checks": 71,
+        "optimized": false
+      },
+      {
+        "command": [
+          "python",
+          "-B",
+          "-Werror::ResourceWarning",
+          "network.py"
+        ],
+        "started_at": "2026-09-30T02:26:50.686443+00:00",
+        "elapsed_seconds": 0.469,
+        "exit_code": 0,
+        "stdout": "network: 34 checks; requests=2.34.2\n",
+        "stderr": "",
+        "checks": 34,
+        "optimized": false
+      },
+      {
+        "command": [
+          "python",
+          "-B",
+          "-Werror::ResourceWarning",
+          "storage.py"
+        ],
+        "started_at": "2026-09-30T02:26:51.155558+00:00",
+        "elapsed_seconds": 0.274,
+        "exit_code": 0,
+        "stdout": "storage: 37 checks; sqlite=3.50.4\n",
+        "stderr": "",
+        "checks": 37,
+        "optimized": false
+      },
+      {
+        "command": [
+          "python",
+          "-B",
+          "-Werror::ResourceWarning",
+          "desk.py"
+        ],
+        "started_at": "2026-09-30T02:26:51.430151+00:00",
+        "elapsed_seconds": 0.44,
+        "exit_code": 0,
+        "stdout": "desk: 31 checks; Tcl/Tk=8.6.15; root destroyed\n",
+        "stderr": "",
+        "checks": 31,
+        "optimized": false
+      },
+      {
+        "command": [
+          "python",
+          "-B",
+          "-Werror::ResourceWarning",
+          "-O",
+          "objects.py"
+        ],
+        "started_at": "2026-09-30T02:26:51.870881+00:00",
+        "elapsed_seconds": 0.136,
+        "exit_code": 0,
+        "stdout": "objects: 71 checks; shelf backend=dbm.sqlite3\n",
+        "stderr": "",
+        "checks": 71,
+        "optimized": true
+      },
+      {
+        "command": [
+          "python",
+          "-B",
+          "-Werror::ResourceWarning",
+          "-O",
+          "network.py"
+        ],
+        "started_at": "2026-09-30T02:26:52.007652+00:00",
+        "elapsed_seconds": 1.518,
+        "exit_code": 0,
+        "stdout": "network: 34 checks; requests=2.34.2\n",
+        "stderr": "",
+        "checks": 34,
+        "optimized": true
+      },
+      {
+        "command": [
+          "python",
+          "-B",
+          "-Werror::ResourceWarning",
+          "-O",
+          "storage.py"
+        ],
+        "started_at": "2026-09-30T02:26:53.526267+00:00",
+        "elapsed_seconds": 0.344,
+        "exit_code": 0,
+        "stdout": "storage: 37 checks; sqlite=3.50.4\n",
+        "stderr": "",
+        "checks": 37,
+        "optimized": true
+      },
+      {
+        "command": [
+          "python",
+          "-B",
+          "-Werror::ResourceWarning",
+          "-O",
+          "desk.py"
+        ],
+        "started_at": "2026-09-30T02:26:53.870258+00:00",
+        "elapsed_seconds": 0.525,
+        "exit_code": 0,
+        "stdout": "desk: 31 checks; Tcl/Tk=8.6.15; root destroyed\n",
+        "stderr": "",
+        "checks": 31,
+        "optimized": true
+      }
+    ],
+    "selected_lint": {
+      "command": [
+        "python",
+        "-m",
+        "ruff",
+        "check",
+        "checks.py",
+        "objects.py",
+        "network.py",
+        "storage.py",
+        "desk.py",
+        "--select",
+        "E4,E7,E9,F,W,E501",
+        "--line-length",
+        "79",
+        "--output-format",
+        "concise"
+      ],
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": "",
+      "version": "ruff 0.16.4"
+    },
+    "temporary_directory_cleanup": "passed",
+    "learning_catalog_consistency": "passed",
+    "unit_test_elapsed_seconds": 28.956,
+    "strict_site_build_elapsed_seconds": 27.45
+  },
+  "source_reading_boundaries": {
+    "pcpp-32-101-syllabus": "Complete indexed canonical primary body read, including all 24 numbered objectives and MQC: 12/3/3/4/2 groups, March 11 2022 baseline, active 101, five weights totaling 100% and 45 section items. Intro lists broader coding/scenario/interactive formats than exam page, up to four points per item and normalized score. Direct requests and automated monitor failed with timeout; manual comparison retained the snapshot, not a successful automated hash observation.",
+    "pcpp1-certification-page": "Complete indexed English canonical exam body read: active 101/lifetime versus developing 102/five-year validity with no release date; no formal prerequisite, PCAP recommended; 45 questions, 65+10 minutes, 70%, Python3.x, English, single/multi-select, USD325, Pearson/OnVUE and limited OpenEDG, 15-day failed retake, single-use vouchers and no official practice test. Direct fetch failed. Salary/job marketing was not validated or adopted; no account or booking.",
+    "pcpp1-syllabus-pdf": "Direct and web opening failed. Only indexed first table/cover excerpt read, showing section maximum raw points 42/14/24/22/18 totaling120. No full PDF, current scoring algorithm, equal question weighting or inferred correct-answer threshold claimed.",
+    "python-pvue-policies": "Complete indexed primary policy body read, updated October14 2025, including admission/ID/accommodation sections. Same-page anytime-before versus24-hour rescheduling wording remains unresolved; 24-hour cancellation and15-day failed retake distinguished. No account, booking, eligibility or system test.",
+    "python-institute-pearson-scheduling": "Only indexed primary search body read; not the complete Step4 or full page. Direct request failed. Public scheduling context does not verify a current account or appointment.",
+    "python-professional-course": "Direct/web fetch failed; no course body or enrolled content read. Five complete Edube public outlines supply the current observed duration/alignment evidence instead.",
+    "python-3-documentation": "Complete current public index read:3.14.7 documentation, with3.13 separately listed. Navigation/index evidence only, not all linked manuals. Executed local interpreter3.13.14; selected3.13 pages identify3.13.15. No runtime change or exam-specific patch requirement.",
+    "python-3-library-reference": "Fresh aggregate index fetched but not read in this PCPP review. Technical claims use the explicitly selected pinned3.13 chapter contracts; no full standard-library audit.",
+    "python313-classes": "Fresh tutorial aggregate fetched but not read in this PCPP review. OOP claims instead use selected data-model/built-in contracts and complete ABC/copy/persistence readings. Prior shared-source notes retain their own earlier scope.",
+    "pep-1-process": "Selected complete introduction/what-is-a-PEP/audience/types and format/template sections read. Workflow through initial core-developer/editor context and header preamble through author discussion only partial. Not full process/status workflow; distinguishes Standards Track, Informational and Process.",
+    "pep-8-style-guide": "All substantive guidance from introduction/consistency through layout, imports, whitespace, comments/docstrings, naming, inheritance/API design, programming recommendations and function/variable annotations read (lines57-1023). Footer/reference links not individually audited. Selected Ruff E4/E7/E9/F/W/E501 with79-character limit passed; not a complete PEP8/257 or type-safety certification. Exact-type tests are an intentional bounded-schema choice.",
+    "pep-20-zen": "Complete public body and19 aphorisms read. Used as complementary design judgments, not a mechanical checklist. No wholesale quotation.",
+    "pep-257-docstrings": "Complete public body read including one/multi-line conventions, public contracts and trim example. Workbook docstrings manually considered; no claim every private nested helper has public documentation or every convention was automatically checked.",
+    "pep-484-type-hints": "Selected complete abstract/rationale/non-goals/meaning/acceptable type syntax (74-198), runtime/type-checking and arbitrary-argument/default sections (972-1007). Positional-only historical notation only introductory excerpt. Not full PEP or current typing specification. Runtime non-enforcement demonstrated; no complete static checker proof.",
+    "python313-builtins": "Complete selected classmethod, isinstance/issubclass, property, staticmethod, super and type entries read; vars also read. Incidental range/repr and iter introductions not full entries. Distinguishes3.13 classmethod descriptor change, subclass-aware constructors and MRO behavior. Rest of built-in catalog not audited.",
+    "python313-data-model": "Selected complete special-method introduction/new/init; repr/str/bytes/format/rich comparisons/hash/bool/attribute access; class creation/metaclass/namespace/decorators and instance/subclass checks; callable/container and numeric emulation; context-manager enter/exit sections. Generic-class section incidental partial only; __del__, descriptors/slots and remaining aggregate not audited. Mutable equality/hash, NotImplemented and cooperative lookup exercised on finite examples.",
+    "python313-abc": "Complete body read including virtual registration, abstract implementations, innermost decorator placement, update_abstractmethods and legacy decorators. Virtual recognition neither inserts an MRO entry nor injects or enforces the interface on unrelated classes.",
+    "python313-functools": "Complete update_wrapper/wraps entries read (517-576), including __wrapped__, annotations and3.12 type-parameter metadata. Partial-object introduction only; remaining aggregate not read. Decorator factory/application/call order verified with original trace code.",
+    "python313-copy": "Complete body read including memo/cycles, custom hooks, resource limits,3.13 replace and subclass copy behavior. Exact original shared-graph and cyclic examples executed; no general external-resource cloning guarantee.",
+    "python313-pickle": "Selected complete introduction/warnings/marshal-JSON comparison/protocols/constants/dump/dumps/load/loads (49-200), what-can-be-pickled and instance reconstruction through __getnewargs_ex__ (355-423). Exception section only partial. Rest of customization/persistence/performance aggregate not audited. Explicit protocol4 and original trusted fixtures only; qualified-name and bypassed-constructor boundaries exercised.",
+    "python313-shelve": "Complete body read including caching/writeback/sync/close, backend portability/concurrency/trust limits and examples. Linked dbm chapter not read. Original assignment versus in-place mutation and writeback persistence tested; observed backend dbm.sqlite3, no portable single-file assumption.",
+    "python313-tkinter": "Selected complete threading model, options, geometry and variable coupling; window-manager introduction/example, option data types and bind/event section through class-binding suppression; after/after_cancel/after_idle/after_info; Button entry and Canvas introduction/create methods; Entry introduction/delete/get/insert; Radiobutton introduction/invoke; Variable lifetime/get/set/trace_add/remove/info; protocol entry. Remaining large aggregate and linked Tcl manuals not audited. Withdrawn-root checks exercise pack/grid conflict, grid/place coexistence, callbacks, Canvas, variables, worker queue, captured dialogs and cleanup; no manual visual/accessibility review.",
+    "python313-socket": "Selected complete create_connection, recv, send/sendall, settimeout/setsockopt/shutdown entries read. Rest of aggregate not audited. Real AF_INET loopback tests use length framing, deliberately capped reads, multiple frames, early EOF, oversize and idle timeout; no TLS/UDP/external service matrix or total-wall-clock promise.",
+    "python313-json": "Complete introduction/examples and Basic Usage (through281), exceptions and interoperability/encoding/non-finite/duplicate names/top-level/limits sections (431-528) read. Encoder/decoder class internals and CLI remainder not audited. Original checks cover tuple/key conversion, strict non-finite encoding, repeated-key default, malformed body and separate schema validation.",
+    "requests-documentation": "Complete public landing read, identifying2.34.2 andPython3.10+ support. Navigation only, not every linked chapter. Installed2.34.2 used without installation or update.",
+    "requests-quickstart": "Complete public quickstart body read: all named methods, parameter/form/JSON/body behavior, status/headers/cookies/redirects/timeouts/errors and stream cleanup. JSON parsing does not prove HTTP success;204 has no required JSON body. No private auth or external examples executed.",
+    "requests-advanced": "Only complete Session Objects and Request/Response Objects opening sections (1-75) and Timeouts section (689-726) read. Remaining TLS/auth/proxy/hooks/stream/retry aggregate not audited. Session ownership and non-wall-clock connect/read timeout semantics are explicit; loopback fixture disables inherited environment credentials/proxies.",
+    "python313-sqlite3": "Selected complete connect options; commit/rollback/close and shortcut execute entries; cursor execute/executemany/executescript/fetchone/fetchmany/fetchall/close and rowcount; placeholder section; connection context manager, URI, row factories, non-UTF8 text and transaction-control explanation. Adapter example intro and backup/extension/dump excerpt incidental only, not relied on. Explicit autocommit=False, rollback after partial batch, close versus transaction context and parameter binding tested. Remaining aggregate not audited.",
+    "python313-contextlib": "Complete closing entry read (148-173), with incidental preceding async-context tail. Not full module. Used to separate resource closure from SQLite transaction context.",
+    "python313-csv": "Selected introduction and module contents from reader/writer through DictReader/DictWriter and Dialect introduction (39-218). Reader/writer newline, None conversion, header/width and conversion contracts read. Remaining dialect constants, object methods and examples not fully audited. Original quoted delimiter/quote/newline fixture round-trips.",
+    "python313-elementtree": "Complete tutorial from XML tree introduction through parsing, pull API, finding/modifying/building and namespace example (50-344); selected element iteration/remove/sequence/truthiness/attribute-order discussion (755-804). Remaining reference/XPath/parser sections not fully audited. Small trusted original XML only; malformed/application-schema/namespace and non-validating DTD probe executed.",
+    "python313-xml-security": "Complete XML processing/index/security body read. Distinguishes Python/Expat dependency versions, entity/token/decompression/resource risks and external access defaults. No adversarial XML corpus, deployment vulnerability assessment, parser upgrade or whole security guarantee. Workbook accepts only original trusted XML.",
+    "panw-xdr-engineer-source-2": "W3C XML1.0 Fifth Edition URL reused under existing catalog ID. Fresh full aggregate fetched; selected complete section2 introduction/2.1 well-formedness,2.8 opening through DTD definitions/productions before Root Element Type constraint, and complete5.1 validating/non-validating processors read. Not full specification. Explains well-formedness versus DTD validity without treating ElementTree parsing as validation.",
+    "python313-logging": "Selected logger hierarchy/propagation/handler ownership and setLevel opening (103-182); complete levels/Handler and Formatter through formatStack (352-566); complete LogRecord constructor/getMessage with factory example beginning (632-691). BufferingFormatter and remaining logger/filter/global APIs not fully audited. Original thresholds, interpolation and handler cleanup exercised.",
+    "python313-configparser": "Selected complete typed getters/fallback, Basic/Extended interpolation and mapping interface; ConfigParser constructor tail/overrides and read/read_file/read_string entries (741-840). Full constructor and remaining parser customization/error catalog not audited. Missing required file, skipped optional file, invalid integer, missing interpolation, DEFAULT precedence and no/boolean distinction exercised.",
+    "python313-exceptions": "Introduction/chaining/context/suppression, inheritance and base classes through AssertionError/AttributeError/EOFError/FloatingPointError read (1-178); GeneratorExit heading only. Not full concrete catalog. Explicit cause and hidden-but-retained context verified with original failures.",
+    "oreilly-python-3-object-oriented-fourth": "HTTP403. No current contents/edition confirmation, paid interior or full PCPP alignment audit. Optional broader reference; guide estimates are author budgets, not observed provider duration.",
+    "tkdocs-tutorial": "Direct/web retrieval failed. No current tutorial body, linked lessons, duration or full alignment verified. Optional independent resource; primary Python Tkinter contracts control corrected teaching.",
+    "pluralsight-python-catalog": "Complete fetched public body read. URL resolves to broad software-development catalog, with Python Foundations2h41m and Python Regular Expressions1h23m among unrelated courses. Not a verified PCPP1 path or a complete subscription-content review; paid interiors not accessed. Removed implication of verified Python path/alignment.",
+    "openedg-python-advanced-1": "Complete public Edube landing, outline and metadata read: free Intermediate/Advanced course, 42 provider hours, associated PCPP32-101, Python Essentials2 recommended. No enrolled lessons or assessments. First landing retains stale CSPP1/PCPP1 coming-soon copy; exam page controls active status. Combined provider durations total115hours; not measured learner completion.",
+    "openedg-python-advanced-2": "Complete public Edube landing, outline and metadata read: free Intermediate/Advanced course, 10 provider hours, associated PCPP32-101, Python Essentials2 recommended. No enrolled lessons or assessments. English language field present. Combined provider durations total115hours; not measured learner completion.",
+    "openedg-python-advanced-3": "Complete public Edube landing, outline and metadata read: free Intermediate/Advanced course, 21 provider hours, associated PCPP32-101, Python Essentials2 recommended. No enrolled lessons or assessments. GUI landing body is English but has no explicit Language field. Combined provider durations total115hours; not measured learner completion.",
+    "openedg-python-advanced-4": "Complete public Edube landing, outline and metadata read: free Intermediate/Advanced course, 21 provider hours, associated PCPP32-101, Python Essentials2 recommended. No enrolled lessons or assessments. English language field present. Combined provider durations total115hours; not measured learner completion.",
+    "openedg-python-advanced-5": "Complete public Edube landing, outline and metadata read: free Intermediate/Advanced course, 21 provider hours, associated PCPP32-101, Python Essentials2 recommended. No enrolled lessons or assessments. English language field present. Combined provider durations total115hours; not measured learner completion."
+  },
+  "public_examples": [
+    {
+      "filename": "checks.py",
+      "sha256": "41aba7a25c3b2fb41ab14bb1c4e029a3a0528f444736a711bc3c867d880111b3",
+      "bytes": 925,
+      "code": "\"\"\"Keep workbook checks active even when Python runs with -O.\"\"\"\n\n\nclass Checks:\n    \"\"\"Count checks and stop immediately on an unexpected result.\"\"\"\n\n    def __init__(self):\n        \"\"\"Start with no completed checks.\"\"\"\n        self.count = 0\n\n    def equal(self, actual, expected):\n        \"\"\"Require equality and show both values on failure.\"\"\"\n        self.count += 1\n        if actual != expected:\n            raise AssertionError((actual, expected))\n\n    def true(self, condition):\n        \"\"\"Require a true condition without using an assert statement.\"\"\"\n        self.equal(bool(condition), True)\n\n    def raises(self, kind, operation, *args, **kwargs):\n        \"\"\"Return the expected exception; propagate unrelated failures.\"\"\"\n        self.count += 1\n        try:\n            operation(*args, **kwargs)\n        except kind as error:\n            return error\n        raise AssertionError(f\"Expected {kind.__name__}\")\n"
+    },
+    {
+      "filename": "objects.py",
+      "sha256": "0ba5bceb962b16c9f47a16aba398cd6910b93dff56cb17e53ff7d8f7c3212215",
+      "bytes": 11499,
+      "code": "\"\"\"Exercise bounded OOP, copying and trusted persistence contracts.\n\nRun this module directly. All persisted input is created within this run;\nno external pickle or shelf is accepted. Temporary files are removed.\n\"\"\"\n\nfrom abc import ABC, abstractmethod\nimport copy\nimport dbm\nfrom functools import wraps\nfrom pathlib import Path\nimport pickle\nimport shelve\nimport tempfile\n\nfrom checks import Checks\n\n\nclass Value:\n    \"\"\"Represent a mutable integer count in the range -1000 through 1000.\"\"\"\n\n    created = 0\n\n    def __init__(self, number):\n        \"\"\"Validate the count and record construction on the concrete class.\"\"\"\n        self.number = number\n        type(self).created += 1\n\n    @property\n    def number(self):\n        \"\"\"Return the current count.\"\"\"\n        return self._number\n\n    @number.setter\n    def number(self, number):\n        if type(number) is not int or not -1000 <= number <= 1000:\n            raise ValueError(\"a bounded integer is required\")\n        self._number = number\n\n    @number.deleter\n    def number(self):\n        # Clearing this property deliberately resets the domain value.\n        self._number = 0\n\n    @classmethod\n    def from_text(cls, text):\n        \"\"\"Create an instance of the receiving class from decimal text.\"\"\"\n        return cls(int(text))\n\n    @staticmethod\n    def unit():\n        \"\"\"Return the shared presentation unit without an implicit receiver.\"\"\"\n        return \"units\"\n\n    def __eq__(self, other):\n        if type(other) is not type(self):\n            return NotImplemented\n        return self.number == other.number\n\n    def __lt__(self, other):\n        if type(other) is not type(self):\n            return NotImplemented\n        return self.number < other.number\n\n    def __abs__(self):\n        return type(self)(abs(self.number))\n\n    def __int__(self):\n        return self.number\n\n    def __str__(self):\n        return f\"{self.number} {self.unit()}\"\n\n    def __repr__(self):\n        return f\"{type(self).__name__}({self.number})\"\n\n    def __getitem__(self, key):\n        return {\"number\": self.number, \"unit\": self.unit()}[key]\n\n    def __getattr__(self, name):\n        if name == \"magnitude\":\n            return abs(self.number)\n        raise AttributeError(name)\n\n\nclass TaggedList(list):\n    \"\"\"Add a label without imposing a new invariant on list mutations.\"\"\"\n\n    def __init__(self, values=(), *, tag=\"\"):\n        \"\"\"Copy the input elements into this list and retain its label.\"\"\"\n        super().__init__(values)\n        self.tag = tag\n\n\nclass Root:\n    \"\"\"End a cooperative method chain.\"\"\"\n\n    def steps(self):\n        \"\"\"Return the terminal step.\"\"\"\n        return [\"root\"]\n\n\nclass Left(Root):\n    \"\"\"Add a step before the next implementation in the MRO.\"\"\"\n\n    def steps(self):\n        \"\"\"Continue through a possible sibling, not a hard-coded parent.\"\"\"\n        return [\"left\"] + super().steps()\n\n\nclass Right(Root):\n    \"\"\"Add a second cooperative step.\"\"\"\n\n    def steps(self):\n        \"\"\"Continue the same method contract.\"\"\"\n        return [\"right\"] + super().steps()\n\n\nclass Diamond(Left, Right):\n    \"\"\"Combine both steps using C3 lookup.\"\"\"\n\n\nclass Runner:\n    \"\"\"Compose any collaborator that provides steps().\"\"\"\n\n    def __init__(self, provider):\n        \"\"\"Keep the collaborator without requiring a particular ancestry.\"\"\"\n        self.provider = provider\n\n    def run(self):\n        \"\"\"Delegate to the collaborator's behavioral contract.\"\"\"\n        return self.provider.steps()\n\n\nclass Source(ABC):\n    \"\"\"Require a read operation from normal concrete subclasses.\"\"\"\n\n    @abstractmethod\n    def read(self):\n        \"\"\"Return a sequence; an abstract method may have an implementation.\"\"\"\n        return []\n\n\nclass LocalSource(Source):\n    \"\"\"Provide a concrete source with one locally defined record.\"\"\"\n\n    def read(self):\n        \"\"\"Extend the abstract base implementation through super().\"\"\"\n        return super().read() + [7]\n\n\ndef trace(name, events):\n    \"\"\"Build a decorator that records evaluation, application and calls.\"\"\"\n    events.append(\"factory:\" + name)\n\n    def decorate(function):\n        events.append(\"apply:\" + name)\n\n        @wraps(function)\n        def wrapper(*args, **kwargs):\n            events.append(\"enter:\" + name)\n            try:\n                return function(*args, **kwargs)\n            finally:\n                events.append(\"leave:\" + name)\n\n        return wrapper\n\n    return decorate\n\n\nclass Multiplier:\n    \"\"\"Make a configured instance callable.\"\"\"\n\n    def __init__(self, factor):\n        \"\"\"Keep the multiplication factor.\"\"\"\n        self.factor = factor\n\n    def __call__(self, value):\n        return self.factor * value\n\n\ndef translate_error(suppress=False):\n    \"\"\"Translate a local parse error, optionally suppressing its display.\"\"\"\n    try:\n        int(\"bad\")\n    except ValueError as error:\n        if suppress:\n            raise RuntimeError(\"invalid measurement\") from None\n        raise RuntimeError(\"invalid measurement\") from error\n\n\ndef run():\n    \"\"\"Check the documented behaviors and report the shelf backend used.\"\"\"\n    check = Checks()\n    value = Value(-3)\n    check.equal(int(value), -3)\n    check.equal(abs(value), Value(3))\n    check.equal(str(value), \"-3 units\")\n    check.equal(repr(value), \"Value(-3)\")\n    check.equal(value[\"number\"], -3)\n    check.equal(value.magnitude, 3)\n    check.raises(KeyError, value.__getitem__, \"absent\")\n    check.raises(AttributeError, getattr, value, \"absent\")\n    check.true(value.__eq__(3) is NotImplemented)\n    check.true(value != 3)\n    check.true(value < Value(2))\n    check.raises(TypeError, hash, value)  # Mutable equality implies no hash.\n    check.raises(ValueError, setattr, value, \"number\", True)\n    check.raises(ValueError, setattr, value, \"number\", 1001)\n    check.equal(value.number, -3)\n    value.number = 8\n    check.equal(value.number, 8)\n    del value.number\n    check.equal(value.number, 0)\n\n    class ChildValue(Value):\n        \"\"\"Inherit the alternate constructor.\"\"\"\n\n    child = ChildValue.from_text(\"12\")\n    check.true(type(child) is ChildValue and isinstance(child, Value))\n    check.true(issubclass(ChildValue, Value))\n    check.equal(child.unit(), Value.unit())\n    check.true(\"created\" in ChildValue.__dict__)\n\n    tagged = TaggedList([1], tag=\"sample\")\n    check.true(tagged.append(2) is None)\n    tagged.extend([3])\n    tagged[1:2] = [8, 9]\n    tagged += [4]\n    check.equal(list(tagged), [1, 8, 9, 3, 4])\n    check.equal(tagged.tag, \"sample\")\n    check.true(type(tagged.copy()) is list)\n    check.true(type(copy.copy(tagged)) is TaggedList)\n    check.equal(copy.copy(tagged).tag, \"sample\")\n    check.equal(Diamond().steps(), [\"left\", \"right\", \"root\"])\n    check.equal(\n        [cls.__name__ for cls in Diamond.__mro__],\n        [\"Diamond\", \"Left\", \"Right\", \"Root\", \"object\"],\n    )\n    check.equal(Runner(Diamond()).run(), [\"left\", \"right\", \"root\"])\n    check.raises(TypeError, Source)\n    check.equal(LocalSource().read(), [7])\n\n    class Unrelated:\n        \"\"\"Have no read method even after virtual registration.\"\"\"\n\n    Source.register(Unrelated)\n    virtual = Unrelated()\n    check.true(isinstance(virtual, Source))\n    check.true(Source not in Unrelated.__mro__)\n    check.true(not hasattr(virtual, \"read\"))\n\n    events = []\n\n    @trace(\"outer\", events)\n    @trace(\"inner\", events)\n    def combine(*values: int, bonus: int = 0) -> int:\n        \"\"\"Return the sum of the supplied values and bonus.\"\"\"\n        return sum(values) + bonus\n\n    check.equal(events, [\n        \"factory:outer\", \"factory:inner\", \"apply:inner\", \"apply:outer\",\n    ])\n    check.equal(combine(*[2, 3], **{\"bonus\": 4}), 9)\n    check.equal(events[4:], [\n        \"enter:outer\", \"enter:inner\", \"leave:inner\", \"leave:outer\",\n    ])\n    check.equal(combine.__name__, \"combine\")\n    check.true(combine.__doc__.startswith(\"Return the sum\"))\n    check.equal(combine.__annotations__[\"return\"], int)\n    check.equal(combine.__wrapped__.__wrapped__(1, bonus=2), 3)\n    check.equal(Multiplier(3)(4), 12)\n\n    def unchecked(number: int) -> int:\n        return number\n\n    check.equal(unchecked(\"text\"), \"text\")  # Hints do not enforce types.\n    error = check.raises(RuntimeError, translate_error)\n    check.true(isinstance(error.__cause__, ValueError))\n    check.true(error.__context__ is error.__cause__)\n    check.true(error.__traceback__ is not None)\n    hidden = check.raises(RuntimeError, translate_error, True)\n    check.true(hidden.__cause__ is None and hidden.__suppress_context__)\n    check.true(isinstance(hidden.__context__, ValueError))\n\n    creation = []\n\n    class Meta(type):\n        \"\"\"Record namespace preparation and class construction.\"\"\"\n\n        @classmethod\n        def __prepare__(mcls, name, bases):\n            creation.append(\"prepare:\" + name)\n            return {}\n\n        def __new__(mcls, name, bases, namespace):\n            creation.append(\"new:\" + name)\n            return super().__new__(mcls, name, bases, namespace)\n\n    def mark(cls):\n        creation.append(\"decorate:\" + cls.__name__)\n        cls.marked = True\n        return cls\n\n    @mark\n    class Built(metaclass=Meta):\n        \"\"\"Demonstrate metaclass work before class decorator application.\"\"\"\n\n        answer = 7\n\n    check.equal(creation, [\"prepare:Built\", \"new:Built\", \"decorate:Built\"])\n    check.true(type(Built) is Meta and Built.marked)\n    check.equal(Built.__bases__, (object,))\n    check.equal(Built.__dict__[\"answer\"], 7)\n    dynamic = type(\"Dynamic\", (), {\"answer\": 9})\n    check.equal(dynamic().answer, 9)\n\n    shared = [1]\n    graph = [shared, shared]\n    shallow = copy.copy(graph)\n    deep = copy.deepcopy(graph)\n    check.true(shallow is not graph and shallow[0] is shared)\n    check.true(deep[0] is deep[1] and deep[0] is not shared)\n    shared.append(2)\n    check.equal(shallow, [[1, 2], [1, 2]])\n    check.equal(deep, [[1], [1]])\n    cycle = []\n    cycle.append(cycle)\n    copied_cycle = copy.deepcopy(cycle)\n    check.true(copied_cycle is not cycle and copied_cycle[0] is copied_cycle)\n    restored = pickle.loads(pickle.dumps(graph, protocol=4))\n    check.true(restored == graph and restored[0] is restored[1])\n    check.true(restored[0] is not shared)\n    original = Value(23)\n    before = Value.created\n    restored_value = pickle.loads(pickle.dumps(original, protocol=4))\n    check.equal(restored_value, original)\n    check.true(restored_value is not original)\n    check.equal(Value.created, before)  # Default unpickling bypasses __init__.\n\n    workspace = Path(__file__).resolve().parent\n    with tempfile.TemporaryDirectory(\n        prefix=\"pcpp-objects-\", dir=workspace,\n    ) as tmp:\n        folder = Path(tmp).resolve()\n        check.true(folder.parent == workspace)\n        path = str(folder / \"records\")\n        with shelve.open(path, protocol=4, writeback=False) as shelf:\n            shelf[\"items\"] = [1]\n            shelf[\"items\"].append(2)\n            check.equal(shelf[\"items\"], [1])\n            edited = shelf[\"items\"]\n            edited.append(3)\n            shelf[\"items\"] = edited\n        with shelve.open(path, protocol=4) as shelf:\n            check.equal(shelf[\"items\"], [1, 3])\n        with shelve.open(path, protocol=4, writeback=True) as shelf:\n            shelf[\"items\"].append(4)\n        with shelve.open(path, protocol=4) as shelf:\n            check.equal(shelf[\"items\"], [1, 3, 4])\n        backend = dbm.whichdb(path)\n    check.true(not folder.exists())\n    print(f\"objects: {check.count} checks; shelf backend={backend}\")\n\n\nif __name__ == \"__main__\":\n    run()\n"
+    },
+    {
+      "filename": "network.py",
+      "sha256": "9bde523e56d493ac46717f786767622eaf6ed5a7ae177f8f5740926f8044fd99",
+      "bytes": 9833,
+      "code": "\"\"\"Exercise bounded TCP framing and a disposable loopback JSON service.\n\nRun directly. No external endpoint, credential, proxy or persistent service\nis used. HTTP paths and records are original fixtures, not an API promise.\n\"\"\"\n\nfrom contextlib import contextmanager\nfrom http.server import BaseHTTPRequestHandler, HTTPServer\nimport json\nimport socket\nfrom threading import Event, Thread\n\nimport requests\n\nfrom checks import Checks\n\n\nclass SourceError(Exception):\n    \"\"\"Represent a transport, response or application-contract failure.\"\"\"\n\n\ndef records(value):\n    \"\"\"Validate the complete small status-list contract before returning it.\"\"\"\n    if type(value) is not list or len(value) > 20:\n        raise ValueError(\"expected at most 20 records\")\n    seen = set()\n    for item in value:\n        if type(item) is not dict or set(item) != {\"id\", \"name\", \"status\"}:\n            raise ValueError(\"unexpected record fields\")\n        if type(item[\"id\"]) is not int or item[\"id\"] <= 0:\n            raise ValueError(\"positive integer id required\")\n        if item[\"id\"] in seen:\n            raise ValueError(\"duplicate id\")\n        seen.add(item[\"id\"])\n        if type(item[\"name\"]) is not str or not 1 <= len(item[\"name\"]) <= 80:\n            raise ValueError(\"bounded name required\")\n        if item[\"status\"] not in (\"up\", \"down\"):\n            raise ValueError(\"unknown status\")\n    return value\n\n\nclass StatusClient:\n    \"\"\"Own one Requests session for the supplied loopback fixture.\"\"\"\n\n    def __init__(self, base_url):\n        \"\"\"Keep the fixture URL and disable ambient proxy/auth inheritance.\"\"\"\n        if not base_url.startswith(\"http://127.0.0.1:\"):\n            raise ValueError(\"this workbook uses its loopback fixture only\")\n        self.base_url = base_url\n        self.session = requests.Session()\n        self.session.trust_env = False\n\n    def close(self):\n        \"\"\"Release this client's pooled connections.\"\"\"\n        self.session.close()\n\n    def request(self, method, path=\"/records\", payload=None, timeout=(1, 1)):\n        \"\"\"Check status, media type, size, JSON and the record schema.\"\"\"\n        try:\n            with self.session.request(\n                method, self.base_url + path, json=payload, timeout=timeout,\n                stream=True, allow_redirects=False,\n            ) as response:\n                response.raise_for_status()\n                if response.status_code == 204 and method == \"DELETE\":\n                    return None\n                if response.status_code not in (200, 201):\n                    raise ValueError(\"unexpected success/redirect status\")\n                media = response.headers.get(\"Content-Type\", \"\")\n                media = media.partition(\";\")[0].strip().lower()\n                if media != \"application/json\":\n                    raise ValueError(\"expected application/json\")\n                body = bytearray()\n                for part in response.iter_content(chunk_size=512):\n                    body.extend(part)\n                    if len(body) > 4096:\n                        raise ValueError(\"response exceeds 4096 decoded bytes\")\n                return records(json.loads(body))\n        except (requests.RequestException, ValueError) as error:\n            raise SourceError(\"status request failed\") from error\n\n    def read(self):\n        \"\"\"Return the fixture's current status records.\"\"\"\n        return self.request(\"GET\")\n\n\n@contextmanager\ndef fixture():\n    \"\"\"Serve original finite responses on an ephemeral loopback port.\"\"\"\n    state = {1: {\"id\": 1, \"name\": \"mail\", \"status\": \"up\"}}\n    release = Event()\n\n    class Handler(BaseHTTPRequestHandler):\n        \"\"\"Implement only the methods and paths used by this workbook.\"\"\"\n\n        def log_message(self, *args):\n            pass\n\n        def reply(self, status, body, media=\"application/json\"):\n            self.send_response(status)\n            self.send_header(\"Content-Type\", media)\n            self.send_header(\"Content-Length\", str(len(body)))\n            self.end_headers()\n            if body:\n                self.wfile.write(body)\n\n        def do_GET(self):\n            if self.path == \"/slow\":\n                release.wait(2)\n                return  # Client times out before any response headers.\n            cases = {\n                \"/fail\": (500, b'{\"error\":\"fixture\"}', \"application/json\"),\n                \"/html\": (200, b\"<p>not json</p>\", \"text/html\"),\n                \"/badjson\": (200, b\"{\", \"application/json\"),\n                \"/invalid\": (200, b'{\"items\":[]}', \"application/json\"),\n                \"/large\": (200, b\" \" * 4097, \"application/json\"),\n                \"/redirect\": (302, b\"\", \"application/json\"),\n            }\n            if self.path in cases:\n                self.reply(*cases[self.path])\n            else:\n                self.reply(200, json.dumps(list(state.values())).encode())\n\n        def write_record(self, status):\n            size = int(self.headers[\"Content-Length\"])\n            item = json.loads(self.rfile.read(size))\n            records([item])\n            state[item[\"id\"]] = item\n            self.reply(status, json.dumps([item]).encode())\n\n        def do_POST(self):\n            self.write_record(201)\n\n        def do_PUT(self):\n            self.write_record(200)\n\n        def do_DELETE(self):\n            state.pop(int(self.path.rsplit(\"/\", 1)[-1]), None)\n            self.reply(204, b\"\")\n\n    server = HTTPServer((\"127.0.0.1\", 0), Handler)\n    thread = Thread(\n        target=server.serve_forever, kwargs={\"poll_interval\": 0.01},\n    )\n    thread.start()\n    try:\n        yield f\"http://127.0.0.1:{server.server_port}\", release\n    finally:\n        release.set()\n        server.shutdown()\n        server.server_close()\n        thread.join(3)\n        if thread.is_alive():\n            raise RuntimeError(\"fixture thread did not stop\")\n\n\ndef receive_exact(connection, size):\n    \"\"\"Read the requested byte count, rejecting an early EOF.\"\"\"\n    result = bytearray()\n    while len(result) < size:\n        part = connection.recv(min(7, size - len(result)))\n        if not part:\n            raise EOFError(\"peer closed during frame\")\n        result.extend(part)\n    return bytes(result)\n\n\ndef receive_frame(connection):\n    \"\"\"Read a two-byte big-endian length followed by bounded UTF-8 text.\"\"\"\n    size = int.from_bytes(receive_exact(connection, 2), \"big\")\n    if size > 4096:\n        raise ValueError(\"frame too large\")\n    return receive_exact(connection, size).decode(\"utf-8\")\n\n\n@contextmanager\ndef tcp_pair():\n    \"\"\"Create and close a real IPv4 loopback connection without a daemon.\"\"\"\n    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as listener:\n        listener.bind((\"127.0.0.1\", 0))\n        listener.listen(1)\n        listener.settimeout(1)\n        with socket.create_connection(listener.getsockname(), timeout=1) as a:\n            b, _ = listener.accept()\n            with b:\n                b.settimeout(1)\n                yield a, b\n\n\ndef run():\n    \"\"\"Check success, framing, HTTP contract failures and cleanup paths.\"\"\"\n    check = Checks()\n    message = \"caf\\u00e9 status is up\".encode(\"utf-8\")\n    with tcp_pair() as (sender, receiver):\n        wire = len(message).to_bytes(2, \"big\") + message\n        sender.sendall(wire[:1])\n        sender.sendall(wire[1:] + b\"\\0\\0\")\n        check.equal(receive_frame(receiver), \"caf\\u00e9 status is up\")\n        check.equal(receive_frame(receiver), \"\")\n        sender.shutdown(socket.SHUT_WR)\n        check.raises(EOFError, receive_frame, receiver)\n    check.equal(sender.fileno(), -1)\n    check.equal(receiver.fileno(), -1)\n    with tcp_pair() as (sender, receiver):\n        sender.sendall(b\"\\0\\5ab\")\n        sender.shutdown(socket.SHUT_WR)\n        check.raises(EOFError, receive_frame, receiver)\n    with tcp_pair() as (sender, receiver):\n        sender.sendall((4097).to_bytes(2, \"big\"))\n        check.raises(ValueError, receive_frame, receiver)\n    with tcp_pair() as (sender, receiver):\n        receiver.settimeout(0.05)\n        check.raises(TimeoutError, receive_frame, receiver)\n\n    with fixture() as (url, release):\n        client = StatusClient(url)\n        try:\n            check.equal(client.read()[0][\"name\"], \"mail\")\n            item = {\"id\": 2, \"name\": \"queue\", \"status\": \"down\"}\n            check.equal(client.request(\"POST\", payload=item), [item])\n            check.equal(len(client.read()), 2)\n            item[\"status\"] = \"up\"\n            check.equal(client.request(\"PUT\", payload=item), [item])\n            check.true(client.request(\"DELETE\", \"/records/2\") is None)\n            check.equal(len(client.read()), 1)\n            for path, cause in [\n                (\"/fail\", requests.HTTPError), (\"/html\", ValueError),\n                (\"/badjson\", json.JSONDecodeError), (\"/invalid\", ValueError),\n                (\"/large\", ValueError), (\"/redirect\", ValueError),\n            ]:\n                error = check.raises(SourceError, client.request, \"GET\", path)\n                check.true(isinstance(error.__cause__, cause))\n            error = check.raises(\n                SourceError, client.request, \"GET\", \"/slow\",\n                timeout=(1, 0.05),\n            )\n            check.true(isinstance(error.__cause__, requests.Timeout))\n            release.set()\n            check.equal(len(client.read()), 1)\n        finally:\n            client.close()\n    check.raises(\n        ValueError, records, [{\"id\": True, \"name\": \"x\", \"status\": \"up\"}],\n    )\n    item = {\"id\": 1, \"name\": \"x\", \"status\": \"up\"}\n    check.raises(ValueError, records, [item, item])\n    check.equal(json.loads(json.dumps({1: (True, None)})), {\"1\": [True, None]})\n    check.raises(ValueError, json.dumps, float(\"nan\"), allow_nan=False)\n    check.equal(json.loads('{\"x\":1,\"x\":2}'), {\"x\": 2})\n    print(f\"network: {check.count} checks; requests={requests.__version__}\")\n\n\nif __name__ == \"__main__\":\n    run()\n"
+    },
+    {
+      "filename": "storage.py",
+      "sha256": "8824cafc40fa0a45065e3909196e083b8dfbe52345a2f0692e15fd91a3b4a9c4",
+      "bytes": 10922,
+      "code": "\"\"\"Exercise transactions, trusted XML, CSV, logging and INI settings.\n\nAll files and XML are original fixtures created within this run. XML parsing\nhere is not a general-purpose untrusted-document ingestion boundary.\n\"\"\"\n\nimport configparser\nfrom contextlib import closing\nimport csv\nimport io\nimport logging\nfrom pathlib import Path\nimport sqlite3\nimport tempfile\nimport xml.etree.ElementTree as ET\n\nfrom checks import Checks\nfrom network import records\n\n\nclass StatusStore:\n    \"\"\"Own a connection with explicit Python 3.12+ transaction behavior.\"\"\"\n\n    def __init__(self, path):\n        \"\"\"Create and commit the schema before accepting status batches.\"\"\"\n        self.connection = sqlite3.connect(path, autocommit=False)\n        self.connection.row_factory = sqlite3.Row\n        try:\n            with self.connection:\n                self.connection.execute(\n                    \"CREATE TABLE IF NOT EXISTS status (\"\n                    \"id INTEGER PRIMARY KEY, name TEXT NOT NULL, \"\n                    \"status TEXT NOT NULL CHECK(status IN ('up','down')))\"\n                ).close()\n        except Exception:\n            self.connection.close()\n            raise\n\n    def close(self):\n        \"\"\"Close the owned connection; pending changes are rolled back.\"\"\"\n        self.connection.close()\n\n    def replace(self, items):\n        \"\"\"Validate a batch, then replace all rows in one transaction.\"\"\"\n        records(items)\n        with self.connection:\n            self.connection.execute(\"DELETE FROM status\").close()\n            with closing(self.connection.cursor()) as cursor:\n                cursor.executemany(\n                    \"INSERT INTO status VALUES (:id, :name, :status)\", items\n                )\n\n    def read(self):\n        \"\"\"Return an independent ordered snapshot of the current rows.\"\"\"\n        with closing(self.connection.execute(\n            \"SELECT id, name, status FROM status ORDER BY id\"\n        )) as cursor:\n            return [dict(row) for row in cursor.fetchall()]\n\n\ndef write_csv(path, items):\n    \"\"\"Export a validated status list with explicit newline handling.\"\"\"\n    records(items)\n    with path.open(\"w\", encoding=\"utf-8\", newline=\"\") as stream:\n        writer = csv.DictWriter(stream, fieldnames=[\"id\", \"name\", \"status\"])\n        writer.writeheader()\n        writer.writerows(items)\n\n\ndef read_csv(path):\n    \"\"\"Validate headers, row width and values for a small local CSV file.\"\"\"\n    result = []\n    with path.open(encoding=\"utf-8\", newline=\"\") as stream:\n        reader = csv.DictReader(stream)\n        if reader.fieldnames != [\"id\", \"name\", \"status\"]:\n            raise ValueError(\"unexpected CSV header\")\n        for row in reader:\n            if None in row or None in row.values():\n                raise ValueError(\"unexpected CSV row width\")\n            row[\"id\"] = int(row[\"id\"])\n            result.append(row)\n            if len(result) > 20:\n                raise ValueError(\"too many rows\")\n    return records(result)\n\n\ndef write_xml(items):\n    \"\"\"Build original XML using attributes, text and escaped values.\"\"\"\n    records(items)\n    root = ET.Element(\"statuses\")\n    for item in items:\n        node = ET.SubElement(root, \"service\", id=str(item[\"id\"]))\n        ET.SubElement(node, \"name\").text = item[\"name\"]\n        ET.SubElement(node, \"status\").text = item[\"status\"]\n    return ET.tostring(root, encoding=\"utf-8\", xml_declaration=True)\n\n\ndef read_trusted_xml(body):\n    \"\"\"Read this workbook's XML; reject a different application schema.\"\"\"\n    if len(body) > 4096:\n        raise ValueError(\"fixture XML too large\")\n    root = ET.fromstring(body)\n    if root.tag != \"statuses\" or root.attrib:\n        raise ValueError(\"unexpected XML root\")\n    result = []\n    for node in root:\n        if node.tag != \"service\" or set(node.attrib) != {\"id\"}:\n            raise ValueError(\"unexpected service element\")\n        if [child.tag for child in node] != [\"name\", \"status\"]:\n            raise ValueError(\"unexpected service children\")\n        if any(child.attrib or len(child) for child in node):\n            raise ValueError(\"expected simple text children\")\n        result.append({\n            \"id\": int(node.get(\"id\")), \"name\": node.find(\"name\").text,\n            \"status\": node.find(\"status\").text,\n        })\n    return records(result)\n\n\ndef read_settings(path):\n    \"\"\"Require a settings file and validate its typed polling interval.\"\"\"\n    parser = configparser.ConfigParser()\n    with path.open(encoding=\"utf-8\") as stream:\n        parser.read_file(stream)\n    delay = parser.getint(\"desk\", \"poll_ms\")\n    if not 5 <= delay <= 1000:\n        raise ValueError(\"poll_ms must be between 5 and 1000\")\n    return parser, delay\n\n\ndef run():\n    \"\"\"Check rollback, resource ownership and common format boundaries.\"\"\"\n    check = Checks()\n    workspace = Path(__file__).resolve().parent\n    with tempfile.TemporaryDirectory(\n        prefix=\"pcpp-storage-\", dir=workspace,\n    ) as temporary:\n        folder = Path(temporary).resolve()\n        check.true(folder.parent == workspace)\n        path = folder / \"status.sqlite\"\n        store = StatusStore(path)\n        item = {\"id\": 1, \"name\": 'a,\"b\"\\nc & <d>', \"status\": \"up\"}\n        try:\n            store.replace([item])\n            check.equal(store.read(), [item])\n            injection = \"x'); DROP TABLE status;--\"\n            store.replace([{**item, \"name\": injection}])\n            check.equal(store.read()[0][\"name\"], injection)\n            store.replace([item])\n            try:\n                with store.connection:\n                    store.connection.execute(\"DELETE FROM status\").close()\n                    store.connection.executemany(\n                        \"INSERT INTO status VALUES (?, ?, ?)\",\n                        [(2, \"queue\", \"down\"), (2, \"duplicate\", \"up\")],\n                    ).close()\n            except sqlite3.IntegrityError:\n                check.equal(store.read(), [item])\n            else:\n                raise AssertionError(\"duplicate primary key was accepted\")\n            check.true(store.connection.in_transaction)\n            with store.connection:\n                with closing(store.connection.execute(\n                    \"UPDATE status SET status=? WHERE id=?\", (\"down\", 1)\n                )) as cursor:\n                    check.equal(cursor.rowcount, 1)\n            check.equal(store.read()[0][\"status\"], \"down\")\n            with store.connection:\n                store.connection.execute(\n                    \"DELETE FROM status WHERE id=?\", (1,)\n                ).close()\n            check.equal(store.read(), [])\n            store.replace([item])\n            # A connection context manages transactions, not lifetime.\n            check.equal(store.connection.execute(\"SELECT 7\").fetchone()[0], 7)\n            store.connection.execute(\"DELETE FROM status\").close()\n        finally:\n            store.close()  # Rolls back that final uncommitted DELETE.\n        check.raises(sqlite3.ProgrammingError, store.read)\n        with closing(StatusStore(path)) as reopened:\n            check.equal(reopened.read(), [item])\n\n        csv_path = folder / \"status.csv\"\n        write_csv(csv_path, [item])\n        check.equal(read_csv(csv_path), [item])\n        check.true('\"\"b\"\"' in csv_path.read_text(encoding=\"utf-8\"))\n        csv_path.write_text(\"id,name,status\\n1,x,up,extra\\n\", encoding=\"utf-8\")\n        check.raises(ValueError, read_csv, csv_path)\n        csv_path.write_text(\"id,name,status\\n1,x\\n\", encoding=\"utf-8\")\n        check.raises(ValueError, read_csv, csv_path)\n        csv_path.write_text(\"name,id,status\\nx,1,up\\n\", encoding=\"utf-8\")\n        check.raises(ValueError, read_csv, csv_path)\n        xml = write_xml([item])\n        check.true(b\"&amp;\" in xml and b\"&lt;\" in xml)\n        check.equal(read_trusted_xml(xml), [item])\n        check.raises(ET.ParseError, read_trusted_xml, b\"<statuses>\")\n        check.raises(ValueError, read_trusted_xml, b\"<other/>\")\n        check.raises(\n            ValueError, read_trusted_xml,\n            b'<statuses><service id=\"1\"><name>x</name></service></statuses>',\n        )\n        namespaced = ET.fromstring('<s xmlns=\"urn:desk\"><item/></s>')\n        check.true(namespaced.find(\"item\") is None)\n        check.true(namespaced.find(\"d:item\", {\"d\": \"urn:desk\"}) is not None)\n        # Well-formed parsing is not DTD validity checking.\n        dtd = '<!DOCTYPE s [<!ELEMENT s EMPTY>]><s><child/></s>'\n        check.equal(ET.fromstring(dtd).find(\"child\").tag, \"child\")\n\n        config_path = folder / \"desk.ini\"\n        config_path.write_text(\n            \"[DEFAULT]\\npoll_ms=10\\nlabel=Desk\\n\"\n            \"[desk]\\ntitle=%(label)s status\\nenabled=no\\n\", encoding=\"utf-8\",\n        )\n        parser, delay = read_settings(config_path)\n        check.equal(delay, 10)\n        check.equal(parser[\"desk\"][\"TITLE\"], \"Desk status\")\n        check.equal(parser.getint(\"desk\", \"poll_ms\", fallback=99), 10)\n        check.equal(parser.getboolean(\"desk\", \"enabled\"), False)\n        check.true(bool(parser[\"desk\"][\"enabled\"]))\n        check.equal(parser.read(folder / \"absent.ini\"), [])\n        check.raises(FileNotFoundError, read_settings, folder / \"absent.ini\")\n        parser[\"desk\"][\"poll_ms\"] = \"bad\"\n        check.raises(ValueError, parser.getint, \"desk\", \"poll_ms\")\n        parser[\"desk\"][\"title\"] = \"%(missing)s\"\n        check.raises(\n            configparser.InterpolationMissingOptionError,\n            parser.get, \"desk\", \"title\",\n        )\n        extended = configparser.ConfigParser(\n            interpolation=configparser.ExtendedInterpolation()\n        )\n        extended.read_string(\"[a]\\nroot=data\\n[b]\\npath=${a:root}/status\\n\")\n        check.equal(extended[\"b\"][\"path\"], \"data/status\")\n\n    check.true(not folder.exists())\n    output = io.StringIO()\n    logger = logging.getLogger(\"pcpp.workbook\")\n    old_level, old_propagate = logger.level, logger.propagate\n    handler = logging.StreamHandler(output)\n    handler.setLevel(logging.WARNING)\n    handler.setFormatter(logging.Formatter(\"{levelname}:{message}\", style=\"{\"))\n    logger.addHandler(handler)\n    logger.setLevel(logging.DEBUG)\n    logger.propagate = False\n    try:\n        logger.debug(\"hidden %s\", \"debug\")\n        logger.info(\"hidden %s\", \"info\")\n        logger.warning(\"queue %s\", \"down\")\n        logger.error(\"read %s\", \"failed\")\n        logger.critical(\"desk %s\", \"stopped\")\n        check.equal(output.getvalue().splitlines(), [\n            \"WARNING:queue down\", \"ERROR:read failed\", \"CRITICAL:desk stopped\",\n        ])\n        record = logging.LogRecord(\n            \"pcpp\", 20, __file__, 1, \"row %s\", (7,), None,\n        )\n        check.equal(record.getMessage(), \"row 7\")\n    finally:\n        logger.removeHandler(handler)\n        handler.close()\n        logger.setLevel(old_level)\n        logger.propagate = old_propagate\n        output.close()\n    print(f\"storage: {check.count} checks; sqlite={sqlite3.sqlite_version}\")\n\n\nif __name__ == \"__main__\":\n    run()\n"
+    },
+    {
+      "filename": "desk.py",
+      "sha256": "c23c3a6b6e0a719c13c89ca780a897d21d26ce3dcf3ccec7a7359892a3221a32",
+      "bytes": 13290,
+      "code": "\"\"\"Exercise a withdrawn Tk status desk with bounded original fixtures.\n\nThe worker handles source I/O; only the Tk thread touches widgets and the\nsmall SQLite store. Dialog calls are captured, not displayed, by this run.\n\"\"\"\n\nfrom contextlib import closing\nimport logging\nfrom pathlib import Path\nfrom queue import Empty, Queue\nimport sqlite3\nimport tempfile\nfrom threading import Event, Thread\nimport tkinter as tk\nfrom tkinter import messagebox\nimport xml.etree.ElementTree as ET\n\nfrom checks import Checks\nfrom network import SourceError, StatusClient, fixture\nfrom objects import Source, trace\nfrom storage import (\n    StatusStore, read_csv, read_settings, read_trusted_xml,\n    write_csv, write_xml,\n)\n\n\nclass RestSource(Source):\n    \"\"\"Read the loopback service using a session owned by the worker.\"\"\"\n\n    def __init__(self, url):\n        \"\"\"Retain the fixture URL without opening a connection.\"\"\"\n        self.url = url\n\n    def read(self):\n        \"\"\"Create and close the HTTP client on the calling thread.\"\"\"\n        with closing(StatusClient(self.url)) as client:\n            return client.read()\n\n\nclass FileSource(Source):\n    \"\"\"Read a trusted XML fixture through the same source contract.\"\"\"\n\n    def __init__(self, path):\n        \"\"\"Retain the path to this run's original local file.\"\"\"\n        self.path = path\n\n    def read(self):\n        \"\"\"Return records from the original small XML fixture.\"\"\"\n        try:\n            return read_trusted_xml(self.path.read_bytes())\n        except (OSError, ValueError, ET.ParseError) as error:\n            raise SourceError(\"invalid status file\") from error\n\n\nclass Desk:\n    \"\"\"Coordinate source refreshes, storage and a small status display.\"\"\"\n\n    def __init__(self, root, source, store, poll_ms=10, dialog=None):\n        \"\"\"Create widgets; the caller owns the root and store lifetimes.\"\"\"\n        self.root, self.source, self.store = root, source, store\n        self.poll_ms = poll_ms\n        self.dialog = dialog or messagebox.showerror\n        self.closed = False\n        self.pending = None\n        self.worker = None\n        self.results = Queue()\n        self.events = []\n        self.visible = []\n        self.logger = logging.getLogger(\"pcpp.desk\")\n        self.frame = tk.Frame(root)\n        self.frame.grid(row=0, column=0)\n        self.query = tk.StringVar(root, \"\")\n        self.mode = tk.StringVar(root, \"all\")\n        self.summary = tk.StringVar(root, \"Ready\")\n        tk.Label(self.frame, text=\"Filter name\").grid(row=0, column=0)\n        self.entry = tk.Entry(self.frame, textvariable=self.query)\n        self.entry.grid(row=0, column=1)\n        self.button = tk.Button(\n            self.frame, text=\"Refresh\", command=self.refresh,\n        )\n        self.button.grid(row=0, column=2)\n        choices = tk.Frame(self.frame)\n        choices.grid(row=1, column=0, columnspan=3)\n        self.radios = []\n        for mode in (\"all\", \"up\", \"down\"):\n            radio = tk.Radiobutton(\n                choices, text=mode, variable=self.mode, value=mode,\n                command=self.render,\n            )\n            radio.pack(side=\"left\")  # Different parent from grid-managed rows.\n            self.radios.append(radio)\n        self.canvas = tk.Canvas(self.frame, width=280, height=80)\n        self.canvas.grid(row=2, column=0, columnspan=3)\n        tk.Label(self.frame, textvariable=self.summary).grid(\n            row=3, column=0, columnspan=3,\n        )\n        self.trace_id = self.query.trace_add(\"write\", self.query_changed)\n        self.binding = root.bind(\"<<RefreshStatus>>\", self.on_refresh)\n\n    def query_changed(self, *args):\n        \"\"\"Adapt Tk's three trace arguments to a parameterless render.\"\"\"\n        self.render()\n\n    def on_refresh(self, event):\n        \"\"\"Adapt an Event callback to the button command contract.\"\"\"\n        self.events.append(\"bound-event\")\n        self.refresh()\n\n    def render(self):\n        \"\"\"Filter the stored snapshot and update simple Canvas graphics.\"\"\"\n        query = self.query.get().casefold()\n        mode = self.mode.get()\n        self.visible = [\n            item for item in self.store.read()\n            if query in item[\"name\"].casefold()\n            and (mode == \"all\" or item[\"status\"] == mode)\n        ]\n        self.canvas.delete(\"all\")\n        for index, item in enumerate(self.visible):\n            self.canvas.create_rectangle(\n                index * 12, 10, index * 12 + 10, 40,\n                fill=\"green\" if item[\"status\"] == \"up\" else \"red\",\n            )\n        self.summary.set(f\"{len(self.visible)} visible\")\n\n    def refresh(self):\n        \"\"\"Validate first and start at most one source read at a time.\"\"\"\n        if self.closed or self.pending is not None:\n            return\n        if len(self.query.get()) > 80:\n            self.dialog(\"Filter\", \"Use at most 80 characters.\")\n            return\n        self.button.configure(state=\"disabled\")\n        self.summary.set(\"Loading\")\n\n        @trace(\"read\", self.events)\n        def work():\n            try:\n                result = self.source.read()\n            except Exception as error:\n                # Forward the exception object; never touch Tk in this thread.\n                self.results.put((False, error))\n            else:\n                self.results.put((True, result))\n\n        self.worker = Thread(target=work)\n        self.worker.start()\n        self.pending = self.root.after(self.poll_ms, self.poll)\n\n    def poll(self):\n        \"\"\"Consume a worker result on the Tk thread and retain good state.\"\"\"\n        self.pending = None\n        try:\n            success, result = self.results.get_nowait()\n        except Empty:\n            self.pending = self.root.after(self.poll_ms, self.poll)\n            return\n        self.worker.join()\n        try:\n            if not success:\n                raise result\n            self.store.replace(result)\n            self.render()\n            self.logger.info(\"refresh records=%s\", len(result))\n        except (SourceError, ValueError, OSError, sqlite3.Error) as error:\n            self.summary.set(\"Refresh failed; previous records retained\")\n            self.logger.warning(\"refresh failed: %s\", type(error).__name__)\n            self.dialog(\"Refresh failed\", str(error))\n        finally:\n            self.button.configure(state=\"normal\")\n\n    def close(self):\n        \"\"\"Cancel callbacks, remove observers and join the bounded worker.\"\"\"\n        if self.closed:\n            return\n        self.closed = True\n        if self.pending is not None:\n            self.root.after_cancel(self.pending)\n            self.pending = None\n        if self.worker is not None:\n            self.worker.join(3)\n            if self.worker.is_alive():\n                raise RuntimeError(\"source worker did not stop\")\n        self.query.trace_remove(\"write\", self.trace_id)\n        self.root.unbind(\"<<RefreshStatus>>\", self.binding)\n        self.frame.destroy()\n\n\ndef wait_until(root, condition):\n    \"\"\"Run real Tk events until a condition holds, with a two-second guard.\"\"\"\n    pending = None\n    expired = []\n\n    def inspect():\n        nonlocal pending\n        pending = None\n        if condition():\n            root.quit()\n        else:\n            pending = root.after(2, inspect)\n\n    def timeout():\n        expired.append(True)\n        root.quit()\n\n    watchdog = root.after(2000, timeout)\n    pending = root.after(0, inspect)\n    try:\n        root.mainloop()\n    finally:\n        root.after_cancel(watchdog)\n        if pending is not None:\n            root.after_cancel(pending)\n    if expired:\n        raise AssertionError(\"GUI condition timed out\")\n\n\ndef run():\n    \"\"\"Check refreshes, responsive waiting and retained-state errors.\"\"\"\n    check = Checks()\n    workspace = Path(__file__).resolve().parent\n    with tempfile.TemporaryDirectory(\n        prefix=\"pcpp-desk-\", dir=workspace,\n    ) as temporary:\n        folder = Path(temporary).resolve()\n        check.true(folder.parent == workspace)\n        config_path = folder / \"desk.ini\"\n        config_path.write_text(\"[desk]\\npoll_ms=5\\n\", encoding=\"utf-8\")\n        _, delay = read_settings(config_path)\n        with fixture() as (url, release), closing(StatusStore(\n            folder / \"desk.sqlite\"\n        )) as store:\n            root = tk.Tk()\n            root.withdraw()\n            dialogs, callbacks = [], []\n            def report_error(*args):\n                callbacks.append(args)\n\n            root.report_callback_exception = report_error\n            desk = Desk(root, RestSource(url), store, delay,\n                        dialog=lambda *args: dialogs.append(args))\n            logger = desk.logger\n            handler = logging.NullHandler()\n            logger.addHandler(handler)\n            old_propagate = logger.propagate\n            logger.propagate = False\n            try:\n                check.equal(root.state(), \"withdrawn\")\n                layout = tk.Frame(root)\n                layout.grid(row=1, column=0)\n                gridded = tk.Label(layout, text=\"grid\")\n                gridded.grid(row=0, column=0)\n                placed = tk.Label(layout, text=\"place\")\n                placed.place(x=30, y=30)\n                packed = tk.Label(layout, text=\"pack\")\n                check.raises(tk.TclError, packed.pack)\n                check.equal(gridded.winfo_manager(), \"grid\")\n                check.equal(placed.winfo_manager(), \"place\")\n                layout.destroy()\n                desk.button.invoke()\n                check.equal(str(desk.button[\"state\"]), \"disabled\")\n                wait_until(root, lambda: desk.pending is None)\n                check.equal(len(store.read()), 1)\n                check.equal(desk.visible[0][\"name\"], \"mail\")\n                check.equal(len(desk.canvas.find_all()), 1)\n                check.equal(desk.events, [\n                    \"factory:read\", \"apply:read\", \"enter:read\", \"leave:read\",\n                ])\n                desk.query.set(\"missing\")\n                check.equal(desk.visible, [])\n                desk.query.set(\"MAIL\")\n                check.equal(len(desk.visible), 1)\n                desk.radios[2].invoke()\n                check.equal(desk.visible, [])\n                desk.radios[0].invoke()\n                desk.query.set(\"x\" * 81)\n                desk.button.invoke()\n                check.equal(dialogs[-1][0], \"Filter\")\n                check.true(desk.pending is None)\n                desk.query.set(\"\")\n\n                xml_path = folder / \"status.xml\"\n                item = {\"id\": 2, \"name\": \"queue\", \"status\": \"down\"}\n                xml_path.write_bytes(write_xml([item]))\n                desk.source = FileSource(xml_path)\n                root.event_generate(\"<<RefreshStatus>>\")\n                wait_until(root, lambda: desk.pending is None)\n                check.true(\"bound-event\" in desk.events)\n                check.equal(store.read(), [item])\n                write_csv(folder / \"status.csv\", store.read())\n                check.equal(read_csv(folder / \"status.csv\"), [item])\n                xml_path.write_bytes(b\"<statuses>\")\n                desk.button.invoke()\n                wait_until(root, lambda: desk.pending is None)\n                check.equal(store.read(), [item])\n                check.equal(\n                    dialogs[-1], (\"Refresh failed\", \"invalid status file\"),\n                )\n\n                class Broken(Source):\n                    def read(self):\n                        raise SourceError(\"fixture offline\")\n\n                desk.source = Broken()\n                desk.button.invoke()\n                wait_until(root, lambda: desk.pending is None)\n                check.equal(store.read(), [item])\n                check.equal(dialogs[-1], (\"Refresh failed\", \"fixture offline\"))\n                check.equal(str(desk.button[\"state\"]), \"normal\")\n\n                gate = Event()\n\n                class Waiting(Source):\n                    def read(self):\n                        if not gate.wait(1):\n                            raise SourceError(\"gate expired\")\n                        return [item]\n\n                desk.source = Waiting()\n                desk.button.invoke()\n                heartbeat = []\n\n                def tick():\n                    heartbeat.append(desk.worker.is_alive())\n                    gate.set()\n\n                root.after(0, tick)\n                wait_until(root, lambda: desk.pending is None)\n                check.equal(heartbeat, [True])\n                check.equal(store.read(), [item])\n                check.equal(callbacks, [])\n                gate.clear()\n                desk.button.invoke()\n                check.true(desk.pending is not None)\n                gate.set()\n                desk.close()\n                desk.close()\n                check.equal(desk.query.trace_info(), [])\n                check.true(not desk.worker.is_alive())\n                check.equal(root.after_info(), ())\n                version = root.tk.call(\"info\", \"patchlevel\")\n            finally:\n                desk.close()\n                root.destroy()\n                logger.removeHandler(handler)\n                handler.close()\n                logger.propagate = old_propagate\n    check.true(not folder.exists())\n    print(f\"desk: {check.count} checks; Tcl/Tk={version}; root destroyed\")\n\n\nif __name__ == \"__main__\":\n    run()\n"
+    }
+  ],
+  "local_execution_evidence": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "-Werror::ResourceWarning",
+        "objects.py"
+      ],
+      "started_at": "2026-09-30T02:26:50.543422+00:00",
+      "elapsed_seconds": 0.142,
+      "exit_code": 0,
+      "stdout": "objects: 71 checks; shelf backend=dbm.sqlite3\n",
+      "stderr": "",
+      "checks": 71,
+      "optimized": false
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-Werror::ResourceWarning",
+        "network.py"
+      ],
+      "started_at": "2026-09-30T02:26:50.686443+00:00",
+      "elapsed_seconds": 0.469,
+      "exit_code": 0,
+      "stdout": "network: 34 checks; requests=2.34.2\n",
+      "stderr": "",
+      "checks": 34,
+      "optimized": false
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-Werror::ResourceWarning",
+        "storage.py"
+      ],
+      "started_at": "2026-09-30T02:26:51.155558+00:00",
+      "elapsed_seconds": 0.274,
+      "exit_code": 0,
+      "stdout": "storage: 37 checks; sqlite=3.50.4\n",
+      "stderr": "",
+      "checks": 37,
+      "optimized": false
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-Werror::ResourceWarning",
+        "desk.py"
+      ],
+      "started_at": "2026-09-30T02:26:51.430151+00:00",
+      "elapsed_seconds": 0.44,
+      "exit_code": 0,
+      "stdout": "desk: 31 checks; Tcl/Tk=8.6.15; root destroyed\n",
+      "stderr": "",
+      "checks": 31,
+      "optimized": false
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-Werror::ResourceWarning",
+        "-O",
+        "objects.py"
+      ],
+      "started_at": "2026-09-30T02:26:51.870881+00:00",
+      "elapsed_seconds": 0.136,
+      "exit_code": 0,
+      "stdout": "objects: 71 checks; shelf backend=dbm.sqlite3\n",
+      "stderr": "",
+      "checks": 71,
+      "optimized": true
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-Werror::ResourceWarning",
+        "-O",
+        "network.py"
+      ],
+      "started_at": "2026-09-30T02:26:52.007652+00:00",
+      "elapsed_seconds": 1.518,
+      "exit_code": 0,
+      "stdout": "network: 34 checks; requests=2.34.2\n",
+      "stderr": "",
+      "checks": 34,
+      "optimized": true
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-Werror::ResourceWarning",
+        "-O",
+        "storage.py"
+      ],
+      "started_at": "2026-09-30T02:26:53.526267+00:00",
+      "elapsed_seconds": 0.344,
+      "exit_code": 0,
+      "stdout": "storage: 37 checks; sqlite=3.50.4\n",
+      "stderr": "",
+      "checks": 37,
+      "optimized": true
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-Werror::ResourceWarning",
+        "-O",
+        "desk.py"
+      ],
+      "started_at": "2026-09-30T02:26:53.870258+00:00",
+      "elapsed_seconds": 0.525,
+      "exit_code": 0,
+      "stdout": "desk: 31 checks; Tcl/Tk=8.6.15; root destroyed\n",
+      "stderr": "",
+      "checks": 31,
+      "optimized": true
+    }
+  ],
+  "selected_lint_evidence": {
+    "command": [
+      "python",
+      "-m",
+      "ruff",
+      "check",
+      "checks.py",
+      "objects.py",
+      "network.py",
+      "storage.py",
+      "desk.py",
+      "--select",
+      "E4,E7,E9,F,W,E501",
+      "--line-length",
+      "79",
+      "--output-format",
+      "concise"
+    ],
+    "exit_code": 0,
+    "stdout": "All checks passed!\n",
+    "stderr": "",
+    "version": "ruff 0.16.4"
+  },
+  "manual_objective_confirmation": {
+    "checked_on": "2026-09-29",
+    "method": "Complete indexed canonical primary body manually compared after direct/automated timeout",
+    "active_code": "PCPP-32-101",
+    "syllabus_date": "2022-03-11",
+    "objectives": 24,
+    "per_section": [
+      12,
+      3,
+      3,
+      4,
+      2
+    ],
+    "weights": [
+      35,
+      12,
+      20,
+      18,
+      15
+    ],
+    "items": [
+      15,
+      7,
+      8,
+      8,
+      7
+    ],
+    "exam_questions": 45,
+    "snapshot_action": "Retained; no successful automated hash comparison",
+    "groups": [
+      {
+        "title": "Section 1: Advanced Object-Oriented Programming — 15 items, 35%",
+        "objectives": [
+          "1.1 OOP terminology, classes, methods, variables, isinstance(), issubclass(), __init__().",
+          "1.2 Special methods for comparison, numeric/type conversion, representation, attribute and container access.",
+          "1.3 Inheritance, MRO, polymorphism, duck typing, composition, is-a/has-a.",
+          "1.4 *args, **kwargs, closures, function/class decorators, wrappers, stacking, __call__().",
+          "1.5 Class and static methods; cls; alternate constructors and class state.",
+          "1.6 Abstract classes and methods.",
+          "1.7 Attribute encapsulation and properties.",
+          "1.8 Subclass built-in classes.",
+          "1.9 Exception objects, chaining, __context__, __cause__, tracebacks.",
+          "1.10 Identity, shallow copy, deep copy.",
+          "1.11 Persistence with pickle and shelve.",
+          "1.12 Metaprogramming, type and metaclasses."
+        ]
+      },
+      {
+        "title": "Section 2: Coding Conventions, Best Practices, and Standardization — 7 items, 12%",
+        "objectives": [
+          "2.1 PEP 1, PEP 8, PEP 20, PEP 257 and Python philosophy.",
+          "2.2 PEP 8 layout, imports, whitespace, comments, naming, recommendations and checking tools.",
+          "2.3 PEP 257 docstrings, PEP 484 type hints, documentation tools, linters and fixers."
+        ]
+      },
+      {
+        "title": "Section 3: GUI Programming — 8 items, 20%",
+        "objectives": [
+          "3.1 GUI and event-driven concepts, widgets, events and toolkits.",
+          "3.2 tkinter Tk/mainloop, widgets, place/grid, callbacks, dialogs, validation, Canvas and bind().",
+          "3.3 Geometry, colors, event handling, widget properties and observable variables."
+        ]
+      },
+      {
+        "title": "Section 4: Network Programming — 8 items, 18%",
+        "objectives": [
+          "4.1 REST, sockets, domains, addresses, ports, protocols, clients and servers.",
+          "4.2 socket creation, connection, send/recv, close and error handling.",
+          "4.3 JSON and XML structures and Python processing.",
+          "4.4 requests, HTTP methods, CRUD, response analysis and status codes."
+        ]
+      },
+      {
+        "title": "Section 5: File Processing and Environment — 7 items, 15%",
+        "objectives": [
+          "5.1 sqlite3 connections, transactions, cursors and CRUD SQL.",
+          "5.2 XML building/parsing, CSV readers/writers, logging, handlers/formatters, ConfigParser and interpolation."
+        ]
+      }
+    ]
+  },
+  "review_provenance": "Five exact original public Python files, four programs and eight normal/optimized process executions. Each mode passes71 OOP,34 network,37 storage and31 GUI checks. Same-context AI review; human review pending. No copied exam questions, paid interior or enrolled lesson.",
+  "source_health_boundary": "44 direct outcomes:36 successful responses,7 errors,1 blocked. Complete indexed syllabus/exam/policy fallback; scheduling/PDF excerpts only. Complete five public course outlines, selected primary technical sections and complete broad Pluralsight catalog. Downloaded unread aggregates and unavailable interiors remain explicit."
+}

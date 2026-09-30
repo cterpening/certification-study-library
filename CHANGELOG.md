@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [PCPP-32-101 deep review](docs/research/2026-09-29-pcpp-32-101-deep-review.md): Mapped 24 objectives, expanded 23 answers and added five original Python files. Eight normal/optimized runs passed173 checks per mode, including a withdrawn Tk desk and disposable HTTP/TCP fixtures. Corrected geometry, transaction, persistence and course-duration boundaries; policy/access and human-review limits remain explicit.
+
 - September 29, 2026: [CPP-22-02 deep review](docs/research/2026-09-29-cpp-22-02-deep-review.md): Mapped 34 objectives and expanded 30 answers; seven original C++17 files passed 16 hosted workbook runs, 16 diagnostic probes and four legacy mode probes. Provider arithmetic, eligibility/course/policy conflicts and broader lab/human review limits remain explicit.
 
 - September 29, 2026: [CPA-21-02 deep review](docs/research/2026-09-29-cpa-21-02-deep-review.md): Mapped 35 objectives and expanded 30 answers; six original C++17 files passed 13 hosted workbook runs, 16 diagnostic probes and ten mode probes. Source/booking conflicts, broader labs and human review remain explicit.

@@ -3713,6 +3713,31 @@ This is not a complete list, and it is not meant to be consumed in full. Pick on
 
 No exact current MeasureUp or Whizlabs CPP-22-02 practice product was verified. The Edube/vendor course fields disagree, so validate practice against all 34 canonical objectives instead of trusting a title. Resource study-time ranges other than expressly listed provider durations are planning estimates, not measured completion times. The cppreference algorithm index was fetched but not read in this review; selected container-index passages were read. Core Guidelines reading was limited to selected rules in the preceding CPA review, not a new full audit. Microsoft reference reading covered its index, not every linked chapter. Primary draft reading was selective and its exact boundaries are recorded in the review evidence.
 
+### PCPP-32-101 — PCPP Certified Professional Python Programmer Level 1
+
+Resource details from the [PCPP-32-101 guide](../guides/PCPP-32-101-python-certified-professional-programmer-level-1.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list and should not be consumed in full. Use the five official advanced courses as the aligned spine, then fill documented gaps with primary references and one substantial build.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [PCPP-32-101 syllabus](https://pythoninstitute.org/pcpp1-exam-syllabus) | Free official blueprint | 3–5 hours to map |
+| [Python Advanced 1: OOP](https://edube.org/study/pcpp1-1) | Free official public outline; enrollment required for lessons | Provider: 42 hours |
+| [Python Advanced 2: PEPs](https://edube.org/study/pcpp1-2) | Free official public outline | Provider: 10 hours |
+| [Python Advanced 3: GUI](https://edube.org/study/pcpp1-3) | Free official public outline | Provider: 21 hours |
+| [Python Advanced 4: networking](https://edube.org/study/pcpp1-4) | Free official public outline | Provider: 21 hours |
+| [Python Advanced 5: files](https://edube.org/study/pcpp1-5) | Free official public outline | Provider: 21 hours |
+| [Python documentation](https://docs.python.org/3/) | Free primary reference | 20–35 selected hours |
+| [PEP 8](https://peps.python.org/pep-0008/), [PEP 257](https://peps.python.org/pep-0257/), [PEP 484](https://peps.python.org/pep-0484/) | Free primary standards | 4–7 hours plus review |
+| [Python 3 Object-Oriented Programming](https://www.oreilly.com/library/view/python-3-object-oriented/9781804611864/) | O'Reilly subscription/book | 20–35 selected hours |
+| [TkDocs tutorial](https://tkdocs.com/tutorial/) | Free independent Tkinter tutorial | 8–15 hours with implementation |
+| [Requests documentation](https://requests.readthedocs.io/en/latest/) | Free project documentation | 4–8 hours |
+| [Pluralsight catalog](https://www.pluralsight.com/browse/software-development/python) | URL resolves to a broad software-development catalog; no verified PCPP1 path | Author budget: 15–30 selected hours |
+
+The five complete public Edube outlines total **115 provider hours** (42 + 10 + 21 + 21 + 21). These are provider estimates, not measured completion times. They list 32-101 alignment and recommend Python Essentials 2; the first landing retains stale CSPP1/PCPP1 “coming soon” text. No enrolled lesson or assessment was read. Add your own implementation/revision time. O'Reilly returned 403 and TkDocs could not be retrieved; current interiors and durations are unverified. The Pluralsight URL returns a broad catalog with some Python courses, not a verified PCPP1 path. Other hour ranges above are author planning estimates.
+
+The official page explicitly says no official PCPP1 practice test is available. Any third-party product must be checked for exact `PCPP-32-101` alignment and should not be treated as an authority or a source of recalled exam questions.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

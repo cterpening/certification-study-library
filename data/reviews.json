@@ -11824,24 +11824,70 @@
       "notes": "Mapped all 34 objectives and expanded all 30 answers. Seven exact public C++17 files passed sixteen hosted CMake runs, including four optimized and four address/undefined sanitizer variants. Sixteen invalid-code probes were rejected and four legacy ptr_fun mode probes recorded. Corrected for_each mutation, destination/invalidation/order/multiplicity/formatting contracts. Published arithmetic, eligibility/course/policy conflicts, access limits, broader labs and human review remain explicit. See docs/research/2026-09-29-cpp-22-02-deep-review.md"
     },
     {
-      "id":"pcpp-32-101-2026-09-02-source-validation",
-      "exam_code":"PCPP-32-101",
-      "guide_path":"guides/PCPP-32-101-python-certified-professional-programmer-level-1.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-06",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/pcpp-32-101-official-objectives.txt",
-      "blueprint_snapshot_sha256":"b36342ae9b7e21da6ba93845b94bfe42e1b72b2813c8f853e91e08c679637631",
-      "objective_coverage":[
-        {"objective_group":"Advanced Object-Oriented Programming (35%)","guide_sections":["Section 1","Integrated build","Labs 1–6"]},
-        {"objective_group":"Coding Conventions, Best Practices, and Standardization (12%)","guide_sections":["Section 2","Integrated build","Lab 7"]},
-        {"objective_group":"GUI Programming (20%)","guide_sections":["Section 3","Integrated build","Lab 8"]},
-        {"objective_group":"Network Programming (18%)","guide_sections":["Section 4","Integrated build","Labs 9–10"]},
-        {"objective_group":"File Processing and Environment (15%)","guide_sections":["Section 5","Integrated build","Labs 11–12"]}
+      "id": "pcpp32101-2026-09-29-source-validation",
+      "exam_code": "PCPP-32-101",
+      "guide_path": "guides/PCPP-32-101-python-certified-professional-programmer-level-1.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/pcpp-32-101-official-objectives.txt",
+      "blueprint_snapshot_sha256": "b36342ae9b7e21da6ba93845b94bfe42e1b72b2813c8f853e91e08c679637631",
+      "objective_coverage": [
+        {
+          "objective_group": "Section 1: Advanced Object-Oriented Programming — 15 items, 35%",
+          "guide_sections": [
+            "1. Advanced object-oriented programming — 35%",
+            "Original executable workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "Section 2: Coding Conventions, Best Practices, and Standardization — 7 items, 12%",
+          "guide_sections": [
+            "2. Conventions, best practices, and standardization — 12%",
+            "Original executable workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "Section 3: GUI Programming — 8 items, 20%",
+          "guide_sections": [
+            "3. GUI programming — 20%",
+            "Original executable workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "Section 4: Network Programming — 8 items, 18%",
+          "guide_sections": [
+            "4. Network programming — 18%",
+            "Original executable workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "Section 5: File Processing and Environment — 7 items, 15%",
+          "guide_sections": [
+            "5. File processing and environment — 15%",
+            "Original executable workbook",
+            "Answers and reasoning"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":11,"reachable":10,"access_blocked":1,"missing_or_error":0},
-      "notes":"All five PCPP-32-101 sections and their named subtopics are mapped through advanced OOP, special methods, built-in subclassing, decorators/metaclasses/serialization, PEP 8/257 conventions, Tkinter events/widgets/geometry, sockets/HTTP/REST/XML/JSON and sqlite3/CSV/XML/logging/configuration/environment modules. An integrated application, 12 correctly mapped labs and 23 original checks are included. PCPP-32-102 remains in development without a release date, and no official PCPP1 practice test is listed. O'Reilly is automation-blocked; no link is missing. No recalled/live item, answer dump or copied course question is used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 41,
+        "reachable": 35,
+        "access_blocked": 1,
+        "missing_or_error": 5
+      },
+      "notes": "Mapped all 24 objectives and expanded all 23 answers. Five exact original Python files passed eight normal/optimized runs with 173 checks per mode plus selected Ruff rules. Added a withdrawn Tk desk integrating original HTTP/XML sources, a worker queue, SQLite, CSV, configuration and logging; corrected geometry, transactions, persistence and response boundaries. Five public course outlines total115 provider hours. Format/scoring/policy questions, access limits, broader labs and human review remain explicit. See docs/research/2026-09-29-pcpp-32-101-deep-review.md"
     },
     {
       "id":"pced-30-02-2026-09-02-source-validation",
