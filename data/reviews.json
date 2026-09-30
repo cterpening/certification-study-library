@@ -12014,23 +12014,62 @@
       "notes": "Mapped all48 objectives and expanded18 answers. Exact original numerical/SQL/local-HTTP workbook passes86 checks normally and optimized; train-only preprocessing, held-out regression baselines, paired percentile resampling, join grain/NULL/foreign-key rollback and object ownership are explicit. Pandas3/plotting companion compiled and linted only because five optional packages are absent. Corrected learning estimates/product distinctions; nine broader labs, publisher conflicts and human review remain pending. See docs/research/2026-09-29-pcad-31-02-deep-review.md"
     },
     {
-      "id":"pcet-30-01-2026-09-02-source-validation",
-      "exam_code":"PCET-30-01",
-      "guide_path":"guides/PCET-30-01-python-certified-entry-level-tester.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-02",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/pcet-30-01-official-objectives.txt",
-      "blueprint_snapshot_sha256":"2ba098e2104bb457258687cdcd07afcc3a531ab146c27b0022a9bebb5d793aec",
-      "objective_coverage":[
-        {"objective_group":"Core Software Testing Concepts (17.1%)","guide_sections":["Section 1","Integrated lab"]},
-        {"objective_group":"Software Testing Types, Levels, and Processes (22.9%)","guide_sections":["Section 2","Integrated lab"]},
-        {"objective_group":"Static Analysis, Dynamic Testing, and Code Refactoring (28.6%)","guide_sections":["Section 3","Integrated lab"]},
-        {"objective_group":"Debugging, Assertions, and Testing Techniques (31.4%)","guide_sections":["Section 4","Integrated lab"]}
+      "id": "pcet3001-2026-09-30-source-validation",
+      "exam_code": "PCET-30-01",
+      "guide_path": "guides/PCET-30-01-python-certified-entry-level-tester.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-30",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/pcet-30-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "2ba098e2104bb457258687cdcd07afcc3a531ab146c27b0022a9bebb5d793aec",
+      "objective_coverage": [
+        {
+          "objective_group": "Block 1: Core Software Testing Concepts — 6 items, 17.1%",
+          "guide_sections": [
+            "1. Core testing concepts — 17.1%",
+            "Exact original executable workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "Block 2: Software Testing Types, Levels, and Processes — 8 items, 22.9%",
+          "guide_sections": [
+            "2. Types, levels, processes, and doubles — 22.9%",
+            "Exact original executable workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "Block 3: Static Analysis, Dynamic Testing, and Code Refactoring — 10 items, 28.6%",
+          "guide_sections": [
+            "3. Static/dynamic testing, coverage, and refactoring — 28.6%",
+            "Exact original executable workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "Block 4: Debugging, Assertions, and Testing Techniques — 11 items, 31.4%",
+          "guide_sections": [
+            "4. Debugging, assertions, and test techniques — 31.4%",
+            "Exact original executable workbook",
+            "Answers and reasoning"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":7,"reachable":6,"access_blocked":1,"missing_or_error":0},
-      "notes":"All four PCET blocks are mapped through testing principles, levels and types, the test process and doubles, reviews and static analysis, coverage and behavior-preserving refactoring, debugging, assertions, unittest and test-design techniques. The integrated lab and original checks require risk-based evidence. The official 30-01 header/alignment versus 30-02 introductory-text inconsistency and the still-in-development official practice test are explicit. O'Reilly is automation-blocked, not missing. No recalled/live item, answer dump or copied course question is used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 20,
+        "reachable": 16,
+        "access_blocked": 1,
+        "missing_or_error": 3
+      },
+      "notes": "Mapped all 22 objectives and expanded 17 answers. Three exact original Python files pass 25 test methods and 55 probe checks per normal/optimized mode: requirements, boundaries, doubles, toy state transitions, actual coverage/mutant evidence, finite refactoring, scripted pdb, assertion removal and isolated logging. Corrected learning entitlements and least-powerful-double guidance; publisher conflicts, inaccessible policy/PDF, absent Pylint/Flake8, ten broader labs and human review remain explicit. See docs/research/2026-09-30-pcet-30-01-deep-review.md"
     },
     {
       "id":"pcat-31-01-2026-09-02-source-validation",

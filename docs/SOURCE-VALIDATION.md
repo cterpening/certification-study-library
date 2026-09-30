@@ -2270,6 +2270,8 @@ course content is used. Blueprint SHA-256:
 
 ## PCET-30-01 coverage record
 
+The September 30 [deep review](research/2026-09-30-pcet-30-01-deep-review.md) maps 22 detailed objectives. Mapped all 22 objectives and expanded 17 answers. Three exact original Python files pass 25 test methods and 55 probe checks per normal/optimized mode: requirements, boundaries, doubles, toy state transitions, actual coverage/mutant evidence, finite refactoring, scripted pdb, assertion removal and isolated logging. Corrected learning entitlements and least-powerful-double guidance; publisher conflicts, inaccessible policy/PDF, absent Pylint/Flake8, ten broader labs and human review remain explicit. Current guide citations: 20 registered, 16 reachable, 1 access-blocked, 3 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Core Software Testing Concepts (17.1%); Software Testing Types, Levels, and Processes (22.9%); Static Analysis, Dynamic Testing, and Code Refactoring (28.6%); Debugging, Assertions, and Testing Techniques (31.4%)

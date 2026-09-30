@@ -3778,6 +3778,24 @@ This is not a complete list and is not meant to be consumed in full. Times label
 
 The PCAD exam page still calls PD101 “in development,” while the public Edube page offers an explicitly PCED-aligned course. Record that discrepancy rather than assuming current full PCAD coverage. No protected lesson or exam content was accessed, and no purchases were made. Avoid providers offering recalled exam questions.
 
+### PCET-30-01 — PCET Certified Entry-Level Tester with Python
+
+Resource details from the [PCET-30-01 guide](../guides/PCET-30-01-python-certified-entry-level-tester.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list and is not intended to be consumed in full. Use one testing foundation, write tests for your own Python project, and use practice to find conceptual gaps.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [PCET syllabus](https://pythoninstitute.org/pcet-exam-syllabus) | Public official blueprint; code/heading conflicts recorded | Author planning budget: 2–3 hours to map all 22 objectives |
+| [Python for Testing 101](https://edube.org/study/pt101) | Free Core lessons/module tests; USD 49 Full/Pro adds interactive work, practice assessment and diploma when checked; account required | Provider estimate: four weeks at about one hour/day; provider advertises 38 labs, not independently completed |
+| [ISTQB Foundation overview](https://www.istqb.org/certifications/certified-tester-foundation-level) | Public overview and syllabus link; CTFL is a broader, different exam; linked PDF not read here | Author planning budget: 8–15 selected hours; no verified course runtime |
+| [Python 3.13 unittest](https://docs.python.org/3.13/library/unittest.html) | Public primary reference; selected contracts reviewed | Author planning budget: 5–10 hours with original coding |
+| [Software Testing, 2nd ed.](https://www.oreilly.com/library/view/software-testing-2nd/9780134698298/) | Prior paid-book lead; page automation-blocked and present access/contents unverified | No verified runtime; optional after checking contents and access |
+
+The complete public PT101 outline describes beginner-level testing with basic Python recommended and no formal prerequisite. Free Core and paid interactive features are different entitlements. Its full practice assessment does not establish availability of the separate dedicated PCET practice kit. The complete ISTQB overview identifies CTFL 4.0 and a 4.0.1 syllabus download; its question count, timing and passing rule belong to CTFL and must not replace PCET's rules. Neither enrolled lessons nor linked sample questions were accessed.
+
+Verify exact course availability, entitlement, price, runtime and exam code before purchase. Author budgets are suggestions, not provider runtimes. Avoid products built around recalled certification questions.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

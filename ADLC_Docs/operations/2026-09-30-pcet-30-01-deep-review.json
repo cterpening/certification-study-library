@@ -1,0 +1,2225 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-30",
+  "exam_code": "PCET-30-01",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/PCET-30-01-python-certified-entry-level-tester.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "fe70f34f6cbfa1cc12ca7b6465afc66a7d45e3d399d457425af1d903e24e2a5c",
+  "guide_after_sha256": "bb733e8abb5f071d0bc1c648f9da0925da8bac3793e57245576fc5fa10e73404",
+  "prior_records": {
+    "exam": {
+      "code": "PCET-30-01",
+      "level": "beginner",
+      "vendor_id": "python-institute",
+      "title": "PCET Certified Entry-Level Tester with Python",
+      "status": "active",
+      "study_guide_url": "https://pythoninstitute.org/pcet-exam-syllabus",
+      "guide_path": "guides/PCET-30-01-python-certified-entry-level-tester.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite is published. Basic Python and testing knowledge or ISTQB Foundation-level experience is recommended. Practice requirements-to-risk test design, levels and types, test doubles, reviews and static analysis, coverage interpretation, behavior-preserving refactoring, debugging, assertions and unittest. The official header/alignment and credential page say PCET-30-01 while introductory syllabus prose says 30-02; verify the purchased code."
+    },
+    "review": {
+      "id": "pcet-30-01-2026-09-02-source-validation",
+      "exam_code": "PCET-30-01",
+      "guide_path": "guides/PCET-30-01-python-certified-entry-level-tester.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/pcet-30-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "2ba098e2104bb457258687cdcd07afcc3a531ab146c27b0022a9bebb5d793aec",
+      "objective_coverage": [
+        {
+          "objective_group": "Core Software Testing Concepts (17.1%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated lab"
+          ]
+        },
+        {
+          "objective_group": "Software Testing Types, Levels, and Processes (22.9%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated lab"
+          ]
+        },
+        {
+          "objective_group": "Static Analysis, Dynamic Testing, and Code Refactoring (28.6%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated lab"
+          ]
+        },
+        {
+          "objective_group": "Debugging, Assertions, and Testing Techniques (31.4%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated lab"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 7,
+        "reachable": 6,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All four PCET blocks are mapped through testing principles, levels and types, the test process and doubles, reviews and static analysis, coverage and behavior-preserving refactoring, debugging, assertions, unittest and test-design techniques. The integrated lab and original checks require risk-based evidence. The official 30-01 header/alignment versus 30-02 introductory-text inconsistency and the still-in-development official practice test are explicit. O'Reilly is automation-blocked, not missing. No recalled/live item, answer dump or copied course question is used."
+    },
+    "sources": [
+      {
+        "id": "pcet-30-01-syllabus",
+        "title": "PCET-30-01 Exam Syllabus",
+        "url": "https://pythoninstitute.org/pcet-exam-syllabus",
+        "publisher": "OpenEDG Python Institute",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCET-30-01"
+        ],
+        "notes": "Canonical four-block syllabus. Header and alignment say PCET-30-01 while introductory prose says PCET-30-02; preserve this source inconsistency."
+      },
+      {
+        "id": "pcet-certification-page",
+        "title": "PCET Certified Entry-Level Tester with Python",
+        "url": "https://pythoninstitute.org/pcet",
+        "publisher": "OpenEDG Python Institute",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCET-30-01"
+        ],
+        "notes": "Current exam code, logistics, validity, cost, retake policy, official course and in-development practice-test status."
+      },
+      {
+        "id": "openedg-python-testing-101",
+        "title": "Python for Testing 101",
+        "url": "https://edube.org/study/pt101",
+        "publisher": "OpenEDG Python Institute / Edube",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCET-30-01"
+        ],
+        "notes": "Free officially aligned beginner course; verify current runtime after login."
+      },
+      {
+        "id": "python-logging-documentation",
+        "title": "Python Logging Documentation",
+        "url": "https://docs.python.org/3/library/logging.html",
+        "publisher": "Python Software Foundation",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCET-30-01"
+        ],
+        "notes": "Primary standard-library documentation for observable diagnostic evidence."
+      },
+      {
+        "id": "python-unittest-documentation",
+        "title": "Python unittest Documentation",
+        "url": "https://docs.python.org/3/library/unittest.html",
+        "publisher": "Python Software Foundation",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCET-30-01",
+          "PCAT-31-01"
+        ],
+        "notes": "Primary standard-library documentation for test cases, fixtures, assertions and test doubles."
+      },
+      {
+        "id": "istqb-foundation-certification",
+        "title": "ISTQB Certified Tester Foundation Level",
+        "url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+        "publisher": "ISTQB",
+        "authority_class": 1,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCET-30-01"
+        ],
+        "notes": "Primary ISTQB certification and syllabus reference recommended by the PCET page; broader and distinct from the Python Institute exam."
+      },
+      {
+        "id": "oreilly-software-testing-second",
+        "title": "Software Testing, 2nd Edition",
+        "url": "https://www.oreilly.com/library/view/software-testing-2nd/9780134698298/",
+        "publisher": "O'Reilly / Pearson",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCET-30-01"
+        ],
+        "notes": "Broad testing foundation. Select 15–25 hours mapped to the active blueprint and confirm access."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "ca70a517542095fbd0dce39edaf59a1e7ef54a3a648d3199e9980c531f9d941e",
+      "guide_sections": [
+        "1. Core testing concepts — 17.1%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "fb7b4e8542dfbf5fc1917e7e47e71d3e96c13be930c89b8ecf2447d0b4fddecb",
+      "guide_sections": [
+        "1. Core testing concepts — 17.1%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "2dddd1cd4fdb3f51f0d8fd0a282e07d966db92af051f1da5c5d4e47391baefdb",
+      "guide_sections": [
+        "1. Core testing concepts — 17.1%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "dac8c402f04ebe37c3209f8abea95aec70d3d7b8c1f13d434cdce2c8b2faf3ba",
+      "guide_sections": [
+        "1. Core testing concepts — 17.1%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "10e8951499f73d554a5310ae21cb071b4ccd4476d505860467f0887b6efe632e",
+      "guide_sections": [
+        "2. Types, levels, processes, and doubles — 22.9%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "cbc73fe69eec2d9755800c94812e9f448145699f7fe0c615ded5d4baf9a325a0",
+      "guide_sections": [
+        "2. Types, levels, processes, and doubles — 22.9%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "8f3e2b1db91d20d19d16875192b7a47be22bdb291b782d46999cde0f55f2ba92",
+      "guide_sections": [
+        "2. Types, levels, processes, and doubles — 22.9%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "18719f678287c5b34edffa202488e8ee22547027f9085fed2baaddfc11a39c0c",
+      "guide_sections": [
+        "2. Types, levels, processes, and doubles — 22.9%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "5a0b4e9ee214ae758011432eb47c3e5ac0b6adf9d448d072bdafb0d65e0eaba0",
+      "guide_sections": [
+        "2. Types, levels, processes, and doubles — 22.9%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "297a06cd63c03f9d5c362892004bca70c5438c0aaff3ba0c9c150e408da39ca3",
+      "guide_sections": [
+        "2. Types, levels, processes, and doubles — 22.9%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "d3358c1c42e5c76eddb20c23d7d4923d148680c87d39c57e8a7bfdc40adb9cf2",
+      "guide_sections": [
+        "3. Static/dynamic testing, coverage, and refactoring — 28.6%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "e0e6586d2996e6f0ec84138ab8d0539db29cea676e77550ad374214c07d08b72",
+      "guide_sections": [
+        "3. Static/dynamic testing, coverage, and refactoring — 28.6%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "14e9448b4b0826c54963f33d960e08bad18839d7b3942383c1d980c459a011ca",
+      "guide_sections": [
+        "3. Static/dynamic testing, coverage, and refactoring — 28.6%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "a6816d8d48261b28ac93b6fcaa254f1f70996611a02fe16545797940002adaf6",
+      "guide_sections": [
+        "3. Static/dynamic testing, coverage, and refactoring — 28.6%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "89dd2ef15a6c0fce1e6eb8ce32493319070ffda22628f3066567a0abdc476dda",
+      "guide_sections": [
+        "3. Static/dynamic testing, coverage, and refactoring — 28.6%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "bcc619af372a2d14cf892058dc2db7cf205f65f2ed046043cd48862dcae20dc8",
+      "guide_sections": [
+        "3. Static/dynamic testing, coverage, and refactoring — 28.6%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "a1c665a83fcbe695fb367d103ab43ce88969f316928551d1abf99dbb8c676cbb",
+      "guide_sections": [
+        "4. Debugging, assertions, and test techniques — 31.4%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "cb7ebaaf9671d162bdefe29d8c62a38d288d780258ef6077fcc3c6bca6c6a89e",
+      "guide_sections": [
+        "4. Debugging, assertions, and test techniques — 31.4%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "aa9fc58622ed7ab8bbf04c743e161168bb4689b46c88ddefdfaa8a2d9112fe1b",
+      "guide_sections": [
+        "4. Debugging, assertions, and test techniques — 31.4%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "3e024963a195ec176de5de8a672b67b4a3d9c7637205241edef0e32a1f0edd5a",
+      "guide_sections": [
+        "4. Debugging, assertions, and test techniques — 31.4%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "ea85d10c394ce0e8025105b141ee47ee6938d93654a4f1202d3d65d970a3cb55",
+      "guide_sections": [
+        "4. Debugging, assertions, and test techniques — 31.4%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "daa06978242953722a7e8f75d49876e431426f61f3d04f61cd1f13cea294fe5a",
+      "guide_sections": [
+        "4. Debugging, assertions, and test techniques — 31.4%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [
+      "PCET-30-01"
+    ],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "PCET-30-01",
+        "title": "PCET Certified Entry-Level Tester with Python",
+        "url": "https://pythoninstitute.org/pcet-exam-syllabus",
+        "guide_path": "guides/PCET-30-01-python-certified-entry-level-tester.md",
+        "snapshot_path": "data\\objective-snapshots\\pcet-30-01-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\pcet-30-01-official-status.json",
+        "status": "error",
+        "changed": false,
+        "error": "URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 20,
+    "reachable": 16,
+    "access_blocked": 1,
+    "missing_or_error": 3
+  },
+  "source_fetches": [
+    {
+      "id": "pcet-30-01-syllabus",
+      "url": "https://pythoninstitute.org/pcet-exam-syllabus",
+      "checked_at": "2026-09-30T03:41:23.275682+00:00",
+      "health": {
+        "id": "pcet-30-01-syllabus",
+        "url": "https://pythoninstitute.org/pcet-exam-syllabus",
+        "checked_at": "2026-09-30T03:41:23+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pcet-exam-syllabus",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "pcet-certification-page",
+      "url": "https://pythoninstitute.org/pcet",
+      "checked_at": "2026-09-30T03:41:23.276402+00:00",
+      "health": {
+        "id": "pcet-certification-page",
+        "url": "https://pythoninstitute.org/pcet",
+        "checked_at": "2026-09-30T03:41:23+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pcet",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "openedg-python-testing-101",
+      "url": "https://edube.org/study/pt101",
+      "checked_at": "2026-09-30T03:41:23.276875+00:00",
+      "health": {
+        "id": "openedg-python-testing-101",
+        "url": "https://edube.org/study/pt101",
+        "checked_at": "2026-09-30T03:41:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edube.org/study/pt101",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Edube Interactive :: Python for Testing 101 (PT101)",
+        "canonical_url": "https://edube.org/study/pt101",
+        "duration_signals": [
+          "1 hour"
+        ],
+        "signal_fingerprint": "1c2eb8f92e80a15c261d764143e6eb82ef0d4fafd65d79c24d8576fe1eb5453e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edube.org/study/pt101",
+      "sha256": "d1c779323e1b53d58231949f54ce428b4d8e3af442629b00ee236ddf05fdf004",
+      "text_characters": 4205
+    },
+    {
+      "id": "python-logging-documentation",
+      "url": "https://docs.python.org/3/library/logging.html",
+      "checked_at": "2026-09-30T03:41:24.179837+00:00",
+      "health": {
+        "id": "python-logging-documentation",
+        "url": "https://docs.python.org/3/library/logging.html",
+        "checked_at": "2026-09-30T03:41:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3/library/logging.html",
+        "content_type": "text/html",
+        "page_title": "logging — Logging facility for Python",
+        "canonical_url": "https://docs.python.org/3/library/logging.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3f4d376d117935596fa9b729cbbfb1fa1d9a8938d2048fb9871383140bf922f3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3/library/logging.html",
+      "sha256": "6090b34a466aebbf1fcb2e5aec69b46ff09700b6a7286b9fa604de81f890bf2c",
+      "text_characters": 56941
+    },
+    {
+      "id": "python-unittest-documentation",
+      "url": "https://docs.python.org/3/library/unittest.html",
+      "checked_at": "2026-09-30T03:41:24.591620+00:00",
+      "health": {
+        "id": "python-unittest-documentation",
+        "url": "https://docs.python.org/3/library/unittest.html",
+        "checked_at": "2026-09-30T03:41:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3/library/unittest.html",
+        "content_type": "text/html",
+        "page_title": "unittest — Unit testing framework",
+        "canonical_url": "https://docs.python.org/3/library/unittest.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6a286e7aa468cc0eb06774c71c8ec225b22a69cfdb24ec7a6cd41bd03c5e6ff1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3/library/unittest.html",
+      "sha256": "db03dde91e8abed3a64b1ce736c474102dd7a1c0436683bd1a6c6db5285e0d8e",
+      "text_characters": 81922
+    },
+    {
+      "id": "istqb-foundation-certification",
+      "url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+      "checked_at": "2026-09-30T03:41:25.245801+00:00",
+      "health": {
+        "id": "istqb-foundation-certification",
+        "url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+        "checked_at": "2026-09-30T03:41:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Certified Tester Foundation Level (CTFL) v4.0 Overview",
+        "canonical_url": "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/",
+        "duration_signals": [],
+        "signal_fingerprint": "db537d0775775ccbcf7d131b712275f08f97c4476a21fca42631d246cb6036c8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/",
+      "sha256": "1a55b4fcccd348b7d291070c743b56f26892beb71c5363c482672ddd17116060",
+      "text_characters": 5023
+    },
+    {
+      "id": "oreilly-software-testing-second",
+      "url": "https://www.oreilly.com/library/view/software-testing-2nd/9780134698298/",
+      "checked_at": "2026-09-30T03:41:27.159133+00:00",
+      "health": {
+        "id": "oreilly-software-testing-second",
+        "url": "https://www.oreilly.com/library/view/software-testing-2nd/9780134698298/",
+        "checked_at": "2026-09-30T03:41:27+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/software-testing-2nd/9780134698298/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "pcet-testing-policies",
+      "url": "https://pythoninstitute.org/pcet-testing-policies",
+      "checked_at": "2026-09-30T03:45:26.582290+00:00",
+      "health": {
+        "id": "pcet-testing-policies",
+        "url": "https://pythoninstitute.org/pcet-testing-policies",
+        "checked_at": "2026-09-30T03:45:26+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pcet-testing-policies",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "python313-unittest",
+      "url": "https://docs.python.org/3.13/library/unittest.html",
+      "checked_at": "2026-09-30T03:45:26.583808+00:00",
+      "health": {
+        "id": "python313-unittest",
+        "url": "https://docs.python.org/3.13/library/unittest.html",
+        "checked_at": "2026-09-30T03:45:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/unittest.html",
+        "content_type": "text/html",
+        "page_title": "unittest — Unit testing framework",
+        "canonical_url": "https://docs.python.org/3/library/unittest.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6a286e7aa468cc0eb06774c71c8ec225b22a69cfdb24ec7a6cd41bd03c5e6ff1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/unittest.html",
+      "sha256": "98d492990f8ada09ca83b2071d8402bf4bc9011fe344fc47f20b8c56533f872d",
+      "text_characters": 80630
+    },
+    {
+      "id": "python313-unittest-mock",
+      "url": "https://docs.python.org/3.13/library/unittest.mock.html",
+      "checked_at": "2026-09-30T03:45:26.584487+00:00",
+      "health": {
+        "id": "python313-unittest-mock",
+        "url": "https://docs.python.org/3.13/library/unittest.mock.html",
+        "checked_at": "2026-09-30T03:45:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/unittest.mock.html",
+        "content_type": "text/html",
+        "page_title": "unittest.mock — mock object library",
+        "canonical_url": "https://docs.python.org/3/library/unittest.mock.html",
+        "duration_signals": [],
+        "signal_fingerprint": "27088b859500a55ab1226876aacfedd3c819a3d329507b958dd2b099c110eea0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/unittest.mock.html",
+      "sha256": "c488418329a28c364e428a0d5df28dd664f229de76d3ae5c5c1fbbf6b334152e",
+      "text_characters": 90067
+    },
+    {
+      "id": "python313-logging",
+      "url": "https://docs.python.org/3.13/library/logging.html",
+      "checked_at": "2026-09-30T03:45:27.921946+00:00",
+      "health": {
+        "id": "python313-logging",
+        "url": "https://docs.python.org/3.13/library/logging.html",
+        "checked_at": "2026-09-30T03:45:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/logging.html",
+        "content_type": "text/html",
+        "page_title": "logging — Logging facility for Python",
+        "canonical_url": "https://docs.python.org/3/library/logging.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3f4d376d117935596fa9b729cbbfb1fa1d9a8938d2048fb9871383140bf922f3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/logging.html",
+      "sha256": "cc184e2a1313a1a8f3e990414d7ebc7cc413841abcb47ec166ebd69228fbfe5f",
+      "text_characters": 56915
+    },
+    {
+      "id": "python313-pdb",
+      "url": "https://docs.python.org/3.13/library/pdb.html",
+      "checked_at": "2026-09-30T03:45:28.247253+00:00",
+      "health": {
+        "id": "python313-pdb",
+        "url": "https://docs.python.org/3.13/library/pdb.html",
+        "checked_at": "2026-09-30T03:45:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/pdb.html",
+        "content_type": "text/html",
+        "page_title": "pdb — The Python Debugger",
+        "canonical_url": "https://docs.python.org/3/library/pdb.html",
+        "duration_signals": [],
+        "signal_fingerprint": "7921536daec63726e9c81b6f2230fa07ece1c09702d4d3a9f519c1a7c10ef506",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/pdb.html",
+      "sha256": "b8e62795af4212ce523ee4786eae82ab604eeb7ca0f4b9d946fcf2e17fa5683c",
+      "text_characters": 23137
+    },
+    {
+      "id": "python313-simple-statements",
+      "url": "https://docs.python.org/3.13/reference/simple_stmts.html",
+      "checked_at": "2026-09-30T03:45:28.770644+00:00",
+      "health": {
+        "id": "python313-simple-statements",
+        "url": "https://docs.python.org/3.13/reference/simple_stmts.html",
+        "checked_at": "2026-09-30T03:45:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/reference/simple_stmts.html",
+        "content_type": "text/html",
+        "page_title": "7. Simple statements",
+        "canonical_url": "https://docs.python.org/3/reference/simple_stmts.html",
+        "duration_signals": [],
+        "signal_fingerprint": "1211fe691d9c723a72858a770e99cbf130b61ae9ae99d91364c3a715b3737729",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/reference/simple_stmts.html",
+      "sha256": "a6d9766c7a3b55c037ae0ded86dfde6d573c075e42833e8dc84c4656027db436",
+      "text_characters": 34443
+    },
+    {
+      "id": "pep-8-style-guide",
+      "url": "https://peps.python.org/pep-0008/",
+      "checked_at": "2026-09-30T03:45:28.871726+00:00",
+      "health": {
+        "id": "pep-8-style-guide",
+        "url": "https://peps.python.org/pep-0008/",
+        "checked_at": "2026-09-30T03:45:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://peps.python.org/pep-0008/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "PEP 8 – Style Guide for Python Code | peps.python.org",
+        "canonical_url": "https://peps.python.org/pep-0008/",
+        "duration_signals": [],
+        "signal_fingerprint": "2aa97037b316b7fa38aedd940936d7d4635eeb65363312f92e41470ffbb8af08",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://peps.python.org/pep-0008/",
+      "sha256": "9f4e669bee0fab4b1b0e60321b9ca8822b2f1e61a6ebe0243760294eaba0248e",
+      "text_characters": 44302
+    },
+    {
+      "id": "coverage-branch",
+      "url": "https://coverage.readthedocs.io/en/latest/branch.html",
+      "checked_at": "2026-09-30T03:45:29.295347+00:00",
+      "health": {
+        "id": "coverage-branch",
+        "url": "https://coverage.readthedocs.io/en/latest/branch.html",
+        "checked_at": "2026-09-30T03:45:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://coverage.readthedocs.io/en/latest/branch.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Branch coverage measurement — Coverage.py 7.16.2 documentation",
+        "canonical_url": "https://coverage.readthedocs.io/en/latest/branch.html",
+        "duration_signals": [],
+        "signal_fingerprint": "1f95430d0fdd9f8922fb10888de899c082955f800e04cd5da6188ec0138dd6fc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://coverage.readthedocs.io/en/latest/branch.html",
+      "sha256": "7e45b4c8b2ddaf60ccece1a69f3dc9b8fda9e1e9a88a0a90ff845906d7ebb2fb",
+      "text_characters": 6232
+    },
+    {
+      "id": "coverage-api",
+      "url": "https://coverage.readthedocs.io/en/latest/api_coverage.html",
+      "checked_at": "2026-09-30T03:45:29.537894+00:00",
+      "health": {
+        "id": "coverage-api",
+        "url": "https://coverage.readthedocs.io/en/latest/api_coverage.html",
+        "checked_at": "2026-09-30T03:45:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://coverage.readthedocs.io/en/latest/api_coverage.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "The Coverage class — Coverage.py 7.16.2 documentation",
+        "canonical_url": "https://coverage.readthedocs.io/en/latest/api_coverage.html",
+        "duration_signals": [],
+        "signal_fingerprint": "542034cb0c30e1e5b52337ec2a3d6247ee3c47f9ac6a9ea01a7d3c1b112f5663",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://coverage.readthedocs.io/en/latest/api_coverage.html",
+      "sha256": "5b747ea0a0cf43dd0c115508b988aaaf4b5d8e4e17e92e82a423ee467cfaea27",
+      "text_characters": 19195
+    },
+    {
+      "id": "coverage-json",
+      "url": "https://coverage.readthedocs.io/en/latest/commands/cmd_json.html",
+      "checked_at": "2026-09-30T03:45:29.654348+00:00",
+      "health": {
+        "id": "coverage-json",
+        "url": "https://coverage.readthedocs.io/en/latest/commands/cmd_json.html",
+        "checked_at": "2026-09-30T03:45:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://coverage.readthedocs.io/en/latest/commands/cmd_json.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "JSON reporting: coverage json — Coverage.py 7.16.2 documentation",
+        "canonical_url": "https://coverage.readthedocs.io/en/latest/commands/cmd_json.html",
+        "duration_signals": [],
+        "signal_fingerprint": "48c158c91adfc53c6a981420fc8bbb60ec96ee6d9ca39ffb8332487b9c8f81ab",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://coverage.readthedocs.io/en/latest/commands/cmd_json.html",
+      "sha256": "5956aa0c7c9154afb2d79cc026e470388cd27359199c0ab6f99df8a802cc5dc6",
+      "text_characters": 2704
+    },
+    {
+      "id": "pylint-running",
+      "url": "https://pylint.readthedocs.io/en/latest/user_guide/usage/run.html",
+      "checked_at": "2026-09-30T03:45:30.022420+00:00",
+      "health": {
+        "id": "pylint-running",
+        "url": "https://pylint.readthedocs.io/en/latest/user_guide/usage/run.html",
+        "checked_at": "2026-09-30T03:45:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://pylint.readthedocs.io/en/latest/user_guide/usage/run.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Running Pylint - Pylint 4.2.0-dev0 documentationContentsMenuExpandLight modeDark modeAuto light/dark, in light modeAuto light/dark, in dark mode",
+        "canonical_url": "https://pylint.readthedocs.io/en/latest/user_guide/usage/run.html",
+        "duration_signals": [],
+        "signal_fingerprint": "de89c667fc85f87397360c06f0a6d03c5f81590e228f771b2fab3866bb30eab8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://pylint.readthedocs.io/en/latest/user_guide/usage/run.html",
+      "sha256": "a416271dcc11168a3b1644bf59a5c4c0abece041f72c85ac4674da14ace373a6",
+      "text_characters": 31599
+    },
+    {
+      "id": "flake8-quickstart",
+      "url": "https://flake8.pycqa.org/en/latest/user/quickstart.html",
+      "checked_at": "2026-09-30T03:45:30.087419+00:00",
+      "health": {
+        "id": "flake8-quickstart",
+        "url": "https://flake8.pycqa.org/en/latest/user/quickstart.html",
+        "checked_at": "2026-09-30T03:45:30+00:00",
+        "status": "missing",
+        "http_status": 404,
+        "final_url": "https://flake8.pycqa.org/en/latest/user/quickstart.html",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Not Found"
+      }
+    },
+    {
+      "id": "ruff-linter",
+      "url": "https://docs.astral.sh/ruff/linter/",
+      "checked_at": "2026-09-30T03:45:30.662829+00:00",
+      "health": {
+        "id": "ruff-linter",
+        "url": "https://docs.astral.sh/ruff/linter/",
+        "checked_at": "2026-09-30T03:45:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.astral.sh/ruff/linter/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "The Ruff Linter | Ruff",
+        "canonical_url": "https://docs.astral.sh/ruff/linter/",
+        "duration_signals": [],
+        "signal_fingerprint": "fde25cc7fc94fbc1bd97c5106f56cd5620250a7ac06438760b9e5dd4a3200d59",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.astral.sh/ruff/linter/",
+      "sha256": "babdaa8bad054827a1078050909fed1107cfe2a9c784da5c0edfa000646e43b4",
+      "text_characters": 21957
+    },
+    {
+      "id": "flake8-stable-documentation",
+      "url": "https://flake8.pycqa.org/en/stable/index.html",
+      "checked_at": "2026-09-30T03:49:03.451972+00:00",
+      "health": {
+        "id": "flake8-stable-documentation",
+        "url": "https://flake8.pycqa.org/en/stable/index.html",
+        "checked_at": "2026-09-30T03:49:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://flake8.pycqa.org/en/stable/index.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Flake8: Your Tool For Style Guide Enforcement — flake8 7.4.1 documentation",
+        "canonical_url": "https://flake8.pycqa.org/en/stable/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "ac2891270bff07e98a5a2dd4d2775aaeb0addeb4f81ef2a98527c23ed7291d5d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://flake8.pycqa.org/en/stable/index.html",
+      "sha256": "bfa8d4eddd772dea7bbf43953df2bcd67310b017715c80fc92c3e427e2c49508",
+      "text_characters": 3589
+    }
+  ],
+  "added_source_ids": [
+    "pcet-testing-policies",
+    "python313-unittest",
+    "python313-unittest-mock",
+    "python313-pdb",
+    "python313-simple-statements",
+    "coverage-branch",
+    "coverage-api",
+    "coverage-json",
+    "pylint-running",
+    "flake8-quickstart",
+    "flake8-stable-documentation",
+    "ruff-linter"
+  ],
+  "findings": [
+    {
+      "id": "pcet3001-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Coverage percentages lacked an observed oracle counterexample",
+      "url": "https://coverage.readthedocs.io/en/latest/branch.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCET-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "One original member case executes 5/5 statements but 1/2 branches; the wrong-value mutant reaches 100% while passing type-only assertions.",
+      "recommendation": "Add exact original measurement, explicit denominator and independent 100/80 oracle that detects 81; bound the claim to the measured module.",
+      "disposition": "applied",
+      "source_id": "coverage-branch",
+      "resolution": "Add exact original measurement, explicit denominator and independent 100/80 oracle that detects 81; bound the claim to the measured module."
+    },
+    {
+      "id": "pcet3001-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Lab wording incorrectly asked for the least suitable double",
+      "url": "https://docs.python.org/3.13/library/unittest.mock.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCET-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The prior lab said least suitable, and no executable double/call-contract evidence was included.",
+      "recommendation": "Correct to least powerful suitable; add dummy, stub, working fake, spy, autospec and restored lookup patch with explicit scope limits.",
+      "disposition": "applied",
+      "source_id": "python313-unittest-mock",
+      "resolution": "Correct to least powerful suitable; add dummy, stub, working fake, spy, autospec and restored lookup patch with explicit scope limits."
+    },
+    {
+      "id": "pcet3001-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Mandatory validation and debugging needed executable evidence",
+      "url": "https://docs.python.org/3.13/reference/simple_stmts.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCET-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Assert disappears under optimization; the original exclusive upper bound rejects 10.",
+      "recommendation": "Record actual normal/optimized validator outputs and scripted pdb/print evidence; explicit utility validation and TestCase assertions pass both modes.",
+      "disposition": "applied",
+      "source_id": "python313-simple-statements",
+      "resolution": "Record actual normal/optimized validator outputs and scripted pdb/print evidence; explicit utility validation and TestCase assertions pass both modes."
+    },
+    {
+      "id": "pcet3001-deep-4",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Course access and runtime were overstated",
+      "url": "https://edube.org/study/pt101",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCET-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Public PT101 distinguishes free Core from USD 49 Full/Pro, estimates four weeks at about one hour/day and advertises 38 labs; prior guide called the full course free with an unsupported duration.",
+      "recommendation": "Correct access and provider estimate, label author budgets, distinguish course assessment from dedicated PCET practice and remove blocked-book runtime.",
+      "disposition": "applied",
+      "source_id": "openedg-python-testing-101",
+      "resolution": "Correct access and provider estimate, label author budgets, distinguish course assessment from dedicated PCET practice and remove blocked-book runtime."
+    },
+    {
+      "id": "pcet3001-deep-5",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Publisher version and heading conflicts persist",
+      "url": "https://pythoninstitute.org/pcet-exam-syllabus",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCET-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Header/alignment and credential page say 30-01; introductory prose says 30-02/data analysis and Objective 1.4 has a data-storage heading over testing principles.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "pcet3001-deep-6",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Named static tools and independent practice remain unexecuted",
+      "url": "https://pylint.readthedocs.io/en/latest/user_guide/usage/run.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCET-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Pylint and Flake8 are absent. Ruff selected-rule evidence cannot demonstrate those tools, all broader labs or human review.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "pcet-certification-page",
+      "review": "Complete current public credential page and canonical syllabus read; no unseen release feed, authenticated product or enrolled-content claim."
+    }
+  ],
+  "labs": {
+    "proposed": 10,
+    "fully_completed_proposed_labs": 0,
+    "public_files": 3,
+    "execution_runs": 4,
+    "test_methods_per_mode": 25,
+    "probe_checks_per_mode": 55,
+    "local_validation": {
+      "passed": true,
+      "versions": {
+        "python": "3.13.14",
+        "coverage": "7.15.4",
+        "ruff": "ruff 0.16.4"
+      },
+      "platform": "Windows-11-10.0.26200-SP0",
+      "public_files": [
+        {
+          "filename": "utility.py",
+          "sha256": "486509fbc3b5489bc3556c9b1c386fbccaf179c0a26634844f7a72ed9a8040d3",
+          "bytes": 3339,
+          "syntax_checked": true,
+          "executed": true
+        },
+        {
+          "filename": "test_utility.py",
+          "sha256": "4957e792e920f10206d18f7eb0285092edfbb71f0b8cd9c085a4791e74844fb7",
+          "bytes": 8731,
+          "syntax_checked": true,
+          "executed": true
+        },
+        {
+          "filename": "probes.py",
+          "sha256": "43eb5a41311db81d7336eb41b1b1e4a32baa7128ae44bcd3deadaa4c4b310b2e",
+          "bytes": 11613,
+          "syntax_checked": true,
+          "executed": true
+        }
+      ],
+      "test_methods_per_mode": 25,
+      "probe_checks_per_mode": 55,
+      "execution_runs": 4,
+      "results": [
+        {
+          "program": "unittest",
+          "command": [
+            "python",
+            "-B",
+            "-Werror",
+            "-m",
+            "unittest",
+            "-v",
+            "test_utility"
+          ],
+          "started_at": "2026-09-30T04:09:40.685490+00:00",
+          "elapsed_seconds": 0.153,
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": "test_invalid_item_propagates (test_utility.FeeTests.test_invalid_item_propagates) ... ok\ntest_outside_partitions (test_utility.FeeTests.test_outside_partitions) ... ok\ntest_priority_boundaries (test_utility.FeeTests.test_priority_boundaries) ... ok\ntest_priority_is_boolean (test_utility.FeeTests.test_priority_is_boolean) ... ok\ntest_regular_boundaries (test_utility.FeeTests.test_regular_boundaries) ... ok\ntest_validity_priority_decision_table (test_utility.FeeTests.test_validity_priority_decision_table) ... ok\ntest_wrong_quantity_types (test_utility.FeeTests.test_wrong_quantity_types) ... ok\ntest_zero_one_many_loop_iterations (test_utility.FeeTests.test_zero_one_many_loop_iterations) ... ok\ntest_autospec_mock_and_call_contract (test_utility.ReceiptTests.test_autospec_mock_and_call_contract) ... ok\ntest_client_failure_is_not_success_or_retry (test_utility.ReceiptTests.test_client_failure_is_not_success_or_retry) ... ok\ntest_dummy_collaborators_not_used_on_invalid_input (test_utility.ReceiptTests.test_dummy_collaborators_not_used_on_invalid_input) ... ok\ntest_patch_lookup_and_restore (test_utility.ReceiptTests.test_patch_lookup_and_restore) ... ok\ntest_spy_wraps_real_fake_operation (test_utility.ReceiptTests.test_spy_wraps_real_fake_operation) ... ok\ntest_stub_clock_and_working_fake (test_utility.ReceiptTests.test_stub_clock_and_working_fake) ... ok\ntest_locked_success_cannot_unlock (test_utility.StateTests.test_locked_success_cannot_unlock) ... ok\ntest_new_instance_is_independent (test_utility.StateTests.test_new_instance_is_independent) ... ok\ntest_only_authorized_reset_unlocks (test_utility.StateTests.test_only_authorized_reset_unlocks) ... ok\ntest_success_before_lock_resets_count (test_utility.StateTests.test_success_before_lock_resets_count) ... ok\ntest_three_consecutive_failures_lock (test_utility.StateTests.test_three_consecutive_failures_lock) ... ok\ntest_wrong_event_types_do_not_mutate (test_utility.StateTests.test_wrong_event_types_do_not_mutate) ... ok\ntest_empty_list (test_utility.StreamTests.test_empty_list) ... ok\ntest_invalid_json_and_shape (test_utility.StreamTests.test_invalid_json_and_shape) ... ok\ntest_invalid_json_item (test_utility.StreamTests.test_invalid_json_item) ... ok\ntest_reader_failure (test_utility.StreamTests.test_reader_failure) ... ok\ntest_working_in_memory_file (test_utility.StreamTests.test_working_in_memory_file) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 0.004s\n\nOK\n",
+          "optimized": false,
+          "test_methods": 25
+        },
+        {
+          "program": "probes",
+          "command": [
+            "python",
+            "-B",
+            "-Werror",
+            "probes.py"
+          ],
+          "started_at": "2026-09-30T04:09:40.838667+00:00",
+          "elapsed_seconds": 0.571,
+          "exit_code": 0,
+          "stdout": "{\n  \"python\": \"3.13.14\",\n  \"coverage\": \"7.15.4\",\n  \"coverage_limits\": {\n    \"one_input_weak_assertion\": {\n      \"summary\": {\n        \"covered_lines\": 5,\n        \"num_statements\": 5,\n        \"percent_covered\": 85.71428571428571,\n        \"percent_covered_display\": \"86\",\n        \"missing_lines\": 0,\n        \"excluded_lines\": 0,\n        \"percent_statements_covered\": 100.0,\n        \"percent_statements_covered_display\": \"100\",\n        \"num_branches\": 2,\n        \"num_partial_branches\": 1,\n        \"covered_branches\": 1,\n        \"missing_branches\": 1,\n        \"percent_branches_covered\": 50.0,\n        \"percent_branches_covered_display\": \"50\"\n      },\n      \"executed_lines\": [\n        4,\n        5,\n        6,\n        7,\n        8\n      ],\n      \"missing_lines\": [],\n      \"missing_branches\": [\n        [\n          6,\n          8\n        ]\n      ],\n      \"values\": [\n        80\n      ],\n      \"source_sha256\": \"c15e5f19e20a09f793f3afa052caa820078d7851badb3ed5e7d20ca405c5d476\"\n    },\n    \"both_inputs_weak_assertion\": {\n      \"summary\": {\n        \"covered_lines\": 5,\n        \"num_statements\": 5,\n        \"percent_covered\": 100.0,\n        \"percent_covered_display\": \"100\",\n        \"missing_lines\": 0,\n        \"excluded_lines\": 0,\n        \"percent_statements_covered\": 100.0,\n        \"percent_statements_covered_display\": \"100\",\n        \"num_branches\": 2,\n        \"num_partial_branches\": 0,\n        \"covered_branches\": 2,\n        \"missing_branches\": 0,\n        \"percent_branches_covered\": 100.0,\n        \"percent_branches_covered_display\": \"100\"\n      },\n      \"executed_lines\": [\n        4,\n        5,\n        6,\n        7,\n        8\n      ],\n      \"missing_lines\": [],\n      \"missing_branches\": [],\n      \"values\": [\n        100,\n        80\n      ],\n      \"source_sha256\": \"c15e5f19e20a09f793f3afa052caa820078d7851badb3ed5e7d20ca405c5d476\"\n    },\n    \"mutant_both_inputs_weak_assertion\": {\n      \"summary\": {\n        \"covered_lines\": 5,\n        \"num_statements\": 5,\n        \"percent_covered\": 100.0,\n        \"percent_covered_display\": \"100\",\n        \"missing_lines\": 0,\n        \"excluded_lines\": 0,\n        \"percent_statements_covered\": 100.0,\n        \"percent_statements_covered_display\": \"100\",\n        \"num_branches\": 2,\n        \"num_partial_branches\": 0,\n        \"covered_branches\": 2,\n        \"missing_branches\": 0,\n        \"percent_branches_covered\": 100.0,\n        \"percent_branches_covered_display\": \"100\"\n      },\n      \"executed_lines\": [\n        4,\n        5,\n        6,\n        7,\n        8\n      ],\n      \"missing_lines\": [],\n      \"missing_branches\": [],\n      \"values\": [\n        100,\n        81\n      ],\n      \"source_sha256\": \"402409d6238d5d0c43397f9083b9a86d50a173717f7887ed8da04daa18f6952f\"\n    },\n    \"strong_oracle_expected_failures\": [\n      {\n        \"member\": true,\n        \"expected\": 80,\n        \"actual\": 81\n      }\n    ],\n    \"denominator\": \"This original module only; no added exclusions.\"\n  },\n  \"refactoring\": {\n    \"domain\": \"int quantity1..10 and bool priority only\",\n    \"comparisons\": 20,\n    \"limit\": \"No claim about invalid inputs or arbitrary refactors.\"\n  },\n  \"debugging\": {\n    \"print_trace\": \"quantity=10, expected=True, actual=False\\n\",\n    \"pdb_commands\": \"p quantity\\ntbreak 6\\nc\\np accepted\\nn\\nc\\n\",\n    \"pdb_transcript\": \"> <temporary>\\\\debug_target.py(5)buggy_quantity()\\n-> accepted = 1 <= quantity < 10\\n(Pdb) 10\\n(Pdb) Breakpoint 1 at <temporary>\\\\debug_target.py:6\\n(Pdb) Deleted breakpoint 1 at <temporary>\\\\debug_target.py:6\\n> <temporary>\\\\debug_target.py(6)buggy_quantity()\\n-> return accepted\\n(Pdb) False\\n(Pdb) --Return--\\n> <temporary>\\\\debug_target.py(6)buggy_quantity()->False\\n-> return accepted\\n(Pdb) \",\n    \"expected\": true,\n    \"actual\": false,\n    \"diagnosis\": \"Upper bound rejects 10; the contract includes it.\",\n    \"limit\": \"Scripted stdlib pdb, not an interactive IDE session.\"\n  },\n  \"optimization\": {\n    \"source\": \"def validate(q):\\n    assert 1 <= q <= 10\\n    return q\\ntry:\\n    print('accepted:', validate(0))\\nexcept AssertionError:\\n    print('AssertionError')\\n\",\n    \"results\": [\n      {\n        \"optimized\": false,\n        \"stdout\": \"AssertionError\"\n      },\n      {\n        \"optimized\": true,\n        \"stdout\": \"accepted: 0\"\n      }\n    ]\n  },\n  \"logging\": \"DEBUG:synthetic event 10\\nINFO:synthetic event 20\\nWARNING:synthetic event 30\\nERROR:synthetic event 40\\nCRITICAL:synthetic event 50\\n\",\n  \"static_analysis\": {\n    \"rule\": \"F401 only, isolated configuration\",\n    \"results\": {\n      \"unused_import\": {\n        \"exit_code\": 1,\n        \"codes\": [\n          \"F401\"\n        ]\n      },\n      \"wrong_value\": {\n        \"exit_code\": 0,\n        \"codes\": []\n      }\n    },\n    \"limit\": \"No Pylint/Flake8 execution or complete style audit.\"\n  },\n  \"checks\": [\n    \"temporary path inside workbook\",\n    \"partial weak type-only assertion\",\n    \"partial single measured module\",\n    \"complete weak type-only assertion\",\n    \"complete weak type-only assertion\",\n    \"complete single measured module\",\n    \"mutant weak type-only assertion\",\n    \"mutant weak type-only assertion\",\n    \"mutant single measured module\",\n    \"partial all statements ran\",\n    \"partial two branch outcomes\",\n    \"complete all statements ran\",\n    \"complete two branch outcomes\",\n    \"mutant all statements ran\",\n    \"mutant two branch outcomes\",\n    \"one branch missing despite full statement coverage\",\n    \"both original branch outcomes covered\",\n    \"both mutant branch outcomes covered\",\n    \"strong original value oracle\",\n    \"strong oracle kills the deliberately changed mutant\",\n    \"refactor oracle 1 False\",\n    \"refactor oracle 2 False\",\n    \"refactor oracle 3 False\",\n    \"refactor oracle 4 False\",\n    \"refactor oracle 5 False\",\n    \"refactor oracle 6 False\",\n    \"refactor oracle 7 False\",\n    \"refactor oracle 8 False\",\n    \"refactor oracle 9 False\",\n    \"refactor oracle 10 False\",\n    \"refactor oracle 1 True\",\n    \"refactor oracle 2 True\",\n    \"refactor oracle 3 True\",\n    \"refactor oracle 4 True\",\n    \"refactor oracle 5 True\",\n    \"refactor oracle 6 True\",\n    \"refactor oracle 7 True\",\n    \"refactor oracle 8 True\",\n    \"refactor oracle 9 True\",\n    \"refactor oracle 10 True\",\n    \"debugger reproduces off-by-one defect\",\n    \"debugger captured input, breakpoint and wrong state\",\n    \"debugger restored tracing state\",\n    \"print trace exposes contract failure\",\n    \"assert demonstration subprocess completed False\",\n    \"assert demonstration subprocess completed True\",\n    \"normal assertion enforces\",\n    \"optimization removes assertion\",\n    \"five logging levels captured\",\n    \"logger settings restored\",\n    \"unused_import lint has no tool error\",\n    \"wrong_value lint has no tool error\",\n    \"unused import detected by selected static rule\",\n    \"incorrect business value passes selected static rule\",\n    \"temporary modules/reports removed\"\n  ],\n  \"passed_checks\": 55\n}\n",
+          "stderr": "",
+          "optimized": false,
+          "checks": 55
+        },
+        {
+          "program": "unittest",
+          "command": [
+            "python",
+            "-B",
+            "-Werror",
+            "-O",
+            "-m",
+            "unittest",
+            "-v",
+            "test_utility"
+          ],
+          "started_at": "2026-09-30T04:09:41.410382+00:00",
+          "elapsed_seconds": 0.191,
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": "test_invalid_item_propagates (test_utility.FeeTests.test_invalid_item_propagates) ... ok\ntest_outside_partitions (test_utility.FeeTests.test_outside_partitions) ... ok\ntest_priority_boundaries (test_utility.FeeTests.test_priority_boundaries) ... ok\ntest_priority_is_boolean (test_utility.FeeTests.test_priority_is_boolean) ... ok\ntest_regular_boundaries (test_utility.FeeTests.test_regular_boundaries) ... ok\ntest_validity_priority_decision_table (test_utility.FeeTests.test_validity_priority_decision_table) ... ok\ntest_wrong_quantity_types (test_utility.FeeTests.test_wrong_quantity_types) ... ok\ntest_zero_one_many_loop_iterations (test_utility.FeeTests.test_zero_one_many_loop_iterations) ... ok\ntest_autospec_mock_and_call_contract (test_utility.ReceiptTests.test_autospec_mock_and_call_contract) ... ok\ntest_client_failure_is_not_success_or_retry (test_utility.ReceiptTests.test_client_failure_is_not_success_or_retry) ... ok\ntest_dummy_collaborators_not_used_on_invalid_input (test_utility.ReceiptTests.test_dummy_collaborators_not_used_on_invalid_input) ... ok\ntest_patch_lookup_and_restore (test_utility.ReceiptTests.test_patch_lookup_and_restore) ... ok\ntest_spy_wraps_real_fake_operation (test_utility.ReceiptTests.test_spy_wraps_real_fake_operation) ... ok\ntest_stub_clock_and_working_fake (test_utility.ReceiptTests.test_stub_clock_and_working_fake) ... ok\ntest_locked_success_cannot_unlock (test_utility.StateTests.test_locked_success_cannot_unlock) ... ok\ntest_new_instance_is_independent (test_utility.StateTests.test_new_instance_is_independent) ... ok\ntest_only_authorized_reset_unlocks (test_utility.StateTests.test_only_authorized_reset_unlocks) ... ok\ntest_success_before_lock_resets_count (test_utility.StateTests.test_success_before_lock_resets_count) ... ok\ntest_three_consecutive_failures_lock (test_utility.StateTests.test_three_consecutive_failures_lock) ... ok\ntest_wrong_event_types_do_not_mutate (test_utility.StateTests.test_wrong_event_types_do_not_mutate) ... ok\ntest_empty_list (test_utility.StreamTests.test_empty_list) ... ok\ntest_invalid_json_and_shape (test_utility.StreamTests.test_invalid_json_and_shape) ... ok\ntest_invalid_json_item (test_utility.StreamTests.test_invalid_json_item) ... ok\ntest_reader_failure (test_utility.StreamTests.test_reader_failure) ... ok\ntest_working_in_memory_file (test_utility.StreamTests.test_working_in_memory_file) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 0.004s\n\nOK\n",
+          "optimized": true,
+          "test_methods": 25
+        },
+        {
+          "program": "probes",
+          "command": [
+            "python",
+            "-B",
+            "-Werror",
+            "-O",
+            "probes.py"
+          ],
+          "started_at": "2026-09-30T04:09:41.602369+00:00",
+          "elapsed_seconds": 0.975,
+          "exit_code": 0,
+          "stdout": "{\n  \"python\": \"3.13.14\",\n  \"coverage\": \"7.15.4\",\n  \"coverage_limits\": {\n    \"one_input_weak_assertion\": {\n      \"summary\": {\n        \"covered_lines\": 5,\n        \"num_statements\": 5,\n        \"percent_covered\": 85.71428571428571,\n        \"percent_covered_display\": \"86\",\n        \"missing_lines\": 0,\n        \"excluded_lines\": 0,\n        \"percent_statements_covered\": 100.0,\n        \"percent_statements_covered_display\": \"100\",\n        \"num_branches\": 2,\n        \"num_partial_branches\": 1,\n        \"covered_branches\": 1,\n        \"missing_branches\": 1,\n        \"percent_branches_covered\": 50.0,\n        \"percent_branches_covered_display\": \"50\"\n      },\n      \"executed_lines\": [\n        4,\n        5,\n        6,\n        7,\n        8\n      ],\n      \"missing_lines\": [],\n      \"missing_branches\": [\n        [\n          6,\n          8\n        ]\n      ],\n      \"values\": [\n        80\n      ],\n      \"source_sha256\": \"c15e5f19e20a09f793f3afa052caa820078d7851badb3ed5e7d20ca405c5d476\"\n    },\n    \"both_inputs_weak_assertion\": {\n      \"summary\": {\n        \"covered_lines\": 5,\n        \"num_statements\": 5,\n        \"percent_covered\": 100.0,\n        \"percent_covered_display\": \"100\",\n        \"missing_lines\": 0,\n        \"excluded_lines\": 0,\n        \"percent_statements_covered\": 100.0,\n        \"percent_statements_covered_display\": \"100\",\n        \"num_branches\": 2,\n        \"num_partial_branches\": 0,\n        \"covered_branches\": 2,\n        \"missing_branches\": 0,\n        \"percent_branches_covered\": 100.0,\n        \"percent_branches_covered_display\": \"100\"\n      },\n      \"executed_lines\": [\n        4,\n        5,\n        6,\n        7,\n        8\n      ],\n      \"missing_lines\": [],\n      \"missing_branches\": [],\n      \"values\": [\n        100,\n        80\n      ],\n      \"source_sha256\": \"c15e5f19e20a09f793f3afa052caa820078d7851badb3ed5e7d20ca405c5d476\"\n    },\n    \"mutant_both_inputs_weak_assertion\": {\n      \"summary\": {\n        \"covered_lines\": 5,\n        \"num_statements\": 5,\n        \"percent_covered\": 100.0,\n        \"percent_covered_display\": \"100\",\n        \"missing_lines\": 0,\n        \"excluded_lines\": 0,\n        \"percent_statements_covered\": 100.0,\n        \"percent_statements_covered_display\": \"100\",\n        \"num_branches\": 2,\n        \"num_partial_branches\": 0,\n        \"covered_branches\": 2,\n        \"missing_branches\": 0,\n        \"percent_branches_covered\": 100.0,\n        \"percent_branches_covered_display\": \"100\"\n      },\n      \"executed_lines\": [\n        4,\n        5,\n        6,\n        7,\n        8\n      ],\n      \"missing_lines\": [],\n      \"missing_branches\": [],\n      \"values\": [\n        100,\n        81\n      ],\n      \"source_sha256\": \"402409d6238d5d0c43397f9083b9a86d50a173717f7887ed8da04daa18f6952f\"\n    },\n    \"strong_oracle_expected_failures\": [\n      {\n        \"member\": true,\n        \"expected\": 80,\n        \"actual\": 81\n      }\n    ],\n    \"denominator\": \"This original module only; no added exclusions.\"\n  },\n  \"refactoring\": {\n    \"domain\": \"int quantity1..10 and bool priority only\",\n    \"comparisons\": 20,\n    \"limit\": \"No claim about invalid inputs or arbitrary refactors.\"\n  },\n  \"debugging\": {\n    \"print_trace\": \"quantity=10, expected=True, actual=False\\n\",\n    \"pdb_commands\": \"p quantity\\ntbreak 6\\nc\\np accepted\\nn\\nc\\n\",\n    \"pdb_transcript\": \"> <temporary>\\\\debug_target.py(5)buggy_quantity()\\n-> accepted = 1 <= quantity < 10\\n(Pdb) 10\\n(Pdb) Breakpoint 1 at <temporary>\\\\debug_target.py:6\\n(Pdb) Deleted breakpoint 1 at <temporary>\\\\debug_target.py:6\\n> <temporary>\\\\debug_target.py(6)buggy_quantity()\\n-> return accepted\\n(Pdb) False\\n(Pdb) --Return--\\n> <temporary>\\\\debug_target.py(6)buggy_quantity()->False\\n-> return accepted\\n(Pdb) \",\n    \"expected\": true,\n    \"actual\": false,\n    \"diagnosis\": \"Upper bound rejects 10; the contract includes it.\",\n    \"limit\": \"Scripted stdlib pdb, not an interactive IDE session.\"\n  },\n  \"optimization\": {\n    \"source\": \"def validate(q):\\n    assert 1 <= q <= 10\\n    return q\\ntry:\\n    print('accepted:', validate(0))\\nexcept AssertionError:\\n    print('AssertionError')\\n\",\n    \"results\": [\n      {\n        \"optimized\": false,\n        \"stdout\": \"AssertionError\"\n      },\n      {\n        \"optimized\": true,\n        \"stdout\": \"accepted: 0\"\n      }\n    ]\n  },\n  \"logging\": \"DEBUG:synthetic event 10\\nINFO:synthetic event 20\\nWARNING:synthetic event 30\\nERROR:synthetic event 40\\nCRITICAL:synthetic event 50\\n\",\n  \"static_analysis\": {\n    \"rule\": \"F401 only, isolated configuration\",\n    \"results\": {\n      \"unused_import\": {\n        \"exit_code\": 1,\n        \"codes\": [\n          \"F401\"\n        ]\n      },\n      \"wrong_value\": {\n        \"exit_code\": 0,\n        \"codes\": []\n      }\n    },\n    \"limit\": \"No Pylint/Flake8 execution or complete style audit.\"\n  },\n  \"checks\": [\n    \"temporary path inside workbook\",\n    \"partial weak type-only assertion\",\n    \"partial single measured module\",\n    \"complete weak type-only assertion\",\n    \"complete weak type-only assertion\",\n    \"complete single measured module\",\n    \"mutant weak type-only assertion\",\n    \"mutant weak type-only assertion\",\n    \"mutant single measured module\",\n    \"partial all statements ran\",\n    \"partial two branch outcomes\",\n    \"complete all statements ran\",\n    \"complete two branch outcomes\",\n    \"mutant all statements ran\",\n    \"mutant two branch outcomes\",\n    \"one branch missing despite full statement coverage\",\n    \"both original branch outcomes covered\",\n    \"both mutant branch outcomes covered\",\n    \"strong original value oracle\",\n    \"strong oracle kills the deliberately changed mutant\",\n    \"refactor oracle 1 False\",\n    \"refactor oracle 2 False\",\n    \"refactor oracle 3 False\",\n    \"refactor oracle 4 False\",\n    \"refactor oracle 5 False\",\n    \"refactor oracle 6 False\",\n    \"refactor oracle 7 False\",\n    \"refactor oracle 8 False\",\n    \"refactor oracle 9 False\",\n    \"refactor oracle 10 False\",\n    \"refactor oracle 1 True\",\n    \"refactor oracle 2 True\",\n    \"refactor oracle 3 True\",\n    \"refactor oracle 4 True\",\n    \"refactor oracle 5 True\",\n    \"refactor oracle 6 True\",\n    \"refactor oracle 7 True\",\n    \"refactor oracle 8 True\",\n    \"refactor oracle 9 True\",\n    \"refactor oracle 10 True\",\n    \"debugger reproduces off-by-one defect\",\n    \"debugger captured input, breakpoint and wrong state\",\n    \"debugger restored tracing state\",\n    \"print trace exposes contract failure\",\n    \"assert demonstration subprocess completed False\",\n    \"assert demonstration subprocess completed True\",\n    \"normal assertion enforces\",\n    \"optimization removes assertion\",\n    \"five logging levels captured\",\n    \"logger settings restored\",\n    \"unused_import lint has no tool error\",\n    \"wrong_value lint has no tool error\",\n    \"unused import detected by selected static rule\",\n    \"incorrect business value passes selected static rule\",\n    \"temporary modules/reports removed\"\n  ],\n  \"passed_checks\": 55\n}\n",
+          "stderr": "",
+          "optimized": true,
+          "checks": 55
+        }
+      ],
+      "computed_report": {
+        "python": "3.13.14",
+        "coverage": "7.15.4",
+        "coverage_limits": {
+          "one_input_weak_assertion": {
+            "summary": {
+              "covered_lines": 5,
+              "num_statements": 5,
+              "percent_covered": 85.71428571428571,
+              "percent_covered_display": "86",
+              "missing_lines": 0,
+              "excluded_lines": 0,
+              "percent_statements_covered": 100.0,
+              "percent_statements_covered_display": "100",
+              "num_branches": 2,
+              "num_partial_branches": 1,
+              "covered_branches": 1,
+              "missing_branches": 1,
+              "percent_branches_covered": 50.0,
+              "percent_branches_covered_display": "50"
+            },
+            "executed_lines": [
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "missing_lines": [],
+            "missing_branches": [
+              [
+                6,
+                8
+              ]
+            ],
+            "values": [
+              80
+            ],
+            "source_sha256": "c15e5f19e20a09f793f3afa052caa820078d7851badb3ed5e7d20ca405c5d476"
+          },
+          "both_inputs_weak_assertion": {
+            "summary": {
+              "covered_lines": 5,
+              "num_statements": 5,
+              "percent_covered": 100.0,
+              "percent_covered_display": "100",
+              "missing_lines": 0,
+              "excluded_lines": 0,
+              "percent_statements_covered": 100.0,
+              "percent_statements_covered_display": "100",
+              "num_branches": 2,
+              "num_partial_branches": 0,
+              "covered_branches": 2,
+              "missing_branches": 0,
+              "percent_branches_covered": 100.0,
+              "percent_branches_covered_display": "100"
+            },
+            "executed_lines": [
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "missing_lines": [],
+            "missing_branches": [],
+            "values": [
+              100,
+              80
+            ],
+            "source_sha256": "c15e5f19e20a09f793f3afa052caa820078d7851badb3ed5e7d20ca405c5d476"
+          },
+          "mutant_both_inputs_weak_assertion": {
+            "summary": {
+              "covered_lines": 5,
+              "num_statements": 5,
+              "percent_covered": 100.0,
+              "percent_covered_display": "100",
+              "missing_lines": 0,
+              "excluded_lines": 0,
+              "percent_statements_covered": 100.0,
+              "percent_statements_covered_display": "100",
+              "num_branches": 2,
+              "num_partial_branches": 0,
+              "covered_branches": 2,
+              "missing_branches": 0,
+              "percent_branches_covered": 100.0,
+              "percent_branches_covered_display": "100"
+            },
+            "executed_lines": [
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "missing_lines": [],
+            "missing_branches": [],
+            "values": [
+              100,
+              81
+            ],
+            "source_sha256": "402409d6238d5d0c43397f9083b9a86d50a173717f7887ed8da04daa18f6952f"
+          },
+          "strong_oracle_expected_failures": [
+            {
+              "member": true,
+              "expected": 80,
+              "actual": 81
+            }
+          ],
+          "denominator": "This original module only; no added exclusions."
+        },
+        "refactoring": {
+          "domain": "int quantity1..10 and bool priority only",
+          "comparisons": 20,
+          "limit": "No claim about invalid inputs or arbitrary refactors."
+        },
+        "debugging": {
+          "print_trace": "quantity=10, expected=True, actual=False\n",
+          "pdb_commands": "p quantity\ntbreak 6\nc\np accepted\nn\nc\n",
+          "pdb_transcript": "> <temporary>\\debug_target.py(5)buggy_quantity()\n-> accepted = 1 <= quantity < 10\n(Pdb) 10\n(Pdb) Breakpoint 1 at <temporary>\\debug_target.py:6\n(Pdb) Deleted breakpoint 1 at <temporary>\\debug_target.py:6\n> <temporary>\\debug_target.py(6)buggy_quantity()\n-> return accepted\n(Pdb) False\n(Pdb) --Return--\n> <temporary>\\debug_target.py(6)buggy_quantity()->False\n-> return accepted\n(Pdb) ",
+          "expected": true,
+          "actual": false,
+          "diagnosis": "Upper bound rejects 10; the contract includes it.",
+          "limit": "Scripted stdlib pdb, not an interactive IDE session."
+        },
+        "optimization": {
+          "source": "def validate(q):\n    assert 1 <= q <= 10\n    return q\ntry:\n    print('accepted:', validate(0))\nexcept AssertionError:\n    print('AssertionError')\n",
+          "results": [
+            {
+              "optimized": false,
+              "stdout": "AssertionError"
+            },
+            {
+              "optimized": true,
+              "stdout": "accepted: 0"
+            }
+          ]
+        },
+        "logging": "DEBUG:synthetic event 10\nINFO:synthetic event 20\nWARNING:synthetic event 30\nERROR:synthetic event 40\nCRITICAL:synthetic event 50\n",
+        "static_analysis": {
+          "rule": "F401 only, isolated configuration",
+          "results": {
+            "unused_import": {
+              "exit_code": 1,
+              "codes": [
+                "F401"
+              ]
+            },
+            "wrong_value": {
+              "exit_code": 0,
+              "codes": []
+            }
+          },
+          "limit": "No Pylint/Flake8 execution or complete style audit."
+        },
+        "checks": [
+          "temporary path inside workbook",
+          "partial weak type-only assertion",
+          "partial single measured module",
+          "complete weak type-only assertion",
+          "complete weak type-only assertion",
+          "complete single measured module",
+          "mutant weak type-only assertion",
+          "mutant weak type-only assertion",
+          "mutant single measured module",
+          "partial all statements ran",
+          "partial two branch outcomes",
+          "complete all statements ran",
+          "complete two branch outcomes",
+          "mutant all statements ran",
+          "mutant two branch outcomes",
+          "one branch missing despite full statement coverage",
+          "both original branch outcomes covered",
+          "both mutant branch outcomes covered",
+          "strong original value oracle",
+          "strong oracle kills the deliberately changed mutant",
+          "refactor oracle 1 False",
+          "refactor oracle 2 False",
+          "refactor oracle 3 False",
+          "refactor oracle 4 False",
+          "refactor oracle 5 False",
+          "refactor oracle 6 False",
+          "refactor oracle 7 False",
+          "refactor oracle 8 False",
+          "refactor oracle 9 False",
+          "refactor oracle 10 False",
+          "refactor oracle 1 True",
+          "refactor oracle 2 True",
+          "refactor oracle 3 True",
+          "refactor oracle 4 True",
+          "refactor oracle 5 True",
+          "refactor oracle 6 True",
+          "refactor oracle 7 True",
+          "refactor oracle 8 True",
+          "refactor oracle 9 True",
+          "refactor oracle 10 True",
+          "debugger reproduces off-by-one defect",
+          "debugger captured input, breakpoint and wrong state",
+          "debugger restored tracing state",
+          "print trace exposes contract failure",
+          "assert demonstration subprocess completed False",
+          "assert demonstration subprocess completed True",
+          "normal assertion enforces",
+          "optimization removes assertion",
+          "five logging levels captured",
+          "logger settings restored",
+          "unused_import lint has no tool error",
+          "wrong_value lint has no tool error",
+          "unused import detected by selected static rule",
+          "incorrect business value passes selected static rule",
+          "temporary modules/reports removed"
+        ],
+        "passed_checks": 55
+      },
+      "selected_lint": {
+        "command": [
+          "python",
+          "-m",
+          "ruff",
+          "check",
+          "utility.py",
+          "test_utility.py",
+          "probes.py",
+          "--select",
+          "E4,E7,E9,F,W,E501",
+          "--line-length",
+          "79",
+          "--output-format",
+          "concise"
+        ],
+        "exit_code": 0,
+        "stdout": "All checks passed!\n",
+        "stderr": "",
+        "version": "ruff 0.16.4"
+      },
+      "missing_named_tools": [
+        "pylint",
+        "flake8"
+      ],
+      "execution_boundary": "Original finite synthetic fees, in-memory streams/fake clients, toy state model, isolated subprocesses and temporary local coverage/debugger modules only. No package install, real authentication/API/delivery, interactive IDE, Pylint/Flake8 execution, timed exploratory session, completion of ten broader labs, human content/accessibility review or readiness approval."
+    }
+  },
+  "answered_checks": 17,
+  "limitations": [
+    "21 direct receipts: 16 successful responses, three errors, one blocked book and one missing Flake8 candidate. Complete indexed syllabus/exam fallback is distinguished from direct network health. Policy and full PDF unread; generic unpinned unittest/logging retrieved but not reviewed. Selected manual sections are not whole-manual audits.",
+    "Three exact original files execute 25 test methods and 55 probe checks per normal/optimized mode on CPython 3.13.14, coverage.py 7.15.4 and Ruff 0.16.4. This is finite synthetic data, in-memory substitutes, isolated subprocesses and temporary local debugger/coverage modules, not real authentication, delivery, external APIs or production coverage.",
+    "Pylint and Flake8 are absent and were not installed. Their commands are prepared only. Ruff selected rules do not establish full PEP conformance or substitute for those named tools. Documentation versions differ from runtime and are not exam requirements.",
+    "Publisher code/heading conflicts, dedicated-practice development status and unverified PCET-specific policy remain visible. No account, purchase, scheduling, voucher redemption, protected questions, enrolled lessons or CTFL PDF/sample questions accessed.",
+    "Ten broader labs remain proposed beyond executed components. No 20-test classification completion, timed exploratory session, independent review, interactive IDE session, full state-transition coverage, human content/accessibility review or readiness approval."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 180,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Original finite synthetic fees, in-memory streams/fake clients, toy state model, isolated subprocesses and temporary local coverage/debugger modules only. No package install, real authentication/API/delivery, interactive IDE, Pylint/Flake8 execution, timed exploratory session, completion of ten broader labs, human content/accessibility review or readiness approval.",
+    "passed": true,
+    "versions": {
+      "python": "3.13.14",
+      "coverage": "7.15.4",
+      "ruff": "ruff 0.16.4"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "public_files": [
+      {
+        "filename": "utility.py",
+        "sha256": "486509fbc3b5489bc3556c9b1c386fbccaf179c0a26634844f7a72ed9a8040d3",
+        "bytes": 3339,
+        "syntax_checked": true,
+        "executed": true
+      },
+      {
+        "filename": "test_utility.py",
+        "sha256": "4957e792e920f10206d18f7eb0285092edfbb71f0b8cd9c085a4791e74844fb7",
+        "bytes": 8731,
+        "syntax_checked": true,
+        "executed": true
+      },
+      {
+        "filename": "probes.py",
+        "sha256": "43eb5a41311db81d7336eb41b1b1e4a32baa7128ae44bcd3deadaa4c4b310b2e",
+        "bytes": 11613,
+        "syntax_checked": true,
+        "executed": true
+      }
+    ],
+    "test_methods_per_mode": 25,
+    "probe_checks_per_mode": 55,
+    "execution_runs": 4,
+    "results": [
+      {
+        "program": "unittest",
+        "command": [
+          "python",
+          "-B",
+          "-Werror",
+          "-m",
+          "unittest",
+          "-v",
+          "test_utility"
+        ],
+        "started_at": "2026-09-30T04:09:40.685490+00:00",
+        "elapsed_seconds": 0.153,
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "test_invalid_item_propagates (test_utility.FeeTests.test_invalid_item_propagates) ... ok\ntest_outside_partitions (test_utility.FeeTests.test_outside_partitions) ... ok\ntest_priority_boundaries (test_utility.FeeTests.test_priority_boundaries) ... ok\ntest_priority_is_boolean (test_utility.FeeTests.test_priority_is_boolean) ... ok\ntest_regular_boundaries (test_utility.FeeTests.test_regular_boundaries) ... ok\ntest_validity_priority_decision_table (test_utility.FeeTests.test_validity_priority_decision_table) ... ok\ntest_wrong_quantity_types (test_utility.FeeTests.test_wrong_quantity_types) ... ok\ntest_zero_one_many_loop_iterations (test_utility.FeeTests.test_zero_one_many_loop_iterations) ... ok\ntest_autospec_mock_and_call_contract (test_utility.ReceiptTests.test_autospec_mock_and_call_contract) ... ok\ntest_client_failure_is_not_success_or_retry (test_utility.ReceiptTests.test_client_failure_is_not_success_or_retry) ... ok\ntest_dummy_collaborators_not_used_on_invalid_input (test_utility.ReceiptTests.test_dummy_collaborators_not_used_on_invalid_input) ... ok\ntest_patch_lookup_and_restore (test_utility.ReceiptTests.test_patch_lookup_and_restore) ... ok\ntest_spy_wraps_real_fake_operation (test_utility.ReceiptTests.test_spy_wraps_real_fake_operation) ... ok\ntest_stub_clock_and_working_fake (test_utility.ReceiptTests.test_stub_clock_and_working_fake) ... ok\ntest_locked_success_cannot_unlock (test_utility.StateTests.test_locked_success_cannot_unlock) ... ok\ntest_new_instance_is_independent (test_utility.StateTests.test_new_instance_is_independent) ... ok\ntest_only_authorized_reset_unlocks (test_utility.StateTests.test_only_authorized_reset_unlocks) ... ok\ntest_success_before_lock_resets_count (test_utility.StateTests.test_success_before_lock_resets_count) ... ok\ntest_three_consecutive_failures_lock (test_utility.StateTests.test_three_consecutive_failures_lock) ... ok\ntest_wrong_event_types_do_not_mutate (test_utility.StateTests.test_wrong_event_types_do_not_mutate) ... ok\ntest_empty_list (test_utility.StreamTests.test_empty_list) ... ok\ntest_invalid_json_and_shape (test_utility.StreamTests.test_invalid_json_and_shape) ... ok\ntest_invalid_json_item (test_utility.StreamTests.test_invalid_json_item) ... ok\ntest_reader_failure (test_utility.StreamTests.test_reader_failure) ... ok\ntest_working_in_memory_file (test_utility.StreamTests.test_working_in_memory_file) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 0.004s\n\nOK\n",
+        "optimized": false,
+        "test_methods": 25
+      },
+      {
+        "program": "probes",
+        "command": [
+          "python",
+          "-B",
+          "-Werror",
+          "probes.py"
+        ],
+        "started_at": "2026-09-30T04:09:40.838667+00:00",
+        "elapsed_seconds": 0.571,
+        "exit_code": 0,
+        "stdout": "{\n  \"python\": \"3.13.14\",\n  \"coverage\": \"7.15.4\",\n  \"coverage_limits\": {\n    \"one_input_weak_assertion\": {\n      \"summary\": {\n        \"covered_lines\": 5,\n        \"num_statements\": 5,\n        \"percent_covered\": 85.71428571428571,\n        \"percent_covered_display\": \"86\",\n        \"missing_lines\": 0,\n        \"excluded_lines\": 0,\n        \"percent_statements_covered\": 100.0,\n        \"percent_statements_covered_display\": \"100\",\n        \"num_branches\": 2,\n        \"num_partial_branches\": 1,\n        \"covered_branches\": 1,\n        \"missing_branches\": 1,\n        \"percent_branches_covered\": 50.0,\n        \"percent_branches_covered_display\": \"50\"\n      },\n      \"executed_lines\": [\n        4,\n        5,\n        6,\n        7,\n        8\n      ],\n      \"missing_lines\": [],\n      \"missing_branches\": [\n        [\n          6,\n          8\n        ]\n      ],\n      \"values\": [\n        80\n      ],\n      \"source_sha256\": \"c15e5f19e20a09f793f3afa052caa820078d7851badb3ed5e7d20ca405c5d476\"\n    },\n    \"both_inputs_weak_assertion\": {\n      \"summary\": {\n        \"covered_lines\": 5,\n        \"num_statements\": 5,\n        \"percent_covered\": 100.0,\n        \"percent_covered_display\": \"100\",\n        \"missing_lines\": 0,\n        \"excluded_lines\": 0,\n        \"percent_statements_covered\": 100.0,\n        \"percent_statements_covered_display\": \"100\",\n        \"num_branches\": 2,\n        \"num_partial_branches\": 0,\n        \"covered_branches\": 2,\n        \"missing_branches\": 0,\n        \"percent_branches_covered\": 100.0,\n        \"percent_branches_covered_display\": \"100\"\n      },\n      \"executed_lines\": [\n        4,\n        5,\n        6,\n        7,\n        8\n      ],\n      \"missing_lines\": [],\n      \"missing_branches\": [],\n      \"values\": [\n        100,\n        80\n      ],\n      \"source_sha256\": \"c15e5f19e20a09f793f3afa052caa820078d7851badb3ed5e7d20ca405c5d476\"\n    },\n    \"mutant_both_inputs_weak_assertion\": {\n      \"summary\": {\n        \"covered_lines\": 5,\n        \"num_statements\": 5,\n        \"percent_covered\": 100.0,\n        \"percent_covered_display\": \"100\",\n        \"missing_lines\": 0,\n        \"excluded_lines\": 0,\n        \"percent_statements_covered\": 100.0,\n        \"percent_statements_covered_display\": \"100\",\n        \"num_branches\": 2,\n        \"num_partial_branches\": 0,\n        \"covered_branches\": 2,\n        \"missing_branches\": 0,\n        \"percent_branches_covered\": 100.0,\n        \"percent_branches_covered_display\": \"100\"\n      },\n      \"executed_lines\": [\n        4,\n        5,\n        6,\n        7,\n        8\n      ],\n      \"missing_lines\": [],\n      \"missing_branches\": [],\n      \"values\": [\n        100,\n        81\n      ],\n      \"source_sha256\": \"402409d6238d5d0c43397f9083b9a86d50a173717f7887ed8da04daa18f6952f\"\n    },\n    \"strong_oracle_expected_failures\": [\n      {\n        \"member\": true,\n        \"expected\": 80,\n        \"actual\": 81\n      }\n    ],\n    \"denominator\": \"This original module only; no added exclusions.\"\n  },\n  \"refactoring\": {\n    \"domain\": \"int quantity1..10 and bool priority only\",\n    \"comparisons\": 20,\n    \"limit\": \"No claim about invalid inputs or arbitrary refactors.\"\n  },\n  \"debugging\": {\n    \"print_trace\": \"quantity=10, expected=True, actual=False\\n\",\n    \"pdb_commands\": \"p quantity\\ntbreak 6\\nc\\np accepted\\nn\\nc\\n\",\n    \"pdb_transcript\": \"> <temporary>\\\\debug_target.py(5)buggy_quantity()\\n-> accepted = 1 <= quantity < 10\\n(Pdb) 10\\n(Pdb) Breakpoint 1 at <temporary>\\\\debug_target.py:6\\n(Pdb) Deleted breakpoint 1 at <temporary>\\\\debug_target.py:6\\n> <temporary>\\\\debug_target.py(6)buggy_quantity()\\n-> return accepted\\n(Pdb) False\\n(Pdb) --Return--\\n> <temporary>\\\\debug_target.py(6)buggy_quantity()->False\\n-> return accepted\\n(Pdb) \",\n    \"expected\": true,\n    \"actual\": false,\n    \"diagnosis\": \"Upper bound rejects 10; the contract includes it.\",\n    \"limit\": \"Scripted stdlib pdb, not an interactive IDE session.\"\n  },\n  \"optimization\": {\n    \"source\": \"def validate(q):\\n    assert 1 <= q <= 10\\n    return q\\ntry:\\n    print('accepted:', validate(0))\\nexcept AssertionError:\\n    print('AssertionError')\\n\",\n    \"results\": [\n      {\n        \"optimized\": false,\n        \"stdout\": \"AssertionError\"\n      },\n      {\n        \"optimized\": true,\n        \"stdout\": \"accepted: 0\"\n      }\n    ]\n  },\n  \"logging\": \"DEBUG:synthetic event 10\\nINFO:synthetic event 20\\nWARNING:synthetic event 30\\nERROR:synthetic event 40\\nCRITICAL:synthetic event 50\\n\",\n  \"static_analysis\": {\n    \"rule\": \"F401 only, isolated configuration\",\n    \"results\": {\n      \"unused_import\": {\n        \"exit_code\": 1,\n        \"codes\": [\n          \"F401\"\n        ]\n      },\n      \"wrong_value\": {\n        \"exit_code\": 0,\n        \"codes\": []\n      }\n    },\n    \"limit\": \"No Pylint/Flake8 execution or complete style audit.\"\n  },\n  \"checks\": [\n    \"temporary path inside workbook\",\n    \"partial weak type-only assertion\",\n    \"partial single measured module\",\n    \"complete weak type-only assertion\",\n    \"complete weak type-only assertion\",\n    \"complete single measured module\",\n    \"mutant weak type-only assertion\",\n    \"mutant weak type-only assertion\",\n    \"mutant single measured module\",\n    \"partial all statements ran\",\n    \"partial two branch outcomes\",\n    \"complete all statements ran\",\n    \"complete two branch outcomes\",\n    \"mutant all statements ran\",\n    \"mutant two branch outcomes\",\n    \"one branch missing despite full statement coverage\",\n    \"both original branch outcomes covered\",\n    \"both mutant branch outcomes covered\",\n    \"strong original value oracle\",\n    \"strong oracle kills the deliberately changed mutant\",\n    \"refactor oracle 1 False\",\n    \"refactor oracle 2 False\",\n    \"refactor oracle 3 False\",\n    \"refactor oracle 4 False\",\n    \"refactor oracle 5 False\",\n    \"refactor oracle 6 False\",\n    \"refactor oracle 7 False\",\n    \"refactor oracle 8 False\",\n    \"refactor oracle 9 False\",\n    \"refactor oracle 10 False\",\n    \"refactor oracle 1 True\",\n    \"refactor oracle 2 True\",\n    \"refactor oracle 3 True\",\n    \"refactor oracle 4 True\",\n    \"refactor oracle 5 True\",\n    \"refactor oracle 6 True\",\n    \"refactor oracle 7 True\",\n    \"refactor oracle 8 True\",\n    \"refactor oracle 9 True\",\n    \"refactor oracle 10 True\",\n    \"debugger reproduces off-by-one defect\",\n    \"debugger captured input, breakpoint and wrong state\",\n    \"debugger restored tracing state\",\n    \"print trace exposes contract failure\",\n    \"assert demonstration subprocess completed False\",\n    \"assert demonstration subprocess completed True\",\n    \"normal assertion enforces\",\n    \"optimization removes assertion\",\n    \"five logging levels captured\",\n    \"logger settings restored\",\n    \"unused_import lint has no tool error\",\n    \"wrong_value lint has no tool error\",\n    \"unused import detected by selected static rule\",\n    \"incorrect business value passes selected static rule\",\n    \"temporary modules/reports removed\"\n  ],\n  \"passed_checks\": 55\n}\n",
+        "stderr": "",
+        "optimized": false,
+        "checks": 55
+      },
+      {
+        "program": "unittest",
+        "command": [
+          "python",
+          "-B",
+          "-Werror",
+          "-O",
+          "-m",
+          "unittest",
+          "-v",
+          "test_utility"
+        ],
+        "started_at": "2026-09-30T04:09:41.410382+00:00",
+        "elapsed_seconds": 0.191,
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "test_invalid_item_propagates (test_utility.FeeTests.test_invalid_item_propagates) ... ok\ntest_outside_partitions (test_utility.FeeTests.test_outside_partitions) ... ok\ntest_priority_boundaries (test_utility.FeeTests.test_priority_boundaries) ... ok\ntest_priority_is_boolean (test_utility.FeeTests.test_priority_is_boolean) ... ok\ntest_regular_boundaries (test_utility.FeeTests.test_regular_boundaries) ... ok\ntest_validity_priority_decision_table (test_utility.FeeTests.test_validity_priority_decision_table) ... ok\ntest_wrong_quantity_types (test_utility.FeeTests.test_wrong_quantity_types) ... ok\ntest_zero_one_many_loop_iterations (test_utility.FeeTests.test_zero_one_many_loop_iterations) ... ok\ntest_autospec_mock_and_call_contract (test_utility.ReceiptTests.test_autospec_mock_and_call_contract) ... ok\ntest_client_failure_is_not_success_or_retry (test_utility.ReceiptTests.test_client_failure_is_not_success_or_retry) ... ok\ntest_dummy_collaborators_not_used_on_invalid_input (test_utility.ReceiptTests.test_dummy_collaborators_not_used_on_invalid_input) ... ok\ntest_patch_lookup_and_restore (test_utility.ReceiptTests.test_patch_lookup_and_restore) ... ok\ntest_spy_wraps_real_fake_operation (test_utility.ReceiptTests.test_spy_wraps_real_fake_operation) ... ok\ntest_stub_clock_and_working_fake (test_utility.ReceiptTests.test_stub_clock_and_working_fake) ... ok\ntest_locked_success_cannot_unlock (test_utility.StateTests.test_locked_success_cannot_unlock) ... ok\ntest_new_instance_is_independent (test_utility.StateTests.test_new_instance_is_independent) ... ok\ntest_only_authorized_reset_unlocks (test_utility.StateTests.test_only_authorized_reset_unlocks) ... ok\ntest_success_before_lock_resets_count (test_utility.StateTests.test_success_before_lock_resets_count) ... ok\ntest_three_consecutive_failures_lock (test_utility.StateTests.test_three_consecutive_failures_lock) ... ok\ntest_wrong_event_types_do_not_mutate (test_utility.StateTests.test_wrong_event_types_do_not_mutate) ... ok\ntest_empty_list (test_utility.StreamTests.test_empty_list) ... ok\ntest_invalid_json_and_shape (test_utility.StreamTests.test_invalid_json_and_shape) ... ok\ntest_invalid_json_item (test_utility.StreamTests.test_invalid_json_item) ... ok\ntest_reader_failure (test_utility.StreamTests.test_reader_failure) ... ok\ntest_working_in_memory_file (test_utility.StreamTests.test_working_in_memory_file) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 0.004s\n\nOK\n",
+        "optimized": true,
+        "test_methods": 25
+      },
+      {
+        "program": "probes",
+        "command": [
+          "python",
+          "-B",
+          "-Werror",
+          "-O",
+          "probes.py"
+        ],
+        "started_at": "2026-09-30T04:09:41.602369+00:00",
+        "elapsed_seconds": 0.975,
+        "exit_code": 0,
+        "stdout": "{\n  \"python\": \"3.13.14\",\n  \"coverage\": \"7.15.4\",\n  \"coverage_limits\": {\n    \"one_input_weak_assertion\": {\n      \"summary\": {\n        \"covered_lines\": 5,\n        \"num_statements\": 5,\n        \"percent_covered\": 85.71428571428571,\n        \"percent_covered_display\": \"86\",\n        \"missing_lines\": 0,\n        \"excluded_lines\": 0,\n        \"percent_statements_covered\": 100.0,\n        \"percent_statements_covered_display\": \"100\",\n        \"num_branches\": 2,\n        \"num_partial_branches\": 1,\n        \"covered_branches\": 1,\n        \"missing_branches\": 1,\n        \"percent_branches_covered\": 50.0,\n        \"percent_branches_covered_display\": \"50\"\n      },\n      \"executed_lines\": [\n        4,\n        5,\n        6,\n        7,\n        8\n      ],\n      \"missing_lines\": [],\n      \"missing_branches\": [\n        [\n          6,\n          8\n        ]\n      ],\n      \"values\": [\n        80\n      ],\n      \"source_sha256\": \"c15e5f19e20a09f793f3afa052caa820078d7851badb3ed5e7d20ca405c5d476\"\n    },\n    \"both_inputs_weak_assertion\": {\n      \"summary\": {\n        \"covered_lines\": 5,\n        \"num_statements\": 5,\n        \"percent_covered\": 100.0,\n        \"percent_covered_display\": \"100\",\n        \"missing_lines\": 0,\n        \"excluded_lines\": 0,\n        \"percent_statements_covered\": 100.0,\n        \"percent_statements_covered_display\": \"100\",\n        \"num_branches\": 2,\n        \"num_partial_branches\": 0,\n        \"covered_branches\": 2,\n        \"missing_branches\": 0,\n        \"percent_branches_covered\": 100.0,\n        \"percent_branches_covered_display\": \"100\"\n      },\n      \"executed_lines\": [\n        4,\n        5,\n        6,\n        7,\n        8\n      ],\n      \"missing_lines\": [],\n      \"missing_branches\": [],\n      \"values\": [\n        100,\n        80\n      ],\n      \"source_sha256\": \"c15e5f19e20a09f793f3afa052caa820078d7851badb3ed5e7d20ca405c5d476\"\n    },\n    \"mutant_both_inputs_weak_assertion\": {\n      \"summary\": {\n        \"covered_lines\": 5,\n        \"num_statements\": 5,\n        \"percent_covered\": 100.0,\n        \"percent_covered_display\": \"100\",\n        \"missing_lines\": 0,\n        \"excluded_lines\": 0,\n        \"percent_statements_covered\": 100.0,\n        \"percent_statements_covered_display\": \"100\",\n        \"num_branches\": 2,\n        \"num_partial_branches\": 0,\n        \"covered_branches\": 2,\n        \"missing_branches\": 0,\n        \"percent_branches_covered\": 100.0,\n        \"percent_branches_covered_display\": \"100\"\n      },\n      \"executed_lines\": [\n        4,\n        5,\n        6,\n        7,\n        8\n      ],\n      \"missing_lines\": [],\n      \"missing_branches\": [],\n      \"values\": [\n        100,\n        81\n      ],\n      \"source_sha256\": \"402409d6238d5d0c43397f9083b9a86d50a173717f7887ed8da04daa18f6952f\"\n    },\n    \"strong_oracle_expected_failures\": [\n      {\n        \"member\": true,\n        \"expected\": 80,\n        \"actual\": 81\n      }\n    ],\n    \"denominator\": \"This original module only; no added exclusions.\"\n  },\n  \"refactoring\": {\n    \"domain\": \"int quantity1..10 and bool priority only\",\n    \"comparisons\": 20,\n    \"limit\": \"No claim about invalid inputs or arbitrary refactors.\"\n  },\n  \"debugging\": {\n    \"print_trace\": \"quantity=10, expected=True, actual=False\\n\",\n    \"pdb_commands\": \"p quantity\\ntbreak 6\\nc\\np accepted\\nn\\nc\\n\",\n    \"pdb_transcript\": \"> <temporary>\\\\debug_target.py(5)buggy_quantity()\\n-> accepted = 1 <= quantity < 10\\n(Pdb) 10\\n(Pdb) Breakpoint 1 at <temporary>\\\\debug_target.py:6\\n(Pdb) Deleted breakpoint 1 at <temporary>\\\\debug_target.py:6\\n> <temporary>\\\\debug_target.py(6)buggy_quantity()\\n-> return accepted\\n(Pdb) False\\n(Pdb) --Return--\\n> <temporary>\\\\debug_target.py(6)buggy_quantity()->False\\n-> return accepted\\n(Pdb) \",\n    \"expected\": true,\n    \"actual\": false,\n    \"diagnosis\": \"Upper bound rejects 10; the contract includes it.\",\n    \"limit\": \"Scripted stdlib pdb, not an interactive IDE session.\"\n  },\n  \"optimization\": {\n    \"source\": \"def validate(q):\\n    assert 1 <= q <= 10\\n    return q\\ntry:\\n    print('accepted:', validate(0))\\nexcept AssertionError:\\n    print('AssertionError')\\n\",\n    \"results\": [\n      {\n        \"optimized\": false,\n        \"stdout\": \"AssertionError\"\n      },\n      {\n        \"optimized\": true,\n        \"stdout\": \"accepted: 0\"\n      }\n    ]\n  },\n  \"logging\": \"DEBUG:synthetic event 10\\nINFO:synthetic event 20\\nWARNING:synthetic event 30\\nERROR:synthetic event 40\\nCRITICAL:synthetic event 50\\n\",\n  \"static_analysis\": {\n    \"rule\": \"F401 only, isolated configuration\",\n    \"results\": {\n      \"unused_import\": {\n        \"exit_code\": 1,\n        \"codes\": [\n          \"F401\"\n        ]\n      },\n      \"wrong_value\": {\n        \"exit_code\": 0,\n        \"codes\": []\n      }\n    },\n    \"limit\": \"No Pylint/Flake8 execution or complete style audit.\"\n  },\n  \"checks\": [\n    \"temporary path inside workbook\",\n    \"partial weak type-only assertion\",\n    \"partial single measured module\",\n    \"complete weak type-only assertion\",\n    \"complete weak type-only assertion\",\n    \"complete single measured module\",\n    \"mutant weak type-only assertion\",\n    \"mutant weak type-only assertion\",\n    \"mutant single measured module\",\n    \"partial all statements ran\",\n    \"partial two branch outcomes\",\n    \"complete all statements ran\",\n    \"complete two branch outcomes\",\n    \"mutant all statements ran\",\n    \"mutant two branch outcomes\",\n    \"one branch missing despite full statement coverage\",\n    \"both original branch outcomes covered\",\n    \"both mutant branch outcomes covered\",\n    \"strong original value oracle\",\n    \"strong oracle kills the deliberately changed mutant\",\n    \"refactor oracle 1 False\",\n    \"refactor oracle 2 False\",\n    \"refactor oracle 3 False\",\n    \"refactor oracle 4 False\",\n    \"refactor oracle 5 False\",\n    \"refactor oracle 6 False\",\n    \"refactor oracle 7 False\",\n    \"refactor oracle 8 False\",\n    \"refactor oracle 9 False\",\n    \"refactor oracle 10 False\",\n    \"refactor oracle 1 True\",\n    \"refactor oracle 2 True\",\n    \"refactor oracle 3 True\",\n    \"refactor oracle 4 True\",\n    \"refactor oracle 5 True\",\n    \"refactor oracle 6 True\",\n    \"refactor oracle 7 True\",\n    \"refactor oracle 8 True\",\n    \"refactor oracle 9 True\",\n    \"refactor oracle 10 True\",\n    \"debugger reproduces off-by-one defect\",\n    \"debugger captured input, breakpoint and wrong state\",\n    \"debugger restored tracing state\",\n    \"print trace exposes contract failure\",\n    \"assert demonstration subprocess completed False\",\n    \"assert demonstration subprocess completed True\",\n    \"normal assertion enforces\",\n    \"optimization removes assertion\",\n    \"five logging levels captured\",\n    \"logger settings restored\",\n    \"unused_import lint has no tool error\",\n    \"wrong_value lint has no tool error\",\n    \"unused import detected by selected static rule\",\n    \"incorrect business value passes selected static rule\",\n    \"temporary modules/reports removed\"\n  ],\n  \"passed_checks\": 55\n}\n",
+        "stderr": "",
+        "optimized": true,
+        "checks": 55
+      }
+    ],
+    "computed_report": {
+      "python": "3.13.14",
+      "coverage": "7.15.4",
+      "coverage_limits": {
+        "one_input_weak_assertion": {
+          "summary": {
+            "covered_lines": 5,
+            "num_statements": 5,
+            "percent_covered": 85.71428571428571,
+            "percent_covered_display": "86",
+            "missing_lines": 0,
+            "excluded_lines": 0,
+            "percent_statements_covered": 100.0,
+            "percent_statements_covered_display": "100",
+            "num_branches": 2,
+            "num_partial_branches": 1,
+            "covered_branches": 1,
+            "missing_branches": 1,
+            "percent_branches_covered": 50.0,
+            "percent_branches_covered_display": "50"
+          },
+          "executed_lines": [
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "missing_lines": [],
+          "missing_branches": [
+            [
+              6,
+              8
+            ]
+          ],
+          "values": [
+            80
+          ],
+          "source_sha256": "c15e5f19e20a09f793f3afa052caa820078d7851badb3ed5e7d20ca405c5d476"
+        },
+        "both_inputs_weak_assertion": {
+          "summary": {
+            "covered_lines": 5,
+            "num_statements": 5,
+            "percent_covered": 100.0,
+            "percent_covered_display": "100",
+            "missing_lines": 0,
+            "excluded_lines": 0,
+            "percent_statements_covered": 100.0,
+            "percent_statements_covered_display": "100",
+            "num_branches": 2,
+            "num_partial_branches": 0,
+            "covered_branches": 2,
+            "missing_branches": 0,
+            "percent_branches_covered": 100.0,
+            "percent_branches_covered_display": "100"
+          },
+          "executed_lines": [
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "missing_lines": [],
+          "missing_branches": [],
+          "values": [
+            100,
+            80
+          ],
+          "source_sha256": "c15e5f19e20a09f793f3afa052caa820078d7851badb3ed5e7d20ca405c5d476"
+        },
+        "mutant_both_inputs_weak_assertion": {
+          "summary": {
+            "covered_lines": 5,
+            "num_statements": 5,
+            "percent_covered": 100.0,
+            "percent_covered_display": "100",
+            "missing_lines": 0,
+            "excluded_lines": 0,
+            "percent_statements_covered": 100.0,
+            "percent_statements_covered_display": "100",
+            "num_branches": 2,
+            "num_partial_branches": 0,
+            "covered_branches": 2,
+            "missing_branches": 0,
+            "percent_branches_covered": 100.0,
+            "percent_branches_covered_display": "100"
+          },
+          "executed_lines": [
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "missing_lines": [],
+          "missing_branches": [],
+          "values": [
+            100,
+            81
+          ],
+          "source_sha256": "402409d6238d5d0c43397f9083b9a86d50a173717f7887ed8da04daa18f6952f"
+        },
+        "strong_oracle_expected_failures": [
+          {
+            "member": true,
+            "expected": 80,
+            "actual": 81
+          }
+        ],
+        "denominator": "This original module only; no added exclusions."
+      },
+      "refactoring": {
+        "domain": "int quantity1..10 and bool priority only",
+        "comparisons": 20,
+        "limit": "No claim about invalid inputs or arbitrary refactors."
+      },
+      "debugging": {
+        "print_trace": "quantity=10, expected=True, actual=False\n",
+        "pdb_commands": "p quantity\ntbreak 6\nc\np accepted\nn\nc\n",
+        "pdb_transcript": "> <temporary>\\debug_target.py(5)buggy_quantity()\n-> accepted = 1 <= quantity < 10\n(Pdb) 10\n(Pdb) Breakpoint 1 at <temporary>\\debug_target.py:6\n(Pdb) Deleted breakpoint 1 at <temporary>\\debug_target.py:6\n> <temporary>\\debug_target.py(6)buggy_quantity()\n-> return accepted\n(Pdb) False\n(Pdb) --Return--\n> <temporary>\\debug_target.py(6)buggy_quantity()->False\n-> return accepted\n(Pdb) ",
+        "expected": true,
+        "actual": false,
+        "diagnosis": "Upper bound rejects 10; the contract includes it.",
+        "limit": "Scripted stdlib pdb, not an interactive IDE session."
+      },
+      "optimization": {
+        "source": "def validate(q):\n    assert 1 <= q <= 10\n    return q\ntry:\n    print('accepted:', validate(0))\nexcept AssertionError:\n    print('AssertionError')\n",
+        "results": [
+          {
+            "optimized": false,
+            "stdout": "AssertionError"
+          },
+          {
+            "optimized": true,
+            "stdout": "accepted: 0"
+          }
+        ]
+      },
+      "logging": "DEBUG:synthetic event 10\nINFO:synthetic event 20\nWARNING:synthetic event 30\nERROR:synthetic event 40\nCRITICAL:synthetic event 50\n",
+      "static_analysis": {
+        "rule": "F401 only, isolated configuration",
+        "results": {
+          "unused_import": {
+            "exit_code": 1,
+            "codes": [
+              "F401"
+            ]
+          },
+          "wrong_value": {
+            "exit_code": 0,
+            "codes": []
+          }
+        },
+        "limit": "No Pylint/Flake8 execution or complete style audit."
+      },
+      "checks": [
+        "temporary path inside workbook",
+        "partial weak type-only assertion",
+        "partial single measured module",
+        "complete weak type-only assertion",
+        "complete weak type-only assertion",
+        "complete single measured module",
+        "mutant weak type-only assertion",
+        "mutant weak type-only assertion",
+        "mutant single measured module",
+        "partial all statements ran",
+        "partial two branch outcomes",
+        "complete all statements ran",
+        "complete two branch outcomes",
+        "mutant all statements ran",
+        "mutant two branch outcomes",
+        "one branch missing despite full statement coverage",
+        "both original branch outcomes covered",
+        "both mutant branch outcomes covered",
+        "strong original value oracle",
+        "strong oracle kills the deliberately changed mutant",
+        "refactor oracle 1 False",
+        "refactor oracle 2 False",
+        "refactor oracle 3 False",
+        "refactor oracle 4 False",
+        "refactor oracle 5 False",
+        "refactor oracle 6 False",
+        "refactor oracle 7 False",
+        "refactor oracle 8 False",
+        "refactor oracle 9 False",
+        "refactor oracle 10 False",
+        "refactor oracle 1 True",
+        "refactor oracle 2 True",
+        "refactor oracle 3 True",
+        "refactor oracle 4 True",
+        "refactor oracle 5 True",
+        "refactor oracle 6 True",
+        "refactor oracle 7 True",
+        "refactor oracle 8 True",
+        "refactor oracle 9 True",
+        "refactor oracle 10 True",
+        "debugger reproduces off-by-one defect",
+        "debugger captured input, breakpoint and wrong state",
+        "debugger restored tracing state",
+        "print trace exposes contract failure",
+        "assert demonstration subprocess completed False",
+        "assert demonstration subprocess completed True",
+        "normal assertion enforces",
+        "optimization removes assertion",
+        "five logging levels captured",
+        "logger settings restored",
+        "unused_import lint has no tool error",
+        "wrong_value lint has no tool error",
+        "unused import detected by selected static rule",
+        "incorrect business value passes selected static rule",
+        "temporary modules/reports removed"
+      ],
+      "passed_checks": 55
+    },
+    "selected_lint": {
+      "command": [
+        "python",
+        "-m",
+        "ruff",
+        "check",
+        "utility.py",
+        "test_utility.py",
+        "probes.py",
+        "--select",
+        "E4,E7,E9,F,W,E501",
+        "--line-length",
+        "79",
+        "--output-format",
+        "concise"
+      ],
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": "",
+      "version": "ruff 0.16.4"
+    },
+    "missing_named_tools": [
+      "pylint",
+      "flake8"
+    ],
+    "learning_catalog_consistency": "passed",
+    "unit_test_elapsed_seconds": 25.179,
+    "strict_site_build_elapsed_seconds": 22.36
+  },
+  "source_reading_boundaries": {
+    "pcet-30-01-syllabus": "Complete indexed canonical English syllabus, all 22 numbered objectives and detailed sub-bullets, full minimum-qualified-candidate profile and cumulative threshold read after direct/monitor WinError 10060. December 10, 2024; groups 4/6/6/6 versus 35 exam items 6/8/10/11, weights 17.1/22.9/28.6/31.4. Header/alignment 30-01 versus introductory 30-02, unrelated data-analysis wording and Objective 1.4 data-storage heading remain publisher conflicts. Retained snapshot manually compared; no successful automated hash observation. Full PDF unread.",
+    "pcet-certification-page": "Complete indexed canonical public body read, including introduction, roadmap, career description, table and full FAQ. Active 30-01, seven-year validity, 35 questions/45 minutes plus NDA/75%/English and Spanish/TestNow. No formal prerequisite; basic Python/testing or ISTQB Foundation-level knowledge recommended. USD 69 exam/86 retake option, seven-day wait after failure. Dedicated PCET practice still in development; PT101 Pro assessment does not prove that product launched. Career/salary assertions not independently validated. No account, purchase, booking or protected content.",
+    "openedg-python-testing-101": "Complete fresh public PT101 outline read. Free Core lessons/module tests; USD 49 Full/Pro interactive exercises/labs/quizzes/full practice test/diploma. Provider advertises 38 labs and four weeks at about one hour/day; these are provider claims, not completed work. English, beginner, basic Python/PCEP knowledge recommended, no formal prerequisite, PCET alignment and PT102 relationship. No enrolled interior or equivalence to the dedicated in-development PCET practice kit verified.",
+    "python-logging-documentation": "Fresh current generic page retrieved but not read for this PCET review. Selected version-pinned Python 3.13 contracts supply technical support; success is network health, not a whole-manual audit.",
+    "python-unittest-documentation": "Fresh generic manual retrieved but not read for this PCET review. Selected Python 3.13 unittest/mock contracts and exact original executions supply bounded support. No claim to current generic manual completion.",
+    "istqb-foundation-certification": "Complete fresh CTFL overview read: version 4.0, syllabus download labeled 4.0.1, content/business outcomes/self-study, 40 questions/26 passing/60 minutes with stated non-native extension. These are a different exam, not PCET rules. Linked PDF and sample questions not read; no course runtime verified.",
+    "oreilly-software-testing-second": "Page automation-blocked; current access, book contents and duration unverified. Retained only as optional prior learning lead. Removed unsupported 15–25-hour suggestion; no book text or protected material copied.",
+    "pcet-testing-policies": "Direct retrieval failed; indexed search did not yield PCET-specific policy content. Unread. Incidental PCAT/PCAP/general policies are not substituted as PCET evidence. Only logistics explicitly found on the complete PCET credential page are reported.",
+    "python313-unittest": "Selected lines 43–172 introduction/basic example and partial CLI opening; 286–353 per-test fixtures/setup/teardown/suite and file-separation opening; 460–490 subtest introduction and partial failure output; 703–771 assertRaises/Regex and assertWarns through 770, next signature only; 784–827 complete assertLogs/assertNoLogs plus next table opening; 1029–1057 complete addCleanup/enterContext/doCleanups and partial class cleanup. Remaining manual unread. TestCase assertions, 25 methods and isolated fixtures exercised normally and optimized.",
+    "python313-unittest-mock": "Selected 170–261 autospec/signature examples and Mock constructor parameters spec/spec_set/side_effect/wraps/return/name, assert_called opening; 1544–1593 complete where-to-patch and descriptor sections, magic-method opening only. Remaining manual unread. Original fake/stub/dummy/spy/autospec and restored patch execute; no real provider behavior inferred.",
+    "python313-logging": "Selected 103–233 logger/getLogger/hierarchy/propagate/setLevel/getChild/debug opening with incomplete keyword discussion; 321–411 add/removeHandler/caller/handle/makeRecord/hasHandlers and complete standard-level table, Handler opening only. Rest unread. Isolated five-level capture restores handler/level/propagation; root logger unchanged.",
+    "python313-pdb": "Selected 157–221 complete Pdb constructor and run family through command/convenience-variable opening; 248–269 break/tbreak and clear opening; 315–365 complete step/next/until/return/continue/jump/list/longlist/args/p and pp opening. Remaining manual unread. Actual scripted Pdb uses temporary breakpoint, p/n/c and restores tracing. No interactive IDE session.",
+    "python313-simple-statements": "Selected 259–294: complete assert section 259–277, pass section and partial del introduction. Remaining reference unread. Isolated normal/optimized subprocesses show assertion removal; utility validation uses explicit raises.",
+    "pep-8-style-guide": "Fresh text body is byte-identical to preceding PCAD receipt, SHA-256 a5ce247d913af2064748c506a90471d33f3a991f15930579f22c7948a6ddb834. Reused selected maximum-line-length 183–216 and operator-break opening 217–220 reading. No new whole-PEP audit. Selected Ruff rules at 79 columns passed, not complete style conformance.",
+    "coverage-branch": "Complete fresh branch documentation read: statements versus branch destinations, combined denominator, JSON separation, exclusions, structurally partial branches, generators/loops. Documentation 7.16.2 versus installed 7.15.4. Original probe demonstrates 5/5 statements with 1/2 branches and a 100%-covered wrong-value mutant; no production or whole-utility coverage claim.",
+    "coverage-api": "Selected 59–165 constructor/main parameters (tail types incomplete); 350–368 complete json_report and incidental next LCOV section; 444–480 set-option tail, complete start 458–468/stop 469–472, partial switch-context opening. Rest unread. Used data_file=None/config_file=False/branch/include with stop in finally and temporary JSON report, not persistent coverage data.",
+    "coverage-json": "Complete fresh JSON-reporting body read, including output/data/include options and fail-under exit behavior. Original probe inspects separate statement/branch counts. Linked chapters not implicitly reviewed.",
+    "pylint-running": "Latest URL identifies development documentation 4.2.0-dev0. Lines 1–100 navigation only; selected 859–920 actual invocation/modules/files/PYTHONPATH/checkers/enable-disable and configuration opening; 974–1009 parallel note and full bitmask exit-code table. Remaining navigation/configuration unread. Pylint absent and never executed or installed.",
+    "flake8-quickstart": "Candidate latest/user/quickstart.html returned 404. Retained as failed discovery evidence, not cited by guide or silently represented as working. Separate stable index URL was registered, fetched and read.",
+    "flake8-stable-documentation": "Complete fresh stable index/quickstart read; version 7.4.1 supersedes earlier indexed 7.3.0 observation. Module invocation and select/ignore syntax reviewed; installation instructions read only, not executed. Linked chapters unread. Flake8 absent and not installed.",
+    "ruff-linter": "Selected 1–137 introduction/check and complete rule selection/CLI priority, not rule categories; 227–250 safe/unsafe fix example and unsafe opt-in opening; 469–490 complete exit codes and related flags. Remaining page unread. Existing 0.16.4 selected lint and isolated F401 probe executed; no autofix/install or substitute claim for Pylint/Flake8."
+  },
+  "public_examples": [
+    {
+      "filename": "utility.py",
+      "sha256": "486509fbc3b5489bc3556c9b1c386fbccaf179c0a26634844f7a72ed9a8040d3",
+      "bytes": 3339,
+      "syntax_checked": true,
+      "executed": true,
+      "code": "\"\"\"Provide original, synthetic PCET requirements for testing exercises.\n\nFees are teaching tokens, not currency. No real login, network call,\naccount or payment is implemented. Streams and clients are caller-owned.\n\"\"\"\n\nimport json\nimport logging\n\n\nLOGGER = logging.getLogger(__name__)\n\n\ndef fee(quantity, priority=False):\n    \"\"\"Price 1..10 integer items: regular 10+2q, priority 20+3q tokens.\n\n    Reject booleans/non-int quantities and non-bool priority with TypeError;\n    reject integers outside the inclusive range with ValueError.\n    \"\"\"\n    if type(quantity) is not int:\n        raise TypeError(\"quantity must be an int, not bool\")\n    if type(priority) is not bool:\n        raise TypeError(\"priority must be bool\")\n    if not 1 <= quantity <= 10:\n        raise ValueError(\"quantity must be in 1..10\")\n    if priority:\n        return 20 + 3 * quantity\n    return 10 + 2 * quantity\n\n\ndef total_fees(quantities, priority=False):\n    \"\"\"Return the sum for an iterable; empty input returns zero tokens.\"\"\"\n    total = 0\n    for quantity in quantities:\n        total += fee(quantity, priority)\n    return total\n\n\ndef read_quantities(reader):\n    \"\"\"Read a JSON list from a caller-owned stream and validate its items.\"\"\"\n    values = json.load(reader)\n    if not isinstance(values, list):\n        raise TypeError(\"expected a JSON list\")\n    for value in values:\n        fee(value)\n    return values\n\n\ndef publish_receipt(quantity, priority, clock, client):\n    \"\"\"Send one synthetic receipt using injected clock and client objects.\n\n    Validate the fee before calling either collaborator. Propagate a client\n    exception without retrying; a send failure is not a successful receipt.\n    \"\"\"\n    amount = fee(quantity, priority)\n    payload = {\"quantity\": quantity, \"fee\": amount, \"time\": clock()}\n    client.send(payload)\n    return payload\n\n\nclass ReceiptClient:\n    \"\"\"Declare the one-method contract used by a test double.\"\"\"\n\n    def send(self, payload):\n        \"\"\"Accept one receipt; concrete collaborators define delivery.\"\"\"\n        raise NotImplementedError\n\n\nclass Lockout:\n    \"\"\"Model a toy three-failure lockout, not a production auth control.\n\n    A success before lockout resets consecutive failures. Once locked,\n    attempts cannot unlock the state. An explicit authorized reset can.\n    \"\"\"\n\n    def __init__(self):\n        self.failures = 0\n        self.locked = False\n\n    def attempt(self, correct):\n        \"\"\"Return acceptance for a Boolean simulated credential outcome.\"\"\"\n        if type(correct) is not bool:\n            raise TypeError(\"correct must be bool\")\n        if self.locked:\n            LOGGER.info(\"attempt blocked; state=locked\")\n            return False\n        if correct:\n            self.failures = 0\n            LOGGER.info(\"attempt accepted; failures=0\")\n            return True\n        self.failures += 1\n        if self.failures == 3:\n            self.locked = True\n        LOGGER.info(\"attempt rejected; failures=%d\", self.failures)\n        return False\n\n    def reset(self, authorized):\n        \"\"\"Reset state only for explicit True; reject other inputs.\"\"\"\n        if type(authorized) is not bool:\n            raise TypeError(\"authorized must be bool\")\n        if not authorized:\n            raise PermissionError(\"reset denied\")\n        self.failures = 0\n        self.locked = False\n\n"
+    },
+    {
+      "filename": "test_utility.py",
+      "sha256": "4957e792e920f10206d18f7eb0285092edfbb71f0b8cd9c085a4791e74844fb7",
+      "bytes": 8731,
+      "syntax_checked": true,
+      "executed": true,
+      "code": "\"\"\"Test original PCET requirements with explicit expected outcomes.\n\nRun python -B -Werror -m unittest -v test_utility. These TestCase assertions\nremain active under -O. Subtests are input cases, not separate test methods.\n\"\"\"\n\nfrom io import StringIO\nimport json\nimport unittest\nfrom unittest.mock import Mock, create_autospec, patch\n\nimport utility\n\n\nclass FakeClient(utility.ReceiptClient):\n    \"\"\"Keep shallow copies of flat receipts in memory, without delivery.\"\"\"\n\n    def __init__(self):\n        self.receipts = []\n\n    def send(self, payload):\n        self.receipts.append(dict(payload))\n\n\nclass FeeTests(unittest.TestCase):\n    def test_regular_boundaries(self):\n        for quantity, expected in [(1, 12), (2, 14), (9, 28), (10, 30)]:\n            with self.subTest(quantity=quantity):\n                self.assertEqual(utility.fee(quantity), expected)\n\n    def test_priority_boundaries(self):\n        for quantity, expected in [(1, 23), (2, 26), (9, 47), (10, 50)]:\n            with self.subTest(quantity=quantity):\n                self.assertEqual(utility.fee(quantity, True), expected)\n\n    def test_outside_partitions(self):\n        for quantity in [-100, 0, 11, 100]:\n            with self.subTest(quantity=quantity):\n                with self.assertRaisesRegex(ValueError, r\"1\\.\\.10\"):\n                    utility.fee(quantity)\n\n    def test_wrong_quantity_types(self):\n        for quantity in [True, False, 1.0, \"1\", None, []]:\n            with self.subTest(quantity=quantity):\n                with self.assertRaises(TypeError):\n                    utility.fee(quantity)\n\n    def test_priority_is_boolean(self):\n        for priority in [0, 1, \"yes\", None]:\n            with self.subTest(priority=priority):\n                with self.assertRaises(TypeError):\n                    utility.fee(1, priority)\n\n    def test_zero_one_many_loop_iterations(self):\n        for values, expected in [([], 0), ([1], 12), ([1, 2, 10], 56)]:\n            with self.subTest(values=values):\n                self.assertEqual(utility.total_fees(values), expected)\n        self.assertEqual(utility.total_fees(iter([1, 10]), True), 73)\n\n    def test_invalid_item_propagates(self):\n        with self.assertRaises(ValueError):\n            utility.total_fees([1, 0, 2])\n\n    def test_validity_priority_decision_table(self):\n        rows = [(0, False, None), (0, True, None),\n                (2, False, 14), (2, True, 26)]\n        for quantity, priority, expected in rows:\n            with self.subTest(quantity=quantity, priority=priority):\n                if expected is None:\n                    with self.assertRaises(ValueError):\n                        utility.fee(quantity, priority)\n                else:\n                    self.assertEqual(utility.fee(quantity, priority), expected)\n\n\nclass StreamTests(unittest.TestCase):\n    def test_working_in_memory_file(self):\n        stream = StringIO(\"[1, 2, 10]\")\n        self.addCleanup(stream.close)\n        self.assertEqual(utility.read_quantities(stream), [1, 2, 10])\n        self.assertFalse(stream.closed)\n\n    def test_empty_list(self):\n        with StringIO(\"[]\") as stream:\n            self.assertEqual(utility.read_quantities(stream), [])\n\n    def test_invalid_json_and_shape(self):\n        with StringIO(\"{\") as stream:\n            with self.assertRaises(json.JSONDecodeError):\n                utility.read_quantities(stream)\n        with StringIO('{\"quantity\": 1}') as stream:\n            with self.assertRaises(TypeError):\n                utility.read_quantities(stream)\n\n    def test_invalid_json_item(self):\n        for text, error in [(\"[0]\", ValueError), (\"[true]\", TypeError)]:\n            with self.subTest(text=text), StringIO(text) as stream:\n                with self.assertRaises(error):\n                    utility.read_quantities(stream)\n\n    def test_reader_failure(self):\n        reader = Mock(spec_set=[\"read\"])\n        reader.read.side_effect = OSError(\"synthetic read failure\")\n        with self.assertRaisesRegex(OSError, \"synthetic read failure\"):\n            utility.read_quantities(reader)\n\n\nclass ReceiptTests(unittest.TestCase):\n    def test_stub_clock_and_working_fake(self):\n        # Arrange a fixed-time stub and an in-memory working fake.\n        client = FakeClient()\n        def clock():\n            return 123\n        # Act once, then assert observable state and the complete contract.\n        result = utility.publish_receipt(2, False, clock, client)\n        expected = {\"quantity\": 2, \"fee\": 14, \"time\": 123}\n        self.assertEqual(result, expected)\n        self.assertEqual(client.receipts, [expected])\n        result[\"fee\"] = -1\n        self.assertEqual(client.receipts[0][\"fee\"], 14)\n\n    def test_dummy_collaborators_not_used_on_invalid_input(self):\n        with self.assertRaises(ValueError):\n            utility.publish_receipt(0, False, object(), object())\n\n    def test_spy_wraps_real_fake_operation(self):\n        client = FakeClient()\n        with patch.object(client, \"send\", wraps=client.send) as spy:\n            result = utility.publish_receipt(1, True, lambda: 9, client)\n            spy.assert_called_once_with(result)\n        self.assertEqual(len(client.receipts), 1)\n\n    def test_autospec_mock_and_call_contract(self):\n        client = create_autospec(utility.ReceiptClient, instance=True,\n                                 spec_set=True)\n        clock = Mock(return_value=77)\n        utility.publish_receipt(10, True, clock, client)\n        client.send.assert_called_once_with(\n            {\"quantity\": 10, \"fee\": 50, \"time\": 77})\n        clock.assert_called_once_with()\n        with self.assertRaises(TypeError):\n            client.send()\n        with self.assertRaises(AttributeError):\n            client.sned\n\n    def test_client_failure_is_not_success_or_retry(self):\n        client = create_autospec(utility.ReceiptClient, instance=True)\n        client.send.side_effect = OSError(\"synthetic send failure\")\n        with self.assertRaises(OSError):\n            utility.publish_receipt(1, False, lambda: 0, client)\n        self.assertEqual(client.send.call_count, 1)\n\n    def test_patch_lookup_and_restore(self):\n        original = utility.fee\n        with patch(\"utility.fee\", autospec=True, return_value=99) as mock_fee:\n            result = utility.publish_receipt(1, False, lambda: 0, FakeClient())\n            self.assertEqual(result[\"fee\"], 99)\n            mock_fee.assert_called_once_with(1, False)\n        self.assertIs(utility.fee, original)\n        self.assertEqual(utility.fee(1), 12)\n\n\nclass StateTests(unittest.TestCase):\n    def setUp(self):\n        self.gate = utility.Lockout()\n\n    def test_three_consecutive_failures_lock(self):\n        for count in [1, 2, 3]:\n            with self.subTest(count=count):\n                self.assertFalse(self.gate.attempt(False))\n                self.assertEqual(self.gate.failures, count)\n                self.assertEqual(self.gate.locked, count == 3)\n\n    def test_success_before_lock_resets_count(self):\n        self.gate.attempt(False)\n        self.gate.attempt(False)\n        self.assertTrue(self.gate.attempt(True))\n        self.assertEqual(self.gate.failures, 0)\n        self.assertFalse(self.gate.locked)\n\n    def test_locked_success_cannot_unlock(self):\n        for _ in range(3):\n            self.gate.attempt(False)\n        with self.assertLogs(utility.LOGGER, level=\"INFO\") as captured:\n            self.assertFalse(self.gate.attempt(True))\n        self.assertEqual(captured.records[0].getMessage(),\n                         \"attempt blocked; state=locked\")\n        self.assertTrue(self.gate.locked)\n        self.assertEqual(self.gate.failures, 3)\n\n    def test_only_authorized_reset_unlocks(self):\n        for _ in range(3):\n            self.gate.attempt(False)\n        with self.assertRaises(PermissionError):\n            self.gate.reset(False)\n        self.assertTrue(self.gate.locked)\n        self.gate.reset(True)\n        self.assertFalse(self.gate.locked)\n        self.assertEqual(self.gate.failures, 0)\n        self.assertTrue(self.gate.attempt(True))\n\n    def test_wrong_event_types_do_not_mutate(self):\n        for event in [None, 0, 1, \"yes\"]:\n            with self.subTest(event=event):\n                with self.assertRaises(TypeError):\n                    self.gate.attempt(event)\n                with self.assertRaises(TypeError):\n                    self.gate.reset(event)\n                self.assertEqual((self.gate.failures, self.gate.locked),\n                                 (0, False))\n\n    def test_new_instance_is_independent(self):\n        self.gate.attempt(False)\n        other = utility.Lockout()\n        self.assertIsNot(other, self.gate)\n        self.assertEqual(other.failures, 0)\n\n\nif __name__ == \"__main__\":\n    unittest.main()\n"
+    },
+    {
+      "filename": "probes.py",
+      "sha256": "43eb5a41311db81d7336eb41b1b1e4a32baa7128ae44bcd3deadaa4c4b310b2e",
+      "bytes": 11613,
+      "syntax_checked": true,
+      "executed": true,
+      "code": "\"\"\"Demonstrate coverage limits, mutation, refactoring and debugger evidence.\n\nUse existing coverage.py and Ruff packages. Run python -B -Werror probes.py.\nOnly original temporary modules under this script's directory are created;\nthey are removed on exit. This prints a JSON report, not a real test verdict\nabout a production system. Expected demonstration failures are inspected.\n\"\"\"\n\nfrom contextlib import redirect_stdout\nfrom hashlib import sha256\nimport importlib.util\nfrom io import StringIO\nimport json\nimport logging\nfrom pathlib import Path\nimport pdb\nimport platform\nimport subprocess\nimport sys\nfrom tempfile import TemporaryDirectory\n\nimport coverage\n\n\nCHECKS = []\nREBATE = '''\"\"\"Original contract: 80 tokens for members, 100 for others.\"\"\"\n\n\ndef rebate(member):\n    tokens = 100\n    if member:\n        tokens = 80\n    return tokens\n'''\nDEBUG_SOURCE = '''\"\"\"Original off-by-one defect for a debugger exercise.\"\"\"\n\n\ndef buggy_quantity(quantity):\n    accepted = 1 <= quantity < 10\n    return accepted\n'''\n\n\ndef check(condition, label):\n    \"\"\"Record a condition without depending on removable assert syntax.\"\"\"\n    if not condition:\n        raise AssertionError(label)\n    CHECKS.append(label)\n\n\ndef load_module(path, name):\n    \"\"\"Load a fresh original temporary module by its verified local path.\"\"\"\n    spec = importlib.util.spec_from_file_location(name, path)\n    module = importlib.util.module_from_spec(spec)\n    spec.loader.exec_module(module)\n    return module\n\n\ndef measure(folder, name, body, inputs):\n    \"\"\"Measure only one original module, including its import statements.\"\"\"\n    path = folder / (name + \".py\")\n    path.write_text(body, encoding=\"utf-8\")\n    monitor = coverage.Coverage(data_file=None, config_file=False,\n                                branch=True, include=[str(path)])\n    values = []\n    monitor.start()\n    try:\n        module = load_module(path, name)\n        for member in inputs:\n            value = module.rebate(member)\n            check(type(value) is int, name + \" weak type-only assertion\")\n            values.append(value)\n    finally:\n        monitor.stop()\n    report_path = folder / (name + \".json\")\n    monitor.json_report(morfs=[str(path)], outfile=str(report_path))\n    report = json.loads(report_path.read_text(encoding=\"utf-8\"))\n    check(len(report[\"files\"]) == 1, name + \" single measured module\")\n    detail = next(iter(report[\"files\"].values()))\n    return {\"summary\": detail[\"summary\"],\n            \"executed_lines\": detail[\"executed_lines\"],\n            \"missing_lines\": detail[\"missing_lines\"],\n            \"missing_branches\": detail[\"missing_branches\"],\n            \"values\": values,\n            \"source_sha256\": sha256(body.encode()).hexdigest()}\n\n\ndef coverage_limits(folder):\n    \"\"\"Compare weak coverage assertions with a semantic oracle.\"\"\"\n    partial = measure(folder, \"partial\", REBATE, [True])\n    complete = measure(folder, \"complete\", REBATE, [False, True])\n    mutated = REBATE.replace(\"tokens = 80\", \"tokens = 81\")\n    mutant = measure(folder, \"mutant\", mutated, [False, True])\n    for label, result in [(\"partial\", partial), (\"complete\", complete),\n                          (\"mutant\", mutant)]:\n        summary = result[\"summary\"]\n        check(summary[\"missing_lines\"] == 0, label + \" all statements ran\")\n        check(summary[\"num_branches\"] == 2, label + \" two branch outcomes\")\n    check(partial[\"summary\"][\"covered_branches\"] == 1,\n          \"one branch missing despite full statement coverage\")\n    check(complete[\"summary\"][\"covered_branches\"] == 2,\n          \"both original branch outcomes covered\")\n    check(mutant[\"summary\"][\"covered_branches\"] == 2,\n          \"both mutant branch outcomes covered\")\n    expected = [100, 80]\n    check(complete[\"values\"] == expected, \"strong original value oracle\")\n    failures = [{\"member\": member, \"expected\": want, \"actual\": actual}\n                for member, want, actual in zip([False, True], expected,\n                                                mutant[\"values\"])\n                if want != actual]\n    check(failures == [{\"member\": True, \"expected\": 80, \"actual\": 81}],\n          \"strong oracle kills the deliberately changed mutant\")\n    return {\"one_input_weak_assertion\": partial,\n            \"both_inputs_weak_assertion\": complete,\n            \"mutant_both_inputs_weak_assertion\": mutant,\n            \"strong_oracle_expected_failures\": failures,\n            \"denominator\": \"This original module only; no added exclusions.\"}\n\n\ndef refactoring():\n    \"\"\"Compare both representations over the small stated input domain.\"\"\"\n    def before(quantity, priority):\n        if priority:\n            return 20 + 3 * quantity\n        return 10 + 2 * quantity\n\n    def after(quantity, priority):\n        base, rate = (20, 3) if priority else (10, 2)\n        return base + rate * quantity\n\n    expected = {False: [12, 14, 16, 18, 20, 22, 24, 26, 28, 30],\n                True: [23, 26, 29, 32, 35, 38, 41, 44, 47, 50]}\n    comparisons = 0\n    for priority, values in expected.items():\n        for quantity, value in enumerate(values, 1):\n            check(before(quantity, priority) == value\n                  and after(quantity, priority) == value,\n                  f\"refactor oracle {quantity} {priority}\")\n            comparisons += 1\n    return {\"domain\": \"int quantity1..10 and bool priority only\",\n            \"comparisons\": comparisons,\n            \"limit\": \"No claim about invalid inputs or arbitrary refactors.\"}\n\n\ndef debugging(folder):\n    \"\"\"Capture print tracing and an actual scripted pdb breakpoint session.\"\"\"\n    path = folder / \"debug_target.py\"\n    path.write_text(DEBUG_SOURCE, encoding=\"utf-8\")\n    target = load_module(path, \"debug_target\")\n    output = StringIO()\n    with redirect_stdout(output):\n        print(\"quantity=10, expected=True, actual=\",\n              target.buggy_quantity(10), sep=\"\")\n    return_line = target.buggy_quantity.__code__.co_firstlineno + 2\n    commands = (f\"p quantity\\ntbreak {return_line}\\nc\\n\"\n                \"p accepted\\nn\\nc\\n\")\n    transcript = StringIO()\n    prior_trace = sys.gettrace()\n    debugger = pdb.Pdb(stdin=StringIO(commands), stdout=transcript,\n                       nosigint=True, readrc=False)\n    debugger.use_rawinput = False\n    actual = debugger.runcall(target.buggy_quantity, 10)\n    text = transcript.getvalue().replace(str(folder).lower(), \"<temporary>\")\n    text = text.replace(str(folder), \"<temporary>\")\n    check(actual is False, \"debugger reproduces off-by-one defect\")\n    check(\"10\" in text and \"False\" in text and \"Breakpoint\" in text,\n          \"debugger captured input, breakpoint and wrong state\")\n    check(sys.gettrace() is prior_trace, \"debugger restored tracing state\")\n    check(\"expected=True, actual=False\" in output.getvalue(),\n          \"print trace exposes contract failure\")\n    return {\"print_trace\": output.getvalue(), \"pdb_commands\": commands,\n            \"pdb_transcript\": text, \"expected\": True, \"actual\": actual,\n            \"diagnosis\": \"Upper bound rejects 10; the contract includes it.\",\n            \"limit\": \"Scripted stdlib pdb, not an interactive IDE session.\"}\n\n\ndef optimization():\n    \"\"\"Show why mandatory validation must not rely on an assert statement.\"\"\"\n    source = (\n        \"def validate(q):\\n\"\n        \"    assert 1 <= q <= 10\\n\"\n        \"    return q\\n\"\n        \"try:\\n\"\n        \"    print('accepted:', validate(0))\\n\"\n        \"except AssertionError:\\n\"\n        \"    print('AssertionError')\\n\"\n    )\n    rows = []\n    for optimized in [False, True]:\n        args = [sys.executable, \"-B\", \"-Werror\"]\n        if optimized:\n            args.append(\"-O\")\n        result = subprocess.run(args + [\"-c\", source], capture_output=True,\n                                text=True, timeout=10)\n        check(result.returncode == 0 and not result.stderr,\n              \"assert demonstration subprocess completed \" + str(optimized))\n        rows.append({\"optimized\": optimized, \"stdout\": result.stdout.strip()})\n    check(rows[0][\"stdout\"] == \"AssertionError\", \"normal assertion enforces\")\n    check(rows[1][\"stdout\"] == \"accepted: 0\", \"optimization removes assertion\")\n    return {\"source\": source, \"results\": rows}\n\n\ndef logging_probe():\n    \"\"\"Capture levels without changing the root logger or leaving handlers.\"\"\"\n    logger = logging.getLogger(\"pcet.original.probe\")\n    prior_level, prior_propagate = logger.level, logger.propagate\n    prior_handlers = tuple(logger.handlers)\n    sink = StringIO()\n    handler = logging.StreamHandler(sink)\n    handler.setFormatter(logging.Formatter(\"%(levelname)s:%(message)s\"))\n    logger.setLevel(logging.DEBUG)\n    logger.propagate = False\n    logger.addHandler(handler)\n    try:\n        for level in [logging.DEBUG, logging.INFO, logging.WARNING,\n                      logging.ERROR, logging.CRITICAL]:\n            logger.log(level, \"synthetic event %d\", level)\n        text = sink.getvalue()\n    finally:\n        logger.removeHandler(handler)\n        handler.close()\n        logger.setLevel(prior_level)\n        logger.propagate = prior_propagate\n        sink.close()\n    check([v.split(\":\")[0] for v in text.splitlines()]\n          == [\"DEBUG\", \"INFO\", \"WARNING\", \"ERROR\", \"CRITICAL\"],\n          \"five logging levels captured\")\n    check(tuple(logger.handlers) == prior_handlers\n          and logger.level == prior_level\n          and logger.propagate == prior_propagate, \"logger settings restored\")\n    return text\n\n\ndef lint_probe():\n    \"\"\"Triage an unused import; show a wrong value can pass selected lint.\"\"\"\n    bodies = {\"unused_import\": \"import math\\n\" + REBATE,\n              \"wrong_value\": REBATE.replace(\"tokens = 80\", \"tokens = 81\")}\n    receipts = {}\n    args = [sys.executable, \"-B\", \"-Werror\", \"-m\", \"ruff\", \"check\",\n            \"--isolated\", \"--select\", \"F401\", \"--output-format\", \"json\",\n            \"--stdin-filename\", \"original_probe.py\", \"-\"]\n    for label, source in bodies.items():\n        result = subprocess.run(args, input=source, capture_output=True,\n                                text=True, timeout=15)\n        check(not result.stderr, label + \" lint has no tool error\")\n        diagnostics = json.loads(result.stdout)\n        receipts[label] = {\"exit_code\": result.returncode,\n                           \"codes\": [d[\"code\"] for d in diagnostics]}\n    check(receipts[\"unused_import\"] == {\"exit_code\": 1, \"codes\": [\"F401\"]},\n          \"unused import detected by selected static rule\")\n    check(receipts[\"wrong_value\"] == {\"exit_code\": 0, \"codes\": []},\n          \"incorrect business value passes selected static rule\")\n    return {\"rule\": \"F401 only, isolated configuration\", \"results\": receipts,\n            \"limit\": \"No Pylint/Flake8 execution or complete style audit.\"}\n\n\ndef main():\n    \"\"\"Run bounded probes and confirm temporary-directory cleanup.\"\"\"\n    root = Path(__file__).resolve().parent\n    with TemporaryDirectory(prefix=\"pcet-probe-\", dir=root) as temporary:\n        folder = Path(temporary).resolve()\n        check(folder.is_relative_to(root), \"temporary path inside workbook\")\n        report = {\"python\": platform.python_version(),\n                  \"coverage\": coverage.__version__,\n                  \"coverage_limits\": coverage_limits(folder),\n                  \"refactoring\": refactoring(), \"debugging\": debugging(folder),\n                  \"optimization\": optimization(), \"logging\": logging_probe(),\n                  \"static_analysis\": lint_probe()}\n    check(not folder.exists(), \"temporary modules/reports removed\")\n    report[\"checks\"] = CHECKS\n    report[\"passed_checks\"] = len(CHECKS)\n    print(json.dumps(report, indent=2))\n\n\nif __name__ == \"__main__\":\n    main()\n"
+    }
+  ],
+  "local_execution_evidence": [
+    {
+      "program": "unittest",
+      "command": [
+        "python",
+        "-B",
+        "-Werror",
+        "-m",
+        "unittest",
+        "-v",
+        "test_utility"
+      ],
+      "started_at": "2026-09-30T04:09:40.685490+00:00",
+      "elapsed_seconds": 0.153,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_invalid_item_propagates (test_utility.FeeTests.test_invalid_item_propagates) ... ok\ntest_outside_partitions (test_utility.FeeTests.test_outside_partitions) ... ok\ntest_priority_boundaries (test_utility.FeeTests.test_priority_boundaries) ... ok\ntest_priority_is_boolean (test_utility.FeeTests.test_priority_is_boolean) ... ok\ntest_regular_boundaries (test_utility.FeeTests.test_regular_boundaries) ... ok\ntest_validity_priority_decision_table (test_utility.FeeTests.test_validity_priority_decision_table) ... ok\ntest_wrong_quantity_types (test_utility.FeeTests.test_wrong_quantity_types) ... ok\ntest_zero_one_many_loop_iterations (test_utility.FeeTests.test_zero_one_many_loop_iterations) ... ok\ntest_autospec_mock_and_call_contract (test_utility.ReceiptTests.test_autospec_mock_and_call_contract) ... ok\ntest_client_failure_is_not_success_or_retry (test_utility.ReceiptTests.test_client_failure_is_not_success_or_retry) ... ok\ntest_dummy_collaborators_not_used_on_invalid_input (test_utility.ReceiptTests.test_dummy_collaborators_not_used_on_invalid_input) ... ok\ntest_patch_lookup_and_restore (test_utility.ReceiptTests.test_patch_lookup_and_restore) ... ok\ntest_spy_wraps_real_fake_operation (test_utility.ReceiptTests.test_spy_wraps_real_fake_operation) ... ok\ntest_stub_clock_and_working_fake (test_utility.ReceiptTests.test_stub_clock_and_working_fake) ... ok\ntest_locked_success_cannot_unlock (test_utility.StateTests.test_locked_success_cannot_unlock) ... ok\ntest_new_instance_is_independent (test_utility.StateTests.test_new_instance_is_independent) ... ok\ntest_only_authorized_reset_unlocks (test_utility.StateTests.test_only_authorized_reset_unlocks) ... ok\ntest_success_before_lock_resets_count (test_utility.StateTests.test_success_before_lock_resets_count) ... ok\ntest_three_consecutive_failures_lock (test_utility.StateTests.test_three_consecutive_failures_lock) ... ok\ntest_wrong_event_types_do_not_mutate (test_utility.StateTests.test_wrong_event_types_do_not_mutate) ... ok\ntest_empty_list (test_utility.StreamTests.test_empty_list) ... ok\ntest_invalid_json_and_shape (test_utility.StreamTests.test_invalid_json_and_shape) ... ok\ntest_invalid_json_item (test_utility.StreamTests.test_invalid_json_item) ... ok\ntest_reader_failure (test_utility.StreamTests.test_reader_failure) ... ok\ntest_working_in_memory_file (test_utility.StreamTests.test_working_in_memory_file) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 0.004s\n\nOK\n",
+      "optimized": false,
+      "test_methods": 25
+    },
+    {
+      "program": "probes",
+      "command": [
+        "python",
+        "-B",
+        "-Werror",
+        "probes.py"
+      ],
+      "started_at": "2026-09-30T04:09:40.838667+00:00",
+      "elapsed_seconds": 0.571,
+      "exit_code": 0,
+      "stdout": "{\n  \"python\": \"3.13.14\",\n  \"coverage\": \"7.15.4\",\n  \"coverage_limits\": {\n    \"one_input_weak_assertion\": {\n      \"summary\": {\n        \"covered_lines\": 5,\n        \"num_statements\": 5,\n        \"percent_covered\": 85.71428571428571,\n        \"percent_covered_display\": \"86\",\n        \"missing_lines\": 0,\n        \"excluded_lines\": 0,\n        \"percent_statements_covered\": 100.0,\n        \"percent_statements_covered_display\": \"100\",\n        \"num_branches\": 2,\n        \"num_partial_branches\": 1,\n        \"covered_branches\": 1,\n        \"missing_branches\": 1,\n        \"percent_branches_covered\": 50.0,\n        \"percent_branches_covered_display\": \"50\"\n      },\n      \"executed_lines\": [\n        4,\n        5,\n        6,\n        7,\n        8\n      ],\n      \"missing_lines\": [],\n      \"missing_branches\": [\n        [\n          6,\n          8\n        ]\n      ],\n      \"values\": [\n        80\n      ],\n      \"source_sha256\": \"c15e5f19e20a09f793f3afa052caa820078d7851badb3ed5e7d20ca405c5d476\"\n    },\n    \"both_inputs_weak_assertion\": {\n      \"summary\": {\n        \"covered_lines\": 5,\n        \"num_statements\": 5,\n        \"percent_covered\": 100.0,\n        \"percent_covered_display\": \"100\",\n        \"missing_lines\": 0,\n        \"excluded_lines\": 0,\n        \"percent_statements_covered\": 100.0,\n        \"percent_statements_covered_display\": \"100\",\n        \"num_branches\": 2,\n        \"num_partial_branches\": 0,\n        \"covered_branches\": 2,\n        \"missing_branches\": 0,\n        \"percent_branches_covered\": 100.0,\n        \"percent_branches_covered_display\": \"100\"\n      },\n      \"executed_lines\": [\n        4,\n        5,\n        6,\n        7,\n        8\n      ],\n      \"missing_lines\": [],\n      \"missing_branches\": [],\n      \"values\": [\n        100,\n        80\n      ],\n      \"source_sha256\": \"c15e5f19e20a09f793f3afa052caa820078d7851badb3ed5e7d20ca405c5d476\"\n    },\n    \"mutant_both_inputs_weak_assertion\": {\n      \"summary\": {\n        \"covered_lines\": 5,\n        \"num_statements\": 5,\n        \"percent_covered\": 100.0,\n        \"percent_covered_display\": \"100\",\n        \"missing_lines\": 0,\n        \"excluded_lines\": 0,\n        \"percent_statements_covered\": 100.0,\n        \"percent_statements_covered_display\": \"100\",\n        \"num_branches\": 2,\n        \"num_partial_branches\": 0,\n        \"covered_branches\": 2,\n        \"missing_branches\": 0,\n        \"percent_branches_covered\": 100.0,\n        \"percent_branches_covered_display\": \"100\"\n      },\n      \"executed_lines\": [\n        4,\n        5,\n        6,\n        7,\n        8\n      ],\n      \"missing_lines\": [],\n      \"missing_branches\": [],\n      \"values\": [\n        100,\n        81\n      ],\n      \"source_sha256\": \"402409d6238d5d0c43397f9083b9a86d50a173717f7887ed8da04daa18f6952f\"\n    },\n    \"strong_oracle_expected_failures\": [\n      {\n        \"member\": true,\n        \"expected\": 80,\n        \"actual\": 81\n      }\n    ],\n    \"denominator\": \"This original module only; no added exclusions.\"\n  },\n  \"refactoring\": {\n    \"domain\": \"int quantity1..10 and bool priority only\",\n    \"comparisons\": 20,\n    \"limit\": \"No claim about invalid inputs or arbitrary refactors.\"\n  },\n  \"debugging\": {\n    \"print_trace\": \"quantity=10, expected=True, actual=False\\n\",\n    \"pdb_commands\": \"p quantity\\ntbreak 6\\nc\\np accepted\\nn\\nc\\n\",\n    \"pdb_transcript\": \"> <temporary>\\\\debug_target.py(5)buggy_quantity()\\n-> accepted = 1 <= quantity < 10\\n(Pdb) 10\\n(Pdb) Breakpoint 1 at <temporary>\\\\debug_target.py:6\\n(Pdb) Deleted breakpoint 1 at <temporary>\\\\debug_target.py:6\\n> <temporary>\\\\debug_target.py(6)buggy_quantity()\\n-> return accepted\\n(Pdb) False\\n(Pdb) --Return--\\n> <temporary>\\\\debug_target.py(6)buggy_quantity()->False\\n-> return accepted\\n(Pdb) \",\n    \"expected\": true,\n    \"actual\": false,\n    \"diagnosis\": \"Upper bound rejects 10; the contract includes it.\",\n    \"limit\": \"Scripted stdlib pdb, not an interactive IDE session.\"\n  },\n  \"optimization\": {\n    \"source\": \"def validate(q):\\n    assert 1 <= q <= 10\\n    return q\\ntry:\\n    print('accepted:', validate(0))\\nexcept AssertionError:\\n    print('AssertionError')\\n\",\n    \"results\": [\n      {\n        \"optimized\": false,\n        \"stdout\": \"AssertionError\"\n      },\n      {\n        \"optimized\": true,\n        \"stdout\": \"accepted: 0\"\n      }\n    ]\n  },\n  \"logging\": \"DEBUG:synthetic event 10\\nINFO:synthetic event 20\\nWARNING:synthetic event 30\\nERROR:synthetic event 40\\nCRITICAL:synthetic event 50\\n\",\n  \"static_analysis\": {\n    \"rule\": \"F401 only, isolated configuration\",\n    \"results\": {\n      \"unused_import\": {\n        \"exit_code\": 1,\n        \"codes\": [\n          \"F401\"\n        ]\n      },\n      \"wrong_value\": {\n        \"exit_code\": 0,\n        \"codes\": []\n      }\n    },\n    \"limit\": \"No Pylint/Flake8 execution or complete style audit.\"\n  },\n  \"checks\": [\n    \"temporary path inside workbook\",\n    \"partial weak type-only assertion\",\n    \"partial single measured module\",\n    \"complete weak type-only assertion\",\n    \"complete weak type-only assertion\",\n    \"complete single measured module\",\n    \"mutant weak type-only assertion\",\n    \"mutant weak type-only assertion\",\n    \"mutant single measured module\",\n    \"partial all statements ran\",\n    \"partial two branch outcomes\",\n    \"complete all statements ran\",\n    \"complete two branch outcomes\",\n    \"mutant all statements ran\",\n    \"mutant two branch outcomes\",\n    \"one branch missing despite full statement coverage\",\n    \"both original branch outcomes covered\",\n    \"both mutant branch outcomes covered\",\n    \"strong original value oracle\",\n    \"strong oracle kills the deliberately changed mutant\",\n    \"refactor oracle 1 False\",\n    \"refactor oracle 2 False\",\n    \"refactor oracle 3 False\",\n    \"refactor oracle 4 False\",\n    \"refactor oracle 5 False\",\n    \"refactor oracle 6 False\",\n    \"refactor oracle 7 False\",\n    \"refactor oracle 8 False\",\n    \"refactor oracle 9 False\",\n    \"refactor oracle 10 False\",\n    \"refactor oracle 1 True\",\n    \"refactor oracle 2 True\",\n    \"refactor oracle 3 True\",\n    \"refactor oracle 4 True\",\n    \"refactor oracle 5 True\",\n    \"refactor oracle 6 True\",\n    \"refactor oracle 7 True\",\n    \"refactor oracle 8 True\",\n    \"refactor oracle 9 True\",\n    \"refactor oracle 10 True\",\n    \"debugger reproduces off-by-one defect\",\n    \"debugger captured input, breakpoint and wrong state\",\n    \"debugger restored tracing state\",\n    \"print trace exposes contract failure\",\n    \"assert demonstration subprocess completed False\",\n    \"assert demonstration subprocess completed True\",\n    \"normal assertion enforces\",\n    \"optimization removes assertion\",\n    \"five logging levels captured\",\n    \"logger settings restored\",\n    \"unused_import lint has no tool error\",\n    \"wrong_value lint has no tool error\",\n    \"unused import detected by selected static rule\",\n    \"incorrect business value passes selected static rule\",\n    \"temporary modules/reports removed\"\n  ],\n  \"passed_checks\": 55\n}\n",
+      "stderr": "",
+      "optimized": false,
+      "checks": 55
+    },
+    {
+      "program": "unittest",
+      "command": [
+        "python",
+        "-B",
+        "-Werror",
+        "-O",
+        "-m",
+        "unittest",
+        "-v",
+        "test_utility"
+      ],
+      "started_at": "2026-09-30T04:09:41.410382+00:00",
+      "elapsed_seconds": 0.191,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_invalid_item_propagates (test_utility.FeeTests.test_invalid_item_propagates) ... ok\ntest_outside_partitions (test_utility.FeeTests.test_outside_partitions) ... ok\ntest_priority_boundaries (test_utility.FeeTests.test_priority_boundaries) ... ok\ntest_priority_is_boolean (test_utility.FeeTests.test_priority_is_boolean) ... ok\ntest_regular_boundaries (test_utility.FeeTests.test_regular_boundaries) ... ok\ntest_validity_priority_decision_table (test_utility.FeeTests.test_validity_priority_decision_table) ... ok\ntest_wrong_quantity_types (test_utility.FeeTests.test_wrong_quantity_types) ... ok\ntest_zero_one_many_loop_iterations (test_utility.FeeTests.test_zero_one_many_loop_iterations) ... ok\ntest_autospec_mock_and_call_contract (test_utility.ReceiptTests.test_autospec_mock_and_call_contract) ... ok\ntest_client_failure_is_not_success_or_retry (test_utility.ReceiptTests.test_client_failure_is_not_success_or_retry) ... ok\ntest_dummy_collaborators_not_used_on_invalid_input (test_utility.ReceiptTests.test_dummy_collaborators_not_used_on_invalid_input) ... ok\ntest_patch_lookup_and_restore (test_utility.ReceiptTests.test_patch_lookup_and_restore) ... ok\ntest_spy_wraps_real_fake_operation (test_utility.ReceiptTests.test_spy_wraps_real_fake_operation) ... ok\ntest_stub_clock_and_working_fake (test_utility.ReceiptTests.test_stub_clock_and_working_fake) ... ok\ntest_locked_success_cannot_unlock (test_utility.StateTests.test_locked_success_cannot_unlock) ... ok\ntest_new_instance_is_independent (test_utility.StateTests.test_new_instance_is_independent) ... ok\ntest_only_authorized_reset_unlocks (test_utility.StateTests.test_only_authorized_reset_unlocks) ... ok\ntest_success_before_lock_resets_count (test_utility.StateTests.test_success_before_lock_resets_count) ... ok\ntest_three_consecutive_failures_lock (test_utility.StateTests.test_three_consecutive_failures_lock) ... ok\ntest_wrong_event_types_do_not_mutate (test_utility.StateTests.test_wrong_event_types_do_not_mutate) ... ok\ntest_empty_list (test_utility.StreamTests.test_empty_list) ... ok\ntest_invalid_json_and_shape (test_utility.StreamTests.test_invalid_json_and_shape) ... ok\ntest_invalid_json_item (test_utility.StreamTests.test_invalid_json_item) ... ok\ntest_reader_failure (test_utility.StreamTests.test_reader_failure) ... ok\ntest_working_in_memory_file (test_utility.StreamTests.test_working_in_memory_file) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 0.004s\n\nOK\n",
+      "optimized": true,
+      "test_methods": 25
+    },
+    {
+      "program": "probes",
+      "command": [
+        "python",
+        "-B",
+        "-Werror",
+        "-O",
+        "probes.py"
+      ],
+      "started_at": "2026-09-30T04:09:41.602369+00:00",
+      "elapsed_seconds": 0.975,
+      "exit_code": 0,
+      "stdout": "{\n  \"python\": \"3.13.14\",\n  \"coverage\": \"7.15.4\",\n  \"coverage_limits\": {\n    \"one_input_weak_assertion\": {\n      \"summary\": {\n        \"covered_lines\": 5,\n        \"num_statements\": 5,\n        \"percent_covered\": 85.71428571428571,\n        \"percent_covered_display\": \"86\",\n        \"missing_lines\": 0,\n        \"excluded_lines\": 0,\n        \"percent_statements_covered\": 100.0,\n        \"percent_statements_covered_display\": \"100\",\n        \"num_branches\": 2,\n        \"num_partial_branches\": 1,\n        \"covered_branches\": 1,\n        \"missing_branches\": 1,\n        \"percent_branches_covered\": 50.0,\n        \"percent_branches_covered_display\": \"50\"\n      },\n      \"executed_lines\": [\n        4,\n        5,\n        6,\n        7,\n        8\n      ],\n      \"missing_lines\": [],\n      \"missing_branches\": [\n        [\n          6,\n          8\n        ]\n      ],\n      \"values\": [\n        80\n      ],\n      \"source_sha256\": \"c15e5f19e20a09f793f3afa052caa820078d7851badb3ed5e7d20ca405c5d476\"\n    },\n    \"both_inputs_weak_assertion\": {\n      \"summary\": {\n        \"covered_lines\": 5,\n        \"num_statements\": 5,\n        \"percent_covered\": 100.0,\n        \"percent_covered_display\": \"100\",\n        \"missing_lines\": 0,\n        \"excluded_lines\": 0,\n        \"percent_statements_covered\": 100.0,\n        \"percent_statements_covered_display\": \"100\",\n        \"num_branches\": 2,\n        \"num_partial_branches\": 0,\n        \"covered_branches\": 2,\n        \"missing_branches\": 0,\n        \"percent_branches_covered\": 100.0,\n        \"percent_branches_covered_display\": \"100\"\n      },\n      \"executed_lines\": [\n        4,\n        5,\n        6,\n        7,\n        8\n      ],\n      \"missing_lines\": [],\n      \"missing_branches\": [],\n      \"values\": [\n        100,\n        80\n      ],\n      \"source_sha256\": \"c15e5f19e20a09f793f3afa052caa820078d7851badb3ed5e7d20ca405c5d476\"\n    },\n    \"mutant_both_inputs_weak_assertion\": {\n      \"summary\": {\n        \"covered_lines\": 5,\n        \"num_statements\": 5,\n        \"percent_covered\": 100.0,\n        \"percent_covered_display\": \"100\",\n        \"missing_lines\": 0,\n        \"excluded_lines\": 0,\n        \"percent_statements_covered\": 100.0,\n        \"percent_statements_covered_display\": \"100\",\n        \"num_branches\": 2,\n        \"num_partial_branches\": 0,\n        \"covered_branches\": 2,\n        \"missing_branches\": 0,\n        \"percent_branches_covered\": 100.0,\n        \"percent_branches_covered_display\": \"100\"\n      },\n      \"executed_lines\": [\n        4,\n        5,\n        6,\n        7,\n        8\n      ],\n      \"missing_lines\": [],\n      \"missing_branches\": [],\n      \"values\": [\n        100,\n        81\n      ],\n      \"source_sha256\": \"402409d6238d5d0c43397f9083b9a86d50a173717f7887ed8da04daa18f6952f\"\n    },\n    \"strong_oracle_expected_failures\": [\n      {\n        \"member\": true,\n        \"expected\": 80,\n        \"actual\": 81\n      }\n    ],\n    \"denominator\": \"This original module only; no added exclusions.\"\n  },\n  \"refactoring\": {\n    \"domain\": \"int quantity1..10 and bool priority only\",\n    \"comparisons\": 20,\n    \"limit\": \"No claim about invalid inputs or arbitrary refactors.\"\n  },\n  \"debugging\": {\n    \"print_trace\": \"quantity=10, expected=True, actual=False\\n\",\n    \"pdb_commands\": \"p quantity\\ntbreak 6\\nc\\np accepted\\nn\\nc\\n\",\n    \"pdb_transcript\": \"> <temporary>\\\\debug_target.py(5)buggy_quantity()\\n-> accepted = 1 <= quantity < 10\\n(Pdb) 10\\n(Pdb) Breakpoint 1 at <temporary>\\\\debug_target.py:6\\n(Pdb) Deleted breakpoint 1 at <temporary>\\\\debug_target.py:6\\n> <temporary>\\\\debug_target.py(6)buggy_quantity()\\n-> return accepted\\n(Pdb) False\\n(Pdb) --Return--\\n> <temporary>\\\\debug_target.py(6)buggy_quantity()->False\\n-> return accepted\\n(Pdb) \",\n    \"expected\": true,\n    \"actual\": false,\n    \"diagnosis\": \"Upper bound rejects 10; the contract includes it.\",\n    \"limit\": \"Scripted stdlib pdb, not an interactive IDE session.\"\n  },\n  \"optimization\": {\n    \"source\": \"def validate(q):\\n    assert 1 <= q <= 10\\n    return q\\ntry:\\n    print('accepted:', validate(0))\\nexcept AssertionError:\\n    print('AssertionError')\\n\",\n    \"results\": [\n      {\n        \"optimized\": false,\n        \"stdout\": \"AssertionError\"\n      },\n      {\n        \"optimized\": true,\n        \"stdout\": \"accepted: 0\"\n      }\n    ]\n  },\n  \"logging\": \"DEBUG:synthetic event 10\\nINFO:synthetic event 20\\nWARNING:synthetic event 30\\nERROR:synthetic event 40\\nCRITICAL:synthetic event 50\\n\",\n  \"static_analysis\": {\n    \"rule\": \"F401 only, isolated configuration\",\n    \"results\": {\n      \"unused_import\": {\n        \"exit_code\": 1,\n        \"codes\": [\n          \"F401\"\n        ]\n      },\n      \"wrong_value\": {\n        \"exit_code\": 0,\n        \"codes\": []\n      }\n    },\n    \"limit\": \"No Pylint/Flake8 execution or complete style audit.\"\n  },\n  \"checks\": [\n    \"temporary path inside workbook\",\n    \"partial weak type-only assertion\",\n    \"partial single measured module\",\n    \"complete weak type-only assertion\",\n    \"complete weak type-only assertion\",\n    \"complete single measured module\",\n    \"mutant weak type-only assertion\",\n    \"mutant weak type-only assertion\",\n    \"mutant single measured module\",\n    \"partial all statements ran\",\n    \"partial two branch outcomes\",\n    \"complete all statements ran\",\n    \"complete two branch outcomes\",\n    \"mutant all statements ran\",\n    \"mutant two branch outcomes\",\n    \"one branch missing despite full statement coverage\",\n    \"both original branch outcomes covered\",\n    \"both mutant branch outcomes covered\",\n    \"strong original value oracle\",\n    \"strong oracle kills the deliberately changed mutant\",\n    \"refactor oracle 1 False\",\n    \"refactor oracle 2 False\",\n    \"refactor oracle 3 False\",\n    \"refactor oracle 4 False\",\n    \"refactor oracle 5 False\",\n    \"refactor oracle 6 False\",\n    \"refactor oracle 7 False\",\n    \"refactor oracle 8 False\",\n    \"refactor oracle 9 False\",\n    \"refactor oracle 10 False\",\n    \"refactor oracle 1 True\",\n    \"refactor oracle 2 True\",\n    \"refactor oracle 3 True\",\n    \"refactor oracle 4 True\",\n    \"refactor oracle 5 True\",\n    \"refactor oracle 6 True\",\n    \"refactor oracle 7 True\",\n    \"refactor oracle 8 True\",\n    \"refactor oracle 9 True\",\n    \"refactor oracle 10 True\",\n    \"debugger reproduces off-by-one defect\",\n    \"debugger captured input, breakpoint and wrong state\",\n    \"debugger restored tracing state\",\n    \"print trace exposes contract failure\",\n    \"assert demonstration subprocess completed False\",\n    \"assert demonstration subprocess completed True\",\n    \"normal assertion enforces\",\n    \"optimization removes assertion\",\n    \"five logging levels captured\",\n    \"logger settings restored\",\n    \"unused_import lint has no tool error\",\n    \"wrong_value lint has no tool error\",\n    \"unused import detected by selected static rule\",\n    \"incorrect business value passes selected static rule\",\n    \"temporary modules/reports removed\"\n  ],\n  \"passed_checks\": 55\n}\n",
+      "stderr": "",
+      "optimized": true,
+      "checks": 55
+    }
+  ],
+  "computed_report": {
+    "python": "3.13.14",
+    "coverage": "7.15.4",
+    "coverage_limits": {
+      "one_input_weak_assertion": {
+        "summary": {
+          "covered_lines": 5,
+          "num_statements": 5,
+          "percent_covered": 85.71428571428571,
+          "percent_covered_display": "86",
+          "missing_lines": 0,
+          "excluded_lines": 0,
+          "percent_statements_covered": 100.0,
+          "percent_statements_covered_display": "100",
+          "num_branches": 2,
+          "num_partial_branches": 1,
+          "covered_branches": 1,
+          "missing_branches": 1,
+          "percent_branches_covered": 50.0,
+          "percent_branches_covered_display": "50"
+        },
+        "executed_lines": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "missing_lines": [],
+        "missing_branches": [
+          [
+            6,
+            8
+          ]
+        ],
+        "values": [
+          80
+        ],
+        "source_sha256": "c15e5f19e20a09f793f3afa052caa820078d7851badb3ed5e7d20ca405c5d476"
+      },
+      "both_inputs_weak_assertion": {
+        "summary": {
+          "covered_lines": 5,
+          "num_statements": 5,
+          "percent_covered": 100.0,
+          "percent_covered_display": "100",
+          "missing_lines": 0,
+          "excluded_lines": 0,
+          "percent_statements_covered": 100.0,
+          "percent_statements_covered_display": "100",
+          "num_branches": 2,
+          "num_partial_branches": 0,
+          "covered_branches": 2,
+          "missing_branches": 0,
+          "percent_branches_covered": 100.0,
+          "percent_branches_covered_display": "100"
+        },
+        "executed_lines": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "missing_lines": [],
+        "missing_branches": [],
+        "values": [
+          100,
+          80
+        ],
+        "source_sha256": "c15e5f19e20a09f793f3afa052caa820078d7851badb3ed5e7d20ca405c5d476"
+      },
+      "mutant_both_inputs_weak_assertion": {
+        "summary": {
+          "covered_lines": 5,
+          "num_statements": 5,
+          "percent_covered": 100.0,
+          "percent_covered_display": "100",
+          "missing_lines": 0,
+          "excluded_lines": 0,
+          "percent_statements_covered": 100.0,
+          "percent_statements_covered_display": "100",
+          "num_branches": 2,
+          "num_partial_branches": 0,
+          "covered_branches": 2,
+          "missing_branches": 0,
+          "percent_branches_covered": 100.0,
+          "percent_branches_covered_display": "100"
+        },
+        "executed_lines": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "missing_lines": [],
+        "missing_branches": [],
+        "values": [
+          100,
+          81
+        ],
+        "source_sha256": "402409d6238d5d0c43397f9083b9a86d50a173717f7887ed8da04daa18f6952f"
+      },
+      "strong_oracle_expected_failures": [
+        {
+          "member": true,
+          "expected": 80,
+          "actual": 81
+        }
+      ],
+      "denominator": "This original module only; no added exclusions."
+    },
+    "refactoring": {
+      "domain": "int quantity1..10 and bool priority only",
+      "comparisons": 20,
+      "limit": "No claim about invalid inputs or arbitrary refactors."
+    },
+    "debugging": {
+      "print_trace": "quantity=10, expected=True, actual=False\n",
+      "pdb_commands": "p quantity\ntbreak 6\nc\np accepted\nn\nc\n",
+      "pdb_transcript": "> <temporary>\\debug_target.py(5)buggy_quantity()\n-> accepted = 1 <= quantity < 10\n(Pdb) 10\n(Pdb) Breakpoint 1 at <temporary>\\debug_target.py:6\n(Pdb) Deleted breakpoint 1 at <temporary>\\debug_target.py:6\n> <temporary>\\debug_target.py(6)buggy_quantity()\n-> return accepted\n(Pdb) False\n(Pdb) --Return--\n> <temporary>\\debug_target.py(6)buggy_quantity()->False\n-> return accepted\n(Pdb) ",
+      "expected": true,
+      "actual": false,
+      "diagnosis": "Upper bound rejects 10; the contract includes it.",
+      "limit": "Scripted stdlib pdb, not an interactive IDE session."
+    },
+    "optimization": {
+      "source": "def validate(q):\n    assert 1 <= q <= 10\n    return q\ntry:\n    print('accepted:', validate(0))\nexcept AssertionError:\n    print('AssertionError')\n",
+      "results": [
+        {
+          "optimized": false,
+          "stdout": "AssertionError"
+        },
+        {
+          "optimized": true,
+          "stdout": "accepted: 0"
+        }
+      ]
+    },
+    "logging": "DEBUG:synthetic event 10\nINFO:synthetic event 20\nWARNING:synthetic event 30\nERROR:synthetic event 40\nCRITICAL:synthetic event 50\n",
+    "static_analysis": {
+      "rule": "F401 only, isolated configuration",
+      "results": {
+        "unused_import": {
+          "exit_code": 1,
+          "codes": [
+            "F401"
+          ]
+        },
+        "wrong_value": {
+          "exit_code": 0,
+          "codes": []
+        }
+      },
+      "limit": "No Pylint/Flake8 execution or complete style audit."
+    },
+    "checks": [
+      "temporary path inside workbook",
+      "partial weak type-only assertion",
+      "partial single measured module",
+      "complete weak type-only assertion",
+      "complete weak type-only assertion",
+      "complete single measured module",
+      "mutant weak type-only assertion",
+      "mutant weak type-only assertion",
+      "mutant single measured module",
+      "partial all statements ran",
+      "partial two branch outcomes",
+      "complete all statements ran",
+      "complete two branch outcomes",
+      "mutant all statements ran",
+      "mutant two branch outcomes",
+      "one branch missing despite full statement coverage",
+      "both original branch outcomes covered",
+      "both mutant branch outcomes covered",
+      "strong original value oracle",
+      "strong oracle kills the deliberately changed mutant",
+      "refactor oracle 1 False",
+      "refactor oracle 2 False",
+      "refactor oracle 3 False",
+      "refactor oracle 4 False",
+      "refactor oracle 5 False",
+      "refactor oracle 6 False",
+      "refactor oracle 7 False",
+      "refactor oracle 8 False",
+      "refactor oracle 9 False",
+      "refactor oracle 10 False",
+      "refactor oracle 1 True",
+      "refactor oracle 2 True",
+      "refactor oracle 3 True",
+      "refactor oracle 4 True",
+      "refactor oracle 5 True",
+      "refactor oracle 6 True",
+      "refactor oracle 7 True",
+      "refactor oracle 8 True",
+      "refactor oracle 9 True",
+      "refactor oracle 10 True",
+      "debugger reproduces off-by-one defect",
+      "debugger captured input, breakpoint and wrong state",
+      "debugger restored tracing state",
+      "print trace exposes contract failure",
+      "assert demonstration subprocess completed False",
+      "assert demonstration subprocess completed True",
+      "normal assertion enforces",
+      "optimization removes assertion",
+      "five logging levels captured",
+      "logger settings restored",
+      "unused_import lint has no tool error",
+      "wrong_value lint has no tool error",
+      "unused import detected by selected static rule",
+      "incorrect business value passes selected static rule",
+      "temporary modules/reports removed"
+    ],
+    "passed_checks": 55
+  },
+  "selected_lint_evidence": {
+    "command": [
+      "python",
+      "-m",
+      "ruff",
+      "check",
+      "utility.py",
+      "test_utility.py",
+      "probes.py",
+      "--select",
+      "E4,E7,E9,F,W,E501",
+      "--line-length",
+      "79",
+      "--output-format",
+      "concise"
+    ],
+    "exit_code": 0,
+    "stdout": "All checks passed!\n",
+    "stderr": "",
+    "version": "ruff 0.16.4"
+  },
+  "missing_named_tools": [
+    "pylint",
+    "flake8"
+  ],
+  "manual_objective_confirmation": {
+    "checked_on": "2026-09-30",
+    "method": "Complete indexed primary syllabus body manually read and compared after direct/monitor timeout",
+    "active_code": "PCET-30-01",
+    "syllabus_date": "2024-12-10",
+    "objectives": 22,
+    "per_section": [
+      4,
+      6,
+      6,
+      6
+    ],
+    "exam_items": [
+      6,
+      8,
+      10,
+      11
+    ],
+    "weights": [
+      17.1,
+      22.9,
+      28.6,
+      31.4
+    ],
+    "exam_questions": 35,
+    "snapshot_action": "Retained; no successful automated hash comparison",
+    "publisher_conflicts": [
+      "Introductory 30-02 versus header/alignment/credential 30-01",
+      "Unrelated data-analysis introductory wording",
+      "Objective 1.4 data-storage heading over testing-principle bullets"
+    ],
+    "reading_limit": "Full PDF unread; complete numbered sub-bullets and candidate profile read",
+    "groups": [
+      {
+        "title": "Block 1: Core Software Testing Concepts — 6 items, 17.1%",
+        "objectives": [
+          "1.1 Definition and purpose of testing.",
+          "1.2 Relationships among errors, defects and failures.",
+          "1.3 Testing in SDLC: risk, economics, Waterfall/Agile/DevOps, shift-left, continuous testing, collaboration.",
+          "1.4 Testing principles and risk/context-based workflow. (Official heading incorrectly says “Explain how data is stored and organized.”)"
+        ]
+      },
+      {
+        "title": "Block 2: Software Testing Types, Levels, and Processes — 8 items, 22.9%",
+        "objectives": [
+          "2.1 Manual/automated and functional/non-functional testing.",
+          "2.2 Unit, integration, system and acceptance levels.",
+          "2.3 Test pyramid.",
+          "2.4 Planning, design, environment, execution, reporting, closure.",
+          "2.5 Plans, cases, scenarios and reports.",
+          "2.6 Dummies, stubs, fakes, spies and mocks."
+        ]
+      },
+      {
+        "title": "Block 3: Static Analysis, Dynamic Testing, and Code Refactoring — 10 items, 28.6%",
+        "objectives": [
+          "3.1 Reviews, walkthroughs, inspections and static tools.",
+          "3.2 Dynamic levels/techniques.",
+          "3.3 Code quality, PEP 8 and linters.",
+          "3.4 Pylint/Flake8 and refactoring findings.",
+          "3.5 Line, branch and method coverage.",
+          "3.6 Behavior-preserving refactoring, AAA, DRY and KISS."
+        ]
+      },
+      {
+        "title": "Block 4: Debugging, Assertions, and Testing Techniques — 11 items, 31.4%",
+        "objectives": [
+          "4.1 Print/IDE debugging, breakpoints and stepping.",
+          "4.2 Assertions and expected conditions.",
+          "4.3 Logging and DEBUG/INFO/WARNING/ERROR/CRITICAL.",
+          "4.4 White-box statement, branch, path and loop testing.",
+          "4.5 Black-box equivalence partitions, boundaries, decision tables and state transitions.",
+          "4.6 Error guessing, exploratory and checklist-based testing."
+        ]
+      }
+    ]
+  },
+  "review_provenance": "Same-context AI source/content review. Exact original 25-method unittest suite and 55-check probes execute normally and optimized. No independent human, enrolled-content or protected-question review.",
+  "source_health_boundary": "21 direct receipts: 16 successful responses, three errors, one blocked book and one missing candidate URL. Indexed primary fallback is separate from direct health. Complete/selected/unread boundaries are recorded per source. Fetch timestamps may precede September 30 completion.",
+  "development_corrections": [
+    "Removed draft tautological decision-table assertion before first execution.",
+    "Private E731/E501 issues fixed before exact-source verification.",
+    "Initial embedding stripped a trailing blank line; verifier stopped before execution. Embedding now preserves the exact source and all four final runs passed.",
+    "Repository validator exposed the prior PT101 free-account source classification. Clarified that the registered URL is its anonymously readable public outline; enrolled features still require an account. Refreshed the current baseline and reran repository/site gates."
+  ]
+}

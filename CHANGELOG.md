@@ -1,5 +1,7 @@
 # Changelog
 
+- September 30, 2026: [PCET-30-01 deep review](docs/research/2026-09-30-pcet-30-01-deep-review.md): Mapped 22 objectives; exact original 25-method/55-probe workbook in normal and optimized modes; measured coverage/mutant and pdb evidence; corrected course entitlements and double guidance; preserved named-tool, publisher and human-review blockers.
+
 - September 29, 2026: [PCAD-31-02 deep review](docs/research/2026-09-29-pcad-31-02-deep-review.md): Mapped 48 objectives; added an original 86-check NumPy/SciPy/SQLite/local HTTP workbook and a prepared-only Pandas 3/plotting companion; corrected learning and product claims, with missing runtimes and publisher/human-review questions recorded.
 
 - September 29, 2026: [PCED-30-02 deep review](docs/research/2026-09-29-pced-30-02-deep-review.md): Mapped40objectives; original112-checkPython/NumPyworkbook, reconciledCSVledger andexportedchart; correctedlearningduration/access andpractice-product limits; broaderlab andhumanreview remainpending.

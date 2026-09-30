@@ -3,6 +3,174 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "pcet-testing-policies",
+      "title": "PCET testing policies",
+      "url": "https://pythoninstitute.org/pcet-testing-policies",
+      "publisher": "OpenEDG / Python Institute",
+      "authority_class": 2,
+      "source_type": "official-policy",
+      "access_model": "public",
+      "supported_exams": [
+        "PCET-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCET-30-01 deep review: Direct retrieval failed; indexed search did not yield PCET-specific policy content. Unread. Incidental PCAT/PCAP/general policies are not substituted as PCET evidence. Only logistics explicitly found on the complete PCET credential page are reported. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-unittest",
+      "title": "Python 3.13 unittest",
+      "url": "https://docs.python.org/3.13/library/unittest.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCET-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCET-30-01 deep review: Selected lines 43–172 introduction/basic example and partial CLI opening; 286–353 per-test fixtures/setup/teardown/suite and file-separation opening; 460–490 subtest introduction and partial failure output; 703–771 assertRaises/Regex and assertWarns through 770, next signature only; 784–827 complete assertLogs/assertNoLogs plus next table opening; 1029–1057 complete addCleanup/enterContext/doCleanups and partial class cleanup. Remaining manual unread. TestCase assertions, 25 methods and isolated fixtures exercised normally and optimized. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-unittest-mock",
+      "title": "Python 3.13 unittest.mock",
+      "url": "https://docs.python.org/3.13/library/unittest.mock.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCET-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCET-30-01 deep review: Selected 170–261 autospec/signature examples and Mock constructor parameters spec/spec_set/side_effect/wraps/return/name, assert_called opening; 1544–1593 complete where-to-patch and descriptor sections, magic-method opening only. Remaining manual unread. Original fake/stub/dummy/spy/autospec and restored patch execute; no real provider behavior inferred. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-pdb",
+      "title": "Python 3.13 pdb",
+      "url": "https://docs.python.org/3.13/library/pdb.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCET-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCET-30-01 deep review: Selected 157–221 complete Pdb constructor and run family through command/convenience-variable opening; 248–269 break/tbreak and clear opening; 315–365 complete step/next/until/return/continue/jump/list/longlist/args/p and pp opening. Remaining manual unread. Actual scripted Pdb uses temporary breakpoint, p/n/c and restores tracing. No interactive IDE session. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-simple-statements",
+      "title": "Python 3.13 simple statements",
+      "url": "https://docs.python.org/3.13/reference/simple_stmts.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCET-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCET-30-01 deep review: Selected 259–294: complete assert section 259–277, pass section and partial del introduction. Remaining reference unread. Isolated normal/optimized subprocesses show assertion removal; utility validation uses explicit raises. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "coverage-branch",
+      "title": "Coverage.py branch measurement",
+      "url": "https://coverage.readthedocs.io/en/latest/branch.html",
+      "publisher": "Coverage.py developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCET-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCET-30-01 deep review: Complete fresh branch documentation read: statements versus branch destinations, combined denominator, JSON separation, exclusions, structurally partial branches, generators/loops. Documentation 7.16.2 versus installed 7.15.4. Original probe demonstrates 5/5 statements with 1/2 branches and a 100%-covered wrong-value mutant; no production or whole-utility coverage claim. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "coverage-api",
+      "title": "Coverage.py API",
+      "url": "https://coverage.readthedocs.io/en/latest/api_coverage.html",
+      "publisher": "Coverage.py developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCET-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCET-30-01 deep review: Selected 59–165 constructor/main parameters (tail types incomplete); 350–368 complete json_report and incidental next LCOV section; 444–480 set-option tail, complete start 458–468/stop 469–472, partial switch-context opening. Rest unread. Used data_file=None/config_file=False/branch/include with stop in finally and temporary JSON report, not persistent coverage data. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "coverage-json",
+      "title": "Coverage.py JSON reporting",
+      "url": "https://coverage.readthedocs.io/en/latest/commands/cmd_json.html",
+      "publisher": "Coverage.py developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCET-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCET-30-01 deep review: Complete fresh JSON-reporting body read, including output/data/include options and fail-under exit behavior. Original probe inspects separate statement/branch counts. Linked chapters not implicitly reviewed. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pylint-running",
+      "title": "Pylint running documentation",
+      "url": "https://pylint.readthedocs.io/en/latest/user_guide/usage/run.html",
+      "publisher": "PyCQA",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCET-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCET-30-01 deep review: Latest URL identifies development documentation 4.2.0-dev0. Lines 1–100 navigation only; selected 859–920 actual invocation/modules/files/PYTHONPATH/checkers/enable-disable and configuration opening; 974–1009 parallel note and full bitmask exit-code table. Remaining navigation/configuration unread. Pylint absent and never executed or installed. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "flake8-quickstart",
+      "title": "Flake8 quickstart",
+      "url": "https://flake8.pycqa.org/en/latest/user/quickstart.html",
+      "publisher": "PyCQA",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCET-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCET-30-01 deep review: Candidate latest/user/quickstart.html returned 404. Retained as failed discovery evidence, not cited by guide or silently represented as working. Separate stable index URL was registered, fetched and read. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "flake8-stable-documentation",
+      "title": "Flake8 stable documentation",
+      "url": "https://flake8.pycqa.org/en/stable/index.html",
+      "publisher": "PyCQA",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCET-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCET-30-01 deep review: Complete fresh stable index/quickstart read; version 7.4.1 supersedes earlier indexed 7.3.0 observation. Module invocation and select/ignore syntax reviewed; installation instructions read only, not executed. Linked chapters unread. Flake8 absent and not installed. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ruff-linter",
+      "title": "Ruff linter",
+      "url": "https://docs.astral.sh/ruff/linter/",
+      "publisher": "Astral",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCET-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCET-30-01 deep review: Selected 1–137 introduction/check and complete rule selection/CLI priority, not rule categories; 227–250 safe/unsafe fix example and unsafe opt-in opening; 469–490 complete exit codes and related flags. Remaining page unread. Existing 0.16.4 selected lint and isolated F401 probe executed; no autofix/install or substitute claim for Pylint/Flake8. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "pcad-testing-policies",
       "title": "PCAD TestNow policies",
       "url": "https://pythoninstitute.org/pcad-testing-policies",
@@ -1007,10 +1175,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "PCPP-32-101"
+        "PCPP-32-101",
+        "PCET-30-01"
       ],
-      "last_checked": "2026-09-29",
-      "notes": "September 29 PCPP-32-101 deep review: Selected logger hierarchy/propagation/handler ownership and setLevel opening (103-182); complete levels/Handler and Formatter through formatStack (352-566); complete LogRecord constructor/getMessage with factory example beginning (632-691). BufferingFormatter and remaining logger/filter/global APIs not fully audited. Original thresholds, interpolation and handler cleanup exercised. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution."
+      "last_checked": "2026-09-30",
+      "notes": "September 29 PCPP-32-101 deep review: Selected logger hierarchy/propagation/handler ownership and setLevel opening (103-182); complete levels/Handler and Formatter through formatStack (352-566); complete LogRecord constructor/getMessage with factory example beginning (632-691). BufferingFormatter and remaining logger/filter/global APIs not fully audited. Original thresholds, interpolation and handler cleanup exercised. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 30 PCET-30-01 deep review: Selected 103–233 logger/getLogger/hierarchy/propagate/setLevel/getChild/debug opening with incomplete keyword discussion; 321–411 add/removeHandler/caller/handle/makeRecord/hasHandlers and complete standard-level table, Handler opening only. Rest unread. Isolated five-level capture restores handler/level/propagation; root logger unchanged. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "python313-configparser",
@@ -60361,13 +60530,14 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-29",
+      "last_checked": "2026-09-30",
       "supported_exams": [
         "PCPP-32-101",
         "PCEP-30-02",
-        "PCAD-31-02"
+        "PCAD-31-02",
+        "PCET-30-01"
       ],
-      "notes": "Primary coding-style convention named by the blueprint; use its current text while respecting the dated exam scope. September 29 PCEP-30-02 deep review: Selected indentation, tabs/spaces, maximum line length, function/variable naming and constants sections read. Four spaces and naming are style guidance; two-space example actually compiles. Full PEP and linked style materials not audited. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution. September 29 PCPP-32-101 deep review: All substantive guidance from introduction/consistency through layout, imports, whitespace, comments/docstrings, naming, inheritance/API design, programming recommendations and function/variable annotations read (lines57-1023). Footer/reference links not individually audited. Selected Ruff E4/E7/E9/F/W/E501 with79-character limit passed; not a complete PEP8/257 or type-safety certification. Exact-type tests are an intentional bounded-schema choice. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 29 PCAD-31-02 deep review: Selected complete maximum-line-length183–216 with next operator-break introduction217–220 read. Remaining style guide not freshly audited. Selected RuffE4/E7/E9/F/W/E501 at79 passes; not wholePEPconformance. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+      "notes": "Primary coding-style convention named by the blueprint; use its current text while respecting the dated exam scope. September 29 PCEP-30-02 deep review: Selected indentation, tabs/spaces, maximum line length, function/variable naming and constants sections read. Four spaces and naming are style guidance; two-space example actually compiles. Full PEP and linked style materials not audited. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution. September 29 PCPP-32-101 deep review: All substantive guidance from introduction/consistency through layout, imports, whitespace, comments/docstrings, naming, inheritance/API design, programming recommendations and function/variable annotations read (lines57-1023). Footer/reference links not individually audited. Selected Ruff E4/E7/E9/F/W/E501 with79-character limit passed; not a complete PEP8/257 or type-safety certification. Exact-type tests are an intentional bounded-schema choice. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 29 PCAD-31-02 deep review: Selected complete maximum-line-length183–216 with next operator-break introduction217–220 read. Remaining style guide not freshly audited. Selected RuffE4/E7/E9/F/W/E501 at79 passes; not wholePEPconformance. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution. September 30 PCET-30-01 deep review: Fresh text body is byte-identical to preceding PCAD receipt, SHA-256 a5ce247d913af2064748c506a90471d33f3a991f15930579f22c7948a6ddb834. Reused selected maximum-line-length 183–216 and operator-break opening 217–220 reading. No new whole-PEP audit. Selected Ruff rules at 79 columns passed, not complete style conformance. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "pep-257-docstrings",
@@ -60673,25 +60843,103 @@
       "notes": "Free author-hosted book and labs; broader than PCAD, so select introductory statistics and modeling sections. September 29 PCAD-31-02 deep review: Direct retrieval failed. No current download, access, chapter or runtime verification; guide removes assumed availability/time. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pcet-30-01-syllabus","title":"PCET-30-01 Exam Syllabus","url":"https://pythoninstitute.org/pcet-exam-syllabus","publisher":"OpenEDG Python Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCET-30-01"],"notes":"Canonical four-block syllabus. Header and alignment say PCET-30-01 while introductory prose says PCET-30-02; preserve this source inconsistency."
+      "id": "pcet-30-01-syllabus",
+      "title": "PCET-30-01 Exam Syllabus",
+      "url": "https://pythoninstitute.org/pcet-exam-syllabus",
+      "publisher": "OpenEDG Python Institute",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "PCET-30-01"
+      ],
+      "notes": "Canonical four-block syllabus. Header and alignment say PCET-30-01 while introductory prose says PCET-30-02; preserve this source inconsistency. September 30 PCET-30-01 deep review: Complete indexed canonical English syllabus, all 22 numbered objectives and detailed sub-bullets, full minimum-qualified-candidate profile and cumulative threshold read after direct/monitor WinError 10060. December 10, 2024; groups 4/6/6/6 versus 35 exam items 6/8/10/11, weights 17.1/22.9/28.6/31.4. Header/alignment 30-01 versus introductory 30-02, unrelated data-analysis wording and Objective 1.4 data-storage heading remain publisher conflicts. Retained snapshot manually compared; no successful automated hash observation. Full PDF unread. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pcet-certification-page","title":"PCET Certified Entry-Level Tester with Python","url":"https://pythoninstitute.org/pcet","publisher":"OpenEDG Python Institute","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCET-30-01"],"notes":"Current exam code, logistics, validity, cost, retake policy, official course and in-development practice-test status."
+      "id": "pcet-certification-page",
+      "title": "PCET Certified Entry-Level Tester with Python",
+      "url": "https://pythoninstitute.org/pcet",
+      "publisher": "OpenEDG Python Institute",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "PCET-30-01"
+      ],
+      "notes": "Current exam code, logistics, validity, cost, retake policy, official course and in-development practice-test status. September 30 PCET-30-01 deep review: Complete indexed canonical public body read, including introduction, roadmap, career description, table and full FAQ. Active 30-01, seven-year validity, 35 questions/45 minutes plus NDA/75%/English and Spanish/TestNow. No formal prerequisite; basic Python/testing or ISTQB Foundation-level knowledge recommended. USD 69 exam/86 retake option, seven-day wait after failure. Dedicated PCET practice still in development; PT101 Pro assessment does not prove that product launched. Career/salary assertions not independently validated. No account, purchase, booking or protected content. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"openedg-python-testing-101","title":"Python for Testing 101","url":"https://edube.org/study/pt101","publisher":"OpenEDG Python Institute / Edube","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["PCET-30-01"],"notes":"Free officially aligned beginner course; verify current runtime after login."
+      "id": "openedg-python-testing-101",
+      "title": "Python for Testing 101",
+      "url": "https://edube.org/study/pt101",
+      "publisher": "OpenEDG Python Institute / Edube",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "PCET-30-01"
+      ],
+      "notes": "Official PCET-aligned public course outline distinguishes free Core from paid Full/Pro interactive features; enrolled content not audited. September 30 PCET-30-01 deep review: Complete fresh public PT101 outline read. Free Core lessons/module tests; USD 49 Full/Pro interactive exercises/labs/quizzes/full practice test/diploma. Provider advertises 38 labs and four weeks at about one hour/day; these are provider claims, not completed work. English, beginner, basic Python/PCEP knowledge recommended, no formal prerequisite, PCET alignment and PT102 relationship. No enrolled interior or equivalence to the dedicated in-development PCET practice kit verified. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution. This source record describes the anonymously readable public outline; enrolled free/paid course features require an account."
     },
     {
-      "id":"python-logging-documentation","title":"Python Logging Documentation","url":"https://docs.python.org/3/library/logging.html","publisher":"Python Software Foundation","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCET-30-01"],"notes":"Primary standard-library documentation for observable diagnostic evidence."
+      "id": "python-logging-documentation",
+      "title": "Python Logging Documentation",
+      "url": "https://docs.python.org/3/library/logging.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "PCET-30-01"
+      ],
+      "notes": "Primary standard-library documentation for observable diagnostic evidence. September 30 PCET-30-01 deep review: Fresh current generic page retrieved but not read for this PCET review. Selected version-pinned Python 3.13 contracts supply technical support; success is network health, not a whole-manual audit. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"python-unittest-documentation","title":"Python unittest Documentation","url":"https://docs.python.org/3/library/unittest.html","publisher":"Python Software Foundation","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCET-30-01","PCAT-31-01"],"notes":"Primary standard-library documentation for test cases, fixtures, assertions and test doubles."
+      "id": "python-unittest-documentation",
+      "title": "Python unittest Documentation",
+      "url": "https://docs.python.org/3/library/unittest.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "PCET-30-01",
+        "PCAT-31-01"
+      ],
+      "notes": "Primary standard-library documentation for test cases, fixtures, assertions and test doubles. September 30 PCET-30-01 deep review: Fresh generic manual retrieved but not read for this PCET review. Selected Python 3.13 unittest/mock contracts and exact original executions supply bounded support. No claim to current generic manual completion. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"istqb-foundation-certification","title":"ISTQB Certified Tester Foundation Level","url":"https://www.istqb.org/certifications/certified-tester-foundation-level","publisher":"ISTQB","authority_class":1,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCET-30-01"],"notes":"Primary ISTQB certification and syllabus reference recommended by the PCET page; broader and distinct from the Python Institute exam."
+      "id": "istqb-foundation-certification",
+      "title": "ISTQB Certified Tester Foundation Level",
+      "url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+      "publisher": "ISTQB",
+      "authority_class": 1,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "PCET-30-01"
+      ],
+      "notes": "Primary ISTQB certification and syllabus reference recommended by the PCET page; broader and distinct from the Python Institute exam. September 30 PCET-30-01 deep review: Complete fresh CTFL overview read: version 4.0, syllabus download labeled 4.0.1, content/business outcomes/self-study, 40 questions/26 passing/60 minutes with stated non-native extension. These are a different exam, not PCET rules. Linked PDF and sample questions not read; no course runtime verified. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-software-testing-second","title":"Software Testing, 2nd Edition","url":"https://www.oreilly.com/library/view/software-testing-2nd/9780134698298/","publisher":"O'Reilly / Pearson","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["PCET-30-01"],"notes":"Broad testing foundation. Select 15–25 hours mapped to the active blueprint and confirm access."
+      "id": "oreilly-software-testing-second",
+      "title": "Software Testing, 2nd Edition",
+      "url": "https://www.oreilly.com/library/view/software-testing-2nd/9780134698298/",
+      "publisher": "O'Reilly / Pearson",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "PCET-30-01"
+      ],
+      "notes": "Prior broad testing book lead; current access, contents and runtime unverified because retrieval is blocked. September 30 PCET-30-01 deep review: Page automation-blocked; current access, book contents and duration unverified. Retained only as optional prior learning lead. Removed unsupported 15–25-hour suggestion; no book text or protected material copied. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution."
     },
     {
       "id":"pcat-31-01-syllabus","title":"PCAT-31-01 Exam Syllabus","url":"https://pythoninstitute.org/pcat-exam-syllabus","publisher":"OpenEDG Python Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCAT-31-01"],"notes":"Canonical current six-block objective table. Introductory prose prematurely says 31-02 and four blocks; header, alignment and detailed objectives say 31-01 and six blocks."

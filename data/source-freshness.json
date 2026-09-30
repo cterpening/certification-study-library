@@ -4,6 +4,177 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-30-pcet3001-deep-review",
+      "title": "PCET-30-01 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-30",
+      "completed_on": "2026-09-30",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "PCET-30-01"
+      ],
+      "results": [
+        {
+          "exam_code": "PCET-30-01",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCET-30-01-python-certified-entry-level-tester.md",
+          "baseline_sha256": "ab803b564cddcda1ea5f8f2225b8fa70357d3b212b1e10b55bc44334b837bb8d",
+          "scanned_on": "2026-09-30",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Complete indexed canonical syllabus and PCET page manually read after direct/monitor timeout; all 22 objectives mapped, active 30-01 and seven-year validity identified. Retained snapshot, not successful automated hash evidence."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected pinned Python 3.13 and coverage/Ruff contracts support exact original 25-method/55-probe executions in both modes. Source-specific reading limits and missing named tools recorded."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Complete public credential FAQ/table and syllabus read. Dedicated practice remains in development; no independent unseen feed, authenticated availability or purchase claim."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Complete public PT101 and ISTQB overview read. Free Core versus USD 49 Full/Pro and provider four-week estimate distinguished; blocked book runtime removed. No enrolled course or CTFL PDF completion inferred."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Publisher 30-01/30-02 and unrelated headings remain unresolved; PCET policy/full PDF unread, Pylint/Flake8 absent, broader labs and human review pending."
+            }
+          },
+          "findings": [
+            {
+              "id": "pcet3001-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Coverage percentages lacked an observed oracle counterexample",
+              "url": "https://coverage.readthedocs.io/en/latest/branch.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCET-30-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "One original member case executes 5/5 statements but 1/2 branches; the wrong-value mutant reaches 100% while passing type-only assertions.",
+              "recommendation": "Add exact original measurement, explicit denominator and independent 100/80 oracle that detects 81; bound the claim to the measured module.",
+              "disposition": "applied",
+              "source_id": "coverage-branch",
+              "resolution": "Add exact original measurement, explicit denominator and independent 100/80 oracle that detects 81; bound the claim to the measured module."
+            },
+            {
+              "id": "pcet3001-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Lab wording incorrectly asked for the least suitable double",
+              "url": "https://docs.python.org/3.13/library/unittest.mock.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCET-30-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The prior lab said least suitable, and no executable double/call-contract evidence was included.",
+              "recommendation": "Correct to least powerful suitable; add dummy, stub, working fake, spy, autospec and restored lookup patch with explicit scope limits.",
+              "disposition": "applied",
+              "source_id": "python313-unittest-mock",
+              "resolution": "Correct to least powerful suitable; add dummy, stub, working fake, spy, autospec and restored lookup patch with explicit scope limits."
+            },
+            {
+              "id": "pcet3001-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Mandatory validation and debugging needed executable evidence",
+              "url": "https://docs.python.org/3.13/reference/simple_stmts.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCET-30-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Assert disappears under optimization; the original exclusive upper bound rejects 10.",
+              "recommendation": "Record actual normal/optimized validator outputs and scripted pdb/print evidence; explicit utility validation and TestCase assertions pass both modes.",
+              "disposition": "applied",
+              "source_id": "python313-simple-statements",
+              "resolution": "Record actual normal/optimized validator outputs and scripted pdb/print evidence; explicit utility validation and TestCase assertions pass both modes."
+            },
+            {
+              "id": "pcet3001-deep-4",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Course access and runtime were overstated",
+              "url": "https://edube.org/study/pt101",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCET-30-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Public PT101 distinguishes free Core from USD 49 Full/Pro, estimates four weeks at about one hour/day and advertises 38 labs; prior guide called the full course free with an unsupported duration.",
+              "recommendation": "Correct access and provider estimate, label author budgets, distinguish course assessment from dedicated PCET practice and remove blocked-book runtime.",
+              "disposition": "applied",
+              "source_id": "openedg-python-testing-101",
+              "resolution": "Correct access and provider estimate, label author budgets, distinguish course assessment from dedicated PCET practice and remove blocked-book runtime."
+            },
+            {
+              "id": "pcet3001-deep-5",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Publisher version and heading conflicts persist",
+              "url": "https://pythoninstitute.org/pcet-exam-syllabus",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCET-30-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Header/alignment and credential page say 30-01; introductory prose says 30-02/data analysis and Objective 1.4 has a data-storage heading over testing principles.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "pcet3001-deep-6",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Named static tools and independent practice remain unexecuted",
+              "url": "https://pylint.readthedocs.io/en/latest/user_guide/usage/run.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCET-30-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Pylint and Flake8 are absent. Ruff selected-rule evidence cannot demonstrate those tools, all broader labs or human review.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped all 22 objectives and expanded 17 answers. Three exact original Python files pass 25 test methods and 55 probe checks per normal/optimized mode: requirements, boundaries, doubles, toy state transitions, actual coverage/mutant evidence, finite refactoring, scripted pdb, assertion removal and isolated logging. Corrected learning entitlements and least-powerful-double guidance; publisher conflicts, inaccessible policy/PDF, absent Pylint/Flake8, ten broader labs and human review remain explicit. Same-context AI review; human review pending. See docs/research/2026-09-30-pcet-30-01-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 4,
+        "no_action_findings": 0,
+        "blocked_findings": 2
+      }
+    },
+    {
       "id": "freshness-2026-09-29-pcad3102-deep-review",
       "title": "PCAD-31-02 complete guide and learning-content review",
       "rubric_version": 1,
