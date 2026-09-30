@@ -1,0 +1,2843 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-30",
+  "exam_code": "PCEI-30-01",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/PCEI-30-01-python-certified-entry-level-ai-specialist.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "b197a306c0012869d2a287b5df6a26c8cca89068628d188954bffc2563fd00d1",
+  "guide_after_sha256": "57a4bf89d050ecaa9ce2c8822c2b3e8bf6afec50fb610fcb94fabd152dc2faa0",
+  "prior_records": {
+    "exam": {
+      "code": "PCEI-30-01",
+      "level": "beginner",
+      "vendor_id": "python-institute",
+      "title": "PCEI Certified Entry-Level AI Specialist with Python",
+      "status": "active",
+      "study_guide_url": "https://pythoninstitute.org/pcei-exam-syllabus",
+      "guide_path": "guides/PCEI-30-01-python-certified-entry-level-ai-specialist.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite is published; basic Python, data analysis and digital literacy around PCEP/PCED level are recommended. Practice problem framing, learning types and simple algorithms, data preparation, evaluation metrics, neural/generative concepts, responsible AI, projects and communication with small auditable Python tasks. The page still carries past-due Q1 2026 PCAI and practice-test announcements plus Q3/Q4 2026 pricing language; verify live availability."
+    },
+    "review": {
+      "id": "pcei-30-01-2026-09-02-source-validation",
+      "exam_code": "PCEI-30-01",
+      "guide_path": "guides/PCEI-30-01-python-certified-entry-level-ai-specialist.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/pcei-30-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "e5fdda2adf0c6e0b035be96b13269a63f7ca7aaf52183c123a3d2af3a9a1301e",
+      "objective_coverage": [
+        {
+          "objective_group": "Artificial Intelligence Fundamentals (14%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated lab"
+          ]
+        },
+        {
+          "objective_group": "Machine Learning Fundamentals (16.5%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated lab"
+          ]
+        },
+        {
+          "objective_group": "Data Handling, Analysis, and Visualization (16.5%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated lab"
+          ]
+        },
+        {
+          "objective_group": "Neural Networks, Deep Learning, and Generative AI (22.5%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated lab"
+          ]
+        },
+        {
+          "objective_group": "Responsible AI, Ethics, and Critical Thinking (16.5%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated lab"
+          ]
+        },
+        {
+          "objective_group": "AI Projects, Collaboration, and Communication (14%)",
+          "guide_sections": [
+            "Section 6",
+            "Integrated lab"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 10,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All six PCEI-30-01 modules are mapped through AI and ML foundations, pure-Python rules/distances/grouping and evaluation, data preparation, neural/deep/generative concepts, responsible AI, and project collaboration. The integrated lab requires problem/data/metric/limitation/human-boundary evidence. The official objective 2.2 heading defect and stale/past-due PCAI and practice-test announcements are explicit. O'Reilly is automation-blocked, not missing. No recalled/live item, answer dump or copied course question is used."
+    },
+    "sources": [
+      {
+        "id": "aws-aif-c01-nist-ai-rmf",
+        "title": "NIST AI Risk Management Framework",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "publisher": "National Institute of Standards and Technology",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "AIF-C01",
+          "AIB-C01",
+          "PCEI-30-01",
+          "PANW-SECURITY-OPERATIONS-ARCHITECT",
+          "NCA-GENL"
+        ],
+        "notes": "Cross-vendor voluntary Govern, Map, Measure and Manage risk context; version 1.0 is under revision and is not a substitute for applicable law or vendor objectives. September 29 NCA-GENL deep review: Main overview/release history/revision notice andprior-document context read. Voluntary framework,2024GenAIprofile,April2026criticalinfrastructureconcept andongoing1.0revision. Not full framework/profile orlegalcompliance assessment. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "numpy-documentation",
+        "title": "NumPy Documentation",
+        "url": "https://numpy.org/doc/stable/",
+        "publisher": "NumPy project",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "PCAD-31-02",
+          "PCEI-30-01"
+        ],
+        "notes": "Primary current NumPy documentation; reconcile newer features with the dated exam scope. September 29 PCAD-31-02 deep review: Complete short stable index read, version2.5; navigation only, not all linked chapters. Local numerical execution uses2.5.2. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "pandas-documentation",
+        "title": "Pandas Documentation",
+        "url": "https://pandas.pydata.org/docs/",
+        "publisher": "pandas project",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "PCAD-31-02",
+          "PCEI-30-01"
+        ],
+        "notes": "Primary current pandas reference for acquisition, cleaning, transformation, aggregation and analysis. September 29 PCAD-31-02 deep review: Complete short index read, version3.0.6 datedSeptember17 2026. Navigation only; Pandas absent locally. Version not inferred as exam requirement. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "pcei-30-01-syllabus",
+        "title": "PCEI-30-01 Exam Syllabus",
+        "url": "https://pythoninstitute.org/pcei-exam-syllabus",
+        "publisher": "OpenEDG Python Institute",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEI-30-01"
+        ],
+        "notes": "Canonical active six-block syllabus aligned to PCEI-30-01 and last updated December 11, 2025; objective 2.2 has a testing-related heading inconsistent with its ML workflow body."
+      },
+      {
+        "id": "pcei-certification-page",
+        "title": "PCEI Certified Entry-Level AI Specialist with Python",
+        "url": "https://pythoninstitute.org/pcei",
+        "publisher": "OpenEDG Python Institute",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEI-30-01"
+        ],
+        "notes": "Current logistics plus inconsistent past-due Q1 2026 PCAI/practice announcements and Q3/Q4 2026 practice pricing; verify availability live."
+      },
+      {
+        "id": "nist-ai-rmf-playbook",
+        "title": "NIST AI RMF Playbook",
+        "url": "https://airc.nist.gov/AI_RMF_Knowledge_Base/Playbook",
+        "publisher": "National Institute of Standards and Technology",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEI-30-01"
+        ],
+        "notes": "Primary voluntary responsible-AI practice guidance; not a substitute for applicable law or the exam blueprint."
+      },
+      {
+        "id": "google-machine-learning-crash-course",
+        "title": "Machine Learning Crash Course",
+        "url": "https://developers.google.com/machine-learning/crash-course",
+        "publisher": "Google for Developers",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEI-30-01"
+        ],
+        "notes": "Free approximately 15-hour vendor course with exercises; broader and more mathematical than PCEI."
+      },
+      {
+        "id": "microsoft-ml-for-beginners",
+        "title": "Machine Learning for Beginners",
+        "url": "https://github.com/microsoft/ML-For-Beginners",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEI-30-01"
+        ],
+        "notes": "Open curriculum for selected applied reinforcement; broader than the official blueprint."
+      },
+      {
+        "id": "scikit-learn-user-guide",
+        "title": "scikit-learn User Guide",
+        "url": "https://scikit-learn.org/stable/user_guide.html",
+        "publisher": "scikit-learn project",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEI-30-01"
+        ],
+        "notes": "Primary library documentation for related model concepts; framework implementation is beyond much of the pure-Python exam scope."
+      },
+      {
+        "id": "elements-of-ai",
+        "title": "Elements of AI",
+        "url": "https://www.elementsofai.com/",
+        "publisher": "University of Helsinki and MinnaLearn",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEI-30-01"
+        ],
+        "notes": "Free conceptual university course; estimated 30–60 hours depending on selected exercises."
+      },
+      {
+        "id": "oreilly-hands-on-machine-learning-third",
+        "title": "Hands-On Machine Learning, 3rd Edition",
+        "url": "https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/",
+        "publisher": "O'Reilly",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEI-30-01"
+        ],
+        "notes": "Substantially broader than PCEI. Select 20–35 foundational hours and keep framework-heavy material as optional extension."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "04823379d4a0adb38c5d112bad1da713ca8817a6257db31daa663ad9e4d4d803",
+      "guide_sections": [
+        "1. AI fundamentals — 14.0%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "8d0039258ff7c9ef59021629a37021ac903721c620db76f83a57dda1263b98d4",
+      "guide_sections": [
+        "1. AI fundamentals — 14.0%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "921fb3305fc5086c37249956ea1e04b4ebadab2ff9c2e78fe982a1673b44a773",
+      "guide_sections": [
+        "1. AI fundamentals — 14.0%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "054a39f7661fa214ce96a75ab4fa9e7e2d6aa5580d317b0e28352fdb8e98dfff",
+      "guide_sections": [
+        "1. AI fundamentals — 14.0%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "2da57a399ec295764d2341a3e6b04aa1231753cd236877730ee21d9139f15437",
+      "guide_sections": [
+        "1. AI fundamentals — 14.0%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "eee158be217ce7ea862a6b92787ffff0edcd19de16dd4f0c20ca0ea930b02628",
+      "guide_sections": [
+        "2. Machine-learning fundamentals — 16.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "90aeeb3acc0e2157b274626881d37ebbe9e056244fd9fe427c1842f6945e20f6",
+      "guide_sections": [
+        "2. Machine-learning fundamentals — 16.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "2a7229cbc84250b55f9733c1a409bab24ae967bf9f8d4b9dfb9c322fa0f82502",
+      "guide_sections": [
+        "2. Machine-learning fundamentals — 16.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "46d46d5b34eb2887aa79eab4426e424f60dbf9caa361ca213fc20e1ec016cfe7",
+      "guide_sections": [
+        "2. Machine-learning fundamentals — 16.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "9001c406f779fd7db063868797a472ba686c17398d137be1a7f078a4275bb3d6",
+      "guide_sections": [
+        "2. Machine-learning fundamentals — 16.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "fd52563cd77d559cb4d3069e7be29648e04ed6fecc152b5fd9924415f95b1986",
+      "guide_sections": [
+        "3. Data handling, analysis, and visualization — 16.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "372a4df6c27643eeca0aabc429e360760f4d6fd5f90b85f8e9b57edc9a4a731c",
+      "guide_sections": [
+        "3. Data handling, analysis, and visualization — 16.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "17f12ce4abce987f510a637fc1651d92046c2769bd4ee0b2963bee20fe58cf9e",
+      "guide_sections": [
+        "3. Data handling, analysis, and visualization — 16.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "99463be797bdea0fb8915d8947f3afdcd7a5e94df0ecb1996d96f3edab423671",
+      "guide_sections": [
+        "3. Data handling, analysis, and visualization — 16.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "fc933b9712bbc061a697a139357a3084a8fce9a46bdecd029cce972aec33899d",
+      "guide_sections": [
+        "3. Data handling, analysis, and visualization — 16.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "36b7c8ab1e434f758f275ebf2b0df05660ac27d297ea804752aa9ccedde20d99",
+      "guide_sections": [
+        "3. Data handling, analysis, and visualization — 16.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "aeb84f6db5f1ef20bef232728442801e818d3cd306b711dd89528507e3b87521",
+      "guide_sections": [
+        "4. Neural networks, deep learning, and generative AI — 22.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "bc2188dbda3d5280158ffc0a09003bb7304f2e0a8f66bf7568c76bb396efc586",
+      "guide_sections": [
+        "4. Neural networks, deep learning, and generative AI — 22.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "5f2b9c11c193b50f563824e59e04c4ecaad4e555ab6bf2d9836c08fdee5463de",
+      "guide_sections": [
+        "4. Neural networks, deep learning, and generative AI — 22.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "7f37d5982e46145d1988d4b2a02f6ad46dff92d94cdcee2165e8a88b5794eb4a",
+      "guide_sections": [
+        "4. Neural networks, deep learning, and generative AI — 22.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "b00c920083c9621215bd9f3a5d405ceb0712ab02e7420fac6e8d952d2669d772",
+      "guide_sections": [
+        "4. Neural networks, deep learning, and generative AI — 22.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "b28db51b546b0ccb9c97eeb1905a2d6e86bed58c56fa5a8eb242514ed57984d4",
+      "guide_sections": [
+        "4. Neural networks, deep learning, and generative AI — 22.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "edac857a8a19a8d844f6035d9ae047f107994e5295fb3828cbac9c7dcbfb2b27",
+      "guide_sections": [
+        "4. Neural networks, deep learning, and generative AI — 22.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "6bf8460d343480eda04407a9a8c6b67bb5e13d715438741279408998a86de5ce",
+      "guide_sections": [
+        "5. Responsible AI, ethics, and critical thinking — 16.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "d7b0e1b03836414689b269953ab72f2588d8d9d9da1f25b92d7c0d2bab76a50e",
+      "guide_sections": [
+        "5. Responsible AI, ethics, and critical thinking — 16.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "1b59dc77741c8e10764c17bb814cf58509ca88a2d31df8de62fe292c327d90eb",
+      "guide_sections": [
+        "5. Responsible AI, ethics, and critical thinking — 16.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "1299041cd5d90cf4ce4bdf21326527c0d2e33d0277e2e8cf2cecaf60c200c8a2",
+      "guide_sections": [
+        "5. Responsible AI, ethics, and critical thinking — 16.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "be0eae6bfdc95299462b881c6093009edd31adc91f2168d83f43643ea880c9ce",
+      "guide_sections": [
+        "5. Responsible AI, ethics, and critical thinking — 16.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "070bb291ef89e72fb5e5eed8f9c95c32df52149d2e8fd0cb59fa479b9933c4cd",
+      "guide_sections": [
+        "6. Projects, collaboration, and communication — 14.0%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "85b8def38234dcef659577323b5b05fa71cb40323fee13a9beac9520a976c43a",
+      "guide_sections": [
+        "6. Projects, collaboration, and communication — 14.0%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "13dffec0752c057eb47c5200badfb8049a571ee2f4842133080155877265720d",
+      "guide_sections": [
+        "6. Projects, collaboration, and communication — 14.0%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "901cb47422e672f82cf1d44321e51f6c744fc4439531bd242b3b980abff55c15",
+      "guide_sections": [
+        "6. Projects, collaboration, and communication — 14.0%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "8f92801b6f6917f339f7757cd5a0ade81a4c50a2beb63e7496e06acd3de5ddc5",
+      "guide_sections": [
+        "6. Projects, collaboration, and communication — 14.0%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [
+      "PCEI-30-01"
+    ],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "PCEI-30-01",
+        "title": "PCEI Certified Entry-Level AI Specialist with Python",
+        "url": "https://pythoninstitute.org/pcei-exam-syllabus",
+        "guide_path": "guides/PCEI-30-01-python-certified-entry-level-ai-specialist.md",
+        "snapshot_path": "data\\objective-snapshots\\pcei-30-01-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\pcei-30-01-official-status.json",
+        "status": "error",
+        "changed": false,
+        "error": "URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 25,
+    "reachable": 17,
+    "access_blocked": 1,
+    "missing_or_error": 7
+  },
+  "source_fetches": [
+    {
+      "id": "aws-aif-c01-nist-ai-rmf",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "checked_at": "2026-09-30T05:40:17.525676+00:00",
+      "health": {
+        "id": "aws-aif-c01-nist-ai-rmf",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "checked_at": "2026-09-30T05:40:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AI Risk Management Framework",
+        "canonical_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "duration_signals": [],
+        "signal_fingerprint": "75a108a2df92fa648fb28efac890144b2dec8b5278543106f01f1879fae24c4f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "sha256": "d19e51c6241b0739875a6c9ca5e0f6d68fdbe6035eb14160940cb4bf6b0852d4",
+      "text_characters": 7118
+    },
+    {
+      "id": "numpy-documentation",
+      "url": "https://numpy.org/doc/stable/",
+      "checked_at": "2026-09-30T05:40:17.526247+00:00",
+      "health": {
+        "id": "numpy-documentation",
+        "url": "https://numpy.org/doc/stable/",
+        "checked_at": "2026-09-30T05:40:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://numpy.org/doc/stable/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "NumPy documentation — NumPy v2.5 Manual",
+        "canonical_url": "https://numpy.org/doc/stable/",
+        "duration_signals": [],
+        "signal_fingerprint": "3639f40a40a33ef4e1806f66720b72e0804163f2ec9905b71546221d1dec7025",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://numpy.org/doc/stable/",
+      "sha256": "6570a4a090f623420af01c4da15fdf62a5f686f0a9bda6d3820911f5119ec539",
+      "text_characters": 1526
+    },
+    {
+      "id": "pandas-documentation",
+      "url": "https://pandas.pydata.org/docs/",
+      "checked_at": "2026-09-30T05:40:17.526575+00:00",
+      "health": {
+        "id": "pandas-documentation",
+        "url": "https://pandas.pydata.org/docs/",
+        "checked_at": "2026-09-30T05:40:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://pandas.pydata.org/docs/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "pandas documentation — pandas 3.0.6 documentation",
+        "canonical_url": "https://pandas.pydata.org/docs/",
+        "duration_signals": [],
+        "signal_fingerprint": "b973056cbaa4c1633cc6345ecd2326386f601fa0cdeb48cc43962540790b6c59",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://pandas.pydata.org/docs/",
+      "sha256": "f902cf559bbf597bd5cff94632e39cf92b658fd8ecdf89e3f0429d41e39781f9",
+      "text_characters": 1264
+    },
+    {
+      "id": "pcei-30-01-syllabus",
+      "url": "https://pythoninstitute.org/pcei-exam-syllabus",
+      "checked_at": "2026-09-30T05:40:18.086108+00:00",
+      "health": {
+        "id": "pcei-30-01-syllabus",
+        "url": "https://pythoninstitute.org/pcei-exam-syllabus",
+        "checked_at": "2026-09-30T05:40:18+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pcei-exam-syllabus",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "pcei-certification-page",
+      "url": "https://pythoninstitute.org/pcei",
+      "checked_at": "2026-09-30T05:40:18.092665+00:00",
+      "health": {
+        "id": "pcei-certification-page",
+        "url": "https://pythoninstitute.org/pcei",
+        "checked_at": "2026-09-30T05:40:18+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pcei",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "nist-ai-rmf-playbook",
+      "url": "https://airc.nist.gov/AI_RMF_Knowledge_Base/Playbook",
+      "checked_at": "2026-09-30T05:40:18.138163+00:00",
+      "health": {
+        "id": "nist-ai-rmf-playbook",
+        "url": "https://airc.nist.gov/AI_RMF_Knowledge_Base/Playbook",
+        "checked_at": "2026-09-30T05:40:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://airc.nist.gov/airmf-resources/playbook/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Playbook - AIRC",
+        "canonical_url": "https://airc.nist.gov/airmf-resources/playbook/",
+        "duration_signals": [],
+        "signal_fingerprint": "7d47b4feb06a1fa571a23b1ed1205f8674c13b0145e33dda9bd418f9166401d6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://airc.nist.gov/airmf-resources/playbook/",
+      "sha256": "ab80b14dc99111f051e3af77020406151a9d99a2eae98322304165625a3f131a",
+      "text_characters": 1375
+    },
+    {
+      "id": "google-machine-learning-crash-course",
+      "url": "https://developers.google.com/machine-learning/crash-course",
+      "checked_at": "2026-09-30T05:40:19.362934+00:00",
+      "health": {
+        "id": "google-machine-learning-crash-course",
+        "url": "https://developers.google.com/machine-learning/crash-course",
+        "checked_at": "2026-09-30T05:40:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developers.google.com/machine-learning/crash-course",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Machine Learning | Google for Developers",
+        "canonical_url": "https://developers.google.com/machine-learning/crash-course",
+        "duration_signals": [],
+        "signal_fingerprint": "4036cae5041528b4e8827290ffd761683834fe896a83343b42d0303eb3fc1ebb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developers.google.com/machine-learning/crash-course",
+      "sha256": "6cf4dc4cff4878dd54edde29132e78e78ce901d20549ec90ea7bf99de5fb3383",
+      "text_characters": 3903
+    },
+    {
+      "id": "microsoft-ml-for-beginners",
+      "url": "https://github.com/microsoft/ML-For-Beginners",
+      "checked_at": "2026-09-30T05:40:20.552522+00:00",
+      "health": {
+        "id": "microsoft-ml-for-beginners",
+        "url": "https://github.com/microsoft/ML-For-Beginners",
+        "checked_at": "2026-09-30T05:40:20+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://github.com/microsoft/ML-For-Beginners",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "scikit-learn-user-guide",
+      "url": "https://scikit-learn.org/stable/user_guide.html",
+      "checked_at": "2026-09-30T05:40:36.392264+00:00",
+      "health": {
+        "id": "scikit-learn-user-guide",
+        "url": "https://scikit-learn.org/stable/user_guide.html",
+        "checked_at": "2026-09-30T05:40:36+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://scikit-learn.org/stable/user_guide.html",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "elements-of-ai",
+      "url": "https://www.elementsofai.com/",
+      "checked_at": "2026-09-30T05:40:36.392489+00:00",
+      "health": {
+        "id": "elements-of-ai",
+        "url": "https://www.elementsofai.com/",
+        "checked_at": "2026-09-30T05:40:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.elementsofai.com/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "A free online introduction to artificial intelligence for non-experts",
+        "canonical_url": "https://www.elementsofai.com/",
+        "duration_signals": [
+          "60 mins",
+          "60 minutes"
+        ],
+        "signal_fingerprint": "baaf0dfa8c030efdb87b5ca8b77a884a8b2d18b770ad1af7a19e0b76a66af8a0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.elementsofai.com/",
+      "sha256": "ea87c824509dcf9ee6538cc6905fe0c413dcc3502d86943290db90a14b6c9d90",
+      "text_characters": 6230
+    },
+    {
+      "id": "oreilly-hands-on-machine-learning-third",
+      "url": "https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/",
+      "checked_at": "2026-09-30T05:40:37.801009+00:00",
+      "health": {
+        "id": "oreilly-hands-on-machine-learning-third",
+        "url": "https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/",
+        "checked_at": "2026-09-30T05:40:37+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "pcei-testing-policies",
+      "url": "https://pythoninstitute.org/pcei-testing-policies",
+      "checked_at": "2026-09-30T05:47:08.279201+00:00",
+      "health": {
+        "id": "pcei-testing-policies",
+        "url": "https://pythoninstitute.org/pcei-testing-policies",
+        "checked_at": "2026-09-30T05:47:08+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pcei-testing-policies",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "python313-math",
+      "url": "https://docs.python.org/3.13/library/math.html",
+      "checked_at": "2026-09-30T05:47:08.279890+00:00",
+      "health": {
+        "id": "python313-math",
+        "url": "https://docs.python.org/3.13/library/math.html",
+        "checked_at": "2026-09-30T05:47:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/math.html",
+        "content_type": "text/html",
+        "page_title": "math — Mathematical functions",
+        "canonical_url": "https://docs.python.org/3/library/math.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6534134c5905c6855058c4ed5fe44899bd94cd3bdf005175db210d2f930e4819",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/math.html",
+      "sha256": "b0066b31ba2e35b96bef3d4cc184a34623b5351fc9a7331f4482fb84a4b5519d",
+      "text_characters": 24177
+    },
+    {
+      "id": "python313-statistics",
+      "url": "https://docs.python.org/3.13/library/statistics.html",
+      "checked_at": "2026-09-30T05:47:08.280325+00:00",
+      "health": {
+        "id": "python313-statistics",
+        "url": "https://docs.python.org/3.13/library/statistics.html",
+        "checked_at": "2026-09-30T05:47:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/statistics.html",
+        "content_type": "text/html",
+        "page_title": "statistics — Mathematical statistics functions",
+        "canonical_url": "https://docs.python.org/3/library/statistics.html",
+        "duration_signals": [],
+        "signal_fingerprint": "73bcd08b2202d8d474aee622f0a543dcdf7a78e29d09be22763d9daef9806f7d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/statistics.html",
+      "sha256": "c3655f03a23d8eb56fe283d82c5eb0758b5e3b0415275693e85e276cf0578e00",
+      "text_characters": 36699
+    },
+    {
+      "id": "python313-csv",
+      "url": "https://docs.python.org/3.13/library/csv.html",
+      "checked_at": "2026-09-30T05:47:08.937981+00:00",
+      "health": {
+        "id": "python313-csv",
+        "url": "https://docs.python.org/3.13/library/csv.html",
+        "checked_at": "2026-09-30T05:47:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/csv.html",
+        "content_type": "text/html",
+        "page_title": "csv — CSV File Reading and Writing",
+        "canonical_url": "https://docs.python.org/3/library/csv.html",
+        "duration_signals": [],
+        "signal_fingerprint": "86499c6a09d3131a422c0c6b0c4784d620964719ebb01792199ac575e9391283",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/csv.html",
+      "sha256": "cfd4ed9d4e3357b1c300bc0f5a4eaf9a9d183e318432f3490096cf5f6b07a689",
+      "text_characters": 22245
+    },
+    {
+      "id": "python313-json",
+      "url": "https://docs.python.org/3.13/library/json.html",
+      "checked_at": "2026-09-30T05:47:08.975803+00:00",
+      "health": {
+        "id": "python313-json",
+        "url": "https://docs.python.org/3.13/library/json.html",
+        "checked_at": "2026-09-30T05:47:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/json.html",
+        "content_type": "text/html",
+        "page_title": "json — JSON encoder and decoder",
+        "canonical_url": "https://docs.python.org/3/library/json.html",
+        "duration_signals": [],
+        "signal_fingerprint": "003894cea941cd12f7c74ca070bd67c17798d619b1b2f3265673efdcf49d1633",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/json.html",
+      "sha256": "343d320c237449b9715d3939ad33dbc28bce9f7ffc284cc651199089e329d9a6",
+      "text_characters": 25434
+    },
+    {
+      "id": "numpy-norm",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html",
+      "checked_at": "2026-09-30T05:47:09.334466+00:00",
+      "health": {
+        "id": "numpy-norm",
+        "url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html",
+        "checked_at": "2026-09-30T05:47:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "numpy.linalg.norm — NumPy v2.5 Manual",
+        "canonical_url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html",
+        "duration_signals": [
+          "1 min"
+        ],
+        "signal_fingerprint": "d3d6a3df0ed9f34cf810e44942d64833fa126d488083347ef93733bd3f6de45c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html",
+      "sha256": "0eafc2f032c59dd7d40b3a3f31124aee7e7029b956b5b48e471e53b331f86ead",
+      "text_characters": 3775
+    },
+    {
+      "id": "numpy-mean",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.mean.html",
+      "checked_at": "2026-09-30T05:47:09.422947+00:00",
+      "health": {
+        "id": "numpy-mean",
+        "url": "https://numpy.org/doc/stable/reference/generated/numpy.mean.html",
+        "checked_at": "2026-09-30T05:47:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.mean.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "numpy.mean — NumPy v2.5 Manual",
+        "canonical_url": "https://numpy.org/doc/stable/reference/generated/numpy.mean.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d96dc7c7f758b46faa9d44a01107c110fa947c618802019c05868d18019a04d1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.mean.html",
+      "sha256": "1e659828e52387d4a2f95181eee2acc62d66d43e5822433c94e74896cecd76c6",
+      "text_characters": 3371
+    },
+    {
+      "id": "sklearn-common-pitfalls",
+      "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+      "checked_at": "2026-09-30T05:47:09.797552+00:00",
+      "health": {
+        "id": "sklearn-common-pitfalls",
+        "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+        "checked_at": "2026-09-30T05:47:09+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://scikit-learn.org/stable/common_pitfalls.html",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "sklearn-minmaxscaler",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html",
+      "checked_at": "2026-09-30T05:47:09.808145+00:00",
+      "health": {
+        "id": "sklearn-minmaxscaler",
+        "url": "https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html",
+        "checked_at": "2026-09-30T05:47:09+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "google-mlcc-prerequisites",
+      "url": "https://developers.google.com/machine-learning/crash-course/prereqs-and-prework",
+      "checked_at": "2026-09-30T05:47:26.697596+00:00",
+      "health": {
+        "id": "google-mlcc-prerequisites",
+        "url": "https://developers.google.com/machine-learning/crash-course/prereqs-and-prework",
+        "checked_at": "2026-09-30T05:47:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developers.google.com/machine-learning/crash-course/prereqs-and-prework",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Prerequisites and prework | Machine Learning | Google for Developers",
+        "canonical_url": "https://developers.google.com/machine-learning/crash-course/prereqs-and-prework",
+        "duration_signals": [
+          "10 min",
+          "105 min",
+          "110 min",
+          "12 min",
+          "15 min",
+          "2 min",
+          "20 min",
+          "25 min",
+          "3 min",
+          "3 mins",
+          "30 min",
+          "35 min",
+          "40 min",
+          "45 min",
+          "5 min",
+          "50 min",
+          "70 min",
+          "75 min",
+          "80 min",
+          "85 min"
+        ],
+        "signal_fingerprint": "d375f992273f5c5848dca3ac75c0c3ef9a5e9f9a657a8227d67147b13cd0425e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developers.google.com/machine-learning/crash-course/prereqs-and-prework",
+      "sha256": "b535425c284305e0dcc606a8e9e41422079fb5bba06f69f07007efe6e9ae9841",
+      "text_characters": 6284
+    },
+    {
+      "id": "google-mlcc-classification",
+      "url": "https://developers.google.com/machine-learning/crash-course/classification",
+      "checked_at": "2026-09-30T05:47:27.746228+00:00",
+      "health": {
+        "id": "google-mlcc-classification",
+        "url": "https://developers.google.com/machine-learning/crash-course/classification",
+        "checked_at": "2026-09-30T05:47:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developers.google.com/machine-learning/crash-course/classification",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Classification | Machine Learning | Google for Developers",
+        "canonical_url": "https://developers.google.com/machine-learning/crash-course/classification",
+        "duration_signals": [
+          "10 min",
+          "105 min",
+          "110 min",
+          "12 min",
+          "15 min",
+          "2 min",
+          "20 min",
+          "25 min",
+          "3 min",
+          "3 mins",
+          "30 min",
+          "35 min",
+          "40 min",
+          "45 min",
+          "5 min",
+          "50 min",
+          "70 min",
+          "70 minutes",
+          "75 min",
+          "80 min",
+          "85 min"
+        ],
+        "signal_fingerprint": "0f756aa5e25261f6a2586bf01e4c743e1eba9828714a264a0226d54fd5564299",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developers.google.com/machine-learning/crash-course/classification",
+      "sha256": "b04f4209ed1ec90b87ed6c33f1366ce1f0395de996e85fb4327ce7c3ac99da1f",
+      "text_characters": 3190
+    },
+    {
+      "id": "google-mlcc-neural-networks",
+      "url": "https://developers.google.com/machine-learning/crash-course/neural-networks",
+      "checked_at": "2026-09-30T05:47:28.728525+00:00",
+      "health": {
+        "id": "google-mlcc-neural-networks",
+        "url": "https://developers.google.com/machine-learning/crash-course/neural-networks",
+        "checked_at": "2026-09-30T05:47:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developers.google.com/machine-learning/crash-course/neural-networks",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Neural networks | Machine Learning | Google for Developers",
+        "canonical_url": "https://developers.google.com/machine-learning/crash-course/neural-networks",
+        "duration_signals": [
+          "10 min",
+          "105 min",
+          "110 min",
+          "12 min",
+          "15 min",
+          "2 min",
+          "20 min",
+          "25 min",
+          "3 min",
+          "3 mins",
+          "30 min",
+          "35 min",
+          "40 min",
+          "45 min",
+          "5 min",
+          "50 min",
+          "70 min",
+          "75 min",
+          "75 minutes",
+          "80 min",
+          "85 min"
+        ],
+        "signal_fingerprint": "a756d77f1915a3ed3a92f4caba8525d1ce254e6938a7bee850c5761a4c4a06ee",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developers.google.com/machine-learning/crash-course/neural-networks",
+      "sha256": "cab18ef62efdb822af59c6040d5be13bed5b02889ffc4cb046c9526400a40203",
+      "text_characters": 4430
+    },
+    {
+      "id": "google-mlcc-llm",
+      "url": "https://developers.google.com/machine-learning/crash-course/llm",
+      "checked_at": "2026-09-30T05:47:29.749220+00:00",
+      "health": {
+        "id": "google-mlcc-llm",
+        "url": "https://developers.google.com/machine-learning/crash-course/llm",
+        "checked_at": "2026-09-30T05:47:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developers.google.com/machine-learning/crash-course/llm",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Introduction to Large Language Models | Machine Learning | Google for Developers",
+        "canonical_url": "https://developers.google.com/machine-learning/crash-course/llm",
+        "duration_signals": [
+          "10 min",
+          "105 min",
+          "110 min",
+          "12 min",
+          "15 min",
+          "2 min",
+          "20 min",
+          "25 min",
+          "3 min",
+          "3 mins",
+          "30 min",
+          "35 min",
+          "40 min",
+          "45 min",
+          "45 minutes",
+          "5 min",
+          "50 min",
+          "70 min",
+          "75 min",
+          "80 min",
+          "85 min"
+        ],
+        "signal_fingerprint": "3988fdb81033c50813723cc0ce805c930240015a7ed4fc92a199276946d35b3f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developers.google.com/machine-learning/crash-course/llm",
+      "sha256": "86d3bf7d42a91823f28c51463d936fa1e7aad8704733c6c8cccf45cd3fcece34",
+      "text_characters": 9180
+    },
+    {
+      "id": "pandas-10-minutes",
+      "url": "https://pandas.pydata.org/docs/user_guide/10min.html",
+      "checked_at": "2026-09-30T05:47:31.768453+00:00",
+      "health": {
+        "id": "pandas-10-minutes",
+        "url": "https://pandas.pydata.org/docs/user_guide/10min.html",
+        "checked_at": "2026-09-30T05:47:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://pandas.pydata.org/docs/user_guide/10min.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "10 minutes to pandas — pandas 3.0.6 documentation",
+        "canonical_url": "https://pandas.pydata.org/docs/user_guide/10min.html",
+        "duration_signals": [
+          "0.973118 min",
+          "10 minutes",
+          "5Min",
+          "5min"
+        ],
+        "signal_fingerprint": "c45a5c1e0ef402ef9b68518cd375c4d417986b2e220600cfe2c78df832267ef4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://pandas.pydata.org/docs/user_guide/10min.html",
+      "sha256": "9220209f82bb74988759f4ad9aa4f69957b8eee7785781d5644bdf59f2a376c1",
+      "text_characters": 29783
+    },
+    {
+      "id": "matplotlib-quickstart",
+      "url": "https://matplotlib.org/stable/users/explain/quick_start.html",
+      "checked_at": "2026-09-30T05:47:32.281040+00:00",
+      "health": {
+        "id": "matplotlib-quickstart",
+        "url": "https://matplotlib.org/stable/users/explain/quick_start.html",
+        "checked_at": "2026-09-30T05:47:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://matplotlib.org/stable/users/explain/quick_start.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Quick start guide — Matplotlib 3.11.2 documentation",
+        "canonical_url": "https://matplotlib.org/stable/users/explain/quick_start.html",
+        "duration_signals": [
+          "0 minutes"
+        ],
+        "signal_fingerprint": "1a24d65df07d83762bdadc3d9b70bc00955972131a70eb470ba881bed057da93",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://matplotlib.org/stable/users/explain/quick_start.html",
+      "sha256": "997f496c1dbc94bef8f1a381cdc7f86e62e6b52e39380ea6437335f9c4046032",
+      "text_characters": 19316
+    },
+    {
+      "id": "owasp-llm-prompt-injection",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html",
+      "checked_at": "2026-09-30T05:47:32.870322+00:00",
+      "health": {
+        "id": "owasp-llm-prompt-injection",
+        "url": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html",
+        "checked_at": "2026-09-30T05:47:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "LLM Prompt Injection Prevention - OWASP Cheat Sheet Series",
+        "canonical_url": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d8e0e062a33741c54642a9d013f5a4d130f7fb60c9a7cfce17c099e471da020c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html",
+      "sha256": "5851dbd662898648ed185d34c20976dee7a9216a7da86e7260bbadc8a56980c6",
+      "text_characters": 27085
+    },
+    {
+      "id": "ruff-linter",
+      "url": "https://docs.astral.sh/ruff/linter/",
+      "checked_at": "2026-09-30T05:47:33.463758+00:00",
+      "health": {
+        "id": "ruff-linter",
+        "url": "https://docs.astral.sh/ruff/linter/",
+        "checked_at": "2026-09-30T05:47:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.astral.sh/ruff/linter/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "The Ruff Linter | Ruff",
+        "canonical_url": "https://docs.astral.sh/ruff/linter/",
+        "duration_signals": [],
+        "signal_fingerprint": "fde25cc7fc94fbc1bd97c5106f56cd5620250a7ac06438760b9e5dd4a3200d59",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.astral.sh/ruff/linter/",
+      "sha256": "babdaa8bad054827a1078050909fed1107cfe2a9c784da5c0edfa000646e43b4",
+      "text_characters": 21957
+    }
+  ],
+  "added_source_ids": [
+    "pcei-testing-policies",
+    "sklearn-minmaxscaler",
+    "google-mlcc-prerequisites",
+    "google-mlcc-classification",
+    "google-mlcc-neural-networks",
+    "google-mlcc-llm",
+    "pandas-10-minutes",
+    "owasp-llm-prompt-injection"
+  ],
+  "findings": [
+    {
+      "id": "pcei3001-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Objective count differed from question allocation",
+      "url": "https://pythoninstitute.org/pcei-exam-syllabus",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCEI-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Canonicaloutlinehas33numberedobjectivesand36items;2.2titlemislabelsMLworkflow.",
+      "recommendation": "Map33objectives explicitly,preserveitemcounts andexplainmislabelwithoutinventingtestingtopics.",
+      "disposition": "applied",
+      "source_id": "pcei-30-01-syllabus",
+      "resolution": "Map33objectives explicitly,preserveitemcounts andexplainmislabelwithoutinventingtestingtopics."
+    },
+    {
+      "id": "pcei3001-deep-2",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Practice release statements conflict",
+      "url": "https://pythoninstitute.org/pcei",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCEI-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "TablesnameQ3/Q4 2026 whileFAQ/PCAIretainQ1 2026;PAI101indevelopment.",
+      "recommendation": "Replaceuniformstale-quarterclaim withpreciseconflict andverifyavailabilityguidance;noavailabilityinferredfromprices.",
+      "disposition": "applied",
+      "source_id": "pcei-certification-page",
+      "resolution": "Replaceuniformstale-quarterclaim withpreciseconflict andverifyavailabilityguidance;noavailabilityinferredfromprices."
+    },
+    {
+      "id": "pcei3001-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Evaluation needed a training-only preprocessing boundary",
+      "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCEI-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Originalextremeheldoutvaluechangestrainingrepresentationwhenleakedintorangefitting.",
+      "recommendation": "Addexplicitfit/transformseparation,numericcounterexample andlimitswithoutclaimingfittedlibraryexecutionoraccuracyinflation.",
+      "disposition": "applied",
+      "source_id": "sklearn-common-pitfalls",
+      "resolution": "Addexplicitfit/transformseparation,numericcounterexample andlimitswithoutclaimingfittedlibraryexecutionoraccuracyinflation."
+    },
+    {
+      "id": "pcei3001-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Vector and matrix operations needed shape evidence",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCEI-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "OriginalrowL1[3,4]differsfrommatrixL1=5;rowL2andcolumnmeanscomputed.",
+      "recommendation": "AddexecutedNumPyaxisoracles andgeometry-changingnearest-neighborcases.",
+      "disposition": "applied",
+      "source_id": "numpy-norm",
+      "resolution": "AddexecutedNumPyaxisoracles andgeometry-changingnearest-neighborcases."
+    },
+    {
+      "id": "pcei3001-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Accuracy alone concealed error costs",
+      "url": "https://developers.google.com/machine-learning/crash-course/classification",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCEI-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Originalfixedscoresyieldsame0.8accuracybutrecall0.5versus1,cost6versus2;baselineprecisionundefined.",
+      "recommendation": "Reportconfusioncounts,undefineddenominators andhypotheticalcostswithoutcalibration/deploymentclaims.",
+      "disposition": "applied",
+      "source_id": "google-mlcc-classification",
+      "resolution": "Reportconfusioncounts,undefineddenominators andhypotheticalcostswithoutcalibration/deploymentclaims."
+    },
+    {
+      "id": "pcei3001-deep-6",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Optional library exercises could not be executed",
+      "url": "https://pandas.pydata.org/docs/user_guide/10min.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCEI-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "pandas/Matplotlib/sklearn/torch/TensorFlowabsent;fourthfileonlysyntax/lintchecked.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "pcei3001-deep-7",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Retake and proctoring conditions need current verification",
+      "url": "https://pythoninstitute.org/pcei-testing-policies",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCEI-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Specificfailed-seven-dayruleversusgenericpassedwording;globalproctoring/localproceduresdiffer.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "pcei-certification-page",
+      "review": "Completepubliccurrentcredential/syllabus/policyread;practiceQ3/Q4versusQ1conflictandPAI101developmentexplicit. Nounseenreleasefeed/authenticatedentitlementclaim."
+    }
+  ],
+  "labs": {
+    "proposed": 12,
+    "fully_completed_proposed_labs": 0,
+    "public_files": 4,
+    "executed_public_files": 3,
+    "syntax_only_public_files": 1,
+    "execution_runs": 4,
+    "test_methods_per_mode": 21,
+    "observation_checks_per_mode": 20,
+    "local_validation": {
+      "passed": true,
+      "versions": {
+        "python": "3.13.14",
+        "numpy": "2.5.2",
+        "ruff": "ruff 0.16.4"
+      },
+      "platform": "Windows-11-10.0.26200-SP0",
+      "public_files": [
+        {
+          "filename": "ai_workbook.py",
+          "sha256": "0fdb8d8e80be42c5540416a0236274769fafe5e4f972e46e7d8005523cc6c738",
+          "bytes": 6661,
+          "syntax_checked": true,
+          "executed": true
+        },
+        {
+          "filename": "test_ai_workbook.py",
+          "sha256": "140b2a098651602772cfb306520038d8ad48958dd76aeec422b4402f586660d0",
+          "bytes": 7378,
+          "syntax_checked": true,
+          "executed": true
+        },
+        {
+          "filename": "observations.py",
+          "sha256": "a524c3ac03790fdcca47b264e11aadd36d5ec8b885f83caeda7c891135477ea0",
+          "bytes": 6099,
+          "syntax_checked": true,
+          "executed": true
+        },
+        {
+          "filename": "optional_visuals.py",
+          "sha256": "022853bd27ec8fbf0acf5282d4e02c2b01ace438891a712db9e644dabbbb28c8",
+          "bytes": 1025,
+          "syntax_checked": true,
+          "executed": false
+        }
+      ],
+      "test_methods_per_mode": 21,
+      "observation_checks_per_mode": 20,
+      "execution_runs": 4,
+      "results": [
+        {
+          "program": "unittest",
+          "command": [
+            "python",
+            "-B",
+            "-Werror",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            ".",
+            "-p",
+            "test_ai_workbook.py",
+            "-v"
+          ],
+          "started_at": "2026-09-30T06:03:47.120425+00:00",
+          "elapsed_seconds": 0.11,
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": "test_bad_training_and_bounds (test_ai_workbook.WorkbookTests.test_bad_training_and_bounds) ... ok\ntest_constant_feature_drift (test_ai_workbook.WorkbookTests.test_constant_feature_drift) ... ok\ntest_csv_bad_rows_and_recovery (test_ai_workbook.WorkbookTests.test_csv_bad_rows_and_recovery) ... ok\ntest_csv_header_syntax_size_limits (test_ai_workbook.WorkbookTests.test_csv_header_syntax_size_limits) ... ok\ntest_csv_preserves_source_and_rejects (test_ai_workbook.WorkbookTests.test_csv_preserves_source_and_rejects) ... ok\ntest_csv_quoted_numeric_and_line (test_ai_workbook.WorkbookTests.test_csv_quoted_numeric_and_line) ... ok\ntest_distances_against_known_triangles (test_ai_workbook.WorkbookTests.test_distances_against_known_triangles) ... ok\ntest_gradient_matches_finite_difference (test_ai_workbook.WorkbookTests.test_gradient_matches_finite_difference) ... ok\ntest_heldout_extremes_do_not_refit (test_ai_workbook.WorkbookTests.test_heldout_extremes_do_not_refit) ... ok\ntest_invalid_labels_are_rejected (test_ai_workbook.WorkbookTests.test_invalid_labels_are_rejected) ... ok\ntest_metric_changes_neighbor (test_ai_workbook.WorkbookTests.test_metric_changes_neighbor) ... ok\ntest_metrics_all_four_cells (test_ai_workbook.WorkbookTests.test_metrics_all_four_cells) ... ok\ntest_nearest_bad_training (test_ai_workbook.WorkbookTests.test_nearest_bad_training) ... ok\ntest_neuron_activation_and_saturation (test_ai_workbook.WorkbookTests.test_neuron_activation_and_saturation) ... ok\ntest_neuron_bad_inputs (test_ai_workbook.WorkbookTests.test_neuron_bad_inputs) ... ok\ntest_numeric_boundaries_and_bool (test_ai_workbook.WorkbookTests.test_numeric_boundaries_and_bool) ... ok\ntest_threshold_boundaries_and_bad_scores (test_ai_workbook.WorkbookTests.test_threshold_boundaries_and_bad_scores) ... ok\ntest_ties_ignore_training_order (test_ai_workbook.WorkbookTests.test_ties_ignore_training_order) ... ok\ntest_training_ranges_do_not_mutate (test_ai_workbook.WorkbookTests.test_training_ranges_do_not_mutate) ... ok\ntest_undefined_metrics_and_imbalance (test_ai_workbook.WorkbookTests.test_undefined_metrics_and_imbalance) ... ok\ntest_vector_shape_and_dimensions (test_ai_workbook.WorkbookTests.test_vector_shape_and_dimensions) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 0.001s\n\nOK\n",
+          "optimized": false,
+          "test_methods": 21
+        },
+        {
+          "program": "observations",
+          "command": [
+            "python",
+            "-B",
+            "-Werror",
+            "observations.py"
+          ],
+          "started_at": "2026-09-30T06:03:47.230780+00:00",
+          "elapsed_seconds": 0.147,
+          "exit_code": 0,
+          "stdout": "{\n  \"checks\": [\n    \"four accepted and four rejected\",\n    \"raw text preserved\",\n    \"reject record and raw cell preserved\",\n    \"mean and median differ\",\n    \"group and sort\",\n    \"metric changes neighbor\",\n    \"units change neighbor\",\n    \"held-out leakage changes training representation\",\n    \"held-out value is not clipped or refitted\",\n    \"majority baseline misses every positive\",\n    \"same accuracy different recall\",\n    \"explicit error-cost example\",\n    \"subgroup denominator matters\",\n    \"NumPy row distances\",\n    \"matrix norm differs from row norms\",\n    \"NumPy mean axis\",\n    \"neuron weighted input\",\n    \"sigmoid independent decimal oracle\",\n    \"one gradient step reduces this loss\",\n    \"single-neuron gradient direction\"\n  ],\n  \"data\": {\n    \"accepted\": [\n      {\n        \"features\": [\n          1.0,\n          10.0\n        ],\n        \"group\": \"A\",\n        \"id\": \"r1\",\n        \"label\": 0\n      },\n      {\n        \"features\": [\n          3.0,\n          20.0\n        ],\n        \"group\": \"A\",\n        \"id\": \"r2\",\n        \"label\": 1\n      },\n      {\n        \"features\": [\n          5.0,\n          30.0\n        ],\n        \"group\": \"B\",\n        \"id\": \"r3\",\n        \"label\": 0\n      },\n      {\n        \"features\": [\n          9.0,\n          40.0\n        ],\n        \"group\": \"B\",\n        \"id\": \"r4\",\n        \"label\": 1\n      }\n    ],\n    \"rejects\": [\n      {\n        \"cells\": [\n          \"r5\",\n          \"A\",\n          \"NaN\",\n          \"10\",\n          \"0\"\n        ],\n        \"line\": 6,\n        \"reason\": \"numeric range\",\n        \"record\": 5\n      },\n      {\n        \"cells\": [\n          \"r6\",\n          \"B\",\n          \"\",\n          \"20\",\n          \"1\"\n        ],\n        \"line\": 7,\n        \"reason\": \"could not convert string to float: ''\",\n        \"record\": 6\n      },\n      {\n        \"cells\": [\n          \"r1\",\n          \"A\",\n          \"7\",\n          \"50\",\n          \"0\"\n        ],\n        \"line\": 8,\n        \"reason\": \"duplicate accepted id\",\n        \"record\": 7\n      },\n      {\n        \"cells\": [\n          \"r7\",\n          \"B\",\n          \"2\",\n          \"8\"\n        ],\n        \"line\": 9,\n        \"reason\": \"field count\",\n        \"record\": 8\n      }\n    ],\n    \"summary\": {\n      \"descending_ids\": [\n        \"r4\",\n        \"r3\",\n        \"r2\",\n        \"r1\"\n      ],\n      \"groups\": {\n        \"A\": 2,\n        \"B\": 2\n      },\n      \"mean\": 4.5,\n      \"median\": 4.0\n    }\n  },\n  \"leakage\": {\n    \"heldout\": 10.0,\n    \"leaked_ten\": 0.1,\n    \"training_ten\": 1.0\n  },\n  \"metrics\": {\n    \"baseline\": {\n      \"accuracy\": 0.8,\n      \"fn\": 2,\n      \"fp\": 0,\n      \"n\": 10,\n      \"precision\": null,\n      \"recall\": 0.0,\n      \"tn\": 8,\n      \"tp\": 0\n    },\n    \"costs_5fn_plus_fp\": [\n      6,\n      2\n    ],\n    \"cutoff_050\": {\n      \"accuracy\": 0.8,\n      \"fn\": 0,\n      \"fp\": 2,\n      \"n\": 10,\n      \"precision\": 0.5,\n      \"recall\": 1.0,\n      \"tn\": 6,\n      \"tp\": 2\n    },\n    \"cutoff_075\": {\n      \"accuracy\": 0.8,\n      \"fn\": 1,\n      \"fp\": 1,\n      \"n\": 10,\n      \"precision\": 0.5,\n      \"recall\": 0.5,\n      \"tn\": 7,\n      \"tp\": 1\n    },\n    \"group_a\": {\n      \"accuracy\": 0.6,\n      \"fn\": 0,\n      \"fp\": 2,\n      \"n\": 5,\n      \"precision\": 0.5,\n      \"recall\": 1.0,\n      \"tn\": 1,\n      \"tp\": 2\n    },\n    \"group_b\": {\n      \"accuracy\": 1.0,\n      \"fn\": 0,\n      \"fp\": 0,\n      \"n\": 5,\n      \"precision\": null,\n      \"recall\": null,\n      \"tn\": 5,\n      \"tp\": 0\n    }\n  },\n  \"neighbors\": {\n    \"euclidean\": [\n      \"r2\",\n      1\n    ],\n    \"manhattan\": [\n      \"r1\",\n      0\n    ],\n    \"raw\": [\n      \"r1\",\n      0\n    ],\n    \"scaled\": [\n      \"r2\",\n      1\n    ]\n  },\n  \"neuron\": {\n    \"bias_gradient\": -0.0467937339328533,\n    \"loss_after\": 0.0251708674548701,\n    \"loss_before\": 0.031185007428680883,\n    \"probability\": 0.7502601055951177,\n    \"weight_gradient\": [\n      -0.0935874678657066,\n      0.0467937339328533\n    ],\n    \"z\": 1.1\n  },\n  \"numpy\": {\n    \"column_means\": [\n      2.5,\n      1.0\n    ],\n    \"matrix_l1\": 5.0,\n    \"row_l1\": [\n      3.0,\n      4.0\n    ],\n    \"row_l2\": [\n      3.0,\n      2.8284271247461903\n    ]\n  },\n  \"passed_checks\": 20\n}\n",
+          "stderr": "",
+          "optimized": false,
+          "checks": 20
+        },
+        {
+          "program": "unittest",
+          "command": [
+            "python",
+            "-B",
+            "-Werror",
+            "-O",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            ".",
+            "-p",
+            "test_ai_workbook.py",
+            "-v"
+          ],
+          "started_at": "2026-09-30T06:03:47.378363+00:00",
+          "elapsed_seconds": 0.277,
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": "test_bad_training_and_bounds (test_ai_workbook.WorkbookTests.test_bad_training_and_bounds) ... ok\ntest_constant_feature_drift (test_ai_workbook.WorkbookTests.test_constant_feature_drift) ... ok\ntest_csv_bad_rows_and_recovery (test_ai_workbook.WorkbookTests.test_csv_bad_rows_and_recovery) ... ok\ntest_csv_header_syntax_size_limits (test_ai_workbook.WorkbookTests.test_csv_header_syntax_size_limits) ... ok\ntest_csv_preserves_source_and_rejects (test_ai_workbook.WorkbookTests.test_csv_preserves_source_and_rejects) ... ok\ntest_csv_quoted_numeric_and_line (test_ai_workbook.WorkbookTests.test_csv_quoted_numeric_and_line) ... ok\ntest_distances_against_known_triangles (test_ai_workbook.WorkbookTests.test_distances_against_known_triangles) ... ok\ntest_gradient_matches_finite_difference (test_ai_workbook.WorkbookTests.test_gradient_matches_finite_difference) ... ok\ntest_heldout_extremes_do_not_refit (test_ai_workbook.WorkbookTests.test_heldout_extremes_do_not_refit) ... ok\ntest_invalid_labels_are_rejected (test_ai_workbook.WorkbookTests.test_invalid_labels_are_rejected) ... ok\ntest_metric_changes_neighbor (test_ai_workbook.WorkbookTests.test_metric_changes_neighbor) ... ok\ntest_metrics_all_four_cells (test_ai_workbook.WorkbookTests.test_metrics_all_four_cells) ... ok\ntest_nearest_bad_training (test_ai_workbook.WorkbookTests.test_nearest_bad_training) ... ok\ntest_neuron_activation_and_saturation (test_ai_workbook.WorkbookTests.test_neuron_activation_and_saturation) ... ok\ntest_neuron_bad_inputs (test_ai_workbook.WorkbookTests.test_neuron_bad_inputs) ... ok\ntest_numeric_boundaries_and_bool (test_ai_workbook.WorkbookTests.test_numeric_boundaries_and_bool) ... ok\ntest_threshold_boundaries_and_bad_scores (test_ai_workbook.WorkbookTests.test_threshold_boundaries_and_bad_scores) ... ok\ntest_ties_ignore_training_order (test_ai_workbook.WorkbookTests.test_ties_ignore_training_order) ... ok\ntest_training_ranges_do_not_mutate (test_ai_workbook.WorkbookTests.test_training_ranges_do_not_mutate) ... ok\ntest_undefined_metrics_and_imbalance (test_ai_workbook.WorkbookTests.test_undefined_metrics_and_imbalance) ... ok\ntest_vector_shape_and_dimensions (test_ai_workbook.WorkbookTests.test_vector_shape_and_dimensions) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 0.001s\n\nOK\n",
+          "optimized": true,
+          "test_methods": 21
+        },
+        {
+          "program": "observations",
+          "command": [
+            "python",
+            "-B",
+            "-Werror",
+            "-O",
+            "observations.py"
+          ],
+          "started_at": "2026-09-30T06:03:47.655655+00:00",
+          "elapsed_seconds": 1.771,
+          "exit_code": 0,
+          "stdout": "{\n  \"checks\": [\n    \"four accepted and four rejected\",\n    \"raw text preserved\",\n    \"reject record and raw cell preserved\",\n    \"mean and median differ\",\n    \"group and sort\",\n    \"metric changes neighbor\",\n    \"units change neighbor\",\n    \"held-out leakage changes training representation\",\n    \"held-out value is not clipped or refitted\",\n    \"majority baseline misses every positive\",\n    \"same accuracy different recall\",\n    \"explicit error-cost example\",\n    \"subgroup denominator matters\",\n    \"NumPy row distances\",\n    \"matrix norm differs from row norms\",\n    \"NumPy mean axis\",\n    \"neuron weighted input\",\n    \"sigmoid independent decimal oracle\",\n    \"one gradient step reduces this loss\",\n    \"single-neuron gradient direction\"\n  ],\n  \"data\": {\n    \"accepted\": [\n      {\n        \"features\": [\n          1.0,\n          10.0\n        ],\n        \"group\": \"A\",\n        \"id\": \"r1\",\n        \"label\": 0\n      },\n      {\n        \"features\": [\n          3.0,\n          20.0\n        ],\n        \"group\": \"A\",\n        \"id\": \"r2\",\n        \"label\": 1\n      },\n      {\n        \"features\": [\n          5.0,\n          30.0\n        ],\n        \"group\": \"B\",\n        \"id\": \"r3\",\n        \"label\": 0\n      },\n      {\n        \"features\": [\n          9.0,\n          40.0\n        ],\n        \"group\": \"B\",\n        \"id\": \"r4\",\n        \"label\": 1\n      }\n    ],\n    \"rejects\": [\n      {\n        \"cells\": [\n          \"r5\",\n          \"A\",\n          \"NaN\",\n          \"10\",\n          \"0\"\n        ],\n        \"line\": 6,\n        \"reason\": \"numeric range\",\n        \"record\": 5\n      },\n      {\n        \"cells\": [\n          \"r6\",\n          \"B\",\n          \"\",\n          \"20\",\n          \"1\"\n        ],\n        \"line\": 7,\n        \"reason\": \"could not convert string to float: ''\",\n        \"record\": 6\n      },\n      {\n        \"cells\": [\n          \"r1\",\n          \"A\",\n          \"7\",\n          \"50\",\n          \"0\"\n        ],\n        \"line\": 8,\n        \"reason\": \"duplicate accepted id\",\n        \"record\": 7\n      },\n      {\n        \"cells\": [\n          \"r7\",\n          \"B\",\n          \"2\",\n          \"8\"\n        ],\n        \"line\": 9,\n        \"reason\": \"field count\",\n        \"record\": 8\n      }\n    ],\n    \"summary\": {\n      \"descending_ids\": [\n        \"r4\",\n        \"r3\",\n        \"r2\",\n        \"r1\"\n      ],\n      \"groups\": {\n        \"A\": 2,\n        \"B\": 2\n      },\n      \"mean\": 4.5,\n      \"median\": 4.0\n    }\n  },\n  \"leakage\": {\n    \"heldout\": 10.0,\n    \"leaked_ten\": 0.1,\n    \"training_ten\": 1.0\n  },\n  \"metrics\": {\n    \"baseline\": {\n      \"accuracy\": 0.8,\n      \"fn\": 2,\n      \"fp\": 0,\n      \"n\": 10,\n      \"precision\": null,\n      \"recall\": 0.0,\n      \"tn\": 8,\n      \"tp\": 0\n    },\n    \"costs_5fn_plus_fp\": [\n      6,\n      2\n    ],\n    \"cutoff_050\": {\n      \"accuracy\": 0.8,\n      \"fn\": 0,\n      \"fp\": 2,\n      \"n\": 10,\n      \"precision\": 0.5,\n      \"recall\": 1.0,\n      \"tn\": 6,\n      \"tp\": 2\n    },\n    \"cutoff_075\": {\n      \"accuracy\": 0.8,\n      \"fn\": 1,\n      \"fp\": 1,\n      \"n\": 10,\n      \"precision\": 0.5,\n      \"recall\": 0.5,\n      \"tn\": 7,\n      \"tp\": 1\n    },\n    \"group_a\": {\n      \"accuracy\": 0.6,\n      \"fn\": 0,\n      \"fp\": 2,\n      \"n\": 5,\n      \"precision\": 0.5,\n      \"recall\": 1.0,\n      \"tn\": 1,\n      \"tp\": 2\n    },\n    \"group_b\": {\n      \"accuracy\": 1.0,\n      \"fn\": 0,\n      \"fp\": 0,\n      \"n\": 5,\n      \"precision\": null,\n      \"recall\": null,\n      \"tn\": 5,\n      \"tp\": 0\n    }\n  },\n  \"neighbors\": {\n    \"euclidean\": [\n      \"r2\",\n      1\n    ],\n    \"manhattan\": [\n      \"r1\",\n      0\n    ],\n    \"raw\": [\n      \"r1\",\n      0\n    ],\n    \"scaled\": [\n      \"r2\",\n      1\n    ]\n  },\n  \"neuron\": {\n    \"bias_gradient\": -0.0467937339328533,\n    \"loss_after\": 0.0251708674548701,\n    \"loss_before\": 0.031185007428680883,\n    \"probability\": 0.7502601055951177,\n    \"weight_gradient\": [\n      -0.0935874678657066,\n      0.0467937339328533\n    ],\n    \"z\": 1.1\n  },\n  \"numpy\": {\n    \"column_means\": [\n      2.5,\n      1.0\n    ],\n    \"matrix_l1\": 5.0,\n    \"row_l1\": [\n      3.0,\n      4.0\n    ],\n    \"row_l2\": [\n      3.0,\n      2.8284271247461903\n    ]\n  },\n  \"passed_checks\": 20\n}\n",
+          "stderr": "",
+          "optimized": true,
+          "checks": 20
+        }
+      ],
+      "computed_report": {
+        "checks": [
+          "four accepted and four rejected",
+          "raw text preserved",
+          "reject record and raw cell preserved",
+          "mean and median differ",
+          "group and sort",
+          "metric changes neighbor",
+          "units change neighbor",
+          "held-out leakage changes training representation",
+          "held-out value is not clipped or refitted",
+          "majority baseline misses every positive",
+          "same accuracy different recall",
+          "explicit error-cost example",
+          "subgroup denominator matters",
+          "NumPy row distances",
+          "matrix norm differs from row norms",
+          "NumPy mean axis",
+          "neuron weighted input",
+          "sigmoid independent decimal oracle",
+          "one gradient step reduces this loss",
+          "single-neuron gradient direction"
+        ],
+        "data": {
+          "accepted": [
+            {
+              "features": [
+                1.0,
+                10.0
+              ],
+              "group": "A",
+              "id": "r1",
+              "label": 0
+            },
+            {
+              "features": [
+                3.0,
+                20.0
+              ],
+              "group": "A",
+              "id": "r2",
+              "label": 1
+            },
+            {
+              "features": [
+                5.0,
+                30.0
+              ],
+              "group": "B",
+              "id": "r3",
+              "label": 0
+            },
+            {
+              "features": [
+                9.0,
+                40.0
+              ],
+              "group": "B",
+              "id": "r4",
+              "label": 1
+            }
+          ],
+          "rejects": [
+            {
+              "cells": [
+                "r5",
+                "A",
+                "NaN",
+                "10",
+                "0"
+              ],
+              "line": 6,
+              "reason": "numeric range",
+              "record": 5
+            },
+            {
+              "cells": [
+                "r6",
+                "B",
+                "",
+                "20",
+                "1"
+              ],
+              "line": 7,
+              "reason": "could not convert string to float: ''",
+              "record": 6
+            },
+            {
+              "cells": [
+                "r1",
+                "A",
+                "7",
+                "50",
+                "0"
+              ],
+              "line": 8,
+              "reason": "duplicate accepted id",
+              "record": 7
+            },
+            {
+              "cells": [
+                "r7",
+                "B",
+                "2",
+                "8"
+              ],
+              "line": 9,
+              "reason": "field count",
+              "record": 8
+            }
+          ],
+          "summary": {
+            "descending_ids": [
+              "r4",
+              "r3",
+              "r2",
+              "r1"
+            ],
+            "groups": {
+              "A": 2,
+              "B": 2
+            },
+            "mean": 4.5,
+            "median": 4.0
+          }
+        },
+        "leakage": {
+          "heldout": 10.0,
+          "leaked_ten": 0.1,
+          "training_ten": 1.0
+        },
+        "metrics": {
+          "baseline": {
+            "accuracy": 0.8,
+            "fn": 2,
+            "fp": 0,
+            "n": 10,
+            "precision": null,
+            "recall": 0.0,
+            "tn": 8,
+            "tp": 0
+          },
+          "costs_5fn_plus_fp": [
+            6,
+            2
+          ],
+          "cutoff_050": {
+            "accuracy": 0.8,
+            "fn": 0,
+            "fp": 2,
+            "n": 10,
+            "precision": 0.5,
+            "recall": 1.0,
+            "tn": 6,
+            "tp": 2
+          },
+          "cutoff_075": {
+            "accuracy": 0.8,
+            "fn": 1,
+            "fp": 1,
+            "n": 10,
+            "precision": 0.5,
+            "recall": 0.5,
+            "tn": 7,
+            "tp": 1
+          },
+          "group_a": {
+            "accuracy": 0.6,
+            "fn": 0,
+            "fp": 2,
+            "n": 5,
+            "precision": 0.5,
+            "recall": 1.0,
+            "tn": 1,
+            "tp": 2
+          },
+          "group_b": {
+            "accuracy": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "n": 5,
+            "precision": null,
+            "recall": null,
+            "tn": 5,
+            "tp": 0
+          }
+        },
+        "neighbors": {
+          "euclidean": [
+            "r2",
+            1
+          ],
+          "manhattan": [
+            "r1",
+            0
+          ],
+          "raw": [
+            "r1",
+            0
+          ],
+          "scaled": [
+            "r2",
+            1
+          ]
+        },
+        "neuron": {
+          "bias_gradient": -0.0467937339328533,
+          "loss_after": 0.0251708674548701,
+          "loss_before": 0.031185007428680883,
+          "probability": 0.7502601055951177,
+          "weight_gradient": [
+            -0.0935874678657066,
+            0.0467937339328533
+          ],
+          "z": 1.1
+        },
+        "numpy": {
+          "column_means": [
+            2.5,
+            1.0
+          ],
+          "matrix_l1": 5.0,
+          "row_l1": [
+            3.0,
+            4.0
+          ],
+          "row_l2": [
+            3.0,
+            2.8284271247461903
+          ]
+        },
+        "passed_checks": 20
+      },
+      "selected_lint": {
+        "command": [
+          "python",
+          "-m",
+          "ruff",
+          "check",
+          "ai_workbook.py",
+          "test_ai_workbook.py",
+          "observations.py",
+          "optional_visuals.py",
+          "--select",
+          "E4,E7,E9,F,W,E501",
+          "--line-length",
+          "79",
+          "--output-format",
+          "concise"
+        ],
+        "exit_code": 0,
+        "stdout": "All checks passed!\n",
+        "stderr": "",
+        "version": "ruff 0.16.4"
+      },
+      "missing_tools": [
+        "pandas",
+        "matplotlib",
+        "sklearn",
+        "torch",
+        "tensorflow"
+      ],
+      "execution_boundary": "Three exact original files execute21methods/20observations pernormal/optimizedmode;fourthoptionalpandas/Matplotlibfile syntax/lint only. ExistingCPython/NumPy,syntheticin-memoryCSV,train-only ranges,one-neighbor distances,metrics/thresholdcosts,NumPyaxisnorms/means,single-neuronfinite-differencegradient andonestep. No datasetfiles/network/modelAPI,installation,service,account,frameworktraining,renderedplot,complete12labs orhumanapproval."
+    }
+  },
+  "answered_checks": 20,
+  "limitations": [
+    "28directsources:20ok7errors1blocked. CompletecanonicalEnglishsyllabus/MQC/credential/policyreadindexed;monitorWin10060,historicalsix-paragraphsnapshotretained,fullPDF/freshhashpending. Otherreadingsselected/complete/hash-reusedwithunreadmanual/course/bookinteriorsidentified.",
+    "Threeexactpublicfilesexecute21behavioralmethodsand20observations pernormal/optimizedmode onexistingCPython3.13.14/NumPy2.5.2;identicalcompleteJSON andselectedRuff0.16.4passes. Fourthfileonlysyntax/lint;noinstall/runtimechange.",
+    "Syntheticin-memoryCSV/fixedscores/train-onlyranges/nearestneighbor/metrics/NumPy/single-neuronfinite-differenceandone-step evidence only. Noactualdatafiles,learnedclassifier/calibration/crossvalidation,representativefairnessstudy,realprojectcosts,deeptrainingorconvergenceproof.",
+    "pandas/Matplotlib/scikit-learn/torch/TensorFlowabsent. NoDataFrame/plotrender/export,tokenizer/embedding/CNN/pretrainedmodel,externalAPI/prompttrial,account/purchase/protectedquestion/service. Plannedpromptcases containexpectedbehavior,notfabricatedoutputs.",
+    "Officialpractice-release dates andpassed-retakeeligibilityunresolved;NISTrevisionnotcompletedreplacement. Full12labs,independenthumancontent/accessibilityreview andrealreadinessassessmentpending;fiveGitHubguidesreservedforjointworkflowtest."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 180,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Three exact original files execute21methods/20observations pernormal/optimizedmode;fourthoptionalpandas/Matplotlibfile syntax/lint only. ExistingCPython/NumPy,syntheticin-memoryCSV,train-only ranges,one-neighbor distances,metrics/thresholdcosts,NumPyaxisnorms/means,single-neuronfinite-differencegradient andonestep. No datasetfiles/network/modelAPI,installation,service,account,frameworktraining,renderedplot,complete12labs orhumanapproval.",
+    "passed": true,
+    "versions": {
+      "python": "3.13.14",
+      "numpy": "2.5.2",
+      "ruff": "ruff 0.16.4"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "public_files": [
+      {
+        "filename": "ai_workbook.py",
+        "sha256": "0fdb8d8e80be42c5540416a0236274769fafe5e4f972e46e7d8005523cc6c738",
+        "bytes": 6661,
+        "syntax_checked": true,
+        "executed": true
+      },
+      {
+        "filename": "test_ai_workbook.py",
+        "sha256": "140b2a098651602772cfb306520038d8ad48958dd76aeec422b4402f586660d0",
+        "bytes": 7378,
+        "syntax_checked": true,
+        "executed": true
+      },
+      {
+        "filename": "observations.py",
+        "sha256": "a524c3ac03790fdcca47b264e11aadd36d5ec8b885f83caeda7c891135477ea0",
+        "bytes": 6099,
+        "syntax_checked": true,
+        "executed": true
+      },
+      {
+        "filename": "optional_visuals.py",
+        "sha256": "022853bd27ec8fbf0acf5282d4e02c2b01ace438891a712db9e644dabbbb28c8",
+        "bytes": 1025,
+        "syntax_checked": true,
+        "executed": false
+      }
+    ],
+    "test_methods_per_mode": 21,
+    "observation_checks_per_mode": 20,
+    "execution_runs": 4,
+    "results": [
+      {
+        "program": "unittest",
+        "command": [
+          "python",
+          "-B",
+          "-Werror",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          ".",
+          "-p",
+          "test_ai_workbook.py",
+          "-v"
+        ],
+        "started_at": "2026-09-30T06:03:47.120425+00:00",
+        "elapsed_seconds": 0.11,
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "test_bad_training_and_bounds (test_ai_workbook.WorkbookTests.test_bad_training_and_bounds) ... ok\ntest_constant_feature_drift (test_ai_workbook.WorkbookTests.test_constant_feature_drift) ... ok\ntest_csv_bad_rows_and_recovery (test_ai_workbook.WorkbookTests.test_csv_bad_rows_and_recovery) ... ok\ntest_csv_header_syntax_size_limits (test_ai_workbook.WorkbookTests.test_csv_header_syntax_size_limits) ... ok\ntest_csv_preserves_source_and_rejects (test_ai_workbook.WorkbookTests.test_csv_preserves_source_and_rejects) ... ok\ntest_csv_quoted_numeric_and_line (test_ai_workbook.WorkbookTests.test_csv_quoted_numeric_and_line) ... ok\ntest_distances_against_known_triangles (test_ai_workbook.WorkbookTests.test_distances_against_known_triangles) ... ok\ntest_gradient_matches_finite_difference (test_ai_workbook.WorkbookTests.test_gradient_matches_finite_difference) ... ok\ntest_heldout_extremes_do_not_refit (test_ai_workbook.WorkbookTests.test_heldout_extremes_do_not_refit) ... ok\ntest_invalid_labels_are_rejected (test_ai_workbook.WorkbookTests.test_invalid_labels_are_rejected) ... ok\ntest_metric_changes_neighbor (test_ai_workbook.WorkbookTests.test_metric_changes_neighbor) ... ok\ntest_metrics_all_four_cells (test_ai_workbook.WorkbookTests.test_metrics_all_four_cells) ... ok\ntest_nearest_bad_training (test_ai_workbook.WorkbookTests.test_nearest_bad_training) ... ok\ntest_neuron_activation_and_saturation (test_ai_workbook.WorkbookTests.test_neuron_activation_and_saturation) ... ok\ntest_neuron_bad_inputs (test_ai_workbook.WorkbookTests.test_neuron_bad_inputs) ... ok\ntest_numeric_boundaries_and_bool (test_ai_workbook.WorkbookTests.test_numeric_boundaries_and_bool) ... ok\ntest_threshold_boundaries_and_bad_scores (test_ai_workbook.WorkbookTests.test_threshold_boundaries_and_bad_scores) ... ok\ntest_ties_ignore_training_order (test_ai_workbook.WorkbookTests.test_ties_ignore_training_order) ... ok\ntest_training_ranges_do_not_mutate (test_ai_workbook.WorkbookTests.test_training_ranges_do_not_mutate) ... ok\ntest_undefined_metrics_and_imbalance (test_ai_workbook.WorkbookTests.test_undefined_metrics_and_imbalance) ... ok\ntest_vector_shape_and_dimensions (test_ai_workbook.WorkbookTests.test_vector_shape_and_dimensions) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 0.001s\n\nOK\n",
+        "optimized": false,
+        "test_methods": 21
+      },
+      {
+        "program": "observations",
+        "command": [
+          "python",
+          "-B",
+          "-Werror",
+          "observations.py"
+        ],
+        "started_at": "2026-09-30T06:03:47.230780+00:00",
+        "elapsed_seconds": 0.147,
+        "exit_code": 0,
+        "stdout": "{\n  \"checks\": [\n    \"four accepted and four rejected\",\n    \"raw text preserved\",\n    \"reject record and raw cell preserved\",\n    \"mean and median differ\",\n    \"group and sort\",\n    \"metric changes neighbor\",\n    \"units change neighbor\",\n    \"held-out leakage changes training representation\",\n    \"held-out value is not clipped or refitted\",\n    \"majority baseline misses every positive\",\n    \"same accuracy different recall\",\n    \"explicit error-cost example\",\n    \"subgroup denominator matters\",\n    \"NumPy row distances\",\n    \"matrix norm differs from row norms\",\n    \"NumPy mean axis\",\n    \"neuron weighted input\",\n    \"sigmoid independent decimal oracle\",\n    \"one gradient step reduces this loss\",\n    \"single-neuron gradient direction\"\n  ],\n  \"data\": {\n    \"accepted\": [\n      {\n        \"features\": [\n          1.0,\n          10.0\n        ],\n        \"group\": \"A\",\n        \"id\": \"r1\",\n        \"label\": 0\n      },\n      {\n        \"features\": [\n          3.0,\n          20.0\n        ],\n        \"group\": \"A\",\n        \"id\": \"r2\",\n        \"label\": 1\n      },\n      {\n        \"features\": [\n          5.0,\n          30.0\n        ],\n        \"group\": \"B\",\n        \"id\": \"r3\",\n        \"label\": 0\n      },\n      {\n        \"features\": [\n          9.0,\n          40.0\n        ],\n        \"group\": \"B\",\n        \"id\": \"r4\",\n        \"label\": 1\n      }\n    ],\n    \"rejects\": [\n      {\n        \"cells\": [\n          \"r5\",\n          \"A\",\n          \"NaN\",\n          \"10\",\n          \"0\"\n        ],\n        \"line\": 6,\n        \"reason\": \"numeric range\",\n        \"record\": 5\n      },\n      {\n        \"cells\": [\n          \"r6\",\n          \"B\",\n          \"\",\n          \"20\",\n          \"1\"\n        ],\n        \"line\": 7,\n        \"reason\": \"could not convert string to float: ''\",\n        \"record\": 6\n      },\n      {\n        \"cells\": [\n          \"r1\",\n          \"A\",\n          \"7\",\n          \"50\",\n          \"0\"\n        ],\n        \"line\": 8,\n        \"reason\": \"duplicate accepted id\",\n        \"record\": 7\n      },\n      {\n        \"cells\": [\n          \"r7\",\n          \"B\",\n          \"2\",\n          \"8\"\n        ],\n        \"line\": 9,\n        \"reason\": \"field count\",\n        \"record\": 8\n      }\n    ],\n    \"summary\": {\n      \"descending_ids\": [\n        \"r4\",\n        \"r3\",\n        \"r2\",\n        \"r1\"\n      ],\n      \"groups\": {\n        \"A\": 2,\n        \"B\": 2\n      },\n      \"mean\": 4.5,\n      \"median\": 4.0\n    }\n  },\n  \"leakage\": {\n    \"heldout\": 10.0,\n    \"leaked_ten\": 0.1,\n    \"training_ten\": 1.0\n  },\n  \"metrics\": {\n    \"baseline\": {\n      \"accuracy\": 0.8,\n      \"fn\": 2,\n      \"fp\": 0,\n      \"n\": 10,\n      \"precision\": null,\n      \"recall\": 0.0,\n      \"tn\": 8,\n      \"tp\": 0\n    },\n    \"costs_5fn_plus_fp\": [\n      6,\n      2\n    ],\n    \"cutoff_050\": {\n      \"accuracy\": 0.8,\n      \"fn\": 0,\n      \"fp\": 2,\n      \"n\": 10,\n      \"precision\": 0.5,\n      \"recall\": 1.0,\n      \"tn\": 6,\n      \"tp\": 2\n    },\n    \"cutoff_075\": {\n      \"accuracy\": 0.8,\n      \"fn\": 1,\n      \"fp\": 1,\n      \"n\": 10,\n      \"precision\": 0.5,\n      \"recall\": 0.5,\n      \"tn\": 7,\n      \"tp\": 1\n    },\n    \"group_a\": {\n      \"accuracy\": 0.6,\n      \"fn\": 0,\n      \"fp\": 2,\n      \"n\": 5,\n      \"precision\": 0.5,\n      \"recall\": 1.0,\n      \"tn\": 1,\n      \"tp\": 2\n    },\n    \"group_b\": {\n      \"accuracy\": 1.0,\n      \"fn\": 0,\n      \"fp\": 0,\n      \"n\": 5,\n      \"precision\": null,\n      \"recall\": null,\n      \"tn\": 5,\n      \"tp\": 0\n    }\n  },\n  \"neighbors\": {\n    \"euclidean\": [\n      \"r2\",\n      1\n    ],\n    \"manhattan\": [\n      \"r1\",\n      0\n    ],\n    \"raw\": [\n      \"r1\",\n      0\n    ],\n    \"scaled\": [\n      \"r2\",\n      1\n    ]\n  },\n  \"neuron\": {\n    \"bias_gradient\": -0.0467937339328533,\n    \"loss_after\": 0.0251708674548701,\n    \"loss_before\": 0.031185007428680883,\n    \"probability\": 0.7502601055951177,\n    \"weight_gradient\": [\n      -0.0935874678657066,\n      0.0467937339328533\n    ],\n    \"z\": 1.1\n  },\n  \"numpy\": {\n    \"column_means\": [\n      2.5,\n      1.0\n    ],\n    \"matrix_l1\": 5.0,\n    \"row_l1\": [\n      3.0,\n      4.0\n    ],\n    \"row_l2\": [\n      3.0,\n      2.8284271247461903\n    ]\n  },\n  \"passed_checks\": 20\n}\n",
+        "stderr": "",
+        "optimized": false,
+        "checks": 20
+      },
+      {
+        "program": "unittest",
+        "command": [
+          "python",
+          "-B",
+          "-Werror",
+          "-O",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          ".",
+          "-p",
+          "test_ai_workbook.py",
+          "-v"
+        ],
+        "started_at": "2026-09-30T06:03:47.378363+00:00",
+        "elapsed_seconds": 0.277,
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "test_bad_training_and_bounds (test_ai_workbook.WorkbookTests.test_bad_training_and_bounds) ... ok\ntest_constant_feature_drift (test_ai_workbook.WorkbookTests.test_constant_feature_drift) ... ok\ntest_csv_bad_rows_and_recovery (test_ai_workbook.WorkbookTests.test_csv_bad_rows_and_recovery) ... ok\ntest_csv_header_syntax_size_limits (test_ai_workbook.WorkbookTests.test_csv_header_syntax_size_limits) ... ok\ntest_csv_preserves_source_and_rejects (test_ai_workbook.WorkbookTests.test_csv_preserves_source_and_rejects) ... ok\ntest_csv_quoted_numeric_and_line (test_ai_workbook.WorkbookTests.test_csv_quoted_numeric_and_line) ... ok\ntest_distances_against_known_triangles (test_ai_workbook.WorkbookTests.test_distances_against_known_triangles) ... ok\ntest_gradient_matches_finite_difference (test_ai_workbook.WorkbookTests.test_gradient_matches_finite_difference) ... ok\ntest_heldout_extremes_do_not_refit (test_ai_workbook.WorkbookTests.test_heldout_extremes_do_not_refit) ... ok\ntest_invalid_labels_are_rejected (test_ai_workbook.WorkbookTests.test_invalid_labels_are_rejected) ... ok\ntest_metric_changes_neighbor (test_ai_workbook.WorkbookTests.test_metric_changes_neighbor) ... ok\ntest_metrics_all_four_cells (test_ai_workbook.WorkbookTests.test_metrics_all_four_cells) ... ok\ntest_nearest_bad_training (test_ai_workbook.WorkbookTests.test_nearest_bad_training) ... ok\ntest_neuron_activation_and_saturation (test_ai_workbook.WorkbookTests.test_neuron_activation_and_saturation) ... ok\ntest_neuron_bad_inputs (test_ai_workbook.WorkbookTests.test_neuron_bad_inputs) ... ok\ntest_numeric_boundaries_and_bool (test_ai_workbook.WorkbookTests.test_numeric_boundaries_and_bool) ... ok\ntest_threshold_boundaries_and_bad_scores (test_ai_workbook.WorkbookTests.test_threshold_boundaries_and_bad_scores) ... ok\ntest_ties_ignore_training_order (test_ai_workbook.WorkbookTests.test_ties_ignore_training_order) ... ok\ntest_training_ranges_do_not_mutate (test_ai_workbook.WorkbookTests.test_training_ranges_do_not_mutate) ... ok\ntest_undefined_metrics_and_imbalance (test_ai_workbook.WorkbookTests.test_undefined_metrics_and_imbalance) ... ok\ntest_vector_shape_and_dimensions (test_ai_workbook.WorkbookTests.test_vector_shape_and_dimensions) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 0.001s\n\nOK\n",
+        "optimized": true,
+        "test_methods": 21
+      },
+      {
+        "program": "observations",
+        "command": [
+          "python",
+          "-B",
+          "-Werror",
+          "-O",
+          "observations.py"
+        ],
+        "started_at": "2026-09-30T06:03:47.655655+00:00",
+        "elapsed_seconds": 1.771,
+        "exit_code": 0,
+        "stdout": "{\n  \"checks\": [\n    \"four accepted and four rejected\",\n    \"raw text preserved\",\n    \"reject record and raw cell preserved\",\n    \"mean and median differ\",\n    \"group and sort\",\n    \"metric changes neighbor\",\n    \"units change neighbor\",\n    \"held-out leakage changes training representation\",\n    \"held-out value is not clipped or refitted\",\n    \"majority baseline misses every positive\",\n    \"same accuracy different recall\",\n    \"explicit error-cost example\",\n    \"subgroup denominator matters\",\n    \"NumPy row distances\",\n    \"matrix norm differs from row norms\",\n    \"NumPy mean axis\",\n    \"neuron weighted input\",\n    \"sigmoid independent decimal oracle\",\n    \"one gradient step reduces this loss\",\n    \"single-neuron gradient direction\"\n  ],\n  \"data\": {\n    \"accepted\": [\n      {\n        \"features\": [\n          1.0,\n          10.0\n        ],\n        \"group\": \"A\",\n        \"id\": \"r1\",\n        \"label\": 0\n      },\n      {\n        \"features\": [\n          3.0,\n          20.0\n        ],\n        \"group\": \"A\",\n        \"id\": \"r2\",\n        \"label\": 1\n      },\n      {\n        \"features\": [\n          5.0,\n          30.0\n        ],\n        \"group\": \"B\",\n        \"id\": \"r3\",\n        \"label\": 0\n      },\n      {\n        \"features\": [\n          9.0,\n          40.0\n        ],\n        \"group\": \"B\",\n        \"id\": \"r4\",\n        \"label\": 1\n      }\n    ],\n    \"rejects\": [\n      {\n        \"cells\": [\n          \"r5\",\n          \"A\",\n          \"NaN\",\n          \"10\",\n          \"0\"\n        ],\n        \"line\": 6,\n        \"reason\": \"numeric range\",\n        \"record\": 5\n      },\n      {\n        \"cells\": [\n          \"r6\",\n          \"B\",\n          \"\",\n          \"20\",\n          \"1\"\n        ],\n        \"line\": 7,\n        \"reason\": \"could not convert string to float: ''\",\n        \"record\": 6\n      },\n      {\n        \"cells\": [\n          \"r1\",\n          \"A\",\n          \"7\",\n          \"50\",\n          \"0\"\n        ],\n        \"line\": 8,\n        \"reason\": \"duplicate accepted id\",\n        \"record\": 7\n      },\n      {\n        \"cells\": [\n          \"r7\",\n          \"B\",\n          \"2\",\n          \"8\"\n        ],\n        \"line\": 9,\n        \"reason\": \"field count\",\n        \"record\": 8\n      }\n    ],\n    \"summary\": {\n      \"descending_ids\": [\n        \"r4\",\n        \"r3\",\n        \"r2\",\n        \"r1\"\n      ],\n      \"groups\": {\n        \"A\": 2,\n        \"B\": 2\n      },\n      \"mean\": 4.5,\n      \"median\": 4.0\n    }\n  },\n  \"leakage\": {\n    \"heldout\": 10.0,\n    \"leaked_ten\": 0.1,\n    \"training_ten\": 1.0\n  },\n  \"metrics\": {\n    \"baseline\": {\n      \"accuracy\": 0.8,\n      \"fn\": 2,\n      \"fp\": 0,\n      \"n\": 10,\n      \"precision\": null,\n      \"recall\": 0.0,\n      \"tn\": 8,\n      \"tp\": 0\n    },\n    \"costs_5fn_plus_fp\": [\n      6,\n      2\n    ],\n    \"cutoff_050\": {\n      \"accuracy\": 0.8,\n      \"fn\": 0,\n      \"fp\": 2,\n      \"n\": 10,\n      \"precision\": 0.5,\n      \"recall\": 1.0,\n      \"tn\": 6,\n      \"tp\": 2\n    },\n    \"cutoff_075\": {\n      \"accuracy\": 0.8,\n      \"fn\": 1,\n      \"fp\": 1,\n      \"n\": 10,\n      \"precision\": 0.5,\n      \"recall\": 0.5,\n      \"tn\": 7,\n      \"tp\": 1\n    },\n    \"group_a\": {\n      \"accuracy\": 0.6,\n      \"fn\": 0,\n      \"fp\": 2,\n      \"n\": 5,\n      \"precision\": 0.5,\n      \"recall\": 1.0,\n      \"tn\": 1,\n      \"tp\": 2\n    },\n    \"group_b\": {\n      \"accuracy\": 1.0,\n      \"fn\": 0,\n      \"fp\": 0,\n      \"n\": 5,\n      \"precision\": null,\n      \"recall\": null,\n      \"tn\": 5,\n      \"tp\": 0\n    }\n  },\n  \"neighbors\": {\n    \"euclidean\": [\n      \"r2\",\n      1\n    ],\n    \"manhattan\": [\n      \"r1\",\n      0\n    ],\n    \"raw\": [\n      \"r1\",\n      0\n    ],\n    \"scaled\": [\n      \"r2\",\n      1\n    ]\n  },\n  \"neuron\": {\n    \"bias_gradient\": -0.0467937339328533,\n    \"loss_after\": 0.0251708674548701,\n    \"loss_before\": 0.031185007428680883,\n    \"probability\": 0.7502601055951177,\n    \"weight_gradient\": [\n      -0.0935874678657066,\n      0.0467937339328533\n    ],\n    \"z\": 1.1\n  },\n  \"numpy\": {\n    \"column_means\": [\n      2.5,\n      1.0\n    ],\n    \"matrix_l1\": 5.0,\n    \"row_l1\": [\n      3.0,\n      4.0\n    ],\n    \"row_l2\": [\n      3.0,\n      2.8284271247461903\n    ]\n  },\n  \"passed_checks\": 20\n}\n",
+        "stderr": "",
+        "optimized": true,
+        "checks": 20
+      }
+    ],
+    "computed_report": {
+      "checks": [
+        "four accepted and four rejected",
+        "raw text preserved",
+        "reject record and raw cell preserved",
+        "mean and median differ",
+        "group and sort",
+        "metric changes neighbor",
+        "units change neighbor",
+        "held-out leakage changes training representation",
+        "held-out value is not clipped or refitted",
+        "majority baseline misses every positive",
+        "same accuracy different recall",
+        "explicit error-cost example",
+        "subgroup denominator matters",
+        "NumPy row distances",
+        "matrix norm differs from row norms",
+        "NumPy mean axis",
+        "neuron weighted input",
+        "sigmoid independent decimal oracle",
+        "one gradient step reduces this loss",
+        "single-neuron gradient direction"
+      ],
+      "data": {
+        "accepted": [
+          {
+            "features": [
+              1.0,
+              10.0
+            ],
+            "group": "A",
+            "id": "r1",
+            "label": 0
+          },
+          {
+            "features": [
+              3.0,
+              20.0
+            ],
+            "group": "A",
+            "id": "r2",
+            "label": 1
+          },
+          {
+            "features": [
+              5.0,
+              30.0
+            ],
+            "group": "B",
+            "id": "r3",
+            "label": 0
+          },
+          {
+            "features": [
+              9.0,
+              40.0
+            ],
+            "group": "B",
+            "id": "r4",
+            "label": 1
+          }
+        ],
+        "rejects": [
+          {
+            "cells": [
+              "r5",
+              "A",
+              "NaN",
+              "10",
+              "0"
+            ],
+            "line": 6,
+            "reason": "numeric range",
+            "record": 5
+          },
+          {
+            "cells": [
+              "r6",
+              "B",
+              "",
+              "20",
+              "1"
+            ],
+            "line": 7,
+            "reason": "could not convert string to float: ''",
+            "record": 6
+          },
+          {
+            "cells": [
+              "r1",
+              "A",
+              "7",
+              "50",
+              "0"
+            ],
+            "line": 8,
+            "reason": "duplicate accepted id",
+            "record": 7
+          },
+          {
+            "cells": [
+              "r7",
+              "B",
+              "2",
+              "8"
+            ],
+            "line": 9,
+            "reason": "field count",
+            "record": 8
+          }
+        ],
+        "summary": {
+          "descending_ids": [
+            "r4",
+            "r3",
+            "r2",
+            "r1"
+          ],
+          "groups": {
+            "A": 2,
+            "B": 2
+          },
+          "mean": 4.5,
+          "median": 4.0
+        }
+      },
+      "leakage": {
+        "heldout": 10.0,
+        "leaked_ten": 0.1,
+        "training_ten": 1.0
+      },
+      "metrics": {
+        "baseline": {
+          "accuracy": 0.8,
+          "fn": 2,
+          "fp": 0,
+          "n": 10,
+          "precision": null,
+          "recall": 0.0,
+          "tn": 8,
+          "tp": 0
+        },
+        "costs_5fn_plus_fp": [
+          6,
+          2
+        ],
+        "cutoff_050": {
+          "accuracy": 0.8,
+          "fn": 0,
+          "fp": 2,
+          "n": 10,
+          "precision": 0.5,
+          "recall": 1.0,
+          "tn": 6,
+          "tp": 2
+        },
+        "cutoff_075": {
+          "accuracy": 0.8,
+          "fn": 1,
+          "fp": 1,
+          "n": 10,
+          "precision": 0.5,
+          "recall": 0.5,
+          "tn": 7,
+          "tp": 1
+        },
+        "group_a": {
+          "accuracy": 0.6,
+          "fn": 0,
+          "fp": 2,
+          "n": 5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "tn": 1,
+          "tp": 2
+        },
+        "group_b": {
+          "accuracy": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "n": 5,
+          "precision": null,
+          "recall": null,
+          "tn": 5,
+          "tp": 0
+        }
+      },
+      "neighbors": {
+        "euclidean": [
+          "r2",
+          1
+        ],
+        "manhattan": [
+          "r1",
+          0
+        ],
+        "raw": [
+          "r1",
+          0
+        ],
+        "scaled": [
+          "r2",
+          1
+        ]
+      },
+      "neuron": {
+        "bias_gradient": -0.0467937339328533,
+        "loss_after": 0.0251708674548701,
+        "loss_before": 0.031185007428680883,
+        "probability": 0.7502601055951177,
+        "weight_gradient": [
+          -0.0935874678657066,
+          0.0467937339328533
+        ],
+        "z": 1.1
+      },
+      "numpy": {
+        "column_means": [
+          2.5,
+          1.0
+        ],
+        "matrix_l1": 5.0,
+        "row_l1": [
+          3.0,
+          4.0
+        ],
+        "row_l2": [
+          3.0,
+          2.8284271247461903
+        ]
+      },
+      "passed_checks": 20
+    },
+    "selected_lint": {
+      "command": [
+        "python",
+        "-m",
+        "ruff",
+        "check",
+        "ai_workbook.py",
+        "test_ai_workbook.py",
+        "observations.py",
+        "optional_visuals.py",
+        "--select",
+        "E4,E7,E9,F,W,E501",
+        "--line-length",
+        "79",
+        "--output-format",
+        "concise"
+      ],
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": "",
+      "version": "ruff 0.16.4"
+    },
+    "missing_tools": [
+      "pandas",
+      "matplotlib",
+      "sklearn",
+      "torch",
+      "tensorflow"
+    ],
+    "learning_catalog_consistency": "passed",
+    "unit_test_elapsed_seconds": 31.395,
+    "strict_site_build_elapsed_seconds": 30.63
+  },
+  "source_reading_boundaries": {
+    "aws-aif-c01-nist-ai-rmf": "Complete fresh7118-character public AI RMF landing read:1.0Jan26,2023 voluntary;revision under AIActionPlan,April7,2026 critical-infrastructure concept note not final replacement;separateGenAIprofileJuly26,2024. LinkedPDF/profile/concept fulltext not read. No compliance or regulatory-status determination.",
+    "numpy-documentation": "Complete fresh1526-character NumPy2.5 documentation landing/index read;navigation only,not whole manual. InstalledNumPy2.5.2 executes originalfloat64axis/norm/mean examples. No update or exam-mandated version inference.",
+    "pandas-documentation": "Complete fresh1264-character pandas3.0.6Sep17,2026 landing/index read;navigation only. pandas unavailable locally,no installation. Selected10minute tutorial separately read;optional public DataFrame/plot file syntax/lint only.",
+    "pcei-30-01-syllabus": "Complete canonical indexed English syllabus,all33objectives/detailedbullets andfullMQC/cumulative75tail read afterdirect/monitorWin10060. Active30-01Dec11,2025;33objectives5/5/6/7/5/5,36items5/6/6/8/6/5,weights14/16.5/16.5/22.5/16.5/14;2.4/4.6/5.2twoitems each.2.2title incorrectlytesting levels whilebulletsMLworkflow. Historicalsix-paragraph summary snapshot retained;notnewautomatedhash/fullPDFreview.",
+    "pcei-certification-page": "Complete indexed credentialbody/table/FAQ read afterdirecttimeout:active7years,noformalprerequisite,PCEP+PCED-equivalentPython/data/digitalliteracyrecommended;36questions60minplusNDA75EnglishTestNow69USDexam86retake. Practice81/95bundles29practice comingQ3/Q4 2026 versusstaleQ1 2026 FAQ/PCAI announcements;PAI101in development. Listingprice/genericpurchaseinstructions notavailabilityproof. Nopurchase/account/systemdiagnostic/protectedquestions or independentlyverifiedcareerclaims.",
+    "nist-ai-rmf-playbook": "Complete fresh1375-character public landing read:Govern/Map/Measure/Manage,voluntary/selectapplicableactions,notuniversalchecklist;updatefollowsRMFrevision. Linkedactionsubpages/PDFunread. Usedforboundedprojectcard,notcertification/complianceclaim.",
+    "google-machine-learning-crash-course": "Complete fresh3903-character course landing read:moduleoverview andbroaderclassicML/NN/LLM/production/fairness scope. No15hourdurationverifiedhere;oldpublisher-durationclaim replacedwithauthorplanningbudget. Selectedthreeintroductionpages/prerequisites separatelyread;linkedlessons/exercises/videosuncompleted,noaccount/notebook.",
+    "microsoft-ml-for-beginners": "Complete indexed repository/README landing0–422 read afterdirecttimeout:12weeks26lessons52quizzesheadline,lessonsequence25numberedplus2postscriptrows,mainlyscikit-learnclassicML,Python/someR,DLseparatecurriculum. Setup/Codespaces/Docsifycommandsnotexecuted;staleSep2025eventnotcurrent. Linkednotebooks/lessons/quizzesuncompleted,noaccount/fork/clone/install/service.",
+    "scikit-learn-user-guide": "Indexedselectedindex0–223 read afterdirecttimeout,docs1.9.1. Remainingindex223–439 andlinkedmanuals unreviewedexceptselectedpitfalls/minmaxreferencesseparatelynoted. Libraryabsent;originalstdlibscaling/neighborsnotclaimedlibraryexecution.",
+    "elements-of-ai": "Complete fresh6230-character landing read:freeUniversityHelsinki/MinnaLearn IntroductionAI conceptualwithoutmath/programming andBuildingAI withbasicPythonrecommended,selfpaced. SeparatecommercialGetAIReady60minutes notwholeElementsduration. Old30–60hourclaimreplacedauthorbudget. Noenrollment/exercise/certificatecompletion/account.",
+    "oreilly-hands-on-machine-learning-third": "Directblocked. Indexedselectedpublicmetadata335–358 andopeningTOCthrough375(chapters1–3) read:correctHands-OnMLwithScikit-Learn,Keras,TensorFlow3rd,AurelienGeron,October2022,864pages,25h26mpublisherreadingestimate,intermediateadvanced. RemainingTOC375–524/bookinteriorunread;noaccount/subscription/purchase. Guidehourrangeauthorbudget,notcompletionpromise.",
+    "pcei-testing-policies": "Complete indexed canonical body/tail0–224 read afterdirecttimeout,revisedNovember18,2025. Globalbrowserproctoring/localpartnerdistinctions,admissionNDA/age/accommodations,local24hreschedule versusglobalunredeemedvalidvoucher,prelimscorependingverification,conduct/penalties. Specificfailed7dayrule versusfooterfailedORpassed. Technicalinstructionsourcecontentonly;nomachinepermissions/settings/diagnostics/accountchanges.",
+    "python313-math": "Selectedfresh321–353isclosefinite/NaN and440–463dist/fsum/hypot read;restunread. OriginaldimensioncheckedEuclidean/Manhattan,finiteinput/outputlimits,sigmoidstability andfinite-differenceoracles. Notcompletefloatprecision/adversarialnumericsreview.",
+    "python313-statistics": "Selectedfresh43–84introduction/types/NaN,134–178mean/fmean and267–288median read;restunread. Originalvalidatedfourvalue mean4.5median4.0,notpopulationestimate. Noempty/NaNsummarysilentlyinterpreted.",
+    "python313-csv": "FreshbodyhashidenticalPCEA;reuse63–100reader/writer/newline/type and133–199DictReader/DictWriter. Originalcsv.reader in-memorystring schema,rawrejectcells/record/endline,firstacceptedIDwins,wholeheadersyntaxsizefailures abort. Nodiskfileupload/generalparsersecurityclaim.",
+    "python313-json": "FreshbodyhashidenticalPCEA;reuse49–60sizewarning,160–218serialization,223–289decoding. Originalobservationjson.dumpsallow_nanFalse/None->null andprivatereceiptparsing;no newpublicJSONinputloader/diskdatapersistence.",
+    "numpy-norm": "Complete fresh3775-character referencebody/examples read:vectorvsmatrixord/axis,ord1L1rowsversusmatrixmaxcolumnsum,defaultEuclidean/Frobenius. Originalfloat64matrix[[3,0],[2,2]],rowL2[3,sqrt8],rowL1[3,4],matrixL1=5 executes. Publisherexamplesnotcopied/executed.",
+    "numpy-mean": "Complete fresh3371-character referencebody/examples read:axisNoneflatten,integerfloat64/floatingownprecision,dtype/keepdims/where/out. Originalcolumnmeans[2.5,1]versusflattened1.75 executes;notallparameter/dtypecombinations.",
+    "sklearn-common-pitfalls": "Directtimeout. Indexedselected73–208 inconsistentpreprocessing/data leakage/train-only fitting/pipeline/featureselectionexamples read;further209–241randomnessopening seen,remainingrandomnesschapterunclaimed. Originalrangecontaminationexample changestraining10from1to0.1 withoutclaimingobservedaccuracyinflation. Noscikit-learn execution orcopiedpublishermodelresults.",
+    "sklearn-minmaxscaler": "Directtimeout. Indexedselected633–802formula,trainingrange/outliers,clipwarning,attributes,NaNnote,examples,fit/fit_transformopening read;restunread. Originalcustomconstant-featuredrift policydistinctfromlibrary. Heldout100maps10withoutclipping/refit. Noscikit-learn execution.",
+    "google-mlcc-prerequisites": "Complete fresh6284-character publicprerequisites read:conceptfocusedcourse,Python/NumPy/pandas/Kerasexercises,algebra/linearalgebra/stats,optionalcalculus,ColabdesktopChrome/Firefox,no-setupstatement. LastupdatedAug25,2025. Noaccount/notebook/exerciseexecution;studybudgetauthorestimate.",
+    "google-mlcc-classification": "Complete fresh3190-character publicmoduleintroduction read:binarythreshold/metrics/ROC-AUClearninggoals,70minuteestimatedmodule,priorlinear/logisticmodules. Linkedconfusionmatrix/thresholdlessonsunread. Originalfixedscores and21methods20observations distinctfrompublisherexerciseorcalibratedmodel.",
+    "google-mlcc-neural-networks": "Complete fresh4430-character publicmoduleintroduction read:nonlinearpatterns/nodes/hiddenlayers/activation/backpropintuition,75minuteestimatedmodule. Linkedlessonsunread. Originalsingleneuron/halfsquaredloss/finite-differences/onestep notdeepnetworktrainingorconvergenceproof.",
+    "google-mlcc-llm": "Complete fresh9180-character publicintroduction199lines read,Jan9,2026:tokens/Ngrams/context/RNN/vanishinggradient,45minuteestimatedmodule. LinkedLLMselfattention/fine-tuning/limitationslessonsnotcompleted. Noactualtokenizer/embedding/modelAPI,promptoutputsorcoursecompletion.",
+    "pandas-10-minutes": "Selectedfresh1–15Series/DataFrame,47–98constructor/dtypes,249–337loc/iloc/booleanselection,406–463missingdata/stats read;restunread. Optionalexactpublicfileconstructs/filtertablebutonlysyntax/lintcheckedbecausepandasabsent. Nolibrarytable/groupbyexecutionclaim.",
+    "matplotlib-quickstart": "Selectedfresh8–23simpleplot,43–69Axes/Axis/Artist,94–112explicitinterface,190–208histlabels,299–306categoricalbar read;restunread. Optionalexactpublicfileproposesline/bar/histandlabels;syntax/lintonly,libraryabsent. Nofigure/render/export/visualaccessibilityapproval.",
+    "owasp-llm-prompt-injection": "Selectedfresh211–235definition/directindirect,339–382structuredprompts/outputmonitoring/HITLheading,396–447defenselimits/leastprivilege/guardrailcaveats read;restunread. Sourceattackpercentages/researcharchitectureclaimsnotindependentlyverifiedorrepublished. Plannedfivecasepromptmatrixunexecuted;delimiters/regex/secondmodelnoproofofimmunity. Noexternalmodel/toolattack.",
+    "ruff-linter": "FreshbodyhashidenticalPCEA;reuse1–137intro/check/rules,227–250fixexample/opening,469–490exitflags. Existing0.16.4selectedE4/E7/E9/F/W/E50179columnsfourfilePASS;noautofix/fullsecurityaudit."
+  },
+  "reused_source_reading_hashes": {
+    "python313-csv": {
+      "identical": true,
+      "current_sha256": "5abb4f0bee137a2a02fd0e21b773bf3407301ac70b17b3a852ffe1ed914b3556",
+      "prior_sha256": "5abb4f0bee137a2a02fd0e21b773bf3407301ac70b17b3a852ffe1ed914b3556",
+      "reused_sections": "63–100 reader/writer/newline/type and133–199DictReader/DictWriter"
+    },
+    "python313-json": {
+      "identical": true,
+      "current_sha256": "d92bc903adbab6599fa37c1b2dd5ebd6e2a27b4e9d8c3d27769b711f37ce4211",
+      "prior_sha256": "d92bc903adbab6599fa37c1b2dd5ebd6e2a27b4e9d8c3d27769b711f37ce4211",
+      "reused_sections": "49–60sizewarning;160–218serialization;223–289decoding"
+    },
+    "ruff-linter": {
+      "identical": true,
+      "current_sha256": "638a424e58de26f0ae126ac5b283aa0a85857bd6107715b3df7d1a069218919d",
+      "prior_sha256": "638a424e58de26f0ae126ac5b283aa0a85857bd6107715b3df7d1a069218919d",
+      "reused_sections": "1–137introduction/check/rules;227–250fixexample/opening;469–490exitflags"
+    }
+  },
+  "public_examples": [
+    {
+      "filename": "ai_workbook.py",
+      "sha256": "0fdb8d8e80be42c5540416a0236274769fafe5e4f972e46e7d8005523cc6c738",
+      "bytes": 6661,
+      "syntax_checked": true,
+      "executed": true,
+      "code": "\"\"\"Original, bounded PCEI exercises using synthetic data only.\"\"\"\nimport csv\nimport io\nimport math\nimport re\n\n\ndef number(value):\n    if type(value) not in (int, float):\n        raise ValueError(\"numeric type\")\n    if abs(value) > 1_000_000 or not math.isfinite(value):\n        raise ValueError(\"numeric range\")\n    return float(value)\n\n\ndef vector(values):\n    if type(values) not in (list, tuple) or not 1 <= len(values) <= 8:\n        raise ValueError(\"vector shape\")\n    return tuple(number(value) for value in values)\n\n\ndef bit(value):\n    if type(value) is not int or value not in (0, 1):\n        raise ValueError(\"binary integer\")\n    return value\n\n\ndef load_csv(source):\n    \"\"\"Reject bad records; malformed CSV/header/size aborts the whole load.\"\"\"\n    if type(source) is not str or not 1 <= len(source.encode()) <= 4096:\n        raise ValueError(\"source size/type\")\n    reader = csv.reader(io.StringIO(source, newline=\"\"), strict=True)\n    accepted, rejected, seen = [], [], set()\n    try:\n        if next(reader, None) != [\"id\", \"group\", \"hours\", \"tickets\", \"label\"]:\n            raise ValueError(\"header\")\n        for record, cells in enumerate(reader, 1):\n            if record > 50:\n                raise ValueError(\"too many records\")\n            try:\n                if len(cells) != 5:\n                    raise ValueError(\"field count\")\n                key, group, hours, tickets, label = cells\n                if not re.fullmatch(r\"r[0-9]{1,3}\", key):\n                    raise ValueError(\"id\")\n                if key in seen:\n                    raise ValueError(\"duplicate accepted id\")\n                if group not in (\"A\", \"B\") or label not in (\"0\", \"1\"):\n                    raise ValueError(\"category\")\n                point = vector([float(hours), float(tickets)])\n                if any(value < 0 for value in point):\n                    raise ValueError(\"negative feature\")\n            except ValueError as error:\n                rejected.append({\"record\": record, \"line\": reader.line_num,\n                                 \"cells\": cells, \"reason\": str(error)})\n                continue\n            seen.add(key)\n            accepted.append({\"id\": key, \"group\": group,\n                             \"features\": point, \"label\": int(label)})\n    except csv.Error as error:\n        raise ValueError(\"CSV syntax\") from error\n    return accepted, rejected\n\n\ndef fit_ranges(training):\n    if type(training) not in (list, tuple) or not 2 <= len(training) <= 50:\n        raise ValueError(\"training size\")\n    rows = [vector(row) for row in training]\n    if any(len(row) != len(rows[0]) for row in rows):\n        raise ValueError(\"dimension mismatch\")\n    columns = list(zip(*rows))\n    return tuple(map(min, columns)), tuple(map(max, columns))\n\n\ndef scale(point, bounds):\n    \"\"\"Training-only ranges. Constant-feature drift is an explicit error.\"\"\"\n    point = vector(point)\n    if type(bounds) not in (list, tuple) or len(bounds) != 2:\n        raise ValueError(\"bounds shape\")\n    low, high = map(vector, bounds)\n    if len(point) != len(low) or len(low) != len(high):\n        raise ValueError(\"dimension mismatch\")\n    result = []\n    for value, lo, hi in zip(point, low, high):\n        if hi < lo or (hi == lo and value != lo):\n            raise ValueError(\"invalid range or constant-feature drift\")\n        scaled = 0.0 if hi == lo else (value - lo) / (hi - lo)\n        if not math.isfinite(scaled):\n            raise ValueError(\"non-finite scaled value\")\n        result.append(scaled)\n    return tuple(result)\n\n\ndef distance(left, right, metric=\"euclidean\"):\n    left, right = vector(left), vector(right)\n    if len(left) != len(right):\n        raise ValueError(\"dimension mismatch\")\n    if metric == \"euclidean\":\n        return math.dist(left, right)\n    if metric == \"manhattan\":\n        return math.fsum(abs(a - b) for a, b in zip(left, right))\n    raise ValueError(\"unknown metric\")\n\n\ndef nearest(query, training, metric=\"euclidean\"):\n    \"\"\"Return (id, label); exact distance ties use lexical ID order.\"\"\"\n    query = vector(query)\n    if type(training) not in (list, tuple) or not 1 <= len(training) <= 50:\n        raise ValueError(\"training size\")\n    ranked, seen = [], set()\n    for row in training:\n        if type(row) not in (list, tuple) or len(row) != 3:\n            raise ValueError(\"training row\")\n        key, point, label = row\n        if (type(key) is not str or not re.fullmatch(r\"r[0-9]{1,3}\", key)\n                or key in seen):\n            raise ValueError(\"unique id\")\n        seen.add(key)\n        ranked.append((distance(query, point, metric), key, bit(label)))\n    _, key, label = min(ranked)\n    return key, label\n\n\ndef binary_metrics(truth, predictions):\n    for values in (truth, predictions):\n        if type(values) not in (list, tuple) or not 1 <= len(values) <= 100:\n            raise ValueError(\"label size/type\")\n        for value in values:\n            bit(value)\n    if len(truth) != len(predictions):\n        raise ValueError(\"label length\")\n    counts = {\"tn\": 0, \"fp\": 0, \"fn\": 0, \"tp\": 0}\n    names = {(0, 0): \"tn\", (0, 1): \"fp\", (1, 0): \"fn\", (1, 1): \"tp\"}\n    for actual, predicted in zip(truth, predictions):\n        counts[names[actual, predicted]] += 1\n    tn, fp, fn, tp = (counts[key] for key in (\"tn\", \"fp\", \"fn\", \"tp\"))\n    return {**counts, \"n\": len(truth), \"accuracy\": (tn + tp) / len(truth),\n            \"precision\": tp / (tp + fp) if tp + fp else None,\n            \"recall\": tp / (tp + fn) if tp + fn else None}\n\n\ndef threshold(scores, cutoff):\n    cutoff = number(cutoff)\n    if not 0 <= cutoff <= 1:\n        raise ValueError(\"cutoff\")\n    if type(scores) not in (list, tuple) or not 1 <= len(scores) <= 100:\n        raise ValueError(\"score size/type\")\n    checked = [number(value) for value in scores]\n    if any(not 0 <= value <= 1 for value in checked):\n        raise ValueError(\"score range\")\n    return [int(value >= cutoff) for value in checked]\n\n\ndef neuron(point, weights, bias):\n    point, weights, bias = vector(point), vector(weights), number(bias)\n    if len(point) != len(weights):\n        raise ValueError(\"dimension mismatch\")\n    z = math.fsum(x * w for x, w in zip(point, weights)) + bias\n    if z >= 0:\n        probability = 1 / (1 + math.exp(-z))\n    else:\n        exp_z = math.exp(z)\n        probability = exp_z / (1 + exp_z)\n    return z, probability\n\n\ndef loss_gradient(point, weights, bias, target):\n    target, point = bit(target), vector(point)\n    _, probability = neuron(point, weights, bias)\n    residual = probability - target\n    delta = residual * probability * (1 - probability)\n    return residual ** 2 / 2, tuple(delta * x for x in point), delta\n"
+    },
+    {
+      "filename": "test_ai_workbook.py",
+      "sha256": "140b2a098651602772cfb306520038d8ad48958dd76aeec422b4402f586660d0",
+      "bytes": 7378,
+      "syntax_checked": true,
+      "executed": true,
+      "code": "\"\"\"Behavioral checks with independent small numeric oracles.\"\"\"\nimport math\nimport unittest\n\nfrom ai_workbook import (\n    binary_metrics, distance, fit_ranges, load_csv, loss_gradient,\n    nearest, neuron, number, scale, threshold, vector,\n)\n\nHEADER = \"id,group,hours,tickets,label\\n\"\n\n\nclass WorkbookTests(unittest.TestCase):\n    def test_csv_preserves_source_and_rejects(self):\n        source = HEADER + \"r1,A,2,3,1\\nr2,B,NaN,4,0\\nr1,A,5,6,0\\n\"\n        before = source\n        rows, rejects = load_csv(source)\n        self.assertEqual(source, before)\n        self.assertEqual(rows[0][\"features\"], (2.0, 3.0))\n        self.assertEqual([r[\"record\"] for r in rejects], [2, 3])\n        self.assertEqual(rejects[0][\"cells\"][2], \"NaN\")\n        self.assertEqual(rejects[1][\"reason\"], \"duplicate accepted id\")\n\n    def test_csv_quoted_numeric_and_line(self):\n        rows, rejects = load_csv(HEADER + 'r1,A,\"2\",3,1\\nr2,A,2,3\\n')\n        self.assertEqual(len(rows), 1)\n        self.assertEqual(rejects[0][\"line\"], 3)\n\n    def test_csv_header_syntax_size_limits(self):\n        cases = [\"\", HEADER.replace(\"id,\", \"x,\"), \"x\" * 4097,\n                 HEADER + 'r1,A,\"unfinished',\n                 HEADER + \"r1,A,1,2,0\\n\" * 51]\n        for source in cases:\n            with self.subTest(source=source[:25]):\n                with self.assertRaises(ValueError):\n                    load_csv(source)\n\n    def test_csv_bad_rows_and_recovery(self):\n        source = HEADER + \"r1,A,no,2,0\\nr1,A,1,2,0\\nr2,C,1,2,0\\n\"\n        source += \"r3,A,-1,2,0\\nr4,A,1,inf,0\\nr5,A,1,2,True\\n\"\n        rows, rejects = load_csv(source)\n        self.assertEqual([r[\"id\"] for r in rows], [\"r1\"])\n        self.assertEqual(len(rejects), 5)\n\n    def test_numeric_boundaries_and_bool(self):\n        for value in (True, \"2\", math.nan, math.inf, -math.inf, 10 ** 1000):\n            with self.subTest(value=value):\n                with self.assertRaises(ValueError):\n                    number(value)\n        self.assertEqual(number(-1_000_000), -1_000_000.0)\n\n    def test_vector_shape_and_dimensions(self):\n        for value in ([], [0] * 9, \"12\", iter([1, 2])):\n            with self.assertRaises(ValueError):\n                vector(value)\n        with self.assertRaises(ValueError):\n            distance([1], [1, 2])\n\n    def test_distances_against_known_triangles(self):\n        self.assertEqual(distance([0, 0], [3, 4]), 5)\n        self.assertEqual(distance([0, 0], [3, 4], \"manhattan\"), 7)\n        self.assertEqual(distance([3, 4], [0, 0]), 5)\n        with self.assertRaises(ValueError):\n            distance([1], [1], \"cosine\")\n\n    def test_metric_changes_neighbor(self):\n        training = [(\"r1\", [3, 0], 0), (\"r2\", [2, 2], 1)]\n        self.assertEqual(nearest([0, 0], training), (\"r2\", 1))\n        self.assertEqual(nearest([0, 0], training, \"manhattan\"), (\"r1\", 0))\n\n    def test_ties_ignore_training_order(self):\n        rows = [(\"r2\", [1], 1), (\"r1\", [-1], 0)]\n        self.assertEqual(nearest([0], rows), (\"r1\", 0))\n        self.assertEqual(nearest([0], rows[::-1]), (\"r1\", 0))\n\n    def test_nearest_bad_training(self):\n        cases = [[], [(\"r1\", [1], True)], [(\"bad\", [1], 0)],\n                 [(\"r1\", [1], 0), (\"r1\", [2], 1)], [(\"r1\",)]]\n        for rows in cases:\n            with self.assertRaises(ValueError):\n                nearest([0], rows)\n\n    def test_training_ranges_do_not_mutate(self):\n        training = [[0, 10], [10, 30]]\n        self.assertEqual(fit_ranges(training), ((0.0, 10.0), (10.0, 30.0)))\n        self.assertEqual(training, [[0, 10], [10, 30]])\n        self.assertEqual(scale([5, 20], fit_ranges(training)), (0.5, 0.5))\n\n    def test_heldout_extremes_do_not_refit(self):\n        bounds = fit_ranges([[0], [10]])\n        self.assertEqual(scale([100], bounds), (10.0,))\n        self.assertEqual(scale([10], bounds), (1.0,))\n        leaked = fit_ranges([[0], [10], [100]])\n        self.assertEqual(scale([10], leaked), (0.1,))\n        self.assertEqual(bounds, ((0.0,), (10.0,)))\n\n    def test_constant_feature_drift(self):\n        bounds = fit_ranges([[2, 1], [2, 3]])\n        self.assertEqual(scale([2, 2], bounds), (0.0, 0.5))\n        with self.assertRaises(ValueError):\n            scale([3, 2], bounds)\n\n    def test_bad_training_and_bounds(self):\n        for rows in ([], [[1]], [[1], [1, 2]]):\n            with self.assertRaises(ValueError):\n                fit_ranges(rows)\n        for bounds in ([], ([2], [1]), ([0, 1], [2]), ([0], [True])):\n            with self.assertRaises(ValueError):\n                scale([1], bounds)\n        with self.assertRaises(ValueError):\n            scale([1], ([0], [1e-320]))\n\n    def test_metrics_all_four_cells(self):\n        result = binary_metrics([1, 1, 0, 0], [1, 0, 1, 0])\n        for key in (\"tp\", \"fn\", \"fp\", \"tn\"):\n            self.assertEqual(result[key], 1)\n        for key in (\"accuracy\", \"precision\", \"recall\"):\n            self.assertEqual(result[key], 0.5)\n\n    def test_undefined_metrics_and_imbalance(self):\n        result = binary_metrics([1, 1] + [0] * 8, [0] * 10)\n        self.assertEqual(result[\"accuracy\"], 0.8)\n        self.assertIsNone(result[\"precision\"])\n        self.assertEqual(result[\"recall\"], 0)\n        self.assertIsNone(binary_metrics([0, 0], [1, 0])[\"recall\"])\n\n    def test_invalid_labels_are_rejected(self):\n        for truth, predicted in (([], []), ([1], []), ([1], [True]),\n                                 ([0, 1], [1]), ([2], [0]), ([1.0], [1])):\n            with self.assertRaises(ValueError):\n                binary_metrics(truth, predicted)\n\n    def test_threshold_boundaries_and_bad_scores(self):\n        self.assertEqual(threshold([0, 0.5, 1], 0.5), [0, 1, 1])\n        for scores, cutoff in (([], 0.5), ([1.1], 0.5), ([0], -1),\n                               ([math.nan], 0.5), ([True], 0.5)):\n            with self.assertRaises(ValueError):\n                threshold(scores, cutoff)\n\n    def test_neuron_activation_and_saturation(self):\n        self.assertEqual(neuron([0], [0], 0), (0.0, 0.5))\n        self.assertEqual(neuron([1], [1_000_000], 0)[1], 1.0)\n        self.assertEqual(neuron([1], [-1_000_000], 0)[1], 0.0)\n        z, probability = neuron([2, -1], [0.25, -0.5], 0.1)\n        self.assertAlmostEqual(z, 1.1)\n        self.assertAlmostEqual(probability, 0.7502601055951177)\n\n    def test_gradient_matches_finite_difference(self):\n        point, weights, bias = [2, -1], [0.25, -0.5], 0.1\n        loss, gradient, db = loss_gradient(point, weights, bias, 1)\n        epsilon = 1e-5\n        params = weights + [bias]\n        for index, analytic in enumerate(list(gradient) + [db]):\n            plus, minus = params[:], params[:]\n            plus[index] += epsilon\n            minus[index] -= epsilon\n            high = loss_gradient(point, plus[:2], plus[2], 1)[0]\n            low = loss_gradient(point, minus[:2], minus[2], 1)[0]\n            self.assertAlmostEqual(analytic, (high - low) / (2 * epsilon),\n                                   delta=1e-8)\n        updated = [w - 0.5 * g for w, g in zip(weights, gradient)]\n        after = loss_gradient(point, updated, bias - 0.5 * db, 1)[0]\n        self.assertLess(after, loss)\n\n    def test_neuron_bad_inputs(self):\n        with self.assertRaises(ValueError):\n            neuron([1], [1, 2], 0)\n        with self.assertRaises(ValueError):\n            loss_gradient([1], [1], 0, True)\n\n\nif __name__ == \"__main__\":\n    unittest.main()\n"
+    },
+    {
+      "filename": "observations.py",
+      "sha256": "a524c3ac03790fdcca47b264e11aadd36d5ec8b885f83caeda7c891135477ea0",
+      "bytes": 6099,
+      "syntax_checked": true,
+      "executed": true,
+      "code": "\"\"\"Original observations; requires NumPy. No network or data-file writes.\"\"\"\nimport json\nimport math\nimport statistics\nfrom collections import Counter\n\nimport numpy as np\n\nfrom ai_workbook import (\n    binary_metrics, fit_ranges, load_csv, loss_gradient,\n    nearest, neuron, scale, threshold,\n)\n\n\ndef main():\n    passed = []\n\n    def check(name, condition):\n        if not condition:\n            raise AssertionError(name)\n        passed.append(name)\n\n    source = (\"id,group,hours,tickets,label\\n\"\n              \"r1,A,1,10,0\\nr2,A,3,20,1\\nr3,B,5,30,0\\nr4,B,9,40,1\\n\"\n              \"r5,A,NaN,10,0\\nr6,B,,20,1\\nr1,A,7,50,0\\nr7,B,2,8\\n\")\n    original = source\n    rows, rejects = load_csv(source)\n    check(\"four accepted and four rejected\", len(rows) == len(rejects) == 4)\n    check(\"raw text preserved\", source == original)\n    check(\"reject record and raw cell preserved\",\n          rejects[0][\"record\"] == 5 and rejects[0][\"cells\"][2] == \"NaN\")\n    hours = [row[\"features\"][0] for row in rows]\n    summaries = {\"mean\": statistics.fmean(hours),\n                 \"median\": statistics.median(hours),\n                 \"groups\": dict(Counter(row[\"group\"] for row in rows)),\n                 \"descending_ids\": [row[\"id\"] for row in sorted(\n                     rows, key=lambda row: row[\"features\"][0], reverse=True)]}\n    check(\"mean and median differ\", summaries[\"mean\"] == 4.5\n          and summaries[\"median\"] == 4.0)\n    check(\"group and sort\", summaries[\"groups\"] == {\"A\": 2, \"B\": 2}\n          and summaries[\"descending_ids\"] == [\"r4\", \"r3\", \"r2\", \"r1\"])\n\n    candidates = [(\"r1\", [3, 0], 0), (\"r2\", [2, 2], 1)]\n    euclidean = nearest([0, 0], candidates)\n    manhattan = nearest([0, 0], candidates, \"manhattan\")\n    check(\"metric changes neighbor\", euclidean == (\"r2\", 1)\n          and manhattan == (\"r1\", 0))\n    raw = [(\"r1\", [1000, 0], 0), (\"r2\", [0, 10], 1)]\n    bounds = fit_ranges([row[1] for row in raw])\n    scaled = [(key, scale(point, bounds), label) for key, point, label in raw]\n    raw_choice = nearest([600, 9], raw)\n    scaled_choice = nearest(scale([600, 9], bounds), scaled)\n    check(\"units change neighbor\", raw_choice == (\"r1\", 0)\n          and scaled_choice == (\"r2\", 1))\n    training_bounds = fit_ranges([[0], [10]])\n    leaked_bounds = fit_ranges([[0], [10], [100]])\n    clean_ten = scale([10], training_bounds)[0]\n    leaked_ten = scale([10], leaked_bounds)[0]\n    check(\"held-out leakage changes training representation\",\n          clean_ten == 1 and leaked_ten == 0.1)\n    outside = scale([100], training_bounds)[0]\n    check(\"held-out value is not clipped or refitted\", outside == 10\n          and training_bounds == ((0.0,), (10.0,)))\n\n    truth = [1, 1] + [0] * 8\n    scores = [0.9, 0.6, 0.8, 0.7, 0.4, 0.3, 0.2, 0.1, 0.05, 0]\n    baseline = binary_metrics(truth, [0] * 10)\n    high = binary_metrics(truth, threshold(scores, 0.75))\n    low = binary_metrics(truth, threshold(scores, 0.5))\n    check(\"majority baseline misses every positive\", baseline[\"accuracy\"]\n          == 0.8 and baseline[\"recall\"] == 0\n          and baseline[\"precision\"] is None)\n    check(\"same accuracy different recall\", high[\"accuracy\"]\n          == low[\"accuracy\"] == 0.8 and high[\"recall\"] == 0.5\n          and low[\"recall\"] == 1.0)\n    costs = [5 * result[\"fn\"] + result[\"fp\"] for result in (high, low)]\n    check(\"explicit error-cost example\", costs == [6, 2])\n    group_a = binary_metrics(truth[:5], threshold(scores[:5], 0.5))\n    group_b = binary_metrics(truth[5:], threshold(scores[5:], 0.5))\n    check(\"subgroup denominator matters\", group_a[\"recall\"] == 1\n          and group_b[\"recall\"] is None and group_b[\"n\"] == 5)\n\n    matrix = np.array([[3.0, 0.0], [2.0, 2.0]], dtype=np.float64)\n    row_l2 = np.linalg.norm(matrix, axis=1)\n    row_l1 = np.linalg.norm(matrix, ord=1, axis=1)\n    matrix_l1 = float(np.linalg.norm(matrix, ord=1))\n    means = np.mean(matrix, axis=0)\n    check(\"NumPy row distances\", np.allclose(row_l2, [3, math.sqrt(8)],\n                                             rtol=0, atol=1e-12))\n    check(\"matrix norm differs from row norms\", matrix_l1 == 5\n          and row_l1.tolist() == [3, 4])\n    check(\"NumPy mean axis\", means.tolist() == [2.5, 1]\n          and float(np.mean(matrix)) == 1.75)\n\n    point, weights, bias = [2, -1], [0.25, -0.5], 0.1\n    z, probability = neuron(point, weights, bias)\n    before, gradient, db = loss_gradient(point, weights, bias, 1)\n    after_weights = [w - 0.5 * g for w, g in zip(weights, gradient)]\n    after = loss_gradient(point, after_weights, bias - 0.5 * db, 1)[0]\n    check(\"neuron weighted input\", math.isclose(z, 1.1, abs_tol=1e-12))\n    check(\"sigmoid independent decimal oracle\", math.isclose(\n        probability, 0.7502601055951177, rel_tol=0, abs_tol=1e-12))\n    check(\"one gradient step reduces this loss\", 0 <= after < before)\n    check(\"single-neuron gradient direction\", gradient[0] < 0\n          and gradient[1] > 0 and db < 0)\n\n    report = {\"passed_checks\": len(passed), \"checks\": passed,\n              \"data\": {\"accepted\": rows, \"rejects\": rejects,\n                       \"summary\": summaries},\n              \"neighbors\": {\"euclidean\": euclidean, \"manhattan\": manhattan,\n                            \"raw\": raw_choice, \"scaled\": scaled_choice},\n              \"leakage\": {\"training_ten\": clean_ten,\n                          \"leaked_ten\": leaked_ten, \"heldout\": outside},\n              \"metrics\": {\"baseline\": baseline, \"cutoff_075\": high,\n                          \"cutoff_050\": low, \"costs_5fn_plus_fp\": costs,\n                          \"group_a\": group_a, \"group_b\": group_b},\n              \"numpy\": {\"row_l2\": row_l2.tolist(),\n                        \"row_l1\": row_l1.tolist(),\n                        \"matrix_l1\": matrix_l1,\n                        \"column_means\": means.tolist()},\n              \"neuron\": {\"z\": z, \"probability\": probability,\n                         \"loss_before\": before, \"loss_after\": after,\n                         \"weight_gradient\": gradient, \"bias_gradient\": db}}\n    print(json.dumps(report, indent=2, sort_keys=True, allow_nan=False))\n\n\nif __name__ == \"__main__\":\n    main()\n"
+    },
+    {
+      "filename": "optional_visuals.py",
+      "sha256": "022853bd27ec8fbf0acf5282d4e02c2b01ace438891a712db9e644dabbbb28c8",
+      "bytes": 1025,
+      "syntax_checked": true,
+      "executed": false,
+      "code": "\"\"\"Proposed only: syntax checked; pandas/Matplotlib were unavailable.\"\"\"\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\n\ndef explore():\n    frame = pd.DataFrame({\"batch\": [1, 2, 3, 4],\n                          \"hours\": [1.0, 3.0, 5.0, 9.0],\n                          \"group\": [\"A\", \"A\", \"B\", \"B\"]})\n    selected = frame.loc[frame[\"hours\"] >= 5, [\"batch\", \"hours\"]]\n    fig, axes = plt.subplots(1, 3, figsize=(12, 3), layout=\"constrained\")\n    axes[0].plot(frame[\"batch\"], frame[\"hours\"], marker=\"o\")\n    axes[0].set(title=\"Synthetic ordered batches\", xlabel=\"Batch\",\n                ylabel=\"Hours\")\n    axes[1].bar([\"A\", \"B\"], [2, 2])\n    axes[1].set(title=\"Accepted records\", xlabel=\"Fictional group\",\n                ylabel=\"Count\", ylim=(0, 3))\n    axes[2].hist(frame[\"hours\"], bins=[0, 2, 4, 6, 8, 10])\n    axes[2].set(title=\"Synthetic hours\", xlabel=\"Hours\", ylabel=\"Count\")\n    return selected, fig\n\n\nif __name__ == \"__main__\":\n    table, figure = explore()\n    print(table)\n    plt.show()\n    plt.close(figure)\n"
+    }
+  ],
+  "local_execution_evidence": [
+    {
+      "program": "unittest",
+      "command": [
+        "python",
+        "-B",
+        "-Werror",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-p",
+        "test_ai_workbook.py",
+        "-v"
+      ],
+      "started_at": "2026-09-30T06:03:47.120425+00:00",
+      "elapsed_seconds": 0.11,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_bad_training_and_bounds (test_ai_workbook.WorkbookTests.test_bad_training_and_bounds) ... ok\ntest_constant_feature_drift (test_ai_workbook.WorkbookTests.test_constant_feature_drift) ... ok\ntest_csv_bad_rows_and_recovery (test_ai_workbook.WorkbookTests.test_csv_bad_rows_and_recovery) ... ok\ntest_csv_header_syntax_size_limits (test_ai_workbook.WorkbookTests.test_csv_header_syntax_size_limits) ... ok\ntest_csv_preserves_source_and_rejects (test_ai_workbook.WorkbookTests.test_csv_preserves_source_and_rejects) ... ok\ntest_csv_quoted_numeric_and_line (test_ai_workbook.WorkbookTests.test_csv_quoted_numeric_and_line) ... ok\ntest_distances_against_known_triangles (test_ai_workbook.WorkbookTests.test_distances_against_known_triangles) ... ok\ntest_gradient_matches_finite_difference (test_ai_workbook.WorkbookTests.test_gradient_matches_finite_difference) ... ok\ntest_heldout_extremes_do_not_refit (test_ai_workbook.WorkbookTests.test_heldout_extremes_do_not_refit) ... ok\ntest_invalid_labels_are_rejected (test_ai_workbook.WorkbookTests.test_invalid_labels_are_rejected) ... ok\ntest_metric_changes_neighbor (test_ai_workbook.WorkbookTests.test_metric_changes_neighbor) ... ok\ntest_metrics_all_four_cells (test_ai_workbook.WorkbookTests.test_metrics_all_four_cells) ... ok\ntest_nearest_bad_training (test_ai_workbook.WorkbookTests.test_nearest_bad_training) ... ok\ntest_neuron_activation_and_saturation (test_ai_workbook.WorkbookTests.test_neuron_activation_and_saturation) ... ok\ntest_neuron_bad_inputs (test_ai_workbook.WorkbookTests.test_neuron_bad_inputs) ... ok\ntest_numeric_boundaries_and_bool (test_ai_workbook.WorkbookTests.test_numeric_boundaries_and_bool) ... ok\ntest_threshold_boundaries_and_bad_scores (test_ai_workbook.WorkbookTests.test_threshold_boundaries_and_bad_scores) ... ok\ntest_ties_ignore_training_order (test_ai_workbook.WorkbookTests.test_ties_ignore_training_order) ... ok\ntest_training_ranges_do_not_mutate (test_ai_workbook.WorkbookTests.test_training_ranges_do_not_mutate) ... ok\ntest_undefined_metrics_and_imbalance (test_ai_workbook.WorkbookTests.test_undefined_metrics_and_imbalance) ... ok\ntest_vector_shape_and_dimensions (test_ai_workbook.WorkbookTests.test_vector_shape_and_dimensions) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 0.001s\n\nOK\n",
+      "optimized": false,
+      "test_methods": 21
+    },
+    {
+      "program": "observations",
+      "command": [
+        "python",
+        "-B",
+        "-Werror",
+        "observations.py"
+      ],
+      "started_at": "2026-09-30T06:03:47.230780+00:00",
+      "elapsed_seconds": 0.147,
+      "exit_code": 0,
+      "stdout": "{\n  \"checks\": [\n    \"four accepted and four rejected\",\n    \"raw text preserved\",\n    \"reject record and raw cell preserved\",\n    \"mean and median differ\",\n    \"group and sort\",\n    \"metric changes neighbor\",\n    \"units change neighbor\",\n    \"held-out leakage changes training representation\",\n    \"held-out value is not clipped or refitted\",\n    \"majority baseline misses every positive\",\n    \"same accuracy different recall\",\n    \"explicit error-cost example\",\n    \"subgroup denominator matters\",\n    \"NumPy row distances\",\n    \"matrix norm differs from row norms\",\n    \"NumPy mean axis\",\n    \"neuron weighted input\",\n    \"sigmoid independent decimal oracle\",\n    \"one gradient step reduces this loss\",\n    \"single-neuron gradient direction\"\n  ],\n  \"data\": {\n    \"accepted\": [\n      {\n        \"features\": [\n          1.0,\n          10.0\n        ],\n        \"group\": \"A\",\n        \"id\": \"r1\",\n        \"label\": 0\n      },\n      {\n        \"features\": [\n          3.0,\n          20.0\n        ],\n        \"group\": \"A\",\n        \"id\": \"r2\",\n        \"label\": 1\n      },\n      {\n        \"features\": [\n          5.0,\n          30.0\n        ],\n        \"group\": \"B\",\n        \"id\": \"r3\",\n        \"label\": 0\n      },\n      {\n        \"features\": [\n          9.0,\n          40.0\n        ],\n        \"group\": \"B\",\n        \"id\": \"r4\",\n        \"label\": 1\n      }\n    ],\n    \"rejects\": [\n      {\n        \"cells\": [\n          \"r5\",\n          \"A\",\n          \"NaN\",\n          \"10\",\n          \"0\"\n        ],\n        \"line\": 6,\n        \"reason\": \"numeric range\",\n        \"record\": 5\n      },\n      {\n        \"cells\": [\n          \"r6\",\n          \"B\",\n          \"\",\n          \"20\",\n          \"1\"\n        ],\n        \"line\": 7,\n        \"reason\": \"could not convert string to float: ''\",\n        \"record\": 6\n      },\n      {\n        \"cells\": [\n          \"r1\",\n          \"A\",\n          \"7\",\n          \"50\",\n          \"0\"\n        ],\n        \"line\": 8,\n        \"reason\": \"duplicate accepted id\",\n        \"record\": 7\n      },\n      {\n        \"cells\": [\n          \"r7\",\n          \"B\",\n          \"2\",\n          \"8\"\n        ],\n        \"line\": 9,\n        \"reason\": \"field count\",\n        \"record\": 8\n      }\n    ],\n    \"summary\": {\n      \"descending_ids\": [\n        \"r4\",\n        \"r3\",\n        \"r2\",\n        \"r1\"\n      ],\n      \"groups\": {\n        \"A\": 2,\n        \"B\": 2\n      },\n      \"mean\": 4.5,\n      \"median\": 4.0\n    }\n  },\n  \"leakage\": {\n    \"heldout\": 10.0,\n    \"leaked_ten\": 0.1,\n    \"training_ten\": 1.0\n  },\n  \"metrics\": {\n    \"baseline\": {\n      \"accuracy\": 0.8,\n      \"fn\": 2,\n      \"fp\": 0,\n      \"n\": 10,\n      \"precision\": null,\n      \"recall\": 0.0,\n      \"tn\": 8,\n      \"tp\": 0\n    },\n    \"costs_5fn_plus_fp\": [\n      6,\n      2\n    ],\n    \"cutoff_050\": {\n      \"accuracy\": 0.8,\n      \"fn\": 0,\n      \"fp\": 2,\n      \"n\": 10,\n      \"precision\": 0.5,\n      \"recall\": 1.0,\n      \"tn\": 6,\n      \"tp\": 2\n    },\n    \"cutoff_075\": {\n      \"accuracy\": 0.8,\n      \"fn\": 1,\n      \"fp\": 1,\n      \"n\": 10,\n      \"precision\": 0.5,\n      \"recall\": 0.5,\n      \"tn\": 7,\n      \"tp\": 1\n    },\n    \"group_a\": {\n      \"accuracy\": 0.6,\n      \"fn\": 0,\n      \"fp\": 2,\n      \"n\": 5,\n      \"precision\": 0.5,\n      \"recall\": 1.0,\n      \"tn\": 1,\n      \"tp\": 2\n    },\n    \"group_b\": {\n      \"accuracy\": 1.0,\n      \"fn\": 0,\n      \"fp\": 0,\n      \"n\": 5,\n      \"precision\": null,\n      \"recall\": null,\n      \"tn\": 5,\n      \"tp\": 0\n    }\n  },\n  \"neighbors\": {\n    \"euclidean\": [\n      \"r2\",\n      1\n    ],\n    \"manhattan\": [\n      \"r1\",\n      0\n    ],\n    \"raw\": [\n      \"r1\",\n      0\n    ],\n    \"scaled\": [\n      \"r2\",\n      1\n    ]\n  },\n  \"neuron\": {\n    \"bias_gradient\": -0.0467937339328533,\n    \"loss_after\": 0.0251708674548701,\n    \"loss_before\": 0.031185007428680883,\n    \"probability\": 0.7502601055951177,\n    \"weight_gradient\": [\n      -0.0935874678657066,\n      0.0467937339328533\n    ],\n    \"z\": 1.1\n  },\n  \"numpy\": {\n    \"column_means\": [\n      2.5,\n      1.0\n    ],\n    \"matrix_l1\": 5.0,\n    \"row_l1\": [\n      3.0,\n      4.0\n    ],\n    \"row_l2\": [\n      3.0,\n      2.8284271247461903\n    ]\n  },\n  \"passed_checks\": 20\n}\n",
+      "stderr": "",
+      "optimized": false,
+      "checks": 20
+    },
+    {
+      "program": "unittest",
+      "command": [
+        "python",
+        "-B",
+        "-Werror",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-p",
+        "test_ai_workbook.py",
+        "-v"
+      ],
+      "started_at": "2026-09-30T06:03:47.378363+00:00",
+      "elapsed_seconds": 0.277,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_bad_training_and_bounds (test_ai_workbook.WorkbookTests.test_bad_training_and_bounds) ... ok\ntest_constant_feature_drift (test_ai_workbook.WorkbookTests.test_constant_feature_drift) ... ok\ntest_csv_bad_rows_and_recovery (test_ai_workbook.WorkbookTests.test_csv_bad_rows_and_recovery) ... ok\ntest_csv_header_syntax_size_limits (test_ai_workbook.WorkbookTests.test_csv_header_syntax_size_limits) ... ok\ntest_csv_preserves_source_and_rejects (test_ai_workbook.WorkbookTests.test_csv_preserves_source_and_rejects) ... ok\ntest_csv_quoted_numeric_and_line (test_ai_workbook.WorkbookTests.test_csv_quoted_numeric_and_line) ... ok\ntest_distances_against_known_triangles (test_ai_workbook.WorkbookTests.test_distances_against_known_triangles) ... ok\ntest_gradient_matches_finite_difference (test_ai_workbook.WorkbookTests.test_gradient_matches_finite_difference) ... ok\ntest_heldout_extremes_do_not_refit (test_ai_workbook.WorkbookTests.test_heldout_extremes_do_not_refit) ... ok\ntest_invalid_labels_are_rejected (test_ai_workbook.WorkbookTests.test_invalid_labels_are_rejected) ... ok\ntest_metric_changes_neighbor (test_ai_workbook.WorkbookTests.test_metric_changes_neighbor) ... ok\ntest_metrics_all_four_cells (test_ai_workbook.WorkbookTests.test_metrics_all_four_cells) ... ok\ntest_nearest_bad_training (test_ai_workbook.WorkbookTests.test_nearest_bad_training) ... ok\ntest_neuron_activation_and_saturation (test_ai_workbook.WorkbookTests.test_neuron_activation_and_saturation) ... ok\ntest_neuron_bad_inputs (test_ai_workbook.WorkbookTests.test_neuron_bad_inputs) ... ok\ntest_numeric_boundaries_and_bool (test_ai_workbook.WorkbookTests.test_numeric_boundaries_and_bool) ... ok\ntest_threshold_boundaries_and_bad_scores (test_ai_workbook.WorkbookTests.test_threshold_boundaries_and_bad_scores) ... ok\ntest_ties_ignore_training_order (test_ai_workbook.WorkbookTests.test_ties_ignore_training_order) ... ok\ntest_training_ranges_do_not_mutate (test_ai_workbook.WorkbookTests.test_training_ranges_do_not_mutate) ... ok\ntest_undefined_metrics_and_imbalance (test_ai_workbook.WorkbookTests.test_undefined_metrics_and_imbalance) ... ok\ntest_vector_shape_and_dimensions (test_ai_workbook.WorkbookTests.test_vector_shape_and_dimensions) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 0.001s\n\nOK\n",
+      "optimized": true,
+      "test_methods": 21
+    },
+    {
+      "program": "observations",
+      "command": [
+        "python",
+        "-B",
+        "-Werror",
+        "-O",
+        "observations.py"
+      ],
+      "started_at": "2026-09-30T06:03:47.655655+00:00",
+      "elapsed_seconds": 1.771,
+      "exit_code": 0,
+      "stdout": "{\n  \"checks\": [\n    \"four accepted and four rejected\",\n    \"raw text preserved\",\n    \"reject record and raw cell preserved\",\n    \"mean and median differ\",\n    \"group and sort\",\n    \"metric changes neighbor\",\n    \"units change neighbor\",\n    \"held-out leakage changes training representation\",\n    \"held-out value is not clipped or refitted\",\n    \"majority baseline misses every positive\",\n    \"same accuracy different recall\",\n    \"explicit error-cost example\",\n    \"subgroup denominator matters\",\n    \"NumPy row distances\",\n    \"matrix norm differs from row norms\",\n    \"NumPy mean axis\",\n    \"neuron weighted input\",\n    \"sigmoid independent decimal oracle\",\n    \"one gradient step reduces this loss\",\n    \"single-neuron gradient direction\"\n  ],\n  \"data\": {\n    \"accepted\": [\n      {\n        \"features\": [\n          1.0,\n          10.0\n        ],\n        \"group\": \"A\",\n        \"id\": \"r1\",\n        \"label\": 0\n      },\n      {\n        \"features\": [\n          3.0,\n          20.0\n        ],\n        \"group\": \"A\",\n        \"id\": \"r2\",\n        \"label\": 1\n      },\n      {\n        \"features\": [\n          5.0,\n          30.0\n        ],\n        \"group\": \"B\",\n        \"id\": \"r3\",\n        \"label\": 0\n      },\n      {\n        \"features\": [\n          9.0,\n          40.0\n        ],\n        \"group\": \"B\",\n        \"id\": \"r4\",\n        \"label\": 1\n      }\n    ],\n    \"rejects\": [\n      {\n        \"cells\": [\n          \"r5\",\n          \"A\",\n          \"NaN\",\n          \"10\",\n          \"0\"\n        ],\n        \"line\": 6,\n        \"reason\": \"numeric range\",\n        \"record\": 5\n      },\n      {\n        \"cells\": [\n          \"r6\",\n          \"B\",\n          \"\",\n          \"20\",\n          \"1\"\n        ],\n        \"line\": 7,\n        \"reason\": \"could not convert string to float: ''\",\n        \"record\": 6\n      },\n      {\n        \"cells\": [\n          \"r1\",\n          \"A\",\n          \"7\",\n          \"50\",\n          \"0\"\n        ],\n        \"line\": 8,\n        \"reason\": \"duplicate accepted id\",\n        \"record\": 7\n      },\n      {\n        \"cells\": [\n          \"r7\",\n          \"B\",\n          \"2\",\n          \"8\"\n        ],\n        \"line\": 9,\n        \"reason\": \"field count\",\n        \"record\": 8\n      }\n    ],\n    \"summary\": {\n      \"descending_ids\": [\n        \"r4\",\n        \"r3\",\n        \"r2\",\n        \"r1\"\n      ],\n      \"groups\": {\n        \"A\": 2,\n        \"B\": 2\n      },\n      \"mean\": 4.5,\n      \"median\": 4.0\n    }\n  },\n  \"leakage\": {\n    \"heldout\": 10.0,\n    \"leaked_ten\": 0.1,\n    \"training_ten\": 1.0\n  },\n  \"metrics\": {\n    \"baseline\": {\n      \"accuracy\": 0.8,\n      \"fn\": 2,\n      \"fp\": 0,\n      \"n\": 10,\n      \"precision\": null,\n      \"recall\": 0.0,\n      \"tn\": 8,\n      \"tp\": 0\n    },\n    \"costs_5fn_plus_fp\": [\n      6,\n      2\n    ],\n    \"cutoff_050\": {\n      \"accuracy\": 0.8,\n      \"fn\": 0,\n      \"fp\": 2,\n      \"n\": 10,\n      \"precision\": 0.5,\n      \"recall\": 1.0,\n      \"tn\": 6,\n      \"tp\": 2\n    },\n    \"cutoff_075\": {\n      \"accuracy\": 0.8,\n      \"fn\": 1,\n      \"fp\": 1,\n      \"n\": 10,\n      \"precision\": 0.5,\n      \"recall\": 0.5,\n      \"tn\": 7,\n      \"tp\": 1\n    },\n    \"group_a\": {\n      \"accuracy\": 0.6,\n      \"fn\": 0,\n      \"fp\": 2,\n      \"n\": 5,\n      \"precision\": 0.5,\n      \"recall\": 1.0,\n      \"tn\": 1,\n      \"tp\": 2\n    },\n    \"group_b\": {\n      \"accuracy\": 1.0,\n      \"fn\": 0,\n      \"fp\": 0,\n      \"n\": 5,\n      \"precision\": null,\n      \"recall\": null,\n      \"tn\": 5,\n      \"tp\": 0\n    }\n  },\n  \"neighbors\": {\n    \"euclidean\": [\n      \"r2\",\n      1\n    ],\n    \"manhattan\": [\n      \"r1\",\n      0\n    ],\n    \"raw\": [\n      \"r1\",\n      0\n    ],\n    \"scaled\": [\n      \"r2\",\n      1\n    ]\n  },\n  \"neuron\": {\n    \"bias_gradient\": -0.0467937339328533,\n    \"loss_after\": 0.0251708674548701,\n    \"loss_before\": 0.031185007428680883,\n    \"probability\": 0.7502601055951177,\n    \"weight_gradient\": [\n      -0.0935874678657066,\n      0.0467937339328533\n    ],\n    \"z\": 1.1\n  },\n  \"numpy\": {\n    \"column_means\": [\n      2.5,\n      1.0\n    ],\n    \"matrix_l1\": 5.0,\n    \"row_l1\": [\n      3.0,\n      4.0\n    ],\n    \"row_l2\": [\n      3.0,\n      2.8284271247461903\n    ]\n  },\n  \"passed_checks\": 20\n}\n",
+      "stderr": "",
+      "optimized": true,
+      "checks": 20
+    }
+  ],
+  "computed_report": {
+    "checks": [
+      "four accepted and four rejected",
+      "raw text preserved",
+      "reject record and raw cell preserved",
+      "mean and median differ",
+      "group and sort",
+      "metric changes neighbor",
+      "units change neighbor",
+      "held-out leakage changes training representation",
+      "held-out value is not clipped or refitted",
+      "majority baseline misses every positive",
+      "same accuracy different recall",
+      "explicit error-cost example",
+      "subgroup denominator matters",
+      "NumPy row distances",
+      "matrix norm differs from row norms",
+      "NumPy mean axis",
+      "neuron weighted input",
+      "sigmoid independent decimal oracle",
+      "one gradient step reduces this loss",
+      "single-neuron gradient direction"
+    ],
+    "data": {
+      "accepted": [
+        {
+          "features": [
+            1.0,
+            10.0
+          ],
+          "group": "A",
+          "id": "r1",
+          "label": 0
+        },
+        {
+          "features": [
+            3.0,
+            20.0
+          ],
+          "group": "A",
+          "id": "r2",
+          "label": 1
+        },
+        {
+          "features": [
+            5.0,
+            30.0
+          ],
+          "group": "B",
+          "id": "r3",
+          "label": 0
+        },
+        {
+          "features": [
+            9.0,
+            40.0
+          ],
+          "group": "B",
+          "id": "r4",
+          "label": 1
+        }
+      ],
+      "rejects": [
+        {
+          "cells": [
+            "r5",
+            "A",
+            "NaN",
+            "10",
+            "0"
+          ],
+          "line": 6,
+          "reason": "numeric range",
+          "record": 5
+        },
+        {
+          "cells": [
+            "r6",
+            "B",
+            "",
+            "20",
+            "1"
+          ],
+          "line": 7,
+          "reason": "could not convert string to float: ''",
+          "record": 6
+        },
+        {
+          "cells": [
+            "r1",
+            "A",
+            "7",
+            "50",
+            "0"
+          ],
+          "line": 8,
+          "reason": "duplicate accepted id",
+          "record": 7
+        },
+        {
+          "cells": [
+            "r7",
+            "B",
+            "2",
+            "8"
+          ],
+          "line": 9,
+          "reason": "field count",
+          "record": 8
+        }
+      ],
+      "summary": {
+        "descending_ids": [
+          "r4",
+          "r3",
+          "r2",
+          "r1"
+        ],
+        "groups": {
+          "A": 2,
+          "B": 2
+        },
+        "mean": 4.5,
+        "median": 4.0
+      }
+    },
+    "leakage": {
+      "heldout": 10.0,
+      "leaked_ten": 0.1,
+      "training_ten": 1.0
+    },
+    "metrics": {
+      "baseline": {
+        "accuracy": 0.8,
+        "fn": 2,
+        "fp": 0,
+        "n": 10,
+        "precision": null,
+        "recall": 0.0,
+        "tn": 8,
+        "tp": 0
+      },
+      "costs_5fn_plus_fp": [
+        6,
+        2
+      ],
+      "cutoff_050": {
+        "accuracy": 0.8,
+        "fn": 0,
+        "fp": 2,
+        "n": 10,
+        "precision": 0.5,
+        "recall": 1.0,
+        "tn": 6,
+        "tp": 2
+      },
+      "cutoff_075": {
+        "accuracy": 0.8,
+        "fn": 1,
+        "fp": 1,
+        "n": 10,
+        "precision": 0.5,
+        "recall": 0.5,
+        "tn": 7,
+        "tp": 1
+      },
+      "group_a": {
+        "accuracy": 0.6,
+        "fn": 0,
+        "fp": 2,
+        "n": 5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "tn": 1,
+        "tp": 2
+      },
+      "group_b": {
+        "accuracy": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "n": 5,
+        "precision": null,
+        "recall": null,
+        "tn": 5,
+        "tp": 0
+      }
+    },
+    "neighbors": {
+      "euclidean": [
+        "r2",
+        1
+      ],
+      "manhattan": [
+        "r1",
+        0
+      ],
+      "raw": [
+        "r1",
+        0
+      ],
+      "scaled": [
+        "r2",
+        1
+      ]
+    },
+    "neuron": {
+      "bias_gradient": -0.0467937339328533,
+      "loss_after": 0.0251708674548701,
+      "loss_before": 0.031185007428680883,
+      "probability": 0.7502601055951177,
+      "weight_gradient": [
+        -0.0935874678657066,
+        0.0467937339328533
+      ],
+      "z": 1.1
+    },
+    "numpy": {
+      "column_means": [
+        2.5,
+        1.0
+      ],
+      "matrix_l1": 5.0,
+      "row_l1": [
+        3.0,
+        4.0
+      ],
+      "row_l2": [
+        3.0,
+        2.8284271247461903
+      ]
+    },
+    "passed_checks": 20
+  },
+  "selected_lint_evidence": {
+    "command": [
+      "python",
+      "-m",
+      "ruff",
+      "check",
+      "ai_workbook.py",
+      "test_ai_workbook.py",
+      "observations.py",
+      "optional_visuals.py",
+      "--select",
+      "E4,E7,E9,F,W,E501",
+      "--line-length",
+      "79",
+      "--output-format",
+      "concise"
+    ],
+    "exit_code": 0,
+    "stdout": "All checks passed!\n",
+    "stderr": "",
+    "version": "ruff 0.16.4"
+  },
+  "missing_tools": [
+    "pandas",
+    "matplotlib",
+    "sklearn",
+    "torch",
+    "tensorflow"
+  ],
+  "manual_objective_confirmation": {
+    "checked_on": "2026-09-30",
+    "method": "Complete indexed canonical English syllabus/detailed bullets/full MQC manually read after direct/monitor timeout",
+    "code": "PCEI-30-01",
+    "syllabus_date": "2025-12-11",
+    "objectives": 33,
+    "per_section": [
+      5,
+      5,
+      6,
+      7,
+      5,
+      5
+    ],
+    "exam_items": [
+      5,
+      6,
+      6,
+      8,
+      6,
+      5
+    ],
+    "weights": [
+      14,
+      16.5,
+      16.5,
+      22.5,
+      16.5,
+      14
+    ],
+    "exam_questions": 36,
+    "snapshot_action": "Retained existing six-paragraph historical summary snapshot; manual confirmation distinct from new automated hash observation",
+    "publisher_conflicts": [
+      "Objective2.2title says testing levels butbulletsdescribeMLworkflow",
+      "Practice tablesQ3/Q4 2026 versusFAQ/PCAIQ1 2026"
+    ],
+    "reading_limit": "Full PDF unread",
+    "groups": [
+      {
+        "title": "AI fundamentals — 14.0%",
+        "objectives": [
+          "1.1 AI, agents, environment, inference, narrow/general AI, system components/applications.",
+          "1.2 ML, DL, NLP, CV, robotics and generative AI.",
+          "1.3 training/inference, features/labels, feedback and data quality.",
+          "1.4 capabilities/limitations, hallucinations, robustness and suitability.",
+          "1.5 problem/data/objectives/stakeholders/success metrics."
+        ]
+      },
+      {
+        "title": "Machine-learning fundamentals — 16.5%",
+        "objectives": [
+          "2.1 Supervised/unsupervised/reinforcement learning.",
+          "2.2 ML workflow, train/test split, preprocessing and data issues (official title incorrectly says “Levels of Testing”).",
+          "2.3 Linear models, trees, k-NN, k-means and Naive Bayes.",
+          "2.4 Rule/distance/grouping logic in pure Python.",
+          "2.5 Accuracy, precision, recall, confusion matrix, over/underfitting."
+        ]
+      },
+      {
+        "title": "Data handling, analysis, and visualization — 16.5%",
+        "objectives": [
+          "3.1 CSV/text/JSON, collections, nested data, cleaning/conversion.",
+          "3.2 Statistics, grouping, sorting and patterns.",
+          "3.3 Vectors, Euclidean/Manhattan distance, similarity, normalization/features.",
+          "3.4 Basic Pandas, filter/select/restructure, feature selection/extraction.",
+          "3.5 Matplotlib line/bar/histogram and interpretation.",
+          "3.6 Data-quality/model impacts."
+        ]
+      },
+      {
+        "title": "Neural networks, deep learning, and generative AI — 22.5%",
+        "objectives": [
+          "4.1 Neurons, weights, bias, layers, activation, feedforward/backpropagation.",
+          "4.2 Classical ML versus DL.",
+          "4.3 NLP tokens/sequences/embeddings/tasks/context.",
+          "4.4 CV arrays/channels/CNN/tasks.",
+          "4.5 Generative AI/LLMs/modalities/limitations.",
+          "4.6 Prompt context/task/refinement/injection/verification.",
+          "4.7 Pre-trained models, transfer learning, training/inference/deployment."
+        ]
+      },
+      {
+        "title": "Responsible AI, ethics, and critical thinking — 16.5%",
+        "objectives": [
+          "5.1 Bias, fairness, privacy, hallucination/misuse.",
+          "5.2 Sensitive data, manipulation/bypass, minimization/terms/escalation.",
+          "5.3 Social/workforce/economic impacts.",
+          "5.4 Fairness/transparency/accountability/explainability/human oversight.",
+          "5.5 Verify outputs and override automation appropriately."
+        ]
+      },
+      {
+        "title": "Projects, collaboration, and communication — 14.0%",
+        "objectives": [
+          "6.1 Suitable opportunities, constraints and feasibility.",
+          "6.2 Build/use/maintenance/data/compute cost.",
+          "6.3 Problem/data/logic/test/evaluate/iterate/document.",
+          "6.4 Roles, feedback and ethics collaboration.",
+          "6.5 Audience-aware evidence/visualization and limitations."
+        ]
+      }
+    ]
+  },
+  "review_provenance": "Same-context AI source/content review. Three exact original files execute21testmethods/20observations pernormal/optimizedmode,existingNumPy andin-memorysyntheticCSV/fixedscores/one-neuron. Fourthoptionalpandas/Matplotlibfile syntax/lintonly. Noindependenthuman,externalmodelAPI,promptoutputs,renderedplot,frameworktraining,fullcourse/12labs orreadinessassessment.",
+  "source_health_boundary": "28directreceipts:20ok7errors1blocked.25currentguideURLs:17ok7errors1blocked. Indexedfallbackseparatefromdirecthealth;selected/complete/hash-reusedbounds identified. No freshobjectivehash/fullPDFclaim.",
+  "development_corrections": [
+    "Two overlong observation-report lines were wrapped before final exact-source verification and selected lint.",
+    "An initial catalog-sync command used a nonexistent script name and stopped before repository tests. It was corrected to scripts/sync_learning_resources.py with explicit --exam-code PCEI-30-01 --write; the complete180test/build/site gate sequence followed."
+  ]
+}

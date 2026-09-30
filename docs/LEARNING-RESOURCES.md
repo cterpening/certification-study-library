@@ -3860,6 +3860,27 @@ The former O'Reilly link ending in ISBN `9781803247300` could not be verified an
 
 Because delivery remains beta, third-party exam-alignment claims need particular care. Use the public official outline and original exercises; avoid recalled exam questions. Direct source receipts, manual fallback boundaries, dependency versions and remaining work are documented in the [September 30 review](research/2026-09-30-pcea-30-01-deep-review.md).
 
+### PCEI-30-01 — PCEI Certified Entry-Level AI Specialist with Python
+
+Resource details from the [PCEI-30-01 guide](../guides/PCEI-30-01-python-certified-entry-level-ai-specialist.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list and is not intended to be consumed in full. PAI101 is listed as in development, not a completed course reviewed here. Choose one fundamentals resource and a small implementation path. All hour ranges below are **author planning budgets**, not verified course durations or completed study time. Reading a public landing page or selected table of contents does not establish completion of lessons, exercises, videos or paid chapters.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [PCEI syllabus](https://pythoninstitute.org/pcei-exam-syllabus) | Free official blueprint; full canonical HTML read, PDF pending | 3–5 hours |
+| [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course) | Free vendor course; prerequisites and three introductory module pages read, exercises uncompleted | 15–25 selected hours |
+| [Microsoft ML for Beginners](https://github.com/microsoft/ML-For-Beginners) | Free open curriculum; 12-week/26-lesson/52-quiz headline, README reviewed, linked notebooks unexecuted | 20–35 selected hours |
+| [Elements of AI](https://www.elementsofai.com/) | Free Introduction to AI and Building AI courses; public landing read, no enrollment/completion | 20–40 selected hours |
+| [NIST AI RMF Playbook](https://airc.nist.gov/AI_RMF_Knowledge_Base/Playbook) | Free voluntary guidance; landing read, linked actions unreviewed and update pending | 4–8 selected hours |
+| [Hands-On Machine Learning, 3rd ed.](https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/) | Paid book/subscription; Aurélien Géron, October 2022, 864 pages; selected public metadata and opening TOC only | 20–35 selected hours |
+
+Verify any claimed PCEI alignment, release status, practice availability, runtime, and price. Avoid exam-dump products and validate volatile AI claims against primary sources.
+
+The Google prerequisites page expects Python and basic math and names NumPy/pandas for its exercises; hosted exercise availability is not evidence that an account or notebook was used here. Microsoft’s headline curriculum scope exceeds this exam and emphasizes scikit-learn, which was absent locally. Elements of AI separates a conceptual introduction from Building AI, where basic Python is recommended. The O’Reilly listing confirms the third edition’s identity, but its publisher reading estimate is not a learner completion promise or review of paid content.
+
+See the [dated deep-review report](research/2026-09-30-pcei-30-01-deep-review.md) for exact source-reading boundaries, executable receipts and remaining blockers. Independent human review, full PDF reading, the optional pandas/Matplotlib exercise, external model trials and completion of the twelve labs remain pending.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

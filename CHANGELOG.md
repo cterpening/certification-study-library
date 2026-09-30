@@ -1,5 +1,7 @@
 # Changelog
 
+- September 30, 2026: [PCEI-30-01 deep review](docs/research/2026-09-30-pcei-30-01-deep-review.md): Mapped33objectives separately from36items and expanded20answers; exact Python/NumPy workbook passes21methods and20observations per mode. Added training-only scaling,metric/axis/gradient evidence; recorded practice-release conflicts and unexecuted optional frameworks,plots,model trials andhumanreview.
+
 - September 30, 2026: [PCEA-30-01 deep review](docs/research/2026-09-30-pcea-30-01-deep-review.md): Mapped 46 objectives and expanded 18 answers; three exact original files pass 25 methods and 23 observations per mode. Added owned HTTP, strict data, idempotent replacement and byte-recovery evidence; preserved beta status, repaired the book link, and recorded remaining scheduler/notification/full-lab and human-review limits.
 
 - September 30, 2026: [PCES-30-01 deep review](docs/research/2026-09-30-pces-30-01-deep-review.md): Mapped 45 detailed objectives; three exact original files execute 30 methods and 21 observations per mode, including owned loopback, context encoding, pseudonymized reports, PDF metadata and byte-restore trust limits. Removed the wrong book recommendation; missing tools, broader labs and human review remain explicit.

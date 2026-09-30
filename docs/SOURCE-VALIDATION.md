@@ -2343,6 +2343,8 @@ answer dump or copied course content is used. Blueprint SHA-256:
 
 ## PCEI-30-01 coverage record
 
+The September 30 [deep review](research/2026-09-30-pcei-30-01-deep-review.md) maps 33 detailed objectives. Mapped33objectives separately from36examitems and expanded20answers. Three exact original files pass21methods/20observations pernormal/optimizedmode for synthetic cleaning,training-only scaling,distances,metrics,NumPyaxes andone-neuron gradients. Fourthpandas/Matplotlibfile syntax/lintonly. Practice-release conflicts,fullPDF,framework/model/plot exercises,full12labs andhumanreview remainpending. Current guide citations: 25 registered, 17 reachable, 1 access-blocked, 7 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Artificial Intelligence Fundamentals (14%); Machine Learning Fundamentals (16.5%); Data Handling, Analysis, and Visualization (16.5%); Neural Networks, Deep Learning, and Generative AI (22.5%); Responsible AI, Ethics, and Critical Thinking (16.5%); AI Projects, Collaboration, and Communication (14%)
