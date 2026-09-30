@@ -281,9 +281,11 @@ Lifecycle facts live in the same catalog. Set `lifecycle.checked_on` to the date
 the cited evidence was checked. Each `blueprint_updates` entry needs an
 `effective_on` date, a language code and a public `source_url`; preserve both
 historical and announced dates. `initial_release`, when confirmed, needs `date`,
-`stage` (`beta` or `general-availability`) and `source_url`. Do not infer launch,
-rename or exam-update dates from a page timestamp or the library review date.
-Unknown values stay absent and display as “Not recorded.” Record conflicts and
+`stage` (`beta` or `general-availability`) and `source_url`. Use optional
+`initial_release.scope` for a documented language or delivery limit. Do not infer
+launch, rename or exam-update dates from a page timestamp or the library review date.
+Unknown values stay absent. The lifecycle page lists confirmed dated events and
+counts entries still needing date research by vendor. Record conflicts and
 next-pass questions in `lifecycle.notes` rather than choosing an unsupported date;
 cite the supporting public URLs in `lifecycle.source_urls`. The release date
 belongs to the tracked exam version, not necessarily the credential's first launch.

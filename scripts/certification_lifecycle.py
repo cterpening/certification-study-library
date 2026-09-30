@@ -1,6 +1,7 @@
 """Render a dated view of recorded certification lifecycle facts."""
 from __future__ import annotations
 
+from collections import defaultdict
 from datetime import date
 from html import escape
 import re
@@ -25,78 +26,117 @@ def render_lifecycle_page(catalog: dict[str, object]) -> str:
     certifications = catalog["certifications"]
     source_dates = {source["id"]: source["last_verified"]
                     for source in catalog["catalog_sources"]}
+    ordered = sorted(certifications, key=lambda row: (
+        row["vendor_id"], natural_key(row["exam_code"])))
+    events = []
+    fact_codes = set()
+    coverage = defaultdict(lambda: {"total": 0, "with_fact": 0})
+    unresolved = defaultdict(list)
+    priority_gaps = []
+    for row in ordered:
+        lifecycle = row.get("lifecycle", {})
+        if not isinstance(lifecycle, dict):
+            raise ValueError(f"Invalid lifecycle record for {row['exam_code']}")
+        has_fact = bool(lifecycle.get("blueprint_updates") or
+                        lifecycle.get("initial_release") or
+                        row.get("retirement_date"))
+        vendor = row["vendor_id"]
+        coverage[vendor]["total"] += 1
+        if has_fact:
+            fact_codes.add((vendor, row["exam_code"]))
+            coverage[vendor]["with_fact"] += 1
+        else:
+            unresolved[vendor].append(row)
+            if row["status"] in {"beta", "legacy"}:
+                priority_gaps.append(row)
+        checked = (lifecycle.get("checked_on") or
+                   "Catalog " + source_dates[row["source_id"]])
+        identity = link(f"{row['exam_code']} — {row['title']}", row["official_url"])
+        for update in lifecycle.get("blueprint_updates", []):
+            events.append((update["effective_on"], identity, "Skills measured as of",
+                           update["language"], update["source_url"], checked))
+        release = lifecycle.get("initial_release")
+        if release:
+            events.append((release["date"], identity,
+                           "Exam/version " + release["stage"].replace("-", " "),
+                           release.get("scope", "Scope not specified"),
+                           release["source_url"], checked))
+        if row.get("retirement_date"):
+            change = "Retirement"
+            if row.get("replacement_exam_code"):
+                change += " → " + link(row["replacement_exam_code"],
+                                       row["replacement_official_url"])
+            events.append((row["retirement_date"], identity, change,
+                           row.get("retirement_scope", "Scope not specified"),
+                           row.get("retirement_source_url", row["official_url"]), checked))
+    as_of_text = as_of.isoformat()
+    future_events = sorted((event for event in events if event[0] > as_of_text),
+                           key=lambda event: (event[0], event[1]))
+    past_events = sorted((event for event in events if event[0] <= as_of_text),
+                         key=lambda event: (event[0], event[1]), reverse=True)
     lines = [
         "# Certification lifecycle and name history", "",
-        f"**Dated view: {as_of.isoformat()}.** This page covers "
-        f"{len(certifications)} research-inventory entries, including credentials "
-        "that do not yet have a published study guide.", "",
-        "Use this page to track recorded exam updates, announced changes, releases, "
-        "retirements, replacements and former names. **Not recorded** means that "
-        "this inventory does not contain a confirmed value; it does not mean "
-        "that no change exists. Dates and known gaps will be filled on later passes.", "",
-        "An effective blueprint date is different from the date we checked a "
-        "page. Initial release refers to the tracked exam version, not necessarily "
-        "the credential's first launch. A beta release is different from general availability. A rename "
-        "does not by itself create a new exam or replacement. Language-specific "
+        f"**Dated view: {as_of.isoformat()}.** Of {len(certifications)} research-inventory "
+        f"entries, {len(fact_codes)} have a recorded dated lifecycle event; "
+        f"{len(certifications) - len(fact_codes)} still need date "
+        "research. This is a generated repository snapshot. The published page "
+        "changes when the site is deployed; it is not a live vendor feed.", "",
+        "The event tables show only source-backed dates. A missing row means this "
+        "inventory has no confirmed dated event for that exam; it does not mean "
+        "the exam has never changed. The coverage table below shows the research "
+        "gap by vendor.", "",
+        "For Microsoft Learn study guides, the skills date is transcribed from "
+        "the exact English 'Skills measured as of' heading. It does not by itself "
+        "prove that the preceding outline changed on that day. A skills date is "
+        "different from the date we checked a page. Initial release refers to the "
+        "tracked exam version, not necessarily the credential's first launch. "
+        "A beta release is different from general availability. A rename does "
+        "not by itself create a new exam or replacement. Language-specific "
         "dates are shown with their language code; do not apply them to every "
-        "exam delivery.", "",
-        "Latest and next updates are selected per language relative to the dated "
-        "view above, not the reader's current date. Multiple announced dates for "
-        "one language retain the earliest upcoming date here. Follow the source "
-        "and study guide for later changes. Retirement and replacement fields "
-        "come from the existing source-backed inventory. A catalog check date "
-        "describes that inventory pass, not a fresh individual lifecycle check.", "",
+        "exam delivery. A catalog check date describes an inventory pass, not "
+        "a fresh individual lifecycle check.", "",
         "Conflicting sources and unavailable labs remain visible in study-guide "
         "review notes. More research is needed where noted; useful public "
         "information can still be published. Community corrections should include "
         "a public source and the observed/effective date where known. See "
         "[how to contribute](../CONTRIBUTING.md).", "",
-        "## Dates and replacements", "",
-        "| Credential / exam | Latest recorded update | Next recorded update | "
-        "Exam/version release | Retirement | Replacement | Checked |",
-        "|---|---|---|---|---|---|---|",
     ]
-    ordered = sorted(certifications, key=lambda row: (
-        row["vendor_id"], natural_key(row["exam_code"])))
-    for row in ordered:
-        lifecycle = row.get("lifecycle", {})
-        if not isinstance(lifecycle, dict):
-            raise ValueError(f"Invalid lifecycle record for {row['exam_code']}")
-        by_language: dict[str, list[dict[str, str]]] = {}
-        for update in lifecycle.get("blueprint_updates", []):
-            by_language.setdefault(update["language"], []).append(update)
-        past, future = [], []
-        for language, updates in sorted(by_language.items()):
-            updates = sorted(updates, key=lambda update: update["effective_on"])
-            effective = [u for u in updates
-                         if date.fromisoformat(u["effective_on"]) <= as_of]
-            upcoming = [u for u in updates
-                        if date.fromisoformat(u["effective_on"]) > as_of]
-            for destination, selected in (
-                (past, effective[-1:] or []), (future, upcoming[:1])):
-                for update in selected:
-                    destination.append(link(
-                        f"{update['effective_on']} ({language})",
-                        update["source_url"]))
-        release = lifecycle.get("initial_release")
-        initial = (link(f"{release['date']} ({release['stage']})",
-                        release["source_url"]) if release else "Not recorded")
-        retirement_label = row.get("retirement_date", "")
-        if row.get("retirement_scope"):
-            retirement_label += f" ({row['retirement_scope']})"
-        retirement = (link(retirement_label, row.get("retirement_source_url", row["official_url"]))
-                      if row.get("retirement_date") else "Not recorded")
-        replacement = (link(row["replacement_exam_code"],
-                            row["replacement_official_url"])
-                       if row.get("replacement_exam_code") else "Not recorded")
-        checked = (lifecycle["checked_on"] if lifecycle.get("checked_on")
-                   else "Catalog " + source_dates[row["source_id"]])
-        identity = (link(f"{row['exam_code']} — {row['title']}", row["official_url"])
-                    + f"<br>{cell(row['vendor_id'])}; inventory: {cell(row['status'])}")
-        lines.append("| " + " | ".join([
-            identity, "<br>".join(past) or "Not recorded",
-            "<br>".join(future) or "Not recorded", initial,
-            retirement, replacement, cell(checked)]) + " |")
+    for title, selected in (("Upcoming dated changes", future_events),
+                            ("Effective and past dates", past_events)):
+        lines.extend([f"## {title}", ""])
+        if not selected:
+            lines.extend(["No source-backed dates in this category.", ""])
+            continue
+        lines.extend(["| Date | Credential / exam | Event | Scope | Source | Checked |",
+                      "|---|---|---|---|---|---|"])
+        for event_date, identity, change, scope, url, checked in selected:
+            lines.append("| " + " | ".join([
+                cell(event_date), identity, change, cell(scope),
+                link("Official source", url), cell(checked)]) + " |")
+        lines.append("")
+    lines.extend(["## Coverage and research queue", "",
+                  "A recorded event does not establish complete lifecycle history. "
+                  "The remaining count identifies exams for which no dated event "
+                  "has been recorded in this inventory. Review the official source "
+                  "before treating any row as current.", "",
+                  "| Vendor | Inventory entries | With a dated event | Date research remaining | Exams needing date research |",
+                  "|---|---:|---:|---:|---|"])
+    for vendor, counts in sorted(coverage.items()):
+        gaps = ", ".join(link(row["exam_code"], row["official_url"])
+                         for row in unresolved[vendor]) or "—"
+        lines.append(f"| {cell(vendor)} | {counts['total']} | "
+                     f"{counts['with_fact']} | {counts['total'] - counts['with_fact']} | "
+                     f"{gaps} |")
+    lines.extend(["", "### Priority gaps", "",
+                  "These beta or legacy inventory entries have no "
+                  "confirmed dated lifecycle event yet. Their status is a "
+                  "catalog classification, not a release or retirement date.", ""])
+    if priority_gaps:
+        for row in priority_gaps:
+            lines.append(f"- {link(row['exam_code'], row['official_url'])} "
+                         f"({cell(row['vendor_id'])}; {cell(row['status'])})")
+    else:
+        lines.append("No priority-status gaps in the current inventory.")
     lines.extend(["", "## Known name aliases", "",
                   "The current title and each alias refer to the same vendor/exam "
                   "identity. Try each name when searching an LMS, then reconcile "

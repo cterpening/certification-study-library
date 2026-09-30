@@ -1,5 +1,7 @@
 # Changelog
 
+- September 30, 2026: Reworked the [certification lifecycle page](docs/CERTIFICATION-LIFECYCLE.md) into source-linked dated events and a vendor research queue. Added exact English skills dates from 41 Microsoft Learn study guides (40 new dated skills records) and the AIB-C01 beta delivery date, raising entries with a dated event from 8 to 46 of 226. The other 180 remain explicit research gaps; month-only headings were not assigned invented days. The page is a generated site snapshot, not a live vendor feed.
+
 - September 30, 2026: [SPLK-5002 deep review](docs/research/2026-09-30-splk-5002-deep-review.md): Mapped 19 detailed objectives and reviewed 40 answers; added a synthetic detection worksheet and qualified ES findings, SOAR pairing, and playbook recovery by release. Documented conflicting ES 8.5 output guidance, twelve unexecuted product labs and source-access limits.
 
 - September 30, 2026: [SPLUNK-ADVANCED-POWER-USER deep review](docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md): Mapped104 objectives; corrected blueprint/course arithmetic and tstats/token/transaction assumptions. Documented ten unexecuted labs and source/training follow-ups.

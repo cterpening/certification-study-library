@@ -26,47 +26,52 @@ class LifecycleTests(unittest.TestCase):
 
     def test_future_outline_is_not_shown_as_effective_and_languages_stay_separate(self):
         page = render_lifecycle_page(self.catalog)
-        row = next(line for line in page.splitlines() if line.startswith("| [EX-100"))
-        columns = row.split(" | ")
-        self.assertIn("2026-07-22 (en)", columns[1])
-        self.assertIn("2026-09-30 (ja)", columns[1])
-        self.assertNotIn("2026-10-14", columns[1])
-        self.assertIn("2026-10-14 (en)", columns[2])
-        self.assertNotIn("2026-11-01", columns[2])
-        self.assertIn("2026-09-29", columns[-1])
+        upcoming, past = page.split("## Effective and past dates")
+        self.assertIn("| 2026-10-14 | [EX-100", upcoming)
+        self.assertIn("| 2026-11-01 | [EX-100", upcoming)
+        self.assertNotIn("| 2026-10-14 | [EX-100", past)
+        self.assertIn("| 2026-07-22 | [EX-100", past)
+        self.assertIn("| 2026-09-30 | [EX-100", past)
+        self.assertIn("| Skills measured as of | en |", page)
+        self.assertIn("| Skills measured as of | ja |", page)
+        self.assertIn("| 2026-09-29 |", page)
         self.assertIn("| example / EX-100 | Current | Former |", page)
 
     def test_advancing_view_moves_update_and_preserves_next_announcement(self):
         self.catalog["lifecycle_as_of"] = "2026-10-14"
-        row = next(line for line in render_lifecycle_page(self.catalog).splitlines()
-                   if line.startswith("| [EX-100"))
-        columns = row.split(" | ")
-        self.assertIn("2026-10-14 (en)", columns[1])
-        self.assertIn("2026-11-01 (en)", columns[2])
+        page = render_lifecycle_page(self.catalog)
+        upcoming, past = page.split("## Effective and past dates")
+        self.assertIn("| 2026-11-01 | [EX-100", upcoming)
+        self.assertNotIn("| 2026-10-14 | [EX-100", upcoming)
+        self.assertIn("| 2026-10-14 | [EX-100", past)
 
     def test_unknown_dates_are_not_inferred_from_catalog_review_or_status(self):
         del self.catalog["certifications"][0]["lifecycle"]
-        row = next(line for line in render_lifecycle_page(self.catalog).splitlines()
-                   if line.startswith("| [EX-100"))
-        self.assertEqual(row.count("Not recorded"), 5)
-        self.assertIn("Catalog 2026-09-01", row)
-        self.assertNotIn("No retirement", row)
+        page = render_lifecycle_page(self.catalog)
+        self.assertIn("1 still need date research", page)
+        self.assertIn("| example | 1 | 0 | 1 | [EX-100](<https://example.com/ex>) |", page)
+        self.assertNotIn("| [EX-100", page.split("## Coverage and research queue")[0])
+        self.assertNotIn("2026-09-01 | [EX-100", page)
+        self.assertNotIn("No retirement", page)
 
     def test_beta_release_retirement_and_replacement_keep_their_own_sources(self):
         row = self.catalog["certifications"][0]
         row["lifecycle"]["initial_release"] = {
-            "date": "2025-10-01", "stage": "beta", "source_url": "https://example.com/beta"}
+            "date": "2025-10-01", "stage": "beta", "scope": "English only",
+            "source_url": "https://example.com/beta"}
         row.update(status="retired", retirement_date="2026-09-01",
                    replacement_exam_code="EX-200",
                    replacement_official_url="https://example.com/new")
         page = render_lifecycle_page(self.catalog)
-        self.assertIn("[2025-10-01 (beta)](<https://example.com/beta>)", page)
-        self.assertIn("[2026-09-01](<https://example.com/ex>)", page)
-        self.assertIn("[EX-200](<https://example.com/new>)", page)
+        self.assertIn("| 2025-10-01 | [EX-100", page)
+        self.assertIn("| Exam/version beta |", page)
+        self.assertIn("| Exam/version beta | English only |", page)
+        self.assertIn("| 2026-09-01 | [EX-100", page)
+        self.assertIn("Retirement → [EX-200](<https://example.com/new>)", page)
         row.update(retirement_scope="English only",
                    retirement_source_url="https://example.com/notice")
         page = render_lifecycle_page(self.catalog)
-        self.assertIn("[2026-09-01 (English only)](<https://example.com/notice>)", page)
+        self.assertIn("| English only | [Official source](<https://example.com/notice>)", page)
 
     def test_rendering_does_not_mutate_records_and_escapes_table_content(self):
         self.catalog["certifications"][0]["title"] = "Name | <test> [other]"

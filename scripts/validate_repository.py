@@ -338,6 +338,9 @@ def validate_certification_seed_catalog(
                     not isinstance(release, dict)
                     or not valid_date(release.get("date"))
                     or release.get("stage") not in {"beta", "general-availability"}
+                    or ("scope" in release and (
+                        not isinstance(release["scope"], str)
+                        or not release["scope"].strip()))
                     or not valid_public_url(release.get("source_url"))
                 ):
                     errors.append(f"Certification seed {exam_code} has an invalid initial release")

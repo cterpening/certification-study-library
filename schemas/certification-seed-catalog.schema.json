@@ -67,6 +67,7 @@
                 "properties": {
                   "date": { "type": "string", "format": "date" },
                   "stage": { "enum": ["beta", "general-availability"] },
+                  "scope": { "type": "string", "minLength": 1 },
                   "source_url": { "type": "string", "format": "uri" }
                 }
               }
