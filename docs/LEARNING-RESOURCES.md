@@ -3904,6 +3904,30 @@ All hour ranges below are author planning budgets, not measured completion times
 
 No exact current MeasureUp, Whizlabs, or Pluralsight Core User practice product was verified. Splunk's blueprint recommends official documentation, the Splunk How-To channel, and hands-on experience. Reject any source claiming live, recalled, exact-match, or guaranteed-pass questions.
 
+### SPLUNK-CORE-POWER-USER — Splunk Core Certified Power User
+
+Resource details from the [SPLUNK-CORE-POWER-USER guide](../guides/SPLUNK-CORE-POWER-USER-splunk-core-certified-power-user.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, use product/CIM documentation to resolve exact behavior, and spend at least as much time creating and testing knowledge objects as watching. Commercial resources are supplementary; reconcile them with the current blueprint and product/CIM versions.
+
+Hour ranges are author planning budgets, not measured completion times. The linked course sheet is from 2024; the earlier September 30 parsed reading supports its historical course list, not current access or prices. This pass's Pluralsight search response was a page shell with an unrendered template, and YouTube returned only a short shell. No specific course or video was reviewed. O'Reilly and Udemy searches were blocked. Lantern's parsed landing text matched the earlier reading, but its linked articles were not reviewed. Existing 10.4 UI and CIM reference bodies were unavailable for a fresh reading; retain their version labels and verify against the installed product.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Official Power User blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-power-user.pdf) | Free canonical scope | 1–2 hr mapping/final review | Weights and objective contract |
+| [Official Power User page](https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-power-user.html) | Free | 20–40 min before booking | Current status, price, delivery, policies |
+| [Official platform curated-learning map](https://www.splunk.com/en_us/pdfs/training/platform-curated-learning.pdf) | Mixed free/paid; 2024 duration sheet, verify live catalog | About 25–35 hr across named blueprint courses, depending on paid Correlation/Knowledge modules | Working with Time, Statistical Processing, Comparing Values, Result Modification, Correlation, Knowledge Objects, Extractions, Data Models |
+| [Splunk Knowledge Management Manual 10.4](https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.4) | Free current product docs | 12–20 hr selected topics plus lab work | Authoritative object behavior and search-time order |
+| [Splunk CIM documentation](https://help.splunk.com/en/splunk-cloud-platform/common-information-model/5.3/introduction/overview-of-the-splunk-common-information-model) | Free; choose version compatible with your deployment | 6–12 hr for overview, one data model, normalization, validation | Actual schema rather than memorized field lists |
+| [Splunk Search Manual 10.4](https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/search-overview/get-started-with-search) | Free | 8–12 hr correlation/transforming/optimization topics | SPL foundations and command choice |
+| [Splunk How-To YouTube channel](https://www.youtube.com/@SplunkHowTo) | Free official videos; UI/catalog varies | 4–8 hr selected videos plus recreation | Visual object-creation walkthroughs |
+| [Splunk Lantern](https://lantern.splunk.com/) | Free official/community-reviewed use cases | 6–10 hr selected search/CIM patterns | Applied examples after fundamentals |
+| [Pluralsight Splunk learning search](https://www.pluralsight.com/search?q=Splunk) | Subscription; catalog changes and may not align by exam | Select 8–15 hr after matching each course to blueprint | Alternate explanations, not blueprint authority |
+| [O'Reilly Splunk search](https://www.oreilly.com/search/?q=Splunk) | Subscription; many books/courses use older UI/product releases | Select 8–15 hr, then verify every object in current docs | Deeper SPL/knowledge-management context |
+| [Udemy Power User search](https://www.udemy.com/courses/search/?q=Splunk%20Core%20Certified%20Power%20User) | Paid marketplace; offerings change | Select 8–15 hr only after verifying update date, blueprint, labs, and provenance | Optional alternate path |
+
+No exact current MeasureUp or Whizlabs Power User practice product was verified. Reject live/recalled/guaranteed-pass questions; use the public blueprint, official docs, and hands-on behavior as truth.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

@@ -1,5 +1,7 @@
 # Changelog
 
+- September 30, 2026: [SPLUNK-CORE-POWER-USER deep review](docs/research/2026-09-30-splunk-core-power-user-deep-review.md): Mapped 32 objectives; clarified null-field scope, Boolean precedence, transaction boundaries, alias collisions and calculated-field dependencies. Recorded paper examples, eight unexecuted labs and source/training follow-ups.
+
 - September 30, 2026: [SPLUNK-CORE-USER deep review](docs/research/2026-09-30-splunk-core-user-deep-review.md): Mapped 40 objectives; clarified command order, missing keys and sort limits with original paper predictions. Qualified historical training and unverified book metadata; documented all eight unexecuted labs and next-pass fixes.
 
 - September 30, 2026: Added source-backed certification lifecycle tracking and a fourth `aliases` column in the LMS query export. AB-100 retains its former name alongside the current Expert credential name. The dated page distinguishes effective updates, announced future updates, release stages and inventory checks; unconfirmed dates remain explicit gaps.

@@ -6,19 +6,19 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-09-30
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-09-30
 ---
 
 # Splunk Core Certified Power User Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, three-page public blueprint, current Splunk search/knowledge/CIM documentation, public training catalog, and selected learning resources were checked September 2, 2026. The checks here are original learning prompts, not representations of exam items. Recheck the [official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-power-user.html) and [test blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-power-user.pdf) before scheduling.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The September 30, 2026 best-effort review read the complete indexed credential page and three-page blueprint, mapped all 32 objectives, and checked selected command and knowledge-object references. Direct retrieval and the objective monitor encountered DNS errors; the historical snapshot remains intact. All eight Splunk labs remain unexecuted because no runtime or approved endpoint was available. The checks here are original learning prompts, not exam items. Recheck the [official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-power-user.html) and [test blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-power-user.pdf) before scheduling.
 
 **Current baseline:** Transforming Commands for Visualizations (5%); Filtering and Formatting Results (10%); Correlating Events (15%); Creating and Managing Fields (10%); Field Aliases and Calculated Fields (10%); Tags and Event Types (10%); Macros (10%); Workflow Actions (10%); Data Models (10%); Common Information Model Add-On (10%). Related topics may appear and the blueprint may change without notice.<br>
 **Exam contract:** entry level; 65 multiple-choice questions; 60 total minutes including three minutes for the exam agreement; USD 130 per attempt; Pearson VUE delivery<br>
 **Prerequisite contract:** no prerequisite exam. Core User is a useful foundation, but it is not required by the published contract.<br>
-**Upcoming change:** no retirement or replacement was announced when checked. The blueprint tests the established SPL and knowledge-object workflow. SPL2 is adjacent current-platform context, not a reason to replace the named commands or objects in this blueprint.<br>
+**Upcoming change:** No retirement or replacement was found in the credential page and blueprint read September 30; this bounded check does not establish absence across every release channel. The blueprint tests established SPL and knowledge objects. SPL2 is adjacent context with a different syntax contract.<br>
 
 ## How to use this guide
 
@@ -76,7 +76,9 @@ High-cardinality split fields can create many series and an “OTHER” grouping
     | fillnull value="unknown" owner
 ```
 
-`fillnull` replaces null/missing values for fields that exist in the result schema. If a field is null/missing in every event, Splunk may not recognize it as a field; create it explicitly with `eval` when needed. Do not replace unknown with zero unless zero is semantically correct.
+The [fillnull reference 10.2](https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.2/search-commands/fillnull) distinguishes explicit field lists from filling all fields. Its argument description and example 3 say an explicitly named missing field is created. Its all-fields examples show that a field containing only `null()` is not filled, even after an `eval` or `table` mentions it. Do not teach “create it with eval” as a universal fix: assigning another null does not supply a real value. Test both forms in your deployment; no SPL execution is claimed here. Do not replace unknown with zero unless zero is semantically correct.
+
+The [predicate reference 10.4](https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/expressions-and-predicates/predicate-expressions) documents different precedence: `search` evaluates OR before AND; `where` and `eval` evaluate AND before OR. Use parentheses when translating an expression. For `tier="prod" AND status=500 OR urgent=1`, an urgent nonproduction event is excluded by the first grouping, but included by the second. This is a logical prediction under the stated values, not an observed engine result.
 
 ## 3. Correlating events — 15%
 
@@ -98,6 +100,10 @@ index=auth earliest=-4h
 
 Choose transaction when event ordering/boundaries and combined raw-event context are essential; choose stats for scalable grouping/aggregation. A similar row does not prove identical semantics—document handling of incomplete groups, multivalue order, and boundaries.
 
+The [transaction reference 10.4](https://help.splunk.com/en/splunk-enterprise/search/spl-search-reference/10.4/search-commands/transaction) requires descending chronological input for `maxspan` and `maxpause`. Check order again after upstream transformations. `closed_txn` reflects transaction closure/eviction rules; it is not proof of a successful business session. Preserve incomplete and evicted cases in your investigation plan. Runtime memory limits and output were not tested here.
+
+**Original paper counterexample:** Suppose one identifier is reused for sessions at 09:00–09:02 and 09:10–09:12. Grouping all four events only by that identifier yields a 12-minute first-to-last span, although the two intended sessions total four minutes. Those are different questions. Identify an appropriate session key or boundary policy before claiming that a `stats` rewrite is equivalent to `transaction`; neither output has been executed in this review.
+
 ## 4. Creating and managing fields — 10%
 
 The Field Extractor (FX) creates search-time extractions from returned events. Regex mode suits irregular/unstructured text: select representative samples, highlight values, inspect the generated named-capture expression, and test positive/negative cases. Delimiter mode suits consistent structured rows with headers and a common delimiter.
@@ -112,7 +118,11 @@ The generated extraction is a starting point, not proof. Greedy expressions can 
 
 A field alias gives an existing extracted field an additional name. It does not rename or remove the original. This supports normalization when different sources use `src_ip`, `client_ip`, or another vendor name for the same concept. It cannot depend on a field created later in search-time processing.
 
+Preserving the original field does not guarantee preserving the alias destination. The selected [props.conf 10.4.3 FIELDALIAS contract](https://help.splunk.com/en/data-management/splunk-enterprise-admin-manual/10.4/configuration-file-reference/10.4.3-configuration-file-reference/props.conf) distinguishes `AS` from `ASNEW`: `AS` can replace an existing destination, and removes that destination when the source has no value; `ASNEW` preserves an existing destination. Test both source-missing and destination-present cases. Avoid mapping two fields onto one alias within the same scope; an explicit calculated expression can state the desired precedence.
+
 A calculated field uses an `eval` expression automatically at search time for a selected source/host/sourcetype. Use it for a stable derived value such as normalized units or a category. Handle nulls/types and avoid expensive/opaque expressions applied to broad datasets.
+
+Calculated fields in one stanza are evaluated independently, rather than as sequential pipeline steps. In an original hypothetical event with `raw_ms=2400`, defining `EVAL-seconds=raw_ms/1000` and `EVAL-minutes=seconds/60` does not make the second definition consume the first definition's new value. Derive both from the available input, or use deliberate sequential pipeline commands. The [calculated-fields reference 10.2](https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.2/calculated-fields/about-calculated-fields) also excludes dependencies on later lookups, event types and tags. No configuration was installed or executed.
 
 Search-time order matters: automatic key-value extraction precedes field aliases; aliases precede calculated fields; lookups, event types, and tags have later dependencies. The current [tags and aliases documentation](https://help.splunk.com/en/splunk-cloud-platform/manage-knowledge-objects/knowledge-management-manual/10.4.2604/tags/about-tags-and-aliases) documents these boundaries.
 
@@ -191,6 +201,19 @@ Create an argumented macro for a bounded base search, a Search workflow action t
 7. **Workflow action lab:** create GET, POST, and Search actions against nonproduction targets; test token encoding, missing fields, sensitive values, and authorization assumptions.
 8. **Data model/CIM project:** build a dataset hierarchy and Pivot, then normalize two vendor-shaped sources to one CIM dataset and validate equivalent counts/fields.
 
+## Lab evidence and next-pass fixes
+
+**All eight proposed labs remain unexecuted in this September 30 review.** No Splunk runtime or approved endpoint was available. The numeric and logical examples above are paper predictions. Source review does not establish that a saved knowledge object, macro, workflow action, Pivot or CIM mapping works in a deployment.
+
+| Labs | Evidence a reproduction should retain |
+|---|---|
+| 1–3: charts, filters and correlation | Product/build, synthetic rows, exact SPL/time range, result table, null cases and incomplete/reused sessions |
+| 4–5: extraction and object dependencies | Generated definition, scope, negative cases, alias collision policy and observed operation order |
+| 6–7: macros and workflow actions | Expanded search, argument cases, permissions and a nonproduction destination; distinguish definition from execution |
+| 8: data models and CIM | Installed CIM version, selected dataset, constraints, fields/tags/units, and raw/model/Pivot count comparisons |
+
+**More research needed — next pass:** refresh unavailable UI/CIM pages, reproduce explicit-field versus all-field null handling, execute all eight labs and verify current training offerings. Report failures with the exact version, input and expected/observed output. No workflow action was sent, and no course, protected exam material or authenticated account was accessed. Independent human content/accessibility review remains pending.
+
 ## Original readiness checks
 
 1. When should chart be preferred to timechart?
@@ -241,17 +264,17 @@ Create an argumented macro for a bounded base search, a Search workflow action t
 3. The graph inherits omissions, limits, null handling, and shape from the table.
 4. Derived or modified fields on result rows.
 5. For evaluated expressions, functions, and field-to-field comparisons.
-6. A field absent/null in every event may not exist in the result schema.
+6. The all-fields form may not recognize a field that is null everywhere. The explicit field-list form is documented to create named absent fields. An `eval` assigning only `null()` is not a general remedy; reproduce both forms.
 7. One grouped result with combined event context and metadata such as duration/event count.
 8. Any two of maxspan, maxpause, startswith, and endswith.
 9. When scalable grouping/aggregates answer the question without raw-event transaction semantics.
-10. Incomplete groups, ordering, multivalue representation, and boundaries can differ.
+10. Incomplete groups, ordering, multivalue representation, and boundaries can differ. The reused-identifier worksheet gives a 12-minute group span versus four minutes across two intended sessions; similarity of columns does not establish equivalent grouping.
 11. For unstructured text with a stable pattern.
 12. For consistently delimited structured records.
 13. Representative positives plus missing, malformed, alternate, and near-miss negatives.
-14. No; it adds another searchable name.
+14. No; it adds another searchable name. The destination can nevertheless be overwritten with `AS`; `ASNEW` preserves an existing destination. Test collisions and missing sources.
 15. An automatically applied eval expression for the selected source scope.
-16. An object cannot reliably depend on a field/tag produced later.
+16. An object cannot reliably depend on a field/tag produced later. Calculated fields in one stanza also cannot be chained by assuming one receives another's freshly computed value.
 17. A field-value pair or event type.
 18. Events matching a named search definition.
 19. Tags are processed after event types, creating an invalid dependency direction.
@@ -293,6 +316,8 @@ Create an argumented macro for a bounded base search, a Search workflow action t
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, use product/CIM documentation to resolve exact behavior, and spend at least as much time creating and testing knowledge objects as watching. Commercial resources are supplementary; reconcile them with the current blueprint and product/CIM versions.
+
+Hour ranges are author planning budgets, not measured completion times. The linked course sheet is from 2024; the earlier September 30 parsed reading supports its historical course list, not current access or prices. This pass's Pluralsight search response was a page shell with an unrendered template, and YouTube returned only a short shell. No specific course or video was reviewed. O'Reilly and Udemy searches were blocked. Lantern's parsed landing text matched the earlier reading, but its linked articles were not reviewed. Existing 10.4 UI and CIM reference bodies were unavailable for a fresh reading; retain their version labels and verify against the installed product.
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|

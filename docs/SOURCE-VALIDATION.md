@@ -2374,6 +2374,8 @@ The review maps every detailed objective through a single evidence-led search-to
 
 ## SPLUNK-CORE-POWER-USER coverage record
 
+The September 30 [deep review](research/2026-09-30-splunk-core-power-user-deep-review.md) maps 32 detailed objectives. Mapped 32 objectives and reviewed 40 answers. Clarified explicit-field fillnull, Boolean precedence, transaction boundaries, alias destination collisions and independent calculated fields with original paper examples. All eight Splunk labs remain unexecuted; unavailable UI/CIM sources, current training and human review are next-pass work. Current guide citations: 19 registered, 3 reachable, 2 access-blocked, 14 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Transforming Commands for Visualizations (5%); Filtering and Formatting Results (10%); Correlating Events (15%); Creating and Managing Fields (10%); Field Aliases and Calculated Fields (10%); Tags and Event Types (10%); Macros (10%); Workflow Actions (10%); Data Models (10%); Common Information Model Add-On (10%)

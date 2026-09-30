@@ -1,0 +1,1435 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-30",
+  "exam_code": "SPLUNK-CORE-POWER-USER",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/SPLUNK-CORE-POWER-USER-splunk-core-certified-power-user.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "90370cd9d393e931aded6a1d1416737674cc6031d2edf5d440f894543c671798",
+  "guide_after_sha256": "73e0ccca36c509493527caf4df79f37b255ebbf21e3c1b8d2266c88a96671172",
+  "prior_records": {
+    "exam": {
+      "code": "SPLUNK-CORE-POWER-USER",
+      "level": "beginner",
+      "vendor_id": "splunk",
+      "title": "Splunk Core Certified Power User",
+      "status": "active",
+      "study_guide_url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-power-user.pdf",
+      "guide_path": "guides/SPLUNK-CORE-POWER-USER-splunk-core-certified-power-user.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No prerequisite exam is published; Core User is a useful foundation. Practice transforming and correlating searches plus governed field extractions, aliases, calculated fields, tags, event types, macros, workflow actions, data models and CIM normalization."
+    },
+    "review": {
+      "id": "splunk-core-power-user-2026-09-02-source-validation",
+      "exam_code": "SPLUNK-CORE-POWER-USER",
+      "guide_path": "guides/SPLUNK-CORE-POWER-USER-splunk-core-certified-power-user.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/splunk-core-power-user-official-objectives.txt",
+      "blueprint_snapshot_sha256": "e5715fa538ca2139d8472fd5aa4122ddf4651abe8f41794ddb6347760aa5f1d1",
+      "objective_coverage": [
+        {
+          "objective_group": "Transforming Commands for Visualizations (5%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Filtering and Formatting Results (10%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Correlating Events (15%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Creating and Managing Fields (10%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Field Aliases and Calculated Fields (10%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Tags and Event Types (10%)",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Macros (10%)",
+          "guide_sections": [
+            "Section 7",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Workflow Actions (10%)",
+          "guide_sections": [
+            "Section 8",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Data Models (10%)",
+          "guide_sections": [
+            "Section 9",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Common Information Model Add-On (10%)",
+          "guide_sections": [
+            "Section 10",
+            "Integrated scenarios"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 14,
+        "reachable": 5,
+        "access_blocked": 7,
+        "missing_or_error": 2
+      },
+      "notes": "All ten blueprint domains are mapped through explainable SPL and governed knowledge-object practice. Integrated scenarios, safe labs and original checks require raw-versus-normalized and transaction-versus-stats comparisons. Eight endpoints were automation-blocked rather than missing. No recalled/live item, answer dump or copied course question is used. September 30 shared-source health counts refreshed after the Core User pass; original content-review date, objective hash and outcome are unchanged. DNS retrieval errors do not establish dead URLs."
+    },
+    "sources": [
+      {
+        "id": "youtube-splunk-how-to",
+        "title": "Splunk How-To YouTube Channel",
+        "url": "https://www.youtube.com/@SplunkHowTo",
+        "publisher": "Splunk Education",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-30",
+        "supported_exams": [
+          "SPLK-5001",
+          "SPLUNK-CORE-USER",
+          "SPLUNK-CORE-POWER-USER",
+          "SPLUNK-ADVANCED-POWER-USER",
+          "SPLUNK-CLOUD-ADMIN",
+          "SPLUNK-ENTERPRISE-ADMIN",
+          "SPLUNK-ENTERPRISE-ARCHITECT",
+          "SPLUNK-CORE-CONSULTANT",
+          "SPLUNK-O11Y-METRICS-USER"
+        ],
+        "notes": "Official tutorial channel named by the blueprint, including the two Introduction to Security Domain videos. Select current playlists by objective gap. September 29 SPLK-5001 deep review: Title/footer only, 176 characters. No playback or complete playlist review; two blueprint-named videos remain optional learning resources. See docs/research/2026-09-29-splk-5001-deep-review.md No live infrastructure execution. September 30 SPLUNK-CORE-USER deep review: Fresh direct response was only176characters of page shell. Shell read; no video, playlist, duration or current catalog reviewed. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "splunk-platform-curated-learning",
+        "title": "Splunk Platform Curated Learning",
+        "url": "https://www.splunk.com/en_us/pdfs/training/platform-curated-learning.pdf",
+        "publisher": "Splunk",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-30",
+        "supported_exams": [
+          "SPLUNK-CORE-USER",
+          "SPLUNK-CORE-POWER-USER"
+        ],
+        "notes": "Official 2024 course and duration map; use the live catalog to confirm current titles, access and runtimes. September 30 SPLUNK-CORE-USER deep review: Complete indexed7page119line2024PDFparsedtextread after directDNSerror. Six selected SearchExpert durations sum13h45historicalpublisherfigures. Fullpathhasmorecourses,notcomplete13h45pathclaim. Currentpricing/access/unseenlessonsunverified;noenrollment. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "splunk-search-manual-get-started",
+        "title": "Splunk Search Manual — Get Started with Search",
+        "url": "https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/search-overview/get-started-with-search",
+        "publisher": "Splunk",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-30",
+        "supported_exams": [
+          "SPLUNK-CORE-USER",
+          "SPLUNK-CORE-POWER-USER",
+          "SPLUNK-ADVANCED-POWER-USER"
+        ],
+        "notes": "Current product documentation for search syntax, fields, time, jobs and result handling. September 30 SPLUNK-CORE-USER deep review: DirectDNSerror. Existing10.4reference retained; body not freshly read. No fullmanual audit or productionqueryoptimization test. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "splunk-lantern",
+        "title": "Splunk Lantern",
+        "url": "https://lantern.splunk.com/",
+        "publisher": "Splunk",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-30",
+        "supported_exams": [
+          "SPLUNK-CORE-USER",
+          "SPLUNK-CORE-POWER-USER",
+          "SPLUNK-ADVANCED-POWER-USER",
+          "SPLUNK-CLOUD-ADMIN"
+        ],
+        "notes": "Public Splunk expert and community-reviewed use cases for applied reinforcement. September 30 SPLUNK-CORE-USER deep review: Complete fresh16880character landing/index read. Featured usecase summaries andnavigationonly; linkedarticles/benchmarksnotreviewed. Hoursauthorbudget,notcoursecompletion. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "splunk-core-power-user-certification",
+        "title": "Splunk Core Certified Power User",
+        "url": "https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-power-user.html",
+        "publisher": "Splunk",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SPLUNK-CORE-POWER-USER"
+        ],
+        "notes": "Canonical status, entry-level contract, item count, duration, price, Pearson delivery and blueprint link."
+      },
+      {
+        "id": "splunk-core-power-user-blueprint",
+        "title": "Splunk Core Certified Power User Test Blueprint",
+        "url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-power-user.pdf",
+        "publisher": "Splunk",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SPLUNK-CORE-POWER-USER"
+        ],
+        "notes": "Canonical three-page blueprint with ten weighted domains and detailed objectives."
+      },
+      {
+        "id": "splunk-field-extractor",
+        "title": "Build Field Extractions with the Field Extractor",
+        "url": "https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.4/use-the-field-extractor-in-splunk-web/build-field-extractions-with-the-field-extractor",
+        "publisher": "Splunk",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SPLUNK-CORE-POWER-USER"
+        ],
+        "notes": "Current product workflow for regex- and delimiter-based field extraction."
+      },
+      {
+        "id": "splunk-cim-overview",
+        "title": "Splunk Common Information Model Overview",
+        "url": "https://help.splunk.com/en/splunk-cloud-platform/common-information-model/5.3/introduction/overview-of-the-splunk-common-information-model",
+        "publisher": "Splunk",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SPLUNK-CORE-POWER-USER"
+        ],
+        "notes": "Current CIM concepts, normalization and add-on reference."
+      },
+      {
+        "id": "splunk-design-data-models",
+        "title": "Design Data Models",
+        "url": "https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.4/build-a-data-model/design-data-models",
+        "publisher": "Splunk",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SPLUNK-CORE-POWER-USER"
+        ],
+        "notes": "Current product documentation for datasets, attributes and model design."
+      },
+      {
+        "id": "splunk-knowledge-management-manual",
+        "title": "Splunk Knowledge Management Manual 10.4",
+        "url": "https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.4",
+        "publisher": "Splunk",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SPLUNK-CORE-POWER-USER",
+          "SPLUNK-ADVANCED-POWER-USER"
+        ],
+        "notes": "Primary manual for fields, aliases, calculated fields, tags, event types, macros, workflow actions and data models."
+      },
+      {
+        "id": "splunk-tags-aliases",
+        "title": "About Tags and Aliases",
+        "url": "https://help.splunk.com/en/splunk-cloud-platform/manage-knowledge-objects/knowledge-management-manual/10.4.2604/tags/about-tags-and-aliases",
+        "publisher": "Splunk",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SPLUNK-CORE-POWER-USER"
+        ],
+        "notes": "Current Splunk Cloud documentation for tag and alias behavior."
+      },
+      {
+        "id": "oreilly-search-splunk",
+        "title": "O'Reilly Splunk Search",
+        "url": "https://www.oreilly.com/search/?q=Splunk",
+        "publisher": "O'Reilly",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SPLUNK-CORE-POWER-USER",
+          "SPLUNK-ADVANCED-POWER-USER"
+        ],
+        "notes": "Changing catalog search; select current resources by objective gap and verify product baseline."
+      },
+      {
+        "id": "pluralsight-search-splunk",
+        "title": "Pluralsight Splunk Search",
+        "url": "https://www.pluralsight.com/search?q=Splunk",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SPLUNK-CORE-POWER-USER",
+          "SPLUNK-ADVANCED-POWER-USER"
+        ],
+        "notes": "Changing catalog search; select current hands-on courses and do not treat vendor content as exam authority."
+      },
+      {
+        "id": "udemy-search-splunk-power-user",
+        "title": "Udemy Splunk Core Certified Power User Search",
+        "url": "https://www.udemy.com/courses/search/?q=Splunk%20Core%20Certified%20Power%20User",
+        "publisher": "Udemy marketplace",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SPLUNK-CORE-POWER-USER"
+        ],
+        "notes": "Changing marketplace search; verify date, blueprint and lab quality and reject recalled-question products."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "5680264519ea412a123e11a860b6cbccb3e5f0bf941752803d656b7f85894400",
+      "guide_sections": [
+        "1. Transforming commands for visualizations — 5%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "95e98d9148d21a1c5b870f22a4687e9b95b5441438f2fa8bd9177fc24e5b61ab",
+      "guide_sections": [
+        "1. Transforming commands for visualizations — 5%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "e62af08c54f808b6f7c9002e26dcdbc82f6e186e7bf97aec91420168f36385f1",
+      "guide_sections": [
+        "2. Filtering and formatting results — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "82b563f1645dadd784ee5298f8cdbc68953e109bcbc2cfcd74da1afdf9998835",
+      "guide_sections": [
+        "2. Filtering and formatting results — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "18e4e8e5635bb2bbace300167781a0fc56c29b38e043c7ef1ac4122c4b1c97a9",
+      "guide_sections": [
+        "2. Filtering and formatting results — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "e3a3de3fd7b6b530a336598e91c3faa9fc99254ca80e15ec015ff25a6c2a354f",
+      "guide_sections": [
+        "3. Correlating events — 15%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "6342909a8029da9e3ae846e0ecc040548fc0b373dd6a0002bc8b9e23adb24b99",
+      "guide_sections": [
+        "3. Correlating events — 15%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "5230f1261db1e526f7c8b96072ab7e0118cc1c48c35f0adc075a7d1eebc6d41b",
+      "guide_sections": [
+        "3. Correlating events — 15%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "80d1e03dc9407daa47a86b59a6155d4deb1d6a1595b39e6f01c909983f003880",
+      "guide_sections": [
+        "3. Correlating events — 15%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "72fe9efdd6a0e25ba3112f4539027c5d0b10f0d373b928e90261a33e18f2fae7",
+      "guide_sections": [
+        "3. Correlating events — 15%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "fbcb91f65178b65e65df723d818d4ca40f2fbe478a48b18b0b71dc7ded43d741",
+      "guide_sections": [
+        "3. Correlating events — 15%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "816c0f89f775c3ae91f7399573a0314ac2728d7bbb44ac0973a1ee04e9492f3d",
+      "guide_sections": [
+        "4. Creating and managing fields — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "ba0828254d5dc4521315dfb4dfe08ffb83c11fc2ca5c859a07bb3a0e3dc9d449",
+      "guide_sections": [
+        "4. Creating and managing fields — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "4a99a187fc8d44cdc9cca32938b770a99e9a3783bd6dc979efa5da4e8333c08e",
+      "guide_sections": [
+        "5. Field aliases and calculated fields — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "7bc333f7e1967d0db5c334b6b6af8d2c3296de9b408bd751fd92db51e10af7d5",
+      "guide_sections": [
+        "5. Field aliases and calculated fields — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "4b876c74e139f106b92678ac8ee9cd84327facc32a8fc21cf9e22d676b15f923",
+      "guide_sections": [
+        "6. Tags and event types — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "ff9065d2388fd3dc17a762bd0c484de1c3034559ecb67fe128ff4532fde2fc95",
+      "guide_sections": [
+        "6. Tags and event types — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "ca0f34b96991755ebbb00f3afbfdb06b6b01297733a5046099e211f806582eff",
+      "guide_sections": [
+        "6. Tags and event types — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "05d2532f61419a02ec30ee40d5640a226672dd2bb3bae89761495059385fe0cd",
+      "guide_sections": [
+        "7. Macros — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "c79fdad29131b647c18165a2afd78fa8570d4282b2da55e21b04a5d940ed59aa",
+      "guide_sections": [
+        "7. Macros — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "b20f9eaaff839eaf6086e0939081f2787dcde57f8509c04cc58535486a776f51",
+      "guide_sections": [
+        "7. Macros — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "1bbdfee78bc5227e66c2e1a9e3b2c320bee487e8fdcdd3e470ee5ea83262fb95",
+      "guide_sections": [
+        "7. Macros — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "989f0b8da99b0904cc578fa514de1a37d2e244498d8f707259fe340869ccde94",
+      "guide_sections": [
+        "8. Workflow actions — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "0cf9b8f1f70ecd1b6fde0f7fcb8361abb8e741683dcf135abea44099ab4331b6",
+      "guide_sections": [
+        "8. Workflow actions — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "47985d42737e6f5829e45a442609ab49068c14c6fc3b323ce1e4c7acc870e445",
+      "guide_sections": [
+        "8. Workflow actions — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "a38c435397c91ef01a5f5feed18e54cf6a70a1f0d6771aa5631b7c902e6cc2d4",
+      "guide_sections": [
+        "8. Workflow actions — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "fc9265dd932bdf3f47bf432c4b4af8732382950f13fdd57aaee7b24e004fd8bd",
+      "guide_sections": [
+        "9. Data models — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "fd1e7f3d618e1d67467a244fc55600fc2a7ae0815d514fc322eb1953fac430f2",
+      "guide_sections": [
+        "9. Data models — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "980630ebe7c4138958c34b635c00ddb2be0dc08d9ec26fa4dcf109c5875db3aa",
+      "guide_sections": [
+        "9. Data models — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "23520ce0da9289e9accfd74389ae46090bfb3cc84ee56c0bb79a00015dff7945",
+      "guide_sections": [
+        "10. Common Information Model Add-On — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "cf1139f7bbc68cbdf8f1a4435abfe0675f0ae97f14a83f6e5fb82583bc0b2bc2",
+      "guide_sections": [
+        "10. Common Information Model Add-On — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "2da507d75ad6876dca8e8be9b59793448796b79657908d91113095886cb1d74e",
+      "guide_sections": [
+        "10. Common Information Model Add-On — 10%",
+        "Hands-on labs",
+        "Answer key",
+        "Lab evidence and next-pass fixes"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [
+      "SPLUNK-CORE-POWER-USER"
+    ],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "SPLUNK-CORE-POWER-USER",
+        "title": "Splunk Core Certified Power User",
+        "url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-power-user.pdf",
+        "guide_path": "guides/SPLUNK-CORE-POWER-USER-splunk-core-certified-power-user.md",
+        "snapshot_path": "data\\objective-snapshots\\splunk-core-power-user-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\splunk-core-power-user-official-status.json",
+        "status": "error",
+        "changed": false,
+        "error": "URLError: <urlopen error [Errno 11001] getaddrinfo failed>"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 19,
+    "reachable": 3,
+    "access_blocked": 2,
+    "missing_or_error": 14
+  },
+  "source_fetches": [
+    {
+      "id": "youtube-splunk-how-to",
+      "url": "https://www.youtube.com/@SplunkHowTo",
+      "checked_at": "2026-09-30T11:51:19.037124+00:00",
+      "health": {
+        "id": "youtube-splunk-how-to",
+        "url": "https://www.youtube.com/@SplunkHowTo",
+        "checked_at": "2026-09-30T11:51:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@SplunkHowTo",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Splunk How-To",
+        "canonical_url": "https://www.youtube.com/channel/UCjwOFZzLPnji1EstaVyyvAw",
+        "duration_signals": [],
+        "signal_fingerprint": "3eea919a18a662adc3381e53ccbc83bd46dfdecd91593289c24400ca0860feab",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@SplunkHowTo",
+      "sha256": "452a70bd4e44fa82921aa6638d2229a700d9d13603fe9a3959237ab622a7819d",
+      "text_characters": 176
+    },
+    {
+      "id": "splunk-platform-curated-learning",
+      "url": "https://www.splunk.com/en_us/pdfs/training/platform-curated-learning.pdf",
+      "checked_at": "2026-09-30T11:51:19.037696+00:00",
+      "health": {
+        "id": "splunk-platform-curated-learning",
+        "url": "https://www.splunk.com/en_us/pdfs/training/platform-curated-learning.pdf",
+        "checked_at": "2026-09-30T11:51:19+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://www.splunk.com/en_us/pdfs/training/platform-curated-learning.pdf",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+      }
+    },
+    {
+      "id": "splunk-search-manual-get-started",
+      "url": "https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/search-overview/get-started-with-search",
+      "checked_at": "2026-09-30T11:51:19.038036+00:00",
+      "health": {
+        "id": "splunk-search-manual-get-started",
+        "url": "https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/search-overview/get-started-with-search",
+        "checked_at": "2026-09-30T11:51:19+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/search-overview/get-started-with-search",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+      }
+    },
+    {
+      "id": "splunk-lantern",
+      "url": "https://lantern.splunk.com/",
+      "checked_at": "2026-09-30T11:51:19.169615+00:00",
+      "health": {
+        "id": "splunk-lantern",
+        "url": "https://lantern.splunk.com/",
+        "checked_at": "2026-09-30T11:51:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://lantern.splunk.com/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Home",
+        "canonical_url": "https://lantern.splunk.com",
+        "duration_signals": [],
+        "signal_fingerprint": "90d45399518eb6c2e208180a90c97503f5ac1a8fa0bec99adb49ba2c19beecb9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://lantern.splunk.com/",
+      "sha256": "7d393c648de6ce50b78a1a222df4dc0b11eaeff03d43b9f44e0b2d11acdeee6c",
+      "text_characters": 16880
+    },
+    {
+      "id": "splunk-core-power-user-certification",
+      "url": "https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-power-user.html",
+      "checked_at": "2026-09-30T11:51:19.280936+00:00",
+      "health": {
+        "id": "splunk-core-power-user-certification",
+        "url": "https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-power-user.html",
+        "checked_at": "2026-09-30T11:51:19+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-power-user.html",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+      }
+    },
+    {
+      "id": "splunk-core-power-user-blueprint",
+      "url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-power-user.pdf",
+      "checked_at": "2026-09-30T11:51:19.281917+00:00",
+      "health": {
+        "id": "splunk-core-power-user-blueprint",
+        "url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-power-user.pdf",
+        "checked_at": "2026-09-30T11:51:19+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-power-user.pdf",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+      }
+    },
+    {
+      "id": "splunk-field-extractor",
+      "url": "https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.4/use-the-field-extractor-in-splunk-web/build-field-extractions-with-the-field-extractor",
+      "checked_at": "2026-09-30T11:51:19.282665+00:00",
+      "health": {
+        "id": "splunk-field-extractor",
+        "url": "https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.4/use-the-field-extractor-in-splunk-web/build-field-extractions-with-the-field-extractor",
+        "checked_at": "2026-09-30T11:51:19+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.4/use-the-field-extractor-in-splunk-web/build-field-extractions-with-the-field-extractor",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+      }
+    },
+    {
+      "id": "splunk-cim-overview",
+      "url": "https://help.splunk.com/en/splunk-cloud-platform/common-information-model/5.3/introduction/overview-of-the-splunk-common-information-model",
+      "checked_at": "2026-09-30T11:51:19.283147+00:00",
+      "health": {
+        "id": "splunk-cim-overview",
+        "url": "https://help.splunk.com/en/splunk-cloud-platform/common-information-model/5.3/introduction/overview-of-the-splunk-common-information-model",
+        "checked_at": "2026-09-30T11:51:19+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://help.splunk.com/en/splunk-cloud-platform/common-information-model/5.3/introduction/overview-of-the-splunk-common-information-model",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+      }
+    },
+    {
+      "id": "splunk-design-data-models",
+      "url": "https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.4/build-a-data-model/design-data-models",
+      "checked_at": "2026-09-30T11:51:19.283558+00:00",
+      "health": {
+        "id": "splunk-design-data-models",
+        "url": "https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.4/build-a-data-model/design-data-models",
+        "checked_at": "2026-09-30T11:51:19+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.4/build-a-data-model/design-data-models",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+      }
+    },
+    {
+      "id": "splunk-knowledge-management-manual",
+      "url": "https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.4",
+      "checked_at": "2026-09-30T11:51:19.283967+00:00",
+      "health": {
+        "id": "splunk-knowledge-management-manual",
+        "url": "https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.4",
+        "checked_at": "2026-09-30T11:51:19+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.4",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+      }
+    },
+    {
+      "id": "splunk-tags-aliases",
+      "url": "https://help.splunk.com/en/splunk-cloud-platform/manage-knowledge-objects/knowledge-management-manual/10.4.2604/tags/about-tags-and-aliases",
+      "checked_at": "2026-09-30T11:51:19.284382+00:00",
+      "health": {
+        "id": "splunk-tags-aliases",
+        "url": "https://help.splunk.com/en/splunk-cloud-platform/manage-knowledge-objects/knowledge-management-manual/10.4.2604/tags/about-tags-and-aliases",
+        "checked_at": "2026-09-30T11:51:19+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://help.splunk.com/en/splunk-cloud-platform/manage-knowledge-objects/knowledge-management-manual/10.4.2604/tags/about-tags-and-aliases",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+      }
+    },
+    {
+      "id": "oreilly-search-splunk",
+      "url": "https://www.oreilly.com/search/?q=Splunk",
+      "checked_at": "2026-09-30T11:51:19.284817+00:00",
+      "health": {
+        "id": "oreilly-search-splunk",
+        "url": "https://www.oreilly.com/search/?q=Splunk",
+        "checked_at": "2026-09-30T11:51:19+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/search/?q=Splunk",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "pluralsight-search-splunk",
+      "url": "https://www.pluralsight.com/search?q=Splunk",
+      "checked_at": "2026-09-30T11:51:19.978548+00:00",
+      "health": {
+        "id": "pluralsight-search-splunk",
+        "url": "https://www.pluralsight.com/search?q=Splunk",
+        "checked_at": "2026-09-30T11:51:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/search?q=Splunk",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Search",
+        "canonical_url": "https://www.pluralsight.com/search",
+        "duration_signals": [],
+        "signal_fingerprint": "6301fe7cb9da87ac7ea3c5078f7bc59ab28f44aa1c06ff5bbd40d8bca077585d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/search?q=Splunk",
+      "sha256": "df20ec4c959616eba59fe1c5d3faf3c256e68c187d4ca24e047239fa2e0ed079",
+      "text_characters": 3919
+    },
+    {
+      "id": "udemy-search-splunk-power-user",
+      "url": "https://www.udemy.com/courses/search/?q=Splunk%20Core%20Certified%20Power%20User",
+      "checked_at": "2026-09-30T11:51:25.270006+00:00",
+      "health": {
+        "id": "udemy-search-splunk-power-user",
+        "url": "https://www.udemy.com/courses/search/?q=Splunk%20Core%20Certified%20Power%20User",
+        "checked_at": "2026-09-30T11:51:25+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/courses/search/?q=Splunk%20Core%20Certified%20Power%20User",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "splunk-fillnull-10-2",
+      "url": "https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.2/search-commands/fillnull",
+      "checked_at": "2026-09-30T12:02:40.870816+00:00",
+      "health": {
+        "id": "splunk-fillnull-10-2",
+        "url": "https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.2/search-commands/fillnull",
+        "checked_at": "2026-09-30T12:02:40+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.2/search-commands/fillnull",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+      }
+    },
+    {
+      "id": "splunk-transaction-10-4",
+      "url": "https://help.splunk.com/en/splunk-enterprise/search/spl-search-reference/10.4/search-commands/transaction",
+      "checked_at": "2026-09-30T12:02:40.871476+00:00",
+      "health": {
+        "id": "splunk-transaction-10-4",
+        "url": "https://help.splunk.com/en/splunk-enterprise/search/spl-search-reference/10.4/search-commands/transaction",
+        "checked_at": "2026-09-30T12:02:40+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://help.splunk.com/en/splunk-enterprise/search/spl-search-reference/10.4/search-commands/transaction",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+      }
+    },
+    {
+      "id": "splunk-predicates-10-4",
+      "url": "https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/expressions-and-predicates/predicate-expressions",
+      "checked_at": "2026-09-30T12:02:40.871803+00:00",
+      "health": {
+        "id": "splunk-predicates-10-4",
+        "url": "https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/expressions-and-predicates/predicate-expressions",
+        "checked_at": "2026-09-30T12:02:40+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/expressions-and-predicates/predicate-expressions",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+      }
+    },
+    {
+      "id": "splunk-calculated-fields-10-2",
+      "url": "https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.2/calculated-fields/about-calculated-fields",
+      "checked_at": "2026-09-30T12:02:41.146953+00:00",
+      "health": {
+        "id": "splunk-calculated-fields-10-2",
+        "url": "https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.2/calculated-fields/about-calculated-fields",
+        "checked_at": "2026-09-30T12:02:41+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.2/calculated-fields/about-calculated-fields",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+      }
+    },
+    {
+      "id": "splunk-props-10-4-3",
+      "url": "https://help.splunk.com/en/data-management/splunk-enterprise-admin-manual/10.4/configuration-file-reference/10.4.3-configuration-file-reference/props.conf",
+      "checked_at": "2026-09-30T12:02:41.147135+00:00",
+      "health": {
+        "id": "splunk-props-10-4-3",
+        "url": "https://help.splunk.com/en/data-management/splunk-enterprise-admin-manual/10.4/configuration-file-reference/10.4.3-configuration-file-reference/props.conf",
+        "checked_at": "2026-09-30T12:02:41+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://help.splunk.com/en/data-management/splunk-enterprise-admin-manual/10.4/configuration-file-reference/10.4.3-configuration-file-reference/props.conf",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+      }
+    }
+  ],
+  "added_source_ids": [
+    "splunk-fillnull-10-2",
+    "splunk-transaction-10-4",
+    "splunk-predicates-10-4",
+    "splunk-calculated-fields-10-2",
+    "splunk-props-10-4-3"
+  ],
+  "findings": [
+    {
+      "id": "splunkcorepoweruser-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "All-null rule needed field-list scope",
+      "url": "https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.2/search-commands/fillnull",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SPLUNK-CORE-POWER-USER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Argument and explicit-field examples create missing named fields; all-field examples cannot fill an all-null field.",
+      "recommendation": "Separate the forms and remove the universal eval workaround. Keep actual runtime behavior untested.",
+      "disposition": "applied",
+      "source_id": "splunk-fillnull-10-2",
+      "resolution": "Separate the forms and remove the universal eval workaround. Keep actual runtime behavior untested."
+    },
+    {
+      "id": "splunkcorepoweruser-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Search and where group Boolean operators differently",
+      "url": "https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/expressions-and-predicates/predicate-expressions",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SPLUNK-CORE-POWER-USER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Search prioritizes OR; eval/where prioritize AND.",
+      "recommendation": "Add parenthesized reasoning and an original urgent-event counterexample.",
+      "disposition": "applied",
+      "source_id": "splunk-predicates-10-4",
+      "resolution": "Add parenthesized reasoning and an original urgent-event counterexample."
+    },
+    {
+      "id": "splunkcorepoweruser-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Alias destination preservation was not guaranteed",
+      "url": "https://help.splunk.com/en/data-management/splunk-enterprise-admin-manual/10.4/configuration-file-reference/10.4.3-configuration-file-reference/props.conf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SPLUNK-CORE-POWER-USER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "AS can overwrite/remove a destination despite preserving the original source field.",
+      "recommendation": "Explain ASNEW and collision/missing-source tests.",
+      "disposition": "applied",
+      "source_id": "splunk-props-10-4-3",
+      "resolution": "Explain ASNEW and collision/missing-source tests."
+    },
+    {
+      "id": "splunkcorepoweruser-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Calculated fields cannot be chained sequentially",
+      "url": "https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.2/calculated-fields/about-calculated-fields",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SPLUNK-CORE-POWER-USER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Stanza EVAL fields are independent and precede lookups.",
+      "recommendation": "Add a hypothetical unit-conversion dependency example.",
+      "disposition": "applied",
+      "source_id": "splunk-calculated-fields-10-2",
+      "resolution": "Add a hypothetical unit-conversion dependency example."
+    },
+    {
+      "id": "splunkcorepoweruser-deep-5",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Search shell did not establish course coverage",
+      "url": "https://www.pluralsight.com/search?q=Splunk",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SPLUNK-CORE-POWER-USER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Fresh3919-character response contains navigation and an unrendered template,not course results.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "splunkcorepoweruser-deep-6",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Runtime and unavailable UI/CIM references remain unverified",
+      "url": "https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.4",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SPLUNK-CORE-POWER-USER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "No Splunk runtime/approvedendpoint; old UI/CIM bodies failed direct retrieval.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "splunk-core-power-user-certification",
+      "review": "Complete indexed credential and blueprint checked; no change found within that scope. No unseen release-feed claim."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "fully_completed_proposed_labs": 0,
+    "splunk_commands_executed": 0,
+    "paper_examples": [
+      "Boolean precedence",
+      "reused session identifier",
+      "calculated field dependency"
+    ],
+    "missing_tools": [
+      "Splunk runtime",
+      "Approved endpoint"
+    ]
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "19 direct receipts:3ok14DNSerrors2blocked. Indexed technical reading is separate from direct health; existing UI/CIM bodies not freshly read. Historical objective snapshot retained; monitor DNSerror and no image-based PDF review.",
+    "All8Splunk labs unexecuted. Logical/numeric examples are paper predictions,not SPL parsing,configuration,extraction,macros,workflow actions,Pivot,CIM,performance or access-control validation.",
+    "Earlier September30 curated2024PDF reading is dated reused evidence; parsed Lantern/YouTube equality recorded separately from differing rawHTMLhashes. Pluralsight search shell and blocked marketplaces establish no specific course completion or current availability.",
+    "No installations,services,accounts,uploads,configuration/runtime/authentication/permission changes,purchases or external workflow actions. Independenthumancontent/accessibilityreview and remaining source/runtime checks need a later pass."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 188,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Repository tests/build/site checks only; no Splunk command, configuration, UI, macro, workflow action, Pivot or CIM lab executed.",
+    "unit_test_elapsed_seconds": 35.553,
+    "strict_site_build_elapsed_seconds": 28.97,
+    "learning_catalog_consistency": "passed"
+  },
+  "source_reading_boundaries": {
+    "youtube-splunk-how-to": "New direct176-character parsed shell equals earlier CoreUser reading; rawHTMLhash differs. No playlist/video/course duration reviewed.",
+    "splunk-platform-curated-learning": "Direct DNS error. Reused earlier September30 complete119-line indexed2024PDF reading from CoreUser review as dated evidence,not a new fresh body retrieval. Current access/prices and course completion unverified; guidehourranges authorbudgets.",
+    "splunk-search-manual-get-started": "Direct retrieval failed DNS. Existing versioned reference retained, but its body was not freshly read. No UI, knowledge-object, CIM or runtime validation; next-pass verification remains explicit.",
+    "splunk-lantern": "New direct retrieval parsed text exactly equals CoreUser16880-character landing,hash recorded separately from differing rawHTMLhash. Earlier complete parsed reading reused; linked articles not reviewed.",
+    "splunk-core-power-user-certification": "Complete indexed227-line credential page read:entry level,65questions60minutes130USD/PearsonVUE/no prerequisites. No account, booking, purchase or unseen release-feed check.",
+    "splunk-core-power-user-blueprint": "Complete indexed three-page69-line parsed blueprint read:32objectives2/3/6/2/2/3/4/4/3/3,65questions60minutesincluding3agreement,no prerequisite. Page-boundary13.5/29.2 are extraction artifacts,not extra objectives. No visual PDF claim. HistoricalSeptember2 snapshot retained after direct/monitor DNS errors; no new successful hash.",
+    "splunk-field-extractor": "Direct retrieval failed DNS. Existing versioned reference retained, but its body was not freshly read. No UI, knowledge-object, CIM or runtime validation; next-pass verification remains explicit.",
+    "splunk-cim-overview": "Direct retrieval failed DNS. Existing versioned reference retained, but its body was not freshly read. No UI, knowledge-object, CIM or runtime validation; next-pass verification remains explicit.",
+    "splunk-design-data-models": "Direct retrieval failed DNS. Existing versioned reference retained, but its body was not freshly read. No UI, knowledge-object, CIM or runtime validation; next-pass verification remains explicit.",
+    "splunk-knowledge-management-manual": "Direct retrieval failed DNS. Existing versioned reference retained, but its body was not freshly read. No UI, knowledge-object, CIM or runtime validation; next-pass verification remains explicit.",
+    "splunk-tags-aliases": "Direct retrieval failed DNS. Existing versioned reference retained, but its body was not freshly read. No UI, knowledge-object, CIM or runtime validation; next-pass verification remains explicit.",
+    "oreilly-search-splunk": "Direct blocked; marketplace search remains discovery only. No specific book/course, edition, currentavailability, duration or paid interior reviewed.",
+    "pluralsight-search-splunk": "Complete fresh3919-character response read: navigation, generic marketing and unrendered template,not actual Splunk course results. No course, entitlement or paid content reviewed.",
+    "udemy-search-splunk-power-user": "Direct blocked; marketplace search is not a reviewed specific course. No instructor, update, syllabus, entitlement, video or protected questions reviewed.",
+    "splunk-fillnull-10-2": "Complete indexed substantive500–678 command body/examples read after direct DNSerror. Explicitfield-list creation versus all-fields all-null schema examples distinguished; generic null restriction not silently applied to both forms. No SPL execution or copied publisher exercises.",
+    "splunk-transaction-10-4": "Selected indexed500–699 read after direct DNSerror:syntax,descendingorder,maxspan/maxpause,starts/ends,closure/eviction,multivalue settings. Later examples unread. Original reused-session paper arithmetic,not engine/capacity proof.",
+    "splunk-predicates-10-4": "Complete indexed substantive499–690 read after direct DNSerror: search OR-before-AND versus eval/where AND-before-OR; parentheses,comparisons/IN. Original urgent nonproduction counterexample is logicalprediction only; no SPL2 substitution.",
+    "splunk-calculated-fields-10-2": "Selected indexed499–565 read after direct DNSerror: independentcalculatedfields,alias-before/lookup-after,override/coalesce andaliasedsource-scope restriction. Remainingtail unread. Originalraw_ms2400 example is hypothetical,not deployed configuration.",
+    "splunk-props-10-4-3": "Selected indexed1886–1983 FIELDALIAS/EVAL/LOOKUPcontract read; remainder2527-linefile unreviewed. AS destinationoverride/removal versusASNEWpreservation,one-sourcealias/explicitcoalesceprecedence andindependentEVAL verified from source. No file written to Splunk or runtimechange."
+  },
+  "reused_parsed_text": {
+    "splunk-lantern": {
+      "equal": true,
+      "parsed_text_sha256": "9c2fde7b5b970648bb32b6915dc8b828d667aad78655b035492d4a93644d0fd9"
+    },
+    "youtube-splunk-how-to": {
+      "equal": true,
+      "parsed_text_sha256": "69bd98b3f74d8c219606f7d66933863fbb114c016eb7686c26ccbebcd9c32904"
+    }
+  },
+  "shared_source_health_updates": [
+    {
+      "exam_code": "SPLUNK-ADVANCED-POWER-USER",
+      "before": {
+        "unique_external_links": 13,
+        "reachable": 5,
+        "access_blocked": 6,
+        "missing_or_error": 2
+      },
+      "after": {
+        "unique_external_links": 13,
+        "reachable": 5,
+        "access_blocked": 5,
+        "missing_or_error": 3
+      }
+    }
+  ],
+  "manual_objective_confirmation": {
+    "checked_on": "2026-09-30",
+    "objectives": 32,
+    "per_section": [
+      2,
+      3,
+      6,
+      2,
+      2,
+      3,
+      4,
+      4,
+      3,
+      3
+    ],
+    "method": "Complete indexed three-page parsed blueprint and credential read; no image inspection. Historical September2 normalized snapshot retained after direct/monitor DNS errors.",
+    "groups": [
+      {
+        "title": "Using Transforming Commands for Visualizations — 5%",
+        "objectives": [
+          "1.1 Create categorical aggregations with chart.",
+          "1.2 Create time-series aggregations with timechart."
+        ]
+      },
+      {
+        "title": "Filtering and Formatting Results — 10%",
+        "objectives": [
+          "2.1 Create and transform fields with eval.",
+          "2.2 Filter results with search and where.",
+          "2.3 Replace null values with fillnull."
+        ]
+      },
+      {
+        "title": "Correlating Events — 15%",
+        "objectives": [
+          "3.1 Identify event groups that represent transactions.",
+          "3.2 Group transaction events by fields.",
+          "3.3 Group transaction events by fields and time constraints.",
+          "3.4 Retrieve and construct transactions in searches.",
+          "3.5 Report on transaction results.",
+          "3.6 Decide when transaction or stats is the better correlation approach."
+        ]
+      },
+      {
+        "title": "Creating and Managing Fields — 10%",
+        "objectives": [
+          "4.1 Use the Field Extractor to create regex-based fields.",
+          "4.2 Use the Field Extractor to create delimiter-based fields."
+        ]
+      },
+      {
+        "title": "Creating Field Aliases and Calculated Fields — 10%",
+        "objectives": [
+          "5.1 Explain, create, and use field aliases.",
+          "5.2 Explain, create, and use calculated fields."
+        ]
+      },
+      {
+        "title": "Creating Tags and Event Types — 10%",
+        "objectives": [
+          "6.1 Create and search tags.",
+          "6.2 Explain event types and appropriate uses.",
+          "6.3 Create an event type."
+        ]
+      },
+      {
+        "title": "Creating and Using Macros — 10%",
+        "objectives": [
+          "7.1 Explain search macros and their purpose.",
+          "7.2 Create and invoke a basic macro.",
+          "7.3 Define macro arguments and corresponding variables.",
+          "7.4 Invoke a macro with arguments."
+        ]
+      },
+      {
+        "title": "Creating and Using Workflow Actions — 10%",
+        "objectives": [
+          "8.1 Explain GET, POST, and Search workflow actions.",
+          "8.2 Create a GET workflow action.",
+          "8.3 Create a POST workflow action.",
+          "8.4 Create a Search workflow action."
+        ]
+      },
+      {
+        "title": "Creating Data Models — 10%",
+        "objectives": [
+          "9.1 Explain how data models support Pivot.",
+          "9.2 Identify data model attributes.",
+          "9.3 Create a data model."
+        ]
+      },
+      {
+        "title": "Using the Common Information Model Add-On — 10%",
+        "objectives": [
+          "10.1 Explain Splunk's Common Information Model.",
+          "10.2 Identify knowledge objects delivered with the CIM Add-on.",
+          "10.3 Normalize source data to CIM fields and tags."
+        ]
+      }
+    ]
+  },
+  "review_provenance": "Same-context AI best-effort review. Full guide and40answers read,selected references only. All8Splunklabs unexecuted. Numeric/logicalexamples are paper predictions,not engine observations or deployed settings. No human approval.",
+  "development_corrections": [
+    "Repository validation identified one stale shared-source counter in Advanced Power User; its count and provenance note were updated without advancing content review.",
+    "An initially overbroad private helper also refreshed53unrelated historical counters. All53were restored exactly from prior committed records before final site generation. Helper now requires explicit affected exam codes."
+  ]
+}
