@@ -2,6 +2,10 @@
 
 These original exercises turn selected guide examples into small, repeatable experiments. They use Python 3.10 or later and the standard library, with synthetic data and no service credentials. Run commands from a clone of this repository. On Windows, an existing project environment can use `.venv\Scripts\python.exe` in place of `python`.
 
+**Status:** These are AI-generated, best-effort teaching labs. The local results
+below test only the synthetic code and fixtures. None of the proposed workflows
+has been tested in a real vendor service or independently reviewed.
+
 | Guide | Runnable exercise | Local result, September 28, 2026 | Service / independent review |
 |---|---|---|---|
 | AB-100 | [Service-case release gate](labs/ab-100.md) | 13 tests passed; starter blocked as expected | Not run / pending |

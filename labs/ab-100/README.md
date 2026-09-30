@@ -1,5 +1,9 @@
 # AB-100 service-case workshop
 
+This is an AI-generated, best-effort teaching lab. Its synthetic Python checks
+passed locally, but the proposed assistant workflow has not been tested in a real
+service or tenant or independently reviewed.
+
 Start with the [lab instructions](../../docs/labs/ab-100.md). Run from the repository root:
 
 ```console
