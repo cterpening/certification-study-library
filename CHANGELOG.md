@@ -1,5 +1,7 @@
 # Changelog
 
+- September 30, 2026: [PCES-30-01 deep review](docs/research/2026-09-30-pces-30-01-deep-review.md): Mapped 45 detailed objectives; three exact original files execute 30 methods and 21 observations per mode, including owned loopback, context encoding, pseudonymized reports, PDF metadata and byte-restore trust limits. Removed the wrong book recommendation; missing tools, broader labs and human review remain explicit.
+
 - September 30, 2026: [PCAT-31-01 deep review](docs/research/2026-09-30-pcat-31-01-deep-review.md): Mapped 34 objectives; exact 25-method/31-probe multi-module workbook in both Python modes; actual fixture/marker/order, coverage-boundary and red–green–refactor evidence; corrected learning entitlements and retained publisher, integration and human-review limits.
 
 - September 30, 2026: [PCET-30-01 deep review](docs/research/2026-09-30-pcet-30-01-deep-review.md): Mapped 22 objectives; exact original 25-method/55-probe workbook in normal and optimized modes; measured coverage/mutant and pdb evidence; corrected course entitlements and double guidance; preserved named-tool, publisher and human-review blockers.

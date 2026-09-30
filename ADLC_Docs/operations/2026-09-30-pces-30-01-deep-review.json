@@ -1,0 +1,2571 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-30",
+  "exam_code": "PCES-30-01",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/PCES-30-01-python-certified-entry-level-security-specialist.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "768b4eae5cf84f6a05d848106a14b46c4b4c4ad2a148841c924179316441e508",
+  "guide_after_sha256": "2ec345832e359c759a694f45c5b3e85490284bc35f011e804c6cfb51c14404ee",
+  "prior_records": {
+    "exam": {
+      "code": "PCES-30-01",
+      "level": "beginner",
+      "vendor_id": "python-institute",
+      "title": "PCES Certified Entry-Level Security Specialist with Python",
+      "status": "active",
+      "study_guide_url": "https://pythoninstitute.org/pces-exam-syllabus",
+      "guide_path": "guides/PCES-30-01-python-certified-entry-level-security-specialist.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite is published; PCEP-equivalent Python is recommended. Practice only on authorized local targets while covering security and risk fundamentals, hardening, network and identity controls, cloud/remote basics, Python monitoring and defensive automation, validation, secrets, cryptography, SSH and integrity. The page still describes practice tests as coming Q3/Q4 2026 and PCAS as coming Q4 2026; verify availability live."
+    },
+    "review": {
+      "id": "pces-30-01-2026-09-02-source-validation",
+      "exam_code": "PCES-30-01",
+      "guide_path": "guides/PCES-30-01-python-certified-entry-level-security-specialist.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/pces-30-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "20acb805135538b41982013c936788e9324272472a840145161037a56ef6f38f",
+      "objective_coverage": [
+        {
+          "objective_group": "Security Essentials (22%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated lab"
+          ]
+        },
+        {
+          "objective_group": "IT Systems Security (27%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated lab"
+          ]
+        },
+        {
+          "objective_group": "Python for Security Operations (29%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated lab"
+          ]
+        },
+        {
+          "objective_group": "Secure Development and Implementation in Python (22%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated lab"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 10,
+        "reachable": 9,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All four PCES-30-01 blocks are mapped through security and risk concepts, systems hardening and access controls, authorized Python defensive operations, reporting and automation, secure coding, secrets, cryptography, SSH and integrity verification. The integrated lab stays within local or expressly authorized targets. The page's still-planned Q3/Q4 2026 practice test and announced PCAS path are explicit. O'Reilly is automation-blocked, not missing. No recalled/live item, answer dump or copied course question is used."
+    },
+    "sources": [
+      {
+        "id": "python-3-documentation",
+        "title": "Python 3 Documentation",
+        "url": "https://docs.python.org/3/",
+        "publisher": "Python Software Foundation",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "PCAP-31-03",
+          "PCPP-32-101",
+          "PCED-30-02",
+          "PCAD-31-02",
+          "PCES-30-01",
+          "PANW-XSOAR-ENGINEER"
+        ],
+        "notes": "Canonical documentation hub for current stable Python 3; newer features are not automatically part of a dated exam syllabus. September 29 PCAP-31-03 deep review: Complete 3232-character documentation index read: unversioned landing is 3.14.7 and exposes other versions. This is release/documentation context, not evidence of an exam-required version or an audit of all linked change logs. Existing local CPython 3.13.14 was used without installation. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution. September 29 PCPP-32-101 deep review: Complete current public index read:3.14.7 documentation, with3.13 separately listed. Navigation/index evidence only, not all linked manuals. Executed local interpreter3.13.14; selected3.13 pages identify3.13.15. No runtime change or exam-specific patch requirement. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 29 PCED-30-02 deep review: Complete current index read, identifying3.14.7 and listing3.13 separately. Navigation only, not all linked manuals. Selected3.13 references identify3.13.15; existing execution interpreter3.13.14. No inferred exam patch requirement or runtime change. See docs/research/2026-09-29-pced-30-02-deep-review.md No live infrastructure execution. September 29 PCAD-31-02 deep review: Complete current short index read in preceding PCED review and reused here with matching fresh body: Python 3.14.7, links to 3.13. Navigation only. Selected pinned references identify 3.13.15; actual interpreter 3.13.14. No patch requirement inferred or runtime updated. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "pces-30-01-syllabus",
+        "title": "PCES-30-01 Exam Syllabus",
+        "url": "https://pythoninstitute.org/pces-exam-syllabus",
+        "publisher": "OpenEDG Python Institute",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCES-30-01"
+        ],
+        "notes": "Canonical active four-block syllabus aligned to PCES-30-01 and last updated August 21, 2025."
+      },
+      {
+        "id": "pces-certification-page",
+        "title": "PCES Certified Entry-Level Security Specialist with Python",
+        "url": "https://pythoninstitute.org/pces",
+        "publisher": "OpenEDG Python Institute",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCES-30-01"
+        ],
+        "notes": "Current exam logistics, validity, price, retake policy, planned Q3/Q4 2026 practice test and announced PCAS path."
+      },
+      {
+        "id": "owasp-cheat-sheet-series",
+        "title": "OWASP Cheat Sheet Series",
+        "url": "https://cheatsheetseries.owasp.org/",
+        "publisher": "OWASP Foundation",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCES-30-01"
+        ],
+        "notes": "Community-maintained defensive guidance for secure design and implementation; select beginner-relevant sheets."
+      },
+      {
+        "id": "cryptography-documentation",
+        "title": "cryptography Documentation",
+        "url": "https://cryptography.io/en/latest/",
+        "publisher": "Python Cryptographic Authority",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCES-30-01"
+        ],
+        "notes": "Primary documentation for the Python cryptography library named by the blueprint."
+      },
+      {
+        "id": "paramiko-documentation",
+        "title": "Paramiko Documentation",
+        "url": "https://docs.paramiko.org/",
+        "publisher": "Paramiko project",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCES-30-01"
+        ],
+        "notes": "Primary documentation for the SSH library named by the blueprint."
+      },
+      {
+        "id": "psutil-documentation",
+        "title": "psutil Documentation",
+        "url": "https://psutil.readthedocs.io/en/latest/",
+        "publisher": "psutil project",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCES-30-01"
+        ],
+        "notes": "Primary documentation for local process and system monitoring named by the blueprint."
+      },
+      {
+        "id": "overthewire-bandit",
+        "title": "OverTheWire Bandit",
+        "url": "https://overthewire.org/wargames/bandit/",
+        "publisher": "OverTheWire",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCES-30-01"
+        ],
+        "notes": "Authorized fundamentals lab environment; keep practice within the provided targets and rules."
+      },
+      {
+        "id": "portswigger-web-security-academy",
+        "title": "Web Security Academy",
+        "url": "https://portswigger.net/web-security",
+        "publisher": "PortSwigger",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCES-30-01"
+        ],
+        "notes": "Free authorized browser security labs; broader than PCES, so choose foundational defensive topics."
+      },
+      {
+        "id": "oreilly-practical-python-security",
+        "title": "Practical Python Security",
+        "url": "https://www.oreilly.com/library/view/practical-python-security/9781098142155/",
+        "publisher": "O'Reilly",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCES-30-01"
+        ],
+        "notes": "Broader security and Python book. Select 15–25 hours matching the active blueprint and use only authorized labs."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "25576ee3a027e1b230aed682c1a530947fcf45ef78b3aa27e3c045354b19420a",
+      "guide_sections": [
+        "1. Security essentials — 22%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "02acef4420b461f892068d982e98acc2080075ca52343cc658576f1633e855ec",
+      "guide_sections": [
+        "1. Security essentials — 22%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "080f12d1ab9405d7acf80cc71fa3a3e93b380b6670699800d7130af7f9a89f82",
+      "guide_sections": [
+        "1. Security essentials — 22%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "ae2242105e5621368133e64e6a8e945ff5df1ef2f533bfe2d37becdf872715d2",
+      "guide_sections": [
+        "1. Security essentials — 22%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "1b2c1b30a1f914fca9e4451863e201a9dfdf435f5513c9c1fb6de7a3e27e7cef",
+      "guide_sections": [
+        "1. Security essentials — 22%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "b90c48107ebdb2df777693f5f5c4d5897a752eb94828c2836861e407eaf91470",
+      "guide_sections": [
+        "1. Security essentials — 22%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "f9fef07cd26dc31c879c4fb5d78869c4e7408e342ae7263bca51d015ea80f72e",
+      "guide_sections": [
+        "1. Security essentials — 22%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "f451987709143a1b06834eecf1a041ed9807fdde4051027f5a0086582e00f7bf",
+      "guide_sections": [
+        "1. Security essentials — 22%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "4fad4854738242ca75c31fcb6c2d46959e758fc4eac19b185d175734c0df560f",
+      "guide_sections": [
+        "1. Security essentials — 22%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "b35fdb7dc4c14aff7a75637c83838a4152de24a4ad6a2b4731a6cc7f40a9aaaf",
+      "guide_sections": [
+        "1. Security essentials — 22%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "31aca3f4aced9f4195f32e8bc9f47ec5f68c4f2ab199eb17b76349a3c4787fa6",
+      "guide_sections": [
+        "2. IT systems security — 27%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "d39b462baabd96de50e6a645e05a2d681b9726313dd0c3ee3bf747c738f27508",
+      "guide_sections": [
+        "2. IT systems security — 27%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "454abaf354d73cbc53b94d4182f1f7a9744da1c926180c1f156e8455b87a813d",
+      "guide_sections": [
+        "2. IT systems security — 27%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "3c5d14b5c4be6397bf52815be38ba35899bc8715fffc19fe63793735ad720025",
+      "guide_sections": [
+        "2. IT systems security — 27%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "7fc31255daea6515f7baeda51198d3a75a92e4eccd8b50a579e6beebc692e5dc",
+      "guide_sections": [
+        "2. IT systems security — 27%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "9ec78256a8e69c05db302a4d57ec255240681f5ba8d0751034a192d38dfec258",
+      "guide_sections": [
+        "2. IT systems security — 27%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "da26365e44b3b6e1a4aba0fcc9ea15a8f445accde17ec4087042bb14f03ec1db",
+      "guide_sections": [
+        "2. IT systems security — 27%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "91ef5fd8f556864b35119366b6b267fc6e06628da5706c2d1f1b452ce3ec9543",
+      "guide_sections": [
+        "2. IT systems security — 27%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "9865be1228e9a57b9be17d58d81c9a65812bd4d13c13ebd45a40c387cb09496f",
+      "guide_sections": [
+        "2. IT systems security — 27%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 10,
+      "objective_sha256": "1c11b2906d004389370d8092135378d0bff844154e570627af41e70ad1f8866f",
+      "guide_sections": [
+        "2. IT systems security — 27%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 11,
+      "objective_sha256": "ad2550bfbad21398d83215bdf07dfe66c1b3a4dc7ab322fe35640d57ea12e82a",
+      "guide_sections": [
+        "2. IT systems security — 27%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 12,
+      "objective_sha256": "3a534b6835e9466a531a22c12f21c16a8122ae77d009c2e8bdda16e8af939777",
+      "guide_sections": [
+        "2. IT systems security — 27%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "57004973c9561c5399e69a4be57f1909251291047d19d92344c44d3e1aebfc81",
+      "guide_sections": [
+        "3. Python for security operations — 29%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "da200959fe9576123863869331c1e6a125879e2975fcd95b4afa319075006594",
+      "guide_sections": [
+        "3. Python for security operations — 29%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "d320d25bc7d2899fd8de3b5bd880aae658f6835187ff4263729e0d5b367b26df",
+      "guide_sections": [
+        "3. Python for security operations — 29%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "91426d2d375e71b2d76633a2d684f1c42524434cdedda27bba15f2d706ce9072",
+      "guide_sections": [
+        "3. Python for security operations — 29%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "a262e82a472c1e881fd0b44e5fc278a2ea22989571005d0dbf4731896e3892ca",
+      "guide_sections": [
+        "3. Python for security operations — 29%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "21848c253517ec99d6492a3e9e7aebbed8ff1740ed5280b053360d1f7658f40e",
+      "guide_sections": [
+        "3. Python for security operations — 29%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "9bf35a0e985553978cdef19418a5a0a771b7c413c46e0a9a98d430123cdba2c3",
+      "guide_sections": [
+        "3. Python for security operations — 29%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "3d98d2e3e665f649966bb4746b1a5c4f5007f1bdadb30b106f14478208face73",
+      "guide_sections": [
+        "3. Python for security operations — 29%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "afccc9c7a5f738d730926aeda8b9af891c484b56b3212cfefdf472f3af94e79d",
+      "guide_sections": [
+        "3. Python for security operations — 29%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 10,
+      "objective_sha256": "f16c9c0950e1c77bee999964f1d216fc92b3736c4c04854b4ae09698f6050001",
+      "guide_sections": [
+        "3. Python for security operations — 29%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 11,
+      "objective_sha256": "c44c4e75113228da9b3521e32054fab52290efa7ebc90524a40c5c1e9b8a6c6e",
+      "guide_sections": [
+        "3. Python for security operations — 29%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 12,
+      "objective_sha256": "965beda19a810059867597484444fd8eda202184ee692419013f908b7d4c7c95",
+      "guide_sections": [
+        "3. Python for security operations — 29%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 13,
+      "objective_sha256": "694227a1ed520c412cbf12012d8d2076ca4d65f53fa4522cc7a18f715c457481",
+      "guide_sections": [
+        "3. Python for security operations — 29%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "05b375455db3b11e7cbcae99b1eadbf3e1143a554e0b8262206399dbf2c1fde1",
+      "guide_sections": [
+        "4. Secure development and implementation — 22%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "97e063d5dfc9e3df3ff85378c3509ff0383f22ac9a27614b9fc0a2dbdf28477e",
+      "guide_sections": [
+        "4. Secure development and implementation — 22%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "dfa75549796d709bf5dc799f7691c60e8204a75fcbefbc9f304e87b505512606",
+      "guide_sections": [
+        "4. Secure development and implementation — 22%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "e4eb3360123c17f4cf2ba1ea823a8226926369caaedc874aa1c7ff32ba0818b7",
+      "guide_sections": [
+        "4. Secure development and implementation — 22%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "61026e9dcf1ca9c67839f1f9c11fcab1162b2af668eb993dd91fe74d2745ac3b",
+      "guide_sections": [
+        "4. Secure development and implementation — 22%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "5ad3495f065753b6bc5e4305aea431253ab8495f3baba770e7e452984d0f513c",
+      "guide_sections": [
+        "4. Secure development and implementation — 22%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "379d3f1b091e98427e1bc65c50a03a020b58af69ad0f59e24c5ce071bf461395",
+      "guide_sections": [
+        "4. Secure development and implementation — 22%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "e03f7d9ad7c8c8b5aaca899f20bd4f00139aa8d5c6b09534ac3d49721d37024c",
+      "guide_sections": [
+        "4. Secure development and implementation — 22%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "e384900b704914ec8c06a1a3e4e872608dc7e0ca68113854a77492bb41775ae1",
+      "guide_sections": [
+        "4. Secure development and implementation — 22%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 10,
+      "objective_sha256": "4ff21a5ca74875bd1fd409824b14440058cad11b56de94e61c74421e7c48dd20",
+      "guide_sections": [
+        "4. Secure development and implementation — 22%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [
+      "PCES-30-01"
+    ],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "PCES-30-01",
+        "title": "PCES Certified Entry-Level Security Specialist with Python",
+        "url": "https://pythoninstitute.org/pces-exam-syllabus",
+        "guide_path": "guides/PCES-30-01-python-certified-entry-level-security-specialist.md",
+        "snapshot_path": "data\\objective-snapshots\\pces-30-01-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\pces-30-01-official-status.json",
+        "status": "error",
+        "changed": false,
+        "error": "URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 35,
+    "reachable": 27,
+    "access_blocked": 2,
+    "missing_or_error": 6
+  },
+  "source_fetches": [
+    {
+      "id": "python-3-documentation",
+      "url": "https://docs.python.org/3/",
+      "checked_at": "2026-09-30T04:40:34.712676+00:00",
+      "health": {
+        "id": "python-3-documentation",
+        "url": "https://docs.python.org/3/",
+        "checked_at": "2026-09-30T04:40:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3/",
+        "content_type": "text/html",
+        "page_title": "Python 3.14 documentation",
+        "canonical_url": "https://docs.python.org/3/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "50b9d442c370445bef6759fa6081fdbb19b350ce94cf3dd9c82305f5c39b16d5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3/",
+      "sha256": "0e055f536321cd7b382ae54dcb732bac3ecdb8345b9302128d7e4c58d1ec5624",
+      "text_characters": 3232
+    },
+    {
+      "id": "pces-30-01-syllabus",
+      "url": "https://pythoninstitute.org/pces-exam-syllabus",
+      "checked_at": "2026-09-30T04:40:34.713183+00:00",
+      "health": {
+        "id": "pces-30-01-syllabus",
+        "url": "https://pythoninstitute.org/pces-exam-syllabus",
+        "checked_at": "2026-09-30T04:40:34+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pces-exam-syllabus",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "pces-certification-page",
+      "url": "https://pythoninstitute.org/pces",
+      "checked_at": "2026-09-30T04:40:34.713510+00:00",
+      "health": {
+        "id": "pces-certification-page",
+        "url": "https://pythoninstitute.org/pces",
+        "checked_at": "2026-09-30T04:40:34+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pces",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "owasp-cheat-sheet-series",
+      "url": "https://cheatsheetseries.owasp.org/",
+      "checked_at": "2026-09-30T04:40:35.022305+00:00",
+      "health": {
+        "id": "owasp-cheat-sheet-series",
+        "url": "https://cheatsheetseries.owasp.org/",
+        "checked_at": "2026-09-30T04:40:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cheatsheetseries.owasp.org/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Introduction - OWASP Cheat Sheet Series",
+        "canonical_url": "https://cheatsheetseries.owasp.org/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "4916247901e11c5367407e36a594e6ac2393e0a8f6b8fd4286afc1858d92b69f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cheatsheetseries.owasp.org/",
+      "sha256": "1f214d5e6e4149c4d960fe44b2010a176b296eda292f9554488c1ba42149ce02",
+      "text_characters": 3515
+    },
+    {
+      "id": "cryptography-documentation",
+      "url": "https://cryptography.io/en/latest/",
+      "checked_at": "2026-09-30T04:40:35.554083+00:00",
+      "health": {
+        "id": "cryptography-documentation",
+        "url": "https://cryptography.io/en/latest/",
+        "checked_at": "2026-09-30T04:40:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cryptography.io/en/latest/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Welcome to pyca/cryptography — Cryptography 51.0.0-dev1 documentation",
+        "canonical_url": "https://cryptography.io/en/latest/",
+        "duration_signals": [],
+        "signal_fingerprint": "12baa34f528413c0f75ba01d881014cc1057508aeff52e11e4d5800f5ec80e39",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cryptography.io/en/latest/",
+      "sha256": "4403c310aabcaab33458ec02bee40f4cbe53ffe1f7c0f911691253cf66f4bf21",
+      "text_characters": 8255
+    },
+    {
+      "id": "paramiko-documentation",
+      "url": "https://docs.paramiko.org/",
+      "checked_at": "2026-09-30T04:40:35.936703+00:00",
+      "health": {
+        "id": "paramiko-documentation",
+        "url": "https://docs.paramiko.org/",
+        "checked_at": "2026-09-30T04:40:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.paramiko.org/en/stable/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Welcome to Paramiko’s documentation! — Paramiko documentation",
+        "canonical_url": "https://docs.paramiko.org/en/stable/",
+        "duration_signals": [],
+        "signal_fingerprint": "72a2814f900899fef5bab66fec145ac463546f842d0d38a15c97f9d3f4f777e7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.paramiko.org/en/stable/",
+      "sha256": "1edd2bc9b3ff42aa5519564623a15be4d39effbdc0be61bc2f0f1647ba885463",
+      "text_characters": 15985
+    },
+    {
+      "id": "psutil-documentation",
+      "url": "https://psutil.readthedocs.io/en/latest/",
+      "checked_at": "2026-09-30T04:40:36.737477+00:00",
+      "health": {
+        "id": "psutil-documentation",
+        "url": "https://psutil.readthedocs.io/en/latest/",
+        "checked_at": "2026-09-30T04:40:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://psutil.io/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "psutil: Process and System Utilities for Python",
+        "canonical_url": "https://psutil.io/",
+        "duration_signals": [],
+        "signal_fingerprint": "18ac527ccab3d13bc1e8cca197ddb8c6d15f98205c1322ac60dbcac893f9a4bb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://psutil.io/",
+      "sha256": "9335e0e057c0a521f70cecc267268c464dc79a0b0306d1e9fe5a67498031afee",
+      "text_characters": 4553
+    },
+    {
+      "id": "overthewire-bandit",
+      "url": "https://overthewire.org/wargames/bandit/",
+      "checked_at": "2026-09-30T04:40:37.272962+00:00",
+      "health": {
+        "id": "overthewire-bandit",
+        "url": "https://overthewire.org/wargames/bandit/",
+        "checked_at": "2026-09-30T04:40:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://overthewire.org/wargames/bandit/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "OverTheWire: Bandit",
+        "canonical_url": "https://overthewire.org/wargames/bandit/",
+        "duration_signals": [],
+        "signal_fingerprint": "3d5a7df3577812b33c7eed201e4b9227d5d3c6360ba246c5546829f359afacaf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://overthewire.org/wargames/bandit/",
+      "sha256": "8bcf36488d69e5e8312ab46ddeac122be26bb6157cf9ff178d7e273ae6f65a15",
+      "text_characters": 2156
+    },
+    {
+      "id": "portswigger-web-security-academy",
+      "url": "https://portswigger.net/web-security",
+      "checked_at": "2026-09-30T04:40:37.751418+00:00",
+      "health": {
+        "id": "portswigger-web-security-academy",
+        "url": "https://portswigger.net/web-security",
+        "checked_at": "2026-09-30T04:40:37+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://portswigger.net/web-security",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "oreilly-practical-python-security",
+      "url": "https://www.oreilly.com/library/view/practical-python-security/9781098142155/",
+      "checked_at": "2026-09-30T04:40:53.227481+00:00",
+      "health": {
+        "id": "oreilly-practical-python-security",
+        "url": "https://www.oreilly.com/library/view/practical-python-security/9781098142155/",
+        "checked_at": "2026-09-30T04:40:53+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/practical-python-security/9781098142155/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "pces-testing-policies",
+      "url": "https://pythoninstitute.org/pces-testing-policies",
+      "checked_at": "2026-09-30T04:49:31.270841+00:00",
+      "health": {
+        "id": "pces-testing-policies",
+        "url": "https://pythoninstitute.org/pces-testing-policies",
+        "checked_at": "2026-09-30T04:49:31+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pces-testing-policies",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "python313-subprocess",
+      "url": "https://docs.python.org/3.13/library/subprocess.html",
+      "checked_at": "2026-09-30T04:49:31.271577+00:00",
+      "health": {
+        "id": "python313-subprocess",
+        "url": "https://docs.python.org/3.13/library/subprocess.html",
+        "checked_at": "2026-09-30T04:49:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/subprocess.html",
+        "content_type": "text/html",
+        "page_title": "subprocess — Subprocess management",
+        "canonical_url": "https://docs.python.org/3/library/subprocess.html",
+        "duration_signals": [],
+        "signal_fingerprint": "89bf60ded3008dfc1a596270bc5d006afe3c55fb12512ece22ce9dfc1a6b8a24",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/subprocess.html",
+      "sha256": "d538636af3077039e79db28d99d7251205a30582603bda4121362d18886f8e1d",
+      "text_characters": 55924
+    },
+    {
+      "id": "python313-socket",
+      "url": "https://docs.python.org/3.13/library/socket.html",
+      "checked_at": "2026-09-30T04:49:31.271957+00:00",
+      "health": {
+        "id": "python313-socket",
+        "url": "https://docs.python.org/3.13/library/socket.html",
+        "checked_at": "2026-09-30T04:49:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/socket.html",
+        "content_type": "text/html",
+        "page_title": "socket — Low-level networking interface",
+        "canonical_url": "https://docs.python.org/3/library/socket.html",
+        "duration_signals": [],
+        "signal_fingerprint": "312cebcbcb29e3e0c69bdd38b234bd40eddc1350c0b30973295df8549651acb8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/socket.html",
+      "sha256": "2481c567674ba64d183dc7bab1fb2b84ac6809d0d3286434c675abe379d14650",
+      "text_characters": 75332
+    },
+    {
+      "id": "python313-ssl",
+      "url": "https://docs.python.org/3.13/library/ssl.html",
+      "checked_at": "2026-09-30T04:49:31.961444+00:00",
+      "health": {
+        "id": "python313-ssl",
+        "url": "https://docs.python.org/3.13/library/ssl.html",
+        "checked_at": "2026-09-30T04:49:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/ssl.html",
+        "content_type": "text/html",
+        "page_title": "ssl — TLS/SSL wrapper for socket objects",
+        "canonical_url": "https://docs.python.org/3/library/ssl.html",
+        "duration_signals": [],
+        "signal_fingerprint": "0691c02a204f1ca59af286e4766d6b0995e54120e15d931afc37d3e3fc00a1f5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/ssl.html",
+      "sha256": "d944d5fc1a8a2e3530ada2a6a4d7bf3325dab8e0a878e50ce3b1402a1a75d4fc",
+      "text_characters": 92932
+    },
+    {
+      "id": "python313-sqlite3",
+      "url": "https://docs.python.org/3.13/library/sqlite3.html",
+      "checked_at": "2026-09-30T04:49:32.197104+00:00",
+      "health": {
+        "id": "python313-sqlite3",
+        "url": "https://docs.python.org/3.13/library/sqlite3.html",
+        "checked_at": "2026-09-30T04:49:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/sqlite3.html",
+        "content_type": "text/html",
+        "page_title": "sqlite3 — DB-API 2.0 interface for SQLite databases",
+        "canonical_url": "https://docs.python.org/3/library/sqlite3.html",
+        "duration_signals": [],
+        "signal_fingerprint": "731da9a47040f7dd9c7b7508d358e75f75c3c6f2c963f66c2f41fe9b0b62ff76",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/sqlite3.html",
+      "sha256": "64a80e594106e43b77842b1e3bd238bd51fa504cb37a9032bf421502260b0e16",
+      "text_characters": 72366
+    },
+    {
+      "id": "python313-pathlib",
+      "url": "https://docs.python.org/3.13/library/pathlib.html",
+      "checked_at": "2026-09-30T04:49:33.117563+00:00",
+      "health": {
+        "id": "python313-pathlib",
+        "url": "https://docs.python.org/3.13/library/pathlib.html",
+        "checked_at": "2026-09-30T04:49:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/pathlib.html",
+        "content_type": "text/html",
+        "page_title": "pathlib — Object-oriented filesystem paths",
+        "canonical_url": "https://docs.python.org/3/library/pathlib.html",
+        "duration_signals": [],
+        "signal_fingerprint": "a106f22af81358eccd41f10fec97100066be1038aa4c6b1db01a7b249037c880",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/pathlib.html",
+      "sha256": "0424118bfc34cededc3e8be3c13b70d1f3909b1d85436d20ed84952a629fea28",
+      "text_characters": 52595
+    },
+    {
+      "id": "python313-hmac",
+      "url": "https://docs.python.org/3.13/library/hmac.html",
+      "checked_at": "2026-09-30T04:49:33.412631+00:00",
+      "health": {
+        "id": "python313-hmac",
+        "url": "https://docs.python.org/3.13/library/hmac.html",
+        "checked_at": "2026-09-30T04:49:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/hmac.html",
+        "content_type": "text/html",
+        "page_title": "hmac — Keyed-Hashing for Message Authentication",
+        "canonical_url": "https://docs.python.org/3/library/hmac.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6d0e4422fed0962a35178f2b70cac87f4275ed23dc25cc136c3866112a146fc6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/hmac.html",
+      "sha256": "b939a8f50b9098f87aace1d1ae35f36c734fdd4b145585a494aedbe66aa81578",
+      "text_characters": 5416
+    },
+    {
+      "id": "python313-hashlib",
+      "url": "https://docs.python.org/3.13/library/hashlib.html",
+      "checked_at": "2026-09-30T04:49:33.715046+00:00",
+      "health": {
+        "id": "python313-hashlib",
+        "url": "https://docs.python.org/3.13/library/hashlib.html",
+        "checked_at": "2026-09-30T04:49:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/hashlib.html",
+        "content_type": "text/html",
+        "page_title": "hashlib — Secure hashes and message digests",
+        "canonical_url": "https://docs.python.org/3/library/hashlib.html",
+        "duration_signals": [],
+        "signal_fingerprint": "46075f87cce2166cae3d3483b4917244d6204a0481190c2089d905e5a60fb1fe",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/hashlib.html",
+      "sha256": "8c44e38a7f205610a19109fb69fa75076fd1dd7938536a98efdfd3d9b463d7e0",
+      "text_characters": 27649
+    },
+    {
+      "id": "python313-datetime",
+      "url": "https://docs.python.org/3.13/library/datetime.html",
+      "checked_at": "2026-09-30T04:49:33.867140+00:00",
+      "health": {
+        "id": "python313-datetime",
+        "url": "https://docs.python.org/3.13/library/datetime.html",
+        "checked_at": "2026-09-30T04:49:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/datetime.html",
+        "content_type": "text/html",
+        "page_title": "datetime — Basic date and time types",
+        "canonical_url": "https://docs.python.org/3/library/datetime.html",
+        "duration_signals": [
+          "4 hours",
+          "5 hours"
+        ],
+        "signal_fingerprint": "da969a76978c7f88a798c6036c4fb1543826cc3258ccf82aa30d076e87c188f0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/datetime.html",
+      "sha256": "4cae12fe3d471ec0ddcd84e3ec7cab6499ced2d7d80b7e94a2405a0aa3cf541f",
+      "text_characters": 88114
+    },
+    {
+      "id": "python313-html",
+      "url": "https://docs.python.org/3.13/library/html.html",
+      "checked_at": "2026-09-30T04:49:34.374290+00:00",
+      "health": {
+        "id": "python313-html",
+        "url": "https://docs.python.org/3.13/library/html.html",
+        "checked_at": "2026-09-30T04:49:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/html.html",
+        "content_type": "text/html",
+        "page_title": "html — HyperText Markup Language support",
+        "canonical_url": "https://docs.python.org/3/library/html.html",
+        "duration_signals": [],
+        "signal_fingerprint": "8a30597c4b1909e52c3ae531a236494a49296ead2d1fce9a99d9faea66b509a5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/html.html",
+      "sha256": "58c5c2d7510a925bfc3d34b8da9f41b2a8cc503a274b6233f1e22a8be975ab5b",
+      "text_characters": 2296
+    },
+    {
+      "id": "python313-json",
+      "url": "https://docs.python.org/3.13/library/json.html",
+      "checked_at": "2026-09-30T04:49:34.883383+00:00",
+      "health": {
+        "id": "python313-json",
+        "url": "https://docs.python.org/3.13/library/json.html",
+        "checked_at": "2026-09-30T04:49:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/json.html",
+        "content_type": "text/html",
+        "page_title": "json — JSON encoder and decoder",
+        "canonical_url": "https://docs.python.org/3/library/json.html",
+        "duration_signals": [],
+        "signal_fingerprint": "003894cea941cd12f7c74ca070bd67c17798d619b1b2f3265673efdcf49d1633",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/json.html",
+      "sha256": "343d320c237449b9715d3939ad33dbc28bce9f7ffc284cc651199089e329d9a6",
+      "text_characters": 25434
+    },
+    {
+      "id": "python313-elementtree",
+      "url": "https://docs.python.org/3.13/library/xml.etree.elementtree.html",
+      "checked_at": "2026-09-30T04:49:34.885728+00:00",
+      "health": {
+        "id": "python313-elementtree",
+        "url": "https://docs.python.org/3.13/library/xml.etree.elementtree.html",
+        "checked_at": "2026-09-30T04:49:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/xml.etree.elementtree.html",
+        "content_type": "text/html",
+        "page_title": "xml.etree.ElementTree — The ElementTree XML API",
+        "canonical_url": "https://docs.python.org/3/library/xml.etree.elementtree.html",
+        "duration_signals": [],
+        "signal_fingerprint": "66d82d4bf77c88398bb2de3b9a36650a97724c30e84e8877f091b40a96ed355f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/xml.etree.elementtree.html",
+      "sha256": "6c30a73cccb90b31d765439ae9cfe71d9763c22a40b6bba8ae3742b5c413bff4",
+      "text_characters": 51135
+    },
+    {
+      "id": "python313-csv",
+      "url": "https://docs.python.org/3.13/library/csv.html",
+      "checked_at": "2026-09-30T04:49:35.381195+00:00",
+      "health": {
+        "id": "python313-csv",
+        "url": "https://docs.python.org/3.13/library/csv.html",
+        "checked_at": "2026-09-30T04:49:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/csv.html",
+        "content_type": "text/html",
+        "page_title": "csv — CSV File Reading and Writing",
+        "canonical_url": "https://docs.python.org/3/library/csv.html",
+        "duration_signals": [],
+        "signal_fingerprint": "86499c6a09d3131a422c0c6b0c4784d620964719ebb01792199ac575e9391283",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/csv.html",
+      "sha256": "cfd4ed9d4e3357b1c300bc0f5a4eaf9a9d183e318432f3490096cf5f6b07a689",
+      "text_characters": 22245
+    },
+    {
+      "id": "python313-tempfile",
+      "url": "https://docs.python.org/3.13/library/tempfile.html",
+      "checked_at": "2026-09-30T04:49:35.434676+00:00",
+      "health": {
+        "id": "python313-tempfile",
+        "url": "https://docs.python.org/3.13/library/tempfile.html",
+        "checked_at": "2026-09-30T04:49:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/tempfile.html",
+        "content_type": "text/html",
+        "page_title": "tempfile — Generate temporary files and directories",
+        "canonical_url": "https://docs.python.org/3/library/tempfile.html",
+        "duration_signals": [],
+        "signal_fingerprint": "5f9dd82b6f021af852cc57b9c19ce3c49d656dd7f5cefb796fab60fe88a362ef",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/tempfile.html",
+      "sha256": "8324daf0e4e26366ad3d96ce293df41e32b7ffb3eddc5f129ee8e5a4ae573e0a",
+      "text_characters": 18636
+    },
+    {
+      "id": "cryptography-fernet",
+      "url": "https://cryptography.io/en/latest/fernet/",
+      "checked_at": "2026-09-30T04:49:35.707014+00:00",
+      "health": {
+        "id": "cryptography-fernet",
+        "url": "https://cryptography.io/en/latest/fernet/",
+        "checked_at": "2026-09-30T04:49:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cryptography.io/en/latest/fernet/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Fernet (symmetric encryption) — Cryptography 51.0.0-dev1 documentation",
+        "canonical_url": "https://cryptography.io/en/latest/fernet/",
+        "duration_signals": [],
+        "signal_fingerprint": "395a66dcfe39437359351bf5ffa264bc8a1c05b2d6e2ea1a3ec4e1d83a868ed5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cryptography.io/en/latest/fernet/",
+      "sha256": "4d2ef6804f7699d06f38fee68250de10ea2094377068a82bb1180e347c031bad",
+      "text_characters": 9808
+    },
+    {
+      "id": "paramiko-client",
+      "url": "https://docs.paramiko.org/en/stable/api/client.html",
+      "checked_at": "2026-09-30T04:49:35.754180+00:00",
+      "health": {
+        "id": "paramiko-client",
+        "url": "https://docs.paramiko.org/en/stable/api/client.html",
+        "checked_at": "2026-09-30T04:49:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.paramiko.org/en/stable/api/client.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Client — Paramiko documentation",
+        "canonical_url": "https://docs.paramiko.org/en/stable/api/client.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6b6b492ed5fa228bca2af06bd84c536074525e0d06cf250e2e3ba66bb4b8b286",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.paramiko.org/en/stable/api/client.html",
+      "sha256": "7cf86c4e9322bb7a75d51a30ec78eb4424ad7bf42a833cb5e5a4846f2be34d61",
+      "text_characters": 13580
+    },
+    {
+      "id": "nist-authenticator-requirements",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b/authenticators/",
+      "checked_at": "2026-09-30T04:49:36.016714+00:00",
+      "health": {
+        "id": "nist-authenticator-requirements",
+        "url": "https://pages.nist.gov/800-63-4/sp800-63b/authenticators/",
+        "checked_at": "2026-09-30T04:49:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://pages.nist.gov/800-63-4/sp800-63b/authenticators/",
+        "content_type": "text/html",
+        "page_title": "Authenticators",
+        "canonical_url": "/800-63-4/sp800-63b/authenticators/",
+        "duration_signals": [
+          "10 minutes"
+        ],
+        "signal_fingerprint": "b453272ed5d4090596833e1f058503cc0b1bd51450f974d914d63cf748f504e6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://pages.nist.gov/800-63-4/sp800-63b/authenticators/",
+      "sha256": "5681ed4d50590c4bf0d5142244f581f85e82186771395841b198370dfeb949b8",
+      "text_characters": 76494
+    },
+    {
+      "id": "owasp-xss-prevention",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+      "checked_at": "2026-09-30T04:49:36.064494+00:00",
+      "health": {
+        "id": "owasp-xss-prevention",
+        "url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+        "checked_at": "2026-09-30T04:49:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Cross Site Scripting Prevention - OWASP Cheat Sheet Series",
+        "canonical_url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+        "duration_signals": [],
+        "signal_fingerprint": "2ab38ccf7550b693827edb923c79dcaaba47848a9f4f070530e3cef9ddb99b78",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+      "sha256": "b248bb578fa0effa783f4b845f90467f2ef1a75f5a5301e2911328151325f3ab",
+      "text_characters": 31455
+    },
+    {
+      "id": "owasp-sql-injection-prevention",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+      "checked_at": "2026-09-30T04:49:36.649808+00:00",
+      "health": {
+        "id": "owasp-sql-injection-prevention",
+        "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+        "checked_at": "2026-09-30T04:49:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SQL Injection Prevention - OWASP Cheat Sheet Series",
+        "canonical_url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+        "duration_signals": [],
+        "signal_fingerprint": "53df6b6c5c69620e7d7af0b9cc990e99ac5ecda70b5bfcdf3966f38dde4f1c42",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+      "sha256": "426623a67f3fa987179cd5d5ab274d9cfa34a5ab8e5037ed13f8a989d038f8ad",
+      "text_characters": 22595
+    },
+    {
+      "id": "hhs-breach-notification",
+      "url": "https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html",
+      "checked_at": "2026-09-30T04:49:36.671727+00:00",
+      "health": {
+        "id": "hhs-breach-notification",
+        "url": "https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html",
+        "checked_at": "2026-09-30T04:49:36+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "california-ag-ccpa",
+      "url": "https://oag.ca.gov/privacy/ccpa",
+      "checked_at": "2026-09-30T04:49:36.865905+00:00",
+      "health": {
+        "id": "california-ag-ccpa",
+        "url": "https://oag.ca.gov/privacy/ccpa",
+        "checked_at": "2026-09-30T04:49:36+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://oag.ca.gov/privacy/ccpa",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "eu-data-breach-response",
+      "url": "https://commission.europa.eu/law/law-topic/data-protection/information-business-and-organisations/obligations_en",
+      "checked_at": "2026-09-30T04:51:28.214303+00:00",
+      "health": {
+        "id": "eu-data-breach-response",
+        "url": "https://commission.europa.eu/law/law-topic/data-protection/information-business-and-organisations/obligations_en",
+        "checked_at": "2026-09-30T04:51:28+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://commission.europa.eu/law/law-topic/data-protection/information-business-and-organisations/obligations_en",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "ruff-linter",
+      "url": "https://docs.astral.sh/ruff/linter/",
+      "checked_at": "2026-09-30T04:49:49.715610+00:00",
+      "health": {
+        "id": "ruff-linter",
+        "url": "https://docs.astral.sh/ruff/linter/",
+        "checked_at": "2026-09-30T04:49:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.astral.sh/ruff/linter/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "The Ruff Linter | Ruff",
+        "canonical_url": "https://docs.astral.sh/ruff/linter/",
+        "duration_signals": [],
+        "signal_fingerprint": "fde25cc7fc94fbc1bd97c5106f56cd5620250a7ac06438760b9e5dd4a3200d59",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.astral.sh/ruff/linter/",
+      "sha256": "babdaa8bad054827a1078050909fed1107cfe2a9c784da5c0edfa000646e43b4",
+      "text_characters": 21957
+    },
+    {
+      "id": "pypdf-metadata",
+      "url": "https://pypdf.readthedocs.io/en/stable/user/metadata.html",
+      "checked_at": "2026-09-30T04:51:28.215007+00:00",
+      "health": {
+        "id": "pypdf-metadata",
+        "url": "https://pypdf.readthedocs.io/en/stable/user/metadata.html",
+        "checked_at": "2026-09-30T04:51:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://pypdf.readthedocs.io/en/stable/user/metadata.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Metadata — pypdf 6.19.0 documentation",
+        "canonical_url": "https://pypdf.readthedocs.io/en/stable/user/metadata.html",
+        "duration_signals": [],
+        "signal_fingerprint": "7f5d5c9ac5e5b1efc04863e9f43afabf6f92c38ee5649834e16889b8363c84ab",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://pypdf.readthedocs.io/en/stable/user/metadata.html",
+      "sha256": "4de594451d33b8cdedb9020b269cc6f3a99cbe12e4120b8830c8edb8635d2dd5",
+      "text_characters": 8597
+    },
+    {
+      "id": "pypdf-encryption",
+      "url": "https://pypdf.readthedocs.io/en/stable/user/encryption-decryption.html",
+      "checked_at": "2026-09-30T04:51:28.215322+00:00",
+      "health": {
+        "id": "pypdf-encryption",
+        "url": "https://pypdf.readthedocs.io/en/stable/user/encryption-decryption.html",
+        "checked_at": "2026-09-30T04:51:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://pypdf.readthedocs.io/en/stable/user/encryption-decryption.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Encryption and Decryption of PDFs — pypdf 6.19.0 documentation",
+        "canonical_url": "https://pypdf.readthedocs.io/en/stable/user/encryption-decryption.html",
+        "duration_signals": [],
+        "signal_fingerprint": "543b8648ce80b98c47703df57f3e8b60c334d4699efddddad424831506db2392",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://pypdf.readthedocs.io/en/stable/user/encryption-decryption.html",
+      "sha256": "f792fb587ba40ea2f9750bd5d3e8f58c1be8e07e39d017183a2f7572d662dda1",
+      "text_characters": 2911
+    }
+  ],
+  "added_source_ids": [
+    "pces-testing-policies",
+    "python313-subprocess",
+    "python313-hmac",
+    "python313-html",
+    "python313-tempfile",
+    "cryptography-fernet",
+    "paramiko-client",
+    "owasp-xss-prevention",
+    "hhs-breach-notification",
+    "california-ag-ccpa",
+    "eu-data-breach-response",
+    "pypdf-metadata",
+    "pypdf-encryption"
+  ],
+  "findings": [
+    {
+      "id": "pces3001-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Detailed objectives were hidden by topic summaries",
+      "url": "https://pythoninstitute.org/pces-exam-syllabus",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCES-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "CanonicalEnglishsyllabus lists45detailedobjectives under19topicheadings; MQCmisclassifiesthirdpartypackages asstandard.",
+      "recommendation": "Add45manualmappings,missingdocument/incident/passwordtopics andclearly distinguishthirdpartydependencies whilepreservinghistoricalsnapshot.",
+      "disposition": "applied",
+      "source_id": "pces-30-01-syllabus",
+      "resolution": "Add45manualmappings,missingdocument/incident/passwordtopics andclearly distinguishthirdpartydependencies whilepreservinghistoricalsnapshot."
+    },
+    {
+      "id": "pces3001-deep-2",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Book recommendation had the wrong identity",
+      "url": "https://www.oreilly.com/library/view/practical-python-security/9781098142155/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCES-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "PublisherURL/ISBN9781098142155 opens Kubernetes Best Practices,2ndedition,not Practical Python Security.",
+      "recommendation": "RemoveincorrectPCESrecommendation andcorrectcatalogtitle withexplicitrepairprovenance;do not inventreplacementbook.",
+      "disposition": "applied",
+      "source_id": "oreilly-practical-python-security",
+      "resolution": "RemoveincorrectPCESrecommendation andcorrectcatalogtitle withexplicitrepairprovenance;do not inventreplacementbook."
+    },
+    {
+      "id": "pces3001-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Legacy policy settings needed current guidance",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b/authenticators/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCES-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "SelectedNISTpasswordrequirements differfromroutineexpiry/compositionpractices;manualOTP notphishingresistant.",
+      "recommendation": "Distinguishsyllabussettingnames,currentNISTscope andactualorganizationalpolicy;nohostsettingchange.",
+      "disposition": "applied",
+      "source_id": "nist-authenticator-requirements",
+      "resolution": "Distinguishsyllabussettingnames,currentNISTscope andactualorganizationalpolicy;nohostsettingchange."
+    },
+    {
+      "id": "pces3001-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Metadata removal was not document sanitization",
+      "url": "https://pypdf.readthedocs.io/en/stable/user/metadata.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCES-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "ActualblankPDF experiment removesInfo whileXMPcreator survives.",
+      "recommendation": "Recordexecutedresult andexplicitPDF/docx/spreadsheet/AESlimitations;no document declaredsafe.",
+      "disposition": "applied",
+      "source_id": "pypdf-metadata",
+      "resolution": "Recordexecutedresult andexplicitPDF/docx/spreadsheet/AESlimitations;no document declaredsafe."
+    },
+    {
+      "id": "pces3001-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Unkeyed checksums and pseudonyms needed trust boundaries",
+      "url": "https://docs.python.org/3.13/library/hmac.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCES-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "OriginalreplacedplainhashstillfailsMAC;stableHMACsubjecttokensremainlinkable.",
+      "recommendation": "Publishseparatekey/domain fixture,observedtamperrejection andanonymization/confidentiality/keymanagementlimits.",
+      "disposition": "applied",
+      "source_id": "python313-hmac",
+      "resolution": "Publishseparatekey/domain fixture,observedtamperrejection andanonymization/confidentiality/keymanagementlimits."
+    },
+    {
+      "id": "pces3001-deep-6",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Future practice wording does not prove availability",
+      "url": "https://pythoninstitute.org/pces",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCES-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Q3/Q4coming andFAQplannedQ3 remain despitecalendar;genericvoucherinstructions do not verifyproduct.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "pces3001-deep-7",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Specific and footer retake wording differs",
+      "url": "https://pythoninstitute.org/pces-testing-policies",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCES-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Specificpolicycoversfailed7dayretake;footeralsosayspassed.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "pces-certification-page",
+      "review": "CompletecurrentpubliccredentialFAQ/syllabus/policyread;futurepracticeandPCASwording explicit,notauthenticatedlaunch verification orunseenreleasefeed."
+    }
+  ],
+  "labs": {
+    "proposed": 12,
+    "fully_completed_proposed_labs": 0,
+    "public_files": 3,
+    "execution_runs": 4,
+    "test_methods_per_mode": 30,
+    "observation_checks_per_mode": 21,
+    "local_validation": {
+      "passed": true,
+      "versions": {
+        "python": "3.13.14",
+        "pypdf": "6.16.1",
+        "ruff": "ruff 0.16.4"
+      },
+      "platform": "Windows-11-10.0.26200-SP0",
+      "public_files": [
+        {
+          "filename": "security_workbook.py",
+          "sha256": "077041ba04f665291b614d42b779d0925e0a3847723fb2b60a54458592ae0327",
+          "bytes": 9166,
+          "syntax_checked": true,
+          "executed": true
+        },
+        {
+          "filename": "test_security_workbook.py",
+          "sha256": "6a69166a43792fc0004515f9587e18e5d01327d2a93b50c0712090379be6d021",
+          "bytes": 12597,
+          "syntax_checked": true,
+          "executed": true
+        },
+        {
+          "filename": "observations.py",
+          "sha256": "7964c7835a7b03dd2d07a39c672ebf1fb5de8eab157c0869dffd8fc83edfa4f5",
+          "bytes": 4834,
+          "syntax_checked": true,
+          "executed": true
+        }
+      ],
+      "test_methods_per_mode": 30,
+      "observation_checks_per_mode": 21,
+      "execution_runs": 4,
+      "results": [
+        {
+          "program": "unittest",
+          "command": [
+            "python",
+            "-B",
+            "-Werror",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            ".",
+            "-p",
+            "test_security_workbook.py",
+            "-v"
+          ],
+          "started_at": "2026-09-30T05:04:15.946591+00:00",
+          "elapsed_seconds": 0.364,
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": "test_backup_rejects_invalid_key_or_payload (test_security_workbook.SecurityTests.test_backup_rejects_invalid_key_or_payload) ... ok\ntest_backup_replaced_unkeyed_hash_is_insufficient (test_security_workbook.SecurityTests.test_backup_replaced_unkeyed_hash_is_insufficient) ... ok\ntest_backup_roundtrip_and_byte_tamper (test_security_workbook.SecurityTests.test_backup_roundtrip_and_byte_tamper) ... ok\ntest_backup_schema_length_and_digest_validation (test_security_workbook.SecurityTests.test_backup_schema_length_and_digest_validation) ... ok\ntest_chain_halts_before_later_side_effects (test_security_workbook.SecurityTests.test_chain_halts_before_later_side_effects) ... ok\ntest_chain_records_error_type_without_sensitive_message (test_security_workbook.SecurityTests.test_chain_records_error_type_without_sensitive_message) ... ok\ntest_chain_requires_exact_success_and_preserves_order (test_security_workbook.SecurityTests.test_chain_requires_exact_success_and_preserves_order) ... ok\ntest_child_keeps_shell_like_text_in_one_argument (test_security_workbook.SecurityTests.test_child_keeps_shell_like_text_in_one_argument) ... ok\ntest_child_propagates_timeout_and_validates_first (test_security_workbook.SecurityTests.test_child_propagates_timeout_and_validates_first) ... ok\ntest_correlation_excludes_old_future_success_and_other_host (test_security_workbook.SecurityTests.test_correlation_excludes_old_future_success_and_other_host) ... ok\ntest_correlation_key_changes_linkability (test_security_workbook.SecurityTests.test_correlation_key_changes_linkability) ... ok\ntest_correlation_preserves_input_and_exact_window (test_security_workbook.SecurityTests.test_correlation_preserves_input_and_exact_window) ... ok\ntest_correlation_rejects_conflicting_identity (test_security_workbook.SecurityTests.test_correlation_rejects_conflicting_identity) ... ok\ntest_correlation_rejects_schema_and_unbounded_inputs (test_security_workbook.SecurityTests.test_correlation_rejects_schema_and_unbounded_inputs) ... ok\ntest_correlation_threshold_and_duplicate_replay (test_security_workbook.SecurityTests.test_correlation_threshold_and_duplicate_replay) ... ok\ntest_csv_report_is_controlled_and_roundtrips (test_security_workbook.SecurityTests.test_csv_report_is_controlled_and_roundtrips) ... ok\ntest_encoding_has_context_specific_expected_values (test_security_workbook.SecurityTests.test_encoding_has_context_specific_expected_values) ... ok\ntest_encoding_rejects_control_and_excess_length (test_security_workbook.SecurityTests.test_encoding_rejects_control_and_excess_length) ... ok\ntest_expiry_exact_boundaries (test_security_workbook.SecurityTests.test_expiry_exact_boundaries) ... ok\ntest_fixture_missing_or_directory (test_security_workbook.SecurityTests.test_fixture_missing_or_directory) ... ok\ntest_fixture_rejects_path_syntax_before_io (test_security_workbook.SecurityTests.test_fixture_rejects_path_syntax_before_io) ... ok\ntest_fixture_simulated_resolved_parent_escape (test_security_workbook.SecurityTests.test_fixture_simulated_resolved_parent_escape) ... ok\ntest_fixture_valid_and_size_boundary (test_security_workbook.SecurityTests.test_fixture_valid_and_size_boundary) ... ok\ntest_owned_loopback_roundtrip (test_security_workbook.SecurityTests.test_owned_loopback_roundtrip) ... ok\ntest_parameterized_lookup_preserves_query_intent (test_security_workbook.SecurityTests.test_parameterized_lookup_preserves_query_intent) ... ok\ntest_pdf_info_removal_leaves_xmp (test_security_workbook.SecurityTests.test_pdf_info_removal_leaves_xmp) ... ok\ntest_sql_rejects_invalid_type (test_security_workbook.SecurityTests.test_sql_rejects_invalid_type) ... ok\ntest_timestamp_offset_equivalence (test_security_workbook.SecurityTests.test_timestamp_offset_equivalence) ... ok\ntest_timestamp_rejects_missing_offset_and_bad_data (test_security_workbook.SecurityTests.test_timestamp_rejects_missing_offset_and_bad_data) ... ok\ntest_tls_policy_without_handshake (test_security_workbook.SecurityTests.test_tls_policy_without_handshake) ... ok\n\n----------------------------------------------------------------------\nRan 30 tests in 0.184s\n\nOK\n",
+          "optimized": false,
+          "test_methods": 30
+        },
+        {
+          "program": "observations",
+          "command": [
+            "python",
+            "-B",
+            "-Werror",
+            "observations.py"
+          ],
+          "started_at": "2026-09-30T05:04:16.311646+00:00",
+          "elapsed_seconds": 0.34,
+          "exit_code": 0,
+          "stdout": "{\n  \"backup_manifest\": {\n    \"length\": 25,\n    \"mac\": \"f82e6c6713b8b69d53a0d1faa1c7750a48c42fa652e6c6da94dcbe0cefbca6c8\",\n    \"sha256\": \"b5eb4e580b9346a4c75210d30bf3ee0d35b53cae9161b71ca1fd974f7128bc5c\"\n  },\n  \"checks\": [\n    \"three failures across three sources\",\n    \"timezone normalization\",\n    \"preserve original records\",\n    \"duplicate replay not counted\",\n    \"raw subject omitted\",\n    \"CSV omits raw subject\",\n    \"HTML text encoded\",\n    \"JSON is not script embedding protection\",\n    \"SQL attack-shaped value stays data\",\n    \"owned loopback\",\n    \"TLS hostname requirement\",\n    \"TLS certificate requirement\",\n    \"fixed child argument roundtrip\",\n    \"PDF Info removed\",\n    \"PDF XMP creator survives\",\n    \"owned temporary root\",\n    \"actual write and restore chain\",\n    \"changed bytes rejected\",\n    \"replaced plain hash rejected\",\n    \"original preserved\",\n    \"temporary tree removed\"\n  ],\n  \"child_arguments\": [\n    \"fixture & $(fake) --flag \\\"quoted\\\"\"\n  ],\n  \"context_encodings\": {\n    \"html\": \"<p>&lt;/script&gt;&lt;b title=&quot;fixture&quot;&gt;&amp;&lt;/b&gt;</p>\",\n    \"json\": \"{\\\"message\\\": \\\"</script><b title=\\\\\\\"fixture\\\\\\\">&</b>\\\"}\",\n    \"xml\": \"<message>&lt;/script&gt;&lt;b title=\\\"fixture\\\"&gt;&amp;&lt;/b&gt;</message>\"\n  },\n  \"correlation\": [\n    {\n      \"action\": \"check context and clock offsets\",\n      \"decision\": \"triage\",\n      \"failures\": 3,\n      \"first\": \"2026-09-30T00:00:00+00:00\",\n      \"host\": \"lab-a\",\n      \"last\": \"2026-09-30T00:04:00+00:00\",\n      \"sources\": \"auth,firewall,server\",\n      \"subject_token\": \"5096c8bde7a9e730008b1a5338c757e1495b6f70cc435d8ffb8ae3c4062a976c\"\n    }\n  ],\n  \"csv\": \"subject_token,host,failures,sources,first,last,decision,action\\n5096c8bde7a9e730008b1a5338c757e1495b6f70cc435d8ffb8ae3c4062a976c,lab-a,3,\\\"auth,firewall,server\\\",2026-09-30T00:00:00+00:00,2026-09-30T00:04:00+00:00,triage,check context and clock offsets\\n\",\n  \"limits\": [\n    \"Public fixture key; not confidentiality or key management\",\n    \"Pseudonymized identifiers, not anonymous records\",\n    \"One owned loopback listener; no scan or TLS handshake\",\n    \"TLS policy inspection; no remote certificate verification\",\n    \"One blank PDF; no document sanitization or AES execution\",\n    \"Private owned path; simulated escape test is not TOCTOU proof\",\n    \"One byte fixture restored; not application recovery or RTO/RPO\",\n    \"No scheduler, notification, service restart or package install\"\n  ],\n  \"loopback\": \"LAB\\n\",\n  \"passed_checks\": 21,\n  \"pdf\": {\n    \"info_removed\": true,\n    \"pages\": 1,\n    \"xmp_creator\": [\n      \"Synthetic creator\"\n    ]\n  },\n  \"restore_chain\": [\n    {\n      \"stage\": \"precheck\",\n      \"status\": \"passed\"\n    },\n    {\n      \"stage\": \"backup\",\n      \"status\": \"passed\"\n    },\n    {\n      \"stage\": \"restore\",\n      \"status\": \"passed\"\n    }\n  ],\n  \"tls_policy\": {\n    \"check_hostname\": true,\n    \"require_certificate\": true\n  }\n}\n",
+          "stderr": "",
+          "optimized": false,
+          "checks": 21
+        },
+        {
+          "program": "unittest",
+          "command": [
+            "python",
+            "-B",
+            "-Werror",
+            "-O",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            ".",
+            "-p",
+            "test_security_workbook.py",
+            "-v"
+          ],
+          "started_at": "2026-09-30T05:04:16.651984+00:00",
+          "elapsed_seconds": 1.351,
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": "test_backup_rejects_invalid_key_or_payload (test_security_workbook.SecurityTests.test_backup_rejects_invalid_key_or_payload) ... ok\ntest_backup_replaced_unkeyed_hash_is_insufficient (test_security_workbook.SecurityTests.test_backup_replaced_unkeyed_hash_is_insufficient) ... ok\ntest_backup_roundtrip_and_byte_tamper (test_security_workbook.SecurityTests.test_backup_roundtrip_and_byte_tamper) ... ok\ntest_backup_schema_length_and_digest_validation (test_security_workbook.SecurityTests.test_backup_schema_length_and_digest_validation) ... ok\ntest_chain_halts_before_later_side_effects (test_security_workbook.SecurityTests.test_chain_halts_before_later_side_effects) ... ok\ntest_chain_records_error_type_without_sensitive_message (test_security_workbook.SecurityTests.test_chain_records_error_type_without_sensitive_message) ... ok\ntest_chain_requires_exact_success_and_preserves_order (test_security_workbook.SecurityTests.test_chain_requires_exact_success_and_preserves_order) ... ok\ntest_child_keeps_shell_like_text_in_one_argument (test_security_workbook.SecurityTests.test_child_keeps_shell_like_text_in_one_argument) ... ok\ntest_child_propagates_timeout_and_validates_first (test_security_workbook.SecurityTests.test_child_propagates_timeout_and_validates_first) ... ok\ntest_correlation_excludes_old_future_success_and_other_host (test_security_workbook.SecurityTests.test_correlation_excludes_old_future_success_and_other_host) ... ok\ntest_correlation_key_changes_linkability (test_security_workbook.SecurityTests.test_correlation_key_changes_linkability) ... ok\ntest_correlation_preserves_input_and_exact_window (test_security_workbook.SecurityTests.test_correlation_preserves_input_and_exact_window) ... ok\ntest_correlation_rejects_conflicting_identity (test_security_workbook.SecurityTests.test_correlation_rejects_conflicting_identity) ... ok\ntest_correlation_rejects_schema_and_unbounded_inputs (test_security_workbook.SecurityTests.test_correlation_rejects_schema_and_unbounded_inputs) ... ok\ntest_correlation_threshold_and_duplicate_replay (test_security_workbook.SecurityTests.test_correlation_threshold_and_duplicate_replay) ... ok\ntest_csv_report_is_controlled_and_roundtrips (test_security_workbook.SecurityTests.test_csv_report_is_controlled_and_roundtrips) ... ok\ntest_encoding_has_context_specific_expected_values (test_security_workbook.SecurityTests.test_encoding_has_context_specific_expected_values) ... ok\ntest_encoding_rejects_control_and_excess_length (test_security_workbook.SecurityTests.test_encoding_rejects_control_and_excess_length) ... ok\ntest_expiry_exact_boundaries (test_security_workbook.SecurityTests.test_expiry_exact_boundaries) ... ok\ntest_fixture_missing_or_directory (test_security_workbook.SecurityTests.test_fixture_missing_or_directory) ... ok\ntest_fixture_rejects_path_syntax_before_io (test_security_workbook.SecurityTests.test_fixture_rejects_path_syntax_before_io) ... ok\ntest_fixture_simulated_resolved_parent_escape (test_security_workbook.SecurityTests.test_fixture_simulated_resolved_parent_escape) ... ok\ntest_fixture_valid_and_size_boundary (test_security_workbook.SecurityTests.test_fixture_valid_and_size_boundary) ... ok\ntest_owned_loopback_roundtrip (test_security_workbook.SecurityTests.test_owned_loopback_roundtrip) ... ok\ntest_parameterized_lookup_preserves_query_intent (test_security_workbook.SecurityTests.test_parameterized_lookup_preserves_query_intent) ... ok\ntest_pdf_info_removal_leaves_xmp (test_security_workbook.SecurityTests.test_pdf_info_removal_leaves_xmp) ... ok\ntest_sql_rejects_invalid_type (test_security_workbook.SecurityTests.test_sql_rejects_invalid_type) ... ok\ntest_timestamp_offset_equivalence (test_security_workbook.SecurityTests.test_timestamp_offset_equivalence) ... ok\ntest_timestamp_rejects_missing_offset_and_bad_data (test_security_workbook.SecurityTests.test_timestamp_rejects_missing_offset_and_bad_data) ... ok\ntest_tls_policy_without_handshake (test_security_workbook.SecurityTests.test_tls_policy_without_handshake) ... ok\n\n----------------------------------------------------------------------\nRan 30 tests in 1.176s\n\nOK\n",
+          "optimized": true,
+          "test_methods": 30
+        },
+        {
+          "program": "observations",
+          "command": [
+            "python",
+            "-B",
+            "-Werror",
+            "-O",
+            "observations.py"
+          ],
+          "started_at": "2026-09-30T05:04:18.003600+00:00",
+          "elapsed_seconds": 0.513,
+          "exit_code": 0,
+          "stdout": "{\n  \"backup_manifest\": {\n    \"length\": 25,\n    \"mac\": \"f82e6c6713b8b69d53a0d1faa1c7750a48c42fa652e6c6da94dcbe0cefbca6c8\",\n    \"sha256\": \"b5eb4e580b9346a4c75210d30bf3ee0d35b53cae9161b71ca1fd974f7128bc5c\"\n  },\n  \"checks\": [\n    \"three failures across three sources\",\n    \"timezone normalization\",\n    \"preserve original records\",\n    \"duplicate replay not counted\",\n    \"raw subject omitted\",\n    \"CSV omits raw subject\",\n    \"HTML text encoded\",\n    \"JSON is not script embedding protection\",\n    \"SQL attack-shaped value stays data\",\n    \"owned loopback\",\n    \"TLS hostname requirement\",\n    \"TLS certificate requirement\",\n    \"fixed child argument roundtrip\",\n    \"PDF Info removed\",\n    \"PDF XMP creator survives\",\n    \"owned temporary root\",\n    \"actual write and restore chain\",\n    \"changed bytes rejected\",\n    \"replaced plain hash rejected\",\n    \"original preserved\",\n    \"temporary tree removed\"\n  ],\n  \"child_arguments\": [\n    \"fixture & $(fake) --flag \\\"quoted\\\"\"\n  ],\n  \"context_encodings\": {\n    \"html\": \"<p>&lt;/script&gt;&lt;b title=&quot;fixture&quot;&gt;&amp;&lt;/b&gt;</p>\",\n    \"json\": \"{\\\"message\\\": \\\"</script><b title=\\\\\\\"fixture\\\\\\\">&</b>\\\"}\",\n    \"xml\": \"<message>&lt;/script&gt;&lt;b title=\\\"fixture\\\"&gt;&amp;&lt;/b&gt;</message>\"\n  },\n  \"correlation\": [\n    {\n      \"action\": \"check context and clock offsets\",\n      \"decision\": \"triage\",\n      \"failures\": 3,\n      \"first\": \"2026-09-30T00:00:00+00:00\",\n      \"host\": \"lab-a\",\n      \"last\": \"2026-09-30T00:04:00+00:00\",\n      \"sources\": \"auth,firewall,server\",\n      \"subject_token\": \"5096c8bde7a9e730008b1a5338c757e1495b6f70cc435d8ffb8ae3c4062a976c\"\n    }\n  ],\n  \"csv\": \"subject_token,host,failures,sources,first,last,decision,action\\n5096c8bde7a9e730008b1a5338c757e1495b6f70cc435d8ffb8ae3c4062a976c,lab-a,3,\\\"auth,firewall,server\\\",2026-09-30T00:00:00+00:00,2026-09-30T00:04:00+00:00,triage,check context and clock offsets\\n\",\n  \"limits\": [\n    \"Public fixture key; not confidentiality or key management\",\n    \"Pseudonymized identifiers, not anonymous records\",\n    \"One owned loopback listener; no scan or TLS handshake\",\n    \"TLS policy inspection; no remote certificate verification\",\n    \"One blank PDF; no document sanitization or AES execution\",\n    \"Private owned path; simulated escape test is not TOCTOU proof\",\n    \"One byte fixture restored; not application recovery or RTO/RPO\",\n    \"No scheduler, notification, service restart or package install\"\n  ],\n  \"loopback\": \"LAB\\n\",\n  \"passed_checks\": 21,\n  \"pdf\": {\n    \"info_removed\": true,\n    \"pages\": 1,\n    \"xmp_creator\": [\n      \"Synthetic creator\"\n    ]\n  },\n  \"restore_chain\": [\n    {\n      \"stage\": \"precheck\",\n      \"status\": \"passed\"\n    },\n    {\n      \"stage\": \"backup\",\n      \"status\": \"passed\"\n    },\n    {\n      \"stage\": \"restore\",\n      \"status\": \"passed\"\n    }\n  ],\n  \"tls_policy\": {\n    \"check_hostname\": true,\n    \"require_certificate\": true\n  }\n}\n",
+          "stderr": "",
+          "optimized": true,
+          "checks": 21
+        }
+      ],
+      "computed_report": {
+        "backup_manifest": {
+          "length": 25,
+          "mac": "f82e6c6713b8b69d53a0d1faa1c7750a48c42fa652e6c6da94dcbe0cefbca6c8",
+          "sha256": "b5eb4e580b9346a4c75210d30bf3ee0d35b53cae9161b71ca1fd974f7128bc5c"
+        },
+        "checks": [
+          "three failures across three sources",
+          "timezone normalization",
+          "preserve original records",
+          "duplicate replay not counted",
+          "raw subject omitted",
+          "CSV omits raw subject",
+          "HTML text encoded",
+          "JSON is not script embedding protection",
+          "SQL attack-shaped value stays data",
+          "owned loopback",
+          "TLS hostname requirement",
+          "TLS certificate requirement",
+          "fixed child argument roundtrip",
+          "PDF Info removed",
+          "PDF XMP creator survives",
+          "owned temporary root",
+          "actual write and restore chain",
+          "changed bytes rejected",
+          "replaced plain hash rejected",
+          "original preserved",
+          "temporary tree removed"
+        ],
+        "child_arguments": [
+          "fixture & $(fake) --flag \"quoted\""
+        ],
+        "context_encodings": {
+          "html": "<p>&lt;/script&gt;&lt;b title=&quot;fixture&quot;&gt;&amp;&lt;/b&gt;</p>",
+          "json": "{\"message\": \"</script><b title=\\\"fixture\\\">&</b>\"}",
+          "xml": "<message>&lt;/script&gt;&lt;b title=\"fixture\"&gt;&amp;&lt;/b&gt;</message>"
+        },
+        "correlation": [
+          {
+            "action": "check context and clock offsets",
+            "decision": "triage",
+            "failures": 3,
+            "first": "2026-09-30T00:00:00+00:00",
+            "host": "lab-a",
+            "last": "2026-09-30T00:04:00+00:00",
+            "sources": "auth,firewall,server",
+            "subject_token": "5096c8bde7a9e730008b1a5338c757e1495b6f70cc435d8ffb8ae3c4062a976c"
+          }
+        ],
+        "csv": "subject_token,host,failures,sources,first,last,decision,action\n5096c8bde7a9e730008b1a5338c757e1495b6f70cc435d8ffb8ae3c4062a976c,lab-a,3,\"auth,firewall,server\",2026-09-30T00:00:00+00:00,2026-09-30T00:04:00+00:00,triage,check context and clock offsets\n",
+        "limits": [
+          "Public fixture key; not confidentiality or key management",
+          "Pseudonymized identifiers, not anonymous records",
+          "One owned loopback listener; no scan or TLS handshake",
+          "TLS policy inspection; no remote certificate verification",
+          "One blank PDF; no document sanitization or AES execution",
+          "Private owned path; simulated escape test is not TOCTOU proof",
+          "One byte fixture restored; not application recovery or RTO/RPO",
+          "No scheduler, notification, service restart or package install"
+        ],
+        "loopback": "LAB\n",
+        "passed_checks": 21,
+        "pdf": {
+          "info_removed": true,
+          "pages": 1,
+          "xmp_creator": [
+            "Synthetic creator"
+          ]
+        },
+        "restore_chain": [
+          {
+            "stage": "precheck",
+            "status": "passed"
+          },
+          {
+            "stage": "backup",
+            "status": "passed"
+          },
+          {
+            "stage": "restore",
+            "status": "passed"
+          }
+        ],
+        "tls_policy": {
+          "check_hostname": true,
+          "require_certificate": true
+        }
+      },
+      "selected_lint": {
+        "command": [
+          "python",
+          "-m",
+          "ruff",
+          "check",
+          "security_workbook.py",
+          "test_security_workbook.py",
+          "observations.py",
+          "--select",
+          "E4,E7,E9,F,W,E501",
+          "--line-length",
+          "79",
+          "--output-format",
+          "concise"
+        ],
+        "exit_code": 0,
+        "stdout": "All checks passed!\n",
+        "stderr": "",
+        "version": "ruff 0.16.4"
+      },
+      "missing_tools": [
+        "cryptography",
+        "paramiko",
+        "psutil",
+        "bandit",
+        "PyPDF2",
+        "docx",
+        "openpyxl",
+        "apscheduler",
+        "nmap",
+        "pylint",
+        "flake8",
+        "Crypto",
+        "Cryptodome"
+      ],
+      "execution_boundary": "Three exact original files and synthetic data. Thirty test methods and21 observation checks per normal/optimized mode. One owned ephemeral loopback connection per applicable run, fixed short Python child, in-memory SQLite/PDF and owned temporary byte-file backup/restore. TLS policy inspected without handshake; simulated timeout and resolved-path escape identified. No scans, real TLS/SSH, scheduling/notifications, service or runtime changes, installs, document sanitization/AES/Fernet execution, full twelve-lab completion or human readiness approval."
+    }
+  },
+  "answered_checks": 17,
+  "limitations": [
+    "35directreceipts:27ok,6errors,2blocked. Indexedfallback readingsareseparatefromnetworkhealth. CompletecanonicalEnglishobjectives/MQCread;fullPDF,historicalmonitorhashsuccess,linkedcourse/book/labinteriors andunreadmanualsections remainunverified.",
+    "Threeexactoriginalfiles pass30methods+21observationchecks pernormal/optimizedmode on existingCPython3.13.14/pypdf6.16.1/Ruff0.16.4. Selectedlintonly;noPylint/Flake8execution. Publicdeterministickey andsyntheticdata protectno realidentity.",
+    "Ownedloopbackonly;TLScontextpolicywithout handshake,syntheticexpiry,shortfixedchild withsimulatedtimeout,SQLite/PDFinmemory,privateownedpathwithsimulatedescape andone25-bytebackuprestore. No realTLS/SSH/scan/processinventory/AV/hosthardening/scheduling/notification/infrastructurechange.",
+    "Cryptography,paramiko,psutil,PyPDF2,python-docx,openpyxl,APScheduler,python-nmap,Pylint,Flake8,Bandit andAESbackends unavailable/uninstalled. Existingpypdfmetadata-onlyexperiment isnotwholeobjectiveequivalence;noFernet/AES/document-sanitization execution.",
+    "Twelvebroaderlabs,applicationrecovery,RTO/RPO,clock/sourceauthenticity,realkeylifecycle,document/macros/hiddencontent,legalapplicability andindependenthumancontent/accessibilityreview remainpending. Practiceavailability/passedretakewording unresolved. No account,purchase,paidinterior,protectedquestions orreadinessapproval."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 180,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Three exact original files and synthetic data. Thirty test methods and21 observation checks per normal/optimized mode. One owned ephemeral loopback connection per applicable run, fixed short Python child, in-memory SQLite/PDF and owned temporary byte-file backup/restore. TLS policy inspected without handshake; simulated timeout and resolved-path escape identified. No scans, real TLS/SSH, scheduling/notifications, service or runtime changes, installs, document sanitization/AES/Fernet execution, full twelve-lab completion or human readiness approval.",
+    "passed": true,
+    "versions": {
+      "python": "3.13.14",
+      "pypdf": "6.16.1",
+      "ruff": "ruff 0.16.4"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "public_files": [
+      {
+        "filename": "security_workbook.py",
+        "sha256": "077041ba04f665291b614d42b779d0925e0a3847723fb2b60a54458592ae0327",
+        "bytes": 9166,
+        "syntax_checked": true,
+        "executed": true
+      },
+      {
+        "filename": "test_security_workbook.py",
+        "sha256": "6a69166a43792fc0004515f9587e18e5d01327d2a93b50c0712090379be6d021",
+        "bytes": 12597,
+        "syntax_checked": true,
+        "executed": true
+      },
+      {
+        "filename": "observations.py",
+        "sha256": "7964c7835a7b03dd2d07a39c672ebf1fb5de8eab157c0869dffd8fc83edfa4f5",
+        "bytes": 4834,
+        "syntax_checked": true,
+        "executed": true
+      }
+    ],
+    "test_methods_per_mode": 30,
+    "observation_checks_per_mode": 21,
+    "execution_runs": 4,
+    "results": [
+      {
+        "program": "unittest",
+        "command": [
+          "python",
+          "-B",
+          "-Werror",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          ".",
+          "-p",
+          "test_security_workbook.py",
+          "-v"
+        ],
+        "started_at": "2026-09-30T05:04:15.946591+00:00",
+        "elapsed_seconds": 0.364,
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "test_backup_rejects_invalid_key_or_payload (test_security_workbook.SecurityTests.test_backup_rejects_invalid_key_or_payload) ... ok\ntest_backup_replaced_unkeyed_hash_is_insufficient (test_security_workbook.SecurityTests.test_backup_replaced_unkeyed_hash_is_insufficient) ... ok\ntest_backup_roundtrip_and_byte_tamper (test_security_workbook.SecurityTests.test_backup_roundtrip_and_byte_tamper) ... ok\ntest_backup_schema_length_and_digest_validation (test_security_workbook.SecurityTests.test_backup_schema_length_and_digest_validation) ... ok\ntest_chain_halts_before_later_side_effects (test_security_workbook.SecurityTests.test_chain_halts_before_later_side_effects) ... ok\ntest_chain_records_error_type_without_sensitive_message (test_security_workbook.SecurityTests.test_chain_records_error_type_without_sensitive_message) ... ok\ntest_chain_requires_exact_success_and_preserves_order (test_security_workbook.SecurityTests.test_chain_requires_exact_success_and_preserves_order) ... ok\ntest_child_keeps_shell_like_text_in_one_argument (test_security_workbook.SecurityTests.test_child_keeps_shell_like_text_in_one_argument) ... ok\ntest_child_propagates_timeout_and_validates_first (test_security_workbook.SecurityTests.test_child_propagates_timeout_and_validates_first) ... ok\ntest_correlation_excludes_old_future_success_and_other_host (test_security_workbook.SecurityTests.test_correlation_excludes_old_future_success_and_other_host) ... ok\ntest_correlation_key_changes_linkability (test_security_workbook.SecurityTests.test_correlation_key_changes_linkability) ... ok\ntest_correlation_preserves_input_and_exact_window (test_security_workbook.SecurityTests.test_correlation_preserves_input_and_exact_window) ... ok\ntest_correlation_rejects_conflicting_identity (test_security_workbook.SecurityTests.test_correlation_rejects_conflicting_identity) ... ok\ntest_correlation_rejects_schema_and_unbounded_inputs (test_security_workbook.SecurityTests.test_correlation_rejects_schema_and_unbounded_inputs) ... ok\ntest_correlation_threshold_and_duplicate_replay (test_security_workbook.SecurityTests.test_correlation_threshold_and_duplicate_replay) ... ok\ntest_csv_report_is_controlled_and_roundtrips (test_security_workbook.SecurityTests.test_csv_report_is_controlled_and_roundtrips) ... ok\ntest_encoding_has_context_specific_expected_values (test_security_workbook.SecurityTests.test_encoding_has_context_specific_expected_values) ... ok\ntest_encoding_rejects_control_and_excess_length (test_security_workbook.SecurityTests.test_encoding_rejects_control_and_excess_length) ... ok\ntest_expiry_exact_boundaries (test_security_workbook.SecurityTests.test_expiry_exact_boundaries) ... ok\ntest_fixture_missing_or_directory (test_security_workbook.SecurityTests.test_fixture_missing_or_directory) ... ok\ntest_fixture_rejects_path_syntax_before_io (test_security_workbook.SecurityTests.test_fixture_rejects_path_syntax_before_io) ... ok\ntest_fixture_simulated_resolved_parent_escape (test_security_workbook.SecurityTests.test_fixture_simulated_resolved_parent_escape) ... ok\ntest_fixture_valid_and_size_boundary (test_security_workbook.SecurityTests.test_fixture_valid_and_size_boundary) ... ok\ntest_owned_loopback_roundtrip (test_security_workbook.SecurityTests.test_owned_loopback_roundtrip) ... ok\ntest_parameterized_lookup_preserves_query_intent (test_security_workbook.SecurityTests.test_parameterized_lookup_preserves_query_intent) ... ok\ntest_pdf_info_removal_leaves_xmp (test_security_workbook.SecurityTests.test_pdf_info_removal_leaves_xmp) ... ok\ntest_sql_rejects_invalid_type (test_security_workbook.SecurityTests.test_sql_rejects_invalid_type) ... ok\ntest_timestamp_offset_equivalence (test_security_workbook.SecurityTests.test_timestamp_offset_equivalence) ... ok\ntest_timestamp_rejects_missing_offset_and_bad_data (test_security_workbook.SecurityTests.test_timestamp_rejects_missing_offset_and_bad_data) ... ok\ntest_tls_policy_without_handshake (test_security_workbook.SecurityTests.test_tls_policy_without_handshake) ... ok\n\n----------------------------------------------------------------------\nRan 30 tests in 0.184s\n\nOK\n",
+        "optimized": false,
+        "test_methods": 30
+      },
+      {
+        "program": "observations",
+        "command": [
+          "python",
+          "-B",
+          "-Werror",
+          "observations.py"
+        ],
+        "started_at": "2026-09-30T05:04:16.311646+00:00",
+        "elapsed_seconds": 0.34,
+        "exit_code": 0,
+        "stdout": "{\n  \"backup_manifest\": {\n    \"length\": 25,\n    \"mac\": \"f82e6c6713b8b69d53a0d1faa1c7750a48c42fa652e6c6da94dcbe0cefbca6c8\",\n    \"sha256\": \"b5eb4e580b9346a4c75210d30bf3ee0d35b53cae9161b71ca1fd974f7128bc5c\"\n  },\n  \"checks\": [\n    \"three failures across three sources\",\n    \"timezone normalization\",\n    \"preserve original records\",\n    \"duplicate replay not counted\",\n    \"raw subject omitted\",\n    \"CSV omits raw subject\",\n    \"HTML text encoded\",\n    \"JSON is not script embedding protection\",\n    \"SQL attack-shaped value stays data\",\n    \"owned loopback\",\n    \"TLS hostname requirement\",\n    \"TLS certificate requirement\",\n    \"fixed child argument roundtrip\",\n    \"PDF Info removed\",\n    \"PDF XMP creator survives\",\n    \"owned temporary root\",\n    \"actual write and restore chain\",\n    \"changed bytes rejected\",\n    \"replaced plain hash rejected\",\n    \"original preserved\",\n    \"temporary tree removed\"\n  ],\n  \"child_arguments\": [\n    \"fixture & $(fake) --flag \\\"quoted\\\"\"\n  ],\n  \"context_encodings\": {\n    \"html\": \"<p>&lt;/script&gt;&lt;b title=&quot;fixture&quot;&gt;&amp;&lt;/b&gt;</p>\",\n    \"json\": \"{\\\"message\\\": \\\"</script><b title=\\\\\\\"fixture\\\\\\\">&</b>\\\"}\",\n    \"xml\": \"<message>&lt;/script&gt;&lt;b title=\\\"fixture\\\"&gt;&amp;&lt;/b&gt;</message>\"\n  },\n  \"correlation\": [\n    {\n      \"action\": \"check context and clock offsets\",\n      \"decision\": \"triage\",\n      \"failures\": 3,\n      \"first\": \"2026-09-30T00:00:00+00:00\",\n      \"host\": \"lab-a\",\n      \"last\": \"2026-09-30T00:04:00+00:00\",\n      \"sources\": \"auth,firewall,server\",\n      \"subject_token\": \"5096c8bde7a9e730008b1a5338c757e1495b6f70cc435d8ffb8ae3c4062a976c\"\n    }\n  ],\n  \"csv\": \"subject_token,host,failures,sources,first,last,decision,action\\n5096c8bde7a9e730008b1a5338c757e1495b6f70cc435d8ffb8ae3c4062a976c,lab-a,3,\\\"auth,firewall,server\\\",2026-09-30T00:00:00+00:00,2026-09-30T00:04:00+00:00,triage,check context and clock offsets\\n\",\n  \"limits\": [\n    \"Public fixture key; not confidentiality or key management\",\n    \"Pseudonymized identifiers, not anonymous records\",\n    \"One owned loopback listener; no scan or TLS handshake\",\n    \"TLS policy inspection; no remote certificate verification\",\n    \"One blank PDF; no document sanitization or AES execution\",\n    \"Private owned path; simulated escape test is not TOCTOU proof\",\n    \"One byte fixture restored; not application recovery or RTO/RPO\",\n    \"No scheduler, notification, service restart or package install\"\n  ],\n  \"loopback\": \"LAB\\n\",\n  \"passed_checks\": 21,\n  \"pdf\": {\n    \"info_removed\": true,\n    \"pages\": 1,\n    \"xmp_creator\": [\n      \"Synthetic creator\"\n    ]\n  },\n  \"restore_chain\": [\n    {\n      \"stage\": \"precheck\",\n      \"status\": \"passed\"\n    },\n    {\n      \"stage\": \"backup\",\n      \"status\": \"passed\"\n    },\n    {\n      \"stage\": \"restore\",\n      \"status\": \"passed\"\n    }\n  ],\n  \"tls_policy\": {\n    \"check_hostname\": true,\n    \"require_certificate\": true\n  }\n}\n",
+        "stderr": "",
+        "optimized": false,
+        "checks": 21
+      },
+      {
+        "program": "unittest",
+        "command": [
+          "python",
+          "-B",
+          "-Werror",
+          "-O",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          ".",
+          "-p",
+          "test_security_workbook.py",
+          "-v"
+        ],
+        "started_at": "2026-09-30T05:04:16.651984+00:00",
+        "elapsed_seconds": 1.351,
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "test_backup_rejects_invalid_key_or_payload (test_security_workbook.SecurityTests.test_backup_rejects_invalid_key_or_payload) ... ok\ntest_backup_replaced_unkeyed_hash_is_insufficient (test_security_workbook.SecurityTests.test_backup_replaced_unkeyed_hash_is_insufficient) ... ok\ntest_backup_roundtrip_and_byte_tamper (test_security_workbook.SecurityTests.test_backup_roundtrip_and_byte_tamper) ... ok\ntest_backup_schema_length_and_digest_validation (test_security_workbook.SecurityTests.test_backup_schema_length_and_digest_validation) ... ok\ntest_chain_halts_before_later_side_effects (test_security_workbook.SecurityTests.test_chain_halts_before_later_side_effects) ... ok\ntest_chain_records_error_type_without_sensitive_message (test_security_workbook.SecurityTests.test_chain_records_error_type_without_sensitive_message) ... ok\ntest_chain_requires_exact_success_and_preserves_order (test_security_workbook.SecurityTests.test_chain_requires_exact_success_and_preserves_order) ... ok\ntest_child_keeps_shell_like_text_in_one_argument (test_security_workbook.SecurityTests.test_child_keeps_shell_like_text_in_one_argument) ... ok\ntest_child_propagates_timeout_and_validates_first (test_security_workbook.SecurityTests.test_child_propagates_timeout_and_validates_first) ... ok\ntest_correlation_excludes_old_future_success_and_other_host (test_security_workbook.SecurityTests.test_correlation_excludes_old_future_success_and_other_host) ... ok\ntest_correlation_key_changes_linkability (test_security_workbook.SecurityTests.test_correlation_key_changes_linkability) ... ok\ntest_correlation_preserves_input_and_exact_window (test_security_workbook.SecurityTests.test_correlation_preserves_input_and_exact_window) ... ok\ntest_correlation_rejects_conflicting_identity (test_security_workbook.SecurityTests.test_correlation_rejects_conflicting_identity) ... ok\ntest_correlation_rejects_schema_and_unbounded_inputs (test_security_workbook.SecurityTests.test_correlation_rejects_schema_and_unbounded_inputs) ... ok\ntest_correlation_threshold_and_duplicate_replay (test_security_workbook.SecurityTests.test_correlation_threshold_and_duplicate_replay) ... ok\ntest_csv_report_is_controlled_and_roundtrips (test_security_workbook.SecurityTests.test_csv_report_is_controlled_and_roundtrips) ... ok\ntest_encoding_has_context_specific_expected_values (test_security_workbook.SecurityTests.test_encoding_has_context_specific_expected_values) ... ok\ntest_encoding_rejects_control_and_excess_length (test_security_workbook.SecurityTests.test_encoding_rejects_control_and_excess_length) ... ok\ntest_expiry_exact_boundaries (test_security_workbook.SecurityTests.test_expiry_exact_boundaries) ... ok\ntest_fixture_missing_or_directory (test_security_workbook.SecurityTests.test_fixture_missing_or_directory) ... ok\ntest_fixture_rejects_path_syntax_before_io (test_security_workbook.SecurityTests.test_fixture_rejects_path_syntax_before_io) ... ok\ntest_fixture_simulated_resolved_parent_escape (test_security_workbook.SecurityTests.test_fixture_simulated_resolved_parent_escape) ... ok\ntest_fixture_valid_and_size_boundary (test_security_workbook.SecurityTests.test_fixture_valid_and_size_boundary) ... ok\ntest_owned_loopback_roundtrip (test_security_workbook.SecurityTests.test_owned_loopback_roundtrip) ... ok\ntest_parameterized_lookup_preserves_query_intent (test_security_workbook.SecurityTests.test_parameterized_lookup_preserves_query_intent) ... ok\ntest_pdf_info_removal_leaves_xmp (test_security_workbook.SecurityTests.test_pdf_info_removal_leaves_xmp) ... ok\ntest_sql_rejects_invalid_type (test_security_workbook.SecurityTests.test_sql_rejects_invalid_type) ... ok\ntest_timestamp_offset_equivalence (test_security_workbook.SecurityTests.test_timestamp_offset_equivalence) ... ok\ntest_timestamp_rejects_missing_offset_and_bad_data (test_security_workbook.SecurityTests.test_timestamp_rejects_missing_offset_and_bad_data) ... ok\ntest_tls_policy_without_handshake (test_security_workbook.SecurityTests.test_tls_policy_without_handshake) ... ok\n\n----------------------------------------------------------------------\nRan 30 tests in 1.176s\n\nOK\n",
+        "optimized": true,
+        "test_methods": 30
+      },
+      {
+        "program": "observations",
+        "command": [
+          "python",
+          "-B",
+          "-Werror",
+          "-O",
+          "observations.py"
+        ],
+        "started_at": "2026-09-30T05:04:18.003600+00:00",
+        "elapsed_seconds": 0.513,
+        "exit_code": 0,
+        "stdout": "{\n  \"backup_manifest\": {\n    \"length\": 25,\n    \"mac\": \"f82e6c6713b8b69d53a0d1faa1c7750a48c42fa652e6c6da94dcbe0cefbca6c8\",\n    \"sha256\": \"b5eb4e580b9346a4c75210d30bf3ee0d35b53cae9161b71ca1fd974f7128bc5c\"\n  },\n  \"checks\": [\n    \"three failures across three sources\",\n    \"timezone normalization\",\n    \"preserve original records\",\n    \"duplicate replay not counted\",\n    \"raw subject omitted\",\n    \"CSV omits raw subject\",\n    \"HTML text encoded\",\n    \"JSON is not script embedding protection\",\n    \"SQL attack-shaped value stays data\",\n    \"owned loopback\",\n    \"TLS hostname requirement\",\n    \"TLS certificate requirement\",\n    \"fixed child argument roundtrip\",\n    \"PDF Info removed\",\n    \"PDF XMP creator survives\",\n    \"owned temporary root\",\n    \"actual write and restore chain\",\n    \"changed bytes rejected\",\n    \"replaced plain hash rejected\",\n    \"original preserved\",\n    \"temporary tree removed\"\n  ],\n  \"child_arguments\": [\n    \"fixture & $(fake) --flag \\\"quoted\\\"\"\n  ],\n  \"context_encodings\": {\n    \"html\": \"<p>&lt;/script&gt;&lt;b title=&quot;fixture&quot;&gt;&amp;&lt;/b&gt;</p>\",\n    \"json\": \"{\\\"message\\\": \\\"</script><b title=\\\\\\\"fixture\\\\\\\">&</b>\\\"}\",\n    \"xml\": \"<message>&lt;/script&gt;&lt;b title=\\\"fixture\\\"&gt;&amp;&lt;/b&gt;</message>\"\n  },\n  \"correlation\": [\n    {\n      \"action\": \"check context and clock offsets\",\n      \"decision\": \"triage\",\n      \"failures\": 3,\n      \"first\": \"2026-09-30T00:00:00+00:00\",\n      \"host\": \"lab-a\",\n      \"last\": \"2026-09-30T00:04:00+00:00\",\n      \"sources\": \"auth,firewall,server\",\n      \"subject_token\": \"5096c8bde7a9e730008b1a5338c757e1495b6f70cc435d8ffb8ae3c4062a976c\"\n    }\n  ],\n  \"csv\": \"subject_token,host,failures,sources,first,last,decision,action\\n5096c8bde7a9e730008b1a5338c757e1495b6f70cc435d8ffb8ae3c4062a976c,lab-a,3,\\\"auth,firewall,server\\\",2026-09-30T00:00:00+00:00,2026-09-30T00:04:00+00:00,triage,check context and clock offsets\\n\",\n  \"limits\": [\n    \"Public fixture key; not confidentiality or key management\",\n    \"Pseudonymized identifiers, not anonymous records\",\n    \"One owned loopback listener; no scan or TLS handshake\",\n    \"TLS policy inspection; no remote certificate verification\",\n    \"One blank PDF; no document sanitization or AES execution\",\n    \"Private owned path; simulated escape test is not TOCTOU proof\",\n    \"One byte fixture restored; not application recovery or RTO/RPO\",\n    \"No scheduler, notification, service restart or package install\"\n  ],\n  \"loopback\": \"LAB\\n\",\n  \"passed_checks\": 21,\n  \"pdf\": {\n    \"info_removed\": true,\n    \"pages\": 1,\n    \"xmp_creator\": [\n      \"Synthetic creator\"\n    ]\n  },\n  \"restore_chain\": [\n    {\n      \"stage\": \"precheck\",\n      \"status\": \"passed\"\n    },\n    {\n      \"stage\": \"backup\",\n      \"status\": \"passed\"\n    },\n    {\n      \"stage\": \"restore\",\n      \"status\": \"passed\"\n    }\n  ],\n  \"tls_policy\": {\n    \"check_hostname\": true,\n    \"require_certificate\": true\n  }\n}\n",
+        "stderr": "",
+        "optimized": true,
+        "checks": 21
+      }
+    ],
+    "computed_report": {
+      "backup_manifest": {
+        "length": 25,
+        "mac": "f82e6c6713b8b69d53a0d1faa1c7750a48c42fa652e6c6da94dcbe0cefbca6c8",
+        "sha256": "b5eb4e580b9346a4c75210d30bf3ee0d35b53cae9161b71ca1fd974f7128bc5c"
+      },
+      "checks": [
+        "three failures across three sources",
+        "timezone normalization",
+        "preserve original records",
+        "duplicate replay not counted",
+        "raw subject omitted",
+        "CSV omits raw subject",
+        "HTML text encoded",
+        "JSON is not script embedding protection",
+        "SQL attack-shaped value stays data",
+        "owned loopback",
+        "TLS hostname requirement",
+        "TLS certificate requirement",
+        "fixed child argument roundtrip",
+        "PDF Info removed",
+        "PDF XMP creator survives",
+        "owned temporary root",
+        "actual write and restore chain",
+        "changed bytes rejected",
+        "replaced plain hash rejected",
+        "original preserved",
+        "temporary tree removed"
+      ],
+      "child_arguments": [
+        "fixture & $(fake) --flag \"quoted\""
+      ],
+      "context_encodings": {
+        "html": "<p>&lt;/script&gt;&lt;b title=&quot;fixture&quot;&gt;&amp;&lt;/b&gt;</p>",
+        "json": "{\"message\": \"</script><b title=\\\"fixture\\\">&</b>\"}",
+        "xml": "<message>&lt;/script&gt;&lt;b title=\"fixture\"&gt;&amp;&lt;/b&gt;</message>"
+      },
+      "correlation": [
+        {
+          "action": "check context and clock offsets",
+          "decision": "triage",
+          "failures": 3,
+          "first": "2026-09-30T00:00:00+00:00",
+          "host": "lab-a",
+          "last": "2026-09-30T00:04:00+00:00",
+          "sources": "auth,firewall,server",
+          "subject_token": "5096c8bde7a9e730008b1a5338c757e1495b6f70cc435d8ffb8ae3c4062a976c"
+        }
+      ],
+      "csv": "subject_token,host,failures,sources,first,last,decision,action\n5096c8bde7a9e730008b1a5338c757e1495b6f70cc435d8ffb8ae3c4062a976c,lab-a,3,\"auth,firewall,server\",2026-09-30T00:00:00+00:00,2026-09-30T00:04:00+00:00,triage,check context and clock offsets\n",
+      "limits": [
+        "Public fixture key; not confidentiality or key management",
+        "Pseudonymized identifiers, not anonymous records",
+        "One owned loopback listener; no scan or TLS handshake",
+        "TLS policy inspection; no remote certificate verification",
+        "One blank PDF; no document sanitization or AES execution",
+        "Private owned path; simulated escape test is not TOCTOU proof",
+        "One byte fixture restored; not application recovery or RTO/RPO",
+        "No scheduler, notification, service restart or package install"
+      ],
+      "loopback": "LAB\n",
+      "passed_checks": 21,
+      "pdf": {
+        "info_removed": true,
+        "pages": 1,
+        "xmp_creator": [
+          "Synthetic creator"
+        ]
+      },
+      "restore_chain": [
+        {
+          "stage": "precheck",
+          "status": "passed"
+        },
+        {
+          "stage": "backup",
+          "status": "passed"
+        },
+        {
+          "stage": "restore",
+          "status": "passed"
+        }
+      ],
+      "tls_policy": {
+        "check_hostname": true,
+        "require_certificate": true
+      }
+    },
+    "selected_lint": {
+      "command": [
+        "python",
+        "-m",
+        "ruff",
+        "check",
+        "security_workbook.py",
+        "test_security_workbook.py",
+        "observations.py",
+        "--select",
+        "E4,E7,E9,F,W,E501",
+        "--line-length",
+        "79",
+        "--output-format",
+        "concise"
+      ],
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": "",
+      "version": "ruff 0.16.4"
+    },
+    "missing_tools": [
+      "cryptography",
+      "paramiko",
+      "psutil",
+      "bandit",
+      "PyPDF2",
+      "docx",
+      "openpyxl",
+      "apscheduler",
+      "nmap",
+      "pylint",
+      "flake8",
+      "Crypto",
+      "Cryptodome"
+    ],
+    "learning_catalog_consistency": "passed",
+    "unit_test_elapsed_seconds": 26.195,
+    "strict_site_build_elapsed_seconds": 24.06
+  },
+  "source_reading_boundaries": {
+    "python-3-documentation": "Complete fresh index read:3.14.7 current documentation,3.13 separately listed. Navigation only, not every linked manual or release note. Selected3.13 pages say3.13.15; actual interpreter3.13.14. No inferred exam patch requirement/runtime update.",
+    "pces-30-01-syllabus": "Complete canonical indexed English syllabus including every numbered objective/detailed bullet and full MQC read after direct/monitor WinError10060. Active30-01,August21,2025,45detailedobjectives10/12/13/10 beneath19topicheadings;45items weights22/27/29/22. Original summarizedsnapshot retained; newmanual mapping explicitly separate. MQC incorrectly groups third-partypsutil/cryptography/paramiko with standardlibraries. FullPDFunread; no automatedhashsuccess.",
+    "pces-certification-page": "Complete indexed public body/table/FAQ read after direct timeout. Active30-01,noprerequisite/PCEP-equivalentrecommended,7years,45questions/60minplusNDA/75cumulative/English/TestNow,69USDexam86retake. Practice bundle81/95andpractice29 remain comingQ3/Q4 versusFAQplannedQ3; no release inferred from calendar or genericbundleinstructions. PCAScomingQ4differentcredential. Failed7dayretake. No account/purchase/protectedquestions or independently verified salary/career claims.",
+    "owasp-cheat-sheet-series": "Complete public index/introduction read; index is navigation, not every linked sheet. Selected SQL/XSS primary passages separately identified. No blanket compliance or application security verdict.",
+    "cryptography-documentation": "Complete fresh index/body read including recipes/hazmat distinction and changelog navigation; docs51.0.0-dev1. Linked changelogs/hazmat pages not read. Package absent; no install or cipher execution. Complete Fernet page separately reviewed.",
+    "paramiko-documentation": "Selected fresh opening1–88 read:client/server authentication/host-key responsibilities and API navigation. Remaining index and linked protocol APIs unread; complete client page separately reviewed. No host/credential/agent accessed.",
+    "psutil-documentation": "Complete fresh public landing/index read:cross-platform process/system monitoring examples and API/version-navigation links. No complete underlying process API reading or runtime collection. Package absent; no install. A metric/name cannot establish maliciousness.",
+    "overthewire-bandit": "Complete fresh beginner landing read:level progression,manual/help/search learning and VMconnectivity note. No level interiors,SSHlogin,credentialuse,network configuration change or measuredruntime. Author planningbudget only.",
+    "portswigger-web-security-academy": "Complete indexed public landing read after direct timeout:free training/interactive labs,freeaccountprogress/fullaccess and some tool-dependent labs with CommunityEdition free option. Linkedlabs/video/accountinteriors unread/unexecuted; no download/account. Advertisedlabcounts not completion or runtime evidence.",
+    "oreilly-practical-python-security": "Indexed publisher title,metadata and TOC through435 read:URL/ISBN9781098142155 identifies Kubernetes Best Practices,2ndedition,October2023,324pages,7h46m. Original Practical Python Security title/relevance unsupported. Removed recommendation and corrected catalog identity; no bookinterior or subscriptionentitlement reviewed. Remaininglandingbody not claimed; directfetch blocked.",
+    "pces-testing-policies": "Complete indexed canonical policy read revisedAugust22,2025 after directtimeout:specificfailed7dayrule versusfooterfailedORpassed; local24hrescheduling versusglobalunredeemedvoucher route; admission/NDA/ID/accommodation/age/conduct/penalties read. No account/booking/device test or inferredpassedretakeeligibility.",
+    "python313-subprocess": "Selected fresh60–140 run/input/capture/check/timeout/env and returncode opening;548–565 complete security section including Windowsbatch-shell exception. Webopening through368 additionally read. FixedPythonexecutable/-I/-B/program and one dataarg run locally;timeout propagation simulated. No arbitrarycommand/AV/archive cleanup.",
+    "python313-socket": "Selected fresh526–552 create_connection and create_server opening;933–978 contexts/accept/bind/close/connect opening;1037–1048 blocking/gettimeout/ioctl opening;1298–1309 settimeout. Remainingmanualunread. One ownedloopbacklistener/connection with fixedfourbytes; no scanner/externaltarget/closed-port inference.",
+    "python313-ssl": "Selected fresh93–184 completecontextcreation/defaults exceptfollowingversionhistory;373–383 CERT_REQUIRED/clienthostname andserveropening;1580–1617 clientpolicy/examples andcertificateinspectionopening. Remainingmanualunread. Actual PROTOCOL_TLS_CLIENT/defaulttrustload policy inspection; no handshake/remotecert/revocation validation,default-contextkeylogging,truststore edit oralert.",
+    "python313-sqlite3": "Selected fresh1307–1351 completeparameterbinding subsection; remainderunread. Original fixedin-memoryschema/query,attack-shaped dataargs and explicitclose executed. No real database/authorization proof.",
+    "python313-pathlib": "Selected fresh650–679 absolute/complete resolve includingstrict/symlink behavior;restunread. Original exactfilename/directparent/readlimit guard;simulatedresolvedescape distinct from actualreparsepoint/TOCTOU protection.",
+    "python313-hmac": "Selected fresh28–110 full HMAC API body throughcompare_digest andseealsoopening. Restnavigationnotclaimed. Domain-separated originalfixtureMAC andsubjectpseudonymization;publicdeterministickey is no real secret, encryption,anonymization or keymanagement demonstration.",
+    "python313-hashlib": "Selected fresh29–140 intro/algorithms/collisionwarnings/usage/constructors andattributesopening;restunread. SHA256fixturedigest and HMAC comparison observed. No publicdownload/authenticatedremotechecksum verification.",
+    "python313-datetime": "Selected fresh731–767 completefromisoformat andnextopening;900–947 time/replace/completeastimezone. Restunread. Explicitoffsets required andnormalized UTC;syntheticexpiry/window boundaries do not establish actual clock/certificate validity.",
+    "python313-html": "Fresh1–70 read including completeescape/unescape body andnavigation. Textnode/quotedcharacter contracts only;not generalJavaScript/URL/HTMLsanitization. Original expectedHTMLtext verified.",
+    "python313-json": "Selected fresh49–60 warning/intro;160–218 encoderparameters/dumpsopening;274–289 loads anddecoderopening. Restunread. OriginalserializedJSON retainsclosing-scriptsequence;standalonedata only,not scriptembedding protection.",
+    "python313-elementtree": "Selected fresh48–67 intro/untrustedXMLwarning;578–603 tostring/tostringlist andhistoryopening;679–730 text/tail/attributes/append. Restunread. Only ownserializedfixture parsed;no arbitraryXMLsecurity assessment.",
+    "python313-csv": "Selected fresh172–199 completeDictWriter contract/example andoutputopening. Restunread. Controlledcorrelationrows only;CSVquoting not arbitraryspreadsheetformula protection.",
+    "python313-tempfile": "Selected fresh149–179 completeTemporaryDirectory cleanup/delete/error behavior andmkstempopening. Restunread. Actualprivateworkbook-ownedtemporaryfiletree creation/removal verified;noexistingfiles deleted.",
+    "cryptography-fernet": "Complete freshFernet body read includingkey/token/TTL/rotation/passwordKDF/implementation/limitations. Docs51.0.0-dev1;package absent. Explainauthenticatedrecipe/visiblecreationtime/InvalidToken/keycompromise;no encryption,decryption,rotation or expiryexecution andno copiedlibraryexample.",
+    "paramiko-client": "Complete fresh clientAPI body read includinghostkeys/defaultRejectPolicy/authpriority/separatetimeouts/explicitclose/commands/SFTP/policies. Package absent,nolocalkey/agent/SSHnetworkaccess. Futurelabdesign only;remotecommandstrings not localargv.",
+    "nist-authenticator-requirements": "Selected fresh45–94 tabletail plus completepasswordauthenticator/verifier requirements60–93;257–269 completephishingresistance/channel/verifierbinding andnextheading. Restunread. ScopedNISTguidance distinguished fromlegacysettingnames anduniversallegalrequirements;noactualpassword/MFAchanges.",
+    "owasp-xss-prevention": "Selected fresh194–278 introduction/framework/philosophy/HTML,attribute,JS,CSS,URL,dangerouscontexts andsanitizationopening. Restunread. OriginalHTMLtext/XMLtext/standaloneJSONselectedexamples only;no browserexecution or completeXSSprevention verdict.",
+    "owasp-sql-injection-prevention": "Selected fresh200–238 introduction/attackanatomy/primarydefenses/parameterizedJava/C#examplespartial;280–339 completeallowlist/dynamicSQLwarning/leastprivilege/relatedlinksopening. Restunread. OriginalSQLitevaluebinding,not copiedvendor code or universalDBsecurity.",
+    "hhs-breach-notification": "CompleteindexedHHSbody51–111 read afterdirectblocked:coveredentities/businessassociates,unsecuredPHI/risk/exceptions,individual/media/Secretary/BAdeadlines anddocumentationburden. FooterlastreviewJuly26,2013. Guidegives scopedstudyexample,notrealapplicability/compliance/legaladvice or fullCFRaudit.",
+    "california-ag-ccpa": "IndexedselectedAGsearchbody read:August28,2026update,privacyrights/CPRAamendment,businessscope andselectedrequestFAQ excerpts. FullFAQ/regulations/statuteunread. Guideonlyscopedrights/qualifyingbusiness distinction;no genericbreachdeadline/threshold/fine assertion. Directtimeout.",
+    "eu-data-breach-response": "OldURLfailed;updatedcanonicalCommissionobligationspagefound. Indexedbody0–183 read includingcompletebreachsection107–127,privacybydesign/security andDPIA/DPOsections;remainingfooter/linkcontentsunread. Scoped72hawareness/risk/processor/highriskindividualnotice example. DirectnewURLtimeout preserved;no wholeGDPR or actualapplicability determination.",
+    "pypdf-metadata": "Completefreshmetadata body read docs6.19.0. Actualinstalled6.16.1 originalblankPDF experiment removesInfo whileXMPcreator survives. Noarbitrarydocument,complete removal/sanitization,text extraction or equivalencewithnamedPyPDF2requirements.",
+    "pypdf-encryption": "Completefreshencryption/decryption body read docs6.19.0:explicitAESalgorithm/extrabackend,defaultRC4warning. Bothcryptography andPyCryptodome backends absent;no AES/RC4encryption,decryption or realpassword used. Futureexercise only.",
+    "ruff-linter": "FreshbodymatchesPCET SHA256638a424e58de26f0ae126ac5b283aa0a85857bd6107715b3df7d1a069218919d. Reusedselected1–137 intro/check/rules,227–250 fixexample/opening,469–490exitflags;restunread. Existing0.16.4 selectedrulespass79columns;notPylint/Flake8/securityaudit orautofix."
+  },
+  "reused_source_reading_hashes": {
+    "ruff-linter": {
+      "identical": true,
+      "current_sha256": "638a424e58de26f0ae126ac5b283aa0a85857bd6107715b3df7d1a069218919d",
+      "prior_sha256": "638a424e58de26f0ae126ac5b283aa0a85857bd6107715b3df7d1a069218919d",
+      "reused_sections": "1–137 introduction/check/rule selection,227–250 fix example/opening,469–490 exit flags; rest unread"
+    }
+  },
+  "public_examples": [
+    {
+      "filename": "security_workbook.py",
+      "sha256": "077041ba04f665291b614d42b779d0925e0a3847723fb2b60a54458592ae0327",
+      "bytes": 9166,
+      "syntax_checked": true,
+      "executed": true,
+      "code": "\"\"\"Original finite PCES exercises. Synthetic data and owned resources only.\"\"\"\n\nimport csv\nimport hashlib\nimport hmac\nimport html\nimport io\nimport json\nimport os\nfrom pathlib import Path\nimport socket\nimport sqlite3\nimport ssl\nimport subprocess\nimport sys\nfrom datetime import datetime, timedelta, timezone\nfrom xml.etree import ElementTree as ET\n\n\ndef text(value, limit=256):\n    if type(value) is not str:\n        raise TypeError(\"text required\")\n    if not 1 <= len(value) <= limit or not value.isprintable():\n        raise ValueError(\"invalid text\")\n    return value\n\n\ndef key_bytes(key):\n    if type(key) is not bytes or len(key) != 32:\n        raise ValueError(\"32-byte key required\")\n    return key\n\n\ndef utc(value):\n    result = datetime.fromisoformat(text(value, 64))\n    if result.utcoffset() is None:\n        raise ValueError(\"explicit time offset required\")\n    return result.astimezone(timezone.utc)\n\n\ndef expiry_status(now, expiry):\n    remaining = (utc(expiry) - utc(now)).total_seconds()\n    if remaining <= 0:\n        return \"expired\"\n    return \"due-soon\" if remaining <= 7 * 86400 else \"outside-window\"\n\n\ndef correlate(events, now, key):\n    \"\"\"Fixed five-minute inclusive window; a triage lead, not attribution.\"\"\"\n    key_bytes(key)\n    if type(events) is not list or len(events) > 1000:\n        raise ValueError(\"bounded event list required\")\n    end = utc(now)\n    start = end - timedelta(minutes=5)\n    seen, buckets = {}, {}\n    required = {\"id\", \"source\", \"subject\", \"host\", \"outcome\", \"time\"}\n    for event in events:\n        if type(event) is not dict or set(event) != required:\n            raise ValueError(\"unexpected event schema\")\n        for value in event.values():\n            text(value)\n        if event[\"source\"] not in {\"auth\", \"server\", \"firewall\"}:\n            raise ValueError(\"unknown source\")\n        if event[\"host\"] not in {\"lab-a\", \"lab-b\"}:\n            raise ValueError(\"unknown host\")\n        if event[\"outcome\"] not in {\"failed\", \"ok\"}:\n            raise ValueError(\"unknown outcome\")\n        moment = utc(event[\"time\"])\n        identity = (event[\"source\"], event[\"id\"])\n        if identity in seen:\n            if seen[identity] != event:\n                raise ValueError(\"conflicting event identity\")\n            continue\n        seen[identity] = event.copy()\n        if event[\"outcome\"] != \"failed\" or not start <= moment <= end:\n            continue\n        token = hmac.digest(\n            key, b\"PCES subject\\0\" + event[\"subject\"].encode(), \"sha256\"\n        ).hex()\n        bucket = buckets.setdefault((token, event[\"host\"]), [])\n        bucket.append((moment, event[\"source\"]))\n    rows = []\n    for (token, host), entries in sorted(buckets.items()):\n        if len(entries) >= 3:\n            rows.append(dict(\n                subject_token=token, host=host, failures=len(entries),\n                sources=\",\".join(sorted({source for _, source in entries})),\n                first=min(t for t, _ in entries).isoformat(),\n                last=max(t for t, _ in entries).isoformat(),\n                decision=\"triage\", action=\"check context and clock offsets\",\n            ))\n    return rows\n\n\ndef csv_report(rows):\n    \"\"\"Only accepts the controlled output of correlate, not arbitrary cells.\"\"\"\n    stream = io.StringIO(newline=\"\")\n    fields = [\n        \"subject_token\", \"host\", \"failures\", \"sources\", \"first\", \"last\",\n        \"decision\", \"action\",\n    ]\n    writer = csv.DictWriter(stream, fieldnames=fields, lineterminator=\"\\n\")\n    writer.writeheader()\n    writer.writerows(rows)\n    return stream.getvalue()\n\n\ndef encode_text(value):\n    value = text(value)\n    node = ET.Element(\"message\")\n    node.text = value\n    return dict(\n        html=\"<p>\" + html.escape(value) + \"</p>\",\n        xml=ET.tostring(node, encoding=\"unicode\"),\n        json=json.dumps({\"message\": value}, ensure_ascii=True),\n    )\n\n\ndef lookup_label(value):\n    value = text(value)\n    connection = sqlite3.connect(\":memory:\")\n    try:\n        connection.execute(\"CREATE TABLE labels (name TEXT PRIMARY KEY)\")\n        connection.executemany(\n            \"INSERT INTO labels VALUES (?)\", [(\"amber\",), (\"blue\",)]\n        )\n        return connection.execute(\n            \"SELECT name FROM labels WHERE name = ?\", (value,)\n        ).fetchall()\n    finally:\n        connection.close()\n\n\ndef read_fixture(root, name):\n    \"\"\"Trusted private root. Resolve/check/open is NOT race-free isolation.\"\"\"\n    if type(name) is not str or name not in {\"notes.txt\", \"report.json\"}:\n        raise ValueError(\"unapproved fixture\")\n    base = Path(root).resolve(strict=True)\n    target = (base / name).resolve(strict=True)\n    if not base.is_dir() or target.parent != base or not target.is_file():\n        raise ValueError(\"fixture must be a direct regular file\")\n    with target.open(\"rb\") as stream:\n        data = stream.read(1025)\n    if len(data) > 1024:\n        raise ValueError(\"fixture too large\")\n    return data\n\n\ndef seal(data, key):\n    key_bytes(key)\n    if type(data) is not bytes or len(data) > 1024:\n        raise ValueError(\"bounded bytes required\")\n    return dict(\n        length=len(data), sha256=hashlib.sha256(data).hexdigest(),\n        mac=hmac.digest(key, b\"PCES backup\\0\" + data, \"sha256\").hex(),\n    )\n\n\ndef verify_backup(data, manifest, key):\n    expected = seal(data, key)\n    if type(manifest) is not dict or set(manifest) != set(expected):\n        return False\n    if type(manifest[\"length\"]) is not int:\n        return False\n    for name in [\"sha256\", \"mac\"]:\n        value = manifest[name]\n        if type(value) is not str or len(value) != 64:\n            return False\n        if any(c not in \"0123456789abcdef\" for c in value):\n            return False\n    return (\n        manifest[\"length\"] == expected[\"length\"]\n        and hmac.compare_digest(manifest[\"sha256\"], expected[\"sha256\"])\n        and hmac.compare_digest(manifest[\"mac\"], expected[\"mac\"])\n    )\n\n\ndef owned_loopback():\n    \"\"\"One connection to this function's own ephemeral listener; no scan.\"\"\"\n    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as listener:\n        listener.bind((\"127.0.0.1\", 0))\n        listener.listen(1)\n        listener.settimeout(2)\n        address = listener.getsockname()\n        with socket.create_connection(address, timeout=2) as client:\n            accepted, peer = listener.accept()\n            with accepted:\n                accepted.settimeout(2)\n                accepted.sendall(b\"LAB\\n\")\n                received = b\"\"\n                while len(received) < 4:\n                    part = client.recv(4 - len(received))\n                    if not part:\n                        raise RuntimeError(\"unexpected end of stream\")\n                    received += part\n                if peer[0] != \"127.0.0.1\":\n                    raise RuntimeError(\"unexpected peer\")\n    return received.decode(\"ascii\")\n\n\ndef tls_policy():\n    # No default-context SSLKEYLOGFILE handling, handshake or trust-store edit.\n    context = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)\n    context.load_default_certs()\n    return dict(\n        check_hostname=context.check_hostname,\n        require_certificate=context.verify_mode == ssl.CERT_REQUIRED,\n    )\n\n\ndef child_echo(value):\n    value = text(value)\n    # Fixed interpreter/program. Value is one data argument, never source.\n    program = \"import json,sys; print(json.dumps(sys.argv[1:]))\"\n    flags = subprocess.CREATE_NO_WINDOW if os.name == \"nt\" else 0\n    result = subprocess.run(\n        [sys.executable, \"-I\", \"-B\", \"-c\", program, value],\n        shell=False, timeout=5, check=True, capture_output=True,\n        text=True, encoding=\"utf-8\", creationflags=flags,\n    )\n    return json.loads(result.stdout)\n\n\ndef run_chain(stages):\n    \"\"\"Trusted injected callbacks; stop on exception or non-True result.\"\"\"\n    events = []\n    for name, action in stages:\n        try:\n            result = action()\n        except Exception as error:\n            events.append(dict(stage=name, status=\"error\",\n                               error_type=type(error).__name__))\n            break\n        if result is not True:\n            events.append(dict(stage=name, status=\"failed\"))\n            break\n        events.append(dict(stage=name, status=\"passed\"))\n    return events\n\n\ndef pdf_metadata_probe():\n    \"\"\"One original blank PDF. Info removal alone leaves XMP creator data.\"\"\"\n    from pypdf import PdfReader, PdfWriter\n    from pypdf.xmp import XmpInformation\n\n    with io.BytesIO() as raw:\n        writer = PdfWriter()\n        try:\n            writer.add_blank_page(width=72, height=72)\n            writer.add_metadata({\"/Author\": \"Synthetic author\"})\n            xmp = XmpInformation.create()\n            xmp.dc_creator = [\"Synthetic creator\"]\n            writer.xmp_metadata = xmp\n            writer.metadata = None\n            writer.write(raw)\n        finally:\n            writer.close()\n        raw.seek(0)\n        reader = PdfReader(raw)\n        try:\n            return dict(\n                info_removed=reader.metadata is None,\n                xmp_creator=reader.xmp_metadata.dc_creator,\n                pages=len(reader.pages),\n            )\n        finally:\n            reader.close()\n"
+    },
+    {
+      "filename": "test_security_workbook.py",
+      "sha256": "6a69166a43792fc0004515f9587e18e5d01327d2a93b50c0712090379be6d021",
+      "bytes": 12597,
+      "syntax_checked": true,
+      "executed": true,
+      "code": "\"\"\"Independent fixed expectations for original, synthetic PCES exercises.\"\"\"\n\nimport copy\nimport csv\nimport io\nimport json\nfrom pathlib import Path\nimport subprocess\nimport tempfile\nimport unittest\nfrom unittest.mock import patch\nfrom xml.etree import ElementTree as ET\n\nimport security_workbook as lab\n\n\nKEY = bytes(range(32))  # Public deterministic fixture, never a real secret.\nNOW = \"2026-09-30T00:05:00+00:00\"\n\n\ndef sample_events():\n    return [dict(\n        id=str(i), source=source, subject=\"=synthetic-user()\", host=\"lab-a\",\n        outcome=\"failed\", time=timestamp,\n    ) for i, (source, timestamp) in enumerate([\n        (\"auth\", \"2026-09-29T20:00:00-04:00\"),\n        (\"server\", \"2026-09-30T00:02:00Z\"),\n        (\"firewall\", \"2026-09-30T01:04:00+01:00\"),\n    ])]\n\n\nclass SecurityTests(unittest.TestCase):\n    def test_timestamp_offset_equivalence(self):\n        self.assertEqual(lab.utc(\"2026-09-29T20:00:00-04:00\").isoformat(),\n                         \"2026-09-30T00:00:00+00:00\")\n\n    def test_timestamp_rejects_missing_offset_and_bad_data(self):\n        for value in [\"2026-09-30\", \"wrong\", \"2026-09-30T00:00:00\", \"\"]:\n            with self.subTest(value=value), self.assertRaises(ValueError):\n                lab.utc(value)\n        with self.assertRaises(TypeError):\n            lab.utc(None)\n\n    def test_expiry_exact_boundaries(self):\n        now = \"2026-09-30T00:00:00Z\"\n        for expiry, expected in [\n            (\"2026-09-29T23:59:59Z\", \"expired\"),\n            (now, \"expired\"),\n            (\"2026-09-30T00:00:01Z\", \"due-soon\"),\n            (\"2026-10-07T00:00:00Z\", \"due-soon\"),\n            (\"2026-10-07T00:00:01Z\", \"outside-window\"),\n        ]:\n            with self.subTest(expiry=expiry):\n                self.assertEqual(lab.expiry_status(now, expiry), expected)\n\n    def test_correlation_preserves_input_and_exact_window(self):\n        events = sample_events()\n        before = copy.deepcopy(events)\n        row, = lab.correlate(events, NOW, KEY)\n        self.assertEqual(events, before)\n        self.assertEqual(row[\"failures\"], 3)\n        self.assertEqual(row[\"sources\"], \"auth,firewall,server\")\n        self.assertEqual(row[\"first\"], \"2026-09-30T00:00:00+00:00\")\n        self.assertEqual(row[\"last\"], \"2026-09-30T00:04:00+00:00\")\n        self.assertEqual(row[\"decision\"], \"triage\")\n        self.assertNotIn(\"=synthetic-user()\", json.dumps(row))\n\n    def test_correlation_threshold_and_duplicate_replay(self):\n        events = sample_events()\n        self.assertEqual(lab.correlate(events[:2], NOW, KEY), [])\n        self.assertEqual(lab.correlate(events + events, NOW, KEY),\n                         lab.correlate(events, NOW, KEY))\n\n    def test_correlation_rejects_conflicting_identity(self):\n        events = sample_events()\n        extra = dict(events[0], subject=\"different\")\n        with self.assertRaisesRegex(ValueError, \"conflicting\"):\n            lab.correlate(events + [extra], NOW, KEY)\n\n    def test_correlation_excludes_old_future_success_and_other_host(self):\n        for change in [\n            {\"time\": \"2026-09-29T23:59:59Z\"},\n            {\"time\": \"2026-09-30T00:05:01Z\"},\n            {\"outcome\": \"ok\"}, {\"host\": \"lab-b\"},\n        ]:\n            events = sample_events()\n            events[0].update(change)\n            with self.subTest(change=change):\n                self.assertEqual(lab.correlate(events, NOW, KEY), [])\n        events[0][\"host\"] = \"lab-a\"\n        events[0][\"time\"] = NOW\n        self.assertEqual(lab.correlate(events, NOW, KEY)[0][\"failures\"], 3)\n\n    def test_correlation_rejects_schema_and_unbounded_inputs(self):\n        for events in [None, [dict(sample_events()[0], secret=\"bad\")],\n                       sample_events() * 334]:\n            with self.subTest(events_type=type(events).__name__):\n                with self.assertRaises(ValueError):\n                    lab.correlate(events, NOW, KEY)\n        for field, value in [(\"source\", \"other\"), (\"host\", \"prod\"),\n                             (\"outcome\", \"maybe\"), (\"subject\", \"a\\nb\")]:\n            events = sample_events()\n            events[0][field] = value\n            with self.subTest(field=field), self.assertRaises(ValueError):\n                lab.correlate(events, NOW, KEY)\n\n    def test_correlation_key_changes_linkability(self):\n        events = sample_events()\n        one = lab.correlate(events, NOW, KEY)[0][\"subject_token\"]\n        two = lab.correlate(events, NOW, b\"x\" * 32)[0][\"subject_token\"]\n        self.assertNotEqual(one, two)\n        self.assertRegex(one, r\"^[0-9a-f]{64}$\")\n        with self.assertRaises(ValueError):\n            lab.correlate(events, NOW, b\"short\")\n\n    def test_csv_report_is_controlled_and_roundtrips(self):\n        rows = lab.correlate(sample_events(), NOW, KEY)\n        encoded = lab.csv_report(rows)\n        self.assertNotIn(\"=synthetic-user()\", encoded)\n        row, = list(csv.DictReader(io.StringIO(encoded)))\n        self.assertEqual(row[\"failures\"], \"3\")\n        self.assertEqual(row[\"sources\"], \"auth,firewall,server\")\n        self.assertTrue(all(not value.startswith((\"=\", \"+\", \"-\", \"@\"))\n                            for value in row.values()))\n        self.assertEqual(len(lab.csv_report([]).splitlines()), 1)\n\n    def test_encoding_has_context_specific_expected_values(self):\n        value = '<script title=\"x\">&\\'</script>'\n        result = lab.encode_text(value)\n        self.assertEqual(result[\"html\"],\n                         '<p>&lt;script title=&quot;x&quot;&gt;'\n                         '&amp;&#x27;&lt;/script&gt;</p>')\n        self.assertEqual(ET.fromstring(result[\"xml\"]).text, value)\n        self.assertEqual(json.loads(result[\"json\"]), {\"message\": value})\n        # A JSON serializer can retain a closing-script sequence.\n        self.assertIn(\"</script>\", result[\"json\"])\n\n    def test_encoding_rejects_control_and_excess_length(self):\n        for value in [\"\", \"a\\x00b\", \"a\\nb\", \"x\" * 257]:\n            with self.subTest(value_length=len(value)):\n                with self.assertRaises(ValueError):\n                    lab.encode_text(value)\n\n    def test_parameterized_lookup_preserves_query_intent(self):\n        self.assertEqual(lab.lookup_label(\"amber\"), [(\"amber\",)])\n        self.assertEqual(lab.lookup_label(\"' OR 1=1 --\"), [])\n        self.assertEqual(lab.lookup_label(\"x'; DROP TABLE labels; --\"), [])\n        self.assertEqual(lab.lookup_label(\"blue\"), [(\"blue\",)])\n\n    def test_sql_rejects_invalid_type(self):\n        with self.assertRaises(TypeError):\n            lab.lookup_label(12)\n\n    def test_fixture_valid_and_size_boundary(self):\n        with tempfile.TemporaryDirectory(dir=Path(__file__).parent) as name:\n            root = Path(name).resolve()\n            target = root / \"notes.txt\"\n            target.write_bytes(b\"a\" * 1024)\n            self.assertEqual(lab.read_fixture(root, \"notes.txt\"), b\"a\" * 1024)\n            target.write_bytes(b\"a\" * 1025)\n            with self.assertRaisesRegex(ValueError, \"too large\"):\n                lab.read_fixture(root, \"notes.txt\")\n        self.assertFalse(root.exists())\n\n    def test_fixture_rejects_path_syntax_before_io(self):\n        with patch.object(lab.Path, \"resolve\") as resolve:\n            for name in [\"../notes.txt\", \"..\\\\notes.txt\", \"C:\\\\notes.txt\",\n                         \"notes.txt:stream\", \"/notes.txt\", \"NOTES.TXT\"]:\n                with self.subTest(name=name), self.assertRaises(ValueError):\n                    lab.read_fixture(\"unused\", name)\n            resolve.assert_not_called()\n\n    def test_fixture_missing_or_directory(self):\n        with tempfile.TemporaryDirectory(dir=Path(__file__).parent) as name:\n            root = Path(name)\n            with self.assertRaises(FileNotFoundError):\n                lab.read_fixture(root, \"notes.txt\")\n            (root / \"notes.txt\").mkdir()\n            with self.assertRaises(ValueError):\n                lab.read_fixture(root, \"notes.txt\")\n\n    def test_fixture_simulated_resolved_parent_escape(self):\n        with tempfile.TemporaryDirectory(dir=Path(__file__).parent) as name:\n            outer = Path(name).resolve()\n            root = outer / \"owned\"\n            root.mkdir()\n            outside = outer / \"notes.txt\"\n            outside.write_bytes(b\"outside selected root\")\n            with patch.object(lab.Path, \"resolve\",\n                              side_effect=[root, outside]):\n                with self.assertRaises(ValueError):\n                    lab.read_fixture(root, \"notes.txt\")\n\n    def test_backup_roundtrip_and_byte_tamper(self):\n        data = b\"configuration=v1\\n\"\n        manifest = lab.seal(data, KEY)\n        self.assertIs(lab.verify_backup(data, manifest, KEY), True)\n        self.assertIs(lab.verify_backup(b\"configuration=v2\\n\", manifest,\n                                       KEY), False)\n        self.assertIs(lab.verify_backup(data, manifest, b\"x\" * 32), False)\n\n    def test_backup_replaced_unkeyed_hash_is_insufficient(self):\n        first = lab.seal(b\"one\", KEY)\n        forged = dict(first, sha256=lab.seal(b\"two\", KEY)[\"sha256\"])\n        self.assertEqual(forged[\"sha256\"], lab.seal(b\"two\", KEY)[\"sha256\"])\n        self.assertIs(lab.verify_backup(b\"two\", forged, KEY), False)\n\n    def test_backup_schema_length_and_digest_validation(self):\n        manifest = lab.seal(b\"x\", KEY)\n        for bad in [dict(manifest, length=True), dict(manifest, length=2),\n                    dict(manifest, mac=\"g\" * 64), dict(manifest, mac=None),\n                    dict(manifest, extra=1), {}]:\n            with self.subTest(keys=list(bad)):\n                self.assertIs(lab.verify_backup(b\"x\", bad, KEY), False)\n\n    def test_backup_rejects_invalid_key_or_payload(self):\n        for data, key in [(b\"x\" * 1025, KEY), (\"x\", KEY), (b\"x\", b\"bad\")]:\n            with self.subTest(data_type=type(data).__name__):\n                with self.assertRaises(ValueError):\n                    lab.seal(data, key)\n\n    def test_owned_loopback_roundtrip(self):\n        self.assertEqual(lab.owned_loopback(), \"LAB\\n\")\n\n    def test_tls_policy_without_handshake(self):\n        self.assertEqual(lab.tls_policy(), dict(check_hostname=True,\n                                               require_certificate=True))\n\n    def test_child_keeps_shell_like_text_in_one_argument(self):\n        value = 'x & echo FAKE; $(FAKE) \"quoted\" --flag'\n        self.assertEqual(lab.child_echo(value), [value])\n\n    def test_child_propagates_timeout_and_validates_first(self):\n        error = subprocess.TimeoutExpired(\"synthetic\", 5)\n        with patch.object(lab.subprocess, \"run\", side_effect=error) as run:\n            with self.assertRaises(subprocess.TimeoutExpired) as raised:\n                lab.child_echo(\"example\")\n            self.assertIs(raised.exception, error)\n            self.assertFalse(run.call_args.kwargs[\"shell\"])\n            self.assertEqual(run.call_args.kwargs[\"timeout\"], 5)\n            run.reset_mock()\n            with self.assertRaises(ValueError):\n                lab.child_echo(\"bad\\ninput\")\n            run.assert_not_called()\n\n    def test_chain_halts_before_later_side_effects(self):\n        called = []\n\n        def after():\n            called.append(\"should not run\")\n            return True\n\n        result = lab.run_chain([\n            (\"check\", lambda: True), (\"backup\", lambda: False),\n            (\"cleanup\", after), (\"report\", after),\n        ])\n        self.assertEqual(called, [])\n        self.assertEqual(result, [dict(stage=\"check\", status=\"passed\"),\n                                  dict(stage=\"backup\", status=\"failed\")])\n\n    def test_chain_records_error_type_without_sensitive_message(self):\n        def failed():\n            raise RuntimeError(\"synthetic secret: do not log\")\n\n        result = lab.run_chain([(\"check\", failed)])\n        self.assertEqual(result, [dict(stage=\"check\", status=\"error\",\n                                       error_type=\"RuntimeError\")])\n        self.assertNotIn(\"secret\", json.dumps(result))\n\n    def test_chain_requires_exact_success_and_preserves_order(self):\n        self.assertEqual(lab.run_chain([(\"check\", lambda: 1)]),\n                         [dict(stage=\"check\", status=\"failed\")])\n        self.assertEqual(lab.run_chain([]), [])\n        result = lab.run_chain([(n, lambda: True) for n in [\"a\", \"b\"]])\n        self.assertEqual(result, [dict(stage=\"a\", status=\"passed\"),\n                                  dict(stage=\"b\", status=\"passed\")])\n\n    def test_pdf_info_removal_leaves_xmp(self):\n        self.assertEqual(lab.pdf_metadata_probe(), dict(\n            info_removed=True, xmp_creator=[\"Synthetic creator\"], pages=1,\n        ))\n\n\nif __name__ == \"__main__\":\n    unittest.main()\n"
+    },
+    {
+      "filename": "observations.py",
+      "sha256": "7964c7835a7b03dd2d07a39c672ebf1fb5de8eab157c0869dffd8fc83edfa4f5",
+      "bytes": 4834,
+      "syntax_checked": true,
+      "executed": true,
+      "code": "\"\"\"Original computed PCES observations; no external target or service.\"\"\"\n\nimport hashlib\nimport json\nfrom pathlib import Path\nimport tempfile\n\nimport security_workbook as lab\nfrom test_security_workbook import KEY, NOW, sample_events\n\n\ndef main():\n    checks = []\n\n    def check(name, condition):\n        if condition is not True:\n            raise AssertionError(name)\n        checks.append(name)\n\n    events = sample_events()\n    original = json.dumps(events, sort_keys=True)\n    rows = lab.correlate(events, NOW, KEY)\n    check(\"three failures across three sources\", rows[0][\"failures\"] == 3)\n    check(\"timezone normalization\", rows[0][\"first\"] ==\n          \"2026-09-30T00:00:00+00:00\")\n    check(\"preserve original records\", original ==\n          json.dumps(events, sort_keys=True))\n    check(\"duplicate replay not counted\", rows ==\n          lab.correlate(events + events, NOW, KEY))\n    check(\"raw subject omitted\", \"=synthetic-user()\" not in json.dumps(rows))\n    csv = lab.csv_report(rows)\n    check(\"CSV omits raw subject\", \"=synthetic-user()\" not in csv)\n    encoded = lab.encode_text('</script><b title=\"fixture\">&</b>')\n    check(\"HTML text encoded\", \"<script\" not in encoded[\"html\"] and\n          \"&lt;/script&gt;\" in encoded[\"html\"])\n    check(\"JSON is not script embedding protection\",\n          \"</script>\" in encoded[\"json\"])\n    check(\"SQL attack-shaped value stays data\",\n          lab.lookup_label(\"' OR 1=1 --\") == [])\n    roundtrip = lab.owned_loopback()\n    check(\"owned loopback\", roundtrip == \"LAB\\n\")\n    tls = lab.tls_policy()\n    check(\"TLS hostname requirement\", tls[\"check_hostname\"] is True)\n    check(\"TLS certificate requirement\", tls[\"require_certificate\"] is True)\n    child = lab.child_echo('fixture & $(fake) --flag \"quoted\"')\n    check(\"fixed child argument roundtrip\",\n          child == ['fixture & $(fake) --flag \"quoted\"'])\n    pdf = lab.pdf_metadata_probe()\n    check(\"PDF Info removed\", pdf[\"info_removed\"] is True)\n    check(\"PDF XMP creator survives\", pdf[\"xmp_creator\"] ==\n          [\"Synthetic creator\"])\n\n    with tempfile.TemporaryDirectory(dir=Path(__file__).parent) as name:\n        root = Path(name).resolve()\n        check(\"owned temporary root\", root.parent ==\n              Path(__file__).resolve().parent)\n        payload = b\"mode=synthetic\\nversion=1\\n\"\n        (root / \"notes.txt\").write_bytes(payload)\n        source = lab.read_fixture(root, \"notes.txt\")\n        manifest = lab.seal(source, KEY)\n\n        def backup():\n            with (root / \"backup.bin\").open(\"xb\") as stream:\n                stream.write(source)\n            return True\n\n        def restore():\n            data = (root / \"backup.bin\").read_bytes()\n            if not lab.verify_backup(data, manifest, KEY):\n                return False\n            with (root / \"restored.bin\").open(\"xb\") as stream:\n                stream.write(data)\n            return (root / \"restored.bin\").read_bytes() == payload\n\n        stages = lab.run_chain([\n            (\"precheck\", lambda: source == payload),\n            (\"backup\", backup), (\"restore\", restore),\n        ])\n        check(\"actual write and restore chain\", stages == [\n            dict(stage=\"precheck\", status=\"passed\"),\n            dict(stage=\"backup\", status=\"passed\"),\n            dict(stage=\"restore\", status=\"passed\"),\n        ])\n        modified = payload.replace(b\"=1\", b\"=2\")\n        plain_forgery = dict(manifest,\n                             sha256=hashlib.sha256(modified).hexdigest())\n        check(\"changed bytes rejected\",\n              lab.verify_backup(modified, manifest, KEY) is False)\n        check(\"replaced plain hash rejected\",\n              lab.verify_backup(modified, plain_forgery, KEY) is False)\n        check(\"original preserved\", (root / \"notes.txt\").read_bytes() ==\n              payload)\n    check(\"temporary tree removed\", root.exists() is False)\n\n    result = dict(\n        passed_checks=len(checks), checks=checks, correlation=rows,\n        csv=csv, context_encodings=encoded, loopback=roundtrip,\n        tls_policy=tls, child_arguments=child, pdf=pdf,\n        restore_chain=stages, backup_manifest=manifest,\n        limits=[\n            \"Public fixture key; not confidentiality or key management\",\n            \"Pseudonymized identifiers, not anonymous records\",\n            \"One owned loopback listener; no scan or TLS handshake\",\n            \"TLS policy inspection; no remote certificate verification\",\n            \"One blank PDF; no document sanitization or AES execution\",\n            \"Private owned path; simulated escape test is not TOCTOU proof\",\n            \"One byte fixture restored; not application recovery or RTO/RPO\",\n            \"No scheduler, notification, service restart or package install\",\n        ],\n    )\n    print(json.dumps(result, sort_keys=True, indent=2))\n\n\nif __name__ == \"__main__\":\n    main()\n"
+    }
+  ],
+  "local_execution_evidence": [
+    {
+      "program": "unittest",
+      "command": [
+        "python",
+        "-B",
+        "-Werror",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-p",
+        "test_security_workbook.py",
+        "-v"
+      ],
+      "started_at": "2026-09-30T05:04:15.946591+00:00",
+      "elapsed_seconds": 0.364,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_backup_rejects_invalid_key_or_payload (test_security_workbook.SecurityTests.test_backup_rejects_invalid_key_or_payload) ... ok\ntest_backup_replaced_unkeyed_hash_is_insufficient (test_security_workbook.SecurityTests.test_backup_replaced_unkeyed_hash_is_insufficient) ... ok\ntest_backup_roundtrip_and_byte_tamper (test_security_workbook.SecurityTests.test_backup_roundtrip_and_byte_tamper) ... ok\ntest_backup_schema_length_and_digest_validation (test_security_workbook.SecurityTests.test_backup_schema_length_and_digest_validation) ... ok\ntest_chain_halts_before_later_side_effects (test_security_workbook.SecurityTests.test_chain_halts_before_later_side_effects) ... ok\ntest_chain_records_error_type_without_sensitive_message (test_security_workbook.SecurityTests.test_chain_records_error_type_without_sensitive_message) ... ok\ntest_chain_requires_exact_success_and_preserves_order (test_security_workbook.SecurityTests.test_chain_requires_exact_success_and_preserves_order) ... ok\ntest_child_keeps_shell_like_text_in_one_argument (test_security_workbook.SecurityTests.test_child_keeps_shell_like_text_in_one_argument) ... ok\ntest_child_propagates_timeout_and_validates_first (test_security_workbook.SecurityTests.test_child_propagates_timeout_and_validates_first) ... ok\ntest_correlation_excludes_old_future_success_and_other_host (test_security_workbook.SecurityTests.test_correlation_excludes_old_future_success_and_other_host) ... ok\ntest_correlation_key_changes_linkability (test_security_workbook.SecurityTests.test_correlation_key_changes_linkability) ... ok\ntest_correlation_preserves_input_and_exact_window (test_security_workbook.SecurityTests.test_correlation_preserves_input_and_exact_window) ... ok\ntest_correlation_rejects_conflicting_identity (test_security_workbook.SecurityTests.test_correlation_rejects_conflicting_identity) ... ok\ntest_correlation_rejects_schema_and_unbounded_inputs (test_security_workbook.SecurityTests.test_correlation_rejects_schema_and_unbounded_inputs) ... ok\ntest_correlation_threshold_and_duplicate_replay (test_security_workbook.SecurityTests.test_correlation_threshold_and_duplicate_replay) ... ok\ntest_csv_report_is_controlled_and_roundtrips (test_security_workbook.SecurityTests.test_csv_report_is_controlled_and_roundtrips) ... ok\ntest_encoding_has_context_specific_expected_values (test_security_workbook.SecurityTests.test_encoding_has_context_specific_expected_values) ... ok\ntest_encoding_rejects_control_and_excess_length (test_security_workbook.SecurityTests.test_encoding_rejects_control_and_excess_length) ... ok\ntest_expiry_exact_boundaries (test_security_workbook.SecurityTests.test_expiry_exact_boundaries) ... ok\ntest_fixture_missing_or_directory (test_security_workbook.SecurityTests.test_fixture_missing_or_directory) ... ok\ntest_fixture_rejects_path_syntax_before_io (test_security_workbook.SecurityTests.test_fixture_rejects_path_syntax_before_io) ... ok\ntest_fixture_simulated_resolved_parent_escape (test_security_workbook.SecurityTests.test_fixture_simulated_resolved_parent_escape) ... ok\ntest_fixture_valid_and_size_boundary (test_security_workbook.SecurityTests.test_fixture_valid_and_size_boundary) ... ok\ntest_owned_loopback_roundtrip (test_security_workbook.SecurityTests.test_owned_loopback_roundtrip) ... ok\ntest_parameterized_lookup_preserves_query_intent (test_security_workbook.SecurityTests.test_parameterized_lookup_preserves_query_intent) ... ok\ntest_pdf_info_removal_leaves_xmp (test_security_workbook.SecurityTests.test_pdf_info_removal_leaves_xmp) ... ok\ntest_sql_rejects_invalid_type (test_security_workbook.SecurityTests.test_sql_rejects_invalid_type) ... ok\ntest_timestamp_offset_equivalence (test_security_workbook.SecurityTests.test_timestamp_offset_equivalence) ... ok\ntest_timestamp_rejects_missing_offset_and_bad_data (test_security_workbook.SecurityTests.test_timestamp_rejects_missing_offset_and_bad_data) ... ok\ntest_tls_policy_without_handshake (test_security_workbook.SecurityTests.test_tls_policy_without_handshake) ... ok\n\n----------------------------------------------------------------------\nRan 30 tests in 0.184s\n\nOK\n",
+      "optimized": false,
+      "test_methods": 30
+    },
+    {
+      "program": "observations",
+      "command": [
+        "python",
+        "-B",
+        "-Werror",
+        "observations.py"
+      ],
+      "started_at": "2026-09-30T05:04:16.311646+00:00",
+      "elapsed_seconds": 0.34,
+      "exit_code": 0,
+      "stdout": "{\n  \"backup_manifest\": {\n    \"length\": 25,\n    \"mac\": \"f82e6c6713b8b69d53a0d1faa1c7750a48c42fa652e6c6da94dcbe0cefbca6c8\",\n    \"sha256\": \"b5eb4e580b9346a4c75210d30bf3ee0d35b53cae9161b71ca1fd974f7128bc5c\"\n  },\n  \"checks\": [\n    \"three failures across three sources\",\n    \"timezone normalization\",\n    \"preserve original records\",\n    \"duplicate replay not counted\",\n    \"raw subject omitted\",\n    \"CSV omits raw subject\",\n    \"HTML text encoded\",\n    \"JSON is not script embedding protection\",\n    \"SQL attack-shaped value stays data\",\n    \"owned loopback\",\n    \"TLS hostname requirement\",\n    \"TLS certificate requirement\",\n    \"fixed child argument roundtrip\",\n    \"PDF Info removed\",\n    \"PDF XMP creator survives\",\n    \"owned temporary root\",\n    \"actual write and restore chain\",\n    \"changed bytes rejected\",\n    \"replaced plain hash rejected\",\n    \"original preserved\",\n    \"temporary tree removed\"\n  ],\n  \"child_arguments\": [\n    \"fixture & $(fake) --flag \\\"quoted\\\"\"\n  ],\n  \"context_encodings\": {\n    \"html\": \"<p>&lt;/script&gt;&lt;b title=&quot;fixture&quot;&gt;&amp;&lt;/b&gt;</p>\",\n    \"json\": \"{\\\"message\\\": \\\"</script><b title=\\\\\\\"fixture\\\\\\\">&</b>\\\"}\",\n    \"xml\": \"<message>&lt;/script&gt;&lt;b title=\\\"fixture\\\"&gt;&amp;&lt;/b&gt;</message>\"\n  },\n  \"correlation\": [\n    {\n      \"action\": \"check context and clock offsets\",\n      \"decision\": \"triage\",\n      \"failures\": 3,\n      \"first\": \"2026-09-30T00:00:00+00:00\",\n      \"host\": \"lab-a\",\n      \"last\": \"2026-09-30T00:04:00+00:00\",\n      \"sources\": \"auth,firewall,server\",\n      \"subject_token\": \"5096c8bde7a9e730008b1a5338c757e1495b6f70cc435d8ffb8ae3c4062a976c\"\n    }\n  ],\n  \"csv\": \"subject_token,host,failures,sources,first,last,decision,action\\n5096c8bde7a9e730008b1a5338c757e1495b6f70cc435d8ffb8ae3c4062a976c,lab-a,3,\\\"auth,firewall,server\\\",2026-09-30T00:00:00+00:00,2026-09-30T00:04:00+00:00,triage,check context and clock offsets\\n\",\n  \"limits\": [\n    \"Public fixture key; not confidentiality or key management\",\n    \"Pseudonymized identifiers, not anonymous records\",\n    \"One owned loopback listener; no scan or TLS handshake\",\n    \"TLS policy inspection; no remote certificate verification\",\n    \"One blank PDF; no document sanitization or AES execution\",\n    \"Private owned path; simulated escape test is not TOCTOU proof\",\n    \"One byte fixture restored; not application recovery or RTO/RPO\",\n    \"No scheduler, notification, service restart or package install\"\n  ],\n  \"loopback\": \"LAB\\n\",\n  \"passed_checks\": 21,\n  \"pdf\": {\n    \"info_removed\": true,\n    \"pages\": 1,\n    \"xmp_creator\": [\n      \"Synthetic creator\"\n    ]\n  },\n  \"restore_chain\": [\n    {\n      \"stage\": \"precheck\",\n      \"status\": \"passed\"\n    },\n    {\n      \"stage\": \"backup\",\n      \"status\": \"passed\"\n    },\n    {\n      \"stage\": \"restore\",\n      \"status\": \"passed\"\n    }\n  ],\n  \"tls_policy\": {\n    \"check_hostname\": true,\n    \"require_certificate\": true\n  }\n}\n",
+      "stderr": "",
+      "optimized": false,
+      "checks": 21
+    },
+    {
+      "program": "unittest",
+      "command": [
+        "python",
+        "-B",
+        "-Werror",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-p",
+        "test_security_workbook.py",
+        "-v"
+      ],
+      "started_at": "2026-09-30T05:04:16.651984+00:00",
+      "elapsed_seconds": 1.351,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_backup_rejects_invalid_key_or_payload (test_security_workbook.SecurityTests.test_backup_rejects_invalid_key_or_payload) ... ok\ntest_backup_replaced_unkeyed_hash_is_insufficient (test_security_workbook.SecurityTests.test_backup_replaced_unkeyed_hash_is_insufficient) ... ok\ntest_backup_roundtrip_and_byte_tamper (test_security_workbook.SecurityTests.test_backup_roundtrip_and_byte_tamper) ... ok\ntest_backup_schema_length_and_digest_validation (test_security_workbook.SecurityTests.test_backup_schema_length_and_digest_validation) ... ok\ntest_chain_halts_before_later_side_effects (test_security_workbook.SecurityTests.test_chain_halts_before_later_side_effects) ... ok\ntest_chain_records_error_type_without_sensitive_message (test_security_workbook.SecurityTests.test_chain_records_error_type_without_sensitive_message) ... ok\ntest_chain_requires_exact_success_and_preserves_order (test_security_workbook.SecurityTests.test_chain_requires_exact_success_and_preserves_order) ... ok\ntest_child_keeps_shell_like_text_in_one_argument (test_security_workbook.SecurityTests.test_child_keeps_shell_like_text_in_one_argument) ... ok\ntest_child_propagates_timeout_and_validates_first (test_security_workbook.SecurityTests.test_child_propagates_timeout_and_validates_first) ... ok\ntest_correlation_excludes_old_future_success_and_other_host (test_security_workbook.SecurityTests.test_correlation_excludes_old_future_success_and_other_host) ... ok\ntest_correlation_key_changes_linkability (test_security_workbook.SecurityTests.test_correlation_key_changes_linkability) ... ok\ntest_correlation_preserves_input_and_exact_window (test_security_workbook.SecurityTests.test_correlation_preserves_input_and_exact_window) ... ok\ntest_correlation_rejects_conflicting_identity (test_security_workbook.SecurityTests.test_correlation_rejects_conflicting_identity) ... ok\ntest_correlation_rejects_schema_and_unbounded_inputs (test_security_workbook.SecurityTests.test_correlation_rejects_schema_and_unbounded_inputs) ... ok\ntest_correlation_threshold_and_duplicate_replay (test_security_workbook.SecurityTests.test_correlation_threshold_and_duplicate_replay) ... ok\ntest_csv_report_is_controlled_and_roundtrips (test_security_workbook.SecurityTests.test_csv_report_is_controlled_and_roundtrips) ... ok\ntest_encoding_has_context_specific_expected_values (test_security_workbook.SecurityTests.test_encoding_has_context_specific_expected_values) ... ok\ntest_encoding_rejects_control_and_excess_length (test_security_workbook.SecurityTests.test_encoding_rejects_control_and_excess_length) ... ok\ntest_expiry_exact_boundaries (test_security_workbook.SecurityTests.test_expiry_exact_boundaries) ... ok\ntest_fixture_missing_or_directory (test_security_workbook.SecurityTests.test_fixture_missing_or_directory) ... ok\ntest_fixture_rejects_path_syntax_before_io (test_security_workbook.SecurityTests.test_fixture_rejects_path_syntax_before_io) ... ok\ntest_fixture_simulated_resolved_parent_escape (test_security_workbook.SecurityTests.test_fixture_simulated_resolved_parent_escape) ... ok\ntest_fixture_valid_and_size_boundary (test_security_workbook.SecurityTests.test_fixture_valid_and_size_boundary) ... ok\ntest_owned_loopback_roundtrip (test_security_workbook.SecurityTests.test_owned_loopback_roundtrip) ... ok\ntest_parameterized_lookup_preserves_query_intent (test_security_workbook.SecurityTests.test_parameterized_lookup_preserves_query_intent) ... ok\ntest_pdf_info_removal_leaves_xmp (test_security_workbook.SecurityTests.test_pdf_info_removal_leaves_xmp) ... ok\ntest_sql_rejects_invalid_type (test_security_workbook.SecurityTests.test_sql_rejects_invalid_type) ... ok\ntest_timestamp_offset_equivalence (test_security_workbook.SecurityTests.test_timestamp_offset_equivalence) ... ok\ntest_timestamp_rejects_missing_offset_and_bad_data (test_security_workbook.SecurityTests.test_timestamp_rejects_missing_offset_and_bad_data) ... ok\ntest_tls_policy_without_handshake (test_security_workbook.SecurityTests.test_tls_policy_without_handshake) ... ok\n\n----------------------------------------------------------------------\nRan 30 tests in 1.176s\n\nOK\n",
+      "optimized": true,
+      "test_methods": 30
+    },
+    {
+      "program": "observations",
+      "command": [
+        "python",
+        "-B",
+        "-Werror",
+        "-O",
+        "observations.py"
+      ],
+      "started_at": "2026-09-30T05:04:18.003600+00:00",
+      "elapsed_seconds": 0.513,
+      "exit_code": 0,
+      "stdout": "{\n  \"backup_manifest\": {\n    \"length\": 25,\n    \"mac\": \"f82e6c6713b8b69d53a0d1faa1c7750a48c42fa652e6c6da94dcbe0cefbca6c8\",\n    \"sha256\": \"b5eb4e580b9346a4c75210d30bf3ee0d35b53cae9161b71ca1fd974f7128bc5c\"\n  },\n  \"checks\": [\n    \"three failures across three sources\",\n    \"timezone normalization\",\n    \"preserve original records\",\n    \"duplicate replay not counted\",\n    \"raw subject omitted\",\n    \"CSV omits raw subject\",\n    \"HTML text encoded\",\n    \"JSON is not script embedding protection\",\n    \"SQL attack-shaped value stays data\",\n    \"owned loopback\",\n    \"TLS hostname requirement\",\n    \"TLS certificate requirement\",\n    \"fixed child argument roundtrip\",\n    \"PDF Info removed\",\n    \"PDF XMP creator survives\",\n    \"owned temporary root\",\n    \"actual write and restore chain\",\n    \"changed bytes rejected\",\n    \"replaced plain hash rejected\",\n    \"original preserved\",\n    \"temporary tree removed\"\n  ],\n  \"child_arguments\": [\n    \"fixture & $(fake) --flag \\\"quoted\\\"\"\n  ],\n  \"context_encodings\": {\n    \"html\": \"<p>&lt;/script&gt;&lt;b title=&quot;fixture&quot;&gt;&amp;&lt;/b&gt;</p>\",\n    \"json\": \"{\\\"message\\\": \\\"</script><b title=\\\\\\\"fixture\\\\\\\">&</b>\\\"}\",\n    \"xml\": \"<message>&lt;/script&gt;&lt;b title=\\\"fixture\\\"&gt;&amp;&lt;/b&gt;</message>\"\n  },\n  \"correlation\": [\n    {\n      \"action\": \"check context and clock offsets\",\n      \"decision\": \"triage\",\n      \"failures\": 3,\n      \"first\": \"2026-09-30T00:00:00+00:00\",\n      \"host\": \"lab-a\",\n      \"last\": \"2026-09-30T00:04:00+00:00\",\n      \"sources\": \"auth,firewall,server\",\n      \"subject_token\": \"5096c8bde7a9e730008b1a5338c757e1495b6f70cc435d8ffb8ae3c4062a976c\"\n    }\n  ],\n  \"csv\": \"subject_token,host,failures,sources,first,last,decision,action\\n5096c8bde7a9e730008b1a5338c757e1495b6f70cc435d8ffb8ae3c4062a976c,lab-a,3,\\\"auth,firewall,server\\\",2026-09-30T00:00:00+00:00,2026-09-30T00:04:00+00:00,triage,check context and clock offsets\\n\",\n  \"limits\": [\n    \"Public fixture key; not confidentiality or key management\",\n    \"Pseudonymized identifiers, not anonymous records\",\n    \"One owned loopback listener; no scan or TLS handshake\",\n    \"TLS policy inspection; no remote certificate verification\",\n    \"One blank PDF; no document sanitization or AES execution\",\n    \"Private owned path; simulated escape test is not TOCTOU proof\",\n    \"One byte fixture restored; not application recovery or RTO/RPO\",\n    \"No scheduler, notification, service restart or package install\"\n  ],\n  \"loopback\": \"LAB\\n\",\n  \"passed_checks\": 21,\n  \"pdf\": {\n    \"info_removed\": true,\n    \"pages\": 1,\n    \"xmp_creator\": [\n      \"Synthetic creator\"\n    ]\n  },\n  \"restore_chain\": [\n    {\n      \"stage\": \"precheck\",\n      \"status\": \"passed\"\n    },\n    {\n      \"stage\": \"backup\",\n      \"status\": \"passed\"\n    },\n    {\n      \"stage\": \"restore\",\n      \"status\": \"passed\"\n    }\n  ],\n  \"tls_policy\": {\n    \"check_hostname\": true,\n    \"require_certificate\": true\n  }\n}\n",
+      "stderr": "",
+      "optimized": true,
+      "checks": 21
+    }
+  ],
+  "computed_report": {
+    "backup_manifest": {
+      "length": 25,
+      "mac": "f82e6c6713b8b69d53a0d1faa1c7750a48c42fa652e6c6da94dcbe0cefbca6c8",
+      "sha256": "b5eb4e580b9346a4c75210d30bf3ee0d35b53cae9161b71ca1fd974f7128bc5c"
+    },
+    "checks": [
+      "three failures across three sources",
+      "timezone normalization",
+      "preserve original records",
+      "duplicate replay not counted",
+      "raw subject omitted",
+      "CSV omits raw subject",
+      "HTML text encoded",
+      "JSON is not script embedding protection",
+      "SQL attack-shaped value stays data",
+      "owned loopback",
+      "TLS hostname requirement",
+      "TLS certificate requirement",
+      "fixed child argument roundtrip",
+      "PDF Info removed",
+      "PDF XMP creator survives",
+      "owned temporary root",
+      "actual write and restore chain",
+      "changed bytes rejected",
+      "replaced plain hash rejected",
+      "original preserved",
+      "temporary tree removed"
+    ],
+    "child_arguments": [
+      "fixture & $(fake) --flag \"quoted\""
+    ],
+    "context_encodings": {
+      "html": "<p>&lt;/script&gt;&lt;b title=&quot;fixture&quot;&gt;&amp;&lt;/b&gt;</p>",
+      "json": "{\"message\": \"</script><b title=\\\"fixture\\\">&</b>\"}",
+      "xml": "<message>&lt;/script&gt;&lt;b title=\"fixture\"&gt;&amp;&lt;/b&gt;</message>"
+    },
+    "correlation": [
+      {
+        "action": "check context and clock offsets",
+        "decision": "triage",
+        "failures": 3,
+        "first": "2026-09-30T00:00:00+00:00",
+        "host": "lab-a",
+        "last": "2026-09-30T00:04:00+00:00",
+        "sources": "auth,firewall,server",
+        "subject_token": "5096c8bde7a9e730008b1a5338c757e1495b6f70cc435d8ffb8ae3c4062a976c"
+      }
+    ],
+    "csv": "subject_token,host,failures,sources,first,last,decision,action\n5096c8bde7a9e730008b1a5338c757e1495b6f70cc435d8ffb8ae3c4062a976c,lab-a,3,\"auth,firewall,server\",2026-09-30T00:00:00+00:00,2026-09-30T00:04:00+00:00,triage,check context and clock offsets\n",
+    "limits": [
+      "Public fixture key; not confidentiality or key management",
+      "Pseudonymized identifiers, not anonymous records",
+      "One owned loopback listener; no scan or TLS handshake",
+      "TLS policy inspection; no remote certificate verification",
+      "One blank PDF; no document sanitization or AES execution",
+      "Private owned path; simulated escape test is not TOCTOU proof",
+      "One byte fixture restored; not application recovery or RTO/RPO",
+      "No scheduler, notification, service restart or package install"
+    ],
+    "loopback": "LAB\n",
+    "passed_checks": 21,
+    "pdf": {
+      "info_removed": true,
+      "pages": 1,
+      "xmp_creator": [
+        "Synthetic creator"
+      ]
+    },
+    "restore_chain": [
+      {
+        "stage": "precheck",
+        "status": "passed"
+      },
+      {
+        "stage": "backup",
+        "status": "passed"
+      },
+      {
+        "stage": "restore",
+        "status": "passed"
+      }
+    ],
+    "tls_policy": {
+      "check_hostname": true,
+      "require_certificate": true
+    }
+  },
+  "selected_lint_evidence": {
+    "command": [
+      "python",
+      "-m",
+      "ruff",
+      "check",
+      "security_workbook.py",
+      "test_security_workbook.py",
+      "observations.py",
+      "--select",
+      "E4,E7,E9,F,W,E501",
+      "--line-length",
+      "79",
+      "--output-format",
+      "concise"
+    ],
+    "exit_code": 0,
+    "stdout": "All checks passed!\n",
+    "stderr": "",
+    "version": "ruff 0.16.4"
+  },
+  "missing_tools": [
+    "cryptography",
+    "paramiko",
+    "psutil",
+    "bandit",
+    "PyPDF2",
+    "docx",
+    "openpyxl",
+    "apscheduler",
+    "nmap",
+    "pylint",
+    "flake8",
+    "Crypto",
+    "Cryptodome"
+  ],
+  "manual_objective_confirmation": {
+    "checked_on": "2026-09-30",
+    "method": "Complete indexed canonical English syllabus/detailed bullets/MQC manually read after direct/monitor timeout",
+    "active_code": "PCES-30-01",
+    "syllabus_date": "2025-08-21",
+    "objectives": 45,
+    "per_section": [
+      10,
+      12,
+      13,
+      10
+    ],
+    "exam_items": [
+      10,
+      12,
+      13,
+      10
+    ],
+    "weights": [
+      22,
+      27,
+      29,
+      22
+    ],
+    "exam_questions": 45,
+    "snapshot_action": "Retained historical19-topic summary; explicit new detailed manualmap is separate from automatedhash observation",
+    "publisher_conflicts": [
+      "MQC groups third-partypsutil/cryptography/paramiko withstandardlibraries"
+    ],
+    "reading_limit": "Full PDF unread",
+    "groups": [
+      {
+        "title": "Security essentials — 22%",
+        "objectives": [
+          "1.1.1 CIA and accountability",
+          "1.2.1 Threats and risk",
+          "1.2.2 Protective layers",
+          "1.3.1 Loss consequences",
+          "1.3.2 Theft consequences",
+          "1.3.3 Alteration consequences",
+          "1.4.1 Downtime consequences",
+          "1.5.1 Legal responsibilities",
+          "1.6.1 Clear reporting",
+          "1.6.2 Incident coordination"
+        ]
+      },
+      {
+        "title": "IT systems security — 27%",
+        "objectives": [
+          "2.1.1 Continuous improvement",
+          "2.1.2 Technical safeguards",
+          "2.1.3 Organizational safeguards",
+          "2.1.4 Development review",
+          "2.2.1 Hardening sequence",
+          "2.3.1 Service exposure",
+          "2.3.2 Network configuration",
+          "2.4.1 Identity and permission",
+          "2.4.2 Password policy",
+          "2.4.3 Authentication factors",
+          "2.5.1 Cloud storage",
+          "2.5.2 Remote access"
+        ]
+      },
+      {
+        "title": "Python for security operations — 29%",
+        "objectives": [
+          "3.1.1 Authorized port checks",
+          "3.1.2 Configuration weaknesses",
+          "3.1.3 Information gathering",
+          "3.2.1 Website certificates",
+          "3.2.2 Process monitoring",
+          "3.2.3 Controlled responses",
+          "3.2.4 OS command boundaries",
+          "3.3.1 Event correlation",
+          "3.4.1 Structured reporting",
+          "3.4.2 Actionable findings",
+          "3.5.1 Scheduling",
+          "3.5.2 Backup recovery",
+          "3.5.3 Task sequencing"
+        ]
+      },
+      {
+        "title": "Secure development and implementation — 22%",
+        "objectives": [
+          "4.1.1 Static checks",
+          "4.1.2 Injection defenses",
+          "4.1.3 Output contexts",
+          "4.1.4 Files and errors",
+          "4.1.5 Secret configuration",
+          "4.2.1 Authenticated encryption",
+          "4.2.2 SSH/SFTP trust",
+          "4.2.3 Document protection",
+          "4.3.1 Hash choices",
+          "4.3.2 Trusted checksums"
+        ]
+      }
+    ]
+  },
+  "review_provenance": "Same-context AI source/content review. Three exact original files execute30testmethods/21observationchecks pernormal/optimizedmode. Own ephemeral loopback/shortchild/in-memorySQLite/PDF/privatebyte-file fixtures only; simulatedtimeout/pathescape explicit. No independenthuman,realTLS/SSH,fullcourse/lab,protectedquestion orproductionsecurity review.",
+  "source_health_boundary": "35directreceipts:27ok,6errors,2blocked. Indexedfallbackcontentreadings areseparatefromdirecthealth. Exactpartial/complete/hash-reused boundaries identified;no successfulfreshobjectivehash/fullPDFreading.",
+  "development_corrections": [
+    "One80-column test line corrected before exact-source/lint verification.",
+    "First repository gate rejected the old training classification for the corrected public OReilly book-identity finding; public publisher product metadata classification and current baseline corrected without rereading paid content.",
+    "First strict site build rejected a report link to operation evidence excluded from the public site; replaced with repository path and polished report spacing. An early site-validation process was canceled; final validation ran only after successful rebuild."
+  ]
+}

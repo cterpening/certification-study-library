@@ -3819,6 +3819,25 @@ The Testing Goat landing includes a dated August 2024 third-edition progress pos
 
 Verify the current exam version, course entitlement and practice product before purchase. Author planning budgets are suggestions, not provider runtimes. Avoid recalled-item material.
 
+### PCES-30-01 — PCES Certified Entry-Level Security Specialist with Python
+
+Resource details from the [PCES-30-01 guide](../guides/PCES-30-01-python-certified-entry-level-security-specialist.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is **not a complete list** and is not intended to be consumed in full. All times below are **author planning budgets**, not measured course durations or claims of completion. Use one foundation and the relevant reference sections, then demonstrate outcomes in authorized labs.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [PCES syllabus](https://pythoninstitute.org/pces-exam-syllabus) | Public canonical scope; full English objectives/MQC read, PDF pending | 2–4 selected hours |
+| [Python documentation](https://docs.python.org/3/) | Public; index read and selected pinned 3.13 contracts used above, not every manual | 8–15 selected hours |
+| [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/) | Public; index plus selected SQL/XSS passages reviewed | 6–10 selected hours |
+| [PortSwigger Web Security Academy](https://portswigger.net/web-security) | Public materials and free account for full lab/progress access; some labs need tools, with Community Edition advertised as a free option | 10–20 selected hours |
+| [OverTheWire Bandit](https://overthewire.org/wargames/bandit/) | Public beginner level guidance; remote SSH game not attempted | 8–15 selected hours |
+| Original workbook above | Three public original files; installed pypdf needed for metadata experiment | 2–4 hours to inspect, execute and explain |
+
+The previous recommendation titled “Practical Python Security” was removed: its [O'Reilly URL](https://www.oreilly.com/library/view/practical-python-security/9781098142155/) identifies **Kubernetes Best Practices, 2nd Edition**. An ISBN-backed page does not validate the old title or relevance. No replacement title, subscription entitlement or book interior was inferred.
+
+The complete public Academy landing and Bandit introduction were read, not the individual labs. No account, external SSH login, tool download, paid interior or protected exam content was accessed. Package APIs, access and practice availability need rechecking when a future lab is actually run. Missing cryptography/Paramiko/psutil/document/scheduler tools and independent human content/accessibility review remain explicit blockers to broader completion.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

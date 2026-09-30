@@ -2307,6 +2307,8 @@ answer dump or copied course content is used. Blueprint SHA-256:
 
 ## PCES-30-01 coverage record
 
+The September 30 [deep review](research/2026-09-30-pces-30-01-deep-review.md) maps 45 detailed objectives. Mapped all45 detailed objectives beneath19 historical topic headings and expanded17answers. Three exact original files pass30methods and21observation checks per normal/optimized mode. Owned loopback/child/SQLite/PDF and temporary byte-restore experiments expose trust,encoding,metadata andchecksum limits. Removed misidentified O'Reilly recommendation; distinguished NISTpassword guidance,scoped legal examples and absentnamedtools. Twelve broader labs,external integrations,fullPDF andhumanreview remain pending. Current guide citations: 35 registered, 27 reachable, 2 access-blocked, 6 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Security Essentials (22%); IT Systems Security (27%); Python for Security Operations (29%); Secure Development and Implementation in Python (22%)
