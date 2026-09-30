@@ -3,6 +3,48 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "splunk-tstats-10-0",
+      "title": "Splunk tstats reference 10.0",
+      "url": "https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.0/search-commands/tstats",
+      "publisher": "Splunk",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SPLUNK-ADVANCED-POWER-USER"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 SPLUNK-ADVANCED-POWER-USER deep review: Selected indexed lines500–746 read: indexed-data/model paths, summariesonly default and omission tradeoff, field restrictions and model-root selection. Rest of long reference not reviewed. Original 120/90 population example is paper reasoning, not measured Splunk output. See docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "splunk-token-usage-10-4",
+      "title": "Splunk Simple XML token usage 10.4",
+      "url": "https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.4/drilldown-and-dashboard-interactivity/token-usage-in-dashboards",
+      "publisher": "Splunk",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SPLUNK-ADVANCED-POWER-USER"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 SPLUNK-ADVANCED-POWER-USER deep review: Selected indexed lines927–990 read: quoting/HTML/URL filters, n disables escaping, delimiter/literal tokens and depends/rejects visibility does not stop background searches. Remaining reference/examples not reviewed; no XML or browser execution. See docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "splunk-makeresults-10-0",
+      "title": "Splunk makeresults reference 10.0",
+      "url": "https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.0/search-commands/makeresults",
+      "publisher": "Splunk",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SPLUNK-ADVANCED-POWER-USER"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 SPLUNK-ADVANCED-POWER-USER deep review: Selected indexed lines500–654 read: temporary results, execution-time default timestamp, server and inline-data options plus first example. Remaining examples not read. No command execution; repeatability clarification only. See docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "splunk-fillnull-10-2",
       "title": "Splunk fillnull reference 10.2",
       "url": "https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.2/search-commands/fillnull",
@@ -25,10 +67,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "SPLUNK-CORE-POWER-USER"
+        "SPLUNK-CORE-POWER-USER",
+        "SPLUNK-ADVANCED-POWER-USER"
       ],
       "last_checked": "2026-09-30",
-      "notes": "September 30 SPLUNK-CORE-POWER-USER deep review: Selected indexed500–699 read after direct DNSerror:syntax,descendingorder,maxspan/maxpause,starts/ends,closure/eviction,multivalue settings. Later examples unread. Original reused-session paper arithmetic,not engine/capacity proof. See docs/research/2026-09-30-splunk-core-power-user-deep-review.md No live infrastructure execution."
+      "notes": "September 30 SPLUNK-CORE-POWER-USER deep review: Selected indexed500–699 read after direct DNSerror:syntax,descendingorder,maxspan/maxpause,starts/ends,closure/eviction,multivalue settings. Later examples unread. Original reused-session paper arithmetic,not engine/capacity proof. See docs/research/2026-09-30-splunk-core-power-user-deep-review.md No live infrastructure execution. September 30 SPLUNK-ADVANCED-POWER-USER deep review: Reused earlier September30 Core Power User indexed reading of selected lines500–699: descending order, boundaries/limits and closure/eviction. No fresh successful body hash; direct retrieval failed DNS. Rest unread; no transaction executed. See docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md No live infrastructure execution."
     },
     {
       "id": "splunk-predicates-10-4",
@@ -58955,7 +58998,7 @@
         "SPLUNK-CORE-CONSULTANT",
         "SPLUNK-O11Y-METRICS-USER"
       ],
-      "notes": "Official tutorial channel named by the blueprint, including the two Introduction to Security Domain videos. Select current playlists by objective gap. September 29 SPLK-5001 deep review: Title/footer only, 176 characters. No playback or complete playlist review; two blueprint-named videos remain optional learning resources. See docs/research/2026-09-29-splk-5001-deep-review.md No live infrastructure execution. September 30 SPLUNK-CORE-USER deep review: Fresh direct response was only176characters of page shell. Shell read; no video, playlist, duration or current catalog reviewed. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution. September 30 SPLUNK-CORE-POWER-USER deep review: New direct176-character parsed shell equals earlier CoreUser reading; rawHTMLhash differs. No playlist/video/course duration reviewed. See docs/research/2026-09-30-splunk-core-power-user-deep-review.md No live infrastructure execution."
+      "notes": "Official tutorial channel named by the blueprint, including the two Introduction to Security Domain videos. Select current playlists by objective gap. September 29 SPLK-5001 deep review: Title/footer only, 176 characters. No playback or complete playlist review; two blueprint-named videos remain optional learning resources. See docs/research/2026-09-29-splk-5001-deep-review.md No live infrastructure execution. September 30 SPLUNK-CORE-USER deep review: Fresh direct response was only176characters of page shell. Shell read; no video, playlist, duration or current catalog reviewed. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution. September 30 SPLUNK-CORE-POWER-USER deep review: New direct176-character parsed shell equals earlier CoreUser reading; rawHTMLhash differs. No playlist/video/course duration reviewed. See docs/research/2026-09-30-splunk-core-power-user-deep-review.md No live infrastructure execution. September 30 SPLUNK-ADVANCED-POWER-USER deep review: Complete fresh 176-character shell read. No video/playlist/course duration or protected content reviewed. See docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md No live infrastructure execution."
     },
     {
       "id": "pluralsight-splunk-9-security-introduction",
@@ -62118,7 +62161,7 @@
         "SPLUNK-CORE-POWER-USER",
         "SPLUNK-ADVANCED-POWER-USER"
       ],
-      "notes": "Current product documentation for search syntax, fields, time, jobs and result handling. September 30 SPLUNK-CORE-USER deep review: DirectDNSerror. Existing10.4reference retained; body not freshly read. No fullmanual audit or productionqueryoptimization test. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution. September 30 SPLUNK-CORE-POWER-USER deep review: Direct retrieval failed DNS. Existing versioned reference retained, but its body was not freshly read. No UI, knowledge-object, CIM or runtime validation; next-pass verification remains explicit. See docs/research/2026-09-30-splunk-core-power-user-deep-review.md No live infrastructure execution."
+      "notes": "Current product documentation for search syntax, fields, time, jobs and result handling. September 30 SPLUNK-CORE-USER deep review: DirectDNSerror. Existing10.4reference retained; body not freshly read. No fullmanual audit or productionqueryoptimization test. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution. September 30 SPLUNK-CORE-POWER-USER deep review: Direct retrieval failed DNS. Existing versioned reference retained, but its body was not freshly read. No UI, knowledge-object, CIM or runtime validation; next-pass verification remains explicit. See docs/research/2026-09-30-splunk-core-power-user-deep-review.md No live infrastructure execution. September 30 SPLUNK-ADVANCED-POWER-USER deep review: Direct DNS failure. Existing versioned reference retained; body not freshly read. Deployment-specific behavior and full reference review remain next-pass work. See docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md No live infrastructure execution."
     },
     {
       "id": "splunk-spl-search-reference",
@@ -62133,7 +62176,7 @@
         "SPLUNK-CORE-USER",
         "SPLUNK-ADVANCED-POWER-USER"
       ],
-      "notes": "Primary syntax and options reference for SPL commands. September 30 SPLUNK-CORE-USER deep review: Selected indexed substantive499–546 introduction read after directDNSerror; catalog/syntax/commandcategory links,notwholemanual. New specificsort/dedup readings separately recorded. ClassicSPL distinctSPL2. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution."
+      "notes": "Primary syntax and options reference for SPL commands. September 30 SPLUNK-CORE-USER deep review: Selected indexed substantive499–546 introduction read after directDNSerror; catalog/syntax/commandcategory links,notwholemanual. New specificsort/dedup readings separately recorded. ClassicSPL distinctSPL2. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution. September 30 SPLUNK-ADVANCED-POWER-USER deep review: Direct DNS failure. Existing versioned reference retained; body not freshly read. Deployment-specific behavior and full reference review remain next-pass work. See docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md No live infrastructure execution."
     },
     {
       "id": "splunk-lantern",
@@ -62150,7 +62193,7 @@
         "SPLUNK-ADVANCED-POWER-USER",
         "SPLUNK-CLOUD-ADMIN"
       ],
-      "notes": "Public Splunk expert and community-reviewed use cases for applied reinforcement. September 30 SPLUNK-CORE-USER deep review: Complete fresh16880character landing/index read. Featured usecase summaries andnavigationonly; linkedarticles/benchmarksnotreviewed. Hoursauthorbudget,notcoursecompletion. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution. September 30 SPLUNK-CORE-POWER-USER deep review: New direct retrieval parsed text exactly equals CoreUser16880-character landing,hash recorded separately from differing rawHTMLhash. Earlier complete parsed reading reused; linked articles not reviewed. See docs/research/2026-09-30-splunk-core-power-user-deep-review.md No live infrastructure execution."
+      "notes": "Public Splunk expert and community-reviewed use cases for applied reinforcement. September 30 SPLUNK-CORE-USER deep review: Complete fresh16880character landing/index read. Featured usecase summaries andnavigationonly; linkedarticles/benchmarksnotreviewed. Hoursauthorbudget,notcoursecompletion. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution. September 30 SPLUNK-CORE-POWER-USER deep review: New direct retrieval parsed text exactly equals CoreUser16880-character landing,hash recorded separately from differing rawHTMLhash. Earlier complete parsed reading reused; linked articles not reviewed. See docs/research/2026-09-30-splunk-core-power-user-deep-review.md No live infrastructure execution. September 30 SPLUNK-ADVANCED-POWER-USER deep review: Initial health check HTTP200; subsequent body retrieval failed with connection reset. No fresh body/article reading. Earlier Core User landing reading remains dated background only, not equality-verified evidence for this failed body. See docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md No live infrastructure execution."
     },
     {
       "id": "oreilly-exploring-splunk",
@@ -62263,7 +62306,7 @@
         "SPLUNK-CORE-POWER-USER",
         "SPLUNK-ADVANCED-POWER-USER"
       ],
-      "notes": "Primary manual for fields, aliases, calculated fields, tags, event types, macros, workflow actions and data models. September 30 SPLUNK-CORE-POWER-USER deep review: Direct retrieval failed DNS. Existing versioned reference retained, but its body was not freshly read. No UI, knowledge-object, CIM or runtime validation; next-pass verification remains explicit. See docs/research/2026-09-30-splunk-core-power-user-deep-review.md No live infrastructure execution."
+      "notes": "Primary manual for fields, aliases, calculated fields, tags, event types, macros, workflow actions and data models. September 30 SPLUNK-CORE-POWER-USER deep review: Direct retrieval failed DNS. Existing versioned reference retained, but its body was not freshly read. No UI, knowledge-object, CIM or runtime validation; next-pass verification remains explicit. See docs/research/2026-09-30-splunk-core-power-user-deep-review.md No live infrastructure execution. September 30 SPLUNK-ADVANCED-POWER-USER deep review: Direct DNS failure. Existing versioned reference retained; body not freshly read. Deployment-specific behavior and full reference review remain next-pass work. See docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md No live infrastructure execution."
     },
     {
       "id": "splunk-tags-aliases",
@@ -62292,7 +62335,7 @@
         "SPLUNK-CORE-POWER-USER",
         "SPLUNK-ADVANCED-POWER-USER"
       ],
-      "notes": "Changing catalog search; select current resources by objective gap and verify product baseline. September 30 SPLUNK-CORE-POWER-USER deep review: Direct blocked; marketplace search remains discovery only. No specific book/course, edition, currentavailability, duration or paid interior reviewed. See docs/research/2026-09-30-splunk-core-power-user-deep-review.md No live infrastructure execution."
+      "notes": "Changing catalog search; select current resources by objective gap and verify product baseline. September 30 SPLUNK-CORE-POWER-USER deep review: Direct blocked; marketplace search remains discovery only. No specific book/course, edition, currentavailability, duration or paid interior reviewed. See docs/research/2026-09-30-splunk-core-power-user-deep-review.md No live infrastructure execution. September 30 SPLUNK-ADVANCED-POWER-USER deep review: Direct403 blocked. Discovery link only; no named book/course/edition, current availability or paid content reviewed. See docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md No live infrastructure execution."
     },
     {
       "id": "pluralsight-search-splunk",
@@ -62307,7 +62350,7 @@
         "SPLUNK-CORE-POWER-USER",
         "SPLUNK-ADVANCED-POWER-USER"
       ],
-      "notes": "Changing catalog search; select current hands-on courses and do not treat vendor content as exam authority. September 30 SPLUNK-CORE-POWER-USER deep review: Complete fresh3919-character response read: navigation, generic marketing and unrendered template,not actual Splunk course results. No course, entitlement or paid content reviewed. See docs/research/2026-09-30-splunk-core-power-user-deep-review.md No live infrastructure execution."
+      "notes": "Changing catalog search; select current hands-on courses and do not treat vendor content as exam authority. September 30 SPLUNK-CORE-POWER-USER deep review: Complete fresh3919-character response read: navigation, generic marketing and unrendered template,not actual Splunk course results. No course, entitlement or paid content reviewed. See docs/research/2026-09-30-splunk-core-power-user-deep-review.md No live infrastructure execution. September 30 SPLUNK-ADVANCED-POWER-USER deep review: Complete fresh3919-character response read: navigation/marketing and unrendered course template, not actual Splunk results or enrollment evidence. See docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md No live infrastructure execution."
     },
     {
       "id": "udemy-search-splunk-power-user",
@@ -62324,22 +62367,88 @@
       "notes": "Changing marketplace search; verify date, blueprint and lab quality and reject recalled-question products. September 30 SPLUNK-CORE-POWER-USER deep review: Direct blocked; marketplace search is not a reviewed specific course. No instructor, update, syllabus, entitlement, video or protected questions reviewed. See docs/research/2026-09-30-splunk-core-power-user-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"splunk-advanced-power-user-source-1","title":"Event Handler Reference","url":"https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.2/simple-xml-reference/event-handler-reference","publisher":"Splunk","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLUNK-ADVANCED-POWER-USER"],"notes":"Public product, training or expert reference used for objective-aligned explanation and practice."
+      "id": "splunk-advanced-power-user-source-1",
+      "title": "Event Handler Reference",
+      "url": "https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.2/simple-xml-reference/event-handler-reference",
+      "publisher": "Splunk",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "SPLUNK-ADVANCED-POWER-USER"
+      ],
+      "notes": "Public product, training or expert reference used for objective-aligned explanation and practice. September 30 SPLUNK-ADVANCED-POWER-USER deep review: Direct DNS failure. Existing versioned reference retained; body not freshly read. Deployment-specific behavior and full reference review remain next-pass work. See docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"splunk-advanced-power-user-source-2","title":"token management guidance","url":"https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.4/drilldown-and-dashboard-interactivity/manage-token-values-in-the-current-dashboard","publisher":"Splunk","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLUNK-ADVANCED-POWER-USER"],"notes":"Public product, training or expert reference used for objective-aligned explanation and practice."
+      "id": "splunk-advanced-power-user-source-2",
+      "title": "token management guidance",
+      "url": "https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.4/drilldown-and-dashboard-interactivity/manage-token-values-in-the-current-dashboard",
+      "publisher": "Splunk",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "SPLUNK-ADVANCED-POWER-USER"
+      ],
+      "notes": "Public product, training or expert reference used for objective-aligned explanation and practice. September 30 SPLUNK-ADVANCED-POWER-USER deep review: Direct DNS failure. Existing versioned reference retained; body not freshly read. Deployment-specific behavior and full reference review remain next-pass work. See docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"splunk-advanced-power-user-source-3","title":"Dashboard overview","url":"https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.4/get-started-with-dashboards/dashboard-overview","publisher":"Splunk","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLUNK-ADVANCED-POWER-USER"],"notes":"Public product, training or expert reference used for objective-aligned explanation and practice."
+      "id": "splunk-advanced-power-user-source-3",
+      "title": "Dashboard overview",
+      "url": "https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.4/get-started-with-dashboards/dashboard-overview",
+      "publisher": "Splunk",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "SPLUNK-ADVANCED-POWER-USER"
+      ],
+      "notes": "Public product, training or expert reference used for objective-aligned explanation and practice. September 30 SPLUNK-ADVANCED-POWER-USER deep review: Direct DNS failure. Existing versioned reference retained; body not freshly read. Deployment-specific behavior and full reference review remain next-pass work. See docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"splunk-advanced-power-user-blueprint","title":"Splunk Core Certified Advanced Power User Test Blueprint","url":"https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-advanced-power-user.pdf","publisher":"Splunk","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLUNK-ADVANCED-POWER-USER"],"notes":"Canonical public objective blueprint and exam-scope authority."
+      "id": "splunk-advanced-power-user-blueprint",
+      "title": "Splunk Core Certified Advanced Power User Test Blueprint",
+      "url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-advanced-power-user.pdf",
+      "publisher": "Splunk",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "SPLUNK-ADVANCED-POWER-USER"
+      ],
+      "notes": "Canonical public objective blueprint and exam-scope authority. September 30 SPLUNK-ADVANCED-POWER-USER deep review: Complete indexed six-page 161-line parsed blueprint read; 104 objectives manually matched in 22 groups. Python arithmetic confirms 67 percent SPL / 33 percent dashboard weights. Fourteen suggested course names counted; course contents/durations not reviewed. Page-number concatenation artifacts excluded. September 2 snapshot retained after monitor/direct DNS errors; no fresh successful objective hash or visual-PDF claim. See docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"splunk-advanced-power-user-certification","title":"Splunk Core Certified Advanced Power User","url":"https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-advanced-power-user.html","publisher":"Splunk","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLUNK-ADVANCED-POWER-USER"],"notes":"Canonical live certification status, logistics and preparation links."
+      "id": "splunk-advanced-power-user-certification",
+      "title": "Splunk Core Certified Advanced Power User",
+      "url": "https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-advanced-power-user.html",
+      "publisher": "Splunk",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "SPLUNK-ADVANCED-POWER-USER"
+      ],
+      "notes": "Canonical live certification status, logistics and preparation links. September 30 SPLUNK-ADVANCED-POWER-USER deep review: Complete indexed 227-line credential page read: intermediate, 70 questions, 60 minutes including three agreement minutes, USD130/PearsonVUE and Core Power User prerequisite. No booking/account/eligibility validation. No retirement found within these checked pages; no unseen feed claim. See docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"splunk-advanced-power-user-source-4","title":"Udemy Advanced Power User search","url":"https://www.udemy.com/courses/search/?q=Splunk%20Advanced%20Power%20User","publisher":"Udemy marketplace","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["SPLUNK-ADVANCED-POWER-USER"],"notes":"Optional changing catalog resource; verify currency, objective coverage and hands-on quality, and reject recalled-question products."
+      "id": "splunk-advanced-power-user-source-4",
+      "title": "Udemy Advanced Power User search",
+      "url": "https://www.udemy.com/courses/search/?q=Splunk%20Advanced%20Power%20User",
+      "publisher": "Udemy marketplace",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "SPLUNK-ADVANCED-POWER-USER"
+      ],
+      "notes": "Optional changing catalog resource; verify currency, objective coverage and hands-on quality, and reject recalled-question products. September 30 SPLUNK-ADVANCED-POWER-USER deep review: Direct403 blocked. Marketplace discovery only, not a reviewed course, instructor, syllabus or current entitlement. See docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md No live infrastructure execution."
     },
     {
       "id":"splunk-cloud-admin-source-1","title":"Cloud administration hub","url":"https://help.splunk.com/en/splunk-cloud-platform/administer","publisher":"Splunk","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLUNK-CLOUD-ADMIN"],"notes":"Public product, training, standards or expert reference used for objective-aligned explanation and practice."

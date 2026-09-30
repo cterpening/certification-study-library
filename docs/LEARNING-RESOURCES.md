@@ -3928,6 +3928,30 @@ Hour ranges are author planning budgets, not measured completion times. The link
 
 No exact current MeasureUp or Whizlabs Power User practice product was verified. Reject live/recalled/guaranteed-pass questions; use the public blueprint, official docs, and hands-on behavior as truth.
 
+### SPLUNK-ADVANCED-POWER-USER — Splunk Core Certified Advanced Power User
+
+Resource details from the [SPLUNK-ADVANCED-POWER-USER guide](../guides/SPLUNK-ADVANCED-POWER-USER-splunk-core-certified-advanced-power-user.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Pick official training or a documentation-led lab as the primary path, then add targeted alternatives. Spend more time producing and measuring searches/dashboards than watching. Reconcile all resources with the current blueprint and your product/framework version.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Official Advanced Power User blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-advanced-power-user.pdf) | Free canonical scope | 2–3 hr mapping/final review | All 22 domains and prerequisite |
+| [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-advanced-power-user.html) | Free | 20–40 min before booking | Status, price, delivery, prerequisite |
+| [Official Advanced Power User named-course set](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-advanced-power-user.pdf) | Mixed free/paid; follow links/search current catalog | 35–55 hr author planning budget for the 14 suggested course topics plus labs; actual course durations unverified | Blueprint sequence |
+| [Search Manual 10.4](https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/search-overview/get-started-with-search) and [SPL reference](https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.0/introduction/welcome-to-the-search-reference) | Free versioned docs | 18–30 hr selected advanced commands with experiments | Exact SPL semantics/performance |
+| [Knowledge Management Manual 10.4](https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.4) | Free | 15–25 hr selected extraction/lookup/macro/model/acceleration topics | Search-time objects and acceleration |
+| [Classic/Simple XML dashboards 10.4](https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.4/get-started-with-dashboards/dashboard-overview) | Free; framework availability varies | 15–25 hr with one complete form/dashboard | Explicit 33% dashboard scope |
+| [Splunk How-To YouTube](https://www.youtube.com/@SplunkHowTo) | Free official videos | 5–10 hr selected videos plus recreation | Visual walkthroughs; verify UI/version |
+| [Splunk Lantern](https://lantern.splunk.com/) | Free use cases | 8–15 hr selected optimization/dashboard examples | Applied second path |
+| [Pluralsight Splunk search](https://www.pluralsight.com/search?q=Splunk) | Subscription; catalog may not align to exam/framework | Select 10–20 hr after objective mapping | Alternate explanations |
+| [O'Reilly Splunk search](https://www.oreilly.com/search/?q=Splunk) | Subscription; much content uses older versions | Select 10–20 hr, verifying syntax/deprecations in current docs | Deep dives/reference |
+| [Udemy Advanced Power User search](https://www.udemy.com/courses/search/?q=Splunk%20Advanced%20Power%20User) | Paid marketplace; quality/version vary | Select 10–20 hr only after blueprint/provenance/lab review | Optional structured course |
+
+**September 30 evidence boundary:** the blueprint names 14 suggested courses, but current enrollment, access and individual course durations were not verified. All time ranges in this table are author planning budgets. Direct receipts include three reachable links, twelve DNS errors and two blocked searches. Lantern passed its initial health check but its subsequent body retrieval failed; no fresh article reading is claimed. YouTube returned a 176-character shell, and the complete 3,919-character Pluralsight response contained navigation and an unrendered template, not course results. O'Reilly and Udemy searches were blocked. No paid interior or video was reviewed.
+
+No exact current MeasureUp or Whizlabs Advanced Power User practice product was verified. Reject recalled/live/guaranteed-pass questions. The volume and age of marketplace Simple XML material make version verification especially important.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

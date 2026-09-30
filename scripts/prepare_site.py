@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BUILD_DIR = ROOT / ".site-build"
 
 PUBLIC_DOCUMENTS = (
+    "docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md",
     "docs/research/2026-09-30-splunk-core-power-user-deep-review.md",
     "docs/research/2026-09-30-splunk-core-user-deep-review.md",
     "docs/CERTIFICATION-LIFECYCLE.md",

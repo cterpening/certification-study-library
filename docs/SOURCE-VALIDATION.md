@@ -2387,6 +2387,8 @@ The review maps the full blueprint through searches whose transformations can be
 
 ## SPLUNK-ADVANCED-POWER-USER coverage record
 
+The September 30 [deep review](research/2026-09-30-splunk-advanced-power-user-deep-review.md) maps 104 detailed objectives. Mapped 104 objectives and reviewed 40 answers. Corrected 67/33 blueprint weights and 14 suggested courses; clarified tstats summary coverage, token escaping, hidden-panel searches, temporary-result repeatability, multivalue assumptions and transaction completeness. All ten Splunk labs remain unexecuted with explicit next-pass evidence requirements. Current guide citations: 17 registered, 3 reachable, 2 access-blocked, 12 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Exploring Statistical Commands (4%); Exploring eval Command Functions (4%); Exploring Lookups (4%); Exploring Alerts (4%); Advanced Field Creation and Management (4%); Working with Self-Describing Data and Files (3%); Advanced Search Macros (3%); Acceleration: Reports and Summary Indexing (4%); Acceleration: Data Models and tsidx Files (4%); Using Search Efficiently (4%); More Search Tuning (3%); Manipulating and Filtering Data (6%); Working with Multivalued Fields (7%); Using Advanced Transactions (5%); Working with Time (2%); Using Subsearches (6%); Creating a Prototype (4%); Using Forms (5%); Improving Performance (6%); Customizing Dashboards (6%); Adding Drilldowns (7%); Adding Advanced Behaviors and Visualizations (5%)

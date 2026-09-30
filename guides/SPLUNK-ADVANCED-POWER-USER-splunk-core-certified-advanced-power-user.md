@@ -6,19 +6,19 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-09-30
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-09-30
 ---
 
 # Splunk Core Certified Advanced Power User Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, six-page public blueprint, current Splunk 10.4 search/knowledge/dashboard documentation, and selected learning resources were checked September 2, 2026. This guide contains original learning material, not exam items. Recheck the [official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-advanced-power-user.html) and [test blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-advanced-power-user.pdf) before scheduling.
+> **Independent AI-assisted resource — BEST-EFFORT PUBLIC-SOURCE REVIEW; HUMAN REVIEW PENDING.** On September 30, 2026, the complete indexed credential page and parsed six-page blueprint, all 104 mapped objectives, the full guide and 40 answers were reviewed. Selected official command and token references support the corrections below. Direct official retrieval failed DNS; the September 2 objective snapshot is retained with manual confirmation recorded separately. All ten Splunk labs remain unexecuted. See the [review and follow-ups](../docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md). This is original learning material, not exam content.
 
-**Current baseline:** 22 published domains spanning advanced SPL/knowledge objects (59%) and Simple XML forms/dashboards (41%). The highest individual domains are Multivalued Fields and Drilldowns at 7% each; all domains are required.<br>
+**Current baseline:** 22 published domains spanning advanced SPL/knowledge objects (67%) and Simple XML forms/dashboards (33%). The highest individual domains are Multivalued Fields and Drilldowns at 7% each; all domains are required.<br>
 **Exam contract:** intermediate; 70 multiple-choice questions; 60 total minutes including three minutes for the exam agreement; USD 130 per attempt; Pearson VUE delivery<br>
-**Prerequisite contract:** active Splunk Core Certified Power User is explicitly required by both live page and blueprint.<br>
-**Upcoming/lifecycle boundary:** no retirement or replacement was announced. The current blueprint explicitly tests Simple XML. Current Splunk 10.4 documentation still supports Classic/Simple XML dashboards alongside Dashboard Studio; HTML dashboards are deprecated and some Classic PDF features are deprecated in Splunk Cloud, but those facts do not remove the published Simple XML objectives. Verify framework availability in the exam and your deployment.<br>
+**Prerequisite contract:** Splunk Core Certified Power User is the named prerequisite on the credential page and blueprint. Confirm current eligibility and credential validity before booking.<br>
+**Upcoming/lifecycle boundary:** no retirement or replacement was found in the credential page and blueprint checked September 30. This is a bounded observation, not a check of every release channel. Simple XML remains explicit blueprint scope. Framework availability and deprecations in your deployment need current verification; the existing dashboard overview and event-handler bodies could not be freshly retrieved.<br>
 
 ## How to use this guide
 
@@ -48,7 +48,7 @@ Use three passes:
 
 `eventstats` calculates aggregates and adds them back to each applicable event; `streamstats` calculates running/windowed results in current event order. Sort intentionally before order-dependent processing and understand memory/window/reset boundaries. `list` preserves ordered values but has limits; `values` deduplicates and orders rather than preserving event order.
 
-`eval` function families include conversions, text, comparison/conditional, informational/type/null, statistical/math, and time formatting. Use `makeresults` to generate controlled rows for tests. Validate types and nulls explicitly:
+`eval` function families include conversions, text, comparison/conditional, informational/type/null, statistical/math, and time formatting. Use [`makeresults`](https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.0/search-commands/makeresults) to generate temporary rows without indexed input. Its default `_time` is execution time; assign fixed values when testing repeatability. The following SPL is a proposed, unexecuted type/null exercise:
 
 ```spl
 | makeresults count=4
@@ -82,7 +82,9 @@ Report acceleration builds summaries for eligible transforming reports and trans
 
 Summary indexing explicitly writes scheduled transforming results to a summary index, commonly with `collect` or `sistats`/`sitimechart`/related commands, then searches those summarized fields. Design the summary schema, `_time`, source marker, schedule, window, lateness/backfill, retention, and deduplication. Gaps undercount and overlaps double count.
 
-Data model acceleration builds `.tsidx` summaries for selected model datasets over a configured range. `datamodel` explores/results from models; `tstats` calculates statistics from indexed fields and accelerated data models. When targeting a model, use the correct `FROM datamodel=Model.Dataset` and required field qualification. Validate acceleration coverage/lag and compare with raw results at range boundaries.
+Data model acceleration builds `.tsidx` summaries for selected model datasets over a configured range. `datamodel` explores models. [`tstats`](https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.0/search-commands/tstats) can query indexed fields without a data model, and can run over accelerated or unaccelerated models. For a model, select its root dataset and use the required field qualification. The default `summariesonly=false` can include unsummarized data outside summary coverage, at additional cost; `true` excludes that data and does not run over an unaccelerated model. Compare coverage and results before speed.
+
+**Paper example, not a Splunk result:** if an intended population contains 120 matching events and only 90 are summarized, an otherwise equivalent summary-only count can cover just those 90. Faster execution does not establish a complete answer. Verify source population, time bounds, model constraints and lag in the actual deployment.
 
 Choose among raw search, report acceleration, summary indexing, and data-model acceleration from reuse pattern, schema control, compatible searches, latency, retention, storage/compute, backfill, and governance—not merely fastest demo.
 
@@ -108,11 +110,13 @@ Multivalue fields contain multiple values in one field. Know functions such as `
     | eval user=mvindex(split(pairs,"::"),0), action=mvindex(split(pairs,"::"),1)
 ```
 
+The pairing example assumes equal-length arrays in corresponding order and a delimiter absent from both values. For example, `user=[A,B]` and `action=[read,write]` represent two intended pairs; independent expansions would instead create four combinations. This is paper reasoning, not measured SPL output. Add unequal-length, missing-value and embedded-delimiter cases before trusting the implementation.
+
 ## 14–16. Transactions, time, and subsearches — 13%
 
 Advanced transactions may need equivalent identifiers under different field names. Normalize before grouping with conditional assignment or rename; `coalesce(a,b,c)` selects the first non-null value but can incorrectly merge concepts that are not semantically equivalent. An alternative is separate transaction field lists/unified aliases or evaluated normalization with explicit source conditions.
 
-Use `closed_txn`, `eventcount`, `duration`, `startswith`, `endswith`, `maxspan`, `maxpause`, field lists, and event ordering to distinguish complete/incomplete groups. Constrain time and fields first. Prefer stats when raw ordering/transaction boundary behavior is not required.
+The [`transaction` reference](https://help.splunk.com/en/splunk-enterprise/search/spl-search-reference/10.4/search-commands/transaction) requires descending chronological input. Use explicit boundaries and inspect `eventcount`, `duration` and eviction behavior. `closed_txn` reports command closure, which can result from configured limits; it is not proof that the business process observed every expected boundary or succeeded. Define business completeness separately. Constrain time and fields first. Use stats only when grouping and ordering assumptions preserve the intended population and session boundaries.
 
 Default time fields include `_time` and `_indextime`; date/time fields may be derived. Search earliest/latest, bin/span, time zone, snapping, DST, and timestamp extraction answer different concerns. Keep epoch values for arithmetic.
 
@@ -124,9 +128,11 @@ Simple XML dashboards use elements such as `<form>`/`<dashboard>`, `<label>`, `<
 
 Tokens are variables populated by form inputs, search results/states, page initialization, or drilldowns. Form inputs can have defaults, initial values, choices, search-populated choices, and submitted/change behavior. Cascading inputs derive later choices from earlier tokens; define safe defaults, unset behavior, and bounded search dependencies.
 
-Token filters such as `|s`, `|u`, `|n`, and `|h` escape/encode for different contexts; use the correct current reference and never assume a filter provides authorization. Avoid direct unbounded token interpolation in base searches.
+The [Simple XML token reference](https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.4/drilldown-and-dashboard-interactivity/token-usage-in-dashboards) distinguishes `|s` (quote a value and escape embedded quotes), `|h` (HTML) and `|u` (URL). **`|n` disables default escaping; it is not another protective encoder.** Select the filter for the consuming context and validate allowed values. No filter grants authorization. A quoted search value is not automatically a valid field name or an allowed URL destination.
 
-Current Classic/Simple XML behavior is documented in [Dashboard overview](https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.4/get-started-with-dashboards/dashboard-overview).
+Token-based `depends`/`rejects` visibility does not by itself stop background searches. Hiding a panel therefore proves neither lower search load nor restricted data access; inspect search jobs and permissions separately.
+
+For deployment-specific verification, Classic/Simple XML behavior is documented in [Dashboard overview](https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.4/get-started-with-dashboards/dashboard-overview).
 
 ## 19–22. Performance, customization, drilldowns, and behavior — 24%
 
@@ -138,7 +144,7 @@ Drilldowns can link to searches, dashboards/forms, or external URLs, or manage t
 
 Event handlers respond to input change, search progress/done/error, page load, selection, and drilldown contexts, using actions such as set, unset, eval, and link. Contextual behavior uses conditions and tokens to choose actions. Simple XML extensions can add JavaScript/CSS behavior in supported environments, but expand security, compatibility, accessibility, and upgrade risk; prefer native supported capabilities when adequate.
 
-The current [Event Handler Reference](https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.2/simple-xml-reference/event-handler-reference) and [token management guidance](https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.4/drilldown-and-dashboard-interactivity/manage-token-values-in-the-current-dashboard) are authoritative.
+The versioned [Event Handler Reference](https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.2/simple-xml-reference/event-handler-reference) and [token management guidance](https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.4/drilldown-and-dashboard-interactivity/manage-token-values-in-the-current-dashboard) are official references; their full bodies remain next-pass reading.
 
 > **Related item:** Dashboard Studio also supports tokens and event handlers through a different JSON model. Learn it for current work where appropriate, but keep framework syntax separate from the blueprint's explicit Simple XML contract.
 
@@ -170,6 +176,25 @@ Create a valid Simple XML form with cascading inputs, token filters, base/post-p
 10. Full dashboard performance/customization/drilldown/event-handler/extension review.
 
 For each lab, retain input, expected/actual results, SPL/source, version, timings, warnings, permission context, and regression case.
+
+## Lab evidence and next-pass fixes
+
+All ten labs are **not executed**: no Splunk runtime or approved endpoint was available. The numeric and pairing examples are predictions only. No lookup write, alert, webhook, service, dashboard deployment or configuration change was performed.
+
+| Lab | Evidence still needed |
+|---|---|
+| 1. Statistics/eval | Fixed-time fixtures; null/type/order results and warnings |
+| 2. Lookups/alerts | Approved isolated data; duplicate/missing keys; write races; redacted webhook/log-loop evidence |
+| 3. Extraction | Valid/malformed structured input; regex nonmatches and measured costs |
+| 4. Macros | Expanded nested syntax; dependencies, scope and permission failures |
+| 5. Acceleration | Raw versus summary populations, lag, backfill gaps/overlaps and summary-only omission |
+| 6. Search tuning | Equivalent result sets and Job Inspector evidence under comparable conditions |
+| 7. Multivalue/time | Pair alignment, unequal/missing values, delimiter collisions, row counts and time-zone edges |
+| 8. Transactions/subsearches | Descending input, reused identifiers, boundary closure, eviction and truncated-filter cases |
+| 9. Forms/tokens | Blank/special inputs; context-specific filters; `|n` risks and actual submitted searches |
+| 10. Dashboard | Background jobs for hidden panels, concurrency, drilldowns, permissions, accessibility and extension compatibility |
+
+Contributors can add fixes with the product version/framework, minimal public or synthetic input, exact SPL/XML, expected and observed results, warnings and reproduction steps. If sources conflict, record both dated sources and mark the point as needing more research on the next pass. An unavailable source or unexecuted lab is not a successful verification.
 
 ## Original readiness checks
 
@@ -219,7 +244,7 @@ For each lab, retain input, expected/actual results, SPL/source, version, timing
 1. Aggregate rows; aggregates copied to events; running/windowed aggregates by current order.
 2. The current pipeline's results, then appends its subpipeline output.
 3. List preserves values/order with limits; values deduplicates/sorts.
-4. It creates deterministic synthetic rows without indexed data.
+4. It creates temporary synthetic rows without indexed input. Set fixed values, including `_time` where relevant, for repeatability; the default timestamp is execution time.
 5. OUTPUT may overwrite; OUTPUTNEW only fills absent destinations.
 6. For frequently updated/application-managed keyed data; CSV for simpler static reference.
 7. Concurrent/stateful writes can overwrite, race, grow, or corrupt intended state.
@@ -231,7 +256,7 @@ For each lab, retain input, expected/actual results, SPL/source, version, timing
 13. A repeatedly run eligible transforming report whose compatible ranges benefit from summaries.
 14. Gaps undercount; overlaps double count.
 15. `.tsidx` summaries for configured model datasets/range.
-16. When its model/dataset and fields are accelerated/covered and syntax references them correctly.
+16. Reference the model/root dataset correctly and inspect summary coverage. `tstats` also supports indexed data and unaccelerated models. Default `summariesonly=false` may include unsummarized data; `true` restricts results to summaries, potentially omitting part of the intended range.
 17. Acceleration/range/null/late-data behavior can change results.
 18. It determines streaming/centralizing/transforming placement and data movement.
 19. Per-command phase/timing/count/warning evidence.
@@ -239,16 +264,16 @@ For each lab, retain input, expected/actual results, SPL/source, version, timing
 21. Time, index, indexed metadata, and selective terms that preserve intended events.
 22. Otherwise duplicate coordinates can overwrite or produce ambiguous matrix cells.
 23. Creates one row per value and can multiply memory/results.
-24. Zip/index related arrays before expansion or preserve an explicit key.
+24. Preserve an explicit relationship key, or zip aligned equal-length arrays before expansion with a collision-free delimiter. Test missing, unequal and delimiter-containing inputs.
 25. It can collapse identifiers that look interchangeable but represent different semantics.
-26. Expected boundary conditions were or were not observed; `closed_txn` helps expose this.
+26. Business completeness requires explicit expected-boundary evidence. `closed_txn` alone describes command closure, including configured-limit closure, and does not prove business success.
 27. `_time` and `_indextime`.
 28. Runtime/result limits can truncate filters silently.
 29. Run alone, inspect formatted output/count/time/warnings, then inspect outer search and Job Inspector.
 30. Adds subsearch rows vertically to main results.
 31. `<form>` and `<dashboard>`.
 32. A later input's choice search depends on an earlier input token.
-33. Encoding changes representation; roles/search constraints enforce authority.
+33. Encoding changes representation; permissions enforce authority. `|n` disables escaping. Hiding panels also does not stop their background searches.
 34. When panels need incompatible raw fields, time ranges, or result cardinality beyond base/post-process behavior.
 35. They determine repeated search concurrency/load and freshness.
 36. No; role and search permissions remain the security boundary.
@@ -278,14 +303,16 @@ This is not a complete list, and it is not meant to be consumed in full. Pick of
 |---|---|---:|---|
 | [Official Advanced Power User blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-advanced-power-user.pdf) | Free canonical scope | 2–3 hr mapping/final review | All 22 domains and prerequisite |
 | [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-advanced-power-user.html) | Free | 20–40 min before booking | Status, price, delivery, prerequisite |
-| [Official Advanced Power User named-course set](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-advanced-power-user.pdf) | Mixed free/paid; follow links/search current catalog | 35–55 hr across the 13 suggested courses plus labs | Blueprint sequence |
-| [Search Manual 10.4](https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/search-overview/get-started-with-search) and [SPL reference](https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.0/introduction/welcome-to-the-search-reference) | Free current docs | 18–30 hr selected advanced commands with experiments | Exact SPL semantics/performance |
+| [Official Advanced Power User named-course set](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-advanced-power-user.pdf) | Mixed free/paid; follow links/search current catalog | 35–55 hr author planning budget for the 14 suggested course topics plus labs; actual course durations unverified | Blueprint sequence |
+| [Search Manual 10.4](https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/search-overview/get-started-with-search) and [SPL reference](https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.0/introduction/welcome-to-the-search-reference) | Free versioned docs | 18–30 hr selected advanced commands with experiments | Exact SPL semantics/performance |
 | [Knowledge Management Manual 10.4](https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.4) | Free | 15–25 hr selected extraction/lookup/macro/model/acceleration topics | Search-time objects and acceleration |
-| [Classic/Simple XML dashboards 10.4](https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.4/get-started-with-dashboards/dashboard-overview) | Free; framework availability varies | 15–25 hr with one complete form/dashboard | Explicit 41% dashboard scope |
+| [Classic/Simple XML dashboards 10.4](https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.4/get-started-with-dashboards/dashboard-overview) | Free; framework availability varies | 15–25 hr with one complete form/dashboard | Explicit 33% dashboard scope |
 | [Splunk How-To YouTube](https://www.youtube.com/@SplunkHowTo) | Free official videos | 5–10 hr selected videos plus recreation | Visual walkthroughs; verify UI/version |
 | [Splunk Lantern](https://lantern.splunk.com/) | Free use cases | 8–15 hr selected optimization/dashboard examples | Applied second path |
 | [Pluralsight Splunk search](https://www.pluralsight.com/search?q=Splunk) | Subscription; catalog may not align to exam/framework | Select 10–20 hr after objective mapping | Alternate explanations |
 | [O'Reilly Splunk search](https://www.oreilly.com/search/?q=Splunk) | Subscription; much content uses older versions | Select 10–20 hr, verifying syntax/deprecations in current docs | Deep dives/reference |
 | [Udemy Advanced Power User search](https://www.udemy.com/courses/search/?q=Splunk%20Advanced%20Power%20User) | Paid marketplace; quality/version vary | Select 10–20 hr only after blueprint/provenance/lab review | Optional structured course |
+
+**September 30 evidence boundary:** the blueprint names 14 suggested courses, but current enrollment, access and individual course durations were not verified. All time ranges in this table are author planning budgets. Direct receipts include three reachable links, twelve DNS errors and two blocked searches. Lantern passed its initial health check but its subsequent body retrieval failed; no fresh article reading is claimed. YouTube returned a 176-character shell, and the complete 3,919-character Pluralsight response contained navigation and an unrendered template, not course results. O'Reilly and Udemy searches were blocked. No paid interior or video was reviewed.
 
 No exact current MeasureUp or Whizlabs Advanced Power User practice product was verified. Reject recalled/live/guaranteed-pass questions. The volume and age of marketplace Simple XML material make version verification especially important.
