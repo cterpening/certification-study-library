@@ -1,7 +1,7 @@
 {
   "$schema": "../schemas/source-health.schema.json",
   "schema_version": 1,
-  "generated_on": "2026-09-17",
+  "generated_on": "2026-09-30",
   "sources": [
     {
       "id": "splunk-tstats-10-0",
@@ -75249,7 +75249,7 @@
     {
       "id": "sc-100-mitre-attack",
       "url": "https://attack.mitre.org/",
-      "checked_at": "2026-09-28T02:53:53+00:00",
+      "checked_at": "2026-09-30T12:59:03+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://attack.mitre.org/",
@@ -78415,7 +78415,7 @@
     {
       "id": "splk-5002-blueprint",
       "url": "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf",
-      "checked_at": "2026-09-02T21:04:54+00:00",
+      "checked_at": "2026-09-30T12:58:27+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf",
@@ -78429,7 +78429,7 @@
     {
       "id": "splk-5002-certification",
       "url": "https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html",
-      "checked_at": "2026-09-02T21:04:54+00:00",
+      "checked_at": "2026-09-30T12:58:27+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html",
@@ -78445,7 +78445,7 @@
     {
       "id": "splk-5002-source-1",
       "url": "https://help.splunk.com/en/splunk-enterprise-security",
-      "checked_at": "2026-09-02T21:04:54+00:00",
+      "checked_at": "2026-09-30T12:58:27+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://help.splunk.com/en/splunk-enterprise-security",
@@ -78459,7 +78459,7 @@
     {
       "id": "splk-5002-source-2",
       "url": "https://help.splunk.com/en/splunk-soar",
-      "checked_at": "2026-09-02T21:04:54+00:00",
+      "checked_at": "2026-09-30T12:58:27+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://help.splunk.com/en/splunk-soar",
@@ -78657,7 +78657,7 @@
     {
       "id": "splunk-boss-of-the-soc",
       "url": "https://bots.splunk.com/",
-      "checked_at": "2026-09-29T17:47:01+00:00",
+      "checked_at": "2026-09-30T12:59:03+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://bots.splunk.com/",
@@ -79339,7 +79339,7 @@
     {
       "id": "splunk-security-content",
       "url": "https://research.splunk.com/",
-      "checked_at": "2026-09-29T17:47:01+00:00",
+      "checked_at": "2026-09-30T12:59:03+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://research.splunk.com/",
@@ -81744,6 +81744,104 @@
       "duration_signals": [],
       "signal_fingerprint": "7db3ec599c38ec48ae7a3f240a95f2351ff7ef5e375929b6aa747bb3523ac5b9",
       "error": ""
+    },
+    {
+      "id": "splk-5002-create-detection-8-5",
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.5/detections/create-event-based-detections-in-splunk-enterprise-security",
+      "checked_at": "2026-09-30T12:58:27+00:00",
+      "status": "blocked",
+      "http_status": 403,
+      "final_url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.5/detections/create-event-based-detections-in-splunk-enterprise-security",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": "Forbidden"
+    },
+    {
+      "id": "splk-5002-detection-overview-8-5",
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.5/detections/use-detections-to-search-for-threats-in-splunk-enterprise-security",
+      "checked_at": "2026-09-30T12:58:27+00:00",
+      "status": "blocked",
+      "http_status": 403,
+      "final_url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.5/detections/use-detections-to-search-for-threats-in-splunk-enterprise-security",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": "Forbidden"
+    },
+    {
+      "id": "splk-5002-es-8-0-limitations",
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.0/splunk-enterprise-security-release-notes/limitations",
+      "checked_at": "2026-09-30T12:58:27+00:00",
+      "status": "blocked",
+      "http_status": 403,
+      "final_url": "https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.0/splunk-enterprise-security-release-notes/limitations",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": "Forbidden"
+    },
+    {
+      "id": "splk-5002-es-8-6-compatibility",
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.6/splunk-enterprise-security-release-notes/compatibility-and-regional-availability",
+      "checked_at": "2026-09-30T12:58:27+00:00",
+      "status": "blocked",
+      "http_status": 403,
+      "final_url": "https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.6/splunk-enterprise-security-release-notes/compatibility-and-regional-availability",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": "Forbidden"
+    },
+    {
+      "id": "splk-5002-findings-8-4",
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.4/findings/monitor-your-security-operations-center-with-findings-in-splunk-enterprise-security",
+      "checked_at": "2026-09-30T12:58:27+00:00",
+      "status": "blocked",
+      "http_status": 403,
+      "final_url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.4/findings/monitor-your-security-operations-center-with-findings-in-splunk-enterprise-security",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": "Forbidden"
+    },
+    {
+      "id": "splk-5002-risk-modifiers-8-0",
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.0/risk-based-alerting/modifying-risk-using-risk-modifiers-in-splunk-enterprise-security",
+      "checked_at": "2026-09-30T12:58:27+00:00",
+      "status": "blocked",
+      "http_status": 403,
+      "final_url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.0/risk-based-alerting/modifying-risk-using-risk-modifiers-in-splunk-enterprise-security",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": "Forbidden"
+    },
+    {
+      "id": "splk-5002-soar-cloud-playbooks",
+      "url": "https://help.splunk.com/en/splunk-soar/soar-cloud/develop-apps/build-playbooks/introduction-to-splunk-soar-playbooks/use-playbooks-to-automate-analyst-workflows-in-splunk-soar-cloud",
+      "checked_at": "2026-09-30T12:58:27+00:00",
+      "status": "blocked",
+      "http_status": 403,
+      "final_url": "https://help.splunk.com/en/splunk-soar/soar-cloud/develop-apps/build-playbooks/introduction-to-splunk-soar-playbooks/use-playbooks-to-automate-analyst-workflows-in-splunk-soar-cloud",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": "Forbidden"
     }
   ]
 }

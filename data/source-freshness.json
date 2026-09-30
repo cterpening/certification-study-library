@@ -4,6 +4,84 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-30-splk-5002-deep-review",
+      "title": "SPLK-5002 detailed scope and product-boundary review",
+      "rubric_version": 1,
+      "created_on": "2026-09-30",
+      "completed_on": "2026-09-30",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Next pending Splunk certification selected from the deep-review queue; public source inspection preceded documented guide repair.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {"kind":"ai-agent","labels":["Codex"],"independence":"same-context","human_review":false},
+      "exam_codes": ["SPLK-5002"],
+      "results": [
+        {
+          "exam_code": "SPLK-5002",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLK-5002-splunk-certified-cybersecurity-defense-engineer.md",
+          "baseline_sha256": "2985289b473752001fcf91bdfdba4a2aa6a1a2b53bc7d459e2a3b751ed16fd65",
+          "scanned_on": "2026-09-30",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status":"passed","notes":"Complete two-page public blueprint and credential page read through indexed public reader; 19 objectives, five weights, 60 questions and 75 minutes match the guide. Direct HTTP returned 200 for both. No retirement statement found in these pages."},
+            "official_product_documentation": {"status":"passed","notes":"Selected ES 8 and SOAR pages establish new terminology, release-specific pairing and restart behavior. Two ES 8.5 pages conflict on one-detection dual output; actual release behavior untested and tracked in the contradiction check."},
+            "official_release_channels": {"status":"passed","notes":"Selected ES 8.0 limitations and ES 8.6 compatibility matrix read for release-specific pairing; no full release-history or lifecycle search claimed."},
+            "catalog_comparison": {"status":"blocked","notes":"Seven blueprint-suggested course names verified, but current delivery, enrollment, duration and course interiors were not checked."},
+            "contradiction_and_gap_review": {"status":"blocked","notes":"ES 8.5 documentation contradiction, all twelve unexecuted product labs and independent human review remain. Guide teaches the explicit boundary without claiming runtime validation."}
+          },
+          "findings": [
+            {
+              "id":"splk-5002-pairing-release-boundary",
+              "check":"official_product_documentation",
+              "category":"updated-source",
+              "title":"ES and SOAR pairing support differs between release families",
+              "url":"https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.6/splunk-enterprise-security-release-notes/compatibility-and-regional-availability",
+              "source_type":"release-notes",
+              "affected_exams":["SPLK-5002"],
+              "catalog_status":"registered",
+              "confidence":"high",
+              "evidence":"ES 8.0 limitation permits cloud/cloud native pairing; current 8.5+ matrix lists additional deployment combinations with conditions.",
+              "recommendation":"Teach topology and version check before choosing native pairing or export integration.",
+              "disposition":"applied",
+              "source_id":"splk-5002-es-8-6-compatibility",
+              "resolution":"Guide now links both release documents and names compatibility conditions."
+            },
+            {
+              "id":"splk-5002-detection-output-conflict",
+              "check":"contradiction_and_gap_review",
+              "category":"documentation-gap",
+              "title":"ES 8.5 detection pages conflict about emitting both output types",
+              "url":"https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.5/detections/create-event-based-detections-in-splunk-enterprise-security",
+              "source_type":"product-documentation",
+              "affected_exams":["SPLK-5002"],
+              "catalog_status":"registered",
+              "confidence":"high",
+              "evidence":"The creation page says findings or intermediate findings or both; the overview says a single detection cannot produce both, while later describing 8.1+ dual output.",
+              "recommendation":"Check exact installed release, UI and resulting risk/notable records with a safe synthetic detection.",
+              "disposition":"blocked"
+            },
+            {
+              "id":"splk-5002-current-course-availability",
+              "check":"catalog_comparison",
+              "category":"documentation-gap",
+              "title":"Blueprint course names do not establish current delivery or access",
+              "url":"https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf",
+              "source_type":"exam-blueprint",
+              "affected_exams":["SPLK-5002"],
+              "catalog_status":"registered",
+              "confidence":"high",
+              "evidence":"Blueprint lists seven suggested names; current catalog listing, enrollment, duration and interiors were not checked.",
+              "recommendation":"Verify current course availability and access before recommending a purchase or fixed study schedule.",
+              "disposition":"blocked"
+            }
+          ],
+          "notes":"Direct guide-link health: 5 successful, 9 automation-blocked, 0 broken. Selected blocked help pages were read through the public indexed reader; no product lab or human review occurred."
+        }
+      ],
+      "summary": {"exam_count":1,"current":0,"review_required":0,"blocked":1,"queued_findings":0,"applied_findings":1,"no_action_findings":0,"blocked_findings":2}
+    },
+    {
       "id": "freshness-2026-09-30-splunkadvancedpoweruser-deep-review",
       "title": "SPLUNK-ADVANCED-POWER-USER complete guide and learning-content review",
       "rubric_version": 1,

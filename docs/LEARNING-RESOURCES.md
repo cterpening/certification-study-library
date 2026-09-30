@@ -3952,6 +3952,24 @@ This is not a complete list, and it is not meant to be consumed in full. Pick of
 
 No exact current MeasureUp or Whizlabs Advanced Power User practice product was verified. Reject recalled/live/guaranteed-pass questions. The volume and age of marketplace Simple XML material make version verification especially important.
 
+### SPLK-5002 — Splunk Certified Cybersecurity Defense Engineer
+
+Resource details from the [SPLK-5002 guide](../guides/SPLK-5002-splunk-certified-cybersecurity-defense-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed end to end. Choose resources for measured gaps. Times are planning estimates; access, price, product releases, and availability change.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html) and [blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf) | Free | 45–75 min | Canonical scope/recommendations |
+| [Splunk Enterprise Security docs](https://help.splunk.com/en/splunk-enterprise-security) | Free | 20–40 hr targeted | Deployed release and findings/notables terminology |
+| [Splunk SOAR docs](https://help.splunk.com/en/splunk-soar) | Free | 12–25 hr targeted | Cloud/on-prem release and paired-ES behavior |
+| [ES 8.5 detection guidance](https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.5/detections/create-event-based-detections-in-splunk-enterprise-security) and [ES/SOAR compatibility](https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.6/splunk-enterprise-security-release-notes/compatibility-and-regional-availability) | Free | 2–4 hr selected | Output-type contradiction and version/topology checks; compare with your release |
+| Seven blueprint-recommended official courses, plus Defense Analyst path foundations | Paid/partner/employer access may apply | 25–55 hr estimate | Structured path; verify current durations/releases |
+| [Splunk Threat Research Team](https://research.splunk.com/) | Free | 8–20 hr selected | Adapt, test and govern detections; never copy blindly |
+| [Boss of the SOC](https://bots.splunk.com/) | Public availability varies | 12–30 hr selected | Defensive investigation practice, not exam content |
+| [MITRE ATT&CK](https://attack.mitre.org/) | Free | 8–20 hr targeted | Knowledge/coverage framework; not proof a detection works |
+| Synthetic ES/SOAR detection portfolio | Product lab/trial/partner access may be required | 35–70 hr | Applied evidence with destructive actions mocked |
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

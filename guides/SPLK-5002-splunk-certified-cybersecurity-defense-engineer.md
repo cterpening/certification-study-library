@@ -13,12 +13,12 @@ upcoming_change_checked: 2026-09-02
 
 # SPLK-5002 Splunk Certified Cybersecurity Defense Engineer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, two-page public blueprint, current Enterprise Security/SOAR documentation, and selected public resources were checked September 2, 2026. This contains original defensive learning material, not exam items. Recheck the [certification page](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html) and [official blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf) before scheduling.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The source-validation baseline is September 2, 2026; the live certification page and complete two-page public blueprint were manually rechecked September 30. Selected Enterprise Security and SOAR documentation was reviewed for the version boundaries below. All twelve proposed product labs remain unexecuted; a worked worksheet is a paper prediction. This contains original defensive learning material, not exam items. Recheck the [certification page](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html) and [official blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf) before scheduling.
 
 **Current baseline:** Data Engineering 10%; Detection Engineering 40%; Security Processes/Programs 20%; Automation/Efficiency 20%; Audit/Reporting 10%.<br>
 **Exam contract:** professional; 60 questions; 75 total minutes including three minutes for the exam agreement.<br>
 **Prerequisites:** no prerequisite exams. Splunk recommends Power User-level Enterprise knowledge and familiarity with Splunk Cloud or Enterprise administrator tasks.<br>
-**Lifecycle/product boundary:** active; no retirement/replacement announcement was visible. Enterprise Security and SOAR evolve independently across Cloud/on-premises releases. The blueprint uses both “notable events” and current “findings” language; learn the concept and follow the terminology/data model exposed by your supported ES release.<br>
+**Lifecycle/product boundary:** active on the checked certification page; no retirement/replacement statement was found on that page or blueprint. Enterprise Security and SOAR evolve independently across Cloud/on-premises releases. The blueprint uses both “notable events” and “findings”; learn the version-specific output contract exposed by your supported ES release.<br>
 
 ## How to use this guide
 
@@ -35,6 +35,8 @@ Build a synthetic security lab. For every detection preserve hypothesis, data co
 | Security program | 20% | Governed intelligence/prioritization and actionable SOPs |
 | Automation/cases/APIs | 20% | Safe idempotent playbook and measurable case workflow |
 | Metrics/reporting | 10% | Decision-linked metrics with definitions and data-quality limits |
+
+The [two-page blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf) lists **19 detailed objectives**: 1.1–1.3, 2.1–2.5, 3.1–3.3, 4.1–4.5, and 5.1–5.3. Sections 1–5 below follow those groups in order. The percentages describe exam scope, not guaranteed item counts or a recommended allocation of lab time.
 
 ## 1. Data engineering — 10%
 
@@ -54,9 +56,22 @@ A correlation search/detection has SPL, schedule, lookback, throttling/suppressi
 
 Context includes asset/identity criticality, vulnerability/exposure, ownership, network/location, threat intelligence, peer baseline, prior activity, and investigation links. Enrichment must be timely, attributable, authorized, bounded, and failure-tolerant. Unknown context is not automatically low risk.
 
-Risk-based alerting accumulates risk events/modifiers on risk objects such as users/systems, then creates higher-level detections when risk patterns cross meaningful conditions. Choose stable objects, justified scores, technique/source metadata, time decay/window and contributing-event drilldown. Prevent double counting and validate that a high score is interpretable—not merely large.
+Risk-based alerting uses [risk modifiers](https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.0/risk-based-alerting/modifying-risk-using-risk-modifiers-in-splunk-enterprise-security) associated with an entity and entity type. In ES 8, event-based detections can create intermediate findings, while finding-based detections can group contributing findings and intermediate findings when configured conditions are met. Choose stable normalized entities, justified scores, technique/source metadata, an explicit window and contributing-event drilldown. Prevent replay and double counting; a score is a prioritization input, not a probability that an incident occurred.
 
-Effective findings/notables have a specific title, affected entities, time, observed behavior/value, severity/confidence, contributing evidence, detection/threat mapping, drilldowns, owner/queue, next action, and suppression/deduplication behavior. Avoid embedding secrets or unnecessary sensitive data.
+Effective findings/notables have a specific title, affected entities, time, observed behavior/value, severity/confidence, contributing evidence, detection/threat mapping, drilldowns, owner/queue, next action, and suppression/deduplication behavior. Avoid embedding secrets or unnecessary sensitive data. In [ES 8 terminology](https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.4/findings/monitor-your-security-operations-center-with-findings-in-splunk-enterprise-security), a finding replaces a notable event and an intermediate finding replaces a risk event. Intermediate findings contribute to aggregation but are not individually triaged in the analyst queue. The ES 8.5 [detection overview](https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.5/detections/use-detections-to-search-for-threats-in-splunk-enterprise-security) and [creation instructions](https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.5/detections/create-event-based-detections-in-splunk-enterprise-security) disagree about whether a single detection can emit both output types. Treat this as a release-specific validation task; do not infer the behavior from the generic blueprint.
+
+### Worked detection worksheet (synthetic, paper prediction)
+
+Assume a finding-based rule groups events by a canonical **tenant, entity type, and entity ID** within a chosen 30-minute window, de-duplicates by source event ID and detection ID, and uses an illustrative threshold of **50**. These numbers are teaching choices, not Splunk defaults. The normalized inputs are:
+
+| Event | Tenant / entity | Detection | Source ID | Score | Treatment |
+|---|---|---|---|---:|---|
+| A | east / user / alex | unusual sign-in | 101 | 20 | Count |
+| B | east / user / alex | suspicious download | 102 | 35 | Count |
+| B replay | east / user / alex | suspicious download | 102 | 35 | Duplicate; exclude |
+| C | west / user / alex | suspicious download | 103 | 35 | Different tenant; separate |
+
+The predicted east score is **55**, and the west score is **35**. Counting the replay gives a false east score of 90; grouping only by display name incorrectly combines tenants. If B arrives after the window closes, the expected result changes and the schedule/lookback policy must explain it. In a real ES lab, record the raw and normalized entities, configured trigger, emitted intermediate findings, risk index entries, finding group, contributing IDs, time fields, and analyst queue state. This worksheet does not verify Splunk scoring, normalization, deduplication or UI behavior.
 
 Lifecycle stages: propose/prioritize → specify → acquire/validate data → implement → unit/adversarial/performance test → peer review → deploy/canary → monitor/tune → measure coverage/quality → version/change → retire with dependency/history preservation. Test true positives, near misses, benign lookalikes, missing/delayed/duplicate data, boundary times, high volume, permissions, and output action failures.
 
@@ -78,9 +93,9 @@ Case management should preserve entity/evidence timeline, severity/priority, ass
 
 For REST APIs, understand endpoint/resource, method, version, authentication/authorization, parameters/body, status/error handling, pagination, filtering, encoding, TLS, rate limits, retry semantics, idempotency, and audit. Use least-privileged service identities, secret storage/rotation, schema validation, timeouts, and nonproduction tests. Never retry every non-2xx response blindly.
 
-SOAR playbooks connect app actions, decisions, filters, code/custom functions, sub-playbooks, prompts/approvals, and outputs. Validate apps/assets and permissions, test sample data plus empty/error branches, pin/document dependencies, version/export, monitor runs, and preserve partial-action consequences. Current SOAR releases can change Python/runtime/editor support; check the target release.
+SOAR playbooks connect app actions, decisions, filters, code/custom functions, sub-playbooks, prompts/approvals, and outputs. Validate apps/assets and permissions, test sample data plus empty/error branches, pin/document dependencies, version/export, monitor runs, and preserve partial-action consequences. The [SOAR Cloud playbook guidance](https://help.splunk.com/en/splunk-soar/soar-cloud/develop-apps/build-playbooks/introduction-to-splunk-soar-playbooks/use-playbooks-to-automate-analyst-workflows-in-splunk-soar-cloud) states that a restart cancels a running playbook **without rolling back changes already made**. Its Python compatibility note is release-specific. A dry run or read-only setting cannot by itself prove that a production action can be undone.
 
-Compare native ES automation and SOAR by action complexity, integration reach, case context, human interaction, scale, audit, licensing/deployment, network access, secrets, failure handling, and ownership. Validate end-to-end data mapping between ES findings/cases and SOAR containers/investigations; do not assume fields or status synchronize automatically.
+Compare native ES automation and SOAR by action complexity, integration reach, case context, human interaction, scale, audit, licensing/deployment, network access, secrets, failure handling, and ownership. Validate end-to-end data mapping between ES findings/cases and SOAR containers/investigations; do not assume fields or status synchronize automatically. Pairing support changes by release and topology: [ES 8.0 limits](https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.0/splunk-enterprise-security-release-notes/limitations) restrict native pairing to cloud/cloud, while the [ES 8.5+ compatibility matrix](https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.6/splunk-enterprise-security-release-notes/compatibility-and-regional-availability) lists additional cloud/on-premises and on-premises/on-premises combinations with version, certificate, region and topology conditions. Check the matrix for the exact deployed releases before proposing a path.
 
 > **Related item:** Automated containment can disrupt users, destroy volatile evidence, or create legal/safety impact. Require explicit authorization tiers and human approval for high-impact actions.
 
@@ -89,6 +104,8 @@ Compare native ES automation and SOAR by action complexity, integration reach, c
 Start with a decision and audience, then define numerator/denominator, population/scope, source, owner, cadence, target, segmentation, exclusions, data-quality limits, and action. Useful engineering/program measures include telemetry coverage/freshness, ATT&CK/use-case coverage with test evidence, detection precision/recall proxy, false-positive and duplicate rate, time to detect/triage/contain, case age/SLA, automation success/override, stale content, and risk/finding disposition.
 
 Avoid vanity metrics and Goodhart effects: more detections/findings or lower closure time can mean noise or superficial closure. Pair throughput with quality/outcome and stratify by severity/source/team. Reports capture a reproducible period and narrative; dashboards support ongoing monitoring/drilldown. Both need access control, definitions, freshness timestamp, filters/defaults, empty/error states, and export/privacy review.
+
+For example, if a reviewed synthetic sample has 8 confirmed target cases among 20 candidates and a detection raises 6 findings, of which 4 correspond to those cases, then **sample precision = 4/6** and **sample recall = 4/8**. Neither ratio measures production prevalence or proves coverage of unseen attacks. State how cases were selected, who labeled them, the time window, and how duplicates, unknown dispositions and missing telemetry were handled. Recalculate after a tuning change rather than reporting only a reduced alert count.
 
 ## Integrated scenarios
 
@@ -105,6 +122,8 @@ Inject schema drift, late events, duplicate forwarding, and enrichment outage. P
 Compare ES-native automation with a SOAR playbook for account disablement. Define authorization, dry-run, approval, idempotency, evidence preservation, API failures, rollback/compensation, audit, and kill switch before enabling any action.
 
 ## Hands-on labs
+
+**Execution status (September 30, 2026):** All twelve are proposed. No Splunk Enterprise, ES, SOAR, CIM validator, search job, case, playbook, dashboard or response action was run for this review. For each lab, keep the product versions and topology, synthetic input, exact search/configuration, expected and observed results, negative case, permissions, and rollback or cleanup evidence. Do not mark a paper prediction as platform output.
 
 1. Security-source fitness, coverage, privacy, and schema-change report.
 2. CIM-map two synthetic sources and validate required fields/tags/types/acceleration.
@@ -146,6 +165,7 @@ This is not a complete list, and it is not meant to be consumed end to end. Choo
 | [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html) and [blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf) | Free | 45–75 min | Canonical scope/recommendations |
 | [Splunk Enterprise Security docs](https://help.splunk.com/en/splunk-enterprise-security) | Free | 20–40 hr targeted | Deployed release and findings/notables terminology |
 | [Splunk SOAR docs](https://help.splunk.com/en/splunk-soar) | Free | 12–25 hr targeted | Cloud/on-prem release and paired-ES behavior |
+| [ES 8.5 detection guidance](https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.5/detections/create-event-based-detections-in-splunk-enterprise-security) and [ES/SOAR compatibility](https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.6/splunk-enterprise-security-release-notes/compatibility-and-regional-availability) | Free | 2–4 hr selected | Output-type contradiction and version/topology checks; compare with your release |
 | Seven blueprint-recommended official courses, plus Defense Analyst path foundations | Paid/partner/employer access may apply | 25–55 hr estimate | Structured path; verify current durations/releases |
 | [Splunk Threat Research Team](https://research.splunk.com/) | Free | 8–20 hr selected | Adapt, test and govern detections; never copy blindly |
 | [Boss of the SOC](https://bots.splunk.com/) | Public availability varies | 12–30 hr selected | Defensive investigation practice, not exam content |

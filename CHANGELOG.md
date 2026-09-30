@@ -1,5 +1,7 @@
 # Changelog
 
+- September 30, 2026: [SPLK-5002 deep review](docs/research/2026-09-30-splk-5002-deep-review.md): Mapped 19 detailed objectives and reviewed 40 answers; added a synthetic detection worksheet and qualified ES findings, SOAR pairing, and playbook recovery by release. Documented conflicting ES 8.5 output guidance, twelve unexecuted product labs and source-access limits.
+
 - September 30, 2026: [SPLUNK-ADVANCED-POWER-USER deep review](docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md): Mapped104 objectives; corrected blueprint/course arithmetic and tstats/token/transaction assumptions. Documented ten unexecuted labs and source/training follow-ups.
 
 - September 30, 2026: [SPLUNK-CORE-POWER-USER deep review](docs/research/2026-09-30-splunk-core-power-user-deep-review.md): Mapped 32 objectives; clarified null-field scope, Boolean precedence, transaction boundaries, alias collisions and calculated-field dependencies. Recorded paper examples, eight unexecuted labs and source/training follow-ups.

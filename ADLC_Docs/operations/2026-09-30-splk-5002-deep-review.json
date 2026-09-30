@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-30",
+  "exam_code": "SPLK-5002",
+  "reviewer": {"kind": "ai-agent", "independence": "same-context", "human_review": false},
+  "guide_path": "guides/SPLK-5002-splunk-certified-cybersecurity-defense-engineer.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "2985289b473752001fcf91bdfdba4a2aa6a1a2b53bc7d459e2a3b751ed16fd65",
+  "guide_after_sha256": "ae93fe1e9bb90c1ffb607f3e0de2f8820a0d8e11d870b049c94e2a2bc60ca9e0",
+  "prior_review_id": "splk-5002-2026-09-02-source-validation",
+  "historical_snapshot_path": "data/objective-snapshots/splk-5002-official-objectives.txt",
+  "historical_snapshot_sha256": "8c0b091c2e53985d8ccfd27c19ff36fe4379d18e43fcdfb93c04a0847f18c751",
+  "official_scope": {
+    "blueprint_url": "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf",
+    "reading_boundary": "Complete public two-page PDF text read through indexed web reader; direct HTTP status 200. No image-based PDF inspection or fresh objective-text hash claimed.",
+    "credential_url": "https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html",
+    "credential_boundary": "Complete main credential content read through indexed web reader; direct HTTP status 200. No scheduling or account action.",
+    "questions": 60,
+    "total_minutes": 75,
+    "agreement_minutes": 3,
+    "weights_percent": [10, 40, 20, 20, 10],
+    "suggested_course_names": 7,
+    "prerequisite_exams": 0,
+    "objective_count": 19,
+    "objective_mapping": [
+      {"domain": "1. Data Engineering", "ids": ["1.1", "1.2", "1.3"], "guide_evidence": "Section 1 data review, indexing and CIM normalization; scenarios 1–2; labs 1–2"},
+      {"domain": "2. Detection Engineering", "ids": ["2.1", "2.2", "2.3", "2.4", "2.5"], "guide_evidence": "Section 2 detection design, context, risk, findings and lifecycle; original replay/tenant worksheet; scenarios 1–3; labs 3–6"},
+      {"domain": "3. Security Processes and Programs", "ids": ["3.1", "3.2", "3.3"], "guide_evidence": "Section 3 intelligence, risk prioritization and SOPs; scenarios 1 and 3; labs 7–8"},
+      {"domain": "4. Automation and Efficiency", "ids": ["4.1", "4.2", "4.3", "4.4", "4.5"], "guide_evidence": "Section 4 automation, cases, REST, SOAR playbooks and ES/SOAR comparison; scenario 3; labs 9–11"},
+      {"domain": "5. Auditing and Reporting", "ids": ["5.1", "5.2", "5.3"], "guide_evidence": "Section 5 metrics, reports and dashboards; synthetic sample metrics; lab 12"}
+    ],
+    "comparison": "Public domain names, weights, objectives and exam contract agree with the retained September 2 snapshot. The snapshot is historical and was not rewritten."
+  },
+  "content_review": {
+    "guide_read": "Complete guide, 40 original answer prompts and 12 proposed labs read.",
+    "answered_checks_reviewed": 40,
+    "paper_examples": 2,
+    "paper_example_boundary": "The four-row risk worksheet and 20-candidate metric sample are original arithmetic predictions, not Splunk output. Scores, window and threshold are chosen learning assumptions, not product defaults.",
+    "product_labs_proposed": 12,
+    "product_labs_executed": 0,
+    "lab_follow_up": "Capture exact product version/topology, synthetic input, configuration/SPL, expected/observed output, negative cases, permissions, cleanup and output-type records for every lab."
+  },
+  "source_review": {
+    "unique_guide_urls": 14,
+    "direct_http_ok": 5,
+    "direct_http_blocked": 9,
+    "direct_http_broken": 0,
+    "direct_snapshot": "data/source-health.json",
+    "specific_indexed_pages_read": [
+      "splk-5002-risk-modifiers-8-0",
+      "splk-5002-findings-8-4",
+      "splk-5002-detection-overview-8-5",
+      "splk-5002-create-detection-8-5",
+      "splk-5002-es-8-0-limitations",
+      "splk-5002-es-8-6-compatibility",
+      "splk-5002-soar-cloud-playbooks"
+    ],
+    "reading_boundary": "Selected relevant sections of indexed public product pages read. Web-reader access does not turn direct HTTP blocks into successes. No full documentation tree, course interior, video or product release installation reviewed.",
+    "vendor_conflict": "ES 8.5 detection overview says one detection cannot emit both findings and intermediate findings, while its historical paragraph and creation instructions describe both. Exact deployed release needs a safe runtime check.",
+    "lifecycle_boundary": "No retirement/replacement statement found in the checked official credential page or two-page blueprint; no exhaustive announcement-history search."
+  },
+  "validation": {
+    "status": "passed",
+    "unit_tests": "188 passed with unittest discovery; repository tests, not Splunk product labs",
+    "repository_validation": "passed",
+    "strict_site_build": "passed after adding this review page to the public site allowlist",
+    "generated_site_validation": "passed",
+    "learning_catalog_consistency": "passed for SPLK-5002",
+    "git_diff_check": "passed"
+  },
+  "review_provenance": "Same-context AI-assisted best-effort content review with public sources. No independent human endorsement, Splunk runtime, account, installation, response action, external message or purchase."
+}

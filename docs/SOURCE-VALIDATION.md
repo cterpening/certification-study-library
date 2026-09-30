@@ -2461,6 +2461,8 @@ The review maps every published objective group to applied evidence rather than 
 
 ## SPLK-5002 coverage record
 
+The September 30 [deep review](research/2026-09-30-splk-5002-deep-review.md) mapped all 19 detailed objectives (3/5/3/5/3) and checked all 40 original answer prompts. It added a synthetic detection worksheet, reconciled ES 8 finding terminology, recorded conflicting 8.5 output guidance, and qualified ES/SOAR pairing and playbook rollback by release. All twelve product labs are unexecuted. Current guide citations: 14 registered, 5 directly reachable, 9 automation-blocked, 0 broken; selected blocked documentation was readable through the indexed public reader. Earlier dates and counts below describe the historical source validation.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Data Engineering (10%); Detection Engineering (40%); Building Effective Security Processes and Programs (20%); Automation and Efficiency (20%); Auditing and Reporting on Security Programs (10%)

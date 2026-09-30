@@ -5,6 +5,22 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "SPLK-5002",
+      "reviewed_on": "2026-09-30",
+      "guide_sha256": "ae93fe1e9bb90c1ffb607f3e0de2f8820a0d8e11d870b049c94e2a2bc60ca9e0",
+      "objective_count": 19,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-30-splk-5002-deep-review.md",
+      "evidence_paths": ["ADLC_Docs/operations/2026-09-30-splk-5002-deep-review.json"],
+      "lab_execution": "not-executed",
+      "remaining_limits": [
+        "All twelve product labs unexecuted; synthetic risk and metric examples are paper arithmetic, not SPL, ES, SOAR, case, permission or dashboard output.",
+        "ES 8.5 vendor documentation conflicts on dual output from one detection. Exact release and configured runtime need a safe synthetic check.",
+        "Fourteen direct guide-link checks: five HTTP successes, nine automation blocks, no broken links. Selected blocked public help pages were read through an indexed reader; full manuals and current course interiors remain unreviewed.",
+        "Historical objective snapshot retained; complete indexed two-page PDF was read but no fresh normalized objective hash or image inspection is claimed. Independent human review and course-access validation remain pending."
+      ]
+    },
+    {
       "exam_code": "SPLUNK-ADVANCED-POWER-USER",
       "reviewed_on": "2026-09-30",
       "guide_sha256": "49d1d40bf8e9e1e66654245fc764671ec02208fbb5320d9d6d8a1245fcdf65ba",
