@@ -4,6 +4,215 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-cla1103-deep-review",
+      "title": "CLA-11-03 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CLA-11-03"
+      ],
+      "results": [
+        {
+          "exam_code": "CLA-11-03",
+          "vendor_id": "cpp-institute",
+          "guide_path": "guides/CLA-11-03-c-certified-associate-programmer.md",
+          "baseline_sha256": "70daef1cca02c3b1b9a2e2b491acf9d3488c04bc37bf468444b592146428516b",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Complete active CLA-11-03 page manually compared to retained 23-objective snapshot after automated timeout; groups 6/7/6/4, weights 29/38/25/8 and 40-item format retained. No successful automatic comparison."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Bounded WG14/SEI/GCC/Clang/API reading and original multi-file C17 programs. Eleven final builds/runs passed, including sanitizer and actual file-fixture paths; six expected diagnostic failures and one preprocess check. C17 is a practice choice."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Complete exam/catalog/policy/scheduling public content examined. Lifetime/version-specific credential and current active code confirmed on examined pages; no unseen release or booking audit."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Both public Edube landings read with 42-hour listings and exact module/alignment boundaries. Microsoft/community/SEI indexes qualified; paid interiors and Cisco rendered curriculum unavailable."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Rescheduling copy conflicts and actual appointment terms remain unverified. Direct primary/documentation requests failed despite some web fallback; paid403 and Cisco shell. Broader labs, low-level I/O failure injection, debugger and human review pending."
+            }
+          },
+          "findings": [
+            {
+              "id": "cla1103-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Associate scope and policies must stay distinct",
+              "url": "https://cppinstitute.org/cla",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CLA-11-03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "CLA has 23 numbered objectives in four blocks; entry-level TestNow rules differ from Pearson associate rules.",
+              "recommendation": "Map all objectives and distinguish C17 practice from unspecified exam language mode; retain appointment-policy conflict explicitly.",
+              "disposition": "applied",
+              "source_id": "cla-11-03-syllabus",
+              "resolution": "Map all objectives and distinguish C17 practice from unspecified exam language mode; retain appointment-policy conflict explicitly."
+            },
+            {
+              "id": "cla1103-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Allocation operand is used before declaration",
+              "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/memory-management-mem/mem35-c",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CLA-11-03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The existing fragment computes sizeof *items before items is declared; complete diagnostic driver rejects it.",
+              "recommendation": "Supply a real size helper and declared type, checked multiplication, positive-size growth and executable failure paths.",
+              "disposition": "applied",
+              "source_id": "sei-cert-mem35-c",
+              "resolution": "Supply a real size helper and declared type, checked multiplication, positive-size growth and executable failure paths."
+            },
+            {
+              "id": "cla1103-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A positive delta can still overflow signed int",
+              "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/integers-int/int32-c",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CLA-11-03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The prior update function accepted any positive delta without proving representability.",
+              "recommendation": "Check INT_MAX minus delta before addition and test null, nonpositive, exact-boundary and signed-minimum cases.",
+              "disposition": "applied",
+              "source_id": "sei-cert-int32-c",
+              "resolution": "Check INT_MAX minus delta before addition and test null, nonpositive, exact-boundary and signed-minimum cases."
+            },
+            {
+              "id": "cla1103-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Growth needs transactional ownership and lifetime rules",
+              "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/memory-management-mem/mem30-c",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CLA-11-03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Realloc zero-size behavior and old aliases cannot be treated as ordinary positive allocation failure.",
+              "recommendation": "Use a temporary pointer with positive requested sizes, update capacity only after success, and preserve caller data on failed loads.",
+              "disposition": "applied",
+              "source_id": "sei-cert-mem30-c",
+              "resolution": "Use a temporary pointer with positive requested sizes, update capacity only after success, and preserve caller data on failed loads."
+            },
+            {
+              "id": "cla1103-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Formatted assignment count does not validate a record",
+              "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/error-handling-err/err34-c",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CLA-11-03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Numeric conversion can overflow and a matching failure is not EOF; the old loop conflates parse and termination behavior.",
+              "recommendation": "Implement bounded lines and complete strtol/strtod conversion with range/domain/NUL/length checks and separate status values.",
+              "disposition": "applied",
+              "source_id": "sei-cert-err34-c",
+              "resolution": "Implement bounded lines and complete strtol/strtod conversion with range/domain/NUL/length checks and separate status values."
+            },
+            {
+              "id": "cla1103-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Parentheses do not establish evaluation sequencing",
+              "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/preprocessor-pre/pre31-c",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CLA-11-03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The square macro repeats its argument; conflicting increments remain undefined despite grouping.",
+              "recommendation": "Execute side-effect-free macro comparisons and a bounded typed-function alternative, with configuration/preprocessor checks.",
+              "disposition": "applied",
+              "source_id": "sei-cert-pre31-c",
+              "resolution": "Execute side-effect-free macro comparisons and a bounded typed-function alternative, with configuration/preprocessor checks."
+            },
+            {
+              "id": "cla1103-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "File ownership includes final close results",
+              "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/input-output-fio/fio42-c",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CLA-11-03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Placeholder read-error comments and unchecked fclose do not implement cleanup/error reporting.",
+              "recommendation": "Provide owned-path and borrowed-stream APIs with checked close and output flush; record uninduced low-level failure paths.",
+              "disposition": "applied",
+              "source_id": "sei-cert-fio42-c",
+              "resolution": "Provide owned-path and borrowed-stream APIs with checked close and output flush; record uninduced low-level failure paths."
+            },
+            {
+              "id": "cla1103-deep-8",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Appointment wording and inaccessible interiors remain unresolved",
+              "url": "https://cppinstitute.org/exam-policies",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CLA-11-03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Anytime-before and 24-hour rescheduling statements conflict; actual booking and paid lessons not inspected.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped all 23 objectives and expanded 30 answers. Fixed an undeclared allocation operand, unchecked signed addition, realloc lifetime/zero-size wording and ambiguous formatted-input failure handling. Five original C files plus CMake build passed remote GCC/Clang checks: 181 loader and 53 language checks on each, selected optimization/configuration/sanitizer variants, six diagnostic failures and preprocessing inspection. Resource/policy access limits and human review remain explicit. Same-context AI review; human review pending. See docs/research/2026-09-29-cla-11-03-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 7,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-29-wda4101-deep-review",
       "title": "WDA-41-01 complete guide and learning-content review",
       "rubric_version": 1,

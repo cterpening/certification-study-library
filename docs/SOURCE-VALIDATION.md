@@ -2126,6 +2126,8 @@ or copied course content is used. Blueprint SHA-256:
 
 ## CLA-11-03 coverage record
 
+The September 29 [deep review](research/2026-09-29-cla-11-03-deep-review.md) maps 23 detailed objectives. Mapped all 23 objectives and expanded 30 answers. Fixed an undeclared allocation operand, unchecked signed addition, realloc lifetime/zero-size wording and ambiguous formatted-input failure handling. Five original C files plus CMake build passed remote GCC/Clang checks: 181 loader and 53 language checks on each, selected optimization/configuration/sanitizer variants, six diagnostic failures and preprocessing inspection. Resource/policy access limits and human review remain explicit. Current guide citations: 27 registered, 19 reachable, 2 access-blocked, 6 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Language and Structures (29%); Data Operations (38%); Control Flow (25%); Environment (8%)

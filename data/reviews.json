@@ -11512,23 +11512,62 @@
       "notes": "Mapped all 40 objectives and expanded all 40 answers. Fifteen exact public blocks and fourteen original assets verified: 42 CSS workbook checks, 90 Chrome harness checks, five zero-message Nu pages and two CSS3 validator passes. Actual Sass module compilation/source maps, Bootstrap rendering and bounded raw performance entries recorded. Ten broader labs remain proposed; official/access and human-review limits remain. See docs/research/2026-09-29-wda-41-01-deep-review.md"
     },
     {
-      "id":"cla-11-03-2026-09-02-source-validation",
-      "exam_code":"CLA-11-03",
-      "guide_path":"guides/CLA-11-03-c-certified-associate-programmer.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-02",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/cla-11-03-official-objectives.txt",
-      "blueprint_snapshot_sha256":"3d7fc7742d22fe30306494be170081e0b38d81887ca0192d7b4ff6c9f10b2fd5",
-      "objective_coverage":[
-        {"objective_group":"Language and Structures (29%)","guide_sections":["Section 1","Scenarios 1 and 3","Labs 1–2"]},
-        {"objective_group":"Data Operations (38%)","guide_sections":["Section 2","All scenarios","Labs 3–5"]},
-        {"objective_group":"Control Flow (25%)","guide_sections":["Section 3","All scenarios","Labs 6–7"]},
-        {"objective_group":"Environment (8%)","guide_sections":["Section 4","Scenarios 1 and 2","Lab 8"]}
+      "id": "cla1103-2026-09-29-source-validation",
+      "exam_code": "CLA-11-03",
+      "guide_path": "guides/CLA-11-03-c-certified-associate-programmer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/cla-11-03-official-objectives.txt",
+      "blueprint_snapshot_sha256": "3d7fc7742d22fe30306494be170081e0b38d81887ca0192d7b4ff6c9f10b2fd5",
+      "objective_coverage": [
+        {
+          "objective_group": "Block 1 - Language and Structures: Declarations, Definitions, Lexicon, Structures (12 items; 29%)",
+          "guide_sections": [
+            "1. Language and structures — 29%",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 2 - Data Operations: Expressions, Pointers, Storage (14 items; 38%)",
+          "guide_sections": [
+            "2. Expressions, pointers, and storage — 38%",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 3 - Control Flow: Control Statements, Loops, Instructions, Functions (10 items; 25%)",
+          "guide_sections": [
+            "3. Control flow and functions — 25%",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 4 - Environment: Preprocessor, Stream I/O Operations (4 items; 8%)",
+          "guide_sections": [
+            "4. Preprocessor and stream I/O — 8%",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":10,"reachable":7,"access_blocked":2,"missing_or_error":1},
-      "notes":"All 21 named CLA-11-03 objectives are mapped through multi-file declaration/definition and linkage reasoning, structures and storage classes, conversions and side effects, pointer ranges/allocation and lifetime, structured control and function contracts, macro expansion/conditional compilation, and formatted file streams with explicit result checks. Three scenarios, eight labs and 30 original checks are included. Language-version, implementation and undefined-behavior boundaries are labeled. SEI, O'Reilly and Udemy are automation-blocked rather than missing. No recalled/live item, answer dump or copied course question is used. September 17, 2026 link-only maintenance: the SEI reference moved to the official cmu-sei.github.io site and is reachable; link counts were refreshed. This does not represent a new full-content or practitioner review. September 29 CPE source-health refresh updated shared-link counts only; this guide content and review date were not re-reviewed."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 27,
+        "reachable": 19,
+        "access_blocked": 2,
+        "missing_or_error": 6
+      },
+      "notes": "Mapped all 23 objectives and expanded 30 answers. Fixed an undeclared allocation operand, unchecked signed addition, realloc lifetime/zero-size wording and ambiguous formatted-input failure handling. Five original C files plus CMake build passed remote GCC/Clang checks: 181 loader and 53 language checks on each, selected optimization/configuration/sanitizer variants, six diagnostic failures and preprocessing inspection. Resource/policy access limits and human review remain explicit. See docs/research/2026-09-29-cla-11-03-deep-review.md"
     },
     {
       "id":"clp-12-01-2026-09-02-source-validation",

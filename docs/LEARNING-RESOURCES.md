@@ -3618,6 +3618,31 @@ Public course/index comparison is not course completion. The official CSS landin
 
 No exact current MeasureUp or Whizlabs WDA-41-01 product was verified. Use the official practice product if questions help diagnose weak blocks, and reject sources that cannot identify the active version or question provenance.
 
+### CLA-11-03 — CLA C Certified Associate Programmer
+
+Resource details from the [CLA-11-03 guide](../guides/CLA-11-03-c-certified-associate-programmer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+The public CE1 and CE2 landings each list 42 hours and seven hours/week: CE1 covers modules 0–5; CE2 covers functions/structures, files/streams and preprocessor/declarations. CE2 lists both historical CLA-11-02 and active CLA-11-03 alignment; course labeling does not reactivate an old exam. CE1 has inconsistent Basics/Intermediate wording and overbroad array/pointer shorthand; the language contracts above govern. No enrolled lessons or assessments were reviewed.
+
+Microsoft’s index is organized around ANSI C89 plus Microsoft extensions, while cppreference is a community index with version labels. SEI’s development pages explicitly warn that examples may be incomplete or erroneous; selected snippets contain placeholder handling or flawed ownership/boundary logic. The guide’s code is original and independently exercised, not a copy of those snippets. Paid O’Reilly/Udemy contents were inaccessible and Cisco returned an application shell. Except for Edube’s public 42-hour listings, the times below are author planning estimates, not verified runtimes.
+
+This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, use references for specific gaps, and spend at least as much time building, testing, and debugging as watching. Reconcile third-party material with the current official syllabus.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official CLA page and syllabus](https://cppinstitute.org/cla) | Free canonical blueprint | 1–2 hours to map and recheck |
+| [C++ Institute exam policies](https://cppinstitute.org/exam-policies) | Free official policy | 20–40 minutes before scheduling |
+| [OpenEDG C Essentials Part 1](https://edube.org/study/ce1) | Free account; officially aligned prerequisite coverage | 42 hours listed; target weak areas |
+| [OpenEDG C Essentials Part 2](https://edube.org/study/ce2) | Free account; officially aligned | 42 hours listed |
+| [Cisco Networking Academy C Essentials 2](https://www.netacad.com/courses/c-essentials-2) | Free account; official partner delivery | Plan 35–45 hours; verify live listing |
+| [SEI CERT C Coding Standard](https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/) | Free authoritative secure-coding reference | 5–10 hours targeted by topic |
+| [Microsoft C language reference](https://learn.microsoft.com/en-us/cpp/c-language/c-language-reference?view=msvc-170) | Free implementation documentation | 5–10 hours targeted reading |
+| [cppreference C language and library](https://en.cppreference.com/w/c.html) | Free community reference | Ongoing; 5–10 hours targeted lookup |
+| [O'Reilly Effective C](https://www.oreilly.com/library/view/effective-c/9781098144778/) | Subscription; current practice extends beyond blueprint | 12–18 hours selected chapters and exercises |
+| [Udemy Advanced C Programming Course](https://www.udemy.com/course/advanced-c-programming-course/) | Paid marketplace course; verify syllabus fit | Select matching sections, 10–20 hours |
+
+No exact current MeasureUp or Whizlabs CLA-11-03 practice product was verified. Use the provider-aligned course tests and original multi-file labs; reject practice content that does not identify its source and active exam version.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.
