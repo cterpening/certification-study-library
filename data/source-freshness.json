@@ -4,6 +4,161 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-pced3002-deep-review",
+      "title": "PCED-30-02 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "PCED-30-02"
+      ],
+      "results": [
+        {
+          "exam_code": "PCED-30-02",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCED-30-02-python-certified-entry-level-data-analyst.md",
+          "baseline_sha256": "1ef9539ecc69dda6893ebd0e19cf0afc78288d0d19d377da9a5ea66417a98313",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "All40 numberedobjectives andfullMQC manuallyread fromcanonicalprimary afterdirect/monitortimeout; retainedsnapshot,active02/retired01voucherexception/sevenyears separated."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected pinnedPython3.13 contracts plus11completeNumPygeneratedentries supportoriginal112checkspermode. Exactcode,report,chart andsourceboundaries preserved; notfullmanual audit."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Completecurrentexam/syllabus andselectedpolicyprimaryfallback; no separateunseenfeed,account,booking orsystemtest claimed."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "CompleteEdubePD101/storeproductpublicbodies,booklanding andindexread. Providerfiveweeks/49Pro and29practice/95bundle distinguished fromauthorbudgets. Cisco/store shells andKagglefailure areunverified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "StoreTestCandidate versuscredentialFAQ Learner redemption instructions; standalone10 versusbundle5practice launches needproduct-specificconfirmation. Limitedpolicy/legal/blockedcourseinteriors,broaderpublicdataset andhumanreview remainpending."
+            }
+          },
+          "findings": [
+            {
+              "id": "pced3002-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Ingestion teaching lacked reproducible row dispositions",
+              "url": "https://docs.python.org/3.13/library/csv.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCED-30-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The guide named cleaning rules without showing quoted logical records, preserved input or a reconciling ledger.",
+              "recommendation": "Add exact original17-record fixture and112-check workbook covering quotedCSV,missing/nonfinite/date/range failures and conflict-awarededuplication.",
+              "disposition": "applied",
+              "source_id": "python313-csv",
+              "resolution": "Add exact original17-record fixture and112-check workbook covering quotedCSV,missing/nonfinite/date/range failures and conflict-awarededuplication."
+            },
+            {
+              "id": "pced3002-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Spread and empty-group conventions needed worked results",
+              "url": "https://numpy.org/doc/stable/reference/generated/numpy.std.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCED-30-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "DefaultNumPyN differs from statistics.stdev N-1; missing andempty values cannot be silentlyzeroed.",
+              "recommendation": "Calculate bothconventions againstPython, stateempty/singleton policies and distinguish unbiasedvariance fromSD.",
+              "disposition": "applied",
+              "source_id": "numpy-std",
+              "resolution": "Calculate bothconventions againstPython, stateempty/singleton policies and distinguish unbiasedvariance fromSD."
+            },
+            {
+              "id": "pced3002-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Outlier and correlation limits lacked counterexamples",
+              "url": "https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCED-30-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "A validextremeobservation changesmean withoutprovingerror, and nonlinearassociation canhavezeroPearsonr.",
+              "recommendation": "RetainR08,showseparate7-recordsensitivity,constant/paired/finiteguards andoriginalnonlinearprobe.",
+              "disposition": "applied",
+              "source_id": "numpy-corrcoef",
+              "resolution": "RetainR08,showseparate7-recordsensitivity,constant/paired/finiteguards andoriginalnonlinearprobe."
+            },
+            {
+              "id": "pced3002-deep-4",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Learning access and time estimates were not adequately qualified",
+              "url": "https://edube.org/study/pd101",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCED-30-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "CompletePD101landingstatesfiveweeksaboutonehour/day,freeCore andpaidFull/Pro; oldguideused30-45hourswithlabs.",
+              "recommendation": "Useproviderpublicduration/access distinctions andlabelotherbudgets asauthor estimates;removeunverifiedCisco/Kaggleruntimes.",
+              "disposition": "applied",
+              "source_id": "pced-pd101-edube",
+              "resolution": "Useproviderpublicduration/access distinctions andlabelotherbudgets asauthor estimates;removeunverifiedCisco/Kaggleruntimes."
+            },
+            {
+              "id": "pced3002-deep-5",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Redemption profiles and product launch limits differ",
+              "url": "https://ums.edube.org/products/pced-practice-test",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCED-30-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "CredentialFAQ saysLearner; storesayTestCandidate. Standalonekit10launcheseach differsfrombundle5.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped all40 objectives and expanded16 answers. Exact original Python workbook passes112 checks normally and optimized;17 synthetic CSV records reconcile to8 accepted, with immutable raw hash, conflict/missing/nonfinite/date policies, Python/NumPy spread agreement, sensitivity and correlation boundaries. Exported and AI-inspected a zero-based chart from its report using existing .NET. Corrected learning estimates and practice-product distinctions; access/redemption questions, public-dataset lab and human review remain explicit. Same-context AI review; human review pending. See docs/research/2026-09-29-pced-30-02-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 4,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-29-pcpp32101-deep-review",
       "title": "PCPP-32-101 complete guide and learning-content review",
       "rubric_version": 1,

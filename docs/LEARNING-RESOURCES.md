@@ -3738,6 +3738,27 @@ The five complete public Edube outlines total **115 provider hours** (42 + 10 + 
 
 The official page explicitly says no official PCPP1 practice test is available. Any third-party product must be checked for exact `PCPP-32-101` alignment and should not be treated as an authority or a source of recalled exam questions.
 
+### PCED-30-02 — PCED Certified Entry-Level Data Analyst with Python
+
+Resource details from the [PCED-30-02 guide](../guides/PCED-30-02-python-certified-entry-level-data-analyst.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list. Choose one foundation path, reproduce the workbook, then use targeted references to close gaps. Author planning budgets below are not provider runtimes or evidence of course completion.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [PCED-30-02 syllabus](https://pythoninstitute.org/pced-exam-syllabus) | Official current objective checklist | Author budget: 2–3 hours |
+| [PD101 public course outline](https://edube.org/study/pd101) | Associated with PCED; Core lessons/module tests free; no formal prerequisite; English | Provider: 5 weeks at about 1 hour/day |
+| [PD101 Pro courseware](https://ums.edube.org/products/pi-pd101-courseware) | USD 49 public offer; interactive work, quizzes/labs/projects and diploma; minimum 12-month access after redemption; no enrolled interior inspected | Provider: same 5-week course outline; individual progress varies |
+| [Vendor PD101 overview](https://pythoninstitute.org/python-for-data-analytics-101) | Partly readable indexed page; public Edube/store bodies provide the fuller observed details | Do not infer lesson completion or unrestricted free access to Pro features |
+| [Standalone PCED practice kit](https://ums.edube.org/products/pced-practice-test) | USD 29, two tests, up to 10 launches each; practice only; current questions not inspected | Author remediation budget: 4–7 hours |
+| [Exam/retake/practice bundle](https://ums.edube.org/products/0-pi-pced-3002-erpt) | USD 95; public practice limit says five launches each; confirm purchased entitlement | No measured exam-preparation duration |
+| [NumPy quickstart](https://numpy.org/doc/stable/user/quickstart.html) | Free primary documentation; select arrays, aggregation, indexing and copies | Author budget: 4–8 hours |
+| [Cisco Data Analytics Essentials](https://www.netacad.com/courses/data-analytics-essentials) | Response was a short application shell; current course contents/duration not verified | Verify current listing; prior 30-hour estimate removed |
+| [Python for Data Analysis, 3rd ed.](https://wesmckinney.com/book/) | Complete landing read; open web edition, August 2022, updated for pandas 2.0/Python 3.10 in April 2023; broader than PCED; chapters not reviewed | Author selective-reading budget: 15–25 hours |
+| [Kaggle Learn](https://www.kaggle.com/learn) | Retrieval failed; current Python/Pandas availability, contents and runtime unverified | No verified duration |
+
+The book's text is not generally licensed for reproduction; its code examples have a separate MIT license. No material from it or paid practice questions was copied into this workbook. The store root returned only a shell; direct product pages supplied the practice evidence. Provider prices, access and redemption instructions are dated observations requiring confirmation when used.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

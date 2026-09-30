@@ -17,6 +17,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BUILD_DIR = ROOT / ".site-build"
 
 PUBLIC_DOCUMENTS = (
+    "website/assets/pced-synthetic-summary.png",
+    "docs/research/2026-09-29-pced-30-02-deep-review.md",
     "docs/research/2026-09-29-pcpp-32-101-deep-review.md",
     "docs/research/2026-09-29-cpp-22-02-deep-review.md",
     "docs/research/2026-09-29-cpa-21-02-deep-review.md",

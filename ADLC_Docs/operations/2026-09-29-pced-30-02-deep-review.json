@@ -1,0 +1,2484 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "PCED-30-02",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/PCED-30-02-python-certified-entry-level-data-analyst.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "be79f4621bdf185cc1c8971fffd4e52c012a31808f9928957866202f15a83e49",
+  "guide_after_sha256": "a8325169755847a22c743f800323491b288203bcc856a934808955f349bf7a10",
+  "prior_records": {
+    "exam": {
+      "code": "PCED-30-02",
+      "level": "beginner",
+      "vendor_id": "python-institute",
+      "title": "PCED Certified Entry-Level Data Analyst with Python",
+      "status": "active",
+      "study_guide_url": "https://pythoninstitute.org/pced-exam-syllabus",
+      "guide_path": "guides/PCED-30-02-python-certified-entry-level-data-analyst.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite is published. PCEP-equivalent Python plus foundational mathematics and statistics are recommended. Practice a traceable workflow from data classification and ethical collection through Python collections, validation, cleaning, descriptive statistics, NumPy, exploratory analysis, visualization, and evidence-based reporting. Use the current PCED-30-02 syllabus; PCED-30-01 retired July 14, 2025."
+    },
+    "review": {
+      "id": "pced-30-02-2026-09-02-source-validation",
+      "exam_code": "PCED-30-02",
+      "guide_path": "guides/PCED-30-02-python-certified-entry-level-data-analyst.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/pced-30-02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "d3b9a519347510e7f6564eb07ef2bbaebf8774f7d2bc61560f944717bc770d12",
+      "objective_coverage": [
+        {
+          "objective_group": "Introduction to Data and Data Analysis Concepts (22.5%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated lab"
+          ]
+        },
+        {
+          "objective_group": "Python Basics for Data Analysis (32.5%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated lab"
+          ]
+        },
+        {
+          "objective_group": "Working with Data and Performing Simple Analyses (32.5%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated lab"
+          ]
+        },
+        {
+          "objective_group": "Communicating Insights and Reporting (12.5%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated lab"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 9,
+        "reachable": 9,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All four PCED-30-02 blocks are mapped through data classification, sources, storage, lifecycle, ethics, Python fundamentals, file and CSV handling, validation and cleaning, descriptive statistics, NumPy, exploratory analysis, visualization and evidence-based reporting. The integrated lab and 16 original checks require a reproducible path from raw data to a qualified conclusion. The retired PCED-30-01 version is clearly separated. No recalled/live item, answer dump or copied course question is used."
+    },
+    "sources": [
+      {
+        "id": "python-3-documentation",
+        "title": "Python 3 Documentation",
+        "url": "https://docs.python.org/3/",
+        "publisher": "Python Software Foundation",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "PCAP-31-03",
+          "PCPP-32-101",
+          "PCED-30-02",
+          "PCAD-31-02",
+          "PCES-30-01",
+          "PANW-XSOAR-ENGINEER"
+        ],
+        "notes": "Canonical documentation hub for current stable Python 3; newer features are not automatically part of a dated exam syllabus. September 29 PCAP-31-03 deep review: Complete 3232-character documentation index read: unversioned landing is 3.14.7 and exposes other versions. This is release/documentation context, not evidence of an exam-required version or an audit of all linked change logs. Existing local CPython 3.13.14 was used without installation. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution. September 29 PCPP-32-101 deep review: Complete current public index read:3.14.7 documentation, with3.13 separately listed. Navigation/index evidence only, not all linked manuals. Executed local interpreter3.13.14; selected3.13 pages identify3.13.15. No runtime change or exam-specific patch requirement. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "pced-30-02-syllabus",
+        "title": "PCED-30-02 Exam Syllabus",
+        "url": "https://pythoninstitute.org/pced-exam-syllabus",
+        "publisher": "OpenEDG Python Institute",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCED-30-02"
+        ],
+        "notes": "Canonical active four-block syllabus, aligned to PCED-30-02 and last updated July 14, 2025."
+      },
+      {
+        "id": "pced-certification-page",
+        "title": "PCED Certified Entry-Level Data Analyst with Python",
+        "url": "https://pythoninstitute.org/pced",
+        "publisher": "OpenEDG Python Institute",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCED-30-02"
+        ],
+        "notes": "Current version, retired predecessor, exam logistics, validity, cost, retake policy, official course and practice-test availability."
+      },
+      {
+        "id": "numpy-user-guide",
+        "title": "NumPy User Guide",
+        "url": "https://numpy.org/doc/stable/user/",
+        "publisher": "NumPy project",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCED-30-02"
+        ],
+        "notes": "Primary documentation for array concepts and numerical operations; select beginner sections aligned to the syllabus."
+      },
+      {
+        "id": "numpy-quickstart",
+        "title": "NumPy Quickstart",
+        "url": "https://numpy.org/doc/stable/user/quickstart.html",
+        "publisher": "NumPy project",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "PCED-30-02",
+          "NCA-GENL"
+        ],
+        "notes": "Primary hands-on introduction to arrays and vectorized numerical operations. September 29 NCA-GENL deep review: Intro/learner objectives/array basics,ndim/shape/dtype/itemsize andinitial array creation example read. Not full quickstart orall examples; no matplotlib installed. Actual original NumPy workbook uses arrays,fit,predictions andvector norms. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "openedg-python-voucher-store",
+        "title": "OpenEDG Python Institute Voucher and Practice Store",
+        "url": "https://ums.edube.org/",
+        "publisher": "OpenEDG Python Institute",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCED-30-02",
+          "PCAD-31-02"
+        ],
+        "notes": "Official store entry point for Python Institute exams and version-specific practice tests; confirm the selected exam code before purchase."
+      },
+      {
+        "id": "python-for-data-analysis-web",
+        "title": "Python for Data Analysis, 3rd Edition",
+        "url": "https://wesmckinney.com/book/",
+        "publisher": "Wes McKinney",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCED-30-02",
+          "PCAD-31-02"
+        ],
+        "notes": "Free author-hosted web edition; select chapters that match the active exam scope."
+      },
+      {
+        "id": "kaggle-learn",
+        "title": "Kaggle Learn",
+        "url": "https://www.kaggle.com/learn",
+        "publisher": "Kaggle / Google",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCED-30-02",
+          "PCAD-31-02"
+        ],
+        "notes": "Short practical Python, pandas, visualization, SQL and introductory machine-learning courses; use as applied reinforcement rather than an exam-blueprint authority."
+      },
+      {
+        "id": "cisco-data-analytics-essentials",
+        "title": "Data Analytics Essentials",
+        "url": "https://www.netacad.com/courses/data-analytics-essentials",
+        "publisher": "Cisco Networking Academy",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCED-30-02"
+        ],
+        "notes": "Broader beginner data-analytics course with an approximately 30-hour public estimate; verify current enrollment availability."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "a11010be7da91707234be8d3af07386d0f99f3b5ee608559148f171b9a2cd663",
+      "guide_sections": [
+        "1. Data and data-analysis concepts — 22.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "8a09b7b60f23e0c1e3884c8b2609c4a62f762e735882aa6231720d550678c805",
+      "guide_sections": [
+        "1. Data and data-analysis concepts — 22.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "08ddaac395ad0802d6c0df298beb441f7621f1b67873e723cc11a553138dbce2",
+      "guide_sections": [
+        "1. Data and data-analysis concepts — 22.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "7fa7bf35896056e3c8e8fd6d72751ff46c9a2478a4621cce0aea0f475b1d7d97",
+      "guide_sections": [
+        "1. Data and data-analysis concepts — 22.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "93318a1abb1364e3323998798361f235efbeaa74e1f32dd82b4ce947c9f4baa9",
+      "guide_sections": [
+        "1. Data and data-analysis concepts — 22.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "6a6522461a751e4a70ecbb556c5da1df80176b6e5196f95c9e14c9a25f02d178",
+      "guide_sections": [
+        "1. Data and data-analysis concepts — 22.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "7ad716499186336c71a88db94d1bb7bce6904ef0fba187be79544c53f2f8a14b",
+      "guide_sections": [
+        "1. Data and data-analysis concepts — 22.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "5eef17fc9f618d3cfea56aa80a9edfc49d6021c691f317872a5e556f36008cda",
+      "guide_sections": [
+        "1. Data and data-analysis concepts — 22.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "c881e8e47cffa732531bc8e195f9179aa4b1e672e61ea3e0674fe110925d087d",
+      "guide_sections": [
+        "1. Data and data-analysis concepts — 22.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "6ed42fadfe37139db1a5ea2fd8199fd35c825d3cddf478be933ad92cbbedbc3c",
+      "guide_sections": [
+        "2. Python basics for analysis — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "19190ce370fb806e08e5a998b8b6ec47cd1c2926d8fddd8764b3453e48a04d60",
+      "guide_sections": [
+        "2. Python basics for analysis — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "0b8421ea2225b1db3ad06acffa66c007488c669037e858a4bbc561050a6394e3",
+      "guide_sections": [
+        "2. Python basics for analysis — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "bda64c1b622050c1956f52978f0415f4e1c792d741c7d6e1f415a262ae591b0c",
+      "guide_sections": [
+        "2. Python basics for analysis — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "b0a1ed6931aaab4ce8cdb35c2082ad53c1518018ef1e62275cd4bd827002cc8f",
+      "guide_sections": [
+        "2. Python basics for analysis — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "938855be562b77ce2b79b84ab2d38435273a10c735bc769f5e4f7f5bd10e3213",
+      "guide_sections": [
+        "2. Python basics for analysis — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "e6e9a73c4a3c7a4a86f850529a9d864de078d730026d395f5701abb0cf6ba7c6",
+      "guide_sections": [
+        "2. Python basics for analysis — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "23734459263dc01a9fcdf0ae776a437984415b24be20631c0abcb8dae432eae5",
+      "guide_sections": [
+        "2. Python basics for analysis — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "cdc95a2ac867badc929fdfcb4eda2fd18c9004fb975a092fc133aed7efe4a296",
+      "guide_sections": [
+        "2. Python basics for analysis — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 10,
+      "objective_sha256": "eeb4f06e02dac2a4abecddbe71f775b6cab90122bc3ed143dd3b044e4bb9d115",
+      "guide_sections": [
+        "2. Python basics for analysis — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 11,
+      "objective_sha256": "7d28a05be44681d407e772992afe868b927c2821eceacc6c00d2e645f4fd627c",
+      "guide_sections": [
+        "2. Python basics for analysis — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 12,
+      "objective_sha256": "93fb7950aefed8fb4697b4240ab06ef98e1a95adc027c5a0c07d44f72021754a",
+      "guide_sections": [
+        "2. Python basics for analysis — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 13,
+      "objective_sha256": "0fdb9de3430052b7278095d2f668de3e0698ea3dbe90d6ca0c3290f80343fa0c",
+      "guide_sections": [
+        "2. Python basics for analysis — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "dcf2b9b678fbb2ae6381efe02c71df02ea9ea13253efc5e4312928ef826b16d5",
+      "guide_sections": [
+        "3. Working with data and simple analyses — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "68ff628e6b8fb00b47589075dda402f7686198bf81e77b2601e82d8c1ec2a31d",
+      "guide_sections": [
+        "3. Working with data and simple analyses — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "c39bd824ce4e6611c2c64c1e9e8dbb0525eb4a7d3c1872dd3dd380284b47971f",
+      "guide_sections": [
+        "3. Working with data and simple analyses — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "a9fdc92508d013344f08a1fdedfe677526e8e9c39daf406b49157a1f07837d41",
+      "guide_sections": [
+        "3. Working with data and simple analyses — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "12a2887b059ea16340f508f07bc544211b5c714cc418eb5243d15eb979c167cd",
+      "guide_sections": [
+        "3. Working with data and simple analyses — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "b2c6a6660ab84633975165b54cb951143c5ed02a4ca19ecd50019f20167e99b2",
+      "guide_sections": [
+        "3. Working with data and simple analyses — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "f30ecceaa8dc225ca1e316bec9efdf221ea9a984f4464fecedae628890e352a2",
+      "guide_sections": [
+        "3. Working with data and simple analyses — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "7ea41934c275b729784368c2de5d01772754fea4e72348d717a9011b0384f52b",
+      "guide_sections": [
+        "3. Working with data and simple analyses — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "e833b5849eff5b4be4a47a8446fb2d785027367661144ff0fc5daa817eea6592",
+      "guide_sections": [
+        "3. Working with data and simple analyses — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 10,
+      "objective_sha256": "48bf9989ca18a3449c41d0038173dfa283b3c1b29ca72d3db7cd4921cedc6e8d",
+      "guide_sections": [
+        "3. Working with data and simple analyses — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 11,
+      "objective_sha256": "b1efa940e2ec4d8f9da8544d3328ee2464a5f79d6266cebe047609627484569b",
+      "guide_sections": [
+        "3. Working with data and simple analyses — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 12,
+      "objective_sha256": "db32e9a6a031dcc1e79ce4528c57b1bc0400bbb3b5ba7210ddd095ce1f02d5c4",
+      "guide_sections": [
+        "3. Working with data and simple analyses — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 13,
+      "objective_sha256": "6bde73a8f20b74aa8d162087e68a9e73d42e1f292bdd22b9335753fdce4621a0",
+      "guide_sections": [
+        "3. Working with data and simple analyses — 32.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "0714597282911e77970276a53b682e6d74254539e07b1ae64a8ea767dd414427",
+      "guide_sections": [
+        "4. Communicating insights — 12.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "cbd504515d3d90fd386aac0a463109a607aa7500f181b1e979d606e05f6bca83",
+      "guide_sections": [
+        "4. Communicating insights — 12.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "a0f9829ced17bd4a9918615d44d6063e2e0971c0d62f6595082582b2d85796ff",
+      "guide_sections": [
+        "4. Communicating insights — 12.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "6c070c76f1cb10c147eded744ee55efb3bbc555bb4dea69d88a2cf52392817c0",
+      "guide_sections": [
+        "4. Communicating insights — 12.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "295959eccfcfc52088b83e353e03474e6d8609408f769e075f9ccc6d91dc3c57",
+      "guide_sections": [
+        "4. Communicating insights — 12.5%",
+        "Original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [
+      "PCED-30-02"
+    ],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "PCED-30-02",
+        "title": "PCED Certified Entry-Level Data Analyst with Python",
+        "url": "https://pythoninstitute.org/pced-exam-syllabus",
+        "guide_path": "guides/PCED-30-02-python-certified-entry-level-data-analyst.md",
+        "snapshot_path": "data\\objective-snapshots\\pced-30-02-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\pced-30-02-official-status.json",
+        "status": "error",
+        "changed": false,
+        "error": "URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 39,
+    "reachable": 31,
+    "access_blocked": 1,
+    "missing_or_error": 7
+  },
+  "source_fetches": [
+    {
+      "id": "python-3-documentation",
+      "url": "https://docs.python.org/3/",
+      "checked_at": "2026-09-30T02:33:52.741340+00:00",
+      "health": {
+        "id": "python-3-documentation",
+        "url": "https://docs.python.org/3/",
+        "checked_at": "2026-09-30T02:33:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3/",
+        "content_type": "text/html",
+        "page_title": "Python 3.14 documentation",
+        "canonical_url": "https://docs.python.org/3/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "50b9d442c370445bef6759fa6081fdbb19b350ce94cf3dd9c82305f5c39b16d5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3/",
+      "sha256": "c427e98b7231761ea07352cb11b21beac1efb24f4dd46488edb483127bafe708",
+      "text_characters": 3232
+    },
+    {
+      "id": "pced-30-02-syllabus",
+      "url": "https://pythoninstitute.org/pced-exam-syllabus",
+      "checked_at": "2026-09-30T02:33:52.742072+00:00",
+      "health": {
+        "id": "pced-30-02-syllabus",
+        "url": "https://pythoninstitute.org/pced-exam-syllabus",
+        "checked_at": "2026-09-30T02:33:52+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pced-exam-syllabus",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "pced-certification-page",
+      "url": "https://pythoninstitute.org/pced",
+      "checked_at": "2026-09-30T02:33:52.742570+00:00",
+      "health": {
+        "id": "pced-certification-page",
+        "url": "https://pythoninstitute.org/pced",
+        "checked_at": "2026-09-30T02:33:52+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pced",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "numpy-user-guide",
+      "url": "https://numpy.org/doc/stable/user/",
+      "checked_at": "2026-09-30T02:33:53.007598+00:00",
+      "health": {
+        "id": "numpy-user-guide",
+        "url": "https://numpy.org/doc/stable/user/",
+        "checked_at": "2026-09-30T02:33:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://numpy.org/doc/stable/user/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "NumPy user guide — NumPy v2.5 Manual",
+        "canonical_url": "https://numpy.org/doc/stable/user/",
+        "duration_signals": [],
+        "signal_fingerprint": "af18001c96d0dade7dc60b22db32666ee15394f560b9d4d7307fc98a98cf87c5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://numpy.org/doc/stable/user/",
+      "sha256": "cb12150a5ad7a405cb04d93852085c36ebb5216c7051adbc76618fd7b7f50c4a",
+      "text_characters": 781
+    },
+    {
+      "id": "numpy-quickstart",
+      "url": "https://numpy.org/doc/stable/user/quickstart.html",
+      "checked_at": "2026-09-30T02:33:53.460962+00:00",
+      "health": {
+        "id": "numpy-quickstart",
+        "url": "https://numpy.org/doc/stable/user/quickstart.html",
+        "checked_at": "2026-09-30T02:33:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://numpy.org/doc/stable/user/quickstart.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "NumPy quickstart — NumPy v2.5 Manual",
+        "canonical_url": "https://numpy.org/doc/stable/user/quickstart.html",
+        "duration_signals": [],
+        "signal_fingerprint": "bdeed77dd54304afc882e901099f4af5cc43acc86c769dda29dd145668d0a825",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://numpy.org/doc/stable/user/quickstart.html",
+      "sha256": "583e7317c50d9ac397a47c8102cb4c2fe5951d3b199a16ee2ea4ce29989e9f55",
+      "text_characters": 33849
+    },
+    {
+      "id": "openedg-python-voucher-store",
+      "url": "https://ums.edube.org/",
+      "checked_at": "2026-09-30T02:33:54.141352+00:00",
+      "health": {
+        "id": "openedg-python-voucher-store",
+        "url": "https://ums.edube.org/",
+        "checked_at": "2026-09-30T02:33:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://ums.edube.org/store",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "OpenEDG - Store",
+        "canonical_url": "https://ums.edube.org/store",
+        "duration_signals": [],
+        "signal_fingerprint": "f5bc5033305efcb6882247b59b7a09a49fc0604763325cd115e7276972a793d7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://ums.edube.org/store",
+      "sha256": "235109be6f62fe18cf3538f8dda277d4d253f578874b00bc03041d479d52407e",
+      "text_characters": 84
+    },
+    {
+      "id": "python-for-data-analysis-web",
+      "url": "https://wesmckinney.com/book/",
+      "checked_at": "2026-09-30T02:33:55.377684+00:00",
+      "health": {
+        "id": "python-for-data-analysis-web",
+        "url": "https://wesmckinney.com/book/",
+        "checked_at": "2026-09-30T02:33:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://wesmckinney.com/book/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Python for Data Analysis, 3E",
+        "canonical_url": "https://wesmckinney.com/book/",
+        "duration_signals": [],
+        "signal_fingerprint": "ccd92b621beffebe6ac482dbb269fafdf836f33e9150c9e21082c6c2e7809dc7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://wesmckinney.com/book/",
+      "sha256": "326c9cb81d044c3da3a65427f56337167713dc446449f0442c0f30077c7be77c",
+      "text_characters": 1969
+    },
+    {
+      "id": "kaggle-learn",
+      "url": "https://www.kaggle.com/learn",
+      "checked_at": "2026-09-30T02:33:55.784044+00:00",
+      "health": {
+        "id": "kaggle-learn",
+        "url": "https://www.kaggle.com/learn",
+        "checked_at": "2026-09-30T02:33:55+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://www.kaggle.com/learn",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "cisco-data-analytics-essentials",
+      "url": "https://www.netacad.com/courses/data-analytics-essentials",
+      "checked_at": "2026-09-30T02:34:11.116063+00:00",
+      "health": {
+        "id": "cisco-data-analytics-essentials",
+        "url": "https://www.netacad.com/courses/data-analytics-essentials",
+        "checked_at": "2026-09-30T02:34:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.netacad.com/courses/data-analytics-essentials",
+        "content_type": "text/html",
+        "page_title": "Introduction to Data Analytics Essentials",
+        "canonical_url": "https://www.netacad.com/courses/data-analytics-essentials",
+        "duration_signals": [],
+        "signal_fingerprint": "9387b0066cee26735cf7e3dae43e236897409b8865cbad696b8d092390117620",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.netacad.com/courses/data-analytics-essentials",
+      "sha256": "6cf4cdea184de953b01688140421671be927b67ae749d2c08ffa1041925a395c",
+      "text_characters": 41
+    },
+    {
+      "id": "pced-testing-policies",
+      "url": "https://pythoninstitute.org/pced-testing-policies",
+      "checked_at": "2026-09-30T02:39:20.264594+00:00",
+      "health": {
+        "id": "pced-testing-policies",
+        "url": "https://pythoninstitute.org/pced-testing-policies",
+        "checked_at": "2026-09-30T02:39:20+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pced-testing-policies",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "pced-pd101-vendor",
+      "url": "https://pythoninstitute.org/python-for-data-analytics-101",
+      "checked_at": "2026-09-30T02:39:20.265109+00:00",
+      "health": {
+        "id": "pced-pd101-vendor",
+        "url": "https://pythoninstitute.org/python-for-data-analytics-101",
+        "checked_at": "2026-09-30T02:39:20+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/python-for-data-analytics-101",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "pced-pd101-edube",
+      "url": "https://edube.org/study/pd101",
+      "checked_at": "2026-09-30T02:39:20.265451+00:00",
+      "health": {
+        "id": "pced-pd101-edube",
+        "url": "https://edube.org/study/pd101",
+        "checked_at": "2026-09-30T02:39:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edube.org/study/pd101",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Edube Interactive :: Python for Data Analytics 101 (PD101)",
+        "canonical_url": "https://edube.org/study/pd101",
+        "duration_signals": [
+          "1 hour"
+        ],
+        "signal_fingerprint": "5e2a80b658499328c550ba7c8341ab3dfd31ca221502ecf34b632d1457cdaa7b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edube.org/study/pd101",
+      "sha256": "a7978e50c3ac4b91d822d54758f1f9da09a1b5bb0adf32c943db11916f1fb510",
+      "text_characters": 4094
+    },
+    {
+      "id": "pced-practice-kit",
+      "url": "https://ums.edube.org/products/pced-practice-test",
+      "checked_at": "2026-09-30T02:39:21.145725+00:00",
+      "health": {
+        "id": "pced-practice-kit",
+        "url": "https://ums.edube.org/products/pced-practice-test",
+        "checked_at": "2026-09-30T02:39:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://ums.edube.org/products/pced-practice-test",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "OpenEDG - Store",
+        "canonical_url": "https://ums.edube.org/products/pced-practice-test",
+        "duration_signals": [],
+        "signal_fingerprint": "e687c373d14807d4f61b1a6ef1d1123868db02b1d6927daa0aa917b37f8c9cd7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://ums.edube.org/products/pced-practice-test",
+      "sha256": "5aa63f0e9e602dee2df2f8a01392454efd487ad24781dcfb86b4700f4009f837",
+      "text_characters": 3475
+    },
+    {
+      "id": "pced-retake-practice-bundle",
+      "url": "https://ums.edube.org/products/0-pi-pced-3002-erpt",
+      "checked_at": "2026-09-30T02:39:22.011629+00:00",
+      "health": {
+        "id": "pced-retake-practice-bundle",
+        "url": "https://ums.edube.org/products/0-pi-pced-3002-erpt",
+        "checked_at": "2026-09-30T02:39:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://ums.edube.org/products/0-pi-pced-3002-erpt",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "OpenEDG - Store",
+        "canonical_url": "https://ums.edube.org/products/0-pi-pced-3002-erpt",
+        "duration_signals": [
+          "60 minutes"
+        ],
+        "signal_fingerprint": "77b442ae71805fd3dbe2d553207e30db1c8c4d8c744931300a56d3241a536b94",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://ums.edube.org/products/0-pi-pced-3002-erpt",
+      "sha256": "419acfa5d6af1aafb767a7cb442b32f35b87c02ee28c4ba295c890a5e581bbb0",
+      "text_characters": 4092
+    },
+    {
+      "id": "pced-pd101-pro",
+      "url": "https://ums.edube.org/products/pi-pd101-courseware",
+      "checked_at": "2026-09-30T02:39:22.507312+00:00",
+      "health": {
+        "id": "pced-pd101-pro",
+        "url": "https://ums.edube.org/products/pi-pd101-courseware",
+        "checked_at": "2026-09-30T02:39:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://ums.edube.org/products/pi-pd101-courseware",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "OpenEDG - Store",
+        "canonical_url": "https://ums.edube.org/products/pi-pd101-courseware",
+        "duration_signals": [
+          "1 hour"
+        ],
+        "signal_fingerprint": "003a3cc64639e277f24217cbef7157c02788ca93bb61758f442fcc2bf016f51b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://ums.edube.org/products/pi-pd101-courseware",
+      "sha256": "e8cd21e3d962261ad7de863f05407f079ebbe07b88a61f2192f392cf02d9681f",
+      "text_characters": 3462
+    },
+    {
+      "id": "eu-data-protection-principles",
+      "url": "https://commission.europa.eu/law/law-topic/data-protection/reform/rules-business-and-organisations/principles-gdpr/overview-principles/what-data-can-we-process-and-under-which-conditions_en",
+      "checked_at": "2026-09-30T02:39:22.956147+00:00",
+      "health": {
+        "id": "eu-data-protection-principles",
+        "url": "https://commission.europa.eu/law/law-topic/data-protection/reform/rules-business-and-organisations/principles-gdpr/overview-principles/what-data-can-we-process-and-under-which-conditions_en",
+        "checked_at": "2026-09-30T02:39:22+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://commission.europa.eu/law/law-topic/data-protection/reform/rules-business-and-organisations/principles-gdpr/overview-principles/what-data-can-we-process-and-under-which-conditions_en",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "hhs-hipaa-covered-entities",
+      "url": "https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html",
+      "checked_at": "2026-09-30T02:39:38.839906+00:00",
+      "health": {
+        "id": "hhs-hipaa-covered-entities",
+        "url": "https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html",
+        "checked_at": "2026-09-30T02:39:38+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "california-ccpa-overview",
+      "url": "https://www.oag.ca.gov/privacy/ccpa",
+      "checked_at": "2026-09-30T02:39:38.840304+00:00",
+      "health": {
+        "id": "california-ccpa-overview",
+        "url": "https://www.oag.ca.gov/privacy/ccpa",
+        "checked_at": "2026-09-30T02:39:38+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://www.oag.ca.gov/privacy/ccpa",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "numpy-array",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.array.html",
+      "checked_at": "2026-09-30T02:39:39.046245+00:00",
+      "health": {
+        "id": "numpy-array",
+        "url": "https://numpy.org/doc/stable/reference/generated/numpy.array.html",
+        "checked_at": "2026-09-30T02:39:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.array.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "numpy.array — NumPy v2.5 Manual",
+        "canonical_url": "https://numpy.org/doc/stable/reference/generated/numpy.array.html",
+        "duration_signals": [],
+        "signal_fingerprint": "fa31d239a1addf2ea1e806d3766084d7ae07c52a54085827263d8c459130b5b7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.array.html",
+      "sha256": "0d0b287efdb79915629d368471a1cb80646cfd3e087fc90a1e120c5f17af7ba1",
+      "text_characters": 4767
+    },
+    {
+      "id": "numpy-mean",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.mean.html",
+      "checked_at": "2026-09-30T02:39:39.634763+00:00",
+      "health": {
+        "id": "numpy-mean",
+        "url": "https://numpy.org/doc/stable/reference/generated/numpy.mean.html",
+        "checked_at": "2026-09-30T02:39:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.mean.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "numpy.mean — NumPy v2.5 Manual",
+        "canonical_url": "https://numpy.org/doc/stable/reference/generated/numpy.mean.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d96dc7c7f758b46faa9d44a01107c110fa947c618802019c05868d18019a04d1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.mean.html",
+      "sha256": "1e659828e52387d4a2f95181eee2acc62d66d43e5822433c94e74896cecd76c6",
+      "text_characters": 3371
+    },
+    {
+      "id": "numpy-median",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.median.html",
+      "checked_at": "2026-09-30T02:39:40.047775+00:00",
+      "health": {
+        "id": "numpy-median",
+        "url": "https://numpy.org/doc/stable/reference/generated/numpy.median.html",
+        "checked_at": "2026-09-30T02:39:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.median.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "numpy.median — NumPy v2.5 Manual",
+        "canonical_url": "https://numpy.org/doc/stable/reference/generated/numpy.median.html",
+        "duration_signals": [],
+        "signal_fingerprint": "9aa462ecb6530bc4aed27676dc7109e8aad8272084552a9327ac15d1985bdb8a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.median.html",
+      "sha256": "cb60084da9ad47af5bbb3c612af8b50249d7f6a7f1b1617b8590646ce008e48c",
+      "text_characters": 2765
+    },
+    {
+      "id": "numpy-std",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.std.html",
+      "checked_at": "2026-09-30T02:39:40.450366+00:00",
+      "health": {
+        "id": "numpy-std",
+        "url": "https://numpy.org/doc/stable/reference/generated/numpy.std.html",
+        "checked_at": "2026-09-30T02:39:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.std.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "numpy.std — NumPy v2.5 Manual",
+        "canonical_url": "https://numpy.org/doc/stable/reference/generated/numpy.std.html",
+        "duration_signals": [],
+        "signal_fingerprint": "af178a932e730096ce6d0ef00629cff1e8548eb92ce15c2f176d553403c1f97c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.std.html",
+      "sha256": "679ccf62bfb50d1f834cc7902c7e84c4f4c3c649fde1b4363d187d34158df827",
+      "text_characters": 6009
+    },
+    {
+      "id": "numpy-sum",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.sum.html",
+      "checked_at": "2026-09-30T02:39:40.855795+00:00",
+      "health": {
+        "id": "numpy-sum",
+        "url": "https://numpy.org/doc/stable/reference/generated/numpy.sum.html",
+        "checked_at": "2026-09-30T02:39:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.sum.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "numpy.sum — NumPy v2.5 Manual",
+        "canonical_url": "https://numpy.org/doc/stable/reference/generated/numpy.sum.html",
+        "duration_signals": [],
+        "signal_fingerprint": "9f0dc1b727afbc7c45f78daf6862f4cd3022b4e25b905f41d38d00202deddab4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.sum.html",
+      "sha256": "8bf34888334facb3a4e896693606b1e6d3d7df2cb557c1c698bd22c0bc5f3a3e",
+      "text_characters": 4087
+    },
+    {
+      "id": "numpy-arange",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.arange.html",
+      "checked_at": "2026-09-30T02:39:41.304241+00:00",
+      "health": {
+        "id": "numpy-arange",
+        "url": "https://numpy.org/doc/stable/reference/generated/numpy.arange.html",
+        "checked_at": "2026-09-30T02:39:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.arange.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "numpy.arange — NumPy v2.5 Manual",
+        "canonical_url": "https://numpy.org/doc/stable/reference/generated/numpy.arange.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6500976e408a785bdaa212965917b17e1bb10f5c0cc7e718ddd7e2a16955c083",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.arange.html",
+      "sha256": "9da81861651e5cbc49556134087c1c16e9f73f14e67ec2146f9d85a5401368ac",
+      "text_characters": 4048
+    },
+    {
+      "id": "numpy-linspace",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.linspace.html",
+      "checked_at": "2026-09-30T02:39:41.706924+00:00",
+      "health": {
+        "id": "numpy-linspace",
+        "url": "https://numpy.org/doc/stable/reference/generated/numpy.linspace.html",
+        "checked_at": "2026-09-30T02:39:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.linspace.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "numpy.linspace — NumPy v2.5 Manual",
+        "canonical_url": "https://numpy.org/doc/stable/reference/generated/numpy.linspace.html",
+        "duration_signals": [],
+        "signal_fingerprint": "4389c2cb0534525a3756b517423f715970d03f6a3219ad5b40ca9fe70af406c6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.linspace.html",
+      "sha256": "e4dcaad341ede0762caa5678f6d6d23ce4e8575bb65e27c65e94c52f553f2a6f",
+      "text_characters": 3197
+    },
+    {
+      "id": "numpy-corrcoef",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html",
+      "checked_at": "2026-09-30T02:39:42.044070+00:00",
+      "health": {
+        "id": "numpy-corrcoef",
+        "url": "https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html",
+        "checked_at": "2026-09-30T02:39:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "numpy.corrcoef — NumPy v2.5 Manual",
+        "canonical_url": "https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html",
+        "duration_signals": [],
+        "signal_fingerprint": "357c22875c9d3e8b3b64edf74bd0f5ce27a7ad94cc841f099f12b9104ef1ea73",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html",
+      "sha256": "c1e58adc92d5e0fca470f707b729c80adcf06b0ffb9a357e834a481993deb605",
+      "text_characters": 3827
+    },
+    {
+      "id": "numpy-sort",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.sort.html",
+      "checked_at": "2026-09-30T02:39:42.446081+00:00",
+      "health": {
+        "id": "numpy-sort",
+        "url": "https://numpy.org/doc/stable/reference/generated/numpy.sort.html",
+        "checked_at": "2026-09-30T02:39:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.sort.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "numpy.sort — NumPy v2.5 Manual",
+        "canonical_url": "https://numpy.org/doc/stable/reference/generated/numpy.sort.html",
+        "duration_signals": [],
+        "signal_fingerprint": "2930ec540d8a6accd295e46b0305df22e8439e3e08ba6bbbdb4fc14e22af234c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.sort.html",
+      "sha256": "2dbcbcd9a101dd87c3cbec081116478382c3c04507667705514699252046bc67",
+      "text_characters": 5491
+    },
+    {
+      "id": "numpy-unique",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.unique.html",
+      "checked_at": "2026-09-30T02:39:43.007923+00:00",
+      "health": {
+        "id": "numpy-unique",
+        "url": "https://numpy.org/doc/stable/reference/generated/numpy.unique.html",
+        "checked_at": "2026-09-30T02:39:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.unique.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "numpy.unique — NumPy v2.5 Manual",
+        "canonical_url": "https://numpy.org/doc/stable/reference/generated/numpy.unique.html",
+        "duration_signals": [],
+        "signal_fingerprint": "ddd880653c165ca6e4555a22e6b5b9f61161d6ac051cebf420d201d0c2cd5353",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.unique.html",
+      "sha256": "787db5abde95b160adecd7b1f433a20df87062b5dd6e34b7e857b3db5d99ca33",
+      "text_characters": 5041
+    },
+    {
+      "id": "numpy-isfinite",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.isfinite.html",
+      "checked_at": "2026-09-30T02:39:43.413872+00:00",
+      "health": {
+        "id": "numpy-isfinite",
+        "url": "https://numpy.org/doc/stable/reference/generated/numpy.isfinite.html",
+        "checked_at": "2026-09-30T02:39:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.isfinite.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "numpy.isfinite — NumPy v2.5 Manual",
+        "canonical_url": "https://numpy.org/doc/stable/reference/generated/numpy.isfinite.html",
+        "duration_signals": [],
+        "signal_fingerprint": "caed6349ee415cee4195002047937b75d27802143b92d35f628dd308f3865704",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.isfinite.html",
+      "sha256": "35960568edf95a8a6bd8d842d8b3a62bd94047139f2aa03d5473ba700257f29e",
+      "text_characters": 2282
+    },
+    {
+      "id": "python313-statistics",
+      "url": "https://docs.python.org/3.13/library/statistics.html",
+      "checked_at": "2026-09-30T02:39:43.840662+00:00",
+      "health": {
+        "id": "python313-statistics",
+        "url": "https://docs.python.org/3.13/library/statistics.html",
+        "checked_at": "2026-09-30T02:39:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/statistics.html",
+        "content_type": "text/html",
+        "page_title": "statistics — Mathematical statistics functions",
+        "canonical_url": "https://docs.python.org/3/library/statistics.html",
+        "duration_signals": [],
+        "signal_fingerprint": "73bcd08b2202d8d474aee622f0a543dcdf7a78e29d09be22763d9daef9806f7d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/statistics.html",
+      "sha256": "f133f131027995cae51e510d4d9879afd5415b8e6c21aa660fccde1e26f280ff",
+      "text_characters": 36699
+    },
+    {
+      "id": "python313-math",
+      "url": "https://docs.python.org/3.13/library/math.html",
+      "checked_at": "2026-09-30T02:39:44.360913+00:00",
+      "health": {
+        "id": "python313-math",
+        "url": "https://docs.python.org/3.13/library/math.html",
+        "checked_at": "2026-09-30T02:39:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/math.html",
+        "content_type": "text/html",
+        "page_title": "math — Mathematical functions",
+        "canonical_url": "https://docs.python.org/3/library/math.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6534134c5905c6855058c4ed5fe44899bd94cd3bdf005175db210d2f930e4819",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/math.html",
+      "sha256": "cb23bbf3c61b6a6a28f8f4c7231a2fad9f01cb36306b4612ea1d3326573c51b7",
+      "text_characters": 24177
+    },
+    {
+      "id": "python313-random",
+      "url": "https://docs.python.org/3.13/library/random.html",
+      "checked_at": "2026-09-30T02:39:44.886410+00:00",
+      "health": {
+        "id": "python313-random",
+        "url": "https://docs.python.org/3.13/library/random.html",
+        "checked_at": "2026-09-30T02:39:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/random.html",
+        "content_type": "text/html",
+        "page_title": "random — Generate pseudo-random numbers",
+        "canonical_url": "https://docs.python.org/3/library/random.html",
+        "duration_signals": [],
+        "signal_fingerprint": "0c730510475943036ca0960feb79842a162d090210786d57ec3c512af8275389",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/random.html",
+      "sha256": "c99b7adcaf64d38361b93b6b150ab98a4c8abae854bda637a96e8503f979f670",
+      "text_characters": 25913
+    },
+    {
+      "id": "python313-collections",
+      "url": "https://docs.python.org/3.13/library/collections.html",
+      "checked_at": "2026-09-30T02:39:45.331867+00:00",
+      "health": {
+        "id": "python313-collections",
+        "url": "https://docs.python.org/3.13/library/collections.html",
+        "checked_at": "2026-09-30T02:39:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/collections.html",
+        "content_type": "text/html",
+        "page_title": "collections — Container datatypes",
+        "canonical_url": "https://docs.python.org/3/library/collections.html",
+        "duration_signals": [],
+        "signal_fingerprint": "22b62ea4cbd2b3ca20b0b1ab0a23c43e53079e019f9a42d208d80d396eb61d85",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/collections.html",
+      "sha256": "c0825ebb36391d4fc2d78c7eabe8344a163302cc8f4e86d60a56268fc3291c77",
+      "text_characters": 44406
+    },
+    {
+      "id": "python313-datetime",
+      "url": "https://docs.python.org/3.13/library/datetime.html",
+      "checked_at": "2026-09-30T02:39:45.880252+00:00",
+      "health": {
+        "id": "python313-datetime",
+        "url": "https://docs.python.org/3.13/library/datetime.html",
+        "checked_at": "2026-09-30T02:39:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/datetime.html",
+        "content_type": "text/html",
+        "page_title": "datetime — Basic date and time types",
+        "canonical_url": "https://docs.python.org/3/library/datetime.html",
+        "duration_signals": [
+          "4 hours",
+          "5 hours"
+        ],
+        "signal_fingerprint": "da969a76978c7f88a798c6036c4fb1543826cc3258ccf82aa30d076e87c188f0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/datetime.html",
+      "sha256": "2b698c27cea359d3ea6bc135fd57ff567d7ff3bc4b1c0d2283814654ffce4acd",
+      "text_characters": 88114
+    },
+    {
+      "id": "python313-ospath",
+      "url": "https://docs.python.org/3.13/library/os.path.html",
+      "checked_at": "2026-09-30T02:39:46.618953+00:00",
+      "health": {
+        "id": "python313-ospath",
+        "url": "https://docs.python.org/3.13/library/os.path.html",
+        "checked_at": "2026-09-30T02:39:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/os.path.html",
+        "content_type": "text/html",
+        "page_title": "os.path — Common pathname manipulations",
+        "canonical_url": "https://docs.python.org/3/library/os.path.html",
+        "duration_signals": [],
+        "signal_fingerprint": "7c8609859965944374d1fc706eea71934da80af72c44ad2bcde989f6f54dbd67",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/os.path.html",
+      "sha256": "f19fe23168e78c5f968036d034b11ae5425c5a6774b9a5b1528ec6ba7bf3f90f",
+      "text_characters": 20755
+    },
+    {
+      "id": "python313-csv",
+      "url": "https://docs.python.org/3.13/library/csv.html",
+      "checked_at": "2026-09-30T02:39:47.006221+00:00",
+      "health": {
+        "id": "python313-csv",
+        "url": "https://docs.python.org/3.13/library/csv.html",
+        "checked_at": "2026-09-30T02:39:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/csv.html",
+        "content_type": "text/html",
+        "page_title": "csv — CSV File Reading and Writing",
+        "canonical_url": "https://docs.python.org/3/library/csv.html",
+        "duration_signals": [],
+        "signal_fingerprint": "86499c6a09d3131a422c0c6b0c4784d620964719ebb01792199ac575e9391283",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/csv.html",
+      "sha256": "8f86c02ee90f13983fb2a117bfb8c5425381e56c9144ec4c8840f9bece97ab4b",
+      "text_characters": 22245
+    },
+    {
+      "id": "python313-builtins",
+      "url": "https://docs.python.org/3.13/library/functions.html",
+      "checked_at": "2026-09-30T02:39:47.438279+00:00",
+      "health": {
+        "id": "python313-builtins",
+        "url": "https://docs.python.org/3.13/library/functions.html",
+        "checked_at": "2026-09-30T02:39:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/builtins/functions.html",
+        "content_type": "text/html",
+        "page_title": "Built-in Functions",
+        "canonical_url": "https://docs.python.org/3/builtins/functions.html",
+        "duration_signals": [],
+        "signal_fingerprint": "39038bbc67029ad5b5517e724a69dd482b9d1f95c81f69163b6f29707153c8f8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/builtins/functions.html",
+      "sha256": "5b5fc37e54f2d7cc714bd3f16829e2b5aa04e9648842f6e1afecb6189d6d8567",
+      "text_characters": 77893
+    },
+    {
+      "id": "python313-types",
+      "url": "https://docs.python.org/3.13/library/stdtypes.html",
+      "checked_at": "2026-09-30T02:39:48.439852+00:00",
+      "health": {
+        "id": "python313-types",
+        "url": "https://docs.python.org/3.13/library/stdtypes.html",
+        "checked_at": "2026-09-30T02:39:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/builtins/stdtypes.html",
+        "content_type": "text/html",
+        "page_title": "Built-in Types",
+        "canonical_url": "https://docs.python.org/3/builtins/stdtypes.html",
+        "duration_signals": [],
+        "signal_fingerprint": "00330b7d3715c9f679c07698c5fb340f4efd818ce9cb90292160a7de65ceb478",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/builtins/stdtypes.html",
+      "sha256": "80a062362824e6753359905690994739c60233ba1da937e9b8e3a6dff7e915fa",
+      "text_characters": 173181
+    },
+    {
+      "id": "python313-control-flow",
+      "url": "https://docs.python.org/3.13/tutorial/controlflow.html",
+      "checked_at": "2026-09-30T02:39:50.344957+00:00",
+      "health": {
+        "id": "python313-control-flow",
+        "url": "https://docs.python.org/3.13/tutorial/controlflow.html",
+        "checked_at": "2026-09-30T02:39:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/tutorial/controlflow.html",
+        "content_type": "text/html",
+        "page_title": "4. More Control Flow Tools",
+        "canonical_url": "https://docs.python.org/3/tutorial/controlflow.html",
+        "duration_signals": [],
+        "signal_fingerprint": "80fc72cdf98a887730e8bfc2b67d55483d1807974f5a6849bf34f6570e9eadd2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/tutorial/controlflow.html",
+      "sha256": "856cac146955661f308b46fd71ea024b1b6114f035214a0713dc8a2b57990875",
+      "text_characters": 36778
+    },
+    {
+      "id": "dotnet-chart-saveimage",
+      "url": "https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.datavisualization.charting.chart.saveimage?view=netframework-4.8.1",
+      "checked_at": "2026-09-30T02:51:48.758136+00:00",
+      "health": {
+        "id": "dotnet-chart-saveimage",
+        "url": "https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.datavisualization.charting.chart.saveimage?view=netframework-4.8.1",
+        "checked_at": "2026-09-30T02:51:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.datavisualization.charting.chart.saveimage?view=netframework-4.8.1",
+        "content_type": "text/html",
+        "page_title": "Chart.SaveImage Method (System.Windows.Forms.DataVisualization.Charting)",
+        "canonical_url": "https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.datavisualization.charting.chart.saveimage?view=netframework-4.8.1",
+        "duration_signals": [],
+        "signal_fingerprint": "2b98d829283f48f9520c081874cae2462264f24a7892c30aac2ab8b91bc002e2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.datavisualization.charting.chart.saveimage?view=netframework-4.8.1",
+      "sha256": "e9a350d54663c6f887388bf4cfb16146b105b6b6b62e3cb0096d3d3973726cf5",
+      "text_characters": 3887
+    }
+  ],
+  "added_source_ids": [
+    "pced-testing-policies",
+    "pced-pd101-vendor",
+    "pced-pd101-edube",
+    "pced-practice-kit",
+    "pced-retake-practice-bundle",
+    "pced-pd101-pro",
+    "eu-data-protection-principles",
+    "hhs-hipaa-covered-entities",
+    "california-ccpa-overview",
+    "numpy-array",
+    "numpy-mean",
+    "numpy-median",
+    "numpy-std",
+    "numpy-sum",
+    "numpy-arange",
+    "numpy-linspace",
+    "numpy-corrcoef",
+    "numpy-sort",
+    "numpy-unique",
+    "numpy-isfinite",
+    "python313-statistics",
+    "python313-collections",
+    "python313-datetime",
+    "python313-ospath",
+    "dotnet-chart-saveimage"
+  ],
+  "findings": [
+    {
+      "id": "pced3002-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Ingestion teaching lacked reproducible row dispositions",
+      "url": "https://docs.python.org/3.13/library/csv.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCED-30-02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The guide named cleaning rules without showing quoted logical records, preserved input or a reconciling ledger.",
+      "recommendation": "Add exact original17-record fixture and112-check workbook covering quotedCSV,missing/nonfinite/date/range failures and conflict-awarededuplication.",
+      "disposition": "applied",
+      "source_id": "python313-csv",
+      "resolution": "Add exact original17-record fixture and112-check workbook covering quotedCSV,missing/nonfinite/date/range failures and conflict-awarededuplication."
+    },
+    {
+      "id": "pced3002-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Spread and empty-group conventions needed worked results",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.std.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCED-30-02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "DefaultNumPyN differs from statistics.stdev N-1; missing andempty values cannot be silentlyzeroed.",
+      "recommendation": "Calculate bothconventions againstPython, stateempty/singleton policies and distinguish unbiasedvariance fromSD.",
+      "disposition": "applied",
+      "source_id": "numpy-std",
+      "resolution": "Calculate bothconventions againstPython, stateempty/singleton policies and distinguish unbiasedvariance fromSD."
+    },
+    {
+      "id": "pced3002-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Outlier and correlation limits lacked counterexamples",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCED-30-02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "A validextremeobservation changesmean withoutprovingerror, and nonlinearassociation canhavezeroPearsonr.",
+      "recommendation": "RetainR08,showseparate7-recordsensitivity,constant/paired/finiteguards andoriginalnonlinearprobe.",
+      "disposition": "applied",
+      "source_id": "numpy-corrcoef",
+      "resolution": "RetainR08,showseparate7-recordsensitivity,constant/paired/finiteguards andoriginalnonlinearprobe."
+    },
+    {
+      "id": "pced3002-deep-4",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Learning access and time estimates were not adequately qualified",
+      "url": "https://edube.org/study/pd101",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCED-30-02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "CompletePD101landingstatesfiveweeksaboutonehour/day,freeCore andpaidFull/Pro; oldguideused30-45hourswithlabs.",
+      "recommendation": "Useproviderpublicduration/access distinctions andlabelotherbudgets asauthor estimates;removeunverifiedCisco/Kaggleruntimes.",
+      "disposition": "applied",
+      "source_id": "pced-pd101-edube",
+      "resolution": "Useproviderpublicduration/access distinctions andlabelotherbudgets asauthor estimates;removeunverifiedCisco/Kaggleruntimes."
+    },
+    {
+      "id": "pced3002-deep-5",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Redemption profiles and product launch limits differ",
+      "url": "https://ums.edube.org/products/pced-practice-test",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCED-30-02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "CredentialFAQ saysLearner; storesayTestCandidate. Standalonekit10launcheseach differsfrombundle5.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "pced-certification-page",
+      "review": "Completecurrentcanonicalexam/syllabusprimarybodiesread; no separate unseenfeed or authenticatedreleaseclaim."
+    }
+  ],
+  "labs": {
+    "proposed": 1,
+    "fully_completed_proposed_labs": 0,
+    "original_programs_executed": 1,
+    "execution_runs": 2,
+    "public_files": 2,
+    "checks_per_mode": 112,
+    "chart_exports": 1,
+    "local_validation": {
+      "passed": true,
+      "python": "3.13.14",
+      "numpy": "2.5.2",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "public_files": [
+        {
+          "filename": "analysis.py",
+          "sha256": "7cc7c882834c9a1c084779eca197355df41d0d37516eec003ee85c14ef98f0da",
+          "bytes": 16547
+        },
+        {
+          "filename": "chart.ps1",
+          "sha256": "7dd34fbc1ec1fda71c9f83c9d2ec127a478e101f56a8580c85af1a4f15996449",
+          "bytes": 2770
+        }
+      ],
+      "programs": 1,
+      "checks_per_mode": 112,
+      "execution_runs": 2,
+      "results": [
+        {
+          "command": [
+            "python",
+            "-B",
+            "-Werror",
+            "analysis.py"
+          ],
+          "started_at": "2026-09-30T03:02:34.937317+00:00",
+          "elapsed_seconds": 0.204,
+          "exit_code": 0,
+          "stdout": "{\n  \"source\": \"Original synthetic fixture; no real people or services\",\n  \"created_on\": \"2026-09-29\",\n  \"license\": \"Repository license\",\n  \"raw_sha256\": \"c046bc6af8b9b8fd2d48e704675ffb20783303c2558b0aecbc54fa7cba1a3beb\",\n  \"input_records\": 17,\n  \"ledger\": [\n    {\n      \"record\": 1,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 2,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 3,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 4,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 5,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 6,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 7,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 8,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 9,\n      \"status\": \"duplicate\"\n    },\n    {\n      \"record\": 10,\n      \"status\": \"missing_minutes\"\n    },\n    {\n      \"record\": 11,\n      \"status\": \"nonfinite_minutes\"\n    },\n    {\n      \"record\": 12,\n      \"status\": \"nonfinite_minutes\"\n    },\n    {\n      \"record\": 13,\n      \"status\": \"range\"\n    },\n    {\n      \"record\": 14,\n      \"status\": \"date\"\n    },\n    {\n      \"record\": 15,\n      \"status\": \"numeric_format\"\n    },\n    {\n      \"record\": 16,\n      \"status\": \"conflicting_id\"\n    },\n    {\n      \"record\": 17,\n      \"status\": \"conflicting_id\"\n    }\n  ],\n  \"dispositions\": {\n    \"accepted\": 8,\n    \"duplicate\": 1,\n    \"missing_minutes\": 1,\n    \"nonfinite_minutes\": 2,\n    \"range\": 1,\n    \"date\": 1,\n    \"numeric_format\": 1,\n    \"conflicting_id\": 2\n  },\n  \"groups\": {\n    \"north\": {\n      \"count\": 4,\n      \"mean\": 13.0,\n      \"median\": 13.0\n    },\n    \"south\": {\n      \"count\": 4,\n      \"mean\": 55.0,\n      \"median\": 21.0\n    }\n  },\n  \"count\": 8,\n  \"mean_minutes\": 34.0,\n  \"median_minutes\": 17.0,\n  \"population_sd\": 47.77028364998475,\n  \"sample_sd\": 51.068581339214816,\n  \"flagged_ids\": [\n    \"R08\"\n  ],\n  \"sensitivity_mean_without_flag\": 16.0,\n  \"depth_minutes_r\": 0.6395294793910794\n}\nPCED: 112 checks; temporary files removed\n",
+          "stderr": "",
+          "checks": 112,
+          "optimized": false
+        },
+        {
+          "command": [
+            "python",
+            "-B",
+            "-Werror",
+            "-O",
+            "analysis.py"
+          ],
+          "started_at": "2026-09-30T03:02:35.141438+00:00",
+          "elapsed_seconds": 0.344,
+          "exit_code": 0,
+          "stdout": "{\n  \"source\": \"Original synthetic fixture; no real people or services\",\n  \"created_on\": \"2026-09-29\",\n  \"license\": \"Repository license\",\n  \"raw_sha256\": \"c046bc6af8b9b8fd2d48e704675ffb20783303c2558b0aecbc54fa7cba1a3beb\",\n  \"input_records\": 17,\n  \"ledger\": [\n    {\n      \"record\": 1,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 2,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 3,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 4,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 5,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 6,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 7,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 8,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 9,\n      \"status\": \"duplicate\"\n    },\n    {\n      \"record\": 10,\n      \"status\": \"missing_minutes\"\n    },\n    {\n      \"record\": 11,\n      \"status\": \"nonfinite_minutes\"\n    },\n    {\n      \"record\": 12,\n      \"status\": \"nonfinite_minutes\"\n    },\n    {\n      \"record\": 13,\n      \"status\": \"range\"\n    },\n    {\n      \"record\": 14,\n      \"status\": \"date\"\n    },\n    {\n      \"record\": 15,\n      \"status\": \"numeric_format\"\n    },\n    {\n      \"record\": 16,\n      \"status\": \"conflicting_id\"\n    },\n    {\n      \"record\": 17,\n      \"status\": \"conflicting_id\"\n    }\n  ],\n  \"dispositions\": {\n    \"accepted\": 8,\n    \"duplicate\": 1,\n    \"missing_minutes\": 1,\n    \"nonfinite_minutes\": 2,\n    \"range\": 1,\n    \"date\": 1,\n    \"numeric_format\": 1,\n    \"conflicting_id\": 2\n  },\n  \"groups\": {\n    \"north\": {\n      \"count\": 4,\n      \"mean\": 13.0,\n      \"median\": 13.0\n    },\n    \"south\": {\n      \"count\": 4,\n      \"mean\": 55.0,\n      \"median\": 21.0\n    }\n  },\n  \"count\": 8,\n  \"mean_minutes\": 34.0,\n  \"median_minutes\": 17.0,\n  \"population_sd\": 47.77028364998475,\n  \"sample_sd\": 51.068581339214816,\n  \"flagged_ids\": [\n    \"R08\"\n  ],\n  \"sensitivity_mean_without_flag\": 16.0,\n  \"depth_minutes_r\": 0.6395294793910794\n}\nPCED: 112 checks; temporary files removed\n",
+          "stderr": "",
+          "checks": 112,
+          "optimized": true
+        }
+      ],
+      "computed_report": {
+        "source": "Original synthetic fixture; no real people or services",
+        "created_on": "2026-09-29",
+        "license": "Repository license",
+        "raw_sha256": "c046bc6af8b9b8fd2d48e704675ffb20783303c2558b0aecbc54fa7cba1a3beb",
+        "input_records": 17,
+        "ledger": [
+          {
+            "record": 1,
+            "status": "accepted"
+          },
+          {
+            "record": 2,
+            "status": "accepted"
+          },
+          {
+            "record": 3,
+            "status": "accepted"
+          },
+          {
+            "record": 4,
+            "status": "accepted"
+          },
+          {
+            "record": 5,
+            "status": "accepted"
+          },
+          {
+            "record": 6,
+            "status": "accepted"
+          },
+          {
+            "record": 7,
+            "status": "accepted"
+          },
+          {
+            "record": 8,
+            "status": "accepted"
+          },
+          {
+            "record": 9,
+            "status": "duplicate"
+          },
+          {
+            "record": 10,
+            "status": "missing_minutes"
+          },
+          {
+            "record": 11,
+            "status": "nonfinite_minutes"
+          },
+          {
+            "record": 12,
+            "status": "nonfinite_minutes"
+          },
+          {
+            "record": 13,
+            "status": "range"
+          },
+          {
+            "record": 14,
+            "status": "date"
+          },
+          {
+            "record": 15,
+            "status": "numeric_format"
+          },
+          {
+            "record": 16,
+            "status": "conflicting_id"
+          },
+          {
+            "record": 17,
+            "status": "conflicting_id"
+          }
+        ],
+        "dispositions": {
+          "accepted": 8,
+          "duplicate": 1,
+          "missing_minutes": 1,
+          "nonfinite_minutes": 2,
+          "range": 1,
+          "date": 1,
+          "numeric_format": 1,
+          "conflicting_id": 2
+        },
+        "groups": {
+          "north": {
+            "count": 4,
+            "mean": 13.0,
+            "median": 13.0
+          },
+          "south": {
+            "count": 4,
+            "mean": 55.0,
+            "median": 21.0
+          }
+        },
+        "count": 8,
+        "mean_minutes": 34.0,
+        "median_minutes": 17.0,
+        "population_sd": 47.77028364998475,
+        "sample_sd": 51.068581339214816,
+        "flagged_ids": [
+          "R08"
+        ],
+        "sensitivity_mean_without_flag": 16.0,
+        "depth_minutes_r": 0.6395294793910794
+      },
+      "chart": {
+        "command": [
+          "powershell",
+          "-NoProfile",
+          "-File",
+          "chart.ps1",
+          "-ReportPath",
+          "report.json",
+          "-OutputPath",
+          "chart.png"
+        ],
+        "started_at": "2026-09-30T03:02:35.486237+00:00",
+        "elapsed_seconds": 0.542,
+        "exit_code": 0,
+        "stdout": "Saved 1100x650 PNG; zero-based scale; four values from report JSON.\n",
+        "stderr": "",
+        "artifact_sha256": "004f912b85729e3992e5104e20843ae332a8d4a537b3ab6a1867357aa3165bf5",
+        "artifact_path": "website/assets/pced-synthetic-summary.png",
+        "dimensions": [
+          1100,
+          650
+        ]
+      },
+      "selected_lint": {
+        "command": [
+          "python",
+          "-m",
+          "ruff",
+          "check",
+          "analysis.py",
+          "--select",
+          "E4,E7,E9,F,W,E501",
+          "--line-length",
+          "79",
+          "--output-format",
+          "concise"
+        ],
+        "exit_code": 0,
+        "stdout": "All checks passed!\n",
+        "stderr": "",
+        "version": "ruff 0.16.4"
+      },
+      "temporary_directory_cleanup": "passed",
+      "execution_boundary": "Original finite synthetic fixture only; same-context AI image inspection, no human or enrolled-course review. Existing Windows .NET chart export is optional and outside exam scope. No package installation, external dataset collection or general hostile-input assessment. Separate public-dataset lab remains proposed."
+    }
+  },
+  "answered_checks": 16,
+  "limitations": [
+    "40directreceipts:32successfulresponses,7errors,1blocked. Some200responses areonlyshells. Completecanonicalexam/syllabus andselectedpolicy/regulator fallback distinguish manualreading fromfailedautomatedobjectivehash. No fullPDF,wholemanual or enrolled/paidinterior audit.",
+    "Practiceprofile andproduct-specificlaunch differences requirecurrententitlementconfirmation. No account,cart,purchase,redemption,examquestions,booking,eligibility orsystemtest. Legaloverviews do notdetermineorganizationalapplicability.",
+    "ExactoriginalPythonfile passes112checks ineachnormal/optimizedrun onexistingCPython3.13.14/NumPy2.5.2; selectedRuff0.16.4rules pass. This isfiniteoriginalsyntheticdata,not representative serviceevidence,fullcross-runtimeproof or generalhostile-inputsecurityassessment.",
+    "OptionalexactPowerShellhelperexports1100x650PNGusingexistingWindows.NETchartlibrary. AIvisualinspection checksvalues/zeroaxis/readability;humanreview,manualpresentation andfullaccessibility assessmentremainpending. No packageinstallation or visiblewindow.",
+    "One broader public-dataset integratedlab remains proposed. No externaldatasetcollection,realserviceanalysis,realcausaleffect,provider-coursecompletion or human-readinesssignoff claimed."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 180,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Original finite synthetic fixture only; same-context AI image inspection, no human or enrolled-course review. Existing Windows .NET chart export is optional and outside exam scope. No package installation, external dataset collection or general hostile-input assessment. Separate public-dataset lab remains proposed.",
+    "passed": true,
+    "python": "3.13.14",
+    "numpy": "2.5.2",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "public_files": [
+      {
+        "filename": "analysis.py",
+        "sha256": "7cc7c882834c9a1c084779eca197355df41d0d37516eec003ee85c14ef98f0da",
+        "bytes": 16547
+      },
+      {
+        "filename": "chart.ps1",
+        "sha256": "7dd34fbc1ec1fda71c9f83c9d2ec127a478e101f56a8580c85af1a4f15996449",
+        "bytes": 2770
+      }
+    ],
+    "programs": 1,
+    "checks_per_mode": 112,
+    "execution_runs": 2,
+    "results": [
+      {
+        "command": [
+          "python",
+          "-B",
+          "-Werror",
+          "analysis.py"
+        ],
+        "started_at": "2026-09-30T03:02:34.937317+00:00",
+        "elapsed_seconds": 0.204,
+        "exit_code": 0,
+        "stdout": "{\n  \"source\": \"Original synthetic fixture; no real people or services\",\n  \"created_on\": \"2026-09-29\",\n  \"license\": \"Repository license\",\n  \"raw_sha256\": \"c046bc6af8b9b8fd2d48e704675ffb20783303c2558b0aecbc54fa7cba1a3beb\",\n  \"input_records\": 17,\n  \"ledger\": [\n    {\n      \"record\": 1,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 2,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 3,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 4,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 5,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 6,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 7,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 8,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 9,\n      \"status\": \"duplicate\"\n    },\n    {\n      \"record\": 10,\n      \"status\": \"missing_minutes\"\n    },\n    {\n      \"record\": 11,\n      \"status\": \"nonfinite_minutes\"\n    },\n    {\n      \"record\": 12,\n      \"status\": \"nonfinite_minutes\"\n    },\n    {\n      \"record\": 13,\n      \"status\": \"range\"\n    },\n    {\n      \"record\": 14,\n      \"status\": \"date\"\n    },\n    {\n      \"record\": 15,\n      \"status\": \"numeric_format\"\n    },\n    {\n      \"record\": 16,\n      \"status\": \"conflicting_id\"\n    },\n    {\n      \"record\": 17,\n      \"status\": \"conflicting_id\"\n    }\n  ],\n  \"dispositions\": {\n    \"accepted\": 8,\n    \"duplicate\": 1,\n    \"missing_minutes\": 1,\n    \"nonfinite_minutes\": 2,\n    \"range\": 1,\n    \"date\": 1,\n    \"numeric_format\": 1,\n    \"conflicting_id\": 2\n  },\n  \"groups\": {\n    \"north\": {\n      \"count\": 4,\n      \"mean\": 13.0,\n      \"median\": 13.0\n    },\n    \"south\": {\n      \"count\": 4,\n      \"mean\": 55.0,\n      \"median\": 21.0\n    }\n  },\n  \"count\": 8,\n  \"mean_minutes\": 34.0,\n  \"median_minutes\": 17.0,\n  \"population_sd\": 47.77028364998475,\n  \"sample_sd\": 51.068581339214816,\n  \"flagged_ids\": [\n    \"R08\"\n  ],\n  \"sensitivity_mean_without_flag\": 16.0,\n  \"depth_minutes_r\": 0.6395294793910794\n}\nPCED: 112 checks; temporary files removed\n",
+        "stderr": "",
+        "checks": 112,
+        "optimized": false
+      },
+      {
+        "command": [
+          "python",
+          "-B",
+          "-Werror",
+          "-O",
+          "analysis.py"
+        ],
+        "started_at": "2026-09-30T03:02:35.141438+00:00",
+        "elapsed_seconds": 0.344,
+        "exit_code": 0,
+        "stdout": "{\n  \"source\": \"Original synthetic fixture; no real people or services\",\n  \"created_on\": \"2026-09-29\",\n  \"license\": \"Repository license\",\n  \"raw_sha256\": \"c046bc6af8b9b8fd2d48e704675ffb20783303c2558b0aecbc54fa7cba1a3beb\",\n  \"input_records\": 17,\n  \"ledger\": [\n    {\n      \"record\": 1,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 2,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 3,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 4,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 5,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 6,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 7,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 8,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 9,\n      \"status\": \"duplicate\"\n    },\n    {\n      \"record\": 10,\n      \"status\": \"missing_minutes\"\n    },\n    {\n      \"record\": 11,\n      \"status\": \"nonfinite_minutes\"\n    },\n    {\n      \"record\": 12,\n      \"status\": \"nonfinite_minutes\"\n    },\n    {\n      \"record\": 13,\n      \"status\": \"range\"\n    },\n    {\n      \"record\": 14,\n      \"status\": \"date\"\n    },\n    {\n      \"record\": 15,\n      \"status\": \"numeric_format\"\n    },\n    {\n      \"record\": 16,\n      \"status\": \"conflicting_id\"\n    },\n    {\n      \"record\": 17,\n      \"status\": \"conflicting_id\"\n    }\n  ],\n  \"dispositions\": {\n    \"accepted\": 8,\n    \"duplicate\": 1,\n    \"missing_minutes\": 1,\n    \"nonfinite_minutes\": 2,\n    \"range\": 1,\n    \"date\": 1,\n    \"numeric_format\": 1,\n    \"conflicting_id\": 2\n  },\n  \"groups\": {\n    \"north\": {\n      \"count\": 4,\n      \"mean\": 13.0,\n      \"median\": 13.0\n    },\n    \"south\": {\n      \"count\": 4,\n      \"mean\": 55.0,\n      \"median\": 21.0\n    }\n  },\n  \"count\": 8,\n  \"mean_minutes\": 34.0,\n  \"median_minutes\": 17.0,\n  \"population_sd\": 47.77028364998475,\n  \"sample_sd\": 51.068581339214816,\n  \"flagged_ids\": [\n    \"R08\"\n  ],\n  \"sensitivity_mean_without_flag\": 16.0,\n  \"depth_minutes_r\": 0.6395294793910794\n}\nPCED: 112 checks; temporary files removed\n",
+        "stderr": "",
+        "checks": 112,
+        "optimized": true
+      }
+    ],
+    "computed_report": {
+      "source": "Original synthetic fixture; no real people or services",
+      "created_on": "2026-09-29",
+      "license": "Repository license",
+      "raw_sha256": "c046bc6af8b9b8fd2d48e704675ffb20783303c2558b0aecbc54fa7cba1a3beb",
+      "input_records": 17,
+      "ledger": [
+        {
+          "record": 1,
+          "status": "accepted"
+        },
+        {
+          "record": 2,
+          "status": "accepted"
+        },
+        {
+          "record": 3,
+          "status": "accepted"
+        },
+        {
+          "record": 4,
+          "status": "accepted"
+        },
+        {
+          "record": 5,
+          "status": "accepted"
+        },
+        {
+          "record": 6,
+          "status": "accepted"
+        },
+        {
+          "record": 7,
+          "status": "accepted"
+        },
+        {
+          "record": 8,
+          "status": "accepted"
+        },
+        {
+          "record": 9,
+          "status": "duplicate"
+        },
+        {
+          "record": 10,
+          "status": "missing_minutes"
+        },
+        {
+          "record": 11,
+          "status": "nonfinite_minutes"
+        },
+        {
+          "record": 12,
+          "status": "nonfinite_minutes"
+        },
+        {
+          "record": 13,
+          "status": "range"
+        },
+        {
+          "record": 14,
+          "status": "date"
+        },
+        {
+          "record": 15,
+          "status": "numeric_format"
+        },
+        {
+          "record": 16,
+          "status": "conflicting_id"
+        },
+        {
+          "record": 17,
+          "status": "conflicting_id"
+        }
+      ],
+      "dispositions": {
+        "accepted": 8,
+        "duplicate": 1,
+        "missing_minutes": 1,
+        "nonfinite_minutes": 2,
+        "range": 1,
+        "date": 1,
+        "numeric_format": 1,
+        "conflicting_id": 2
+      },
+      "groups": {
+        "north": {
+          "count": 4,
+          "mean": 13.0,
+          "median": 13.0
+        },
+        "south": {
+          "count": 4,
+          "mean": 55.0,
+          "median": 21.0
+        }
+      },
+      "count": 8,
+      "mean_minutes": 34.0,
+      "median_minutes": 17.0,
+      "population_sd": 47.77028364998475,
+      "sample_sd": 51.068581339214816,
+      "flagged_ids": [
+        "R08"
+      ],
+      "sensitivity_mean_without_flag": 16.0,
+      "depth_minutes_r": 0.6395294793910794
+    },
+    "chart": {
+      "command": [
+        "powershell",
+        "-NoProfile",
+        "-File",
+        "chart.ps1",
+        "-ReportPath",
+        "report.json",
+        "-OutputPath",
+        "chart.png"
+      ],
+      "started_at": "2026-09-30T03:02:35.486237+00:00",
+      "elapsed_seconds": 0.542,
+      "exit_code": 0,
+      "stdout": "Saved 1100x650 PNG; zero-based scale; four values from report JSON.\n",
+      "stderr": "",
+      "artifact_sha256": "004f912b85729e3992e5104e20843ae332a8d4a537b3ab6a1867357aa3165bf5",
+      "artifact_path": "website/assets/pced-synthetic-summary.png",
+      "dimensions": [
+        1100,
+        650
+      ]
+    },
+    "selected_lint": {
+      "command": [
+        "python",
+        "-m",
+        "ruff",
+        "check",
+        "analysis.py",
+        "--select",
+        "E4,E7,E9,F,W,E501",
+        "--line-length",
+        "79",
+        "--output-format",
+        "concise"
+      ],
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": "",
+      "version": "ruff 0.16.4"
+    },
+    "temporary_directory_cleanup": "passed",
+    "learning_catalog_consistency": "passed",
+    "unit_test_elapsed_seconds": 28.785,
+    "strict_site_build_elapsed_seconds": 26.08
+  },
+  "source_reading_boundaries": {
+    "python-3-documentation": "Complete current index read, identifying3.14.7 and listing3.13 separately. Navigation only, not all linked manuals. Selected3.13 references identify3.13.15; existing execution interpreter3.13.14. No inferred exam patch requirement or runtime change.",
+    "pced-30-02-syllabus": "Complete indexed canonical primary syllabus body read including all40 numbered objectives, detailed bullets and full MQC profile (fresh follow-up completed previously missing Block1). Active30-02, July14 2025 update, groups9/13/13/5, weights22.5/32.5/32.5/12.5,40maximum-one-point items and75% cumulative threshold. Manual comparison retained snapshot after direct/monitor Win10060 timeout; no successful automated hash observation or fullPDF read.",
+    "pced-certification-page": "Complete canonical public exam body read through primary web fallback after direct timeout.30-02 activeJuly15 2025;30-01 retiredJuly14 but issued vouchers may still redeem;40questions60minutesplusNDA75%,7years,English/Spanish,TestNow,failed-retake7days,noformalprerequisite/PCEPmathrecommended,USD69exam/86retake/95retakepractice/29practice. Learner redemption instruction conflicts with TestCandidate store. No account, booking, questions, salary/job validation or eligibility determination.",
+    "numpy-user-guide": "Complete short user-guide index read; navigation only, not all linked lessons.",
+    "numpy-quickstart": "Selected intro/basic array attributes through70; array creation, printing/basic arithmetic/aggregation and ufunc introduction86-333; one-dimensional indexing376-407 with multidimensional introduction408-415; complete copies/views651-718 plus partial names-onlyoverview719-769; boolean indexing950-970. Mandelbrot introduction/code through986 incidental incomplete, not executed. Shape/broadcasting/remaining aggregate and linked chapters not audited.",
+    "openedg-python-voucher-store": "Successful84-character application shell only; no usable catalog or product body. Direct registered product pages provide practice evidence instead.",
+    "python-for-data-analysis-web": "Complete1969-character landing read: open web thirdeditionAugust2022, updatedpandas2.0/Python3.10April2023; text not generally reproducible, codeMIT. No chapters, datasets or fullPCED alignment audit. Optional broaderreference;15-25hours is authorbudget.",
+    "kaggle-learn": "Retrieval failed. No current catalog, course interior, availability or duration verified; prior8-12hour suggestion removed.",
+    "cisco-data-analytics-essentials": "Successful41-character application shell only. No current syllabus/access/runtime confirmed; prior30hour estimate removed.",
+    "pced-testing-policies": "Indexed primary introduction/delivery plus complete TestingEnvironment/TechnicalRequirements/CodeConduct/ProhibitedBehaviors/monitoring/penalties/footer read. Possible intervening registration/retake portions not completely verified; not a full-policy audit. UpdatedNov18 2025/defaultproctored; genericfooter7dayspassed/failed differs from examFAQ specificfailed7dayrule. No device/system test or account.",
+    "pced-pd101-vendor": "Direct/web retrieval failed; partial indexed public body read through prerequisite/association context. Fiveweeks/freeCore49USDPro/fivemodules40+lessons appear, but featurebadge/strikethrough rendering is not a sound basis to call premiumfeaturesfree. CompleteEdube/store bodies supply fuller observeddetails. No enrolledinterior or historicalpageattribution.",
+    "pced-pd101-edube": "Complete4094-character public body read. Beginner/self-contained/noformalprerequisite,English,5weeksabout1hour/day,PCED association,PD102comingsoon. Core lessons andmodule tests free;Full/Pro49USD interactivequizzes/labs/projects/diploma;40+hands-onlabsproviderclaim. No enrolledlessons or assessedcompletion.",
+    "pced-practice-kit": "Complete public indexed body and matching fresh3475-character response read. USD29/two practice tests/up-to10launcheseach/12monthvoucher/TestCandidatePractice; no officialexam included. No purchasedinterior, live entitlement or examquestions. Difference from bundle5launches and credentialFAQ Learner remains explicit.",
+    "pced-retake-practice-bundle": "Complete public indexedbody and matching4092-character response read. USD95exam+failedretake+practice,12monthvoucher,up-toFIVElauncheseach/TestCandidatePractice. Distinct from standalone10launches; entitlement not transferred acrossproducts. No cart, purchase, account or redemption.",
+    "pced-pd101-pro": "Complete3462-character public productbody read:USD49,minimum12monthaccessafterredemption,12monthvoucher,5weeks1hour/day,fivemodules40+lessons/labs/quizzes/diploma;20%examdiscountclaim not eligibility-tested. Static cart boilerplate did not represent an actual cart action. No purchase or enrolledinterior.",
+    "eu-data-protection-principles": "Complete indexed primary Answer/example/references body read after directretrievalfailure. Supports purpose/lawfulness/transparency/minimization/accuracy/retention/security overview. Not completeGDPR, case-specific applicability or legaladvice.",
+    "hhs-hipaa-covered-entities": "HTTP403; only short indexed primary excerpt read. Fullcovered-entity/business-associate body and actuallegalapplicability unreviewed.",
+    "california-ccpa-overview": "Directretrievalfailure; only indexed primary introduction (updatedAugust28 2026) read concerning rights and CPRAamendment context. Full law, exceptions/thresholds and applicability unreviewed.",
+    "python313-statistics": "Selected introduction/type/mixedtype/NaN discussion45-81; complete mean134-160,median267-284,pstdev377-381,pvariance382-420,stdev421-425,variance426-462. fmean/quantiles incidentalintroonly. Not fullmodule. Explicit NvsN-1/empty/singleton policies executed; unbiasedvariance is not unbiasedSD or representative-sample proof.",
+    "python313-math": "Complete ceil239-242,fabs243-244,floor245-248,isclose321-344,isfinite345-348,isinf/isnan349-355,sqrt437-438 read. fma/ldexp/dist introductions incidentalonly. Restunread. Negativeceil/floor and finite values exercised.",
+    "python313-random": "Selected generator/state/security introduction49-67,complete sample185-206,Randomclassintro287-309 (subclasslastentryincomplete). Not fullmodule. Separate seededRandom reproducibility and unchangedglobalstate verified on existingruntime; no cross-versionsequence promise or cryptographic use.",
+    "python313-collections": "Complete substantiveCounter209-349 read includingmissingzero,insertionorder,most_common,subtract,total,update,comparisons/multiset/arbitrarycounts; SeeAlso through359onlypartial. Restaggregateunread. Originaldispositionfrequencytable reconciles17records.",
+    "python313-datetime": "Complete strptime772-793 including3.13yearless-datewarning andstrftime1096-1099;formatintro1100-1103partial. Restaggregateunread. Full-year calendar parsing plus exactformatround-trip rejectsnoncanonicaldate.",
+    "python313-ospath": "Complete exists112-120 andlexists121-125 read. Restaggregateunread. Existence is not successfulopen guarantee; originalmissingfileerror checked.",
+    "python313-csv": "Introduction/module reader/writer/registration/DictReader/DictWriter through212 read, with dialectintroductionpartial. Explicitnewline/stringconversion/None/header/width contracts. Remainingconstants/objectmethods/examples not fullyaudited. OriginalquotedmultilineCSV roundtrip,restrictedmanualsplitcounterexample andstrictmalformedinput executed.",
+    "python313-builtins": "Complete selected bool181-189 andround1299-1318 entries read. Restfreshaggregate not audited in thisPCEDreview; earlierPCPP sharednotes retain their own different sections. Localoriginalchecks demonstrate conversions/type distinction and namedaggregationoperations.",
+    "python313-types": "Complete mutablesequence/list/tuple sections808-972,selectedisalpha1321-1332/isdigit1358-1368 descriptions/examples,completestrip1741-1761. Swapcaseintroincidental1762-1768 only. Remaininglargeaggregate includingfullsets/dicts not freshlyaudited; exactoriginaloperations executed rather than claimingallchaptersread.",
+    "python313-control-flow": "Complete if/for/range/break/continue/loopelse56-230 andpassintro231-235;complete definingfunctions391-476/defaultarguments480-532 andkeywordrules533-568,variadicintro569-575only. Restaggregateunread. Scope/default/None/flow andisolatedglobalrebind exercised.",
+    "dotnet-chart-saveimage": "Complete public SaveImage overloaddocumentation read in primary web andfresh3887-character body. ExistingWindowsFormsDataVisualization export used for1100x650PNG; relatedenumprimarypage also read but not separatelyregistered. Not generalchartframeworkaudit or cross-platformclaim. Finalimage AI-inspected; human/accessibility review pending.",
+    "numpy-array": "Complete generated public reference body read, including parameters,notes andexamples: dtype,shape and copy=True/None/False/objectshallow boundaries. Linkedmanuals not therebyread. ExistingNumPy2.5.2 used fororiginalfinitechecks; no copiedexamples or examversionrequirement.",
+    "numpy-mean": "Complete generated public reference body read, including parameters,notes andexamples: axis,dtype,float32precision andemptybehavior. Linkedmanuals not therebyread. ExistingNumPy2.5.2 used fororiginalfinitechecks; no copiedexamples or examversionrequirement.",
+    "numpy-median": "Complete generated public reference body read, including parameters,notes andexamples: axis andoverwrite_input mutation. Linkedmanuals not therebyread. ExistingNumPy2.5.2 used fororiginalfinitechecks; no copiedexamples or examversionrequirement.",
+    "numpy-std": "Complete generated public reference body read, including parameters,notes andexamples: N-ddof,varianceversusSDbias andprecision. Linkedmanuals not therebyread. ExistingNumPy2.5.2 used fororiginalfinitechecks; no copiedexamples or examversionrequirement.",
+    "numpy-sum": "Complete generated public reference body read, including parameters,notes andexamples: axis,dtype,integeroverflow andemptyzero. Linkedmanuals not therebyread. ExistingNumPy2.5.2 used fororiginalfinitechecks; no copiedexamples or examversionrequirement.",
+    "numpy-arange": "Complete generated public reference body read, including parameters,notes andexamples: exclusiveendpoint andfloatingstepinstability. Linkedmanuals not therebyread. ExistingNumPy2.5.2 used fororiginalfinitechecks; no copiedexamples or examversionrequirement.",
+    "numpy-linspace": "Complete generated public reference body read, including parameters,notes andexamples: samplecount/defaultinclusiveendpoint. Linkedmanuals not therebyread. ExistingNumPy2.5.2 used fororiginalfinitechecks; no copiedexamples or examversionrequirement.",
+    "numpy-corrcoef": "Complete generated public reference body read, including parameters,notes andexamples: rowvar orientation,rounding/clipping andlinearassociation. Linkedmanuals not therebyread. ExistingNumPy2.5.2 used fororiginalfinitechecks; no copiedexamples or examversionrequirement.",
+    "numpy-sort": "Complete generated public reference body read, including parameters,notes andexamples: newarrayversusinplace/defaultlastaxis and2.5descending. Linkedmanuals not therebyread. ExistingNumPy2.5.2 used fororiginalfinitechecks; no copiedexamples or examversionrequirement.",
+    "numpy-unique": "Complete generated public reference body read, including parameters,notes andexamples: sorteduniques/counts/equal_nan/order. Linkedmanuals not therebyread. ExistingNumPy2.5.2 used fororiginalfinitechecks; no copiedexamples or examversionrequirement.",
+    "numpy-isfinite": "Complete generated public reference body read, including parameters,notes andexamples: finitebooleanmask anduninitializedoutwherefalse boundary. Linkedmanuals not therebyread. ExistingNumPy2.5.2 used fororiginalfinitechecks; no copiedexamples or examversionrequirement."
+  },
+  "public_examples": [
+    {
+      "filename": "analysis.py",
+      "sha256": "7cc7c882834c9a1c084779eca197355df41d0d37516eec003ee85c14ef98f0da",
+      "bytes": 16547,
+      "code": "\"\"\"Original PCED fixture with explicit cleaning and numerical checks.\"\"\"\n\nimport csv\nimport hashlib\nimport io\nimport json\nimport math\nimport os\nimport operator\nimport random\nimport statistics as stats\nimport tempfile\nfrom collections import Counter\nfrom datetime import datetime\nfrom pathlib import Path\n\nimport numpy as np\n\n\nclass Checks:\n    \"\"\"Keep checks active under python -O as well as normal execution.\"\"\"\n\n    def __init__(self):\n        self.count = 0\n\n    def equal(self, actual, expected):\n        if actual != expected:\n            raise AssertionError((actual, expected))\n        self.count += 1\n\n    def close(self, actual, expected):\n        if not math.isclose(actual, expected, rel_tol=1e-12, abs_tol=1e-12):\n            raise AssertionError((actual, expected))\n        self.count += 1\n\n    def raises(self, error, operation):\n        try:\n            operation()\n        except error:\n            self.count += 1\n        else:\n            raise AssertionError(f\"Expected {error.__name__}\")\n\n\ndef language(c):\n    \"\"\"Exercise the explicitly named beginner operations on original values.\"\"\"\n    c.equal((type(4).__name__, type(4.0).__name__), (\"int\", \"float\"))\n    c.equal((isinstance(True, int), type(True) is int), (True, False))\n    c.equal((7 + 3, 7 - 3, 7 / 2, 7 // 2, 7 % 2), (10, 4, 3.5, 3, 1))\n    c.equal(\"ab\" * 2 + \"c\", \"ababc\")\n    values = [7, 2, 7]\n    values.append(4)\n    values.insert(1, 9)\n    c.equal(values.pop(), 4)\n    values.remove(7)\n    c.equal(values, [9, 2, 7])\n    c.equal(values.sort(), None)\n    c.equal(values, [2, 7, 9])\n    values.reverse()\n    c.equal(\n        (values[0], values[1:], values.count(7), values.index(2)),\n        (9, [7, 2], 1, 2),\n    )\n    c.equal([x * 2 for x in values if x > 2], [18, 14])\n    c.raises(ValueError, lambda: values.remove(88))\n    c.raises(IndexError, lambda: values[99])\n    pair = (\"north\", 4)\n    c.equal(pair[1], 4)\n    c.raises(TypeError, lambda: operator.setitem(pair, 0, \"south\"))\n    # An immutable tuple can contain a mutable object.\n    nested = ([1],)\n    nested[0].append(2)\n    c.equal(nested, ([1, 2],))\n    unique = {1, 2, 2}\n    unique.add(3)\n    unique.remove(1)\n    c.equal(\n        (\n            unique.union({4}),\n            unique.intersection({3, 4}),\n            unique.difference({3}),\n        ),\n        ({2, 3, 4}, {3}, {2}),\n    )\n    c.equal((3 in unique, len(unique)), (True, 2))\n    c.raises(KeyError, lambda: unique.remove(99))\n    lookup = {\"north\": 2, \"south\": 3}\n    lookup[\"north\"] += 1\n    del lookup[\"south\"]\n    c.equal(list(lookup.items()), [(\"north\", 3)])\n    c.equal(lookup.get(\"missing\", 0), 0)\n    word = \"Report.csv\"\n    c.equal(\n        (word[0], word[1:4], \"\".join(ch for ch in word)), (\"R\", \"epo\", word)\n    )\n    c.equal(\n        (\n            word.startswith(\"Rep\"),\n            word.endswith(\"csv\"),\n            word.find(\".\"),\n            word.find(\"!\"),\n        ),\n        (True, True, 6, -1),\n    )\n    c.equal(\n        (\"nORTH\".capitalize(), \"12\".isdigit(), \"North\".isalpha()),\n        (\"North\", True, True),\n    )\n    c.equal(\"  north-zone \".strip().replace(\"-\", \" \").title(), \"North Zone\")\n    c.equal((\"North\".upper(), \"North\".lower()), (\"NORTH\", \"north\"))\n    c.equal(\"|\".join(\"a,b\".split(\",\")), \"a|b\")\n    c.equal(\n        (int(\"12\"), float(\"1.5\"), str(12), bool(\"False\")),\n        (12, 1.5, \"12\", True),\n    )\n    c.raises(ValueError, lambda: int(\"1.5\"))\n    c.equal(\"\\u00b2\".isdigit(), True)\n    c.raises(ValueError, lambda: int(\"\\u00b2\"))\n    c.equal((round(2.5), round(3.5)), (2, 4))\n    c.equal(f\"{12.345:.2f}\", \"12.35\")\n    c.raises(TypeError, lambda: 1 + \"2\")\n\n    def amount(value, multiplier=2):\n        return value * multiplier\n\n    def placeholder():\n        pass\n\n    label = \"outer\"\n\n    def shadow():\n        label = \"local\"\n        return label\n\n    c.equal((amount(4), amount(value=4, multiplier=3)), (8, 12))\n    c.equal(placeholder(), None)\n    c.equal((shadow(), label), (\"local\", \"outer\"))\n    # A separate namespace makes global rebinding visible without app state.\n    namespace = {\"counter\": 0}\n    exec(\"def increment():\\n global counter\\n counter += 1\", namespace)\n    namespace[\"increment\"]()\n    c.equal(namespace[\"counter\"], 1)\n    trace = []\n    for value in [0, 2, 4, 6]:\n        if value == 0:\n            continue\n        elif value > 4:\n            break\n        else:\n            if value % 2 == 0:\n                trace.append(value)\n    else:\n        trace.append(\"exhausted\")\n    c.equal(trace, [2, 4])\n    remaining = 2\n    while remaining:\n        remaining -= 1\n    else:\n        trace.append(\"finished\")\n    c.equal(trace, [2, 4, \"finished\"])\n    c.equal(not (3 < 2) and 1 <= 2 < 3 or False, True)\n    c.equal((math.sqrt(81), math.ceil(-1.2), math.floor(-1.2)), (9, -1, -2))\n    global_state = random.getstate()\n    sample = random.Random(29).sample(range(8), 3)\n    c.equal(sample, random.Random(29).sample(range(8), 3))\n    c.equal((len(sample), len(set(sample))), (3, 3))\n    c.equal(random.getstate(), global_state)\n    c.raises(ValueError, lambda: random.Random(29).sample([1], 2))\n    a = np.array([[1, 3], [5, 7]], dtype=float)\n    c.equal((a.shape, a.ndim, a.size), ((2, 2), 2, 4))\n    c.equal(np.mean(a, axis=0).tolist(), [3, 5])\n    c.equal(np.sum(a, axis=1).tolist(), [4, 12])\n    view = a[:, 0]\n    view[0] = 9\n    c.equal(a[0, 0], 9)\n    independent = a.copy()\n    independent[0, 0] = 99\n    c.equal(a[0, 0], 9)\n    c.equal(np.arange(1, 8, 2).tolist(), [1, 3, 5, 7])\n    c.equal(np.linspace(0, 1, 5).tolist(), [0, 0.25, 0.5, 0.75, 1])\n    c.equal(np.sort([3, 1, 2]).tolist(), [1, 2, 3])\n    c.equal(np.unique([3, 1, 3], return_counts=True)[1].tolist(), [1, 2])\n    c.equal(\n        np.isfinite([1, float(\"nan\"), float(\"inf\")]).tolist(),\n        [True, False, False],\n    )\n    c.equal(np.sum([]), 0)\n    c.raises(stats.StatisticsError, lambda: stats.mean([]))\n    c.raises(stats.StatisticsError, lambda: stats.stdev([3]))\n    c.equal(stats.pstdev([3]), 0)\n    c.close(float(np.corrcoef([-2, -1, 0, 1, 2], [4, 1, 0, 1, 4])[0, 1]), 0)\n\n\nHEADER = [\"id\", \"date\", \"region\", \"minutes\", \"depth\", \"note\"]\nDURATIONS = [10, 12, 14, 16, 18, 20, 22, 160]\n\n\ndef fixture():\n    \"\"\"Build original observations and deliberate data-quality failures.\"\"\"\n    rows = [\n        [\n            f\"R{i:02}\",\n            f\"2026-09-{i:02}\",\n            \" NORTH \" if i <= 4 else \"south\",\n            str(value),\n            str(i),\n            'quoted, \"note\"\\nsecond line' if i == 1 else \"original\",\n        ]\n        for i, value in enumerate(DURATIONS, 1)\n    ]\n    rows += [rows[1].copy()]  # Identical duplicate; retain first record.\n    for ident, value, date in [\n        (\"MISSING\", \"\", \"2026-09-09\"),\n        (\"NAN\", \"nan\", \"2026-09-09\"),\n        (\"INF\", \"inf\", \"2026-09-09\"),\n        (\"NEG\", \"-1\", \"2026-09-09\"),\n        (\"DATE\", \"30\", \"2026-02-30\"),\n        (\"TEXT\", \"soon\", \"2026-09-09\"),\n        (\"CONFLICT\", \"30\", \"2026-09-09\"),\n        (\"CONFLICT\", \"31\", \"2026-09-09\"),\n    ]:\n        rows.append([ident, date, \"north\", value, \"9\", \"original\"])\n    return rows\n\n\ndef clean(rows):\n    \"\"\"One final disposition per record; reject all conflicting valid IDs.\"\"\"\n    staged, ledger, by_id = [], [], {}\n    for number, fields in enumerate(rows, 1):\n        status, row = \"accepted\", None\n        try:\n            if len(fields) != len(HEADER):\n                raise ValueError(\"width\")\n            ident, date, region, minutes, depth, note = fields\n            region = region.strip().lower()\n            if not ident.strip() or region not in {\"north\", \"south\"}:\n                raise ValueError(\"category_or_id\")\n            if not minutes.strip():\n                raise ValueError(\"missing_minutes\")\n            try:\n                minutes = float(minutes)\n                depth = int(depth)\n            except ValueError:\n                raise ValueError(\"numeric_format\") from None\n            if not math.isfinite(minutes):\n                raise ValueError(\"nonfinite_minutes\")\n            if minutes < 0 or depth < 0:\n                raise ValueError(\"range\")\n            try:\n                day = datetime.strptime(date, \"%Y-%m-%d\")\n                if day.strftime(\"%Y-%m-%d\") != date:\n                    raise ValueError\n            except ValueError:\n                raise ValueError(\"date\") from None\n            row = (ident.strip(), date, region, minutes, depth, note)\n            by_id.setdefault(row[0], set()).add(row)\n        except ValueError as error:\n            status = str(error)\n        staged.append(row)\n        ledger.append({\"record\": number, \"status\": status})\n    kept, seen = [], set()\n    for row, entry in zip(staged, ledger):\n        if row is None:\n            continue\n        if len(by_id[row[0]]) > 1:\n            entry[\"status\"] = \"conflicting_id\"\n        elif row in seen:\n            entry[\"status\"] = \"duplicate\"\n        else:\n            seen.add(row)\n            kept.append(dict(zip(HEADER, row)))\n    return kept, ledger\n\n\ndef scale(values):\n    \"\"\"Empty stays empty; constant finite columns map to zero by policy.\"\"\"\n    if not values:\n        return []\n    if not all(math.isfinite(x) for x in values):\n        raise ValueError(\"finite values required\")\n    low, high = min(values), max(values)\n    return [0.0 if high == low else (x - low) / (high - low) for x in values]\n\n\ndef correlation(x, y):\n    \"\"\"Return None when paired finite data cannot define Pearson r.\"\"\"\n    if len(x) != len(y):\n        raise ValueError(\"paired lengths differ\")\n    if len(x) < 2 or not all(math.isfinite(v) for v in [*x, *y]):\n        return None\n    if min(x) == max(x) or min(y) == max(y):\n        return None\n    return float(np.corrcoef(x, y)[0, 1])\n\n\ndef pipeline(c):\n    \"\"\"Use disposable files; return the reproducible report for inspection.\"\"\"\n    with tempfile.TemporaryDirectory(\n        prefix=\"pced-\", dir=Path(__file__).parent\n    ) as tmp:\n        folder = Path(tmp).resolve()\n        c.equal(folder.parent, Path(__file__).resolve().parent)\n        path = folder / \"raw.csv\"\n        with open(path, \"w\", encoding=\"utf-8\", newline=\"\") as stream:\n            writer = csv.writer(stream)\n            writer.writerow(HEADER)\n            writer.writerows(fixture())\n        digest = hashlib.sha256(path.read_bytes()).hexdigest()\n        c.equal(os.path.exists(path), True)\n        with open(path, encoding=\"utf-8\", newline=\"\") as stream:\n            reader = csv.reader(stream, strict=True)\n            c.equal(next(reader), HEADER)\n            raw = list(reader)\n        c.equal(len(raw), 17)\n        c.equal(raw[0][-1], 'quoted, \"note\"\\nsecond line')\n        c.equal(\" a,b \\n\".strip().split(\",\"), [\"a\", \"b\"])\n        quoted = 'a,\"b,c\"\\n'\n        c.equal(len(quoted.strip().split(\",\")), 3)\n        c.equal(next(csv.reader(io.StringIO(quoted))), [\"a\", \"b,c\"])\n        c.raises(\n            csv.Error,\n            lambda: list(csv.reader(io.StringIO('\"bad'), strict=True)),\n        )\n        c.raises(FileNotFoundError, lambda: (folder / \"absent\").read_text())\n        rows, ledger = clean(raw)\n        counts = dict(Counter(item[\"status\"] for item in ledger))\n        c.equal(\n            counts,\n            {\n                \"accepted\": 8,\n                \"duplicate\": 1,\n                \"missing_minutes\": 1,\n                \"nonfinite_minutes\": 2,\n                \"range\": 1,\n                \"date\": 1,\n                \"numeric_format\": 1,\n                \"conflicting_id\": 2,\n            },\n        )\n        c.equal(sum(counts.values()), len(raw))\n        c.equal(\n            sorted(row[\"id\"] for row in clean(list(reversed(raw)))[0]),\n            sorted(row[\"id\"] for row in rows),\n        )\n        c.equal(clean([[\"short\"]])[1][0][\"status\"], \"width\")\n        c.equal(clean([]), ([], []))\n        invalid = raw[0].copy()\n        invalid[2] = \"west\"\n        c.equal(clean([invalid])[1][0][\"status\"], \"category_or_id\")\n        invalid = raw[0].copy()\n        invalid[1] = \"2026-9-01\"\n        c.equal(clean([invalid])[1][0][\"status\"], \"date\")\n        values = [row[\"minutes\"] for row in rows]\n        c.equal(values, DURATIONS)\n        a = np.array(values, dtype=np.float64)\n        c.close(stats.mean(values), 34)\n        c.close(stats.median(values), 17)\n        c.close(float(np.mean(a)), stats.mean(values))\n        c.close(float(np.median(a)), stats.median(values))\n        c.close(float(np.sum(a)), sum(values))\n        c.close(float(np.std(a)), stats.pstdev(values))\n        c.close(float(np.std(a, ddof=1)), stats.stdev(values))\n        c.close(stats.variance(values), stats.pvariance(values) * 8 / 7)\n        c.equal(\n            (len(values), min(values), max(values), sum(values)),\n            (8, 10, 160, 272),\n        )\n        c.equal(scale([]), [])\n        c.equal(scale([4, 4]), [0, 0])\n        c.equal((scale(values)[0], scale(values)[-1]), (0, 1))\n        c.raises(ValueError, lambda: scale([float(\"nan\")]))\n        groups = {}\n        for row in rows:\n            groups.setdefault(row[\"region\"], []).append(row[\"minutes\"])\n        summary = {\n            key: {\n                \"count\": len(items),\n                \"mean\": stats.mean(items),\n                \"median\": stats.median(items),\n            }\n            for key, items in groups.items()\n        }\n        c.equal(\n            summary,\n            {\n                \"north\": {\"count\": 4, \"mean\": 13, \"median\": 13},\n                \"south\": {\"count\": 4, \"mean\": 55, \"median\": 21},\n            },\n        )\n        c.equal(\n            [\n                r[\"id\"]\n                for r in rows\n                if r[\"region\"] == \"south\" and r[\"minutes\"] < 21\n            ],\n            [\"R05\", \"R06\"],\n        )\n        empty = [x for x in values if x < 0]\n        c.equal(stats.mean(empty) if empty else None, None)\n        c.equal(list(filter(lambda x: x < 15, values)), [10, 12, 14])\n        c.equal(sorted(values, reverse=True)[0], 160)\n        c.equal(len(set(r[\"region\"] for r in rows)), 2)\n        candidate_mask = np.abs(a - np.mean(a)) > 2 * np.std(a)\n        flagged = [r[\"id\"] for r, flag in zip(rows, candidate_mask) if flag]\n        c.equal(flagged, [\"R08\"])\n        c.equal(a[candidate_mask].tolist(), [160])\n        c.close(float(np.mean(a[~candidate_mask])), 16)\n        c.equal(len(rows), 8)  # Flagging has not removed the observation.\n        c.equal(correlation([1, 1], [2, 3]), None)\n        c.equal(correlation([], []), None)\n        c.equal(correlation([1, float(\"nan\")], [2, 3]), None)\n        c.raises(ValueError, lambda: correlation([1], [2, 3]))\n        c.close(correlation([1, 2, 3], [2, 4, 6]), 1)\n        c.close(correlation([1, 2, 3], [6, 4, 2]), -1)\n        report = {\n            \"source\": \"Original synthetic fixture; no real people or services\",\n            \"created_on\": \"2026-09-29\",\n            \"license\": \"Repository license\",\n            \"raw_sha256\": digest,\n            \"input_records\": len(raw),\n            \"ledger\": ledger,\n            \"dispositions\": counts,\n            \"groups\": summary,\n            \"count\": len(values),\n            \"mean_minutes\": stats.mean(values),\n            \"median_minutes\": stats.median(values),\n            \"population_sd\": stats.pstdev(values),\n            \"sample_sd\": stats.stdev(values),\n            \"flagged_ids\": flagged,\n            \"sensitivity_mean_without_flag\": float(\n                np.mean(a[~candidate_mask])\n            ),\n            \"depth_minutes_r\": correlation([r[\"depth\"] for r in rows], values),\n        }\n        output = folder / \"report.json\"\n        with open(output, \"w\", encoding=\"utf-8\") as stream:\n            stream.write(json.dumps(report, indent=2, allow_nan=False) + \"\\n\")\n        with open(output, encoding=\"utf-8\") as stream:\n            c.equal(json.loads(stream.read()), report)\n        with open(output, encoding=\"utf-8\") as stream:\n            c.equal(len(stream.readlines()) > 1, True)\n        cleaned = folder / \"clean.csv\"\n        with open(cleaned, \"w\", encoding=\"utf-8\", newline=\"\") as stream:\n            writer = csv.DictWriter(stream, fieldnames=HEADER)\n            writer.writeheader()\n            writer.writerows(rows)\n        with open(cleaned, encoding=\"utf-8\", newline=\"\") as stream:\n            c.equal(list(csv.DictReader(stream))[0][\"note\"], rows[0][\"note\"])\n        c.equal(hashlib.sha256(path.read_bytes()).hexdigest(), digest)\n    c.equal(folder.exists(), False)\n    return report\n\n\nif __name__ == \"__main__\":\n    checks = Checks()\n    language(checks)\n    result = pipeline(checks)\n    print(json.dumps(result, indent=2, allow_nan=False))\n    print(f\"PCED: {checks.count} checks; temporary files removed\")\n"
+    },
+    {
+      "filename": "chart.ps1",
+      "sha256": "7dd34fbc1ec1fda71c9f83c9d2ec127a478e101f56a8580c85af1a4f15996449",
+      "bytes": 2770,
+      "code": "param([Parameter(Mandatory=$true)][string]$ReportPath,\n      [Parameter(Mandatory=$true)][string]$OutputPath)\n$ErrorActionPreference = 'Stop'\nAdd-Type -AssemblyName System.Windows.Forms.DataVisualization\n$report = Get-Content -LiteralPath $ReportPath -Raw | ConvertFrom-Json\n$chart = New-Object System.Windows.Forms.DataVisualization.Charting.Chart\ntry {\n    $chart.Width = 1100\n    $chart.Height = 650\n    $chart.BackColor = [System.Drawing.Color]::White\n    $chart.Font = New-Object System.Drawing.Font('Segoe UI', 12)\n    $area = New-Object System.Windows.Forms.DataVisualization.Charting.ChartArea\n    $area.AxisY.Minimum = 0\n    $area.AxisY.Maximum = 60\n    $area.AxisY.Interval = 10\n    foreach ($tick in 0,10,20,30,40,50,60) {\n        [void]$area.AxisY.CustomLabels.Add(($tick - 0.5), ($tick + 0.5), [string]$tick)\n    }\n    $area.AxisY.Title = 'Minutes'\n    $area.AxisY.LabelStyle.Format = '0;0'\n    $area.AxisY.LabelStyle.Font = New-Object System.Drawing.Font('Segoe UI', 12)\n    $area.AxisX.LabelStyle.Font = New-Object System.Drawing.Font('Segoe UI', 12)\n    $area.AxisY.TitleFont = New-Object System.Drawing.Font('Segoe UI', 12)\n    $area.AxisX.TitleFont = New-Object System.Drawing.Font('Segoe UI', 12)\n    $area.AxisX.Title = 'Synthetic region (4 accepted records each)'\n    $area.AxisX.MajorGrid.Enabled = $false\n    $area.AxisY.MajorGrid.LineColor = [System.Drawing.Color]::LightGray\n    $chart.ChartAreas.Add($area)\n    $legend = New-Object System.Windows.Forms.DataVisualization.Charting.Legend\n    $legend.Docking = 'Bottom'\n    $legend.Font = New-Object System.Drawing.Font('Segoe UI', 12)\n    $chart.Legends.Add($legend)\n    foreach ($metric in @('mean', 'median')) {\n        $series = New-Object System.Windows.Forms.DataVisualization.Charting.Series($metric)\n        $series.ChartType = 'Column'\n        $series.IsValueShownAsLabel = $true\n        $series.Color = if ($metric -eq 'mean') { [System.Drawing.Color]::SteelBlue } else { [System.Drawing.Color]::DarkOrange }\n        foreach ($region in @('north', 'south')) {\n            $value = [double]$report.groups.$region.$metric\n            [void]$series.Points.AddXY($region, $value)\n        }\n        $chart.Series.Add($series)\n    }\n    [void]$chart.Titles.Add('A valid extreme value raises the South mean')\n    $chart.Titles[0].Font = New-Object System.Drawing.Font('Segoe UI', 17)\n    $subtitle = $chart.Titles.Add('Original synthetic data: 17 inputs, 8 accepted; 160-minute record retained')\n    $subtitle.Font = New-Object System.Drawing.Font('Segoe UI', 11)\n    $chart.SaveImage($OutputPath, [System.Windows.Forms.DataVisualization.Charting.ChartImageFormat]::Png)\n    Write-Output 'Saved 1100x650 PNG; zero-based scale; four values from report JSON.'\n} finally {\n    $chart.Dispose()\n}\n"
+    }
+  ],
+  "local_execution_evidence": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "-Werror",
+        "analysis.py"
+      ],
+      "started_at": "2026-09-30T03:02:34.937317+00:00",
+      "elapsed_seconds": 0.204,
+      "exit_code": 0,
+      "stdout": "{\n  \"source\": \"Original synthetic fixture; no real people or services\",\n  \"created_on\": \"2026-09-29\",\n  \"license\": \"Repository license\",\n  \"raw_sha256\": \"c046bc6af8b9b8fd2d48e704675ffb20783303c2558b0aecbc54fa7cba1a3beb\",\n  \"input_records\": 17,\n  \"ledger\": [\n    {\n      \"record\": 1,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 2,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 3,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 4,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 5,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 6,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 7,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 8,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 9,\n      \"status\": \"duplicate\"\n    },\n    {\n      \"record\": 10,\n      \"status\": \"missing_minutes\"\n    },\n    {\n      \"record\": 11,\n      \"status\": \"nonfinite_minutes\"\n    },\n    {\n      \"record\": 12,\n      \"status\": \"nonfinite_minutes\"\n    },\n    {\n      \"record\": 13,\n      \"status\": \"range\"\n    },\n    {\n      \"record\": 14,\n      \"status\": \"date\"\n    },\n    {\n      \"record\": 15,\n      \"status\": \"numeric_format\"\n    },\n    {\n      \"record\": 16,\n      \"status\": \"conflicting_id\"\n    },\n    {\n      \"record\": 17,\n      \"status\": \"conflicting_id\"\n    }\n  ],\n  \"dispositions\": {\n    \"accepted\": 8,\n    \"duplicate\": 1,\n    \"missing_minutes\": 1,\n    \"nonfinite_minutes\": 2,\n    \"range\": 1,\n    \"date\": 1,\n    \"numeric_format\": 1,\n    \"conflicting_id\": 2\n  },\n  \"groups\": {\n    \"north\": {\n      \"count\": 4,\n      \"mean\": 13.0,\n      \"median\": 13.0\n    },\n    \"south\": {\n      \"count\": 4,\n      \"mean\": 55.0,\n      \"median\": 21.0\n    }\n  },\n  \"count\": 8,\n  \"mean_minutes\": 34.0,\n  \"median_minutes\": 17.0,\n  \"population_sd\": 47.77028364998475,\n  \"sample_sd\": 51.068581339214816,\n  \"flagged_ids\": [\n    \"R08\"\n  ],\n  \"sensitivity_mean_without_flag\": 16.0,\n  \"depth_minutes_r\": 0.6395294793910794\n}\nPCED: 112 checks; temporary files removed\n",
+      "stderr": "",
+      "checks": 112,
+      "optimized": false
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-Werror",
+        "-O",
+        "analysis.py"
+      ],
+      "started_at": "2026-09-30T03:02:35.141438+00:00",
+      "elapsed_seconds": 0.344,
+      "exit_code": 0,
+      "stdout": "{\n  \"source\": \"Original synthetic fixture; no real people or services\",\n  \"created_on\": \"2026-09-29\",\n  \"license\": \"Repository license\",\n  \"raw_sha256\": \"c046bc6af8b9b8fd2d48e704675ffb20783303c2558b0aecbc54fa7cba1a3beb\",\n  \"input_records\": 17,\n  \"ledger\": [\n    {\n      \"record\": 1,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 2,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 3,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 4,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 5,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 6,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 7,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 8,\n      \"status\": \"accepted\"\n    },\n    {\n      \"record\": 9,\n      \"status\": \"duplicate\"\n    },\n    {\n      \"record\": 10,\n      \"status\": \"missing_minutes\"\n    },\n    {\n      \"record\": 11,\n      \"status\": \"nonfinite_minutes\"\n    },\n    {\n      \"record\": 12,\n      \"status\": \"nonfinite_minutes\"\n    },\n    {\n      \"record\": 13,\n      \"status\": \"range\"\n    },\n    {\n      \"record\": 14,\n      \"status\": \"date\"\n    },\n    {\n      \"record\": 15,\n      \"status\": \"numeric_format\"\n    },\n    {\n      \"record\": 16,\n      \"status\": \"conflicting_id\"\n    },\n    {\n      \"record\": 17,\n      \"status\": \"conflicting_id\"\n    }\n  ],\n  \"dispositions\": {\n    \"accepted\": 8,\n    \"duplicate\": 1,\n    \"missing_minutes\": 1,\n    \"nonfinite_minutes\": 2,\n    \"range\": 1,\n    \"date\": 1,\n    \"numeric_format\": 1,\n    \"conflicting_id\": 2\n  },\n  \"groups\": {\n    \"north\": {\n      \"count\": 4,\n      \"mean\": 13.0,\n      \"median\": 13.0\n    },\n    \"south\": {\n      \"count\": 4,\n      \"mean\": 55.0,\n      \"median\": 21.0\n    }\n  },\n  \"count\": 8,\n  \"mean_minutes\": 34.0,\n  \"median_minutes\": 17.0,\n  \"population_sd\": 47.77028364998475,\n  \"sample_sd\": 51.068581339214816,\n  \"flagged_ids\": [\n    \"R08\"\n  ],\n  \"sensitivity_mean_without_flag\": 16.0,\n  \"depth_minutes_r\": 0.6395294793910794\n}\nPCED: 112 checks; temporary files removed\n",
+      "stderr": "",
+      "checks": 112,
+      "optimized": true
+    }
+  ],
+  "computed_report": {
+    "source": "Original synthetic fixture; no real people or services",
+    "created_on": "2026-09-29",
+    "license": "Repository license",
+    "raw_sha256": "c046bc6af8b9b8fd2d48e704675ffb20783303c2558b0aecbc54fa7cba1a3beb",
+    "input_records": 17,
+    "ledger": [
+      {
+        "record": 1,
+        "status": "accepted"
+      },
+      {
+        "record": 2,
+        "status": "accepted"
+      },
+      {
+        "record": 3,
+        "status": "accepted"
+      },
+      {
+        "record": 4,
+        "status": "accepted"
+      },
+      {
+        "record": 5,
+        "status": "accepted"
+      },
+      {
+        "record": 6,
+        "status": "accepted"
+      },
+      {
+        "record": 7,
+        "status": "accepted"
+      },
+      {
+        "record": 8,
+        "status": "accepted"
+      },
+      {
+        "record": 9,
+        "status": "duplicate"
+      },
+      {
+        "record": 10,
+        "status": "missing_minutes"
+      },
+      {
+        "record": 11,
+        "status": "nonfinite_minutes"
+      },
+      {
+        "record": 12,
+        "status": "nonfinite_minutes"
+      },
+      {
+        "record": 13,
+        "status": "range"
+      },
+      {
+        "record": 14,
+        "status": "date"
+      },
+      {
+        "record": 15,
+        "status": "numeric_format"
+      },
+      {
+        "record": 16,
+        "status": "conflicting_id"
+      },
+      {
+        "record": 17,
+        "status": "conflicting_id"
+      }
+    ],
+    "dispositions": {
+      "accepted": 8,
+      "duplicate": 1,
+      "missing_minutes": 1,
+      "nonfinite_minutes": 2,
+      "range": 1,
+      "date": 1,
+      "numeric_format": 1,
+      "conflicting_id": 2
+    },
+    "groups": {
+      "north": {
+        "count": 4,
+        "mean": 13.0,
+        "median": 13.0
+      },
+      "south": {
+        "count": 4,
+        "mean": 55.0,
+        "median": 21.0
+      }
+    },
+    "count": 8,
+    "mean_minutes": 34.0,
+    "median_minutes": 17.0,
+    "population_sd": 47.77028364998475,
+    "sample_sd": 51.068581339214816,
+    "flagged_ids": [
+      "R08"
+    ],
+    "sensitivity_mean_without_flag": 16.0,
+    "depth_minutes_r": 0.6395294793910794
+  },
+  "chart_evidence": {
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-File",
+      "chart.ps1",
+      "-ReportPath",
+      "report.json",
+      "-OutputPath",
+      "chart.png"
+    ],
+    "started_at": "2026-09-30T03:02:35.486237+00:00",
+    "elapsed_seconds": 0.542,
+    "exit_code": 0,
+    "stdout": "Saved 1100x650 PNG; zero-based scale; four values from report JSON.\n",
+    "stderr": "",
+    "artifact_sha256": "004f912b85729e3992e5104e20843ae332a8d4a537b3ab6a1867357aa3165bf5",
+    "artifact_path": "website/assets/pced-synthetic-summary.png",
+    "dimensions": [
+      1100,
+      650
+    ],
+    "visual_review": "Final PNG inspected by same-context AI: zero baseline, values13/13/55/21, labels, units, counts and synthetic-source title. No human or full accessibility assessment."
+  },
+  "selected_lint_evidence": {
+    "command": [
+      "python",
+      "-m",
+      "ruff",
+      "check",
+      "analysis.py",
+      "--select",
+      "E4,E7,E9,F,W,E501",
+      "--line-length",
+      "79",
+      "--output-format",
+      "concise"
+    ],
+    "exit_code": 0,
+    "stdout": "All checks passed!\n",
+    "stderr": "",
+    "version": "ruff 0.16.4"
+  },
+  "manual_objective_confirmation": {
+    "checked_on": "2026-09-29",
+    "method": "Complete indexed canonical primary syllabus and MQC manually compared after direct/automated timeout",
+    "active_code": "PCED-30-02",
+    "syllabus_date": "2025-07-14",
+    "objectives": 40,
+    "per_section": [
+      9,
+      13,
+      13,
+      5
+    ],
+    "weights": [
+      22.5,
+      32.5,
+      32.5,
+      12.5
+    ],
+    "items": [
+      9,
+      13,
+      13,
+      5
+    ],
+    "exam_questions": 40,
+    "snapshot_action": "Retained; no successful automated hash comparison",
+    "groups": [
+      {
+        "title": "Block 1: Introduction to Data and Data Analysis Concepts — 9 items, 22.5%",
+        "objectives": [
+          "1.1.1 Define data and explain how it becomes meaningful.",
+          "1.1.2 Classify data by type and format.",
+          "1.2.1 Identify data sources and collection methods.",
+          "1.2.2 Explain how data is stored and organized.",
+          "1.3.1 Describe the data lifecycle.",
+          "1.3.2 Discuss the value and challenges of lifecycle management.",
+          "1.4.1 Differentiate data analysis, data analytics, and data science.",
+          "1.4.2 Explain the data analytics workflow.",
+          "1.5.1 Describe ethical principles and legal frameworks."
+        ]
+      },
+      {
+        "title": "Block 2: Python Basics for Data Analysis — 13 items, 32.5%",
+        "objectives": [
+          "2.1.1 Variables, types and basic operations.",
+          "2.2.1 Lists",
+          "2.2.2 tuples and sets",
+          "2.2.3 dictionaries",
+          "2.2.4 strings.",
+          "2.3.1 Functions",
+          "2.3.2 scope",
+          "2.3.3 try/except.",
+          "2.4.1 Boolean logic",
+          "2.4.2 conditionals",
+          "2.4.3 loops.",
+          "2.5.1 Standard modules/packages including csv",
+          "2.5.2 external libraries and NumPy."
+        ]
+      },
+      {
+        "title": "Block 3: Working with Data and Performing Simple Analyses — 13 items, 32.5%",
+        "objectives": [
+          "3.1.1 Text files",
+          "3.1.2 CSV.",
+          "3.2.1 Missing/invalid data",
+          "3.2.2 duplicates/normalization",
+          "3.2.3 string cleaning",
+          "3.2.4 conversions, formatting and dates.",
+          "3.3.1 Built-in aggregation",
+          "3.3.2 statistics/math/Counter",
+          "3.3.3 NumPy operations",
+          "3.3.4 conditional metrics.",
+          "3.4.1 Sorting/filtering",
+          "3.4.2 unique values/frequencies",
+          "3.4.3 correlation and outliers."
+        ]
+      },
+      {
+        "title": "Block 4: Communicating Insights and Reporting — 5 items, 12.5%",
+        "objectives": [
+          "4.1.1 Visualization types and uses",
+          "4.1.2 interpretation and misleading visuals.",
+          "4.2.1 Data storytelling",
+          "4.3.1 analytical reports",
+          "4.4.1 presentations."
+        ]
+      }
+    ]
+  },
+  "review_provenance": "Exact original Python workbook and optional PowerShell chart helper. Python runs normally and optimized with112checks each andwarnings promoted; .NET exports standalonePNG. Same-context AI review; human review pending. No copied exam questions, paidinterior or enrolledlesson.",
+  "source_health_boundary": "40directoutcomes:32successfulresponses,7errors,1blocked. Includes short application shells; complete primary exam/syllabus fallback, selected policy/regulator/technical contracts and complete public product/Edube/book landings. Per-source boundaries distinguish actualreading fromdownloads andunavailableinteriors."
+}

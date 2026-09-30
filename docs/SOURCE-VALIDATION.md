@@ -2232,6 +2232,8 @@ or copied course content is used. Blueprint SHA-256:
 
 ## PCED-30-02 coverage record
 
+The September 29 [deep review](research/2026-09-29-pced-30-02-deep-review.md) maps 40 detailed objectives. Mapped all40 objectives and expanded16 answers. Exact original Python workbook passes112 checks normally and optimized;17 synthetic CSV records reconcile to8 accepted, with immutable raw hash, conflict/missing/nonfinite/date policies, Python/NumPy spread agreement, sensitivity and correlation boundaries. Exported and AI-inspected a zero-based chart from its report using existing .NET. Corrected learning estimates and practice-product distinctions; access/redemption questions, public-dataset lab and human review remain explicit. Current guide citations: 39 registered, 31 reachable, 1 access-blocked, 7 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Introduction to Data and Data Analysis Concepts (22.5%); Python Basics for Data Analysis (32.5%); Working with Data and Performing Simple Analyses (32.5%); Communicating Insights and Reporting (12.5%)

@@ -1,0 +1,29 @@
+# PCED-30-02 deep review — September 29, 2026
+
+The [study guide](../../guides/PCED-30-02-python-certified-entry-level-data-analyst.md) maps all **40 objectives**, grouped9/13/13/5, and expands all16 answers. Complete indexed [canonical syllabus](https://pythoninstitute.org/pced-exam-syllabus) and MQC bodies were manually read after direct retrieval and the automated monitor timed out. The existing snapshot was retained; this is not a successful automated hash observation. Same-context AI review leaves human review pending.
+
+## Credential and learning findings
+
+The complete [exam page](https://pythoninstitute.org/pced) identifies30-02 active sinceJuly15,2025, seven-year validity and40questions/60minutesplusNDA/75%. Retired30-01 vouchers already issued may still be redeemed. Each current syllabus item has a maximum of one point; no current official questions or partial-credit rules were accessed. The specific exam FAQ's failed-retake seven-day rule is distinguished from a generic policy footer referring to passed/failed attempts. Only selected public policy sections were reviewed; no account, booking or system test was performed.
+
+The [standalone practice kit](https://ums.edube.org/products/pced-practice-test) listsUSD29/two tests/up to10 launches each; the [USD95 exam/retake/practice bundle](https://ums.edube.org/products/0-pi-pced-3002-erpt) says five. The store directs TestCandidate→Practice while the credential FAQ says Learner. These are visible product/instruction differences, not verified equivalent entitlements. No cart action, purchase, redemption or private question access occurred.
+
+Complete [Edube PD101](https://edube.org/study/pd101) and [Pro product](https://ums.edube.org/products/pi-pd101-courseware) bodies support fiveweeks at about onehour/day, freeCore lessons/moduletests, andUSD49Full/Pro interactive work. Pro lists minimum12-month access after redemption. These are provider estimates/features, not observed completion. VendorPD101 itself was only partly readable. Cisco and the store root returned short application shells; Kaggle failed, so previous duration claims were removed. The complete book landing describes a broader thirdedition updated forpandas2.0/Python3.10; no chapters were reviewed or copied.
+
+There are **40 direct receipts:32 successful responses,7 errors and1 blocked**. HTTP success is not evidence of a complete course body. Per-source reading boundaries identify selected Python3.13 sections,11 complete NumPy generated references, partial policy/legal excerpts and unavailable interiors. The generic Python index identifies3.14.7, pinned references3.13.15 and local interpreter3.13.14; no exam patch-version inference or runtime update was made.
+
+## Original workbook and observed results
+
+The exact public Python file passes **112 checks normally and112 with optimization**, with all warnings promoted to errors and no stderr. Its checks stay active under `-O`. It uses existingCPython3.13.14 andNumPy2.5.2; selectedRuff0.16.4rules `E4,E7,E9,F,W,E501` pass at79characters. Exact commands, timestamps, hashes and full outputs are recorded in the operation evidence. Initial development checks are not substituted for these final exact-source executions.
+
+The original fixture contains17 logicalCSV records, including quoted comma/quote/newline content. Its ledger reconciles8accepted,1duplicate,1missing,2nonfinite,1range,1date,1numeric-text and2conflicting-ID records. Validation precedes deduplication; all conflicting *valid* records for an ID are excluded, while identical normalized duplicates retain the first. Record numbers are not physical line numbers. Reversal preserves accepted IDs. Raw bytes remain unchanged, with SHA-256 `c046bc6af8b9b8fd2d48e704675ffb20783303c2558b0aecbc54fa7cba1a3beb`. Missing values are never silently imputed as zero.
+
+The accepted durations10/12/14/16/18/20/22/160 sum to272, mean34, median17. Python and NumPy agree on populationSD47.77028364998475 and sampleSD51.068581339214816. North has count4/mean13/median13; South count4/mean55/median21. The two-population-SD rule flagsR08 while retaining it; a separately labeled seven-record sensitivity gives mean16. Pearsonr with the assigned depth variable is0.6395294793910794, with no causal or population inference. Constant/empty/nonfinite/unequal-pair guards and a zero-linear-correlation nonlinear example make the limits concrete.
+
+The workbook also exercises all named list/string/set/dictionary operations, numeric/type conversion, scope/defaults/None, expectedexceptions, if/elif/else, nestedconditions, for/while/break/continue/else, isolatedseededrandom sampling, explicitCSV/textfiles, exactdateformatting, min-maxconstant policy, Counter, conditionalgroups, NumPydtype/axis/views/copies/sequencegeneration/sorting/unique/finite masks. It shows why manual comma splitting is only a restricted exercise. Temporary files are created under the checked private workspace and removed on completion.
+
+## Communication and remaining work
+
+The optional exactPowerShell helper uses the existing Windows .NET chart component to export a1100×650PNG from the computed report without a visible window or installed package. The final chart was AI-inspected: fourvalues13/13/55/21, explicitzero baseline,units/counts/source,meaningful title andreadable labels. A table andalt text accompany it. The five-sentence narrative separates observed fixture results from limitations and a proportionate investigation step; analyst/executive presentation guidance explains how to answer questions from the ledger.
+
+This is a bounded synthetic demonstration, not the separate public-dataset lab, a real service evaluation, a complete accessibility review or human readiness approval. The public-dataset activity, current product/redemption confirmation, inaccessible interiors and human review remain explicit. No authentic exam questions or protected course material were copied.
