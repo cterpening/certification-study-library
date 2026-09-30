@@ -3796,6 +3796,29 @@ The complete public PT101 outline describes beginner-level testing with basic Py
 
 Verify exact course availability, entitlement, price, runtime and exam code before purchase. Author budgets are suggestions, not provider runtimes. Avoid products built around recalled certification questions.
 
+### PCAT-31-01 — PCAT Certified Associate Tester with Python
+
+Resource details from the [PCAT-31-01 guide](../guides/PCAT-31-01-python-certified-associate-tester.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list and is not intended to be consumed in full. Use the official PT102 outline to select aligned material, maintain your own test suite, and choose targeted resources for gaps.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [PCAT syllabus](https://pythoninstitute.org/pcat-exam-syllabus) | Public canonical blueprint; documented code/block/count conflicts | Author planning budget: 2–4 hours to map all 34 objectives |
+| [Python for Testing 102](https://edube.org/study/pt102) | Free Core lessons/module tests; USD 49 Full/Pro adds interactive work, assessments and diploma; enrolled features require account | Public outline: 30–40 hours, recommended 5–7 hours/week; store instead says six weeks at one hour/day |
+| [Python 3.13 unittest](https://docs.python.org/3.13/library/unittest.html) | Public primary reference; selected contracts reviewed | Author planning budget: 8–15 hours with original coding |
+| [Python 3.13 unittest.mock](https://docs.python.org/3.13/library/unittest.mock.html) | Public primary reference; selected contracts reviewed | Author planning budget: 6–12 hours with original labs |
+| [Test-Driven Development with Python](https://www.obeythetestinggoat.com/) | Author landing advertises free online reading and paid options; landing/blog index read, not book chapters | Author planning budget: 15–30 selected hours; no provider runtime verified |
+| [Architecture Patterns with Python](https://www.cosmicpython.com/book/preface.html) | Public author-hosted preface read; broader architecture/TDD context, chapters not audited | Author planning budget: 10–20 selected hours; no provider runtime verified |
+
+PT102 advertises 40+ labs; none of its enrolled exercises was accessed or copied. Its public outline duplicates a module number and repeats unittest wording in a pytest section; use the canonical exam map for scope. The store describes at least 12 months of premium access after redemption and a voucher valid for 12 months after purchase; these are different clocks, and exact entitlement was not tested. The store's practice/discount claim conflicts with the exam FAQ's in-development practice description. Confirm current terms before purchase.
+
+Pytest, pytest-mock, pytest-cov, pytest-html and behave appear in the course outline as broader tooling. The canonical objectives emphasize unittest and BDD concepts; course additions do not silently become new exam objectives. Pytest is installed locally but was not used for this workbook; the four named plugins/BDD package are absent and were not installed. Their exercises remain pending.
+
+The Testing Goat landing includes a dated August 2024 third-edition progress post; that alone does not verify a current edition's complete content or software versions. The Cosmic Python preface describes domain modeling, architectural boundaries and testability for readers with experience of complex Python applications. Neither book's chapters or code were copied into this original workbook. Free reading access does not mean unrestricted redistribution.
+
+Verify the current exam version, course entitlement and practice product before purchase. Author planning budgets are suggestions, not provider runtimes. Avoid recalled-item material.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

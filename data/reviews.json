@@ -12072,25 +12072,78 @@
       "notes": "Mapped all 22 objectives and expanded 17 answers. Three exact original Python files pass 25 test methods and 55 probe checks per normal/optimized mode: requirements, boundaries, doubles, toy state transitions, actual coverage/mutant evidence, finite refactoring, scripted pdb, assertion removal and isolated logging. Corrected learning entitlements and least-powerful-double guidance; publisher conflicts, inaccessible policy/PDF, absent Pylint/Flake8, ten broader labs and human review remain explicit. See docs/research/2026-09-30-pcet-30-01-deep-review.md"
     },
     {
-      "id":"pcat-31-01-2026-09-02-source-validation",
-      "exam_code":"PCAT-31-01",
-      "guide_path":"guides/PCAT-31-01-python-certified-associate-tester.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-02",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/pcat-31-01-official-objectives.txt",
-      "blueprint_snapshot_sha256":"d93b7e4da42b76c0263e9ea2964b023f65d3aa2ac20d43384e0686e0dca7b724",
-      "objective_coverage":[
-        {"objective_group":"Software Testing Essentials (16.7%)","guide_sections":["Section 1","Integrated suite"]},
-        {"objective_group":"Test Automation and Code Refactoring (9.5%)","guide_sections":["Section 2","Integrated suite"]},
-        {"objective_group":"Assertions, Context Managers, Decorators, and Python Methods (11.9%)","guide_sections":["Section 3","Integrated suite"]},
-        {"objective_group":"Foundations of Unit Testing (28.6%)","guide_sections":["Section 4","Integrated suite"]},
-        {"objective_group":"Advanced Unit Testing Techniques (26.2%)","guide_sections":["Section 5","Integrated suite"]},
-        {"objective_group":"Test-Driven and Behavior-Driven Development (7.1%)","guide_sections":["Section 6","Integrated suite"]}
+      "id": "pcat3101-2026-09-30-source-validation",
+      "exam_code": "PCAT-31-01",
+      "guide_path": "guides/PCAT-31-01-python-certified-associate-tester.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-30",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/pcat-31-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "d93b7e4da42b76c0263e9ea2964b023f65d3aa2ac20d43384e0686e0dca7b724",
+      "objective_coverage": [
+        {
+          "objective_group": "Block 1: Software Testing Essentials — 7 items, 16.7%",
+          "guide_sections": [
+            "1–2. Testing essentials, automation, and refactoring — 26.2%",
+            "Exact original executable workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "Block 2: Test Automation and Code Refactoring — 4 items, 9.5%",
+          "guide_sections": [
+            "1–2. Testing essentials, automation, and refactoring — 26.2%",
+            "Exact original executable workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "Block 3: Assertions, Context Managers, Decorators, and Python Methods — 5 items, 11.9%",
+          "guide_sections": [
+            "3. Assertions, contexts, decorators, and method types — 11.9%",
+            "Exact original executable workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "Block 4: Foundations of Unit Testing — 12 items, 28.6%",
+          "guide_sections": [
+            "4. Unit-testing foundations — 28.6%",
+            "Exact original executable workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "Block 5: Advanced Unit Testing Techniques — 11 items, 26.2%",
+          "guide_sections": [
+            "5. Advanced unit testing — 26.2%",
+            "Exact original executable workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "Block 6: Test-Driven and Behavior-Driven Development — 3 items, 7.1%",
+          "guide_sections": [
+            "6. TDD and BDD — 7.1%",
+            "Exact original executable workbook",
+            "Answers and reasoning"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":8,"reachable":8,"access_blocked":0,"missing_or_error":0},
-      "notes":"All six PCAT-31-01 blocks are mapped through testing principles and coverage, automation/refactoring, Python mechanisms, unittest foundations and advanced techniques, mocks/patching, TDD and BDD. The integrated multi-module suite and original checks require fault injection and observable evidence. In-development PCAT-31-02 and the official 31-02/four-block introductory prose conflict with the 31-01/six-block header and table are explicit. No recalled/live item, answer dump or copied course question is used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 19,
+        "reachable": 16,
+        "access_blocked": 0,
+        "missing_or_error": 3
+      },
+      "notes": "Mapped all 34 objectives and expanded 17 answers. Four exact original files pass 25 application methods and 31 framework/TDD/coverage checks per normal/optimized mode, plus one CLI-selected method. Observed fixture cleanup, marker counts, order contamination, context/decorator/patch contracts, a red–green–refactor slice and a fully covered boundary defect are explicit. Corrected course entitlements and retained publisher/product/policy conflicts, twelve broader labs, real integrations and human review as limits. See docs/research/2026-09-30-pcat-31-01-deep-review.md"
     },
     {
       "id":"pces-30-01-2026-09-02-source-validation",

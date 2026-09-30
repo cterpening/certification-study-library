@@ -2289,6 +2289,8 @@ course content is used. Blueprint SHA-256:
 
 ## PCAT-31-01 coverage record
 
+The September 30 [deep review](research/2026-09-30-pcat-31-01-deep-review.md) maps 34 detailed objectives. Mapped all 34 objectives and expanded 17 answers. Four exact original files pass 25 application methods and 31 framework/TDD/coverage checks per normal/optimized mode, plus one CLI-selected method. Observed fixture cleanup, marker counts, order contamination, context/decorator/patch contracts, a red–green–refactor slice and a fully covered boundary defect are explicit. Corrected course entitlements and retained publisher/product/policy conflicts, twelve broader labs, real integrations and human review as limits. Current guide citations: 19 registered, 16 reachable, 0 access-blocked, 3 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Software Testing Essentials (16.7%); Test Automation and Code Refactoring (9.5%); Assertions, Context Managers, Decorators, and Python Methods (11.9%); Foundations of Unit Testing (28.6%); Advanced Unit Testing Techniques (26.2%); Test-Driven and Behavior-Driven Development (7.1%)
