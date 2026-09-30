@@ -3,6 +3,174 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "pcea-testing-policies",
+      "title": "PCEA testing policies",
+      "url": "https://pythoninstitute.org/pcea-testing-policies",
+      "publisher": "OpenEDG / Python Institute",
+      "authority_class": 2,
+      "source_type": "official-policy",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEA-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCEA-30-01 deep review: Complete indexed canonical policy read revisedSeptember2,2025 afterdirecttimeout:failedseven-dayrule versusfooterfailedORpassed;local24hreschedule versusglobalunredeemedvalidvoucher procedures. Alladmission/NDA/age/accommodation/conduct/penalties read;noeligibilityafterpassinferred,noaccountbooking/systemtest. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-sys",
+      "title": "Python 3.13 sys",
+      "url": "https://docs.python.org/3.13/library/sys.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEA-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCEA-30-01 deep review: Selectedfresh71–88 argv and348–373 exit/SystemExit/status/cleanup read. Restunread. Actualfixedscript preview success/failure separatesJSONstdout,diagnosticstderr andexit2. InitialisolatedchildfailedmissingRequests;final-Echildretainsinstalleduserpackages,notisolatedmode. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-venv",
+      "title": "Python 3.13 venv",
+      "url": "https://docs.python.org/3.13/library/venv.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEA-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCEA-30-01 deep review: Selectedfresh35–63 introduction/isolation/disposable/nonportable and137–211 operation/activation/interpreterpath/recreation/deactivation read. RemainingCLIbuilderAPIsunread. No venvcreation/activation/packageinstall orpermissionchange. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-os",
+      "title": "Python 3.13 os",
+      "url": "https://docs.python.org/3.13/library/os.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEA-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCEA-30-01 deep review: Selectedfresh158–190 environ semantics and1648–1665 replace/atomicrename plusrmdiropening read. Restunread. Childenv changesonlysyntheticPCEA_RUN_ID;oneownedfixedsnapshot stagedbesidetarget/closed/replaced. Atomicity notcross-filetransaction,durability,concurrency orTOCTOUproof. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-shutil",
+      "title": "Python 3.13 shutil",
+      "url": "https://docs.python.org/3.13/library/shutil.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEA-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCEA-30-01 deep review: Selectedfresh34–83 metadatawarning/copyfile and141–177 copy/copy2metadata behavior read. Restunread. Actualcopyfile on87syntheticbytes forbackup/restore. Noowner/ACL/ADS preservation,realrecoveryplan orsecureerasureclaim. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-time",
+      "title": "Python 3.13 time",
+      "url": "https://docs.python.org/3.13/library/time.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEA-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCEA-30-01 deep review: Selectedfresh212–248 monotonic/perf_counter/reference/precisioncontracts read. Restunread. Injected0.25secondoracle isnotbenchmark;realintervalsrecordedbutno persistentlast-successwall-clock monitor. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-smtplib",
+      "title": "Python 3.13 smtplib",
+      "url": "https://docs.python.org/3.13/library/smtplib.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEA-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCEA-30-01 deep review: Selectedfresh42–99 SMTP/SSL construction/context/timeout and205–249 login/auth opening read. Restunread. Transport/connection/auth distinctions only;noSMTPmessage/clientconnection/credential/recipient ordeliveryclaim. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-email-message",
+      "title": "Python 3.13 email.message",
+      "url": "https://docs.python.org/3.13/library/email.message.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEA-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCEA-30-01 deep review: Selectedfresh39–57 header/payload/MIME/objectmodel read. Restunread. Conceptualmessage-versus-transport distinction;no composed/sentrealmessage ormailboxaccess. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-http-server",
+      "title": "Python 3.13 http.server",
+      "url": "https://docs.python.org/3.13/library/http.server.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEA-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCEA-30-01 deep review: Selectedfresh36–79 productionwarning/HTTPServer/handler,104–144 streams/protocol,184–225 headers/response/logopening and398–409 securitywarnings read. Restunread. Eightownedone-requestloopbackfixtures permode,syntheticbody/headerconstants,workersjoined/serverclosed. Nodirectoryserving orpersistentservice. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-threading",
+      "title": "Python 3.13 threading",
+      "url": "https://docs.python.org/3.13/library/threading.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEA-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCEA-30-01 deep review: Selectedfresh397–435 start/run/join/is_alive and487–536 Lock/nonblocking/release semantics read. Restunread. Actualsame-processlockcontention/release separatefromrun_once;no cross-processschedulerlock orconcurrentwriter implementation. BoundedHTTPworkerjoinchecked. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "requests-api",
+      "title": "Requests developer interface",
+      "url": "https://requests.readthedocs.io/en/latest/api/",
+      "publisher": "Requests contributors",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEA-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 PCEA-30-01 deep review: Selectedfresh278–337 requestparams/trust_env/verify,383–425 content/streaming,435–460 JSONerrors/ok/raise_for_status read. Restunread. trust_envFalse avoidsambientproxy/defaultauth;redirectsFalse,identityencoding,boundedchunks. SimulatedReadTimeout/config assertions distinctfromeightactualHTTPcases. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "packt-python-automation-cookbook-3",
+      "title": "Python Automation Cookbook, Third Edition — publisher listing",
+      "url": "https://www.packtpub.com/en-us/product/python-automation-cookbook-9781806702893",
+      "publisher": "Packt",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PCEA-30-01"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "Public publisher product metadata/selected table of contents for the paid third-edition book. Not official PCEA curriculum or complete book access. Replaces an unverified OReilly ISBN/link recommendation; no purchase or login. September 30 PCEA-30-01 deep review: Selectedindexedpublicmetadata,title/author/printISBN9781806702893,June29,2026,676pages,thirdedition andcompletevisibleTOC1412–1466 read afterdirectblocked. Page19chapterlabel versusnumbered1–17+otherbooks/index distinguished. Onlyopeningpublicsamplethrough296 read,notcompletechapter/book;otherpagebodiesunclaimed. Relevantfile/API/report/testing alongsidebroaderAI/MCPtopics,notofficialPCEAalignment. No purchase/account/download/codeexecution. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "pces-testing-policies",
       "title": "PCES testing policies",
       "url": "https://pythoninstitute.org/pces-testing-policies",
@@ -25,10 +193,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "PCES-30-01"
+        "PCES-30-01",
+        "PCEA-30-01"
       ],
       "last_checked": "2026-09-30",
-      "notes": "September 30 PCES-30-01 deep review: Selected fresh60–140 run/input/capture/check/timeout/env and returncode opening;548–565 complete security section including Windowsbatch-shell exception. Webopening through368 additionally read. FixedPythonexecutable/-I/-B/program and one dataarg run locally;timeout propagation simulated. No arbitrarycommand/AV/archive cleanup. See docs/research/2026-09-30-pces-30-01-deep-review.md No live infrastructure execution."
+      "notes": "September 30 PCES-30-01 deep review: Selected fresh60–140 run/input/capture/check/timeout/env and returncode opening;548–565 complete security section including Windowsbatch-shell exception. Webopening through368 additionally read. FixedPythonexecutable/-I/-B/program and one dataarg run locally;timeout propagation simulated. No arbitrarycommand/AV/archive cleanup. See docs/research/2026-09-30-pces-30-01-deep-review.md No live infrastructure execution. September 30 PCEA-30-01 deep review: Freshbody hash matchesPCES;reuse60–140 run/capture/check/timeout/env and548–565 securitysection. OriginalfixedPythonchildren-E/-B(and-Oinoptimizedmode),syntheticargv/env,no shell,timeout5,hiddenWindowscreation. NoarbitraryOScommand or realtimeoutmeasurement. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "python313-hmac",
@@ -53,10 +222,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "PCES-30-01"
+        "PCES-30-01",
+        "PCEA-30-01"
       ],
       "last_checked": "2026-09-30",
-      "notes": "September 30 PCES-30-01 deep review: Fresh1–70 read including completeescape/unescape body andnavigation. Textnode/quotedcharacter contracts only;not generalJavaScript/URL/HTMLsanitization. Original expectedHTMLtext verified. See docs/research/2026-09-30-pces-30-01-deep-review.md No live infrastructure execution."
+      "notes": "September 30 PCES-30-01 deep review: Fresh1–70 read including completeescape/unescape body andnavigation. Textnode/quotedcharacter contracts only;not generalJavaScript/URL/HTMLsanitization. Original expectedHTMLtext verified. See docs/research/2026-09-30-pces-30-01-deep-review.md No live infrastructure execution. September 30 PCEA-30-01 deep review: Freshbody hash matchesPCES;reuse1–70 completeescape/unescapebody/navigation. OriginalHTMLtextnodes only;noJS/CSS/URLsanitization orbrowserexecution. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "python313-tempfile",
@@ -67,10 +237,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "PCES-30-01"
+        "PCES-30-01",
+        "PCEA-30-01"
       ],
       "last_checked": "2026-09-30",
-      "notes": "September 30 PCES-30-01 deep review: Selected fresh149–179 completeTemporaryDirectory cleanup/delete/error behavior andmkstempopening. Restunread. Actualprivateworkbook-ownedtemporaryfiletree creation/removal verified;noexistingfiles deleted. See docs/research/2026-09-30-pces-30-01-deep-review.md No live infrastructure execution."
+      "notes": "September 30 PCES-30-01 deep review: Selected fresh149–179 completeTemporaryDirectory cleanup/delete/error behavior andmkstempopening. Restunread. Actualprivateworkbook-ownedtemporaryfiletree creation/removal verified;noexistingfiles deleted. See docs/research/2026-09-30-pces-30-01-deep-review.md No live infrastructure execution. September 30 PCEA-30-01 deep review: Freshbody hash matchesPCES;reuse149–179 TemporaryDirectory/cleanup. Additionalfresh78–128 completeNamedTemporaryFile delete/close/reopen/Windows semantics read. Ownedresolvedtemporaryroots checked;closedstagingfile deletedonlywithinownedroot. Noabruptterminationcleanupguarantee. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "cryptography-fernet",
@@ -381,10 +552,11 @@
       "supported_exams": [
         "PCET-30-01",
         "PCAT-31-01",
-        "PCES-30-01"
+        "PCES-30-01",
+        "PCEA-30-01"
       ],
       "last_checked": "2026-09-30",
-      "notes": "September 30 PCET-30-01 deep review: Selected 1–137 introduction/check and complete rule selection/CLI priority, not rule categories; 227–250 safe/unsafe fix example and unsafe opt-in opening; 469–490 complete exit codes and related flags. Remaining page unread. Existing 0.16.4 selected lint and isolated F401 probe executed; no autofix/install or substitute claim for Pylint/Flake8. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution. September 30 PCAT-31-01 deep review: Fresh body SHA-256 638a424e58de26f0ae126ac5b283aa0a85857bd6107715b3df7d1a069218919d matches PCET. Reused selected 1–137 introduction/check/rule selection, 227–250 safe/unsafe-fix example/opening and 469–490 complete exit-code flags. Remaining page not read. Existing Ruff 0.16.4 selected rules pass at 79 columns; no install/autofix or full conformance claim. See docs/research/2026-09-30-pcat-31-01-deep-review.md No live infrastructure execution. September 30 PCES-30-01 deep review: FreshbodymatchesPCET SHA256638a424e58de26f0ae126ac5b283aa0a85857bd6107715b3df7d1a069218919d. Reusedselected1–137 intro/check/rules,227–250 fixexample/opening,469–490exitflags;restunread. Existing0.16.4 selectedrulespass79columns;notPylint/Flake8/securityaudit orautofix. See docs/research/2026-09-30-pces-30-01-deep-review.md No live infrastructure execution."
+      "notes": "September 30 PCET-30-01 deep review: Selected 1–137 introduction/check and complete rule selection/CLI priority, not rule categories; 227–250 safe/unsafe fix example and unsafe opt-in opening; 469–490 complete exit codes and related flags. Remaining page unread. Existing 0.16.4 selected lint and isolated F401 probe executed; no autofix/install or substitute claim for Pylint/Flake8. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution. September 30 PCAT-31-01 deep review: Fresh body SHA-256 638a424e58de26f0ae126ac5b283aa0a85857bd6107715b3df7d1a069218919d matches PCET. Reused selected 1–137 introduction/check/rule selection, 227–250 safe/unsafe-fix example/opening and 469–490 complete exit-code flags. Remaining page not read. Existing Ruff 0.16.4 selected rules pass at 79 columns; no install/autofix or full conformance claim. See docs/research/2026-09-30-pcat-31-01-deep-review.md No live infrastructure execution. September 30 PCES-30-01 deep review: FreshbodymatchesPCET SHA256638a424e58de26f0ae126ac5b283aa0a85857bd6107715b3df7d1a069218919d. Reusedselected1–137 intro/check/rules,227–250 fixexample/opening,469–490exitflags;restunread. Existing0.16.4 selectedrulespass79columns;notPylint/Flake8/securityaudit orautofix. See docs/research/2026-09-30-pces-30-01-deep-review.md No live infrastructure execution. September 30 PCEA-30-01 deep review: Freshbody matchesPCES/PCET SHA256638a424e58de26f0ae126ac5b283aa0a85857bd6107715b3df7d1a069218919d;reuse1–137 intro/check/rules,227–250 fixexample/opening,469–490exitflags. Restunread. Existing0.16.4 selectedrules79columns pass;noautofix/fullsecurityaudit. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "pcad-testing-policies",
@@ -1366,10 +1538,11 @@
       "access_model": "public",
       "supported_exams": [
         "PCPP-32-101",
-        "PCES-30-01"
+        "PCES-30-01",
+        "PCEA-30-01"
       ],
       "last_checked": "2026-09-30",
-      "notes": "September 29 PCPP-32-101 deep review: Complete introduction/examples and Basic Usage (through281), exceptions and interoperability/encoding/non-finite/duplicate names/top-level/limits sections (431-528) read. Encoder/decoder class internals and CLI remainder not audited. Original checks cover tuple/key conversion, strict non-finite encoding, repeated-key default, malformed body and separate schema validation. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 30 PCES-30-01 deep review: Selected fresh49–60 warning/intro;160–218 encoderparameters/dumpsopening;274–289 loads anddecoderopening. Restunread. OriginalserializedJSON retainsclosing-scriptsequence;standalonedata only,not scriptembedding protection. See docs/research/2026-09-30-pces-30-01-deep-review.md No live infrastructure execution."
+      "notes": "September 29 PCPP-32-101 deep review: Complete introduction/examples and Basic Usage (through281), exceptions and interoperability/encoding/non-finite/duplicate names/top-level/limits sections (431-528) read. Encoder/decoder class internals and CLI remainder not audited. Original checks cover tuple/key conversion, strict non-finite encoding, repeated-key default, malformed body and separate schema validation. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 30 PCES-30-01 deep review: Selected fresh49–60 warning/intro;160–218 encoderparameters/dumpsopening;274–289 loads anddecoderopening. Restunread. OriginalserializedJSON retainsclosing-scriptsequence;standalonedata only,not scriptembedding protection. See docs/research/2026-09-30-pces-30-01-deep-review.md No live infrastructure execution. September 30 PCEA-30-01 deep review: Freshbody hash matchesPCES;reuse49–60sizewarning/introduction,160–218serialization,274–289loads/decoder. Additionalfresh223–280 orderedpairs/parseconstant/loads read. Originalduplicate-key/nonfinite/schema/bytebound checks;notcompleteparserresource-hardeningproof. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "python313-elementtree",
@@ -1396,10 +1569,11 @@
       "access_model": "public",
       "supported_exams": [
         "PCPP-32-101",
-        "PCET-30-01"
+        "PCET-30-01",
+        "PCEA-30-01"
       ],
       "last_checked": "2026-09-30",
-      "notes": "September 29 PCPP-32-101 deep review: Selected logger hierarchy/propagation/handler ownership and setLevel opening (103-182); complete levels/Handler and Formatter through formatStack (352-566); complete LogRecord constructor/getMessage with factory example beginning (632-691). BufferingFormatter and remaining logger/filter/global APIs not fully audited. Original thresholds, interpolation and handler cleanup exercised. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 30 PCET-30-01 deep review: Selected 103–233 logger/getLogger/hierarchy/propagate/setLevel/getChild/debug opening with incomplete keyword discussion; 321–411 add/removeHandler/caller/handle/makeRecord/hasHandlers and complete standard-level table, Handler opening only. Rest unread. Isolated five-level capture restores handler/level/propagation; root logger unchanged. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution."
+      "notes": "September 29 PCPP-32-101 deep review: Selected logger hierarchy/propagation/handler ownership and setLevel opening (103-182); complete levels/Handler and Formatter through formatStack (352-566); complete LogRecord constructor/getMessage with factory example beginning (632-691). BufferingFormatter and remaining logger/filter/global APIs not fully audited. Original thresholds, interpolation and handler cleanup exercised. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 30 PCET-30-01 deep review: Selected 103–233 logger/getLogger/hierarchy/propagate/setLevel/getChild/debug opening with incomplete keyword discussion; 321–411 add/removeHandler/caller/handle/makeRecord/hasHandlers and complete standard-level table, Handler opening only. Rest unread. Isolated five-level capture restores handler/level/propagation; root logger unchanged. See docs/research/2026-09-30-pcet-30-01-deep-review.md No live infrastructure execution. September 30 PCEA-30-01 deep review: Selectedfresh997–1080 completebasicConfigoptions throughhistoryopening read. Restunread. OriginaldedicatedLogger/StreamHandler emitsINFO/ERROR andcloseswithoutrootconfiguration;nofilelogger/debug/warning/critical integration ormonitoringservice. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "python313-configparser",
@@ -4075,10 +4249,11 @@
         "PCAP-31-03",
         "PCPP-32-101",
         "PCED-30-02",
-        "PCES-30-01"
+        "PCES-30-01",
+        "PCEA-30-01"
       ],
       "last_checked": "2026-09-30",
-      "notes": "September 29 PCAP-31-03 deep review: Complete writer and writerow entry descriptions read. Original one-column renderer round-tripped commas/quotes/newlines/Unicode/empty values through actual writer/reader. Not full 22245-character reference or spreadsheet-application audit; CSV is supporting scenario context, not an additional objective. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution. September 29 PCPP-32-101 deep review: Selected introduction and module contents from reader/writer through DictReader/DictWriter and Dialect introduction (39-218). Reader/writer newline, None conversion, header/width and conversion contracts read. Remaining dialect constants, object methods and examples not fully audited. Original quoted delimiter/quote/newline fixture round-trips. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 29 PCED-30-02 deep review: Introduction/module reader/writer/registration/DictReader/DictWriter through212 read, with dialectintroductionpartial. Explicitnewline/stringconversion/None/header/width contracts. Remainingconstants/objectmethods/examples not fullyaudited. OriginalquotedmultilineCSV roundtrip,restrictedmanualsplitcounterexample andstrictmalformedinput executed. See docs/research/2026-09-29-pced-30-02-deep-review.md No live infrastructure execution. September 30 PCES-30-01 deep review: Selected fresh172–199 completeDictWriter contract/example andoutputopening. Restunread. Controlledcorrelationrows only;CSVquoting not arbitraryspreadsheetformula protection. See docs/research/2026-09-30-pces-30-01-deep-review.md No live infrastructure execution."
+      "notes": "September 29 PCAP-31-03 deep review: Complete writer and writerow entry descriptions read. Original one-column renderer round-tripped commas/quotes/newlines/Unicode/empty values through actual writer/reader. Not full 22245-character reference or spreadsheet-application audit; CSV is supporting scenario context, not an additional objective. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution. September 29 PCPP-32-101 deep review: Selected introduction and module contents from reader/writer through DictReader/DictWriter and Dialect introduction (39-218). Reader/writer newline, None conversion, header/width and conversion contracts read. Remaining dialect constants, object methods and examples not fully audited. Original quoted delimiter/quote/newline fixture round-trips. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 29 PCED-30-02 deep review: Introduction/module reader/writer/registration/DictReader/DictWriter through212 read, with dialectintroductionpartial. Explicitnewline/stringconversion/None/header/width contracts. Remainingconstants/objectmethods/examples not fullyaudited. OriginalquotedmultilineCSV roundtrip,restrictedmanualsplitcounterexample andstrictmalformedinput executed. See docs/research/2026-09-29-pced-30-02-deep-review.md No live infrastructure execution. September 30 PCES-30-01 deep review: Selected fresh172–199 completeDictWriter contract/example andoutputopening. Restunread. Controlledcorrelationrows only;CSVquoting not arbitraryspreadsheetformula protection. See docs/research/2026-09-30-pces-30-01-deep-review.md No live infrastructure execution. September 30 PCEA-30-01 deep review: Selectedfresh63–100 reader/writer,newline/type contracts and133–199 DictReader/DictWriter,extra/missingcells read. Restunread. Originalstrictheader/count/duplicateCSVmerge andprefixeddisplayexport;quotedcommasroundtrip. Noarbitraryspreadsheetformula-safety orGUIexecution. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "c11-n1570",
@@ -9249,10 +9424,11 @@
       "supported_exams": [
         "200-901",
         "PCPP-32-101",
-        "PCAD-31-02"
+        "PCAD-31-02",
+        "PCEA-30-01"
       ],
-      "last_checked": "2026-09-29",
-      "notes": "September 29 200-901 deep review: Selected JSON/status and complete timeout/errors sections read. Successfuldecode not HTTPsuccess; timeout not whole-operation deadline. Exact local Requests2.34.2 workbook executed; no network requests. See docs/research/2026-09-29-200-901-deep-review.md No live infrastructure execution. September 29 PCPP-32-101 deep review: Complete public quickstart body read: all named methods, parameter/form/JSON/body behavior, status/headers/cookies/redirects/timeouts/errors and stream cleanup. JSON parsing does not prove HTTP success;204 has no required JSON body. No private auth or external examples executed. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 29 PCAD-31-02 deep review: Selected complete JSONresponse88–103 and timeout/error356–383 sections read; rawresponse104–114 andredirecttail351–355 incidental. Restquickstart not freshly audited. Loopbackstatus/schema/malformedJSON checks use timeouts and disableenvironmentproxyuse for the temporarysession only; no externalAPI. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+      "last_checked": "2026-09-30",
+      "notes": "September 29 200-901 deep review: Selected JSON/status and complete timeout/errors sections read. Successfuldecode not HTTPsuccess; timeout not whole-operation deadline. Exact local Requests2.34.2 workbook executed; no network requests. See docs/research/2026-09-29-200-901-deep-review.md No live infrastructure execution. September 29 PCPP-32-101 deep review: Complete public quickstart body read: all named methods, parameter/form/JSON/body behavior, status/headers/cookies/redirects/timeouts/errors and stream cleanup. JSON parsing does not prove HTTP success;204 has no required JSON body. No private auth or external examples executed. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 29 PCAD-31-02 deep review: Selected complete JSONresponse88–103 and timeout/error356–383 sections read; rawresponse104–114 andredirecttail351–355 incidental. Restquickstart not freshly audited. Loopbackstatus/schema/malformedJSON checks use timeouts and disableenvironmentproxyuse for the temporarysession only; no externalAPI. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution. September 30 PCEA-30-01 deep review: Selectedfresh79–130 JSONversusHTTP/raw/streamdecoding,254–276 status,332–387 redirects/timeouts/exceptions read. Restunread. ActualownedHTTPstatus/type/size/schema cases;noexternalendpoint/TLS/auth/retry/paginationexecution. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "requests-advanced",
@@ -9264,10 +9440,11 @@
       "access_model": "public",
       "supported_exams": [
         "200-901",
-        "PCPP-32-101"
+        "PCPP-32-101",
+        "PCEA-30-01"
       ],
-      "last_checked": "2026-09-29",
-      "notes": "September 29 200-901 deep review: Transport adapter section and selected related usage read. Actual BaseAdapter/session/preparedresponse fixture exercised. Not entireadvancedmanual; privateResponsebuffer attributes restricted to offline fixture construction. See docs/research/2026-09-29-200-901-deep-review.md No live infrastructure execution. September 29 PCPP-32-101 deep review: Only complete Session Objects and Request/Response Objects opening sections (1-75) and Timeouts section (689-726) read. Remaining TLS/auth/proxy/hooks/stream/retry aggregate not audited. Session ownership and non-wall-clock connect/read timeout semantics are explicit; loopback fixture disables inherited environment credentials/proxies. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution."
+      "last_checked": "2026-09-30",
+      "notes": "September 29 200-901 deep review: Transport adapter section and selected related usage read. Actual BaseAdapter/session/preparedresponse fixture exercised. Not entireadvancedmanual; privateResponsebuffer attributes restricted to offline fixture construction. See docs/research/2026-09-29-200-901-deep-review.md No live infrastructure execution. September 29 PCPP-32-101 deep review: Only complete Session Objects and Request/Response Objects opening sections (1-75) and Timeouts section (689-726) read. Remaining TLS/auth/proxy/hooks/stream/retry aggregate not audited. Session ownership and non-wall-clock connect/read timeout semantics are explicit; loopback fixture disables inherited environment credentials/proxies. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 30 PCEA-30-01 deep review: Selectedfresh16–48 sessionconfiguration/context,186–216 streamedresponseclosing,688–729 connect/readtimeout versuswallclock read. Restunread. Fixedownedloopbackonly,contextsclose;nohardtotaldeadline claim or maliciousserverloadtest. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "rfc-6241",
@@ -13205,10 +13382,11 @@
       "access_model": "public",
       "supported_exams": [
         "XK0-006",
-        "PCES-30-01"
+        "PCES-30-01",
+        "PCEA-30-01"
       ],
       "last_checked": "2026-09-30",
-      "notes": "September 29 XK0-006 deep review: Targeted path/link/junction/relative-path APIs for the original static-tree comparator; no race-resistance or Linux metadata guarantee. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution. September 30 PCES-30-01 deep review: Selected fresh650–679 absolute/complete resolve includingstrict/symlink behavior;restunread. Original exactfilename/directparent/readlimit guard;simulatedresolvedescape distinct from actualreparsepoint/TOCTOU protection. See docs/research/2026-09-30-pces-30-01-deep-review.md No live infrastructure execution."
+      "notes": "September 29 XK0-006 deep review: Targeted path/link/junction/relative-path APIs for the original static-tree comparator; no race-resistance or Linux metadata guarantee. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution. September 30 PCES-30-01 deep review: Selected fresh650–679 absolute/complete resolve includingstrict/symlink behavior;restunread. Original exactfilename/directparent/readlimit guard;simulatedresolvedescape distinct from actualreparsepoint/TOCTOU protection. See docs/research/2026-09-30-pces-30-01-deep-review.md No live infrastructure execution. September 30 PCEA-30-01 deep review: Freshbody hash matchesPCES;reuse650–679 absolute/resolve includingstrict/symlinks. Restunread. Fixedownedtarget/precheckedlink only;noactualsymlink/junction/raceattack test orfilesystemsecurityboundaryclaim. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "python313-hashlib",
@@ -59755,13 +59933,13 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-29",
+      "last_checked": "2026-09-30",
       "supported_exams": [
         "PCAP-31-03",
         "PCPP-32-101",
         "PCEA-30-01"
       ],
-      "notes": "Canonical library reference for targeted operations, I/O, GUI, networking, persistence, data formats, logging, configuration and environment behavior. September 29 PCAP-31-03 deep review: Fresh 13544-character index captured. Introduction and opening navigation through functional-programming modules read; remaining library table not audited. Index supports navigation only; separately registered exact topic pages carry technical claims. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution. September 29 PCPP-32-101 deep review: Fresh aggregate index fetched but not read in this PCPP review. Technical claims use the explicitly selected pinned3.13 chapter contracts; no full standard-library audit. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution."
+      "notes": "Canonical library reference for targeted operations, I/O, GUI, networking, persistence, data formats, logging, configuration and environment behavior. September 29 PCAP-31-03 deep review: Fresh 13544-character index captured. Introduction and opening navigation through functional-programming modules read; remaining library table not audited. Index supports navigation only; separately registered exact topic pages carry technical claims. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution. September 29 PCPP-32-101 deep review: Fresh aggregate index fetched but not read in this PCPP review. Technical claims use the explicitly selected pinned3.13 chapter contracts; no full standard-library audit. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 30 PCEA-30-01 deep review: Complete fresh standard-library introduction/index/navigation read, identifying3.14.7. Index is navigation, not every linked manual. Pinned3.13 selected pages identify3.13.15; actual interpreter3.13.14. No runtime update or inferred exam patch requirement. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "openedg-python-essentials-2",
@@ -60807,12 +60985,12 @@
       "authority_class": 2,
       "source_type": "expert-resource",
       "access_model": "public",
-      "last_checked": "2026-09-29",
+      "last_checked": "2026-09-30",
       "supported_exams": [
         "PCPP-32-101",
         "PCEA-30-01"
       ],
-      "notes": "Current upstream documentation for the third-party HTTP client; use only with permitted endpoints and bounded retry/timeout behavior. September 29 PCPP-32-101 deep review: Complete public landing read, identifying2.34.2 andPython3.10+ support. Navigation only, not every linked chapter. Installed2.34.2 used without installation or update. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution."
+      "notes": "Current upstream documentation for the third-party HTTP client; use only with permitted endpoints and bounded retry/timeout behavior. September 29 PCPP-32-101 deep review: Complete public landing read, identifying2.34.2 andPython3.10+ support. Navigation only, not every linked chapter. Installed2.34.2 used without installation or update. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 30 PCEA-30-01 deep review: Complete fresh landing read, version2.34.2 matching installed distribution; HTTP/session/TLS/auth/proxy feature overview and navigation. Selected quickstart,advanced andAPI contracts separately reviewed. No external authenticated request or unseen linked-manual completion. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "tkdocs-tutorial",
@@ -61397,16 +61575,60 @@
       "notes": "This anonymously readable publisher product listing resolves ISBN9781098142155 to Kubernetes Best Practices,2ndedition. The prior Practical Python Security label and PCES recommendation were incorrect. Book interior/paid access not reviewed; retained for repair provenance, not a PCES learning recommendation. September 30 PCES-30-01 deep review: Indexed publisher title,metadata and TOC through435 read:URL/ISBN9781098142155 identifies Kubernetes Best Practices,2ndedition,October2023,324pages,7h46m. Original Practical Python Security title/relevance unsupported. Removed recommendation and corrected catalog identity; no bookinterior or subscriptionentitlement reviewed. Remaininglandingbody not claimed; directfetch blocked. See docs/research/2026-09-30-pces-30-01-deep-review.md No live infrastructure execution. Classified as first-party public product metadata used to verify its own book identity, not as reviewed paid training content or canonical PCES instruction."
     },
     {
-      "id":"pcea-30-01-syllabus","title":"PCEA™ – Certified Entry-Level Automation Specialist with Python: EXAM SYLLABUS","url":"https://pythoninstitute.org/pcea-exam-syllabus","publisher":"OpenEDG Python Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCEA-30-01"],"notes":"Canonical six-block syllabus aligned to PCEA-30-01 and last updated September 2, 2025; it says active while the credential page says beta."
+      "id": "pcea-30-01-syllabus",
+      "title": "PCEA™ – Certified Entry-Level Automation Specialist with Python: EXAM SYLLABUS",
+      "url": "https://pythoninstitute.org/pcea-exam-syllabus",
+      "publisher": "OpenEDG Python Institute",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "PCEA-30-01"
+      ],
+      "notes": "Canonical six-block syllabus aligned to PCEA-30-01 and last updated September 2, 2025; it says active while the credential page says beta. September 30 PCEA-30-01 deep review: Complete canonical indexed English syllabus,all46detailedobjectives/bullets andfullMQC read afterdirect/monitorWin10060. Sixblocks6/9/7/8/8/8,weights13/19.5/15/17.5/17.5/17.5;September2,2025 active outline. MQC mislabelsRequests/schedule/BeautifulSoupstandardlibraries. Existingdetailedsnapshot retained;no freshautomatedhashsuccess orfullPDFreading. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pcea-certification-page","title":"PCEA Certified Entry-Level Automation Specialist with Python","url":"https://pythoninstitute.org/pcea","publisher":"OpenEDG Python Institute","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCEA-30-01"],"notes":"Current logistics and explicit limited-availability, small-market-trial/beta status; verify availability before purchase."
+      "id": "pcea-certification-page",
+      "title": "PCEA Certified Entry-Level Automation Specialist with Python",
+      "url": "https://pythoninstitute.org/pcea",
+      "publisher": "OpenEDG Python Institute",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "PCEA-30-01"
+      ],
+      "notes": "Current logistics and explicit limited-availability, small-market-trial/beta status; verify availability before purchase. September 30 PCEA-30-01 deep review: Complete indexed public body/table read afterdirecttimeout:limitedavailability/SmallMarketTrial/Beta30-01,7years,46questions/60minplusNDA/75cumulative/English/TestNow,69USDexam86retake,noprerequisite/PCEP-equivalentscriptingrecommended. Active syllabus andbeta delivery describe differentaspects. PCAApath isdifferentcredential. No alignedcourse listed on reviewedpage;not proofnoneexistelsewhere. Noaccount/purchase orindependentsalaryverification. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"automate-boring-stuff","title":"Automate the Boring Stuff with Python","url":"https://automatetheboringstuff.com/","publisher":"Al Sweigart","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCEA-30-01"],"notes":"Free author-hosted automation book; broader than PCEA, so select relevant projects and add operational safety controls."
+      "id": "automate-boring-stuff",
+      "title": "Automate the Boring Stuff with Python",
+      "url": "https://automatetheboringstuff.com/",
+      "publisher": "Al Sweigart",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "PCEA-30-01"
+      ],
+      "notes": "Free author-hosted automation book; broader than PCEA, so select relevant projects and add operational safety controls. September 30 PCEA-30-01 deep review: Complete indexed authorlanding read afterdirecttimeout:freewebthirdedition,beginners,24chapterTOC,oldereditions/companionworkbook andvideocoursemostlyfirstedition. Thirdeditionchapter0 onlysearch excerpts;notcompletechapter. No linkedchapter/workbook/video completion,download,account,purchase,discountredemption orreviewcopyrequest. Authorplanninghours only. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"schedule-documentation","title":"schedule Documentation","url":"https://schedule.readthedocs.io/en/stable/","publisher":"schedule project","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCEA-30-01"],"notes":"Primary documentation for the lightweight job-scheduling library named by the blueprint."
+      "id": "schedule-documentation",
+      "title": "schedule Documentation",
+      "url": "https://schedule.readthedocs.io/en/stable/",
+      "publisher": "schedule project",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "PCEA-30-01"
+      ],
+      "notes": "Primary documentation for the lightweight job-scheduling library named by the blueprint. September 30 PCEA-30-01 deep review: Complete fresh landing read,docs1.2.0:in-processperiodicjobs,explicitlimits forpersistence/exacttiming/concurrency/localization andlong-jobduration. Linkedtutorials/subpagesunread. Packageabsent;noinstallation orperiodicloop/service/schedulercreated. Distinctfromstdlibsched. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "beautiful-soup-documentation",
@@ -61416,15 +61638,26 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-29",
+      "last_checked": "2026-09-30",
       "supported_exams": [
         "PCEA-30-01",
         "PCAD-31-02"
       ],
-      "notes": "Primary documentation for the HTML parser named by the blueprint; scraping still requires permission and responsible rate limits. September 29 PCAD-31-02 deep review: Direct retrieval failed; indexed primary complete get_text subsection includingseparator/strip/scriptstyletemplate notes andfind/calltagintro read. Fullmanual unread. Currentdocs4.14.3 versus installed4.13.3; originalnestedtext/missingelement probes executed locally. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+      "notes": "Primary documentation for the HTML parser named by the blueprint; scraping still requires permission and responsible rate limits. September 29 PCAD-31-02 deep review: Direct retrieval failed; indexed primary complete get_text subsection includingseparator/strip/scriptstyletemplate notes andfind/calltagintro read. Fullmanual unread. Currentdocs4.14.3 versus installed4.13.3; originalnestedtext/missingelement probes executed locally. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution. September 30 PCEA-30-01 deep review: Indexedselected introduction/install/parser excerpts;CSS1202–1302 andtext/parser1822–1863 read afterdirecterror. Not complete2504-line manual. Header4.14.3/body4.15.0 differ;installed4.13.3 used fororiginalhtml.parser fixture,uniqueh1.title/cardinality/get_text behavior. No browserJavaScript orpublicsitescraping. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-python-automation-cookbook-third","title":"Python Automation Cookbook, 3rd Edition","url":"https://www.oreilly.com/library/view/python-automation-cookbook/9781803247300/","publisher":"O'Reilly / Packt","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["PCEA-30-01"],"notes":"Broad automation cookbook. Select 20–35 hours matched to the beta blueprint and use disposable targets."
+      "id": "oreilly-python-automation-cookbook-third",
+      "title": "Python Automation Cookbook, 3rd Edition",
+      "url": "https://www.oreilly.com/library/view/python-automation-cookbook/9781803247300/",
+      "publisher": "O'Reilly / Packt",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "PCEA-30-01"
+      ],
+      "notes": "Original OReilly ISBN9781803247300/title association remains unverified after blocked/timeout access and unsuccessful exact-ISBN confirmation. Removed from PCEA recommendations. Retained as historical provenance; do not assume it identifies the confirmed Packt print ISBN9781806702893. Paid interior and entitlement not reviewed. September 30 PCEA-30-01 deep review: Directblocked andindexedopen timeout;exactISBN9781803247300 search producedno confirmatorypublisheridentity. Content/edition/accessunverified. Removedrecommendation,retainoldcatalogidentitywithcaution;donot claimwrongbookor silentlymapoldISBNtonewPacktidentity. No subscription/account/bookinterior. See docs/research/2026-09-30-pcea-30-01-deep-review.md No live infrastructure execution."
     },
     {
       "id":"pcei-30-01-syllabus","title":"PCEI-30-01 Exam Syllabus","url":"https://pythoninstitute.org/pcei-exam-syllabus","publisher":"OpenEDG Python Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCEI-30-01"],"notes":"Canonical active six-block syllabus aligned to PCEI-30-01 and last updated December 11, 2025; objective 2.2 has a testing-related heading inconsistent with its ML workflow body."

@@ -1,0 +1,2318 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-30",
+  "exam_code": "PCEA-30-01",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/PCEA-30-01-python-certified-entry-level-automation-specialist.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "bccb433dd7207cbc72a3ab5cf1043e2019f7faf48ac021d79188d79a7c1f43ea",
+  "guide_after_sha256": "907a5a9578eed6add21f53e10b414c344386f785bbcc2f1a309333cc7102d803",
+  "prior_records": {
+    "exam": {
+      "code": "PCEA-30-01",
+      "level": "beginner",
+      "vendor_id": "python-institute",
+      "title": "PCEA Certified Entry-Level Automation Specialist with Python",
+      "status": "beta",
+      "study_guide_url": "https://pythoninstitute.org/pcea-exam-syllabus",
+      "guide_path": "guides/PCEA-30-01-python-certified-entry-level-automation-specialist.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite is published; PCEP-equivalent Python and basic scripting/data exposure are recommended. Build a bounded automation that is safe to rerun, observable, configurable, recoverable and schedulable across CLI execution, environments, logging, files, CSV/JSON, permitted web/API access, notifications and reports. The credential page labels PCEA-30-01 limited availability/small market trial/beta even though the syllabus says active; verify availability before purchase."
+    },
+    "review": {
+      "id": "pcea-30-01-2026-09-02-source-validation",
+      "exam_code": "PCEA-30-01",
+      "guide_path": "guides/PCEA-30-01-python-certified-entry-level-automation-specialist.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/pcea-30-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "979e1a08fc3b397566e6549bae8cbfc70238b37d5652f54fadde55f1011c3598",
+      "objective_coverage": [
+        {
+          "objective_group": "Fundamentals of Automation (13%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated lab"
+          ]
+        },
+        {
+          "objective_group": "Basic Command-Line Automation with Python (19.5%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated lab"
+          ]
+        },
+        {
+          "objective_group": "Logging and Monitoring Essentials (15%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated lab"
+          ]
+        },
+        {
+          "objective_group": "Basic File and Data Automation (17.5%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated lab"
+          ]
+        },
+        {
+          "objective_group": "Basic Web and API Automation (17.5%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated lab"
+          ]
+        },
+        {
+          "objective_group": "Scheduling, Notifications, and Reporting (17.5%)",
+          "guide_sections": [
+            "Section 6",
+            "Integrated lab"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 8,
+        "reachable": 6,
+        "access_blocked": 1,
+        "missing_or_error": 1
+      },
+      "notes": "All six beta PCEA-30-01 blocks are mapped through automation selection/value, CLI execution and dependency isolation, logging/monitoring, safe file and data work, permitted web/API interactions, scheduling, notification and reporting. The integrated lab requires idempotence, concurrency control, recovery and observable outcomes. The credential-page beta/small-market-trial status versus syllabus active label is explicit. O'Reilly is automation-blocked, not missing. No recalled/live item, answer dump or copied course question is used. September 29 PCAD shared-source health refresh changes link counts only; this guide content and review date are unchanged."
+    },
+    "sources": [
+      {
+        "id": "python-3-library-reference",
+        "title": "Python Standard Library",
+        "url": "https://docs.python.org/3/library/",
+        "publisher": "Python Software Foundation",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "PCAP-31-03",
+          "PCPP-32-101",
+          "PCEA-30-01"
+        ],
+        "notes": "Canonical library reference for targeted operations, I/O, GUI, networking, persistence, data formats, logging, configuration and environment behavior. September 29 PCAP-31-03 deep review: Fresh 13544-character index captured. Introduction and opening navigation through functional-programming modules read; remaining library table not audited. Index supports navigation only; separately registered exact topic pages carry technical claims. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution. September 29 PCPP-32-101 deep review: Fresh aggregate index fetched but not read in this PCPP review. Technical claims use the explicitly selected pinned3.13 chapter contracts; no full standard-library audit. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "requests-documentation",
+        "title": "Requests Documentation",
+        "url": "https://requests.readthedocs.io/en/latest/",
+        "publisher": "Python Software Foundation community project",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "PCPP-32-101",
+          "PCEA-30-01"
+        ],
+        "notes": "Current upstream documentation for the third-party HTTP client; use only with permitted endpoints and bounded retry/timeout behavior. September 29 PCPP-32-101 deep review: Complete public landing read, identifying2.34.2 andPython3.10+ support. Navigation only, not every linked chapter. Installed2.34.2 used without installation or update. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "pcea-30-01-syllabus",
+        "title": "PCEAâ„¢ â€“ Certified Entry-Level Automation Specialist with Python: EXAM SYLLABUS",
+        "url": "https://pythoninstitute.org/pcea-exam-syllabus",
+        "publisher": "OpenEDG Python Institute",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEA-30-01"
+        ],
+        "notes": "Canonical six-block syllabus aligned to PCEA-30-01 and last updated September 2, 2025; it says active while the credential page says beta."
+      },
+      {
+        "id": "pcea-certification-page",
+        "title": "PCEA Certified Entry-Level Automation Specialist with Python",
+        "url": "https://pythoninstitute.org/pcea",
+        "publisher": "OpenEDG Python Institute",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEA-30-01"
+        ],
+        "notes": "Current logistics and explicit limited-availability, small-market-trial/beta status; verify availability before purchase."
+      },
+      {
+        "id": "automate-boring-stuff",
+        "title": "Automate the Boring Stuff with Python",
+        "url": "https://automatetheboringstuff.com/",
+        "publisher": "Al Sweigart",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEA-30-01"
+        ],
+        "notes": "Free author-hosted automation book; broader than PCEA, so select relevant projects and add operational safety controls."
+      },
+      {
+        "id": "schedule-documentation",
+        "title": "schedule Documentation",
+        "url": "https://schedule.readthedocs.io/en/stable/",
+        "publisher": "schedule project",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEA-30-01"
+        ],
+        "notes": "Primary documentation for the lightweight job-scheduling library named by the blueprint."
+      },
+      {
+        "id": "beautiful-soup-documentation",
+        "title": "Beautiful Soup Documentation",
+        "url": "https://www.crummy.com/software/BeautifulSoup/bs4/doc/",
+        "publisher": "Leonard Richardson",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "PCEA-30-01",
+          "PCAD-31-02"
+        ],
+        "notes": "Primary documentation for the HTML parser named by the blueprint; scraping still requires permission and responsible rate limits. September 29 PCAD-31-02 deep review: Direct retrieval failed; indexed primary complete get_text subsection includingseparator/strip/scriptstyletemplate notes andfind/calltagintro read. Fullmanual unread. Currentdocs4.14.3 versus installed4.13.3; originalnestedtext/missingelement probes executed locally. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "oreilly-python-automation-cookbook-third",
+        "title": "Python Automation Cookbook, 3rd Edition",
+        "url": "https://www.oreilly.com/library/view/python-automation-cookbook/9781803247300/",
+        "publisher": "O'Reilly / Packt",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCEA-30-01"
+        ],
+        "notes": "Broad automation cookbook. Select 20â€“35 hours matched to the beta blueprint and use disposable targets."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "40a5d66eb54c58d80930f5fa2634402952f4c5a7f543ee585d1f027c882c833b",
+      "guide_sections": [
+        "1. Automation fundamentals â€” 13%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "5d7beb44944798dcbfd5d9600705f2a2101c9915bf88070807c5d52fb105e146",
+      "guide_sections": [
+        "1. Automation fundamentals â€” 13%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "7087560cc562451b2740cb672aea5083a0a26707ddbbee0441227ced0d93c00f",
+      "guide_sections": [
+        "1. Automation fundamentals â€” 13%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "783d447f913ec2f14e53d51dda4b1be7b919cea5b93fe4d0facec87530351cc2",
+      "guide_sections": [
+        "1. Automation fundamentals â€” 13%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "9af942ae8c878e55809e30dfb1b17bbf65040f853f112d02dd239ce68fcbf14e",
+      "guide_sections": [
+        "1. Automation fundamentals â€” 13%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "118e7e46c40680052f2a1ac0f5e9fc5237b5ad9bb994bdd86244d315258de45b",
+      "guide_sections": [
+        "1. Automation fundamentals â€” 13%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "30d32bb110abdf5b39684cb5d34bfb8463ad5bbca9984196f617235162f9f623",
+      "guide_sections": [
+        "2. Command-line automation â€” 19.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "d32fc81d866398c706c44a69bde4bcc78a47a6b9235d494eeaf7ab6fc25557aa",
+      "guide_sections": [
+        "2. Command-line automation â€” 19.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "94d1278633e70295ea89817a6fff65e6b7dcaca7bb7c0cfe7b276cb9d360c197",
+      "guide_sections": [
+        "2. Command-line automation â€” 19.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "226c4609081a0ca71cb0cc2b1eac70838ee970d378b2d00064710a4b1f366650",
+      "guide_sections": [
+        "2. Command-line automation â€” 19.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "d3f1ebbb70c4b4561e1a9ceefdba98a865b36568914b5afc7b1c3f00903d0a8f",
+      "guide_sections": [
+        "2. Command-line automation â€” 19.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "44cdec15b7a9a9d3a279567e91158cef95c7d60c194d18215356c144abc8e55f",
+      "guide_sections": [
+        "2. Command-line automation â€” 19.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "1afb51c702af2cca4462d773364424b5b977ec159ec19eecbf653186b4b3d8a3",
+      "guide_sections": [
+        "2. Command-line automation â€” 19.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "8aad82663acee3c38e7656639d40f130da57b6282871f47bb3cfba691a39a10d",
+      "guide_sections": [
+        "2. Command-line automation â€” 19.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "636af506283ba09311bcaa5c9571140f1e3793dfcd77aed1e7baa17f85efd468",
+      "guide_sections": [
+        "2. Command-line automation â€” 19.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "b36df21d813105177d90a8a4c438bb45e3d279875660610c757b7ee69b93e48d",
+      "guide_sections": [
+        "3. Logging and monitoring â€” 15%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "c05bb0f59277548ca4ae07e974e041dc91c7297af0214fb5611c8e86b2ec34c2",
+      "guide_sections": [
+        "3. Logging and monitoring â€” 15%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "89ca3aa71551a13f1aa1082a018f3bc183c4159cc5da56fa783d6c4aebca7a11",
+      "guide_sections": [
+        "3. Logging and monitoring â€” 15%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "ef26afe2d887adbb891091a3396b6cc5a57939175e42246b40f8602df0704d21",
+      "guide_sections": [
+        "3. Logging and monitoring â€” 15%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "dcec16b5156cdce48affe01d414e2d62bdc5b55ff3f568a8bec44fb44291490f",
+      "guide_sections": [
+        "3. Logging and monitoring â€” 15%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "295ebbb1587bf41be84d5299d84fa8d7bbf6653ec71c6f38800e4b1bd227f733",
+      "guide_sections": [
+        "3. Logging and monitoring â€” 15%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "d5e3bcdfbbbd8306883eccdf060e5d1e3bb452851d646a7fd5ebbcd4629c215a",
+      "guide_sections": [
+        "3. Logging and monitoring â€” 15%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "51cdb02dbdc1c44c6bea781380d9cec25a18386588b1d68d360a0acf9d93a3e4",
+      "guide_sections": [
+        "4. File and data automation â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "47134aed12b5dff2f3648aae30f73c882bb22c0b33f511739606e999f9306a5c",
+      "guide_sections": [
+        "4. File and data automation â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "60da1803df760f3c2a03998d31d8e48cc51804b152f7edf8c7ef77623c1ed87e",
+      "guide_sections": [
+        "4. File and data automation â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "1aa07eb5626fceffe58a09acdfcdd72e5609d00c90c922d4556e1b9a7c0d11a9",
+      "guide_sections": [
+        "4. File and data automation â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "a0f5423fb5f8e376ed314f8667c179c83571cd484722f2d4b70dfe348658307f",
+      "guide_sections": [
+        "4. File and data automation â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "d90c851230ba6d37e8fec8964e5c58a11c89728587ea2f2caeba05bfc49509d0",
+      "guide_sections": [
+        "4. File and data automation â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "2115db248e32673ad5e0750c80f1d6cc6a83c5a30faf91c5a0cfae60cac13243",
+      "guide_sections": [
+        "4. File and data automation â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "8f0d06ca192d06fa1b938157bd1f1da877199461577a23492e2f500315eb29a0",
+      "guide_sections": [
+        "4. File and data automation â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "f192707fb5eabe752554076d2cbf118e2907e964617d53435070573fce97d6fb",
+      "guide_sections": [
+        "5. Web and API automation â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "54c2840e04ee3d0a381e5f7086407f873a4393fbd477405f4ef30e3a8946489d",
+      "guide_sections": [
+        "5. Web and API automation â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "3e41c4b2f19b5d51d83d623c0d6b256edb261b9f75f5ddf3a02c814a7f301914",
+      "guide_sections": [
+        "5. Web and API automation â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "b8f36715cf0d4e6d26a1fd4dbb190d2b79f55430d2a716fe41658869ce75abf6",
+      "guide_sections": [
+        "5. Web and API automation â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "869213d09ee346ea183331814ecedb406d844b600a2c9f407d1c2f430f9213c4",
+      "guide_sections": [
+        "5. Web and API automation â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "6d6a02c9445d1c0e8e8b24c74c61a8f251f36e9e15ef3d32e9dc5ba7e669569b",
+      "guide_sections": [
+        "5. Web and API automation â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "34e94650cf8e8b47fe1c22df3fdfd3e7975a8437936a0096cfad4ef20fef4049",
+      "guide_sections": [
+        "5. Web and API automation â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 8,
+      "objective_sha256": "38aa51d2cd62919f726b8cf11b8d0a08d698ad3bb99766c3ed4e49d7e508c1ef",
+      "guide_sections": [
+        "5. Web and API automation â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "bfbc9b481680c5289ef5871ded8b1380885e8256c2fb6ce6907975fcd45a5b1a",
+      "guide_sections": [
+        "6. Scheduling, notifications, and reporting â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "f56a7a4a4b18cdc14d216b325f900406478d4075f25ea5adf005a8f8c0c120cc",
+      "guide_sections": [
+        "6. Scheduling, notifications, and reporting â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "21850b201e4d5f4f3e05fe308c888cff9ec96306310d55e21306bab47070320e",
+      "guide_sections": [
+        "6. Scheduling, notifications, and reporting â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "2306140c8fba33ada387dcd86c86d20a16ad347ebceb03fe8c4f6142012b8b55",
+      "guide_sections": [
+        "6. Scheduling, notifications, and reporting â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "8623389aaca543db3a3415c52c81d7cdb3723768c9e4588b726fdaaf311c04be",
+      "guide_sections": [
+        "6. Scheduling, notifications, and reporting â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "b2ae76be06b59c6eee43fa2f9c48febdefeb0e15fd7378b103899ede7354e3c2",
+      "guide_sections": [
+        "6. Scheduling, notifications, and reporting â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "cf7698aa4f2e02c2916d83491d750ca8f1b964c680b7a0766ab6973af3062568",
+      "guide_sections": [
+        "6. Scheduling, notifications, and reporting â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 8,
+      "objective_sha256": "3c6cb826b53b1b8361c9127b962a1338cfdf17119f64b0a55a8b58aa0fb22dc2",
+      "guide_sections": [
+        "6. Scheduling, notifications, and reporting â€” 17.5%",
+        "Exact original executable workbook",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [
+      "PCEA-30-01"
+    ],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "PCEA-30-01",
+        "title": "PCEA Certified Entry-Level Automation Specialist with Python",
+        "url": "https://pythoninstitute.org/pcea-exam-syllabus",
+        "guide_path": "guides/PCEA-30-01-python-certified-entry-level-automation-specialist.md",
+        "snapshot_path": "data\\objective-snapshots\\pcea-30-01-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\pcea-30-01-official-status.json",
+        "status": "error",
+        "changed": false,
+        "error": "URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 29,
+    "reachable": 23,
+    "access_blocked": 1,
+    "missing_or_error": 5
+  },
+  "source_fetches": [
+    {
+      "id": "python-3-library-reference",
+      "url": "https://docs.python.org/3/library/",
+      "checked_at": "2026-09-30T05:11:18.995683+00:00",
+      "health": {
+        "id": "python-3-library-reference",
+        "url": "https://docs.python.org/3/library/",
+        "checked_at": "2026-09-30T05:11:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3/library/",
+        "content_type": "text/html",
+        "page_title": "The Python standard library",
+        "canonical_url": "https://docs.python.org/3/library/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "fb5698791e269424f8395b8c00bf002faf2e0c21325f7fbab09036f8f86e585c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3/library/",
+      "sha256": "2a4c0db9ce2363de8c8563ef5da5c55950635c8c710d6b2152542b06d945859f",
+      "text_characters": 13544
+    },
+    {
+      "id": "requests-documentation",
+      "url": "https://requests.readthedocs.io/en/latest/",
+      "checked_at": "2026-09-30T05:11:18.996269+00:00",
+      "health": {
+        "id": "requests-documentation",
+        "url": "https://requests.readthedocs.io/en/latest/",
+        "checked_at": "2026-09-30T05:11:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://requests.readthedocs.io/en/latest/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Requests: HTTP for Humansâ„¢ â€” Requests 2.34.2 documentation",
+        "canonical_url": "https://requests.readthedocs.io/en/latest/",
+        "duration_signals": [],
+        "signal_fingerprint": "1a712e2203105a4a5820de6173cf06268ecc9ee118624f762d6f10856223e405",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://requests.readthedocs.io/en/latest/",
+      "sha256": "15665f93d8e12d0933b4f6b26b84d119cd04242371d0612f6b660026fd58f343",
+      "text_characters": 4219
+    },
+    {
+      "id": "pcea-30-01-syllabus",
+      "url": "https://pythoninstitute.org/pcea-exam-syllabus",
+      "checked_at": "2026-09-30T05:11:18.996672+00:00",
+      "health": {
+        "id": "pcea-30-01-syllabus",
+        "url": "https://pythoninstitute.org/pcea-exam-syllabus",
+        "checked_at": "2026-09-30T05:11:18+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pcea-exam-syllabus",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "pcea-certification-page",
+      "url": "https://pythoninstitute.org/pcea",
+      "checked_at": "2026-09-30T05:11:19.378731+00:00",
+      "health": {
+        "id": "pcea-certification-page",
+        "url": "https://pythoninstitute.org/pcea",
+        "checked_at": "2026-09-30T05:11:19+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pcea",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "automate-boring-stuff",
+      "url": "https://automatetheboringstuff.com/",
+      "checked_at": "2026-09-30T05:11:19.408252+00:00",
+      "health": {
+        "id": "automate-boring-stuff",
+        "url": "https://automatetheboringstuff.com/",
+        "checked_at": "2026-09-30T05:11:19+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://automatetheboringstuff.com/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "schedule-documentation",
+      "url": "https://schedule.readthedocs.io/en/stable/",
+      "checked_at": "2026-09-30T05:11:37.457505+00:00",
+      "health": {
+        "id": "schedule-documentation",
+        "url": "https://schedule.readthedocs.io/en/stable/",
+        "checked_at": "2026-09-30T05:11:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://schedule.readthedocs.io/en/stable/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "schedule â€” schedule 1.2.0 documentation",
+        "canonical_url": "https://schedule.readthedocs.io/en/stable/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "4b6b4d5023b1cfe20a22af23f619cdd175be46292cf5d87bdb07396712ebcc3d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://schedule.readthedocs.io/en/stable/",
+      "sha256": "d0d19722cc3be530e5ac92ffbcb59b8787ebe04956cc54c2a52887ef405c64a8",
+      "text_characters": 5533
+    },
+    {
+      "id": "beautiful-soup-documentation",
+      "url": "https://www.crummy.com/software/BeautifulSoup/bs4/doc/",
+      "checked_at": "2026-09-30T05:11:37.488578+00:00",
+      "health": {
+        "id": "beautiful-soup-documentation",
+        "url": "https://www.crummy.com/software/BeautifulSoup/bs4/doc/",
+        "checked_at": "2026-09-30T05:11:37+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://www.crummy.com/software/BeautifulSoup/bs4/doc/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "oreilly-python-automation-cookbook-third",
+      "url": "https://www.oreilly.com/library/view/python-automation-cookbook/9781803247300/",
+      "checked_at": "2026-09-30T05:11:37.488999+00:00",
+      "health": {
+        "id": "oreilly-python-automation-cookbook-third",
+        "url": "https://www.oreilly.com/library/view/python-automation-cookbook/9781803247300/",
+        "checked_at": "2026-09-30T05:11:37+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/python-automation-cookbook/9781803247300/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "pcea-testing-policies",
+      "url": "https://pythoninstitute.org/pcea-testing-policies",
+      "checked_at": "2026-09-30T05:15:23.051282+00:00",
+      "health": {
+        "id": "pcea-testing-policies",
+        "url": "https://pythoninstitute.org/pcea-testing-policies",
+        "checked_at": "2026-09-30T05:15:23+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pcea-testing-policies",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "python313-sys",
+      "url": "https://docs.python.org/3.13/library/sys.html",
+      "checked_at": "2026-09-30T05:15:23.051787+00:00",
+      "health": {
+        "id": "python313-sys",
+        "url": "https://docs.python.org/3.13/library/sys.html",
+        "checked_at": "2026-09-30T05:15:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/sys.html",
+        "content_type": "text/html",
+        "page_title": "sys â€” System-specific parameters and functions",
+        "canonical_url": "https://docs.python.org/3/library/sys.html",
+        "duration_signals": [],
+        "signal_fingerprint": "320a4cd27163dd196d16a73c7630b6e6ec0b3e01d75a98f772e207115ba85940",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/sys.html",
+      "sha256": "1339ad1d479c32f62ab37fd3a95f4236a05cadba523a78f0516f49e155250238",
+      "text_characters": 66210
+    },
+    {
+      "id": "python313-venv",
+      "url": "https://docs.python.org/3.13/library/venv.html",
+      "checked_at": "2026-09-30T05:15:23.052145+00:00",
+      "health": {
+        "id": "python313-venv",
+        "url": "https://docs.python.org/3.13/library/venv.html",
+        "checked_at": "2026-09-30T05:15:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/venv.html",
+        "content_type": "text/html",
+        "page_title": "venv â€” Creation of virtual environments",
+        "canonical_url": "https://docs.python.org/3/library/venv.html",
+        "duration_signals": [],
+        "signal_fingerprint": "dfb7511df4e5930283b3168c4408addafb53405fc7e315e7c069bfbd45f14135",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/venv.html",
+      "sha256": "5ad01454e55fd99967b1da473b183fd934b497c1ab5ac7a8210d75077670c6fa",
+      "text_characters": 25321
+    },
+    {
+      "id": "python313-logging",
+      "url": "https://docs.python.org/3.13/library/logging.html",
+      "checked_at": "2026-09-30T05:15:23.350384+00:00",
+      "health": {
+        "id": "python313-logging",
+        "url": "https://docs.python.org/3.13/library/logging.html",
+        "checked_at": "2026-09-30T05:15:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/logging.html",
+        "content_type": "text/html",
+        "page_title": "logging â€” Logging facility for Python",
+        "canonical_url": "https://docs.python.org/3/library/logging.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3f4d376d117935596fa9b729cbbfb1fa1d9a8938d2048fb9871383140bf922f3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/logging.html",
+      "sha256": "cc184e2a1313a1a8f3e990414d7ebc7cc413841abcb47ec166ebd69228fbfe5f",
+      "text_characters": 56915
+    },
+    {
+      "id": "python313-os",
+      "url": "https://docs.python.org/3.13/library/os.html",
+      "checked_at": "2026-09-30T05:15:23.557835+00:00",
+      "health": {
+        "id": "python313-os",
+        "url": "https://docs.python.org/3.13/library/os.html",
+        "checked_at": "2026-09-30T05:15:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/os.html",
+        "content_type": "text/html",
+        "page_title": "os â€” Miscellaneous operating system interfaces",
+        "canonical_url": "https://docs.python.org/3/library/os.html",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "bfb851a66144443caeda04228a59d93b272025b004d180489969df47cb562e21",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/os.html",
+      "sha256": "f52aeb5dade2d7c8a32b5803b193562053f79e62bdec18e5dea40849e10e4bbd",
+      "text_characters": 171291
+    },
+    {
+      "id": "python313-shutil",
+      "url": "https://docs.python.org/3.13/library/shutil.html",
+      "checked_at": "2026-09-30T05:15:24.288395+00:00",
+      "health": {
+        "id": "python313-shutil",
+        "url": "https://docs.python.org/3.13/library/shutil.html",
+        "checked_at": "2026-09-30T05:15:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/shutil.html",
+        "content_type": "text/html",
+        "page_title": "shutil â€” High-level file operations",
+        "canonical_url": "https://docs.python.org/3/library/shutil.html",
+        "duration_signals": [],
+        "signal_fingerprint": "b61a7fcaef81af2e0fb3898f640a714222198cae14048d65499d75248e50d337",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/shutil.html",
+      "sha256": "bc6a85464fb866a81c54e5635c046fe33127c61ccd6ed811231703475b2f829f",
+      "text_characters": 31751
+    },
+    {
+      "id": "python313-csv",
+      "url": "https://docs.python.org/3.13/library/csv.html",
+      "checked_at": "2026-09-30T05:15:24.643309+00:00",
+      "health": {
+        "id": "python313-csv",
+        "url": "https://docs.python.org/3.13/library/csv.html",
+        "checked_at": "2026-09-30T05:15:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/csv.html",
+        "content_type": "text/html",
+        "page_title": "csv â€” CSV File Reading and Writing",
+        "canonical_url": "https://docs.python.org/3/library/csv.html",
+        "duration_signals": [],
+        "signal_fingerprint": "86499c6a09d3131a422c0c6b0c4784d620964719ebb01792199ac575e9391283",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/csv.html",
+      "sha256": "cfd4ed9d4e3357b1c300bc0f5a4eaf9a9d183e318432f3490096cf5f6b07a689",
+      "text_characters": 22245
+    },
+    {
+      "id": "python313-json",
+      "url": "https://docs.python.org/3.13/library/json.html",
+      "checked_at": "2026-09-30T05:15:25.221236+00:00",
+      "health": {
+        "id": "python313-json",
+        "url": "https://docs.python.org/3.13/library/json.html",
+        "checked_at": "2026-09-30T05:15:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/json.html",
+        "content_type": "text/html",
+        "page_title": "json â€” JSON encoder and decoder",
+        "canonical_url": "https://docs.python.org/3/library/json.html",
+        "duration_signals": [],
+        "signal_fingerprint": "003894cea941cd12f7c74ca070bd67c17798d619b1b2f3265673efdcf49d1633",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/json.html",
+      "sha256": "343d320c237449b9715d3939ad33dbc28bce9f7ffc284cc651199089e329d9a6",
+      "text_characters": 25434
+    },
+    {
+      "id": "python313-tempfile",
+      "url": "https://docs.python.org/3.13/library/tempfile.html",
+      "checked_at": "2026-09-30T05:15:25.594838+00:00",
+      "health": {
+        "id": "python313-tempfile",
+        "url": "https://docs.python.org/3.13/library/tempfile.html",
+        "checked_at": "2026-09-30T05:15:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/tempfile.html",
+        "content_type": "text/html",
+        "page_title": "tempfile â€” Generate temporary files and directories",
+        "canonical_url": "https://docs.python.org/3/library/tempfile.html",
+        "duration_signals": [],
+        "signal_fingerprint": "5f9dd82b6f021af852cc57b9c19ce3c49d656dd7f5cefb796fab60fe88a362ef",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/tempfile.html",
+      "sha256": "8324daf0e4e26366ad3d96ce293df41e32b7ffb3eddc5f129ee8e5a4ae573e0a",
+      "text_characters": 18636
+    },
+    {
+      "id": "python313-pathlib",
+      "url": "https://docs.python.org/3.13/library/pathlib.html",
+      "checked_at": "2026-09-30T05:15:25.745471+00:00",
+      "health": {
+        "id": "python313-pathlib",
+        "url": "https://docs.python.org/3.13/library/pathlib.html",
+        "checked_at": "2026-09-30T05:15:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/pathlib.html",
+        "content_type": "text/html",
+        "page_title": "pathlib â€” Object-oriented filesystem paths",
+        "canonical_url": "https://docs.python.org/3/library/pathlib.html",
+        "duration_signals": [],
+        "signal_fingerprint": "a106f22af81358eccd41f10fec97100066be1038aa4c6b1db01a7b249037c880",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/pathlib.html",
+      "sha256": "0424118bfc34cededc3e8be3c13b70d1f3909b1d85436d20ed84952a629fea28",
+      "text_characters": 52595
+    },
+    {
+      "id": "python313-subprocess",
+      "url": "https://docs.python.org/3.13/library/subprocess.html",
+      "checked_at": "2026-09-30T05:15:25.815983+00:00",
+      "health": {
+        "id": "python313-subprocess",
+        "url": "https://docs.python.org/3.13/library/subprocess.html",
+        "checked_at": "2026-09-30T05:15:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/subprocess.html",
+        "content_type": "text/html",
+        "page_title": "subprocess â€” Subprocess management",
+        "canonical_url": "https://docs.python.org/3/library/subprocess.html",
+        "duration_signals": [],
+        "signal_fingerprint": "89bf60ded3008dfc1a596270bc5d006afe3c55fb12512ece22ce9dfc1a6b8a24",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/subprocess.html",
+      "sha256": "d538636af3077039e79db28d99d7251205a30582603bda4121362d18886f8e1d",
+      "text_characters": 55924
+    },
+    {
+      "id": "python313-html",
+      "url": "https://docs.python.org/3.13/library/html.html",
+      "checked_at": "2026-09-30T05:15:26.698696+00:00",
+      "health": {
+        "id": "python313-html",
+        "url": "https://docs.python.org/3.13/library/html.html",
+        "checked_at": "2026-09-30T05:15:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/html.html",
+        "content_type": "text/html",
+        "page_title": "html â€” HyperText Markup Language support",
+        "canonical_url": "https://docs.python.org/3/library/html.html",
+        "duration_signals": [],
+        "signal_fingerprint": "8a30597c4b1909e52c3ae531a236494a49296ead2d1fce9a99d9faea66b509a5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/html.html",
+      "sha256": "58c5c2d7510a925bfc3d34b8da9f41b2a8cc503a274b6233f1e22a8be975ab5b",
+      "text_characters": 2296
+    },
+    {
+      "id": "python313-time",
+      "url": "https://docs.python.org/3.13/library/time.html",
+      "checked_at": "2026-09-30T05:15:26.701309+00:00",
+      "health": {
+        "id": "python313-time",
+        "url": "https://docs.python.org/3.13/library/time.html",
+        "checked_at": "2026-09-30T05:15:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/time.html",
+        "content_type": "text/html",
+        "page_title": "time â€” Time access and conversions",
+        "canonical_url": "https://docs.python.org/3/library/time.html",
+        "duration_signals": [],
+        "signal_fingerprint": "284dfdd0ffd81382100790f6f0b050379eac425fa577adfb618908d8d8341d24",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/time.html",
+      "sha256": "abe825cefa6e956e2c4b8fcf9fd42190fda2f44c47e30917fcf02fbf455706c4",
+      "text_characters": 29929
+    },
+    {
+      "id": "python313-smtplib",
+      "url": "https://docs.python.org/3.13/library/smtplib.html",
+      "checked_at": "2026-09-30T05:15:26.847576+00:00",
+      "health": {
+        "id": "python313-smtplib",
+        "url": "https://docs.python.org/3.13/library/smtplib.html",
+        "checked_at": "2026-09-30T05:15:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/smtplib.html",
+        "content_type": "text/html",
+        "page_title": "smtplib â€” SMTP protocol client",
+        "canonical_url": "https://docs.python.org/3/library/smtplib.html",
+        "duration_signals": [],
+        "signal_fingerprint": "f8f47eed025aa7ce4c88bbe4c76aa57026a0599ff0a631114ec9ff35a19c9ba7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/smtplib.html",
+      "sha256": "a7074acd572fcc57d52ed01bdd935aefbc53efe62df623674659de690768de86",
+      "text_characters": 21823
+    },
+    {
+      "id": "python313-email-message",
+      "url": "https://docs.python.org/3.13/library/email.message.html",
+      "checked_at": "2026-09-30T05:15:27.082958+00:00",
+      "health": {
+        "id": "python313-email-message",
+        "url": "https://docs.python.org/3.13/library/email.message.html",
+        "checked_at": "2026-09-30T05:15:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/email.message.html",
+        "content_type": "text/html",
+        "page_title": "email.message: Representing an email message",
+        "canonical_url": "https://docs.python.org/3/library/email.message.html",
+        "duration_signals": [],
+        "signal_fingerprint": "8a0643d676ebe7e51c52e5094467de2b0df9a6dfbe6c8d8bffc3db0bf280db23",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/email.message.html",
+      "sha256": "f0a4d749c3aed224fe2e73d65fc6ffc35e3da2842bba0c8c389340deeb3f5386",
+      "text_characters": 27723
+    },
+    {
+      "id": "python313-http-server",
+      "url": "https://docs.python.org/3.13/library/http.server.html",
+      "checked_at": "2026-09-30T05:15:27.304107+00:00",
+      "health": {
+        "id": "python313-http-server",
+        "url": "https://docs.python.org/3.13/library/http.server.html",
+        "checked_at": "2026-09-30T05:15:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/http.server.html",
+        "content_type": "text/html",
+        "page_title": "http.server â€” HTTP servers",
+        "canonical_url": "https://docs.python.org/3/library/http.server.html",
+        "duration_signals": [],
+        "signal_fingerprint": "4abdff38a633be6e832b6c097d7d55960e0244a2bb9071a5c71aeeb81abb35a7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/http.server.html",
+      "sha256": "a2796f10c0a950f3e5a4c015538a4b82efb36aef7ae5e705499645b060a73fbd",
+      "text_characters": 20699
+    },
+    {
+      "id": "python313-threading",
+      "url": "https://docs.python.org/3.13/library/threading.html",
+      "checked_at": "2026-09-30T05:15:27.403807+00:00",
+      "health": {
+        "id": "python313-threading",
+        "url": "https://docs.python.org/3.13/library/threading.html",
+        "checked_at": "2026-09-30T05:15:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/threading.html",
+        "content_type": "text/html",
+        "page_title": "threading â€” Thread-based parallelism",
+        "canonical_url": "https://docs.python.org/3/library/threading.html",
+        "duration_signals": [],
+        "signal_fingerprint": "ca55cdb462fc62edcabdaa4ffc9186c5c19c64f144b74333723541f7e95eecbd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/threading.html",
+      "sha256": "b3b1acbf3ca3feb1e85b9b3226e0c4b978e515724638ed5b520a59a2fd09b734",
+      "text_characters": 44356
+    },
+    {
+      "id": "requests-quickstart",
+      "url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+      "checked_at": "2026-09-30T05:15:27.606307+00:00",
+      "health": {
+        "id": "requests-quickstart",
+        "url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+        "checked_at": "2026-09-30T05:15:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Quickstart â€” Requests 2.34.2 documentation",
+        "canonical_url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+        "duration_signals": [],
+        "signal_fingerprint": "516b88bc996a32fcbfd8b05d864702be9c8fc93e8fb2e0c510bd48dec9eec124",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+      "sha256": "c2b869b188097265f8decaeb14972116b2c861b0358e89977cbf43283f34d3b5",
+      "text_characters": 17434
+    },
+    {
+      "id": "requests-advanced",
+      "url": "https://requests.readthedocs.io/en/latest/user/advanced/",
+      "checked_at": "2026-09-30T05:15:27.925228+00:00",
+      "health": {
+        "id": "requests-advanced",
+        "url": "https://requests.readthedocs.io/en/latest/user/advanced/",
+        "checked_at": "2026-09-30T05:15:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://requests.readthedocs.io/en/latest/user/advanced/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Advanced Usage â€” Requests 2.34.2 documentation",
+        "canonical_url": "https://requests.readthedocs.io/en/latest/user/advanced/",
+        "duration_signals": [],
+        "signal_fingerprint": "f9886124a7462334b011c40c4011768d1280f7ff6f2b7571b55e96e00d54fee7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://requests.readthedocs.io/en/latest/user/advanced/",
+      "sha256": "c9d568cbdf1700ffcb91e2c20bfab7583a964d51e64cbd27c5e50cf93eed1056",
+      "text_characters": 36495
+    },
+    {
+      "id": "requests-api",
+      "url": "https://requests.readthedocs.io/en/latest/api/",
+      "checked_at": "2026-09-30T05:15:28.090141+00:00",
+      "health": {
+        "id": "requests-api",
+        "url": "https://requests.readthedocs.io/en/latest/api/",
+        "checked_at": "2026-09-30T05:15:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://requests.readthedocs.io/en/latest/api/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Developer Interface â€” Requests 2.34.2 documentation",
+        "canonical_url": "https://requests.readthedocs.io/en/latest/api/",
+        "duration_signals": [],
+        "signal_fingerprint": "5da5b77b1a528bda1cb25b37dad54a274f200caf124caf1f781f8596d622eaea",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://requests.readthedocs.io/en/latest/api/",
+      "sha256": "d3e6b2c8bc06740969033f80c94ca27e1e4e19ad0bc71a2172be02b31fb251bc",
+      "text_characters": 53795
+    },
+    {
+      "id": "ruff-linter",
+      "url": "https://docs.astral.sh/ruff/linter/",
+      "checked_at": "2026-09-30T05:15:28.187281+00:00",
+      "health": {
+        "id": "ruff-linter",
+        "url": "https://docs.astral.sh/ruff/linter/",
+        "checked_at": "2026-09-30T05:15:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.astral.sh/ruff/linter/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "The Ruff Linter | Ruff",
+        "canonical_url": "https://docs.astral.sh/ruff/linter/",
+        "duration_signals": [],
+        "signal_fingerprint": "fde25cc7fc94fbc1bd97c5106f56cd5620250a7ac06438760b9e5dd4a3200d59",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.astral.sh/ruff/linter/",
+      "sha256": "babdaa8bad054827a1078050909fed1107cfe2a9c784da5c0edfa000646e43b4",
+      "text_characters": 21957
+    },
+    {
+      "id": "packt-python-automation-cookbook-3",
+      "url": "https://www.packtpub.com/en-us/product/python-automation-cookbook-9781806702893",
+      "checked_at": "2026-09-30T05:23:08.249127+00:00",
+      "health": {
+        "id": "packt-python-automation-cookbook-3",
+        "url": "https://www.packtpub.com/en-us/product/python-automation-cookbook-9781806702893",
+        "checked_at": "2026-09-30T05:23:08+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.packtpub.com/en-us/product/python-automation-cookbook-9781806702893",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    }
+  ],
+  "added_source_ids": [
+    "pcea-testing-policies",
+    "python313-sys",
+    "python313-venv",
+    "python313-os",
+    "python313-shutil",
+    "python313-time",
+    "python313-smtplib",
+    "python313-email-message",
+    "python313-http-server",
+    "python313-threading",
+    "requests-api",
+    "packt-python-automation-cookbook-3"
+  ],
+  "findings": [
+    {
+      "id": "pcea3001-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Broad summaries needed detailed objective evidence",
+      "url": "https://pythoninstitute.org/pcea-exam-syllabus",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCEA-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Canonical English syllabus has46 detailed objectives and misgroups third-party libraries in its MQC.",
+      "recommendation": "Add46 explicit mappings and bounded original exercises; distinguish third-party packages and retain historical snapshot with manual confirmation.",
+      "disposition": "applied",
+      "source_id": "pcea-30-01-syllabus",
+      "resolution": "Add46 explicit mappings and bounded original exercises; distinguish third-party packages and retain historical snapshot with manual confirmation."
+    },
+    {
+      "id": "pcea3001-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "An active outline does not establish general availability",
+      "url": "https://pythoninstitute.org/pcea",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCEA-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Credential body still describes limitedavailability/SmallMarketTrial/Beta while syllabus is active.",
+      "recommendation": "Retain beta delivery and verify-current guidance without inventing a launch date or replacement code.",
+      "disposition": "applied",
+      "source_id": "pcea-certification-page",
+      "resolution": "Retain beta delivery and verify-current guidance without inventing a launch date or replacement code."
+    },
+    {
+      "id": "pcea3001-deep-3",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Recommended book link could not be verified",
+      "url": "https://www.packtpub.com/en-us/product/python-automation-cookbook-9781806702893",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCEA-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Old OReilly ISBN association remains unconfirmed; Packt identifies Jaime Buelta thirdedition printISBN9781806702893,June29,2026,676pages.",
+      "recommendation": "Replace recommendation with confirmed publisher listing; retain old unverified source separately and distinguish complete TOC from paid book completion.",
+      "disposition": "applied",
+      "source_id": "packt-python-automation-cookbook-3",
+      "resolution": "Replace recommendation with confirmed publisher listing; retain old unverified source separately and distinguish complete TOC from paid book completion."
+    },
+    {
+      "id": "pcea3001-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Timeout and HTTP success needed precise boundaries",
+      "url": "https://requests.readthedocs.io/en/latest/user/advanced/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCEA-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Connect/read timeouts are not a wall-clock budget; JSON parsing is not status/schema success. Eight own-loopback cases and separate simulated timeout expose the distinctions.",
+      "recommendation": "Document explicit status/media/encoding/body/schema gates, session closing and bounded fixture scope; do not claim externalAPI/TLS/retry validation.",
+      "disposition": "applied",
+      "source_id": "requests-advanced",
+      "resolution": "Document explicit status/media/encoding/body/schema gates, session closing and bounded fixture scope; do not claim externalAPI/TLS/retry validation."
+    },
+    {
+      "id": "pcea3001-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Atomic file replacement was not whole-workflow delivery",
+      "url": "https://docs.python.org/3.13/library/os.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCEA-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Original rerun avoids replacement; simulated replacement failure preserves previous bytes. Reports stay in memory and notification_needed is a decision only.",
+      "recommendation": "Explain single-file replacement, data/report/notification gaps, concurrency/durability limits and separate byte-restore evidence.",
+      "disposition": "applied",
+      "source_id": "python313-os",
+      "resolution": "Explain single-file replacement, data/report/notification gaps, concurrency/durability limits and separate byte-restore evidence."
+    },
+    {
+      "id": "pcea3001-deep-6",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Scheduling and notifications remained unexecuted",
+      "url": "https://schedule.readthedocs.io/en/stable/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCEA-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "schedule/plyer unavailable; same-process lock probe is separate from run_once and no OS scheduler or delivery integration exists.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "pcea3001-deep-7",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Specific and footer retake wording differs",
+      "url": "https://pythoninstitute.org/pcea-testing-policies",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCEA-30-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Specific policy covers seven days after failure; generic footer also mentions passing.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "pcea-certification-page",
+      "review": "Complete current public credential/syllabus/policy read; limited-beta status and separate PCAA path explicit. No unseen release feed or authenticated launch verification."
+    }
+  ],
+  "labs": {
+    "proposed": 10,
+    "fully_completed_proposed_labs": 0,
+    "public_files": 3,
+    "execution_runs": 4,
+    "test_methods_per_mode": 25,
+    "observation_checks_per_mode": 23,
+    "local_validation": {
+      "passed": true,
+      "versions": {
+        "python": "3.13.14",
+        "requests": "2.34.2",
+        "beautifulsoup4": "4.13.3",
+        "ruff": "ruff 0.16.4"
+      },
+      "platform": "Windows-11-10.0.26200-SP0",
+      "public_files": [
+        {
+          "filename": "automation_workbook.py",
+          "sha256": "9799960d807baa5680f99a11a9a88d92f4bc77fd8efd801875a8216279025ded",
+          "bytes": 8180,
+          "syntax_checked": true,
+          "executed": true
+        },
+        {
+          "filename": "test_automation_workbook.py",
+          "sha256": "51b2550d2d51460403ca215eb8af7aa53d5e7ef9ca852ade8abf69918187d553",
+          "bytes": 9571,
+          "syntax_checked": true,
+          "executed": true
+        },
+        {
+          "filename": "observations.py",
+          "sha256": "d3978156f05fbebcf79298ef0b8ea625fb835f2fb6e0f88ff9d5fda523ece122",
+          "bytes": 8016,
+          "syntax_checked": true,
+          "executed": true
+        }
+      ],
+      "test_methods_per_mode": 25,
+      "observation_checks_per_mode": 23,
+      "execution_runs": 4,
+      "results": [
+        {
+          "program": "unittest",
+          "command": [
+            "python",
+            "-B",
+            "-Werror",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            ".",
+            "-p",
+            "test_automation_workbook.py",
+            "-v"
+          ],
+          "started_at": "2026-09-30T05:34:45.248482+00:00",
+          "elapsed_seconds": 0.314,
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": "test_boolean_is_not_a_count (test_automation_workbook.WorkbookTests.test_boolean_is_not_a_count) ... ok\ntest_bounds_and_control_characters (test_automation_workbook.WorkbookTests.test_bounds_and_control_characters) ... ok\ntest_canonical_order_and_input_preserved (test_automation_workbook.WorkbookTests.test_canonical_order_and_input_preserved) ... ok\ntest_changed_snapshot_replaces_old (test_automation_workbook.WorkbookTests.test_changed_snapshot_replaces_old) ... ok\ntest_cli_output_and_validation (test_automation_workbook.WorkbookTests.test_cli_output_and_validation) ... ok\ntest_corrupt_previous_is_not_overwritten (test_automation_workbook.WorkbookTests.test_corrupt_previous_is_not_overwritten) ... ok\ntest_count_boundaries (test_automation_workbook.WorkbookTests.test_count_boundaries) ... ok\ntest_csv_duplicate_identifier_across_parts (test_automation_workbook.WorkbookTests.test_csv_duplicate_identifier_across_parts) ... ok\ntest_csv_merge_quoted_delimiter (test_automation_workbook.WorkbookTests.test_csv_merge_quoted_delimiter) ... ok\ntest_csv_missing_extra_or_duplicate_header (test_automation_workbook.WorkbookTests.test_csv_missing_extra_or_duplicate_header) ... ok\ntest_display_csv_and_html_contexts (test_automation_workbook.WorkbookTests.test_display_csv_and_html_contexts) ... ok\ntest_failed_replace_preserves_previous_and_cleans_stage (test_automation_workbook.WorkbookTests.test_failed_replace_preserves_previous_and_cleans_stage) ... ok\ntest_failure_log_omits_exception_message (test_automation_workbook.WorkbookTests.test_failure_log_omits_exception_message) ... ok\ntest_first_commit_and_idempotent_rerun (test_automation_workbook.WorkbookTests.test_first_commit_and_idempotent_rerun) ... ok\ntest_invalid_input_creates_no_files (test_automation_workbook.WorkbookTests.test_invalid_input_creates_no_files) ... ok\ntest_json_duplicate_keys_rejected (test_automation_workbook.WorkbookTests.test_json_duplicate_keys_rejected) ... ok\ntest_json_nonfinite_utf8_and_size (test_automation_workbook.WorkbookTests.test_json_nonfinite_utf8_and_size) ... ok\ntest_json_round_trip_and_order (test_automation_workbook.WorkbookTests.test_json_round_trip_and_order) ... ok\ntest_missing_multiple_or_empty_html_title (test_automation_workbook.WorkbookTests.test_missing_multiple_or_empty_html_title) ... ok\ntest_path_and_directory_errors (test_automation_workbook.WorkbookTests.test_path_and_directory_errors) ... ok\ntest_port_validation_precedes_connection (test_automation_workbook.WorkbookTests.test_port_validation_precedes_connection) ... ok\ntest_rerun_suppresses_notification_decision (test_automation_workbook.WorkbookTests.test_rerun_suppresses_notification_decision) ... ok\ntest_run_logs_counts_not_labels (test_automation_workbook.WorkbookTests.test_run_logs_counts_not_labels) ... ok\ntest_schema_and_duplicate_ids (test_automation_workbook.WorkbookTests.test_schema_and_duplicate_ids) ... ok\ntest_static_html_title (test_automation_workbook.WorkbookTests.test_static_html_title) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 0.046s\n\nOK\n",
+          "optimized": false,
+          "test_methods": 25
+        },
+        {
+          "program": "observations",
+          "command": [
+            "python",
+            "-B",
+            "-Werror",
+            "observations.py"
+          ],
+          "started_at": "2026-09-30T05:34:45.562863+00:00",
+          "elapsed_seconds": 0.856,
+          "exit_code": 0,
+          "stdout": "{\"checks\": [\"owned-http-success\", \"owned-http-redirect\", \"owned-http-rate-limit\", \"owned-http-server-error\", \"owned-http-wrong-type\", \"owned-http-oversize\", \"owned-http-compressed\", \"owned-http-missing-field\", \"simulated-timeout-propagated\", \"http-configuration-observed\", \"session-exit-after-timeout\", \"first-snapshot-and-report\", \"rerun-no-write-no-notification\", \"meaningful-change\", \"owned-byte-restore\", \"simulated-disk-failure-preserved-state\", \"failure-log-redacted\", \"temporary-root-removed\", \"real-child-cli-success\", \"real-child-cli-failure\", \"same-process-overlap-rejected\", \"lock-released-for-next-run\", \"hypothetical-roi\"], \"http_failures\": {\"compressed\": \"unexpected content encoding\", \"missing-field\": \"unexpected fields\", \"oversize\": \"response too large\", \"rate-limit\": \"unexpected HTTP status\", \"redirect\": \"unexpected HTTP status\", \"server-error\": \"unexpected HTTP status\", \"wrong-type\": \"unexpected media type\"}, \"hypothetical_roi_percent\": 50.0, \"passed_checks\": 23, \"snapshot_bytes\": 87}\n",
+          "stderr": "",
+          "optimized": false,
+          "checks": 23
+        },
+        {
+          "program": "unittest",
+          "command": [
+            "python",
+            "-B",
+            "-Werror",
+            "-O",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            ".",
+            "-p",
+            "test_automation_workbook.py",
+            "-v"
+          ],
+          "started_at": "2026-09-30T05:34:46.419854+00:00",
+          "elapsed_seconds": 0.433,
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": "test_boolean_is_not_a_count (test_automation_workbook.WorkbookTests.test_boolean_is_not_a_count) ... ok\ntest_bounds_and_control_characters (test_automation_workbook.WorkbookTests.test_bounds_and_control_characters) ... ok\ntest_canonical_order_and_input_preserved (test_automation_workbook.WorkbookTests.test_canonical_order_and_input_preserved) ... ok\ntest_changed_snapshot_replaces_old (test_automation_workbook.WorkbookTests.test_changed_snapshot_replaces_old) ... ok\ntest_cli_output_and_validation (test_automation_workbook.WorkbookTests.test_cli_output_and_validation) ... ok\ntest_corrupt_previous_is_not_overwritten (test_automation_workbook.WorkbookTests.test_corrupt_previous_is_not_overwritten) ... ok\ntest_count_boundaries (test_automation_workbook.WorkbookTests.test_count_boundaries) ... ok\ntest_csv_duplicate_identifier_across_parts (test_automation_workbook.WorkbookTests.test_csv_duplicate_identifier_across_parts) ... ok\ntest_csv_merge_quoted_delimiter (test_automation_workbook.WorkbookTests.test_csv_merge_quoted_delimiter) ... ok\ntest_csv_missing_extra_or_duplicate_header (test_automation_workbook.WorkbookTests.test_csv_missing_extra_or_duplicate_header) ... ok\ntest_display_csv_and_html_contexts (test_automation_workbook.WorkbookTests.test_display_csv_and_html_contexts) ... ok\ntest_failed_replace_preserves_previous_and_cleans_stage (test_automation_workbook.WorkbookTests.test_failed_replace_preserves_previous_and_cleans_stage) ... ok\ntest_failure_log_omits_exception_message (test_automation_workbook.WorkbookTests.test_failure_log_omits_exception_message) ... ok\ntest_first_commit_and_idempotent_rerun (test_automation_workbook.WorkbookTests.test_first_commit_and_idempotent_rerun) ... ok\ntest_invalid_input_creates_no_files (test_automation_workbook.WorkbookTests.test_invalid_input_creates_no_files) ... ok\ntest_json_duplicate_keys_rejected (test_automation_workbook.WorkbookTests.test_json_duplicate_keys_rejected) ... ok\ntest_json_nonfinite_utf8_and_size (test_automation_workbook.WorkbookTests.test_json_nonfinite_utf8_and_size) ... ok\ntest_json_round_trip_and_order (test_automation_workbook.WorkbookTests.test_json_round_trip_and_order) ... ok\ntest_missing_multiple_or_empty_html_title (test_automation_workbook.WorkbookTests.test_missing_multiple_or_empty_html_title) ... ok\ntest_path_and_directory_errors (test_automation_workbook.WorkbookTests.test_path_and_directory_errors) ... ok\ntest_port_validation_precedes_connection (test_automation_workbook.WorkbookTests.test_port_validation_precedes_connection) ... ok\ntest_rerun_suppresses_notification_decision (test_automation_workbook.WorkbookTests.test_rerun_suppresses_notification_decision) ... ok\ntest_run_logs_counts_not_labels (test_automation_workbook.WorkbookTests.test_run_logs_counts_not_labels) ... ok\ntest_schema_and_duplicate_ids (test_automation_workbook.WorkbookTests.test_schema_and_duplicate_ids) ... ok\ntest_static_html_title (test_automation_workbook.WorkbookTests.test_static_html_title) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 0.038s\n\nOK\n",
+          "optimized": true,
+          "test_methods": 25
+        },
+        {
+          "program": "observations",
+          "command": [
+            "python",
+            "-B",
+            "-Werror",
+            "-O",
+            "observations.py"
+          ],
+          "started_at": "2026-09-30T05:34:46.853414+00:00",
+          "elapsed_seconds": 1.253,
+          "exit_code": 0,
+          "stdout": "{\"checks\": [\"owned-http-success\", \"owned-http-redirect\", \"owned-http-rate-limit\", \"owned-http-server-error\", \"owned-http-wrong-type\", \"owned-http-oversize\", \"owned-http-compressed\", \"owned-http-missing-field\", \"simulated-timeout-propagated\", \"http-configuration-observed\", \"session-exit-after-timeout\", \"first-snapshot-and-report\", \"rerun-no-write-no-notification\", \"meaningful-change\", \"owned-byte-restore\", \"simulated-disk-failure-preserved-state\", \"failure-log-redacted\", \"temporary-root-removed\", \"real-child-cli-success\", \"real-child-cli-failure\", \"same-process-overlap-rejected\", \"lock-released-for-next-run\", \"hypothetical-roi\"], \"http_failures\": {\"compressed\": \"unexpected content encoding\", \"missing-field\": \"unexpected fields\", \"oversize\": \"response too large\", \"rate-limit\": \"unexpected HTTP status\", \"redirect\": \"unexpected HTTP status\", \"server-error\": \"unexpected HTTP status\", \"wrong-type\": \"unexpected media type\"}, \"hypothetical_roi_percent\": 50.0, \"passed_checks\": 23, \"snapshot_bytes\": 87}\n",
+          "stderr": "",
+          "optimized": true,
+          "checks": 23
+        }
+      ],
+      "computed_report": {
+        "checks": [
+          "owned-http-success",
+          "owned-http-redirect",
+          "owned-http-rate-limit",
+          "owned-http-server-error",
+          "owned-http-wrong-type",
+          "owned-http-oversize",
+          "owned-http-compressed",
+          "owned-http-missing-field",
+          "simulated-timeout-propagated",
+          "http-configuration-observed",
+          "session-exit-after-timeout",
+          "first-snapshot-and-report",
+          "rerun-no-write-no-notification",
+          "meaningful-change",
+          "owned-byte-restore",
+          "simulated-disk-failure-preserved-state",
+          "failure-log-redacted",
+          "temporary-root-removed",
+          "real-child-cli-success",
+          "real-child-cli-failure",
+          "same-process-overlap-rejected",
+          "lock-released-for-next-run",
+          "hypothetical-roi"
+        ],
+        "http_failures": {
+          "compressed": "unexpected content encoding",
+          "missing-field": "unexpected fields",
+          "oversize": "response too large",
+          "rate-limit": "unexpected HTTP status",
+          "redirect": "unexpected HTTP status",
+          "server-error": "unexpected HTTP status",
+          "wrong-type": "unexpected media type"
+        },
+        "hypothetical_roi_percent": 50.0,
+        "passed_checks": 23,
+        "snapshot_bytes": 87
+      },
+      "selected_lint": {
+        "command": [
+          "python",
+          "-m",
+          "ruff",
+          "check",
+          "automation_workbook.py",
+          "test_automation_workbook.py",
+          "observations.py",
+          "--select",
+          "E4,E7,E9,F,W,E501",
+          "--line-length",
+          "79",
+          "--output-format",
+          "concise"
+        ],
+        "exit_code": 0,
+        "stdout": "All checks passed!\n",
+        "stderr": "",
+        "version": "ruff 0.16.4"
+      },
+      "missing_tools": [
+        "schedule",
+        "plyer"
+      ],
+      "execution_boundary": "Three exact original files. 25 behavioral methods and23 observations per normal/optimized mode. Eight owned one-request loopback HTTP listeners and two short fixed Python CLI children per observation run; all stopped. Actual synthetic CSV/JSON/HTML/87-byte snapshot, rerun/replacement, temporary byte-backup/restore, same-process lock and hypothetical ROI. Mocked timeout/replace failure explicit. No persistent scheduler, notification, install, venv/permission/auth/runtime change, external API/TLS account, full ten-step lab or human readiness approval."
+    }
+  },
+  "answered_checks": 18,
+  "limitations": [
+    "30 direct receipts:23ok,5errors,2blocked. Complete canonical English syllabus/MQC/credential/policy read by indexed fallback; full PDF and fresh automated objective hash remain unavailable. Other source readings explicitly selected/complete/hash-reused, with unreviewed manual/book/course interiors.",
+    "Three exact original files pass25methods and23observations per normal/optimized mode on existingCPython3.13.14/Requests2.34.2/BeautifulSoup4.13.3/Ruff0.16.4. Selectedlint only. Initial-IchildfailedmissingRequests;final-Echildretains existing user packages, not isolated mode.",
+    "Eight one-request owned loopback HTTP listeners and two short CLI children per observation run, all stopped. Actual87-byte synthetic snapshot/CSV/HTML/replay/backup/restore/same-process lock/ROI; simulated read-timeout and disk-replacement failures separate. No external API/TLS/auth/pagination/retry or production-server proof.",
+    "Single-file replacement is not multiartifact transaction, cross-process locking, crash/power-loss durability, secure erasure or race-free filesystem protection. Notification flag does not send messages or guarantee exactly-once delivery; no durable last-success monitor or complete dated report integration.",
+    "schedule/plyer absent; no install, venv activation, Unix permission change, persistent scheduler, SMTP/desktop notification, account/purchase or protected questions. Full ten-step integrated lab and independent human content/accessibility review remain pending. Beta and passed-retake eligibility require verification."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 180,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Three exact original files. 25 behavioral methods and23 observations per normal/optimized mode. Eight owned one-request loopback HTTP listeners and two short fixed Python CLI children per observation run; all stopped. Actual synthetic CSV/JSON/HTML/87-byte snapshot, rerun/replacement, temporary byte-backup/restore, same-process lock and hypothetical ROI. Mocked timeout/replace failure explicit. No persistent scheduler, notification, install, venv/permission/auth/runtime change, external API/TLS account, full ten-step lab or human readiness approval.",
+    "passed": true,
+    "versions": {
+      "python": "3.13.14",
+      "requests": "2.34.2",
+      "beautifulsoup4": "4.13.3",
+      "ruff": "ruff 0.16.4"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "public_files": [
+      {
+        "filename": "automation_workbook.py",
+        "sha256": "9799960d807baa5680f99a11a9a88d92f4bc77fd8efd801875a8216279025ded",
+        "bytes": 8180,
+        "syntax_checked": true,
+        "executed": true
+      },
+      {
+        "filename": "test_automation_workbook.py",
+        "sha256": "51b2550d2d51460403ca215eb8af7aa53d5e7ef9ca852ade8abf69918187d553",
+        "bytes": 9571,
+        "syntax_checked": true,
+        "executed": true
+      },
+      {
+        "filename": "observations.py",
+        "sha256": "d3978156f05fbebcf79298ef0b8ea625fb835f2fb6e0f88ff9d5fda523ece122",
+        "bytes": 8016,
+        "syntax_checked": true,
+        "executed": true
+      }
+    ],
+    "test_methods_per_mode": 25,
+    "observation_checks_per_mode": 23,
+    "execution_runs": 4,
+    "results": [
+      {
+        "program": "unittest",
+        "command": [
+          "python",
+          "-B",
+          "-Werror",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          ".",
+          "-p",
+          "test_automation_workbook.py",
+          "-v"
+        ],
+        "started_at": "2026-09-30T05:34:45.248482+00:00",
+        "elapsed_seconds": 0.314,
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "test_boolean_is_not_a_count (test_automation_workbook.WorkbookTests.test_boolean_is_not_a_count) ... ok\ntest_bounds_and_control_characters (test_automation_workbook.WorkbookTests.test_bounds_and_control_characters) ... ok\ntest_canonical_order_and_input_preserved (test_automation_workbook.WorkbookTests.test_canonical_order_and_input_preserved) ... ok\ntest_changed_snapshot_replaces_old (test_automation_workbook.WorkbookTests.test_changed_snapshot_replaces_old) ... ok\ntest_cli_output_and_validation (test_automation_workbook.WorkbookTests.test_cli_output_and_validation) ... ok\ntest_corrupt_previous_is_not_overwritten (test_automation_workbook.WorkbookTests.test_corrupt_previous_is_not_overwritten) ... ok\ntest_count_boundaries (test_automation_workbook.WorkbookTests.test_count_boundaries) ... ok\ntest_csv_duplicate_identifier_across_parts (test_automation_workbook.WorkbookTests.test_csv_duplicate_identifier_across_parts) ... ok\ntest_csv_merge_quoted_delimiter (test_automation_workbook.WorkbookTests.test_csv_merge_quoted_delimiter) ... ok\ntest_csv_missing_extra_or_duplicate_header (test_automation_workbook.WorkbookTests.test_csv_missing_extra_or_duplicate_header) ... ok\ntest_display_csv_and_html_contexts (test_automation_workbook.WorkbookTests.test_display_csv_and_html_contexts) ... ok\ntest_failed_replace_preserves_previous_and_cleans_stage (test_automation_workbook.WorkbookTests.test_failed_replace_preserves_previous_and_cleans_stage) ... ok\ntest_failure_log_omits_exception_message (test_automation_workbook.WorkbookTests.test_failure_log_omits_exception_message) ... ok\ntest_first_commit_and_idempotent_rerun (test_automation_workbook.WorkbookTests.test_first_commit_and_idempotent_rerun) ... ok\ntest_invalid_input_creates_no_files (test_automation_workbook.WorkbookTests.test_invalid_input_creates_no_files) ... ok\ntest_json_duplicate_keys_rejected (test_automation_workbook.WorkbookTests.test_json_duplicate_keys_rejected) ... ok\ntest_json_nonfinite_utf8_and_size (test_automation_workbook.WorkbookTests.test_json_nonfinite_utf8_and_size) ... ok\ntest_json_round_trip_and_order (test_automation_workbook.WorkbookTests.test_json_round_trip_and_order) ... ok\ntest_missing_multiple_or_empty_html_title (test_automation_workbook.WorkbookTests.test_missing_multiple_or_empty_html_title) ... ok\ntest_path_and_directory_errors (test_automation_workbook.WorkbookTests.test_path_and_directory_errors) ... ok\ntest_port_validation_precedes_connection (test_automation_workbook.WorkbookTests.test_port_validation_precedes_connection) ... ok\ntest_rerun_suppresses_notification_decision (test_automation_workbook.WorkbookTests.test_rerun_suppresses_notification_decision) ... ok\ntest_run_logs_counts_not_labels (test_automation_workbook.WorkbookTests.test_run_logs_counts_not_labels) ... ok\ntest_schema_and_duplicate_ids (test_automation_workbook.WorkbookTests.test_schema_and_duplicate_ids) ... ok\ntest_static_html_title (test_automation_workbook.WorkbookTests.test_static_html_title) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 0.046s\n\nOK\n",
+        "optimized": false,
+        "test_methods": 25
+      },
+      {
+        "program": "observations",
+        "command": [
+          "python",
+          "-B",
+          "-Werror",
+          "observations.py"
+        ],
+        "started_at": "2026-09-30T05:34:45.562863+00:00",
+        "elapsed_seconds": 0.856,
+        "exit_code": 0,
+        "stdout": "{\"checks\": [\"owned-http-success\", \"owned-http-redirect\", \"owned-http-rate-limit\", \"owned-http-server-error\", \"owned-http-wrong-type\", \"owned-http-oversize\", \"owned-http-compressed\", \"owned-http-missing-field\", \"simulated-timeout-propagated\", \"http-configuration-observed\", \"session-exit-after-timeout\", \"first-snapshot-and-report\", \"rerun-no-write-no-notification\", \"meaningful-change\", \"owned-byte-restore\", \"simulated-disk-failure-preserved-state\", \"failure-log-redacted\", \"temporary-root-removed\", \"real-child-cli-success\", \"real-child-cli-failure\", \"same-process-overlap-rejected\", \"lock-released-for-next-run\", \"hypothetical-roi\"], \"http_failures\": {\"compressed\": \"unexpected content encoding\", \"missing-field\": \"unexpected fields\", \"oversize\": \"response too large\", \"rate-limit\": \"unexpected HTTP status\", \"redirect\": \"unexpected HTTP status\", \"server-error\": \"unexpected HTTP status\", \"wrong-type\": \"unexpected media type\"}, \"hypothetical_roi_percent\": 50.0, \"passed_checks\": 23, \"snapshot_bytes\": 87}\n",
+        "stderr": "",
+        "optimized": false,
+        "checks": 23
+      },
+      {
+        "program": "unittest",
+        "command": [
+          "python",
+          "-B",
+          "-Werror",
+          "-O",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          ".",
+          "-p",
+          "test_automation_workbook.py",
+          "-v"
+        ],
+        "started_at": "2026-09-30T05:34:46.419854+00:00",
+        "elapsed_seconds": 0.433,
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "test_boolean_is_not_a_count (test_automation_workbook.WorkbookTests.test_boolean_is_not_a_count) ... ok\ntest_bounds_and_control_characters (test_automation_workbook.WorkbookTests.test_bounds_and_control_characters) ... ok\ntest_canonical_order_and_input_preserved (test_automation_workbook.WorkbookTests.test_canonical_order_and_input_preserved) ... ok\ntest_changed_snapshot_replaces_old (test_automation_workbook.WorkbookTests.test_changed_snapshot_replaces_old) ... ok\ntest_cli_output_and_validation (test_automation_workbook.WorkbookTests.test_cli_output_and_validation) ... ok\ntest_corrupt_previous_is_not_overwritten (test_automation_workbook.WorkbookTests.test_corrupt_previous_is_not_overwritten) ... ok\ntest_count_boundaries (test_automation_workbook.WorkbookTests.test_count_boundaries) ... ok\ntest_csv_duplicate_identifier_across_parts (test_automation_workbook.WorkbookTests.test_csv_duplicate_identifier_across_parts) ... ok\ntest_csv_merge_quoted_delimiter (test_automation_workbook.WorkbookTests.test_csv_merge_quoted_delimiter) ... ok\ntest_csv_missing_extra_or_duplicate_header (test_automation_workbook.WorkbookTests.test_csv_missing_extra_or_duplicate_header) ... ok\ntest_display_csv_and_html_contexts (test_automation_workbook.WorkbookTests.test_display_csv_and_html_contexts) ... ok\ntest_failed_replace_preserves_previous_and_cleans_stage (test_automation_workbook.WorkbookTests.test_failed_replace_preserves_previous_and_cleans_stage) ... ok\ntest_failure_log_omits_exception_message (test_automation_workbook.WorkbookTests.test_failure_log_omits_exception_message) ... ok\ntest_first_commit_and_idempotent_rerun (test_automation_workbook.WorkbookTests.test_first_commit_and_idempotent_rerun) ... ok\ntest_invalid_input_creates_no_files (test_automation_workbook.WorkbookTests.test_invalid_input_creates_no_files) ... ok\ntest_json_duplicate_keys_rejected (test_automation_workbook.WorkbookTests.test_json_duplicate_keys_rejected) ... ok\ntest_json_nonfinite_utf8_and_size (test_automation_workbook.WorkbookTests.test_json_nonfinite_utf8_and_size) ... ok\ntest_json_round_trip_and_order (test_automation_workbook.WorkbookTests.test_json_round_trip_and_order) ... ok\ntest_missing_multiple_or_empty_html_title (test_automation_workbook.WorkbookTests.test_missing_multiple_or_empty_html_title) ... ok\ntest_path_and_directory_errors (test_automation_workbook.WorkbookTests.test_path_and_directory_errors) ... ok\ntest_port_validation_precedes_connection (test_automation_workbook.WorkbookTests.test_port_validation_precedes_connection) ... ok\ntest_rerun_suppresses_notification_decision (test_automation_workbook.WorkbookTests.test_rerun_suppresses_notification_decision) ... ok\ntest_run_logs_counts_not_labels (test_automation_workbook.WorkbookTests.test_run_logs_counts_not_labels) ... ok\ntest_schema_and_duplicate_ids (test_automation_workbook.WorkbookTests.test_schema_and_duplicate_ids) ... ok\ntest_static_html_title (test_automation_workbook.WorkbookTests.test_static_html_title) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 0.038s\n\nOK\n",
+        "optimized": true,
+        "test_methods": 25
+      },
+      {
+        "program": "observations",
+        "command": [
+          "python",
+          "-B",
+          "-Werror",
+          "-O",
+          "observations.py"
+        ],
+        "started_at": "2026-09-30T05:34:46.853414+00:00",
+        "elapsed_seconds": 1.253,
+        "exit_code": 0,
+        "stdout": "{\"checks\": [\"owned-http-success\", \"owned-http-redirect\", \"owned-http-rate-limit\", \"owned-http-server-error\", \"owned-http-wrong-type\", \"owned-http-oversize\", \"owned-http-compressed\", \"owned-http-missing-field\", \"simulated-timeout-propagated\", \"http-configuration-observed\", \"session-exit-after-timeout\", \"first-snapshot-and-report\", \"rerun-no-write-no-notification\", \"meaningful-change\", \"owned-byte-restore\", \"simulated-disk-failure-preserved-state\", \"failure-log-redacted\", \"temporary-root-removed\", \"real-child-cli-success\", \"real-child-cli-failure\", \"same-process-overlap-rejected\", \"lock-released-for-next-run\", \"hypothetical-roi\"], \"http_failures\": {\"compressed\": \"unexpected content encoding\", \"missing-field\": \"unexpected fields\", \"oversize\": \"response too large\", \"rate-limit\": \"unexpected HTTP status\", \"redirect\": \"unexpected HTTP status\", \"server-error\": \"unexpected HTTP status\", \"wrong-type\": \"unexpected media type\"}, \"hypothetical_roi_percent\": 50.0, \"passed_checks\": 23, \"snapshot_bytes\": 87}\n",
+        "stderr": "",
+        "optimized": true,
+        "checks": 23
+      }
+    ],
+    "computed_report": {
+      "checks": [
+        "owned-http-success",
+        "owned-http-redirect",
+        "owned-http-rate-limit",
+        "owned-http-server-error",
+        "owned-http-wrong-type",
+        "owned-http-oversize",
+        "owned-http-compressed",
+        "owned-http-missing-field",
+        "simulated-timeout-propagated",
+        "http-configuration-observed",
+        "session-exit-after-timeout",
+        "first-snapshot-and-report",
+        "rerun-no-write-no-notification",
+        "meaningful-change",
+        "owned-byte-restore",
+        "simulated-disk-failure-preserved-state",
+        "failure-log-redacted",
+        "temporary-root-removed",
+        "real-child-cli-success",
+        "real-child-cli-failure",
+        "same-process-overlap-rejected",
+        "lock-released-for-next-run",
+        "hypothetical-roi"
+      ],
+      "http_failures": {
+        "compressed": "unexpected content encoding",
+        "missing-field": "unexpected fields",
+        "oversize": "response too large",
+        "rate-limit": "unexpected HTTP status",
+        "redirect": "unexpected HTTP status",
+        "server-error": "unexpected HTTP status",
+        "wrong-type": "unexpected media type"
+      },
+      "hypothetical_roi_percent": 50.0,
+      "passed_checks": 23,
+      "snapshot_bytes": 87
+    },
+    "selected_lint": {
+      "command": [
+        "python",
+        "-m",
+        "ruff",
+        "check",
+        "automation_workbook.py",
+        "test_automation_workbook.py",
+        "observations.py",
+        "--select",
+        "E4,E7,E9,F,W,E501",
+        "--line-length",
+        "79",
+        "--output-format",
+        "concise"
+      ],
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": "",
+      "version": "ruff 0.16.4"
+    },
+    "missing_tools": [
+      "schedule",
+      "plyer"
+    ],
+    "learning_catalog_consistency": "passed",
+    "unit_test_elapsed_seconds": 24.34,
+    "strict_site_build_elapsed_seconds": 27.64
+  },
+  "source_reading_boundaries": {
+    "python-3-library-reference": "Complete fresh standard-library introduction/index/navigation read, identifying3.14.7. Index is navigation, not every linked manual. Pinned3.13 selected pages identify3.13.15; actual interpreter3.13.14. No runtime update or inferred exam patch requirement.",
+    "requests-documentation": "Complete fresh landing read, version2.34.2 matching installed distribution; HTTP/session/TLS/auth/proxy feature overview and navigation. Selected quickstart,advanced andAPI contracts separately reviewed. No external authenticated request or unseen linked-manual completion.",
+    "pcea-30-01-syllabus": "Complete canonical indexed English syllabus,all46detailedobjectives/bullets andfullMQC read afterdirect/monitorWin10060. Sixblocks6/9/7/8/8/8,weights13/19.5/15/17.5/17.5/17.5;September2,2025 active outline. MQC mislabelsRequests/schedule/BeautifulSoupstandardlibraries. Existingdetailedsnapshot retained;no freshautomatedhashsuccess orfullPDFreading.",
+    "pcea-certification-page": "Complete indexed public body/table read afterdirecttimeout:limitedavailability/SmallMarketTrial/Beta30-01,7years,46questions/60minplusNDA/75cumulative/English/TestNow,69USDexam86retake,noprerequisite/PCEP-equivalentscriptingrecommended. Active syllabus andbeta delivery describe differentaspects. PCAApath isdifferentcredential. No alignedcourse listed on reviewedpage;not proofnoneexistelsewhere. Noaccount/purchase orindependentsalaryverification.",
+    "automate-boring-stuff": "Complete indexed authorlanding read afterdirecttimeout:freewebthirdedition,beginners,24chapterTOC,oldereditions/companionworkbook andvideocoursemostlyfirstedition. Thirdeditionchapter0 onlysearch excerpts;notcompletechapter. No linkedchapter/workbook/video completion,download,account,purchase,discountredemption orreviewcopyrequest. Authorplanninghours only.",
+    "schedule-documentation": "Complete fresh landing read,docs1.2.0:in-processperiodicjobs,explicitlimits forpersistence/exacttiming/concurrency/localization andlong-jobduration. Linkedtutorials/subpagesunread. Packageabsent;noinstallation orperiodicloop/service/schedulercreated. Distinctfromstdlibsched.",
+    "beautiful-soup-documentation": "Indexedselected introduction/install/parser excerpts;CSS1202–1302 andtext/parser1822–1863 read afterdirecterror. Not complete2504-line manual. Header4.14.3/body4.15.0 differ;installed4.13.3 used fororiginalhtml.parser fixture,uniqueh1.title/cardinality/get_text behavior. No browserJavaScript orpublicsitescraping.",
+    "oreilly-python-automation-cookbook-third": "Directblocked andindexedopen timeout;exactISBN9781803247300 search producedno confirmatorypublisheridentity. Content/edition/accessunverified. Removedrecommendation,retainoldcatalogidentitywithcaution;donot claimwrongbookor silentlymapoldISBNtonewPacktidentity. No subscription/account/bookinterior.",
+    "pcea-testing-policies": "Complete indexed canonical policy read revisedSeptember2,2025 afterdirecttimeout:failedseven-dayrule versusfooterfailedORpassed;local24hreschedule versusglobalunredeemedvalidvoucher procedures. Alladmission/NDA/age/accommodation/conduct/penalties read;noeligibilityafterpassinferred,noaccountbooking/systemtest.",
+    "python313-sys": "Selectedfresh71–88 argv and348–373 exit/SystemExit/status/cleanup read. Restunread. Actualfixedscript preview success/failure separatesJSONstdout,diagnosticstderr andexit2. InitialisolatedchildfailedmissingRequests;final-Echildretainsinstalleduserpackages,notisolatedmode.",
+    "python313-venv": "Selectedfresh35–63 introduction/isolation/disposable/nonportable and137–211 operation/activation/interpreterpath/recreation/deactivation read. RemainingCLIbuilderAPIsunread. No venvcreation/activation/packageinstall orpermissionchange.",
+    "python313-logging": "Selectedfresh997–1080 completebasicConfigoptions throughhistoryopening read. Restunread. OriginaldedicatedLogger/StreamHandler emitsINFO/ERROR andcloseswithoutrootconfiguration;nofilelogger/debug/warning/critical integration ormonitoringservice.",
+    "python313-os": "Selectedfresh158–190 environ semantics and1648–1665 replace/atomicrename plusrmdiropening read. Restunread. Childenv changesonlysyntheticPCEA_RUN_ID;oneownedfixedsnapshot stagedbesidetarget/closed/replaced. Atomicity notcross-filetransaction,durability,concurrency orTOCTOUproof.",
+    "python313-shutil": "Selectedfresh34–83 metadatawarning/copyfile and141–177 copy/copy2metadata behavior read. Restunread. Actualcopyfile on87syntheticbytes forbackup/restore. Noowner/ACL/ADS preservation,realrecoveryplan orsecureerasureclaim.",
+    "python313-csv": "Selectedfresh63–100 reader/writer,newline/type contracts and133–199 DictReader/DictWriter,extra/missingcells read. Restunread. Originalstrictheader/count/duplicateCSVmerge andprefixeddisplayexport;quotedcommasroundtrip. Noarbitraryspreadsheetformula-safety orGUIexecution.",
+    "python313-json": "Freshbody hash matchesPCES;reuse49–60sizewarning/introduction,160–218serialization,274–289loads/decoder. Additionalfresh223–280 orderedpairs/parseconstant/loads read. Originalduplicate-key/nonfinite/schema/bytebound checks;notcompleteparserresource-hardeningproof.",
+    "python313-tempfile": "Freshbody hash matchesPCES;reuse149–179 TemporaryDirectory/cleanup. Additionalfresh78–128 completeNamedTemporaryFile delete/close/reopen/Windows semantics read. Ownedresolvedtemporaryroots checked;closedstagingfile deletedonlywithinownedroot. Noabruptterminationcleanupguarantee.",
+    "python313-pathlib": "Freshbody hash matchesPCES;reuse650–679 absolute/resolve includingstrict/symlinks. Restunread. Fixedownedtarget/precheckedlink only;noactualsymlink/junction/raceattack test orfilesystemsecurityboundaryclaim.",
+    "python313-subprocess": "Freshbody hash matchesPCES;reuse60–140 run/capture/check/timeout/env and548–565 securitysection. OriginalfixedPythonchildren-E/-B(and-Oinoptimizedmode),syntheticargv/env,no shell,timeout5,hiddenWindowscreation. NoarbitraryOScommand or realtimeoutmeasurement.",
+    "python313-html": "Freshbody hash matchesPCES;reuse1–70 completeescape/unescapebody/navigation. OriginalHTMLtextnodes only;noJS/CSS/URLsanitization orbrowserexecution.",
+    "python313-time": "Selectedfresh212–248 monotonic/perf_counter/reference/precisioncontracts read. Restunread. Injected0.25secondoracle isnotbenchmark;realintervalsrecordedbutno persistentlast-successwall-clock monitor.",
+    "python313-smtplib": "Selectedfresh42–99 SMTP/SSL construction/context/timeout and205–249 login/auth opening read. Restunread. Transport/connection/auth distinctions only;noSMTPmessage/clientconnection/credential/recipient ordeliveryclaim.",
+    "python313-email-message": "Selectedfresh39–57 header/payload/MIME/objectmodel read. Restunread. Conceptualmessage-versus-transport distinction;no composed/sentrealmessage ormailboxaccess.",
+    "python313-http-server": "Selectedfresh36–79 productionwarning/HTTPServer/handler,104–144 streams/protocol,184–225 headers/response/logopening and398–409 securitywarnings read. Restunread. Eightownedone-requestloopbackfixtures permode,syntheticbody/headerconstants,workersjoined/serverclosed. Nodirectoryserving orpersistentservice.",
+    "python313-threading": "Selectedfresh397–435 start/run/join/is_alive and487–536 Lock/nonblocking/release semantics read. Restunread. Actualsame-processlockcontention/release separatefromrun_once;no cross-processschedulerlock orconcurrentwriter implementation. BoundedHTTPworkerjoinchecked.",
+    "requests-quickstart": "Selectedfresh79–130 JSONversusHTTP/raw/streamdecoding,254–276 status,332–387 redirects/timeouts/exceptions read. Restunread. ActualownedHTTPstatus/type/size/schema cases;noexternalendpoint/TLS/auth/retry/paginationexecution.",
+    "requests-advanced": "Selectedfresh16–48 sessionconfiguration/context,186–216 streamedresponseclosing,688–729 connect/readtimeout versuswallclock read. Restunread. Fixedownedloopbackonly,contextsclose;nohardtotaldeadline claim or maliciousserverloadtest.",
+    "requests-api": "Selectedfresh278–337 requestparams/trust_env/verify,383–425 content/streaming,435–460 JSONerrors/ok/raise_for_status read. Restunread. trust_envFalse avoidsambientproxy/defaultauth;redirectsFalse,identityencoding,boundedchunks. SimulatedReadTimeout/config assertions distinctfromeightactualHTTPcases.",
+    "ruff-linter": "Freshbody matchesPCES/PCET SHA256638a424e58de26f0ae126ac5b283aa0a85857bd6107715b3df7d1a069218919d;reuse1–137 intro/check/rules,227–250 fixexample/opening,469–490exitflags. Restunread. Existing0.16.4 selectedrules79columns pass;noautofix/fullsecurityaudit.",
+    "packt-python-automation-cookbook-3": "Selectedindexedpublicmetadata,title/author/printISBN9781806702893,June29,2026,676pages,thirdedition andcompletevisibleTOC1412–1466 read afterdirectblocked. Page19chapterlabel versusnumbered1–17+otherbooks/index distinguished. Onlyopeningpublicsamplethrough296 read,notcompletechapter/book;otherpagebodiesunclaimed. Relevantfile/API/report/testing alongsidebroaderAI/MCPtopics,notofficialPCEAalignment. No purchase/account/download/codeexecution."
+  },
+  "reused_source_reading_hashes": {
+    "python313-pathlib": {
+      "identical": true,
+      "current_sha256": "da8f3c85d658d70754f817c77952014c904d56ad54d624e83c0f0eedffb4a888",
+      "prior_sha256": "da8f3c85d658d70754f817c77952014c904d56ad54d624e83c0f0eedffb4a888",
+      "reused_sections": "650–679 absolute/resolve including strict and symlink behavior"
+    },
+    "python313-html": {
+      "identical": true,
+      "current_sha256": "d1e3ecd03ff7d4c2f320797b1a1477085ab054b73b60aa859881a29f9c6b77b2",
+      "prior_sha256": "d1e3ecd03ff7d4c2f320797b1a1477085ab054b73b60aa859881a29f9c6b77b2",
+      "reused_sections": "1–70 complete escape/unescape body and navigation"
+    },
+    "python313-subprocess": {
+      "identical": true,
+      "current_sha256": "aa14cc01cf35f1a5f94809bf252021cb0184988c7eb7146eeda51f729cb70667",
+      "prior_sha256": "aa14cc01cf35f1a5f94809bf252021cb0184988c7eb7146eeda51f729cb70667",
+      "reused_sections": "60–140 run/input/capture/check/timeout/env;548–565 security section"
+    },
+    "python313-tempfile": {
+      "identical": true,
+      "current_sha256": "187a23467468ca664635d5b5d54b05f891f4c056ffd9917e8b988aed79b3c6c4",
+      "prior_sha256": "187a23467468ca664635d5b5d54b05f891f4c056ffd9917e8b988aed79b3c6c4",
+      "reused_sections": "149–179 TemporaryDirectory and cleanup"
+    },
+    "python313-json": {
+      "identical": true,
+      "current_sha256": "d92bc903adbab6599fa37c1b2dd5ebd6e2a27b4e9d8c3d27769b711f37ce4211",
+      "prior_sha256": "d92bc903adbab6599fa37c1b2dd5ebd6e2a27b4e9d8c3d27769b711f37ce4211",
+      "reused_sections": "49–60 size warning/introduction;160–218 serialization;274–289 loads/decoder"
+    },
+    "ruff-linter": {
+      "identical": true,
+      "current_sha256": "638a424e58de26f0ae126ac5b283aa0a85857bd6107715b3df7d1a069218919d",
+      "prior_sha256": "638a424e58de26f0ae126ac5b283aa0a85857bd6107715b3df7d1a069218919d",
+      "reused_sections": "1–137 introduction/check/rules;227–250 fix example/opening;469–490 exit flags"
+    }
+  },
+  "public_examples": [
+    {
+      "filename": "automation_workbook.py",
+      "sha256": "9799960d807baa5680f99a11a9a88d92f4bc77fd8efd801875a8216279025ded",
+      "bytes": 8180,
+      "syntax_checked": true,
+      "executed": true,
+      "code": "\"\"\"Original PCEA workbook: synthetic data and an owned temporary root only.\"\"\"\nimport csv\nimport html\nimport io\nimport json\nimport logging\nimport os\nfrom pathlib import Path\nimport re\nimport sys\nimport tempfile\nimport time\n\nimport requests\nfrom bs4 import BeautifulSoup\n\n\ndef token(value):\n    if (type(value) is not str\n            or not re.fullmatch(r\"[a-z][a-z0-9-]{0,19}\", value)):\n        raise ValueError(\"invalid identifier\")\n    return value\n\n\ndef records(value):\n    if type(value) is not list or not 1 <= len(value) <= 20:\n        raise ValueError(\"expected one to twenty rows\")\n    result, seen = [], set()\n    for row in value:\n        if type(row) is not dict or set(row) != {\"id\", \"label\", \"count\"}:\n            raise ValueError(\"unexpected fields\")\n        key = token(row[\"id\"])\n        label, count = row[\"label\"], row[\"count\"]\n        if key in seen:\n            raise ValueError(\"duplicate identifier\")\n        if (type(label) is not str or not 1 <= len(label) <= 80\n                or not label.isprintable()):\n            raise ValueError(\"invalid label\")\n        if type(count) is not int or not 0 <= count <= 10000:\n            raise ValueError(\"invalid count\")\n        seen.add(key)\n        result.append(dict(id=key, label=label, count=count))\n    return sorted(result, key=lambda row: row[\"id\"])\n\n\ndef unique_pairs(pairs):\n    result = {}\n    for key, value in pairs:\n        if key in result:\n            raise ValueError(\"duplicate JSON key\")\n        result[key] = value\n    return result\n\n\ndef reject_constant(value):\n    raise ValueError(\"non-finite JSON number\")\n\n\ndef decode(raw):\n    if type(raw) is not bytes or not 1 <= len(raw) <= 4096:\n        raise ValueError(\"invalid byte count\")\n    value = json.loads(raw.decode(\"utf-8\"), object_pairs_hook=unique_pairs,\n                       parse_constant=reject_constant)\n    return records(value)\n\n\ndef encoded(rows):\n    return json.dumps(records(rows), ensure_ascii=False, sort_keys=True,\n                      separators=(\",\", \":\")).encode(\"utf-8\") + b\"\\n\"\n\n\ndef combine_csv(parts):\n    if type(parts) is not list or not 1 <= len(parts) <= 3:\n        raise ValueError(\"invalid part count\")\n    result = []\n    for part in parts:\n        if type(part) is not str or not 1 <= len(part) <= 4096:\n            raise ValueError(\"invalid CSV size\")\n        reader = csv.DictReader(io.StringIO(part, newline=\"\"), strict=True)\n        if reader.fieldnames != [\"id\", \"label\", \"count\"]:\n            raise ValueError(\"unexpected CSV header\")\n        for row in reader:\n            if (set(row) != {\"id\", \"label\", \"count\"}\n                    or any(value is None for value in row.values())\n                    or not re.fullmatch(r\"[0-9]{1,5}\", row[\"count\"])):\n                raise ValueError(\"invalid CSV row\")\n            row[\"count\"] = int(row[\"count\"])\n            result.append(row)\n            if len(result) > 20:\n                raise ValueError(\"too many rows\")\n    return records(result)\n\n\ndef reports(rows):\n    rows = records(rows)\n    output = io.StringIO(newline=\"\")\n    writer = csv.writer(output, lineterminator=\"\\n\")\n    writer.writerow([\"id\", \"display_label\", \"count\"])\n    items = []\n    for row in rows:\n        # This display export deliberately differs from a raw-data CSV.\n        writer.writerow([row[\"id\"], \"label: \" + row[\"label\"], row[\"count\"]])\n        items.append(\"<li>\" + html.escape(row[\"label\"], quote=True)\n                     + \": \" + str(row[\"count\"]) + \"</li>\")\n    markup = \"<ul>\" + \"\".join(items) + \"</ul>\"\n    return {\"csv\": output.getvalue(), \"html\": markup}\n\n\ndef static_title(markup):\n    if type(markup) is not str or not 1 <= len(markup) <= 4096:\n        raise ValueError(\"invalid HTML size\")\n    soup = BeautifulSoup(markup, \"html.parser\")\n    matches = soup.select(\"h1.title\")\n    if len(matches) != 1:\n        raise ValueError(\"expected exactly one title\")\n    value = matches[0].get_text(\" \", strip=True)\n    if not value or len(value) > 80 or not value.isprintable():\n        raise ValueError(\"invalid title\")\n    return value\n\n\ndef fetch_owned(port):\n    \"\"\"Call only with the port of this exercise's own loopback server.\"\"\"\n    if type(port) is not int or not 1 <= port <= 65535:\n        raise ValueError(\"invalid owned port\")\n    with requests.Session() as session:\n        session.trust_env = False\n        with session.get(f\"http://127.0.0.1:{port}/records\",\n                         timeout=(2, 2), allow_redirects=False, stream=True,\n                         headers={\"Accept-Encoding\": \"identity\"}) as response:\n            if response.status_code != 200:\n                raise ValueError(\"unexpected HTTP status\")\n            kind = response.headers.get(\"Content-Type\", \"\").split(\";\")[0]\n            if kind.strip().lower() != \"application/json\":\n                raise ValueError(\"unexpected media type\")\n            encoding = response.headers.get(\"Content-Encoding\", \"identity\")\n            if encoding != \"identity\":\n                raise ValueError(\"unexpected content encoding\")\n            raw = bytearray()\n            for chunk in response.iter_content(chunk_size=512):\n                if len(raw) + len(chunk) > 4096:\n                    raise ValueError(\"response too large\")\n                raw.extend(chunk)\n            return decode(bytes(raw))\n\n\ndef save_snapshot(root, rows):\n    \"\"\"One file in a trusted, exclusively owned temporary directory.\"\"\"\n    payload = encoded(rows)\n    if len(payload) > 4096:\n        raise ValueError(\"snapshot too large\")\n    base = Path(root).resolve(strict=True)\n    if not base.is_dir():\n        raise ValueError(\"root must be a directory\")\n    target = base / \"snapshot.json\"\n    if target.is_symlink():\n        raise ValueError(\"linked target\")\n    if target.exists():\n        with target.open(\"rb\") as source:\n            previous = source.read(4097)\n        decode(previous)  # Preserve corrupt state for investigation.\n        if previous == payload:\n            return False\n    staging = None\n    try:\n        with tempfile.NamedTemporaryFile(dir=base, prefix=\"stage-\",\n                                         delete=False) as stream:\n            staging = Path(stream.name)\n            stream.write(payload)\n        os.replace(staging, target)\n    finally:\n        if staging is not None and staging.exists():\n            if staging.resolve().parent != base:\n                raise RuntimeError(\"unexpected cleanup location\")\n            staging.unlink()\n    return True\n\n\ndef run_once(root, rows, run_id, stream, clock=time.perf_counter):\n    run_id = token(run_id)\n    logger = logging.Logger(\"pcea-workbook\", level=logging.INFO)\n    logger.propagate = False\n    handler = logging.StreamHandler(stream)\n    handler.setFormatter(logging.Formatter(\"%(levelname)s %(message)s\"))\n    logger.addHandler(handler)\n    started = clock()\n    try:\n        valid = records(rows)\n        rendered = reports(valid)\n        changed = save_snapshot(root, valid)\n    except (ValueError, OSError) as error:\n        logger.error(\"run=%s failed=%s\", run_id, type(error).__name__)\n        raise\n    else:\n        elapsed = round(clock() - started, 6)\n        logger.info(\"run=%s rows=%d changed=%s seconds=%.6f\",\n                    run_id, len(valid), changed, elapsed)\n        return dict(changed=changed, rows=len(valid), reports=rendered,\n                    elapsed=elapsed, notification_needed=changed)\n    finally:\n        logger.removeHandler(handler)\n        handler.close()\n\n\ndef main(argv, environment, stdout, stderr):\n    try:\n        if len(argv) != 2 or argv[0] != \"preview\":\n            raise ValueError(\"usage\")\n        if not re.fullmatch(r\"[0-9]{1,2}\", argv[1]):\n            raise ValueError(\"count\")\n        count = int(argv[1])\n        if not 1 <= count <= 20:\n            raise ValueError(\"count\")\n        run_id = token(environment.get(\"PCEA_RUN_ID\", \"local\"))\n    except (ValueError, TypeError):\n        print(\"invalid preview arguments or run identifier\", file=stderr)\n        return 2\n    print(json.dumps({\"run_id\": run_id, \"requested_rows\": count}), file=stdout)\n    return 0\n\n\nif __name__ == \"__main__\":\n    raise SystemExit(main(sys.argv[1:], os.environ, sys.stdout, sys.stderr))\n"
+    },
+    {
+      "filename": "test_automation_workbook.py",
+      "sha256": "51b2550d2d51460403ca215eb8af7aa53d5e7ef9ca852ade8abf69918187d553",
+      "bytes": 9571,
+      "syntax_checked": true,
+      "executed": true,
+      "code": "\"\"\"Original behavioral contracts; all file fixtures belong to this test.\"\"\"\nimport copy\nimport csv\nimport io\nimport json\nfrom pathlib import Path\nimport tempfile\nimport unittest\nfrom unittest.mock import patch\n\nimport automation_workbook as work\n\n\ndef fixture():\n    return [dict(id=\"b\", label='North, \"annex\"', count=0),\n            dict(id=\"a\", label=\"<script>synthetic</script>\", count=7)]\n\n\nclass WorkbookTests(unittest.TestCase):\n    def setUp(self):\n        self.temp = tempfile.TemporaryDirectory(\n            dir=Path(__file__).resolve().parent, prefix=\"test-owned-\")\n        self.root = Path(self.temp.name)\n        self.assertEqual(self.root.resolve().parent,\n                         Path(__file__).resolve().parent)\n        self.addCleanup(self.temp.cleanup)\n\n    def test_canonical_order_and_input_preserved(self):\n        rows = fixture()\n        before = copy.deepcopy(rows)\n        result = work.records(rows)\n        self.assertEqual([row[\"id\"] for row in result], [\"a\", \"b\"])\n        result[0][\"count\"] = 2\n        self.assertEqual(rows, before)\n\n    def test_boolean_is_not_a_count(self):\n        for value in [True, False, -1, 10001, 1.5, \"1\", None]:\n            with self.subTest(value=value), self.assertRaises(ValueError):\n                work.records([dict(id=\"a\", label=\"A\", count=value)])\n\n    def test_count_boundaries(self):\n        for value in [0, 10000]:\n            self.assertEqual(work.records([\n                dict(id=\"a\", label=\"A\", count=value)])[0][\"count\"], value)\n\n    def test_schema_and_duplicate_ids(self):\n        for value in [[], {}, [1], fixture() * 2,\n                      [dict(id=\"a\", label=\"A\")],\n                      [dict(id=\"a\", label=\"A\", count=1, secret=\"omitted\")]]:\n            with self.subTest(value=value), self.assertRaises(ValueError):\n                work.records(value)\n\n    def test_bounds_and_control_characters(self):\n        for label in [\"\", \"A\" * 81, \"A\\nB\", \"A\\x00B\"]:\n            with self.subTest(label=label), self.assertRaises(ValueError):\n                work.records([dict(id=\"a\", label=label, count=1)])\n        with self.assertRaises(ValueError):\n            work.records([dict(id=\"A\", label=\"A\", count=1)])\n\n    def test_json_round_trip_and_order(self):\n        raw = work.encoded(fixture())\n        self.assertEqual(work.decode(raw), work.records(fixture()))\n        self.assertEqual(raw, work.encoded(list(reversed(fixture()))))\n        self.assertTrue(raw.endswith(b\"\\n\"))\n\n    def test_json_duplicate_keys_rejected(self):\n        raw = b'[{\"id\":\"a\",\"label\":\"A\",\"count\":1,\"count\":2}]'\n        with self.assertRaises(ValueError):\n            work.decode(raw)\n\n    def test_json_nonfinite_utf8_and_size(self):\n        for raw in [b\"\", b\"x\" * 4097, b\"\\xff\", b\"[NaN]\", b\"[Infinity]\",\n                    b\"null\", b\"[]\", b\"{}\", b\"[\", b\"[true]\"]:\n            with self.subTest(raw=raw[:20]), self.assertRaises(ValueError):\n                work.decode(raw)\n\n    def test_csv_merge_quoted_delimiter(self):\n        parts = ['id,label,count\\nb,\"North, annex\",2\\n',\n                 'id,label,count\\na,South,3\\n']\n        self.assertEqual(work.combine_csv(parts), [\n            dict(id=\"a\", label=\"South\", count=3),\n            dict(id=\"b\", label=\"North, annex\", count=2)])\n\n    def test_csv_missing_extra_or_duplicate_header(self):\n        for text in ['id,label,count\\na,A\\n', 'id,label,count\\na,A,1,2\\n',\n                     'id,id,count\\na,a,1\\n', 'id,label,count\\na,A,-1\\n']:\n            with self.subTest(text=text), self.assertRaises(ValueError):\n                work.combine_csv([text])\n\n    def test_csv_duplicate_identifier_across_parts(self):\n        part = 'id,label,count\\na,A,1\\n'\n        with self.assertRaises(ValueError):\n            work.combine_csv([part, part])\n\n    def test_display_csv_and_html_contexts(self):\n        rows = fixture() + [dict(id=\"c\", label=\"=SUM(1,2)\", count=1)]\n        report = work.reports(rows)\n        parsed = list(csv.DictReader(io.StringIO(report[\"csv\"])))\n        self.assertEqual(parsed[1][\"display_label\"],\n                         'label: North, \"annex\"')\n        self.assertEqual(parsed[2][\"display_label\"],\n                         \"label: =SUM(1,2)\")\n        self.assertNotIn(\"<script>\", report[\"html\"])\n        self.assertIn(\"&lt;script&gt;synthetic&lt;/script&gt;\", report[\"html\"])\n\n    def test_static_html_title(self):\n        markup = '<h1 class=\"title\">North <b>&amp;</b> South</h1>'\n        self.assertEqual(work.static_title(markup), \"North & South\")\n\n    def test_missing_multiple_or_empty_html_title(self):\n        for markup in ['<p>none</p>', '<h1 class=\"title\"></h1>',\n                       '<h1 class=\"title\">A</h1>' * 2]:\n            with self.subTest(markup=markup), self.assertRaises(ValueError):\n                work.static_title(markup)\n\n    def test_first_commit_and_idempotent_rerun(self):\n        self.assertTrue(work.save_snapshot(self.root, fixture()))\n        target = self.root / \"snapshot.json\"\n        before = (target.read_bytes(), target.stat().st_mtime_ns)\n        with patch.object(work.os, \"replace\") as replacement:\n            self.assertFalse(work.save_snapshot(self.root, fixture()[::-1]))\n        replacement.assert_not_called()\n        after = (target.read_bytes(), target.stat().st_mtime_ns)\n        self.assertEqual(after, before)\n\n    def test_changed_snapshot_replaces_old(self):\n        work.save_snapshot(self.root, fixture())\n        newer = fixture()\n        newer[0][\"count\"] = 9\n        self.assertTrue(work.save_snapshot(self.root, newer))\n        actual = work.decode((self.root / \"snapshot.json\").read_bytes())\n        self.assertEqual(actual, work.records(newer))\n\n    def test_failed_replace_preserves_previous_and_cleans_stage(self):\n        work.save_snapshot(self.root, fixture())\n        before = (self.root / \"snapshot.json\").read_bytes()\n        newer = fixture()\n        newer[0][\"count\"] = 5\n        failure = PermissionError(\"synthetic-detail-not-for-log\")\n        with patch.object(work.os, \"replace\", side_effect=failure):\n            with self.assertRaises(PermissionError) as caught:\n                work.save_snapshot(self.root, newer)\n        self.assertIs(caught.exception, failure)\n        self.assertEqual((self.root / \"snapshot.json\").read_bytes(), before)\n        self.assertEqual(sorted(p.name for p in self.root.iterdir()),\n                         [\"snapshot.json\"])\n\n    def test_corrupt_previous_is_not_overwritten(self):\n        target = self.root / \"snapshot.json\"\n        target.write_bytes(b\"corrupt synthetic state\")\n        with self.assertRaises(ValueError):\n            work.save_snapshot(self.root, fixture())\n        self.assertEqual(target.read_bytes(), b\"corrupt synthetic state\")\n\n    def test_invalid_input_creates_no_files(self):\n        with self.assertRaises(ValueError):\n            work.save_snapshot(self.root, [])\n        self.assertEqual(list(self.root.iterdir()), [])\n\n    def test_path_and_directory_errors(self):\n        with self.assertRaises(FileNotFoundError):\n            work.save_snapshot(self.root / \"missing\", fixture())\n        (self.root / \"snapshot.json\").mkdir()\n        with self.assertRaises(OSError):\n            work.save_snapshot(self.root, fixture())\n\n    def test_run_logs_counts_not_labels(self):\n        sink = io.StringIO()\n        ticks = iter([10.0, 10.25])\n        result = work.run_once(self.root, fixture(), \"run-a\", sink,\n                               clock=lambda: next(ticks))\n        self.assertEqual(result[\"elapsed\"], 0.25)\n        self.assertTrue(result[\"notification_needed\"])\n        expected = \"INFO run=run-a rows=2 changed=True seconds=0.250000\\n\"\n        self.assertEqual(sink.getvalue(), expected)\n        self.assertNotIn(\"synthetic\", sink.getvalue())\n\n    def test_rerun_suppresses_notification_decision(self):\n        work.save_snapshot(self.root, fixture())\n        result = work.run_once(self.root, fixture(), \"run-b\", io.StringIO())\n        self.assertFalse(result[\"notification_needed\"])\n\n    def test_failure_log_omits_exception_message(self):\n        sink = io.StringIO()\n        with patch.object(work, \"save_snapshot\",\n                          side_effect=PermissionError(\"synthetic-secret\")):\n            with self.assertRaises(PermissionError):\n                work.run_once(self.root, fixture(), \"run-a\", sink)\n        self.assertEqual(sink.getvalue(),\n                         \"ERROR run=run-a failed=PermissionError\\n\")\n\n    def test_cli_output_and_validation(self):\n        stdout, stderr = io.StringIO(), io.StringIO()\n        status = work.main([\"preview\", \"2\"], {\"PCEA_RUN_ID\": \"fixture\"},\n                           stdout, stderr)\n        self.assertEqual(status, 0)\n        self.assertEqual(json.loads(stdout.getvalue()),\n                         dict(run_id=\"fixture\", requested_rows=2))\n        self.assertEqual(stderr.getvalue(), \"\")\n        for args in [[], [\"preview\", \"0\"], [\"preview\", \"21\"],\n                     [\"preview\", \"1;echo\"], [\"other\", \"1\"]]:\n            output, errors = io.StringIO(), io.StringIO()\n            self.assertEqual(work.main(args, {}, output, errors), 2)\n            self.assertEqual(output.getvalue(), \"\")\n            self.assertTrue(errors.getvalue())\n\n    def test_port_validation_precedes_connection(self):\n        with patch.object(work.requests, \"Session\") as session:\n            for port in [True, 0, 65536, \"80\", -1]:\n                with self.subTest(port=port), self.assertRaises(ValueError):\n                    work.fetch_owned(port)\n            session.assert_not_called()\n\n\nif __name__ == \"__main__\":\n    unittest.main()\n"
+    },
+    {
+      "filename": "observations.py",
+      "sha256": "d3978156f05fbebcf79298ef0b8ea625fb835f2fb6e0f88ff9d5fda523ece122",
+      "bytes": 8016,
+      "syntax_checked": true,
+      "executed": true,
+      "code": "\"\"\"Original integration probes; no persistent server, scheduler or message.\"\"\"\nfrom http.server import BaseHTTPRequestHandler, HTTPServer\nimport io\nimport json\nimport os\nfrom pathlib import Path\nimport shutil\nimport subprocess\nimport sys\nimport tempfile\nimport threading\nfrom unittest.mock import patch\n\nimport automation_workbook as work\n\n\nROWS = [dict(id=\"a\", label=\"A < B\", count=2),\n        dict(id=\"b\", label='North, \"annex\"', count=3)]\nPASSED = []\n\n\ndef check(name, condition):\n    if not condition:\n        raise RuntimeError(name)\n    PASSED.append(name)\n\n\ndef exercise_http(status=200, kind=\"application/json\", body=None,\n                  encoding=\"identity\"):\n    body = work.encoded(ROWS) if body is None else body\n    seen = []\n\n    class Handler(BaseHTTPRequestHandler):\n        timeout = 2\n\n        def do_GET(self):\n            seen.append(dict(path=self.path,\n                             authenticated=\"Authorization\" in self.headers,\n                             cookies=\"Cookie\" in self.headers))\n            self.send_response(status)\n            self.send_header(\"Content-Type\", kind)\n            self.send_header(\"Content-Length\", str(len(body)))\n            self.send_header(\"Content-Encoding\", encoding)\n            if status == 302:\n                self.send_header(\"Location\", \"/never-follow\")\n            self.end_headers()\n            self.wfile.write(body)\n\n        def log_message(self, format, *args):\n            pass\n\n    with HTTPServer((\"127.0.0.1\", 0), Handler) as server:\n        server.timeout = 2\n        worker = threading.Thread(target=server.handle_request)\n        worker.start()\n        try:\n            result = work.fetch_owned(server.server_port)\n            outcome = dict(result=result, error=None)\n        except ValueError as error:\n            outcome = dict(result=None, error=str(error))\n        finally:\n            worker.join(timeout=3)\n        if worker.is_alive():\n            raise RuntimeError(\"owned HTTP worker did not stop\")\n    if seen != [dict(path=\"/records\", authenticated=False, cookies=False)]:\n        raise RuntimeError(\"unexpected owned HTTP request\")\n    return outcome\n\n\ndef main():\n    normal = exercise_http()\n    check(\"owned-http-success\", normal == dict(result=ROWS, error=None))\n    http = {}\n    cases = [\n        (\"redirect\", dict(status=302), \"unexpected HTTP status\"),\n        (\"rate-limit\", dict(status=429), \"unexpected HTTP status\"),\n        (\"server-error\", dict(status=500), \"unexpected HTTP status\"),\n        (\"wrong-type\", dict(kind=\"text/html\"), \"unexpected media type\"),\n        (\"oversize\", dict(body=b\"x\" * 4097), \"response too large\"),\n        (\"compressed\", dict(encoding=\"gzip\"), \"unexpected content encoding\"),\n        (\"missing-field\", dict(body=b'[{\"id\":\"a\"}]'), \"unexpected fields\"),\n    ]\n    for name, options, message in cases:\n        outcome = exercise_http(**options)\n        check(\"owned-http-\" + name,\n              outcome == dict(result=None, error=message))\n        http[name] = message\n\n    timeout = work.requests.exceptions.ReadTimeout(\"synthetic detail\")\n    with patch.object(work.requests, \"Session\") as factory:\n        session = factory.return_value.__enter__.return_value\n        session.get.side_effect = timeout\n        try:\n            work.fetch_owned(1)  # Mocked; no connection to port 1 occurs.\n        except work.requests.exceptions.ReadTimeout as caught:\n            check(\"simulated-timeout-propagated\", caught is timeout)\n        else:\n            raise RuntimeError(\"expected simulated timeout\")\n        options = session.get.call_args.kwargs\n        check(\"http-configuration-observed\",\n              session.trust_env is False and options[\"timeout\"] == (2, 2)\n              and options[\"allow_redirects\"] is False\n              and options[\"stream\"] is True)\n    check(\"session-exit-after-timeout\",\n          factory.return_value.__exit__.call_count == 1)\n\n    parent = Path(__file__).resolve().parent\n    with tempfile.TemporaryDirectory(dir=parent, prefix=\"probe-owned-\") as tmp:\n        root = Path(tmp)\n        if root.resolve().parent != parent:\n            raise RuntimeError(\"unexpected temporary root\")\n        saved_path = root\n        sink = io.StringIO()\n        first = work.run_once(root, ROWS, \"run-a\", sink)\n        check(\"first-snapshot-and-report\", first[\"changed\"]\n              and \"A &lt; B\" in first[\"reports\"][\"html\"])\n        snapshot = root / \"snapshot.json\"\n        original = snapshot.read_bytes()\n        before = snapshot.stat().st_mtime_ns\n        second = work.run_once(root, ROWS[::-1], \"run-b\", sink)\n        check(\"rerun-no-write-no-notification\",\n              not second[\"notification_needed\"]\n              and snapshot.stat().st_mtime_ns == before\n              and snapshot.read_bytes() == original)\n        backup = root / \"backup.json\"\n        shutil.copyfile(snapshot, backup)\n        changed = [dict(row) for row in ROWS]\n        changed[0][\"count\"] = 4\n        third = work.run_once(root, changed, \"run-c\", sink)\n        check(\"meaningful-change\", third[\"changed\"]\n              and snapshot.read_bytes() != original)\n        shutil.copyfile(backup, snapshot)\n        check(\"owned-byte-restore\", snapshot.read_bytes() == original\n              and work.decode(snapshot.read_bytes()) == ROWS)\n        with patch.object(work.os, \"replace\",\n                          side_effect=OSError(\"synthetic-disk-failure\")):\n            try:\n                work.run_once(root, changed, \"run-d\", sink)\n            except OSError:\n                check(\"simulated-disk-failure-preserved-state\",\n                      snapshot.read_bytes() == original\n                      and not list(root.glob(\"stage-*\")))\n            else:\n                raise RuntimeError(\"expected simulated disk failure\")\n        check(\"failure-log-redacted\", \"failed=OSError\" in sink.getvalue()\n              and \"synthetic-disk-failure\" not in sink.getvalue()\n              and 'North, \"annex\"' not in sink.getvalue())\n    check(\"temporary-root-removed\", not saved_path.exists())\n\n    env = dict(os.environ)\n    env[\"PCEA_RUN_ID\"] = \"child-fixture\"\n    base = [sys.executable, \"-E\", \"-B\"]\n    if sys.flags.optimize:\n        base.append(\"-O\")\n    base.append(str(parent / \"automation_workbook.py\"))\n    flags = getattr(subprocess, \"CREATE_NO_WINDOW\", 0)\n    child = subprocess.run(base + [\"preview\", \"2\"], env=env, timeout=5,\n                           capture_output=True, text=True, check=True,\n                           creationflags=flags)\n    check(\"real-child-cli-success\", not child.stderr\n          and json.loads(child.stdout) == dict(run_id=\"child-fixture\",\n                                              requested_rows=2))\n    bad = subprocess.run(base + [\"preview\", \"1;echo\"], env=env, timeout=5,\n                         capture_output=True, text=True, check=False,\n                         creationflags=flags)\n    message = \"invalid preview arguments or run identifier\"\n    check(\"real-child-cli-failure\", bad.returncode == 2 and not bad.stdout\n          and bad.stderr.strip() == message)\n\n    lock = threading.Lock()\n    first_acquired = lock.acquire(blocking=False)\n    try:\n        check(\"same-process-overlap-rejected\",\n              first_acquired and not lock.acquire(blocking=False))\n    finally:\n        if first_acquired:\n            lock.release()\n    again = lock.acquire(blocking=False)\n    check(\"lock-released-for-next-run\", again)\n    if again:\n        lock.release()\n\n    manual_cost = 240 * 10 / 60 * 30\n    recurring = 240 * 2 / 60 * 30 + 4 * 30 + 40\n    total_cost = recurring + 400\n    roi = (manual_cost - total_cost) / total_cost * 100\n    check(\"hypothetical-roi\", manual_cost == 1200 and total_cost == 800\n          and roi == 50 and 400 / (manual_cost - recurring) == 0.5)\n    print(json.dumps(dict(passed_checks=len(PASSED), checks=PASSED,\n                          http_failures=http, snapshot_bytes=len(original),\n                          hypothetical_roi_percent=roi), sort_keys=True))\n\n\nif __name__ == \"__main__\":\n    main()\n"
+    }
+  ],
+  "local_execution_evidence": [
+    {
+      "program": "unittest",
+      "command": [
+        "python",
+        "-B",
+        "-Werror",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-p",
+        "test_automation_workbook.py",
+        "-v"
+      ],
+      "started_at": "2026-09-30T05:34:45.248482+00:00",
+      "elapsed_seconds": 0.314,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_boolean_is_not_a_count (test_automation_workbook.WorkbookTests.test_boolean_is_not_a_count) ... ok\ntest_bounds_and_control_characters (test_automation_workbook.WorkbookTests.test_bounds_and_control_characters) ... ok\ntest_canonical_order_and_input_preserved (test_automation_workbook.WorkbookTests.test_canonical_order_and_input_preserved) ... ok\ntest_changed_snapshot_replaces_old (test_automation_workbook.WorkbookTests.test_changed_snapshot_replaces_old) ... ok\ntest_cli_output_and_validation (test_automation_workbook.WorkbookTests.test_cli_output_and_validation) ... ok\ntest_corrupt_previous_is_not_overwritten (test_automation_workbook.WorkbookTests.test_corrupt_previous_is_not_overwritten) ... ok\ntest_count_boundaries (test_automation_workbook.WorkbookTests.test_count_boundaries) ... ok\ntest_csv_duplicate_identifier_across_parts (test_automation_workbook.WorkbookTests.test_csv_duplicate_identifier_across_parts) ... ok\ntest_csv_merge_quoted_delimiter (test_automation_workbook.WorkbookTests.test_csv_merge_quoted_delimiter) ... ok\ntest_csv_missing_extra_or_duplicate_header (test_automation_workbook.WorkbookTests.test_csv_missing_extra_or_duplicate_header) ... ok\ntest_display_csv_and_html_contexts (test_automation_workbook.WorkbookTests.test_display_csv_and_html_contexts) ... ok\ntest_failed_replace_preserves_previous_and_cleans_stage (test_automation_workbook.WorkbookTests.test_failed_replace_preserves_previous_and_cleans_stage) ... ok\ntest_failure_log_omits_exception_message (test_automation_workbook.WorkbookTests.test_failure_log_omits_exception_message) ... ok\ntest_first_commit_and_idempotent_rerun (test_automation_workbook.WorkbookTests.test_first_commit_and_idempotent_rerun) ... ok\ntest_invalid_input_creates_no_files (test_automation_workbook.WorkbookTests.test_invalid_input_creates_no_files) ... ok\ntest_json_duplicate_keys_rejected (test_automation_workbook.WorkbookTests.test_json_duplicate_keys_rejected) ... ok\ntest_json_nonfinite_utf8_and_size (test_automation_workbook.WorkbookTests.test_json_nonfinite_utf8_and_size) ... ok\ntest_json_round_trip_and_order (test_automation_workbook.WorkbookTests.test_json_round_trip_and_order) ... ok\ntest_missing_multiple_or_empty_html_title (test_automation_workbook.WorkbookTests.test_missing_multiple_or_empty_html_title) ... ok\ntest_path_and_directory_errors (test_automation_workbook.WorkbookTests.test_path_and_directory_errors) ... ok\ntest_port_validation_precedes_connection (test_automation_workbook.WorkbookTests.test_port_validation_precedes_connection) ... ok\ntest_rerun_suppresses_notification_decision (test_automation_workbook.WorkbookTests.test_rerun_suppresses_notification_decision) ... ok\ntest_run_logs_counts_not_labels (test_automation_workbook.WorkbookTests.test_run_logs_counts_not_labels) ... ok\ntest_schema_and_duplicate_ids (test_automation_workbook.WorkbookTests.test_schema_and_duplicate_ids) ... ok\ntest_static_html_title (test_automation_workbook.WorkbookTests.test_static_html_title) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 0.046s\n\nOK\n",
+      "optimized": false,
+      "test_methods": 25
+    },
+    {
+      "program": "observations",
+      "command": [
+        "python",
+        "-B",
+        "-Werror",
+        "observations.py"
+      ],
+      "started_at": "2026-09-30T05:34:45.562863+00:00",
+      "elapsed_seconds": 0.856,
+      "exit_code": 0,
+      "stdout": "{\"checks\": [\"owned-http-success\", \"owned-http-redirect\", \"owned-http-rate-limit\", \"owned-http-server-error\", \"owned-http-wrong-type\", \"owned-http-oversize\", \"owned-http-compressed\", \"owned-http-missing-field\", \"simulated-timeout-propagated\", \"http-configuration-observed\", \"session-exit-after-timeout\", \"first-snapshot-and-report\", \"rerun-no-write-no-notification\", \"meaningful-change\", \"owned-byte-restore\", \"simulated-disk-failure-preserved-state\", \"failure-log-redacted\", \"temporary-root-removed\", \"real-child-cli-success\", \"real-child-cli-failure\", \"same-process-overlap-rejected\", \"lock-released-for-next-run\", \"hypothetical-roi\"], \"http_failures\": {\"compressed\": \"unexpected content encoding\", \"missing-field\": \"unexpected fields\", \"oversize\": \"response too large\", \"rate-limit\": \"unexpected HTTP status\", \"redirect\": \"unexpected HTTP status\", \"server-error\": \"unexpected HTTP status\", \"wrong-type\": \"unexpected media type\"}, \"hypothetical_roi_percent\": 50.0, \"passed_checks\": 23, \"snapshot_bytes\": 87}\n",
+      "stderr": "",
+      "optimized": false,
+      "checks": 23
+    },
+    {
+      "program": "unittest",
+      "command": [
+        "python",
+        "-B",
+        "-Werror",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-p",
+        "test_automation_workbook.py",
+        "-v"
+      ],
+      "started_at": "2026-09-30T05:34:46.419854+00:00",
+      "elapsed_seconds": 0.433,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_boolean_is_not_a_count (test_automation_workbook.WorkbookTests.test_boolean_is_not_a_count) ... ok\ntest_bounds_and_control_characters (test_automation_workbook.WorkbookTests.test_bounds_and_control_characters) ... ok\ntest_canonical_order_and_input_preserved (test_automation_workbook.WorkbookTests.test_canonical_order_and_input_preserved) ... ok\ntest_changed_snapshot_replaces_old (test_automation_workbook.WorkbookTests.test_changed_snapshot_replaces_old) ... ok\ntest_cli_output_and_validation (test_automation_workbook.WorkbookTests.test_cli_output_and_validation) ... ok\ntest_corrupt_previous_is_not_overwritten (test_automation_workbook.WorkbookTests.test_corrupt_previous_is_not_overwritten) ... ok\ntest_count_boundaries (test_automation_workbook.WorkbookTests.test_count_boundaries) ... ok\ntest_csv_duplicate_identifier_across_parts (test_automation_workbook.WorkbookTests.test_csv_duplicate_identifier_across_parts) ... ok\ntest_csv_merge_quoted_delimiter (test_automation_workbook.WorkbookTests.test_csv_merge_quoted_delimiter) ... ok\ntest_csv_missing_extra_or_duplicate_header (test_automation_workbook.WorkbookTests.test_csv_missing_extra_or_duplicate_header) ... ok\ntest_display_csv_and_html_contexts (test_automation_workbook.WorkbookTests.test_display_csv_and_html_contexts) ... ok\ntest_failed_replace_preserves_previous_and_cleans_stage (test_automation_workbook.WorkbookTests.test_failed_replace_preserves_previous_and_cleans_stage) ... ok\ntest_failure_log_omits_exception_message (test_automation_workbook.WorkbookTests.test_failure_log_omits_exception_message) ... ok\ntest_first_commit_and_idempotent_rerun (test_automation_workbook.WorkbookTests.test_first_commit_and_idempotent_rerun) ... ok\ntest_invalid_input_creates_no_files (test_automation_workbook.WorkbookTests.test_invalid_input_creates_no_files) ... ok\ntest_json_duplicate_keys_rejected (test_automation_workbook.WorkbookTests.test_json_duplicate_keys_rejected) ... ok\ntest_json_nonfinite_utf8_and_size (test_automation_workbook.WorkbookTests.test_json_nonfinite_utf8_and_size) ... ok\ntest_json_round_trip_and_order (test_automation_workbook.WorkbookTests.test_json_round_trip_and_order) ... ok\ntest_missing_multiple_or_empty_html_title (test_automation_workbook.WorkbookTests.test_missing_multiple_or_empty_html_title) ... ok\ntest_path_and_directory_errors (test_automation_workbook.WorkbookTests.test_path_and_directory_errors) ... ok\ntest_port_validation_precedes_connection (test_automation_workbook.WorkbookTests.test_port_validation_precedes_connection) ... ok\ntest_rerun_suppresses_notification_decision (test_automation_workbook.WorkbookTests.test_rerun_suppresses_notification_decision) ... ok\ntest_run_logs_counts_not_labels (test_automation_workbook.WorkbookTests.test_run_logs_counts_not_labels) ... ok\ntest_schema_and_duplicate_ids (test_automation_workbook.WorkbookTests.test_schema_and_duplicate_ids) ... ok\ntest_static_html_title (test_automation_workbook.WorkbookTests.test_static_html_title) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 0.038s\n\nOK\n",
+      "optimized": true,
+      "test_methods": 25
+    },
+    {
+      "program": "observations",
+      "command": [
+        "python",
+        "-B",
+        "-Werror",
+        "-O",
+        "observations.py"
+      ],
+      "started_at": "2026-09-30T05:34:46.853414+00:00",
+      "elapsed_seconds": 1.253,
+      "exit_code": 0,
+      "stdout": "{\"checks\": [\"owned-http-success\", \"owned-http-redirect\", \"owned-http-rate-limit\", \"owned-http-server-error\", \"owned-http-wrong-type\", \"owned-http-oversize\", \"owned-http-compressed\", \"owned-http-missing-field\", \"simulated-timeout-propagated\", \"http-configuration-observed\", \"session-exit-after-timeout\", \"first-snapshot-and-report\", \"rerun-no-write-no-notification\", \"meaningful-change\", \"owned-byte-restore\", \"simulated-disk-failure-preserved-state\", \"failure-log-redacted\", \"temporary-root-removed\", \"real-child-cli-success\", \"real-child-cli-failure\", \"same-process-overlap-rejected\", \"lock-released-for-next-run\", \"hypothetical-roi\"], \"http_failures\": {\"compressed\": \"unexpected content encoding\", \"missing-field\": \"unexpected fields\", \"oversize\": \"response too large\", \"rate-limit\": \"unexpected HTTP status\", \"redirect\": \"unexpected HTTP status\", \"server-error\": \"unexpected HTTP status\", \"wrong-type\": \"unexpected media type\"}, \"hypothetical_roi_percent\": 50.0, \"passed_checks\": 23, \"snapshot_bytes\": 87}\n",
+      "stderr": "",
+      "optimized": true,
+      "checks": 23
+    }
+  ],
+  "computed_report": {
+    "checks": [
+      "owned-http-success",
+      "owned-http-redirect",
+      "owned-http-rate-limit",
+      "owned-http-server-error",
+      "owned-http-wrong-type",
+      "owned-http-oversize",
+      "owned-http-compressed",
+      "owned-http-missing-field",
+      "simulated-timeout-propagated",
+      "http-configuration-observed",
+      "session-exit-after-timeout",
+      "first-snapshot-and-report",
+      "rerun-no-write-no-notification",
+      "meaningful-change",
+      "owned-byte-restore",
+      "simulated-disk-failure-preserved-state",
+      "failure-log-redacted",
+      "temporary-root-removed",
+      "real-child-cli-success",
+      "real-child-cli-failure",
+      "same-process-overlap-rejected",
+      "lock-released-for-next-run",
+      "hypothetical-roi"
+    ],
+    "http_failures": {
+      "compressed": "unexpected content encoding",
+      "missing-field": "unexpected fields",
+      "oversize": "response too large",
+      "rate-limit": "unexpected HTTP status",
+      "redirect": "unexpected HTTP status",
+      "server-error": "unexpected HTTP status",
+      "wrong-type": "unexpected media type"
+    },
+    "hypothetical_roi_percent": 50.0,
+    "passed_checks": 23,
+    "snapshot_bytes": 87
+  },
+  "selected_lint_evidence": {
+    "command": [
+      "python",
+      "-m",
+      "ruff",
+      "check",
+      "automation_workbook.py",
+      "test_automation_workbook.py",
+      "observations.py",
+      "--select",
+      "E4,E7,E9,F,W,E501",
+      "--line-length",
+      "79",
+      "--output-format",
+      "concise"
+    ],
+    "exit_code": 0,
+    "stdout": "All checks passed!\n",
+    "stderr": "",
+    "version": "ruff 0.16.4"
+  },
+  "missing_tools": [
+    "schedule",
+    "plyer"
+  ],
+  "manual_objective_confirmation": {
+    "checked_on": "2026-09-30",
+    "method": "Complete indexed canonical English syllabus/detailed bullets/full MQC manually read after direct/monitor timeout",
+    "code": "PCEA-30-01",
+    "syllabus_date": "2025-09-02",
+    "delivery_status": "limited-availability small-market-trial beta",
+    "objectives": 46,
+    "per_section": [
+      6,
+      9,
+      7,
+      8,
+      8,
+      8
+    ],
+    "exam_items": [
+      6,
+      9,
+      7,
+      8,
+      8,
+      8
+    ],
+    "weights": [
+      13,
+      19.5,
+      15,
+      17.5,
+      17.5,
+      17.5
+    ],
+    "exam_questions": 46,
+    "snapshot_action": "Retained existing detailed historical snapshot; manual confirmation distinct from new automated hash observation",
+    "publisher_conflicts": [
+      "MQC groups third-party Requests, schedule and Beautiful Soup with standard libraries"
+    ],
+    "reading_limit": "Full PDF unread",
+    "groups": [
+      {
+        "title": "Automation fundamentals — 13%",
+        "objectives": [
+          "Objective 1.1.1 – Identify examples of routine and repetitive tasks suitable for automation",
+          "Objective 1.2.1 – Explain the advantages of automation",
+          "Objective 1.2.2 – Describe challenges and limitations of automation",
+          "Objective 1.3.1 – Differentiate between scripting, process automation, and orchestration",
+          "Objective 1.4.1 – Apply basic methods to calculate ROI of automation",
+          "Objective 1.5.1 – Explain why Python is widely used for automation"
+        ]
+      },
+      {
+        "title": "Command-line automation — 19.5%",
+        "objectives": [
+          "Objective 2.1.1 – Execute Python scripts using terminal/command prompt",
+          "Objective 2.1.2 – Use script arguments with sys.argv",
+          "Objective 2.1.3 – Explain the role of virtual environments in automation",
+          "Objective 2.2.1 – Use shebang lines for Unix/Linux/macOS automation",
+          "Objective 2.2.2 – Apply output and error redirection for Python scripts",
+          "Objective 2.2.3 – Describe environment variables in automation",
+          "Objective 2.3.1 – Explain how automation scripts are combined with OS-level tools",
+          "Objective 2.3.2 – Use subprocess to execute external commands",
+          "Objective 2.3.3 – Identify use cases for command-line automation"
+        ]
+      },
+      {
+        "title": "Logging and monitoring — 15%",
+        "objectives": [
+          "Objective 3.1.1 – Explain why logging is essential in automation",
+          "Objective 3.1.2 – Configure simple logging in Python",
+          "Objective 3.2.1 – Differentiate between logging levels",
+          "Objective 3.2.2 – Apply custom formatting in logs",
+          "Objective 3.2.3 – Implement logging during file operations",
+          "Objective 3.3.1 – Implement basic monitoring strategies in automation",
+          "Objective 3.3.2 – Use logs to debug automation workflows"
+        ]
+      },
+      {
+        "title": "File and data automation — 17.5%",
+        "objectives": [
+          "Objective 4.1.1 – Perform file and folder operations",
+          "Objective 4.1.2 – Use shutil for advanced operations",
+          "Objective 4.1.3 – Detect and handle file errors",
+          "Objective 4.2.1 – Differentiate between CSV and JSON formats",
+          "Objective 4.2.2 – Process CSV files with Python’s csv module",
+          "Objective 4.2.3 – Parse and generate JSON files with the json module",
+          "Objective 4.3.1 – Apply safe and reliable practices in file handling",
+          "Objective 4.3.2 – Explain ethical, security, and privacy considerations"
+        ]
+      },
+      {
+        "title": "Web and API automation — 17.5%",
+        "objectives": [
+          "Objective 5.1.1 – Differentiate between web scraping and APIs",
+          "Objective 5.1.2 – Identify ethical and legal considerations in web scraping",
+          "Objective 5.2.1 – Fetch web pages with requests.get()",
+          "Objective 5.2.2 – Parse JSON responses from web services",
+          "Objective 5.3.1 – Extract information from simple HTML pages",
+          "Objective 5.3.2 – Apply logging in web automation",
+          "Objective 5.4.1 – Explain REST API basics",
+          "Objective 5.4.2 – Fetch and interpret data from a simple API"
+        ]
+      },
+      {
+        "title": "Scheduling, notifications, and reporting — 17.5%",
+        "objectives": [
+          "Objective 6.1.1 – Explain the need for scheduling in automation",
+          "Objective 6.1.2 – Schedule scripts using Python’s schedule module",
+          "Objective 6.2.1 – Describe cron jobs and Windows Task Scheduler",
+          "Objective 6.2.2 – Recognize advantages and limitations of system scheduling",
+          "Objective 6.3.1 – Send email notifications with smtplib",
+          "Objective 6.3.2 – Describe desktop notification options",
+          "Objective 6.4.1 – Generate simple reports from automation tasks",
+          "Objective 6.4.2 – Apply logging to scheduled and reporting workflows"
+        ]
+      }
+    ]
+  },
+  "review_provenance": "Same-context AI source/content review. Three exact original files execute25testmethods/23observations pernormal/optimizedmode. Eight own one-request loopback HTTP fixtures and two short fixed Python CLI children perobservationrun, plus temporary synthetic data/87-byte recovery. Simulatedtimeout/diskreplacement failure explicit. No independenthuman,externalAPI/TLS/auth,fullcourse/lab,protectedquestion,scheduler/notification orproduction assessment.",
+  "source_health_boundary": "30directreceipts:23ok,5errors,2blocked.29currentguideURLs:23ok,5errors,1blocked. RemovedunverifiedOReillyURLremainsprovenanceonly. Indexedfallback reading is separate from directhealth; exact selected/complete/hash-reused boundaries identified. No fresh objectivehash or fullPDFclaim.",
+  "development_corrections": [
+    "Initial isolated -I CLI child failed ModuleNotFoundError for existing user-installed Requests; final -E child preserves existing package availability without install or isolated-mode claim. Optimized observation runs propagate -O to both children.",
+    "Overlong code/test lines were wrapped before exact-source verification and selected lint.",
+    "Initial catalog-sync invocation omitted required exam selection and stopped before tests; rerun explicitly selected PCEA-30-01 and wrote the catalog before the full gate sequence.",
+    "An early evidence-attachment attempt correctly failed its missing-site-receipt assertion while site validation was still running. Validation status was reset to pending; final records were attached only after that session exited successfully and produced its completion receipt."
+  ]
+}

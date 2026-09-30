@@ -4,6 +4,195 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-30-pcea3001-deep-review",
+      "title": "PCEA-30-01 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-30",
+      "completed_on": "2026-09-30",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "PCEA-30-01"
+      ],
+      "results": [
+        {
+          "exam_code": "PCEA-30-01",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCEA-30-01-python-certified-entry-level-automation-specialist.md",
+          "baseline_sha256": "87da1603286d0bba653997bbceccf176a1b7d015d009d0001d02c8964418b732",
+          "scanned_on": "2026-09-30",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Complete canonical indexed English syllabus/MQC and credential body manually read after direct/monitor timeout.46objectives6/9/7/8/8/8; active outline and limited-beta delivery distinct. Existing detailed snapshot retained; no fresh hash success."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected pinned stdlib and current Requests/BeautifulSoup/schedule contracts support original25method/23observation workbook per mode. Exact source hashes and dependency versions recorded; no complete manual audit or missing package execution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Complete public credential/syllabus/policy current-status review; beta and separate PCAA path retained. No unseen release feed, authenticated entitlement or general-availability inference."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Complete author landing and selected Packt metadata/full visible TOC reviewed. Correct third-edition publisher link replaces unverified ISBN recommendation. Author planning budgets, video first-edition scope and paid-interior limits explicit."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "MQC third-party/standard-library wording corrected. Generic passed-retake wording unresolved. FullPDF,venv/permission exercises,schedule/plyer,OSscheduler/notifications,externalAPI/TLS/auth,fullten-step lab and human review pending."
+            }
+          },
+          "findings": [
+            {
+              "id": "pcea3001-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Broad summaries needed detailed objective evidence",
+              "url": "https://pythoninstitute.org/pcea-exam-syllabus",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCEA-30-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Canonical English syllabus has46 detailed objectives and misgroups third-party libraries in its MQC.",
+              "recommendation": "Add46 explicit mappings and bounded original exercises; distinguish third-party packages and retain historical snapshot with manual confirmation.",
+              "disposition": "applied",
+              "source_id": "pcea-30-01-syllabus",
+              "resolution": "Add46 explicit mappings and bounded original exercises; distinguish third-party packages and retain historical snapshot with manual confirmation."
+            },
+            {
+              "id": "pcea3001-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "An active outline does not establish general availability",
+              "url": "https://pythoninstitute.org/pcea",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCEA-30-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Credential body still describes limitedavailability/SmallMarketTrial/Beta while syllabus is active.",
+              "recommendation": "Retain beta delivery and verify-current guidance without inventing a launch date or replacement code.",
+              "disposition": "applied",
+              "source_id": "pcea-certification-page",
+              "resolution": "Retain beta delivery and verify-current guidance without inventing a launch date or replacement code."
+            },
+            {
+              "id": "pcea3001-deep-3",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Recommended book link could not be verified",
+              "url": "https://www.packtpub.com/en-us/product/python-automation-cookbook-9781806702893",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCEA-30-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Old OReilly ISBN association remains unconfirmed; Packt identifies Jaime Buelta thirdedition printISBN9781806702893,June29,2026,676pages.",
+              "recommendation": "Replace recommendation with confirmed publisher listing; retain old unverified source separately and distinguish complete TOC from paid book completion.",
+              "disposition": "applied",
+              "source_id": "packt-python-automation-cookbook-3",
+              "resolution": "Replace recommendation with confirmed publisher listing; retain old unverified source separately and distinguish complete TOC from paid book completion."
+            },
+            {
+              "id": "pcea3001-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Timeout and HTTP success needed precise boundaries",
+              "url": "https://requests.readthedocs.io/en/latest/user/advanced/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCEA-30-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Connect/read timeouts are not a wall-clock budget; JSON parsing is not status/schema success. Eight own-loopback cases and separate simulated timeout expose the distinctions.",
+              "recommendation": "Document explicit status/media/encoding/body/schema gates, session closing and bounded fixture scope; do not claim externalAPI/TLS/retry validation.",
+              "disposition": "applied",
+              "source_id": "requests-advanced",
+              "resolution": "Document explicit status/media/encoding/body/schema gates, session closing and bounded fixture scope; do not claim externalAPI/TLS/retry validation."
+            },
+            {
+              "id": "pcea3001-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Atomic file replacement was not whole-workflow delivery",
+              "url": "https://docs.python.org/3.13/library/os.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCEA-30-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Original rerun avoids replacement; simulated replacement failure preserves previous bytes. Reports stay in memory and notification_needed is a decision only.",
+              "recommendation": "Explain single-file replacement, data/report/notification gaps, concurrency/durability limits and separate byte-restore evidence.",
+              "disposition": "applied",
+              "source_id": "python313-os",
+              "resolution": "Explain single-file replacement, data/report/notification gaps, concurrency/durability limits and separate byte-restore evidence."
+            },
+            {
+              "id": "pcea3001-deep-6",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Scheduling and notifications remained unexecuted",
+              "url": "https://schedule.readthedocs.io/en/stable/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCEA-30-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "schedule/plyer unavailable; same-process lock probe is separate from run_once and no OS scheduler or delivery integration exists.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "pcea3001-deep-7",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Specific and footer retake wording differs",
+              "url": "https://pythoninstitute.org/pcea-testing-policies",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCEA-30-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Specific policy covers seven days after failure; generic footer also mentions passing.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped all 46 objectives and expanded 18 answers. Three exact original files pass 25 methods and 23 observations per normal/optimized mode, including owned HTTP responses, strict data validation, idempotent one-file replacement and byte restore. Preserved beta status and corrected the unverified book recommendation. Full integrated lab, scheduler/notification integrations, full PDF and human review remain pending. Same-context AI review; human review pending. See docs/research/2026-09-30-pcea-30-01-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 5,
+        "no_action_findings": 0,
+        "blocked_findings": 2
+      }
+    },
+    {
       "id": "freshness-2026-09-30-pces3001-deep-review",
       "title": "PCES-30-01 complete guide and learning-content review",
       "rubric_version": 1,

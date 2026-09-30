@@ -3838,6 +3838,28 @@ The previous recommendation titled “Practical Python Security” was removed: 
 
 The complete public Academy landing and Bandit introduction were read, not the individual labs. No account, external SSH login, tool download, paid interior or protected exam content was accessed. Package APIs, access and practice availability need rechecking when a future lab is actually run. Missing cryptography/Paramiko/psutil/document/scheduler tools and independent human content/accessibility review remain explicit blockers to broader completion.
 
+### PCEA-30-01 — PCEA Certified Entry-Level Automation Specialist with Python
+
+Resource details from the [PCEA-30-01 guide](../guides/PCEA-30-01-python-certified-entry-level-automation-specialist.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list and is not intended to be consumed in full. The reviewed credential page did not list an aligned course; that observation does not prove no such resource exists elsewhere. Choose selected documentation and one bounded project. All hour ranges below are author planning estimates, not measured completion times, publisher guarantees or proof of exam readiness.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [PCEA syllabus](https://pythoninstitute.org/pcea-exam-syllabus) | Free canonical outline; all detailed objectives/MQC read, full PDF pending | 3–5 hours plus availability rechecks |
+| [Python standard library reference](https://docs.python.org/3/library/) | Free index; selected pinned 3.13 manuals support this workbook | 15–25 selected hours |
+| [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) | Author-hosted third-edition web book is free to read; broader than PCEA | Select 20–35 hours |
+| [Requests documentation](https://requests.readthedocs.io/en/latest/) | Free project docs; selected quickstart/session/streaming/timeout contracts reviewed | 4–8 selected hours |
+| [Beautiful Soup documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) | Free primary manual; selected parser/text/selector passages reviewed | 4–8 selected hours |
+| [schedule documentation](https://schedule.readthedocs.io/en/stable/) | Free project landing; linked tutorials and runtime exercise pending | 2–4 selected hours |
+| [Python Automation Cookbook, Third Edition](https://www.packtpub.com/en-us/product/python-automation-cookbook-9781806702893) | Paid Packt book; public metadata and table of contents reviewed, not complete chapters | Select 20–35 hours |
+
+The complete author landing for **Automate the Boring Stuff** identifies the current third edition and its free web reading, with chapters on files, CLI deployment, scraping, CSV/JSON/XML, scheduling and notifications. Linked chapters and companion workbook were not completed. Its video-course description follows much of the **first edition**, so do not assume the video and third-edition text are identical. No account, purchase, review-copy request or discount redemption occurred.
+
+The former O'Reilly link ending in ISBN `9781803247300` could not be verified and is removed from the recommendation. Packt's confirmed listing identifies Jaime Buelta's third edition, June 29, 2026, 676 pages, print ISBN `9781806702893`. Its contents include relevant file/API/report/testing material alongside broader AI/MCP topics that are not additional PCEA objectives. The page labels 19 chapters while the visible numbered sequence runs 1–17 followed by other-books/index entries. Selected metadata, the complete visible contents list and only an opening portion of the public sample were read; full book content, paid entitlements and code execution were not reviewed. The old catalog entry is retained with an unverified-link note, not silently reassigned to another ISBN.
+
+Because delivery remains beta, third-party exam-alignment claims need particular care. Use the public official outline and original exercises; avoid recalled exam questions. Direct source receipts, manual fallback boundaries, dependency versions and remaining work are documented in the [September 30 review](research/2026-09-30-pcea-30-01-deep-review.md).
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

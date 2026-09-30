@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BUILD_DIR = ROOT / ".site-build"
 
 PUBLIC_DOCUMENTS = (
+    "docs/research/2026-09-30-pcea-30-01-deep-review.md",
     "docs/research/2026-09-30-pces-30-01-deep-review.md",
     "docs/research/2026-09-30-pcat-31-01-deep-review.md",
     "docs/research/2026-09-30-pcet-30-01-deep-review.md",

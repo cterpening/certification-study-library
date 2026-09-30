@@ -2325,6 +2325,8 @@ item, answer dump or copied course content is used. Blueprint SHA-256:
 
 ## PCEA-30-01 coverage record
 
+The September 30 [deep review](research/2026-09-30-pcea-30-01-deep-review.md) maps 46 detailed objectives. Mapped all 46 objectives and expanded 18 answers. Three exact original files pass 25 methods and 23 observations per normal/optimized mode, including owned HTTP responses, strict data validation, idempotent one-file replacement and byte restore. Preserved beta status and corrected the unverified book recommendation. Full integrated lab, scheduler/notification integrations, full PDF and human review remain pending. Current guide citations: 29 registered, 23 reachable, 1 access-blocked, 5 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Fundamentals of Automation (13%); Basic Command-Line Automation with Python (19.5%); Logging and Monitoring Essentials (15%); Basic File and Data Automation (17.5%); Basic Web and API Automation (17.5%); Scheduling, Notifications, and Reporting (17.5%)
