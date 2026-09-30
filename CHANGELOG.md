@@ -1,5 +1,7 @@
 # Changelog
 
+- September 30, 2026: Reconciled the roadmap's published-guide count with the catalog: 223 guides across 26 vendors, including six GitHub guides. Clarified that the 222-guide denominator in the older rubric-1 audit summary is historical.
+
 - September 30, 2026: Made the AI-generated, best-effort status of the [AB-100 lab](docs/labs/ab-100.md) explicit on the lab page and starter README. Clarified that 13 synthetic local tests passed, while the proposed service workflow has not been tested in a real tenant or independently reviewed; added the same boundary to the lab index.
 
 - September 30, 2026: Reworked the [certification lifecycle page](docs/CERTIFICATION-LIFECYCLE.md) into source-linked dated events and a vendor research queue. Added exact English skills dates from 41 Microsoft Learn study guides (40 new dated skills records) and the AIB-C01 beta delivery date, raising entries with a dated event from 8 to 46 of 226. The other 180 remain explicit research gaps; month-only headings were not assigned invented days. The page is a generated site snapshot, not a live vendor feed.

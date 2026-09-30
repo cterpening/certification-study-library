@@ -41,7 +41,7 @@ until its live catalog can be independently enumerated from an official source.
 ## Library-wide publication status
 
 The first-wave table above preserves the original delivery commitment. The
-library has since expanded to **222 published guides across 26 vendors**, with
+library has since expanded to **223 published guides across 26 vendors**, with
 only **three seed-only records** outside the published catalog. All three are
 legacy Splunk tracks retained for lifecycle history rather than assumed current
 study demand; no active seed remains unpublished.
@@ -54,7 +54,7 @@ study demand; no active seed remains unpublished.
 | C++ Institute | 6 | 0 | Current selected exams complete |
 | Databricks | 7 | 0 | Current selected catalog complete |
 | Fortinet | 19 | 0 | Inventoried portfolio published; MSSP remains a changing pre-publication reference and NSE 8 has scheduled elective availability |
-| GitHub | 5 | 0 | Current public certification family complete |
+| GitHub | 6 | 0 | Current selected family complete, including GH-600 beta |
 | Google Cloud | 8 | 0 | Selected catalog complete; monitor Agentic Architect beta |
 | HashiCorp | 4 | 0 | Current Terraform and Vault catalog complete |
 | ISACA | 3 | 0 | Selected CISA/CISM/CRISC family complete |
@@ -74,7 +74,7 @@ study demand; no active seed remains unpublished.
 | ServiceNow | 2 | 0 | Selected administrator/developer set complete |
 | Snowflake | 4 | 0 | Selected current/retired transition set complete |
 | Splunk | 11 | 3 legacy | All current tracks complete; legacy rows remain inventory-only |
-| **Total** | **222** | **3 legacy** | No active seed-only record remains; OpenAI and Anthropic remain separately documented conditional/gated references |
+| **Total** | **223** | **3 legacy** | No active seed-only record remains; OpenAI and Anthropic remain separately documented conditional/gated references |
 
 ## Current production order
 

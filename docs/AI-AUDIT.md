@@ -169,7 +169,7 @@ On September 5, the 11 fix-required guides and the blocked AZ-802 guide entered 
 | Microsoft Azure | 12 | 10 | 1 | 1 | 2 | 7 |
 | **Follow-up current state** | **29** | **27** | **1** | **1** | **2** | **22** |
 
-Across both historical waves, the catalog contains completed results for 39 of 222 published guides: 33 pass, four require fixes, two are blocked, ten findings remain open, and 22 findings are resolved. These rubric-1 results are not proof of current guide-content coverage and remain historical rather than being backfilled.
+Across both historical waves, 39 guides had completed results when the catalog held 222 published guides: 33 pass, four require fixes, two are blocked, ten findings remain open, and 22 findings are resolved. These rubric-1 results are not proof of current guide-content coverage and remain historical rather than being backfilled.
 
 ### Rubric-2 guide-bound coverage
 
