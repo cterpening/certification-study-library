@@ -4,6 +4,179 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-pcad3102-deep-review",
+      "title": "PCAD-31-02 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "PCAD-31-02"
+      ],
+      "results": [
+        {
+          "exam_code": "PCAD-31-02",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCAD-31-02-python-certified-associate-data-analyst.md",
+          "baseline_sha256": "6069cc91ad1368b93f6dcdcec3a62f710987fd4d6e172d8d30f3c6d419f90f9c",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "All48 numberedobjectives/detailedbullets manually compared after direct/monitor timeout. Active02/sixyears and48questiontable confirmed. Block4heading7 versus numbered/table9 recorded; incompleteBlock2MQC/fullPDF not claimed."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected primary Python3.13/SQLite/Pandas/NumPy/SciPy/Requests/BS4 contracts support exact86check originalworkbook; installedSciPydocstring receipts supplement directfailures. Prepared Pandas/plots explicitly unexecuted."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current indexed exam table/FAQ,canonicalnumberedobjectives andcompletepolicyread. No separateunseenreleasefeed,authenticatedaccount ordevicevalidation claimed."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Complete publicPCADproduct/EdubePD101/booklandings anddocumentationindexes reviewed. USD49standalone10launches versus245bundle5,PCEDalignment/providerfiveweeks distinguished. Shells/failures carry no inventedruntimes."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Block4sevenversusnine heading;PCADPD101in-development versusavailablePCEDcourse;Learner/TestCandidateprofile;missingPandas/sklearn/Matplotlib/Seaborn/openpyxl;unrunplots/ninebroaderlabs/spreadsheet/fullPDF/humanreview remainexplicit."
+            }
+          },
+          "findings": [
+            {
+              "id": "pcad3102-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Pandas assignment guidance predates the current contract",
+              "url": "https://pandas.pydata.org/docs/user_guide/copy_on_write.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCAD-31-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "CurrentPandas3 uses CoW as its onlymode; chainedassignment cannot update theparent.",
+              "recommendation": "Explain singleloc assignment/Series isolation and prepare an explicitlyunexecuted companion; do not label syntaxchecks as runtimeproof.",
+              "disposition": "applied",
+              "source_id": "pandas-copy-on-write",
+              "resolution": "Explain singleloc assignment/Series isolation and prepare an explicitlyunexecuted companion; do not label syntaxchecks as runtimeproof."
+            },
+            {
+              "id": "pcad3102-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Transaction and NULL boundaries lacked runnable evidence",
+              "url": "https://www.sqlite.org/foreignkeys.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCAD-31-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "PRAGMAforeign_keys insideatransaction has no effect; withcon doesnotclose and outerjoinWHERE canremove paddedrows.",
+              "recommendation": "Add exactoriginalSQL showing enable-beforetransaction,wholetransactionrollback,4/5/5/6joincounts and count-versus-size/originalNULLoracles.",
+              "disposition": "applied",
+              "source_id": "sqlite-foreign-keys",
+              "resolution": "Add exactoriginalSQL showing enable-beforetransaction,wholetransactionrollback,4/5/5/6joincounts and count-versus-size/originalNULLoracles."
+            },
+            {
+              "id": "pcad3102-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Preprocessing and model results needed a leakage boundary",
+              "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCAD-31-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Train/test transforms and features must be fitted inside thetrainingpartition/fold; oldguide had noobservedworkedresults.",
+              "recommendation": "Add train-onlymedian/scaling/unknowncategory policy and originalNumPy/SciPy held-out models withbaselines and syntheticlimits.",
+              "disposition": "applied",
+              "source_id": "sklearn-common-pitfalls",
+              "resolution": "Add train-onlymedian/scaling/unknowncategory policy and originalNumPy/SciPy held-out models withbaselines and syntheticlimits."
+            },
+            {
+              "id": "pcad3102-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Bootstrap uncertainty needed an explicit method and resampling unit",
+              "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCAD-31-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Percentile anddefaultBCa differ; pairedsamples require alignedresampling anddegenerateexamples do notprovepopulationcertainty.",
+              "recommendation": "Recordseed/runtime,explicitquantilemethod,2000resampleinterval and200pairedresamples with narrowinterpretation.",
+              "disposition": "applied",
+              "source_id": "scipy-bootstrap",
+              "resolution": "Recordseed/runtime,explicitquantilemethod,2000resampleinterval and200pairedresamples with narrowinterpretation."
+            },
+            {
+              "id": "pcad3102-deep-5",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Learning and practice claims need product-specific qualification",
+              "url": "https://ums.edube.org/products/1-pi-pcad-3102-pt",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCAD-31-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Standalone49USDkit lists10launcheseach;245bundle5;storeTestCandidate differsfromFAQ Learner. Shellcatalog andfailedKaggleretrieval do notsupportdurations.",
+              "recommendation": "Removeunverifiedruntimes,identifyauthorbudgets andkeep product/redemption distinctionsvisible.",
+              "disposition": "applied",
+              "source_id": "pcad-practice-kit",
+              "resolution": "Removeunverifiedruntimes,identifyauthorbudgets andkeep product/redemption distinctionsvisible."
+            },
+            {
+              "id": "pcad3102-deep-6",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Publisher Block4 and learning wording conflict",
+              "url": "https://pythoninstitute.org/pcad-exam-syllabus",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCAD-31-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "SyllabusBlock4heading7 disagreeswith9numberedobjectives/table/MQC; PCADpagePD101in-development conflictswithavailablePCED-alignedcourse.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped all48 objectives and expanded18 answers. Exact original numerical/SQL/local-HTTP workbook passes86 checks normally and optimized; train-only preprocessing, held-out regression baselines, paired percentile resampling, join grain/NULL/foreign-key rollback and object ownership are explicit. Pandas3/plotting companion compiled and linted only because five optional packages are absent. Corrected learning estimates/product distinctions; nine broader labs, publisher conflicts and human review remain pending. Same-context AI review; human review pending. See docs/research/2026-09-29-pcad-31-02-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 5,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-29-pced3002-deep-review",
       "title": "PCED-30-02 complete guide and learning-content review",
       "rubric_version": 1,

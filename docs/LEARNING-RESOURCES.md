@@ -3759,6 +3759,25 @@ This is not a complete list. Choose one foundation path, reproduce the workbook,
 
 The book's text is not generally licensed for reproduction; its code examples have a separate MIT license. No material from it or paid practice questions was copied into this workbook. The store root returned only a shell; direct product pages supplied the practice evidence. Provider prices, access and redemption instructions are dated observations requiring confirmation when used.
 
+### PCAD-31-02 — PCAD Certified Associate Data Analyst with Python
+
+Resource details from the [PCAD-31-02 guide](../guides/PCAD-31-02-python-certified-associate-data-analyst.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list and is not meant to be consumed in full. Times labeled author budget are planning suggestions, not provider runtimes or observed course completion. Public outlines do not establish enrolled content quality or complete PCAD alignment.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [PCAD syllabus](https://pythoninstitute.org/pcad-exam-syllabus) and this objective map | Free canonical scope; manual comparison after retrieval failure | Author budget: 2–3 hours to map gaps |
+| [Cisco sequence on the exam page](https://pythoninstitute.org/pcad) | Intro to Data Science → Data Science Essentials with Python → Data Analytics Essentials modules 1/2/3/5/6/7/9/10; direct [catalog](https://www.netacad.com/courses/data-analytics-essentials) returned only an application shell | Current course durations/access unverified; earlier 45–70 hour claim removed |
+| [PD101 public outline](https://edube.org/study/pd101) | Free Core lessons/module tests, USD 49 Full/Pro interactive work; explicitly PCED-aligned foundation | Provider: five weeks, about one hour/day; not a complete PCAD preparation claim |
+| [PCAD standalone practice kit](https://ums.edube.org/products/1-pi-pcad-3102-pt) | USD 49, two tests, up to 10 launches each, 12-month voucher; no exam included; account/profile distinction unresolved | Provider exam simulations; author budget: two sittings plus explanation-led remediation |
+| [Python for Data Analysis, third edition](https://wesmckinney.com/book/) | Free author-hosted web edition; landing updated for Pandas 2.0/Python 3.10, so compare newer Pandas 3 behavior | Author budget: 15–25 selected hours; chapters not audited here |
+| [Pandas getting started](https://pandas.pydata.org/docs/getting_started/) and linked contracts above | Free primary documentation; companion still needs runtime execution | Author budget: 6–10 hours with original tables |
+| [Introduction to Statistical Learning](https://www.statlearning.com/) | Retrieval failed; current download/access and chapters unverified | Current duration unverified; use only after inspecting the resource |
+| [Kaggle Learn](https://www.kaggle.com/learn) | Retrieval failed; current catalog/account requirements unverified | Earlier 20–35 hour claim removed |
+
+The PCAD exam page still calls PD101 “in development,” while the public Edube page offers an explicitly PCED-aligned course. Record that discrepancy rather than assuming current full PCAD coverage. No protected lesson or exam content was accessed, and no purchases were made. Avoid providers offering recalled exam questions.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

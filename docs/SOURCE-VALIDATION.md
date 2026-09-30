@@ -2251,6 +2251,8 @@ copied course content is used. Blueprint SHA-256:
 
 ## PCAD-31-02 coverage record
 
+The September 29 [deep review](research/2026-09-29-pcad-31-02-deep-review.md) maps 48 detailed objectives. Mapped all48 objectives and expanded18 answers. Exact original numerical/SQL/local-HTTP workbook passes86 checks normally and optimized; train-only preprocessing, held-out regression baselines, paired percentile resampling, join grain/NULL/foreign-key rollback and object ownership are explicit. Pandas3/plotting companion compiled and linted only because five optional packages are absent. Corrected learning estimates/product distinctions; nine broader labs, publisher conflicts and human review remain pending. Current guide citations: 47 registered, 36 reachable, 0 access-blocked, 11 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Data Acquisition and Pre-Processing (29.2%); Programming and Database Skills (33.3%); Statistical Analysis (8.3%); Data Analysis and Modeling (18.8%); Data Communication and Visualization (10.4%)

@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [PCAD-31-02 deep review](docs/research/2026-09-29-pcad-31-02-deep-review.md): Mapped 48 objectives; added an original 86-check NumPy/SciPy/SQLite/local HTTP workbook and a prepared-only Pandas 3/plotting companion; corrected learning and product claims, with missing runtimes and publisher/human-review questions recorded.
+
 - September 29, 2026: [PCED-30-02 deep review](docs/research/2026-09-29-pced-30-02-deep-review.md): Mapped40objectives; original112-checkPython/NumPyworkbook, reconciledCSVledger andexportedchart; correctedlearningduration/access andpractice-product limits; broaderlab andhumanreview remainpending.
 
 - September 29, 2026: [PCPP-32-101 deep review](docs/research/2026-09-29-pcpp-32-101-deep-review.md): Mapped 24 objectives, expanded 23 answers and added five original Python files. Eight normal/optimized runs passed173 checks per mode, including a withdrawn Tk desk and disposable HTTP/TCP fixtures. Corrected geometry, transaction, persistence and course-duration boundaries; policy/access and human-review limits remain explicit.

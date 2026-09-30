@@ -3,6 +3,384 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "pcad-testing-policies",
+      "title": "PCAD TestNow policies",
+      "url": "https://pythoninstitute.org/pcad-testing-policies",
+      "publisher": "OpenEDG / Python Institute",
+      "authority_class": 2,
+      "source_type": "official-policy",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Complete indexed primary policy body read: introduction/delivery/admission/NDA/rescheduling/accommodations/retake/age/environment/conduct/prohibitions/penalties/footer, lastJuly15 2025. Local partner24-hour rescheduling differs from global unredeemed-voucher route; failed15-day rule and broaderfooter phrasing distinguished. No actual account, device or system test. Direct retrieval failed. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pcad-practice-kit",
+      "title": "PCAD practice test kit",
+      "url": "https://ums.edube.org/products/1-pi-pcad-3102-pt",
+      "publisher": "OpenEDG / Python Institute",
+      "authority_class": 2,
+      "source_type": "official-practice",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Complete indexed public body and fresh text read. USD49, two tests/up to10 launches each,12-month voucher,TestCandidate→Practice,no exam. Marketing says four domains but lists five; blueprint/table controls scope. No interior, purchase, entitlement or actual cart action. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pcad-retake-practice-bundle",
+      "title": "PCAD exam retake practice bundle",
+      "url": "https://ums.edube.org/products/1-pi-pcad-3102-erpt",
+      "publisher": "OpenEDG / Python Institute",
+      "authority_class": 2,
+      "source_type": "official-practice",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Complete indexed public product body read, matching fresh response. USD245 exam+failed-retake+practice,12-month voucher,up tofive launches each; do not transfer standalone10 launches to bundle. No protected questions, account, purchase or redemption. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pcad-syllabus-pdf",
+      "title": "PCAD31-02 syllabus v4.4 PDF",
+      "url": "https://openedg.org/assets/6875061029303658356228.pdf",
+      "publisher": "OpenEDG / Python Institute",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Direct/web retrieval failed. Only indexed Block4 MQC excerpt with9items/18.8% read. Full PDF not obtained or compared. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pandas-copy-on-write",
+      "title": "Pandas Copy-on-Write",
+      "url": "https://pandas.pydata.org/docs/user_guide/copy_on_write.html",
+      "publisher": "pandas developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Complete fresh11099-character chapter read. Pandas3 only/default CoW, single loc assignment, selectedSeries isolation, chained assignment cannot update parent, lazy copies/read-only shared arrays. Companion compiled/linted only; no Pandas execution. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pandas-indexing",
+      "title": "Pandas indexing and selection",
+      "url": "https://pandas.pydata.org/docs/user_guide/indexing.html",
+      "publisher": "pandas developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Selected fresh lines1–70: loc/iloc and Boolean/callable selection introduction;1295–1370 Boolean indexing/operators/parentheses examples, final multiple-criteria output incomplete. Rest of large chapter unreviewed. Inclusive label slices versus positional exclusive stop taught, not runtime-proven here. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pandas-missing-data",
+      "title": "Pandas missing data",
+      "url": "https://pandas.pydata.org/docs/user_guide/missing_data.html",
+      "publisher": "pandas developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Selected fresh1–225 missing dtypes/sentinels/isna/equality/NAthree-valuedlogic/boolNA/ufunc introduction;340–421 cumulative tail, complete dropping358–381 and fillna introduction/scalar examples, fill section incomplete. Remaining chapter unread; prepared nullable examples not executed. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pandas-groupby",
+      "title": "Pandas groupby",
+      "url": "https://pandas.pydata.org/docs/user_guide/groupby.html",
+      "publisher": "pandas developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Selected1–70 split/apply/combine introduction,160–215 complete sorting/dropna sections,504–575 aggregation/as_index and method table throughsize,830–892 named aggregation plus incompleteSeriesexample. Remaining categorical/other chapter portions unread. Companion explicitly states observed/dropna rather than claiming all defaults audited. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pandas-reshaping",
+      "title": "Pandas reshaping",
+      "url": "https://pandas.pydata.org/docs/user_guide/reshaping.html",
+      "publisher": "pandas developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Selected1–84 includes complete pivot section15–65 and pivot_table introduction only;423–490 melt core/idvars/variable/value/ignoreindex examples. Remainingpivot_table examples/wide_to_long/unstack chapter unread. Prepared original pivot duplicate/oracle checks not executed. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pandas-dataframe-merge",
+      "title": "Pandas DataFrame.merge",
+      "url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.merge.html",
+      "publisher": "pandas developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Complete fresh6759-character generated entry read: keys/how/validation/indicator/suffixes/examples, null keys match each other unlike SQL,3.0 ignored copy parameter and lazy CoW. Linked manual not thereby read. Prepared merge assertions not executed. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pandas-dataframe-std",
+      "title": "Pandas DataFrame.std",
+      "url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.std.html",
+      "publisher": "pandas developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Complete fresh2075-character generated entry read: axis0,ddof1,skipnaTrue,allmissingNA and axisNone future behavior. NumPy/default distinction taught; Pandas runtime absent. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pandas-crosstab",
+      "title": "Pandas crosstab",
+      "url": "https://pandas.pydata.org/docs/reference/api/pandas.crosstab.html",
+      "publisher": "pandas developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Complete fresh3106-character generated entry read: frequencies,aggregation,normalization,margins,dropna,categories/index alignment. Original companion replaces source examples and remains unexecuted. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pandas-read-csv",
+      "title": "Pandas read_csv",
+      "url": "https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html",
+      "publisher": "pandas developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Selected fresh1–163 signature,delimiter/header/names/index/usecols/dtype/converters/engine/rowselection and complete na_values/keep_default_na/na_filter/skip_blank_lines; parse_dates introduction only. Remaining parameters/examples unread. Explicit nullable import policy compiled only. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "numpy-broadcasting",
+      "title": "NumPy broadcasting",
+      "url": "https://numpy.org/doc/stable/user/basics.broadcasting.html",
+      "publisher": "NumPy developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Complete fresh9656-character chapter read: trailing equal/one dimensions, conceptual expansion, newaxis/outer results, possible large output and vector-quantization example. Original compatible/incompatible/outer cases executed; no performance benchmark. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "numpy-quantile",
+      "title": "NumPy quantile",
+      "url": "https://numpy.org/doc/stable/reference/generated/numpy.quantile.html",
+      "publisher": "NumPy developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Complete fresh7045-character generated entry read, q0..1/defaultlinear/axis/overwrite/methods/weights onlyinvertedcdf. Original explicitlinear endpoints checked against SciPy percentile distribution; no copied examples. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "numpy-random-generator",
+      "title": "NumPy random Generator",
+      "url": "https://numpy.org/doc/stable/reference/random/generator.html",
+      "publisher": "NumPy developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Selected fresh1–140: default_rng constructor/seed/no global instance/examples,Generator intro/no cross-version guarantee,methods overview through partial permutation table. Remaining distributions/method references unread. Local seeded SciPy resampling reproducible across normal/optimized runs. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "scipy-minimize",
+      "title": "SciPy minimize",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html",
+      "publisher": "SciPy developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Direct fetch failed; indexed selected Returns/BFGS notes read. Existing SciPy1.18.0 primary docstring lines1–192 parameters/Returns/SeeAlso read, laternotes/examples unread; saved docstring hash/version receipt. Original BFGS loss/gradient/finite-difference/convergence checks executed. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "scipy-expit",
+      "title": "SciPy logistic sigmoid",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.special.expit.html",
+      "publisher": "SciPy developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Direct fetch failed; indexed primary definition/params/notes/experimentalAPI introduction read. COMPLETE installed SciPy1.18.0 docstring read and hash recorded. Original finite/extreme sigmoid and logistic probabilities executed. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "scipy-bootstrap",
+      "title": "SciPy bootstrap",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html",
+      "publisher": "SciPy developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Direct fetch failed. Installed SciPy1.18.0 primary docstring1–150 introduction/parameters/Returns/degenerateBCawarnings/notes and ArrayAPI introduction read; rest examples/references unread,hash recorded. Original percentile2000 resamples and paired200 example executed; no claim default BCa used. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "matplotlib-quickstart",
+      "title": "Matplotlib quickstart",
+      "url": "https://matplotlib.org/stable/users/explain/quick_start.html",
+      "publisher": "Matplotlib developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Selected fresh1–78 Figure/Axes/Axis/Artist/input intro,94–132 explicit versus implicit interfaces,190–247 labels/math/annotations/legend intro (lastlegendparagraph incomplete). Other sections unread. Companion syntax/lint only; no figure generated or visually assessed. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "seaborn-introduction",
+      "title": "Seaborn introduction",
+      "url": "https://seaborn.pydata.org/tutorial/introduction.html",
+      "publisher": "Seaborn developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Complete fresh substantive introduction read across1–183: semantic mappings,automatic estimation/bootstrap,distributions/categories,multivariate,axes tools,defaults/customization and Matplotlib relationship. Linked API chapters unread. Prepared scatterplot not executed. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sqlite-select",
+      "title": "SQLite SELECT",
+      "url": "https://www.sqlite.org/lang_select.html",
+      "publisher": "SQLite project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Selected fresh284–378 full FROM/input/join section;394–476 WHERE/aggregate/group/HAVING result processing. Indexed primary excerpts also cover outerNULL/ONversusWHERE/order/ties/joinprecedence. Remaining syntax/barecolumns/compound/order/limit fullsections unread. Original SQL executed on3.50.4. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sqlite-datatypes",
+      "title": "SQLite datatypes",
+      "url": "https://www.sqlite.org/datatype3.html",
+      "publisher": "SQLite project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Selected fresh42–185 complete intro/storageclasses/Boolean/date-time/type-affinity overview. Later comparison/collation rules not fully read (indexed sort excerpt only). Ordinary integer-affinity text retention and boundNULL/bool/float/blob executed; STRICT feature described but not exercised. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sqlite-aggregate-functions",
+      "title": "SQLite aggregates",
+      "url": "https://www.sqlite.org/lang_aggfunc.html",
+      "publisher": "SQLite project",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Complete selected avg/count definitions100–116 read, next group_concat signature incidental. Remaining aggregates not fully read. Original observed/empty/null/group/oracle queries verify stated behavior on existingruntime. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "vanbuuren-missing-mechanisms",
+      "title": "Flexible Imputation of Missing Data: mechanisms",
+      "url": "https://stefvanbuuren.name/fimd/sec-MCAR.html",
+      "publisher": "Stef van Buuren",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Direct andwebopenfailed; short primary indexed excerpt only. Fullsection unreviewed. Separatelyregistered identification chapter provides strongerselected mechanism definitions and untestability boundary. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sklearn-linear-models",
+      "title": "Scikit-learn linear models",
+      "url": "https://scikit-learn.org/stable/modules/linear_model.html",
+      "publisher": "scikit-learn developers",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Direct fetch failed; full chapter unreviewed and not relied on as fresh support. sklearn absent. OriginalNumPy/SciPy contracts and verified calculation supply bounded modeling evidence. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "vanbuuren-missing-identification",
+      "title": "Flexible Imputation of Missing Data: identification concepts",
+      "url": "https://stefvanbuuren.name/fimd/sec-idconcepts.html",
+      "publisher": "Stef van Buuren",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAD-31-02 deep review: Direct/web retrieval failed; indexed primary section2.2.4 definitions/equations/originalauthor simulation and2.2.5 ignorability discussion read. Not fullchapter/book. Supports conditionalMAR/MNAR distinction and inability to testMARversusMNAR fromobserveddataalone; no copied code or actualmechanismdiagnosis. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "pced-testing-policies",
       "title": "PCED TestNow policies",
       "url": "https://pythoninstitute.org/pced-testing-policies",
@@ -39,10 +417,11 @@
       "source_type": "official-training",
       "access_model": "public",
       "supported_exams": [
-        "PCED-30-02"
+        "PCED-30-02",
+        "PCAD-31-02"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 PCED-30-02 deep review: Complete4094-character public body read. Beginner/self-contained/noformalprerequisite,English,5weeksabout1hour/day,PCED association,PD102comingsoon. Core lessons andmodule tests free;Full/Pro49USD interactivequizzes/labs/projects/diploma;40+hands-onlabsproviderclaim. No enrolledlessons or assessedcompletion. See docs/research/2026-09-29-pced-30-02-deep-review.md No live infrastructure execution."
+      "notes": "September 29 PCED-30-02 deep review: Complete4094-character public body read. Beginner/self-contained/noformalprerequisite,English,5weeksabout1hour/day,PCED association,PD102comingsoon. Core lessons andmodule tests free;Full/Pro49USD interactivequizzes/labs/projects/diploma;40+hands-onlabsproviderclaim. No enrolledlessons or assessedcompletion. See docs/research/2026-09-29-pced-30-02-deep-review.md No live infrastructure execution. September 29 PCAD-31-02 deep review: Complete fresh4094-character public body read. Free Core lessons/module tests,USD49 Full/Pro interactive exercises/labs/quizzes/diploma,providerfiveweeksaboutonehour/day,English,PCED alignment,PD102comingsoon. No enrolled content or fullPCAD alignment audit. PCAD exam-page in-development wording remains a discrepancy. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "pced-practice-kit",
@@ -501,10 +880,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "PCPP-32-101"
+        "PCPP-32-101",
+        "PCAD-31-02"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 PCPP-32-101 deep review: Selected complete special-method introduction/new/init; repr/str/bytes/format/rich comparisons/hash/bool/attribute access; class creation/metaclass/namespace/decorators and instance/subclass checks; callable/container and numeric emulation; context-manager enter/exit sections. Generic-class section incidental partial only; __del__, descriptors/slots and remaining aggregate not audited. Mutable equality/hash, NotImplemented and cooperative lookup exercised on finite examples. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution."
+      "notes": "September 29 PCPP-32-101 deep review: Selected complete special-method introduction/new/init; repr/str/bytes/format/rich comparisons/hash/bool/attribute access; class creation/metaclass/namespace/decorators and instance/subclass checks; callable/container and numeric emulation; context-manager enter/exit sections. Generic-class section incidental partial only; __del__, descriptors/slots and remaining aggregate not audited. Mutable equality/hash, NotImplemented and cooperative lookup exercised on finite examples. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 29 PCAD-31-02 deep review: Selected objects112–175,complete init1167–1177,rich comparisons1267–1311 and hash1312–1340 partial (continuation unread). Actual identity/alias/equality/NotImplemented/unhashable behavior executed; not full manual. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "python313-abc",
@@ -655,10 +1035,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "PCPP-32-101"
+        "PCPP-32-101",
+        "PCAD-31-02"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 PCPP-32-101 deep review: Complete closing entry read (148-173), with incidental preceding async-context tail. Not full module. Used to separate resource closure from SQLite transaction context. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution."
+      "notes": "September 29 PCPP-32-101 deep review: Complete closing entry read (148-173), with incidental preceding async-context tail. Not full module. Used to separate resource closure from SQLite transaction context. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 29 PCAD-31-02 deep review: Complete closing entry148–172 read. Other context-manager helpers/linked references unread for this review. Original connection/sink ownership verified. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "python313-xml-security",
@@ -7139,10 +7520,11 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "supported_exams": [
-        "NCA-GENL"
+        "NCA-GENL",
+        "PCAD-31-02"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 NCA-GENL deep review: Complete API parameters/returns/rank/residual conditions andline-fit example read. Originaldata/code usesactualsolver;emptyresidualarraynotautomaticzeroerror. No copiedexample orplot execution. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
+      "notes": "September 29 NCA-GENL deep review: Complete API parameters/returns/rank/residual conditions andline-fit example read. Originaldata/code usesactualsolver;emptyresidualarraynotautomaticzeroerror. No copiedexample orplot execution. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution. September 29 PCAD-31-02 deep review: Complete fresh2915-character entry read: dimensions,rcond,rank/singular values,minimum2norm and empty residual-array conditions. Original linear fit/residual normal equations and underdetermined example executed; not causal/population inference. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "nvidia-nim-release-notes",
@@ -8472,10 +8854,11 @@
       "access_model": "public",
       "supported_exams": [
         "200-901",
-        "PCPP-32-101"
+        "PCPP-32-101",
+        "PCAD-31-02"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 200-901 deep review: Selected JSON/status and complete timeout/errors sections read. Successfuldecode not HTTPsuccess; timeout not whole-operation deadline. Exact local Requests2.34.2 workbook executed; no network requests. See docs/research/2026-09-29-200-901-deep-review.md No live infrastructure execution. September 29 PCPP-32-101 deep review: Complete public quickstart body read: all named methods, parameter/form/JSON/body behavior, status/headers/cookies/redirects/timeouts/errors and stream cleanup. JSON parsing does not prove HTTP success;204 has no required JSON body. No private auth or external examples executed. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution."
+      "notes": "September 29 200-901 deep review: Selected JSON/status and complete timeout/errors sections read. Successfuldecode not HTTPsuccess; timeout not whole-operation deadline. Exact local Requests2.34.2 workbook executed; no network requests. See docs/research/2026-09-29-200-901-deep-review.md No live infrastructure execution. September 29 PCPP-32-101 deep review: Complete public quickstart body read: all named methods, parameter/form/JSON/body behavior, status/headers/cookies/redirects/timeouts/errors and stream cleanup. JSON parsing does not prove HTTP success;204 has no required JSON body. No private auth or external examples executed. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 29 PCAD-31-02 deep review: Selected complete JSONresponse88–103 and timeout/error356–383 sections read; rawresponse104–114 andredirecttail351–355 incidental. Restquickstart not freshly audited. Loopbackstatus/schema/malformedJSON checks use timeouts and disableenvironmentproxyuse for the temporarysession only; no externalAPI. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "requests-advanced",
@@ -13419,10 +13802,11 @@
       "supported_exams": [
         "FC0-U71",
         "CV0-004",
-        "PCPP-32-101"
+        "PCPP-32-101",
+        "PCAD-31-02"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 28 FC0-U71 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-fc0-u71-deep-review.md No live infrastructure execution. September 29 CV0-004 deep review: Targeted connection, parameter binding, autocommit and in_transaction API; explicit SQL BEGIN/COMMIT/ROLLBACK used in real local tests. See docs/research/2026-09-29-cv0-004-deep-review.md No live infrastructure execution. September 29 PCPP-32-101 deep review: Selected complete connect options; commit/rollback/close and shortcut execute entries; cursor execute/executemany/executescript/fetchone/fetchmany/fetchall/close and rowcount; placeholder section; connection context manager, URI, row factories, non-UTF8 text and transaction-control explanation. Adapter example intro and backup/extension/dump excerpt incidental only, not relied on. Explicit autocommit=False, rollback after partial batch, close versus transaction context and parameter binding tested. Remaining aggregate not audited. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution."
+      "notes": "September 28 FC0-U71 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-fc0-u71-deep-review.md No live infrastructure execution. September 29 CV0-004 deep review: Targeted connection, parameter binding, autocommit and in_transaction API; explicit SQL BEGIN/COMMIT/ROLLBACK used in real local tests. See docs/research/2026-09-29-cv0-004-deep-review.md No live infrastructure execution. September 29 PCPP-32-101 deep review: Selected complete connect options; commit/rollback/close and shortcut execute entries; cursor execute/executemany/executescript/fetchone/fetchmany/fetchall/close and rowcount; placeholder section; connection context manager, URI, row factories, non-UTF8 text and transaction-control explanation. Adapter example intro and backup/extension/dump excerpt incidental only, not relied on. Explicit autocommit=False, rollback after partial batch, close versus transaction context and parameter binding tested. Remaining aggregate not audited. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 29 PCAD-31-02 deep review: Complete selected placeholders1307–1350,connection-context semantics1503–1519 and autocommit transaction-control1656–1683 read; rest aggregate not freshly audited. connectTrue→PRAGMA→autocommitFalse,withconrollback,outerclosing,valuebinding and identifierallowlist executed. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sqlite-foreign-keys",
@@ -13433,10 +13817,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "FC0-U71"
+        "FC0-U71",
+        "PCAD-31-02"
       ],
-      "last_checked": "2026-09-28",
-      "notes": "September 28 FC0-U71 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-fc0-u71-deep-review.md No live infrastructure execution."
+      "last_checked": "2026-09-29",
+      "notes": "September 28 FC0-U71 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-fc0-u71-deep-review.md No live infrastructure execution. September 29 PCAD-31-02 deep review: Complete selected enabling section185–229 read: compile/runtime support,perconnectionPRAGMA,verifyenabled,ineffective midtransactionchanges. Other tutorial/advanced sections unread. Original valid then invalid insertion confirms rollback of whole transaction. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mozilla-private-browsing",
@@ -14551,10 +14936,11 @@
       "access_model": "public",
       "supported_exams": [
         "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
-        "NCA-GENL"
+        "NCA-GENL",
+        "PCAD-31-02"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 28 DATABRICKS-MACHINE-LEARNING-ASSOCIATE deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-databricks-machine-learning-associate-deep-review.md No live infrastructure execution. September 29 NCA-GENL deep review: Selected12.1 inconsistent preprocessing and12.2/12.2.1 leakage/fit-transform guidance read. Not full feature-selection/randomness sections. scikit-learn not installed or run; referenced principles illustrated with NumPy. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution."
+      "notes": "September 28 DATABRICKS-MACHINE-LEARNING-ASSOCIATE deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-databricks-machine-learning-associate-deep-review.md No live infrastructure execution. September 29 NCA-GENL deep review: Selected12.1 inconsistent preprocessing and12.2/12.2.1 leakage/fit-transform guidance read. Not full feature-selection/randomness sections. scikit-learn not installed or run; referenced principles illustrated with NumPy. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution. September 29 PCAD-31-02 deep review: Direct fetch failed; complete currentstable1.9.1 main web bodylines73–373 read: consistenttransforms,splitbeforefit/leakage,pipeline,CV andrandomstate caveats. Earlier1.5.2 indexedexcerpt superseded bycurrentstable. Linkedchapters unread. sklearn absent; no executed estimator/pipeline claimed. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sklearn-gridsearchcv",
@@ -58959,7 +59345,7 @@
         "PCES-30-01",
         "PANW-XSOAR-ENGINEER"
       ],
-      "notes": "Canonical documentation hub for current stable Python 3; newer features are not automatically part of a dated exam syllabus. September 29 PCAP-31-03 deep review: Complete 3232-character documentation index read: unversioned landing is 3.14.7 and exposes other versions. This is release/documentation context, not evidence of an exam-required version or an audit of all linked change logs. Existing local CPython 3.13.14 was used without installation. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution. September 29 PCPP-32-101 deep review: Complete current public index read:3.14.7 documentation, with3.13 separately listed. Navigation/index evidence only, not all linked manuals. Executed local interpreter3.13.14; selected3.13 pages identify3.13.15. No runtime change or exam-specific patch requirement. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 29 PCED-30-02 deep review: Complete current index read, identifying3.14.7 and listing3.13 separately. Navigation only, not all linked manuals. Selected3.13 references identify3.13.15; existing execution interpreter3.13.14. No inferred exam patch requirement or runtime change. See docs/research/2026-09-29-pced-30-02-deep-review.md No live infrastructure execution."
+      "notes": "Canonical documentation hub for current stable Python 3; newer features are not automatically part of a dated exam syllabus. September 29 PCAP-31-03 deep review: Complete 3232-character documentation index read: unversioned landing is 3.14.7 and exposes other versions. This is release/documentation context, not evidence of an exam-required version or an audit of all linked change logs. Existing local CPython 3.13.14 was used without installation. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution. September 29 PCPP-32-101 deep review: Complete current public index read:3.14.7 documentation, with3.13 separately listed. Navigation/index evidence only, not all linked manuals. Executed local interpreter3.13.14; selected3.13 pages identify3.13.15. No runtime change or exam-specific patch requirement. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 29 PCED-30-02 deep review: Complete current index read, identifying3.14.7 and listing3.13 separately. Navigation only, not all linked manuals. Selected3.13 references identify3.13.15; existing execution interpreter3.13.14. No inferred exam patch requirement or runtime change. See docs/research/2026-09-29-pced-30-02-deep-review.md No live infrastructure execution. September 29 PCAD-31-02 deep review: Complete current short index read in preceding PCED review and reused here with matching fresh body: Python 3.14.7, links to 3.13. Navigation only. Selected pinned references identify 3.13.15; actual interpreter 3.13.14. No patch requirement inferred or runtime updated. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "python-3-library-reference",
@@ -59978,9 +60364,10 @@
       "last_checked": "2026-09-29",
       "supported_exams": [
         "PCPP-32-101",
-        "PCEP-30-02"
+        "PCEP-30-02",
+        "PCAD-31-02"
       ],
-      "notes": "Primary coding-style convention named by the blueprint; use its current text while respecting the dated exam scope. September 29 PCEP-30-02 deep review: Selected indentation, tabs/spaces, maximum line length, function/variable naming and constants sections read. Four spaces and naming are style guidance; two-space example actually compiles. Full PEP and linked style materials not audited. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution. September 29 PCPP-32-101 deep review: All substantive guidance from introduction/consistency through layout, imports, whitespace, comments/docstrings, naming, inheritance/API design, programming recommendations and function/variable annotations read (lines57-1023). Footer/reference links not individually audited. Selected Ruff E4/E7/E9/F/W/E501 with79-character limit passed; not a complete PEP8/257 or type-safety certification. Exact-type tests are an intentional bounded-schema choice. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution."
+      "notes": "Primary coding-style convention named by the blueprint; use its current text while respecting the dated exam scope. September 29 PCEP-30-02 deep review: Selected indentation, tabs/spaces, maximum line length, function/variable naming and constants sections read. Four spaces and naming are style guidance; two-space example actually compiles. Full PEP and linked style materials not audited. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution. September 29 PCPP-32-101 deep review: All substantive guidance from introduction/consistency through layout, imports, whitespace, comments/docstrings, naming, inheritance/API design, programming recommendations and function/variable annotations read (lines57-1023). Footer/reference links not individually audited. Selected Ruff E4/E7/E9/F/W/E501 with79-character limit passed; not a complete PEP8/257 or type-safety certification. Exact-type tests are an intentional bounded-schema choice. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 29 PCAD-31-02 deep review: Selected complete maximum-line-length183–216 with next operator-break introduction217–220 read. Remaining style guide not freshly audited. Selected RuffE4/E7/E9/F/W/E501 at79 passes; not wholePEPconformance. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "pep-257-docstrings",
@@ -59992,9 +60379,10 @@
       "access_model": "public",
       "last_checked": "2026-09-29",
       "supported_exams": [
-        "PCPP-32-101"
+        "PCPP-32-101",
+        "PCAD-31-02"
       ],
-      "notes": "Primary docstring convention named by the blueprint. September 29 PCPP-32-101 deep review: Complete public body read including one/multi-line conventions, public contracts and trim example. Workbook docstrings manually considered; no claim every private nested helper has public documentation or every convention was automatically checked. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution."
+      "notes": "Primary docstring convention named by the blueprint. September 29 PCPP-32-101 deep review: Complete public body read including one/multi-line conventions, public contracts and trim example. Workbook docstrings manually considered; no claim every private nested helper has public documentation or every convention was automatically checked. See docs/research/2026-09-29-pcpp-32-101-deep-review.md No live infrastructure execution. September 29 PCAD-31-02 deep review: Selected fresh56–200: attribute/additionaldocstring tail,triplequotes,completeone-line/multiline conventions and partialindentationalgorithm/examples. Earlierdocstringdefinition and finalrest not freshly read; no fullPEPconformance claim. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "pep-484-type-hints",
@@ -60123,7 +60511,7 @@
         "PCED-30-02",
         "PCAD-31-02"
       ],
-      "notes": "Official store entry point for Python Institute exams and version-specific practice tests; confirm the selected exam code before purchase. September 29 PCED-30-02 deep review: Successful84-character application shell only; no usable catalog or product body. Direct registered product pages provide practice evidence instead. See docs/research/2026-09-29-pced-30-02-deep-review.md No live infrastructure execution."
+      "notes": "Official store entry point for Python Institute exams and version-specific practice tests; confirm the selected exam code before purchase. September 29 PCED-30-02 deep review: Successful84-character application shell only; no usable catalog or product body. Direct registered product pages provide practice evidence instead. See docs/research/2026-09-29-pced-30-02-deep-review.md No live infrastructure execution. September 29 PCAD-31-02 deep review: Successful 84-character application shell only, not readable product catalog. Specific PCAD product pages supply actual public evidence; no cart or account action. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "python-for-data-analysis-web",
@@ -60138,7 +60526,7 @@
         "PCED-30-02",
         "PCAD-31-02"
       ],
-      "notes": "Free author-hosted web edition; select chapters that match the active exam scope. September 29 PCED-30-02 deep review: Complete1969-character landing read: open web thirdeditionAugust2022, updatedpandas2.0/Python3.10April2023; text not generally reproducible, codeMIT. No chapters, datasets or fullPCED alignment audit. Optional broaderreference;15-25hours is authorbudget. See docs/research/2026-09-29-pced-30-02-deep-review.md No live infrastructure execution."
+      "notes": "Free author-hosted web edition; select chapters that match the active exam scope. September 29 PCED-30-02 deep review: Complete1969-character landing read: open web thirdeditionAugust2022, updatedpandas2.0/Python3.10April2023; text not generally reproducible, codeMIT. No chapters, datasets or fullPCED alignment audit. Optional broaderreference;15-25hours is authorbudget. See docs/research/2026-09-29-pced-30-02-deep-review.md No live infrastructure execution. September 29 PCAD-31-02 deep review: Complete fresh 1969-character landing read, third edition August 2022, April 2023 Pandas 2.0/Python 3.10 update. Text not generally reproducible; code MIT. No chapters or datasets copied/read. Optional broader reference, author study budget rather than provider runtime. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "kaggle-learn",
@@ -60153,7 +60541,7 @@
         "PCED-30-02",
         "PCAD-31-02"
       ],
-      "notes": "Short practical Python, pandas, visualization, SQL and introductory machine-learning courses; use as applied reinforcement rather than an exam-blueprint authority. September 29 PCED-30-02 deep review: Retrieval failed. No current catalog, course interior, availability or duration verified; prior8-12hour suggestion removed. See docs/research/2026-09-29-pced-30-02-deep-review.md No live infrastructure execution."
+      "notes": "Short practical Python, pandas, visualization, SQL and introductory machine-learning courses; use as applied reinforcement rather than an exam-blueprint authority. September 29 PCED-30-02 deep review: Retrieval failed. No current catalog, course interior, availability or duration verified; prior8-12hour suggestion removed. See docs/research/2026-09-29-pced-30-02-deep-review.md No live infrastructure execution. September 29 PCAD-31-02 deep review: Direct retrieval failed. Current course catalog, access, interiors and duration not verified; old 20–35 hour claim removed. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "cisco-data-analytics-essentials",
@@ -60165,33 +60553,124 @@
       "access_model": "free-account",
       "last_checked": "2026-09-29",
       "supported_exams": [
-        "PCED-30-02"
+        "PCED-30-02",
+        "PCAD-31-02"
       ],
-      "notes": "Broader beginner data-analytics course with an approximately 30-hour public estimate; verify current enrollment availability. September 29 PCED-30-02 deep review: Successful41-character application shell only. No current syllabus/access/runtime confirmed; prior30hour estimate removed. See docs/research/2026-09-29-pced-30-02-deep-review.md No live infrastructure execution."
+      "notes": "Broader beginner data-analytics course with an approximately 30-hour public estimate; verify current enrollment availability. September 29 PCED-30-02 deep review: Successful41-character application shell only. No current syllabus/access/runtime confirmed; prior30hour estimate removed. See docs/research/2026-09-29-pced-30-02-deep-review.md No live infrastructure execution. September 29 PCAD-31-02 deep review: Successful41-character application shell only. Current course interior, access and runtime unverified; old duration estimates removed. Credential page supplies recommended modules only. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pcad-31-02-syllabus","title":"PCAD-31-02 Exam Syllabus","url":"https://pythoninstitute.org/pcad-exam-syllabus","publisher":"OpenEDG Python Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCAD-31-02"],"notes":"Canonical active five-block syllabus, aligned to PCAD-31-02 and last updated July 15, 2025."
+      "id": "pcad-31-02-syllabus",
+      "title": "PCAD-31-02 Exam Syllabus",
+      "url": "https://pythoninstitute.org/pcad-exam-syllabus",
+      "publisher": "OpenEDG Python Institute",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "notes": "Canonical active five-block syllabus, aligned to PCAD-31-02 and last updated July 15, 2025. September 29 PCAD-31-02 deep review: All 48 numbered objectives and detailed bullets read across indexed primary fallbacks after direct/monitor timeout. July 15 2025 active 31-02, groups 14/16/4/9/5 and table weights 29.2/33.3/8.3/18.8/10.4. Block 4 heading says seven objectives/items while numbered list, table and MQC say nine. MQC introduction/Blocks1/3/4/5 read; first paragraph of Block2 partially tool-truncated. Not a full MQC/PDF read or successful automated hash observation. Existing snapshot retained after manual comparison. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pcad-certification-page","title":"PCAD Certified Associate Data Analyst with Python","url":"https://pythoninstitute.org/pcad","publisher":"OpenEDG Python Institute","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCAD-31-02"],"notes":"Current and retired versions, logistics, validity, cost, retake policy, official practice availability and recommended learning sequence."
+      "id": "pcad-certification-page",
+      "title": "PCAD Certified Associate Data Analyst with Python",
+      "url": "https://pythoninstitute.org/pcad",
+      "publisher": "OpenEDG Python Institute",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "notes": "Current and retired versions, logistics, validity, cost, retake policy, official practice availability and recommended learning sequence. September 29 PCAD-31-02 deep review: Complete exam table and FAQ read in indexed primary fallback, plus introduction. Not entire career/marketing page. 31-02 active July15 2025, 01 discontinued July14; six years;48 questions/60minutesplusNDA/75%/English/TestNow; no formal prerequisite, PCAP/PCED/domain skills recommended. USD195/225retake/215practice/245both/49practice; failed-retake15days. Learner profile conflicts with store TestCandidate. PD101 in development conflicts with available PCED-aligned Edube page. Cisco recommended sequence/modules verified, not durations. No booking, account, salaries or live eligibility. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"matplotlib-documentation","title":"Matplotlib Documentation","url":"https://matplotlib.org/stable/","publisher":"Matplotlib project","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCAD-31-02"],"notes":"Primary documentation for plotting concepts and APIs named by the blueprint."
+      "id": "matplotlib-documentation",
+      "title": "Matplotlib Documentation",
+      "url": "https://matplotlib.org/stable/",
+      "publisher": "Matplotlib project",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "notes": "Primary documentation for plotting concepts and APIs named by the blueprint. September 29 PCAD-31-02 deep review: Complete short documentation index read, version3.11.2; navigation only, not linked manuals. Library unavailable locally. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"numpy-documentation","title":"NumPy Documentation","url":"https://numpy.org/doc/stable/","publisher":"NumPy project","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCAD-31-02","PCEI-30-01"],"notes":"Primary current NumPy documentation; reconcile newer features with the dated exam scope."
+      "id": "numpy-documentation",
+      "title": "NumPy Documentation",
+      "url": "https://numpy.org/doc/stable/",
+      "publisher": "NumPy project",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCAD-31-02",
+        "PCEI-30-01"
+      ],
+      "notes": "Primary current NumPy documentation; reconcile newer features with the dated exam scope. September 29 PCAD-31-02 deep review: Complete short stable index read, version2.5; navigation only, not all linked chapters. Local numerical execution uses2.5.2. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pandas-documentation","title":"Pandas Documentation","url":"https://pandas.pydata.org/docs/","publisher":"pandas project","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCAD-31-02","PCEI-30-01"],"notes":"Primary current pandas reference for acquisition, cleaning, transformation, aggregation and analysis."
+      "id": "pandas-documentation",
+      "title": "Pandas Documentation",
+      "url": "https://pandas.pydata.org/docs/",
+      "publisher": "pandas project",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCAD-31-02",
+        "PCEI-30-01"
+      ],
+      "notes": "Primary current pandas reference for acquisition, cleaning, transformation, aggregation and analysis. September 29 PCAD-31-02 deep review: Complete short index read, version3.0.6 datedSeptember17 2026. Navigation only; Pandas absent locally. Version not inferred as exam requirement. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pandas-getting-started","title":"Pandas Getting Started","url":"https://pandas.pydata.org/docs/getting_started/","publisher":"pandas project","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCAD-31-02"],"notes":"Official introductory tutorials; complete selected sections with exercises."
+      "id": "pandas-getting-started",
+      "title": "Pandas Getting Started",
+      "url": "https://pandas.pydata.org/docs/getting_started/",
+      "publisher": "pandas project",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "notes": "Official introductory tutorials; complete selected sections with exercises. September 29 PCAD-31-02 deep review: Complete 4877-character getting-started overview read; linked tutorials not automatically read. Author study budget and prepared companion are not provider completion. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"seaborn-documentation","title":"Seaborn Documentation","url":"https://seaborn.pydata.org/","publisher":"seaborn project","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCAD-31-02"],"notes":"Primary documentation for the statistical-visualization library named by the blueprint."
+      "id": "seaborn-documentation",
+      "title": "Seaborn Documentation",
+      "url": "https://seaborn.pydata.org/",
+      "publisher": "seaborn project",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "notes": "Primary documentation for the statistical-visualization library named by the blueprint. September 29 PCAD-31-02 deep review: Complete short index read, version0.13.2; navigation only, not linked manual. Seaborn absent locally. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"introduction-statistical-learning-python","title":"An Introduction to Statistical Learning with Applications in Python","url":"https://www.statlearning.com/","publisher":"Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani and Jonathan Taylor","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCAD-31-02"],"notes":"Free author-hosted book and labs; broader than PCAD, so select introductory statistics and modeling sections."
+      "id": "introduction-statistical-learning-python",
+      "title": "An Introduction to Statistical Learning with Applications in Python",
+      "url": "https://www.statlearning.com/",
+      "publisher": "Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani and Jonathan Taylor",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCAD-31-02"
+      ],
+      "notes": "Free author-hosted book and labs; broader than PCAD, so select introductory statistics and modeling sections. September 29 PCAD-31-02 deep review: Direct retrieval failed. No current download, access, chapter or runtime verification; guide removes assumed availability/time. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
       "id":"pcet-30-01-syllabus","title":"PCET-30-01 Exam Syllabus","url":"https://pythoninstitute.org/pcet-exam-syllabus","publisher":"OpenEDG Python Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCET-30-01"],"notes":"Canonical four-block syllabus. Header and alignment say PCET-30-01 while introductory prose says PCET-30-02; preserve this source inconsistency."
@@ -60275,7 +60754,19 @@
       "id":"schedule-documentation","title":"schedule Documentation","url":"https://schedule.readthedocs.io/en/stable/","publisher":"schedule project","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCEA-30-01"],"notes":"Primary documentation for the lightweight job-scheduling library named by the blueprint."
     },
     {
-      "id":"beautiful-soup-documentation","title":"Beautiful Soup Documentation","url":"https://www.crummy.com/software/BeautifulSoup/bs4/doc/","publisher":"Leonard Richardson","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCEA-30-01"],"notes":"Primary documentation for the HTML parser named by the blueprint; scraping still requires permission and responsible rate limits."
+      "id": "beautiful-soup-documentation",
+      "title": "Beautiful Soup Documentation",
+      "url": "https://www.crummy.com/software/BeautifulSoup/bs4/doc/",
+      "publisher": "Leonard Richardson",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCEA-30-01",
+        "PCAD-31-02"
+      ],
+      "notes": "Primary documentation for the HTML parser named by the blueprint; scraping still requires permission and responsible rate limits. September 29 PCAD-31-02 deep review: Direct retrieval failed; indexed primary complete get_text subsection includingseparator/strip/scriptstyletemplate notes andfind/calltagintro read. Fullmanual unread. Currentdocs4.14.3 versus installed4.13.3; originalnestedtext/missingelement probes executed locally. See docs/research/2026-09-29-pcad-31-02-deep-review.md No live infrastructure execution."
     },
     {
       "id":"oreilly-python-automation-cookbook-third","title":"Python Automation Cookbook, 3rd Edition","url":"https://www.oreilly.com/library/view/python-automation-cookbook/9781803247300/","publisher":"O'Reilly / Packt","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["PCEA-30-01"],"notes":"Broad automation cookbook. Select 20–35 hours matched to the beta blueprint and use disposable targets."

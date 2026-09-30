@@ -1,0 +1,37 @@
+# PCAD-31-02 deep review — September 29, 2026
+
+The [guide](../../guides/PCAD-31-02-python-certified-associate-data-analyst.md) maps all **48 numbered objectives**, grouped 14/16/4/9/5, and expands all 18 answers. After direct retrieval and the automated objective monitor timed out, the indexed [canonical syllabus](https://pythoninstitute.org/pcad-exam-syllabus) objectives and detailed bullets were read manually. The existing snapshot was retained. Part of Block 2's candidate-profile prose and the full PDF remain unverified. This is not a successful automated hash observation or a full-profile audit.
+
+## Scope, products and learning
+
+The current [exam table and FAQ](https://pythoninstitute.org/pcad) confirm active 31-02 since July 15, 2025, retired 31-01, six-year validity, 48 questions, 60 minutes plus NDA, a 75% passing score, English/TestNow delivery and a 15-day wait after failure. The syllabus table, numbered objectives and Block 4 profile say nine items/18.8%, while its Block 4 heading says seven. All nine are preserved. Rounded weights total 100.1%. The complete indexed [policy](https://pythoninstitute.org/pcad-testing-policies) was read; no account, booking or system test was performed.
+
+The [USD 49 standalone practice kit](https://ums.edube.org/products/1-pi-pcad-3102-pt) lists two tests with up to 10 launches each, versus five in the [USD 245 exam/retake/practice bundle](https://ums.edube.org/products/1-pi-pcad-3102-erpt). Both describe 12-month vouchers. The store's Test Candidate → Practice instruction differs from the credential FAQ's Learner instruction. The kit also says four domains while listing five; the canonical blueprint controls scope. No purchase, cart mutation, protected questions or redemption was accessed.
+
+The complete [Edube PD101 outline](https://edube.org/study/pd101) describes a PCED-aligned course, free Core lessons/module tests, USD 49 Full/Pro interactive work and five weeks at about one hour per day. PCAD's exam page still calls PD101 in development. The guide records that discrepancy and does not claim full PCAD alignment. Cisco and the store root returned application shells; Kaggle and ISLP failed. Unsupported duration/access claims were removed, and remaining study budgets are labeled as author estimates. The book landing was read, not its chapters.
+
+## Exact original executable evidence
+
+The public `analysis.py` passes **86 checks normally and 86 with optimization**, with warnings promoted to errors and no stderr. Checks remain active under `-O`. Existing versions are CPython 3.13.14, NumPy 2.5.2, SciPy 1.18.0, SQLite 3.50.4, Requests 2.34.2 and Beautiful Soup 4.13.3. Both public files pass selected Ruff 0.16.4 rules `E4,E7,E9,F,W,E501` at 79 characters. Exact files, hashes, commands, timestamps, full outputs and the calculated report are retained in operation evidence.
+
+The original five-record CSV has SHA-256 `3d2fa43225b00e41b1953578478e2402bdfec87778ec675d3cc80d5a66c47b33`. North has two records, one measure and mean 10; South has two records, two measures and mean 40; the missing-region record has one measure of 20. The observed total is 110 across four measured records, mean 27.5, with one missing measure. Inner/left/right/full observation-to-dimension joins produce 4/5/5/6 rows. Two-by-three duplicate-key matches yield six rows. ON versus WHERE and column counts versus row counts demonstrate padded-NULL effects.
+
+Foreign keys are enabled and verified before selecting `autocommit=False`. A valid insertion followed by an invalid foreign key rolls back both. Parameterized CRUD, a hostile-looking bound value, an identifier allowlist, SQLite type affinity and connection ownership all execute. The database exists only in memory.
+
+The separate preprocessing fixture learns from 0/2/missing/6: median 2, filled mean 2.5, population SD 2.179449471770337, minimum 0 and range 6. Held-out 8/missing transforms to min-max 4/3 and 1/3 without refitting. Unknown West uses fixed North/South columns and an explicit unknown report. Empty, all-missing, infinite, shape, constant and broadcasting cases are checked.
+
+The linear example uses six training and two test records. It predicts 12.333333333333332 and 14.19047619047619 against observed 13 and 14. Test MAE is 0.4285714285714288 versus the training-mean baseline's 7.666666666666668; training MAE is 0.571428571428572. Rank and normal equations are checked. An underdetermined example shows why an empty `lstsq` residual array does not establish a full-rank fit.
+
+The separate logistic example uses eight training and four test records, stable loss/expit, an analytic gradient checked against finite differences, BFGS convergence and a slope penalty of 0.2. Test probabilities are approximately 0.30624096/0.43227280/0.56772720/0.69375904. At threshold 0.5, TP=2, TN=2, FP=0 and FN=0: test accuracy 1.0, training accuracy 0.75 and the fixed majority baseline 0.5. Tiny constructed fixtures do not establish deployment quality, calibration or causality.
+
+The six-value mean-20 bootstrap uses 2,000 seeded percentile resamples and produces a 95% interval of [14.666666666666666, 25.333333333333332], checked against explicit linear quantiles. A 200-resample paired example with a constant difference yields [3,3]; it does not prove population certainty. The guide distinguishes resampling units, sampling/missingness bias, BCa versus percentile methods, seed/version limits and frequentist interpretation. Selected installed SciPy primary docstrings and their hashes supplement failed direct fetches.
+
+Original local HTTP fixtures verify status separately from JSON decoding, malformed JSON, schema checks, nested HTML text and absent elements. The temporary loopback server is stopped, closed and joined in `finally`; no external data service or persistent process is created. Object examples check composition, overriding, caller-owned sinks, identity/equality, alias mutation, `NotImplemented` and mutable-value unhashability.
+
+## Prepared work and remaining limits
+
+The exact public `pandas_companion.py` is **compiled and linted only**, not imported or executed. Pandas, scikit-learn, Matplotlib, Seaborn and openpyxl are unavailable and were not installed. Its original checks cover nullable CSV, Copy-on-Write/loc, merge validation and missing-key matches, grouped counts, reshaping, crosstabs and Series alignment. It also contains Matplotlib/Seaborn export code. No companion image exists or was visually reviewed. SQLite and hand-calculated expected results do not constitute Pandas runtime proof.
+
+Current documentation identifies Pandas 3.0.6, NumPy 2.5, Matplotlib 3.11.2, Seaborn 0.13.2 and stable scikit-learn 1.9.1. These are documentation observations, not exam version requirements. Complete and selected reading boundaries are recorded per source; index pages are not whole manuals. There are **51 direct receipts: 37 successful responses and 14 errors**. Indexed fallback is separate from network health and installed SciPy docstrings. No complete PDF, enrolled lesson or private practice audit is claimed.
+
+Pandas/plotting execution, figure inspection, spreadsheet work, nine broader permitted-dataset labs, publisher/product conflicts and human content/accessibility review remain pending. The guide's stakeholder brief traces fixture means, counts and missingness to a limited investigation step. It does not certify readiness or turn synthetic results into real-world recommendations.
