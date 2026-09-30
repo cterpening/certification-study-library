@@ -43,7 +43,9 @@ or verification dates. `config/exams.json` is the separate registry of
 credentials with complete published guides. [`CERTIFICATIONS.txt`](../CERTIFICATIONS.txt)
 is a generated, tab-separated seed file intended for a downstream Python script
 that queries or enriches certification information. Its header is `vendor_id`,
-`exam_code`, and `title`. Those identity fields make a useful search key without
+`exam_code`, `title`, and `aliases`. The last field is a JSON array of former or
+alternate names, or `[]`; the first three columns keep their original order.
+Update importers that require exactly three fields. Those identity fields make a useful search key without
 making the downstream system preserve public-library review state or guide
 paths.
 
@@ -60,6 +62,12 @@ research inventory, or omits a credential that has a published guide. A private
 overlay can read it with `csv.DictReader(..., delimiter="\t")` and write
 discovered or internal metadata elsewhere without changing the public input
 list.
+
+Decode `aliases` with `json.loads(row.get("aliases") or "[]")`, query the current
+title and each alias, and reconcile matches by `(vendor_id, exam_code)`. Keep
+the matched name and course version in the private enrichment result so an older
+course is not mistaken for current-blueprint coverage. This repository supplies
+the input; it does not connect to or change the downstream LMS.
 
 ## Account separation with SSH
 

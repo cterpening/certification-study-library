@@ -2,6 +2,10 @@
 
 Contributions should make the library more useful without pretending that every learner needs the same explanation or resource.
 
+This is a best-effort library based on public information. Publish useful, supported findings while making uncertainty visible. If sources conflict, cite both, describe the conflict and mark **More research needed — next pass** rather than choosing an unsupported answer. Document lab errors, unavailable tools and steps that were not executed; distinguish observed results from expected results. Community fixes are welcome with reproduction steps or public evidence. An unresolved limitation does not mean the rest of a guide is unusable.
+
+When a credential is renamed, preserve its former name in the inventory's `aliases` list under the same vendor and exam code. The LMS lookup export uses both current and former names; an alias alone does not establish that older course content covers the current blueprint.
+
 ## Guide changes
 
 Every substantive guide change should:

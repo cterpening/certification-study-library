@@ -1,6 +1,7 @@
 {
   "$schema": "../schemas/certification-seed-catalog.schema.json",
   "schema_version": 1,
+  "lifecycle_as_of": "2026-09-30",
   "catalog_sources": [
     {
       "id": "github-published-guides",
@@ -266,6 +267,25 @@
       "vendor_id": "microsoft",
       "exam_code": "AB-100",
       "title": "Microsoft Certified: Agentic AI Business Solutions Architect Expert",
+      "aliases": [
+        "Microsoft Certified: Agentic AI Business Solutions Architect"
+      ],
+      "lifecycle": {
+        "checked_on": "2026-09-30",
+        "blueprint_updates": [
+          {
+            "effective_on": "2026-07-22",
+            "language": "en",
+            "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100"
+          },
+          {
+            "effective_on": "2026-10-14",
+            "language": "en",
+            "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100"
+          }
+        ],
+        "notes": "The July 22 English baseline is preserved in the repository objective snapshot and September 27 deep review. Microsoft now displays the October 14 outline and announces that future effective date. The credential title adds Expert; the exam code remains AB-100 and the exam title can omit Expert. The former credential title is retained as an LMS query alias. The exact rename effective date and initial release date are not confirmed. Conflicting prerequisite lists remain documented in the guide; more research is needed on the next pass."
+      },
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
       "status": "active",
       "source_id": "microsoft-published-outside-azure"
@@ -814,7 +834,17 @@
       "retirement_date": "2026-09-28",
       "replacement_exam_code": "MLA-C02",
       "replacement_official_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html",
-      "source_id": "aws-current"
+      "source_id": "aws-current",
+      "retirement_scope": "English only",
+      "retirement_source_url": "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+      "lifecycle": {
+        "checked_on": "2026-09-30",
+        "source_urls": [
+          "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+          "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/"
+        ],
+        "notes": "September 28 retirement applies only to English MLA-C01 delivery. Korean, Japanese and Simplified Chinese remain available until MLA-C02 general availability. The September announcement gives January 14, 2027 for general availability, while the credential page still says TBD. More research needed — next pass; do not apply the English retirement date globally."
+      }
     },
     {
       "vendor_id": "aws",
@@ -822,7 +852,20 @@
       "title": "AWS Certified Machine Learning Engineer - Associate (beta)",
       "official_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html",
       "status": "beta",
-      "source_id": "aws-current"
+      "source_id": "aws-current",
+      "lifecycle": {
+        "checked_on": "2026-09-30",
+        "initial_release": {
+          "date": "2026-09-29",
+          "stage": "beta",
+          "source_url": "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/"
+        },
+        "source_urls": [
+          "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+          "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/"
+        ],
+        "notes": "AWS announces English-only beta delivery beginning September 29, 2026, with delivery code ME1-C02. This is the MLA-C02 exam-version beta date, not the initial launch of the credential. General availability conflicts: the September announcement gives January 14, 2027, while the credential page says TBD. More research needed — next pass. No exam booking or account availability was tested."
+      }
     },
     {
       "vendor_id": "aws",

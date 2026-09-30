@@ -1,4 +1,6 @@
 import importlib.util
+import csv
+import io
 from copy import deepcopy
 from hashlib import sha256
 import json
@@ -300,10 +302,74 @@ review_status: ai-generated-draft
         rendered = validator.render_certification_list(certifications)
 
         self.assertEqual(
-            "vendor_id\texam_code\ttitle\n"
-            "example\tEX-100\tExample Certification\n",
+            "vendor_id\texam_code\ttitle\taliases\n"
+            "example\tEX-100\tExample Certification\t[]\n",
             rendered,
         )
+
+    def test_alias_export_round_trips_names_without_extra_certification_rows(self) -> None:
+        aliases = ['Former "Architect"', 'Architecte avancé; niveau 2']
+        records = [{"vendor_id": "example", "exam_code": "EX-100",
+                    "title": "Current Architect", "aliases": aliases}]
+        rows = list(csv.DictReader(io.StringIO(
+            validator.render_certification_list(records)), delimiter="\t"))
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(list(rows[0]), ["vendor_id", "exam_code", "title", "aliases"])
+        self.assertEqual(json.loads(rows[0]["aliases"]), aliases)
+        self.assertEqual(rows[0]["exam_code"], "EX-100")
+
+    def test_alias_validation_rejects_ambiguous_or_malformed_names(self) -> None:
+        source = {"id": "example-current", "vendor_id": "example",
+                  "catalog_url": "https://example.com/certifications",
+                  "selection": "Selected credentials", "last_verified": "2026-09-30"}
+        row = {"vendor_id": "example", "exam_code": "EX-100",
+               "title": "Current Architect", "official_url": "https://example.com/ex",
+               "status": "active", "source_id": "example-current"}
+        for aliases in ("Former Architect", [""], [" padded "], [False],
+                        ["Name\tOther"], ["Former", "former"], ["current architect"]):
+            with self.subTest(aliases=aliases):
+                record = dict(row, aliases=aliases)
+                errors = []
+                validator.validate_certification_seed_catalog(
+                    {"catalog_sources": [source], "certifications": [record]},
+                    [], {"example"}, errors)
+                self.assertTrue(any("alias" in error for error in errors), errors)
+        errors = []
+        validator.validate_certification_seed_catalog(
+            {"catalog_sources": [source], "certifications": [
+                dict(row, aliases=["Former Architect"])]}, [], {"example"}, errors)
+        self.assertFalse(any("alias" in error for error in errors), errors)
+
+    def test_lifecycle_dates_require_sources_and_keep_language_scope(self) -> None:
+        source = {"id": "example-current", "vendor_id": "example",
+                  "catalog_url": "https://example.com/certifications",
+                  "selection": "Selected credentials", "last_verified": "2026-09-30"}
+        row = {"vendor_id": "example", "exam_code": "EX-100",
+               "title": "Example", "official_url": "https://example.com/ex",
+               "status": "active", "source_id": "example-current"}
+        update = {"effective_on": "2026-10-14", "language": "en",
+                  "source_url": "https://example.com/blueprint"}
+        cases = [
+            {"checked_on": "yesterday"},
+            {"checked_on": "2026-09-30", "blueprint_updates": [dict(update, source_url="")]},
+            {"checked_on": "2026-09-30", "blueprint_updates": [update, update]},
+            {"checked_on": "2026-09-30", "initial_release":
+                {"date": "2026-02-30", "stage": "beta", "source_url": "https://example.com/launch"}},
+        ]
+        for lifecycle in cases:
+            with self.subTest(lifecycle=lifecycle):
+                errors = []
+                validator.validate_certification_seed_catalog(
+                    {"catalog_sources": [source], "certifications": [
+                        dict(row, lifecycle=lifecycle)]}, [], {"example"}, errors)
+                self.assertTrue(any("lifecycle" in error or "blueprint update" in error
+                                    or "initial release" in error for error in errors), errors)
+        errors = []
+        validator.validate_certification_seed_catalog(
+            {"catalog_sources": [source], "certifications": [dict(row, lifecycle={
+                "checked_on": "2026-09-30", "blueprint_updates": [
+                    update, dict(update, language="ja")]})]}, [], {"example"}, errors)
+        self.assertFalse(any("blueprint update" in error for error in errors), errors)
 
     def test_retirement_metadata_is_validated_and_replacement_is_cataloged(self) -> None:
         source = {

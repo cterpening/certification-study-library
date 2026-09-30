@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BUILD_DIR = ROOT / ".site-build"
 
 PUBLIC_DOCUMENTS = (
+    "docs/CERTIFICATION-LIFECYCLE.md",
     "docs/research/2026-09-30-pcei-30-01-deep-review.md",
     "docs/research/2026-09-30-pcea-30-01-deep-review.md",
     "docs/research/2026-09-30-pces-30-01-deep-review.md",
@@ -861,6 +862,7 @@ def render_nav(
             "      - OpenAI AI Foundations: docs/partner-ai/openai-ai-foundations.md",
             "      - Anthropic Claude Certified Architect: docs/partner-ai/anthropic-claude-certified-architect-foundations.md",
             "  - Places to learn: docs/LEARNING-RESOURCES.md",
+            "  - Certification lifecycle: docs/CERTIFICATION-LIFECYCLE.md",
             "  - About:",
         ]
     )

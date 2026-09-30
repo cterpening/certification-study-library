@@ -297,25 +297,27 @@ inventory](docs/CERTIFICATION-INVENTORY.md) for the scope rules and vendor
 catalog sources.
 
 `CERTIFICATIONS.txt` is generated from the research inventory as a minimal
-tab-separated input for downstream Python enrichment scripts. It contains only
-the stable `vendor_id`, `exam_code`, and `title` query seeds; the script can use
+tab-separated input for downstream Python enrichment scripts. Its columns are
+`vendor_id`, `exam_code`, `title`, and `aliases`. The first three keep their
+original order; `aliases` contains a JSON list of alternate names, or `[]`.
+Update consumers that unpack exactly three columns. The script can use
 the canonical JSON when it also needs official URLs, lifecycle state, catalog
 source, or verification date. Read the text export with Python's standard `csv`
 module:
 
 ```python
 import csv
+import json
 
 with open("CERTIFICATIONS.txt", encoding="utf-8", newline="") as source:
     for certification in csv.DictReader(source, delimiter="\t"):
-        query = " ".join(
-            (
-                certification["vendor_id"],
-                certification["exam_code"],
-                certification["title"],
-            )
-        )
-        # Pass query to the downstream information lookup.
+        identity = (certification["vendor_id"], certification["exam_code"])
+        names = [certification["title"],
+                 *json.loads(certification.get("aliases") or "[]")]
+        for name in dict.fromkeys(names):
+            query = " ".join((*identity, name))
+            # Query the LMS with each name; reconcile matches under identity.
+            # Record course versions: an old name can match outdated content.
 ```
 
 After changing `config/certification-seeds.json`, regenerate the input with:
@@ -327,6 +329,11 @@ python scripts/generate_certification_list.py
 Repository validation fails when the generated input is missing or stale. Do not
 add enrichment results to this file; store them in the downstream system or a
 separate generated artifact.
+
+See [Certification lifecycle and name history](docs/CERTIFICATION-LIFECYCLE.md)
+for recorded updates, announced next updates, retirements, replacements and
+initial release dates where confirmed. Unknown or conflicting information stays
+visible for the next review pass.
 
 As verified on August 31, 2026, the inventory includes all 24 certifications in
 Microsoft Learn's official Azure product facet plus AZ-802 and SC-100, which the

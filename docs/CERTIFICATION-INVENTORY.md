@@ -4,6 +4,8 @@ The repository keeps discovery separate from publication:
 
 - `config/certification-seeds.json` is the source-backed research inventory.
 - `CERTIFICATIONS.txt` is its generated, tab-separated Python query input.
+- [Certification lifecycle and name history](CERTIFICATION-LIFECYCLE.md) shows
+  recorded update/release dates, retirements, replacements and aliases.
 - `config/exams.json` contains only credentials with complete study guides and
   the metadata needed to publish and monitor them.
 
@@ -254,15 +256,40 @@ test blueprint and a public track with named preparation resources.
    still needs the identity, and mark the lifecycle state accurately. For every
    announced or completed retirement, record its date; when the vendor identifies
    a replacement, record and validate the replacement code and official URL.
+   When a credential is renamed, keep its current `title` and add confirmed former
+   names to `aliases`. Keep one row per vendor/exam code; an alias is not a new exam.
+   AB-100 now retains the former name without “Expert” for LMS searches.
 4. Update the source's `last_verified` date.
 5. Regenerate and validate:
 
    ```bash
    python scripts/generate_certification_list.py
+   python scripts/generate_certification_lifecycle.py
    python scripts/validate_repository.py
    ```
 
 The JSON catalog retains official URLs, lifecycle state, provenance, and review
-dates. The generated text file intentionally keeps only the three fields useful
-as search keys so downstream enrichment can discover its own metadata without
-silently overwriting the public source of truth.
+dates. The generated text file has four tab-separated columns: `vendor_id`,
+`exam_code`, `title`, and `aliases`. The first three retain their previous order.
+`aliases` is a JSON array of strings, or `[]` when none are recorded. Readers that
+unpack exactly three columns must be updated; header-based readers can select the
+fields they need. Query the current title and each alias separately, then merge
+matches under the same vendor/exam identity. A matching old course name does not
+prove alignment with the current blueprint. See the example in the [README](../README.md).
+
+Lifecycle facts live in the same catalog. Set `lifecycle.checked_on` to the date
+the cited evidence was checked. Each `blueprint_updates` entry needs an
+`effective_on` date, a language code and a public `source_url`; preserve both
+historical and announced dates. `initial_release`, when confirmed, needs `date`,
+`stage` (`beta` or `general-availability`) and `source_url`. Do not infer launch,
+rename or exam-update dates from a page timestamp or the library review date.
+Unknown values stay absent and display as “Not recorded.” Record conflicts and
+next-pass questions in `lifecycle.notes` rather than choosing an unsupported date;
+cite the supporting public URLs in `lifecycle.source_urls`. The release date
+belongs to the tracked exam version, not necessarily the credential's first launch.
+Use `retirement_scope` for restrictions such as “English only” and
+`retirement_source_url` for the specific announcement when available.
+
+`lifecycle_as_of` is the page's dated comparison point. Advance it deliberately
+when refreshing the view; it does not claim every credential was rechecked.
+Repository validation catches stale generated query and lifecycle files.

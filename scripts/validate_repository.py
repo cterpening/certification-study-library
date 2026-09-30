@@ -12,6 +12,7 @@ import sys
 from urllib.parse import unquote, urlparse
 
 from objective_adapter_registry import OBJECTIVE_ADAPTER_NAMES, inventory_errors
+from certification_lifecycle import render_lifecycle_page
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -144,6 +145,7 @@ CERTIFICATION_LIST_COLUMNS = (
     "vendor_id",
     "exam_code",
     "title",
+    "aliases",
 )
 CERTIFICATION_SEED_STATUSES = {
     "active",
@@ -197,6 +199,8 @@ def render_certification_list(certifications: object) -> str:
             values.append(
                 text.replace("\t", " ").replace("\r", " ").replace("\n", " ")
             )
+        aliases = certification.get("aliases", [])
+        values.append(json.dumps(aliases, ensure_ascii=False, separators=(",", ":")))
         lines.append("\t".join(values))
     return "\n".join(lines) + "\n"
 
@@ -282,12 +286,74 @@ def validate_certification_seed_catalog(
         seed_keys.add(key)
         if not isinstance(title, str) or not title:
             errors.append(f"Certification seed {exam_code} needs a title")
+        aliases = certification.get("aliases", [])
+        if not isinstance(aliases, list):
+            errors.append(f"Certification seed {exam_code} aliases must be a list")
+        else:
+            names = {title.casefold()} if isinstance(title, str) else set()
+            for alias in aliases:
+                if (
+                    not isinstance(alias, str)
+                    or not alias.strip()
+                    or alias != alias.strip()
+                    or any(ord(character) < 32 for character in alias)
+                ):
+                    errors.append(f"Certification seed {exam_code} has an invalid alias")
+                elif alias.casefold() in names:
+                    errors.append(f"Certification seed {exam_code} has a duplicate alias")
+                else:
+                    names.add(alias.casefold())
+        lifecycle = certification.get("lifecycle")
+        if lifecycle is not None:
+            if not isinstance(lifecycle, dict):
+                errors.append(f"Certification seed {exam_code} lifecycle must be an object")
+            else:
+                if not valid_date(lifecycle.get("checked_on")):
+                    errors.append(f"Certification seed {exam_code} needs lifecycle checked_on")
+                source_urls = lifecycle.get("source_urls", [])
+                if not isinstance(source_urls, list) or any(
+                    not valid_public_url(url) for url in source_urls
+                ):
+                    errors.append(f"Certification seed {exam_code} needs public lifecycle source URLs")
+                updates = lifecycle.get("blueprint_updates", [])
+                if not isinstance(updates, list):
+                    errors.append(f"Certification seed {exam_code} blueprint_updates must be a list")
+                    updates = []
+                update_keys = set()
+                for update in updates:
+                    if not isinstance(update, dict) or not (
+                        valid_date(update.get("effective_on"))
+                        and isinstance(update.get("language"), str)
+                        and update["language"].strip()
+                        and valid_public_url(update.get("source_url"))
+                    ):
+                        errors.append(f"Certification seed {exam_code} has an invalid blueprint update")
+                        continue
+                    update_key = (update["effective_on"], update["language"])
+                    if update_key in update_keys:
+                        errors.append(f"Certification seed {exam_code} has a duplicate blueprint update")
+                    update_keys.add(update_key)
+                release = lifecycle.get("initial_release")
+                if release is not None and (
+                    not isinstance(release, dict)
+                    or not valid_date(release.get("date"))
+                    or release.get("stage") not in {"beta", "general-availability"}
+                    or not valid_public_url(release.get("source_url"))
+                ):
+                    errors.append(f"Certification seed {exam_code} has an invalid initial release")
         if not valid_public_url(certification.get("official_url")):
             errors.append(f"Certification seed {exam_code} needs an official URL")
         status = certification.get("status")
         if status not in CERTIFICATION_SEED_STATUSES:
             errors.append(f"Certification seed {exam_code} has an invalid status")
         retirement_date = certification.get("retirement_date")
+        for field in ("retirement_scope", "retirement_source_url"):
+            if field in certification and not retirement_date:
+                errors.append(f"Certification seed {exam_code} has {field} without retirement_date")
+        if "retirement_source_url" in certification and not valid_public_url(
+            certification["retirement_source_url"]
+        ):
+            errors.append(f"Certification seed {exam_code} needs a public retirement source URL")
         if status in {"retirement-announced", "retired"}:
             if not valid_date(retirement_date):
                 errors.append(
@@ -365,6 +431,19 @@ def validate_certification_seed_catalog(
                 "CERTIFICATIONS.txt is stale; run "
                 "python scripts/generate_certification_list.py"
             )
+
+    lifecycle_as_of = seed_data.get("lifecycle_as_of")
+    if lifecycle_as_of is not None:
+        if not valid_date(lifecycle_as_of):
+            errors.append("Certification inventory needs a valid lifecycle_as_of date")
+        else:
+            try:
+                expected = render_lifecycle_page(seed_data)
+                actual = (ROOT / "docs/CERTIFICATION-LIFECYCLE.md").read_text(encoding="utf-8")
+                if actual != expected:
+                    errors.append("Certification lifecycle page is stale; run python scripts/generate_certification_lifecycle.py")
+            except (OSError, TypeError, ValueError, KeyError) as exc:
+                errors.append(f"Unable to validate certification lifecycle page: {exc}")
 
 
 def load_json(path: Path, errors: list[str]) -> dict[str, object]:

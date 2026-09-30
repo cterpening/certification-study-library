@@ -1,5 +1,7 @@
 # Changelog
 
+- September 30, 2026: Added source-backed certification lifecycle tracking and a fourth `aliases` column in the LMS query export. AB-100 retains its former name alongside the current Expert credential name. The dated page distinguishes effective updates, announced future updates, release stages and inventory checks; unconfirmed dates remain explicit gaps.
+
 - September 30, 2026: [PCEI-30-01 deep review](docs/research/2026-09-30-pcei-30-01-deep-review.md): Mapped33objectives separately from36items and expanded20answers; exact Python/NumPy workbook passes21methods and20observations per mode. Added training-only scaling,metric/axis/gradient evidence; recorded practice-release conflicts and unexecuted optional frameworks,plots,model trials andhumanreview.
 
 - September 30, 2026: [PCEA-30-01 deep review](docs/research/2026-09-30-pcea-30-01-deep-review.md): Mapped 46 objectives and expanded 18 answers; three exact original files pass 25 methods and 23 observations per mode. Added owned HTTP, strict data, idempotent replacement and byte-recovery evidence; preserved beta status, repaired the book link, and recorded remaining scheduler/notification/full-lab and human-review limits.
