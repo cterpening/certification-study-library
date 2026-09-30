@@ -3,6 +3,34 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "splunk-sort-10-2",
+      "title": "Splunk SPL sort command — 10.2",
+      "url": "https://help.splunk.com/en/splunk-enterprise/search/spl-search-reference/10.2/search-commands/sort",
+      "publisher": "Splunk",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SPLUNK-CORE-USER"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 SPLUNK-CORE-USER deep review: Selectedindexed500–613read after directDNSerror:syntax/default10000cap,sort0cost,typedorder. Laterexamplesunread. Bounded originalpipeline sourcechecked; noSPLexecution or universalperformanceclaim. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "splunk-dedup-10-4-2604",
+      "title": "Splunk SPL dedup command — Cloud 10.4.2604",
+      "url": "https://help.splunk.com/en/splunk-cloud-platform/spl-search-reference/10.4.2604/search-commands/dedup",
+      "publisher": "Splunk",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SPLUNK-CORE-USER"
+      ],
+      "last_checked": "2026-09-30",
+      "notes": "September 30 SPLUNK-CORE-USER deep review: Selectedindexed500–632read after directDNSerror:inputorder,nullkeydefaultdrop,keepemptyallmissing,sortby,streamingvsdataset/multivalueoutline. Remainingexamplesunread. Originalthreeeventpaperpredictionsnotengineexecution. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "pcei-testing-policies",
       "title": "PCEI testing policies",
       "url": "https://pythoninstitute.org/pcei-testing-policies",
@@ -58741,11 +58769,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-29",
+      "last_checked": "2026-09-30",
       "supported_exams": [
-        "SPLK-5001"
+        "SPLK-5001",
+        "SPLUNK-CORE-USER"
       ],
-      "notes": "Official candidate agreement, registration, identity, delivery, scoring, retake and certification policy reference. September 29 SPLK-5001 deep review: Cover/contents PDF pages 1–2 and selected registration, testing, retake and accommodation material on pages 5–10 read; pages 11–14 recertification tables/FAQs read fully. Version 05.05.26. Page 12 next-level table visually inspected. Not the full 26-page handbook or legal agreement/appendices. CDA has no next-level/downstream renewal entries. Same-exam renewal final year, three-year lifecycle, 90-day grace; 7/14/28/56/56 waits start day after attempt. No personal credential or booking checked. See docs/research/2026-09-29-splk-5001-deep-review.md No live infrastructure execution."
+      "notes": "Official candidate agreement, registration, identity, delivery, scoring, retake and certification policy reference. September 29 SPLK-5001 deep review: Cover/contents PDF pages 1–2 and selected registration, testing, retake and accommodation material on pages 5–10 read; pages 11–14 recertification tables/FAQs read fully. Version 05.05.26. Page 12 next-level table visually inspected. Not the full 26-page handbook or legal agreement/appendices. CDA has no next-level/downstream renewal entries. Same-exam renewal final year, three-year lifecycle, 90-day grace; 7/14/28/56/56 waits start day after attempt. No personal credential or booking checked. See docs/research/2026-09-29-splk-5001-deep-review.md No live infrastructure execution. September 30 SPLUNK-CORE-USER deep review: Selectedfreshindexed235–356read after directDNSerror:results/badges,retakes7/14/28/56/56,passedretakeapproval,accommodations,3yearcycle/90daygrace andfinalyearrenewal. Remaining26pagehandbookunread thispass; noeligibility/account/policychangeaction. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution."
     },
     {
       "id": "splunk-enterprise-security-8-docs",
@@ -58844,7 +58873,7 @@
       "authority_class": 2,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-29",
+      "last_checked": "2026-09-30",
       "supported_exams": [
         "SPLK-5001",
         "SPLUNK-CORE-USER",
@@ -58856,7 +58885,7 @@
         "SPLUNK-CORE-CONSULTANT",
         "SPLUNK-O11Y-METRICS-USER"
       ],
-      "notes": "Official tutorial channel named by the blueprint, including the two Introduction to Security Domain videos. Select current playlists by objective gap. September 29 SPLK-5001 deep review: Title/footer only, 176 characters. No playback or complete playlist review; two blueprint-named videos remain optional learning resources. See docs/research/2026-09-29-splk-5001-deep-review.md No live infrastructure execution."
+      "notes": "Official tutorial channel named by the blueprint, including the two Introduction to Security Domain videos. Select current playlists by objective gap. September 29 SPLK-5001 deep review: Title/footer only, 176 characters. No playback or complete playlist review; two blueprint-named videos remain optional learning resources. See docs/research/2026-09-29-splk-5001-deep-review.md No live infrastructure execution. September 30 SPLUNK-CORE-USER deep review: Fresh direct response was only176characters of page shell. Shell read; no video, playlist, duration or current catalog reviewed. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution."
     },
     {
       "id": "pluralsight-splunk-9-security-introduction",
@@ -61893,43 +61922,193 @@
       "notes": "Substantially broader than PCEI. Select 20–35 foundational hours and keep framework-heavy material as optional extension. September 30 PCEI-30-01 deep review: Directblocked. Indexedselectedpublicmetadata335–358 andopeningTOCthrough375(chapters1–3) read:correctHands-OnMLwithScikit-Learn,Keras,TensorFlow3rd,AurelienGeron,October2022,864pages,25h26mpublisherreadingestimate,intermediateadvanced. RemainingTOC375–524/bookinteriorunread;noaccount/subscription/purchase. Guidehourrangeauthorbudget,notcompletionpromise. See docs/research/2026-09-30-pcei-30-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"splunk-core-user-certification","title":"Splunk Core Certified User","url":"https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-user.html","publisher":"Splunk","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLUNK-CORE-USER"],"notes":"Canonical certification page for active status, entry level, prerequisite, item count, duration, price, Pearson delivery and blueprint link."
+      "id": "splunk-core-user-certification",
+      "title": "Splunk Core Certified User",
+      "url": "https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-user.html",
+      "publisher": "Splunk",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "SPLUNK-CORE-USER"
+      ],
+      "notes": "Canonical certification page for active status, entry level, prerequisite, item count, duration, price, Pearson delivery and blueprint link. September 30 SPLUNK-CORE-USER deep review: Complete indexed188line credential page read after directDNSerror. Entry-level optional60questions60minutes130USD/PearsonVUE/no prerequisites. No booking, account or unseen release-feed check. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"splunk-core-user-blueprint","title":"Splunk Core Certified User Test Blueprint","url":"https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-user.pdf","publisher":"Splunk","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLUNK-CORE-USER"],"notes":"Canonical three-page blueprint with eight weighted domains and detailed objectives."
+      "id": "splunk-core-user-blueprint",
+      "title": "Splunk Core Certified User Test Blueprint",
+      "url": "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-user.pdf",
+      "publisher": "Splunk",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "SPLUNK-CORE-USER"
+      ],
+      "notes": "Canonical three-page blueprint with eight weighted domains and detailed objectives. September 30 SPLUNK-CORE-USER deep review: Complete indexed three-page75line public PDF parsed text read:40objectives8groups5/8/3/4/3/7/5/5,weights5/22/20/15/15/12/6/5;60questions60minutesincluding3agreement,no prerequisite. Objective4.4literal tables versus actualtable command noted. Screenshot requests did not surface images; no visual-PDFinspection claim. Direct/monitorDNSerrors; historicalSep2snapshotretained,notnewhash. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"splunk-search-app-about","title":"About the Search App","url":"https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/use-the-search-app/about-the-search-app","publisher":"Splunk","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLUNK-CORE-USER"],"notes":"Current product documentation for Search and Reporting app navigation and behavior."
+      "id": "splunk-search-app-about",
+      "title": "About the Search App",
+      "url": "https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/use-the-search-app/about-the-search-app",
+      "publisher": "Splunk",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "SPLUNK-CORE-USER"
+      ],
+      "notes": "Current product documentation for Search and Reporting app navigation and behavior. September 30 SPLUNK-CORE-USER deep review: DirectDNSerror. Existing10.4reference retained; body not freshly read. UI/version/capability behavior requires next-pass verification and actuallab. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"splunk-dashboard-studio-create","title":"Create a Dashboard Studio Dashboard","url":"https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/dashboard-studio/10.4/create-a-dashboard-in-dashboard-studio","publisher":"Splunk","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLUNK-CORE-USER"],"notes":"Current dashboard-creation reference used for applied context beyond the blueprint's basic dashboard task."
+      "id": "splunk-dashboard-studio-create",
+      "title": "Create a Dashboard Studio Dashboard",
+      "url": "https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/dashboard-studio/10.4/create-a-dashboard-in-dashboard-studio",
+      "publisher": "Splunk",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "SPLUNK-CORE-USER"
+      ],
+      "notes": "Current dashboard-creation reference used for applied context beyond the blueprint's basic dashboard task. September 30 SPLUNK-CORE-USER deep review: DirectDNSerror. Existing10.4reference retained; body not freshly read, no dashboard created or framework migration attempted. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"splunk-create-edit-reports","title":"Create and Edit Reports","url":"https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/reporting-manual/10.4/report-management/create-and-edit-reports","publisher":"Splunk","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLUNK-CORE-USER"],"notes":"Current product documentation for saving, editing and governing reports."
+      "id": "splunk-create-edit-reports",
+      "title": "Create and Edit Reports",
+      "url": "https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/reporting-manual/10.4/report-management/create-and-edit-reports",
+      "publisher": "Splunk",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "SPLUNK-CORE-USER"
+      ],
+      "notes": "Current product documentation for saving, editing and governing reports. September 30 SPLUNK-CORE-USER deep review: DirectDNSerror. Existing10.4reference retained; body not freshly read, no savedreport or permissions test. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"splunk-define-csv-lookup","title":"Define a CSV Lookup in Splunk Web","url":"https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.4/use-lookups-in-splunk-web/define-a-csv-lookup-in-splunk-web","publisher":"Splunk","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLUNK-CORE-USER"],"notes":"Current reference for lookup-file upload and lookup-definition workflow."
+      "id": "splunk-define-csv-lookup",
+      "title": "Define a CSV Lookup in Splunk Web",
+      "url": "https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.4/use-lookups-in-splunk-web/define-a-csv-lookup-in-splunk-web",
+      "publisher": "Splunk",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "SPLUNK-CORE-USER"
+      ],
+      "notes": "Current reference for lookup-file upload and lookup-definition workflow. September 30 SPLUNK-CORE-USER deep review: DirectDNSerror. Existing10.4reference retained; body not freshly read. No CSVupload/definition/automaticlookup or command execution; retained explanation requires runtime boundary tests. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"splunk-search-tutorial-10","title":"Splunk Search Tutorial 10.0","url":"https://help.splunk.com/en/splunk-enterprise/search/search-tutorial/10.0/introduction/about-the-search-tutorial","publisher":"Splunk","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLUNK-CORE-USER"],"notes":"Official connected tutorial for search, lookups, reports, charts and dashboards; a lab environment may require an account or trial."
+      "id": "splunk-search-tutorial-10",
+      "title": "Splunk Search Tutorial 10.0",
+      "url": "https://help.splunk.com/en/splunk-enterprise/search/search-tutorial/10.0/introduction/about-the-search-tutorial",
+      "publisher": "Splunk",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "SPLUNK-CORE-USER"
+      ],
+      "notes": "Official connected tutorial for search, lookups, reports, charts and dashboards; a lab environment may require an account or trial. September 30 SPLUNK-CORE-USER deep review: Selected indexed substantive introduction575–620 read after directDNSerror. Specificisolateddataset/sequentialparts,Freefeaturelimitations andPDFcopyhiddencharacterwarning. Linkedtutorialparts not read or executed;8–12hoursauthorbudget. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"splunk-platform-curated-learning","title":"Splunk Platform Curated Learning","url":"https://www.splunk.com/en_us/pdfs/training/platform-curated-learning.pdf","publisher":"Splunk","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLUNK-CORE-USER","SPLUNK-CORE-POWER-USER"],"notes":"Official 2024 course and duration map; use the live catalog to confirm current titles, access and runtimes."
+      "id": "splunk-platform-curated-learning",
+      "title": "Splunk Platform Curated Learning",
+      "url": "https://www.splunk.com/en_us/pdfs/training/platform-curated-learning.pdf",
+      "publisher": "Splunk",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "SPLUNK-CORE-USER",
+        "SPLUNK-CORE-POWER-USER"
+      ],
+      "notes": "Official 2024 course and duration map; use the live catalog to confirm current titles, access and runtimes. September 30 SPLUNK-CORE-USER deep review: Complete indexed7page119line2024PDFparsedtextread after directDNSerror. Six selected SearchExpert durations sum13h45historicalpublisherfigures. Fullpathhasmorecourses,notcomplete13h45pathclaim. Currentpricing/access/unseenlessonsunverified;noenrollment. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"splunk-search-manual-get-started","title":"Splunk Search Manual — Get Started with Search","url":"https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/search-overview/get-started-with-search","publisher":"Splunk","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLUNK-CORE-USER","SPLUNK-CORE-POWER-USER","SPLUNK-ADVANCED-POWER-USER"],"notes":"Current product documentation for search syntax, fields, time, jobs and result handling."
+      "id": "splunk-search-manual-get-started",
+      "title": "Splunk Search Manual — Get Started with Search",
+      "url": "https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/search-overview/get-started-with-search",
+      "publisher": "Splunk",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "SPLUNK-CORE-USER",
+        "SPLUNK-CORE-POWER-USER",
+        "SPLUNK-ADVANCED-POWER-USER"
+      ],
+      "notes": "Current product documentation for search syntax, fields, time, jobs and result handling. September 30 SPLUNK-CORE-USER deep review: DirectDNSerror. Existing10.4reference retained; body not freshly read. No fullmanual audit or productionqueryoptimization test. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"splunk-spl-search-reference","title":"Splunk SPL Search Reference","url":"https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.0/introduction/welcome-to-the-search-reference","publisher":"Splunk","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLUNK-CORE-USER","SPLUNK-ADVANCED-POWER-USER"],"notes":"Primary syntax and options reference for SPL commands."
+      "id": "splunk-spl-search-reference",
+      "title": "Splunk SPL Search Reference",
+      "url": "https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.0/introduction/welcome-to-the-search-reference",
+      "publisher": "Splunk",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "SPLUNK-CORE-USER",
+        "SPLUNK-ADVANCED-POWER-USER"
+      ],
+      "notes": "Primary syntax and options reference for SPL commands. September 30 SPLUNK-CORE-USER deep review: Selected indexed substantive499–546 introduction read after directDNSerror; catalog/syntax/commandcategory links,notwholemanual. New specificsort/dedup readings separately recorded. ClassicSPL distinctSPL2. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"splunk-lantern","title":"Splunk Lantern","url":"https://lantern.splunk.com/","publisher":"Splunk","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLUNK-CORE-USER","SPLUNK-CORE-POWER-USER","SPLUNK-ADVANCED-POWER-USER","SPLUNK-CLOUD-ADMIN"],"notes":"Public Splunk expert and community-reviewed use cases for applied reinforcement."
+      "id": "splunk-lantern",
+      "title": "Splunk Lantern",
+      "url": "https://lantern.splunk.com/",
+      "publisher": "Splunk",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "SPLUNK-CORE-USER",
+        "SPLUNK-CORE-POWER-USER",
+        "SPLUNK-ADVANCED-POWER-USER",
+        "SPLUNK-CLOUD-ADMIN"
+      ],
+      "notes": "Public Splunk expert and community-reviewed use cases for applied reinforcement. September 30 SPLUNK-CORE-USER deep review: Complete fresh16880character landing/index read. Featured usecase summaries andnavigationonly; linkedarticles/benchmarksnotreviewed. Hoursauthorbudget,notcoursecompletion. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-exploring-splunk","title":"Exploring Splunk","url":"https://www.oreilly.com/library/view/exploring-splunk/9781977339805/","publisher":"O'Reilly","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["SPLUNK-CORE-USER"],"notes":"Older product-era fundamentals resource; verify user interface and syntax in current official documentation."
+      "id": "oreilly-exploring-splunk",
+      "title": "Exploring Splunk",
+      "url": "https://www.oreilly.com/library/view/exploring-splunk/9781977339805/",
+      "publisher": "O'Reilly",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "SPLUNK-CORE-USER"
+      ],
+      "notes": "Older product-era fundamentals resource; verify user interface and syntax in current official documentation. September 30 SPLUNK-CORE-USER deep review: Directblocked and indexedcachemiss. Exacttitle/edition/format/ISBNassociation/currentdurationunverified. Reclassified historicallead only; no paidinteriororaccount. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-search-splunk-core-user","title":"Udemy Splunk Core Certified User Search","url":"https://www.udemy.com/courses/search/?q=Splunk%20Core%20Certified%20User","publisher":"Udemy marketplace","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["SPLUNK-CORE-USER"],"notes":"Changing marketplace search. Check update date, instructor, active blueprint and hands-on coverage; exclude recalled-question products."
+      "id": "udemy-search-splunk-core-user",
+      "title": "Udemy Splunk Core Certified User Search",
+      "url": "https://www.udemy.com/courses/search/?q=Splunk%20Core%20Certified%20User",
+      "publisher": "Udemy marketplace",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-30",
+      "supported_exams": [
+        "SPLUNK-CORE-USER"
+      ],
+      "notes": "Changing marketplace search. Check update date, instructor, active blueprint and hands-on coverage; exclude recalled-question products. September 30 SPLUNK-CORE-USER deep review: Directblocked. Marketplace search is discoveryonly,notreviewed specificcourse. No entitlement, instructor, update date, video or protectedquestionsverified. See docs/research/2026-09-30-splunk-core-user-deep-review.md No live infrastructure execution."
     },
     {
       "id":"splunk-core-power-user-certification","title":"Splunk Core Certified Power User","url":"https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-power-user.html","publisher":"Splunk","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLUNK-CORE-POWER-USER"],"notes":"Canonical status, entry-level contract, item count, duration, price, Pearson delivery and blueprint link."

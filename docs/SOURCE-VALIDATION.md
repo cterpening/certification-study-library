@@ -2361,6 +2361,8 @@ dump or copied course content is used. Blueprint SHA-256:
 
 ## SPLUNK-CORE-USER coverage record
 
+The September 30 [deep review](research/2026-09-30-splunk-core-user-deep-review.md) maps 40 detailed objectives. Mapped40objectives and reviewed40answers; clarifiedsort-before-dedup,missingkeys,sortcap andoriginalthree-eventpaperpredictions. EightSplunklabs explicitlyunexecuted because runtime/endpoint unavailable. Historicalcoursehours andunverifiedcommerciallisting qualified; UIpages,objectivehash,fullruntime andhumanreview remainnext-passwork. Current guide citations: 17 registered, 2 reachable, 2 access-blocked, 13 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Splunk Basics (5%); Basic Searching (22%); Using Fields in Searches (20%); Search Language Fundamentals (15%); Using Basic Transforming Commands (15%); Creating Reports and Dashboards (12%); Creating and Using Lookups (6%); Creating Scheduled Reports and Alerts (5%)

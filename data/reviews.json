@@ -10602,13 +10602,8 @@
         "links_and_local_references_valid": true,
         "exam_integrity_policy_passed": true
       },
-      "link_evidence": {
-        "unique_external_links": 29,
-        "reachable": 15,
-        "access_blocked": 14,
-        "missing_or_error": 0
-      },
-      "notes": "Mapped all 24 public PDF objectives and clarified renewal eligibility, summary completeness, CIM semantics, entity boundaries and version-specific detection outputs. Added 40 answer notes, three worked scenarios, eight proposed activities, 49 executed Python checks and two unexecuted SPL examples. Course-stage names, account/lab access and human review remain pending. See docs/research/2026-09-29-splk-5001-deep-review.md"
+      "link_evidence": {"unique_external_links":29,"reachable":14,"access_blocked":14,"missing_or_error":1},
+      "notes": "Mapped all 24 public PDF objectives and clarified renewal eligibility, summary completeness, CIM semantics, entity boundaries and version-specific detection outputs. Added 40 answer notes, three worked scenarios, eight proposed activities, 49 executed Python checks and two unexecuted SPL examples. Course-stage names, account/lab access and human review remain pending. See docs/research/2026-09-29-splk-5001-deep-review.md September 30 shared-source health counts refreshed after the Core User pass; original content-review date, objective hash and outcome are unchanged. DNS retrieval errors do not establish dead URLs."
     },
     {
       "id": "cisa-2026-09-29-source-validation",
@@ -12352,27 +12347,102 @@
       "notes": "Mapped33objectives separately from36examitems and expanded20answers. Three exact original files pass21methods/20observations pernormal/optimizedmode for synthetic cleaning,training-only scaling,distances,metrics,NumPyaxes andone-neuron gradients. Fourthpandas/Matplotlibfile syntax/lintonly. Practice-release conflicts,fullPDF,framework/model/plot exercises,full12labs andhumanreview remainpending. See docs/research/2026-09-30-pcei-30-01-deep-review.md"
     },
     {
-      "id":"splunk-core-user-2026-09-02-source-validation",
-      "exam_code":"SPLUNK-CORE-USER",
-      "guide_path":"guides/SPLUNK-CORE-USER-splunk-core-certified-user.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-02",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/splunk-core-user-official-objectives.txt",
-      "blueprint_snapshot_sha256":"12b7fe480f890afd5f9bab87a17cd67eb1952d32720b92f86d57b9e5fae42c77",
-      "objective_coverage":[
-        {"objective_group":"Splunk Basics (5%)","guide_sections":["Section 1","Integrated scenarios"]},
-        {"objective_group":"Basic Searching (22%)","guide_sections":["Section 2","Integrated scenarios"]},
-        {"objective_group":"Using Fields in Searches (20%)","guide_sections":["Section 3","Integrated scenarios"]},
-        {"objective_group":"Search Language Fundamentals (15%)","guide_sections":["Section 4","Integrated scenarios"]},
-        {"objective_group":"Using Basic Transforming Commands (15%)","guide_sections":["Section 5","Integrated scenarios"]},
-        {"objective_group":"Creating Reports and Dashboards (12%)","guide_sections":["Section 6","Integrated scenarios"]},
-        {"objective_group":"Creating and Using Lookups (6%)","guide_sections":["Section 7","Integrated scenarios"]},
-        {"objective_group":"Creating Scheduled Reports and Alerts (5%)","guide_sections":["Section 8","Integrated scenarios"]}
+      "id": "splunk-core-user-2026-09-30-source-validation",
+      "exam_code": "SPLUNK-CORE-USER",
+      "guide_path": "guides/SPLUNK-CORE-USER-splunk-core-certified-user.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-30",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/splunk-core-user-official-objectives.txt",
+      "blueprint_snapshot_sha256": "12b7fe480f890afd5f9bab87a17cd67eb1952d32720b92f86d57b9e5fae42c77",
+      "objective_coverage": [
+        {
+          "objective_group": "Splunk Basics — 5%",
+          "guide_sections": [
+            "1. Splunk basics — 5%",
+            "Hands-on labs",
+            "Answer key",
+            "Lab evidence and next-pass fixes"
+          ]
+        },
+        {
+          "objective_group": "Basic Searching — 22%",
+          "guide_sections": [
+            "2. Basic searching — 22%",
+            "Hands-on labs",
+            "Answer key",
+            "Lab evidence and next-pass fixes"
+          ]
+        },
+        {
+          "objective_group": "Using Fields in Searches — 20%",
+          "guide_sections": [
+            "3. Using fields in searches — 20%",
+            "Hands-on labs",
+            "Answer key",
+            "Lab evidence and next-pass fixes"
+          ]
+        },
+        {
+          "objective_group": "Search Language Fundamentals — 15%",
+          "guide_sections": [
+            "4. Search language fundamentals — 15%",
+            "Hands-on labs",
+            "Answer key",
+            "Lab evidence and next-pass fixes"
+          ]
+        },
+        {
+          "objective_group": "Using Basic Transforming Commands — 15%",
+          "guide_sections": [
+            "5. Basic transforming commands — 15%",
+            "Hands-on labs",
+            "Answer key",
+            "Lab evidence and next-pass fixes"
+          ]
+        },
+        {
+          "objective_group": "Creating Reports and Dashboards — 12%",
+          "guide_sections": [
+            "6. Reports and dashboards — 12%",
+            "Hands-on labs",
+            "Answer key",
+            "Lab evidence and next-pass fixes"
+          ]
+        },
+        {
+          "objective_group": "Creating and Using Lookups — 6%",
+          "guide_sections": [
+            "7. Lookups — 6%",
+            "Hands-on labs",
+            "Answer key",
+            "Lab evidence and next-pass fixes"
+          ]
+        },
+        {
+          "objective_group": "Creating Scheduled Reports and Alerts — 5%",
+          "guide_sections": [
+            "8. Scheduled reports and alerts — 5%",
+            "Hands-on labs",
+            "Answer key",
+            "Lab evidence and next-pass fixes"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":14,"reachable":5,"access_blocked":9,"missing_or_error":0},
-      "notes":"All eight blueprint domains are mapped from user-interface orientation through scoped SPL, fields and transformations to reusable reports, dashboards, lookups, schedules and alerts. Three connected scenarios, safe labs and original checks require observable evidence. Splunk Help, O'Reilly and Udemy endpoints were automation-blocked rather than missing; the official certification and blueprint pages were reachable. No recalled/live item, answer dump or copied course question is used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 17,
+        "reachable": 2,
+        "access_blocked": 2,
+        "missing_or_error": 13
+      },
+      "notes": "Mapped40objectives and reviewed40answers; clarifiedsort-before-dedup,missingkeys,sortcap andoriginalthree-eventpaperpredictions. EightSplunklabs explicitlyunexecuted because runtime/endpoint unavailable. Historicalcoursehours andunverifiedcommerciallisting qualified; UIpages,objectivehash,fullruntime andhumanreview remainnext-passwork. See docs/research/2026-09-30-splunk-core-user-deep-review.md"
     },
     {
       "id":"splunk-core-power-user-2026-09-02-source-validation",
@@ -12396,8 +12466,8 @@
         {"objective_group":"Common Information Model Add-On (10%)","guide_sections":["Section 10","Integrated scenarios"]}
       ],
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":14,"reachable":6,"access_blocked":8,"missing_or_error":0},
-      "notes":"All ten blueprint domains are mapped through explainable SPL and governed knowledge-object practice. Integrated scenarios, safe labs and original checks require raw-versus-normalized and transaction-versus-stats comparisons. Eight endpoints were automation-blocked rather than missing. No recalled/live item, answer dump or copied course question is used."
+      "link_evidence":{"unique_external_links":14,"reachable":5,"access_blocked":7,"missing_or_error":2},
+      "notes":"All ten blueprint domains are mapped through explainable SPL and governed knowledge-object practice. Integrated scenarios, safe labs and original checks require raw-versus-normalized and transaction-versus-stats comparisons. Eight endpoints were automation-blocked rather than missing. No recalled/live item, answer dump or copied course question is used. September 30 shared-source health counts refreshed after the Core User pass; original content-review date, objective hash and outcome are unchanged. DNS retrieval errors do not establish dead URLs."
     },
     {
       "id": "splunk-advanced-power-user-2026-09-02-source-validation",
@@ -12571,13 +12641,8 @@
         "links_and_local_references_valid": true,
         "exam_integrity_policy_passed": true
       },
-      "link_evidence": {
-        "unique_external_links": 13,
-        "reachable": 5,
-        "access_blocked": 8,
-        "missing_or_error": 0
-      },
-      "notes": "All 22 public objective groups are mapped through applied explanations, integrated scenarios, safe labs and original readiness checks. Access-blocked endpoints are recorded separately from broken links. No recalled/live item, answer dump or copied course question is used."
+      "link_evidence": {"unique_external_links":13,"reachable":5,"access_blocked":6,"missing_or_error":2},
+      "notes": "All 22 public objective groups are mapped through applied explanations, integrated scenarios, safe labs and original readiness checks. Access-blocked endpoints are recorded separately from broken links. No recalled/live item, answer dump or copied course question is used. September 30 shared-source health counts refreshed after the Core User pass; original content-review date, objective hash and outcome are unchanged. DNS retrieval errors do not establish dead URLs."
     },
     {
       "id": "splunk-cloud-admin-2026-09-02-source-validation",

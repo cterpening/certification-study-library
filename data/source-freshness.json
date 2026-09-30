@@ -4,6 +4,159 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-30-splunkcoreuser-deep-review",
+      "title": "SPLUNK-CORE-USER complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-30",
+      "completed_on": "2026-09-30",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SPLUNK-CORE-USER"
+      ],
+      "results": [
+        {
+          "exam_code": "SPLUNK-CORE-USER",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLUNK-CORE-USER-splunk-core-certified-user.md",
+          "baseline_sha256": "01669e06b26e0cc281d8b316ed245c40df0cbe41b193efc22c0afc72d6c5a113",
+          "scanned_on": "2026-09-30",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Completeindexedcredential/blueprint andselectedhandbookread.40objectivesmapped,historicalsnapshotretained,manualconfirmationseparatefromfailedDNSmonitor."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected classic SPL sort/dedup and tutorial/reference introductions support the bounded pipeline repair. Existing UI/reporting/lookup bodies were not freshly read; those limits are recorded under the gap review. No engine execution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Nochangefoundincompletecredential/blueprintread. Nounseenreleasefeed/globalabsenceclaim;classicSPLretained."
+            },
+            "catalog_comparison": {
+              "status": "blocked",
+              "notes": "Complete2024curatedPDF/Lanternlanding andselectedtutorialintroductionread;currenttrainingavailability,YouTubecontent,UdemycourseandOReillyexactmetadataunverified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Blueprinttablesversuscommandtable explained. Eightlabs,missingruntime,unavailableUIpages,fullhandbook andhumanreviewexplicitnextpass."
+            }
+          },
+          "findings": [
+            {
+              "id": "splunkcoreuser-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Blueprint word differs from command name",
+              "url": "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-user.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SPLUNK-CORE-USER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Objective4.4 says tables; classicSPL command is table.",
+              "recommendation": "Preserve source wording and explain actual command; map40objectives without claiming a new automated hash.",
+              "disposition": "applied",
+              "source_id": "splunk-core-user-blueprint",
+              "resolution": "Preserve source wording and explain actual command; map40objectives without claiming a new automated hash."
+            },
+            {
+              "id": "splunkcoreuser-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Sorting after dedup cannot choose the latest representative",
+              "url": "https://help.splunk.com/en/splunk-enterprise/search/spl-search-reference/10.2/search-commands/sort",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SPLUNK-CORE-USER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Existingpipeline deduplicated before finalsort; documentedinputorder determines survivor.",
+              "recommendation": "Place explicitboundedtimesort beforededup; discuss10000defaultcap,sort0cost andties.",
+              "disposition": "applied",
+              "source_id": "splunk-sort-10-2",
+              "resolution": "Place explicitboundedtimesort beforededup; discuss10000defaultcap,sort0cost andties."
+            },
+            {
+              "id": "splunkcoreuser-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Missing client keys needed an explicit boundary",
+              "url": "https://help.splunk.com/en/splunk-cloud-platform/spl-search-reference/10.4.2604/search-commands/dedup",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SPLUNK-CORE-USER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Defaultdedupdropsnullkeys;keepemptykeepsallmissing.",
+              "recommendation": "Addoriginalthreeeventpaperworksheet andcounterexamples; labelpredictionsunexecuted.",
+              "disposition": "applied",
+              "source_id": "splunk-dedup-10-4-2604",
+              "resolution": "Addoriginalthreeeventpaperworksheet andcounterexamples; labelpredictionsunexecuted."
+            },
+            {
+              "id": "splunkcoreuser-deep-4",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Commercial resource identity could not be reconfirmed",
+              "url": "https://www.oreilly.com/library/view/exploring-splunk/9781977339805/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SPLUNK-CORE-USER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Directblocked/indexedcachemiss prevented exactedition/format/currentdurationconfirmation.",
+              "recommendation": "Keep the historical lead visibly unverified; confirm exact title, edition, format and current availability on a later pass.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "splunkcoreuser-deep-5",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Full Splunk labs could not run",
+              "url": "https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/use-the-search-app/about-the-search-app",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SPLUNK-CORE-USER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "NoSplunkruntimeorapprovedendpointavailable;UIpagesdirectDNSerrors.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped40objectives and reviewed40answers; clarifiedsort-before-dedup,missingkeys,sortcap andoriginalthree-eventpaperpredictions. EightSplunklabs explicitlyunexecuted because runtime/endpoint unavailable. Historicalcoursehours andunverifiedcommerciallisting qualified; UIpages,objectivehash,fullruntime andhumanreview remainnext-passwork. Same-context AI review; human review pending. See docs/research/2026-09-30-splunk-core-user-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 3,
+        "no_action_findings": 0,
+        "blocked_findings": 2
+      }
+    },
+    {
       "id": "freshness-2026-09-30-pcei3001-deep-review",
       "title": "PCEI-30-01 complete guide and learning-content review",
       "rubric_version": 1,

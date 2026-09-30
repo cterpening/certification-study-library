@@ -3881,6 +3881,29 @@ The Google prerequisites page expects Python and basic math and names NumPy/pand
 
 See the [dated deep-review report](research/2026-09-30-pcei-30-01-deep-review.md) for exact source-reading boundaries, executable receipts and remaining blockers. Independent human review, full PDF reading, the optional pandas/Matplotlib exercise, external model trials and completion of the twelve labs remain pending.
 
+### SPLUNK-CORE-USER — Splunk Core Certified User
+
+Resource details from the [SPLUNK-CORE-USER guide](../guides/SPLUNK-CORE-USER-splunk-core-certified-user.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, use documentation to resolve specific behavior, and spend at least as much time searching and building objects in a lab as watching. Commercial resources are supplementary; reconcile them with the current official blueprint and product version.
+
+All hour ranges below are author planning budgets, not measured completion times. The course-sheet durations are publisher figures from **2024**, not a fresh price/access guarantee. The indexed seven-page sheet was read; no course was enrolled in or completed. Lantern's landing/index was read but its linked articles were not. The YouTube response exposed only a short page shell; no video or current playlist was reviewed. Udemy and the O'Reilly listing could not be verified in this pass.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Official Core User blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-user.pdf) | Free canonical scope | 1–2 hr initial mapping and final review | Objective checklist, weights, contract |
+| [Official Core User page](https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-user.html) | Free | 20–40 min before booking | Current status, delivery, price, links |
+| [Splunk Search Tutorial 10.0](https://help.splunk.com/en/splunk-enterprise/search/search-tutorial/10.0/introduction/about-the-search-tutorial) | Free docs; trial/account may be needed for labs | 8–12 hr with all seven parts and variation testing | Connected search, lookup, report, chart, and dashboard lab |
+| [Official Search Expert course set](https://www.splunk.com/en_us/pdfs/training/platform-curated-learning.pdf) | Mixed free/paid; 2024 duration sheet, so verify live catalog | About 13h45 for free Intro, Fields, Scheduling, Visualizations, Time, and Statistical Processing; add 3 hr paid lookup class if useful | Blueprint-aligned modules and time planning |
+| [Splunk Search Manual 10.4](https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/search-overview/get-started-with-search) | Free current product docs | 8–15 hr selected topics | Search UI, retrieval, time, fields, jobs, optimization |
+| [Splunk SPL Search Reference](https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.0/introduction/welcome-to-the-search-reference) | Free reference | 3–6 hr focused study plus ongoing lookup | Exact command syntax/options |
+| [Splunk How-To YouTube channel](https://www.youtube.com/@SplunkHowTo) | Free official videos; catalog changes | 3–6 hr selected current search/report/dashboard videos plus lab recreation | Visual walkthroughs; verify UI against your version |
+| [Splunk Lantern](https://lantern.splunk.com/) | Free official/community-reviewed use cases | 4–8 hr selected search/dashboard articles | Applied patterns after fundamentals |
+| [Previously recorded O'Reilly Exploring Splunk listing](https://www.oreilly.com/library/view/exploring-splunk/9781977339805/) | Access and exact edition/format unverified this pass | No current duration verified | Historical lead only; confirm the title, format and contents before choosing it |
+| [Udemy Splunk Core Certified User practice/course search](https://www.udemy.com/courses/search/?q=Splunk%20Core%20Certified%20User) | Paid marketplace; offerings change | Select 6–12 hr only after checking update date, active blueprint, instructor, and hands-on content | Optional alternate instruction, never recalled questions |
+
+No exact current MeasureUp, Whizlabs, or Pluralsight Core User practice product was verified. Splunk's blueprint recommends official documentation, the Splunk How-To channel, and hands-on experience. Reject any source claiming live, recalled, exact-match, or guaranteed-pass questions.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

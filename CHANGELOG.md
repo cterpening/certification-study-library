@@ -1,5 +1,7 @@
 # Changelog
 
+- September 30, 2026: [SPLUNK-CORE-USER deep review](docs/research/2026-09-30-splunk-core-user-deep-review.md): Mapped 40 objectives; clarified command order, missing keys and sort limits with original paper predictions. Qualified historical training and unverified book metadata; documented all eight unexecuted labs and next-pass fixes.
+
 - September 30, 2026: Added source-backed certification lifecycle tracking and a fourth `aliases` column in the LMS query export. AB-100 retains its former name alongside the current Expert credential name. The dated page distinguishes effective updates, announced future updates, release stages and inventory checks; unconfirmed dates remain explicit gaps.
 
 - September 30, 2026: [PCEI-30-01 deep review](docs/research/2026-09-30-pcei-30-01-deep-review.md): Mapped33objectives separately from36items and expanded20answers; exact Python/NumPy workbook passes21methods and20observations per mode. Added training-only scaling,metric/axis/gradient evidence; recorded practice-release conflicts and unexecuted optional frameworks,plots,model trials andhumanreview.

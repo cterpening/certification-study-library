@@ -6,20 +6,20 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-09-30
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-09-30
 ---
 
 # Splunk Core Certified User Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, three-page public test blueprint, Splunk Enterprise 10.4 search/knowledge/reporting documentation, public training catalog, and selected learning resources were checked September 2, 2026. This guide contains original explanations and questions, not exam items. The [official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-user.html) and [test blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-user.pdf) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The September 30, 2026 best-effort review read the complete indexed credential page and three-page blueprint, mapped all 40 objectives, and checked selected public documentation. Direct retrieval and the objective monitor encountered DNS errors; the historical objective snapshot is retained. The [official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-user.html) and [test blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-user.pdf) are authoritative. Source-reading limits and unexecuted labs are explicit below; these original explanations and checks are not exam items.
 
 **Current baseline:** Splunk Basics (5%); Basic Searching (22%); Using Fields in Searches (20%); Search Language Fundamentals (15%); Using Basic Transforming Commands (15%); Creating Reports and Dashboards (12%); Creating and Using Lookups (6%); Creating Scheduled Reports and Alerts (5%). The blueprint says related topics may appear and may change without notice.<br>
 **Exam contract:** entry-level; 60 multiple-choice questions; 60 total minutes including three minutes for the exam agreement; USD 130 per attempt; Pearson VUE delivery<br>
 **Prerequisite contract:** none. This is an optional entry point intended for candidates with little or no Splunk experience.<br>
-**Credential lifecycle:** Splunk's current public certification FAQ describes active certifications as valid for three years from the date the highest-level certification exam is passed. Recheck renewal, retake, identity, regional pricing, and delivery rules in the live candidate materials.<br>
-**Upcoming change:** no retirement, replacement, or new Core User blueprint was announced when checked. The current documentation describes both SPL and newer SPL2 availability, but this blueprint names the classic SPL command pipeline (`table`, `rename`, `fields`, `dedup`, `sort`, `top`, `rare`, `stats`, `lookup`). Practice that contract unless Splunk publishes a replacement blueprint.<br>
+**Credential lifecycle — VERIFY CURRENT:** The [candidate handbook](https://www.splunk.com/en_us/pdfs/training/splunk-certification-candidate-handbook.pdf), selected retake and renewal sections, describes a three-year cycle and requires a qualifying renewal retake in the final year. A previously passed exam cannot simply be retaken outside approved recertification. Confirm your own expiration and eligible path before booking; this review did not inspect an account or all handbook sections.<br>
+**Upcoming change:** No retirement, replacement or new Core User blueprint was found in the credential page and blueprint read on September 30. This is a bounded source check, not proof that no announcement exists elsewhere. Practice classic SPL: the blueprint's objective 4.4 literally says “tables,” while the command is `table`; preserve that source wording when comparing snapshots. SPL2 is a separate syntax contract.<br>
 
 ## How to use this guide
 
@@ -133,13 +133,29 @@ Specify the permitted, relevant index rather than relying on role defaults. Narr
 
 ```spl
 index=web status>=400 earliest=-1h
+| sort 0 - _time
 | dedup clientip
 | rename clientip AS client
 | table _time client status uri_path
-| sort - _time
 ```
 
 Search order changes meaning: sorting before `dedup` deliberately chooses which representative survives. The [SPL Search Reference](https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.0/introduction/welcome-to-the-search-reference) is authoritative for command syntax and limitations.
+
+Here the intended representative is the latest error event per populated client IP. A final sort alone cannot repair an earlier selection. Tied timestamps need an agreed secondary key if reproducibility matters. This is a source-checked example, not an executed Splunk search.
+
+The [SPL sort reference, version 10.2](https://help.splunk.com/en/splunk-enterprise/search/spl-search-reference/10.2/search-commands/sort) documents a default cap of 10,000 results. `sort 0` removes that cap but can increase resource use; use it only on a deliberately bounded lab search. The [SPL dedup reference, Cloud 10.4.2604](https://help.splunk.com/en/splunk-cloud-platform/spl-search-reference/10.4.2604/search-commands/dedup) documents that missing key fields are dropped by default. `keepempty=true` retains every event with a missing key; it does not collapse all missing clients into one representative. These are the specific document versions checked, not a requirement to upgrade your lab.
+
+### Predict the result before running it
+
+This original worksheet uses three events with distinct timestamps. The middle row has no `clientip` field, represented by an em dash here. Assume all three are within the same permitted search window and all have an error status.
+
+| Event | `_time` order | `clientip` | `status` |
+|---|---:|---|---:|
+| A | 1 (oldest) | 192.0.2.10 | 500 |
+| B | 2 | — | 503 |
+| C | 3 (newest) | 192.0.2.10 | 404 |
+
+For descending time followed by `dedup clientip`, the predicted survivor is C. Adding `keepempty=true` predicts C and B. Sorting ascending before dedup predicts A; sorting that output descending afterwards still cannot restore C. Deduplicating by client answers a representative-event question, not “how many errors occurred?” The original event count remains three. These are paper predictions from the documented contracts; no SPL engine result is claimed.
 
 ## 5. Basic transforming commands — 15%
 
@@ -153,7 +169,7 @@ index=web earliest=-24h
 | sort - requests
 ```
 
-An aggregate destroys event-level detail from the pipeline. Preserve/drill back to a raw-event search when investigation requires evidence. Give calculated columns clear names and verify units.
+An aggregate destroys event-level detail from the pipeline. Preserve/drill back to a raw-event search when investigation requires evidence. Give calculated columns clear names and verify units. In the worksheet above, a count of events is three, while a count of populated client values is two. A single client representative cannot answer either count without returning to the original events. This arithmetic is a prediction, not a recorded Splunk execution.
 
 > **Related item:** A percentage is only as representative as its denominator. Time window, source coverage, late data, permissions, and deduplication can all change the apparent top/rare distribution.
 
@@ -215,6 +231,19 @@ Turn an error report into a schedule and a test alert. Deliberately model schedu
 6. **Transforming workbook:** use top, rare, and at least eight stats functions with and without `by`; cover missing fields, empty results, units, and misleading denominators.
 7. **Report/dashboard build:** create/edit statistical and chart reports, add one to a purposeful dashboard, set minimal permissions, and verify time behavior and underlying events.
 8. **Lookup/schedule/alert build:** create the CSV definition and automatic/explicit enrichments, schedule a report, create a throttled alert, trigger it synthetically, and inspect history/action evidence.
+
+## Lab evidence and next-pass fixes
+
+**September 30 execution status: none of the eight proposed Splunk labs was executed in this review.** No Splunk executable or approved endpoint was available. Source review and the worksheet predictions do not validate indexing, SPL parsing, extraction, time-zone behavior, dashboard permissions, scheduling or alert delivery.
+
+| Work to reproduce | Evidence still needed | Useful contribution |
+|---|---|---|
+| Labs 1–4: navigation, searching, time and jobs | Product/build, app/role, safe fixture, exact time range, result/job observations | Record missing menus, errors and any version-specific correction |
+| Labs 5–6: command pipelines and transformations | Exact SPL, input rows, observed output, missing/multivalue and sort-limit cases | Compare actual output with a written prediction; include failures |
+| Lab 7: reports and dashboards | Framework, saved report/panel, time behavior and tested access | Describe the smallest working reproduction and permissions |
+| Lab 8: lookup, schedule and alert | Definition/file, matched/unmatched rows, schedule window, fired-instance and action evidence | Distinguish a configured object from a successful run or delivery |
+
+**More research needed — next pass:** refresh the unavailable 10.4 UI/reporting/lookup pages, confirm current training access and the unverified commercial book listing, rerun the objective monitor, and execute the eight labs in an approved environment. The [Search Tutorial introduction](https://help.splunk.com/en/splunk-enterprise/search/search-tutorial/10.0/introduction/about-the-search-tutorial) explains its separate tutorial dataset and sequential parts; linked lessons were not completed here. Keep error text, expected versus observed results and product version with community fixes. Independent human content review remains pending.
 
 ## Original readiness checks
 
@@ -281,11 +310,11 @@ Turn an error report into a schedule and a test alert. Deliberately model schedu
 18. It narrows work and avoids relying on role defaults.
 19. Later commands see aggregate rows rather than original events.
 20. The field name visible to later commands/output, not source data at rest.
-21. Dedup retains representatives from its input order.
-22. It can silently discard distinct evidence sharing a selected key.
+21. Dedup retains representatives from its input order. For the worksheet, descending time first keeps C; ascending first keeps A. Sorting afterwards only reorders surviving rows.
+22. It can silently discard distinct evidence sharing a selected key. Missing keys are dropped by default; retaining them needs a deliberate option. A representative is not an event count.
 23. Most and least frequent values with counts/percentages.
 24. Legitimate categories can be uncommon; context and source completeness determine meaning.
-25. The first counts rows; the second counts rows where that field has a value.
+25. The first counts rows; the second counts rows where that field has a value. The worksheet predicts three events versus two populated client values, before deduplication.
 26. Creates one aggregate group per distinct listed field combination.
 27. Search, time behavior, title/description, app/owner/permissions, and display settings as needed.
 28. From the question and result shape, with honest scales/labels.
@@ -295,10 +324,10 @@ Turn an error report into a schedule and a test alert. Deliberately model schedu
 32. OUTPUT may overwrite; OUTPUTNEW adds only where the destination is absent.
 33. Enriches matching events at search time without an explicit lookup command.
 34. Matched, unmatched, duplicate, blank, case/format, and stale-reference rows.
-35. One controls execution frequency; the other controls which event interval each execution searches.
+35. One controls execution frequency; the other controls which event interval each execution searches. An hourly run with a 15-minute window leaves a 45-minute gap between windows; a two-hour window overlaps the preceding run by one hour. Neither choice guarantees complete data arrival.
 36. To allow expected ingestion delay while keeping intentional coverage.
 37. The alert search result/result count against configured criteria.
-38. Scheduled/run time, searched interval, results, trigger reason, and action outcome.
+38. Scheduled/run time, searched interval, results, trigger reason, and action outcome. A saved alert definition, a fired instance and a delivered action are different pieces of evidence; this review observed none of them in a Splunk runtime.
 39. None; it is an optional entry point.
 40. Active blueprint, version, duration/agreement, price, delivery, retake/renewal, identity, and regional rules.
 
@@ -319,6 +348,8 @@ Turn an error report into a schedule and a test alert. Deliberately model schedu
 
 This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, use documentation to resolve specific behavior, and spend at least as much time searching and building objects in a lab as watching. Commercial resources are supplementary; reconcile them with the current official blueprint and product version.
 
+All hour ranges below are author planning budgets, not measured completion times. The course-sheet durations are publisher figures from **2024**, not a fresh price/access guarantee. The indexed seven-page sheet was read; no course was enrolled in or completed. Lantern's landing/index was read but its linked articles were not. The YouTube response exposed only a short page shell; no video or current playlist was reviewed. Udemy and the O'Reilly listing could not be verified in this pass.
+
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
 | [Official Core User blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-user.pdf) | Free canonical scope | 1–2 hr initial mapping and final review | Objective checklist, weights, contract |
@@ -329,7 +360,7 @@ This is not a complete list, and it is not meant to be consumed in full. Pick on
 | [Splunk SPL Search Reference](https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.0/introduction/welcome-to-the-search-reference) | Free reference | 3–6 hr focused study plus ongoing lookup | Exact command syntax/options |
 | [Splunk How-To YouTube channel](https://www.youtube.com/@SplunkHowTo) | Free official videos; catalog changes | 3–6 hr selected current search/report/dashboard videos plus lab recreation | Visual walkthroughs; verify UI against your version |
 | [Splunk Lantern](https://lantern.splunk.com/) | Free official/community-reviewed use cases | 4–8 hr selected search/dashboard articles | Applied patterns after fundamentals |
-| [O'Reilly Exploring Splunk](https://www.oreilly.com/library/view/exploring-splunk/9781977339805/) | Subscription; older product-era audiobook/book | 4–8 hr selected fundamentals; verify UI/syntax in current Splunk docs | Second explanation, not blueprint authority |
+| [Previously recorded O'Reilly Exploring Splunk listing](https://www.oreilly.com/library/view/exploring-splunk/9781977339805/) | Access and exact edition/format unverified this pass | No current duration verified | Historical lead only; confirm the title, format and contents before choosing it |
 | [Udemy Splunk Core Certified User practice/course search](https://www.udemy.com/courses/search/?q=Splunk%20Core%20Certified%20User) | Paid marketplace; offerings change | Select 6–12 hr only after checking update date, active blueprint, instructor, and hands-on content | Optional alternate instruction, never recalled questions |
 
 No exact current MeasureUp, Whizlabs, or Pluralsight Core User practice product was verified. Splunk's blueprint recommends official documentation, the Splunk How-To channel, and hands-on experience. Reject any source claiming live, recalled, exact-match, or guaranteed-pass questions.
