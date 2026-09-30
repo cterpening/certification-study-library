@@ -2147,6 +2147,8 @@ copied course content is used. Blueprint SHA-256:
 
 ## CLP-12-01 coverage record
 
+The September 29 [deep review](research/2026-09-29-clp-12-01-deep-review.md) maps 29 detailed objectives. Mapped all 29 objectives and expanded 30 answers. Replaced incomplete variadic and descriptor fragments with five exact original C11 programs. Seventeen GCC/Clang workbook runs passed, including 31 language, 11 descriptor and 69 framing checks, ten 1,000-item batches per queue run, exact GMP arithmetic, three optimized variants and four address/undefined sanitizer runs. Seven dialect/header probes had the expected outcomes. ThreadSanitizer crashes, source and booking conflicts, broader labs and human review remain explicit. Current guide citations: 34 registered, 12 reachable, 1 access-blocked, 21 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Applied Evolution of C (14.5%); Variadic Functions and Macros (9%); Low-Level I/O (13%); Memory and String Handling (16%); Process and Thread Management (9%); Numerical Types and Computations (11%); Network Socket Programming (13%); Specialized Considerations (14.5%)

@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [CLP-12-01 deep review](docs/research/2026-09-29-clp-12-01-deep-review.md): Mapped 29 objectives and expanded 30 answers; five complete original C11 programs passed 17 hosted workbook runs plus seven dialect/header checks. ThreadSanitizer crashes, booking/source conflicts and human review remain explicit.
+
 - September 29, 2026: [CLA-11-03 deep review](docs/research/2026-09-29-cla-11-03-deep-review.md): Mapped 23 objectives and expanded 30 answers; fixed allocation, overflow, lifetime and input contracts. Five C files executed remotely with 181 loader and 53 language checks on both compilers, selected sanitizer/optimization runs and six negative diagnostic checks. Resource/policy limits and human review pending.
 
 - September 29, 2026: [WDA-41-01 deep review](docs/research/2026-09-29-wda-41-01-deep-review.md): Mapped 40 objectives and expanded 40 answers. Fifteen exact public blocks, 14 original assets, 42 CSS and 90 browser checks, five Nu-clean pages, two CSS3 passes and actual browser Sass/Bootstrap evidence. Ten wider labs proposed; duration/access and human limits retained.

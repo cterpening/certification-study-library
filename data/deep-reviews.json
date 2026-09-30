@@ -5,6 +5,25 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "CLP-12-01",
+      "reviewed_on": "2026-09-29",
+      "guide_sha256": "c5b3c14d4cfc246d94da244746d83dc1f2c5b0c00815ba8828fc2d4eef9f0a4c",
+      "objective_count": 29,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-29-clp-12-01-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-29-clp-12-01-deep-review.json"
+      ],
+      "lab_execution": "live-partial",
+      "remaining_limits": [
+        "52 direct source outcomes: 13 HTTP200, 38 errors, one HTTP403. Bounded web fallback supplied some primary content; nine attempted primary pages were not read. Cisco returned a 46-character shell; paid/enrolled interiors unavailable. No full standard/manual audit or successful automated objective comparison.",
+        "Canonical no-formal-prerequisite versus badge CLA+CLP criteria, and anytime-before versus 24-hour appointment changes, remain unresolved. No account, booking or personal eligibility check.",
+        "Five exact public C11 programs executed remotely on GCC15.2/Clang20.1: 17 workbook runs and seven header/dialect probes. Real pipe/file/local-stream operations, C11 threads and GMP6.3.0 exercised; no local compiler install, Win32 execution, TCP service or packet capture.",
+        "ThreadSanitizer queue runtime crashed with SEGV; minimal C11 create/join reproduced on Clang and GCC, all exit66. Cause unresolved; no clean race-detector evidence. Four address/undefined sanitizer runs cover tested paths only. No runtime/permission changes.",
+        "EINTR, zero-progress/write-error and thread-start failures use explicit seams. No actual signal, exhaustion, close/read/output failure, spurious wake or allocation failure induced. Diagnostic CHECK exit can leave its own exclusive fixture; ordinary cleanup removes it. Eight broader labs and human review pending."
+      ]
+    },
+    {
       "exam_code": "CLA-11-03",
       "reviewed_on": "2026-09-29",
       "guide_sha256": "d8c660b9d3a6af307425c1fff70ff2d086b6e01145e961a618ec985d87774be5",

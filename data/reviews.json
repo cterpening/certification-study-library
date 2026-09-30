@@ -11570,27 +11570,94 @@
       "notes": "Mapped all 23 objectives and expanded 30 answers. Fixed an undeclared allocation operand, unchecked signed addition, realloc lifetime/zero-size wording and ambiguous formatted-input failure handling. Five original C files plus CMake build passed remote GCC/Clang checks: 181 loader and 53 language checks on each, selected optimization/configuration/sanitizer variants, six diagnostic failures and preprocessing inspection. Resource/policy access limits and human review remain explicit. See docs/research/2026-09-29-cla-11-03-deep-review.md"
     },
     {
-      "id":"clp-12-01-2026-09-02-source-validation",
-      "exam_code":"CLP-12-01",
-      "guide_path":"guides/CLP-12-01-c-certified-professional-programmer.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-02",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/clp-12-01-official-objectives.txt",
-      "blueprint_snapshot_sha256":"ca46317388e8217cdca5a716c497f3c1b715a76d371d2c79247e1cfe7d0d0603",
-      "objective_coverage":[
-        {"objective_group":"Applied Evolution of C (14.5%)","guide_sections":["Section 1","Scenarios 1 and 3","Lab 1"]},
-        {"objective_group":"Variadic Functions and Macros (9%)","guide_sections":["Section 2","Scenario 2","Lab 2"]},
-        {"objective_group":"Low-Level I/O (13%)","guide_sections":["Section 3","Scenarios 1 and 3","Lab 3"]},
-        {"objective_group":"Memory and String Handling (16%)","guide_sections":["Section 4","All scenarios","Lab 4"]},
-        {"objective_group":"Process and Thread Management (9%)","guide_sections":["Section 5","Scenario 3","Lab 5"]},
-        {"objective_group":"Numerical Types and Computations (11%)","guide_sections":["Section 6","Scenario 2","Lab 6"]},
-        {"objective_group":"Network Socket Programming (13%)","guide_sections":["Section 7","Scenario 1","Lab 7"]},
-        {"objective_group":"Specialized Considerations (14.5%)","guide_sections":["Section 8","All scenarios","Lab 8"]}
+      "id": "clp1201-2026-09-29-source-validation",
+      "exam_code": "CLP-12-01",
+      "guide_path": "guides/CLP-12-01-c-certified-professional-programmer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/clp-12-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "ca46317388e8217cdca5a716c497f3c1b715a76d371d2c79247e1cfe7d0d0603",
+      "objective_coverage": [
+        {
+          "objective_group": "Block 1 - Applied Evolution of C Programming (8 items; 14.5%)",
+          "guide_sections": [
+            "1. Applied evolution of C — 14.5%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 2 - Variadic Functions and Macros (5 items; 9%)",
+          "guide_sections": [
+            "2. Variadic functions and macros — 9%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 3 - Fundamentals of Low-Level I/O (7 items; 13%)",
+          "guide_sections": [
+            "3. Fundamentals of low-level I/O — 13%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 4 - Memory and String Handling (9 items; 16%)",
+          "guide_sections": [
+            "4. Memory and string handling — 16%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 5 - Process and Thread Management (5 items; 9%)",
+          "guide_sections": [
+            "5. Processes and threads — 9%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 6 - Numerical Types and Computations (6 items; 11%)",
+          "guide_sections": [
+            "6. Numerical types and computations — 11%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 7 - Network Socket Programming (7 items; 13%)",
+          "guide_sections": [
+            "7. Network socket programming — 13%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 8 - Specialized Programming Considerations (8 items; 14.5%)",
+          "guide_sections": [
+            "8. Specialized considerations — 14.5%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":10,"reachable":8,"access_blocked":1,"missing_or_error":1},
-      "notes":"All 30 CLP-12-01 objectives are mapped through C language evolution and historical constructs, variadic calls, POSIX/Windows/API/ABI distinctions, low-level I/O, memory/string/sort/search behavior, processes/threads and C11 synchronization, numerical behavior, socket framing/serialization, volatile, non-local jumps, undefined behavior and complex declarations. Three scenarios, eight labs and 30 original checks are included. Portable ISO C is explicitly separated from POSIX, Windows, compiler and external-library contracts. SEI and O'Reilly are automation-blocked; no link is missing. No recalled/live item, answer dump or copied course question is used. September 17, 2026 link-only maintenance: the SEI reference moved to the official cmu-sei.github.io site and is reachable; link counts were refreshed. This does not represent a new full-content or practitioner review. September 29 CPE source-health refresh updated shared-link counts only; this guide content and review date were not re-reviewed."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 34,
+        "reachable": 12,
+        "access_blocked": 1,
+        "missing_or_error": 21
+      },
+      "notes": "Mapped all 29 objectives and expanded 30 answers. Replaced incomplete variadic and descriptor fragments with five exact original C11 programs. Seventeen GCC/Clang workbook runs passed, including 31 language, 11 descriptor and 69 framing checks, ten 1,000-item batches per queue run, exact GMP arithmetic, three optimized variants and four address/undefined sanitizer runs. Seven dialect/header probes had the expected outcomes. ThreadSanitizer crashes, source and booking conflicts, broader labs and human review remain explicit. See docs/research/2026-09-29-clp-12-01-deep-review.md"
     },
     {
       "id":"cpa-21-02-2026-09-02-source-validation",

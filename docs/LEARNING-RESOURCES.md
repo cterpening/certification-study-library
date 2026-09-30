@@ -3643,6 +3643,29 @@ This is not a complete list, and it is not meant to be consumed in full. Pick on
 
 No exact current MeasureUp or Whizlabs CLA-11-03 practice product was verified. Use the provider-aligned course tests and original multi-file labs; reject practice content that does not identify its source and active exam version.
 
+### CLP-12-01 — CLP C Certified Professional Programmer
+
+Resource details from the [CLP-12-01 guide](../guides/CLP-12-01-c-certified-professional-programmer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Use one aligned primary path, then select platform documentation and labs for the interfaces you are practicing. Reconcile older courses with the current official CLP-12-01 syllabus and label every language/platform version.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official CLP page and syllabus](https://cppinstitute.org/clp) | Free canonical blueprint | 2–3 hours to map and recheck |
+| [C++ Institute exam policies](https://cppinstitute.org/exam-policies) | Free official policy | 20–40 minutes before scheduling |
+| [OpenEDG C Advanced](https://edube.org/study/clp) | Public landing: free, English, advanced, CLP-12-01 alignment; enrolled lessons not read | 42 hours listed; seven/week advertised |
+| [Cisco Networking Academy C Advanced](https://www.netacad.com/courses/c-advanced) | Public request returned only an application shell; enrollment/content unverified | Duration not verified from the rendered listing |
+| [POSIX.1-2024 online specification](https://pubs.opengroup.org/onlinepubs/9799919799/) | Free primary specification | Ongoing; 8–15 hours targeted lookup |
+| [Microsoft Windows API index](https://learn.microsoft.com/en-us/windows/win32/apiindex/windows-api-list) | Free official Windows documentation | Ongoing; 5–10 hours for comparison topics |
+| [SEI CERT C Coding Standard](https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/) | Free authoritative secure-coding reference | 10–20 hours targeted review |
+| [cppreference C language and library](https://en.cppreference.com/w/c.html) | Free community reference | Ongoing; 8–15 hours targeted lookup |
+| [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/) | Free community book; POSIX-oriented | 10–15 hours including labs |
+| [O'Reilly Modern C, 3rd Edition](https://www.oreilly.com/library/view/modern-c-3rd/9781633437777/) | Subscription; broader/current language treatment | 20–35 hours selected chapters and exercises |
+
+Only the public Edube landing was read; it advertises a completion-based discount, but checkout eligibility was not tested. Cisco returned a shell, O'Reilly denied access, and Beej/cppreference/SEI index navigation does not establish that all linked chapters were audited. Time ranges above, except the provider's Edube listing, are planning estimates.
+
+No exact current MeasureUp or Whizlabs CLP-12-01 practice product was verified. Because this blueprint mixes portable C and platform APIs, prefer runnable objective-based labs to decontextualized question banks.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

@@ -3,6 +3,524 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "clp-credly-badge",
+      "title": "OpenEDG CLP credential criteria",
+      "url": "https://www.credly.com/org/openedg/badge/clp-12-01-clp-c-certified-professional-programmer",
+      "publisher": "C++ Institute / OpenEDG",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Only indexed issuer-badge search body read; direct fetch/open failed. Criteria list CLA plus CLP while canonical exam page says no formal prerequisite. Conflict retained, not resolved by assumption or account access. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "posix-2024-read",
+      "title": "POSIX.1-2024 read",
+      "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/read.html",
+      "publisher": "The Open Group",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Indexed DESCRIPTION, EXAMPLES/APPLICATION USAGE and selected RATIONALE read, not separately complete ERRORS/RETURN sections. Positive versus zero count, partial transfer, EINTR, SSIZE_MAX and pipe/socket semantics distinguished. Direct fetch failed. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "posix-2024-write",
+      "title": "POSIX.1-2024 write",
+      "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/write.html",
+      "publisher": "The Open Group",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Direct request failed; no complete page body read. Registered as an attempted primary reference, not verified reading. Separately bounded fallback and observed original-code evidence support the guide where available. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "posix-2024-close",
+      "title": "POSIX.1-2024 close",
+      "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/close.html",
+      "publisher": "The Open Group",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Direct request failed; no complete page body read. Registered as an attempted primary reference, not verified reading. Separately bounded fallback and observed original-code evidence support the guide where available. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "posix-2024-open",
+      "title": "POSIX.1-2024 open",
+      "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/open.html",
+      "publisher": "The Open Group",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Only indexed RETURN VALUE and selected error entries read, including EEXIST/O_EXCL and EINTR. Full description not read. Exclusive fixture exercised on hosted Linux. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "posix-2024-fcntl",
+      "title": "POSIX.1-2024 fcntl",
+      "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/fcntl.html",
+      "publisher": "The Open Group",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Direct request failed; no complete page body read. Registered as an attempted primary reference, not verified reading. Separately bounded fallback and observed original-code evidence support the guide where available. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "posix-2024-ioctl",
+      "title": "POSIX.1-2024 ioctl",
+      "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/ioctl.html",
+      "publisher": "The Open Group",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Direct request failed; no complete page body read. Registered as an attempted primary reference, not verified reading. Separately bounded fallback and observed original-code evidence support the guide where available. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "posix-2024-recv",
+      "title": "POSIX.1-2024 recv",
+      "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/recv.html",
+      "publisher": "The Open Group",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Direct request failed; no complete page body read. Registered as an attempted primary reference, not verified reading. Separately bounded fallback and observed original-code evidence support the guide where available. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "posix-2024-send",
+      "title": "POSIX.1-2024 send",
+      "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/send.html",
+      "publisher": "The Open Group",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Direct request failed; no complete page body read. Registered as an attempted primary reference, not verified reading. Separately bounded fallback and observed original-code evidence support the guide where available. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "posix-2024-socketpair",
+      "title": "POSIX.1-2024 socketpair",
+      "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/socketpair.html",
+      "publisher": "The Open Group",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Complete indexed body read: description, return, errors, application usage, rationale and change history. Connected pair here is local AF_UNIX, not TCP. New Issue8 flags not assumed supported on Linux. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "linux-close-manual",
+      "title": "Linux man-pages close",
+      "url": "https://man7.org/linux/man-pages/man2/close.2.html",
+      "publisher": "Linux man-pages project",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Complete current Linux6.19 close manual read via public fallback, dated February 8, 2026. Linux does not retry even for EINTR; POSIX2024 differs; successful close is not durability. No close-error injection. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "linux-socket-manual",
+      "title": "Linux man-pages socket",
+      "url": "https://man7.org/linux/man-pages/man2/socket.2.html",
+      "publisher": "Linux man-pages project",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Web-reader DESCRIPTION lines 25-168 read, from endpoint/domain table through types and stream/datagram lifecycle. No full errors/options audit. Local AF_UNIX exercise distinguished from Internet transport. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "linux-tcp-manual",
+      "title": "Linux man-pages TCP",
+      "url": "https://man7.org/linux/man-pages/man7/tcp.7.html",
+      "publisher": "Linux man-pages project",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Introductory DESCRIPTION through connection/listener/accept semantics and address formats read, plus incidental beginning of tuning section. No full 1,062-line tuning audit, configuration change or actual TCP service. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "msvc-x64-calling-convention",
+      "title": "Microsoft x64 calling convention",
+      "url": "https://learn.microsoft.com/en-us/cpp/build/x64-calling-convention?view=msvc-170",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Complete 17,742-character May 21, 2026 body read: register positions, shadow space, variadic FP duplication, aggregate/register rules, FP controls and jump behavior. ABI by-reference wording does not alter C by-value semantics. Vendor setjmp initializer and destructor-unwind details not adopted as portable ISO rules. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "win32-processes-threads",
+      "title": "Windows processes and threads",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/procthread/processes-and-threads",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Complete 1,993-character July 14, 2025 landing read, including process/thread, job, pool, fiber and UMS overview. No Win32 execution or linked API audit. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gmp-integer-functions",
+      "title": "GMP integer functions",
+      "url": "https://gmplib.org/manual/Integer-Functions",
+      "publisher": "GNU Project",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Direct request failed; no complete page body read. Registered as an attempted primary reference, not verified reading. Separately bounded fallback and observed original-code evidence support the guide where available. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gmp-initialization",
+      "title": "GMP integer initialization",
+      "url": "https://gmplib.org/manual/Initializing-Integers",
+      "publisher": "GNU Project",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Complete current6.3.0 initialization section read via primary index: initialize before use, clear, automatic growth, realloc2 and typed variadic terminator. Original program initializes/clears each object. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gmp-rational-functions",
+      "title": "GMP rational functions",
+      "url": "https://gmplib.org/manual/Rational-Number-Functions",
+      "publisher": "GNU Project",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Complete current6.3.0 introduction/canonicalization read. Pure assignment does not canonicalize; arithmetic requires canonical operands. Original 2/20 canonicalized before addition. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mpfr-manual",
+      "title": "GNU MPFR manual",
+      "url": "https://www.mpfr.org/mpfr-current/mpfr.html",
+      "publisher": "GNU MPFR project",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Direct request failed; full manual body not read. Original probe failed at missing mpfr.h, so no executed MPFR precision result or installation attempt. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sei-cert-msc22",
+      "title": "SEI CERT MSC22-C setjmp longjmp",
+      "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/recommendations/miscellaneous-msc/msc22-c/",
+      "publisher": "Carnegie Mellon SEI",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Complete 5,815-character body read, including examples and risk/tool tables. Permitted setjmp context, live target frame and changed-local rules checked. Incomplete/misleading source example flows were not copied or executed. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sei-cert-con43",
+      "title": "SEI CERT CON43-C data races",
+      "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/concurrency-con/con43-c/",
+      "publisher": "Carnegie Mellon SEI",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: All material before Risk Assessment read. Source fence/volatile examples lack a complete ordinary-data synchronization protocol; not accepted as race fixes. Original mutex/predicate/join reasoning used; no deliberate racy execution. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sei-cert-dcl11",
+      "title": "SEI CERT DCL11-C variadic types",
+      "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/recommendations/declarations-and-initialization-dcl/dcl11-c/",
+      "publisher": "Carnegie Mellon SEI",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: All material before Risk Assessment read, including promotions and type-mismatch examples. Source NULL-size explanation conflicts with its already-converted char pointer; not adopted. Null-string formatting is invalid independently. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sei-cert-dcl10",
+      "title": "SEI CERT DCL10-C variadic contracts",
+      "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/recommendations/declarations-and-initialization-dcl/dcl10-c/",
+      "publisher": "Carnegie Mellon SEI",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Complete 4,317-character body read, including contracts, va_list consumption and risk/tool tables. No invalid variadic call executed; original va_copy formatting and bounded mean tested. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "wg14-dr480",
+      "title": "WG14 defect report 480 condition-variable wakeups",
+      "url": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n2243.htm",
+      "publisher": "WG14",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Direct/open failed; only indexed N2243 DR480 subsection read. Full aggregate report not read. Resolved individual issue consulted for final C17 status. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gmp-init-set",
+      "title": "GMP combined integer initialization and assignment",
+      "url": "https://gmplib.org/manual/Simultaneous-Integer-Init-_0026-Assign.html",
+      "publisher": "GNU Project",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Complete current6.3.0 initialization-and-assignment section read via primary index. Failed mpz_init_set_str still needs clear; original constant parse checked. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gmp-integer-arithmetic",
+      "title": "GMP integer arithmetic",
+      "url": "https://gmplib.org/manual/Integer-Arithmetic",
+      "publisher": "GNU Project",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Direct request failed; no complete page body read. Registered as an attempted primary reference, not verified reading. Separately bounded fallback and observed original-code evidence support the guide where available. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gmp-integer-exponentiation",
+      "title": "GMP integer exponentiation",
+      "url": "https://gmplib.org/manual/Integer-Exponentiation",
+      "publisher": "GNU Project",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Complete current6.3.0 exponentiation section read via primary index, including ui_pow_ui and modular preconditions. Only positive 2^100 executed; no cryptographic claim. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "wg14-dr480-resolved",
+      "title": "WG14 resolved issue 0480",
+      "url": "https://open-std.org/JTC1/SC22/WG14/issues/c11c17/issue0480.html",
+      "publisher": "WG14",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Complete indexed issue0480 read: fixed in C17, 2015 submission and 2017 wording, condition waits may wake for unspecified reasons; a signal alone is not synchronization. Predicate loop used; no spurious wake forced. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "linux-pipe-manual",
+      "title": "Linux pipe overview",
+      "url": "https://man7.org/linux/man-pages/man7/pipe.7.html",
+      "publisher": "Linux man-pages project",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Complete 287-line Linux6.19 body read: blocking, drained EOF, FIONREAD, capacity, PIPE_BUF, portability and historical bugs. Only disposable pipe flags changed; no system limits or permissions changed. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "linux-write-manual",
+      "title": "Linux write reference",
+      "url": "https://man7.org/linux/man-pages/man2/write.2.html",
+      "publisher": "Linux man-pages project",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Complete 221-line Linux6.19 body read: short writes, EINTR, returns/errors, limits, durability and historical offset atomicity. Original 32-byte cap and short-transfer tests; no actual disk exhaustion. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "linux-fcntl-manual",
+      "title": "Linux fcntl reference",
+      "url": "https://man7.org/linux/man-pages/man2/fcntl.2.html",
+      "publisher": "Linux man-pages project",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Complete 155-line Linux6.19 index/reference read: operation categories, returns/errors and unsupported Linux CLOFORK. F_GETFL/F_SETFL page read separately. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "linux-f-getfl-manual",
+      "title": "Linux file status flags",
+      "url": "https://man7.org/linux/man-pages/man2/F_GETFL.2const.html",
+      "publisher": "Linux man-pages project",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Complete 116-line status-flags page read: open-file-description sharing, F_GETFL/F_SETFL, changeable flags and returns. Disposable pipe O_NONBLOCK toggled and restored. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "linux-send-manual",
+      "title": "Linux send reference",
+      "url": "https://man7.org/linux/man-pages/man2/send.2.html",
+      "publisher": "Linux man-pages project",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Direct/canonical open failed. Same current Linux send manual read through indexed sendto/sendmsg aliases: DESCRIPTION/flags, RETURN/ERRORS, history and notes. MSG_NOSIGNAL, EPIPE and EINTR examined. No remote delivery or live TCP claim. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "linux-recv-manual",
+      "title": "Linux recv reference",
+      "url": "https://man7.org/linux/man-pages/man2/recv.2.html",
+      "publisher": "Linux man-pages project",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Direct/open failed; indexed full RETURN VALUE and beginning ERRORS read. Stream shutdown zero distinguished from zero-count requests and empty datagrams. No full recvmsg/options audit. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gmp-rational-initialization",
+      "title": "GMP rational initialization",
+      "url": "https://gmplib.org/manual/Initializing-Rationals",
+      "publisher": "GNU Project",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Complete 49-line current6.3.0 section read: init/clear, set_ui/string and swap. Individual initialization/cleanup used; no zero denominator. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gmp-rational-arithmetic",
+      "title": "GMP rational arithmetic",
+      "url": "https://gmplib.org/manual/Rational-Arithmetic.html",
+      "publisher": "GNU Project",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Complete current6.3.0 arithmetic section read via primary index. Original mpq_add result compared to 3/10; no invalid inverse/division. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gmp-rational-comparison",
+      "title": "GMP rational comparison",
+      "url": "https://gmplib.org/manual/Comparing-Rationals",
+      "publisher": "GNU Project",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLP-12-01 deep review: Complete current6.3.0 comparison section read via indexed .html alias: cmp/equal/sign and repeated macro evaluation. Original mpq_equal used; no side-effect macro test. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "cpp-institute-pearson-scheduling",
       "title": "C++ Institute Pearson scheduling",
       "url": "https://cppinstitute.org/schedule-exam-pvue",
@@ -11,10 +529,11 @@
       "source_type": "official-guidance",
       "access_model": "public",
       "supported_exams": [
-        "CLA-11-03"
+        "CLA-11-03",
+        "CLP-12-01"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 CLA-11-03 deep review: Complete indexed scheduling page read, revised October 14, 2025. Explicit CLA/CLP/CPA/CPP active-code scope and test-center/OnVUE overview, typical 24-hour change/cancel window, availability/pricing/accommodations qualified by actual booking. No account, download, system test, appointment or contact action. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution."
+      "notes": "September 29 CLA-11-03 deep review: Complete indexed scheduling page read, revised October 14, 2025. Explicit CLA/CLP/CPA/CPP active-code scope and test-center/OnVUE overview, typical 24-hour change/cancel window, availability/pricing/accommodations qualified by actual booking. No account, download, system test, appointment or contact action. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution. September 29 CLP-12-01 deep review: Complete indexed October 14, 2025 scheduling body read in preceding same-context CLA review: explicit CLP-12-01 scope, test-center/OnVUE delivery and typical 24-hour changes. No appointment or system test. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "gcc-15-c-dialect-options",
@@ -25,10 +544,11 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "supported_exams": [
-        "CLA-11-03"
+        "CLA-11-03",
+        "CLP-12-01"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 CLA-11-03 deep review: Read -std entry including enumerated dialect descriptions, specific c17/c18 aliases and C11 defect-correction relationship, and GNU C23 default. Other compiler dialect options not audited. Explicit C17 build settings exercised remotely; no compiler installed. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution."
+      "notes": "September 29 CLA-11-03 deep review: Read -std entry including enumerated dialect descriptions, specific c17/c18 aliases and C11 defect-correction relationship, and GNU C23 default. Other compiler dialect options not audited. Explicit C17 build settings exercised remotely; no compiler installed. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution. September 29 CLP-12-01 deep review: Read -ansi/-std introduction and C89/C99/C11/C17/C23/GNU entries through default gnu23. C17 defect corrections also apply to c11. C++ entries and the remaining manual were not audited. Actual strict dialect probes recorded. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "gcc-15-warning-options",
@@ -1698,10 +2218,11 @@
       "access_model": "public",
       "supported_exams": [
         "CLE-10-01",
-        "CLA-11-03"
+        "CLA-11-03",
+        "CLP-12-01"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 CLE-10-01 deep review: Direct PDF download and health request timed out. Public web-reader PDF has 701 pages, April 12, 2011 WG14 committee draft. Selected text read: hosted startup/termination 5.1.2.2.1–3; 6.3.1.1–4 conversions; 6.3.2.1 array/lvalue conversion; 6.4.4.4 ordinary-character semantics; 6.5 paragraphs 1–5 and footnotes; 6.5.3.1–4 increment/address/unary/sizeof including VLA exception; 6.5.4–7 casts/division/pointer arithmetic/shifts; selected 6.7.6.3 prototype/void/array-parameter paragraphs; 7.12.9.6 round description; 7.21.6.2 formatted-input paragraphs 1–16 with examples/context; 7.22.3 allocation overview/calloc/free/malloc; 7.24.2.3 strcpy and 7.24.3.1 strcat. Not full standard review or a claim of current exam-required version. No local genuine PDF capture succeeded; source reading occurred through public web tool. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution. September 29 CLA-11-03 deep review: Historical April 12, 2011 C11 committee draft; web reader exposes 701 pages. Local PDF download failed; no local PDF capture or full audit claimed. Read cover/TOC, full 6.2.1–4 scope/linkage/namespaces/storage duration, selected 6.9.2 tentative-definition paragraphs/examples, full 7.22.3 allocation overview/calloc/free/malloc/realloc, tail of strtol conversion/return clause; incidental partial control-flow/pointer-arithmetic passages are not full-clause review. C17 practice baseline is separately supported by GCC dialect documentation; no exam-required language edition inferred. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution."
+      "notes": "September 29 CLE-10-01 deep review: Direct PDF download and health request timed out. Public web-reader PDF has 701 pages, April 12, 2011 WG14 committee draft. Selected text read: hosted startup/termination 5.1.2.2.1–3; 6.3.1.1–4 conversions; 6.3.2.1 array/lvalue conversion; 6.4.4.4 ordinary-character semantics; 6.5 paragraphs 1–5 and footnotes; 6.5.3.1–4 increment/address/unary/sizeof including VLA exception; 6.5.4–7 casts/division/pointer arithmetic/shifts; selected 6.7.6.3 prototype/void/array-parameter paragraphs; 7.12.9.6 round description; 7.21.6.2 formatted-input paragraphs 1–16 with examples/context; 7.22.3 allocation overview/calloc/free/malloc; 7.24.2.3 strcpy and 7.24.3.1 strcat. Not full standard review or a claim of current exam-required version. No local genuine PDF capture succeeded; source reading occurred through public web tool. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution. September 29 CLA-11-03 deep review: Historical April 12, 2011 C11 committee draft; web reader exposes 701 pages. Local PDF download failed; no local PDF capture or full audit claimed. Read cover/TOC, full 6.2.1–4 scope/linkage/namespaces/storage duration, selected 6.9.2 tentative-definition paragraphs/examples, full 7.22.3 allocation overview/calloc/free/malloc/realloc, tail of strtol conversion/return clause; incidental partial control-flow/pointer-arithmetic passages are not full-clause review. C17 practice baseline is separately supported by GCC dialect documentation; no exam-required language edition inferred. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution. September 29 CLP-12-01 deep review: Selected clauses read via the 701-page WG14 draft web reader; no full audit/local PDF capture. Variadic 7.16.1.1-4; vprintf/vsnprintf/vsprintf; setjmp 7.13.1.1 and longjmp 7.13.2.1; thread introduction 7.26.1 and call_once; conditions 7.26.3, mutexes 7.26.4, threads 7.26.5, TSS 7.26.6; data-race 5.1.2.4 paragraphs 20-28; mbrlen/mbrtowc 7.29.6.3.1-2. Draft wakeup wording supplemented by resolved DR480. Memory/sequence clauses from preceding CLA work were not a new full-standard review. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "cert-c-err34",
@@ -2277,10 +2798,11 @@
       "supported_exams": [
         "CPE-20-01",
         "CLE-10-01",
-        "CLA-11-03"
+        "CLA-11-03",
+        "CLP-12-01"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 CPE-20-01 deep review: Direct GitHub health request timed out; complete public API documentation read via web reader. Compiler list and GCC 14.2/Clang 19.1 compile/execute endpoints actually used for original public programs only, no account, saved-code shortener or publishing action. Exact requests/results and code hashes captured. Remote execution is not local/offline compilation. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution. September 29 CLE-10-01 deep review: Direct documentation health request failed. Public API list-compilers and compile/execute request sections read via web reader; full documentation previously read for CPE. Actual C compiler list returned cg142 and cclang1910. Original public C11 programs submitted with allowStoreCodeDebug=false, no account or saved-code shortlink; exact request/result receipts retained. Remote execution is not local compilation. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution. September 29 CLA-11-03 deep review: Complete indexed API documentation read, including compiler list, compile/execute options, files array and CMake/customOutputFilename endpoint. Actual compiler IDs cg152/cclang2010 observed. Original public-purpose source submitted with allowStoreCodeDebug=false, no account or shared shortlink. CMake step codes and execResult checked separately; top-level code alone did not identify a failed link. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution."
+      "notes": "September 29 CPE-20-01 deep review: Direct GitHub health request timed out; complete public API documentation read via web reader. Compiler list and GCC 14.2/Clang 19.1 compile/execute endpoints actually used for original public programs only, no account, saved-code shortener or publishing action. Exact requests/results and code hashes captured. Remote execution is not local/offline compilation. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution. September 29 CLE-10-01 deep review: Direct documentation health request failed. Public API list-compilers and compile/execute request sections read via web reader; full documentation previously read for CPE. Actual C compiler list returned cg142 and cclang1910. Original public C11 programs submitted with allowStoreCodeDebug=false, no account or saved-code shortlink; exact request/result receipts retained. Remote execution is not local compilation. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution. September 29 CLA-11-03 deep review: Complete indexed API documentation read, including compiler list, compile/execute options, files array and CMake/customOutputFilename endpoint. Actual compiler IDs cg152/cclang2010 observed. Original public-purpose source submitted with allowStoreCodeDebug=false, no account or shared shortlink. CMake step codes and execResult checked separately; top-level code alone did not identify a failed link. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution. September 29 CLP-12-01 deep review: Complete indexed API documentation read in preceding same-context CLA review and reused for compile/execute options. Only original public-purpose source submitted, allowStoreCodeDebug=false; no saved-code/account request or local installation. Actual GCC15.2/Clang20.1 hosted builds. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "cpp17-multiplicative",
@@ -56849,7 +57371,7 @@
         "CPA-21-02",
         "CPP-22-02"
       ],
-      "notes": "Identification, NDA, accommodations, security and retake rules across TestNow and Pearson VUE delivery; exam-specific pages remain authoritative for channel and format. September 29 CPE-20-01 deep review: Direct request timed out; complete public policy read via web reader. July 23, 2025 policy separately covers CLE/CPE TestNow and associate/professional Pearson VUE delivery: seven-day failed-retake wait for CLE/CPE versus 15 days in the other section. Admission/security/accommodation context read, not a personal booking determination. No account, exam or settings action. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution. September 29 CLE-10-01 deep review: Fresh direct request timed out. Entry-level policy read completely via web reader in this review; associate/professional section previously read completely during CPE and revisited for context. CLE/CPE TestNow proctoring and seven-day failed-retake wait differ from the Pearson associate/professional section and its 15-day rule. Admission, NDA, security and accommodation text were research only; no account or exam action. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution. September 29 CLA-11-03 deep review: Complete indexed public policy body read, both TestNow and Pearson sections, updated July 23, 2025. CLA belongs to Pearson associate/professional 15-day failed-retake rule, not CLE/CPE seven-day TestNow rule; no passed same-version repeat. Conflicting anytime-before versus 24-hour rescheduling wording retained as unresolved; OnVUE admission paragraph names CPA/CPP though section includes four exams. Actual appointment, eligibility, account, identification and accommodation process not exercised. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution."
+      "notes": "Identification, NDA, accommodations, security and retake rules across TestNow and Pearson VUE delivery; exam-specific pages remain authoritative for channel and format. September 29 CPE-20-01 deep review: Direct request timed out; complete public policy read via web reader. July 23, 2025 policy separately covers CLE/CPE TestNow and associate/professional Pearson VUE delivery: seven-day failed-retake wait for CLE/CPE versus 15 days in the other section. Admission/security/accommodation context read, not a personal booking determination. No account, exam or settings action. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution. September 29 CLE-10-01 deep review: Fresh direct request timed out. Entry-level policy read completely via web reader in this review; associate/professional section previously read completely during CPE and revisited for context. CLE/CPE TestNow proctoring and seven-day failed-retake wait differ from the Pearson associate/professional section and its 15-day rule. Admission, NDA, security and accommodation text were research only; no account or exam action. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution. September 29 CLA-11-03 deep review: Complete indexed public policy body read, both TestNow and Pearson sections, updated July 23, 2025. CLA belongs to Pearson associate/professional 15-day failed-retake rule, not CLE/CPE seven-day TestNow rule; no passed same-version repeat. Conflicting anytime-before versus 24-hour rescheduling wording retained as unresolved; OnVUE admission paragraph names CPA/CPP though section includes four exams. Actual appointment, eligibility, account, identification and accommodation process not exercised. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution. September 29 CLP-12-01 deep review: Complete indexed public policy body read in the immediately preceding same-context CLA review and applied to explicit Pearson CLP scope. July 23, 2025 update, 15-day failed retake versus TestNow seven-day rule; rescheduling anytime-before versus 24-hour wording conflicts. No successful fresh direct fetch, account or personal eligibility determination. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "cpp-institute-certification-catalog",
@@ -56863,9 +57385,10 @@
       "supported_exams": [
         "CPE-20-01",
         "CLE-10-01",
-        "CLA-11-03"
+        "CLA-11-03",
+        "CLP-12-01"
       ],
-      "notes": "Current C and C++ track/level inventory, delivery overview, recommended progression and lifetime/version-preserving certificate statement. September 29 CPE-20-01 deep review: Direct request timed out; complete certification-exams catalog read through web reader. CPE remains entry-level, lifetime credential retains completed version, no replacement announcement found on examined pages. General Pearson/OnVUE language does not override CPE-specific TestNow. No unseen release channel or future availability inferred. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution. September 29 CLE-10-01 deep review: Fresh direct request timed out; complete public catalog read via web reader. Entry CLE remains listed; lifetime credentials retain completed version. General Pearson/OnVUE program language does not override CLE-specific TestNow. No replacement found on examined pages, not a claim about every unseen release channel. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution. September 29 CLA-11-03 deep review: Complete public web-reader catalog body read after direct failure. CLA remains associate C track; lifetime/version-specific credential wording and no replacement on examined pages. General program delivery copy does not override credential-specific policy. No unseen release-feed audit. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution."
+      "notes": "Current C and C++ track/level inventory, delivery overview, recommended progression and lifetime/version-preserving certificate statement. September 29 CPE-20-01 deep review: Direct request timed out; complete certification-exams catalog read through web reader. CPE remains entry-level, lifetime credential retains completed version, no replacement announcement found on examined pages. General Pearson/OnVUE language does not override CPE-specific TestNow. No unseen release channel or future availability inferred. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution. September 29 CLE-10-01 deep review: Fresh direct request timed out; complete public catalog read via web reader. Entry CLE remains listed; lifetime credentials retain completed version. General Pearson/OnVUE program language does not override CLE-specific TestNow. No replacement found on examined pages, not a claim about every unseen release channel. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution. September 29 CLA-11-03 deep review: Complete public web-reader catalog body read after direct failure. CLA remains associate C track; lifetime/version-specific credential wording and no replacement on examined pages. General program delivery copy does not override credential-specific policy. No unseen release-feed audit. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution. September 29 CLP-12-01 deep review: Complete public catalog body read in preceding same-context CLA review; current C professional track and lifetime/version-specific wording retained. Direct CLP request failed; no unseen feed or account inspection. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "openedg-cpp-essentials-1",
@@ -57213,7 +57736,7 @@
         "CLA-11-03",
         "CLP-12-01"
       ],
-      "notes": "Authoritative secure-coding reference for pointer, memory, input, concurrency and undefined-behavior risks; use targeted rules at the appropriate exam level. September 29 CLE-10-01 deep review: Complete 3770-character development index read, including explicit warning that pages can be incomplete or contain errors and distinction from published 2016 C11 edition. Linked rules selectively reviewed and registered separately; not a complete coding-standard audit. No analyzer or conformance certification run. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution. September 29 CLA-11-03 deep review: Complete 3770-character development index read. Explicit incomplete/error warning, rules versus recommendations, and 2016 C11/earlier published edition distinguished. Selected chapter indexes used only to discover exact registered rules; not a complete standard/conformance audit. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution."
+      "notes": "Authoritative secure-coding reference for pointer, memory, input, concurrency and undefined-behavior risks; use targeted rules at the appropriate exam level. September 29 CLE-10-01 deep review: Complete 3770-character development index read, including explicit warning that pages can be incomplete or contain errors and distinction from published 2016 C11 edition. Linked rules selectively reviewed and registered separately; not a complete coding-standard audit. No analyzer or conformance certification run. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution. September 29 CLA-11-03 deep review: Complete 3770-character development index read. Explicit incomplete/error warning, rules versus recommendations, and 2016 C11/earlier published edition distinguished. Selected chapter indexes used only to discover exact registered rules; not a complete standard/conformance audit. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution. September 29 CLP-12-01 deep review: Complete 3,770-character development index read. Explicit warning that guidelines may contain errors; selected recommendations read separately, no full standard/book audit. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "cisco-c-essentials-1",
@@ -57972,7 +58495,7 @@
         "CLA-11-03",
         "CLP-12-01"
       ],
-      "notes": "Detailed independent language and standard-library reference for targeted lookup and standard-version boundaries. September 29 CLA-11-03 deep review: Complete 1663-character community C index body read. C89/C95/C99/C11/C17/C23 labels provide navigation only; linked technical chapters not audited or used as sole primary repair evidence. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution."
+      "notes": "Detailed independent language and standard-library reference for targeted lookup and standard-version boundaries. September 29 CLA-11-03 deep review: Complete 1663-character community C index body read. C89/C95/C99/C11/C17/C23 labels provide navigation only; linked technical chapters not audited or used as sole primary repair evidence. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution. September 29 CLP-12-01 deep review: Complete 1,663-character community C index read, including edition navigation and library categories. No linked chapter audit; discovery aid, not primary authority. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "udemy-advanced-c-programming",
@@ -57989,25 +58512,102 @@
       "notes": "Marketplace advanced C course; select only sections matching the active CLA blueprint and verify current runtime and update date. September 29 CLA-11-03 deep review: HTTP403; current paid curriculum, lessons/questions and runtime inaccessible. Ten to twenty selective hours is an author estimate. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"clp-12-01-syllabus","title":"CLP C Certified Professional Programmer","url":"https://cppinstitute.org/clp","publisher":"OpenEDG C++ Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["CLP-12-01"],"notes":"Canonical active exam page with eight weighted blocks, 30 named objectives, current version, format, delivery, price, candidate profile and July 24, 2025 syllabus baseline."
+      "id": "clp-12-01-syllabus",
+      "title": "CLP C Certified Professional Programmer",
+      "url": "https://cppinstitute.org/clp",
+      "publisher": "OpenEDG C++ Institute",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "notes": "Canonical active exam page with eight weighted blocks, 30 named objectives, current version, format, delivery, price, candidate profile and July 24, 2025 syllabus baseline. September 29 CLP-12-01 deep review: Direct fetch and objective monitor failed. Complete canonical public web-reader body read: active CLP-12-01, July 24, 2025 syllabus, 29 objectives grouped 4/3/3/4/4/3/3/5; weights 14.5/9/13/16/9/11/13/14.5; items 8/5/7/9/5/6/7/8. Format: 55 questions, 65 exam minutes plus about 10 NDA/tutorial, 70%, 1,000-point normalized maximum, English, Pearson, USD325/375, no formal prerequisite. Manual retained-snapshot comparison; no successful automated hash check or booking. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"openedg-c-advanced","title":"C Advanced","url":"https://edube.org/study/clp","publisher":"OpenEDG C++ Institute / Edube","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["CLP-12-01"],"notes":"Free officially aligned advanced course with 42-hour listed study time."
+      "id": "openedg-c-advanced",
+      "title": "C Advanced",
+      "url": "https://edube.org/study/clp",
+      "publisher": "OpenEDG C++ Institute / Edube",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "notes": "Free officially aligned advanced course with 42-hour listed study time. September 29 CLP-12-01 deep review: Complete 1,453-character public landing read: free English advanced course, 42 hours and seven/week, CLP-12-01 alignment, associate preparation recommended and advertised completion discount. No module list, enrolled content or discount eligibility tested. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cisco-c-advanced","title":"C Advanced","url":"https://www.netacad.com/courses/c-advanced","publisher":"Cisco Networking Academy / OpenEDG C++ Institute","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["CLP-12-01"],"notes":"Official partner delivery linked from the live CLP page. Verify current enrollment and runtime after login."
+      "id": "cisco-c-advanced",
+      "title": "C Advanced",
+      "url": "https://www.netacad.com/courses/c-advanced",
+      "publisher": "Cisco Networking Academy / OpenEDG C++ Institute",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "notes": "Official partner delivery linked from the live CLP page. Verify current enrollment and runtime after login. September 29 CLP-12-01 deep review: HTTP200 yielded a 46-character application shell. No rendered curriculum, duration, enrollment or lessons available; inferred 42-hour Cisco duration removed. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"posix-1-2024-specification","title":"POSIX.1-2024 Online Specification","url":"https://pubs.opengroup.org/onlinepubs/9799919799/","publisher":"The Open Group / IEEE","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["CLP-12-01"],"notes":"Primary current POSIX specification for targeted lookup. The exam also tests older/historical interfaces, so label the compared version."
+      "id": "posix-1-2024-specification",
+      "title": "POSIX.1-2024 Online Specification",
+      "url": "https://pubs.opengroup.org/onlinepubs/9799919799/",
+      "publisher": "The Open Group / IEEE",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "notes": "Primary current POSIX specification for targeted lookup. The exam also tests older/historical interfaces, so label the compared version. September 29 CLP-12-01 deep review: Direct request failed; no complete page body read. Registered as an attempted primary reference, not verified reading. Separately bounded fallback and observed original-code evidence support the guide where available. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"microsoft-windows-api-index","title":"Windows API Index","url":"https://learn.microsoft.com/en-us/windows/win32/apiindex/windows-api-list","publisher":"Microsoft Learn","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["CLP-12-01"],"notes":"Official Windows API index for the blueprint's cross-platform API comparison topics."
+      "id": "microsoft-windows-api-index",
+      "title": "Windows API Index",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/apiindex/windows-api-list",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "notes": "Official Windows API index for the blueprint's cross-platform API comparison topics. September 29 CLP-12-01 deep review: Complete 9,084-character Microsoft index read, dated March 15, 2023, despite generic authentication banner. Navigation and categories only; linked API pages not implied read. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"beej-network-programming","title":"Beej's Guide to Network Programming","url":"https://beej.us/guide/bgnet/","publisher":"Brian Hall","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["CLP-12-01"],"notes":"Free POSIX-oriented community book covering TCP/UDP sockets, address conversion, byte order, partial I/O and client/server labs."
+      "id": "beej-network-programming",
+      "title": "Beej's Guide to Network Programming",
+      "url": "https://beej.us/guide/bgnet/",
+      "publisher": "Brian Hall",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "notes": "Free POSIX-oriented community book covering TCP/UDP sockets, address conversion, byte order, partial I/O and client/server labs. September 29 CLP-12-01 deep review: Complete 1,770-character author landing/navigation read; formats and errata links visible, but no linked networking chapters read. Primary platform references support technical claims. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-modern-c-third","title":"Modern C, 3rd Edition","url":"https://www.oreilly.com/library/view/modern-c-3rd/9781633437777/","publisher":"O'Reilly / Manning / Jens Gustedt","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["CLP-12-01"],"notes":"Broad current professional C treatment. Select 20–35 hours matching the blueprint and retain its explicit historical C11 boundary."
+      "id": "oreilly-modern-c-third",
+      "title": "Modern C, 3rd Edition",
+      "url": "https://www.oreilly.com/library/view/modern-c-3rd/9781633437777/",
+      "publisher": "O'Reilly / Manning / Jens Gustedt",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CLP-12-01"
+      ],
+      "notes": "Broad current professional C treatment. Select 20–35 hours matching the blueprint and retain its explicit historical C11 boundary. September 29 CLP-12-01 deep review: HTTP403; no paid interior, chapter, alignment or exercise audited. Optional broader reading, not a verified complete blueprint path. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution."
     },
     {
       "id":"cpa-21-02-syllabus","title":"CPA C++ Certified Associate Programmer","url":"https://cppinstitute.org/cpa","publisher":"OpenEDG C++ Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["CPA-21-02"],"notes":"Canonical active exam page with five weighted blocks, 35 named objectives, current and retired versions, format, delivery, price, candidate profile and July 22, 2025 syllabus baseline."
