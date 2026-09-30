@@ -235,6 +235,21 @@ class ObjectiveExtractionTests(unittest.TestCase):
 
         self.assertEqual([], result["results"])
 
+    def test_four_cohorts_cover_active_exams_once_and_do_not_shift_with_order(self) -> None:
+        configured = [
+            {"code": f"EX-{number:03d}", "vendor_id": "example", "status": "active"}
+            for number in range(32)
+        ] + [{"code": "OLD-001", "vendor_id": "example", "status": "retired"}]
+        cohorts = [monitor.cohort_codes(configured, number) for number in range(1, 5)]
+        self.assertEqual({row["code"] for row in configured[:-1]}, set.union(*cohorts))
+        self.assertEqual(sum(map(len, cohorts)), len(configured) - 1)
+        self.assertEqual(cohorts, [
+            monitor.cohort_codes(list(reversed(configured)), number)
+            for number in range(1, 5)
+        ])
+        with self.assertRaises(ValueError):
+            monitor.cohort_codes(configured, 5)
+
     def test_monitor_separates_exact_reviewed_limitation_from_new_error(self) -> None:
         import json
         from tempfile import TemporaryDirectory

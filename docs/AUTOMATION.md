@@ -23,16 +23,17 @@ after their date until a maintainer resolves or reschedules them with evidence.
 Dates trigger review, never automatic retirement or a claim that an exam launched.
 Future blueprints remain distinct from the currently taught exam baseline.
 
-The **Review certification maintenance** workflow runs Mondays at **14:43 UTC**,
-or manually from Actions. It checks all configured catalogs and announcement
-channels, retains reports/logs/candidate snapshots for **90 days**, publishes a
-run summary, and creates or refreshes one **Recurring certification maintenance
-review** issue. Its `GITHUB_TOKEN` needs `contents: read` and `issues: write`; no
-external AI service, API key, or paid enrollment is required. The workflow becomes
-available on the default branch after the September 27 publication. An issue
-permission failure leaves the summary and artifact available and fails visibly.
+The **Review certification maintenance** workflow is a manual full sweep in
+Actions. It checks all configured catalogs and announcement channels, retains
+reports/logs/candidate snapshots for **90 days**, publishes a run summary, and
+creates or refreshes one **Recurring certification maintenance review** issue.
+Its `GITHUB_TOKEN` needs `contents: read` and `issues: write`; no external AI
+service, API key, or paid enrollment is required. Routine scheduled monitoring
+uses the smaller objective cohorts and the separate source-health and discovery
+workflows. An issue permission failure leaves the summary and artifact available
+and fails visibly.
 
-Existing objective PR, discovery, and source-health workflows remain available.
+The objective-cohort, discovery, and source-health workflows remain available.
 The consolidated workflow provides a complete review task; it does not replace
 their approved baselines. A maintainer or research agent opens canonical vendor
 evidence, applies supported guide/catalog/source corrections, runs the shared
@@ -201,7 +202,17 @@ not advanced by discovery runs, and guides are never silently added or rewritten
 
 ## Objective monitoring
 
-The repository’s weekly objective workflow attempts the official objective page for every configured exam. It selects the adapter registered for that exam's provider in `data/vendors.json`, stores normalized objective and exam-status snapshots under `data/objective-snapshots`, and proposes changes through a pull request.
+The objective workflow checks one of four stable cohorts on the **1st, 8th, 15th,
+and 22nd of each month at 12:17 UTC**. Each active exam belongs to exactly one
+cohort, so the full selected catalog is checked over the month. A manual Actions
+run can check one cohort or a single exam code. The workflow selects the adapter
+registered for each exam's provider in `data/vendors.json`, compares normalized
+objective and exam-status snapshots with the accepted versions under
+`data/objective-snapshots`, and saves a JSON report and candidate diff as run
+artifacts. When differences are detected, it opens a review issue with one
+checklist item per affected exam. It does not commit, open a pull request, or
+update a guide. Review and accept each affected exam separately. New exams keep
+their cohort assignment stable without reshuffling existing exams.
 
 Some reachable provider pages do not expose their reviewed objective content to a non-browser
 HTML extractor. Known exact extraction failures are recorded in
@@ -318,23 +329,22 @@ Keep normal batches at 10 guides and never exceed 12. Record scrutinized results
 
 ## First run
 
-The first successful run creates normalized snapshots for all configured exams and opens a pull request. Review the extracted text against each linked official page before merging. Later runs compare against those approved snapshots.
+The accepted snapshot catalog is already committed. A scheduled run reports
+differences for its cohort; a manual run can target one exam. Review each
+candidate diff against the official page before changing its accepted snapshot
+and guide. A failed extraction does not erase or accept the existing baseline.
 
 ## Required repository settings
 
 1. Enable GitHub Actions.
-2. In **Settings → Actions → General**, allow workflows to create pull requests if the organization permits it.
-3. Ensure the default `GITHUB_TOKEN` can receive the workflow permissions declared in the workflow.
-4. Allow the source-health workflow to create or refresh its `maintenance` label and issue.
-5. Protect `main` with a pull-request requirement and normal review.
+2. Ensure the default `GITHUB_TOKEN` can receive the read and issue permissions declared in the workflows.
+3. Allow the source-health and objective workflows to create or refresh their `maintenance` issues.
+4. Protect `main` with a pull-request requirement and normal review.
 
-The `pull-requests: write` workflow permission does not override the repository or
-organization setting that prohibits Actions from creating pull requests. If GitHub
-rejects PR creation, the objective workflow remains failed and reports the publication
-step, run URL, and branch link. A maintainer can create the PR from that branch or an
-administrator can enable the setting in item 2. The `objective-monitor-report` artifact
-retains the objective report, available snapshot patch, and PR error for 30 days.
-Setup/test failures and source-extraction failures are reported separately.
+The `objective-monitor-report` artifact retains the objective report and
+available candidate patch for 30 days. Setup/test failures and
+source-extraction failures are reported separately. The Action never merges a
+snapshot or guide change.
 
 No PAT or external API key is required. The workflow uses the repository-scoped `GITHUB_TOKEN`.
 

@@ -3,40 +3,31 @@ import sys
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from objective_workflow_report import failure_body, pull_request_body
+from objective_workflow_report import changes_body, failure_body
 
 
 class ObjectiveWorkflowReportTests(unittest.TestCase):
-    def test_pr_permission_failure_is_not_reported_as_provider_failure(self):
-        text = failure_body(
-            {"changed": ["DP-420"], "errors": [], "manual_review": ["CAD"]},
-            {"objectives": {"outcome": "success"}, "snapshot_pr": {"outcome": "failure"}},
-            "https://example.com/run", "https://example.com/compare",
-            "GraphQL: GitHub Actions is not permitted to create or approve pull requests (createPullRequest)",
-        )
-        self.assertIn("zero unexpected errors", text)
-        self.assertIn("workflow-created pull requests are disabled", text)
-        self.assertIn("https://example.com/compare", text)
-        self.assertNotIn("unknown", text)
+    def test_detected_changes_become_individual_review_checks(self):
+        body = changes_body({"results": [
+            {"code": "DP-420", "status": "changed", "objectives_changed": True,
+             "status_changed": False, "url": "https://example.com/dp-420"},
+            {"code": "AZ-104", "status": "unchanged", "url": "https://example.com/az-104"},
+        ]}, "https://example.com/run")
+        self.assertIn("- [ ] **DP-420** (objectives)", body)
+        self.assertIn("https://example.com/run", body)
+        self.assertNotIn("AZ-104", body)
 
     def test_provider_errors_and_manual_limitations_stay_distinct(self):
         text = failure_body(
             {"changed": [], "errors": ["AZ-104"], "manual_review": ["CAD"]},
-            {"objectives": {"outcome": "failure"}}, "run", "compare",
+            {"objectives": {"outcome": "failure"}}, "run",
         )
         self.assertIn("failed for: **AZ-104**", text)
         self.assertIn("manual-review limitations: 1", text)
-        self.assertNotIn("workflow-created pull requests are disabled", text)
+        self.assertIn("one affected exam at a time", text)
 
     def test_missing_report_points_to_setup_or_test_failure(self):
-        text = failure_body(None, {"tests": {"outcome": "failure"}}, "run", "compare")
+        text = failure_body(None, {"tests": {"outcome": "failure"}}, "run")
         self.assertIn("`tests`", text)
         self.assertIn("No objective report was produced", text)
         self.assertNotIn("retrieval/extraction failed for", text)
-
-    def test_large_multi_provider_change_list_is_kept_in_body(self):
-        codes = [f"EXAM-{i}" for i in range(100)]
-        text = pull_request_body({"changed": codes})
-        self.assertTrue(all(code in text for code in codes))
-        self.assertIn("each provider's official sources", text)
-        self.assertIn("content review before merging", text)

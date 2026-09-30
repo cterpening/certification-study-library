@@ -2,17 +2,29 @@ name: Check certification objectives
 
 on:
   schedule:
-    - cron: "17 12 * * 1"
+    - cron: "17 12 1 * *"
+    - cron: "17 12 8 * *"
+    - cron: "17 12 15 * *"
+    - cron: "17 12 22 * *"
   workflow_dispatch:
+    inputs:
+      cohort:
+        description: Monthly cohort to check (ignored when an exam code is supplied)
+        type: choice
+        options: ['1', '2', '3', '4']
+        default: '1'
+      exam_code:
+        description: Optional single exam code for a targeted check
+        type: string
+        required: false
 
 concurrency:
   group: certification-objective-monitor
   cancel-in-progress: false
 
 permissions:
-  contents: write
+  contents: read
   issues: write
-  pull-requests: write
 
 jobs:
   monitor:
@@ -41,8 +53,26 @@ jobs:
 
       - name: Download and compare official objectives
         id: objectives
+        env:
+          REQUESTED_COHORT: ${{ github.event.inputs.cohort }}
+          REQUESTED_EXAM: ${{ github.event.inputs.exam_code }}
+          RUN_SCHEDULE: ${{ github.event.schedule }}
         run: |
+          if [ -n "$REQUESTED_EXAM" ]; then
+            set -- --exam-code "$REQUESTED_EXAM"
+          elif [ -n "$REQUESTED_COHORT" ]; then
+            set -- --cohort "$REQUESTED_COHORT"
+          else
+            case "$RUN_SCHEDULE" in
+              '17 12 1 * *') set -- --cohort 1 ;;
+              '17 12 8 * *') set -- --cohort 2 ;;
+              '17 12 15 * *') set -- --cohort 3 ;;
+              '17 12 22 * *') set -- --cohort 4 ;;
+              *) echo 'Unknown objective monitor schedule' >&2; exit 2 ;;
+            esac
+          fi
           python3 scripts/check_official_study_guides.py \
+            "$@" \
             --write \
             --report objective-report.json \
             --github-output "$GITHUB_OUTPUT"
@@ -58,32 +88,26 @@ jobs:
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Create objective snapshot pull request
-        id: snapshot_pr
+      - name: Save candidate snapshot diff
+        if: always() && hashFiles('objective-report.json') != ''
+        run: |
+          git add -N data/objective-snapshots
+          git diff -- data/objective-snapshots > objective-snapshot.patch
+
+      - name: Open objective review task
         if: steps.objectives.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
-          CHANGED_EXAMS: ${{ steps.objectives.outputs.changed_exams }}
-          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
-          branch="automation/objective-update-${GITHUB_RUN_ID}"
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git switch -c "$branch"
-          git add data/objective-snapshots
-          git diff --cached -- data/objective-snapshots > objective-snapshot.patch
-          git commit -m "Update official objective snapshots: ${CHANGED_EXAMS}"
-          git push --set-upstream origin "$branch"
-          python3 scripts/objective_workflow_report.py pull-request --output objective-pr-body.md
-          count="$(jq '.changed | length' objective-report.json)"
-          if ! gh pr create \
-            --base "$DEFAULT_BRANCH" \
-            --head "$branch" \
-            --title "Official certification objective updates (${count} exams)" \
-            --body-file objective-pr-body.md 2> objective-pr-error.txt; then
-            cat objective-pr-error.txt >&2
-            exit 1
-          fi
+          python3 scripts/objective_workflow_report.py --kind changes --output objective-changes.md
+          gh label create maintenance \
+            --color "6f42c1" \
+            --description "Repository and study-guide maintenance" \
+            --force
+          gh issue create \
+            --title "Objective changes from run ${GITHUB_RUN_ID}" \
+            --body-file objective-changes.md \
+            --label maintenance
 
       - name: Upload objective diagnostics
         if: always()
@@ -93,7 +117,6 @@ jobs:
           path: |
             objective-report.json
             objective-snapshot.patch
-            objective-pr-error.txt
           retention-days: 30
 
       - name: Open monitoring failure issue
@@ -108,7 +131,7 @@ jobs:
             --description "Repository and study-guide maintenance" \
             --force
           existing="$(gh issue list --state open --search "$title in:title" --json number --jq '.[0].number // empty')"
-          python3 scripts/objective_workflow_report.py failure --output objective-failure.md
+          python3 scripts/objective_workflow_report.py --output objective-failure.md
           if [ -n "$existing" ]; then
             gh issue comment "$existing" --body-file objective-failure.md
           else

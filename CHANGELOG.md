@@ -1,5 +1,7 @@
 # Changelog
 
+- September 30, 2026: Spread objective monitoring across four stable monthly cohorts on the 1st, 8th, 15th, and 22nd. Added manual single-exam runs, candidate diffs, and a checklist issue for detected changes so guides can be reviewed and updated one exam at a time. Kept the combined full-library maintenance sweep manual; scheduled source-health and catalog discovery checks continue to report without changing guides.
+
 - September 30, 2026: Reconciled the roadmap's published-guide count with the catalog: 223 guides across 26 vendors, including six GitHub guides. Clarified that the 222-guide denominator in the older rubric-1 audit summary is historical.
 
 - September 30, 2026: Made the AI-generated, best-effort status of the [AB-100 lab](docs/labs/ab-100.md) explicit on the lab page and starter README. Clarified that 13 synthetic local tests passed, while the proposed service workflow has not been tested in a real tenant or independently reviewed; added the same boundary to the lab index.

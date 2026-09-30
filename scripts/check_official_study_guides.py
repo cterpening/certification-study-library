@@ -2301,6 +2301,20 @@ def write_github_outputs(report: dict[str, object], path: Path) -> None:
         output.write(f"manual_review_exams={','.join(manual_review)}\n")
 
 
+def cohort_codes(exams: list[dict[str, object]], cohort: int) -> set[str]:
+    """Assign active exams to one of four stable monthly monitor cohorts."""
+    if cohort not in range(1, 5):
+        raise ValueError("Objective monitor cohort must be between 1 and 4")
+    return {
+        exam["code"] for exam in exams
+        if exam.get("status") != "retired"
+        and int.from_bytes(
+            hashlib.sha256(f"{exam['vendor_id']}/{exam['code']}".encode()).digest()[:4],
+            "big",
+        ) % 4 + 1 == cohort
+    }
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", type=Path, default=Path("config/exams.json"))
@@ -2316,18 +2330,33 @@ def parse_args() -> argparse.Namespace:
         "--limitations-config", type=Path, default=DEFAULT_LIMITATIONS_CONFIG
     )
     parser.add_argument("--write", action="store_true")
-    parser.add_argument(
+    scope = parser.add_mutually_exclusive_group()
+    scope.add_argument(
         "--exam-code",
         action="append",
         dest="exam_codes",
         help="Limit monitoring to one exam code; repeat for multiple exams.",
+    )
+    scope.add_argument(
+        "--cohort", type=int, choices=range(1, 5),
+        help="Check one of four stable monthly exam cohorts.",
     )
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
-    selected = set(args.exam_codes) if args.exam_codes else None
+    configured = load_config(args.config, args.vendor_config)
+    active_codes = {exam["code"] for exam in configured if exam.get("status") != "retired"}
+    if args.exam_codes:
+        selected = set(args.exam_codes)
+        unknown = selected - active_codes
+        if unknown:
+            raise SystemExit("Unknown or retired exam code(s): " + ", ".join(sorted(unknown)))
+    elif args.cohort:
+        selected = cohort_codes(configured, args.cohort)
+    else:
+        selected = None
     report = monitor(
         args.config,
         args.snapshot_dir,
@@ -2336,6 +2365,11 @@ def main() -> int:
         selected,
         args.limitations_config,
     )
+    report["selection"] = {
+        "cohort": args.cohort,
+        "requested_exam_codes": sorted(args.exam_codes or []),
+        "checked_exams": len(report["results"]),
+    }
     args.report.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     if args.github_output:
         write_github_outputs(report, args.github_output)
