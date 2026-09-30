@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [CPP-22-02 deep review](docs/research/2026-09-29-cpp-22-02-deep-review.md): Mapped 34 objectives and expanded 30 answers; seven original C++17 files passed 16 hosted workbook runs, 16 diagnostic probes and four legacy mode probes. Provider arithmetic, eligibility/course/policy conflicts and broader lab/human review limits remain explicit.
+
 - September 29, 2026: [CPA-21-02 deep review](docs/research/2026-09-29-cpa-21-02-deep-review.md): Mapped 35 objectives and expanded 30 answers; six original C++17 files passed 13 hosted workbook runs, 16 diagnostic probes and ten mode probes. Source/booking conflicts, broader labs and human review remain explicit.
 
 - September 29, 2026: [CLP-12-01 deep review](docs/research/2026-09-29-clp-12-01-deep-review.md): Mapped 29 objectives and expanded 30 answers; five complete original C11 programs passed 17 hosted workbook runs plus seven dialect/header checks. ThreadSanitizer crashes, booking/source conflicts and human review remain explicit.

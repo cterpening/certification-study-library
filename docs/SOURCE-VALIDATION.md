@@ -2189,6 +2189,8 @@ answer dump or copied course content is used. Blueprint SHA-256:
 
 ## CPP-22-02 coverage record
 
+The September 29 [deep review](research/2026-09-29-cpp-22-02-deep-review.md) maps 34 detailed objectives. Mapped all 34 objectives and expanded all 30 answers. Seven exact public C++17 files passed sixteen hosted CMake runs, including four optimized and four address/undefined sanitizer variants. Sixteen invalid-code probes were rejected and four legacy ptr_fun mode probes recorded. Corrected for_each mutation, destination/invalidation/order/multiplicity/formatting contracts. Published arithmetic, eligibility/course/policy conflicts, access limits, broader labs and human review remain explicit. Current guide citations: 25 registered, 15 reachable, 2 access-blocked, 8 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: nine published blocks covering sequence/adaptor and associative containers; non-modifying, modifying, sorting/search, merge/set/min/max algorithms; function objects; advanced I/O; templates

@@ -3,6 +3,160 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "cpp-institute-advanced-course",
+      "title": "C++ Institute C++ Advanced course",
+      "url": "https://cppinstitute.org/cpp-advanced",
+      "publisher": "OpenEDG / C++ Institute",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "supported_exams": [
+        "CPP-22-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPP-22-02 deep review: Complete indexed primary public landing read: English/free, 50 hours at seven/week, CPP-22-02, nine modules and all syllabus/completion bullets. No formal prerequisite, Essentials 1/2 recommended. Conflicts with Edube 42 hours/22-01/prior course requirement. Direct fetch failed. No enrolled lesson or assessment. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cpp-institute-pearson-program",
+      "title": "Pearson VUE C++ Institute program",
+      "url": "https://www.pearsonvue.com/cppinstitute/",
+      "publisher": "Pearson VUE",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "CPP-22-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPP-22-02 deep review: Complete indexed primary program body read, updated September 11 2024, including four exam rows, registration/voucher/course context and 15-day failed retake. CPP row calls CPA a prerequisite whereas canonical exam says recommended. Passed same-version repeat prohibited. Direct fetch failed; no account or booking. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cpp-credly-badge",
+      "title": "OpenEDG CPP-22-02 issuer badge",
+      "url": "https://www.credly.com/org/openedg/badge/cpp-22-02-cpp-c-certified-professional-programmer",
+      "publisher": "OpenEDG / C++ Institute",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "CPP-22-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPP-22-02 deep review: Complete indexed issuer badge body read: CPA and CPP passes in earning criteria and 24-hour advance scheduling context. Direct fetch failed. Canonical exam says CPA recommended; unresolved eligibility distinction, no credential/account assertion. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cpp17-algorithms",
+      "title": "C++17 draft algorithms chapter",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/algorithms",
+      "publisher": "WG21 C++ draft (public rendering)",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CPP-22-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPP-22-02 deep review: Selected N4659 aggregate sections read in full: general algorithm requirements; all/any/none; for_each/find/find_end/find_first_of/adjacent_find/count/mismatch/equal/search including search_n/searcher; copy/copy_backward/copy_if; swap/transform; replace/fill/generate/remove/unique/reverse/rotate families; sorting requirements/sort/stable_sort; is_sorted and nth_element (latter incidental, not workbook); binary-search group; partitions; merge; all sorted-set operations; min/max/minmax scalar/initializer-list/element forms. Parallel overload wording in those sections read incidentally, execution serial only. Not full chapter: synopsis/parallel introduction/is_permutation/move/sample/shuffle/partial-sort/heap/clamp/lex/permutation/C sort sections not audited. Old find_end formula not copied; actual final-match behavior tested. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cpp17-containers",
+      "title": "C++17 draft containers chapter",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/containers",
+      "publisher": "WG21 C++ draft (public rendering)",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CPP-22-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPP-22-02 deep review: Selected N4659 aggregate: complete associative requirements including table/exception guarantees; deque/list/vector overview paragraphs before declarations; complete deque.modifiers, list.modifiers/list.ops, vector.capacity/data/modifiers, map.access; only opening map.modifiers insert paragraphs and try_emplace signatures, not full section. Complete container-adaptor general paragraphs, queue definition, priority_queue overview/class declaration and push/pop members, stack introduction/definition. General container/sequence tables, unordered and remaining aggregate not audited. Equal-allocator node transfers, stable handles, const keys, comparator equivalence and adapter interfaces distinguish primary rules from observed behavior. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cpp17-input-output",
+      "title": "C++17 draft input/output chapter",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/input.output",
+      "publisher": "WG21 C++ draft (public rendering)",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CPP-22-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPP-22-02 deep review: Selected N4659 aggregate: complete narrow-stream objects; fmtflags/iostate types; fmtflags state functions; basic_ios members including copyfmt; state flag functions; ios manipulators; formatted output requirements/numeric inserters; character/string-literal inserters; standard iomanip flag/base/fill/precision/width manipulators. Complete istream sentry, formatted-input common requirements/arithmetic extractors; istream.extractors read through paragraph 14 and beginning 15 only. Unformatted ignore paragraphs 25-27 and peek 28-29 complete, read paragraph 30 beginning only. Complete streambuf.virt.put xsputn/overflow plus incidental tail of preceding pbackfail. No full I/O chapter, file/device or locale-implementation audit. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cpp17-templates",
+      "title": "C++17 draft templates chapter",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/temp",
+      "publisher": "WG21 C++ draft (public rendering)",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CPP-22-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPP-22-02 deep review: Selected N4659 aggregate: complete chapter introduction 7 paragraphs; temp.names; class/member-function/member-class sections; member templates 8 paragraphs; friends 8 paragraphs; function templates 2 paragraphs. Name-resolution paragraphs 1-7 complete and start 8; explicit-specialization paragraphs 1-6 complete and start 7; deduction-call paragraphs 1-3 complete and paragraph 4 partial through 4.3 beginning. No full templates/implicit-explicit-instantiation/partial-class-specialization audit. Full specializations and dependent disambiguation exercised; unsupported function partial specialization/virtual member template rejected diagnostically. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cpp17-removed-adaptors",
+      "title": "C++17 draft removed legacy adaptors",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/diff.cpp14.depr",
+      "publisher": "WG21 C++ draft (public rendering)",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CPP-22-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPP-22-02 deep review: Complete 872-character N4659 diff.cpp14.depr section read: removed legacy adaptors including ptr_fun. Primary rule differs from hosted library retention with deprecation warnings in C++17. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cpp14-pointer-adaptors",
+      "title": "C++14 draft deprecated function-pointer adaptors",
+      "url": "https://timsong-cpp.github.io/cppwp/n4140/depr.function.pointer.adaptors",
+      "publisher": "WG21 C++ draft (public rendering)",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CPP-22-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPP-22-02 deep review: Complete 1378-character N4140 depr.function.pointer.adaptors section read, six paragraphs. Unary/binary function-pointer wrapper constructors/returns; not argument binding by itself. Historical context only; no copied source example. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cpp17-function-objects",
+      "title": "C++17 draft function objects",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/function.objects",
+      "publisher": "WG21 C++ draft (public rendering)",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CPP-22-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPP-22-02 deep review: Selected arithmetic.operations introduction plus complete plus/minus sections, lines 313-354 of 51110-character aggregate. Typed and transparent forms distinguished. Remaining function-object chapter not read. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cpp17-numeric-output",
+      "title": "C++17 draft numeric formatting facet",
+      "url": "https://timsong-cpp.github.io/cppwp/n4659/facet.num.put.virtuals",
+      "publisher": "WG21 C++ draft (public rendering)",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CPP-22-02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CPP-22-02 deep review: Complete N4659 facet.num.put.virtuals body read: all six paragraphs, four conversion/padding/output stages and integer/float/length/numeric/padding tables. Precision semantics via printf conversion, classic-locale stage versus locale adjustment, width reset and boolalpha path. No broad locale chapter audit. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "cpp17-exception-specification",
       "title": "C++17 draft exception specifications",
       "url": "https://timsong-cpp.github.io/cppwp/n4659/except.spec",
@@ -797,10 +951,11 @@
       "supported_exams": [
         "CLA-11-03",
         "CLP-12-01",
-        "CPA-21-02"
+        "CPA-21-02",
+        "CPP-22-02"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 CLA-11-03 deep review: Complete indexed scheduling page read, revised October 14, 2025. Explicit CLA/CLP/CPA/CPP active-code scope and test-center/OnVUE overview, typical 24-hour change/cancel window, availability/pricing/accommodations qualified by actual booking. No account, download, system test, appointment or contact action. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution. September 29 CLP-12-01 deep review: Complete indexed October 14, 2025 scheduling body read in preceding same-context CLA review: explicit CLP-12-01 scope, test-center/OnVUE delivery and typical 24-hour changes. No appointment or system test. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution. September 29 CPA-21-02 deep review: Complete indexed October 14, 2025 scheduling body read in the preceding same-context CLA review; explicit CPA-21-02 inclusion, Pearson test-center/OnVUE and typical 24-hour changes reused. Fresh direct fetch failed. No appointment or system test. See docs/research/2026-09-29-cpa-21-02-deep-review.md No live infrastructure execution."
+      "notes": "September 29 CLA-11-03 deep review: Complete indexed scheduling page read, revised October 14, 2025. Explicit CLA/CLP/CPA/CPP active-code scope and test-center/OnVUE overview, typical 24-hour change/cancel window, availability/pricing/accommodations qualified by actual booking. No account, download, system test, appointment or contact action. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution. September 29 CLP-12-01 deep review: Complete indexed October 14, 2025 scheduling body read in preceding same-context CLA review: explicit CLP-12-01 scope, test-center/OnVUE delivery and typical 24-hour changes. No appointment or system test. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution. September 29 CPA-21-02 deep review: Complete indexed October 14, 2025 scheduling body read in the preceding same-context CLA review; explicit CPA-21-02 inclusion, Pearson test-center/OnVUE and typical 24-hour changes reused. Fresh direct fetch failed. No appointment or system test. See docs/research/2026-09-29-cpa-21-02-deep-review.md No live infrastructure execution. September 29 CPP-22-02 deep review: Complete indexed October 14 2025 scheduling body read in preceding same-context CLA review and reused for explicit CPP scope, Pearson test-center/OnVUE and typical 24-hour changes. Fresh CPP fetch failed; no appointment/system test. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "gcc-15-c-dialect-options",
@@ -3069,10 +3224,11 @@
         "CLE-10-01",
         "CLA-11-03",
         "CLP-12-01",
-        "CPA-21-02"
+        "CPA-21-02",
+        "CPP-22-02"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 CPE-20-01 deep review: Direct GitHub health request timed out; complete public API documentation read via web reader. Compiler list and GCC 14.2/Clang 19.1 compile/execute endpoints actually used for original public programs only, no account, saved-code shortener or publishing action. Exact requests/results and code hashes captured. Remote execution is not local/offline compilation. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution. September 29 CLE-10-01 deep review: Direct documentation health request failed. Public API list-compilers and compile/execute request sections read via web reader; full documentation previously read for CPE. Actual C compiler list returned cg142 and cclang1910. Original public C11 programs submitted with allowStoreCodeDebug=false, no account or saved-code shortlink; exact request/result receipts retained. Remote execution is not local compilation. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution. September 29 CLA-11-03 deep review: Complete indexed API documentation read, including compiler list, compile/execute options, files array and CMake/customOutputFilename endpoint. Actual compiler IDs cg152/cclang2010 observed. Original public-purpose source submitted with allowStoreCodeDebug=false, no account or shared shortlink. CMake step codes and execResult checked separately; top-level code alone did not identify a failed link. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution. September 29 CLP-12-01 deep review: Complete indexed API documentation read in preceding same-context CLA review and reused for compile/execute options. Only original public-purpose source submitted, allowStoreCodeDebug=false; no saved-code/account request or local installation. Actual GCC15.2/Clang20.1 hosted builds. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution. September 29 CPA-21-02 deep review: Complete indexed API documentation read during the preceding same-context CLA review and reused for compile/execute/CMake endpoint options. Direct documentation request failed. Fresh compiler-list request confirmed g152 GCC 15.2 and clang2010 Clang 20.1. Original public-purpose C++ source only, allowStoreCodeDebug false; no saved-code/account request or local toolchain installation. See docs/research/2026-09-29-cpa-21-02-deep-review.md No live infrastructure execution."
+      "notes": "September 29 CPE-20-01 deep review: Direct GitHub health request timed out; complete public API documentation read via web reader. Compiler list and GCC 14.2/Clang 19.1 compile/execute endpoints actually used for original public programs only, no account, saved-code shortener or publishing action. Exact requests/results and code hashes captured. Remote execution is not local/offline compilation. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution. September 29 CLE-10-01 deep review: Direct documentation health request failed. Public API list-compilers and compile/execute request sections read via web reader; full documentation previously read for CPE. Actual C compiler list returned cg142 and cclang1910. Original public C11 programs submitted with allowStoreCodeDebug=false, no account or saved-code shortlink; exact request/result receipts retained. Remote execution is not local compilation. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution. September 29 CLA-11-03 deep review: Complete indexed API documentation read, including compiler list, compile/execute options, files array and CMake/customOutputFilename endpoint. Actual compiler IDs cg152/cclang2010 observed. Original public-purpose source submitted with allowStoreCodeDebug=false, no account or shared shortlink. CMake step codes and execResult checked separately; top-level code alone did not identify a failed link. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution. September 29 CLP-12-01 deep review: Complete indexed API documentation read in preceding same-context CLA review and reused for compile/execute options. Only original public-purpose source submitted, allowStoreCodeDebug=false; no saved-code/account request or local installation. Actual GCC15.2/Clang20.1 hosted builds. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution. September 29 CPA-21-02 deep review: Complete indexed API documentation read during the preceding same-context CLA review and reused for compile/execute/CMake endpoint options. Direct documentation request failed. Fresh compiler-list request confirmed g152 GCC 15.2 and clang2010 Clang 20.1. Original public-purpose C++ source only, allowStoreCodeDebug false; no saved-code/account request or local toolchain installation. See docs/research/2026-09-29-cpa-21-02-deep-review.md No live infrastructure execution. September 29 CPP-22-02 deep review: Complete indexed API documentation read in preceding same-context CLA review and reused for compile/execute/CMake options. Fresh direct CPP documentation fetch failed. Fresh execution receipts identify GCC 15.2/Clang 20.1; Clang CMake external toolchain GCC 14.2. Only original public-purpose source submitted, allowStoreCodeDebug false, no saved-code/account request or local installation. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "cpp17-multiplicative",
@@ -57645,7 +57801,7 @@
         "CPA-21-02",
         "CPP-22-02"
       ],
-      "notes": "Identification, NDA, accommodations, security and retake rules across TestNow and Pearson VUE delivery; exam-specific pages remain authoritative for channel and format. September 29 CPE-20-01 deep review: Direct request timed out; complete public policy read via web reader. July 23, 2025 policy separately covers CLE/CPE TestNow and associate/professional Pearson VUE delivery: seven-day failed-retake wait for CLE/CPE versus 15 days in the other section. Admission/security/accommodation context read, not a personal booking determination. No account, exam or settings action. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution. September 29 CLE-10-01 deep review: Fresh direct request timed out. Entry-level policy read completely via web reader in this review; associate/professional section previously read completely during CPE and revisited for context. CLE/CPE TestNow proctoring and seven-day failed-retake wait differ from the Pearson associate/professional section and its 15-day rule. Admission, NDA, security and accommodation text were research only; no account or exam action. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution. September 29 CLA-11-03 deep review: Complete indexed public policy body read, both TestNow and Pearson sections, updated July 23, 2025. CLA belongs to Pearson associate/professional 15-day failed-retake rule, not CLE/CPE seven-day TestNow rule; no passed same-version repeat. Conflicting anytime-before versus 24-hour rescheduling wording retained as unresolved; OnVUE admission paragraph names CPA/CPP though section includes four exams. Actual appointment, eligibility, account, identification and accommodation process not exercised. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution. September 29 CLP-12-01 deep review: Complete indexed public policy body read in the immediately preceding same-context CLA review and applied to explicit Pearson CLP scope. July 23, 2025 update, 15-day failed retake versus TestNow seven-day rule; rescheduling anytime-before versus 24-hour wording conflicts. No successful fresh direct fetch, account or personal eligibility determination. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution. September 29 CPA-21-02 deep review: Complete public policy body read during the preceding same-context CLA review and reused for its explicit CPA/Pearson scope. July 23, 2025 update distinguishes 15-day failed retake for associate/professional exams from seven days for TestNow. Anytime-before versus 24-hour rescheduling wording remains conflicting. Fresh direct CPA fetch failed; no account, appointment or personal eligibility determination. See docs/research/2026-09-29-cpa-21-02-deep-review.md No live infrastructure execution."
+      "notes": "Identification, NDA, accommodations, security and retake rules across TestNow and Pearson VUE delivery; exam-specific pages remain authoritative for channel and format. September 29 CPE-20-01 deep review: Direct request timed out; complete public policy read via web reader. July 23, 2025 policy separately covers CLE/CPE TestNow and associate/professional Pearson VUE delivery: seven-day failed-retake wait for CLE/CPE versus 15 days in the other section. Admission/security/accommodation context read, not a personal booking determination. No account, exam or settings action. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution. September 29 CLE-10-01 deep review: Fresh direct request timed out. Entry-level policy read completely via web reader in this review; associate/professional section previously read completely during CPE and revisited for context. CLE/CPE TestNow proctoring and seven-day failed-retake wait differ from the Pearson associate/professional section and its 15-day rule. Admission, NDA, security and accommodation text were research only; no account or exam action. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution. September 29 CLA-11-03 deep review: Complete indexed public policy body read, both TestNow and Pearson sections, updated July 23, 2025. CLA belongs to Pearson associate/professional 15-day failed-retake rule, not CLE/CPE seven-day TestNow rule; no passed same-version repeat. Conflicting anytime-before versus 24-hour rescheduling wording retained as unresolved; OnVUE admission paragraph names CPA/CPP though section includes four exams. Actual appointment, eligibility, account, identification and accommodation process not exercised. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution. September 29 CLP-12-01 deep review: Complete indexed public policy body read in the immediately preceding same-context CLA review and applied to explicit Pearson CLP scope. July 23, 2025 update, 15-day failed retake versus TestNow seven-day rule; rescheduling anytime-before versus 24-hour wording conflicts. No successful fresh direct fetch, account or personal eligibility determination. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution. September 29 CPA-21-02 deep review: Complete public policy body read during the preceding same-context CLA review and reused for its explicit CPA/Pearson scope. July 23, 2025 update distinguishes 15-day failed retake for associate/professional exams from seven days for TestNow. Anytime-before versus 24-hour rescheduling wording remains conflicting. Fresh direct CPA fetch failed; no account, appointment or personal eligibility determination. See docs/research/2026-09-29-cpa-21-02-deep-review.md No live infrastructure execution. September 29 CPP-22-02 deep review: Complete primary policy body read in preceding same-context CLA review and reused for explicit associate/professional scope: 15-day failed retake versus 7 days TestNow. Anytime-before versus 24-hour reschedule wording remains conflicting. Fresh CPP request failed; no appointment terms verified. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "cpp-institute-certification-catalog",
@@ -57661,9 +57817,10 @@
         "CLE-10-01",
         "CLA-11-03",
         "CLP-12-01",
-        "CPA-21-02"
+        "CPA-21-02",
+        "CPP-22-02"
       ],
-      "notes": "Current C and C++ track/level inventory, delivery overview, recommended progression and lifetime/version-preserving certificate statement. September 29 CPE-20-01 deep review: Direct request timed out; complete certification-exams catalog read through web reader. CPE remains entry-level, lifetime credential retains completed version, no replacement announcement found on examined pages. General Pearson/OnVUE language does not override CPE-specific TestNow. No unseen release channel or future availability inferred. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution. September 29 CLE-10-01 deep review: Fresh direct request timed out; complete public catalog read via web reader. Entry CLE remains listed; lifetime credentials retain completed version. General Pearson/OnVUE program language does not override CLE-specific TestNow. No replacement found on examined pages, not a claim about every unseen release channel. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution. September 29 CLA-11-03 deep review: Complete public web-reader catalog body read after direct failure. CLA remains associate C track; lifetime/version-specific credential wording and no replacement on examined pages. General program delivery copy does not override credential-specific policy. No unseen release-feed audit. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution. September 29 CLP-12-01 deep review: Complete public catalog body read in preceding same-context CLA review; current C professional track and lifetime/version-specific wording retained. Direct CLP request failed; no unseen feed or account inspection. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution. September 29 CPA-21-02 deep review: Complete public catalog body read in the preceding same-context CLA review; current C++ associate/professional track and lifetime/version-specific credential context reused. Fresh direct CPA request failed. No unseen release feed or authenticated account inspection. See docs/research/2026-09-29-cpa-21-02-deep-review.md No live infrastructure execution."
+      "notes": "Current C and C++ track/level inventory, delivery overview, recommended progression and lifetime/version-preserving certificate statement. September 29 CPE-20-01 deep review: Direct request timed out; complete certification-exams catalog read through web reader. CPE remains entry-level, lifetime credential retains completed version, no replacement announcement found on examined pages. General Pearson/OnVUE language does not override CPE-specific TestNow. No unseen release channel or future availability inferred. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution. September 29 CLE-10-01 deep review: Fresh direct request timed out; complete public catalog read via web reader. Entry CLE remains listed; lifetime credentials retain completed version. General Pearson/OnVUE program language does not override CLE-specific TestNow. No replacement found on examined pages, not a claim about every unseen release channel. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution. September 29 CLA-11-03 deep review: Complete public web-reader catalog body read after direct failure. CLA remains associate C track; lifetime/version-specific credential wording and no replacement on examined pages. General program delivery copy does not override credential-specific policy. No unseen release-feed audit. See docs/research/2026-09-29-cla-11-03-deep-review.md No live infrastructure execution. September 29 CLP-12-01 deep review: Complete public catalog body read in preceding same-context CLA review; current C professional track and lifetime/version-specific wording retained. Direct CLP request failed; no unseen feed or account inspection. See docs/research/2026-09-29-clp-12-01-deep-review.md No live infrastructure execution. September 29 CPA-21-02 deep review: Complete public catalog body read in the preceding same-context CLA review; current C++ associate/professional track and lifetime/version-specific credential context reused. Fresh direct CPA request failed. No unseen release feed or authenticated account inspection. See docs/research/2026-09-29-cpa-21-02-deep-review.md No live infrastructure execution. September 29 CPP-22-02 deep review: Complete catalog body read in preceding same-context CLA review and reused for C++ professional track and lifetime/version-specific credential context. Fresh CPP fetch failed. No unseen release feed or authenticated account. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "openedg-cpp-essentials-1",
@@ -57736,7 +57893,7 @@
         "CPA-21-02",
         "CPP-22-02"
       ],
-      "notes": "44-hour, 13-course broad path. Use beginner courses for CPE, object-oriented/exception/pointer sections for CPA, or current Standard Library containers and algorithms for CPP; select only objective-relevant material. September 29 CPE-20-01 deep review: Complete 5729-character public listing read. Thirteen courses/44-hour headline; Learn To Program With C++ 17 is 5h19m dated May 11, 2022, C++ Fundamentals Including C++17 is 5h48m dated July 2, 2025: 667 minutes/11h07m combined. Optional Practical C++14/17 course 2h33m. Advanced path exceeds entry scope; no paid lesson, assessment or trial access. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution. September 29 CPA-21-02 deep review: Complete 5,729-character public path landing read. Banner lists 13 courses/44 hours; the thirteen listed durations total 44 hours 10 minutes. Course dates include January 2026 Beyond the Basics and Sequential Containers, with C++17-oriented foundations and broader algorithms/testing material. This is not verified complete CPA alignment. No paid video or exercise interior read. See docs/research/2026-09-29-cpa-21-02-deep-review.md No live infrastructure execution."
+      "notes": "44-hour, 13-course broad path. Use beginner courses for CPE, object-oriented/exception/pointer sections for CPA, or current Standard Library containers and algorithms for CPP; select only objective-relevant material. September 29 CPE-20-01 deep review: Complete 5729-character public listing read. Thirteen courses/44-hour headline; Learn To Program With C++ 17 is 5h19m dated May 11, 2022, C++ Fundamentals Including C++17 is 5h48m dated July 2, 2025: 667 minutes/11h07m combined. Optional Practical C++14/17 course 2h33m. Advanced path exceeds entry scope; no paid lesson, assessment or trial access. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution. September 29 CPA-21-02 deep review: Complete 5,729-character public path landing read. Banner lists 13 courses/44 hours; the thirteen listed durations total 44 hours 10 minutes. Course dates include January 2026 Beyond the Basics and Sequential Containers, with C++17-oriented foundations and broader algorithms/testing material. This is not verified complete CPA alignment. No paid video or exercise interior read. See docs/research/2026-09-29-cpa-21-02-deep-review.md No live infrastructure execution. September 29 CPP-22-02 deep review: Fresh identical 5729-character landing fetched; complete body read during preceding same-context CPA review and reused. Banner 13 courses/44 hours; listed durations total 44 hours 10 minutes. No paid video/exercise interior or complete CPP alignment audit. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "oreilly-cpp-crash-course",
@@ -58967,7 +59124,7 @@
         "CPA-21-02",
         "CPP-22-02"
       ],
-      "notes": "Modern design, type, resource, ownership, container and algorithm guidance; related professional context rather than an exam blueprint. September 29 CPA-21-02 deep review: Selected sections only from a roughly 717,603-character fetched body. Complete C.20, C.21, C.22, C.35, C.82, E.12, E.13, E.15, E.16 and E.17 read. E.6 read through five RAII examples and notes on reasons exceptions may be unavailable, not its complete remainder; C.36/C.83/E.14 only partial incidental reading. Guidance is design advice, not normative wording. No whole-guidelines audit or copied invalid base-deletion example. See docs/research/2026-09-29-cpa-21-02-deep-review.md No live infrastructure execution."
+      "notes": "Modern design, type, resource, ownership, container and algorithm guidance; related professional context rather than an exam blueprint. September 29 CPA-21-02 deep review: Selected sections only from a roughly 717,603-character fetched body. Complete C.20, C.21, C.22, C.35, C.82, E.12, E.13, E.15, E.16 and E.17 read. E.6 read through five RAII examples and notes on reasons exceptions may be unavailable, not its complete remainder; C.36/C.83/E.14 only partial incidental reading. Guidance is design advice, not normative wording. No whole-guidelines audit or copied invalid base-deletion example. See docs/research/2026-09-29-cpa-21-02-deep-review.md No live infrastructure execution. September 29 CPP-22-02 deep review: Fresh 717603-character aggregate fetched; no new CPP-specific rule audit. Preceding same-context CPA reading reused only as broader guidance: complete C.20/C.21/C.22/C.35/C.82/E.12/E.13/E.15/E.16/E.17; E.6 through five RAII examples and availability notes, and incidental partial C.36/C.83/E.14. Not whole-guidelines or normative authority. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "oreilly-cpp-crash-course-second",
@@ -58984,28 +59141,116 @@
       "notes": "Modern broad C++ reference. Select 15–25 hours matching the active blueprint and label standard-version differences. September 29 CPA-21-02 deep review: HTTP 403. No subscription interior, current edition contents, exercises or complete CPA alignment audited. See docs/research/2026-09-29-cpa-21-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cpp-22-02-syllabus","title":"CPP C++ Certified Professional Programmer","url":"https://cppinstitute.org/cpp","publisher":"OpenEDG C++ Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["CPP-22-02"],"notes":"Canonical active nine-block exam page. Its header says 40 questions while displayed block counts total 32 and weights total 107%; preserve the values and await correction rather than normalizing them."
+      "id": "cpp-22-02-syllabus",
+      "title": "CPP C++ Certified Professional Programmer",
+      "url": "https://cppinstitute.org/cpp",
+      "publisher": "OpenEDG C++ Institute",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CPP-22-02"
+      ],
+      "notes": "Canonical active nine-block exam page. Its header says 40 questions while displayed block counts total 32 and weights total 107%; preserve the values and await correction rather than normalizing them. September 29 CPP-22-02 deep review: Direct request and automated objective monitor failed/timed out. Complete indexed canonical primary body read: active CPP-22-02, July 22 2025 update, September 10 2013 first publication, all 34 objectives manually compared in groups 6/5/5/4/2/3/2/3/4. Forty questions, one point each/max 40, 65+about 10 minutes, 70%, English, USD 325/375, Pearson, CPA recommended. Published weights sum 107% and block counts 32, not 40. Adapter-traversal wording and Heap block title interpreted against actual interfaces/numbered objectives. Snapshot retained, no successful automated hash check or eligibility determination. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"openedg-cpp-advanced","title":"C++ Advanced","url":"https://edube.org/study/cpp","publisher":"OpenEDG C++ Institute / Edube","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["CPP-22-02"],"notes":"Free provider-aligned 42-hour advanced course whose public associated-certification field still says CPP-22-01; reconcile every assessment with the live CPP-22-02 page."
+      "id": "openedg-cpp-advanced",
+      "title": "C++ Advanced",
+      "url": "https://edube.org/study/cpp",
+      "publisher": "OpenEDG C++ Institute / Edube",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CPP-22-02"
+      ],
+      "notes": "Free provider-aligned 42-hour advanced course whose public associated-certification field still says CPP-22-01; reconcile every assessment with the live CPP-22-02 page. September 29 CPP-22-02 deep review: Complete 2739-character public landing read: free English advanced course, 42 hours at seven/week, nine modules, associated CPP-22-01. Requires CPA-level course completion before enrollment. Advertised completion discount not eligibility-tested. Course body describes generic CPP; no enrolled interior. Duration/version/prerequisite differ from vendor landing. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cisco-cpp-advanced","title":"C++ Advanced","url":"https://www.netacad.com/courses/c-plus-plus-advanced","publisher":"Cisco Networking Academy / OpenEDG C++ Institute","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["CPP-22-02"],"notes":"Official partner delivery linked from the live CPP page. Verify current version, enrollment and runtime after login."
+      "id": "cisco-cpp-advanced",
+      "title": "C++ Advanced",
+      "url": "https://www.netacad.com/courses/c-plus-plus-advanced",
+      "publisher": "Cisco Networking Academy / OpenEDG C++ Institute",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CPP-22-02"
+      ],
+      "notes": "Official partner delivery linked from the live CPP page. Verify current version, enrollment and runtime after login. September 29 CPP-22-02 deep review: HTTP 200 returned a 46-character application shell. No rendered course, curriculum, duration, enrolled lesson or assessment read. Inferred 42-hour duration removed from resource row. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"microsoft-cpp-standard-library-reference","title":"C++ Standard Library Reference","url":"https://learn.microsoft.com/en-us/cpp/standard-library/cpp-standard-library-reference?view=msvc-170","publisher":"Microsoft Learn","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["CPP-22-02"],"notes":"Official Microsoft implementation documentation for targeted container, algorithm, iterator, function-object, I/O and template lookup."
+      "id": "microsoft-cpp-standard-library-reference",
+      "title": "C++ Standard Library Reference",
+      "url": "https://learn.microsoft.com/en-us/cpp/standard-library/cpp-standard-library-reference?view=msvc-170",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CPP-22-02"
+      ],
+      "notes": "Official Microsoft implementation documentation for targeted container, algorithm, iterator, function-object, I/O and template lookup. September 29 CPP-22-02 deep review: Complete 2209-character public index read, June 9 2025. Historical STL versus whole-standard-library terminology and navigation only; linked chapters not read. Generic authentication banner did not hide index body. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cppreference-cpp-containers","title":"C++ Containers Library","url":"https://en.cppreference.com/w/cpp/container.html","publisher":"cppreference.com","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["CPP-22-02"],"notes":"Detailed independent container and invalidation reference for targeted study."
+      "id": "cppreference-cpp-containers",
+      "title": "C++ Containers Library",
+      "url": "https://en.cppreference.com/w/cpp/container.html",
+      "publisher": "cppreference.com",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CPP-22-02"
+      ],
+      "notes": "Detailed independent container and invalidation reference for targeted study. September 29 CPP-22-02 deep review: Selected first 530 lines of 17593-character public index read: complete introduction/container categories/adapters/views/invalidation table and notes/thread-safety; member table through rend only. Remaining member/nonmember tables, defects and see-also not read. Community/newer-version context, not controlling C++17 authority. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cppreference-cpp-algorithms","title":"C++ Algorithms Library","url":"https://en.cppreference.com/w/cpp/algorithm.html","publisher":"cppreference.com","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["CPP-22-02"],"notes":"Detailed independent algorithm reference for named operations, preconditions, results and standard-version boundaries."
+      "id": "cppreference-cpp-algorithms",
+      "title": "C++ Algorithms Library",
+      "url": "https://en.cppreference.com/w/cpp/algorithm.html",
+      "publisher": "cppreference.com",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CPP-22-02"
+      ],
+      "notes": "Detailed independent algorithm reference for named operations, preconditions, results and standard-version boundaries. September 29 CPP-22-02 deep review: 27020-character public index fetched but not read in this review. Kept as an optional community reference; selected primary N4659 contracts control technical claims. No linked algorithm-page audit. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-cpp20-stl-cookbook","title":"C++20 STL Cookbook, 2nd Edition","url":"https://www.oreilly.com/library/view/c20-stl-cookbook/9781803248714/","publisher":"O'Reilly / Packt / Bill Weinman","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["CPP-22-02"],"notes":"Modern cookbook with examples beyond the blueprint. Select 15–25 hours and reconcile removed/legacy features with the active outline."
+      "id": "oreilly-cpp20-stl-cookbook",
+      "title": "C++20 STL Cookbook, 2nd Edition",
+      "url": "https://www.oreilly.com/library/view/c20-stl-cookbook/9781803248714/",
+      "publisher": "O'Reilly / Packt / Bill Weinman",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CPP-22-02"
+      ],
+      "notes": "Modern cookbook with examples beyond the blueprint. Select 15–25 hours and reconcile removed/legacy features with the active outline. September 29 CPP-22-02 deep review: HTTP 403. No paid interior, current contents/edition or complete CPP alignment audit. Optional broader reference and planning estimates only. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-mastering-cpp-standard-library","title":"Mastering the C++ Standard Library","url":"https://www.udemy.com/course/mastering-the-cpp-standard-library/","publisher":"Udemy","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["CPP-22-02"],"notes":"Marketplace course for STL practice. Verify current syllabus, version and runtime, and map only relevant material to the official blueprint."
+      "id": "udemy-mastering-cpp-standard-library",
+      "title": "Mastering the C++ Standard Library",
+      "url": "https://www.udemy.com/course/mastering-the-cpp-standard-library/",
+      "publisher": "Udemy",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CPP-22-02"
+      ],
+      "notes": "Marketplace course for STL practice. Verify current syllabus, version and runtime, and map only relevant material to the official blueprint. September 29 CPP-22-02 deep review: HTTP 403. No course interior, current duration, assessment or complete blueprint alignment verified. See docs/research/2026-09-29-cpp-22-02-deep-review.md No live infrastructure execution."
     },
     {
       "id":"pcpp-32-101-syllabus","title":"PCPP-32-101 Exam Syllabus","url":"https://pythoninstitute.org/pcpp1-exam-syllabus","publisher":"OpenEDG Python Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCPP-32-101"],"notes":"Canonical active five-section 35/12/20/18/15 syllabus with 45 objectives/items and March 11, 2022 baseline."

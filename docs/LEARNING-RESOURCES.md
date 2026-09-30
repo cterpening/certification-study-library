@@ -3690,6 +3690,29 @@ No exact current MeasureUp or Whizlabs CPA-21-02 practice product was verified. 
 
 Primary technical reading for this review uses selected publicly rendered WG21 draft sections, not a complete standard audit. Microsoft implementation documentation may include extensions and legacy examples: its allocation page contains examples and generalizations that should not be copied as portable ownership contracts. The original workbook follows the explicit C++17 draft rules above. The [research report](research/2026-09-29-cpa-21-02-deep-review.md) records source-reading, execution and remaining human-review boundaries.
 
+### CPP-22-02 — CPP C++ Certified Professional Programmer
+
+Resource details from the [CPP-22-02 guide](../guides/CPP-22-02-cpp-certified-professional-programmer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Pick one aligned primary path, then use a current reference while writing algorithm-heavy programs. Always reconcile a resource's C++ version with the active CPP-22-02 blueprint, particularly for removed `ptr_fun` examples.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official CPP page and syllabus](https://cppinstitute.org/cpp) | Free canonical blueprint | 2–3 hours to map and recheck |
+| [C++ Institute exam policies](https://cppinstitute.org/exam-policies) | Free official policy | 20–40 minutes before scheduling |
+| [OpenEDG C++ Advanced](https://edube.org/study/cpp) | Public landing read; enrolled interior not read; names CPP-22-01 and prior CPA-course completion | 42 hours listed; conflicts with vendor landing |
+| [C++ Institute Advanced course](https://cppinstitute.org/cpp-advanced) | Public landing read; names CPP-22-02 and no formal prerequisite | 50 hours listed; conflicts with Edube |
+| [Cisco Networking Academy C++ Advanced](https://www.netacad.com/courses/c-plus-plus-advanced) | HTTP 200 application shell only; rendered course not read | Duration and availability unverified |
+| [Microsoft C++ Standard Library reference](https://learn.microsoft.com/en-us/cpp/standard-library/cpp-standard-library-reference?view=msvc-170) | Free official implementation documentation | Ongoing; 10–20 hours targeted use |
+| [cppreference containers library](https://en.cppreference.com/w/cpp/container.html) | Free community reference | 6–10 hours targeted study |
+| [cppreference algorithms library](https://en.cppreference.com/w/cpp/algorithm.html) | Free community reference | 10–20 hours plus labs |
+| [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines) | Free modern guidance; extends blueprint | 8–15 hours selected sections |
+| [Pluralsight C++ path](https://www.pluralsight.com/paths/c-plus-plus) | Public landing read; 13 courses, rounded 44-hour banner; paid lessons not read | Listed durations total 44 h 10 m; select matching modules |
+| [O'Reilly C++20 STL Cookbook, 2nd Edition](https://www.oreilly.com/library/view/c20-stl-cookbook/9781803248714/) | 403 access block; interior and alignment not verified | Estimate only: 15–25 hours selected recipes |
+| [Udemy Mastering the C++ Standard Library](https://www.udemy.com/course/mastering-the-cpp-standard-library/) | 403 access block; interior and alignment not verified | Estimate only: 12–20 hours selected material |
+
+No exact current MeasureUp or Whizlabs CPP-22-02 practice product was verified. The Edube/vendor course fields disagree, so validate practice against all 34 canonical objectives instead of trusting a title. Resource study-time ranges other than expressly listed provider durations are planning estimates, not measured completion times. The cppreference algorithm index was fetched but not read in this review; selected container-index passages were read. Core Guidelines reading was limited to selected rules in the preceding CPA review, not a new full audit. Microsoft reference reading covered its index, not every linked chapter. Primary draft reading was selective and its exact boundaries are recorded in the review evidence.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

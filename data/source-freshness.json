@@ -4,6 +4,197 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-cpp2202-deep-review",
+      "title": "CPP-22-02 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CPP-22-02"
+      ],
+      "results": [
+        {
+          "exam_code": "CPP-22-02",
+          "vendor_id": "cpp-institute",
+          "guide_path": "guides/CPP-22-02-cpp-certified-professional-programmer.md",
+          "baseline_sha256": "0911515f38ce0b77e4cbaf3c872048a6f66cac15d4ebbf1595d045b94d9828e6",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Complete canonical CPP-22-02 primary body manually compared with 34 snapshot objectives after automated timeout. All nine groups retained; provider 107%/32 block items versus 40 questions conflict preserved; no successful automated hash check."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected primary WG21 draft contracts, complete legacy-removal and numeric facet sections plus Microsoft index read with explicit boundaries. Seven exact original files passed 16 hosted CMake executions, 16 expected diagnostic failures and 4 legacy probes. No whole-standard audit."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current canonical exam and vendor course bodies read; complete catalog/policy/scheduling bodies reused from preceding same-context CLA review for explicit CPP scope. No unseen feed or authenticated eligibility verification."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Complete Edube/vendorAdvanced landings compared:42/50 hours, 22-01/22-02 andprior course/no formal prerequisite differences retained. Complete Pluralsight landing reading reused; 13 durations 44 h 10 m. Cisco shell and paid 403 explicit."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Provider weight/count arithmetic; CPA recommended versus required; Edube/vendor course duration/version/prerequisite; appointment change windows remain unresolved. ptr_fun acceptance distinguished from standard removal. Broaderlabs/access/human review pending."
+            }
+          },
+          "findings": [
+            {
+              "id": "cpp2202-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Provider arithmetic and adapter scope need explicit interpretation",
+              "url": "https://cppinstitute.org/cpp",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CPP-22-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The 34 objectives coexist with 107%weights/32 block items versus 40 questions, and adapter traversal wording.",
+              "recommendation": "Preserve published values, map everyobjective, explain the lack of publicadapteriterators and prioritize numbered objectives over the Heap title.",
+              "disposition": "applied",
+              "source_id": "cpp-22-02-syllabus",
+              "resolution": "Preserve published values, map everyobjective, explain the lack of publicadapteriterators and prioritize numbered objectives over the Heap title."
+            },
+            {
+              "id": "cpp2202-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Non-modifying chapter label obscures for_each mutation",
+              "url": "https://timsong-cpp.github.io/cppwp/n4659/algorithms",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CPP-22-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Serial for_each may modify elements and returns its callable; predicates have different requirements.",
+              "recommendation": "Correct the explanation and execute mutable, returned-state and reference-wrapper examples.",
+              "disposition": "applied",
+              "source_id": "cpp17-algorithms",
+              "resolution": "Correct the explanation and execute mutable, returned-state and reference-wrapper examples."
+            },
+            {
+              "id": "cpp2202-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Capacity, invalidation and equivalence need concrete cases",
+              "url": "https://timsong-cpp.github.io/cppwp/n4659/containers",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CPP-22-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Reserve does not create output elements, deque end insertion preserves references but invalidates iterators, and ordered keys use comparison equivalence.",
+              "recommendation": "Add operation-specific contracts and execute all ten named container/adaptor families without stale access.",
+              "disposition": "applied",
+              "source_id": "cpp17-containers",
+              "resolution": "Add operation-specific contracts and execute all ten named container/adaptor families without stale access."
+            },
+            {
+              "id": "cpp2202-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Algorithm boundaries and multiplicities are underspecified",
+              "url": "https://timsong-cpp.github.io/cppwp/n4659/algorithms",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CPP-22-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Empty needles, paired mismatch ends, allowed copy overlap, comparator equivalence transitivity and duplicate counts affect correctness.",
+              "recommendation": "Supply guarded serial cases, reject invalid preconditions before calls, and verify returned boundaries and sorted-set multiplicities.",
+              "disposition": "applied",
+              "source_id": "cpp17-algorithms",
+              "resolution": "Supply guarded serial cases, reject invalid preconditions before calls, and verify returned boundaries and sorted-set multiplicities."
+            },
+            {
+              "id": "cpp2202-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Stream formatting description omits important state distinctions",
+              "url": "https://timsong-cpp.github.io/cppwp/n4659/facet.num.put.virtuals",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CPP-22-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Noshowpoint does not cancel fixed precision; masked setf differs from ORing flags, and pending width can belong to the caller.",
+              "recommendation": "Execute exact strings, four-field restoration through exceptions, EOF recovery and injected output failure without clearing the error.",
+              "disposition": "applied",
+              "source_id": "cpp17-numeric-output",
+              "resolution": "Execute exact strings, four-field restoration through exceptions, EOF recovery and injected output failure without clearing the error."
+            },
+            {
+              "id": "cpp2202-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Compiler acceptance is not language-version authority",
+              "url": "https://timsong-cpp.github.io/cppwp/n4659/diff.cpp14.depr",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CPP-22-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Both hosted library configurations accept removed ptr_fun in C++17 mode with deprecation warnings.",
+              "recommendation": "Retain four observed probes separately from primary C++14/C++17 rules and use current callables in the main workbook.",
+              "disposition": "applied",
+              "source_id": "cpp17-removed-adaptors",
+              "resolution": "Retain four observed probes separately from primary C++14/C++17 rules and use current callables in the main workbook."
+            },
+            {
+              "id": "cpp2202-deep-7",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Eligibility and course fields disagree across first-party sources",
+              "url": "https://cppinstitute.org/cpp-advanced",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CPP-22-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Canonical CPA recommendation differs from Pearson/badge prerequisite; Edube 42 h/22-01/prior course differs from vendor 50 h/22-02/no formal prerequisite.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped all 34 objectives and expanded all 30 answers. Seven exact public C++17 files passed sixteen hosted CMake runs, including four optimized and four address/undefined sanitizer variants. Sixteen invalid-code probes were rejected and four legacy ptr_fun mode probes recorded. Corrected for_each mutation, destination/invalidation/order/multiplicity/formatting contracts. Published arithmetic, eligibility/course/policy conflicts, access limits, broader labs and human review remain explicit. Same-context AI review; human review pending. See docs/research/2026-09-29-cpp-22-02-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 6,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-29-cpa2102-deep-review",
       "title": "CPA-21-02 complete guide and learning-content review",
       "rubric_version": 1,

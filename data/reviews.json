@@ -11726,28 +11726,102 @@
       "notes": "Mapped all 35 objectives and expanded all 30 answers. Added six exact public workbook files, including a multi-file owner, language exercises and hierarchy tracing. Thirteen GCC/Clang workbook runs passed, including three optimized and three address/undefined sanitizer variants, plus a macro branch. Sixteen invalid-code probes were rejected and ten language-mode probes recorded. Source/booking conflicts, broader labs and human review remain explicit. See docs/research/2026-09-29-cpa-21-02-deep-review.md"
     },
     {
-      "id":"cpp-22-02-2026-09-02-source-validation",
-      "exam_code":"CPP-22-02",
-      "guide_path":"guides/CPP-22-02-cpp-certified-professional-programmer.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-02",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/cpp-22-02-official-objectives.txt",
-      "blueprint_snapshot_sha256":"c107cc84fb7b04ddebd32b529e9e319869dd8b9d8fb91748daeec025621b9776",
-      "objective_coverage":[
-        {"objective_group":"Sequence Containers and Adapters (published 13.25%)","guide_sections":["Section 1","Scenarios 1 and 3","Labs 1–2"]},
-        {"objective_group":"Associative Containers (published 13.25%)","guide_sections":["Section 2","Scenarios 1 and 2","Lab 3"]},
-        {"objective_group":"Non-Modifying Algorithms (published 13.25%)","guide_sections":["Section 3","All scenarios","Lab 4"]},
-        {"objective_group":"Modifying Algorithms (published 13.25%)","guide_sections":["Section 4","All scenarios","Lab 5"]},
-        {"objective_group":"Sorting and Binary Search (published 16.5%)","guide_sections":["Section 5","All scenarios","Lab 6"]},
-        {"objective_group":"Merge, Set, and Min/Max (published 16.5%)","guide_sections":["Section 6","Scenarios 1 and 2","Lab 7"]},
-        {"objective_group":"Function Objects and Utilities (published 7%)","guide_sections":["Section 7","All scenarios","Lab 8"]},
-        {"objective_group":"Advanced I/O (published 7%)","guide_sections":["Section 8","Scenario 3","Lab 9"]},
-        {"objective_group":"Templates (published 7%)","guide_sections":["Section 9","All scenarios","Lab 10"]}
+      "id": "cpp2202-2026-09-29-source-validation",
+      "exam_code": "CPP-22-02",
+      "guide_path": "guides/CPP-22-02-cpp-certified-professional-programmer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/cpp-22-02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "c107cc84fb7b04ddebd32b529e9e319869dd8b9d8fb91748daeec025621b9776",
+      "objective_coverage": [
+        {
+          "objective_group": "Block 1 - Sequence Containers and Container Adapters (4 items; 13.25%)",
+          "guide_sections": [
+            "1. Sequence containers and adapters — 13.25%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 2 - Associative Containers (4 items; 13.25%)",
+          "guide_sections": [
+            "2. Associative containers — 13.25%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 3 - Non-Modifying Sequence Algorithms (4 items; 13.25%)",
+          "guide_sections": [
+            "3. Non-modifying sequence algorithms — 13.25%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 4 - Modifying Sequence Algorithms (4 items; 13.25%)",
+          "guide_sections": [
+            "4. Modifying sequence algorithms — 13.25%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 5 - Sorting and Binary Search (5 items; 16.5%)",
+          "guide_sections": [
+            "5. Sorting and binary search — 16.5%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 6 - Merge, Set, and Min/Max Algorithms (5 items; 16.5%)",
+          "guide_sections": [
+            "6. Merge, set, and min/max algorithms — 16.5%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 7 - STL Function Objects and Utilities (2 items; 7%)",
+          "guide_sections": [
+            "7. STL function objects and utilities — 7%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 8 - Advanced I/O (2 items; 7%)",
+          "guide_sections": [
+            "8. Advanced I/O — 7%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 9 - Templates (2 items; 7%)",
+          "guide_sections": [
+            "9. Templates — 7%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":11,"reachable":8,"access_blocked":2,"missing_or_error":1},
-      "notes":"Every named CPP-22-02 container, adapter, iterator, algorithm, function-object, stream-formatting and template objective is mapped with precondition/result/invalidation reasoning, three scenarios, ten labs and 30 original checks. The guide does not normalize the official internal inconsistency: the page says 40 questions while block counts total 32 and displayed weights total 107%. It also flags legacy ptr_fun and the aligned course's stale CPP-22-01 label. A broken provisional Pluralsight URL was rejected and replaced with the verified active C++ path before publication. O'Reilly and Udemy are automation-blocked. No recalled/live item, answer dump or copied course question is used. September 29 CPE source-health refresh updated shared-link counts only; this guide content and review date were not re-reviewed."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 25,
+        "reachable": 15,
+        "access_blocked": 2,
+        "missing_or_error": 8
+      },
+      "notes": "Mapped all 34 objectives and expanded all 30 answers. Seven exact public C++17 files passed sixteen hosted CMake runs, including four optimized and four address/undefined sanitizer variants. Sixteen invalid-code probes were rejected and four legacy ptr_fun mode probes recorded. Corrected for_each mutation, destination/invalidation/order/multiplicity/formatting contracts. Published arithmetic, eligibility/course/policy conflicts, access limits, broader labs and human review remain explicit. See docs/research/2026-09-29-cpp-22-02-deep-review.md"
     },
     {
       "id":"pcpp-32-101-2026-09-02-source-validation",
