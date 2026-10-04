@@ -323,7 +323,7 @@ The review retained the guide's architecture and production-operations depth whi
 ## AB-100 coverage record
 
 
-The October 4 [bounded maintenance pilot](research/2026-10-04-ab-100-maintenance-pilot.md) adds applicability/access evidence, developer/deployer responsibilities, Exercise 14 and two explained checks. Current totals are **14 exercises, 24 checks and 82 registered guide links** (77 reachable, five access-blocked in tracked evidence). Four new links were checked live; other health statuses remain historical. The September 27 full-review date and July baseline are unchanged; the comparison below describes that historical review. Human/tenant validation and the prerequisite discrepancy remain unresolved.
+The October 4 [bounded maintenance pilot](research/2026-10-04-ab-100-maintenance-pilot.md) adds applicability/access evidence, developer/deployer responsibilities, Exercise 14 and two explained checks. Current totals are **14 exercises, 24 checks and 82 registered guide links** (77 reachable, five access-blocked in tracked evidence). Four new links were checked live; other health statuses remain historical. The September 27 full-review date and July baseline are unchanged; the comparison below describes that historical review. Tenant testing and independent human review were not performed; these remain best-effort evidence limits, not automatic study-use blockers. The prerequisite eligibility discrepancy remains unresolved. The CAT implementation example is attributed as blog-documented adjacent learning, while relevance, access and test design directly practice objectives.
 
 | Published objective group | Guide coverage |
 |---|---|
