@@ -1,0 +1,544 @@
+{
+  "schema_version": 1,
+  "exam_code": "AB-100",
+  "reviewed_on": "2026-10-04",
+  "scope": "Single bounded maintenance pilot; not a renewed full deep review",
+  "base_commit": "149bd8ce7a7349b3d7069abd8a110be66e46b69e",
+  "guide_sha256_before": "ae0704e1aaea2106938a3eb512d1a5e09d9e16b1acec7d2cee7173664acdb273",
+  "guide_sha256_after": "3267e17d31e00ce5274d02a8e7decd49218edf85ae5ea56fddcdad1c1512b3d4",
+  "prior_source_validation_record": {
+    "id": "ab-100-2026-08-31-source-validation",
+    "exam_code": "AB-100",
+    "guide_path": "guides/AB-100-agentic-ai-business-solutions-architect.md",
+    "review_type": "source-validation",
+    "reviewed_on": "2026-09-27",
+    "outcome": "passed",
+    "blueprint_snapshot_path": "data/objective-snapshots/ab-100-official-objectives.txt",
+    "blueprint_snapshot_sha256": "3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2",
+    "objective_coverage": [
+      {
+        "objective_group": "Plan AI-powered business solutions",
+        "guide_sections": [
+          "Parts 1–4",
+          "Part 4 — Worked ROI and managed model routing",
+          "Exercises 1, 4, 5, 7, and 9",
+          "Exercise 13 — Service-case release workshop"
+        ]
+      },
+      {
+        "objective_group": "Design AI-powered business solutions",
+        "guide_sections": [
+          "Parts 5–7",
+          "Part 5 — Harness, trigger identity, and Foundry capability decisions",
+          "Part 6 — MCP, computer use, generative pages, and agent feed",
+          "Exercises 1–3, 5, 7–9, 11, and 12",
+          "Exercise 13 — Service-case release workshop"
+        ]
+      },
+      {
+        "objective_group": "Deploy AI-powered business solutions",
+        "guide_sections": [
+          "Parts 8–10",
+          "Part 8 — Native evaluation and generated test-case strategy",
+          "Part 9 — Foundry publishing models and identity migration",
+          "Exercises 6, 10–12",
+          "Part 12 — Answer checkpoints for all 22 questions",
+          "Exercise 13 — Service-case release workshop"
+        ]
+      }
+    ],
+    "checks": {
+      "official_objectives_mapped": true,
+      "material_claims_sourced": true,
+      "volatile_claims_labeled": true,
+      "links_and_local_references_valid": true,
+      "exam_integrity_policy_passed": true
+    },
+    "link_evidence": {
+      "unique_external_links": 78,
+      "reachable": 73,
+      "access_blocked": 5,
+      "missing_or_error": 0
+    },
+    "notes": "September 27 same-context AI deep research/repair review of the full guide and all 74 detailed objectives in ten groups. The public October 14 outline differs from the accepted July snapshot only in its date and three editorial changes; the July snapshot is preserved. New Microsoft evidence supports runtime, identity, routing, preview, testing and ALM corrections; 12 design exercises and 17 original question/answer checkpoints are reviewed. No tenant execution, paid training interiors or human/independent audit is claimed. Conflicting official prerequisite lists remain explicitly blocked in source-freshness evidence. Link counts are current catalog-health observations; the live 73-source run and HTTP-shell distinctions are retained separately. Prior review metadata and guide hashes are archived in ADLC_Docs/operations/2026-09-27-ab-100-deep-review.json. See docs/research/2026-09-27-ab-100-deep-review.md. Subsequent September 27 blog-discovery follow-up added five CAT articles and six corroborating Microsoft references, with reading artifacts and an explicit pipeline-gating correction. Link evidence includes this bounded follow-up; the archived deep-review hashes and freshness result are unchanged. A further September 27 learning-content pass adds five original worked examples, a guided tabletop workshop, and five answered knowledge checks. Current totals are 13 exercises and 22 checks; earlier counts describe the deep-review phase. Existing citations are reused; no tenant execution or freshness-baseline renewal is claimed. Evidence: ADLC_Docs/operations/2026-09-27-ab-100-learning-content.json."
+  },
+  "full_review_date_retained": "2026-09-27",
+  "current_blueprint": "July 22, 2026",
+  "future_blueprint": "October 14, 2026",
+  "accepted_snapshot_sha256": "3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2",
+  "source_fetches": [
+    {
+      "id": "blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100",
+      "checked_at": "2026-10-04T21:44:03.889548+00:00",
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100",
+      "sha256": "e89e7ed08503af431e42e7aa0a9850b16aecd4d05c7e010fe41df2a428746054",
+      "text_characters": 13413
+    },
+    {
+      "id": "exam",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/",
+      "checked_at": "2026-10-04T21:44:03.894224+00:00",
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/",
+      "sha256": "ec90cb843784358354993005d25532d834be67e27e597360a60b52c4f26470de",
+      "text_characters": 11719
+    },
+    {
+      "id": "credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+      "checked_at": "2026-10-04T21:44:03.894786+00:00",
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+      "sha256": "b89e6a41e276f425663445025cb8b900159a9266588a0063017ffcb48bf168a0",
+      "text_characters": 8291
+    },
+    {
+      "id": "metadata-blog",
+      "url": "https://microsoft.github.io/mcscatblog/posts/sharepoint-metadata-filtering/",
+      "checked_at": "2026-10-04T21:44:04.328967+00:00",
+      "http_status": 200,
+      "final_url": "https://microsoft.github.io/mcscatblog/posts/sharepoint-metadata-filtering/",
+      "sha256": "3def4dc2af6f5d08e764f88e05058bcd133c7d6fd9e56f454d8b581870266939",
+      "text_characters": 12078
+    },
+    {
+      "id": "migration-video",
+      "url": "https://microsoft.github.io/mcscatblog/posts/migration-plugin-video-demo/",
+      "checked_at": "2026-10-04T21:44:04.363820+00:00",
+      "http_status": 200,
+      "final_url": "https://microsoft.github.io/mcscatblog/posts/migration-plugin-video-demo/",
+      "sha256": "72cd1bba8b860de29e8fa6405072f30db35eaf1787bd265ffb93b09c4ce51ea2",
+      "text_characters": 7015
+    },
+    {
+      "id": "beginners",
+      "url": "https://raw.githubusercontent.com/microsoft/ai-agents-for-beginners/main/README.md",
+      "checked_at": "2026-10-04T21:44:04.364946+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/microsoft/ai-agents-for-beginners/main/README.md",
+      "sha256": "f47be3bed00ebdb725d65104e8b5dcc50567a36b74837261965cf3b484f2a147",
+      "text_characters": 20285
+    },
+    {
+      "id": "trustworthy",
+      "url": "https://raw.githubusercontent.com/microsoft/ai-agents-for-beginners/main/06-building-trustworthy-agents/README.md",
+      "checked_at": "2026-10-04T21:44:04.537243+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/microsoft/ai-agents-for-beginners/main/06-building-trustworthy-agents/README.md",
+      "sha256": "d6a9fb9788cd39942108bb5b8b09598661c3a03524728f9a93cf7824b84fbdd6",
+      "text_characters": 12883
+    },
+    {
+      "id": "production",
+      "url": "https://raw.githubusercontent.com/microsoft/ai-agents-for-beginners/main/10-ai-agents-production/README.md",
+      "checked_at": "2026-10-04T21:44:04.556012+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/microsoft/ai-agents-for-beginners/main/10-ai-agents-production/README.md",
+      "sha256": "29afaa3bd325a6c78766c59e3fa7bb1c0a6d26203721a8ec3c72b917e7729a5d",
+      "text_characters": 16349
+    },
+    {
+      "id": "license",
+      "url": "https://raw.githubusercontent.com/microsoft/ai-agents-for-beginners/main/LICENSE",
+      "checked_at": "2026-10-04T21:44:04.630189+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/microsoft/ai-agents-for-beginners/main/LICENSE",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "text_characters": 1141
+    },
+    {
+      "id": "samples",
+      "url": "https://raw.githubusercontent.com/microsoft/CopilotStudioSamples/main/README.md",
+      "checked_at": "2026-10-04T21:44:04.685315+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/microsoft/CopilotStudioSamples/main/README.md",
+      "sha256": "962f59224801c1522271447d43d92c05d1c50b98ee86b5908966949769718cba",
+      "text_characters": 7431
+    },
+    {
+      "id": "transparency",
+      "url": "https://www.microsoft.com/en-us/corporate-responsibility/topics/responsible-ai/reports/transparency-report/",
+      "checked_at": "2026-10-04T21:44:04.773008+00:00",
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/corporate-responsibility/topics/responsible-ai/reports/transparency-report/",
+      "sha256": "bae1bef80d13c56d17d49b38930ae20d146a5b9c65ecb4bb6e057f7fb1eb71c6",
+      "text_characters": 16640
+    },
+    {
+      "id": "sharepoint",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-sharepoint",
+      "checked_at": "2026-10-04T21:44:04.774665+00:00",
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-sharepoint",
+      "sha256": "8f86474c099c9d314c12b3f7cd6cf7c485b2a86c6b1fea6f445d8a70b3f36149",
+      "text_characters": 15532
+    },
+    {
+      "id": "governance",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-and-governance",
+      "checked_at": "2026-10-04T21:44:04.806701+00:00",
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-and-governance",
+      "sha256": "d5c3f0b63a0009ecacafb6eb84ccd81901b83c60d0fbdaff8a950e2e740b7c90",
+      "text_characters": 8782
+    },
+    {
+      "id": "evaluations",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro",
+      "checked_at": "2026-10-04T21:44:05.016457+00:00",
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro",
+      "sha256": "acc78b061152830a39aa18167b2b9f780bce60671596256463c686d2d2384303",
+      "text_characters": 9000
+    }
+  ],
+  "new_source_observations": [
+    {
+      "id": "ab100-blog-sharepoint-metadata",
+      "url": "https://microsoft.github.io/mcscatblog/posts/sharepoint-metadata-filtering/",
+      "checked_at": "2026-10-04T21:47:17+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://microsoft.github.io/mcscatblog/posts/sharepoint-metadata-filtering/",
+      "content_type": "text/html; charset=utf-8",
+      "page_title": "SharePoint Metadata Filtering in Copilot Studio: From Topic Logic to Agent Decisions",
+      "canonical_url": "https://microsoft.github.io/mcscatblog/posts/sharepoint-metadata-filtering/",
+      "duration_signals": [
+        "20HR",
+        "7 min"
+      ],
+      "signal_fingerprint": "7d602adad9f1dbd087e4e517286724aa37ccc20c388f1302458ba769d6b97c46",
+      "error": ""
+    },
+    {
+      "id": "ab100-ai-agents-beginners",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "checked_at": "2026-10-04T21:47:17+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "content_type": "text/html; charset=utf-8",
+      "page_title": "GitHub - microsoft/ai-agents-for-beginners: 18 Lessons to Get Started Building AI Agents",
+      "canonical_url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "duration_signals": [],
+      "signal_fingerprint": "78a7df556ce000693fb632e0196c0db3bc4ab034ecf66ca8693c0f217b0ef2c8",
+      "error": ""
+    },
+    {
+      "id": "ab100-responsible-ai-report-2026",
+      "url": "https://www.microsoft.com/en-us/corporate-responsibility/topics/responsible-ai/reports/transparency-report/",
+      "checked_at": "2026-10-04T21:47:18+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/corporate-responsibility/topics/responsible-ai/reports/transparency-report/",
+      "content_type": "text/html; charset=UTF-8",
+      "page_title": "2026 Responsible AI Transparency Report | Microsoft",
+      "canonical_url": "https://www.microsoft.com/en-us/corporate-responsibility/topics/responsible-ai/reports/transparency-report/",
+      "duration_signals": [],
+      "signal_fingerprint": "77581f1dcf09c4258f92deba18d43a7ca0fb7f395acce0d5ffc4408945cd9cba",
+      "error": ""
+    },
+    {
+      "id": "ab100-sharepoint-knowledge",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-sharepoint",
+      "checked_at": "2026-10-04T21:47:19+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-sharepoint",
+      "content_type": "text/html",
+      "page_title": "Add SharePoint as a knowledge source - Microsoft Copilot Studio",
+      "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-sharepoint",
+      "duration_signals": [],
+      "signal_fingerprint": "72d6339d7798c73a330e6c84bb86cf82c1daf3429c60b24c311ad6e380fc092f",
+      "error": ""
+    }
+  ],
+  "candidate_decisions": {
+    "accepted": [
+      "ab100-blog-sharepoint-metadata",
+      "ab100-ai-agents-beginners",
+      "ab100-responsible-ai-report-2026",
+      "ab100-sharepoint-knowledge"
+    ],
+    "rejected": [
+      {
+        "id": "ab100-pilot-migration-video",
+        "title": "Video Demo: Upgrading a Classic Agent to Modern Orchestration",
+        "url": "https://microsoft.github.io/mcscatblog/posts/migration-plugin-video-demo/",
+        "added_on": "2026-10-04",
+        "suggested_exams": [
+          "AB-100"
+        ],
+        "reason": "Potential design/harness and deploy/ALM migration demonstration.",
+        "review_status": "rejected",
+        "reviewed_on": "2026-10-04",
+        "review_notes": "Not promoted in this bounded pilot: written companion inspected, embedded recording not watched; experimental unsupported plugin and untested setup. Not an exam-integrity rejection; requires viewing and a narrower validated exercise before reconsideration."
+      },
+      {
+        "id": "ab100-pilot-copilot-samples",
+        "title": "Microsoft Copilot Studio Samples",
+        "url": "https://github.com/microsoft/CopilotStudioSamples",
+        "added_on": "2026-10-04",
+        "suggested_exams": [
+          "AB-100"
+        ],
+        "reason": "Potential design/extensibility and deploy/testing implementation labs.",
+        "review_status": "rejected",
+        "reviewed_on": "2026-10-04",
+        "review_notes": "README is a broad catalog; older PVA labs moved to legacy and one employee sample marked pending deprecation. No individual sample/license/dependency path fully evaluated here. Choose a narrow current sample in a future pass; do not endorse the whole repository as an AB-100 lab."
+      }
+    ]
+  },
+  "link_evidence": {
+    "unique_external_links": 82,
+    "reachable": 77,
+    "access_blocked": 5,
+    "missing_or_error": 0
+  },
+  "limitations": [
+    "Official prerequisite conflict still unresolved.",
+    "Human and independent practitioner review pending.",
+    "No tenant or external notebook/video execution.",
+    "Four added catalog URLs checked live; remaining link counts use earlier tracked observations.",
+    "No directly matching GHCP metadata product-reference contract confirmed."
+  ],
+  "usage": {
+    "model": "unavailable",
+    "tokens": "unavailable",
+    "credits": "unavailable"
+  },
+  "validation": {
+    "status": "passed",
+    "runs": [
+      {
+        "name": "lab-tests",
+        "command": [
+          "python",
+          "-X",
+          "utf8",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "labs/ab-100",
+          "-v"
+        ],
+        "started_at": "2026-10-04T21:52:54.795076+00:00",
+        "exit_code": 0,
+        "log": ".maintenance/ab100-pilot-2026-10-04/lab-tests.log"
+      },
+      {
+        "name": "lab-starter",
+        "command": [
+          "python",
+          "-X",
+          "utf8",
+          "labs/ab-100/release_gate.py"
+        ],
+        "started_at": "2026-10-04T21:52:55.002746+00:00",
+        "exit_code": 0,
+        "log": ".maintenance/ab100-pilot-2026-10-04/lab-starter.log"
+      },
+      {
+        "name": "unit-tests",
+        "command": [
+          "python",
+          "-X",
+          "utf8",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-v"
+        ],
+        "started_at": "2026-10-04T21:52:55.154354+00:00",
+        "exit_code": 0,
+        "log": ".maintenance/ab100-pilot-2026-10-04/unit-tests.log"
+      },
+      {
+        "name": "repository",
+        "command": [
+          "python",
+          "-X",
+          "utf8",
+          "scripts/validate_repository.py"
+        ],
+        "started_at": "2026-10-04T21:53:33.126492+00:00",
+        "exit_code": 0,
+        "log": ".maintenance/ab100-pilot-2026-10-04/repository.log"
+      },
+      {
+        "name": "learning-drift",
+        "command": [
+          "python",
+          "-X",
+          "utf8",
+          "scripts/sync_learning_resources.py",
+          "--reviewed"
+        ],
+        "started_at": "2026-10-04T21:53:38.411901+00:00",
+        "exit_code": 0,
+        "log": ".maintenance/ab100-pilot-2026-10-04/learning-drift.log"
+      },
+      {
+        "name": "site-prepare",
+        "command": [
+          "python",
+          "-X",
+          "utf8",
+          "scripts/prepare_site.py"
+        ],
+        "started_at": "2026-10-04T21:53:41.238344+00:00",
+        "exit_code": 0,
+        "log": ".maintenance/ab100-pilot-2026-10-04/site-prepare.log"
+      },
+      {
+        "name": "site-build",
+        "command": [
+          "python",
+          "-X",
+          "utf8",
+          "-m",
+          "mkdocs",
+          "build",
+          "--strict",
+          "--config-file",
+          ".site-build/mkdocs.yml"
+        ],
+        "started_at": "2026-10-04T21:53:43.309089+00:00",
+        "exit_code": 0,
+        "log": ".maintenance/ab100-pilot-2026-10-04/site-build.log"
+      },
+      {
+        "name": "site-validate",
+        "command": [
+          "python",
+          "-X",
+          "utf8",
+          "scripts/validate_site.py"
+        ],
+        "started_at": "2026-10-04T21:54:15.841801+00:00",
+        "exit_code": 0,
+        "log": ".maintenance/ab100-pilot-2026-10-04/site-validate.log"
+      },
+      {
+        "name": "diff-check",
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "started_at": "2026-10-04T21:55:32.045676+00:00",
+        "exit_code": 0,
+        "log": ".maintenance/ab100-pilot-2026-10-04/diff-check.log"
+      }
+    ],
+    "service_execution": "not-run",
+    "independent_practitioner_review": "pending",
+    "lab-tests_output": "test_complete_fixture_is_eligible_for_owner_review (test_release_gate.ReleaseGateTests.test_complete_fixture_is_eligible_for_owner_review) ... ok\ntest_duplicate_case_blocks (test_release_gate.ReleaseGateTests.test_duplicate_case_blocks) ... ok\ntest_failed_or_unresolved_required_case_blocks (test_release_gate.ReleaseGateTests.test_failed_or_unresolved_required_case_blocks) ... ok\ntest_invalid_counts_are_rejected (test_release_gate.ReleaseGateTests.test_invalid_counts_are_rejected) ... ok\ntest_invalid_result_collection_blocks (test_release_gate.ReleaseGateTests.test_invalid_result_collection_blocks) ... ok\ntest_missing_candidate_blocks (test_release_gate.ReleaseGateTests.test_missing_candidate_blocks) ... ok\ntest_missing_case_cannot_improve_denominator (test_release_gate.ReleaseGateTests.test_missing_case_cannot_improve_denominator) ... ok\ntest_missing_trace_blocks (test_release_gate.ReleaseGateTests.test_missing_trace_blocks) ... ok\ntest_pilot_b_worked_answer (test_release_gate.ReleaseGateTests.test_pilot_b_worked_answer) ... ok\ntest_unexpected_case_blocks (test_release_gate.ReleaseGateTests.test_unexpected_case_blocks) ... ok\ntest_unfinished_run_blocks (test_release_gate.ReleaseGateTests.test_unfinished_run_blocks) ... ok\ntest_wrong_candidate_blocks (test_release_gate.ReleaseGateTests.test_wrong_candidate_blocks) ... ok\ntest_zero_acceptances_have_undefined_unit_cost (test_release_gate.ReleaseGateTests.test_zero_acceptances_have_undefined_unit_cost) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.003s\n\nOK\n",
+    "lab-starter_output": "{\n  \"release\": {\n    \"eligible\": false,\n    \"passed\": 5,\n    \"planned\": 6,\n    \"coverage\": 0.8333333333333334,\n    \"reasons\": [\n      \"restricted-case: passing assertion and trace required\"\n    ]\n  },\n  \"pilot_b\": {\n    \"acceptance_rate\": 0.4,\n    \"credits_per_accepted\": 30.0\n  }\n}\n",
+    "unit-tests_output": "test_academy_table_does_not_turn_headers_into_courses (test_certification_discovery.CertificationDiscoveryTests.test_academy_table_does_not_turn_headers_into_courses) ... ok\ntest_all_registered_vendors_have_weekly_discovery_and_unique_ids (test_certification_discovery.CertificationDiscoveryTests.test_all_registered_vendors_have_weekly_discovery_and_unique_ids) ... ok\ntest_catalog_normalization_and_untrusted_links (test_certification_discovery.CertificationDiscoveryTests.test_catalog_normalization_and_untrusted_links) ... ok\ntest_changed_extractor_requires_a_new_baseline (test_certification_discovery.CertificationDiscoveryTests.test_changed_extractor_requires_a_new_baseline) ... ok\ntest_empty_catalog_and_login_shell_are_not_removals (test_certification_discovery.CertificationDiscoveryTests.test_empty_catalog_and_login_shell_are_not_removals) ... ok\ntest_exam_codes_are_matched_within_vendor_only (test_certification_discovery.CertificationDiscoveryTests.test_exam_codes_are_matched_within_vendor_only) ... ok\ntest_exam_transition_changes_even_when_credential_title_and_url_do_not (test_certification_discovery.CertificationDiscoveryTests.test_exam_transition_changes_even_when_credential_title_and_url_do_not) ... ok\ntest_github_feed_lifecycle_and_contract_failures (test_certification_discovery.CertificationDiscoveryTests.test_github_feed_lifecycle_and_contract_failures) ... ok\ntest_http_failure_classification_has_no_signed_url (test_certification_discovery.CertificationDiscoveryTests.test_http_failure_classification_has_no_signed_url) ... ok\ntest_link_reorder_is_ignored_but_title_and_membership_changes_are_reported (test_certification_discovery.CertificationDiscoveryTests.test_link_reorder_is_ignored_but_title_and_membership_changes_are_reported) ... ok\ntest_microsoft_feed_requires_complete_unique_results (test_certification_discovery.CertificationDiscoveryTests.test_microsoft_feed_requires_complete_unique_results) ... ok\ntest_monthly_report_requires_broader_review_even_without_deltas (test_certification_discovery.CertificationDiscoveryTests.test_monthly_report_requires_broader_review_even_without_deltas) ... ok\ntest_partial_write_preserves_failed_and_unselected_sources (test_certification_discovery.CertificationDiscoveryTests.test_partial_write_preserves_failed_and_unselected_sources) ... ok\ntest_retirement_date_change_is_reported_when_exam_code_is_unchanged (test_certification_discovery.CertificationDiscoveryTests.test_retirement_date_change_is_reported_when_exam_code_is_unchanged) ... ok\ntest_suspicious_partial_catalog_is_not_accepted (test_certification_discovery.CertificationDiscoveryTests.test_suspicious_partial_catalog_is_not_accepted) ... ok\ntest_advancing_view_moves_update_and_preserves_next_announcement (test_certification_lifecycle.LifecycleTests.test_advancing_view_moves_update_and_preserves_next_announcement) ... ok\ntest_beta_release_retirement_and_replacement_keep_their_own_sources (test_certification_lifecycle.LifecycleTests.test_beta_release_retirement_and_replacement_keep_their_own_sources) ... ok\ntest_future_outline_is_not_shown_as_effective_and_languages_stay_separate (test_certification_lifecycle.LifecycleTests.test_future_outline_is_not_shown_as_effective_and_languages_stay_separate) ... ok\ntest_rendering_does_not_mutate_records_and_escapes_table_content (test_certification_lifecycle.LifecycleTests.test_rendering_does_not_mutate_records_and_escapes_table_content) ... ok\ntest_unknown_dates_are_not_inferred_from_catalog_review_or_status (test_certification_lifecycle.LifecycleTests.test_unknown_dates_are_not_inferred_from_catalog_review_or_status) ... ok\ntest_complete_clean_report_has_every_exam_and_does_not_mutate_inputs (test_certification_maintenance.MaintenanceTests.test_complete_clean_report_has_every_exam_and_does_not_mutate_inputs) ... ok\ntest_comptia_duration_label_is_monitored (test_certification_maintenance.MaintenanceTests.test_comptia_duration_label_is_monitored) ... ok\ntest_discovery_title_change_is_visible_with_unchanged_exam_reference (test_certification_maintenance.MaintenanceTests.test_discovery_title_change_is_visible_with_unchanged_exam_reference) ... ok\ntest_existing_live_output_is_rejected_without_overwriting_files (test_certification_maintenance.MaintenanceTests.test_existing_live_output_is_rejected_without_overwriting_files) ... ok\ntest_future_and_overdue_events_do_not_change_exam_status (test_certification_maintenance.MaintenanceTests.test_future_and_overdue_events_do_not_change_exam_status) ... ok\ntest_manual_access_and_unexpected_errors_remain_distinct (test_certification_maintenance.MaintenanceTests.test_manual_access_and_unexpected_errors_remain_distinct) ... ok\ntest_missing_and_stale_reports_cannot_be_clean (test_certification_maintenance.MaintenanceTests.test_missing_and_stale_reports_cannot_be_clean) ... ok\ntest_old_blueprint_url_cannot_validate_reconfigured_exam (test_certification_maintenance.MaintenanceTests.test_old_blueprint_url_cannot_validate_reconfigured_exam) ... ok\ntest_partial_health_report_is_a_collection_error (test_certification_maintenance.MaintenanceTests.test_partial_health_report_is_a_collection_error) ... ok\ntest_repository_calendar_has_valid_unique_events_and_exam_references (test_certification_maintenance.MaintenanceTests.test_repository_calendar_has_valid_unique_events_and_exam_references) ... ok\ntest_retired_exam_keeps_baseline_but_still_checks_sources (test_certification_maintenance.MaintenanceTests.test_retired_exam_keeps_baseline_but_still_checks_sources) ... ok\ntest_databricks_extraction_fails_without_weighted_coverage (test_check_official_study_guides.ObjectiveExtractionTests.test_databricks_extraction_fails_without_weighted_coverage) ... ok\ntest_extracts_alternate_databricks_coverage_heading (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_alternate_databricks_coverage_heading) ... ok\ntest_extracts_aws_weighted_domains (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_aws_weighted_domains) ... ok\ntest_extracts_cisco_exam_baseline_and_status (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_cisco_exam_baseline_and_status) ... ok\ntest_extracts_comptia_details_and_weighted_summary (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_comptia_details_and_weighted_summary) ... ok\ntest_extracts_cpp_institute_embedded_outline (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_cpp_institute_embedded_outline) ... ok\ntest_extracts_current_oracle_mylearn_json (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_current_oracle_mylearn_json) ... ok\ntest_extracts_databricks_coverage_and_assessment_status (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_databricks_coverage_and_assessment_status) ... ok\ntest_extracts_fortinet_prepublication_state (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_fortinet_prepublication_state) ... ok\ntest_extracts_future_update_announcement_separately (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_future_update_announcement_separately) ... ok\ntest_extracts_google_cloud_capabilities_and_beta_status (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_google_cloud_capabilities_and_beta_status) ... ok\ntest_extracts_hashicorp_terraform_associate_objectives (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_hashicorp_terraform_associate_objectives) ... ok\ntest_extracts_hashicorp_vault_professional_objectives (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_hashicorp_vault_professional_objectives) ... ok\ntest_extracts_ibm_machine_readable_objectives (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_ibm_machine_readable_objectives) ... ok\ntest_extracts_isaca_job_practice_and_scheduled_update (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_isaca_job_practice_and_scheduled_update) ... ok\ntest_extracts_isc2_weighted_domains_and_status (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_isc2_weighted_domains_and_status) ... ok\ntest_extracts_js_institute_exam_scope (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_js_institute_exam_scope) ... ok\ntest_extracts_linux_foundation_domains (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_linux_foundation_domains) ... ok\ntest_extracts_microsoft_office_assessed_skills (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_microsoft_office_assessed_skills) ... ok\ntest_extracts_nvidia_preparation_topics_without_marketing_footer (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_nvidia_preparation_topics_without_marketing_footer) ... ok\ntest_extracts_nvidia_weighted_blueprint_and_status (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_nvidia_weighted_blueprint_and_status) ... ok\ntest_extracts_oracle_learning_path_exam_and_skills (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_oracle_learning_path_exam_and_skills) ... ok\ntest_extracts_python_institute_syllabus_and_status (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_python_institute_syllabus_and_status) ... ok\ntest_extracts_red_hat_performance_objectives (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_red_hat_performance_objectives) ... ok\ntest_extracts_renamed_hashicorp_terraform_advanced_objectives (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_renamed_hashicorp_terraform_advanced_objectives) ... ok\ntest_extracts_salesforce_weighted_blueprint_and_status (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_salesforce_weighted_blueprint_and_status) ... ok\ntest_extracts_skills_section_and_omits_study_resources (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_skills_section_and_omits_study_resources) ... ok\ntest_extracts_snowflake_scope_and_lifecycle (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_snowflake_scope_and_lifecycle) ... ok\ntest_extracts_splunk_track_scope_and_exam_details (test_check_official_study_guides.ObjectiveExtractionTests.test_extracts_splunk_track_scope_and_exam_details) ... ok\ntest_fetch_rejects_cross_host_redirect (test_check_official_study_guides.ObjectiveExtractionTests.test_fetch_rejects_cross_host_redirect) ... ok\ntest_fetch_rejects_unsafe_url_before_opening (test_check_official_study_guides.ObjectiveExtractionTests.test_fetch_rejects_unsafe_url_before_opening) ... ok\ntest_fortinet_keeps_current_exam_and_announced_successor_separate (test_check_official_study_guides.ObjectiveExtractionTests.test_fortinet_keeps_current_exam_and_announced_successor_separate) ... ok\ntest_four_cohorts_cover_active_exams_once_and_do_not_shift_with_order (test_check_official_study_guides.ObjectiveExtractionTests.test_four_cohorts_cover_active_exams_once_and_do_not_shift_with_order) ... ok\ntest_ignores_script_and_repeated_lines (test_check_official_study_guides.ObjectiveExtractionTests.test_ignores_script_and_repeated_lines) ... ok\ntest_monitor_filters_to_selected_exam_codes_before_fetch (test_check_official_study_guides.ObjectiveExtractionTests.test_monitor_filters_to_selected_exam_codes_before_fetch) ... ok\ntest_monitor_separates_exact_reviewed_limitation_from_new_error (test_check_official_study_guides.ObjectiveExtractionTests.test_monitor_separates_exact_reviewed_limitation_from_new_error) ... ok\ntest_monitor_skips_retired_exam_with_removed_blueprint (test_check_official_study_guides.ObjectiveExtractionTests.test_monitor_skips_retired_exam_with_removed_blueprint) ... ok\ntest_red_hat_readiness_objective_does_not_end_task_list (test_check_official_study_guides.ObjectiveExtractionTests.test_red_hat_readiness_objective_does_not_end_task_list) ... ok\ntest_rejects_incomplete_nvidia_preparation_topics (test_check_official_study_guides.ObjectiveExtractionTests.test_rejects_incomplete_nvidia_preparation_topics) ... ok\ntest_rejects_nvidia_preparation_heading_for_another_exam (test_check_official_study_guides.ObjectiveExtractionTests.test_rejects_nvidia_preparation_heading_for_another_exam) ... ok\ntest_short_or_missing_section_fails_closed (test_check_official_study_guides.ObjectiveExtractionTests.test_short_or_missing_section_fails_closed) ... ok\ntest_undated_exam_uses_page_update_only_as_freshness_evidence (test_check_official_study_guides.ObjectiveExtractionTests.test_undated_exam_uses_page_update_only_as_freshness_evidence) ... ok\ntest_comparison_rejects_duplicate_new_results (test_check_source_health.SourceHealthTests.test_comparison_rejects_duplicate_new_results) ... ok\ntest_comparison_separates_changes_staleness_and_blocking (test_check_source_health.SourceHealthTests.test_comparison_separates_changes_staleness_and_blocking) ... ok\ntest_duplicate_catalog_or_baseline_is_rejected_before_network (test_check_source_health.SourceHealthTests.test_duplicate_catalog_or_baseline_is_rejected_before_network) ... ok\ntest_duration_order_does_not_create_a_change (test_check_source_health.SourceHealthTests.test_duration_order_does_not_create_a_change) ... ok\ntest_extracts_title_canonical_and_duration_signals (test_check_source_health.SourceHealthTests.test_extracts_title_canonical_and_duration_signals) ... ok\ntest_fetch_rejects_non_public_redirect (test_check_source_health.SourceHealthTests.test_fetch_rejects_non_public_redirect) ... ok\ntest_fetch_rejects_unsafe_url_before_opening (test_check_source_health.SourceHealthTests.test_fetch_rejects_unsafe_url_before_opening) ... ok\ntest_fetch_source_records_redirect_and_signals (test_check_source_health.SourceHealthTests.test_fetch_source_records_redirect_and_signals) ... ok\ntest_ignores_environment_dependent_youtube_metadata (test_check_source_health.SourceHealthTests.test_ignores_environment_dependent_youtube_metadata) ... ok\ntest_markdown_report_rejects_invalid_runtime_contracts (test_check_source_health.SourceHealthTests.test_markdown_report_rejects_invalid_runtime_contracts) ... ok\ntest_saml_login_is_blocked_without_persisting_signed_parameters (test_check_source_health.SourceHealthTests.test_saml_login_is_blocked_without_persisting_signed_parameters) ... ok\ntest_snapshot_rejects_duplicate_ids_even_with_different_observations (test_check_source_health.SourceHealthTests.test_snapshot_rejects_duplicate_ids_even_with_different_observations) ... ok\ntest_subset_write_preserves_unselected_trusted_observations (test_check_source_health.SourceHealthTests.test_subset_write_preserves_unselected_trusted_observations) ... ok\ntest_changed_text_and_age_reopen_review_without_mutating_receipts (test_deep_review_queue.DeepReviewQueueTests.test_changed_text_and_age_reopen_review_without_mutating_receipts) ... ok\ntest_default_microsoft_scope_includes_office_and_excludes_other_vendors (test_deep_review_queue.DeepReviewQueueTests.test_default_microsoft_scope_includes_office_and_excludes_other_vendors) ... ok\ntest_event_on_or_before_receipt_does_not_schedule_same_work_forever (test_deep_review_queue.DeepReviewQueueTests.test_event_on_or_before_receipt_does_not_schedule_same_work_forever) ... ok\ntest_expired_or_changed_blocker_returns_without_clearing_blocker (test_deep_review_queue.DeepReviewQueueTests.test_expired_or_changed_blocker_returns_without_clearing_blocker) ... ok\ntest_future_event_can_precede_interval_without_being_due_now (test_deep_review_queue.DeepReviewQueueTests.test_future_event_can_precede_interval_without_being_due_now) ... ok\ntest_future_receipt_cannot_complete_current_review (test_deep_review_queue.DeepReviewQueueTests.test_future_receipt_cannot_complete_current_review) ... ok\ntest_later_due_event_reopens_review_including_blocked_guides (test_deep_review_queue.DeepReviewQueueTests.test_later_due_event_reopens_review_including_blocked_guides) ... ok\ntest_missing_evidence_and_unknown_exam_fail_closed (test_deep_review_queue.DeepReviewQueueTests.test_missing_evidence_and_unknown_exam_fail_closed) ... ok\ntest_missing_receipt_is_pending_even_when_existing_guide_is_source_validated (test_deep_review_queue.DeepReviewQueueTests.test_missing_receipt_is_pending_even_when_existing_guide_is_source_validated) ... ok\ntest_receipt_does_not_imply_live_lab_execution (test_deep_review_queue.DeepReviewQueueTests.test_receipt_does_not_imply_live_lab_execution) ... ok\ntest_recent_blocker_stays_visible_without_displacing_first_reviews (test_deep_review_queue.DeepReviewQueueTests.test_recent_blocker_stays_visible_without_displacing_first_reviews) ... ok\ntest_retired_guide_is_archived_even_when_old_event_is_overdue (test_deep_review_queue.DeepReviewQueueTests.test_retired_guide_is_archived_even_when_old_event_is_overdue) ... ok\ntest_vendor_and_batch_constraints (test_deep_review_queue.DeepReviewQueueTests.test_vendor_and_batch_constraints) ... ok\ntest_implementation_contract_rejects_missing_and_extra_adapters (test_objective_adapter_registry.ObjectiveAdapterRegistryTests.test_implementation_contract_rejects_missing_and_extra_adapters) ... ok\ntest_vendor_assignments_and_documentation_match_registry (test_objective_adapter_registry.ObjectiveAdapterRegistryTests.test_vendor_assignments_and_documentation_match_registry) ... ok\ntest_detected_changes_become_individual_review_checks (test_objective_workflow_report.ObjectiveWorkflowReportTests.test_detected_changes_become_individual_review_checks) ... ok\ntest_missing_report_points_to_setup_or_test_failure (test_objective_workflow_report.ObjectiveWorkflowReportTests.test_missing_report_points_to_setup_or_test_failure) ... ok\ntest_provider_errors_and_manual_limitations_stay_distinct (test_objective_workflow_report.ObjectiveWorkflowReportTests.test_provider_errors_and_manual_limitations_stay_distinct) ... ok\ntest_changed_blueprint_or_rubric_renews_eligibility (test_prepare_ai_audit_batch.AIAuditBatchPreparerTests.test_changed_blueprint_or_rubric_renews_eligibility) ... ok\ntest_completed_audits_are_bound_to_guide_snapshot_and_rubric (test_prepare_ai_audit_batch.AIAuditBatchPreparerTests.test_completed_audits_are_bound_to_guide_snapshot_and_rubric) ... ok\ntest_default_manifest_reports_source_gate_blockers_without_aborting_queue (test_prepare_ai_audit_batch.AIAuditBatchPreparerTests.test_default_manifest_reports_source_gate_blockers_without_aborting_queue) ... ok\ntest_explicit_request_cannot_bypass_source_validation_gate (test_prepare_ai_audit_batch.AIAuditBatchPreparerTests.test_explicit_request_cannot_bypass_source_validation_gate) ... ok\ntest_explicit_selection_can_revisit_unchanged_audit (test_prepare_ai_audit_batch.AIAuditBatchPreparerTests.test_explicit_selection_can_revisit_unchanged_audit) ... ok\ntest_legacy_rubric_results_remain_historical (test_prepare_ai_audit_batch.AIAuditBatchPreparerTests.test_legacy_rubric_results_remain_historical) ... ok\ntest_main_refuses_new_legacy_rubric_manifests (test_prepare_ai_audit_batch.AIAuditBatchPreparerTests.test_main_refuses_new_legacy_rubric_manifests) ... ok\ntest_natural_key_orders_numeric_exam_codes_naturally (test_prepare_ai_audit_batch.AIAuditBatchPreparerTests.test_natural_key_orders_numeric_exam_codes_naturally) ... ok\ntest_platform_newlines_do_not_renew_eligibility_but_whitespace_does (test_prepare_ai_audit_batch.AIAuditBatchPreparerTests.test_platform_newlines_do_not_renew_eligibility_but_whitespace_does) ... ok\ntest_risk_score_prioritizes_change_and_evidence_problems (test_prepare_ai_audit_batch.AIAuditBatchPreparerTests.test_risk_score_prioritizes_change_and_evidence_problems) ... ok\ntest_source_index_rejects_duplicate_health_rows (test_prepare_ai_audit_batch.AIAuditBatchPreparerTests.test_source_index_rejects_duplicate_health_rows) ... ok\ntest_unbound_or_malformed_results_never_suppress_selection (test_prepare_ai_audit_batch.AIAuditBatchPreparerTests.test_unbound_or_malformed_results_never_suppress_selection) ... ok\ntest_unchanged_guide_is_excluded_but_guide_only_edit_renews_eligibility (test_prepare_ai_audit_batch.AIAuditBatchPreparerTests.test_unchanged_guide_is_excluded_but_guide_only_edit_renews_eligibility) ... ok\ntest_catalog_keeps_partner_references_separate_from_guides (test_prepare_site.SitePreparationTests.test_catalog_keeps_partner_references_separate_from_guides) ... ok\ntest_collection_card_codes_use_level_then_natural_sort (test_prepare_site.SitePreparationTests.test_collection_card_codes_use_level_then_natural_sort) ... ok\ntest_collection_cards_link_to_generated_collection_page (test_prepare_site.SitePreparationTests.test_collection_cards_link_to_generated_collection_page) ... ok\ntest_collection_page_links_to_guides_from_nested_url (test_prepare_site.SitePreparationTests.test_collection_page_links_to_guides_from_nested_url) ... ok\ntest_exam_cards_use_built_site_urls (test_prepare_site.SitePreparationTests.test_exam_cards_use_built_site_urls) ... ok\ntest_exam_sort_uses_level_then_natural_exam_code (test_prepare_site.SitePreparationTests.test_exam_sort_uses_level_then_natural_exam_code) ... ok\ntest_extracts_unweighted_domains_without_inventing_percentages (test_prepare_site.SitePreparationTests.test_extracts_unweighted_domains_without_inventing_percentages) ... ok\ntest_extracts_weighted_domains_and_first_lab (test_prepare_site.SitePreparationTests.test_extracts_weighted_domains_and_first_lab) ... ok\ntest_navigation_and_homepage_use_registered_vendors (test_prepare_site.SitePreparationTests.test_navigation_and_homepage_use_registered_vendors) ... ok\ntest_navigation_is_generated_from_catalog_entries (test_prepare_site.SitePreparationTests.test_navigation_is_generated_from_catalog_entries) ... ok\ntest_prepares_guide_metadata_navigation_and_feedback (test_prepare_site.SitePreparationTests.test_prepares_guide_metadata_navigation_and_feedback) ... ok\ntest_publication_allowlist_excludes_background_conversation (test_prepare_site.SitePreparationTests.test_publication_allowlist_excludes_background_conversation) ... ok\ntest_vendor_page_groups_levels_and_sorts_codes (test_prepare_site.SitePreparationTests.test_vendor_page_groups_levels_and_sorts_codes) ... ok\ntest_yaml_string_quotes_punctuation (test_prepare_site.SitePreparationTests.test_yaml_string_quotes_punctuation) ... ok\ntest_baseline_is_order_stable_and_changes_with_official_evidence (test_prepare_source_freshness_scan.SourceFreshnessPreparerTests.test_baseline_is_order_stable_and_changes_with_official_evidence) ... ok\ntest_blocked_and_future_scans_do_not_suppress_recurrence (test_prepare_source_freshness_scan.SourceFreshnessPreparerTests.test_blocked_and_future_scans_do_not_suppress_recurrence) ... ok\ntest_completed_scans_are_bound_to_baseline_rubric_and_latest_date (test_prepare_source_freshness_scan.SourceFreshnessPreparerTests.test_completed_scans_are_bound_to_baseline_rubric_and_latest_date) ... ok\ntest_official_source_filter_excludes_third_party_material (test_prepare_source_freshness_scan.SourceFreshnessPreparerTests.test_official_source_filter_excludes_third_party_material) ... ok\ntest_only_queued_candidates_are_prepared (test_prepare_source_freshness_scan.SourceFreshnessPreparerTests.test_only_queued_candidates_are_prepared) ... ok\ntest_accepts_a_queued_candidate (test_source_candidates.SourceCandidateValidationTests.test_accepts_a_queued_candidate) ... ok\ntest_rejected_candidate_needs_review_evidence (test_source_candidates.SourceCandidateValidationTests.test_rejected_candidate_needs_review_evidence) ... ok\ntest_rejects_unknown_exam_and_approved_url (test_source_candidates.SourceCandidateValidationTests.test_rejects_unknown_exam_and_approved_url) ... ok\ntest_ambiguous_or_missing_source_sections_fail_before_writing (test_sync_learning_resources.LearningResourceSyncTests.test_ambiguous_or_missing_source_sections_fail_before_writing) ... ok\ntest_bulk_reviewed_selection_uses_latest_nonfuture_matching_receipt (test_sync_learning_resources.LearningResourceSyncTests.test_bulk_reviewed_selection_uses_latest_nonfuture_matching_receipt) ... ok\ntest_copies_only_resource_section_and_rebases_local_links (test_sync_learning_resources.LearningResourceSyncTests.test_copies_only_resource_section_and_rebases_local_links) ... ok\ntest_missing_exam_is_added_in_selected_section_before_next_vendor (test_sync_learning_resources.LearningResourceSyncTests.test_missing_exam_is_added_in_selected_section_before_next_vendor) ... ok\ntest_update_is_idempotent_and_preserves_other_exams_and_vendors (test_sync_learning_resources.LearningResourceSyncTests.test_update_is_idempotent_and_preserves_other_exams_and_vendors) ... ok\ntest_ai_audit_rejects_pass_against_blocked_source_validation (test_validate_repository.RepositoryValidationTests.test_ai_audit_rejects_pass_against_blocked_source_validation) ... ok\ntest_ai_audit_rejects_pass_verdict_with_material_open_finding (test_validate_repository.RepositoryValidationTests.test_ai_audit_rejects_pass_verdict_with_material_open_finding) ... ok\ntest_ai_audit_summary_counts_verdicts_and_dispositions (test_validate_repository.RepositoryValidationTests.test_ai_audit_summary_counts_verdicts_and_dispositions) ... ok\ntest_alias_export_round_trips_names_without_extra_certification_rows (test_validate_repository.RepositoryValidationTests.test_alias_export_round_trips_names_without_extra_certification_rows) ... ok\ntest_alias_validation_rejects_ambiguous_or_malformed_names (test_validate_repository.RepositoryValidationTests.test_alias_validation_rejects_ambiguous_or_malformed_names) ... ok\ntest_canonical_alias_requires_matching_health_url (test_validate_repository.RepositoryValidationTests.test_canonical_alias_requires_matching_health_url) ... ok\ntest_catalog_schema_registry_covers_every_catalog (test_validate_repository.RepositoryValidationTests.test_catalog_schema_registry_covers_every_catalog) ... ok\ntest_certification_seed_accepts_vendor_codes_that_begin_with_digits (test_validate_repository.RepositoryValidationTests.test_certification_seed_accepts_vendor_codes_that_begin_with_digits) ... ok\ntest_duplicate_health_ids_fail_before_alias_or_review_validation (test_validate_repository.RepositoryValidationTests.test_duplicate_health_ids_fail_before_alias_or_review_validation) ... ok\ntest_every_catalog_rejects_bad_shape_before_semantic_validation (test_validate_repository.RepositoryValidationTests.test_every_catalog_rejects_bad_shape_before_semantic_validation) ... ok\ntest_every_catalog_rejects_missing_wrong_type_and_unknown_fields (test_validate_repository.RepositoryValidationTests.test_every_catalog_rejects_missing_wrong_type_and_unknown_fields) ... ok\ntest_freshness_accepts_registered_canonical_alias (test_validate_repository.RepositoryValidationTests.test_freshness_accepts_registered_canonical_alias) ... ok\ntest_freshness_binds_candidates_and_sources_to_affected_exams (test_validate_repository.RepositoryValidationTests.test_freshness_binds_candidates_and_sources_to_affected_exams) ... ok\ntest_freshness_does_not_treat_rejected_candidate_as_queued (test_validate_repository.RepositoryValidationTests.test_freshness_does_not_treat_rejected_candidate_as_queued) ... ok\ntest_freshness_rejects_conflicting_disposition_fields (test_validate_repository.RepositoryValidationTests.test_freshness_rejects_conflicting_disposition_fields) ... ok\ntest_freshness_rejects_future_scan_chronology (test_validate_repository.RepositoryValidationTests.test_freshness_rejects_future_scan_chronology) ... ok\ntest_freshness_rejects_queued_finding_on_passed_check (test_validate_repository.RepositoryValidationTests.test_freshness_rejects_queued_finding_on_passed_check) ... ok\ntest_generated_site_source_tree_is_not_revalidated_as_repository_content (test_validate_repository.RepositoryValidationTests.test_generated_site_source_tree_is_not_revalidated_as_repository_content) ... ok\ntest_heading_parser_ignores_fenced_code (test_validate_repository.RepositoryValidationTests.test_heading_parser_ignores_fenced_code) ... ok\ntest_historical_audit_cannot_use_later_pass_to_hide_blocked_review (test_validate_repository.RepositoryValidationTests.test_historical_audit_cannot_use_later_pass_to_hide_blocked_review) ... ok\ntest_historical_audit_preserves_pass_when_current_review_is_blocked (test_validate_repository.RepositoryValidationTests.test_historical_audit_preserves_pass_when_current_review_is_blocked) ... ok\ntest_historical_audit_still_checks_actual_snapshot_bytes (test_validate_repository.RepositoryValidationTests.test_historical_audit_still_checks_actual_snapshot_bytes) ... ok\ntest_historical_review_keeps_original_link_evidence (test_validate_repository.RepositoryValidationTests.test_historical_review_keeps_original_link_evidence) ... ok\ntest_invalid_schema_is_reported_without_traceback (test_validate_repository.RepositoryValidationTests.test_invalid_schema_is_reported_without_traceback) ... ok\ntest_legacy_audit_without_dated_review_must_match_current_blueprint (test_validate_repository.RepositoryValidationTests.test_legacy_audit_without_dated_review_must_match_current_blueprint) ... ok\ntest_lifecycle_dates_require_sources_and_keep_language_scope (test_validate_repository.RepositoryValidationTests.test_lifecycle_dates_require_sources_and_keep_language_scope) ... ok\ntest_new_audit_cannot_use_superseded_blueprint (test_validate_repository.RepositoryValidationTests.test_new_audit_cannot_use_superseded_blueprint) ... ok\ntest_old_audit_needs_preserved_review_for_different_blueprint (test_validate_repository.RepositoryValidationTests.test_old_audit_needs_preserved_review_for_different_blueprint) ... ok\ntest_parses_required_guide_front_matter (test_validate_repository.RepositoryValidationTests.test_parses_required_guide_front_matter) ... ok\ntest_renders_python_friendly_certification_query_seeds (test_validate_repository.RepositoryValidationTests.test_renders_python_friendly_certification_query_seeds) ... ok\ntest_retirement_metadata_is_validated_and_replacement_is_cataloged (test_validate_repository.RepositoryValidationTests.test_retirement_metadata_is_validated_and_replacement_is_cataloged) ... ok\ntest_rubric_two_schema_requires_guide_hash_and_preserves_legacy_records (test_validate_repository.RepositoryValidationTests.test_rubric_two_schema_requires_guide_hash_and_preserves_legacy_records) ... ok\ntest_rubric_two_semantic_validation_requires_hash_but_allows_history (test_validate_repository.RepositoryValidationTests.test_rubric_two_semantic_validation_requires_hash_but_allows_history) ... ok\ntest_source_freshness_schema_is_applied (test_validate_repository.RepositoryValidationTests.test_source_freshness_schema_is_applied) ... ok\ntest_source_freshness_summary_counts_outcomes_and_dispositions (test_validate_repository.RepositoryValidationTests.test_source_freshness_summary_counts_outcomes_and_dispositions) ... ok\ntest_unknown_source_type_is_still_rejected (test_validate_repository.RepositoryValidationTests.test_unknown_source_type_is_still_rejected) ... ok\ntest_validates_dates_and_public_urls (test_validate_repository.RepositoryValidationTests.test_validates_dates_and_public_urls) ... ok\ntest_accepts_existing_page_asset_and_anchor (test_validate_site.GeneratedSiteValidationTests.test_accepts_existing_page_asset_and_anchor) ... ok\ntest_reports_heading_and_skip_link_regressions (test_validate_site.GeneratedSiteValidationTests.test_reports_heading_and_skip_link_regressions) ... ok\ntest_reports_missing_page_and_anchor (test_validate_site.GeneratedSiteValidationTests.test_reports_missing_page_and_anchor) ... ok\ntest_reports_static_accessibility_regressions (test_validate_site.GeneratedSiteValidationTests.test_reports_static_accessibility_regressions) ... ok\ntest_dependabot_covers_python_and_actions (test_workflow_contracts.WorkflowContractTests.test_dependabot_covers_python_and_actions) ... ok\ntest_remote_actions_are_pinned_to_commit_sha (test_workflow_contracts.WorkflowContractTests.test_remote_actions_are_pinned_to_commit_sha) ... ok\ntest_validation_and_deployment_share_one_gate (test_workflow_contracts.WorkflowContractTests.test_validation_and_deployment_share_one_gate) ... ok\n\n----------------------------------------------------------------------\nRan 188 tests in 37.536s\n\nOK\n",
+    "repository_unit_test_count": 188,
+    "ab100_lab_unit_test_count": 13
+  },
+  "objective_monitor": {
+    "name": "objective-monitor",
+    "command": [
+      ".venv\\Scripts\\python.exe",
+      "-X",
+      "utf8",
+      "scripts/check_official_study_guides.py",
+      "--exam-code",
+      "AB-100",
+      "--snapshot-dir",
+      ".maintenance\\ab100-pilot-2026-10-04\\objective-snapshots",
+      "--report",
+      ".maintenance\\ab100-pilot-2026-10-04\\objective-report.json",
+      "--write"
+    ],
+    "started_at": "2026-10-04T21:49:45.710379+00:00",
+    "exit_code": 0,
+    "log": ".maintenance/ab100-pilot-2026-10-04/objective-monitor.log"
+  },
+  "objective_monitor_report": {
+    "changed": [
+      "AB-100"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "AB-100",
+        "title": "Agentic AI Business Solutions Architect",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100",
+        "guide_path": "guides/AB-100-agentic-ai-business-solutions-architect.md",
+        "snapshot_path": ".maintenance\\ab100-pilot-2026-10-04\\objective-snapshots\\ab-100-official-objectives.txt",
+        "status_snapshot_path": ".maintenance\\ab100-pilot-2026-10-04\\objective-snapshots\\ab-100-official-status.json",
+        "previous_sha256": "3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2",
+        "current_sha256": "0b7f28ea542aaa857fc80cc34aa724611505bf2ea4a6949e4ac2a10075d5fc0f",
+        "previous_status_sha256": "65ec6b50457ed8f1c378ede48583ef4ea43f883d11e1c3c2cbd3e148aaaf6e8e",
+        "current_status_sha256": "60a9791bd471ef3a8b134c72653039291e1a19a4cc3b6063deb095efc809b16d",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of October 14, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ],
+    "selection": {
+      "cohort": null,
+      "requested_exam_codes": [
+        "AB-100"
+      ],
+      "checked_exams": 1
+    }
+  },
+  "candidate_snapshot_sha256": "0b7f28ea542aaa857fc80cc34aa724611505bf2ea4a6949e4ac2a10075d5fc0f",
+  "candidate_count": 8,
+  "objective_comparison": "Date heading changes July 22 to October 14; two bullets add Microsoft before Foundry Tools and one capitalizes Service. Objective groups and weights unchanged. Accepted snapshots preserved.",
+  "primary_candidate_decisions": [
+    {
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-sharepoint",
+      "decision": "accepted",
+      "mapping": "Plan/grounding, design/SharePoint, deploy/testing and grounding-data access"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/knowledge",
+      "decision": "not-adopted",
+      "reason": "Attempted direct lead returned a browser internal error; no product contract confirmed or cited."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection",
+      "decision": "not-adopted",
+      "reason": "Inspected lead; did not close the selected grounding or prerequisite gaps. No new technical claim adopted."
+    }
+  ],
+  "tabletop_review": {
+    "scenario": "Exercise 14: six synthetic records",
+    "usable_record": "CA-current-v2",
+    "exclusion_reasons": {
+      "US-current-v3": "market",
+      "CA-draft-v3": "status",
+      "CA-restricted-v1": "caller access",
+      "unknown-market-v1": "missing metadata",
+      "CA-future-v3": "future effective date"
+    },
+    "execution_boundary": "Manual design/answer review only; no retrieval service or authorization tests executed."
+  },
+  "validation_failure_and_fix": {
+    "failure": "Strict MkDocs build could not resolve the new AB-100 pilot report because the publication allowlist omitted it.",
+    "fix": "Register only the AB-100 report in PUBLIC_DOCUMENTS; use repository links for the JSON evidence ledger.",
+    "initial_failed_log": ".maintenance/ab100-pilot-2026-10-04/site-build-initial-failure.log"
+  }
+}
