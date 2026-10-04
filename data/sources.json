@@ -3,6 +3,62 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "ab100-blog-sharepoint-metadata",
+      "title": "SharePoint Metadata Filtering in Copilot Studio: From Topic Logic to Agent Decisions",
+      "url": "https://microsoft.github.io/mcscatblog/posts/sharepoint-metadata-filtering/",
+      "publisher": "Microsoft Copilot Studio CAT / Adi Leibowitz",
+      "authority_class": 5,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-10-04",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Published September 1, updated September 2, 2026; 7-minute reading estimate. CC BY 4.0; attribution and original synthesis only. Plan/grounding, design/SharePoint and deploy/testing. GHCP-harness example; internal tool names are not public APIs. Not run in a tenant."
+    },
+    {
+      "id": "ab100-ai-agents-beginners",
+      "title": "AI Agents for Beginners",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-10-04",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "MIT license inspected. Reviewed README and lessons 6 (trustworthy agents) and 10 (production observability/evaluation), October 4, 2026; no separate lesson publication/update date displayed. About 2-3 hours for selected reading and an original design worksheet, estimated from two lessons plus analysis; notebook execution adds time. Deploy/security, monitoring and testing. SDK samples need version/account/model review. Lesson 6 inline poem-approval demo solicits approval after generation and does not enforce a consequential tool boundary. No linked video or notebook executed."
+    },
+    {
+      "id": "ab100-responsible-ai-report-2026",
+      "title": "Responsible AI Transparency Report 2026",
+      "url": "https://www.microsoft.com/en-us/corporate-responsibility/topics/responsible-ai/reports/transparency-report/",
+      "publisher": "Microsoft",
+      "authority_class": 5,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-10-04",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Public 2026 report web summary, no separate publication/update date displayed. About 30-45 minutes selected reading and responsibility worksheet; estimate, not publisher runtime. Deploy/responsible AI and governance. Developer/deployer distinctions provide practical depth, not proof of Microsoft service controls, compliance, or exam changes. Linked full-report PDF not reviewed; vendor self-report, not independent audit."
+    },
+    {
+      "id": "ab100-sharepoint-knowledge",
+      "title": "Add SharePoint as a knowledge source",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-sharepoint",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-04",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Primary corroboration for standard-harness SharePoint knowledge source, caller permission trimming, filter choices, encrypted-file and transcript limitations. Do not transfer its filter schema to GHCP-harness metadata tools. Public article inspected October 4, 2026; no tenant execution."
+    },
+    {
       "id": "splunk-tstats-10-0",
       "title": "Splunk tstats reference 10.0",
       "url": "https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.0/search-commands/tstats",

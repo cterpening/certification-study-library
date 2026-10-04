@@ -21,7 +21,9 @@ upcoming_change_checked: 2026-09-27
 
 > **Credential name checked September 27, 2026:** Microsoft now lists **Agentic AI Business Solutions Architect Expert**. The exam code remains AB-100. Passing the exam and earning the credential are separate: the existing associate-certification prerequisite still needs to be satisfied. Check the [current credential page](https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/) for accepted prerequisites; a name change does not establish a new exam.
 
-> **Official-page conflict:** The exam page includes MB-280 and PL-200 in its prerequisite list; the credential page omits them. Both also contain an unrelated information-protection exam summary. Use the dedicated study guide for scope and confirm an ambiguous prerequisite with Microsoft Credentials support before relying on it. The course and learning path have separate entry requirements; completing them does not satisfy the associate-credential requirement.
+> **Official-page conflict (rechecked October 4, 2026):** The exam page includes MB-280 and PL-200 in its prerequisite list; the credential page omits them. Both also contain an unrelated information-protection exam summary. Use the dedicated study guide for scope and confirm an ambiguous prerequisite with Microsoft Credentials support before relying on it. The course and learning path have separate entry requirements; completing them does not satisfy the associate-credential requirement.
+
+**Bounded maintenance pilot - October 4, 2026:** The prerequisite discrepancy remains open and Microsoft still announces October 14 as the English revision date. The July baseline and September 27 full-review date remain unchanged. This follow-up adds grounding and governance practice, evaluated supplementary resources, and a fresh offline lab run; it does not establish tenant behavior or human review. See the [pilot evidence and source decisions](../docs/research/2026-10-04-ab-100-maintenance-pilot.md).
 
 ## How to use this guide
 
@@ -201,6 +203,14 @@ Ask:
 Organize reusable business data with governed semantics, ownership, identifiers, permissions, retention, and stable interfaces so more than one AI system can use it safely. Copying uncontrolled documents into each agent creates divergent knowledge and access rules.
 
 > **Related item:** Data products provide a useful model: a reusable dataset has an accountable owner, consumers, contract, quality measures, access policy, and lifecycle—not merely a storage location.
+
+### Separate applicable knowledge from permitted knowledge
+
+**Confirmed; VERIFY CURRENT:** For standard-harness agents, [Microsoft's SharePoint knowledge guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-sharepoint) scopes retrieval to the registered location and the chatting user's permissions. It documents filters for title, author, modifier, and modification date. Encryption-protected files can appear ready yet yield no answer; transcripts omit retrieved document bodies. Neither a ready status nor an empty transcript proves successful retrieval or denied access.
+
+Adi Leibowitz's [metadata-filtering walkthrough](https://microsoft.github.io/mcscatblog/posts/sharepoint-metadata-filtering/) illustrates a different, GitHub Copilot-harness path. Use it to design document-applicability tests; its built-in tool names and schemas are internal implementation details. **Unconfirmed - validation needed; VERIFY CURRENT:** this pilot did not establish custom-column filtering behavior in a tenant or find a directly matching product-reference contract. Do not promise this capability for every harness or turn the blog's tool calls into a required API.
+
+For a case assistant, relevance has two independent questions: does an approved article apply to this market and date, and may this caller read it? A country or approval-status tag narrows applicability; it grants no permission. Missing metadata calls for clarification or a governed fallback rather than a guessed market. In [Exercise 14](#exercise-14-applicable-and-authorized-grounding), inspect selected document IDs and revisions separately from the final prose and test both authorized-but-inapplicable and applicable-but-restricted records.
 
 ---
 
@@ -837,6 +847,12 @@ Map Microsoft Responsible AI principles to concrete requirements and evidence. P
 
 Copilot Studio's [security and governance overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-and-governance) identifies controls for data policies, authentication, knowledge, connectors, triggers, audit, and environments. Its separate [testing-strategy guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase4) explains validation before release. Map each control to its enforcement point and evidence across Microsoft 365, Foundry, Dynamics 365, and integrations; a testing page alone does not establish governance coverage.
 
+### Assign developer and deployer responsibilities
+
+**Related item:** Microsoft's [2026 Responsible AI Transparency Report web summary](https://www.microsoft.com/en-us/corporate-responsibility/topics/responsible-ai/reports/transparency-report/) distinguishes developer and deployer responsibilities. Use this as supplementary governance context, not proof of compliance or of a tenant feature. The full linked report was not reviewed.
+
+For the fictional assistant, the builder owns capability limitations, tested failure paths, versioned artifacts, and evidence delivered with the release. The deploying process owner owns the chosen use, effective identities, local data and approvals, user guidance, incident response, and retirement. A purchased agent still needs both roles. Write a handover matrix with an owner and acceptance evidence for each obligation; reject a launch where both parties assume the other will staff the exception queue. Verify Microsoft controls against the [product governance documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-and-governance), then validate their application in the actual environment.
+
 ### Defend against prompt manipulation
 
 - separate trusted instructions from untrusted user and retrieved content;
@@ -949,6 +965,26 @@ Use the [running case](#follow-one-case-from-design-to-release) to connect the f
 
 **Completion check:** Hand another learner your scope, integration decision, calculations, test table, and release record. They should be able to identify who can act, what stops an invalid action, how success is observed, and what happens after failure. If a claim rests only on an instruction or a green summary score, identify the missing enforcement or evidence.
 
+### Exercise 14: Applicable and authorized grounding
+
+Allow 20-30 minutes. This original tabletop uses synthetic records; it executes no retrieval or authorization service. On October 4, 2026, the assistant must explain the approved Canadian service process to caller Alex. In this scenario Alex cannot read restricted records. The locally chosen policy requires an explicit matching market, approved status, and an effective date no later than the query date.
+
+| Document ID | Market | Status | Effective date | Alex may read? |
+|---|---|---|---|---|
+| CA-current-v2 | Canada | Approved | September 1, 2026 | Yes |
+| US-current-v3 | United States | Approved | September 1, 2026 | Yes |
+| CA-draft-v3 | Canada | Draft | September 1, 2026 | Yes |
+| CA-restricted-v1 | Canada | Approved | September 1, 2026 | No |
+| unknown-market-v1 | Missing | Approved | September 1, 2026 | Yes |
+| CA-future-v3 | Canada | Approved | October 14, 2026 | Yes |
+
+1. Select the usable record and give an exclusion reason for every other record. Do not infer missing metadata from its filename.
+2. Design separate applicability and permission tests, plus no-match, changed-permission, and encrypted-file cases. State expected results before reviewing a response.
+3. Specify the candidate, harness, caller, document revision, source scope, selected IDs, and safe trace references to retain. Avoid placing restricted text in test reports or logs.
+4. Explain what you must inspect if a correct-looking answer has no retrieved document body in its transcript. For the standard harness, use the documented SharePoint limitations; verify equivalent evidence separately for another harness.
+
+**Answer checkpoint:** Only `CA-current-v2` meets every stated condition. Exclude the US record for market, draft for status, restricted record for access, unknown-market record for missing metadata, and future record for date. Failure of one check must not be repaired by relaxing another. A no-match path should clarify or escalate under the chosen policy. Record predicted tabletop results separately from any later observed tenant results.
+
 ---
 
 ## 12. Scenario checks and exam distinctions
@@ -977,6 +1013,8 @@ Use the [running case](#follow-one-case-from-design-to-release) to connect the f
 20. All 39 completed tests pass, but a 40th required authorization test never runs. What should the release gate report and do?
 21. A configuration map shows a connection to the case system. What evidence is needed to claim the agent successfully created an approved task?
 22. An unchanged package is imported into production and its greeting works. What environment-dependent checks remain before broader release?
+23. Alex can read two policies, but only one applies to the case market. A third applicable policy is restricted. Which independent gates and retrieval evidence are required?
+24. A vendor supplies a safety-tested agent, but no one owns deployment-specific incidents or the human exception queue. Which responsibilities remain unassigned?
 
 For each answer, state the outcome, architecture boundary, owner, decision, risk, evidence, deployment path, and rollback or escalation.
 
@@ -1008,6 +1046,8 @@ These checkpoints explain the original questions above. Alternative architecture
 | 20 | Report 100% pass among completed tests and 97.5% execution coverage, with the missing test explicit. Block promotion until the required evidence exists under the intended identity. |
 | 21 | Correlate the request, approval, executed tool call, and authoritative task record. Verify the intended identity and one effect per approved operation. Configuration visibility alone proves neither invocation nor success. |
 | 22 | Check target connections, identities, permissions, configuration, knowledge, channels, telemetry, and a limited smoke test. Record intentional differences and recovery steps; package equality alone does not establish equivalent behavior. |
+| 23 | Check applicability and actual caller authorization separately. Retain selected IDs/revisions and safe evidence; missing transcript document bodies alone prove neither retrieval success nor denial. |
+| 24 | Assign builder handover and deploying-owner obligations, including effective identities, approved use, exception staffing, user guidance, monitoring, incident response, and retirement. Vendor testing does not establish local readiness. |
 
 Before declaring readiness, explain three additional implementation traps: maker credentials in event triggers, a changed identity during Foundry migration, and an informational feed task mistaken for approval. Revisit Parts 5, 6, and 9 if any distinction is unclear.
 
@@ -1032,6 +1072,8 @@ Before declaring readiness, explain three additional implementation traps: maker
 ### Readiness checklist
 
 - [ ] I can assess agent fit, process impact, requirements, and grounding-data readiness.
+- [ ] I can distinguish document applicability from access permission and test missing metadata, restricted records, and absent retrieval evidence.
+- [ ] I can assign developer and deployer responsibilities with named owners and acceptance evidence.
 - [ ] I can apply the Cloud Adoption Framework and define an enabling AI Center of Excellence.
 - [ ] I can build a portfolio roadmap with risk tiers, value measures, adoption, and retirement.
 - [ ] I can define a prompt-library lifecycle with owners, approved inputs, versioned templates, evaluation evidence, monitored reuse, and retirement.
@@ -1124,6 +1166,16 @@ These five public posts from **The Custom Engine**, the Microsoft Copilot Studio
 | [Review Before Release: Agent Review Tool](https://microsoft.github.io/mcscatblog/posts/agent-review-tool/) — Ramakrishnan Raman | August 18, 2026; no separate update shown; 11 min | Deploy, Part 8: pair configuration findings with runtime tests and record evidence for each proposed fix. | GitHub Copilot harness walkthrough; the post labels its experience preview. A configuration map or score does not prove runtime behavior. Recheck [Agent Review Tool documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/kit-agent-review-tool). |
 
 For a focused session, choose one post, produce its artifact, then explain which decisions require official documentation or a tenant test. Reading all five takes about 50 minutes before practice.
+
+### Additional practice - evaluated October 4, 2026
+
+| Resource | Access and time | Objective fit and artifact | Review boundary |
+|---|---|---|---|
+| [SharePoint metadata-filtering walkthrough](https://microsoft.github.io/mcscatblog/posts/sharepoint-metadata-filtering/) - Adi Leibowitz | Public; 7-minute publisher reading estimate; add 20-30 minutes for Exercise 14 | Plan/grounding, design/SharePoint, deploy/testing: an applicability and permission test matrix | Published September 1, updated September 2, 2026; GHCP harness. Internal tools are not public APIs; custom-column behavior remains tenant-unvalidated. |
+| [Microsoft AI Agents for Beginners](https://github.com/microsoft/ai-agents-for-beginners) - lessons 6 and 10 | Public reading; about 2-3 hours selected reading and a worksheet, estimated from two lessons plus analysis | Deploy/security, monitoring, testing: a threat-control matrix and trace-to-outcome evidence plan | MIT license inspected; no separate lesson dates displayed. Reviewed lesson text only. SDK/notebook use can require accounts, model access and costs. The inline poem example asks for approval after generation; it does not establish pre-action tool enforcement. |
+| [Microsoft 2026 Responsible AI Transparency Report web summary](https://www.microsoft.com/en-us/corporate-responsibility/topics/responsible-ai/reports/transparency-report/) | Public; about 30-45 minutes selected reading and a responsibility worksheet, locally estimated | Deploy/responsible AI and governance: developer/deployer handover matrix | Vendor self-report; no separate publication/update date displayed. Full linked PDF not reviewed. Governance context, not an independent audit or product-control reference. |
+
+**VERIFY CURRENT:** The repository is a supplementary coding/lab starting point, not an AB-100 curriculum. Recheck its current dependencies, accounts, service costs, and sample support before running anything. These external notebooks and videos were not executed or watched in this pilot. For a service-free exercise, use the existing local release gate and Exercise 14.
 
 ### Courses, labs, and assessments
 

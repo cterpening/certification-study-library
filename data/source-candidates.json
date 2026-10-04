@@ -1,5 +1,32 @@
 {
   "$schema": "../schemas/source-candidate-catalog.schema.json",
   "schema_version": 1,
-  "candidates": []
+  "candidates": [
+    {
+      "id": "ab100-pilot-migration-video",
+      "title": "Video Demo: Upgrading a Classic Agent to Modern Orchestration",
+      "url": "https://microsoft.github.io/mcscatblog/posts/migration-plugin-video-demo/",
+      "added_on": "2026-10-04",
+      "suggested_exams": [
+        "AB-100"
+      ],
+      "reason": "Potential design/harness and deploy/ALM migration demonstration.",
+      "review_status": "rejected",
+      "reviewed_on": "2026-10-04",
+      "review_notes": "Not promoted in this bounded pilot: written companion inspected, embedded recording not watched; experimental unsupported plugin and untested setup. Not an exam-integrity rejection; requires viewing and a narrower validated exercise before reconsideration."
+    },
+    {
+      "id": "ab100-pilot-copilot-samples",
+      "title": "Microsoft Copilot Studio Samples",
+      "url": "https://github.com/microsoft/CopilotStudioSamples",
+      "added_on": "2026-10-04",
+      "suggested_exams": [
+        "AB-100"
+      ],
+      "reason": "Potential design/extensibility and deploy/testing implementation labs.",
+      "review_status": "rejected",
+      "reviewed_on": "2026-10-04",
+      "review_notes": "README is a broad catalog; older PVA labs moved to legacy and one employee sample marked pending deprecation. No individual sample/license/dependency path fully evaluated here. Choose a narrow current sample in a future pass; do not endorse the whole repository as an AB-100 lab."
+    }
+  ]
 }
