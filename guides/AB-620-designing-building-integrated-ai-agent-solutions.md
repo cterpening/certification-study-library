@@ -6,19 +6,19 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # AB-620 Designing and Building Integrated AI Agent Solutions in Copilot Studio Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-620-coverage-record). The [official AB-620 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#ab-620) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-620-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620) is authoritative.
 
-**Current baseline:** Official study-guide page last updated April 21, 2026; Microsoft does not publish a separate skills-effective date on that page.<br>
+**Current baseline:** The study-guide page shows last updated October 16, 2026; Microsoft publishes no separate skills-effective date. All 44 detailed objective wordings match the accepted baseline checked October 28, 2026. Page metadata is not an effective exam-revision date.<br>
 **Exam state:** Active (no longer labeled beta on the credential page) as verified September 28, 2026.<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
-**Training availability:** The three official self-paced paths are live; the separate three-day AB-620T00-A instructor-led course is listed as available September 30, 2026 (scheduled; not yet delivered).<br>
+**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
+**Training availability:** The official self-paced paths and three-day English AB-620T00-A course page are live as checked October 28, 2026. Provider delivery dates and availability vary; the earlier September 30 scheduled-date note is historical.<br>
 **Official source:** [AB-620 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620)
 
 ## How to use this guide
@@ -45,7 +45,7 @@ The [AI at Work roadmap transition](https://www.microsoft.com/en-us/dynamics-365
 
 The [September deep review](../docs/research/2026-09-28-ab-620-deep-review.md) maps all **44 unchanged detailed objectives**. It adds six worked examples, two labs, 48 answered checks, and two blog exercises. Current implementation changes include Activity-protocol prerequisites, harness-specific Fabric integration, preview approval packaging limits, and expanded evaluation methods. No cloud lab was executed during this review.
 
-The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/) currently lists **120 minutes**, English and 12 other languages, and no Practice Assessment. Course release dates and third-party mock-test timing do not define the exam's availability or duration.
+The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/) lists **120 minutes**, English and 12 other languages, and now directs candidates to the sign-in AI Skills Navigator Practice Assessment. Course release dates and third-party mock-test timing do not define the exam's availability or duration. **VERIFY CURRENT:** exam logistics and assessment access.
 
 ## Exam profile and objective map
 
@@ -300,6 +300,14 @@ For standard-harness [Azure AI Search knowledge](https://learn.microsoft.com/en-
 
 **Worked example 3 — authorize and rank before returning knowledge.** A custom search service finds 12 candidate snippets in system A and 10 in B. The caller is permitted to see 9 and 8 respectively. Filter on the server first, leaving **17 authorized candidates**, then rank/deduplicate and return at most **15** for generation; five unauthorized candidates never enter the model context. This illustrative calculation assumes no duplicates. The [custom knowledge trigger](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/custom-knowledge-sources) runs `OnKnowledgeRequested` topics in parallel and applies the 15-snippet cap across their combined results. It is configured in YAML, uses rewritten semantic/keyword queries, and writes `Content` plus optional `Title` and `ContentLocation` to `System.SearchResults`. A rewritten query is search input, not trusted authorization. Test that a high-ranked forbidden snippet cannot displace an authorized result or leak into a citation.
 
+### Worked configuration: two sources with different retrieval paths
+
+For a synthetic support agent in the **standard harness**, add indexed product articles through a tenant-admin-configured Copilot connector: open **Add knowledge**, choose the connector (check **Advanced**), select its connection and add it. If it is absent, ask the administrator to check configuration/indexing rather than creating an unrelated action tool. Check publication authentication, including the documented `ExternalItem.Read.All` scope for manual authentication. Source ACLs and ingestion freshness remain part of the test. [Copilot connector setup](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-connectors)
+
+For live incident records, use **Add knowledge → real-time connector**, sign in, select the target and tables, then supply a precise name/description and add it. Wait for metadata status **Ready** before testing. This **preview** path indexes metadata and queries records at runtime using user authentication; it is not a copied incident database. Synonyms/glossary support is connector-specific. [Real-time knowledge procedure](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-real-time-connectors)
+
+**Answer check:** one user can read an article but not its related incident. Expected evidence is an authorized article citation plus denied/absent incident data, with separate connector/identity diagnostics. A successful maker test does not prove that second user's access. **VERIFY CURRENT:** harness support, scopes, connector availability and preview status.
+
 ### Configure connectors and REST APIs as tools
 
 Use precise names/descriptions because the orchestrator uses metadata for selection. Define typed input/output schemas. For writes, provide preview/confirmation where risk warrants it and return a business result the agent can interpret without exposing internal errors.
@@ -314,11 +322,21 @@ Server-side checks must validate:
 
 An OpenAPI description improves discovery and parameter generation but does not make an endpoint safe. Apply API gateway/service authorization, quotas, logging, schema validation, and threat controls.
 
+### Worked configuration: expose one read-only operation
+
+Use an existing custom connector exposing a synthetic `GetCaseStatus(caseId)` operation. On the standard agent's **Tools → Add a tool → Connector** path, find the connector/operation, establish the permitted connection and configure the tool. Bind `caseId` to the validated topic value; return a typed status and safe not-found/denied result. Test the same operation directly and through the agent so routing errors are distinguishable from service errors. [Connector tool procedure](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-connectors)
+
+For the **preview REST API tool** route, choose **New tool → REST API**, upload the OpenAPI JSON, provide a routing description and solution, configure authentication, select only the intended operation, then review/publish. The procedure expects OpenAPI v2 and translates v3 on import; inspect the resulting operation/schema instead of assuming lossless conversion. [REST API tool setup](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-rest-api)
+
+**Answer check:** a request for case 42 must map to that validated ID, execute under the chosen identity and return the service result. A cross-user case request must fail at the service boundary even if the model generates a valid call. **VERIFY CURRENT:** menus, supported authentication and REST preview behavior.
+
 ### Configure MCP tools deliberately
 
 When adding an [MCP server](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-components-to-agent), inspect its tools/resources, authenticate the connection, and disable unneeded tools. If “allow all” is turned off, newly added server tools remain off—useful change control.
 
 Establish server ownership, source/deployment trust, transport security, authentication (OAuth 2.0/API key where supported), tool scopes, data handling, error semantics, versioning, availability, audit, and incident process. Power Platform data policies can govern MCP connectivity because Copilot Studio uses connector infrastructure.
+
+> **Related item:** **VERIFY CURRENT:** The [current connection procedure](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent) also describes registering an existing MCP server through Agents 365, then obtaining approval before it becomes available in Copilot Studio. Treat registration/approval, connection authentication and downstream authorization as separate evidence. For a design exercise, compare direct wizard onboarding with a centrally approved server: record the server owner, approving administrator, effective caller identity, tool inventory and revocation path. Server discoverability does not prove that a particular user may read or change a protected record.
 
 The [MCP connection procedure](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent) requires Streamable transport; SSE is no longer supported. Match OAuth discovery/client registration or API-key configuration to the actual server. Standard-harness MCP requires generative orchestration and currently exposes tools and resources; a resource must be returned through a tool. Do not assume every protocol feature, such as prompt templates, is a supported Copilot Studio feature. The [MCP overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp) and current tool UI are the authority for invocation support; the former blanket topic restriction is not retained without current evidence.
 
@@ -362,6 +380,12 @@ The [child/connected-agent guidance](https://learn.microsoft.com/en-us/microsoft
 The parent needs a distinct description for when each agent should be invoked. Avoid overlapping descriptions. Define accepted task input, returned artifact, context sharing, permission boundary, timeout, error, retry, and fallback. Test ambiguous intents, unavailable child/connected agent, malformed result, multi-hop loops, and conflicting answers.
 
 Set a completion/handback rule. The orchestrator should not bounce indefinitely between agents. Preserve correlation and identify the agent/tool that produced material evidence.
+
+### Worked configuration: connect an independently owned agent
+
+In the **standard harness**, publish a synthetic policy agent in the same environment, allow other agents to connect, and grant the coordinating maker ownership/shared access. On the main agent's **Agents → Add an agent**, select **Copilot Studio**, choose the policy agent and write a local description such as “answer policy questions; do not retrieve incident status.” Decide whether to pass conversation history; clearing that option limits input to the explicit delegated task. Verify end-user sharing for the actual authentication setup. [Existing-agent connection](https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-copilot-studio-agent)
+
+**Answer check:** a policy request routes to the specialist, a status request stays with its separate tool, and an unshared user cannot obtain policy data through the parent. Republish specialist changes before retesting; its updated description does not automatically overwrite the parent's local routing description. Keep the delegation/fallback trace as evidence. **VERIFY CURRENT:** harness and sharing behavior.
 
 ### Integrate current Foundry agents
 
@@ -496,6 +520,12 @@ Validate after import:
 Pipeline extensibility can add pre/post deployment steps. Keep extension identities least privileged and never place personal access tokens or client secrets in source or solution artifacts. Treat prompt, topic, knowledge configuration, tool description, agent connections, evaluations, and telemetry configuration as release behavior—not merely the solution ZIP.
 
 Include advanced approvals' recreation steps in promotion testing. A pipeline transports solution components and the selected artifact; it does not migrate the application's business data or prove that every external credential, connection and preview component is ready. Keep data migration/recovery, manual environment setup, runtime authorization and smoke tests as explicit evidence.
+
+### Worked extension: make an evaluation result a real deployment gate
+
+For a governed pipeline, enable **Pre-export Step Required** on its first stage. In the pipelines **host environment**, create a Dataverse **When an action is performed** flow using catalog **Microsoft Dataverse Common**, category **Power Platform Pipelines**, action **OnDeploymentRequested**. Filter to the intended pipeline/stage and correlate the deployment stage run. Validate the evaluation artifact's release identity, case coverage and critical failures. Complete that run's gate through **UpdatePreExportStepStatus** with status **20**, or reject with **30** and an explanatory comment; **10** is pending. A flow that calculates a score but never signals the host leaves the deployment pending. [Pipeline extension contract](https://learn.microsoft.com/en-us/power-platform/alm/extend-pipelines)
+
+**Answer check:** a missing evaluation artifact rejects rather than silently authorizing export; an unrelated pipeline request does not satisfy this run. A later predeployment gate uses its own event/action contract. Personal pipelines cannot be extended. **VERIFY CURRENT:** host application version, regional rollout, action parameters and permitted extension identity.
 
 ### Design rollback for stateful integrations
 
@@ -714,7 +744,7 @@ You are approaching readiness when you can:
 - explain why rollback may require configuration restoration, state migration, or business compensation;
 - recheck the official blueprint and every **VERIFY CURRENT** platform boundary before the exam.
 
-The [AI Agent Builder Associate credential page](https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/) currently says no Microsoft Practice Assessment is available. Do not use recalled, leaked, or “actual exam” questions. Readiness should come from documented behavior, hands-on evidence, and original scenario practice.
+The [AI Agent Builder Associate credential page](https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/) now directs candidates to the AI Skills Navigator Practice Assessment, which requires sign-in. Use it to diagnose gaps alongside documented behavior, hands-on evidence and original scenario practice; its questions/results were not inspected in this review. Do not use recalled, leaked, or “actual exam” questions.
 
 ## 13. Primary references
 
@@ -747,10 +777,14 @@ The [AI Agent Builder Associate credential page](https://learn.microsoft.com/en-
 
 This is a curated starting point, not a complete list. Do **not** consume everything. Select the explanations, demonstrations, labs, and assessment signals that close your gaps, and keep the current official blueprint beside third-party material.
 
+### Focused harness decision worksheet
+
+Read [Identify implementation options by harness](https://learn.microsoft.com/en-us/training/modules/design-multi-agent-solutions-copilot-studio/3-design-agent-organization) (published **4 minutes**), then use the [multi-agent path](https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/) to design a support agent with an account-management capability owned by another team. Produce a table of owner, independent lifecycle, harness, delegation option, authentication boundary and return contract. Add a failure case for an unavailable connected agent and mark anything needing current feature verification. **About 45–75 minutes** for reading and this original worksheet, estimated from one short unit plus comparison/design work; tenant implementation adds time and may incur charges. **VERIFY CURRENT:** the unit's preview/support table changes as features ship. The reviewed outline supports this route; no agent was executed in this review.
+
 | Resource | Access | Estimated time |
 |---|---|---:|
 | Three official Microsoft Learn paths | Public | 11 modules; allow 8–12 hours plus exercises (editorial budget) |
-| AB-620T00-A instructor-led course | Provider/schedule dependent | 3 days; available September 30, 2026 (scheduled; not yet delivered) |
+| AB-620T00-A instructor-led course | Provider/schedule dependent | Published: 3 instructor-led days; confirm provider delivery dates separately |
 | Ten labs in this guide | Platform usage may cost money | About 18–34 hours (editorial estimate) |
 | Udemy AB-620 course by Kuljot Singh Bakshi | Paid | 9 hours 27 minutes plus labs/review |
 | Udemy practice exams by Joshua Ravnjak | Paid | About 6–10 hours including explanation review |
@@ -761,9 +795,9 @@ This is a curated starting point, not a complete list. Do **not** consume everyt
 - [Design agent conversations and responses using topics](https://learn.microsoft.com/en-us/training/paths/design-agent-conversations-responses-topics-copilot-studio/) — three modules; older recorded runtime 2 hours 17 minutes, not reverified in the current outline.
 - [Design and build multi-agent solutions](https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/) — four modules; older recorded runtime 2 hours 54 minutes, not reverified in the current outline.
 - [Integrate agents with enterprise systems](https://learn.microsoft.com/en-us/training/paths/integrate-agents-enterprise-systems-copilot-studio/) — four modules; older recorded runtime 3 hours 18 minutes, not reverified in the current outline.
-- [AB-620T00-A](https://learn.microsoft.com/en-us/training/courses/ab-620t00) — three instructor-led days, listed as available September 30, 2026 (scheduled; not yet delivered).
+- [AB-620T00-A](https://learn.microsoft.com/en-us/training/courses/ab-620t00) — three instructor-led days in the current public listing; actual class availability depends on the provider.
 
-The three live paths contain 3 + 4 + 4 = 11 modules. Their earlier recorded total was 8 hours 29 minutes; the current outlines do not expose a verified total runtime. Each currently identifies its modules as classic-experience content. Pair it with the current experience comparison, and do not infer that the future instructor-led course date delays the active exam or the self-paced paths.
+The three live paths contain 3 + 4 + 4 = 11 modules. Their earlier recorded total was 8 hours 29 minutes; the October 28 public outlines do not expose a verified total runtime. The [multi-agent design module](https://learn.microsoft.com/en-us/training/modules/design-multi-agent-solutions-copilot-studio/3-design-agent-organization) now compares standard and GitHub Copilot harnesses; the other three modules in that path and all modules in the topics and integration paths retain classic-experience warnings. **VERIFY CURRENT:** match each lesson and implementation to the current harness and product documentation. The course listing does not establish a provider's actual delivery schedule.
 
 ### Additional instruction and assessment
 
@@ -771,6 +805,6 @@ The three live paths contain 3 + 4 + 4 = 11 modules. Their earlier recorded tota
 - [AB-620 Practice Exams: Copilot Studio AI Agent Builder](https://www.udemy.com/course/ab-620-practice-exams-copilot-studio-ai-agent-builder/) by Joshua Ravnjak — six 60-question tests (360 questions), shown as updated August 2026. Originality and exam-difficulty claims are the provider's, not independently audited. Its claimed 100-minute real-exam window conflicts with Microsoft's current 120 minutes; use the official duration. Allow about 6–10 hours for selected timed attempts and explanation/source review; use it as a secondary signal after hands-on work.
 - [Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) and [architecture/guidance collection](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/) — use exact pages by objective and verify whether each applies to classic, new, preview, or both.
 
-Both retained Udemy pages blocked direct retrieval; the metadata above comes from indexed public provider pages checked September 28. No paid lessons/questions were opened. Bounded exact-exam searches did not verify a Pluralsight or LinkedIn Learning course; the other providers previously marked absent were not exhaustively searched again. Microsoft still explicitly reports no Practice Assessment. Broader videos are supporting demonstrations, not a verified AB-620 syllabus.
+Both retained Udemy pages blocked direct retrieval; the metadata above comes from indexed public provider pages checked September 28. No paid lessons/questions were opened. Bounded exact-exam searches did not verify a Pluralsight or LinkedIn Learning course; the other providers previously marked absent were not exhaustively searched again. Microsoft now directs candidates to a sign-in AI Skills Navigator Practice Assessment; this review inspected only its public shell, not questions or results. Broader videos are supporting demonstrations, not a verified AB-620 syllabus.
 
 Avoid products that promise leaked, “actual,” or memorized exam questions. Original practice is useful only when explanations are checked against the current blueprint and Microsoft documentation.

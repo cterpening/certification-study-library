@@ -190,12 +190,16 @@ Resource details from the [AZ-900 guide](../guides/AZ-900-microsoft-azure-fundam
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 
+#### Focused cloud-cost decision worksheet
+
+Start with the [cloud concepts outline](https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/), then read [Cost optimization options](https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/7a-describe-cost-optimization-options) (published **4 minutes**) within the [management and governance path](https://learn.microsoft.com/en-us/training/paths/describe-azure-management-governance/). Compare a stable server, a steady but changing compute mix and a restartable batch job. For each, record responsibility boundaries, utilization assumptions, interruption tolerance, a candidate pricing model and a measurement you need before committing spend. **About 45–75 minutes**, estimated for selected reading and this original three-workload worksheet; the four-minute unit time is reading only. **VERIFY CURRENT:** eligibility, term and actual prices in the service's current documentation/calculator. No subscription, commitment purchase or Azure deployment is required for the paper exercise; none was performed in this review.
+
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [Microsoft Learn — Introduction to Cloud Infrastructure (AZ-900T00)](https://learn.microsoft.com/en-us/training/courses/az-900t00) | Free self-study; instructor-led options vary | 1 day (official course) | Current objective-aligned foundation and best scope anchor |
 | [Microsoft — AZ-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/practice/assessment?assessment-type=practice&assessmentId=23&practice-assessment-type=certification) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check with rationales and learning links; start here before buying another assessment |
 | [Microsoft Partner Skilling Hub — LevelUp AZ-900](https://www.skilling-hub.com/en-US/listing/o::levelup::2058307) | Partner login required | Earlier 10-hour estimate; current content requires sign-in | No additional cost for eligible Microsoft partners; use a work account associated with the partner organization |
-| [Microsoft Learn AZ-900 learning paths](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification) | Free | About 8–12 hours | Read modules and use the free sandbox exercises where available |
+| [Microsoft Learn AZ-900 learning paths](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification) | Free | About 8–12 hours | Choose current modules and guided projects; check account requirements and charges before deployment |
 | [John Savill — AZ-900 Study Cram](https://www.youtube.com/watch?v=tQp1YkB2Tgs) and [course handout repository](https://github.com/johnthebrit/AZ900CertCourse) | Free | Earlier estimate: about 4 hours, not reverified in this pass; add handout review | Clear visual review with a public companion handout; published for the 2022 scope, so fill July 2026 changes from Learn. The repository has no detected license, so link rather than republish the PDF. |
 | [Pluralsight — Microsoft Azure Fundamentals (AZ-900) and practice exam](https://www.pluralsight.com/paths/microsoft-certified-azure-fundamentals-az-900) | Subscription; practice access depends on plan/library | Header: 21 hours including four labs; component sum 18h 56m courses + 2h labs = 20h 56m. Add assessment/review time | Broad structured path updated through 2026; its public page explicitly includes a practice exam, and you should choose only modules that close gaps |
 | [O'Reilly — AZ-900 Microsoft Azure Fundamentals](https://www.oreilly.com/videos/az-900-microsoft/9781806387694/) | Subscription | 6 hours 27 minutes | Rithin Skaria/KodeKloud video course published August 2025; cross-check July 2026 blueprint |
@@ -345,13 +349,17 @@ Resource details from the [AI-901 guide](../guides/AI-901-microsoft-azure-ai-fun
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 
+#### Focused retrieval learning route
+
+Pair the RAG concepts in the [AI concepts path](https://learn.microsoft.com/en-us/training/paths/ai-concepts/) with the current [Foundry IQ module outline](https://learn.microsoft.com/en-us/training/modules/get-started-foundry-iq/). Draw a source-to-answer diagram with knowledge sources, knowledge base, retrieval request, returned evidence and agent response. Write one answerable question, one question whose answer is absent and one case in which a user should not receive a source. State the evidence you would require from a later exercise before accepting the answer or access boundary. **About 60–90 minutes**, estimated for selected module reading and this original diagram/question set; actual exercise provisioning and model usage add time/cost. The seven-module implementation path currently ends in Foundry IQ. This review read outlines, not the exercise or assessment questions, and did not execute a client.
+
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [Microsoft Learn — AI-901 course](https://learn.microsoft.com/en-us/training/courses/ai-901t00) | Free self-study; instructor-led options vary | 1 day (official course) | Current objective-aligned foundation and implementation sequence |
 | [Microsoft — AI-901 Practice Assessment on AI Skills Navigator](https://aiskillsnavigator.microsoft.com/credentials/cert-83587e0a0754cfee561ade3e27d9fa1cdaf15ae03be52d2413b2b858d1b4eda4) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check; AI Skills Navigator sign-in is required, and the blueprint and product documentation remain authoritative |
 | [Microsoft Learn AI-901 certification material](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/) | Free | About 10–14 hours | Official scope anchor; complete current Foundry exercises rather than relying on AI-900 modules |
 | [Microsoft Learn — AI concepts](https://learn.microsoft.com/en-us/training/paths/ai-concepts/) | Free | Budget 4–6 hours including notes (editorial estimate) | Seven modules; current total runtime not exposed. Concepts path across the workloads in the first domain |
-| [Microsoft Learn — AI applications and agents](https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/) | Free | Budget 6–10 hours including labs (editorial estimate) | Seven modules; current total runtime not exposed. Implementation path across Foundry, apps/agents, text, speech, vision, extraction, and retrieval |
+| [Microsoft Learn — AI applications and agents](https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/) | Free | Budget 6–10 hours including labs (editorial estimate) | Seven modules; current total runtime not exposed. Implementation path across Foundry, apps/agents, text, speech, vision, extraction, and Foundry IQ knowledge retrieval |
 | [O'Reilly — Azure AI Fundamentals AI-901](https://www.oreilly.com/videos/azure-ai-fundamentals/9781807782979/) | Subscription | 4 hours 4 minutes | Anand Rao Nednur, April 2026; indexed public outline only, direct access blocked. Verify current SDK demos before purchase |
 | [Udemy — AI-901 by Christopher Nett](https://www.udemy.com/course/ai-901-azure-ai-fundamentals/) | Purchase or subscription | About 6 hours 20 minutes | Christopher Nett; indexed outline: June 2026, 12 sections/49 lectures. Direct access blocked; lessons not watched |
 | [Udemy — AI-901 exam prep by Kuljot Singh Bakshi](https://www.udemy.com/course/azure-ai-fundamentals-exam-prep/) | Purchase or subscription | About 6 hours 54 minutes | Kuljot Singh Bakshi; indexed outline: July 2026, 11 sections/47 lectures. Direct access blocked; lessons not watched |
@@ -543,10 +551,14 @@ Resource details from the [AB-620 guide](../guides/AB-620-designing-building-int
 
 This is a curated starting point, not a complete list. Do **not** consume everything. Select the explanations, demonstrations, labs, and assessment signals that close your gaps, and keep the current official blueprint beside third-party material.
 
+#### Focused harness decision worksheet
+
+Read [Identify implementation options by harness](https://learn.microsoft.com/en-us/training/modules/design-multi-agent-solutions-copilot-studio/3-design-agent-organization) (published **4 minutes**), then use the [multi-agent path](https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/) to design a support agent with an account-management capability owned by another team. Produce a table of owner, independent lifecycle, harness, delegation option, authentication boundary and return contract. Add a failure case for an unavailable connected agent and mark anything needing current feature verification. **About 45–75 minutes** for reading and this original worksheet, estimated from one short unit plus comparison/design work; tenant implementation adds time and may incur charges. **VERIFY CURRENT:** the unit's preview/support table changes as features ship. The reviewed outline supports this route; no agent was executed in this review.
+
 | Resource | Access | Estimated time |
 |---|---|---:|
 | Three official Microsoft Learn paths | Public | 11 modules; allow 8–12 hours plus exercises (editorial budget) |
-| AB-620T00-A instructor-led course | Provider/schedule dependent | 3 days; available September 30, 2026 (scheduled; not yet delivered) |
+| AB-620T00-A instructor-led course | Provider/schedule dependent | Published: 3 instructor-led days; confirm provider delivery dates separately |
 | Ten labs in this guide | Platform usage may cost money | About 18–34 hours (editorial estimate) |
 | Udemy AB-620 course by Kuljot Singh Bakshi | Paid | 9 hours 27 minutes plus labs/review |
 | Udemy practice exams by Joshua Ravnjak | Paid | About 6–10 hours including explanation review |
@@ -557,9 +569,9 @@ This is a curated starting point, not a complete list. Do **not** consume everyt
 - [Design agent conversations and responses using topics](https://learn.microsoft.com/en-us/training/paths/design-agent-conversations-responses-topics-copilot-studio/) — three modules; older recorded runtime 2 hours 17 minutes, not reverified in the current outline.
 - [Design and build multi-agent solutions](https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/) — four modules; older recorded runtime 2 hours 54 minutes, not reverified in the current outline.
 - [Integrate agents with enterprise systems](https://learn.microsoft.com/en-us/training/paths/integrate-agents-enterprise-systems-copilot-studio/) — four modules; older recorded runtime 3 hours 18 minutes, not reverified in the current outline.
-- [AB-620T00-A](https://learn.microsoft.com/en-us/training/courses/ab-620t00) — three instructor-led days, listed as available September 30, 2026 (scheduled; not yet delivered).
+- [AB-620T00-A](https://learn.microsoft.com/en-us/training/courses/ab-620t00) — three instructor-led days in the current public listing; actual class availability depends on the provider.
 
-The three live paths contain 3 + 4 + 4 = 11 modules. Their earlier recorded total was 8 hours 29 minutes; the current outlines do not expose a verified total runtime. Each currently identifies its modules as classic-experience content. Pair it with the current experience comparison, and do not infer that the future instructor-led course date delays the active exam or the self-paced paths.
+The three live paths contain 3 + 4 + 4 = 11 modules. Their earlier recorded total was 8 hours 29 minutes; the October 28 public outlines do not expose a verified total runtime. The [multi-agent design module](https://learn.microsoft.com/en-us/training/modules/design-multi-agent-solutions-copilot-studio/3-design-agent-organization) now compares standard and GitHub Copilot harnesses; the other three modules in that path and all modules in the topics and integration paths retain classic-experience warnings. **VERIFY CURRENT:** match each lesson and implementation to the current harness and product documentation. The course listing does not establish a provider's actual delivery schedule.
 
 #### Additional instruction and assessment
 
@@ -567,7 +579,7 @@ The three live paths contain 3 + 4 + 4 = 11 modules. Their earlier recorded tota
 - [AB-620 Practice Exams: Copilot Studio AI Agent Builder](https://www.udemy.com/course/ab-620-practice-exams-copilot-studio-ai-agent-builder/) by Joshua Ravnjak — six 60-question tests (360 questions), shown as updated August 2026. Originality and exam-difficulty claims are the provider's, not independently audited. Its claimed 100-minute real-exam window conflicts with Microsoft's current 120 minutes; use the official duration. Allow about 6–10 hours for selected timed attempts and explanation/source review; use it as a secondary signal after hands-on work.
 - [Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) and [architecture/guidance collection](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/) — use exact pages by objective and verify whether each applies to classic, new, preview, or both.
 
-Both retained Udemy pages blocked direct retrieval; the metadata above comes from indexed public provider pages checked September 28. No paid lessons/questions were opened. Bounded exact-exam searches did not verify a Pluralsight or LinkedIn Learning course; the other providers previously marked absent were not exhaustively searched again. Microsoft still explicitly reports no Practice Assessment. Broader videos are supporting demonstrations, not a verified AB-620 syllabus.
+Both retained Udemy pages blocked direct retrieval; the metadata above comes from indexed public provider pages checked September 28. No paid lessons/questions were opened. Bounded exact-exam searches did not verify a Pluralsight or LinkedIn Learning course; the other providers previously marked absent were not exhaustively searched again. Microsoft now directs candidates to a sign-in AI Skills Navigator Practice Assessment; this review inspected only its public shell, not questions or results. Broader videos are supporting demonstrations, not a verified AB-620 syllabus.
 
 Avoid products that promise leaked, “actual,” or memorized exam questions. Original practice is useful only when explanations are checked against the current blueprint and Microsoft documentation.
 
@@ -1305,6 +1317,10 @@ No exact Whizlabs AB-730 product was independently verified in the earlier Septe
 Resource details from the [AB-731 guide](../guides/AB-731-ai-transformation-leader.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build the decision artifacts and labs, and add another resource only when it closes a measured gap.
+
+#### Focused pilot-investment worksheet
+
+Read [Business strategy](https://learn.microsoft.com/en-us/training/modules/create-business-value/2-business-strategy) (published **3 minutes**) alongside the [Transform your business with AI outline](https://learn.microsoft.com/en-us/training/paths/transform-your-business-with-microsoft-ai/). Compare two candidate processes on business impact, feasibility, time to value, measurability and risk. Select one pilot and record its baseline, two outcome measures, one quality/risk limit, an accountable owner and scale/hold/stop criteria. **About 45–75 minutes**, an editorial estimate for selected reading and an original one-page decision record, rather than the course's runtime. Use evidence you can collect; the unit's uncited industry statistic is not a validated benchmark or a forecast for your organization. No quiz, paid lesson or live pilot was performed in this review.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -2161,6 +2177,10 @@ Resource details from the [AI-300 guide](../guides/AI-300-operationalizing-machi
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Choose one primary path, build the labs and use targeted material for gaps. Times are published when available or labeled estimates. Avoid dumps and recalled/live exam questions.
 
+#### Focused reproducibility review
+
+Use the [MLOps accelerator structure](https://github.com/Azure/mlops-v2/blob/main/documentation/structure/README.md) and [Azure ML examples README](https://github.com/Azure/azureml-examples) to draw the inner-loop/outer-loop handoff for one model: data/version, environment, run, model registration, test evidence, deployment identity and rollback owner. Add a separate column for GenAIOps evidence still needed. Then inspect the [Foundry samples validation description](https://github.com/microsoft-foundry/foundry-samples) and distinguish build readiness from a sample's opt-in live-service validation. **About 90–150 minutes**, estimated for two short repository documents, the validation section and an original evidence map; sample setup/execution is additional and may cost money. **VERIFY CURRENT:** legacy SDK-v1 choices in accelerator documentation are historical context, not an instruction to use an unsupported SDK. No samples or pipelines were run in this review.
+
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
 | [Official AI-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300) | Public | 30–60 min | Authoritative scope and lifecycle |
@@ -2168,7 +2188,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | [AI Skills Navigator Practice Assessment](https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/machine-learning-operations-engineer) | Free account/sign-in | 45–90 min plus remediation (estimate) | Microsoft-linked diagnostic; sign-in shell only, no questions/results reviewed |
 | [Azure MLOps v2 solution accelerator](https://github.com/Azure/mlops-v2) | Public | 8–20 hours selectively (estimate) | Official reference architectures and automation; verify current SDK/IaC |
 | [Azure ML examples](https://github.com/Azure/azureml-examples) | Public | 10–30 hours selectively (estimate) | CLI/SDK jobs, pipelines and endpoints |
-| [Foundry samples](https://github.com/azure-ai-foundry/foundry-samples) | Public | 8–20 hours selectively (estimate) | Current evaluation, tracing and GenAIOps examples |
+| [Foundry samples](https://github.com/microsoft-foundry/foundry-samples) | Public | 8–20 hours selectively (estimate) | Official sample directory; inspect each sample and distinguish build checks from opt-in live validation |
 | [O'Reilly MLOps/LLMOps Bootcamp](https://www.oreilly.com/live-events/mlopsllmops-bootcamp/0642572182861/0642572243333/) | Paid live/subscription | Historical November 3–5, 2025 event; 10h metadata and agenda | Ammar Mohanna, two sessions; verify recording/new dates; broad lifecycle supplement |
 | [Udemy AI-300 MLOps & GenAIOps preparation](https://www.udemy.com/course/ai-300-mlops-genaiops-engineer-exam-preparation/) | Paid; price varies | 3h27, 11 lectures / one section (indexed public outline) | Aseem Mankotia, updated July 2026; 100-minute simulation differs from official 120-minute assessment |
 | [Udemy AI-300 practice tests](https://www.udemy.com/course/ai-300-operationalizing-ml-and-generative-ai-practice-tests/) | Paid; price varies | Five 150-question sets plus one 161-question set = 911; 12–25h review (estimate) | VARONTO Academy, updated June 2026; description still says 900, paid content/originality unverified |
@@ -2198,6 +2218,10 @@ Direct Udemy requests were blocked; the public outlines were reviewed through th
 Resource details from the [AZ-104 guide](../guides/AZ-104-microsoft-azure-administrator.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
 This is a curated starting set, not a complete list. Do **not** consume every resource. Pick one structured spine, use documentation for weak objectives, do the labs, and add one assessment source. Time estimates are planning ranges, not guarantees; playback speed, prior experience, exercises, lab cleanup, and vendor changes matter. Verify the current blueprint before buying or starting a course.
+
+#### Focused governance evidence route
+
+[Microsoft's Lab 02b](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Labs/LAB_02b-Manage_Governance_via_Azure_Policy.html) publishes **30 minutes** for tagging, policy and locks. Allow **about 60–90 minutes** for the lab plus evidence and cleanup, an editorial extension of that published estimate; subscription setup and policy propagation may add time. In a disposable resource group, retain the assigned scope/parameters, the denied deployment message, the modify/remediation identity and result, the deletion-lock failure and cleanup evidence. Distinguish the lab's predicted result from what you actually observe. **VERIFY CURRENT:** use the configured tag value (`000` in the example), since one explanatory sentence instead says `Default`; do not adopt the lab's broad pre/post-deployment security shorthand as a rule. Azure resources may incur charges. This review read the lab and did not execute it.
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
@@ -2287,6 +2311,10 @@ Resource details from the [AZ-140 guide](../guides/AZ-140-configuring-operating-
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the resources and formats that fit you, and use the official July 20, 2026 objectives as the coverage checklist. Estimated times include reasonable note-taking or practice where stated and should be rechecked before purchase.
 
+#### Focused monitoring evidence route
+
+Choose the Entra ID branch in the [official lab index](https://microsoftlearning.github.io/AZ-140-Configuring-and-Operating-Microsoft-Azure-Virtual-Desktop/), then read [Implement monitoring with AVD Insights](https://microsoftlearning.github.io/AZ-140-Configuring-and-Operating-Microsoft-Azure-Virtual-Desktop/Instructions/Labs_EntraID/03_LAB_41_01_Implement_monitoring_by_using_Azure_Virtual_Desktop_Insights.html). Its published **25 minutes** assumes the deployment and management labs are complete. For an existing disposable host pool, allow **about 60–90 minutes** for configuration, evidence and review, estimated from the published lab plus checking diagnostics, DCR associations, the monitoring extension and actual generated data. Preserve a before/after warning record and separate connection health from telemetry-collection health. **VERIFY CURRENT:** subscription permissions, agent/UI steps and ingestion costs. Prerequisite environment creation and cleanup are additional; do not expect the entire route in 25 minutes. No host pool, workbook or telemetry was executed/observed in this review.
+
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official AZ-140 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140) | Free; authoritative scope and change log | 45–75 min initially; 10–15 min before exam |
@@ -2341,6 +2369,10 @@ Resource details from the [AZ-305 guide](../guides/AZ-305-designing-microsoft-az
 
 This is a curated starting set, not a complete list. Do **not** consume every resource. Pick one structured spine, use documentation and architecture case studies for weak objectives, complete design/lab work, and add one assessment source. Time estimates are planning ranges, not guarantees; playback speed, prior Azure experience, exercises, lab cleanup, and vendor changes matter. Verify the current blueprint before buying or starting a course.
 
+#### Focused architecture failure worksheet
+
+Use [Well-Architected failure mode analysis](https://learn.microsoft.com/en-us/azure/well-architected/reliability/failure-mode-analysis) to trace one critical request from ingress through identity, compute, data and an external dependency. For each component, record the user impact, blast radius, strong/weak dependency, detection signal, degraded mode and recovery objective. Compare an identity outage with a regional data outage; state what existing requests and new deployments can still do. **About 75–120 minutes**, estimated for selected article reading and an original flow diagram/failure matrix, rather than a vendor-published duration. This produces a design hypothesis and a future test plan; it does not demonstrate availability, recovery time or successful fault injection. The guidance is relevant to business continuity and infrastructure design; current service documentation still controls individual capabilities.
+
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
 | [Microsoft Learn AZ-305 course](https://learn.microsoft.com/en-us/training/courses/az-305t00) | Free self-directed content; instructor delivery varies | Published: 4 instructor-led days; plan 20–30 hours reading or 30–45 with case studies/labs | Best official objective-aligned spine; assumes administration experience |
@@ -2371,6 +2403,10 @@ Blog reading was limited to the recorded sections in the review report. No paid 
 Resource details from the [AZ-400 guide](../guides/AZ-400-designing-implementing-microsoft-devops-solutions.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the resources and formats that fit you, and use the official July 27, 2026 objectives as the coverage checklist. Estimated times include reasonable note-taking or practice where stated and should be rechecked before purchase. Older material can still teach durable concepts, but reconcile every product screen, feature, identity method and objective against current documentation.
+
+#### Focused pipeline evidence and critique route
+
+Follow the Azure DevOps Services YAML sections of [Create your first pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops) for one disposable repository. Retain the commit, YAML, agent selection, run log and test/artifact evidence; deliberately introduce and then repair one build failure. Next, critique the [Azure Developer CLI promotion article](https://devblogs.microsoft.com/devops/azure-developer-cli-from-dev-to-prod-with-azure-devops-pipelines/): identify the same artifact crossing stages and replace its TODO/simulated validation with a written real-check design. **About 2–3 hours**, estimated for one starter pipeline and an original review record; account/agent entitlement and deployment setup add time. **VERIFY CURRENT:** use current agents/authentication. The [older YAML lab](https://www.azuredevopslabs.com/labs/azuredevops/yaml/) is dated January 20, 2022 and contains an obsolete hosted image, so read it as historical illustration only. No pipeline, video or cloud deployment was executed in this review.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -2426,6 +2462,10 @@ Only the noted public sections were reviewed; linked sample repositories and clo
 Resource details from the [AZ-700 guide](../guides/AZ-700-designing-implementing-azure-networking-solutions.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
 This is a curated starting set, not a complete list. Do **not** consume every resource. Pick one structured spine, use current documentation for weak objectives, build and break the labs, and add one assessment source. Time estimates are planning ranges, not guarantees; playback speed, prior networking experience, gateway deployment time, exercises, cleanup, and vendor changes matter. Verify the current blueprint before buying or starting a course.
+
+#### Focused DNS evidence route
+
+[Configure DNS settings in Azure](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M01-Unit%206%20Configure%20DNS%20settings%20in%20Azure.html) publishes **25 minutes** and requires the preceding virtual-network setup. Allow **about 60–90 minutes** after prerequisites for the exercise, evidence and cleanup, estimated from that timing plus validation. Record the private zone, VNet link/registration setting, VM A records and name-resolution output. Explain why a failed ping can coexist with successful DNS resolution, then specify a separate application/port test. The exercise heading says subnet linking, but its actual steps link a VNet; keep that boundary clear. **VERIFY CURRENT:** VM capacity/SKUs, portal and account costs. Provisioning waits and prerequisite resources add time and charges. This review read the procedure without deploying VMs or executing tests.
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|

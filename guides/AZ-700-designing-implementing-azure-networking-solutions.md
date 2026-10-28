@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # AZ-700 Designing and Implementing Microsoft Azure Networking Solutions Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-700-coverage-record). The [official AZ-700 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-700) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-700-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700) is authoritative.
 
 **Current baseline:** Skills measured as of July 27, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
 **Official source:** [AZ-700 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700)
 
 > **Living-guide watch — September 7, 2026:** The current blueprint names virtual network flow logs and Network Watcher troubleshooting, but older learning material can still center NSG flow logs or assume the Network Watcher VM extension is always required. Microsoft no longer permits creation of new [NSG flow logs](https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-overview) and will retire them on September 30, 2027; use [virtual network flow logs](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-overview) for new work and account for their scope, unsupported scenarios, storage, duplicate-ingestion, and cost boundaries. [Connection troubleshoot](https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-overview) now has an agentless experience, but Microsoft still labels it preview. Keep extension-based and agentless prerequisites separate, verify the live page before a lab, and treat third-party diagrams or courses as explanations rather than scope authority.
@@ -103,6 +103,12 @@ Public IPs are Azure resources with SKU, regional/zonal, allocation, routing-pre
 
 For ordinary IPv4 subnet planning, subtract Azure's first four and last reserved addresses, then budget service-specific reservations, upgrades and overlap separately. [Virtual Network FAQ](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-faq) explains the reservation rule. A service's required dedicated subnet size still applies even when your address arithmetic fits; see worked example 1.
 
+### Worked public-IP allocation and BYOIP decision
+
+For a service that needs a predictable outbound allowlist, choose compatible public-IP resources and, where appropriate, allocate them from an Azure public IP prefix rather than hand-maintaining unrelated addresses. Record region, SKU/tier, zones, prefix length and the consuming frontend/NAT resource. Create the prefix, derive a supported public IP, associate that IP with the intended resource, and verify the resource's actual egress or frontend address; merely creating the IP does not attach it.
+
+If the organization must retain an owned public range, the [BYOIP process](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/custom-ip-address-prefix) adds ownership/advertisement validation, provisioning, then commissioning. The custom prefix itself is not directly attached to the VM/load balancer: derive public prefixes/IPs and associate those compatible resources. During provisioning the range is not yet advertised; coordinate commissioning and the old advertisement under an approved migration plan. **Answer check:** a provisioned custom prefix with an unreachable service may simply not be commissioned; arbitrary BGP changes are not a safe diagnostic shortcut. Use a paper ownership/state/association exercise unless authorized to advertise a real owned range. **VERIFY CURRENT:** supported models, lengths, region/zones, SKU and commissioning procedure.
+
 ### Name resolution
 
 Design DNS by namespace and query origin:
@@ -175,6 +181,12 @@ Azure NAT Gateway provides scalable, explicit outbound SNAT for supported subnet
 
 Use the current [resource limits and protocols](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource), [SNAT reuse explanation](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-snat) and [overview limitations](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview). Different destinations can reuse a port; closed connections have reuse timers. Connection pooling, bursts, packets per second and total active flows still matter after adding IPs.
 
+### Worked Route Server and network-policy deployment
+
+For dynamic NVA routing, follow the [Route Server quickstart](https://learn.microsoft.com/en-us/azure/route-server/quickstart-create-route-server-portal): reserve a dedicated `RouteServerSubnet` of `/26` or larger, create Route Server with its required compatible public IP, then add the NVA's private peer IP and ASN. Configure the NVA to peer with both Route Server instance IPs, using the published server ASN and supported multihop BGP. Compare learned/advertised and VM effective routes, then run a harmless transaction through the NVA; a BGP session alone does not prove forwarding. Plan maintenance before creating/removing Route Server near existing gateways. **Answer check:** routing data traffic to Route Server's IP misunderstands its control-plane role.
+
+For [Virtual Network Manager](https://learn.microsoft.com/en-us/azure/virtual-network-manager/create-virtual-network-manager-portal), select management scope/features, create a network group and verify static or policy-based membership. Create the intended connectivity configuration, commit/deploy it to selected regions and inspect applied network state; saving a configuration alone is not deployment. For security admin configuration, target the appropriate group, define a narrowly scoped rule, deploy it and test its interaction with NSGs. Separately create an ASG, assign the intended VM NIC IP configurations to it, and reference that ASG in an NSG rule. **Answer check:** group membership represents targeting, not a completed allow/deny decision. Remove the deployed test configuration before tearing down its resources. **VERIFY CURRENT:** permissions, group membership mode, feature exclusions and effective-policy behavior.
+
 ### Monitor and troubleshoot networks
 
 [Network Watcher](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-monitoring-overview) and Azure Monitor network experiences expose different evidence:
@@ -193,6 +205,14 @@ Use the current [resource limits and protocols](https://learn.microsoft.com/en-u
 The July 2026 blueprint explicitly names **virtual network flow logs**. For new deployments, **flow logs** means virtual network flow logs. NSG flow logs are a retiring legacy source: new creation is disabled and retirement is September 30, 2027. Do not enable both log types over the same workload merely for comparison because duplicate recording and additional cost can result. Virtual network flow logs operate at VNet scope, record supported Layer 4 flows, and have documented exclusions; absence of a record is therefore not proof that no traffic existed. Flow logs show network-flow metadata, not payload capture or application logs. Plan storage/analytics destination, retention, schema, Traffic Analytics integration, cost, and access. Connection troubleshoot's agentless path is useful but remains preview, so record whether a result came from agentless platform APIs or the extension-based path.
 
 DDoS monitoring and protection require a public endpoint threat model, protected resource scope, telemetry and response plan. Microsoft Defender for Cloud Secure Score, attack path analysis and Cloud Security Explorer identify posture relationships and potential paths; recommendations require workload context and do not replace packet-path verification. **VERIFY CURRENT:** plan names, supported resources, query capabilities and licensing.
+
+#### Worked network posture and monitoring triage
+
+Start Azure Monitor for Networks with the affected resource/time window and inspect dependency topology, availability/health and relevant metrics; drill into Network Watcher tools for the specific failed five-tuple. Distinguish a configured resource view from evidence that diagnostics and flow-log storage/analytics are receiving new records.
+
+For [DDoS Network Protection](https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-protection), create an authorized protection plan, associate the intended VNet, verify protected public-IP scope and configure mitigation/attack alerts plus diagnostic retention. Check the chosen Network versus IP Protection plan model rather than enabling an unrelated WAF. Use configuration inspection or an approved simulation service; do not generate an attack as a lab.
+
+In Defender for Cloud, scope Secure Score/recommendations to the workload, inspect the affected network resource and remediation, then compare an attack path's exposure, reachable intermediate resources and high-impact target. For [Cloud Security Explorer](https://learn.microsoft.com/en-us/azure/defender-for-cloud/how-to-manage-cloud-security-explorer), meet CSPM/scanning/role prerequisites, choose a resource type, add exposure/relationship filters or a relevant template, run the graph query and inspect the resulting asset IDs. Record the snapshot date: daily graph refresh is not a live packet capture. **Answer check:** a severe attack path should drive contextual remediation and verification, while an absent graph result does not prove a five-tuple is blocked. Preserve the query, recommendation, expected risk reduction and subsequent configuration/connection evidence. **VERIFY CURRENT:** plan, resource support, permissions, diagnostics and query fields.
 
 #### Domain failure modes
 
@@ -227,7 +247,7 @@ Custom IPsec/IKE policies must match encryption, integrity, Diffie-Hellman/PFS, 
 
 #### VPN migration is scoped by gateway SKU and public-IP SKU
 
-The [VPN Gateway consolidation guidance](https://learn.microsoft.com/en-us/azure/vpn-gateway/gateway-sku-consolidation) ends new non-AZ `VpnGw1`–`VpnGw5` creation and describes migration to AZ SKUs. Existing non-AZ gateways remain supported until migrated; the page schedules deprecation after September 2026. **Basic gateway SKU is not retiring**, and Gen1 has no announced retirement. Legacy Standard/HighPerformance gateways have a separate migration program.
+**VERIFY CURRENT:** [VPN Gateway consolidation guidance](https://learn.microsoft.com/en-us/azure/vpn-gateway/gateway-sku-consolidation) blocks new non-AZ `VpnGw1`–`VpnGw5` creation and retains support until migration, but now warns that **after the rollout, management/configuration operations on non-AZ gateways fail until migration to an AZ SKU**. A working existing tunnel therefore does not prove that the gateway remains fully manageable. Inventory the actual SKU and public-IP/generation combination before choosing its procedure. Basic gateway SKU is not retiring; Gen1 has no announced retirement. Legacy Standard/HighPerformance gateways follow a separate program. Do not infer a universal traffic shutdown date from the deprecated-SKU notice.
 
 Inventory gateway SKU, generation, public-IP SKU and region before selecting a procedure. A Basic gateway using a Basic public IP must not use the VpnGw migration tool. An AZ SKU in a region without availability zones is regional until zone support exists. SKU naming alone is not evidence of a deployed zone-resilient topology; rehearse verification and rollback for the actual combination.
 
@@ -265,6 +285,12 @@ The [Always On device-tunnel procedure](https://learn.microsoft.com/en-us/azure/
 
 For Azure P2S, [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-about) requires OpenVPN and Azure VPN Client. It is not an IKEv2 authentication option. Match tunnel, authentication, operating system, client and profile together; selecting multiple gateway authentication methods does not make every combination valid.
 
+### Worked P2S authentication and profile acceptance
+
+For a RADIUS-backed pilot, create a supported route-based gateway, reserve a nonoverlapping client pool, set its supported tunnel/authentication combination and supply the reachable RADIUS server and protected shared secret. Configure the RADIUS policy/client trust and test the gateway-to-server path. The [RADIUS procedure](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-how-to-radius-ps) requires a site-to-site VPN to reach an on-premises RADIUS server; ExpressRoute is not a supported substitute for that RADIUS path. An in-VNet RADIUS server is another design. Use the documented client authentication protocol for the selected tunnel.
+
+For Entra authentication, use the supported OpenVPN/Azure VPN Client combination, configure the current tenant/audience/issuer values and required consent, then generate and import the matching profile. Treat [client profiles](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-configuration-radius) as versioned deployment output: a changed tunnel/authentication configuration needs newly generated/distributed client settings. Validate client identity/certificate, address allocation, routes, DNS and an authorized application transaction separately. **Answer check:** RADIUS authentication succeeds but the application fails means inspect the assigned routes/DNS/filters and target authorization; an old profile can fail before those layers. Retain a revocation/removal plan. **VERIFY CURRENT:** SKU, tunnel/OS/client, auth method, exact values and certificate trust.
+
 ### Azure Network Adapter requirements
 
 [Azure Network Adapter](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/use-azure-network-adapter) is a WAC workflow that automates a certificate-authenticated P2S VPN for an individual Windows server. Use it when a branch, store, or other location has only a few servers that need Azure VNet access and a site-to-site VPN device or public-facing server address is unnecessary. It is not a whole-site connectivity or transit solution.
@@ -298,6 +324,14 @@ Two connections in one ExpressRoute circuit still share a peering-location failu
 
 **Related preview:** [ExpressRoute Resiliency Guard](https://learn.microsoft.com/en-us/azure/expressroute/resiliency-model) helps configure multi-homing through circuits at different physical locations or Metro circuits. It is public preview for ExpressRoute VNet gateways and does not currently support Virtual WAN gateways. The configuration aid does not prove backup capacity or application recovery. FastPath bypasses the gateway for supported data traffic while retaining the control-plane gateway; check the [Direct/provider feature matrix](https://learn.microsoft.com/en-us/azure/expressroute/about-fastpath) before assuming peering, UDR or Private Link support.
 
+### Worked ExpressRoute peering, detection and recovery
+
+For private VNet connectivity, verify provider provisioning and circuit state before [configuring peering](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-routing-portal-resource-manager). Record peer ASN, VLAN, primary and secondary peer subnets and optional authentication; configure both router paths consistently. Add the supported ExpressRoute VNet gateway and circuit connection, using authorization when the ownership/subscription boundary requires it. Inspect circuit peering route tables, gateway learned routes and a real application path rather than only circuit status. Microsoft peering is a separate configuration with validated public advertised prefixes/ASN and applicable route filters; a private-peering connection does not provide that route domain automatically.
+
+For [BFD](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-bfd), current Microsoft-edge peerings enable it by default; configure it on both customer/provider edge interfaces and bind it to their BGP neighbors. Older peerings can require a maintenance-window reset. Check negotiated state and detection versus full traffic convergence; do not promise subsecond application failover from BFD timers. For encryption, specify which segment must be protected: MACsec on supported Direct physical links differs from IPsec tunnels over the private circuit. Define compatible device/gateway, route, MTU and throughput requirements and test encrypted traffic rather than assuming private means encrypted.
+
+**Triage check:** separate provider/circuit status, each BGP adjacency, advertised prefixes, VNet gateway/connection state, effective routes and application filters. A connected circuit with no VNet prefix is not fixed by changing DNS; a healthy secondary path can still be too small for failover. Tabletop a path loss and record the intended convergence, capacity and failback. **VERIFY CURRENT:** peering limits, BFD legacy dates, encryption support, SKUs and provider responsibility.
+
 ### Azure Virtual WAN
 
 Virtual WAN provides Microsoft-managed virtual hubs for branch, P2S, ExpressRoute, VNet and supported NVA/security integration. Standard versus Basic capabilities differ. Plan:
@@ -313,6 +347,14 @@ Virtual WAN provides Microsoft-managed virtual hubs for branch, P2S, ExpressRout
 - failure domains, throughput and cost.
 
 An association chooses the hub route table used to route a connection’s traffic; propagation determines which route tables learn its routes. Incorrect association/propagation can create isolation or bypass. Use the [Virtual WAN overview](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about) and inspect effective routes.
+
+#### Worked Virtual WAN hub, scale and security deployment
+
+For a branch plus remote-user plus ExpressRoute design, choose the current Standard Virtual WAN capabilities rather than assuming Basic exposes every gateway/service. Create a nonoverlapping regional hub address space with room for its selected gateways/security, then create the required S2S, P2S or ExpressRoute hub gateways and attach the appropriate connections. A hub gateway is not a VNet gateway deployed in each spoke.
+
+The [hub settings](https://learn.microsoft.com/en-us/azure/virtual-wan/hub-settings) distinguish router routing-infrastructure units from each gateway's own scale units; size and verify both against aggregate demand, connection counts and measured paths. Add VNet connections and deliberately set association and propagation; compare effective routes in both directions. A hub existing without gateways can still incur charges.
+
+For an integrated NVA, select an eligible supported partner offer and scale/license through the documented managed-application/orchestrator process; [NVA-in-hub guidance](https://learn.microsoft.com/en-us/azure/virtual-wan/about-nva-hub) does not permit arbitrary Marketplace VMs to be placed in the hub. Confirm hub peering and branch/VNet routes. For a secured hub using Azure Firewall, deploy the supported hub firewall, assign its policy and configure the intended Internet/private routing intent. Inspect flows and return-path symmetry after deployment. **Answer check:** an enabled policy with an unassociated connection can leave a bypass; increasing router units does not necessarily fix a saturated P2S gateway. Export configuration, test paths and maintain an ordered rollback. **VERIFY CURRENT:** eligible SKU/partners, address requirements, unit capacities, region and policy constraints.
 
 #### Domain failure modes
 
@@ -518,6 +560,16 @@ Start with representative traffic, review detections, correct applications where
 - Fixing one WAF false positive with an unnecessarily broad exclusion.
 
 ---
+
+### Worked service chaining, rewrites and policy association
+
+For transparent NVA inspection, follow the [Gateway Load Balancer workflow](https://learn.microsoft.com/en-us/azure/load-balancer/tutorial-create-gateway-load-balancer): create the Gateway SKU resource, configure compatible VXLAN tunnel interfaces, NVA backend pool, health probe and rule, then chain the consumer's supported frontend to it. Verify healthy NVA state and a transaction in both directions. Merely selecting a Gateway SKU does not implement the chain; it is different from HTTP path routing.
+
+For Application Gateway v2, create a [rewrite set](https://learn.microsoft.com/en-us/azure/application-gateway/rewrite-http-headers-url) with an explicit request condition and header/URL action, then associate it to the intended basic or path-based routing rule. Example: a test path must be rewritten internally while the browser keeps its URL. Choose path-map reevaluation deliberately and test for routing loops. For [Front Door rules](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-rules-engine-actions), attach the rule set to the intended route and distinguish a client redirect response from an internal origin-path rewrite. Test the status/Location header and backend-observed path separately.
+
+Select Front Door Premium when the design requires its supported Private Link origin path, then configure the origin's required subresource/region and approve the matching managed private-endpoint request before enforcing public-origin restrictions. For a customer-owned conventional Private Link service, create the healthy Standard Load Balancer backend/frontend, provider NAT subnet/IP configuration and visibility/approval settings. An on-premises consumer still needs routed private connectivity and private DNS to its approved consumer endpoint; publishing the provider alias creates neither path. Preserve the separate Direct Connect preview restrictions already documented above.
+
+Create platform-appropriate WAF policies with their supported managed/custom rules, mode and narrow exclusions; associate them to the intended gateway/listener/path or Front Door domains as supported. [WAF policy management](https://learn.microsoft.com/en-us/azure/firewall-manager/manage-web-application-firewall-policies) separates creation from association. Compare detection logs and prevention of a harmless test match. **Answer check:** an unassociated policy protects no intended route; a rewrite is not a redirect; an approved Private Link request does not prove DNS, authorization or application health. **VERIFY CURRENT:** tiers, supported origins, rulesets, association scopes and tunnel support. These examples are unexecuted.
 
 ## 7. Integrated scenarios
 
@@ -764,6 +816,10 @@ You are approaching readiness when you can:
 ## Places to learn
 
 This is a curated starting set, not a complete list. Do **not** consume every resource. Pick one structured spine, use current documentation for weak objectives, build and break the labs, and add one assessment source. Time estimates are planning ranges, not guarantees; playback speed, prior networking experience, gateway deployment time, exercises, cleanup, and vendor changes matter. Verify the current blueprint before buying or starting a course.
+
+### Focused DNS evidence route
+
+[Configure DNS settings in Azure](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M01-Unit%206%20Configure%20DNS%20settings%20in%20Azure.html) publishes **25 minutes** and requires the preceding virtual-network setup. Allow **about 60–90 minutes** after prerequisites for the exercise, evidence and cleanup, estimated from that timing plus validation. Record the private zone, VNet link/registration setting, VM A records and name-resolution output. Explain why a failed ping can coexist with successful DNS resolution, then specify a separate application/port test. The exercise heading says subnet linking, but its actual steps link a VNet; keep that boundary clear. **VERIFY CURRENT:** VM capacity/SKUs, portal and account costs. Provisioning waits and prerequisite resources add time and charges. This review read the procedure without deploying VMs or executing tests.
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|

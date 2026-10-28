@@ -6,19 +6,19 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # AZ-400 Designing and Implementing Microsoft DevOps Solutions Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-400-coverage-record). The [official AZ-400 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-400) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-400-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400) is authoritative.
 
 **Current baseline:** Skills measured as of July 27, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
 **Certification lifecycle:** Active; no retirement or replacement is announced on the [official DevOps Engineer Expert credential page](https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/) as of September 28, 2026.<br>
-**Credential prerequisite:** The official credential page requires Azure Administrator Associate or Azure Developer Associate. The AZ-204 exam used to earn the latter retired July 31, 2026, so a new candidate should verify the currently accepted path before scheduling; AZ-104 remains an active route as of this review.<br>
+**Credential prerequisite — checked October 28, 2026:** The [DevOps Engineer Expert profile](https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/) still accepts Azure Administrator Associate or Azure Developer Associate. [Azure Developer Associate and its renewal assessment are retired](https://learn.microsoft.com/en-us/credentials/certifications/azure-developer/), with July 31, 2026 recorded in the [retirement list](https://learn.microsoft.com/en-us/credentials/support/credential-retirement). New candidates can use the currently offered Azure Administrator Associate route; holders of an earlier Developer credential should verify its accepted status with Microsoft. Do not infer that an AI/cloud developer replacement is automatically an accepted prerequisite or that this retires AZ-400.
 **Official source:** [AZ-400 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400)
 
 The [September 28 deep review](../docs/research/2026-09-28-az-400-deep-review.md) maps all 86 detailed objectives. Seven worked examples, ten labs and 48 explained checks develop the reasoning behind pipeline choices. Local arithmetic and one release-gate example were executed; cloud pipelines, identity changes, deployment and paid content were not. Independent human review remains pending.
@@ -149,6 +149,14 @@ Webhooks push signed event payloads to endpoints; polling queries on a schedule.
 #### Keep integration lifecycle separate from its destination
 
 For Teams notifications, identify the actual integration: a native Azure DevOps/GitHub app, a legacy Office 365 connector or a Power Automate workflow. The [connector retirement notice](https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/) now identifies May 18–22, 2026 as the final disablement rollout. It directs connector-based webhooks to Workflows and notes that MessageCard action buttons do not work there; interactive scenarios need Adaptive Cards and response handling. This is not a retirement notice for every Teams integration. Test payload, identity, delivery failure, ownership and escalation for the mechanism you actually use.
+
+#### Worked traceability and query worksheet
+
+Create one issue/work item with an acceptance test, add it to the team's Project, and connect its PR, commit, build result, versioned artifact and deployment. For an authorized Azure Boards/GitHub connection, test an `AB#<id>` reference and inspect the resulting work-item link instead of copying status by hand. Build six scoped views: planning (team/iteration, open and aging work), development (PR age/review delay), testing (failed first attempts versus retries), security (open severe findings and remediation age), delivery (deployment outcome by version/environment) and operations (SLO failures/recovery by deployment). State source, filter, time window, denominator and owner for each. A stored issue query cannot supply runtime latency; join the right evidence at the change/deployment ID.
+
+For GitHub [Projects Insights](https://docs.github.com/en/issues/planning-and-tracking-with-projects/viewing-insights-from-your-project/about-insights-for-projects), add a chart, filter to the relevant issue/label population, group by status or iteration and use a time axis for historical work-state views. Archived/deleted items are excluded, so explain changes in the population. For documentation generation, compare the last released tag with the intended commit, generate a draft from reviewed PR/commit metadata, validate links and append reviewed API-schema changes. Human-readable release notes need curation; raw Git history is an input.
+
+For a webhook, configure only needed events to an owned endpoint with a secret, validate signature/event ID, process idempotently and test retry/failure reporting. Choose the supported native GitHub/Azure DevOps Teams app or a Workflows integration and configure a narrow failure/work-item subscription, then verify one event, its link, recipient and failure owner. Keep a durable work-item record. The earlier integration and connector-lifecycle references control exact setup. **Answer check:** one delivered Teams card does not prove all event types or the entire traceability chain. **VERIFY CURRENT:** UI, integration identity, event payload and retention.
 
 #### Failure patterns
 
@@ -312,7 +320,9 @@ Never let untrusted pull-request code run on a persistent privileged runner with
 
 [Workflow execution protections](https://docs.github.com/en/actions/how-tos/administer/control-workflow-execution) allow actor/event policies with workflow-file targeting. Availability depends on repository visibility and plan; Evaluate mode requires Enterprise Cloud. The [GA announcement](https://github.blog/changelog/2026-09-17-workflow-execution-protections-in-github-actions-generally-available/) schedules November 2, 2026 enforcement of the default `pull_request_target` block for affected public repositories using the default policy. Inspect the actual policy and insights; private/internal repositories are outside that default rollout.
 
-These policies complement the [secure-use guidance](https://docs.github.com/en/actions/reference/security/secure-use): do not check out or execute untrusted PR code in privileged `pull_request_target` or `workflow_run` jobs. Treat downloaded artifacts from another run as untrusted inputs until verified. Pin reviewed actions to full commit SHAs; pinning does not itself establish that the pinned code is safe. Pass untrusted text as data through a safely quoted argument/environment boundary instead of embedding expressions into shell source.
+These policies complement the [secure-use guidance](https://docs.github.com/en/actions/reference/security/secure-use): do not check out or execute untrusted PR code in privileged `pull_request_target` or `workflow_run` jobs. Treat downloaded artifacts from another run as untrusted inputs until verified. Pin reviewed actions to full commit SHAs; pinning does not itself establish that the pinned code is safe.
+
+**VERIFY CURRENT (October 28, 2026):** [Workflow dependency lockfiles are now GA](https://github.blog/changelog/2026-10-28-github-actions-workflow-lockfiles-are-generally-available/). Onboarded workflows can keep readable action tags while running locked commits in `.github/workflows/actions.lock`. The [lockfile contract](https://docs.github.com/en/actions/concepts/security/workflow-dependency-lockfiles) locks action dependencies and reusable-workflow references. Dependencies inside a called reusable workflow are governed by its defining repository's own lockfile; inspect both boundaries. The concept page still carries a public-preview label despite the dated GA announcement, so verify repository availability before adoption. Full-SHA pinning remains a supported alternative when not adopting a lockfile. Generate and review the file through `gh actions-lock`; do not hand-edit it. A lock fixes dependency resolution, not secrets, runner images, parameters or whether the selected code is safe. Pass untrusted text as data through a safely quoted argument/environment boundary instead of embedding expressions into shell source.
 
 ### 4.4 Author reliable YAML pipelines
 
@@ -354,6 +364,51 @@ Setting an Azure Pipelines [custom condition](https://learn.microsoft.com/en-us/
 
 Resource checks remain outside consuming YAML. In the current [approval/lock documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops), approvers are fixed when checks begin; a changed group/list is not dynamically substituted into that pending approval. An exclusive lock with `runLatest` differs from `sequential`: superseded waiting deployments versus every queued deployment in order. Choose deliberately for stateful migrations, and retain the identity/reason for any authorized check bypass.
 
+### Worked YAML graph, tests and template boundary
+
+For a small GitHub-hosted .NET repository connected through an authorized Azure Pipelines GitHub connection, use branch/path PR and CI triggers appropriate to that source, choose an isolated agent pool and save the pipeline YAML in the repository. The following original **illustrative fragment** assumes tests already produce TRX and Cobertura files in the stated directories; it does not install an SDK, run a complete application build or deploy anything:
+
+```yaml
+trigger:
+  branches:
+    include: [main]
+pr:
+  branches:
+    include: [main]
+pool:
+  vmImage: ubuntu-latest
+stages:
+- stage: Validate
+  jobs:
+  - job: Tests
+    steps:
+    - script: ./ci/test.sh
+    - task: PublishTestResults@2
+      condition: succeededOrFailed()
+      inputs:
+        testResultsFormat: VSTest
+        testResultsFiles: 'results/**/*.trx'
+        failTaskOnFailedTests: true
+        failTaskOnMissingResultsFile: true
+        failTaskOnFailureToPublishResults: true
+    - task: PublishCodeCoverageResults@2
+      condition: succeededOrFailed()
+      inputs:
+        summaryFileLocation: 'results/**/coverage.cobertura.xml'
+        failIfCoverageEmpty: true
+- stage: Package
+  dependsOn: Validate
+  condition: succeeded()
+  jobs:
+  - job: Build
+    steps:
+    - script: ./ci/package.sh
+```
+
+A test task failure remains a failure while result publication still runs. The explicit missing-file and publication-failure inputs make absent or unpublished test evidence fail validation. See the [Publish Test Results task contract](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/publish-test-results-v2?view=azure-pipelines); the missing-file input defaults to false, so failed-test checking alone does not enforce report presence. The [current .NET pipeline guide](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/dotnet-core?tabs=yaml-editor&view=azure-devops) shows supported test/coverage generation and task prerequisites. For Azure Repos PR validation, configure branch-policy build validation rather than copying GitHub `pr` semantics.
+
+Extract repeated test steps into a [YAML template](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/templates?view=azure-devops) with a typed string project/path parameter and explicit input/output names. Use an `extends` contract when central policy must constrain pipeline structure. A classic task group is a different reuse surface from a YAML template. For private dependencies, move only the necessary job to a trusted isolated self-hosted pool and publish/download explicit artifacts across agents; a VM image supplies tools but is not a substitute for job outputs. Link a protected deployment environment and configure owner-managed checks outside consuming YAML. **Answer check:** package must remain skipped after failed validation; a template evaluated before runtime cannot consume a same-job variable created later. **VERIFY CURRENT:** task versions, agent image, SDK and YAML syntax. This fragment was not executed in Azure Pipelines.
+
 ### 4.5 Design deployments and exposure
 
 Separate deployment from release/exposure:
@@ -390,11 +445,19 @@ Use source-controlled IaC with review, static/security analysis, preflight/what-
 
 The blueprint still names Azure Automation State Configuration. Microsoft states it [retires September 30, 2027 and should transition to Azure Machine Configuration](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/migrating-from-azure-automation). Know the legacy concept and the current destination; do not design a new long-lived implementation around the retiring service.
 
-[Azure Deployment Environments](https://learn.microsoft.com/en-us/azure/deployment-environments/concept-environments-key-concepts) uses dev centers, projects, environment types, catalogs, definitions and managed identities to offer governed on-demand environments. Catalog approval and template versioning determine what self-service can create. Add ownership, cost tags, quota and expiration/deletion policy.
+[Azure Deployment Environments](https://learn.microsoft.com/en-us/azure/deployment-environments/concept-environments-key-concepts) uses dev centers, projects, environment types, catalogs, definitions and managed identities to offer governed on-demand environments. Catalog approval and template versioning determine what self-service can create. Add ownership, cost tags, quota and expiration/deletion policy. **VERIFY CURRENT — October 28, 2026:** The [current environment-creation quickstart](https://learn.microsoft.com/en-us/azure/deployment-environments/quickstart-create-access-environments) announces Azure Deployment Environments retirement on **February 22, 2027**. It remains explicitly named by the current AZ-400 objectives. Learn the catalog/project/identity/self-service model and plan transition rather than interpreting product retirement as removal from the current exam blueprint.
 
 > **Related item:** Desired state does not mean “rerun until green.” A safe controller understands ownership, drift, destructive change, secret handling and whether reconciliation can interrupt service.
 
 For [Bicep what-if](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-what-if), record the validation level and diagnostics. `Provider` includes deployment permission checks; `ProviderNoRbac` uses read permission checks for resources; `Template` performs static validation without provider preflight checks. Unresolved external state can exclude a resource or module from analysis. A short or empty diff is not proof of complete coverage, successful deployment or working data-plane permissions.
+
+### Worked flag, guest-state and self-service acceptance
+
+For a dark-launched feature, create a disabled flag in [App Configuration Feature manager](https://learn.microsoft.com/en-us/azure/azure-app-configuration/manage-feature-flags), select its purpose/label/audience, configure the application's supported provider and feature-management library, and gate the code path on the evaluated flag. Deploy the same tested binary, enable a test cohort, observe evaluation/health by version and cohort, then disable and verify after the configured refresh interval. A stored flag has no effect if the application never evaluates it. Package deployment separately: verify and download the immutable binary/archive or container digest, run the reviewed deployment task/script under its scoped connection, then verify readiness and the recorded target version.
+
+For guest configuration, provision the VM with ARM/Bicep, enable the supported Machine Configuration extension and assign a versioned configuration package with its integrity hash. Start in audit, inspect one intentional harmless drift, then choose [on-demand application versus continuous correction](https://learn.microsoft.com/en-us/azure/governance/machine-configuration/concepts/remediation-options) deliberately. Remediate an existing machine through the supported policy/assignment workflow and verify guest state as well as compliance evidence. Removing a policy is not proof that all guest changes were undone. Preserve recovery settings. Legacy Automation State Configuration remains named by the blueprint but follows its separate 2027 retirement path.
+
+For Azure Deployment Environments, identify the dev center, catalog definition/version, project environment type, deployment identity/target subscription and developer role before creating an environment. Use the developer portal to choose the project/type/definition, supply permitted parameters, inspect provisioning evidence and delete the disposable environment after dependency checks. The [current quickstart](https://learn.microsoft.com/en-us/azure/deployment-environments/quickstart-create-access-environments) announces retirement on **February 22, 2027**. **VERIFY CURRENT — October 28, 2026:** preserve ADE as published exam scope while designing a transition; a paper catalog/identity/deployment walkthrough is an appropriate substitute for a new long-lived deployment. **Answer check:** permission to request a catalog environment does not grant arbitrary subscription Owner access; a green resource deployment does not prove guest configuration or application health.
 
 ### 4.7 Maintain and optimize pipelines
 
@@ -572,6 +635,16 @@ Define SLI, SLO and error budget for important journeys. Use burn-rate or sustai
 | Cannot link incident to code | Version/deployment metadata absent | Artifact digest, commit and environment deployment record |
 | KQL is expensive/slow | Unbounded time/search and excessive columns | Start table/time, `where`, `project`, aggregation |
 | Pipeline duration average looks stable | Tail queue/task regression hidden | p50/p95 by stage, agent pool and event type |
+
+#### Worked security and monitoring onboarding checklist
+
+Create an authorized private Azure DevOps project with its process/source settings, add a named team, configure its area/iteration paths and assign a team administrator. Grant access level and object permissions separately; verify an ordinary team member's effective repository/pipeline/work-item access. [Team creation](https://learn.microsoft.com/en-us/azure/devops/organizations/settings/add-teams?view=azure-devops) and [project permission guidance](https://learn.microsoft.com/en-us/azure/devops/organizations/security/change-project-level-permissions?tabs=preview-page&view=azure-devops) describe these distinct controls.
+
+For Defender for Cloud DevOps security, create a scoped connector through Environment settings, authorize the intended GitHub organization/repositories or Azure DevOps organization, and verify discovery, a selected repository assessment and the integration identity's audit trail. The [GitHub connector](https://learn.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-github) and [Azure DevOps connector](https://learn.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-devops) have different required privileges and licenses. Enable the applicable repository security product/scanners separately; connector success alone does not enable or validate every Advanced Security scan. Inspect code/dependency/secret results and whether the expected repository findings reach Defender. Enable dependency graph/Dependabot alerts where supported, triage an alert to manifest/lockfile/version, review a proposed fixed version and rerun compatibility tests. Do not create real exposed secrets to test scanning.
+
+For compiled-language [CodeQL in a container](https://docs.github.com/en/code-security/tutorials/customize-code-scanning/run-in-a-container), keep checkout/init/build/analyze in the same compatible job container so extraction observes the compiler. Supply required tools and supported glibc environment; analyze results with scoped security-event permission. Scan the final image separately by digest: CodeQL source analysis is not an OS-package image vulnerability scan. **Answer check:** a source build outside the CodeQL container can yield no captured source even though the application builds.
+
+For telemetry, instrument an application with the supported SDK/distribution, choose the target Application Insights resource/workspace and verify a harmless request and dependency trace. Enable guest/container collection for the selected workload through its current Insights prerequisites, then inspect expected heartbeat/performance/container tables; Storage/Network platform views consume their own supported metrics/logs and are not the same agent install. Configure an Azure Monitor alert and action group and a narrow GitHub/Azure Pipelines run-failure subscription; test a harmless event and verify run link, recipient, suppression/escalation and owner. Use the preceding GitHub Projects chart exercise to configure work-state insights, and Actions metrics for run performance. **Answer check:** a visible dashboard with no recent ingestion is not successful monitoring; one notification does not prove recovery. **VERIFY CURRENT:** exact licenses, roles, product setup, schemas, collectors and notification mechanisms. All scenarios are unexecuted.
 
 #### Primary references
 
@@ -896,6 +969,10 @@ Use the promotion blog below as a design exercise. Replace its simulated validat
 ## Places to learn
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the resources and formats that fit you, and use the official July 27, 2026 objectives as the coverage checklist. Estimated times include reasonable note-taking or practice where stated and should be rechecked before purchase. Older material can still teach durable concepts, but reconcile every product screen, feature, identity method and objective against current documentation.
+
+### Focused pipeline evidence and critique route
+
+Follow the Azure DevOps Services YAML sections of [Create your first pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops) for one disposable repository. Retain the commit, YAML, agent selection, run log and test/artifact evidence; deliberately introduce and then repair one build failure. Next, critique the [Azure Developer CLI promotion article](https://devblogs.microsoft.com/devops/azure-developer-cli-from-dev-to-prod-with-azure-devops-pipelines/): identify the same artifact crossing stages and replace its TODO/simulated validation with a written real-check design. **About 2–3 hours**, estimated for one starter pipeline and an original review record; account/agent entitlement and deployment setup add time. **VERIFY CURRENT:** use current agents/authentication. The [older YAML lab](https://www.azuredevopslabs.com/labs/azuredevops/yaml/) is dated January 20, 2022 and contains an obsolete hosted image, so read it as historical illustration only. No pipeline, video or cloud deployment was executed in this review.
 
 | Resource | Access | Estimated time |
 |---|---|---:|

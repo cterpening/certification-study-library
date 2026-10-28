@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # AI-300 Operationalizing Machine Learning and Generative AI Solutions Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-300-coverage-record). The [official AI-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#ai-300) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-300-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300) is authoritative.
 
-**Current baseline:** Official page last updated March 5, 2026; no separate skills-effective date is published.<br>
-**Upcoming blueprint change:** None announced as of September 28, 2026.<br>
+**Current baseline:** The study-guide page shows last updated October 15, 2026; no separate skills-effective date is published. All 58 detailed objective wordings match the accepted baseline checked October 28, 2026. The credential page separately shows October 7; neither metadata date establishes a changed skills-effective baseline.<br>
+**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
 **Lifecycle status:** Active; no retirement or replacement was announced.<br>
 **Exam page:** [Machine Learning Operations Engineer Associate](https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/) · 120-minute assessment · English on the current exam page; course languages are separate.<br>
 **Official course:** [AI-300T00 Operationalize machine learning and generative AI solutions](https://learn.microsoft.com/en-us/training/courses/ai-300t00) · four instructor-led days; 12 course languages.<br>
@@ -113,6 +113,21 @@ This is a workflow fragment, not a complete workflow: place steps inside a job w
 
 IDs are configuration values rather than credentials, but repository/environment permissions remain sensitive. Add Bicep lint/what-if, policy/security scan, asset validation, evaluation threshold and deployment health/rollback gates.
 
+### Worked provisioning step: deploy infrastructure before submitting jobs
+
+After the OIDC login, provision the reviewed resource template in the workflow's job, rather than treating `az ml job create` as infrastructure deployment:
+
+```yaml
+- name: Validate infrastructure
+  run: az deployment group validate --resource-group "$RG" --template-file infrastructure/main.bicep --parameters @infrastructure/dev.parameters.json
+- name: Deploy approved infrastructure
+  run: az deployment group create --resource-group "$RG" --template-file infrastructure/main.bicep --parameters @infrastructure/dev.parameters.json
+```
+
+This is a **job-step fragment** with an existing resource group, an authorized OIDC identity, declared `RG`, reviewed template/parameters and a prior what-if/approval policy. The [CLI deployment contract](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-cli) also applies to Foundry's resource/project Bicep template. For Foundry, review its [resource/project quickstart](https://learn.microsoft.com/en-us/azure/foundry/how-to/create-resource-template), pin the sampled repository/template revision and supply its resource/project name parameters. A basic sample is not the private-network production configuration.
+
+**Answer check:** the resource/project must exist with expected identity/network settings before an asset/job stage starts. A passed deployment does not prove runtime DNS or data access. Capture deployment operations, resource IDs and allowed/denied runtime tests. **VERIFY CURRENT:** provider API versions, CLI flags and template security settings; no deployment was run here.
+
 ### Restrict networking and manage Git
 
 Private endpoints/managed virtual network do not automatically solve DNS or dependent-resource access. Map control, data, image/package, identity, monitoring and model endpoints. Provide approved outbound rules/package mirror and a managed self-hosted runner if public GitHub-hosted runners cannot reach private resources.
@@ -128,6 +143,29 @@ Use small branches/commits for source, component/YAML, environment lock, tests, 
 MLflow tracking records runs, parameters, metrics, tags and artifacts. Azure ML jobs can integrate MLflow without manually managing a tracking server. Log data/version, code commit, environment, seed, feature spec, algorithm/parameters, metrics by split and artifacts. See [MLflow tracking in Azure ML](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-log-view-metrics?view=azureml-api-2).
 
 Notebook exploration is appropriate for profiling/hypothesis; production logic belongs in scripts/components with declared arguments, environments and tests. A notebook “Run all” result is not reproducibility evidence.
+
+#### Worked command job: bind the script to declared assets
+
+With an existing permitted compute target, versioned data asset and compatible registered environment, a CLI v2 command-job fragment can make the training contract explicit:
+
+```yaml
+type: command
+code: ./src
+command: python train.py --data ${{inputs.training_data}} --output ${{outputs.model}}
+inputs:
+  training_data:
+    type: uri_folder
+    path: azureml:synthetic_training:1
+outputs:
+  model:
+    type: uri_folder
+environment: azureml:pinned_training:1
+compute: azureml:training_cpu
+```
+
+`train.py` must parse those arguments, read the supplied data, train/evaluate, log MLflow metrics and write the declared output. Submit through the existing `az ml job create --file ...` path, wait for terminal completion and inspect metrics/output before registration. [Azure ML training job contract](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-train-model?view=azureml-api-2)
+
+**Answer check:** if the script writes only to its working directory, a completed run does not establish the declared model output. If it silently reads a different data path, the recorded input is misleading. Verify both artifact location and consumed data lineage. **VERIFY CURRENT:** schema and tool versions; this fragment was not executed.
 
 #### AutoML and hyperparameter tuning
 
@@ -228,7 +266,7 @@ Use Bicep/CLI with current resource API/provider because the platform evolves. K
 
 #### Network mode is part of the release contract
 
-Foundry's managed VNet governs **agent outbound access**; inbound private access and dependent-resource identity remain separate decisions. `AllowInternetOutbound` permits internet access; `AllowOnlyApprovedOutbound` restricts destinations through approved rules. Current guidance supports prompt/hosted agents with the Responses API in listed regions. The portal does not create this managed network; use the supported IaC/REST path and verify provisioning/endpoint approval.
+**VERIFY CURRENT:** Foundry managed VNet controls agent outbound traffic; inbound private access and dependency authorization remain separate. The [current procedure](https://learn.microsoft.com/en-us/azure/foundry/how-to/managed-virtual-network) documents preview Azure CLI managed-network/rule commands requiring CLI 2.86.0 or later, but creation of the account with network injection still uses REST or an IaC template. Managed private endpoints do not create a customer-visible NIC. If an agent cannot reach Search, inspect the outbound-rule state, target private-endpoint approval and data permissions; searching only your subscription for a NIC can misdiagnose the boundary. A successful permitted request does not establish that an unapproved destination is blocked. `AllowInternetOutbound` and `AllowOnlyApprovedOutbound` remain distinct outbound modes; the latter requires approved destinations.
 
 Enabling isolation cannot be undone in place, approved-only mode cannot be relaxed to internet mode, and a custom-VNet deployment has no in-place upgrade to managed VNet. FQDN rules use ports 80/443 and a managed firewall with its own cost. Validate these choices before provisioning; a Bicep deployment succeeding does not prove DNS, private endpoint approval or denied egress. [Managed network requirements](https://learn.microsoft.com/en-us/azure/foundry/how-to/managed-virtual-network)
 
@@ -249,6 +287,12 @@ Quota, deployment capacity and a reservation are different. PTU quota is scoped 
 Version deployment name -> exact model version/config, test new version in parallel, run evaluation/load/safety gates, route progressive traffic and retain rollback. Do not let an automatic model-version upgrade silently change quality without an accepted policy and monitoring.
 
 **Model retirement can change a working release.** Current lifecycle guidance differentiates automatic upgrades for supported Standard deployment types from **manual migration for provisioned deployments**. Fine-tuning has separate training and deployment retirement: ending new training does not necessarily end inference for an existing tuned model. Track the specific model/version/SKU dates and test API, prompt, tool, safety and region compatibility; retaining an old artifact does not keep a retired hosted version callable. [Lifecycle and fine-tuning retirement](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements)
+
+#### Worked deployment choice: the model card defines the available route
+
+For one eligible foundation model, open its model card and choose **Use this model**. If **Serverless API** is offered, select the deployment name/version and supported filtering configuration, then invoke a known sample and retain response/error/usage evidence. If the model offers only **Managed Compute**, choose an eligible VM SKU, instance count and endpoint name, deploy, and verify container readiness plus the inference contract. The two routes have different quota, image/runtime, billing and networking responsibilities. [Model-card deployment workflow](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-foundation-models?view=azureml-api-2)
+
+**Answer check:** absence of a Serverless API option is not an instruction to manufacture a serverless endpoint. Check that exact model's support, license and current region, or select a supported alternative. Run the same quality/safety test and endpoint-denial case for the chosen route, then preserve the version/deployment mapping for promotion. **VERIFY CURRENT:** model availability and deployment menu/support; no endpoint was provisioned here.
 
 #### Define a model release contract
 
@@ -371,6 +415,16 @@ Build an experiment table with one row per configuration bundle and columns for 
 See [RAG concepts](https://learn.microsoft.com/en-us/azure/foundry/concepts/retrieval-augmented-generation) and [Azure AI Search relevance](https://learn.microsoft.com/en-us/azure/search/search-relevance-overview).
 
 **Keep the search score's meaning.** Hybrid Azure AI Search uses reciprocal rank fusion: each list contributes `1 / (rank + k)` to a document. That RRF constant is distinct from vector top-k. The fused `@search.score` depends on how many lists are combined; semantic reranking produces a separate `@search.rerankerScore`. A cosine or reranker threshold cannot be copied unchanged onto RRF scores. [RRF scoring](https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking)
+
+### Worked embedding adaptation: train retrieval geometry, then rebuild the index
+
+The blueprint explicitly includes **fine-tuning embedding models**. This is separate from tuning the answer-generating model. For a synthetic maintenance corpus, collect permitted query/relevant-passage pairs and hard negatives, such as a query about a pump fault paired with the correct model's manual and a similar but wrong model's manual. Split by document/entity so near-duplicate passages do not leak across train/development/test.
+
+**Corroborated — verify current:** the upstream [Sentence Transformers training workflow](https://sbert.net/docs/sentence_transformer/training_overview.html) provides model, dataset, loss, arguments, evaluator and trainer components. One bounded route uses `SentenceTransformerTrainer` with `MultipleNegativesRankingLoss` and no duplicate examples per batch. Establish baseline retrieval metrics, train on the permitted pairs, evaluate held-out retrieval and save a versioned checkpoint. This is an upstream training pattern, not evidence that every managed Foundry embedding endpoint exposes fine-tuning.
+
+For an Azure ML implementation, package that trainer as a versioned command job with pinned dependencies/compute and register the resulting checkpoint. Confirm the selected model's license and supported serving path; [Azure model-card guidance](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-foundation-models?view=azureml-api-2) makes deployment and training support model/task-specific. Re-embed the full corpus and queries with the same checkpoint, use a separate compatible index, and compare recall/nDCG, latency, cost and authorization tests before switching.
+
+**Answer check:** a tuned query encoder against old corpus vectors is not a valid comparison. Keep old encoder/index together for rollback. Unknown managed-service tuning support remains an explicit validation gap; no training or deployment was executed here.
 
 ### Fine-tune only for the right problem
 
@@ -613,6 +667,10 @@ Execute the local gate with passing, failing, missing, duplicate, severe and mal
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Choose one primary path, build the labs and use targeted material for gaps. Times are published when available or labeled estimates. Avoid dumps and recalled/live exam questions.
 
+### Focused reproducibility review
+
+Use the [MLOps accelerator structure](https://github.com/Azure/mlops-v2/blob/main/documentation/structure/README.md) and [Azure ML examples README](https://github.com/Azure/azureml-examples) to draw the inner-loop/outer-loop handoff for one model: data/version, environment, run, model registration, test evidence, deployment identity and rollback owner. Add a separate column for GenAIOps evidence still needed. Then inspect the [Foundry samples validation description](https://github.com/microsoft-foundry/foundry-samples) and distinguish build readiness from a sample's opt-in live-service validation. **About 90–150 minutes**, estimated for two short repository documents, the validation section and an original evidence map; sample setup/execution is additional and may cost money. **VERIFY CURRENT:** legacy SDK-v1 choices in accelerator documentation are historical context, not an instruction to use an unsupported SDK. No samples or pipelines were run in this review.
+
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
 | [Official AI-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300) | Public | 30–60 min | Authoritative scope and lifecycle |
@@ -620,7 +678,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | [AI Skills Navigator Practice Assessment](https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/machine-learning-operations-engineer) | Free account/sign-in | 45–90 min plus remediation (estimate) | Microsoft-linked diagnostic; sign-in shell only, no questions/results reviewed |
 | [Azure MLOps v2 solution accelerator](https://github.com/Azure/mlops-v2) | Public | 8–20 hours selectively (estimate) | Official reference architectures and automation; verify current SDK/IaC |
 | [Azure ML examples](https://github.com/Azure/azureml-examples) | Public | 10–30 hours selectively (estimate) | CLI/SDK jobs, pipelines and endpoints |
-| [Foundry samples](https://github.com/azure-ai-foundry/foundry-samples) | Public | 8–20 hours selectively (estimate) | Current evaluation, tracing and GenAIOps examples |
+| [Foundry samples](https://github.com/microsoft-foundry/foundry-samples) | Public | 8–20 hours selectively (estimate) | Official sample directory; inspect each sample and distinguish build checks from opt-in live validation |
 | [O'Reilly MLOps/LLMOps Bootcamp](https://www.oreilly.com/live-events/mlopsllmops-bootcamp/0642572182861/0642572243333/) | Paid live/subscription | Historical November 3–5, 2025 event; 10h metadata and agenda | Ammar Mohanna, two sessions; verify recording/new dates; broad lifecycle supplement |
 | [Udemy AI-300 MLOps & GenAIOps preparation](https://www.udemy.com/course/ai-300-mlops-genaiops-engineer-exam-preparation/) | Paid; price varies | 3h27, 11 lectures / one section (indexed public outline) | Aseem Mankotia, updated July 2026; 100-minute simulation differs from official 120-minute assessment |
 | [Udemy AI-300 practice tests](https://www.udemy.com/course/ai-300-operationalizing-ml-and-generative-ai-practice-tests/) | Paid; price varies | Five 150-question sets plus one 161-question set = 911; 12–25h review (estimate) | VARONTO Academy, updated June 2026; description still says 900, paid content/originality unverified |

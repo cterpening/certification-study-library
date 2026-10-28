@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # AI-901 Microsoft Azure AI Fundamentals Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-901-coverage-record). The [official AI-901 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#ai-901) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-901-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901) is authoritative.
 
 **Current baseline:** Skills measured as of April 15, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
 **Official source:** [AI-901 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901)
 
 > **Replacement note:** AI-900 retired on June 30, 2026. AI-901 is the active Azure AI Fundamentals exam and has a substantially more implementation-oriented Foundry scope. Older AI-900 resources can refresh concepts but are not an AI-901 study plan.
@@ -27,7 +27,7 @@ The [certification page](https://learn.microsoft.com/en-us/credentials/certifica
 
 ## How to use this guide
 
-AI-901 asks you to recognize AI workload patterns and perform foundational implementation with Microsoft Foundry and Foundry Tools. Study each capability as an input → processing → output → evaluation pipeline. Build small examples rather than memorizing service names, and verify all model, SDK, region, quota, pricing, and preview details before the exam.
+AI-901 asks you to recognize AI workload patterns and perform foundational implementation with Microsoft Foundry and Foundry Tools. Its audience profile expects Python syntax/programming techniques and familiarity with Azure resources; the absence of a separately required prerequisite certification does not make this a vocabulary-only exam. Study each capability as an input → processing → output → evaluation pipeline. Build small examples rather than memorizing service names, and verify all model, SDK, region, quota, pricing, and preview details before the exam.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
@@ -255,7 +255,7 @@ A prompt should say what to do when evidence is missing. “Always answer” enc
 
 #### A lightweight chat client
 
-The [Python Projects SDK reference](https://learn.microsoft.com/en-us/python/api/overview/azure/ai-projects-readme?view=azure-python) documents the project-client pattern below. Use a compatible 2.x `azure-ai-projects` package and `azure-identity`, an existing Foundry project/deployment, and an authorized Entra identity. Record the exact resolved package versions in your lab. The reference currently describes 2.7.0 and requires at least 2.3.0 for its main examples; stable packages can still expose preview features. Do not mix classic 1.x samples with this interface.
+The [Python Projects SDK reference](https://learn.microsoft.com/en-us/python/api/overview/azure/ai-projects-readme?view=azure-python) documents the project-client pattern below. Use a compatible 2.x `azure-ai-projects` package and `azure-identity`, an existing Foundry project/deployment, and an authorized Entra identity. Record the exact resolved package versions in your lab. The reference requires at least 2.3.0 for its main examples; record the actual resolved version because the reference and package can advance. Stable packages can still expose preview features. Do not mix classic 1.x samples with this interface.
 
 Set `FOUNDRY_PROJECT_ENDPOINT` to the project's `https://<resource>.services.ai.azure.com/api/projects/<project>` URL and `FOUNDRY_MODEL_NAME` to the **deployment name**. A local CLI sign-in can supply a development identity; production should use an appropriate workload identity and role. `DefaultAzureCredential` obtains a token; it does not grant access.
 
@@ -421,6 +421,31 @@ microphone/audio → endpoint/turn detection → speech recognition
 
 Good transcript accuracy does not guarantee a responsive voice experience. Budget latency per stage, handle silence and interruptions, and do not speak an unconfirmed side effect as completed.
 
+#### Worked Speech application wiring
+
+For an authorized disposable Speech resource and a permitted short WAV file, connect the earlier workload model to actual clients:
+
+```python
+import os
+import azure.cognitiveservices.speech as speechsdk
+
+config = speechsdk.SpeechConfig(
+    subscription=os.environ["SPEECH_KEY"], region=os.environ["SPEECH_REGION"]
+)
+audio = speechsdk.audio.AudioConfig(filename="synthetic-question.wav")
+recognizer = speechsdk.SpeechRecognizer(speech_config=config, audio_config=audio)
+# Pass recognizer to transcribe_short below; proceed only on its status == "ok".
+output = speechsdk.audio.AudioOutputConfig(filename="synthetic-answer.wav")
+synthesizer = speechsdk.SpeechSynthesizer(speech_config=config, audio_config=output)
+spoken = synthesizer.speak_text_async("This is a synthetic speech demonstration.").get()
+if spoken.reason != speechsdk.ResultReason.SynthesizingAudioCompleted:
+    raise RuntimeError("Synthesis failed; inspect a sanitized cancellation diagnostic")
+```
+
+Use the [recognition quickstart](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-speech-to-text) and [synthesis quickstart](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-text-to-speech) for compatible package/native dependencies and endpoint/authentication configuration. Environment keys are a simple lab setup; protect/rotate them and prefer supported workload identity for deployment.
+
+**Answer check:** a valid output WAV and completed SDK status establish synthesis completion, not correct transcription or safe content. Listen and compare critical words; test no-match/cancellation separately. **VERIFY CURRENT:** language/voice, resource endpoint, SDK and authentication support. No Speech service call was executed here.
+
 #### Recognition results and direct spoken prompts
 
 The [Speech quickstart](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-speech-to-text) uses the separate `azure-cognitiveservices-speech` package. With a configured recognizer and permitted short audio, distinguish recognized speech, no match and cancellation:
@@ -440,6 +465,12 @@ def transcribe_short(recognizer):
 Record a sanitized cancellation diagnostic separately; do not treat no-match/error as an empty successful transcript. The quickstart's one-shot operation ends on silence or after up to 30 seconds. Choose continuous or another supported transcription path for longer input. This fragment does not configure audio, credentials, cancellation or synthesis.
 
 A deployed multimodal voice model can accept spoken prompts without your application chaining separate STT and TTS services. Confirm its input/output audio formats and model support, test silence/interruptions and protect transcripts. The [voice prompt-agent quickstart](https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/prompt-voice-agent) is **preview**, requires project/region access and uses a different voice SDK surface; its current examples require Projects 2.7.0 or later. A hosted Voice Live integration's GA announcement is not proof that this separate feature is GA.
+
+#### Worked portal check: one spoken turn through a multimodal model
+
+**VERIFY CURRENT — preview.** With a permitted Foundry project, **Foundry User** access, an available voice model and region/subscription preview eligibility, open **Agents → Build an agent → Voice**, create the agent and open its playground. Set a narrow instruction: “Describe the difference between a transcript and a summary; ask for clarification when audio is unclear.” Review the model, input/output audio, transcription, turn detection and voice settings before opening a live session. Speak the question, listen to the response and inspect the conversation/trace. [Voice prompt-agent quickstart](https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/prompt-voice-agent)
+
+**Answer check:** confirm that audio reached the selected model/session and that a spoken response was produced. Repeat with silence, an interruption and an ambiguous phrase; retain distinct outcomes and verify that interrupted playback does not imply backend cancellation. Interaction mode cannot be changed on the existing agent after creation; create a separate voice agent when needed. This optional preview exercise is not a claim that the blueprint requires this particular preview surface. No microphone, live session or model was exercised here.
 
 ### Worked example 3: Measure speech errors and meaning
 
@@ -477,7 +508,34 @@ Use current product guidance for [vision-enabled models](https://learn.microsoft
 
 For a lightweight vision app, validate the permitted image and attach it using the selected SDK/API's image-input structure alongside a focused question. Compare the result with a known answer and preserve the input identifier. A generation model needs a separate supported generation/edit operation: receiving images does not imply producing them. Decode/store the documented output type and review it before display. Lab 5 requires both paths and a deliberately unsupported input.
 
+### Worked visual-input contract
+
+With an already authorized **Chat Completions** client and an eligible deployed vision model, supply text and an image as separate content parts:
+
+```python
+result = vision_client.chat.completions.create(
+    model=vision_deployment,
+    messages=[{"role": "user", "content": [
+        {"type": "text", "text": "Describe the two labeled axes; abstain if unreadable."},
+        {"type": "image_url", "image_url": {"url": permitted_image_url}},
+    ]}],
+)
+description = result.choices[0].message.content
+if not description:
+    raise ValueError("No usable visual description")
+```
+
+This follows the [vision-enabled chat request structure](https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/gpt-with-vision). The existing text Responses example and this Chat Completions example use distinct request contracts; configure an appropriate endpoint/client instead of exchanging field names between them. Use a public, permitted fixture or the documented supported data-URL route; a URL must be retrievable by the service without exposing private credentials.
+
+**Answer check:** compare both axis labels with the actual fixture, then test an unreadable or unsupported input. Nonempty plausible text does not prove visual accuracy. **VERIFY CURRENT:** modality/format support and current client/API; the source retains some older preview-version snippets, which are not adopted as a current version recommendation. This request was not executed.
+
 **Lifecycle check:** the [Image Analysis migration notice](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/migration-options) retires the Image Analysis API on **September 25, 2028**, including supported cloud and container deployments. This is not a retirement of all vision capabilities. Choose OCR/document extraction, multimodal reasoning or structured image analysis by requirement and retest output contracts; alternatives are not automatic drop-in replacements.
+
+### Worked image-generation contract
+
+**VERIFY CURRENT — preview example.** With an eligible MAI image deployment, send a JSON request to the resource's **`/mai/v1/images/generations`** path containing `model` set to the deployment name, an original permitted `prompt`, and supported `width`/`height` values. Authenticate using the documented API key or Entra bearer-token route, set a timeout, check the HTTP outcome and parse `data[].b64_json`. Decode a validated returned item to an image file and review it before display. This is a separate API from the image-input chat request. [MAI image generation procedure](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-mai-image)
+
+**Answer check:** if the response has no image item because generation was refused or failed, record that outcome rather than saving an empty image. Check dimensions/type and the requested content, retain model/prompt/provenance identifiers and test a deliberately unsupported request. Image editing has its own multipart operation; image understanding alone does not enable it. This optional model family illustrates the published generation objective; it is not a requirement to use a preview model or a claim of exam-specific model coverage. No image service was invoked.
 
 Accessible alt text describes the information needed for the page's purpose. Decorative images may require empty alt text; complex diagrams may need a concise label and a long description. Generated descriptions require contextual human review.
 
@@ -524,6 +582,21 @@ The current [Content Understanding quickstart](https://learn.microsoft.com/en-us
 6. handle unsupported/corrupt input and partial results;
 7. record safe telemetry without copying sensitive content unnecessarily.
 
+### Worked extraction request: use the modality's analyzer and inspect its evidence
+
+For the documented **GA `2025-11-01`** asynchronous route, POST JSON `{"inputs":[{"url":"<permitted-fixture-url>"}]}` to **`{endpoint}/contentunderstanding/analyzers/{analyzerId}:analyze?api-version=2025-11-01`**, using the resource's documented authentication. Choose the analyzer by required output:
+
+| Fixture | Example analyzer | Inspect before use |
+|---|---|---|
+| Invoice/form document | `prebuilt-invoice` | Typed fields and page/source evidence; map into the local validator's narrow contract |
+| Chart image | `prebuilt-imageSearch` | Description grounded in the supplied image |
+| Short audio | `prebuilt-audioSearch` | Transcript, summary and speaker evidence |
+| Short video | `prebuilt-videoSearch` | Keyframes, transcript and chapter segments |
+
+Capture **Operation-Location** from HTTP acceptance; GET that operation URL with authentication until **Succeeded**, a failure outcome or your deadline. **Running/NotStarted** means wait; a successful HTTP polling response alone is not completed extraction. Parse the documented `result`/contents shape for the selected modality and preserve fixture and operation IDs. [Multimodal REST quickstart](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-rest-api)
+
+**Answer check:** a completed audio transcript without expected speaker/source evidence must not be reported as a fully verified extraction. Check actual fields against the original media and retain failures. **VERIFY CURRENT:** analyzer availability, model dependencies, status schema and limits. These requests were not executed; this example complements the separate completeness/partial-result checks.
+
 ### Choose the version, analyzer and model configuration
 
 | Contract | Learner decision |
@@ -533,6 +606,8 @@ The current [Content Understanding quickstart](https://learn.microsoft.com/en-us
 | Preview agentic document analysis | Multistep reasoning with one input file per request in the initial preview; continue validating calculations and evidence |
 
 Check the [release history](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new) for feature-specific support. Read/Layout does not require an LLM deployment. For model-dependent analyzers, inspect `supportedModels` and map supported names/aliases to actual deployments. [Model configuration guidance](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments) supports resource defaults or per-request `modelDeployments`; request mappings override defaults. Prebuilt aliases such as `prebuilt-analyzer-completion` are not deployment names. Account for both model token charges and Content Understanding usage.
+
+**VERIFY CURRENT — completeness check (October 28, 2026):** The [October release notes](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new) raise asynchronous PDF/TIFF analysis to 2,000 pages, while synchronous Read/Layout remains limited to five pages. The [operation-limit table](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/service-limits) warns that a longer synchronous document can yield only its first five pages unless an appropriate page range is requested. In an original paper exercise, a seven-page invoice packet returning five pages has **5/7 page coverage**, even if all returned fields are correct. Reconcile expected pages and source regions before calling the packet complete; choose supported asynchronous processing when the whole input is needed.
 
 For document fields, [confidence and grounding](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview) are opt-in via analyzer `estimateFieldSourceAndConfidence` or field `estimateSourceAndConfidence`. They apply to supported extract, classify and generate fields. Supported typed values are normalized automatically; the API does not provide a configurable raw-versus-normalized pair. Preserve source evidence and verify critical values independently. Signature detection locates a signature region; it does not establish signer identity or authenticity.
 
@@ -799,13 +874,17 @@ These original practice scenarios are not recalled exam questions. Explain your 
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 
+### Focused retrieval learning route
+
+Pair the RAG concepts in the [AI concepts path](https://learn.microsoft.com/en-us/training/paths/ai-concepts/) with the current [Foundry IQ module outline](https://learn.microsoft.com/en-us/training/modules/get-started-foundry-iq/). Draw a source-to-answer diagram with knowledge sources, knowledge base, retrieval request, returned evidence and agent response. Write one answerable question, one question whose answer is absent and one case in which a user should not receive a source. State the evidence you would require from a later exercise before accepting the answer or access boundary. **About 60–90 minutes**, estimated for selected module reading and this original diagram/question set; actual exercise provisioning and model usage add time/cost. The seven-module implementation path currently ends in Foundry IQ. This review read outlines, not the exercise or assessment questions, and did not execute a client.
+
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [Microsoft Learn — AI-901 course](https://learn.microsoft.com/en-us/training/courses/ai-901t00) | Free self-study; instructor-led options vary | 1 day (official course) | Current objective-aligned foundation and implementation sequence |
 | [Microsoft — AI-901 Practice Assessment on AI Skills Navigator](https://aiskillsnavigator.microsoft.com/credentials/cert-83587e0a0754cfee561ade3e27d9fa1cdaf15ae03be52d2413b2b858d1b4eda4) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check; AI Skills Navigator sign-in is required, and the blueprint and product documentation remain authoritative |
 | [Microsoft Learn AI-901 certification material](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/) | Free | About 10–14 hours | Official scope anchor; complete current Foundry exercises rather than relying on AI-900 modules |
 | [Microsoft Learn — AI concepts](https://learn.microsoft.com/en-us/training/paths/ai-concepts/) | Free | Budget 4–6 hours including notes (editorial estimate) | Seven modules; current total runtime not exposed. Concepts path across the workloads in the first domain |
-| [Microsoft Learn — AI applications and agents](https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/) | Free | Budget 6–10 hours including labs (editorial estimate) | Seven modules; current total runtime not exposed. Implementation path across Foundry, apps/agents, text, speech, vision, extraction, and retrieval |
+| [Microsoft Learn — AI applications and agents](https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/) | Free | Budget 6–10 hours including labs (editorial estimate) | Seven modules; current total runtime not exposed. Implementation path across Foundry, apps/agents, text, speech, vision, extraction, and Foundry IQ knowledge retrieval |
 | [O'Reilly — Azure AI Fundamentals AI-901](https://www.oreilly.com/videos/azure-ai-fundamentals/9781807782979/) | Subscription | 4 hours 4 minutes | Anand Rao Nednur, April 2026; indexed public outline only, direct access blocked. Verify current SDK demos before purchase |
 | [Udemy — AI-901 by Christopher Nett](https://www.udemy.com/course/ai-901-azure-ai-fundamentals/) | Purchase or subscription | About 6 hours 20 minutes | Christopher Nett; indexed outline: June 2026, 12 sections/49 lectures. Direct access blocked; lessons not watched |
 | [Udemy — AI-901 exam prep by Kuljot Singh Bakshi](https://www.udemy.com/course/azure-ai-fundamentals-exam-prep/) | Purchase or subscription | About 6 hours 54 minutes | Kuljot Singh Bakshi; indexed outline: July 2026, 11 sections/47 lectures. Direct access blocked; lessons not watched |

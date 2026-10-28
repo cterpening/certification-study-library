@@ -4,25 +4,15 @@ As of 2026-10-28; program started 2026-09-27.
 
 Recorded deep reviews in this program, separate from historical source validation, live labs and automated monitoring.
 
-55 guides; 41 have review work or unresolved blockers; 28 are eligible for review now.
+55 guides; 31 have review work or unresolved blockers; 18 are eligible for review now.
 
-Next batch: AB-620, AB-731, AI-300, AI-901, AZ-104, AZ-140, AZ-305, AZ-400, AZ-700, AZ-900.
+Next batch: DP-900, MB-230, MB-310, MB-500, MB-800, MB-820, PL-300, PL-900, SC-500, AB-250.
 
 A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently reviewed guides wait for a later dated event or the review interval; changed guide text returns immediately. Events dated on or before the latest review remain visible in the work packet but do not repeatedly schedule that same review. Set a later review date for an unresolved event that needs another check.
 
 | Exam | Deep-review state | Reviewed | Next eligible review | Lab execution |
 |---|---|---|---|---|
 | [MS-102](../guides/MS-102-microsoft-365-administrator.md) | reviewed-with-blockers | 2026-10-28 | 2026-11-01 | not-executed |
-| [AB-620](../guides/AB-620-designing-building-integrated-ai-agent-solutions.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
-| [AB-731](../guides/AB-731-ai-transformation-leader.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
-| [AI-300](../guides/AI-300-operationalizing-machine-learning-generative-ai-solutions.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
-| [AI-901](../guides/AI-901-microsoft-azure-ai-fundamentals.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
-| [AZ-104](../guides/AZ-104-microsoft-azure-administrator.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
-| [AZ-140](../guides/AZ-140-configuring-operating-azure-virtual-desktop.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
-| [AZ-305](../guides/AZ-305-designing-microsoft-azure-infrastructure-solutions.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
-| [AZ-400](../guides/AZ-400-designing-implementing-microsoft-devops-solutions.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
-| [AZ-700](../guides/AZ-700-designing-implementing-azure-networking-solutions.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
-| [AZ-900](../guides/AZ-900-microsoft-azure-fundamentals.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
 | [DP-900](../guides/DP-900-microsoft-azure-data-fundamentals.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
 | [MB-230](../guides/MB-230-microsoft-dynamics-365-customer-service-functional-consultant.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
 | [MB-310](../guides/MB-310-microsoft-dynamics-365-finance-functional-consultant.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
@@ -57,11 +47,21 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently
 | [SC-300](../guides/SC-300-microsoft-identity-access-administrator.md) | reviewed-with-blockers | 2026-10-28 | 2026-11-27 | not-executed |
 | [SC-900](../guides/SC-900-microsoft-security-compliance-identity-fundamentals.md) | reviewed-with-blockers | 2026-10-28 | 2026-11-27 | not-executed |
 | [PL-400](../guides/PL-400-microsoft-power-platform-developer.md) | reviewed | 2026-10-28 | 2026-11-27 | not-executed |
+| [AB-620](../guides/AB-620-designing-building-integrated-ai-agent-solutions.md) | reviewed | 2026-10-28 | 2026-11-27 | not-executed |
+| [AB-731](../guides/AB-731-ai-transformation-leader.md) | reviewed | 2026-10-28 | 2026-11-27 | not-executed |
 | [AB-900](../guides/AB-900-microsoft-365-copilot-agent-administration-fundamentals.md) | reviewed | 2026-10-28 | 2026-11-27 | not-executed |
 | [AI-103](../guides/AI-103-developing-ai-apps-and-agents-on-azure.md) | reviewed | 2026-10-28 | 2026-11-27 | offline-only |
+| [AI-300](../guides/AI-300-operationalizing-machine-learning-generative-ai-solutions.md) | reviewed | 2026-10-28 | 2026-11-27 | not-executed |
 | [AI-500](../guides/AI-500-designing-implementing-multi-agent-ai-solutions.md) | reviewed | 2026-10-28 | 2026-11-27 | not-executed |
+| [AI-901](../guides/AI-901-microsoft-azure-ai-fundamentals.md) | reviewed | 2026-10-28 | 2026-11-27 | not-executed |
+| [AZ-104](../guides/AZ-104-microsoft-azure-administrator.md) | reviewed | 2026-10-28 | 2026-11-27 | not-executed |
+| [AZ-140](../guides/AZ-140-configuring-operating-azure-virtual-desktop.md) | reviewed | 2026-10-28 | 2026-11-27 | not-executed |
+| [AZ-305](../guides/AZ-305-designing-microsoft-azure-infrastructure-solutions.md) | reviewed | 2026-10-28 | 2026-11-27 | not-executed |
+| [AZ-400](../guides/AZ-400-designing-implementing-microsoft-devops-solutions.md) | reviewed | 2026-10-28 | 2026-11-27 | not-executed |
+| [AZ-700](../guides/AZ-700-designing-implementing-azure-networking-solutions.md) | reviewed | 2026-10-28 | 2026-11-27 | not-executed |
 | [AZ-800](../guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md) | archived | 2026-09-27 | Archived | offline-only |
 | [AZ-801](../guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md) | archived | 2026-09-27 | Archived | offline-only |
+| [AZ-900](../guides/AZ-900-microsoft-azure-fundamentals.md) | reviewed | 2026-10-28 | 2026-11-27 | not-executed |
 | [DP-300](../guides/DP-300-administering-microsoft-azure-sql-solutions.md) | reviewed | 2026-10-28 | 2026-11-27 | not-executed |
 | [DP-420](../guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md) | reviewed | 2026-10-28 | 2026-11-27 | not-executed |
 | [DP-600](../guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md) | reviewed | 2026-10-28 | 2026-11-27 | offline-only |

@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # AZ-104 Microsoft Azure Administrator Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-104-coverage-record). The [official AZ-104 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-104) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-104-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104) is authoritative.
 
 **Current baseline:** Skills measured as of April 17, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
 **Official source:** [AZ-104 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104)
 
 The September 28 [deep review](../docs/research/2026-09-28-az-104-deep-review.md) maps all **82 detailed objectives in 15 groups**. This edition has seven worked examples, ten labs and 48 explained original checks. The calculations were verified locally; no tenant, cloud resource, deployment, paid lesson or practice assessment was exercised.
@@ -146,6 +146,12 @@ Management groups organize subscriptions for inherited policy and RBAC. Subscrip
 
 Budgets and cost alerts notify; they do not normally stop consumption. Azure Advisor recommendations identify potential cost, reliability, security, operational-excellence, or performance improvements, but an administrator must evaluate workload context. **VERIFY CURRENT:** Advisor categories, supported scopes, cost-management features, and alert delivery behavior.
 
+#### Worked hierarchy change: predict inherited controls before a move
+
+In a disposable tenant scope, create a resource group and tag it, then place a test subscription beneath a deliberately configured management group. Record the current parent and inherited RBAC/Policy assignments before the move. In **Management groups**, select the destination and add the eligible subscription, using an identity with the documented permissions on the subscription and relevant parent/destination scopes. Inspect the resulting hierarchy and effective permissions/compliance afterward; refresh identity state and allow the documented cache propagation rather than assuming immediate failure. [Management-group operations](https://learn.microsoft.com/en-us/azure/governance/management-groups/manage)
+
+**Answer check:** moving the subscription can change inherited policies and access without relocating its VM data or changing its Entra tenant. A tag on the resource group is not automatically a tag on every child. Keep an authorized reversal plan and verify required deployment/backup operations after the move. **VERIFY CURRENT:** move permissions, cache behavior and billing/subscription restrictions; no subscription was moved here.
+
 #### Domain failure modes
 
 - Assigning a broad Owner role to solve an access issue instead of locating the missing action.
@@ -178,6 +184,8 @@ Regenerate keys deliberately: identify every consumer, move consumers to the alt
 #### Identity-based Azure Files access
 
 [Azure Files SMB identity authentication](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-active-directory-overview) needs a supported identity source, share-level permissions, file/directory permissions, a prepared client and network/DNS reachability. The user identity sources are AD DS, Microsoft Entra Domain Services and Microsoft Entra Kerberos; select one per storage account. Client/identity support differs, including preview combinations. This SMB design is not NFS identity authorization. A successful mount or a share role alone does not prove access to every file. Diagnose ticket acquisition, share permissions and directory ACLs separately.
+
+> **Related item:** **VERIFY CURRENT:** For application workloads, [Azure Files managed-identity SMB access](https://learn.microsoft.com/en-us/azure/storage/files/files-managed-identities) can coexist with user authentication; it is not a fourth mutually exclusive user directory. Current prerequisites require a client that is not domain joined, the storage account's `SMBOAuth` setting and a separate SMB Kerberos-authentication setting. A role assignment alone cannot create this path. In a design worksheet, distinguish a person opening an FSLogix profile from a VM application mounting a share: record identity, client join state, share/file permissions and network reachability for each. Do not copy the application path into user-profile instructions without checking support.
 
 ### Firewalls, service endpoints, and private endpoints
 
@@ -218,6 +226,14 @@ When creating a blob container, choose its storage account, name and access leve
 
 Use Storage Explorer for interactive administration and [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) for scripted high-performance transfers. Test authentication, filters, overwrite behavior, checksums, and restart/resume handling before a migration.
 
+### Worked Azure Files recovery: a file and a share have different undo paths
+
+On a disposable classic `Microsoft.Storage` file share, write a synthetic file, create a share snapshot and record its timestamp. Change/delete the live file; browse the earlier snapshot and copy the selected file back, then verify its bytes and permissions. The snapshot is read-only and shares its source's redundancy; it does not protect against deletion of the entire account. [Share snapshot operations](https://learn.microsoft.com/en-us/azure/storage/files/storage-snapshots-files)
+
+Separately enable/check **share soft delete** at the storage-account level with a chosen retention period. Delete only the disposable share, show deleted shares, and undelete the correct deletion/version before expiry. This restores share contents and snapshots; it is a different operation from restoring an individual file. Current share soft delete does not apply to the newer `Microsoft.FileShares` provider. [Share soft-delete configuration](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-prevent-file-share-deletion)
+
+**Answer check:** deleting an individual file should lead to snapshot/file-backup recovery, not a nonexistent per-file share-undelete operation. Verify what was recovered and retention/resource costs. **VERIFY CURRENT:** provider/protocol support, retention and preview snapshot-revert options; no share was created or deleted here.
+
 ### Worked example 2: Undelete does not recreate the current version
 
 With blob versioning and soft delete enabled, write 10 MiB as v1, overwrite with another 10 MiB as v2, then delete the blob. The versions remain, but there is **no current version**. Undelete restores soft-deleted versions/snapshots; it does not promote a version to current. Copy the chosen previous version to the current blob and verify its content. If a toy full-copy model counts v1, v2 and a new restored version, it holds 30 MiB. That arithmetic is not an Azure billing estimate; actual stored blocks, snapshots and operations matter. See [soft-delete/versioning behavior](https://learn.microsoft.com/en-us/azure/storage/blobs/soft-delete-blob-overview).
@@ -251,6 +267,24 @@ Before deployment, run syntax/build checks and a what-if operation; after deploy
 
 For [JSON-to-Bicep conversion](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/decompile), `az bicep decompile --file main.json` produces `main.bicep`. Review warnings, names, API versions, parameters and dependencies, then build and inspect what-if before deploying. Conversion can require repairs and does not produce text-identical JSON on a round trip. Exporting live resources is not a backup of their data or secrets.
 
+### Worked ARM/Bicep change: follow one property through deployment
+
+Suppose a reviewed storage resource has SKU `Standard_LRS`, `kind: 'StorageV2'` and `properties.allowBlobPublicAccess: false`. In Bicep, replace the literal SKU name with a parameter:
+
+```bicep
+@allowed(['Standard_LRS', 'Standard_ZRS'])
+param storageSku string = 'Standard_LRS'
+// Within the existing storage resource declaration:
+// sku: { name: storageSku }
+// properties: { allowBlobPublicAccess: false }
+```
+
+In the corresponding ARM JSON, declare `parameters.storageSku` as a string with the same default/allowed values, then use `"sku": {"name": "[parameters('storageSku')]"}`. The parameter expression is evaluated by ARM; the boolean public-access property remains an explicit guardrail. This is a **fragment for modifying an existing reviewed resource**, not a complete storage deployment.
+
+Build with `az bicep build --file main.bicep`; inspect generated `main.json`. With an authorized identity and existing lab resource group, run `az deployment group what-if --resource-group <lab-rg> --template-file main.bicep --parameters storageSku=Standard_ZRS`, inspect every proposed change, then use `az deployment group create` with the same arguments only for a supported intended change. [Bicep CLI deployment contract](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-cli)
+
+**Answer check:** exporting/decompiling a resource does not preserve its data, and changing redundancy is subject to account/service migration support. Inspect deployment operations and the actual SKU/public-access state; a parameter edit alone proves neither. **VERIFY CURRENT:** resource schema, supported SKU transitions and CLI behavior. No deployment was executed.
+
 ### Virtual machines
 
 A VM depends on compute, disks, NICs, networks, identity, extensions, and sometimes load-balancing or availability resources. The [VM overview](https://learn.microsoft.com/en-us/azure/virtual-machines/overview) is the starting reference.
@@ -270,6 +304,12 @@ Resizing can require a restart and is constrained by regional/cluster capacity. 
 For moves, inventory disks, NICs, public IPs, extensions, identities, role assignments, quota and provider registration. Resource-group/subscription relocation and region migration have different support paths; do not assume that moving a resource ID relocates its data to another region. For VM scale sets, record orchestration mode, image, upgrade policy, health signal, minimum/maximum/default capacity and scale-in behavior; fleet creation alone does not configure application health or safe upgrades.
 
 Extensions run post-deployment configuration or agents inside the guest. Failure can be caused by guest connectivity, package repositories, identity, handler state, or stale extension configuration. Check instance view and guest logs before repeatedly redeploying.
+
+### Worked scale-set configuration: creation is the start of the health test
+
+In a disposable scope, open **Virtual Machine Scale Sets → Create**, explicitly choose **Flexible** orchestration, a supported image/size, administrator authentication, initial manual instance count, disks, VNet/subnet and a supported load balancer/backend arrangement. Use two instances for this teaching scenario; Microsoft's larger quickstart count is not a minimum. Review the instance model before creation. [Flexible scale-set portal workflow](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-portal)
+
+Verify both instances become ready, the intended backend/probe sees the application, and permitted traffic reaches healthy instances. Change capacity from two to three and inspect actual instance state; then test an application failure independently of VM power state. Add a reviewed health/upgrade and scale-in policy before considering automatic production scaling. **Answer check:** three provisioned VMs with no listening application do not establish a healthy three-instance service. **VERIFY CURRENT:** orchestration defaults, image/size support, zones, instance limits and networking; no scale set was deployed here.
 
 ### Containers and application platforms
 
@@ -343,6 +383,10 @@ Service endpoints identify a subnet to a supported PaaS service while the servic
 
 Azure DNS hosts public zones; Azure Private DNS hosts zones resolvable through linked VNets and hybrid resolver designs. Delegating a public zone requires the registrar/parent nameserver records to match Azure's assigned nameservers. Private DNS auto-registration and VNet links have specific behavior; design hybrid forwarding explicitly.
 
+**Worked DNS record check.** In an authorized test zone for a domain you control, add an **A record set** named `www`, choose TTL and the intended web server's public IPv4 address, then query `www.<your-domain>` directly against the assigned Azure nameserver. Separately delegate the real public domain through the registrar/parent nameservers and test through a normal recursive resolver after cache expiry. [Public-zone and record quickstart](https://learn.microsoft.com/en-us/azure/dns/dns-getstarted-portal)
+
+**Answer check:** success against Azure's authoritative server but failure through the normal resolver points first to delegation/cache/resolver path, rather than proving the record was never created. A private IP in a public zone does not make a service publicly reachable. For private DNS, use the existing VNet-link/forwarding tests instead of public delegation. **VERIFY CURRENT:** record configuration and propagation; no public DNS record was changed here.
+
 Azure Load Balancer is a layer-4 service for TCP/UDP flows. Public and internal front ends address different exposure requirements. A rule ties front end, protocol/port, backend pool, and health probe together; outbound behavior is a separate consideration. See [Azure Load Balancer overview](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-overview).
 
 Troubleshoot load balancing in this order: DNS/front-end address, rule, health probe, backend membership, NSG, guest firewall, listener, route symmetry, then application logs. A failed probe normally removes a backend from new-flow selection even if the VM itself is running; inspect any configured administrative-state override. Basic Load Balancer retired on September 30, 2025. Use current supported SKUs and explicitly verify outbound behavior instead of copying a legacy Basic design.
@@ -395,6 +439,24 @@ Network Watcher tools answer different questions: topology/effective configurati
 
 [NSG flow logs](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-nsg-flow-logging-overview) no longer permit new creation and retire September 30, 2027. Plan new collection with virtual network flow logs. Retirement of NSG flow-log resources does not itself delete historical storage records; their retention still applies. Flow records, Connection Monitor and guest/application telemetry answer different questions.
 
+### Worked backup reporting and alerting path
+
+Configure the selected vault's **diagnostic settings** to send supported backup reporting categories to a permitted Log Analytics workspace. Open Backup Reports, choose the actual workspace/subscription/vault/time filters and inspect jobs, policy adherence and usage; account for collection delay and report support before treating missing rows as missing backups. [Backup report configuration](https://learn.microsoft.com/en-us/azure/backup/configure-reports)
+
+For a supported job table, this original query isolates the latest known record for each backup job in a bounded observation window:
+
+```kusto
+AddonAzureBackupJobs
+| where TimeGenerated > ago(24h)
+| where JobOperation == "Backup"
+| summarize arg_max(TimeGenerated, *) by JobUniqueId
+| where JobStatus == "Failed"
+```
+
+Use the current [Azure Monitor backup query/alert guidance](https://learn.microsoft.com/en-us/azure/backup/backup-azure-monitoring-use-azuremonitor) to check the vault/workload schema. Create a scoped log-alert condition on the intended failure result, choose evaluation/window/minimum-data policy and an owned action group, then test notification using an authorized fixture. Keep job-state transitions from becoming duplicate job counts.
+
+**Answer check:** zero failed-job rows can mean no failures, absent diagnostics, delay, wrong scope or an insufficient time window. Verify collection and protected-item coverage separately. A failure alert is not proof of successful restore readiness. **VERIFY CURRENT:** table/categories, report support and alert delivery; neither query nor notification was run here.
+
 ### Worked example 5: Missing machines and misleading averages
 
 Five VMs should emit guest telemetry, but only four do: **80% collection coverage**. A healthy average for those four says nothing about the missing VM. Separately, service A fails 10 of 100 requests and B fails 1 of 10: both have 10% failure, so the combined rate is 11/110 = 10%. If B instead fails 1 of 1, averaging 10% and 100% gives 55%, while the request-weighted total is **11/101 = 10.89%**. Use the correct denominator, dimensions and missing-data policy; report coverage alongside health.
@@ -412,6 +474,12 @@ Do not collapse these concepts:
 
 Recovery Services vaults and Backup vaults support different workload matrices. A backup policy defines schedule, retention, tiering, and related settings. Soft delete, immutability, multi-user authorization, resource guard, and private access may add defense against destructive operations, but support differs by workload and vault. **VERIFY CURRENT:** use the [Azure Backup overview](https://learn.microsoft.com/en-us/azure/backup/backup-overview) and workload-specific support matrices.
 
+**Worked vault creation decision.** For a disposable supported Azure VM backup, create a **Recovery Services vault** with the intended subscription/resource group/name and the source workload's region; configure the supported storage/security settings before protection. Select the workload, create/choose a policy with explicit schedule and retention, enable protection and inspect its first recovery point. [Recovery Services vault creation](https://learn.microsoft.com/en-us/azure/backup/backup-create-recovery-services-vault)
+
+For a workload requiring a **Backup vault**, create that vault type separately and select region and storage redundancy during setup. Redundancy cannot be changed after protecting items in that vault. Verify the workload's support/identity permissions before associating its policy and backup instance. The two vaults are different resource families, not alternative display names. [Backup vault creation](https://learn.microsoft.com/en-us/azure/backup/create-manage-backup-vault)
+
+**Answer check:** a created vault with no protected item or recovery point proves no data is protected. Restore the synthetic fixture and validate its content and timing. Keep experimental immutability reversible. **VERIFY CURRENT:** workload/region support, policy options and irreversible configuration; no vault or backup was created here.
+
 Recovery point objective is acceptable data loss measured in time; recovery time objective is acceptable restoration time. A successful backup job does not prove either. Perform restore tests, validate the application and identity/network dependencies, record timings, and retain evidence.
 
 Site Recovery needs a recovery plan beyond replication: dependency order, network mapping, DNS/routing changes, test-failover isolation, validation, failover criteria, and failback. A test failover should not disrupt production or create duplicate writers.
@@ -421,6 +489,14 @@ Site Recovery needs a recovery plan beyond replication: dependency order, networ
 An incident occurs at 12:00. The selected application-consistent point is 11:42, so observed data loss is **18 minutes**, exceeding a 15-minute RPO. Decision/startup takes 8 minutes, restoration 55 and application validation 12: service recovery takes **75 minutes**, exceeding a 60-minute RTO. A completed restore job alone would hide both failures. Include identity, DNS, dependencies and user acceptance in the timeline.
 
 For an [Azure-to-Azure Site Recovery drill](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-dr-drill), choose an isolated non-production network and record the selected recovery point. “Latest processed” avoids additional processing delay; “Latest” processes received data before failover; app-consistent recovery points address a different consistency requirement. Validate the recovered application and clean up the test through Site Recovery after recording findings. A test VM that starts is not full recovery proof.
+
+### Worked Site Recovery transition: drill, failover, commit, reprotect
+
+To configure Azure-to-Azure protection first, choose a supported **Recovery Services vault outside the source VM region**; this differs from the same-region Azure Backup example above. Verify source VM support, target quota, vault/target permissions and outbound connectivity. In the vault, enable Site Recovery, choose **Azure virtual machines → Enable replication**, select source subscription/region/resource group and the disposable VM, then review target network, disk/cache storage, replication policy and extension-update settings. Enable replication and inspect the item until initial replication and protection health meet the drill prerequisites. The source-region cache receives disk writes before replication creates recovery points in the target. [Enable Azure VM replication](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-enable-replication) **VERIFY CURRENT:** region/workload support, networking, disk/encryption constraints and permissions.
+
+For an authorized disposable replicated VM, first confirm healthy protection, target-region compute/network settings and all required disks. Perform the isolated test drill above. For a real **full failover exercise**, choose the intended recovery point, stop/fence source writes through the approved procedure and initiate **Failover**. Source shutdown is attempted when selected, but failover can continue if it fails; avoid duplicate writers. Validate target VM, application, identity, DNS, network and data before **Commit**. Commit removes the available recovery-point alternatives for that VM. Then **Reprotect** so the target VM replicates back toward the primary region, and plan/validate the separate return transition. [Failover and reprotection procedure](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-failover-failback)
+
+**Answer check:** cleaning up a test failover is not committing a real failover, and a running target is not reverse replication. Record protection direction, selected point, application acceptance and RPO/RTO. **VERIFY CURRENT:** support, placement/capacity and commit/reprotection prerequisites; this is an unexecuted workflow, not an instruction to fail over production.
 
 ### Worked example 7: Retention and immutability can have different ends
 
@@ -677,6 +753,10 @@ You are approaching readiness when you can:
 ## Places to learn
 
 This is a curated starting set, not a complete list. Do **not** consume every resource. Pick one structured spine, use documentation for weak objectives, do the labs, and add one assessment source. Time estimates are planning ranges, not guarantees; playback speed, prior experience, exercises, lab cleanup, and vendor changes matter. Verify the current blueprint before buying or starting a course.
+
+### Focused governance evidence route
+
+[Microsoft's Lab 02b](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Labs/LAB_02b-Manage_Governance_via_Azure_Policy.html) publishes **30 minutes** for tagging, policy and locks. Allow **about 60–90 minutes** for the lab plus evidence and cleanup, an editorial extension of that published estimate; subscription setup and policy propagation may add time. In a disposable resource group, retain the assigned scope/parameters, the denied deployment message, the modify/remediation identity and result, the deletion-lock failure and cleanup evidence. Distinguish the lab's predicted result from what you actually observe. **VERIFY CURRENT:** use the configured tag value (`000` in the example), since one explanatory sentence instead says `Default`; do not adopt the lab's broad pre/post-deployment security shorthand as a rule. Azure resources may incur charges. This review read the lab and did not execute it.
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|

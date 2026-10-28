@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # AZ-305 Designing Microsoft Azure Infrastructure Solutions Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-305-coverage-record). The [official AZ-305 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-305) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-305-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305) is authoritative.
 
 **Current baseline:** Skills measured as of April 17, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
 **Certification prerequisite:** Azure Administrator Associate is required for the Azure Solutions Architect Expert certification; it is not a prerequisite merely to sit AZ-305.<br>
 **Official source:** [AZ-305 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305)
 
@@ -142,6 +142,10 @@ An Azure role assignment combines principal, role definition, and scope. The [Az
 
 For hybrid/on-premises access, first identify whether the target trusts Active Directory Domain Services, Microsoft Entra ID, certificates, Kerberos, an application identity provider, or another protocol. Synchronization does not make two authorization systems identical. Consider authentication availability during WAN or cloud outages and how privileged access is recovered.
 
+#### Worked on-premises authorization decision
+
+An employee must reach an on-premises IWA web application without granting broad network access. Consider Microsoft Entra Application Proxy with preauthentication and the application's supported Kerberos constrained delegation path. Trace Entra sign-in/Conditional Access, app assignment, private network connector, constrained delegation to the specific SPN, then the application's own authorization. The [KCD architecture](https://learn.microsoft.com/en-us/entra/architecture/auth-kcd) describes how the connector obtains the user's Kerberos token; delegation is a privileged AD configuration and must be scoped. For an SMB share reached over a private network, retain AD/Kerberos plus share/NTFS authorization instead of assuming an Azure Contributor assignment authorizes file reads. **Answer check:** successful Entra authentication with denied backend access calls for application/Kerberos/ACL evidence; expanding Azure management RBAC is the wrong plane. Recheck supported identity mapping, connector redundancy and licensing.
+
 #### Secrets, certificates, and keys
 
 [Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/overview) centralizes supported secret, key, and certificate operations. Design includes:
@@ -256,6 +260,12 @@ Classify the movement first:
 Do not choose only by volume. Consider delivery semantics, ordering scope, replay, retention, dead lettering, duplicate handling, back pressure, protocol, network path, schema evolution, and operational ownership. Consumers should be idempotent whenever delivery can repeat.
 
 For analysis, decide whether the workload is transactional, near-real-time operational analytics, lake/lakehouse, warehouse/BI, log/time-series analysis, or data science. Separate storage and compute when that improves scale/cost, but account for data movement, governance, lineage, concurrency, freshness, and serving requirements.
+
+#### Worked analysis-platform recommendation
+
+For daily finance aggregations over curated relational facts, compare a warehouse with governed SQL/BI serving against repeatedly scanning the live transaction database. For mixed files requiring Spark engineering/data-science work, compare a lakehouse. For high-rate operational events and time-window KQL exploration, compare an eventhouse or Azure Data Explorer rather than assuming a business-message queue is an analytical store. The current [Fabric analytical-store decision guide](https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/fabric-analytical-data-stores) distinguishes warehouses, lakehouses, eventhouses and SQL databases; it is a concrete option set, not a claim that every Azure analytical solution must use Fabric.
+
+Record ingestion freshness, transformations, serving/query language, concurrency, governance, region, capacity/cost and recovery. **Answer check:** a pipeline can move the data but does not decide the analytical serving model; a lakehouse is not automatically the least-operations answer for a simple SQL reporting team. Choose from requirements and validate the exact feature matrix.
 
 #### Domain failure modes
 
@@ -483,7 +493,7 @@ A private endpoint is an interface for a service subresource. It does not by its
 
 For API versions released after March 31, 2026, [new virtual networks default to private subnets](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access). Existing VNets are not automatically changed. Specify NAT Gateway, applicable Load Balancer outbound rules or a designed firewall/NVA egress path and verify DNS, routing and required public dependencies. A private endpoint for one service does not provide general internet egress.
 
-[Front Door classic retires March 31, 2027](https://learn.microsoft.com/en-us/azure/frontdoor/migrate-tier). Migration to Standard/Premium requires readiness checks such as HTTPS for custom domains and compatible affinity settings. The documented flow avoids DNS changes before/during migration but requires the DNS update afterward; retain verification and rollback decision points appropriate to the actual migration stage.
+**VERIFY CURRENT:** [Front Door classic migration guidance](https://learn.microsoft.com/en-us/azure/frontdoor/migrate-tier) separates **March 31, 2027 service retirement** from the **March 31, 2028 deadline to cut over migrated classic endpoints**. From April 1, 2028, those classic endpoints may stop functioning. Migration requires compatible HTTPS/affinity settings; DNS changes follow migration. Inventory both custom-domain DNS records and applications that directly use the classic default hostname. The former must point to the new endpoint; the latter need the hostname replaced in clients/integrations. Successful profile migration alone does not complete that dependency cleanup. Record migration validation, endpoint cutover and rollback decisions as separate evidence.
 
 ---
 
@@ -797,6 +807,10 @@ You are approaching readiness when you can:
 ## Places to learn
 
 This is a curated starting set, not a complete list. Do **not** consume every resource. Pick one structured spine, use documentation and architecture case studies for weak objectives, complete design/lab work, and add one assessment source. Time estimates are planning ranges, not guarantees; playback speed, prior Azure experience, exercises, lab cleanup, and vendor changes matter. Verify the current blueprint before buying or starting a course.
+
+### Focused architecture failure worksheet
+
+Use [Well-Architected failure mode analysis](https://learn.microsoft.com/en-us/azure/well-architected/reliability/failure-mode-analysis) to trace one critical request from ingress through identity, compute, data and an external dependency. For each component, record the user impact, blast radius, strong/weak dependency, detection signal, degraded mode and recovery objective. Compare an identity outage with a regional data outage; state what existing requests and new deployments can still do. **About 75–120 minutes**, estimated for selected article reading and an original flow diagram/failure matrix, rather than a vendor-published duration. This produces a design hypothesis and a future test plan; it does not demonstrate availability, recovery time or successful fault injection. The guidance is relevant to business continuity and infrastructure design; current service documentation still controls individual capabilities.
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
