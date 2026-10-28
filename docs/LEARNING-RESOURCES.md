@@ -465,6 +465,14 @@ No exact Pluralsight AB-100 certification path was verified during the August 31
 
 Resource details from the [AI-500 guide](../guides/AI-500-designing-implementing-multi-agent-ai-solutions.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
+#### October 28 learning route and evidence task
+
+The [official AI-500 course](https://learn.microsoft.com/en-us/training/courses/ai-500t00) still lists **four instructor-led days** with no future-availability notice in the inspected overview; actual class delivery remains unverified. [Clint Bonnett’s Foundry course](https://www.pluralsight.com/courses/microsoft-foundry-building-intelligent-applications) is a 1 hour 2 minute beginner introduction, last updated February 13, 2026. Use it for a focused RAG/workflow/evaluation refresher, then return to the official paths and this guide’s production-failure labs. The existing two engineering articles remain useful for written design work; APIs, language parity and preview integration need current checks before running code.
+
+**Original article-to-evidence task (about 45–75 minutes, editorial estimate):** Choose one article’s session, memory or recovery example. Record its promised behavior, documented limitation, application-owned responsibility and a counterexample. Give each a required trace or stored record and mark which evidence was actually observed. Keep code inspection separate from an executed restart or tenant-isolation test.
+
+**Answer checkpoint:** A clean asynchronous shutdown does not prove crash durability; a stored thread ID does not authorize a caller; a completed run can still fail the business-quality test.
+
 #### October 28 learning-resource check
 
 Additional options and access updates; choose relevant resources rather than consuming every route. New course availability, class delivery and licensing are **VERIFY CURRENT**. Published days describe instructor-led scope, not measured self-study time.
@@ -795,6 +803,14 @@ Treat blogs as context and discovery. Use the current product references to deci
 
 Resource details from the [MS-102 guide](../guides/MS-102-microsoft-365-administrator.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
+#### October 28 learning route and evidence task
+
+The [official MS-102 course](https://learn.microsoft.com/en-us/training/courses/ms-102t00) still publishes **five instructor-led days**. The [Pluralsight path](https://www.pluralsight.com/paths/microsoft-365-certified-administrator-expert-microsoft-365-administrator-ms-102) still lists five 2025 courses totaling 7 hours 44 minutes (header rounded to 8 hours). These are content-consumption figures; they do not include tenant preparation, negative tests or source review. Choose one route and use the April 2026 objective map to identify gaps. Existing blocked book/Udemy details remain historical; class availability and retirement timing require their own current checks.
+
+**Original resource-gap audit (about 45–60 minutes, editorial estimate):** Choose one task from tenant operations, identity, Defender and Purview. Map each to a specific lesson, current product reference, lab evidence and unresolved limitation. Prioritize a missing high-impact task rather than replaying a familiar whole course.
+
+**Answer checkpoint:** Completing every listed video does not establish readiness if you cannot produce the task’s permitted/denied result and recovery evidence. A dated public syllabus establishes advertised coverage, not current lesson accuracy.
+
 This is a curated starting point, **not a complete list**. Do not try to consume every item. Pick the format and depth that work for you, use the current official blueprint as the coverage checklist, and reserve substantial time for tenant practice, negative tests, troubleshooting, and review. Because MS-102 retires November 30, 2026, verify that any planned course and exam date leave enough recovery time for rescheduling.
 
 #### Blog readings with practical tasks
@@ -829,6 +845,14 @@ No exact current Whizlabs MS-102 product page was established; none is inferred 
 ### AB-650 — Microsoft 365 and AI Services Administrator Associate (beta)
 
 Resource details from the [AB-650 guide](../guides/AB-650-ai-services-administrator-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+#### October 28 learning route and evidence task
+
+The [official seven-lab set](https://microsoftlearning.github.io/AB-650T00_administer_microsoft_365_and_ai_services/) offers **450 minutes** of publisher-estimated practice. Read its [environment guide](https://microsoftlearning.github.io/AB-650T00_administer_microsoft_365_and_ai_services/Instructions/Labs/00-getting-started.html) first: the ordered labs assume one prepared Microsoft 365 E7 tenant with seeded identities, content and agents; public instructions do not include that tenant or its licenses. No Azure subscription is needed by this lab set. **VERIFY CURRENT:** the course page still announces November 13 availability; a visible repository does not prove a class or hosted lab can be booked. Allow extra time for setup, propagation and independent testing.
+
+**Original evidence worksheet (about 30–45 minutes beyond the published lab time, editorial estimate):** For the governance lab, record one identity, registry/tool-approval decision and usage signal. Give each row an object ID, acting persona, timestamp, source period and provenance: live observed, seeded sample, pending or unavailable. Keep Conditional Access report-only as the instructions require.
+
+**Answer checkpoint:** An empty or failed activity card is not proof of zero use or zero risk. Seeded practice evidence can support reasoning, but must not be recorded as a live incident or independently observed product result.
 
 #### October 28 learning-resource check
 
@@ -992,7 +1016,15 @@ Practice Assessment and video/partner sites returned public shells; no interacti
 
 Resource details from the [DP-600 guide](../guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary route, build a Fabric solution, and add only resources that close measured gaps. Reconcile every older source with the July 21, 2026 blueprint, especially Direct Lake on OneLake versus SQL analytics endpoint, OneLake security, Real-Time hub, AI-ready data, Fabric IQ and current endorsement/lifecycle behavior.
+#### October 28 learning route and evidence task
+
+For focused practice, use [Secure data access in Microsoft Fabric](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/19-secure-data-access.html) (**45 published minutes**) and [Prepare a semantic model for AI](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/30-prepare-model-ai.html) (**30 published minutes**). The security exercise assumes two personas and paid/trial capacity; the AI exercise explicitly requires paid capacity and excludes trial Copilot. **VERIFY CURRENT:** licensing, Desktop prerequisites, Q&A/AI dependencies and UI before execution. Heini Ilmarinen and Stephanie Bruno’s [April 23 Reactor orientation](https://developer.microsoft.com/en-us/reactor/events/26973/) has a one-hour agenda; its recording was not watched and predates the October blueprint. Choose it only if a PL-300-to-DP-600 learning map helps.
+
+**Original comparison sheet (about 30–45 minutes beyond the published lab estimates, editorial estimate):** For a permission test and an AI-answer test, record actor, endpoint, source/model version, expected rows or measure, observed result and evidence status. A one-account walkthrough must mark the second-persona denial untested. For AI, use at least one ambiguous business term and one question the model cannot answer.
+
+**Answer checkpoint:** Schema simplification and model approval improve discoverability/context; they do not by themselves prove access isolation or answer correctness. Retain a separately observed result for each.
+
+This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary route, build a Fabric solution, and add only resources that close measured gaps. Reconcile every older source with the October 19, 2026 blueprint, especially Direct Lake on OneLake versus SQL analytics endpoint, OneLake security, Real-Time hub, AI-ready data, Fabric IQ and current endorsement/lifecycle behavior.
 
 The September 1 review recorded five official paths: [analytics data stores](https://learn.microsoft.com/en-us/training/paths/explore-analytics-data-stores/) (4h34), [transform analytics data](https://learn.microsoft.com/en-us/training/paths/design-transform-analytics-data/) (5h14), [semantic models](https://learn.microsoft.com/en-us/training/paths/design-manage-semantic-models-fabric/) (6h21), [AI-ready analytics data](https://learn.microsoft.com/en-us/training/paths/prepare-ai-ready-analytics-data/) (3h50), and [security/governance](https://learn.microsoft.com/en-us/training/paths/secure-govern-analytics-data/) (3h21), totaling **23 hours 20 minutes**. September 27 checks verified the public path/module pages, but those pages did not expose a fresh total; treat these runtimes as historical planning metadata.
 
@@ -1019,7 +1051,15 @@ No exact current Whizlabs or MeasureUp DP-600 product was independently verified
 
 Resource details from the [DP-700 guide](../guides/DP-700-implementing-data-engineering-solutions-microsoft-fabric.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Pick one primary route, build a complete Fabric solution, then add documentation, videos or practice questions only for measured gaps. Reconcile older courses with the July 21, 2026 blueprint, especially Airflow workspace settings, OneLake security, query acceleration, current Git/database-project behavior and Fabric monitoring.
+#### October 28 learning route and evidence task
+
+Use the official [Monitoring hub lab](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/18-monitor-hub.html) (**30 published minutes**) with the [Fabric access-control lab](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/19-secure-data-access.html) (**45 published minutes**). Both require paid/trial Fabric capacity; the access exercise needs a second persona for independent permission evidence. The [Pluralsight path](https://www.pluralsight.com/paths/implementing-data-engineering-solutions-using-microsoft-fabric-dp-700) still contains three 2025 courses totaling 6 hours 15 minutes. Use those for foundations and current written labs/documentation for the October baseline; runtime totals exclude setup, failure injection and review.
+
+**Original monitoring extension (about 30–45 minutes beyond the lab, editorial estimate):** Compare two successful runs with deliberately different source inputs. Record run ID, status, submitted identity, input/output counts, watermark or checkpoint, and the business reconciliation. In a separate permitted test, record one denied access path or unavailable signal.
+
+**Answer checkpoint:** A Succeeded activity records completion of that activity; it does not prove source completeness, idempotency or unchanged business results. A filtered monitoring view can hide the failed run you need to investigate.
+
+This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Pick one primary route, build a complete Fabric solution, then add documentation, videos or practice questions only for measured gaps. Reconcile older courses with the October 19, 2026 blueprint, especially Airflow workspace settings, OneLake security, query acceleration, current Git/database-project behavior and Fabric monitoring.
 
 The five official paths below retain the **September 1 duration estimates**; September 27 public path pages exposed module lists but did not independently reverify those totals. They are [ingest data](https://learn.microsoft.com/en-us/training/paths/ingest-data-with-microsoft-fabric/) (4h49), [lakehouse](https://learn.microsoft.com/en-us/training/paths/implement-lakehouse-microsoft-fabric/) (7h21), [Real-Time Intelligence](https://learn.microsoft.com/en-us/training/paths/explore-real-time-analytics-microsoft-fabric/) (5h31), [data warehouse](https://learn.microsoft.com/en-us/training/paths/work-with-data-warehouses-using-microsoft-fabric/) (6h38), and [manage a Fabric environment](https://learn.microsoft.com/en-us/training/paths/manage-microsoft-fabric-environment/) (3h30), totaling **27 hours 49 minutes**.
 
@@ -1029,7 +1069,7 @@ The five official paths below retain the **September 1 duration estimates**; Sep
 | Five official paths from [DP-700T00](https://learn.microsoft.com/en-us/training/courses/dp-700t00) | Public | 27h49 historical estimate; allow 50–90 hours with exercises/notes |
 | DP-700T00 instructor-led course | Paid/partner delivery | 4 days listed |
 | [Microsoft DP-700 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/practice/assessment?assessment-type=practice&assessmentId=1704375541&practice-assessment-type=certification) | Public | 45–75 minutes per attempt plus source review |
-| [Pluralsight DP-700 path](https://www.pluralsight.com/paths/implementing-data-engineering-solutions-using-microsoft-fabric-dp-700) | Paid | 6h15 across 3 courses plus practice exam; 2025 content, supplement July 2026 |
+| [Pluralsight DP-700 path](https://www.pluralsight.com/paths/implementing-data-engineering-solutions-using-microsoft-fabric-dp-700) | Paid | 6h15 across 3 courses plus practice exam; 2025 content; supplement the current October outline |
 | [O’Reilly DP-700 bootcamp](https://www.oreilly.com/live-events/microsoft-fabric-data-engineer-associate-bootcamp-dp-700/0642572016304/) with Nikola Ilic | Paid/live | Two sessions; about 8 hours from the public agenda; verify current availability and dates |
 | [O’Reilly DP-700 Study Guide early release](https://www.oreilly.com/library/view/microsoft-fabric-data/0642572319250/) by Michael John Pena | Paid/early release | Earlier listing: 400 pages / 3h22 and December 2027 publication; access blocked on recheck, contents not final |
 | [Microsoft Press DP-700 video](https://www.microsoftpressstore.com/store/exam-dp-700-implementing-data-engineering-solutions-9780135497517) by Andy Cutler | Paid | Runtime not exposed on the public page; published February 2026, supplement July changes |
@@ -1085,6 +1125,14 @@ The attributed Microsoft Q&A timeline update above is operational reading for mi
 
 Resource details from the [PL-400 guide](../guides/PL-400-microsoft-power-platform-developer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
+#### October 28 learning route and evidence task
+
+The [official PL-400 course](https://learn.microsoft.com/en-us/training/courses/pl-400t00) still lists **five days**. The [Pluralsight path](https://www.pluralsight.com/paths/microsoft-power-platform-developer-pl-400) publishes nine courses/about 15 hours, with 2022–2023 dates. Its body also calls PL-400 “App Maker”; use the official blueprint for credential identity and scope. This path can offer durable code/extension explanations, but the date and inconsistent label make a current gap map essential. Keep the existing official lab repository as selective practice; the AB-400 successor-training note already supplies the transition route.
+
+**Original extension-review exercise (about 30–45 minutes, editorial estimate):** Take one older lesson’s plug-in, connector or event scenario and create an implementation decision card: objective, client/server trust boundary, execution identity, transaction boundary, retry/duplicate risk, 2026 documentation and independent test. Classify the Dataverse Skills blog’s generated mutations by these same fields before accepting them.
+
+**Answer checkpoint:** An AI tool selecting the correct API does not prove the caller has permission, the mutation belongs in the right solution, or an external side effect rolls back with Dataverse.
+
 #### October 28 learning-resource check
 
 Additional options and access updates; choose relevant resources rather than consuming every route. New course availability, class delivery and licensing are **VERIFY CURRENT**. Published days describe instructor-led scope, not measured self-study time.
@@ -1094,7 +1142,7 @@ Additional options and access updates; choose relevant resources rather than con
 | [AB-400T00 successor training](https://learn.microsoft.com/en-us/training/courses/ab-400t00) | Public outline; class/provider access may be paid | **3 published days**; adjacent AB-400 preparation after PL-400T00 courseware retirement on October 30; not proof of identical exam coverage |
 
 
-This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one current primary path, implement the ten labs or equivalent work, and use other resources only to close measured gaps. Reconcile every resource with the March 19, 2026 blueprint; older courses can still teach fundamentals but may use prior weights, deprecated tooling, or objectives that have moved.
+This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one current primary path, implement the ten labs or equivalent work, and use other resources only to close measured gaps. Reconcile every resource with the current October 16 published outline and the appointment code; older courses can still teach fundamentals but may use prior weights, deprecated tooling, or objectives that have moved.
 
 The nine self-paced paths recorded during the September 1 review cover advanced canvas apps, expressions/Dataverse flows, developer foundations, client scripting/commands, PCF, Dataverse extension, Azure integration, custom connectors, and ALM. Their recorded durations totaled about **25 hours**; the September 27 public course shell reconfirms five days of instructor-led delivery but does not independently reverify that path-duration sum. Allow **50–90 hours** with coding, tenant setup, failure testing, and notes.
 
@@ -1217,6 +1265,14 @@ The earlier O'Reilly, MeasureUp and Whizlabs gaps were not exhaustively rechecke
 ### AB-210 — Accelerating Sales Pipelines with AI in Dynamics 365
 
 Resource details from the [AB-210 guide](../guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+#### October 28 learning route and evidence task
+
+The current [AB-210 course](https://learn.microsoft.com/en-us/training/courses/ab-210t00) still lists **three instructor-led days**. Its four paths retain 13 modules: 3 for configuration, 3 for leads, 4 for deals and 3 for extensions. Direct path bodies did not expose a fresh combined runtime, so keep 12 hours 3 minutes as historical metadata. A current training outline can still teach a retiring feature: the [deal-execution path](https://learn.microsoft.com/en-us/training/paths/win-deals-ai-sales/) continues to name Sales Close Agent. Use the blueprint for required learning and this guide’s dated lifecycle evidence for whether a new tenant implementation remains appropriate.
+
+**Original worksheet (about 30–45 minutes, editorial estimate):** Select three lesson actions. Record the objective, intended business outcome, record/identity boundary, product-lifecycle evidence, safe substitute/tabletop action and observable completion evidence. Put the retiring-agent action beside a current deployment action so their purposes remain explicit.
+
+**Answer checkpoint:** A lesson title is learning guidance, not evidence that the feature can still be provisioned. A valid worksheet can retain exam reasoning while marking a tenant action unavailable or tabletop-only.
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, configure a synthetic lead-to-cash environment, and add resources only for measured gaps.
 
@@ -1657,6 +1713,14 @@ This guide is an independent synthesis of public sources. It does not reproduce 
 
 Resource details from the [DP-300 guide](../guides/DP-300-administering-microsoft-azure-sql-solutions.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
+#### October 28 learning route and evidence task
+
+The current [DP-300 course](https://learn.microsoft.com/en-us/training/courses/dp-300t00) is titled **Implement scalable database solutions using Azure SQL** and still lists four instructor-led days. The [Pluralsight path](https://www.pluralsight.com/paths/microsoft-certified-azure-database-administrator-associate) lists five courses totaling 9 hours 11 minutes plus a 30-minute lab (header rounded to 10 hours); its latest displayed course is September 14, 2026. No dedicated planning/deployment course title is visible, so use the October 27 blueprint and targeted official material to check that gap. The compaction blog now redirects to a GA headline, but its body was unavailable; current product documentation governs the feature status.
+
+**Original course-gap worksheet (about 30–45 minutes, editorial estimate):** Map one planning decision, one security denial, one measured performance regression and one recovery proof to the chosen route. For each, record an artifact you can produce without the lesson instructions and a current-source check for older tooling or maintenance advice.
+
+**Answer checkpoint:** Course runtime measures viewing scope, not demonstrated administration. A reachability result or changed announcement title is not a tested maintenance or recovery result.
+
 This is **not a complete list**, and it is not meant to be consumed end to end. Pick the resources and formats that work for you. A practical plan is the official blueprint/documentation, one primary structured course or book, hands-on labs, and one legitimate practice assessment used to find weak domains. Avoid any provider selling recalled live questions, “dumps,” VCE files, or guarantees based on leaked content.
 
 Estimated times describe content consumption or a reasonable assessment session, not total preparation. Add lab time, notes, current-document checks, spaced review and remediation. Provider access, catalog, duration, price and April 2026 alignment can change; verify them before purchase. Older SQL content can teach durable engine concepts, but reconcile Azure Data Studio retirement, current migration paths, database watcher, Fabric SQL, service tiers, security and HA/DR with current official documentation.
@@ -1665,7 +1729,7 @@ Estimated times describe content consumption or a reasonable assessment session,
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
-| [Official DP-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300) | Free; April baseline and observed October 27 revision | 45–75 min to map; 10–15 min weekly | Coverage checklist, weights, changes and official links |
+| [Official DP-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300) | Free; current October 27 outline, earlier April bytes archived | 45–75 min to map; 10–15 min weekly | Coverage checklist, weights, changes and official links |
 | [Azure Database Administrator Associate page](https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/) | Free | 20–30 min; recheck before scheduling | Current status, 100-minute exam, practice and renewal links |
 | [DP-300T00 course and self-directed modules](https://learn.microsoft.com/en-us/training/courses/dp-300t00) | Modules free; instructor-led access varies | **4 instructor-led days**; plan 35–55 hr self-paced with labs | Structured official path across all five domains |
 | [Microsoft free DP-300 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-300/practice/assessment?assessment-type=practice&assessmentId=58) | Free; sign-in may be required | 45–90 min per attempt; 4–8 hr with remediation | Baseline, then diagnose weak objectives from explanations |
@@ -1681,7 +1745,7 @@ Estimated times describe content consumption or a reasonable assessment session,
 | [O'Reilly Administering Microsoft Azure SQL video](https://www.oreilly.com/videos/administering-microsoft-azure/0636920934721/) | Paid subscription; prior listing: Mikey Bronowski, September 2024; blocked on recheck | **1h 44m** plus 2–4 hr practice/docs | Compact overview, not sufficient alone; older tooling/monitoring needs reconciliation |
 | [O'Reilly DP-300 certification-prep catalog](https://www.oreilly.com/products/certification-prep.html) | Paid; catalog lists DP-300 book, guide, practice and on-demand formats | Verify selected item; plan 2–4 hr per practice attempt plus review | Use the current item page to confirm version and blueprint alignment |
 | [Udemy DP-300 course by Phillip Burton](https://www.udemy.com/course/dp-300-administering-relational-databases-azure-dba/) | Paid; historical listing claimed April 2026 alignment and 173 lectures; blocked on recheck | **17h 40m** video; plan 25–40 hr with labs | Historical runtime/scope only; current content and availability unverified |
-| [Whizlabs DP-300](https://www.whizlabs.com/microsoft-azure-certification-dp-300/) | Paid; packaging can include course/practice/labs | Verify current displayed duration/question/lab count; plan 10–25 hr selectively | Map coverage to April 2026 blueprint and use practice diagnostically |
+| [Whizlabs DP-300](https://www.whizlabs.com/microsoft-azure-certification-dp-300/) | Paid; packaging can include course/practice/labs | Verify current displayed duration/question/lab count; plan 10–25 hr selectively | Map coverage to the October 27, 2026 blueprint and use practice diagnostically |
 | [MeasureUp DP-300 practice test](https://www.measureup.com/microsoft-practice-test-dp-300-administering-relational-databases-on-microsoft-azure.html) | Paid | Estimate 4–8 hr across baseline, explanation review and retest | Public listing: 160 questions (34+34+38+23+31), last update December 2022. Current objective alignment unverified; use diagnostically alongside current docs |
 
 #### Supplemental experts and channels
@@ -1744,13 +1808,21 @@ This guide is an independent synthesis of public sources. It does not reproduce 
 
 Resource details from the [DP-420 guide](../guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
+#### October 28 learning route and evidence task
+
+The [official DP-420 course](https://learn.microsoft.com/en-us/training/courses/dp-420t00) is now **Build AI applications with Azure Cosmos DB**, still four instructor-led days. The [Pluralsight path](https://www.pluralsight.com/paths/designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db-dp-420) still advertises the older five-domain structure and 9 hours, with its latest displayed update in January 2026. Use it selectively for database foundations and map AI retrieval, memory and authorization gaps against the October 6 blueprint. The Agent Kit article’s improved constructor is now balanced; keep its load-distribution caveat rather than repeating an unsupported syntax defect.
+
+**Original retrieval-resource worksheet (about 45–60 minutes, editorial estimate):** For a two-tenant corpus, record partition-routing choice, vector-shard choice, authenticated scope, relevance target and RU/latency measurement. Add one skewed-tenant counterexample to a proposed year-based key. Separate an article’s measured example from the result your own workload would need to demonstrate.
+
+**Answer checkpoint:** Partition routing and vector-index sharding solve different parts of the request path; neither replaces application authorization. A benchmark percentage is not a guaranteed improvement.
+
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the formats and gaps that work for you: one current primary path, hands-on labs, targeted documentation, and one ethical readiness check are usually more useful than passively completing every course. Times are page-published durations where available; otherwise they are clearly labeled estimates. Catalogs, durations, prices, access, and blueprint alignment change—verify them before purchase. Practice products should teach and explain; do not use brain dumps or material claiming real exam questions.
 
 #### Start with Microsoft
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
-| [Official DP-420 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) | Public | 45–75 min for blueprint mapping | Live page now displays October 6 scope; compare your exam date with this guide's retained July baseline |
+| [Official DP-420 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) | Public | 45–75 min for blueprint mapping | Current October 6 scope; July organization is historical foundation |
 | [DP-420 Microsoft Learn course page](https://learn.microsoft.com/en-us/training/courses/dp-420t00) | Public self-study; paid instructor option | 4 instructor-led days; roughly 25–40 hours self-study plus labs (estimate) | Primary structured path across the published domains |
 | [Azure Cosmos DB documentation](https://learn.microsoft.com/en-us/azure/cosmos-db/) | Public | 15–30 hours selectively (estimate) | Current product truth, limits, SDK guidance and deep remediation by objective |
 | Microsoft free Practice Assessment, linked on the [credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/) | Public; sign-in may be required | 45–90 min per attempt plus review (estimate) | Diagnostic baseline and gap review; explanations are more valuable than memorizing answers |
@@ -1761,10 +1833,10 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 | Resource | Access | Estimated time | Best use and freshness note |
 |---|---|---:|---|
-| [Pluralsight DP-420 path](https://www.pluralsight.com/paths/designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db-dp-420) | Paid/trial depending plan | 9 hours published, plus labs/review | Five-domain path with a practice exam; page showed course updates through January 2026. Gap-check the July Fabric/time-travel and blueprint additions. |
-| [O'Reilly Azure Cosmos DB Developer Specialty course](https://www.oreilly.com/videos/azure-cosmos-db/0636920986164/) | Paid subscription/trial | 4h34m published, plus practice | Mohit Batra, January 2025; broad exam course with quizzes. Reconcile legacy Synapse Link and July 2026 changes. |
+| [Pluralsight DP-420 path](https://www.pluralsight.com/paths/designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db-dp-420) | Paid/trial depending plan | 9 hours published, plus labs/review | Five-domain path with a practice exam; page showed course updates through January 2026. Gap-check all October AI retrieval, memory, security and analytics objectives. |
+| [O'Reilly Azure Cosmos DB Developer Specialty course](https://www.oreilly.com/videos/azure-cosmos-db/0636920986164/) | Paid subscription/trial | 4h34m published, plus practice | Mohit Batra, January 2025; broad exam course with quizzes. Reconcile legacy Synapse Link and the current October AI-focused outline. |
 | [O'Reilly DP-420 crash course](https://www.oreilly.com/live-events/exam-dp-420-microsoft-azure-cosmos-db-developer-crash-course/0636920079751/) | Paid; schedule/access varies | Four hours published when scheduled | Reza Salehi live overview; verify next event dates and treat older “Core/SQL API” wording as API for NoSQL terminology. |
-| [Udemy DP-420 hands-on course](https://www.udemy.com/course/azure-cosmosdb-database/) | Paid; price varies | 6h47m / 64 lectures published, plus labs | Page showed July 2026 update and many demos, but also an older “October 2023 topics” claim; gap-check every July 2026 addition. |
+| [Udemy DP-420 hands-on course](https://www.udemy.com/course/azure-cosmosdb-database/) | Paid; price varies | 6h47m / 64 lectures published, plus labs | Page showed July 2026 update and many demos, but also an older “October 2023 topics” claim; gap-check every current October objective. |
 | [Microsoft Azure Cosmos DB YouTube channel](https://www.youtube.com/@AzureCosmosDB) | Public | 3–10 hours selectively (estimate) | Product announcements, engineering explanations and demos; select videos by weak objective and date. |
 | [Microsoft Reactor YouTube channel search for Cosmos DB](https://www.youtube.com/@MicrosoftReactor/search?query=Cosmos%20DB) | Public | 2–8 hours selectively (estimate) | Workshops and developer sessions; verify product version and avoid treating any one playlist as full exam alignment. |
 | [John Savill Azure Cosmos DB channel search](https://www.youtube.com/@NTFAQGuy/search?query=Cosmos%20DB) | Public | 1–4 hours selectively (estimate) | Supplemental Azure architecture explanations; not a complete DP-420 course. Check video descriptions for linked whiteboards/resources. |
@@ -1773,8 +1845,8 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 | Resource | Access | Estimated time | Best use and caution |
 |---|---|---:|---|
-| [Microsoft Press DP-420 video by Tim Warner](https://www.microsoftpressstore.com/store/exam-dp-420-designing-and-implementing-cloud-native-9780137951222) | Paid | 11+ hours published | Hands-on 2023 course. Strong foundation, but reconcile all July 2026 objectives, Fabric mirroring, hierarchical keys, and current product notices. |
-| [Whizlabs DP-420 training and practice](https://www.whizlabs.com/microsoft-azure-certification-dp-420/) | Paid; offering varies | Approximately 8–15 hours for course/labs/practice (estimate; page did not expose reliable counts) | Additional labs and readiness checks; verify counts, update date and July 2026 alignment before purchase. |
+| [Microsoft Press DP-420 video by Tim Warner](https://www.microsoftpressstore.com/store/exam-dp-420-designing-and-implementing-cloud-native-9780137951222) | Paid | 11+ hours published | Hands-on 2023 course. Strong foundation, but reconcile all current October 6 objectives, Fabric mirroring, hierarchical keys, and current product notices. |
+| [Whizlabs DP-420 training and practice](https://www.whizlabs.com/microsoft-azure-certification-dp-420/) | Paid; offering varies | Approximately 8–15 hours for course/labs/practice (estimate; page did not expose reliable counts) | Additional labs and readiness checks; verify counts, update date and October 2026 alignment before purchase. |
 | [MeasureUp DP-420 practice test](https://www.measureup.com/microsoft-practice-test-dp-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.html) | Paid; demo available | 2–4 hours per full attempt and explanation review (estimate) | Page listed 120 questions but a June 2022 release and older objective terminology. Use for reasoning practice only after verifying current alignment. |
 | [Udemy DP-420 topic catalog](https://www.udemy.com/topic/microsoft-dp-420/) | Paid catalog; price varies | Varies | Compare recent course/practice options, instructor updates, previews and explanations. Reject any product claiming leaked/real exam content. |
 | [Azure Cosmos DB design-pattern samples](https://github.com/Azure-Samples/cosmos-db-design-patterns) | Public | 6–15 hours selectively (estimate) | Implement and benchmark patterns such as hierarchical partitioning; turn examples into measured labs rather than copying blindly. |
@@ -1789,11 +1861,11 @@ This is **not a complete list**, and it is not a recommendation to consume every
 6. Use one paid practice product only if explanations and current-objective alignment add value.
 7. Recheck the official study guide, credential page, lifecycle, support notices, limits and pricing immediately before the exam.
 
-For October candidates, add Labs 9–10 and targeted C#/Python practice. Allow an estimated 12–20 additional hours for the new material and evidence collection, with more time if embeddings, Fabric or authorization testing are new to you. Older course durations above are historical catalog observations; three paid pages were access-blocked during this review and other catalog access does not prove lesson access or October alignment.
+For the current October outline, include Labs 9–10 and targeted C#/Python practice. Allow an estimated 12–20 additional hours for the new material and evidence collection, with more time if embeddings, Fabric or authorization testing are new to you. Older course durations above are historical catalog observations; three paid pages were access-blocked during this review and other catalog access does not prove lesson access or October alignment.
 
 #### Focused blog reading
 
-- [Introducing the Azure Cosmos DB Agent Kit](https://devblogs.microsoft.com/cosmosdb/azure-cosmos-db-agent-kit-ai-coding-assistants/), **Sajeetharan Sinnathurai, Microsoft, January 22, 2026**. Estimate 20–30 minutes with the current repository. Read for a review workflow, then identify which suggestions need measurements. Its sample constructor has an unmatched brace, and a tenant/year key can still concentrate current-year writes. Treat examples and performance claims as proposals to test; the kit was not installed or executed here.
+- [Introducing the Azure Cosmos DB Agent Kit](https://devblogs.microsoft.com/cosmosdb/azure-cosmos-db-agent-kit-ai-coding-assistants/), **Sajeetharan Sinnathurai, Microsoft, January 22, 2026**. Estimate 20–30 minutes with the current repository. Read for a review workflow, then identify which suggestions need measurements. The constructor in the current public body is balanced; the earlier syntax-defect observation is historical. A tenant/year key can still concentrate current-year writes. Treat examples and performance claims as proposals to test; the kit was not installed or executed here.
 - [Sharded DiskANN for multitenant vector search](https://devblogs.microsoft.com/cosmosdb/sharded-diskann-focused-vector-search-for-better-performance-and-lower-cost/), **James Codella, Shivam Atri and Haiyang Xu, Microsoft, April 24, 2025**. Estimate 25–40 minutes with current search docs. Useful for separating partition routing from index sharding and comparing recall, latency and RU. Published benchmark gains are workload-specific; some query samples put `WHERE` after `ORDER BY`, so use current query syntax. Exercise: design an authorized-tenant comparison with identical data and a held-out relevance set. Samples and benchmark were not executed here.
 
 ---
@@ -1804,7 +1876,15 @@ For October candidates, add Labs 9–10 and targeted C#/Python practice. Allow a
 
 Resource details from the [DP-750 guide](../guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is **not a complete list**, and it is not a recommendation to consume everything. Pick a current primary path, build the labs, and use targeted references/practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-750 is new enough that several vendors had no dedicated current course on the pages found; broad Databricks material must be mapped to the March baseline and separately checked against the October revision. Avoid dumps or anything claiming real exam questions.
+#### October 28 learning route and evidence task
+
+The [official DP-750 exercises](https://microsoftlearning.github.io/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/) now list setup, 13 numbered labs and cleanup, with **9 hours 20 minutes** in summed publisher estimates. They assume a Premium workspace and real compute; public instructions do not include cloud credits. [Lab 12: development lifecycle](https://microsoftlearning.github.io/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/Instructions/Labs/12-implement-development-lifecycle-processes-in-azure-databricks.html) has a 45-minute index estimate and separates notebook tests from the local PowerShell CLI. Its deployment uses placeholder notebooks, so successful resource creation alone does not validate the transformation. Allow extra time for setup, current CLI compatibility and independent tests.
+
+**Original deployment extension (about 45–90 minutes beyond the published lab, editorial estimate):** Keep a snapshot of the placeholder plan, then implement a small synthetic transformation with independently calculated expected output. Record the Git revision, test result, target, execution identity, job run and output reconciliation before considering the deployed job complete. Do not deploy to a shared production target merely to exercise the workflow.
+
+**Answer checkpoint:** A valid bundle and a job with the expected task graph prove configuration/deployment state. They do not prove that placeholder code performs the required transformation or that production permissions and data contracts work.
+
+This is **not a complete list**, and it is not a recommendation to consume everything. Pick a current primary path, build the labs, and use targeted references/practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-750 is new enough that several vendors had no dedicated current course on the pages found; broad Databricks material must be mapped to the current October 19 outline; March-only coverage remains historical. Avoid dumps or anything claiming real exam questions.
 
 #### Start with Microsoft and Databricks
 

@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # AB-210 Accelerating Sales Pipelines with AI in Dynamics 365 Study Guide
 
-> **Independent AI-assisted resource — REVIEW REQUIRED; HUMAN REVIEW PENDING.** The September 28, 2026 [deep review](../docs/research/2026-09-28-ab-210-deep-review.md) mapped all 46 detailed objectives against the unchanged official page last updated June 18, 2026. Official custom-field support and Close Agent shutdown contradictions remain unresolved. Worked examples were checked offline; tenant labs were not executed. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-210-coverage-record). The [official AB-210 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-210) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#ab-210) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-210-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-210) is authoritative.
 
 **Current baseline:** Official study guide last updated June 18, 2026; Microsoft publishes no separate skills-effective date.<br>
 **Upcoming blueprint change:** None announced, but the exam remains labeled **beta**; scope and product behavior may change before general availability.<br>
@@ -213,6 +213,14 @@ The [current setup](https://learn.microsoft.com/en-us/dynamics365/sales/configur
 
 > **Unresolved official-source conflict:** The same knowledge article’s custom-field research section says Opportunity Agent does not support custom fields and immediately instructs readers to add them. Keep that capability unverified for a required design until Microsoft clarifies it and a controlled tenant check confirms it. This does not negate separately documented Qualification Agent custom handoff criteria.
 
+### Worked example — explicit competitor data changes the research route
+
+**Confirmed — VERIFY CURRENT (October 28, 2026).** A synthetic opportunity explicitly identifies competitor North. The current [knowledge-source procedure](https://learn.microsoft.com/en-us/dynamics365/sales/configure-sqa-knowledge-source) gives that record-level competitor priority; a broader configured competitor list does not mean every listed competitor is researched. Remove the explicit competitor only in a test copy and compare the history/web-based route. Inspect source records, close descriptions and the selected competitors before treating a win-rate insight as representative of the whole market.
+
+**Proposed practice extension — not executed:** Extend the opportunity-research lab with explicit-competitor versus blank-competitor copies. Record selected competitors, supporting closed records and any missing history. Keep custom-field research optional/tabletop while the same-page contradiction remains unresolved.
+
+**Answer checkpoint:** Why can two otherwise similar opportunities produce different competitor research? Record-level competitor data can select a different route; compare inputs before blaming the model.
+
 ### Worked example 5: scope and refresh affect capacity
 
 Assume **hypothetical measured** consumption of 12 credits per initial opportunity and 3 per refresh. An initial scope of 180 opportunities costs `180 × 12 = 2,160`; refreshing 60 opportunities four times adds `60 × 4 × 3 = 720`, for **2,880**. With 3,000 allocated and a 500-credit reserve, the usable budget is 2,500: the plan exceeds it by 380. Another agent consuming 250 raises combined usage to 3,130, exceeding total allocation by 130. Reduce scope/frequency or arrange capacity before expansion. These are sample assumptions, not Microsoft rates or a prediction of billing behavior.
@@ -411,7 +419,30 @@ Field sellers need mobile updates, Teams calls, quote approval and regional anal
 
 ---
 
+## Final readiness checklist
+
+- [ ] I can trace a clean, secured lead-to-cash data and process model.
+- [ ] I can configure mailboxes, timelines, roles, Microsoft 365 collaboration and product pricing.
+- [ ] I distinguish Copilot, predictive intelligence and each Sales agent.
+- [ ] I can design Sales accelerator segments, sequences and assignment rules.
+- [ ] I can configure and evaluate scoring, conversational/relationship intelligence, forecasts and goals.
+- [ ] I can defend Qualification Agent research-only versus research-and-engage mode.
+- [ ] I can explain Opportunity, Close and Research Agent configuration, action evidence and monitoring.
+- [ ] I can select mobile, Teams calling, SMS and Power Platform extension patterns.
+- [ ] I verify beta status, license/plan, feature availability, capacity, credits and billing immediately before use.
+- [ ] I reconcile agent handoffs, CRM qualification, completed runs and booked revenue as separate outcomes.
+- [ ] I can explain the Close Agent retirement and the unresolved Opportunity custom-field support boundary.
+- [ ] I use original practice and source review without seeking live exam content.
+
 ## Places to learn
+
+### October 28 learning route and evidence task
+
+The current [AB-210 course](https://learn.microsoft.com/en-us/training/courses/ab-210t00) still lists **three instructor-led days**. Its four paths retain 13 modules: 3 for configuration, 3 for leads, 4 for deals and 3 for extensions. Direct path bodies did not expose a fresh combined runtime, so keep 12 hours 3 minutes as historical metadata. A current training outline can still teach a retiring feature: the [deal-execution path](https://learn.microsoft.com/en-us/training/paths/win-deals-ai-sales/) continues to name Sales Close Agent. Use the blueprint for required learning and this guide’s dated lifecycle evidence for whether a new tenant implementation remains appropriate.
+
+**Original worksheet (about 30–45 minutes, editorial estimate):** Select three lesson actions. Record the objective, intended business outcome, record/identity boundary, product-lifecycle evidence, safe substitute/tabletop action and observable completion evidence. Put the retiring-agent action beside a current deployment action so their purposes remain explicit.
+
+**Answer checkpoint:** A lesson title is learning guidance, not evidence that the feature can still be provisioned. A valid worksheet can retain exam reasoning while marking a tenant action unavailable or tabletop-only.
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, configure a synthetic lead-to-cash environment, and add resources only for measured gaps.
 
@@ -429,18 +460,3 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 | [Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Verify current session start/end time after sign-in |
 
 The four official paths previously listed **12 hours 3 minutes** in total; their currently fetched path pages expose 13 modules (3 + 3 + 4 + 3) without those durations, so treat that time as historical. Allow roughly **30–50 hours** with tenant configuration and labs; this is a planning estimate, not an executed-study measurement. The three-day course currently lists seven languages. Both Udemy pages were access-blocked, so current runtime, content quality and assessment originality were not reverified; retain them as candidates to evaluate before purchase. The September 28 observation that the Practice Assessment was unavailable is historical: the October 28 exam-page listing advertises it through AI Skills Navigator with sign-in. The assessment itself was not opened or tested. No exact current AB-210 path from Pluralsight, O'Reilly, MeasureUp or Whizlabs was independently verified in the September 28 search. The Partner Skilling Hub returned a login shell, not a verified current AB-210 session. Several marketplaces advertise hundreds or thousands of questions or “valid” material; those were deliberately excluded. Reject recalled live questions, pass guarantees and unsupported banks.
-
-## Final readiness checklist
-
-- [ ] I can trace a clean, secured lead-to-cash data and process model.
-- [ ] I can configure mailboxes, timelines, roles, Microsoft 365 collaboration and product pricing.
-- [ ] I distinguish Copilot, predictive intelligence and each Sales agent.
-- [ ] I can design Sales accelerator segments, sequences and assignment rules.
-- [ ] I can configure and evaluate scoring, conversational/relationship intelligence, forecasts and goals.
-- [ ] I can defend Qualification Agent research-only versus research-and-engage mode.
-- [ ] I can explain Opportunity, Close and Research Agent configuration, action evidence and monitoring.
-- [ ] I can select mobile, Teams calling, SMS and Power Platform extension patterns.
-- [ ] I verify beta status, license/plan, feature availability, capacity, credits and billing immediately before use.
-- [ ] I reconcile agent handoffs, CRM qualification, completed runs and booked revenue as separate outcomes.
-- [ ] I can explain the Close Agent retirement and the unresolved Opportunity custom-field support boundary.
-- [ ] I use original practice and source review without seeking live exam content.

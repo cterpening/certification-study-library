@@ -5,7 +5,7 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: review-required
+review_status: source-validated
 last_verified: 2026-10-28
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-10-28
@@ -13,13 +13,11 @@ upcoming_change_checked: 2026-10-28
 
 # AI-500 Designing and Implementing Multi-Agent AI Solutions Study Guide
 
-> **REFRESH IN PROGRESS — REVIEW REQUIRED (October 28, 2026).** Selected lifecycle, technical and source evidence was checked today. The dated complete review below remains historical; a complete guide/source reconciliation and independent human review remain pending.
-
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-500-coverage-record). The [official AI-500 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-500) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#ai-500) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-500-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-500) is authoritative.
 
 **Current baseline:** Official study-guide page last updated July 16, 2026; Microsoft does not publish a separate skills-effective date on that page.<br>
 **Exam state — VERIFY CURRENT:** Current exam and credential headings no longer label the exam beta, as checked October 28, 2026. Recorded as active from those observations; an exact GA date was not established. English remains listed.<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026.<br>
 **Credential prerequisite:** Microsoft Certified: Azure AI Apps and Agents Developer Associate (AI-103).<br>
 **Training availability — VERIFY CURRENT:** The official exam page now links the four-day AI-500T00 course. The current course page has no September 30 future-availability notice; actual class dates and lab entitlement remain provider-dependent.<br>
 **Official source:** [AI-500 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-500)
@@ -28,7 +26,7 @@ upcoming_change_checked: 2026-10-28
 
 **Confirmed — VERIFY CURRENT (October 28, 2026).** The October Content Safety update changes text-harm classification and Prompt Shields detection, initially in Spain Central with staged expansion. Reevaluate representative multilingual benign and hostile cases and record region, filter configuration and outcomes; behavior may temporarily differ across regions. This release does not update PII detection, task adherence, network egress, Spotlighting, blocklists, protected-material or image-safety controls. A classifier refresh does not prove that all reported failures are fixed or that tool authorization is enforced. [What's new in Azure AI Content Safety](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/whats-new)
 
-These are bounded operational updates, not a completed objective rebaseline. Product and tenant exercises were not run. Earlier unresolved support and documentation gaps remain.
+These dated operational notes supplement the objective treatment in this refresh. Product and tenant exercises were not run. Unresolved support and documentation gaps remain stated at the affected topic.
 
 ## How to use this guide
 
@@ -208,6 +206,12 @@ Use a protocol only where interoperability is worth another boundary.
 Current Foundry [incoming A2A support](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/enable-agent-to-agent-endpoint) distinguishes **GA v1.0** from **preview v0.3**. An unversioned request defaults to v0.3. Select 1.0 through the version-specific card/client negotiation or an explicit header/query selector; conflicting header and query versions produce an error. The documented v1.0 implementation uses JSON-RPC and text: do not assume streaming, files, gRPC or HTTP+JSON support from the general protocol.
 
 Even agent-card discovery requires Entra authentication. Use the caller's principal object ID and a role such as **Foundry Agent Consumer** at the required agent/project scope; API keys and anonymous access are unsupported. Project scope covers more agents than a single-agent assignment. Tasks and contexts persist for **60 days after the latest write**, which resets that period; this is separate from a compute idle timeout.
+
+**Confirmed — VERIFY CURRENT (October 28, 2026).** [Incoming Foundry A2A configuration](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/enable-agent-to-agent-endpoint) requires an agent using the **Responses protocol**; current instructions use REST or SDK because portal configuration is unavailable. The Python configuration example requests `azure-ai-projects>=2.5.0`. Keep this procedure-specific dependency separate from the hosted-agent migration's 2.3.0 minimum and from A2A protocol 1.0.
+
+**Proposed practice extension — not executed:** Add a capability test row for an agent lacking Responses protocol, alongside unversioned and conflicting-version calls. Capture agent type, configured protocols, SDK version, exact endpoint and expected rejection. Do not interpret a package upgrade alone as enabling the endpoint.
+
+**Answer checkpoint:** Does a hosted-agent migration package floor establish the Python floor for every A2A setup example? No; validate each operation and SDK separately.
 
 ### Apply Zero Trust per agent
 
@@ -849,6 +853,14 @@ Microsoft’s [exam page](https://learn.microsoft.com/en-us/credentials/certific
 - [Agent ID on-behalf-of flow](https://learn.microsoft.com/en-us/entra/agent-id/agent-on-behalf-of-oauth-flow)
 
 ## Places to learn
+
+### October 28 learning route and evidence task
+
+The [official AI-500 course](https://learn.microsoft.com/en-us/training/courses/ai-500t00) still lists **four instructor-led days** with no future-availability notice in the inspected overview; actual class delivery remains unverified. [Clint Bonnett’s Foundry course](https://www.pluralsight.com/courses/microsoft-foundry-building-intelligent-applications) is a 1 hour 2 minute beginner introduction, last updated February 13, 2026. Use it for a focused RAG/workflow/evaluation refresher, then return to the official paths and this guide’s production-failure labs. The existing two engineering articles remain useful for written design work; APIs, language parity and preview integration need current checks before running code.
+
+**Original article-to-evidence task (about 45–75 minutes, editorial estimate):** Choose one article’s session, memory or recovery example. Record its promised behavior, documented limitation, application-owned responsibility and a counterexample. Give each a required trace or stored record and mark which evidence was actually observed. Keep code inspection separate from an executed restart or tenant-isolation test.
+
+**Answer checkpoint:** A clean asynchronous shutdown does not prove crash durability; a stored thread ID does not authorize a caller; a completed run can still fail the business-quality test.
 
 ### October 28 learning-resource check
 

@@ -5,24 +5,22 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: review-required
-last_verified: 2026-09-27
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-27
+review_status: source-validated
+last_verified: 2026-10-28
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-10-28
 ---
 
 # DP-420 Building AI Applications with Azure Cosmos DB Study Guide
 
-> **REFRESH IN PROGRESS — REVIEW REQUIRED (October 28, 2026).** The official objective page differs from the accepted teaching baseline. Detailed coverage reconciliation is pending; use the linked official blueprint for current scope. Saved objective snapshots and historical full-review dates remain unchanged.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-420) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-420-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) is authoritative.
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The complete guide and the 56 published October objectives were reviewed September 27, 2026. The July baseline remains in place until the announced change; October preparation is separated below. See the [deep-review findings](../docs/research/2026-09-27-dp-420-deep-review.md) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-420-coverage-record). The [official DP-420 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) is authoritative.
-
-**Accepted teaching baseline:** Skills measured as of July 21, 2026; current coverage reconciliation is pending.<br>
-**Blueprint transition (checked October 28, 2026):** The October 6 effective date has passed. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) adds AI retrieval, agent memory, and other changes. This guide retains the July 21 teaching baseline and separate transition material; it does not yet establish complete coverage of the October objectives. The study-guide page still uses future-tense transition wording, while the credential page confirms the name change.<br>
+**Current baseline:** Skills measured as of October 6, 2026; the current three-domain outline is accepted.<br>
+**Blueprint reconciliation (October 28, 2026):** The October 6 outline governs current preparation. Database development is 40–45%, secure/optimized deployment 30–35%, and AI/analytics 20–25%. The old July domain organization below is retained as a labeled foundation, not current exam weighting. The live study guide still contains future-tense transition copy; the effective-date heading and credential notice are recorded separately. Historical objective bytes and review records are preserved.<br>
 **Lifecycle status:** Active. The credential changed to **Azure Cosmos DB AI Developer Associate** on October 6, 2026; DP-420 remains the exam code. See the [official credential notice](https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/).<br>
 **Exam page:** [Azure Cosmos DB AI Developer Associate](https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/) · 100-minute assessment · annual renewal.<br>
-**Official course:** [DP-420T00 Design and implement cloud-native applications with Microsoft Azure Cosmos DB](https://learn.microsoft.com/en-us/training/courses/dp-420t00) · four instructor-led days.<br>
-**Practice:** A free Microsoft Practice Assessment is linked from the credential and study-guide pages.
+**Official course:** [DP-420T00 Build AI applications with Azure Cosmos DB](https://learn.microsoft.com/en-us/training/courses/dp-420t00) · four instructor-led days.<br>
+**Practice routing — VERIFY CURRENT (October 28, 2026):** The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/) routes Practice Assessment to AI Skills Navigator with sign-in. No assessment was launched or its question content inspected. Recheck the vendor launch route before relying on an older direct link below; a practice result does not establish coverage of another exam code.<br>
 
 ## How to use this guide
 
@@ -36,15 +34,15 @@ identity -> network path -> data-plane permission -> SDK request -> diagnostic e
 source change -> change feed/mirroring/connector -> checkpoint -> target effect -> replay behavior
 ```
 
-Practice with a current Azure Cosmos DB for NoSQL SDK. C# and Java code can appear in the published audience profile, so learn to recognize SDK object lifetimes, request options, partition-key arguments, pagination, diagnostics, and failure handling even if you write labs in only one language. Record prerequisites, item and partition shape, request charge, latency, status/substatus, retry count, correctness evidence, and cleanup cost for every lab.
+Practice with a current Azure Cosmos DB for NoSQL SDK. The current audience profile names C# or Python; older C#/Java examples can still teach foundations, so learn to recognize SDK object lifetimes, request options, partition-key arguments, pagination, diagnostics, and failure handling even if you write labs in only one language. Record prerequisites, item and partition shape, request charge, latency, status/substatus, retry count, correctness evidence, and cleanup cost for every lab.
 
 > **About related items:** A `Related item:` callout adds prerequisite, architectural, migration, security, operational, or adjacent context that makes the objective easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in Microsoft's published exam objectives.
 
-## October 6 transition map
+## Current October 6 objective map
 
-The [published October blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) renames the exam to **Building AI Applications with Azure Cosmos DB** and the credential to **Azure Cosmos DB AI Developer Associate**. Its three areas are database development (40–45%), secure/optimized deployment (30–35%), and AI/analytics (20–25%). The July map below still applies to this guide's current baseline.
+The [published October blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) renames the exam to **Building AI Applications with Azure Cosmos DB** and the credential to **Azure Cosmos DB AI Developer Associate**. Its three areas are database development (40–45%), secure/optimized deployment (30–35%), and AI/analytics (20–25%). The three-domain map here governs preparation; the July structure farther below is historical organization for reusable foundations.
 
-For October, the audience profile names **C# or Python**, replacing the earlier C#/Java reading expectation. Select material by your exam date and language; a familiar DP-420 course title or practice score does not establish coverage of the new AI domain.
+The current audience profile names **C# or Python**, replacing the earlier C#/Java reading expectation. Select material by your exam date and language; a familiar DP-420 course title or practice score does not establish coverage of the new AI domain.
 
 | October area | Reuse from this guide | Additional preparation |
 |---|---|---|
@@ -52,7 +50,7 @@ For October, the audience profile names **C# or Python**, replacing the earlier 
 | Secure/optimized deployment | Identity, networking, availability, indexes, diagnostics | Dynamic masking, partition failover, Fleet throughput and analytics |
 | AI and analytics | Integration and correctness principles | Full-text/vector/hybrid retrieval, sharded DiskANN, RAG, durable agent memory, conversation state, semantic memory, Fabric mirroring and Spark integration |
 
-Original design exercise: take a two-tenant support assistant from ingestion through retrieval and conversation storage. For each operation, record partition key, tenant authorization, consistency, RU/latency evidence, retry behavior and retention. Test a request for the other tenant's data and a replayed update. Explain how recovery of the source database differs from rebuilding its retrieval index. This exercise connects existing skills to future scope; verify implementation details against current product documentation before running it.
+Original design exercise: take a two-tenant support assistant from ingestion through retrieval and conversation storage. For each operation, record partition key, tenant authorization, consistency, RU/latency evidence, retry behavior and retention. Test a request for the other tenant's data and a replayed update. Explain how recovery of the source database differs from rebuilding its retrieval index. This exercise connects the database foundations to current AI scope; verify implementation details against current product documentation before running it.
 
 ### Retrieval, grounding and durable agent memory
 
@@ -67,6 +65,14 @@ The [vector-search guide](https://learn.microsoft.com/en-us/azure/cosmos-db/vect
 [Agent-memory guidance](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/agentic-memories) separates conversation turns, summaries and semantically retrieved memories. Keep source/provenance, tenant/thread, ordering/version and retention metadata. Use ETags for concurrent state updates and deterministic IDs for replay. A summary can be stale or incorrect even when durably stored; expired source material can survive in derived summaries or embeddings unless your deletion process covers them. Treat retrieved user/tool content as data with provenance, not as permission to execute instructions.
 
 **Worked example — compare quality before cost:** For one held-out question with ten known relevant documents, a candidate returns eight of those ten. Recall@10 is 0.8 for this example. A cheaper query that retrieves only five has recall 0.5. Compare the same authorized candidate set and aggregate over representative questions; one query is not a benchmark. Then test grounding citations, stale/deleted content and an unanswerable question separately from retrieval recall.
+
+### Worked example — a valid embedding can have an invalid index design
+
+**Confirmed — VERIFY CURRENT (October 28, 2026).** A synthetic 1536-dimensional embedding cannot use a `flat` index, whose documented maximum is 505; `quantizedFlat` and `diskANN` allow up to 4096. An 800-vector test can still scan instead of exercising either compressed index, and current vector search excludes shared-throughput accounts. Check the [vector-policy and limitation tables](https://learn.microsoft.com/en-us/azure/cosmos-db/vector-search) before interpreting successful queries as evidence the intended index worked. Record dimensions, policy, throughput model, data size, recall and RU/latency.
+
+**Proposed practice extension — not executed:** Use real model embeddings; compare an eligible configuration with the dimension/throughput cases as a worksheet. Do not provision thousands of paid records only to satisfy the exercise.
+
+**Answer checkpoint:** Does a successful 800-vector DiskANN query prove ANN indexing was exercised? No; below the documented threshold it can scan.
 
 ### Change-feed modes, copy jobs and AI-assisted development
 
@@ -86,7 +92,7 @@ The [Cosmos DB Agent Kit](https://github.com/AzureCosmosDB/cosmosdb-agent-kit) s
 
 Distinguish an Azure Cosmos DB account mirrored into Fabric from a [Cosmos DB database created inside Fabric](https://learn.microsoft.com/en-us/fabric/database/cosmos-db/faq). The latter uses Fabric workspace/capacity governance, automatic OneLake mirroring and currently requires gateway-mode connections; it is not a drop-in match for Azure account topology, identity or throughput settings. Query mirrored JSON through the SQL analytics endpoint or Spark over OneLake and validate replication freshness. The [Cosmos DB Spark connector](https://learn.microsoft.com/en-us/fabric/database/cosmos-db/how-to-use-spark-notebooks) instead reaches the operational endpoint for reads/writes, including reverse ETL. Record endpoint, identity, destination, cost and freshness for each notebook.
 
-## Objective map
+## Historical July objective organization
 
 | Published domain | Weight | Developer question |
 |---|---:|---|
@@ -146,7 +152,7 @@ The [request-unit model](https://learn.microsoft.com/en-us/azure/cosmos-db/reque
 
 ---
 
-## 2. Design and implement data models (35–40%)
+## 2. Data-model foundations — historical July grouping
 
 ### Model from access patterns, not relational tables
 
@@ -415,7 +421,7 @@ Use transactional batch for straightforward same-key operation groups; use a sto
 
 ---
 
-## 3. Design and implement data distribution (5–10%)
+## 3. Design and implement data distribution — historical July grouping
 
 ### Derive topology from user and failure requirements
 
@@ -479,7 +485,7 @@ Test create/create, replace/replace, delete/update, partition-key identity, offl
 
 ---
 
-## 4. Integrate an Azure Cosmos DB solution (5–10%)
+## 4. Integrate an Azure Cosmos DB solution — historical July grouping
 
 ### Choose the analytical path intentionally
 
@@ -570,7 +576,7 @@ Do not use search as the authoritative transactional read store. Validate source
 
 ---
 
-## 5. Optimize an Azure Cosmos DB solution (15–20%)
+## 5. Optimize an Azure Cosmos DB solution — historical July grouping
 
 ### Optimize from measured request evidence
 
@@ -648,7 +654,7 @@ Include target throttling, handler time, retries, batch size, source partitions,
 
 ---
 
-## 6. Maintain an Azure Cosmos DB solution (25–30%)
+## 6. Maintain an Azure Cosmos DB solution — historical July grouping
 
 ### Monitor the whole request path
 
@@ -1040,11 +1046,11 @@ Use these to check your reasoning after attempting the questions.
 
 ## 10. Final readiness checklist
 
-- [ ] I can map every July 21, 2026 objective to a section, lab, and evidence artifact.
+- [ ] I can map every October 6, 2026 objective to a section, lab, and evidence artifact.
 - [ ] I can model embedding, references, denormalization, mixed entity types and schema versions from access patterns.
 - [ ] I can defend a natural, synthetic, or hierarchical partition key with storage, RU, routing and transaction evidence.
 - [ ] I can choose serverless, manual/autoscale provisioned, database-shared or container-dedicated throughput.
-- [ ] I can recognize correct singleton SDK, gateway/direct, region, logging, pagination and retry behavior in C# or Java.
+- [ ] I can recognize correct singleton SDK, gateway/direct, region, logging, pagination and retry behavior in C# or Python; older Java examples are supplementary.
 - [ ] I can implement point operations, Patch, ETags, batch, bulk, TTL and query metrics.
 - [ ] I can write/recognize NoSQL queries over arrays/nested values, subqueries, functions, aggregation and ordering.
 - [ ] I can explain stored procedure, trigger and UDF scope and constraints.
@@ -1064,13 +1070,21 @@ Use these to check your reasoning after attempting the questions.
 
 ## Places to learn
 
+### October 28 learning route and evidence task
+
+The [official DP-420 course](https://learn.microsoft.com/en-us/training/courses/dp-420t00) is now **Build AI applications with Azure Cosmos DB**, still four instructor-led days. The [Pluralsight path](https://www.pluralsight.com/paths/designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db-dp-420) still advertises the older five-domain structure and 9 hours, with its latest displayed update in January 2026. Use it selectively for database foundations and map AI retrieval, memory and authorization gaps against the October 6 blueprint. The Agent Kit article’s improved constructor is now balanced; keep its load-distribution caveat rather than repeating an unsupported syntax defect.
+
+**Original retrieval-resource worksheet (about 45–60 minutes, editorial estimate):** For a two-tenant corpus, record partition-routing choice, vector-shard choice, authenticated scope, relevance target and RU/latency measurement. Add one skewed-tenant counterexample to a proposed year-based key. Separate an article’s measured example from the result your own workload would need to demonstrate.
+
+**Answer checkpoint:** Partition routing and vector-index sharding solve different parts of the request path; neither replaces application authorization. A benchmark percentage is not a guaranteed improvement.
+
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the formats and gaps that work for you: one current primary path, hands-on labs, targeted documentation, and one ethical readiness check are usually more useful than passively completing every course. Times are page-published durations where available; otherwise they are clearly labeled estimates. Catalogs, durations, prices, access, and blueprint alignment change—verify them before purchase. Practice products should teach and explain; do not use brain dumps or material claiming real exam questions.
 
 ### Start with Microsoft
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
-| [Official DP-420 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) | Public | 45–75 min for blueprint mapping | Live page now displays October 6 scope; compare your exam date with this guide's retained July baseline |
+| [Official DP-420 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) | Public | 45–75 min for blueprint mapping | Current October 6 scope; July organization is historical foundation |
 | [DP-420 Microsoft Learn course page](https://learn.microsoft.com/en-us/training/courses/dp-420t00) | Public self-study; paid instructor option | 4 instructor-led days; roughly 25–40 hours self-study plus labs (estimate) | Primary structured path across the published domains |
 | [Azure Cosmos DB documentation](https://learn.microsoft.com/en-us/azure/cosmos-db/) | Public | 15–30 hours selectively (estimate) | Current product truth, limits, SDK guidance and deep remediation by objective |
 | Microsoft free Practice Assessment, linked on the [credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/) | Public; sign-in may be required | 45–90 min per attempt plus review (estimate) | Diagnostic baseline and gap review; explanations are more valuable than memorizing answers |
@@ -1081,10 +1095,10 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 | Resource | Access | Estimated time | Best use and freshness note |
 |---|---|---:|---|
-| [Pluralsight DP-420 path](https://www.pluralsight.com/paths/designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db-dp-420) | Paid/trial depending plan | 9 hours published, plus labs/review | Five-domain path with a practice exam; page showed course updates through January 2026. Gap-check the July Fabric/time-travel and blueprint additions. |
-| [O'Reilly Azure Cosmos DB Developer Specialty course](https://www.oreilly.com/videos/azure-cosmos-db/0636920986164/) | Paid subscription/trial | 4h34m published, plus practice | Mohit Batra, January 2025; broad exam course with quizzes. Reconcile legacy Synapse Link and July 2026 changes. |
+| [Pluralsight DP-420 path](https://www.pluralsight.com/paths/designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db-dp-420) | Paid/trial depending plan | 9 hours published, plus labs/review | Five-domain path with a practice exam; page showed course updates through January 2026. Gap-check all October AI retrieval, memory, security and analytics objectives. |
+| [O'Reilly Azure Cosmos DB Developer Specialty course](https://www.oreilly.com/videos/azure-cosmos-db/0636920986164/) | Paid subscription/trial | 4h34m published, plus practice | Mohit Batra, January 2025; broad exam course with quizzes. Reconcile legacy Synapse Link and the current October AI-focused outline. |
 | [O'Reilly DP-420 crash course](https://www.oreilly.com/live-events/exam-dp-420-microsoft-azure-cosmos-db-developer-crash-course/0636920079751/) | Paid; schedule/access varies | Four hours published when scheduled | Reza Salehi live overview; verify next event dates and treat older “Core/SQL API” wording as API for NoSQL terminology. |
-| [Udemy DP-420 hands-on course](https://www.udemy.com/course/azure-cosmosdb-database/) | Paid; price varies | 6h47m / 64 lectures published, plus labs | Page showed July 2026 update and many demos, but also an older “October 2023 topics” claim; gap-check every July 2026 addition. |
+| [Udemy DP-420 hands-on course](https://www.udemy.com/course/azure-cosmosdb-database/) | Paid; price varies | 6h47m / 64 lectures published, plus labs | Page showed July 2026 update and many demos, but also an older “October 2023 topics” claim; gap-check every current October objective. |
 | [Microsoft Azure Cosmos DB YouTube channel](https://www.youtube.com/@AzureCosmosDB) | Public | 3–10 hours selectively (estimate) | Product announcements, engineering explanations and demos; select videos by weak objective and date. |
 | [Microsoft Reactor YouTube channel search for Cosmos DB](https://www.youtube.com/@MicrosoftReactor/search?query=Cosmos%20DB) | Public | 2–8 hours selectively (estimate) | Workshops and developer sessions; verify product version and avoid treating any one playlist as full exam alignment. |
 | [John Savill Azure Cosmos DB channel search](https://www.youtube.com/@NTFAQGuy/search?query=Cosmos%20DB) | Public | 1–4 hours selectively (estimate) | Supplemental Azure architecture explanations; not a complete DP-420 course. Check video descriptions for linked whiteboards/resources. |
@@ -1093,8 +1107,8 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 | Resource | Access | Estimated time | Best use and caution |
 |---|---|---:|---|
-| [Microsoft Press DP-420 video by Tim Warner](https://www.microsoftpressstore.com/store/exam-dp-420-designing-and-implementing-cloud-native-9780137951222) | Paid | 11+ hours published | Hands-on 2023 course. Strong foundation, but reconcile all July 2026 objectives, Fabric mirroring, hierarchical keys, and current product notices. |
-| [Whizlabs DP-420 training and practice](https://www.whizlabs.com/microsoft-azure-certification-dp-420/) | Paid; offering varies | Approximately 8–15 hours for course/labs/practice (estimate; page did not expose reliable counts) | Additional labs and readiness checks; verify counts, update date and July 2026 alignment before purchase. |
+| [Microsoft Press DP-420 video by Tim Warner](https://www.microsoftpressstore.com/store/exam-dp-420-designing-and-implementing-cloud-native-9780137951222) | Paid | 11+ hours published | Hands-on 2023 course. Strong foundation, but reconcile all current October 6 objectives, Fabric mirroring, hierarchical keys, and current product notices. |
+| [Whizlabs DP-420 training and practice](https://www.whizlabs.com/microsoft-azure-certification-dp-420/) | Paid; offering varies | Approximately 8–15 hours for course/labs/practice (estimate; page did not expose reliable counts) | Additional labs and readiness checks; verify counts, update date and October 2026 alignment before purchase. |
 | [MeasureUp DP-420 practice test](https://www.measureup.com/microsoft-practice-test-dp-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.html) | Paid; demo available | 2–4 hours per full attempt and explanation review (estimate) | Page listed 120 questions but a June 2022 release and older objective terminology. Use for reasoning practice only after verifying current alignment. |
 | [Udemy DP-420 topic catalog](https://www.udemy.com/topic/microsoft-dp-420/) | Paid catalog; price varies | Varies | Compare recent course/practice options, instructor updates, previews and explanations. Reject any product claiming leaked/real exam content. |
 | [Azure Cosmos DB design-pattern samples](https://github.com/Azure-Samples/cosmos-db-design-patterns) | Public | 6–15 hours selectively (estimate) | Implement and benchmark patterns such as hierarchical partitioning; turn examples into measured labs rather than copying blindly. |
@@ -1109,11 +1123,11 @@ This is **not a complete list**, and it is not a recommendation to consume every
 6. Use one paid practice product only if explanations and current-objective alignment add value.
 7. Recheck the official study guide, credential page, lifecycle, support notices, limits and pricing immediately before the exam.
 
-For October candidates, add Labs 9–10 and targeted C#/Python practice. Allow an estimated 12–20 additional hours for the new material and evidence collection, with more time if embeddings, Fabric or authorization testing are new to you. Older course durations above are historical catalog observations; three paid pages were access-blocked during this review and other catalog access does not prove lesson access or October alignment.
+For the current October outline, include Labs 9–10 and targeted C#/Python practice. Allow an estimated 12–20 additional hours for the new material and evidence collection, with more time if embeddings, Fabric or authorization testing are new to you. Older course durations above are historical catalog observations; three paid pages were access-blocked during this review and other catalog access does not prove lesson access or October alignment.
 
 ### Focused blog reading
 
-- [Introducing the Azure Cosmos DB Agent Kit](https://devblogs.microsoft.com/cosmosdb/azure-cosmos-db-agent-kit-ai-coding-assistants/), **Sajeetharan Sinnathurai, Microsoft, January 22, 2026**. Estimate 20–30 minutes with the current repository. Read for a review workflow, then identify which suggestions need measurements. Its sample constructor has an unmatched brace, and a tenant/year key can still concentrate current-year writes. Treat examples and performance claims as proposals to test; the kit was not installed or executed here.
+- [Introducing the Azure Cosmos DB Agent Kit](https://devblogs.microsoft.com/cosmosdb/azure-cosmos-db-agent-kit-ai-coding-assistants/), **Sajeetharan Sinnathurai, Microsoft, January 22, 2026**. Estimate 20–30 minutes with the current repository. Read for a review workflow, then identify which suggestions need measurements. The constructor in the current public body is balanced; the earlier syntax-defect observation is historical. A tenant/year key can still concentrate current-year writes. Treat examples and performance claims as proposals to test; the kit was not installed or executed here.
 - [Sharded DiskANN for multitenant vector search](https://devblogs.microsoft.com/cosmosdb/sharded-diskann-focused-vector-search-for-better-performance-and-lower-cost/), **James Codella, Shivam Atri and Haiyang Xu, Microsoft, April 24, 2025**. Estimate 25–40 minutes with current search docs. Useful for separating partition routing from index sharding and comparing recall, latency and RU. Published benchmark gains are workload-specific; some query samples put `WHERE` after `ORDER BY`, so use current query syntax. Exercise: design an authorized-tenant comparison with identical data and a held-out relevance set. Samples and benchmark were not executed here.
 
 ---

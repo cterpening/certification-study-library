@@ -5553,7 +5553,7 @@
           "vendor_id": "microsoft",
           "guide_path": "guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md",
           "guide_content_sha256": "64b96a98bab85d7e14f301be6485c1b74191a12e00aa1362f92b1017f01307a5",
-          "blueprint_snapshot_path": "data/objective-snapshots/dp-750-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/archive/dp-750-eba786118a9e5129571b0a9505b8849bd82f3cdf84e2da759d735f354f27fb84.txt",
           "blueprint_snapshot_sha256": "eba786118a9e5129571b0a9505b8849bd82f3cdf84e2da759d735f354f27fb84",
           "audited_on": "2026-09-06",
           "verdict": "pass",
@@ -5922,16 +5922,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The guide matches DEA-C01 exam guide version 1.1 and its four 34/26/22/18 scored-content domains."},
-            "objective_coverage": {"status": "passed", "notes": "Ingestion and transformation, store management, operations and quality, and security and governance receive substantive decision, failure, scenario, lab, and answer coverage."},
-            "material_claim_support": {"status": "passed", "notes": "All twenty-eight cited URLs are cataloged: twenty-five are reachable and three O'Reilly or Udemy pages are automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The 130-minute, 65-question, USD-150, 50-scored/15-unscored, 720-score, language, and delivery facts are clearly tied to the current AWS evidence."},
-            "technical_coherence": {"status": "passed", "notes": "Replayable ingestion, distributed transformation, storage modeling, schema and catalog, observability, quality, IAM and KMS, privacy, sharing, and recovery form a consistent data-product lifecycle."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "Version 1.1 additions for LLM processing, Iceberg, vector methods, Bedrock context, and SageMaker Catalog are explicit, and removed services plus current metadata are visibly bounded."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs require a sandbox, budget, synthetic data, least privilege, controlled failures, replay and recovery evidence, and cleanup."},
-            "readiness_check_quality": {"status": "passed", "notes": "Forty original prompts test system behavior, tradeoffs, failure, recovery, security, and governance without recalled exam content."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 1 record matches the objective hash, four-domain map, three scenarios, eight labs, forty checks, and 28/25/3/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "All non-AWS technologies are relevant open formats or engineering context; no unrelated provider leakage, copied course text, contradictory template content, or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The guide matches DEA-C01 exam guide version 1.1 and its four 34/26/22/18 scored-content domains."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Ingestion and transformation, store management, operations and quality, and security and governance receive substantive decision, failure, scenario, lab, and answer coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All twenty-eight cited URLs are cataloged: twenty-five are reachable and three O'Reilly or Udemy pages are automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 130-minute, 65-question, USD-150, 50-scored/15-unscored, 720-score, language, and delivery facts are clearly tied to the current AWS evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Replayable ingestion, distributed transformation, storage modeling, schema and catalog, observability, quality, IAM and KMS, privacy, sharing, and recovery form a consistent data-product lifecycle."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Version 1.1 additions for LLM processing, Iceberg, vector methods, Bedrock context, and SageMaker Catalog are explicit, and removed services plus current metadata are visibly bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs require a sandbox, budget, synthetic data, least privilege, controlled failures, replay and recovery evidence, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original prompts test system behavior, tradeoffs, failure, recovery, security, and governance without recalled exam content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, four-domain map, three scenarios, eight labs, forty checks, and 28/25/3/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "All non-AWS technologies are relevant open formats or engineering context; no unrelated provider leakage, copied course text, contradictory template content, or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide turns a broad service scope into a useful reliability, data-quality, cost, security, and replay decision model."
@@ -5946,16 +5976,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The guide matches the April 17, 2026 four-domain 25–30/20–25/15–20/30–35 Azure solutions architecture blueprint."},
-            "objective_coverage": {"status": "passed", "notes": "Identity, governance and monitoring, data storage, continuity, and infrastructure design all receive requirement-led tradeoffs, failure modes, scenarios, labs, and answers."},
-            "material_claim_support": {"status": "passed", "notes": "All twenty-nine cited URLs are cataloged: twenty-six are reachable and three O'Reilly or Udemy pages are automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The Azure Administrator Associate credential prerequisite is correctly separated from eligibility to sit AZ-305, and no unsupported duration, score, or item-count details are asserted."},
-            "technical_coherence": {"status": "passed", "notes": "Hard constraints, Well-Architected tradeoffs, identity and evidence, data access patterns, RPO/RTO, compute, integration, migration, networking, and operations form a coherent architecture method."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "Tiers, capabilities, region and zone support, limits, licensing, prices, and retirement-sensitive service behavior are explicitly marked for current verification."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight design labs use ADRs, a disposable subscription where implementation helps, controlled failures, cost analysis, verification, rollback, and open-risk records."},
-            "readiness_check_quality": {"status": "passed", "notes": "Twenty-four original answered checks test design constraints and cross-pillar tradeoffs rather than product-name recall."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The August 31 record matches the objective hash, four-domain map, two scenarios, eight labs, twenty-four checks, and 29/26/3/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "The guide stays at architecture depth and separates adjacent CAF and administrator concepts appropriately; no copied training text, irrelevant provider content, or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The guide matches the April 17, 2026 four-domain 25–30/20–25/15–20/30–35 Azure solutions architecture blueprint."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Identity, governance and monitoring, data storage, continuity, and infrastructure design all receive requirement-led tradeoffs, failure modes, scenarios, labs, and answers."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All twenty-nine cited URLs are cataloged: twenty-six are reachable and three O'Reilly or Udemy pages are automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The Azure Administrator Associate credential prerequisite is correctly separated from eligibility to sit AZ-305, and no unsupported duration, score, or item-count details are asserted."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Hard constraints, Well-Architected tradeoffs, identity and evidence, data access patterns, RPO/RTO, compute, integration, migration, networking, and operations form a coherent architecture method."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Tiers, capabilities, region and zone support, limits, licensing, prices, and retirement-sensitive service behavior are explicitly marked for current verification."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight design labs use ADRs, a disposable subscription where implementation helps, controlled failures, cost analysis, verification, rollback, and open-risk records."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty-four original answered checks test design constraints and cross-pillar tradeoffs rather than product-name recall."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The August 31 record matches the objective hash, four-domain map, two scenarios, eight labs, twenty-four checks, and 29/26/3/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "The guide stays at architecture depth and separates adjacent CAF and administrator concepts appropriately; no copied training text, irrelevant provider content, or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide consistently starts with constraints and measurable workload outcomes before selecting Azure services."
@@ -5970,16 +6030,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The guide matches the July 20, 2026 four-domain 40–45/15–20/20–25/10–15 Azure Virtual Desktop blueprint."},
-            "objective_coverage": {"status": "passed", "notes": "Infrastructure, identity and security, user environments and apps, and monitoring and maintenance receive complete connection-path, configuration, scenario, lab, and answer coverage."},
-            "material_claim_support": {"status": "passed", "notes": "All twenty-seven cited URLs are cataloged: twenty-four are reachable and three O'Reilly or Udemy pages are automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The active specialty lifecycle and July baseline are accurately presented without unsupported duration, item-count, or score claims."},
-            "technical_coherence": {"status": "passed", "notes": "Discovery, authentication, brokering, session-host health, transport, FSLogix, application delivery, protection, Insights, autoscale, image lifecycle, and recovery form a consistent operating model."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "OS and client support, licensing, identity and storage constraints, RDP Shortpath and Multipath rollout, App Attach, security defaults, SKUs, pricing, and previews are visibly recheckable."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs use small disposable resources or explicit architecture substitutes, authorized identities and networks, controlled faults, evidence, rollback, and cleanup."},
-            "readiness_check_quality": {"status": "passed", "notes": "Twenty-four original questions with answers test every connection layer, state dependency, security boundary, scaling decision, and recovery obligation."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The August 31 record matches the objective hash, four-domain map, three scenarios, eight labs, twenty-four checks, and 27/24/3/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Microsoft 365, Intune, Defender, and Windows concepts are intrinsic AVD dependencies; no unrelated provider leakage, copied training text, or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The guide matches the July 20, 2026 four-domain 40–45/15–20/20–25/10–15 Azure Virtual Desktop blueprint."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Infrastructure, identity and security, user environments and apps, and monitoring and maintenance receive complete connection-path, configuration, scenario, lab, and answer coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All twenty-seven cited URLs are cataloged: twenty-four are reachable and three O'Reilly or Udemy pages are automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active specialty lifecycle and July baseline are accurately presented without unsupported duration, item-count, or score claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Discovery, authentication, brokering, session-host health, transport, FSLogix, application delivery, protection, Insights, autoscale, image lifecycle, and recovery form a consistent operating model."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "OS and client support, licensing, identity and storage constraints, RDP Shortpath and Multipath rollout, App Attach, security defaults, SKUs, pricing, and previews are visibly recheckable."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use small disposable resources or explicit architecture substitutes, authorized identities and networks, controlled faults, evidence, rollback, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty-four original questions with answers test every connection layer, state dependency, security boundary, scaling decision, and recovery obligation."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The August 31 record matches the objective hash, four-domain map, three scenarios, eight labs, twenty-four checks, and 27/24/3/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Microsoft 365, Intune, Defender, and Windows concepts are intrinsic AVD dependencies; no unrelated provider leakage, copied training text, or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The end-to-end connection and user-state model prevents the common mistake of equating a running VM with a working desktop service."
@@ -5994,16 +6084,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The guide matches the April 20, 2026 four-domain 25–30/25–30/25–30/15–20 Power BI data-analyst blueprint."},
-            "objective_coverage": {"status": "passed", "notes": "Data preparation, semantic modeling, visualization and analysis, and Power BI management and security all receive substantive current-feature, scenario, lab, and answer coverage."},
-            "material_claim_support": {"status": "passed", "notes": "All twenty-five cited URLs are cataloged: twenty-two are reachable and three O'Reilly or Udemy pages are automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The current objective date and four-domain weights are explicit, and the guide makes no unsupported duration, item-count, score, or delivery claims."},
-            "technical_coherence": {"status": "passed", "notes": "Source and privacy decisions, Power Query and grain, star-schema filters, DAX context, visuals and accessibility, distribution, gateway and refresh, permissions and RLS form a coherent analyst workflow."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "Direct Lake, Copilot, visual calculations, DAX query view, licensing and capacity, app behavior, tenant settings, and provider alignment are explicitly bounded."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs use controlled data, deliberate error injection, permission and restricted-user tests, reconciliation, accessibility evidence, and performance baselines."},
-            "readiness_check_quality": {"status": "passed", "notes": "Thirty-six original answered checks test end-to-end analytical correctness, security, accessibility, freshness, and performance rather than UI memorization."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 1 record matches the objective hash, four-domain map, three scenarios, eight labs, thirty-six checks, and 25/22/3/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "The official GitHub lab repository and adjacent Fabric concepts are relevant to PL-300; no copied training content, unrelated provider leakage, or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The guide matches the April 20, 2026 four-domain 25–30/25–30/25–30/15–20 Power BI data-analyst blueprint."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Data preparation, semantic modeling, visualization and analysis, and Power BI management and security all receive substantive current-feature, scenario, lab, and answer coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All twenty-five cited URLs are cataloged: twenty-two are reachable and three O'Reilly or Udemy pages are automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The current objective date and four-domain weights are explicit, and the guide makes no unsupported duration, item-count, score, or delivery claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Source and privacy decisions, Power Query and grain, star-schema filters, DAX context, visuals and accessibility, distribution, gateway and refresh, permissions and RLS form a coherent analyst workflow."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Direct Lake, Copilot, visual calculations, DAX query view, licensing and capacity, app behavior, tenant settings, and provider alignment are explicitly bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use controlled data, deliberate error injection, permission and restricted-user tests, reconciliation, accessibility evidence, and performance baselines."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original answered checks test end-to-end analytical correctness, security, accessibility, freshness, and performance rather than UI memorization."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, four-domain map, three scenarios, eight labs, thirty-six checks, and 25/22/3/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "The official GitHub lab repository and adjacent Fabric concepts are relevant to PL-300; no copied training content, unrelated provider leakage, or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide treats report accessibility, security, refresh, and reconciled totals as parts of analytical correctness."
@@ -6013,21 +6133,51 @@
           "vendor_id": "microsoft",
           "guide_path": "guides/DP-300-administering-microsoft-azure-sql-solutions.md",
           "guide_content_sha256": "c4ac7a56a57929a796075e897e6c2d4063b8e80f74c2923c72880870579d8d59",
-          "blueprint_snapshot_path": "data/objective-snapshots/dp-300-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/archive/dp-300-08cba3368c07be28f4abeea90be94256a0cd0fc247ed53f2561fd340c0df3e4b.txt",
           "blueprint_snapshot_sha256": "08cba3368c07be28f4abeea90be94256a0cd0fc247ed53f2561fd340c0df3e4b",
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The guide matches the April 24, 2026 five-domain 15–20/20–25/20–25/15–20/20–25 Azure and hybrid SQL administration blueprint."},
-            "objective_coverage": {"status": "passed", "notes": "Platform and migration, security, monitoring and optimization, automation, and HA/DR receive platform-specific implementation, troubleshooting, scenario, lab, and answer coverage."},
-            "material_claim_support": {"status": "passed", "notes": "All sixty-five cited URLs are cataloged: sixty-two are reachable and three O'Reilly or Udemy pages are automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The active 100-minute assessment, annual role-based renewal, official four-day course, and Microsoft Practice Assessment are accurately separated from blueprint scope."},
-            "technical_coherence": {"status": "passed", "notes": "Platform responsibility, migration, Entra and SQL authorization, network and encryption, telemetry and query tuning, safe automation, backup, replication, failover, and restoration form a coherent DBA lifecycle."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "Azure Data Studio is correctly marked retired, while service tiers, Fabric and Arc capabilities, database watcher, migration paths, drivers, security, retention, and HA/DR support are recheckable."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs require disposable SQL and Azure resources, budgets, safe blocking and failure injection, backups, evidence, planned rather than destructive failover, and cleanup."},
-            "readiness_check_quality": {"status": "passed", "notes": "Twenty-eight original answered checks test platform selection, migration, security, performance evidence, repeatable automation, and recoverability without recalled content."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The August 31 record matches the objective hash, five-domain map, three scenarios, eight labs, twenty-eight checks, and 65/62/3/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Fabric and Arc content is explicitly in scope and the repeated Microsoft scope disclosure is standard metadata; no irrelevant leakage, copied course text, or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The guide matches the April 24, 2026 five-domain 15–20/20–25/20–25/15–20/20–25 Azure and hybrid SQL administration blueprint."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Platform and migration, security, monitoring and optimization, automation, and HA/DR receive platform-specific implementation, troubleshooting, scenario, lab, and answer coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All sixty-five cited URLs are cataloged: sixty-two are reachable and three O'Reilly or Udemy pages are automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active 100-minute assessment, annual role-based renewal, official four-day course, and Microsoft Practice Assessment are accurately separated from blueprint scope."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Platform responsibility, migration, Entra and SQL authorization, network and encryption, telemetry and query tuning, safe automation, backup, replication, failover, and restoration form a coherent DBA lifecycle."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Azure Data Studio is correctly marked retired, while service tiers, Fabric and Arc capabilities, database watcher, migration paths, drivers, security, retention, and HA/DR support are recheckable."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs require disposable SQL and Azure resources, budgets, safe blocking and failure injection, backups, evidence, planned rather than destructive failover, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty-eight original answered checks test platform selection, migration, security, performance evidence, repeatable automation, and recoverability without recalled content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The August 31 record matches the objective hash, five-domain map, three scenarios, eight labs, twenty-eight checks, and 65/62/3/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Fabric and Arc content is explicitly in scope and the repeated Microsoft scope disclosure is standard metadata; no irrelevant leakage, copied course text, or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide preserves crucial distinctions among Azure control-plane state, SQL data-plane behavior, client paths, and observability."
@@ -6042,16 +6192,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The guide matches the January 2026 seven-domain 25–30/10–15/10–15/10–15/5–10/10–15/5–10 GitHub Foundations blueprint."},
-            "objective_coverage": {"status": "passed", "notes": "Git and GitHub basics, repositories, collaboration, modern practices, Projects, security and administration, and community topics all receive substantive explanation and applied practice."},
-            "material_claim_support": {"status": "passed", "notes": "All sixty-nine actual citations are cataloged: sixty-six are reachable and three DataCamp, O'Reilly, or Udemy pages are automation-blocked, with none missing or errored; four example repository URLs are placeholders, not citations."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The January baseline and domain weights are clear, and no unsupported duration, question-count, score, or delivery details are presented."},
-            "technical_coherence": {"status": "passed", "notes": "Git state and history, repository ownership, issues and pull requests, Actions, environments, Projects, permissions, rulesets, supply-chain controls, open source, and Copilot form a coherent collaboration system."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "Plans, pricing, feature availability, previews, GHES cadence, UI paths, quotas, retention, commands, Copilot models, and policy details are explicitly marked for current verification."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs use a disposable repository, fake rather than real secrets, plan-aware optional controls, protected workflow boundaries, observable results, and cleanup."},
-            "readiness_check_quality": {"status": "passed", "notes": "The high-value distinction table, command sheet, seven-session plan, and detailed readiness checklist test applied GitHub reasoning and safe command selection."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 5 repair revalidation matches the objective hash, seven-domain map, repaired Copilot plan comparison, eight labs, and 69/66/3/0 citation evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Terraform and Azure Key Vault provide a consistent repository-workflow example rather than a second certification syllabus; standard GitHub-family resource text is non-substantive and no suspicious copying was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The guide matches the January 2026 seven-domain 25–30/10–15/10–15/10–15/5–10/10–15/5–10 GitHub Foundations blueprint."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Git and GitHub basics, repositories, collaboration, modern practices, Projects, security and administration, and community topics all receive substantive explanation and applied practice."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All sixty-nine actual citations are cataloged: sixty-six are reachable and three DataCamp, O'Reilly, or Udemy pages are automation-blocked, with none missing or errored; four example repository URLs are placeholders, not citations."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The January baseline and domain weights are clear, and no unsupported duration, question-count, score, or delivery details are presented."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Git state and history, repository ownership, issues and pull requests, Actions, environments, Projects, permissions, rulesets, supply-chain controls, open source, and Copilot form a coherent collaboration system."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Plans, pricing, feature availability, previews, GHES cadence, UI paths, quotas, retention, commands, Copilot models, and policy details are explicitly marked for current verification."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use a disposable repository, fake rather than real secrets, plan-aware optional controls, protected workflow boundaries, observable results, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "The high-value distinction table, command sheet, seven-session plan, and detailed readiness checklist test applied GitHub reasoning and safe command selection."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 5 repair revalidation matches the objective hash, seven-domain map, repaired Copilot plan comparison, eight labs, and 69/66/3/0 citation evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Terraform and Azure Key Vault provide a consistent repository-workflow example rather than a second certification syllabus; standard GitHub-family resource text is non-substantive and no suspicious copying was found."
+            }
           },
           "findings": [],
           "notes": "The guide is comprehensive but retains a simple record, share, collaborate, automate, govern, secure, and assist mental model."
@@ -6061,21 +6241,51 @@
           "vendor_id": "microsoft",
           "guide_path": "guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md",
           "guide_content_sha256": "4003acd1319f7ff342fdde8d7ebd024fdc1a7cb0053f88c4da07e006104e3e38",
-          "blueprint_snapshot_path": "data/objective-snapshots/dp-420-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/archive/dp-420-7966ceca9589ef574018cacb35f5bcd02a55b148a34107310b5e7c9e1e52de7a.txt",
           "blueprint_snapshot_sha256": "7966ceca9589ef574018cacb35f5bcd02a55b148a34107310b5e7c9e1e52de7a",
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The guide matches the July 21, 2026 five-domain 35–40/5–10/5–10/15–20/25–30 Azure Cosmos DB developer blueprint."},
-            "objective_coverage": {"status": "passed", "notes": "Modeling, distribution, integration, optimization, and maintenance receive detailed SDK, query, server-side, security, operations, scenario, lab, and answer coverage for every published bullet."},
-            "material_claim_support": {"status": "passed", "notes": "All seventy-six cited URLs are cataloged: seventy-three are reachable and three O'Reilly or Udemy pages are automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The active 100-minute specialty assessment, annual renewal, official four-day course, and Microsoft Practice Assessment are accurately identified without invented item or score details."},
-            "technical_coherence": {"status": "passed", "notes": "Access patterns, item and partition boundaries, RU evidence, SDK semantics, transactions, regions and consistency, change-feed replay, indexing, security, backup, migration, and IaC form a consistent distributed-system model."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "Synapse Link is correctly retained as a transitional published objective but not recommended for new projects; Fabric mirroring, emulators, SDKs, limits, tiers, regions, backup, and preview features are bounded."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs use a disposable account and budget, synthetic data, current emulator where appropriate, controlled concurrency and failover, no shared-production destruction, evidence, and cleanup."},
-            "readiness_check_quality": {"status": "passed", "notes": "Thirty original prompts test architecture, SDK behavior, consistency, replay, performance, authorization, recovery, and deployment without recalled exam content."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The August 31 record matches the objective hash, five-domain map, three scenarios, eight labs, thirty checks, and 76/73/3/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Fabric, Synapse, Functions, Event Hubs, and Search are explicit integration objectives; standard scope and affiliation disclosures are benign and no suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The guide matches the July 21, 2026 five-domain 35–40/5–10/5–10/15–20/25–30 Azure Cosmos DB developer blueprint."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Modeling, distribution, integration, optimization, and maintenance receive detailed SDK, query, server-side, security, operations, scenario, lab, and answer coverage for every published bullet."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All seventy-six cited URLs are cataloged: seventy-three are reachable and three O'Reilly or Udemy pages are automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active 100-minute specialty assessment, annual renewal, official four-day course, and Microsoft Practice Assessment are accurately identified without invented item or score details."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Access patterns, item and partition boundaries, RU evidence, SDK semantics, transactions, regions and consistency, change-feed replay, indexing, security, backup, migration, and IaC form a consistent distributed-system model."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Synapse Link is correctly retained as a transitional published objective but not recommended for new projects; Fabric mirroring, emulators, SDKs, limits, tiers, regions, backup, and preview features are bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use a disposable account and budget, synthetic data, current emulator where appropriate, controlled concurrency and failover, no shared-production destruction, evidence, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty original prompts test architecture, SDK behavior, consistency, replay, performance, authorization, recovery, and deployment without recalled exam content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The August 31 record matches the objective hash, five-domain map, three scenarios, eight labs, thirty checks, and 76/73/3/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Fabric, Synapse, Functions, Event Hubs, and Search are explicit integration objectives; standard scope and affiliation disclosures are benign and no suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide makes distributed-system correctness and replay behavior as prominent as service configuration."
@@ -6090,16 +6300,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The guide follows the current unweighted EX294 tasks and reconciles them to the public RHEL 10, Ansible Core 2.16, and AAP 2.5/2.6 course baseline."},
-            "objective_coverage": {"status": "passed", "notes": "RHCSA substrate, Ansible components and configuration, navigator and development workflow, playbooks, roles and collections, RHEL automation, templates, and Vault are substantive and findable."},
-            "material_claim_support": {"status": "passed", "notes": "All eight cited URLs are cataloged: five are reachable and three O'Reilly or Udemy pages are automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The performance-based fresh-system evaluation, product-document access boundary, recommendations, unweighted objectives, and multiple-version purchase caveat are accurately preserved."},
-            "technical_coherence": {"status": "passed", "notes": "Inventory and config, execution environments, modules and data, idempotence, failure handling, reusable content, system state, templates, secrets, persistence, and validation form a coherent automation practice."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "The renamed credential, older RHCE label, purchasable exam version, RHEL and AAP versions, navigator and collection behavior, and course alignment are explicitly bounded."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs require disposable RHEL systems, harmless secrets, limited inventory scope, safe storage assertions, idempotent reruns, fresh-target replay, reboot validation, and cleanup."},
-            "readiness_check_quality": {"status": "passed", "notes": "Forty original checks test reproducibility, effective configuration, target state, error layers, security, persistence, and version awareness without recalled exam tasks."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 1 record matches the objective hash, eight mapped task groups, three scenarios, eight labs, forty checks, and 8/5/3/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Git and VS Code are explicit exam objectives and upstream Ansible is relevant product evidence; no unrelated provider leakage, copied course task, contradictory template content, or suspicious duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The guide follows the current unweighted EX294 tasks and reconciles them to the public RHEL 10, Ansible Core 2.16, and AAP 2.5/2.6 course baseline."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "RHCSA substrate, Ansible components and configuration, navigator and development workflow, playbooks, roles and collections, RHEL automation, templates, and Vault are substantive and findable."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All eight cited URLs are cataloged: five are reachable and three O'Reilly or Udemy pages are automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The performance-based fresh-system evaluation, product-document access boundary, recommendations, unweighted objectives, and multiple-version purchase caveat are accurately preserved."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Inventory and config, execution environments, modules and data, idempotence, failure handling, reusable content, system state, templates, secrets, persistence, and validation form a coherent automation practice."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The renamed credential, older RHCE label, purchasable exam version, RHEL and AAP versions, navigator and collection behavior, and course alignment are explicitly bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs require disposable RHEL systems, harmless secrets, limited inventory scope, safe storage assertions, idempotent reruns, fresh-target replay, reboot validation, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks test reproducibility, effective configuration, target state, error layers, security, persistence, and version awareness without recalled exam tasks."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, eight mapped task groups, three scenarios, eight labs, forty checks, and 8/5/3/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Git and VS Code are explicit exam objectives and upstream Ansible is relevant product evidence; no unrelated provider leakage, copied course task, contradictory template content, or suspicious duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide correctly measures success as a reproducible playbook that produces persistent requested state on a fresh host."
@@ -6114,16 +6354,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The guide matches the active CLA-11-03 four-block 29/38/25/8 syllabus last updated July 24, 2025."},
-            "objective_coverage": {"status": "passed", "notes": "Language and structures, data operations, control flow, and preprocessing and streams receive precise C explanations, scenarios, labs, and answers for all twenty-one named objectives."},
-            "material_claim_support": {"status": "passed", "notes": "All ten cited URLs are cataloged: seven are reachable and three SEI, O'Reilly, or Udemy pages are automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The 40 questions, 65-minute exam plus approximate NDA/tutorial time, 70-percent cumulative score, Pearson delivery, English, prerequisite, and purchase snapshots are clearly attributed and recheckable."},
-            "technical_coherence": {"status": "passed", "notes": "Declarations and linkage, storage and lifetime, conversions, pointers and allocation, control and function contracts, preprocessing, and checked stream I/O are internally consistent."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "The active version, syllabus date, implementation-defined behavior, language mode, format, price, language, delivery, and policy details are explicitly recheckable."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight local labs use small reproducible programs, warnings and sanitizers, disposable invalid cases, bounded input, allocation failure paths, and checked cleanup."},
-            "readiness_check_quality": {"status": "passed", "notes": "Thirty original answered checks test precise language behavior, lifetime, evaluation, bounds, and failure handling without copied exam items."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 2 record matches the objective hash, four-block map, three scenarios, eight labs, thirty checks, and 10/7/3/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "The related-item disclosure shared with adjacent C/C++ guides is standard scope metadata; no copied course content, irrelevant provider leakage, or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The guide matches the active CLA-11-03 four-block 29/38/25/8 syllabus last updated July 24, 2025."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Language and structures, data operations, control flow, and preprocessing and streams receive precise C explanations, scenarios, labs, and answers for all twenty-one named objectives."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All ten cited URLs are cataloged: seven are reachable and three SEI, O'Reilly, or Udemy pages are automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 40 questions, 65-minute exam plus approximate NDA/tutorial time, 70-percent cumulative score, Pearson delivery, English, prerequisite, and purchase snapshots are clearly attributed and recheckable."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Declarations and linkage, storage and lifetime, conversions, pointers and allocation, control and function contracts, preprocessing, and checked stream I/O are internally consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The active version, syllabus date, implementation-defined behavior, language mode, format, price, language, delivery, and policy details are explicitly recheckable."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight local labs use small reproducible programs, warnings and sanitizers, disposable invalid cases, bounded input, allocation failure paths, and checked cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty original answered checks test precise language behavior, lifetime, evaluation, bounds, and failure handling without copied exam items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, four-block map, three scenarios, eight labs, thirty checks, and 10/7/3/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "The related-item disclosure shared with adjacent C/C++ guides is standard scope metadata; no copied course content, irrelevant provider leakage, or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide adds useful modern safety practice while clearly distinguishing it from the published CLA syllabus."
@@ -6138,16 +6408,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The guide matches the active CLE-10-01 eight-block 13.25/13.25/13.25/13.25/16.5/16.5/7/7 syllabus last updated July 24, 2025."},
-            "objective_coverage": {"status": "passed", "notes": "Basic concepts, types and I/O, operators, decisions, loops, arrays and memory, strings, and functions receive precise beginner-level explanations, scenarios, labs, and answers."},
-            "material_claim_support": {"status": "passed", "notes": "All ten cited URLs are cataloged: seven are reachable and three SEI, O'Reilly, or Udemy pages are automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The 30 questions, 45-minute exam plus approximate NDA/tutorial time, four item formats, 70-percent cumulative score, TestNow, English, prerequisite, and purchase snapshots are clearly separated."},
-            "technical_coherence": {"status": "passed", "notes": "Translation, types and conversions, expressions, control flow, arrays and pointers, allocation, strings, and value-versus-pointer function behavior are internally consistent and appropriately bounded."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "The active version, syllabus date, standard-mode and implementation boundaries, price, language, delivery, format, and policy details are visibly recheckable."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight small local labs use explicit compiler modes and warnings, disposable fault cases, bounded buffers, sanitizers where available, validation, and one-release ownership."},
-            "readiness_check_quality": {"status": "passed", "notes": "Thirty original answered checks test beginner C reasoning, exact boundaries, lifetime, input, and error paths without copied exam content."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 2 record matches the objective hash, eight-block map, three scenarios, eight labs, thirty checks, and 10/7/3/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Shared adjacent C/C++ scope wording is standard metadata and examples remain CLE-specific; no copied course content, unrelated provider leakage, or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The guide matches the active CLE-10-01 eight-block 13.25/13.25/13.25/13.25/16.5/16.5/7/7 syllabus last updated July 24, 2025."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Basic concepts, types and I/O, operators, decisions, loops, arrays and memory, strings, and functions receive precise beginner-level explanations, scenarios, labs, and answers."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All ten cited URLs are cataloged: seven are reachable and three SEI, O'Reilly, or Udemy pages are automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 30 questions, 45-minute exam plus approximate NDA/tutorial time, four item formats, 70-percent cumulative score, TestNow, English, prerequisite, and purchase snapshots are clearly separated."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Translation, types and conversions, expressions, control flow, arrays and pointers, allocation, strings, and value-versus-pointer function behavior are internally consistent and appropriately bounded."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The active version, syllabus date, standard-mode and implementation boundaries, price, language, delivery, format, and policy details are visibly recheckable."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight small local labs use explicit compiler modes and warnings, disposable fault cases, bounded buffers, sanitizers where available, validation, and one-release ownership."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty original answered checks test beginner C reasoning, exact boundaries, lifetime, input, and error paths without copied exam content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, eight-block map, three scenarios, eight labs, thirty checks, and 10/7/3/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Shared adjacent C/C++ scope wording is standard metadata and examples remain CLE-specific; no copied course content, unrelated provider leakage, or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide uses precise C terminology while preserving the intent and beginner depth of the provider's occasionally informal syllabus."
@@ -6482,16 +6782,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The guide matches the current four-domain 30/26/24/20 SAA-C03 blueprint and its non-exhaustive in-scope service inventory."},
-            "objective_coverage": {"status": "passed", "notes": "Secure, resilient, high-performing, and cost-optimized design receive requirement, tradeoff, failure, scenario, lab, and readiness depth."},
-            "material_claim_support": {"status": "passed", "notes": "All twenty cited URLs are cataloged: eighteen are reachable and two commercial training pages are automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The 65-question, 130-minute, USD-150, 720-score contract and current four-domain weighting are presented without treating unscored items or the service list as hidden objectives."},
-            "technical_coherence": {"status": "passed", "notes": "IAM and multi-account boundaries, network and data protection, decoupling, scaling, recovery, compute, storage, database, hybrid networking, performance, and cost form a consistent architecture model."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "Current services, quotas, pricing, Regions, tiers, limits, feature support, and training metadata are explicit recheck points; no upcoming exam change is asserted."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs use disposable or design-only environments, least privilege, synthetic workloads, budgets, failure tests, evidence capture, recovery checks, and cleanup."},
-            "readiness_check_quality": {"status": "passed", "notes": "Forty-two original checks test design tradeoffs, failure behavior, evidence, security, resilience, performance, and cost rather than product-name recall."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 1 record matches the objective hash, four-domain map, three scenarios, eight labs, forty-two checks, and 20/18/2/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Shared AWS identity, networking, observability, data, and Well-Architected material directly supports solution design; no unrelated provider leakage or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The guide matches the current four-domain 30/26/24/20 SAA-C03 blueprint and its non-exhaustive in-scope service inventory."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Secure, resilient, high-performing, and cost-optimized design receive requirement, tradeoff, failure, scenario, lab, and readiness depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All twenty cited URLs are cataloged: eighteen are reachable and two commercial training pages are automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 65-question, 130-minute, USD-150, 720-score contract and current four-domain weighting are presented without treating unscored items or the service list as hidden objectives."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "IAM and multi-account boundaries, network and data protection, decoupling, scaling, recovery, compute, storage, database, hybrid networking, performance, and cost form a consistent architecture model."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current services, quotas, pricing, Regions, tiers, limits, feature support, and training metadata are explicit recheck points; no upcoming exam change is asserted."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use disposable or design-only environments, least privilege, synthetic workloads, budgets, failure tests, evidence capture, recovery checks, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty-two original checks test design tradeoffs, failure behavior, evidence, security, resilience, performance, and cost rather than product-name recall."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, four-domain map, three scenarios, eight labs, forty-two checks, and 20/18/2/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Shared AWS identity, networking, observability, data, and Well-Architected material directly supports solution design; no unrelated provider leakage or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide consistently asks learners to justify an architecture from requirements and measurable tradeoffs instead of memorizing a service catalog."
@@ -6506,16 +6836,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The guide matches the current SOA-C03 five-domain 22/22/22/16/18 blueprint and clearly separates it from retired SOA-C02 scope."},
-            "objective_coverage": {"status": "passed", "notes": "Monitoring and remediation, reliability, deployment and automation, security and compliance, and networking receive operational decision, diagnosis, scenario, lab, and readiness coverage."},
-            "material_claim_support": {"status": "passed", "notes": "All twenty-six cited URLs are cataloged: twenty-four are reachable and two commercial training pages are automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The 65-question, 130-minute, USD-150, 720-score contract, CloudOps renaming, and C03 replacement of C02 are stated distinctly."},
-            "technical_coherence": {"status": "passed", "notes": "Evidence-chain troubleshooting, CloudWatch and event response, availability and recovery, IaC and deployment, identity and findings, and VPC/DNS/edge diagnosis form a coherent operator workflow."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "The C02-to-C03 transition and newer container, multi-account, multi-Region, CDK, Terraform, Git, agent, and S3 Files topics are explicit, while live service and pricing details remain recheckable."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs use disposable resources, synthetic data, budgets, least privilege, controlled fault injection, rollback and recovery evidence, and cleanup."},
-            "readiness_check_quality": {"status": "passed", "notes": "Forty original checks test diagnosis, control selection, automation, failure recovery, security, networking, and operational evidence without recalled exam content."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 1 record matches the objective hash, five-domain map, three scenarios, eight labs, forty checks, and 26/24/2/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Shared AWS architectural material is applied through CloudOps operating tasks; no unrelated provider leakage, obsolete C02 scope presented as current, or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The guide matches the current SOA-C03 five-domain 22/22/22/16/18 blueprint and clearly separates it from retired SOA-C02 scope."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Monitoring and remediation, reliability, deployment and automation, security and compliance, and networking receive operational decision, diagnosis, scenario, lab, and readiness coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All twenty-six cited URLs are cataloged: twenty-four are reachable and two commercial training pages are automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 65-question, 130-minute, USD-150, 720-score contract, CloudOps renaming, and C03 replacement of C02 are stated distinctly."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Evidence-chain troubleshooting, CloudWatch and event response, availability and recovery, IaC and deployment, identity and findings, and VPC/DNS/edge diagnosis form a coherent operator workflow."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The C02-to-C03 transition and newer container, multi-account, multi-Region, CDK, Terraform, Git, agent, and S3 Files topics are explicit, while live service and pricing details remain recheckable."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use disposable resources, synthetic data, budgets, least privilege, controlled fault injection, rollback and recovery evidence, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks test diagnosis, control selection, automation, failure recovery, security, networking, and operational evidence without recalled exam content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, five-domain map, three scenarios, eight labs, forty checks, and 26/24/2/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Shared AWS architectural material is applied through CloudOps operating tasks; no unrelated provider leakage, obsolete C02 scope presented as current, or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide correctly centers the credential on observable operations and evidence-led remediation rather than isolated AWS definitions."
@@ -6530,16 +6890,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The guide covers all five July 24, 2026 domains at 5–10/20–25/20–25/20–25/20–25, including the current agent-oriented Copilot Studio wording."},
-            "objective_coverage": {"status": "passed", "notes": "Business value, environment management, Power Apps, Power Automate, and Copilot Studio receive platform boundaries, scenarios, distinctions, an integrated implementation, and readiness coverage."},
-            "material_claim_support": {"status": "passed", "notes": "All forty-one cited URLs are cataloged: thirty-nine are reachable and two commercial training pages are automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The current objective date and weights are explicit, and new feature names are not misrepresented as separate unofficial domains."},
-            "technical_coherence": {"status": "passed", "notes": "Dataverse, environment and DLP governance, app types, flow types, connectors, solutions/ALM, and agent knowledge, topics, tools, channels, evaluation, and analytics are correctly distinguished."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "Plans, code apps, vibe, Copilot experiences, desktop AI recording, agent flows, Agent 365, MCP, licensing, Regions, limits, and preview state are prominently marked for re-verification."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "The end-to-end lab uses a nonproduction environment and synthetic data, includes least privilege, DLP, positive and negative tests, solution export/import, monitoring, rollback, and cleanup."},
-            "readiness_check_quality": {"status": "passed", "notes": "Six answered questions are reinforced by fourteen objective scenarios, eleven high-value distinctions, and a ten-item capability checklist that test selection and control-boundary reasoning."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The August 31 record matches the objective hash, five-domain map, integrated scenario and lab, scenario drill, and 41/39/2/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Azure, Microsoft 365, AI Builder, MCP, and Agent 365 references clarify Power Platform integrations rather than importing unrelated exam scope; no suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The guide covers all five July 24, 2026 domains at 5–10/20–25/20–25/20–25/20–25, including the current agent-oriented Copilot Studio wording."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Business value, environment management, Power Apps, Power Automate, and Copilot Studio receive platform boundaries, scenarios, distinctions, an integrated implementation, and readiness coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All forty-one cited URLs are cataloged: thirty-nine are reachable and two commercial training pages are automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The current objective date and weights are explicit, and new feature names are not misrepresented as separate unofficial domains."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Dataverse, environment and DLP governance, app types, flow types, connectors, solutions/ALM, and agent knowledge, topics, tools, channels, evaluation, and analytics are correctly distinguished."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Plans, code apps, vibe, Copilot experiences, desktop AI recording, agent flows, Agent 365, MCP, licensing, Regions, limits, and preview state are prominently marked for re-verification."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "The end-to-end lab uses a nonproduction environment and synthetic data, includes least privilege, DLP, positive and negative tests, solution export/import, monitoring, rollback, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Six answered questions are reinforced by fourteen objective scenarios, eleven high-value distinctions, and a ten-item capability checklist that test selection and control-boundary reasoning."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The August 31 record matches the objective hash, five-domain map, integrated scenario and lab, scenario drill, and 41/39/2/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Azure, Microsoft 365, AI Builder, MCP, and Agent 365 references clarify Power Platform integrations rather than importing unrelated exam scope; no suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide is appropriately fundamentals-level while still teaching how permissions, data, automation, and agent capabilities connect end to end."
@@ -6554,16 +6944,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The guide matches the March 2026 standard five-domain 31/26/20/12/11 AIP-C01 blueprint and distinguishes it from the earlier beta outline."},
-            "objective_coverage": {"status": "passed", "notes": "Model/data/compliance, implementation/integration, safety/security/governance, operational optimization, and testing/troubleshooting receive full lifecycle, scenario, lab, and readiness depth."},
-            "material_claim_support": {"status": "passed", "notes": "All seventeen cited URLs are cataloged: fifteen are reachable and two commercial training pages are automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The standard 75-question, 180-minute, USD-300, 750-score contract is separated from beta-era scope and unofficial code usage."},
-            "technical_coherence": {"status": "passed", "notes": "Governed multimodal data and RAG, model and prompt lifecycle, tools and agents, MCP and integrations, safety, privacy, observability, evaluation, optimization, and incident evidence form a consistent production system."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "Model availability, Regions, quotas, pricing, Bedrock and AgentCore-era features, inference choices, training metadata, and lifecycle transitions are explicit recheck points."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs use synthetic or approved data, least privilege, bounded tools, adversarial tests, human approval for consequential actions, budgets, rollback, evidence, and teardown."},
-            "readiness_check_quality": {"status": "passed", "notes": "Forty-two original checks test system design, retrieval, agents, security, evaluation, operations, and troubleshooting rather than memorized feature descriptions."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 1 record matches the objective hash, five-domain map, three scenarios, eight labs, forty-two checks, and 17/15/2/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Broader AWS identity, data, integration, observability, and governance content is directly applied to GenAI workloads; no unrelated provider leakage or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The guide matches the March 2026 standard five-domain 31/26/20/12/11 AIP-C01 blueprint and distinguishes it from the earlier beta outline."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Model/data/compliance, implementation/integration, safety/security/governance, operational optimization, and testing/troubleshooting receive full lifecycle, scenario, lab, and readiness depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All seventeen cited URLs are cataloged: fifteen are reachable and two commercial training pages are automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The standard 75-question, 180-minute, USD-300, 750-score contract is separated from beta-era scope and unofficial code usage."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Governed multimodal data and RAG, model and prompt lifecycle, tools and agents, MCP and integrations, safety, privacy, observability, evaluation, optimization, and incident evidence form a consistent production system."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Model availability, Regions, quotas, pricing, Bedrock and AgentCore-era features, inference choices, training metadata, and lifecycle transitions are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use synthetic or approved data, least privilege, bounded tools, adversarial tests, human approval for consequential actions, budgets, rollback, evidence, and teardown."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty-two original checks test system design, retrieval, agents, security, evaluation, operations, and troubleshooting rather than memorized feature descriptions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, five-domain map, three scenarios, eight labs, forty-two checks, and 17/15/2/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Broader AWS identity, data, integration, observability, and governance content is directly applied to GenAI workloads; no unrelated provider leakage or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide maintains professional-level depth by connecting model behavior to data, security, tool, evaluation, cost, and operational controls."
@@ -6578,16 +6998,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The guide maps every July 28, 2026 subobjective across the 40–45/35–40/20–25 environment, incident-response, and hunting domains."},
-            "objective_coverage": {"status": "passed", "notes": "Defender XDR/Endpoint, Sentinel configuration and ingestion, detection, incident investigation and response, KQL/Advanced Hunting, Graph, lake, notebooks, MCP, Copilot, and agents receive applied depth."},
-            "material_claim_support": {"status": "passed", "notes": "All forty-eight cited URLs are cataloged: forty-six are reachable and two commercial training pages are automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The active intermediate credential, 100-minute proctored exam, annual renewal, free Practice Assessment, sandbox, and current domain weights are clearly bounded."},
-            "technical_coherence": {"status": "passed", "notes": "Telemetry, identity, roles, retention tiers, analytics rules, incidents, evidence, response actions, hunting queries, notebooks, agents, and recovery are connected without conflating their control planes."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "The March 31, 2027 Sentinel Azure-portal support end plus current data-lake, Graph, MCP, agentic investigation, Security Copilot, licensing, and UI dependencies are explicit recheck points."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight license-aware labs use synthetic data, isolated tenants or tabletop alternatives, least privilege, safe attack simulation, reversible controls, evidence capture, and cleanup."},
-            "readiness_check_quality": {"status": "passed", "notes": "Thirty-six original answered questions test configuration, query, evidence, failure, response, lifecycle, and operational reasoning without reconstructed exam content."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 1 record matches the objective hash, complete three-domain map, three scenarios, eight labs, thirty-six checks, and 48/46/2/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Purview, Audit, eDiscovery, Graph, Defender, Sentinel, and Security Copilot are explicit investigation dependencies; no unrelated provider leakage or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The guide maps every July 28, 2026 subobjective across the 40–45/35–40/20–25 environment, incident-response, and hunting domains."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Defender XDR/Endpoint, Sentinel configuration and ingestion, detection, incident investigation and response, KQL/Advanced Hunting, Graph, lake, notebooks, MCP, Copilot, and agents receive applied depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All forty-eight cited URLs are cataloged: forty-six are reachable and two commercial training pages are automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active intermediate credential, 100-minute proctored exam, annual renewal, free Practice Assessment, sandbox, and current domain weights are clearly bounded."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Telemetry, identity, roles, retention tiers, analytics rules, incidents, evidence, response actions, hunting queries, notebooks, agents, and recovery are connected without conflating their control planes."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The March 31, 2027 Sentinel Azure-portal support end plus current data-lake, Graph, MCP, agentic investigation, Security Copilot, licensing, and UI dependencies are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight license-aware labs use synthetic data, isolated tenants or tabletop alternatives, least privilege, safe attack simulation, reversible controls, evidence capture, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original answered questions test configuration, query, evidence, failure, response, lifecycle, and operational reasoning without reconstructed exam content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, complete three-domain map, three scenarios, eight labs, thirty-six checks, and 48/46/2/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Purview, Audit, eDiscovery, Graph, Defender, Sentinel, and Security Copilot are explicit investigation dependencies; no unrelated provider leakage or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide teaches investigation as an evidence-preserving workflow across alert, incident, endpoint, identity, data, query, and response surfaces."
@@ -6602,16 +7052,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The guide matches all four April 17, 2026 domains at 25–30/25–30/20–25/20–25 and preserves the SAP, Microsoft, OS, database, and hardware support boundaries."},
-            "objective_coverage": {"status": "passed", "notes": "Migration, supporting infrastructure, HA/DR, and maintenance receive sizing, supportability, dependency, failure, scenario, lab, and operational-evidence depth."},
-            "material_claim_support": {"status": "passed", "notes": "All twenty-seven cited URLs are cataloged: twenty-five are reachable and two commercial training pages are automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The current four-domain scope, official objective date, credential status, and vendor support-matrix dependencies are kept distinct from adjacent SAP expertise."},
-            "technical_coherence": {"status": "passed", "notes": "Discovery and migration, SAPS and certified sizing, networking and storage, automation, clustering and fencing, regional recovery, backup/restore, monitoring, performance, cost, and lifecycle sequencing are internally consistent."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "VM/storage certification, SAP Notes, OS/database versions, Regions/zones, quotas, licensing, support, pricing, SLA, ACSS/SDAF capabilities, and preview-sensitive behavior are marked for re-verification."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs support tabletop or authorized nonproduction execution, require support-matrix and quota checks, synthetic evidence, controlled failures, restore validation, rollback, and cleanup."},
-            "readiness_check_quality": {"status": "passed", "notes": "Twenty-four original answered checks plus scenarios and a twelve-item final checklist test architecture, supportability, recovery, and operation rather than command recall."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The August 31 record matches the objective hash, four-domain map, three scenarios, eight labs, twenty-four checks, and 27/25/2/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "SAP, RISE, OS clustering, database-native HA, ExpressRoute, storage, and automation content is required workload context; no unrelated provider leakage or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The guide matches all four April 17, 2026 domains at 25–30/25–30/20–25/20–25 and preserves the SAP, Microsoft, OS, database, and hardware support boundaries."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Migration, supporting infrastructure, HA/DR, and maintenance receive sizing, supportability, dependency, failure, scenario, lab, and operational-evidence depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All twenty-seven cited URLs are cataloged: twenty-five are reachable and two commercial training pages are automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The current four-domain scope, official objective date, credential status, and vendor support-matrix dependencies are kept distinct from adjacent SAP expertise."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Discovery and migration, SAPS and certified sizing, networking and storage, automation, clustering and fencing, regional recovery, backup/restore, monitoring, performance, cost, and lifecycle sequencing are internally consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "VM/storage certification, SAP Notes, OS/database versions, Regions/zones, quotas, licensing, support, pricing, SLA, ACSS/SDAF capabilities, and preview-sensitive behavior are marked for re-verification."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs support tabletop or authorized nonproduction execution, require support-matrix and quota checks, synthetic evidence, controlled failures, restore validation, rollback, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty-four original answered checks plus scenarios and a twelve-item final checklist test architecture, supportability, recovery, and operation rather than command recall."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The August 31 record matches the objective hash, four-domain map, three scenarios, eight labs, twenty-four checks, and 27/25/2/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "SAP, RISE, OS clustering, database-native HA, ExpressRoute, storage, and automation content is required workload context; no unrelated provider leakage or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide's strongest quality is its repeated insistence that performance, availability, and recoverability remain subordinate to the exact supported SAP combination."
@@ -6626,16 +7106,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The guide maps every March 12, 2026 objective across the 35–40/35–40/25–30 database design, secure delivery, and AI-capability domains."},
-            "objective_coverage": {"status": "passed", "notes": "Relational/specialized/JSON design, modern T-SQL, security, performance, SQL projects, DAB, observability and change, models, embeddings, vector/hybrid search, and RAG receive implementation depth."},
-            "material_claim_support": {"status": "passed", "notes": "All eighty-six cited URLs are cataloged: eighty-four are reachable and two commercial training pages are automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The active SQL AI Developer Associate scope, 120-minute English assessment, current course, and free signed-in practice route are clearly bounded."},
-            "technical_coherence": {"status": "passed", "notes": "Schema and integrity, transaction and identity boundaries, query-plan evidence, controlled deployment, API/change semantics, embedding provenance, authorization-before-retrieval, and grounded-answer evaluation form a consistent system."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "Platform Applies-to differences, compatibility levels, previews, vector index formats and tooling, Microsoft Foundry naming, model versions, and the August 2026 CES Event Hubs transition are explicit recheck points."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs use disposable databases, synthetic data, bounded endpoints and cost, least privilege, negative and failure tests, deployment/recovery evidence, and cleanup."},
-            "readiness_check_quality": {"status": "passed", "notes": "Thirty-six original checks test platform selection, SQL behavior, security, performance, delivery, change semantics, vector retrieval, RAG, and evidence without recalled items."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The August 31 record matches the objective hash, three-domain complete map, three scenarios, eight labs, thirty-six checks, and 86/84/2/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "GitHub Copilot, MCP, Fabric, Foundry, Functions, Logic Apps, and monitoring references are explicit DP-800 tools or integrations; no unrelated provider leakage or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The guide maps every March 12, 2026 objective across the 35–40/35–40/25–30 database design, secure delivery, and AI-capability domains."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Relational/specialized/JSON design, modern T-SQL, security, performance, SQL projects, DAB, observability and change, models, embeddings, vector/hybrid search, and RAG receive implementation depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All eighty-six cited URLs are cataloged: eighty-four are reachable and two commercial training pages are automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active SQL AI Developer Associate scope, 120-minute English assessment, current course, and free signed-in practice route are clearly bounded."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Schema and integrity, transaction and identity boundaries, query-plan evidence, controlled deployment, API/change semantics, embedding provenance, authorization-before-retrieval, and grounded-answer evaluation form a consistent system."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Platform Applies-to differences, compatibility levels, previews, vector index formats and tooling, Microsoft Foundry naming, model versions, and the August 2026 CES Event Hubs transition are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use disposable databases, synthetic data, bounded endpoints and cost, least privilege, negative and failure tests, deployment/recovery evidence, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks test platform selection, SQL behavior, security, performance, delivery, change semantics, vector retrieval, RAG, and evidence without recalled items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The August 31 record matches the objective hash, three-domain complete map, three scenarios, eight labs, thirty-six checks, and 86/84/2/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "GitHub Copilot, MCP, Fabric, Foundry, Functions, Logic Apps, and monitoring references are explicit DP-800 tools or integrations; no unrelated provider leakage or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide usefully treats AI-enabled SQL as a governed data, deployment, security, retrieval, and evaluation system rather than a collection of new functions."
@@ -6650,16 +7160,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The guide covers all six detailed August 7, 2026 objective groups and correctly declines to invent an extra domain from the duplicated high-level feature line."},
-            "objective_coverage": {"status": "passed", "notes": "Responsible use, current features, data architecture, prompting/context, productivity, privacy/safeguards, and administrative governance receive conceptual, operational, lab, and scenario coverage."},
-            "material_claim_support": {"status": "passed", "notes": "All fifty-eight cited URLs are cataloged: fifty-six are reachable and two training pages are automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The current blueprint date and terminology are explicit, and retired gh-copilot, Spark, Edit Mode, duplication-detection, and .copilotignore material is corrected rather than taught as current."},
-            "technical_coherence": {"status": "passed", "notes": "Instructions guide generation, Actions test changes, ownership routes review, rulesets enforce gates, policies control availability, and permissions/audit bound agents and MCP; those distinct mechanisms remain consistent throughout."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "Pricing, plans, models, credits, retention, CLI commands, previews, content-exclusion support, Copilot-submitted approvals, Spark retirement, and feature availability are prominently dated and recheckable."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Five labs use private practice repositories or paid-organization alternatives, synthetic content, retained approvals, no real secrets, deterministic validation, explicit permission checks, and no unauthorized deployment."},
-            "readiness_check_quality": {"status": "passed", "notes": "Eight answered scenarios, eighteen high-value distinctions, a six-session transfer plan, and detailed readiness checklists test practical governance and feature boundaries without leaked exam material."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 5 record matches the objective hash, six-group map, current lifecycle repairs, five labs, eight scenarios, and 58/56/2/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Terraform is used as a consistent governance example and Timothy Warner's repository is cited with explicit corrections and licensing caution; no hidden copied course material or unrelated provider leakage was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The guide covers all six detailed August 7, 2026 objective groups and correctly declines to invent an extra domain from the duplicated high-level feature line."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Responsible use, current features, data architecture, prompting/context, productivity, privacy/safeguards, and administrative governance receive conceptual, operational, lab, and scenario coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All fifty-eight cited URLs are cataloged: fifty-six are reachable and two training pages are automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The current blueprint date and terminology are explicit, and retired gh-copilot, Spark, Edit Mode, duplication-detection, and .copilotignore material is corrected rather than taught as current."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Instructions guide generation, Actions test changes, ownership routes review, rulesets enforce gates, policies control availability, and permissions/audit bound agents and MCP; those distinct mechanisms remain consistent throughout."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Pricing, plans, models, credits, retention, CLI commands, previews, content-exclusion support, Copilot-submitted approvals, Spark retirement, and feature availability are prominently dated and recheckable."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Five labs use private practice repositories or paid-organization alternatives, synthetic content, retained approvals, no real secrets, deterministic validation, explicit permission checks, and no unauthorized deployment."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Eight answered scenarios, eighteen high-value distinctions, a six-session transfer plan, and detailed readiness checklists test practical governance and feature boundaries without leaked exam material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 5 record matches the objective hash, six-group map, current lifecycle repairs, five labs, eight scenarios, and 58/56/2/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Terraform is used as a consistent governance example and Timothy Warner's repository is cited with explicit corrections and licensing caution; no hidden copied course material or unrelated provider leakage was found."
+            }
           },
           "findings": [],
           "notes": "The guide successfully connects rapidly changing Copilot features to stable engineering controls and explicitly repairs stale third-party teaching material."
@@ -6669,21 +7209,51 @@
           "vendor_id": "microsoft",
           "guide_path": "guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md",
           "guide_content_sha256": "fe7aef0a2026fdcd8a4873e9b36324747277e64f93215c5deaf22636bf1627d6",
-          "blueprint_snapshot_path": "data/objective-snapshots/dp-600-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/archive/dp-600-2b7d8452085a3503eaa3c72d3b5afd25ccb6dd2b42177e876d4c5d373051e3ec.txt",
           "blueprint_snapshot_sha256": "2b7d8452085a3503eaa3c72d3b5afd25ccb6dd2b42177e876d4c5d373051e3ec",
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The guide maps every July 21, 2026 subobjective across the 25–30/45–50/25–30 solution maintenance, data preparation, and semantic-model domains."},
-            "objective_coverage": {"status": "passed", "notes": "Governance and lifecycle, Fabric stores and transformations, SQL/KQL/DAX, semantic-model design and security, performance, Direct Lake, and AI-ready semantics receive decision, lab, scenario, and readiness depth."},
-            "material_claim_support": {"status": "passed", "notes": "All sixteen cited URLs are cataloged: fourteen are reachable and two commercial book pages are automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The current three-domain weights and July objective date are explicit, while course paths and older commercial materials are presented as learning aids rather than scope authorities."},
-            "technical_coherence": {"status": "passed", "notes": "Workspace/item/data/model controls, Git/deployment/XMLA lifecycle, lakehouse/warehouse/eventhouse selection, explicit grain and reconciliation, storage modes, DAX, performance, and AI-ready meaning form a coherent analytics contract."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "Direct Lake modes and fallback, OneLake security/integration, Real-Time hub, shortcuts, mirroring, Fabric IQ, ontology/data agents, licensing, and feature availability are explicit recheck points."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs use controlled workspaces and test identities, require security-path and reconciliation evidence, controlled breaking changes, performance comparison, rollback, and license-aware implementation."},
-            "readiness_check_quality": {"status": "passed", "notes": "Thirty-six answered checks test control layers, grain, store/language/mode selection, semantic-model behavior, lifecycle, performance, and AI readiness rather than rote definitions."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 1 record matches the objective hash, complete three-domain map, three scenarios, eight labs, thirty-six checks, and 16/14/2/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Power BI, OneLake, Eventhouse, XMLA, Fabric IQ, ontology, and data agents are required Fabric ecosystem context; no unrelated provider leakage or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The guide maps every July 21, 2026 subobjective across the 25–30/45–50/25–30 solution maintenance, data preparation, and semantic-model domains."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Governance and lifecycle, Fabric stores and transformations, SQL/KQL/DAX, semantic-model design and security, performance, Direct Lake, and AI-ready semantics receive decision, lab, scenario, and readiness depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All sixteen cited URLs are cataloged: fourteen are reachable and two commercial book pages are automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The current three-domain weights and July objective date are explicit, while course paths and older commercial materials are presented as learning aids rather than scope authorities."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Workspace/item/data/model controls, Git/deployment/XMLA lifecycle, lakehouse/warehouse/eventhouse selection, explicit grain and reconciliation, storage modes, DAX, performance, and AI-ready meaning form a coherent analytics contract."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Direct Lake modes and fallback, OneLake security/integration, Real-Time hub, shortcuts, mirroring, Fabric IQ, ontology/data agents, licensing, and feature availability are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use controlled workspaces and test identities, require security-path and reconciliation evidence, controlled breaking changes, performance comparison, rollback, and license-aware implementation."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six answered checks test control layers, grain, store/language/mode selection, semantic-model behavior, lifecycle, performance, and AI readiness rather than rote definitions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, complete three-domain map, three scenarios, eight labs, thirty-six checks, and 16/14/2/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Power BI, OneLake, Eventhouse, XMLA, Fabric IQ, ontology, and data agents are required Fabric ecosystem context; no unrelated provider leakage or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide consistently traces analytical data from governed source and grain through semantic meaning, security, deployment, and user or AI consumption."
@@ -6698,16 +7268,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The guide covers all eight unweighted Terraform Associate 004 domains and the 38 published subobjectives for Terraform 1.12 without inventing percentage weights."},
-            "objective_coverage": {"status": "passed", "notes": "IaC, fundamentals, workflow, configuration, modules, state, maintenance, and HCP Terraform receive distinctions, examples, safe labs, checks, and final readiness coverage."},
-            "material_claim_support": {"status": "passed", "notes": "All thirty-three cited URLs are cataloged: thirty-one are reachable and two commercial training pages are automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "Terraform Associate (004) is correctly treated as the credential name and a library catalog identifier rather than a fabricated vendor exam code; provider-specific cloud knowledge is not asserted as required."},
-            "technical_coherence": {"status": "passed", "notes": "Configuration, provider, graph, plan, apply and state behavior; dependencies and lifecycle; conditions; sensitive/ephemeral/write-only data; modules; refactoring/import; and HCP runs/governance are correctly separated."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "The Terraform 1.12 target, 004 additions, HCP editions, entitlements, UI labels, policy features, service limits, and Terraform Enterprise parity are explicit recheck points."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Six labs emphasize provider-free or disposable work, prediction before mutation, saved-plan review, nonproduction preconditions, safe state/address experiments, credential boundaries, and complete cleanup."},
-            "readiness_check_quality": {"status": "passed", "notes": "Twenty original questions and seventeen high-value distinctions test command semantics, graph/state reasoning, secret persistence, safe lifecycle change, modules, import, and HCP governance."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The August 31 record matches the objective hash, eight-domain and 38-subobjective map, six labs, twenty checks, and 33/31/2/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "AWS examples are explicitly syntax demonstrations and HCP material is required scope; no unrelated provider requirements, older 003 scope substitution, copied training content, or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The guide covers all eight unweighted Terraform Associate 004 domains and the 38 published subobjectives for Terraform 1.12 without inventing percentage weights."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "IaC, fundamentals, workflow, configuration, modules, state, maintenance, and HCP Terraform receive distinctions, examples, safe labs, checks, and final readiness coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All thirty-three cited URLs are cataloged: thirty-one are reachable and two commercial training pages are automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Terraform Associate (004) is correctly treated as the credential name and a library catalog identifier rather than a fabricated vendor exam code; provider-specific cloud knowledge is not asserted as required."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Configuration, provider, graph, plan, apply and state behavior; dependencies and lifecycle; conditions; sensitive/ephemeral/write-only data; modules; refactoring/import; and HCP runs/governance are correctly separated."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The Terraform 1.12 target, 004 additions, HCP editions, entitlements, UI labels, policy features, service limits, and Terraform Enterprise parity are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Six labs emphasize provider-free or disposable work, prediction before mutation, saved-plan review, nonproduction preconditions, safe state/address experiments, credential boundaries, and complete cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty original questions and seventeen high-value distinctions test command semantics, graph/state reasoning, secret persistence, safe lifecycle change, modules, import, and HCP governance."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The August 31 record matches the objective hash, eight-domain and 38-subobjective map, six labs, twenty checks, and 33/31/2/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "AWS examples are explicitly syntax demonstrations and HCP material is required scope; no unrelated provider requirements, older 003 scope substitution, copied training content, or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide gives the 004 additions appropriate emphasis while preserving a safe, provider-agnostic explanation of Terraform's operating model."
@@ -8831,7 +9431,7 @@
           "vendor_id": "microsoft",
           "guide_path": "guides/PL-400-microsoft-power-platform-developer.md",
           "guide_content_sha256": "fdda4eee22ad91fae9fcb6a5709d4320bde903c3831d088927d57fe6ff50e33b",
-          "blueprint_snapshot_path": "data/objective-snapshots/pl-400-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/archive/pl-400-4867995d075161ae07190d54a25c84872deb9efc388a7629743ee6bc49b8f468.txt",
           "blueprint_snapshot_sha256": "4867995d075161ae07190d54a25c84872deb9efc388a7629743ee6bc49b8f468",
           "audited_on": "2026-09-06",
           "verdict": "pass",
@@ -9033,7 +9633,7 @@
           "vendor_id": "microsoft",
           "guide_path": "guides/DP-700-implementing-data-engineering-solutions-microsoft-fabric.md",
           "guide_content_sha256": "3bfd2185679a7011ee77da9fe5519ce9de2ba7ac9be628d274b3d4c75c2d82a4",
-          "blueprint_snapshot_path": "data/objective-snapshots/dp-700-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/archive/dp-700-b250753e6f60be9e2a9625e9849d575999dc56fc6afe43788a85ce43db5e25a8.txt",
           "blueprint_snapshot_sha256": "b250753e6f60be9e2a9625e9849d575999dc56fc6afe43788a85ce43db5e25a8",
           "audited_on": "2026-09-06",
           "verdict": "pass",

@@ -8,18 +8,16 @@ authority: unofficial
 review_status: review-required
 last_verified: 2026-10-28
 upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # MS-102 Microsoft 365 Administrator Study Guide
 
-> **REFRESH IN PROGRESS — REVIEW REQUIRED (October 28, 2026).** Selected lifecycle, technical and source evidence was checked today. The dated complete review below remains historical; a complete guide/source reconciliation and independent human review remain pending.
-
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; ONE BACKUP DOCUMENTATION GAP OPEN; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; second-year Backup recovery-point cadence remains unverified. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ms-102-coverage-record). The [official MS-102 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#ms-102) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ms-102-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102) is authoritative.
 
 **Current baseline:** Skills measured as of April 28, 2026.<br>
 **Retirement:** The exam and Microsoft 365 Certified: Administrator Expert certification retire November 30, 2026, at 11:59 PM Central Standard Time. They cannot be earned or renewed after that date.<br>
-**Replacement:** Microsoft had not named a direct replacement on the official blueprint, credential page, or retirement page as of September 28, 2026. Do not infer one from a neighboring certification.<br>
+**Replacement:** Microsoft had not named a direct replacement on the official blueprint, credential page, or retirement page as rechecked October 28, 2026. Do not infer one from a neighboring certification.<br>
 **Upcoming blueprint change:** Retirement is announced; no separate pre-retirement objective revision is announced.<br>
 **Practice Assessment:** A free Microsoft Practice Assessment is available.<br>
 **Official source:** [MS-102 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102)
@@ -30,7 +28,7 @@ upcoming_change_checked: 2026-09-28
 
 **Confirmed — VERIFY CURRENT (October 28, 2026).** Backup Activity Logs show policy/restore operations, including failures and partial success, and support filtered CSV export. Their retention is a fixed 365 days; read-only operations are omitted. Workload-admin visibility follows role scope. Use these logs for troubleshooting and Microsoft Purview Audit for the compliance audit record; an empty operational view does not prove no one accessed the service. [What's new in Microsoft 365 Backup](https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide) · [Privacy, security, and compliance in Microsoft 365 Backup](https://learn.microsoft.com/en-us/microsoft-365/backup/backup-privacy-security?view=o365-worldwide)
 
-These are bounded operational updates, not a completed objective rebaseline. Product and tenant exercises were not run. Earlier unresolved support and documentation gaps remain.
+These dated operational notes supplement the objective treatment in this refresh. Product and tenant exercises were not run. Unresolved support and documentation gaps remain stated at the affected topic.
 
 ## How to use this guide
 
@@ -48,7 +46,7 @@ business requirement
 
 Read the four domain sections, work the three integrated scenarios, complete or tabletop all ten labs, and answer the 44 original checks with the answer key. Use a disposable Microsoft 365 developer or test tenant where possible. Some Defender, Purview, Entra ID Governance, Backup, and advanced analytics features require specific licenses; never alter a production tenant simply to reproduce a lab.
 
-This credential also requires one qualifying associate certification: Endpoint Administrator, Teams Administrator, Identity and Access Administrator, or Information Security Administrator. Confirm the current prerequisite choices and completion rules on the [Administrator Expert credential page](https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/) before scheduling.
+This credential also requires one qualifying associate certification: Endpoint Administrator, Teams Administrator, Identity and Access Administrator, or Information Security Administrator. Confirm the current prerequisite choices and completion rules on the [Administrator Expert credential page](https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/) before scheduling. **Source discrepancy — October 28, 2026:** That credential page lists four options, including Information Security Administrator; the study-guide audience lists only three. Do not silently discard the fourth credential-page option or infer eligibility from a course. Confirm ambiguous qualification with Microsoft Credentials support.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
@@ -133,6 +131,22 @@ Cloud users are mastered in Entra ID; synchronized users are normally mastered i
 
 Licensing is assignment plus successful downstream service provisioning. Direct assignment is simple for exceptions but becomes difficult to govern at scale. Group-based licensing connects entitlement to group membership and can expose assignment errors that must be resolved. Nested group membership does not inherit licenses: only direct user members of the licensed group receive its assignment. Track available units, disabled service plans, conflicting assignments, usage location, group processing errors, and reclaimed licenses. Review [group-based licensing](https://learn.microsoft.com/en-us/entra/identity/users/licensing-groups-assign) before designing automation.
 
+#### Worked example — bounded Entra PowerShell inventory
+
+Compare a bounded Microsoft Entra PowerShell user inventory with the existing Graph inventory by immutable object ID. Verify tenant context, consent, module version, properties, pagination and time window. `Get-EntraUser -Top 3` is a sample; `-All` requests the collection. Neither proves licensing or workload provisioning. Retain partial failures and compare IDs rather than row order/display names.
+
+```powershell
+Connect-Entra -Scopes 'User.Read.All'
+Get-EntraUser -Top 3 | Select-Object Id, DisplayName, UserPrincipalName
+# -All only when the approved inventory requires every page.
+```
+
+**Question:** Three rows match Graph; did all 600 bulk changes succeed?
+
+**Answer:** No. Compare full intended ID set, per-object results and downstream state; a sample does not establish population completion.
+
+[Primary reference 1](https://learn.microsoft.com/en-us/powershell/module/microsoft.entra.users/get-entrauser?view=entra-powershell)
+
 ### Worked example 2: membership is not successful provisioning
 
 A licensed group contains 50 direct users and a nested group with 20 additional users. Three direct users have assignment errors. If nobody has another assignment, only **47 users have a successful assignment**, not 70; the 20 nested-only users do not inherit it, and three direct users still need repair. Record each error and verify the service plans and workload provisioning after repair. Do not confuse a membership count with effective entitlements.
@@ -187,7 +201,13 @@ Use [Connect Health synchronization monitoring](https://learn.microsoft.com/en-u
 
 ### Keep sync version, authentication and monitoring failures separate
 
-[Connect hardening guidance](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks) requires **Connect Sync 2.5.79.0 or later by September 30, 2026**; older versions lose synchronization until upgraded. Connect Health has a separate minimum, **4.5.2466.0**, for its Sync, AD DS and AD FS agents. Old Health agents lose specified Sync alerts or all AD DS/AD FS alerts; missing alerts do not prove the directory or authentication is healthy.
+**Confirmed — VERIFY CURRENT (October 28, 2026).** The current [Connect hardening requirements](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks) name **Connect Sync 2.6.84.0 or later**; the earlier 2.5.79.0 minimum is superseded. Connect Health still has the separate **4.5.2466.0** minimum for its Sync, AD DS and AD FS agents. The [version history](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history) records 2.5.79.0 support ending October 23, 2026. Absence of Health alerts does not establish successful synchronization.
+
+> **Related item:** **Next authentication deadline.** Microsoft now requires **both 2.6.84.0+ and application-based authentication by April 7, 2027**; unmet requirements can stop synchronization. Inventory installed build and actual authentication configuration separately. A current binary alone does not prove migration from the legacy account model.
+
+**Proposed practice extension — not executed:** Add two synthetic servers: supported version with legacy authentication, and retired 2.5.79 with a functioning Health agent. Explain each independent failure boundary and evidence required to repair it; do not upgrade or change tenant authentication for this research.
+
+**Answer checkpoint:** Does upgrading to a supported binary alone satisfy the April 2027 requirement? No; application-based authentication is separately required.
 
 The minimum is not the preferred current release. On September 28, [version history](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history) lists **2.6.92.0**, released September 23, fixing a 2.6.91.0 PTA-agent registration failure. It also lists 2.5.79.0 support ending October 23. Use the Entra admin-center download and validate OS/.NET/TLS, topology, backup/export, staging and rollback; auto-upgrade does not always deliver the newest release. Inspect app-scoped Conditional Access after 2.6.91's Graph permission changes. A migration wizard does not prove Cloud Sync meets every existing topology requirement.
 
@@ -517,6 +537,14 @@ These are original study questions, not recalled or reconstructed exam items. An
 - [ ] I passed an independent readiness check without relying on recalled live-exam content.
 
 ## Places to learn
+
+### October 28 learning route and evidence task
+
+The [official MS-102 course](https://learn.microsoft.com/en-us/training/courses/ms-102t00) still publishes **five instructor-led days**. The [Pluralsight path](https://www.pluralsight.com/paths/microsoft-365-certified-administrator-expert-microsoft-365-administrator-ms-102) still lists five 2025 courses totaling 7 hours 44 minutes (header rounded to 8 hours). These are content-consumption figures; they do not include tenant preparation, negative tests or source review. Choose one route and use the April 2026 objective map to identify gaps. Existing blocked book/Udemy details remain historical; class availability and retirement timing require their own current checks.
+
+**Original resource-gap audit (about 45–60 minutes, editorial estimate):** Choose one task from tenant operations, identity, Defender and Purview. Map each to a specific lesson, current product reference, lab evidence and unresolved limitation. Prioritize a missing high-impact task rather than replaying a familiar whole course.
+
+**Answer checkpoint:** Completing every listed video does not establish readiness if you cannot produce the task’s permitted/denied result and recovery evidence. A dated public syllabus establishes advertised coverage, not current lesson accuracy.
 
 This is a curated starting point, **not a complete list**. Do not try to consume every item. Pick the format and depth that work for you, use the current official blueprint as the coverage checklist, and reserve substantial time for tenant practice, negative tests, troubleshooting, and review. Because MS-102 retires November 30, 2026, verify that any planned course and exam date leave enough recovery time for rescheduling.
 

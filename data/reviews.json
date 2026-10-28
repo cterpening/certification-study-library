@@ -3371,7 +3371,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-27",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/dp-300-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/dp-300-08cba3368c07be28f4abeea90be94256a0cd0fc247ed53f2561fd340c0df3e4b.txt",
       "blueprint_snapshot_sha256": "08cba3368c07be28f4abeea90be94256a0cd0fc247ed53f2561fd340c0df3e4b",
       "objective_coverage": [
         {
@@ -3437,7 +3437,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-27",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/dp-420-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/dp-420-7966ceca9589ef574018cacb35f5bcd02a55b148a34107310b5e7c9e1e52de7a.txt",
       "blueprint_snapshot_sha256": "7966ceca9589ef574018cacb35f5bcd02a55b148a34107310b5e7c9e1e52de7a",
       "objective_coverage": [
         {
@@ -3503,7 +3503,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-27",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/dp-750-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/dp-750-eba786118a9e5129571b0a9505b8849bd82f3cdf84e2da759d735f354f27fb84.txt",
       "blueprint_snapshot_sha256": "eba786118a9e5129571b0a9505b8849bd82f3cdf84e2da759d735f354f27fb84",
       "objective_coverage": [
         {
@@ -4359,7 +4359,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-27",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/dp-600-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/dp-600-2b7d8452085a3503eaa3c72d3b5afd25ccb6dd2b42177e876d4c5d373051e3ec.txt",
       "blueprint_snapshot_sha256": "2b7d8452085a3503eaa3c72d3b5afd25ccb6dd2b42177e876d4c5d373051e3ec",
       "objective_coverage": [
         {
@@ -4409,7 +4409,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-27",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/dp-700-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/dp-700-b250753e6f60be9e2a9625e9849d575999dc56fc6afe43788a85ce43db5e25a8.txt",
       "blueprint_snapshot_sha256": "b250753e6f60be9e2a9625e9849d575999dc56fc6afe43788a85ce43db5e25a8",
       "objective_coverage": [
         {
@@ -4567,7 +4567,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-27",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/pl-400-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/pl-400-4867995d075161ae07190d54a25c84872deb9efc388a7629743ee6bc49b8f468.txt",
       "blueprint_snapshot_sha256": "4867995d075161ae07190d54a25c84872deb9efc388a7629743ee6bc49b8f468",
       "objective_coverage": [
         {
@@ -19738,7 +19738,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-10-28",
       "outcome": "blocked",
-      "blueprint_snapshot_path": "data/objective-snapshots/pl-400-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/pl-400-4867995d075161ae07190d54a25c84872deb9efc388a7629743ee6bc49b8f468.txt",
       "blueprint_snapshot_sha256": "4867995d075161ae07190d54a25c84872deb9efc388a7629743ee6bc49b8f468",
       "objective_coverage": [
         {
@@ -20549,6 +20549,1237 @@
         "missing_or_error": 0
       },
       "notes": "Complete-guide team research;64 retained objectives mapped. Current accepted snapshots unchanged;AB100 futureoutline separately mapped. Public-source gate passed with scoped product/runtime limits. See docs/research/2026-10-28-ab100-gh300-ai103-refresh.md and ADLC_Docs/operations/2026-10-28-ab100-gh300-ai103-refresh.json; no human/product verification inferred."
+    },
+    {
+      "id": "dp-300-2026-10-28-remaining-group01-source-validation",
+      "exam_code": "DP-300",
+      "guide_path": "guides/DP-300-administering-microsoft-azure-sql-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/dp-300-official-objectives.txt",
+      "blueprint_snapshot_sha256": "f9f0c06f1a6e639035fd75d0db063dd6edcb30f50079e5a5157255ed4408ae57",
+      "objective_coverage": [
+        {
+          "objective_group": "Plan and deploy Azure SQL solutions",
+          "guide_sections": [
+            "Choose the database offering from workload constraints",
+            "Plan automated deployment",
+            "Automate resource deployment with ARM and Bicep",
+            "Plan hybrid SQL and patching",
+            "Partition, compress, and shard deliberately",
+            "Lab 1 — Compare and deploy Azure SQL targets"
+          ]
+        },
+        {
+          "objective_group": "Configure resources for scale and performance",
+          "guide_sections": [
+            "Azure SQL Database",
+            "Azure SQL Managed Instance",
+            "SQL Server on Azure VMs",
+            "Partition, compress, and shard deliberately"
+          ]
+        },
+        {
+          "objective_group": "Plan and implement a migration strategy",
+          "guide_sections": [
+            "Discover and assess",
+            "Choose online versus offline",
+            "Execute and validate",
+            "Worked example — completion is a separate migration step",
+            "Migration failure patterns"
+          ]
+        },
+        {
+          "objective_group": "Configure database authentication and authorization",
+          "guide_sections": [
+            "Configure Microsoft Entra authentication",
+            "Model SQL authorization",
+            "Lab 3 — Implement layered Azure SQL security",
+            "Worked example — object permissions and actual sign-in are separate",
+            "Security failure patterns"
+          ]
+        },
+        {
+          "objective_group": "Implement security for data at rest and data in transit",
+          "guide_sections": [
+            "Choose the correct encryption boundary",
+            "Protect network and transport",
+            "Select the enclave and client together"
+          ]
+        },
+        {
+          "objective_group": "Implement compliance controls for sensitive data",
+          "guide_sections": [
+            "Classification and auditing",
+            "Change tracking and change data capture",
+            "Dynamic data masking",
+            "Ledger",
+            "Row-level security"
+          ]
+        },
+        {
+          "objective_group": "Monitor resource activity and performance",
+          "guide_sections": [
+            "Start with an operational baseline",
+            "Choose the signal source",
+            "Performance failure patterns",
+            "Configure database watcher",
+            "Worked example — count targets and prove collection",
+            "Use Extended Events with narrow intent"
+          ]
+        },
+        {
+          "objective_group": "Monitor and optimize query performance",
+          "guide_sections": [
+            "Configure and interpret Query Store",
+            "Worked example — an average of averages hides the workload",
+            "Diagnose blocking, deadlocks and waits",
+            "Index decisions",
+            "Read execution plans and improve query constructs",
+            "Monitor with Intelligent Insights"
+          ]
+        },
+        {
+          "objective_group": "Configure database solutions for optimal performance",
+          "guide_sections": [
+            "Configure maintenance and integrity checks",
+            "Use automatic tuning and Intelligent Query Processing safely",
+            "Configure server and database performance settings",
+            "Configure scale and performance by platform"
+          ]
+        },
+        {
+          "objective_group": "Create and manage SQL Server Agent jobs",
+          "guide_sections": [
+            "Create and manage SQL Server Agent jobs",
+            "Automation failure patterns"
+          ]
+        },
+        {
+          "objective_group": "Automate deployment of database resources",
+          "guide_sections": [
+            "Automate resource deployment with ARM and Bicep",
+            "Automation failure patterns"
+          ]
+        },
+        {
+          "objective_group": "Create and manage database tasks in Azure",
+          "guide_sections": [
+            "Build elastic jobs",
+            "Automate database tasks in Azure",
+            "Alert on automation",
+            "Automation failure patterns"
+          ]
+        },
+        {
+          "objective_group": "Plan an HA/DR strategy for database solutions",
+          "guide_sections": [
+            "Translate business objectives into mechanisms",
+            "Plan SQL Managed Instance and SQL Server HA/DR",
+            "Compare Azure SQL Database continuity options",
+            "Test the complete recovery path"
+          ]
+        },
+        {
+          "objective_group": "Plan and perform backup and restore of a database",
+          "guide_sections": [
+            "Back up and restore by platform",
+            "SQL Server native backup",
+            "Restore validation",
+            "Azure SQL Database and Managed Instance automated backup"
+          ]
+        },
+        {
+          "objective_group": "Configure HA/DR for database solutions",
+          "guide_sections": [
+            "Compare Azure SQL Database continuity options",
+            "Plan SQL Managed Instance and SQL Server HA/DR",
+            "Configure and operate AGs, FCIs, geo-replication and log shipping",
+            "HA/DR failure patterns"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 80,
+        "reachable": 77,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Complete immutable-guide reading and final-diff reconciliation by exam researcher; 94 current detailed objectives mapped. Selected technical/resource bodies inspected by role researchers; no full independent semantic audit or human/service verification inferred. Current bounded source gate passed. See docs/research/2026-10-28-microsoft-refresh-group-01.md and ADLC_Docs/operations/2026-10-28-microsoft-refresh-group-01.json."
+    },
+    {
+      "id": "dp-420-2026-10-28-remaining-group01-source-validation",
+      "exam_code": "DP-420",
+      "guide_path": "guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/dp-420-official-objectives.txt",
+      "blueprint_snapshot_sha256": "f796c1974699f0196b5e60e449409ceb3ccf9cf17b99e92206a1913d220ae351",
+      "objective_coverage": [
+        {
+          "objective_group": "Evaluate resource models and SDK solutions",
+          "guide_sections": [
+            "Choose consistency from observable guarantees",
+            "Estimate throughput and storage",
+            "Serverless versus provisioned throughput",
+            "Separate the resource, distribution, and request models",
+            "Implement DevOps and infrastructure as code",
+            "Implement SDK connectivity"
+          ]
+        },
+        {
+          "objective_group": "Implement database operations",
+          "guide_sections": [
+            "Query with the NoSQL query language",
+            "Pagination and continuation",
+            "Point operations and queries",
+            "Transactional batch versus bulk",
+            "Transactional TTL",
+            "Optimistic concurrency"
+          ]
+        },
+        {
+          "objective_group": "Design and implement data models and partitioning strategies",
+          "guide_sections": [
+            "Model from access patterns, not relational tables",
+            "Choose a partition-key strategy",
+            "Natural, synthetic, and hierarchical keys",
+            "Status-code triage",
+            "Estimate throughput and storage"
+          ]
+        },
+        {
+          "objective_group": "Implement change feed",
+          "guide_sections": [
+            "Implement event-driven derived models",
+            "Change-feed modes, copy jobs and AI-assisted development",
+            "Change feed processor"
+          ]
+        },
+        {
+          "objective_group": "Design and implement Azure Cosmos DB solutions by using AI-assisted tools",
+          "guide_sections": [
+            "Change-feed modes, copy jobs and AI-assisted development",
+            "Lab 10: review generated changes and operational boundaries"
+          ]
+        },
+        {
+          "objective_group": "Implement database security controls",
+          "guide_sections": [
+            "Control plane versus data plane",
+            "Network and browser controls",
+            "Masking, Fleet capacity and analytics boundaries",
+            "Lab 10: review generated changes and operational boundaries"
+          ]
+        },
+        {
+          "objective_group": "Implement availability and recovery solutions",
+          "guide_sections": [
+            "Implement backup and restore",
+            "Derive topology from user and failure requirements",
+            "Design multi-region writes and conflict resolution",
+            "Configure failover and application routing"
+          ]
+        },
+        {
+          "objective_group": "Optimize and remediate database performance",
+          "guide_sections": [
+            "Improve query and operation cost",
+            "Optimize from measured request evidence",
+            "Define an indexing strategy",
+            "Monitor the whole request path"
+          ]
+        },
+        {
+          "objective_group": "Implement Fleet management and monitoring across multiple accounts and subscriptions",
+          "guide_sections": [
+            "Masking, Fleet capacity and analytics boundaries",
+            "Lab 10: review generated changes and operational boundaries",
+            "Monitor the whole request path"
+          ]
+        },
+        {
+          "objective_group": "Design and implement AI retrieval",
+          "guide_sections": [
+            "Retrieval, grounding and durable agent memory",
+            "Lab 9: tenant-safe retrieval and memory",
+            "Worked example — a valid embedding can have an invalid index design",
+            "Choose a partition-key strategy",
+            "Improve query and operation cost"
+          ]
+        },
+        {
+          "objective_group": "Design and implement agent memory stores",
+          "guide_sections": [
+            "Retrieval, grounding and durable agent memory",
+            "Lab 9: tenant-safe retrieval and memory",
+            "Optimistic concurrency"
+          ]
+        },
+        {
+          "objective_group": "Design and implement operational analytics on Azure Cosmos DB",
+          "guide_sections": [
+            "Masking, Fleet capacity and analytics boundaries",
+            "Fabric mirroring and time travel",
+            "Existing analytical-store path"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 92,
+        "reachable": 89,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Complete immutable-guide reading and final-diff reconciliation by exam researcher; 56 current detailed objectives mapped. Selected technical/resource bodies inspected by role researchers; no full independent semantic audit or human/service verification inferred. Current bounded source gate passed. See docs/research/2026-10-28-microsoft-refresh-group-01.md and ADLC_Docs/operations/2026-10-28-microsoft-refresh-group-01.json."
+    },
+    {
+      "id": "dp-750-2026-10-28-remaining-group01-source-validation",
+      "exam_code": "DP-750",
+      "guide_path": "guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/dp-750-official-objectives.txt",
+      "blueprint_snapshot_sha256": "d44f3f814718f33dd69dd72f48381609f4cde30d0b5c9fe1656380223fb2571e",
+      "objective_coverage": [
+        {
+          "objective_group": "Select and configure compute in a workspace",
+          "guide_sections": [
+            "Select compute from workload and governance requirements",
+            "Configure performance and cost settings",
+            "Install libraries safely",
+            "Configure compute permissions"
+          ]
+        },
+        {
+          "objective_group": "Create and organize objects in Unity Catalog",
+          "guide_sections": [
+            "Naming and isolation",
+            "Create catalogs, schemas and volumes",
+            "Tables, views and materialized views",
+            "Foreign catalogs and connections",
+            "Managed versus external tables",
+            "AI/BI Genie instructions"
+          ]
+        },
+        {
+          "objective_group": "Secure Unity Catalog objects",
+          "guide_sections": [
+            "Apply least privilege through the hierarchy",
+            "Choose fine-grained controls",
+            "Key Vault secrets",
+            "Authenticate workloads and resources"
+          ]
+        },
+        {
+          "objective_group": "Govern Unity Catalog objects",
+          "guide_sections": [
+            "Discovery metadata",
+            "Governed tags and ABAC",
+            "Choose fine-grained controls",
+            "Retention",
+            "Lineage",
+            "Audit activity",
+            "Design secure Delta Sharing"
+          ]
+        },
+        {
+          "objective_group": "Design and implement data modeling in Unity Catalog",
+          "guide_sections": [
+            "Design the model before choosing syntax",
+            "Full, incremental and CDC extraction",
+            "Choose an ingestion tool",
+            "Batch versus streaming",
+            "Choose format",
+            "Partitioning, liquid clustering, Z-order and deletion vectors",
+            "Model grain, SCD and temporal history",
+            "Managed versus external tables"
+          ]
+        },
+        {
+          "objective_group": "Ingest data into Unity Catalog",
+          "guide_sections": [
+            "Choose an ingestion tool",
+            "Ingest with SQL and Spark",
+            "SQL patterns",
+            "Lakeflow pipeline ingestion and AUTO CDC",
+            "Worked example — a schema boundary can invalidate a replay range",
+            "Batch versus streaming",
+            "Auto Loader"
+          ]
+        },
+        {
+          "objective_group": "Cleanse, transform, and load data into Unity Catalog",
+          "guide_sections": [
+            "Profile and type data",
+            "Handle duplicates, missing and null",
+            "Transform correctly",
+            "Load with append, insert and MERGE"
+          ]
+        },
+        {
+          "objective_group": "Implement and manage data quality constraints in Unity Catalog",
+          "guide_sections": [
+            "Validation mechanisms",
+            "Profile and type data",
+            "Enforce schema and data quality",
+            "Worked example: quality counts and commit scope"
+          ]
+        },
+        {
+          "objective_group": "Design and implement data pipelines",
+          "guide_sections": [
+            "Design the pipeline graph",
+            "Notebook versus Lakeflow pipeline",
+            "Implement Lakeflow Jobs",
+            "Alerts, retries and restart",
+            "Start with the failure boundary",
+            "Lakeflow pipeline ingestion and AUTO CDC"
+          ]
+        },
+        {
+          "objective_group": "Implement Lakeflow Jobs",
+          "guide_sections": [
+            "Implement Lakeflow Jobs",
+            "Triggers and schedules",
+            "Alerts, retries and restart"
+          ]
+        },
+        {
+          "objective_group": "Implement development lifecycle processes in Azure Databricks",
+          "guide_sections": [
+            "Git workflow",
+            "Testing strategy",
+            "Package and deploy bundles"
+          ]
+        },
+        {
+          "objective_group": "Monitor, troubleshoot, and optimize workloads in Azure Databricks",
+          "guide_sections": [
+            "Monitor cost and Azure signals",
+            "Start with the failure boundary",
+            "Diagnose Spark with DAG and UI",
+            "Cache deliberately",
+            "Optimize Delta tables"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 74,
+        "reachable": 70,
+        "access_blocked": 4,
+        "missing_or_error": 0
+      },
+      "notes": "Complete immutable-guide reading and final-diff reconciliation by exam researcher; 77 current detailed objectives mapped. Selected technical/resource bodies inspected by role researchers; no full independent semantic audit or human/service verification inferred. Current bounded source gate passed. See docs/research/2026-10-28-microsoft-refresh-group-01.md and ADLC_Docs/operations/2026-10-28-microsoft-refresh-group-01.json."
+    },
+    {
+      "id": "dp-600-2026-10-28-remaining-group01-source-validation",
+      "exam_code": "DP-600",
+      "guide_path": "guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/dp-600-official-objectives.txt",
+      "blueprint_snapshot_sha256": "43cf6ad72e66be7ce72a39c58f1e2fcd40b66f4768ca14a399b2e99846449fff",
+      "objective_coverage": [
+        {
+          "objective_group": "Implement security and governance",
+          "guide_sections": [
+            "Security and governance layers",
+            "Worked example — A narrow OneLake role does not remove a broad grant"
+          ]
+        },
+        {
+          "objective_group": "Maintain the analytics development lifecycle",
+          "guide_sections": [
+            "Analytics development lifecycle"
+          ]
+        },
+        {
+          "objective_group": "Get data",
+          "guide_sections": [
+            "Choose and connect to the data store",
+            "OneLake integration has a source-specific freshness contract"
+          ]
+        },
+        {
+          "objective_group": "Transform data",
+          "guide_sections": [
+            "Transform to an analytical contract",
+            "Worked example — one fixture across four query routes",
+            "Worked example — A declared key does not repair duplicate dimensions"
+          ]
+        },
+        {
+          "objective_group": "Query and analyze data",
+          "guide_sections": [
+            "Query and analyze with the right language",
+            "Lab 5 — SQL, KQL and DAX comparison",
+            "Worked example — one fixture across four query routes",
+            "DAX and reusable calculation design"
+          ]
+        },
+        {
+          "objective_group": "Design and build semantic models",
+          "guide_sections": [
+            "Model design and storage mode",
+            "DAX and reusable calculation design"
+          ]
+        },
+        {
+          "objective_group": "Optimize enterprise-scale semantic models",
+          "guide_sections": [
+            "Security and performance at enterprise scale",
+            "Model design and storage mode",
+            "Worked example — A source write is not a completed model refresh"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 44,
+        "reachable": 41,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Complete immutable-guide reading and final-diff reconciliation by exam researcher; 41 current detailed objectives mapped. Selected technical/resource bodies inspected by role researchers; no full independent semantic audit or human/service verification inferred. Current bounded source gate passed. See docs/research/2026-10-28-microsoft-refresh-group-01.md and ADLC_Docs/operations/2026-10-28-microsoft-refresh-group-01.json."
+    },
+    {
+      "id": "ai-500-2026-10-28-remaining-group01-source-validation",
+      "exam_code": "AI-500",
+      "guide_path": "guides/AI-500-designing-implementing-multi-agent-ai-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ai-500-official-objectives.txt",
+      "blueprint_snapshot_sha256": "498ed5ca3e5f1ac958dedea4b84cb33a34a8ff0f5aa239540fd7283bc41360e8",
+      "objective_coverage": [
+        {
+          "objective_group": "Design logical architecture for multi-agent solutions",
+          "guide_sections": [
+            "Decompose goals into observable work",
+            "Select an orchestration topology",
+            "Design control loops and human-in-the-loop",
+            "Define personas, scope, and autonomy",
+            "Apply Zero Trust per agent",
+            "Design function tools",
+            "Separate coordination protocols from tool protocols",
+            "Use a multi-tier state and memory model",
+            "Match model family to task demand"
+          ]
+        },
+        {
+          "objective_group": "Specify technology components to include in a multi-agent solution",
+          "guide_sections": [
+            "Separate coordination protocols from tool protocols",
+            "Engineer multi-agent RAG",
+            "Apply Zero Trust per agent",
+            "Use a multi-tier state and memory model",
+            "Design compute and developer environments",
+            "Build observability into the design",
+            "Monitor reliability, tokens, and cost"
+          ]
+        },
+        {
+          "objective_group": "Design and implement advanced prompt engineering strategies in multi-agent solutions",
+          "guide_sections": [
+            "Treat prompts as versioned program inputs",
+            "Build context intentionally",
+            "Choose prompting, RAG, memory, or fine-tuning"
+          ]
+        },
+        {
+          "objective_group": "Design and implement agent memory, context management, and knowledge integration",
+          "guide_sections": [
+            "Build context intentionally",
+            "Design secure memory operations",
+            "Engineer multi-agent RAG",
+            "Build and govern MCP integrations"
+          ]
+        },
+        {
+          "objective_group": "Build and integrate tool ecosystems",
+          "guide_sections": [
+            "Design function tools",
+            "Build and govern MCP integrations"
+          ]
+        },
+        {
+          "objective_group": "Implement multi-agent orchestration",
+          "guide_sections": [
+            "Select an orchestration topology",
+            "Make human intervention a workflow state",
+            "Control caching and concurrency",
+            "Connect existing agents through A2A or MCP",
+            "Separate coordination protocols from tool protocols",
+            "Select a framework without surrendering architecture",
+            "Implement a model component behind the orchestration boundary",
+            "Build middleware for cross-cutting policy"
+          ]
+        },
+        {
+          "objective_group": "Design and implement evaluation and validation strategies for multi-agent solutions",
+          "guide_sections": [
+            "Evaluate components and the whole workflow"
+          ]
+        },
+        {
+          "objective_group": "Optimize prompt and model performance for multi-agent solutions",
+          "guide_sections": [
+            "Test execution behavior",
+            "Worked example 1 — Parallel latency still consumes shared capacity",
+            "Diagnose continuity failures",
+            "Create continuous-improvement loops safely"
+          ]
+        },
+        {
+          "objective_group": "Design and implement observability and monitoring for multi-agent solutions",
+          "guide_sections": [
+            "Monitor reliability, tokens, and cost",
+            "Worked example 6 — Compare cost per valid outcome",
+            "Build observability into the design"
+          ]
+        },
+        {
+          "objective_group": "Design and implement security for multi-agent solutions",
+          "guide_sections": [
+            "Build a resource-access matrix",
+            "Apply Zero Trust per agent",
+            "Shift left with adversarial testing"
+          ]
+        },
+        {
+          "objective_group": "Design and implement guardrails for multi-agent solutions",
+          "guide_sections": [
+            "Place guardrails at four intervention points",
+            "Shift left with adversarial testing"
+          ]
+        },
+        {
+          "objective_group": "Deploy multi-agent solutions to Azure",
+          "guide_sections": [
+            "Design environment promotion and release"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 42,
+        "reachable": 40,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Complete immutable-guide reading and final-diff reconciliation by exam researcher; 55 current detailed objectives mapped. Selected technical/resource bodies inspected by role researchers; no full independent semantic audit or human/service verification inferred. Current bounded source gate passed. See docs/research/2026-10-28-microsoft-refresh-group-01.md and ADLC_Docs/operations/2026-10-28-microsoft-refresh-group-01.json.",
+      "supersedes_review_id": "ai-500-2026-10-28-targeted-refresh-source-review"
+    },
+    {
+      "id": "ms-102-2026-10-28-remaining-group01-source-validation",
+      "exam_code": "MS-102",
+      "guide_path": "guides/MS-102-microsoft-365-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/ms-102-official-objectives.txt",
+      "blueprint_snapshot_sha256": "97ce6b34e98fb43947409e8b7997f3de72e6cae7a62102dfdea849bfb177c92a",
+      "objective_coverage": [
+        {
+          "objective_group": "Implement and manage a Microsoft 365 tenant",
+          "guide_sections": [
+            "Establish the tenant boundary before configuring workloads",
+            "Worked example 1: choose the recovery operation before promising an RPO"
+          ]
+        },
+        {
+          "objective_group": "Manage users and groups",
+          "guide_sections": [
+            "Manage identities, collaboration objects, and licenses as lifecycles",
+            "Worked example 2: membership is not successful provisioning",
+            "Worked example — bounded Entra PowerShell inventory"
+          ]
+        },
+        {
+          "objective_group": "Manage roles and role groups",
+          "guide_sections": [
+            "Delegate control without creating hidden global administrators"
+          ]
+        },
+        {
+          "objective_group": "Implement and manage identity synchronization with Microsoft Entra tenant",
+          "guide_sections": [
+            "Treat synchronization as a data pipeline with authority and recovery",
+            "Keep sync version, authentication and monitoring failures separate"
+          ]
+        },
+        {
+          "objective_group": "Implement and manage authentication",
+          "guide_sections": [
+            "Build authentication as registration, policy, recovery, and evidence"
+          ]
+        },
+        {
+          "objective_group": "Implement and manage secure access",
+          "guide_sections": [
+            "Convert identity risk into controlled access decisions",
+            "Worked example 3: compare Conditional Access with email policy precedence"
+          ]
+        },
+        {
+          "objective_group": "Review and respond to security reports and alerts generated by Microsoft Defender XDR",
+          "guide_sections": [
+            "Operate from exposure to incident and verified remediation"
+          ]
+        },
+        {
+          "objective_group": "Implement and manage email and collaboration protection by using Microsoft Defender for Office 365",
+          "guide_sections": [
+            "Protect email and collaboration with layered policy"
+          ]
+        },
+        {
+          "objective_group": "Implement and manage endpoint protection by using Microsoft Defender for Endpoint",
+          "guide_sections": [
+            "Connect endpoint and cloud-app evidence to XDR"
+          ]
+        },
+        {
+          "objective_group": "Implement and manage Microsoft Defender for Cloud Apps",
+          "guide_sections": [
+            "Connect endpoint and cloud-app evidence to XDR",
+            "Worked example 4: an email policy is not a merged settings collection"
+          ]
+        },
+        {
+          "objective_group": "Implement Microsoft Purview information protection and data lifecycle management",
+          "guide_sections": [
+            "Separate detection, labeling, protection, retention, and investigation"
+          ]
+        },
+        {
+          "objective_group": "Implement Microsoft Purview data loss prevention (DLP)",
+          "guide_sections": [
+            "Design DLP from data path to response",
+            "Worked example 5: measure the errors that a DLP simulation misses"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 82,
+        "reachable": 79,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Complete immutable-guide reading and final-diff reconciliation by exam researcher; 54 current detailed objectives mapped. Selected technical/resource bodies inspected by role researchers; no full independent semantic audit or human/service verification inferred. Current source conflicts remain blocking. See docs/research/2026-10-28-microsoft-refresh-group-01.md and ADLC_Docs/operations/2026-10-28-microsoft-refresh-group-01.json.",
+      "supersedes_review_id": "ms-102-2026-10-28-targeted-refresh-source-review"
+    },
+    {
+      "id": "ab-650-2026-10-28-remaining-group01-source-validation",
+      "exam_code": "AB-650",
+      "guide_path": "guides/AB-650-ai-services-administrator-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/ab-650-official-objectives.txt",
+      "blueprint_snapshot_sha256": "e70d10682f078cb6887f7dde679f56661e63dfeabb221779f6b0ff4ab08bdf1a",
+      "objective_coverage": [
+        {
+          "objective_group": "Configure and manage a Microsoft 365 tenant",
+          "guide_sections": [
+            "Tenant foundation, domains, licenses, and operational health",
+            "Worked example — two branding surfaces need two checks",
+            "Cowork access and consumption",
+            "Backup scope, recovery points and connectivity evidence"
+          ]
+        },
+        {
+          "objective_group": "Manage Microsoft 365 workloads",
+          "guide_sections": [
+            "Workload administration",
+            "An operational troubleshooting sequence"
+          ]
+        },
+        {
+          "objective_group": "Manage identities in Microsoft Entra",
+          "guide_sections": [
+            "Identity lifecycle and delegated administration"
+          ]
+        },
+        {
+          "objective_group": "Implement and manage authentication and access in Microsoft Entra",
+          "guide_sections": [
+            "Authentication, Conditional Access, and risk"
+          ]
+        },
+        {
+          "objective_group": "Secure Microsoft 365 workloads",
+          "guide_sections": [
+            "Defender for Office 365 and incident response"
+          ]
+        },
+        {
+          "objective_group": "Protect data in Microsoft 365 by using Microsoft Purview",
+          "guide_sections": [
+            "Purview protection, lifecycle, and AI data security",
+            "Agent 365 security, compliance, cost, and monitoring"
+          ]
+        },
+        {
+          "objective_group": "Enable and manage Microsoft 365 Copilot",
+          "guide_sections": [
+            "Copilot readiness and tenant controls",
+            "An operational troubleshooting sequence",
+            "Workload administration",
+            "Cowork access and consumption"
+          ]
+        },
+        {
+          "objective_group": "Implement and manage agents in Microsoft 365 and Agent 365",
+          "guide_sections": [
+            "Agent identity and access",
+            "Agent registry and lifecycle",
+            "Tenant agent settings and policy templates",
+            "Agent tools, MCP servers, plugins, and skills"
+          ]
+        },
+        {
+          "objective_group": "Secure and govern agents by using Agent 365",
+          "guide_sections": [
+            "Agent 365 security, compliance, cost, and monitoring"
+          ]
+        },
+        {
+          "objective_group": "Monitor AI services in Microsoft 365",
+          "guide_sections": [
+            "Cowork access and consumption",
+            "Agent 365 security, compliance, cost, and monitoring"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 56,
+        "reachable": 54,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Complete immutable-guide reading and final-diff reconciliation by exam researcher; 58 current detailed objectives mapped. Selected technical/resource bodies inspected by role researchers; no full independent semantic audit or human/service verification inferred. Current source conflicts remain blocking. See docs/research/2026-10-28-microsoft-refresh-group-01.md and ADLC_Docs/operations/2026-10-28-microsoft-refresh-group-01.json.",
+      "supersedes_review_id": "ab-650-2026-10-28-targeted-refresh-source-review"
+    },
+    {
+      "id": "dp-700-2026-10-28-remaining-group01-source-validation",
+      "exam_code": "DP-700",
+      "guide_path": "guides/DP-700-implementing-data-engineering-solutions-microsoft-fabric.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/dp-700-official-objectives.txt",
+      "blueprint_snapshot_sha256": "536a8f75830b0951502232b8b1a811524d000a7edf7a745613f46462f7dd3fc5",
+      "objective_coverage": [
+        {
+          "objective_group": "Configure Microsoft Fabric workspace settings",
+          "guide_sections": [
+            "Spark workspace settings",
+            "Domains and OneLake",
+            "Apache Airflow workspace settings"
+          ]
+        },
+        {
+          "objective_group": "Implement lifecycle management in Fabric",
+          "guide_sections": [
+            "Implement lifecycle management"
+          ]
+        },
+        {
+          "objective_group": "Configure security and governance",
+          "guide_sections": [
+            "Configure security and governance"
+          ]
+        },
+        {
+          "objective_group": "Orchestrate processes",
+          "guide_sections": [
+            "Orchestrate processes"
+          ]
+        },
+        {
+          "objective_group": "Design and implement loading patterns",
+          "guide_sections": [
+            "Full and incremental loads",
+            "Prepare a dimensional load",
+            "Streaming loads"
+          ]
+        },
+        {
+          "objective_group": "Ingest and transform batch data",
+          "guide_sections": [
+            "Choose a data store and access pattern",
+            "Select the transformation engine",
+            "Shortcuts, mirroring and pipelines",
+            "Worked example — transformation and event-time contracts",
+            "Shape trustworthy data"
+          ]
+        },
+        {
+          "objective_group": "Ingest and transform streaming data",
+          "guide_sections": [
+            "Choose the streaming engine",
+            "Native Eventhouse table versus OneLake shortcut",
+            "Windows and late events",
+            "Worked example — transformation and event-time contracts"
+          ]
+        },
+        {
+          "objective_group": "Monitor Fabric items",
+          "guide_sections": [
+            "Monitor Fabric items"
+          ]
+        },
+        {
+          "objective_group": "Identify and resolve errors",
+          "guide_sections": [
+            "Identify and resolve errors"
+          ]
+        },
+        {
+          "objective_group": "Optimize performance",
+          "guide_sections": [
+            "Lakehouse tables",
+            "Pipelines",
+            "Warehouse and query performance",
+            "Eventstreams and Eventhouses",
+            "Spark",
+            "Query optimization across languages"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 53,
+        "reachable": 50,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Complete immutable-guide reading and final-diff reconciliation by exam researcher; 54 current detailed objectives mapped. Selected technical/resource bodies inspected by role researchers; no full independent semantic audit or human/service verification inferred. Current bounded source gate passed. See docs/research/2026-10-28-microsoft-refresh-group-01.md and ADLC_Docs/operations/2026-10-28-microsoft-refresh-group-01.json."
+    },
+    {
+      "id": "pl-400-2026-10-28-remaining-group01-source-validation",
+      "exam_code": "PL-400",
+      "guide_path": "guides/PL-400-microsoft-power-platform-developer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/pl-400-official-objectives.txt",
+      "blueprint_snapshot_sha256": "facfff59976de5c12e31c20f17ad072c6255f1324c9a55419788d6ee70a825d1",
+      "objective_coverage": [
+        {
+          "objective_group": "Design the technical architecture",
+          "guide_sections": [
+            "Start with requirements and the smallest sufficient extension",
+            "Design identity, authorization, and governance together",
+            "Choose the data access shape",
+            "Environments and operational security",
+            "Choose the experience and the execution contract"
+          ]
+        },
+        {
+          "objective_group": "Design solution components",
+          "guide_sections": [
+            "Design reusable components and integrations",
+            "Choose the experience and the execution contract",
+            "Worked example — generative reuse and flow",
+            "Custom connectors and OpenAPI",
+            "Connect agents through the correct protocol and identity",
+            "Worked example — a proposed update is not a committed update",
+            "Dataverse plug-ins and custom APIs",
+            "Define custom APIs",
+            "Azure Functions and cloud flows",
+            "Publish and consume Dataverse events",
+            "Build and promote a code app",
+            "Diagnose and optimize from measurements",
+            "Worked example — choose an alert that can meet the response time"
+          ]
+        },
+        {
+          "objective_group": "Implement application lifecycle management (ALM)",
+          "guide_sections": [
+            "Solutions, configuration, dependencies, and layers",
+            "Pipelines and CI/CD"
+          ]
+        },
+        {
+          "objective_group": "Apply business logic in model-driven apps by using client scripting",
+          "guide_sections": [
+            "Client API, events, Web API, commands, and navigation"
+          ]
+        },
+        {
+          "objective_group": "Create PCF code components",
+          "guide_sections": [
+            "Power Apps component framework"
+          ]
+        },
+        {
+          "objective_group": "Build Power Apps code apps",
+          "guide_sections": [
+            "Build and promote a code app",
+            "Build code apps against explicit data contracts",
+            "Choose the supported agent client",
+            "Move configuration and code together"
+          ]
+        },
+        {
+          "objective_group": "Deploy and manage Power Apps code apps",
+          "guide_sections": [
+            "Worked example — An empty CSP source list is not a deny-all rule",
+            "Diagnose the browser and telemetry boundaries",
+            "Build and promote a code app",
+            "Move configuration and code together"
+          ]
+        },
+        {
+          "objective_group": "Create a Dataverse plug-in",
+          "guide_sections": [
+            "Dataverse plug-ins and custom APIs",
+            "Worked example — A filtering attribute was supplied but did not change",
+            "Define custom APIs",
+            "Platform APIs, performance, and reliability"
+          ]
+        },
+        {
+          "objective_group": "Perform operations by using platform APIs",
+          "guide_sections": [
+            "Platform APIs, performance, and reliability",
+            "Extend APIs without losing execution limits",
+            "Background processing changes connection lifetime",
+            "Worked example — compare the same operation across two SDKs",
+            "Use the Dataverse SDK for Python deliberately"
+          ]
+        },
+        {
+          "objective_group": "Process workloads by using Microsoft Azure Functions",
+          "guide_sections": [
+            "Azure Functions and cloud flows"
+          ]
+        },
+        {
+          "objective_group": "Configure Power Automate cloud flows and Copilot Studio workflows",
+          "guide_sections": [
+            "Azure Functions and cloud flows"
+          ]
+        },
+        {
+          "objective_group": "Build Microsoft Foundry agents by using code that integrates with the Microsoft Power Platform",
+          "guide_sections": [
+            "Connect agents through the correct protocol and identity",
+            "Worked example — a proposed update is not a committed update",
+            "Integrate custom agents through governed tools",
+            "Choose the supported agent client",
+            "Distinguish the Work IQ integration surfaces"
+          ]
+        },
+        {
+          "objective_group": "Publish and consume Dataverse events",
+          "guide_sections": [
+            "Publish and consume Dataverse events"
+          ]
+        },
+        {
+          "objective_group": "Implement synchronization for Dataverse data",
+          "guide_sections": [
+            "Synchronize Dataverse data",
+            "Worked example — An expired delta token needs reconciliation"
+          ]
+        },
+        {
+          "objective_group": "Create custom connectors",
+          "guide_sections": [
+            "Custom connectors and OpenAPI"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 57,
+        "reachable": 56,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Complete immutable-guide reading and final-diff reconciliation by exam researcher; 88 current detailed objectives mapped. Selected technical/resource bodies inspected by role researchers; no full independent semantic audit or human/service verification inferred. Current bounded source gate passed. See docs/research/2026-10-28-microsoft-refresh-group-01.md and ADLC_Docs/operations/2026-10-28-microsoft-refresh-group-01.json.",
+      "supersedes_review_id": "pl-400-2026-10-28-targeted-refresh-source-review"
+    },
+    {
+      "id": "ab-210-2026-10-28-remaining-group01-source-validation",
+      "exam_code": "AB-210",
+      "guide_path": "guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/ab-210-official-objectives.txt",
+      "blueprint_snapshot_sha256": "2595badf528595419ed8da12bf5aed577d899ee8772123a0b1e40d1c2eac0f83",
+      "objective_coverage": [
+        {
+          "objective_group": "Configure Sales",
+          "guide_sections": [
+            "Establish deployment prerequisites",
+            "Configure mailboxes and collaboration",
+            "Configure security and seller processes"
+          ]
+        },
+        {
+          "objective_group": "Create and manage the product catalog",
+          "guide_sections": [
+            "Build the product and pricing foundation",
+            "Worked example 1: markup and margin are different prices"
+          ]
+        },
+        {
+          "objective_group": "Design an AI-first sales strategy",
+          "guide_sections": [
+            "Design an AI-first sales strategy",
+            "Establish deployment prerequisites",
+            "Prepare Copilot and agents"
+          ]
+        },
+        {
+          "objective_group": "Prepare to deploy agents",
+          "guide_sections": [
+            "Prepare Copilot and agents"
+          ]
+        },
+        {
+          "objective_group": "Configure AI-powered intelligence and insights features",
+          "guide_sections": [
+            "Configure the Sales accelerator",
+            "Worked example 2: capacity and rule order",
+            "Configure intelligence and insights",
+            "Configure the lead-to-opportunity experience",
+            "Prepare Copilot and agents"
+          ]
+        },
+        {
+          "objective_group": "Generate and nurture leads",
+          "guide_sections": [
+            "Configure the lead-to-opportunity experience",
+            "Worked example 3: enough records is not enough eligible records"
+          ]
+        },
+        {
+          "objective_group": "Automate lead qualification by using the Sales Qualification Agent",
+          "guide_sections": [
+            "Choose the Sales Qualification Agent mode",
+            "Worked example 4: handoff measures depend on mode",
+            "Govern agent operations"
+          ]
+        },
+        {
+          "objective_group": "Optimize opportunity management",
+          "guide_sections": [
+            "Optimize opportunity management",
+            "Distinguish opportunity agents",
+            "Build the product and pricing foundation"
+          ]
+        },
+        {
+          "objective_group": "Automate deal closing by using the Sales Close Agent",
+          "guide_sections": [
+            "Distinguish opportunity agents",
+            "Govern agent operations"
+          ]
+        },
+        {
+          "objective_group": "Gather intelligence on sales deals by using the Sales Research Agent",
+          "guide_sections": [
+            "Distinguish opportunity agents",
+            "Worked example 6: reconcile currency before accepting a chart"
+          ]
+        },
+        {
+          "objective_group": "Configure supporting apps and services",
+          "guide_sections": [
+            "Select supporting apps and channels"
+          ]
+        },
+        {
+          "objective_group": "Expand the sales footprint by using Microsoft Power Platform",
+          "guide_sections": [
+            "Extend with Power Platform"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 46,
+        "reachable": 44,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Complete immutable-guide reading and final-diff reconciliation by exam researcher; 46 current detailed objectives mapped. Selected technical/resource bodies inspected by role researchers; no full independent semantic audit or human/service verification inferred. Current source conflicts remain blocking. See docs/research/2026-10-28-microsoft-refresh-group-01.md and ADLC_Docs/operations/2026-10-28-microsoft-refresh-group-01.json."
     }
   ]
 }
